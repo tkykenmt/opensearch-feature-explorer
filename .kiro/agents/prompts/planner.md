@@ -26,9 +26,20 @@ Parse release notes and extract items with:
 - PR number(s)
 - Brief description
 
-### Step 3: Gap Analysis
+### Step 3: Check Existing Issues
 
-For each item:
+Before creating new Issues, check for existing ones:
+1. Use `list_issues` with `state: "all"` to get all Issues
+2. Filter by label `release/{version}` or title containing the version
+3. For each item from Step 2, check if an Issue already exists:
+   - Match by feature name in title
+   - If exists and open: skip (already planned)
+   - If exists and closed: check if report was created, skip if done
+4. Only proceed with items that have no existing Issue
+
+### Step 4: Gap Analysis
+
+For each item (not already covered by existing Issues):
 1. Check if `docs/features/{feature-name}.md` exists
 2. If exists: Check Change History for version coverage
 3. Determine action needed:
@@ -36,14 +47,14 @@ For each item:
    - **update-feature**: Report exists but missing this version
    - **skip**: Already covered in existing report
 
-### Step 4: Collect Resources
+### Step 5: Collect Resources
 
 For each item requiring investigation:
 1. Search OpenSearch docs: `python run.py search "{feature}" -v {version} -t docs`
 2. Search OpenSearch blogs: `python run.py search "{feature}" -v {version} -t blogs`
 3. Collect URLs for known resources
 
-### Step 5: Create GitHub Issues
+### Step 6: Create GitHub Issues
 
 Use GitHub MCP `create_issue` for each item:
 
@@ -91,7 +102,7 @@ Title: [update-feature] {Feature Name} (v{from_version} → v{to_version})
 
 Labels: `update-feature`, `release/{version}`
 
-### Step 6: Create Summary Issue
+### Step 7: Create Summary Issue
 
 Create a tracking issue for the release:
 
