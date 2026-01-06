@@ -81,15 +81,23 @@ def run_batch(count: int, lang: str | None = None, no_pr: bool = False):
     pr_mode = " Push directly to main." if no_pr else " Use PR workflow (create branch, pull request, and auto-merge)."
     prompt = f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{lang_instruction}"
     
+    results = []
     for i in range(1, count + 1):
         print(f"\n{'='*50}")
         print(f"Batch {i}/{count}")
         print(f"{'='*50}\n")
         
         exit_code = run_kiro("investigate", prompt)
-        if exit_code != 0:
-            print(f"\nBatch stopped: investigate exited with code {exit_code}")
-            break
+        results.append(("success" if exit_code == 0 else "failed", i))
+    
+    # Summary
+    print(f"\n{'='*50}")
+    print("Batch Summary")
+    print(f"{'='*50}")
+    success = sum(1 for r, _ in results if r == "success")
+    print(f"Success: {success}/{count}")
+    for status, i in results:
+        print(f"  {i}: {status}")
 
 
 def main():
