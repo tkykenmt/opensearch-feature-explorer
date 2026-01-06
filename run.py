@@ -75,20 +75,30 @@ def run_kiro(mode: str, prompt: str) -> int:
     return result.returncode
 
 
-def run_batch(count: int, lang: str | None = None, no_pr: bool = False):
-    """Run investigate in batch mode."""
+def run_batch(count: int | None, lang: str | None = None, no_pr: bool = False):
+    """Run investigate in batch mode. If count is None, process all open issues."""
     lang_instruction = f" Output in language code '{lang}'." if lang else ""
     pr_mode = " Push directly to main." if no_pr else " Use PR workflow (create branch, pull request, and auto-merge)."
     prompt = f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{lang_instruction}"
+    no_issue_prompt = "No open issues found"
     
     results = []
-    for i in range(1, count + 1):
+    i = 0
+    max_iter = count if count else 1000  # safety limit
+    
+    while i < max_iter:
+        i += 1
+        label = f"Batch {i}" if count is None else f"Batch {i}/{count}"
         print(f"\n{'='*50}")
-        print(f"Batch {i}/{count}")
+        print(label)
         print(f"{'='*50}\n")
         
         exit_code = run_kiro("investigate", prompt)
         results.append(("success" if exit_code == 0 else "failed", i))
+        
+        if count is None and exit_code != 0:
+            # In --all mode, stop when no more issues
+            break
     
     # Summary
     print(f"\n{'='*50}")
@@ -132,7 +142,8 @@ Examples:
     
     # batch
     ba = subparsers.add_parser("batch", help="Run investigate in batch mode")
-    ba.add_argument("count", type=int, nargs="?", default=5, help="Number of issues to process (default: 5)")
+    ba.add_argument("count", type=int, nargs="?", help="Number of issues to process (default: 5, or all with --all)")
+    ba.add_argument("--all", action="store_true", help="Process all open issues")
     ba.add_argument("--lang", help="Output language code (e.g., ja)")
     ba.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
@@ -155,7 +166,8 @@ Examples:
     args = parser.parse_args()
     
     if args.mode == "batch":
-        run_batch(args.count, getattr(args, "lang", None), getattr(args, "no_pr", False))
+        count = None if getattr(args, "all", False) else (args.count or 5)
+        run_batch(count, getattr(args, "lang", None), getattr(args, "no_pr", False))
     else:
         prompt = build_prompt(args.mode, args)
         run_kiro(args.mode, prompt)
