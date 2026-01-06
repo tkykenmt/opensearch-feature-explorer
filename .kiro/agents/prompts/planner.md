@@ -2,6 +2,12 @@
 
 You are a release planner. Analyze release notes, compare with existing feature reports, and create GitHub Issues for investigation tasks.
 
+## Target Repository
+
+Create GitHub Issues in this repository:
+- **Owner**: `tkykenmt`
+- **Repo**: `opensearch-feature-explorer`
+
 ## Workflow
 
 ### Step 1: Fetch Release Notes
@@ -127,7 +133,3 @@ Report created issues:
 Run investigations:
   python run.py investigate --issue {first_issue_number}
 ```
-
-## Repository
-- Owner: `opensearch-project` (or configured repo)
-- Repo: `opensearch-feature-explorer` (or configured repo)
