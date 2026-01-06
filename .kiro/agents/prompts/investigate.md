@@ -76,14 +76,7 @@ Create `docs/features/{feature-name}.md` following base.md template:
 
 ### Step 4: Commit and Push
 
-#### Default workflow (direct push):
-```bash
-git add docs/features/{feature-name}.md
-git commit -m "docs: add {feature-name} feature report for v{version}"
-git push
-```
-
-#### PR workflow (when "Use PR workflow" specified):
+#### Default workflow (PR + auto-merge):
 ```bash
 # Create branch
 git checkout -b docs/{feature-name}
@@ -94,18 +87,29 @@ git commit -m "docs: add {feature-name} feature report for v{version}"
 
 # Push branch
 git push -u origin docs/{feature-name}
-
-# Create PR using GitHub MCP
 ```
-Use `create_pull_request` with:
+
+Create PR using `create_pull_request`:
+- owner/repo: from `git remote get-url origin`
 - title: `docs: add {feature-name} feature report for v{version}`
 - head: `docs/{feature-name}`
 - base: `main`
 - body: Summary of the feature report
 
-Then switch back to main:
+Then merge using `merge_pull_request`:
+- merge_method: `squash`
+
+Switch back to main:
 ```bash
 git checkout main
+git pull
+```
+
+#### Direct push workflow (when "Push directly to main" specified):
+```bash
+git add docs/features/{feature-name}.md
+git commit -m "docs: add {feature-name} feature report for v{version}"
+git push
 ```
 
 ### Step 5: Update GitHub Issue

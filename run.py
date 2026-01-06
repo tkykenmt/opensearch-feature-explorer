@@ -28,13 +28,13 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
         return f"Plan investigation for OpenSearch release v{args.version}.{lang_instruction}"
     
     if mode == "investigate":
+        use_pr = not getattr(args, "no_pr", False)
+        pr_mode = " Use PR workflow (create branch, pull request, and auto-merge)." if use_pr else " Push directly to main."
         if hasattr(args, "issue") and args.issue:
-            pr_mode = " Use PR workflow (create branch and pull request)." if getattr(args, "pull_request", False) else ""
             return f"Investigate GitHub Issue #{args.issue}.{pr_mode}{lang_instruction}"
         prompt = f'Investigate feature "{args.feature}"'
         if args.pr:
             prompt += f" starting from PR #{args.pr}"
-        pr_mode = " Use PR workflow (create branch and pull request)." if getattr(args, "pull_request", False) else ""
         return prompt + f".{pr_mode}{lang_instruction}"
     
     if mode == "explore":
@@ -99,7 +99,7 @@ Examples:
     inv.add_argument("--issue", type=int, help="GitHub Issue number to investigate")
     inv.add_argument("--pr", type=int, help="Starting PR number")
     inv.add_argument("--lang", help="Output language code (e.g., ja)")
-    inv.add_argument("--pull-request", action="store_true", help="Create branch and PR instead of pushing to main")
+    inv.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
     # explore
     ex = subparsers.add_parser("explore", help="Explore a feature interactively")
