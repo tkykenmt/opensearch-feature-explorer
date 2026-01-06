@@ -10,8 +10,8 @@
       "args": ["/home/enomott/tools/opensearch-feature-explorer/mcp_server.py"]
     },
     "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"]
+      "command": "bash",
+      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
     }
   }
 }
