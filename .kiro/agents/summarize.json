@@ -4,13 +4,16 @@
   "prompt": ".kiro/agents/prompts/summarize.md",
   "tools": [
     "read",
-    "write",
-    "github"
+    "write"
   ],
   "mcpServers": {
     "opensearch-docs": {
       "command": "python",
       "args": ["/home/enomott/tools/opensearch-feature-explorer/mcp_server.py"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"]
     }
   }
 }
