@@ -49,8 +49,8 @@ flowchart LR
         Agg --> Store
     end
     
-    subgraph Query
-        Query[Aggregation Query] --> Check{Star-tree<br/>Compatible?}
+    subgraph QueryPhase[Query]
+        Q[Aggregation Query] --> Check{Star-tree<br/>Compatible?}
         Check -->|Yes| Traverse[Traverse Star-tree]
         Check -->|No| Traditional[Traditional Scan]
         Traverse --> Result[Return Precomputed Result]
