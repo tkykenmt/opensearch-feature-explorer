@@ -58,8 +58,8 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
     return ""
 
 
-def run_kiro(mode: str, prompt: str):
-    """Run kiro-cli with the appropriate agent."""
+def run_kiro(mode: str, prompt: str) -> int:
+    """Run kiro-cli with the appropriate agent. Returns exit code."""
     agent_name = AGENTS[mode].replace(".json", "")
     
     cmd = [
@@ -71,7 +71,25 @@ def run_kiro(mode: str, prompt: str):
     if prompt:
         cmd.append(prompt)
     
-    subprocess.run(cmd, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
+    result = subprocess.run(cmd, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
+    return result.returncode
+
+
+def run_batch(count: int, lang: str | None = None, no_pr: bool = False):
+    """Run investigate in batch mode."""
+    lang_instruction = f" Output in language code '{lang}'." if lang else ""
+    pr_mode = " Push directly to main." if no_pr else " Use PR workflow (create branch, pull request, and auto-merge)."
+    prompt = f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{lang_instruction}"
+    
+    for i in range(1, count + 1):
+        print(f"\n{'='*50}")
+        print(f"Batch {i}/{count}")
+        print(f"{'='*50}\n")
+        
+        exit_code = run_kiro("investigate", prompt)
+        if exit_code != 0:
+            print(f"\nBatch stopped: investigate exited with code {exit_code}")
+            break
 
 
 def main():
@@ -104,6 +122,12 @@ Examples:
     inv.add_argument("--lang", help="Output language code (e.g., ja)")
     inv.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
+    # batch
+    ba = subparsers.add_parser("batch", help="Run investigate in batch mode")
+    ba.add_argument("count", type=int, nargs="?", default=5, help="Number of issues to process (default: 5)")
+    ba.add_argument("--lang", help="Output language code (e.g., ja)")
+    ba.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
+    
     # explore
     ex = subparsers.add_parser("explore", help="Explore a feature interactively")
     ex.add_argument("feature", help="Feature name to explore")
@@ -121,8 +145,12 @@ Examples:
     tr.add_argument("--to", required=True, help="Target language code (e.g., ja)")
     
     args = parser.parse_args()
-    prompt = build_prompt(args.mode, args)
-    run_kiro(args.mode, prompt)
+    
+    if args.mode == "batch":
+        run_batch(args.count, getattr(args, "lang", None), getattr(args, "no_pr", False))
+    else:
+        prompt = build_prompt(args.mode, args)
+        run_kiro(args.mode, prompt)
 
 
 if __name__ == "__main__":
