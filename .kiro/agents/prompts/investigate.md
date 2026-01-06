@@ -10,8 +10,14 @@ You are a feature investigator. Investigate a single feature based on a GitHub I
 
 ### Step 1: Load Investigation Target
 
+First, get the target repository info:
+```bash
+git remote get-url origin
+```
+Parse the output to extract owner and repo (e.g., `git@github.com:owner/repo.git` → owner=`owner`, repo=`repo`).
+
 If Issue number provided:
-1. Fetch Issue using `get_issue`
+1. Fetch Issue using `get_issue` with the extracted owner/repo
 2. Extract from Issue body:
    - Feature name
    - Target version

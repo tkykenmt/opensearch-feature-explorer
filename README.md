@@ -44,7 +44,8 @@ graph LR
 
 - Python 3.8+
 - [Kiro CLI](https://kiro.dev/)
-- GitHub MCP Server (for GitHub API access)
+- [GitHub CLI](https://cli.github.com/) (`gh`) - authenticated via `gh auth login`
+- Node.js (for GitHub MCP Server)
 
 ## Setup
 
@@ -52,6 +53,9 @@ graph LR
 git clone https://github.com/tkykenmt/opensearch-feature-explorer.git
 cd opensearch-feature-explorer
 pip install -r requirements.txt
+
+# Authenticate GitHub CLI (required for GitHub MCP)
+gh auth login
 ```
 
 ### MCP Server Configuration
