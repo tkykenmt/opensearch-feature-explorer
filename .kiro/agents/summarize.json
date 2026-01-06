@@ -6,5 +6,11 @@
     "read",
     "write",
     "github"
-  ]
+  ],
+  "mcpServers": {
+    "opensearch-docs": {
+      "command": "python",
+      "args": ["/home/enomott/tools/opensearch-feature-explorer/mcp_server.py"]
+    }
+  }
 }
