@@ -1,15 +1,14 @@
 {
   "name": "feature-report",
   "description": "Create comprehensive feature reports by investigating GitHub repositories",
-  "prompt": "file://./prompts/base.md\n\nfile://./prompts/feature-report.md",
+  "prompt": "./prompts/base.md\n\n./prompts/feature-report.md",
   "mcpServers": {
     "github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": {
-        "X-MCP-Toolsets": "repos,pull_requests,issues",
-        "X-MCP-Readonly": "true"
-      }
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ]
     }
   },
   "tools": [

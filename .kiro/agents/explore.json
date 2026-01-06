@@ -1,7 +1,7 @@
 {
-  "name": "release-analyze",
-  "description": "Analyze OpenSearch release notes and generate comprehensive reports",
-  "prompt": "./prompts/base.md\n\n./prompts/release-analyze.md",
+  "name": "explore",
+  "description": "Explore OpenSearch features interactively and update reports",
+  "prompt": "./prompts/base.md\n\n./prompts/explore.md",
   "mcpServers": {
     "github": {
       "command": "npx",
@@ -15,7 +15,6 @@
     "read",
     "write",
     "web_fetch",
-    "web_search",
     "@github"
   ],
   "allowedTools": [

@@ -1,15 +1,14 @@
 {
   "name": "context-update",
   "description": "Update feature reports with external context from URLs",
-  "prompt": "file://./prompts/base.md\n\nfile://./prompts/context-update.md",
+  "prompt": "./prompts/base.md\n\n./prompts/context-update.md",
   "mcpServers": {
     "github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": {
-        "X-MCP-Toolsets": "repos,pull_requests,issues",
-        "X-MCP-Readonly": "true"
-      }
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ]
     }
   },
   "tools": [

@@ -13,7 +13,7 @@ AGENTS = {
     "release-analyze": "release-analyze.json",
     "feature-report": "feature-report.json",
     "context-update": "context-update.json",
-    "explain": "explain.json",
+    "explore": "explore.json",
     "translate": "translate.json",
 }
 
@@ -44,9 +44,9 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
     if mode == "context-update":
         return f'Update the feature report for "{args.feature}" with context from {args.url}.{lang_instruction}'
     
-    if mode == "explain":
+    if mode == "explore":
         lang = args.lang if hasattr(args, "lang") and args.lang else "en"
-        return f'Explain the "{args.feature}" feature in language code "{lang}"'
+        return f'Explore the "{args.feature}" feature in language code "{lang}"'
     
     if mode == "translate":
         suffix = f".{args.to}.md" if args.to != "en" else ".md"
@@ -60,23 +60,18 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
 
 def run_kiro(mode: str, prompt: str, interactive: bool = False):
     """Run kiro-cli with the appropriate agent."""
-    agent_file = AGENTS_DIR / AGENTS[mode]
+    agent_name = AGENTS[mode].replace(".json", "")
     
     cmd = [
         "kiro-cli", "chat",
-        "--agent", str(agent_file),
-        "--model", "claude-sonnet-4-20250514",
+        "--agent", agent_name,
+        "--model", "claude-opus-4.5",
     ]
     
-    if interactive:
-        # Interactive mode: pass stdin/stdout directly
-        if prompt:
-            cmd.extend(["--prompt", prompt])
-        subprocess.run(cmd, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
-    else:
-        # Non-interactive: send prompt and wait for completion
-        cmd.extend(["--prompt", prompt])
-        subprocess.run(cmd, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
+    if prompt:
+        cmd.append(prompt)
+    
+    subprocess.run(cmd, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
 
 def main():
     parser = argparse.ArgumentParser(
@@ -90,7 +85,7 @@ Examples:
   python run.py feature-report "Segment Replication"
   python run.py feature-report "Star Tree" --pr 16233 --lang en,ja
   python run.py context-update --url https://... --feature "Remote Store"
-  python run.py explain "Segment Replication" --lang ja
+  python run.py explore "Segment Replication" --lang ja
   python run.py translate --feature "Segment Replication" --to ja
   python run.py translate --release 3.4.0 --to ja
         """,
@@ -117,9 +112,9 @@ Examples:
     cu.add_argument("--feature", required=True, help="Feature to update")
     cu.add_argument("--lang", help="Output language(s): en, ja, or en,ja")
     
-    # explain
-    ex = subparsers.add_parser("explain", help="Explain a feature interactively")
-    ex.add_argument("feature", help="Feature name to explain")
+    # explore
+    ex = subparsers.add_parser("explore", help="Explore a feature interactively and update reports")
+    ex.add_argument("feature", help="Feature name to explore")
     ex.add_argument("--lang", help="Response language code (e.g., ja, zh, ko)")
     
     # translate
@@ -131,8 +126,8 @@ Examples:
     args = parser.parse_args()
     prompt = build_prompt(args.mode, args)
     
-    # explain mode is interactive
-    interactive = args.mode == "explain"
+    # explore mode is interactive
+    interactive = args.mode == "explore"
     run_kiro(args.mode, prompt, interactive)
 
 if __name__ == "__main__":

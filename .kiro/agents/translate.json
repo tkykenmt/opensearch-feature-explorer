@@ -1,7 +1,7 @@
 {
   "name": "translate",
   "description": "Translate existing reports to other languages",
-  "prompt": "file://./prompts/base.md\n\nfile://./prompts/translate.md",
+  "prompt": "./prompts/base.md\n\n./prompts/translate.md",
   "tools": [
     "read",
     "write"

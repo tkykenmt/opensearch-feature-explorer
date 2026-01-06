@@ -29,39 +29,97 @@ Use GitHub MCP Server to retrieve repository information.
 4. Get related code with `get_file_contents` if needed
 5. Get Issue details with `get_issue` if linked
 
+## Caching
+
+### Cache Directory
+Store fetched data in `.cache/` to avoid redundant API calls.
+
+### Cache Structure
+```
+.cache/
+  releases/{version}/release-notes.md    # Release notes (immutable)
+  prs/{number}.json                      # Merged PRs only
+  issues/{number}.json                   # Closed Issues only
+```
+
+### Cache Rules
+- **Release notes**: Always cache (version-specific, immutable)
+- **PRs**: Cache only if `merged: true`
+- **Issues**: Cache only if `state: closed`
+- **Code files**: Do not cache
+
+### Workflow
+1. Before fetching, check if cached file exists
+2. If cached: Read from `.cache/`
+3. If not cached: Fetch from GitHub, then save to `.cache/` if cacheable
+
+## Writing Rules
+
+### Content Structure
+- Start with "Summary" section: brief overview accessible to all readers
+- Follow with "Details" section: accurate technical content for engineers
+- Include "Limitations" or "Known Issues" section when applicable
+
+### Technical Content
+- Include code/configuration examples where helpful
+- Note version compatibility and migration considerations
+- Mention performance implications if relevant
+- Clearly mark speculation or unverified information
+
+### References
+- Include URLs of referenced Pull Requests and Issues
+- Link to official OpenSearch documentation when available
+
+### Visual Elements
+- Include diagrams showing architecture and processing flows
+- Use tables for configuration options, components, and PR lists
+
 ## Report Output Format
 
 ### Feature Report Template (docs/features/{feature-name}.md)
 ```markdown
 # {Feature Name}
 
-## Overview
-Feature description
+## Summary
+Brief overview of what this feature does, why it matters, and key benefits.
 
-## Architecture
+## Details
+
+### Architecture
 ```mermaid
 graph TB
     ...
 ```
 
-## Data Flow
+### Data Flow
 ```mermaid
 flowchart LR
     ...
 ```
 
-## Components
-List of affected components
+### Components
+| Component | Description |
+|-----------|-------------|
 
-## Configuration
-Settings and descriptions
+### Configuration
+| Setting | Description | Default |
+|---------|-------------|---------|
+
+### Usage Example
+```yaml
+# Example configuration
+```
+
+## Limitations
+Known limitations or constraints
 
 ## Related PRs
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1234](https://github.com/opensearch-project/OpenSearch/pull/1234) | Initial implementation |
 
-## Breaking Changes
-Breaking changes if any
+## References
+- [Issue #1000](https://github.com/opensearch-project/OpenSearch/issues/1000): Original feature request
 
 ## Change History
 - **v3.4.0**: Initial implementation
@@ -71,29 +129,38 @@ Breaking changes if any
 ```markdown
 # OpenSearch v{version} Release Summary
 
-## Highlights
-Summary of major changes
+## Summary
+Brief overview of this release: major themes, key features, and impact.
 
-## Architecture Changes
+## Details
+
+### Highlights
 ```mermaid
 graph TB
     ...
 ```
 
-## New Features
-List with links to docs/features/
+### New Features
+| Feature | Description | PR |
+|---------|-------------|-----|
 
-## Improvements
-List of improvements
+### Improvements
+| Area | Description | PR |
+|------|-------------|-----|
 
-## Bug Fixes
-List of bug fixes
+### Bug Fixes
+| Issue | Description | PR |
+|-------|-------------|-----|
 
-## Breaking Changes
-List of breaking changes
+### Breaking Changes
+| Change | Migration | PR |
+|--------|-----------|-----|
 
-## Dependencies
-Dependency updates
+### Dependencies
+Notable dependency updates
+
+## References
+- Links to all referenced PRs and Issues
 ```
 
 ## Mermaid Diagram Guidelines
