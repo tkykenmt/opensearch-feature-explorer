@@ -74,6 +74,12 @@ Create `docs/features/{feature-name}.md` following base.md template:
 4. Add new diagrams if architecture changed
 5. Append to Change History
 
+#### Update features index:
+After creating/updating a feature report, update `docs/features/index.md`:
+1. Read current index.md
+2. If feature not listed, add `- [Feature Title](feature-name.md)` in alphabetical order
+3. Keep the header and description intact
+
 ### Step 4: Commit and Push
 
 #### Default workflow (PR + auto-merge):
@@ -82,7 +88,7 @@ Create `docs/features/{feature-name}.md` following base.md template:
 git checkout -b docs/{feature-name}
 
 # Commit
-git add docs/features/{feature-name}.md
+git add docs/features/{feature-name}.md docs/features/index.md
 git commit -m "docs: add {feature-name} feature report for v{version}"
 
 # Push branch
@@ -107,7 +113,7 @@ git pull
 
 #### Direct push workflow (when "Push directly to main" specified):
 ```bash
-git add docs/features/{feature-name}.md
+git add docs/features/{feature-name}.md docs/features/index.md
 git commit -m "docs: add {feature-name} feature report for v{version}"
 git push
 ```
