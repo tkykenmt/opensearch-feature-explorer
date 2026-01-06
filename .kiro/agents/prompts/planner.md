@@ -30,12 +30,12 @@ Parse release notes and extract items with:
 
 Before creating new Issues, check for existing ones:
 1. Use `list_issues` with `state: "all"` to get all Issues
-2. Filter by label `release/{version}` or title containing the version
-3. For each item from Step 2, check if an Issue already exists:
-   - Match by feature name in title
-   - If exists and open: skip (already planned)
-   - If exists and closed: check if report was created, skip if done
-4. Only proceed with items that have no existing Issue
+2. For each item from Step 2:
+   - Search for Issues with same feature name in title
+   - If exists for same version and open: skip (already planned)
+   - If exists for same version and closed: skip (already done)
+   - If exists for different version: note Issue number for "Related Issues" section
+3. Only create new Issues for items not already covered for this version
 
 ### Step 4: Gap Analysis
 
@@ -60,12 +60,15 @@ Use GitHub MCP `create_issue` for each item:
 
 #### New Feature Issue
 ```markdown
-Title: [new-feature] {Feature Name}
+Title: [new-feature] {Feature Name} (v{version})
 
 ## Target
 - Feature: {Feature Name}
 - Version: v{version}
 - Main PR: #{pr_number}
+
+## Related Issues
+{If previous version Issues exist, list them: "- #123 (v2.x)"}
 
 ## Known Resources
 - Doc: {doc_url}
@@ -82,13 +85,16 @@ Labels: `new-feature`, `release/{version}`
 
 #### Update Feature Issue
 ```markdown
-Title: [update-feature] {Feature Name} (v{from_version} → v{to_version})
+Title: [update-feature] {Feature Name} (v{version})
 
 ## Target
 - Feature: {Feature Name}
-- Existing: docs/features/{feature-name}.md (v{from_version})
-- Update to: v{to_version}
+- Existing: docs/features/{feature-name}.md
+- Update to: v{version}
 - Related PRs: #{pr1}, #{pr2}
+
+## Related Issues
+{List previous version Issues: "- #123 (v2.x)"}
 
 ## Known Resources
 - Doc: {doc_url}
@@ -97,7 +103,7 @@ Title: [update-feature] {Feature Name} (v{from_version} → v{to_version})
 ## Tasks
 - [ ] Investigate new PRs
 - [ ] Review known resources
-- [ ] Update existing report with v{to_version} changes
+- [ ] Update existing report with v{version} changes
 ```
 
 Labels: `update-feature`, `release/{version}`
