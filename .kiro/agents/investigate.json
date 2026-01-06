@@ -2,12 +2,8 @@
   "name": "investigate",
   "description": "Investigate a single feature and create/update feature reports",
   "prompt": ".kiro/agents/prompts/investigate.md",
-  "tools": [
-    "read",
-    "write",
-    "bash",
-    "web_fetch"
-  ],
+  "tools": ["@builtin", "@github", "@opensearch-docs"],
+  "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "mcpServers": {
     "opensearch-docs": {
       "command": "python",

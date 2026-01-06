@@ -2,10 +2,8 @@
   "name": "summarize",
   "description": "Create release summary from existing feature reports",
   "prompt": ".kiro/agents/prompts/summarize.md",
-  "tools": [
-    "read",
-    "write"
-  ],
+  "tools": ["@builtin", "@github", "@opensearch-docs"],
+  "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "mcpServers": {
     "opensearch-docs": {
       "command": "python",

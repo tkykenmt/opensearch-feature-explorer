@@ -2,11 +2,8 @@
   "name": "explore",
   "description": "Explore OpenSearch features interactively",
   "prompt": ".kiro/agents/prompts/explore.md",
-  "tools": [
-    "read",
-    "write",
-    "web_fetch"
-  ],
+  "tools": ["@builtin", "@github", "@opensearch-docs"],
+  "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "mcpServers": {
     "opensearch-docs": {
       "command": "python",

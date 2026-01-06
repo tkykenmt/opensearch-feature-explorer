@@ -1,17 +1,7 @@
 {
   "name": "translate",
   "description": "Translate existing reports to other languages",
-  "prompt": "./prompts/base.md\n\n./prompts/translate.md",
-  "tools": [
-    "read",
-    "write"
-  ],
-  "allowedTools": [
-    "read"
-  ],
-  "resources": [
-    "file://docs/features/**/*.md",
-    "file://docs/releases/**/*.md"
-  ],
-  "model": "claude-sonnet-4"
+  "prompt": ".kiro/agents/prompts/translate.md",
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"]
 }
