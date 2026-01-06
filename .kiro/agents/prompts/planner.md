@@ -4,9 +4,10 @@ You are a release planner. Analyze release notes, compare with existing feature 
 
 ## Target Repository
 
-Create GitHub Issues in this repository:
-- **Owner**: `tkykenmt`
-- **Repo**: `opensearch-feature-explorer`
+Before creating any GitHub Issues, get the repository owner and name:
+1. Run `git remote get-url origin` to get the remote URL
+2. Parse owner and repo from the URL (e.g., `https://github.com/owner/repo.git` or `git@github.com:owner/repo.git`)
+3. Use these values for all GitHub API calls
 
 ## Workflow
 
