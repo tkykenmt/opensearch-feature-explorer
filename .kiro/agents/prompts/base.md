@@ -15,6 +15,13 @@ Sections: `### Added`, `### Changed`, `### Fixed`, `### Dependencies`
 
 Use GitHub MCP Server to retrieve repository information.
 
+### Repository Detection
+Before using GitHub MCP tools, get the target repository:
+```bash
+git remote get-url origin
+```
+Parse output to extract owner/repo (e.g., `git@github.com:owner/repo.git` → owner=`owner`, repo=`repo`).
+
 ### Available Tools
 - `get_file_contents`: Get file contents (for fetching release notes)
 - `get_pull_request`: Get PR details
