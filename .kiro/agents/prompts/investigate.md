@@ -74,7 +74,15 @@ Create `docs/features/{feature-name}.md` following base.md template:
 4. Add new diagrams if architecture changed
 5. Append to Change History
 
-### Step 4: Update GitHub Issue
+### Step 4: Commit and Push
+
+```bash
+git add docs/features/{feature-name}.md
+git commit -m "docs: add {feature-name} feature report for v{version}"
+git push
+```
+
+### Step 5: Update GitHub Issue
 
 Post completion comment:
 ```markdown
