@@ -5,6 +5,17 @@ You are a feature investigator. Investigate a single feature based on a GitHub I
 ## Input
 - GitHub Issue number (from planner)
 - Or: Feature name + PR number (direct invocation)
+- Optional: Language code (e.g., `ja` for Japanese)
+
+## Language Handling
+
+If a language code is specified (e.g., "Output in language code 'ja'"):
+1. Write the report in the specified language
+2. Save as `docs/features/{feature-name}.{lang}.md` (e.g., `star-tree-index.ja.md`)
+3. Keep technical terms, code, and configuration examples in English
+4. Translate descriptions, explanations, and summaries
+
+If no language specified: Write in English, save as `docs/features/{feature-name}.md`
 
 ## Workflow
 
