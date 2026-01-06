@@ -6,3 +6,4 @@ Detailed analysis of OpenSearch features.
 - [PPL Lookup, Join, and Subsearch Commands](ppl-lookup-join-subsearch.md)
 - [Semantic Sentence Highlighting](semantic-sentence-highlighting.md)
 - [Star Tree Index](star-tree-index.md)
+- [Z-Score Normalization for Hybrid Search](z-score-normalization.md)
