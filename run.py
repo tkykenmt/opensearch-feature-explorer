@@ -32,10 +32,13 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
         pr_mode = " Use PR workflow (create branch, pull request, and auto-merge)." if use_pr else " Push directly to main."
         if hasattr(args, "issue") and args.issue:
             return f"Investigate GitHub Issue #{args.issue}.{pr_mode}{lang_instruction}"
-        prompt = f'Investigate feature "{args.feature}"'
-        if args.pr:
-            prompt += f" starting from PR #{args.pr}"
-        return prompt + f".{pr_mode}{lang_instruction}"
+        if hasattr(args, "feature") and args.feature:
+            prompt = f'Investigate feature "{args.feature}"'
+            if args.pr:
+                prompt += f" starting from PR #{args.pr}"
+            return prompt + f".{pr_mode}{lang_instruction}"
+        # No issue or feature specified - pick oldest open issue
+        return f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{lang_instruction}"
     
     if mode == "explore":
         lang = args.lang if hasattr(args, "lang") and args.lang else "en"

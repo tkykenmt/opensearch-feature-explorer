@@ -27,6 +27,12 @@ git remote get-url origin
 ```
 Parse the output to extract owner and repo (e.g., `git@github.com:owner/repo.git` → owner=`owner`, repo=`repo`).
 
+If instructed to find oldest open Issue:
+1. Use `list_issues` with `state: "open"`, `sort: "created"`, `direction: "asc"`
+2. Filter for Issues with label `new-feature` or `update-feature`
+3. Pick the first (oldest) one
+4. Proceed as if that Issue number was provided
+
 If Issue number provided:
 1. Fetch Issue using `get_issue` with the extracted owner/repo
 2. Extract from Issue body:
