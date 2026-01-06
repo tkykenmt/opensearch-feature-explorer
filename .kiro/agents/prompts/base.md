@@ -200,37 +200,32 @@ When existing report exists:
 ```
 (Newer changes at top)
 
-
 ## Resource Search
 
-### OpenSearch Search API
-Search docs and blogs via unified API:
-```
-https://search-api.opensearch.org/search?q={query}&v={version}&t={types}
-```
+### OpenSearch Docs MCP Tool
+Use the `search` tool from `opensearch-docs` MCP server to search documentation and blogs.
 
 Parameters:
-- `q`: Search query (URL encoded)
-- `v`: Version (e.g., `3.0`, `2.19`)
-- `t`: Types - `docs`, `blogs`, or `docs,blogs`
+- `query` (required): Search query
+- `version`: OpenSearch version (default: "3.0")
+- `types`: "docs", "blogs", or "docs,blogs" (default: "docs,blogs")
+- `limit`: Max results (default: 10)
 
-Response format:
+Response:
 ```json
 {
-  "results": [{
-    "url": "/3.0/path/to/doc/" | "https://opensearch.org/blog/...",
-    "type": "DOCS" | "Blogs",
-    "title": "Page title",
-    "content": "Snippet..."
-  }]
+  "query": "star tree",
+  "version": "3.0",
+  "total": 50,
+  "results": [
+    {
+      "title": "Star-tree index",
+      "url": "https://docs.opensearch.org/3.0/...",
+      "type": "DOCS",
+      "snippet": "..."
+    }
+  ]
 }
 ```
 
-Note: Docs URLs are relative paths - prefix with `https://docs.opensearch.org`
-
-### CLI Search Command
-Use `python run.py search` to search OpenSearch resources:
-```bash
-python run.py search "star tree" --version 3.0 --limit 5
-```
-Results are formatted for LLM context with pagination support.
+Use `web_fetch` to retrieve full content from returned URLs.

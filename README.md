@@ -10,34 +10,41 @@ graph LR
         RN[Release Notes]
         PR[Pull Requests]
         Issue[Issues]
+        Docs[Docs/Blogs]
     end
-    subgraph "Kiro CLI + GitHub MCP"
+    subgraph "Kiro CLI + MCP"
         Agent[Agents]
+        MCP[OpenSearch Docs MCP]
     end
     subgraph Output
         FR[Feature Reports]
         RR[Release Reports]
+        GH[GitHub Issues]
     end
     RN --> Agent
     PR --> Agent
     Issue --> Agent
+    Docs --> MCP --> Agent
     Agent --> FR
     Agent --> RR
+    Agent --> GH
 ```
 
-## Features
+## Agents
 
-- **release-analyze**: Analyze release notes and generate version-specific reports
-- **feature-report**: Create detailed feature reports
-- **context-update**: Update reports with external context from URLs
-- **explain**: Interactive explanation of features based on existing reports
-- **translate**: Translate existing reports to other languages
+| Agent | Description |
+|-------|-------------|
+| **planner** | Analyze release notes → create GitHub Issues for investigation |
+| **investigate** | Deep investigation of a single feature |
+| **explore** | Interactive Q&A + URL import |
+| **summarize** | Create release summary from feature reports |
+| **translate** | Translate reports to other languages |
 
 ## Requirements
 
 - Python 3.8+
 - [Kiro CLI](https://kiro.dev/)
-- GitHub Copilot license (for GitHub MCP Server authentication)
+- GitHub MCP Server (for GitHub API access)
 
 ## Setup
 
@@ -47,98 +54,66 @@ cd opensearch-feature-explorer
 pip install -r requirements.txt
 ```
 
-## Local Preview
+### MCP Server Configuration
 
-```bash
-mkdocs serve
-# Open http://localhost:8000
-```
+Add to your Kiro CLI MCP config (`~/.kiro/settings.json`):
 
-## Deploy to GitHub Pages
-
-```bash
-mkdocs gh-deploy
+```json
+{
+  "mcpServers": {
+    "opensearch-docs": {
+      "command": "python",
+      "args": ["/path/to/opensearch-feature-explorer/mcp_server.py"]
+    }
+  }
+}
 ```
 
 ## Usage
 
-### Analyze Release Notes
+### Workflow
 
 ```bash
-# Generate report in English (default)
-python run.py release-analyze 3.4.0
+# 1. Plan release investigation (creates GitHub Issues)
+python run.py planner 3.0.0
 
-# Generate in Japanese
-python run.py release-analyze 3.4.0 --lang ja
+# 2. Investigate each feature (from GitHub Issue)
+python run.py investigate --issue 123
 
-# Generate in both English and Japanese
-python run.py release-analyze 3.4.0 --lang en,ja
+# 3. Or investigate directly
+python run.py investigate "Star Tree" --pr 16233
+
+# 4. Create release summary
+python run.py summarize 3.0.0
+
+# 5. Translate if needed
+python run.py translate --feature "Star Tree" --to ja
 ```
 
-### Create Feature Report
+### Interactive Exploration
 
 ```bash
-# Investigate by feature name
-python run.py feature-report "Segment Replication"
-
-# Start from a specific PR
-python run.py feature-report "Star Tree" --pr 16233
-
-# Output in multiple languages
-python run.py feature-report "Remote Store" --lang en,ja
-```
-
-### Update with External Context
-
-```bash
-python run.py context-update --url https://opensearch.org/blog/... --feature "Segment Replication"
-```
-
-### Interactive Explanation
-
-```bash
-# Explain in English
-python run.py explain "Segment Replication"
-
-# Explain in Japanese
-python run.py explain "Segment Replication" --lang ja
-```
-
-### Translate Reports
-
-```bash
-# Translate feature report
-python run.py translate --feature "Segment Replication" --to ja
-
-# Translate release report
-python run.py translate --release 3.4.0 --to ja
+python run.py explore "Segment Replication" --lang ja
 ```
 
 ## Output Structure
 
 ```
 docs/
-├── index.md                    # Top page
 ├── features/
-│   ├── segment-replication.md
-│   └── segment-replication.ja.md
+│   ├── star-tree-index.md
+│   └── star-tree-index.ja.md
 └── releases/
-    └── v3.4.0/
-        ├── summary.md
-        ├── summary.ja.md
-        └── items/
-            └── ...
+    └── v3.0.0/
+        └── summary.md
 ```
 
-Reports are output to `docs/` directory for GitHub Pages hosting.
+## Local Preview
 
-## Report Format
-
-Reports include Mermaid diagrams for better understanding:
-
-- **Architecture diagrams**: Component structure
-- **Data Flow diagrams**: Data flow visualization
-- **Sequence diagrams**: API call flows
+```bash
+mkdocs serve
+# Open http://localhost:8000
+```
 
 ## License
 

@@ -2,11 +2,8 @@
 """OpenSearch Feature Explorer - Kiro CLI wrapper script."""
 
 import argparse
-import json
 import subprocess
 import sys
-import urllib.request
-import urllib.parse
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
@@ -19,6 +16,7 @@ AGENTS = {
     "summarize": "summarize.json",
     "translate": "translate.json",
 }
+
 
 def build_prompt(mode: str, args: argparse.Namespace) -> str:
     """Build initial prompt based on mode and arguments."""
@@ -54,7 +52,8 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
     
     return ""
 
-def run_kiro(mode: str, prompt: str, interactive: bool = False):
+
+def run_kiro(mode: str, prompt: str):
     """Run kiro-cli with the appropriate agent."""
     agent_name = AGENTS[mode].replace(".json", "")
     
@@ -70,41 +69,6 @@ def run_kiro(mode: str, prompt: str, interactive: bool = False):
     subprocess.run(cmd, stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)
 
 
-def search_opensearch(query: str, version: str = "3.0", types: str = "docs,blogs", 
-                      limit: int = 10, offset: int = 0) -> None:
-    """Search OpenSearch docs and blogs via API."""
-    encoded_query = urllib.parse.quote(query)
-    url = f"https://search-api.opensearch.org/search?q={encoded_query}&v={version}&t={types}"
-    
-    try:
-        with urllib.request.urlopen(url, timeout=10) as resp:
-            data = json.loads(resp.read().decode())
-    except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
-    
-    results = data.get("results", [])
-    total = len(results)
-    page_results = results[offset:offset + limit]
-    
-    print(f"## Search: '{query}' (v{version})")
-    print(f"Showing {offset + 1}-{offset + len(page_results)} of {total} results\n")
-    
-    for i, r in enumerate(page_results, start=offset + 1):
-        url = r["url"]
-        if r["type"] == "DOCS":
-            url = f"https://docs.opensearch.org{url}"
-        print(f"### {i}. [{r['title']}]({url})")
-        print(f"Type: {r['type']}")
-        if r.get("content"):
-            # Truncate content for readability
-            content = r["content"][:300] + "..." if len(r["content"]) > 300 else r["content"]
-            print(f"{content}\n")
-    
-    if offset + limit < total:
-        print(f"---\nMore results: --offset {offset + limit}")
-
-
 def main():
     parser = argparse.ArgumentParser(
         description="OpenSearch Feature Explorer",
@@ -117,7 +81,6 @@ Examples:
   python run.py explore "Segment Replication" --lang ja
   python run.py summarize 3.0.0
   python run.py translate --feature "Segment Replication" --to ja
-  python run.py search "star tree" --version 3.0 --limit 5
         """,
     )
     
@@ -151,26 +114,10 @@ Examples:
     tr.add_argument("--release", help="Release version to translate")
     tr.add_argument("--to", required=True, help="Target language code (e.g., ja)")
     
-    # search
-    se = subparsers.add_parser("search", help="Search OpenSearch docs and blogs")
-    se.add_argument("query", help="Search query")
-    se.add_argument("--version", "-v", default="3.0", help="OpenSearch version (default: 3.0)")
-    se.add_argument("--type", "-t", default="docs,blogs", help="Types: docs, blogs, or docs,blogs")
-    se.add_argument("--limit", "-l", type=int, default=10, help="Results per page (default: 10)")
-    se.add_argument("--offset", "-o", type=int, default=0, help="Skip first N results")
-    
     args = parser.parse_args()
-    
-    # Handle search separately (no kiro-cli)
-    if args.mode == "search":
-        search_opensearch(args.query, args.version, args.type, args.limit, args.offset)
-        return
-    
     prompt = build_prompt(args.mode, args)
-    
-    # explore mode is interactive
-    interactive = args.mode == "explore"
-    run_kiro(args.mode, prompt, interactive)
+    run_kiro(args.mode, prompt)
+
 
 if __name__ == "__main__":
     main()
