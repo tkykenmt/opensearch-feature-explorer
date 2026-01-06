@@ -199,3 +199,38 @@ When existing report exists:
 - **v3.4.0** (2023-10-01): Initial implementation
 ```
 (Newer changes at top)
+
+
+## Resource Search
+
+### OpenSearch Search API
+Search docs and blogs via unified API:
+```
+https://search-api.opensearch.org/search?q={query}&v={version}&t={types}
+```
+
+Parameters:
+- `q`: Search query (URL encoded)
+- `v`: Version (e.g., `3.0`, `2.19`)
+- `t`: Types - `docs`, `blogs`, or `docs,blogs`
+
+Response format:
+```json
+{
+  "results": [{
+    "url": "/3.0/path/to/doc/" | "https://opensearch.org/blog/...",
+    "type": "DOCS" | "Blogs",
+    "title": "Page title",
+    "content": "Snippet..."
+  }]
+}
+```
+
+Note: Docs URLs are relative paths - prefix with `https://docs.opensearch.org`
+
+### CLI Search Command
+Use `python run.py search` to search OpenSearch resources:
+```bash
+python run.py search "star tree" --version 3.0 --limit 5
+```
+Results are formatted for LLM context with pagination support.

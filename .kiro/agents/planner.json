@@ -1,0 +1,12 @@
+{
+  "name": "planner",
+  "description": "Analyze release notes and create GitHub Issues for investigation tasks",
+  "prompt": ".kiro/agents/prompts/planner.md",
+  "tools": [
+    "read",
+    "write",
+    "bash",
+    "github",
+    "web_fetch"
+  ]
+}

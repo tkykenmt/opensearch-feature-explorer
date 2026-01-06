@@ -1,0 +1,10 @@
+{
+  "name": "summarize",
+  "description": "Create release summary from existing feature reports",
+  "prompt": ".kiro/agents/prompts/summarize.md",
+  "tools": [
+    "read",
+    "write",
+    "github"
+  ]
+}
