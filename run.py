@@ -58,7 +58,7 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
     return ""
 
 
-def run_kiro(mode: str, prompt: str) -> int:
+def run_kiro(mode: str, prompt: str, no_interactive: bool = False) -> int:
     """Run kiro-cli with the appropriate agent. Returns exit code."""
     agent_name = AGENTS[mode].replace(".json", "")
     
@@ -66,7 +66,11 @@ def run_kiro(mode: str, prompt: str) -> int:
         "kiro-cli", "chat",
         "--agent", agent_name,
         "--model", "claude-opus-4.5",
+        "--trust-all-tools",
     ]
+    
+    if no_interactive:
+        cmd.append("--no-interactive")
     
     if prompt:
         cmd.append(prompt)
@@ -93,7 +97,7 @@ def run_batch(count: int | None, lang: str | None = None, no_pr: bool = False):
         print(label)
         print(f"{'='*50}\n")
         
-        exit_code = run_kiro("investigate", prompt)
+        exit_code = run_kiro("investigate", prompt, no_interactive=True)
         results.append(("success" if exit_code == 0 else "failed", i))
         
         if count is None and exit_code != 0:
