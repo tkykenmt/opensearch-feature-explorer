@@ -37,9 +37,14 @@ Store fetched data in `.cache/` to avoid redundant API calls.
 ### Cache Structure
 ```
 .cache/
-  releases/{version}/release-notes.md    # Release notes (immutable)
-  prs/{number}.json                      # Merged PRs only
-  issues/{number}.json                   # Closed Issues only
+  releases/{version}/
+    release-notes-build.md       # From opensearch-build
+    release-notes-core.md        # From OpenSearch
+    release-notes-dashboards.md  # From OpenSearch-Dashboards
+    prs/
+      {number}.json              # Merged PRs only
+    issues/
+      {number}.json              # Closed Issues only
 ```
 
 ### Cache Rules
