@@ -1,0 +1,17 @@
+{
+  "name": "translate",
+  "description": "Translate existing reports to other languages",
+  "prompt": "file://./prompts/base.md\n\nfile://./prompts/translate.md",
+  "tools": [
+    "read",
+    "write"
+  ],
+  "allowedTools": [
+    "read"
+  ],
+  "resources": [
+    "file://docs/features/**/*.md",
+    "file://docs/releases/**/*.md"
+  ],
+  "model": "claude-sonnet-4"
+}

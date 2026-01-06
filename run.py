@@ -10,11 +10,11 @@ SCRIPT_DIR = Path(__file__).parent
 AGENTS_DIR = SCRIPT_DIR / ".kiro" / "agents"
 
 AGENTS = {
-    "release-analyze": "release-analyze.md",
-    "feature-report": "feature-report.md",
-    "context-update": "context-update.md",
-    "explain": "explain.md",
-    "translate": "translate.md",
+    "release-analyze": "release-analyze.json",
+    "feature-report": "feature-report.json",
+    "context-update": "context-update.json",
+    "explain": "explain.json",
+    "translate": "translate.json",
 }
 
 def build_prompt(mode: str, args: argparse.Namespace) -> str:

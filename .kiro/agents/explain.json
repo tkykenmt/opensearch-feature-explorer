@@ -1,0 +1,30 @@
+{
+  "name": "explain",
+  "description": "Explain OpenSearch features interactively using existing reports",
+  "prompt": "file://./prompts/base.md\n\nfile://./prompts/explain.md",
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "X-MCP-Toolsets": "repos,pull_requests,issues",
+        "X-MCP-Readonly": "true"
+      }
+    }
+  },
+  "tools": [
+    "read",
+    "web_fetch",
+    "@github"
+  ],
+  "allowedTools": [
+    "read",
+    "@github"
+  ],
+  "resources": [
+    "file://config.json",
+    "file://docs/features/**/*.md",
+    "file://docs/releases/**/*.md"
+  ],
+  "model": "claude-sonnet-4"
+}
