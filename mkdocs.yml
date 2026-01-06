@@ -1,0 +1,53 @@
+site_name: OpenSearch Feature Explorer
+site_description: Feature analysis and release notes documentation for OpenSearch
+site_url: https://tkykenmt.github.io/opensearch-feature-explorer/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    # Light mode - OpenSearch brand colors
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Features: features/
+  - Releases: releases/

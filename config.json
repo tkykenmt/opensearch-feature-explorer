@@ -1,0 +1,23 @@
+{
+  "repositories": {
+    "opensearch-build": {
+      "owner": "opensearch-project",
+      "repo": "opensearch-build",
+      "releaseNotesPath": "release-notes/opensearch-release-notes-{version}.md"
+    },
+    "opensearch": {
+      "owner": "opensearch-project",
+      "repo": "OpenSearch",
+      "releaseNotesPath": "release-notes/opensearch.release-notes-{version}.md"
+    },
+    "opensearch-dashboards": {
+      "owner": "opensearch-project",
+      "repo": "OpenSearch-Dashboards",
+      "releaseNotesPath": "release-notes/opensearch-dashboards.release-notes-{version}.md"
+    }
+  },
+  "output": {
+    "features": "docs/features/",
+    "releases": "docs/releases/"
+  }
+}
