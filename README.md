@@ -35,9 +35,9 @@ graph LR
 | Agent | Description |
 |-------|-------------|
 | **planner** | Analyze release notes → create GitHub Issues for investigation |
-| **investigate** | Deep investigation of a single feature |
+| **investigate** | Deep investigation of release items → create release & feature reports |
 | **explore** | Interactive Q&A + URL import |
-| **summarize** | Create release summary from feature reports |
+| **summarize** | Aggregate release reports into release summary |
 | **translate** | Translate reports to other languages |
 
 ## Requirements
@@ -93,12 +93,17 @@ python run.py explore "Segment Replication" --lang ja
 
 ```
 docs/
-├── features/
-│   ├── star-tree-index.md
+├── features/                          # Cumulative feature documentation
+│   ├── index.md
+│   ├── star-tree-index.md            # Full feature history
 │   └── star-tree-index.ja.md
 └── releases/
     └── v3.0.0/
-        └── summary.md
+        ├── index.md                   # Release index
+        ├── summary.md                 # Release summary (from summarize)
+        └── features/                  # Per-release change reports
+            ├── star-tree-enhancements.md
+            └── grpc-transport.md
 ```
 
 ## Local Preview

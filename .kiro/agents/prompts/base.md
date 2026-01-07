@@ -88,6 +88,59 @@ Store fetched data in `.cache/` to avoid redundant API calls.
 
 ## Report Output Format
 
+### Release Report Template (docs/releases/v{version}/features/{item-name}.md)
+```markdown
+# {Item Name}
+
+## Summary
+What this release item adds/changes and why it matters.
+Focus on the delta - what's new in this version specifically.
+
+## Details
+
+### What's New in v{version}
+Specific changes introduced in this version.
+
+### Technical Changes
+
+#### Architecture Changes
+```mermaid
+graph TB
+    ...
+```
+
+#### New Components
+| Component | Description |
+|-----------|-------------|
+
+#### New Configuration
+| Setting | Description | Default |
+|---------|-------------|---------|
+
+### Usage Example
+```json
+// Example showing new functionality
+```
+
+### Migration Notes
+Steps to adopt this change (if applicable).
+
+## Limitations
+Known limitations specific to this release.
+
+## Related PRs
+| PR | Description |
+|----|-------------|
+| [#1234](url) | Main implementation |
+
+## References
+- [Issue #1000](url): Feature request
+- [Documentation](url): Official docs
+
+## Related Feature Report
+- [Full feature documentation](../../features/{feature-name}.md)
+```
+
 ### Feature Report Template (docs/features/{feature-name}.md)
 ```markdown
 # {Feature Name}
@@ -134,41 +187,40 @@ Known limitations or constraints
 - [Issue #1000](https://github.com/opensearch-project/OpenSearch/issues/1000): Original feature request
 
 ## Change History
-- **v3.4.0**: Initial implementation
+- **v3.4.0** (YYYY-MM-DD): Initial implementation
 ```
 
-### Release Report Template (docs/releases/v{version}/summary.md)
+### Release Summary Template (docs/releases/v{version}/summary.md)
 ```markdown
 # OpenSearch v{version} Release Summary
 
 ## Summary
 Brief overview of this release: major themes, key features, and impact.
 
-## Details
-
-### Highlights
+## Highlights
 ```mermaid
 graph TB
     ...
 ```
 
-### New Features
-| Feature | Description | PR |
-|---------|-------------|-----|
+## New Features
+| Feature | Description | Report |
+|---------|-------------|--------|
+| {Name} | {Brief description} | [Details](features/{item-name}.md) |
 
-### Improvements
-| Area | Description | PR |
-|------|-------------|-----|
+## Improvements
+| Area | Description | Report |
+|------|-------------|--------|
 
-### Bug Fixes
+## Bug Fixes
 | Issue | Description | PR |
 |-------|-------------|-----|
 
-### Breaking Changes
-| Change | Migration | PR |
-|--------|-----------|-----|
+## Breaking Changes
+| Change | Migration | Report |
+|--------|-----------|--------|
 
-### Dependencies
+## Dependencies
 Notable dependency updates
 
 ## References
