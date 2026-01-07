@@ -2273,7 +2273,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 161
     },
     {
       "name": "Data Ingestion",
@@ -2299,7 +2300,8 @@
           "category": "feature",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 162
     },
     {
       "name": "Neural Search / Hybrid Query",
@@ -2487,7 +2489,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 163
     },
     {
       "name": "Threat Intelligence",
@@ -2507,7 +2510,8 @@
           "category": "feature",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 164
     },
     {
       "name": "Skills / Tools",
@@ -2545,7 +2549,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 165
     },
     {
       "name": "Calcite Query Engine",
@@ -2775,7 +2780,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 166
     },
     {
       "name": "AI Search Flows",
@@ -2903,7 +2909,8 @@
           "category": "enhancement",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 167
     },
     {
       "name": "Observability / Traces",
@@ -3115,7 +3122,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 168
     },
     {
       "name": "Query Insights",
@@ -3316,7 +3324,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 169
     },
     {
       "name": "Alerting",
@@ -3360,7 +3369,8 @@
           "category": "bugfix",
           "repository": "alerting"
         }
-      ]
+      ],
+      "issue_number": 170
     },
     {
       "name": "Common Utils",
@@ -3386,7 +3396,8 @@
           "category": "bugfix",
           "repository": "common"
         }
-      ]
+      ],
+      "issue_number": 171
     },
     {
       "name": "Custom Codecs",
@@ -3418,7 +3429,8 @@
           "category": "bugfix",
           "repository": "custom"
         }
-      ]
+      ],
+      "issue_number": 172
     },
     {
       "name": "Reporting",
@@ -3444,7 +3456,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 173
     },
     {
       "name": "Data Ingestion Dashboards",
@@ -3512,7 +3525,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 174
     },
     {
       "name": "Index Management",
@@ -3580,7 +3594,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 175
     },
     {
       "name": "Security Plugin",
@@ -3744,7 +3759,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 176
     },
     {
       "name": "Job Scheduler",
@@ -3770,7 +3786,8 @@
           "category": "bugfix",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 177
     },
     {
       "name": "ML Commons",
@@ -3952,7 +3969,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 178
     },
     {
       "name": "Notifications",
@@ -3966,7 +3984,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 179
     },
     {
       "name": "Learning to Rank",
@@ -3986,7 +4005,8 @@
           "category": "bugfix",
           "repository": "learning"
         }
-      ]
+      ],
+      "issue_number": 180
     },
     {
       "name": "Remote Metadata Store",
