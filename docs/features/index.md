@@ -2,6 +2,7 @@
 
 Detailed analysis of OpenSearch features.
 
+- [Contextual Launch for Anomaly Detection](contextual-anomaly-detection.md)
 - [Derived Source for k-NN Vectors](derived-source-knn.md)
 - [Hybrid Query Inner Hits](hybrid-query-inner-hits.md)
 - [Lower Bound Min-Max Normalization](lower-bound-min-max-normalization.md)
