@@ -30,7 +30,8 @@
           "category": "breaking",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 135
     },
     {
       "name": "Java Runtime & JPMS",
@@ -93,7 +94,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 136
     },
     {
       "name": "Thread Context Permissions",
@@ -126,7 +128,8 @@
           "category": "breaking",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 137
     },
     {
       "name": "HTTP Client Migration",
@@ -147,7 +150,8 @@
           "category": "breaking",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 138
     },
     {
       "name": "Bulk API Changes",
@@ -167,7 +171,8 @@
           "category": "breaking",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 139
     },
     {
       "name": "Node Roles & Configuration",
@@ -200,7 +205,8 @@
           "category": "breaking",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 140
     },
     {
       "name": "Jackson & Query Limits",
@@ -220,7 +226,8 @@
           "category": "breaking",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 141
     },
     {
       "name": "Indexing Buffer Fix",
@@ -234,7 +241,8 @@
           "category": "breaking",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 142
     },
     {
       "name": "Deprecated Code Cleanup",
@@ -471,7 +479,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 143
     },
     {
       "name": "Cluster Permissions",
@@ -492,7 +501,8 @@
           "category": "breaking",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 144
     },
     {
       "name": "Dashboards Frontend Cleanup",
@@ -549,7 +559,8 @@
           "category": "breaking",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 145
     },
     {
       "name": "Monaco Editor Upgrade",
@@ -582,7 +593,8 @@
           "category": "breaking",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 146
     },
     {
       "name": "ML Commons / MCP",
@@ -656,7 +668,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 147
     },
     {
       "name": "Observability Notebooks",
@@ -670,7 +683,8 @@
           "category": "breaking",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 148
     },
     {
       "name": "Security Plugin Changes",
@@ -846,7 +860,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 149
     },
     {
       "name": "Remote Vector Index Build",
@@ -914,7 +929,8 @@
           "category": "feature",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 150
     },
     {
       "name": "Lucene On Faiss",
@@ -940,7 +956,8 @@
           "category": "feature",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 151
     },
     {
       "name": "Explain API Support",
@@ -966,7 +983,8 @@
           "category": "feature",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 152
     },
     {
       "name": "Vector Search (k-NN)",
@@ -1292,7 +1310,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 153
     },
     {
       "name": "SQL/PPL Engine",
@@ -1511,7 +1530,8 @@
           "category": "enhancement",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 154
     },
     {
       "name": "AI Assistant / Chatbot",
@@ -2023,7 +2043,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 155
     },
     {
       "name": "Anomaly Detection",
@@ -2103,7 +2124,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 156
     },
     {
       "name": "Cross-Cluster Replication (CCR)",
@@ -2131,7 +2153,8 @@
           "category": "bugfix",
           "repository": "cross-cluster-replication"
         }
-      ]
+      ],
+      "issue_number": 157
     },
     {
       "name": "Custom Codecs & Libraries",
@@ -2145,7 +2168,8 @@
           "category": "feature",
           "repository": "custom"
         }
-      ]
+      ],
+      "issue_number": 158
     },
     {
       "name": "Maps & Geospatial",
@@ -2177,7 +2201,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 159
     },
     {
       "name": "Cross-Cluster Search",
@@ -2191,7 +2216,8 @@
           "category": "feature",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 160
     },
     {
       "name": "Flow Framework",
