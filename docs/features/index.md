@@ -3,6 +3,7 @@
 Detailed analysis of OpenSearch features.
 
 - [Concurrent Segment Search for k-NN](concurrent-segment-search-knn.md)
+- [Pull-based Ingestion (Kafka/Kinesis)](pull-based-ingestion.ja.md)
 - [gRPC/Protobuf Transport](grpc-transport.md)
 - [Contextual Launch for Anomaly Detection](contextual-anomaly-detection.md)
 - [Derived Source for k-NN Vectors](derived-source-knn.md)
