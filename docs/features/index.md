@@ -6,7 +6,7 @@ Detailed analysis of OpenSearch features.
 - [Contextual Launch for Anomaly Detection](contextual-anomaly-detection.md)
 - [Derived Source for k-NN Vectors](derived-source-knn.md)
 - [Hybrid Query Inner Hits](hybrid-query-inner-hits.md)
-- [Java Agent Security Framework](java-agent-security.md)
+- [Java Agent Security Framework](java-agent-security.md) | [日本語](java-agent-security.ja.md)
 - [k-NN Node-level Circuit Breakers](knn-node-circuit-breakers.md) | [日本語](knn-node-circuit-breakers.ja.md)
 - [Lower Bound Min-Max Normalization](lower-bound-min-max-normalization.md)
 - [Plan-Execute-Reflect Agent](plan-execute-reflect-agent.md) | [日本語](plan-execute-reflect-agent.ja.md)
