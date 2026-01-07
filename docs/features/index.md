@@ -12,6 +12,7 @@ Detailed analysis of OpenSearch features.
 - [Plan-Execute-Reflect Agent](plan-execute-reflect-agent.md) | [日本語](plan-execute-reflect-agent.ja.md)
 - [PPL Lookup, Join, and Subsearch Commands](ppl-lookup-join-subsearch.md)
 - [Query Insights Live Queries API](query-insights-live-queries.md)
+- [Reader/Writer Separation (Scale to Zero)](reader-writer-separation.md)
 - [Semantic Sentence Highlighting](semantic-sentence-highlighting.md)
 - [Star Tree Index](star-tree-index.md)
 - [Z-Score Normalization for Hybrid Search](z-score-normalization.md)
