@@ -79,39 +79,58 @@ def run_kiro(mode: str, prompt: str, no_interactive: bool = False) -> int:
     return result.returncode
 
 
+def get_open_issues(labels: list[str], limit: int | None = None) -> list[dict]:
+    """Get open issues with specified labels using gh CLI."""
+    import json
+    label_filter = ",".join(labels)
+    cmd = [
+        "gh", "issue", "list",
+        "--state", "open",
+        "--label", label_filter,
+        "--json", "number,title",
+        "--limit", str(limit) if limit else "1000",
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        return []
+    return json.loads(result.stdout)
+
+
 def run_batch(count: int | None, lang: str | None = None, no_pr: bool = False):
     """Run investigate in batch mode. If count is None, process all open issues."""
     lang_instruction = f" Output in language code '{lang}'." if lang else ""
     pr_mode = " Push directly to main." if no_pr else " Use PR workflow (create branch, pull request, and auto-merge)."
-    prompt = f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{lang_instruction}"
-    no_issue_prompt = "No open issues found"
     
+    # Get open issues first
+    issues = get_open_issues(["new-feature", "update-feature"], count)
+    if not issues:
+        print("No open issues found with labels 'new-feature' or 'update-feature'")
+        return
+    
+    total = len(issues)
     results = []
-    i = 0
-    max_iter = count if count else 1000  # safety limit
     
-    while i < max_iter:
-        i += 1
-        label = f"Batch {i}" if count is None else f"Batch {i}/{count}"
+    for i, issue in enumerate(issues, 1):
+        issue_num = issue["number"]
+        issue_title = issue["title"]
+        
         print(f"\n{'='*50}")
-        print(label)
+        print(f"Batch {i}/{total}: Issue #{issue_num}")
+        print(f"  {issue_title}")
         print(f"{'='*50}\n")
         
+        prompt = f"Investigate GitHub Issue #{issue_num}.{pr_mode}{lang_instruction}"
         exit_code = run_kiro("investigate", prompt, no_interactive=True)
-        results.append(("success" if exit_code == 0 else "failed", i))
-        
-        if count is None and exit_code != 0:
-            # In --all mode, stop when no more issues
-            break
+        results.append((issue_num, issue_title, "success" if exit_code == 0 else "failed"))
     
     # Summary
     print(f"\n{'='*50}")
     print("Batch Summary")
     print(f"{'='*50}")
-    success = sum(1 for r, _ in results if r == "success")
-    print(f"Success: {success}/{count}")
-    for status, i in results:
-        print(f"  {i}: {status}")
+    success = sum(1 for _, _, status in results if status == "success")
+    print(f"Success: {success}/{total}")
+    for issue_num, issue_title, status in results:
+        print(f"  #{issue_num}: {status} - {issue_title}")
 
 
 def main():
@@ -144,8 +163,8 @@ Examples:
     inv.add_argument("--lang", help="Output language code (e.g., ja)")
     inv.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
-    # batch
-    ba = subparsers.add_parser("batch", help="Run investigate in batch mode")
+    # batch-investigate
+    ba = subparsers.add_parser("batch-investigate", help="Run investigate in batch mode")
     ba.add_argument("count", type=int, nargs="?", help="Number of issues to process (default: 5, or all with --all)")
     ba.add_argument("--all", action="store_true", help="Process all open issues")
     ba.add_argument("--lang", help="Output language code (e.g., ja)")
@@ -169,7 +188,7 @@ Examples:
     
     args = parser.parse_args()
     
-    if args.mode == "batch":
+    if args.mode == "batch-investigate":
         count = None if getattr(args, "all", False) else (args.count or 5)
         run_batch(count, getattr(args, "lang", None), getattr(args, "no_pr", False))
     else:

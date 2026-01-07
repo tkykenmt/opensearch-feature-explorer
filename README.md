@@ -58,21 +58,6 @@ pip install -r requirements.txt
 gh auth login
 ```
 
-### MCP Server Configuration
-
-Add to your Kiro CLI MCP config (`~/.kiro/settings.json`):
-
-```json
-{
-  "mcpServers": {
-    "opensearch-docs": {
-      "command": "python",
-      "args": ["/path/to/opensearch-feature-explorer/mcp_server.py"]
-    }
-  }
-}
-```
-
 ## Usage
 
 ### Workflow
@@ -87,10 +72,14 @@ python run.py investigate --issue 123
 # 3. Or investigate directly
 python run.py investigate "Star Tree" --pr 16233
 
-# 4. Create release summary
+# 4. Batch investigate multiple issues
+python run.py batch-investigate 5        # Process 5 issues
+python run.py batch-investigate --all    # Process all open issues
+
+# 5. Create release summary
 python run.py summarize 3.0.0
 
-# 5. Translate if needed
+# 6. Translate if needed
 python run.py translate --feature "Star Tree" --to ja
 ```
 
