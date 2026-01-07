@@ -46,6 +46,39 @@ When updating reports:
 4. Add new references (URLs, PRs, Issues)
 5. Add Change History entry
 
+After updating, commit and push:
+
+```bash
+# Save current branch
+ORIGINAL_BRANCH=$(git branch --show-current)
+
+# Create branch from main
+git checkout main
+git pull
+git checkout -b docs/update-{feature-name}
+
+# Commit
+git add docs/features/{feature-name}.md
+git commit -m "docs: update {feature-name} report"
+
+# Push branch
+git push -u origin docs/update-{feature-name}
+```
+
+Create PR using `create_pull_request`:
+- title: `docs: update {feature-name} report`
+- head: `docs/update-{feature-name}`
+- base: `main`
+- body: Summary of updates
+
+Then merge using `merge_pull_request`:
+- merge_method: `squash`
+
+Return to original branch:
+```bash
+git checkout $ORIGINAL_BRANCH
+```
+
 ### Step 4: Generate New Diagrams
 If explanation would benefit from a diagram not in the report:
 1. Create new Mermaid diagram inline

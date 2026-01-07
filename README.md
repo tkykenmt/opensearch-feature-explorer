@@ -108,6 +108,14 @@ mkdocs serve
 # Open http://localhost:8000
 ```
 
+## GitHub Pages
+
+This project is configured to deploy to GitHub Pages automatically. The site is built with MkDocs and deployed via GitHub Actions on push to `main`.
+
+## Disclosure
+
+This project uses generative AI to create documentation. Generated content may contain inaccuracies. Always verify information against official OpenSearch documentation and source code.
+
 ## License
 
-MIT
+MIT-0 (MIT No Attribution) - See [LICENSE](LICENSE)
