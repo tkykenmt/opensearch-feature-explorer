@@ -15,6 +15,7 @@ AGENTS = {
     "explore": "explore.json",
     "summarize": "summarize.json",
     "translate": "translate.json",
+    "generate-release-docs": "generate-release-docs.json",
 }
 
 
@@ -54,6 +55,11 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
         if args.release:
             return f'Translate reports in "docs/releases/v{args.release}/" to "{args.to}".'
         return ""
+    
+    if mode == "generate-release-docs":
+        use_pr = not getattr(args, "no_pr", False)
+        pr_mode = " Use PR workflow." if use_pr else " Push directly to main."
+        return f"Generate release documents for v{args.version} from existing feature documents.{pr_mode}"
     
     return ""
 
@@ -185,6 +191,11 @@ Examples:
     tr.add_argument("--feature", help="Feature name to translate")
     tr.add_argument("--release", help="Release version to translate")
     tr.add_argument("--to", required=True, help="Target language code (e.g., ja)")
+    
+    # generate-release-docs
+    gr = subparsers.add_parser("generate-release-docs", help="Generate release docs from existing feature documents")
+    gr.add_argument("version", help="Version to generate release docs for (e.g., 3.0.0)")
+    gr.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
     args = parser.parse_args()
     

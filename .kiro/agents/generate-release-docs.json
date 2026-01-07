@@ -1,0 +1,13 @@
+{
+  "name": "generate-release-docs",
+  "description": "Generate release documents from existing feature documents",
+  "prompt": ".kiro/agents/prompts/generate-release-docs.md",
+  "tools": ["@builtin", "@github"],
+  "allowedTools": ["@builtin", "@github"],
+  "mcpServers": {
+    "github": {
+      "command": "bash",
+      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
+    }
+  }
+}

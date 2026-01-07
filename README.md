@@ -58,6 +58,13 @@ pip install -r requirements.txt
 gh auth login
 ```
 
+### GitHub Repository Settings
+
+Enable the following in your repository settings (Settings → General):
+
+- **Pull Requests**: Enable "Automatically delete head branches" to clean up feature branches after PR merge
+- **Pages** (Settings → Pages): Set Source to "GitHub Actions" for automatic deployment
+
 ## Usage
 
 ### Workflow
