@@ -6,7 +6,7 @@ Detailed analysis of OpenSearch features.
 - [Plan-Execute-Reflect Agent](plan-execute-reflect-agent.md) | [日本語](plan-execute-reflect-agent.ja.md)
 - [Derived Source for k-NN Vectors](derived-source-knn.md)
 - [Hybrid Query Inner Hits](hybrid-query-inner-hits.md)
-- [k-NN Node-level Circuit Breakers](knn-node-circuit-breakers.md)
+- [k-NN Node-level Circuit Breakers](knn-node-circuit-breakers.md) | [日本語](knn-node-circuit-breakers.ja.md)
 - [Lower Bound Min-Max Normalization](lower-bound-min-max-normalization.md)
 - [Plan-Execute-Reflect Agent](plan-execute-reflect-agent.md)
 - [PPL Lookup, Join, and Subsearch Commands](ppl-lookup-join-subsearch.md)
