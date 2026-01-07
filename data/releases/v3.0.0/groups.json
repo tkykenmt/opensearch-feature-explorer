@@ -4062,7 +4062,8 @@
           "category": "bugfix",
           "repository": "remote"
         }
-      ]
+      ],
+      "issue_number": 181
     },
     {
       "name": "Reporting Plugin",
@@ -4076,7 +4077,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 182
     },
     {
       "name": "Version Bumps & Release Notes",
@@ -4320,7 +4322,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 183
     },
     {
       "name": "JDK 21 & Java Agent Migration",
@@ -4411,7 +4414,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 184
     },
     {
       "name": "Neural Search Compatibility",
@@ -4437,7 +4441,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 185
     },
     {
       "name": "Observability Integrations",
@@ -4457,7 +4462,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 186
     },
     {
       "name": "CI/CD & Testing Infrastructure",
@@ -4516,7 +4522,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 187
     },
     {
       "name": "Anomaly Detection Build",
@@ -4530,7 +4537,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 188
     },
     {
       "name": "Flow Framework Templates",
@@ -4544,7 +4552,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 189
     },
     {
       "name": "ML Commons Blueprints & Tutorials",
@@ -4582,7 +4591,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 190
     },
     {
       "name": "SQL/PPL Documentation",
@@ -4596,7 +4606,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 191
     },
     {
       "name": "Remote Metadata Store Documentation",
@@ -4610,7 +4621,8 @@
           "category": "bugfix",
           "repository": "remote"
         }
-      ]
+      ],
+      "issue_number": 192
     },
     {
       "name": "Dashboards Dependencies",
@@ -4630,7 +4642,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 193
     },
     {
       "name": "CVE Fixes & Dependency Updates",
@@ -4733,7 +4746,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 194
     },
     {
       "name": "Geospatial Plugin",
@@ -4747,7 +4761,8 @@
           "category": "bugfix",
           "repository": "geospatial"
         }
-      ]
+      ],
+      "issue_number": 195
     },
     {
       "name": "Asynchronous Search",
@@ -4761,7 +4776,8 @@
           "category": "bugfix",
           "repository": "asynchronous-search"
         }
-      ]
+      ],
+      "issue_number": 196
     },
     {
       "name": "Dashboards BWC",
@@ -4775,7 +4791,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 197
     },
     {
       "name": "Reporting CI/Workflow",
@@ -4789,7 +4806,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 198
     },
     {
       "name": "AUTO",
@@ -4810,7 +4828,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 199
     },
     {
       "name": "Release 3.0",
@@ -4824,7 +4843,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 200
     },
     {
       "name": "Version Bumps & Release Qualifiers (Batch 2)",
