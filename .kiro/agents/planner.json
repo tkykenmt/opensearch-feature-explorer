@@ -1,12 +1,13 @@
 {
   "name": "planner",
   "description": "Analyze release notes and create GitHub Issues for investigation tasks",
-  "prompt": "file://./prompts/planner.md",
+  "prompt": "You are a release planner. Create a GitHub Project and Issues for release investigation.",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "resources": [
     "file://README.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/planner.md"
   ],
   "mcpServers": {
     "opensearch-docs": {

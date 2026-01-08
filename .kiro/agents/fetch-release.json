@@ -1,12 +1,13 @@
 {
   "name": "fetch-release",
   "description": "Fetch release notes and save all items to JSON cache",
-  "prompt": "file://./prompts/fetch-release.md",
+  "prompt": "You are a release notes parser. Fetch release notes and extract ALL items to a JSON file.",
   "tools": ["@builtin", "@github"],
   "allowedTools": ["@builtin", "@github"],
   "resources": [
     "file://README.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/fetch-release.md"
   ],
   "mcpServers": {
     "github": {

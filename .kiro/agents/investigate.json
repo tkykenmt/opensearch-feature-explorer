@@ -1,12 +1,13 @@
 {
   "name": "investigate",
   "description": "Investigate a single feature and create/update feature reports",
-  "prompt": "file://./prompts/investigate.md",
+  "prompt": "You are a feature investigator. Investigate release items based on GitHub Issues and create release/feature reports.",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "resources": [
     "file://README.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/investigate.md"
   ],
   "mcpServers": {
     "opensearch-docs": {

@@ -1,12 +1,13 @@
 {
   "name": "explore",
   "description": "Explore OpenSearch features interactively",
-  "prompt": "file://./prompts/explore.md",
+  "prompt": "You are an OpenSearch feature explainer. Explain features interactively, import context from URLs, and update reports with new insights.",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "resources": [
     "file://README.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/explore.md"
   ],
   "mcpServers": {
     "opensearch-docs": {

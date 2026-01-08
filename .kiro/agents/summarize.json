@@ -1,12 +1,13 @@
 {
   "name": "summarize",
   "description": "Create release summary from existing feature reports",
-  "prompt": "file://./prompts/summarize.md",
+  "prompt": "You are a release summarizer. Create release summary by aggregating release reports.",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "resources": [
     "file://README.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/summarize.md"
   ],
   "mcpServers": {
     "opensearch-docs": {

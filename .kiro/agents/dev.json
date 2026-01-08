@@ -1,13 +1,14 @@
 {
   "name": "dev",
   "description": "Development and maintenance of this tool itself",
-  "prompt": "file://./prompts/dev.md",
+  "prompt": "You are a development engineer responsible for maintaining and improving this tool.",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "resources": [
     "file://README.md",
     "file://DEVELOPMENT.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/dev.md"
   ],
   "mcpServers": {
     "opensearch-docs": {

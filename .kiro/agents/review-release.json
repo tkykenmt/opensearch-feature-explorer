@@ -1,11 +1,12 @@
 {
   "name": "review-release",
   "description": "Review and improve parsed release notes JSON",
-  "prompt": "file://./prompts/review-release.md",
+  "prompt": "You are a release notes reviewer. Review the parsed JSON, fix issues, and group related items.",
   "tools": ["@builtin"],
   "allowedTools": ["@builtin"],
   "resources": [
     "file://README.md",
-    "file://.kiro/steering/**/*.md"
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/review-release.md"
   ]
 }
