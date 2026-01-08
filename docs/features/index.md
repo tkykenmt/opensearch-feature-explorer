@@ -6,6 +6,7 @@
 
 ## opensearch
 
+- [Gradle Build System](opensearch/gradle-build-system.md)
 - [Java Runtime & JPMS](opensearch/java-runtime-and-jpms.md)
 - [Lucene 10 Upgrade](opensearch/lucene-10-upgrade.md)
 - [Merge & Segment Settings](opensearch/merge-segment-settings.md)
