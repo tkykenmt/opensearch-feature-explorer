@@ -128,6 +128,14 @@ The following plugins support multi-tenancy with remote metadata storage:
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124) | Add a developer guide |
+| v3.0.0 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update |
+| v3.0.0 | [#121](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/121) | Use SdkClientDelegate's classloader for ServiceLoader |
+| v3.0.0 | [#128](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/128) | Ensure consistent reads on DynamoDB getItem calls |
+| v3.0.0 | [#130](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/130) | Return 404 for Index not found on Local Cluster search |
+| v3.0.0 | [#141](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/141) | Directly return responses from Local Cluster client |
+| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/156) | Make generated responses robust to URL encoded values |
+| v3.0.0 | [#157](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/157) | Validate request fields in DDB Put and Update |
+| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures |
 
 ## References
 
@@ -136,7 +144,12 @@ The following plugins support multi-tenancy with remote metadata storage:
 - [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
 - [SDK Client Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
 - [Zero-ETL Replication](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OpenSearchIngestionForDynamoDB.html): DynamoDB to OpenSearch replication
+- [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() eventually consistent bug
+- [Issue #132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132): Aggregation API failure bug
+- [Issue #154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154): DDBClient validation bug
+- [Issue #1082](https://github.com/opensearch-project/flow-framework/issues/1082): Version conflict bug in flow-framework
 
 ## Change History
 
+- **v3.0.0** (2025-04-28): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
 - **v3.0.0** (2025-04-02): Added developer guide with migration instructions (PR #124)
