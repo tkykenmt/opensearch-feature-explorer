@@ -65,3 +65,7 @@
 ## multi-plugin
 
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
+
+## opensearch-remote-metadata-sdk
+
+- [Remote Metadata SDK](opensearch-remote-metadata-sdk/remote-metadata-sdk.md)
