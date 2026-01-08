@@ -95,3 +95,7 @@
 ## dashboards-maps
 
 - [Maps & Geospatial](dashboards-maps/maps-geospatial.md)
+
+## custom-codecs
+
+- [Custom Codecs](custom-codecs/custom-codecs.md)

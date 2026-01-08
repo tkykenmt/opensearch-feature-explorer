@@ -98,3 +98,7 @@
 ## dashboards-maps
 
 - [Maps & Geospatial](features/dashboards-maps/maps-geospatial.md)
+
+## custom-codecs
+
+- [ZSTD Library Bump](features/custom-codecs/zstd-library-bump.md)
