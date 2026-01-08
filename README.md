@@ -56,19 +56,18 @@ When running `gh auth login`, select the following scopes:
 - `read:org` (Read org membership)
 - `project` (Full control of projects) - **required for GitHub Projects API**
 
-After initial login, add additional scopes:
+After initial login, add workflow scope:
 
 ```bash
-gh auth refresh -s copilot -s gist -s read:org -s repo -s workflow -s project
+gh auth refresh -s read:org -s repo -s workflow -s project
 ```
 
 | Scope | Purpose |
 |-------|---------|
 | `repo` | Issue/PR operations |
 | `project` | GitHub Projects (progress tracking) |
-| `workflow` | GitHub Actions (MCP server) |
+| `workflow` | GitHub Actions (MkDocs deployment) |
 | `read:org` | Organization info |
-| `copilot`, `gist` | MCP server requirements |
 
 ## Naming Conventions
 
