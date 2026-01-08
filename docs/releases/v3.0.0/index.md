@@ -53,3 +53,7 @@
 ## sql
 
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
+
+## asynchronous-search
+
+- [GA Release Preparation](features/asynchronous-search/ga-release-preparation.md)

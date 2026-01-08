@@ -52,3 +52,7 @@
 ## sql
 
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
+
+## asynchronous-search
+
+- [Asynchronous Search](asynchronous-search/asynchronous-search.md)
