@@ -107,7 +107,7 @@ Enable the following in your repository settings (Settings → General):
 Complete workflow for investigating a new OpenSearch release.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "1. Parse"
         A[fetch-release] --> B[raw-items.json]
         B --> C[group-release]
