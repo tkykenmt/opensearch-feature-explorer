@@ -2,7 +2,7 @@
 
 ## Summary
 
-OpenSearch 3.0 introduces two major breaking changes: JDK 21 as the minimum supported Java runtime and Phase-0 JPMS (Java Platform Module System) support. These changes modernize the codebase, eliminate split packages, and prepare OpenSearch for future modularization.
+OpenSearch 3.0 introduces two major breaking changes: JDK 21 as the minimum supported Java runtime and Phase-0 JPMS (Java Platform Module System) support. These changes modernize the codebase, eliminate split packages, and prepare OpenSearch for future modularization while enabling performance improvements from modern JVM features.
 
 ## Details
 
@@ -10,10 +10,12 @@ OpenSearch 3.0 introduces two major breaking changes: JDK 21 as the minimum supp
 
 #### JDK 21 Minimum Requirement
 
-OpenSearch 3.0 requires JDK 21 as the minimum supported Java runtime. This enables:
-- Use of modern Java features and APIs
-- MemorySegment API for improved mmap performance (from JDK 19+ preview APIs)
-- Better performance and security from newer JVM versions
+OpenSearch 3.0 requires JDK 21 as the minimum supported Java runtime, a significant upgrade from JDK 11 in OpenSearch 2.x. This enables:
+- Virtual threads for improved concurrency
+- Pattern matching for `switch` statements
+- Sequenced collections
+- MemorySegment API for improved mmap performance (finalized from JDK 19+ preview APIs)
+- Better overall performance (benchmarks showed JDK 17+ significantly outperformed earlier versions)
 
 #### JPMS Phase-0: Split Package Elimination
 
@@ -31,23 +33,29 @@ The codebase has been refactored to eliminate top-level split packages, preparin
 
 #### Package Refactoring
 
-1. **Bootstrap Package**: Moved from `:libs:opensearch-common` and `:server` split to unified `org.opensearch.common.bootstrap`
+1. **Bootstrap Package** ([#17117](https://github.com/opensearch-project/OpenSearch/pull/17117)): Moved from `:libs:opensearch-common` and `:server` split to unified `org.opensearch.common.bootstrap`
 
-2. **CLI Package**: Refactored `:server` module's `org.opensearch.cli` to `org.opensearch.common.cli`, removed unused `LoggingAwareCommand.java`
+2. **CLI Package** ([#17153](https://github.com/opensearch-project/OpenSearch/pull/17153)): 
+   - Refactored `:server` module's `org.opensearch.cli` to `org.opensearch.common.cli`
+   - Removed unused `LoggingAwareCommand.java`
+   - Moved common CLI tests from `:server` to `:libs`
+   - Refactored `plugin-cli` to `org.opensearch.tools.cli.plugin`
+   - Refactored `upgrade-cli` to `org.opensearch.tools.cli.upgrade`
+   - Removed `:libs:plugin-classloader`, moved `ExtendedPluginsClassLoader` to `:server`
 
-3. **Client Package**: Refactored `org.opensearch.client` to `org.opensearch.transport.client` to resolve split package with REST client
+3. **Client Package** ([#17272](https://github.com/opensearch-project/OpenSearch/pull/17272)): Refactored `org.opensearch.client` to `org.opensearch.transport.client` to resolve split package with REST client
 
-4. **Lucene Package**: Refactored `org.apache.lucene` classes to `org.opensearch.lucene`:
+4. **Lucene Package** ([#17241](https://github.com/opensearch-project/OpenSearch/pull/17241)): Refactored `org.apache.lucene` classes to `org.opensearch.lucene`:
    - Removed `OneMergeHelper.java`, merged into `OpenSearchConcurrentMergeScheduler`
    - Moved `Packed64` implementation directly to `CuckooFilter`
    - Updated `ShuffleForcedMergePolicy` to use `addDiagnostics`
-   - Added `MinimizationOperations` with new `Automaton` class
-
-5. **Plugin Classloader**: Removed `:libs:plugin-classloader`, refactored `ExtendedPluginsClassLoader` to `:server`
+   - Added `MinimizationOperations` with new `Automaton` class from Lucene
+   - Updated `QueryStringQueryParser` from `XQueryParser` to standard `QueryParser`
+   - Updated `CustomFieldHighlighter` with `getFieldOffsetStrategy` method
 
 #### MMap Preview API Support
 
-When running with JDK 19+, OpenSearch can use the MemorySegment API for improved mmap performance:
+When running with JDK 19+, OpenSearch can use the MemorySegment API for improved mmap performance ([#5151](https://github.com/opensearch-project/OpenSearch/pull/5151)):
 
 ```bash
 # Enable preview features for MemorySegment API
@@ -72,6 +80,7 @@ Without `--enable-preview`:
    - `org.opensearch.client.*` → `org.opensearch.transport.client.*`
    - `org.opensearch.bootstrap.*` → `org.opensearch.common.bootstrap.*`
 3. **Java High-Level REST Client**: No longer supports JDK 8
+4. **Environment Variables**: Use `OPENSEARCH_JAVA_HOME` to specify JDK path (takes precedence over `JAVA_HOME`)
 
 ## Limitations
 
@@ -92,6 +101,8 @@ Without `--enable-preview`:
 
 - [Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): META - Split and modularize the server monolith
 - [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): JDK 21 requirement documentation
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
+- [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes with OpenSearch
 
 ## Related Feature Report
 

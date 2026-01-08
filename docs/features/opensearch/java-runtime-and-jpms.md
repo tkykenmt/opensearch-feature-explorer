@@ -42,8 +42,9 @@ graph TB
 
 | Setting | Description | Default |
 |---------|-------------|---------|
+| `OPENSEARCH_JAVA_HOME` | Path to JDK 21+ installation (takes precedence over JAVA_HOME) | None |
+| `JAVA_HOME` | Fallback path to JDK installation | System default |
 | `OPENSEARCH_JAVA_OPTS` | JVM options including `--enable-preview` for MemorySegment | None |
-| `JAVA_HOME` | Path to JDK 21+ installation | System default |
 
 ### Package Mapping
 
@@ -60,6 +61,9 @@ graph TB
 # Verify JDK version
 java -version
 # openjdk version "21.0.x" ...
+
+# Set OpenSearch-specific Java home
+export OPENSEARCH_JAVA_HOME=/path/to/jdk21
 
 # Start OpenSearch with MemorySegment API enabled
 OPENSEARCH_JAVA_OPTS="--enable-preview" ./bin/opensearch
@@ -87,6 +91,8 @@ OPENSEARCH_JAVA_OPTS="--enable-preview" ./bin/opensearch
 - [PR #17241](https://github.com/opensearch-project/OpenSearch/pull/17241): Lucene package refactor
 - [PR #17272](https://github.com/opensearch-project/OpenSearch/pull/17272): Client package refactor
 - [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): Official documentation
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
+- [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes with OpenSearch
 
 ## Change History
 
