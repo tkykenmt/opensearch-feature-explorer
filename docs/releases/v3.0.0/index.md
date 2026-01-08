@@ -12,6 +12,7 @@
 - [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
 - [Stream Input/Output](features/opensearch/stream-inputoutput.md)
+- [Wildcard Field](features/opensearch/wildcard-field.md)
 
 ## opensearch-dashboards
 
