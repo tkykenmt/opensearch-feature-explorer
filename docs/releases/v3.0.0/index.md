@@ -71,3 +71,7 @@
 ## opensearch-remote-metadata-sdk
 
 - [Remote Metadata Store Documentation](features/opensearch-remote-metadata-sdk/remote-metadata-store-documentation.md)
+
+## ml-commons
+
+- [ML Commons Blueprints & Tutorials](features/ml-commons/ml-commons-blueprints-tutorials.md)
