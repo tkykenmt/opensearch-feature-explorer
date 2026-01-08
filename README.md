@@ -106,33 +106,56 @@ Enable the following in your repository settings (Settings → General):
 
 Complete workflow for investigating a new OpenSearch release.
 
+#### Step 1: Parse Release Notes
+
 ```mermaid
 flowchart LR
-    subgraph Parse
-        A[fetch-release] --> B[(items)]
-        B --> C[group-release]
-        C --> D[(groups)]
-    end
-    subgraph Plan
-        D --> E[planner]
-        E --> F[(Project + Issues)]
-    end
-    subgraph Investigate
-        F --> G[investigate]
-        G --> H[(Reports)]
-    end
-    subgraph Summarize
-        H --> I[summarize]
-        I --> J[(Summary)]
-    end
+    A[fetch-release] --> B[(raw-items.json)]
+    B --> C[group-release]
+    C --> D[(groups.json)]
 ```
 
 ```bash
-python run.py fetch-release 3.0.0      # Parse release notes
-python run.py group-release 3.0.0      # Group items by feature
-python run.py planner 3.0.0            # Create Project & Issues
-python run.py investigate --issue 124  # Investigate each Issue
-python run.py summarize 3.0.0          # Create release summary
+python run.py fetch-release 3.0.0
+python run.py group-release 3.0.0
+```
+
+#### Step 2: Create GitHub Project & Issues
+
+```mermaid
+flowchart LR
+    A[(groups.json)] --> B[planner]
+    B --> C[(GitHub Project)]
+    B --> D[(Issues)]
+```
+
+```bash
+python run.py planner 3.0.0
+```
+
+#### Step 3: Investigate Each Issue
+
+```mermaid
+flowchart LR
+    A[(Issue)] --> B[investigate]
+    B --> C[(Release Report)]
+    B --> D[(Feature Report)]
+```
+
+```bash
+python run.py investigate --issue 124
+```
+
+#### Step 4: Create Release Summary
+
+```mermaid
+flowchart LR
+    A[(Release Reports)] --> B[summarize]
+    B --> C[(Release Summary)]
+```
+
+```bash
+python run.py summarize 3.0.0
 ```
 
 ### Use Case 2: Single Feature Investigation
