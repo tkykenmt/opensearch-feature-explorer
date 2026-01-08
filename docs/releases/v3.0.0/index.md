@@ -89,6 +89,7 @@
 
 ## anomaly-detection
 
+- [Anomaly Detection](features/anomaly-detection/anomaly-detection.md)
 - [Dual Cluster Gradle Run](features/anomaly-detection/dual-cluster-gradle-run.md)
 
 ## observability
