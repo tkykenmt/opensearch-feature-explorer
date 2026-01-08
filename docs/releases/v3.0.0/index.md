@@ -16,6 +16,7 @@
 - [Dashboards Cypress Testing](features/opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards UI/UX Fixes](features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
+- [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 
 ## sql
 
