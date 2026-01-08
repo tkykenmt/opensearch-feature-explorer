@@ -82,3 +82,7 @@
 ## anomaly-detection
 
 - [Dual Cluster Development Environment](anomaly-detection/dual-cluster-development.md)
+
+## observability
+
+- [Observability Integrations](observability/observability-integrations.md)
