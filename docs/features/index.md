@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
+- [Dependency Management](opensearch/dependency-management.md)
 - [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
 - [Source Field Matching](opensearch/source-field-matching.md)

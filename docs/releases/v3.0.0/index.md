@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
+- [Dependency Bumps](features/opensearch/dependency-bumps.md)
 - [Locale Provider Changes](features/opensearch/locale-provider-changes.md)
 - [HTTP API Improvements](features/opensearch/http-api-improvements.md)
 - [Source Field Matching](features/opensearch/source-field-matching.md)
