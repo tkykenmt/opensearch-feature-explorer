@@ -94,3 +94,7 @@
 ## observability
 
 - [Observability Integrations](features/observability/observability-integrations.md)
+
+## dashboards-maps
+
+- [Maps & Geospatial](features/dashboards-maps/maps-geospatial.md)
