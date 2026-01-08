@@ -1,8 +1,8 @@
-# Java Runtime & JPMS
+# Java Runtime & JPMS Support
 
 ## Summary
 
-OpenSearch's Java runtime requirements and JPMS (Java Platform Module System) support define the minimum JDK version and module architecture. Starting with OpenSearch 3.0, JDK 21 is required, and the codebase has been refactored to eliminate split packages in preparation for full JPMS modularization.
+OpenSearch's Java runtime requirements and Java Platform Module System (JPMS) support define the minimum JDK version and module architecture for running OpenSearch. Starting with version 3.0.0, OpenSearch requires JDK 21 as the minimum runtime and has begun refactoring the codebase to support JPMS modularization. This enables OpenSearch to leverage modern Java features, improve startup performance, and provide better encapsulation of internal APIs.
 
 ## Details
 
@@ -10,92 +10,142 @@ OpenSearch's Java runtime requirements and JPMS (Java Platform Module System) su
 
 ```mermaid
 graph TB
-    subgraph "OpenSearch Modules"
-        Server[":server"]
-        LibsCommon[":libs:opensearch-common"]
-        LibsCli[":libs:opensearch-cli"]
-        LibsCore[":libs:opensearch-core"]
+    subgraph "OpenSearch Module Architecture"
+        subgraph "Core Libraries"
+            LC[":libs:opensearch-common"]
+            LCR[":libs:opensearch-core"]
+            LCLI[":libs:opensearch-cli"]
+        end
+        
+        subgraph "Server"
+            SRV[":server"]
+        end
+        
+        subgraph "Distribution Tools"
+            KS[":distribution:tools:keystore-cli"]
+            PL[":distribution:tools:plugin-cli"]
+            UP[":distribution:tools:upgrade-cli"]
+        end
+        
+        LC --> SRV
+        LCR --> SRV
+        LCLI --> KS
+        LCLI --> PL
+        LCLI --> UP
+        SRV --> KS
+        SRV --> PL
     end
     
-    subgraph "Package Structure (v3.0+)"
-        Bootstrap["org.opensearch.common.bootstrap"]
-        Cli["org.opensearch.common.cli"]
-        Client["org.opensearch.transport.client"]
-        Lucene["org.opensearch.lucene.*"]
+    subgraph "JDK Runtime"
+        JDK21["JDK 21+ (Required)"]
+        JPMS["JPMS Module System"]
     end
     
-    LibsCommon --> Bootstrap
-    Server --> Cli
-    Server --> Client
-    Server --> Lucene
+    JDK21 --> SRV
+    JPMS -.->|"Future"| SRV
 ```
+
+### JDK Version History
+
+| OpenSearch Version | Bundled JDK | Minimum JDK | Tested JDKs |
+|-------------------|-------------|-------------|-------------|
+| 1.0.0 - 1.2.4 | AdoptOpenJDK 15.0.1+9 | 11 | 11, 14, 15 |
+| 1.3.x | Adoptium 11.0.14.1+1 | 8 | 8, 11, 14 |
+| 2.x | Adoptium 17.x | 11 | 11, 17 |
+| 3.0.0+ | Adoptium 21.x | 21 | 21 |
+
+### JPMS Modularization Phases
+
+The modularization effort is divided into phases:
+
+#### Phase 0: Split Package Elimination (v3.0.0)
+Eliminates split packages where the same Java package exists in multiple JAR files. This is a prerequisite for JPMS as the module system requires each package to belong to exactly one module.
+
+**Completed refactoring:**
+- `org.opensearch.bootstrap` → `org.opensearch.common.bootstrap` (in libs)
+- `org.opensearch.cli` → `org.opensearch.common.cli` (in server)
+- `org.opensearch.client` → `org.opensearch.transport.client` (in server)
+- `org.apache.lucene.*` → `org.opensearch.lucene.*` (custom Lucene extensions)
+
+#### Phase 1: Library Decoupling (Planned)
+Further separation of concerns to support serverless and cloud-native implementations:
+- `org.opensearch.env` → `:libs:opensearch-core`
+- `org.opensearch.common.settings` → `:libs:opensearch-core`
+- `org.opensearch.cluster.metadata` → `:libs:opensearch-cluster`
 
 ### Components
 
-| Component | Description | Since |
-|-----------|-------------|-------|
-| JDK 21 Runtime | Minimum supported Java version | v3.0.0 |
-| MemorySegment API | Modern mmap implementation using JDK 19+ preview APIs | v3.0.0 |
-| JPMS Phase-0 | Split package elimination for module system compatibility | v3.0.0 |
+| Component | Description | Package |
+|-----------|-------------|---------|
+| JarHell | Detects duplicate classes across JARs | `org.opensearch.common.bootstrap` |
+| JdkJarHellCheck | Validates JDK compatibility | `org.opensearch.common.bootstrap` |
+| EnvironmentAwareCommand | Base class for CLI commands | `org.opensearch.common.cli` |
+| KeyStoreAwareCommand | CLI commands with keystore access | `org.opensearch.tools.cli.keystore` |
+| PluginCli | Plugin management CLI | `org.opensearch.tools.cli.plugin` |
 
 ### Configuration
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `OPENSEARCH_JAVA_HOME` | Path to JDK 21+ installation (takes precedence over JAVA_HOME) | None |
-| `JAVA_HOME` | Fallback path to JDK installation | System default |
-| `OPENSEARCH_JAVA_OPTS` | JVM options including `--enable-preview` for MemorySegment | None |
-
-### Package Mapping
-
-| Original Package | New Package | Reason |
-|-----------------|-------------|--------|
-| `org.opensearch.bootstrap` (libs) | `org.opensearch.common.bootstrap` | Eliminate split with `:server` |
-| `org.opensearch.cli` (server) | `org.opensearch.common.cli` | Eliminate split with `:libs:opensearch-cli` |
-| `org.opensearch.client` (server) | `org.opensearch.transport.client` | Eliminate split with REST client |
-| `org.apache.lucene.*` (server) | `org.opensearch.lucene.*` | Eliminate split with Lucene library |
+| `JAVA_HOME` | Path to JDK installation | System default |
+| `OPENSEARCH_JAVA_HOME` | OpenSearch-specific JDK path (takes precedence) | Not set |
+| `OPENSEARCH_JAVA_OPTS` | Additional JVM options | Empty |
 
 ### Usage Example
 
 ```bash
-# Verify JDK version
+# Check Java version
 java -version
-# openjdk version "21.0.x" ...
+# openjdk version "21.0.1" 2023-10-17 LTS
 
-# Set OpenSearch-specific Java home
+# Set OpenSearch-specific Java home (optional)
 export OPENSEARCH_JAVA_HOME=/path/to/jdk21
 
-# Start OpenSearch with MemorySegment API enabled
-OPENSEARCH_JAVA_OPTS="--enable-preview" ./bin/opensearch
+# Start OpenSearch (uses bundled JDK by default)
+./bin/opensearch
 
-# Expected log output
-# [INFO] Using MemorySegmentIndexInput with Java 21
+# Verify JDK in use via nodes API
+curl -X GET "localhost:9200/_nodes/jvm?pretty"
+```
+
+### Memory Mapping with JDK 21
+
+JDK 21 provides stable `MemorySegment` API for memory-mapped files:
+
+```java
+// Lucene uses MemorySegment for efficient index access
+// No --enable-preview flag required (was needed in JDK 19-20)
+[INFO] Using MemorySegmentIndexInput with Java 21
 ```
 
 ## Limitations
 
-- Full JPMS modularization (Phase 1+) is ongoing
-- Some `org.apache.lucene` packages remain pending Star Tree implementation:
-  - `org.apache.lucene.codecs`
-  - `org.apache.lucene.index`
-  - `org.apache.lucene.search.grouping`
+- **Minimum JDK 21**: No support for JDK 8, 11, or 17 in OpenSearch 3.0+
+- **Plugin compatibility**: Plugins must be compiled with JDK 21 and updated imports
+- **JPMS not fully enabled**: Module descriptors (`module-info.java`) not yet added
+- **Reflection restrictions**: Future JPMS enforcement may restrict reflective access
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#17153](https://github.com/opensearch-project/OpenSearch/pull/17153) | Refactor codebase for JPMS support |
+| v3.0.0 | [#17117](https://github.com/opensearch-project/OpenSearch/pull/17117) | Refactor bootstrap package |
+| v3.0.0 | [#17241](https://github.com/opensearch-project/OpenSearch/pull/17241) | Refactor Lucene packages |
+| v3.0.0 | [#17272](https://github.com/opensearch-project/OpenSearch/pull/17272) | Refactor client package |
+| v2.4.0 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Enable JDK 19 preview APIs for mmap |
 
 ## References
 
 - [Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): META - Split and modularize the server monolith
 - [Issue #1588](https://github.com/opensearch-project/OpenSearch/issues/1588): JPMS support tracking
 - [Issue #5910](https://github.com/opensearch-project/OpenSearch/issues/5910): Modularization discussion
-- [PR #5151](https://github.com/opensearch-project/OpenSearch/pull/5151): MMap preview API support
-- [PR #17117](https://github.com/opensearch-project/OpenSearch/pull/17117): Bootstrap package refactor
-- [PR #17153](https://github.com/opensearch-project/OpenSearch/pull/17153): CLI package refactor
-- [PR #17241](https://github.com/opensearch-project/OpenSearch/pull/17241): Lucene package refactor
-- [PR #17272](https://github.com/opensearch-project/OpenSearch/pull/17272): Client package refactor
-- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): Official documentation
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
-- [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes with OpenSearch
+- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
+- [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes
 
 ## Change History
 
-| Version | Changes |
-|---------|---------|
-| v3.0.0 | JDK 21 minimum requirement, JPMS Phase-0 split package elimination |
+- **v3.0.0** (2025): JDK 21 minimum requirement, JPMS Phase 0 split package elimination
+- **v2.4.0** (2022): Added JDK 19 preview API support for memory mapping
+- **v1.3.0** (2022): Introduced `OPENSEARCH_JAVA_HOME` environment variable, downgraded bundled JDK to 11 LTS
+- **v1.0.0** (2021): Initial release with JDK 15 bundled, JDK 11 minimum
