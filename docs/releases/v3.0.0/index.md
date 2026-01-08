@@ -37,6 +37,7 @@
 - [Dashboards Cypress Testing](features/opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards Dependencies](features/opensearch-dashboards/dashboards-dependencies.md)
 - [Dashboards UI/UX Fixes](features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
+- [Monaco Editor Upgrade](features/opensearch-dashboards/monaco-editor-upgrade.md)
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 
