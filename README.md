@@ -109,23 +109,23 @@ Complete workflow for investigating a new OpenSearch release.
 ```mermaid
 flowchart TB
     subgraph "1. Parse"
-        A[fetch-release] --> B[raw-items.json]
+        A[fetch-release] --> B[(raw-items.json)]
         B --> C[group-release]
-        C --> D[groups.json]
+        C --> D[(groups.json)]
     end
     subgraph "2. Plan"
         D --> E[planner]
-        E --> F[GitHub Project]
-        E --> G[Issues]
+        E --> F[(GitHub Project)]
+        E --> G[(Issues)]
     end
     subgraph "3. Investigate"
         G --> H[investigate]
-        H --> I[Release Reports]
-        H --> J[Feature Reports]
+        H --> I[(Release Reports)]
+        H --> J[(Feature Reports)]
     end
     subgraph "4. Summarize"
         I --> K[summarize]
-        K --> L[Release Summary]
+        K --> L[(Release Summary)]
     end
 ```
 
