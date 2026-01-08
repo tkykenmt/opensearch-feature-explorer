@@ -67,6 +67,7 @@ graph TB
 #### Navigation Fixes
 - **Nav Group Assignment**: Fixed visualization pages showing incorrect nav group when workspace is disabled
 - **Sample Data Category**: Moved sample data from "Custom" to "Settings and Setup" category
+- **Sidecar Compatibility**: Fixed navigation icon positioning when sidecar panel is docked to the left
 
 #### Query Editor Fixes
 - **Suggestions Popup**: Fixed suggestions not closing after pressing Enter to submit query
@@ -86,6 +87,9 @@ graph TB
 - Replaced `@elastic/filesaver` with `file-saver` library
 - Replaced `formatNumWithCommas` with native `toLocaleString()`
 
+#### Data Frame Fixes
+- **Null/Undefined Handling**: Fixed TypeError when processing data frames with null or undefined values in nested object fields
+
 ## Limitations
 
 - UI fixes are incremental improvements
@@ -96,6 +100,8 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#9514](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9514) | Make nav icon style compatible with sidecar |
+| v3.0.0 | [#9516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9516) | Fix data frame null or undefined object conversion error |
 | v3.0.0 | [#9665](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9665) | Fix workspace disabled navigation |
 | v3.0.0 | [#9666](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9666) | Close suggestions after query submission |
 | v3.0.0 | [#9668](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9668) | Fix dataset selector flashing |
