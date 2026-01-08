@@ -1,6 +1,10 @@
-# OpenSearch v3.0.0 Release Features
+# OpenSearch v3.0.0
 
-## neural-search
+- [Release Summary](summary.md)
+
+## Feature Reports
+
+### neural-search
 
 - [Neural Search Compatibility](features/neural-search/neural-search-compatibility.md)
 - [Semantic Field](features/neural-search/semantic-field.md)
