@@ -8,6 +8,7 @@
 
 - [Java Runtime & JPMS](features/opensearch/java-runtime-and-jpms.md)
 - [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
+- [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
 
 ## opensearch-dashboards
 
