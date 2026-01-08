@@ -20,6 +20,7 @@
 - [Merge & Segment Settings](opensearch/merge-segment-settings.md)
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
+- [Segment Warmer](opensearch/segment-warmer.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 
