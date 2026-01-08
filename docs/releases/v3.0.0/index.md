@@ -54,6 +54,7 @@
 ## sql
 
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
+- [SQL/PPL Documentation](features/sql/sql-ppl-documentation.md)
 
 ## asynchronous-search
 
