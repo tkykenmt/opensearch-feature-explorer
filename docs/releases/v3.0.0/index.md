@@ -61,3 +61,7 @@
 ## geospatial
 
 - [Maven POM Metadata Fix](features/geospatial/maven-pom-metadata.md)
+
+## multi-plugin
+
+- [CVE Fixes & Dependency Updates](features/multi-plugin/cve-fixes-dependency-updates.md)
