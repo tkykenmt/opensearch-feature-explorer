@@ -197,4 +197,4 @@ config:
 ## Change History
 
 - **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
-- **v2.18.0** (2024): Auto-convert security config models from v6 to v7
+- **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7

@@ -154,5 +154,5 @@ POST /_plugins/_ml/connectors/_create
 ## Change History
 
 - **v3.0.0** (2025-05-06): Added standard blueprints for vector search, Claude 3.7 blueprint, Azure OpenAI blueprint, RAG tutorials
-- **v2.14.0**: Introduced ML inference processor support for standard blueprints
-- **v2.9.0**: Initial connector blueprints feature
+- **v2.14.0** (2024-05-14): Introduced ML inference processor support for standard blueprints
+- **v2.9.0** (2023-07-24): Initial connector blueprints feature

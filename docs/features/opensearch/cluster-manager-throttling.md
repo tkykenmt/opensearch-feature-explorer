@@ -128,4 +128,4 @@ PUT _cluster/settings
 ## Change History
 
 - **v3.0.0** (2025-05-06): Enabled default throttling for all task types with predefined thresholds; introduced `ClusterManagerTask` enum
-- **v2.4.0** (2022): Initial implementation of cluster manager task throttling (disabled by default)
+- **v2.4.0** (2022-11-15): Initial implementation of cluster manager task throttling (disabled by default)

@@ -167,6 +167,6 @@ Notebooks support OpenSearch security features:
 ## Change History
 
 - **v3.0.0** (2025-05-06): Removed legacy notebooks support; only `.kibana` storage supported
-- **v2.19.0** (2024): Deprecated legacy notebooks with migration notice
-- **v2.17.0** (2024): Introduced saved objects storage in `.kibana` index
-- **v1.0.0** (2021): Initial production release with SQL, PPL, and visualization support
+- **v2.19.0** (2025-02-11): Deprecated legacy notebooks with migration notice
+- **v2.17.0** (2024-09-17): Introduced saved objects storage in `.kibana` index
+- **v1.0.0** (2021-07-12): Initial production release with SQL, PPL, and visualization support

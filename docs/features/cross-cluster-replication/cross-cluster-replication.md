@@ -164,4 +164,4 @@ POST _plugins/_replication/follower-index/_stop
 ## Change History
 
 - **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
-- **v1.1.0** (2021-10): Initial cross-cluster replication implementation
+- **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation
