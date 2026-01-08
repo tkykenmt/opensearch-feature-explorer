@@ -102,39 +102,71 @@ Enable the following in your repository settings (Settings → General):
 
 ## Usage
 
-### Workflow
+### Use Case 1: Full Release Investigation
+
+Complete workflow for investigating a new OpenSearch release.
+
+```mermaid
+flowchart LR
+    subgraph "1. Parse"
+        A[fetch-release] --> B[raw-items.json]
+        B --> C[group-release]
+        C --> D[groups.json]
+    end
+    subgraph "2. Plan"
+        D --> E[planner]
+        E --> F[GitHub Project]
+        E --> G[Issues]
+    end
+    subgraph "3. Investigate"
+        G --> H[investigate]
+        H --> I[Release Reports]
+        H --> J[Feature Reports]
+    end
+    subgraph "4. Summarize"
+        I --> K[summarize]
+        K --> L[Release Summary]
+    end
+```
 
 ```bash
-# 1. Parse release notes and save to JSON cache
-python run.py fetch-release 3.0.0
+python run.py fetch-release 3.0.0      # Parse release notes
+python run.py group-release 3.0.0      # Group items by feature
+python run.py planner 3.0.0            # Create Project & Issues
+python run.py investigate --issue 124  # Investigate each Issue
+python run.py summarize 3.0.0          # Create release summary
+```
 
-# 2. Create tracking Issue from JSON cache
-python run.py planner 3.0.0
+### Use Case 2: Single Feature Investigation
 
-# 3. Create individual investigation Issues from tracking Issue
-python run.py create-issues --tracking 123
+Quick investigation of a specific feature without full release workflow.
 
-# Or create in batches
-python run.py create-issues --tracking 123 --limit 20
+```mermaid
+flowchart LR
+    A[PR Number] --> B[investigate]
+    C[Feature Name] --> B
+    B --> D[Release Report]
+    B --> E[Feature Report]
+```
 
-# Or filter by category
-python run.py create-issues --tracking 123 --category features
-
-# 3. Investigate each feature (from GitHub Issue)
-python run.py investigate --issue 124
-
-# 4. Or investigate directly
+```bash
 python run.py investigate "Star Tree" --pr 16233
+```
 
-# 5. Batch investigate multiple issues
-python run.py batch-investigate 5        # Process 5 issues
-python run.py batch-investigate --all    # Process all open issues
+### Use Case 3: Interactive Exploration
 
-# 6. Create release summary
-python run.py summarize 3.0.0
+Explore features interactively with Q&A.
 
-# 7. Translate if needed
-python run.py translate --feature "Star Tree" --to ja
+```mermaid
+flowchart LR
+    A[Feature Name] --> B[explore]
+    B --> C[Q&A Session]
+    C --> D[Import URLs]
+    D --> C
+```
+
+```bash
+python run.py explore "Segment Replication" --lang ja
 ```
 
 ### Planner Options
@@ -143,12 +175,6 @@ python run.py translate --feature "Star Tree" --to ja
 # Ignore existing tracking Issue and create new one
 python run.py planner 3.0.0 -i
 python run.py planner 3.0.0 --ignore-existing
-```
-
-### Interactive Exploration
-
-```bash
-python run.py explore "Segment Replication" --lang ja
 ```
 
 ## Output Structure
