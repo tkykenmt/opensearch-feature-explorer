@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
+- [Mapping Transformer](features/opensearch/mapping-transformer.md)
 - [Cluster Manager Throttling](features/opensearch/cluster-manager-throttling.md)
 - [Dependency Bumps](features/opensearch/dependency-bumps.md)
 - [Locale Provider Changes](features/opensearch/locale-provider-changes.md)
