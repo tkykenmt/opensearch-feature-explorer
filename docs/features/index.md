@@ -71,6 +71,7 @@
 
 - [CI/CD & Testing Infrastructure](multi-plugin/ci-cd-testing-infrastructure.md)
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
+- [JDK 21 & Java Agent Migration](multi-plugin/jdk-21-java-agent-migration.md)
 
 ## opensearch-remote-metadata-sdk
 
