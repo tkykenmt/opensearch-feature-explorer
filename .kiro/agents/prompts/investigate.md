@@ -107,14 +107,18 @@ For discovery:
 
 ### 2.2 Resource Investigation
 1. Fetch known resource URLs from Issue body (use `web_fetch`)
-2. Search for additional resources using OpenSearch Docs MCP:
+2. Search for documentation using OpenSearch Docs MCP:
    ```
-   search(query="{feature}", version="{version}", types="docs,blogs")
+   search(query="{feature}", version="{version}", types="docs")
    ```
-3. **Fetch ALL search results** with `web_fetch`:
+3. Search for blog posts separately:
+   ```
+   search(query="{feature}", version="{version}", types="blogs")
+   ```
+4. **Fetch ALL search results** with `web_fetch`:
    - Documentation pages - read for official specs and usage
    - Blog posts - read for examples, best practices, and context
-4. Save all discovered resource URLs for References section
+5. Save all discovered resource URLs for References section
 
 ### 2.3 Cache Retrieved Data
 Save to `.cache/releases/{version}/`:
