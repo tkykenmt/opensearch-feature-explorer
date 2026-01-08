@@ -11,6 +11,7 @@
 
 ## opensearch-dashboards
 
+- [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 
 ## sql
