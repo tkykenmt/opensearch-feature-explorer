@@ -188,7 +188,3 @@ mkdocs serve
 ## Disclosure
 
 This project uses generative AI to create documentation. Generated content may contain inaccuracies. Always verify information against official OpenSearch documentation and source code.
-
-## License
-
-MIT-0 (MIT No Attribution) - See [LICENSE](LICENSE)
