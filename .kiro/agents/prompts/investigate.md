@@ -269,10 +269,11 @@ git push
 
 ## Step 6: Return to Original Branch
 
-**IMPORTANT: Always return to the original branch after completion.**
+**IMPORTANT: Always return to the original branch and sync with remote after PR merge.**
 
 ```bash
 git checkout $ORIGINAL_BRANCH
+git pull origin $ORIGINAL_BRANCH
 ```
 
 ## Step 7: Update GitHub Issue
