@@ -114,3 +114,4 @@
 
 - [Vector Search (k-NN)](k-nn/vector-search-k-nn.md)
 - [k-NN Explain API](k-nn/explain-api.md)
+- [Lucene On Faiss (Memory Optimized Search)](k-nn/lucene-on-faiss.md)
