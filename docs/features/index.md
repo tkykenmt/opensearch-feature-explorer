@@ -59,6 +59,7 @@
 
 ## sql
 
+- [SQL/PPL Engine](sql/sql-ppl-engine.md)
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
 
 ## asynchronous-search
