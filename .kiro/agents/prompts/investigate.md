@@ -93,20 +93,27 @@ After loading the target Issue, check for duplicates:
 
 ## Step 2: Deep Investigation
 
+**IMPORTANT**: Thoroughly read ALL sources. Don't just list references - actually fetch and analyze their content.
+
 ### 2.1 GitHub Investigation
-1. Get PR details using `get_pull_request`
-2. Get changed files using `list_pull_request_files`
-3. Get linked Issues using `get_issue`
-4. Get key code snippets using `get_file_contents`
-5. Search for related PRs using `search_issues`
+For each PR listed in the Issue:
+1. Get PR details using `get_pull_request` - read the full description
+2. Get changed files using `get_pull_request_files`
+3. **Read key changed files** using `get_file_contents` - understand the actual implementation
+4. Get linked Issues using `get_issue` - read the full discussion for context/motivation
+
+For discovery:
+5. Search for related PRs/Issues using `search_issues`
 
 ### 2.2 Resource Investigation
-1. Fetch known resource URLs from Issue (use `web_fetch`)
+1. Fetch known resource URLs from Issue body (use `web_fetch`)
 2. Search for additional resources using OpenSearch Docs MCP:
    ```
    search(query="{feature}", version="{version}", types="docs,blogs")
    ```
-3. **IMPORTANT**: Fetch and analyze ALL found blog posts with `web_fetch` - blogs often contain usage examples, best practices, and context not in docs
+3. **Fetch ALL search results** with `web_fetch`:
+   - Documentation pages - read for official specs and usage
+   - Blog posts - read for examples, best practices, and context
 4. Save all discovered resource URLs for References section
 
 ### 2.3 Cache Retrieved Data
