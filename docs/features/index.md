@@ -99,3 +99,7 @@
 ## custom-codecs
 
 - [Custom Codecs](custom-codecs/custom-codecs.md)
+
+## cross-cluster-replication
+
+- [Cross-Cluster Replication](cross-cluster-replication/cross-cluster-replication.md)

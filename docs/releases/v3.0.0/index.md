@@ -102,3 +102,7 @@
 ## custom-codecs
 
 - [ZSTD Library Bump](features/custom-codecs/zstd-library-bump.md)
+
+## cross-cluster-replication
+
+- [Cross-Cluster Replication (CCR)](features/cross-cluster-replication/cross-cluster-replication-ccr.md)

@@ -1,0 +1,167 @@
+# Cross-Cluster Replication (CCR)
+
+## Summary
+
+Cross-Cluster Replication (CCR) is an OpenSearch plugin that enables replication of indexes, mappings, and metadata from one OpenSearch cluster to another. It follows an active-passive model where follower indices pull data from leader (remote) indices, providing disaster recovery, geographic distribution, and centralized reporting capabilities.
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Leader Cluster"
+        LI[Leader Index]
+        LP[Primary Shards]
+    end
+    
+    subgraph "Follower Cluster"
+        FI[Follower Index]
+        FR[Replica Shards]
+        CCR[CCR Plugin]
+        ISM[ISM Plugin]
+    end
+    
+    subgraph "Common Utils"
+        RPI[ReplicationPluginInterface]
+    end
+    
+    LP --> |Replication| CCR
+    CCR --> FI
+    FI --> FR
+    ISM --> |stop_replication| RPI
+    RPI --> CCR
+```
+
+### Data Flow
+
+```mermaid
+flowchart LR
+    subgraph Leader
+        A[Write Operations] --> B[Primary Shard]
+        B --> C[Translog]
+    end
+    
+    subgraph Follower
+        D[CCR Background Tasks] --> E[Poll for Changes]
+        E --> F[Apply Changes]
+        F --> G[Follower Index]
+    end
+    
+    C --> |Pull Changes| E
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| ReplicationPlugin | Main CCR plugin class |
+| TransportStopIndexReplicationAction | Transport action to stop replication |
+| ReplicationPluginInterface | Cross-plugin interface in common-utils |
+| StopIndexReplicationRequest | Request object for stop replication |
+| StopReplicationAction (ISM) | ISM action to invoke stop replication |
+| AttemptStopReplicationStep | ISM step executing stop replication |
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `plugins.replication.follower.metadata_sync_interval` | Interval for metadata sync | 60s |
+| `plugins.replication.follower.index.recovery.chunk_size` | Chunk size for recovery | 10MB |
+| `plugins.replication.follower.index.recovery.max_concurrent_file_chunks` | Max concurrent file chunks | 4 |
+| `plugins.replication.autofollow.fetch_poll_interval` | Auto-follow poll interval | 30s |
+
+### Usage Example
+
+#### Starting Replication
+
+```bash
+PUT _plugins/_replication/follower-index/_start
+{
+  "leader_alias": "leader-cluster",
+  "leader_index": "leader-index"
+}
+```
+
+#### Stopping Replication
+
+```bash
+POST _plugins/_replication/follower-index/_stop
+```
+
+#### ISM Policy with stop_replication
+
+```json
+{
+  "policy": {
+    "description": "Manage CCR follower indices",
+    "default_state": "replicating",
+    "states": [
+      {
+        "name": "replicating",
+        "actions": [],
+        "transitions": [
+          {
+            "state_name": "unfollow",
+            "conditions": {
+              "min_index_age": "7d"
+            }
+          }
+        ]
+      },
+      {
+        "name": "unfollow",
+        "actions": [
+          {
+            "stop_replication": {}
+          }
+        ],
+        "transitions": [
+          {
+            "state_name": "delete"
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "actions": [
+          {
+            "delete": {}
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## Limitations
+
+- Follower indices are read-only during active replication
+- Cross-cluster replication does not currently use segment replication
+- The `stop_replication` ISM action only works on actively replicated indices
+- Requires proper security configuration for cross-cluster communication
+
+## Related PRs
+
+| Version | PR | Repository | Description |
+|---------|-----|------------|-------------|
+| v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |
+| v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM |
+| v3.0.0 | [#1496](https://github.com/opensearch-project/cross-cluster-replication/pull/1496) | cross-cluster-replication | Gradle 8.10.2 and JDK23 support |
+| v1.1.0 | - | cross-cluster-replication | Initial CCR implementation |
+
+## References
+
+- [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices
+- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
+- [Replication settings](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
+- [Replication API](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
+- [Replication security](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/permissions/)
+- [Auto-follow](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/auto-follow/)
+- [Introduction to Cross-Cluster Replication blog](https://opensearch.org/blog/cross-cluster-replication-intro/)
+
+## Change History
+
+- **v3.0.0** (2025-03): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
+- **v1.1.0** (2021-10): Initial cross-cluster replication implementation
