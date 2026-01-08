@@ -114,19 +114,19 @@ flowchart TB
         C --> D[(groups.json)]
     end
     subgraph "2. Plan"
-        D --> E[planner]
-        E --> F[(GitHub Project)]
+        E[planner] --> F[(GitHub Project)]
         E --> G[(Issues)]
     end
     subgraph "3. Investigate"
-        G --> H[investigate]
-        H --> I[(Release Reports)]
+        H[investigate] --> I[(Release Reports)]
         H --> J[(Feature Reports)]
     end
     subgraph "4. Summarize"
-        I --> K[summarize]
-        K --> L[(Release Summary)]
+        K[summarize] --> L[(Release Summary)]
     end
+    D --> E
+    G --> H
+    I --> K
 ```
 
 ```bash
