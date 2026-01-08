@@ -54,7 +54,7 @@ graph LR
 Run `gh auth login` with required scopes:
 
 ```bash
-gh auth login -s read:org -s repo -s workflow -s project
+gh auth login -s read:org,repo,workflow,project
 ```
 
 | Scope | Purpose |
