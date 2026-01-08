@@ -117,4 +117,4 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 
 ## Change History
 
-- **v3.0.0** (2025): HTTP status code improvements and increased default max header size from 8KB to 16KB
+- **v3.0.0** (2025-05-06): HTTP status code improvements and increased default max header size from 8KB to 16KB

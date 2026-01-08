@@ -151,5 +151,5 @@ The API returns indexing buffer information with the following fields:
 
 ## Change History
 
-- **v3.0.0** (2025-01-21): Breaking change - Fixed swapped `total_indexing_buffer` and `total_indexing_buffer_in_bytes` field formats
-- **v3.0.0** (2024-03-12): Breaking change - `search_pipelines` metric excluded from default metrics set
+- **v3.0.0** (2025-05-06): Breaking change - Fixed swapped `total_indexing_buffer` and `total_indexing_buffer_in_bytes` field formats
+- **v3.0.0** (2025-05-06): Breaking change - `search_pipelines` metric excluded from default metrics set

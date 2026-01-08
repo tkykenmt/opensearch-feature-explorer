@@ -124,4 +124,4 @@ graph TB
 
 ## Change History
 
-- **v3.0.0** (2025-05): Initial collection of UI/UX fixes including navigation, query editor, data source, and Discover improvements
+- **v3.0.0** (2025-05-06): Initial collection of UI/UX fixes including navigation, query editor, data source, and Discover improvements

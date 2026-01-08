@@ -145,5 +145,5 @@ config:
 
 ## Change History
 
-- **v3.0.0** (2025): Default to v7 models, escape pipe characters in usernames, fix demo config version matcher
+- **v3.0.0** (2025-05-06): Default to v7 models, escape pipe characters in usernames, fix demo config version matcher
 - **v2.18.0** (2024): Auto-convert security config models from v6 to v7

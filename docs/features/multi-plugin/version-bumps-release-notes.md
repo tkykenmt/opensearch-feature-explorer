@@ -74,4 +74,4 @@ release-notes/
 
 ## Change History
 
-- **v3.0.0** (2025-05): Version bumps and release notes across 9 repositories (alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins)
+- **v3.0.0** (2025-05-06): Version bumps and release notes across 9 repositories (alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins)

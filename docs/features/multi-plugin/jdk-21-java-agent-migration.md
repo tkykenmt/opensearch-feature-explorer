@@ -154,4 +154,4 @@ jobs:
 
 ## Change History
 
-- **v3.0.0** (2025): JDK 21 minimum requirement, Java Agent Gradle plugin, SecurityManager phase-out across all plugins
+- **v3.0.0** (2025-05-06): JDK 21 minimum requirement, Java Agent Gradle plugin, SecurityManager phase-out across all plugins

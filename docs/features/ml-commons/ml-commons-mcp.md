@@ -292,4 +292,4 @@ POST /_plugins/_ml/models/_register
 
 ## Change History
 
-- **v3.0.0** (2025-05): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models
+- **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models

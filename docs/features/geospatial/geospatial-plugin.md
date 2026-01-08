@@ -78,4 +78,4 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 
 ## Change History
 
-- **v3.0.0** (2025-03-24): Fixed Maven POM metadata to include license, description, and developer information for all published artifacts
+- **v3.0.0** (2025-05-06): Fixed Maven POM metadata to include license, description, and developer information for all published artifacts

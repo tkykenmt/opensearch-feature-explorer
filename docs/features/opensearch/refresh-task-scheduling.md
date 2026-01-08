@@ -126,4 +126,4 @@ PUT /my-index/_settings
 
 ## Change History
 
-- **v3.0.0** (2025-04-03): Initial implementation with cluster-level setting and dynamic sleep duration calculation
+- **v3.0.0** (2025-05-06): Initial implementation with cluster-level setting and dynamic sleep duration calculation

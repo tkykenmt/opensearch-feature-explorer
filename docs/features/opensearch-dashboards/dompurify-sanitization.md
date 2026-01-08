@@ -92,6 +92,6 @@ const cleanHTML = DOMPurify.sanitize(dirtyHTML, {
 
 ## Change History
 
-- **v3.0.0** (2025-02-26): Updated to 3.2.4 to fix CVE-2025-26791 (mXSS via template literal regex)
+- **v3.0.0** (2025-05-06): Updated to 3.2.4 to fix CVE-2025-26791 (mXSS via template literal regex)
 - **v2.17.1** (2024-09-25): Updated to 3.1.6 to fix CVE-2024-45801 (nesting-based mXSS)
 - **v2.5.0** (2022-12-15): Initial integration for table visualization URL formatting

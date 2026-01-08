@@ -132,4 +132,4 @@ PUT /_cluster/settings
 
 ## Change History
 
-- **v3.0.0** (2026-01-08): Added `completion_count` field to stats API for calculating cancellation percentages
+- **v3.0.0** (2025-05-06): Added `completion_count` field to stats API for calculating cancellation percentages

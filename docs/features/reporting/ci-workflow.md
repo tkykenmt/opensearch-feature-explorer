@@ -78,4 +78,4 @@ windows-mac-builds:
 
 ## Change History
 
-- **v3.0.0** (2025-03-13): Upgraded actions/checkout to v4, consolidated Windows/macOS builds into matrix job, fixed documentation links
+- **v3.0.0** (2025-05-06): Upgraded actions/checkout to v4, consolidated Windows/macOS builds into matrix job, fixed documentation links

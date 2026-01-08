@@ -147,4 +147,4 @@ EnumSet<MyOption> options = in.readOptionalEnumSet(MyOption.class);
 
 ## Change History
 
-- **v3.0.0** (2025-03-13): Added `writeOptionalEnumSet` and `readOptionalEnumSet` methods for optional EnumSet serialization
+- **v3.0.0** (2025-05-06): Added `writeOptionalEnumSet` and `readOptionalEnumSet` methods for optional EnumSet serialization

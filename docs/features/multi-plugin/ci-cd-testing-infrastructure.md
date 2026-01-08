@@ -123,4 +123,4 @@ flowchart TB
 
 ## Change History
 
-- **v3.0.0** (2025): Added remote index builder IT for k-NN, Calcite IT framework for SQL, test optimizations
+- **v3.0.0** (2025-05-06): Added remote index builder IT for k-NN, Calcite IT framework for SQL, test optimizations

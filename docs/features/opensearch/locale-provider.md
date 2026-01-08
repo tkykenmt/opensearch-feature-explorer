@@ -108,4 +108,4 @@ POST /my-index/_doc
 
 ## Change History
 
-- **v3.0.0** (2024-06-15): Changed locale provider from COMPAT to CLDR to address JDK 21+ deprecation warnings
+- **v3.0.0** (2025-05-06): Changed locale provider from COMPAT to CLDR to address JDK 21+ deprecation warnings

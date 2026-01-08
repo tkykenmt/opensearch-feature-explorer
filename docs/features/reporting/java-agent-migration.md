@@ -123,4 +123,4 @@ allprojects {
 
 ## Change History
 
-- **v3.0.0** (2025-04-11): Added Java Agent build configuration for SecurityManager replacement
+- **v3.0.0** (2025-05-06): Added Java Agent build configuration for SecurityManager replacement

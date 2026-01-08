@@ -151,5 +151,5 @@ The following plugins support multi-tenancy with remote metadata storage:
 
 ## Change History
 
-- **v3.0.0** (2025-04-28): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
-- **v3.0.0** (2025-04-02): Added developer guide with migration instructions (PR #124)
+- **v3.0.0** (2025-05-06): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
+- **v3.0.0** (2025-05-06): Added developer guide with migration instructions (PR #124)

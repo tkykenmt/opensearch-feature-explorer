@@ -153,4 +153,4 @@ When security is enabled (`-Dsecurity=true`), both clusters are configured with:
 
 ## Change History
 
-- **v3.0.0** (2025-03-19): Initial implementation - Added `-PdualCluster` property to launch leader and follower clusters for cross-cluster testing
+- **v3.0.0** (2025-05-06): Initial implementation - Added `-PdualCluster` property to launch leader and follower clusters for cross-cluster testing

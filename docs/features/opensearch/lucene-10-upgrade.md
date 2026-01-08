@@ -109,4 +109,4 @@ curl -X GET "localhost:9200"
 
 ## Change History
 
-- **v3.0.0** (2025-01-22): Upgraded from Lucene 9.12.1 to Lucene 10.1.0
+- **v3.0.0** (2025-05-06): Upgraded from Lucene 9.12.1 to Lucene 10.1.0

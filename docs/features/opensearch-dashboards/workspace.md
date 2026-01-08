@@ -139,5 +139,5 @@ opensearch_security.multitenancy.enabled: false
 
 ## Change History
 
-- **v3.0.0** (2025): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
+- **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
 - **v2.18.0**: Initial workspace feature introduction

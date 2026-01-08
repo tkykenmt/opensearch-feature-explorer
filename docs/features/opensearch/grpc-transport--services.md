@@ -243,4 +243,4 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
-- **v3.0.0** (2025-03): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
+- **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support

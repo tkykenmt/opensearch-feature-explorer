@@ -183,6 +183,6 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 ## Change History
 
-- **v3.0.0** (2025-05): Bumped zstd-jni to 1.5.6-1, adding support for custom sequence producers
+- **v3.0.0** (2025-05-06): Bumped zstd-jni to 1.5.6-1, adding support for custom sequence producers
 - **v2.15.0** (2024): Added QAT hardware-accelerated codecs (`qat_lz4`, `qat_deflate`)
 - **v2.9.0** (2023): Initial implementation of ZSTD codecs (`zstd`, `zstd_no_dict`)

@@ -161,4 +161,4 @@ PUT /my-index
 
 ## Change History
 
-- **v3.0.0** (2025-02-12): Changed default similarity from `LegacyBM25Similarity` to Lucene's `BM25Similarity`. Added `LegacyBM25` type for backward compatibility.
+- **v3.0.0** (2025-05-06): Changed default similarity from `LegacyBM25Similarity` to Lucene's `BM25Similarity`. Added `LegacyBM25` type for backward compatibility.

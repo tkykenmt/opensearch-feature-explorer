@@ -206,4 +206,4 @@ Key observations:
 
 ## Change History
 
-- **v3.0.0** (2025-03-28): Initial implementation with HNSW support for FAISS engine
+- **v3.0.0** (2025-05-06): Initial implementation with HNSW support for FAISS engine

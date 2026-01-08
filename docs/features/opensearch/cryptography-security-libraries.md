@@ -170,4 +170,4 @@ SSLContext sslContext = SSLContextBuilder.create()
 
 ## Change History
 
-- **v3.0.0** (2025-02-26): Migrated from standard BC to BC-FIPS libraries; refactored PemUtils to use BC for PEM parsing; added java.security configuration for BC-FIPS providers
+- **v3.0.0** (2025-05-06): Migrated from standard BC to BC-FIPS libraries; refactored PemUtils to use BC for PEM parsing; added java.security configuration for BC-FIPS providers

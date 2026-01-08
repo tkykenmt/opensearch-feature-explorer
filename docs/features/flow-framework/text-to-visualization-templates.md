@@ -161,4 +161,4 @@ POST /.plugins-ml-config/_doc/os_text2vega
 
 ## Change History
 
-- **v3.0.0** (2024-11-19): Added text-to-visualization sample templates for Claude Haiku model
+- **v3.0.0** (2025-05-06): Added text-to-visualization sample templates for Claude Haiku model

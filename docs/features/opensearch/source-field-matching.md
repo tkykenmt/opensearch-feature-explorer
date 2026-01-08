@@ -122,4 +122,4 @@ GET /index/_search
 
 ## Change History
 
-- **v3.0.0** (2025-02-07): Added HashSet-based filtering optimization for simple field names to prevent TooComplexToDeterminizeException
+- **v3.0.0** (2025-05-06): Added HashSet-based filtering optimization for simple field names to prevent TooComplexToDeterminizeException

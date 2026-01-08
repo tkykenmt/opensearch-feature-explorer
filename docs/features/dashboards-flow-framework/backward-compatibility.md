@@ -148,4 +148,4 @@ if (isPreV219) {
 
 ## Change History
 
-- **v3.0.0** (2025-02-12): Added BWC support for 2.17 data sources with conditional API execution
+- **v3.0.0** (2025-05-06): Added BWC support for 2.17 data sources with conditional API execution

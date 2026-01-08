@@ -124,7 +124,7 @@ Supported BWC versions: 2.9.0 through 2.20.0-SNAPSHOT
 
 ## Change History
 
-- **v3.0.0** (2025-07-16): Major compatibility update for Lucene 10 and OpenSearch 3.0
+- **v3.0.0** (2025-05-06): Major compatibility update for Lucene 10 and OpenSearch 3.0
   - Updated all Lucene API calls to use accessor methods
   - Migrated Client import to transport package
   - Updated BWC test infrastructure

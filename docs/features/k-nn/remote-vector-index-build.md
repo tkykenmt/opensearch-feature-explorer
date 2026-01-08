@@ -197,4 +197,4 @@ POST my-vectors/_bulk
 
 ## Change History
 
-- **v3.0.0** (2025-05): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support
+- **v3.0.0** (2025-05-06): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support

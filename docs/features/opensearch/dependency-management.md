@@ -140,4 +140,4 @@ Dependencies are automatically resolved during build:
 
 ## Change History
 
-- **v3.0.0** (2025-03): JDK 21 LTS default, AWS SDK 2.30.x, Reactor Netty 1.2.x, 30 dependency updates
+- **v3.0.0** (2025-05-06): JDK 21 LTS default, AWS SDK 2.30.x, Reactor Netty 1.2.x, 30 dependency updates

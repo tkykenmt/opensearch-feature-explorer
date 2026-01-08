@@ -204,4 +204,4 @@ Transformed mapping (after semantic field transformer):
 
 ## Change History
 
-- **v3.0.0** (2025-04-15): Initial implementation - introduced MappingTransformer interface, MappingTransformerRegistry, and integration with index/template transport actions
+- **v3.0.0** (2025-05-06): Initial implementation - introduced MappingTransformer interface, MappingTransformerRegistry, and integration with index/template transport actions

@@ -145,7 +145,7 @@ JDK 21 provides stable `MemorySegment` API for memory-mapped files:
 
 ## Change History
 
-- **v3.0.0** (2025): JDK 21 minimum requirement, JPMS Phase 0 split package elimination
+- **v3.0.0** (2025-05-06): JDK 21 minimum requirement, JPMS Phase 0 split package elimination
 - **v2.4.0** (2022): Added JDK 19 preview API support for memory mapping
 - **v1.3.0** (2022): Introduced `OPENSEARCH_JAVA_HOME` environment variable, downgraded bundled JDK to 11 LTS
 - **v1.0.0** (2021): Initial release with JDK 15 bundled, JDK 11 minimum

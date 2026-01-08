@@ -142,4 +142,4 @@ If nesting exceeds `index.query.max_nested_depth`, an `IllegalArgumentException`
 
 ## Change History
 
-- **v3.0.0** (2024): Initial implementation - Jackson 2.16.x XContent constraints and nested query depth limit
+- **v3.0.0** (2025-05-06): Initial implementation - Jackson 2.16.x XContent constraints and nested query depth limit

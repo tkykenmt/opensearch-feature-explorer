@@ -125,7 +125,7 @@ GET /_nodes/stats/caches/request_cache?level=tier
 
 ## Change History
 
-- **v3.0.0** (2025): Single cache manager for disk caches reduces CPU overhead; took-time policy extended to guard heap tier
+- **v3.0.0** (2025-05-06): Single cache manager for disk caches reduces CPU overhead; took-time policy extended to guard heap tier
 - **v2.19.0** (2024): Disk cache partitioning with read/write locks for improved concurrency
 - **v2.14.0** (2024): Initial experimental tiered caching support for request cache
 - **v2.13.0** (2024): cache-ehcache plugin introduced for disk cache implementation

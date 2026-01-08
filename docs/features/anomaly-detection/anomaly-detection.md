@@ -248,5 +248,5 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Change History
 
-- **v3.0.0** (2025-03-19): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
+- **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
 - **v2.x**: High-cardinality detection, historical analysis, custom result indices

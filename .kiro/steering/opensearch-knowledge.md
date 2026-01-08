@@ -264,6 +264,11 @@ When existing report exists:
 ```
 (Newer changes at top)
 
+### Release Dates Reference
+| Version | Release Date |
+|---------|--------------|
+| v3.0.0 | 2025-05-06 |
+
 ## Resource Search
 
 ### OpenSearch Docs MCP Tool

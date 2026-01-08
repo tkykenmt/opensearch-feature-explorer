@@ -138,5 +138,5 @@ PUT .plugins-ml-config/_doc/os_chat
 
 ## Change History
 
-- **v3.0.0** (2025): Major UI redesign, streaming output support, single button entry point, text-to-visualization enhancements with auto-aggregation, conversation auto-loading
+- **v3.0.0** (2025-05-06): Major UI redesign, streaming output support, single button entry point, text-to-visualization enhancements with auto-aggregation, conversation auto-loading
 - **v2.13** (2024): Initial introduction of OpenSearch Assistant for OpenSearch Dashboards

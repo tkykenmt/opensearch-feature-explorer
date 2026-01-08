@@ -124,4 +124,4 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 
 ## Change History
 
-- **v3.0.0** (2025-03): Improved error handling and test result quality for integration configuration parsing
+- **v3.0.0** (2025-05-06): Improved error handling and test result quality for integration configuration parsing

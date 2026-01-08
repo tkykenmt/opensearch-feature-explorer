@@ -153,5 +153,5 @@ GET logs/_search
 
 ## Change History
 
-- **v3.0.0** (2025): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
+- **v3.0.0** (2025-05-06): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
 - **v2.15.0** (2024): Initial introduction of wildcard field type with 1-3 gram indexing

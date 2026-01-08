@@ -165,5 +165,5 @@ GET _plugins/_asynchronous_search/FklfVlU4eFdIUTh1Q1hyM3ZnT19fUVEUd29KLWZYUUI3Tz
 
 ## Change History
 
-- **v3.0.0** (2025): GA release preparation - JDK21 baseline, Gradle 8.10.2, JDK23 support
+- **v3.0.0** (2025-05-06): GA release preparation - JDK21 baseline, Gradle 8.10.2, JDK23 support
 - **v1.0.0** (2021): Initial release with OpenSearch

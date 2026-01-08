@@ -101,4 +101,4 @@ async function deleteWithRetry(folder: string, log: ToolingLog) {
 
 ## Change History
 
-- **v3.0.0** (2025-03): Initial implementation with cache update, workflow permissions, and Windows build fixes
+- **v3.0.0** (2025-05-06): Initial implementation with cache update, workflow permissions, and Windows build fixes

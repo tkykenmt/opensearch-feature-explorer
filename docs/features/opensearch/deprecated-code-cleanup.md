@@ -115,5 +115,5 @@ All `LegacyESVersion` constants removed:
 
 ## Change History
 
-- **v3.0.0** (2025): Major deprecated code cleanup including thread pool settings, locale provider, feature flags, and legacy version constants
+- **v3.0.0** (2025-05-06): Major deprecated code cleanup including thread pool settings, locale provider, feature flags, and legacy version constants
 - **v2.0.0** (2022): Initial deprecation of non-inclusive terminology, thread pool settings marked for removal

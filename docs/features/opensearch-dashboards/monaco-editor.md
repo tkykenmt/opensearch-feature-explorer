@@ -155,7 +155,7 @@ window.MonacoEnvironment = {
 
 ## Change History
 
-- **v3.0.0** (2025-04-01): Major upgrade from 0.17.0 to 0.52.0
+- **v3.0.0** (2025-05-06): Major upgrade from 0.17.0 to 0.52.0
   - Switched from image sprite icons to Codicon font system
   - Updated API from `getModeId()` to `getLanguageId()`
   - Redesigned worker architecture

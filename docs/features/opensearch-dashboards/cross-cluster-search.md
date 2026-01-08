@@ -148,4 +148,4 @@ source = remote-cluster:logs-2024.01.01 | head 10
 
 ## Change History
 
-- **v3.0.0** (2025-04): Initial implementation of Cross-Cluster Search UI support in OpenSearch Dashboards
+- **v3.0.0** (2025-05-06): Initial implementation of Cross-Cluster Search UI support in OpenSearch Dashboards
