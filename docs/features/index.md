@@ -32,6 +32,7 @@
 ## opensearch-dashboards
 
 - [CI/CD & Build Fixes](opensearch-dashboards/ci-cd-build-fixes.md)
+- [Cross-Cluster Search](opensearch-dashboards/cross-cluster-search.md)
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
