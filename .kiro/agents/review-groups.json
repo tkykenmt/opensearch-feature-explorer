@@ -1,0 +1,7 @@
+{
+  "name": "review-groups",
+  "description": "Review and refine groups.json - split over-aggregated groups, merge related ones",
+  "prompt": "prompts/review-groups.md",
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"]
+}

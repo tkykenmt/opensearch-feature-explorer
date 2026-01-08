@@ -79,6 +79,18 @@ If direct invocation:
 2. Determine version from PR milestone or labels
 3. Determine action type based on existing feature report
 
+### Step 1.3: Check for Duplicate Issues
+After loading the target Issue, check for duplicates:
+1. Use `list_issues` with `state: "open"` and labels `["new-feature", "update-feature"]`
+2. Find other open Issues with same feature name AND same version (check title pattern)
+3. If duplicates found:
+   - Keep the current Issue (the one being investigated)
+   - For each duplicate:
+     - Add `duplicate` label using `add_labels_to_issue`
+     - Post comment: "Duplicate of #{current_issue}. Closing as duplicate."
+     - Close the Issue using `update_issue` with `state: "closed"`
+   - Continue investigation with the current Issue
+
 ## Step 2: Deep Investigation
 
 ### 2.1 GitHub Investigation
@@ -103,7 +115,13 @@ Save to `.cache/releases/{version}/`:
 
 ## Step 3: Create Release Report (PRIMARY OUTPUT)
 
-Create `docs/releases/v{version}/features/{item-name}.md`:
+### Repository Folder Convention
+- Extract repository name from the Issue body (under "Repository:" field)
+- Convert to lowercase for folder path: `OpenSearch` → `opensearch`, `neural-search` → `neural-search`
+- If repository not specified in Issue, determine from the main PR's repository
+- For items spanning multiple repositories, use the primary repository
+
+Create `docs/releases/v{version}/features/{repository-name}/{item-name}.md`:
 
 This is the **primary output** - a focused report on what changed in THIS version.
 
@@ -162,18 +180,18 @@ Known limitations specific to this release.
 - [Blog](url): Announcement blog
 
 ## Related Feature Report
-- [Full feature documentation](../../features/{feature-name}.md)
+- [Full feature documentation](../../../features/{repository-name}/{feature-name}.md)
 ```
 
 ### Update Release Index
 After creating the release report, update `docs/releases/v{version}/index.md`:
 1. Create if not exists with header
-2. Add link to new report in appropriate section (New Features / Improvements / etc.)
+2. Add link to new report in appropriate section, grouped by repository
 
 ## Step 4: Update/Create Feature Report (SECONDARY OUTPUT)
 
 ### For new-feature (feature report doesn't exist):
-Create `docs/features/{feature-name}.md` following base.md template:
+Create `docs/features/{repository-name}/{feature-name}.md` following base.md template:
 - Summary section (accessible overview)
 - Details section (technical depth)
 - Architecture diagram
@@ -182,24 +200,32 @@ Create `docs/features/{feature-name}.md` following base.md template:
 - Usage examples
 - Limitations
 - References (all PRs, Issues, docs, blogs)
-- Change History (starting with this version)
+- Change History (starting with this version, sorted by version descending)
 
 ### For update-feature (feature report exists):
-1. Read existing `docs/features/{feature-name}.md`
-2. Identify what's new in this version
-3. Update relevant sections:
-   - Add new components/configuration to tables
-   - Update diagrams if architecture changed
-   - Add new usage examples if applicable
-   - Update limitations section
-4. Add new references
-5. Prepend to Change History (newer at top)
+1. Read existing `docs/features/{repository-name}/{feature-name}.md`
+2. Check the highest version already documented in Change History
+3. If investigating an **older version** than what's documented:
+   - **Do NOT overwrite** existing specs with older behavior (e.g., config defaults, API signatures)
+   - **Can add** historical context, background information, or references
+   - Add to Change History and References
+4. If investigating a **newer version** or same version:
+   - Update relevant sections as needed:
+     - Add new components/configuration to tables
+     - Update diagrams if architecture changed
+     - Add new usage examples if applicable
+     - Update limitations section
+   - Add new references
+5. Update Change History:
+   - Add entry for this version
+   - **Sort entries by version number descending** (e.g., v3.0.0, v2.19.0, v2.18.0)
 
 ### Update Features Index
 After creating/updating a feature report, update `docs/features/index.md`:
 1. Read current index.md
-2. If feature not listed, add `- [Feature Title](feature-name.md)` in alphabetical order
-3. Keep the header and description intact
+2. Group features by repository subfolder
+3. If feature not listed, add `- [Feature Title]({repository-name}/{feature-name}.md)` under the appropriate repository section
+4. Keep the header and description intact
 
 ## Step 5: Commit and Push
 
@@ -256,8 +282,8 @@ Post completion comment:
 ## Investigation Complete
 
 ### Reports Created
-- Release report: `docs/releases/v{version}/features/{item-name}.md`
-- Feature report: `docs/features/{feature-name}.md` (created/updated)
+- Release report: `docs/releases/v{version}/features/{repository-name}/{item-name}.md`
+- Feature report: `docs/features/{repository-name}/{feature-name}.md` (created/updated)
 
 ### Summary
 {Brief summary of findings}
@@ -290,11 +316,21 @@ Close the Issue.
 docs/releases/v{version}/
 ├── index.md                           # Release index
 └── features/
-    ├── {item-name}.md                 # Release report (primary)
-    └── {item-name}.ja.md              # Japanese (if --lang ja)
+    ├── opensearch/
+    │   ├── {item-name}.md             # Release report
+    │   └── {item-name}.ja.md          # Japanese (if --lang ja)
+    ├── opensearch-dashboards/
+    │   └── ...
+    └── {plugin-name}/
+        └── ...
 
 docs/features/
 ├── index.md                           # Features index
-├── {feature-name}.md                  # Feature report (secondary)
-└── {feature-name}.ja.md               # Japanese (if --lang ja)
+├── opensearch/
+│   ├── {feature-name}.md              # Feature report
+│   └── {feature-name}.ja.md           # Japanese (if --lang ja)
+├── opensearch-dashboards/
+│   └── ...
+└── {plugin-name}/
+    └── ...
 ```

@@ -106,6 +106,14 @@ Enable the following in your repository settings (Settings → General):
 
 Complete workflow for investigating a new OpenSearch release.
 
+```bash
+# One command to run all steps
+python run.py release-investigate 3.0.0
+```
+
+<details>
+<summary>Manual step-by-step execution</summary>
+
 #### Step 1: Parse Release Notes
 
 ```mermaid
@@ -117,7 +125,7 @@ flowchart LR
 
 ```bash
 python run.py fetch-release 3.0.0
-python run.py group-release 3.0.0
+python run.py group-release 3.0.0 --all
 ```
 
 #### Step 2: Create GitHub Project & Issues
@@ -144,6 +152,8 @@ flowchart LR
 
 ```bash
 python run.py investigate --issue 124
+# Or batch process all
+python run.py batch-investigate --all
 ```
 
 #### Step 4: Create Release Summary
@@ -158,20 +168,22 @@ flowchart LR
 python run.py summarize 3.0.0
 ```
 
+</details>
+
 ### Use Case 2: Single Feature Investigation
 
 Quick investigation of a specific feature without full release workflow.
 
 ```mermaid
 flowchart LR
-    A[PR Number] --> B[investigate]
+    A[PR Number] --> B[feature-investigate]
     C[Feature Name] --> B
     B --> D[Release Report]
     B --> E[Feature Report]
 ```
 
 ```bash
-python run.py investigate "Star Tree" --pr 16233
+python run.py feature-investigate "Star Tree" --pr 16233
 ```
 
 ### Use Case 3: Interactive Exploration

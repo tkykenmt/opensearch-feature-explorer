@@ -1,0 +1,13 @@
+{
+  "name": "create-issues",
+  "description": "Create individual investigation Issues from a tracking Issue",
+  "prompt": ".kiro/agents/prompts/create-issues.md",
+  "tools": ["@builtin", "@github"],
+  "allowedTools": ["@builtin", "@github"],
+  "mcpServers": {
+    "github": {
+      "command": "bash",
+      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
+    }
+  }
+}

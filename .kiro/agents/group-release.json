@@ -1,0 +1,7 @@
+{
+  "name": "group-release",
+  "description": "Group raw release items into feature groups",
+  "prompt": ".kiro/agents/prompts/group-release.md",
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"]
+}
