@@ -14,6 +14,7 @@
 - [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
 - [Lucene Similarity](features/opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
+- [Nodes Info API Changes](features/opensearch/nodes-info-api-changes.md)
 - [Stream Input/Output](features/opensearch/stream-inputoutput.md)
 - [Wildcard Field](features/opensearch/wildcard-field.md)
 
