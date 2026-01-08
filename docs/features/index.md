@@ -69,3 +69,7 @@
 ## opensearch-remote-metadata-sdk
 
 - [Remote Metadata SDK](opensearch-remote-metadata-sdk/remote-metadata-sdk.md)
+
+## ml-commons
+
+- [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
