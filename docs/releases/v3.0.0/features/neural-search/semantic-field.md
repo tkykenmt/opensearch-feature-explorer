@@ -2,39 +2,40 @@
 
 ## Summary
 
-OpenSearch 3.0 introduces the semantic field type in the neural-search plugin. This new field mapper simplifies semantic search by automatically handling text-to-vector transformations at index time, eliminating the need for separate ingest pipelines.
+OpenSearch 3.0 introduces the `semantic` field type in the neural-search plugin. This field mapper simplifies semantic search by automatically handling text-to-vector transformations at index time, eliminating the need for separate ingest pipelines.
 
 ## Details
 
 ### What's New in v3.0.0
 
-#### Semantic Field Mapper
-
 The semantic field type allows users to define fields that automatically generate embeddings using ML models:
 
 - Supports multiple raw field types: `text`, `keyword`, `match_only_text`, `wildcard`, `token_count`, `binary`
-- Configurable ML models for indexing and search
+- Configurable ML models for indexing and search via `model_id` and `search_model_id`
 - Automatic delegation to underlying field type for storage and queries
+- Uses delegate pattern to wrap existing field mappers
 
-### Configuration Parameters
+### Technical Changes
 
-| Parameter | Description | Required | Default |
-|-----------|-------------|----------|--------|
-| `model_id` | ML model ID for generating embeddings at index time | Yes | - |
-| `search_model_id` | ML model ID for query text inference (uses `model_id` if not set) | No | `model_id` |
-| `raw_field_type` | Underlying field type for raw data storage | No | `text` |
-| `semantic_info_field_name` | Custom field name for semantic information | No | Auto-generated |
+#### New Components
 
-### Supported Raw Field Types
+| Component | Description |
+|-----------|-------------|
+| `SemanticFieldMapper` | Main field mapper handling semantic field configuration and delegation |
+| `SemanticFieldType` | Field type extending `FilterFieldType` for delegate wrapping |
+| `SemanticParameters` | DTO holding `model_id`, `search_model_id`, `raw_field_type`, `semantic_info_field_name` |
+| `SemanticFieldConstants` | Constants for semantic field parameter names |
+| `MappingConstants` | Constants for index mapping |
+| `FeatureFlagUtil` | Controls semantic field feature availability |
 
-| Type | Description |
-|------|-------------|
-| `text` | Full-text searchable content (default) |
-| `keyword` | Exact match strings |
-| `match_only_text` | Space-optimized text without scoring |
-| `wildcard` | Wildcard pattern matching |
-| `token_count` | Token count storage |
-| `binary` | Binary data storage |
+#### New Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `model_id` | ML model ID for generating embeddings at index time | Required |
+| `search_model_id` | ML model ID for query text inference | Uses `model_id` |
+| `raw_field_type` | Underlying field type for raw data storage | `text` |
+| `semantic_info_field_name` | Custom field name for semantic information | Auto-generated |
 
 ### Usage Example
 
@@ -53,27 +54,20 @@ PUT /my-index
 }
 ```
 
-### Technical Implementation
+### Migration Notes
 
-The semantic field mapper uses a delegate pattern:
+The semantic field is gated behind a feature flag (`semantic_field_enabled`) and is disabled by default in v3.0.0. To enable:
 
-1. **SemanticFieldMapper**: Main mapper handling semantic parameters
-2. **Delegate Field Mapper**: Handles raw data parsing and queries based on `raw_field_type`
-3. **SemanticFieldType**: Extends `FilterFieldType` to wrap delegate field type
-
-### Feature Flag
-
-The semantic field is currently gated behind a feature flag:
-
-```java
-FeatureFlagUtil.SEMANTIC_FIELD_ENABLED = false  // Default: disabled
-```
+1. Set the feature flag to enable semantic field support
+2. Define semantic fields in index mappings with required `model_id`
+3. Documents indexed will automatically generate embeddings
 
 ## Limitations
 
 - Feature is disabled by default (requires feature flag)
-- Documentation not yet available in public docs
-- API specification companion PR pending
+- Cannot change `raw_field_type` after index creation
+- Cannot change `semantic_info_field_name` after index creation
+- Does not support dynamic mapping
 
 ## Related PRs
 
@@ -84,7 +78,9 @@ FeatureFlagUtil.SEMANTIC_FIELD_ENABLED = false  // Default: disabled
 ## References
 
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
-- [Issue #1226](https://github.com/opensearch-project/neural-search/issues/1226): Related semantic field implementation
+- [Issue #1226](https://github.com/opensearch-project/neural-search/issues/1226): Clean up unnecessary feature flag
+- [Semantic Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/semantic-search/)
+- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
 
 ## Related Feature Report
 
