@@ -107,3 +107,7 @@
 ## cross-cluster-replication
 
 - [Cross-Cluster Replication (CCR)](features/cross-cluster-replication/cross-cluster-replication-ccr.md)
+
+## dashboards-assistant
+
+- [AI Assistant / Chatbot](features/dashboards-assistant/ai-assistant-chatbot.md)
