@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
+- [Cluster Manager Task Throttling](opensearch/cluster-manager-throttling.md)
 - [Dependency Management](opensearch/dependency-management.md)
 - [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
