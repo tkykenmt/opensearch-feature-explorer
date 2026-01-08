@@ -57,3 +57,7 @@
 ## asynchronous-search
 
 - [GA Release Preparation](features/asynchronous-search/ga-release-preparation.md)
+
+## geospatial
+
+- [Maven POM Metadata Fix](features/geospatial/maven-pom-metadata.md)
