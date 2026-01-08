@@ -56,3 +56,7 @@
 ## asynchronous-search
 
 - [Asynchronous Search](asynchronous-search/asynchronous-search.md)
+
+## geospatial
+
+- [Geospatial Plugin](geospatial/geospatial-plugin.md)
