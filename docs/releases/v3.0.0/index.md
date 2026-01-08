@@ -88,6 +88,7 @@
 ## ml-commons
 
 - [ML Commons Blueprints & Tutorials](features/ml-commons/ml-commons-blueprints-tutorials.md)
+- [ML Commons / MCP](features/ml-commons/ml-commons-mcp.md)
 
 ## anomaly-detection
 
