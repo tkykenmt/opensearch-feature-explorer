@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
+- [gRPC Transport & Services](opensearch/grpc-transport--services.md)
 - [Mapping Transformer](opensearch/mapping-transformer.md)
 - [Cluster Manager Task Throttling](opensearch/cluster-manager-throttling.md)
 - [Dependency Management](opensearch/dependency-management.md)
