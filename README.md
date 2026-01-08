@@ -107,26 +107,24 @@ Enable the following in your repository settings (Settings → General):
 Complete workflow for investigating a new OpenSearch release.
 
 ```mermaid
-flowchart TB
-    subgraph "1. Parse"
-        A[fetch-release] --> B[(raw-items.json)]
+flowchart LR
+    subgraph Parse
+        A[fetch-release] --> B[(items)]
         B --> C[group-release]
-        C --> D[(groups.json)]
+        C --> D[(groups)]
     end
-    subgraph "2. Plan"
-        E[planner] --> F[(GitHub Project)]
-        E --> G[(Issues)]
+    subgraph Plan
+        D --> E[planner]
+        E --> F[(Project + Issues)]
     end
-    subgraph "3. Investigate"
-        H[investigate] --> I[(Release Reports)]
-        H --> J[(Feature Reports)]
+    subgraph Investigate
+        F --> G[investigate]
+        G --> H[(Reports)]
     end
-    subgraph "4. Summarize"
-        K[summarize] --> L[(Release Summary)]
+    subgraph Summarize
+        H --> I[summarize]
+        I --> J[(Summary)]
     end
-    D --> E
-    G --> H
-    I --> K
 ```
 
 ```bash
