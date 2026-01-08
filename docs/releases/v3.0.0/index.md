@@ -37,6 +37,10 @@
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 
+## reporting
+
+- [AUTO Version Increment](features/reporting/auto-version-increment.md)
+
 ## security
 
 - [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)

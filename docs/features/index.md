@@ -40,6 +40,10 @@
 
 - [Security Configuration](security/security-configuration.md)
 
+## reporting
+
+- [AUTO Version Management](reporting/auto-version-management.md)
+
 ## sql
 
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
