@@ -535,7 +535,7 @@ Examples:
     else:
         prompt = build_prompt(args.mode, args)
         # These modes run non-interactively by default
-        no_interactive = args.mode in ("planner", "create-issues", "summarize", "generate-release-docs")
+        no_interactive = args.mode in ("planner", "create-issues", "summarize", "generate-release-docs", "investigate")
         run_kiro(args.mode, prompt, no_interactive=no_interactive)
 
 
