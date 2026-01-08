@@ -20,6 +20,7 @@
 - [Lucene Similarity](features/opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
 - [Nodes Info API Changes](features/opensearch/nodes-info-api-changes.md)
+- [Refresh Task Scheduling](features/opensearch/refresh-task-scheduling.md)
 - [Search Backpressure](features/opensearch/search-backpressure.md)
 - [Segment Warmer](features/opensearch/segment-warmer.md)
 - [Stream Input/Output](features/opensearch/stream-inputoutput.md)
