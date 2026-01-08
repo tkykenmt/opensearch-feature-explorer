@@ -34,7 +34,7 @@ The V3 engine integrates Apache Calcite to address key pain points:
 #### Query Processing Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     PPL[PPL Query] --> ANTLR[ANTLR Parser]
     ANTLR --> AST[AST]
     AST --> RelNode[RelNode/Calcite]

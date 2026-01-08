@@ -47,7 +47,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         TERM["'SearchTerm'"]
         FLAG["case_insensitive=true"]

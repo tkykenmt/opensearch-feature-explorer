@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Indexing"
         Doc[Document] --> Analyzer
         Analyzer --> Index[Lucene Index]

@@ -17,7 +17,7 @@ Fixed an issue where the navigation toggle icon was not properly positioned when
 **Solution**: Added dynamic left positioning based on sidecar configuration. When the sidecar is docked to the left, the navigation icon adjusts its position to account for the sidecar width.
 
 ```mermaid
-graph LR
+graph TB
     subgraph "Before Fix"
         A1[Sidecar Left] --> B1[Nav Icon Overlaps]
     end

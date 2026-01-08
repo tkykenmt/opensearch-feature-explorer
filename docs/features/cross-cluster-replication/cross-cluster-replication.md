@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Leader
         A[Write Operations] --> B[Primary Shard]
         B --> C[Translog]

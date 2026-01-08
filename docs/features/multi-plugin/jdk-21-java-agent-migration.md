@@ -45,7 +45,7 @@ graph TB
 ### Security Model Evolution
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Legacy (JDK ≤ 17)"
         SM[Security Manager]
         PP[Policy Files]

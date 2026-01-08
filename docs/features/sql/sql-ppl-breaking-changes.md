@@ -38,7 +38,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Query[SQL/PPL Query] --> Parse[Parse Query]
     Parse --> Analyze[Analyze & Optimize]
     Analyze --> Plan[Execution Plan]

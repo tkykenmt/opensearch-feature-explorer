@@ -42,7 +42,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Without Pre-copy"
         A1[Merge] --> A2[Refresh]
         A2 --> A3[Segment Replication]

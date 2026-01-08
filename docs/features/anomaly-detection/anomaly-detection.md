@@ -58,7 +58,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         DATA[Time-series Data]
         CONFIG[Detector Config]

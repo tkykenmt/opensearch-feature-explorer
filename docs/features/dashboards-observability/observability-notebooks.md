@@ -42,7 +42,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     User[User] --> Create[Create Notebook]
     Create --> AddPara[Add Paragraphs]
     AddPara --> MD[Markdown]

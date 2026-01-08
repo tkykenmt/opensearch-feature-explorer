@@ -55,7 +55,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Client
         Proto[Protocol Buffer<br/>Message]
     end

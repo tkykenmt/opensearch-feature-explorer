@@ -63,7 +63,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Query[SQL/PPL Query] --> Parse[ANTLR4 Parse]
     Parse --> AST[Build AST]
     AST --> Convert[Convert to RelNode]

@@ -36,7 +36,7 @@ flowchart TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Document _source] --> B[Filter Function]
     C[Include Fields] --> B
     D[Exclude Fields] --> B

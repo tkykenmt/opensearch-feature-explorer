@@ -55,7 +55,7 @@ const formatDetailedSavedObjects = res
 A new `WorkspaceValidationService` handles workspace state validation and redirects users to an error page when the workspace is stale.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User enters workspace URL] --> B{Workspace exists?}
     B -->|Yes| C[Load workspace]
     B -->|No| D[Show error page]

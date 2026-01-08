@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Request] --> B[Workspace URL Parser]
     B --> C{Workspace ID?}
     C -->|Yes| D[Enter Workspace]

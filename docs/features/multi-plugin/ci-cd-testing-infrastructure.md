@@ -60,7 +60,7 @@ graph TB
 ### Test Framework Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "SQL Calcite Tests"
         direction TB
         Standalone[Standalone IT]

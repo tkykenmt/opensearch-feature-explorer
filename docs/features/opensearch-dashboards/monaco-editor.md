@@ -41,7 +41,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Input] --> B[Monaco Editor]
     B --> C[Language Service]
     C --> D{Completion Provider}

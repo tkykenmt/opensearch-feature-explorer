@@ -46,7 +46,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Indexing
         A[Documents] --> B[Extract Vectors]
         B --> C{Size > Threshold?}

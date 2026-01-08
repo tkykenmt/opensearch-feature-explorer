@@ -18,7 +18,7 @@ Two bug fixes improve the developer experience when working with integrations:
 #### Error Handling Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Read Integration Config] --> B{Parse JSON}
     B -->|Success| C[Return Config]
     B -->|Failure| D[Enhanced Error Message]

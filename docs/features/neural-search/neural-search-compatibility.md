@@ -86,7 +86,7 @@ import org.opensearch.transport.client.Client;
 ### BWC Testing Strategy
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Restart Upgrade"
         R1[Old Cluster] --> R2[Stop All]
         R2 --> R3[New Cluster]

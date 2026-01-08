@@ -49,7 +49,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Write Path"
         Doc[Document] --> Indexer[Indexer]
         Indexer --> Codec[Selected Codec]

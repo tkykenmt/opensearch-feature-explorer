@@ -58,7 +58,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Client Request] --> B[Transport Action]
     B --> C{Has Mapping?}
     C -->|No| G[Proceed to Service]

@@ -46,7 +46,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[New Documents] --> B[Index Buffer]
     B --> C[Flush to Segment]
     C --> D{Segment Size}

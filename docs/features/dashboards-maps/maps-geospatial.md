@@ -56,7 +56,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Interaction] --> B[Layer Config]
     B --> C[Query Builder]
     C --> D[OpenSearch Search API]

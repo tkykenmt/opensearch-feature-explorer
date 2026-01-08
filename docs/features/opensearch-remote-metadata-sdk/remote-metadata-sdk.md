@@ -32,7 +32,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Plugin Request] --> B[SdkClient]
     B --> C{Storage Type}
     C -->|RemoteOpenSearch| D[Remote OS Cluster]

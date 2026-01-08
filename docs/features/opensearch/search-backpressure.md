@@ -33,7 +33,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Resource Tracking"
         CPU[CPU Usage Tracker]
         Heap[Heap Usage Tracker]

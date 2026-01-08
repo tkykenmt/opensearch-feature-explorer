@@ -33,7 +33,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Serialization
         A[Java Object] --> B[StreamOutput]
         B --> C[Byte Stream]

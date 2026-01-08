@@ -49,7 +49,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User selects Data Source] --> B{Has Remote Connections?}
     B -->|Yes| C[Fetch /_remote/info]
     B -->|No| D[Show Local Indices Only]

@@ -48,7 +48,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User] --> B[Select Integration]
     B --> C[Load Config]
     C --> D{Validate}

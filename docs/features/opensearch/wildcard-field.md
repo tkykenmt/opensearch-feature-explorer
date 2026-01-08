@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Document] --> B[Wildcard Field Mapper]
     B --> C[N-gram Tokenizer]
     C --> D[Index Terms]

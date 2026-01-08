@@ -40,7 +40,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Task Submitted] --> B{Throttling Enabled?}
     B -->|No| C[Add to Queue]
     B -->|Yes| D{Count < Threshold?}

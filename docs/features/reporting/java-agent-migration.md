@@ -40,7 +40,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Gradle Build"
         A[Configure Agent] --> B[Download Dependencies]
         B --> C[Copy to Build Dir]

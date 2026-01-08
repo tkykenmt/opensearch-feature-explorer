@@ -50,7 +50,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Dependency Update Flow"
         DB[Dependabot] -->|Scans| VC[libs.versions.toml]
         VC -->|New version found| PR[Pull Request]

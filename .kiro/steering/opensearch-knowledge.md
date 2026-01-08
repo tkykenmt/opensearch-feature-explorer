@@ -232,11 +232,16 @@ Notable dependency updates
 ### Diagram Types by Use Case
 | Use Case | Syntax | When to Use |
 |----------|--------|-------------|
-| Architecture | `graph TB` or `graph LR` | Component structure |
-| Data Flow | `flowchart LR` | Data flow, processing |
+| Architecture | `graph TB` | Component structure |
+| Data Flow | `flowchart TB` | Data flow, processing |
 | Sequence | `sequenceDiagram` | API calls, communication |
 | State | `stateDiagram-v2` | State transitions |
 | Class | `classDiagram` | Class structure |
+
+### Direction Rules
+- Use `TB` (top-to-bottom) as default direction
+- Use `LR` (left-to-right) only for simple flows with 3 or fewer nodes
+- Always use `TB` when diagram contains subgraphs
 
 ### Required Diagrams
 - **Feature Report**: Architecture diagram (required), Data Flow (recommended)

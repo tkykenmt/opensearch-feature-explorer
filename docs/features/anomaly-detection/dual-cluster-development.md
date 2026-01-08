@@ -44,7 +44,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         CMD[Gradle Command]
         PROP[-PdualCluster=true]

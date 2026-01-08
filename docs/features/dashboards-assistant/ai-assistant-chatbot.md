@@ -45,7 +45,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     User[User Input] --> UI[Chat UI]
     UI --> API[Backend API]
     API --> Agent[ML Agent]

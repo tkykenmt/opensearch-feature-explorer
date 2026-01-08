@@ -41,7 +41,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Indexing
         V[Vector Data] --> E[Encoder]
         E --> G[Graph Builder]

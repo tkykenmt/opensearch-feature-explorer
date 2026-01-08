@@ -9,7 +9,7 @@ DOMPurify is a critical security library used in OpenSearch Dashboards to saniti
 ### Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         A[User HTML Content]
     end

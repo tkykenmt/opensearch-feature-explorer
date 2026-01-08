@@ -25,7 +25,7 @@ Two new methods have been added to the core streaming API:
 #### Serialization Format
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Write
         A[EnumSet] --> B{null or empty?}
         B -->|Yes| C[Write false]

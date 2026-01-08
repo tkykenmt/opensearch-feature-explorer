@@ -50,7 +50,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Request[Client Request] --> Auth[Authentication]
     Auth --> |Valid| Authz[Authorization]
     Auth --> |Invalid| Reject1[401 Unauthorized]

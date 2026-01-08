@@ -97,7 +97,7 @@ Adds filter function support to KNNQueryBuilder, enabling filtered k-NN searches
 Refactors graph loading into a 2-step approach that moves file operations outside synchronized blocks, enabling parallel graph file downloads while maintaining thread safety for cache operations.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Before v3.0.0"
         A1[Request] --> B1[Synchronized Block]
         B1 --> C1[Download Graph]

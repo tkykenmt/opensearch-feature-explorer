@@ -79,7 +79,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "MCP Client Flow"
         A1[Create MCP Connector] --> A2[Register Agent with Connector]
         A2 --> A3[Agent Discovers Tools]

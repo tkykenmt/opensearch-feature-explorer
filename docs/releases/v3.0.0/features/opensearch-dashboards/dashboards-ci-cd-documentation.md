@@ -23,7 +23,7 @@ This release consolidates multiple CI/CD and documentation improvements:
 #### CI/CD Improvements
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "PR Validation Pipeline"
         A[PR Submitted] --> B[Lockfile Check]
         B --> C[License Validation]

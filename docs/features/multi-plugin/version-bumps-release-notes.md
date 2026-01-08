@@ -9,7 +9,7 @@ Version bumps and release notes are standard maintenance tasks performed across 
 ### Release Cycle Workflow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Development] --> B[Alpha]
     B --> C[Beta]
     C --> D[GA Release]

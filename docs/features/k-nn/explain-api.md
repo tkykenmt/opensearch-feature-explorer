@@ -47,7 +47,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Query[k-NN Query] --> Weight[KNNWeight]
     Weight --> Scorer[KNNScorer]
     Scorer --> Results[Search Results]

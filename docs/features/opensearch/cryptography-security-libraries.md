@@ -43,7 +43,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "PEM Key Loading"
         PEM[PEM File] --> Parser[PEMParser]
         Parser --> |Encrypted| Decrypt[Decryptor]

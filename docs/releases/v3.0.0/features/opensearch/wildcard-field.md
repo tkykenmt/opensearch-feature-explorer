@@ -15,7 +15,7 @@ The wildcard field type now indexes only 3-grams (trigrams) instead of the previ
 #### Indexing Strategy Change
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Previous (1-3 gram)"
         A1[Input: 'lucene'] --> B1[Tokens: l, lu, luc, u, uc, uce, c, ce, cen, e, en, ene, n, ne, e]
     end

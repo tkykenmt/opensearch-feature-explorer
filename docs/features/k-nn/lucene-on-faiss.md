@@ -40,7 +40,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Index Loading"
         A[Open Index] --> B[Parse FAISS Header]
         B --> C[Mark Section Offsets]

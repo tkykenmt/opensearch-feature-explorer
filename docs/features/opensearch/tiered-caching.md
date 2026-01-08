@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Q[Query] --> HP{Heap Policy}
     HP -->|Pass| HC[Heap Cache]
     HP -->|Fail| Skip1[No Cache]

@@ -44,7 +44,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Submit Search] --> B{Wait Timeout?}
     B -->|Yes| C[Return Partial Results + ID]
     B -->|No| D[Return Complete Results]

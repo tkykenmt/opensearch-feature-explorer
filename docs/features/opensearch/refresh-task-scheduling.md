@@ -39,7 +39,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Refresh Cycle"
         A[Task Scheduled] --> B[run called]
         B --> C[Record lastRunStartTimeNs]

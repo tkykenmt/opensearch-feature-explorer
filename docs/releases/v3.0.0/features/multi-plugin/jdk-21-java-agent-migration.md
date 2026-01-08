@@ -40,7 +40,7 @@ graph TB
 #### Plugin Migration Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Plugin build.gradle] --> B{Apply Plugin}
     B --> C["apply plugin: 'opensearch.java-agent'"]
     C --> D[Gradle configures<br/>Java Agent]
