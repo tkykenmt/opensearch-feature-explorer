@@ -36,6 +36,10 @@
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 
+## security
+
+- [Security Configuration](security/security-configuration.md)
+
 ## sql
 
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)

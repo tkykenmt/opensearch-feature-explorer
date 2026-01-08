@@ -37,6 +37,10 @@
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 
+## security
+
+- [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)
+
 ## sql
 
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
