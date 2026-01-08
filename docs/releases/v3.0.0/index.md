@@ -6,6 +6,7 @@
 
 ## opensearch
 
+- [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
 - [Cryptography & Security Libraries](features/opensearch/cryptography-security-libraries.md)
 - [Gradle Build System](features/opensearch/gradle-build-system.md)
 - [Java Runtime & JPMS](features/opensearch/java-runtime-and-jpms.md)
