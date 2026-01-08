@@ -8,3 +8,7 @@
 
 - [Java Runtime & JPMS](features/opensearch/java-runtime-and-jpms.md)
 - [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
+
+## sql
+
+- [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
