@@ -84,3 +84,7 @@
 ## anomaly-detection
 
 - [Dual Cluster Gradle Run](features/anomaly-detection/dual-cluster-gradle-run.md)
+
+## observability
+
+- [Observability Integrations](features/observability/observability-integrations.md)
