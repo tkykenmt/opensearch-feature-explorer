@@ -60,3 +60,7 @@
 ## geospatial
 
 - [Geospatial Plugin](geospatial/geospatial-plugin.md)
+
+## multi-plugin
+
+- [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
