@@ -2464,7 +2464,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 443
     },
     {
       "name": "Dependency Bumps",
@@ -2569,7 +2570,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 444
     }
   ],
   "processed_offset": 538
