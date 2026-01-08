@@ -10,6 +10,7 @@
 - [Gradle Build System](features/opensearch/gradle-build-system.md)
 - [Java Runtime & JPMS](features/opensearch/java-runtime-and-jpms.md)
 - [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
+- [Lucene Similarity](features/opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
 - [Stream Input/Output](features/opensearch/stream-inputoutput.md)
 - [Wildcard Field](features/opensearch/wildcard-field.md)
