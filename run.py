@@ -257,16 +257,18 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
     
     if mode == "investigate":
         use_pr = not getattr(args, "no_pr", False)
+        force = getattr(args, "force", False)
         pr_mode = " Use PR workflow (create branch, pull request, and auto-merge)." if use_pr else " Push directly to main."
+        force_mode = " Overwrite existing reports." if force else ""
         if hasattr(args, "issue") and args.issue:
-            return f"Investigate GitHub Issue #{args.issue}.{pr_mode}{lang_instruction}"
+            return f"Investigate GitHub Issue #{args.issue}.{pr_mode}{force_mode}{lang_instruction}"
         if hasattr(args, "feature") and args.feature:
             prompt = f'Investigate feature "{args.feature}"'
             if args.pr:
                 prompt += f" starting from PR #{args.pr}"
-            return prompt + f".{pr_mode}{lang_instruction}"
+            return prompt + f".{pr_mode}{force_mode}{lang_instruction}"
         # No issue or feature specified - pick oldest open issue
-        return f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{lang_instruction}"
+        return f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{force_mode}{lang_instruction}"
     
     if mode == "explore":
         lang = args.lang if hasattr(args, "lang") and args.lang else "en"
@@ -477,6 +479,7 @@ Examples:
     inv.add_argument("--pr", type=int, help="Starting PR number")
     inv.add_argument("--lang", help="Output language code (e.g., ja)")
     inv.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
+    inv.add_argument("--force", action="store_true", help="Overwrite existing reports")
     
     # batch-investigate
     ba = subparsers.add_parser("batch-investigate", help="Run investigate in batch mode")
