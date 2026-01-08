@@ -37,6 +37,7 @@
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
+- [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 
 ## security
