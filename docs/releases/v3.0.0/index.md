@@ -79,3 +79,7 @@
 ## ml-commons
 
 - [ML Commons Blueprints & Tutorials](features/ml-commons/ml-commons-blueprints-tutorials.md)
+
+## anomaly-detection
+
+- [Dual Cluster Gradle Run](features/anomaly-detection/dual-cluster-gradle-run.md)
