@@ -40,6 +40,7 @@
 ## reporting
 
 - [AUTO Version Increment](features/reporting/auto-version-increment.md)
+- [CI/Workflow Fixes](features/reporting/ci-workflow-fixes.md)
 
 ## security
 
