@@ -16,6 +16,7 @@
 - [Dependency Bumps](features/opensearch/dependency-bumps.md)
 - [Locale Provider Changes](features/opensearch/locale-provider-changes.md)
 - [HTTP API Improvements](features/opensearch/http-api-improvements.md)
+- [Indexing Buffer Fix](features/opensearch/indexing-buffer-fix.md)
 - [Source Field Matching](features/opensearch/source-field-matching.md)
 - [Cryptography & Security Libraries](features/opensearch/cryptography-security-libraries.md)
 - [Gradle Build System](features/opensearch/gradle-build-system.md)

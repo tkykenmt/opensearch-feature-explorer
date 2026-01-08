@@ -117,6 +117,17 @@ NodesInfoRequest customRequest = new NodesInfoRequest()
     .addMetric(NodesInfoRequest.Metric.SEARCH_PIPELINES.metricName());
 ```
 
+### Response Field Formats
+
+The API returns indexing buffer information with the following fields:
+
+| Field | Format | Example |
+|-------|--------|---------|
+| `total_indexing_buffer_in_bytes` | Raw bytes (number) | `53687091` |
+| `total_indexing_buffer` | Human-readable (string) | `"51.1mb"` |
+
+**Note**: Prior to v3.0.0, these field formats were incorrectly swapped. See [PR #17070](https://github.com/opensearch-project/OpenSearch/pull/17070) for details.
+
 ## Limitations
 
 - The `search_pipelines` metric is not included in default responses (v3.0.0+)
@@ -127,14 +138,18 @@ NodesInfoRequest customRequest = new NodesInfoRequest()
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#17070](https://github.com/opensearch-project/OpenSearch/pull/17070) | Breaking change: Fix swapped indexing buffer field formats |
 | v3.0.0 | [#12497](https://github.com/opensearch-project/OpenSearch/pull/12497) | Breaking change: Do not request search_pipelines by default |
 
 ## References
 
 - [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): Official API reference
-- [PR #12497](https://github.com/opensearch-project/OpenSearch/pull/12497): Implementation PR
-- [PR #10296](https://github.com/opensearch-project/OpenSearch/pull/10296): Related - Add optional section of node analyzers
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): v3.0.0 breaking changes
+- [Issue #16910](https://github.com/opensearch-project/OpenSearch/issues/16910): Bug report for swapped field formats
+- [PR #12497](https://github.com/opensearch-project/OpenSearch/pull/12497): Default metrics change
+- [PR #17070](https://github.com/opensearch-project/OpenSearch/pull/17070): Indexing buffer format fix
 
 ## Change History
 
+- **v3.0.0** (2025-01-21): Breaking change - Fixed swapped `total_indexing_buffer` and `total_indexing_buffer_in_bytes` field formats
 - **v3.0.0** (2024-03-12): Breaking change - `search_pipelines` metric excluded from default metrics set
