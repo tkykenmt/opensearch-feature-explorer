@@ -1024,7 +1024,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 403
     },
     {
       "name": "Correlation Alerts",
@@ -1044,7 +1045,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 404
     },
     {
       "name": "Alerting Comments",
@@ -1066,7 +1068,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 405
     },
     {
       "name": "Security Analytics Detectors",
@@ -1086,7 +1089,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 406
     },
     {
       "name": "Security Dashboards UI",
@@ -1118,7 +1122,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 407
     },
     {
       "name": "k-NN Iterative Graph Build",
@@ -1132,7 +1137,8 @@
           "category": "enhancement",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 408
     },
     {
       "name": "k-NN Model Metadata",
@@ -1146,7 +1152,8 @@
           "category": "enhancement",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 409
     },
     {
       "name": "SQL/PPL Enhancements",
@@ -1178,7 +1185,8 @@
           "category": "enhancement",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 410
     },
     {
       "name": "Security Lake Data Source",
@@ -1199,7 +1207,8 @@
           "category": "enhancement",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 411
     },
     {
       "name": "Flint Index Operations",
@@ -1213,7 +1222,8 @@
           "category": "enhancement",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 412
     },
     {
       "name": "Anomaly Detection Bugfixes",
@@ -1245,7 +1255,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 413
     },
     {
       "name": "Alerting Bugfixes",
@@ -1307,7 +1318,8 @@
           "category": "bugfix",
           "repository": "alerting"
         }
-      ]
+      ],
+      "issue_number": 414
     },
     {
       "name": "Common Utils Bugfixes",
@@ -1321,7 +1333,8 @@
           "category": "bugfix",
           "repository": "common"
         }
-      ]
+      ],
+      "issue_number": 415
     },
     {
       "name": "Cross-Cluster Replication Bugfixes",
@@ -1335,7 +1348,8 @@
           "category": "bugfix",
           "repository": "cross-cluster-replication"
         }
-      ]
+      ],
+      "issue_number": 416
     },
     {
       "name": "Notifications Bugfixes",
@@ -1355,7 +1369,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 417
     },
     {
       "name": "Reporting Bugfixes",
@@ -1375,7 +1390,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 418
     },
     {
       "name": "Dashboards Bugfixes",
@@ -1389,7 +1405,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 419
     },
     {
       "name": "Index Management Bugfixes",
@@ -1415,7 +1432,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 420
     },
     {
       "name": "Job Scheduler Bugfixes",
@@ -1429,7 +1447,8 @@
           "category": "bugfix",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 421
     },
     {
       "name": "ML Commons Bugfixes",
@@ -1515,7 +1534,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 422
     },
     {
       "name": "Neural Search Hybrid Query",
