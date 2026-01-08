@@ -46,6 +46,7 @@
 
 - [AUTO Version Management](reporting/auto-version-management.md)
 - [CI/CD Workflow](reporting/ci-workflow.md)
+- [Java Agent Migration](reporting/java-agent-migration.md)
 
 ## dashboards-flow-framework
 
