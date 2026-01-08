@@ -68,6 +68,7 @@
 
 ## multi-plugin
 
+- [CI/CD & Testing Infrastructure](multi-plugin/ci-cd-testing-infrastructure.md)
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
 
 ## opensearch-remote-metadata-sdk
