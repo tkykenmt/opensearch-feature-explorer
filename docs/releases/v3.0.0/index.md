@@ -43,6 +43,7 @@
 
 - [AUTO Version Increment](features/reporting/auto-version-increment.md)
 - [CI/Workflow Fixes](features/reporting/ci-workflow-fixes.md)
+- [Java Agent Build Fix](features/reporting/java-agent-build-fix.md)
 
 ## security
 
