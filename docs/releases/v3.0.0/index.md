@@ -51,6 +51,10 @@
 
 - [Dashboards BWC](features/dashboards-flow-framework/dashboards-bwc.md)
 
+## flow-framework
+
+- [Flow Framework Templates](features/flow-framework/flow-framework-templates.md)
+
 ## sql
 
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)

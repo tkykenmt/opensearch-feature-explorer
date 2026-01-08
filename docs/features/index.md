@@ -50,6 +50,10 @@
 
 - [Backward Compatibility](dashboards-flow-framework/backward-compatibility.md)
 
+## flow-framework
+
+- [Text-to-Visualization Templates](flow-framework/text-to-visualization-templates.md)
+
 ## sql
 
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
