@@ -579,7 +579,8 @@
           "category": "feature",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 383
     },
     {
       "name": "k-NN Space Type Configuration",
@@ -593,7 +594,8 @@
           "category": "feature",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 384
     },
     {
       "name": "Flint Query Scheduler",
@@ -619,7 +621,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 385
     },
     {
       "name": "Notifications Navigation",
@@ -633,7 +636,8 @@
           "category": "enhancement",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 386
     },
     {
       "name": "Anomaly Detection Enhancements",
@@ -647,7 +651,8 @@
           "category": "enhancement",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 387
     },
     {
       "name": "Common Infrastructure",
@@ -661,7 +666,8 @@
           "category": "enhancement",
           "repository": "common"
         }
-      ]
+      ],
+      "issue_number": 388
     },
     {
       "name": "Multi-Data Source Support",
@@ -682,7 +688,8 @@
           "category": "enhancement",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 389
     },
     {
       "name": "Dashboards UI Updates",
@@ -696,7 +703,8 @@
           "category": "enhancement",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 390
     },
     {
       "name": "Index Management UI Updates",
@@ -782,7 +790,8 @@
           "category": "enhancement",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 391
     },
     {
       "name": "ML Commons Memory Metadata",
@@ -796,7 +805,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 392
     },
     {
       "name": "ML Commons Connector Enhancements",
@@ -810,7 +820,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 393
     },
     {
       "name": "ML Inference Processor",
@@ -824,7 +835,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 394
     },
     {
       "name": "ML Config API",
@@ -838,7 +850,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 395
     },
     {
       "name": "ML Commons UI Updates",
@@ -852,7 +865,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 396
     },
     {
       "name": "Neural Search Rescore",
@@ -866,7 +880,8 @@
           "category": "enhancement",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 397
     },
     {
       "name": "Observability Enhancements",
@@ -892,7 +907,8 @@
           "category": "enhancement",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 398
     },
     {
       "name": "Trace Analytics",
@@ -912,7 +928,8 @@
           "category": "enhancement",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 399
     },
     {
       "name": "Query Assist",
@@ -932,7 +949,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 400
     },
     {
       "name": "Query Shape Generation",
@@ -958,7 +976,8 @@
           "category": "enhancement",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 401
     },
     {
       "name": "Query Insights UI",
@@ -972,7 +991,8 @@
           "category": "enhancement",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 402
     },
     {
       "name": "Security Auth Enhancements",
