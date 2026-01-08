@@ -1555,7 +1555,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 423
     },
     {
       "name": "Trace Analytics Bugfixes",
@@ -1617,7 +1618,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 424
     },
     {
       "name": "Observability Notebooks",
@@ -1637,7 +1639,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 425
     },
     {
       "name": "Query Insights Bugfixes",
@@ -1693,7 +1696,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 426
     },
     {
       "name": "Reporting Enhancements",
@@ -1707,7 +1711,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 427
     },
     {
       "name": "Security Plugin Bugfixes",
@@ -1781,7 +1786,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 428
     },
     {
       "name": "Threat Intel",
@@ -1861,7 +1867,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 429
     },
     {
       "name": "Security Analytics UI Bugfixes",
@@ -1911,7 +1918,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 430
     },
     {
       "name": "Security Dashboards Bugfixes",
@@ -1943,7 +1951,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 431
     },
     {
       "name": "k-NN Bugfixes",
@@ -1999,7 +2008,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 432
     },
     {
       "name": "SQL/PPL Bugfixes",
@@ -2049,7 +2059,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 433
     },
     {
       "name": "CVE Fixes",
@@ -2097,7 +2108,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 434
     },
     {
       "name": "Neural Search Bugfixes",
@@ -2111,7 +2123,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 435
     },
     {
       "name": "Performance Analyzer Bugfixes",
@@ -2125,7 +2138,8 @@
           "category": "bugfix",
           "repository": "performance"
         }
-      ]
+      ],
+      "issue_number": 436
     },
     {
       "name": "Query Insights Infrastructure",
@@ -2145,7 +2159,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 437
     },
     {
       "name": "Maps Plugin Bugfixes",
@@ -2165,7 +2180,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 438
     },
     {
       "name": "ML Commons Test Fixes",
@@ -2185,7 +2201,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 439
     },
     {
       "name": "Release Notes and Version Updates",
@@ -2354,7 +2371,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 440
     },
     {
       "name": "Documentation Updates",
@@ -2375,7 +2393,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 441
     },
     {
       "name": "Maintainer Updates",
@@ -2410,7 +2429,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 442
     },
     {
       "name": "CI/Infrastructure Fixes",
