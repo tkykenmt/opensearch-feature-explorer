@@ -229,10 +229,8 @@ After creating/updating a feature report, update `docs/features/index.md`:
 
 ## Step 5: Commit and Push
 
-**IMPORTANT: Save the current branch name before starting, and return to it after completion.**
-
+**Save the current branch name at the start:**
 ```bash
-# Save current branch
 ORIGINAL_BRANCH=$(git branch --show-current)
 ```
 
@@ -260,11 +258,6 @@ Create PR using `create_pull_request`:
 Then merge using `merge_pull_request`:
 - merge_method: `squash`
 
-Return to original branch:
-```bash
-git checkout $ORIGINAL_BRANCH
-```
-
 ### Direct push workflow (when "Push directly to main" specified):
 ```bash
 git checkout main
@@ -272,10 +265,17 @@ git pull
 git add docs/releases/v{version}/ docs/features/
 git commit -m "docs: add {item-name} report for v{version}"
 git push
+```
+
+## Step 6: Return to Original Branch
+
+**IMPORTANT: Always return to the original branch after completion.**
+
+```bash
 git checkout $ORIGINAL_BRANCH
 ```
 
-## Step 6: Update GitHub Issue
+## Step 7: Update GitHub Issue
 
 Post completion comment:
 ```markdown
