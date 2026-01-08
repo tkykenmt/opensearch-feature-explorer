@@ -2,6 +2,7 @@
 
 ## neural-search
 
+- [Neural Search Compatibility](neural-search/neural-search-compatibility.md)
 - [Semantic Field](neural-search/semantic-field.md)
 
 ## opensearch
