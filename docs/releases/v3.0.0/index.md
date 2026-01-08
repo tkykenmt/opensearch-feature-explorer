@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
+- [HTTP API Improvements](features/opensearch/http-api-improvements.md)
 - [Source Field Matching](features/opensearch/source-field-matching.md)
 - [Cryptography & Security Libraries](features/opensearch/cryptography-security-libraries.md)
 - [Gradle Build System](features/opensearch/gradle-build-system.md)
