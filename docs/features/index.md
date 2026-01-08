@@ -43,6 +43,7 @@
 ## reporting
 
 - [AUTO Version Management](reporting/auto-version-management.md)
+- [CI/CD Workflow](reporting/ci-workflow.md)
 
 ## sql
 
