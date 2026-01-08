@@ -51,15 +51,10 @@ graph LR
 
 ### GitHub Token Scopes
 
-When running `gh auth login`, select the following scopes:
-- `repo` (Full control of private repositories)
-- `read:org` (Read org membership)
-- `project` (Full control of projects) - **required for GitHub Projects API**
-
-After initial login, add workflow scope:
+Run `gh auth login` with required scopes:
 
 ```bash
-gh auth refresh -s read:org -s repo -s workflow -s project
+gh auth login -s read:org -s repo -s workflow -s project
 ```
 
 | Scope | Purpose |
@@ -68,6 +63,7 @@ gh auth refresh -s read:org -s repo -s workflow -s project
 | `project` | GitHub Projects (progress tracking) |
 | `workflow` | GitHub Actions (MkDocs deployment) |
 | `read:org` | Organization info |
+| `gist` | (included by default) |
 
 ## Naming Conventions
 
