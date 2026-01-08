@@ -24,6 +24,7 @@
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
+- [Tiered Caching](opensearch/tiered-caching.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 
 ## opensearch-dashboards
