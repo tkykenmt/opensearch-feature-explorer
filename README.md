@@ -41,6 +41,7 @@ graph LR
 | **explore** | Interactive Q&A + URL import |
 | **summarize** | Aggregate release reports into release summary |
 | **translate** | Translate reports to other languages |
+| **dev** | Development and maintenance of this tool itself |
 
 ## Requirements
 

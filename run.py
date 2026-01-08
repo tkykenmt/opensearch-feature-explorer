@@ -13,6 +13,7 @@ SCRIPT_DIR = Path(__file__).parent
 AGENTS_DIR = SCRIPT_DIR / ".kiro" / "agents"
 
 AGENTS = {
+    "dev": "dev.json",
     "group-release": "group-release.json",
     "review-groups": "review-groups.json",
     "review-release": "review-release.json",
@@ -522,9 +523,14 @@ Examples:
     fi.add_argument("--lang", help="Output language code (e.g., ja)")
     fi.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
+    # dev
+    subparsers.add_parser("dev", help="Development mode - interactive tool development")
+    
     args = parser.parse_args()
     
-    if args.mode == "release-investigate":
+    if args.mode == "dev":
+        run_kiro("dev", "", no_interactive=False)
+    elif args.mode == "release-investigate":
         sys.exit(run_release_investigate(args.version, getattr(args, "lang", None), getattr(args, "no_pr", False)))
     elif args.mode == "feature-investigate":
         sys.exit(run_feature_investigate(args.feature, getattr(args, "pr", None), getattr(args, "lang", None), getattr(args, "no_pr", False)))

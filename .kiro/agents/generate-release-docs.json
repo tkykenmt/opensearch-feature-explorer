@@ -1,9 +1,13 @@
 {
   "name": "generate-release-docs",
   "description": "Generate release documents from existing feature documents",
-  "prompt": ".kiro/agents/prompts/generate-release-docs.md",
+  "prompt": "file://./prompts/generate-release-docs.md",
   "tools": ["@builtin", "@github"],
   "allowedTools": ["@builtin", "@github"],
+  "resources": [
+    "file://README.md",
+    "file://.kiro/steering/**/*.md"
+  ],
   "mcpServers": {
     "github": {
       "command": "bash",

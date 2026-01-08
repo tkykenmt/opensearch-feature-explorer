@@ -1,7 +1,11 @@
 {
   "name": "review-release",
   "description": "Review and improve parsed release notes JSON",
-  "prompt": ".kiro/agents/prompts/review-release.md",
+  "prompt": "file://./prompts/review-release.md",
   "tools": ["@builtin"],
-  "allowedTools": ["@builtin"]
+  "allowedTools": ["@builtin"],
+  "resources": [
+    "file://README.md",
+    "file://.kiro/steering/**/*.md"
+  ]
 }

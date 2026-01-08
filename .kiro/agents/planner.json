@@ -1,9 +1,13 @@
 {
   "name": "planner",
   "description": "Analyze release notes and create GitHub Issues for investigation tasks",
-  "prompt": ".kiro/agents/prompts/planner.md",
+  "prompt": "file://./prompts/planner.md",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
+  "resources": [
+    "file://README.md",
+    "file://.kiro/steering/**/*.md"
+  ],
   "mcpServers": {
     "opensearch-docs": {
       "command": "python",

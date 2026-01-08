@@ -203,7 +203,7 @@ After creating the release report, update `docs/releases/v{version}/index.md`:
 ## Step 4: Update/Create Feature Report (SECONDARY OUTPUT)
 
 ### For new-feature (feature report doesn't exist):
-Create `docs/features/{repository-name}/{feature-name}.md` following base.md template:
+Create `docs/features/{repository-name}/{feature-name}.md` following the template in steering/opensearch-knowledge.md:
 - Summary section (accessible overview)
 - Details section (technical depth)
 - Architecture diagram

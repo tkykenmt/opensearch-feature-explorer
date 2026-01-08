@@ -1,9 +1,13 @@
 {
   "name": "create-issues",
   "description": "Create individual investigation Issues from a tracking Issue",
-  "prompt": ".kiro/agents/prompts/create-issues.md",
+  "prompt": "file://./prompts/create-issues.md",
   "tools": ["@builtin", "@github"],
   "allowedTools": ["@builtin", "@github"],
+  "resources": [
+    "file://README.md",
+    "file://.kiro/steering/**/*.md"
+  ],
   "mcpServers": {
     "github": {
       "command": "bash",

@@ -1,11 +1,12 @@
 {
-  "name": "investigate",
-  "description": "Investigate a single feature and create/update feature reports",
-  "prompt": "file://./prompts/investigate.md",
+  "name": "dev",
+  "description": "Development and maintenance of this tool itself",
+  "prompt": "file://./prompts/dev.md",
   "tools": ["@builtin", "@github", "@opensearch-docs"],
   "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "resources": [
     "file://README.md",
+    "file://DEVELOPMENT.md",
     "file://.kiro/steering/**/*.md"
   ],
   "mcpServers": {

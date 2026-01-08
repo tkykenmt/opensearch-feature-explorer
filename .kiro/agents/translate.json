@@ -1,7 +1,11 @@
 {
   "name": "translate",
   "description": "Translate existing reports to other languages",
-  "prompt": ".kiro/agents/prompts/translate.md",
+  "prompt": "file://./prompts/translate.md",
   "tools": ["@builtin"],
-  "allowedTools": ["@builtin"]
+  "allowedTools": ["@builtin"],
+  "resources": [
+    "file://README.md",
+    "file://.kiro/steering/**/*.md"
+  ]
 }
