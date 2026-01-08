@@ -42,6 +42,7 @@
 ## security
 
 - [Security Configuration](security/security-configuration.md)
+- [Security Plugin](security/security-plugin.md)
 
 ## reporting
 

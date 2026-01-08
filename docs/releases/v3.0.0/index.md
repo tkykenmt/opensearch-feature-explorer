@@ -49,6 +49,7 @@
 ## security
 
 - [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)
+- [Security Plugin Changes](features/security/security-plugin-changes.md)
 
 ## dashboards-flow-framework
 
