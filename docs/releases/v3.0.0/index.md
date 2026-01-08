@@ -46,6 +46,10 @@
 
 - [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)
 
+## dashboards-flow-framework
+
+- [Dashboards BWC](features/dashboards-flow-framework/dashboards-bwc.md)
+
 ## sql
 
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
