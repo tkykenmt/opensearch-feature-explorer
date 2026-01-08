@@ -106,8 +106,14 @@ Enable the following in your repository settings (Settings → General):
 
 Complete workflow for investigating a new OpenSearch release.
 
+```mermaid
+flowchart LR
+    A[release-investigate] --> B[(Release Reports)]
+    A --> C[(Feature Reports)]
+    A --> D[(Release Summary)]
+```
+
 ```bash
-# One command to run all steps
 python run.py release-investigate 3.0.0
 ```
 
