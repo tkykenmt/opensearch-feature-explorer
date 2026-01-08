@@ -15,6 +15,7 @@
 - [Lucene Similarity](opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](opensearch/merge-segment-settings.md)
 - [Nodes Info API](opensearch/nodes-info-api.md)
+- [Search Backpressure](opensearch/search-backpressure.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 
