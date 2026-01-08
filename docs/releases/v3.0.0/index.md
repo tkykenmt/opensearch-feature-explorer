@@ -8,6 +8,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
+- [Cluster Permissions](features/opensearch/cluster-permissions.md)
 - [gRPC Transport & Services](features/opensearch/grpc-transport--services.md)
 - [Mapping Transformer](features/opensearch/mapping-transformer.md)
 - [Cluster Manager Throttling](features/opensearch/cluster-manager-throttling.md)
