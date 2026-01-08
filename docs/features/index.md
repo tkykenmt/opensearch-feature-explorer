@@ -7,6 +7,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
+- [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
 - [Source Field Matching](opensearch/source-field-matching.md)
 - [Cryptography & Security Libraries](opensearch/cryptography-security-libraries.md)
