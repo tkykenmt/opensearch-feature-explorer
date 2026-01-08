@@ -106,7 +106,8 @@ After loading the target Issue, check for duplicates:
    ```
    search(query="{feature}", version="{version}", types="docs,blogs")
    ```
-3. Fetch and analyze found resources with `web_fetch`
+3. **IMPORTANT**: Fetch and analyze ALL found blog posts with `web_fetch` - blogs often contain usage examples, best practices, and context not in docs
+4. Save all discovered resource URLs for References section
 
 ### 2.3 Cache Retrieved Data
 Save to `.cache/releases/{version}/`:
@@ -199,7 +200,7 @@ Create `docs/features/{repository-name}/{feature-name}.md` following base.md tem
 - Configuration table
 - Usage examples
 - Limitations
-- References (all PRs, Issues, docs, blogs)
+- References (all PRs, Issues, docs, **blogs from search results**)
 - Change History (starting with this version, sorted by version descending)
 
 ### For update-feature (feature report exists):
