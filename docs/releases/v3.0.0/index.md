@@ -112,3 +112,7 @@
 ## dashboards-assistant
 
 - [AI Assistant / Chatbot](features/dashboards-assistant/ai-assistant-chatbot.md)
+
+## k-nn
+
+- [Vector Search (k-NN)](features/k-nn/vector-search-k-nn.md)
