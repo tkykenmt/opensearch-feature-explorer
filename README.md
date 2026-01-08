@@ -34,7 +34,9 @@ graph LR
 
 | Agent | Description |
 |-------|-------------|
-| **planner** | Analyze release notes → create GitHub Issues for investigation |
+| **fetch-release** | Fetch release notes → parse and save all items to JSON cache |
+| **planner** | Read JSON cache → create tracking Issue with all items |
+| **create-issues** | Create individual investigation Issues from tracking Issue |
 | **investigate** | Deep investigation of release items → create release & feature reports |
 | **explore** | Interactive Q&A + URL import |
 | **summarize** | Aggregate release reports into release summary |
@@ -46,6 +48,34 @@ graph LR
 - [Kiro CLI](https://kiro.dev/)
 - [GitHub CLI](https://cli.github.com/) (`gh`) - authenticated via `gh auth login`
 - Node.js (for GitHub MCP Server)
+
+### GitHub Token Scopes
+
+The following scopes are required for `gh auth`:
+
+```bash
+gh auth refresh -s copilot -s gist -s read:org -s repo -s workflow -s project
+```
+
+| Scope | Purpose |
+|-------|---------|
+| `repo` | Issue/PR operations |
+| `project` | GitHub Projects (progress tracking) |
+| `workflow` | GitHub Actions (MCP server) |
+| `read:org` | Organization info |
+| `copilot`, `gist` | MCP server requirements |
+
+## Naming Conventions
+
+| Resource | Pattern | Example |
+|----------|---------|---------|
+| GitHub Project | `v{version} Investigation` | `v3.0.0 Investigation` |
+| Issue (group) | `[{category}] {group_name}` | `[feature] Star Tree Index` |
+| Label (release) | `release/v{version}` | `release/v3.0.0` |
+| Label (status) | `status/{status}` | `status/todo`, `status/done` |
+| Data directory | `data/releases/v{version}/` | `data/releases/v3.0.0/` |
+| Release report | `docs/releases/v{version}/{group-name}.md` | `docs/releases/v3.0.0/star-tree-index.md` |
+| Feature report | `docs/features/{feature-name}.md` | `docs/features/star-tree-index.md` |
 
 ## Setup
 
@@ -70,24 +100,44 @@ Enable the following in your repository settings (Settings → General):
 ### Workflow
 
 ```bash
-# 1. Plan release investigation (creates GitHub Issues)
+# 1. Parse release notes and save to JSON cache
+python run.py fetch-release 3.0.0
+
+# 2. Create tracking Issue from JSON cache
 python run.py planner 3.0.0
 
-# 2. Investigate each feature (from GitHub Issue)
-python run.py investigate --issue 123
+# 3. Create individual investigation Issues from tracking Issue
+python run.py create-issues --tracking 123
 
-# 3. Or investigate directly
+# Or create in batches
+python run.py create-issues --tracking 123 --limit 20
+
+# Or filter by category
+python run.py create-issues --tracking 123 --category features
+
+# 3. Investigate each feature (from GitHub Issue)
+python run.py investigate --issue 124
+
+# 4. Or investigate directly
 python run.py investigate "Star Tree" --pr 16233
 
-# 4. Batch investigate multiple issues
+# 5. Batch investigate multiple issues
 python run.py batch-investigate 5        # Process 5 issues
 python run.py batch-investigate --all    # Process all open issues
 
-# 5. Create release summary
+# 6. Create release summary
 python run.py summarize 3.0.0
 
-# 6. Translate if needed
+# 7. Translate if needed
 python run.py translate --feature "Star Tree" --to ja
+```
+
+### Planner Options
+
+```bash
+# Ignore existing tracking Issue and create new one
+python run.py planner 3.0.0 -i
+python run.py planner 3.0.0 --ignore-existing
 ```
 
 ### Interactive Exploration
@@ -102,15 +152,25 @@ python run.py explore "Segment Replication" --lang ja
 docs/
 ├── features/                          # Cumulative feature documentation
 │   ├── index.md
-│   ├── star-tree-index.md            # Full feature history
-│   └── star-tree-index.ja.md
+│   ├── opensearch/
+│   │   ├── star-tree-index.md
+│   │   └── star-tree-index.ja.md
+│   ├── neural-search/
+│   │   └── semantic-highlighting.md
+│   └── k-nn/
+│       └── explain-api.md
 └── releases/
     └── v3.0.0/
         ├── index.md                   # Release index
         ├── summary.md                 # Release summary (from summarize)
-        └── features/                  # Per-release change reports
-            ├── star-tree-enhancements.md
-            └── grpc-transport.md
+        └── features/
+            ├── opensearch/
+            │   ├── star-tree-enhancements.md
+            │   └── grpc-transport.md
+            ├── neural-search/
+            │   └── semantic-highlighting.md
+            └── k-nn/
+                └── explain-api.md
 ```
 
 ## Local Preview
