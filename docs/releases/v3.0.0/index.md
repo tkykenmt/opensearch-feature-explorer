@@ -116,3 +116,4 @@
 ## k-nn
 
 - [Vector Search (k-NN)](features/k-nn/vector-search-k-nn.md)
+- [Explain API Support](features/k-nn/explain-api-support.md)
