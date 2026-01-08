@@ -2,7 +2,7 @@
 
 ## Summary
 
-The semantic field type is a new field mapper in the neural-search plugin that simplifies semantic search workflows. It automatically handles text-to-vector transformations using ML models, eliminating the need for separate ingest pipelines while preserving the original text for traditional search capabilities.
+The semantic field type is a field mapper in the neural-search plugin that simplifies semantic search workflows. It automatically handles text-to-vector transformations using ML models, eliminating the need for separate ingest pipelines while preserving the original text for traditional search capabilities.
 
 ## Details
 
@@ -21,6 +21,8 @@ graph TB
         KFM[KeywordFieldMapper]
         MOTFM[MatchOnlyTextFieldMapper]
         WFM[WildcardFieldMapper]
+        TCM[TokenCountFieldMapper]
+        BFM[BinaryFieldMapper]
     end
     
     subgraph "ML Integration"
@@ -34,6 +36,8 @@ graph TB
     SFM -->|delegates to| KFM
     SFM -->|delegates to| MOTFM
     SFM -->|delegates to| WFM
+    SFM -->|delegates to| TCM
+    SFM -->|delegates to| BFM
     SFM -->|inference| Model
     Model --> Embeddings
 ```
@@ -42,15 +46,15 @@ graph TB
 
 | Component | Description | Since |
 |-----------|-------------|-------|
-| SemanticFieldMapper | Main field mapper handling semantic field configuration | v3.0.0 |
-| SemanticFieldType | Field type extending FilterFieldType for delegate wrapping | v3.0.0 |
-| SemanticParameters | DTO holding model_id, search_model_id, raw_field_type, semantic_info_field_name | v3.0.0 |
-| FeatureFlagUtil | Controls semantic field feature availability | v3.0.0 |
+| `SemanticFieldMapper` | Main field mapper handling semantic field configuration | v3.0.0 |
+| `SemanticFieldType` | Field type extending `FilterFieldType` for delegate wrapping | v3.0.0 |
+| `SemanticParameters` | DTO holding `model_id`, `search_model_id`, `raw_field_type`, `semantic_info_field_name` | v3.0.0 |
+| `FeatureFlagUtil` | Controls semantic field feature availability | v3.0.0 |
 
 ### Configuration
 
 | Parameter | Description | Default |
-|-----------|-------------|--------|
+|-----------|-------------|---------|
 | `model_id` | ML model ID for embedding generation at index time | Required |
 | `search_model_id` | ML model ID for query inference (optional) | Uses `model_id` |
 | `raw_field_type` | Underlying field type for raw data | `text` |
@@ -78,7 +82,6 @@ PUT /semantic-index
       "description": {
         "type": "semantic",
         "model_id": "sentence-transformers/all-MiniLM-L6-v2",
-        "search_model_id": "sentence-transformers/all-MiniLM-L6-v2",
         "raw_field_type": "text"
       }
     }
@@ -90,23 +93,6 @@ POST /semantic-index/_doc
 {
   "description": "OpenSearch is a distributed search and analytics engine."
 }
-
-// Get mapping shows semantic field configuration
-GET /semantic-index/_mapping
-{
-  "semantic-index": {
-    "mappings": {
-      "properties": {
-        "description": {
-          "type": "semantic",
-          "model_id": "sentence-transformers/all-MiniLM-L6-v2",
-          "search_model_id": "sentence-transformers/all-MiniLM-L6-v2",
-          "raw_field_type": "text"
-        }
-      }
-    }
-  }
-}
 ```
 
 ## Limitations
@@ -114,17 +100,20 @@ GET /semantic-index/_mapping
 - Feature is disabled by default (requires `semantic_field_enabled` feature flag)
 - Cannot change `raw_field_type` after index creation
 - Cannot change `semantic_info_field_name` after index creation
-- Public documentation pending
+- Does not support dynamic mapping
+- Cannot use semantic field in the `fields` section of another field
 
 ## References
 
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
-- [Issue #1226](https://github.com/opensearch-project/neural-search/issues/1226): Semantic field implementation tracking
+- [Issue #1226](https://github.com/opensearch-project/neural-search/issues/1226): Clean up unnecessary feature flag
 - [PR #1225](https://github.com/opensearch-project/neural-search/pull/1225): Add semantic field mapper
-- [Semantic Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/semantic-search/): Related semantic search concepts
+- [Semantic Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/semantic-search/)
+- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
+- [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
 
 ## Change History
 
 | Version | Changes |
-|---------|--------|
+|---------|---------|
 | v3.0.0 | Initial semantic field mapper implementation (feature-flagged) |
