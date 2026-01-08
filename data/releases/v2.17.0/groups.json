@@ -1,0 +1,2516 @@
+{
+  "version": "2.17.0",
+  "sources": [],
+  "groups": [
+    {
+      "name": "Look & Feel UI Improvements",
+      "repositories": [
+        "opensearch",
+        "anomaly-detection",
+        "observability",
+        "notifications",
+        "reporting",
+        "dashboards",
+        "index-management",
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 250,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 826,
+          "name": "[Look&Feel] Use smaller and compressed varients of buttons and form components",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 836,
+          "name": "[Look&Feel] Consistency and density improvements",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 2071,
+          "name": "[Look&Feel] Integrations Density and Consistency Improvements",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 1105,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 231,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "notifications"
+        },
+        {
+          "pr": 398,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "reporting"
+        },
+        {
+          "pr": 421,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 383,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 1103,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 349,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2068,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "observability"
+        }
+      ],
+      "issue_number": 363
+    },
+    {
+      "name": "Anomaly Detection Missing Data Handling",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 1274,
+          "name": "Add Support for Handling Missing Data in Anomaly Detection",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 851,
+          "name": "Add Missing Value Imputation Options and Update Shingle Size Limit",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        }
+      ],
+      "issue_number": 364
+    },
+    {
+      "name": "Anomaly Detection Remote/Multi-Index Support",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 1290,
+          "name": "Adding remote index and multi-index checks in validation",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 867,
+          "name": "Adding remote indices and multi index functionality",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        }
+      ],
+      "issue_number": 365
+    },
+    {
+      "name": "Header Redesign",
+      "repositories": [
+        "anomaly-detection",
+        "observability",
+        "security",
+        "notifications",
+        "dashboards",
+        "index-management",
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 841,
+          "name": "Header redesign",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 2050,
+          "name": "[Page Header] New page header for metrics",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2081,
+          "name": "[Page Header] New page header for applications and UI updates",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2099,
+          "name": "[Page Header] New page header for notebooks and UI updates (, )",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 1111,
+          "name": "[navigation]fix: add threat detection header",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 1117,
+          "name": "Page header updates to share common UI language in OSD",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 1129,
+          "name": "New home page related UI updates",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 236,
+          "name": "Page header",
+          "category": "enhancement",
+          "repository": "notifications"
+        },
+        {
+          "pr": 428,
+          "name": "New page header for search relevance",
+          "category": "enhancement",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 1105,
+          "name": "Update newHeader for Snapshot pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1115,
+          "name": "Update new header for datastreams and rollups jobs",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1108,
+          "name": "Update newHeader for Index state management policies",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1122,
+          "name": "Update newHeader for component template pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1126,
+          "name": "Update new header for notification settings page",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1124,
+          "name": "Update new header for Alias, Index Templates, Policy Managed Indices, Indexes and Transform Jobs",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 351,
+          "name": "Support new page header API",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 366
+    },
+    {
+      "name": "Anomaly Detection Ignore Rules",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 859,
+          "name": "Add ignore rules comparing actual and expected values",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        }
+      ],
+      "issue_number": 367
+    },
+    {
+      "name": "Maps Plugin UI Updates",
+      "repositories": [
+        "dashboards"
+      ],
+      "items": [
+        {
+          "pr": 653,
+          "name": "Conditionally use the new Page Header variant on the Maps listing page",
+          "category": "feature",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 654,
+          "name": "Conditionally use the new Application Header variant on the Maps visualization page",
+          "category": "feature",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 655,
+          "name": "Conditionally use full width for Maps listing page table",
+          "category": "feature",
+          "repository": "dashboards"
+        }
+      ],
+      "issue_number": 368
+    },
+    {
+      "name": "Search Comparison",
+      "repositories": [
+        "dashboards"
+      ],
+      "items": [
+        {
+          "pr": 427,
+          "name": "Add compare queries card to search use case overview page",
+          "category": "feature",
+          "repository": "dashboards"
+        }
+      ],
+      "issue_number": 369
+    },
+    {
+      "name": "Flow Framework Reprovision API",
+      "repositories": [
+        "flow"
+      ],
+      "items": [
+        {
+          "pr": 804,
+          "name": "Adds reprovision API to support updating search pipelines, ingest pipelines index settings",
+          "category": "feature",
+          "repository": "flow"
+        }
+      ],
+      "issue_number": 370
+    },
+    {
+      "name": "Flow Framework Access Control",
+      "repositories": [
+        "flow"
+      ],
+      "items": [
+        {
+          "pr": 838,
+          "name": "Adds user level access control based on backend roles",
+          "category": "feature",
+          "repository": "flow"
+        }
+      ],
+      "issue_number": 371
+    },
+    {
+      "name": "Flow Framework Connector Tools",
+      "repositories": [
+        "flow"
+      ],
+      "items": [
+        {
+          "pr": 846,
+          "name": "Support parsing connector\\_id when creating tools",
+          "category": "feature",
+          "repository": "flow"
+        }
+      ],
+      "issue_number": 372
+    },
+    {
+      "name": "ML Commons Batch Ingestion",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2844,
+          "name": "Offline batch ingestion API actions and data ingesters",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2825,
+          "name": "Support get batch transform job status in get task API",
+          "category": "feature",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 373
+    },
+    {
+      "name": "Observability Multi-Data Source Support",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2048,
+          "name": "[Feature] Multi-data Source Support for Getting Started",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2051,
+          "name": "[Feature] MDS support in Integrations for observability plugin",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2097,
+          "name": "[Enhancement] Deregister dashboards, applications, logs in MDS",
+          "category": "enhancement",
+          "repository": "observability"
+        },
+        {
+          "pr": 2140,
+          "name": "[MDS] Add support for register data sources during the absence of local cluster",
+          "category": "enhancement",
+          "repository": "observability"
+        }
+      ],
+      "issue_number": 374
+    },
+    {
+      "name": "Observability UI Updates",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2078,
+          "name": "[Feature] Traces/Services UI update",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2090,
+          "name": "[Feature] Observability dashboards UI update",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2092,
+          "name": "[Feature] Logs UI update",
+          "category": "feature",
+          "repository": "observability"
+        }
+      ],
+      "issue_number": 375
+    },
+    {
+      "name": "Observability Workspace Integration",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2101,
+          "name": "[Feature] Make createAssets API compatible with workspace",
+          "category": "feature",
+          "repository": "observability"
+        },
+        {
+          "pr": 2077,
+          "name": "[Feature] OverviewPage made with Content Management",
+          "category": "feature",
+          "repository": "observability"
+        }
+      ],
+      "issue_number": 376
+    },
+    {
+      "name": "Performance Analyzer Cache Config",
+      "repositories": [
+        "performance"
+      ],
+      "items": [
+        {
+          "pr": 690,
+          "name": "Added cacheConfig Collector",
+          "category": "feature",
+          "repository": "performance"
+        }
+      ],
+      "issue_number": 377
+    },
+    {
+      "name": "Security Analytics UI Updates",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 1100,
+          "name": "[Create detector] Update data source selection label and help text",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 1124,
+          "name": "Add threat alerts card for Analytics (All) workspace use case",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 1125,
+          "name": "Update url with data source id; redirect on reload if ds id not present; minor fixes",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 1147,
+          "name": "Fit and Finishes Changes for Security Analytics",
+          "category": "feature",
+          "repository": "security"
+        }
+      ],
+      "issue_number": 378
+    },
+    {
+      "name": "System Templates",
+      "repositories": [
+        "system"
+      ],
+      "items": [
+        {
+          "pr": 3,
+          "name": "Basic templates and addition of build steps",
+          "category": "feature",
+          "repository": "system"
+        },
+        {
+          "pr": 11,
+          "name": "Onboarding New templates and adding zstd support",
+          "category": "feature",
+          "repository": "system"
+        }
+      ],
+      "issue_number": 379
+    },
+    {
+      "name": "k-NN Lucene Vector Integration",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 1945,
+          "name": "Integrate Lucene Vector field with native engines to use KNNVectorFormat during segment creation",
+          "category": "feature",
+          "repository": "k-nn"
+        }
+      ],
+      "issue_number": 380
+    },
+    {
+      "name": "k-NN Query Rescore",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 1984,
+          "name": "k-NN query rescore support for native engines",
+          "category": "feature",
+          "repository": "k-nn"
+        }
+      ],
+      "issue_number": 381
+    },
+    {
+      "name": "k-NN Byte Vector Support",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 1823,
+          "name": "Add support for byte vector with Faiss Engine HNSW algorithm",
+          "category": "feature",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2002,
+          "name": "Add support for byte vector with Faiss Engine IVF algorithm",
+          "category": "feature",
+          "repository": "k-nn"
+        }
+      ],
+      "issue_number": 382
+    },
+    {
+      "name": "k-NN Disk-Based Vector Search",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 2034,
+          "name": "Add mode/compression configuration support for disk-based vector search",
+          "category": "feature",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "k-NN Space Type Configuration",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 2044,
+          "name": "Add spaceType as a top level optional parameter while creating vector field.",
+          "category": "feature",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "Flint Query Scheduler",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 2889,
+          "name": "Flint query scheduler part1 - integrate job scheduler plugin",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 2975,
+          "name": "Flint query scheduler part 2",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 2989,
+          "name": "Add feature flag for async query scheduler",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "Notifications Navigation",
+      "repositories": [
+        "notifications"
+      ],
+      "items": [
+        {
+          "pr": 234,
+          "name": "[Navigation]feat: change parent item name",
+          "category": "enhancement",
+          "repository": "notifications"
+        }
+      ]
+    },
+    {
+      "name": "Anomaly Detection Enhancements",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 1284,
+          "name": "Fix inference logic and standardize config index mapping",
+          "category": "enhancement",
+          "repository": "anomaly-detection"
+        }
+      ]
+    },
+    {
+      "name": "Common Infrastructure",
+      "repositories": [
+        "common"
+      ],
+      "items": [
+        {
+          "pr": 696,
+          "name": "Updated pull request template to include API spec change in checklist",
+          "category": "enhancement",
+          "repository": "common"
+        }
+      ]
+    },
+    {
+      "name": "Multi-Data Source Support",
+      "repositories": [
+        "reporting",
+        "notifications"
+      ],
+      "items": [
+        {
+          "pr": 411,
+          "name": "[Enhancement] De-register reporting when MDS is enabled",
+          "category": "enhancement",
+          "repository": "reporting"
+        },
+        {
+          "pr": 1121,
+          "name": "Add MDS support in Notifications page",
+          "category": "enhancement",
+          "repository": "notifications"
+        }
+      ]
+    },
+    {
+      "name": "Dashboards UI Updates",
+      "repositories": [
+        "dashboards"
+      ],
+      "items": [
+        {
+          "pr": 388,
+          "name": "Update snapshots for OUI 1.10.0",
+          "category": "enhancement",
+          "repository": "dashboards"
+        }
+      ]
+    },
+    {
+      "name": "Index Management UI Updates",
+      "repositories": [
+        "index-management"
+      ],
+      "items": [
+        {
+          "pr": 1106,
+          "name": "Reorder features and rename title and description in left nav bar",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1143,
+          "name": "Add Notification Modal in Indexes page",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1123,
+          "name": "Making Look and Feel Changes in ISM pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1132,
+          "name": "Incorporate feel and look good guide changes for snapshots pages, datastreams, rollups and notification settings",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1141,
+          "name": "Add MDS support in Shrink page and fixing couple of bugs",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1155,
+          "name": "Fit and finish changes for Aliases, Templates and Policy managed Indices pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1148,
+          "name": "Consistency and Density Changes for Snapshot Management",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1154,
+          "name": "Fit and Finish changes for Indexes and Transform pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1153,
+          "name": "Fit and Finish Changes for DataStreams and Rollups",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1150,
+          "name": "Fit and finish changes for ISM policy & Composable template pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1157,
+          "name": "Fit and Finish Changes for Snapshot Management Pages",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1164,
+          "name": "Update rollup jobs and transform jobs title with total numbers of jobs",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1166,
+          "name": "Fixed bugs in history navigation in rollups and transform jobs pages and some UI changes",
+          "category": "enhancement",
+          "repository": "index-management"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Memory Metadata",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2750,
+          "name": "Adding additional info for memory metadata",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Connector Enhancements",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2830,
+          "name": "Support skip\\_validating\\_missing\\_parameters in connector",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Inference Processor",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2801,
+          "name": "Support one\\_to\\_one in ML Inference Search Response Processor",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Config API",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2850,
+          "name": "Expose ML Config API",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons UI Updates",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 355,
+          "name": "Align font size and style with UX guideline",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Neural Search Rescore",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 885,
+          "name": "Adds rescore parameter support",
+          "category": "enhancement",
+          "repository": "neural-search"
+        }
+      ]
+    },
+    {
+      "name": "Observability Enhancements",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2016,
+          "name": "Update ndjson so workflow matches patterns created",
+          "category": "enhancement",
+          "repository": "observability"
+        },
+        {
+          "pr": 2044,
+          "name": "Remove useless registration method",
+          "category": "enhancement",
+          "repository": "observability"
+        },
+        {
+          "pr": 1861,
+          "name": "Add allow unsecure node versions to CI .env",
+          "category": "enhancement",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Trace Analytics",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2112,
+          "name": "Trace Analytics support for custom sources",
+          "category": "enhancement",
+          "repository": "observability"
+        },
+        {
+          "pr": 2125,
+          "name": "Update trace analytics landing page",
+          "category": "enhancement",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Query Assist",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2111,
+          "name": "[query assist] update api handler to accommodate new ml-commons config response",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2124,
+          "name": "[query assist] update ml-commons response schema",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Query Shape Generation",
+      "repositories": [
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 44,
+          "name": "Add ability to generate query shape for aggregation and sort portions of search body",
+          "category": "enhancement",
+          "repository": "query"
+        },
+        {
+          "pr": 66,
+          "name": "Query grouping framework for Top N queries and group by query similarity",
+          "category": "enhancement",
+          "repository": "query"
+        },
+        {
+          "pr": 73,
+          "name": "Minor enhancements to query categorization on tags and unit types",
+          "category": "enhancement",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Query Insights UI",
+      "repositories": [
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 370,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Security Auth Enhancements",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 4538,
+          "name": "Add `ignore_hosts` config option for auth failure listener",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 4666,
+          "name": "Allow multiple signing keys to be provided",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2076,
+          "name": "Add Proxy Auth to Multi Auth Options",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2072,
+          "name": "Use the `getRedirectUrl` from OSD to generate nextUrl",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Correlation Alerts",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 4689,
+          "name": "Added API roles for correlationAlerts",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 4704,
+          "name": "Permission changes for correlationAlerts",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Alerting Comments",
+      "repositories": [
+        "alerting",
+        "security",
+        "common"
+      ],
+      "items": [
+        {
+          "pr": 4700,
+          "name": "Adding alerting comments security actions to roles.yml",
+          "category": "enhancement",
+          "repository": "alerting"
+        },
+        {
+          "pr": 724,
+          "name": "Changed the names of security actions for Alerting Comments feature",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Analytics Detectors",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 1226,
+          "name": "Added triggers in getDetectors API response",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 1212,
+          "name": "Secure rest tests for threat intel monitor apis",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Dashboards UI",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 2083,
+          "name": "Adds page headers for updated UX",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2082,
+          "name": "Conditionally change where avatar shows up",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2079,
+          "name": "Use smaller and compressed varients of buttons and form components",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2101,
+          "name": "Consistency and density improvements",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "k-NN Iterative Graph Build",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 1950,
+          "name": "Adds iterative graph build capability into a faiss index to improve the memory footprint during indexing and Integrates KNNVectorsFormat for native engines",
+          "category": "enhancement",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "k-NN Model Metadata",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 2005,
+          "name": "Add model version to model metadata and change model metadata reads to be from cluster metadata",
+          "category": "enhancement",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Enhancements",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 2877,
+          "name": "Change the default value of plugins.query.size\\_limit to MAX\\_RESULT\\_WINDOW (10000)",
+          "category": "enhancement",
+          "repository": "sql"
+        },
+        {
+          "pr": 2896,
+          "name": "Support common format geo point",
+          "category": "enhancement",
+          "repository": "sql"
+        },
+        {
+          "pr": 2906,
+          "name": "Add TakeOrderedOperator",
+          "category": "enhancement",
+          "repository": "sql"
+        },
+        {
+          "pr": 2970,
+          "name": "IF function should support complex predicates in PPL",
+          "category": "enhancement",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "Security Lake Data Source",
+      "repositories": [
+        "security",
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 2978,
+          "name": "Add flags for Iceberg and Lake Formation and Security Lake as a data source type",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2977,
+          "name": "Adds validation to allow only flint queries and sql SELECT queries to security lake type datasource",
+          "category": "enhancement",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "Flint Index Operations",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 2995,
+          "name": "Delegate Flint index vacuum operation to Spark",
+          "category": "enhancement",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "Anomaly Detection Bugfixes",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 1287,
+          "name": "Prevent resetting the latest flag of real-time when starting historical analysis",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1292,
+          "name": "Correct handling of null max aggregation values in SearchResponse",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 828,
+          "name": "Fix an issue that causes dataSourceId to not show in the URL on Overview landing page",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 837,
+          "name": "Remove dataSourceFilter that breaks DataSourceView",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        }
+      ]
+    },
+    {
+      "name": "Alerting Bugfixes",
+      "repositories": [
+        "alerting"
+      ],
+      "items": [
+        {
+          "pr": 1623,
+          "name": "Fix monitor renew lock issue",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1637,
+          "name": "Fix distribution builds",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1640,
+          "name": "Fix distribution builds",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1027,
+          "name": "Fixed cypress tests.",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1028,
+          "name": "[Navigation] Fix: remove the workspaceAvailability field to make alert visible within workspace",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1040,
+          "name": "Fix failed UT of AddAlertingMonitor.test.js",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 671,
+          "name": "Issue Fix trigger name validation",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1073,
+          "name": "Fix alerts card in all-use case overview page",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1217,
+          "name": "Update build.gradle to use alerting-spi snapshot version",
+          "category": "bugfix",
+          "repository": "alerting"
+        }
+      ]
+    },
+    {
+      "name": "Common Utils Bugfixes",
+      "repositories": [
+        "common"
+      ],
+      "items": [
+        {
+          "pr": 710,
+          "name": "Added missing ctx variables",
+          "category": "bugfix",
+          "repository": "common"
+        }
+      ]
+    },
+    {
+      "name": "Cross-Cluster Replication Bugfixes",
+      "repositories": [
+        "cross-cluster-replication"
+      ],
+      "items": [
+        {
+          "pr": 1412,
+          "name": "Updating remote-migration IT with correct setting name",
+          "category": "bugfix",
+          "repository": "cross-cluster-replication"
+        }
+      ]
+    },
+    {
+      "name": "Notifications Bugfixes",
+      "repositories": [
+        "notifications"
+      ],
+      "items": [
+        {
+          "pr": 242,
+          "name": "Fix link checker",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 244,
+          "name": "Persist dataSourceId across applications under new Nav change",
+          "category": "bugfix",
+          "repository": "notifications"
+        }
+      ]
+    },
+    {
+      "name": "Reporting Bugfixes",
+      "repositories": [
+        "reporting"
+      ],
+      "items": [
+        {
+          "pr": 416,
+          "name": "[Bugfix] Update UI and handle new navigation",
+          "category": "bugfix",
+          "repository": "reporting"
+        },
+        {
+          "pr": 419,
+          "name": "[Bug] Remove unused import",
+          "category": "bugfix",
+          "repository": "reporting"
+        }
+      ]
+    },
+    {
+      "name": "Dashboards Bugfixes",
+      "repositories": [
+        "dashboards"
+      ],
+      "items": [
+        {
+          "pr": 426,
+          "name": "Fix sass division warning",
+          "category": "bugfix",
+          "repository": "dashboards"
+        }
+      ]
+    },
+    {
+      "name": "Index Management Bugfixes",
+      "repositories": [
+        "index-management"
+      ],
+      "items": [
+        {
+          "pr": 1219,
+          "name": "Skipping execution based on cluster service",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1113,
+          "name": "Fix for snapshot test race condition",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1222,
+          "name": "Use adminClient instead of client when interacting with system index in integTests",
+          "category": "bugfix",
+          "repository": "index-management"
+        }
+      ]
+    },
+    {
+      "name": "Job Scheduler Bugfixes",
+      "repositories": [
+        "job"
+      ],
+      "items": [
+        {
+          "pr": 658,
+          "name": "Fix system index compatibility with v1 templates .",
+          "category": "bugfix",
+          "repository": "job"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Bugfixes",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2806,
+          "name": "Fix delete local model twice quickly get 500 response issue",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2847,
+          "name": "Fix cohere model input interface cannot validate cohere input issue",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2852,
+          "name": "Add processed function for remote inference input dataset parameters to convert it back to its original datatype",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2853,
+          "name": "Use local_regex as default type for guardrails",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2858,
+          "name": "Agent execution error in json format",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2871,
+          "name": "Fix custom prompt substitute with List issue in ml inference search response processor",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2882,
+          "name": "Fix breaking changes in config index fields",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2892,
+          "name": "Output only old fields in get config API",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2898,
+          "name": "Fix http dependency in CancelBatchJobTransportAction",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 358,
+          "name": "Fix connector router response 500",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2815,
+          "name": "Applying spotless to common module",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2831,
+          "name": "Fix Cohere test",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 356,
+          "name": "Bump micromatch from 4.0.5 to 4.0.8",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Neural Search Hybrid Query",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 867,
+          "name": "Removing code to cut search results of hybrid search in the priority queue",
+          "category": "bugfix",
+          "repository": "neural-search"
+        },
+        {
+          "pr": 877,
+          "name": "Fixed merge logic in hybrid query for multiple shards case",
+          "category": "bugfix",
+          "repository": "neural-search"
+        }
+      ]
+    },
+    {
+      "name": "Trace Analytics Bugfixes",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2006,
+          "name": "[Bug] Trace Analytics bug fix for local cluster being rendered",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2017,
+          "name": "Fix docker links & index patterns names",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2023,
+          "name": "Traces and Spans tab Fix for application analytics",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2031,
+          "name": "Link fixes for csv",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2024,
+          "name": "Fix direct url load for trace analytics",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2037,
+          "name": "[Bug] Trace Analytics bugfix for breadcrumbs and id pathing",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2100,
+          "name": "[Bug] Fixed traces bug for missing MDS id",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2012,
+          "name": "Update getting-started links to match recent catalog PR merges",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 1966,
+          "name": "Bump org.json:json",
+          "category": "bugfix",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Observability Notebooks",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2110,
+          "name": "Fix badge size for counters, change notebook delete, update test",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2108,
+          "name": "[BUG] Fix add sample notebooks",
+          "category": "bugfix",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Query Insights Bugfixes",
+      "repositories": [
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 74,
+          "name": "Make sure listener is started when query metrics enabled",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 382,
+          "name": "Bug fix for missing id in old nav",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 58,
+          "name": "Fix CVE-2023-2976 for checkstyle",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 59,
+          "name": "Fix security based integration tests",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 64,
+          "name": "Add query shape hash method",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 71,
+          "name": "Add more integration tests for query insights",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 85,
+          "name": "Query grouping integration tests",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 89,
+          "name": "Add additional grouping ITs and refactor",
+          "category": "bugfix",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Reporting Enhancements",
+      "repositories": [
+        "reporting"
+      ],
+      "items": [
+        {
+          "pr": 1022,
+          "name": "Increase accuracy seconds while testing create on-demand report from definition",
+          "category": "bugfix",
+          "repository": "reporting"
+        }
+      ]
+    },
+    {
+      "name": "Security Plugin Bugfixes",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 4603,
+          "name": "Addresses a bug with `plugins.security.allow_unsafe_democertificates` setting",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4684,
+          "name": "Fix covereage-report workflow",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4664,
+          "name": "Handle the audit config being null",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4631,
+          "name": "Fixes authtoken endpoint",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4607,
+          "name": "Fixed READ_ACTIONS required by TermsAggregationEvaluator",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4640,
+          "name": "Sort the DNS Names in the SANs",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4610,
+          "name": "Backports PRs with `backport-failed` labels that weren't actually backported",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4694,
+          "name": "Interim build fix for PluginSubject related changes",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4653,
+          "name": "Remove usages of org.apache.logging.log4j.util.Strings",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4625,
+          "name": "Update backport section of PR template",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4611,
+          "name": "Refactor security provider instantiation",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Threat Intel",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 1207,
+          "name": "Adds user validation for threat intel transport layer classes and stashes the thread context for all system index interactions",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1213,
+          "name": "Fix mappings integ tests",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1223,
+          "name": "Bug fixes for threat intel",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1234,
+          "name": "make threat intel run with standard detectors",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1239,
+          "name": "Fixed searchString bug. Removed nested IOC mapping structure.",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1240,
+          "name": "Adds toggling refresh disable/enable for deactivate/activate operation while updating URL_DOWNLOAD type configs",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1254,
+          "name": "Make threat intel source config release lock event driven",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1257,
+          "name": "Fix S3 validation errors not caught by action listener",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1267,
+          "name": "Clean up empty IOC indices created by failed source configs",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1274,
+          "name": "Fix threat intel multinode tests",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1272,
+          "name": "Update threat intel job mapping to new version",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1278,
+          "name": "Stash context for List IOCs Api",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Analytics UI Bugfixes",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 1093,
+          "name": "[Navigation] Update nav category and workspaceAvailability",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1107,
+          "name": "Fix UI issues",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1123,
+          "name": "Bug fixes PageHeader and SideNav",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1132,
+          "name": "Added check for multi data source support when rendering threat alerts card in all use case workspace",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1136,
+          "name": "Made import more specific to avoid importing incorrect modules",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1144,
+          "name": "Remove import causing error",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1149,
+          "name": "Passthrough URL state and other params when updating search query",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Dashboards Bugfixes",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 2057,
+          "name": "Do not register tenancy app if disabled in yml",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 2108,
+          "name": "Ux fixes for page header",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 2096,
+          "name": "Fix a bug where basepath nextUrl is invalid when it should be valid",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 2084,
+          "name": "Feat: update title and descriptions",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "k-NN Bugfixes",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 1874,
+          "name": "Corrected search logic for scenario with non-existent fields in filter",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 1917,
+          "name": "Add script_fields context to KNNAllowlist",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 1844,
+          "name": "Fix graph merge stats size calculation",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 1936,
+          "name": "Disallow a vector field to have an invalid character for a physical file name.",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2015,
+          "name": "Fix memory overflow caused by cache behavior",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2086,
+          "name": "Use correct type for binary vector in ivf training",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2090,
+          "name": "Switch MINGW32 to MINGW64",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2006,
+          "name": "Parallelize make to reduce build time",
+          "category": "bugfix",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Bugfixes",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 2884,
+          "name": "Restrict UDF functions",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 2890,
+          "name": "Update SqlBaseParser",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 2842,
+          "name": "Boolean function in PPL should be case insensitive",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 2972,
+          "name": "Fix SparkExecutionEngineConfigClusterSetting deserialize issue",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 2982,
+          "name": "Fix jobType for Batch and IndexDML query",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 2983,
+          "name": "Fix handler for existing query",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 2996,
+          "name": "Fix :integ-test:sqlBwcCluster#fullRestartClusterTask",
+          "category": "bugfix",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "CVE Fixes",
+      "repositories": [
+        "anomaly-detection",
+        "alerting",
+        "security",
+        "observability",
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 864,
+          "name": "Address CVE-2024-4067",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1024,
+          "name": "[CVE-2024-4068] Pinned package version for braces",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1074,
+          "name": "[CVE-2024-4067] Fix CVE-2024-4067.",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 269,
+          "name": "Bump `micromatch` to 4.0.8",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 2138,
+          "name": "[CVE] Bump the lint-staged from 13.1.0 to 15.2.10",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 396,
+          "name": "[CVE] Bump the lint-staged from 13.1.0 to 15.2.10",
+          "category": "bugfix",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Neural Search Bugfixes",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 852,
+          "name": "Update batch related tests to use batch_size in processor & refactor BWC version check",
+          "category": "bugfix",
+          "repository": "neural-search"
+        }
+      ]
+    },
+    {
+      "name": "Performance Analyzer Bugfixes",
+      "repositories": [
+        "performance"
+      ],
+      "items": [
+        {
+          "pr": 712,
+          "name": "Bump PA to use 1.6.0 PA commons lib",
+          "category": "bugfix",
+          "repository": "performance"
+        }
+      ]
+    },
+    {
+      "name": "Query Insights Infrastructure",
+      "repositories": [
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 51,
+          "name": "Add code hygiene checks for query insights",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 90,
+          "name": "Add configuration for publishing snapshot",
+          "category": "bugfix",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Maps Plugin Bugfixes",
+      "repositories": [
+        "dashboards"
+      ],
+      "items": [
+        {
+          "pr": 664,
+          "name": "Use functional test repo to run maps integration test workflow",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 651,
+          "name": "Deprecated maps multi data source display",
+          "category": "bugfix",
+          "repository": "dashboards"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Test Fixes",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 2407,
+          "name": "Test: recover search index tool it in multi node cluster",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2695,
+          "name": "Add tutorial for Bedrock Guardrails",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Release Notes and Version Updates",
+      "repositories": [
+        "alerting",
+        "common",
+        "notifications",
+        "query",
+        "security",
+        "sql",
+        "anomaly-detection",
+        "asynchronous-search",
+        "dashboards",
+        "index-management",
+        "job",
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 1650,
+          "name": "Added 2.17 release notes.",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1065,
+          "name": "Added 2.17 release notes.",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 727,
+          "name": "Added 2.17.0.0 release notes",
+          "category": "bugfix",
+          "repository": "common"
+        },
+        {
+          "pr": 248,
+          "name": "2.17 release notes.",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 947,
+          "name": "Add 2.17.0 release notes",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 91,
+          "name": "Added 2.17 release notes",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 1290,
+          "name": "Added 2.17.0 release notes.",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1141,
+          "name": "Added v2.17 release notes.",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1635,
+          "name": "Increment version to 2.17.0-SNAPSHOT.",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1054,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 844,
+          "name": "Update 2.x to 2.17.0",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 602,
+          "name": "Increment version to 2.17.0",
+          "category": "bugfix",
+          "repository": "asynchronous-search"
+        },
+        {
+          "pr": 237,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 425,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 2892,
+          "name": "Increment version to 2.17.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 386,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 392,
+          "name": "Adding release notes for 2.17.0",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 1221,
+          "name": "Increment version to 2.17.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1127,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 660,
+          "name": "Increment version to 2.17.0 .",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 353,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 939,
+          "name": "Increment version to 2.17.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 376,
+          "name": "Increment version to 2.17.0.0",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 388,
+          "name": "Add release notes for 2.17.0",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 4615,
+          "name": "Increment version to 2.17.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Documentation Updates",
+      "repositories": [
+        "dashboards",
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 420,
+          "name": "Update Links in Documentation",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 8139,
+          "name": "Update GET top N api documentation about the type parameter",
+          "category": "bugfix",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Maintainer Updates",
+      "repositories": [
+        "dashboards",
+        "notifications",
+        "index-management",
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 437,
+          "name": "Adding sumukhswamy as maintainer",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 241,
+          "name": "[Backport 2.x] add riysaxen as maintainer",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 1233,
+          "name": "Move non-active maintainers to emeritus",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 4673,
+          "name": "Add Nils Bandener (Github: nibix) as a maintainer",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "CI/Infrastructure Fixes",
+      "repositories": [
+        "security",
+        "common",
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 1632,
+          "name": "Disabled non-security tests from executing during security-enabled CI workflows.",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 703,
+          "name": "Fixed Common-Utils CIs:",
+          "category": "bugfix",
+          "repository": "common"
+        },
+        {
+          "pr": 2046,
+          "name": "Fix Observability CI workflow checks",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2133,
+          "name": "Update the actions/upload-artifact from v1 to v4",
+          "category": "bugfix",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Dependency Bumps",
+      "repositories": [
+        "job",
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 653,
+          "name": "Dependabot: bump org.gradle.test-retry from 1.5.9 to 1.5.10 .",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 663,
+          "name": "Dependabot: bump com.google.googlejavaformat:google-java-format .",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 666,
+          "name": "Dependabot: bump org.slf4j:slf4j-api from 2.0.13 to 2.0.16 .",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 668,
+          "name": "Dependabot: bump com.netflix.nebula.ospackage from 11.9.1 to 11.10.0 .",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 4696,
+          "name": "Bump com.google.errorprone:error_prone_annotations from 2.30.0 to 2.31.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4682,
+          "name": "Bump org.passay:passay from 1.6.4 to 1.6.5",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4661,
+          "name": "Bump spring_version from 5.3.37 to 5.3.39",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4659,
+          "name": "Bump commons-cli:commons-cli from 1.8.0 to 1.9.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4657,
+          "name": "Bump org.junit.jupiter:junit-jupiter from 5.10.3 to 5.11.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4656,
+          "name": "Bump org.cryptacular:cryptacular from 1.2.6 to 1.2.7",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4646,
+          "name": "Update Gradle to 8.10",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4639,
+          "name": "Bump org.xerial.snappy:snappy-java from 1.1.10.5 to 1.1.10.6",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4622,
+          "name": "Bump com.google.googlejavaformat:google-java-format from 1.22.0 to 1.23.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4660,
+          "name": "Bump io.dropwizard.metrics:metrics-core from 4.2.26 to 4.2.27",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4681,
+          "name": "Bump com.netflix.nebula.ospackage from 11.9.1 to 11.10.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4623,
+          "name": "Bump org.checkerframework:checker-qual from 3.45.0 to 3.46.0",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    }
+  ],
+  "processed_offset": 538
+}
