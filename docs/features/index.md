@@ -206,6 +206,7 @@
 
 ## security-analytics
 
+- [Security Analytics Detectors](security-analytics/security-analytics-detectors.md)
 - [Threat Intelligence](security-analytics/threat-intelligence.md)
 
 ## security-analytics-dashboards
