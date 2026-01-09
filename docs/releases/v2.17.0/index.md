@@ -18,6 +18,7 @@
 
 ### dashboards-observability
 - [Observability Notebooks Bugfixes](features/dashboards-observability/observability-notebooks.md)
+- [Trace Analytics Custom Source](features/dashboards-observability/trace-analytics.md)
 - [Trace Analytics Bugfixes](features/observability/trace-analytics-bugfixes.md)
 
 ### dashboards-query-workbench
