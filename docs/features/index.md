@@ -58,6 +58,10 @@
 - [Security Configuration](security/security-configuration.md)
 - [Security Plugin](security/security-plugin.md)
 
+## security-dashboards
+
+- [Security Dashboards Plugin](security-dashboards/security-dashboards-plugin.md)
+
 ## reporting
 
 - [AUTO Version Management](reporting/auto-version-management.md)
