@@ -205,6 +205,10 @@
 
 - [Index Management](index-management/index-management.md)
 
+## index-management-dashboards
+
+- [Index Management Dashboards](index-management-dashboards/index-management-dashboards.md)
+
 ## common-utils
 
 - [Alerting Context Variables](common-utils/alerting-context-variables.md)

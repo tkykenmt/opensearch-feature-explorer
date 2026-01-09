@@ -35,6 +35,9 @@
 ### index-management
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md)
 
+### index-management-dashboards
+- [Index Management UI Updates](features/index-management-dashboards/index-management-ui-updates.md)
+
 ### job-scheduler
 - [Dependency Bumps](features/job-scheduler/dependency-bumps.md)
 - [Job Scheduler Bugfixes](features/job-scheduler/job-scheduler-bugfixes.md)
