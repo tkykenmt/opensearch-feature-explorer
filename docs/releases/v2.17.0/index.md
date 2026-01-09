@@ -19,6 +19,9 @@
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
 
+### security-analytics
+- [Threat Intel Bugfixes](features/security-analytics/threat-intel-bugfixes.md)
+
 ### security-analytics-dashboards
 - [Security Analytics UI Bugfixes](features/security-analytics-dashboards/security-analytics-ui-bugfixes.md)
 
