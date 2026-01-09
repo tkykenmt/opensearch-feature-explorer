@@ -38,6 +38,7 @@
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
+- [Streaming Indexing](opensearch/streaming-indexing.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
 - [Task Management](opensearch/task-management.md)
 - [Test Fixes](opensearch/test-fixes.md)
