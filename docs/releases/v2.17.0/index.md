@@ -100,6 +100,7 @@
 
 ### performance-analyzer
 - [Performance Analyzer Bugfixes](features/performance-analyzer/performance-analyzer-bugfixes.md)
+- [Performance Analyzer Cache Config](features/performance-analyzer/performance-analyzer-cache-config.md)
 
 ### query-insights
 - [Query Insights Bugfixes](features/query-insights/query-insights-bugfixes.md)
