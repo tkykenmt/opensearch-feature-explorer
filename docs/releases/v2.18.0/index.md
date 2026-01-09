@@ -18,3 +18,4 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Sample Data Bugfixes](features/opensearch-dashboards/sample-data-bugfixes.md) - Update OTEL sample data description with compatible OS version
 - [TSVB Visualization](features/opensearch-dashboards/tsvb-visualization-bugfixes.md) - Hidden axis option, per-axis scale setting, compressed input fields
 - [UI/UX Bugfixes (2)](features/opensearch-dashboards/ui-ux-bugfixes-2.md) - Responsive design fixes for home page, page header, recent menu, and getting started cards
+- [Workspace Bugfixes](features/opensearch-dashboards/workspace-bugfixes.md) - 13 bug fixes for workspace UI/UX, page crashes, permissions, and navigation
