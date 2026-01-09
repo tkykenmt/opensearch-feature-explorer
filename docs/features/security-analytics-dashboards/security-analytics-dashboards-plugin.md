@@ -91,6 +91,10 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.17.0 | [#1100](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1100) | Update data source selection label and help text |
+| v2.17.0 | [#1124](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1124) | Add threat alerts card for Analytics (All) workspace |
+| v2.17.0 | [#1125](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1125) | Update URL with data source ID; redirect on reload |
+| v2.17.0 | [#1147](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1147) | Fit and Finishes Changes for Security Analytics |
 | v2.17.0 | [#1093](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1093) | Navigation category and workspace availability fix |
 | v2.17.0 | [#1107](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1107) | UI fixes for correlation graph, pagination, filtering |
 | v2.17.0 | [#1123](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1123) | PageHeader and SideNav bug fixes |
@@ -109,4 +113,5 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 ## Change History
 
+- **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
 - **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements
