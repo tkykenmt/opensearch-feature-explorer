@@ -114,6 +114,7 @@
 ### k-nn
 - [Disk-Based Vector Search](features/k-nn/disk-based-vector-search.md)
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
+- [k-NN Byte Vector Support](features/k-nn/k-nn-byte-vector-support.md)
 - [k-NN Iterative Graph Build](features/k-nn/k-nn-iterative-graph-build.md)
 - [k-NN Model Metadata](features/k-nn/k-nn-model-metadata.md)
 - [k-NN Space Type Configuration](features/k-nn/k-nn-space-type-configuration.md)
