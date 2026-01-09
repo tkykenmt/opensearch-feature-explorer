@@ -51,6 +51,7 @@
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards Frontend Cleanup](opensearch-dashboards/dashboards-frontend-cleanup.md)
+- [Dashboards Improvements](opensearch-dashboards/dashboards-improvements.md)
 - [Dashboards Maintenance](opensearch-dashboards/dashboards-maintenance.md)
 - [Dashboards UI Updates (OUI)](opensearch-dashboards/dashboards-ui-updates.md)
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
