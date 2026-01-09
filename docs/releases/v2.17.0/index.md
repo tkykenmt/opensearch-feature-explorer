@@ -106,6 +106,7 @@
 
 ### sql
 - [Flint Index Operations](features/sql/flint-index-operations.md)
+- [Flint Query Scheduler](features/sql/flint-query-scheduler.md)
 - [Security Lake Data Source](features/sql/security-lake-data-source.md)
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
 - [SQL/PPL Enhancements](features/sql/sql-ppl-enhancements.md)

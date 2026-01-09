@@ -99,6 +99,7 @@
 
 - [Calcite Query Engine](sql/calcite-query-engine.md)
 - [Flint Index Operations](sql/flint-index-operations.md)
+- [Flint Query Scheduler](sql/flint-query-scheduler.md)
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL/PPL Engine](sql/sql-ppl-engine.md)
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
