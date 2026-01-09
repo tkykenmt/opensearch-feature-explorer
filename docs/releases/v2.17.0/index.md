@@ -81,6 +81,7 @@
 
 ### k-nn
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
+- [k-NN Iterative Graph Build](features/k-nn/k-nn-iterative-graph-build.md)
 - [k-NN Model Metadata](features/k-nn/k-nn-model-metadata.md)
 
 ### cross-cluster-replication
