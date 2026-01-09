@@ -114,6 +114,14 @@ graph TB
 | v3.0.0 | [#9484](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9484) | Replace @elastic/filesaver |
 | v3.0.0 | [#9488](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9488) | Replace formatNumWithCommas |
 | v3.0.0 | [#9057](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9057) | Update data source details buttons |
+| v2.18.0 | [#8216](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8216) | Add tooltips for sidebar icon buttons |
+| v2.18.0 | [#8217](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8217) | Fix initial page UI issues |
+| v2.18.0 | [#8218](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8218) | Remove nav group for dev tools |
+| v2.18.0 | [#8223](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8223) | Fix overlay offsets on pages with feature header |
+| v2.18.0 | [#8232](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8232) | Use @osd/std to prettify objects for display |
+| v2.18.0 | [#8274](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8274) | Temporary fix for Chrome 129 mask-image bug |
+| v2.18.0 | [#8320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8320) | Update OSD to respect new OUI breakpoints |
+| v2.18.0 | [#8335](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8335) | Fix HeaderControl not rendered if not mount in initial rendering |
 | v2.18.0 | [#8529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8529) | Update the title of header recent menu |
 | v2.18.0 | [#8554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8554) | Fix new home page small screen display issues |
 | v2.18.0 | [#8600](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8600) | Fix padding and responsive behavior of page header |
@@ -121,12 +129,16 @@ graph TB
 
 ## References
 
+- [Issue #8211](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8211): Pretty string display issue
+- [Issue #8250](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8250): Chrome 129 mask-image rendering
+- [Issue #8313](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8313): HeaderControl rendering issue
 - [Issue #9474](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9474): Dataset selector flashing
 - [Issue #9673](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9673): Essential property copy
 - [Issue #9679](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9679): Query params signer error
 - [Issue #9341](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9341): Remove @elastic/filesaver
+- [OUI PR #1414](https://github.com/opensearch-project/oui/pull/1414): Chrome 129 fix in OUI
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Initial collection of UI/UX fixes including navigation, query editor, data source, and Discover improvements
-- **v2.18.0** (2024-11-05): Responsive design fixes for home page, page header, recent menu, and getting started cards
+- **v2.18.0** (2024-11-05): Sidebar tooltips, initial page fixes, dev tools nav group removal, overlay positioning, Chrome 129 workaround, OUI breakpoints, HeaderControl rendering, responsive design fixes
