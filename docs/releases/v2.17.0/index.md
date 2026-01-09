@@ -17,6 +17,9 @@
 ### documentation-website
 - [Top N API Documentation Update](features/documentation-website/top-n-api-documentation.md)
 
+### index-management
+- [Index Management Bugfixes](features/index-management/index-management-bugfixes.md)
+
 ### job-scheduler
 - [Dependency Bumps](features/job-scheduler/dependency-bumps.md)
 - [Job Scheduler Bugfixes](features/job-scheduler/job-scheduler-bugfixes.md)
