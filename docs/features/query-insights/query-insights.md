@@ -185,6 +185,7 @@ GET /_insights/live_queries?sort=latency&size=5
 | v3.0.0 | [#300](https://github.com/opensearch-project/query-insights/pull/300) | Top queries API verbose param |
 | v3.0.0 | [#298](https://github.com/opensearch-project/query-insights/pull/298) | Skip profile queries |
 | v3.0.0 | [#266](https://github.com/opensearch-project/query-insights/pull/266) | Strict hash check on top queries indices |
+| v2.17.0 | [#8139](https://github.com/opensearch-project/documentation-website/pull/8139) | Update GET top N api documentation |
 | v2.12.0 | - | Initial release with Top N queries |
 
 ## References
@@ -199,4 +200,5 @@ GET /_insights/live_queries?sort=latency&size=5
 ## Change History
 
 - **v3.0.0**: Added Live Queries API, default index template, verbose parameter, profile query filtering, strict hash check
+- **v2.17.0**: Improved Top N API documentation with clearer explanations of type parameter and troubleshooting guidance
 - **v2.12.0**: Initial release with Top N queries feature
