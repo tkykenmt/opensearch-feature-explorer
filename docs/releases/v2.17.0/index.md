@@ -10,6 +10,9 @@
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
 
+### multi-plugin
+- [CI/Infrastructure Fixes](features/multi-plugin/ci-infrastructure-fixes.md)
+
 ## Key Features in This Release
 
 ### Generally Available
