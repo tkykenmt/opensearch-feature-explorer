@@ -178,3 +178,7 @@
 ## skills
 
 - [Skills / Tools Bugfixes and Enhancements](features/skills/skills-tools-bugfixes.md)
+
+## security-analytics
+
+- [Threat Intelligence Custom Format Support](features/security-analytics/threat-intelligence-custom-format.md)

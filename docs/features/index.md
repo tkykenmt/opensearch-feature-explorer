@@ -163,3 +163,7 @@
 ## skills
 
 - [Skills / Tools](skills/skills-tools.md)
+
+## security-analytics
+
+- [Threat Intelligence](security-analytics/threat-intelligence.md)
