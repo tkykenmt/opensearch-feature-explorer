@@ -54,6 +54,7 @@
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Data Connections](opensearch-dashboards/data-connections.md)
 - [Data Importer](opensearch-dashboards/data-importer.md)
+- [Data Source Permissions](opensearch-dashboards/data-source-permissions.md)
 - [Dependency Updates](opensearch-dashboards/dependency-updates.md)
 - [Discover](opensearch-dashboards/discover.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
