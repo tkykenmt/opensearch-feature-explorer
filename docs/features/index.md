@@ -32,6 +32,7 @@
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
+- [Star Tree Index](opensearch/star-tree-index.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
 - [Thread Context Permissions](opensearch/thread-context-permissions.md)
 - [Tiered Caching](opensearch/tiered-caching.md)
