@@ -4667,7 +4667,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 697
     }
   ],
   "processed_offset": 561
