@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch Dashboards
 
+- [Navigation Updates](features/opensearch-dashboards/navigation-updates.md) - Flattened navigation, persistent state, small screen support, border style updates
 - [Content Management](features/opensearch-dashboards/content-management.md) - Add Page API to allow remove section
 - [Discover](features/opensearch-dashboards/discover.md) - Data summary panel, updated appearance, cache management, and bug fixes
 - [CI/CD & Build Improvements](features/opensearch-dashboards/cicd-build-dashboards.md) - Switch OSD Optimizer to content-based hashing for CI compatibility
