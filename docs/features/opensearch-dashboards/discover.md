@@ -2,7 +2,7 @@
 
 ## Summary
 
-Discover is the data exploration application in OpenSearch Dashboards that allows users to interactively search, filter, and analyze data stored in OpenSearch indexes. It provides a powerful interface for ad-hoc data exploration with support for multiple query languages (DQL, Lucene, SQL, PPL), time-based filtering, field selection, and document inspection.
+Discover is the data exploration application in OpenSearch Dashboards that allows users to interactively search, filter, and analyze data stored in OpenSearch indexes. It provides a powerful interface for ad-hoc data exploration with support for multiple query languages (DQL, Lucene, SQL, PPL), time-based filtering, field selection, document inspection, and AI-powered data summarization.
 
 ## Details
 
@@ -13,32 +13,47 @@ graph TB
     subgraph "OpenSearch Dashboards"
         subgraph "Discover Application"
             QE[Query Editor]
+            QA[Query Assist]
+            SP[Summary Panel]
             TF[Time Filter]
             FS[Field Selector]
             DT[Document Table]
             SQ[Saved Queries]
+            DS[Dataset Selector]
         end
         subgraph "Data Services"
             QS[Query Service]
             SS[Search Service]
             IP[Index Patterns]
             FM[Filter Manager]
+            QEC[Query Editor Extensions]
+        end
+        subgraph "Query Enhancements Plugin"
+            SAP[Summary API]
+            MLA[ML Agent Integration]
         end
     end
     subgraph "OpenSearch"
         IDX[Indexes]
         S3[S3 Data Sources]
+        ML[ML Commons]
     end
     
     QE --> QS
+    QA --> SP
+    SP --> SAP
+    SAP --> MLA
+    MLA --> ML
     TF --> FM
     FS --> IP
     DT --> SS
     SQ --> QS
+    DS --> IP
     QS --> IDX
     SS --> IDX
     IP --> IDX
     IP --> S3
+    QEC --> QA
 ```
 
 ### Data Flow
@@ -56,7 +71,11 @@ flowchart TB
     G --> H[OpenSearch]
     H --> I[Results]
     I --> J[Document Table]
-    J --> K[Field Selector filters columns]
+    I --> K{Query Assist Enabled?}
+    K -->|Yes| L[Summary Panel]
+    L --> M[ML Agent]
+    M --> N[LLM Summary]
+    J --> O[Field Selector filters columns]
 ```
 
 ### Components
@@ -64,11 +83,13 @@ flowchart TB
 | Component | Description |
 |-----------|-------------|
 | Query Editor | Input area for search queries with language selection |
+| Query Assist | AI-powered query assistance with natural language input |
+| Summary Panel | Displays LLM-generated summaries of query results |
 | Time Filter | Controls time range for time-based indexes |
 | Field Selector | Sidebar for selecting and filtering visible fields |
 | Document Table | Displays search results with expandable documents |
 | Saved Queries | Stores and loads frequently used queries |
-| Index Pattern Selector | Selects data source for exploration |
+| Dataset Selector | Selects data source with cache management |
 
 ### Configuration
 
@@ -78,12 +99,16 @@ flowchart TB
 | `discover:sort:defaultOrder` | Default sort order for time-based indexes | desc |
 | `discover:sampleSize` | Number of documents to show | 500 |
 | `query:enhancements:enabled` | Enable query enhancements (SQL/PPL support) | Off |
+| `queryEnhancements.queryAssist.summary.enabled` | Enable AI data summary panel | false |
 
 ### Usage Example
 
 ```
 # DQL Query Example
 status:error AND response.code >= 500
+
+# PPL Query Example (with query enhancements enabled)
+source=logs | where status = 'error' | stats count() by host
 
 # Time Filter
 Last 15 minutes, Last 24 hours, Custom range
@@ -92,16 +117,37 @@ Last 15 minutes, Last 24 hours, Custom range
 Select fields from sidebar to customize table columns
 ```
 
+### Data Summary Setup
+
+To enable AI-powered data summaries:
+
+```yaml
+# opensearch_dashboards.yml
+queryEnhancements.queryAssist.summary.enabled: true
+```
+
+Requires ML agent configuration:
+1. Create a data summary agent with LLM connector
+2. Register the agent as root agent for `os_data2summary`
+3. Use PPL queries in Discover to see generated summaries
+
 ## Limitations
 
-- Time field display may have rendering issues when switching query languages (workaround applied in v2.18.0)
+- Data summary requires ML agent configuration with LLM connector
+- Summary feature only works with PPL queries when query assist is enabled
 - S3 field support requires query enhancements to be enabled
-- Recently selected data list may show stale entries after index pattern deletion (fixed in v2.18.0)
+- Cache refresh clears all dataset caches, not individual ones
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#8186](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8186) | Add data summary panel in discover |
+| v2.18.0 | [#8214](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8214) | Add cache time and refresh button to dataset selector |
+| v2.18.0 | [#8651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8651) | Update the appearance of Discover |
+| v2.18.0 | [#8352](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8352) | Add discover summary error info and button click logic |
+| v2.18.0 | [#8060](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8060) | Fix row rendering in Discover infinite scroll |
+| v2.18.0 | [#8082](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8082) | Fix infinite loop cause discover hang |
 | v2.18.0 | [#8609](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8609) | Add support for S3 fields in Discover |
 | v2.18.0 | [#8659](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8659) | Fix UI stuck on searching after deleting index pattern |
 | v2.18.0 | [#8755](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8755) | Fix time field wrapping overlap on language change |
@@ -110,8 +156,11 @@ Select fields from sidebar to customize table columns
 ## References
 
 - [Analyzing data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official documentation
+- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/): AI summary feature docs
+- [Issue #8177](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8177): Feature request for LLM data summary
+- [Issue #7626](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7626): Discover hang bug report
 - [Issue #8612](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8612): Bug report for deleted index pattern issue
 
 ## Change History
 
-- **v2.18.0** (2024-11-05): Bug fixes for S3 fields support, deleted index pattern handling, time field display, and saved query loading
+- **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
