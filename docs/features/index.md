@@ -16,6 +16,7 @@
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [Cluster Permissions](opensearch/cluster-permissions.md)
 - [gRPC Transport & Services](opensearch/grpc-transport--services.md)
+- [Index Settings](opensearch/index-settings.md)
 - [Mapping Transformer](opensearch/mapping-transformer.md)
 - [Cluster Manager Task Throttling](opensearch/cluster-manager-throttling.md)
 - [Dependency Management](opensearch/dependency-management.md)
