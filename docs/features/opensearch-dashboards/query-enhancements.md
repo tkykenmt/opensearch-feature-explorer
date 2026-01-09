@@ -117,6 +117,10 @@ source = logs-* | where status >= 400 | head 100
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#8245](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8245) | Expose method to register search strategy routes |
+| v2.18.0 | [#8252](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8252) | Fix running recent query button |
+| v2.18.0 | [#8299](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8299) | Expose datasets and data_frames directories for imports |
+| v2.18.0 | [#8322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8322) | Add keyboard shortcut for running queries |
 | v2.18.0 | [#8555](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8555) | Refactored polling logic to poll for results once current request completes |
 | v2.18.0 | [#8650](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8650) | Fix random big number when loading in query result |
 | v2.18.0 | [#8724](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8724) | Polling for PPL results; Saved dataset to saved queries |
@@ -131,4 +135,4 @@ source = logs-* | where status >= 400 | head 100
 
 ## Change History
 
-- **v2.18.0** (2024-11-05): Bug fixes for async polling, error handling, language compatibility, and saved query persistence
+- **v2.18.0** (2024-11-05): Bug fixes for async polling, error handling, language compatibility, saved query persistence; Added extensibility for custom search strategies via `defineSearchStrategyRoute`; Added keyboard shortcut (Cmd/Ctrl+Enter) for query execution; Exposed datasets and data_frames modules for external plugin imports
