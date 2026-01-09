@@ -44,6 +44,7 @@
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
+- [Search Request Stats](opensearch/search-request-stats.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
 - [Streaming Indexing](opensearch/streaming-indexing.md)
