@@ -211,6 +211,10 @@
 
 - [Index Management Dashboards](index-management-dashboards/index-management-dashboards.md)
 
+## common
+
+- [PR Template API Specification Checkbox](common/pr-template-api-spec.md)
+
 ## common-utils
 
 - [Alerting Context Variables](common-utils/alerting-context-variables.md)

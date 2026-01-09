@@ -10,6 +10,9 @@
 ### anomaly-detection
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
 
+### common
+- [Common Infrastructure](features/common/common-infrastructure.md)
+
 ### dashboards-maps
 - [Maps Plugin Bugfixes](features/dashboards-maps/maps-plugin-bugfixes.md)
 
