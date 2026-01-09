@@ -56,6 +56,7 @@
 - [Dependency Updates](opensearch-dashboards/dependency-updates.md)
 - [Discover](opensearch-dashboards/discover.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
+- [i18n & Localization](opensearch-dashboards/i18n-localization.md)
 - [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
