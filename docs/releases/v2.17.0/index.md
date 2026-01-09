@@ -17,6 +17,7 @@
 - [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md)
 
 ### dashboards-observability
+- [Observability Enhancements](features/dashboards-observability/observability-enhancements.md)
 - [Observability Notebooks Bugfixes](features/dashboards-observability/observability-notebooks.md)
 - [Trace Analytics Custom Source](features/dashboards-observability/trace-analytics.md)
 - [Trace Analytics Bugfixes](features/observability/trace-analytics-bugfixes.md)
