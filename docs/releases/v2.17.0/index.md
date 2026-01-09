@@ -4,6 +4,12 @@
 
 ## Feature Reports
 
+### dashboards-search-relevance
+- [Documentation Link Updates](features/dashboards-search-relevance/documentation-link-updates.md)
+
+### documentation-website
+- [Top N API Documentation Update](features/documentation-website/top-n-api-documentation.md)
+
 ### job-scheduler
 - [Dependency Bumps](features/job-scheduler/dependency-bumps.md)
 

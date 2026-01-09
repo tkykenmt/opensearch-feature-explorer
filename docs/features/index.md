@@ -67,6 +67,10 @@
 
 - [OpenSearch Dashboards Reporting](dashboards-reporting/dashboards-reporting.md)
 
+## dashboards-search-relevance
+
+- [Documentation Maintenance](dashboards-search-relevance/documentation-maintenance.md)
+
 ## dashboards-flow-framework
 
 - [AI Search Flows](dashboards-flow-framework/ai-search-flows.md)
