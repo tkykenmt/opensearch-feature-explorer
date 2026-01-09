@@ -123,6 +123,7 @@
 - [Dependency Bumps](multi-plugin/dependency-bumps.md)
 - [Header Redesign](multi-plugin/header-redesign.md)
 - [JDK 21 & Java Agent Migration](multi-plugin/jdk-21-java-agent-migration.md)
+- [Look & Feel UI Improvements](multi-plugin/look-and-feel-ui-improvements.md)
 - [Maintainer Updates](multi-plugin/maintainer-updates.md)
 - [Multi-Data Source Support](multi-plugin/multi-data-source-support.md)
 - [Version Bumps & Release Notes](multi-plugin/version-bumps-release-notes.md)
