@@ -42,6 +42,9 @@
 ### sql
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
 
+### k-nn
+- [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
+
 ## Key Features in This Release
 
 ### Generally Available
