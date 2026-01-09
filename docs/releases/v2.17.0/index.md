@@ -49,6 +49,9 @@
 ### query-insights
 - [Query Insights Infrastructure](features/query-insights/query-insights-infrastructure.md)
 
+### reporting
+- [Reporting Enhancements](features/reporting/reporting-enhancements.md)
+
 ### sql
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
 

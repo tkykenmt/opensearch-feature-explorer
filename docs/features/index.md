@@ -66,6 +66,7 @@
 
 - [AUTO Version Management](reporting/auto-version-management.md)
 - [CI/CD Workflow](reporting/ci-workflow.md)
+- [Integration Test Stability](reporting/integration-test-stability.md)
 - [Java Agent Migration](reporting/java-agent-migration.md)
 
 ## dashboards-reporting
