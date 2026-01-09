@@ -79,6 +79,7 @@
 - [CVE Fixes](features/dashboards-plugins/cve-fixes.md)
 
 ### ml-commons
+- [Batch Ingestion](features/ml-commons/batch-ingestion.md)
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md)
 - [ML Commons Connector Enhancements](features/ml-commons/ml-commons-connector-enhancements.md)
 - [ML Commons Memory Metadata](features/ml-commons/ml-commons-memory-metadata.md)
