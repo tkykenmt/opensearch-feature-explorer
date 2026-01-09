@@ -159,3 +159,7 @@
 ## query-insights
 
 - [Query Insights](query-insights/query-insights.md)
+
+## skills
+
+- [Skills / Tools](skills/skills-tools.md)

@@ -174,3 +174,7 @@
 ## query-insights
 
 - [Query Insights](features/query-insights/query-insights.md)
+
+## skills
+
+- [Skills / Tools Bugfixes and Enhancements](features/skills/skills-tools-bugfixes.md)
