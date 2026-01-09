@@ -21,6 +21,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Task Management](features/opensearch/task-management.md) - Fix missing fields in task index mapping for proper task result storage
 - [Test Fixes](features/opensearch/test-fixes.md) - Fix flaky test in ApproximatePointRangeQueryTests by adjusting totalHits assertion logic
 - [Nested Aggregations](features/opensearch/nested-aggregations.md) - Fix infinite loop in nested aggregations with deep-level nested objects
+- [Code Cleanup](features/opensearch/code-cleanup.md) - Query approximation simplification, Stream API optimization, typo fix
 
 ### OpenSearch Dashboards
 
