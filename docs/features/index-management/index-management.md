@@ -183,6 +183,8 @@ PUT _plugins/_rollup/jobs/sample_rollup
 | v3.0.0 | [#1377](https://github.com/opensearch-project/index-management/pull/1377) | Target Index Settings for rollup |
 | v3.0.0 | [#1388](https://github.com/opensearch-project/index-management/pull/1388) | CVE fix: logback-core upgrade |
 | v3.0.0 | [#1404](https://github.com/opensearch-project/index-management/pull/1404) | Java Agent migration build fix |
+| v2.17.0 | [#1219](https://github.com/opensearch-project/index-management/pull/1219) | Skip execution optimization using cluster service |
+| v2.17.0 | [#1222](https://github.com/opensearch-project/index-management/pull/1222) | Security integration test fixes |
 
 ## References
 
@@ -191,7 +193,9 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - [Index Transforms Documentation](https://docs.opensearch.org/3.0/im-plugin/index-transforms/index/)
 - [Index Management Security](https://docs.opensearch.org/3.0/im-plugin/security/)
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Unfollow action feature request
+- [Issue #1075](https://github.com/opensearch-project/index-management/issues/1075): ISM listener blocking Cluster Applier thread
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Added ISM unfollow action for CCR, rollup target index settings, CVE fixes, Java Agent migration
+- **v2.17.0** (2024-09-17): Performance optimization for skip execution check using cluster service instead of NodesInfoRequest, security integration test fixes
