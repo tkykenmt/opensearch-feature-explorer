@@ -19,6 +19,7 @@
 
 ### job-scheduler
 - [Dependency Bumps](features/job-scheduler/dependency-bumps.md)
+- [Job Scheduler Bugfixes](features/job-scheduler/job-scheduler-bugfixes.md)
 
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
