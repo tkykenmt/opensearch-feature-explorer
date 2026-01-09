@@ -30,3 +30,4 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Workspace Bugfixes](features/opensearch-dashboards/workspace-bugfixes.md) - 13 bug fixes for workspace UI/UX, page crashes, permissions, and navigation
 - [Dashboards Maintenance](features/opensearch-dashboards/dashboards-maintenance.md) - Version bump post 2.17, enhanced search API cleanup
 - [Query Editor](features/opensearch-dashboards/query-editor.md) - Footer bar for single-line editor, extension ordering fix, PPL autocomplete improvements
+- [Async Query](features/opensearch-dashboards/async-query.md) - Frontend polling for async search, async PPL support for S3 datasets

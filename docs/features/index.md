@@ -71,6 +71,7 @@
 - [Sample Data](opensearch-dashboards/sample-data.md)
 - [TSVB Visualization](opensearch-dashboards/tsvb-visualization.md)
 - [Workspace](opensearch-dashboards/workspace.md)
+- [Async Query](opensearch-dashboards/async-query.md)
 
 ## security
 
