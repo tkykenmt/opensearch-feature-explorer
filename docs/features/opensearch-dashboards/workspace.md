@@ -2,7 +2,7 @@
 
 ## Summary
 
-Workspace is a feature in OpenSearch Dashboards that enables users to tailor their environment with use-case-specific configurations. It provides isolated storage for visual assets like dashboards and visualizations, allowing teams to organize and manage their resources independently.
+Workspace is a feature in OpenSearch Dashboards that enables users to tailor their environment with use-case-specific configurations. It provides isolated storage for visual assets like dashboards and visualizations, allowing teams to organize and manage their resources independently. The feature includes collaborator management, data source association, workspace-level UI settings, and ACL-based access control.
 
 ## Details
 
@@ -21,6 +21,15 @@ graph TB
         ACL[Access Control Lists]
         UC[Use Cases]
         RI[Recent Items]
+        CT[Collaborator Types Service]
+        UI[UI Settings Service]
+        DC[Data Connection Service]
+    end
+    
+    subgraph "UI Components"
+        CM[AddCollaboratorsModal]
+        CP[Collaborators Page]
+        GS[Global Search Bar]
     end
     
     WS --> WC
@@ -30,6 +39,11 @@ graph TB
     SO --> ACL
     WS --> UC
     WS --> RI
+    WS --> CT
+    WS --> UI
+    WS --> DC
+    CT --> CM
+    CT --> CP
 ```
 
 ### Data Flow
@@ -56,6 +70,11 @@ flowchart TB
 | `WorkspaceValidationService` | Validates workspace state during initialization |
 | `RecentWorkspaceManager` | Manages recently accessed workspaces |
 | `WorkspaceError` | Enum defining workspace error types |
+| `WorkspaceCollaboratorTypesService` | Service for registering custom collaborator types |
+| `AddCollaboratorsModal` | Modal component for adding users/groups to workspace |
+| `WorkspaceCollaboratorsPage` | Dedicated page for managing workspace collaborators |
+| `ACLAuditor` | Audits saved object client calls for ACL bypass |
+| `GlobalSearchBar` | Search bar in left nav for searching pages across workspaces |
 
 ### Configuration
 
@@ -64,6 +83,8 @@ flowchart TB
 | `workspace.enabled` | Enable workspace feature | `false` |
 | `home:useNewHomePage` | Use new home page with workspace support | `false` |
 | `opensearch_security.multitenancy.enabled` | Must be disabled when using workspaces | `true` |
+| `savedObjects.permission.enabled` | Enable permission control for ACL auditor | `false` |
+| `opensearchDashboards.dashboardAdmin.users` | Users designated as dashboard admins | `[]` |
 
 ### Workspace Data Model
 
@@ -100,6 +121,25 @@ Saved objects can be associated with workspaces via the `workspaces` attribute:
 }
 ```
 
+### Collaborator Types API
+
+Register custom collaborator types for workspace member management:
+
+```typescript
+export interface WorkspaceCollaboratorType {
+  id: string;
+  name: string;
+  buttonLabel: string;
+  getDisplayedType?: (collaborator: WorkspaceCollaborator) => boolean;
+  onAdd: ({ onAddCollaborators }: OnAddOptions) => Promise<void>;
+}
+
+export interface WorkspacePluginSetup {
+  setCollaboratorTypes: (collaboratorTypes: WorkspaceCollaboratorType[]) => void;
+  getAddCollaboratorsModal: () => typeof AddCollaboratorsModal;
+}
+```
+
 ### Usage Example
 
 Enable workspaces in `opensearch_dashboards.yml`:
@@ -119,6 +159,9 @@ opensearch_security.multitenancy.enabled: false
 - Multi-tenancy must be disabled when using workspaces (conflicts with similar functionality)
 - Not all saved objects are workspace-aware; some operate globally
 - Stale workspace state requires manual navigation back to home page
+- ACL auditor only logs bypass attempts; does not block operations
+- Global search bar does not yet support searching saved objects
+- Collaborator types must be registered during plugin setup phase
 
 ## Related PRs
 
@@ -127,6 +170,16 @@ opensearch_security.multitenancy.enabled: false
 | v3.0.0 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |
 | v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors |
 | v3.0.0 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |
+| v2.18.0 | [#8500](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8500) | Workspace-level UI settings and hide non-global settings |
+| v2.18.0 | [#8594](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8594) | Add workspace collaborators page |
+| v2.18.0 | [#8486](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8486) | Add WorkspaceCollaboratorTypesService and AddCollaboratorsModal |
+| v2.18.0 | [#8557](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8557) | Add ACL auditor |
+| v2.18.0 | [#8538](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8538) | Add global search bar into left nav |
+| v2.18.0 | [#8013](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8013) | Integrate workspace with data connections frontend |
+| v2.18.0 | [#8200](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8200) | Update workspace server for data connection type |
+| v2.18.0 | [#8501](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8501) | Add collaborator table to workspace detail page |
+| v2.18.0 | [#8520](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8520) | Remove collaborators in workspace creation page |
+| v2.18.0 | [#8461](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8461) | Require at least one data source in workspace creation |
 | v2.18.0 | [#8435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8435) | Remove What's New card in workspace overview |
 | v2.18.0 | [#8445](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8445) | Fix use case hidden features not accessible |
 | v2.18.0 | [#8524](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8524) | Fix Analytics/Essential use case overview crash |
@@ -154,4 +207,4 @@ opensearch_security.multitenancy.enabled: false
 ## Change History
 
 - **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
-- **v2.18.0** (2024-11-05): 13 bug fixes including UI/UX improvements (workspace selector styling, alignment), page crash fixes (overview pages, assets page), permission handling (non-admin defaultIndex, permission revocation), navigation fixes (short URLs, inspect button), and index pattern scope isolation
+- **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements
