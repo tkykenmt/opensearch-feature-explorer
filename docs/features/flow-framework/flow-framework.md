@@ -191,6 +191,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#1026](https://github.com/opensearch-project/flow-framework/pull/1026) | Fix breaking changes for 3.0.0 release |
+| v2.17.0 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings |
 | v3.0.0 | [#1074](https://github.com/opensearch-project/flow-framework/pull/1074) | Add per-tenant provisioning throttling |
 | v3.0.0 | [#1083](https://github.com/opensearch-project/flow-framework/pull/1083) | Change REST status codes for RBAC and provisioning |
 | v3.0.0 | [#1096](https://github.com/opensearch-project/flow-framework/pull/1096) | Fix Config parser does not handle tenant_id field |
@@ -214,3 +215,4 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 ## Change History
 
 - **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
+- **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
