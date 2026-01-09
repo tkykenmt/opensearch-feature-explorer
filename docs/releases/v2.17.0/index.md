@@ -36,6 +36,7 @@
 
 ### security
 - [Alerting Comments Security](features/security/alerting-comments.md)
+- [Correlation Alerts](features/security/correlation-alerts.md)
 - [Dependency Bumps](features/security/dependency-bumps.md)
 - [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)
 

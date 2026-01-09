@@ -57,6 +57,7 @@
 ## security
 
 - [Alerting Comments Security](security/alerting-comments-security.md)
+- [Correlation Alerts](security/correlation-alerts.md)
 - [Security Configuration](security/security-configuration.md)
 - [Security Plugin](security/security-plugin.md)
 
