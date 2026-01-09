@@ -19,6 +19,9 @@
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
 
+### dashboards-plugins
+- [CVE Fixes](features/dashboards-plugins/cve-fixes.md)
+
 ### ml-commons
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
 
