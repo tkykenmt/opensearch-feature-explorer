@@ -193,3 +193,7 @@
 ## security-analytics
 
 - [Threat Intelligence](security-analytics/threat-intelligence.md)
+
+## security-analytics-dashboards
+
+- [Security Analytics Dashboards Plugin](security-analytics-dashboards/security-analytics-dashboards-plugin.md)
