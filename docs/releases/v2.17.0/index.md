@@ -4,7 +4,11 @@
 
 ## Feature Reports
 
-*No individual feature reports have been created yet. Run the investigate agent to generate detailed reports for specific features.*
+### job-scheduler
+- [Dependency Bumps](features/job-scheduler/dependency-bumps.md)
+
+### security
+- [Dependency Bumps](features/security/dependency-bumps.md)
 
 ## Key Features in This Release
 
