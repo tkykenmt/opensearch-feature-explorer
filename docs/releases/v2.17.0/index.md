@@ -18,6 +18,7 @@
 
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
+- [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)
 
 ### security-analytics
 - [Threat Intel Bugfixes](features/security-analytics/threat-intel-bugfixes.md)
