@@ -65,6 +65,9 @@
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
 - [Query Assist](features/ml-commons/query-assist.md)
 
+### ml-commons-dashboards
+- [ML Commons UI Updates](features/ml-commons-dashboards/ml-commons-ui-updates.md)
+
 ### neural-search
 - [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md)
 - [Neural Search Hybrid Query Bugfixes](features/neural-search/neural-search-hybrid-query.md)

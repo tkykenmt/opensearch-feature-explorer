@@ -132,6 +132,10 @@
 - [ML Commons Test Fixes](ml-commons/ml-commons-test-fixes.md)
 - [Query Assist](ml-commons/query-assist.md)
 
+## ml-commons-dashboards
+
+- [ML Commons Dashboards](ml-commons-dashboards/ml-commons-dashboards.md)
+
 ## anomaly-detection
 
 - [Anomaly Detection](anomaly-detection/anomaly-detection.md)
