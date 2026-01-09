@@ -163,3 +163,7 @@
 ## common-utils
 
 - [Common Utils Bugfixes and Enhancements](features/common-utils/common-utils-bugfixes.md)
+
+## alerting
+
+- [Alerting Bugfixes](features/alerting/alerting-bugfixes.md)
