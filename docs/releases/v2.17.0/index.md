@@ -63,6 +63,7 @@
 
 ### security-analytics-dashboards
 - [Security Analytics UI Bugfixes](features/security-analytics-dashboards/security-analytics-ui-bugfixes.md)
+- [Security Analytics UI Updates](features/security-analytics-dashboards/security-analytics-ui-updates.md)
 
 ### security-dashboards
 - [Security Dashboards Bugfixes](features/security-dashboards/security-dashboards-bugfixes.md)
