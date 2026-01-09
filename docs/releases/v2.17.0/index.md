@@ -112,6 +112,7 @@
 - [SQL/PPL Enhancements](features/sql/sql-ppl-enhancements.md)
 
 ### k-nn
+- [Disk-Based Vector Search](features/k-nn/disk-based-vector-search.md)
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
 - [k-NN Iterative Graph Build](features/k-nn/k-nn-iterative-graph-build.md)
 - [k-NN Model Metadata](features/k-nn/k-nn-model-metadata.md)
