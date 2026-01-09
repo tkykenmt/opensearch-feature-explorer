@@ -37,6 +37,7 @@
 - [CVE Fixes](features/dashboards-plugins/cve-fixes.md)
 
 ### ml-commons
+- [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md)
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
 
 ### neural-search
