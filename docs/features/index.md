@@ -126,6 +126,7 @@
 
 ## ml-commons
 
+- [ML Commons Connector](ml-commons/ml-commons-connector.md)
 - [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
 - [ML Commons MCP (Model Context Protocol)](ml-commons/ml-commons-mcp.md)
 - [ML Commons Stability and Reliability](ml-commons/ml-commons-stability.md)
