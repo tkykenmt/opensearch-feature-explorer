@@ -160,6 +160,8 @@ flowchart TB
 | v3.0.0 | [#703](https://github.com/opensearch-project/dashboards-maps/pull/703) | Introduce cluster layer |
 | v3.0.0 | [#704](https://github.com/opensearch-project/dashboards-maps/pull/704) | Fix layer config panel background |
 | v3.0.0 | [#718](https://github.com/opensearch-project/dashboards-maps/pull/718) | Fix data label overlap |
+| v2.17.0 | [#651](https://github.com/opensearch-project/dashboards-maps/pull/651) | Deprecate maps multi data source display |
+| v2.17.0 | [#664](https://github.com/opensearch-project/dashboards-maps/pull/664) | Migrate integration tests to FTR repository |
 
 ## References
 
@@ -173,3 +175,4 @@ flowchart TB
 ## Change History
 
 - **v3.0.0** (2025-05-06): Added Cluster Layer with geohash/geotile/geohex aggregations, legend support, and multi-data source support. Fixed layer config panel styling and data label overlap issues.
+- **v2.17.0** (2024-09-17): Deprecated multi-data source display in Maps UI (Trineo UX alignment). Migrated integration tests to opensearch-dashboards-functional-test repository.
