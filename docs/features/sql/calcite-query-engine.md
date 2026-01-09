@@ -1,0 +1,258 @@
+# Calcite Query Engine
+
+## Summary
+
+The Calcite Query Engine is an Apache Calcite-based query processing framework for OpenSearch's SQL/PPL plugin. It provides advanced query optimization, cross-index data correlation capabilities (joins, lookups, subsearches), and an extensible UDF framework. The engine transforms PPL from a simple query language into a powerful analytical tool for log analysis and observability workflows.
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Client Layer"
+        Client[Client Request]
+        REST[REST Handler]
+    end
+    
+    subgraph "Query Parsing"
+        ANTLR[ANTLR4 Grammar]
+        AST[Abstract Syntax Tree]
+    end
+    
+    subgraph "Engine Selection"
+        Router{Query Router}
+        V1[V1 Legacy Engine]
+        V2[V2 Engine]
+        V3[V3 Calcite Engine]
+    end
+    
+    subgraph "Calcite Processing"
+        RelBuilder[RelBuilder]
+        RelNode[RelNode Tree]
+        TypeSystem[OpenSearch Type System]
+        Optimizer[Query Optimizer]
+        Rules[Transformation Rules]
+        OSRel[OpenSearchEnumerableRel]
+    end
+    
+    subgraph "Function Framework"
+        FuncTable[PPLFuncImpTable]
+        BuiltinOps[PPLBuiltinOperators]
+        UDF[User Defined Functions]
+    end
+    
+    subgraph "Execution"
+        ThreadPool[Calcite Thread Pool]
+        Linq4j[Linq4j Code Gen]
+        Pushdown[Filter/Agg Pushdown]
+        QueryBuilder[OpenSearch QueryBuilder]
+    end
+    
+    subgraph "OpenSearch"
+        OS[(OpenSearch Cluster)]
+    end
+    
+    Client --> REST
+    REST --> ANTLR
+    ANTLR --> AST
+    AST --> Router
+    Router -->|SQL| V1
+    Router -->|SQL| V2
+    Router -->|PPL + Calcite| V3
+    V3 --> RelBuilder
+    RelBuilder --> RelNode
+    RelNode --> TypeSystem
+    TypeSystem --> Optimizer
+    Optimizer --> Rules
+    Rules --> OSRel
+    OSRel --> FuncTable
+    FuncTable --> BuiltinOps
+    BuiltinOps --> UDF
+    OSRel --> ThreadPool
+    ThreadPool --> Linq4j
+    ThreadPool --> Pushdown
+    Pushdown --> QueryBuilder
+    Linq4j --> OS
+    QueryBuilder --> OS
+    V1 --> OS
+    V2 --> OS
+```
+
+### Data Flow
+
+```mermaid
+flowchart TB
+    subgraph "Query Lifecycle"
+        Query[PPL Query Text]
+        Parse[ANTLR4 Parsing]
+        AST[Build AST]
+        Convert[Convert to RelNode]
+        Bind[Catalog Binding]
+        Optimize[Apply Optimization Rules]
+        Plan[Generate Physical Plan]
+        Execute[Execute in Thread Pool]
+        Format[Format Response]
+        Response[Return Results]
+    end
+    
+    Query --> Parse
+    Parse --> AST
+    AST --> Convert
+    Convert --> Bind
+    Bind --> Optimize
+    Optimize --> Plan
+    Plan --> Execute
+    Execute --> Format
+    Format --> Response
+    
+    subgraph "Optimization"
+        FilterPush[Filter Pushdown]
+        AggPush[Aggregation Pushdown]
+        ProjectPush[Projection Pushdown]
+    end
+    
+    Optimize --> FilterPush
+    Optimize --> AggPush
+    Optimize --> ProjectPush
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| `CalcitePPLParser` | Converts PPL AST to Calcite RelNode tree using RelBuilder |
+| `OpenSearchTypeSystem` | Custom Calcite type system for OpenSearch data types |
+| `OpenSearchTypeFactory` | Factory for creating OpenSearch-specific type instances |
+| `PPLFuncImpTable` | Registry for logical-level function implementations |
+| `PPLBuiltinOperators` | Physical-level UDF implementations mapped to Calcite |
+| `CalciteEnumerableIndexScan` | OpenSearch index scan operator with pushdown support |
+| `OpenSearchEnumerableRel` | Base class for OpenSearch-specific Calcite operators |
+| `CalciteQueryPlanner` | Orchestrates query planning and optimization |
+| `PushDownContext` | Tracks pushdown state for filters and aggregations |
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `plugins.calcite.enabled` | Enable Calcite engine for PPL queries | `false` |
+| `plugins.sql.enabled` | Enable SQL support | `true` |
+| `plugins.ppl.enabled` | Enable PPL support | `true` |
+| `plugins.query.memory_limit` | Query memory limit | `85%` |
+| `plugins.query.size_limit` | Maximum query result size | `200` |
+
+### PPL Commands
+
+| Command | Description | Syntax |
+|---------|-------------|--------|
+| `join` | Correlate data from multiple indexes | `source=a \| join [LEFT\|RIGHT\|INNER\|OUTER\|CROSS\|SEMI\|ANTI] ON condition b` |
+| `lookup` | Enrich data with reference table | `source=a \| lookup b match_field [AS alias], [output_field, ...]` |
+| `subsearch` | Dynamic filtering with subqueries | `where [NOT] exists/in [subquery]` |
+| `dedup` | Remove duplicate records | `source=a \| dedup field1, field2` |
+| `parse` | Extract fields using regex | `source=a \| parse field 'pattern'` |
+
+### Supported Functions
+
+| Category | Functions |
+|----------|-----------|
+| Math | `abs`, `ceil`, `floor`, `round`, `sqrt`, `pow`, `exp`, `ln`, `log`, `log10`, `log2`, `atan`, `atan2`, `sin`, `cos`, `tan` |
+| String | `concat`, `length`, `lower`, `upper`, `trim`, `ltrim`, `rtrim`, `substring`, `replace`, `reverse`, `position`, `left`, `right` |
+| Condition | `if`, `ifnull`, `nullif`, `coalesce`, `case`, `isnull` |
+| Date/Time | `now`, `curdate`, `curtime`, `date`, `time`, `timestamp`, `date_add`, `date_sub`, `datediff`, `timediff`, `time_to_sec` |
+| Type | `typeof`, `cast` |
+| Aggregation | `count`, `sum`, `avg`, `min`, `max`, `take` |
+
+### Supported Data Types
+
+| Type | OpenSearch Mapping | Description |
+|------|-------------------|-------------|
+| `DATE` | `date` | Date without time |
+| `TIME` | `date` | Time without date |
+| `TIMESTAMP` | `date` | Full date and time |
+| `IP` | `ip` | IPv4/IPv6 addresses |
+| `GEO_POINT` | `geo_point` | Geographic coordinates |
+| `BINARY` | `binary` | Binary data |
+| `ALIAS` | `alias` | Field aliases |
+| `NESTED` | `nested` | Nested objects |
+
+### Usage Example
+
+```bash
+# Enable Calcite engine
+PUT _cluster/settings
+{
+  "transient": {
+    "plugins.calcite.enabled": true
+  }
+}
+
+# Lookup: Enrich authentication logs with user details
+POST /_plugins/_ppl
+{
+  "query": "source=auth_logs | lookup user_info user_id | where status='failed' | fields timestamp, user_id, department, status"
+}
+
+# Join: Correlate logs within time window
+POST /_plugins/_ppl
+{
+  "query": "source=auth_logs | join left=l right=r ON l.user_id = r.user_id AND TIME_TO_SEC(TIMEDIFF(r.timestamp, l.timestamp)) <= 60 app_logs | fields timestamp, user_id, action, status"
+}
+
+# Subsearch EXISTS: Find suspicious activity
+POST /_plugins/_ppl
+{
+  "query": "source=auth_logs | where status='failed' AND exists [source=app_logs | where user_id=auth_logs.user_id AND action='login']"
+}
+
+# Subsearch IN: Filter by department
+POST /_plugins/_ppl
+{
+  "query": "source=logs | where user_id in [source=users | where department='Security' | fields user_id]"
+}
+
+# Explain query plan
+POST /_plugins/_ppl
+{
+  "query": "explain source=auth_logs | lookup user_info user_id | where status='failed'"
+}
+
+# Response shows logical and physical plans:
+# LogicalProject -> LogicalFilter -> LogicalJoin -> CalciteLogicalIndexScan
+# EnumerableCalc -> EnumerableMergeJoin -> CalciteEnumerableIndexScan (with pushdown)
+```
+
+## Limitations
+
+- Calcite engine is experimental
+- Only PPL queries optimized by Calcite (SQL support planned)
+- JOIN queries auto-terminate after 60 seconds
+- Commands not supported: `trendline`, `top`, `rare`, `fillnull`, `dedup` with `consecutive=true`
+- Pagination/cursor not supported
+- Aggregation over expressions has limited support
+- Subquery in FROM clause has limited support
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#3249](https://github.com/opensearch-project/sql/pull/3249) | Framework of Calcite Engine |
+| v3.0.0 | [#3364](https://github.com/opensearch-project/sql/pull/3364) | PPL join command |
+| v3.0.0 | [#3419](https://github.com/opensearch-project/sql/pull/3419) | Lookup command |
+| v3.0.0 | [#3371](https://github.com/opensearch-project/sql/pull/3371) | IN subquery |
+| v3.0.0 | [#3388](https://github.com/opensearch-project/sql/pull/3388) | EXISTS subquery |
+| v3.0.0 | [#3374](https://github.com/opensearch-project/sql/pull/3374) | UDF interface |
+| v3.0.0 | [#3468](https://github.com/opensearch-project/sql/pull/3468) | Enable Calcite by default |
+| v3.0.0 | [#3521](https://github.com/opensearch-project/sql/pull/3521) | Enhanced explain output |
+
+## References
+
+- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
+- [PPL Commands](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL command reference
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Feature announcement
+- [Apache Calcite](https://calcite.apache.org/): Query optimization framework
+- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
+
+## Change History
+
+- **v3.0.0** (2025-05-06): Initial implementation - Apache Calcite integration, join/lookup/subsearch commands, UDF framework, custom type system, thread pool execution, enhanced explain output
