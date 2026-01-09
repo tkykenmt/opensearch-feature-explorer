@@ -133,6 +133,9 @@ JDK 21 provides stable `MemorySegment` API for memory-mapped files:
 | v3.0.0 | [#17117](https://github.com/opensearch-project/OpenSearch/pull/17117) | Refactor bootstrap package |
 | v3.0.0 | [#17241](https://github.com/opensearch-project/OpenSearch/pull/17241) | Refactor Lucene packages |
 | v3.0.0 | [#17272](https://github.com/opensearch-project/OpenSearch/pull/17272) | Refactor client package |
+| v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 (requires JDK 21) |
+| v3.0.0 | [#16429](https://github.com/opensearch-project/OpenSearch/pull/16429) | Update JDK to 23.0.1 |
+| v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | Custom Gradle plugin for Java agent (SecurityManager replacement) |
 | v2.4.0 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Enable JDK 19 preview APIs for mmap |
 
 ## References

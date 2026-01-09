@@ -117,6 +117,9 @@ OpenSearch 3.0.0 can leverage JDK 21's `MemorySegment` API for memory-mapped fil
 | [#17117](https://github.com/opensearch-project/OpenSearch/pull/17117) | Refactor `:libs` module `bootstrap` package |
 | [#17241](https://github.com/opensearch-project/OpenSearch/pull/17241) | Refactor `org.apache.lucene` codebase |
 | [#17272](https://github.com/opensearch-project/OpenSearch/pull/17272) | Refactor `org.opensearch.client` from `:server` module |
+| [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 for 3.0.0 (requires JDK 21) |
+| [#16429](https://github.com/opensearch-project/OpenSearch/pull/16429) | Update JDK to 23.0.1 |
+| [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | Custom Gradle plugin to leverage Java agent (SecurityManager replacement) |
 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Allow mmap to use JDK-19 preview APIs in Lucene 9.4+ |
 
 ## References
