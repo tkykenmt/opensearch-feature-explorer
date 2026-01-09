@@ -129,6 +129,7 @@ POST /_plugins/_query/_datasources
 | Search Relevance | ✅ Yes | v2.14.0 |
 | Security Analytics | ✅ Yes | v2.15.0 |
 | Alerting | ✅ Yes | v2.15.0 |
+| Integrations | ✅ Yes | v2.18.0 |
 | Reporting | ❌ No | N/A (de-registered when MDS enabled) |
 
 ## Limitations
@@ -138,23 +139,28 @@ POST /_plugins/_query/_datasources
 - Reporting plugin is automatically de-registered when MDS is enabled
 - Some plugins may have version compatibility requirements between Dashboards and connected clusters
 - Data source connections require appropriate network access and authentication credentials
+- Integrations: Saved objects created by integrations may not automatically inherit data source references
 
 ## Related PRs
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v2.18.0 | [#8008](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8008) | OpenSearch-Dashboards | Add MDS support for Integration |
+| v2.18.0 | [#2051](https://github.com/opensearch-project/dashboards-observability/pull/2051) | dashboards-observability | MDS support in Integrations for observability plugin |
 | v2.17.0 | [#411](https://github.com/opensearch-project/dashboards-reporting/pull/411) | dashboards-reporting | De-register reporting when MDS is enabled |
 | v2.17.0 | [#249](https://github.com/opensearch-project/dashboards-notifications/pull/249) | dashboards-notifications | Persist dataSourceId across applications |
 | v2.14.0 | [#186](https://github.com/opensearch-project/dashboards-notifications/pull/186) | dashboards-notifications | Initial MDS support in Notifications |
 
 ## References
 
-- [Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
-- [Data Sources Overview](https://docs.opensearch.org/2.17/dashboards/management/data-sources/): Data sources management
+- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
+- [Data Sources Overview](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Data sources management
 - [Issue #159](https://github.com/opensearch-project/dashboards-notifications/issues/159): Original MDS feature request for Notifications
+- [Issue #1440](https://github.com/opensearch-project/dashboards-observability/issues/1440): MDS feature request for Integrations
 
 ## Change History
 
+- **v2.18.0** (2024-11-05): Added MDS support to Integrations plugin; users can install and manage integrations across multiple connected clusters
 - **v2.17.0** (2024-09-17): Reporting plugin de-registers when MDS enabled; Notifications persists dataSourceId in URL for new navigation
 - **v2.15.0** (2024-06-25): Added MDS support to Security Analytics and Alerting plugins
 - **v2.14.0** (2024-05-02): Initial MDS support added to multiple plugins including Notifications, Index Management, Anomaly Detection, Security, Maps, Machine Learning, and Search Relevance
