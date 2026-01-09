@@ -144,3 +144,7 @@
 ## notifications
 
 - [Java Agent Build Fix](features/notifications/java-agent-build-fix.md)
+
+## job-scheduler
+
+- [Job Scheduler Bug Fixes](features/job-scheduler/job-scheduler-bugfixes.md)
