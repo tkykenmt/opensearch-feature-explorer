@@ -3970,7 +3970,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 677
     },
     {
       "name": "Content Management",
@@ -3984,7 +3985,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 678
     },
     {
       "name": "Discover",
@@ -4088,7 +4090,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 679
     },
     {
       "name": "Input Control Visualization",
@@ -4102,7 +4105,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 680
     },
     {
       "name": "Data Source Permissions",
@@ -4116,7 +4120,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 681
     },
     {
       "name": "Dynamic Config",
@@ -4142,7 +4147,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 682
     },
     {
       "name": "Query Enhancements",
@@ -4174,7 +4180,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 683
     },
     {
       "name": "UI/UX Bugfixes",
@@ -4230,7 +4237,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 684
     },
     {
       "name": "Dashboards Maintenance",
@@ -4250,7 +4258,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 685
     },
     {
       "name": "i18n & Localization",
@@ -4300,7 +4309,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 686
     },
     {
       "name": "Workspace",
@@ -4386,7 +4396,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 687
     },
     {
       "name": "Data Connections",
@@ -4430,7 +4441,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 688
     },
     {
       "name": "TSVB Visualization",
@@ -4444,7 +4456,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 689
     },
     {
       "name": "UI/UX Bugfixes",
@@ -4476,7 +4489,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 690
     },
     {
       "name": "Query Enhancements",
@@ -4527,7 +4541,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 691
     },
     {
       "name": "Dependency Updates",
@@ -4547,7 +4562,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 692
     },
     {
       "name": "Discover",
@@ -4579,7 +4595,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 693
     },
     {
       "name": "Sample Data",
@@ -4593,7 +4610,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 694
     },
     {
       "name": "CI/CD & Build Improvements",
@@ -4607,7 +4625,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 695
     },
     {
       "name": "Maintainers",
@@ -4621,7 +4640,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 696
     },
     {
       "name": "OUI Updates",
