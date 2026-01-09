@@ -44,6 +44,7 @@
 
 ## opensearch-dashboards
 
+- [Async Query](opensearch-dashboards/async-query.md)
 - [CI/CD & Build Fixes](opensearch-dashboards/ci-cd-build-fixes.md)
 - [Content Management](opensearch-dashboards/content-management.md)
 - [Cross-Cluster Search](opensearch-dashboards/cross-cluster-search.md)
@@ -62,16 +63,16 @@
 - [Dynamic Config](opensearch-dashboards/dynamic-config.md)
 - [i18n & Localization](opensearch-dashboards/i18n-localization.md)
 - [Input Control Visualization](opensearch-dashboards/input-control-visualization.md)
-- [Navigation](opensearch-dashboards/navigation.md)
-- [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
+- [Navigation](opensearch-dashboards/navigation.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
-- [Query Enhancements](opensearch-dashboards/query-enhancements.md)
+- [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
 - [Query Editor](opensearch-dashboards/query-editor.md)
+- [Query Enhancements](opensearch-dashboards/query-enhancements.md)
 - [Sample Data](opensearch-dashboards/sample-data.md)
+- [Saved Query UX](opensearch-dashboards/saved-query-ux.md)
 - [TSVB Visualization](opensearch-dashboards/tsvb-visualization.md)
 - [Workspace](opensearch-dashboards/workspace.md)
-- [Async Query](opensearch-dashboards/async-query.md)
 
 ## security
 
