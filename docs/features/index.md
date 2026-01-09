@@ -74,6 +74,7 @@
 - [Query Enhancements](opensearch-dashboards/query-enhancements.md)
 - [Sample Data](opensearch-dashboards/sample-data.md)
 - [Saved Query UX](opensearch-dashboards/saved-query-ux.md)
+- [Security CVE Fixes](opensearch-dashboards/security-cve-fixes.md)
 - [TSVB Visualization](opensearch-dashboards/tsvb-visualization.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 

@@ -40,3 +40,4 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Dashboards Improvements](features/opensearch-dashboards/dashboards-improvements.md) - Loading indicator with time counter for query results
 - [MDS Integration Support](features/opensearch-dashboards/mds-integration-support.md) - Multi Data Source support for Integration feature
 - [Experimental Features](features/opensearch-dashboards/experimental-features.md) - User personal settings with scoped uiSettings and User Settings page
+- [Security CVE Fixes](features/opensearch-dashboards/security-cve-fixes.md) - Security updates for dns-sync, axios, path-to-regexp, dompurify, elliptic, micromatch
