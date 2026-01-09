@@ -23,6 +23,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [OUI Updates](features/opensearch-dashboards/oui-updates.md) - Updates to OpenSearch UI component library (1.13 → 1.15)
 - [Query Enhancements (2)](features/opensearch-dashboards/query-enhancements-2.md) - Async polling, error handling, language compatibility, saved query fixes
 - [Query Enhancements Bugfixes](features/opensearch-dashboards/query-enhancements-bugfixes.md) - Search strategy extensibility, recent query fix, module exports, keyboard shortcuts
+- [Sample Data](features/opensearch-dashboards/sample-data.md) - Updated UI for new UX, OTEL sample data support for traces, metrics, and logs
 - [Sample Data Bugfixes](features/opensearch-dashboards/sample-data-bugfixes.md) - Update OTEL sample data description with compatible OS version
 - [Saved Query UX](features/opensearch-dashboards/saved-query-ux.md) - New flyout-based UI for saved queries, sample queries on no results page
 - [TSVB Visualization](features/opensearch-dashboards/tsvb-visualization-bugfixes.md) - Hidden axis option, per-axis scale setting, compressed input fields
