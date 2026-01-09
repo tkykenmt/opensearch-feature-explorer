@@ -2687,7 +2687,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 637
     },
     {
       "name": "Star Tree Index",
@@ -2701,7 +2702,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 638
     },
     {
       "name": "Cluster Stats API",
@@ -2715,7 +2717,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 639
     },
     {
       "name": "Snapshot Restore Enhancements",
@@ -2735,7 +2738,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 640
     },
     {
       "name": "Docker Compose v2 Support",
@@ -2749,7 +2753,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 641
     },
     {
       "name": "Identity Feature Flag Removal",
@@ -2769,7 +2774,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 642
     },
     {
       "name": "RestHandler Improvements",
@@ -2783,7 +2789,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 643
     },
     {
       "name": "Search Request Stats",
@@ -2797,7 +2804,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 644
     },
     {
       "name": "OpenSearch Core Dependencies",
@@ -2961,7 +2969,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 645
     },
     {
       "name": "Code Cleanup",
@@ -2987,7 +2996,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 646
     },
     {
       "name": "Cluster State Management",
@@ -3001,7 +3011,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 647
     },
     {
       "name": "Dynamic Settings",
@@ -3015,7 +3026,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 648
     },
     {
       "name": "Wildcard Query Fixes",
@@ -3035,7 +3047,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 649
     },
     {
       "name": "Search Backpressure",
@@ -3049,7 +3062,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 650
     },
     {
       "name": "Search Autocomplete",
@@ -3070,7 +3084,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 651
     },
     {
       "name": "Flat Object Field",
@@ -3084,7 +3099,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 652
     },
     {
       "name": "Nested Aggregations",
@@ -3098,7 +3114,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 653
     },
     {
       "name": "Index Settings",
@@ -3118,7 +3135,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 654
     },
     {
       "name": "Node Join/Leave",
@@ -3132,7 +3150,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 655
     },
     {
       "name": "Streaming Indexing",
@@ -3152,7 +3171,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 656
     },
     {
       "name": "Multi-Search API",
