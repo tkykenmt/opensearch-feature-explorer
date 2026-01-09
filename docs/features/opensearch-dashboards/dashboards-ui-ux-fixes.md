@@ -114,6 +114,10 @@ graph TB
 | v3.0.0 | [#9484](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9484) | Replace @elastic/filesaver |
 | v3.0.0 | [#9488](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9488) | Replace formatNumWithCommas |
 | v3.0.0 | [#9057](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9057) | Update data source details buttons |
+| v2.18.0 | [#8529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8529) | Update the title of header recent menu |
+| v2.18.0 | [#8554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8554) | Fix new home page small screen display issues |
+| v2.18.0 | [#8600](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8600) | Fix padding and responsive behavior of page header |
+| v2.18.0 | [#8614](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8614) | Update content and styling of use case getting started cards |
 
 ## References
 
@@ -125,3 +129,4 @@ graph TB
 ## Change History
 
 - **v3.0.0** (2025-05-06): Initial collection of UI/UX fixes including navigation, query editor, data source, and Discover improvements
+- **v2.18.0** (2024-11-05): Responsive design fixes for home page, page header, recent menu, and getting started cards
