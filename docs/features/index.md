@@ -61,6 +61,7 @@
 
 ## dashboards-flow-framework
 
+- [AI Search Flows](dashboards-flow-framework/ai-search-flows.md)
 - [Backward Compatibility](dashboards-flow-framework/backward-compatibility.md)
 - [Data Ingestion](dashboards-flow-framework/data-ingestion.md)
 
