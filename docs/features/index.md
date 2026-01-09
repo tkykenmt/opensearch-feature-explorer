@@ -157,6 +157,10 @@
 
 - [OpenSearch Dashboards Notifications](dashboards-notifications/dashboards-notifications.md)
 
+## dashboards-query-workbench
+
+- [Query Workbench](dashboards-query-workbench/query-workbench.md)
+
 ## custom-codecs
 
 - [Custom Codecs](custom-codecs/custom-codecs.md)
