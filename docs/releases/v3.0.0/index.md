@@ -6,6 +6,7 @@
 
 ### neural-search
 
+- [Analyzer-Based Neural Sparse Query](features/neural-search/analyzer-based-neural-sparse-query.md)
 - [Neural Search Compatibility](features/neural-search/neural-search-compatibility.md)
 - [Semantic Field](features/neural-search/semantic-field.md)
 
