@@ -143,15 +143,20 @@ GET logs/_search
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17349](https://github.com/opensearch-project/OpenSearch/pull/17349) | Optimize to 3-gram only indexing |
+| v2.18.0 | [#15737](https://github.com/opensearch-project/OpenSearch/pull/15737) | Fix wildcard query containing escaped character |
+| v2.18.0 | [#15882](https://github.com/opensearch-project/OpenSearch/pull/15882) | Fix case-insensitive query on wildcard field |
 | v2.15.0 | Initial | Wildcard field type introduction |
 
 ## References
 
 - [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
 - [Issue #17099](https://github.com/opensearch-project/OpenSearch/issues/17099): 3-gram optimization feature request with benchmarks
+- [Issue #15555](https://github.com/opensearch-project/OpenSearch/issues/15555): Bug report for escaped wildcard character handling
+- [Issue #15855](https://github.com/opensearch-project/OpenSearch/issues/15855): Bug report for case-insensitive query issue
 - [OpenSearch 2.15 Blog](https://opensearch.org/blog/diving-into-opensearch-2-15/): Initial feature announcement
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
+- **v2.18.0** (2024-11-05): Fixed escaped wildcard character handling and case-insensitive query behavior
 - **v2.15.0** (2024-06-25): Initial introduction of wildcard field type with 1-3 gram indexing
