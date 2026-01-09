@@ -37,6 +37,7 @@
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
+- [Test Fixes](opensearch/test-fixes.md)
 - [Thread Context Permissions](opensearch/thread-context-permissions.md)
 - [Tiered Caching](opensearch/tiered-caching.md)
 - [Transport Nodes Action Optimization](opensearch/transport-nodes-action-optimization.md)
