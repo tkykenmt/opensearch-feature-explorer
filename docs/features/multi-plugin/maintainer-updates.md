@@ -54,6 +54,7 @@ Each OpenSearch repository contains a MAINTAINERS.md file with:
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v2.18.0 | [#8415](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8415) | opensearch-dashboards | Add Hailong-am as maintainer |
 | v2.17.0 | [#4673](https://github.com/opensearch-project/security/pull/4673) | security | Add Nils Bandener as maintainer |
 | v2.17.0 | [#1233](https://github.com/opensearch-project/index-management/pull/1233) | index-management | Move inactive maintainers to emeritus |
 
@@ -64,4 +65,5 @@ Each OpenSearch repository contains a MAINTAINERS.md file with:
 
 ## Change History
 
+- **v2.18.0** (2024-10-22): Added Hailong Cui (Hailong-am) as maintainer for OpenSearch Dashboards
 - **v2.17.0** (2024-09-17): Added maintainers (nibix to security, sumukhswamy to dashboards, riysaxen to notifications); moved inactive index-management maintainers to emeritus
