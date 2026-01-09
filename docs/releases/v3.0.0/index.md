@@ -56,6 +56,10 @@
 - [CI/Workflow Fixes](features/reporting/ci-workflow-fixes.md)
 - [Java Agent Build Fix](features/reporting/java-agent-build-fix.md)
 
+## dashboards-reporting
+
+- [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md)
+
 ## security
 
 - [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)

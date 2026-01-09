@@ -55,6 +55,10 @@
 - [CI/CD Workflow](reporting/ci-workflow.md)
 - [Java Agent Migration](reporting/java-agent-migration.md)
 
+## dashboards-reporting
+
+- [OpenSearch Dashboards Reporting](dashboards-reporting/dashboards-reporting.md)
+
 ## dashboards-flow-framework
 
 - [Backward Compatibility](dashboards-flow-framework/backward-compatibility.md)
