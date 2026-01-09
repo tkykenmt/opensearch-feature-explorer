@@ -66,6 +66,7 @@
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
 - [Query Enhancements](opensearch-dashboards/query-enhancements.md)
+- [Query Editor](opensearch-dashboards/query-editor.md)
 - [Sample Data](opensearch-dashboards/sample-data.md)
 - [TSVB Visualization](opensearch-dashboards/tsvb-visualization.md)
 - [Workspace](opensearch-dashboards/workspace.md)
