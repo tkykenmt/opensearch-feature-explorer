@@ -1,0 +1,114 @@
+# Observability UI
+
+## Summary
+
+The OpenSearch Dashboards Observability plugin provides a unified interface for visualizing and exploring logs, traces, and metrics data. The UI components include Trace Analytics (Traces and Services views), Log Explorer, Observability Dashboards, and various supporting features for monitoring distributed systems.
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Observability Plugin"
+        subgraph "Trace Analytics"
+            Traces[Traces View]
+            Services[Services View]
+            TraceDetail[Trace Detail]
+        end
+        subgraph "Log Analytics"
+            LogExplorer[Log Explorer]
+            SavedQueries[Saved Queries]
+            Visualizations[Visualizations]
+        end
+        subgraph "Dashboards"
+            CustomPanels[Custom Panels]
+            Metrics[Metrics View]
+        end
+    end
+    
+    User[User] --> Traces
+    User --> Services
+    User --> LogExplorer
+    User --> CustomPanels
+    
+    Traces --> TraceDetail
+    Services --> TraceDetail
+    LogExplorer --> SavedQueries
+    LogExplorer --> Visualizations
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| Trace Analytics | Visualizes distributed traces and service dependencies |
+| Services View | Lists all services with latency and error rate metrics |
+| Traces View | Shows individual traces with timing and span details |
+| Log Explorer | PPL-based log search and visualization interface |
+| Saved Queries | Persisted queries and visualizations |
+| Custom Panels | User-created observability dashboards |
+| Metrics View | Prometheus-compatible metrics visualization |
+
+### UI Layout
+
+The Observability plugin follows a consistent layout pattern:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Page Title                                    [Actions ▼]  │
+├─────────────────────────────────────────────────────────────┤
+│  [🔍 Search...        ] [Filters ▼] [Date Picker] [Refresh]│
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│                    Content Area                             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Search Bar Features
+
+The search bar component provides:
+
+| Feature | Description |
+|---------|-------------|
+| Text Search | Search by trace ID, service name, or query content |
+| Global Filter | Filter icon for managing all active filters |
+| Type Filter | Filter by Query, Visualization, or Metric type |
+| Date Picker | Time range selection with quick presets |
+| Refresh | Manual refresh button |
+
+### Configuration
+
+The Observability plugin uses OpenSearch Dashboards saved objects for persistence:
+
+| Object Type | Description |
+|-------------|-------------|
+| `observability-savedQuery` | Saved PPL queries |
+| `observability-savedVisualization` | Saved visualizations |
+| `observability-panel` | Custom dashboard panels |
+
+## Limitations
+
+- Trace Analytics requires data indexed in OpenTelemetry or Jaeger format
+- Log correlation requires TraceId field in log documents
+- Custom panels are stored as saved objects, not index data
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |
+| v2.17.0 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |
+| v2.17.0 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |
+
+## References
+
+- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/ta-dashboards/): Official trace analytics plugin documentation
+- [Observability Overview](https://docs.opensearch.org/2.17/observing-your-data/): OpenSearch Observability documentation
+- [Event Analytics](https://docs.opensearch.org/2.17/observing-your-data/event-analytics/): Log exploration and PPL queries
+- [Application Analytics](https://docs.opensearch.org/2.17/observing-your-data/app-analytics/): Correlating logs, traces, and metrics
+
+## Change History
+
+- **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns
