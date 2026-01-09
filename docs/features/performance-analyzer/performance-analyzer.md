@@ -115,6 +115,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.17.0 | [#690](https://github.com/opensearch-project/performance-analyzer/pull/690) | Added CacheConfig Telemetry collectors |
 | v2.17.0 | [#712](https://github.com/opensearch-project/performance-analyzer/pull/712) | Bump PA to use 1.6.0 PA commons lib |
 
 ## References
@@ -126,4 +127,4 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 ## Change History
 
-- **v2.17.0** (2024-09-17): Updated PA Commons dependency to 1.6.0, including bugfix for statsCollector scheduling
+- **v2.17.0** (2024-09-17): Added RTFCacheConfigMetricsCollector for cache configuration telemetry; Updated PA Commons dependency to 1.6.0
