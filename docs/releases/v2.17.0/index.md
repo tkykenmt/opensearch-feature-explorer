@@ -8,6 +8,7 @@
 - [Alerting Bugfixes](features/alerting/alerting-bugfixes.md)
 
 ### anomaly-detection
+- [Anomaly Detection Admin Backend Role Bypass](features/anomaly-detection/anomaly-detection-admin-backend-role-bypass.md)
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
 - [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md)
 
