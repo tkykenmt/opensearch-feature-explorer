@@ -74,6 +74,7 @@
 - [Reporting Enhancements](features/reporting/reporting-enhancements.md)
 
 ### sql
+- [Flint Index Operations](features/sql/flint-index-operations.md)
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
 
 ### k-nn
