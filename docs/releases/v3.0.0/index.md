@@ -42,6 +42,7 @@
 
 - [CI/CD & Build Fixes](features/opensearch-dashboards/ci-cd-build-fixes.md)
 - [Cross-Cluster Search](features/opensearch-dashboards/cross-cluster-search.md)
+- [Data Importer](features/opensearch-dashboards/data-importer.md)
 - [Dashboards CI/CD & Documentation](features/opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards Cypress Testing](features/opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards Dependencies](features/opensearch-dashboards/dashboards-dependencies.md)

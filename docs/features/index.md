@@ -41,6 +41,7 @@
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards Frontend Cleanup](opensearch-dashboards/dashboards-frontend-cleanup.md)
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
+- [Data Importer](opensearch-dashboards/data-importer.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [Workspace](opensearch-dashboards/workspace.md)
