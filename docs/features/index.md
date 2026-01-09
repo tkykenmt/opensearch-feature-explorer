@@ -157,6 +157,7 @@
 - [Look & Feel UI Improvements](multi-plugin/look-and-feel-ui-improvements.md)
 - [Maintainer Updates](multi-plugin/maintainer-updates.md)
 - [Multi-Data Source Support](multi-plugin/multi-data-source-support.md)
+- [Search Autocomplete](multi-plugin/search-autocomplete.md)
 - [Version Bumps & Release Notes](multi-plugin/version-bumps-release-notes.md)
 
 ## opensearch-remote-metadata-sdk
