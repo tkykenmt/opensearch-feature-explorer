@@ -21,6 +21,7 @@
 - [Index Settings](opensearch/index-settings.md)
 - [Mapping Transformer](opensearch/mapping-transformer.md)
 - [Cluster Manager Task Throttling](opensearch/cluster-manager-throttling.md)
+- [Cluster State Management](opensearch/cluster-state-management.md)
 - [Dependency Management](opensearch/dependency-management.md)
 - [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
