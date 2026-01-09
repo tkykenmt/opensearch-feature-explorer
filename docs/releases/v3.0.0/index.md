@@ -135,3 +135,7 @@
 - [Explain API Support](features/k-nn/explain-api-support.md)
 - [Lucene On Faiss (Memory Optimized Search)](features/k-nn/lucene-on-faiss.md)
 - [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md)
+
+## learning
+
+- [Learning to Rank Bug Fixes](features/learning/learning-to-rank.md)
