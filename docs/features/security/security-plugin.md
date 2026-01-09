@@ -182,17 +182,35 @@ config:
 | v3.0.0 | [#5153](https://github.com/opensearch-project/security/pull/5153) | Secure password generator action |
 | v3.0.0 | [#5193](https://github.com/opensearch-project/security/pull/5193) | Default to v7 config models |
 | v3.0.0 | [#5175](https://github.com/opensearch-project/security/pull/5175) | Escape pipe character in usernames |
+| v3.0.0 | [#5217](https://github.com/opensearch-project/security/pull/5217) | Fix IllegalArgumentException in stateful index privileges |
+| v3.0.0 | [#5243](https://github.com/opensearch-project/security/pull/5243) | Fix DlsFlsFilterLeafReader termVectors assertion errors |
+| v3.0.0 | [#5304](https://github.com/opensearch-project/security/pull/5304) | Fix DlsFlsFilterLeafReader PointValues and object attributes |
+| v3.0.0 | [#4979](https://github.com/opensearch-project/security/pull/4979) | Only check validity of certs in node certificate chain |
+| v3.0.0 | [#5157](https://github.com/opensearch-project/security/pull/5157) | Fix version matcher in demo config installer |
+| v3.0.0 | [#2218](https://github.com/opensearch-project/security/pull/2218) | Remove tenant panels when multitenancy disabled |
+| v3.0.0 | [#2223](https://github.com/opensearch-project/security/pull/2223) | Add cat shard API permission |
+| v3.0.0 | [#4966](https://github.com/opensearch-project/security/pull/4966) | Run Security build on opensearch-build image |
+| v3.0.0 | [#1454](https://github.com/opensearch-project/security/pull/1454) | Java-agent gradle plugin for SecurityManager phase-off |
+| v3.0.0 | [#1414](https://github.com/opensearch-project/security/pull/1414) | Use testclusters when testing with security |
+| v3.0.0 | [#713](https://github.com/opensearch-project/security/pull/713) | Fetch certs from security repo, remove local demo certs |
+| v3.0.0 | [#1281](https://github.com/opensearch-project/security/pull/1281) | Fix custom rule creation |
+| v3.0.0 | [#1401](https://github.com/opensearch-project/security/pull/1401) | Fix Docker Security Tests qualifier parsing |
+| v3.0.0 | [#1467](https://github.com/opensearch-project/security/pull/1467) | Refactored flaky test |
+| v3.0.0 | [#1498](https://github.com/opensearch-project/security/pull/1498) | Remove overrides of preserveIndicesUponCompletion |
+| v3.0.0 | [#1503](https://github.com/opensearch-project/security/pull/1503) | Remove usage of deprecated batchSize() method |
 
 ## References
 
 - [Issue #4274](https://github.com/opensearch-project/security/issues/4274): Blake2b hash issue
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation
 - [Issue #4927](https://github.com/opensearch-project/security/issues/4927): CIDR range support
+- [Issue #5238](https://github.com/opensearch-project/security/issues/5238): DlsFlsFilterLeafReader termVectors issue
 - [Issue #1483](https://github.com/opensearch-project/OpenSearch/issues/1483): Deprecate non-inclusive terms
 - [Documentation: Security](https://docs.opensearch.org/3.0/security/)
 - [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
 - [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
 - [Documentation: Access Control API](https://docs.opensearch.org/3.0/security/access-control/api/)
+- [Documentation: Security APIs](https://docs.opensearch.org/3.0/api-reference/security/index/)
 
 ## Change History
 
