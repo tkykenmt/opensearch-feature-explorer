@@ -152,3 +152,7 @@
 ## alerting
 
 - [Alerting](alerting/alerting.md)
+
+## query-insights
+
+- [Query Insights](query-insights/query-insights.md)
