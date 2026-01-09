@@ -16,6 +16,7 @@
 
 ### dashboards-maps
 - [Maps Plugin Bugfixes](features/dashboards-maps/maps-plugin-bugfixes.md)
+- [Maps Plugin UI Updates](features/dashboards-maps/maps-plugin-ui-updates.md)
 
 ### dashboards-notifications
 - [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md)
