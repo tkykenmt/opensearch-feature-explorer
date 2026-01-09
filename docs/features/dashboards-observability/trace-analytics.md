@@ -1,0 +1,165 @@
+# Trace Analytics
+
+## Summary
+
+Trace Analytics is a feature in OpenSearch Dashboards Observability plugin that enables visualization and analysis of distributed traces from applications instrumented with OpenTelemetry or Jaeger. It helps identify performance bottlenecks, troubleshoot errors, and understand request flows across microservices by providing trace visualization, service maps, and correlation with logs.
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Data Collection"
+        APP[Applications]
+        OTEL[OpenTelemetry Collector]
+        JAEGER[Jaeger Agent]
+    end
+    
+    subgraph "OpenSearch"
+        TRACES[Trace Indices]
+        SERVICES[Service Map Index]
+        LOGS[Log Indices]
+    end
+    
+    subgraph "Dashboards Observability"
+        TA[Trace Analytics]
+        SVC[Services View]
+        TG[Trace Groups]
+        CORR[Log Correlation]
+        MDS[Multi-Data Source Support]
+    end
+    
+    APP --> OTEL
+    APP --> JAEGER
+    OTEL --> TRACES
+    OTEL --> SERVICES
+    JAEGER --> TRACES
+    
+    TRACES --> TA
+    SERVICES --> SVC
+    TRACES --> TG
+    LOGS --> CORR
+    TA --> CORR
+    MDS --> TA
+```
+
+### Data Flow
+
+```mermaid
+flowchart TB
+    subgraph Input
+        SPAN[Span Data]
+        ATTR[Attributes]
+    end
+    
+    subgraph Processing
+        INDEX[Indexing]
+        MAP[Service Map Generation]
+    end
+    
+    subgraph Visualization
+        TRACE[Trace View]
+        GRID[Data Grid]
+        FLYOUT[Detail Flyout]
+    end
+    
+    SPAN --> INDEX
+    ATTR --> INDEX
+    INDEX --> MAP
+    INDEX --> TRACE
+    TRACE --> GRID
+    GRID --> FLYOUT
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| Trace Analytics | Main interface for viewing and filtering traces |
+| Services View | Service dependency visualization with metrics |
+| Trace Groups | Grouping of traces by operation patterns |
+| Service Map | Visual representation of service dependencies |
+| Custom Logs Correlation | Configurable log source for trace-log correlation |
+| Data Grid Table | Paginated traces table with column customization |
+| Multi-Data Source Support | Connect to multiple OpenSearch clusters |
+| Application Analytics | Integrated traces/spans view within app analytics |
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Custom Log Source | User-defined log index for correlation | None |
+| Database Selector | Database name for integration setup | `default` |
+| Spans Limit | Maximum spans displayed in trace view | 3000 |
+| Trace Data Source | OTEL or Jaeger format | OTEL |
+| MDS ID | Multi-Data Source identifier | Local cluster |
+
+### Usage Example
+
+#### Viewing Traces
+```
+1. Navigate to Observability → Trace Analytics
+2. Use filters to narrow down traces by:
+   - Service name
+   - Operation name
+   - Time range
+   - Latency threshold
+3. Click on a trace to view the span waterfall
+```
+
+#### Direct URL Navigation
+```
+# Navigate directly to traces view
+http://host:port/app/observability-traces#/traces
+
+# Navigate to services view
+http://host:port/app/observability-traces#/services
+```
+
+#### Multi-Data Source Usage
+```
+1. Configure data sources in Dashboards Management
+2. Select data source from dropdown in Trace Analytics
+3. View traces from the selected cluster
+```
+
+## Limitations
+
+- Custom logs correlation requires manual configuration
+- Discover may show errors when loading data from specific indexes using PPL
+- Sorting is disabled on attribute fields in the data grid
+- Maximum 10,000 spans can be retrieved for pagination
+- Service map generation requires proper span relationships
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#2375](https://github.com/opensearch-project/dashboards-observability/pull/2375) | Support custom logs correlation |
+| v3.0.0 | [#2380](https://github.com/opensearch-project/dashboards-observability/pull/2380) | Database selector in integration setup |
+| v3.0.0 | [#2383](https://github.com/opensearch-project/dashboards-observability/pull/2383) | Service Content/View Optimizations |
+| v3.0.0 | [#2390](https://github.com/opensearch-project/dashboards-observability/pull/2390) | Custom source switch to data grid |
+| v3.0.0 | [#2398](https://github.com/opensearch-project/dashboards-observability/pull/2398) | Trace to logs correlation |
+| v3.0.0 | [#2410](https://github.com/opensearch-project/dashboards-observability/pull/2410) | Amazon Network Firewall Integration |
+| v3.0.0 | [#2432](https://github.com/opensearch-project/dashboards-observability/pull/2432) | OTEL attributes field support |
+| v2.17.0 | [#2006](https://github.com/opensearch-project/dashboards-observability/pull/2006) | MDS fix for local cluster rendering |
+| v2.17.0 | [#2023](https://github.com/opensearch-project/dashboards-observability/pull/2023) | Traces/Spans tab fix for App Analytics |
+| v2.17.0 | [#2024](https://github.com/opensearch-project/dashboards-observability/pull/2024) | Fix direct URL load |
+| v2.17.0 | [#2037](https://github.com/opensearch-project/dashboards-observability/pull/2037) | Breadcrumbs and ID pathing fix |
+| v2.17.0 | [#2100](https://github.com/opensearch-project/dashboards-observability/pull/2100) | Fix missing MDS ID in flyout |
+
+## References
+
+- [Trace Analytics Documentation](https://docs.opensearch.org/latest/observing-your-data/trace/index/): Official documentation
+- [Trace Analytics Plugin](https://docs.opensearch.org/latest/observing-your-data/trace/ta-dashboards/): Dashboards plugin guide
+- [Jaeger Trace Data](https://docs.opensearch.org/latest/observing-your-data/trace/trace-analytics-jaeger/): Jaeger integration
+- [Simple Schema for Observability](https://docs.opensearch.org/latest/observing-your-data/ss4o/): SS4O schema
+- [Application Analytics](https://docs.opensearch.org/latest/observing-your-data/app-analytics/): App analytics documentation
+- [Issue #1878](https://github.com/opensearch-project/dashboards-observability/issues/1878): MDS rendering issue
+- [Issue #1931](https://github.com/opensearch-project/dashboards-observability/issues/1931): App Analytics crash
+
+## Change History
+
+- **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
+- **v2.17.0** (2024-09-17): Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements, Getting Started link fixes, org.json security update
