@@ -149,3 +149,7 @@
 ## job-scheduler
 
 - [Job Scheduler Bug Fixes](features/job-scheduler/job-scheduler-bugfixes.md)
+
+## index-management
+
+- [Index Management Bugfixes](features/index-management/index-management-bugfixes.md)
