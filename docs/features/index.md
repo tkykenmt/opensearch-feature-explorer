@@ -95,6 +95,7 @@
 ## multi-plugin
 
 - [CI/CD & Testing Infrastructure](multi-plugin/ci-cd-testing-infrastructure.md)
+- [CI/Infrastructure Fixes](multi-plugin/ci-infrastructure-fixes.md)
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
 - [Dependency Bumps](multi-plugin/dependency-bumps.md)
 - [JDK 21 & Java Agent Migration](multi-plugin/jdk-21-java-agent-migration.md)
