@@ -27,6 +27,9 @@
 - [Maintainer Updates](features/multi-plugin/maintainer-updates.md)
 - [Release Notes and Version Updates](features/multi-plugin/release-notes-and-version-updates.md)
 
+### query-insights
+- [Query Insights Infrastructure](features/query-insights/query-insights-infrastructure.md)
+
 ## Key Features in This Release
 
 ### Generally Available
