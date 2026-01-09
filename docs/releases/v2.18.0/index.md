@@ -9,6 +9,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### OpenSearch Dashboards
 
 - [CI/CD & Build Improvements](features/opensearch-dashboards/cicd-build-dashboards.md) - Switch OSD Optimizer to content-based hashing for CI compatibility
+- [Input Control Visualization](features/opensearch-dashboards/input-control-visualization.md) - Fix disabled ValidatedDualRange component sizing
 - [Data Source Permissions](features/opensearch-dashboards/data-source-permissions.md) - Fix missing functions in data source permission saved object wrapper
 - [Dynamic Config](features/opensearch-dashboards/dynamic-config.md) - Bugfixes for config saved objects, global config discovery, and index/alias validation
 - [i18n & Localization](features/opensearch-dashboards/i18n-localization.md) - i18n validation workflows, precommit hook, translation fixes, language selection fix
