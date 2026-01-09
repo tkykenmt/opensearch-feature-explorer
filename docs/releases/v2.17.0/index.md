@@ -35,6 +35,7 @@
 - [Job Scheduler Bugfixes](features/job-scheduler/job-scheduler-bugfixes.md)
 
 ### security
+- [Alerting Comments Security](features/security/alerting-comments.md)
 - [Dependency Bumps](features/security/dependency-bumps.md)
 - [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)
 
