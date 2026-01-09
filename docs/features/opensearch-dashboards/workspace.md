@@ -127,6 +127,19 @@ opensearch_security.multitenancy.enabled: false
 | v3.0.0 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |
 | v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors |
 | v3.0.0 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |
+| v2.18.0 | [#8435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8435) | Remove What's New card in workspace overview |
+| v2.18.0 | [#8445](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8445) | Fix use case hidden features not accessible |
+| v2.18.0 | [#8524](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8524) | Fix Analytics/Essential use case overview crash |
+| v2.18.0 | [#8541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8541) | Fix workspace selector jump on hover/click |
+| v2.18.0 | [#8570](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8570) | Fix workspace update navigation modal issue |
+| v2.18.0 | [#8581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8581) | Disable copy all button when no saved objects |
+| v2.18.0 | [#8592](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8592) | Fix workspace selector style alignment |
+| v2.18.0 | [#8606](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8606) | Fix duplicate visualizations in dashboard |
+| v2.18.0 | [#8648](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8648) | Fix assets page crash after permission revocation |
+| v2.18.0 | [#8649](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8649) | Finetune search bar and workspace selector style |
+| v2.18.0 | [#8675](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8675) | Fix non-workspace admin defaultIndex update |
+| v2.18.0 | [#8718](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8718) | Fix index pattern issues |
+| v2.18.0 | [#8719](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8719) | Generate short URL with workspace info |
 
 ## References
 
@@ -136,8 +149,9 @@ opensearch_security.multitenancy.enabled: false
 - [Manage Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/manage-workspace/): Workspace management guide
 - [Workspace ACLs](https://docs.opensearch.org/3.0/dashboards/workspace/workspace-acl/): Access control documentation
 - [Workspaces APIs](https://docs.opensearch.org/3.0/dashboards/workspace/apis/): API reference
+- [v2.18 Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): v2.18 workspace documentation
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
-- **v2.18.0**: Initial workspace feature introduction
+- **v2.18.0** (2024-11-05): 13 bug fixes including UI/UX improvements (workspace selector styling, alignment), page crash fixes (overview pages, assets page), permission handling (non-admin defaultIndex, permission revocation), navigation fixes (short URLs, inspect button), and index pattern scope isolation
