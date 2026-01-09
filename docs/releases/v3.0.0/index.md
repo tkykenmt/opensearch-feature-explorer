@@ -99,6 +99,7 @@
 
 - [ML Commons Blueprints & Tutorials](features/ml-commons/ml-commons-blueprints-tutorials.md)
 - [ML Commons / MCP](features/ml-commons/ml-commons-mcp.md)
+- [ML Commons Bugfixes and Improvements](features/ml-commons/ml-commons-bugfixes.md)
 
 ## anomaly-detection
 
