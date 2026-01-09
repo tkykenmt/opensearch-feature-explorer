@@ -30,6 +30,7 @@
 - [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
 - [Lucene Similarity](features/opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
+- [Node Roles & Configuration](features/opensearch/node-roles-and-configuration.md)
 - [Nodes Info API Changes](features/opensearch/nodes-info-api-changes.md)
 - [Refresh Task Scheduling](features/opensearch/refresh-task-scheduling.md)
 - [Search Backpressure](features/opensearch/search-backpressure.md)
