@@ -2,6 +2,7 @@
 
 ## neural-search
 
+- [Batch Ingestion](neural-search/batch-ingestion.md)
 - [Neural Search Compatibility](neural-search/neural-search-compatibility.md)
 - [Neural Sparse Search](neural-search/neural-sparse-search.md)
 - [Semantic Field](neural-search/semantic-field.md)
