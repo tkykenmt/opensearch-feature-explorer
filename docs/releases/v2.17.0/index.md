@@ -7,6 +7,9 @@
 ### alerting
 - [Alerting Bugfixes](features/alerting/alerting-bugfixes.md)
 
+### anomaly-detection
+- [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
+
 ### dashboards-maps
 - [Maps Plugin Bugfixes](features/dashboards-maps/maps-plugin-bugfixes.md)
 

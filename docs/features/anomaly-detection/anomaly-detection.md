@@ -236,6 +236,10 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 | v3.0.0 | [#1424](https://github.com/opensearch-project/anomaly-detection/pull/1424) | Fix breaking changes for 3.0.0 release |
 | v3.0.0 | [#1450](https://github.com/opensearch-project/anomaly-detection/pull/1450) | Java Agent migration (SecurityManager removal) |
 | v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Dual cluster gradle run for development |
+| v2.17.0 | [#1287](https://github.com/opensearch-project/anomaly-detection/pull/1287) | Prevent resetting latest flag of real-time when starting historical |
+| v2.17.0 | [#1292](https://github.com/opensearch-project/anomaly-detection/pull/1292) | Correct handling of null max aggregation values |
+| v2.17.0 | [#828](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/828) | Fix dataSourceId not showing in URL |
+| v2.17.0 | [#837](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/837) | Remove dataSourceFilter that breaks DataSourceView |
 
 ## References
 
@@ -249,4 +253,5 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 ## Change History
 
 - **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
+- **v2.17.0** (2024-09-17): Bugfixes for real-time/historical task flag management, null aggregation handling, Dashboards data source integration
 - **v2.x**: High-cardinality detection, historical analysis, custom result indices
