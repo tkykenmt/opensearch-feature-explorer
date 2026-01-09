@@ -702,7 +702,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 577
     },
     {
       "name": "k-NN Performance & Engine",
@@ -794,7 +795,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 578
     },
     {
       "name": "Notifications Fit & Finish",
@@ -820,7 +822,8 @@
           "category": "enhancement",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 579
     },
     {
       "name": "Alerting Bugfixes",
@@ -876,7 +879,8 @@
           "category": "bugfix",
           "repository": "alerting"
         }
-      ]
+      ],
+      "issue_number": 580
     },
     {
       "name": "Anomaly Detection Bugfixes",
@@ -902,7 +906,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 581
     },
     {
       "name": "Dashboards Maps",
@@ -916,7 +921,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 582
     },
     {
       "name": "Dashboards i18n",
@@ -930,7 +936,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 583
     },
     {
       "name": "Notifications Bugfixes",
@@ -962,7 +969,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 584
     },
     {
       "name": "Reporting Bugfixes",
@@ -989,7 +997,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 585
     },
     {
       "name": "Flow Framework Bugfixes",
@@ -1003,7 +1012,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 586
     },
     {
       "name": "Index Management Bugfixes",
@@ -1029,7 +1039,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 587
     },
     {
       "name": "Job Scheduler",
@@ -1043,7 +1054,8 @@
           "category": "bugfix",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 588
     },
     {
       "name": "ML Commons Bugfixes",
@@ -1117,7 +1129,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 589
     },
     {
       "name": "Neural Search Bugfixes",
@@ -1131,7 +1144,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 590
     },
     {
       "name": "Observability Bugfixes",
@@ -1211,7 +1225,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 591
     },
     {
       "name": "Query Workbench Bugfixes",
@@ -1237,7 +1252,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 592
     },
     {
       "name": "Security Bugfixes",
@@ -1300,7 +1316,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 593
     },
     {
       "name": "Security Analytics IOC",
@@ -1326,7 +1343,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 594
     },
     {
       "name": "Threat Intel",
@@ -1347,7 +1365,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 595
     },
     {
       "name": "Security Analytics Findings",
@@ -1361,7 +1380,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 596
     },
     {
       "name": "Security Analytics Correlation",
