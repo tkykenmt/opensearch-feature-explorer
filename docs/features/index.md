@@ -83,6 +83,7 @@
 
 - [Build Maintenance](dashboards-search-relevance/build-maintenance.md)
 - [Documentation Maintenance](dashboards-search-relevance/documentation-maintenance.md)
+- [Search Comparison](dashboards-search-relevance/search-comparison.md)
 
 ## dashboards-flow-framework
 

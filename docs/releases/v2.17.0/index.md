@@ -36,6 +36,7 @@
 ### dashboards-search-relevance
 - [Dashboards Bugfixes](features/dashboards-search-relevance/dashboards-bugfixes.md)
 - [Documentation Link Updates](features/dashboards-search-relevance/documentation-link-updates.md)
+- [Search Comparison Card](features/dashboards-search-relevance/search-comparison.md)
 
 ### opensearch-dashboards
 - [Dashboards UI Updates](features/opensearch-dashboards/dashboards-ui-updates.md)
