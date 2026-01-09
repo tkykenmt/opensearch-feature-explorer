@@ -19,6 +19,9 @@
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
 
+### security-dashboards
+- [Security Dashboards Bugfixes](features/security-dashboards/security-dashboards-bugfixes.md)
+
 ### dashboards-plugins
 - [CVE Fixes](features/dashboards-plugins/cve-fixes.md)
 
