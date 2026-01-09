@@ -175,6 +175,13 @@ POST /_plugins/_ppl
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge Calcite engine to main |
+| v2.17.0 | [#2842](https://github.com/opensearch-project/sql/pull/2842) | Boolean function in PPL case insensitivity fix |
+| v2.17.0 | [#2884](https://github.com/opensearch-project/sql/pull/2884) | Restrict UDF functions in async query API |
+| v2.17.0 | [#2890](https://github.com/opensearch-project/sql/pull/2890) | Update SqlBaseParser for build fix |
+| v2.17.0 | [#2972](https://github.com/opensearch-project/sql/pull/2972) | Fix SparkExecutionEngineConfigClusterSetting deserialize issue |
+| v2.17.0 | [#2982](https://github.com/opensearch-project/sql/pull/2982) | Fix jobType for Batch and IndexDML query |
+| v2.17.0 | [#2983](https://github.com/opensearch-project/sql/pull/2983) | Fix handler for existing query |
+| v2.17.0 | [#2996](https://github.com/opensearch-project/sql/pull/2996) | Fix BWC integration test |
 | v3.0.0 | [#3243](https://github.com/opensearch-project/sql/pull/3243) | Add `json` function and `cast(x as json)` |
 | v3.0.0 | [#3263](https://github.com/opensearch-project/sql/pull/3263) | Improved patterns command with Brain algorithm |
 | v3.0.0 | [#2806](https://github.com/opensearch-project/sql/pull/2806) | Support line and block comments in PPL |
@@ -199,3 +206,4 @@ POST /_plugins/_ppl
 ## Change History
 
 - **v3.0.0** (2025-05-06): Major update - Apache Calcite integration (V3 engine), new PPL commands (lookup, join, subsearch), json functions, improved patterns command with Brain algorithm, comment support, function framework refactoring; breaking changes include removal of SparkSQL, DELETE statement, DSL format, scroll API, and opendistro settings
+- **v2.17.0** (2024-09-17): Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes
