@@ -27,6 +27,9 @@
 - [Maintainer Updates](features/multi-plugin/maintainer-updates.md)
 - [Release Notes and Version Updates](features/multi-plugin/release-notes-and-version-updates.md)
 
+### performance-analyzer
+- [Performance Analyzer Bugfixes](features/performance-analyzer/performance-analyzer-bugfixes.md)
+
 ### query-insights
 - [Query Insights Infrastructure](features/query-insights/query-insights-infrastructure.md)
 
