@@ -44,6 +44,7 @@
 - [Top N API Documentation Update](features/documentation-website/top-n-api-documentation.md)
 
 ### flow-framework
+- [Flow Framework Access Control](features/flow-framework/flow-framework-access-control.md)
 - [Flow Framework Connector Tools](features/flow-framework/flow-framework-connector-tools.md)
 
 ### index-management
