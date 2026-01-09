@@ -65,6 +65,7 @@
 ## dashboards-flow-framework
 
 - [Dashboards BWC](features/dashboards-flow-framework/dashboards-bwc.md)
+- [Data Ingestion Dashboards](features/dashboards-flow-framework/data-ingestion-dashboards.md)
 
 ## flow-framework
 

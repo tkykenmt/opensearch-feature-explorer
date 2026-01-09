@@ -58,6 +58,7 @@
 ## dashboards-flow-framework
 
 - [Backward Compatibility](dashboards-flow-framework/backward-compatibility.md)
+- [Data Ingestion](dashboards-flow-framework/data-ingestion.md)
 
 ## flow-framework
 
