@@ -100,7 +100,7 @@ flowchart TB
 | `plugins.sql.slowlog` | Slow query log threshold (seconds) | `2` |
 | `plugins.sql.cursor.keep_alive` | Cursor keep alive duration | `1m` |
 | `plugins.query.memory_limit` | Query memory limit | `85%` |
-| `plugins.query.size_limit` | Maximum query result size | `200` |
+| `plugins.query.size_limit` | Maximum query result size | `10000` (v2.17.0+), `200` (prior) |
 | `plugins.query.field_type_tolerance` | Handle array datasets | `true` |
 
 ### PPL Commands (V3)
@@ -175,6 +175,10 @@ POST /_plugins/_ppl
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge Calcite engine to main |
+| v2.17.0 | [#2877](https://github.com/opensearch-project/sql/pull/2877) | Change default value of plugins.query.size_limit to 10000 |
+| v2.17.0 | [#2896](https://github.com/opensearch-project/sql/pull/2896) | Support common format geo point |
+| v2.17.0 | [#2906](https://github.com/opensearch-project/sql/pull/2906) | Add TakeOrderedOperator |
+| v2.17.0 | [#2970](https://github.com/opensearch-project/sql/pull/2970) | IF function complex predicate support in PPL |
 | v2.17.0 | [#2842](https://github.com/opensearch-project/sql/pull/2842) | Boolean function in PPL case insensitivity fix |
 | v2.17.0 | [#2884](https://github.com/opensearch-project/sql/pull/2884) | Restrict UDF functions in async query API |
 | v2.17.0 | [#2890](https://github.com/opensearch-project/sql/pull/2890) | Update SqlBaseParser for build fix |
@@ -206,4 +210,4 @@ POST /_plugins/_ppl
 ## Change History
 
 - **v3.0.0** (2025-05-06): Major update - Apache Calcite integration (V3 engine), new PPL commands (lookup, join, subsearch), json functions, improved patterns command with Brain algorithm, comment support, function framework refactoring; breaking changes include removal of SparkSQL, DELETE statement, DSL format, scroll API, and opendistro settings
-- **v2.17.0** (2024-09-17): Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes
+- **v2.17.0** (2024-09-17): Enhancements - increased default query size limit (200 → 10000), common geo point format support, TakeOrderedOperator for query optimization, complex predicate support in PPL IF function; Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes
