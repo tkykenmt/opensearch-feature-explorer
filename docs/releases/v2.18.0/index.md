@@ -53,3 +53,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [MDS Integration Support](features/opensearch-dashboards/mds-integration-support.md) - Multi Data Source support for Integration feature
 - [Experimental Features](features/opensearch-dashboards/experimental-features.md) - User personal settings with scoped uiSettings and User Settings page
 - [Security CVE Fixes](features/opensearch-dashboards/security-cve-fixes.md) - Security updates for dns-sync, axios, path-to-regexp, dompurify, elliptic, micromatch
+
+### Multi-Plugin
+
+- [Search Autocomplete](features/multi-plugin/search-autocomplete.md) - Fix search_as_you_type multi-fields support and enhanced Dashboards autocomplete UX
