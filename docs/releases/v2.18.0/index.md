@@ -38,3 +38,4 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Async Query](features/opensearch-dashboards/async-query.md) - Frontend polling for async search, async PPL support for S3 datasets
 - [Dashboards Improvements](features/opensearch-dashboards/dashboards-improvements.md) - Loading indicator with time counter for query results
 - [MDS Integration Support](features/opensearch-dashboards/mds-integration-support.md) - Multi Data Source support for Integration feature
+- [Experimental Features](features/opensearch-dashboards/experimental-features.md) - User personal settings with scoped uiSettings and User Settings page
