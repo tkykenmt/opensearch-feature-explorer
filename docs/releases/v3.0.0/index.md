@@ -119,6 +119,7 @@
 ## dashboards-observability
 
 - [Observability Notebooks](features/dashboards-observability/observability-notebooks.md)
+- [Observability / Traces](features/dashboards-observability/observability-traces.md)
 
 ## dashboards-maps
 
