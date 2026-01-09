@@ -9,6 +9,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### OpenSearch
 
 - [Multi-Search API](features/opensearch/multi-search-api.md) - Fix multi-search with template doesn't return status code
+- [Node Join/Leave](features/opensearch/node-join-leave.md) - Fix race condition in node-join and node-left loop
 - [Streaming Indexing](features/opensearch/streaming-indexing.md) - Bug fixes for streaming bulk request hangs and newline termination errors
 - [Replication](features/opensearch/replication.md) - Fix array hashCode calculation in ResyncReplicationRequest
 - [Task Management](features/opensearch/task-management.md) - Fix missing fields in task index mapping for proper task result storage
