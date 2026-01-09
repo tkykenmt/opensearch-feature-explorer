@@ -75,6 +75,7 @@
 
 ### sql
 - [Flint Index Operations](features/sql/flint-index-operations.md)
+- [Security Lake Data Source](features/sql/security-lake-data-source.md)
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
 
 ### k-nn
