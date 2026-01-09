@@ -9,6 +9,7 @@
 
 ### anomaly-detection
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
+- [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md)
 
 ### common
 - [Common Infrastructure](features/common/common-infrastructure.md)
