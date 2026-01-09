@@ -62,6 +62,7 @@
 - [Dynamic Config](opensearch-dashboards/dynamic-config.md)
 - [i18n & Localization](opensearch-dashboards/i18n-localization.md)
 - [Input Control Visualization](opensearch-dashboards/input-control-visualization.md)
+- [Navigation](opensearch-dashboards/navigation.md)
 - [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
