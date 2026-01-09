@@ -68,6 +68,7 @@
 ### neural-search
 - [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md)
 - [Neural Search Hybrid Query Bugfixes](features/neural-search/neural-search-hybrid-query.md)
+- [Neural Search Rescore](features/neural-search/neural-search-rescore.md)
 
 ### multi-plugin
 - [CI/Infrastructure Fixes](features/multi-plugin/ci-infrastructure-fixes.md)
