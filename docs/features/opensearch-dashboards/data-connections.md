@@ -118,12 +118,14 @@ data_source:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255) | Support data connections and multi-select table in dataset picker |
 | v2.18.0 | [#8460](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8460) | Replace segmented button with tabs |
 | v2.18.0 | [#8492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8492) | Add DataSource type display and Discover redirection |
 | v2.18.0 | [#8503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8503) | Fix hide local cluster flag in sample data page |
 | v2.18.0 | [#8537](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8537) | Mute non-MDS endpoints when MDS enabled |
 | v2.18.0 | [#8544](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8544) | Direct query connections fit and finish fixes |
 | v2.18.0 | [#8713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8713) | Add MDS support to auto-complete API |
+| v2.17.0 | [#7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925) | Add data-connection saved object type for external connections |
 | v2.16.0 | [#7143](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7143) | Initial migration of direct query data source to data source management |
 
 ## References
@@ -135,5 +137,6 @@ data_source:
 
 ## Change History
 
-- **v2.18.0** (2024-10-22): UI improvements (tabs navigation, type display), MDS endpoint unification, auto-complete MDS support, fit and finish fixes
+- **v2.18.0** (2024-10-22): Dataset picker data connections support (multi-select table, pagination, search), UI improvements (tabs navigation, type display), MDS endpoint unification, auto-complete MDS support, fit and finish fixes
+- **v2.17.0** (2024-09-17): Added data-connection saved object type for external connections (CloudWatch, Security Lake)
 - **v2.16.0**: Initial migration of direct query data source to data source management plugin
