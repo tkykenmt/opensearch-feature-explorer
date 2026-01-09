@@ -246,3 +246,7 @@
 ## security-analytics-dashboards
 
 - [Security Analytics Dashboards Plugin](security-analytics-dashboards/security-analytics-dashboards-plugin.md)
+
+## opensearch-system-templates
+
+- [System Templates](opensearch-system-templates/system-templates.md)
