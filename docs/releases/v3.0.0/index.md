@@ -159,3 +159,7 @@
 ## index-management
 
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md)
+
+## common-utils
+
+- [Common Utils Bugfixes and Enhancements](features/common-utils/common-utils-bugfixes.md)
