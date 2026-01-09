@@ -23,6 +23,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Test Fixes](features/opensearch/test-fixes.md) - Fix flaky test in ApproximatePointRangeQueryTests by adjusting totalHits assertion logic
 - [Nested Aggregations](features/opensearch/nested-aggregations.md) - Fix infinite loop in nested aggregations with deep-level nested objects
 - [Code Cleanup](features/opensearch/code-cleanup.md) - Query approximation simplification, Stream API optimization, typo fix
+- [Search Request Stats](features/opensearch/search-request-stats.md) - Enable coordinator search.request_stats_enabled by default
 
 ### OpenSearch Dashboards
 
