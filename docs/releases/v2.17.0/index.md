@@ -12,6 +12,7 @@
 - [Trace Analytics Bugfixes](features/observability/trace-analytics-bugfixes.md)
 
 ### dashboards-search-relevance
+- [Dashboards Bugfixes](features/dashboards-search-relevance/dashboards-bugfixes.md)
 - [Documentation Link Updates](features/dashboards-search-relevance/documentation-link-updates.md)
 
 ### documentation-website
