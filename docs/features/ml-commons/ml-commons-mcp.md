@@ -268,6 +268,8 @@ POST /_plugins/_ml/models/_register
 |---------|-----|-------------|
 | v3.0.0 | [#3721](https://github.com/opensearch-project/ml-commons/pull/3721) | Onboard MCP - MCP connector support |
 | v3.0.0 | [#3781](https://github.com/opensearch-project/ml-commons/pull/3781) | Support MCP server in OpenSearch |
+| v3.0.0 | [#3803](https://github.com/opensearch-project/ml-commons/pull/3803) | Support MCP session management |
+| v3.0.0 | [#3810](https://github.com/opensearch-project/ml-commons/pull/3810) | Support customized message endpoint |
 | v3.0.0 | [#3716](https://github.com/opensearch-project/ml-commons/pull/3716) | Plan, Execute and Reflect Agent Type |
 | v3.0.0 | [#3731](https://github.com/opensearch-project/ml-commons/pull/3731) | Support custom prompts for PlanExecuteReflect agent |
 | v3.0.0 | [#3712](https://github.com/opensearch-project/ml-commons/pull/3712) | Function calling for OpenAI v1, Bedrock Claude, DeepSeek |
@@ -277,6 +279,16 @@ POST /_plugins/_ml/models/_register
 | v3.0.0 | [#3658](https://github.com/opensearch-project/ml-commons/pull/3658) | Add parser for ModelTensorOutput and ModelTensors |
 | v3.0.0 | [#3243](https://github.com/opensearch-project/ml-commons/pull/3243) | Use _list/indices API in CatIndexTool |
 | v3.0.0 | [#3688](https://github.com/opensearch-project/ml-commons/pull/3688) | Deprecate batch ingestion REST API |
+| v3.0.0 | [#3652](https://github.com/opensearch-project/ml-commons/pull/3652) | Fix circuit breaker issue for remote model |
+| v3.0.0 | [#3814](https://github.com/opensearch-project/ml-commons/pull/3814) | Exclude circuit breaker for Agent |
+| v3.0.0 | [#3720](https://github.com/opensearch-project/ml-commons/pull/3720) | Fix ListIndexTool and SearchIndexTool |
+| v3.0.0 | [#3754](https://github.com/opensearch-project/ml-commons/pull/3754) | Fix SearchIndexTool NaN handling |
+| v3.0.0 | [#3755](https://github.com/opensearch-project/ml-commons/pull/3755) | Handle model response without text |
+| v3.0.0 | [#3756](https://github.com/opensearch-project/ml-commons/pull/3756) | Allow user control of react agent max_iterations |
+| v3.0.0 | [#3759](https://github.com/opensearch-project/ml-commons/pull/3759) | Fix null GetResponse handling |
+| v3.0.0 | [#3730](https://github.com/opensearch-project/ml-commons/pull/3730) | Fix input/output map length error message |
+| v3.0.0 | [#3700](https://github.com/opensearch-project/ml-commons/pull/3700) | Fix config index masterkey for multi-tenancy |
+| v3.0.0 | [#3768](https://github.com/opensearch-project/ml-commons/pull/3768) | Fix metadata client responses |
 
 ## References
 
