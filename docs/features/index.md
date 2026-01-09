@@ -53,6 +53,7 @@
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Data Importer](opensearch-dashboards/data-importer.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
+- [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
 - [Workspace](opensearch-dashboards/workspace.md)
