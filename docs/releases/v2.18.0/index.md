@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
+- [Index Settings](features/opensearch/index-settings.md) - Fix default value handling when setting index.number_of_replicas and index.number_of_routing_shards to null
 - [Multi-Search API](features/opensearch/multi-search-api.md) - Fix multi-search with template doesn't return status code
 - [Node Join/Leave](features/opensearch/node-join-leave.md) - Fix race condition in node-join and node-left loop
 - [Streaming Indexing](features/opensearch/streaming-indexing.md) - Bug fixes for streaming bulk request hangs and newline termination errors
