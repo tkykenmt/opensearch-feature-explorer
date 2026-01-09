@@ -69,6 +69,7 @@
 
 ## flow-framework
 
+- [Flow Framework](flow-framework/flow-framework.md)
 - [Text-to-Visualization Templates](flow-framework/text-to-visualization-templates.md)
 
 ## sql

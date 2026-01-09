@@ -77,6 +77,7 @@
 ## flow-framework
 
 - [Flow Framework Templates](features/flow-framework/flow-framework-templates.md)
+- [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md)
 
 ## sql
 
