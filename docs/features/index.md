@@ -49,6 +49,7 @@
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards Frontend Cleanup](opensearch-dashboards/dashboards-frontend-cleanup.md)
+- [Dashboards UI Updates (OUI)](opensearch-dashboards/dashboards-ui-updates.md)
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Data Importer](opensearch-dashboards/data-importer.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)

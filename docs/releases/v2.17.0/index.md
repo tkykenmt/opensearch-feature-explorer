@@ -29,6 +29,9 @@
 - [Dashboards Bugfixes](features/dashboards-search-relevance/dashboards-bugfixes.md)
 - [Documentation Link Updates](features/dashboards-search-relevance/documentation-link-updates.md)
 
+### opensearch-dashboards
+- [Dashboards UI Updates](features/opensearch-dashboards/dashboards-ui-updates.md)
+
 ### documentation-website
 - [Top N API Documentation Update](features/documentation-website/top-n-api-documentation.md)
 
