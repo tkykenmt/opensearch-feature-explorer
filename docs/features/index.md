@@ -33,6 +33,7 @@
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
+- [Replication](opensearch/replication.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Star Tree Index](opensearch/star-tree-index.md)

@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
+- [Replication](features/opensearch/replication.md) - Fix array hashCode calculation in ResyncReplicationRequest
 - [Test Fixes](features/opensearch/test-fixes.md) - Fix flaky test in ApproximatePointRangeQueryTests by adjusting totalHits assertion logic
 
 ### OpenSearch Dashboards
