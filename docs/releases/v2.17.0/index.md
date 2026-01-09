@@ -4,6 +4,9 @@
 
 ## Feature Reports
 
+### alerting
+- [Alerting Bugfixes](features/alerting/alerting-bugfixes.md)
+
 ### dashboards-maps
 - [Maps Plugin Bugfixes](features/dashboards-maps/maps-plugin-bugfixes.md)
 
