@@ -39,6 +39,9 @@
 ### query-insights
 - [Query Insights Infrastructure](features/query-insights/query-insights-infrastructure.md)
 
+### sql
+- [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
+
 ## Key Features in This Release
 
 ### Generally Available
