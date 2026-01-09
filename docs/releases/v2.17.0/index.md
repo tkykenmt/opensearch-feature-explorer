@@ -86,6 +86,7 @@
 ### multi-plugin
 - [CI/Infrastructure Fixes](features/multi-plugin/ci-infrastructure-fixes.md)
 - [Maintainer Updates](features/multi-plugin/maintainer-updates.md)
+- [Multi-Data Source Support](features/multi-plugin/multi-data-source-support.md)
 - [Release Notes and Version Updates](features/multi-plugin/release-notes-and-version-updates.md)
 
 ### performance-analyzer
