@@ -23,6 +23,7 @@
 
 ### dashboards-observability
 - [Observability Enhancements](features/dashboards-observability/observability-enhancements.md)
+- [Observability Multi-Data Source Support](features/observability/observability-multi-data-source-support.md)
 - [Observability Notebooks Bugfixes](features/dashboards-observability/observability-notebooks.md)
 - [Observability UI Updates](features/observability/observability-ui-updates.md)
 - [Observability Workspace Integration](features/observability/observability-workspace-integration.md)
