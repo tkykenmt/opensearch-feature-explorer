@@ -59,6 +59,7 @@
 - [Data Importer](opensearch-dashboards/data-importer.md)
 - [Data Source Permissions](opensearch-dashboards/data-source-permissions.md)
 - [Dependency Updates](opensearch-dashboards/dependency-updates.md)
+- [Dev Tools](opensearch-dashboards/dev-tools.md)
 - [Discover](opensearch-dashboards/discover.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
 - [Dynamic Config](opensearch-dashboards/dynamic-config.md)
