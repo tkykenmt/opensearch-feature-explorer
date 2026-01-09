@@ -125,6 +125,10 @@
 
 - [Observability Integrations](observability/observability-integrations.md)
 
+## performance-analyzer
+
+- [Performance Analyzer](performance-analyzer/performance-analyzer.md)
+
 ## dashboards-observability
 
 - [Observability Notebooks](dashboards-observability/observability-notebooks.md)
