@@ -115,6 +115,7 @@
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
 - [k-NN Iterative Graph Build](features/k-nn/k-nn-iterative-graph-build.md)
 - [k-NN Model Metadata](features/k-nn/k-nn-model-metadata.md)
+- [k-NN Space Type Configuration](features/k-nn/k-nn-space-type-configuration.md)
 
 ### cross-cluster-replication
 - [Cross-Cluster Replication Bugfixes](features/cross-cluster-replication/cross-cluster-replication-bugfixes.md)
