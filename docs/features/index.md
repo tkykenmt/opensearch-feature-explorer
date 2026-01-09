@@ -148,6 +148,10 @@
 
 - [Maps & Geospatial](dashboards-maps/maps-geospatial.md)
 
+## dashboards-notifications
+
+- [OpenSearch Dashboards Notifications](dashboards-notifications/dashboards-notifications.md)
+
 ## custom-codecs
 
 - [Custom Codecs](custom-codecs/custom-codecs.md)

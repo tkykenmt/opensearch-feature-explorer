@@ -7,6 +7,9 @@
 ### dashboards-maps
 - [Maps Plugin Bugfixes](features/dashboards-maps/maps-plugin-bugfixes.md)
 
+### dashboards-notifications
+- [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md)
+
 ### dashboards-observability
 - [Observability Notebooks Bugfixes](features/dashboards-observability/observability-notebooks.md)
 - [Trace Analytics Bugfixes](features/observability/trace-analytics-bugfixes.md)
