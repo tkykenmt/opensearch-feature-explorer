@@ -63,6 +63,7 @@
 ### ml-commons
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md)
 - [ML Commons Connector Enhancements](features/ml-commons/ml-commons-connector-enhancements.md)
+- [ML Commons Memory Metadata](features/ml-commons/ml-commons-memory-metadata.md)
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
 - [ML Config API](features/ml-commons/ml-config-api.md)
 - [ML Inference Processor - One-to-One Support](features/ml-commons/ml-inference-processor.md)
