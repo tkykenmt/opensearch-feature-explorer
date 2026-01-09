@@ -9,6 +9,7 @@
 
 ### dashboards-observability
 - [Observability Notebooks Bugfixes](features/dashboards-observability/observability-notebooks.md)
+- [Trace Analytics Bugfixes](features/observability/trace-analytics-bugfixes.md)
 
 ### dashboards-search-relevance
 - [Documentation Link Updates](features/dashboards-search-relevance/documentation-link-updates.md)
