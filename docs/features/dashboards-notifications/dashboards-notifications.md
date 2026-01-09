@@ -89,6 +89,7 @@ The plugin uses the following URL parameters for state management:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.17.0 | [#234](https://github.com/opensearch-project/dashboards-notifications/pull/234) | Change parent item name for new navigation |
 | v2.17.0 | [#242](https://github.com/opensearch-project/dashboards-notifications/pull/242) | Fix link checker |
 | v2.17.0 | [#244](https://github.com/opensearch-project/dashboards-notifications/pull/244) | Persist dataSourceId across applications |
 | v2.14.0 | [#186](https://github.com/opensearch-project/dashboards-notifications/pull/186) | Added MDS Support |
@@ -102,6 +103,6 @@ The plugin uses the following URL parameters for state management:
 
 ## Change History
 
-- **v2.17.0** (2024-09-17): Fixed link checker CI, added dataSourceId persistence for new navigation
+- **v2.17.0** (2024-09-17): Changed navigation parent item name to "Notification channels", added description for left navigation, fixed link checker CI, added dataSourceId persistence for new navigation
 - **v2.15.0**: Bug fixes for MDS support in getServerFeatures API
 - **v2.14.0**: Added Multi-Data-Source (MDS) support
