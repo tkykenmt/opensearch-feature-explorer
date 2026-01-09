@@ -19,6 +19,7 @@
 ### multi-plugin
 - [CI/Infrastructure Fixes](features/multi-plugin/ci-infrastructure-fixes.md)
 - [Maintainer Updates](features/multi-plugin/maintainer-updates.md)
+- [Release Notes and Version Updates](features/multi-plugin/release-notes-and-version-updates.md)
 
 ## Key Features in This Release
 
