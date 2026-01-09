@@ -56,6 +56,7 @@
 - [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
+- [Sample Data](opensearch-dashboards/sample-data.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 
 ## security
