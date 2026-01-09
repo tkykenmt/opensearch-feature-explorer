@@ -152,6 +152,7 @@
 
 - [Anomaly Detection](anomaly-detection/anomaly-detection.md)
 - [Anomaly Detection Admin Backend Role Bypass](anomaly-detection/anomaly-detection-admin-backend-role-bypass.md)
+- [Anomaly Detection Missing Data Handling](anomaly-detection/anomaly-detection-missing-data-handling.md)
 - [Dual Cluster Development Environment](anomaly-detection/dual-cluster-development.md)
 - [Remote/Multi-Index Support](anomaly-detection/remote-multi-index-support.md)
 

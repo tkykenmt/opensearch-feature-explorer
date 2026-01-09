@@ -11,6 +11,7 @@
 - [Anomaly Detection Admin Backend Role Bypass](features/anomaly-detection/anomaly-detection-admin-backend-role-bypass.md)
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
 - [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md)
+- [Anomaly Detection Missing Data Handling](features/anomaly-detection/anomaly-detection-missing-data-handling.md)
 - [Remote/Multi-Index Support](features/anomaly-detection/remote-multi-index-support.md)
 
 ### common
