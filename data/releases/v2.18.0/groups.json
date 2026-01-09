@@ -1395,7 +1395,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 597
     },
     {
       "name": "Security Analytics Data Source",
@@ -1433,7 +1434,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 598
     },
     {
       "name": "k-NN Documentation",
@@ -1447,7 +1449,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 599
     },
     {
       "name": "SQL Error Handling",
@@ -1467,7 +1470,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 600
     },
     {
       "name": "SQL Query Fixes",
@@ -1487,7 +1491,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 601
     },
     {
       "name": "SQL Pagination",
@@ -1507,7 +1512,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 602
     },
     {
       "name": "SQL Scheduler",
@@ -1521,7 +1527,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 603
     },
     {
       "name": "Anomaly Detection Dependencies",
@@ -1535,7 +1542,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 604
     },
     {
       "name": "ML Commons Configuration",
@@ -1549,7 +1557,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 605
     },
     {
       "name": "ML Commons CI/CD",
@@ -1581,7 +1590,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 606
     },
     {
       "name": "Query CI/CD",
@@ -1595,7 +1605,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 607
     },
     {
       "name": "Release Notes",
@@ -1649,7 +1660,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 608
     },
     {
       "name": "Query Assist",
@@ -1663,7 +1675,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 609
     },
     {
       "name": "ML Commons Connectors & Blueprints",
@@ -1695,7 +1708,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 610
     },
     {
       "name": "Version Bumps & Maintenance",
@@ -1828,7 +1842,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 611
     },
     {
       "name": "Dependency Updates",
@@ -1957,7 +1972,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 612
     },
     {
       "name": "CI/CD & Build Improvements",
@@ -2041,7 +2057,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 613
     },
     {
       "name": "Query Insights Settings",
@@ -2055,7 +2072,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 614
     },
     {
       "name": "Workload Management",
@@ -2105,7 +2123,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 615
     },
     {
       "name": "Offline Nodes",
@@ -2119,7 +2138,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 616
     },
     {
       "name": "S3 Async Deletion",
