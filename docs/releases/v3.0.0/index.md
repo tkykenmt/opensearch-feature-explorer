@@ -78,6 +78,7 @@
 
 ## sql
 
+- [Calcite Query Engine](features/sql/calcite-query-engine.md)
 - [SQL/PPL Engine](features/sql/sqlppl-engine.md)
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
 - [SQL/PPL Documentation](features/sql/sql-ppl-documentation.md)
