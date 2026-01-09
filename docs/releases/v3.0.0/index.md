@@ -167,3 +167,7 @@
 ## alerting
 
 - [Alerting Bugfixes](features/alerting/alerting-bugfixes.md)
+
+## query-insights
+
+- [Query Insights](features/query-insights/query-insights.md)
