@@ -9,6 +9,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### OpenSearch Dashboards
 
 - [CI/CD & Build Improvements](features/opensearch-dashboards/cicd-build-dashboards.md) - Switch OSD Optimizer to content-based hashing for CI compatibility
+- [Data Connections Bugfixes](features/opensearch-dashboards/data-connections-bugfixes.md) - MDS endpoint unification, tabs navigation, type display, auto-complete MDS support
 - [Dependency Updates](features/opensearch-dashboards/dependency-updates-dashboards.md) - JSON11 upgrade for UTF-8 safety, chokidar bump
 - [Discover Bugfixes (2)](features/opensearch-dashboards/discover-bugfixes-2.md) - S3 fields support, deleted index pattern handling, time field display, saved query loading
 - [Maintainers](features/opensearch-dashboards/maintainers.md) - Add Hailong-am as maintainer
