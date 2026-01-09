@@ -121,6 +121,7 @@
 - [CI/Infrastructure Fixes](multi-plugin/ci-infrastructure-fixes.md)
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
 - [Dependency Bumps](multi-plugin/dependency-bumps.md)
+- [Header Redesign](multi-plugin/header-redesign.md)
 - [JDK 21 & Java Agent Migration](multi-plugin/jdk-21-java-agent-migration.md)
 - [Maintainer Updates](multi-plugin/maintainer-updates.md)
 - [Multi-Data Source Support](multi-plugin/multi-data-source-support.md)
