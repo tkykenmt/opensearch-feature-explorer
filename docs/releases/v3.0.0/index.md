@@ -139,3 +139,7 @@
 ## learning
 
 - [Learning to Rank Bug Fixes](features/learning/learning-to-rank.md)
+
+## notifications
+
+- [Java Agent Build Fix](features/notifications/java-agent-build-fix.md)

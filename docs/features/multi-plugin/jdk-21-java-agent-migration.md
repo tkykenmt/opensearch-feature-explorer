@@ -143,6 +143,7 @@ jobs:
 | v3.0.0 | [#695](https://github.com/opensearch-project/geospatial/pull/695) | geospatial | JDK 21 baseline |
 | v3.0.0 | [#723](https://github.com/opensearch-project/geospatial/pull/723) | geospatial | Gradle 8.10.2, JDK 23 |
 | v3.0.0 | [#722](https://github.com/opensearch-project/job-scheduler/pull/722) | job-scheduler | Shadow plugin update |
+| v3.0.0 | [#1013](https://github.com/opensearch-project/notifications/pull/1013) | notifications | Java Agent build fix |
 
 ## References
 
