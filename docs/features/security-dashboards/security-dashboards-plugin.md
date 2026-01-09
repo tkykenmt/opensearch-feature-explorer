@@ -109,6 +109,10 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.17.0 | [#2079](https://github.com/opensearch-project/security-dashboards-plugin/pull/2079) | Use smaller and compressed variants of buttons and form components |
+| v2.17.0 | [#2082](https://github.com/opensearch-project/security-dashboards-plugin/pull/2082) | Conditionally change where avatar shows up |
+| v2.17.0 | [#2083](https://github.com/opensearch-project/security-dashboards-plugin/pull/2083) | Adds page headers for updated UX |
+| v2.17.0 | [#2101](https://github.com/opensearch-project/security-dashboards-plugin/pull/2101) | Consistency and density improvements |
 | v2.17.0 | [#2057](https://github.com/opensearch-project/security-dashboards-plugin/pull/2057) | Do not register tenancy app if disabled in yml |
 | v2.17.0 | [#2096](https://github.com/opensearch-project/security-dashboards-plugin/pull/2096) | Fix basepath nextUrl validation |
 | v2.17.0 | [#2108](https://github.com/opensearch-project/security-dashboards-plugin/pull/2108) | UX fixes for page header |
@@ -123,4 +127,4 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 
 ## Change History
 
-- **v2.17.0** (2024-09-17): Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions
+- **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions

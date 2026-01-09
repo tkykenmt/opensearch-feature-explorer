@@ -46,6 +46,7 @@
 
 ### security-dashboards
 - [Security Dashboards Bugfixes](features/security-dashboards/security-dashboards-bugfixes.md)
+- [Security Dashboards UI Enhancements](features/security-dashboards/security-dashboards-ui.md)
 
 ### dashboards-plugins
 - [CVE Fixes](features/dashboards-plugins/cve-fixes.md)
