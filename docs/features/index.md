@@ -93,6 +93,7 @@
 ## sql
 
 - [Calcite Query Engine](sql/calcite-query-engine.md)
+- [Flint Index Operations](sql/flint-index-operations.md)
 - [SQL/PPL Engine](sql/sql-ppl-engine.md)
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
 
