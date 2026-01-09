@@ -47,6 +47,7 @@
 - [Performance Analyzer Bugfixes](features/performance-analyzer/performance-analyzer-bugfixes.md)
 
 ### query-insights
+- [Query Insights Bugfixes](features/query-insights/query-insights-bugfixes.md)
 - [Query Insights Infrastructure](features/query-insights/query-insights-infrastructure.md)
 
 ### reporting
