@@ -161,6 +161,7 @@
 - [Getting Started Workflows](dashboards-observability/getting-started-workflows.md)
 - [Observability Notebooks](dashboards-observability/observability-notebooks.md)
 - [Observability Traces](dashboards-observability/observability-traces.md)
+- [Observability Workspace Integration](dashboards-observability/observability-workspace-integration.md)
 - [Trace Analytics](dashboards-observability/trace-analytics.md)
 
 ## dashboards-maps
