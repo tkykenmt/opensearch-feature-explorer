@@ -16,6 +16,9 @@
 ### security
 - [Dependency Bumps](features/security/dependency-bumps.md)
 
+### ml-commons
+- [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
+
 ### multi-plugin
 - [CI/Infrastructure Fixes](features/multi-plugin/ci-infrastructure-fixes.md)
 - [Maintainer Updates](features/multi-plugin/maintainer-updates.md)

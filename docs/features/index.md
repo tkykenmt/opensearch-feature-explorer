@@ -114,6 +114,7 @@
 
 - [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
 - [ML Commons MCP (Model Context Protocol)](ml-commons/ml-commons-mcp.md)
+- [ML Commons Test Fixes](ml-commons/ml-commons-test-fixes.md)
 
 ## anomaly-detection
 
