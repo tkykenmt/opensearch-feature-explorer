@@ -1,21 +1,17 @@
-# i18n & Localization Bugfixes
+# i18n & Localization
 
 ## Summary
 
-OpenSearch Dashboards v2.18.0 includes significant improvements to the internationalization (i18n) infrastructure, fixing malformed translations, adding automated validation workflows, and resolving a language selection bug that caused incorrect query language persistence.
+OpenSearch Dashboards v2.18.0 delivers a comprehensive i18n overhaul with preliminary translations for 14 locales, automated validation infrastructure, and systematic fixes for dynamic i18n usage across multiple plugins.
 
 ## Details
 
 ### What's New in v2.18.0
 
-This release addresses multiple i18n-related issues:
-
-1. **Fixed malformed translations** across multiple locale files (de-DE, es-ES, fr-FR, ko-KR, tr-TR, zh-CN)
-2. **Added i18n validation to CI/CD workflows** to prevent future translation issues
-3. **Added precommit hook** for local i18n validation during development
-4. **Fixed unprefixed i18n identifiers** in examples and plugins
-5. **Fixed inconsistent i18n key names** in workspace and examples
-6. **Fixed unsupported language selection** from localStorage
+1. **Preliminary translations** for 14 locales: de-DE, es-419, es-ES, fr-CA, fr-FR, id-ID, it-IT, ja-JP, ko-KR, pt-BR, pt-PT, tr-TR, zh-CN, zh-TW
+2. **i18n validation infrastructure**: CI workflow checks and precommit hooks
+3. **i18n-check tool enhancements**: Help text, description, and `--ignore-missing-formats` flag
+4. **Plugin-specific i18n fixes**: Fixed dynamic i18n usage and identifier issues across 12 plugins
 
 ### Technical Changes
 
@@ -37,12 +33,24 @@ graph TB
     end
 ```
 
-#### New npm Scripts
+#### New Supported Locales
 
-| Script | Description |
-|--------|-------------|
-| `yarn i18n:check` | Validates i18n usage in code and translation files |
-| `yarn i18n:extract` | Extracts i18n messages from source code |
+| Locale Code | Language |
+|-------------|----------|
+| `de-DE` | German (Germany) |
+| `es-419` | Spanish (Latin America) |
+| `es-ES` | Spanish (Spain) |
+| `fr-CA` | French (Canada) |
+| `fr-FR` | French (France) |
+| `id-ID` | Indonesian |
+| `it-IT` | Italian |
+| `ja-JP` | Japanese |
+| `ko-KR` | Korean |
+| `pt-BR` | Portuguese (Brazil) |
+| `pt-PT` | Portuguese (Portugal) |
+| `tr-TR` | Turkish |
+| `zh-CN` | Chinese (Simplified) |
+| `zh-TW` | Chinese (Traditional) |
 
 #### i18n Check Options
 
@@ -55,46 +63,29 @@ graph TB
 | `--ignore-untracked` | Ignore untracked files with i18n labels | false |
 | `--ignore-missing-formats` | Ignore missing 'formats' key in locale files | true |
 
-#### Translation Fixes
+#### Plugins Fixed
 
-Fixed ICU message format variable casing issues in translation files:
-
-| Locale | Fixed Keys |
-|--------|------------|
-| de-DE | `labelWarningInfo`, `newToOpenSearchDashboardsDescription` |
-| es-ES | `newToOpenSearchDashboardsDescription` |
-| fr-FR | `labelErrorInfo`, `savedObjectAddedToContainerSuccessMessageTitle`, `attributeService.saveToLibraryError`, `dashboardWasNotSavedDangerMessage`, `newToOpenSearchDashboardsDescription`, `dashboardExistsDescription` |
-| ko-KR | `fieldNotFound`, `labelErrorInfo` |
-| tr-TR | `newToOpenSearchDashboardsDescription`, `dashboardExistsDescription` |
-| zh-CN | `dashboardWasNotSavedDangerMessage` |
-
-#### Language Selection Fix
-
-Fixed a bug where unsupported query languages cached in localStorage would be incorrectly applied when navigating between applications:
-
-```typescript
-// Before: Always used cached language
-private getDefaultLanguage() {
-  return this.storage.get('userQueryLanguage') || 
-    this.uiSettings.get(UI_SETTINGS.SEARCH_QUERY_LANGUAGE);
-}
-
-// After: Validates language support before using cached value
-private getDefaultLanguage() {
-  const lastUsedLanguage = this.storage.get('userQueryLanguage');
-  if (lastUsedLanguage && this.isLanguageSupported(lastUsedLanguage)) {
-    return lastUsedLanguage;
-  }
-  return this.uiSettings.get(UI_SETTINGS.SEARCH_QUERY_LANGUAGE);
-}
-```
+| Plugin | Issue Fixed |
+|--------|-------------|
+| core | Dynamic i18n usage |
+| console | Dynamic i18n, duplicate identifiers |
+| dataSourceManagement | Dynamic i18n, unprefixed/duplicate identifiers |
+| discover | Dynamic i18n |
+| queryEnhancements | Dynamic i18n, unprefixed identifiers |
+| indexPatternManagement | Dynamic i18n |
+| dashboard | Unprefixed identifiers |
+| dataSource | Incorrect TopNavControlDescriptionData |
+| home | Dynamic i18n |
+| opensearchDashboardsReact | Dynamic i18n |
+| visTypeVega | Unprefixed identifiers |
+| visualize | Duplicate identifiers |
+| management | Unprefixed identifiers |
+| visAugmenter | Unprefixed/duplicate identifiers |
 
 ### Usage Example
 
-Running i18n validation locally:
-
 ```bash
-# Check all i18n usage
+# Validate all i18n usage
 yarn i18n:check
 
 # Check with specific options
@@ -106,25 +97,36 @@ yarn i18n:extract
 
 ### Migration Notes
 
-- Developers should run `yarn osd bootstrap` to install the precommit hook
-- Existing translation files may need updates if they contain malformed ICU message formats
-- The i18n check is now part of the CI workflow and will fail PRs with invalid translations
+- Run `yarn osd bootstrap` to install the precommit hook
+- Existing translation files may need updates for malformed ICU message formats
+- i18n check is now part of CI workflow and will fail PRs with invalid translations
 
 ## Limitations
 
-- The `--ignore-missing-formats` flag defaults to `true` to maintain backward compatibility with locale files missing the `formats` object
+- `--ignore-missing-formats` defaults to `true` for backward compatibility
 - Precommit hook only validates staged files, not the entire codebase
+- Translations are preliminary and may need community refinement
 
 ## Related PRs
 
 | PR | Description |
 |----|-------------|
-| [#8411](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8411) | Add i18n checks to PR workflows, fix malformed translations |
-| [#8412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8412) | Fix unprefixed i18n identifiers in examples |
-| [#8423](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8423) | Add precommit hook to validate i18n |
-| [#8483](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8483) | Fix inconsistent i18n key names in workspace and examples |
-| [#8399](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8399) | Fix dynamic uses of i18n in visBuilder plugin |
-| [#8674](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8674) | Fix unsupported language selection from localStorage |
+| [#8411](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8411) | Add i18n checks to PR workflows, ignore missing formats, add help text |
+| [#8424](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8424) | Add preliminary translations for 14 locales |
+| [#8392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8392) | Fix dynamic i18n in core |
+| [#8393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8393) | Fix dynamic i18n and duplicate identifiers in console plugin |
+| [#8394](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8394) | Fix dynamic i18n and unprefixed/duplicate identifiers in dataSourceManagement |
+| [#8396](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8396) | Fix dynamic i18n in discover plugin |
+| [#8397](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8397) | Fix dynamic i18n and unprefixed identifiers in queryEnhancements |
+| [#8398](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8398) | Fix dynamic i18n in indexPatternManagement plugin |
+| [#8401](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8401) | Fix unprefixed identifiers in dashboard plugin |
+| [#8402](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8402) | Fix incorrect TopNavControlDescriptionData in dataSource |
+| [#8403](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8403) | Fix dynamic i18n in home plugin |
+| [#8404](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8404) | Fix dynamic i18n in opensearchDashboardsReact plugin |
+| [#8406](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8406) | Fix unprefixed identifiers in visTypeVega plugin |
+| [#8407](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8407) | Fix duplicate identifiers in visualize plugin |
+| [#8408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8408) | Fix unprefixed identifiers in management plugin |
+| [#8409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8409) | Fix unprefixed/duplicate identifiers in visAugmenter plugin |
 
 ## References
 
