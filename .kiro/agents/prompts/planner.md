@@ -57,7 +57,8 @@ For each pending group (max 20 per run):
 ```bash
 gh issue create --title "[{category}] {group_name}" \
   --body "..." \
-  --label "release/v{version}"
+  --label "release/v{version}" \
+  --label "status/todo"
 ```
 
 2. Get Issue node ID and add to Project:

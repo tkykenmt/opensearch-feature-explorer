@@ -332,15 +332,18 @@ def get_open_issues(labels: list[str], limit: int | None = None) -> list[dict]:
     return json.loads(result.stdout)
 
 
-def run_batch(count: int | None, lang: str | None = None, no_pr: bool = False):
+def run_batch(count: int | None, lang: str | None = None, no_pr: bool = False, version: str | None = None):
     """Run investigate in batch mode. If count is None, process all open issues."""
     lang_instruction = f" Output in language code '{lang}'." if lang else ""
     pr_mode = " Push directly to main." if no_pr else " Use PR workflow (create branch, pull request, and auto-merge)."
     
     # Get open issues first
-    issues = get_open_issues(["new-feature", "update-feature"], count)
+    labels = ["status/todo"]
+    if version:
+        labels.append(f"release/v{version}")
+    issues = get_open_issues(labels, count)
     if not issues:
-        print("No open issues found with labels 'new-feature' or 'update-feature'")
+        print(f"No open issues found with labels: {', '.join(labels)}")
         return
     
     total = len(issues)
@@ -484,6 +487,7 @@ Examples:
     
     # batch-investigate
     ba = subparsers.add_parser("batch-investigate", help="Run investigate in batch mode")
+    ba.add_argument("version", nargs="?", help="Target version (e.g., 3.0.0)")
     ba.add_argument("count", type=int, nargs="?", help="Number of issues to process (default: 5, or all with --all)")
     ba.add_argument("--all", action="store_true", help="Process all open issues")
     ba.add_argument("--lang", help="Output language code (e.g., ja)")
@@ -536,7 +540,7 @@ Examples:
         sys.exit(run_feature_investigate(args.feature, getattr(args, "pr", None), getattr(args, "lang", None), getattr(args, "no_pr", False)))
     elif args.mode == "batch-investigate":
         count = None if getattr(args, "all", False) else (args.count or 5)
-        run_batch(count, getattr(args, "lang", None), getattr(args, "no_pr", False))
+        run_batch(count, getattr(args, "lang", None), getattr(args, "no_pr", False), getattr(args, "version", None))
     elif args.mode == "fetch-release":
         run_fetch_release(args.version)
     elif args.mode == "group-release":
