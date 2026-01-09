@@ -32,6 +32,7 @@
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
+- [Thread Context Permissions](opensearch/thread-context-permissions.md)
 - [Tiered Caching](opensearch/tiered-caching.md)
 - [Transport Nodes Action Optimization](opensearch/transport-nodes-action-optimization.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
