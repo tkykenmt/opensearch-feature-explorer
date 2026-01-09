@@ -153,7 +153,8 @@ Notebooks support OpenSearch security features:
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks |
-| v2.17.0 | - | Introduced saved objects storage for notebooks |
+| v2.17.0 | [#2110](https://github.com/opensearch-project/dashboards-observability/pull/2110) | UI update: badge counter in breadcrumbs, simplified delete workflow |
+| v2.17.0 | [#2108](https://github.com/opensearch-project/dashboards-observability/pull/2108) | Fix sample notebooks for MDS environments |
 | v1.0.0 | - | Initial production release of Notebooks |
 
 ## References
@@ -168,5 +169,5 @@ Notebooks support OpenSearch security features:
 
 - **v3.0.0** (2025-05-06): Removed legacy notebooks support; only `.kibana` storage supported
 - **v2.19.0** (2025-02-11): Deprecated legacy notebooks with migration notice
-- **v2.17.0** (2024-09-17): Introduced saved objects storage in `.kibana` index
+- **v2.17.0** (2024-09-17): UI improvements (badge counter in breadcrumbs, simplified delete workflow); fixed sample notebooks for MDS environments
 - **v1.0.0** (2021-07-12): Initial production release with SQL, PPL, and visualization support
