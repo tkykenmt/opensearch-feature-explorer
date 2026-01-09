@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
+- [OpenSearch Core Dependencies](features/opensearch/opensearch-core-dependencies.md) - 26 dependency updates including Lucene 9.12.0, Netty 4.1.114, gRPC 1.68.0, Protobuf 3.25.5
 - [Cluster State Management](features/opensearch/cluster-state-management.md) - Fix voting configuration mismatch by updating lastSeenClusterState in commit phase
 - [Dynamic Settings](features/opensearch/dynamic-settings.md) - Make multiple cluster settings dynamic for tuning on larger clusters
 - [Wildcard Query Fixes](features/opensearch/wildcard-query-fixes.md) - Fix escaped wildcard character handling and case-insensitive query on wildcard field

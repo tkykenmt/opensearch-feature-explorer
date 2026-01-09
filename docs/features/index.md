@@ -40,6 +40,7 @@
 - [Node Join/Leave](opensearch/node-join-leave.md)
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
+- [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
