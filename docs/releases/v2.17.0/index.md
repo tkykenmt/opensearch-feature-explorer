@@ -39,6 +39,7 @@
 - [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)
 
 ### security-analytics
+- [Security Analytics Detectors](features/security-analytics/security-analytics-detectors.md)
 - [Threat Intel Bugfixes](features/security-analytics/threat-intel-bugfixes.md)
 
 ### security-analytics-dashboards
