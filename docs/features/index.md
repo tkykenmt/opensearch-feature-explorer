@@ -150,6 +150,7 @@
 ## anomaly-detection
 
 - [Anomaly Detection](anomaly-detection/anomaly-detection.md)
+- [Anomaly Detection Admin Backend Role Bypass](anomaly-detection/anomaly-detection-admin-backend-role-bypass.md)
 - [Dual Cluster Development Environment](anomaly-detection/dual-cluster-development.md)
 
 ## observability
