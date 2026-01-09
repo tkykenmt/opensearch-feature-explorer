@@ -19,6 +19,7 @@
 
 ### dashboards-notifications
 - [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md)
+- [Notifications Navigation](features/dashboards-notifications/notifications-navigation.md)
 
 ### dashboards-observability
 - [Observability Enhancements](features/dashboards-observability/observability-enhancements.md)
