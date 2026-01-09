@@ -119,6 +119,7 @@
 - [Dependency Bumps](multi-plugin/dependency-bumps.md)
 - [JDK 21 & Java Agent Migration](multi-plugin/jdk-21-java-agent-migration.md)
 - [Maintainer Updates](multi-plugin/maintainer-updates.md)
+- [Multi-Data Source Support](multi-plugin/multi-data-source-support.md)
 - [Version Bumps & Release Notes](multi-plugin/version-bumps-release-notes.md)
 
 ## opensearch-remote-metadata-sdk
