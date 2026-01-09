@@ -46,6 +46,7 @@
 ### flow-framework
 - [Flow Framework Access Control](features/flow-framework/flow-framework-access-control.md)
 - [Flow Framework Connector Tools](features/flow-framework/flow-framework-connector-tools.md)
+- [Flow Framework Reprovision API](features/flow-framework/flow-framework-reprovision-api.md)
 
 ### index-management
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md)
