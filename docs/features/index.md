@@ -56,6 +56,7 @@
 
 ## security
 
+- [Alerting Comments Security](security/alerting-comments-security.md)
 - [Security Configuration](security/security-configuration.md)
 - [Security Plugin](security/security-plugin.md)
 
