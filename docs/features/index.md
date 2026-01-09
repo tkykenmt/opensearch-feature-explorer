@@ -93,6 +93,7 @@
 ## flow-framework
 
 - [Flow Framework](flow-framework/flow-framework.md)
+- [Flow Framework Connector Tools](flow-framework/flow-framework-connector-tools.md)
 - [Text-to-Visualization Templates](flow-framework/text-to-visualization-templates.md)
 
 ## sql
