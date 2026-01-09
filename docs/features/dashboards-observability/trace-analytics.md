@@ -84,6 +84,8 @@ flowchart TB
 | Data Grid Table | Paginated traces table with column customization |
 | Multi-Data Source Support | Connect to multiple OpenSearch clusters |
 | Application Analytics | Integrated traces/spans view within app analytics |
+| Custom Index Flyout | Configuration panel for custom span/service indices |
+| Data Schema Picker | Mode selector for Jaeger, Data Prepper, or Custom source |
 
 ### Configuration
 
@@ -92,8 +94,10 @@ flowchart TB
 | Custom Log Source | User-defined log index for correlation | None |
 | Database Selector | Database name for integration setup | `default` |
 | Spans Limit | Maximum spans displayed in trace view | 3000 |
-| Trace Data Source | OTEL or Jaeger format | OTEL |
+| Trace Data Source | OTEL, Jaeger, or Custom format | OTEL |
 | MDS ID | Multi-Data Source identifier | Local cluster |
+| `observability:traceAnalyticsSpanIndices` | Custom span indices (supports wildcards and CCS) | Empty |
+| `observability:traceAnalyticsServiceIndices` | Custom service indices (supports wildcards and CCS) | Empty |
 
 ### Usage Example
 
@@ -143,6 +147,8 @@ http://host:port/app/observability-traces#/services
 | v3.0.0 | [#2398](https://github.com/opensearch-project/dashboards-observability/pull/2398) | Trace to logs correlation |
 | v3.0.0 | [#2410](https://github.com/opensearch-project/dashboards-observability/pull/2410) | Amazon Network Firewall Integration |
 | v3.0.0 | [#2432](https://github.com/opensearch-project/dashboards-observability/pull/2432) | OTEL attributes field support |
+| v2.17.0 | [#2112](https://github.com/opensearch-project/dashboards-observability/pull/2112) | Custom source support for trace analytics |
+| v2.17.0 | [#2125](https://github.com/opensearch-project/dashboards-observability/pull/2125) | Update landing page to traces |
 | v2.17.0 | [#2006](https://github.com/opensearch-project/dashboards-observability/pull/2006) | MDS fix for local cluster rendering |
 | v2.17.0 | [#2023](https://github.com/opensearch-project/dashboards-observability/pull/2023) | Traces/Spans tab fix for App Analytics |
 | v2.17.0 | [#2024](https://github.com/opensearch-project/dashboards-observability/pull/2024) | Fix direct URL load |
@@ -162,4 +168,4 @@ http://host:port/app/observability-traces#/services
 ## Change History
 
 - **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
-- **v2.17.0** (2024-09-17): Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements, Getting Started link fixes, org.json security update
+- **v2.17.0** (2024-09-17): Custom source support (experimental) for custom span/service indices with CCS support, landing page changed to Traces, Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements
