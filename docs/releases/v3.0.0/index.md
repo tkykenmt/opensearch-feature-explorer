@@ -127,6 +127,7 @@
 ## custom-codecs
 
 - [ZSTD Library Bump](features/custom-codecs/zstd-library-bump.md)
+- [Custom Codecs Bugfixes](features/custom-codecs/custom-codecs-bugfixes.md)
 
 ## cross-cluster-replication
 

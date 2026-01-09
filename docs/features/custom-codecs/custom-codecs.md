@@ -68,11 +68,20 @@ flowchart TB
 
 | Component | Description |
 |-----------|-------------|
-| `ZstdCodec` | ZSTD compression with dictionary support |
-| `ZstdNoDictCodec` | ZSTD compression without dictionary (faster) |
-| `Lucene99QatCodec` | Base codec for QAT hardware acceleration |
-| `QatLz4Codec` | Hardware-accelerated LZ4 compression |
-| `QatDeflateCodec` | Hardware-accelerated DEFLATE compression |
+| `Lucene101CustomCodec` | Base codec for ZSTD compression (Lucene 10.1.0) |
+| `Zstd101Codec` | ZSTD compression with dictionary support |
+| `ZstdNoDict101Codec` | ZSTD compression without dictionary (faster) |
+| `Lucene101QatCodec` | Base codec for QAT hardware acceleration (Lucene 10.1.0) |
+| `QatLz4101Codec` | Hardware-accelerated LZ4 compression |
+| `QatDeflate101Codec` | Hardware-accelerated DEFLATE compression |
+
+#### Backward Compatibility Components
+
+| Component | Location | Purpose |
+|-----------|----------|---------|
+| `Lucene912CustomCodec` | `backward_codecs/lucene912/` | Read existing Lucene 9.12 ZSTD indexes |
+| `Lucene912QatCodec` | `backward_codecs/lucene912/` | Read existing Lucene 9.12 QAT indexes |
+| `Lucene99CustomCodec` | `backward_codecs/lucene99/` | Read existing Lucene 9.9 indexes |
 
 ### Supported Codecs
 
@@ -170,7 +179,10 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 | Version | PR | Description |
 |---------|-----|-------------|
-| v3.0.0 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZTD lib version to 1.5.6-1 |
+| v3.0.0 | [#228](https://github.com/opensearch-project/custom-codecs/pull/228) | Upgrade to Lucene 10.1.0 and introduce new Codec implementation |
+| v3.0.0 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZSTD lib version to 1.5.6-1 |
+| v3.0.0 | [#235](https://github.com/opensearch-project/custom-codecs/pull/235) | Fix build due to phasing off SecurityManager in favor of Java Agent |
+| v3.0.0 | [#237](https://github.com/opensearch-project/custom-codecs/pull/237) | Add java agent plugin |
 
 ## References
 
@@ -183,6 +195,6 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 ## Change History
 
-- **v3.0.0** (2025-05-06): Bumped zstd-jni to 1.5.6-1, adding support for custom sequence producers
+- **v3.0.0** (2025-05-06): Upgraded to Lucene 10.1.0 with new codec implementations (Lucene101*), bumped zstd-jni to 1.5.6-1, migrated to Java Agent from SecurityManager
 - **v2.15.0** (2024-06-25): Added QAT hardware-accelerated codecs (`qat_lz4`, `qat_deflate`)
 - **v2.9.0** (2023-07-24): Initial implementation of ZSTD codecs (`zstd`, `zstd_no_dict`)
