@@ -129,6 +129,7 @@
 - [ML Commons MCP (Model Context Protocol)](ml-commons/ml-commons-mcp.md)
 - [ML Commons Stability and Reliability](ml-commons/ml-commons-stability.md)
 - [ML Commons Test Fixes](ml-commons/ml-commons-test-fixes.md)
+- [Query Assist](ml-commons/query-assist.md)
 
 ## anomaly-detection
 

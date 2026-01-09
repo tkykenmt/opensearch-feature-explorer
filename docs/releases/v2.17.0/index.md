@@ -61,6 +61,7 @@
 ### ml-commons
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md)
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
+- [Query Assist](features/ml-commons/query-assist.md)
 
 ### neural-search
 - [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md)
