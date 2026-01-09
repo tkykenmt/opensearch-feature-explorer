@@ -149,6 +149,7 @@ POST _plugins/_replication/follower-index/_stop
 | v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |
 | v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM |
 | v3.0.0 | [#1496](https://github.com/opensearch-project/cross-cluster-replication/pull/1496) | cross-cluster-replication | Gradle 8.10.2 and JDK23 support |
+| v2.17.0 | [#1412](https://github.com/opensearch-project/cross-cluster-replication/pull/1412) | cross-cluster-replication | Update remote-migration IT with correct setting names |
 | v1.1.0 | - | cross-cluster-replication | Initial CCR implementation |
 
 ## References
@@ -164,4 +165,5 @@ POST _plugins/_replication/follower-index/_stop
 ## Change History
 
 - **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
+- **v2.17.0** (2024-09-17): Fixed integration tests to use correct cluster setting names after Remote Store Migration GA
 - **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation
