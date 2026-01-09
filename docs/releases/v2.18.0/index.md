@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
+- [Flat Object Field](features/opensearch/flat-object-field.md) - Fix infinite loop when flat_object field contains invalid token types
 - [Index Settings](features/opensearch/index-settings.md) - Fix default value handling when setting index.number_of_replicas and index.number_of_routing_shards to null
 - [Multi-Search API](features/opensearch/multi-search-api.md) - Fix multi-search with template doesn't return status code
 - [Node Join/Leave](features/opensearch/node-join-leave.md) - Fix race condition in node-join and node-left loop
