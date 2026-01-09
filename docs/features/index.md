@@ -52,6 +52,7 @@
 - [Dashboards UI Updates (OUI)](opensearch-dashboards/dashboards-ui-updates.md)
 - [Dashboards UI/UX Fixes](opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Data Importer](opensearch-dashboards/data-importer.md)
+- [Dependency Updates](opensearch-dashboards/dependency-updates.md)
 - [Discover](opensearch-dashboards/discover.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
 - [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
