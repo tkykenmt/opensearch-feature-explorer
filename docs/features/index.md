@@ -15,6 +15,7 @@
 - [Bulk API](opensearch/bulk-api.md)
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [Cluster Permissions](opensearch/cluster-permissions.md)
+- [Flat Object Field](opensearch/flat-object-field.md)
 - [gRPC Transport & Services](opensearch/grpc-transport--services.md)
 - [Index Settings](opensearch/index-settings.md)
 - [Mapping Transformer](opensearch/mapping-transformer.md)
