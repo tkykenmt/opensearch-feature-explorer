@@ -131,6 +131,7 @@
 - [ML Commons Stability and Reliability](ml-commons/ml-commons-stability.md)
 - [ML Commons Test Fixes](ml-commons/ml-commons-test-fixes.md)
 - [ML Config API](ml-commons/ml-config-api.md)
+- [ML Inference Processor](ml-commons/ml-inference-processor.md)
 - [Query Assist](ml-commons/query-assist.md)
 
 ## ml-commons-dashboards
