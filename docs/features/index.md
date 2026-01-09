@@ -185,6 +185,7 @@
 
 ## common-utils
 
+- [Alerting Context Variables](common-utils/alerting-context-variables.md)
 - [Common Utils](common-utils/common-utils.md)
 
 ## alerting

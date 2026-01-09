@@ -76,6 +76,9 @@
 ### cross-cluster-replication
 - [Cross-Cluster Replication Bugfixes](features/cross-cluster-replication/cross-cluster-replication-bugfixes.md)
 
+### common-utils
+- [Common Utils Bugfixes](features/common-utils/common-utils-bugfixes.md)
+
 ## Key Features in This Release
 
 ### Generally Available
