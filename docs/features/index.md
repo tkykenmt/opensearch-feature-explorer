@@ -173,6 +173,7 @@
 ## dashboards-maps
 
 - [Maps & Geospatial](dashboards-maps/maps-geospatial.md)
+- [Maps Plugin UI Updates](dashboards-maps/maps-plugin-ui-updates.md)
 
 ## dashboards-notifications
 
