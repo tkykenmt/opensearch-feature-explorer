@@ -64,6 +64,7 @@
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md)
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
 - [ML Config API](features/ml-commons/ml-config-api.md)
+- [ML Inference Processor - One-to-One Support](features/ml-commons/ml-inference-processor.md)
 - [Query Assist](features/ml-commons/query-assist.md)
 
 ### ml-commons-dashboards
