@@ -195,6 +195,7 @@
 - [k-NN Explain API](k-nn/explain-api.md)
 - [k-NN Iterative Graph Build](k-nn/k-nn-iterative-graph-build.md)
 - [k-NN Model Metadata](k-nn/k-nn-model-metadata.md)
+- [k-NN Query Rescore](k-nn/k-nn-query-rescore.md)
 - [k-NN Space Type Configuration](k-nn/k-nn-space-type-configuration.md)
 - [Lucene On Faiss (Memory Optimized Search)](k-nn/lucene-on-faiss.md)
 - [Remote Vector Index Build](k-nn/remote-vector-index-build.md)
