@@ -159,6 +159,7 @@
 ## dashboards-observability
 
 - [Getting Started Workflows](dashboards-observability/getting-started-workflows.md)
+- [Observability Multi-Data Source Support](dashboards-observability/observability-multi-data-source-support.md)
 - [Observability Notebooks](dashboards-observability/observability-notebooks.md)
 - [Observability Traces](dashboards-observability/observability-traces.md)
 - [Observability UI](dashboards-observability/observability-ui.md)
