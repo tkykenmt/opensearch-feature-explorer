@@ -11,6 +11,7 @@
 - [Anomaly Detection Admin Backend Role Bypass](features/anomaly-detection/anomaly-detection-admin-backend-role-bypass.md)
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
 - [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md)
+- [Remote/Multi-Index Support](features/anomaly-detection/remote-multi-index-support.md)
 
 ### common
 - [Common Infrastructure](features/common/common-infrastructure.md)
