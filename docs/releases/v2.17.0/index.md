@@ -116,6 +116,7 @@
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
 - [k-NN Byte Vector Support](features/k-nn/k-nn-byte-vector-support.md)
 - [k-NN Iterative Graph Build](features/k-nn/k-nn-iterative-graph-build.md)
+- [k-NN Lucene Vector Integration](features/k-nn/k-nn-lucene-vector-integration.md)
 - [k-NN Model Metadata](features/k-nn/k-nn-model-metadata.md)
 - [k-NN Query Rescore](features/k-nn/k-nn-query-rescore.md)
 - [k-NN Space Type Configuration](features/k-nn/k-nn-space-type-configuration.md)
