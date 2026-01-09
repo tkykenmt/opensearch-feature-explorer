@@ -54,6 +54,7 @@
 - [Data Importer](opensearch-dashboards/data-importer.md)
 - [DOMPurify Sanitization](opensearch-dashboards/dompurify-sanitization.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
+- [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 
 ## security
