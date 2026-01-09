@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
+- [Multi-Search API](features/opensearch/multi-search-api.md) - Fix multi-search with template doesn't return status code
 - [Replication](features/opensearch/replication.md) - Fix array hashCode calculation in ResyncReplicationRequest
 - [Task Management](features/opensearch/task-management.md) - Fix missing fields in task index mapping for proper task result storage
 - [Test Fixes](features/opensearch/test-fixes.md) - Fix flaky test in ApproximatePointRangeQueryTests by adjusting totalHits assertion logic
