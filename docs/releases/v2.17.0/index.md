@@ -43,6 +43,9 @@
 ### documentation-website
 - [Top N API Documentation Update](features/documentation-website/top-n-api-documentation.md)
 
+### flow-framework
+- [Flow Framework Connector Tools](features/flow-framework/flow-framework-connector-tools.md)
+
 ### index-management
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md)
 
