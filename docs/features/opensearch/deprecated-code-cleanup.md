@@ -2,7 +2,7 @@
 
 ## Summary
 
-OpenSearch maintains code quality by periodically removing deprecated features, settings, and APIs. This cleanup process ensures the codebase remains maintainable while providing clear migration paths for users. Major version releases (like 3.0) are the primary opportunity for removing deprecated functionality that has been marked for removal.
+OpenSearch maintains code quality by periodically removing deprecated features, settings, and APIs. This cleanup process ensures the codebase remains maintainable while providing clear migration paths for users. Major version releases (like 3.0) are the primary opportunity for removing deprecated functionality that has been marked for removal. The deprecation lifecycle follows a pattern: features are first deprecated with warnings in minor versions, then removed in the next major version.
 
 ## Details
 
@@ -22,6 +22,7 @@ graph TB
         G[Plugins]
         H[Internal Classes]
         I[Terminology]
+        J[Feature Flags]
     end
     
     D --> E
@@ -29,6 +30,24 @@ graph TB
     D --> G
     D --> H
     D --> I
+    D --> J
+```
+
+### Data Flow
+
+```mermaid
+flowchart LR
+    subgraph "Version 2.x"
+        A[Deprecated Feature] --> B[Warning Logged]
+        B --> C[Feature Still Works]
+    end
+    
+    subgraph "Version 3.0"
+        D[Feature Removed] --> E[Error on Use]
+        E --> F[Migration Required]
+    end
+    
+    C --> D
 ```
 
 ### Deprecation Categories
@@ -40,80 +59,209 @@ graph TB
 | Plugins | Bundled or optional plugins | Functionality unavailable |
 | Internal Classes | Java classes and methods | Plugin compatibility |
 | Terminology | Naming conventions | Documentation/code updates |
+| Feature Flags | Experimental feature toggles | Features become GA or removed |
 
-### Removed in v3.0.0
+### Components Affected in v3.0.0
 
-#### Thread Pool Settings
-```yaml
-# Removed settings
-thread_pool.test.max_queue_size
-thread_pool.test.min_queue_size
+| Component | Type | Status |
+|-----------|------|--------|
+| Thread Pool Settings | Settings | Removed |
+| Index Store mmap.extensions | Settings | Removed |
+| transport-nio Plugin | Plugin | Removed |
+| COMPAT Locale Provider | Internal | Removed |
+| PathHierarchy (CamelCase) | Tokenizer | Deprecated |
+| JodaCompatibleZonedDateTime methods | API | Removed |
+| batch_size parameter | API | Removed |
+| System index REST access | API | Removed |
+| k-NN index settings | Settings | Removed |
+| SQL DELETE statement | API | Removed |
+| OpenDistro endpoints | API | Removed |
+| performance-analyzer-rca | Plugin | Removed |
+| Legacy notebooks | Feature | Removed |
+
+### Configuration
+
+#### Removed Settings Reference
+
+| Setting | Version Deprecated | Version Removed | Replacement |
+|---------|-------------------|-----------------|-------------|
+| `thread_pool.test.max_queue_size` | 2.0 | 3.0 | None |
+| `thread_pool.test.min_queue_size` | 2.0 | 3.0 | None |
+| `index.store.hybrid.mmap.extensions` | 2.x | 3.0 | Auto-detection |
+| `knn.plugin.enabled` | 2.x | 3.0 | Always enabled |
+| `index.knn.algo_param.ef_construction` | 2.x | 3.0 | Method parameters |
+| `index.knn.algo_param.m` | 2.x | 3.0 | Method parameters |
+| `index.knn.space_type` | 2.x | 3.0 | Method parameters |
+| `plugins.sql.delete.enabled` | 2.x | 3.0 | None |
+| `plugins.sql.pagination.api` | 2.x | 3.0 | Point in Time |
+
+#### New Limits in v3.0.0
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| JSON nesting depth | 1,000 | Maximum depth for JSON objects/arrays |
+| JSON property name length | 50,000 | Maximum length for property names |
+| `index.query.max_nested_depth` | 20 | Maximum nesting for nested queries |
+| Document ID length | 512 bytes | Enforced on all APIs including Bulk |
+
+### Usage Example
+
+#### Checking for Deprecated Settings
+```bash
+# Check opensearch.yml for deprecated settings before upgrade
+grep -E "(thread_pool\.test\.|mmap\.extensions|knn\.plugin\.enabled)" opensearch.yml
 ```
 
-#### Index Store Settings
-```yaml
-# Removed setting
-index.store.hybrid.mmap.extensions
+#### Migrating k-NN Index Settings
+```json
+// Before (deprecated index settings)
+PUT /my-index
+{
+  "settings": {
+    "index.knn": true,
+    "index.knn.algo_param.ef_construction": 256,
+    "index.knn.algo_param.m": 16,
+    "index.knn.space_type": "l2"
+  },
+  "mappings": {
+    "properties": {
+      "my_vector": {
+        "type": "knn_vector",
+        "dimension": 128
+      }
+    }
+  }
+}
+
+// After (method parameters)
+PUT /my-index
+{
+  "settings": {
+    "index.knn": true
+  },
+  "mappings": {
+    "properties": {
+      "my_vector": {
+        "type": "knn_vector",
+        "dimension": 128,
+        "method": {
+          "name": "hnsw",
+          "space_type": "l2",
+          "engine": "faiss",
+          "parameters": {
+            "ef_construction": 256,
+            "m": 16
+          }
+        }
+      }
+    }
+  }
+}
 ```
-The hybridfs store type now automatically determines optimal file handling without explicit extension configuration.
 
-#### Locale Provider
-The COMPAT locale provider was removed due to JDK 21 deprecation (JEP 411). OpenSearch now uses CLDR locale data exclusively.
+#### Migrating Tokenizer Names
+```json
+// Before (deprecated CamelCase)
+{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "my_tokenizer": {
+          "type": "PathHierarchy",
+          "delimiter": "/"
+        }
+      }
+    }
+  }
+}
 
-#### Tokenizer Naming
-CamelCase tokenizer names are deprecated:
-- `PathHierarchy` → `path_hierarchy`
-
-#### Feature Flags
-Experimental feature flags removed when features became GA:
-- `PLUGGABLE_CACHE` - Tiered caching now always available
-- `APPROXIMATE_POINT_RANGE_QUERY_SETTING` - Range query approximation now standard
-
-#### Legacy Version Constants
-All `LegacyESVersion` constants removed:
-- V_7_0_* through V_7_10_*
-- V_1_* constants
-
-#### Non-inclusive Terminology
-- "blacklist" → "allow list"
-- "whitelist" → "deny list"
-- "master" → "cluster manager"
+// After (snake_case)
+{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "my_tokenizer": {
+          "type": "path_hierarchy",
+          "delimiter": "/"
+        }
+      }
+    }
+  }
+}
+```
 
 ### Migration Guide
 
-1. **Review Configuration**: Check `opensearch.yml` for deprecated settings
-2. **Update Scripts**: Replace deprecated datetime methods in Painless scripts
-3. **Update Analyzers**: Use snake_case tokenizer names
-4. **Test Plugins**: Verify custom plugins don't depend on removed classes
-5. **Update Clients**: Ensure client applications use current API parameters
+1. **Pre-Upgrade Checklist**
+   - Upgrade to JDK 21 or later
+   - Review `opensearch.yml` for deprecated settings
+   - Audit Painless scripts for deprecated methods
+   - Check analyzer configurations for CamelCase tokenizer names
+   - Verify custom plugins don't depend on removed classes
+   - Migrate legacy notebooks to `.kibana` index format
+
+2. **During Upgrade**
+   - Remove deprecated settings from configuration files
+   - Update k-NN index mappings to use method parameters
+   - Update SQL queries to use Point in Time pagination
+
+3. **Post-Upgrade Verification**
+   - Check cluster health
+   - Verify all indexes are accessible
+   - Test search and indexing operations
+   - Validate plugin functionality
 
 ## Limitations
 
 - Deprecated code removal is permanent in major versions
 - No runtime compatibility layer for removed features
 - Custom plugins may require updates
+- NMSLIB engine deprecated; new indexes should use Faiss or Lucene
+- Legacy notebooks not accessible after upgrade to 3.0
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#2595](https://github.com/opensearch-project/OpenSearch/issues/2595) | Cleanup deprecated thread pool settings |
+| v3.0.0 | [#1683](https://github.com/opensearch-project/OpenSearch/issues/1683) | Replace blacklist/whitelist terminology |
 | v3.0.0 | [#3346](https://github.com/opensearch-project/OpenSearch/pull/3346) | Remove JodaCompatibleZonedDateTime deprecated methods |
 | v3.0.0 | [#9392](https://github.com/opensearch-project/OpenSearch/pull/9392) | Remove mmap.extensions setting |
 | v3.0.0 | [#13988](https://github.com/opensearch-project/OpenSearch/pull/13988) | Remove COMPAT locale provider |
-| v3.0.0 | [#17344](https://github.com/opensearch-project/OpenSearch/pull/17344) | Remove PLUGGABLE_CACHE feature flag |
-| v3.0.0 | [#17769](https://github.com/opensearch-project/OpenSearch/pull/17769) | Remove ApproximatePointRangeQuery feature flag |
-| v3.0.0 | [#4042](https://github.com/opensearch-project/OpenSearch/pull/4042) | Rename Plugin classes to Module |
+| v3.0.0 | [#16887](https://github.com/opensearch-project/OpenSearch/issues/16887) | Remove transport-nio plugin |
 | v3.0.0 | [#10894](https://github.com/opensearch-project/OpenSearch/pull/10894) | Deprecate CamelCase PathHierarchy tokenizer |
-| v2.0.0 | [#2595](https://github.com/opensearch-project/OpenSearch/pull/2595) | Cleanup deprecated thread pool settings |
-| v2.0.0 | [#1683](https://github.com/opensearch-project/OpenSearch/pull/1683) | Replace blacklist/whitelist terminology |
+| v3.0.0 | [#14283](https://github.com/opensearch-project/OpenSearch/issues/14283) | Remove deprecated batch_size parameter |
+| v3.0.0 | [#4042](https://github.com/opensearch-project/OpenSearch/pull/4042) | Rename Plugin classes to Module |
+| v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | k-NN breaking changes for 3.0 |
+| v3.0.0 | [#5089](https://github.com/opensearch-project/security/pull/5089) | Fix Blake2b hash implementation |
+| v3.0.0 | [#5224](https://github.com/opensearch-project/security/pull/5224) | Remove whitelist settings |
+| v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support |
+| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |
+| v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement |
+| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove legacy notebooks |
+| v2.0.0 | [#1940](https://github.com/opensearch-project/OpenSearch/issues/1940) | Remove mapping types parameter |
 
 ## References
 
 - [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/)
+- [OpenSearch 3.0 Blog Post](https://opensearch.org/blog/opensearch-3-0-what-to-expect/)
+- [Meta Issue #5243](https://github.com/opensearch-project/opensearch-build/issues/5243): Full list of breaking changes
 - [Issue #2773](https://github.com/opensearch-project/OpenSearch/issues/2773): List of deprecated code removal in 3.0
+- [Issue #5214](https://github.com/opensearch-project/OpenSearch/issues/5214): Remove deprecated terms from Java API
 - [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
 
 ## Change History
 
-- **v3.0.0** (2025-05-06): Major deprecated code cleanup including thread pool settings, locale provider, feature flags, and legacy version constants
-- **v2.0.0** (2022-05-26): Initial deprecation of non-inclusive terminology, thread pool settings marked for removal
+- **v3.0.0** (2025-04-29): Major deprecated code cleanup including:
+  - Thread pool settings removed
+  - COMPAT locale provider removed
+  - transport-nio plugin removed
+  - k-NN index settings removed (use method parameters)
+  - SQL DELETE statement and OpenDistro endpoints removed
+  - Legacy notebooks removed
+  - Non-inclusive terminology replaced in Java APIs
+  - JodaCompatibleZonedDateTime deprecated methods removed
+  - batch_size parameter removed from Bulk API
+  - System index REST API access removed
+  - New JSON processing limits introduced
+- **v2.0.0** (2022-05-26): Initial deprecation of non-inclusive terminology, thread pool settings marked for removal, mapping types parameter removed
