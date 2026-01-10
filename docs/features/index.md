@@ -48,6 +48,7 @@
 - [Replication](opensearch/replication.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
+- [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
