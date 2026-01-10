@@ -236,6 +236,7 @@
 - [ML Commons CI/CD](ml-commons/ml-commons-ci-cd.md)
 - [ML Commons Configuration](ml-commons/ml-commons-configuration.md)
 - [ML Commons Connector](ml-commons/ml-commons-connector.md)
+- [ML Commons Connector and Model Validation](ml-commons/connector-model-validation.md)
 - [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
 - [ML Commons MCP (Model Context Protocol)](ml-commons/ml-commons-mcp.md)
 - [ML Commons Memory Metadata](ml-commons/ml-commons-memory-metadata.md)
