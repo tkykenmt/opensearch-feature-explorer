@@ -128,6 +128,10 @@ The footer bar displays:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#10503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10503) | Add PPL Formatter in Query panel |
+| v3.3.0 | [#10536](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10536) | Update Simplified PPL grammar to latest version |
+| v3.3.0 | [#10581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10581) | Remove error popover from query panel |
+| v3.3.0 | [#10446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10446) | Fix Enter command behaviour in query editor |
 | v3.2.0 | [#9960](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9960) | Fix autocomplete for new query panel |
 | v3.2.0 | [#10259](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10259) | Change query editor UI - edit button placement |
 | v3.2.0 | [#10337](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10337) | Change generated query UI - scrollable display |
@@ -137,10 +141,12 @@ The footer bar displays:
 
 ## References
 
-- [Dashboards Query Language (DQL)](https://docs.opensearch.org/2.18/dashboards/dql/): Official DQL documentation
-- [Query Workbench](https://docs.opensearch.org/2.18/dashboards/query-workbench/): Query Workbench documentation
+- [Dashboards Query Language (DQL)](https://docs.opensearch.org/3.3/dashboards/dql/): Official DQL documentation
+- [Query Workbench](https://docs.opensearch.org/3.3/dashboards/query-workbench/): Query Workbench documentation
+- [PPL Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/index/): Official PPL documentation
 
 ## Change History
 
+- **v3.3.0**: Added PPL Formatter (`Shift+Option+F`), updated PPL grammar to latest version, removed redundant error popover, fixed Enter key behavior when switching query languages
 - **v3.2.0**: Fixed autocomplete stale query issue, improved Tab/Enter key handling for suggestions, made generated query scrollable, refined "Replace query" button placement
 - **v2.18.0** (2024-11-05): Added footer bar to single-line editor, fixed query editor extension ordering, improved PPL autocomplete
