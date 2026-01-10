@@ -155,3 +155,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [CVE Fixes & Dependency Updates](features/multi-repo/cve-fixes-dependency-updates.md) | bugfix | CVE-2025-48734 (beanutils) and CVE-2025-7783 (form-data) security fixes |
 | [Version Increment (Maintenance)](features/multi-plugin/version-increment-maintenance.md) | bugfix | Version bumps to 3.2.0 across 14 repositories |
+| [Build Infrastructure (Gradle/JDK)](features/multi-plugin/build-infrastructure-gradle-jdk.md) | bugfix | Gradle 8.14/8.14.3, JDK 24 CI support, Maven endpoint updates across 17+ repositories |
