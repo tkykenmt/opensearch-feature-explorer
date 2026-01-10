@@ -53,6 +53,7 @@
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
 - [S3 Repository](opensearch/s3-repository.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
+- [Search Pipeline](opensearch/search-pipeline.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
