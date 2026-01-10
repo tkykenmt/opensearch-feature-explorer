@@ -252,6 +252,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Security Performance Optimization](features/security/security-performance-optimization.md) | enhancement | Precomputed privileges toggle and optimized wildcard matching |
 | [Star Tree Security Integration](features/security/star-tree-security-integration.md) | enhancement | Disable star-tree optimization for users with DLS/FLS/Field Masking restrictions |
 
 ### Common (Security)
