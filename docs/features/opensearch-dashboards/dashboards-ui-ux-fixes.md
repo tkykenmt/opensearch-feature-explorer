@@ -100,6 +100,7 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#10344](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10344) | Dataset selector UI visual improvements |
 | v3.0.0 | [#9514](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9514) | Make nav icon style compatible with sidecar |
 | v2.18.0 | [#8227](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8227) | Change page title to h1 with xs size for accessibility |
 | v3.0.0 | [#9516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9516) | Fix data frame null or undefined object conversion error |
@@ -141,5 +142,6 @@ graph TB
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Dataset selector visual improvements (bold text, improved layout)
 - **v3.0.0** (2025-05-06): Initial collection of UI/UX fixes including navigation, query editor, data source, and Discover improvements
 - **v2.18.0** (2024-11-05): Sidebar tooltips, initial page fixes, dev tools nav group removal, overlay positioning, Chrome 129 workaround, OUI breakpoints, HeaderControl rendering, responsive design fixes, page title semantic improvements (h1 + xs size)

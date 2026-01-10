@@ -160,6 +160,7 @@ curl -X POST 'http://localhost:5601/api/opensearch-dashboards/settings?scope=use
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927) | Make UI setting client more robust when setting key does not exist |
 | v2.18.0 | [#7953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7953) | Initial implementation of user level settings |
 
 ## References
@@ -170,4 +171,5 @@ curl -X POST 'http://localhost:5601/api/opensearch-dashboards/settings?scope=use
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Improved UiSettingsClient robustness for non-existent setting keys
 - **v2.18.0** (2024-10-22): Initial implementation with user settings page, scoped uiSettings, and UserUISettingsClientWrapper
