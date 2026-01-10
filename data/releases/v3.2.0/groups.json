@@ -3408,7 +3408,8 @@
           "category": "bugfix",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1148
     },
     {
       "name": "Query String & Regex Fixes",
@@ -3449,7 +3450,8 @@
           "category": "bugfix",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1149
     },
     {
       "name": "HTTP/2 & Reactor-Netty",
@@ -3640,7 +3642,8 @@
           "category": "bugfix",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1150
     },
     {
       "name": "System Ingest Pipeline Fix",
@@ -3654,7 +3657,8 @@
           "category": "bugfix",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1151
     },
     {
       "name": "Dashboards CVE Fixes",
@@ -3668,7 +3672,8 @@
           "category": "deprecation",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1152
     },
     {
       "name": "Explore UI Enhancements",
@@ -3772,7 +3777,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1153
     },
     {
       "name": "Bar Chart Enhancements",
@@ -3786,7 +3792,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1154
     },
     {
       "name": "Trace Details Page",
@@ -3800,7 +3807,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1155
     },
     {
       "name": "Global Banner Support",
@@ -3814,7 +3822,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1156
     },
     {
       "name": "Data Source Selector Scope",
@@ -3828,7 +3837,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1157
     },
     {
       "name": "UI Settings Backward Compatibility",
@@ -3842,7 +3852,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1158
     },
     {
       "name": "Vended Dashboard Progress",
@@ -3856,7 +3867,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1159
     },
     {
       "name": "Explore UI Enhancements",
@@ -4170,7 +4182,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1160
     },
     {
       "name": "Static Banner Plugin",
@@ -4196,7 +4209,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1161
     },
     {
       "name": "Discover Plugin Fixes",
@@ -4216,7 +4230,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1162
     },
     {
       "name": "Chart & Visualization Fixes",
@@ -4236,7 +4251,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1163
     },
     {
       "name": "OUI (OpenSearch UI) Updates",
@@ -4256,7 +4272,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1164
     },
     {
       "name": "Dashboards Code Quality & Testing",
@@ -4348,7 +4365,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1165
     },
     {
       "name": "UI Settings & Dataset Select",
@@ -4368,7 +4386,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1166
     },
     {
       "name": "Query Editor UI",
@@ -4394,7 +4413,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1167
     }
   ],
   "processed_offset": 530
