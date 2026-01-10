@@ -117,17 +117,21 @@ PUT _cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19053](https://github.com/opensearch-project/OpenSearch/pull/19053) | Fix assertion error when collapsing search results with concurrent segment search |
 | v3.2.0 | [#18451](https://github.com/opensearch-project/OpenSearch/pull/18451) | Optimize grouping for segment concurrent search |
 
 ## References
 
 - [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
 - [Issue #7358](https://github.com/opensearch-project/OpenSearch/issues/7358): Original issue discussing slice computation mechanisms
+- [Issue #19051](https://github.com/opensearch-project/OpenSearch/issues/19051): Assertion error with field collapsing
+- [Issue #19111](https://github.com/opensearch-project/OpenSearch/issues/19111): Inconsistent field collapsing results
 - [Introducing concurrent segment search in OpenSearch](https://opensearch.org/blog/concurrent_segment_search/): Introduction blog post
 - [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
 
 ## Change History
 
+- **v3.3.0** (2025-10-30): Fixed assertion error when using field collapsing with concurrent segment search by removing setShardIndex parameter from CollapseTopFieldDocs.merge()
 - **v3.2.0** (2025-07-31): Optimized segment grouping algorithm using priority queue for better load balancing
 - **v3.0.0**: Concurrent segment search enabled by default in `auto` mode
 - **v2.12.0**: Initial experimental release of concurrent segment search
