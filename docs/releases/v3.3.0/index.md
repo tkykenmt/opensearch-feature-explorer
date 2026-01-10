@@ -5,6 +5,7 @@
 ### OpenSearch
 
 - [Derived Fields](features/opensearch/derived-fields.md)
+- [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
 
 ### OpenSearch Dashboards
