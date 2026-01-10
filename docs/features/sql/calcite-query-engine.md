@@ -143,13 +143,24 @@ flowchart TB
 
 ### PPL Commands
 
-| Command | Description | Syntax |
-|---------|-------------|--------|
-| `join` | Correlate data from multiple indexes | `source=a \| join [LEFT\|RIGHT\|INNER\|OUTER\|CROSS\|SEMI\|ANTI] ON condition b` |
-| `lookup` | Enrich data with reference table | `source=a \| lookup b match_field [AS alias], [output_field, ...]` |
-| `subsearch` | Dynamic filtering with subqueries | `where [NOT] exists/in [subquery]` |
-| `dedup` | Remove duplicate records | `source=a \| dedup field1, field2` |
-| `parse` | Extract fields using regex | `source=a \| parse field 'pattern'` |
+| Command | Description | Syntax | Since |
+|---------|-------------|--------|-------|
+| `join` | Correlate data from multiple indexes | `source=a \| join [LEFT\|RIGHT\|INNER\|OUTER\|CROSS\|SEMI\|ANTI] ON condition b` | v3.0.0 |
+| `lookup` | Enrich data with reference table | `source=a \| lookup b match_field [AS alias], [output_field, ...]` | v3.0.0 |
+| `subsearch` | Dynamic filtering with subqueries | `where [NOT] exists/in [subquery]` | v3.0.0 |
+| `dedup` | Remove duplicate records | `source=a \| dedup field1, field2` | v3.0.0 |
+| `parse` | Extract fields using regex | `source=a \| parse field 'pattern'` | v3.0.0 |
+| `eventstats` | Window functions over partitions | `source=a \| eventstats avg(field) by group` | v3.1.0 |
+| `flatten` | Flatten nested struct fields | `source=a \| flatten nested_field` | v3.1.0 |
+| `expand` | Expand array fields into rows | `source=a \| expand array_field` | v3.1.0 |
+| `trendline` | Calculate trend lines | `source=a \| trendline sma(2, field)` | v3.1.0 |
+| `appendcol` | Append columns from subquery | `source=a \| appendcol [subquery]` | v3.1.0 |
+| `grok` | Parse text using Grok patterns | `source=a \| grok field '%{PATTERN}'` | v3.1.0 |
+| `top` | Find most common values | `source=a \| top N field [by group]` | v3.1.0 |
+| `rare` | Find least common values | `source=a \| rare field [by group]` | v3.1.0 |
+| `fillnull` | Replace null values | `source=a \| fillnull value=default field` | v3.1.0 |
+| `describe` | Show index metadata | `describe index_name` | v3.1.0 |
+| `patterns` | Pattern detection (BRAIN method) | `source=a \| patterns field` | v3.1.0 |
 
 ### Supported Functions
 
@@ -157,7 +168,8 @@ flowchart TB
 |----------|-----------|
 | Math | `abs`, `ceil`, `floor`, `round`, `sqrt`, `pow`, `exp`, `ln`, `log`, `log10`, `log2`, `atan`, `atan2`, `sin`, `cos`, `tan` |
 | String | `concat`, `length`, `lower`, `upper`, `trim`, `ltrim`, `rtrim`, `substring`, `replace`, `reverse`, `position`, `left`, `right` |
-| Condition | `if`, `ifnull`, `nullif`, `coalesce`, `case`, `isnull` |
+| Condition | `if`, `ifnull`, `nullif`, `coalesce`, `case`, `isnull`, `isempty`, `isblank`, `ispresent` |
+| Geo | `geoip`, `cidrmatch` |
 | Date/Time | `now`, `curdate`, `curtime`, `date`, `time`, `timestamp`, `date_add`, `date_sub`, `datediff`, `timediff`, `time_to_sec` |
 | Type | `typeof`, `cast` |
 | Aggregation | `count`, `sum`, `avg`, `min`, `max`, `take` |
@@ -226,15 +238,37 @@ POST /_plugins/_ppl
 - Calcite engine is experimental
 - Only PPL queries optimized by Calcite (SQL support planned)
 - JOIN queries auto-terminate after 60 seconds
-- Commands not supported: `trendline`, `top`, `rare`, `fillnull`, `dedup` with `consecutive=true`
+- `dedup` with `consecutive=true` not supported
 - Pagination/cursor not supported
 - Aggregation over expressions has limited support
 - Subquery in FROM clause has limited support
+- `eventstats` supports basic aggregate functions; advanced window functions (ROW_NUMBER, RANK, etc.) planned for future releases
+- `flatten` works only with struct/object fields, not arrays
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#3738](https://github.com/opensearch-project/sql/pull/3738) | Support ResourceMonitor with Calcite |
+| v3.1.0 | [#3747](https://github.com/opensearch-project/sql/pull/3747) | Support `flatten` command with Calcite |
+| v3.1.0 | [#3745](https://github.com/opensearch-project/sql/pull/3745) | Support `expand` command with Calcite |
+| v3.1.0 | [#3741](https://github.com/opensearch-project/sql/pull/3741) | Support trendline command in Calcite |
+| v3.1.0 | [#3729](https://github.com/opensearch-project/sql/pull/3729) | Support `appendcol` command with Calcite |
+| v3.1.0 | [#3678](https://github.com/opensearch-project/sql/pull/3678) | Support Grok command in Calcite engine |
+| v3.1.0 | [#3673](https://github.com/opensearch-project/sql/pull/3673) | Support decimal literal with Calcite |
+| v3.1.0 | [#3647](https://github.com/opensearch-project/sql/pull/3647) | Support `top`, `rare` commands with Calcite |
+| v3.1.0 | [#3634](https://github.com/opensearch-project/sql/pull/3634) | Support `fillnull` command with Calcite |
+| v3.1.0 | [#3628](https://github.com/opensearch-project/sql/pull/3628) | Support function `coalesce` with Calcite |
+| v3.1.0 | [#3627](https://github.com/opensearch-project/sql/pull/3627) | Support functions `isempty`, `isblank`, `ispresent` |
+| v3.1.0 | [#3626](https://github.com/opensearch-project/sql/pull/3626) | Implement Parameter Validation for PPL functions |
+| v3.1.0 | [#3624](https://github.com/opensearch-project/sql/pull/3624) | Support `describe` command with Calcite |
+| v3.1.0 | [#3615](https://github.com/opensearch-project/sql/pull/3615) | Support Limit pushdown |
+| v3.1.0 | [#3612](https://github.com/opensearch-project/sql/pull/3612) | Add UT for PredicateAnalyzer and AggregateAnalyzer |
+| v3.1.0 | [#3605](https://github.com/opensearch-project/sql/pull/3605) | Add row count estimation for CalciteIndexScan |
+| v3.1.0 | [#3604](https://github.com/opensearch-project/sql/pull/3604) | Implement `geoip` udf with Calcite |
+| v3.1.0 | [#3603](https://github.com/opensearch-project/sql/pull/3603) | Implement `cidrmatch` udf with Calcite |
+| v3.1.0 | [#3585](https://github.com/opensearch-project/sql/pull/3585) | Support `eventstats` command with Calcite |
+| v3.1.0 | [#3570](https://github.com/opensearch-project/sql/pull/3570) | Calcite patterns command brain pattern method |
 | v3.0.0 | [#3249](https://github.com/opensearch-project/sql/pull/3249) | Framework of Calcite Engine |
 | v3.0.0 | [#3364](https://github.com/opensearch-project/sql/pull/3364) | PPL join command |
 | v3.0.0 | [#3419](https://github.com/opensearch-project/sql/pull/3419) | Lookup command |
@@ -255,4 +289,5 @@ POST /_plugins/_ppl
 
 ## Change History
 
+- **v3.1.0** (2026-01-10): Expanded command support - eventstats (window functions), flatten, expand, trendline, appendcol, grok, top/rare, fillnull, describe, patterns; new functions (coalesce, isempty, isblank, ispresent, geoip, cidrmatch); performance optimizations (LIMIT pushdown, row count estimation, ResourceMonitor)
 - **v3.0.0** (2025-05-06): Initial implementation - Apache Calcite integration, join/lookup/subsearch commands, UDF framework, custom type system, thread pool execution, enhanced explain output
