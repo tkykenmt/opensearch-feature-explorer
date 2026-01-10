@@ -265,6 +265,7 @@
 ## dashboards-assistant
 
 - [AI Assistant / Chatbot](dashboards-assistant/ai-assistant-chatbot.md)
+- [Text to Visualization (t2viz)](dashboards-assistant/text-to-visualization.md)
 
 ## k-nn
 
