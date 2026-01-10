@@ -197,6 +197,7 @@
 - [SQL PIT Refactor](sql/sql-pit-refactor.md)
 - [SQL Plugin Maintenance](sql/sql-plugin-maintenance.md)
 - [SQL Query Fixes](sql/sql-query-fixes.md)
+- [SQL/PPL Bug Fixes](sql/sql-ppl-bug-fixes.md)
 - [SQL/PPL Engine](sql/sql-ppl-engine.md)
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
 
