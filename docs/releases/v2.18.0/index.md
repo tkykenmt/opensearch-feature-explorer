@@ -89,6 +89,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Flow Framework
 
 - [Flow Framework Workflow State](features/flow-framework/flow-framework-workflow-state.md) - Remove Painless scripts for workflow state updates, implement optimistic locking
+- [Query Assist Data Summary Agent](features/flow-framework/query-assist.md) - Add sample template for Query Assist Data Summary Agent using Claude on Bedrock
 
 ### Alerting
 
