@@ -88,3 +88,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Alerting
 
 - [Alerting Doc-Level Monitor](features/alerting/alerting-doc-level-monitor.md) - Doc-level monitor improvements including comments system indices, remote monitor logging, separate query indices for external monitors, and query index lifecycle optimization
+
+### SQL
+
+- [SQL Plugin Maintenance](features/sql/sql-plugin-maintenance.md) - Security fix for CVE-2024-47554 (commons-io upgrade to 2.14.0) and test fixes for 2.18 branch
