@@ -30,3 +30,4 @@
 - [Query Coordinator Context](features/opensearch/query-coordinator-context.md) - Search request access and validate API integration for index-aware query rewriting
 - [Composite Directory Factory](features/opensearch/composite-directory-factory.md) - Pluggable factory for custom composite directory implementations in warm indices
 - [Security Manager Replacement](features/opensearch/security-manager-replacement.md) - Enhanced Java Agent to intercept newByteChannel from FileSystemProvider
+- [Warm Storage Tiering](features/opensearch/warm-storage-tiering.md) - WarmDiskThresholdDecider and AutoForceMergeManager for hot-to-warm migration
