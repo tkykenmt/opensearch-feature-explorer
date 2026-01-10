@@ -1839,7 +1839,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 875
     },
     {
       "name": "ML Commons Release Notes and Documentation",
@@ -1871,7 +1872,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 876
     },
     {
       "name": "Neural Search Compatibility",
@@ -1885,7 +1887,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 877
     },
     {
       "name": "Security CVE Fixes",
@@ -1906,7 +1909,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 878
     },
     {
       "name": "Search Relevance Test Data",
@@ -1920,7 +1924,8 @@
           "category": "bugfix",
           "repository": "search"
         }
-      ]
+      ],
+      "issue_number": 879
     },
     {
       "name": "k-NN Testing Infrastructure",
@@ -1940,7 +1945,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 880
     },
     {
       "name": "Dashboard Assistant CI Fixes",
@@ -1954,7 +1960,8 @@
           "category": "bugfix",
           "repository": "k"
         }
-      ]
+      ],
+      "issue_number": 881
     },
     {
       "name": "Testing Library Updates",
@@ -1975,7 +1982,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 882
     },
     {
       "name": "Flow Framework Dependencies",
@@ -2001,7 +2009,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 883
     },
     {
       "name": "Job Scheduler Changelog",
@@ -2015,7 +2024,8 @@
           "category": "bugfix",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 884
     },
     {
       "name": "Search Relevance Dashboards Fixes",
@@ -2029,7 +2039,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 885
     },
     {
       "name": "Job Scheduler Maintenance",
@@ -2049,7 +2060,8 @@
           "category": "bugfix",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 886
     },
     {
       "name": "MCP (Model Context Protocol)",
@@ -2069,7 +2081,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 887
     },
     {
       "name": "PlanExecuteReflect Agent",
@@ -2083,7 +2096,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 888
     },
     {
       "name": "ML Commons Maintenance",
@@ -2145,7 +2159,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 889
     },
     {
       "name": "Lucene Upgrade",
@@ -2166,7 +2181,8 @@
           "category": "bugfix",
           "repository": "learning"
         }
-      ]
+      ],
+      "issue_number": 890
     },
     {
       "name": "Notifications Maintenance",
@@ -2186,7 +2202,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 891
     },
     {
       "name": "Observability Release Maintenance",
@@ -2218,7 +2235,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 892
     },
     {
       "name": "Query Insights Release Maintenance",
@@ -2250,7 +2268,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 893
     },
     {
       "name": "Reporting Release Maintenance",
@@ -2270,7 +2289,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 894
     },
     {
       "name": "Security Permissions",
