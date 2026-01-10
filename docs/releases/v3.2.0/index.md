@@ -48,3 +48,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Search Scoring Fixes](features/opensearch/search-scoring-fixes.md) | bugfix | Fix max_score null when sorting by _score with secondary fields |
 | [Replication Lag Fix](features/opensearch/replication-lag-fix.md) | bugfix | Fix segment replication lag computation using correct epoch timestamps |
 | [Parent-Child Query Fixes](features/opensearch/parent-child-query-fixes.md) | bugfix | Fix QueryBuilderVisitor pattern for HasParentQuery and HasChildQuery |
+| [HTTP/2 & Reactor-Netty Fix](features/opensearch/http2-reactor-netty-fix.md) | bugfix | Fix HTTP/2 communication when reactor-netty-secure transport is enabled |
