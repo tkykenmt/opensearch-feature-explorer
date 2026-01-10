@@ -60,13 +60,17 @@ flowchart LR
 | `SortedSetDocValuesFetcher` | Fetches string values from sorted set doc values (keyword, IP fields) |
 | `StoredFieldFetcher` | Fetches values from stored fields using `SingleFieldsVisitor` |
 | `FieldValueType` | Enum with values `DOC_VALUES` and `STORED` indicating storage preference |
+| `DerivedSourceDirectoryReader` | FilterDirectoryReader that wraps readers to support derived source (v3.2.0+) |
+| `DerivedSourceLeafReader` | LeafReader wrapper providing access to derived source (v3.2.0+) |
+| `DerivedSourceStoredFieldsReader` | StoredFieldsReader that injects `_source` field by deriving it dynamically (v3.2.0+) |
+| `TranslogOperationHelper` | Helper class for comparing translog operations with derived source support (v3.2.0+) |
 
 ### Configuration
 
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `index.derived_source.enabled` | Enable derived source for the index | `false` |
-| `index.derived_source.translog.enabled` | Enable derived source for translog operations | `true` |
+| `index.derived_source.translog.enabled` | Enable derived source for translog operations (dynamic, v3.2.0+) | Same as `index.derived_source.enabled` |
 
 ### Supported Field Types
 
@@ -148,6 +152,7 @@ Search latency may increase by 10-100% depending on the number of documents retr
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18565](https://github.com/opensearch-project/OpenSearch/pull/18565) | Add integration of derived source feature across various paths like get/search/recovery |
 | v3.1.0 | [#17759](https://github.com/opensearch-project/OpenSearch/pull/17759) | Adding support for derive source feature and implementing it for various type of field mappers |
 
 ## References
@@ -160,4 +165,5 @@ Search latency may increase by 10-100% depending on the number of documents retr
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Integration across get/search/recovery paths - Added DerivedSourceDirectoryReader, DerivedSourceLeafReader, DerivedSourceStoredFieldsReader, TranslogOperationHelper; Added dynamic `index.derived_source.translog.enabled` setting; Fixed flaky test issues from reverted PR #18054; Added Star-Tree mapper compatibility
 - **v3.1.0** (2026-01-10): Initial implementation - Added derive source support for basic field types including Date, Number, Boolean, IP, Keyword, Text, Geo Point, Constant Keyword, Scaled Float, and Wildcard
