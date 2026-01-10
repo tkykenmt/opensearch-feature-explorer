@@ -125,6 +125,8 @@ PUT .plugins-ml-config/_doc/os_chat
 | v3.0.0 | [#505](https://github.com/opensearch-project/dashboards-assistant/pull/505) | Generate visualization on t2v page mount |
 | v3.0.0 | [#514](https://github.com/opensearch-project/dashboards-assistant/pull/514) | Add auto aggregation suggest for t2v |
 | v3.0.0 | [#540](https://github.com/opensearch-project/dashboards-assistant/pull/540) | Change chatbot entry point to single button |
+| v2.18.0 | [#267](https://github.com/opensearch-project/dashboards-assistant/pull/267) | Add assistant capabilities to control rendering components |
+| v2.18.0 | [#307](https://github.com/opensearch-project/dashboards-assistant/pull/307) | Expose API to check if agent config name has agent ID configured |
 
 ## References
 
@@ -139,4 +141,5 @@ PUT .plugins-ml-config/_doc/os_chat
 ## Change History
 
 - **v3.0.0** (2025-05-06): Major UI redesign, streaming output support, single button entry point, text-to-visualization enhancements with auto-aggregation, conversation auto-loading
+- **v2.18.0** (2024-11-05): Added assistant capabilities for conditional UI rendering, new API to check agent config existence, renamed agentName to agentConfigName for clarity
 - **v2.13** (2024): Initial introduction of OpenSearch Assistant for OpenSearch Dashboards
