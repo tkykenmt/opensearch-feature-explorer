@@ -96,6 +96,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Alerting
 
 - [Alerting Doc-Level Monitor](features/alerting/alerting-doc-level-monitor.md) - Doc-level monitor improvements including comments system indices, remote monitor logging, separate query indices for external monitors, and query index lifecycle optimization
+- [Alerting Bugfixes](features/alerting/alerting-bugfixes.md) - Query index management fixes, bucket-level monitor optimization, dashboard UX improvements, MDS compatibility fixes
 
 ### SQL
 

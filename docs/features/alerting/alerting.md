@@ -150,15 +150,23 @@ POST _plugins/_alerting/monitors
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#1780](https://github.com/opensearch-project/alerting/pull/1780) | Fix bucket selector aggregation writeable name |
+| v3.0.0 | [#1823](https://github.com/opensearch-project/alerting/pull/1823) | Fix build due to phasing off SecurityManager |
+| v3.0.0 | [#1824](https://github.com/opensearch-project/alerting/pull/1824) | Use java-agent Gradle plugin |
+| v3.0.0 | [#1831](https://github.com/opensearch-project/alerting/pull/1831) | Correct release notes filename |
+| v3.0.0 | [#1234](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1234) | Fix .keyword subfield selection in bucket monitor |
+| v2.18.0 | [#1685](https://github.com/opensearch-project/alerting/pull/1685) | Delete query index only if put mappings throws an exception |
+| v2.18.0 | [#1701](https://github.com/opensearch-project/alerting/pull/1701) | Optimize bucket level monitor alias resolution for time-series indices |
+| v2.18.0 | [#1702](https://github.com/opensearch-project/alerting/pull/1702) | Fix query index shards to 0 and auto expand replicas to 0-1 |
+| v2.18.0 | [#1092](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1092) | Fit and Finish UX Fixes |
+| v2.18.0 | [#1099](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1099) | Fit and Finish UX changes Pt 2 |
+| v2.18.0 | [#1102](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1102) | Fix assistant plugin override issue and return dataSourceId in context |
+| v2.18.0 | [#1117](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1117) | Add width for recent alerts card |
+| v2.18.0 | [#1124](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1124) | Fix ui_metadata not fetched when MDS client is used |
 | v2.18.0 | [#1659](https://github.com/opensearch-project/alerting/pull/1659) | Adding Alerting Comments system indices and Security ITs |
 | v2.18.0 | [#1663](https://github.com/opensearch-project/alerting/pull/1663) | Add logging for remote monitor execution flows |
 | v2.18.0 | [#1664](https://github.com/opensearch-project/alerting/pull/1664) | Separate doc-level monitor query indices for externally defined monitors |
 | v2.18.0 | [#1668](https://github.com/opensearch-project/alerting/pull/1668) | Move deletion of query index before its creation |
 | v2.18.0 | [#1674](https://github.com/opensearch-project/alerting/pull/1674) | Create query index at the time of monitor creation |
-| v3.0.0 | [#1823](https://github.com/opensearch-project/alerting/pull/1823) | Fix build due to phasing off SecurityManager |
-| v3.0.0 | [#1824](https://github.com/opensearch-project/alerting/pull/1824) | Use java-agent Gradle plugin |
-| v3.0.0 | [#1831](https://github.com/opensearch-project/alerting/pull/1831) | Correct release notes filename |
-| v3.0.0 | [#1234](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1234) | Fix .keyword subfield selection in bucket monitor |
 | v2.17.0 | [#1623](https://github.com/opensearch-project/alerting/pull/1623) | Fix monitor renew lock issue |
 | v2.17.0 | [#1637](https://github.com/opensearch-project/alerting/pull/1637) | Fix distribution builds |
 | v2.17.0 | [#1640](https://github.com/opensearch-project/alerting/pull/1640) | Fix distribution builds |
@@ -181,5 +189,5 @@ POST _plugins/_alerting/monitors
 ## Change History
 
 - **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
-- **v2.18.0** (2024-11-05): Doc-level monitor improvements - alerting comments system indices, remote monitor logging, separate query indices for external monitors, query index lifecycle optimization
+- **v2.18.0** (2024-11-05): Doc-level monitor improvements, query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
 - **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes
