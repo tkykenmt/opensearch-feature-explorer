@@ -197,6 +197,7 @@
 - [JWT Authentication](security/jwt-authentication.md)
 - [Multi-Tenancy](security/multi-tenancy.md)
 - [Resource Access Control Framework](security/resource-access-control-framework.md)
+- [Security FIPS Compliance](security/security-fips-compliance.md)
 
 ## security-dashboards
 
