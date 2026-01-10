@@ -10,6 +10,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Vended Dashboard Progress](features/opensearch-dashboards/vended-dashboard-progress.md) | feature | Polling-based index state detection for background data sync progress |
 | [Explore UI Enhancements](features/opensearch-dashboards/explore-ui-enhancements.md) | feature | New Explore plugin with auto-visualization, multi-flavor support, and dashboard embeddable |
 | [Static Banner Plugin](features/opensearch-dashboards/static-banner-plugin.md) | feature | Global configurable header banner for announcements |
 | [Discover Plugin Fixes](features/opensearch-dashboards/discover-plugin-fixes.md) | bugfix | Fix empty page when no index patterns, add Cypress tests |
