@@ -8,6 +8,7 @@
 - [OpenSearch Dashboards Banner Extensibility](features/opensearch-dashboards/opensearch-dashboards-banner-extensibility.md)
 - [OpenSearch Dashboards Bug Fixes](features/opensearch-dashboards/opensearch-dashboards-bug-fixes.md)
 - [OpenSearch Dashboards Dataset Explorer](features/opensearch-dashboards/opensearch-dashboards-dataset-explorer.md)
+- [OpenSearch Dashboards Explore](features/opensearch-dashboards/opensearch-dashboards-explore.md)
 - [OpenSearch Dashboards Patterns Tab](features/opensearch-dashboards/opensearch-dashboards-patterns-tab.md)
 - [OpenSearch Dashboards Traces](features/opensearch-dashboards/opensearch-dashboards-traces.md)
 - [OpenSearch Dashboards UI Enhancements](features/opensearch-dashboards/opensearch-dashboards-ui-enhancements.md)
