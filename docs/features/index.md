@@ -27,6 +27,7 @@
 - [Bulk API](opensearch/bulk-api.md)
 - [Cardinality Aggregation](opensearch/cardinality-aggregation.md)
 - [Cat Indices API](opensearch/cat-indices-api.md)
+- [Client API Enhancements](opensearch/client-api-enhancements.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
 - [Cluster Info & Resource Stats](opensearch/cluster-info-resource-stats.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
