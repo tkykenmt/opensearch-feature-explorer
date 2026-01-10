@@ -77,6 +77,26 @@ release-notes/
 | v3.1.0 | [#1313](https://github.com/opensearch-project/index-management/pull/1313) | index-management | Increment to 3.1.0.0 |
 | v3.1.0 | [#572](https://github.com/opensearch-project/ml-commons/pull/572) | ml-commons | Bump version to 3.1.0.0 |
 | v3.1.0 | [#2451](https://github.com/opensearch-project/observability/pull/2451) | observability | Workflows - Version bump to 3.1.0 |
+| v3.2.0 | [#1892](https://github.com/opensearch-project/alerting/pull/1892) | alerting | Moved commons-beanutils pinning to core gradle |
+| v3.2.0 | [#1887](https://github.com/opensearch-project/alerting/pull/1887) | alerting | Pinned commons-beanutils to 1.11.0 |
+| v3.2.0 | [#1271](https://github.com/opensearch-project/alerting/pull/1271) | alerting | Increment to 3.2.0.0 |
+| v3.2.0 | [#751](https://github.com/opensearch-project/asynchronous-search/pull/751) | asynchronous-search | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#262](https://github.com/opensearch-project/custom-codecs/pull/262) | custom | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#1332](https://github.com/opensearch-project/index-management/pull/1332) | index-management | Increment to 3.2.0.0 |
+| v3.2.0 | [#1435](https://github.com/opensearch-project/index-management/pull/1435) | index-management | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#437](https://github.com/opensearch-project/ml-commons/pull/437) | ml-commons | Increment to 3.2.0.0 |
+| v3.2.0 | [#365](https://github.com/opensearch-project/notifications/pull/365) | notifications | Increment to 3.2.0.0 |
+| v3.2.0 | [#2481](https://github.com/opensearch-project/observability/pull/2481) | observability | Increment to 3.2.0.0 |
+| v3.2.0 | [#1933](https://github.com/opensearch-project/observability/pull/1933) | observability | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#295](https://github.com/opensearch-project/query-insights/pull/295) | query | Increment to 3.2.0.0 |
+| v3.2.0 | [#380](https://github.com/opensearch-project/query-insights/pull/380) | query | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#485](https://github.com/opensearch-project/dashboards-notifications/pull/485) | dashboards | Increment to 3.2.0.0 |
+| v3.2.0 | [#603](https://github.com/opensearch-project/reporting/pull/603) | reporting | Increment to 3.2.0.0 |
+| v3.2.0 | [#1105](https://github.com/opensearch-project/reporting/pull/1105) | reporting | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#1316](https://github.com/opensearch-project/security/pull/1316) | security | Increment to 3.2.0.0 |
+| v3.2.0 | [#191](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/191) | learning | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#823](https://github.com/opensearch-project/performance-analyzer/pull/823) | performance | Increment to 3.2.0-SNAPSHOT |
+| v3.2.0 | [#86](https://github.com/opensearch-project/opensearch-system-templates/pull/86) | system | Increment to 3.2.0-SNAPSHOT |
 | v3.1.0 | [#3671](https://github.com/opensearch-project/sql/pull/3671) | sql | Bump setuptools to 78.1.1 |
 | v3.1.0 | [#18039](https://github.com/opensearch-project/OpenSearch/pull/18039) | OpenSearch | Bump Core main branch to 3.0.0 |
 | v3.0.0 | [#1843](https://github.com/opensearch-project/alerting/pull/1843) | alerting | Added 3.0 release notes |
@@ -102,6 +122,7 @@ release-notes/
 
 ## Change History
 
+- **v3.2.0** (2026-01-11): Version bumps across 14 repositories (alerting, asynchronous-search, custom, index-management, ml-commons, notifications, observability, query, dashboards, reporting, security, learning, performance, system)
 - **v3.1.0** (2026-01-10): Version bumps across 11 repositories (alerting, asynchronous-search, common-utils, dashboards-notifications, notifications, reporting, index-management-dashboards, index-management, ml-commons, observability, sql, OpenSearch core)
 - **v3.0.0** (2025-05-06): Version bumps and release notes across 9 repositories (alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins)
 - **v2.18.0** (2024-11-05): Release notes across 5 repositories (alerting, common-utils, notifications, query-insights, security)
