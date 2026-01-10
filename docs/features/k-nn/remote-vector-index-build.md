@@ -181,6 +181,8 @@ POST my-vectors/_bulk
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#2659](https://github.com/opensearch-project/k-NN/pull/2659) | Add testing support to run all ITs with remote index builder |
+| v3.1.0 | [#2700](https://github.com/opensearch-project/k-NN/pull/2700) | Fix KNNSettingsTests after change in MockNode constructor |
 | v3.0.0 | [#2576](https://github.com/opensearch-project/k-NN/pull/2576) | Client polling, encoder validation, parameter retrieval |
 | v3.0.0 | [#2603](https://github.com/opensearch-project/k-NN/pull/2603) | Separate client module for reduced dependencies |
 | v3.0.0 | [#2615](https://github.com/opensearch-project/k-NN/pull/2615) | Metric collection for monitoring |
@@ -190,6 +192,7 @@ POST my-vectors/_bulk
 
 - [Issue #2391](https://github.com/opensearch-project/k-NN/issues/2391): Meta issue tracking all remote build work
 - [Issue #2518](https://github.com/opensearch-project/k-NN/issues/2518): Low-level design document
+- [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Integration testing support meta issue
 - [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Official OpenSearch docs
 - [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): GPU build service
 - [User Guide](https://github.com/opensearch-project/remote-vector-index-builder/blob/main/USER_GUIDE.md): Service setup instructions
@@ -197,4 +200,5 @@ POST my-vectors/_bulk
 
 ## Change History
 
+- **v3.1.0** (2025-05-13): Added comprehensive integration test support with `@ExpectRemoteBuildValidation` annotation, updated GitHub Actions workflow to use official Docker image and run all ITs, fixed MockNode constructor compatibility
 - **v3.0.0** (2025-05-06): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support

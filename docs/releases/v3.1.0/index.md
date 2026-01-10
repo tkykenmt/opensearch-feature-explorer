@@ -96,3 +96,7 @@
 ### Multi-Plugin
 
 - [Testing Library Updates](features/multi-plugin/testing-library-updates.md) - Update @testing-library/user-event to v14.4.3 in anomaly-detection and index-management dashboards plugins
+
+### k-NN
+
+- [k-NN Testing Infrastructure](features/k-nn/k-nn-testing-infrastructure.md) - Enable all integration tests with remote index builder and fix MockNode constructor compatibility
