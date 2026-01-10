@@ -111,6 +111,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Query Insights
 
 - [Query Insights Settings](features/query-insights/query-insights-settings.md) - Change default values for grouping attribute settings (field_name, field_type) from false to true
+- [Query CI/CD](features/query-insights/query-ci-cd.md) - Upgrade deprecated actions/upload-artifact from v1/v2 to v3
 
 ### Security Analytics
 

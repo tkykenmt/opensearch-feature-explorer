@@ -95,6 +95,7 @@ CI/CD improvements typically involve changes to:
 | v2.18.0 | [#965](https://github.com/opensearch-project/notifications/pull/965) | notifications | Fix CI workflows for Node 20 |
 | v2.18.0 | [#2138](https://github.com/opensearch-project/observability/pull/2138) | observability | CVE fix for lint-staged |
 | v2.18.0 | [#2187](https://github.com/opensearch-project/observability/pull/2187) | observability | Add compile step before Cypress |
+| v2.18.0 | [#117](https://github.com/opensearch-project/query-insights/pull/117) | query-insights | Upgrade deprecated actions/upload-artifact to v3 |
 
 ## References
 
@@ -102,4 +103,4 @@ CI/CD improvements typically involve changes to:
 
 ## Change History
 
-- **v2.18.0** (2024-11-05): JDK-21 baseline for index-management, CI workflow fixes for notifications and observability, test security improvements for ml-commons, backport process improvements
+- **v2.18.0** (2024-11-05): JDK-21 baseline for index-management, CI workflow fixes for notifications, observability, and query-insights, test security improvements for ml-commons, backport process improvements
