@@ -63,6 +63,18 @@ graph TB
 | `notification` | Sends notifications |
 | `unfollow` | Stops cross-cluster replication (v3.0.0+) |
 
+### ISM Transition Conditions
+
+| Condition | Description | Since |
+|-----------|-------------|-------|
+| `min_index_age` | Minimum age of the index since creation | v1.0.0 |
+| `min_rollover_age` | Minimum age after rollover | v1.0.0 |
+| `min_doc_count` | Minimum document count | v1.0.0 |
+| `min_size` | Minimum total primary shard size | v1.0.0 |
+| `cron` | Cron expression for scheduled transitions | v1.0.0 |
+| `no_alias` | Transition based on alias presence (true=no aliases, false=has aliases) | v3.2.0 |
+| `min_state_age` | Minimum time spent in current ISM state | v3.2.0 |
+
 ### Configuration
 
 | Setting | Description | Default |
@@ -75,6 +87,46 @@ graph TB
 | `plugins.rollup.search.search_source_indices` | Allow searching non-rollup and rollup indices together (v2.18.0+) | `false` |
 
 ### Usage Example
+
+#### ISM Policy with Alias-Based and State-Age Transitions (v3.2.0+)
+
+```json
+PUT _plugins/_ism/policies/alias_aware_lifecycle
+{
+  "policy": {
+    "description": "Lifecycle policy with alias-aware transitions",
+    "default_state": "hot",
+    "states": [
+      {
+        "name": "hot",
+        "transitions": [
+          {
+            "state_name": "archive",
+            "conditions": {
+              "no_alias": true
+            }
+          }
+        ]
+      },
+      {
+        "name": "archive",
+        "transitions": [
+          {
+            "state_name": "delete",
+            "conditions": {
+              "min_state_age": "7d"
+            }
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "actions": [{ "delete": {} }]
+      }
+    ]
+  }
+}
+```
 
 #### ISM Policy with Unfollow Action
 
@@ -180,6 +232,9 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#1440](https://github.com/opensearch-project/index-management/pull/1440) | Support for no_alias and min_state_age in ISM Transitions |
+| v3.2.0 | [#1444](https://github.com/opensearch-project/index-management/pull/1444) | Add history index pattern to System Index descriptors |
+| v3.2.0 | [#1442](https://github.com/opensearch-project/index-management/pull/1442) | Fix Integration test and lint errors |
 | v3.1.0 | [#1413](https://github.com/opensearch-project/index-management/pull/1413) | Removed unnecessary user notifications for version conflict exception |
 | v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | Adding unfollow action in ISM for CCR |
 | v3.0.0 | [#1377](https://github.com/opensearch-project/index-management/pull/1377) | Target Index Settings for rollup |
@@ -198,17 +253,19 @@ PUT _plugins/_rollup/jobs/sample_rollup
 ## References
 
 - [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
+- [ISM Policies Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/policies/)
 - [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/)
 - [Index Transforms Documentation](https://docs.opensearch.org/3.0/im-plugin/index-transforms/index/)
 - [Index Management Security](https://docs.opensearch.org/3.0/im-plugin/security/)
+- [Issue #1439](https://github.com/opensearch-project/index-management/issues/1439): Feature request for no_alias and min_state_age
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Unfollow action feature request
 - [Issue #1075](https://github.com/opensearch-project/index-management/issues/1075): ISM listener blocking Cluster Applier thread
 - [Issue #1213](https://github.com/opensearch-project/index-management/issues/1213): Feature request for mixed rollup/non-rollup search
-
 - [Issue #1371](https://github.com/opensearch-project/index-management/issues/1371): False positive notifications in Snapshot Management
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Added `no_alias` and `min_state_age` transition conditions for ISM, registered ISM history index as System Index descriptor, fixed integration tests and lint errors
 - **v3.1.0** (2026-01-10): Fixed false positive notifications in Snapshot Management by suppressing user notifications for internal VersionConflictEngineException errors
 - **v3.0.0** (2025-05-06): Added ISM unfollow action for CCR, rollup target index settings, CVE fixes, Java Agent migration
 - **v2.18.0** (2024-11-05): Added `plugins.rollup.search.search_source_indices` setting to allow searching non-rollup and rollup indices together, UX improvements (refresh buttons, section header styling), transform API input validation, fixed snapshot status detection, fixed snapshot policy button reload, fixed data source initialization

@@ -198,6 +198,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Alerting Plugin](features/alerting/alerting-plugin.md) | bugfix | MGet bug fix, randomized fan-out distribution, consistent API responses |
 
+### Index Management
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [ISM Transitions Enhancement](features/index-management/ism-transitions-enhancement.md) | bugfix | New `no_alias` and `min_state_age` transition conditions, ISM history index as System Index |
+
 ### Anomaly Detection
 
 | Item | Category | Description |
