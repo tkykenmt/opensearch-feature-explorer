@@ -21,6 +21,7 @@
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
+- [Tiered Caching](features/opensearch/tiered-caching.md)
 
 ### OpenSearch Dashboards
 
