@@ -21,6 +21,7 @@
 - [Flat Object Field](opensearch/flat-object-field.md)
 - [gRPC Transport & Services](opensearch/grpc-transport--services.md)
 - [Index Settings](opensearch/index-settings.md)
+- [List APIs (Paginated)](opensearch/list-apis-paginated.md)
 - [Mapping Transformer](opensearch/mapping-transformer.md)
 - [Cluster Manager Task Throttling](opensearch/cluster-manager-throttling.md)
 - [Cluster State Management](opensearch/cluster-state-management.md)
