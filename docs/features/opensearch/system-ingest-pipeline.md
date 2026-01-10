@@ -68,13 +68,22 @@ flowchart TB
 | `cluster.ingest.system_pipeline_enabled` | Enable/disable system ingest pipeline feature cluster-wide | `true` |
 | `cluster.ingest.max_number_processors` | Maximum number of processors allowed in a pipeline | `Integer.MAX_VALUE` |
 
+### Factory Configuration Keys
+
+| Key | Type | Description | Since |
+|-----|------|-------------|-------|
+| `INDEX_MAPPINGS` | `Map<String, Object>` | Mappings from the existing index | v3.1.0 |
+| `INDEX_TEMPLATE_MAPPINGS` | `List<Map<String, Object>>` | Mappings from matched templates | v3.1.0 |
+| `INDEX_SETTINGS` | `Settings` | Settings from the existing index | v3.2.0 |
+| `INDEX_TEMPLATE_SETTINGS` | `List<Settings>` | Settings from matched templates | v3.2.0 |
+
 ### Pipeline Types and Execution Order
 
 | Order | Pipeline Type | Source | Can Change Target Index |
 |-------|--------------|--------|------------------------|
 | 1 | DEFAULT | User-defined or index setting | Yes |
 | 2 | FINAL | Index setting | No |
-| 3 | SYSTEM_FINAL | Auto-generated from mapping | No |
+| 3 | SYSTEM_FINAL | Auto-generated from mapping/settings | No |
 
 ### Update Operation Behavior
 
@@ -192,6 +201,7 @@ PUT _cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories |
 | v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |
 | v3.1.0 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations |
 
@@ -202,10 +212,12 @@ PUT _cluster/settings
 - [Issue #17742](https://github.com/opensearch-project/OpenSearch/issues/17742): Add configurability to run ingest pipelines during document update operations
 - [Issue #18151](https://github.com/opensearch-project/OpenSearch/issues/18151): Related issue resolved by #17817
 - [Issue #17819](https://github.com/opensearch-project/OpenSearch/issues/17819): Partially resolved by #17817
+- [Issue #1349](https://github.com/opensearch-project/neural-search/issues/1349): Semantic Field Enhancement - Configure Batch Size for Embedding Generation
 - [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): Official announcement blog
 - [Neural Search Semantic Field RFC](https://github.com/opensearch-project/neural-search/issues/1211): Primary use case for system ingest pipelines
 
 ## Change History
 
+- **v3.2.0** (2025-07-09): Added index settings support for processor factories (#18708)
 - **v3.1.0** (2025-05-09): Initial implementation of system ingest pipeline (#17817)
 - **v3.1.0** (2025-06-11): Added bulk update operation support (#18277)
