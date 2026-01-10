@@ -99,3 +99,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Geospatial Infrastructure](features/geospatial/geospatial-infrastructure.md) | bugfix | Upgrade Gradle to 8.14.3 and run CI checks with JDK24 |
+
+### Performance Analyzer
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Performance Analyzer Infrastructure](features/performance-analyzer/performance-analyzer-infrastructure.md) | bugfix | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |
