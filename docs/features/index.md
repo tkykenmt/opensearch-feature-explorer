@@ -55,6 +55,7 @@
 - [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
 - [Jackson & Query Limits](opensearch/jackson--query-limits.md)
+- [Java Agent AccessController](opensearch/java-agent-accesscontroller.md)
 - [Source Field Matching](opensearch/source-field-matching.md)
 - [Cryptography & Security Libraries](opensearch/cryptography-security-libraries.md)
 - [Gradle Build System](opensearch/gradle-build-system.md)

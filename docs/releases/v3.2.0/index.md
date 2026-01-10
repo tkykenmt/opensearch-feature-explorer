@@ -84,3 +84,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md) | feature | File-based ingestion plugin (ingestion-fs) for local testing |
 | [Cat Indices API Enhancement](features/opensearch/cat-indices-api-enhancement.md) | feature | Add last index request timestamp columns to `_cat/indices` API |
 | [Remote Store Metadata API](features/opensearch/remote-store-metadata-api.md) | feature | New cluster-level API to fetch segment and translog metadata from remote store |
+| [Java Agent AccessController](features/opensearch/java-agent-accesscontroller.md) | feature | OpenSearch replacement for JDK's deprecated AccessController for privileged operations |
