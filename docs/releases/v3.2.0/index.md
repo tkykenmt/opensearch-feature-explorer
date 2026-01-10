@@ -88,3 +88,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Remote Store Metadata API](features/opensearch/remote-store-metadata-api.md) | feature | New cluster-level API to fetch segment and translog metadata from remote store |
 | [Java Agent AccessController](features/opensearch/java-agent-accesscontroller.md) | feature | OpenSearch replacement for JDK's deprecated AccessController for privileged operations |
 | [Secure Transport Parameters](features/opensearch/secure-transport-parameters.md) | feature | SecureHttpTransportParameters API for cleaner SSL configuration in Reactor Netty 4 HTTP transport |
+| [Custom Index Name Resolver](features/opensearch/custom-index-name-resolver.md) | feature | Plugin extensibility for custom index name expression resolvers |
