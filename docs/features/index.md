@@ -46,6 +46,7 @@
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [DocRequest Refactoring](opensearch/docrequest-refactoring.md)
 - [Dynamic Settings](opensearch/dynamic-settings.md)
+- [Dynamic Mapping](opensearch/dynamic-mapping.md)
 - [Field Collapsing](opensearch/field-collapsing.md)
 - [Field Data Cache](opensearch/field-data-cache.md)
 - [Field Mapping](opensearch/field-mapping.md)
