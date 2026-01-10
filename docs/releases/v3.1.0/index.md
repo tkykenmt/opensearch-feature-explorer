@@ -14,6 +14,7 @@
 - [Network Configuration](features/opensearch/network-configuration.md) - Fix systemd seccomp filter for network.host: 0.0.0.0
 - [Percentiles Aggregation](features/opensearch/percentiles-aggregation.md) - Switch to MergingDigest for up to 30x performance improvement
 - [Plugin Installation](features/opensearch/plugin-installation.md) - Fix native plugin installation error caused by PGP public key change
+- [Plugin Testing Framework](features/opensearch/plugin-testing-framework.md) - Enable testing for ExtensiblePlugins using classpath plugins
 - [Query Bug Fixes](features/opensearch/query-bug-fixes.md) - Fixes for exists query, error handling, field validation, and IP field terms query
 - [S3 Repository Enhancements](features/opensearch/s3-repository-enhancements.md) - SSE-KMS encryption support and S3 bucket owner verification
 - [Snapshot/Repository Fixes](features/opensearch/repository-fixes.md) - Fix infinite loop during concurrent snapshot/repository update and NPE for legacy snapshots

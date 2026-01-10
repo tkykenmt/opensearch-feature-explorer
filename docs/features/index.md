@@ -60,6 +60,7 @@
 - [Percentiles Aggregation](opensearch/percentiles-aggregation.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Plugin Installation](opensearch/plugin-installation.md)
+- [Plugin Testing Framework](opensearch/plugin-testing-framework.md)
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
