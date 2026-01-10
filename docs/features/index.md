@@ -181,6 +181,7 @@
 ## security
 
 - [Alerting Comments Security](security/alerting-comments-security.md)
+- [Auxiliary Transport SSL](security/auxiliary-transport-ssl.md)
 - [Correlation Alerts](security/correlation-alerts.md)
 - [Security Auth Enhancements](security/security-auth-enhancements.md)
 - [Security Bugfixes](security/security-bugfixes.md)
