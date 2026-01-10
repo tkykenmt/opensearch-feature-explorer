@@ -79,3 +79,7 @@
 ### Job Scheduler
 
 - [Job Scheduler Maintenance](features/job-scheduler/job-scheduler-maintenance.md) - Remove Guava dependency to reduce jar hell and version increment to 3.1.0
+
+### Dashboards Search Relevance
+
+- [Search Relevance Dashboards Fixes](features/dashboards-search-relevance/search-relevance-dashboards-fixes.md) - Fix schema validation in POST Query Sets endpoint
