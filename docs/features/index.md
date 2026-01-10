@@ -138,6 +138,7 @@
 
 ## opensearch-dashboards
 
+- [AI Chat](opensearch-dashboards/ai-chat.md)
 - [Async Query](opensearch-dashboards/async-query.md)
 - [Banner Plugin](opensearch-dashboards/banner-plugin.md)
 - [Bar Chart Enhancements](opensearch-dashboards/bar-chart-enhancements.md)
