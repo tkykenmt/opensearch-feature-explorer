@@ -60,6 +60,7 @@
 ### Observability
 
 - [Observability Release Maintenance](features/observability/observability-release-maintenance.md) - Version increments, release notes, and bug fixes for trace analytics
+- [Observability Bug Fixes](features/observability/observability-bug-fixes.md) - Jaeger end time processing fix and NFW integration Vega warning fix
 
 ### Neural Search
 
