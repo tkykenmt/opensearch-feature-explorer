@@ -201,6 +201,10 @@
 
 - [Security Dashboards Plugin](security-dashboards/security-dashboards-plugin.md)
 
+## security-analytics-dashboards-plugin
+
+- [Security Analytics](security-analytics-dashboards-plugin/security-analytics.md)
+
 ## remote
 
 - [Security CVE Fixes](remote/security-cve-fixes.md)

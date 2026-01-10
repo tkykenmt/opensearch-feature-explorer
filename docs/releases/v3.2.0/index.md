@@ -168,6 +168,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) | bugfix | Memory fixes, error handling, 3.1+ API compatibility, race condition fix, default template fixes |
 
+### Security Analytics Dashboards Plugin
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Security Analytics Bugfixes](features/security-analytics-dashboards-plugin/security-analytics-bugfixes.md) | bugfix | Remove Vega-based correlated findings chart, update IOC types API |
+
 ### Multi-Repository
 
 | Item | Category | Description |
