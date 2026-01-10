@@ -86,6 +86,8 @@ function MyComponent() {
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#10153](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10153) | Update OUI to 1.20 |
+| v3.2.0 | [#10284](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10284) | Update OUI to 1.21 |
 | v2.18.0 | [#8246](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8246) | Update OUI to 1.13 |
 | v2.18.0 | [#8372](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8372) | Update OUI to 1.14 |
 | v2.18.0 | [#8480](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8480) | Update OUI to 1.15 |
@@ -97,4 +99,5 @@ function MyComponent() {
 
 ## Change History
 
+- **v3.2.0** (2025-07-29): Updated to OUI 1.21 with `preserveTabContent` prop for `EuiTabbedContent` component
 - **v2.18.0** (2024-11-05): Updated to OUI 1.15 with new `$euiSideNavBackgroundColor` variable, font changes from Fira Code to Source Code Pro
