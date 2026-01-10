@@ -198,6 +198,13 @@ config:
 | v3.0.0 | [#1467](https://github.com/opensearch-project/security/pull/1467) | Refactored flaky test |
 | v3.0.0 | [#1498](https://github.com/opensearch-project/security/pull/1498) | Remove overrides of preserveIndicesUponCompletion |
 | v3.0.0 | [#1503](https://github.com/opensearch-project/security/pull/1503) | Remove usage of deprecated batchSize() method |
+| v2.18.0 | [#4776](https://github.com/opensearch-project/security/pull/4776) | Add deprecation warning for GET/POST/PUT cache |
+| v2.18.0 | [#4768](https://github.com/opensearch-project/security/pull/4768) | Undeprecate securityadmin script |
+| v2.18.0 | [#4765](https://github.com/opensearch-project/security/pull/4765) | Add isActionPaginated to DelegatingRestHandler |
+| v2.18.0 | [#4740](https://github.com/opensearch-project/security/pull/4740) | Refactor ASN1 call for FIPS compatibility |
+| v2.18.0 | [#4792](https://github.com/opensearch-project/security/pull/4792) | Fix CVE-2024-47554 (commons-io upgrade) |
+| v2.18.0 | [#4831](https://github.com/opensearch-project/security/pull/4831) | Fix bulk index requests in BWC tests |
+| v2.18.0 | [#4815](https://github.com/opensearch-project/security/pull/4815) | Fix integTest not called during release |
 | v2.17.0 | [#4603](https://github.com/opensearch-project/security/pull/4603) | Fix demo certificate hash validation |
 | v2.17.0 | [#4631](https://github.com/opensearch-project/security/pull/4631) | Fix authtoken endpoint |
 | v2.17.0 | [#4664](https://github.com/opensearch-project/security/pull/4664) | Handle null audit config |
@@ -209,6 +216,8 @@ config:
 
 ## References
 
+- [Issue #4728](https://github.com/opensearch-project/security/issues/4728): ASN1 refactoring for FIPS support (v2.18.0)
+- [Issue #4790](https://github.com/opensearch-project/security/issues/4790): CVE-2024-47554 tracking (v2.18.0)
 - [Issue #4274](https://github.com/opensearch-project/security/issues/4274): Blake2b hash issue
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation
 - [Issue #4927](https://github.com/opensearch-project/security/issues/4927): CIDR range support
@@ -227,5 +236,5 @@ config:
 ## Change History
 
 - **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
-- **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7
+- **v2.18.0** (2024-11-05): Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix, pagination support, BWC test fixes
 - **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal
