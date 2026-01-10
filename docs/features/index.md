@@ -203,6 +203,10 @@
 
 - [Security Dashboards Plugin](security-dashboards/security-dashboards-plugin.md)
 
+## security-dashboards-plugin
+
+- [Security Dashboards Role Management](security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## security-analytics-dashboards-plugin
 
 - [Security Analytics](security-analytics-dashboards-plugin/security-analytics.md)
