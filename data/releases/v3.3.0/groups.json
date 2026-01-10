@@ -1,0 +1,4775 @@
+{
+  "version": "3.3.0",
+  "sources": [],
+  "groups": [
+    {
+      "name": "Alerting User Custom Attributes",
+      "repositories": [
+        "alerting"
+      ],
+      "items": [
+        {
+          "pr": 1917,
+          "name": "Adds support for leveraging user custom attributes in Alerting monitors",
+          "category": "feature",
+          "repository": "alerting"
+        }
+      ],
+      "issue_number": 1305
+    },
+    {
+      "name": "Anomaly Detection Enhancements",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 1562,
+          "name": "Add frequency scheduling in real time",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1563,
+          "name": "Adding AD suggest API",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1098,
+          "name": "Add Suggest parameters button + move operational settings to Configure Model",
+          "category": "feature",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1565,
+          "name": "Make frequency optional; fix STOPPED state; add ecommerce tests",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1572,
+          "name": "Fix tests by adding the new node setting for protected types",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1571,
+          "name": "Fix flaky ITs",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1579,
+          "name": "Exclude long-running tests from integTestRemote",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        }
+      ],
+      "issue_number": 1306
+    },
+    {
+      "name": "Agentic Search",
+      "repositories": [
+        "dashboards",
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 775,
+          "name": "Support agentic search",
+          "category": "feature",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 4203,
+          "name": "[Agentic Search] Support Query Planner Tool with Conversational Agent",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4154,
+          "name": "Search Template Support for QueryPlanningTool",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4177,
+          "name": "Adding query planning tool search template validation and integration tests",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4262,
+          "name": "[Agentic Search] Use same model for Agent and QPT",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 1307
+    },
+    {
+      "name": "Semantic Highlighting",
+      "repositories": [
+        "dashboards",
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 627,
+          "name": "Support semantic highlighting and dynamic image sizing",
+          "category": "feature",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 1520,
+          "name": "[Semantic Highlighting] Add semantic highlighting response processor with batch inference support",
+          "category": "enhancement",
+          "repository": "neural-search"
+        }
+      ],
+      "issue_number": 1308
+    },
+    {
+      "name": "Snapshot Management",
+      "repositories": [
+        "index-management"
+      ],
+      "items": [
+        {
+          "pr": 1452,
+          "name": "Add support in SM Plugin to delete snapshots created manually",
+          "category": "feature",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1480,
+          "name": "Do not include global state in snapshot step",
+          "category": "enhancement",
+          "repository": "index-management"
+        }
+      ],
+      "issue_number": 1309
+    },
+    {
+      "name": "Job Scheduler Enhancements",
+      "repositories": [
+        "job"
+      ],
+      "items": [
+        {
+          "pr": 814,
+          "name": "Job History Service",
+          "category": "feature",
+          "repository": "job"
+        },
+        {
+          "pr": 833,
+          "name": "Create guice module to bind LockService interface from SPI to LockServiceImpl",
+          "category": "feature",
+          "repository": "job"
+        },
+        {
+          "pr": 714,
+          "name": "Make LockService an interface and replace usages of ThreadContext.stashContext",
+          "category": "enhancement",
+          "repository": "job"
+        },
+        {
+          "pr": 831,
+          "name": "Introduce a configurable remote metadata client AND migrate LockService to the client",
+          "category": "enhancement",
+          "repository": "job"
+        },
+        {
+          "pr": 810,
+          "name": "Update delete\\_backport\\_branch workflow to include release-chores branches",
+          "category": "bugfix",
+          "repository": "job"
+        }
+      ],
+      "issue_number": 1310
+    },
+    {
+      "name": "Maximal Marginal Relevance (MMR)",
+      "repositories": [
+        "k-nn",
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 2868,
+          "name": "Support native Maximal Marginal Relevance",
+          "category": "feature",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 1567,
+          "name": "Support native MMR for neural query",
+          "category": "feature",
+          "repository": "neural-search"
+        }
+      ],
+      "issue_number": 1311
+    },
+    {
+      "name": "Late Interaction",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 2909,
+          "name": "Support lateInteraction feature using painess script",
+          "category": "feature",
+          "repository": "k-nn"
+        }
+      ],
+      "issue_number": 1312
+    },
+    {
+      "name": "Agentic Memory and ScratchPad",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4192,
+          "name": "Add WriteToScratchPad and ReadFromScratchPad tools",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4218,
+          "name": "Refactor Agentic Memory",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4246,
+          "name": "Add create session API; add message id to working memory; fix update api",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4201,
+          "name": "[Memory] Add updated time to message",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4240,
+          "name": "Enabling agentic memory feature by default as we are going GA",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4238,
+          "name": "Add parameter to control delete memories when delete container",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4282,
+          "name": "Improve semantic fact extraction prompt and add JSON enforcement",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4288,
+          "name": "Improve user preference extraction prompt with XML-based structure",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 1313
+    },
+    {
+      "name": "Global Resource Support",
+      "repositories": [
+        "ml-commons",
+        "remote"
+      ],
+      "items": [
+        {
+          "pr": 4003,
+          "name": "Add global resource support",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 224,
+          "name": "Add global resource support",
+          "category": "feature",
+          "repository": "remote"
+        }
+      ],
+      "issue_number": 1314
+    },
+    {
+      "name": "ML Inference Processors",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4111,
+          "name": "Add ml-commons passthrough post process function",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4236,
+          "name": "Add output transformation support with mean pooling for ML inference processors",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4093,
+          "name": "Add processor chain and add support for model and tool",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4260,
+          "name": "Refactor and add more validation to processor chain",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 1315
+    },
+    {
+      "name": "Resource Access Control",
+      "repositories": [
+        "ml-commons",
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 3715,
+          "name": "Onboards to centralized resource access control mechanism for ml-model-group",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 2304,
+          "name": "[Resource Sharing] Adds resource access management dashboard",
+          "category": "feature",
+          "repository": "security"
+        }
+      ],
+      "issue_number": 1316
+    },
+    {
+      "name": "Index Insight",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4088,
+          "name": "[FEATURE] Add Index Insight Feature",
+          "category": "feature",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 1317
+    },
+    {
+      "name": "Streaming APIs",
+      "repositories": [
+        "ml-commons",
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 4212,
+          "name": "[FEATURE] Agent Execute Stream",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4187,
+          "name": "[FEATURE] Predict Stream",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4248,
+          "name": "Fix stream predict with security enabled",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4256,
+          "name": "Fix agent streaming with security enabled + error handling",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ],
+      "issue_number": 1318
+    },
+    {
+      "name": "MCP Connector",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4169,
+          "name": "[MCP Connector] MCP Connectors for streamable HTTP",
+          "category": "feature",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4162,
+          "name": "[MCP Server] Support Streamable HTTP and deprecate SSE in MCP server",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ],
+      "issue_number": 1319
+    },
+    {
+      "name": "SEISMIC Sparse ANN",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 1581,
+          "name": "[SEISMIC] Support SEISMIC, a new sparse ANN algorithm (, , , , , , , , , , , , , , , , , , , )",
+          "category": "feature",
+          "repository": "neural-search"
+        }
+      ],
+      "issue_number": 1320
+    },
+    {
+      "name": "Workload Management (WLM)",
+      "repositories": [
+        "query",
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 389,
+          "name": "Add Workload Management (WLM) Group Filtering for Live Queries API",
+          "category": "feature",
+          "repository": "query"
+        },
+        {
+          "pr": 299,
+          "name": "Enhance User Experience with Bi-Directional Navigation Between WLM and Live Queries",
+          "category": "feature",
+          "repository": "query"
+        },
+        {
+          "pr": 330,
+          "name": "Add navigation for query insights and WLM dashboards",
+          "category": "feature",
+          "repository": "query"
+        },
+        {
+          "pr": 348,
+          "name": "Add feature flag for wlm",
+          "category": "feature",
+          "repository": "query"
+        },
+        {
+          "pr": 352,
+          "name": "MDS support for WLM",
+          "category": "feature",
+          "repository": "query"
+        },
+        {
+          "pr": 361,
+          "name": "Added version decoupling for wlm dashboard",
+          "category": "enhancement",
+          "repository": "query"
+        },
+        {
+          "pr": 363,
+          "name": "Version decouple unit test",
+          "category": "enhancement",
+          "repository": "query"
+        },
+        {
+          "pr": 336,
+          "name": "Enable wlm mode in pipeline",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 19502,
+          "name": "[WLM] add a check to stop workload group deletion having rules",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ],
+      "issue_number": 1321
+    },
+    {
+      "name": "Versioned Security Configuration",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5357,
+          "name": "Introduced new experimental versioned security configuration management feature",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 5431,
+          "name": "Introduced View API and Rollback API for experimental versioned security configurations",
+          "category": "feature",
+          "repository": "security"
+        }
+      ],
+      "issue_number": 1322
+    },
+    {
+      "name": "Rule-based Autotagging",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5606,
+          "name": "[Rule-based Autotagging] Add logic to extract security attributes for rule-based autotagging",
+          "category": "feature",
+          "repository": "security"
+        }
+      ],
+      "issue_number": 1323
+    },
+    {
+      "name": "Skills Tools",
+      "repositories": [
+        "skills"
+      ],
+      "items": [
+        {
+          "pr": 625,
+          "name": "Log patterns analysis tool",
+          "category": "feature",
+          "repository": "skills"
+        },
+        {
+          "pr": 634,
+          "name": "Data Distribution Tool",
+          "category": "feature",
+          "repository": "skills"
+        },
+        {
+          "pr": 636,
+          "name": "Add more information in ppl tool when passing to sagemaker",
+          "category": "enhancement",
+          "repository": "skills"
+        },
+        {
+          "pr": 641,
+          "name": "Delete-single-baseline",
+          "category": "bugfix",
+          "repository": "skills"
+        },
+        {
+          "pr": 639,
+          "name": "Fix WebSearchTool issue",
+          "category": "bugfix",
+          "repository": "skills"
+        }
+      ],
+      "issue_number": 1324
+    },
+    {
+      "name": "SQL/PPL Calcite Engine",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4372,
+          "name": "Enable Calcite by default and implicit fallback the unsupported commands",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4353,
+          "name": "Enhance the cost computing mechanism and push down context",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4279,
+          "name": "Push down project operator with non-identity projections into scan",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4217,
+          "name": "`mvjoin` support in PPL Caclite",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4092,
+          "name": "Add regex_match function for PPL with Calcite engine support",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 3993,
+          "name": "Support timechart command with Calcite",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Query Enhancements",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4378,
+          "name": "Change the default search sort tiebreaker to `_shard_doc` for PIT search",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4375,
+          "name": "Support direct query data sources",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4344,
+          "name": "Add error handling for known limitation of sql `JOIN`",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4337,
+          "name": "Optimize count aggregation performance by utilizing native doc_count in v3",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4327,
+          "name": "Date/Time based Span aggregation should always not present null bucket",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4281,
+          "name": "Add non-numeric field support for max/min functions",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4276,
+          "name": "Add `values` stats function with UDAF",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4246,
+          "name": "Support ISO8601-formatted string in PPL",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4224,
+          "name": "Support time modifiers in search command",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4152,
+          "name": "Search command revamp.",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4142,
+          "name": "Add shortcut for count()",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4106,
+          "name": "strftime function implementation",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 3803,
+          "name": "Support join field list and join options",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4333,
+          "name": "Add max/min eval functions",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Aggregation Pushdown",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4228,
+          "name": "Push down limit operator into aggregation bucket size",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4213,
+          "name": "Enable pushdown optimization for filtered aggregation",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4166,
+          "name": "Pushdown earliest/latest aggregate functions",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 3971,
+          "name": "SUM aggregation enhancement on operations with literal",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 3550,
+          "name": "Speed up aggregation pushdown for single group-by expression",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4329,
+          "name": "Push down stats with bins on time field into auto\\_date\\_histogram",
+          "category": "bugfix",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Aggregate Functions",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4223,
+          "name": "Support first/last aggregate functions for PPL",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4161,
+          "name": "Add support for `list()` multi-value stats function",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4084,
+          "name": "Support distinct_count/dc in eventstats",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4212,
+          "name": "Add earliest/latest aggregate function for eventstats PPL command",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Patterns Command",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4155,
+          "name": "[Enhancement] Enhance patterns command with additional sample_logs output field",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4402,
+          "name": "Fix numbered token bug and make it optional output in patterns command",
+          "category": "bugfix",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Rex and Regex Commands",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4241,
+          "name": "Implementation of mode `sed` and `offset_field` in rex PPL command",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4109,
+          "name": "Core Implementation of `rex` Command In PPL",
+          "category": "feature",
+          "repository": "sql"
+        },
+        {
+          "pr": 4083,
+          "name": "Implementation of `regex` Command In PPL",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Spath Command",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4120,
+          "name": "Starter implementation for `spath` command",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Rename Command",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4019,
+          "name": "Add wildcard support for rename command",
+          "category": "feature",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "Common Utils Enhancements",
+      "repositories": [
+        "common"
+      ],
+      "items": [
+        {
+          "pr": 878,
+          "name": "Update user attributes XContent parsing logic",
+          "category": "enhancement",
+          "repository": "common"
+        },
+        {
+          "pr": 860,
+          "name": "Update delete\\_backport\\_branch workflow to include release-chores branches",
+          "category": "bugfix",
+          "repository": "common"
+        }
+      ]
+    },
+    {
+      "name": "Search Comparison Dashboards",
+      "repositories": [
+        "dashboards"
+      ],
+      "items": [
+        {
+          "pr": 632,
+          "name": "Improve color coding",
+          "category": "enhancement",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 637,
+          "name": "Allow more than 10 results for a query in pairwise comparison.",
+          "category": "enhancement",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 645,
+          "name": "Show first 10,000 experiment results",
+          "category": "bugfix",
+          "repository": "dashboards"
+        }
+      ]
+    },
+    {
+      "name": "Index Management Enhancements",
+      "repositories": [
+        "index-management"
+      ],
+      "items": [
+        {
+          "pr": 1460,
+          "name": "Using Scripted Avg Class in AvgAggregationBuilder in place of double",
+          "category": "enhancement",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1491,
+          "name": "Fix the build",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1473,
+          "name": "Dependabot: bump 1password/load-secrets-action from 2 to 3",
+          "category": "bugfix",
+          "repository": "index-management"
+        }
+      ]
+    },
+    {
+      "name": "k-NN Engine Enhancements",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 2736,
+          "name": "Added engine as a top-level optional parameter while creating vector field",
+          "category": "enhancement",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2833,
+          "name": "Migrate k-NN plugin to use GRPC transport-grpc SPI interface",
+          "category": "enhancement",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Agent Enhancements",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4180,
+          "name": "Add Get Agent to ML Client",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4221,
+          "name": "[Metrics] Introduce agent metrics & Add is_hidden tag for model metrics",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4198,
+          "name": "Update interaction with failure message on agent execution failure",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Connector Enhancements",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4121,
+          "name": "Parameter Passing for Predict via Remote Connector",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4175,
+          "name": "Move HttpClientFactory to common to expose to other components",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Multi-tenancy",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4120,
+          "name": "Support multi-tenancy for LocalRegexGuardrail",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Tools Enhancements",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4133,
+          "name": "Add PlainNumberAdapter and corresponding tests for Gson in SearchIndexTool",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4215,
+          "name": "Change the setting name to same naming convention with others",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4296,
+          "name": "Enable execute tool feature flag by default",
+          "category": "enhancement",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Remote Client Enhancements",
+      "repositories": [
+        "remote"
+      ],
+      "items": [
+        {
+          "pr": 234,
+          "name": "Add SeqNo and PrimaryTerm support to Put and Delete requests",
+          "category": "enhancement",
+          "repository": "remote"
+        },
+        {
+          "pr": 244,
+          "name": "Add RefreshPolicy and timeout support to Put, Update, Delete, and Bulk requests",
+          "category": "enhancement",
+          "repository": "remote"
+        },
+        {
+          "pr": 235,
+          "name": "Throw exception on empty string for put request ID",
+          "category": "bugfix",
+          "repository": "remote"
+        },
+        {
+          "pr": 250,
+          "name": "Update argument type for ThreadContextAccess:doPrivileged",
+          "category": "bugfix",
+          "repository": "remote"
+        },
+        {
+          "pr": 254,
+          "name": "Use AccessController instead of ThreadContextAccess as it's for internal use",
+          "category": "bugfix",
+          "repository": "remote"
+        }
+      ]
+    },
+    {
+      "name": "Performance Analyzer Enhancements",
+      "repositories": [
+        "performance"
+      ],
+      "items": [
+        {
+          "pr": 845,
+          "name": "Use Subclass method for Versiona and Channel type which is understood\u2026",
+          "category": "enhancement",
+          "repository": "performance"
+        },
+        {
+          "pr": 846,
+          "name": "Increment to 3.3.0.0 and run ./gradlew updateSHAs and check in latest sha files",
+          "category": "bugfix",
+          "repository": "performance"
+        }
+      ]
+    },
+    {
+      "name": "Resource Sharing",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5600,
+          "name": "[Resource Sharing] Use DLS to automatically filter sharable resources for authenticated user based on `all_shared_principals`",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 5596,
+          "name": "[Resource Sharing] Keep track of list of principals for which sharable resource is visible for searching",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 5588,
+          "name": "[Resource Sharing] Keep track of tenant for sharable resources by persisting user requested tenant with sharing info",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 5597,
+          "name": "[Resource Sharing] Adds API to provide dashboards support for resource access management",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 5574,
+          "name": "[Resource Sharing] Fixes accessible resource ids search by marking created_by.user field as keyword search instead of text",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5576,
+          "name": "[Resource Sharing] Reverts @Inject pattern usage for ResourceSharingExtension to client accessor pattern.",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5631,
+          "name": "[Resource Sharing] Always treat GET _doc request as indices request even when performed on sharable resource index",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5654,
+          "name": "Updates resource visibility when handling PATCH api to update sharing record",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5658,
+          "name": "Handles resource updates which otherwise may wipe out all\\_shared\\_principals",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5666,
+          "name": "Makes initial share map mutable to allow multiple shares",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5605,
+          "name": "[Resource Sharing] Match index settings of .kibana indices for resource sharing indices",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Plugin Health Check",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5626,
+          "name": "[SecurityPlugin Health Check] Add AuthZ initialization completion check in health check API",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "JWT Authentication",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5578,
+          "name": "Direct JWKS (JSON Web Key Set) support in the JWT authentication backend",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Configuration Enhancements",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5671,
+          "name": "Adds a list setting to explicitly specify resources to be protected",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 5657,
+          "name": "Make configuration setting for user custom attribute serialization dynamic",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 1580,
+          "name": "Move rules to config directory from classpath resources",
+          "category": "enhancement",
+          "repository": "security"
+        },
+        {
+          "pr": 2315,
+          "name": "Add experimental direct query permissions",
+          "category": "enhancement",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Gradle 9 Compatibility",
+      "repositories": [
+        "alerting",
+        "asynchronous-search",
+        "common",
+        "cross-cluster-replication",
+        "custom",
+        "geospatial",
+        "index-management",
+        "job",
+        "learning",
+        "notifications",
+        "query",
+        "reporting",
+        "system",
+        "user",
+        "search",
+        "skills"
+      ],
+      "items": [
+        {
+          "pr": 1920,
+          "name": "Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 763,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "asynchronous-search"
+        },
+        {
+          "pr": 867,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "common"
+        },
+        {
+          "pr": 1575,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "cross-cluster-replication"
+        },
+        {
+          "pr": 273,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "custom"
+        },
+        {
+          "pr": 791,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "geospatial"
+        },
+        {
+          "pr": 1474,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 821,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 95,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "system"
+        },
+        {
+          "pr": 407,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 1120,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "reporting"
+        },
+        {
+          "pr": 1069,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 219,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "learning"
+        },
+        {
+          "pr": 122,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "user"
+        },
+        {
+          "pr": 227,
+          "name": "Updated System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "search"
+        },
+        {
+          "pr": 630,
+          "name": "Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "skills"
+        }
+      ]
+    },
+    {
+      "name": "Cross-Cluster Replication Fixes",
+      "repositories": [
+        "cross-cluster-replication"
+      ],
+      "items": [
+        {
+          "pr": 1580,
+          "name": "Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput",
+          "category": "bugfix",
+          "repository": "cross-cluster-replication"
+        }
+      ]
+    },
+    {
+      "name": "Observability Fixes",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2463,
+          "name": "[Traces] Toast Error handling",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 2492,
+          "name": "Test fixes",
+          "category": "bugfix",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Flow Framework Fixes",
+      "repositories": [
+        "flow"
+      ],
+      "items": [
+        {
+          "pr": 1217,
+          "name": "Pre-create ML Commons indices for Tenant Aware tests",
+          "category": "bugfix",
+          "repository": "flow"
+        }
+      ]
+    },
+    {
+      "name": "k-NN Bug Fixes",
+      "repositories": [
+        "k-nn"
+      ],
+      "items": [
+        {
+          "pr": 2867,
+          "name": "Use queryVector length if present in MDC check",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2882,
+          "name": "Fix derived source deserialization bug on invalid documents",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2892,
+          "name": "Fix invalid cosine score range in LuceneOnFaiss",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2836,
+          "name": "Allows k to be nullable to fix filter bug",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2903,
+          "name": "Fix integer overflow for while estimating distance computations for efficient filtering",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2912,
+          "name": "Fix AVX2 detection on other platforms",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2905,
+          "name": "Fix byte[] radial search for faiss",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2911,
+          "name": "Use the unique doc id for MMR rerank rather than internal lucenue doc id which is not unique for multiple shards case.",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2916,
+          "name": "Fix local ref leak in JNI",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2921,
+          "name": "Fix rescoring logic for nested exact search",
+          "category": "bugfix",
+          "repository": "k-nn"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Bug Fixes",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4189,
+          "name": "Fix NPE when execute flow agent with mutli tenancy is off",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4167,
+          "name": "Fix claude model it",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4214,
+          "name": "Fix error_prone_annotations jar hell",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4132,
+          "name": "Fix failing UTs and increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4151,
+          "name": "Fix jdt formatter error",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4118,
+          "name": "Fix missing RAG response from generative_qa_parameters",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4003,
+          "name": "Fix model deploy issue and address other comments in",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4234,
+          "name": "Fix: refactor memory delete by query API to avoid anti pattern",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4158,
+          "name": "Fix MLTaskState enum serialization errors",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4233,
+          "name": "Fix connector tool IT",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4138,
+          "name": "Agent/Tool Parsing Fixes",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4210,
+          "name": "Fixing build issue in ml-commons",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4200,
+          "name": "Fixing metrics correlation algorithm",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4196,
+          "name": "Fixing validate access for multi-tenancy",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4182,
+          "name": "Make MLSdkAsyncHttpResponseHandler return IllegalArgumentException",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4219,
+          "name": "Skip the model interface validation for batch predict",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4237,
+          "name": "Fix: use builtin BulkByScrollResponse parser to parse delete by query response in memories",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4255,
+          "name": "Fix wrong field name in get working memory API",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4258,
+          "name": "Fix: allow only container owner to delete memory container",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4263,
+          "name": "[Agent Framework] Exception handling for runtime exceptions during async execution",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4278,
+          "name": "Fix json parsing error by extracing json first; add for each processor; support input processor",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4284,
+          "name": "Fix: add validations during create and update memory container",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4283,
+          "name": "Fix llm result path; convert message to user prompt string",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4292,
+          "name": "Fix llm result path error",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4297,
+          "name": "Fix dimension update flow to allow embedding type update",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4300,
+          "name": "Verify llm before summarize session",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4247,
+          "name": "Update approver matching to be exact match",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4259,
+          "name": "Fix approver parsing bug in require-approval workflow",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4174,
+          "name": "Fix Cohere IT",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Metrics Framework",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4220,
+          "name": "[Metrics Framework] Fix version checking logic for starting the stats collector job",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Semantic Field",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 1572,
+          "name": "[Semantic Field] Fix not able to index the multiFields for the rawFieldType",
+          "category": "bugfix",
+          "repository": "neural-search"
+        }
+      ]
+    },
+    {
+      "name": "Neural Search Bug Fixes",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 1570,
+          "name": "Fix reversed order of values in nested list with embedding processor",
+          "category": "bugfix",
+          "repository": "neural-search"
+        },
+        {
+          "pr": 1528,
+          "name": "[Unit Test] Enable mocking of final classes and static functions",
+          "category": "bugfix",
+          "repository": "neural-search"
+        },
+        {
+          "pr": 1584,
+          "name": "[BWC Test] Remove CodeQL from BWC's CI node to increase available disk size",
+          "category": "bugfix",
+          "repository": "neural-search"
+        }
+      ]
+    },
+    {
+      "name": "Notifications Plugin Fixes",
+      "repositories": [
+        "notifications"
+      ],
+      "items": [
+        {
+          "pr": 1074,
+          "name": "Fix issue publishing maven snapshots by forcing slf4j version from gradle version catalog",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 1069,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "notifications"
+        }
+      ]
+    },
+    {
+      "name": "Learning to Rank Fixes",
+      "repositories": [
+        "learning"
+      ],
+      "items": [
+        {
+          "pr": 226,
+          "name": "Fix bad inclusion of log4j in this jar when bundled",
+          "category": "bugfix",
+          "repository": "learning"
+        },
+        {
+          "pr": 219,
+          "name": "Fix: Update System.env syntax for Gradle 9 compatibility",
+          "category": "bugfix",
+          "repository": "learning"
+        },
+        {
+          "pr": 228,
+          "name": "Adding code coverage report generation",
+          "category": "bugfix",
+          "repository": "learning"
+        },
+        {
+          "pr": 221,
+          "name": "Switching to a hybrid method of comparing floats in our assertions",
+          "category": "bugfix",
+          "repository": "learning"
+        },
+        {
+          "pr": 222,
+          "name": "Upgrade spotless plugin and address build deprecations",
+          "category": "bugfix",
+          "repository": "learning"
+        }
+      ]
+    },
+    {
+      "name": "Query Insights Bug Fixes",
+      "repositories": [
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 426,
+          "name": "Change matchQuery to termQuery to correctly determine if query IDs match",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 420,
+          "name": "Filter out shard-level tasks from live queries",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 413,
+          "name": "Fix missing check for time range validation that from timestamp is before to timestamp",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 414,
+          "name": "Fix validation check for positive size parameter in live queries",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 430,
+          "name": "Fix flaky testTopQueriesResponses by clearing stale records from queues when disabling metrics",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 338,
+          "name": "Bug fix for filter and date picker [2.19]",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 366,
+          "name": "Group by selector on Configuration page always shows \"None\" after refresh",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 367,
+          "name": "Explicitly match query by id and fix q scope in retrieveQueryById",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 435,
+          "name": "Add unit tests when clear the shared queue",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 329,
+          "name": "Cypress-workflow-fix",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 327,
+          "name": "Update delete-backport-branch workflow to include release-chores branches",
+          "category": "bugfix",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Search Relevance Fixes",
+      "repositories": [
+        "search"
+      ],
+      "items": [
+        {
+          "pr": 230,
+          "name": "Updated ImportJudgmentsProcessor to handle ratings in numeric as well as string formats",
+          "category": "bugfix",
+          "repository": "search"
+        }
+      ]
+    },
+    {
+      "name": "Security Client Certificate Authentication",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5525,
+          "name": "Added new option skip_users to client cert authenticator (clientcert_auth_domain.http_authenticator.config.skip_users in config.yml)",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security Plugin Bug Fixes",
+      "repositories": [
+        "security",
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 5560,
+          "name": "Inject user custom attributes when injecting user and role information to the thread context",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5579,
+          "name": "Allow any plugin system request when `plugins.security.system_indices.enabled` is set to `false`",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5640,
+          "name": "Fix JWT log spam when JWT authenticator is configured with an empty list for roles_key",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5675,
+          "name": "Change incorrect licenses in Security Principal files",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1583,
+          "name": "Ensure that user attributes are in expected format attrKey=attrVal for testing",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1577,
+          "name": "Remove direct reference to Job-Scheduler Lock Index in SAP repo",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1330,
+          "name": "Security fix: upgrade js-yaml to v4.1",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 4245,
+          "name": "Support serializing & deserializing UDTs when pushing down scripts",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 809,
+          "name": "Run integ tests in the sample plugin with tests.security.manager set to true",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Security SSL/TLS",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5667,
+          "name": "Add the fallback logic to use 'ssl\\_engine' if 'ssl\\_handler' attribute is not available / compatible",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "User Plugin Fixes",
+      "repositories": [
+        "user"
+      ],
+      "items": [
+        {
+          "pr": 128,
+          "name": "Fix dependencies",
+          "category": "bugfix",
+          "repository": "user"
+        }
+      ]
+    },
+    {
+      "name": "SQL/PPL Bug Fixes",
+      "repositories": [
+        "sql"
+      ],
+      "items": [
+        {
+          "pr": 4416,
+          "name": "Fix the `count(*)` and `dc(field)` to be capped at MAX\\_INTEGER",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4407,
+          "name": "Mod function should return decimal instead of float when handle the operands are decimal literal",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4401,
+          "name": "Scale of decimal literal should always be positive in Calcite",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4388,
+          "name": "Fix bug of missed analyzed node when pushdown filter for Search call",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4381,
+          "name": "Fix parse related functions return behavior in case of NULL input",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4377,
+          "name": "Prevent limit pushdown before action building instead of in action executing",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4369,
+          "name": "No index found with given index pattern should throw IndexNotFoundException",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4360,
+          "name": "Fix `ClassCastException` for value-storing aggregates on nested PPL fields",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4352,
+          "name": "change Anonymizer to mask PPL",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4334,
+          "name": "Fix alphanumeric search which starts with number",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4325,
+          "name": "Fix geopoint issue in complex data types",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 3613,
+          "name": "Bugfix: SQL type mapping for legacy JDBC output",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4320,
+          "name": "Spotless precommit: apply instead of check",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4306,
+          "name": "Add spotless precommit hook + license check",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4292,
+          "name": "Fix doctest branch",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4219,
+          "name": "Doctest: Use 1.0 branch of CLI instead of main",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4216,
+          "name": "Add merge\\_group trigger to test workflows",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4193,
+          "name": "Split up our test actions into unit, integ, and doctest.",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4384,
+          "name": "Update bin.rst and add `bin` to doctest",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4382,
+          "name": "Update timechart in SPL/PPL cheat sheet",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4379,
+          "name": "Enable doctest with Calcite",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4321,
+          "name": "Correct the comparision table for rex doc",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4305,
+          "name": "Updating coalesce documentation",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4177,
+          "name": "Updating documentation for `fields` and `table` commands",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 4094,
+          "name": "Add documents on how to develop a UDF / UDAF",
+          "category": "bugfix",
+          "repository": "sql"
+        },
+        {
+          "pr": 3726,
+          "name": "Add splunk to ppl cheat sheet",
+          "category": "bugfix",
+          "repository": "sql"
+        }
+      ]
+    },
+    {
+      "name": "Resource Access Control Documentation",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5540,
+          "name": "[Resource Sharing] Adds comprehensive documentation for Resource Access Control feature",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "ML Commons Tutorials and Blueprints",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4130,
+          "name": "Add colpali blueprint",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4127,
+          "name": "Add tutorial for agentic search",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4160,
+          "name": "Ollama connector blueprint",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4125,
+          "name": "Tutorial on agentic memory with strands agents",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4145,
+          "name": "Change suggested instance type in tutorial",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4124,
+          "name": "Adding more unit tests",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 4126,
+          "name": "Adding more unit tests",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Common Utils Release Notes",
+      "repositories": [
+        "common"
+      ],
+      "items": [
+        {
+          "pr": 869,
+          "name": "Added release notes for 2.13",
+          "category": "bugfix",
+          "repository": "common"
+        }
+      ]
+    },
+    {
+      "name": "Version Increment",
+      "repositories": [
+        "alerting",
+        "anomaly-detection",
+        "asynchronous-search",
+        "dashboards",
+        "notifications",
+        "observability",
+        "reporting",
+        "geospatial",
+        "index-management",
+        "query",
+        "ml-commons",
+        "system",
+        "security",
+        "learning"
+      ],
+      "items": [
+        {
+          "pr": 1918,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1283,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "alerting"
+        },
+        {
+          "pr": 1089,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 761,
+          "name": "Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "asynchronous-search"
+        },
+        {
+          "pr": 755,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 371,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 2494,
+          "name": "[AUTO] Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 492,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "dashboards"
+        },
+        {
+          "pr": 622,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "reporting"
+        },
+        {
+          "pr": 788,
+          "name": "Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "geospatial"
+        },
+        {
+          "pr": 1467,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 1347,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "index-management"
+        },
+        {
+          "pr": 443,
+          "name": "[AUTO] Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 1064,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "notifications"
+        },
+        {
+          "pr": 1941,
+          "name": "Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "observability"
+        },
+        {
+          "pr": 217,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "learning"
+        },
+        {
+          "pr": 93,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "system"
+        },
+        {
+          "pr": 404,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 332,
+          "name": "Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 1118,
+          "name": "[AUTO] Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "reporting"
+        },
+        {
+          "pr": 1574,
+          "name": "Increment version to 3.3.0-SNAPSHOT",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 1325,
+          "name": "[AUTO] Increment version to 3.3.0.0",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Dependency Updates",
+      "repositories": [
+        "anomaly-detection",
+        "k-nn",
+        "job",
+        "opensearch",
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 1094,
+          "name": "Bump axios from 1.8.2 to 1.12.1",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1084,
+          "name": "Bump cipher-base from 1.0.4 to 1.0.6",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 1085,
+          "name": "Bump sha.js from 2.4.11 to 2.4.12",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 2863,
+          "name": "Replace commons-lang with org.apache.commons:commons-lang3",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 2833,
+          "name": "Bump OpenSearch-Protobufs to 0.13.0",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 811,
+          "name": "Dependabot: bump actions/download-artifact from 4 to 5",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 818,
+          "name": "Dependabot: bump actions/checkout from 4 to 5",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 819,
+          "name": "Dependabot: bump 1password/load-secrets-action from 2 to 3",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 825,
+          "name": "Dependabot: bump actions/setup-java from 1 to 4",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 829,
+          "name": "Dependabot: bump actions/github-script from 7 to 8",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 830,
+          "name": "Dependabot: bump actions/setup-java from 4 to 5",
+          "category": "bugfix",
+          "repository": "job"
+        },
+        {
+          "pr": 19400,
+          "name": "Bump `com.gradleup.shadow:shadow-gradle-plugin` from 8.3.5 to 8.3.9",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19019,
+          "name": "Bump `com.netflix.nebula.ospackage-base` from 12.0.0 to 12.1.1 (, )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19023,
+          "name": "Bump `actions/checkout` from 4 to 5",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19021,
+          "name": "Bump `commons-cli:commons-cli` from 1.9.0 to 1.10.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19013,
+          "name": "Bump `org.jline:jline` from 3.30.4 to 3.30.5",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19015,
+          "name": "Bump `com.github.spotbugs:spotbugs-annotations` from 4.9.3 to 4.9.6 (, , , )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19016,
+          "name": "Bump `com.azure:azure-storage-common` from 12.29.1 to 12.30.2 (, )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19068,
+          "name": "Update OpenTelemetry to 1.53.0 and OpenTelemetry SemConv to 1.34.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19100,
+          "name": "Bump `1password/load-secrets-action` from 2 to 3",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19099,
+          "name": "Bump `com.nimbusds:nimbus-jose-jwt` from 10.3 to 10.5 (, , , )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19103,
+          "name": "Bump netty from 4.1.121.Final to 4.1.125.Final (, )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 18922,
+          "name": "Bump Google Cloud Storage SDK from 1.113.1 to 2.55.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19144,
+          "name": "Bump `com.google.auth:google-auth-library-oauth2-http` from 1.37.1 to 1.38.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19146,
+          "name": "Bump `com.squareup.okio:okio` from 3.15.0 to 3.16.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19136,
+          "name": "Bump Slf4j from 1.7.36 to 2.0.17",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19125,
+          "name": "Bump `org.apache.tika` from 2.9.2 to 3.2.2",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19125,
+          "name": "Bump `org.apache.commons:commons-compress` from 1.26.1 to 1.28.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19222,
+          "name": "Bump `io.projectreactor.netty:reactor_netty` from `1.2.5` to `1.2.9`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19222,
+          "name": "Bump `org.bouncycastle:bouncycastle_jce` from `2.0.0` to `2.1.1`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19222,
+          "name": "Bump `org.bouncycastle:bouncycastle_tls` from `2.0.20` to `2.1.20`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19222,
+          "name": "Bump `org.bouncycastle:bouncycastle_pkix` from `2.0.8` to `2.1.9`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19222,
+          "name": "Bump `org.bouncycastle:bouncycastle_pg` from `2.0.11` to `2.1.11`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19222,
+          "name": "Bump `org.bouncycastle:bouncycastle_util` from `2.0.3` to `2.1.4`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19206,
+          "name": "Bump `com.azure:azure-core` from 1.55.5 to 1.56.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19208,
+          "name": "Bump `com.google.cloud:google-cloud-core` from 2.59.0 to 2.60.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19207,
+          "name": "Bump `org.jsoup:jsoup` from 1.20.1 to 1.21.2",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19203,
+          "name": "Bump `org.apache.hadoop:hadoop-minicluster` from 3.4.1 to 3.4.2",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19205,
+          "name": "Bump `com.maxmind.geoip2:geoip2` from 4.3.1 to 4.4.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19229,
+          "name": "Replace commons-lang:commons-lang with org.apache.commons:commons-lang3",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19252,
+          "name": "Bump `org.jboss.xnio:xnio-nio` from 3.8.16.Final to 3.8.17.Final",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19143,
+          "name": "Bump `actions/setup-java` from 4 to 5",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19290,
+          "name": "Bump `com.google.code.gson:gson` from 2.13.1 to 2.13.2 (, )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19292,
+          "name": "Bump `actions/stale` from 9 to 10",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19291,
+          "name": "Bump `com.nimbusds:oauth2-oidc-sdk` from 11.25 to 11.29.1 (, )",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19328,
+          "name": "Add com.google.code.gson:gson to the gradle version catalog",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19360,
+          "name": "Bump `org.apache.logging.log4j:log4j-core` from 2.25.1 to 2.25.2",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19363,
+          "name": "Bump `aws-actions/configure-aws-credentials` from 4 to 5",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19361,
+          "name": "Bump `com.azure:azure-identity` from 1.14.2 to 1.18.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19371,
+          "name": "Bump `net.bytebuddy:byte-buddy` from 1.17.5 to 1.17.7",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19463,
+          "name": "Bump `lycheeverse/lychee-action` from 2.4.1 to 2.6.1",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19538,
+          "name": "Exclude commons-lang and org.jsonschema2pojo from hadoop-miniclusters",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19495,
+          "name": "Bump `io.grpc` deps from 1.68.2 to 1.75.0",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 10378,
+          "name": "[CVE-2025-6545][CVE-2025-7783] Bump pbkdf2 from 3.1.2 to 3.1.3 and set form-data to 4.0.4",
+          "category": "deprecation",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10442,
+          "name": "Fix GHSA-cpq7-6gpm-g9rc by bumping cipher-base,sha.js",
+          "category": "deprecation",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "Lucene 10.3 Update",
+      "repositories": [
+        "custom",
+        "k-nn",
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 277,
+          "name": "Update for Lucene 10.3",
+          "category": "bugfix",
+          "repository": "custom"
+        },
+        {
+          "pr": 2878,
+          "name": "Bump Lucene version to 10.3 and fix build failures",
+          "category": "bugfix",
+          "repository": "k-nn"
+        },
+        {
+          "pr": 19296,
+          "name": "Bump Apache Lucene from 10.2.2 to 10.3.0",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Observability Cypress Updates",
+      "repositories": [
+        "observability"
+      ],
+      "items": [
+        {
+          "pr": 2507,
+          "name": "Update cypress/requests",
+          "category": "bugfix",
+          "repository": "observability"
+        }
+      ]
+    },
+    {
+      "name": "Reporting CVE Fixes",
+      "repositories": [
+        "reporting"
+      ],
+      "items": [
+        {
+          "pr": 640,
+          "name": "Fixing CVE-2025-7783",
+          "category": "bugfix",
+          "repository": "reporting"
+        }
+      ]
+    },
+    {
+      "name": "Geospatial Deprecation Fixes",
+      "repositories": [
+        "geospatial"
+      ],
+      "items": [
+        {
+          "pr": 795,
+          "name": "Remove deprecated URL(String) usage",
+          "category": "bugfix",
+          "repository": "geospatial"
+        }
+      ]
+    },
+    {
+      "name": "Move common string",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4173,
+          "name": "Move common string",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "Updating gson version to resolve conflict coming from core",
+      "repositories": [
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 4176,
+          "name": "Updating gson version to resolve conflict coming from core",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        }
+      ]
+    },
+    {
+      "name": "CI/CD Workflow Updates",
+      "repositories": [
+        "security",
+        "ml-commons"
+      ],
+      "items": [
+        {
+          "pr": 442,
+          "name": "Update delete\\_backport\\_branch workflow to include release-chores branches",
+          "category": "bugfix",
+          "repository": "ml-commons"
+        },
+        {
+          "pr": 5548,
+          "name": "Update delete\\_backport\\_branch workflow to include release-chores branches",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Neural Search Dependencies",
+      "repositories": [
+        "neural-search"
+      ],
+      "items": [
+        {
+          "pr": 1551,
+          "name": "Remove commons-lang:commons-lang dependency and use gradle version catalog for commons-lang3",
+          "category": "bugfix",
+          "repository": "neural-search"
+        },
+        {
+          "pr": 1574,
+          "name": "Update Lucene101 codec path to backward path & force errorprone version to 2.21.1 to resolve conflict",
+          "category": "bugfix",
+          "repository": "neural-search"
+        },
+        {
+          "pr": 1589,
+          "name": "Upgrade QA Gradle Dependency Version with commons-lang3",
+          "category": "bugfix",
+          "repository": "neural-search"
+        }
+      ]
+    },
+    {
+      "name": "Query Plugin Dependencies",
+      "repositories": [
+        "query"
+      ],
+      "items": [
+        {
+          "pr": 375,
+          "name": "Update dependency pbkdf2 to v3.1.4",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 378,
+          "name": "Update dependency pbkdf2 to v3.1.5",
+          "category": "bugfix",
+          "repository": "query"
+        },
+        {
+          "pr": 380,
+          "name": "Fix form-data CVE-2025-7783",
+          "category": "bugfix",
+          "repository": "query"
+        }
+      ]
+    },
+    {
+      "name": "Security Plugin Dependencies",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5573,
+          "name": "Bump `1password/load-secrets-action` from 2 to 3",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5572,
+          "name": "Bump `actions/checkout` from 4 to 5 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5568,
+          "name": "Bump `jjwt_version` from 0.12.6 to 0.13.0 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5566,
+          "name": "Bump `org.mockito:mockito-core` from 5.18.0 to 5.20.0 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5567,
+          "name": "Bump `open_saml_version` from 5.1.4 to 5.1.6 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5570,
+          "name": "Bump `com.google.j2objc:j2objc-annotations` from 3.0.0 to 3.1",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5569,
+          "name": "Bump `spring_version` from 6.2.9 to 6.2.11 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5584,
+          "name": "Bump `com.github.spotbugs` from 6.2.4 to 6.4.1 (, , )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5585,
+          "name": "Bump `open_saml_shib_version` from 9.1.4 to 9.1.6 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5583,
+          "name": "Bump `org.springframework.kafka:spring-kafka-test` from 4.0.0-M3 to 4.0.0-M5 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5586,
+          "name": "Bump `net.bytebuddy:byte-buddy` from 1.17.6 to 1.17.7",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5589,
+          "name": "Bump `io.dropwizard.metrics:metrics-core` from 4.2.33 to 4.2.37 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5595,
+          "name": "Bump `com.nimbusds:nimbus-jose-jwt:9.48` from 9.48 to 10.4.2",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5610,
+          "name": "Bump `actions/github-script` from 7 to 8",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5628,
+          "name": "Bump `org.eclipse.platform:org.eclipse.core.runtime` from 3.33.100 to 3.34.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5553,
+          "name": "Bump `org.opensearch:protobufs` from 0.6.0 to 0.13.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5627,
+          "name": "Bump `org.checkerframework:checker-qual` from 3.49.5 to 3.51.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5629,
+          "name": "Bump `com.nimbusds:nimbus-jose-jwt` from 10.4.2 to 10.5",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5630,
+          "name": "Bump `derek-ho/start-opensearch` from 7 to 8",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5582,
+          "name": "Bump `actions/setup-java` from 4 to 5 (, )",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5651,
+          "name": "Bump `org.eclipse.platform:org.eclipse.equinox.common` from 3.20.100 to 3.20.200",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5649,
+          "name": "Bump `jakarta.xml.bind:jakarta.xml.bind-api` from 4.0.2 to 4.0.4",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5648,
+          "name": "Bump `com.google.errorprone:error_prone_annotations` from 2.41.0 to 2.42.0",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5665,
+          "name": "Bump `com.google.guava:guava` from 33.4.8-jre to 33.5.0-jre",
+          "category": "bugfix",
+          "repository": "security"
+        },
+        {
+          "pr": 5663,
+          "name": "Bump `com.typesafe.scala-logging:scala-logging_3` from 3.9.5 to 3.9.6",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Sync `org.opensearch:protobufs` version with core",
+      "repositories": [
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 5659,
+          "name": "Sync `org.opensearch:protobufs` version with core",
+          "category": "bugfix",
+          "repository": "security"
+        }
+      ]
+    },
+    {
+      "name": "Anomaly Detection Resource Authorization",
+      "repositories": [
+        "anomaly-detection"
+      ],
+      "items": [
+        {
+          "pr": 1546,
+          "name": "Updates search handler to consume resource authz and updates resource authz related tests",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        }
+      ]
+    },
+    {
+      "name": "Doc Request",
+      "repositories": [
+        "anomaly-detection",
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 1566,
+          "name": "Adds resource types to DocRequests",
+          "category": "bugfix",
+          "repository": "anomaly-detection"
+        },
+        {
+          "pr": 19313,
+          "name": "Add new extensible method to DocRequest to specify type",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Fetch Phase Profiling",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18936,
+          "name": "Expand fetch phase profiling to support inner hits and top hits aggregation phases",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Rule-based Auto-tagging",
+      "repositories": [
+        "security",
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19345,
+          "name": "[Rule-based Auto-tagging] add the schema for security attributes",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 19344,
+          "name": "[Rule-based Auto-tagging] restructure the in-memory trie to store values as a set",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19497,
+          "name": "[Rule-based Auto-tagging] bug fix on Update Rule API with multiple attributes",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19429,
+          "name": "[Rule-based Auto-tagging] Modify get rule api to suit nested attributes",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19486,
+          "name": "[Rule-based Auto-tagging] Add autotagging label resolving logic for multiple attributes",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19599,
+          "name": "Fix Rule-based auto tagging label resolving logic",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Temporal Routing",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18920,
+          "name": "Add temporal routing processors for time-based document routing",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Query Rewriting",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19060,
+          "name": "Implement Query Rewriting Infrastructure",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Dynamic Mapping",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19065,
+          "name": "The dynamic mapping parameter supports false_allow_templates (, )",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Engine Config",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19054,
+          "name": "Add a toBuilder method in EngineConfig to support easy modification of configs",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Store Factory",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19091,
+          "name": "Add StoreFactory plugin interface for custom Store implementations",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19132,
+          "name": "Add subdirectory-aware store module with recovery support",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "S3 Performance",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18800,
+          "name": "Use S3CrtClient for higher throughput while uploading files to S3",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Query Cache",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18351,
+          "name": "Add a dynamic setting to change skip_cache_factor and min_frequency for querycache",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Translog",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18918,
+          "name": "Add overload constructor for Translog to accept Channel Factory as a parameter",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "File Cache",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19071,
+          "name": "Addition of fileCache activeUsage guard rails to DiskThresholdMonitor",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Field Collapsing",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19261,
+          "name": "Field collapsing supports search_after",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Segment Warmer",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18929,
+          "name": "Add a dynamic cluster setting to control the enablement of the merged segment warmer",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "gRPC Transport",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18949,
+          "name": "Publish transport-grpc-spi exposing QueryBuilderProtoConverter and QueryBuilderProtoConverterRegistry",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19007,
+          "name": "Upgrade opensearch-protobufs dependency to 0.13.0 and update transport-grpc module compatibility",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19449,
+          "name": "Implement GRPC MatchPhrase, MultiMatch queries",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19278,
+          "name": "Optimize gRPC transport thread management for improved throughput",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19391,
+          "name": "Implement GRPC Boolean query and inject registry for all internal query converters",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19455,
+          "name": "Implement GRPC Script query",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19392,
+          "name": "Implement GRPC Exists, Regexp, and Wildcard queries",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19451,
+          "name": "Implement GRPC GeoBoundingBox, GeoDistance queries",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19448,
+          "name": "Implement GRPC Ids, Range, and Terms Set queries",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19453,
+          "name": "Implement GRPC Nested query",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19280,
+          "name": "Optimize source conversion in gRPC search hits using zero-copy BytesRef",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19339,
+          "name": "Add failureaccess as runtime dependency to transport-grpc module",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19447,
+          "name": "Bump opensearch-protobufs dependency to 0.18.0 and update transport-grpc module compatibility",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19453,
+          "name": "Bump opensearch-protobufs dependency to 0.19.0",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Search Pipeline",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19128,
+          "name": "Support system generated search pipeline.",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Date Format",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 14669,
+          "name": "Add `epoch_micros` date format",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Grok Processor",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18799,
+          "name": "Grok processor supports capturing multiple values for same field name",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Search Tie-breaking",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18924,
+          "name": "Add support for search tie-breaking by _shard_doc",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Rule based auto-tagging",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18550,
+          "name": "[Rule based auto-tagging] Add Rule based auto-tagging IT",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Pull-based Ingestion",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19316,
+          "name": "Add all-active ingestion as docrep equivalent in pull-based ingestion",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19212,
+          "name": "Fix pull-based ingestion pause state initialization during replica promotion",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19380,
+          "name": "[Flaky Test] Fix flaky test IngestFromKinesisIT.testAllActiveIngestion",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19393,
+          "name": "Fix lag metric for pull-based ingestion when streaming source is empty",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19320,
+          "name": "Fix ingestion state xcontent serialization in IndexMetadata and fail fast on mapping errors",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Skip List",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19130,
+          "name": "Adding logic for histogram aggregation using skiplist",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19142,
+          "name": "Add skip_list param for date, scaled float and token count fields",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19480,
+          "name": "Enable skip_list for @timestamp field or index sort field by default",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19438,
+          "name": "Add sub aggregation support for histogram aggregation using skiplist (19438)",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Star Tree Index",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19210,
+          "name": "[Search Stats] Add search & star-tree search query failure count metrics",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 18398,
+          "name": "[Star-tree] Support for multi-terms aggregation",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Streaming Aggregation",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19506,
+          "name": "Add stream search enabled cluster setting and auto fallback logic",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19335,
+          "name": "Add `StreamNumericTermsAggregator` to allow numeric term aggregation streaming",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19488,
+          "name": "Query planning to determine flush mode for streaming aggregations",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19484,
+          "name": "Add streaming cardinality aggregator",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19520,
+          "name": "Disable request cache for streaming aggregation queries",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Aggregation Optimizations",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18978,
+          "name": "Added precomputation for rare terms aggregation",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 18732,
+          "name": "Optimization in String Terms Aggregation query for Large Bucket Counts",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19088,
+          "name": "Optimized date histogram aggregations by preventing unnecessary object allocations in date rounding utils (19088)",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Search Settings",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19491,
+          "name": "New cluster setting search.query.max_query_string_length",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Circuit Breaker",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19396,
+          "name": "Harden the circuit breaker and failure handle logic in query result consumer",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Java 17 Modernization",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18965,
+          "name": "Refactor `if-else` chains to use `Java 17 pattern matching switch expressions`",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19163,
+          "name": "Remove cap on Java version used by forbidden APIs",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Client API Enhancements",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18998,
+          "name": "Add CompletionStage variants to methods in the Client Interface and default to ActionListener impl",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19161,
+          "name": "Add CompletionStage variants to IndicesAdminClient as an alternative to ActionListener",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Scroll API",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19031,
+          "name": "IllegalArgumentException when scroll ID references a node not found in Cluster",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Painless Scripting",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19006,
+          "name": "Adding ScriptedAvg class to painless spi to allowlist usage from plugins",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Field Data Cache",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19152,
+          "name": "Make field data cache size setting dynamic and add a default limit",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19116,
+          "name": "Remove unnecessary looping in field data cache clear",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Docker Image Updates",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19154,
+          "name": "Replace centos:8 with almalinux:8 since centos docker images are deprecated",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Field Collapsing",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19181,
+          "name": "Omit maxScoreCollector for field collapsing when sort by score descending",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Wildcard Field Mapper",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18568,
+          "name": "Disable pruning for `doc_values` for the wildcard field mapper",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Engine API",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19276,
+          "name": "Make all methods in Engine.Result public",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Test Infrastructure",
+      "repositories": [
+        "opensearch",
+        "security"
+      ],
+      "items": [
+        {
+          "pr": 19165,
+          "name": "Create and attach interclusterTest and yamlRestTest code coverage reports to gradle check task",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 18983,
+          "name": "Ensure that plugins that utilize dumpCoverage can write to jacoco.dir when tests.security.manager is enabled",
+          "category": "feature",
+          "repository": "security"
+        },
+        {
+          "pr": 19085,
+          "name": "Grant access to testclusters dir for tests",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Plugin Installation",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19343,
+          "name": "Allow plugins to copy folders into their config dir during installation",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Lucene Migration",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19397,
+          "name": "Migrate usages of deprecated `Operations#union` from Lucene",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Index Output",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19432,
+          "name": "Delegate primitive write methods with ByteSizeCachingDirectory wrapped IndexOutput",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Query Rewriting",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19592,
+          "name": "Disable query rewriting framework as a default behaviour",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Index Refresh",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 15261,
+          "name": "Fix unnecessary refreshes on update preparation failures",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Segment Replication",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18997,
+          "name": "Fix NullPointerException in segment replicator",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "OOM Prevention",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19066,
+          "name": "Fix OOM due to large number of shard result buffering",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Flaky Test Fixes",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18878,
+          "name": "Fix flaky tests in CloseIndexIT by addressing cluster state synchronization issues",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19327,
+          "name": "[Flaky Test] Fix flaky test in SecureReactorNetty4HttpServerTransportTests with reproducible seed",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19332,
+          "name": "Fix IntervalQuery flaky test",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Tiered Caching",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19000,
+          "name": "[Tiered Caching] Handle query execution exception",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Concurrent Segment Search",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19053,
+          "name": "Fix assertion error when collapsing search results with concurrent segment search enabled",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Cross-Cluster Settings",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18766,
+          "name": "Fix skip_unavailable setting changing to default during node drop issue",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "S3 Repository",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19220,
+          "name": "Fix issue with s3-compatible repositories due to missing checksum trailing headers",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "NRT Replication Engine",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19214,
+          "name": "Add reference count control in NRTReplicationEngine#acquireLastIndexCommit",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Query Phase Fixes",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19231,
+          "name": "Fix QueryPhaseResultConsumer incomplete callback loops",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Scaled Float Field",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19188,
+          "name": "Fix the `scaled_float` precision issue",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Reindex API",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 18964,
+          "name": "Fix Using an excessively large reindex slice can lead to a JVM OutOfMemoryError on coordinator",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Alias Write Index Policy",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 1511,
+          "name": "Add alias write index policy to control writeIndex during restore",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Request Cache",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19385,
+          "name": "Fix updated keyword field params leading to stale responses from request cache",
+          "category": "feature",
+          "repository": "opensearch"
+        },
+        {
+          "pr": 19263,
+          "name": "Remove unnecessary iteration per-shard in request cache cleanup",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Cardinality Aggregation",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19473,
+          "name": "Fix cardinality agg pruning optimization by self collecting",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Reactor Netty Transport",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19458,
+          "name": "Implement SslHandler retrieval logic for transport-reactor-netty4 plugin",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Cluster State Caching",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19307,
+          "name": "Cache serialised cluster state based on cluster state version and node version",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Store Subdirectory Module",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19470,
+          "name": "Fix stats API in store-subdirectory module's SubdirectoryAwareStore",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Netty Arena Settings",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19503,
+          "name": "Setting number of sharedArenaMaxPermits to 1",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Search Stats",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19340,
+          "name": "Handle negative search request nodes stats",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Derived Fields",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19496,
+          "name": "Fix derived field rewrite to handle range queries",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "Terms Query Rewriting",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19587,
+          "name": "Fix incorrect rewriting of terms query with more than two consecutive whole numbers",
+          "category": "feature",
+          "repository": "opensearch"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Explore",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10362,
+          "name": "Introduce facet filter",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10412,
+          "name": "Introduce tab content error guard",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10425,
+          "name": "Infer axis date format",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10432,
+          "name": "Update default columns and facets",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10443,
+          "name": "Revert \"[Explore] Default to AI mode when available instead of PPL\"",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10450,
+          "name": "Add a link to detail page in expanded row",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10526,
+          "name": "Add query panel actions registry to explore",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10557,
+          "name": "Show query panel in Explore even if there are no datasets",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10560,
+          "name": "Add mouse hover state for explore line charts",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10588,
+          "name": "Explore experience will auto turn on few other flags",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10607,
+          "name": "Add explore experience modal",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10622,
+          "name": "Enhance explore modal UI",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10369,
+          "name": "[Explore] Resolve ScopedHistory navigation scope error in explore plugin",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10370,
+          "name": "[Explore] Allow Refresh to run query",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10388,
+          "name": "[Explore] Preserve active tab when saving and loading explores in dashboards",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10391,
+          "name": "[Explore] Remove Explore from Patterns tab",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Plugin Compatibility",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10273,
+          "name": "Enhanced plugin version compatibility with strict/ignore modes.",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10273,
+          "name": "Add `--single-version` flag with 'strict' and 'ignore' options.",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Banner Extensibility",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10324,
+          "name": "Refactor Banner Extensibility Model via Chrome Service",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Keyboard Shortcuts",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10409,
+          "name": "Add keyboard shortcuts configuration option to opensearch_dashboards.yml",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10455,
+          "name": "Add useKeyboardShortcut hook for registering keyboard shortcuts in React components",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10466,
+          "name": "Add keyboard shortcut help modal with interactive icon component",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10509,
+          "name": "Add more keyboard shortcuts for OSD",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10543,
+          "name": "Add crypess test for keyboard shortcut",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10545,
+          "name": "Enable Shortcuts to Comment Lines in Query Editor",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Visualization Enhancements",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10449,
+          "name": "Update metric viz to support sparkline",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10452,
+          "name": "Improve gantt chart",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10465,
+          "name": "Add histogram",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10469,
+          "name": "Discover visualization color and default settings updates",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10470,
+          "name": "Table visualization enhancement",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10482,
+          "name": "Update metric styles and add option to show value percentage change",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Patterns Tab",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10535,
+          "name": "Patterns tab adaptation to calcite issues.",
+          "category": "breaking",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10464,
+          "name": "Patterns tab flyout",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10489,
+          "name": "Implements 'search with pattern' functionality within Patterns' tab flyout",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Traces",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10386,
+          "name": "Adds a correlation Saved object which creates a saved object for the related traces and logs",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10392,
+          "name": "Add traces chart",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10393,
+          "name": "Trace Details: Log correlation (tabs+redirect)",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10406,
+          "name": "Add experimental default trace columns UI setting for Explore traces tab and apply it.",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10418,
+          "name": "Trace Details add support external datasets",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10431,
+          "name": "Switch primary schema for trace details, disable service map",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10642,
+          "name": "Add Timeline waterfall bars column to SpanDetailTableHierarchy",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Dataset Explorer",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10355,
+          "name": "Update for datasets, redirection, and accordion timeline",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10379,
+          "name": "Allow apps to configure available types in the dataset explorer",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10491,
+          "name": "Introduce dataset SignalType",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10554,
+          "name": "Dataset type and management",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards AI Chat",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10600,
+          "name": "Add experimental AI Chat and Context Provider plugins for OpenSearch Dashboards",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10612,
+          "name": "[AI] AG-UI compliant Langgraph ReAct agent implementation",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10624,
+          "name": "Chat(feat): mark context provider and chat as experimental",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards PPL/Query Enhancements",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10503,
+          "name": "Add PPL Formatter in Query panel",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10536,
+          "name": "Update Simplified PPL grammar to latest version",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10581,
+          "name": "Remove error popover from query panel",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10446,
+          "name": "[Query Enhancement] Fix Enter command behaviour in query editor",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards UI Enhancements",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10516,
+          "name": "Add \"Show Raw Data\" toggle",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10540,
+          "name": "Custom patterns error page",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 9781,
+          "name": "Add batch delete method, fix deletion error",
+          "category": "feature",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    },
+    {
+      "name": "OpenSearch Dashboards Bug Fixes",
+      "repositories": [
+        "opensearch-dashboards"
+      ],
+      "items": [
+        {
+          "pr": 10316,
+          "name": "Update chart axis titles to new field names after axis switch",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10325,
+          "name": "Persist banner dismissal across session reloads using sessionStorage",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10339,
+          "name": "Fix vega data url with signal not working",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10357,
+          "name": "The updated query not properly apply when with the snapshot url of a saved search",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10357,
+          "name": "The query reset to empty after saving a saved search",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10358,
+          "name": "Infer tooltip date format dynamically",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10363,
+          "name": "Error Highlighting after switching languages",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10365,
+          "name": "Discover visualization empty state should use correct PPL",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10366,
+          "name": "Reset legacy state when switching dataset",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10368,
+          "name": "Make the advanced dataset selector respect the language config",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10394,
+          "name": "Functional issues with patterns field selector",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10400,
+          "name": "It should only show index selector when needed",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10403,
+          "name": "Correlation object to have entities field which is dynamic and not strict",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10408,
+          "name": "Value Suggestions for Columns containing @ and .",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10410,
+          "name": "Remaining fixes for ui settings",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10414,
+          "name": "Fix global search url inside workspace",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10420,
+          "name": "Max row per page not working after adding table viz to a dashboard",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10420,
+          "name": "Max row per page can set to value < 1",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10430,
+          "name": "Update the console warn and throw error message",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10451,
+          "name": "Add gauge vis",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10467,
+          "name": "Vega visualization tooltip flashing when mouse move",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10478,
+          "name": "Move the Data Importer plugin to Data Administration under settings",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10479,
+          "name": "Discover:Traces Span-redirection, instant hover, bug fixes",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10486,
+          "name": "Remove extra empty space above editor and fix default horizontal scroll in logs table",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        },
+        {
+          "pr": 10497,
+          "name": "Add units panel for gauge and metric",
+          "category": "bugfix",
+          "repository": "opensearch-dashboards"
+        }
+      ]
+    }
+  ],
+  "processed_offset": 655
+}
