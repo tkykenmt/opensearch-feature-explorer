@@ -229,6 +229,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Flow Framework Utilities](features/flow-framework/flow-framework-utilities.md) | feature | JsonToJsonRecommender and JsonToJsonTransformer utilities for automated JSON field mapping and transformation |
 | [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) | bugfix | Memory fixes, error handling, 3.1+ API compatibility, race condition fix, default template fixes |
 
 ### Security Analytics Dashboards Plugin
