@@ -37,6 +37,7 @@
 - [S3 Repository Compatibility Fix](features/opensearch/s3-repository.md)
 - [Scaled Float Field Precision Fix](features/opensearch/scaled-float-field.md)
 - [Scroll API Error Handling](features/opensearch/scroll-api.md)
+- [Search Pipeline - System-Generated](features/opensearch/search-pipeline.md)
 - [Search Settings](features/opensearch/search-settings.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Search Tie-breaking](features/opensearch/search-tie-breaking.md)
