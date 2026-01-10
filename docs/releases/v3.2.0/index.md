@@ -45,3 +45,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Settings Management](features/opensearch/settings-management.md) | bugfix | Ignore archived settings on update to unblock settings modifications |
 | [SecureRandom Blocking Fix](features/opensearch/securerandom-blocking-fix.md) | bugfix | Fix startup freeze on low-entropy systems by reverting to non-blocking SecureRandom |
 | [Field Mapping Fixes](features/opensearch/field-mapping-fixes.md) | bugfix | Fix field-level ignore_malformed override and scaled_float encodePoint method |
+| [Search Scoring Fixes](features/opensearch/search-scoring-fixes.md) | bugfix | Fix max_score null when sorting by _score with secondary fields |
