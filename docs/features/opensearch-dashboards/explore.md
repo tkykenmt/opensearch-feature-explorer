@@ -16,6 +16,9 @@ Key benefits include:
 - Query editor performance optimizations (v3.2.0)
 - Bidirectional URL-Redux synchronization for browser navigation (v3.2.0)
 - In-editor PPL documentation with categorized suggestions (v3.2.0)
+- Patterns tab flyout with detailed pattern inspection (v3.3.0)
+- Search with pattern functionality for log filtering (v3.3.0)
+- Calcite query engine compatibility for patterns (v3.3.0)
 
 ## Details
 
@@ -162,6 +165,10 @@ flowchart TB
 | `ExploreEmbeddable` | Embeddable component for dashboard integration |
 | `TabRegistry` | Service for managing result tabs |
 | `PatternsTable` | Log patterns analysis table |
+| `PatternsFlyoutProvider` | Context provider for patterns flyout state (v3.3.0) |
+| `PatternsTableFlyout` | Flyout panel for detailed pattern inspection (v3.3.0) |
+| `PatternsFlyoutEventTable` | Paginated events table in flyout (v3.3.0) |
+| `PatternsFlyoutUpdateSearch` | Search with pattern button component (v3.3.0) |
 | `FieldSelector` | Field selection sidebar |
 | `DataTable` | Results data table with action bar |
 | `TraceDetails` | Trace details page with span visualization |
@@ -245,6 +252,11 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#10464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10464) | Patterns tab flyout |
+| v3.3.0 | [#10489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10489) | Search with pattern functionality and events table |
+| v3.3.0 | [#10535](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10535) | Patterns tab Calcite compatibility workarounds |
+| v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |
+| v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling |
 | v3.2.0 | [#9874](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9874) | Add pie, scatter, heatmap, single metric auto visualization |
 | v3.2.0 | [#9886](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9886) | New query editor in storybook |
 | v3.2.0 | [#9901](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9901) | Tab registry service integration |
@@ -321,5 +333,5 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
-- **v3.3.0** (2026-01-14): Added "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page
+- **v3.3.0** (2026-01-14): Added Patterns tab flyout with detailed pattern inspection, "search with pattern" functionality for log filtering, events table with pagination, Calcite query engine compatibility, "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page
 - **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation
