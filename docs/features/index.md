@@ -22,6 +22,7 @@
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
 - [Azure Repository](opensearch/azure-repository.md)
 - [Bulk API](opensearch/bulk-api.md)
+- [Cat Indices API](opensearch/cat-indices-api.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
 - [Code Cleanup](opensearch/code-cleanup.md)
