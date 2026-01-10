@@ -48,6 +48,7 @@
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
+- [Remote Store Metrics](opensearch/remote-store-metrics.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
