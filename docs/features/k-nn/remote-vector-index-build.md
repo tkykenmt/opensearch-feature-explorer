@@ -84,13 +84,25 @@ flowchart TB
 
 ### Configuration
 
+#### Cluster Settings
+
 | Setting | Description | Default | Dynamic |
 |---------|-------------|---------|---------|
-| `knn.feature.remote_index_build.enabled` | Enable remote build feature for the cluster | `false` | Yes |
+| `knn.remote_index_build.enabled` | Enable remote build feature for the cluster | `false` | Yes |
+| `knn.remote_index_build.repository` | Name of registered S3 repository | - | Yes |
+| `knn.remote_index_build.service.endpoint` | URL of the remote build service | - | Yes |
+| `knn.remote_index_build.poll.interval` | Status poll interval | `5s` | Yes |
+| `knn.remote_index_build.client.timeout` | Max wait time before CPU fallback | `60m` | Yes |
+| `knn.remote_index_build.size.max` | Upper bound for segment size (0 = no limit) | `0` | Yes |
+| `knn.remote_index_build.service.username` | Auth username (keystore) | - | Secure |
+| `knn.remote_index_build.service.password` | Auth password (keystore) | - | Secure |
+
+#### Index Settings
+
+| Setting | Description | Default | Dynamic |
+|---------|-------------|---------|---------|
 | `index.knn.remote_index_build.enabled` | Enable remote build for specific index | `false` | Yes |
-| `knn.remote_index_build.client.endpoint` | URL of the remote build service | - | Yes |
-| `knn.remote_index_build.vector_repo` | Name of registered S3 repository | - | Yes |
-| `index.knn.remote_index_build.size_threshold` | Minimum segment size (bytes) to trigger remote build | - | Yes |
+| `index.knn.remote_index_build.size.min` | Minimum segment size to trigger remote build | `50mb` | Yes |
 
 ### Metrics
 
@@ -130,9 +142,10 @@ PUT _snapshot/vector-repo
 PUT _cluster/settings
 {
   "persistent": {
-    "knn.feature.remote_index_build.enabled": true,
-    "knn.remote_index_build.client.endpoint": "http://gpu-builder.example.com:8080",
-    "knn.remote_index_build.vector_repo": "vector-repo"
+    "knn.remote_index_build.enabled": true,
+    "knn.remote_index_build.service.endpoint": "http://gpu-builder.example.com:8080",
+    "knn.remote_index_build.repository": "vector-repo",
+    "knn.remote_index_build.size.max": "10gb"
   }
 }
 
@@ -141,7 +154,8 @@ PUT my-vectors
 {
   "settings": {
     "index.knn": true,
-    "index.knn.remote_index_build.enabled": true
+    "index.knn.remote_index_build.enabled": true,
+    "index.knn.remote_index_build.size.min": "100mb"
   },
   "mappings": {
     "properties": {
@@ -176,11 +190,16 @@ POST my-vectors/_bulk
 - **Repository**: Only Amazon S3 repositories
 - **Space Types**: L2, inner product, and cosine similarity
 - **Network**: Requires connectivity between OpenSearch, S3, and build service
+- **Size Bounds**: Segments exceeding `knn.remote_index_build.size.max` fall back to CPU build
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#2662](https://github.com/opensearch-project/k-NN/pull/2662) | Add tuned repository upload/download buffer sizes |
+| v3.1.0 | [#2734](https://github.com/opensearch-project/k-NN/pull/2734) | Add segment size upper bound setting and GA settings changes |
+| v3.1.0 | [#2693](https://github.com/opensearch-project/k-NN/pull/2693) | Fix remote build metrics timing and add exception logging |
+| v3.1.0 | [#2743](https://github.com/opensearch-project/k-NN/pull/2743) | Fix GPU index setting to only evaluate when cluster setting is set |
 | v3.1.0 | [#2659](https://github.com/opensearch-project/k-NN/pull/2659) | Add testing support to run all ITs with remote index builder |
 | v3.1.0 | [#2700](https://github.com/opensearch-project/k-NN/pull/2700) | Fix KNNSettingsTests after change in MockNode constructor |
 | v3.0.0 | [#2576](https://github.com/opensearch-project/k-NN/pull/2576) | Client polling, encoder validation, parameter retrieval |
@@ -200,5 +219,6 @@ POST my-vectors/_bulk
 
 ## Change History
 
+- **v3.1.0** (2025-06-16): GA preparation with tuned buffer sizes (50MB vector upload/download, 8KB doc ID), new segment size upper bound setting (`knn.remote_index_build.size.max`), renamed settings for production use, fixed metrics timing for CPU fallback, improved exception logging
 - **v3.1.0** (2025-05-13): Added comprehensive integration test support with `@ExpectRemoteBuildValidation` annotation, updated GitHub Actions workflow to use official Docker image and run all ITs, fixed MockNode constructor compatibility
 - **v3.0.0** (2025-05-06): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support
