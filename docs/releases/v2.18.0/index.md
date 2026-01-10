@@ -138,6 +138,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Anomaly Detection
 
+- [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md) - Suppression rule validation in AnomalyDetector constructor, default rules bug fix for empty rulesets, RCF version upgrade to 4.2.0
 - [Anomaly Detection Dependencies](features/anomaly-detection/anomaly-detection-dependencies.md) - Dependency updates (Jackson 2.18.0, JUnit Jupiter 5.11.2, Mockito 5.14.1) and removal of unused javassist dependency
 
 ### Anomaly Detection Dashboards
