@@ -139,6 +139,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Toast Notification Bugfix](features/dashboards-search-relevance/toast-notification-bugfix.md) | bugfix | Fix error messages not rendering correctly in toast notifications |
 | [Repository Maintenance](features/dashboards-search-relevance/repository-maintenance.md) | bugfix | Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps |
 
+### Search Relevance
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Search Relevance Bugfixes](features/search-relevance/search-relevance-bugfixes.md) | bugfix | 7 bug fixes: error messaging, pipeline errors, UI overflow, Venn diagram, REST API status, input validation, pipeline parameter |
+
 ### Query Insights
 
 | Item | Category | Description |

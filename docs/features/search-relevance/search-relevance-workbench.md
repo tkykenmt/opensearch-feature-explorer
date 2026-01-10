@@ -149,6 +149,13 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#578](https://github.com/opensearch-project/dashboards-search-relevance/pull/578) | Improve messaging when backend plugin is disabled |
+| v3.2.0 | [#582](https://github.com/opensearch-project/dashboards-search-relevance/pull/582) | Do not show Pipeline error if there are no pipelines yet |
+| v3.2.0 | [#585](https://github.com/opensearch-project/dashboards-search-relevance/pull/585) | Avoid validation results overflow in Search Configuration creation |
+| v3.2.0 | [#586](https://github.com/opensearch-project/dashboards-search-relevance/pull/586) | Fix wrong unique number of results in Venn diagram |
+| v3.2.0 | [#176](https://github.com/opensearch-project/search-relevance/pull/176) | Bug fix on REST APIs error status for creations |
+| v3.2.0 | [#177](https://github.com/opensearch-project/search-relevance/pull/177) | Added queryText and referenceAnswer text validation from manual input |
+| v3.2.0 | [#187](https://github.com/opensearch-project/search-relevance/pull/187) | Fixed pipeline parameter being ignored in pairwise metrics processing for hybrid |
 | v3.2.0 | [#612](https://github.com/opensearch-project/dashboards-search-relevance/pull/612) | Bug fixes for error messages not render correctly for toast notifications |
 | v3.1.0 | [#533](https://github.com/opensearch-project/opensearch-dashboards-search-relevance/pull/533) | Add search relevance workbench features (Dashboards) |
 | v3.1.0 | [#26](https://github.com/opensearch-project/opensearch-search-relevance/pull/26) | Added new experiment type for hybrid search |
@@ -189,9 +196,16 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - [Issue #95](https://github.com/opensearch-project/search-relevance/issues/95): LLM judgment duplication
 - [Issue #109](https://github.com/opensearch-project/search-relevance/issues/109): Missing variants in Hybrid Optimizer
 - [Issue #114](https://github.com/opensearch-project/search-relevance/issues/114): Input validation
+- [Issue #170](https://github.com/opensearch-project/search-relevance/issues/170): Missing pipeline name in experiments
+- [Issue #186](https://github.com/opensearch-project/search-relevance/issues/186): Input validation for query sets
+- [Issue #529](https://github.com/opensearch-project/dashboards-search-relevance/issues/529): Venn diagram incorrect counts
+- [Issue #543](https://github.com/opensearch-project/dashboards-search-relevance/issues/543): Backend plugin disabled messaging
+- [Issue #557](https://github.com/opensearch-project/dashboards-search-relevance/issues/557): Pipeline error when no pipelines exist
+- [Issue #584](https://github.com/opensearch-project/dashboards-search-relevance/issues/584): Validation results overflow
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Bug fixes - backend plugin disabled messaging, pipeline error suppression, validation results overflow, Venn diagram statistics, REST API error status, input validation, pipeline parameter fix
 - **v3.2.0** (2026-01-10): Fixed toast notification error messages not rendering correctly across multiple UI components
 - **v3.1.0** (2025-06-16): Major feature additions - hybrid search experiment type, feature flag, external judgment import, Stats API, URL path changes, security integration with roles
 - **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
