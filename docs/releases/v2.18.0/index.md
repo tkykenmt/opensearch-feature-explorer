@@ -24,6 +24,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Nested Aggregations](features/opensearch/nested-aggregations.md) - Fix infinite loop in nested aggregations with deep-level nested objects
 - [Code Cleanup](features/opensearch/code-cleanup.md) - Query approximation simplification, Stream API optimization, typo fix
 - [Search Request Stats](features/opensearch/search-request-stats.md) - Enable coordinator search.request_stats_enabled by default
+- [Identity Feature Flag Removal](features/opensearch/identity-feature-flag-removal.md) - Remove experimental identity feature flag, move authentication to plugins
 
 ### OpenSearch Dashboards
 
