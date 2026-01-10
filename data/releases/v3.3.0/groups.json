@@ -1227,7 +1227,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1345
     },
     {
       "name": "Security Configuration Enhancements",
@@ -1259,7 +1260,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1346
     },
     {
       "name": "Gradle 9 Compatibility",
@@ -1378,7 +1380,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 1347
     },
     {
       "name": "Cross-Cluster Replication Fixes",
@@ -1392,7 +1395,8 @@
           "category": "bugfix",
           "repository": "cross-cluster-replication"
         }
-      ]
+      ],
+      "issue_number": 1348
     },
     {
       "name": "Observability Fixes",
@@ -1412,7 +1416,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 1349
     },
     {
       "name": "Flow Framework Fixes",
@@ -1426,7 +1431,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 1350
     },
     {
       "name": "k-NN Bug Fixes",
@@ -1494,7 +1500,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 1351
     },
     {
       "name": "ML Commons Bug Fixes",
@@ -1676,7 +1683,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1352
     },
     {
       "name": "Metrics Framework",
@@ -1690,7 +1698,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1353
     },
     {
       "name": "Semantic Field",
@@ -1704,7 +1713,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 1354
     },
     {
       "name": "Neural Search Bug Fixes",
@@ -1730,7 +1740,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 1355
     },
     {
       "name": "Notifications Plugin Fixes",
@@ -1750,7 +1761,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 1356
     },
     {
       "name": "Learning to Rank Fixes",
@@ -1788,7 +1800,8 @@
           "category": "bugfix",
           "repository": "learning"
         }
-      ]
+      ],
+      "issue_number": 1357
     },
     {
       "name": "Query Insights Bug Fixes",
@@ -1862,7 +1875,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 1358
     },
     {
       "name": "Search Relevance Fixes",
@@ -1876,7 +1890,8 @@
           "category": "bugfix",
           "repository": "search"
         }
-      ]
+      ],
+      "issue_number": 1359
     },
     {
       "name": "Security Client Certificate Authentication",
@@ -1890,7 +1905,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1360
     },
     {
       "name": "Security Plugin Bug Fixes",
@@ -1953,7 +1969,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1361
     },
     {
       "name": "Security SSL/TLS",
@@ -1967,7 +1984,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1362
     },
     {
       "name": "User Plugin Fixes",
@@ -1981,7 +1999,8 @@
           "category": "bugfix",
           "repository": "user"
         }
-      ]
+      ],
+      "issue_number": 1363
     },
     {
       "name": "SQL/PPL Bug Fixes",
@@ -2145,7 +2164,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1364
     },
     {
       "name": "Resource Access Control Documentation",
