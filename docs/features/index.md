@@ -102,6 +102,7 @@
 - [Reactor Netty Transport](opensearch/reactor-netty-transport.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
+- [Request Cache](opensearch/request-cache.md)
 - [Rescore Named Queries](opensearch/rescore-named-queries.md)
 - [Remote Store](opensearch/remote-store.md)
 - [Remote Store Metadata API](opensearch/remote-store-metadata-api.md)
