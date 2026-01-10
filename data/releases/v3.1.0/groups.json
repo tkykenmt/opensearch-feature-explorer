@@ -1013,7 +1013,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 855
     },
     {
       "name": "Security JWT Enhancements",
@@ -1027,7 +1028,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 856
     },
     {
       "name": "Security Testing Framework",
@@ -1041,7 +1043,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 857
     },
     {
       "name": "Security Performance Improvements",
@@ -1061,7 +1064,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 858
     },
     {
       "name": "Security Role Mapping",
@@ -1075,7 +1079,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 859
     },
     {
       "name": "Security Debugging",
@@ -1089,7 +1094,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 860
     },
     {
       "name": "Security Dashboards UI Fixes",
@@ -1121,7 +1127,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 861
     },
     {
       "name": "Build/Test Infrastructure",
@@ -1135,7 +1142,8 @@
           "category": "bugfix",
           "repository": "custom"
         }
-      ]
+      ],
+      "issue_number": 862
     },
     {
       "name": "Flow Framework Improvements",
@@ -1161,7 +1169,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 863
     },
     {
       "name": "Geospatial Ip2Geo Fixes",
@@ -1181,7 +1190,8 @@
           "category": "bugfix",
           "repository": "geospatial"
         }
-      ]
+      ],
+      "issue_number": 864
     },
     {
       "name": "Notifications Improvements",
@@ -1195,7 +1205,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 865
     },
     {
       "name": "ML Commons Connector/Model Validation",
@@ -1233,7 +1244,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 866
     },
     {
       "name": "Neural Search Bug Fixes",
@@ -1283,7 +1295,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 867
     },
     {
       "name": "Observability Bug Fixes",
@@ -1303,7 +1316,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 868
     },
     {
       "name": "Search Relevance Bug Fixes",
@@ -1413,7 +1427,8 @@
           "category": "bugfix",
           "repository": "search"
         }
-      ]
+      ],
+      "issue_number": 869
     },
     {
       "name": "Security Backend Bug Fixes",
@@ -1487,7 +1502,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 870
     },
     {
       "name": "Skills PPL Tool Fixes",
@@ -1501,7 +1517,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 871
     },
     {
       "name": "k-NN Bug Fixes",
@@ -1563,7 +1580,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 872
     },
     {
       "name": "Query Insights Bug Fixes",
@@ -1595,7 +1613,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 873
     },
     {
       "name": "Version Bumps and Release Maintenance",
@@ -1709,7 +1728,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 874
     },
     {
       "name": "SQL/PPL Bug Fixes",
