@@ -192,6 +192,7 @@
 ## ml-commons
 
 - [Batch Ingestion](ml-commons/batch-ingestion.md)
+- [ML Commons Bugfixes](ml-commons/ml-commons-bugfixes.md)
 - [ML Commons CI/CD](ml-commons/ml-commons-ci-cd.md)
 - [ML Commons Configuration](ml-commons/ml-commons-configuration.md)
 - [ML Commons Connector](ml-commons/ml-commons-connector.md)

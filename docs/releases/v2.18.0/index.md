@@ -115,6 +115,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### ML Commons
 
+- [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md) - 11 bug fixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC, and agent logging
 - [ML Commons Configuration](features/ml-commons/ml-commons-configuration.md) - Change `.plugins-ml-config` index to use `auto_expand_replicas: 0-all` for maximum availability
 - [ML Commons Connectors & Blueprints](features/ml-commons/ml-commons-connectors-blueprints.md) - Bedrock Converse blueprint, cross-account model invocation tutorial, role temporary credential support, Titan Embedding V2 blueprint
 - [ML Commons CI/CD](features/ml-commons/ml-commons-ci-cd.md) - Workflow approval system for external contributors, artifact actions upgrade to v4, developer guide updates
