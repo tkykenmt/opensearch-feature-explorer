@@ -188,6 +188,7 @@
 ## ml-commons
 
 - [Batch Ingestion](ml-commons/batch-ingestion.md)
+- [ML Commons CI/CD](ml-commons/ml-commons-ci-cd.md)
 - [ML Commons Connector](ml-commons/ml-commons-connector.md)
 - [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
 - [ML Commons MCP (Model Context Protocol)](ml-commons/ml-commons-mcp.md)
