@@ -32,3 +32,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Rule-based Auto Tagging Fix](features/opensearch/rule-based-auto-tagging-fix.md) | bugfix | Fix delete rule event consumption for wildcard index based rules |
 | [System Ingest Pipeline Fix](features/opensearch/system-ingest-pipeline-fix.md) | bugfix | Fix system ingest pipeline to properly handle index templates |
 | [Azure Repository Fixes](features/opensearch/azure-repository-fixes.md) | bugfix | Fix SOCKS5 proxy authentication for Azure repository |
+| [Profiler Enhancements](features/opensearch/profiler-enhancements.md) | bugfix | Fix concurrent timings in profiler for concurrent segment search |
