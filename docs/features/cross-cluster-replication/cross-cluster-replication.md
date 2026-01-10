@@ -146,6 +146,7 @@ POST _plugins/_replication/follower-index/_stop
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.2.0 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | cross-cluster-replication | Add missing method for RemoteClusterRepository class |
 | v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |
 | v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM |
 | v3.0.0 | [#1496](https://github.com/opensearch-project/cross-cluster-replication/pull/1496) | cross-cluster-replication | Gradle 8.10.2 and JDK23 support |
@@ -155,6 +156,7 @@ POST _plugins/_replication/follower-index/_stop
 ## References
 
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices
+- [Issue #1557](https://github.com/opensearch-project/cross-cluster-replication/issues/1557): Distribution Build Failed for cross-cluster-replication-3.2.0
 - [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
 - [Replication settings](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
 - [Replication API](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
@@ -164,6 +166,7 @@ POST _plugins/_replication/follower-index/_stop
 
 ## Change History
 
+- **v3.2.0** (2025-08-06): Build fix - added missing `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method to RemoteClusterRepository
 - **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
 - **v2.17.0** (2024-09-17): Fixed integration tests to use correct cluster setting names after Remote Store Migration GA
 - **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation
