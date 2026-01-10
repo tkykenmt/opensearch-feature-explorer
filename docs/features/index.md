@@ -147,6 +147,10 @@
 
 - [Security Dashboards Plugin](security-dashboards/security-dashboards-plugin.md)
 
+## remote
+
+- [Security CVE Fixes](remote/security-cve-fixes.md)
+
 ## reporting
 
 - [AUTO Version Management](reporting/auto-version-management.md)

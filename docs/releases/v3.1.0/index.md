@@ -104,3 +104,7 @@
 ### Search Relevance
 
 - [Search Relevance Test Data](features/search-relevance/search-relevance-test-data.md) - Add realistic ESCI-based test dataset with 150 queries and matching judgments
+
+### Remote
+
+- [Security CVE Fixes](features/remote/security-cve-fixes.md) - CVE-2025-27820 fix for Apache HttpClient in opensearch-remote-metadata-sdk
