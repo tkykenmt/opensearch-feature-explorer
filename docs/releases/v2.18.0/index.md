@@ -150,6 +150,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md) - Fix missing EUI component imports in report_settings component
 
+### Dashboards Notifications
+
+- [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md) - Fix default data source selection, typo fixes, CI workflow updates
+
 ### Job Scheduler
 
 - [Job Scheduler](features/job-scheduler/job-scheduler.md) - Return LockService from createComponents for Guice injection
