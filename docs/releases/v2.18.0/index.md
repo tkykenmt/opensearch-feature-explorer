@@ -34,6 +34,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Docker Compose v2 Support](features/opensearch/docker-compose-v2-support.md) - Add support for Docker Compose v2 in TestFixturesPlugin for modern Docker installations
 - [Snapshot Restore Enhancements](features/opensearch/snapshot-restore-enhancements.md) - Alias renaming during restore and clone operation optimization for doc-rep clusters
 - [Remote Store Metrics](features/opensearch/remote-store-metrics.md) - New REMOTE_STORE metric in Node Stats API for monitoring pinned timestamp fetch operations
+- [S3 Repository](features/opensearch/s3-repository.md) - Standard retry mode for S3 clients and SLF4J warning fix
 
 ### OpenSearch Dashboards
 

@@ -49,6 +49,7 @@
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
+- [S3 Repository](opensearch/s3-repository.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
