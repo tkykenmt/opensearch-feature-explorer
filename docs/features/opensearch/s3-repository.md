@@ -141,22 +141,59 @@ flowchart TB
     I --> B
 ```
 
+### Async Deletion (v2.18.0+)
+
+The S3 repository supports asynchronous deletion operations for improved performance during snapshot deletion:
+
+```mermaid
+graph TB
+    subgraph "Async Deletion Flow"
+        BlobRepo[BlobStoreRepository]
+        Container[S3BlobContainer]
+        AsyncClient[S3 Async Client]
+        S3[Amazon S3]
+    end
+    
+    BlobRepo -->|deleteContainer| Container
+    Container -->|deleteAsync| AsyncClient
+    AsyncClient -->|DeleteObjectsRequest| S3
+    
+    subgraph "Batch Processing"
+        List[List Objects]
+        Batch[Create Batches]
+        Delete[Delete Batch]
+        List --> Batch
+        Batch --> Delete
+    end
+    
+    Container --> List
+```
+
+#### Async Deletion Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `cluster.snapshot.async-deletion.enable` | Enable/disable async deletion for S3 repositories | `true` |
+
 ## Limitations
 
 - Glacier and Deep Archive storage classes are not supported
 - Maximum chunk size is limited by S3 multipart upload limits
 - IAM credentials must have appropriate S3 permissions
 - Cross-region snapshot restore may incur data transfer costs
+- Async deletion is only available for S3 repositories
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#15621](https://github.com/opensearch-project/OpenSearch/pull/15621) | Add support for async deletion in S3BlobContainer |
 | v2.18.0 | [#15978](https://github.com/opensearch-project/OpenSearch/pull/15978) | Change default retry mechanism to Standard Mode |
 | v2.18.0 | [#16194](https://github.com/opensearch-project/OpenSearch/pull/16194) | Fix SLF4J warnings on startup |
 
 ## References
 
+- [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Async deletion implementation
 - [Issue #15397](https://github.com/opensearch-project/OpenSearch/issues/15397): Add jitter to downloads from remote store
 - [Issue #16152](https://github.com/opensearch-project/OpenSearch/issues/16152): SLF4J warnings when adding repository-s3
 - [Register Snapshot Repository](https://docs.opensearch.org/2.18/api-reference/snapshots/create-repository/): OpenSearch documentation
@@ -164,4 +201,4 @@ flowchart TB
 
 ## Change History
 
-- **v2.18.0** (2024-10-22): Changed default retry mechanism to Standard Mode, fixed SLF4J warnings
+- **v2.18.0** (2024-10-22): Added async deletion support, changed default retry mechanism to Standard Mode, fixed SLF4J warnings
