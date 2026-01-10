@@ -128,6 +128,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Security Analytics System Indices](features/security-analytics/security-analytics-system-indices.md) - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix
 - [Security Analytics Correlation](features/security-analytics/security-analytics-correlation.md) - Bug fixes for threat intel monitor alias resolution and REFRESHING state enum query
+- [Threat Intel Bug Fixes](features/security-analytics/threat-intel-bugfixes.md) - Notification listener leak fix, duplicate findings prevention, source config validation, improved error handling
 
 ### Security Analytics Dashboards
 

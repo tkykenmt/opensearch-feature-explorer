@@ -181,6 +181,10 @@ POST _plugins/_security_analytics/threat_intel/sources/
 |---------|-----|-------------|
 | v3.0.0 | [#1493](https://github.com/opensearch-project/security-analytics/pull/1493) | Custom format IOC upload support |
 | v3.0.0 | [#1455](https://github.com/opensearch-project/security-analytics/pull/1455) | Custom format implementation (2.x backport) |
+| v2.18.0 | [#1356](https://github.com/opensearch-project/security-analytics/pull/1356) | Fix notifications listener leak in threat intel monitor |
+| v2.18.0 | [#1317](https://github.com/opensearch-project/security-analytics/pull/1317) | Threat intel monitor bug fixes (empty index sort, grouped listener) |
+| v2.18.0 | [#1383](https://github.com/opensearch-project/security-analytics/pull/1383) | Fix search monitor query in update threat intel alert status API |
+| v2.18.0 | [#1393](https://github.com/opensearch-project/security-analytics/pull/1393) | Add validation for threat intel source config |
 | v2.18.0 | [#1180](https://github.com/opensearch-project/security-analytics/pull/1180) | Backport of alias resolution and enum fixes |
 | v2.18.0 | [#1173](https://github.com/opensearch-project/security-analytics/pull/1173) | Fix alias resolution in threat intel monitor |
 | v2.18.0 | [#1178](https://github.com/opensearch-project/security-analytics/pull/1178) | Fix enum state query for REFRESHING state |
@@ -195,6 +199,8 @@ POST _plugins/_security_analytics/threat_intel/sources/
 - [Issue #1421](https://github.com/opensearch-project/security-analytics/issues/1421): Custom JSON schema feature request
 - [Issue #1224](https://github.com/opensearch-project/security-analytics/issues/1224): Lock release issue
 - [Issue #1247](https://github.com/opensearch-project/security-analytics/issues/1247): Job mapping upgrade issue
+- [Issue #1319](https://github.com/opensearch-project/security-analytics/issues/1319): Threat intel monitor bug fixes tracking
+- [Issue #1366](https://github.com/opensearch-project/security-analytics/issues/1366): Source config validation issue
 - [Threat Intelligence Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/index/): Official documentation
 - [Source API](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/api/source/): API reference
 - [Monitor API](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/api/monitor/): Monitor API reference
@@ -203,6 +209,6 @@ POST _plugins/_security_analytics/threat_intel/sources/
 ## Change History
 
 - **v3.0.0** (2025-05-13): Added custom JSON format support with JSONPath schema, relaxed IOC type validation to support custom types
-- **v2.18.0** (2024-11-05): Bug fixes - threat intel monitors now correctly resolve index aliases to concrete indices; fixed REFRESHING state enum query
+- **v2.18.0** (2024-11-05): Bug fixes - notification listener leak fix, duplicate findings prevention, source config validation, improved error handling for partial failures
 - **v2.17.0** (2024-09-17): Bug fixes for security (user validation, context stashing), stability (multi-node race conditions, event-driven lock release), and integration with standard detectors
 - **v2.15.0**: Initial threat intelligence feature with S3, IOC_UPLOAD, and URL_DOWNLOAD source types
