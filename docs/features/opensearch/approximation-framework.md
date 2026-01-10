@@ -82,7 +82,11 @@ flowchart TB
 
 | Query Type | Example | Optimization | Since |
 |------------|---------|--------------|-------|
-| Range Query | `{"range": {"@timestamp": {"gte": "now-1d"}}}` | Early termination on BKD traversal | v3.0.0 |
+| Range Query (long/date) | `{"range": {"@timestamp": {"gte": "now-1d"}}}` | Early termination on BKD traversal | v3.0.0 |
+| Range Query (int) | `{"range": {"status_code": {"gte": 400}}}` | Early termination on BKD traversal | v3.2.0 |
+| Range Query (float/double) | `{"range": {"temperature": {"gte": 20.0}}}` | Early termination on BKD traversal | v3.2.0 |
+| Range Query (half_float) | `{"range": {"score": {"gte": 0.5}}}` | Early termination on BKD traversal | v3.2.0 |
+| Range Query (unsigned_long) | `{"range": {"counter": {"gte": 1000}}}` | Early termination on BKD traversal | v3.2.0 |
 | Match All + Sort | `{"match_all": {}, "sort": [{"@timestamp": "desc"}]}` | Rewritten to bounded range with early termination | v3.0.0 |
 | Range + Sort | `{"range": {...}, "sort": [...]}` | Optimized left/right traversal based on sort order | v3.0.0 |
 | Range with `now` | `{"range": {"@timestamp": {"gte": "now-1h"}}}` | Approximation applied to `DateRangeIncludingNowQuery` | v3.2.0 |
@@ -165,6 +169,7 @@ GET logs/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18530](https://github.com/opensearch-project/OpenSearch/pull/18530) | Extend Approximation Framework to other numeric types (int, float, double, half_float, unsigned_long) |
 | v3.2.0 | [#18896](https://github.com/opensearch-project/OpenSearch/pull/18896) | Support `search_after` numeric queries with Approximation Framework |
 | v3.2.0 | [#18511](https://github.com/opensearch-project/OpenSearch/pull/18511) | Added approximation support for range queries with `now` in date field |
 | v3.2.0 | [#18763](https://github.com/opensearch-project/OpenSearch/pull/18763) | Disable approximation framework when dealing with multiple sorts |
@@ -173,6 +178,7 @@ GET logs/_search
 
 ## References
 
+- [Issue #14406](https://github.com/opensearch-project/OpenSearch/issues/14406): Feature request to expand ApproximatePointRangeQuery to other numeric types
 - [Issue #18341](https://github.com/opensearch-project/OpenSearch/issues/18341): Feature request for DFS traversal strategy
 - [Issue #18546](https://github.com/opensearch-project/OpenSearch/issues/18546): Feature request for `search_after` support
 - [Issue #18503](https://github.com/opensearch-project/OpenSearch/issues/18503): Bug report for `now` range queries skipping approximation
@@ -182,6 +188,6 @@ GET logs/_search
 
 ## Change History
 
-- **v3.2.0**: Added `search_after` support for numeric queries, approximation for range queries with `now`, automatic disabling for multiple sort fields
+- **v3.2.0**: Extended Approximation Framework to all numeric types (int, float, double, half_float, unsigned_long); added `search_after` support for numeric queries; approximation for range queries with `now`; automatic disabling for multiple sort fields
 - **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
 - **v3.0.0**: Initial GA release with basic early termination support
