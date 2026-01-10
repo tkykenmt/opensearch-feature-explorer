@@ -82,7 +82,25 @@ flowchart TB
 | `max_leaf_docs` | Maximum documents per leaf node | `10000` |
 | `skip_star_node_creation_for_dimensions` | Dimensions to skip star node creation | `[]` |
 
+### Monitoring
+
+Star-tree search statistics are available (v3.2.0+) through the stats APIs:
+
+| Metric | Description |
+|--------|-------------|
+| `startree_query_total` | Total queries resolved using star-tree |
+| `startree_query_time_in_millis` | Time spent in star-tree queries |
+| `startree_query_current` | Currently running star-tree queries |
+
+Access via `/_nodes/stats/indices/search`, `/_stats/search`, or `/_stats/search?level=shards`.
+
 ### Supported Features
+
+#### Supported Dimension Types
+- Numeric types: integer, long, float, double, half_float, unsigned_long
+- Keyword fields
+- IP fields (v3.2.0+)
+- Date fields (for date_dimension)
 
 #### Queries
 - Term query
@@ -170,6 +188,8 @@ POST /logs/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18707](https://github.com/opensearch-project/OpenSearch/pull/18707) | Add star-tree search statistics |
+| v3.2.0 | [#18671](https://github.com/opensearch-project/OpenSearch/pull/18671) | Add IP field search support |
 | v3.1.0 | [#18070](https://github.com/opensearch-project/OpenSearch/pull/18070) | Remove feature flag, add index-level star-tree search setting |
 | v3.1.0 | [#18048](https://github.com/opensearch-project/OpenSearch/pull/18048) | Support nested bucket aggregations |
 | v3.1.0 | [#17855](https://github.com/opensearch-project/OpenSearch/pull/17855) | Support date range queries in aggregations |
@@ -185,6 +205,7 @@ POST /logs/_search
 - [Issue #17274](https://github.com/opensearch-project/OpenSearch/issues/17274): Nested bucket aggregations
 - [Issue #16551](https://github.com/opensearch-project/OpenSearch/issues/16551): Bucket terms aggregation feature request
 - [Issue #16553](https://github.com/opensearch-project/OpenSearch/issues/16553): Range aggregations feature request
+- [Issue #16547](https://github.com/opensearch-project/OpenSearch/issues/16547): IP field support feature request
 - [Issue #15231](https://github.com/opensearch-project/OpenSearch/issues/15231): Unsigned long support
 - [Issue #17267](https://github.com/opensearch-project/OpenSearch/issues/17267): Boolean query support
 - [Issue #15257](https://github.com/opensearch-project/OpenSearch/issues/15257): Star-tree tracking issue
@@ -194,6 +215,7 @@ POST /logs/_search
 
 ## Change History
 
+- **v3.2.0** (2025-09-16): Added IP field search support, star-tree search statistics (query count, time, current)
 - **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
 - **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
 - **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
