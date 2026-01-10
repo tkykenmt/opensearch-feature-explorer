@@ -166,6 +166,7 @@
 - [Dynamic Config](opensearch-dashboards/dynamic-config.md)
 - [Experimental Features](opensearch-dashboards/experimental-features.md)
 - [Explore Plugin](opensearch-dashboards/explore.md)
+- [Explore Traces](opensearch-dashboards/explore-traces.md)
 - [i18n & Localization](opensearch-dashboards/i18n-localization.md)
 - [Input Control Visualization](opensearch-dashboards/input-control-visualization.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
