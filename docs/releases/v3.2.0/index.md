@@ -105,6 +105,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Geospatial Infrastructure](features/geospatial/geospatial-infrastructure.md) | bugfix | Upgrade Gradle to 8.14.3 and run CI checks with JDK24 |
+| [Geospatial Plugin](features/geospatial/geospatial-plugin.md) | bugfix | Block HTTP redirects in IP2Geo, migrate to PluginSubject for system index access |
 
 ### Performance Analyzer
 
