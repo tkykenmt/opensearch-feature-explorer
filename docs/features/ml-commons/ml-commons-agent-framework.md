@@ -223,11 +223,23 @@ PUT /_plugins/_ml/agents/{agent_id}
 - Simultaneous tool use with handle/supply not yet supported
 - Circuit breaker bypass for agents may impact cluster stability under heavy load
 - Agent execution timeout depends on underlying LLM response time
+- Execute Tool API is experimental (v3.2.0+)
+- Memory container features require explicit feature flag enablement (v3.2.0+)
+- AI-oriented memory operations depend on LLM model quality for fact extraction (v3.2.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#4035](https://github.com/opensearch-project/ml-commons/pull/4035) | Add Execute Tool API |
+| v3.2.0 | [#4050](https://github.com/opensearch-project/ml-commons/pull/4050) | Implement create and add memory container API |
+| v3.2.0 | [#4055](https://github.com/opensearch-project/ml-commons/pull/4055) | Enable AI-Oriented memory operations |
+| v3.2.0 | [#4006](https://github.com/opensearch-project/ml-commons/pull/4006) | Initiate QueryPlanningTool |
+| v3.2.0 | [#4027](https://github.com/opensearch-project/ml-commons/pull/4027) | Delete memory container API |
+| v3.2.0 | [#4069](https://github.com/opensearch-project/ml-commons/pull/4069) | GET memory API |
+| v3.2.0 | [#4053](https://github.com/opensearch-project/ml-commons/pull/4053) | Support output filter and improve SearchIndexTool |
+| v3.2.0 | [#4008](https://github.com/opensearch-project/ml-commons/pull/4008) | Add date/time injection for agents |
+| v3.2.0 | [#4031](https://github.com/opensearch-project/ml-commons/pull/4031) | Ensure chat agent returns response at max iterations |
 | v3.1.0 | [#3820](https://github.com/opensearch-project/ml-commons/pull/3820) | Expose Update Agent API |
 | v3.1.0 | [#3874](https://github.com/opensearch-project/ml-commons/pull/3874) | Support persisting MCP tools in system index |
 | v3.1.0 | [#3888](https://github.com/opensearch-project/ml-commons/pull/3888) | Use function calling for existing LLM interfaces |
@@ -253,6 +265,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 ## Change History
 
+- **v3.2.0** (2025-09-16): Execute Tool API, AI-oriented memory container system (create, add, search, update, delete, get), QueryPlanningTool for agentic search, date/time injection for agents, message history limit for PER Agent, output filter support, SearchIndexTool improvements, feature flags for agentic search/memory, multiple bug fixes (class cast exception, connector URL exposure, async status, max iterations handling)
 - **v3.1.0** (2025-07-15): Update Agent API, MCP tools persistence, function calling for LLM interfaces, custom SSE endpoint, metrics framework integration, PlanExecuteReflect memory tracking, error handling improvements, multiple bug fixes (private IP validation, circuit breaker bypass, Python MCP client)
 - **v3.0.0** (2025-05-13): Plan-Execute-Reflect agent type, MCP server integration
 - **v2.13.0** (2024-03-26): Initial agent framework with flow and conversational agents
