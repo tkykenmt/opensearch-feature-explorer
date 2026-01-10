@@ -40,3 +40,7 @@
 ### Skills
 
 - [ML Skills](features/skills/ml-skills.md) - Fix httpclient5 dependency version conflict and apply Spotless formatting
+
+### Security
+
+- [Security Dependency Updates](features/security/security-dependency-updates.md) - 24 dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, and CVE-2024-52798 fix
