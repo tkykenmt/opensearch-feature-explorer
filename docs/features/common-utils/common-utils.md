@@ -128,6 +128,9 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#850](https://github.com/opensearch-project/common-utils/pull/850) | Pinned commons-beanutils dependency to fix CVE-2025-48734 |
+| v3.2.0 | [#847](https://github.com/opensearch-project/common-utils/pull/847) | Revert PublishFindingsRequest to use a list of findings |
+| v3.2.0 | [#848](https://github.com/opensearch-project/common-utils/pull/848) | Switch gradle to 8.14 and JDK to 24 |
 | v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | Adding replication (CCR) plugin interface |
 | v3.0.0 | [#790](https://github.com/opensearch-project/common-utils/pull/790) | Fix imports for split transport package |
 | v3.0.0 | [#801](https://github.com/opensearch-project/common-utils/pull/801) | Escape/Unescape pipe in UserInfo |
@@ -135,9 +138,11 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 ## References
 
 - [Common Utils Repository](https://github.com/opensearch-project/common-utils)
+- [CVE-2025-48734 Advisory](https://advisories.opensearch.org/advisories/CVE-2025-48734): Security advisory for commons-beanutils
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username pipe character issue
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Manage CCR follower indices
 
 ## Change History
 
+- **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
 - **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info
