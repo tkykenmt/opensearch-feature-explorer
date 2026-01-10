@@ -58,6 +58,14 @@
 
 - [Observability Release Maintenance](features/observability/observability-release-maintenance.md) - Version increments, release notes, and bug fixes for trace analytics
 
+### Neural Search
+
+- [Lucene Upgrade](features/neural-search/lucene-upgrade.md) - Update hybrid query implementation for Lucene 10.2.1 API compatibility
+
+### Learning to Rank
+
+- [Lucene Upgrade](features/learning/lucene-upgrade.md) - Update RankerQuery for Lucene 10.2.1 DisiPriorityQueue API change
+
 ### Notifications
 
 - [Notifications Maintenance](features/notifications/notifications-maintenance.md) - Migrate from javax.mail to jakarta.mail APIs and version increment to 3.1.0-SNAPSHOT

@@ -71,8 +71,8 @@ GET /_nodes?filter_path=nodes.*.version
 |---------|-----|-------------|
 | v3.1.0 | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Upgrade to Lucene 10.2.1 |
 | v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction |
-| v3.1.0 | [neural-search#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies |
-| v3.1.0 | [learning-to-rank-base#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes |
+| v3.1.0 | [neural-search#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies for hybrid query |
+| v3.1.0 | [learning-to-rank-base#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes for RankerQuery |
 | v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Apache Lucene 10 update |
 | v2.18.0 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Update Apache Lucene to 9.12.0 |
 
@@ -83,9 +83,11 @@ GET /_nodes?filter_path=nodes.*.version
 - [Lucene 9.12.0 Changelog](https://lucene.apache.org/core/9_12_0/changes/Changes.html): Official Lucene 9.12.0 release notes
 - [Apache Lucene](https://lucene.apache.org/): Official Apache Lucene project
 - [OpenSearch Documentation](https://docs.opensearch.org/): OpenSearch official documentation
+- [Issue #1334](https://github.com/opensearch-project/neural-search/issues/1334): Neural-search build failure due to Lucene API changes
+- [Issue #184](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/184): Learning to Rank build failure due to DisiPriorityQueue being abstract
 
 ## Change History
 
-- **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager)
+- **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager). Plugin updates: neural-search hybrid query refactoring, learning-to-rank RankerQuery fix.
 - **v3.0.0**: Upgrade to Apache Lucene 10
 - **v2.18.0**: Upgrade to Apache Lucene 9.12.0 with new Lucene912PostingsFormat, JDK 23 Panama Vectorization support, dynamic range facets, and various performance optimizations
