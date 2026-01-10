@@ -35,6 +35,7 @@
 - [Cluster Manager Task Throttling](opensearch/cluster-manager-throttling.md)
 - [Cluster State Management](opensearch/cluster-state-management.md)
 - [Dependency Management](opensearch/dependency-management.md)
+- [Derived Source](opensearch/derived-source.md)
 - [Docker Compose v2 Support](opensearch/docker-compose-v2-support.md)
 - [Dynamic Threadpool Resize](opensearch/dynamic-threadpool-resize.md)
 - [Locale Provider](opensearch/locale-provider.md)
