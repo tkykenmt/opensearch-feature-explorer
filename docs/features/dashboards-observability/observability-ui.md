@@ -98,6 +98,12 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#2177](https://github.com/opensearch-project/dashboards-observability/pull/2177) | Services data picker fix, metrics refresh button, overview page title, URL redirection |
+| v2.18.0 | [#2171](https://github.com/opensearch-project/dashboards-observability/pull/2171) | Header control styling, integrations UI updates, Cypress testing updates |
+| v2.18.0 | [#2178](https://github.com/opensearch-project/dashboards-observability/pull/2178) | Custom traces table with filters (All Spans, Traces, Service Entry, Trace Root) |
+| v2.18.0 | [#2186](https://github.com/opensearch-project/dashboards-observability/pull/2186) | Overview page typography and navigation-aware title |
+| v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | Getting Started rework - Logs/Metrics/Traces structure |
+| v2.18.0 | [#2196](https://github.com/opensearch-project/dashboards-observability/pull/2196) | CI workflow build cache optimization |
 | v2.18.0 | [#2146](https://github.com/opensearch-project/dashboards-observability/pull/2146) | Fix getting started cards re-direction to integrations |
 | v2.18.0 | [#2201](https://github.com/opensearch-project/dashboards-observability/pull/2201) | Update traces span redirection to Discover |
 | v2.18.0 | [#2209](https://github.com/opensearch-project/dashboards-observability/pull/2209) | Update getting started cards content and visual design |
@@ -119,5 +125,5 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 
 ## Change History
 
-- **v2.18.0** (2024-10-22): Multiple bug fixes including navigation fixes, overview page rework, getting started cards redesign, x-axis label rotation, and trace-to-logs redirection improvements
+- **v2.18.0** (2024-10-22): Services data picker fix, header control styling updates, custom traces table with filtering (All Spans, Traces, Service Entry, Trace Root), overview page typography, Getting Started workflow restructure (Logs/Metrics/Traces), CI build cache optimization, navigation fixes, x-axis label rotation, and trace-to-logs redirection improvements
 - **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns
