@@ -175,6 +175,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Asynchronous Search Bugfix](features/asynchronous-search/asynchronous-search-bugfix.md) | bugfix | Gradle 8.14.3 upgrade, JDK 24 CI support, Maven snapshot endpoint migration |
 
+### Anomaly Detection
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md) | bugfix | Concurrency fixes for HCAD, forecasting interval calculation, Dashboards UI improvements |
+
 ### Cross-Cluster Replication
 
 | Item | Category | Description |

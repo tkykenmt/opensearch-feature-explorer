@@ -231,6 +231,15 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#1508](https://github.com/opensearch-project/anomaly-detection/pull/1508) | Fixing concurrency bug on writer |
+| v3.2.0 | [#1528](https://github.com/opensearch-project/anomaly-detection/pull/1528) | Fix: advance past current interval & anchor on now |
+| v3.2.0 | [#1535](https://github.com/opensearch-project/anomaly-detection/pull/1535) | Changing search calls on interval calculation |
+| v3.2.0 | [#1537](https://github.com/opensearch-project/anomaly-detection/pull/1537) | Bumping gradle and nebula versions |
+| v3.2.0 | [#1054](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1054) | Allow stopping forecaster from FORECAST_FAILURE state |
+| v3.2.0 | [#1058](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1058) | Improve indicator helper, fix zero-value plotting |
+| v3.2.0 | [#1060](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1060) | Wrap data filter in detector creation |
+| v3.2.0 | [#1064](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1064) | Fix ribbon encoding issue in contextual launch |
+| v3.2.0 | [#1068](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1068) | Fix: fetch full forecaster list, and fix delete bug |
 | v3.0.0 | [#1460](https://github.com/opensearch-project/anomaly-detection/pull/1460) | AWS SAM template for WAF log analysis |
 | v3.0.0 | [#1446](https://github.com/opensearch-project/anomaly-detection/pull/1446) | Distinguish local cluster when name matches remote |
 | v3.0.0 | [#1424](https://github.com/opensearch-project/anomaly-detection/pull/1424) | Fix breaking changes for 3.0.0 release |
@@ -258,6 +267,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Change History
 
+- **v3.2.0** (2025-08-05): Concurrency bug fixes for HCAD multi-node clusters (ConcurrentModificationException, NullPointerException), forecasting interval calculation fixes, Dashboards UI improvements (data filter wrapping, zero-value plotting, forecaster list fetch, delete bug fix), build infrastructure updates (Gradle 8.14, Nebula 12.2.1)
 - **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
 - **v2.18.0** (2024-11-05): Added suppression rule validation in AnomalyDetector constructor for immediate feedback on configuration errors, fixed default rules bug when empty ruleset provided, upgraded RCF to v4.2.0, Dashboards bugfixes for custom result index rendering, historical analysis route path, custom result index field reset, and preview support for suppression rules and imputation options
 - **v2.17.0** (2024-09-17): Fixed inference logic with new `lastSeenExecutionEndTime` tracking, standardized config index mapping (`defaultFill` → `default_fill`), improved null checks for imputation options, bugfixes for real-time/historical task flag management, null aggregation handling, Dashboards data source integration
