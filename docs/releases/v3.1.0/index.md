@@ -84,3 +84,7 @@
 ### Dashboards Search Relevance
 
 - [Search Relevance Dashboards Fixes](features/dashboards-search-relevance/search-relevance-dashboards-fixes.md) - Fix schema validation in POST Query Sets endpoint
+
+### Flow Framework
+
+- [Flow Framework Dependencies](features/flow-framework/flow-framework-dependencies.md) - Conditional DynamoDB client dependency and data summary with log pattern agent template
