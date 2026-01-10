@@ -91,6 +91,7 @@
 - [Search Scoring](opensearch/search-scoring.md)
 - [Search Shard Routing](opensearch/search-shard-routing.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
+- [Segment Replication](opensearch/segment-replication.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Settings Management](opensearch/settings-management.md)
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
