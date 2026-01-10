@@ -86,6 +86,7 @@
 - [Numeric Terms Aggregation Optimization](opensearch/numeric-terms-aggregation-optimization.md)
 - [Numeric Field Skip List](opensearch/numeric-field-skip-list.md)
 - [Offline Nodes (Background Tasks)](opensearch/offline-nodes.md)
+- [OOM Prevention](opensearch/oom-prevention.md)
 - [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
 - [Parallel Shard Refresh](opensearch/parallel-shard-refresh.md)
 - [Parent-Child Query](opensearch/parent-child-query.md)
