@@ -27,3 +27,4 @@
 - [Unified Highlighter](features/opensearch/unified-highlighter.md) - Add matched_fields support for blending matches from multiple fields
 - [System Ingest Pipeline](features/opensearch/system-ingest-pipeline.md) - Automatic pipeline generation for plugin developers with bulk update support
 - [Query Coordinator Context](features/opensearch/query-coordinator-context.md) - Search request access and validate API integration for index-aware query rewriting
+- [Security Manager Replacement](features/opensearch/security-manager-replacement.md) - Enhanced Java Agent to intercept newByteChannel from FileSystemProvider

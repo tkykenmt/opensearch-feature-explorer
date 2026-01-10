@@ -133,6 +133,7 @@ jobs:
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.1.0 | [#17989](https://github.com/opensearch-project/OpenSearch/pull/17989) | OpenSearch | Enhance Java Agent to intercept newByteChannel from FileSystemProvider |
 | v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | OpenSearch | Custom Gradle plugin for Java Agent |
 | v3.0.0 | [#730](https://github.com/opensearch-project/flow-framework/pull/730) | flow-framework | JDK 21 target compatibility |
 | v3.0.0 | [#1108](https://github.com/opensearch-project/flow-framework/pull/1108) | flow-framework | Java Agent Gradle plugin |
@@ -155,4 +156,5 @@ jobs:
 
 ## Change History
 
+- **v3.1.0** (2026-01-14): Enhanced Java Agent to intercept `newByteChannel` from `FileSystemProvider.class`, improved argument type handling for `Set<OpenOption>`, fixed policy variable expansion
 - **v3.0.0** (2025-05-06): JDK 21 minimum requirement, Java Agent Gradle plugin, SecurityManager phase-out across all plugins
