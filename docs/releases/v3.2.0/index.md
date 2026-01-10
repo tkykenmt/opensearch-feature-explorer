@@ -199,6 +199,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Reporting Plugin](features/reporting/reporting-plugin.md) | bugfix | System context for index creation, tenant URL parsing fix |
 
+### Dashboards Assistant
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Dashboards Core Bugfixes](features/dashboards-assistant/dashboards-core-bugfixes.md) | bugfix | Fix unit test failures due to missing Worker in Jest environment |
+
 ### Multi-Repository
 
 | Item | Category | Description |
