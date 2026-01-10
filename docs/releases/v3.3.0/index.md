@@ -96,3 +96,7 @@
 ### Query Insights
 
 - [Query Plugin Dependencies](features/query-insights/query-plugin-dependencies.md)
+
+### CI/CD
+
+- [CI/CD Workflow Updates](features/ci/cd-workflow-updates.md)

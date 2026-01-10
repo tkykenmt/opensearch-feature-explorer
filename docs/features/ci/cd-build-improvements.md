@@ -85,6 +85,8 @@ CI/CD improvements typically involve changes to:
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.3.0 | [#5548](https://github.com/opensearch-project/security/pull/5548) | security | Update delete_backport_branch workflow to include release-chores branches |
+| v3.3.0 | [#4090](https://github.com/opensearch-project/ml-commons/pull/4090) | ml-commons | Update delete_backport_branch workflow to include release-chores branches |
 | v2.18.0 | [#1276](https://github.com/opensearch-project/index-management/pull/1276) | index-management | Update baseline JDK to JDK-21 |
 | v2.18.0 | [#1263](https://github.com/opensearch-project/index-management/pull/1263) | index-management | Move non-active maintainer to emeritus |
 | v2.18.0 | [#1251](https://github.com/opensearch-project/index-management/pull/1251) | index-management | Remove wildcard imports |
@@ -103,4 +105,5 @@ CI/CD improvements typically involve changes to:
 
 ## Change History
 
+- **v3.3.0** (2025-08-25): Update delete_backport_branch workflow to include release-chores branches in security and ml-commons, modernize workflow to use actions/github-script
 - **v2.18.0** (2024-11-05): JDK-21 baseline for index-management, CI workflow fixes for notifications, observability, and query-insights, test security improvements for ml-commons, backport process improvements
