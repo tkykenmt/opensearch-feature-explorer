@@ -57,6 +57,7 @@
 - [Security Permissions](features/security/security-permissions.md) - Add forecast roles and fix missing cluster:monitor and mapping get permissions
 - [Security Testing Framework](features/security/security-testing-framework.md) - Use extendedPlugins in integrationTest framework for sample resource plugin testing
 - [Security JWT Enhancements](features/security/security-jwt-enhancements.md) - Support for extracting backend roles from nested JWT claims
+- [Security CI/CD](features/security/security-ci-cd.md) - Changelog verification workflow and Dependabot PR automation
 
 ### Query Insights
 
