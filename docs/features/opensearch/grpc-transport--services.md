@@ -227,6 +227,8 @@ Documents in gRPC requests must be Base64 encoded:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#18303](https://github.com/opensearch-project/OpenSearch/pull/18303) | Optimize gRPC perf by passing by reference |
+| v3.1.0 | [#18031](https://github.com/opensearch-project/OpenSearch/pull/18031) | Package reorganization to org.opensearch.plugin.transport.grpc |
 | v3.0.0 | [#17796](https://github.com/opensearch-project/OpenSearch/pull/17796) | Enable TLS for Netty4GrpcServerTransport |
 | v3.0.0 | [#17727](https://github.com/opensearch-project/OpenSearch/pull/17727) | Add DocumentService and Bulk gRPC endpoint v1 |
 | v3.0.0 | [#17830](https://github.com/opensearch-project/OpenSearch/pull/17830) | SearchService and Search gRPC endpoint v1 |
@@ -243,4 +245,5 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
+- **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
 - **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
