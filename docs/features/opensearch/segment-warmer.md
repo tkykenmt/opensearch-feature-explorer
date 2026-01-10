@@ -2,7 +2,7 @@
 
 ## Summary
 
-Segment Warmer is an optimization feature for segment replication that pre-copies merged segments to replica shards before the primary shard's refresh completes. By leveraging Lucene's `IndexWriter.IndexReaderWarmer` interface, this feature significantly reduces the visibility delay between primary and replica shards, improving data consistency and search freshness in segment replication deployments.
+Segment Warmer is an optimization feature for segment replication that pre-copies merged segments to replica shards before the primary shard's refresh completes. By leveraging Lucene's `IndexWriter.IndexReaderWarmer` interface, this feature significantly reduces the visibility delay between primary and replica shards, improving data consistency and search freshness in segment replication deployments. The feature supports both local segment replication (node-to-node transfer) and remote-store-enabled clusters (via remote storage).
 
 ## Details
 
@@ -14,27 +14,29 @@ graph TB
         IW[IndexWriter]
         SM[SegmentMerger]
         MSW[MergedSegmentWarmer]
+        UP[RemoteStoreUploader]
     end
     
     subgraph "MergedSegmentWarmerFactory"
         MF[Factory]
-        LSW[LocalMergedSegmentWarmer]
-        RSW[RemoteStoreMergedSegmentWarmer]
+    end
+    
+    subgraph "Remote Store"
+        RS[(Remote Segment Store)]
     end
     
     subgraph "Replication Targets"
         R1[Replica Shard 1]
         R2[Replica Shard N]
-        RS[Remote Store]
     end
     
     SM -->|merge complete| IW
     IW -->|warm callback| MSW
-    MF -->|local segrep| LSW
-    MF -->|remote store| RSW
-    LSW -->|node-to-node| R1
-    LSW -->|node-to-node| R2
-    RSW -->|upload| RS
+    MF -->|creates| MSW
+    MSW -->|local segrep| R1
+    MSW -->|local segrep| R2
+    MSW -->|remote store| UP
+    UP -->|upload| RS
     RS -.->|fetch| R1
     RS -.->|fetch| R2
 ```
@@ -64,8 +66,10 @@ flowchart TB
 |-----------|-------------|
 | `MergedSegmentWarmerFactory` | Factory that creates appropriate `IndexReaderWarmer` implementations based on index replication settings |
 | `MergedSegmentWarmer` | Unified implementation handling both local and remote segment warming |
-| `LocalMergedSegmentWarmer` | Handles node-to-node segment transfer for local segment replication |
-| `RemoteStoreMergedSegmentWarmer` | Handles segment upload to remote store for remote-backed indexes |
+| `RemoteStorePublishMergedSegmentAction` | Replication action for uploading merged segments to remote store and publishing checkpoints |
+| `RemoteStoreMergedSegmentCheckpoint` | Checkpoint containing local-to-remote filename mappings for merged segments |
+| `PublishMergedSegmentAction` | Replication action for local segment replication pre-copy |
+| `MergedSegmentCheckpoint` | Checkpoint representing merged segment information |
 
 ### Configuration
 
@@ -73,6 +77,7 @@ flowchart TB
 |---------|-------------|---------|
 | `opensearch.experimental.feature.merged_segment_warmer.enabled` | Feature flag to enable merged segment warmer | `false` |
 | `index.replication.type` | Must be set to `SEGMENT` for segment warmer to activate | `DOCUMENT` |
+| `max_remote_low_priority_download_bytes_per_sec` | Rate limit for low-priority downloads (merged segments) | `0` (unlimited) |
 
 ### Usage Example
 
@@ -116,19 +121,25 @@ PUT /my-index
 - Experimental feature requiring explicit feature flag enablement
 - Increases network utilization during merge operations
 - Not applicable to document replication indexes
+- Failures during warming are logged but do not block merge operations
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18683](https://github.com/opensearch-project/OpenSearch/pull/18683) | Remote store support for merged segment warming |
+| v3.0.0 | [#18255](https://github.com/opensearch-project/OpenSearch/pull/18255) | Local merged segment warmer implementation |
 | v3.0.0 | [#17881](https://github.com/opensearch-project/OpenSearch/pull/17881) | Initial implementation - MergedSegmentWarmerFactory infrastructure |
 
 ## References
 
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment into Segment Replication
+- [Issue #18625](https://github.com/opensearch-project/OpenSearch/issues/18625): META - Merged segment pre-copy tracking issue
 - [Issue #1694](https://github.com/opensearch-project/OpenSearch/issues/1694): Original Segment Replication feature request
 - [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official docs
+- [Remote-backed Storage Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs
 
 ## Change History
 
+- **v3.2.0** (2025-08-05): Added remote store support - merged segments are uploaded to remote store and replicated to replicas via `RemoteStorePublishMergedSegmentAction`
 - **v3.0.0** (2025-05-06): Initial implementation - introduced `MergedSegmentWarmerFactory` with `LocalMergedSegmentWarmer` and `RemoteStoreMergedSegmentWarmer` infrastructure
