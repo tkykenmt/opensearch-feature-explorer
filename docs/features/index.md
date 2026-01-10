@@ -103,6 +103,7 @@
 
 - [Async Query](opensearch-dashboards/async-query.md)
 - [CI/CD & Build Fixes](opensearch-dashboards/ci-cd-build-fixes.md)
+- [Chart & Visualization Fixes](opensearch-dashboards/chart-visualization-fixes.md)
 - [Content Management](opensearch-dashboards/content-management.md)
 - [Cross-Cluster Search](opensearch-dashboards/cross-cluster-search.md)
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
