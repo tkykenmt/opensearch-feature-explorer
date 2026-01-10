@@ -248,6 +248,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Common Utils Bugfixes](features/common-utils/common-utils-bugfixes.md) | bugfix | CVE-2025-48734 fix, PublishFindingsRequest revert, Gradle 8.14/JDK 24 upgrade |
 
+### Security
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Star Tree Security Integration](features/security/star-tree-security-integration.md) | enhancement | Disable star-tree optimization for users with DLS/FLS/Field Masking restrictions |
+
 ### Common (Security)
 
 | Item | Category | Description |

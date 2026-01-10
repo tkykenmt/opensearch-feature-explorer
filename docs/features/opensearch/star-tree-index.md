@@ -82,6 +82,19 @@ flowchart TB
 | `max_leaf_docs` | Maximum documents per leaf node | `10000` |
 | `skip_star_node_creation_for_dimensions` | Dimensions to skip star node creation | `[]` |
 
+### Security Integration
+
+Star-tree query optimization is automatically disabled when security restrictions are applied (v3.2.0+):
+
+| Security Feature | Star-Tree Behavior |
+|------------------|-------------------|
+| Document-Level Security (DLS) | Disabled - falls back to standard aggregation |
+| Field-Level Security (FLS) | Disabled - falls back to standard aggregation |
+| Field Masking | Disabled - falls back to standard aggregation |
+| No restrictions | Enabled - uses precomputed aggregations |
+
+This ensures that precomputed aggregations don't bypass security filters. Users with DLS/FLS/Field Masking will experience standard aggregation performance rather than star-tree acceleration.
+
 ### Monitoring
 
 Star-tree search statistics are available (v3.2.0+) through the stats APIs:
@@ -188,6 +201,7 @@ POST /logs/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [security#5492](https://github.com/opensearch-project/security/pull/5492) | Restrict star-tree for users with DLS/FLS/Field Masking |
 | v3.2.0 | [#18707](https://github.com/opensearch-project/OpenSearch/pull/18707) | Add star-tree search statistics |
 | v3.2.0 | [#18671](https://github.com/opensearch-project/OpenSearch/pull/18671) | Add IP field search support |
 | v3.1.0 | [#18070](https://github.com/opensearch-project/OpenSearch/pull/18070) | Remove feature flag, add index-level star-tree search setting |
@@ -215,7 +229,7 @@ POST /logs/_search
 
 ## Change History
 
-- **v3.2.0** (2025-09-16): Added IP field search support, star-tree search statistics (query count, time, current)
+- **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
 - **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
 - **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
 - **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
