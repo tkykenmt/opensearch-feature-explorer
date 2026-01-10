@@ -323,6 +323,7 @@
 - [ML Commons Memory Metadata](ml-commons/ml-commons-memory-metadata.md)
 - [ML Commons Model & Inference](ml-commons/ml-commons-model-inference.md)
 - [ML Commons Model Deployment](ml-commons/ml-commons-model-deployment.md)
+- [ML Commons Sparse Encoding](ml-commons/ml-commons-sparse-encoding.md)
 - [ML Commons Stability and Reliability](ml-commons/ml-commons-stability.md)
 - [ML Commons Test Fixes](ml-commons/ml-commons-test-fixes.md)
 - [ML Config API](ml-commons/ml-config-api.md)
