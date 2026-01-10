@@ -10,6 +10,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [GRPC Transport](features/opensearch/grpc-transport.md) | feature | GA release - module migration, plugin extensibility, proper gRPC status codes |
 | [Derived Source Integration](features/opensearch/derived-source.md) | feature | Integration of derived source feature across get/search/recovery paths |
 | [IndexFieldDataService Async Close](features/opensearch/indexfielddataservice-async-close.md) | bugfix | Async field data cache clearing to prevent cluster applier thread blocking |
 | [Staggered Merge Optimization](features/opensearch/staggered-merge-optimization.md) | bugfix | Replace CPU load average with AverageTracker classes, adjust default thresholds |
