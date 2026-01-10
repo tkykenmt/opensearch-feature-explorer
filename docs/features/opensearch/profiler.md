@@ -2,7 +2,7 @@
 
 ## Summary
 
-The Query Profiler (Profile API) provides detailed timing information about the execution of individual components of a search request. It helps debug slow queries and understand how to improve search performance by breaking down query execution into measurable components.
+The Query Profiler (Profile API) provides detailed timing information about the execution of individual components of a search request. It helps debug slow queries and understand how to improve search performance by breaking down query execution into measurable components. Starting in v3.2.0, plugins can contribute custom profiling metrics and fetch phase profiling works across multi-shard queries.
 
 ## Details
 
@@ -25,7 +25,18 @@ graph TB
     subgraph "Profiling Layer"
         QPB[QueryProfileBreakdown]
         CQPB[ConcurrentQueryProfileBreakdown]
+        PP[Plugin Profilers]
         PT[Profile Timers]
+    end
+    
+    subgraph "Fetch Phase"
+        FP[Fetch Profiler]
+        FSR[FetchSearchResult]
+    end
+    
+    subgraph "Coordinator"
+        SPC[SearchPhaseController]
+        MFP[mergeFetchProfiles]
     end
     
     subgraph "Output"
@@ -33,6 +44,7 @@ graph TB
         BD[Breakdown Map]
         CT[Collector Times]
         AT[Aggregation Times]
+        FT[Fetch Times]
     end
     
     SR --> QE
@@ -43,13 +55,21 @@ graph TB
     
     QE --> QPB
     QE --> CQPB
+    PP --> QPB
     QPB --> PT
     CQPB --> PT
     
+    SR --> FP
+    FP --> FSR
+    FSR --> SPC
+    SPC --> MFP
+    
     PT --> PR
+    MFP --> PR
     PR --> BD
     PR --> CT
     PR --> AT
+    PR --> FT
 ```
 
 ### Data Flow
@@ -94,6 +114,8 @@ flowchart LR
 | `ConcurrentQueryProfileBreakdown` | Tracks timing for concurrent segment search with slice-level statistics |
 | `ProfileTimer` | Low-level timer for measuring individual operations |
 | `ProfileCollector` | Wraps collectors to measure collection time |
+| `SearchPlugin.ProfileMetricsProvider` | Interface for plugins to provide custom profile metrics (v3.2.0+) |
+| `SearchPhaseController.mergeFetchProfiles()` | Merges fetch phase profiles with query phase profiles (v3.2.0+) |
 
 ### Configuration
 
@@ -159,20 +181,24 @@ When concurrent segment search is enabled, the profiler provides additional slic
 
 - Profiling adds overhead to search operations
 - Does not measure network latency
-- Does not measure fetch phase time
 - Does not measure queue wait time
+- Plugin metrics are only included in the query breakdown, not as separate sections (v3.2.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18656](https://github.com/opensearch-project/OpenSearch/pull/18656) | Extend profile capabilities to plugins |
+| v3.2.0 | [#18887](https://github.com/opensearch-project/OpenSearch/pull/18887) | Expand fetch phase profiling to multi-shard queries |
 | v3.2.0 | [#18540](https://github.com/opensearch-project/OpenSearch/pull/18540) | Fix concurrent timings in profiler |
 
 ## References
 
 - [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
 - [Concurrent Segment Search](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Related feature
+- [Issue #18460](https://github.com/opensearch-project/OpenSearch/issues/18460): RFC for Profiling Extensibility
 
 ## Change History
 
+- **v3.2.0** (2025-08-05): Added plugin profiling extensibility and multi-shard fetch phase profiling
 - **v3.2.0** (2025-06-21): Fixed incorrect timing values for concurrent segment search when timers have zero invocations
