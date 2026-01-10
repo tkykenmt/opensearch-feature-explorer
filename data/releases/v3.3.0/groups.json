@@ -3665,7 +3665,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1405
     },
     {
       "name": "Aggregation Optimizations",
@@ -3691,7 +3692,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1406
     },
     {
       "name": "Search Settings",
@@ -3705,7 +3707,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1407
     },
     {
       "name": "Circuit Breaker",
@@ -3719,7 +3722,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1408
     },
     {
       "name": "Java 17 Modernization",
@@ -3739,7 +3743,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1409
     },
     {
       "name": "Client API Enhancements",
@@ -3759,7 +3764,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1410
     },
     {
       "name": "Scroll API",
@@ -3773,7 +3779,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1411
     },
     {
       "name": "Painless Scripting",
@@ -3787,7 +3794,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1412
     },
     {
       "name": "Field Data Cache",
@@ -3807,7 +3815,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1413
     },
     {
       "name": "Docker Image Updates",
@@ -3821,7 +3830,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1414
     },
     {
       "name": "Field Collapsing",
@@ -3850,7 +3860,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1415
     },
     {
       "name": "Engine API",
@@ -3864,7 +3875,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1416
     },
     {
       "name": "Test Infrastructure",
@@ -3891,7 +3903,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1417
     },
     {
       "name": "Plugin Installation",
@@ -3905,7 +3918,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1418
     },
     {
       "name": "Lucene Migration",
@@ -3919,7 +3933,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1419
     },
     {
       "name": "Index Output",
@@ -3933,7 +3948,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1420
     },
     {
       "name": "Query Rewriting",
@@ -3962,7 +3978,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1421
     },
     {
       "name": "Segment Replication",
@@ -3976,7 +3993,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1422
     },
     {
       "name": "OOM Prevention",
@@ -3990,7 +4008,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1423
     },
     {
       "name": "Flaky Test Fixes",
@@ -4016,7 +4035,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1424
     },
     {
       "name": "Tiered Caching",
