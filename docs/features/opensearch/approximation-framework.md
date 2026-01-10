@@ -80,11 +80,13 @@ flowchart TB
 
 ### Supported Query Types
 
-| Query Type | Example | Optimization |
-|------------|---------|--------------|
-| Range Query | `{"range": {"@timestamp": {"gte": "now-1d"}}}` | Early termination on BKD traversal |
-| Match All + Sort | `{"match_all": {}, "sort": [{"@timestamp": "desc"}]}` | Rewritten to bounded range with early termination |
-| Range + Sort | `{"range": {...}, "sort": [...]}` | Optimized left/right traversal based on sort order |
+| Query Type | Example | Optimization | Since |
+|------------|---------|--------------|-------|
+| Range Query | `{"range": {"@timestamp": {"gte": "now-1d"}}}` | Early termination on BKD traversal | v3.0.0 |
+| Match All + Sort | `{"match_all": {}, "sort": [{"@timestamp": "desc"}]}` | Rewritten to bounded range with early termination | v3.0.0 |
+| Range + Sort | `{"range": {...}, "sort": [...]}` | Optimized left/right traversal based on sort order | v3.0.0 |
+| Range with `now` | `{"range": {"@timestamp": {"gte": "now-1h"}}}` | Approximation applied to `DateRangeIncludingNowQuery` | v3.2.0 |
+| `search_after` + Sort | `{"sort": [...], "search_after": [...]}` | Dynamic bound adjustment based on `search_after` value | v3.2.0 |
 
 ### Eligibility Criteria
 
@@ -93,6 +95,7 @@ The framework applies when:
 - `track_total_hits` is not set to `true`
 - Sort field matches the range query field (if sorting)
 - No `terminate_after` is specified
+- Only single sort field is used (v3.2.0+)
 
 ### Usage Example
 
@@ -130,6 +133,24 @@ GET metrics/_search
 }
 ```
 
+```json
+// search_after pagination with approximation (v3.2.0+)
+GET logs/_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-7d",
+        "lt": "now"
+      }
+    }
+  },
+  "sort": [{ "@timestamp": "desc" }],
+  "size": 100,
+  "search_after": ["2026-01-10T00:00:00.000Z"]
+}
+```
+
 ## Limitations
 
 - Does not apply when `track_total_hits: true` is set
@@ -137,22 +158,30 @@ GET metrics/_search
 - Sort field must match the range query field for optimal performance
 - Performance gains vary based on data distribution (most effective on skewed datasets)
 - Queries with `terminate_after` are not optimized
+- Multiple sort fields disable approximation (v3.2.0+)
+- `search_after` with multiple tie-breaker values is not optimized (v3.2.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18896](https://github.com/opensearch-project/OpenSearch/pull/18896) | Support `search_after` numeric queries with Approximation Framework |
+| v3.2.0 | [#18511](https://github.com/opensearch-project/OpenSearch/pull/18511) | Added approximation support for range queries with `now` in date field |
+| v3.2.0 | [#18763](https://github.com/opensearch-project/OpenSearch/pull/18763) | Disable approximation framework when dealing with multiple sorts |
 | v3.1.0 | [#18439](https://github.com/opensearch-project/OpenSearch/pull/18439) | BKD traversal optimization for skewed datasets |
 | v3.0.0 | - | Initial GA release of Approximation Framework |
 
 ## References
 
 - [Issue #18341](https://github.com/opensearch-project/OpenSearch/issues/18341): Feature request for DFS traversal strategy
+- [Issue #18546](https://github.com/opensearch-project/OpenSearch/issues/18546): Feature request for `search_after` support
+- [Issue #18503](https://github.com/opensearch-project/OpenSearch/issues/18503): Bug report for `now` range queries skipping approximation
 - [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
 - [META Issue #18619](https://github.com/opensearch-project/OpenSearch/issues/18619): Future enhancements tracking
 - [Nightly Benchmarks](https://benchmarks.opensearch.org/): Performance metrics dashboard
 
 ## Change History
 
+- **v3.2.0**: Added `search_after` support for numeric queries, approximation for range queries with `now`, automatic disabling for multiple sort fields
 - **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
 - **v3.0.0**: Initial GA release with basic early termination support
