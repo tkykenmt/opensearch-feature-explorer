@@ -109,6 +109,7 @@ GET /_nodes/stats/caches/request_cache?level=tier
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19000](https://github.com/opensearch-project/OpenSearch/pull/19000) | Handle query execution exception |
 | v3.0.0 | [#17513](https://github.com/opensearch-project/OpenSearch/pull/17513) | Single cache manager for all ehcache disk caches |
 | v3.0.0 | [#17190](https://github.com/opensearch-project/OpenSearch/pull/17190) | Took-time threshold guards heap tier as well as disk tier |
 | v2.19.0 | - | Disk cache partitioning for improved concurrency |
@@ -127,6 +128,7 @@ GET /_nodes/stats/caches/request_cache?level=tier
 
 ## Change History
 
+- **v3.3.0** (2025-11-18): Fixed query execution exception handling; ensures proper cleanup of concurrent request tracking map when exceptions occur
 - **v3.0.0** (2025-05-06): Single cache manager for disk caches reduces CPU overhead; took-time policy extended to guard heap tier
 - **v2.19.0** (2025-02-11): Disk cache partitioning with read/write locks for improved concurrency
 - **v2.18.0** (2024-11-05): Segmented cache architecture with configurable segments; query recomputation moved outside write lock; new settings for segment count and per-tier sizes
