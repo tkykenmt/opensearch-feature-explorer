@@ -2,6 +2,7 @@
 
 ## neural-search
 
+- [Agentic Search](neural-search/agentic-search.md)
 - [Batch Ingestion](neural-search/batch-ingestion.md)
 - [Hybrid Query](neural-search/hybrid-query.md)
 - [Neural Search Bug Fixes](neural-search/neural-search-bug-fixes.md)
