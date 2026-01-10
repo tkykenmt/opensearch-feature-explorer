@@ -163,3 +163,4 @@
 ### Custom Codecs
 
 - [Build/Test Infrastructure](features/custom-codecs/test-infrastructure.md) - Fix BWC test dependency version and add java-agent plugin
+- [QAT-Accelerated Zstandard Compression](features/custom-codecs/qat-accelerated-zstandard-compression.md) - New `qat_zstd` codec for hardware-accelerated ZSTD compression using Intel QAT

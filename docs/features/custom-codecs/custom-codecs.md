@@ -21,6 +21,7 @@ graph TB
         ZstdNoDictCodec[ZSTD No Dict Codec]
         QatLz4[QAT LZ4 Codec]
         QatDeflate[QAT DEFLATE Codec]
+        QatZstd[QAT ZSTD Codec]
     end
     
     subgraph "Compression Libraries"
@@ -38,11 +39,13 @@ graph TB
     CodecService --> ZstdNoDictCodec
     CodecService --> QatLz4
     CodecService --> QatDeflate
+    CodecService --> QatZstd
     
     ZstdCodec --> ZstdJni
     ZstdNoDictCodec --> ZstdJni
     QatLz4 --> QatJava
     QatDeflate --> QatJava
+    QatZstd --> QatJava
     QatJava --> IntelQAT
 ```
 
@@ -74,6 +77,7 @@ flowchart TB
 | `Lucene101QatCodec` | Base codec for QAT hardware acceleration (Lucene 10.1.0) |
 | `QatLz4101Codec` | Hardware-accelerated LZ4 compression |
 | `QatDeflate101Codec` | Hardware-accelerated DEFLATE compression |
+| `QatZstd101Codec` | Hardware-accelerated ZSTD compression |
 
 #### Backward Compatibility Components
 
@@ -91,6 +95,7 @@ flowchart TB
 | `zstd_no_dict` | Zstandard | No | No | 2.9.0 |
 | `qat_lz4` | LZ4 | N/A | Yes (Intel QAT) | 2.15.0 |
 | `qat_deflate` | DEFLATE | N/A | Yes (Intel QAT) | 2.15.0 |
+| `qat_zstd` | Zstandard | N/A | Yes (Intel QAT) | 3.1.0 |
 
 ### Configuration
 
@@ -145,6 +150,21 @@ PUT /my-index
 }
 ```
 
+#### QAT ZSTD Codec
+
+```json
+PUT /my-index
+{
+  "settings": {
+    "index": {
+      "codec": "qat_zstd",
+      "codec.compression_level": 3,
+      "codec.qatmode": "auto"
+    }
+  }
+}
+```
+
 ### Performance Comparison
 
 Benchmark results comparing codecs against the default LZ4 codec (using `nyc_taxi` dataset):
@@ -165,7 +185,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 | Library | Version | Purpose |
 |---------|---------|---------|
 | `com.github.luben:zstd-jni` | 1.5.6-1 | ZSTD compression via JNI |
-| `com.intel.qat:qat-java` | 1.1.1 | Intel QAT hardware acceleration |
+| `com.intel.qat:qat-java` | 2.3.2 | Intel QAT hardware acceleration |
 
 ## Limitations
 
@@ -179,6 +199,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |
 | v3.1.0 | [#255](https://github.com/opensearch-project/custom-codecs/pull/255) | Fix version on BWC test dependency |
 | v3.0.0 | [#228](https://github.com/opensearch-project/custom-codecs/pull/228) | Upgrade to Lucene 10.1.0 and introduce new Codec implementation |
 | v3.0.0 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZSTD lib version to 1.5.6-1 |
@@ -196,6 +217,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 ## Change History
 
+- **v3.1.0** (2025-09-16): Added QAT-accelerated ZSTD codec (`qat_zstd`), upgraded qat-java to 2.3.2
 - **v3.1.0** (2025-09-16): Fixed BWC test dependency version and added java-agent plugin to BWC tests
 - **v3.0.0** (2025-05-06): Upgraded to Lucene 10.1.0 with new codec implementations (Lucene101*), bumped zstd-jni to 1.5.6-1, migrated to Java Agent from SecurityManager
 - **v2.15.0** (2024-06-25): Added QAT hardware-accelerated codecs (`qat_lz4`, `qat_deflate`)
