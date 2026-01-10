@@ -128,6 +128,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Security Analytics System Indices](features/security-analytics/security-analytics-system-indices.md) - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix
 
+### Security Analytics Dashboards
+
+- [Security Analytics Data Source](features/security-analytics-dashboards/security-analytics-data-source.md) - Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, and getting started cards visual redesign
+
 ### Security
 
 - [Security Plugin Maintenance](features/security/security-plugin-maintenance.md) - Cache endpoint deprecation warning, securityadmin script undeprecation, ASN1 refactoring for FIPS, CVE-2024-47554 fix, BWC test fixes
