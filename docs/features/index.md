@@ -313,6 +313,7 @@
 
 - [Disk-Based Vector Search](k-nn/disk-based-vector-search.md)
 - [k-NN AVX512 SIMD Support](k-nn/k-nn-avx512-support.md)
+- [k-NN Bug Fixes](k-nn/k-nn-bug-fixes.md)
 - [k-NN Byte Vector Support](k-nn/k-nn-byte-vector-support.md)
 - [k-NN Performance & Engine](k-nn/k-nn-performance-engine.md)
 - [Vector Search (k-NN)](k-nn/vector-search-k-nn.md)
