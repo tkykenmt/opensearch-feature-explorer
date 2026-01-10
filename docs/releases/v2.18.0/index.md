@@ -149,6 +149,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Job Scheduler](features/job-scheduler/job-scheduler.md) - Return LockService from createComponents for Guice injection
 
+### Index Management
+
+- [Index Management Bugfixes](features/index-management/index-management-bugfixes.md) - Snapshot status detection fix, snapshot policy button reload fix, data source initialization fix
+
 ### Observability
 
 - [Observability Bugfixes](features/observability/observability-bugfixes.md) - Multiple bug fixes including navigation fixes, workspace compatibility, MDS support improvements, and UI/UX enhancements
