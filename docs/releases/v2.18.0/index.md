@@ -108,6 +108,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### k-NN
 
+- [k-NN Performance & Engine](features/k-nn/k-nn-performance-engine.md) - Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements
 - [k-NN Documentation](features/k-nn/k-nn-documentation.md) - JavaDoc cleanup for RescoreContext class
 - [k-NN Maintenance](features/k-nn/k-nn-maintenance.md) - Lucene 9.12 codec compatibility, force merge performance optimization, benchmark folder removal, code refactoring
 
