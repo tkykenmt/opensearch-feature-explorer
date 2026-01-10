@@ -231,6 +231,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1546](https://github.com/opensearch-project/anomaly-detection/pull/1546) | Updates search handler to consume resource authz and updates resource authz related tests |
 | v3.2.0 | [#1513](https://github.com/opensearch-project/anomaly-detection/pull/1513) | Support >1 hr intervals |
 | v3.2.0 | [#1533](https://github.com/opensearch-project/anomaly-detection/pull/1533) | Centralized resource access control for detectors and forecasters |
 | v3.2.0 | [#1508](https://github.com/opensearch-project/anomaly-detection/pull/1508) | Fixing concurrency bug on writer |
@@ -267,8 +268,11 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 - [Real-time Anomaly Detection Blog](https://opensearch.org/blog/real-time-anomaly-detection-in-open-distro-for-elasticsearch/): Introduction to anomaly detection
 - [One Million Entities Blog](https://opensearch.org/blog/one-million-enitities-in-one-minute/): High-cardinality performance improvements
 
+- [Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Resource sharing access control model
+
 ## Change History
 
+- **v3.3.0** (2026-01-14): **Resource authorization integration** - Search handler updated to consume `PluginClient` for DLS-style filtering of protected resources, enabling fine-grained resource sharing with the Security plugin's new access control framework
 - **v3.2.0** (2025-08-05): **Long interval support** (>1 hour detection intervals for daily/weekly monitoring), **centralized resource access control** integration with security plugin auto-evaluation, concurrency bug fixes for HCAD multi-node clusters, forecasting interval calculation fixes, Dashboards UI improvements, build infrastructure updates (Gradle 8.14, Nebula 12.2.1)
 - **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
 - **v2.18.0** (2024-11-05): Added suppression rule validation in AnomalyDetector constructor for immediate feedback on configuration errors, fixed default rules bug when empty ruleset provided, upgraded RCF to v4.2.0, Dashboards bugfixes for custom result index rendering, historical analysis route path, custom result index field reset, and preview support for suppression rules and imputation options
