@@ -14,6 +14,7 @@
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md)
 - [Reindex API](features/opensearch/reindex-api.md)
 - [Request Cache](features/opensearch/request-cache.md)
+- [S3 Repository Compatibility Fix](features/opensearch/s3-repository.md)
 - [Scaled Float Field Precision Fix](features/opensearch/scaled-float-field.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)

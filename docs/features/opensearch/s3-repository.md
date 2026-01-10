@@ -208,6 +208,7 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19220](https://github.com/opensearch-project/OpenSearch/pull/19220) | Fix S3-compatible repository checksum trailing headers issue |
 | v3.1.0 | [#18312](https://github.com/opensearch-project/OpenSearch/pull/18312) | Add support for SSE-KMS and S3 bucket owner verification |
 | v2.18.0 | [#15621](https://github.com/opensearch-project/OpenSearch/pull/15621) | Add support for async deletion in S3BlobContainer |
 | v2.18.0 | [#15978](https://github.com/opensearch-project/OpenSearch/pull/15978) | Change default retry mechanism to Standard Mode |
@@ -215,6 +216,9 @@ graph TB
 
 ## References
 
+- [PR #19220](https://github.com/opensearch-project/OpenSearch/pull/19220): S3-compatible repository checksum fix
+- [Issue #18240](https://github.com/opensearch-project/OpenSearch/issues/18240): S3 compatible storage broken in 3.0.0
+- [Issue #19124](https://github.com/opensearch-project/OpenSearch/issues/19124): repository-s3 x-amz-trailer error
 - [PR #18312](https://github.com/opensearch-project/OpenSearch/pull/18312): SSE-KMS and bucket owner verification
 - [Issue #14606](https://github.com/opensearch-project/OpenSearch/issues/14606): Feature request for SSE-KMS support
 - [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Async deletion implementation
@@ -226,5 +230,6 @@ graph TB
 
 ## Change History
 
+- **v3.3.0** (2025-09): Fixed S3-compatible repository compatibility by making checksum trailing headers conditional
 - **v3.1.0** (2025-07): Added SSE-KMS support, bucket owner verification, removed legacy server_side_encryption setting
 - **v2.18.0** (2024-10-22): Added async deletion support, changed default retry mechanism to Standard Mode, fixed SLF4J warnings
