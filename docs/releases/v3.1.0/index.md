@@ -111,6 +111,7 @@
 ### Search Relevance
 
 - [Search Relevance Test Data](features/search-relevance/search-relevance-test-data.md) - Add realistic ESCI-based test dataset with 150 queries and matching judgments
+- [Search Relevance Bug Fixes](features/search-relevance/search-relevance-bug-fixes.md) - Data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
 
 ### SQL
 
