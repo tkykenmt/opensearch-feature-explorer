@@ -167,6 +167,7 @@ Job Scheduler supports two schedule formats:
 | v3.0.0 | [#702](https://github.com/opensearch-project/job-scheduler/pull/702) | Enable custom start commands and options to resolve GHA issues |
 | v3.0.0 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring |
 | v3.0.0 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |
+| v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection |
 | v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates |
 
 ## References
@@ -177,8 +178,10 @@ Job Scheduler supports two schedule formats:
 - [Issue #698](https://github.com/opensearch-project/job-scheduler/issues/698): GitHub Action Deprecation
 - [Issue #715](https://github.com/opensearch-project/job-scheduler/issues/715): Release 3.0 Breaking Changes
 - [Issue #14984](https://github.com/opensearch-project/OpenSearch/issues/14984): CreateIndexRequest.mapping() bug with v1 templates
+- [Issue #4439](https://github.com/opensearch-project/security/issues/4439): RFC - Strengthen System Index Protection in the Plugin Ecosystem
 
 ## Change History
 
 - **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads
+- **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
 - **v2.17.0** (2024-09-17): Fixed system index compatibility with v1 templates in LockService and JobDetailsService
