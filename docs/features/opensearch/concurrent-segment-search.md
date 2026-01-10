@@ -1,0 +1,133 @@
+# Concurrent Segment Search
+
+## Summary
+
+Concurrent segment search is a performance optimization feature that enables parallel searching of Lucene segments during the query phase. Instead of searching segments sequentially, OpenSearch divides segments into slices and processes them concurrently using multiple threads, significantly improving search latency for resource-intensive queries.
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Search Request Flow"
+        A[Search Request] --> B[Coordinating Node]
+        B --> C[Shard-Level Requests]
+    end
+    
+    subgraph "Shard Processing"
+        C --> D[Segment Slicing]
+        D --> E1[Slice 1]
+        D --> E2[Slice 2]
+        D --> E3[Slice N]
+        E1 --> F[index_searcher Thread Pool]
+        E2 --> F
+        E3 --> F
+        F --> G[Parallel Execution]
+        G --> H[Reduce/Merge Results]
+    end
+    
+    H --> I[Shard Response]
+    I --> B
+    B --> J[Final Response]
+```
+
+### Data Flow
+
+```mermaid
+flowchart TB
+    A[Segments] --> B[Sort by Doc Count]
+    B --> C[Priority Queue Grouping]
+    C --> D[Balanced Slices]
+    D --> E[Parallel Search]
+    E --> F[Merge Results]
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| `MaxTargetSliceSupplier` | Computes balanced leaf slices using priority queue-based grouping algorithm |
+| `Group` | Tracks group index and document sum for priority queue ordering |
+| `index_searcher` thread pool | Dedicated thread pool for executing slice searches |
+| `ConcurrentSearchRequestDecider` | Pluggable decider for determining when to use concurrent search |
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `search.concurrent_segment_search.mode` | Controls concurrent search behavior: `auto`, `all`, or `none` | `auto` |
+| `search.concurrent_segment_search.enabled` | Legacy setting to enable/disable concurrent search | `false` |
+| `search.concurrent.max_slice_count` | Maximum number of slices per shard (0 = Lucene mechanism) | Calculated at startup |
+
+### Slicing Mechanisms
+
+#### Max Slice Count Mechanism (Default)
+
+Uses a dynamically configurable maximum number of slices and distributes segments using a priority queue-based algorithm that balances document counts across slices.
+
+Default calculation: `Math.max(1, Math.min(Runtime.getRuntime().availableProcessors() / 2, 4))`
+
+#### Lucene Mechanism
+
+Alternative mechanism that assigns a maximum of 250K documents or 5 segments (whichever is met first) to each slice.
+
+### Usage Example
+
+Enable concurrent segment search for all indexes:
+
+```json
+PUT _cluster/settings
+{
+   "persistent": {
+      "search.concurrent_segment_search.mode": "all"
+   }
+}
+```
+
+Enable for a specific index:
+
+```json
+PUT <index-name>/_settings
+{
+    "index.search.concurrent_segment_search.mode": "all"
+}
+```
+
+Configure slice count:
+
+```json
+PUT _cluster/settings
+{
+   "persistent": {
+      "search.concurrent.max_slice_count": 4
+   }
+}
+```
+
+## Limitations
+
+- Not supported with `terminate_after` search parameter
+- Parent aggregations on join fields not supported
+- `sampler` and `diversified_sampler` aggregations not supported
+- Terms aggregations may have additional document count error due to slice-level `shard_size` application
+- Sorting optimization may have varying performance depending on data layout
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#18451](https://github.com/opensearch-project/OpenSearch/pull/18451) | Optimize grouping for segment concurrent search |
+
+## References
+
+- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+- [Issue #7358](https://github.com/opensearch-project/OpenSearch/issues/7358): Original issue discussing slice computation mechanisms
+- [Introducing concurrent segment search in OpenSearch](https://opensearch.org/blog/concurrent_segment_search/): Introduction blog post
+- [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
+
+## Change History
+
+- **v3.2.0** (2025-07-31): Optimized segment grouping algorithm using priority queue for better load balancing
+- **v3.0.0**: Concurrent segment search enabled by default in `auto` mode
+- **v2.12.0**: Initial experimental release of concurrent segment search
