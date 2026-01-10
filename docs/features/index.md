@@ -144,6 +144,7 @@
 - [Security Permissions](security/security-permissions.md)
 - [Security Plugin](security/security-plugin.md)
 - [Security Plugin Dependencies](security/security-plugin-dependencies.md)
+- [Security Role Mapping](security/security-role-mapping.md)
 
 ## security-dashboards
 
