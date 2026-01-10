@@ -12,6 +12,7 @@
 - [Cluster State Caching](features/opensearch/cluster-state-caching.md)
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md)
 - [Cross-Cluster Settings](features/opensearch/cross-cluster-settings.md)
+- [Date Format](features/opensearch/date-format.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
 - [Field Data Cache](features/opensearch/field-data-cache.md)
 - [Docker Image Updates](features/opensearch/docker-image-updates.md)
