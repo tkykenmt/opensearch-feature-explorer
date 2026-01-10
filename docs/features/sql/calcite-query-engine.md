@@ -136,6 +136,7 @@ flowchart TB
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `plugins.calcite.enabled` | Enable Calcite engine for PPL queries | `false` |
+| `plugins.calcite.fallback.allowed` | Allow fallback to v2 engine on failure | `false` (v3.2.0+) |
 | `plugins.sql.enabled` | Enable SQL support | `true` |
 | `plugins.ppl.enabled` | Enable PPL support | `true` |
 | `plugins.query.memory_limit` | Query memory limit | `85%` |
@@ -249,6 +250,20 @@ POST /_plugins/_ppl
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#3620](https://github.com/opensearch-project/sql/pull/3620) | Support Sort pushdown |
+| v3.2.0 | [#3916](https://github.com/opensearch-project/sql/pull/3916) | Support aggregation push down with scripts |
+| v3.2.0 | [#3850](https://github.com/opensearch-project/sql/pull/3850) | Support partial filter push down |
+| v3.2.0 | [#3834](https://github.com/opensearch-project/sql/pull/3834) | Support relevance query functions pushdown |
+| v3.2.0 | [#3859](https://github.com/opensearch-project/sql/pull/3859) | Filter script pushdown with RelJson serialization |
+| v3.2.0 | [#3853](https://github.com/opensearch-project/sql/pull/3853) | Skip codegen for Scan only plan (~30% improvement) |
+| v3.2.0 | [#3952](https://github.com/opensearch-project/sql/pull/3952) | Disable v2 fallback by default |
+| v3.2.0 | [#3823](https://github.com/opensearch-project/sql/pull/3823) | Support span push down |
+| v3.2.0 | [#3840](https://github.com/opensearch-project/sql/pull/3840) | Support filter push down for Sarg value |
+| v3.2.0 | [#3864](https://github.com/opensearch-project/sql/pull/3864) | Support pushdown physical sort for SortMergeJoin |
+| v3.2.0 | [#3880](https://github.com/opensearch-project/sql/pull/3880) | Push down QUERY_SIZE_LIMIT |
+| v3.2.0 | [#3914](https://github.com/opensearch-project/sql/pull/3914) | Support function argument coercion |
+| v3.2.0 | [#3919](https://github.com/opensearch-project/sql/pull/3919) | Support casting to IP with Calcite |
+| v3.2.0 | [#3821](https://github.com/opensearch-project/sql/pull/3821) | Add compare_ip operator UDFs |
 | v3.1.0 | [#3738](https://github.com/opensearch-project/sql/pull/3738) | Support ResourceMonitor with Calcite |
 | v3.1.0 | [#3747](https://github.com/opensearch-project/sql/pull/3747) | Support `flatten` command with Calcite |
 | v3.1.0 | [#3745](https://github.com/opensearch-project/sql/pull/3745) | Support `expand` command with Calcite |
@@ -289,5 +304,6 @@ POST /_plugins/_ppl
 
 ## Change History
 
+- **v3.2.0** (2026-01-11): Major pushdown expansion - sort, aggregation with scripts, partial filter, span, relevance queries, Sarg values; secure RelJson serialization for filter scripts; performance optimization skipping codegen for simple queries (~30% improvement); v2 fallback disabled by default; new UDFs (compare_ip, IP casting); function argument coercion
 - **v3.1.0** (2026-01-10): Expanded command support - eventstats (window functions), flatten, expand, trendline, appendcol, grok, top/rare, fillnull, describe, patterns; new functions (coalesce, isempty, isblank, ispresent, geoip, cidrmatch); performance optimizations (LIMIT pushdown, row count estimation, ResourceMonitor)
 - **v3.0.0** (2025-05-06): Initial implementation - Apache Calcite integration, join/lookup/subsearch commands, UDF framework, custom type system, thread pool execution, enhanced explain output
