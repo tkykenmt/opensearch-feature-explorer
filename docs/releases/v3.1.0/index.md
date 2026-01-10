@@ -89,6 +89,10 @@
 
 - [Flow Framework Dependencies](features/flow-framework/flow-framework-dependencies.md) - Conditional DynamoDB client dependency and data summary with log pattern agent template
 
+### Dashboards Assistant
+
+- [Dashboard Assistant CI Fixes](features/dashboards-assistant/dashboard-assistant-ci-fixes.md) - Fix CI failures due to path alias babel configuration changes
+
 ### Multi-Plugin
 
 - [Testing Library Updates](features/multi-plugin/testing-library-updates.md) - Update @testing-library/user-event to v14.4.3 in anomaly-detection and index-management dashboards plugins
