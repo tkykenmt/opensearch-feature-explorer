@@ -10,6 +10,7 @@
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md)
 - [Cross-Cluster Settings](features/opensearch/cross-cluster-settings.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
+- [Docker Image Updates](features/opensearch/docker-image-updates.md)
 - [Engine API](features/opensearch/engine-api.md)
 - [Flaky Test Fixes](features/opensearch/flaky-test-fixes.md)
 - [Index Output](features/opensearch/index-output.md)
