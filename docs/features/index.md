@@ -34,6 +34,7 @@
 - [Composite Directory Factory](opensearch/composite-directory-factory.md)
 - [Concurrent Segment Search](opensearch/concurrent-segment-search.md)
 - [Crypto KMS Plugin](opensearch/crypto-kms-plugin.md)
+- [Custom Index Name Resolver](opensearch/custom-index-name-resolver.md)
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [DocRequest Refactoring](opensearch/docrequest-refactoring.md)
 - [Dynamic Settings](opensearch/dynamic-settings.md)
