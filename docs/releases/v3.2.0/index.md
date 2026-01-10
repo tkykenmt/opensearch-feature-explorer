@@ -162,6 +162,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Query Insights Bugfixes](features/query-insights-dashboards/query-insights-bugfixes.md) | bugfix | react-vis migration, search bar fix, table sorting fix, UI improvements |
+| [Query Insights Live Queries Enhancement](features/query-insights-dashboards/query-insights-live-queries-enhancement.md) | enhancement | Updated default auto-refresh interval from 5s to 30s |
 
 ### SQL
 
