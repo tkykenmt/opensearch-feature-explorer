@@ -17,6 +17,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [IndexFieldDataService Async Close](features/opensearch/indexfielddataservice-async-close.md) | bugfix | Async field data cache clearing to prevent cluster applier thread blocking |
 | [Staggered Merge Optimization](features/opensearch/staggered-merge-optimization.md) | bugfix | Replace CPU load average with AverageTracker classes, adjust default thresholds |
 
+### Neural Search
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Agentic Search](features/neural-search/agentic-search.md) | feature | [Experimental] Natural language search with agentic query clause and translator processor |
+
 ### OpenSearch Dashboards
 
 | Item | Category | Description |
