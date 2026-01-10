@@ -22,6 +22,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Search Backpressure](features/opensearch/search-backpressure.md) - Add validation for cancellation settings to prevent cluster crashes
 - [Search Pipeline](features/opensearch/search-pipeline.md) - Add support for msearch API to pass search pipeline name
 - [Star Tree Index](features/opensearch/star-tree-index.md) - Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
+- [Tiered Caching](features/opensearch/tiered-caching.md) - Segmented cache architecture for improved concurrency and performance
 - [Streaming Indexing](features/opensearch/streaming-indexing.md) - Bug fixes for streaming bulk request hangs and newline termination errors
 - [Replication](features/opensearch/replication.md) - Fix array hashCode calculation in ResyncReplicationRequest
 - [Task Management](features/opensearch/task-management.md) - Fix missing fields in task index mapping for proper task result storage
