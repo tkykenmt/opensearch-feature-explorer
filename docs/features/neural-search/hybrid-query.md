@@ -56,12 +56,23 @@ flowchart TB
 | `HybridQueryBuilder` | Builder for hybrid queries with filter support |
 | `HybridQueryPhaseSearcher` | Custom query phase searcher for hybrid execution |
 | `HybridTopScoreDocCollector` | Collector that maintains results from all sub-queries |
+| `HybridCollapsingTopDocsCollector` | Collector for keyword and numeric field collapse |
+| `HybridBulkScorer` | Custom bulk scorer with window-based collection (4096 window size) |
+| `HybridQueryDocIdStream` | Document ID stream for bulk scoring |
+| `HybridSubQueryScorer` | Sub-query scorer for hybrid execution |
+| `HybridScorerSupplier` | Supplier for hybrid scorers |
 | `TopDocsMerger` | Merges results from multiple shards/segments |
 | `NormalizationProcessor` | Search pipeline processor for score normalization |
 | `ScoreCombinationTechnique` | Combines normalized scores |
+| `RRFScoreCombinationTechnique` | RRF combination with custom weight support |
 | `ZScoreNormalizationTechnique` | Z-Score based normalization |
 | `SemanticHighlighter` | ML-based semantic highlighting for hybrid results |
 | `NeuralStatsAction` | Stats API for neural search observability |
+| `CollapseDTO` | Data transfer object for collapse configuration |
+| `CollapseDataCollector` | Collects data for collapse processing |
+| `CollapseExecutor` | Executes collapse logic on hybrid query results |
+| `CollapseStrategy` | Strategy pattern for field type handling (keyword/numeric) |
+| `CollapseResultUpdater` | Updates results after collapse processing |
 
 ### Configuration
 
@@ -161,17 +172,22 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## Limitations
 
-- **Pagination**: The `from` parameter is not supported with hybrid queries. Use `search_after` for pagination instead.
-- **Explain API**: The `explain` parameter is not fully supported for hybrid queries.
+- **Inner hits with collapse**: Inner hits are not supported when using collapse with hybrid queries.
+- **Explain API**: The `explain` parameter is not fully supported for hybrid queries (partial support added in v3.1.0).
 - **Nested queries**: Hybrid queries cannot be nested inside other compound queries.
 - **Nested filter**: Nested HybridQueryBuilder does not support the filter function.
 - **Concurrent segment search**: Results may vary due to non-deterministic merge order when concurrent segment search is enabled.
 - **Semantic highlighter**: Requires a deployed sentence highlighting model.
+- **Collapse aggregations**: Aggregations run on pre-collapsed results, not the final output.
+- **Collapse pagination**: Collapse reduces total results, affecting page distribution.
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#1345](https://github.com/opensearch-project/neural-search/pull/1345) | Add collapse functionality to hybrid query |
+| v3.1.0 | [#1289](https://github.com/opensearch-project/neural-search/pull/1289) | Custom bulk scorer for hybrid query (2-3x performance) |
+| v3.1.0 | [#1322](https://github.com/opensearch-project/neural-search/pull/1322) | Support custom weights in RRF normalization processor |
 | v3.0.0 | [#1224](https://github.com/opensearch-project/neural-search/pull/1224) | Add Z Score normalization technique |
 | v3.0.0 | [#1195](https://github.com/opensearch-project/neural-search/pull/1195) | Lower bounds for min-max normalization |
 | v3.0.0 | [#1206](https://github.com/opensearch-project/neural-search/pull/1206) | Filter support for HybridQueryBuilder and NeuralQueryBuilder |
@@ -189,11 +205,15 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## References
 
-- [Hybrid Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/hybrid-search/index/)
-- [Hybrid Query DSL](https://docs.opensearch.org/3.0/query-dsl/compound/hybrid/)
-- [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
-- [Normalization Processor](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/normalization-processor/)
-- [Neural Search Tutorial](https://docs.opensearch.org/3.0/tutorials/vector-search/neural-search-tutorial/)
+- [Hybrid Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/index/)
+- [Collapsing Hybrid Query Results](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)
+- [Hybrid Query DSL](https://docs.opensearch.org/3.1/query-dsl/compound/hybrid/)
+- [Neural Search API](https://docs.opensearch.org/3.1/vector-search/api/neural/)
+- [Normalization Processor](https://docs.opensearch.org/3.1/search-plugins/search-pipelines/normalization-processor/)
+- [Neural Search Tutorial](https://docs.opensearch.org/3.1/tutorials/vector-search/neural-search-tutorial/)
+- [Issue #665](https://github.com/opensearch-project/neural-search/issues/665): Hybrid search and collapse compatibility request
+- [Issue #1152](https://github.com/opensearch-project/neural-search/issues/1152): Custom weights in RRF request
+- [Issue #1290](https://github.com/opensearch-project/neural-search/issues/1290): RFC for speeding up score collecting
 - [Issue #376](https://github.com/opensearch-project/neural-search/issues/376): Z-Score normalization request
 - [Issue #718](https://github.com/opensearch-project/neural-search/issues/718): Inner hits support request
 - [Issue #1138](https://github.com/opensearch-project/neural-search/issues/1138): Embedding optimization RFC
@@ -204,6 +224,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## Change History
 
+- **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support
 - **v3.0.0** (2025-05-13): Z-Score normalization, lower bounds for min-max, filter support, inner hits, Stats API, semantic highlighter, analyzer-based neural sparse query, optimized embedding generation
 - **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
