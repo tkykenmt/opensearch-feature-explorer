@@ -51,3 +51,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [HTTP/2 & Reactor-Netty Fix](features/opensearch/http2-reactor-netty-fix.md) | bugfix | Fix HTTP/2 communication when reactor-netty-secure transport is enabled |
 | [Query String & Regex Fixes](features/opensearch/query-string-regex-fixes.md) | bugfix | Fix field alias support, COMPLEMENT flag, and TooComplexToDeterminizeException handling |
 | [Aggregation Task Cancellation](features/opensearch/aggregation-task-cancellation.md) | feature | Add task cancellation checks in aggregators to terminate long-running queries |
+| [Dependency Bumps (OpenSearch Core)](features/opensearch/dependency-bumps-opensearch-core.md) | feature | 20 dependency updates including Lucene 10.2.2, Log4j 2.25.1, BouncyCastle, OkHttp 5.1.0 |

@@ -62,6 +62,32 @@ Security-related dependency updates are prioritized and may include:
 
 ## Related PRs
 
+### v3.2.0
+
+#### OpenSearch Core
+| PR | Description |
+|----|-------------|
+| [#18573](https://github.com/opensearch-project/OpenSearch/pull/18573) | Bump Apache Lucene to 10.2.2 |
+| [#18589](https://github.com/opensearch-project/OpenSearch/pull/18589) | Bump log4j-core from 2.24.3 to 2.25.1 |
+| [#18668](https://github.com/opensearch-project/OpenSearch/pull/18668) | Bump BouncyCastle and password4j |
+| [#18749](https://github.com/opensearch-project/OpenSearch/pull/18749) | Bump okhttp from 4.12.0 to 5.1.0 |
+| [#18646](https://github.com/opensearch-project/OpenSearch/pull/18646) | Bump nebula.ospackage-base from 11.11.2 to 12.0.0 |
+| [#18585](https://github.com/opensearch-project/OpenSearch/pull/18585) | Bump gson from 2.13.0 to 2.13.1 |
+| [#18586](https://github.com/opensearch-project/OpenSearch/pull/18586) | Bump azure-core-http-netty from 1.15.11 to 1.15.12 |
+| [#18645](https://github.com/opensearch-project/OpenSearch/pull/18645) | Bump okio from 3.13.0 to 3.15.0 |
+| [#18644](https://github.com/opensearch-project/OpenSearch/pull/18644) | Bump azure-storage-blob from 12.30.0 to 12.30.1 |
+| [#18672](https://github.com/opensearch-project/OpenSearch/pull/18672) | Bump failureaccess from 1.0.1 to 1.0.2 |
+| [#18691](https://github.com/opensearch-project/OpenSearch/pull/18691) | Bump azure-core from 1.55.3 to 1.55.5 |
+| [#18742](https://github.com/opensearch-project/OpenSearch/pull/18742) | Bump azure-storage-common from 12.29.0 to 12.29.1 |
+| [#18743](https://github.com/opensearch-project/OpenSearch/pull/18743) | Bump jimfs from 1.3.0 to 1.3.1 |
+| [#18745](https://github.com/opensearch-project/OpenSearch/pull/18745) | Bump commons-lang3 from 3.17.0 to 3.18.0 |
+| [#18759](https://github.com/opensearch-project/OpenSearch/pull/18759) | Bump nimbus-jose-jwt from 10.2 to 10.4 |
+| [#18401](https://github.com/opensearch-project/OpenSearch/pull/18401) | Bump commons-beanutils from 1.9.4 to 1.11.0 |
+| [#18803](https://github.com/opensearch-project/OpenSearch/pull/18803) | Bump snappy-java from 1.1.10.7 to 1.1.10.8 |
+| [#18935](https://github.com/opensearch-project/OpenSearch/pull/18935) | Bump grgit-core from 5.2.1 to 5.3.2 |
+| [#18935](https://github.com/opensearch-project/OpenSearch/pull/18935) | Bump kafka-clients from 3.8.1 to 3.9.1 |
+| [#18524](https://github.com/opensearch-project/OpenSearch/pull/18524) | Bump git-auto-commit-action from 5 to 6 |
+
 ### v3.1.0
 
 #### OpenSearch Core
@@ -184,6 +210,7 @@ Security-related dependency updates are prioritized and may include:
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): 20 dependency updates in OpenSearch core including Apache Lucene 10.2.2, Log4j 2.25.1, BouncyCastle FIPS updates, OkHttp 5.1.0, Azure SDK updates, Kafka clients 3.9.1
 - **v3.1.0** (2026-01-10): 21 dependency updates in OpenSearch core including CVE-2025-27820 fix (Apache HttpClient5/HttpCore5), Netty 4.1.121.Final, Gson 2.13.1, Azure SDK updates, Gradle Actions 4
 - **v2.18.0** (2024-11-05): 19 dependency updates including CVE-2024-7254 fix (protobuf), Gradle 8.10.2, upload-artifact v4
 - **v2.17.0** (2024-09-17): 16 dependency updates across Job Scheduler (4 PRs) and Security (12 PRs) plugins
