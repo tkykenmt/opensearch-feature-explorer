@@ -10,6 +10,7 @@ Key benefits include:
 - Automatic visualization selection based on data patterns
 - Dashboard integration through embeddable components
 - Extensible tab system for custom result views
+- Trace Details page for deep investigation of distributed traces (v3.2.0)
 
 ## Details
 
@@ -22,6 +23,13 @@ graph TB
             LogsApp[Logs App]
             TracesApp[Traces App]
             MetricsApp[Metrics App]
+        end
+        
+        subgraph "Trace Details Page"
+            TraceView[Trace Details View]
+            GanttChart[Gantt Chart - Vega]
+            ServiceMap[Service Map - React Flow]
+            SpanFlyout[Span Detail Flyout]
         end
         
         subgraph "Core Services"
@@ -71,7 +79,12 @@ graph TB
     
     LogsApp --> StateManager
     TracesApp --> StateManager
+    TracesApp --> TraceView
     MetricsApp --> StateManager
+    
+    TraceView --> GanttChart
+    TraceView --> ServiceMap
+    TraceView --> SpanFlyout
     
     StateManager --> QueryBar
     StateManager --> TabRegistry
@@ -146,6 +159,12 @@ flowchart TB
 | `PatternsTable` | Log patterns analysis table |
 | `FieldSelector` | Field selection sidebar |
 | `DataTable` | Results data table with action bar |
+| `TraceDetails` | Trace details page with span visualization |
+| `GanttChart` | Vega-based Gantt chart for span timeline |
+| `ServiceMap` | React Flow-based interactive service dependency graph |
+| `SpanDetailPanel` | Container for span visualization with view mode switching |
+| `SpanDetailTable` | Flat list view of spans with sorting and filtering |
+| `SpanDetailTableHierarchy` | Tree view showing parent-child span relationships |
 
 ### Configuration
 
@@ -264,11 +283,14 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.2.0 | [#9932](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9932) | Histogram UI fix |
 | v3.2.0 | [#9946](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9946) | Tab preservation and cache update |
 | v3.2.0 | [#9972](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9972) | Panels layout adjustment |
+| v3.2.0 | [#10253](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10253) | Trace Details page with Gantt chart and service map |
 
 ## References
 
 - [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+- [Issue #9898](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9898): RFC for React Flow library introduction
+- [React Flow Documentation](https://reactflow.dev/): Interactive node-based visualization library
 
 ## Change History
 
-- **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, and chart type switcher
+- **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, and Trace Details page with Gantt chart and service map visualization
