@@ -136,6 +136,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Security Analytics Data Source](features/security-analytics-dashboards/security-analytics-data-source.md) - Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, and getting started cards visual redesign
 - [Security Analytics Findings](features/security-analytics-dashboards/security-analytics-findings.md) - Fix findings page crash when custom rules are deleted and correct rule severity display for multi-rule findings
 
+### Dashboards Query Workbench
+
+- [Query Workbench Bugfixes](features/dashboards-query-workbench/query-workbench-bugfixes.md) - Bug fixes for modal mounting support and MDS error handling
+
 ### Security
 
 - [Security Bugfixes](features/security/security-bugfixes.md) - Multiple bug fixes including system index access control, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings

@@ -111,6 +111,8 @@ source=orders
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#401](https://github.com/opensearch-project/dashboards-query-workbench/pull/401) | Fix workbench routes to support modal mounting |
+| v2.18.0 | [#408](https://github.com/opensearch-project/dashboards-query-workbench/pull/408) | Added error handling for API calls |
 | v2.17.0 | [#370](https://github.com/opensearch-project/dashboards-query-workbench/pull/370) | Use smaller and compressed variants of buttons and form components |
 
 ## References
@@ -122,4 +124,5 @@ source=orders
 
 ## Change History
 
+- **v2.18.0** (2024-11-12): Bug fixes for modal mounting support and MDS error handling
 - **v2.17.0** (2024-09-17): UI improvements with smaller and compressed button/form variants for better consistency
