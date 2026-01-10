@@ -25,6 +25,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Code Cleanup](features/opensearch/code-cleanup.md) - Query approximation simplification, Stream API optimization, typo fix
 - [Search Request Stats](features/opensearch/search-request-stats.md) - Enable coordinator search.request_stats_enabled by default
 - [Identity Feature Flag Removal](features/opensearch/identity-feature-flag-removal.md) - Remove experimental identity feature flag, move authentication to plugins
+- [Docker Compose v2 Support](features/opensearch/docker-compose-v2-support.md) - Add support for Docker Compose v2 in TestFixturesPlugin for modern Docker installations
 
 ### OpenSearch Dashboards
 
