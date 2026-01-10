@@ -90,3 +90,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Secure Transport Parameters](features/opensearch/secure-transport-parameters.md) | feature | SecureHttpTransportParameters API for cleaner SSL configuration in Reactor Netty 4 HTTP transport |
 | [Custom Index Name Resolver](features/opensearch/custom-index-name-resolver.md) | feature | Plugin extensibility for custom index name expression resolvers |
 | [Workload Management](features/opensearch/workload-management.md) | feature | WLM mode validation for CRUD operations, naming consistency updates, logging improvements |
+| [Warm Indices](features/opensearch/warm-indices.md) | feature | Write block on flood watermark, addressable space-based FS stats, resize restrictions |

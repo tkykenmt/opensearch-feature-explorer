@@ -191,7 +191,9 @@ PUT _plugins/_ism/policies/hot-warm-policy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18375](https://github.com/opensearch-project/OpenSearch/pull/18375) | Add support for Warm Indices Write Block on Flood Watermark breach |
 | v3.2.0 | [#18767](https://github.com/opensearch-project/OpenSearch/pull/18767) | FS stats for warm nodes based on addressable space; changed default remote_data_ratio from 0 to 5 (min: 1) |
+| v3.2.0 | [#18686](https://github.com/opensearch-project/OpenSearch/pull/18686) | Disallow resize for Warm Index, add Parameterized ITs for close in remote store |
 | v3.2.0 | [#18666](https://github.com/opensearch-project/OpenSearch/pull/18666) | Replaced CPU load average with AverageTracker classes, adjusted default thresholds |
 | v3.1.0 | [#18082](https://github.com/opensearch-project/OpenSearch/pull/18082) | Add Warm Disk Threshold Allocation Decider for Warm shards |
 | v3.1.0 | [#18229](https://github.com/opensearch-project/OpenSearch/pull/18229) | Added Auto Force Merge Manager to enhance hot to warm migration |
@@ -207,5 +209,5 @@ PUT _plugins/_ism/policies/hot-warm-policy
 
 ## Change History
 
-- **v3.2.0** (2025-07-22): Added WarmFsService for accurate warm node FS stats based on addressable space; changed default remote_data_ratio from 0 to 5 with minimum of 1; improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
+- **v3.2.0** (2025-07-22): Added write block support for warm indices on flood watermark breach; added WarmFsService for accurate warm node FS stats based on addressable space; disallowed resize operations (clone/shrink/split) on warm indices; changed default remote_data_ratio from 0 to 5 with minimum of 1; improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
 - **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
