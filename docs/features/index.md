@@ -221,6 +221,7 @@
 
 - [Build Maintenance](dashboards-search-relevance/build-maintenance.md)
 - [Documentation Maintenance](dashboards-search-relevance/documentation-maintenance.md)
+- [Repository Maintenance](dashboards-search-relevance/repository-maintenance.md)
 - [Search Comparison](dashboards-search-relevance/search-comparison.md)
 
 ## search-relevance

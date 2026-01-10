@@ -129,3 +129,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [ML Commons Testing & Coverage](features/ml-commons/ml-commons-testing-coverage.md) | bugfix | Integration test stability fix, memory container unit tests, JaCoCo 0.8.13 upgrade |
+
+### Dashboards Search Relevance
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Repository Maintenance](features/dashboards-search-relevance/repository-maintenance.md) | bugfix | Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps |
