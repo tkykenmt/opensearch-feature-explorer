@@ -79,6 +79,27 @@ flowchart TB
 | `index.replication.type` | Must be set to `SEGMENT` for segment warmer to activate | `DOCUMENT` |
 | `max_remote_low_priority_download_bytes_per_sec` | Rate limit for low-priority downloads (merged segments) | `0` (unlimited) |
 
+### Metrics (v3.3.0+)
+
+The segment warmer exposes comprehensive metrics under `merges.warmer` in stats APIs:
+
+| Metric | Type | Description |
+|--------|------|-------------|
+| `total_invocations_count` | Cumulative | Total number of warm operations invoked |
+| `total_time_millis` | Cumulative | Total wallclock time spent in warming operations |
+| `total_failure_count` | Cumulative | Number of failed warming attempts |
+| `total_bytes_sent` | Cumulative | Total data volume uploaded by primary shards |
+| `total_bytes_received` | Cumulative | Total data volume downloaded by replica shards |
+| `total_send_time_millis` | Cumulative | Time spent uploading segments |
+| `total_receive_time_millis` | Cumulative | Time spent downloading segments |
+| `ongoing_count` | Point-in-time | Current number of active warming operations |
+
+Access metrics via:
+- Node Stats: `GET /_nodes/stats/indices/merge`
+- Index Stats: `GET /_stats/merge`
+- CAT Shards: `GET /_cat/shards?h=merges.warmer.*`
+- CAT Nodes: `GET /_cat/nodes?h=merges.warmer.*`
+
 ### Usage Example
 
 Enable the feature flag in `opensearch.yml`:
@@ -127,6 +148,7 @@ PUT /my-index
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#18929](https://github.com/opensearch-project/OpenSearch/pull/18929) | Add metrics for merged segment warmer operations |
 | v3.2.0 | [#18683](https://github.com/opensearch-project/OpenSearch/pull/18683) | Remote store support for merged segment warming |
 | v3.0.0 | [#18255](https://github.com/opensearch-project/OpenSearch/pull/18255) | Local merged segment warmer implementation |
 | v3.0.0 | [#17881](https://github.com/opensearch-project/OpenSearch/pull/17881) | Initial implementation - MergedSegmentWarmerFactory infrastructure |
@@ -141,5 +163,6 @@ PUT /my-index
 
 ## Change History
 
+- **v3.3.0** (2025-10-14): Added comprehensive metrics for monitoring segment warmer operations - `MergedSegmentTransferTracker` and `MergedSegmentWarmerStats` expose invocation counts, timing, bytes transferred, and failure counts via stats APIs
 - **v3.2.0** (2025-08-05): Added remote store support - merged segments are uploaded to remote store and replicated to replicas via `RemoteStorePublishMergedSegmentAction`
 - **v3.0.0** (2025-05-06): Initial implementation - introduced `MergedSegmentWarmerFactory` with `LocalMergedSegmentWarmer` and `RemoteStoreMergedSegmentWarmer` infrastructure
