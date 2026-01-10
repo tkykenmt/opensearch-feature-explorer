@@ -2,7 +2,7 @@
 
 ## Summary
 
-OpenSearch provides a command-line tool (`opensearch-plugin`) for managing plugins. This tool allows users to install, list, and remove plugins from their OpenSearch installation. Plugin installation includes signature verification using PGP keys to ensure artifact integrity and authenticity.
+OpenSearch provides a command-line tool (`opensearch-plugin`) for managing plugins. This tool allows users to install, list, and remove plugins from their OpenSearch installation. Plugin installation includes signature verification using PGP keys to ensure artifact integrity and authenticity. Starting from v3.3.0, plugins can also include directory structures in their config folder.
 
 ## Details
 
@@ -15,6 +15,7 @@ graph TB
         Download[Download Plugin]
         Verify[Verify Signature]
         Install[Install Plugin]
+        Config[Copy Config Files/Dirs]
     end
     
     subgraph "Signature Verification"
@@ -23,9 +24,22 @@ graph TB
         SIG[Signature File]
     end
     
+    subgraph "Config Processing v3.3.0+"
+        Check{Is Directory?}
+        CopyDir[Copy Recursively]
+        CopyFile[Copy File]
+        Perms[Set Permissions]
+    end
+    
     CLI --> Download
     Download --> Verify
     Verify --> Install
+    Install --> Config
+    Config --> Check
+    Check -->|Yes| CopyDir
+    Check -->|No| CopyFile
+    CopyDir --> Perms
+    CopyFile --> Perms
     
     PGP --> Verify
     BC --> Verify
@@ -40,6 +54,8 @@ graph TB
 | `PluginCli` | Entry point for the plugin CLI tool |
 | `public_key.sig` | PGP public key for signature verification |
 | BouncyCastle FIPS | Cryptographic provider for PGP operations |
+| `copyDirectoryRecursively()` | Recursively copies directory structures (v3.3.0+) |
+| `copyWithPermissions()` | Copies files/dirs with proper permissions (v3.3.0+) |
 
 ### Configuration
 
@@ -98,6 +114,7 @@ The verification process:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19343](https://github.com/opensearch-project/OpenSearch/pull/19343) | Allow plugins to copy folders into their config dir during installation |
 | v3.1.0 | [#18147](https://github.com/opensearch-project/OpenSearch/pull/18147) | Fix native plugin installation error caused by PGP public key change |
 
 ## References
@@ -107,4 +124,5 @@ The verification process:
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Added support for copying directories to plugin config folder during installation
 - **v3.1.0** (2026-01-10): Fixed signature verification failure caused by PGP public key change; added BouncyCastle FIPS provider initialization
