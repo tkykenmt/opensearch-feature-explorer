@@ -174,6 +174,7 @@
 - [Navigation](opensearch-dashboards/navigation.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)
 - [OSD Optimizer Cache](opensearch-dashboards/osd-optimizer-cache.md)
+- [Plugin Compatibility](opensearch-dashboards/plugin-compatibility.md)
 - [Query Editor](opensearch-dashboards/query-editor.md)
 - [Query Enhancements](opensearch-dashboards/query-enhancements.md)
 - [Sample Data](opensearch-dashboards/sample-data.md)
