@@ -122,6 +122,7 @@ GET _cat/segment_replication?v
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit |
 | v3.2.0 | [#18602](https://github.com/opensearch-project/OpenSearch/pull/18602) | Fix bugs in replication lag computation |
 
 ## References
@@ -129,9 +130,11 @@ GET _cat/segment_replication?v
 - [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
 - [Segment Replication Backpressure](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/backpressure/): Backpressure mechanism
 - [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API for viewing metrics
+- [Issue #19213](https://github.com/opensearch-project/OpenSearch/issues/19213): Bug report for NRTReplicationEngine file deletion issue
 - [Issue #18437](https://github.com/opensearch-project/OpenSearch/issues/18437): Bug report for lag metric issue
 - [Segment Replication Blog](https://opensearch.org/blog/segment-replication/): Introduction blog post
 
 ## Change History
 
+- **v3.3.0** (2025-09-09): Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
 - **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
