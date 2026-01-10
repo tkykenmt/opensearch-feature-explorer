@@ -2316,7 +2316,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 895
     },
     {
       "name": "Security Dependency Updates",
@@ -2468,7 +2469,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 896
     },
     {
       "name": "ML Skills",
@@ -2482,7 +2484,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 897
     },
     {
       "name": "Platform Support",
@@ -2496,7 +2499,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 898
     },
     {
       "name": "Rule-based Auto-tagging",
@@ -2546,7 +2550,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 899
     },
     {
       "name": "Workload Management",
@@ -2560,7 +2565,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 900
     },
     {
       "name": "Parallel Shard Refresh",
@@ -2574,7 +2580,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 901
     },
     {
       "name": "Pull-based Ingestion",
@@ -2612,7 +2619,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 902
     },
     {
       "name": "Warm Storage Tiering",
@@ -2632,7 +2640,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 903
     },
     {
       "name": "Composite Directory Factory",
@@ -2646,7 +2655,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 904
     },
     {
       "name": "Derived Source",
@@ -2660,7 +2670,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 905
     },
     {
       "name": "Security Manager Replacement",
@@ -2674,7 +2685,8 @@
           "category": "feature",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 906
     },
     {
       "name": "Async Shard Batch Fetch",
@@ -2688,7 +2700,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 907
     },
     {
       "name": "Query Coordinator Context",
@@ -2708,7 +2721,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 908
     },
     {
       "name": "Remote Store",
@@ -2728,7 +2742,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 909
     },
     {
       "name": "Query Optimization",
@@ -2748,7 +2763,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 910
     },
     {
       "name": "Plugin Testing Framework",
@@ -2762,7 +2778,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 911
     },
     {
       "name": "System Ingest Pipeline",
@@ -2782,7 +2799,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 912
     },
     {
       "name": "Crypto/KMS Plugin",
@@ -2802,7 +2820,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 913
     },
     {
       "name": "Unified Highlighter",
@@ -2816,7 +2835,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 914
     },
     {
       "name": "S3 Repository Enhancements",
