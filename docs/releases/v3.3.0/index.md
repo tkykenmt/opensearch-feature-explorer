@@ -26,6 +26,7 @@
 - [OOM Prevention](features/opensearch/oom-prevention.md)
 - [Painless Scripting](features/opensearch/painless-scripting.md)
 - [Plugin Installation](features/opensearch/plugin-installation.md)
+- [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md)
 - [Query Phase Fixes](features/opensearch/query-phase-fixes.md)
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md)
 - [Reindex API](features/opensearch/reindex-api.md)
