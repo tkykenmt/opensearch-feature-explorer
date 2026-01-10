@@ -4,6 +4,7 @@
 
 ### OpenSearch
 
+- [Derived Fields](features/opensearch/derived-fields.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
 
 ### OpenSearch Dashboards

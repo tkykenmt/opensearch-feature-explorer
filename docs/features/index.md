@@ -52,6 +52,7 @@
 - [Cluster State Management](opensearch/cluster-state-management.md)
 - [Clusterless Mode](opensearch/clusterless-mode.md)
 - [Dependency Management](opensearch/dependency-management.md)
+- [Derived Fields](opensearch/derived-fields.md)
 - [Derived Source](opensearch/derived-source.md)
 - [Docker Compose v2 Support](opensearch/docker-compose-v2-support.md)
 - [Dynamic Threadpool Resize](opensearch/dynamic-threadpool-resize.md)
