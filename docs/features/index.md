@@ -24,6 +24,7 @@
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
 - [Azure Repository](opensearch/azure-repository.md)
 - [Bulk API](opensearch/bulk-api.md)
+- [Cardinality Aggregation](opensearch/cardinality-aggregation.md)
 - [Cat Indices API](opensearch/cat-indices-api.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
 - [Cluster Info & Resource Stats](opensearch/cluster-info-resource-stats.md)
