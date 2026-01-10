@@ -142,6 +142,7 @@ Query 2 - Boosted field:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#542](https://github.com/opensearch-project/dashboards-search-relevance/pull/542) | Fix schema validation in POST Query Sets endpoint |
 | v2.17.0 | [#427](https://github.com/opensearch-project/dashboards-search-relevance/pull/427) | Add compare queries card to search use case overview page |
 | v2.14.0 | [#383](https://github.com/opensearch-project/dashboards-search-relevance/pull/383) | Multi-datasource support for Search-relevance |
 | v2.14.0 | [#352](https://github.com/opensearch-project/dashboards-search-relevance/pull/352) | Add ability to select a search pipeline in comparison tool |
@@ -154,6 +155,7 @@ Query 2 - Boosted field:
 
 ## Change History
 
+- **v3.1.0** (2025-06-11): Fixed schema validation in POST Query Sets endpoint - added missing `querySetSize` parameter
 - **v2.17.0** (2024-09-17): Added Compare Queries card to Search use case overview page via Content Management integration
 - **v2.14.0** (2024-05-02): Added multi-datasource support and search pipeline selection
 - **v2.11.0** (2023-10-16): Fixed ace editor theme consistency for dark mode
