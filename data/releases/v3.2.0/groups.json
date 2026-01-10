@@ -2484,7 +2484,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 1088
     },
     {
       "name": "Performance Analyzer Infrastructure",
@@ -2498,7 +2499,8 @@
           "category": "bugfix",
           "repository": "performance"
         }
-      ]
+      ],
+      "issue_number": 1089
     },
     {
       "name": "Geospatial Infrastructure",
@@ -2512,7 +2514,8 @@
           "category": "bugfix",
           "repository": "geospatial"
         }
-      ]
+      ],
+      "issue_number": 1090
     },
     {
       "name": "Terms Lookup Query Enhancement",
@@ -2526,7 +2529,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1091
     },
     {
       "name": "Hierarchical & ACL-aware Routing",
@@ -2546,7 +2550,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1092
     },
     {
       "name": "Warm Indices",
@@ -2572,7 +2577,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1093
     },
     {
       "name": "Workload Management",
@@ -2604,7 +2610,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1094
     },
     {
       "name": "Custom Index Name Resolver",
@@ -2618,7 +2625,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1095
     },
     {
       "name": "BooleanQuery Rewrite Optimizations",
@@ -2638,7 +2646,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1096
     },
     {
       "name": "Cluster Info & Resource Stats",
@@ -2652,7 +2661,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1097
     },
     {
       "name": "Secure Transport Parameters",
@@ -2666,7 +2676,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1098
     },
     {
       "name": "Java Agent AccessController",
@@ -2680,7 +2691,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1099
     },
     {
       "name": "Remote Store Metadata API",
@@ -2694,7 +2706,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1100
     },
     {
       "name": "Cat Indices API Enhancement",
@@ -2708,7 +2721,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1101
     },
     {
       "name": "Pull-based Ingestion",
@@ -2722,7 +2736,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1102
     },
     {
       "name": "Search Pipeline in Templates",
@@ -2736,7 +2751,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1103
     },
     {
       "name": "Query Phase Plugin Extension",
@@ -2750,7 +2766,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1104
     },
     {
       "name": "Profiler Enhancements",
@@ -2770,7 +2787,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1105
     },
     {
       "name": "Rule-based Auto Tagging",
@@ -2784,7 +2802,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1106
     },
     {
       "name": "Approximation Framework",
@@ -2798,7 +2817,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1107
     },
     {
       "name": "Semantic Version Field Type",
