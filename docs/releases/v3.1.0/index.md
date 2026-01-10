@@ -105,6 +105,7 @@
 ### Dashboards Assistant
 
 - [Dashboard Assistant CI Fixes](features/dashboards-assistant/dashboard-assistant-ci-fixes.md) - Fix CI failures due to path alias babel configuration changes
+- [Security Dashboards UI Fixes](features/dashboards-assistant/security-dashboards-ui-fixes.md) - Bug fixes for embeddable dropdown, error logging, insights request timing, and conversation loading state
 
 ### Multi-Plugin
 
