@@ -246,6 +246,7 @@
 - [Calcite Query Engine](sql/calcite-query-engine.md)
 - [Flint Index Operations](sql/flint-index-operations.md)
 - [Flint Query Scheduler](sql/flint-query-scheduler.md)
+- [PPL Documentation](sql/ppl-documentation.md)
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL Error Handling](sql/sql-error-handling.md)
 - [SQL Pagination](sql/sql-pagination.md)
