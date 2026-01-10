@@ -96,6 +96,7 @@
 ### Flow Framework
 
 - [Flow Framework Dependencies](features/flow-framework/flow-framework-dependencies.md) - Conditional DynamoDB client dependency and data summary with log pattern agent template
+- [Flow Framework Improvements](features/flow-framework/flow-framework-improvements.md) - Bug fixes for RegisterAgentStep LLM field processing, exception type in error messages, and LLM spec parameter passing
 
 ### Index Management
 
