@@ -149,6 +149,20 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#570](https://github.com/opensearch-project/dashboards-search-relevance/pull/570) | Dashboard visualization for evaluation and hybrid experiments |
+| v3.2.0 | [#577](https://github.com/opensearch-project/dashboards-search-relevance/pull/577) | AutoPopulated fields in Query Compare page via URL parameters |
+| v3.2.0 | [#594](https://github.com/opensearch-project/dashboards-search-relevance/pull/594) | Polling mechanism for experiment and judgment listing |
+| v3.2.0 | [#604](https://github.com/opensearch-project/dashboards-search-relevance/pull/604) | Date picker fields for implicit judgment filtering |
+| v3.2.0 | [#614](https://github.com/opensearch-project/dashboards-search-relevance/pull/614) | Default to new SRW UI with opt-out option |
+| v3.2.0 | [#567](https://github.com/opensearch-project/dashboards-search-relevance/pull/567) | Show names instead of IDs in experiment creation |
+| v3.2.0 | [#574](https://github.com/opensearch-project/dashboards-search-relevance/pull/574) | Retrieve experiment results using experimentId field |
+| v3.2.0 | [#573](https://github.com/opensearch-project/dashboards-search-relevance/pull/573) | Add tooltips for metrics |
+| v3.2.0 | [#572](https://github.com/opensearch-project/dashboards-search-relevance/pull/572) | Remove IDs from experiment table, link type instead |
+| v3.2.0 | [#593](https://github.com/opensearch-project/dashboards-search-relevance/pull/593) | Publish metrics stats without authorization |
+| v3.2.0 | [#165](https://github.com/opensearch-project/search-relevance/pull/165) | Date filtering for UBI events in implicit judgments |
+| v3.2.0 | [#174](https://github.com/opensearch-project/search-relevance/pull/174) | Enrich results index for dashboard visualization |
+| v3.2.0 | [#139](https://github.com/opensearch-project/search-relevance/pull/139) | Task scheduling for hybrid optimizer experiments |
+| v3.2.0 | [#167](https://github.com/opensearch-project/search-relevance/pull/167) | Task scheduling for pointwise experiments |
 | v3.2.0 | [#578](https://github.com/opensearch-project/dashboards-search-relevance/pull/578) | Improve messaging when backend plugin is disabled |
 | v3.2.0 | [#582](https://github.com/opensearch-project/dashboards-search-relevance/pull/582) | Do not show Pipeline error if there are no pipelines yet |
 | v3.2.0 | [#585](https://github.com/opensearch-project/dashboards-search-relevance/pull/585) | Avoid validation results overflow in Search Configuration creation |
@@ -205,6 +219,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 ## Change History
 
+- **v3.2.0** (2026-01-11): Major enhancements - new default SRW UI, dashboard visualization for experiments, polling mechanism for status updates, date filtering for implicit judgments, task scheduling for experiments
 - **v3.2.0** (2026-01-10): Bug fixes - backend plugin disabled messaging, pipeline error suppression, validation results overflow, Venn diagram statistics, REST API error status, input validation, pipeline parameter fix
 - **v3.2.0** (2026-01-10): Fixed toast notification error messages not rendering correctly across multiple UI components
 - **v3.1.0** (2025-06-16): Major feature additions - hybrid search experiment type, feature flag, external judgment import, Stats API, URL path changes, security integration with roles
