@@ -61,6 +61,7 @@
 - [Derived Source](opensearch/derived-source.md)
 - [Docker Compose v2 Support](opensearch/docker-compose-v2-support.md)
 - [Dynamic Threadpool Resize](opensearch/dynamic-threadpool-resize.md)
+- [Engine API](opensearch/engine-api.md)
 - [Engine Optimization Fixes](opensearch/engine-optimization-fixes.md)
 - [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
