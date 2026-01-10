@@ -59,3 +59,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Searchable Snapshots & Writeable Warm](features/opensearch/searchable-snapshots-writeable-warm.md) | feature | FS stats for warm nodes based on addressable space; default remote_data_ratio changed to 5 |
 | [Subject Interface Update](features/opensearch/subject-interface-update.md) | feature | Update Subject interface to use CheckedRunnable instead of Callable |
 | [Numeric Terms Aggregation Optimization](features/opensearch/numeric-terms-aggregation-optimization.md) | feature | QuickSelect algorithm for large bucket count terms aggregations |
+| [Numeric Field Skip List](features/opensearch/numeric-field-skip-list.md) | feature | Skip list indexing for numeric field doc values to improve range query performance |
