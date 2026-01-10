@@ -67,6 +67,7 @@
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
 - [Numeric Terms Aggregation Optimization](opensearch/numeric-terms-aggregation-optimization.md)
+- [Numeric Field Skip List](opensearch/numeric-field-skip-list.md)
 - [Offline Nodes (Background Tasks)](opensearch/offline-nodes.md)
 - [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
 - [Parallel Shard Refresh](opensearch/parallel-shard-refresh.md)
