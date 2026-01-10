@@ -167,6 +167,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Query Workbench Bugfixes](features/dashboards-query-workbench/query-workbench-bugfixes.md) - Bug fixes for modal mounting support and MDS error handling
 
+### Dashboards Assistant
+
+- [Assistant Capabilities](features/dashboards-assistant/assistant-capabilities.md) - Capability-based UI rendering control, new API to check agent config existence, agentName renamed to agentConfigName
+
 ### Dashboards Maps
 
 - [Dashboards Maps Bugfix](features/dashboards-maps/dashboards-maps-bugfix.md) - Fix flyout overlay issue with new application header
