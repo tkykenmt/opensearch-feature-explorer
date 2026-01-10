@@ -90,6 +90,7 @@
 - [Randomness](opensearch/randomness.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
+- [Rescore Named Queries](opensearch/rescore-named-queries.md)
 - [Remote Store](opensearch/remote-store.md)
 - [Repository Rate Limiters](opensearch/repository-rate-limiters.md)
 - [RestHandler.Wrapper](opensearch/resthandler-wrapper.md)
