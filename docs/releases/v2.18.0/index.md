@@ -113,6 +113,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### k-NN
 
+- [k-NN AVX512 Support](features/k-nn/k-nn-avx512-support.md) - AVX512 SIMD support for Faiss engine, accelerating vector search and indexing on compatible x64 processors
 - [k-NN Performance & Engine](features/k-nn/k-nn-performance-engine.md) - Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements
 - [k-NN Documentation](features/k-nn/k-nn-documentation.md) - JavaDoc cleanup for RescoreContext class
 - [k-NN Maintenance](features/k-nn/k-nn-maintenance.md) - Lucene 9.12 codec compatibility, force merge performance optimization, benchmark folder removal, code refactoring
