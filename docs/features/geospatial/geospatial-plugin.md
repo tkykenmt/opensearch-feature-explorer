@@ -67,6 +67,7 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#776](https://github.com/opensearch-project/geospatial/pull/776) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
 | v3.0.0 | [#732](https://github.com/opensearch-project/geospatial/pull/732) | Persist licenses and developer fields in pom file |
 
 ## References
@@ -78,4 +79,5 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 
 ## Change History
 
+- **v3.2.0** (2026-01-11): Upgraded Gradle to 8.14.3, enabled JDK 24 CI checks, updated Lombok plugin to 8.14
 - **v3.0.0** (2025-05-06): Fixed Maven POM metadata to include license, description, and developer information for all published artifacts
