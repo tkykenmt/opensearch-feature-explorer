@@ -28,6 +28,7 @@
 - [Segment Replication](features/opensearch/segment-replication.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
+- [Test Infrastructure](features/opensearch/test-infrastructure.md)
 - [Tiered Caching](features/opensearch/tiered-caching.md)
 
 ### OpenSearch Dashboards
