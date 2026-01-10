@@ -300,6 +300,7 @@
 ## skills
 
 - [Skills / Tools](skills/skills-tools.md)
+- [Skills Plugin Dependencies](skills/skills-plugin-dependencies.md)
 
 ## security-analytics
 
