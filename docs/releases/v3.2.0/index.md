@@ -43,6 +43,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [System Ingest Pipeline Fix](features/opensearch/system-ingest-pipeline-fix.md) | bugfix | Fix system ingest pipeline to properly handle index templates |
 | [Azure Repository Fixes](features/opensearch/azure-repository-fixes.md) | bugfix | Fix SOCKS5 proxy authentication for Azure repository |
 | [Profiler Enhancements](features/opensearch/profiler-enhancements.md) | bugfix | Fix concurrent timings in profiler for concurrent segment search |
+| [Plugin Profiling](features/opensearch/plugin-profiling.md) | feature | Plugin profiling extensibility and multi-shard fetch phase profiling |
 | [Engine Optimization Fixes](features/opensearch/engine-optimization-fixes.md) | bugfix | Fix leafSorter optimization for ReadOnlyEngine and NRTReplicationEngine |
 | [Search Preference & Awareness Fix](features/opensearch/search-preference-awareness-fix.md) | bugfix | Fix custom preference string to ignore awareness attributes for consistent routing |
 | [Settings Management](features/opensearch/settings-management.md) | bugfix | Ignore archived settings on update to unblock settings modifications |
