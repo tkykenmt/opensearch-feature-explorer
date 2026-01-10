@@ -1516,7 +1516,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 1068
     },
     {
       "name": "Query Insights Bugfixes",
@@ -1566,7 +1567,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 1069
     },
     {
       "name": "Reporting Plugin",
@@ -1586,7 +1588,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 1070
     },
     {
       "name": "Search Relevance Bugfixes",
@@ -1636,7 +1639,8 @@
           "category": "bugfix",
           "repository": "search"
         }
-      ]
+      ],
+      "issue_number": 1071
     },
     {
       "name": "Notifications Plugin",
@@ -1650,7 +1654,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 1072
     },
     {
       "name": "Security Analytics Bugfixes",
@@ -1670,7 +1675,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1073
     },
     {
       "name": "Flow Framework Bugfixes",
@@ -1708,7 +1714,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 1074
     },
     {
       "name": "Geospatial Plugin",
@@ -1728,7 +1735,8 @@
           "category": "bugfix",
           "repository": "geospatial"
         }
-      ]
+      ],
+      "issue_number": 1075
     },
     {
       "name": "Remote Vector Index Build",
@@ -1742,7 +1750,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 1076
     },
     {
       "name": "Asynchronous Search",
@@ -1762,7 +1771,8 @@
           "category": "bugfix",
           "repository": "asynchronous-search"
         }
-      ]
+      ],
+      "issue_number": 1077
     },
     {
       "name": "Build Infrastructure (Gradle/JDK)",
@@ -2032,7 +2042,8 @@
           "category": "bugfix",
           "repository": "alerting"
         }
-      ]
+      ],
+      "issue_number": 1078
     },
     {
       "name": "ML Commons Documentation & Tutorials",
@@ -2082,7 +2093,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1079
     },
     {
       "name": "SQL/PPL Documentation",
@@ -2102,7 +2114,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1080
     },
     {
       "name": "Version Increment (Maintenance)",
@@ -2243,7 +2256,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 1081
     },
     {
       "name": "CVE Fixes & Dependency Updates",
@@ -2277,7 +2291,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 1082
     },
     {
       "name": "Release Notes & Documentation",
@@ -2303,7 +2318,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 1083
     },
     {
       "name": "Repository Maintenance",
@@ -2378,7 +2394,8 @@
           "category": "bugfix",
           "repository": "search"
         }
-      ]
+      ],
+      "issue_number": 1084
     },
     {
       "name": "ML Commons Testing & Coverage",
@@ -2410,7 +2427,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1085
     },
     {
       "name": "Notifications Plugin Infrastructure",
@@ -2424,7 +2442,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 1086
     },
     {
       "name": "OpenSearch Learning to Rank",
@@ -2444,7 +2463,8 @@
           "category": "bugfix",
           "repository": "learning"
         }
-      ]
+      ],
+      "issue_number": 1087
     },
     {
       "name": "Observability Infrastructure",
