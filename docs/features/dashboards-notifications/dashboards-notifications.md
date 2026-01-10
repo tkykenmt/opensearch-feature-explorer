@@ -89,6 +89,10 @@ The plugin uses the following URL parameters for state management:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#287](https://github.com/opensearch-project/dashboards-notifications/pull/287) | Fix typo in recipient |
+| v2.18.0 | [#290](https://github.com/opensearch-project/dashboards-notifications/pull/290) | Bug fix to switch to default datasource instead of local cluster |
+| v2.18.0 | [#271](https://github.com/opensearch-project/dashboards-notifications/pull/271) | Fix CI workflow for windows |
+| v2.18.0 | [#280](https://github.com/opensearch-project/dashboards-notifications/pull/280) | Fix cache cypress hashfile path |
 | v2.17.0 | [#234](https://github.com/opensearch-project/dashboards-notifications/pull/234) | Change parent item name for new navigation |
 | v2.17.0 | [#242](https://github.com/opensearch-project/dashboards-notifications/pull/242) | Fix link checker |
 | v2.17.0 | [#244](https://github.com/opensearch-project/dashboards-notifications/pull/244) | Persist dataSourceId across applications |
@@ -103,6 +107,7 @@ The plugin uses the following URL parameters for state management:
 
 ## Change History
 
+- **v2.18.0** (2024-11-05): Fixed default data source selection to use configured default instead of local cluster when MDS is enabled, fixed typo in recipient groups UI, updated CI workflows for Java 21
 - **v2.17.0** (2024-09-17): Changed navigation parent item name to "Notification channels", added description for left navigation, fixed link checker CI, added dataSourceId persistence for new navigation
 - **v2.15.0**: Bug fixes for MDS support in getServerFeatures API
 - **v2.14.0**: Added Multi-Data-Source (MDS) support
