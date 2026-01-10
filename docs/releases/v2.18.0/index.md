@@ -199,6 +199,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Skills
 
 - [Skills Plugin Dependencies](features/skills/skills-plugin-dependencies.md) - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes
+- [ML Skills & Tools](features/skills/ml-skills-tools.md) - New LogPatternTool for log pattern analysis, customizable prompt support for CreateAnomalyDetectorTool
 
 ### CI/CD
 
