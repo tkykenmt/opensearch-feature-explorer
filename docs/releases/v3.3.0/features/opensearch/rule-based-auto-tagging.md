@@ -22,22 +22,20 @@ v3.3.0 enhances rule-based auto-tagging for Workload Management (WLM) with secur
 ```mermaid
 graph TB
     subgraph "Request Processing"
-        REQ[Search Request] --> AF[WlmActionFilter]
+        REQ[Search Request] --> AF[AutoTaggingActionFilter]
         AF --> AE[AttributeExtractors]
     end
     
     subgraph "Attribute Extraction"
-        AE --> IPE[IndexPatternExtractor]
-        AE --> UE[UsernameExtractor]
-        AE --> RE[RoleExtractor]
+        AE --> IPE[IndicesExtractor]
+        AE --> PE[PrincipalExtractor<br/>from Security Plugin]
     end
     
     subgraph "Label Resolution"
         IPE --> FVR[FeatureValueResolver]
-        UE --> FVR
-        RE --> FVR
+        PE --> FVR
         FVR --> FVC[FeatureValueCollector]
-        FVC --> TRIE[In-Memory Tries]
+        FVC --> TRIE[In-Memory Tries<br/>PatriciaTrie&lt;Set&lt;V&gt;&gt;]
     end
     
     subgraph "Storage"
@@ -51,10 +49,11 @@ graph TB
 
 | Component | Description |
 |-----------|-------------|
-| `FeatureValueResolver` | Central class for evaluating candidate labels across multiple attributes |
-| `FeatureValueCollector` | Extracts and merges values for single attributes with OR/AND logic |
-| `AttributeExtractor<String>` | Interface for extracting attribute values from requests |
-| `PrincipalAttribute` | Schema for security attributes (username, role) |
+| `FeatureValueResolver` | Central class for evaluating candidate labels across multiple attributes with intersection logic |
+| `MatchLabel<V>` | Represents a feature value along with a matching score |
+| `AttributeExtractor.LogicalOperator` | Enum defining AND/OR combination style for multi-value attributes |
+| `PrincipalExtractor` | Security plugin component extracting username/role from request context |
+| `AttributeExtractorExtension` | SPI interface for plugins to provide custom attribute extractors |
 
 #### Rule Schema Update
 
@@ -97,10 +96,12 @@ GET _rules/workload_group?principal.username=admin&principal.role=all_access
 
 When multiple rules match a request, the system uses priority-based scoring:
 
-1. Attributes are sorted by priority (username > role > index_pattern)
-2. Each attribute contributes a match score (1.0 for exact match, 0.0 for unspecified)
-3. Candidate labels are intersected across attributes (AND logic)
-4. The rule with the highest combined score wins
+1. Attributes are sorted by priority (defined in `FeatureType.getOrderedAttributes()`)
+2. For each attribute, `findAttributeMatches()` returns `MatchLabel` objects with scores
+3. Match score is calculated as `prefix_length / key_length` for prefix matches, 1.0 for exact matches
+4. Candidate labels are intersected across attributes (AND logic between attributes)
+5. If multiple candidates remain, tie-breaking uses highest score per attribute in priority order
+6. Unspecified attributes in rules contribute score 0.0 (fixed in PR #19599)
 
 ### Migration Notes
 
@@ -117,14 +118,14 @@ When multiple rules match a request, the system uses priority-based scoring:
 
 ## Related PRs
 
-| PR | Description |
-|----|-------------|
-| [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | Add autotagging label resolving logic for multiple attributes |
-| [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | Bug fix on Update Rule API with multiple attributes |
-| [#19429](https://github.com/opensearch-project/OpenSearch/pull/19429) | Modify get rule API to suit nested attributes |
-| [#19345](https://github.com/opensearch-project/OpenSearch/pull/19345) | Add schema for security attributes (principal.username, principal.role) |
-| [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | Restructure in-memory trie to store values as a set |
-| [#18550](https://github.com/opensearch-project/OpenSearch/pull/18550) | Add autotagging rule integration tests |
+| PR | Repository | Description |
+|----|------------|-------------|
+| [#19599](https://github.com/opensearch-project/OpenSearch/pull/19599) | OpenSearch | Fix auto tagging label resolving logic for principal attributes |
+| [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | OpenSearch | Bug fix on Update Rule API with multiple attributes |
+| [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | OpenSearch | Add autotagging label resolving logic for multiple attributes |
+| [#19429](https://github.com/opensearch-project/OpenSearch/pull/19429) | OpenSearch | Modify get rule API to suit nested attributes |
+| [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | OpenSearch | Restructure in-memory trie to store values as a set |
+| [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Add logic to extract security attributes for rule-based autotagging |
 
 ## References
 

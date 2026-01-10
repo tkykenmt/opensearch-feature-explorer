@@ -287,36 +287,37 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Related PRs
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | Add autotagging label resolving logic for multiple attributes |
-| v3.3.0 | [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | Bug fix on Update Rule API with multiple attributes |
-| v3.3.0 | [#19429](https://github.com/opensearch-project/OpenSearch/pull/19429) | Modify get rule API to suit nested attributes |
-| v3.3.0 | [#19345](https://github.com/opensearch-project/OpenSearch/pull/19345) | Add schema for security attributes (principal.username, principal.role) |
-| v3.3.0 | [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | Restructure in-memory trie to store values as a set |
-| v3.3.0 | [#18550](https://github.com/opensearch-project/OpenSearch/pull/18550) | Add autotagging rule integration tests |
-| v3.2.0 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | Bug fix and improvements for rule-based auto tagging |
-| v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | Add configurable limit on rule cardinality |
-| v3.2.0 | [#18652](https://github.com/opensearch-project/OpenSearch/pull/18652) | Add WLM mode validation for workload group CRUD requests |
-| v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | Fix delete rule event consumption for wildcard index based rules |
-| v3.2.0 | [#18709](https://github.com/opensearch-project/OpenSearch/pull/18709) | Rename WorkloadGroupTestUtil to WorkloadManagementTestUtil |
-| v3.2.0 | [#18711](https://github.com/opensearch-project/OpenSearch/pull/18711) | Rename QueryGroup to WorkloadGroup in comments and Javadocs |
-| v3.2.0 | [#18712](https://github.com/opensearch-project/OpenSearch/pull/18712) | Modify logging message to show actual resiliency mode |
-| v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
-| v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | Add Get Rule API for auto-tagging |
-| v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | Add WLM ActionFilter for automatic tagging |
-| v3.1.0 | [#17792](https://github.com/opensearch-project/OpenSearch/pull/17792) | Add Create Rule API |
-| v3.1.0 | [#17797](https://github.com/opensearch-project/OpenSearch/pull/17797) | Add Update Rule API |
-| v3.1.0 | [#18128](https://github.com/opensearch-project/OpenSearch/pull/18128) | Add refresh-based rule synchronization |
-| v3.1.0 | [#18184](https://github.com/opensearch-project/OpenSearch/pull/18184) | Add Delete Rule API |
-| v3.1.0 | [#18488](https://github.com/opensearch-project/OpenSearch/pull/18488) | Bug fix for update rule API |
-| v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | Add cancellation framework changes in WLM |
-| v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | QueryGroup Stats API logic |
-| v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | Add WLM resiliency orchestrator (QueryGroup Service) |
-| v2.18.0 | [#15955](https://github.com/opensearch-project/OpenSearch/pull/15955) | Add integration tests for WLM CRUD APIs |
-| v2.18.0 | [#16370](https://github.com/opensearch-project/OpenSearch/pull/16370) | Make QueryGroups durable |
-| v2.18.0 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | Improve rejection logic for WLM |
-| v2.18.0 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | WLM create/update REST API bug fix |
+| Version | PR | Repository | Description |
+|---------|-----|------------|-------------|
+| v3.3.0 | [#19599](https://github.com/opensearch-project/OpenSearch/pull/19599) | OpenSearch | Fix auto tagging label resolving logic for principal attributes |
+| v3.3.0 | [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | OpenSearch | Bug fix on Update Rule API with multiple attributes |
+| v3.3.0 | [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | OpenSearch | Add autotagging label resolving logic for multiple attributes |
+| v3.3.0 | [#19429](https://github.com/opensearch-project/OpenSearch/pull/19429) | OpenSearch | Modify get rule API to suit nested attributes |
+| v3.3.0 | [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | OpenSearch | Restructure in-memory trie to store values as a set |
+| v3.3.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Add logic to extract security attributes for rule-based autotagging |
+| v3.3.0 | [#18550](https://github.com/opensearch-project/OpenSearch/pull/18550) | OpenSearch | Add autotagging rule integration tests |
+| v3.2.0 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | OpenSearch | Bug fix and improvements for rule-based auto tagging |
+| v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | OpenSearch | Add configurable limit on rule cardinality |
+| v3.2.0 | [#18652](https://github.com/opensearch-project/OpenSearch/pull/18652) | OpenSearch | Add WLM mode validation for workload group CRUD requests |
+| v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | OpenSearch | Fix delete rule event consumption for wildcard index based rules |
+| v3.2.0 | [#18709](https://github.com/opensearch-project/OpenSearch/pull/18709) | OpenSearch | Rename WorkloadGroupTestUtil to WorkloadManagementTestUtil |
+| v3.2.0 | [#18711](https://github.com/opensearch-project/OpenSearch/pull/18711) | OpenSearch | Rename QueryGroup to WorkloadGroup in comments and Javadocs |
+| v3.2.0 | [#18712](https://github.com/opensearch-project/OpenSearch/pull/18712) | OpenSearch | Modify logging message to show actual resiliency mode |
+| v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | OpenSearch | Add paginated wlm/stats API |
+| v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | OpenSearch | Add Get Rule API for auto-tagging |
+| v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | OpenSearch | Add WLM ActionFilter for automatic tagging |
+| v3.1.0 | [#17792](https://github.com/opensearch-project/OpenSearch/pull/17792) | OpenSearch | Add Create Rule API |
+| v3.1.0 | [#17797](https://github.com/opensearch-project/OpenSearch/pull/17797) | OpenSearch | Add Update Rule API |
+| v3.1.0 | [#18128](https://github.com/opensearch-project/OpenSearch/pull/18128) | OpenSearch | Add refresh-based rule synchronization |
+| v3.1.0 | [#18184](https://github.com/opensearch-project/OpenSearch/pull/18184) | OpenSearch | Add Delete Rule API |
+| v3.1.0 | [#18488](https://github.com/opensearch-project/OpenSearch/pull/18488) | OpenSearch | Bug fix for update rule API |
+| v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | OpenSearch | Add cancellation framework changes in WLM |
+| v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | OpenSearch | QueryGroup Stats API logic |
+| v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | OpenSearch | Add WLM resiliency orchestrator (QueryGroup Service) |
+| v2.18.0 | [#15955](https://github.com/opensearch-project/OpenSearch/pull/15955) | OpenSearch | Add integration tests for WLM CRUD APIs |
+| v2.18.0 | [#16370](https://github.com/opensearch-project/OpenSearch/pull/16370) | OpenSearch | Make QueryGroups durable |
+| v2.18.0 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | OpenSearch | Improve rejection logic for WLM |
+| v2.18.0 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | OpenSearch | WLM create/update REST API bug fix |
 
 ## References
 
@@ -330,7 +331,7 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Change History
 
-- **v3.3.0** (2026-01-10): Added security attributes support (`principal.username`, `principal.role`) for rule-based auto-tagging; Implemented multi-attribute label resolving logic with priority-based scoring via `FeatureValueResolver` and `FeatureValueCollector`; Restructured in-memory trie to store values as sets for multiple labels per attribute key; Enhanced GET Rule API to support filtering by nested attributes; Added comprehensive integration tests for auto-tagging scenarios; Fixed Update Rule API handling for multiple attributes
+- **v3.3.0** (2026-01-10): Added security attributes support (`principal.username`, `principal.role`) for rule-based auto-tagging via Security plugin integration (PR #5606); Implemented multi-attribute label resolving logic with priority-based scoring via `FeatureValueResolver` and `MatchLabel`; Restructured in-memory trie to store values as sets for multiple labels per attribute key; Enhanced GET Rule API to support filtering by nested attributes; Added comprehensive integration tests for auto-tagging scenarios; Fixed Update Rule API handling for multiple attributes; Fixed principal attribute scoring to correctly assign 0.0 for unspecified attributes (PR #19599)
 - **v3.2.0** (2026-01-10): Added WLM mode validation for workload group CRUD requests (Create/Update/Delete operations now fail when WLM mode is `disabled` or `monitor_only`); Added `WlmClusterSettingValuesProvider` component for centralized cluster settings management; Renamed `WorkloadGroupTestUtil` to `WorkloadManagementTestUtil`; Updated all "QueryGroup" references to "WorkloadGroup" in comments and Javadocs; Improved logging to dynamically show actual resiliency mode; Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules; Bug fixes including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
 - **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
