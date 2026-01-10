@@ -1,0 +1,274 @@
+# Explore Plugin
+
+## Summary
+
+The Explore plugin is a next-generation data exploration experience in OpenSearch Dashboards that evolves from the Discover plugin. It provides enhanced query capabilities with a universal query bar powered by Monaco Editor, multi-dataset support with separate pages for logs, traces, and metrics, and intelligent rule-based auto-visualization that automatically selects the most appropriate chart type based on data characteristics.
+
+Key benefits include:
+- Unified query interface with Monaco Editor for improved query writing experience
+- Multi-flavor support for different observability use cases (logs, traces, metrics)
+- Automatic visualization selection based on data patterns
+- Dashboard integration through embeddable components
+- Extensible tab system for custom result views
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Explore Plugin Architecture"
+        subgraph "Entry Points"
+            LogsApp[Logs App]
+            TracesApp[Traces App]
+            MetricsApp[Metrics App]
+        end
+        
+        subgraph "Core Services"
+            StateManager[State Management]
+            TabRegistry[Tab Registry Service]
+            QueryService[Query Service]
+        end
+        
+        subgraph "Query Panel"
+            MonacoEditor[Monaco Editor v0.52.2]
+            QueryBar[Universal Query Bar]
+            DateTimePicker[DateTime Range Picker]
+            SavedQueries[Saved Queries Manager]
+            RecentQueries[Recent Queries Table]
+        end
+        
+        subgraph "Visualization Engine"
+            AutoVis[Auto Visualization]
+            RuleEngine[Rule Engine]
+            ChartSwitcher[Chart Type Switcher]
+            StylePanel[Style Panel]
+            
+            subgraph "Chart Types"
+                Line[Line]
+                Bar[Bar]
+                StackedBar[Stacked Bar]
+                Pie[Pie]
+                Scatter[Scatter]
+                Heatmap[Heatmap]
+                Area[Area]
+                SingleMetric[Single Metric]
+            end
+        end
+        
+        subgraph "Results Panel"
+            DataTable[Data Table]
+            PatternsTab[Patterns Tab]
+            FieldSelector[Field Selector]
+            ActionBar[Action Bar]
+        end
+        
+        subgraph "Integration"
+            Embeddable[Explore Embeddable]
+            Dashboard[Dashboard Plugin]
+        end
+    end
+    
+    LogsApp --> StateManager
+    TracesApp --> StateManager
+    MetricsApp --> StateManager
+    
+    StateManager --> QueryBar
+    StateManager --> TabRegistry
+    
+    QueryBar --> MonacoEditor
+    QueryBar --> DateTimePicker
+    QueryBar --> SavedQueries
+    QueryBar --> RecentQueries
+    
+    QueryService --> AutoVis
+    AutoVis --> RuleEngine
+    RuleEngine --> ChartSwitcher
+    ChartSwitcher --> Line
+    ChartSwitcher --> Bar
+    ChartSwitcher --> StackedBar
+    ChartSwitcher --> Pie
+    ChartSwitcher --> Scatter
+    ChartSwitcher --> Heatmap
+    ChartSwitcher --> Area
+    ChartSwitcher --> SingleMetric
+    
+    StylePanel --> ChartSwitcher
+    
+    TabRegistry --> DataTable
+    TabRegistry --> PatternsTab
+    
+    Embeddable --> Dashboard
+```
+
+### Data Flow
+
+```mermaid
+flowchart TB
+    User[User] --> QueryInput[Query Input]
+    QueryInput --> MonacoEditor[Monaco Editor]
+    MonacoEditor --> QueryExecution[Query Execution]
+    QueryExecution --> DataFetch[Data Fetch]
+    DataFetch --> ResultAnalysis[Result Analysis]
+    
+    ResultAnalysis --> ColumnAnalysis[Column Type Analysis]
+    ColumnAnalysis --> RuleMatching[Rule Matching]
+    RuleMatching --> ChartSelection[Chart Type Selection]
+    
+    ChartSelection --> Rendering[Chart Rendering]
+    Rendering --> StyleApplication[Style Application]
+    StyleApplication --> Display[Display]
+    
+    User --> ChartSwitch[Manual Chart Switch]
+    ChartSwitch --> ChartSelection
+    
+    User --> StyleChange[Style Change]
+    StyleChange --> StyleApplication
+    
+    Display --> SaveToObject[Save to Object]
+    SaveToObject --> Embeddable[Embeddable]
+    Embeddable --> Dashboard[Dashboard]
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| `ExploreApp` | Main application entry point with flavor routing |
+| `LogsPage` / `TracesPage` / `MetricsPage` | Flavor-specific pages (currently identical, will diverge) |
+| `QueryPanel` | Universal query bar with Monaco Editor integration |
+| `QueryEditor` | Monaco Editor wrapper with PPL/SQL support |
+| `AutoVisualization` | Rule-based automatic chart type selection |
+| `ChartTypeSwitcher` | UI for switching between available chart types |
+| `StylePanel` | Collapsible panels for chart styling options |
+| `ExploreEmbeddable` | Embeddable component for dashboard integration |
+| `TabRegistry` | Service for managing result tabs |
+| `PatternsTable` | Log patterns analysis table |
+| `FieldSelector` | Field selection sidebar |
+| `DataTable` | Results data table with action bar |
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `explore.enabled` | Enable/disable Explore plugin | `true` (experimental) |
+| `explore.defaultFlavor` | Default flavor when accessing Explore | `logs` |
+
+### Auto-Visualization Rules
+
+| Rule | Data Pattern | Chart Type |
+|------|--------------|------------|
+| Single Metric | 1 numerical, 0 date, 0 categorical | Single Metric |
+| Basic Scatter | 2 numerical, 0 date, 0 categorical | Scatter |
+| Colored Scatter | 2 numerical, 0 date, 1 categorical | Scatter (color by category) |
+| Sized Scatter | 3 numerical, 0 date, 1 categorical | Scatter (size by 3rd metric) |
+| Category Heatmap | 1 numerical, 0 date, 2 categorical | Heatmap |
+| Numeric Heatmap | 3 numerical, 0 date, 0 categorical | Heatmap |
+| Simple Bar | 1 metric, 1 category | Bar |
+| Stacked Bar | 1 metric, 2 categories (low cardinality) | Stacked Bar |
+| High Cardinality | 1 metric, 2 categories (high cardinality) | Heatmap |
+| Time Series | Time-based data | Line (default) |
+
+### Usage Example
+
+```ppl
+# Access Explore via side navigation
+# Navigate to: Logs / Traces / Metrics
+
+# Single metric example
+source = opensearch_dashboards_sample_data_ecommerce
+| stats count() as total_orders
+
+# Bar chart example
+source = opensearch_dashboards_sample_data_ecommerce
+| stats min(products.base_price) by manufacturer
+
+# Stacked bar example
+source = opensearch_dashboards_sample_data_ecommerce
+| stats min(products.base_price) by manufacturer, customer_gender
+
+# Scatter plot example
+source = opensearch_dashboards_sample_data_ecommerce
+| stats avg(products.base_price), avg(products.quantity)
+
+# Time series line chart
+source = opensearch_dashboards_sample_data_ecommerce
+| stats count() by span(@timestamp, 1h)
+```
+
+### Adding Explore to Dashboard
+
+1. Create a visualization in Explore
+2. Click "Add to Dashboard" button
+3. Select target dashboard or create new
+4. The Explore embeddable is added to the dashboard
+
+## Limitations
+
+- Experimental feature - APIs and behavior may change
+- PPL embeddables may conflict with other query language embeddables on the same dashboard
+- Table rendering for unmatched visualization patterns is pending
+- Patterns tab pagination has known issues with page number clicks
+- Style options are chart-type specific and may not persist across chart type switches
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#9874](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9874) | Add pie, scatter, heatmap, single metric auto visualization |
+| v3.2.0 | [#9886](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9886) | New query editor in storybook |
+| v3.2.0 | [#9901](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9901) | Tab registry service integration |
+| v3.2.0 | [#9902](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9902) | Logs, traces, metrics flavor support |
+| v3.2.0 | [#9908](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9908) | Explore embeddable |
+| v3.2.0 | [#9920](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9920) | Bar chart with style panel |
+| v3.2.0 | [#9933](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9933) | Patterns tab UI |
+| v3.2.0 | [#9953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9953) | PPL visualization filters |
+| v3.2.0 | [#9961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9961) | Chart type switcher |
+| v3.2.0 | [#9964](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9964) | Style options saving |
+| v3.2.0 | [#9973](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9973) | Area chart support |
+| v3.2.0 | [#9978](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9978) | State loading from object |
+| v3.2.0 | [#9985](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9985) | Table action bar and field selector |
+| v3.2.0 | [#10020](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10020) | Optimizer worker timeout fix |
+| v3.2.0 | [#10051](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10051) | Heatmap style panel UI |
+| v3.2.0 | [#10055](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10055) | Add to dashboard modal naming |
+| v3.2.0 | [#10061](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10061) | Add to dashboard save behavior |
+| v3.2.0 | [#10072](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10072) | Chart expand reset fix |
+| v3.2.0 | [#10085](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10085) | Scatter grid enablement |
+| v3.2.0 | [#10093](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10093) | Aggregate function spacing fix |
+| v3.2.0 | [#10096](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10096) | Viz tab scroll and resize |
+| v3.2.0 | [#10101](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10101) | Axes UI fixes |
+| v3.2.0 | [#10113](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10113) | Chart time range update fix |
+| v3.2.0 | [#10127](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10127) | Antlr to Monaco token mappings |
+| v3.2.0 | [#10158](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10158) | Saved object fetch optimization |
+| v3.2.0 | [#10173](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10173) | TypeScript error fixes |
+| v3.2.0 | [#10208](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10208) | Tooltip configurations |
+| v3.2.0 | [#10248](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10248) | PPL histogram display fix |
+| v3.2.0 | [#10255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10255) | Axes and heatmap styles |
+| v3.2.0 | [#10258](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10258) | SCSS import path fix |
+| v3.2.0 | [#10260](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10260) | Show query handling |
+| v3.2.0 | [#10261](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10261) | Field selector collapse UI |
+| v3.2.0 | [#10269](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10269) | Dataset select to query panel |
+| v3.2.0 | [#10270](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10270) | Global banner offset |
+| v3.2.0 | [#10281](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10281) | URL state time filter fix |
+| v3.2.0 | [#10306](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10306) | Metric range and threshold fix |
+| v3.2.0 | [#10309](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10309) | UI setting validation fix |
+| v3.2.0 | [#10311](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10311) | Legend visibility logic |
+| v3.2.0 | [#10318](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10318) | Cypress tests for dashboard and styles |
+| v3.2.0 | [#10322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10322) | CI group fixes |
+| v3.2.0 | [#10323](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10323) | Time filter loading fix |
+| v3.2.0 | [#10330](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10330) | Log table dashboard test fix |
+| v3.2.0 | [#10332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10332) | New button URL state fix |
+| v3.2.0 | [#10333](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10333) | PPL millisecond precision fix |
+| v3.2.0 | [#10336](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10336) | Query execution button fix |
+| v3.2.0 | [#10348](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10348) | Query button color consistency |
+| v3.2.0 | [#9932](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9932) | Histogram UI fix |
+| v3.2.0 | [#9946](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9946) | Tab preservation and cache update |
+| v3.2.0 | [#9972](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9972) | Panels layout adjustment |
+
+## References
+
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+## Change History
+
+- **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, and chart type switcher
