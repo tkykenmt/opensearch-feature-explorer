@@ -24,6 +24,7 @@
 - [Bulk API](opensearch/bulk-api.md)
 - [Cat Indices API](opensearch/cat-indices-api.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
+- [Cluster Info & Resource Stats](opensearch/cluster-info-resource-stats.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
 - [Code Cleanup](opensearch/code-cleanup.md)
 - [Code Coverage (Gradle)](opensearch/code-coverage-gradle.md)
