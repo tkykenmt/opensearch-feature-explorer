@@ -157,6 +157,7 @@
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL Pagination](sql/sql-pagination.md)
 - [SQL Plugin Maintenance](sql/sql-plugin-maintenance.md)
+- [SQL Query Fixes](sql/sql-query-fixes.md)
 - [SQL/PPL Engine](sql/sql-ppl-engine.md)
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
 
