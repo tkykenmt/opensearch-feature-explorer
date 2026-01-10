@@ -142,6 +142,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Release Notes & Documentation](features/query-insights/release-notes-documentation.md) | bugfix | Release notes for v3.2.0 with reader search limit increase and infrastructure updates |
 
+### SQL
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [SQL/PPL Documentation](features/sql/ppl-documentation.md) | bugfix | Update PPL documentation index and V3 engine limitations |
+
 ### Multi-Repository
 
 | Item | Category | Description |
