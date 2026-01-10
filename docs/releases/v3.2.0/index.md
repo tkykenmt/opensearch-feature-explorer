@@ -145,6 +145,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [ML Commons Agent Tools & Memory](features/ml-commons/ml-commons-agent-tools-memory.md) | bugfix | Execute Tool API, AI-oriented memory containers, QueryPlanningTool, agent enhancements, bug fixes |
 | [ML Commons Sparse Encoding](features/ml-commons/ml-commons-sparse-encoding.md) | enhancement | TOKEN_ID format support for sparse encoding/tokenize models |
 | [ML Commons Model Deployment](features/ml-commons/ml-commons-model-deployment.md) | enhancement | Auto-deploy remote models in partially deployed status |
 | [ML Commons Testing & Coverage](features/ml-commons/ml-commons-testing-coverage.md) | bugfix | Integration test stability fix, memory container unit tests, JaCoCo 0.8.13 upgrade |
