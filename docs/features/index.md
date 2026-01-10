@@ -89,6 +89,7 @@
 - [Search Shard Routing](opensearch/search-shard-routing.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
+- [Settings Management](opensearch/settings-management.md)
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
 - [Streaming Indexing](opensearch/streaming-indexing.md)
