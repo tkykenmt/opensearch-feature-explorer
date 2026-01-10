@@ -149,6 +149,15 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#533](https://github.com/opensearch-project/opensearch-dashboards-search-relevance/pull/533) | Add search relevance workbench features (Dashboards) |
+| v3.1.0 | [#26](https://github.com/opensearch-project/opensearch-search-relevance/pull/26) | Added new experiment type for hybrid search |
+| v3.1.0 | [#29](https://github.com/opensearch-project/opensearch-search-relevance/pull/29) | Extend data model to adopt different experiment options/parameters |
+| v3.1.0 | [#34](https://github.com/opensearch-project/opensearch-search-relevance/pull/34) | Added feature flag for search relevance workbench |
+| v3.1.0 | [#40](https://github.com/opensearch-project/opensearch-search-relevance/pull/40) | Added validation for hybrid query structure |
+| v3.1.0 | [#42](https://github.com/opensearch-project/opensearch-search-relevance/pull/42) | Add support for importing judgments created externally |
+| v3.1.0 | [#62](https://github.com/opensearch-project/opensearch-search-relevance/pull/62) | Changing URL for plugin APIs to /_plugin/_search_relevance |
+| v3.1.0 | [#63](https://github.com/opensearch-project/opensearch-search-relevance/pull/63) | Add stats API |
+| v3.1.0 | [#5376](https://github.com/opensearch-project/security/pull/5376) | Integrate search-relevance functionalities with security plugin |
 | v3.1.0 | [#70](https://github.com/opensearch-project/search-relevance/pull/70) | Add realistic ESCI-based test dataset |
 | v3.1.0 | [#22](https://github.com/opensearch-project/search-relevance/pull/22) | Build search request with normal parsing and wrapper query |
 | v3.1.0 | [#27](https://github.com/opensearch-project/search-relevance/pull/27) | LLM Judgment Processor improvements |
@@ -182,5 +191,6 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 ## Change History
 
+- **v3.1.0** (2025-06-16): Major feature additions - hybrid search experiment type, feature flag, external judgment import, Stats API, URL path changes, security integration with roles
 - **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
 - **v3.1.0** (2025-06-06): Added realistic ESCI-based test dataset with 150 queries and matching judgments
