@@ -109,6 +109,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [k-NN Documentation](features/k-nn/k-nn-documentation.md) - JavaDoc cleanup for RescoreContext class
 - [k-NN Maintenance](features/k-nn/k-nn-maintenance.md) - Lucene 9.12 codec compatibility, force merge performance optimization, benchmark folder removal, code refactoring
 
+### Neural Search
+
+- [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md) - Fixed incorrect document order for nested aggregations in hybrid query
+
 ### ML Commons
 
 - [ML Commons Configuration](features/ml-commons/ml-commons-configuration.md) - Change `.plugins-ml-config` index to use `auto_expand_replicas: 0-all` for maximum availability
