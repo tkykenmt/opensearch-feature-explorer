@@ -164,6 +164,8 @@ Job Scheduler supports two schedule formats:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#766](https://github.com/opensearch-project/job-scheduler/pull/766) | Increment version to 3.1.0-SNAPSHOT |
+| v3.1.0 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency |
 | v3.0.0 | [#702](https://github.com/opensearch-project/job-scheduler/pull/702) | Enable custom start commands and options to resolve GHA issues |
 | v3.0.0 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring |
 | v3.0.0 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |
@@ -173,8 +175,9 @@ Job Scheduler supports two schedule formats:
 ## References
 
 - [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
-- [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
+- [Official Documentation](https://docs.opensearch.org/3.1/monitoring-your-cluster/job-scheduler/index/)
 - [Sample Extension Plugin](https://github.com/opensearch-project/job-scheduler/tree/main/sample-extension-plugin)
+- [Issue #18113](https://github.com/opensearch-project/OpenSearch/issues/18113): Remove Guava from plugins
 - [Issue #698](https://github.com/opensearch-project/job-scheduler/issues/698): GitHub Action Deprecation
 - [Issue #715](https://github.com/opensearch-project/job-scheduler/issues/715): Release 3.0 Breaking Changes
 - [Issue #14984](https://github.com/opensearch-project/OpenSearch/issues/14984): CreateIndexRequest.mapping() bug with v1 templates
@@ -182,6 +185,7 @@ Job Scheduler supports two schedule formats:
 
 ## Change History
 
+- **v3.1.0** (2025): Removed Guava dependency to reduce jar hell and dependency conflicts in extending plugins
 - **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads
 - **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
 - **v2.17.0** (2024-09-17): Fixed system index compatibility with v1 templates in LockService and JobDetailsService

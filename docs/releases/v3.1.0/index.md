@@ -75,3 +75,7 @@
 ### Notifications
 
 - [Notifications Maintenance](features/notifications/notifications-maintenance.md) - Migrate from javax.mail to jakarta.mail APIs and version increment to 3.1.0-SNAPSHOT
+
+### Job Scheduler
+
+- [Job Scheduler Maintenance](features/job-scheduler/job-scheduler-maintenance.md) - Remove Guava dependency to reduce jar hell and version increment to 3.1.0
