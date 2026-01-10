@@ -191,6 +191,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Observability UI Improvements](features/observability/observability-ui-improvements.md) - Services data picker fix, header control styling, custom traces table filters, Getting Started workflow restructure, CI build cache optimization
 - [Observability Bugfixes](features/observability/observability-bugfixes.md) - Multiple bug fixes including navigation fixes, workspace compatibility, MDS support improvements, and UI/UX enhancements
 
+### Dashboards Observability
+
+- [Observability Get Started](features/dashboards-observability/observability-get-started.md) - Major restructure of Getting Started workflows into Logs/Metrics/Traces signal types, telemetry source dropdown, Self Managed/AWS tabs, auto index template creation
+
 ### Security
 
 - [Security Enhancements](features/security/security-enhancements.md) - Datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override, improved certificate error messages, JWT in MultipleAuthentication
