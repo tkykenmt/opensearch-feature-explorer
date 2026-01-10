@@ -128,6 +128,9 @@ The footer bar displays:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#9960](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9960) | Fix autocomplete for new query panel |
+| v3.2.0 | [#10259](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10259) | Change query editor UI - edit button placement |
+| v3.2.0 | [#10337](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10337) | Change generated query UI - scrollable display |
 | v2.18.0 | [#8565](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8565) | Adds editor footer to single line editor on focus |
 | v2.18.0 | [#8045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8045) | Fix order of query editor extensions not working |
 | v2.18.0 | [#8087](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8087) | PPL Autocomplete functions, fields, & table suggestion |
@@ -139,4 +142,5 @@ The footer bar displays:
 
 ## Change History
 
+- **v3.2.0**: Fixed autocomplete stale query issue, improved Tab/Enter key handling for suggestions, made generated query scrollable, refined "Replace query" button placement
 - **v2.18.0** (2024-11-05): Added footer bar to single-line editor, fixed query editor extension ordering, improved PPL autocomplete
