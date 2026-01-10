@@ -21,6 +21,7 @@
 - [S3 Repository Compatibility Fix](features/opensearch/s3-repository.md)
 - [Scaled Float Field Precision Fix](features/opensearch/scaled-float-field.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
+- [Segment Replication](features/opensearch/segment-replication.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
 - [Tiered Caching](features/opensearch/tiered-caching.md)
