@@ -149,6 +149,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#612](https://github.com/opensearch-project/dashboards-search-relevance/pull/612) | Bug fixes for error messages not render correctly for toast notifications |
 | v3.1.0 | [#533](https://github.com/opensearch-project/opensearch-dashboards-search-relevance/pull/533) | Add search relevance workbench features (Dashboards) |
 | v3.1.0 | [#26](https://github.com/opensearch-project/opensearch-search-relevance/pull/26) | Added new experiment type for hybrid search |
 | v3.1.0 | [#29](https://github.com/opensearch-project/opensearch-search-relevance/pull/29) | Extend data model to adopt different experiment options/parameters |
@@ -191,6 +192,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Fixed toast notification error messages not rendering correctly across multiple UI components
 - **v3.1.0** (2025-06-16): Major feature additions - hybrid search experiment type, feature flag, external judgment import, Stats API, URL path changes, security integration with roles
 - **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
 - **v3.1.0** (2025-06-06): Added realistic ESCI-based test dataset with 150 queries and matching judgments

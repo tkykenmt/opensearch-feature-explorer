@@ -136,6 +136,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Toast Notification Bugfix](features/dashboards-search-relevance/toast-notification-bugfix.md) | bugfix | Fix error messages not rendering correctly in toast notifications |
 | [Repository Maintenance](features/dashboards-search-relevance/repository-maintenance.md) | bugfix | Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps |
 
 ### Query Insights
