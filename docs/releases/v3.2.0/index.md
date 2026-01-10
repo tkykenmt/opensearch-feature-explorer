@@ -215,6 +215,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [k-NN Vector Search](features/k-nn/k-nn-vector-search.md) | feature | GPU indexing for FP16/Byte/Binary, ADC, random rotation, gRPC support, dynamic thread defaults |
 | [Lucene-on-Faiss: ADC Support](features/k-nn/lucene-on-faiss.md) | enhancement | ADC support for memory-optimized search with binary quantized indexes |
 | [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md) | bugfix | Don't fall back to CPU on terminal failures during remote index build |
 
