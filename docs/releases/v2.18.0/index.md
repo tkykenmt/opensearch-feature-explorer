@@ -146,6 +146,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Query Workbench Bugfixes](features/dashboards-query-workbench/query-workbench-bugfixes.md) - Bug fixes for modal mounting support and MDS error handling
 
+### Dashboards Reporting
+
+- [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md) - Fix missing EUI component imports in report_settings component
+
 ### Job Scheduler
 
 - [Job Scheduler](features/job-scheduler/job-scheduler.md) - Return LockService from createComponents for Guice injection

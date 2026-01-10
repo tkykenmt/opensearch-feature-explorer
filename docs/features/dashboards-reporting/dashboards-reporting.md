@@ -119,6 +119,7 @@ opensearch-reporting-cli \
 | v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation |
 | v3.0.0 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |
 | v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |
+| v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |
 
 ## References
 
@@ -131,3 +132,4 @@ opensearch-reporting-cli \
 ## Change History
 
 - **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
+- **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component
