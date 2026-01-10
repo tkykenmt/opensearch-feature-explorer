@@ -169,6 +169,7 @@
 - [Explore Traces](opensearch-dashboards/explore-traces.md)
 - [i18n & Localization](opensearch-dashboards/i18n-localization.md)
 - [Input Control Visualization](opensearch-dashboards/input-control-visualization.md)
+- [Keyboard Shortcuts](opensearch-dashboards/keyboard-shortcuts.md)
 - [Monaco Editor](opensearch-dashboards/monaco-editor.md)
 - [Navigation](opensearch-dashboards/navigation.md)
 - [OpenSearch UI (OUI)](opensearch-dashboards/oui.md)

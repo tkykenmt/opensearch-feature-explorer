@@ -12,3 +12,4 @@
 - [OpenSearch Dashboards UI Enhancements](features/opensearch-dashboards/opensearch-dashboards-ui-enhancements.md)
 - [OpenSearch Dashboards Visualization Enhancements](features/opensearch-dashboards/opensearch-dashboards-visualization-enhancements.md)
 - [PPL/Query Enhancements](features/opensearch-dashboards/ppl-query-enhancements.md)
+- [OpenSearch Dashboards Keyboard Shortcuts](features/opensearch-dashboards/opensearch-dashboards-keyboard-shortcuts.md)
