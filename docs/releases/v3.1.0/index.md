@@ -48,6 +48,7 @@
 
 ### Security
 
+- [Security Backend Bug Fixes](features/security/security-backend-bug-fixes.md) - Stale cache post snapshot restore, compliance audit log diff, DLS/FLS filter reader, auth header logging, password reset UI, forecasting permissions
 - [Security Dependency Updates](features/security/security-dependency-updates.md) - 24 dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, and CVE-2024-52798 fix
 - [Security Permissions](features/security/security-permissions.md) - Add forecast roles and fix missing cluster:monitor and mapping get permissions
 

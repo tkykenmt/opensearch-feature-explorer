@@ -2,7 +2,7 @@
 
 ## Summary
 
-This document tracks security-related bug fixes across OpenSearch Security plugin, Security Analytics plugin, and related components. These fixes address various issues including system index access control, authentication audit logging, configuration detection, SSL settings propagation, and stored field handling.
+This document tracks security-related bug fixes across OpenSearch Security plugin, Security Analytics plugin, Security Dashboards plugin, and related components. These fixes address various issues including system index access control, authentication audit logging, configuration detection, SSL settings propagation, stored field handling, cache synchronization, compliance audit logging, and DLS/FLS filtering.
 
 ## Details
 
@@ -17,11 +17,21 @@ graph TB
         SSL[SSL Dual Mode]
         HASH[HashingStoredFieldVisitor]
         MAP[Index Mappings]
+        CACHE[Security Index Cache]
+        AUDIT[Compliance Audit Log]
+        DLSFLS[DLS/FLS Filter Reader]
+        AUTH[Basic Authenticator]
+    end
+    
+    subgraph "Security Dashboards"
+        PWD[Password Reset UI]
+        PERM[Permissions Dropdown]
     end
     
     subgraph "Security Analytics"
         SA[Security Analytics Plugin]
         FORE[Forecasting Tests]
+        GUAVA[Guava Dependencies]
     end
     
     subgraph "Alerting"
@@ -33,6 +43,8 @@ graph TB
     SSL --> |Settings Propagation| Core
     MAP --> |Index Operations| Core
     HASH --> |Field Handling| Core
+    CACHE --> |Snapshot Restore| Core
+    DLSFLS --> |Field Filtering| Core
 ```
 
 ### Components
@@ -45,6 +57,13 @@ graph TB
 | SSL Dual Mode | Manages SSL/TLS dual mode settings propagation | security |
 | HashingStoredFieldVisitor | Handles stored fields in search operations | security |
 | Index Mappings | Manages index mapping operations for closed indices | security |
+| Security Index Cache | Manages in-memory cache of security index data | security |
+| Compliance Audit Log | Logs diffs for security index write operations | security |
+| DLS/FLS Filter Reader | Handles document and field level security filtering | security |
+| Basic Authenticator | Handles HTTP Basic authentication and logging | security |
+| Password Reset UI | Manages password reset form in dashboards | security-dashboards-plugin |
+| Permissions Dropdown | Static dropdown for cluster/index permissions | security-dashboards-plugin |
+| Guava Dependencies | Runtime dependencies for security analytics | security-analytics |
 | Role Permissions | Manages alerting role permissions | alerting |
 
 ### Configuration
@@ -81,11 +100,22 @@ GET /my-index/_search
 - SSL dual mode changes require companion OpenSearch core changes
 - Some fixes are backports and may have version-specific behavior
 - Demo configuration detection requires SnakeYaml library for nested YAML parsing
+- Cache reload on snapshot restore adds small overhead during restore operations
+- Compliance audit log fix requires proper configuration of `write_log_diffs` and `write_metadata_only` settings
 
 ## Related PRs
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.1.0 | [#5307](https://github.com/opensearch-project/security/pull/5307) | security | Fix security index stale cache post snapshot restore |
+| v3.1.0 | [#5279](https://github.com/opensearch-project/security/pull/5279) | security | Fix compliance audit log diff computation |
+| v3.1.0 | [#5303](https://github.com/opensearch-project/security/pull/5303) | security | Fix DlsFlsFilterLeafReader PointValues handling |
+| v3.1.0 | [#5377](https://github.com/opensearch-project/security/pull/5377) | security | Conditional invalid auth header logging |
+| v3.1.0 | [#5331](https://github.com/opensearch-project/security/pull/5331) | security | Fix dependabot changelog workflow |
+| v3.1.0 | [#5334](https://github.com/opensearch-project/security/pull/5334) | security | Fix assemble workflow for Jenkins build |
+| v3.1.0 | [#2238](https://github.com/opensearch-project/security-dashboards-plugin/pull/2238) | security-dashboards-plugin | Fix page reload on invalid password |
+| v3.1.0 | [#2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253) | security-dashboards-plugin | Add forecasting transport actions to dropdown |
+| v3.1.0 | [#1530](https://github.com/opensearch-project/security-analytics/pull/1530) | security-analytics | Fix guava dependency scope |
 | v2.18.0 | [#4775](https://github.com/opensearch-project/security/pull/4775) | security | Fix admin system index read |
 | v2.18.0 | [#4770](https://github.com/opensearch-project/security/pull/4770) | security | Remove SAML failed login audit |
 | v2.18.0 | [#4798](https://github.com/opensearch-project/security/pull/4798) | security | Handle non-flat YAML settings |
@@ -96,6 +126,9 @@ GET /my-index/_search
 
 ## References
 
+- [Issue #5308](https://github.com/opensearch-project/security/issues/5308): Stale cache post snapshot restore
+- [Issue #5280](https://github.com/opensearch-project/security/issues/5280): Compliance audit log diff computation issue
+- [Issue #2189](https://github.com/opensearch-project/security-dashboards-plugin/issues/2189): Page reload on invalid password
 - [Issue #4608](https://github.com/opensearch-project/security/issues/4608): SAML failed login audit issue
 - [Issue #4735](https://github.com/opensearch-project/security/issues/4735): Demo config nested YAML issue
 - [Issue #4755](https://github.com/opensearch-project/security/issues/4755): Admin system index read issue
@@ -104,4 +137,5 @@ GET /my-index/_search
 
 ## Change History
 
+- **v3.1.0** (2025-06-10): Security backend bug fixes including stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements, password reset UI fixes, forecasting permissions, and guava dependency fixes
 - **v2.18.0** (2024-10-29): Multiple security bug fixes including system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
