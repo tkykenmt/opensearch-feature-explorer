@@ -4,6 +4,8 @@
 
 This page contains feature reports for OpenSearch v2.18.0.
 
+- [Release Summary](summary.md)
+
 ## Features by Repository
 
 ### OpenSearch
