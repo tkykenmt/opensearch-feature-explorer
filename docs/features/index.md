@@ -276,6 +276,10 @@
 
 - [OpenSearch Dashboards Notifications](dashboards-notifications/dashboards-notifications.md)
 
+## notifications
+
+- [Notifications Plugin](notifications/notifications-plugin.md)
+
 ## dashboards-query-workbench
 
 - [Query Workbench](dashboards-query-workbench/query-workbench.md)

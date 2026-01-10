@@ -57,3 +57,7 @@
 ### Observability
 
 - [Observability Release Maintenance](features/observability/observability-release-maintenance.md) - Version increments, release notes, and bug fixes for trace analytics
+
+### Notifications
+
+- [Notifications Maintenance](features/notifications/notifications-maintenance.md) - Migrate from javax.mail to jakarta.mail APIs and version increment to 3.1.0-SNAPSHOT
