@@ -151,6 +151,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Release Notes & Documentation](features/query-insights/release-notes-documentation.md) | bugfix | Release notes for v3.2.0 with reader search limit increase and infrastructure updates |
 
+### Query Insights Dashboards
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Query Insights Bugfixes](features/query-insights-dashboards/query-insights-bugfixes.md) | bugfix | react-vis migration, search bar fix, table sorting fix, UI improvements |
+
 ### SQL
 
 | Item | Category | Description |
