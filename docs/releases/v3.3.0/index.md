@@ -37,6 +37,7 @@
 - [Scroll API Error Handling](features/opensearch/scroll-api.md)
 - [Search Settings](features/opensearch/search-settings.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
+- [Search Tie-breaking](features/opensearch/search-tie-breaking.md)
 - [Segment Replication](features/opensearch/segment-replication.md)
 - [Skip List](features/opensearch/skip-list.md)
 - [Star Tree Index](features/opensearch/star-tree-index.md)
