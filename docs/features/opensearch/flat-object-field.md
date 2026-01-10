@@ -141,23 +141,26 @@ GET /products/_search
 - No aggregations on subfields using dot notation
 - No filtering by subfields
 - Painless scripting not supported for retrieving subfield values
-- Wildcard queries not supported for retrieving subfield values
 - Maximum field value length in dot notation is 2²⁴ − 1
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#14383](https://github.com/opensearch-project/OpenSearch/pull/14383) | Use IndexOrDocValuesQuery to optimize query, delegate to KeywordFieldType |
 | v2.18.0 | [#15985](https://github.com/opensearch-project/OpenSearch/pull/15985) | Fix infinite loop when parsing invalid token types |
 | v2.7.0 | - | Initial implementation of flat_object field type |
 
 ## References
 
+- [Issue #11537](https://github.com/opensearch-project/OpenSearch/issues/11537): Feature request for IndexOrDocValuesQuery support
+- [Issue #11635](https://github.com/opensearch-project/OpenSearch/issues/11635): Bug report for code duplication in query generation
 - [Issue #15982](https://github.com/opensearch-project/OpenSearch/issues/15982): Bug report for infinite loop with invalid tokens
 - [Flat object documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/flat-object/): Official documentation
 - [Object field types](https://docs.opensearch.org/latest/field-types/supported-field-types/object-fields/): Overview of object field types
+- [Use flat object in OpenSearch](https://opensearch.org/blog/flat-object/): Blog post
 
 ## Change History
 
-- **v2.18.0** (2024-10-22): Fixed infinite loop bug when flat_object field receives invalid token types (arrays, strings, numbers). Now throws ParsingException with clear error message.
+- **v2.18.0** (2024-10-22): Added IndexOrDocValuesQuery optimization for improved query performance. Delegated query generation to KeywordFieldType to reduce code duplication. Enabled wildcard query support. Fixed infinite loop bug when flat_object field receives invalid token types.
 - **v2.7.0** (2023-04-18): Initial implementation of flat_object field type.

@@ -14,6 +14,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Dynamic Settings](features/opensearch/dynamic-settings.md) - Make multiple cluster settings dynamic for tuning on larger clusters
 - [Wildcard Query Fixes](features/opensearch/wildcard-query-fixes.md) - Fix escaped wildcard character handling and case-insensitive query on wildcard field
 - [Flat Object Field](features/opensearch/flat-object-field.md) - Fix infinite loop when flat_object field contains invalid token types
+- [Flat Object Query Optimization](features/opensearch/flat-object-query-optimization.md) - Use IndexOrDocValuesQuery to optimize query performance, enable wildcard queries
 - [Index Settings](features/opensearch/index-settings.md) - Fix default value handling when setting index.number_of_replicas and index.number_of_routing_shards to null
 - [Multi-Search API](features/opensearch/multi-search-api.md) - Fix multi-search with template doesn't return status code
 - [Node Join/Leave](features/opensearch/node-join-leave.md) - Fix race condition in node-join and node-left loop
