@@ -5,6 +5,7 @@
 ### OpenSearch
 
 - [Approximation Framework](features/opensearch/approximation-framework.md) - BKD traversal optimization for skewed datasets with DFS strategy
+- [Async Shard Batch Fetch](features/opensearch/async-shard-batch-fetch.md) - Enabled by default with 20s timeout for improved cluster manager resilience
 - [Crypto/KMS Plugin](features/opensearch/crypto-kms-plugin.md) - Decoupled plugin initialization and AWS SDK v2.x dependency upgrade
 - [Dependency Bumps](features/opensearch/dependency-bumps.md) - 21 dependency updates including CVE-2025-27820 fix, Netty, Gson, Azure SDK updates
 - [DocRequest Refactoring](features/opensearch/docrequest-refactoring.md) - Generic interface for single-document operations
