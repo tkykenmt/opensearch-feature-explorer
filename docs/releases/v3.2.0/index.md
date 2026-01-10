@@ -129,6 +129,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [ML Commons Testing & Coverage](features/ml-commons/ml-commons-testing-coverage.md) | bugfix | Integration test stability fix, memory container unit tests, JaCoCo 0.8.13 upgrade |
+| [ML Commons Documentation & Tutorials](features/ml-commons/ml-commons-documentation-tutorials.md) | bugfix | Multi-modal search, semantic highlighter, neural sparse, language identification, agentic RAG tutorials |
 
 ### Dashboards Search Relevance
 
