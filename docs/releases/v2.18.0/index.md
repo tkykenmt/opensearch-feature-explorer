@@ -140,6 +140,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Query Workbench Bugfixes](features/dashboards-query-workbench/query-workbench-bugfixes.md) - Bug fixes for modal mounting support and MDS error handling
 
+### Observability
+
+- [Observability Bugfixes](features/observability/observability-bugfixes.md) - Multiple bug fixes including navigation fixes, workspace compatibility, MDS support improvements, and UI/UX enhancements
+
 ### Security
 
 - [Security Bugfixes](features/security/security-bugfixes.md) - Multiple bug fixes including system index access control, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
