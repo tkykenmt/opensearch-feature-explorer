@@ -99,9 +99,9 @@ The WebSearchTool enables agents to search the web and retrieve information. It 
 
 ### PPLTool
 
-The PPLTool translates natural language questions into Piped Processing Language (PPL) queries:
+The PPLTool translates natural language questions into Piped Processing Language (PPL) queries. It supports both OpenSearch and Spark data sources through the `datasourceType` parameter.
 
-**Usage Example:**
+**Usage Example (OpenSearch):**
 ```json
 {
   "type": "PPLTool",
@@ -112,6 +112,21 @@ The PPLTool translates natural language questions into Piped Processing Language
   }
 }
 ```
+
+**Usage Example (Spark/S3):**
+```json
+{
+  "type": "PPLTool",
+  "parameters": {
+    "model_id": "<llm_model_id>",
+    "index": "my-spark-table",
+    "question": "Show me the top 10 records",
+    "type": "s3"
+  }
+}
+```
+
+The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `datasourceType`, enabling the model to generate appropriate PPL syntax for the target data source.
 
 ### Configuration
 
@@ -130,6 +145,7 @@ The PPLTool translates natural language questions into Piped Processing Language
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#587](https://github.com/opensearch-project/skills/pull/587) | Add data source type parameter to PPLTool for Spark/S3 support |
 | v3.1.0 | [#581](https://github.com/opensearch-project/skills/pull/581) | Fix fields bug in PPL tool (multi-field mapping support) |
 | v3.1.0 | [#575](https://github.com/opensearch-project/skills/pull/575) | Fix conflict in dependency versions |
 | v3.0.0 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool |
@@ -151,6 +167,6 @@ The PPLTool translates natural language questions into Piped Processing Language
 
 ## Change History
 
-- **v3.1.0** (2025-05-06): Fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
+- **v3.1.0** (2025-05-06): Added data source type parameter (`datasourceType`) to PPLTool for Spark/S3 data source support; fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
 - **v3.0.0** (2025-02-25): Added WebSearchTool, fixed PPLTool empty list bug, updated dependencies, enhanced developer guide
 - **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool
