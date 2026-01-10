@@ -7,6 +7,7 @@
 - [Hybrid Query](neural-search/hybrid-query.md)
 - [Neural Search Bug Fixes](neural-search/neural-search-bug-fixes.md)
 - [Neural Search Compatibility](neural-search/neural-search-compatibility.md)
+- [Neural Search Dependencies](neural-search/neural-search-dependencies.md)
 - [Neural Search Rescore](neural-search/neural-search-rescore.md)
 - [Neural Search Reranking](neural-search/neural-search-reranking.md)
 - [Neural Search Stats](neural-search/neural-search-stats.md)
