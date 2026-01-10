@@ -150,6 +150,20 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#70](https://github.com/opensearch-project/search-relevance/pull/70) | Add realistic ESCI-based test dataset |
+| v3.1.0 | [#22](https://github.com/opensearch-project/search-relevance/pull/22) | Build search request with normal parsing and wrapper query |
+| v3.1.0 | [#27](https://github.com/opensearch-project/search-relevance/pull/27) | LLM Judgment Processor improvements |
+| v3.1.0 | [#45](https://github.com/opensearch-project/search-relevance/pull/45) | Handle when no experiment variants exist |
+| v3.1.0 | [#60](https://github.com/opensearch-project/search-relevance/pull/60) | Enable Search Relevance backend plugin in demo scripts |
+| v3.1.0 | [#64](https://github.com/opensearch-project/search-relevance/pull/64) | Migrate from judgment score to judgment rating |
+| v3.1.0 | [#65](https://github.com/opensearch-project/search-relevance/pull/65) | Added lazy index creation for APIs |
+| v3.1.0 | [#69](https://github.com/opensearch-project/search-relevance/pull/69) | Extend hybrid search optimizer demo script |
+| v3.1.0 | [#74](https://github.com/opensearch-project/search-relevance/pull/74) | Set limit for number of fields programmatically |
+| v3.1.0 | [#77](https://github.com/opensearch-project/search-relevance/pull/77) | Change model for Judgment entity |
+| v3.1.0 | [#93](https://github.com/opensearch-project/search-relevance/pull/93) | Fix judgment handling for implicit judgments |
+| v3.1.0 | [#98](https://github.com/opensearch-project/search-relevance/pull/98) | Refactor and fix LLM judgment duplication issue |
+| v3.1.0 | [#99](https://github.com/opensearch-project/search-relevance/pull/99) | Change model for Experiment and Evaluation Result entities |
+| v3.1.0 | [#116](https://github.com/opensearch-project/search-relevance/pull/116) | Add text validation and query set file size check |
+| v3.1.0 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer |
 
 ## References
 
@@ -158,7 +172,15 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - [Dashboards Search Relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
 - [ESCI Dataset](https://github.com/amazon-science/esci-data): Amazon Shopping Queries Dataset
 - [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post
+- [Issue #12](https://github.com/opensearch-project/search-relevance/issues/12): LLM Judgment improvements
+- [Issue #14](https://github.com/opensearch-project/search-relevance/issues/14): Search request builder fix
+- [Issue #55](https://github.com/opensearch-project/search-relevance/issues/55): Lazy index creation
+- [Issue #71](https://github.com/opensearch-project/search-relevance/issues/71): Dynamic field mapping issues
+- [Issue #95](https://github.com/opensearch-project/search-relevance/issues/95): LLM judgment duplication
+- [Issue #109](https://github.com/opensearch-project/search-relevance/issues/109): Missing variants in Hybrid Optimizer
+- [Issue #114](https://github.com/opensearch-project/search-relevance/issues/114): Input validation
 
 ## Change History
 
+- **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
 - **v3.1.0** (2025-06-06): Added realistic ESCI-based test dataset with 150 queries and matching judgments
