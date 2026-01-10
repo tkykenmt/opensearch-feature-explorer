@@ -97,6 +97,10 @@
 
 - [Flow Framework Dependencies](features/flow-framework/flow-framework-dependencies.md) - Conditional DynamoDB client dependency and data summary with log pattern agent template
 
+### Index Management
+
+- [Notifications Improvements](features/index-management/notifications-improvements.md) - Fix false positive notifications in Snapshot Management for version conflict exceptions
+
 ### Dashboards Assistant
 
 - [Dashboard Assistant CI Fixes](features/dashboards-assistant/dashboard-assistant-ci-fixes.md) - Fix CI failures due to path alias babel configuration changes
