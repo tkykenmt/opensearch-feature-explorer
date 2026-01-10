@@ -126,6 +126,29 @@ GET /_msearch
 { "query": { "match": { "title": "opensearch" }}, "search_pipeline": "rerank_pipeline"}
 ```
 
+#### Using Pipeline with Search Template (v3.2.0+)
+
+```json
+POST /my-index/_search/template
+{
+  "id": "my_search_template",
+  "params": {
+    "query_string": "opensearch"
+  },
+  "search_pipeline": "my_pipeline"
+}
+```
+
+#### Using Pipeline with Multi-Search Template (v3.2.0+)
+
+```
+GET /_msearch/template
+{"index":"my-nlp-index1"}
+{"id":"search_template_1","params":{"play_name":"hello"}, "search_pipeline": "my_pipeline2"}
+{"index":"my-nlp-index1"}
+{"id":"search_template_2","params":{"play_name":"zoo"}, "search_pipeline": "my_pipeline1"}
+```
+
 #### Setting Default Pipeline
 
 ```json
@@ -159,22 +182,28 @@ POST /my-index/_search
 - Complex pipelines with ML inference can significantly increase latency
 - Pipeline errors can cause search failures if not handled properly
 - msearch pipeline support requires OpenSearch 2.18.0 or later
+- Search template pipeline support requires OpenSearch 3.2.0 or later
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18564](https://github.com/opensearch-project/OpenSearch/pull/18564) | Added search pipeline support in search and msearch template |
 | v2.18.0 | [#15923](https://github.com/opensearch-project/OpenSearch/pull/15923) | Added msearch API support for search pipeline name |
 
 ## References
 
+- [Issue #18508](https://github.com/opensearch-project/OpenSearch/issues/18508): Feature request for search pipeline support in msearch template
 - [Issue #15748](https://github.com/opensearch-project/OpenSearch/issues/15748): Feature request for msearch pipeline support
 - [Search Pipelines Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/): Official documentation
 - [Using a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/using-search-pipeline/): Usage guide
 - [Creating a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Creation guide
+- [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/search-template/): Search template API
+- [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/msearch-template/): Msearch template API
 - [Hybrid Search Blog](https://opensearch.org/blog/hybrid-search/): Hybrid search with normalization processor
 - [Optimizing Hybrid Search Blog](https://opensearch.org/blog/hybrid-search-optimization/): Performance optimization
 
 ## Change History
 
+- **v3.2.0** (2026-01-14): Added support for specifying search pipeline in search template and msearch template APIs
 - **v2.18.0** (2024-11-05): Added support for specifying search pipeline in msearch API request body
