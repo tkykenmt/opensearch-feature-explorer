@@ -4,6 +4,7 @@
 
 - [Batch Ingestion](neural-search/batch-ingestion.md)
 - [Hybrid Query](neural-search/hybrid-query.md)
+- [Neural Search Bug Fixes](neural-search/neural-search-bug-fixes.md)
 - [Neural Search Compatibility](neural-search/neural-search-compatibility.md)
 - [Neural Search Rescore](neural-search/neural-search-rescore.md)
 - [Neural Search Reranking](neural-search/neural-search-reranking.md)
