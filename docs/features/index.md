@@ -305,6 +305,7 @@
 ## security-analytics
 
 - [Security Analytics Detectors](security-analytics/security-analytics-detectors.md)
+- [Security Analytics System Indices](security-analytics/security-analytics-system-indices.md)
 - [Threat Intelligence](security-analytics/threat-intelligence.md)
 
 ## security-analytics-dashboards

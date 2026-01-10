@@ -97,6 +97,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [k-NN Maintenance](features/k-nn/k-nn-maintenance.md) - Lucene 9.12 codec compatibility, force merge performance optimization, benchmark folder removal, code refactoring
 
+### Security Analytics
+
+- [Security Analytics System Indices](features/security-analytics/security-analytics-system-indices.md) - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix
+
 ### Skills
 
 - [Skills Plugin Dependencies](features/skills/skills-plugin-dependencies.md) - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes
