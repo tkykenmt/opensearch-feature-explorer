@@ -130,6 +130,7 @@ The PPLTool translates natural language questions into Piped Processing Language
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#581](https://github.com/opensearch-project/skills/pull/581) | Fix fields bug in PPL tool (multi-field mapping support) |
 | v3.1.0 | [#575](https://github.com/opensearch-project/skills/pull/575) | Fix conflict in dependency versions |
 | v3.0.0 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool |
 | v3.0.0 | [#541](https://github.com/opensearch-project/skills/pull/541) | Fix PPLTool empty list bug |
@@ -150,6 +151,6 @@ The PPLTool translates natural language questions into Piped Processing Language
 
 ## Change History
 
-- **v3.1.0** (2025-05-06): Fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
+- **v3.1.0** (2025-05-06): Fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
 - **v3.0.0** (2025-02-25): Added WebSearchTool, fixed PPLTool empty list bug, updated dependencies, enhanced developer guide
 - **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool

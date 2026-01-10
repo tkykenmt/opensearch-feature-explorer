@@ -40,6 +40,7 @@
 ### Skills
 
 - [ML Skills](features/skills/ml-skills.md) - Fix httpclient5 dependency version conflict and apply Spotless formatting
+- [Skills PPL Tool Fixes](features/skills/skills-ppl-tool-fixes.md) - Fix fields bug to expose multi-field mappings for aggregation queries
 
 ### Reporting
 
