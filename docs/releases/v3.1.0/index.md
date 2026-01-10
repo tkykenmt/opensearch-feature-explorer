@@ -49,6 +49,7 @@
 
 ### Security
 
+- [Resource Access Control Framework](features/security/resource-access-control-framework.md) - Centralized resource sharing SPI with 1:1 backing indices and automatic access evaluation
 - [Security Backend Bug Fixes](features/security/security-backend-bug-fixes.md) - Stale cache post snapshot restore, compliance audit log diff, DLS/FLS filter reader, auth header logging, password reset UI, forecasting permissions
 - [Security Cache Management](features/security/security-cache-management.md) - Selective user cache invalidation endpoint and dynamic cache TTL configuration
 - [Security Debugging](features/security/security-debugging.md) - Enhanced error messages for "Security not initialized" with cluster manager status
