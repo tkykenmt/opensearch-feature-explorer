@@ -216,6 +216,7 @@
 - [Integration Test Stability](reporting/integration-test-stability.md)
 - [Java Agent Migration](reporting/java-agent-migration.md)
 - [Release Maintenance](reporting/release-maintenance.md)
+- [Reporting Plugin](reporting/reporting-plugin.md)
 
 ## dashboards-reporting
 
