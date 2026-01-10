@@ -119,6 +119,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### ML Commons
 
+- [ML Commons Batch Jobs](features/ml-commons/ml-commons-batch-jobs.md) - Rate limiting, connector credential support, model group access control, and default action types for batch inference/ingestion
 - [ML Commons Model & Inference](features/ml-commons/ml-commons-model-inference.md) - Remote model auto-redeployment filtering, optional llmQuestion for RAG, search extension output support, query string in input_map, MLToolSpec config field, AWS Textract/Comprehend trusted endpoints
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md) - 11 bug fixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC, and agent logging
 - [ML Commons Configuration](features/ml-commons/ml-commons-configuration.md) - Change `.plugins-ml-config` index to use `auto_expand_replicas: 0-all` for maximum availability

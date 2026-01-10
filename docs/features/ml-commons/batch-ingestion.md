@@ -77,6 +77,16 @@ flowchart TB
 
 ### Configuration
 
+#### Cluster Settings
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `plugins.ml_commons.offline_batch_inference_enabled` | Enable batch inference feature | false |
+| `plugins.ml_commons.offline_batch_ingestion_enabled` | Enable batch ingestion feature | false |
+| `plugins.ml_commons.max_batch_inference_tasks` | Maximum concurrent batch inference tasks | 10 |
+| `plugins.ml_commons.max_batch_ingestion_tasks` | Maximum concurrent batch ingestion tasks | 10 |
+| `plugins.ml_commons.batch_ingestion_bulk_size` | Documents per bulk request | 500 |
+
 #### Request Parameters
 
 | Parameter | Type | Required | Description |
@@ -84,7 +94,8 @@ flowchart TB
 | `index_name` | String | Yes | Target OpenSearch index for ingestion |
 | `field_map` | Object | Yes | Maps source file fields to index fields using JSONPath |
 | `ingest_fields` | Array | No | Fields to ingest directly without transformation |
-| `credential` | Object | Yes | Authentication credentials for the data source |
+| `credential` | Object | No | Authentication credentials (not required if `connector_id` provided) |
+| `connector_id` | String | No | Connector ID to fetch credentials from (v2.18.0+) |
 | `data_source` | Object | Yes | Specifies the type and location of source files |
 
 #### Credential Configuration
@@ -211,6 +222,26 @@ POST /_plugins/_ml/_batch_ingestion
 }
 ```
 
+#### Using Connector Credentials (v2.18.0+)
+
+Instead of providing credentials directly, reference a connector to use its stored credentials:
+
+```json
+POST /_plugins/_ml/_batch_ingestion
+{
+  "index_name": "my-nlp-index-openai",
+  "field_map": {
+    "question": "source[1].$.body.input[0]",
+    "question_embedding": "source[0].$.response.body.data[0].embedding"
+  },
+  "connector_id": "your_openai_connector_id",
+  "data_source": {
+    "type": "openAI",
+    "source": ["file-output-id", "file-input-id"]
+  }
+}
+```
+
 #### Checking Ingestion Status
 
 ```json
@@ -262,26 +293,33 @@ sequenceDiagram
 - Supported data sources: S3 and OpenAI only
 - Source files must be in JSONL format (one JSON object per line)
 - Field mapping requires JSONPath syntax
-- Credentials provided in plaintext in request body
 - No automatic retry for failed documents
 - Large files may require sufficient memory on the coordinating node
 - No streaming support; entire file is processed in memory
+- Rate limiting returns HTTP 429 when task limits exceeded (v2.18.0+)
+- Connector credential feature requires the connector to have PREDICT action configured (v2.18.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#3080](https://github.com/opensearch-project/ml-commons/pull/3080) | Default action types for batch job task management |
+| v2.18.0 | [#2989](https://github.com/opensearch-project/ml-commons/pull/2989) | Connector credential support for batch ingestion |
+| v2.18.0 | [#3098](https://github.com/opensearch-project/ml-commons/pull/3098) | Model group access control for batch job APIs |
+| v2.18.0 | [#3116](https://github.com/opensearch-project/ml-commons/pull/3116) | Rate limiting and configurable bulk size |
 | v2.17.0 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters |
 | v2.17.0 | [#2825](https://github.com/opensearch-project/ml-commons/pull/2825) | Support get batch transform job status in get task API |
 
 ## References
 
 - [Issue #2840](https://github.com/opensearch-project/ml-commons/issues/2840): Offline Batch Inference and Batch Ingestion
-- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
-- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/async-batch-ingest/): API reference
-- [Batch Predict API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/model-apis/batch-predict/): Related batch prediction API
+- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
+- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/async-batch-ingest/): API reference
+- [Batch Predict API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/model-apis/batch-predict/): Related batch prediction API
+- [ML Commons Cluster Settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Configuration settings
 - [Scaling Vector Generation Blog](https://opensearch.org/blog/scaling-vector-generation-batch-ml-inference-with-opensearch-ingestion-and-ml-commons/): Blog post on batch ML inference integration
 
 ## Change History
 
+- **v2.18.0** (2024-10-29): Added rate limiting, connector credential support, model group access control, and default action types
 - **v2.17.0** (2024-09-17): Initial implementation with S3 and OpenAI data source support, JSONPath field mapping, and batch job status tracking
