@@ -71,6 +71,7 @@
 - [Gradle Build System](opensearch/gradle-build-system.md)
 - [HTTP Client](opensearch/http-client.md)
 - [Identity Feature Flag Removal](opensearch/identity-feature-flag-removal.md)
+- [Index Refresh](opensearch/index-refresh.md)
 - [Java Runtime & JPMS](opensearch/java-runtime-and-jpms.md)
 - [Lucene 10 Upgrade](opensearch/lucene-10-upgrade.md)
 - [Lucene Similarity](opensearch/lucene-similarity.md)
