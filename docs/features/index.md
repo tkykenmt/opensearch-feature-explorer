@@ -86,6 +86,7 @@
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
 - [Query Coordinator Context](opensearch/query-coordinator-context.md)
 - [Query Optimization](opensearch/query-optimization.md)
+- [Query Phase Plugin Extension](opensearch/query-phase-plugin-extension.md)
 - [Query String & Regex Queries](opensearch/query-string-regex.md)
 - [Randomness](opensearch/randomness.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
