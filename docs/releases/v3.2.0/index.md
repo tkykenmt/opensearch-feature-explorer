@@ -124,6 +124,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [XGBoost Missing Values Support](features/opensearch-learning-to-rank-base/xgboost-missing-values-support.md) | feature | Proper NaN handling for XGBoost models to match native XGBoost behavior |
 | [OpenSearch Learning to Rank](features/opensearch-learning-to-rank-base/opensearch-learning-to-rank.md) | bugfix | Gradle 8.14 upgrade, JDK24 support, flaky test fix for similarity score comparisons |
 
 ### Notifications
