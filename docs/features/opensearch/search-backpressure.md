@@ -123,16 +123,19 @@ PUT /_cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18649](https://github.com/opensearch-project/OpenSearch/pull/18649) | Make node duress values cacheable for NodeDuressTrackers |
 | v3.0.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API |
 | v2.18.0 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings |
 
 ## References
 
+- [Issue #18641](https://github.com/opensearch-project/OpenSearch/issues/18641): Latency regression due to node duress trackers
 - [Issue #8698](https://github.com/opensearch-project/OpenSearch/issues/8698): Add total successful task count in nodeStats API
 - [Issue #15495](https://github.com/opensearch-project/OpenSearch/issues/15495): [BUG] Updating some search backpressure settings crash the cluster
-- [Search Backpressure Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
 
 ## Change History
 
+- **v3.2.0** (2025-07-01): Added time-based caching for node duress values to reduce latency overhead from /proc filesystem reads
 - **v3.0.0** (2025-05-06): Added `completion_count` field to stats API for calculating cancellation percentages
 - **v2.18.0** (2024-11-05): Added validation for `cancellation_rate`, `cancellation_ratio`, and `cancellation_burst` settings to prevent cluster crashes
