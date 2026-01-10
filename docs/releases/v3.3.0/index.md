@@ -17,6 +17,7 @@
 - [Flaky Test Fixes](features/opensearch/flaky-test-fixes.md)
 - [Index Output](features/opensearch/index-output.md)
 - [Index Refresh](features/opensearch/index-refresh.md)
+- [Java 17 Modernization](features/opensearch/java-17-modernization.md)
 - [Lucene Migration](features/opensearch/lucene-migration.md)
 - [Netty Arena Settings](features/opensearch/netty-arena-settings.md)
 - [NRT Replication Engine](features/opensearch/nrt-replication-engine.md)
