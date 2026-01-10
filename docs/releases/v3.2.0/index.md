@@ -62,3 +62,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Numeric Terms Aggregation Optimization](features/opensearch/numeric-terms-aggregation-optimization.md) | feature | QuickSelect algorithm for large bucket count terms aggregations |
 | [Numeric Field Skip List](features/opensearch/numeric-field-skip-list.md) | feature | Skip list indexing for numeric field doc values to improve range query performance |
 | [Scripted Metric Aggregation](features/opensearch/scripted-metric-aggregation.md) | feature | Support InternalScriptedMetric in InternalValueCount and InternalAvg reduce methods |
+| [Composite Aggregation Optimization](features/opensearch/composite-aggregation-optimization.md) | feature | Optimize composite aggregations by removing unnecessary object allocations |

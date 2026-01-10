@@ -25,6 +25,7 @@
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
 - [Code Cleanup](opensearch/code-cleanup.md)
+- [Composite Aggregation](opensearch/composite-aggregation.md)
 - [Composite Directory Factory](opensearch/composite-directory-factory.md)
 - [Concurrent Segment Search](opensearch/concurrent-segment-search.md)
 - [Crypto KMS Plugin](opensearch/crypto-kms-plugin.md)
