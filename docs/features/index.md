@@ -265,6 +265,7 @@
 
 - [Disk-Based Vector Search](k-nn/disk-based-vector-search.md)
 - [k-NN Byte Vector Support](k-nn/k-nn-byte-vector-support.md)
+- [k-NN Performance & Engine](k-nn/k-nn-performance-engine.md)
 - [Vector Search (k-NN)](k-nn/vector-search-k-nn.md)
 - [k-NN Explain API](k-nn/explain-api.md)
 - [k-NN Iterative Graph Build](k-nn/k-nn-iterative-graph-build.md)
