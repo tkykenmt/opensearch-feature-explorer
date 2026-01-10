@@ -89,6 +89,10 @@
 - [Sync Protobufs Version with Core](features/security/sync-protobufs-version.md)
 - [Security Plugin Dependencies](features/security/security-plugin-dependencies.md)
 
+### ML Commons
+
+- [Updating Gson Version to Resolve Conflict Coming from Core](features/ml-commons/updating-gson-version-to-resolve-conflict-coming-from-core.md)
+
 ### Neural Search
 
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
