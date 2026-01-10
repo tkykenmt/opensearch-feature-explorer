@@ -8,6 +8,7 @@
 - [Neural Search Rescore](neural-search/neural-search-rescore.md)
 - [Neural Sparse Search](neural-search/neural-sparse-search.md)
 - [Semantic Field](neural-search/semantic-field.md)
+- [Text Chunking](neural-search/text-chunking.md)
 
 ## opensearch
 
