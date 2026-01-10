@@ -19,3 +19,4 @@
 - [Star-Tree Index Enhancements](features/opensearch/star-tree-index.md) - Production-ready status, date range queries, nested aggregations, index-level control
 - [Cluster Manager Metrics](features/opensearch/cluster-manager-metrics.md) - Task execution time, node-left counter, and FS health failure metrics
 - [gRPC Transport](features/opensearch/grpc-transport.md) - Performance optimization with pass-by-reference pattern and package reorganization
+- [Unified Highlighter](features/opensearch/unified-highlighter.md) - Add matched_fields support for blending matches from multiple fields

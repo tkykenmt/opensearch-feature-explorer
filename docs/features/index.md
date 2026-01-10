@@ -79,6 +79,7 @@
 - [Thread Context Permissions](opensearch/thread-context-permissions.md)
 - [Tiered Caching](opensearch/tiered-caching.md)
 - [Transport Nodes Action Optimization](opensearch/transport-nodes-action-optimization.md)
+- [Unified Highlighter](opensearch/unified-highlighter.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 - [Workload Management](opensearch/workload-management.md)
 
