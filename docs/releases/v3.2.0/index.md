@@ -47,6 +47,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [System Ingest Processor](features/opensearch/system-ingest-processor.md) | feature | Pass index settings to system ingest processor factories |
 | [Azure Repository Fixes](features/opensearch/azure-repository-fixes.md) | bugfix | Fix SOCKS5 proxy authentication for Azure repository |
 | [Profiler Enhancements](features/opensearch/profiler-enhancements.md) | bugfix | Fix concurrent timings in profiler for concurrent segment search |
+| [Fetch Phase Profiling](features/opensearch/fetch-phase-profiling.md) | feature | Comprehensive fetch phase profiling with detailed timing breakdowns |
 | [Plugin Profiling](features/opensearch/plugin-profiling.md) | feature | Plugin profiling extensibility and multi-shard fetch phase profiling |
 | [Engine Optimization Fixes](features/opensearch/engine-optimization-fixes.md) | bugfix | Fix leafSorter optimization for ReadOnlyEngine and NRTReplicationEngine |
 | [Search Preference & Awareness Fix](features/opensearch/search-preference-awareness-fix.md) | bugfix | Fix custom preference string to ignore awareness attributes for consistent routing |

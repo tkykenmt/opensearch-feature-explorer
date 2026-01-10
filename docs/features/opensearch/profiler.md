@@ -2,7 +2,7 @@
 
 ## Summary
 
-The Query Profiler (Profile API) provides detailed timing information about the execution of individual components of a search request. It helps debug slow queries and understand how to improve search performance by breaking down query execution into measurable components. Starting in v3.2.0, plugins can contribute custom profiling metrics and fetch phase profiling works across multi-shard queries.
+The Query Profiler (Profile API) provides detailed timing information about the execution of individual components of a search request. It helps debug slow queries and understand how to improve search performance by breaking down query execution into measurable components. Starting in v3.2.0, the Profile API includes comprehensive fetch phase profiling with detailed timing breakdowns, plugin profiling extensibility, and multi-shard fetch phase support.
 
 ## Details
 
@@ -22,7 +22,7 @@ graph TB
         CO[Collectors]
     end
     
-    subgraph "Profiling Layer"
+    subgraph "Query Profiling Layer"
         QPB[QueryProfileBreakdown]
         CQPB[ConcurrentQueryProfileBreakdown]
         PP[Plugin Profilers]
@@ -30,8 +30,17 @@ graph TB
     end
     
     subgraph "Fetch Phase"
-        FP[Fetch Profiler]
-        FSR[FetchSearchResult]
+        FP[FetchPhase.execute]
+        FPR[FetchProfiler]
+        FPB[FetchProfileBreakdown]
+    end
+    
+    subgraph "Fetch Sub-Phases"
+        FSP[FetchSourcePhase]
+        EP[ExplainPhase]
+        FDP[FetchDocValuesPhase]
+        HP[HighlightPhase]
+        OTH[Other Sub-Phases...]
     end
     
     subgraph "Coordinator"
@@ -41,7 +50,7 @@ graph TB
     
     subgraph "Output"
         PR[Profile Results]
-        BD[Breakdown Map]
+        BD[Query Breakdown]
         CT[Collector Times]
         AT[Aggregation Times]
         FT[Fetch Times]
@@ -60,8 +69,11 @@ graph TB
     CQPB --> PT
     
     SR --> FP
-    FP --> FSR
-    FSR --> SPC
+    FP --> FPR
+    FPR --> FPB
+    FP --> FSP & EP & FDP & HP & OTH
+    
+    FPR --> SPC
     SPC --> MFP
     
     PT --> PR
@@ -115,7 +127,37 @@ flowchart LR
 | `ProfileTimer` | Low-level timer for measuring individual operations |
 | `ProfileCollector` | Wraps collectors to measure collection time |
 | `SearchPlugin.ProfileMetricsProvider` | Interface for plugins to provide custom profile metrics (v3.2.0+) |
+| `FetchProfiler` | Profiler for fetch phase operations (v3.2.0+) |
+| `FetchProfileBreakdown` | Tracks timing for individual fetch operations (v3.2.0+) |
+| `FetchProfileShardResult` | Holds fetch profile results for a shard (v3.2.0+) |
+| `FetchTimingType` | Enum defining timing points for fetch profiling (v3.2.0+) |
 | `SearchPhaseController.mergeFetchProfiles()` | Merges fetch phase profiles with query phase profiles (v3.2.0+) |
+
+### Fetch Phase Timing Types (v3.2.0+)
+
+| Timing Type | Description |
+|-------------|-------------|
+| `create_stored_fields_visitor` | Time creating the stored fields visitor |
+| `build_sub_phase_processors` | Time building fetch sub-phase processors |
+| `get_next_reader` | Time getting the leaf reader context for a segment |
+| `set_next_reader` | Time setting next reader for each sub-phase processor |
+| `load_stored_fields` | Time loading stored fields for a hit |
+| `load_source` | Time loading the document `_source` |
+| `process` | Time executing a fetch sub-phase |
+
+### Profiled Fetch Sub-Phases (v3.2.0+)
+
+| Sub-Phase | Description |
+|-----------|-------------|
+| `FetchSourcePhase` | Loads document `_source` |
+| `ExplainPhase` | Generates query explanations |
+| `FetchDocValuesPhase` | Loads doc values fields |
+| `FetchFieldsPhase` | Loads stored fields |
+| `FetchVersionPhase` | Retrieves document versions |
+| `SeqNoPrimaryTermPhase` | Retrieves sequence numbers and primary terms |
+| `MatchedQueriesPhase` | Identifies matched named queries |
+| `HighlightPhase` | Generates search highlights |
+| `FetchScorePhase` | Retrieves document scores when sorting |
 
 ### Configuration
 
@@ -160,6 +202,34 @@ Response includes breakdown timing:
             "score_count": 100
           }
         }]
+      }],
+      "fetch": [{
+        "type": "fetch",
+        "description": "fetch",
+        "time_in_nanos": 500000,
+        "breakdown": {
+          "create_stored_fields_visitor": 1000,
+          "create_stored_fields_visitor_count": 1,
+          "build_sub_phase_processors": 5000,
+          "build_sub_phase_processors_count": 1,
+          "get_next_reader": 2000,
+          "get_next_reader_count": 1,
+          "load_stored_fields": 50000,
+          "load_stored_fields_count": 10,
+          "load_source": 30000,
+          "load_source_count": 10
+        },
+        "children": [{
+          "type": "FetchSourcePhase",
+          "description": "FetchSourcePhase",
+          "time_in_nanos": 25000,
+          "breakdown": {
+            "process": 20000,
+            "process_count": 10,
+            "set_next_reader": 5000,
+            "set_next_reader_count": 1
+          }
+        }]
       }]
     }]
   }
@@ -183,11 +253,14 @@ When concurrent segment search is enabled, the profiler provides additional slic
 - Does not measure network latency
 - Does not measure queue wait time
 - Plugin metrics are only included in the query breakdown, not as separate sections (v3.2.0+)
+- Inner hits fetch operations are not profiled (v3.2.0+)
+- Top hits aggregation fetch operations use a separate description (v3.2.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18664](https://github.com/opensearch-project/OpenSearch/pull/18664) | Add fetch phase profiling |
 | v3.2.0 | [#18656](https://github.com/opensearch-project/OpenSearch/pull/18656) | Extend profile capabilities to plugins |
 | v3.2.0 | [#18887](https://github.com/opensearch-project/OpenSearch/pull/18887) | Expand fetch phase profiling to multi-shard queries |
 | v3.2.0 | [#18540](https://github.com/opensearch-project/OpenSearch/pull/18540) | Fix concurrent timings in profiler |
@@ -197,8 +270,10 @@ When concurrent segment search is enabled, the profiler provides additional slic
 - [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
 - [Concurrent Segment Search](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Related feature
 - [Issue #18460](https://github.com/opensearch-project/OpenSearch/issues/18460): RFC for Profiling Extensibility
+- [Issue #1764](https://github.com/opensearch-project/OpenSearch/issues/1764): Original fetch phase profiling request
 
 ## Change History
 
+- **v3.2.0** (2025-07-31): Added comprehensive fetch phase profiling with detailed timing breakdowns for fetch operations and sub-phases
 - **v3.2.0** (2025-08-05): Added plugin profiling extensibility and multi-shard fetch phase profiling
 - **v3.2.0** (2025-06-21): Fixed incorrect timing values for concurrent segment search when timers have zero invocations
