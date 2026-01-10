@@ -253,6 +253,7 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | Bug fix and improvements for rule-based auto tagging |
 | v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | Add configurable limit on rule cardinality |
 | v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | Fix delete rule event consumption for wildcard index based rules |
 | v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
@@ -283,6 +284,6 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Change History
 
-- **v3.2.0** (2026-01-10): Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules in `InMemoryRuleProcessingService`
+- **v3.2.0** (2026-01-10): Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules in `InMemoryRuleProcessingService`; Bug fixes and improvements including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
 - **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic

@@ -41,6 +41,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Rule-based Auto Tagging Fix](features/opensearch/rule-based-auto-tagging-fix.md) | bugfix | Fix delete rule event consumption for wildcard index based rules |
+| [Rule-based Auto Tagging](features/opensearch/rule-based-auto-tagging.md) | feature | Bug fixes and improvements: stricter attribute extraction, centralized validation, force refresh |
 | [Rule Cardinality Limit](features/opensearch/rule-cardinality-limit.md) | feature | Configurable limit on WLM auto-tagging rule cardinality (default: 200) |
 | [System Ingest Pipeline Fix](features/opensearch/system-ingest-pipeline-fix.md) | bugfix | Fix system ingest pipeline to properly handle index templates |
 | [System Ingest Processor](features/opensearch/system-ingest-processor.md) | feature | Pass index settings to system ingest processor factories |
