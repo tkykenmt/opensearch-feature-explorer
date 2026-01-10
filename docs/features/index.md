@@ -226,6 +226,7 @@
 - [Argon2 Password Hashing](security/argon2-password-hashing.md)
 - [Auxiliary Transport SSL](security/auxiliary-transport-ssl.md)
 - [Correlation Alerts](security/correlation-alerts.md)
+- [Protobufs Version Synchronization](security/protobufs-version-sync.md)
 - [Security Auth Enhancements](security/security-auth-enhancements.md)
 - [Security Bugfixes](security/security-bugfixes.md)
 - [Security Cache Management](security/security-cache-management.md)
