@@ -40,6 +40,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [S3 Repository](features/opensearch/s3-repository.md) - Standard retry mode for S3 clients and SLF4J warning fix
 - [Dynamic Threadpool Resize](features/opensearch/dynamic-threadpool-resize.md) - Runtime thread pool size adjustment via cluster settings API
 - [Async Shard Fetch Metrics](features/opensearch/async-shard-fetch-metrics.md) - OTel counter metrics for async shard fetch success and failure tracking
+- [Search API Enhancements](features/opensearch/search-api-enhancements.md) - WithFieldName interface for aggregation/sort builders and successfulSearchShardIndices in SearchRequestContext
 
 ### OpenSearch Dashboards
 
