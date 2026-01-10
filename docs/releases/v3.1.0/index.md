@@ -17,6 +17,7 @@
 - [Percentiles Aggregation](features/opensearch/percentiles-aggregation.md) - Switch to MergingDigest for up to 30x performance improvement
 - [Plugin Installation](features/opensearch/plugin-installation.md) - Fix native plugin installation error caused by PGP public key change
 - [Plugin Testing Framework](features/opensearch/plugin-testing-framework.md) - Enable testing for ExtensiblePlugins using classpath plugins
+- [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md) - Lag metrics, error metrics, configurable queue, retries, create mode, write blocks, consumer reset
 - [Query Bug Fixes](features/opensearch/query-bug-fixes.md) - Fixes for exists query, error handling, field validation, and IP field terms query
 - [Query Optimization](features/opensearch/query-optimization.md) - Automatic must_not range rewrite and sort-query performance improvements
 - [Remote Store](features/opensearch/remote-store.md) - Close index rejection during migration and cluster state diff download fix
