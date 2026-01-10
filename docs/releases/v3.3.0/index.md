@@ -15,6 +15,7 @@
 - [Date Format](features/opensearch/date-format.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
 - [Field Data Cache](features/opensearch/field-data-cache.md)
+- [File Cache Threshold](features/opensearch/file-cache-threshold.md)
 - [Docker Image Updates](features/opensearch/docker-image-updates.md)
 - [Engine API](features/opensearch/engine-api.md)
 - [Field Collapsing with search_after](features/opensearch/field-collapsing-search-after.md)
