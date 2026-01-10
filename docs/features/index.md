@@ -94,6 +94,7 @@
 - [Replication](opensearch/replication.md)
 - [Rescore Named Queries](opensearch/rescore-named-queries.md)
 - [Remote Store](opensearch/remote-store.md)
+- [Remote Store Metadata API](opensearch/remote-store-metadata-api.md)
 - [Repository Rate Limiters](opensearch/repository-rate-limiters.md)
 - [RestHandler.Wrapper](opensearch/resthandler-wrapper.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
