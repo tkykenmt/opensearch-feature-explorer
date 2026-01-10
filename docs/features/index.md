@@ -69,6 +69,7 @@
 - [Platform Support](opensearch/platform-support.md)
 - [Plugin Installation](opensearch/plugin-installation.md)
 - [Plugin Testing Framework](opensearch/plugin-testing-framework.md)
+- [Profiler](opensearch/profiler.md)
 - [Pull-based Ingestion](opensearch/pull-based-ingestion.md)
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
 - [Query Coordinator Context](opensearch/query-coordinator-context.md)
