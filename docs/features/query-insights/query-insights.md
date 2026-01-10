@@ -182,6 +182,10 @@ GET /_insights/live_queries?sort=latency&size=5
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#365](https://github.com/opensearch-project/query-insights/pull/365) | Fix node-level top queries request parameter serialization |
+| v3.1.0 | [#210](https://github.com/opensearch-project/query-insights-dashboards/pull/210) | Fix live query status field location in response |
+| v3.1.0 | [#206](https://github.com/opensearch-project/query-insights-dashboards/pull/206) | Fix failing Cypress tests |
+| v3.1.0 | [#205](https://github.com/opensearch-project/query-insights-dashboards/pull/205) | Fix CI version mismatch |
 | v3.1.0 | [#364](https://github.com/opensearch-project/query-insights/pull/364) | Fix flaky integration tests |
 | v3.1.0 | [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node and health stats integration tests |
 | v3.0.0 | [#295](https://github.com/opensearch-project/query-insights/pull/295) | Inflight Queries API |
@@ -225,7 +229,7 @@ GET /_insights/live_queries?sort=latency&size=5
 
 ## Change History
 
-- **v3.1.0**: Fixed flaky integration tests; added multi-node cluster integration tests (`QueryInsightsClusterIT`); added health stats REST API integration tests (`HealthStatsRestIT`); improved test infrastructure with node targeting and retry logic
+- **v3.1.0**: Fixed node-level top queries request parameter serialization bug (parameters not passed to other nodes); fixed `is_cancelled` field location in Live Queries API response; improved Cypress test stability with better timeouts and health checks; fixed CI version mismatch between OpenSearch and Dashboards; fixed flaky integration tests; added multi-node cluster integration tests (`QueryInsightsClusterIT`); added health stats REST API integration tests (`HealthStatsRestIT`); improved test infrastructure with node targeting and retry logic
 - **v3.0.0**: Added Live Queries API, default index template, verbose parameter, profile query filtering, strict hash check
 - **v2.18.0**: Added Health Stats API for monitoring plugin health; added OpenTelemetry error metrics counters; added field name and type support for query shape grouping (defaults changed to `true`); added time range parameters for historical query retrieval; added cache eviction and cluster state listener for index field type mappings
 - **v2.17.0**: Fixed listener startup when query metrics enabled; added query shape hash method; fixed CVE-2023-2976; improved integration test coverage for query grouping; added code hygiene checks (Spotless, Checkstyle); fixed snapshot publishing configuration
