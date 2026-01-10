@@ -189,6 +189,7 @@
 - [Security Configuration](security/security-configuration.md)
 - [Security Debugging](security/security-debugging.md)
 - [Security Permissions](security/security-permissions.md)
+- [Permission Validation](security/permission-validation.md)
 - [Security Performance Improvements](security/security-performance-improvements.md)
 - [Security Plugin](security/security-plugin.md)
 - [Security Plugin Dependencies](security/security-plugin-dependencies.md)
