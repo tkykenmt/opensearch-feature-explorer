@@ -5,6 +5,7 @@
 ### OpenSearch
 
 - [Alias Write Index Policy](features/opensearch/alias-write-index-policy.md)
+- [Client API Enhancements](features/opensearch/client-api-enhancements.md)
 - [Cardinality Aggregation](features/opensearch/cardinality-aggregation.md)
 - [Cluster State Caching](features/opensearch/cluster-state-caching.md)
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md)
