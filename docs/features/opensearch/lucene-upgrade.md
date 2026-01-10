@@ -69,6 +69,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19397](https://github.com/opensearch-project/OpenSearch/pull/19397) | Migrate deprecated usages of Operations#union |
 | v3.1.0 | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Upgrade to Lucene 10.2.1 |
 | v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction |
 | v3.1.0 | [neural-search#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies for hybrid query |
@@ -88,6 +89,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 ## Change History
 
+- **v3.3.0**: Migrate deprecated `Operations#union(Automaton, Automaton)` usages to `Operations#union(Collection<Automaton>)` in AutomatonQueries, XContentMapValues, and SystemIndices classes.
 - **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager). Plugin updates: neural-search hybrid query refactoring, learning-to-rank RankerQuery fix.
 - **v3.0.0**: Upgrade to Apache Lucene 10
 - **v2.18.0**: Upgrade to Apache Lucene 9.12.0 with new Lucene912PostingsFormat, JDK 23 Panama Vectorization support, dynamic range facets, and various performance optimizations
