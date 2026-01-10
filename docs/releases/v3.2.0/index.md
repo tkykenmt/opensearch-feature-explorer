@@ -94,6 +94,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Hierarchical & ACL-aware Routing](features/opensearch/hierarchical-acl-aware-routing.md) | feature | New routing processors for hierarchical paths and ACL-based document co-location |
 | [Terms Lookup Query Enhancement](features/opensearch/terms-lookup-query-enhancement.md) | feature | Query clause support for terms lookup enabling multi-document value extraction |
 
+### Observability
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Observability Infrastructure](features/observability/observability-infrastructure.md) | bugfix | Maven snapshot publishing migration, Gradle 8.14.3 upgrade, JDK24 CI support |
+
 ### Geospatial
 
 | Item | Category | Description |
