@@ -17,6 +17,7 @@
 - [Field Data Cache](features/opensearch/field-data-cache.md)
 - [Docker Image Updates](features/opensearch/docker-image-updates.md)
 - [Engine API](features/opensearch/engine-api.md)
+- [Field Collapsing with search_after](features/opensearch/field-collapsing-search-after.md)
 - [Flaky Test Fixes](features/opensearch/flaky-test-fixes.md)
 - [Grok Processor](features/opensearch/grok-processor.md)
 - [gRPC Transport](features/opensearch/grpc-transport.md)
