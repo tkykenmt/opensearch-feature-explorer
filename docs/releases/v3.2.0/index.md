@@ -69,3 +69,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Remote Store Segment Warming](features/opensearch/remote-store-segment-warming.md) | feature | Remote store support for merged segment warming to reduce replication lag |
 | [Streaming Transport & Aggregation](features/opensearch/streaming-transport-aggregation.md) | feature | Stream transport framework and streaming aggregation for memory-efficient high-cardinality aggregations |
 | [Approximation Framework Enhancements](features/opensearch/approximation-framework-enhancements.md) | feature | search_after support, range queries with now, multi-sort handling |
+| [Star Tree Index](features/opensearch/star-tree-index.md) | feature | IP field search support and star-tree search statistics |
