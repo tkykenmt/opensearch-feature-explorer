@@ -98,6 +98,8 @@ flowchart TB
 | MDS ID | Multi-Data Source identifier | Local cluster |
 | `observability:traceAnalyticsSpanIndices` | Custom span indices (supports wildcards and CCS) | Empty |
 | `observability:traceAnalyticsServiceIndices` | Custom service indices (supports wildcards and CCS) | Empty |
+| `observability:traceAnalyticsServiceMapMaxNodes` | Maximum nodes in service map queries | 500 |
+| `observability:traceAnalyticsServiceMapMaxEdges` | Maximum edges in service map queries | 1000 |
 
 ### Usage Example
 
@@ -140,6 +142,7 @@ http://host:port/app/observability-traces#/services
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#2472](https://github.com/opensearch-project/dashboards-observability/pull/2472) | [Traces] Make service map max nodes and max edges values user-configurable |
 | v3.2.0 | [#2475](https://github.com/opensearch-project/dashboards-observability/pull/2475) | [Bug] Traces error display - fix nested status.code handling |
 | v3.2.0 | [#2478](https://github.com/opensearch-project/dashboards-observability/pull/2478) | [Bug] Fixed metrics viz not showing up in local cluster |
 | v3.1.0 | [#2457](https://github.com/opensearch-project/dashboards-observability/pull/2457) | Merge custom source and data prepper mode |
@@ -171,7 +174,7 @@ http://host:port/app/observability-traces#/services
 
 ## Change History
 
-- **v3.2.0** (2026-02-18): Bug fixes for traces error display (nested status.code handling) and metrics visualization rendering in local cluster instances
+- **v3.2.0** (2026-02-18): User-configurable service map max nodes and max edges settings, bug fixes for traces error display (nested status.code handling) and metrics visualization rendering in local cluster instances
 - **v3.1.0** (2026-01-21): Merged custom source mode into default Data Prepper mode, span flyout support for new Data Prepper format with nested field flattening, unified experience with cross-cluster search, custom indices, data grid, and dynamic filters
 - **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
 - **v2.17.0** (2024-09-17): Custom source support (experimental) for custom span/service indices with CCS support, landing page changed to Traces, Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements
