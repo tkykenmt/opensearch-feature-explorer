@@ -72,6 +72,7 @@ graph TB
 | `plugins.index_state_management.history.enabled` | Enable ISM history | `true` |
 | `plugins.index_state_management.history.max_docs` | Max history documents | `2500000` |
 | `plugins.index_state_management.history.max_age` | Max history age | `24h` |
+| `plugins.rollup.search.search_source_indices` | Allow searching non-rollup and rollup indices together (v2.18.0+) | `false` |
 
 ### Usage Example
 
@@ -183,6 +184,10 @@ PUT _plugins/_rollup/jobs/sample_rollup
 | v3.0.0 | [#1377](https://github.com/opensearch-project/index-management/pull/1377) | Target Index Settings for rollup |
 | v3.0.0 | [#1388](https://github.com/opensearch-project/index-management/pull/1388) | CVE fix: logback-core upgrade |
 | v3.0.0 | [#1404](https://github.com/opensearch-project/index-management/pull/1404) | Java Agent migration build fix |
+| v2.18.0 | [#1268](https://github.com/opensearch-project/index-management/pull/1268) | Allow non-rollup and rollup indices to be searched together |
+| v2.18.0 | [#1179](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1179) | Fit and Finish UX changes |
+| v2.18.0 | [#1182](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1182) | Replace EuiText with EuiTitle for section headers |
+| v2.18.0 | [#1191](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1191) | Setting validation for transform APIs |
 | v2.18.0 | [#1257](https://github.com/opensearch-project/index-management/pull/1257) | Fixing snapshot bug - partial snapshot detection |
 | v2.18.0 | [#1187](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1187) | Create snapshot policy button reload fix |
 | v2.18.0 | [#1189](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1189) | Data source initialization fix |
@@ -197,9 +202,10 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - [Index Management Security](https://docs.opensearch.org/3.0/im-plugin/security/)
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Unfollow action feature request
 - [Issue #1075](https://github.com/opensearch-project/index-management/issues/1075): ISM listener blocking Cluster Applier thread
+- [Issue #1213](https://github.com/opensearch-project/index-management/issues/1213): Feature request for mixed rollup/non-rollup search
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Added ISM unfollow action for CCR, rollup target index settings, CVE fixes, Java Agent migration
-- **v2.18.0** (2024-11-05): Fixed snapshot status detection (partial snapshots now correctly detected as failures), fixed snapshot policy button causing dashboard reload, fixed data source initialization in multi-data-source environments
+- **v2.18.0** (2024-11-05): Added `plugins.rollup.search.search_source_indices` setting to allow searching non-rollup and rollup indices together, UX improvements (refresh buttons, section header styling), transform API input validation, fixed snapshot status detection, fixed snapshot policy button reload, fixed data source initialization
 - **v2.17.0** (2024-09-17): Performance optimization for skip execution check using cluster service instead of NodesInfoRequest, security integration test fixes

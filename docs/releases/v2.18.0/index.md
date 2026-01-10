@@ -176,6 +176,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Index Management
 
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md) - Snapshot status detection fix, snapshot policy button reload fix, data source initialization fix
+- [Index Management Enhancements](features/index-management-dashboards-plugin/index-management-enhancements.md) - Mixed rollup/non-rollup index search, UX improvements, transform API validation
 
 ### Observability
 
