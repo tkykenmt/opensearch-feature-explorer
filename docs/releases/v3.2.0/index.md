@@ -82,3 +82,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Query Phase Plugin Extension](features/opensearch/query-phase-plugin-extension.md) | feature | Plugin extensibility for injecting custom QueryCollectorContext during QueryPhase |
 | [Search Pipeline in Templates](features/opensearch/search-pipeline-in-templates.md) | feature | Support for search pipeline in search and msearch template APIs |
 | [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md) | feature | File-based ingestion plugin (ingestion-fs) for local testing |
+| [Cat Indices API Enhancement](features/opensearch/cat-indices-api-enhancement.md) | feature | Add last index request timestamp columns to `_cat/indices` API |
