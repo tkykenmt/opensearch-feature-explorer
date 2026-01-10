@@ -147,3 +147,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [CVE Fixes & Dependency Updates](features/multi-repo/cve-fixes-dependency-updates.md) | bugfix | CVE-2025-48734 (beanutils) and CVE-2025-7783 (form-data) security fixes |
+| [Version Increment (Maintenance)](features/multi-plugin/version-increment-maintenance.md) | bugfix | Version bumps to 3.2.0 across 14 repositories |
