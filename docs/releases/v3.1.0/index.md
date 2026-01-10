@@ -79,6 +79,7 @@
 ### Job Scheduler
 
 - [Job Scheduler Maintenance](features/job-scheduler/job-scheduler-maintenance.md) - Remove Guava dependency to reduce jar hell and version increment to 3.1.0
+- [Job Scheduler Changelog](features/job-scheduler/job-scheduler-changelog.md) - Add CHANGELOG and changelog_verifier workflow for iterative release notes
 
 ### Dashboards Search Relevance
 
