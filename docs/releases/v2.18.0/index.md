@@ -145,6 +145,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Query Workbench Bugfixes](features/dashboards-query-workbench/query-workbench-bugfixes.md) - Bug fixes for modal mounting support and MDS error handling
 
+### Job Scheduler
+
+- [Job Scheduler](features/job-scheduler/job-scheduler.md) - Return LockService from createComponents for Guice injection
+
 ### Observability
 
 - [Observability Bugfixes](features/observability/observability-bugfixes.md) - Multiple bug fixes including navigation fixes, workspace compatibility, MDS support improvements, and UI/UX enhancements
