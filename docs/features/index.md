@@ -256,6 +256,7 @@
 - [Flow Framework](flow-framework/flow-framework.md)
 - [Flow Framework Access Control](flow-framework/flow-framework-access-control.md)
 - [Flow Framework Connector Tools](flow-framework/flow-framework-connector-tools.md)
+- [Flow Framework Utilities](flow-framework/flow-framework-utilities.md)
 - [Text-to-Visualization Templates](flow-framework/text-to-visualization-templates.md)
 
 ## sql
