@@ -18,6 +18,7 @@
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
 - [Bulk API](opensearch/bulk-api.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
+- [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
 - [Code Cleanup](opensearch/code-cleanup.md)
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [DocRequest Refactoring](opensearch/docrequest-refactoring.md)
