@@ -100,6 +100,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Alerting Doc-Level Monitor](features/alerting/alerting-doc-level-monitor.md) - Doc-level monitor improvements including comments system indices, remote monitor logging, separate query indices for external monitors, and query index lifecycle optimization
 - [Alerting Bugfixes](features/alerting/alerting-bugfixes.md) - Query index management fixes, bucket-level monitor optimization, dashboard UX improvements, MDS compatibility fixes
 
+### Alerting Dashboards Plugin
+
+- [Alerting Summary & Insights](features/alerting-dashboards-plugin/alerting-summary-insights.md) - AI-powered alert insights with context-aware analysis, LLM-generated summaries, and log pattern detection for visual editor monitors
+
 ### Common Utils
 
 - [Doc-Level Monitor Query Indices](features/common-utils/doc-level-monitor-query-indices.md) - New `delete_query_index_in_every_run` flag for dynamic deletion of doc-level monitor query indices, designed for externally defined monitors

@@ -311,6 +311,10 @@
 
 - [Alerting](alerting/alerting.md)
 
+## alerting-dashboards-plugin
+
+- [Alerting Summary & Insights](alerting-dashboards-plugin/alerting-summary-insights.md)
+
 ## query-insights
 
 - [Query Insights](query-insights/query-insights.md)
