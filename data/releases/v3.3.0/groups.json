@@ -3209,7 +3209,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1385
     },
     {
       "name": "Query Rewriting",
@@ -3223,7 +3224,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1386
     },
     {
       "name": "Dynamic Mapping",
@@ -3237,7 +3239,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1387
     },
     {
       "name": "Engine Config",
@@ -3251,7 +3254,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1388
     },
     {
       "name": "Store Factory",
@@ -3271,7 +3275,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1389
     },
     {
       "name": "S3 Performance",
@@ -3285,7 +3290,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1390
     },
     {
       "name": "Query Cache",
@@ -3299,7 +3305,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1391
     },
     {
       "name": "Translog",
@@ -3313,7 +3320,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1392
     },
     {
       "name": "File Cache",
@@ -3327,7 +3335,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1393
     },
     {
       "name": "Field Collapsing",
@@ -3341,7 +3350,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1394
     },
     {
       "name": "Segment Warmer",
@@ -3355,7 +3365,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1395
     },
     {
       "name": "gRPC Transport",
@@ -3447,7 +3458,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1396
     },
     {
       "name": "Search Pipeline",
@@ -3461,7 +3473,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1397
     },
     {
       "name": "Date Format",
@@ -3475,7 +3488,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1398
     },
     {
       "name": "Grok Processor",
@@ -3489,7 +3503,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1399
     },
     {
       "name": "Search Tie-breaking",
@@ -3503,7 +3518,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1400
     },
     {
       "name": "Rule based auto-tagging",
@@ -3517,7 +3533,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1401
     },
     {
       "name": "Pull-based Ingestion",
@@ -3555,7 +3572,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1402
     },
     {
       "name": "Skip List",
@@ -3587,7 +3605,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1403
     },
     {
       "name": "Star Tree Index",
@@ -3607,7 +3626,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1404
     },
     {
       "name": "Streaming Aggregation",
@@ -3815,7 +3835,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1394
     },
     {
       "name": "Wildcard Field Mapper",
@@ -3926,7 +3947,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1386
     },
     {
       "name": "Index Refresh",
