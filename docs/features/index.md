@@ -318,6 +318,7 @@
 - [ML Commons Connector and Model Validation](ml-commons/connector-model-validation.md)
 - [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
 - [ML Commons Documentation & Tutorials](ml-commons/ml-commons-documentation-tutorials.md)
+- [ML Commons Error Handling](ml-commons/ml-commons-error-handling.md)
 - [ML Commons MCP (Model Context Protocol)](ml-commons/ml-commons-mcp.md)
 - [ML Commons Memory Metadata](ml-commons/ml-commons-memory-metadata.md)
 - [ML Commons Model & Inference](ml-commons/ml-commons-model-inference.md)
