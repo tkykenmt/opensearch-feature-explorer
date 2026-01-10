@@ -53,6 +53,7 @@
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
 - [Test Infrastructure](features/opensearch/test-infrastructure.md)
 - [Tiered Caching](features/opensearch/tiered-caching.md)
+- [Translog Channel Factory](features/opensearch/translog.md)
 - [Wildcard Field Mapper](features/opensearch/wildcard-field-mapper.md)
 
 ### OpenSearch Dashboards
