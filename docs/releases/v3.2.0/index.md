@@ -145,6 +145,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [ML Commons Model Deployment](features/ml-commons/ml-commons-model-deployment.md) | enhancement | Auto-deploy remote models in partially deployed status |
 | [ML Commons Testing & Coverage](features/ml-commons/ml-commons-testing-coverage.md) | bugfix | Integration test stability fix, memory container unit tests, JaCoCo 0.8.13 upgrade |
 | [ML Commons Documentation & Tutorials](features/ml-commons/ml-commons-documentation-tutorials.md) | bugfix | Multi-modal search, semantic highlighter, neural sparse, language identification, agentic RAG tutorials |
 | [ML Commons Error Handling](features/ml-commons/ml-commons-error-handling.md) | enhancement | Proper 400 errors instead of 500 for agent execute and MCP tool registration |
