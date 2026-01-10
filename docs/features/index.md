@@ -495,6 +495,7 @@
 ## query-insights
 
 - [Query Insights](query-insights/query-insights.md)
+- [Query Insights Dependencies](query-insights/query-insights-dependencies.md)
 
 ## skills
 
