@@ -45,6 +45,7 @@
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
 - [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
+- [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
