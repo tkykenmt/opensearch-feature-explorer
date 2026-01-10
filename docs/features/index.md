@@ -112,6 +112,7 @@
 - [RestHandler.Wrapper](opensearch/resthandler-wrapper.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
 - [S3 Repository](opensearch/s3-repository.md)
+- [Scaled Float Field](opensearch/scaled-float-field.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Search API Enhancements](opensearch/search-api-enhancements.md)
 - [Search Pipeline](opensearch/search-pipeline.md)
