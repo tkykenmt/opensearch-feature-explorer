@@ -176,6 +176,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Observability
 
+- [Observability UI Improvements](features/observability/observability-ui-improvements.md) - Services data picker fix, header control styling, custom traces table filters, Getting Started workflow restructure, CI build cache optimization
 - [Observability Bugfixes](features/observability/observability-bugfixes.md) - Multiple bug fixes including navigation fixes, workspace compatibility, MDS support improvements, and UI/UX enhancements
 
 ### Security
