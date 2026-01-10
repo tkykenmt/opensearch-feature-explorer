@@ -266,6 +266,8 @@ POST /_plugins/_ml/models/_register
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#3787](https://github.com/opensearch-project/ml-commons/pull/3787) | Add Unit Tests for MCP feature |
+| v3.1.0 | [#3821](https://github.com/opensearch-project/ml-commons/pull/3821) | Downgrade MCP version to 0.9 |
 | v3.0.0 | [#3721](https://github.com/opensearch-project/ml-commons/pull/3721) | Onboard MCP - MCP connector support |
 | v3.0.0 | [#3781](https://github.com/opensearch-project/ml-commons/pull/3781) | Support MCP server in OpenSearch |
 | v3.0.0 | [#3803](https://github.com/opensearch-project/ml-commons/pull/3803) | Support MCP session management |
@@ -304,4 +306,5 @@ POST /_plugins/_ml/models/_register
 
 ## Change History
 
+- **v3.1.0** (2025-07-15): MCP SDK downgrade to 0.9.0 for compatibility, added comprehensive unit tests for MCP components
 - **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models
