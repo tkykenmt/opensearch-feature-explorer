@@ -198,6 +198,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 | v3.0.0 | [#1107](https://github.com/opensearch-project/flow-framework/pull/1107) | Fix bug handleReprovision missing wait_for_completion_timeout response |
 | v3.0.0 | [#1113](https://github.com/opensearch-project/flow-framework/pull/1113) | Add new attributes field to ToolStep |
 | v3.0.0 | [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |
+| v2.18.0 | [#918](https://github.com/opensearch-project/flow-framework/pull/918) | Fixed template update location and improved logger statements in ReprovisionWorkflowTransportAction |
 | v2.18.0 | [#894](https://github.com/opensearch-project/flow-framework/pull/894) | Update workflow state without using painless script |
 | v2.17.0 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings |
 
@@ -216,5 +217,5 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 ## Change History
 
 - **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
-- **v2.18.0** (2024-11-05): Removed Painless scripts for workflow state updates, implemented optimistic locking with sequence numbers and primary terms for better concurrency control
+- **v2.18.0** (2024-11-05): Removed Painless scripts for workflow state updates, implemented optimistic locking with sequence numbers and primary terms for better concurrency control; Fixed template update location in ReprovisionWorkflowTransportAction to resolve flaky integration tests, improved logger statements for better debugging
 - **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
