@@ -101,6 +101,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Security Analytics System Indices](features/security-analytics/security-analytics-system-indices.md) - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix
 
+### Security
+
+- [Security Plugin Maintenance](features/security/security-plugin-maintenance.md) - Cache endpoint deprecation warning, securityadmin script undeprecation, ASN1 refactoring for FIPS, CVE-2024-47554 fix, BWC test fixes
+
 ### Skills
 
 - [Skills Plugin Dependencies](features/skills/skills-plugin-dependencies.md) - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes
