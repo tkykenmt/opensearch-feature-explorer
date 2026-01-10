@@ -4,6 +4,7 @@
 
 ### OpenSearch
 
+- [Dependency Bumps](features/opensearch/dependency-bumps.md) - 21 dependency updates including CVE-2025-27820 fix, Netty, Gson, Azure SDK updates
 - [DocRequest Refactoring](features/opensearch/docrequest-refactoring.md) - Generic interface for single-document operations
 - [Network Configuration](features/opensearch/network-configuration.md) - Fix systemd seccomp filter for network.host: 0.0.0.0
 - [Plugin Installation](features/opensearch/plugin-installation.md) - Fix native plugin installation error caused by PGP public key change
