@@ -121,3 +121,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### CI/CD
 
 - [CI/CD & Build Improvements](features/ci/cd-build-improvements.md) - JDK-21 baseline updates, CI workflow fixes, test security improvements, backport process enhancements across index-management, ml-commons, notifications, and observability
+
+### Maintenance
+
+- [Version Bumps & Maintenance](features/maintenance/version-bumps-maintenance.md) - Routine version increment PRs across 12 plugin repositories for v2.18.0 release preparation
