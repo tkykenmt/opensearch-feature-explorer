@@ -149,6 +149,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [SQL/PPL Documentation](features/sql/ppl-documentation.md) | bugfix | Update PPL documentation index and V3 engine limitations |
 
+### Asynchronous Search
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Asynchronous Search Bugfix](features/asynchronous-search/asynchronous-search-bugfix.md) | bugfix | Gradle 8.14.3 upgrade, JDK 24 CI support, Maven snapshot endpoint migration |
+
 ### Multi-Repository
 
 | Item | Category | Description |
