@@ -7,6 +7,7 @@
 - [OpenSearch Dashboards AI Chat](features/opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 - [OpenSearch Dashboards Bug Fixes](features/opensearch-dashboards/opensearch-dashboards-bug-fixes.md)
 - [OpenSearch Dashboards Dataset Explorer](features/opensearch-dashboards/opensearch-dashboards-dataset-explorer.md)
+- [OpenSearch Dashboards Patterns Tab](features/opensearch-dashboards/opensearch-dashboards-patterns-tab.md)
 - [OpenSearch Dashboards Traces](features/opensearch-dashboards/opensearch-dashboards-traces.md)
 - [OpenSearch Dashboards UI Enhancements](features/opensearch-dashboards/opensearch-dashboards-ui-enhancements.md)
 - [PPL/Query Enhancements](features/opensearch-dashboards/ppl-query-enhancements.md)
