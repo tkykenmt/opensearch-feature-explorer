@@ -77,24 +77,26 @@ flowchart TB
 |---------|-------------|---------|
 | `index.composite_index` | Enable composite index support | `false` |
 | `index.append_only.enabled` | Required for star-tree (immutable data) | `false` |
-| `indices.composite_index.star_tree.enabled` | Enable star-tree search optimization | `true` |
+| `indices.composite_index.star_tree.enabled` | Enable star-tree search optimization cluster-wide | `true` |
+| `index.search.star_tree_index.enabled` | Enable star-tree search per index (v3.1.0+) | `true` |
 | `max_leaf_docs` | Maximum documents per leaf node | `10000` |
 | `skip_star_node_creation_for_dimensions` | Dimensions to skip star node creation | `[]` |
 
 ### Supported Features
 
-#### Queries (as of v3.0.0)
+#### Queries
 - Term query
 - Terms query
-- Range query
+- Range query (including date range queries as of v3.1.0)
 - Match all docs query
 - Boolean query (MUST, FILTER, SHOULD clauses)
 
-#### Aggregations (as of v3.0.0)
+#### Aggregations
 - Metric aggregations: sum, min, max, avg, value_count
 - Date histogram with metric sub-aggregations
 - Terms aggregations (keyword and numeric)
 - Range aggregations with metric sub-aggregations
+- Nested bucket aggregations (v3.1.0+): terms → terms → metric, date_histogram → terms → metric, etc.
 
 ### Usage Example
 
@@ -160,14 +162,17 @@ POST /logs/_search
 - Cannot be removed once created; requires reindex to disable
 - High cardinality dimensions increase storage and query latency
 - Multi-values/array values not supported
-- Date field queries not yet supported
 - Boolean `must_not` clauses not supported
 - `minimum_should_match` parameter not supported
+- Nested aggregations limited to 3-4 levels
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#18070](https://github.com/opensearch-project/OpenSearch/pull/18070) | Remove feature flag, add index-level star-tree search setting |
+| v3.1.0 | [#18048](https://github.com/opensearch-project/OpenSearch/pull/18048) | Support nested bucket aggregations |
+| v3.1.0 | [#17855](https://github.com/opensearch-project/OpenSearch/pull/17855) | Support date range queries in aggregations |
 | v3.0.0 | [#17941](https://github.com/opensearch-project/OpenSearch/pull/17941) | Boolean query support |
 | v3.0.0 | [#17275](https://github.com/opensearch-project/OpenSearch/pull/17275) | Unsigned-long query support |
 | v3.0.0 | [#17273](https://github.com/opensearch-project/OpenSearch/pull/17273) | Range aggregations |
@@ -176,17 +181,20 @@ POST /logs/_search
 
 ## References
 
+- [Issue #17443](https://github.com/opensearch-project/OpenSearch/issues/17443): Date range query support
+- [Issue #17274](https://github.com/opensearch-project/OpenSearch/issues/17274): Nested bucket aggregations
 - [Issue #16551](https://github.com/opensearch-project/OpenSearch/issues/16551): Bucket terms aggregation feature request
 - [Issue #16553](https://github.com/opensearch-project/OpenSearch/issues/16553): Range aggregations feature request
 - [Issue #15231](https://github.com/opensearch-project/OpenSearch/issues/15231): Unsigned long support
 - [Issue #17267](https://github.com/opensearch-project/OpenSearch/issues/17267): Boolean query support
 - [Issue #15257](https://github.com/opensearch-project/OpenSearch/issues/15257): Star-tree tracking issue
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Official star-tree index documentation
-- [Field Type Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/star-tree/): Star-tree field type reference
+- [Documentation](https://docs.opensearch.org/3.1/search-plugins/star-tree-index/): Official star-tree index documentation
+- [Field Type Documentation](https://docs.opensearch.org/3.1/field-types/supported-field-types/star-tree/): Star-tree field type reference
 - [Blog: The power of star-tree indexes](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): Performance analysis and use cases
 
 ## Change History
 
+- **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
 - **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
 - **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
 - **v2.18** (2024-10-22): Initial experimental release with metric aggregations (sum, min, max, avg, value_count)

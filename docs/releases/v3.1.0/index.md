@@ -14,3 +14,4 @@
 - [Plugin Installation](features/opensearch/plugin-installation.md) - Fix native plugin installation error caused by PGP public key change
 - [Query Bug Fixes](features/opensearch/query-bug-fixes.md) - Fixes for exists query, error handling, field validation, and IP field terms query
 - [Snapshot/Repository Fixes](features/opensearch/repository-fixes.md) - Fix infinite loop during concurrent snapshot/repository update and NPE for legacy snapshots
+- [Star-Tree Index Enhancements](features/opensearch/star-tree-index.md) - Production-ready status, date range queries, nested aggregations, index-level control
