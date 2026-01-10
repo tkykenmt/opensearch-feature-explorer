@@ -7,6 +7,7 @@
 - [Approximation Framework](features/opensearch/approximation-framework.md) - BKD traversal optimization for skewed datasets with DFS strategy
 - [Dependency Bumps](features/opensearch/dependency-bumps.md) - 21 dependency updates including CVE-2025-27820 fix, Netty, Gson, Azure SDK updates
 - [DocRequest Refactoring](features/opensearch/docrequest-refactoring.md) - Generic interface for single-document operations
+- [File Cache](features/opensearch/file-cache.md) - File pinning support and granular statistics for Writable Warm indices
 - [FIPS Support](features/opensearch/fips-support.md) - Update FipsMode check for improved BC-FIPS compatibility
 - [Lucene Upgrade](features/opensearch/lucene-upgrade.md) - Upgrade Apache Lucene from 10.1.0 to 10.2.1
 - [Network Configuration](features/opensearch/network-configuration.md) - Fix systemd seccomp filter for network.host: 0.0.0.0
