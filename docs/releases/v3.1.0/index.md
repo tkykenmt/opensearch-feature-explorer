@@ -36,3 +36,7 @@
 - [Rule-based Auto-tagging](features/opensearch/rule-based-auto-tagging.md) - Automatic workload group assignment based on index patterns and rules
 - [Parallel Shard Refresh](features/opensearch/parallel-shard-refresh.md) - Shard-level refresh scheduling for improved data freshness in remote store indexes
 - [Platform Support](features/opensearch/platform-support.md) - Add support for Linux riscv64 platform
+
+### Skills
+
+- [ML Skills](features/skills/ml-skills.md) - Fix httpclient5 dependency version conflict and apply Spotless formatting
