@@ -104,8 +104,10 @@ Star-tree search statistics are available (v3.2.0+) through the stats APIs:
 | `startree_query_total` | Total queries resolved using star-tree |
 | `startree_query_time_in_millis` | Time spent in star-tree queries |
 | `startree_query_current` | Currently running star-tree queries |
+| `query_failed` | Total failed query phase operations (v3.3.0+) |
+| `startree_query_failed` | Failed star-tree query operations (v3.3.0+) |
 
-Access via `/_nodes/stats/indices/search`, `/_stats/search`, or `/_stats/search?level=shards`.
+Access via `/_nodes/stats/indices/search`, `/_stats/search`, `/_cat/shards`, `/_cat/nodes`, `/_cat/indices`, or `/_stats/search?level=shards`.
 
 ### Supported Features
 
@@ -128,6 +130,7 @@ Access via `/_nodes/stats/indices/search`, `/_stats/search`, or `/_stats/search?
 - Terms aggregations (keyword and numeric)
 - Range aggregations with metric sub-aggregations
 - Nested bucket aggregations (v3.1.0+): terms → terms → metric, date_histogram → terms → metric, etc.
+- Multi-terms aggregations (v3.3.0+): group by multiple dimension fields simultaneously
 
 ### Usage Example
 
@@ -201,6 +204,8 @@ POST /logs/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations |
+| v3.3.0 | [#19209](https://github.com/opensearch-project/OpenSearch/pull/19209) | Add search & star-tree search query failure count metrics |
 | v3.2.0 | [security#5492](https://github.com/opensearch-project/security/pull/5492) | Restrict star-tree for users with DLS/FLS/Field Masking |
 | v3.2.0 | [#18707](https://github.com/opensearch-project/OpenSearch/pull/18707) | Add star-tree search statistics |
 | v3.2.0 | [#18671](https://github.com/opensearch-project/OpenSearch/pull/18671) | Add IP field search support |
@@ -215,6 +220,8 @@ POST /logs/_search
 
 ## References
 
+- [Issue #18398](https://github.com/opensearch-project/OpenSearch/issues/18398): Multi-terms aggregation feature request
+- [Issue #19210](https://github.com/opensearch-project/OpenSearch/issues/19210): Query failure stats feature request
 - [Issue #17443](https://github.com/opensearch-project/OpenSearch/issues/17443): Date range query support
 - [Issue #17274](https://github.com/opensearch-project/OpenSearch/issues/17274): Nested bucket aggregations
 - [Issue #16551](https://github.com/opensearch-project/OpenSearch/issues/16551): Bucket terms aggregation feature request
@@ -229,6 +236,7 @@ POST /logs/_search
 
 ## Change History
 
+- **v3.3.0** (2025-10-28): Added multi-terms aggregation support (up to 40x performance improvement), search query failure statistics (query_failed, startree_query_failed)
 - **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
 - **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
 - **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
