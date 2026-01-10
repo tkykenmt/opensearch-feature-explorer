@@ -74,6 +74,8 @@ sequenceDiagram
 | `PublicationTransportHandler` | Handles transport-level publication of cluster state to follower nodes |
 | `lastSeenClusterState` | Reference to the last cluster state seen by a node, used as base for applying diffs |
 | `ApplyCommitRequest` | Request sent during commit phase to finalize cluster state changes |
+| `preCommitState` | Reference to the cluster state that has been published but not yet applied locally (v2.18.0+) |
+| `RemoteClusterStateCache` | In-memory cache for remote cluster state based on term-version (v2.18.0+) |
 
 ### Configuration
 
@@ -83,6 +85,7 @@ sequenceDiagram
 | `cluster.remote_store.publication.enabled` | Enable remote cluster state publication | `false` |
 | `cluster.publish.timeout` | Timeout for cluster state publication | `30s` |
 | `cluster.publish.info_timeout` | Timeout before logging slow publication info | `10s` |
+| `opensearch.experimental.optimization.termversion.precommit.enabled` | Enable pre-commit state usage for term-version checks (v2.18.0+) | `false` |
 
 ### Voting Configuration
 
@@ -117,12 +120,15 @@ node.attr.remote_store.repository.my-remote-state-repo.settings.region: us-east-
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#15424](https://github.com/opensearch-project/OpenSearch/pull/15424) | Fallback to remote cluster-state on term-version check mismatch |
 | v2.18.0 | [#16215](https://github.com/opensearch-project/OpenSearch/pull/16215) | Fix: Update last seen cluster state in commit phase |
 
 ## References
 
+- [Issue #15414](https://github.com/opensearch-project/OpenSearch/issues/15414): Feature request for leveraging ClusterState from Publish phase
 - [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
 
 ## Change History
 
+- **v2.18.0** (2024-10-29): Added fallback mechanism to use pre-commit state or remote cluster state on term-version mismatch, reducing unnecessary cluster state transfers in large clusters
 - **v2.18.0** (2024-10-29): Fixed voting configuration mismatch by updating lastSeenClusterState in commit phase
