@@ -128,6 +128,7 @@
 
 - [k-NN Bug Fixes](features/k-nn/k-nn-bug-fixes.md) - 9 bug fixes for quantization cache, rescoring, thread safety, nested queries, memory cache race conditions, backward compatibility
 - [k-NN Testing Infrastructure](features/k-nn/k-nn-testing-infrastructure.md) - Enable all integration tests with remote index builder and fix MockNode constructor compatibility
+- [k-NN Vector Search Improvements](features/k-nn/k-nn-vector-search-improvements.md) - Memory-optimized search for Faiss binary indexes, Lucene rescore support, derived source optimization, script scoring performance
 - [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md) - GA preparation with tuned buffer sizes, segment size upper bound, renamed settings, metrics fixes
 
 ### Search Relevance
