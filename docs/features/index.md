@@ -54,6 +54,7 @@
 - [Offline Nodes (Background Tasks)](opensearch/offline-nodes.md)
 - [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
+- [Query Bug Fixes](opensearch/query-bug-fixes.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
