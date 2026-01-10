@@ -69,6 +69,7 @@
 
 - [Observability Release Maintenance](features/observability/observability-release-maintenance.md) - Version increments, release notes, and bug fixes for trace analytics
 - [Observability Bug Fixes](features/observability/observability-bug-fixes.md) - Jaeger end time processing fix and NFW integration Vega warning fix
+- [Observability Trace Analytics](features/dashboards-observability/observability-trace-analytics.md) - Merge custom source and data prepper mode, span flyout nested field support
 
 ### Neural Search
 
