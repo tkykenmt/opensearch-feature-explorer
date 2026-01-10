@@ -165,6 +165,10 @@
 - [Documentation Maintenance](dashboards-search-relevance/documentation-maintenance.md)
 - [Search Comparison](dashboards-search-relevance/search-comparison.md)
 
+## search-relevance
+
+- [Search Relevance Workbench](search-relevance/search-relevance-workbench.md)
+
 ## dashboards-flow-framework
 
 - [AI Search Flows](dashboards-flow-framework/ai-search-flows.md)
