@@ -62,6 +62,7 @@ OpenSearch provides two types of connector blueprints:
 - Titan Multimodal Embedding
 - Cohere Embed English/Multilingual v3
 - Claude 3.5, 3.7 (standard and extended thinking modes)
+- Claude 4 Sonnet and Opus (standard and extended thinking modes)
 - Converse API (Claude 3 Sonnet and other chat models)
 
 #### OpenAI
@@ -138,16 +139,7 @@ POST /_plugins/_ml/connectors/_create
 
 | Version | PR | Description |
 |---------|-----|-------------|
-| v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |
-| v3.0.0 | [#3584](https://github.com/opensearch-project/ml-commons/pull/3584) | Add blueprint for Claude 3.7 on Bedrock |
-| v3.0.0 | [#3725](https://github.com/opensearch-project/ml-commons/pull/3725) | Add standard blueprint for Azure embedding ada2 |
-| v3.0.0 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |
-| v3.0.0 | [#2975](https://github.com/opensearch-project/ml-commons/pull/2975) | Add tutorial for RAG of OpenAI and Bedrock |
-
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
+| v3.1.0 | [#3871](https://github.com/opensearch-project/ml-commons/pull/3871) | Add blueprint for Bedrock Claude v4 |
 | v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |
 | v3.0.0 | [#3584](https://github.com/opensearch-project/ml-commons/pull/3584) | Add blueprint for Claude 3.7 on Bedrock |
 | v3.0.0 | [#3725](https://github.com/opensearch-project/ml-commons/pull/3725) | Add standard blueprint for Azure embedding ada2 |
@@ -170,6 +162,7 @@ POST /_plugins/_ml/connectors/_create
 
 ## Change History
 
+- **v3.1.0** (2026-01-10): Added Claude 4 Sonnet and Opus blueprint with extended thinking mode support
 - **v3.0.0** (2025-05-06): Added standard blueprints for vector search, Claude 3.7 blueprint, Azure OpenAI blueprint, RAG tutorials
 - **v2.18.0** (2024-11-12): Added Bedrock Converse blueprint, cross-account model invocation tutorial, role temporary credential support, Titan Embedding V2 blueprint
 - **v2.14.0** (2024-05-14): Introduced ML inference processor support for standard blueprints
