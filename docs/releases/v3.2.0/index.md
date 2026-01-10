@@ -10,6 +10,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Code Coverage (Gradle)](features/opensearch/code-coverage-gradle.md) | feature | Local code coverage generation with Gradle and JaCoCo plugin |
 | [Combined Fields Query](features/opensearch/combined-fields-query.md) | feature | New combined_fields query with BM25F scoring for multi-field text search |
 | [GRPC Transport](features/opensearch/grpc-transport.md) | feature | GA release - module migration, plugin extensibility, proper gRPC status codes |
 | [Derived Source Integration](features/opensearch/derived-source.md) | feature | Integration of derived source feature across get/search/recovery paths |
