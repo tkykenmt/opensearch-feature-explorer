@@ -63,3 +63,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Numeric Field Skip List](features/opensearch/numeric-field-skip-list.md) | feature | Skip list indexing for numeric field doc values to improve range query performance |
 | [Scripted Metric Aggregation](features/opensearch/scripted-metric-aggregation.md) | feature | Support InternalScriptedMetric in InternalValueCount and InternalAvg reduce methods |
 | [Composite Aggregation Optimization](features/opensearch/composite-aggregation-optimization.md) | feature | Optimize composite aggregations by removing unnecessary object allocations |
+| [Remote Store Segment Warming](features/opensearch/remote-store-segment-warming.md) | feature | Remote store support for merged segment warming to reduce replication lag |
