@@ -92,3 +92,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Workload Management](features/opensearch/workload-management.md) | feature | WLM mode validation for CRUD operations, naming consistency updates, logging improvements |
 | [Warm Indices](features/opensearch/warm-indices.md) | feature | Write block on flood watermark, addressable space-based FS stats, resize restrictions |
 | [Hierarchical & ACL-aware Routing](features/opensearch/hierarchical-acl-aware-routing.md) | feature | New routing processors for hierarchical paths and ACL-based document co-location |
+| [Terms Lookup Query Enhancement](features/opensearch/terms-lookup-query-enhancement.md) | feature | Query clause support for terms lookup enabling multi-document value extraction |
