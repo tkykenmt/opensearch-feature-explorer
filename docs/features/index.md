@@ -88,6 +88,7 @@
 - [Search API Enhancements](opensearch/search-api-enhancements.md)
 - [Search Pipeline](opensearch/search-pipeline.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
+- [Search Scoring](opensearch/search-scoring.md)
 - [Search Shard Routing](opensearch/search-shard-routing.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
