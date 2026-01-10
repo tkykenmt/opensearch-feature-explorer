@@ -252,6 +252,7 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | Fix delete rule event consumption for wildcard index based rules |
 | v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
 | v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | Add Get Rule API for auto-tagging |
 | v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | Add WLM ActionFilter for automatic tagging |
@@ -280,5 +281,6 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Fixed delete rule event consumption for wildcard index based rules in `InMemoryRuleProcessingService`
 - **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
