@@ -2856,7 +2856,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 915
     },
     {
       "name": "gRPC Transport",
@@ -2876,7 +2877,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 916
     },
     {
       "name": "File Cache",
@@ -2896,7 +2898,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 917
     },
     {
       "name": "Cluster Manager Metrics",
@@ -2922,7 +2925,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 918
     },
     {
       "name": "Star-Tree Index",
@@ -2948,7 +2952,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 919
     },
     {
       "name": "Approximation Framework",
@@ -2962,7 +2967,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 920
     },
     {
       "name": "Percentiles Aggregation",
@@ -2976,7 +2982,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 921
     },
     {
       "name": "FIPS Support",
@@ -2997,7 +3004,8 @@
           "category": "feature",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 922
     },
     {
       "name": "Lucene Upgrade",
@@ -3031,7 +3039,8 @@
           "category": "bugfix",
           "repository": "learning"
         }
-      ]
+      ],
+      "issue_number": 923
     },
     {
       "name": "Dependency Bumps",
@@ -3165,7 +3174,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 924
     },
     {
       "name": "Snapshot/Repository Fixes",
@@ -3185,7 +3195,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 925
     },
     {
       "name": "Plugin Installation",
@@ -3199,7 +3210,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 926
     },
     {
       "name": "Query Bug Fixes",
@@ -3237,7 +3249,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 927
     },
     {
       "name": "Network Configuration",
@@ -3251,7 +3264,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 928
     },
     {
       "name": "DocRequest Refactoring",
@@ -3265,7 +3279,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 929
     }
   ],
   "processed_offset": 451
