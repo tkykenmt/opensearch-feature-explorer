@@ -627,7 +627,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1325
     },
     {
       "name": "SQL/PPL Query Enhancements",
@@ -719,7 +720,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1326
     },
     {
       "name": "SQL/PPL Aggregation Pushdown",
@@ -763,7 +765,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1327
     },
     {
       "name": "SQL/PPL Aggregate Functions",
@@ -795,7 +798,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1328
     },
     {
       "name": "SQL/PPL Patterns Command",
@@ -815,7 +819,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1329
     },
     {
       "name": "SQL/PPL Rex and Regex Commands",
@@ -841,7 +846,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1330
     },
     {
       "name": "SQL/PPL Spath Command",
@@ -855,7 +861,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1331
     },
     {
       "name": "SQL/PPL Rename Command",
@@ -869,7 +876,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 1332
     },
     {
       "name": "Common Utils Enhancements",
@@ -889,7 +897,8 @@
           "category": "bugfix",
           "repository": "common"
         }
-      ]
+      ],
+      "issue_number": 1333
     },
     {
       "name": "Search Comparison Dashboards",
@@ -915,7 +924,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 1334
     },
     {
       "name": "Index Management Enhancements",
@@ -941,7 +951,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 1335
     },
     {
       "name": "k-NN Engine Enhancements",
@@ -961,7 +972,8 @@
           "category": "enhancement",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 1336
     },
     {
       "name": "ML Commons Agent Enhancements",
@@ -987,7 +999,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1337
     },
     {
       "name": "ML Commons Connector Enhancements",
@@ -1007,7 +1020,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1338
     },
     {
       "name": "ML Commons Multi-tenancy",
@@ -1021,7 +1035,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1339
     },
     {
       "name": "ML Commons Tools Enhancements",
@@ -1047,7 +1062,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1340
     },
     {
       "name": "Remote Client Enhancements",
@@ -1085,7 +1101,8 @@
           "category": "bugfix",
           "repository": "remote"
         }
-      ]
+      ],
+      "issue_number": 1341
     },
     {
       "name": "Performance Analyzer Enhancements",
@@ -1105,7 +1122,8 @@
           "category": "bugfix",
           "repository": "performance"
         }
-      ]
+      ],
+      "issue_number": 1342
     },
     {
       "name": "Resource Sharing",
@@ -1179,7 +1197,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1343
     },
     {
       "name": "Security Plugin Health Check",
@@ -1193,7 +1212,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1344
     },
     {
       "name": "JWT Authentication",
