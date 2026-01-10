@@ -206,6 +206,7 @@ interface VisNLQSavedObject {
 | v2.18.0 | [#349](https://github.com/opensearch-project/dashboards-assistant/pull/349) | Integration with Discover page |
 | v3.0.0 | [#510](https://github.com/opensearch-project/dashboards-assistant/pull/510) | Add metrics collection for t2viz |
 | v3.1.0 | [#546](https://github.com/opensearch-project/dashboards-assistant/pull/546) | Prevent navigation when PPL returns no results |
+| v3.2.0 | [#589](https://github.com/opensearch-project/dashboards-assistant/pull/589) | Support natural language visualization in new dashboard ingress (Explore UI) |
 
 ## References
 
@@ -216,6 +217,7 @@ interface VisNLQSavedObject {
 
 ## Change History
 
+- **v3.2.0**: Added support for natural language visualization in new dashboard ingress (Explore UI); restructured alias registration for better integration
 - **v3.1.0**: Added error handling for PPL queries with no results
 - **v3.0.0**: Added metrics collection for t2viz usage
 - **v2.18.0**: Initial implementation with Text2Vega, Text2PPL, and Data2Summary APIs
