@@ -67,6 +67,7 @@
 - [Offline Nodes (Background Tasks)](opensearch/offline-nodes.md)
 - [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
 - [Parallel Shard Refresh](opensearch/parallel-shard-refresh.md)
+- [Parent-Child Query](opensearch/parent-child-query.md)
 - [Percentiles Aggregation](opensearch/percentiles-aggregation.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Platform Support](opensearch/platform-support.md)
