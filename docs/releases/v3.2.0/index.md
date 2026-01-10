@@ -99,6 +99,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Observability Infrastructure](features/observability/observability-infrastructure.md) | bugfix | Maven snapshot publishing migration, Gradle 8.14.3 upgrade, JDK24 CI support |
+| [Observability Service Map](features/observability/observability-service-map.md) | enhancement | User-configurable service map max nodes and max edges settings |
 
 ### Dashboards Observability
 
