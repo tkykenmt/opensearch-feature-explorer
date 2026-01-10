@@ -98,6 +98,14 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#2146](https://github.com/opensearch-project/dashboards-observability/pull/2146) | Fix getting started cards re-direction to integrations |
+| v2.18.0 | [#2201](https://github.com/opensearch-project/dashboards-observability/pull/2201) | Update traces span redirection to Discover |
+| v2.18.0 | [#2209](https://github.com/opensearch-project/dashboards-observability/pull/2209) | Update getting started cards content and visual design |
+| v2.18.0 | [#2210](https://github.com/opensearch-project/dashboards-observability/pull/2210) | Observability Overview page rework |
+| v2.18.0 | [#2211](https://github.com/opensearch-project/dashboards-observability/pull/2211) | Rotate x-Axis labels by 45 degrees |
+| v2.18.0 | [#2217](https://github.com/opensearch-project/dashboards-observability/pull/2217) | Metrics fixes - disable expand button |
+| v2.18.0 | [#2219](https://github.com/opensearch-project/dashboards-observability/pull/2219) | Re-direction fix for associated logs from traces |
+| v2.18.0 | [#2225](https://github.com/opensearch-project/dashboards-observability/pull/2225) | Fixes span to logs redirection, updates MDS label |
 | v2.17.0 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |
 | v2.17.0 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |
 | v2.17.0 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |
@@ -111,4 +119,5 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 
 ## Change History
 
+- **v2.18.0** (2024-10-22): Multiple bug fixes including navigation fixes, overview page rework, getting started cards redesign, x-axis label rotation, and trace-to-logs redirection improvements
 - **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns

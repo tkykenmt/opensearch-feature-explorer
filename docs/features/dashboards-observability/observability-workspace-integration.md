@@ -155,11 +155,13 @@ class ObsDashboardStateManager {
 - State management uses RxJS BehaviorSubjects as a temporary solution; planned migration to Redux or React Context
 - Workspace ID prefixing only applies to newly created assets, not existing ones
 - The embedded dashboard inherits the time range from the Overview page controls, not from the dashboard's saved time range
+- The `observability:defaultDashboard` setting can only be updated by workspace owners or OSD admins when workspaces are enabled (v2.18.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#2223](https://github.com/opensearch-project/dashboards-observability/pull/2223) | Fix non-workspace admin update observability:defaultDashboard |
 | v2.17.0 | [#2101](https://github.com/opensearch-project/dashboards-observability/pull/2101) | Make createAssets API compatible with workspace |
 | v2.17.0 | [#2077](https://github.com/opensearch-project/dashboards-observability/pull/2077) | OverviewPage made with Content Management |
 | v2.16.0 | [#7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201) | Content Management plugin introduction (dependency) |
@@ -171,4 +173,5 @@ class ObsDashboardStateManager {
 
 ## Change History
 
+- **v2.18.0** (2024-10-22): Fixed permission issue where non-workspace admins could update `observability:defaultDashboard` setting
 - **v2.17.0** (2024-10-15): Initial implementation - workspace-compatible createAssets API and Content Management-based Overview page
