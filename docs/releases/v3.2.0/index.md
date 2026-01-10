@@ -111,3 +111,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Performance Analyzer Infrastructure](features/performance-analyzer/performance-analyzer-infrastructure.md) | bugfix | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |
+
+### Learning to Rank
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [OpenSearch Learning to Rank](features/opensearch-learning-to-rank-base/opensearch-learning-to-rank.md) | bugfix | Gradle 8.14 upgrade, JDK24 support, flaky test fix for similarity score comparisons |
