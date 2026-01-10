@@ -114,6 +114,7 @@
 - [Query Optimization](opensearch/query-optimization.md)
 - [Query Phase Plugin Extension](opensearch/query-phase-plugin-extension.md)
 - [Query Phase Result Consumer](opensearch/query-phase-result-consumer.md)
+- [Query Rewriting](opensearch/query-rewriting.md)
 - [Query String & Regex Queries](opensearch/query-string-regex.md)
 - [Randomness](opensearch/randomness.md)
 - [Reactor Netty Transport](opensearch/reactor-netty-transport.md)

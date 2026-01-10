@@ -36,6 +36,7 @@
 - [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md)
 - [Query Cache Dynamic Settings](features/opensearch/query-cache.md)
 - [Query Phase Fixes](features/opensearch/query-phase-fixes.md)
+- [Query Rewriting Infrastructure](features/opensearch/query-rewriting.md)
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md)
 - [Reindex API](features/opensearch/reindex-api.md)
 - [Request Cache](features/opensearch/request-cache.md)
