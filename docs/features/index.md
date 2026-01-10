@@ -98,6 +98,7 @@
 - [Query Phase Plugin Extension](opensearch/query-phase-plugin-extension.md)
 - [Query String & Regex Queries](opensearch/query-string-regex.md)
 - [Randomness](opensearch/randomness.md)
+- [Reactor Netty Transport](opensearch/reactor-netty-transport.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Rescore Named Queries](opensearch/rescore-named-queries.md)
