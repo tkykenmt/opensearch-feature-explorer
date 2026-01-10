@@ -91,6 +91,11 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#1186](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1186) | Avoid showing unhelpful error toast when datasource is not yet selected |
+| v2.18.0 | [#1188](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1188) | Update getting started cards content and visual design |
+| v2.18.0 | [#1192](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1192) | Fix data source picker remount multiple times |
+| v2.18.0 | [#1199](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1199) | Switch to default datasource instead of local cluster on initial loading |
+| v2.18.0 | [#1200](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1200) | Make data source default cluster for threat alerts card |
 | v2.17.0 | [#1100](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1100) | Update data source selection label and help text |
 | v2.17.0 | [#1124](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1124) | Add threat alerts card for Analytics (All) workspace |
 | v2.17.0 | [#1125](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1125) | Update URL with data source ID; redirect on reload |
@@ -105,13 +110,15 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 ## References
 
-- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/): Overview of Security Analytics
-- [Setting up Security Analytics](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/index/): Configuration guide
-- [Using Security Analytics](https://docs.opensearch.org/2.17/security-analytics/usage/index/): Usage documentation
-- [OpenSearch Security for Security Analytics](https://docs.opensearch.org/2.17/security-analytics/security/): Security configuration
+- [About Security Analytics](https://docs.opensearch.org/2.18/security-analytics/): Overview of Security Analytics
+- [Setting up Security Analytics](https://docs.opensearch.org/2.18/security-analytics/sec-analytics-config/index/): Configuration guide
+- [Using Security Analytics](https://docs.opensearch.org/2.18/security-analytics/usage/index/): Usage documentation
+- [OpenSearch Security for Security Analytics](https://docs.opensearch.org/2.18/security-analytics/security/): Security configuration
+- [Configuring and using multiple data sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Multi-data source configuration
 - [security-analytics-dashboards-plugin](https://github.com/opensearch-project/security-analytics-dashboards-plugin): GitHub repository
 
 ## Change History
 
+- **v2.18.0** (2024-11-12): Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
 - **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
 - **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements
