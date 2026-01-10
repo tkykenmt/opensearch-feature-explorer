@@ -80,3 +80,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Rescore Named Queries](features/opensearch/rescore-named-queries.md) | feature | Surface named queries from rescore contexts in matched_queries array |
 | [Semantic Version Field Type](features/opensearch/semantic-version-field-type.md) | feature | New `version` field type for semantic versioning with proper ordering and range queries |
 | [Query Phase Plugin Extension](features/opensearch/query-phase-plugin-extension.md) | feature | Plugin extensibility for injecting custom QueryCollectorContext during QueryPhase |
+| [Search Pipeline in Templates](features/opensearch/search-pipeline-in-templates.md) | feature | Support for search pipeline in search and msearch template APIs |
