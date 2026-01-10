@@ -190,6 +190,9 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#1151](https://github.com/opensearch-project/flow-framework/pull/1151) | Fixing llm field processing in RegisterAgentStep |
+| v3.1.0 | [#1154](https://github.com/opensearch-project/flow-framework/pull/1154) | Include exception type in WorkflowState error field even if no cause |
+| v3.1.0 | [#1155](https://github.com/opensearch-project/flow-framework/pull/1155) | Pass llm spec params to builder |
 | v3.1.0 | [#1141](https://github.com/opensearch-project/flow-framework/pull/1141) | Conditionally include ddb-client dependency only if env variable set |
 | v3.1.0 | [#1137](https://github.com/opensearch-project/flow-framework/pull/1137) | Add data summary with log pattern agent template |
 | v3.0.0 | [#1026](https://github.com/opensearch-project/flow-framework/pull/1026) | Fix breaking changes for 3.0.0 release |
@@ -213,6 +216,9 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Workflow Tutorial](https://docs.opensearch.org/3.0/automating-configurations/workflow-tutorial/)
 - [Workflow APIs](https://docs.opensearch.org/3.0/automating-configurations/api/index/)
 - [Workflow Template Security](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/)
+- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
+- [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
+- [Issue #1153](https://github.com/opensearch-project/flow-framework/issues/1153): Workflow state error messages don't include FFE/WSE types
 - [Issue #1095](https://github.com/opensearch-project/flow-framework/issues/1095): Config parser tenant_id handling
 - [Issue #1097](https://github.com/opensearch-project/flow-framework/issues/1097): Action listener completion
 - [Issue #1106](https://github.com/opensearch-project/flow-framework/issues/1106): Reprovision timeout response
@@ -223,7 +229,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 
 ## Change History
 
-- **v3.1.0** (2025-07-15): Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
+- **v3.1.0** (2025-07-15): Bug fixes for RegisterAgentStep LLM field processing, exception type in WorkflowState error messages, and LLM spec parameter passing; Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
 - **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
 - **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
 - **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
