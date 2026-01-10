@@ -35,6 +35,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Snapshot Restore Enhancements](features/opensearch/snapshot-restore-enhancements.md) - Alias renaming during restore and clone operation optimization for doc-rep clusters
 - [Remote Store Metrics](features/opensearch/remote-store-metrics.md) - New REMOTE_STORE metric in Node Stats API for monitoring pinned timestamp fetch operations
 - [S3 Repository](features/opensearch/s3-repository.md) - Standard retry mode for S3 clients and SLF4J warning fix
+- [Dynamic Threadpool Resize](features/opensearch/dynamic-threadpool-resize.md) - Runtime thread pool size adjustment via cluster settings API
 
 ### OpenSearch Dashboards
 
