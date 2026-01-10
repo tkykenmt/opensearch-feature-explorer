@@ -19,6 +19,11 @@ Key benefits include:
 - Patterns tab flyout with detailed pattern inspection (v3.3.0)
 - Search with pattern functionality for log filtering (v3.3.0)
 - Calcite query engine compatibility for patterns (v3.3.0)
+- Metric visualization with sparkline support (v3.3.0)
+- Histogram visualization for numerical, time-series, and categorical data (v3.3.0)
+- Table visualization with column alignment, filters, and statistical footers (v3.3.0)
+- Dark/light theme support with new color palettes (v3.3.0)
+- Gantt chart improvements for trace analysis (v3.3.0)
 
 ## Details
 
@@ -169,6 +174,11 @@ flowchart TB
 | `PatternsTableFlyout` | Flyout panel for detailed pattern inspection (v3.3.0) |
 | `PatternsFlyoutEventTable` | Paginated events table in flyout (v3.3.0) |
 | `PatternsFlyoutUpdateSearch` | Search with pattern button component (v3.3.0) |
+| `Sparkline` | Inline trend visualization for metric displays (v3.3.0) |
+| `Histogram` | Multi-type histogram visualization (numerical, time-series, categorical) (v3.3.0) |
+| `ColumnFilter` | Excel-like filter UI for table columns (v3.3.0) |
+| `TableFooter` | Statistical summary row for tables (Last, Avg, Min, Max, Total) (v3.3.0) |
+| `CellCustomization` | Colored text/background cell styling (v3.3.0) |
 | `FieldSelector` | Field selection sidebar |
 | `DataTable` | Results data table with action bar |
 | `TraceDetails` | Trace details page with span visualization |
@@ -257,6 +267,12 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.3.0 | [#10535](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10535) | Patterns tab Calcite compatibility workarounds |
 | v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |
 | v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling |
+| v3.3.0 | [#10449](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10449) | Metric viz with sparkline support |
+| v3.3.0 | [#10452](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10452) | Gantt chart improvements |
+| v3.3.0 | [#10465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10465) | Histogram visualization |
+| v3.3.0 | [#10469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10469) | Discover viz theme and defaults |
+| v3.3.0 | [#10470](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10470) | Table visualization enhancement |
+| v3.3.0 | [#10482](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10482) | Metric viz style update with percentage change |
 | v3.2.0 | [#9874](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9874) | Add pie, scatter, heatmap, single metric auto visualization |
 | v3.2.0 | [#9886](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9886) | New query editor in storybook |
 | v3.2.0 | [#9901](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9901) | Tab registry service integration |
@@ -333,5 +349,5 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
-- **v3.3.0** (2026-01-14): Added Patterns tab flyout with detailed pattern inspection, "search with pattern" functionality for log filtering, events table with pagination, Calcite query engine compatibility, "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page
+- **v3.3.0** (2026-01-14): Added Patterns tab flyout with detailed pattern inspection, "search with pattern" functionality for log filtering, events table with pagination, Calcite query engine compatibility, "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page, metric visualization with sparkline support, histogram visualization (numerical, time-series, categorical), table visualization enhancements (column alignment, Excel-like filters, statistical footers, cell customization), dark/light theme support with new color palettes, hover highlighting for bar/pie charts, Gantt chart improvements (service name display, span selection, error indicators), metric style updates with percentage change option
 - **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation

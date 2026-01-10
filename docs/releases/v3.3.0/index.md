@@ -10,4 +10,5 @@
 - [OpenSearch Dashboards Patterns Tab](features/opensearch-dashboards/opensearch-dashboards-patterns-tab.md)
 - [OpenSearch Dashboards Traces](features/opensearch-dashboards/opensearch-dashboards-traces.md)
 - [OpenSearch Dashboards UI Enhancements](features/opensearch-dashboards/opensearch-dashboards-ui-enhancements.md)
+- [OpenSearch Dashboards Visualization Enhancements](features/opensearch-dashboards/opensearch-dashboards-visualization-enhancements.md)
 - [PPL/Query Enhancements](features/opensearch-dashboards/ppl-query-enhancements.md)
