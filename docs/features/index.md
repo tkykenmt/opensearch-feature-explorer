@@ -53,6 +53,7 @@
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
 - [Offline Nodes (Background Tasks)](opensearch/offline-nodes.md)
 - [OpenSearch Core Dependencies](opensearch/opensearch-core-dependencies.md)
+- [Percentiles Aggregation](opensearch/percentiles-aggregation.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Plugin Installation](opensearch/plugin-installation.md)
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
