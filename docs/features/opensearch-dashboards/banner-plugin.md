@@ -71,16 +71,34 @@ flowchart LR
 
 ### Configuration
 
+#### YAML Configuration (opensearch_dashboards.yml)
+
 | Setting | Type | Description | Default |
 |---------|------|-------------|---------|
 | `banner.enabled` | boolean | Enable/disable the banner plugin | `false` |
-| `banner.text` | string | Banner message (supports Markdown) | Default announcement |
-| `banner.color` | enum | `primary`, `success`, `warning` | `primary` |
+| `banner.content` | string | Banner message (supports Markdown) | Default announcement |
+| `banner.color` | enum | `primary`, `warning`, `danger` | `primary` |
 | `banner.iconType` | string | EUI icon type | `iInCircle` |
 | `banner.isVisible` | boolean | Initial visibility | `true` |
 | `banner.useMarkdown` | boolean | Enable Markdown rendering | `true` |
 
+#### UI Settings (Advanced Settings)
+
+As of v3.2.0, banner settings can be configured via the Advanced Settings UI:
+
+| Setting | Type | Description | Default |
+|---------|------|-------------|---------|
+| `banner:active` | boolean | Controls banner visibility | `true` |
+| `banner:content` | markdown | Banner message content | `''` |
+| `banner:color` | select | Color scheme: `primary`, `warning`, `danger` | `primary` |
+| `banner:iconType` | select | Icon type for the banner | `iInCircle` |
+| `banner:useMarkdown` | boolean | Enable Markdown rendering | `true` |
+
+UI Settings take precedence over YAML configuration values.
+
 ### Usage Example
+
+#### YAML Configuration
 
 ```yaml
 # opensearch_dashboards.yml
@@ -89,7 +107,7 @@ flowchart LR
 banner.enabled: true
 
 # Configure banner content
-banner.text: |
+banner.content: |
   **Important:** System maintenance scheduled for Saturday 2AM-4AM UTC.
   [View details](https://status.example.com)
 banner.color: warning
@@ -97,6 +115,18 @@ banner.iconType: alert
 banner.isVisible: true
 banner.useMarkdown: true
 ```
+
+#### UI Settings Configuration (v3.2.0+)
+
+1. Navigate to **Dashboards Management** > **Advanced Settings**
+2. Search for `banner:` to find banner settings
+3. Configure the following settings:
+   - `banner:active`: Enable/disable the banner
+   - `banner:content`: Enter your banner message (Markdown supported)
+   - `banner:color`: Select color scheme
+   - `banner:iconType`: Choose an icon
+   - `banner:useMarkdown`: Enable/disable Markdown rendering
+4. Save changes - banner updates after page reload
 
 ### CSS Variables
 
@@ -136,17 +166,17 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 
 ## Limitations
 
-- Static configuration only (no runtime API to update banner)
 - No server-side dynamic content fetching
 - No role-based visibility
 - No scheduled banners
-- No Advanced Settings UI for customization
 - Single banner only (no stacking)
+- UI Settings changes require page reload (v3.2.0)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#10264](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10264) | Add global banner support via UI settings with live updates |
 | v3.2.0 | [#9989](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9989) | Initial implementation with feature flag |
 | v3.2.0 | [#10251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10251) | Fix font size and center alignment |
 | v3.2.0 | [#10254](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10254) | Reset lighthouse baseline |
@@ -158,4 +188,5 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 
 ## Change History
 
+- **v3.2.0** (2026-01-10): Added UI Settings support for dynamic banner configuration via Advanced Settings
 - **v3.2.0** (2026-01-10): Initial implementation with static banner, feature flag, markdown support, and dismissal functionality
