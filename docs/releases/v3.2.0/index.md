@@ -155,6 +155,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Asynchronous Search Bugfix](features/asynchronous-search/asynchronous-search-bugfix.md) | bugfix | Gradle 8.14.3 upgrade, JDK 24 CI support, Maven snapshot endpoint migration |
 
+### k-NN
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md) | bugfix | Don't fall back to CPU on terminal failures during remote index build |
+
 ### Multi-Repository
 
 | Item | Category | Description |

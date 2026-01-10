@@ -196,6 +196,7 @@ POST my-vectors/_bulk
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#2773](https://github.com/opensearch-project/k-NN/pull/2773) | Don't fall back to CPU on terminal failures |
 | v3.1.0 | [#2662](https://github.com/opensearch-project/k-NN/pull/2662) | Add tuned repository upload/download buffer sizes |
 | v3.1.0 | [#2734](https://github.com/opensearch-project/k-NN/pull/2734) | Add segment size upper bound setting and GA settings changes |
 | v3.1.0 | [#2693](https://github.com/opensearch-project/k-NN/pull/2693) | Fix remote build metrics timing and add exception logging |
@@ -212,6 +213,7 @@ POST my-vectors/_bulk
 - [Issue #2391](https://github.com/opensearch-project/k-NN/issues/2391): Meta issue tracking all remote build work
 - [Issue #2518](https://github.com/opensearch-project/k-NN/issues/2518): Low-level design document
 - [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Integration testing support meta issue
+- [Issue #2766](https://github.com/opensearch-project/k-NN/issues/2766): Bug report - Terminate Index build request if Failed to write index in segment
 - [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Official OpenSearch docs
 - [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): GPU build service
 - [User Guide](https://github.com/opensearch-project/remote-vector-index-builder/blob/main/USER_GUIDE.md): Service setup instructions
@@ -219,6 +221,7 @@ POST my-vectors/_bulk
 
 ## Change History
 
+- **v3.2.0** (2025-06-27): Improved error handling - don't fall back to CPU on terminal failures (e.g., IndexInput closed, index deleted). Added `TerminalIOException` to distinguish recoverable vs terminal I/O errors.
 - **v3.1.0** (2025-06-16): GA preparation with tuned buffer sizes (50MB vector upload/download, 8KB doc ID), new segment size upper bound setting (`knn.remote_index_build.size.max`), renamed settings for production use, fixed metrics timing for CPU fallback, improved exception logging
 - **v3.1.0** (2025-05-13): Added comprehensive integration test support with `@ExpectRemoteBuildValidation` annotation, updated GitHub Actions workflow to use official Docker image and run all ITs, fixed MockNode constructor compatibility
 - **v3.0.0** (2025-05-06): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support
