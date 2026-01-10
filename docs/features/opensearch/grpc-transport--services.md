@@ -85,12 +85,14 @@ flowchart TB
 
 | Component | Description |
 |-----------|-------------|
-| `transport-grpc` | Plugin providing gRPC server transport capability |
+| `transport-grpc` | Core module providing gRPC server transport capability (installed by default since v3.2.0) |
 | `Netty4GrpcServerTransport` | Base gRPC server implementation using Netty4 |
 | `SecureNetty4GrpcServerTransport` | TLS-enabled gRPC transport for secure connections |
 | `DocumentService` | gRPC service handling document operations (Bulk API) |
 | `SearchService` | gRPC service handling search operations (Search API) |
 | `opensearch-protobufs` | Protocol buffer definitions for OpenSearch APIs |
+| `GrpcServiceExtension` | Interface for plugins to register custom gRPC services (v3.2.0+) |
+| `GrpcStatusMapper` | Maps OpenSearch exceptions to proper gRPC status codes (v3.2.0+) |
 
 ### Configuration
 
@@ -142,10 +144,31 @@ The SearchService provides the Search API for querying documents:
 
 ### Usage Example
 
-**Installing the Plugin:**
+**Enabling gRPC (v3.2.0+, no installation required):**
+
+```yaml
+# opensearch.yml
+grpc.port: 9400
+```
+
+**Installing the Plugin (v3.1.0 and earlier):**
 
 ```bash
 bin/opensearch-plugin install transport-grpc
+```
+
+**Plugin Extension Example (v3.2.0+):**
+
+```java
+public class MyPlugin extends Plugin implements GrpcServiceExtension {
+    
+    @Override
+    public Collection<BindableService> getGrpcServices(
+            Client client, 
+            ClusterService clusterService) {
+        return List.of(new MyCustomGrpcService(client));
+    }
+}
 ```
 
 **Java Client Example:**
@@ -217,16 +240,21 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Limitations
 
-- **Experimental status**: Feature is experimental and not recommended for production
 - **Limited query support**: Only basic queries (match_all, term, terms, match_none) supported
 - **No aggregations**: Aggregation support not yet available
 - **Limited services**: Only Bulk and Search endpoints implemented
-- **Plugin required**: Must install transport-grpc plugin separately
+- **Opt-in activation**: Requires explicit configuration to enable
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18516](https://github.com/opensearch-project/OpenSearch/pull/18516) | Make GRPC transport extensible to allow plugins to register custom services |
+| v3.2.0 | [#18897](https://github.com/opensearch-project/OpenSearch/pull/18897) | Move transport-grpc from a core plugin to a module |
+| v3.2.0 | [#18915](https://github.com/opensearch-project/OpenSearch/pull/18915) | Remove `experimental` designation from transport-grpc settings |
+| v3.2.0 | [#18923](https://github.com/opensearch-project/OpenSearch/pull/18923) | Rename package to org.opensearch.transport.grpc |
+| v3.2.0 | [#18925](https://github.com/opensearch-project/OpenSearch/pull/18925) | Map to proper GRPC status codes and achieve exception handling parity |
+| v3.2.0 | [#18880](https://github.com/opensearch-project/OpenSearch/pull/18880) | Upgrade to protobufs 0.6.0 |
 | v3.1.0 | [#18303](https://github.com/opensearch-project/OpenSearch/pull/18303) | Optimize gRPC perf by passing by reference |
 | v3.1.0 | [#18031](https://github.com/opensearch-project/OpenSearch/pull/18031) | Package reorganization to org.opensearch.plugin.transport.grpc |
 | v3.0.0 | [#17796](https://github.com/opensearch-project/OpenSearch/pull/17796) | Enable TLS for Netty4GrpcServerTransport |
@@ -237,6 +265,8 @@ Documents in gRPC requests must be Base64 encoded:
 ## References
 
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue
+- [Issue #18893](https://github.com/opensearch-project/OpenSearch/issues/18893): Move transport-grpc from plugin to module
+- [Issue #18513](https://github.com/opensearch-project/OpenSearch/issues/18513): GRPC Plugin Extensibility for Query Conversion
 - [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
 - [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
 - [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
@@ -245,5 +275,6 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
+- **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
 - **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
 - **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
