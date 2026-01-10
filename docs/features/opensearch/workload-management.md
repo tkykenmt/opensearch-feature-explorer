@@ -75,6 +75,8 @@ flowchart TB
 | `QueryGroupMetadata` | Persistable metadata stored in ClusterState for durability |
 | `ResourceCancellationFramework` | Node-level framework for canceling queries exceeding limits |
 | `WLM Stats API` | Provides per-node query group statistics and metrics |
+| `WLM Paginated Stats API` | Scalable paginated endpoint for stats retrieval (v3.1.0+) |
+| `WlmPaginationStrategy` | Pagination logic for WLM stats with sorting and token management (v3.1.0+) |
 | `Query Group CRUD APIs` | REST APIs for managing query group lifecycle |
 | `DEFAULT_QUERY_GROUP` | Built-in query group for requests without explicit group assignment |
 
@@ -160,6 +162,24 @@ queryGroupId: preXpc67RbKKeCyka72_Gw
 GET _wlm/stats
 ```
 
+**Get Paginated Stats (v3.1.0+):**
+```
+GET _list/wlm_stats?size=50&sort=node_id&order=asc&v=true
+```
+
+**Paginated Stats Response:**
+```
+NODE_ID | WORKLOAD_GROUP_ID | TOTAL_COMPLETIONS | TOTAL_REJECTIONS | TOTAL_CANCELLATIONS | CPU_USAGE | MEMORY_USAGE
+node-1  | analytics         | 1000              | 5                | 2                   | 0.45      | 0.30
+node-1  | DEFAULT_WORKLOAD_GROUP | 5000         | 0                | 0                   | 0.10      | 0.05
+next_token: <encrypted_token>
+```
+
+**Fetch Next Page:**
+```
+GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
+```
+
 **Stats Response:**
 ```json
 {
@@ -218,6 +238,7 @@ GET _wlm/stats
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
 | v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | Add cancellation framework changes in WLM |
 | v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | QueryGroup Stats API logic |
 | v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | Add WLM resiliency orchestrator (QueryGroup Service) |
@@ -229,9 +250,11 @@ GET _wlm/stats
 ## References
 
 - [RFC #12342](https://github.com/opensearch-project/OpenSearch/issues/12342): Search Query Sandboxing: User Experience
-- [Workload Management Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Query Group Lifecycle API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/query-group-lifecycle-api/)
+- [Issue #17592](https://github.com/opensearch-project/OpenSearch/issues/17592): Feature request for paginating _wlm/stats API
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Query Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
 
 ## Change History
 
+- **v3.1.0** (2026-01-10): Added paginated `/_list/wlm_stats` API with token-based pagination, sorting by node_id or workload_group, and configurable page size
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
