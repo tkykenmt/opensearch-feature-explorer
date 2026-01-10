@@ -140,6 +140,7 @@
 - [Security Auth Enhancements](security/security-auth-enhancements.md)
 - [Security Bugfixes](security/security-bugfixes.md)
 - [Security Configuration](security/security-configuration.md)
+- [Security Debugging](security/security-debugging.md)
 - [Security Permissions](security/security-permissions.md)
 - [Security Plugin](security/security-plugin.md)
 - [Security Plugin Dependencies](security/security-plugin-dependencies.md)
