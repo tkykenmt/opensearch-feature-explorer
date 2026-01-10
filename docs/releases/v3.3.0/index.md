@@ -50,6 +50,7 @@
 - [Segment Warmer Metrics](features/opensearch/segment-warmer.md)
 - [Skip List](features/opensearch/skip-list.md)
 - [Star Tree Index](features/opensearch/star-tree-index.md)
+- [Store Factory](features/opensearch/store-factory.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
 - [Streaming Aggregation](features/opensearch/streaming-aggregation.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
