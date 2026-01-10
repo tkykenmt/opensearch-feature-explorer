@@ -114,6 +114,10 @@
 - [Flow Framework Dependencies](features/flow-framework/flow-framework-dependencies.md) - Conditional DynamoDB client dependency and data summary with log pattern agent template
 - [Flow Framework Improvements](features/flow-framework/flow-framework-improvements.md) - Bug fixes for RegisterAgentStep LLM field processing, exception type in error messages, and LLM spec parameter passing
 
+### Dashboards Flow Framework
+
+- [Flow Framework UI Enhancements](features/dashboards-flow-framework/flow-framework-ui-enhancements.md) - Left panel navigation refactor, preview panel integration into inspector, Sparse Encoders template, configurable thread pools
+
 ### Index Management
 
 - [Notifications Improvements](features/index-management/notifications-improvements.md) - Fix false positive notifications in Snapshot Management for version conflict exceptions

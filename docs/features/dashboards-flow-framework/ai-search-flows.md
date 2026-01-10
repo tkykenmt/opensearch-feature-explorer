@@ -87,6 +87,7 @@ flowchart TB
 | Preset | Description | Use Case |
 |--------|-------------|----------|
 | Semantic Search | Vector search with text embeddings | Finding semantically similar documents |
+| Semantic Search (Sparse Encoders) | Neural sparse search with sparse encoders | Semantic search using sparse vectors (v3.1.0+) |
 | Hybrid Search | Combined keyword + vector search | Balanced relevance with BM25 and semantic |
 | RAG + Vector Search | Vector retrieval with LLM summarization | Question answering with context |
 | RAG + Hybrid Search | Hybrid retrieval with LLM summarization | Enhanced RAG with keyword matching |
@@ -172,6 +173,11 @@ workflows:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#722](https://github.com/opensearch-project/dashboards-flow-framework/pull/722) | Integrate preview panel into inspector panel |
+| v3.1.0 | [#737](https://github.com/opensearch-project/dashboards-flow-framework/pull/737) | Refactor form navigation to left panel |
+| v3.1.0 | [#742](https://github.com/opensearch-project/dashboards-flow-framework/pull/742) | Added Semantic Search using Sparse Encoders template |
+| v3.1.0 | [#743](https://github.com/opensearch-project/dashboards-flow-framework/pull/743) | Misc UI improvements IV |
+| v3.1.0 | [#1139](https://github.com/opensearch-project/flow-framework/pull/1139) | Make thread pool sizes configurable (backend) |
 | v3.0.0 | [#662](https://github.com/opensearch-project/dashboards-flow-framework/pull/662) | Rename to "AI Search Flows" |
 | v3.0.0 | [#665](https://github.com/opensearch-project/dashboards-flow-framework/pull/665) | Add RAG + hybrid search preset |
 | v3.0.0 | [#676](https://github.com/opensearch-project/dashboards-flow-framework/pull/676) | Simplify ML processor forms |
@@ -186,8 +192,10 @@ workflows:
 - [Flow Framework Plugin](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
 - [ML Commons Integration](https://docs.opensearch.org/3.0/ml-commons-plugin/integrating-ml-models/)
 - [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
+- [flow-framework Repository](https://github.com/opensearch-project/flow-framework)
 - [Model Configuration Examples](https://github.com/opensearch-project/dashboards-flow-framework/blob/main/documentation/models.md)
 
 ## Change History
 
+- **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
 - **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering
