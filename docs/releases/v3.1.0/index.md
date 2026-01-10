@@ -69,6 +69,7 @@
 ### ML Commons
 
 - [ML Commons Maintenance](features/ml-commons/ml-commons-maintenance.md) - Hidden model security, enhanced logging, HTTP client alignment, SearchIndexTool MCP compatibility, CVE fixes
+- [PlanExecuteReflect Agent](features/ml-commons/planexecutereflect-agent.md) - Test coverage for PlanExecuteReflect Agent runner and utilities
 
 ### Notifications
 
