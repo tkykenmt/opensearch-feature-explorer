@@ -84,3 +84,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Flow Framework
 
 - [Flow Framework Workflow State](features/flow-framework/flow-framework-workflow-state.md) - Remove Painless scripts for workflow state updates, implement optimistic locking
+
+### Alerting
+
+- [Alerting Doc-Level Monitor](features/alerting/alerting-doc-level-monitor.md) - Doc-level monitor improvements including comments system indices, remote monitor logging, separate query indices for external monitors, and query index lifecycle optimization
