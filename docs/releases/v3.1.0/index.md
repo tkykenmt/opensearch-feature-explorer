@@ -53,3 +53,7 @@
 ### Query Insights
 
 - [Query Insights Release Maintenance](features/query-insights/query-insights-release-maintenance.md) - Fix flaky integration tests and add multi-node test infrastructure
+
+### Observability
+
+- [Observability Release Maintenance](features/observability/observability-release-maintenance.md) - Version increments, release notes, and bug fixes for trace analytics

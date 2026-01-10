@@ -251,6 +251,7 @@
 ## observability
 
 - [Observability Integrations](observability/observability-integrations.md)
+- [Release Maintenance](observability/release-maintenance.md)
 
 ## performance-analyzer
 
