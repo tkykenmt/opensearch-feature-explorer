@@ -16,6 +16,7 @@
 
 ## opensearch
 
+- [Alias Write Index Policy](opensearch/alias-write-index-policy.md)
 - [Approximation Framework](opensearch/approximation-framework.md)
 - [BooleanQuery Rewrite Optimizations](opensearch/booleanquery-rewrite-optimizations.md)
 - [Aggregation Task Cancellation](opensearch/aggregation-task-cancellation.md)
