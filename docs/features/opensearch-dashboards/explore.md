@@ -11,6 +11,11 @@ Key benefits include:
 - Dashboard integration through embeddable components
 - Extensible tab system for custom result views
 - Trace Details page for deep investigation of distributed traces (v3.2.0)
+- PPL filter support with direct query modification (v3.2.0)
+- Improved fields selector with result/schema grouping (v3.2.0)
+- Query editor performance optimizations (v3.2.0)
+- Bidirectional URL-Redux synchronization for browser navigation (v3.2.0)
+- In-editor PPL documentation with categorized suggestions (v3.2.0)
 
 ## Details
 
@@ -165,6 +170,12 @@ flowchart TB
 | `SpanDetailPanel` | Container for span visualization with view mode switching |
 | `SpanDetailTable` | Flat list view of spans with sorting and filtering |
 | `SpanDetailTableHierarchy` | Tree view showing parent-child span relationships |
+| `useTabResults` | Hook for managing tab results, replacing repeated code |
+| `PPLFilterUtils` | Utility functions for PPL filter manipulation |
+| `ColumnsFilterUI` | Column filter UI with "selected" group in fields selector |
+| `URLReduxSync` | Bidirectional URL-Redux synchronization system |
+| `GlobalHeaderControls` | Datepicker and run button in global header |
+| `PPLDocumentation` | In-editor documentation for PPL commands |
 
 ### Configuration
 
@@ -284,6 +295,21 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.2.0 | [#9946](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9946) | Tab preservation and cache update |
 | v3.2.0 | [#9972](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9972) | Panels layout adjustment |
 | v3.2.0 | [#10253](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10253) | Trace Details page with Gantt chart and service map |
+| v3.2.0 | [#10001](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10001) | Add inspection button to action bar in tabs |
+| v3.2.0 | [#10045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10045) | Support PPL filters in Explore |
+| v3.2.0 | [#10048](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10048) | Update fields selector grouping (result/schema) |
+| v3.2.0 | [#10092](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10092) | Update explore chart UI |
+| v3.2.0 | [#10095](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10095) | Add documentation for PPL commands |
+| v3.2.0 | [#10109](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10109) | Make log table columns controlled by query result |
+| v3.2.0 | [#10136](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10136) | Add columns filter UI and update fields selector panel style |
+| v3.2.0 | [#10140](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10140) | Change fields selector default to show missing fields |
+| v3.2.0 | [#10249](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10249) | Query editor for explore layout refactor |
+| v3.2.0 | [#10265](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10265) | Move datepicker and run button to global header |
+| v3.2.0 | [#10274](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10274) | Segregate keywords into Commands, Operators, Functions |
+| v3.2.0 | [#10285](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10285) | Improve query editor performance |
+| v3.2.0 | [#10321](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10321) | Implement bidirectional URL-Redux synchronization |
+| v3.2.0 | [#10334](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10334) | Change query panel UI around editor language |
+| v3.2.0 | [#10347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10347) | Add tooltip for language reference in explore |
 
 ## References
 
@@ -293,4 +319,4 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
-- **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, and Trace Details page with Gantt chart and service map visualization
+- **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation
