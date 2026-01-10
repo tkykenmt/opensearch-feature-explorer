@@ -146,6 +146,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Query Workbench Bugfixes](features/dashboards-query-workbench/query-workbench-bugfixes.md) - Bug fixes for modal mounting support and MDS error handling
 
+### Dashboards Maps
+
+- [Dashboards Maps Bugfix](features/dashboards-maps/dashboards-maps-bugfix.md) - Fix flyout overlay issue with new application header
+
 ### Dashboards Reporting
 
 - [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md) - Fix missing EUI component imports in report_settings component
