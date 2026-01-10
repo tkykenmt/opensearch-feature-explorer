@@ -66,6 +66,10 @@
 
 - [Lucene Upgrade](features/learning/lucene-upgrade.md) - Update RankerQuery for Lucene 10.2.1 DisiPriorityQueue API change
 
+### ML Commons
+
+- [ML Commons Maintenance](features/ml-commons/ml-commons-maintenance.md) - Hidden model security, enhanced logging, HTTP client alignment, SearchIndexTool MCP compatibility, CVE fixes
+
 ### Notifications
 
 - [Notifications Maintenance](features/notifications/notifications-maintenance.md) - Migrate from javax.mail to jakarta.mail APIs and version increment to 3.1.0-SNAPSHOT

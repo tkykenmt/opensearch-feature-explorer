@@ -74,6 +74,13 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#3838](https://github.com/opensearch-project/ml-commons/pull/3838) | Exclude trusted connector check for hidden model |
+| v3.1.0 | [#3825](https://github.com/opensearch-project/ml-commons/pull/3825) | Add more logging to deploy/undeploy flows for better debugging |
+| v3.1.0 | [#3824](https://github.com/opensearch-project/ml-commons/pull/3824) | Remove libs folder |
+| v3.1.0 | [#3809](https://github.com/opensearch-project/ml-commons/pull/3809) | Upgrade HTTP client to version align with core |
+| v3.1.0 | [#3648](https://github.com/opensearch-project/ml-commons/pull/3648) | Use stream optional enum set from core in MLStatsInput |
+| v3.1.0 | [#3883](https://github.com/opensearch-project/ml-commons/pull/3883) | Change SearchIndexTool arguments parsing logic |
+| v3.1.0 | [#3935](https://github.com/opensearch-project/ml-commons/pull/3935) | Force runtime class path commons-beanutils:1.11.0 to avoid CVE |
 | v2.18.0 | [#3100](https://github.com/opensearch-project/ml-commons/pull/3100) | Gracefully handle error when generative_qa_parameters is not provided |
 | v2.18.0 | [#3057](https://github.com/opensearch-project/ml-commons/pull/3057) | Fix RAG processor NPE when optional parameters not provided |
 | v2.18.0 | [#2985](https://github.com/opensearch-project/ml-commons/pull/2985) | Fix ML inference ingest processor JsonPath return format |
@@ -87,6 +94,8 @@ graph TB
 
 ## References
 
+- [Issue #3834](https://github.com/opensearch-project/ml-commons/issues/3834): SearchIndexTool MCP schema alignment
+- [OpenSearch#17556](https://github.com/opensearch-project/OpenSearch/pull/17556): Core optional EnumSet streaming APIs
 - [Issue #3092](https://github.com/opensearch-project/ml-commons/issues/3092): RAG pipeline error handling
 - [Issue #2983](https://github.com/opensearch-project/ml-commons/issues/2983): RAG processor NPE
 - [Issue #2974](https://github.com/opensearch-project/ml-commons/issues/2974): ML inference processor JsonPath issue
@@ -97,4 +106,5 @@ graph TB
 
 ## Change History
 
+- **v3.1.0** (2025-07-15): Hidden model trusted connector bypass, enhanced deploy/undeploy logging, HTTP client alignment, core EnumSet API integration, SearchIndexTool MCP compatibility, commons-beanutils CVE fix
 - **v2.18.0** (2024-11-05): Multiple bugfixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC, and agent logging
