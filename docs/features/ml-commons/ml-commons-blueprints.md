@@ -62,6 +62,7 @@ OpenSearch provides two types of connector blueprints:
 - Titan Multimodal Embedding
 - Cohere Embed English/Multilingual v3
 - Claude 3.5, 3.7 (standard and extended thinking modes)
+- Converse API (Claude 3 Sonnet and other chat models)
 
 #### OpenAI
 - text-embedding-ada-002
@@ -143,6 +144,20 @@ POST /_plugins/_ml/connectors/_create
 | v3.0.0 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |
 | v3.0.0 | [#2975](https://github.com/opensearch-project/ml-commons/pull/2975) | Add tutorial for RAG of OpenAI and Bedrock |
 
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |
+| v3.0.0 | [#3584](https://github.com/opensearch-project/ml-commons/pull/3584) | Add blueprint for Claude 3.7 on Bedrock |
+| v3.0.0 | [#3725](https://github.com/opensearch-project/ml-commons/pull/3725) | Add standard blueprint for Azure embedding ada2 |
+| v3.0.0 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |
+| v3.0.0 | [#2975](https://github.com/opensearch-project/ml-commons/pull/2975) | Add tutorial for RAG of OpenAI and Bedrock |
+| v2.18.0 | [#2960](https://github.com/opensearch-project/ml-commons/pull/2960) | Connector blueprint for Amazon Bedrock Converse |
+| v2.18.0 | [#3058](https://github.com/opensearch-project/ml-commons/pull/3058) | Support role temporary credential in connector tutorial |
+| v2.18.0 | [#3064](https://github.com/opensearch-project/ml-commons/pull/3064) | Add tutorial for cross-account model invocation |
+| v2.18.0 | [#3094](https://github.com/opensearch-project/ml-commons/pull/3094) | Tune Titan embedding model blueprint for V2 |
+
 ## References
 
 - [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
@@ -150,9 +165,12 @@ POST /_plugins/_ml/connectors/_create
 - [Connectors Overview](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/)
 - [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
 - [Issue #3619](https://github.com/opensearch-project/ml-commons/issues/3619): Standard blueprints feature request
+- [Amazon Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html)
+- [Bedrock Titan Embedding Models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html)
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Added standard blueprints for vector search, Claude 3.7 blueprint, Azure OpenAI blueprint, RAG tutorials
+- **v2.18.0** (2024-11-12): Added Bedrock Converse blueprint, cross-account model invocation tutorial, role temporary credential support, Titan Embedding V2 blueprint
 - **v2.14.0** (2024-05-14): Introduced ML inference processor support for standard blueprints
 - **v2.9.0** (2023-07-24): Initial connector blueprints feature

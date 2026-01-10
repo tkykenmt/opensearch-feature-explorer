@@ -102,6 +102,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [k-NN Maintenance](features/k-nn/k-nn-maintenance.md) - Lucene 9.12 codec compatibility, force merge performance optimization, benchmark folder removal, code refactoring
 
+### ML Commons
+
+- [ML Commons Connectors & Blueprints](features/ml-commons/ml-commons-connectors-blueprints.md) - Bedrock Converse blueprint, cross-account model invocation tutorial, role temporary credential support, Titan Embedding V2 blueprint
+
 ### Query Insights
 
 - [Query Insights Settings](features/query-insights/query-insights-settings.md) - Change default values for grouping attribute settings (field_name, field_type) from false to true
