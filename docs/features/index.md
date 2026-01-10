@@ -60,6 +60,7 @@
 - [Derived Fields](opensearch/derived-fields.md)
 - [Derived Source](opensearch/derived-source.md)
 - [Docker Compose v2 Support](opensearch/docker-compose-v2-support.md)
+- [Docker Image Base](opensearch/docker-image-base.md)
 - [Dynamic Threadpool Resize](opensearch/dynamic-threadpool-resize.md)
 - [Engine API](opensearch/engine-api.md)
 - [Engine Optimization Fixes](opensearch/engine-optimization-fixes.md)
