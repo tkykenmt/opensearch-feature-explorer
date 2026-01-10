@@ -61,6 +61,7 @@
 ### Neural Search
 
 - [Lucene Upgrade](features/neural-search/lucene-upgrade.md) - Update hybrid query implementation for Lucene 10.2.1 API compatibility
+- [Neural Search Compatibility](features/neural-search/neural-search-compatibility.md) - Update neural-search for OpenSearch 3.0 beta compatibility
 
 ### Learning to Rank
 
