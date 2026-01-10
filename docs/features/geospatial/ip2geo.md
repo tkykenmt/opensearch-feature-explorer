@@ -186,6 +186,7 @@ Fields available depend on the datasource. GeoLite2 City provides:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#795](https://github.com/opensearch-project/geospatial/pull/795) | Remove deprecated URL(String) usage |
 | v3.2.0 | [#782](https://github.com/opensearch-project/geospatial/pull/782) | Block redirect in IP2Geo and move validation to transport action |
 | v3.2.0 | [#715](https://github.com/opensearch-project/geospatial/pull/715) | Replace ThreadContext.stashContext with pluginSubject.runAs |
 | v3.1.0 | [#761](https://github.com/opensearch-project/geospatial/pull/761) | Reset datasource metadata on update failure |
@@ -201,6 +202,7 @@ Fields available depend on the datasource. GeoLite2 City provides:
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Code modernization - replaced deprecated `URL(String)` constructor with `URI.create(String).toURL()` pattern for Java compatibility
 - **v3.2.0** (2026-01-11): Security improvements - block HTTP redirects in datasource fetching, migrate to PluginSubject for system index access
 - **v3.1.0** (2026-01-10): Bug fixes for cache synchronization - reset metadata on failure, add retry logic with cache refresh
 - **v2.10.0**: Initial implementation of IP2Geo processor
