@@ -72,6 +72,8 @@ flowchart LR
 | `NodeValidator` | Monitors node resources (CPU, JVM, disk) to determine merge eligibility |
 | `ShardValidator` | Evaluates shard conditions (segment count, translog age) for merge candidacy |
 | `FileCacheSettings` | Manages file cache configuration including remote data ratio |
+| `FsServiceProvider` | Factory that creates appropriate FsService based on node type (warm vs. other) |
+| `WarmFsService` | Specialized FsService for warm nodes that calculates disk usage based on addressable space (total = cache × ratio, used = primary shard sizes) |
 
 ### Configuration
 
@@ -81,7 +83,7 @@ flowchart LR
 |---------|-------------|---------|
 | `cluster.routing.allocation.disk.warm_threshold_enabled` | Enable/disable warm disk threshold allocation decider | `true` |
 | `cluster.auto_force_merge.enabled` | Enable/disable automatic force merge feature | `false` |
-| `cluster.filecache.remote_data_ratio` | Maximum ratio of remote data to local cache size | `5` |
+| `cluster.filecache.remote_data_ratio` | Maximum ratio of remote data to local cache size | `5` (min: `1`) |
 
 #### Node-Level Settings
 
@@ -189,6 +191,7 @@ PUT _plugins/_ism/policies/hot-warm-policy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18767](https://github.com/opensearch-project/OpenSearch/pull/18767) | FS stats for warm nodes based on addressable space; changed default remote_data_ratio from 0 to 5 (min: 1) |
 | v3.2.0 | [#18666](https://github.com/opensearch-project/OpenSearch/pull/18666) | Replaced CPU load average with AverageTracker classes, adjusted default thresholds |
 | v3.1.0 | [#18082](https://github.com/opensearch-project/OpenSearch/pull/18082) | Add Warm Disk Threshold Allocation Decider for Warm shards |
 | v3.1.0 | [#18229](https://github.com/opensearch-project/OpenSearch/pull/18229) | Added Auto Force Merge Manager to enhance hot to warm migration |
@@ -196,11 +199,13 @@ PUT _plugins/_ism/policies/hot-warm-policy
 ## References
 
 - [Issue #8535](https://github.com/opensearch-project/OpenSearch/issues/8535): Add support for a FileCacheDecider
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
-- [Creating a Cluster - Hot and Warm Nodes](https://docs.opensearch.org/3.1/tuning-your-cluster/)
-- [ISM Policies](https://docs.opensearch.org/3.1/im-plugin/ism/policies/)
+- [Issue #18768](https://github.com/opensearch-project/OpenSearch/issues/18768): [WRITABLE WARM] FS stats for warm nodes
+- [Issue #11676](https://github.com/opensearch-project/OpenSearch/issues/11676): Remote data ratio configuration details
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+- [Creating a Cluster - Hot and Warm Nodes](https://docs.opensearch.org/3.0/tuning-your-cluster/)
+- [ISM Policies](https://docs.opensearch.org/3.0/im-plugin/ism/policies/)
 
 ## Change History
 
-- **v3.2.0** (2025-07-09): Improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
+- **v3.2.0** (2025-07-22): Added WarmFsService for accurate warm node FS stats based on addressable space; changed default remote_data_ratio from 0 to 5 with minimum of 1; improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
 - **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
