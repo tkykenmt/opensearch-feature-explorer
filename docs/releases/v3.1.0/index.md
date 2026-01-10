@@ -61,6 +61,7 @@
 
 ### Query Insights
 
+- [Query Insights Enhancements](features/query-insights/query-insights-enhancements.md) - Metric labels for historical data, consolidated grouping settings, index exclusion, async reader, Live Queries Dashboard, WLM Dashboard
 - [Query Insights Release Maintenance](features/query-insights/query-insights-release-maintenance.md) - Fix flaky integration tests and add multi-node test infrastructure
 - [Query Insights Bug Fixes](features/query-insights/query-insights-bug-fixes.md) - Fix node-level request serialization, live query status response, and CI test stability
 

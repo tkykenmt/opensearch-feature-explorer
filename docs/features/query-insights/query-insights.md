@@ -96,11 +96,14 @@ flowchart TB
 | `search.insights.top_queries.memory.enabled` | Enable memory-based Top N queries | `false` |
 | `search.insights.top_queries.memory.top_n_size` | Number of top queries to track | `10` |
 | `search.insights.top_queries.memory.window_size` | Time window for collection | `1m` |
-| `search.insights.top_queries.group_by` | Group queries by: `NONE`, `SIMILARITY` | `NONE` |
+| `search.insights.top_queries.grouping.group_by` | Group queries by: `none`, `similarity` (v3.1.0+) | `none` |
+| `search.insights.top_queries.grouping.max_groups_excluding_topn` | Maximum groups to track excluding top N (v3.1.0+) | `100` |
 | `search.insights.top_queries.grouping.attributes.field_name` | Include field names in query structure for grouping | `true` |
 | `search.insights.top_queries.grouping.attributes.field_type` | Include field types in query structure for grouping | `true` |
+| `search.insights.top_queries.excluded_indices` | Indices to exclude from insights collection (v3.1.0+) | `[]` |
 | `search.insights.top_queries.exporter.type` | Exporter type: `none`, `local_index` | `none` |
 | `search.insights.top_queries.exporter.template_priority` | Index template priority | `1847` |
+| `search.insights.top_queries.exporter.delete_after_days` | Days to retain exported data | `7` |
 
 ### APIs
 
@@ -182,6 +185,15 @@ GET /_insights/live_queries?sort=latency&size=5
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#326](https://github.com/opensearch-project/query-insights/pull/326) | Add metric labels to historical data |
+| v3.1.0 | [#336](https://github.com/opensearch-project/query-insights/pull/336) | Consolidate grouping settings |
+| v3.1.0 | [#308](https://github.com/opensearch-project/query-insights/pull/308) | Add setting to exclude certain indices |
+| v3.1.0 | [#344](https://github.com/opensearch-project/query-insights/pull/344) | Asynchronous search operations in reader |
+| v3.1.0 | [#355](https://github.com/opensearch-project/query-insights/pull/355) | Added isCancelled field in Live Queries API |
+| v3.1.0 | [#199](https://github.com/opensearch-project/query-insights-dashboards/pull/199) | New Live Queries Dashboard |
+| v3.1.0 | [#155](https://github.com/opensearch-project/query-insights-dashboards/pull/155) | New Workload Management Dashboard |
+| v3.1.0 | [#179](https://github.com/opensearch-project/query-insights-dashboards/pull/179) | Remove duplicate requests on overview page |
+| v3.1.0 | [#209](https://github.com/opensearch-project/query-insights-dashboards/pull/209) | Add unit tests for WLM dashboard |
 | v3.1.0 | [#365](https://github.com/opensearch-project/query-insights/pull/365) | Fix node-level top queries request parameter serialization |
 | v3.1.0 | [#210](https://github.com/opensearch-project/query-insights-dashboards/pull/210) | Fix live query status field location in response |
 | v3.1.0 | [#206](https://github.com/opensearch-project/query-insights-dashboards/pull/206) | Fix failing Cypress tests |
@@ -229,7 +241,7 @@ GET /_insights/live_queries?sort=latency&size=5
 
 ## Change History
 
-- **v3.1.0**: Fixed node-level top queries request parameter serialization bug (parameters not passed to other nodes); fixed `is_cancelled` field location in Live Queries API response; improved Cypress test stability with better timeouts and health checks; fixed CI version mismatch between OpenSearch and Dashboards; fixed flaky integration tests; added multi-node cluster integration tests (`QueryInsightsClusterIT`); added health stats REST API integration tests (`HealthStatsRestIT`); improved test infrastructure with node targeting and retry logic
+- **v3.1.0**: Added metric labels to historical data for filtering by metric type; consolidated grouping settings under `grouping.*` namespace; added `excluded_indices` setting to filter indices from insights; refactored local index reader to use asynchronous operations; added `is_cancelled` field to Live Queries API; new Live Queries Dashboard with real-time monitoring, auto-refresh, visual breakdowns, and query cancellation; new Workload Management Dashboard for query group management; fixed duplicate API requests on overview page; fixed node-level top queries request parameter serialization bug; improved Cypress test stability; fixed CI version mismatch; added multi-node cluster integration tests
 - **v3.0.0**: Added Live Queries API, default index template, verbose parameter, profile query filtering, strict hash check
 - **v2.18.0**: Added Health Stats API for monitoring plugin health; added OpenTelemetry error metrics counters; added field name and type support for query shape grouping (defaults changed to `true`); added time range parameters for historical query retrieval; added cache eviction and cluster state listener for index field type mappings
 - **v2.17.0**: Fixed listener startup when query metrics enabled; added query shape hash method; fixed CVE-2023-2976; improved integration test coverage for query grouping; added code hygiene checks (Spotless, Checkstyle); fixed snapshot publishing configuration
