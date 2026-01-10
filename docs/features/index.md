@@ -47,6 +47,7 @@
 - [Merge & Segment Settings](opensearch/merge-segment-settings.md)
 - [Multi-Search API](opensearch/multi-search-api.md)
 - [Nested Aggregations](opensearch/nested-aggregations.md)
+- [Network Configuration](opensearch/network-configuration.md)
 - [Node Join/Leave](opensearch/node-join-leave.md)
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
