@@ -156,6 +156,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Security Analytics Dashboards
 
+- [Security Analytics UX](features/security-analytics-dashboards/security-analytics-ux.md) - Comprehensive UX improvements including navigation menu restructuring, standardized UI spacing and typography, compressed search bars and filters, and context-aware page titles
 - [Security Analytics Data Source](features/security-analytics-dashboards/security-analytics-data-source.md) - Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, and getting started cards visual redesign
 - [Security Analytics Findings](features/security-analytics-dashboards/security-analytics-findings.md) - Fix findings page crash when custom rules are deleted and correct rule severity display for multi-rule findings
 
