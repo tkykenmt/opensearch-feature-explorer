@@ -155,6 +155,15 @@ POST _plugins/_alerting/monitors
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#1850](https://github.com/opensearch-project/alerting/pull/1850) | Timebox doc level monitor execution |
+| v3.1.0 | [#1854](https://github.com/opensearch-project/alerting/pull/1854) | Prevent dry run execution of doc level monitor with index pattern |
+| v3.1.0 | [#1856](https://github.com/opensearch-project/alerting/pull/1856) | Use transport service timeout instead of custom impl |
+| v3.1.0 | [#1860](https://github.com/opensearch-project/alerting/pull/1860) | Publish list of findings instead of individual ones |
+| v3.1.0 | [#829](https://github.com/opensearch-project/common-utils/pull/829) | Validate index patterns not allowed in doc level monitor |
+| v3.1.0 | [#832](https://github.com/opensearch-project/common-utils/pull/832) | Update PublishFindingsRequest to use list of findings |
+| v3.1.0 | [#835](https://github.com/opensearch-project/common-utils/pull/835) | Fix isDocLevelMonitor check for threat intel monitor |
+| v3.1.0 | [#1248](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1248) | Add alert insight to alerts card on overview page |
+| v3.1.0 | [#1256](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1256) | Add error handling for extract log pattern |
 | v3.0.0 | [#1780](https://github.com/opensearch-project/alerting/pull/1780) | Fix bucket selector aggregation writeable name |
 | v3.0.0 | [#1823](https://github.com/opensearch-project/alerting/pull/1823) | Fix build due to phasing off SecurityManager |
 | v3.0.0 | [#1824](https://github.com/opensearch-project/alerting/pull/1824) | Use java-agent Gradle plugin |
@@ -190,11 +199,14 @@ POST _plugins/_alerting/monitors
 - [Composite Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/composite-monitors/): Composite monitor documentation
 - [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
 - [Notifications Plugin](https://docs.opensearch.org/3.0/observing-your-data/notifications/index/): Notifications integration
+- [Issue #1853](https://github.com/opensearch-project/alerting/issues/1853): Timebox doc level monitor to avoid duplicate executions
+- [Issue #1859](https://github.com/opensearch-project/alerting/issues/1859): Change publish findings to accept a list of findings
 - [Issue #1617](https://github.com/opensearch-project/alerting/issues/1617): Distribution build issue
 - [Issue #671](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/671): Trigger name validation issue
 
 ## Change History
 
+- **v3.1.0** (2025): Doc-level monitor timeboxing (3-4 min execution limit), batch findings publishing for improved performance, index pattern validation for doc-level monitors, threat intel monitor check fix, alert insight on dashboard overview page, log pattern extraction error handling
 - **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
 - **v2.18.0** (2024-11-05): Doc-level monitor improvements including dynamic query index deletion (`delete_query_index_in_every_run` flag), query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
 - **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes

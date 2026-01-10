@@ -168,3 +168,7 @@
 ### Anomaly Detection
 
 - [Anomaly Detection Forecasting](features/anomaly-detection/anomaly-detection-forecasting.md) - Bug fixes for forecasting task state handling, date format compatibility, cold-start/window delay refinements, UI validation and error display improvements
+
+### Alerting
+
+- [Alerting Improvements](features/alerting/alerting-improvements.md) - Doc-level monitor timeboxing, batch findings publishing, index pattern validation, threat intel monitor fix, dashboard alert insights
