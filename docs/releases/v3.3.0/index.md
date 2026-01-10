@@ -10,6 +10,7 @@
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md)
 - [Cross-Cluster Settings](features/opensearch/cross-cluster-settings.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
+- [Flaky Test Fixes](features/opensearch/flaky-test-fixes.md)
 - [Netty Arena Settings](features/opensearch/netty-arena-settings.md)
 - [NRT Replication Engine](features/opensearch/nrt-replication-engine.md)
 - [Query Phase Fixes](features/opensearch/query-phase-fixes.md)

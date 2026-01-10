@@ -48,6 +48,7 @@
 - [File Cache](opensearch/file-cache.md)
 - [Cluster Permissions](opensearch/cluster-permissions.md)
 - [Flat Object Field](opensearch/flat-object-field.md)
+- [Flaky Test Fixes](opensearch/flaky-test-fixes.md)
 - [gRPC Transport & Services](opensearch/grpc-transport--services.md)
 - [Index Settings](opensearch/index-settings.md)
 - [List APIs (Paginated)](opensearch/list-apis-paginated.md)
