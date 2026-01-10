@@ -13,6 +13,7 @@
 
 ## opensearch
 
+- [Approximation Framework](opensearch/approximation-framework.md)
 - [Async Shard Fetch Metrics](opensearch/async-shard-fetch-metrics.md)
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
 - [Bulk API](opensearch/bulk-api.md)
