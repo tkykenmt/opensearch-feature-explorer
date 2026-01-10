@@ -198,6 +198,7 @@
 - [Multi-Tenancy](security/multi-tenancy.md)
 - [Resource Access Control Framework](security/resource-access-control-framework.md)
 - [Security FIPS Compliance](security/security-fips-compliance.md)
+- [SPIFFE X.509 SVID Support](security/spiffe-x.509-svid-support.md)
 
 ## security-dashboards
 

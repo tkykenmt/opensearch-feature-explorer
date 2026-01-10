@@ -280,3 +280,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Security Dashboards Enhancements](features/security-dashboards-plugin/security-dashboards-enhancements.md) | enhancement | Full index pattern display in role view, added missing index permissions |
+
+### Security
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [SPIFFE X.509 SVID Support](features/security/spiffe-x.509-svid-support.md) | feature | SPIFFE-based workload identity authentication via SPIFFEPrincipalExtractor |
