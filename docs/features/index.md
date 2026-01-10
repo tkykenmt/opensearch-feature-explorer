@@ -19,6 +19,7 @@
 - [Async Shard Batch Fetch](opensearch/async-shard-batch-fetch.md)
 - [Async Shard Fetch Metrics](opensearch/async-shard-fetch-metrics.md)
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
+- [Azure Repository](opensearch/azure-repository.md)
 - [Bulk API](opensearch/bulk-api.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
