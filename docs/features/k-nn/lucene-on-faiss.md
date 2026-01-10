@@ -173,19 +173,77 @@ Key observations:
 - Slight recall reduction (up to 4.5%) due to Lucene's early termination logic
 - Enables running large indexes (e.g., 30GB) on memory-constrained instances (e.g., 8GB RAM)
 
+### Asymmetric Distance Computation (ADC) Support
+
+Starting in v3.2.0, Lucene-on-Faiss supports Asymmetric Distance Computation (ADC) for binary-quantized indexes. ADC improves recall by preserving query vectors in full precision while comparing against binary-quantized document vectors.
+
+#### How ADC Works
+
+1. **Document Quantization**: Documents are binary-quantized (32x compression) during indexing
+2. **Centroid Computation**: Per-dimension means are computed for values quantized to 0 and 1
+3. **Query Transformation**: At search time, query vectors are rescaled using the centroids but kept in full precision
+4. **Asymmetric Distance**: Distance is computed between the full-precision query and binary document vectors
+
+The rescaling formula transforms each query dimension `q_d` to:
+```
+q'_d = (q_d - below_mean_d) / (above_mean_d - below_mean_d)
+```
+
+#### ADC Configuration Example
+
+```json
+PUT /my-vector-index
+{
+  "settings": {
+    "index.knn": true,
+    "index.knn.memory_optimized_search": true
+  },
+  "mappings": {
+    "properties": {
+      "my_vector": {
+        "type": "knn_vector",
+        "dimension": 768,
+        "method": {
+          "name": "hnsw",
+          "engine": "faiss",
+          "space_type": "l2",
+          "parameters": {
+            "encoder": {
+              "name": "binary",
+              "parameters": {
+                "bits": 1,
+                "enable_adc": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### ADC Components
+
+| Component | Description |
+|-----------|-------------|
+| `ADCFlatVectorsScorer` | Scorer for asymmetric distance computation between float queries and byte vectors |
+| `FlatVectorsScorerProvider` | Extended factory to return ADC-aware scorers based on space type |
+
 ## Limitations
 
 - **Engine Support**: Only FAISS engine is supported
 - **Method Support**: Only HNSW algorithm is supported; IVF and PQ are not yet supported
-- **Quantization**: `QuantizationConfig` is not supported with memory-optimized search
 - **Vector Types**: Only FLOAT and BYTE data types are supported
-- **Space Types**: Only L2 and INNER_PRODUCT are supported
+- **Space Types**: Only L2, INNER_PRODUCT, and COSINESIMIL are supported
+- **ADC Limitations**: ADC only supports 1-bit binary quantization; byte vector queries are not supported with ADC
 - **Result Consistency**: Results may differ slightly from full-memory FAISS search due to differences in loop termination conditions between Lucene and FAISS
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#2781](https://github.com/opensearch-project/k-NN/pull/2781) | ADC support for Lucene-on-Faiss |
 | v3.0.0 | [#2630](https://github.com/opensearch-project/k-NN/pull/2630) | Main implementation (10 sub-PRs combined) |
 | v3.0.0 | [#2581](https://github.com/opensearch-project/k-NN/pull/2581) | Building blocks for memory optimized search |
 | v3.0.0 | [#2590](https://github.com/opensearch-project/k-NN/pull/2590) | IxMp section loading logic |
@@ -201,9 +259,12 @@ Key observations:
 ## References
 
 - [RFC Issue #2401](https://github.com/opensearch-project/k-NN/issues/2401): Partial loading with FAISS engine - detailed design document
+- [RFC Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): ADC and Random Rotation for binary quantization
 - [Documentation: Memory-optimized vectors](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
 - [Blog: Lucene-on-Faiss](https://opensearch.org/blog/lucene-on-faiss-powering-opensearchs-high-performance-memory-efficient-vector-search/)
+- [Blog: Asymmetric Distance Computation](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/)
 
 ## Change History
 
+- **v3.2.0** (2026-01-14): Added ADC support for binary-quantized indexes
 - **v3.0.0** (2025-05-06): Initial implementation with HNSW support for FAISS engine
