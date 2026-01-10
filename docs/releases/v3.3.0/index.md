@@ -14,6 +14,7 @@
 - [Cross-Cluster Settings](features/opensearch/cross-cluster-settings.md)
 - [Date Format](features/opensearch/date-format.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
+- [Dynamic Mapping: false_allow_templates](features/opensearch/dynamic-mapping.md)
 - [Field Data Cache](features/opensearch/field-data-cache.md)
 - [File Cache Threshold](features/opensearch/file-cache-threshold.md)
 - [Docker Image Updates](features/opensearch/docker-image-updates.md)
