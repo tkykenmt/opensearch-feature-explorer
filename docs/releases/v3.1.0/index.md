@@ -4,6 +4,7 @@
 
 ### OpenSearch
 
+- [Approximation Framework](features/opensearch/approximation-framework.md) - BKD traversal optimization for skewed datasets with DFS strategy
 - [Dependency Bumps](features/opensearch/dependency-bumps.md) - 21 dependency updates including CVE-2025-27820 fix, Netty, Gson, Azure SDK updates
 - [DocRequest Refactoring](features/opensearch/docrequest-refactoring.md) - Generic interface for single-document operations
 - [FIPS Support](features/opensearch/fips-support.md) - Update FipsMode check for improved BC-FIPS compatibility
