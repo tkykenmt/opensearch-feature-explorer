@@ -2,7 +2,7 @@
 
 ## Summary
 
-Scripted metric aggregation is a multi-value metric aggregation that returns metrics calculated from user-defined scripts. It provides flexibility for custom aggregation logic through four script stages: init, map, combine, and reduce. In v3.2.0, support was added for using scripted metric aggregations when reducing `InternalValueCount` and `InternalAvg` aggregations, enabling seamless searches across rollup and raw indices.
+Scripted metric aggregation is a multi-value metric aggregation that returns metrics calculated from user-defined scripts. It provides flexibility for custom aggregation logic through four script stages: init, map, combine, and reduce. In v3.2.0, support was added for using scripted metric aggregations when reducing `InternalValueCount` and `InternalAvg` aggregations, enabling seamless searches across rollup and raw indices. In v3.3.0, the `ScriptedAvg` class was added to the Painless SPI allowlist, enabling plugins to use this class directly in Painless scripts.
 
 ## Details
 
@@ -35,6 +35,16 @@ graph TB
 | `ScriptedAvg` | Helper class containing sum and count for average calculations |
 | `InternalAvg` | Average aggregation with scripted metric support in reduce |
 | `InternalValueCount` | Value count aggregation with scripted metric support in reduce |
+
+### Painless SPI Allowlist (v3.3.0)
+
+The `ScriptedAvg` class is available in Painless scripts with the following methods:
+
+| Method | Description |
+|--------|-------------|
+| `ScriptedAvg(double sum, long count)` | Constructor to create a new ScriptedAvg instance |
+| `double getSum()` | Returns the sum value |
+| `long getCount()` | Returns the count value |
 
 ### Script Stages
 
@@ -119,6 +129,7 @@ GET rollup_index,raw_index/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19006](https://github.com/opensearch-project/OpenSearch/pull/19006) | Adding ScriptedAvg class to painless spi to allowlist usage from plugins |
 | v3.2.0 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric Aggregation when reducing aggregations in InternalValueCount and InternalAvg |
 
 ## References
@@ -129,4 +140,5 @@ GET rollup_index,raw_index/_search
 
 ## Change History
 
+- **v3.3.0** (2025-08-19): Added `ScriptedAvg` class to Painless SPI allowlist, enabling plugins to use scripted averages in Painless scripts; registered `ScriptedAvg` in `Streamables.java` with byte marker 28 for cross-node streaming
 - **v3.2.0** (2025-08-06): Added support for `InternalScriptedMetric` in `InternalValueCount` and `InternalAvg` reduce methods, enabling searches across rollup and raw indices
