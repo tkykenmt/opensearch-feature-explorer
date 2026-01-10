@@ -21,26 +21,24 @@ graph TB
     
     subgraph Browser["Browser Side"]
         ClientPlugin[BannerPlugin Client]
-        BannerService[BannerService]
         GlobalBanner[GlobalBanner Component]
         LinkRenderer[LinkRenderer]
     end
     
     subgraph Core["OSD Core"]
+        ChromeService[Chrome Service]
         Header[Header Component]
-        BannerContainer["#pluginGlobalBanner"]
-        InjectedMetadata[InjectedMetadata]
+        HeaderBanner[HeaderBanner Component]
     end
     
     YML --> ConfigSchema
     ConfigSchema --> ServerPlugin
-    ServerPlugin -->|exposeToBrowser| InjectedMetadata
-    InjectedMetadata --> ClientPlugin
-    ClientPlugin --> BannerService
-    BannerService --> GlobalBanner
+    ServerPlugin -->|exposeToBrowser| ClientPlugin
+    ClientPlugin -->|setGlobalBanner| ChromeService
+    ChromeService -->|globalBanner$| Header
+    Header --> HeaderBanner
+    HeaderBanner --> GlobalBanner
     GlobalBanner --> LinkRenderer
-    Header -->|conditionally renders| BannerContainer
-    GlobalBanner -->|mounts to| BannerContainer
 ```
 
 ### Data Flow
@@ -49,13 +47,14 @@ graph TB
 flowchart LR
     A[YAML Config] --> B[Server Plugin]
     B --> C[Browser Config]
-    C --> D[BannerService]
-    D --> E[BehaviorSubject]
-    E --> F[GlobalBanner]
-    F --> G[EuiCallOut]
-    G --> H[User Sees Banner]
-    H -->|Dismiss| I[Update State]
-    I --> E
+    C --> D[Plugin Start]
+    D -->|setGlobalBanner| E[Chrome Service]
+    E -->|globalBanner$| F[Header]
+    F --> G[HeaderBanner]
+    G --> H[GlobalBanner]
+    H --> I[EuiCallOut]
+    I --> J[User Sees Banner]
+    J -->|Dismiss| K[Update State]
 ```
 
 ### Components
@@ -63,11 +62,11 @@ flowchart LR
 | Component | Location | Description |
 |-----------|----------|-------------|
 | `BannerPlugin` (server) | `src/plugins/banner/server/plugin.ts` | Reads configuration and exposes to browser |
-| `BannerPlugin` (public) | `src/plugins/banner/public/plugin.ts` | Initializes service and renders banner |
-| `BannerService` | `src/plugins/banner/public/services/banner_service.ts` | Manages banner state with RxJS |
+| `BannerPlugin` (public) | `src/plugins/banner/public/plugin.ts` | Registers banner via Chrome Service |
 | `GlobalBanner` | `src/plugins/banner/public/components/global_banner.tsx` | Main React component |
 | `LinkRenderer` | `src/plugins/banner/public/components/link_renderer.tsx` | Markdown link renderer |
-| `render_banner` | `src/plugins/banner/public/services/render_banner.ts` | DOM mounting utilities |
+| `HeaderBanner` | `src/core/public/chrome/ui/header/header_banner.tsx` | Core component for banner rendering |
+| `ChromeGlobalBanner` | `src/core/public/chrome/chrome_service.tsx` | Interface for global banner structure |
 
 ### Configuration
 
@@ -137,7 +136,7 @@ The plugin uses CSS variables for dynamic layout adjustment:
   --global-banner-height: 0;
 }
 
-#pluginGlobalBanner {
+.globalBanner {
   position: fixed;
   top: 0;
   left: 0;
@@ -152,6 +151,29 @@ The plugin uses CSS variables for dynamic layout adjustment:
 
 .primaryHeader:not(.newTopNavHeader) {
   top: calc(var(--global-banner-height) + $euiSizeXL + $euiSizeM) !important;
+}
+```
+
+### Chrome Service API (v3.3.0+)
+
+The banner plugin now integrates with the Chrome Service for cleaner extensibility:
+
+| Method | Description |
+|--------|-------------|
+| `chrome.getGlobalBanner$()` | Returns an Observable of the current global banner state |
+| `chrome.setGlobalBanner(banner?)` | Sets or clears the global banner component |
+
+#### Custom Banner Example
+
+```typescript
+// In your plugin's start() method
+public async start(core: CoreStart): Promise<MyPluginStart> {
+  core.chrome.setGlobalBanner({
+    component: React.createElement(MyCustomBanner, { 
+      message: 'Important announcement' 
+    }),
+  });
+  return {};
 }
 ```
 
@@ -176,6 +198,7 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#10324](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10324) | Refactor Banner Extensibility Model via Chrome Service |
 | v3.2.0 | [#10264](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10264) | Add global banner support via UI settings with live updates |
 | v3.2.0 | [#9989](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9989) | Initial implementation with feature flag |
 | v3.2.0 | [#10251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10251) | Fix font size and center alignment |
@@ -183,10 +206,12 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 
 ## References
 
+- [Issue #10223](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10223): Banner extensibility model refactor
 - [Issue #9861](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9861): RFC - OpenSearch Dashboards Banner Plugin
 - [Issue #9990](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9990): Meta issue tracking banner plugin development
 
 ## Change History
 
+- **v3.3.0** (2025-08-08): Refactored extensibility model via Chrome Service, removed `injectedMetadata` dependency, added `setGlobalBanner`/`getGlobalBanner$` APIs
 - **v3.2.0** (2026-01-10): Added UI Settings support for dynamic banner configuration via Advanced Settings
 - **v3.2.0** (2026-01-10): Initial implementation with static banner, feature flag, markdown support, and dismissal functionality
