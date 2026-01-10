@@ -63,6 +63,7 @@
 - [Parallel Shard Refresh](opensearch/parallel-shard-refresh.md)
 - [Percentiles Aggregation](opensearch/percentiles-aggregation.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
+- [Platform Support](opensearch/platform-support.md)
 - [Plugin Installation](opensearch/plugin-installation.md)
 - [Plugin Testing Framework](opensearch/plugin-testing-framework.md)
 - [Pull-based Ingestion](opensearch/pull-based-ingestion.md)
