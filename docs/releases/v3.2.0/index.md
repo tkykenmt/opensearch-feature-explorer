@@ -4,6 +4,8 @@
 
 This page indexes all investigated release items for OpenSearch v3.2.0.
 
+- [Release Summary](summary.md)
+
 ## Release Reports
 
 ### OpenSearch
