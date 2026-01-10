@@ -2,7 +2,7 @@
 
 ## Summary
 
-The S3 Repository plugin (`repository-s3`) enables OpenSearch to store snapshots in Amazon S3 buckets. It provides a reliable, scalable, and cost-effective solution for backing up and restoring OpenSearch indices using AWS cloud storage.
+The S3 Repository plugin (`repository-s3`) enables OpenSearch to store snapshots in Amazon S3 buckets. It provides a reliable, scalable, and cost-effective solution for backing up and restoring OpenSearch indices using AWS cloud storage. The plugin supports advanced security features including AWS KMS server-side encryption (SSE-KMS) and bucket owner verification for compliance requirements.
 
 ## Details
 
@@ -60,7 +60,11 @@ graph TB
 | `throttle_retries` | Use throttling backoff strategy | `true` |
 | `canned_acl` | S3 canned ACL for created objects | `private` |
 | `storage_class` | S3 storage class for snapshot files | `standard` |
-| `server_side_encryption` | Enable S3 server-side encryption | `false` |
+| `server_side_encryption_type` | Encryption type: `AES256`, `aws:kms`, or `bucket_default` | `bucket_default` |
+| `server_side_encryption_kms_key_id` | KMS key ARN for SSE-KMS encryption | None |
+| `server_side_encryption_bucket_key_enabled` | Enable S3 Bucket Keys to reduce KMS costs | `true` |
+| `server_side_encryption_encryption_context` | JSON key-value pairs for KMS encryption context | None |
+| `expected_bucket_owner` | 12-digit AWS account ID for bucket ownership verification | None |
 | `buffer_size` | Buffer size for multipart uploads | `5mb`-`5gb` |
 | `max_restore_bytes_per_sec` | Maximum restore rate | `40mb` |
 | `max_snapshot_bytes_per_sec` | Maximum snapshot rate | `40mb` |
@@ -89,8 +93,25 @@ PUT _snapshot/my-s3-repo
   "settings": {
     "bucket": "my-opensearch-snapshots",
     "base_path": "snapshots/production",
-    "compress": true,
-    "server_side_encryption": true
+    "compress": true
+  }
+}
+```
+
+#### Register Repository with SSE-KMS (v3.1.0+)
+
+```json
+PUT _snapshot/my-secure-repo
+{
+  "type": "s3",
+  "settings": {
+    "bucket": "my-snapshot-bucket",
+    "base_path": "snapshots",
+    "region": "us-east-1",
+    "server_side_encryption_type": "aws:kms",
+    "server_side_encryption_kms_key_id": "arn:aws:kms:us-east-1:123456789012:key/my-key-id",
+    "server_side_encryption_bucket_key_enabled": true,
+    "expected_bucket_owner": "123456789012"
   }
 }
 ```
@@ -187,18 +208,23 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#18312](https://github.com/opensearch-project/OpenSearch/pull/18312) | Add support for SSE-KMS and S3 bucket owner verification |
 | v2.18.0 | [#15621](https://github.com/opensearch-project/OpenSearch/pull/15621) | Add support for async deletion in S3BlobContainer |
 | v2.18.0 | [#15978](https://github.com/opensearch-project/OpenSearch/pull/15978) | Change default retry mechanism to Standard Mode |
 | v2.18.0 | [#16194](https://github.com/opensearch-project/OpenSearch/pull/16194) | Fix SLF4J warnings on startup |
 
 ## References
 
+- [PR #18312](https://github.com/opensearch-project/OpenSearch/pull/18312): SSE-KMS and bucket owner verification
+- [Issue #14606](https://github.com/opensearch-project/OpenSearch/issues/14606): Feature request for SSE-KMS support
 - [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Async deletion implementation
 - [Issue #15397](https://github.com/opensearch-project/OpenSearch/issues/15397): Add jitter to downloads from remote store
 - [Issue #16152](https://github.com/opensearch-project/OpenSearch/issues/16152): SLF4J warnings when adding repository-s3
-- [Register Snapshot Repository](https://docs.opensearch.org/2.18/api-reference/snapshots/create-repository/): OpenSearch documentation
+- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
 - [AWS SDK Retry Behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html): AWS retry modes documentation
+- [AWS SSE-KMS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html): AWS KMS encryption guide
 
 ## Change History
 
+- **v3.1.0** (2025-07): Added SSE-KMS support, bucket owner verification, removed legacy server_side_encryption setting
 - **v2.18.0** (2024-10-22): Added async deletion support, changed default retry mechanism to Standard Mode, fixed SLF4J warnings

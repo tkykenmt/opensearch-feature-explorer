@@ -14,6 +14,7 @@
 - [Percentiles Aggregation](features/opensearch/percentiles-aggregation.md) - Switch to MergingDigest for up to 30x performance improvement
 - [Plugin Installation](features/opensearch/plugin-installation.md) - Fix native plugin installation error caused by PGP public key change
 - [Query Bug Fixes](features/opensearch/query-bug-fixes.md) - Fixes for exists query, error handling, field validation, and IP field terms query
+- [S3 Repository Enhancements](features/opensearch/s3-repository-enhancements.md) - SSE-KMS encryption support and S3 bucket owner verification
 - [Snapshot/Repository Fixes](features/opensearch/repository-fixes.md) - Fix infinite loop during concurrent snapshot/repository update and NPE for legacy snapshots
 - [Star-Tree Index Enhancements](features/opensearch/star-tree-index.md) - Production-ready status, date range queries, nested aggregations, index-level control
 - [Cluster Manager Metrics](features/opensearch/cluster-manager-metrics.md) - Task execution time, node-left counter, and FS health failure metrics
