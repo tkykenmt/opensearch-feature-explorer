@@ -31,6 +31,7 @@
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md)
 - [Reindex API](features/opensearch/reindex-api.md)
 - [Request Cache](features/opensearch/request-cache.md)
+- [Rule-based Auto-tagging](features/opensearch/rule-based-auto-tagging.md)
 - [S3 Repository Compatibility Fix](features/opensearch/s3-repository.md)
 - [Scaled Float Field Precision Fix](features/opensearch/scaled-float-field.md)
 - [Scroll API Error Handling](features/opensearch/scroll-api.md)
