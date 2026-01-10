@@ -181,6 +181,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Security Analytics Bugfixes](features/security-analytics-dashboards-plugin/security-analytics-bugfixes.md) | bugfix | Remove Vega-based correlated findings chart, update IOC types API |
 
+### Reporting
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Reporting Plugin](features/reporting/reporting-plugin.md) | bugfix | System context for index creation, tenant URL parsing fix |
+
 ### Multi-Repository
 
 | Item | Category | Description |
