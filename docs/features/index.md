@@ -146,6 +146,7 @@
 - [Security Plugin](security/security-plugin.md)
 - [Security Plugin Dependencies](security/security-plugin-dependencies.md)
 - [Security Role Mapping](security/security-role-mapping.md)
+- [Security Testing Framework](security/security-testing-framework.md)
 
 ## security-dashboards
 
