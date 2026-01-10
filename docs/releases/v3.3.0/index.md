@@ -5,6 +5,7 @@
 ### OpenSearch
 
 - [Derived Fields](features/opensearch/derived-fields.md)
+- [Netty Arena Settings](features/opensearch/netty-arena-settings.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
 
