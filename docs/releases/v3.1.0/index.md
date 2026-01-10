@@ -98,6 +98,7 @@
 ### Multi-Plugin
 
 - [Testing Library Updates](features/multi-plugin/testing-library-updates.md) - Update @testing-library/user-event to v14.4.3 in anomaly-detection and index-management dashboards plugins
+- [Version Bumps and Release Maintenance](features/multi-plugin/version-bumps-and-release-maintenance.md) - Version increments across 11 repositories for v3.1.0 release cycle
 
 ### k-NN
 
