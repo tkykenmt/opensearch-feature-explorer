@@ -80,3 +80,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Multi-Plugin
 
 - [Search Autocomplete](features/multi-plugin/search-autocomplete.md) - Fix search_as_you_type multi-fields support and enhanced Dashboards autocomplete UX
+
+### Flow Framework
+
+- [Flow Framework Workflow State](features/flow-framework/flow-framework-workflow-state.md) - Remove Painless scripts for workflow state updates, implement optimistic locking
