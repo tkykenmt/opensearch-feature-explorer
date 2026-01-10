@@ -244,6 +244,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Common Utils Bugfixes](features/common-utils/common-utils-bugfixes.md) | bugfix | CVE-2025-48734 fix, PublishFindingsRequest revert, Gradle 8.14/JDK 24 upgrade |
 
+### Custom Codecs
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Composite Index Support](features/custom-codecs/composite-index-support.md) | feature | Support for composite indexes (star-tree) with custom codecs |
+
 ### User Behavior Insights
 
 | Item | Category | Description |

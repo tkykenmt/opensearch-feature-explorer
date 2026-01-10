@@ -199,6 +199,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#263](https://github.com/opensearch-project/custom-codecs/pull/263) | Adding support for composite index |
 | v3.1.0 | [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |
 | v3.1.0 | [#255](https://github.com/opensearch-project/custom-codecs/pull/255) | Fix version on BWC test dependency |
 | v3.0.0 | [#228](https://github.com/opensearch-project/custom-codecs/pull/228) | Upgrade to Lucene 10.1.0 and introduce new Codec implementation |
@@ -217,6 +218,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 ## Change History
 
+- **v3.2.0** (2026-01-14): Added composite index (star-tree) support - codecs now delegate to `CompositeCodec` when index has composite fields
 - **v3.1.0** (2025-09-16): Added QAT-accelerated ZSTD codec (`qat_zstd`), upgraded qat-java to 2.3.2
 - **v3.1.0** (2025-09-16): Fixed BWC test dependency version and added java-agent plugin to BWC tests
 - **v3.0.0** (2025-05-06): Upgraded to Lucene 10.1.0 with new codec implementations (Lucene101*), bumped zstd-jni to 1.5.6-1, migrated to Java Agent from SecurityManager
