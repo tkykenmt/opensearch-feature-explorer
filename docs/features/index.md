@@ -64,6 +64,7 @@
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Plugin Installation](opensearch/plugin-installation.md)
 - [Plugin Testing Framework](opensearch/plugin-testing-framework.md)
+- [Pull-based Ingestion](opensearch/pull-based-ingestion.md)
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
 - [Query Coordinator Context](opensearch/query-coordinator-context.md)
 - [Query Optimization](opensearch/query-optimization.md)
