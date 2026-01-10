@@ -115,6 +115,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Query Insights Settings](features/query-insights/query-insights-settings.md) - Change default values for grouping attribute settings (field_name, field_type) from false to true
 - [Query CI/CD](features/query-insights/query-ci-cd.md) - Upgrade deprecated actions/upload-artifact from v1/v2 to v3
 
+### Anomaly Detection
+
+- [Anomaly Detection Dependencies](features/anomaly-detection/anomaly-detection-dependencies.md) - Dependency updates (Jackson 2.18.0, JUnit Jupiter 5.11.2, Mockito 5.14.1) and removal of unused javassist dependency
+
 ### Security Analytics
 
 - [Security Analytics System Indices](features/security-analytics/security-analytics-system-indices.md) - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix
