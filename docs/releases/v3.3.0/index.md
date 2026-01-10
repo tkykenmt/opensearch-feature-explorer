@@ -19,6 +19,7 @@
 - [Engine API](features/opensearch/engine-api.md)
 - [Flaky Test Fixes](features/opensearch/flaky-test-fixes.md)
 - [Grok Processor](features/opensearch/grok-processor.md)
+- [gRPC Transport](features/opensearch/grpc-transport.md)
 - [Index Output](features/opensearch/index-output.md)
 - [Index Refresh](features/opensearch/index-refresh.md)
 - [Java 17 Modernization](features/opensearch/java-17-modernization.md)

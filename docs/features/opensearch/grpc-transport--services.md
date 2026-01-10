@@ -86,12 +86,15 @@ flowchart TB
 | Component | Description |
 |-----------|-------------|
 | `transport-grpc` | Core module providing gRPC server transport capability (installed by default since v3.2.0) |
+| `transport-grpc-spi` | Lightweight SPI module for external plugins to register query converters (v3.3.0+) |
 | `Netty4GrpcServerTransport` | Base gRPC server implementation using Netty4 |
 | `SecureNetty4GrpcServerTransport` | TLS-enabled gRPC transport for secure connections |
 | `DocumentService` | gRPC service handling document operations (Bulk API) |
 | `SearchService` | gRPC service handling search operations (Search API) |
 | `opensearch-protobufs` | Protocol buffer definitions for OpenSearch APIs |
 | `GrpcServiceExtension` | Interface for plugins to register custom gRPC services (v3.2.0+) |
+| `QueryBuilderProtoConverter` | Interface for converting protobuf queries to QueryBuilder (v3.3.0+) |
+| `QueryBuilderProtoConverterRegistry` | Registry for query converters, supports built-in and external converters (v3.3.0+) |
 | `GrpcStatusMapper` | Maps OpenSearch exceptions to proper gRPC status codes (v3.2.0+) |
 
 ### Configuration
@@ -102,6 +105,9 @@ flowchart TB
 | `grpc.publish_port` | Port published for external connections | Same as `grpc.port` |
 | `grpc.bind_host` | Network interface to bind gRPC server | Network host setting |
 | `grpc.publish_host` | Host address published for gRPC | Network host setting |
+| `grpc.netty.boss_count` | Number of boss threads for connection acceptance (v3.3.0+) | `1` |
+| `grpc.netty.worker_count` | Number of worker threads for network I/O (v3.3.0+) | `availableProcessors()` |
+| `grpc.netty.executor_threads` | Number of executor threads for request processing (v3.3.0+) | `availableProcessors() * 2` |
 
 ### Supported Services
 
@@ -128,11 +134,17 @@ The DocumentService provides the Bulk API for batch document operations:
 
 The SearchService provides the Search API for querying documents:
 
-**Supported Query Types:**
-- `match_all`: Match all documents
-- `term`: Exact term matching on a field
-- `terms`: Match any of multiple terms
-- `match_none`: Match no documents
+**Supported Query Types (v3.3.0+):**
+
+| Category | Query Types |
+|----------|-------------|
+| Match | `match_all`, `match_none` |
+| Term-level | `term`, `terms`, `exists`, `ids`, `range`, `regexp`, `wildcard`, `terms_set` |
+| Full-text | `match_phrase`, `multi_match` |
+| Compound | `bool` |
+| Geographic | `geo_bounding_box`, `geo_distance` |
+| Joining | `nested` |
+| Specialized | `script` |
 
 **Request Fields:**
 - `index`: Target indexes
@@ -240,15 +252,28 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Limitations
 
-- **Limited query support**: Only basic queries (match_all, term, terms, match_none) supported
 - **No aggregations**: Aggregation support not yet available
 - **Limited services**: Only Bulk and Search endpoints implemented
 - **Opt-in activation**: Requires explicit configuration to enable
+- **Sort limitations**: Sort-related protobufs temporarily removed in v3.3.0 (to be fixed in future release)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#18949](https://github.com/opensearch-project/OpenSearch/pull/18949) | Publish transport-grpc-spi for QueryBuilderProtoConverter |
+| v3.3.0 | [#19007](https://github.com/opensearch-project/OpenSearch/pull/19007) | Upgrade opensearch-protobufs to 0.13.0 |
+| v3.3.0 | [#19278](https://github.com/opensearch-project/OpenSearch/pull/19278) | Optimize gRPC transport thread management |
+| v3.3.0 | [#19280](https://github.com/opensearch-project/OpenSearch/pull/19280) | Zero-copy BytesRef optimization for search hits |
+| v3.3.0 | [#19339](https://github.com/opensearch-project/OpenSearch/pull/19339) | Add failureaccess runtime dependency |
+| v3.3.0 | [#19391](https://github.com/opensearch-project/OpenSearch/pull/19391) | Implement Boolean query and registry injection |
+| v3.3.0 | [#19392](https://github.com/opensearch-project/OpenSearch/pull/19392) | Implement Exists, Regexp, Wildcard queries |
+| v3.3.0 | [#19447](https://github.com/opensearch-project/OpenSearch/pull/19447) | Bump protobufs to 0.18.0, fix Inner Hits |
+| v3.3.0 | [#19448](https://github.com/opensearch-project/OpenSearch/pull/19448) | Implement Ids, Range, Terms Set queries |
+| v3.3.0 | [#19449](https://github.com/opensearch-project/OpenSearch/pull/19449) | Implement Match Phrase, MultiMatch queries |
+| v3.3.0 | [#19451](https://github.com/opensearch-project/OpenSearch/pull/19451) | Implement GeoBoundingBox, GeoDistance queries |
+| v3.3.0 | [#19453](https://github.com/opensearch-project/OpenSearch/pull/19453) | Implement Nested query, bump to protobufs 0.19.0 |
+| v3.3.0 | [#19455](https://github.com/opensearch-project/OpenSearch/pull/19455) | Implement Script query |
 | v3.2.0 | [#18516](https://github.com/opensearch-project/OpenSearch/pull/18516) | Make GRPC transport extensible to allow plugins to register custom services |
 | v3.2.0 | [#18897](https://github.com/opensearch-project/OpenSearch/pull/18897) | Move transport-grpc from a core plugin to a module |
 | v3.2.0 | [#18915](https://github.com/opensearch-project/OpenSearch/pull/18915) | Remove `experimental` designation from transport-grpc settings |
@@ -267,6 +292,8 @@ Documents in gRPC requests must be Base64 encoded:
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue
 - [Issue #18893](https://github.com/opensearch-project/OpenSearch/issues/18893): Move transport-grpc from plugin to module
 - [Issue #18513](https://github.com/opensearch-project/OpenSearch/issues/18513): GRPC Plugin Extensibility for Query Conversion
+- [Issue #19277](https://github.com/opensearch-project/OpenSearch/issues/19277): Optimize gRPC server for higher throughput
+- [Issue #19310](https://github.com/opensearch-project/OpenSearch/issues/19310): Zero-copy optimization for search hits
 - [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
 - [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
 - [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
@@ -275,6 +302,7 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
+- **v3.3.0** (2026-01-14): Expanded query support (15+ query types), thread management optimization, zero-copy serialization, transport-grpc-spi module for plugin extensibility
 - **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
 - **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
 - **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
