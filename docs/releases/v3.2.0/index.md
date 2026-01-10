@@ -157,6 +157,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Search Relevance Workbench](features/dashboards-search-relevance/search-relevance-workbench.md) | enhancement | New default UI, dashboard visualization, polling mechanism, date filtering, task scheduling |
 | [Toast Notification Bugfix](features/dashboards-search-relevance/toast-notification-bugfix.md) | bugfix | Fix error messages not rendering correctly in toast notifications |
 | [Repository Maintenance](features/dashboards-search-relevance/repository-maintenance.md) | bugfix | Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps |
 
