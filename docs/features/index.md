@@ -268,6 +268,7 @@
 
 ## multi-plugin
 
+- [Build Infrastructure (Gradle/JDK)](multi-plugin/build-infrastructure-gradle-jdk.md)
 - [CI/CD & Testing Infrastructure](multi-plugin/ci-cd-testing-infrastructure.md)
 - [CI/Infrastructure Fixes](multi-plugin/ci-infrastructure-fixes.md)
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
