@@ -198,21 +198,24 @@ GET /<index>/ingestion/_state
 
 | Version | PR | Description |
 |---------|-----|-------------|
-| v3.0.0 | [#16927](https://github.com/opensearch-project/OpenSearch/issues/16927) | Initial pull-based ingestion implementation |
+| v3.2.0 | [#18591](https://github.com/opensearch-project/OpenSearch/pull/18591) | File-based ingestion plugin (ingestion-fs) for local testing |
 | v3.1.0 | [#17977](https://github.com/opensearch-project/OpenSearch/pull/17977) | Lag metrics for polling |
 | v3.1.0 | [#18088](https://github.com/opensearch-project/OpenSearch/pull/18088) | Error metrics and configurable queue size |
 | v3.1.0 | [#18250](https://github.com/opensearch-project/OpenSearch/pull/18250) | Transient failure retries and create mode |
 | v3.1.0 | [#18280](https://github.com/opensearch-project/OpenSearch/pull/18280) | Cluster write block support |
 | v3.1.0 | [#18332](https://github.com/opensearch-project/OpenSearch/pull/18332) | Consumer reset in Resume API |
+| v3.0.0 | [#16927](https://github.com/opensearch-project/OpenSearch/issues/16927) | Initial pull-based ingestion implementation |
 
 ## References
 
 - [Issue #17442](https://github.com/opensearch-project/OpenSearch/issues/17442): Ingestion management APIs
 - [Issue #18279](https://github.com/opensearch-project/OpenSearch/issues/18279): Cluster write block support
+- [Issue #18590](https://github.com/opensearch-project/OpenSearch/issues/18590): File-based ingestion plugin request
 - [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
 - [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
 
 ## Change History
 
+- **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
 - **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.
 - **v3.0.0**: Initial implementation with Kafka and Kinesis support, pause/resume APIs, basic metrics.
