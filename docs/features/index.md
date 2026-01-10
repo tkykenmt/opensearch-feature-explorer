@@ -104,6 +104,7 @@
 - [Star Tree Index](opensearch/star-tree-index.md)
 - [Streaming Indexing](opensearch/streaming-indexing.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
+- [Subject Interface](opensearch/subject-interface.md)
 - [System Ingest Pipeline](opensearch/system-ingest-pipeline.md)
 - [Task Management](opensearch/task-management.md)
 - [Test Fixes](opensearch/test-fixes.md)
