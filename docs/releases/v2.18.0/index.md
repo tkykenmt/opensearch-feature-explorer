@@ -83,6 +83,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Multi-Plugin
 
+- [Dependency Updates](features/multi-plugin/dependency-updates.md) - 19 dependency updates including CVE-2024-7254 fix, Gradle 8.10.2, upload-artifact v4
 - [Search Autocomplete](features/multi-plugin/search-autocomplete.md) - Fix search_as_you_type multi-fields support and enhanced Dashboards autocomplete UX
 
 ### Flow Framework
