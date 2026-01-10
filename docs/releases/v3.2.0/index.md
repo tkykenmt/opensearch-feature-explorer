@@ -23,6 +23,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Agentic Search](features/neural-search/agentic-search.md) | feature | [Experimental] Natural language search with agentic query clause and translator processor |
 | [Hybrid Query Normalization](features/neural-search/hybrid-query-normalization.md) | enhancement | Upper bound for min-max normalization, inner hits with collapse, configurable collapse document storage |
+| [Semantic Field](features/neural-search/semantic-field.md) | enhancement | knn_vector field configuration, batch size, prune strategies, chunking, embedding reuse |
 
 ### OpenSearch Dashboards
 

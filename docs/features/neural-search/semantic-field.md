@@ -103,15 +103,15 @@ flowchart LR
 | `semantic_info_field_name` | Custom name for semantic info field | Auto-generated | v3.0.0 |
 | `chunking` | Enable text chunking (boolean or array of strategies) | `false` | v3.1.0 |
 | `semantic_field_search_analyzer` | Analyzer for sparse query tokenization | None | v3.1.0 |
-| `dense_embedding_config` | Custom settings for knn_vector field | Auto from model | v3.1.0 |
-| `sparse_encoding_config` | Pruning configuration for sparse vectors | `max_ratio: 0.1` | v3.1.0 |
-| `skip_existing_embedding` | Skip embedding generation if unchanged | `false` | v3.1.0 |
+| `dense_embedding_config` | Custom settings for knn_vector field (space_type, method, engine, parameters) | Auto from model | v3.2.0 |
+| `sparse_encoding_config` | Pruning configuration for sparse vectors (`prune_type`, `prune_ratio`) | `max_ratio: 0.1` | v3.2.0 |
+| `skip_existing_embedding` | Skip embedding generation if unchanged | `false` | v3.2.0 |
 
 ### Index Settings
 
 | Setting | Description | Default | Since |
 |---------|-------------|---------|-------|
-| `index.neural_search.semantic_ingest_batch_size` | Documents per batch during ingestion | `10` | v3.1.0 |
+| `index.neural_search.semantic_ingest_batch_size` | Documents per batch during ingestion (1-100) | `10` | v3.2.0 |
 
 ### Supported Raw Field Types
 
@@ -240,6 +240,13 @@ GET /my-nlp-index/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#1420](https://github.com/opensearch-project/neural-search/pull/1420) | Support configuring the auto-generated knn_vector field through the semantic field |
+| v3.2.0 | [#1438](https://github.com/opensearch-project/neural-search/pull/1438) | Support configuring the ingest batch size for the semantic field |
+| v3.2.0 | [#1434](https://github.com/opensearch-project/neural-search/pull/1434) | Allow configuring prune strategies for sparse encoding in semantic fields |
+| v3.2.0 | [#1446](https://github.com/opensearch-project/neural-search/pull/1446) | Support configuring the chunking strategies through the semantic field |
+| v3.2.0 | [#1480](https://github.com/opensearch-project/neural-search/pull/1480) | Support configuring reusing existing embedding for the semantic field |
+| v3.2.0 | [#1427](https://github.com/opensearch-project/neural-search/pull/1427) | Handle remote dense model properly during mapping transform |
+| v3.2.0 | [#1475](https://github.com/opensearch-project/neural-search/pull/1475) | Fix minimal supported version for neural sparse query analyzer field |
 | v3.1.0 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer |
 | v3.1.0 | [#1309](https://github.com/opensearch-project/neural-search/pull/1309) | Add semantic ingest processor |
 | v3.1.0 | [#1315](https://github.com/opensearch-project/neural-search/pull/1315) | Implement query logic for semantic field |
@@ -261,5 +268,6 @@ GET /my-nlp-index/_search
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.2.0 | 2025-09 | knn_vector field configuration, ingest batch size setting, sparse encoding prune strategies, chunking strategies configuration, embedding reuse option, remote dense model handling fix, neural sparse analyzer version fix |
 | v3.1.0 | 2025-06 | Semantic mapping transformer, ingest processor, query logic, chunking support, search analyzer support, stats tracking |
 | v3.0.0 | 2025-03 | Initial semantic field mapper implementation (feature-flagged) |
