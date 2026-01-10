@@ -132,3 +132,7 @@
 ### Geospatial
 
 - [Geospatial Ip2Geo Fixes](features/geospatial/geospatial-ip2geo-fixes.md) - Cache synchronization fixes for IP2Geo processor with metadata reset and retry logic
+
+### Custom Codecs
+
+- [Build/Test Infrastructure](features/custom-codecs/test-infrastructure.md) - Fix BWC test dependency version and add java-agent plugin
