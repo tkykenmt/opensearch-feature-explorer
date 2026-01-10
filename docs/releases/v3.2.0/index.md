@@ -175,6 +175,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Asynchronous Search Bugfix](features/asynchronous-search/asynchronous-search-bugfix.md) | bugfix | Gradle 8.14.3 upgrade, JDK 24 CI support, Maven snapshot endpoint migration |
 
+### Cross-Cluster Replication
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Cross-Cluster Replication](features/cross-cluster-replication/cross-cluster-replication.md) | bugfix | Add missing method for RemoteClusterRepository class to fix build failure |
+
 ### k-NN
 
 | Item | Category | Description |
