@@ -97,6 +97,8 @@ flowchart TB
 | `search.insights.top_queries.memory.top_n_size` | Number of top queries to track | `10` |
 | `search.insights.top_queries.memory.window_size` | Time window for collection | `1m` |
 | `search.insights.top_queries.group_by` | Group queries by: `NONE`, `SIMILARITY` | `NONE` |
+| `search.insights.top_queries.grouping.attributes.field_name` | Include field names in query structure for grouping | `true` |
+| `search.insights.top_queries.grouping.attributes.field_type` | Include field types in query structure for grouping | `true` |
 | `search.insights.top_queries.exporter.type` | Exporter type: `none`, `local_index` | `none` |
 | `search.insights.top_queries.exporter.template_priority` | Index template priority | `1847` |
 
@@ -185,6 +187,7 @@ GET /_insights/live_queries?sort=latency&size=5
 | v3.0.0 | [#300](https://github.com/opensearch-project/query-insights/pull/300) | Top queries API verbose param |
 | v3.0.0 | [#298](https://github.com/opensearch-project/query-insights/pull/298) | Skip profile queries |
 | v3.0.0 | [#266](https://github.com/opensearch-project/query-insights/pull/266) | Strict hash check on top queries indices |
+| v2.18.0 | [#144](https://github.com/opensearch-project/query-insights/pull/144) | Set default true for field name and type setting |
 | v2.17.0 | [#74](https://github.com/opensearch-project/query-insights/pull/74) | Fix listener startup when query metrics enabled |
 | v2.17.0 | [#64](https://github.com/opensearch-project/query-insights/pull/64) | Add query shape hash method |
 | v2.17.0 | [#71](https://github.com/opensearch-project/query-insights/pull/71) | Add more integration tests |
@@ -209,5 +212,6 @@ GET /_insights/live_queries?sort=latency&size=5
 ## Change History
 
 - **v3.0.0**: Added Live Queries API, default index template, verbose parameter, profile query filtering, strict hash check
+- **v2.18.0**: Changed default values for grouping attribute settings (`field_name` and `field_type`) from `false` to `true` for more accurate query grouping
 - **v2.17.0**: Fixed listener startup when query metrics enabled; added query shape hash method; fixed CVE-2023-2976; improved integration test coverage for query grouping; added code hygiene checks (Spotless, Checkstyle); fixed snapshot publishing configuration
 - **v2.12.0**: Initial release with Top N queries feature
