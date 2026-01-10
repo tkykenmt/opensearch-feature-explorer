@@ -188,6 +188,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md) | enhancement | Support for >1 hour detection intervals, centralized resource access control |
 | [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md) | bugfix | Concurrency fixes for HCAD, forecasting interval calculation, Dashboards UI improvements |
 
 ### Cross-Cluster Replication
