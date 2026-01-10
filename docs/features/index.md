@@ -62,6 +62,7 @@
 - [Plugin Installation](opensearch/plugin-installation.md)
 - [Plugin Testing Framework](opensearch/plugin-testing-framework.md)
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
+- [Query Optimization](opensearch/query-optimization.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
