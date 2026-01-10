@@ -4,6 +4,7 @@
 
 ### OpenSearch
 
+- [Cluster State Caching](features/opensearch/cluster-state-caching.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
 - [Netty Arena Settings](features/opensearch/netty-arena-settings.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
