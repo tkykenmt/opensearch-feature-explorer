@@ -162,6 +162,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md) | bugfix | Don't fall back to CPU on terminal failures during remote index build |
 
+### Flow Framework
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) | bugfix | Memory fixes, error handling, 3.1+ API compatibility, race condition fix, default template fixes |
+
 ### Multi-Repository
 
 | Item | Category | Description |

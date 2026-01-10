@@ -190,6 +190,11 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#1185](https://github.com/opensearch-project/flow-framework/pull/1185) | Fix ApiSpecFetcher Memory Issues and Exception Handling |
+| v3.2.0 | [#1190](https://github.com/opensearch-project/flow-framework/pull/1190) | Better handling of Workflow Steps with Bad Request status |
+| v3.2.0 | [#1194](https://github.com/opensearch-project/flow-framework/pull/1194) | Update RegisterLocalCustomModelStep for 3.1+ compatibility |
+| v3.2.0 | [#1200](https://github.com/opensearch-project/flow-framework/pull/1200) | Avoid race condition setting encryption key |
+| v3.2.0 | [#1205](https://github.com/opensearch-project/flow-framework/pull/1205) | Fixing connector name in default use case |
 | v3.1.0 | [#1151](https://github.com/opensearch-project/flow-framework/pull/1151) | Fixing llm field processing in RegisterAgentStep |
 | v3.1.0 | [#1154](https://github.com/opensearch-project/flow-framework/pull/1154) | Include exception type in WorkflowState error field even if no cause |
 | v3.1.0 | [#1155](https://github.com/opensearch-project/flow-framework/pull/1155) | Pass llm spec params to builder |
@@ -218,6 +223,9 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Workflow Template Security](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/)
 - [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
 - [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
+- [Issue #1180](https://github.com/opensearch-project/flow-framework/issues/1180): Migrate workflow custom model registration to 3.1
+- [Issue #1189](https://github.com/opensearch-project/flow-framework/issues/1189): Error message for CreateIndexStep when index exists is unhelpful
+- [Issue #1197](https://github.com/opensearch-project/flow-framework/issues/1197): create_connector issue with connector name validation in 3.1.0
 - [Issue #1153](https://github.com/opensearch-project/flow-framework/issues/1153): Workflow state error messages don't include FFE/WSE types
 - [Issue #1095](https://github.com/opensearch-project/flow-framework/issues/1095): Config parser tenant_id handling
 - [Issue #1097](https://github.com/opensearch-project/flow-framework/issues/1097): Action listener completion
@@ -229,6 +237,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 
 ## Change History
 
+- **v3.2.0** (2025-08-06): Bug fixes for ApiSpecFetcher memory issues and exception handling; Improved error messages for workflow steps with Bad Request status; Updated RegisterLocalCustomModelStep for OpenSearch 3.1+ API compatibility with model_config nesting and space_type support; Fixed encryption key race condition during concurrent template creation; Fixed connector name substitution in default use case templates
 - **v3.1.0** (2025-07-15): Bug fixes for RegisterAgentStep LLM field processing, exception type in WorkflowState error messages, and LLM spec parameter passing; Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
 - **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
 - **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
