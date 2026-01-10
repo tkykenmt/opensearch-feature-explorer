@@ -2,7 +2,7 @@
 
 ## Summary
 
-The semantic field type is a field mapper in the neural-search plugin that simplifies semantic search workflows. It automatically handles text-to-vector transformations using ML models, eliminating the need for separate ingest pipelines while preserving the original text for traditional search capabilities.
+The `semantic` field type is a high-level abstraction in the neural-search plugin that simplifies semantic search setup in OpenSearch. It wraps text or binary fields and automatically handles embedding generation during indexing and query execution, eliminating the need for separate ingest pipelines while preserving the original text for traditional search capabilities.
 
 ## Details
 
@@ -10,36 +10,74 @@ The semantic field type is a field mapper in the neural-search plugin that simpl
 
 ```mermaid
 graph TB
-    subgraph "Semantic Field Mapper"
-        SFM[SemanticFieldMapper]
-        SFT[SemanticFieldType]
-        SP[SemanticParameters]
+    subgraph "Index Creation"
+        Mapping[Index Mapping]
+        SMT[Semantic Mapping Transformer]
+        KNN[knn_vector field]
+        RF[rank_features field]
+        Nested[nested field with chunks]
     end
     
-    subgraph "Delegate Field Mappers"
-        TFM[TextFieldMapper]
-        KFM[KeywordFieldMapper]
-        MOTFM[MatchOnlyTextFieldMapper]
-        WFM[WildcardFieldMapper]
-        TCM[TokenCountFieldMapper]
-        BFM[BinaryFieldMapper]
+    subgraph "Document Ingestion"
+        Doc[Document]
+        SIP[Semantic Ingest Processor]
+        Chunking[Text Chunking]
+        Embedding[Embedding Generation]
     end
     
-    subgraph "ML Integration"
+    subgraph "Query Execution"
+        Query[Neural Query]
+        QL[Query Logic]
         Model[ML Model]
-        Embeddings[Vector Embeddings]
+        Analyzer[Search Analyzer]
     end
     
-    SFM --> SP
-    SFM --> SFT
-    SFM -->|delegates to| TFM
-    SFM -->|delegates to| KFM
-    SFM -->|delegates to| MOTFM
-    SFM -->|delegates to| WFM
-    SFM -->|delegates to| TCM
-    SFM -->|delegates to| BFM
-    SFM -->|inference| Model
-    Model --> Embeddings
+    subgraph "Monitoring"
+        Stats[Stats Tracking]
+    end
+    
+    Mapping --> SMT
+    SMT -->|dense model| KNN
+    SMT -->|sparse model| RF
+    SMT -->|chunking enabled| Nested
+    
+    Doc --> SIP
+    SIP --> Chunking
+    Chunking --> Embedding
+    Embedding -->|store| KNN
+    Embedding -->|store| RF
+    
+    Query --> QL
+    QL --> Model
+    QL -->|sparse| Analyzer
+    Model --> KNN
+    Model --> RF
+    
+    SIP --> Stats
+    QL --> Stats
+```
+
+### Data Flow
+
+```mermaid
+flowchart LR
+    subgraph Indexing
+        Text[Raw Text] --> SIP[Semantic Ingest Processor]
+        SIP --> Chunk{Chunking?}
+        Chunk -->|Yes| Split[Split Text]
+        Chunk -->|No| Direct[Direct]
+        Split --> Embed[Generate Embeddings]
+        Direct --> Embed
+        Embed --> Store[Store in Index]
+    end
+    
+    subgraph Querying
+        QueryText[Query Text] --> QL[Query Logic]
+        QL --> ModelLookup[Resolve Model]
+        ModelLookup --> QueryEmbed[Generate Query Embedding]
+        QueryEmbed --> Search[Vector Search]
+        Search --> Results[Results]
+    end
 ```
 
 ### Components
@@ -48,17 +86,32 @@ graph TB
 |-----------|-------------|-------|
 | `SemanticFieldMapper` | Main field mapper handling semantic field configuration | v3.0.0 |
 | `SemanticFieldType` | Field type extending `FilterFieldType` for delegate wrapping | v3.0.0 |
-| `SemanticParameters` | DTO holding `model_id`, `search_model_id`, `raw_field_type`, `semantic_info_field_name` | v3.0.0 |
-| `FeatureFlagUtil` | Controls semantic field feature availability | v3.0.0 |
+| `SemanticParameters` | DTO holding model IDs, raw field type, and semantic info field name | v3.0.0 |
+| `Semantic Mapping Transformer` | Transforms mappings to create underlying embedding fields | v3.1.0 |
+| `Semantic Ingest Processor` | Handles chunking and embedding generation during ingestion | v3.1.0 |
+| `Query Logic` | Resolves model configuration and executes neural queries | v3.1.0 |
+| `Search Analyzer Support` | Built-in analyzers for sparse query tokenization | v3.1.0 |
+| `Stats Tracking` | Tracks semantic field execution metrics | v3.1.0 |
 
 ### Configuration
 
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `model_id` | ML model ID for embedding generation at index time | Required |
-| `search_model_id` | ML model ID for query inference (optional) | Uses `model_id` |
-| `raw_field_type` | Underlying field type for raw data | `text` |
-| `semantic_info_field_name` | Custom name for semantic info field | Auto-generated |
+| Parameter | Description | Default | Since |
+|-----------|-------------|---------|-------|
+| `model_id` | ML model ID for embedding generation at index time | Required | v3.0.0 |
+| `search_model_id` | ML model ID for query inference (sparse doc-only mode) | Uses `model_id` | v3.0.0 |
+| `raw_field_type` | Underlying field type for raw data | `text` | v3.0.0 |
+| `semantic_info_field_name` | Custom name for semantic info field | Auto-generated | v3.0.0 |
+| `chunking` | Enable text chunking (boolean or array of strategies) | `false` | v3.1.0 |
+| `semantic_field_search_analyzer` | Analyzer for sparse query tokenization | None | v3.1.0 |
+| `dense_embedding_config` | Custom settings for knn_vector field | Auto from model | v3.1.0 |
+| `sparse_encoding_config` | Pruning configuration for sparse vectors | `max_ratio: 0.1` | v3.1.0 |
+| `skip_existing_embedding` | Skip embedding generation if unchanged | `false` | v3.1.0 |
+
+### Index Settings
+
+| Setting | Description | Default | Since |
+|---------|-------------|---------|-------|
+| `index.neural_search.semantic_ingest_batch_size` | Documents per batch during ingestion | `10` | v3.1.0 |
 
 ### Supported Raw Field Types
 
@@ -71,49 +124,142 @@ graph TB
 | `token_count` | Token counting |
 | `binary` | Binary data storage |
 
+### Supported Search Analyzers (Sparse Models)
+
+| Analyzer | Description |
+|----------|-------------|
+| `standard` | Standard tokenizer |
+| `bert-uncased` | BERT uncased tokenizer |
+| `mbert-uncased` | Multilingual BERT uncased tokenizer |
+
 ### Usage Example
 
 ```json
-// Create index with semantic field
-PUT /semantic-index
+// Create index with semantic field (dense model)
+PUT /my-nlp-index
+{
+  "settings": {
+    "index.knn": true
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "semantic",
+        "model_id": "No0hhZcBnsM8JstbBkjQ"
+      }
+    }
+  }
+}
+
+// Create index with chunking enabled
+PUT /my-nlp-index-chunked
+{
+  "settings": {
+    "index.knn": true
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "semantic",
+        "model_id": "No0hhZcBnsM8JstbBkjQ",
+        "chunking": true
+      }
+    }
+  }
+}
+
+// Create index with advanced chunking configuration
+PUT /my-nlp-index-advanced
+{
+  "settings": {
+    "index.knn": true
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "semantic",
+        "model_id": "No0hhZcBnsM8JstbBkjQ",
+        "chunking": [
+          {
+            "algorithm": "delimiter",
+            "parameters": { "delimiter": "\n\n" }
+          },
+          {
+            "algorithm": "fixed_token_length",
+            "parameters": { "token_limit": 128, "overlap_rate": 0.2 }
+          }
+        ]
+      }
+    }
+  }
+}
+
+// Create index with sparse model and search analyzer
+PUT /my-sparse-index
 {
   "mappings": {
     "properties": {
-      "description": {
+      "text": {
         "type": "semantic",
-        "model_id": "sentence-transformers/all-MiniLM-L6-v2",
-        "raw_field_type": "text"
+        "model_id": "R42oiZcBnsM8JstbUUgc",
+        "semantic_field_search_analyzer": "bert-uncased"
       }
     }
   }
 }
 
 // Index document (embedding generated automatically)
-POST /semantic-index/_doc
+PUT /my-nlp-index/_doc/1
 {
-  "description": "OpenSearch is a distributed search and analytics engine."
+  "text": "A wild animal races across an uncut field."
+}
+
+// Search using neural query (no model_id needed)
+GET /my-nlp-index/_search
+{
+  "query": {
+    "neural": {
+      "text": {
+        "query_text": "wild west",
+        "k": 10
+      }
+    }
+  }
 }
 ```
 
 ## Limitations
 
-- Feature is disabled by default (requires `semantic_field_enabled` feature flag)
-- Cannot change `raw_field_type` after index creation
-- Cannot change `semantic_info_field_name` after index creation
-- Does not support dynamic mapping
-- Cannot use semantic field in the `fields` section of another field
+- Remote cluster support: Neural queries on semantic fields are not supported in cross-cluster search
+- Mapping constraints: Does not support dynamic mapping; cannot use in `fields` section of another field
+- Repeated inference: Updates rerun inference even if content unchanged (unless `skip_existing_embedding` enabled)
+- Two-phase processor: `neural_sparse_two_phase_processor` not supported when querying semantic field directly
+- Cannot change `raw_field_type` or `semantic_info_field_name` after index creation
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer |
+| v3.1.0 | [#1309](https://github.com/opensearch-project/neural-search/pull/1309) | Add semantic ingest processor |
+| v3.1.0 | [#1315](https://github.com/opensearch-project/neural-search/pull/1315) | Implement query logic for semantic field |
+| v3.1.0 | [#1337](https://github.com/opensearch-project/neural-search/pull/1337) | Enable/disable chunking support |
+| v3.1.0 | [#1341](https://github.com/opensearch-project/neural-search/pull/1341) | Add search analyzer support at query time |
+| v3.1.0 | [#1367](https://github.com/opensearch-project/neural-search/pull/1367) | Support analyzer at semantic field creation time |
+| v3.1.0 | [#1362](https://github.com/opensearch-project/neural-search/pull/1362) | Add stats tracking for semantic field |
+| v3.0.0 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper |
 
 ## References
 
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
-- [Issue #1226](https://github.com/opensearch-project/neural-search/issues/1226): Clean up unnecessary feature flag
-- [PR #1225](https://github.com/opensearch-project/neural-search/pull/1225): Add semantic field mapper
-- [Semantic Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/semantic-search/)
+- [Documentation: Semantic Field Type](https://docs.opensearch.org/3.1/field-types/supported-field-types/semantic/)
+- [Documentation: Semantic Search](https://docs.opensearch.org/3.1/vector-search/ai-search/semantic-search/)
 - [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
 - [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
 
 ## Change History
 
-| Version | Changes |
-|---------|---------|
-| v3.0.0 | Initial semantic field mapper implementation (feature-flagged) |
+| Version | Date | Changes |
+|---------|------|---------|
+| v3.1.0 | 2025-06 | Semantic mapping transformer, ingest processor, query logic, chunking support, search analyzer support, stats tracking |
+| v3.0.0 | 2025-03 | Initial semantic field mapper implementation (feature-flagged) |
