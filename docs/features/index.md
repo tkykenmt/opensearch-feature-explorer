@@ -146,6 +146,7 @@
 - [Skip List](opensearch/skip-list.md)
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
+- [Store Factory](opensearch/store-factory.md)
 - [Store Subdirectory Module](opensearch/store-subdirectory-module.md)
 - [Streaming Indexing](opensearch/streaming-indexing.md)
 - [Streaming Transport & Aggregation](opensearch/streaming-transport-aggregation.md)
