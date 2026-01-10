@@ -158,16 +158,19 @@ SSLContext sslContext = SSLContextBuilder.create()
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#18427](https://github.com/opensearch-project/OpenSearch/pull/18427) | Update FipsMode check to catch NoSuchMethodError |
 | v3.0.0 | [#17393](https://github.com/opensearch-project/OpenSearch/pull/17393) | Use BC libraries to parse PEM files, increase key length |
 | v3.0.0 | [#17507](https://github.com/opensearch-project/OpenSearch/pull/17507) | Migrate BC libs to their FIPS counterparts |
 
 ## References
 
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): RFC - Proposal for supporting FIPS 140-2 enforced mode
+- [Issue #4254](https://github.com/opensearch-project/security/issues/4254): RFC - FIPS-140 Compliance Roadmap for OpenSearch
 - [PR #14912](https://github.com/opensearch-project/OpenSearch/pull/14912): Original comprehensive FIPS support PR
 - [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Security architecture changes in 3.0
 - [Bouncy Castle FIPS Documentation](https://www.bouncycastle.org/fips-java/): Official BC-FIPS documentation
 
 ## Change History
 
+- **v3.1.0** (2026-01-10): Updated FipsMode check to catch NoSuchMethodError for improved compatibility with security plugin during BC-FIPS transition
 - **v3.0.0** (2025-05-06): Migrated from standard BC to BC-FIPS libraries; refactored PemUtils to use BC for PEM parsing; added java.security configuration for BC-FIPS providers
