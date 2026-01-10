@@ -182,6 +182,8 @@ GET /_insights/live_queries?sort=latency&size=5
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.1.0 | [#364](https://github.com/opensearch-project/query-insights/pull/364) | Fix flaky integration tests |
+| v3.1.0 | [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node and health stats integration tests |
 | v3.0.0 | [#295](https://github.com/opensearch-project/query-insights/pull/295) | Inflight Queries API |
 | v3.0.0 | [#254](https://github.com/opensearch-project/query-insights/pull/254) | Default index template for local index |
 | v3.0.0 | [#300](https://github.com/opensearch-project/query-insights/pull/300) | Top queries API verbose param |
@@ -223,6 +225,7 @@ GET /_insights/live_queries?sort=latency&size=5
 
 ## Change History
 
+- **v3.1.0**: Fixed flaky integration tests; added multi-node cluster integration tests (`QueryInsightsClusterIT`); added health stats REST API integration tests (`HealthStatsRestIT`); improved test infrastructure with node targeting and retry logic
 - **v3.0.0**: Added Live Queries API, default index template, verbose parameter, profile query filtering, strict hash check
 - **v2.18.0**: Added Health Stats API for monitoring plugin health; added OpenTelemetry error metrics counters; added field name and type support for query shape grouping (defaults changed to `true`); added time range parameters for historical query retrieval; added cache eviction and cluster state listener for index field type mappings
 - **v2.17.0**: Fixed listener startup when query metrics enabled; added query shape hash method; fixed CVE-2023-2976; improved integration test coverage for query grouping; added code hygiene checks (Spotless, Checkstyle); fixed snapshot publishing configuration
