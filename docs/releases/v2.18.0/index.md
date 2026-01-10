@@ -174,6 +174,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Dashboards Assistant
 
 - [Assistant Capabilities](features/dashboards-assistant/assistant-capabilities.md) - Capability-based UI rendering control, new API to check agent config existence, agentName renamed to agentConfigName
+- [Text to Visualization (t2viz)](features/dashboards-assistant/text-to-visualization.md) - AI-powered visualization generation from natural language queries using LLM agents
 
 ### Dashboards Maps
 
