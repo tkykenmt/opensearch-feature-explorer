@@ -123,6 +123,7 @@ GET _cat/segment_replication?v
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit |
+| v3.3.0 | [#18997](https://github.com/opensearch-project/OpenSearch/pull/18997) | Fix NullPointerException in segment replicator |
 | v3.2.0 | [#18602](https://github.com/opensearch-project/OpenSearch/pull/18602) | Fix bugs in replication lag computation |
 
 ## References
@@ -136,5 +137,5 @@ GET _cat/segment_replication?v
 
 ## Change History
 
-- **v3.3.0** (2025-09-09): Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
+- **v3.3.0** (2025-09-09): Fixed NullPointerException in SegmentReplicator.getSegmentReplicationStats() caused by race condition; Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
 - **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
