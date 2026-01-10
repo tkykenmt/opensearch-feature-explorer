@@ -10,6 +10,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Explore UI Enhancements](features/opensearch-dashboards/explore-ui-enhancements.md) | feature | New Explore plugin with auto-visualization, multi-flavor support, and dashboard embeddable |
 | [Static Banner Plugin](features/opensearch-dashboards/static-banner-plugin.md) | feature | Global configurable header banner for announcements |
 | [Discover Plugin Fixes](features/opensearch-dashboards/discover-plugin-fixes.md) | bugfix | Fix empty page when no index patterns, add Cypress tests |
 | [OUI (OpenSearch UI) Updates](features/opensearch-dashboards/oui-updates.md) | bugfix | Update OUI component library from 1.19 to 1.21 |
