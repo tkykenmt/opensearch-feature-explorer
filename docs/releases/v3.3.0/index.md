@@ -5,6 +5,7 @@
 ### OpenSearch Dashboards
 
 - [OpenSearch Dashboards AI Chat](features/opensearch-dashboards/opensearch-dashboards-ai-chat.md)
+- [OpenSearch Dashboards Banner Extensibility](features/opensearch-dashboards/opensearch-dashboards-banner-extensibility.md)
 - [OpenSearch Dashboards Bug Fixes](features/opensearch-dashboards/opensearch-dashboards-bug-fixes.md)
 - [OpenSearch Dashboards Dataset Explorer](features/opensearch-dashboards/opensearch-dashboards-dataset-explorer.md)
 - [OpenSearch Dashboards Patterns Tab](features/opensearch-dashboards/opensearch-dashboards-patterns-tab.md)
