@@ -102,6 +102,7 @@
 - [Randomness](opensearch/randomness.md)
 - [Reactor Netty Transport](opensearch/reactor-netty-transport.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
+- [Reindex API](opensearch/reindex-api.md)
 - [Replication](opensearch/replication.md)
 - [Request Cache](opensearch/request-cache.md)
 - [Rescore Named Queries](opensearch/rescore-named-queries.md)
