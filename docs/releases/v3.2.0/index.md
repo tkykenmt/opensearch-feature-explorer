@@ -123,3 +123,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Notifications Plugin Infrastructure](features/notifications/notifications-plugin-infrastructure.md) | bugfix | Gradle 8.14 upgrade, JaCoCo 0.8.13, nebula.ospackage 12.0.0, JDK24 CI support |
+
+### ML Commons
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [ML Commons Testing & Coverage](features/ml-commons/ml-commons-testing-coverage.md) | bugfix | Integration test stability fix, memory container unit tests, JaCoCo 0.8.13 upgrade |
