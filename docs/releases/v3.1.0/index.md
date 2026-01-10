@@ -107,6 +107,10 @@
 
 - [Search Relevance Test Data](features/search-relevance/search-relevance-test-data.md) - Add realistic ESCI-based test dataset with 150 queries and matching judgments
 
+### SQL
+
+- [SQL/PPL Bug Fixes](features/sql/sql-ppl-bug-fixes.md) - 17 bug fixes including long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling, and Calcite engine stability
+
 ### Remote
 
 - [Security CVE Fixes](features/remote/security-cve-fixes.md) - CVE-2025-27820 fix for Apache HttpClient in opensearch-remote-metadata-sdk
