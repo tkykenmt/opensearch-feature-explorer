@@ -79,6 +79,12 @@ graph TB
 | `plugins.alerting.alert_history_enabled` | Enable alert history | true |
 | `plugins.alerting.alert_history_max_age` | Max age of alert history | 30d |
 
+### Monitor Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `delete_query_index_in_every_run` | For doc-level monitors: when true, deletes and recreates the query index on each monitor run. Designed for externally defined monitors (e.g., Security Analytics) that manage their own query indices. | `false` |
+
 ### Usage Example
 
 Creating a per-query monitor:
@@ -180,6 +186,7 @@ POST _plugins/_alerting/monitors
 
 - [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
 - [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
+- [Per Document Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-document-monitors/): Per-document monitor documentation
 - [Composite Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/composite-monitors/): Composite monitor documentation
 - [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
 - [Notifications Plugin](https://docs.opensearch.org/3.0/observing-your-data/notifications/index/): Notifications integration
@@ -189,5 +196,5 @@ POST _plugins/_alerting/monitors
 ## Change History
 
 - **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
-- **v2.18.0** (2024-11-05): Doc-level monitor improvements, query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
+- **v2.18.0** (2024-11-05): Doc-level monitor improvements including dynamic query index deletion (`delete_query_index_in_every_run` flag), query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
 - **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes
