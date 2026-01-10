@@ -56,6 +56,7 @@
 - [Store Factory](features/opensearch/store-factory.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
 - [Streaming Aggregation](features/opensearch/streaming-aggregation.md)
+- [Temporal Routing](features/opensearch/temporal-routing.md)
 - [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
 - [Test Infrastructure](features/opensearch/test-infrastructure.md)
 - [Tiered Caching](features/opensearch/tiered-caching.md)

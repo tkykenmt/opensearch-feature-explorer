@@ -167,6 +167,7 @@
 - [Wildcard Field](opensearch/wildcard-field.md)
 - [Workload Management](opensearch/workload-management.md)
 - [Hierarchical & ACL-aware Routing](opensearch/hierarchical-acl-aware-routing.md)
+- [Temporal Routing](opensearch/temporal-routing.md)
 - [Terms Lookup Query](opensearch/terms-lookup-query.md)
 - [Terms Query](opensearch/terms-query.md)
 
