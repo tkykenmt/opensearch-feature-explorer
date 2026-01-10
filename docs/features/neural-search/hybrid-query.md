@@ -182,6 +182,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v3.0.0 | [#1191](https://github.com/opensearch-project/neural-search/pull/1191) | Optimize embedding generation in Text Embedding Processor |
 | v3.0.0 | [#1246](https://github.com/opensearch-project/neural-search/pull/1246) | Optimize embedding generation in Sparse Encoding Processor |
 | v3.0.0 | [#1249](https://github.com/opensearch-project/neural-search/pull/1249) | Optimize embedding generation in Text/Image Embedding Processor |
+| v2.18.0 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query |
 | v2.17.0 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removed misleading pagination code, added clear error |
 | v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results |
 | v2.11.0 | - | Initial implementation of hybrid search |
@@ -204,5 +205,6 @@ GET /_plugins/_neural/stats/text_embedding_executions
 ## Change History
 
 - **v3.0.0** (2025-05-13): Z-Score normalization, lower bounds for min-max, filter support, inner hits, Stats API, semantic highlighter, analyzer-based neural sparse query, optimized embedding generation
+- **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
 - **v2.11.0** (2023-10-16): Initial implementation of hybrid search
