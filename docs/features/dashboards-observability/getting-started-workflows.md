@@ -2,7 +2,7 @@
 
 ## Summary
 
-The Getting Started workflows in OpenSearch Dashboards Observability provide pre-configured templates and sample data to help users quickly set up observability pipelines. These workflows include index patterns, dashboards, and visualizations for common data sources like CSV files and OpenTelemetry (OTel) services.
+The Getting Started workflows in OpenSearch Dashboards Observability provide guided onboarding for setting up observability pipelines. The workflows are organized around three signal types (Logs, Metrics, Traces) with support for multiple telemetry sources including OpenTelemetry, Nginx, Java, Python, and Golang.
 
 ## Details
 
@@ -12,105 +12,104 @@ The Getting Started workflows in OpenSearch Dashboards Observability provide pre
 graph TB
     subgraph "Getting Started UI"
         GS[Getting Started Component]
-        WF[Workflow Selector]
+        ST[Signal Type Selector]
+        TS[Telemetry Source Dropdown]
     end
     
-    subgraph "Workflow Artifacts"
-        CSV[CSV File Workflow]
-        OTEL[OTel Services Workflow]
+    subgraph "Signal Types"
+        LOGS[Logs]
+        METRICS[Metrics]
+        TRACES[Traces]
     end
     
-    subgraph "Assets"
-        NDJSON[NDJSON Files]
-        IP[Index Patterns]
-        DASH[Dashboards]
-        VIS[Visualizations]
+    subgraph "Telemetry Sources"
+        OTEL[OpenTelemetry]
+        NGINX[Nginx]
+        JAVA[Java]
+        PYTHON[Python]
+        GOLANG[Golang]
     end
     
-    GS --> WF
-    WF --> CSV
-    WF --> OTEL
-    CSV --> NDJSON
-    OTEL --> NDJSON
-    NDJSON --> IP
-    NDJSON --> DASH
-    NDJSON --> VIS
+    subgraph "Deployment Options"
+        SM[Self Managed]
+        AWS[AWS]
+    end
+    
+    subgraph "Auto Setup"
+        ASSETS[Asset Creation]
+        TEMPLATES[Index Templates]
+    end
+    
+    GS --> ST
+    ST --> LOGS
+    ST --> METRICS
+    ST --> TRACES
+    LOGS --> TS
+    METRICS --> TS
+    TRACES --> TS
+    TS --> OTEL
+    TS --> NGINX
+    OTEL --> SM
+    OTEL --> AWS
+    ASSETS --> TEMPLATES
 ```
 
 ### Components
 
 | Component | Description |
 |-----------|-------------|
-| `fluent-bit-csv-upload-1.0.0.ndjson` | Assets for CSV file upload workflow using Fluent Bit |
-| `otel-index-patterns-1.0.0.ndjson` | Index patterns for OpenTelemetry services |
+| `getting_started_routes.ts` | Defines TutorialId types and component/version/signal maps |
+| Signal Type Tabs | UI tabs for Logs, Metrics, Traces navigation |
+| Telemetry Source Dropdown | Dropdown with icons for selecting data source |
+| `createAllTemplatesSettled` | Server-side function for batch index template creation |
+| `createIndexTemplate` | Server-side function for individual index template creation |
 | Getting Started UI | Interactive wizard for selecting and configuring workflows |
 
 ### Supported Workflows
 
-| Workflow | Index Pattern | Description |
-|----------|---------------|-------------|
-| CSV File Upload | `logs-*` | Upload CSV files using Fluent Bit agent |
-| OTel Services | `otel-v1-apm-span-*`, `otel-v1-apm-service-map` | OpenTelemetry traces and service maps |
+| Signal Type | Telemetry Sources | Deployment Options |
+|-------------|-------------------|-------------------|
+| Logs | OpenTelemetry, Nginx, Java, Python, Golang | Self Managed, AWS |
+| Metrics | OpenTelemetry, Nginx | Self Managed, AWS |
+| Traces | OpenTelemetry, Java, Python, Golang | Self Managed, AWS |
 
 ### Configuration
 
-The workflows use NDJSON (Newline Delimited JSON) files containing:
-
-| Asset Type | Description |
-|------------|-------------|
-| `index-pattern` | Defines the index pattern for data discovery |
-| `visualization` | Markdown or chart visualizations |
-| `dashboard` | Dashboard layouts referencing visualizations |
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Signal Type | Primary data type selection | Logs |
+| Telemetry Source | Data source for the signal | OpenTelemetry |
+| Deployment Mode | Self-managed or AWS | Self Managed |
 
 ### Usage Example
 
-Using the CSV File Upload workflow:
-
 1. Navigate to **Observability** > **Getting Started**
-2. Select **CSV File Upload**
-3. Follow the Fluent Bit configuration instructions
-4. View ingested data in the created dashboard
-
-Fluent Bit configuration example:
-
-```ini
-[SERVICE]
-    Flush        1
-    Log_Level    info
-    Parsers_File parsers.conf
-
-[INPUT]
-    Name         tail
-    Path         /path/to/your/csv/files/*.csv
-    Parser       csv
-    Tag          csv
-
-[OUTPUT]
-    Name         opensearch
-    Match        *
-    Host         your-opensearch-host
-    Port         9200
-    Index        logs
-```
+2. Select signal type: **Logs**, **Metrics**, or **Traces**
+3. Choose telemetry source from dropdown (e.g., OpenTelemetry, Nginx)
+4. For OTEL: Select **Self Managed** or **AWS** tab
+5. Follow setup instructions - index templates are created automatically
 
 ## Limitations
 
-- Workflows are designed for specific data formats and may require customization
+- Telemetry source options vary by signal type
+- AWS deployment option only available for OpenTelemetry workflows
 - Index patterns must match the actual indices created by data ingestion pipelines
-- Sample data is for demonstration purposes only
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | GettingStarted Rework - signal-based organization |
+| v2.18.0 | [#2205](https://github.com/opensearch-project/dashboards-observability/pull/2205) | GettingStarted Fit and Finish - UI polish |
+| v2.18.0 | [#2200](https://github.com/opensearch-project/dashboards-observability/pull/2200) | Auto trigger schema setup |
 | v2.17.0 | [#2016](https://github.com/opensearch-project/dashboards-observability/pull/2016) | Update ndjson so workflow matches patterns created |
 
 ## References
 
-- [Observability Documentation](https://docs.opensearch.org/2.17/observing-your-data/)
-- [Fluent Bit OpenSearch Output](https://docs.fluentbit.io/manual/pipeline/outputs/opensearch)
+- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/)
 - [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
 
 ## Change History
 
+- **v2.18.0** (2024-11-12): Major restructure - reorganized into Logs/Metrics/Traces signal types, added telemetry source dropdown with icons, Self Managed/AWS tabs for OTEL, auto index template creation, UI polish
 - **v2.17.0** (2024-10-22): Fixed index pattern mismatches - CSV workflow now uses `logs-*` pattern, removed unused `otel-metrics*` from OTel workflow
