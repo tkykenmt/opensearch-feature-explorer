@@ -319,6 +319,7 @@
 
 ## observability
 
+- [Observability Infrastructure](observability/observability-infrastructure.md)
 - [Observability Integrations](observability/observability-integrations.md)
 - [Release Maintenance](observability/release-maintenance.md)
 - [Trace Analytics Bug Fixes](observability/trace-analytics-bug-fixes.md)
