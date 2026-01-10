@@ -137,6 +137,7 @@
 
 ### SQL
 
+- [SQL/PPL Calcite Engine](features/sql/sql-ppl-calcite-engine.md) - 15+ new commands (eventstats, flatten, expand, trendline, appendcol, grok, top, rare, fillnull, describe, patterns) and functions (coalesce, isempty, isblank, ispresent, geoip, cidrmatch) with LIMIT pushdown and ResourceMonitor
 - [SQL/PPL General Enhancements](features/sql/sql-ppl-general-enhancements.md) - JSON functions, lambda/array functions, cryptographic hashes, time conditions, approximate distinct count, match_only_text support, object field merging
 - [SQL/PPL Bug Fixes](features/sql/sql-ppl-bug-fixes.md) - 17 bug fixes including long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling, and Calcite engine stability
 
