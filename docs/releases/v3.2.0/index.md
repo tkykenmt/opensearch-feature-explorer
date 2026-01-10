@@ -58,3 +58,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Secure Aux Transport Settings](features/opensearch/secure-aux-transport-settings.md) | feature | API update to distinguish between auxiliary transport types for SSL configuration |
 | [Searchable Snapshots & Writeable Warm](features/opensearch/searchable-snapshots-writeable-warm.md) | feature | FS stats for warm nodes based on addressable space; default remote_data_ratio changed to 5 |
 | [Subject Interface Update](features/opensearch/subject-interface-update.md) | feature | Update Subject interface to use CheckedRunnable instead of Callable |
+| [Numeric Terms Aggregation Optimization](features/opensearch/numeric-terms-aggregation-optimization.md) | feature | QuickSelect algorithm for large bucket count terms aggregations |
