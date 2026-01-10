@@ -277,6 +277,8 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.2.0 | [#10258](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10258) | SCSS import path fix |
 | v3.2.0 | [#10260](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10260) | Show query handling |
 | v3.2.0 | [#10261](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10261) | Field selector collapse UI |
+| v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |
+| v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling |
 | v3.2.0 | [#10269](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10269) | Dataset select to query panel |
 | v3.2.0 | [#10270](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10270) | Global banner offset |
 | v3.2.0 | [#10281](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10281) | URL state time filter fix |
@@ -319,4 +321,5 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
+- **v3.3.0** (2026-01-14): Added "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page
 - **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation
