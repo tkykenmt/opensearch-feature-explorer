@@ -98,6 +98,10 @@
 
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
 
+### Geospatial
+
+- [Geospatial Deprecation Fixes](features/geospatial/geospatial-deprecation-fixes.md)
+
 ### Query Insights
 
 - [Query Plugin Dependencies](features/query-insights/query-plugin-dependencies.md)
