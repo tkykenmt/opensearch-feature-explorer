@@ -99,6 +99,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### SQL
 
 - [SQL Plugin Maintenance](features/sql/sql-plugin-maintenance.md) - Security fix for CVE-2024-47554 (commons-io upgrade to 2.14.0) and test fixes for 2.18 branch
+- [SQL Scheduler](features/sql/sql-scheduler.md) - Bugfix to remove scheduler index from SystemIndexDescriptor to prevent conflicts with Job Scheduler plugin
 
 ### k-NN
 
