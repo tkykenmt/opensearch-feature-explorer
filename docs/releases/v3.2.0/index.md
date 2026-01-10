@@ -19,3 +19,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [UI Settings & Dataset Select](features/opensearch-dashboards/ui-settings-dataset-select.md) | bugfix | UI settings client robustness, dataset selector visual updates |
 | [UI Settings Backward Compatibility](features/opensearch-dashboards/ui-settings-backward-compatibility.md) | feature | Restore backward compatibility for multi-scope UI settings client |
 | [Chart & Visualization Fixes](features/opensearch-dashboards/chart-visualization-fixes.md) | bugfix | Line chart legend display fix, popover toggle fix |
+| [Data Source Selector Scope](features/opensearch-dashboards/data-source-selector-scope.md) | feature | Workspace-aware scope support for data source selector |

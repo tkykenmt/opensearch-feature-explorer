@@ -117,6 +117,7 @@
 - [Data Connections](opensearch-dashboards/data-connections.md)
 - [Data Importer](opensearch-dashboards/data-importer.md)
 - [Data Source Permissions](opensearch-dashboards/data-source-permissions.md)
+- [Data Source Selector](opensearch-dashboards/data-source-selector.md)
 - [Dependency Updates](opensearch-dashboards/dependency-updates.md)
 - [Dev Tools](opensearch-dashboards/dev-tools.md)
 - [Discover](opensearch-dashboards/discover.md)
