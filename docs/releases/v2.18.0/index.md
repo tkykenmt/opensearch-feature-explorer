@@ -120,6 +120,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Neural Search
 
+- [Neural Search Reranking](features/neural-search/neural-search-reranking.md) - ByFieldRerankProcessor for field-based reranking and hybrid query rescorer support
 - [Neural Search Text Chunking](features/neural-search/neural-search-text-chunking.md) - Add `ignore_missing` parameter to text chunking processors for flexible handling of optional fields
 - [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md) - Fixed incorrect document order for nested aggregations in hybrid query
 
