@@ -72,6 +72,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Remote Store Segment Warming](features/opensearch/remote-store-segment-warming.md) | feature | Remote store support for merged segment warming to reduce replication lag |
 | [Streaming Transport & Aggregation](features/opensearch/streaming-transport-aggregation.md) | feature | Stream transport framework and streaming aggregation for memory-efficient high-cardinality aggregations |
 | [Approximation Framework Enhancements](features/opensearch/approximation-framework-enhancements.md) | feature | search_after support, range queries with now, multi-sort handling |
+| [Approximation Framework: Numeric Types](features/opensearch/approximation-framework-numeric-types.md) | feature | Extend Approximation Framework to int, float, double, half_float, unsigned_long |
 | [Star Tree Index](features/opensearch/star-tree-index.md) | feature | IP field search support and star-tree search statistics |
 | [Clusterless Mode](features/opensearch/clusterless-mode.md) | feature | Experimental clusterless startup mode and custom remote store path prefix |
 | [Rescore Named Queries](features/opensearch/rescore-named-queries.md) | feature | Surface named queries from rescore contexts in matched_queries array |
