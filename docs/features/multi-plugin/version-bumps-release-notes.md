@@ -66,6 +66,11 @@ release-notes/
 | v3.0.0 | [#1843](https://github.com/opensearch-project/alerting/pull/1843) | alerting | Added 3.0 release notes |
 | v3.0.0 | [#775](https://github.com/opensearch-project/common-utils/pull/775) | common-utils | Update shadow plugin and bump to 3.0.0.0-alpha1 |
 | v3.0.0 | [#1384](https://github.com/opensearch-project/index-management/pull/1384) | index-management | Bump Version to 3.0.0-alpha1 |
+| v2.18.0 | [#1718](https://github.com/opensearch-project/alerting/pull/1718) | alerting | Added 2.18.0 release notes |
+| v2.18.0 | [#750](https://github.com/opensearch-project/common-utils/pull/750) | common-utils | Added 2.18.0.0 release notes |
+| v2.18.0 | [#980](https://github.com/opensearch-project/notifications/pull/980) | notifications | Added 2.18.0 release notes |
+| v2.18.0 | [#148](https://github.com/opensearch-project/query-insights/pull/148) | query-insights | Add release notes for 2.18 |
+| v2.18.0 | [#1399](https://github.com/opensearch-project/security/pull/1399) | security | Added 2.18.0 release notes |
 | v2.17.0 | [#1650](https://github.com/opensearch-project/alerting/pull/1650) | alerting | Added 2.17 release notes |
 | v2.17.0 | [#1635](https://github.com/opensearch-project/alerting/pull/1635) | alerting | Increment version to 2.17.0-SNAPSHOT |
 | v2.17.0 | [#727](https://github.com/opensearch-project/common-utils/pull/727) | common-utils | Added 2.17.0.0 release notes |
@@ -82,4 +87,5 @@ release-notes/
 ## Change History
 
 - **v3.0.0** (2025-05-06): Version bumps and release notes across 9 repositories (alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins)
+- **v2.18.0** (2024-11-05): Release notes across 5 repositories (alerting, common-utils, notifications, query-insights, security)
 - **v2.17.0** (2024-09-17): Version bumps and release notes across 12 repositories (alerting, anomaly-detection, asynchronous-search, common-utils, dashboards-notifications, index-management, job-scheduler, ml-commons, notifications, query-insights, security, sql)
