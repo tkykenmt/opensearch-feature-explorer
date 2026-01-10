@@ -91,9 +91,9 @@ flowchart LR
 | `node.auto_force_merge.scheduler.interval` | Interval between force merge scheduling checks | `30m` |
 | `node.auto_force_merge.translog.age` | Minimum translog age before considering force merge | `30m` |
 | `node.auto_force_merge.segment.count` | Target segment count after force merge | `1` |
-| `node.auto_force_merge.merge_delay` | Delay between consecutive shard merges | `10s` |
-| `node.auto_force_merge.cpu.threshold` | CPU usage threshold to pause merge operations | `80%` |
-| `node.auto_force_merge.disk.threshold` | Disk usage threshold to pause merge operations | `90%` |
+| `node.auto_force_merge.merge_delay` | Delay between consecutive shard merges | `15s` |
+| `node.auto_force_merge.cpu.threshold` | CPU usage threshold to pause merge operations | `75%` |
+| `node.auto_force_merge.disk.threshold` | Disk usage threshold to pause merge operations | `85%` |
 | `node.auto_force_merge.jvm.threshold` | JVM heap usage threshold to pause merge operations | `75%` |
 | `node.auto_force_merge.threads.concurrency_multiplier` | Multiplier for concurrent merge threads | `2` |
 
@@ -189,6 +189,7 @@ PUT _plugins/_ism/policies/hot-warm-policy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18666](https://github.com/opensearch-project/OpenSearch/pull/18666) | Replaced CPU load average with AverageTracker classes, adjusted default thresholds |
 | v3.1.0 | [#18082](https://github.com/opensearch-project/OpenSearch/pull/18082) | Add Warm Disk Threshold Allocation Decider for Warm shards |
 | v3.1.0 | [#18229](https://github.com/opensearch-project/OpenSearch/pull/18229) | Added Auto Force Merge Manager to enhance hot to warm migration |
 
@@ -201,4 +202,5 @@ PUT _plugins/_ism/policies/hot-warm-policy
 
 ## Change History
 
+- **v3.2.0** (2025-07-09): Improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
 - **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
