@@ -100,3 +100,7 @@
 ### k-NN
 
 - [k-NN Testing Infrastructure](features/k-nn/k-nn-testing-infrastructure.md) - Enable all integration tests with remote index builder and fix MockNode constructor compatibility
+
+### Search Relevance
+
+- [Search Relevance Test Data](features/search-relevance/search-relevance-test-data.md) - Add realistic ESCI-based test dataset with 150 queries and matching judgments
