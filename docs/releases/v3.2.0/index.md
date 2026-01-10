@@ -290,3 +290,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [SPIFFE X.509 SVID Support](features/security/spiffe-x.509-svid-support.md) | feature | SPIFFE-based workload identity authentication via SPIFFEPrincipalExtractor |
 | [Argon2 Password Hashing](features/security/argon2-password-hashing.md) | feature | Argon2 password hashing algorithm support with full parameter configurability |
+| [Security Configuration Management](features/security/security-configuration-management.md) | feature | Experimental versioned security configuration management with rollback/roll-forward foundation |
