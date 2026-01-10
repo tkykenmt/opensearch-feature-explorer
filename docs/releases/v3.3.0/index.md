@@ -43,6 +43,7 @@
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Search Tie-breaking](features/opensearch/search-tie-breaking.md)
 - [Segment Replication](features/opensearch/segment-replication.md)
+- [Segment Warmer Metrics](features/opensearch/segment-warmer.md)
 - [Skip List](features/opensearch/skip-list.md)
 - [Star Tree Index](features/opensearch/star-tree-index.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
