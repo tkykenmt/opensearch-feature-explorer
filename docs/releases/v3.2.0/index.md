@@ -53,3 +53,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Aggregation Task Cancellation](features/opensearch/aggregation-task-cancellation.md) | feature | Add task cancellation checks in aggregators to terminate long-running queries |
 | [Segment Concurrent Search Optimization](features/opensearch/segment-concurrent-search-optimization.md) | feature | Optimize segment grouping for concurrent search with balanced document distribution |
 | [Dependency Bumps (OpenSearch Core)](features/opensearch/dependency-bumps-opensearch-core.md) | feature | 20 dependency updates including Lucene 10.2.2, Log4j 2.25.1, BouncyCastle, OkHttp 5.1.0 |
+| [Repository Rate Limiters](features/opensearch/repository-rate-limiters.md) | feature | Dynamic rate limiter settings for snapshot/restore operations |
