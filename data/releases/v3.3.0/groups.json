@@ -2179,7 +2179,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1365
     },
     {
       "name": "ML Commons Tutorials and Blueprints",
@@ -2229,7 +2230,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1366
     },
     {
       "name": "Common Utils Release Notes",
@@ -2243,7 +2245,8 @@
           "category": "bugfix",
           "repository": "common"
         }
-      ]
+      ],
+      "issue_number": 1367
     },
     {
       "name": "Version Increment",
@@ -2396,7 +2399,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1368
     },
     {
       "name": "Dependency Updates",
@@ -2738,7 +2742,8 @@
           "category": "deprecation",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1369
     },
     {
       "name": "Lucene 10.3 Update",
@@ -2766,7 +2771,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1370
     },
     {
       "name": "Observability Cypress Updates",
@@ -2780,7 +2786,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 1371
     },
     {
       "name": "Reporting CVE Fixes",
@@ -2794,7 +2801,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 1372
     },
     {
       "name": "Geospatial Deprecation Fixes",
@@ -2808,7 +2816,8 @@
           "category": "bugfix",
           "repository": "geospatial"
         }
-      ]
+      ],
+      "issue_number": 1373
     },
     {
       "name": "Move common string",
@@ -2822,7 +2831,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1374
     },
     {
       "name": "Updating gson version to resolve conflict coming from core",
@@ -2836,7 +2846,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 1375
     },
     {
       "name": "CI/CD Workflow Updates",
@@ -2857,7 +2868,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1376
     },
     {
       "name": "Neural Search Dependencies",
@@ -2883,7 +2895,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 1377
     },
     {
       "name": "Query Plugin Dependencies",
@@ -2909,7 +2922,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 1378
     },
     {
       "name": "Security Plugin Dependencies",
@@ -3067,7 +3081,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1379
     },
     {
       "name": "Sync `org.opensearch:protobufs` version with core",
@@ -3081,7 +3096,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 1380
     },
     {
       "name": "Anomaly Detection Resource Authorization",
@@ -3095,7 +3111,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 1381
     },
     {
       "name": "Doc Request",
@@ -3116,7 +3133,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1382
     },
     {
       "name": "Fetch Phase Profiling",
@@ -3130,7 +3148,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1383
     },
     {
       "name": "Rule-based Auto-tagging",
@@ -3175,7 +3194,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1384
     },
     {
       "name": "Temporal Routing",
