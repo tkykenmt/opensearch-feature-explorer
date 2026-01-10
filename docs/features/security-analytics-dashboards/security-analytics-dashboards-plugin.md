@@ -91,6 +91,7 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160) | Fix findings page crash and rule severity correctness |
 | v2.18.0 | [#1186](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1186) | Avoid showing unhelpful error toast when datasource is not yet selected |
 | v2.18.0 | [#1188](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1188) | Update getting started cards content and visual design |
 | v2.18.0 | [#1192](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1192) | Fix data source picker remount multiple times |
@@ -119,6 +120,6 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 ## Change History
 
-- **v2.18.0** (2024-11-12): Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
+- **v2.18.0** (2024-11-12): Findings page stability fixes including crash prevention when custom rules are deleted and correct severity display for multi-rule findings; Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
 - **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
 - **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements
