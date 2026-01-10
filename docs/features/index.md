@@ -132,6 +132,7 @@
 - [Warm Storage Tiering](opensearch/warm-storage-tiering.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 - [Workload Management](opensearch/workload-management.md)
+- [Hierarchical & ACL-aware Routing](opensearch/hierarchical-acl-aware-routing.md)
 
 ## opensearch-dashboards
 
