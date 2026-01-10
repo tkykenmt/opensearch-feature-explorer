@@ -231,6 +231,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4173](https://github.com/opensearch-project/ml-commons/pull/4173) | Move common string to common package |
 | v3.2.0 | [#4035](https://github.com/opensearch-project/ml-commons/pull/4035) | Add Execute Tool API |
 | v3.2.0 | [#4050](https://github.com/opensearch-project/ml-commons/pull/4050) | Implement create and add memory container API |
 | v3.2.0 | [#4055](https://github.com/opensearch-project/ml-commons/pull/4055) | Enable AI-Oriented memory operations |
@@ -265,6 +266,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 ## Change History
 
+- **v3.3.0** (2026-01-14): Code refactoring - moved `NO_ESCAPE_PARAMS` constant from `AgentUtils` to `ToolUtils` in common package for skills plugin accessibility
 - **v3.2.0** (2025-09-16): Execute Tool API, AI-oriented memory container system (create, add, search, update, delete, get), QueryPlanningTool for agentic search, date/time injection for agents, message history limit for PER Agent, output filter support, SearchIndexTool improvements, feature flags for agentic search/memory, multiple bug fixes (class cast exception, connector URL exposure, async status, max iterations handling)
 - **v3.1.0** (2025-07-15): Update Agent API, MCP tools persistence, function calling for LLM interfaces, custom SSE endpoint, metrics framework integration, PlanExecuteReflect memory tracking, error handling improvements, multiple bug fixes (private IP validation, circuit breaker bypass, Python MCP client)
 - **v3.0.0** (2025-05-13): Plan-Execute-Reflect agent type, MCP server integration

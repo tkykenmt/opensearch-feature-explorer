@@ -91,6 +91,7 @@
 
 ### ML Commons
 
+- [Move Common String](features/ml-commons/move-common-string.md)
 - [Updating Gson Version to Resolve Conflict Coming from Core](features/ml-commons/updating-gson-version-to-resolve-conflict-coming-from-core.md)
 
 ### Neural Search
