@@ -116,3 +116,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Skills
 
 - [Skills Plugin Dependencies](features/skills/skills-plugin-dependencies.md) - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes
+
+### CI/CD
+
+- [CI/CD & Build Improvements](features/ci/cd-build-improvements.md) - JDK-21 baseline updates, CI workflow fixes, test security improvements, backport process enhancements across index-management, ml-commons, notifications, and observability

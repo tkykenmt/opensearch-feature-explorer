@@ -318,3 +318,7 @@
 ## opensearch-system-templates
 
 - [System Templates](opensearch-system-templates/system-templates.md)
+
+## ci
+
+- [CI/CD & Build Improvements](ci/cd-build-improvements.md)
