@@ -147,6 +147,7 @@ i18n.translate('title', { defaultMessage: 'Workspace' });
 | v2.18.0 | [#8392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8392) | Fix dynamic i18n in core |
 | v2.18.0 | [#8393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8393) | Fix dynamic i18n in console plugin |
 | v2.18.0 | [#8394](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8394) | Fix dynamic i18n in dataSourceManagement |
+| v2.18.0 | [#8516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8516) | Backport #8394 to 2.x branch |
 | v2.18.0 | [#8396](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8396) | Fix dynamic i18n in discover plugin |
 | v2.18.0 | [#8397](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8397) | Fix dynamic i18n in queryEnhancements |
 | v2.18.0 | [#8398](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8398) | Fix dynamic i18n in indexPatternManagement |
