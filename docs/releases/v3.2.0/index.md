@@ -289,6 +289,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Tenancy Access Control](features/common/tenancy-access-control.md) | enhancement | Add tenancy access level (READ/WRITE/NONE) to serialized user in thread context |
 
+### Job Scheduler
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Job Scheduler Enhancements](features/job-scheduler/job-scheduler-enhancements.md) | feature | REST APIs for listing jobs and locks, second-level interval scheduling, LockService extensibility |
+
 ### Custom Codecs
 
 | Item | Category | Description |

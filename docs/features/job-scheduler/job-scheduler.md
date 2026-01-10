@@ -78,7 +78,16 @@ flowchart TB
 | `plugins.jobscheduler.retry_count` | Retry count for exponential backoff policy | Dynamic |
 | `plugins.jobscheduler.sweeper.backoff_millis` | Initial wait period for exponential backoff (ms) | Dynamic |
 | `plugins.jobscheduler.sweeper.page_size` | Number of search hits to return per sweep | Dynamic |
-| `plugins.jobscheduler.sweeper.period` | Initial delay before background sweep execution | Dynamic |
+| `plugins.jobscheduler.sweeper.period` | Initial delay before background sweep execution (supports seconds since v3.2.0) | Dynamic |
+
+### REST APIs (v3.2.0+)
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/_plugins/_job_scheduler/api/jobs` | GET | List all scheduled jobs in the cluster |
+| `/_plugins/_job_scheduler/api/jobs?by_node` | GET | List scheduled jobs grouped by node |
+| `/_plugins/_job_scheduler/api/locks` | GET | List all job locks |
+| `/_plugins/_job_scheduler/api/locks/{lock_id}` | GET | Get a specific lock by ID |
 
 ### Usage Example
 
@@ -130,13 +139,13 @@ public class MyJobRunner implements ScheduledJobRunner {
 
 Job Scheduler supports two schedule formats:
 
-1. **Interval-based**: Run every N time units
+1. **Interval-based**: Run every N time units (supports Seconds since v3.2.0, Minutes, Hours, Days)
    ```json
    {
      "schedule": {
        "interval": {
-         "period": 1,
-         "unit": "HOURS"
+         "period": 30,
+         "unit": "Seconds"
        }
      }
    }
@@ -164,6 +173,14 @@ Job Scheduler supports two schedule formats:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#849](https://github.com/opensearch-project/common-utils/pull/849) | Add Seconds as a supported unit for IntervalSchedule |
+| v3.2.0 | [#786](https://github.com/opensearch-project/job-scheduler/pull/786) | Adds REST API to list jobs with an option to list them per node |
+| v3.2.0 | [#796](https://github.com/opensearch-project/job-scheduler/pull/796) | Support defining IntervalSchedule in seconds |
+| v3.2.0 | [#802](https://github.com/opensearch-project/job-scheduler/pull/802) | Rest API to list all locks with option to get a specific lock |
+| v3.2.0 | [#792](https://github.com/opensearch-project/job-scheduler/pull/792) | Make Lock service not final |
+| v3.2.0 | [#801](https://github.com/opensearch-project/job-scheduler/pull/801) | Move info about delay to the schedule portion in List Jobs API |
+| v3.2.0 | [#793](https://github.com/opensearch-project/job-scheduler/pull/793) | Ensure that dates are serialized in TransportGetScheduledInfoAction |
+| v3.2.0 | [#790](https://github.com/opensearch-project/job-scheduler/pull/790) | Use Text Blocks when defining multi-line strings |
 | v3.1.0 | [#778](https://github.com/opensearch-project/job-scheduler/pull/778) | Add CHANGELOG and changelog_verifier workflow |
 | v3.1.0 | [#766](https://github.com/opensearch-project/job-scheduler/pull/766) | Increment version to 3.1.0-SNAPSHOT |
 | v3.1.0 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency |
@@ -176,8 +193,9 @@ Job Scheduler supports two schedule formats:
 ## References
 
 - [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
-- [Official Documentation](https://docs.opensearch.org/3.1/monitoring-your-cluster/job-scheduler/index/)
+- [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
 - [Sample Extension Plugin](https://github.com/opensearch-project/job-scheduler/tree/main/sample-extension-plugin)
+- [Issue #775](https://github.com/opensearch-project/job-scheduler/issues/775): Feature request for REST APIs to list jobs and running jobs
 - [Issue #777](https://github.com/opensearch-project/job-scheduler/issues/777): Add a CHANGELOG to assemble release notes as PRs are merged
 - [Issue #18113](https://github.com/opensearch-project/OpenSearch/issues/18113): Remove Guava from plugins
 - [Issue #698](https://github.com/opensearch-project/job-scheduler/issues/698): GitHub Action Deprecation
@@ -188,6 +206,7 @@ Job Scheduler supports two schedule formats:
 
 ## Change History
 
+- **v3.2.0** (2025): Added REST APIs for listing scheduled jobs and locks; Added support for second-level interval scheduling; Made LockService non-final for better extensibility; Fixed date serialization in transport actions
 - **v3.1.0** (2025): Added CHANGELOG and changelog_verifier workflow for iterative release note assembly; Removed Guava dependency to reduce jar hell and dependency conflicts in extending plugins
 - **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads
 - **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
