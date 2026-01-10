@@ -36,6 +36,7 @@
 - [Search Settings](features/opensearch/search-settings.md)
 - [Search Stats - Negative Value Handling](features/opensearch/search-stats.md)
 - [Segment Replication](features/opensearch/segment-replication.md)
+- [Skip List](features/opensearch/skip-list.md)
 - [Star Tree Index](features/opensearch/star-tree-index.md)
 - [Store Subdirectory Module](features/opensearch/store-subdirectory-module.md)
 - [Streaming Aggregation](features/opensearch/streaming-aggregation.md)
