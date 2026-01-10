@@ -50,3 +50,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Parent-Child Query Fixes](features/opensearch/parent-child-query-fixes.md) | bugfix | Fix QueryBuilderVisitor pattern for HasParentQuery and HasChildQuery |
 | [HTTP/2 & Reactor-Netty Fix](features/opensearch/http2-reactor-netty-fix.md) | bugfix | Fix HTTP/2 communication when reactor-netty-secure transport is enabled |
 | [Query String & Regex Fixes](features/opensearch/query-string-regex-fixes.md) | bugfix | Fix field alias support, COMPLEMENT flag, and TooComplexToDeterminizeException handling |
+| [Aggregation Task Cancellation](features/opensearch/aggregation-task-cancellation.md) | feature | Add task cancellation checks in aggregators to terminate long-running queries |
