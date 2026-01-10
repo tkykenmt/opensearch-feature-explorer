@@ -139,6 +139,7 @@
 - [Correlation Alerts](security/correlation-alerts.md)
 - [Security Auth Enhancements](security/security-auth-enhancements.md)
 - [Security Bugfixes](security/security-bugfixes.md)
+- [Security Cache Management](security/security-cache-management.md)
 - [Security Configuration](security/security-configuration.md)
 - [Security Debugging](security/security-debugging.md)
 - [Security Permissions](security/security-permissions.md)
