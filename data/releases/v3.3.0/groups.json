@@ -4452,7 +4452,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1445
     },
     {
       "name": "OpenSearch Dashboards Keyboard Shortcuts",
@@ -4496,7 +4497,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1446
     },
     {
       "name": "OpenSearch Dashboards Visualization Enhancements",
@@ -4540,7 +4542,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1447
     },
     {
       "name": "OpenSearch Dashboards Patterns Tab",
@@ -4566,7 +4569,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1448
     },
     {
       "name": "OpenSearch Dashboards Traces",
@@ -4616,7 +4620,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1449
     },
     {
       "name": "OpenSearch Dashboards Dataset Explorer",
@@ -4648,7 +4653,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1450
     },
     {
       "name": "OpenSearch Dashboards AI Chat",
@@ -4674,7 +4680,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1451
     },
     {
       "name": "OpenSearch Dashboards PPL/Query Enhancements",
@@ -4706,7 +4713,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1452
     },
     {
       "name": "OpenSearch Dashboards UI Enhancements",
@@ -4732,7 +4740,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1453
     },
     {
       "name": "OpenSearch Dashboards Bug Fixes",
@@ -4890,7 +4899,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1454
     }
   ],
   "processed_offset": 655
