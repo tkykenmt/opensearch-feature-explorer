@@ -8,6 +8,7 @@
 - [Neural Search Compatibility](neural-search/neural-search-compatibility.md)
 - [Neural Search Rescore](neural-search/neural-search-rescore.md)
 - [Neural Search Reranking](neural-search/neural-search-reranking.md)
+- [Neural Search Stats](neural-search/neural-search-stats.md)
 - [Neural Sparse Search](neural-search/neural-sparse-search.md)
 - [Semantic Field](neural-search/semantic-field.md)
 - [Text Chunking](neural-search/text-chunking.md)
