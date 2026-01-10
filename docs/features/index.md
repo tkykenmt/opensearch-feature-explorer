@@ -102,6 +102,7 @@
 ## opensearch-dashboards
 
 - [Async Query](opensearch-dashboards/async-query.md)
+- [Banner Plugin](opensearch-dashboards/banner-plugin.md)
 - [CI/CD & Build Fixes](opensearch-dashboards/ci-cd-build-fixes.md)
 - [Chart & Visualization Fixes](opensearch-dashboards/chart-visualization-fixes.md)
 - [Content Management](opensearch-dashboards/content-management.md)
