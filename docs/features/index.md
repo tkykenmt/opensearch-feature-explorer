@@ -460,3 +460,7 @@
 ## ci
 
 - [CI/CD & Build Improvements](ci/cd-build-improvements.md)
+
+## user-behavior-insights
+
+- [User Behavior Insights Data Generator](user-behavior-insights/user-behavior-insights-data-generator.md)

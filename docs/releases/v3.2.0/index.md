@@ -237,3 +237,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Common Utils Bugfixes](features/common-utils/common-utils-bugfixes.md) | bugfix | CVE-2025-48734 fix, PublishFindingsRequest revert, Gradle 8.14/JDK 24 upgrade |
+
+### User Behavior Insights
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [User Behavior Insights Data Generator](features/user-behavior-insights/user-behavior-insights-data-generator.md) | enhancement | Add search_config field for A/B TDI testing simulation |
