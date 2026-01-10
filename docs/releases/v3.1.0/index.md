@@ -65,6 +65,7 @@
 ### Neural Search
 
 - [Lucene Upgrade](features/neural-search/lucene-upgrade.md) - Update hybrid query implementation for Lucene 10.2.1 API compatibility
+- [Neural Search Bug Fixes](features/neural-search/neural-search-bug-fixes.md) - 7 bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability
 - [Neural Search Compatibility](features/neural-search/neural-search-compatibility.md) - Update neural-search for OpenSearch 3.0 beta compatibility
 
 ### Learning to Rank
