@@ -127,3 +127,7 @@
 ### Remote
 
 - [Security CVE Fixes](features/remote/security-cve-fixes.md) - CVE-2025-27820 fix for Apache HttpClient in opensearch-remote-metadata-sdk
+
+### Geospatial
+
+- [Geospatial Ip2Geo Fixes](features/geospatial/geospatial-ip2geo-fixes.md) - Cache synchronization fixes for IP2Geo processor with metadata reset and retry logic

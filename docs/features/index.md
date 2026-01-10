@@ -209,6 +209,7 @@
 ## geospatial
 
 - [Geospatial Plugin](geospatial/geospatial-plugin.md)
+- [IP2Geo Processor](geospatial/ip2geo.md)
 
 ## multi-plugin
 
