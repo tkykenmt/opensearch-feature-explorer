@@ -53,6 +53,7 @@
 ### Query Insights
 
 - [Query Insights Release Maintenance](features/query-insights/query-insights-release-maintenance.md) - Fix flaky integration tests and add multi-node test infrastructure
+- [Query Insights Bug Fixes](features/query-insights/query-insights-bug-fixes.md) - Fix node-level request serialization, live query status response, and CI test stability
 
 ### Observability
 
