@@ -221,15 +221,21 @@ client.share(
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#5389](https://github.com/opensearch-project/security/pull/5389) | Migration API for existing sharing info |
+| v3.2.0 | [#5408](https://github.com/opensearch-project/security/pull/5408) | Resource Access Evaluator for standalone authorization |
+| v3.2.0 | [#5541](https://github.com/opensearch-project/security/pull/5541) | Client accessor pattern fix for optional security plugin |
 | v3.1.0 | [#5281](https://github.com/opensearch-project/security/pull/5281) | Introduces Centralized Resource Access Control Framework |
 | v3.1.0 | [#5358](https://github.com/opensearch-project/security/pull/5358) | Store resource sharing info in 1:1 backing indices |
 
 ## References
 
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing proposal
+- [Issue #5391](https://github.com/opensearch-project/security/issues/5391): Migration API tracking issue
+- [Issue #5442](https://github.com/opensearch-project/security/issues/5442): Resource Access Evaluator tracking issue
 - [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
 - [RESOURCE_ACCESS_CONTROL_FOR_PLUGINS.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_ACCESS_CONTROL_FOR_PLUGINS.md): Developer guide
 
 ## Change History
 
+- **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
 - **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation
