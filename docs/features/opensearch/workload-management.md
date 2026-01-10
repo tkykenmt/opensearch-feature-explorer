@@ -1,0 +1,237 @@
+# Workload Management
+
+## Summary
+
+Workload Management (WLM) is a feature that enables tenant-level admission control and reactive query management in OpenSearch. It allows system administrators to group search traffic into query groups with defined resource limits (CPU, memory), preventing resource overuse by specific requests and ensuring fair resource distribution across the cluster. When resource usage exceeds configured limits, WLM automatically identifies and cancels demanding queries.
+
+## Details
+
+### Architecture
+
+```mermaid
+graph TB
+    subgraph "Client Layer"
+        CLIENT[Client Application]
+    end
+    
+    subgraph "OpenSearch Cluster"
+        subgraph "Coordinator Node"
+            WLM[Workload Management Plugin]
+            QGS[QueryGroup Service<br/>Resiliency Orchestrator]
+        end
+        
+        subgraph "Data Nodes"
+            RC1[Resource Cancellation<br/>Framework]
+            RC2[Resource Cancellation<br/>Framework]
+        end
+        
+        subgraph "Query Groups"
+            QG1[Query Group 1<br/>enforced mode]
+            QG2[Query Group 2<br/>soft mode]
+            DEFAULT[DEFAULT_QUERY_GROUP]
+        end
+        
+        subgraph "Cluster State"
+            META[QueryGroupMetadata<br/>Persistent Storage]
+        end
+    end
+    
+    CLIENT -->|queryGroupId header| WLM
+    WLM --> QGS
+    QGS --> QG1
+    QGS --> QG2
+    QGS --> DEFAULT
+    QGS --> RC1
+    QGS --> RC2
+    RC1 -->|Monitor/Cancel| QGS
+    RC2 -->|Monitor/Cancel| QGS
+    QGS <-->|Persist/Load| META
+```
+
+### Data Flow
+
+```mermaid
+flowchart TB
+    A[Search Request] --> B{Has queryGroupId?}
+    B -->|Yes| C[Route to Query Group]
+    B -->|No| D[Route to DEFAULT_QUERY_GROUP]
+    C --> E[Execute Query]
+    D --> E
+    E --> F{Resource Check}
+    F -->|Within Limits| G[Return Results]
+    F -->|Exceeds Limits| H{Resiliency Mode?}
+    H -->|enforced| I[Cancel/Reject Query]
+    H -->|soft + node in duress| I
+    H -->|soft + node OK| G
+    H -->|monitor_only| J[Log & Continue]
+    J --> G
+```
+
+### Components
+
+| Component | Description |
+|-----------|-------------|
+| `QueryGroupService` | Core orchestrator for query sandboxing and resource enforcement |
+| `QueryGroupMetadata` | Persistable metadata stored in ClusterState for durability |
+| `ResourceCancellationFramework` | Node-level framework for canceling queries exceeding limits |
+| `WLM Stats API` | Provides per-node query group statistics and metrics |
+| `Query Group CRUD APIs` | REST APIs for managing query group lifecycle |
+| `DEFAULT_QUERY_GROUP` | Built-in query group for requests without explicit group assignment |
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `wlm.query_group.mode` | Operating mode: `disabled`, `enabled`, `monitor_only` | `monitor_only` |
+| `wlm.query_group.duress_streak` | Consecutive checks before node is marked "in duress" | - |
+| `wlm.query_group.enforcement_interval` | Interval for resource monitoring checks | - |
+| `wlm.query_group.node.memory_rejection_threshold` | Memory threshold triggering request rejection | - |
+| `wlm.query_group.node.cpu_rejection_threshold` | CPU threshold triggering request rejection | - |
+| `wlm.query_group.node.memory_cancellation_threshold` | Memory threshold for marking node in duress | - |
+| `wlm.query_group.node.cpu_cancellation_threshold` | CPU threshold for marking node in duress | - |
+
+### Operating Modes
+
+| Mode | Behavior |
+|------|----------|
+| `disabled` | Workload management is completely disabled |
+| `enabled` | Full enforcement - queries are canceled/rejected when limits exceeded |
+| `monitor_only` | Resources monitored but no cancellation/rejection (default) |
+
+### Resiliency Modes
+
+| Mode | Behavior |
+|------|----------|
+| `enforced` | Strict enforcement - queries canceled when group limits exceeded |
+| `soft` | Queries may be rejected only when node is in duress |
+
+### Usage Example
+
+**Install Plugin:**
+```bash
+./bin/opensearch-plugin install workload-management
+```
+
+**Create Query Group:**
+```json
+PUT _wlm/query_group
+{
+  "name": "analytics",
+  "resiliency_mode": "enforced",
+  "resource_limits": {
+    "cpu": 0.4,
+    "memory": 0.2
+  }
+}
+```
+
+**Response:**
+```json
+{
+  "_id": "preXpc67RbKKeCyka72_Gw",
+  "name": "analytics",
+  "resiliency_mode": "enforced",
+  "resource_limits": {
+    "cpu": 0.4,
+    "memory": 0.2
+  },
+  "updated_at": 1726270184642
+}
+```
+
+**Execute Query with Query Group:**
+```
+GET testindex/_search
+Host: localhost:9200
+Content-Type: application/json
+queryGroupId: preXpc67RbKKeCyka72_Gw
+
+{
+  "query": {
+    "match": {
+      "field_name": "value"
+    }
+  }
+}
+```
+
+**Get Query Group Stats:**
+```
+GET _wlm/stats
+```
+
+**Stats Response:**
+```json
+{
+  "_nodes": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
+  },
+  "cluster_name": "my-cluster",
+  "node_id": {
+    "query_groups": {
+      "16YGxFlPRdqIO7K4EACJlw": {
+        "total_completions": 33570,
+        "total_rejections": 0,
+        "total_cancellations": 0,
+        "cpu": {
+          "current_usage": 0.033,
+          "cancellations": 0,
+          "rejections": 0
+        },
+        "memory": {
+          "current_usage": 0.002,
+          "cancellations": 0,
+          "rejections": 0
+        }
+      },
+      "DEFAULT_QUERY_GROUP": {
+        "total_completions": 42572,
+        "total_rejections": 0,
+        "total_cancellations": 0,
+        "cpu": {
+          "current_usage": 0,
+          "cancellations": 0,
+          "rejections": 0
+        },
+        "memory": {
+          "current_usage": 0,
+          "cancellations": 0,
+          "rejections": 0
+        }
+      }
+    }
+  }
+}
+```
+
+## Limitations
+
+- Sum of resource limits for a single resource type (CPU or memory) across all query groups must not exceed 1.0
+- Rejection threshold should always be lower than cancellation threshold
+- Only administrator-level users can create and update query groups
+- Requires installing the `workload-management` plugin
+- Operates at node level for search workloads
+
+## Related PRs
+
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | Add cancellation framework changes in WLM |
+| v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | QueryGroup Stats API logic |
+| v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | Add WLM resiliency orchestrator (QueryGroup Service) |
+| v2.18.0 | [#15955](https://github.com/opensearch-project/OpenSearch/pull/15955) | Add integration tests for WLM CRUD APIs |
+| v2.18.0 | [#16370](https://github.com/opensearch-project/OpenSearch/pull/16370) | Make QueryGroups durable |
+| v2.18.0 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | Improve rejection logic for WLM |
+| v2.18.0 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | WLM create/update REST API bug fix |
+
+## References
+
+- [RFC #12342](https://github.com/opensearch-project/OpenSearch/issues/12342): Search Query Sandboxing: User Experience
+- [Workload Management Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Query Group Lifecycle API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/query-group-lifecycle-api/)
+
+## Change History
+
+- **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic

@@ -43,6 +43,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Async Shard Fetch Metrics](features/opensearch/async-shard-fetch-metrics.md) - OTel counter metrics for async shard fetch success and failure tracking
 - [Search API Enhancements](features/opensearch/search-api-enhancements.md) - WithFieldName interface for aggregation/sort builders and successfulSearchShardIndices in SearchRequestContext
 - [Offline Nodes](features/opensearch/offline-nodes.md) - New offline-tasks library with core abstractions for running background tasks on dedicated offline nodes
+- [Workload Management](features/opensearch/workload-management.md) - Query sandboxing with tenant-level admission control, resource limits (CPU/memory), QueryGroup Stats API, and persistence
 
 ### OpenSearch Dashboards
 

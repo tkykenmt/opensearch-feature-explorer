@@ -69,6 +69,7 @@
 - [Tiered Caching](opensearch/tiered-caching.md)
 - [Transport Nodes Action Optimization](opensearch/transport-nodes-action-optimization.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
+- [Workload Management](opensearch/workload-management.md)
 
 ## opensearch-dashboards
 
