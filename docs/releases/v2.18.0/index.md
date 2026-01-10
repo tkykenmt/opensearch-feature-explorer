@@ -106,6 +106,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [SQL Error Handling](features/sql/sql-error-handling.md) - Improved error handling for malformed cursors and edge cases in query parsing
 - [SQL Pagination](features/sql/sql-pagination.md) - Bug fixes for SQL pagination with `pretty` parameter and PIT refactor issues
+- [SQL PIT Refactor](features/sql/sql-pit-refactor.md) - Refactor SQL plugin to use Point in Time (PIT) API instead of Scroll API for joins and pagination
 - [SQL Plugin Maintenance](features/sql/sql-plugin-maintenance.md) - Security fix for CVE-2024-47554 (commons-io upgrade to 2.14.0) and test fixes for 2.18 branch
 - [SQL Query Fixes](features/sql/sql-query-fixes.md) - Fix alias resolution in legacy SQL with filters, correct regex character range in Grok compiler
 - [SQL Scheduler](features/sql/sql-scheduler.md) - Bugfix to remove scheduler index from SystemIndexDescriptor to prevent conflicts with Job Scheduler plugin

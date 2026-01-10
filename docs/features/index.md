@@ -159,6 +159,7 @@
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL Error Handling](sql/sql-error-handling.md)
 - [SQL Pagination](sql/sql-pagination.md)
+- [SQL PIT Refactor](sql/sql-pit-refactor.md)
 - [SQL Plugin Maintenance](sql/sql-plugin-maintenance.md)
 - [SQL Query Fixes](sql/sql-query-fixes.md)
 - [SQL/PPL Engine](sql/sql-ppl-engine.md)
