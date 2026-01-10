@@ -74,6 +74,7 @@
 - [Source Field Matching](opensearch/source-field-matching.md)
 - [Cryptography & Security Libraries](opensearch/cryptography-security-libraries.md)
 - [Gradle Build System](opensearch/gradle-build-system.md)
+- [Grok Processor](opensearch/grok-processor.md)
 - [HTTP Client](opensearch/http-client.md)
 - [Identity Feature Flag Removal](opensearch/identity-feature-flag-removal.md)
 - [Index Output Optimization](opensearch/index-output.md)
