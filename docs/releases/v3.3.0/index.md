@@ -87,3 +87,4 @@
 ### Security
 
 - [Sync Protobufs Version with Core](features/security/sync-protobufs-version.md)
+- [Security Plugin Dependencies](features/security/security-plugin-dependencies.md)

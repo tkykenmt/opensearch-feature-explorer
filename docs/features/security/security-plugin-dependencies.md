@@ -81,6 +81,18 @@ Dependency updates in the Security plugin follow this process:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) |
+| v3.3.0 | [#5629](https://github.com/opensearch-project/security/pull/5629) | Bump nimbus-jose-jwt 10.4.2 → 10.5 |
+| v3.3.0 | [#5568](https://github.com/opensearch-project/security/pull/5568) | Bump jjwt_version 0.12.6 → 0.13.0 |
+| v3.3.0 | [#5569](https://github.com/opensearch-project/security/pull/5569) | Bump spring_version 6.2.9 → 6.2.11 |
+| v3.3.0 | [#5567](https://github.com/opensearch-project/security/pull/5567) | Bump open_saml_version 5.1.4 → 5.1.6 |
+| v3.3.0 | [#5585](https://github.com/opensearch-project/security/pull/5585) | Bump open_saml_shib_version 9.1.4 → 9.1.6 |
+| v3.3.0 | [#5665](https://github.com/opensearch-project/security/pull/5665) | Bump guava 33.4.8-jre → 33.5.0-jre |
+| v3.3.0 | [#5589](https://github.com/opensearch-project/security/pull/5589) | Bump metrics-core 4.2.33 → 4.2.37 |
+| v3.3.0 | [#5566](https://github.com/opensearch-project/security/pull/5566) | Bump mockito-core 5.18.0 → 5.20.0 |
+| v3.3.0 | [#5584](https://github.com/opensearch-project/security/pull/5584) | Bump com.github.spotbugs 6.2.4 → 6.4.1 |
+| v3.3.0 | [#5572](https://github.com/opensearch-project/security/pull/5572) | Bump actions/checkout 4 → 5 |
+| v3.3.0 | [#5582](https://github.com/opensearch-project/security/pull/5582) | Bump actions/setup-java 4 → 5 |
 | v3.1.0 | [#5380](https://github.com/opensearch-project/security/pull/5380) | Bump bouncycastle_version 1.80 → 1.81 |
 | v3.1.0 | [#5131](https://github.com/opensearch-project/security/pull/5131) | Upgrade kafka_version 3.7.1 → 4.0.0 |
 | v3.1.0 | [#5284](https://github.com/opensearch-project/security/pull/5284) | Bump guava 33.4.6-jre → 33.4.8-jre |
@@ -104,6 +116,7 @@ Dependency updates in the Security plugin follow this process:
 
 - [OpenSearch Security Repository](https://github.com/opensearch-project/security)
 - [OpenSearch Security Dashboards Plugin](https://github.com/opensearch-project/security-dashboards-plugin)
+- [CVE-2025-53864 Advisory](https://github.com/advisories/GHSA-xwmg-2g98-w7v9)
 - [CVE-2024-52798 Advisory](https://advisories.opensearch.org/advisories/CVE-2024-52798)
 - [Bouncy Castle](https://www.bouncycastle.org/)
 - [Apache Kafka](https://kafka.apache.org/)
@@ -114,5 +127,6 @@ Dependency updates in the Security plugin follow this process:
 
 ## Change History
 
+- **v3.3.0** (2026-01-14): Security fix for CVE-2025-53864 (nimbus-jose-jwt), plus 24 dependency updates including Spring 6.2.11, JJWT 0.13.0, Guava 33.5.0, and CI tooling updates
 - **v3.1.0** (2025-06-03): Major dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, Spring 6.2.7, Guava 33.4.8, JUnit 5.13.1, and CVE-2024-52798 fix
 - **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic
