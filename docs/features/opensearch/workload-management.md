@@ -255,7 +255,11 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 |---------|-----|-------------|
 | v3.2.0 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | Bug fix and improvements for rule-based auto tagging |
 | v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | Add configurable limit on rule cardinality |
+| v3.2.0 | [#18652](https://github.com/opensearch-project/OpenSearch/pull/18652) | Add WLM mode validation for workload group CRUD requests |
 | v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | Fix delete rule event consumption for wildcard index based rules |
+| v3.2.0 | [#18709](https://github.com/opensearch-project/OpenSearch/pull/18709) | Rename WorkloadGroupTestUtil to WorkloadManagementTestUtil |
+| v3.2.0 | [#18711](https://github.com/opensearch-project/OpenSearch/pull/18711) | Rename QueryGroup to WorkloadGroup in comments and Javadocs |
+| v3.2.0 | [#18712](https://github.com/opensearch-project/OpenSearch/pull/18712) | Modify logging message to show actual resiliency mode |
 | v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
 | v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | Add Get Rule API for auto-tagging |
 | v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | Add WLM ActionFilter for automatic tagging |
@@ -284,6 +288,6 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Change History
 
-- **v3.2.0** (2026-01-10): Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules in `InMemoryRuleProcessingService`; Bug fixes and improvements including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
+- **v3.2.0** (2026-01-10): Added WLM mode validation for workload group CRUD requests (Create/Update/Delete operations now fail when WLM mode is `disabled` or `monitor_only`); Added `WlmClusterSettingValuesProvider` component for centralized cluster settings management; Renamed `WorkloadGroupTestUtil` to `WorkloadManagementTestUtil`; Updated all "QueryGroup" references to "WorkloadGroup" in comments and Javadocs; Improved logging to dynamically show actual resiliency mode; Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules; Bug fixes including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
 - **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
