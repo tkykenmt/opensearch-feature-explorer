@@ -100,6 +100,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Observability Infrastructure](features/observability/observability-infrastructure.md) | bugfix | Maven snapshot publishing migration, Gradle 8.14.3 upgrade, JDK24 CI support |
 
+### Dashboards Observability
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Observability Bugfixes](features/dashboards-observability/observability-bugfixes.md) | bugfix | Traces error display fix (nested status.code), metrics visualization fix for local cluster |
+
 ### Geospatial
 
 | Item | Category | Description |
