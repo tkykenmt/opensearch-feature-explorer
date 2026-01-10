@@ -195,6 +195,7 @@
 - [Security Testing Framework](security/security-testing-framework.md)
 - [Security CI/CD](security/security-ci-cd.md)
 - [JWT Authentication](security/jwt-authentication.md)
+- [Multi-Tenancy](security/multi-tenancy.md)
 - [Resource Access Control Framework](security/resource-access-control-framework.md)
 
 ## security-dashboards

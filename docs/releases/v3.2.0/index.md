@@ -247,6 +247,12 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 |------|----------|-------------|
 | [Common Utils Bugfixes](features/common-utils/common-utils-bugfixes.md) | bugfix | CVE-2025-48734 fix, PublishFindingsRequest revert, Gradle 8.14/JDK 24 upgrade |
 
+### Common (Security)
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Tenancy Access Control](features/common/tenancy-access-control.md) | enhancement | Add tenancy access level (READ/WRITE/NONE) to serialized user in thread context |
+
 ### Custom Codecs
 
 | Item | Category | Description |
