@@ -7,6 +7,7 @@
 - [Alias Write Index Policy](features/opensearch/alias-write-index-policy.md)
 - [Cardinality Aggregation](features/opensearch/cardinality-aggregation.md)
 - [Cluster State Caching](features/opensearch/cluster-state-caching.md)
+- [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md)
 - [Cross-Cluster Settings](features/opensearch/cross-cluster-settings.md)
 - [Derived Fields](features/opensearch/derived-fields.md)
 - [Netty Arena Settings](features/opensearch/netty-arena-settings.md)
