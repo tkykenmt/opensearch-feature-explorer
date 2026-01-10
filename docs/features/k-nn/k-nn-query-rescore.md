@@ -150,6 +150,7 @@ GET my-knn-index/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#2190](https://github.com/opensearch-project/k-NN/pull/2190) | JavaDoc cleanup for RescoreContext |
 | v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |
 
 ## References
@@ -160,4 +161,5 @@ GET my-knn-index/_search
 
 ## Change History
 
+- **v2.18.0** (2024-10-22): JavaDoc cleanup for RescoreContext class
 - **v2.17.0** (2024-09-17): Initial implementation of k-NN query rescore support for native engines
