@@ -173,17 +173,69 @@ Response:
 POST /my-index/_cache/clear?file=true
 ```
 
+### Active Usage Threshold Monitoring (v3.3.0+)
+
+Starting in v3.3.0, OpenSearch monitors file cache active usage and automatically applies index blocks when thresholds are exceeded:
+
+```mermaid
+flowchart TB
+    subgraph "Threshold Monitoring"
+        AFCS[AggregateFileCacheStats]
+        FCE[FileCacheEvaluator]
+        DTM[DiskThresholdMonitor]
+    end
+    
+    subgraph "Thresholds"
+        IT[Indexing Threshold 90%]
+        ST[Search Threshold 100%]
+    end
+    
+    subgraph "Actions"
+        ROB[Read-Only Block]
+        RB[Read Block]
+    end
+    
+    AFCS --> FCE
+    FCE --> DTM
+    DTM --> IT
+    DTM --> ST
+    IT -->|Exceeded| ROB
+    ST -->|Exceeded| RB
+```
+
+**Threshold Settings:**
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `cluster.filecache.activeusage.threshold.enabled` | Enable/disable threshold monitoring | `true` |
+| `cluster.filecache.activeusage.indexing.threshold` | Threshold for read-only block | `90%` |
+| `cluster.filecache.activeusage.search.threshold` | Threshold for read block | `100%` |
+
+**Configure thresholds:**
+
+```bash
+PUT _cluster/settings
+{
+  "persistent": {
+    "cluster.filecache.activeusage.indexing.threshold": "85%",
+    "cluster.filecache.activeusage.search.threshold": "95%"
+  }
+}
+```
+
 ## Limitations
 
 - File cache is only available on nodes with warm or search roles
 - Cache capacity is a soft limit; reference-counted and pinned entries may cause temporary over-subscription
 - Block-based caching loads 8MB chunks, which may not be optimal for all access patterns
 - Pinned files cannot be evicted even under memory pressure
+- Threshold monitoring is per-node; index blocks affect all shards on the node
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Added file cache active usage guard rails to DiskThresholdMonitor |
 | v3.1.0 | [#17617](https://github.com/opensearch-project/OpenSearch/pull/17617) | Added File Cache Pinning |
 | v3.1.0 | [#17538](https://github.com/opensearch-project/OpenSearch/pull/17538) | Added File Cache Stats (block and full file level) |
 | v2.7.0 | Initial | File Cache introduced for Searchable Snapshots |
@@ -195,8 +247,10 @@ POST /my-index/_cache/clear?file=true
 - [Issue #13149](https://github.com/opensearch-project/OpenSearch/issues/13149): META - Writable Warm Index
 - [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
 - [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/)
+- [Nodes Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
 
 ## Change History
 
+- **v3.3.0** (2025-10-06): Added file cache active usage threshold monitoring with automatic index blocking
 - **v3.1.0** (2025-05-28): Added file pinning support and granular statistics (full file, block file, pinned file stats)
 - **v2.7.0**: Initial implementation for Searchable Snapshots
