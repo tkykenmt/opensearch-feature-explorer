@@ -141,3 +141,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [Release Notes & Documentation](features/query-insights/release-notes-documentation.md) | bugfix | Release notes for v3.2.0 with reader search limit increase and infrastructure updates |
+
+### Multi-Repository
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [CVE Fixes & Dependency Updates](features/multi-repo/cve-fixes-dependency-updates.md) | bugfix | CVE-2025-48734 (beanutils) and CVE-2025-7783 (form-data) security fixes |
