@@ -65,6 +65,7 @@
 - [Query Optimization](opensearch/query-optimization.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
 - [Replication](opensearch/replication.md)
+- [Remote Store](opensearch/remote-store.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
 - [S3 Repository](opensearch/s3-repository.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
