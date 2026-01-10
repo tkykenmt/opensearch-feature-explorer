@@ -105,6 +105,7 @@ flowchart TB
 | `wlm.query_group.node.cpu_rejection_threshold` | CPU threshold triggering request rejection | - |
 | `wlm.query_group.node.memory_cancellation_threshold` | Memory threshold for marking node in duress | - |
 | `wlm.query_group.node.cpu_cancellation_threshold` | CPU threshold for marking node in duress | - |
+| `wlm.autotagging.max_rules` | Maximum number of auto-tagging rules allowed (v3.2.0+) | 200 (range: 10-500) |
 
 ### Operating Modes
 
@@ -252,6 +253,7 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | Add configurable limit on rule cardinality |
 | v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | Fix delete rule event consumption for wildcard index based rules |
 | v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
 | v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | Add Get Rule API for auto-tagging |
@@ -281,6 +283,6 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Change History
 
-- **v3.2.0** (2026-01-10): Fixed delete rule event consumption for wildcard index based rules in `InMemoryRuleProcessingService`
+- **v3.2.0** (2026-01-10): Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules in `InMemoryRuleProcessingService`
 - **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
