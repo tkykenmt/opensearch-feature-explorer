@@ -136,6 +136,7 @@
 - [Saved Query UX](opensearch-dashboards/saved-query-ux.md)
 - [Security CVE Fixes](opensearch-dashboards/security-cve-fixes.md)
 - [TSVB Visualization](opensearch-dashboards/tsvb-visualization.md)
+- [Vended Dashboard Progress](opensearch-dashboards/vended-dashboard-progress.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 
 ## security
