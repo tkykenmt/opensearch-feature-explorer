@@ -147,6 +147,7 @@
 - [Security Plugin Dependencies](security/security-plugin-dependencies.md)
 - [Security Role Mapping](security/security-role-mapping.md)
 - [Security Testing Framework](security/security-testing-framework.md)
+- [JWT Authentication](security/jwt-authentication.md)
 
 ## security-dashboards
 

@@ -55,6 +55,7 @@
 - [Security Role Mapping](features/security/security-role-mapping.md) - Fix mapped roles not included in ThreadContext userInfo after immutable User object change
 - [Security Permissions](features/security/security-permissions.md) - Add forecast roles and fix missing cluster:monitor and mapping get permissions
 - [Security Testing Framework](features/security/security-testing-framework.md) - Use extendedPlugins in integrationTest framework for sample resource plugin testing
+- [Security JWT Enhancements](features/security/security-jwt-enhancements.md) - Support for extracting backend roles from nested JWT claims
 
 ### Query Insights
 
