@@ -63,6 +63,22 @@ release-notes/
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.1.0 | [#1837](https://github.com/opensearch-project/alerting/pull/1837) | alerting | Auto-increment to 3.1.0-SNAPSHOT |
+| v3.1.0 | [#1249](https://github.com/opensearch-project/alerting/pull/1249) | alerting | Upgrade Java to 21 for binary CI |
+| v3.1.0 | [#1251](https://github.com/opensearch-project/alerting/pull/1251) | alerting | Increment to 3.1.0.0 |
+| v3.1.0 | [#726](https://github.com/opensearch-project/asynchronous-search/pull/726) | asynchronous-search | Increment to 3.1.0 |
+| v3.1.0 | [#820](https://github.com/opensearch-project/common-utils/pull/820) | common-utils | Auto-increment to 3.1.0-SNAPSHOT |
+| v3.1.0 | [#735](https://github.com/opensearch-project/dashboards-notifications/pull/735) | dashboards-notifications | Increment to 3.1.0.0 |
+| v3.1.0 | [#357](https://github.com/opensearch-project/notifications/pull/357) | notifications | Increment to 3.1.0.0 |
+| v3.1.0 | [#579](https://github.com/opensearch-project/reporting/pull/579) | reporting | Increment to 3.1.0.0 |
+| v3.1.0 | [#587](https://github.com/opensearch-project/reporting/pull/587) | reporting | Adding release notes for 3.1.0 |
+| v3.1.0 | [#534](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/534) | index-management-dashboards | Increment to 3.1.0.0 |
+| v3.1.0 | [#1414](https://github.com/opensearch-project/index-management/pull/1414) | index-management | Auto-increment to 3.1.0-SNAPSHOT |
+| v3.1.0 | [#1313](https://github.com/opensearch-project/index-management/pull/1313) | index-management | Increment to 3.1.0.0 |
+| v3.1.0 | [#572](https://github.com/opensearch-project/ml-commons/pull/572) | ml-commons | Bump version to 3.1.0.0 |
+| v3.1.0 | [#2451](https://github.com/opensearch-project/observability/pull/2451) | observability | Workflows - Version bump to 3.1.0 |
+| v3.1.0 | [#3671](https://github.com/opensearch-project/sql/pull/3671) | sql | Bump setuptools to 78.1.1 |
+| v3.1.0 | [#18039](https://github.com/opensearch-project/OpenSearch/pull/18039) | OpenSearch | Bump Core main branch to 3.0.0 |
 | v3.0.0 | [#1843](https://github.com/opensearch-project/alerting/pull/1843) | alerting | Added 3.0 release notes |
 | v3.0.0 | [#775](https://github.com/opensearch-project/common-utils/pull/775) | common-utils | Update shadow plugin and bump to 3.0.0.0-alpha1 |
 | v3.0.0 | [#1384](https://github.com/opensearch-project/index-management/pull/1384) | index-management | Bump Version to 3.0.0-alpha1 |
@@ -86,6 +102,7 @@ release-notes/
 
 ## Change History
 
+- **v3.1.0** (2026-01-10): Version bumps across 11 repositories (alerting, asynchronous-search, common-utils, dashboards-notifications, notifications, reporting, index-management-dashboards, index-management, ml-commons, observability, sql, OpenSearch core)
 - **v3.0.0** (2025-05-06): Version bumps and release notes across 9 repositories (alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins)
 - **v2.18.0** (2024-11-05): Release notes across 5 repositories (alerting, common-utils, notifications, query-insights, security)
 - **v2.17.0** (2024-09-17): Version bumps and release notes across 12 repositories (alerting, anomaly-detection, asynchronous-search, common-utils, dashboards-notifications, index-management, job-scheduler, ml-commons, notifications, query-insights, security, sql)
