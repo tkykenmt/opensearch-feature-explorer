@@ -167,6 +167,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [SQL/PPL Engine Enhancements](features/sql/ppl-engine.md) | enhancement | Expanded pushdown (sort, aggregation, partial filter, span, relevance), RelJson security, ~30% performance improvement |
 | [SQL/PPL Documentation](features/sql/ppl-documentation.md) | bugfix | Update PPL documentation index and V3 engine limitations |
 
 ### Asynchronous Search
