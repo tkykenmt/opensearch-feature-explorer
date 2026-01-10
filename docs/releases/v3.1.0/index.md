@@ -41,6 +41,10 @@
 
 - [ML Skills](features/skills/ml-skills.md) - Fix httpclient5 dependency version conflict and apply Spotless formatting
 
+### Reporting
+
+- [Reporting Release Maintenance](features/reporting/reporting-release-maintenance.md) - Version increment to 3.1.0-SNAPSHOT and release notes for v3.1.0
+
 ### Security
 
 - [Security Dependency Updates](features/security/security-dependency-updates.md) - 24 dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, and CVE-2024-52798 fix
