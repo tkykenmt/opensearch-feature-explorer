@@ -280,6 +280,10 @@
 - [Testing Library Updates](multi-plugin/testing-library-updates.md)
 - [Version Bumps & Release Notes](multi-plugin/version-bumps-release-notes.md)
 
+## multi-repo
+
+- [CVE Fixes & Dependency Updates](multi-repo/cve-fixes-dependency-updates.md)
+
 ## opensearch-remote-metadata-sdk
 
 - [Remote Metadata SDK](opensearch-remote-metadata-sdk/remote-metadata-sdk.md)
