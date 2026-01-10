@@ -274,3 +274,9 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | Item | Category | Description |
 |------|----------|-------------|
 | [User Behavior Insights Data Generator](features/user-behavior-insights/user-behavior-insights-data-generator.md) | enhancement | Add search_config field for A/B TDI testing simulation |
+
+### Security Dashboards Plugin
+
+| Item | Category | Description |
+|------|----------|-------------|
+| [Security Dashboards Enhancements](features/security-dashboards-plugin/security-dashboards-enhancements.md) | enhancement | Full index pattern display in role view, added missing index permissions |
