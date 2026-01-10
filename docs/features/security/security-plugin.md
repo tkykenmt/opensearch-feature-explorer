@@ -198,6 +198,14 @@ config:
 | v3.0.0 | [#1467](https://github.com/opensearch-project/security/pull/1467) | Refactored flaky test |
 | v3.0.0 | [#1498](https://github.com/opensearch-project/security/pull/1498) | Remove overrides of preserveIndicesUponCompletion |
 | v3.0.0 | [#1503](https://github.com/opensearch-project/security/pull/1503) | Remove usage of deprecated batchSize() method |
+| v2.18.0 | [#4756](https://github.com/opensearch-project/security/pull/4756) | Support datastreams as an AuditLog Sink |
+| v2.18.0 | [#4753](https://github.com/opensearch-project/security/pull/4753) | Auto-convert V6 configuration to V7 (2.x only) |
+| v2.18.0 | [#4779](https://github.com/opensearch-project/security/pull/4779) | Add circuit breaker override for security APIs |
+| v2.18.0 | [#4819](https://github.com/opensearch-project/security/pull/4819) | Improve certificate error messages |
+| v2.18.0 | [#4721](https://github.com/opensearch-project/security/pull/4721) | Add index permissions for remote index in AD |
+| v2.18.0 | [#4741](https://github.com/opensearch-project/security/pull/4741) | Fix header serialization for rolling upgrades |
+| v2.18.0 | [#4778](https://github.com/opensearch-project/security/pull/4778) | Fix env var password hashing for PBKDF2 |
+| v2.18.0 | [#2107](https://github.com/opensearch-project/security/pull/2107) | Add JWT to MultipleAuthentication |
 | v2.18.0 | [#4776](https://github.com/opensearch-project/security/pull/4776) | Add deprecation warning for GET/POST/PUT cache |
 | v2.18.0 | [#4768](https://github.com/opensearch-project/security/pull/4768) | Undeprecate securityadmin script |
 | v2.18.0 | [#4765](https://github.com/opensearch-project/security/pull/4765) | Add isActionPaginated to DelegatingRestHandler |
@@ -205,6 +213,8 @@ config:
 | v2.18.0 | [#4792](https://github.com/opensearch-project/security/pull/4792) | Fix CVE-2024-47554 (commons-io upgrade) |
 | v2.18.0 | [#4831](https://github.com/opensearch-project/security/pull/4831) | Fix bulk index requests in BWC tests |
 | v2.18.0 | [#4815](https://github.com/opensearch-project/security/pull/4815) | Fix integTest not called during release |
+| v2.18.0 | [#4754](https://github.com/opensearch-project/security/pull/4754) | Fix rolesMappingConfiguration in tests |
+| v2.18.0 | [#4726](https://github.com/opensearch-project/security/pull/4726) | Fix SSL exception handler in OpenSearchSecureSettingsFactory |
 | v2.17.0 | [#4603](https://github.com/opensearch-project/security/pull/4603) | Fix demo certificate hash validation |
 | v2.17.0 | [#4631](https://github.com/opensearch-project/security/pull/4631) | Fix authtoken endpoint |
 | v2.17.0 | [#4664](https://github.com/opensearch-project/security/pull/4664) | Handle null audit config |
@@ -216,6 +226,12 @@ config:
 
 ## References
 
+- [Issue #4493](https://github.com/opensearch-project/security/issues/4493): V6/V7 configuration consolidation proposal (v2.18.0)
+- [Issue #4687](https://github.com/opensearch-project/security/issues/4687): Circuit breaker issue with security APIs (v2.18.0)
+- [Issue #4601](https://github.com/opensearch-project/security/issues/4601): Certificate error message improvement (v2.18.0)
+- [Issue #3745](https://github.com/opensearch-project/security/issues/3745): Datastream support for audit logs (v2.18.0)
+- [Issue #4494](https://github.com/opensearch-project/security/issues/4494): Header serialization issue during upgrades (v2.18.0)
+- [Issue #4670](https://github.com/opensearch-project/security/issues/4670): Rolling upgrade serialization issue (v2.18.0)
 - [Issue #4728](https://github.com/opensearch-project/security/issues/4728): ASN1 refactoring for FIPS support (v2.18.0)
 - [Issue #4790](https://github.com/opensearch-project/security/issues/4790): CVE-2024-47554 tracking (v2.18.0)
 - [Issue #4274](https://github.com/opensearch-project/security/issues/4274): Blake2b hash issue
@@ -232,9 +248,10 @@ config:
 - [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
 - [Documentation: Access Control API](https://docs.opensearch.org/3.0/security/access-control/api/)
 - [Documentation: Security APIs](https://docs.opensearch.org/3.0/api-reference/security/index/)
+- [Documentation: Audit Log Storage Types](https://docs.opensearch.org/2.18/security/audit-logs/storage-types/)
 
 ## Change History
 
 - **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
-- **v2.18.0** (2024-11-05): Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix, pagination support, BWC test fixes
+- **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
 - **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal

@@ -179,6 +179,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Security
 
+- [Security Enhancements](features/security/security-enhancements.md) - Datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override, improved certificate error messages, JWT in MultipleAuthentication
 - [Security Bugfixes](features/security/security-bugfixes.md) - Multiple bug fixes including system index access control, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
 - [Security Plugin Maintenance](features/security/security-plugin-maintenance.md) - Cache endpoint deprecation warning, securityadmin script undeprecation, ASN1 refactoring for FIPS, CVE-2024-47554 fix, BWC test fixes
 
