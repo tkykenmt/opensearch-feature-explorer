@@ -107,6 +107,7 @@
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Segment Replication](opensearch/segment-replication.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
+- [Semantic Version Field Type](opensearch/semantic-version-field-type.md)
 - [Settings Management](opensearch/settings-management.md)
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
 - [Star Tree Index](opensearch/star-tree-index.md)

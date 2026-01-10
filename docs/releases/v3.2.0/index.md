@@ -75,3 +75,4 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Star Tree Index](features/opensearch/star-tree-index.md) | feature | IP field search support and star-tree search statistics |
 | [Clusterless Mode](features/opensearch/clusterless-mode.md) | feature | Experimental clusterless startup mode and custom remote store path prefix |
 | [Rescore Named Queries](features/opensearch/rescore-named-queries.md) | feature | Surface named queries from rescore contexts in matched_queries array |
+| [Semantic Version Field Type](features/opensearch/semantic-version-field-type.md) | feature | New `version` field type for semantic versioning with proper ordering and range queries |
