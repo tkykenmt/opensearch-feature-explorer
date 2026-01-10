@@ -2,7 +2,7 @@
 
 ## Summary
 
-The OpenSearch security layer includes performance optimizations that reduce the overhead of authentication, authorization, and access control operations. These improvements focus on reducing serialization costs during inter-node communication and optimizing privilege evaluation. The immutable User object, introduced in v3.1.0, enables caching of serialized data and eliminates thread synchronization overhead.
+The OpenSearch security layer includes performance optimizations that reduce the overhead of authentication, authorization, and access control operations. These improvements focus on reducing serialization costs during inter-node communication, optimizing privilege evaluation, and improving wildcard pattern matching. Key features include the immutable User object (v3.1.0), configurable precomputed privileges (v3.2.0), and optimized wildcard matchers for common patterns (v3.2.0).
 
 ## Details
 
@@ -66,11 +66,16 @@ flowchart TB
 | `AuthenticationContext` | Context object passed through authentication/authorization flow |
 | `ImpersonationBackend` | Interface for backends supporting user impersonation |
 | `BackendRegistry` | Central authentication coordinator with user caching |
+| `WildcardMatcher.PrefixMatcher` | Optimized matcher for `prefix*` patterns (v3.2.0) |
+| `WildcardMatcher.ContainsMatcher` | Optimized matcher for `*contains*` patterns (v3.2.0) |
+| `RoleBasedActionPrivileges` | Privilege evaluation with configurable precomputed data structures (v3.2.0) |
 
 ### Configuration
 
 | Setting | Description | Default |
 |---------|-------------|---------|
+| `plugins.security.privileges_evaluation.precomputed_privileges.enabled` | Enable/disable precomputed privilege data structures (v3.2.0) | `true` |
+| `plugins.security.privileges_evaluation.precomputed_privileges.max_heap_size` | Maximum heap size for precomputed privileges | - |
 | `plugins.security.user_cache.max_size` | Maximum cached User objects in deserialization cache | 10000 |
 | `plugins.security.user_cache.expire_after_access` | Time before cached entries expire | 1h |
 
@@ -141,11 +146,14 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#5465](https://github.com/opensearch-project/security/pull/5465) | Precomputed privileges toggle setting |
+| v3.2.0 | [#5470](https://github.com/opensearch-project/security/pull/5470) | Optimized wildcard matching |
 | v3.1.0 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove unused custom User serialization |
 | v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object |
 
 ## References
 
+- [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue
 - [Issue #5168](https://github.com/opensearch-project/security/issues/5168): Make User object immutable
 - [Issue #5200](https://github.com/opensearch-project/security/issues/5200): Serialization backward compatibility
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation
@@ -153,6 +161,7 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 
 ## Change History
 
+- **v3.2.0** (2025-09-16): Precomputed privileges toggle, optimized wildcard matching
 - **v3.1.0** (2025-05-26): Immutable User object with serialization caching
 - **v3.0.0**: Optimized privilege evaluation for document- and field-level security
 - **v2.19.0**: Initial optimized privilege evaluation
