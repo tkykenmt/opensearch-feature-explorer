@@ -135,6 +135,7 @@
 - [Workload Management](opensearch/workload-management.md)
 - [Hierarchical & ACL-aware Routing](opensearch/hierarchical-acl-aware-routing.md)
 - [Terms Lookup Query](opensearch/terms-lookup-query.md)
+- [Terms Query](opensearch/terms-query.md)
 
 ## opensearch-dashboards
 

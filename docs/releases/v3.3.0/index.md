@@ -2,6 +2,10 @@
 
 ## Release Reports
 
+### OpenSearch
+
+- [Terms Query Rewriting](features/opensearch/terms-query-rewriting.md)
+
 ### OpenSearch Dashboards
 
 - [OpenSearch Dashboards AI Chat](features/opensearch-dashboards/opensearch-dashboards-ai-chat.md)
