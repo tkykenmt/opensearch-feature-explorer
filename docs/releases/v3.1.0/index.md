@@ -40,6 +40,7 @@
 ### Skills
 
 - [ML Skills](features/skills/ml-skills.md) - Fix httpclient5 dependency version conflict and apply Spotless formatting
+- [ML Skills Text2Spark PPL](features/skills/ml-skills-text2spark-ppl.md) - Add data source type parameter to PPLTool for Spark/S3 support
 - [Skills PPL Tool Fixes](features/skills/skills-ppl-tool-fixes.md) - Fix fields bug to expose multi-field mappings for aggregation queries
 
 ### Reporting
