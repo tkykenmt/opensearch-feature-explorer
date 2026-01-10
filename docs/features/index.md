@@ -132,6 +132,7 @@
 - [Search Settings](opensearch/search-settings.md)
 - [Scripted Metric Aggregation](opensearch/scripted-metric-aggregation.md)
 - [Search Shard Routing](opensearch/search-shard-routing.md)
+- [Search Tie-breaking](opensearch/search-tie-breaking.md)
 - [Secure Aux Transport Settings](opensearch/secure-aux-transport-settings.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Segment Replication](opensearch/segment-replication.md)
