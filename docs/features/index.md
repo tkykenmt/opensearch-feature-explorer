@@ -107,6 +107,7 @@
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
 - [Streaming Indexing](opensearch/streaming-indexing.md)
+- [Streaming Transport & Aggregation](opensearch/streaming-transport-aggregation.md)
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
 - [Subject Interface](opensearch/subject-interface.md)
 - [System Ingest Pipeline](opensearch/system-ingest-pipeline.md)
