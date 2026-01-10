@@ -17,6 +17,9 @@ graph TB
     subgraph "OpenSearch Cluster"
         subgraph "Coordinator Node"
             WLM[Workload Management Plugin]
+            AF[WLM ActionFilter]
+            RS[Rule Sync Service]
+            TRIE[In-Memory Trie]
             QGS[QueryGroup Service<br/>Resiliency Orchestrator]
         end
         
@@ -31,12 +34,15 @@ graph TB
             DEFAULT[DEFAULT_QUERY_GROUP]
         end
         
-        subgraph "Cluster State"
-            META[QueryGroupMetadata<br/>Persistent Storage]
+        subgraph "Storage"
+            META[QueryGroupMetadata<br/>Cluster State]
+            RULES[.rules System Index]
         end
     end
     
-    CLIENT -->|queryGroupId header| WLM
+    CLIENT -->|Search Request| AF
+    AF -->|Match Attributes| TRIE
+    AF -->|queryGroupId header or auto-tag| WLM
     WLM --> QGS
     QGS --> QG1
     QGS --> QG2
@@ -46,25 +52,30 @@ graph TB
     RC1 -->|Monitor/Cancel| QGS
     RC2 -->|Monitor/Cancel| QGS
     QGS <-->|Persist/Load| META
+    RS -->|Periodic Refresh| RULES
+    RS -->|Update| TRIE
 ```
 
 ### Data Flow
 
 ```mermaid
 flowchart TB
-    A[Search Request] --> B{Has queryGroupId?}
+    A[Search Request] --> B{Has queryGroupId header?}
     B -->|Yes| C[Route to Query Group]
-    B -->|No| D[Route to DEFAULT_QUERY_GROUP]
-    C --> E[Execute Query]
-    D --> E
-    E --> F{Resource Check}
-    F -->|Within Limits| G[Return Results]
-    F -->|Exceeds Limits| H{Resiliency Mode?}
-    H -->|enforced| I[Cancel/Reject Query]
-    H -->|soft + node in duress| I
-    H -->|soft + node OK| G
-    H -->|monitor_only| J[Log & Continue]
-    J --> G
+    B -->|No| D{Rule-based Auto-tagging}
+    D -->|Match Found| E[Apply workload_group from Rule]
+    D -->|No Match| F[Route to DEFAULT_QUERY_GROUP]
+    E --> C
+    C --> G[Execute Query]
+    F --> G
+    G --> H{Resource Check}
+    H -->|Within Limits| I[Return Results]
+    H -->|Exceeds Limits| J{Resiliency Mode?}
+    J -->|enforced| K[Cancel/Reject Query]
+    J -->|soft + node in duress| K
+    J -->|soft + node OK| I
+    J -->|monitor_only| L[Log & Continue]
+    L --> I
 ```
 
 ### Components
@@ -79,6 +90,9 @@ flowchart TB
 | `WlmPaginationStrategy` | Pagination logic for WLM stats with sorting and token management (v3.1.0+) |
 | `Query Group CRUD APIs` | REST APIs for managing query group lifecycle |
 | `DEFAULT_QUERY_GROUP` | Built-in query group for requests without explicit group assignment |
+| `WlmActionFilter` | Transport layer filter for automatic request tagging (v3.1.0+) |
+| `RuleSyncService` | Periodically refreshes in-memory rules from system index (v3.1.0+) |
+| `Rule CRUD APIs` | REST APIs for managing auto-tagging rules (v3.1.0+) |
 
 ### Configuration
 
@@ -239,6 +253,13 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
+| v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | Add Get Rule API for auto-tagging |
+| v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | Add WLM ActionFilter for automatic tagging |
+| v3.1.0 | [#17792](https://github.com/opensearch-project/OpenSearch/pull/17792) | Add Create Rule API |
+| v3.1.0 | [#17797](https://github.com/opensearch-project/OpenSearch/pull/17797) | Add Update Rule API |
+| v3.1.0 | [#18128](https://github.com/opensearch-project/OpenSearch/pull/18128) | Add refresh-based rule synchronization |
+| v3.1.0 | [#18184](https://github.com/opensearch-project/OpenSearch/pull/18184) | Add Delete Rule API |
+| v3.1.0 | [#18488](https://github.com/opensearch-project/OpenSearch/pull/18488) | Bug fix for update rule API |
 | v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | Add cancellation framework changes in WLM |
 | v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | QueryGroup Stats API logic |
 | v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | Add WLM resiliency orchestrator (QueryGroup Service) |
@@ -250,11 +271,14 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 ## References
 
 - [RFC #12342](https://github.com/opensearch-project/OpenSearch/issues/12342): Search Query Sandboxing: User Experience
+- [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC for automated labeling of search requests
 - [Issue #17592](https://github.com/opensearch-project/OpenSearch/issues/17592): Feature request for paginating _wlm/stats API
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Query Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
+- [Workload Management Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Query Group Lifecycle API](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
+- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
+- [Rule Lifecycle API](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ## Change History
 
-- **v3.1.0** (2026-01-10): Added paginated `/_list/wlm_stats` API with token-based pagination, sorting by node_id or workload_group, and configurable page size
+- **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic

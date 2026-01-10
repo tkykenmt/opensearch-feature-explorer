@@ -33,4 +33,5 @@
 - [Security Manager Replacement](features/opensearch/security-manager-replacement.md) - Enhanced Java Agent to intercept newByteChannel from FileSystemProvider
 - [Warm Storage Tiering](features/opensearch/warm-storage-tiering.md) - WarmDiskThresholdDecider and AutoForceMergeManager for hot-to-warm migration
 - [Workload Management](features/opensearch/workload-management.md) - Paginated `/_list/wlm_stats` API with token-based pagination and sorting
+- [Rule-based Auto-tagging](features/opensearch/rule-based-auto-tagging.md) - Automatic workload group assignment based on index patterns and rules
 - [Parallel Shard Refresh](features/opensearch/parallel-shard-refresh.md) - Shard-level refresh scheduling for improved data freshness in remote store indexes
