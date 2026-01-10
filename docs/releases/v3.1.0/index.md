@@ -5,6 +5,7 @@
 ### OpenSearch
 
 - [Approximation Framework](features/opensearch/approximation-framework.md) - BKD traversal optimization for skewed datasets with DFS strategy
+- [Crypto/KMS Plugin](features/opensearch/crypto-kms-plugin.md) - Decoupled plugin initialization and AWS SDK v2.x dependency upgrade
 - [Dependency Bumps](features/opensearch/dependency-bumps.md) - 21 dependency updates including CVE-2025-27820 fix, Netty, Gson, Azure SDK updates
 - [DocRequest Refactoring](features/opensearch/docrequest-refactoring.md) - Generic interface for single-document operations
 - [File Cache](features/opensearch/file-cache.md) - File pinning support and granular statistics for Writable Warm indices
