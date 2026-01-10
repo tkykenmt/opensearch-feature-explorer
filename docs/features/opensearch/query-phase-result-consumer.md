@@ -118,14 +118,17 @@ POST /my-index/_search?batched_reduce_size=256
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19396](https://github.com/opensearch-project/OpenSearch/pull/19396) | Harden the circuit breaker and failure handle logic in query result consumer |
 | v3.3.0 | [#19231](https://github.com/opensearch-project/OpenSearch/pull/19231) | Fix incomplete callback loops in QueryPhaseResultConsumer |
 
 ## References
 
+- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): OpenSearch circuit breaker configuration
 - [Issue #19094](https://github.com/opensearch-project/OpenSearch/issues/19094): Flaky Test Report for SearchPhaseControllerTests
 - [Search API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/search/): OpenSearch Search API reference
 - [Search Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/search-settings/): Search configuration options
 
 ## Change History
 
+- **v3.3.0** (2025-10-02): Hardened circuit breaker logic with proactive memory checks before consuming results; centralized failure handling in `onFailure` method; renamed classes for clarity (`PendingMerges` → `PendingReduces`, `MergeTask` → `ReduceTask`, `MergeResult` → `ReduceResult`)
 - **v3.3.0** (2025-09-04): Fixed incomplete callback loops by adding graceful failure handling, clearing pending merge tasks on failure, and properly canceling tasks when failures are detected
