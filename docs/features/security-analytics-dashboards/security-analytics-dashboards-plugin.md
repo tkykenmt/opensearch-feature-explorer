@@ -91,6 +91,10 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.18.0 | [#1169](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1169) | Update category to flatten menus in analytics(all) use case |
+| v2.18.0 | [#1174](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1174) | Fit and Finish UX Fixes |
+| v2.18.0 | [#1175](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1175) | Security analytics overview page improvements |
+| v2.18.0 | [#1197](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1197) | Added HOURS option for source refresh interval |
 | v2.18.0 | [#1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160) | Fix findings page crash and rule severity correctness |
 | v2.18.0 | [#1186](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1186) | Avoid showing unhelpful error toast when datasource is not yet selected |
 | v2.18.0 | [#1188](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1188) | Update getting started cards content and visual design |
@@ -120,6 +124,7 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 ## Change History
 
+- **v2.18.0** (2024-11-12): Comprehensive UX improvements including navigation menu restructuring for Analytics (All) use case, standardized UI spacing and typography (H3 titles, 16px padding), compressed search bars and filters, context-aware page titles, improved button placement with bulk delete and plus icons, tabs moved to top of Alerts/Findings pages, HOURS option for source refresh interval
 - **v2.18.0** (2024-11-12): Findings page stability fixes including crash prevention when custom rules are deleted and correct severity display for multi-rule findings; Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
 - **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
 - **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements
