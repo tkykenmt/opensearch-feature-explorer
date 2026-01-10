@@ -20,6 +20,7 @@
 - [Netty Arena Settings](features/opensearch/netty-arena-settings.md)
 - [NRT Replication Engine](features/opensearch/nrt-replication-engine.md)
 - [OOM Prevention](features/opensearch/oom-prevention.md)
+- [Painless Scripting](features/opensearch/painless-scripting.md)
 - [Plugin Installation](features/opensearch/plugin-installation.md)
 - [Query Phase Fixes](features/opensearch/query-phase-fixes.md)
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md)
