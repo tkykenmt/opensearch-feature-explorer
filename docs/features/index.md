@@ -29,6 +29,7 @@
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [DocRequest Refactoring](opensearch/docrequest-refactoring.md)
 - [Dynamic Settings](opensearch/dynamic-settings.md)
+- [Field Data Cache](opensearch/field-data-cache.md)
 - [File Cache](opensearch/file-cache.md)
 - [Cluster Permissions](opensearch/cluster-permissions.md)
 - [Flat Object Field](opensearch/flat-object-field.md)
