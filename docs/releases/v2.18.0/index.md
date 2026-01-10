@@ -42,6 +42,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Dynamic Threadpool Resize](features/opensearch/dynamic-threadpool-resize.md) - Runtime thread pool size adjustment via cluster settings API
 - [Async Shard Fetch Metrics](features/opensearch/async-shard-fetch-metrics.md) - OTel counter metrics for async shard fetch success and failure tracking
 - [Search API Enhancements](features/opensearch/search-api-enhancements.md) - WithFieldName interface for aggregation/sort builders and successfulSearchShardIndices in SearchRequestContext
+- [Offline Nodes](features/opensearch/offline-nodes.md) - New offline-tasks library with core abstractions for running background tasks on dedicated offline nodes
 
 ### OpenSearch Dashboards
 
