@@ -16,6 +16,7 @@
 ## opensearch
 
 - [Approximation Framework](opensearch/approximation-framework.md)
+- [Aggregation Task Cancellation](opensearch/aggregation-task-cancellation.md)
 - [Async Shard Batch Fetch](opensearch/async-shard-batch-fetch.md)
 - [Async Shard Fetch Metrics](opensearch/async-shard-fetch-metrics.md)
 - [Automata & Regex Optimization](opensearch/automata-regex-optimization.md)
