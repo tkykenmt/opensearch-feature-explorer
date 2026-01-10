@@ -162,6 +162,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Dashboards Notifications
 
 - [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md) - Fix default data source selection, typo fixes, CI workflow updates
+- [Notifications Fit & Finish](features/dashboards-notifications/notifications-fit-and-finish.md) - UX improvements: semantic headers, consistent text sizes, smaller context menus, spacing standardization, full-width content
 
 ### Job Scheduler
 
