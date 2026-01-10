@@ -255,6 +255,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Security FIPS Compliance](features/security/security-fips-compliance.md) | enhancement | Full FIPS 140-2 compliance with BC-FIPS libraries and OpenSAML shadow JAR isolation |
 | [Security Performance Optimization](features/security/security-performance-optimization.md) | enhancement | Precomputed privileges toggle and optimized wildcard matching |
 | [Star Tree Security Integration](features/security/star-tree-security-integration.md) | enhancement | Disable star-tree optimization for users with DLS/FLS/Field Masking restrictions |
+| [Security Plugin Enhancements](features/security/security-plugin-enhancements.md) | enhancement | Nested JWT claims, stream transport integration, plugin permissions, tenancy access, bug fixes |
 
 ### Common (Security)
 
