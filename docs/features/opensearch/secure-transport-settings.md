@@ -2,7 +2,7 @@
 
 ## Summary
 
-The `SecureTransportSettingsProvider` interface provides security-related settings for OpenSearch transport layer communication. It allows security plugins to configure SSL/TLS settings, exception handlers, and dynamic transport parameters for secure node-to-node and client-to-node communication.
+The `SecureTransportSettingsProvider` and `SecureHttpTransportSettingsProvider` interfaces provide security-related settings for OpenSearch transport layer communication. They allow security plugins to configure SSL/TLS settings, exception handlers, and dynamic transport parameters for secure node-to-node and client-to-node communication.
 
 ## Details
 
@@ -12,6 +12,7 @@ The `SecureTransportSettingsProvider` interface provides security-related settin
 graph TB
     subgraph "OpenSearch Core"
         A[NetworkModule] --> B[SecureNetty4Transport]
+        A --> B2[ReactorNetty4HttpServerTransport]
         B --> C[SSLServerChannelInitializer]
         B --> D[SSLClientChannelInitializer]
     end
@@ -19,7 +20,9 @@ graph TB
     subgraph "Security Plugin"
         E[OpenSearchSecurityPlugin] --> F[OpenSearchSecureSettingsFactory]
         F --> G[SecureTransportSettingsProvider]
+        F --> G2[SecureHttpTransportSettingsProvider]
         H[SSLConfig] --> G
+        H --> G2
     end
     
     subgraph "Configuration Sources"
@@ -28,6 +31,7 @@ graph TB
     end
     
     G --> B
+    G2 --> B2
     C --> K[DualModeSslHandler]
     D --> L[SSL Engine]
 ```
@@ -37,19 +41,25 @@ graph TB
 ```mermaid
 flowchart LR
     A[Cluster Settings Update] --> B[SSLConfig Listener]
-    B --> C[Update dualModeEnabled]
-    C --> D[SecureTransportSettingsProvider.parameters]
-    D --> E[SecureNetty4Transport]
-    E --> F[Apply to new connections]
+    B --> C[Update Parameters]
+    C --> D1[SecureTransportSettingsProvider.parameters]
+    C --> D2[SecureHttpTransportSettingsProvider.parameters]
+    D1 --> E1[SecureNetty4Transport]
+    D2 --> E2[ReactorNetty4HttpServerTransport]
+    E1 --> F[Apply to new connections]
+    E2 --> F
 ```
 
 ### Components
 
 | Component | Description |
 |-----------|-------------|
-| `SecureTransportSettingsProvider` | Interface for providing security settings to transport layer |
-| `SecureTransportParameters` | Interface for dynamic transport parameters (e.g., dual mode) |
+| `SecureTransportSettingsProvider` | Interface for providing security settings to inter-node transport layer |
+| `SecureHttpTransportSettingsProvider` | Interface for providing security settings to HTTP transport layer |
+| `SecureTransportParameters` | Interface for dynamic inter-node transport parameters (e.g., dual mode) |
+| `SecureHttpTransportParameters` | Interface for dynamic HTTP transport SSL parameters |
 | `DefaultSecureTransportParameters` | Default implementation reading from static settings |
+| `DefaultSecureHttpTransportParameters` | Default implementation returning empty/default values |
 | `SecureNetty4Transport` | Netty-based secure transport implementation |
 | `DualModeSslHandler` | Handler for SSL dual mode (mixed SSL/non-SSL connections) |
 | `SSLConfig` | Security plugin class managing SSL configuration with cluster settings listener |
@@ -60,8 +70,11 @@ flowchart LR
 |---------|-------------|---------|
 | `plugins.security_config.ssl_dual_mode_enabled` | Enable SSL dual mode for mixed SSL/non-SSL transport | `false` |
 | `plugins.security.ssl_only` | Run security plugin in SSL-only mode | `false` |
+| `http.type` | HTTP transport type (use `reactor-netty4-secure` for secure reactor netty) | `netty4` |
 
-### Interface Definition
+### Interface Definitions
+
+#### SecureTransportSettingsProvider
 
 ```java
 @ExperimentalApi
@@ -92,6 +105,48 @@ public interface SecureTransportSettingsProvider {
     @ExperimentalApi
     interface SecureTransportParameters {
         boolean dualModeEnabled();
+        Optional<KeyManagerFactory> keyManagerFactory();
+        Optional<String> sslProvider();
+        Optional<String> clientAuth();
+        Collection<String> protocols();
+        Collection<String> cipherSuites();
+        Optional<TrustManagerFactory> trustManagerFactory();
+    }
+}
+```
+
+#### SecureHttpTransportSettingsProvider
+
+```java
+@ExperimentalApi
+public interface SecureHttpTransportSettingsProvider {
+    
+    // Get HTTP transport adapter providers
+    default Collection<TransportAdapterProvider<HttpServerTransport>> getHttpTransportAdapterProviders(Settings settings) {
+        return Collections.emptyList();
+    }
+    
+    // Get dynamic HTTP transport parameters (added in v3.2.0)
+    default Optional<SecureHttpTransportParameters> parameters(Settings settings) {
+        return Optional.of(new DefaultSecureHttpTransportParameters());
+    }
+    
+    // Build exception handler for HTTP transport errors
+    Optional<TransportExceptionHandler> buildHttpServerExceptionHandler(
+        Settings settings, HttpServerTransport transport);
+    
+    // Build SSL engine for HTTP server transport
+    Optional<SSLEngine> buildSecureHttpServerEngine(
+        Settings settings, HttpServerTransport transport) throws SSLException;
+    
+    @ExperimentalApi
+    interface SecureHttpTransportParameters {
+        Optional<KeyManagerFactory> keyManagerFactory();
+        Optional<String> sslProvider();
+        Optional<String> clientAuth();
+        Collection<String> protocols();
+        Collection<String> cipherSuites();
+        Optional<TrustManagerFactory> trustManagerFactory();
     }
 }
 ```
@@ -112,25 +167,37 @@ curl -XPUT https://localhost:9200/_cluster/settings \
   -d '{"persistent": {"plugins.security_config.ssl_dual_mode_enabled": false}}'
 ```
 
+Enable reactor-netty secure HTTP transport:
+
+```yaml
+# opensearch.yml
+http.type: reactor-netty4-secure
+```
+
 ## Limitations
 
-- `SecureTransportParameters` interface is marked as `@ExperimentalApi` and may change
-- Currently only exposes `dualModeEnabled()` parameter
+- Both `SecureTransportParameters` and `SecureHttpTransportParameters` interfaces are marked as `@ExperimentalApi` and may change
 - Dynamic updates only affect new connections; existing connections are not affected
+- The `SecureHttpTransportParameters` default implementation returns empty values, requiring plugins to provide actual configuration
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18572](https://github.com/opensearch-project/OpenSearch/pull/18572) | Introduce SecureHttpTransportParameters experimental API |
 | v2.18.0 | [#16387](https://github.com/opensearch-project/OpenSearch/pull/16387) | Add method to return dynamic SecureTransportParameters |
 | v2.18.0 | [#4820](https://github.com/opensearch-project/security/pull/4820) | Security plugin: propagate dual mode from cluster settings |
 
 ## References
 
-- [PR #16387](https://github.com/opensearch-project/OpenSearch/pull/16387): Core implementation
+- [PR #18572](https://github.com/opensearch-project/OpenSearch/pull/18572): SecureHttpTransportParameters implementation
+- [PR #16387](https://github.com/opensearch-project/OpenSearch/pull/16387): SecureTransportParameters implementation
+- [Issue #18559](https://github.com/opensearch-project/OpenSearch/issues/18559): HTTP/2 communication bug with reactor-netty
 - [Security PR #4820](https://github.com/opensearch-project/security/pull/4820): Security plugin implementation
-- [TLS Configuration](https://docs.opensearch.org/2.18/security/configuration/tls/): Official TLS documentation
+- [Network Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration documentation
+- [TLS Configuration](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS documentation
 
 ## Change History
 
+- **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface to `SecureHttpTransportSettingsProvider` for cleaner SSL configuration in Reactor Netty 4 HTTP transport
 - **v2.18.0** (2024-10-29): Added `parameters()` method and `SecureTransportParameters` interface to support dynamic SSL dual mode settings
