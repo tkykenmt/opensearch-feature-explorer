@@ -84,6 +84,7 @@
 
 ### ML Commons
 
+- [Agent Framework](features/ml-commons/ml-commons-agent-framework.md) - Update Agent API, MCP tools persistence, function calling for LLM interfaces, custom SSE endpoint, metrics framework integration, multiple bug fixes
 - [Connector/Model Validation Bug Fixes](features/ml-commons/connector-model-validation.md) - Input validation for names/descriptions, schema string type preservation, connector retry policy NPE fix, MCP tool memory fix, Bedrock DeepSeek format fix
 - [ML Commons Maintenance](features/ml-commons/ml-commons-maintenance.md) - Hidden model security, enhanced logging, HTTP client alignment, SearchIndexTool MCP compatibility, CVE fixes
 - [MCP (Model Context Protocol)](features/ml-commons/mcp-(model-context-protocol).md) - MCP SDK downgrade to 0.9.0 and unit test coverage
