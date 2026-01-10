@@ -52,6 +52,9 @@ graph TB
 | `MLNodeUtils.processRemoteInferenceInputDataSetParametersValue()` | Processes input parameters while respecting schema-defined types |
 | `UpdateModelTransportAction` | Handles model updates with connector validation |
 | `TransportMcpToolsRemoveOnNodesAction` | Manages MCP tool registration/removal with memory synchronization |
+| `ConnectorAction.validatePrePostProcessFunctions()` | Validates pre/post-process functions match target LLM service |
+| `ConnectorAction.getRemoteServerFromURL()` | Extracts remote server type from URL for function validation |
+| `ConnectorUtils.buildSdkRequest()` | Validates URI and provides clear error messages for invalid endpoints |
 
 ### Input Validation
 
@@ -159,6 +162,8 @@ With this schema, a prediction request with `"inputText": "5.11"` will correctly
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#3579](https://github.com/opensearch-project/ml-commons/pull/3579) | Enhance validation for create connector API - pre/post-process function validation |
+| v3.2.0 | [#3972](https://github.com/opensearch-project/ml-commons/pull/3972) | Add validation for creating URI in connectors - improved error messages |
 | v3.1.0 | [#3805](https://github.com/opensearch-project/ml-commons/pull/3805) | Add validation for name and description for model, model group, and connector resources |
 | v3.1.0 | [#3761](https://github.com/opensearch-project/ml-commons/pull/3761) | Don't convert schema-defined strings to other types during validation |
 | v3.1.0 | [#3909](https://github.com/opensearch-project/ml-commons/pull/3909) | Fixed NPE for connector retrying policy |
@@ -167,13 +172,17 @@ With this schema, a prediction request with `"inputText": "5.11"` will correctly
 
 ## References
 
+- [Issue #2993](https://github.com/opensearch-project/ml-commons/issues/2993): Enhance validation for create connector API
+- [Issue #3921](https://github.com/opensearch-project/ml-commons/issues/3921): Agent run failed with unclear error when URL is invalid
 - [Issue #3639](https://github.com/opensearch-project/ml-commons/issues/3639): Enhance Input Validation for UpdateModel and UpdateModelGroup APIs
 - [Issue #3758](https://github.com/opensearch-project/ml-commons/issues/3758): Model interface validation failed when there is integer within text
 - [Issue #3906](https://github.com/opensearch-project/ml-commons/issues/3906): Gracefully handle error when user attempts to update retry_policy
 - [Update Model API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/update-model/)
 - [Update Connector API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/update-connector/)
 - [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
+- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/)
 
 ## Change History
 
+- **v3.2.0** (2025-07): Added pre/post-process function validation for connectors, improved URI validation with clearer error messages
 - **v3.1.0** (2025-06): Added input validation for name/description fields, fixed schema string type preservation, fixed connector retry policy NPE, fixed MCP tool memory synchronization, fixed Bedrock DeepSeek tool result format
