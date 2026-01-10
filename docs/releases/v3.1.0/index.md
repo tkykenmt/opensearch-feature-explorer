@@ -49,6 +49,7 @@
 ### Security
 
 - [Security Backend Bug Fixes](features/security/security-backend-bug-fixes.md) - Stale cache post snapshot restore, compliance audit log diff, DLS/FLS filter reader, auth header logging, password reset UI, forecasting permissions
+- [Security Cache Management](features/security/security-cache-management.md) - Selective user cache invalidation endpoint and dynamic cache TTL configuration
 - [Security Debugging](features/security/security-debugging.md) - Enhanced error messages for "Security not initialized" with cluster manager status
 - [Security Dependency Updates](features/security/security-dependency-updates.md) - 24 dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, and CVE-2024-52798 fix
 - [Security Performance Improvements](features/security/security-performance-improvements.md) - Immutable User object with serialization caching for reduced inter-node communication overhead
