@@ -123,10 +123,11 @@ Each batch returns a separate JSON response:
 
 | Version | PR | Description |
 |---------|-----|-------------|
-| v2.15.0 | [#13772](https://github.com/opensearch-project/OpenSearch/pull/13772) | Enhance RestAction with request/response streaming support |
-| v2.17.0 | [#15381](https://github.com/opensearch-project/OpenSearch/pull/15381) | Introduce bulk HTTP API streaming flavor |
-| v2.18.0 | [#16158](https://github.com/opensearch-project/OpenSearch/pull/16158) | Fix streaming bulk request hangs |
+| v3.2.0 | [#18599](https://github.com/opensearch-project/OpenSearch/pull/18599) | Fix HTTP/2 communication when reactor-netty is enabled |
 | v2.18.0 | [#16337](https://github.com/opensearch-project/OpenSearch/pull/16337) | Fix intermittent newline termination failures |
+| v2.18.0 | [#16158](https://github.com/opensearch-project/OpenSearch/pull/16158) | Fix streaming bulk request hangs |
+| v2.17.0 | [#15381](https://github.com/opensearch-project/OpenSearch/pull/15381) | Introduce bulk HTTP API streaming flavor |
+| v2.15.0 | [#13772](https://github.com/opensearch-project/OpenSearch/pull/13772) | Enhance RestAction with request/response streaming support |
 
 ## References
 
@@ -137,6 +138,7 @@ Each batch returns a separate JSON response:
 
 ## Change History
 
+- **v3.2.0** (2025-07-15): Fix HTTP/2 communication when reactor-netty-secure is enabled
 - **v2.18.0** (2024-11-05): Bug fixes for request hangs and newline termination errors
 - **v2.17.0** (2024-09-17): Initial release of Streaming Bulk API
 - **v2.15.0** (2024-06-25): RestAction streaming support foundation
