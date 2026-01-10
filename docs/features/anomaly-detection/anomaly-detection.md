@@ -236,6 +236,8 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 | v3.0.0 | [#1424](https://github.com/opensearch-project/anomaly-detection/pull/1424) | Fix breaking changes for 3.0.0 release |
 | v3.0.0 | [#1450](https://github.com/opensearch-project/anomaly-detection/pull/1450) | Java Agent migration (SecurityManager removal) |
 | v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Dual cluster gradle run for development |
+| v2.18.0 | [#1341](https://github.com/opensearch-project/anomaly-detection/pull/1341) | Add rule validation in AnomalyDetector constructor |
+| v2.18.0 | [#1334](https://github.com/opensearch-project/anomaly-detection/pull/1334) | Bump RCF version and fix default rules bug |
 | v2.18.0 | [#887](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/887) | Fix custom result index session not rendering issue |
 | v2.18.0 | [#889](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/889) | Fix historical analysis route and custom result index reset |
 | v2.18.0 | [#898](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/898) | Fix preview not considering rules and imputation options |
@@ -257,6 +259,6 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 ## Change History
 
 - **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
-- **v2.18.0** (2024-11-05): Dashboards bugfixes for custom result index rendering, historical analysis route path, custom result index field reset, and preview support for suppression rules and imputation options
+- **v2.18.0** (2024-11-05): Added suppression rule validation in AnomalyDetector constructor for immediate feedback on configuration errors, fixed default rules bug when empty ruleset provided, upgraded RCF to v4.2.0, Dashboards bugfixes for custom result index rendering, historical analysis route path, custom result index field reset, and preview support for suppression rules and imputation options
 - **v2.17.0** (2024-09-17): Fixed inference logic with new `lastSeenExecutionEndTime` tracking, standardized config index mapping (`defaultFill` → `default_fill`), improved null checks for imputation options, bugfixes for real-time/historical task flag management, null aggregation handling, Dashboards data source integration
 - **v2.x**: High-cardinality detection, historical analysis, custom result indices
