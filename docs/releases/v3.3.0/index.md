@@ -4,6 +4,7 @@
 
 ### OpenSearch
 
+- [Aggregation Optimizations](features/opensearch/aggregation-optimizations.md)
 - [Alias Write Index Policy](features/opensearch/alias-write-index-policy.md)
 - [Client API Enhancements](features/opensearch/client-api-enhancements.md)
 - [Cardinality Aggregation](features/opensearch/cardinality-aggregation.md)
