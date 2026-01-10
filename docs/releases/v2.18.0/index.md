@@ -8,6 +8,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
+- [List APIs (Paginated)](features/opensearch/list-apis-paginated.md) - New `_list/indices` and `_list/shards` APIs with pagination support, plus cat API response limits
 - [Cluster Stats API](features/opensearch/cluster-stats-api.md) - URI path filtering support for selective metric retrieval
 - [OpenSearch Core Dependencies](features/opensearch/opensearch-core-dependencies.md) - 26 dependency updates including Lucene 9.12.0, Netty 4.1.114, gRPC 1.68.0, Protobuf 3.25.5
 - [Cluster State Management](features/opensearch/cluster-state-management.md) - Fix voting configuration mismatch by updating lastSeenClusterState in commit phase
