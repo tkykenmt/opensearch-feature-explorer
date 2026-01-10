@@ -4050,7 +4050,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1425
     },
     {
       "name": "Concurrent Segment Search",
@@ -4064,7 +4065,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1426
     },
     {
       "name": "Cross-Cluster Settings",
@@ -4078,7 +4080,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1427
     },
     {
       "name": "S3 Repository",
@@ -4092,7 +4095,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1428
     },
     {
       "name": "NRT Replication Engine",
@@ -4106,7 +4110,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1429
     },
     {
       "name": "Query Phase Fixes",
@@ -4120,7 +4125,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1430
     },
     {
       "name": "Scaled Float Field",
@@ -4134,7 +4140,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1431
     },
     {
       "name": "Reindex API",
@@ -4148,7 +4155,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1432
     },
     {
       "name": "Alias Write Index Policy",
@@ -4162,7 +4170,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1433
     },
     {
       "name": "Request Cache",
@@ -4182,7 +4191,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1434
     },
     {
       "name": "Cardinality Aggregation",
@@ -4196,7 +4206,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1435
     },
     {
       "name": "Reactor Netty Transport",
@@ -4210,7 +4221,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1436
     },
     {
       "name": "Cluster State Caching",
@@ -4224,7 +4236,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1437
     },
     {
       "name": "Store Subdirectory Module",
@@ -4238,7 +4251,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1438
     },
     {
       "name": "Netty Arena Settings",
@@ -4252,7 +4266,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1439
     },
     {
       "name": "Search Stats",
@@ -4266,7 +4281,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1440
     },
     {
       "name": "Derived Fields",
@@ -4280,7 +4296,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1441
     },
     {
       "name": "Terms Query Rewriting",
@@ -4294,7 +4311,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 1442
     },
     {
       "name": "OpenSearch Dashboards Explore",
@@ -4398,7 +4416,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1443
     },
     {
       "name": "OpenSearch Dashboards Plugin Compatibility",
@@ -4418,7 +4437,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 1444
     },
     {
       "name": "OpenSearch Dashboards Banner Extensibility",
