@@ -68,6 +68,9 @@ flowchart TB
 | `KNNCircuitBreaker` | Prevents OOM by limiting memory usage |
 | `RemoteNativeIndexBuildStrategy` | Offloads index building to remote infrastructure |
 | `RemoteIndexClient` | HTTP client for remote build service communication |
+| `QuantizedKNNVectorValues` | Abstraction for quantized vector values (v3.2.0+) |
+| `FaissIndexBQ` | Faiss struct supporting ADC with full-precision queries (v3.2.0+) |
+| `QFrameBitEncoder` | Binary encoder with random rotation support (v3.2.0+) |
 
 ### Supported Engines
 
@@ -95,6 +98,14 @@ flowchart TB
 | `knn.memory.circuit_breaker.limit.<tier>` | Node-specific limit by tier (v3.0.0+) | Cluster default |
 | `knn.cache.item.expiry.enabled` | Enable cache expiry | `false` |
 | `knn.cache.item.expiry.minutes` | Cache expiry time | `180` |
+| `knn.index_thread_qty` | Index thread quantity (dynamic in v3.2.0+) | 1 (4 for 32+ cores) |
+
+#### Binary Quantization Settings (v3.2.0+)
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `encoder.parameters.enable_adc` | Enable Asymmetric Distance Computation | `false` |
+| `encoder.parameters.enable_random_rotation` | Enable random rotation for binary quantization | `false` |
 
 #### Remote Index Build Settings (v3.0.0+)
 
@@ -212,6 +223,13 @@ PUT /_cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#2819](https://github.com/opensearch-project/k-NN/pull/2819) | Support GPU indexing for FP16, Byte and Binary |
+| v3.2.0 | [#2718](https://github.com/opensearch-project/k-NN/pull/2718) | Add random rotation feature to binary encoder |
+| v3.2.0 | [#2733](https://github.com/opensearch-project/k-NN/pull/2733) | Asymmetric Distance Computation (ADC) for binary quantized faiss indices |
+| v3.2.0 | [#2817](https://github.com/opensearch-project/k-NN/pull/2817) | Extend transport-grpc module to support GRPC KNN queries |
+| v3.2.0 | [#2824](https://github.com/opensearch-project/k-NN/pull/2824) | Add nested search support for IndexBinaryHNSWCagra |
+| v3.2.0 | [#2806](https://github.com/opensearch-project/k-NN/pull/2806) | Dynamic index thread quantity defaults based on processor sizes |
+| v3.2.0 | [#2810](https://github.com/opensearch-project/k-NN/pull/2810) | Fix @ collision in NativeMemoryCacheKeyHelper |
 | v3.1.0 | [#2735](https://github.com/opensearch-project/k-NN/pull/2735) | Integrate LuceneOnFaiss memory-optimized search into KNNWeight |
 | v3.1.0 | [#2709](https://github.com/opensearch-project/k-NN/pull/2709) | Add rescore to Lucene Vector Search Query |
 | v3.1.0 | [#2750](https://github.com/opensearch-project/k-NN/pull/2750) | Update rescore context for 4X Compression |
@@ -258,9 +276,15 @@ PUT /_cluster/settings
 - [Issue #2193](https://github.com/opensearch-project/k-NN/issues/2193): Fix k-NN build due to lucene upgrade
 - [Issue #2134](https://github.com/opensearch-project/k-NN/issues/2134): Regression in cohere-10m force merge latency
 - [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Release overview
+- [Issue #2796](https://github.com/opensearch-project/k-NN/issues/2796): GPU indexing RFC
+- [Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): ADC and Random Rotation RFC
+- [Issue #2816](https://github.com/opensearch-project/k-NN/issues/2816): gRPC k-NN support
+- [Binary Quantization Documentation](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/binary-quantization/): Binary quantization guide
+- [ADC Blog Post](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/): ADC technical deep-dive
 
 ## Change History
 
+- **v3.2.0** (2025-10-01): GPU indexing support for FP16, Byte, and Binary vectors via Cagra2; Asymmetric Distance Computation (ADC) for improved recall on binary quantized indices; random rotation feature for binary encoder; gRPC support for k-NN queries; nested search support for IndexBinaryHNSWCagra; dynamic index thread quantity defaults (4 threads for 32+ core machines); NativeMemoryCacheKeyHelper @ collision fix
 - **v3.1.0** (2025-07-15): Memory-optimized search (LuceneOnFaiss) integration into KNNWeight with layered architecture; rescore support for Lucene engine; 4x compression rescore context optimization; derived source indexing optimization; script scoring performance improvement for binary vectors; TopDocs refactoring for search results
 - **v3.0.0** (2025-05-06): Breaking changes removing deprecated index settings; node-level circuit breakers; filter function in KNNQueryBuilder; concurrency optimizations for graph loading; Remote Native Index Build foundation
 - **v2.18.0** (2024-11-05): Lucene 9.12 codec compatibility (KNN9120Codec); force merge performance optimization for non-quantization cases (~20% improvement); removed deprecated benchmarks folder; code refactoring improvements
