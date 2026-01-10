@@ -252,6 +252,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 
 | Item | Category | Description |
 |------|----------|-------------|
+| [Permission Validation](features/security/permission-validation.md) | feature | Query parameter to check API permissions without executing the request |
 | [Auxiliary Transport SSL](features/security/auxiliary-transport-ssl.md) | feature | TLS support for auxiliary transports (gRPC, etc.) with per-transport SSL configuration |
 | [Security FIPS Compliance](features/security/security-fips-compliance.md) | enhancement | Full FIPS 140-2 compliance with BC-FIPS libraries and OpenSAML shadow JAR isolation |
 | [Security Performance Optimization](features/security/security-performance-optimization.md) | enhancement | Precomputed privileges toggle and optimized wildcard matching |
