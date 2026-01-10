@@ -130,6 +130,10 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 - [Anomaly Detection Dependencies](features/anomaly-detection/anomaly-detection-dependencies.md) - Dependency updates (Jackson 2.18.0, JUnit Jupiter 5.11.2, Mockito 5.14.1) and removal of unused javassist dependency
 
+### Anomaly Detection Dashboards
+
+- [Anomaly Detection Bugfixes](features/anomaly-detection-dashboards/anomaly-detection-bugfixes.md) - Bug fixes for custom result index rendering, historical analysis route, and preview support for rules and imputation
+
 ### Security Analytics
 
 - [Security Analytics System Indices](features/security-analytics/security-analytics-system-indices.md) - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix
