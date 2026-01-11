@@ -183,7 +183,7 @@ GET /<index>/ingestion/_state
 | `total_consumer_error_count` | Consumer-level errors |
 | `total_poller_message_failure_count` | Poller message failures |
 | `total_poller_message_dropped_count` | Messages dropped by poller |
-| `total_duplicate_message_skipped_count` | Duplicate messages skipped |
+| `total_duplicate_message_skipped_count` | Duplicate messages skipped (deprecated in v3.4.0) |
 | `lag_in_millis` | Ingestion lag in milliseconds |
 
 ## Limitations
@@ -193,11 +193,14 @@ GET /<index>/ingestion/_state
 - Index shards must be >= stream partitions
 - Traditional REST API ingestion disabled for pull-based indexes
 - Consumer reset only works when ingestion is paused
+- Provides at-least-once processing guarantees (use versioning for exactly-once semantics)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19607](https://github.com/opensearch-project/OpenSearch/pull/19607) | Fix out-of-bounds offset scenarios and remove persisted offsets |
+| v3.4.0 | [#19757](https://github.com/opensearch-project/OpenSearch/pull/19757) | Fix file-based ingestion consumer start point handling |
 | v3.3.0 | [#19316](https://github.com/opensearch-project/OpenSearch/pull/19316) | Support all-active mode in pull-based ingestion |
 | v3.3.0 | [#19320](https://github.com/opensearch-project/OpenSearch/pull/19320) | Fix ingestion state XContent serialization and fail fast on parsing errors |
 | v3.3.0 | [#19393](https://github.com/opensearch-project/OpenSearch/pull/19393) | Fix lag metric when streaming source is empty |
@@ -213,6 +216,8 @@ GET /<index>/ingestion/_state
 
 ## References
 
+- [Issue #19591](https://github.com/opensearch-project/OpenSearch/issues/19591): Duplicate/old message skipping bug
+- [Issue #19723](https://github.com/opensearch-project/OpenSearch/issues/19723): File-based ingestion flaky test
 - [Issue #19287](https://github.com/opensearch-project/OpenSearch/issues/19287): All-active mode feature request
 - [Issue #19286](https://github.com/opensearch-project/OpenSearch/issues/19286): XContent serialization bug
 - [Issue #17077](https://github.com/opensearch-project/OpenSearch/issues/17077): Metrics for pull-based ingestion
@@ -224,6 +229,7 @@ GET /<index>/ingestion/_state
 
 ## Change History
 
+- **v3.4.0**: Fixed out-of-bounds offset handling by setting Kafka `auto.offset.reset` to `none` by default. Removed persisted pointers concept to fix correctness issues during consumer rewind. Pull-based ingestion now provides at-least-once processing guarantees. Deprecated `totalDuplicateMessageSkippedCount` metric. Fixed file-based ingestion consumer to track line numbers when start point exceeds file length.
 - **v3.3.0**: Added all-active ingestion mode enabling replica shards to independently ingest from streaming sources. Fixed ingestion state XContent serialization for remote cluster state compatibility. Fixed lag metric calculation when streaming source is empty. Fixed pause state initialization during replica promotion. Added fail-fast behavior for mapper/parsing errors.
 - **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
 - **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.

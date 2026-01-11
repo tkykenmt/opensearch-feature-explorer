@@ -35,6 +35,7 @@
 - [Cluster State & Allocation Bugfixes](features/opensearch/cluster-state-allocation-bugfixes.md) - Fix concurrent modification in allocation filters and version compatibility in remote state
 - [Data Stream & Index Template Bugfixes](features/opensearch/data-stream-index-template-bugfixes.md) - Fix deletion of unused index templates matching data streams with lower priority
 - [GRPC Transport Bugfixes](features/opensearch/grpc-transport-bugfixes.md) - Fix ClassCastException for large requests, Bulk API fixes, and node bootstrap with streaming transport
+- [Pull-based Ingestion Bugfixes](features/opensearch/pull-based-ingestion-bugfixes.md) - Fix out-of-bounds offset handling and remove persisted pointers for at-least-once guarantees
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md) - Fix HTTP channel tracking and release during node shutdown
 - [Snapshot & Restore Bugfixes](features/opensearch/snapshot-restore-bugfixes.md) - Fix NullPointerException when restoring remote snapshot with missing shard size information
 
