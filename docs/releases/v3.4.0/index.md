@@ -119,4 +119,5 @@
 ### Multi-Repository
 
 - [Dependency Updates](features/multi-repo/dependency-updates.md) - 28 dependency updates across 7 repositories addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
+- [JDK 25 & Gradle 9.2 Upgrades](features/multi-plugin/jdk-25-gradle-9.2-upgrades.md) - Coordinated Gradle 9.2 and JDK 25 upgrades across 24 plugin repositories
 - [Version Increments](features/multi-repo/version-increments.md) - Version bump to 3.4.0 across index-management, notifications, and dashboards-notifications

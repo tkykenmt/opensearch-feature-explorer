@@ -48,7 +48,7 @@ graph TB
 
 | Setting | Description | Current Value |
 |---------|-------------|---------------|
-| Gradle Version | Build tool version | 9.1.0 |
+| Gradle Version | Build tool version | 9.2.0 (plugins), 9.1.0 (core) |
 | JDK (Bundled) | Bundled JDK version | 25.0.1+8 |
 | JDK (Runtime) | Minimum runtime JDK | 21 |
 | JDK Vendor | JDK distribution | Adoptium Temurin |
@@ -101,6 +101,14 @@ jobs:
 |---------|-----|------------|-------------|
 | v3.4.0 | [#19575](https://github.com/opensearch-project/OpenSearch/pull/19575) | OpenSearch | Update to Gradle 9.1 |
 | v3.4.0 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | OpenSearch | Update bundled JDK to JDK-25 |
+| v3.4.0 | [#2984](https://github.com/opensearch-project/k-NN/pull/2984) | k-NN | Gradle 9.2.0 and GitHub Actions JDK 25 Upgrade |
+| v3.4.0 | [#1995](https://github.com/opensearch-project/alerting/pull/1995) | alerting | JDK upgrade to 25 and gradle upgrade to 9.2 |
+| v3.4.0 | [#4465](https://github.com/opensearch-project/ml-commons/pull/4465) | ml-commons | Update JDK to 25 and Gradle to 9.2 |
+| v3.4.0 | [#1667](https://github.com/opensearch-project/neural-search/pull/1667) | neural-search | Update to Gradle 9.2 and run CI checks with JDK 25 |
+| v3.4.0 | [#1618](https://github.com/opensearch-project/security/pull/1618) | security | JDK upgrade to 25 and gradle upgrade to 9.2 |
+| v3.4.0 | [#1534](https://github.com/opensearch-project/index-management/pull/1534) | index-management | Upgrade gradle to 9.2.0 and github actions JDK 25 |
+| v3.4.0 | [#1101](https://github.com/opensearch-project/notifications/pull/1101) | notifications | Upgrade Gradle to 9.2 and github actions to support java 25 |
+| v3.4.0 | [#1623](https://github.com/opensearch-project/anomaly-detection/pull/1623) | anomaly-detection | Update CI to JDK 25 and gradle to 9.2 |
 | v3.2.0 | [#2792](https://github.com/opensearch-project/k-NN/pull/2792) | k-NN | Bump JDK to 24, Gradle to 8.14 |
 | v3.2.0 | [#2828](https://github.com/opensearch-project/k-NN/pull/2828) | k-NN | Bump Gradle to 8.14.3 |
 | v3.2.0 | [#3983](https://github.com/opensearch-project/ml-commons/pull/3983) | ml-commons | Gradle 8.14, JDK 24 |
@@ -112,6 +120,8 @@ jobs:
 ## References
 
 - [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): Update bundled JDK to JDK25
+- [Issue #2976](https://github.com/opensearch-project/k-NN/issues/2976): k-NN Gradle/JDK upgrade tracking
+- [Issue #4389](https://github.com/opensearch-project/ml-commons/issues/4389): ml-commons Gradle/JDK upgrade tracking
 - [OpenSearch automated build system](https://opensearch.org/blog/public-jenkins/): Public Jenkins infrastructure
 - [Gradle Documentation](https://docs.gradle.org/): Official Gradle documentation
 - [Adoptium](https://adoptium.net/): Eclipse Temurin JDK distribution
@@ -119,5 +129,6 @@ jobs:
 
 ## Change History
 
-- **v3.4.0** (2026-01): Gradle 9.1, bundled JDK 25.0.1+8, forbiddenapis 3.10, Mockito 5.20.0
+- **v3.4.0** (2026-01): Gradle 9.2 and JDK 25 upgrades across 24 plugin repositories (alerting, anomaly-detection, asynchronous-search, common-utils, cross-cluster-replication, custom-codecs, geospatial, index-management, job-scheduler, k-NN, learning-to-rank, ml-commons, neural-search, notifications, observability, performance-analyzer, query-insights, reporting, search-processor, security, skills, system-templates, user-behavior-insights)
+- **v3.4.0** (2026-01): Gradle 9.1, bundled JDK 25.0.1+8, forbiddenapis 3.10, Mockito 5.20.0 (OpenSearch core)
 - **v3.2.0** (2025): Gradle 8.14/8.14.3, JDK 24 CI support, multi-node testing, Codecov integration, Maven endpoint updates
