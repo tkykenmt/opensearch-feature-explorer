@@ -77,6 +77,7 @@ flowchart TB
 | `node.attr.remote_store.segment.repository` | Repository name for segment storage | - |
 | `node.attr.remote_store.translog.repository` | Repository name for translog storage | - |
 | `cluster.remote_store.pinned_timestamps.enabled` | Enable pinned timestamps feature | `false` |
+| `cluster.remote_state.download.serve_read_api.enabled` | Controls full cluster state download from remote on term mismatch | `true` |
 
 ### Usage Example
 
@@ -126,6 +127,7 @@ PUT /_cluster/settings
 |---------|-----|-------------|
 | v3.1.0 | [#18327](https://github.com/opensearch-project/OpenSearch/pull/18327) | Disabling _close API invocation during remote migration |
 | v3.1.0 | [#18256](https://github.com/opensearch-project/OpenSearch/pull/18256) | Apply cluster state metadata and routing table diff when building cluster state from remote |
+| v3.0.0 | [#16798](https://github.com/opensearch-project/OpenSearch/pull/16798) | Setting to disable full cluster state download from remote on term mismatch |
 
 ## References
 
@@ -138,3 +140,4 @@ PUT /_cluster/settings
 ## Change History
 
 - **v3.1.0** (2026-01-10): Added close index request rejection during migration; Fixed cluster state diff download failures during alias operations
+- **v3.0.0** (2024-12-16): Added `cluster.remote_state.download.serve_read_api.enabled` setting to control full cluster state download on term mismatch

@@ -51,6 +51,7 @@
 - [Pipeline ID Limits](features/opensearch/pipeline-id-limits.md)
 - [Plugin System](features/opensearch/plugin-system.md)
 - [Refresh Task Scheduling](features/opensearch/refresh-task-scheduling.md)
+- [Remote Cluster State Download Setting](features/opensearch/remote-cluster-state-download-setting.md)
 - [Search Backpressure](features/opensearch/search-backpressure.md)
 - [Search Task Management](features/opensearch/search-task-management.md)
 - [Segment Warmer](features/opensearch/segment-warmer.md)
