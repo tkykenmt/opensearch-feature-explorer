@@ -474,6 +474,7 @@
 - [k-NN Engine Enhancements](k-nn/k-nn-engine-enhancements.md)
 - [k-NN Performance & Engine](k-nn/k-nn-performance-engine.md)
 - [Late Interaction](k-nn/late-interaction.md)
+- [Maximal Marginal Relevance (MMR)](k-nn/maximal-marginal-relevance-mmr.md)
 - [Vector Search (k-NN)](k-nn/vector-search-k-nn.md)
 - [k-NN Explain API](k-nn/explain-api.md)
 - [k-NN Iterative Graph Build](k-nn/k-nn-iterative-graph-build.md)
