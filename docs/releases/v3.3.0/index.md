@@ -144,6 +144,7 @@
 ### Observability
 
 - [Observability Cypress Updates](features/observability/observability-cypress-updates.md)
+- [Observability Fixes](features/observability/observability-fixes.md)
 
 ### Multi-Plugin
 
