@@ -214,6 +214,7 @@
 - [Dashboards CI/Tests](opensearch-dashboards/dashboards-ci-tests.md)
 - [Dashboards Console](opensearch-dashboards/dashboards-console.md)
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
+- [Dashboards Features](opensearch-dashboards/dashboards-features.md)
 - [Dashboards Frontend Cleanup](opensearch-dashboards/dashboards-frontend-cleanup.md)
 - [Dashboards Improvements](opensearch-dashboards/dashboards-improvements.md)
 - [Dashboards Maintenance](opensearch-dashboards/dashboards-maintenance.md)
