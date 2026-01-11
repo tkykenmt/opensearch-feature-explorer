@@ -136,6 +136,7 @@
 
 ### SQL
 
+- [PPL Rename Command - Wildcard Support](features/sql/ppl-rename-command.md)
 - [SQL/PPL Bug Fixes](features/sql/sql-ppl-bug-fixes.md)
 
 ### Reporting
