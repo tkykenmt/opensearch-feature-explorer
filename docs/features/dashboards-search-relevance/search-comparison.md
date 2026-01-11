@@ -137,11 +137,15 @@ Query 2 - Boosted field:
 - Cannot save comparisons for future use - not suitable for systematic testing
 - Setting `size` to values larger than 250 may degrade performance
 - Requires manual query construction in OpenSearch Query DSL
+- Hybrid optimizer experiments with more than 10,000 evaluation results will only display the first 10,000 due to OpenSearch's `max_result_window` limit (v3.3.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#632](https://github.com/opensearch-project/dashboards-search-relevance/pull/632) | Improve color coding for search result comparison |
+| v3.3.0 | [#637](https://github.com/opensearch-project/dashboards-search-relevance/pull/637) | Allow more than 10 results in pairwise comparison view |
+| v3.3.0 | [#645](https://github.com/opensearch-project/dashboards-search-relevance/pull/645) | Show first 10,000 experiment results |
 | v3.1.0 | [#542](https://github.com/opensearch-project/dashboards-search-relevance/pull/542) | Fix schema validation in POST Query Sets endpoint |
 | v2.17.0 | [#427](https://github.com/opensearch-project/dashboards-search-relevance/pull/427) | Add compare queries card to search use case overview page |
 | v2.14.0 | [#383](https://github.com/opensearch-project/dashboards-search-relevance/pull/383) | Multi-datasource support for Search-relevance |
@@ -151,10 +155,12 @@ Query 2 - Boosted field:
 
 - [Documentation](https://docs.opensearch.org/latest/search-plugins/search-relevance/compare-search-results/): Comparing search results
 - [Issue #7807](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7807): Search use case overview page
+- [Issue #157](https://github.com/opensearch-project/search-relevance/issues/157): No evaluation results loaded for extensive experiments
 - [Search Relevance Stats API](https://docs.opensearch.org/latest/search-plugins/search-relevance/stats-api/): API for search relevance statistics
 
 ## Change History
 
+- **v3.3.0** (2026-01-14): Improved color coding for visual comparison, fixed pairwise comparison to show more than 10 results, added support for large experiment results up to 10,000
 - **v3.1.0** (2025-06-11): Fixed schema validation in POST Query Sets endpoint - added missing `querySetSize` parameter
 - **v2.17.0** (2024-09-17): Added Compare Queries card to Search use case overview page via Content Management integration
 - **v2.14.0** (2024-05-02): Added multi-datasource support and search pipeline selection
