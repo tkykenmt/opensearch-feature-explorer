@@ -50,12 +50,14 @@ flowchart TB
 |-----------|-------------|
 | `SdkClient` | Main client interface for remote metadata operations |
 | `SdkClientFactory` | Factory class to instantiate appropriate client based on configuration |
-| `PutDataObjectRequest` | SDK wrapper for index operations |
-| `GetDataObjectRequest` | SDK wrapper for get operations |
+| `PutDataObjectRequest` | SDK wrapper for index operations with optional CMK encryption |
+| `GetDataObjectRequest` | SDK wrapper for get operations with optional CMK decryption |
 | `UpdateDataObjectRequest` | SDK wrapper for update operations |
 | `DeleteDataObjectRequest` | SDK wrapper for delete operations |
 | `SearchDataObjectRequest` | SDK wrapper for search operations |
 | `SdkClientUtils` | Utility class with completion wrappers for async operations |
+| `DynamoDbItemEncryptor` | Encryptor for DynamoDB items using AWS KMS (DDB backend only) |
+| `FixedCredsKmsClientSupplier` | KMS client supplier with configurable credentials (DDB backend only) |
 
 ### Configuration
 
@@ -66,6 +68,8 @@ flowchart TB
 | `remote_metadata_region` | AWS region for remote storage | - |
 | `remote_metadata_service_name` | Service name for remote storage | - |
 | `multi_tenancy_enabled` | Enable multi-tenancy support | `false` |
+| `cmkRoleArn` | AWS KMS key ARN for encrypting/decrypting data (per-request) | `null` |
+| `assumeRoleArn` | IAM role ARN to assume for CMK access (per-request) | `null` |
 
 ### Supported Storage Backends
 
@@ -122,11 +126,15 @@ The following plugins support multi-tenancy with remote metadata storage:
 - Indices (OpenSearch) or tables (DynamoDB) must be created manually before use
 - Thread pool parameter currently unused but reserved for future implementations
 - DynamoDB backend requires zero-ETL replication setup for search operations
+- CMK encryption is only supported for the DynamoDB backend
+- Existing unencrypted data cannot be read with CMK parameters enabled
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271) | Add CMK support to encrypt/decrypt customer data |
+| v3.4.0 | [#295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295) | Add assume role for CMK |
 | v3.4.0 | [#291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291) | Fix error when updating model status |
 | v3.3.0 | [#234](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/234) | Add SeqNo and PrimaryTerm support to Put and Delete requests |
 | v3.3.0 | [#244](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/244) | Add RefreshPolicy and timeout support to Put, Update, Delete, and Bulk requests |
@@ -146,10 +154,14 @@ The following plugins support multi-tenancy with remote metadata storage:
 ## References
 
 - [PR #124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124): Add a developer guide
+- [PR #271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271): CMK encryption support
+- [PR #295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295): Assume role for CMK
 - [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/DEVELOPER_GUIDE.md): Full developer guide
 - [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
 - [SDK Client Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
 - [Zero-ETL Replication](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OpenSearchIngestionForDynamoDB.html): DynamoDB to OpenSearch replication
+- [AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/what-is-database-encryption-sdk.html): AWS documentation for database encryption
+- [AWS KMS Multi-Region Keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html): Multi-region key documentation
 - [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() eventually consistent bug
 - [Issue #132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132): Aggregation API failure bug
 - [Issue #154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154): DDBClient validation bug
@@ -160,7 +172,7 @@ The following plugins support multi-tenancy with remote metadata storage:
 
 ## Change History
 
-- **v3.4.0** (2026-01-14): Fix error when updating global model status in DynamoDB backend - added `isGlobalResource` check to properly handle tenant ID for global resources (PR #291)
+- **v3.4.0** (2026-01-14): Add CMK support for encrypting/decrypting customer data in DynamoDB backend with STS role assumption for cross-account access (PRs #271, #295); Fix error when updating global model status (PR #291)
 - **v3.3.0** (2025-09-22): Added SeqNo/PrimaryTerm support for Put and Delete requests, RefreshPolicy and timeout configuration for write operations, empty string ID validation fix, and ThreadContextAccess API compatibility fixes (PRs #234, #244, #236, #250, #254)
 - **v3.0.0** (2025-05-06): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
 - **v3.0.0** (2025-05-06): Added developer guide with migration instructions (PR #124)
