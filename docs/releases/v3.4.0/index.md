@@ -205,6 +205,7 @@
 
 ### Flow Framework
 
+- [Flow Framework Access Control](features/flow-framework/flow-framework-access-control.md) - Integration with centralized Resource Sharing and Access Control framework
 - [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) - Fix incorrect output dimension default (768→384) in semantic search with local model template
 
 ### Cross-Cluster Replication
