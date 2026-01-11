@@ -69,6 +69,8 @@ flowchart TB
 | `plugins.replication.follower.metadata_sync_interval` | Interval for metadata sync | 60s |
 | `plugins.replication.follower.index.recovery.chunk_size` | Chunk size for recovery | 10MB |
 | `plugins.replication.follower.index.recovery.max_concurrent_file_chunks` | Max concurrent file chunks | 4 |
+| `plugins.replication.follower.index.ops_batch_size` | Cluster-level batch size for operations | 50000 |
+| `index.plugins.replication.follower.ops_batch_size` | Index-level batch size for operations (v3.3.0+) | 50000 |
 | `plugins.replication.autofollow.fetch_poll_interval` | Auto-follow poll interval | 30s |
 
 ### Usage Example
@@ -141,11 +143,14 @@ POST _plugins/_replication/follower-index/_stop
 - Cross-cluster replication does not currently use segment replication
 - The `stop_replication` ISM action only works on actively replicated indices
 - Requires proper security configuration for cross-cluster communication
+- Dynamic batch size reduction (for 2GB limit handling) is per-node and not persisted across restarts
+- Minimum batch size is 16 operations, which may still exceed 2GB for extremely large documents
 
 ## Related PRs
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.3.0 | [#1580](https://github.com/opensearch-project/cross-cluster-replication/pull/1580) | cross-cluster-replication | Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput |
 | v3.2.0 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | cross-cluster-replication | Add missing method for RemoteClusterRepository class |
 | v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |
 | v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM |
@@ -157,6 +162,7 @@ POST _plugins/_replication/follower-index/_stop
 
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices
 - [Issue #1557](https://github.com/opensearch-project/cross-cluster-replication/issues/1557): Distribution Build Failed for cross-cluster-replication-3.2.0
+- [Issue #1568](https://github.com/opensearch-project/cross-cluster-replication/issues/1568): Bug report for 2GB limit breach during large document replication
 - [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
 - [Replication settings](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
 - [Replication API](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
@@ -166,6 +172,7 @@ POST _plugins/_replication/follower-index/_stop
 
 ## Change History
 
+- **v3.3.0** (2025-11-18): Fixed 2GB limit breach for large document replication with dynamic batch size adjustment and new index-level batch size setting
 - **v3.2.0** (2025-08-06): Build fix - added missing `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method to RemoteClusterRepository
 - **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
 - **v2.17.0** (2024-09-17): Fixed integration tests to use correct cluster setting names after Remote Store Migration GA
