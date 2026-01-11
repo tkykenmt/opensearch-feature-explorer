@@ -163,6 +163,7 @@
 
 ### ML Commons
 
+- [ML Commons Enhancements](features/ml-commons/ml-commons-enhancements.md) - Sensitive parameter filtering for connector APIs, resource type support for resource sharing, increased batch task limits (default: 100, max: 10,000)
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md) - Agent type update validation, QueryPlanningTool model ID parsing, tool config empty values, agentic memory multi-node fixes
 
 ### Skills

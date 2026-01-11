@@ -415,6 +415,7 @@
 - [ML Commons Connector and Model Validation](ml-commons/connector-model-validation.md)
 - [ML Commons Connector Blueprints](ml-commons/ml-commons-blueprints.md)
 - [ML Commons Documentation & Tutorials](ml-commons/ml-commons-documentation-tutorials.md)
+- [ML Commons Enhancements](ml-commons/ml-commons-enhancements.md)
 - [ML Commons Error Handling](ml-commons/ml-commons-error-handling.md)
 - [ML Commons Dependencies](ml-commons/ml-commons-dependencies.md)
 - [Global Resource Support](ml-commons/global-resource-support.md)
