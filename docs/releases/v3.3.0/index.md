@@ -116,6 +116,7 @@
 
 - [Neural Search Bug Fixes](features/neural-search/neural-search-bug-fixes.md)
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
+- [SEISMIC Sparse ANN](features/neural-search/seismic-sparse-ann.md)
 - [Semantic Field MultiFields Fix](features/neural-search/semantic-field-multifields-fix.md)
 
 ### k-NN
