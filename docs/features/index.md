@@ -281,6 +281,7 @@
 - [Security FIPS Compliance](security/security-fips-compliance.md)
 - [Security AccessController Migration](security/security-accesscontroller-migration.md)
 - [SPIFFE X.509 SVID Support](security/spiffe-x.509-svid-support.md)
+- [GitHub Actions Updates](security/github-actions-updates.md)
 
 ## security-dashboards
 
