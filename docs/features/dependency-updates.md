@@ -110,7 +110,10 @@ flowchart LR
 - [OpenSearch Security Advisories](https://github.com/opensearch-project/OpenSearch/security/advisories)
 - [NVD CVE Database](https://nvd.nist.gov/)
 - [GitHub Security Advisories](https://github.com/advisories)
+- [Logback Release Notes](https://logback.qos.ch/news.html)
+- [Apache Calcite Release History](https://calcite.apache.org/docs/history.html)
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): 28 dependency updates across 7 repositories addressing CVE-2025-11226 (logback), CVE-2025-58457 (Spring Framework), CVE-2025-41249 (Zookeeper); major updates include Spring Framework 7.0.1, Calcite 1.41.0, Bouncy Castle 1.83
 - **v3.3.0** (2026-01-11): 55 dependency updates including OpenTelemetry 1.53.0, SLF4J 2.0.17, GCS SDK 2.55.0, commons-lang3 migration, and multiple CVE fixes

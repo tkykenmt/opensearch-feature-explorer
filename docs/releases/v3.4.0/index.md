@@ -96,4 +96,5 @@
 
 ### Multi-Repository
 
+- [Dependency Updates](features/multi-repo/dependency-updates.md) - 28 dependency updates across 7 repositories addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
 - [Version Increments](features/multi-repo/version-increments.md) - Version bump to 3.4.0 across index-management, notifications, and dashboards-notifications
