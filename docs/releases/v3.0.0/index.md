@@ -57,6 +57,7 @@
 - [Dashboards Frontend Cleanup](features/opensearch-dashboards/dashboards-frontend-cleanup.md)
 - [Dashboards UI/UX Fixes](features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Monaco Editor Upgrade](features/opensearch-dashboards/monaco-editor-upgrade.md)
+- [PPL Query Support](features/opensearch-dashboards/ppl-query-support.md)
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 
