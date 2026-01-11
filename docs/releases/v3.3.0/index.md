@@ -82,6 +82,7 @@
 
 ### Anomaly Detection
 
+- [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md)
 - [Anomaly Detection Resource Authorization](features/anomaly-detection/anomaly-detection-resource-authorization.md)
 - [Doc Request Resource Type Support](features/anomaly-detection/doc-request.md)
 
