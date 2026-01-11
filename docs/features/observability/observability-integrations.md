@@ -113,6 +113,7 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#2530](https://github.com/opensearch-project/dashboards-observability/pull/2530) | Clean up interface for integrations static serving |
 | v3.0.0 | [#2387](https://github.com/opensearch-project/dashboards-observability/pull/2387) | Improve error handling when setting up and reading a new integration |
 | v3.0.0 | [#2376](https://github.com/opensearch-project/dashboards-observability/pull/2376) | Improve the test results for Integrations internals |
 
@@ -124,4 +125,5 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Improved static file serving with image type validation and SVG sanitization
 - **v3.0.0** (2025-05-06): Improved error handling and test result quality for integration configuration parsing
