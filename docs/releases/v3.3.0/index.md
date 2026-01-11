@@ -137,6 +137,7 @@
 ### SQL
 
 - [PPL Aggregate Functions](features/sql/ppl-aggregate-functions.md)
+- [PPL Aggregation Pushdown](features/sql/ppl-aggregation-pushdown.md)
 - [PPL Patterns Command Enhancements](features/sql/ppl-patterns-command.md)
 - [PPL Rename Command - Wildcard Support](features/sql/ppl-rename-command.md)
 - [PPL Rex and Regex Commands](features/sql/ppl-rex-and-regex-commands.md)
