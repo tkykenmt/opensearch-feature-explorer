@@ -80,6 +80,7 @@
 
 - [Dashboards Console](features/opensearch-dashboards/dashboards-console.md) - Fix for console_polling setting update
 - [Dashboards Navigation](features/opensearch-dashboards/dashboards-navigation.md) - Fix disabled prop propagation for navigation links
+- [Dashboards CI/Tests](features/opensearch-dashboards/dashboards-ci-tests.md) - Update unit test workflow to include 3.* branch support
 
 ### Dashboards Observability
 
