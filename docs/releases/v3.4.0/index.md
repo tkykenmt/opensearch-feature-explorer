@@ -140,6 +140,7 @@
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md) - 48 bug fixes including memory exhaustion fix, race condition fix, rex nested capture groups, filter pushdown improvements, and CVE-2025-48924
 - [SQL CI/Tests](features/sql/sql-ci-tests.md) - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
 - [SQL Documentation](features/sql/sql-documentation.md) - PPL command documentation standardization, typo fixes, enhanced examples, and function documentation improvements
+- [PPL Commands (Calcite)](features/sql/ppl-commands-calcite.md) - New PPL commands (chart, streamstats, multisearch, replace, appendpipe) and enhancements (bucket_nullable, usenull, pushdown optimizations)
 
 ### Query Insights
 
