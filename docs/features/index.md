@@ -391,6 +391,7 @@
 - [ML Inference Processor](ml-commons/ml-inference-processor.md)
 - [PlanExecuteReflect Agent](ml-commons/planexecutereflect-agent.md)
 - [Query Assist](ml-commons/query-assist.md)
+- [Streaming APIs](ml-commons/streaming-apis.md)
 
 ## ml-commons-dashboards
 
