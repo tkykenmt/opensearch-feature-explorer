@@ -89,6 +89,7 @@
 
 - [Client Certificate Authentication - skip_users](features/security/security-client-certificate-authentication.md)
 - [Resource Access Control Documentation](features/security/resource-access-control-documentation.md)
+- [Security Configuration Enhancements](features/security/security-configuration-enhancements.md)
 - [Security Plugin Bug Fixes](features/security/security-plugin-bug-fixes.md)
 - [SSL/TLS Compatibility Fix](features/security/ssl-tls.md)
 - [Sync Protobufs Version with Core](features/security/sync-protobufs-version.md)

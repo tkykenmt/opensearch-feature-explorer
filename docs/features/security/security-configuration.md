@@ -92,11 +92,14 @@ OIDC providers may send usernames with special characters. The plugin handles pi
 
 ### Configuration
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| `plugins.security.config_index_name` | Name of the security index | `.opendistro_security` |
-| `plugins.security.allow_default_init_securityindex` | Allow default initialization | `false` |
-| `plugins.security.audit.type` | Audit log type | `internal_opensearch` |
+| Setting | Description | Default | Dynamic |
+|---------|-------------|---------|---------|
+| `plugins.security.config_index_name` | Name of the security index | `.opendistro_security` | No |
+| `plugins.security.allow_default_init_securityindex` | Allow default initialization | `false` | No |
+| `plugins.security.audit.type` | Audit log type | `internal_opensearch` | No |
+| `plugins.security.user_attribute_serialization.enabled` | Enable user attribute serialization | `false` | Yes |
+| `plugins.security.experimental.resource_sharing.enabled` | Enable resource sharing framework | `false` | No |
+| `plugins.security.experimental.resource_sharing.protected_types` | List of resource types to protect | `[]` | No |
 
 ### Usage Example
 
@@ -130,6 +133,8 @@ config:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#5671](https://github.com/opensearch-project/security/pull/5671) | Adds protected resource types setting |
+| v3.3.0 | [#5673](https://github.com/opensearch-project/security/pull/5673) | Make user attribute serialization dynamic |
 | v3.0.0 | [#5193](https://github.com/opensearch-project/security/pull/5193) | Default to v7 models if _meta not present |
 | v3.0.0 | [#5175](https://github.com/opensearch-project/security/pull/5175) | Escape pipe character for injected users |
 | v3.0.0 | [#5157](https://github.com/opensearch-project/security/pull/5157) | Fix version matcher in demo config installer |
@@ -145,5 +150,6 @@ config:
 
 ## Change History
 
+- **v3.3.0** (2025-10-01): Added protected resource types setting, made user attribute serialization dynamic
 - **v3.0.0** (2025-05-06): Default to v7 models, escape pipe characters in usernames, fix demo config version matcher
 - **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7
