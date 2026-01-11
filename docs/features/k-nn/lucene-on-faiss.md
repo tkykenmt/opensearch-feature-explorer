@@ -77,6 +77,10 @@ flowchart TB
 | `MemoryOptimizedSearchSupportSpec` | Determines if a field configuration supports memory-optimized search |
 | `VectorSearcher` | Interface for vector search compatible with Lucene's search API |
 | `VectorSearcherFactory` | Factory interface for creating `VectorSearcher` instances |
+| `SimdVectorComputeService` | JNI service for native SIMD similarity computation (v3.4.0+) |
+| `NativeRandomVectorScorer` | `RandomVectorScorer` that offloads scoring to native SIMD code (v3.4.0+) |
+| `MMapVectorValues` | Interface for memory-mapped vector data access (v3.4.0+) |
+| `MMapFloatVectorValues` | Float vector values with mmap pointer access (v3.4.0+) |
 
 ### Configuration
 
@@ -243,6 +247,8 @@ PUT /my-vector-index
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#2922](https://github.com/opensearch-project/k-NN/pull/2922) | Native SIMD scoring for FP16 |
+| v3.4.0 | [#2948](https://github.com/opensearch-project/k-NN/pull/2948) | VectorSearcherHolder memory optimization |
 | v3.2.0 | [#2781](https://github.com/opensearch-project/k-NN/pull/2781) | ADC support for Lucene-on-Faiss |
 | v3.0.0 | [#2630](https://github.com/opensearch-project/k-NN/pull/2630) | Main implementation (10 sub-PRs combined) |
 | v3.0.0 | [#2581](https://github.com/opensearch-project/k-NN/pull/2581) | Building blocks for memory optimized search |
@@ -260,11 +266,15 @@ PUT /my-vector-index
 
 - [RFC Issue #2401](https://github.com/opensearch-project/k-NN/issues/2401): Partial loading with FAISS engine - detailed design document
 - [RFC Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): ADC and Random Rotation for binary quantization
+- [RFC Issue #2875](https://github.com/opensearch-project/k-NN/issues/2875): Use SIMD for FP16 in LuceneOnFaiss
+- [Issue #2938](https://github.com/opensearch-project/k-NN/issues/2938): VectorSearcherHolder memory optimization
 - [Documentation: Memory-optimized vectors](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
+- [Documentation: Faiss 16-bit scalar quantization](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/faiss-16-bit-quantization/)
 - [Blog: Lucene-on-Faiss](https://opensearch.org/blog/lucene-on-faiss-powering-opensearchs-high-performance-memory-efficient-vector-search/)
 - [Blog: Asymmetric Distance Computation](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/)
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Added native SIMD scoring for FP16 vectors, VectorSearcherHolder memory optimization
 - **v3.2.0** (2026-01-14): Added ADC support for binary-quantized indexes
 - **v3.0.0** (2025-05-06): Initial implementation with HNSW support for FAISS engine
