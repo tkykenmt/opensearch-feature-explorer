@@ -16,6 +16,7 @@
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
 - [Bulk API Changes](features/opensearch/bulk-api-changes.md)
 - [Deprecated Code Cleanup](features/opensearch/deprecated-code-cleanup.md)
+- [Field Type Fixes](features/opensearch/field-type-fixes.md)
 - [Cluster Permissions](features/opensearch/cluster-permissions.md)
 - [gRPC Transport & Services](features/opensearch/grpc-transport--services.md)
 - [Mapping Transformer](features/opensearch/mapping-transformer.md)
