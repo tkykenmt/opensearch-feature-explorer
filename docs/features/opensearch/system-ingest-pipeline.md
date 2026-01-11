@@ -201,12 +201,14 @@ PUT _cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.2.0 | [#18911](https://github.com/opensearch-project/OpenSearch/pull/18911) | Fix system ingest pipeline not triggered when request forwarded from non-ingest node |
 | v3.2.0 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories |
 | v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |
 | v3.1.0 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations |
 
 ## References
 
+- [Issue #18909](https://github.com/opensearch-project/OpenSearch/issues/18909): System ingest pipeline not triggered when request is from a non-ingest node
 - [Issue #17509](https://github.com/opensearch-project/OpenSearch/issues/17509): RFC - Support System Generated Ingest Pipeline/Processor
 - [Issue #18276](https://github.com/opensearch-project/OpenSearch/issues/18276): Support system ingest pipelines for bulk update operations
 - [Issue #17742](https://github.com/opensearch-project/OpenSearch/issues/17742): Add configurability to run ingest pipelines during document update operations
@@ -218,6 +220,7 @@ PUT _cluster/settings
 
 ## Change History
 
+- **v3.2.0** (2025-08-05): Fixed system ingest pipeline not triggered when request forwarded from non-ingest node (#18911)
 - **v3.2.0** (2025-07-09): Added index settings support for processor factories (#18708)
 - **v3.1.0** (2025-05-09): Initial implementation of system ingest pipeline (#17817)
 - **v3.1.0** (2025-06-11): Added bulk update operation support (#18277)
