@@ -14,6 +14,7 @@
 - [Stats Builder Pattern Deprecations](features/opensearch/stats-builder-pattern-deprecations.md) - Deprecated constructors in 30+ Stats classes in favor of Builder pattern
 - [XContent Filtering](features/opensearch/xcontent-filtering.md) - Case-insensitive filtering support for XContentMapValues.filter
 - [Plugin Dependencies](features/opensearch/plugin-dependencies.md) - Range semver support for dependencies in plugin-descriptor.properties
+- [ActionPlugin Enhancements](features/opensearch/actionplugin-enhancements.md) - Pass REST header registry to getRestHandlerWrapper for efficient header access
 
 ### OpenSearch Dashboards
 

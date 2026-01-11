@@ -135,6 +135,7 @@
 - [Remote Store Metadata API](opensearch/remote-store-metadata-api.md)
 - [Repository Rate Limiters](opensearch/repository-rate-limiters.md)
 - [RestHandler.Wrapper](opensearch/resthandler-wrapper.md)
+- [ActionPlugin REST Handler Wrapper](opensearch/actionplugin-rest-handler-wrapper.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
 - [S3 Repository](opensearch/s3-repository.md)
 - [Scaled Float Field](opensearch/scaled-float-field.md)
