@@ -2,7 +2,7 @@
 
 ## Summary
 
-Job Scheduler is an OpenSearch plugin that provides a framework for building schedules for common cluster management tasks. It enables plugin developers to define and execute periodic jobs using either interval-based scheduling or Unix cron expressions. The plugin includes a sweeper that listens for cluster events and a scheduler that manages job execution timing.
+Job Scheduler is an OpenSearch plugin that provides a framework for building schedules for common cluster management tasks. It enables plugin developers to define and execute periodic jobs using either interval-based scheduling or Unix cron expressions. The plugin includes a sweeper that listens for cluster events, a scheduler that manages job execution timing, and a job history service for tracking execution history. Starting with v3.3.0, the plugin supports configurable remote metadata storage for enhanced deployment flexibility.
 
 ## Details
 
@@ -15,6 +15,9 @@ graph TB
         SW[Sweeper]
         SCH[Scheduler]
         LK[Lock Service]
+        JHS[Job History Service]
+        PC[PluginClient]
+        SDK[SdkClient]
     end
     
     subgraph "Extension Plugins"
@@ -30,13 +33,27 @@ graph TB
         TP[Thread Pool]
     end
     
+    subgraph "Storage Options"
+        SYS[System Index]
+        DDB[DynamoDB]
+        ROS[Remote OpenSearch]
+    end
+    
     JS --> SW
     JS --> SCH
     JS --> LK
+    JS --> JHS
+    JS --> PC
+    JS --> SDK
     
     SW --> CL
     SCH --> TP
-    LK --> IDX
+    LK --> SDK
+    JHS --> SDK
+    
+    SDK --> SYS
+    SDK --> DDB
+    SDK --> ROS
     
     ISM --> JS
     SM --> JS
@@ -66,8 +83,12 @@ flowchart TB
 | `JobSweeper` | Listens for cluster events and discovers jobs to execute |
 | `ScheduledJobRunner` | Interface for implementing job execution logic |
 | `ScheduledJobParameter` | Interface for defining job configuration |
-| `LockService` | Distributed locking to prevent concurrent job execution |
+| `LockService` | Interface for distributed locking to prevent concurrent job execution (v3.3.0+) |
+| `LockServiceImpl` | Concrete implementation of LockService (v3.3.0+) |
 | `JobDetailsService` | Manages job metadata and state |
+| `JobHistoryService` | Records job execution history with start/end times (v3.3.0+) |
+| `PluginClient` | Client wrapper for executing actions as plugin subject (v3.3.0+) |
+| `SdkClient` | Configurable client for remote metadata storage (v3.3.0+) |
 
 ### Configuration
 
@@ -79,6 +100,12 @@ flowchart TB
 | `plugins.jobscheduler.sweeper.backoff_millis` | Initial wait period for exponential backoff (ms) | Dynamic |
 | `plugins.jobscheduler.sweeper.page_size` | Number of search hits to return per sweep | Dynamic |
 | `plugins.jobscheduler.sweeper.period` | Initial delay before background sweep execution (supports seconds since v3.2.0) | Dynamic |
+| `plugins.jobscheduler.history.enabled` | Enable job history tracking (v3.3.0+) | `false` |
+| `plugins.jobscheduler.remote_metadata_type` | Remote metadata storage type (v3.3.0+) | (empty) |
+| `plugins.jobscheduler.remote_metadata_endpoint` | Remote metadata endpoint URL (v3.3.0+) | (empty) |
+| `plugins.jobscheduler.remote_metadata_region` | Remote metadata AWS region (v3.3.0+) | (empty) |
+| `plugins.jobscheduler.remote_metadata_service_name` | Remote metadata service name (v3.3.0+) | (empty) |
+| `plugins.jobscheduler.tenant_aware` | Enable multi-tenancy support (v3.3.0+) | `false` |
 
 ### REST APIs (v3.2.0+)
 
@@ -168,11 +195,18 @@ Job Scheduler supports two schedule formats:
 - Job execution is distributed across cluster nodes; the locking mechanism prevents duplicate execution but adds overhead
 - Long-running jobs should implement proper timeout handling
 - Job state is stored in OpenSearch indexes, subject to cluster availability
+- Job history records are stored indefinitely; manual cleanup may be required (v3.3.0+)
+- Remote metadata storage (DynamoDB) requires pre-created tables before plugin startup (v3.3.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#814](https://github.com/opensearch-project/job-scheduler/pull/814) | Job History Service - creates history index recording job execution times |
+| v3.3.0 | [#714](https://github.com/opensearch-project/job-scheduler/pull/714) | Make LockService an interface and replace usages of ThreadContext.stashContext |
+| v3.3.0 | [#833](https://github.com/opensearch-project/job-scheduler/pull/833) | Create Guice module to bind LockService interface from SPI to LockServiceImpl |
+| v3.3.0 | [#831](https://github.com/opensearch-project/job-scheduler/pull/831) | Introduce configurable remote metadata client and migrate LockService to SdkClient |
+| v3.3.0 | [#810](https://github.com/opensearch-project/job-scheduler/pull/810) | Update delete_backport_branch workflow to include release-chores branches |
 | v3.2.0 | [#849](https://github.com/opensearch-project/common-utils/pull/849) | Add Seconds as a supported unit for IntervalSchedule |
 | v3.2.0 | [#786](https://github.com/opensearch-project/job-scheduler/pull/786) | Adds REST API to list jobs with an option to list them per node |
 | v3.2.0 | [#796](https://github.com/opensearch-project/job-scheduler/pull/796) | Support defining IntervalSchedule in seconds |
@@ -195,6 +229,9 @@ Job Scheduler supports two schedule formats:
 - [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
 - [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
 - [Sample Extension Plugin](https://github.com/opensearch-project/job-scheduler/tree/main/sample-extension-plugin)
+- [opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
+- [Issue #808](https://github.com/opensearch-project/job-scheduler/issues/808): Feature request for Job execution History index
+- [Issue #828](https://github.com/opensearch-project/job-scheduler/issues/828): Feature request for configurable client wrapper for remote metadata store
 - [Issue #775](https://github.com/opensearch-project/job-scheduler/issues/775): Feature request for REST APIs to list jobs and running jobs
 - [Issue #777](https://github.com/opensearch-project/job-scheduler/issues/777): Add a CHANGELOG to assemble release notes as PRs are merged
 - [Issue #18113](https://github.com/opensearch-project/OpenSearch/issues/18113): Remove Guava from plugins
@@ -206,6 +243,7 @@ Job Scheduler supports two schedule formats:
 
 ## Change History
 
+- **v3.3.0** (2025): Added Job History Service for tracking job execution history; Refactored LockService to interface with LockServiceImpl; Implemented IdentityAwarePlugin for improved security integration; Added remote metadata storage support via SdkClient (DynamoDB, remote OpenSearch); Added multi-tenancy support
 - **v3.2.0** (2025): Added REST APIs for listing scheduled jobs and locks; Added support for second-level interval scheduling; Made LockService non-final for better extensibility; Fixed date serialization in transport actions
 - **v3.1.0** (2025): Added CHANGELOG and changelog_verifier workflow for iterative release note assembly; Removed Guava dependency to reduce jar hell and dependency conflicts in extending plugins
 - **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads

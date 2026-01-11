@@ -140,6 +140,10 @@
 
 - [Index Management Enhancements](features/index-management/index-management-enhancements.md)
 
+### Job Scheduler
+
+- [Job Scheduler Enhancements](features/job-scheduler/job-scheduler-enhancements.md)
+
 ### Query Insights
 
 - [Query Insights Bug Fixes](features/query-insights/query-insights-bug-fixes.md)
