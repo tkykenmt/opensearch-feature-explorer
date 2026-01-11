@@ -93,9 +93,12 @@ flowchart TB
 | `SearchService` | gRPC service handling search operations (Search API) |
 | `opensearch-protobufs` | Protocol buffer definitions for OpenSearch APIs |
 | `GrpcServiceExtension` | Interface for plugins to register custom gRPC services (v3.2.0+) |
+| `GrpcInterceptorProvider` | Interface for plugins to provide custom gRPC interceptors with ordering (v3.4.0+) |
+| `ContextPreservingServerCallListener` | Preserves ThreadContext across gRPC async callbacks (v3.4.0+) |
 | `QueryBuilderProtoConverter` | Interface for converting protobuf queries to QueryBuilder (v3.3.0+) |
 | `QueryBuilderProtoConverterRegistry` | Registry for query converters, supports built-in and external converters (v3.3.0+) |
 | `GrpcStatusMapper` | Maps OpenSearch exceptions to proper gRPC status codes (v3.2.0+) |
+| `MediaTypeRegistry.mediaTypeFromBytes` | Auto-detects document format from binary content (v3.4.0+) |
 
 ### Configuration
 
@@ -134,17 +137,22 @@ The DocumentService provides the Bulk API for batch document operations:
 
 The SearchService provides the Search API for querying documents:
 
-**Supported Query Types (v3.3.0+):**
+**Supported Query Types (v3.4.0):**
 
 | Category | Query Types |
 |----------|-------------|
-| Match | `match_all`, `match_none` |
-| Term-level | `term`, `terms`, `exists`, `ids`, `range`, `regexp`, `wildcard`, `terms_set` |
+| Match | `match_all`, `match_none`, `match`, `match_bool_prefix`, `match_phrase_prefix` |
+| Term-level | `term`, `terms`, `exists`, `ids`, `range`, `regexp`, `wildcard`, `terms_set`, `fuzzy`, `prefix` |
 | Full-text | `match_phrase`, `multi_match` |
-| Compound | `bool` |
+| Compound | `bool`, `constant_score`, `function_score` |
 | Geographic | `geo_bounding_box`, `geo_distance` |
 | Joining | `nested` |
 | Specialized | `script` |
+
+**Search Features (v3.4.0+):**
+- `highlight`: Search result highlighting
+- `sort`: Result ordering
+- `derived_fields`: Derived field support
 
 **Request Fields:**
 - `index`: Target indexes
@@ -252,15 +260,29 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Limitations
 
-- **No aggregations**: Aggregation support not yet available
+- **No aggregations**: Aggregation support not yet available (throws exception if requested)
+- **No suggest**: Suggest support not yet available (throws exception if requested)
 - **Limited services**: Only Bulk and Search endpoints implemented
 - **Opt-in activation**: Requires explicit configuration to enable
-- **Sort limitations**: Sort-related protobufs temporarily removed in v3.3.0 (to be fixed in future release)
+- **typed_keys**: Parameter not supported in gRPC requests
+- **global_params**: Parameter not supported in Bulk/Search requests
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19005](https://github.com/opensearch-project/OpenSearch/pull/19005) | Introduce gRPC Interceptor Chain with pluggable interceptors |
+| v3.4.0 | [#19304](https://github.com/opensearch-project/OpenSearch/pull/19304) | Add BindableServices extension point for custom gRPC services |
+| v3.4.0 | [#19568](https://github.com/opensearch-project/OpenSearch/pull/19568) | Return full error details for gRPC error responses |
+| v3.4.0 | [#19744](https://github.com/opensearch-project/OpenSearch/pull/19744) | Add SMILE/CBOR/YAML document format support to Bulk gRPC endpoint |
+| v3.4.0 | [#19776](https://github.com/opensearch-project/OpenSearch/pull/19776) | Thread Context preservation by gRPC Interceptor |
+| v3.4.0 | [#19831](https://github.com/opensearch-project/OpenSearch/pull/19831) | Bump opensearch-protobufs to 0.23.0 |
+| v3.4.0 | [#19854](https://github.com/opensearch-project/OpenSearch/pull/19854) | Implement ConstantScoreQuery, FuzzyQuery, MatchBoolPrefixQuery, etc. |
+| v3.4.0 | [#19868](https://github.com/opensearch-project/OpenSearch/pull/19868) | Implement Highlight and Sort for gRPC Search |
+| v3.4.0 | [#19888](https://github.com/opensearch-project/OpenSearch/pull/19888) | Implement FunctionScoreQuery |
+| v3.4.0 | [#20059](https://github.com/opensearch-project/OpenSearch/pull/20059) | Bump opensearch-protobufs to 0.24.0, add DerivedFields support |
+| v3.4.0 | [#20162](https://github.com/opensearch-project/OpenSearch/pull/20162) | Throw exceptions for unsupported gRPC request fields |
+| v3.4.0 | [#5763](https://github.com/opensearch-project/security/pull/5763) | Fix security plugin compilation for protobuf 0.23.0 |
 | v3.4.0 | [#20010](https://github.com/opensearch-project/OpenSearch/pull/20010) | Fix ClassCastException in FlightClientChannel for requests larger than 16KB |
 | v3.4.0 | [#19937](https://github.com/opensearch-project/OpenSearch/pull/19937) | Fix GRPC Bulk - update doc field, fetchSource default, pipeline support |
 | v3.4.0 | [#19948](https://github.com/opensearch-project/OpenSearch/pull/19948) | Fix node bootstrap error when enable stream transport and remote cluster state |
@@ -297,6 +319,9 @@ Documents in gRPC requests must be Base64 encoded:
 - [Issue #18513](https://github.com/opensearch-project/OpenSearch/issues/18513): GRPC Plugin Extensibility for Query Conversion
 - [Issue #19277](https://github.com/opensearch-project/OpenSearch/issues/19277): Optimize gRPC server for higher throughput
 - [Issue #19310](https://github.com/opensearch-project/OpenSearch/issues/19310): Zero-copy optimization for search hits
+- [Issue #19526](https://github.com/opensearch-project/OpenSearch/issues/19526): gRPC Search query support tracking
+- [Issue #19311](https://github.com/opensearch-project/OpenSearch/issues/19311): Binary format support for Bulk API
+- [Issue #5379](https://github.com/opensearch-project/security/issues/5379): gRPC extension points for security
 - [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
 - [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
 - [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
@@ -305,7 +330,7 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
-- **v3.4.0** (2026-01-14): Bugfixes - ClassCastException for large requests (>16KB), Bulk API fixes (doc field, fetchSource default, pipeline support), node bootstrap fix with streaming transport
+- **v3.4.0** (2026-01-14): Pluggable interceptors with ordering, thread context preservation, binary document format support (CBOR/SMILE/YAML), expanded query support (match, fuzzy, constant_score, function_score, prefix, match_bool_prefix, match_phrase_prefix), highlight and sort support, improved error responses, protobufs 0.24.0
 - **v3.3.0** (2026-01-14): Expanded query support (15+ query types), thread management optimization, zero-copy serialization, transport-grpc-spi module for plugin extensibility
 - **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
 - **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
