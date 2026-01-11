@@ -208,6 +208,7 @@
 - [Experimental Features](opensearch-dashboards/experimental-features.md)
 - [Explore Plugin](opensearch-dashboards/explore.md)
 - [Explore Traces](opensearch-dashboards/explore-traces.md)
+- [Global Search](opensearch-dashboards/global-search.md)
 - [i18n & Localization](opensearch-dashboards/i18n-localization.md)
 - [Input Control Visualization](opensearch-dashboards/input-control-visualization.md)
 - [Keyboard Shortcuts](opensearch-dashboards/keyboard-shortcuts.md)
