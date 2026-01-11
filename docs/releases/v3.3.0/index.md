@@ -138,6 +138,7 @@
 
 - [PPL Aggregate Functions](features/sql/ppl-aggregate-functions.md)
 - [PPL Aggregation Pushdown](features/sql/ppl-aggregation-pushdown.md)
+- [PPL Calcite Engine](features/sql/ppl-calcite-engine.md)
 - [PPL Patterns Command Enhancements](features/sql/ppl-patterns-command.md)
 - [PPL Query Enhancements](features/sql/ppl-query-enhancements.md)
 - [PPL Rename Command - Wildcard Support](features/sql/ppl-rename-command.md)

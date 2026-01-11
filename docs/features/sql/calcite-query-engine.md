@@ -135,7 +135,7 @@ flowchart TB
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `plugins.calcite.enabled` | Enable Calcite engine for PPL queries | `false` |
+| `plugins.calcite.enabled` | Enable Calcite engine for PPL queries | `true` (v3.3.0+, was `false`) |
 | `plugins.calcite.fallback.allowed` | Allow fallback to v2 engine on failure | `false` (v3.2.0+) |
 | `plugins.sql.enabled` | Enable SQL support | `true` |
 | `plugins.ppl.enabled` | Enable PPL support | `true` |
@@ -162,13 +162,14 @@ flowchart TB
 | `fillnull` | Replace null values | `source=a \| fillnull value=default field` | v3.1.0 |
 | `describe` | Show index metadata | `describe index_name` | v3.1.0 |
 | `patterns` | Pattern detection (BRAIN method) | `source=a \| patterns field` | v3.1.0 |
+| `timechart` | Time-series aggregation with binning | `source=a \| timechart span=1m avg(field) [by group]` | v3.3.0 |
 
 ### Supported Functions
 
 | Category | Functions |
 |----------|-----------|
 | Math | `abs`, `ceil`, `floor`, `round`, `sqrt`, `pow`, `exp`, `ln`, `log`, `log10`, `log2`, `atan`, `atan2`, `sin`, `cos`, `tan` |
-| String | `concat`, `length`, `lower`, `upper`, `trim`, `ltrim`, `rtrim`, `substring`, `replace`, `reverse`, `position`, `left`, `right` |
+| String | `concat`, `length`, `lower`, `upper`, `trim`, `ltrim`, `rtrim`, `substring`, `replace`, `reverse`, `position`, `left`, `right`, `mvjoin`, `regex_match` |
 | Condition | `if`, `ifnull`, `nullif`, `coalesce`, `case`, `isnull`, `isempty`, `isblank`, `ispresent` |
 | Geo | `geoip`, `cidrmatch` |
 | Date/Time | `now`, `curdate`, `curtime`, `date`, `time`, `timestamp`, `date_add`, `date_sub`, `datediff`, `timediff`, `time_to_sec` |
@@ -236,7 +237,6 @@ POST /_plugins/_ppl
 
 ## Limitations
 
-- Calcite engine is experimental
 - Only PPL queries optimized by Calcite (SQL support planned)
 - JOIN queries auto-terminate after 60 seconds
 - `dedup` with `consecutive=true` not supported
@@ -245,11 +245,18 @@ POST /_plugins/_ppl
 - Subquery in FROM clause has limited support
 - `eventstats` supports basic aggregate functions; advanced window functions (ROW_NUMBER, RANK, etc.) planned for future releases
 - `flatten` works only with struct/object fields, not arrays
+- `timechart` does not support pivot formatting or multiple aggregation functions
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4372](https://github.com/opensearch-project/sql/pull/4372) | Enable Calcite by default and implicit fallback for unsupported commands |
+| v3.3.0 | [#4353](https://github.com/opensearch-project/sql/pull/4353) | Enhance cost computing mechanism and push down context |
+| v3.3.0 | [#4279](https://github.com/opensearch-project/sql/pull/4279) | Push down project operator with non-identity projections into scan |
+| v3.3.0 | [#4217](https://github.com/opensearch-project/sql/pull/4217) | `mvjoin` support in PPL Calcite |
+| v3.3.0 | [#4092](https://github.com/opensearch-project/sql/pull/4092) | Add `regex_match` function for PPL with Calcite engine support |
+| v3.3.0 | [#3993](https://github.com/opensearch-project/sql/pull/3993) | Support `timechart` command with Calcite |
 | v3.2.0 | [#3620](https://github.com/opensearch-project/sql/pull/3620) | Support Sort pushdown |
 | v3.2.0 | [#3916](https://github.com/opensearch-project/sql/pull/3916) | Support aggregation push down with scripts |
 | v3.2.0 | [#3850](https://github.com/opensearch-project/sql/pull/3850) | Support partial filter push down |
@@ -304,6 +311,7 @@ POST /_plugins/_ppl
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Calcite enabled by default (`plugins.calcite.enabled=true`); implicit fallback to V2 for unsupported commands; new functions (`mvjoin`, `regex_match`); `timechart` command for time-series aggregation; enhanced cost computing mechanism; project pushdown optimization for non-identity projections
 - **v3.2.0** (2026-01-11): Major pushdown expansion - sort, aggregation with scripts, partial filter, span, relevance queries, Sarg values; secure RelJson serialization for filter scripts; performance optimization skipping codegen for simple queries (~30% improvement); v2 fallback disabled by default; new UDFs (compare_ip, IP casting); function argument coercion
 - **v3.1.0** (2026-01-10): Expanded command support - eventstats (window functions), flatten, expand, trendline, appendcol, grok, top/rare, fillnull, describe, patterns; new functions (coalesce, isempty, isblank, ispresent, geoip, cidrmatch); performance optimizations (LIMIT pushdown, row count estimation, ResourceMonitor)
 - **v3.0.0** (2025-05-06): Initial implementation - Apache Calcite integration, join/lookup/subsearch commands, UDF framework, custom type system, thread pool execution, enhanced explain output
