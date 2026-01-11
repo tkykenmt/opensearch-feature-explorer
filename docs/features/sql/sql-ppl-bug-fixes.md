@@ -98,6 +98,18 @@ SELECT UNIX_TIMESTAMP('2025-01-10 12:30:45.123') as ts FROM my_index
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix count(*) and dc(field) to be capped at MAX_INTEGER |
+| v3.3.0 | [#4407](https://github.com/opensearch-project/sql/pull/4407) | Mod function should return decimal instead of float |
+| v3.3.0 | [#4401](https://github.com/opensearch-project/sql/pull/4401) | Scale of decimal literal should always be positive in Calcite |
+| v3.3.0 | [#4388](https://github.com/opensearch-project/sql/pull/4388) | Fix bug of missed analyzed node when pushdown filter for Search call |
+| v3.3.0 | [#4381](https://github.com/opensearch-project/sql/pull/4381) | Fix parse related functions return behavior in case of NULL input |
+| v3.3.0 | [#4377](https://github.com/opensearch-project/sql/pull/4377) | Prevent limit pushdown before action building |
+| v3.3.0 | [#4369](https://github.com/opensearch-project/sql/pull/4369) | No index found with given index pattern should throw IndexNotFoundException |
+| v3.3.0 | [#4360](https://github.com/opensearch-project/sql/pull/4360) | Fix ClassCastException for value-storing aggregates on nested PPL fields |
+| v3.3.0 | [#4352](https://github.com/opensearch-project/sql/pull/4352) | Change Anonymizer to mask PPL |
+| v3.3.0 | [#4334](https://github.com/opensearch-project/sql/pull/4334) | Fix alphanumeric search which starts with number |
+| v3.3.0 | [#4325](https://github.com/opensearch-project/sql/pull/4325) | Fix geopoint issue in complex data types |
+| v3.3.0 | [#3613](https://github.com/opensearch-project/sql/pull/3613) | Bugfix: SQL type mapping for legacy JDBC output |
 | v3.1.0 | [#3693](https://github.com/opensearch-project/sql/pull/3693) | Fix error when pushing down script filter with struct field |
 | v3.1.0 | [#3674](https://github.com/opensearch-project/sql/pull/3674) | Fix alias type referring to nested field |
 | v3.1.0 | [#3660](https://github.com/opensearch-project/sql/pull/3660) | Fix: Long IN-lists causes crash |
@@ -132,4 +144,5 @@ SELECT UNIX_TIMESTAMP('2025-01-10 12:30:45.123') as ts FROM my_index
 
 ## Change History
 
+- **v3.3.0** (2026-01): 26 bug fixes including count overflow handling (integer to bigint), decimal precision fixes (MOD function, negative scale), nested field aggregation ClassCastException fix, parse/grok/patterns NULL handling, alphanumeric search grammar fix, IndexNotFoundException for missing patterns, legacy JDBC type mapping, and extensive documentation/CI improvements
 - **v3.1.0** (2025-06): 17 bug fixes including long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling improvements, and Calcite engine stability
