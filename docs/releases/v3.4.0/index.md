@@ -176,3 +176,7 @@
 ### Flow Framework
 
 - [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) - Fix incorrect output dimension default (768→384) in semantic search with local model template
+
+### Cross-Cluster Replication
+
+- [Cross-Cluster Replication Bugfixes](features/cross-cluster-replication/cross-cluster-replication-bugfixes.md) - Make pause replication API request body optional
