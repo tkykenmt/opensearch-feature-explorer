@@ -157,6 +157,10 @@
 
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md) - Agent type update validation, QueryPlanningTool model ID parsing, tool config empty values, agentic memory multi-node fixes
 
+### Skills
+
+- [Skills Log Insight](features/skills/skills-log-insight.md) - Increase max_sample_count from 2 to 5 for log insight in LogPatternAnalysisTool
+
 ### OpenSearch Remote Metadata SDK
 
 - [Remote Model Bugfixes](features/opensearch-remote-metadata-sdk/remote-model-bugfixes.md) - Fix error when updating global model status in DynamoDB backend
