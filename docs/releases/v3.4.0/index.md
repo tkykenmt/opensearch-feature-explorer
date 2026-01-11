@@ -46,6 +46,7 @@
 - [Security Bugfixes](features/security/security-bugfixes.md) - Multi-tenancy `.kibana` index fix, WildcardMatcher empty string handling, DLS/FLS internal request fix, PrivilegesEvaluator modularization
 - [Security Configuration](features/security/security-configuration.md) - Dedicated config reloading thread, dynamic resource settings, X509v3 SAN authentication, performance optimizations, securityadmin timeout
 - [Security Features](features/security/security-features.md) - Webhook Basic Auth, REST header propagation, system indices deprecation, static/custom config overlap, search relevance permissions
+- [WLM Security Attributes](features/security/wlm-security-attributes.md) - Security attribute extraction for WLM rule-based auto-tagging (username, roles)
 - [GitHub Actions Updates](features/security/github-actions-updates.md) - Update GitHub Actions dependencies to support Node.js 24 runtime
 
 ### Security Dashboards Plugin
