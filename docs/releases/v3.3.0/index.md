@@ -108,6 +108,10 @@
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
 - [Semantic Field MultiFields Fix](features/neural-search/semantic-field-multifields-fix.md)
 
+### k-NN
+
+- [k-NN Bug Fixes](features/k-nn/k-nn-bug-fixes.md)
+
 ### Geospatial
 
 - [Geospatial Deprecation Fixes](features/geospatial/geospatial-deprecation-fixes.md)
