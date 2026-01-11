@@ -83,6 +83,7 @@ Configure in `opensearch.yml`:
 | `s3.client.default.endpoint` | Custom S3 endpoint |
 | `s3.client.default.region` | AWS region |
 | `s3.client.default.protocol` | HTTP or HTTPS |
+| `s3.client.default.legacy_md5_checksum_calculation` | Enable legacy MD5 checksum for S3-compatible storage (v3.4.0+) |
 
 ### Usage Example
 
@@ -210,6 +211,7 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19788](https://github.com/opensearch-project/OpenSearch/pull/19788) | Add LEGACY_MD5_CHECKSUM_CALCULATION to repository-s3 settings list |
 | v3.3.0 | [#18800](https://github.com/opensearch-project/OpenSearch/pull/18800) | Switch default async HTTP client to AWS CRT for improved throughput |
 | v3.3.0 | [#19220](https://github.com/opensearch-project/OpenSearch/pull/19220) | Fix S3-compatible repository checksum trailing headers issue |
 | v3.1.0 | [#18312](https://github.com/opensearch-project/OpenSearch/pull/18312) | Add support for SSE-KMS and S3 bucket owner verification |
@@ -219,6 +221,7 @@ graph TB
 
 ## References
 
+- [PR #19788](https://github.com/opensearch-project/OpenSearch/pull/19788): Add LEGACY_MD5_CHECKSUM_CALCULATION to settings list
 - [PR #18800](https://github.com/opensearch-project/OpenSearch/pull/18800): AWS CRT async HTTP client implementation
 - [Issue #18535](https://github.com/opensearch-project/OpenSearch/issues/18535): Feature request for S3CrtClient support
 - [PR #19220](https://github.com/opensearch-project/OpenSearch/pull/19220): S3-compatible repository checksum fix
@@ -235,6 +238,7 @@ graph TB
 
 ## Change History
 
+- **v3.4.0** (2025-10): Added `legacy_md5_checksum_calculation` to opensearch.yml settings for S3-compatible storage configuration
 - **v3.3.0** (2025-09): Switched default async HTTP client to AWS CRT for ~5-7% throughput improvement; added `s3_async_client_type` setting
 - **v3.3.0** (2025-09): Fixed S3-compatible repository compatibility by making checksum trailing headers conditional
 - **v3.1.0** (2025-07): Added SSE-KMS support, bucket owner verification, removed legacy server_side_encryption setting
