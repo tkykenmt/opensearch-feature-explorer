@@ -10,6 +10,7 @@
 - [Dashboards Query Action Service](features/opensearch-dashboards/dashboards-query-action-service.md) - Flyout registration support for query panel actions
 - [Dashboards Workspace](features/opensearch-dashboards/dashboards-workspace.md) - Remove restriction requiring data source for workspace creation
 - [Dashboards Traces](features/opensearch-dashboards/dashboards-traces.md) - Span status filters and trace details UX improvements
+- [Dashboards Logs View](features/opensearch-dashboards/dashboards-logs-view.md) - Redesigned logs tab with expandable rows and multiple dataset support
 
 ## Bug Fixes
 
