@@ -125,6 +125,10 @@
 
 - [Geospatial Deprecation Fixes](features/geospatial/geospatial-deprecation-fixes.md)
 
+### Index Management
+
+- [Index Management Enhancements](features/index-management/index-management-enhancements.md)
+
 ### Query Insights
 
 - [Query Insights Bug Fixes](features/query-insights/query-insights-bug-fixes.md)
