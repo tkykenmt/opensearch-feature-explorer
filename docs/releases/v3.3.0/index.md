@@ -120,6 +120,10 @@
 
 - [Reporting CVE Fixes](features/reporting/reporting-cve-fixes.md)
 
+### Search Relevance
+
+- [Search Relevance Fixes](features/search-relevance/search-relevance-fixes.md)
+
 ### CI/CD
 
 - [CI/CD Workflow Updates](features/ci/cd-workflow-updates.md)

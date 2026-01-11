@@ -195,6 +195,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.1.0 | [#99](https://github.com/opensearch-project/search-relevance/pull/99) | Change model for Experiment and Evaluation Result entities |
 | v3.1.0 | [#116](https://github.com/opensearch-project/search-relevance/pull/116) | Add text validation and query set file size check |
 | v3.1.0 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer |
+| v3.3.0 | [#230](https://github.com/opensearch-project/search-relevance/pull/230) | Fix ImportJudgmentsProcessor to handle numeric ratings |
 
 ## References
 
@@ -216,9 +217,11 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - [Issue #543](https://github.com/opensearch-project/dashboards-search-relevance/issues/543): Backend plugin disabled messaging
 - [Issue #557](https://github.com/opensearch-project/dashboards-search-relevance/issues/557): Pipeline error when no pipelines exist
 - [Issue #584](https://github.com/opensearch-project/dashboards-search-relevance/issues/584): Validation results overflow
+- [Issue #229](https://github.com/opensearch-project/search-relevance/issues/229): Numeric rating type casting bug
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Bug fix - ImportJudgmentsProcessor now handles numeric ratings (integers, floats) in addition to strings, and preserves original judgment order
 - **v3.2.0** (2026-01-11): Major enhancements - new default SRW UI, dashboard visualization for experiments, polling mechanism for status updates, date filtering for implicit judgments, task scheduling for experiments
 - **v3.2.0** (2026-01-10): Bug fixes - backend plugin disabled messaging, pipeline error suppression, validation results overflow, Venn diagram statistics, REST API error status, input validation, pipeline parameter fix
 - **v3.2.0** (2026-01-10): Fixed toast notification error messages not rendering correctly across multiple UI components
