@@ -128,6 +128,8 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#878](https://github.com/opensearch-project/common-utils/pull/878) | Update user attributes XContent parsing logic |
+| v3.3.0 | [#860](https://github.com/opensearch-project/common-utils/pull/860) | Update delete_backport_branch workflow to include release-chores branches |
 | v3.3.0 | [#869](https://github.com/opensearch-project/common-utils/pull/869) | Backport release notes for 2.13 to main branch |
 | v3.2.0 | [#850](https://github.com/opensearch-project/common-utils/pull/850) | Pinned commons-beanutils dependency to fix CVE-2025-48734 |
 | v3.2.0 | [#847](https://github.com/opensearch-project/common-utils/pull/847) | Revert PublishFindingsRequest to use a list of findings |
@@ -142,9 +144,11 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 - [CVE-2025-48734 Advisory](https://advisories.opensearch.org/advisories/CVE-2025-48734): Security advisory for commons-beanutils
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username pipe character issue
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Manage CCR follower indices
+- [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Custom attributes for Alerting
 
 ## Change History
 
+- **v3.3.0** (2025-10-16): Updated user attributes XContent parsing to use `key=value` format in `custom_attribute_names`, updated delete_backport_branch workflow to include release-chores branches
 - **v3.3.0** (2025-10-16): Added release notes for version 2.13.0.0 (backported to main branch)
 - **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
 - **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info
