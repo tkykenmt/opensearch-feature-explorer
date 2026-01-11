@@ -38,6 +38,7 @@
 - [Pull-based Ingestion Bugfixes](features/opensearch/pull-based-ingestion-bugfixes.md) - Fix out-of-bounds offset handling and remove persisted pointers for at-least-once guarantees
 - [Query Bugfixes](features/opensearch/query-bugfixes.md) - Fix crashes in wildcard queries, aggregations, highlighters, and script score queries
 - [Reactor Netty Transport](features/opensearch/reactor-netty-transport.md) - Fix HTTP channel tracking and release during node shutdown
+- [Shard Allocation](features/opensearch/shard-allocation.md) - Fix WeightFunction constraint reset when updating balance factors
 - [Shard & Segment Bugfixes](features/opensearch/shard-segment-bugfixes.md) - Fix merged segment warmer exceptions, ClusterService state assertion, and EngineConfig builder
 - [Snapshot & Restore Bugfixes](features/opensearch/snapshot-restore-bugfixes.md) - Fix NullPointerException when restoring remote snapshot with missing shard size information
 

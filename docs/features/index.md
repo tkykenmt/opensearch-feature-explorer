@@ -153,6 +153,7 @@
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Semantic Version Field Type](opensearch/semantic-version-field-type.md)
 - [Settings Management](opensearch/settings-management.md)
+- [Shard Allocation](opensearch/shard-allocation.md)
 - [Skip List](opensearch/skip-list.md)
 - [Snapshot Restore Enhancements](opensearch/snapshot-restore-enhancements.md)
 - [Star Tree Index](opensearch/star-tree-index.md)
