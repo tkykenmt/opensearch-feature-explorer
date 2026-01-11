@@ -149,6 +149,7 @@
 
 ### Query Insights Dashboards
 
+- [Query Version-Aware Settings](features/query-insights-dashboards/query-version-aware-settings.md) - Version-aware settings support for dynamic feature detection based on cluster version
 - [WLM Dashboards Bugfixes](features/query-insights-dashboards/wlm-dashboards-bugfixes.md) - Fix MDS selector visibility on Workload Management pages when new home page UI is enabled
 - [Query Insights Bugfixes](features/query-insights-dashboards/query-insights-bugfixes.md) - Exclude internal `top_queries-*` indices, MDS support for WLM routes, Jest test fixes
 
