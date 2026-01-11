@@ -10,6 +10,7 @@
 - [Context Aware Segments](features/opensearch/context-aware-segments.md) - Collocate related documents into same segments based on grouping criteria for improved query performance
 - [Dependency Updates (OpenSearch Core)](features/opensearch/dependency-updates-opensearch-core.md) - 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness
 - [Engine Refactoring](features/opensearch/engine-refactoring.md) - Move prepareIndex/prepareDelete to Engine class and make NoOpResult constructors public
+- [FIPS Compliance](features/opensearch/fips-compliance.md) - Test suite FIPS 140-3 compliance support with BC-FIPS provider
 - [JDK 25 Support](features/opensearch/jdk-25-support.md) - Painless scripting compatibility fix for JDK 25 ClassValue behavioral change
 - [Lucene Integration](features/opensearch/lucene-integration.md) - Remove MultiCollectorWrapper and use Lucene's native MultiCollector API
 - [Lucene Upgrade](features/opensearch/lucene-upgrade.md) - Bump Apache Lucene from 10.3.1 to 10.3.2 with MaxScoreBulkScorer bug fix
