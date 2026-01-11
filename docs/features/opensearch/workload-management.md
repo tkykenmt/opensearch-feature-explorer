@@ -289,6 +289,7 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.4.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Security attribute feature for WLM dashboard |
 | v3.3.0 | [#19599](https://github.com/opensearch-project/OpenSearch/pull/19599) | OpenSearch | Fix auto tagging label resolving logic for principal attributes |
 | v3.3.0 | [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | OpenSearch | Bug fix on Update Rule API with multiple attributes |
 | v3.3.0 | [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | OpenSearch | Add autotagging label resolving logic for multiple attributes |
@@ -331,6 +332,7 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Security plugin integration for WLM auto-tagging now available as a stable feature; Added `PrincipalAttribute`, `PrincipalExtractor`, `PrincipalAttributeExtractorExtension`, and `PrincipalAttributesExtension` components in Security plugin to extract username and roles from authenticated requests; Security plugin now depends on `workload-management-wlm-spi` (optional) and `autotagging-commons-spi` for SPI integration (PR #5606)
 - **v3.3.0** (2026-01-10): Added security attributes support (`principal.username`, `principal.role`) for rule-based auto-tagging via Security plugin integration (PR #5606); Implemented multi-attribute label resolving logic with priority-based scoring via `FeatureValueResolver` and `MatchLabel`; Restructured in-memory trie to store values as sets for multiple labels per attribute key; Enhanced GET Rule API to support filtering by nested attributes; Added comprehensive integration tests for auto-tagging scenarios; Fixed Update Rule API handling for multiple attributes; Fixed principal attribute scoring to correctly assign 0.0 for unspecified attributes (PR #19599)
 - **v3.2.0** (2026-01-10): Added WLM mode validation for workload group CRUD requests (Create/Update/Delete operations now fail when WLM mode is `disabled` or `monitor_only`); Added `WlmClusterSettingValuesProvider` component for centralized cluster settings management; Renamed `WorkloadGroupTestUtil` to `WorkloadManagementTestUtil`; Updated all "QueryGroup" references to "WorkloadGroup" in comments and Javadocs; Improved logging to dynamically show actual resiliency mode; Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules; Bug fixes including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
 - **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
