@@ -129,6 +129,10 @@
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
 
+### Neural Search
+
+- [SEISMIC Bugfixes](features/neural-search/seismic-bugfixes.md) - Fix IT failures in multi-node environments, query handling without method_parameters, and disk space recovery on index deletion
+
 ### Learning to Rank
 
 - [Learning to Rank Bugfixes](features/learning/learning-to-rank-bugfixes.md) - Legacy version ID fix, integration test stability, rescore-only SLTR logging fix
