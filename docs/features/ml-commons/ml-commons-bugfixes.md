@@ -103,6 +103,13 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#4341](https://github.com/opensearch-project/ml-commons/pull/4341) | Fix agent type update - make type immutable |
+| v3.4.0 | [#4458](https://github.com/opensearch-project/ml-commons/pull/4458) | Fix model ID parsing for QueryPlanningTool in agentic search |
+| v3.4.0 | [#4479](https://github.com/opensearch-project/ml-commons/pull/4479) | Handle edge case of empty values in tool configs |
+| v3.4.0 | [#4476](https://github.com/opensearch-project/ml-commons/pull/4476) | Fix several bugs on agentic memory (multi-node, context, NPE) |
+| v3.4.0 | [#4410](https://github.com/opensearch-project/ml-commons/pull/4410) | Fix tool error message escaping in MLChatAgentRunner |
+| v3.4.0 | [#4450](https://github.com/opensearch-project/ml-commons/pull/4450) | Remove sensitive error log on request body |
+| v3.4.0 | [#4472](https://github.com/opensearch-project/ml-commons/pull/4472) | Fix OpenAI RAG integration tests |
 | v3.3.0 | [#4138](https://github.com/opensearch-project/ml-commons/pull/4138) | Agent/Tool Parsing Fixes |
 | v3.3.0 | [#4189](https://github.com/opensearch-project/ml-commons/pull/4189) | Fix NPE when execute flow agent with multi tenancy is off |
 | v3.3.0 | [#4263](https://github.com/opensearch-project/ml-commons/pull/4263) | Exception handling for runtime exceptions during async execution |
@@ -152,6 +159,9 @@ graph TB
 
 ## References
 
+- [Issue #4340](https://github.com/opensearch-project/ml-commons/issues/4340): Update agent API silently fails when changing agent type
+- [Issue #4424](https://github.com/opensearch-project/ml-commons/issues/4424): Updating conversational agents causes agentic search to fail
+- [Issue #4477](https://github.com/opensearch-project/ml-commons/issues/4477): Conversational agent execution fails with remote Claude models for certain tool configs
 - [Issue #4135](https://github.com/opensearch-project/ml-commons/issues/4135): Agent parsing issue
 - [Issue #4136](https://github.com/opensearch-project/ml-commons/issues/4136): Empty LLM content issue
 - [Issue #4137](https://github.com/opensearch-project/ml-commons/issues/4137): Steps with commas issue
@@ -169,6 +179,7 @@ graph TB
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): 7 bug fixes including agent type update validation, QueryPlanningTool model ID parsing, tool config empty values handling, agentic memory multi-node fixes, error message escaping, and sensitive log removal
 - **v3.3.0** (2025-10-15): 29 bug fixes including Agent Framework parsing fixes, Agentic Memory validation and security improvements, multi-tenancy NPE fix, RAG response fix for search templates, metrics correlation fix, and various serialization/parsing fixes
 - **v3.1.0** (2025-07-15): Hidden model trusted connector bypass, enhanced deploy/undeploy logging, HTTP client alignment, core EnumSet API integration, SearchIndexTool MCP compatibility, commons-beanutils CVE fix
 - **v2.18.0** (2024-11-05): Multiple bugfixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC, and agent logging
