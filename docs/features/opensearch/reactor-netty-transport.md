@@ -105,6 +105,7 @@ The Reactor Netty transport enables several advanced features:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#20106](https://github.com/opensearch-project/OpenSearch/pull/20106) | Keep track and release accepted Http Channels during Node shutdown |
 | v3.3.0 | [#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Fix SslHandler retrieval for Security plugin compatibility |
 | v3.2.0 | - | Added `SecureHttpTransportParameters` interface |
 | v2.17.0 | - | Initial streaming support |
@@ -118,6 +119,7 @@ The Reactor Netty transport enables several advanced features:
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Fixed HTTP channel tracking and release during node shutdown, resolving flaky test failures
 - **v3.3.0** (2025-09-29): Fixed SslHandler retrieval logic for Security plugin compatibility, added clientAuth support
 - **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface for cleaner SSL configuration
 - **v2.17.0** (2024-09-17): Initial streaming support with reactor-netty4 transport
