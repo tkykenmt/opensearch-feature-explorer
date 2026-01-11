@@ -50,6 +50,7 @@
 
 - [Java Agent](features/opensearch/java-agent.md) - Fix JRT protocol URL filtering to allow MCP server connections
 - [Bulk Request Bugfixes](features/opensearch/bulk-request-bugfixes.md) - Fix indices property initialization during BulkRequest deserialization
+- [Bulk API Enhancements](features/opensearch/bulk-api-enhancements.md) - Implement error_trace parameter support for bulk requests
 - [Cluster State & Allocation Bugfixes](features/opensearch/cluster-state-allocation-bugfixes.md) - Fix concurrent modification in allocation filters and version compatibility in remote state
 - [Data Stream & Index Template Bugfixes](features/opensearch/data-stream-index-template-bugfixes.md) - Fix deletion of unused index templates matching data streams with lower priority
 - [GRPC Transport Bugfixes](features/opensearch/grpc-transport-bugfixes.md) - Fix ClassCastException for large requests, Bulk API fixes, and node bootstrap with streaming transport
