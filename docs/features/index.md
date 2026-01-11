@@ -226,6 +226,7 @@
 - [Alerting Comments Security](security/alerting-comments-security.md)
 - [Argon2 Password Hashing](security/argon2-password-hashing.md)
 - [Auxiliary Transport SSL](security/auxiliary-transport-ssl.md)
+- [Client Certificate Authentication](security/client-certificate-authentication.md)
 - [Correlation Alerts](security/correlation-alerts.md)
 - [Protobufs Version Synchronization](security/protobufs-version-sync.md)
 - [Security Auth Enhancements](security/security-auth-enhancements.md)
