@@ -155,6 +155,7 @@
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
 - [k-NN Enhancements](features/k-nn/k-nn-enhancements.md) - Native SIMD scoring for FP16, VectorSearcherHolder memory optimization, MMR rerank refactoring
+- [k-NN Memory Optimized Warmup](features/k-nn/k-nn-memory-optimized-warmup.md) - Optimized warmup procedure for memory-optimized search with page cache pre-loading
 
 ### Neural Search
 

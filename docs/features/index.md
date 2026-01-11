@@ -525,6 +525,7 @@
 - [k-NN Model Metadata](k-nn/k-nn-model-metadata.md)
 - [k-NN Query Rescore](k-nn/k-nn-query-rescore.md)
 - [k-NN Space Type Configuration](k-nn/k-nn-space-type-configuration.md)
+- [k-NN Memory Optimized Warmup](k-nn/k-nn-memory-optimized-warmup.md)
 - [Lucene On Faiss (Memory Optimized Search)](k-nn/lucene-on-faiss.md)
 - [Remote Vector Index Build](k-nn/remote-vector-index-build.md)
 
