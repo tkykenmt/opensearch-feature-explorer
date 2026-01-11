@@ -1,5 +1,11 @@
 # OpenSearch v3.4.0 Release
 
+## Features
+
+### OpenSearch Dashboards
+
+- [Dashboards Data Connections](features/opensearch-dashboards/dashboards-data-connections.md) - Prometheus saved object support for data connections
+
 ## Bug Fixes
 
 ### OpenSearch Dashboards

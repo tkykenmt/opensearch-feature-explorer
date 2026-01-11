@@ -14,6 +14,7 @@ graph TB
         UI[Data Connections UI]
         DSM[Data Source Management Plugin]
         API[Data Connections API]
+        SO[Saved Objects Service]
     end
     
     subgraph "Connection Types"
@@ -29,12 +30,15 @@ graph TB
     subgraph "OpenSearch Cluster"
         LOCAL[Local Cluster]
         REMOTE[Remote Clusters]
+        SAVED[Saved Objects Index]
     end
     
     UI --> DSM
     DSM --> API
     API --> OSC
     API --> DQC
+    API --> SO
+    SO --> SAVED
     OSC --> LOCAL
     OSC --> REMOTE
     DQC --> S3
@@ -118,6 +122,7 @@ data_source:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#10968](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10968) | Create saved object for prometheus data-connection |
 | v2.18.0 | [#8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255) | Support data connections and multi-select table in dataset picker |
 | v2.18.0 | [#8460](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8460) | Replace segmented button with tabs |
 | v2.18.0 | [#8492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8492) | Add DataSource type display and Discover redirection |
@@ -132,11 +137,13 @@ data_source:
 
 - [Issue #8256](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8256): Redirection issue for direct query datasource
 - [Issue #8536](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8536): Deprecate non-MDS data connection endpoint
-- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official documentation
-- [Multi-Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Configuring multiple data sources
+- [RFC #9535](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9535): Prometheus as first-class datasource proposal
+- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Official documentation
+- [Multi-Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring multiple data sources
 
 ## Change History
 
+- **v3.4.0** (2025-03-11): Prometheus saved object support - Prometheus connections now stored as `data-connection` saved objects with MDS support, added "No Auth" authentication option
 - **v2.18.0** (2024-10-22): Dataset picker data connections support (multi-select table, pagination, search), UI improvements (tabs navigation, type display), MDS endpoint unification, auto-complete MDS support, fit and finish fixes
 - **v2.17.0** (2024-09-17): Added data-connection saved object type for external connections (CloudWatch, Security Lake)
 - **v2.16.0**: Initial migration of direct query data source to data source management plugin
