@@ -89,6 +89,7 @@ The plugin uses the following URL parameters for state management:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#393](https://github.com/opensearch-project/dashboards-notifications/pull/393) | Fix channel name edit refetching on every keystroke |
 | v2.18.0 | [#256](https://github.com/opensearch-project/dashboards-notifications/pull/256) | Fit & Finish - semantic headers, text sizes, context menus |
 | v2.18.0 | [#263](https://github.com/opensearch-project/dashboards-notifications/pull/263) | Fit & Finish UX Fixes - spacing, full-width content |
 | v2.18.0 | [#270](https://github.com/opensearch-project/dashboards-notifications/pull/270) | Fit & Finish UX Fixes Pt 2 - filter separation, default pill |
@@ -110,6 +111,7 @@ The plugin uses the following URL parameters for state management:
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Fixed channel name edit UX regression - prevented unnecessary API refetching on every keystroke when editing channel names
 - **v2.18.0** (2024-11-05): Fit & Finish UX improvements - standardized semantic headers (H1/H2/H3), consistent text sizes, smaller context menus, 16px content-to-header spacing, full-width content sections, separated table filters, added default pill to encryption method dropdown. Also fixed default data source selection and typo in recipient groups UI.
 - **v2.17.0** (2024-09-17): Changed navigation parent item name to "Notification channels", added description for left navigation, fixed link checker CI, added dataSourceId persistence for new navigation
 - **v2.15.0**: Bug fixes for MDS support in getServerFeatures API
