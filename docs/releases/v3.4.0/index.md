@@ -30,6 +30,7 @@
 ### OpenSearch
 
 - [Bulk Request Bugfixes](features/opensearch/bulk-request-bugfixes.md) - Fix indices property initialization during BulkRequest deserialization
+- [Data Stream & Index Template Bugfixes](features/opensearch/data-stream-index-template-bugfixes.md) - Fix deletion of unused index templates matching data streams with lower priority
 
 ### OpenSearch Dashboards
 
