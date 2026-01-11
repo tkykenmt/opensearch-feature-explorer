@@ -44,6 +44,7 @@
 - [Composite Aggregation](opensearch/composite-aggregation.md)
 - [Composite Directory Factory](opensearch/composite-directory-factory.md)
 - [Concurrent Segment Search](opensearch/concurrent-segment-search.md)
+- [Context Aware Segments](opensearch/context-aware-segments.md)
 - [Crypto KMS Plugin](opensearch/crypto-kms-plugin.md)
 - [Custom Index Name Resolver](opensearch/custom-index-name-resolver.md)
 - [Data Stream & Index Template](opensearch/data-stream-index-template.md)

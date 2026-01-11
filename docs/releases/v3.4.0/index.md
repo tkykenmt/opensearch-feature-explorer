@@ -7,6 +7,7 @@
 - [Aggregation Optimizations](features/opensearch/aggregation-optimizations.md) - Hybrid cardinality collector, filter rewrite + skip list, MergingDigest for percentiles, matrix_stats primitive arrays
 - [Build Tool Upgrades](features/opensearch/build-tool-upgrades.md) - Gradle 9.1 and bundled JDK 25 updates
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md) - Performance optimization by omitting MaxScoreCollector when sorting by score
+- [Context Aware Segments](features/opensearch/context-aware-segments.md) - Collocate related documents into same segments based on grouping criteria for improved query performance
 - [Dependency Updates (OpenSearch Core)](features/opensearch/dependency-updates-opensearch-core.md) - 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness
 - [Engine Refactoring](features/opensearch/engine-refactoring.md) - Move prepareIndex/prepareDelete to Engine class and make NoOpResult constructors public
 - [JDK 25 Support](features/opensearch/jdk-25-support.md) - Painless scripting compatibility fix for JDK 25 ClassValue behavioral change
