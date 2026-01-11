@@ -116,6 +116,8 @@ opensearch-reporting-cli \
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#650](https://github.com/opensearch-project/dashboards-reporting/pull/650) | Bump jspdf to fix CVE-2025-57810 |
+| v3.4.0 | [#649](https://github.com/opensearch-project/dashboards-reporting/pull/649) | Undefined and null check for date time values |
 | v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation |
 | v3.0.0 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |
 | v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |
@@ -123,6 +125,7 @@ opensearch-reporting-cli \
 
 ## References
 
+- [Issue #308](https://github.com/opensearch-project/dashboards-reporting/issues/308): Undefined date throws error while creating CSV
 - [Issue #414](https://github.com/opensearch-project/dashboards-reporting/issues/414): Absolute date interval interpreted as relative to "now"
 - [Issue #401](https://github.com/opensearch-project/dashboards-reporting/issues/401): Reporting UI issue
 - [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting overview
@@ -131,5 +134,6 @@ opensearch-reporting-cli \
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Security fix for CVE-2025-57810 (jspdf bump), fixed null/undefined datetime handling in CSV reports
 - **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
 - **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component

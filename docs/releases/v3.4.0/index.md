@@ -98,6 +98,10 @@
 
 - [Observability CI/Tests](features/dashboards-observability/observability-ci-tests.md) - CI workflow updates for 3.4.0, snapshot repository migration, test snapshot updates
 
+### Dashboards Reporting
+
+- [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md) - Security fix for CVE-2025-57810 (jspdf bump) and null/undefined datetime handling in CSV reports
+
 ### User Behavior Insights
 
 - [User Behavior Insights Build](features/user-behavior-insights/user-behavior-insights-build.md) - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
