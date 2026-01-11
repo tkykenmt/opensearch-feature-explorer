@@ -69,6 +69,9 @@ GET /_nodes?filter_path=nodes.*.version
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#19296](https://github.com/opensearch-project/OpenSearch/pull/19296) | Bump Apache Lucene from 10.2.2 to 10.3.0 |
+| v3.3.0 | [k-NN#2878](https://github.com/opensearch-project/k-NN/pull/2878) | Fix KNN build due to Lucene 10.3 upgrade |
+| v3.3.0 | [custom-codecs#277](https://github.com/opensearch-project/custom-codecs/pull/277) | Update for Lucene 10.3 |
 | v3.3.0 | [#19397](https://github.com/opensearch-project/OpenSearch/pull/19397) | Migrate deprecated usages of Operations#union |
 | v3.1.0 | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Upgrade to Lucene 10.2.1 |
 | v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction |
@@ -79,6 +82,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 ## References
 
+- [Lucene 10.3.0 Changelog](https://lucene.apache.org/core/10_3_0/changes/Changes.html): Official Lucene 10.3.0 release notes
 - [Lucene 10.2.1 Changelog](https://lucene.apache.org/core/10_2_1/changes/Changes.html): Official Lucene 10.2.1 release notes
 - [Lucene 10.2.0 Changelog](https://lucene.apache.org/core/10_2_0/changes/Changes.html): Official Lucene 10.2.0 release notes
 - [Lucene 9.12.0 Changelog](https://lucene.apache.org/core/9_12_0/changes/Changes.html): Official Lucene 9.12.0 release notes
@@ -89,6 +93,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 ## Change History
 
+- **v3.3.0**: Upgrade to Apache Lucene 10.3.0. New KNN1030Codec for k-NN plugin, Lucene103 codecs for custom-codecs plugin. API changes include new `AcceptDocs` interface replacing `Bits` in vector search, and `IOContext` hints for optimized file access.
 - **v3.3.0**: Migrate deprecated `Operations#union(Automaton, Automaton)` usages to `Operations#union(Collection<Automaton>)` in AutomatonQueries, XContentMapValues, and SystemIndices classes.
 - **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager). Plugin updates: neural-search hybrid query refactoring, learning-to-rank RankerQuery fix.
 - **v3.0.0**: Upgrade to Apache Lucene 10
