@@ -75,6 +75,25 @@ graph TB
 | `no_alias` | Transition based on alias presence (true=no aliases, false=has aliases) | v3.2.0 |
 | `min_state_age` | Minimum time spent in current ISM state | v3.2.0 |
 
+### ISM Template Exclusion Patterns (v3.4.0+)
+
+ISM templates support exclusion patterns prefixed with `-` in the `index_patterns` array. This allows users to define broad inclusion patterns while excluding specific indices from automatic policy management.
+
+**Pattern Matching Rules:**
+- Patterns without `-` prefix are inclusion patterns
+- Patterns with `-` prefix are exclusion patterns
+- An index must match at least one inclusion pattern AND not match any exclusion pattern
+- At least one inclusion pattern is required (all-exclusion patterns are rejected)
+
+```mermaid
+flowchart TB
+    A[New Index Created] --> B{Match any inclusion pattern?}
+    B -->|No| C[Not Managed]
+    B -->|Yes| D{Match any exclusion pattern?}
+    D -->|Yes| C
+    D -->|No| E[Apply ISM Policy]
+```
+
 ### Configuration
 
 | Setting | Description | Default |
@@ -87,6 +106,51 @@ graph TB
 | `plugins.rollup.search.search_source_indices` | Allow searching non-rollup and rollup indices together (v2.18.0+) | `false` |
 
 ### Usage Example
+
+#### ISM Policy with Exclusion Patterns (v3.4.0+)
+
+```json
+PUT _plugins/_ism/policies/log_lifecycle
+{
+  "policy": {
+    "description": "Manage production logs, exclude test and debug",
+    "default_state": "hot",
+    "states": [
+      {
+        "name": "hot",
+        "transitions": [
+          {
+            "state_name": "warm",
+            "conditions": { "min_index_age": "7d" }
+          }
+        ]
+      },
+      {
+        "name": "warm",
+        "actions": [{ "read_only": {} }],
+        "transitions": [
+          {
+            "state_name": "delete",
+            "conditions": { "min_index_age": "30d" }
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "actions": [{ "delete": {} }]
+      }
+    ],
+    "ism_template": {
+      "index_patterns": ["logs-*", "-logs-test-*", "-logs-*-debug-*"],
+      "priority": 100
+    }
+  }
+}
+```
+
+This configuration will:
+- ✅ Manage: `logs-production-001`, `logs-staging-001`
+- ❌ Exclude: `logs-test-001`, `logs-production-debug-001`
 
 #### ISM Policy with Alias-Based and State-Age Transitions (v3.2.0+)
 
@@ -232,6 +296,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1509](https://github.com/opensearch-project/index-management/pull/1509) | Supporting Exclusion pattern in index pattern in ISM |
 | v3.4.0 | [#1529](https://github.com/opensearch-project/index-management/pull/1529) | Fix race condition in rollup start/stop tests |
 | v3.4.0 | [#1525](https://github.com/opensearch-project/index-management/pull/1525) | Fix ISM policy rebinding after removal |
 | v3.4.0 | [#1507](https://github.com/opensearch-project/index-management/pull/1507) | Fix ExplainSMPolicy serialization for null creation |
@@ -264,6 +329,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/)
 - [Index Transforms Documentation](https://docs.opensearch.org/3.0/im-plugin/index-transforms/index/)
 - [Index Management Security](https://docs.opensearch.org/3.0/im-plugin/security/)
+- [Issue #375](https://github.com/opensearch-project/index-management/issues/375): Feature request for ISM template exclusion patterns
 - [Issue #1439](https://github.com/opensearch-project/index-management/issues/1439): Feature request for no_alias and min_state_age
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Unfollow action feature request
 - [Issue #1075](https://github.com/opensearch-project/index-management/issues/1075): ISM listener blocking Cluster Applier thread
@@ -272,7 +338,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 ## Change History
 
-- **v3.4.0** (2026-01-11): Fixed ISM policy rebinding after removal (auto_manage setting check), fixed SM deletion snapshot pattern parsing for comma-separated values, fixed ExplainSMPolicy serialization for null creation field, fixed rollup start/stop test race conditions
+- **v3.4.0** (2026-01-11): Added ISM template exclusion pattern support using `-` prefix, fixed ISM policy rebinding after removal (auto_manage setting check), fixed SM deletion snapshot pattern parsing for comma-separated values, fixed ExplainSMPolicy serialization for null creation field, fixed rollup start/stop test race conditions
 - **v3.3.0** (2026-01-11): Fixed rollup aggregation reduction bug when searching rollup and raw indices together by using ScriptedAvg class, build fixes for upstream OpenSearch changes, dependency updates
 - **v3.2.0** (2026-01-10): Added `no_alias` and `min_state_age` transition conditions for ISM, registered ISM history index as System Index descriptor, fixed integration tests and lint errors
 - **v3.1.0** (2026-01-10): Fixed false positive notifications in Snapshot Management by suppressing user notifications for internal VersionConflictEngineException errors
