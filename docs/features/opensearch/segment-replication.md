@@ -67,6 +67,7 @@ flowchart TB
 | `cluster.index.restrict.replication.type` | Enforce cluster-level replication type | `false` |
 | `segrep.pressure.enabled` | Enable segment replication backpressure | `false` |
 | `cluster.routing.allocation.balance.prefer_primary` | Balance primary shards across nodes | `false` |
+| `indices.publish_check_point.retry_timeout` | Retry timeout for publish checkpoint action (v3.0.0+) | `5m` |
 
 ### Replication Metrics
 
@@ -125,6 +126,10 @@ GET _cat/segment_replication?v
 | v3.3.0 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit |
 | v3.3.0 | [#18997](https://github.com/opensearch-project/OpenSearch/pull/18997) | Fix NullPointerException in segment replicator |
 | v3.2.0 | [#18602](https://github.com/opensearch-project/OpenSearch/pull/18602) | Fix bugs in replication lag computation |
+| v3.0.0 | [#17055](https://github.com/opensearch-project/OpenSearch/pull/17055) | Implemented computation of segment replication stats at shard level |
+| v3.0.0 | [#17831](https://github.com/opensearch-project/OpenSearch/pull/17831) | Avoid skewed segment replication lag metric |
+| v3.0.0 | [#17568](https://github.com/opensearch-project/OpenSearch/pull/17568) | Increase the default segment counter step size when replica promoting |
+| v3.0.0 | [#17749](https://github.com/opensearch-project/OpenSearch/pull/17749) | Add cluster setting for retry timeout of publish checkpoint tx action |
 
 ## References
 
@@ -133,9 +138,14 @@ GET _cat/segment_replication?v
 - [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API for viewing metrics
 - [Issue #19213](https://github.com/opensearch-project/OpenSearch/issues/19213): Bug report for NRTReplicationEngine file deletion issue
 - [Issue #18437](https://github.com/opensearch-project/OpenSearch/issues/18437): Bug report for lag metric issue
+- [Issue #16801](https://github.com/opensearch-project/OpenSearch/issues/16801): Feature request for redefining segment replication metrics computation
+- [Issue #10764](https://github.com/opensearch-project/OpenSearch/issues/10764): Bug report for skewed lag metric
+- [Issue #17566](https://github.com/opensearch-project/OpenSearch/issues/17566): Feature request for increased segment counter step size
+- [Issue #17595](https://github.com/opensearch-project/OpenSearch/issues/17595): Bug report for segment replication stopping when publish checkpoint fails
 - [Segment Replication Blog](https://opensearch.org/blog/segment-replication/): Introduction blog post
 
 ## Change History
 
 - **v3.3.0** (2025-09-09): Fixed NullPointerException in SegmentReplicator.getSegmentReplicationStats() caused by race condition; Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
 - **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
+- **v3.0.0** (2025-05-13): Implemented shard-level stats computation on replicas; Fixed skewed lag metric when same checkpoint published twice; Increased default segment counter step size from 10 to 100,000; Added configurable publish checkpoint retry timeout setting
