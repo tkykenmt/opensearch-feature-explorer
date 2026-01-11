@@ -22,6 +22,7 @@
 - [Deprecated Code Cleanup](features/opensearch/deprecated-code-cleanup.md)
 - [Field Type Fixes](features/opensearch/field-type-fixes.md)
 - [Field Types](features/opensearch/field-types.md)
+- [Flat Object DocValues Retrieval](features/opensearch/flat-object-docvalues.md)
 - [Cluster Permissions](features/opensearch/cluster-permissions.md)
 - [gRPC Transport & Services](features/opensearch/grpc-transport--services.md)
 - [Mapping Transformer](features/opensearch/mapping-transformer.md)
