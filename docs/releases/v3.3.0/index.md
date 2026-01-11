@@ -87,6 +87,7 @@
 
 ### Security
 
+- [Rule-based Autotagging](features/security/rule-based-autotagging.md)
 - [Client Certificate Authentication - skip_users](features/security/security-client-certificate-authentication.md)
 - [JWT Authentication - Direct JWKS Support](features/security/jwt-authentication.md)
 - [Resource Access Control Documentation](features/security/resource-access-control-documentation.md)
