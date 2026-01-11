@@ -142,6 +142,8 @@ Requires ML agent configuration:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#550](https://github.com/opensearch-project/dashboards-assistant/pull/550) | Support log pattern in discover summary |
+| v3.4.0 | [#9693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9693) | Support log pattern agent in discover summary |
 | v3.2.0 | [#10345](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10345) | Fix empty page when no index patterns exist |
 | v3.2.0 | [#10315](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10315) | Add cypress tests for discover visualization |
 | v2.18.0 | [#8186](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8186) | Add data summary panel in discover |
@@ -165,5 +167,6 @@ Requires ML agent configuration:
 
 ## Change History
 
+- **v3.4.0** (2025-11-06): Added log pattern detection for Discover Summary - automatically uses specialized `os_data2summary_with_log_pattern` agent for log indexes
 - **v3.2.0** (2025-08-05): Fixed empty page issue when no index patterns exist, added Cypress tests for discover visualization
 - **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
