@@ -34,6 +34,7 @@
 - [Client API Enhancements](opensearch/client-api-enhancements.md)
 - [Cluster Stats API](opensearch/cluster-stats-api.md)
 - [Cluster Info & Resource Stats](opensearch/cluster-info-resource-stats.md)
+- [Cluster Management](opensearch/cluster-management.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
 - [Cluster State Caching](opensearch/cluster-state-caching.md)
 - [Cluster State & Allocation](opensearch/cluster-state-allocation.md)
