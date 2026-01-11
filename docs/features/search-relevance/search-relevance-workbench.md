@@ -195,6 +195,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.1.0 | [#99](https://github.com/opensearch-project/search-relevance/pull/99) | Change model for Experiment and Evaluation Result entities |
 | v3.1.0 | [#116](https://github.com/opensearch-project/search-relevance/pull/116) | Add text validation and query set file size check |
 | v3.1.0 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer |
+| v3.4.0 | [#260](https://github.com/opensearch-project/search-relevance/pull/260) | Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL |
 | v3.3.0 | [#230](https://github.com/opensearch-project/search-relevance/pull/230) | Fix ImportJudgmentsProcessor to handle numeric ratings |
 
 ## References
@@ -221,6 +222,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Bug fix - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL, enabling LTR rescore queries in experiments
 - **v3.3.0** (2026-01-11): Bug fix - ImportJudgmentsProcessor now handles numeric ratings (integers, floats) in addition to strings, and preserves original judgment order
 - **v3.2.0** (2026-01-11): Major enhancements - new default SRW UI, dashboard visualization for experiments, polling mechanism for status updates, date filtering for implicit judgments, task scheduling for experiments
 - **v3.2.0** (2026-01-10): Bug fixes - backend plugin disabled messaging, pipeline error suppression, validation results overflow, Venn diagram statistics, REST API error status, input validation, pipeline parameter fix
