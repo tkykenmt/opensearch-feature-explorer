@@ -79,3 +79,7 @@
 
 - [Dashboards Console](features/opensearch-dashboards/dashboards-console.md) - Fix for console_polling setting update
 - [Dashboards Navigation](features/opensearch-dashboards/dashboards-navigation.md) - Fix disabled prop propagation for navigation links
+
+### User Behavior Insights
+
+- [User Behavior Insights Build](features/user-behavior-insights/user-behavior-insights-build.md) - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
