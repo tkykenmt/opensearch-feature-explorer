@@ -58,6 +58,7 @@
 - [Track Total Hits](features/opensearch/track-total-hits.md)
 - [Wildcard Field](features/opensearch/wildcard-field.md)
 - [Search Replica & Reader-Writer Separation](features/opensearch/search-replica-reader-writer-separation.md)
+- [Search Utilities](features/opensearch/search-utilities.md)
 
 ## opensearch-dashboards
 
