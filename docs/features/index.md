@@ -187,6 +187,7 @@
 - [Content Management](opensearch-dashboards/content-management.md)
 - [Cross-Cluster Search](opensearch-dashboards/cross-cluster-search.md)
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
+- [Dashboards Console](opensearch-dashboards/dashboards-console.md)
 - [Dashboards Cypress Testing](opensearch-dashboards/dashboards-cypress-testing.md)
 - [Dashboards Frontend Cleanup](opensearch-dashboards/dashboards-frontend-cleanup.md)
 - [Dashboards Improvements](opensearch-dashboards/dashboards-improvements.md)
