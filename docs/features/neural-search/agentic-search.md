@@ -84,6 +84,18 @@ flowchart LR
 |---------|-------------|---------|-------|
 | `plugins.neural_search.agentic_search_enabled` | Enable/disable agentic search feature | `false` | Node, Dynamic |
 
+### Query Planning Tool Configuration (v3.3.0+)
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `question` | Natural language query (required) | - |
+| `index_name` | Target index name (required) | - |
+| `embedding_model_id` | Model ID for neural search queries | Optional |
+| `query_planner_system_prompt` | Custom system prompt for query planning | Default DSL generation prompt |
+| `query_planner_user_prompt` | Custom user prompt for query planning | Default with question, mapping, sample doc |
+| `template_selection_system_prompt` | Custom system prompt for template selection | Default template selection prompt |
+| `template_selection_user_prompt` | Custom user prompt for template selection | Default with inputs |
+
 ### Usage Example
 
 #### 1. Enable the Feature
@@ -153,6 +165,36 @@ GET /products/_search?search_pipeline=agentic_pipeline
 }
 ```
 
+#### 5. Using Conversational Agent (v3.3.0+)
+
+Create a conversational agent with a single model for both agent and QueryPlanningTool:
+
+```json
+POST /_plugins/_ml/agents/_register
+{
+  "name": "Agentic Search Conversational Agent",
+  "type": "conversational",
+  "llm": {
+    "model_id": "<your-llm-model-id>",
+    "parameters": {
+      "embedding_model_id": "<embedding-model-id-for-neural-search>"
+    }
+  },
+  "memory": {
+    "type": "conversation_index"
+  },
+  "parameters": {
+    "_llm_interface": "openai/v1/chat/completions"
+  },
+  "tools": [
+    {"type": "ListIndexTool"},
+    {"type": "IndexMappingTool"},
+    {"type": "QueryPlanningTool"},
+    {"type": "WebSearchTool", "parameters": {"engine": "duckduckgo"}}
+  ]
+}
+```
+
 ### Query Clause Parameters
 
 | Parameter | Type | Required | Description |
@@ -182,6 +224,8 @@ GET /products/_search?search_pipeline=agentic_pipeline
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [ml-commons#4203](https://github.com/opensearch-project/ml-commons/pull/4203) | Support Query Planner Tool with Conversational Agent |
+| v3.3.0 | [ml-commons#4262](https://github.com/opensearch-project/ml-commons/pull/4262) | Use same model for Agent and QPT |
 | v3.2.0 | [#1484](https://github.com/opensearch-project/neural-search/pull/1484) | Initial implementation of agentic search query clause and processor |
 
 ## References
@@ -191,7 +235,9 @@ GET /products/_search?search_pipeline=agentic_pipeline
 - [Agentic AI Documentation](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/index/): Agent tutorials
 - [ML Commons Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/index/): Agent framework documentation
 - [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Available tools for agents
+- [Agentic Search Setup](https://docs.opensearch.org/latest/vector-search/ai-search/agentic-search/index/): Setup documentation
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Conversational agent support, neural search query generation, unified model configuration, automatic index mapping and sample document retrieval
 - **v3.2.0** (2026-01-10): Initial experimental implementation with `agentic` query clause and `agentic_query_translator` processor
