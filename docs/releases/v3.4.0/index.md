@@ -93,6 +93,7 @@
 ### User Behavior Insights
 
 - [User Behavior Insights Build](features/user-behavior-insights/user-behavior-insights-build.md) - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
+- [User Behavior Insights Bugfixes](features/user-behavior-insights/user-behavior-insights-bugfixes.md) - ActionFilter interface adaptation, CI build script fix, plugin zip publishing fix
 
 ### Search Relevance
 

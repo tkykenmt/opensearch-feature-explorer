@@ -50,6 +50,9 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#142](https://github.com/opensearch-project/user-behavior-insights/pull/142) | Adapt ActionFilter interface to core change |
+| v3.4.0 | [#146](https://github.com/opensearch-project/user-behavior-insights/pull/146) | Export CI env var for depth=1 checkout |
+| v3.4.0 | [#151](https://github.com/opensearch-project/user-behavior-insights/pull/151) | Fix plugin publish zip errors |
 | v3.3.0 | [#128](https://github.com/opensearch-project/user-behavior-insights/pull/128) | Fix dependency errors for integration tests |
 
 ## References
@@ -57,7 +60,10 @@ graph TB
 - [User Behavior Insights Plugin](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
 - [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
 - [UBI Specification](https://github.com/o19s/ubi): Industry-standard UBI schema
+- [OpenSearch PR #18523](https://github.com/opensearch-project/OpenSearch/pull/18523): ActionFilter interface change in core
+- [Plugin Zip Publishing Blog](https://opensearch.org/blog/opensearch-plugin-zips-now-in-maven-repo/): OpenSearch plugin zip Maven publishing
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): ActionFilter interface adaptation, CI build script fix, plugin zip publishing fix
 - **v3.3.0** (2026-01-11): Fixed dependency version conflicts for integration tests
