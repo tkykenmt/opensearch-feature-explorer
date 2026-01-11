@@ -351,6 +351,7 @@
 - [PPL Documentation](sql/ppl-documentation.md)
 - [PPL Patterns Command](sql/ppl-patterns-command.md)
 - [PPL Query Enhancements](sql/ppl-query-enhancements.md)
+- [PPL Query Optimization](sql/ppl-query-optimization.md)
 - [PPL Rename Command](sql/ppl-rename-command.md)
 - [PPL Rex and Regex Commands](sql/ppl-rex-and-regex-commands.md)
 - [PPL Spath Command](sql/ppl-spath-command.md)
