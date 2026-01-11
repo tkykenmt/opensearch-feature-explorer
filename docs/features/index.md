@@ -264,6 +264,7 @@
 - [Security Configuration](security/security-configuration.md)
 - [Security Configuration Versioning](security/security-configuration-versioning.md)
 - [Security Debugging](security/security-debugging.md)
+- [Security Features](security/security-features.md)
 - [Security Permissions](security/security-permissions.md)
 - [Permission Validation](security/permission-validation.md)
 - [Security Performance Improvements](security/security-performance-improvements.md)
