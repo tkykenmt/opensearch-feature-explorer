@@ -131,6 +131,7 @@
 - [Query Phase Result Consumer](opensearch/query-phase-result-consumer.md)
 - [Query Rewriting](opensearch/query-rewriting.md)
 - [Query String & Regex Queries](opensearch/query-string-regex.md)
+- [Query String Monitoring](opensearch/query-string-monitoring.md)
 - [Randomness](opensearch/randomness.md)
 - [Reactor Netty Transport](opensearch/reactor-netty-transport.md)
 - [Refresh Task Scheduling](opensearch/refresh-task-scheduling.md)
