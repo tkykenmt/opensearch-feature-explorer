@@ -137,6 +137,10 @@
 
 - [Learning to Rank Bugfixes](features/learning/learning-to-rank-bugfixes.md) - Legacy version ID fix, integration test stability, rescore-only SLTR logging fix
 
+### ML Commons
+
+- [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md) - Agent type update validation, QueryPlanningTool model ID parsing, tool config empty values, agentic memory multi-node fixes
+
 ### OpenSearch Remote Metadata SDK
 
 - [Remote Model Bugfixes](features/opensearch-remote-metadata-sdk/remote-model-bugfixes.md) - Fix error when updating global model status in DynamoDB backend
