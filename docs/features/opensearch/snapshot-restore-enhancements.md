@@ -118,11 +118,13 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 - Clone optimization only benefits document replication clusters
 - Repository data fetch still required for remote store enabled clusters during clone
 - When repository is updated during snapshot creation, the snapshot operation will fail and must be retried
+- File cache validation may be less accurate when shard size information is unavailable (logs warning)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19684](https://github.com/opensearch-project/OpenSearch/pull/19684) | Fix NPE in validateSearchableSnapshotRestorable when shard size is unavailable |
 | v3.1.0 | [#17532](https://github.com/opensearch-project/OpenSearch/pull/17532) | Fix infinite loop when simultaneously creating snapshot and updating repository |
 | v3.1.0 | [#18218](https://github.com/opensearch-project/OpenSearch/pull/18218) | Avoid NPE on SnapshotInfo if 'shallow' boolean not present |
 | v2.18.0 | [#16292](https://github.com/opensearch-project/OpenSearch/pull/16292) | Add support for renaming aliases during snapshot restore |
@@ -130,6 +132,7 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 
 ## References
 
+- [Issue #19349](https://github.com/opensearch-project/OpenSearch/issues/19349): Bug report for NullPointerException when restoring remote snapshots with missing shard size
 - [Issue #17531](https://github.com/opensearch-project/OpenSearch/issues/17531): Bug report for infinite loop during concurrent snapshot/repository update
 - [Issue #18187](https://github.com/opensearch-project/OpenSearch/issues/18187): Bug report for NPE when restoring legacy searchable snapshots
 - [Issue #15632](https://github.com/opensearch-project/OpenSearch/issues/15632): Original feature request for alias renaming
@@ -139,5 +142,6 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Fixed NPE when restoring remote snapshots with missing shard size information in ClusterInfo cache
 - **v3.1.0** (2026-01-10): Fixed infinite loop when updating repository during snapshot creation; fixed NPE when restoring legacy searchable snapshots
 - **v2.18.0** (2024-11-05): Added alias renaming support during snapshot restore; optimized clone operations for doc-rep clusters
