@@ -233,6 +233,9 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1615](https://github.com/opensearch-project/anomaly-detection/pull/1615) | Fix auto-expand replicas for default results index on 3AZ domains |
+| v3.4.0 | [#1116](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1116) | Honor detector frequency when flagging missing feature data |
+| v3.4.0 | [#1126](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1126) | Address error toast on page open with data source enabled |
 | v3.3.0 | [#1562](https://github.com/opensearch-project/anomaly-detection/pull/1562) | Add frequency scheduling in real time |
 | v3.3.0 | [#1563](https://github.com/opensearch-project/anomaly-detection/pull/1563) | Adding AD suggest API |
 | v3.3.0 | [#1098](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1098) | Add Suggest parameters button + move operational settings to Configure Model |
@@ -281,6 +284,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Change History
 
+- **v3.4.0** (2026-02-18): **Bugfixes** - Fixed forecast results index creation on 3-AZ domains by using `auto_expand_replicas: "0-2"` instead of fixed replica count, improved missing feature data detection to honor detector frequency (prevents false warnings when frequency differs from detection interval), suppressed spurious error toasts when data sources are unavailable in multi-data-source environments
 - **v3.3.0** (2026-01-14): **Frequency scheduling and Suggest API** - Added `frequency` parameter for flexible detection intervals separate from data aggregation, new Suggest API (`/_plugins/_anomaly_detection/detectors/_suggest`) for automated configuration recommendations, Dashboards UI enhancements with Suggest Parameters button and Operation Settings panel reorganization, bug fixes for STOPPED state race condition, flaky integration tests, and protected resource types compatibility
 - **v3.3.0** (2026-01-14): **Resource authorization integration** - Search handler updated to consume `PluginClient` for DLS-style filtering of protected resources, enabling fine-grained resource sharing with the Security plugin's new access control framework
 - **v3.2.0** (2025-08-05): **Long interval support** (>1 hour detection intervals for daily/weekly monitoring), **centralized resource access control** integration with security plugin auto-evaluation, concurrency bug fixes for HCAD multi-node clusters, forecasting interval calculation fixes, Dashboards UI improvements, build infrastructure updates (Gradle 8.14, Nebula 12.2.1)
