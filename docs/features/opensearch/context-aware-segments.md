@@ -82,6 +82,9 @@ flowchart TB
 | Component | Description |
 |-----------|-------------|
 | `CompositeIndexWriter` | Unified interface coordinating write operations with group-specific IndexWriters and managing reads through the accumulating parent IndexWriter |
+| `ContextAwareGroupingFieldMapper` | Field mapper for parsing and validating `context_aware_grouping` mapping configuration |
+| `ContextAwareGroupingFieldType` | Field type extending `CompositeMappedFieldType` for grouping criteria |
+| `ContextAwareGroupingScript` | Script context for executing Painless scripts to compute grouping criteria |
 | `DisposableIndexWriter` | Group-specific IndexWriter with lifecycle states: Active → Mark for Refresh → Close |
 | `CriteriaBasedIndexWriterLookup` | Per-refresh-cycle lookup containing group-specific writers, update/delete tracking, and locking |
 | `LiveIndexWriterDeletesMap` | Refresh-rotating map structure (similar to LiveVersionMap) tracking updates/deletions |
@@ -92,6 +95,69 @@ flowchart TB
 | `CriteriaBasedDocValueFormat` | DocValue format attaching bucket attributes to field info |
 | `BucketedCompositeDirectory` | Directory wrapper filtering out child-level directories |
 | `LookupMapLockAcquisitionException` | Exception thrown when unable to acquire lock on lookup map |
+
+### Grouping Criteria Mapper
+
+The `context_aware_grouping` mapper defines how documents are grouped into segments:
+
+```mermaid
+graph LR
+    subgraph "Index Mapping"
+        CAG[context_aware_grouping]
+        Fields[fields]
+        Script[script]
+    end
+    
+    subgraph "Document Parsing"
+        FM[FieldMapper]
+        DP[DocumentParser]
+    end
+    
+    subgraph "Output"
+        GC[groupingCriteria]
+    end
+    
+    CAG --> Fields
+    CAG --> Script
+    Fields --> FM
+    FM -->|extract value| DP
+    Script -->|transform| DP
+    DP --> GC
+```
+
+#### Mapper Configuration
+
+| Parameter | Description | Required |
+|-----------|-------------|----------|
+| `fields` | List of field names used to determine grouping (currently single field only) | Yes |
+| `script` | Optional Painless script to transform field values into grouping criteria | No |
+
+#### Supported Field Types for Grouping
+
+- `double`, `float`, `integer` (numeric types)
+- `text`, `keyword` (string types)
+- `date`
+- `ip`
+
+#### Mapper Example
+
+```json
+PUT /logs-index
+{
+  "mappings": {
+    "context_aware_grouping": {
+      "fields": ["status_code"],
+      "script": {
+        "source": "String.valueOf(ctx.status_code / 100)"
+      }
+    },
+    "properties": {
+      "status_code": { "type": "integer" },
+      "message": { "type": "text" }
+    }
+  }
+}
+```
 
 ### Configuration
 
@@ -189,13 +255,16 @@ POST /logs-index/_doc
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19233](https://github.com/opensearch-project/OpenSearch/pull/19233) | Add a mapper for context aware segments grouping criteria |
 | v3.4.0 | [#19098](https://github.com/opensearch-project/OpenSearch/pull/19098) | Add support for context aware segments |
 
 ## References
 
 - [Issue #19530](https://github.com/opensearch-project/OpenSearch/issues/19530): LLD for Context Aware Segments
+- [RFC #19223](https://github.com/opensearch-project/OpenSearch/issues/19223): Context aware segments user experience
 - [RFC #18576](https://github.com/opensearch-project/OpenSearch/issues/18576): Context Aware Segments RFC
 
 ## Change History
 
+- **v3.4.0** (2025-11-07): Added `context_aware_grouping` mapper for defining grouping criteria with Painless script support
 - **v3.4.0** (2025-11-07): Initial implementation with CompositeIndexWriter, CriteriaBasedMergePolicy, and experimental feature flag
