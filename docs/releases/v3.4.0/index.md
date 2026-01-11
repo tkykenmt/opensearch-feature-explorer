@@ -45,6 +45,10 @@
 - [Security Features](features/security/security-features.md) - Webhook Basic Auth, REST header propagation, system indices deprecation, static/custom config overlap, search relevance permissions
 - [GitHub Actions Updates](features/security/github-actions-updates.md) - Update GitHub Actions dependencies to support Node.js 24 runtime
 
+### Security Dashboards Plugin
+
+- [Security Dashboards Bugfixes](features/security-dashboards-plugin/security-dashboards-bugfixes.md) - Filter blank backend roles before creating internal user
+
 ### OpenSearch Dashboards
 
 - [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-dev-tools.md) - PATCH method support for Dev Tools console

@@ -290,6 +290,7 @@
 
 ## security-dashboards-plugin
 
+- [Security Dashboards Bugfixes](security-dashboards-plugin/security-dashboards-bugfixes.md)
 - [Security Dashboards Role Management](security-dashboards-plugin/security-dashboards-role-management.md)
 
 ## security-analytics-dashboards-plugin
