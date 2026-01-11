@@ -36,6 +36,7 @@
 - [Cluster Info & Resource Stats](opensearch/cluster-info-resource-stats.md)
 - [Cluster Manager Metrics](opensearch/cluster-manager-metrics.md)
 - [Cluster State Caching](opensearch/cluster-state-caching.md)
+- [Cluster State & Allocation](opensearch/cluster-state-allocation.md)
 - [Cross-Cluster Settings](opensearch/cross-cluster-settings.md)
 - [Code Cleanup](opensearch/code-cleanup.md)
 - [Code Coverage (Gradle)](opensearch/code-coverage-gradle.md)
