@@ -87,6 +87,7 @@
 
 ### Security
 
+- [Client Certificate Authentication - skip_users](features/security/security-client-certificate-authentication.md)
 - [Resource Access Control Documentation](features/security/resource-access-control-documentation.md)
 - [Security Plugin Bug Fixes](features/security/security-plugin-bug-fixes.md)
 - [SSL/TLS Compatibility Fix](features/security/ssl-tls.md)
