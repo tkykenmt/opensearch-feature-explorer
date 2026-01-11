@@ -161,6 +161,10 @@
 
 - [Notifications Plugin Fixes](features/notifications/notifications-plugin-fixes.md)
 
+### Flow Framework
+
+- [Flow Framework Fixes](features/flow-framework/flow-framework-fixes.md)
+
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
