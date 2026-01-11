@@ -116,6 +116,26 @@ Rescoring logic for nested exact search was incorrect, affecting search accuracy
 
 Distance calculation estimation overflowed for high filter cardinality when multiplying dimension by filter docs cardinality.
 
+#### Memory Optimized Search Blocked for Old Indices (v3.4.0)
+
+When indices created before OpenSearch 2.17 were upgraded to 3.1+ with memory-optimized search enabled, a NullPointerException occurred because the old codec lacked the `getVectorReader` implementation. Fixed by adding an index creation version check to fall back to the default C++ off-heap loading path.
+
+#### Incorrect totalHits in Memory Optimized Search (v3.4.0)
+
+`NativeEngineKnnVectorQuery` always returned `k` as `totalHits`, regardless of actual results from each Lucene segment. This caused `hits.total` to be inconsistent between memory-optimized and non-memory-optimized search modes. Fixed by passing all matched results to `DocsMatchQuery$Weight`.
+
+#### Race Condition in KNNQueryBuilder (v3.4.0)
+
+When using cosine similarity with multiple shards on a single data node, inconsistent scores were returned due to multiple threads sharing the same `KNNQueryBuilder` instance and concurrently modifying the query vector during L2 normalization. Fixed by ensuring thread-safe vector transformation.
+
+#### Faiss Inner Product Score-to-Distance Calculation (v3.4.0)
+
+Radial k-NN search with `innerproduct` space type incorrectly applied `min_score` filter, returning documents with scores below the threshold. Fixed by correcting the score-to-distance conversion formula.
+
+#### Backwards Compatibility for Disk-Based Vector Search (v3.4.0)
+
+Merging Lucene segments created with scalar quantization from pre-OpenSearch 3.2 to 3.2+ failed due to incorrect BWC check in `NativeEngines990KnnVectorsWriter`. Fixed by using quantization config length as the version signal instead of segment version.
+
 ### Configuration
 
 | Setting | Description | Default |
@@ -135,6 +155,11 @@ Distance calculation estimation overflowed for high filter cardinality when mult
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#2918](https://github.com/opensearch-project/k-NN/pull/2918) | Block memory optimized search for old indices created before 2.18 |
+| v3.4.0 | [#2965](https://github.com/opensearch-project/k-NN/pull/2965) | Fix NativeEngineKnnQuery to return correct totalHits |
+| v3.4.0 | [#2974](https://github.com/opensearch-project/k-NN/pull/2974) | Fix race condition on transforming vector in KNNQueryBuilder |
+| v3.4.0 | [#2992](https://github.com/opensearch-project/k-NN/pull/2992) | Fix Faiss IP score to distance calculation |
+| v3.4.0 | [#2994](https://github.com/opensearch-project/k-NN/pull/2994) | Fix backwards compatibility for disk-based vector search segment merge |
 | v3.3.0 | [#2867](https://github.com/opensearch-project/k-NN/pull/2867) | Use queryVector length if present in MDC check |
 | v3.3.0 | [#2882](https://github.com/opensearch-project/k-NN/pull/2882) | Fix derived source deserialization bug on invalid documents |
 | v3.3.0 | [#2892](https://github.com/opensearch-project/k-NN/pull/2892) | Fix invalid cosine score range in LuceneOnFaiss |
@@ -157,6 +182,10 @@ Distance calculation estimation overflowed for high filter cardinality when mult
 
 ## References
 
+- [Issue #2917](https://github.com/opensearch-project/k-NN/issues/2917): Block using memory optimized search for indices created before 2.17
+- [Issue #2962](https://github.com/opensearch-project/k-NN/issues/2962): Fix different hit counts when memory optimized search is enabled
+- [Issue #2982](https://github.com/opensearch-project/k-NN/issues/2982): Radial kNN search with innerproduct space incorrectly applies min_score filter
+- [Issue #2991](https://github.com/opensearch-project/k-NN/issues/2991): Disk Based BWC Issues for 2.19 -> 3.3 upgrade
 - [Issue #2866](https://github.com/opensearch-project/k-NN/issues/2866): Filter ANN Search with Byte[] not working
 - [Issue #2880](https://github.com/opensearch-project/k-NN/issues/2880): Derived Source deserialization exception on doc 4xx
 - [Issue #2887](https://github.com/opensearch-project/k-NN/issues/2887): Cosine similarity score range issue with memory optimized search
@@ -172,5 +201,6 @@ Distance calculation estimation overflowed for high filter cardinality when mult
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Added 5 bug fixes for memory optimized search on old indices, totalHits inconsistency, race condition in KNNQueryBuilder, Faiss inner product score calculation, and disk-based vector search BWC
 - **v3.3.0** (2026-01-11): Added 10 bug fixes for MDC check NPE, derived source deserialization, cosine score range, filter k nullable, integer overflow, AVX2 detection, radial search for byte vectors, MMR doc ID, JNI local ref leak, and nested exact search rescoring
 - **v3.1.0** (2026-01-10): Added 9 bug fixes for quantization cache, rescoring, thread safety, nested queries, memory cache race conditions, backward compatibility, graph loading, and slice count handling
