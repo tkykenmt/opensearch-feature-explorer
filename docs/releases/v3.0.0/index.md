@@ -63,6 +63,7 @@
 - [PPL Query Support](features/opensearch-dashboards/ppl-query-support.md)
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
+- [Multi-Data Source (MDS)](features/opensearch-dashboards/multi-data-source-mds.md)
 
 ## reporting
 
