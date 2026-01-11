@@ -336,6 +336,7 @@
 - [CI/Infrastructure Fixes](multi-plugin/ci-infrastructure-fixes.md)
 - [CVE Fixes & Dependency Updates](multi-plugin/cve-fixes-dependency-updates.md)
 - [Dependency Bumps](multi-plugin/dependency-bumps.md)
+- [Gradle 9 Compatibility](multi-plugin/gradle-9-compatibility.md)
 - [Header Redesign](multi-plugin/header-redesign.md)
 - [JDK 21 & Java Agent Migration](multi-plugin/jdk-21-java-agent-migration.md)
 - [Look & Feel UI Improvements](multi-plugin/look-and-feel-ui-improvements.md)
