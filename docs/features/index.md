@@ -146,6 +146,7 @@
 - [Scroll API](opensearch/scroll-api.md)
 - [Search Backpressure](opensearch/search-backpressure.md)
 - [Search API Enhancements](opensearch/search-api-enhancements.md)
+- [Search API Tracker](opensearch/search-api-tracker.md)
 - [Search Pipeline](opensearch/search-pipeline.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
 - [Search Scoring](opensearch/search-scoring.md)
