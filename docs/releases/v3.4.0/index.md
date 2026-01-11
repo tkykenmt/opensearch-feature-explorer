@@ -14,6 +14,7 @@
 - [Lucene Upgrade](features/opensearch/lucene-upgrade.md) - Bump Apache Lucene from 10.3.1 to 10.3.2 with MaxScoreBulkScorer bug fix
 - [Maven Snapshots Publishing](features/opensearch/maven-snapshots-publishing.md) - Migrate snapshot publishing from Sonatype to S3-backed repository at ci.opensearch.org
 - [Node Stats Bugfixes](features/opensearch/node-stats-bugfixes.md) - Fix negative CPU usage values in node stats on certain Linux distributions
+- [Normalizer Enhancements](features/opensearch/normalizer-enhancements.md) - Allow truncate token filter in normalizers for keyword field truncation
 - [S3 Repository](features/opensearch/s3-repository.md) - Add LEGACY_MD5_CHECKSUM_CALCULATION to opensearch.yml settings for S3-compatible storage
 - [Scroll Query Optimization](features/opensearch/scroll-query-optimization.md) - Cache StoredFieldsReader per segment for improved scroll query performance
 - [Search API Tracker](features/opensearch/search-api-tracker.md) - Track search response status codes at coordinator node for observability
