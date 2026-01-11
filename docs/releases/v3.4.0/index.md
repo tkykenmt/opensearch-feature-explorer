@@ -97,6 +97,7 @@
 ### Search Relevance
 
 - [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
+- [Security Integration Test Control](features/search-relevance/security-integ-test-control.md) - System property to control security plugin integration in tests
 
 ### SQL
 
