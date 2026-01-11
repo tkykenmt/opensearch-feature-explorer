@@ -63,11 +63,16 @@ graph TB
 | Tutorial | Description | Use Case |
 |----------|-------------|----------|
 | Agentic RAG | Retrieval-augmented generation with agents | Knowledge base Q&A |
+| Agentic Search | Natural language to DSL query translation | Query planning |
+| Agentic Memory | Persistent memory with Strands agents | Context-aware agents |
+| Conversational Search with Ollama | RAG using local LLMs | Local AI search |
 
 #### Connector Blueprints
 
 | Blueprint | Service | Model Type |
 |-----------|---------|------------|
+| ColPali | AWS SageMaker | Multimodal embedding |
+| Ollama | Local/Self-hosted | Chat completion |
 | Semantic Highlighter | AWS SageMaker | Text highlighting |
 | Neural Sparse | AWS SageMaker | Sparse encoding |
 | Aleph Alpha | Aleph Alpha API | Text embedding |
@@ -158,6 +163,13 @@ PUT test-index
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4130](https://github.com/opensearch-project/ml-commons/pull/4130) | ColPali multimodal blueprint |
+| v3.3.0 | [#4160](https://github.com/opensearch-project/ml-commons/pull/4160) | Ollama connector blueprint |
+| v3.3.0 | [#4127](https://github.com/opensearch-project/ml-commons/pull/4127) | Agentic search tutorial |
+| v3.3.0 | [#4125](https://github.com/opensearch-project/ml-commons/pull/4125) | Agentic memory with Strands agents tutorial |
+| v3.3.0 | [#4145](https://github.com/opensearch-project/ml-commons/pull/4145) | Instance type fix in tutorial |
+| v3.3.0 | [#4124](https://github.com/opensearch-project/ml-commons/pull/4124) | Additional unit tests |
+| v3.3.0 | [#4126](https://github.com/opensearch-project/ml-commons/pull/4126) | Additional unit tests |
 | v3.2.0 | [#3576](https://github.com/opensearch-project/ml-commons/pull/3576) | Multi modal tutorial using ml inference processor |
 | v3.2.0 | [#3879](https://github.com/opensearch-project/ml-commons/pull/3879) | Semantic highlighter blueprint for SageMaker |
 | v3.2.0 | [#3857](https://github.com/opensearch-project/ml-commons/pull/3857) | Neural Sparse Remote Model documentation |
@@ -175,4 +187,5 @@ PUT test-index
 
 ## Change History
 
+- **v3.3.0** (2025): Added ColPali multimodal blueprint, Ollama connector blueprint, agentic search tutorial, agentic memory with Strands agents tutorial, conversational search with Ollama tutorial, instance type fix in language identification tutorial, additional unit tests
 - **v3.2.0** (2025): Added multi-modal search tutorial, semantic highlighter blueprint, neural sparse documentation, language identification tutorial, agentic RAG tutorial, e-commerce demo notebook, and Aleph Alpha blueprint fix
