@@ -96,6 +96,7 @@
 
 ### SQL
 
+- [SQL CI/Tests](features/sql/sql-ci-tests.md) - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
 - [SQL Documentation](features/sql/sql-documentation.md) - PPL command documentation standardization, typo fixes, enhanced examples, and function documentation improvements
 
 ### Multi-Repository
