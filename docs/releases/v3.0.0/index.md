@@ -35,6 +35,7 @@
 - [Lucene Similarity](features/opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
 - [Node Stats & API Fixes](features/opensearch/node-stats-and-api-fixes.md)
+- [Query & Aggregation Fixes](features/opensearch/query-and-aggregation-fixes.md)
 - [Node Roles & Configuration](features/opensearch/node-roles-and-configuration.md)
 - [Node Roles Configuration (Environment Variables)](features/opensearch/node-roles-configuration.md)
 - [Nodes Info API Changes](features/opensearch/nodes-info-api-changes.md)
