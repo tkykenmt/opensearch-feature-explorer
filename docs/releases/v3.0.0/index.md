@@ -57,6 +57,7 @@
 - [Dashboards Dependencies](features/opensearch-dashboards/dashboards-dependencies.md)
 - [Dashboards Frontend Cleanup](features/opensearch-dashboards/dashboards-frontend-cleanup.md)
 - [Dashboards UI/UX Fixes](features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
+- [Discover Summary / AI Assistant Integration](features/opensearch-dashboards/discover-summary-ai-assistant-integration.md)
 - [Monaco Editor Upgrade](features/opensearch-dashboards/monaco-editor-upgrade.md)
 - [PPL Query Support](features/opensearch-dashboards/ppl-query-support.md)
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
