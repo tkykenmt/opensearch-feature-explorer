@@ -195,6 +195,8 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.1.0 | [#99](https://github.com/opensearch-project/search-relevance/pull/99) | Change model for Experiment and Evaluation Result entities |
 | v3.1.0 | [#116](https://github.com/opensearch-project/search-relevance/pull/116) | Add text validation and query set file size check |
 | v3.1.0 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer |
+| v3.4.0 | [#308](https://github.com/opensearch-project/search-relevance/pull/308) | Fix floating-point precision issues in Hybrid Optimizer weight generation |
+| v3.4.0 | [#292](https://github.com/opensearch-project/search-relevance/pull/292) | Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion |
 | v3.4.0 | [#260](https://github.com/opensearch-project/search-relevance/pull/260) | Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL |
 | v3.3.0 | [#230](https://github.com/opensearch-project/search-relevance/pull/230) | Fix ImportJudgmentsProcessor to handle numeric ratings |
 
@@ -218,10 +220,14 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - [Issue #543](https://github.com/opensearch-project/dashboards-search-relevance/issues/543): Backend plugin disabled messaging
 - [Issue #557](https://github.com/opensearch-project/dashboards-search-relevance/issues/557): Pipeline error when no pipelines exist
 - [Issue #584](https://github.com/opensearch-project/dashboards-search-relevance/issues/584): Validation results overflow
+- [Issue #298](https://github.com/opensearch-project/search-relevance/issues/298): Floating-point precision in Hybrid Optimizer weights
+- [Issue #282](https://github.com/opensearch-project/search-relevance/issues/282): Hybrid Optimizer stuck in PROCESSING after judgment deletion
 - [Issue #229](https://github.com/opensearch-project/search-relevance/issues/229): Numeric rating type casting bug
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Bug fix - Fix floating-point precision issues in Hybrid Optimizer weight generation by switching to step-based iteration and rounding, ensuring clean weight pairs like 0.4/0.6 instead of 0.39999998/0.60000002
+- **v3.4.0** (2026-01-11): Bug fix - Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion by correcting failure handling to properly transition to ERROR state
 - **v3.4.0** (2026-01-11): Bug fix - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL, enabling LTR rescore queries in experiments
 - **v3.3.0** (2026-01-11): Bug fix - ImportJudgmentsProcessor now handles numeric ratings (integers, floats) in addition to strings, and preserves original judgment order
 - **v3.2.0** (2026-01-11): Major enhancements - new default SRW UI, dashboard visualization for experiments, polling mechanism for status updates, date filtering for implicit judgments, task scheduling for experiments

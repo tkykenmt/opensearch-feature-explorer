@@ -107,6 +107,7 @@
 
 - [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
 - [Search Relevance Bugfixes](features/search-relevance/search-relevance-bugfixes.md) - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL
+- [Hybrid Optimizer Bugfixes](features/search-relevance/hybrid-optimizer-bugfixes.md) - Fix floating-point precision in weight generation and error handling for deleted judgments
 - [Security Integration Test Control](features/search-relevance/security-integ-test-control.md) - System property to control security plugin integration in tests
 
 ### SQL
