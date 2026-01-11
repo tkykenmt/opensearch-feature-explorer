@@ -169,6 +169,7 @@ GET logs/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19553](https://github.com/opensearch-project/OpenSearch/pull/19553) | Use Lucene `pack` method for `half_float` and `unsigned_long` |
 | v3.2.0 | [#18530](https://github.com/opensearch-project/OpenSearch/pull/18530) | Extend Approximation Framework to other numeric types (int, float, double, half_float, unsigned_long) |
 | v3.2.0 | [#18896](https://github.com/opensearch-project/OpenSearch/pull/18896) | Support `search_after` numeric queries with Approximation Framework |
 | v3.2.0 | [#18511](https://github.com/opensearch-project/OpenSearch/pull/18511) | Added approximation support for range queries with `now` in date field |
@@ -188,6 +189,7 @@ GET logs/_search
 
 ## Change History
 
+- **v3.4.0**: Adopted Lucene's native `pack` method for `half_float` and `unsigned_long` types, replacing custom encoding methods; requires Lucene 10.3.0
 - **v3.2.0**: Extended Approximation Framework to all numeric types (int, float, double, half_float, unsigned_long); added `search_after` support for numeric queries; approximation for range queries with `now`; automatic disabling for multiple sort fields
 - **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
 - **v3.0.0**: Initial GA release with basic early termination support
