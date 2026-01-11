@@ -112,6 +112,10 @@
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
 
+### CI
+
+- [CI/Test Infrastructure](features/ci/test-infrastructure.md) - GitHub Actions upgrades (checkout v6, github-script v8, codecov-action v5), test reliability improvements, CI disk space management, S3 snapshots integration, multi-node testing
+
 ### Multi-Repository
 
 - [Dependency Updates](features/multi-repo/dependency-updates.md) - 28 dependency updates across 7 repositories addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
