@@ -16,15 +16,17 @@ graph TB
             JSON11[json11<br/>JSON Parsing]
             Chokidar[chokidar<br/>File Watching]
             Axios[axios<br/>HTTP Client]
-            Mocha[mocha<br/>Testing]
-            Elliptic[elliptic<br/>Cryptography]
+            Vega[vega<br/>Visualization]
+            DOMPurify[dompurify<br/>HTML Sanitization]
+            MarkdownIt[markdown-it<br/>Markdown Parsing]
         end
     end
     App --> JSON11
     App --> Chokidar
     App --> Axios
-    App --> Mocha
-    App --> Elliptic
+    App --> Vega
+    App --> DOMPurify
+    App --> MarkdownIt
 ```
 
 ### Key Dependencies
@@ -34,8 +36,9 @@ graph TB
 | json11 | JSON parsing with extended features | UTF-8 safety in JSON stringification |
 | chokidar | File system watching for development | Development tooling |
 | axios | HTTP client for API requests | CVE-2024-39338 |
-| mocha | Test framework | SNYK-JS-MOCHA-2863123 |
-| elliptic | Elliptic curve cryptography | CVE-2024-42459, CVE-2024-42460, CVE-2024-42461 |
+| vega | Visualization grammar for charts | CVE-2025-25304 (XSS vulnerability) |
+| dompurify | HTML sanitization | CVE-2025-26791 |
+| markdown-it | Markdown parsing and rendering | Security improvements |
 
 ### Configuration
 
@@ -64,19 +67,26 @@ yarn upgrade json11@^2.0.0
 - Dependency updates may introduce breaking changes requiring code modifications
 - Security patches should be applied promptly but require testing
 - Some dependencies are pinned to specific versions for compatibility
+- Vega updates may require webpack configuration changes
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#9623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9623) | Bump vega from 5.23.0 to 5.32.0 |
+| v3.0.0 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 |
+| v3.0.0 | [#9412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9412) | Bump markdown-it from 12.3.2 to 13.0.2 |
 | v2.18.0 | [#8603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8603) | Upgrade JSON11 from 1.1.2 to 2.0.0 |
 | v2.18.0 | [#8490](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8490) | Bump chokidar from 3.5.3 to 3.6.0 |
 
 ## References
 
+- [Issue #9400](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9400): CVE-2025-25304 in vega-selections
+- [GHSA-mp7w-mhcv-673j](https://github.com/vega/vega/security/advisories/GHSA-mp7w-mhcv-673j): Vega XSS vulnerability advisory
 - [Issue #7367](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7367): JSON.parse bad escaped character bug
 - [OpenSearch Forum](https://forum.opensearch.org/t/json-parse-bad-escaped-character/20211): Community discussion
 
 ## Change History
 
+- **v3.0.0** (2025-05-13): Security updates for vega (5.32.0), dompurify (3.2.4), markdown-it (13.0.2) addressing CVE-2025-25304 and CVE-2025-26791
 - **v2.18.0** (2024-10-22): JSON11 upgrade to 2.0.0 for UTF-8 safety, chokidar bump to 3.6.0
