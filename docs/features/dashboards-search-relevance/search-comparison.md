@@ -143,6 +143,7 @@ Query 2 - Boosted field:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#687](https://github.com/opensearch-project/dashboards-search-relevance/pull/687) | Added support for filtering Query Sets by GUID |
 | v3.3.0 | [#632](https://github.com/opensearch-project/dashboards-search-relevance/pull/632) | Improve color coding for search result comparison |
 | v3.3.0 | [#637](https://github.com/opensearch-project/dashboards-search-relevance/pull/637) | Allow more than 10 results in pairwise comparison view |
 | v3.3.0 | [#645](https://github.com/opensearch-project/dashboards-search-relevance/pull/645) | Show first 10,000 experiment results |
@@ -160,6 +161,7 @@ Query 2 - Boosted field:
 
 ## Change History
 
+- **v3.4.0** (2026-03-11): Added support for filtering Query Sets by GUID, introduced strongly typed `QuerySetItem` interface
 - **v3.3.0** (2026-01-14): Improved color coding for visual comparison, fixed pairwise comparison to show more than 10 results, added support for large experiment results up to 10,000
 - **v3.1.0** (2025-06-11): Fixed schema validation in POST Query Sets endpoint - added missing `querySetSize` parameter
 - **v2.17.0** (2024-09-17): Added Compare Queries card to Search use case overview page via Content Management integration

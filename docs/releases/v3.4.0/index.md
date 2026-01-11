@@ -121,6 +121,7 @@
 
 ### Search Relevance
 
+- [Query Sets & Judgment Lists](features/dashboards-search-relevance/query-sets-judgment-lists.md) - GUID filtering support for Query Sets with strongly typed QuerySetItem interface
 - [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
 - [Search Relevance Bugfixes](features/search-relevance/search-relevance-bugfixes.md) - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL
 - [Hybrid Optimizer Bugfixes](features/search-relevance/hybrid-optimizer-bugfixes.md) - Fix floating-point precision in weight generation and error handling for deleted judgments
