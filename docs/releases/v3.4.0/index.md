@@ -90,9 +90,18 @@
 
 ### OpenSearch Dashboards
 
+- [Dashboards Bugfixes](features/opensearch-dashboards/dashboards-bugfixes.md) - SQL query parser fix, Axios CVE update, DOMPurify import, dashboard utilities type checks
 - [Dashboards Console](features/opensearch-dashboards/dashboards-console.md) - Fix for console_polling setting update
 - [Dashboards Navigation](features/opensearch-dashboards/dashboards-navigation.md) - Fix disabled prop propagation for navigation links
 - [Dashboards CI/Tests](features/opensearch-dashboards/dashboards-ci-tests.md) - Update unit test workflow to include 3.* branch support
+
+### Dashboards Assistant
+
+- [Dashboards Assistant Bugfixes](features/dashboards-assistant/dashboards-assistant-bugfixes.md) - Text2Viz header fix and capability services access settings fix
+
+### Dashboards Flow Framework
+
+- [Dashboards Flow Framework Bugfixes](features/dashboards-flow-framework/dashboards-flow-framework-bugfixes.md) - Gracefully handle workflows with no provisioned resources
 
 ### Dashboards Observability
 
