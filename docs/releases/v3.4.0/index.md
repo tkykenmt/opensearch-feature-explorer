@@ -2,6 +2,10 @@
 
 ## Features
 
+### OpenSearch
+
+- [Security Kerberos Integration](features/opensearch/security-kerberos-integration.md) - Update Hadoop to 3.4.2 and enable Kerberos integration tests for JDK-24+
+
 ### OpenSearch Dashboards
 
 - [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-dev-tools.md) - PATCH method support for Dev Tools console

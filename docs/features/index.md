@@ -58,6 +58,7 @@
 - [Flat Object Field](opensearch/flat-object-field.md)
 - [Flaky Test Fixes](opensearch/flaky-test-fixes.md)
 - [gRPC Transport & Services](opensearch/grpc-transport--services.md)
+- [HDFS Repository Kerberos](opensearch/hdfs-repository-kerberos.md)
 - [Index Settings](opensearch/index-settings.md)
 - [Java 17 Modernization](opensearch/java-17-modernization.md)
 - [List APIs (Paginated)](opensearch/list-apis-paginated.md)
