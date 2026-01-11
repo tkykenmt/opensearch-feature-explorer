@@ -45,6 +45,7 @@
 - [Concurrent Segment Search](opensearch/concurrent-segment-search.md)
 - [Crypto KMS Plugin](opensearch/crypto-kms-plugin.md)
 - [Custom Index Name Resolver](opensearch/custom-index-name-resolver.md)
+- [Data Stream & Index Template](opensearch/data-stream-index-template.md)
 - [Date Format](opensearch/date-format.md)
 - [Deprecated Code Cleanup](opensearch/deprecated-code-cleanup.md)
 - [DocRequest Refactoring](opensearch/docrequest-refactoring.md)
