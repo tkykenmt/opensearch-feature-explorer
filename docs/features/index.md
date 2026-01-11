@@ -342,6 +342,7 @@
 - [Search Autocomplete](multi-plugin/search-autocomplete.md)
 - [Testing Library Updates](multi-plugin/testing-library-updates.md)
 - [Version Bumps & Release Notes](multi-plugin/version-bumps-release-notes.md)
+- [Version Increment](multi-plugin/version-increment.md)
 
 ## multi-repo
 
