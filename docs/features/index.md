@@ -141,6 +141,7 @@
 - [Remote Store](opensearch/remote-store.md)
 - [Remote Store Metadata API](opensearch/remote-store-metadata-api.md)
 - [Repository Rate Limiters](opensearch/repository-rate-limiters.md)
+- [Repository Encryption](opensearch/repository-encryption.md)
 - [RestHandler.Wrapper](opensearch/resthandler-wrapper.md)
 - [ActionPlugin REST Handler Wrapper](opensearch/actionplugin-rest-handler-wrapper.md)
 - [Remote Store Metrics](opensearch/remote-store-metrics.md)
