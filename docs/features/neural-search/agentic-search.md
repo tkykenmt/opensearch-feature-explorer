@@ -224,6 +224,10 @@ POST /_plugins/_ml/agents/_register
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [neural-search#1669](https://github.com/opensearch-project/neural-search/pull/1669) | Preserve source parameter for agentic query |
+| v3.4.0 | [dashboards-search-relevance#693](https://github.com/opensearch-project/dashboards-search-relevance/pull/693) | Add support for agent search in pairwise comparison |
+| v3.4.0 | [dashboards-search-relevance#802](https://github.com/opensearch-project/dashboards-search-relevance/pull/802) | Add MCP server support |
+| v3.4.0 | [dashboards-search-relevance#812](https://github.com/opensearch-project/dashboards-search-relevance/pull/812) | Improve Test Flow UX |
 | v3.3.0 | [ml-commons#4203](https://github.com/opensearch-project/ml-commons/pull/4203) | Support Query Planner Tool with Conversational Agent |
 | v3.3.0 | [ml-commons#4262](https://github.com/opensearch-project/ml-commons/pull/4262) | Use same model for Agent and QPT |
 | v3.2.0 | [#1484](https://github.com/opensearch-project/neural-search/pull/1484) | Initial implementation of agentic search query clause and processor |
@@ -231,6 +235,7 @@ POST /_plugins/_ml/agents/_register
 ## References
 
 - [Issue #1479](https://github.com/opensearch-project/neural-search/issues/1479): RFC - Design for Agentic Search
+- [Issue #1664](https://github.com/opensearch-project/neural-search/issues/1664): Agentic Search: Support of `_source.excludes`
 - [Blog: Introducing agentic search in OpenSearch](https://opensearch.org/blog/introducing-agentic-search-in-opensearch-transforming-data-interaction-through-natural-language/): Official announcement
 - [Agentic AI Documentation](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/index/): Agent tutorials
 - [ML Commons Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/index/): Agent framework documentation
@@ -239,5 +244,6 @@ POST /_plugins/_ml/agents/_register
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Source parameter preservation (`_source.includes`/`_source.excludes`), Search Relevance Workbench pairwise comparison support, MCP server integration, conversational search UI with memory management, improved test flow UX, version filtering
 - **v3.3.0** (2026-01-11): Conversational agent support, neural search query generation, unified model configuration, automatic index mapping and sample document retrieval
 - **v3.2.0** (2026-01-10): Initial experimental implementation with `agentic` query clause and `agentic_query_translator` processor

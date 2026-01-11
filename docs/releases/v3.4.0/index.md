@@ -129,6 +129,7 @@
 
 ### Search Relevance
 
+- [Agentic Search](features/dashboards-search-relevance/agentic-search.md) - Pairwise comparison support, MCP server integration, conversational search UI, source parameter preservation
 - [Scheduled Experiments](features/search-relevance/scheduled-experiments.md) - Cron-based scheduling for recurring experiment execution with historical results tracking
 - [Query Sets & Judgment Lists](features/dashboards-search-relevance/query-sets-judgment-lists.md) - GUID filtering support for Query Sets with strongly typed QuerySetItem interface
 - [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
