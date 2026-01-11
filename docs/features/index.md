@@ -95,6 +95,8 @@
 - [Lucene Integration](opensearch/lucene-integration.md)
 - [Lucene Similarity](opensearch/lucene-similarity.md)
 - [Lucene Upgrade](opensearch/lucene-upgrade.md)
+- [Mapping Transformer](opensearch/mapping-transformer.md)
+- [Maven Snapshots Publishing](opensearch/maven-snapshots-publishing.md)
 - [Merge & Segment Settings](opensearch/merge-segment-settings.md)
 - [Multi-Search API](opensearch/multi-search-api.md)
 - [Nested Aggregations](opensearch/nested-aggregations.md)

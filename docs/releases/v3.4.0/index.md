@@ -9,6 +9,7 @@
 - [JDK 25 Support](features/opensearch/jdk-25-support.md) - Painless scripting compatibility fix for JDK 25 ClassValue behavioral change
 - [Lucene Integration](features/opensearch/lucene-integration.md) - Remove MultiCollectorWrapper and use Lucene's native MultiCollector API
 - [Lucene Upgrade](features/opensearch/lucene-upgrade.md) - Bump Apache Lucene from 10.3.1 to 10.3.2 with MaxScoreBulkScorer bug fix
+- [Maven Snapshots Publishing](features/opensearch/maven-snapshots-publishing.md) - Migrate snapshot publishing from Sonatype to S3-backed repository at ci.opensearch.org
 - [Node Stats Bugfixes](features/opensearch/node-stats-bugfixes.md) - Fix negative CPU usage values in node stats on certain Linux distributions
 - [S3 Repository](features/opensearch/s3-repository.md) - Add LEGACY_MD5_CHECKSUM_CALCULATION to opensearch.yml settings for S3-compatible storage
 - [Security Kerberos Integration](features/opensearch/security-kerberos-integration.md) - Update Hadoop to 3.4.2 and enable Kerberos integration tests for JDK-24+
