@@ -232,6 +232,10 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1529](https://github.com/opensearch-project/index-management/pull/1529) | Fix race condition in rollup start/stop tests |
+| v3.4.0 | [#1525](https://github.com/opensearch-project/index-management/pull/1525) | Fix ISM policy rebinding after removal |
+| v3.4.0 | [#1507](https://github.com/opensearch-project/index-management/pull/1507) | Fix ExplainSMPolicy serialization for null creation |
+| v3.4.0 | [#1503](https://github.com/opensearch-project/index-management/pull/1503) | Fix snapshot pattern parsing in SM deletion |
 | v3.3.0 | [#1460](https://github.com/opensearch-project/index-management/pull/1460) | Using Scripted Avg Class in AvgAggregationBuilder for rollup aggregation fix |
 | v3.3.0 | [#1491](https://github.com/opensearch-project/index-management/pull/1491) | Fix the build for upstream OpenSearch changes |
 | v3.3.0 | [#1473](https://github.com/opensearch-project/index-management/pull/1473) | Dependabot: bump 1password/load-secrets-action from 2 to 3 |
@@ -268,6 +272,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Fixed ISM policy rebinding after removal (auto_manage setting check), fixed SM deletion snapshot pattern parsing for comma-separated values, fixed ExplainSMPolicy serialization for null creation field, fixed rollup start/stop test race conditions
 - **v3.3.0** (2026-01-11): Fixed rollup aggregation reduction bug when searching rollup and raw indices together by using ScriptedAvg class, build fixes for upstream OpenSearch changes, dependency updates
 - **v3.2.0** (2026-01-10): Added `no_alias` and `min_state_age` transition conditions for ISM, registered ISM history index as System Index descriptor, fixed integration tests and lint errors
 - **v3.1.0** (2026-01-10): Fixed false positive notifications in Snapshot Management by suppressing user notifications for internal VersionConflictEngineException errors
