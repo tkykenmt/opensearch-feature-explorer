@@ -49,6 +49,7 @@
 - [Plugin System](features/opensearch/plugin-system.md)
 - [Refresh Task Scheduling](features/opensearch/refresh-task-scheduling.md)
 - [Search Backpressure](features/opensearch/search-backpressure.md)
+- [Search Task Management](features/opensearch/search-task-management.md)
 - [Segment Warmer](features/opensearch/segment-warmer.md)
 - [Star Tree Enhancements](features/opensearch/star-tree-enhancements.md)
 - [Stream Input/Output](features/opensearch/stream-inputoutput.md)

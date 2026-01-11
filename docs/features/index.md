@@ -185,6 +185,7 @@
 - [Stream Input/Output](opensearch/stream-inputoutput.md)
 - [Subject Interface](opensearch/subject-interface.md)
 - [System Ingest Pipeline](opensearch/system-ingest-pipeline.md)
+- [Task Cancellation Monitoring](opensearch/task-cancellation-monitoring.md)
 - [Task Management](opensearch/task-management.md)
 - [Test Fixes](opensearch/test-fixes.md)
 - [Thread Context Permissions](opensearch/thread-context-permissions.md)
