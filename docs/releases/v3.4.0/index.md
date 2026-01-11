@@ -109,6 +109,7 @@
 ### Dashboards Observability
 
 - [Observability CI/Tests](features/dashboards-observability/observability-ci-tests.md) - CI workflow updates for 3.4.0, snapshot repository migration, test snapshot updates
+- [Observability Integrations](features/dashboards-observability/observability-integrations.md) - Static file serving cleanup with image type validation and SVG sanitization
 
 ### Dashboards Reporting
 
