@@ -151,6 +151,7 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#678](https://github.com/opensearch-project/skills/pull/678) | Increase max_sample_count to 5 for log insight |
 | v3.3.0 | [#625](https://github.com/opensearch-project/skills/pull/625) | Log patterns analysis tool |
 | v3.3.0 | [#634](https://github.com/opensearch-project/skills/pull/634) | Data Distribution Tool |
 | v3.3.0 | [#636](https://github.com/opensearch-project/skills/pull/636) | Add more information in PPL tool when passing to SageMaker |
@@ -181,6 +182,7 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Increased max_sample_count from 2 to 5 for LogPatternAnalysisTool log insight mode, providing more representative sample logs per pattern
 - **v3.3.0** (2026-01-11): Added LogPatternAnalysisTool for intelligent log pattern detection with sequence analysis and time-based comparison; added DataDistributionTool for statistical distribution analysis with divergence calculation; enhanced PPLTool to include mappings, current_time, and os_version when passing to SageMaker; fixed WebSearchTool using AsyncHttpClient from ml-commons; fixed DataDistributionTool to remove baselinePercentage when no baseline provided
 - **v3.2.0** (2026-01-11): Added index schema merging for PPLTool when using index patterns (merges mappings from all matching indexes); added error message masking in PPLTool to redact SageMaker ARNs and AWS account numbers; standardized parameter handling across all tools using `extractInputParameters` utility
 - **v3.1.0** (2025-05-06): Added data source type parameter (`datasourceType`) to PPLTool for Spark/S3 data source support; fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
