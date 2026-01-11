@@ -1,5 +1,7 @@
 # OpenSearch v3.4.0 Release
 
+- [Release Summary](summary.md)
+
 ## Features
 
 ### OpenSearch
