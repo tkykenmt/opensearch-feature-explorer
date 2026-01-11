@@ -126,6 +126,12 @@ source=users
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#4562](https://github.com/opensearch-project/sql/pull/4562) | Update PPL Command Documentation - Major standardization |
+| v3.4.0 | [#4803](https://github.com/opensearch-project/sql/pull/4803) | Doc update for `json_valid` function |
+| v3.4.0 | [#4724](https://github.com/opensearch-project/sql/pull/4724) | Enhance tests and doc for eval isnull/isnotnull functions |
+| v3.4.0 | [#4686](https://github.com/opensearch-project/sql/pull/4686) | Update search.rst documentation for IP datatypes |
+| v3.4.0 | [#4457](https://github.com/opensearch-project/sql/pull/4457) | Add more examples to the `where` command doc |
+| v3.4.0 | [#4447](https://github.com/opensearch-project/sql/pull/4447) | Fix typo: evenstats → eventstats |
 | v3.2.0 | [#3868](https://github.com/opensearch-project/sql/pull/3868) | Update ppl documentation index for new functions |
 | v3.2.0 | [#3801](https://github.com/opensearch-project/sql/pull/3801) | Update the limitation docs |
 
@@ -138,4 +144,5 @@ source=users
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Standardized PPL command documentation structure; added where command examples; fixed typos; enhanced function documentation for isnull/isnotnull and json_valid; added IP datatype documentation
 - **v3.2.0** (2026-01-11): Added Collection, Cryptographic, and JSON function categories to index; updated V3 engine limitations to reflect newly supported features
