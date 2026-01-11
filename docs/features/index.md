@@ -377,6 +377,7 @@
 - [ML Commons Sparse Encoding](ml-commons/ml-commons-sparse-encoding.md)
 - [ML Commons Stability and Reliability](ml-commons/ml-commons-stability.md)
 - [ML Commons Test Fixes](ml-commons/ml-commons-test-fixes.md)
+- [ML Commons Tools](ml-commons/ml-commons-tools.md)
 - [ML Config API](ml-commons/ml-config-api.md)
 - [ML Inference Processor](ml-commons/ml-inference-processor.md)
 - [PlanExecuteReflect Agent](ml-commons/planexecutereflect-agent.md)
