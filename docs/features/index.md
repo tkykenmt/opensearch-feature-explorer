@@ -251,6 +251,7 @@
 - [TSVB Visualization](opensearch-dashboards/tsvb-visualization.md)
 - [UI Settings](opensearch-dashboards/ui-settings.md)
 - [Vended Dashboard Progress](opensearch-dashboards/vended-dashboard-progress.md)
+- [Webpack & Build Performance](opensearch-dashboards/webpack-and-build-performance.md)
 - [Workspace](opensearch-dashboards/workspace.md)
 
 ## security
