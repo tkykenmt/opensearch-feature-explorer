@@ -456,6 +456,7 @@
 
 ## dashboards-observability
 
+- [CI/Tests](dashboards-observability/ci-tests.md)
 - [Getting Started Workflows](dashboards-observability/getting-started-workflows.md)
 - [Observability Multi-Data Source Support](dashboards-observability/observability-multi-data-source-support.md)
 - [Observability Notebooks](dashboards-observability/observability-notebooks.md)
