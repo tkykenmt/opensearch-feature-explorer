@@ -119,6 +119,10 @@
 
 - [Observability Cypress Updates](features/observability/observability-cypress-updates.md)
 
+### Multi-Plugin
+
+- [Version Increment](features/multi-plugin/version-increment.md)
+
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
