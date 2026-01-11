@@ -278,39 +278,102 @@ client.share(
 - Resources must be stored in system indices with system index protection enabled
 - Currently supports single action group (`default`) - multiple action groups planned for future
 
+### Onboarded Plugins
+
+#### ML-Commons (v3.3.0+)
+
+ML-Commons is the first plugin to onboard to the centralized resource access control framework for model groups.
+
+**Integration Components:**
+
+| Component | Description |
+|-----------|-------------|
+| `ResourceSharingClientAccessor` | Singleton accessor for `ResourceSharingClient` |
+| `ML_MODEL_GROUP_RESOURCE_TYPE` | Resource type constant: `"ml-model-group"` |
+| `DocRequest` interface | Implemented by model group request classes |
+
+**Modified Request Classes:**
+
+- `MLModelGroupGetRequest` - implements `DocRequest`
+- `MLModelGroupDeleteRequest` - implements `DocRequest`
+- `MLUpdateModelGroupRequest` - implements `DocRequest`
+
+**Index Mapping (schema version 4):**
+
+```json
+{
+  "all_shared_principals": {
+    "type": "keyword"
+  }
+}
+```
+
+### Resource Access Management Dashboard (v3.3.0+)
+
+The Security Dashboards Plugin provides a UI for managing resource sharing.
+
+**Dashboard Configuration:**
+
+| Setting | Value |
+|---------|-------|
+| App ID | `resource_access_management` |
+| Route | `/app/resource_access_management` |
+| Feature Flag | `resource_sharing.enabled: true` |
+
+**Dashboard API Routes:**
+
+| Route | Method | Description |
+|-------|--------|-------------|
+| `/api/resource/types` | GET | List registered resource types |
+| `/api/resource/list` | GET | List accessible resources by type |
+| `/api/resource/view` | GET | Get sharing info for specific resource |
+| `/api/resource/share` | PUT | Share a resource |
+| `/api/resource/update_sharing` | PATCH | Update sharing (add/revoke) |
+
+**UI Features:**
+
+- Type selector dropdown for resource types
+- Table view of accessible resources with owner, tenant, and sharing info
+- Share/Update Access modal for managing permissions
+- Support for users, roles, and backend_roles at different access levels
+
 ## Related PRs
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5600](https://github.com/opensearch-project/security/pull/5600) | DLS-based automatic filtering using `all_shared_principals` |
-| v3.3.0 | [#5596](https://github.com/opensearch-project/security/pull/5596) | Track `all_shared_principals` for efficient searchability |
-| v3.3.0 | [#5588](https://github.com/opensearch-project/security/pull/5588) | Multi-tenancy support with tenant tracking |
-| v3.3.0 | [#5597](https://github.com/opensearch-project/security/pull/5597) | Dashboard APIs for resource access management |
-| v3.3.0 | [#5574](https://github.com/opensearch-project/security/pull/5574) | Fix case-sensitive user search |
-| v3.3.0 | [#5576](https://github.com/opensearch-project/security/pull/5576) | Revert @Inject to client accessor pattern |
-| v3.3.0 | [#5631](https://github.com/opensearch-project/security/pull/5631) | Fix GET _doc authorization on sharable indices |
-| v3.3.0 | [#5654](https://github.com/opensearch-project/security/pull/5654) | Fix PATCH API visibility update |
-| v3.3.0 | [#5658](https://github.com/opensearch-project/security/pull/5658) | Preserve `all_shared_principals` on resource updates |
-| v3.3.0 | [#5666](https://github.com/opensearch-project/security/pull/5666) | Make initial share map mutable |
-| v3.3.0 | [#5605](https://github.com/opensearch-project/security/pull/5605) | Match `.kibana` index settings |
-| v3.3.0 | [#5540](https://github.com/opensearch-project/security/pull/5540) | Comprehensive documentation for Resource Access Control |
-| v3.2.0 | [#5389](https://github.com/opensearch-project/security/pull/5389) | Migration API for existing sharing info |
-| v3.2.0 | [#5408](https://github.com/opensearch-project/security/pull/5408) | Resource Access Evaluator for standalone authorization |
-| v3.2.0 | [#5541](https://github.com/opensearch-project/security/pull/5541) | Client accessor pattern fix for optional security plugin |
-| v3.1.0 | [#5281](https://github.com/opensearch-project/security/pull/5281) | Introduces Centralized Resource Access Control Framework |
-| v3.1.0 | [#5358](https://github.com/opensearch-project/security/pull/5358) | Store resource sharing info in 1:1 backing indices |
+| Version | PR | Repository | Description |
+|---------|-----|------------|-------------|
+| v3.3.0 | [#3715](https://github.com/opensearch-project/ml-commons/pull/3715) | ml-commons | Onboards ML-Model-Group to centralized resource access control |
+| v3.3.0 | [#2304](https://github.com/opensearch-project/security-dashboards-plugin/pull/2304) | security-dashboards-plugin | Adds Resource Access Management Dashboard |
+| v3.3.0 | [#5600](https://github.com/opensearch-project/security/pull/5600) | security | DLS-based automatic filtering using `all_shared_principals` |
+| v3.3.0 | [#5596](https://github.com/opensearch-project/security/pull/5596) | security | Track `all_shared_principals` for efficient searchability |
+| v3.3.0 | [#5588](https://github.com/opensearch-project/security/pull/5588) | security | Multi-tenancy support with tenant tracking |
+| v3.3.0 | [#5597](https://github.com/opensearch-project/security/pull/5597) | security | Dashboard APIs for resource access management |
+| v3.3.0 | [#5574](https://github.com/opensearch-project/security/pull/5574) | security | Fix case-sensitive user search |
+| v3.3.0 | [#5576](https://github.com/opensearch-project/security/pull/5576) | security | Revert @Inject to client accessor pattern |
+| v3.3.0 | [#5631](https://github.com/opensearch-project/security/pull/5631) | security | Fix GET _doc authorization on sharable indices |
+| v3.3.0 | [#5654](https://github.com/opensearch-project/security/pull/5654) | security | Fix PATCH API visibility update |
+| v3.3.0 | [#5658](https://github.com/opensearch-project/security/pull/5658) | security | Preserve `all_shared_principals` on resource updates |
+| v3.3.0 | [#5666](https://github.com/opensearch-project/security/pull/5666) | security | Make initial share map mutable |
+| v3.3.0 | [#5605](https://github.com/opensearch-project/security/pull/5605) | security | Match `.kibana` index settings |
+| v3.3.0 | [#5540](https://github.com/opensearch-project/security/pull/5540) | security | Comprehensive documentation for Resource Access Control |
+| v3.2.0 | [#5389](https://github.com/opensearch-project/security/pull/5389) | security | Migration API for existing sharing info |
+| v3.2.0 | [#5408](https://github.com/opensearch-project/security/pull/5408) | security | Resource Access Evaluator for standalone authorization |
+| v3.2.0 | [#5541](https://github.com/opensearch-project/security/pull/5541) | security | Client accessor pattern fix for optional security plugin |
+| v3.1.0 | [#5281](https://github.com/opensearch-project/security/pull/5281) | security | Introduces Centralized Resource Access Control Framework |
+| v3.1.0 | [#5358](https://github.com/opensearch-project/security/pull/5358) | security | Store resource sharing info in 1:1 backing indices |
 
 ## References
 
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing proposal
 - [Issue #5391](https://github.com/opensearch-project/security/issues/5391): Migration API tracking issue
 - [Issue #5442](https://github.com/opensearch-project/security/issues/5442): Resource Access Evaluator tracking issue
+- [Issue #3890](https://github.com/opensearch-project/ml-commons/issues/3890): Onboard ML plugin to Centralized Resource AuthZ framework
+- [Issue #2303](https://github.com/opensearch-project/security-dashboards-plugin/issues/2303): Resource Access Management Dashboard feature request
 - [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
 - [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Complete developer and user guide
 - [spi/README.md](https://github.com/opensearch-project/security/blob/main/spi/README.md): SPI implementation guide
 
 ## Change History
 
-- **v3.3.0** (2026-01): DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
+- **v3.3.0** (2026-01): ML-Commons model group onboarding, Resource Access Management Dashboard UI, DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
 - **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
 - **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation

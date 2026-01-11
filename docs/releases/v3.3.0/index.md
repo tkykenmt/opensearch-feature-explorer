@@ -178,6 +178,7 @@
 ### Multi-Plugin
 
 - [Gradle 9 Compatibility](features/multi-plugin/gradle-9-compatibility.md)
+- [Resource Access Control](features/multi-plugin/resource-access-control.md)
 - [Version Increment](features/multi-plugin/version-increment.md)
 
 ### User Behavior Insights
