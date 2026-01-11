@@ -96,6 +96,7 @@
 
 ### ML Commons
 
+- [ML Commons Bug Fixes](features/ml-commons/ml-commons-bug-fixes.md)
 - [Metrics Framework Bug Fix](features/ml-commons/metrics-framework.md)
 - [Move Common String](features/ml-commons/move-common-string.md)
 - [Updating Gson Version to Resolve Conflict Coming from Core](features/ml-commons/updating-gson-version-to-resolve-conflict-coming-from-core.md)
