@@ -282,6 +282,17 @@ client.share(
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#5600](https://github.com/opensearch-project/security/pull/5600) | DLS-based automatic filtering using `all_shared_principals` |
+| v3.3.0 | [#5596](https://github.com/opensearch-project/security/pull/5596) | Track `all_shared_principals` for efficient searchability |
+| v3.3.0 | [#5588](https://github.com/opensearch-project/security/pull/5588) | Multi-tenancy support with tenant tracking |
+| v3.3.0 | [#5597](https://github.com/opensearch-project/security/pull/5597) | Dashboard APIs for resource access management |
+| v3.3.0 | [#5574](https://github.com/opensearch-project/security/pull/5574) | Fix case-sensitive user search |
+| v3.3.0 | [#5576](https://github.com/opensearch-project/security/pull/5576) | Revert @Inject to client accessor pattern |
+| v3.3.0 | [#5631](https://github.com/opensearch-project/security/pull/5631) | Fix GET _doc authorization on sharable indices |
+| v3.3.0 | [#5654](https://github.com/opensearch-project/security/pull/5654) | Fix PATCH API visibility update |
+| v3.3.0 | [#5658](https://github.com/opensearch-project/security/pull/5658) | Preserve `all_shared_principals` on resource updates |
+| v3.3.0 | [#5666](https://github.com/opensearch-project/security/pull/5666) | Make initial share map mutable |
+| v3.3.0 | [#5605](https://github.com/opensearch-project/security/pull/5605) | Match `.kibana` index settings |
 | v3.3.0 | [#5540](https://github.com/opensearch-project/security/pull/5540) | Comprehensive documentation for Resource Access Control |
 | v3.2.0 | [#5389](https://github.com/opensearch-project/security/pull/5389) | Migration API for existing sharing info |
 | v3.2.0 | [#5408](https://github.com/opensearch-project/security/pull/5408) | Resource Access Evaluator for standalone authorization |
@@ -300,6 +311,6 @@ client.share(
 
 ## Change History
 
-- **v3.3.0** (2026-01): Comprehensive documentation overhaul with REST API reference, dynamic settings, DocRequest interface, and action groups configuration
+- **v3.3.0** (2026-01): DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
 - **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
 - **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation
