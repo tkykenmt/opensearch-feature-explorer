@@ -175,6 +175,7 @@ GET logs/_search
 | v3.2.0 | [#18511](https://github.com/opensearch-project/OpenSearch/pull/18511) | Added approximation support for range queries with `now` in date field |
 | v3.2.0 | [#18763](https://github.com/opensearch-project/OpenSearch/pull/18763) | Disable approximation framework when dealing with multiple sorts |
 | v3.1.0 | [#18439](https://github.com/opensearch-project/OpenSearch/pull/18439) | BKD traversal optimization for skewed datasets |
+| v3.0.0 | [#18017](https://github.com/opensearch-project/OpenSearch/pull/18017) | Skip approximation when `track_total_hits` is set to `true` |
 | v3.0.0 | - | Initial GA release of Approximation Framework |
 
 ## References
@@ -192,4 +193,4 @@ GET logs/_search
 - **v3.4.0**: Adopted Lucene's native `pack` method for `half_float` and `unsigned_long` types, replacing custom encoding methods; requires Lucene 10.3.0
 - **v3.2.0**: Extended Approximation Framework to all numeric types (int, float, double, half_float, unsigned_long); added `search_after` support for numeric queries; approximation for range queries with `now`; automatic disabling for multiple sort fields
 - **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
-- **v3.0.0**: Initial GA release with basic early termination support
+- **v3.0.0**: Initial GA release with basic early termination support; added logic to skip approximation when `track_total_hits: true` is set
