@@ -150,6 +150,7 @@
 ### Neural Search
 
 - [SEISMIC Bugfixes](features/neural-search/seismic-bugfixes.md) - Fix IT failures in multi-node environments, query handling without method_parameters, and disk space recovery on index deletion
+- [SEISMIC Nested Field](features/neural-search/seismic-nested-field.md) - Support nested field ingestion and query for text chunking workflows with SEISMIC sparse ANN
 
 ### Performance Analyzer
 

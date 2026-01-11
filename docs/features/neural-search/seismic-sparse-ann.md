@@ -263,6 +263,98 @@ Response includes:
 }
 ```
 
+### Nested Field Support (v3.4.0+)
+
+SEISMIC supports nested `sparse_vector` fields for text chunking workflows where documents are split into smaller passages stored as nested objects.
+
+#### Create Index with Nested SEISMIC Field
+
+```json
+PUT testindex
+{
+  "settings": {
+    "index": {
+      "sparse": true
+    }
+  },
+  "mappings": {
+    "properties": {
+      "passage_chunk_embedding": {
+        "type": "nested",
+        "properties": {
+          "sparse_encoding": {
+            "type": "sparse_vector",
+            "method": {
+              "name": "seismic",
+              "parameters": {
+                "n_postings": 160,
+                "cluster_ratio": 0.075,
+                "summary_prune_ratio": 0.4,
+                "approximate_threshold": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+#### Text Chunking Pipeline
+
+```json
+PUT _ingest/pipeline/text-chunking-seismic-pipeline
+{
+  "processors": [
+    {
+      "text_chunking": {
+        "algorithm": {
+          "fixed_token_length": {
+            "token_limit": 10,
+            "overlap_rate": 0.2,
+            "tokenizer": "standard"
+          }
+        },
+        "field_map": {
+          "passage_text": "passage_chunk"
+        }
+      }
+    },
+    {
+      "sparse_encoding": {
+        "model_id": "your-sparse-model-id",
+        "field_map": {
+          "passage_chunk": "passage_chunk_embedding"
+        }
+      }
+    }
+  ]
+}
+```
+
+#### Nested Query
+
+```json
+GET testindex/_search
+{
+  "query": {
+    "nested": {
+      "score_mode": "max",
+      "path": "passage_chunk_embedding",
+      "query": {
+        "neural_sparse": {
+          "passage_chunk_embedding.sparse_encoding": {
+            "query_text": "search query",
+            "model_id": "your-sparse-model-id"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## Limitations
 
 - **Codec Limitation**: Cannot combine sparse ANN fields with k-NN fields in the same index
@@ -270,12 +362,13 @@ Response includes:
 - **Force Merge Required**: Optimal performance requires force merging to single segment per shard
 - **Dataset Size**: Best suited for datasets with 1M+ documents; smaller datasets may not see significant benefits
 - **Two-Phase Query**: Neural sparse two-phase query not supported with SEISMIC fields
-- **Nested Fields**: Nested field support added in v3.4.0
+- **Nested Score Mode**: Only `score_mode: "max"` is supported for nested queries (v3.4.0)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1678](https://github.com/opensearch-project/neural-search/pull/1678) | Support nested field ingestion and query |
 | v3.4.0 | [#1655](https://github.com/opensearch-project/neural-search/pull/1655) | Fix IT failures in multi-node environments |
 | v3.4.0 | [#1674](https://github.com/opensearch-project/neural-search/pull/1674) | Handle non-specified method_parameters in queries |
 | v3.4.0 | [#1683](https://github.com/opensearch-project/neural-search/pull/1683) | Fix disk space recovery on index deletion |
@@ -302,12 +395,15 @@ Response includes:
 - [RFC #1335](https://github.com/opensearch-project/neural-search/issues/1335): Sparse ANN Algorithm: Seismic
 - [Design #1390](https://github.com/opensearch-project/neural-search/issues/1390): Approximate Sparse Nearest-Neighbor Search in OpenSearch
 - [Memory Management Design #1444](https://github.com/opensearch-project/neural-search/issues/1444): SEISMIC memory management
+- [Issue #1666](https://github.com/opensearch-project/neural-search/issues/1666): Feature request for text chunking search with Sparse ANN
+- [Issue #1671](https://github.com/opensearch-project/neural-search/issues/1671): Design document for nested field support
 - [SEISMIC Paper](https://dl.acm.org/doi/10.1145/3626772.3657769): Efficient Inverted Indexes for Approximate Retrieval over Learned Sparse Representations
 - [Blog: Scaling neural sparse search to billions of vectors](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/)
 - [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
 - [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
+- [Text Chunking Documentation](https://docs.opensearch.org/latest/vector-search/ingesting-data/text-chunking/)
 
 ## Change History
 
-- **v3.4.0** (2026-01-11): Bug fixes for IT failures in multi-node environments, query handling without method_parameters, and disk space recovery on index deletion
+- **v3.4.0** (2026-01-11): Added nested field support for text chunking workflows; bug fixes for IT failures, query handling, and disk space recovery
 - **v3.3.0** (2025-10-23): Initial implementation of SEISMIC sparse ANN algorithm with full indexing, query, caching, and memory management support
