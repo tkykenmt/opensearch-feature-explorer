@@ -144,6 +144,7 @@
 
 ### Search Relevance
 
+- [Search Comparison Dashboards](features/dashboards-search-relevance/search-comparison-dashboards.md)
 - [Search Relevance Fixes](features/search-relevance/search-relevance-fixes.md)
 
 ### CI/CD
