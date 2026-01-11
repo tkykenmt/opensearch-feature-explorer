@@ -118,6 +118,7 @@ flowchart TB
 | `category_field` | Field(s) for entity grouping | None (single-entity) |
 | `result_index` | Custom index for results | `.opensearch-anomaly-results*` |
 | `filter_query` | Query to filter input data | Match all |
+| `auto_create` | Indicates if detector was created automatically (v3.4.0+) | `false` |
 
 ### API Endpoints
 
@@ -219,7 +220,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 | Role | Description |
 |------|-------------|
 | `anomaly_full_access` | Full access to all anomaly detection operations |
-| `anomaly_read_access` | Read-only access to detectors and results |
+| `anomaly_read_access` | Read-only access to detectors, results, and suggest API (v3.4.0+) |
 
 ## Limitations
 
@@ -233,6 +234,10 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1569](https://github.com/opensearch-project/anomaly-detection/pull/1569) | Conditional resource sharing - auto-switch to legacy access control |
+| v3.4.0 | [#1605](https://github.com/opensearch-project/anomaly-detection/pull/1605) | Add validate and suggest transport actions to node client |
+| v3.4.0 | [#1602](https://github.com/opensearch-project/anomaly-detection/pull/1602) | Add auto_create field for programmatic detector creation |
+| v3.4.0 | [security#5754](https://github.com/opensearch-project/security/pull/5754) | Add suggest API to anomaly_read_access role |
 | v3.4.0 | [#1615](https://github.com/opensearch-project/anomaly-detection/pull/1615) | Fix auto-expand replicas for default results index on 3AZ domains |
 | v3.4.0 | [#1116](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1116) | Honor detector frequency when flagging missing feature data |
 | v3.4.0 | [#1126](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1126) | Address error toast on page open with data source enabled |
@@ -284,6 +289,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Change History
 
+- **v3.4.0** (2026-02-18): **Enhancements** - Conditional resource sharing with automatic fallback to legacy access control when model-group is excluded from protected resources, new `AnomalyDetectionClient` methods (`validateAnomalyDetector()`, `suggestAnomalyDetector()`) for cross-plugin integration, new `auto_create` field for programmatic detector creation, `anomaly_read_access` role now includes suggest API permission
 - **v3.4.0** (2026-02-18): **Bugfixes** - Fixed forecast results index creation on 3-AZ domains by using `auto_expand_replicas: "0-2"` instead of fixed replica count, improved missing feature data detection to honor detector frequency (prevents false warnings when frequency differs from detection interval), suppressed spurious error toasts when data sources are unavailable in multi-data-source environments
 - **v3.3.0** (2026-01-14): **Frequency scheduling and Suggest API** - Added `frequency` parameter for flexible detection intervals separate from data aggregation, new Suggest API (`/_plugins/_anomaly_detection/detectors/_suggest`) for automated configuration recommendations, Dashboards UI enhancements with Suggest Parameters button and Operation Settings panel reorganization, bug fixes for STOPPED state race condition, flaky integration tests, and protected resource types compatibility
 - **v3.3.0** (2026-01-14): **Resource authorization integration** - Search handler updated to consume `PluginClient` for DLS-style filtering of protected resources, enabling fine-grained resource sharing with the Security plugin's new access control framework

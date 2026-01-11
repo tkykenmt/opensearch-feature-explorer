@@ -218,4 +218,5 @@
 
 ### Anomaly Detection
 
+- [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md) - Conditional resource sharing fallback, client API extensions for validate/suggest, auto_create field, suggest API read access
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md) - Fix 3-AZ forecast results index creation, frequency-aware missing data detection, and data source error toast suppression
