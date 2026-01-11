@@ -2,28 +2,34 @@
 
 ## Summary
 
-OpenSearch 3.4.0 delivers significant performance improvements, expanded PPL capabilities, enhanced agentic search experiences, and new alerting functionality. This release focuses on query performance with up to 10x faster aggregations, introduces PPL-based alerting (V2), and brings a redesigned no-code agentic search UI with MCP integration. Key highlights include faster scroll queries, bulk collection APIs for aggregations, five new PPL commands, and SEISMIC nested field support for text chunking workflows.
+OpenSearch 3.4.0 delivers significant performance improvements, expanded PPL functionality, and a redesigned agentic search experience. Key highlights include up to 40% faster aggregation workloads through Lucene's bulk collection API, ~19% improvement in scroll query performance, enhanced gRPC transport with expanded query support, and new PPL commands for data exploration. The release also introduces a no-code agentic search UI with MCP integration and comprehensive infrastructure upgrades to JDK 25 and Gradle 9.2 across all plugins.
 
 ## Highlights
 
 ```mermaid
 graph TB
     subgraph "Performance"
-        A[Aggregation Optimizations<br/>Up to 10x faster]
+        A[Aggregation Optimizations<br/>5-40% faster]
         B[Scroll Query Caching<br/>~19% improvement]
-        C[Filter Rewrite Bulk APIs<br/>20% faster cardinality]
+        C[Percentiles MergingDigest<br/>Low-cardinality boost]
     end
     
-    subgraph "Search & Analytics"
-        D[Agentic Search UX<br/>MCP Integration]
-        E[PPL Alerting V2<br/>Stateless Alerts]
-        F[5 New PPL Commands<br/>chart, streamstats, etc.]
+    subgraph "Query & Analytics"
+        D[New PPL Commands<br/>chart, streamstats, multisearch]
+        E[gRPC Query Support<br/>6 new query types]
+        F[Filter Rewrite<br/>Sub-aggregation optimization]
+    end
+    
+    subgraph "AI & Search"
+        G[Agentic Search UX<br/>No-code agent builder]
+        H[MCP Integration<br/>External tool support]
+        I[Scheduled Experiments<br/>Cron-based execution]
     end
     
     subgraph "Infrastructure"
-        G[gRPC Enhancements<br/>New Query Types]
-        H[Resource Sharing<br/>Multi-type Index Support]
-        I[JDK 25 & Gradle 9.2<br/>Build Modernization]
+        J[JDK 25 Support]
+        K[Gradle 9.2 Upgrade]
+        L[24 Plugin Updates]
     end
 ```
 
@@ -31,75 +37,70 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| PPL Alerting V2 | New alerting API with PPL query support, stateless alerts, per-result/result-set triggers | [Details](features/alerting/ppl-alerting.md) |
-| Agentic Search UX | No-code agent builder with MCP server integration, conversational memory, pairwise comparison | [Details](features/dashboards-search-relevance/agentic-search.md) |
-| PPL Commands (Calcite) | New `chart`, `streamstats`, `multisearch`, `replace`, `appendpipe` commands | [Details](features/sql/ppl-commands-calcite.md) |
-| SEISMIC Nested Fields | Sparse ANN support for nested fields enabling text chunking search workflows | [Details](features/neural-search/seismic-nested-field.md) |
+| PPL Alerting | V2 alerting API with PPL query support, stateless alerts, per-result and result-set trigger modes | [Details](features/alerting/ppl-alerting.md) |
+| Agentic Search UX | No-code agent builder with MCP server support, conversational memory, and simplified configuration | [Details](features/dashboards-flow-framework/dashboards-agent-assistant.md) |
+| Scheduled Experiments | Cron-based scheduling for recurring search relevance experiments with historical tracking | [Details](features/search-relevance/scheduled-experiments.md) |
+| ISM Exclusion Pattern | Support exclusion patterns in ISM templates using `-` prefix for selective index management | [Details](features/index-management/ism-exclusion-pattern.md) |
+| k-NN Memory Optimized Warmup | Optimized warmup procedure for memory-optimized search with page cache pre-loading | [Details](features/k-nn/k-nn-memory-optimized-warmup.md) |
+| Query Version-Aware Settings | Dynamic feature detection based on cluster version for Query Insights Dashboards | [Details](features/query-insights-dashboards/query-version-aware-settings.md) |
+| WLM Security Attributes | Security attribute extraction for WLM rule-based auto-tagging (username, roles) | [Details](features/security/wlm-security-attributes.md) |
+| Anomaly Detection Daily Insights | AI-powered anomaly correlation with automated detector creation via ML agents | [Details](features/anomaly-detection-dashboards-plugin/anomaly-detection-daily-insights.md) |
+| Remote Store CMK Support | Customer-managed key encryption/decryption with STS role assumption for cross-account access | [Details](features/opensearch-remote-metadata-sdk/remote-store-cmk-support.md) |
+| Flow Framework Access Control | Integration with centralized Resource Sharing and Access Control framework | [Details](features/flow-framework/flow-framework-access-control.md) |
+
+## Improvements
+
+| Area | Description | Report |
+|------|-------------|--------|
+| Aggregation Performance | Hybrid cardinality collector, filter rewrite + skip list (up to 10x), MergingDigest for percentiles, matrix_stats 5x speedup | [Details](features/opensearch/aggregation-optimizations.md) |
+| Scroll Query Performance | Cache StoredFieldsReader per segment for ~19% improvement | [Details](features/opensearch/scroll-query-optimization.md) |
+| gRPC Transport | Support for ConstantScoreQuery, FuzzyQuery, MatchBoolPrefixQuery, MatchPhrasePrefix, PrefixQuery, MatchQuery; CBOR/SMILE/YAML formats | [Details](features/opensearch/grpc-transport.md) |
+| PPL Commands | New chart, streamstats, multisearch, replace, appendpipe commands; bucket_nullable, usenull options | [Details](features/sql/ppl-commands-calcite.md) |
+| PPL Functions | New mvindex, mvdedup, mvappend, tostring functions; per_second/minute/hour/day for timechart | [Details](features/sql/ppl-eval-functions.md) |
+| PPL Query Optimization | 33 enhancements including sort pushdown, distinct count approx, case-to-range queries | [Details](features/sql/ppl-query-optimization.md) |
+| Security Configuration | Dedicated config reloading thread, dynamic resource settings, X509v3 SAN authentication, securityadmin timeout | [Details](features/security/security-configuration.md) |
+| Resource Sharing | Multi-type index support, ResourceProvider interface, Builder pattern, REST API improvements | [Details](features/security/resource-sharing.md) |
 | Dashboards Explore | Histogram breakdowns, Field Statistics tab, trace flyout, correlations, cancel query | [Details](features/opensearch-dashboards/dashboards-explore.md) |
-| Context-Aware Segments | Collocate related documents into same segments for improved query performance | [Details](features/opensearch/context-aware-segments.md) |
-| k-NN Memory Optimized Warmup | Optimized warmup for memory-optimized search reducing cold start latency | [Details](features/k-nn/k-nn-memory-optimized-warmup.md) |
-
-## Performance Improvements
-
-| Area | Description | Report |
-|------|-------------|--------|
-| Aggregation Optimizations | Hybrid cardinality collector, filter rewrite + skip list (up to 10x), MergingDigest for percentiles (97% faster), matrix_stats (80% faster) | [Details](features/opensearch/aggregation-optimizations.md) |
-| Filter Rewrite Bulk APIs | Bulk collection for sub-aggregations with up to 20% improvement for cardinality | [Details](features/opensearch/filter-rewrite-optimization.md) |
-| Scroll Query Caching | Cache StoredFieldsReader per segment for ~19% improvement | [Details](features/opensearch/scroll-query-optimization.md) |
-| PPL Query Optimization | 33 enhancements including sort pushdown, aggregation pushdown, distinct count approx | [Details](features/sql/ppl-query-optimization.md) |
-| Terms Query Optimization | Pack terms once for keyword fields with index and docValues enabled | [Details](features/opensearch/terms-query-optimization.md) |
-
-## Enhancements
-
-| Area | Description | Report |
-|------|-------------|--------|
-| gRPC Transport | Pluggable interceptors, thread context preservation, CBOR/SMILE/YAML support, new query types | [Details](features/opensearch/grpc-transport.md) |
-| Pull-based Ingestion | Offset-based lag metrics, periodic flush, message mappers, dynamic consumer config | [Details](features/opensearch/pull-based-ingestion-enhancements.md) |
-| Resource Sharing | Multi-type index support, ResourceProvider interface refactoring, POST API support | [Details](features/security/resource-sharing.md) |
-| Security Configuration | Dedicated config reloading thread, dynamic resource settings, X509v3 SAN authentication | [Details](features/security/security-configuration.md) |
-| Flow Framework Access Control | Onboard flow-framework plugin to resource-sharing framework | [Details](features/flow-framework/flow-framework-access-control.md) |
-| ISM Exclusion Pattern | Support exclusion patterns in index patterns for ISM policies | [Details](features/index-management/ism-exclusion-pattern.md) |
-| Anomaly Detection | Auto-switch access control, suggest/validate transport actions, auto-create detectors | [Details](features/anomaly-detection/anomaly-detection-enhancements.md) |
+| Dashboards Chat | Global search integration, suggestion system, state persistence, session storage | [Details](features/opensearch-dashboards/dashboards-chat.md) |
+| ML Commons | Sensitive parameter filtering, resource type support, increased batch task limits (max: 10,000) | [Details](features/ml-commons/ml-commons-enhancements.md) |
+| k-NN Enhancements | Native SIMD scoring for FP16, VectorSearcherHolder memory optimization | [Details](features/k-nn/k-nn-enhancements.md) |
+| SEISMIC Nested Field | Support nested field ingestion and query for text chunking workflows | [Details](features/neural-search/seismic-nested-field.md) |
 
 ## Bug Fixes
 
-| Fix | Description | PR |
-|-----|-------------|-----|
-| Scroll Query Performance | Fix performance regression in versions >= 2.6.0 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) |
-| Security Multi-tenancy | Fix `.kibana` system index updates with multi-tenancy enabled | [#5778](https://github.com/opensearch-project/security/pull/5778) |
-| k-NN Score Calculation | Fix score to distance calculation for inner product in Faiss | [#2992](https://github.com/opensearch-project/k-NN/pull/2992) |
-| PPL Memory Exhaustion | Fix memory exhaustion for multiple filtering operations | [#4841](https://github.com/opensearch-project/sql/pull/4841) |
-| SEISMIC Disk Recovery | Fix disk free space recovery problem with Sparse ANN | [#1683](https://github.com/opensearch-project/neural-search/pull/1683) |
-| Cross-Cluster Replication | Fix empty request body requirement in pause replication | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) |
-
-## Infrastructure Updates
-
-| Change | Description | Report |
-|--------|-------------|--------|
-| JDK 25 & Gradle 9.2 | Build tool upgrades across all plugins | [Details](features/multi-plugin/jdk-25-gradle-9.2-upgrades.md) |
-| Maven Snapshots | Migrate snapshot publishing to S3-backed repository | [Details](features/opensearch/maven-snapshots-publishing.md) |
-| Lucene 10.3.2 | Upgrade with MaxScoreBulkScorer bug fix | [Details](features/opensearch/lucene-upgrade.md) |
-| Dependency Updates | 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness | [Details](features/opensearch/dependency-updates-opensearch-core.md) |
+| Area | Description | PR |
+|------|-------------|-----|
+| SQL/PPL | 48 bug fixes including memory exhaustion, race conditions, rex nested capture groups | [Details](features/sql/sql-ppl-bugfixes.md) |
+| Security | Multi-tenancy `.kibana` index fix, WildcardMatcher empty string handling, DLS/FLS internal request fix | [Details](features/security/security-bugfixes.md) |
+| k-NN | Memory optimized search fixes, race condition in KNNQueryBuilder, Faiss inner product score calculation | [Details](features/k-nn/k-nn-bugfixes.md) |
+| Query Bugfixes | Fix crashes in wildcard queries, aggregations, highlighters, script score queries | [Details](features/opensearch/query-bugfixes.md) |
+| gRPC Transport | Fix ClassCastException for large requests, Bulk API fixes, node bootstrap with streaming transport | [Details](features/opensearch/grpc-transport-bugfixes.md) |
+| Index Management | Fix ISM policy rebinding, SM deletion snapshot pattern parsing, rollup test race conditions | [Details](features/index-management/index-management-bugfixes.md) |
+| ML Commons | Agent type update validation, QueryPlanningTool model ID parsing, agentic memory multi-node fixes | [Details](features/ml-commons/ml-commons-bugfixes.md) |
+| Neural Search | SEISMIC IT failures, query handling without method_parameters, disk space recovery | [Details](features/neural-search/seismic-bugfixes.md) |
+| Anomaly Detection | 3-AZ forecast results index creation, frequency-aware missing data detection | [Details](features/anomaly-detection/anomaly-detection-bugfixes.md) |
+| Search Relevance | Hybrid optimizer floating-point precision, query serialization for LTR plugins | [Details](features/search-relevance/search-relevance-bugfixes.md) |
 
 ## Breaking Changes
 
 | Change | Migration | Report |
 |--------|-----------|--------|
-| ResourceProvider Interface | Update implementations from record to interface | [Details](features/security/resource-sharing.md) |
-| System Indices Deprecation | `plugins.security.system_indices.indices` deprecated | [Details](features/security/security-features.md) |
-| Stats Builder Pattern | 30+ Stats class constructors deprecated in favor of Builder pattern | [Details](features/opensearch/stats-builder-pattern-deprecations.md) |
+| Stats Builder Pattern | 30+ Stats classes deprecated constructors in favor of Builder pattern | [Details](features/opensearch/stats-builder-pattern-deprecations.md) |
+| System Indices Deprecation | `plugins.security.system_indices.indices` setting deprecated | [Details](features/security/security-features.md) |
+| AccessController Migration | Migrate from `java.security.AccessController` to `org.opensearch.secure_sm.AccessController` | [Details](features/security/security-accesscontroller-migration.md) |
 
 ## Dependencies
 
 Notable dependency updates in this release:
 
-- **Apache Lucene**: 10.3.1 → 10.3.2
+- **Lucene**: 10.3.1 → 10.3.2 (MaxScoreBulkScorer bug fix)
+- **Gradle**: 9.2.0 across all plugins
+- **JDK**: 25 support across all plugins
 - **Netty**: 4.2.4 (HTTP/3 readiness)
-- **Gradle**: 9.2.0
-- **JDK**: 25 (bundled)
-- **Apache Calcite**: 1.41.0
-- **Protobuf**: 0.24.0 (gRPC)
-- **Logback**: 1.5.19/1.5.20
+- **Calcite**: 1.41.0 for SQL plugin
+- **Security**: 28 dependency updates addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
+
+See [Dependency Updates](features/multi-repo/dependency-updates.md) and [JDK 25 & Gradle 9.2 Upgrades](features/multi-plugin/jdk-25-gradle-9.2-upgrades.md) for details.
 
 ## References
 
