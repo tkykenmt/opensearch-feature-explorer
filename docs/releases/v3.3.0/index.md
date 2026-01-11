@@ -166,6 +166,10 @@
 
 - [Flow Framework Fixes](features/flow-framework/flow-framework-fixes.md)
 
+### Cross-Cluster Replication
+
+- [Cross-Cluster Replication Fixes](features/cross-cluster-replication/cross-cluster-replication-fixes.md)
+
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
