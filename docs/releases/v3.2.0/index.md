@@ -45,6 +45,7 @@ This page indexes all investigated release items for OpenSearch v3.2.0.
 | [Trace Details Page](features/opensearch-dashboards/trace-details-page.md) | feature | Dedicated trace investigation page with Gantt chart and service map |
 | [Bar Chart Enhancements](features/opensearch-dashboards/bar-chart-enhancements.md) | feature | Bar size control switch for auto/manual bar sizing |
 | [Dashboards CVE Fixes](features/opensearch-dashboards/dashboards-cve-fixes.md) | deprecation | [CVE-2025-48387] tar-fs security update |
+| [Dashboards Code Quality & Testing](features/opensearch-dashboards/dashboards-code-quality-testing.md) | bugfix | Testing guidelines, @ts-expect-error migration, Cypress tests for Explore, component refactoring |
 
 ### OpenSearch
 
