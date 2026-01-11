@@ -92,6 +92,7 @@
 - [Index Refresh](opensearch/index-refresh.md)
 - [Java Runtime & JPMS](opensearch/java-runtime-and-jpms.md)
 - [Lucene 10 Upgrade](opensearch/lucene-10-upgrade.md)
+- [Lucene Integration](opensearch/lucene-integration.md)
 - [Lucene Similarity](opensearch/lucene-similarity.md)
 - [Lucene Upgrade](opensearch/lucene-upgrade.md)
 - [Merge & Segment Settings](opensearch/merge-segment-settings.md)
