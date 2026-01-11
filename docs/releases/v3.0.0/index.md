@@ -48,6 +48,7 @@
 ## opensearch-dashboards
 
 - [CI/CD & Build Fixes](features/opensearch-dashboards/ci-cd-build-fixes.md)
+- [Dashboards Dependency Updates](features/opensearch-dashboards/dashboards-dependency-updates.md)
 - [Dashboards Features](features/opensearch-dashboards/dashboards-features.md)
 - [Query Assistant](features/opensearch-dashboards/query-assistant.md)
 - [Dashboard & Visualization Fixes](features/opensearch-dashboards/dashboard-and-visualization-fixes.md)
