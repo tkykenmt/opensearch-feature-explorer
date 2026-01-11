@@ -47,6 +47,7 @@
 - [Stream Input/Output](features/opensearch/stream-inputoutput.md)
 - [Thread Context Permissions](features/opensearch/thread-context-permissions.md)
 - [Tiered Caching](features/opensearch/tiered-caching.md)
+- [Track Total Hits](features/opensearch/track-total-hits.md)
 - [Wildcard Field](features/opensearch/wildcard-field.md)
 
 ## opensearch-dashboards
