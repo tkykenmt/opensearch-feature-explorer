@@ -261,6 +261,9 @@ Documents in gRPC requests must be Base64 encoded:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#20010](https://github.com/opensearch-project/OpenSearch/pull/20010) | Fix ClassCastException in FlightClientChannel for requests larger than 16KB |
+| v3.4.0 | [#19937](https://github.com/opensearch-project/OpenSearch/pull/19937) | Fix GRPC Bulk - update doc field, fetchSource default, pipeline support |
+| v3.4.0 | [#19948](https://github.com/opensearch-project/OpenSearch/pull/19948) | Fix node bootstrap error when enable stream transport and remote cluster state |
 | v3.3.0 | [#18949](https://github.com/opensearch-project/OpenSearch/pull/18949) | Publish transport-grpc-spi for QueryBuilderProtoConverter |
 | v3.3.0 | [#19007](https://github.com/opensearch-project/OpenSearch/pull/19007) | Upgrade opensearch-protobufs to 0.13.0 |
 | v3.3.0 | [#19278](https://github.com/opensearch-project/OpenSearch/pull/19278) | Optimize gRPC transport thread management |
@@ -302,6 +305,7 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Bugfixes - ClassCastException for large requests (>16KB), Bulk API fixes (doc field, fetchSource default, pipeline support), node bootstrap fix with streaming transport
 - **v3.3.0** (2026-01-14): Expanded query support (15+ query types), thread management optimization, zero-copy serialization, transport-grpc-spi module for plugin extensibility
 - **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
 - **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
