@@ -190,6 +190,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1270](https://github.com/opensearch-project/flow-framework/pull/1270) | Fix incorrect field map output dimensions in semantic search with local model template |
 | v3.3.0 | [#1217](https://github.com/opensearch-project/flow-framework/pull/1217) | Pre-create ML Commons indices for Tenant Aware tests |
 | v3.2.0 | [#1185](https://github.com/opensearch-project/flow-framework/pull/1185) | Fix ApiSpecFetcher Memory Issues and Exception Handling |
 | v3.2.0 | [#1190](https://github.com/opensearch-project/flow-framework/pull/1190) | Better handling of Workflow Steps with Bad Request status |
@@ -224,6 +225,8 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Workflow Template Security](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/)
 - [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
 - [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
+- [Hugging Face paraphrase-MiniLM-L3-v2](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2): Model documentation for semantic search with local model template
+- [Issue #1254](https://github.com/opensearch-project/flow-framework/issues/1254): Incorrect field map output dimensions in semantic search with local model template
 - [Issue #1216](https://github.com/opensearch-project/flow-framework/issues/1216): Tenant Aware Integ Tests failing because indices aren't being created
 - [Issue #1180](https://github.com/opensearch-project/flow-framework/issues/1180): Migrate workflow custom model registration to 3.1
 - [Issue #1189](https://github.com/opensearch-project/flow-framework/issues/1189): Error message for CreateIndexStep when index exists is unhelpful
@@ -239,6 +242,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 
 ## Change History
 
+- **v3.4.0** (2025-11-12): Fixed incorrect output dimension default (768→384) in `semantic-search-with-local-model-defaults.json` template to match the actual output dimension of the `paraphrase-MiniLM-L3-v2` model
 - **v3.3.0** (2025-10-07): Fixed tenant-aware integration test failures by pre-creating ML Commons indices; Added `createMLCommonsIndices()` helper method to test infrastructure
 - **v3.2.0** (2025-08-06): Bug fixes for ApiSpecFetcher memory issues and exception handling; Improved error messages for workflow steps with Bad Request status; Updated RegisterLocalCustomModelStep for OpenSearch 3.1+ API compatibility with model_config nesting and space_type support; Fixed encryption key race condition during concurrent template creation; Fixed connector name substitution in default use case templates
 - **v3.1.0** (2025-07-15): Bug fixes for RegisterAgentStep LLM field processing, exception type in WorkflowState error messages, and LLM spec parameter passing; Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
