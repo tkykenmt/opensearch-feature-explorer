@@ -131,6 +131,37 @@ GET /products/_search
 }
 ```
 
+### DocValues Retrieval (v3.0.0+)
+
+Starting from v3.0.0, you can retrieve specific subfield values from DocValues using the `docvalue_fields` parameter:
+
+```json
+// Retrieve specific subfield value from DocValues
+GET /products/_search
+{
+  "_source": false,
+  "stored_fields": "_none_",
+  "docvalue_fields": ["metadata.tags.color"]
+}
+
+// Response
+{
+  "hits": {
+    "hits": [
+      {
+        "_index": "products",
+        "_id": "1",
+        "fields": {
+          "metadata.tags.color": ["black"]
+        }
+      }
+    ]
+  }
+}
+```
+
+This is more efficient than loading the entire `_source` when you only need specific field values.
+
 ## Limitations
 
 - Only accepts JSON objects as values (not arrays, strings, or numbers directly)
@@ -142,17 +173,20 @@ GET /products/_search
 - No filtering by subfields
 - Painless scripting not supported for retrieving subfield values
 - Maximum field value length in dot notation is 2²⁴ − 1
+- DocValues retrieval requires full dot-path notation (root field not supported)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#16802](https://github.com/opensearch-project/OpenSearch/pull/16802) | Added ability to retrieve value from DocValues in flat_object field |
 | v2.18.0 | [#14383](https://github.com/opensearch-project/OpenSearch/pull/14383) | Use IndexOrDocValuesQuery to optimize query, delegate to KeywordFieldType |
 | v2.18.0 | [#15985](https://github.com/opensearch-project/OpenSearch/pull/15985) | Fix infinite loop when parsing invalid token types |
 | v2.7.0 | - | Initial implementation of flat_object field type |
 
 ## References
 
+- [Issue #16742](https://github.com/opensearch-project/OpenSearch/issues/16742): Feature request for DocValues retrieval
 - [Issue #11537](https://github.com/opensearch-project/OpenSearch/issues/11537): Feature request for IndexOrDocValuesQuery support
 - [Issue #11635](https://github.com/opensearch-project/OpenSearch/issues/11635): Bug report for code duplication in query generation
 - [Issue #15982](https://github.com/opensearch-project/OpenSearch/issues/15982): Bug report for infinite loop with invalid tokens
@@ -162,5 +196,6 @@ GET /products/_search
 
 ## Change History
 
+- **v3.0.0** (2025-02-11): Added ability to retrieve values from DocValues in flat_object subfields using `docvalue_fields` parameter with dot notation.
 - **v2.18.0** (2024-10-22): Added IndexOrDocValuesQuery optimization for improved query performance. Delegated query generation to KeywordFieldType to reduce code duplication. Enabled wildcard query support. Fixed infinite loop bug when flat_object field receives invalid token types.
 - **v2.7.0** (2023-04-18): Initial implementation of flat_object field type.
