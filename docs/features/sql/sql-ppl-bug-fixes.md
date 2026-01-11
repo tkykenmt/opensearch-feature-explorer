@@ -98,6 +98,54 @@ SELECT UNIX_TIMESTAMP('2025-01-10 12:30:45.123') as ts FROM my_index
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Add hashCode() and equals() to ExprJavaType value class |
+| v3.4.0 | [#4868](https://github.com/opensearch-project/sql/pull/4868) | Fix LogPatternAggFunction parameter/return logic |
+| v3.4.0 | [#4850](https://github.com/opensearch-project/sql/pull/4850) | Grouping key field type overwrite fix |
+| v3.4.0 | [#4841](https://github.com/opensearch-project/sql/pull/4841) | Fix memory exhaustion for multiple filtering operations |
+| v3.4.0 | [#4837](https://github.com/opensearch-project/sql/pull/4837) | Update like() syntax |
+| v3.4.0 | [#4813](https://github.com/opensearch-project/sql/pull/4813) | Support escaped field names in SPath parsing |
+| v3.4.0 | [#4793](https://github.com/opensearch-project/sql/pull/4793) | Fix function identify problem in SQL dialect conversion |
+| v3.4.0 | [#4788](https://github.com/opensearch-project/sql/pull/4788) | Translate SAFE_CAST to TRY_CAST in Spark SQL |
+| v3.4.0 | [#4783](https://github.com/opensearch-project/sql/pull/4783) | Fix search anonymizer only |
+| v3.4.0 | [#4777](https://github.com/opensearch-project/sql/pull/4777) | Fix Streamstats null group handling |
+| v3.4.0 | [#4758](https://github.com/opensearch-project/sql/pull/4758) | Fix eval on grouped fields after timechart |
+| v3.4.0 | [#4749](https://github.com/opensearch-project/sql/pull/4749) | Support script pushdown in sort-on-measure rewriting |
+| v3.4.0 | [#4744](https://github.com/opensearch-project/sql/pull/4744) | Fix filter push down redundant filter queries |
+| v3.4.0 | [#4742](https://github.com/opensearch-project/sql/pull/4742) | Fix binning UDF resolution / type coercion |
+| v3.4.0 | [#4719](https://github.com/opensearch-project/sql/pull/4719) | Support nested field access after fields command |
+| v3.4.0 | [#4717](https://github.com/opensearch-project/sql/pull/4717) | Support decimal as span literals |
+| v3.4.0 | [#4708](https://github.com/opensearch-project/sql/pull/4708) | Fix AllFieldsExcludeMeta nested field resolution |
+| v3.4.0 | [#4706](https://github.com/opensearch-project/sql/pull/4706) | BucketAggregationParser handle more non-composite types |
+| v3.4.0 | [#4683](https://github.com/opensearch-project/sql/pull/4683) | Fix sub-fields accessing of generated structs |
+| v3.4.0 | [#4673](https://github.com/opensearch-project/sql/pull/4673) | Make nested alias type support outer context |
+| v3.4.0 | [#4670](https://github.com/opensearch-project/sql/pull/4670) | Use table scan rowType in filter pushdown |
+| v3.4.0 | [#4665](https://github.com/opensearch-project/sql/pull/4665) | Fix CVE-2025-48924 |
+| v3.4.0 | [#4651](https://github.com/opensearch-project/sql/pull/4651) | Fix asc/desc keyword behavior for sort |
+| v3.4.0 | [#4648](https://github.com/opensearch-project/sql/pull/4648) | Change ComparableLinkedHashMap to compare Key |
+| v3.4.0 | [#4641](https://github.com/opensearch-project/sql/pull/4641) | Fix rex nested capture groups extraction |
+| v3.4.0 | [#4633](https://github.com/opensearch-project/sql/pull/4633) | Replace dots in table scan PhysType fields |
+| v3.4.0 | [#4629](https://github.com/opensearch-project/sql/pull/4629) | Return comparable LinkedHashMap in ExprTupleValue |
+| v3.4.0 | [#4621](https://github.com/opensearch-project/sql/pull/4621) | Support alias fields in MIN/MAX/FIRST/LAST/TAKE |
+| v3.4.0 | [#4618](https://github.com/opensearch-project/sql/pull/4618) | Support serializing external OpenSearch UDFs |
+| v3.4.0 | [#4616](https://github.com/opensearch-project/sql/pull/4616) | Fix filter parsing on date fields |
+| v3.4.0 | [#4608](https://github.com/opensearch-project/sql/pull/4608) | Fix compile issue in main |
+| v3.4.0 | [#4606](https://github.com/opensearch-project/sql/pull/4606) | Fix bin nested fields issue |
+| v3.4.0 | [#4583](https://github.com/opensearch-project/sql/pull/4583) | Add value type hint for derived aggregate group by |
+| v3.4.0 | [#4572](https://github.com/opensearch-project/sql/pull/4572) | Fix push down failure for min/max on derived field |
+| v3.4.0 | [#4546](https://github.com/opensearch-project/sql/pull/4546) | Fix sort push down into agg after project |
+| v3.4.0 | [#4541](https://github.com/opensearch-project/sql/pull/4541) | Update request builder after pushdown sort |
+| v3.4.0 | [#4539](https://github.com/opensearch-project/sql/pull/4539) | Fix percentile bug |
+| v3.4.0 | [#4522](https://github.com/opensearch-project/sql/pull/4522) | Include metadata fields type in agg/filter pushdown |
+| v3.4.0 | [#4520](https://github.com/opensearch-project/sql/pull/4520) | Throw error for non-boolean case conditions |
+| v3.4.0 | [#4512](https://github.com/opensearch-project/sql/pull/4512) | Fixes for Multisearch and Append command |
+| v3.4.0 | [#4500](https://github.com/opensearch-project/sql/pull/4500) | Fix mapping after aggregation push down |
+| v3.4.0 | [#4491](https://github.com/opensearch-project/sql/pull/4491) | Fix missing keywordsCanBeId |
+| v3.4.0 | [#4475](https://github.com/opensearch-project/sql/pull/4475) | Fix explicit makeNullLiteral for UDT fields |
+| v3.4.0 | [#4474](https://github.com/opensearch-project/sql/pull/4474) | Fix join type ambiguous issue |
+| v3.4.0 | [#4454](https://github.com/opensearch-project/sql/pull/4454) | Remove shared mutable optimizer field (race condition) |
+| v3.4.0 | [#4449](https://github.com/opensearch-project/sql/pull/4449) | Fix issue 4441 |
+| v3.4.0 | [#4435](https://github.com/opensearch-project/sql/pull/4435) | Revert to _doc + _id |
+| v3.4.0 | [#4413](https://github.com/opensearch-project/sql/pull/4413) | Fallback to sub-aggregation if composite unsupported |
 | v3.3.0 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix count(*) and dc(field) to be capped at MAX_INTEGER |
 | v3.3.0 | [#4407](https://github.com/opensearch-project/sql/pull/4407) | Mod function should return decimal instead of float |
 | v3.3.0 | [#4401](https://github.com/opensearch-project/sql/pull/4401) | Scale of decimal literal should always be positive in Calcite |
@@ -144,5 +192,6 @@ SELECT UNIX_TIMESTAMP('2025-01-10 12:30:45.123') as ts FROM my_index
 
 ## Change History
 
+- **v3.4.0** (2026-01): 48 bug fixes including critical memory exhaustion fix for multiple filter operations, race condition fix in concurrent queries, rex command nested capture group extraction fix, filter pushdown redundant query fix, streamstats null group handling, multisearch/append type conflict behavior change, CVE-2025-48924 security fix, and numerous field/type handling improvements
 - **v3.3.0** (2026-01): 26 bug fixes including count overflow handling (integer to bigint), decimal precision fixes (MOD function, negative scale), nested field aggregation ClassCastException fix, parse/grok/patterns NULL handling, alphanumeric search grammar fix, IndexNotFoundException for missing patterns, legacy JDBC type mapping, and extensive documentation/CI improvements
 - **v3.1.0** (2025-06): 17 bug fixes including long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling improvements, and Calcite engine stability
