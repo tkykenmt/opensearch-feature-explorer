@@ -199,6 +199,7 @@
 - [Wildcard Field](opensearch/wildcard-field.md)
 - [Workload Management](opensearch/workload-management.md)
 - [XContent Filtering](opensearch/xcontent-filtering.md)
+- [XContent Transform](opensearch/xcontent-transform.md)
 - [Hierarchical & ACL-aware Routing](opensearch/hierarchical-acl-aware-routing.md)
 - [Temporal Routing](opensearch/temporal-routing.md)
 - [Terms Lookup Query](opensearch/terms-lookup-query.md)
