@@ -94,6 +94,7 @@ graph TB
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1360](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1360) | Correlation table rendering fixed |
 | v3.2.0 | [#1313](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1313) | Remove correlated findings bar chart that uses vega |
 | v3.2.0 | [#1312](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1312) | Update API call to get IOC types |
 
@@ -103,8 +104,10 @@ graph TB
 - [Setting up Security Analytics](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/index/)
 - [Threat Intelligence](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/index/)
 - [Working with the Correlation Graph](https://docs.opensearch.org/3.0/security-analytics/usage/correlation-graph/)
+- [Creating Correlation Rules](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/correlation-config/)
 - [Security Analytics Settings](https://docs.opensearch.org/3.0/security-analytics/settings/)
 
 ## Change History
 
+- **v3.4.0** (2026-01): Fixed correlation table rendering bug - table was not being populated due to missing error handling and incorrect filter logic
 - **v3.2.0** (2026-01): Bugfixes for correlations page (removed Vega chart) and IOC types API update
