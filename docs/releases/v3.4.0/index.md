@@ -99,6 +99,10 @@
 - [SQL CI/Tests](features/sql/sql-ci-tests.md) - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
 - [SQL Documentation](features/sql/sql-documentation.md) - PPL command documentation standardization, typo fixes, enhanced examples, and function documentation improvements
 
+### k-NN
+
+- [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
+
 ### Multi-Repository
 
 - [Dependency Updates](features/multi-repo/dependency-updates.md) - 28 dependency updates across 7 repositories addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
