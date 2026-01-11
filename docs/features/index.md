@@ -119,6 +119,7 @@
 - [Parent-Child Query](opensearch/parent-child-query.md)
 - [Percentiles Aggregation](opensearch/percentiles-aggregation.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
+- [Pipeline ID Limits](opensearch/pipeline-id-limits.md)
 - [Platform Support](opensearch/platform-support.md)
 - [Plugin Dependencies](opensearch/plugin-dependencies.md)
 - [Plugin Installation](opensearch/plugin-installation.md)

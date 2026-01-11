@@ -41,6 +41,7 @@
 - [Node Roles & Configuration](features/opensearch/node-roles-and-configuration.md)
 - [Node Roles Configuration (Environment Variables)](features/opensearch/node-roles-configuration.md)
 - [Nodes Info API Changes](features/opensearch/nodes-info-api-changes.md)
+- [Pipeline ID Limits](features/opensearch/pipeline-id-limits.md)
 - [Plugin System](features/opensearch/plugin-system.md)
 - [Refresh Task Scheduling](features/opensearch/refresh-task-scheduling.md)
 - [Search Backpressure](features/opensearch/search-backpressure.md)
