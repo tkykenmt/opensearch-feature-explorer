@@ -67,6 +67,7 @@
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 - [Multi-Data Source (MDS)](features/opensearch-dashboards/multi-data-source-mds.md)
 - [Webpack & Build Performance](features/opensearch-dashboards/webpack-and-build-performance.md)
+- [Dashboards CVE Fixes](features/opensearch-dashboards/dashboards-cve-fixes.md)
 
 ## reporting
 
