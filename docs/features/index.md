@@ -158,6 +158,7 @@
 - [Search API Enhancements](opensearch/search-api-enhancements.md)
 - [Search API Tracker](opensearch/search-api-tracker.md)
 - [Search Pipeline](opensearch/search-pipeline.md)
+- [Search Replica & Reader-Writer Separation](opensearch/search-replica-reader-writer-separation.md)
 - [Search Request Stats](opensearch/search-request-stats.md)
 - [Search Scoring](opensearch/search-scoring.md)
 - [Search Settings](opensearch/search-settings.md)
