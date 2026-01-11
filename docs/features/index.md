@@ -97,6 +97,7 @@
 - [Netty Arena Settings](opensearch/netty-arena-settings.md)
 - [Network Configuration](opensearch/network-configuration.md)
 - [Node Join/Leave](opensearch/node-join-leave.md)
+- [Node Stats](opensearch/node-stats.md)
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
 - [Numeric Terms Aggregation Optimization](opensearch/numeric-terms-aggregation-optimization.md)
