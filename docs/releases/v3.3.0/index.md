@@ -118,3 +118,7 @@
 ### Observability
 
 - [Observability Cypress Updates](features/observability/observability-cypress-updates.md)
+
+### Dependencies
+
+- [Dependency Updates](features/dependency-updates.md)

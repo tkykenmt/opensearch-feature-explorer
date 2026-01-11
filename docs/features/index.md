@@ -526,3 +526,7 @@
 ## user-behavior-insights
 
 - [User Behavior Insights Data Generator](user-behavior-insights/user-behavior-insights-data-generator.md)
+
+## dependencies
+
+- [Dependency Updates](dependency-updates.md)
