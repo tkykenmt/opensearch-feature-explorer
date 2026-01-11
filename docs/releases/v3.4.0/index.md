@@ -128,6 +128,7 @@
 
 ### Search Relevance
 
+- [Scheduled Experiments](features/search-relevance/scheduled-experiments.md) - Cron-based scheduling for recurring experiment execution with historical results tracking
 - [Query Sets & Judgment Lists](features/dashboards-search-relevance/query-sets-judgment-lists.md) - GUID filtering support for Query Sets with strongly typed QuerySetItem interface
 - [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
 - [Search Relevance Bugfixes](features/search-relevance/search-relevance-bugfixes.md) - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL
