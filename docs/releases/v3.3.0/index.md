@@ -110,6 +110,7 @@
 
 ### Query Insights
 
+- [Query Insights Bug Fixes](features/query-insights/query-insights-bug-fixes.md)
 - [Query Plugin Dependencies](features/query-insights/query-plugin-dependencies.md)
 
 ### SQL
