@@ -120,6 +120,10 @@
 
 - [Query Insights CI/Tests](features/query-insights/ci-tests.md) - Multi-node integration tests, health stats REST API tests, and flaky test fixes
 
+### Query Insights Dashboards
+
+- [WLM Dashboards Bugfixes](features/query-insights-dashboards/wlm-dashboards-bugfixes.md) - Fix MDS selector visibility on Workload Management pages when new home page UI is enabled
+
 ### k-NN
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
