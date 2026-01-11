@@ -75,6 +75,7 @@
 - [Dependency Management](opensearch/dependency-management.md)
 - [Derived Fields](opensearch/derived-fields.md)
 - [Derived Source](opensearch/derived-source.md)
+- [DocValues Optimization](opensearch/docvalues-optimization.md)
 - [Docker Compose v2 Support](opensearch/docker-compose-v2-support.md)
 - [Docker Image Base](opensearch/docker-image-base.md)
 - [Dynamic Threadpool Resize](opensearch/dynamic-threadpool-resize.md)
