@@ -97,6 +97,8 @@ POST _plugins/_notifications/configs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1074](https://github.com/opensearch-project/notifications/pull/1074) | Fix issue publishing maven snapshots by forcing slf4j version |
+| v3.3.0 | [#1069](https://github.com/opensearch-project/notifications/pull/1069) | Fix: Update System.env syntax for Gradle 9 compatibility |
 | v3.2.0 | [#1057](https://github.com/opensearch-project/notifications/pull/1057) | Updated gradle, jdk and other dependencies |
 | v3.1.0 | [#1036](https://github.com/opensearch-project/notifications/pull/1036) | Upgrade javax to jakarta mail |
 | v3.1.0 | [#1027](https://github.com/opensearch-project/notifications/pull/1027) | Version increment to 3.1.0-SNAPSHOT |
@@ -109,5 +111,6 @@ POST _plugins/_notifications/configs
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Build infrastructure fixes - Gradle 9 compatibility for environment variable syntax, SLF4J version conflict resolution for Maven snapshot publication
 - **v3.2.0** (2026-01-11): Infrastructure updates - Gradle 8.14, JaCoCo 0.8.13, nebula.ospackage 12.0.0, JDK 24 CI support
 - **v3.1.0** (2026-01-10): Migrated from javax.mail to jakarta.mail APIs to avoid version conflicts; updated greenmail test dependency to 2.0.1
