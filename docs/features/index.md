@@ -392,6 +392,7 @@
 
 ## observability
 
+- [Observability Cypress Updates](observability/observability-cypress-updates.md)
 - [Observability Infrastructure](observability/observability-infrastructure.md)
 - [Observability Integrations](observability/observability-integrations.md)
 - [Release Maintenance](observability/release-maintenance.md)

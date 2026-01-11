@@ -113,3 +113,7 @@
 ### CI/CD
 
 - [CI/CD Workflow Updates](features/ci/cd-workflow-updates.md)
+
+### Observability
+
+- [Observability Cypress Updates](features/observability/observability-cypress-updates.md)
