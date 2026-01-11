@@ -57,6 +57,7 @@
 - [Field Data Cache](opensearch/field-data-cache.md)
 - [Field Mapping](opensearch/field-mapping.md)
 - [File Cache](opensearch/file-cache.md)
+- [Filter Rewrite Optimization](opensearch/filter-rewrite-optimization.md)
 - [FIPS Compliance](opensearch/fips-compliance.md)
 - [Cluster Permissions](opensearch/cluster-permissions.md)
 - [Flat Object Field](opensearch/flat-object-field.md)

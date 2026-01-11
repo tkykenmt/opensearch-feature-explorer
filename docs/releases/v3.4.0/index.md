@@ -5,6 +5,7 @@
 ### OpenSearch
 
 - [Aggregation Optimizations](features/opensearch/aggregation-optimizations.md) - Hybrid cardinality collector, filter rewrite + skip list, MergingDigest for percentiles, matrix_stats primitive arrays
+- [Filter Rewrite Optimization](features/opensearch/filter-rewrite-optimization.md) - Bulk collection APIs for filter rewrite sub-aggregation with up to 20% performance improvement
 - [ApproximatePointRangeQuery Pack Method Optimization](features/opensearch/approximate-point-range-query.md) - Use Lucene's native `pack` method for `half_float` and `unsigned_long` types
 - [Build Tool Upgrades](features/opensearch/build-tool-upgrades.md) - Gradle 9.1 and bundled JDK 25 updates
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md) - Performance optimization by omitting MaxScoreCollector when sorting by score
