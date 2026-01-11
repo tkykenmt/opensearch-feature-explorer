@@ -128,6 +128,10 @@
 ### k-NN
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
+
+### OpenSearch Remote Metadata SDK
+
+- [Remote Model Bugfixes](features/opensearch-remote-metadata-sdk/remote-model-bugfixes.md) - Fix error when updating global model status in DynamoDB backend
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md) - Memory optimized search fixes, race condition in KNNQueryBuilder, Faiss inner product score calculation, and disk-based vector search BWC
 
 ### CI
