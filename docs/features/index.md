@@ -314,7 +314,9 @@
 - [PPL Aggregation Pushdown](sql/ppl-aggregation-pushdown.md)
 - [PPL Documentation](sql/ppl-documentation.md)
 - [PPL Patterns Command](sql/ppl-patterns-command.md)
+- [PPL Query Enhancements](sql/ppl-query-enhancements.md)
 - [PPL Rename Command](sql/ppl-rename-command.md)
+- [PPL Rex and Regex Commands](sql/ppl-rex-and-regex-commands.md)
 - [PPL Spath Command](sql/ppl-spath-command.md)
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL Error Handling](sql/sql-error-handling.md)
@@ -325,7 +327,6 @@
 - [SQL/PPL Bug Fixes](sql/sql-ppl-bug-fixes.md)
 - [SQL/PPL Engine](sql/sql-ppl-engine.md)
 - [SQL/PPL Breaking Changes](sql/sql-ppl-breaking-changes.md)
-- [PPL Rex and Regex Commands](sql/ppl-rex-and-regex-commands.md)
 
 ## asynchronous-search
 
