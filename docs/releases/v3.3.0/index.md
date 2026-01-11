@@ -159,6 +159,10 @@
 - [Query Insights Bug Fixes](features/query-insights/query-insights-bug-fixes.md)
 - [Query Plugin Dependencies](features/query-insights/query-plugin-dependencies.md)
 
+### Query Insights Dashboards
+
+- [Workload Management (WLM) Dashboard Enhancements](features/query-insights-dashboards/workload-management-wlm.md)
+
 ### SQL
 
 - [PPL Aggregate Functions](features/sql/ppl-aggregate-functions.md)
