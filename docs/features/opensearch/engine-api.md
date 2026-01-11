@@ -54,6 +54,8 @@ graph TB
 | `Engine.DeleteResult` | Result of a delete operation, includes `found` flag |
 | `Engine.NoOpResult` | Result of a no-op operation for replication |
 | `Engine.Operation` | Base class for operations (Index, Delete, NoOp) |
+| `Engine.prepareIndex()` | Instance method to prepare index operations (v3.4.0+) |
+| `Engine.prepareDelete()` | Instance method to prepare delete operations (v3.4.0+) |
 
 ### Engine.Result Methods
 
@@ -129,13 +131,19 @@ public enum Type {
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19551](https://github.com/opensearch-project/OpenSearch/pull/19551) | Move prepareIndex and prepareDelete methods to Engine class |
+| v3.4.0 | [#19950](https://github.com/opensearch-project/OpenSearch/pull/19950) | Make NoOpResult constructors public |
 | v3.3.0 | [#19275](https://github.com/opensearch-project/OpenSearch/pull/19275) | Make all methods in Engine.Result public |
 
 ## References
 
+- [Issue #19550](https://github.com/opensearch-project/OpenSearch/issues/19550): Feature request for custom document parsing
+- [Issue #19949](https://github.com/opensearch-project/OpenSearch/issues/19949): Feature request for public NoOpResult constructors
 - [Issue #19276](https://github.com/opensearch-project/OpenSearch/issues/19276): Feature request for public Engine.Result methods
+- [Introduction to OpenSearch Plugins](https://opensearch.org/blog/plugins-intro/): Blog post explaining Engine Plugin interface
 - [Engine.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/engine/Engine.java): Source code
 
 ## Change History
 
+- **v3.4.0** (2025-12-09): Added `prepareIndex()` and `prepareDelete()` instance methods to Engine class; made `NoOpResult` constructors public; deprecated static methods on IndexShard
 - **v3.3.0** (2025-09-12): Made `setTranslogLocation()`, `setTook()`, and `freeze()` methods public to enable custom Engine implementations
