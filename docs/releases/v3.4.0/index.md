@@ -123,6 +123,7 @@
 ### Query Insights Dashboards
 
 - [WLM Dashboards Bugfixes](features/query-insights-dashboards/wlm-dashboards-bugfixes.md) - Fix MDS selector visibility on Workload Management pages when new home page UI is enabled
+- [Query Insights Bugfixes](features/query-insights-dashboards/query-insights-bugfixes.md) - Exclude internal `top_queries-*` indices, MDS support for WLM routes, Jest test fixes
 
 ### k-NN
 
