@@ -349,6 +349,7 @@
 - [PPL Aggregate Functions](sql/ppl-aggregate-functions.md)
 - [PPL Aggregation Pushdown](sql/ppl-aggregation-pushdown.md)
 - [PPL Documentation](sql/ppl-documentation.md)
+- [PPL Eval Functions](sql/ppl-eval-functions.md)
 - [PPL Patterns Command](sql/ppl-patterns-command.md)
 - [PPL Query Enhancements](sql/ppl-query-enhancements.md)
 - [PPL Query Optimization](sql/ppl-query-optimization.md)
