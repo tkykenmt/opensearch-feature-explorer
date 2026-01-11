@@ -15,6 +15,7 @@
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
 - [Bulk API Changes](features/opensearch/bulk-api-changes.md)
+- [DocValues Optimization](features/opensearch/docvalues-optimization.md)
 - [Concurrent Segment Search Auto Mode Default](features/opensearch/concurrent-segment-search.md)
 - [Deprecated Code Cleanup](features/opensearch/deprecated-code-cleanup.md)
 - [Field Type Fixes](features/opensearch/field-type-fixes.md)
