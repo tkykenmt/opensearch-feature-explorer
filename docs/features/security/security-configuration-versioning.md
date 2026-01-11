@@ -2,7 +2,7 @@
 
 ## Summary
 
-Security Configuration Versioning is an experimental feature that provides a comprehensive versioning system for OpenSearch security configurations. It enables administrators to track all changes to security settings, view configuration history, and provides the foundation for future rollback and roll-forward capabilities. The feature automatically creates version snapshots whenever security configurations change, storing them in a dedicated system index.
+Security Configuration Versioning is an experimental feature that provides a comprehensive versioning system for OpenSearch security configurations. It enables administrators to track all changes to security settings, view configuration history, and roll back to previous configurations when needed. The feature automatically creates version snapshots whenever security configurations change, storing them in a dedicated system index. Starting from v3.3.0, REST APIs are available for viewing version history and performing rollback operations.
 
 ## Details
 
@@ -79,6 +79,26 @@ flowchart LR
 | `plugins.security.configurations_versions.enabled` | Enable/disable the versioning feature | `false` | Node |
 | `plugins.security.config_versions_index_name` | Custom name for the versions index | `.opensearch_security_config_versions` | Node |
 | `plugins.security.config_version.retention_count` | Maximum number of versions to retain | `10` | Node, Final |
+
+### REST APIs (v3.3.0+)
+
+#### Endpoints
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/_plugins/_security/api/versions` | GET | View all configuration versions |
+| `/_plugins/_security/api/version/{versionId}` | GET | View a specific version |
+| `/_plugins/_security/api/version/rollback` | POST | Roll back to the preceding version |
+| `/_plugins/_security/api/version/rollback/{versionId}` | POST | Roll back to a specific version |
+
+#### Required Permissions
+
+| Operation | Permission |
+|-----------|------------|
+| View versions | `restapi:admin/view_version` |
+| Roll back configuration | `restapi:admin/rollback_version` |
+
+These permissions are included in the default `security_manager` and `all_access` roles.
 
 ### Version Document Schema
 
@@ -187,6 +207,62 @@ curl -XGET "https://localhost:9200/.opensearch_security_config_versions/_search?
   -u 'admin:admin' --insecure
 ```
 
+#### View All Versions via API (v3.3.0+)
+
+```bash
+curl -XGET "https://localhost:9200/_plugins/_security/api/versions?pretty" \
+  -u 'admin:admin' --insecure
+```
+
+Response:
+```json
+{
+  "versions": [
+    {
+      "version_id": "v1",
+      "timestamp": "2025-05-22T08:46:11.887620466Z",
+      "modified_by": "system",
+      "security_configs": { ... }
+    },
+    {
+      "version_id": "v2",
+      "timestamp": "2025-05-23T06:56:20.081933886Z",
+      "modified_by": "admin",
+      "security_configs": { ... }
+    }
+  ]
+}
+```
+
+#### View Specific Version (v3.3.0+)
+
+```bash
+curl -XGET "https://localhost:9200/_plugins/_security/api/version/v2?pretty" \
+  -u 'admin:admin' --insecure
+```
+
+#### Roll Back to Preceding Version (v3.3.0+)
+
+```bash
+curl -XPOST "https://localhost:9200/_plugins/_security/api/version/rollback" \
+  -u 'admin:admin' --insecure
+```
+
+Response:
+```json
+{
+  "status": "OK",
+  "message": "config rolled back to version v4"
+}
+```
+
+#### Roll Back to Specific Version (v3.3.0+)
+
+```bash
+curl -XPOST "https://localhost:9200/_plugins/_security/api/version/rollback/v2" \
+  -u 'admin:admin' --insecure
+```
+
 ### Key Behaviors
 
 1. **Cluster Manager Exclusivity**: Only the elected cluster manager node creates versions to prevent duplicates
@@ -199,23 +275,27 @@ curl -XGET "https://localhost:9200/.opensearch_security_config_versions/_search?
 ## Limitations
 
 - **Experimental Status**: Feature is disabled by default and marked as experimental
-- **No Rollback API Yet**: Current implementation provides versioning infrastructure only; rollback/roll-forward APIs are planned
 - **Full Snapshots**: Each version stores complete configuration snapshots (not incremental diffs)
 - **Single Document Storage**: All versions stored in a single document, which may impact performance with many versions
 - **Cluster Manager Dependency**: Requires an elected cluster manager for version tracking
+- **Rollback Creates New Version**: Rolling back creates a new version entry (e.g., rolling back from v5 to v3 creates v6 with v3's content)
+- **Admin Access Required**: View and Rollback APIs require admin/security manager permissions
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | View API and Rollback API for versioned security configurations |
 | v3.2.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | Initial implementation of versioned security configuration management |
 
 ## References
 
 - [Issue #5093](https://github.com/opensearch-project/security/issues/5093): Original feature request for tracking security index patches
+- [Security Configuration Versioning Documentation](https://docs.opensearch.org/3.3/security/configuration/versioning/): Official documentation (v3.3.0+)
 - [Security Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/index/)
 - [Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
 
 ## Change History
 
+- **v3.3.0** (2025-10-01): Added View API and Rollback API for viewing version history and restoring previous configurations
 - **v3.2.0** (2025-06-18): Initial implementation with versioning infrastructure, change detection, and retention policy
