@@ -153,6 +153,7 @@
 
 ### Common Utils
 
+- [Common Utils Enhancements](features/common-utils/common-utils-enhancements.md)
 - [Common Utils Release Notes](features/common-utils/common-utils-release-notes.md)
 
 ### Observability
