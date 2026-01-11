@@ -61,6 +61,7 @@
 - [Discover Summary / AI Assistant Integration](features/opensearch-dashboards/discover-summary-ai-assistant-integration.md)
 - [Monaco Editor Upgrade](features/opensearch-dashboards/monaco-editor-upgrade.md)
 - [PPL Query Support](features/opensearch-dashboards/ppl-query-support.md)
+- [S3 / Direct Query Connections](features/opensearch-dashboards/s3-direct-query-connections.md)
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 - [Multi-Data Source (MDS)](features/opensearch-dashboards/multi-data-source-mds.md)
