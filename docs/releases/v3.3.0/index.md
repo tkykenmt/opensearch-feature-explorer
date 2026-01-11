@@ -86,6 +86,10 @@
 - [Anomaly Detection Resource Authorization](features/anomaly-detection/anomaly-detection-resource-authorization.md)
 - [Doc Request Resource Type Support](features/anomaly-detection/doc-request.md)
 
+### Alerting
+
+- [Alerting User Custom Attributes](features/alerting/alerting-user-custom-attributes.md)
+
 ### Security
 
 - [Rule-based Autotagging](features/security/rule-based-autotagging.md)

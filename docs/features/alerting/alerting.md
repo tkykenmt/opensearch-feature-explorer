@@ -155,6 +155,7 @@ POST _plugins/_alerting/monitors
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1917](https://github.com/opensearch-project/alerting/pull/1917) | Adds support for leveraging user custom attributes in Alerting monitors |
 | v3.2.0 | [#1885](https://github.com/opensearch-project/alerting/pull/1885) | Fix MGet bug, randomize fan out distribution |
 | v3.2.0 | [#1818](https://github.com/opensearch-project/alerting/pull/1818) | Refactored consistent responses and fixed unrelated exceptions |
 | v3.2.0 | [#1869](https://github.com/opensearch-project/alerting/pull/1869) | Update the maven snapshot publish endpoint and credential |
@@ -201,7 +202,9 @@ POST _plugins/_alerting/monitors
 - [Per Document Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-document-monitors/): Per-document monitor documentation
 - [Composite Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/composite-monitors/): Composite monitor documentation
 - [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
+- [Document-Level Security](https://docs.opensearch.org/3.0/security/access-control/document-level-security/): Parameter substitution in DLS queries
 - [Notifications Plugin](https://docs.opensearch.org/3.0/observing-your-data/notifications/index/): Notifications integration
+- [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Alerting does not work with DLS parameter substitution
 - [Issue #1057](https://github.com/opensearch-project/alerting/issues/1057): Return empty responses if there is no alerting config index created
 - [Issue #1853](https://github.com/opensearch-project/alerting/issues/1853): Timebox doc level monitor to avoid duplicate executions
 - [Issue #1859](https://github.com/opensearch-project/alerting/issues/1859): Change publish findings to accept a list of findings
@@ -210,6 +213,7 @@ POST _plugins/_alerting/monitors
 
 ## Change History
 
+- **v3.3.0** (2025): User custom attributes support for DLS/FLS parameter substitution - monitors now save and pass user custom attributes during execution, enabling DLS queries with `${attr.internal.*}` substitution to work correctly
 - **v3.2.0** (2025): MGet bug fix with proper finding-to-document mapping, randomized fan-out node distribution for better load balancing, consistent API responses when alerting config index doesn't exist, Maven snapshot publishing migration to Sonatype Central
 - **v3.1.0** (2025): Doc-level monitor timeboxing (3-4 min execution limit), batch findings publishing for improved performance, index pattern validation for doc-level monitors, threat intel monitor check fix, alert insight on dashboard overview page, log pattern extraction error handling
 - **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
