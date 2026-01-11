@@ -49,6 +49,10 @@
 
 - [Security Dashboards Bugfixes](features/security-dashboards-plugin/security-dashboards-bugfixes.md) - Filter blank backend roles before creating internal user
 
+### Security Analytics Dashboards Plugin
+
+- [Security Analytics Bugfixes](features/security-analytics-dashboards-plugin/security-analytics-bugfixes.md) - Fix correlation table rendering bug in correlations overview page
+
 ### OpenSearch Dashboards
 
 - [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-dev-tools.md) - PATCH method support for Dev Tools console
