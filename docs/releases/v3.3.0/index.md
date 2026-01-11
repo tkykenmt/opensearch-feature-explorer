@@ -110,6 +110,7 @@
 - [ML Commons Tools Enhancements](features/ml-commons/ml-commons-tools-enhancements.md)
 - [Metrics Framework Bug Fix](features/ml-commons/metrics-framework.md)
 - [Move Common String](features/ml-commons/move-common-string.md)
+- [Streaming APIs](features/ml-commons/streaming-apis.md)
 - [Updating Gson Version to Resolve Conflict Coming from Core](features/ml-commons/updating-gson-version-to-resolve-conflict-coming-from-core.md)
 - [ML Commons Tutorials and Blueprints](features/ml-commons/ml-commons-tutorials-and-blueprints.md)
 
