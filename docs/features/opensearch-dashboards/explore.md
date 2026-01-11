@@ -33,6 +33,11 @@ Key benefits include:
 - Intelligent date format inference for axis labels (v3.3.0)
 - Auto-enable related UI settings when Explore is activated (v3.3.0)
 - Tab content error guard for isolated error handling (v3.3.0)
+- Bar gauge visualization type (v3.4.0)
+- Customizable legend names (v3.4.0)
+- Numerical field support for color mapping (v3.4.0)
+- Customized column ordering for table visualizations (v3.4.0)
+- Improved gauge and bar gauge threshold logic with negative value support (v3.4.0)
 
 ## Details
 
@@ -83,6 +88,8 @@ graph TB
                 Heatmap[Heatmap]
                 Area[Area]
                 SingleMetric[Single Metric]
+                Gauge[Gauge]
+                BarGauge[Bar Gauge]
             end
         end
         
@@ -281,6 +288,15 @@ source = opensearch_dashboards_sample_data_ecommerce
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849) | Enhance query action service to allow flyout registration |
+| v3.4.0 | [#10604](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10604) | Allow customizing legend name |
+| v3.4.0 | [#10697](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10697) | Add bar gauge visualization |
+| v3.4.0 | [#10808](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10808) | Support numerical field as color field |
+| v3.4.0 | [#10868](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10868) | Refactor threshold logic of gauge and bar gauge |
+| v3.4.0 | [#10894](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10894) | Add tests for gauge and bar gauge |
+| v3.4.0 | [#10896](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10896) | Add tests for table visualization |
+| v3.4.0 | [#10898](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10898) | Add customized column order toggle for table visualization |
+| v3.4.0 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue |
+| v3.4.0 | [#10657](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10657) | Fix tabs length and scroll persistence |
 | v3.3.0 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter |
 | v3.3.0 | [#10412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10412) | Introduce tab content error guard |
 | v3.3.0 | [#10425](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10425) | Infer axis date format |
@@ -384,6 +400,6 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
-- **v3.4.0** (2026-01-14): Enhanced Query Panel Actions Registry with flyout action support, enabling external plugins to render inline flyout panels from the actions dropdown. Added `queryInEditor` dependency for accessing current editor content (pre-transformed with source clause). Added comprehensive Explore plugin components architecture documentation.
+- **v3.4.0** (2026-01-14): Added bar gauge visualization type, customizable legend names, numerical field support for color mapping, customized column ordering for table visualizations with dashboard persistence, improved gauge and bar gauge threshold logic with negative value support and debounce. Enhanced Query Panel Actions Registry with flyout action support, enabling external plugins to render inline flyout panels from the actions dropdown. Added `queryInEditor` dependency for accessing current editor content (pre-transformed with source clause). Bug fixes: breadcrumb floating issue, tabs length and scroll persistence.
 - **v3.3.0** (2026-01-14): Added facet filtering with default observability fields (serviceName, http status code, status.code), explore experience modal for first-time user onboarding with saved object tracking, query panel actions registry for plugin extensibility, mouse hover states for line chart interactivity, intelligent date format inference for axis labels based on data granularity, auto-enable related UI settings when Explore is activated (theme v9, new home page, query enhancements), tab content error guard for isolated error handling, query panel display without datasets, link to detail page in expanded row, Patterns tab flyout with detailed pattern inspection, "search with pattern" functionality for log filtering, events table with pagination, Calcite query engine compatibility, "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page, metric visualization with sparkline support, histogram visualization (numerical, time-series, categorical), table visualization enhancements (column alignment, Excel-like filters, statistical footers, cell customization), dark/light theme support with new color palettes, hover highlighting for bar/pie charts, Gantt chart improvements (service name display, span selection, error indicators), metric style updates with percentage change option. Bug fixes: ScopedHistory navigation error, Refresh button query execution, active tab preservation on save/load, removed Explore from Patterns tab
 - **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation
