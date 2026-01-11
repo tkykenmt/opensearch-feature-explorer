@@ -244,6 +244,7 @@
 - [Plugin Compatibility](opensearch-dashboards/plugin-compatibility.md)
 - [Query Editor](opensearch-dashboards/query-editor.md)
 - [Query Enhancements](opensearch-dashboards/query-enhancements.md)
+- [Query Assistant](opensearch-dashboards/query-assistant.md)
 - [Sample Data](opensearch-dashboards/sample-data.md)
 - [Saved Query UX](opensearch-dashboards/saved-query-ux.md)
 - [Security CVE Fixes](opensearch-dashboards/security-cve-fixes.md)
