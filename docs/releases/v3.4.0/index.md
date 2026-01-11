@@ -169,6 +169,7 @@
 
 ### OpenSearch Remote Metadata SDK
 
+- [Remote Store CMK Support](features/opensearch-remote-metadata-sdk/remote-store-cmk-support.md) - CMK encryption/decryption support for customer data with STS role assumption for cross-account access
 - [Remote Model Bugfixes](features/opensearch-remote-metadata-sdk/remote-model-bugfixes.md) - Fix error when updating global model status in DynamoDB backend
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md) - Memory optimized search fixes, race condition in KNNQueryBuilder, Faiss inner product score calculation, and disk-based vector search BWC
 
