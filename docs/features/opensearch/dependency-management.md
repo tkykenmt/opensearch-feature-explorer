@@ -54,15 +54,18 @@ graph TB
 | Component | Purpose | Current Version |
 |-----------|---------|-----------------|
 | JDK | Java runtime | 21 LTS |
+| Netty | Networking framework | 4.2.4 |
 | AWS SDK | S3, STS, and other AWS service integrations | 2.30.31 |
 | Reactor Netty | Reactive networking for async operations | 1.2.3 |
 | Apache HttpClient5 | HTTP client for REST operations | 5.4.1 |
-| Azure SDK | Azure Blob Storage integration | 12.30.0 |
-| Nimbus JOSE+JWT | JWT token handling | 10.0.2 |
+| Azure SDK | Azure Blob Storage integration | 12.30.3 |
+| Nimbus JOSE+JWT | JWT token handling | 10.6 |
 | Gson | JSON serialization | 2.13.0 |
 | Jetty | Embedded web server | 9.4.57 |
-| Logback | Logging framework | 1.5.18 |
+| Logback | Logging framework | 1.5.20 |
 | zstd-jni | Zstandard compression | 1.5.6-1 |
+| Google Cloud Storage | GCS repository support | 2.60.0 |
+| Bouncy Castle FIPS | FIPS-compliant cryptography | 2.1.2 |
 
 ### Dependency Categories
 
@@ -126,6 +129,11 @@ Dependencies are automatically resolved during build:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19178](https://github.com/opensearch-project/OpenSearch/pull/19178) | Netty 4.2.4 upgrade |
+| v3.4.0 | [#20084](https://github.com/opensearch-project/OpenSearch/pull/20084) | Nimbus JOSE+JWT 10.6 |
+| v3.4.0 | [#19615](https://github.com/opensearch-project/OpenSearch/pull/19615) | Azure Storage 12.30.3 |
+| v3.4.0 | [#20023](https://github.com/opensearch-project/OpenSearch/pull/20023) | Google Cloud Storage 2.60.0 |
+| v3.4.0 | [#19818](https://github.com/opensearch-project/OpenSearch/pull/19818) | Bouncy Castle FIPS 2.1.2 |
 | v3.0.0 | [#17515](https://github.com/opensearch-project/OpenSearch/pull/17515) | Switch to JDK 21 LTS |
 | v3.0.0 | [#17396](https://github.com/opensearch-project/OpenSearch/pull/17396) | AWS SDK 2.30.31 |
 | v3.0.0 | [#17322](https://github.com/opensearch-project/OpenSearch/pull/17322) | Reactor Netty 1.2.3 |
@@ -135,9 +143,11 @@ Dependencies are automatically resolved during build:
 
 ## References
 
+- [Issue #14804](https://github.com/opensearch-project/OpenSearch/issues/14804): Netty 4.2 upgrade request
 - [Issue #15927](https://github.com/opensearch-project/OpenSearch/issues/15927): ExtendedSocketOption support
 - [OpenSearch Dependency Policy](https://github.com/opensearch-project/OpenSearch/blob/main/DEVELOPER_GUIDE.md)
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Netty 4.2.4 upgrade (HTTP/3 readiness), 32 dependency updates including cloud SDKs and security libraries
 - **v3.0.0** (2025-05-06): JDK 21 LTS default, AWS SDK 2.30.x, Reactor Netty 1.2.x, 30 dependency updates
