@@ -112,6 +112,8 @@ flowchart TB
 | LLM Connector | Connects to external LLM services (Bedrock, OpenAI, etc.) |
 | Function Calling | Native function/tool calling support for compatible LLMs |
 | MCP Server | Model Context Protocol server for tool integration |
+| Metrics Collector | Collects adoption and operational metrics via OpenTelemetry |
+| ML Client Get Agent | Programmatic API to retrieve agent configurations |
 | Metrics Collector | Collects adoption and operational metrics |
 
 ### Agent Types
@@ -231,6 +233,9 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4180](https://github.com/opensearch-project/ml-commons/pull/4180) | Add Get Agent to ML Client |
+| v3.3.0 | [#4221](https://github.com/opensearch-project/ml-commons/pull/4221) | Introduce agent metrics & Add is_hidden tag for model metrics |
+| v3.3.0 | [#4198](https://github.com/opensearch-project/ml-commons/pull/4198) | Update interaction with failure message on agent execution failure |
 | v3.3.0 | [#4173](https://github.com/opensearch-project/ml-commons/pull/4173) | Move common string to common package |
 | v3.2.0 | [#4035](https://github.com/opensearch-project/ml-commons/pull/4035) | Add Execute Tool API |
 | v3.2.0 | [#4050](https://github.com/opensearch-project/ml-commons/pull/4050) | Implement create and add memory container API |
@@ -256,8 +261,10 @@ PUT /_plugins/_ml/agents/{agent_id}
 ## References
 
 - [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/)
+- [Get Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/get-agent/)
 - [Plan-Execute-Reflect Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
 - [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
+- [Issue #4197](https://github.com/opensearch-project/ml-commons/issues/4197): Failure message update feature request
 - [Issue #3748](https://github.com/opensearch-project/ml-commons/issues/3748): Update Agent API feature request
 - [Issue #2172](https://github.com/opensearch-project/ml-commons/issues/2172): Original Update Agent API request
 - [Issue #3841](https://github.com/opensearch-project/ml-commons/issues/3841): MCP tools persistence
@@ -266,7 +273,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 ## Change History
 
-- **v3.3.0** (2026-01-14): Code refactoring - moved `NO_ESCAPE_PARAMS` constant from `AgentUtils` to `ToolUtils` in common package for skills plugin accessibility
+- **v3.3.0** (2026-01-14): Get Agent API in ML Client, agent metrics collection via OpenTelemetry (type, memory_type, is_hidden, _llm_interface, model info), interaction failure message updates, code refactoring for common package
 - **v3.2.0** (2025-09-16): Execute Tool API, AI-oriented memory container system (create, add, search, update, delete, get), QueryPlanningTool for agentic search, date/time injection for agents, message history limit for PER Agent, output filter support, SearchIndexTool improvements, feature flags for agentic search/memory, multiple bug fixes (class cast exception, connector URL exposure, async status, max iterations handling)
 - **v3.1.0** (2025-07-15): Update Agent API, MCP tools persistence, function calling for LLM interfaces, custom SSE endpoint, metrics framework integration, PlanExecuteReflect memory tracking, error handling improvements, multiple bug fixes (private IP validation, circuit breaker bypass, Python MCP client)
 - **v3.0.0** (2025-05-13): Plan-Execute-Reflect agent type, MCP server integration

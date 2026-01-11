@@ -100,6 +100,7 @@
 
 ### ML Commons
 
+- [ML Commons Agent Enhancements](features/ml-commons/ml-commons-agent-enhancements.md)
 - [ML Commons Bug Fixes](features/ml-commons/ml-commons-bug-fixes.md)
 - [ML Commons Connector Enhancements](features/ml-commons/ml-commons-connector-enhancements.md)
 - [ML Commons Multi-tenancy](features/ml-commons/ml-commons-multi-tenancy.md)
