@@ -242,6 +242,7 @@
 - [Security Role Mapping](security/security-role-mapping.md)
 - [Security Testing Framework](security/security-testing-framework.md)
 - [Security CI/CD](security/security-ci-cd.md)
+- [SSL/TLS Compatibility](security/ssl-tls-compatibility.md)
 - [JWT Authentication](security/jwt-authentication.md)
 - [Multi-Tenancy](security/multi-tenancy.md)
 - [Resource Access Control Framework](security/resource-access-control-framework.md)
