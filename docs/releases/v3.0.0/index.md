@@ -41,6 +41,7 @@
 - [Lucene Similarity](features/opensearch/lucene-similarity.md)
 - [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
 - [Node Stats & API Fixes](features/opensearch/node-stats-and-api-fixes.md)
+- [Numeric Types](features/opensearch/numeric-types.md)
 - [Query & Aggregation Fixes](features/opensearch/query-and-aggregation-fixes.md)
 - [Query Performance Optimizations](features/opensearch/query-performance-optimizations.md)
 - [Node Roles & Configuration](features/opensearch/node-roles-and-configuration.md)
