@@ -358,6 +358,7 @@
 
 - [Agent Framework](ml-commons/ml-commons-agent-framework.md)
 - [Batch Ingestion](ml-commons/batch-ingestion.md)
+- [Metrics Framework](ml-commons/metrics-framework.md)
 - [ML Commons Bugfixes](ml-commons/ml-commons-bugfixes.md)
 - [ML Commons CI/CD](ml-commons/ml-commons-ci-cd.md)
 - [ML Commons Configuration](ml-commons/ml-commons-configuration.md)
