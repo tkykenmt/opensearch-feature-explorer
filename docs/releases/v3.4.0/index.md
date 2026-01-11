@@ -4,6 +4,7 @@
 
 ### OpenSearch
 
+- [Aggregation Optimizations](features/opensearch/aggregation-optimizations.md) - Hybrid cardinality collector, filter rewrite + skip list, MergingDigest for percentiles, matrix_stats primitive arrays
 - [Build Tool Upgrades](features/opensearch/build-tool-upgrades.md) - Gradle 9.1 and bundled JDK 25 updates
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md) - Performance optimization by omitting MaxScoreCollector when sorting by score
 - [Dependency Updates (OpenSearch Core)](features/opensearch/dependency-updates-opensearch-core.md) - 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness
