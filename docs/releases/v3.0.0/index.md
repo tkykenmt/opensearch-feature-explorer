@@ -14,6 +14,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
+- [Rule-Based Auto-Tagging](features/opensearch/rule-based-auto-tagging.md)
 - [Security Manager Replacement (Java Agent)](features/opensearch/security-manager-replacement-java-agent.md)
 - [Bulk API Changes](features/opensearch/bulk-api-changes.md)
 - [DocValues Optimization](features/opensearch/docvalues-optimization.md)

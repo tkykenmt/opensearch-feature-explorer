@@ -198,6 +198,7 @@
 - [Warm Storage Tiering](opensearch/warm-storage-tiering.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 - [Workload Management](opensearch/workload-management.md)
+- [Rule-Based Auto-Tagging](opensearch/rule-based-auto-tagging.md)
 - [XContent Filtering](opensearch/xcontent-filtering.md)
 - [XContent Transform](opensearch/xcontent-transform.md)
 - [Hierarchical & ACL-aware Routing](opensearch/hierarchical-acl-aware-routing.md)
