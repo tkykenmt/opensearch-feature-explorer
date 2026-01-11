@@ -106,7 +106,22 @@ sequenceDiagram
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `plugins.security.experimental.resource_sharing.enabled` | Enable/disable resource sharing feature | `false` |
+| `plugins.security.experimental.resource_sharing.protected_types` | List of resource types that use resource-level authorization | `[]` |
 | `plugins.security.system_indices.enabled` | Enable system index protection (required) | `true` |
+
+**Dynamic Configuration (v3.3.0+):**
+
+Settings can be updated at runtime via the `_cluster/settings` API:
+
+```json
+PUT _cluster/settings
+{
+  "persistent": {
+    "plugins.security.experimental.resource_sharing.enabled": "true",
+    "plugins.security.experimental.resource_sharing.protected_types": ["anomaly-detector", "forecaster", "ml-model"]
+  }
+}
+```
 
 ### Data Model
 
@@ -147,10 +162,22 @@ Each resource index has a backing sharing index with naming convention: `{resour
 
 | Method | Signature | Description |
 |--------|-----------|-------------|
-| `verifyResourceAccess` | `void verifyResourceAccess(String resourceId, String resourceIndex, ActionListener<Boolean> listener)` | Check if current user has access |
-| `share` | `void share(String resourceId, String resourceIndex, Recipients recipients, ActionListener<ResourceSharing> listener)` | Grant access to specified entities |
-| `revoke` | `void revoke(String resourceId, String resourceIndex, Recipients entitiesToRevoke, ActionListener<ResourceSharing> listener)` | Remove access from specified entities |
+| `verifyAccess` | `void verifyAccess(String resourceId, String resourceIndex, String action, ActionListener<Boolean> listener)` | Check if current user has access with provided action |
+| `share` | `void share(String resourceId, String resourceIndex, ShareWith target, ActionListener<ResourceSharing> listener)` | Grant access to specified entities |
+| `revoke` | `void revoke(String resourceId, String resourceIndex, ShareWith target, ActionListener<ResourceSharing> listener)` | Remove access from specified entities |
 | `getAccessibleResourceIds` | `void getAccessibleResourceIds(String resourceIndex, ActionListener<Set<String>> listener)` | Get all accessible resource IDs |
+| `isFeatureEnabledForType` | `boolean isFeatureEnabledForType(String resourceType)` | Check if feature is enabled for a resource type |
+
+### REST APIs (v3.3.0+)
+
+| API | Method | Description | Permission |
+|-----|--------|-------------|------------|
+| `/_plugins/_security/api/resource/share` | PUT | Create/replace sharing settings | Resource Owner |
+| `/_plugins/_security/api/resource/share` | PATCH/POST | Add or revoke recipients | Resource Owner / share permission |
+| `/_plugins/_security/api/resource/share` | GET | Retrieve sharing configuration | Resource Owner / read permission |
+| `/_plugins/_security/api/resource/types` | GET | List resource types and action groups | Dashboard access |
+| `/_plugins/_security/api/resource/list` | GET | List accessible resources | Dashboard access |
+| `/_plugins/_security/api/resources/migrate` | POST | Migrate legacy sharing metadata | REST admin / Super admin |
 
 ### Usage Example
 
@@ -192,7 +219,41 @@ opensearchplugin {
 }
 ```
 
-**4. Use client for access control:**
+**4. Implement DocRequest interface (v3.3.0+):**
+
+All ActionRequests related to resources must implement the DocRequest interface:
+
+```java
+public class ShareResourceRequest extends ActionRequest implements DocRequest {
+    private final String resourceId;
+    
+    @Override
+    public String index() {
+        return RESOURCE_INDEX_NAME;
+    }
+    
+    @Override
+    public String id() {
+        return resourceId;
+    }
+}
+```
+
+**5. Declare action groups in resource-action-groups.yml (v3.3.0+):**
+
+```yaml
+resource_types:
+  sample-resource:
+    sample_read_only:
+      - "cluster:admin/sample-resource-plugin/get"
+    sample_read_write:
+      - "cluster:admin/sample-resource-plugin/*"
+    sample_full_access:
+      - "cluster:admin/sample-resource-plugin/*"
+      - "cluster:admin/security/resource/share"
+```
+
+**6. Use client for access control:**
 
 ```java
 ResourceSharingClient client = ResourceSharingClientAccessor.getInstance()
@@ -221,6 +282,7 @@ client.share(
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#5540](https://github.com/opensearch-project/security/pull/5540) | Comprehensive documentation for Resource Access Control |
 | v3.2.0 | [#5389](https://github.com/opensearch-project/security/pull/5389) | Migration API for existing sharing info |
 | v3.2.0 | [#5408](https://github.com/opensearch-project/security/pull/5408) | Resource Access Evaluator for standalone authorization |
 | v3.2.0 | [#5541](https://github.com/opensearch-project/security/pull/5541) | Client accessor pattern fix for optional security plugin |
@@ -233,9 +295,11 @@ client.share(
 - [Issue #5391](https://github.com/opensearch-project/security/issues/5391): Migration API tracking issue
 - [Issue #5442](https://github.com/opensearch-project/security/issues/5442): Resource Access Evaluator tracking issue
 - [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
-- [RESOURCE_ACCESS_CONTROL_FOR_PLUGINS.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_ACCESS_CONTROL_FOR_PLUGINS.md): Developer guide
+- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Complete developer and user guide
+- [spi/README.md](https://github.com/opensearch-project/security/blob/main/spi/README.md): SPI implementation guide
 
 ## Change History
 
+- **v3.3.0** (2026-01): Comprehensive documentation overhaul with REST API reference, dynamic settings, DocRequest interface, and action groups configuration
 - **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
 - **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation
