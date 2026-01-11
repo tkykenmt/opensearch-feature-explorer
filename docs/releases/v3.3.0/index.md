@@ -167,6 +167,10 @@
 
 - [Notifications Plugin Fixes](features/notifications/notifications-plugin-fixes.md)
 
+### Performance Analyzer
+
+- [Performance Analyzer Enhancements](features/performance-analyzer/performance-analyzer-enhancements.md)
+
 ### Flow Framework
 
 - [Flow Framework Fixes](features/flow-framework/flow-framework-fixes.md)
