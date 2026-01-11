@@ -128,7 +128,13 @@ Example natural language queries:
 | v3.0.0 | [#9232](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9232) | Display query assistant when dataset is not supported |
 | v3.0.0 | [#9532](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9532) | Append prompt for query assistant in request payload |
 | v3.0.0 | [#9277](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9277) | Hide assistant entry when data2summary agent missing |
-| v3.0.0 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Remove placeholder of last asked question |
+| v3.0.0 | [#9464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9464) | Organizing generated summary by using markdown format |
+| v3.0.0 | [#9480](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9480) | Should not show summary if there is no response |
+| v3.0.0 | [#9492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9492) | Text size in generated summary should be s |
+| v3.0.0 | [#9509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9509) | Fix minor UX style issues on discover summary section |
+| v3.0.0 | [#9519](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9519) | Discover summary regression when result is empty |
+| v3.0.0 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Clear discover summary if t2ppl failed |
+| v3.0.0 | [#9553](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9553) | Use markdown in discover summary |
 | v3.0.0 | [#9601](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9601) | Fix PPL refresh on regeneration |
 
 ## References
@@ -140,5 +146,5 @@ Example natural language queries:
 
 ## Change History
 
-- **v3.0.0** (2025): Added streaming support, unsupported dataset handling, prompt customization, and multiple bug fixes for UI state management
+- **v3.0.0** (2025): Added streaming support, unsupported dataset handling, prompt customization, markdown rendering for summaries, improved empty result handling, UX style fixes, and multiple bug fixes for UI state management
 - **v2.13** (2024): Initial implementation of OpenSearch Assistant toolkit
