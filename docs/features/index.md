@@ -240,6 +240,7 @@
 - [Security Performance Improvements](security/security-performance-improvements.md)
 - [Security Plugin](security/security-plugin.md)
 - [Security Plugin Dependencies](security/security-plugin-dependencies.md)
+- [Security Plugin Health Check](security/security-plugin-health-check.md)
 - [Security Role Mapping](security/security-role-mapping.md)
 - [Security Testing Framework](security/security-testing-framework.md)
 - [Security CI/CD](security/security-ci-cd.md)

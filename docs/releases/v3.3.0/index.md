@@ -92,6 +92,7 @@
 - [Resource Access Control Documentation](features/security/resource-access-control-documentation.md)
 - [Security Configuration Enhancements](features/security/security-configuration-enhancements.md)
 - [Security Plugin Bug Fixes](features/security/security-plugin-bug-fixes.md)
+- [Security Plugin Health Check](features/security/security-plugin-health-check.md)
 - [SSL/TLS Compatibility Fix](features/security/ssl-tls.md)
 - [Sync Protobufs Version with Core](features/security/sync-protobufs-version.md)
 - [Security Plugin Dependencies](features/security/security-plugin-dependencies.md)
