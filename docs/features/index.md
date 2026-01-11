@@ -200,6 +200,7 @@
 - [Data Source Permissions](opensearch-dashboards/data-source-permissions.md)
 - [Data Source Selector](opensearch-dashboards/data-source-selector.md)
 - [Dataset Explorer](opensearch-dashboards/dataset-explorer.md)
+- [Dataset Management](opensearch-dashboards/dataset-management.md)
 - [Dependency Updates](opensearch-dashboards/dependency-updates.md)
 - [Dev Tools](opensearch-dashboards/dev-tools.md)
 - [Discover](opensearch-dashboards/discover.md)
