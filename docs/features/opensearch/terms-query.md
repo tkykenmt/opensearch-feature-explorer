@@ -147,16 +147,21 @@ flowchart LR
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19350](https://github.com/opensearch-project/OpenSearch/pull/19350) | Pack terms once for keyword fields with index and docValues |
+| v3.4.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |
 | v3.3.0 | [#19587](https://github.com/opensearch-project/OpenSearch/pull/19587) | Fix rewriting terms query with consecutive whole numbers |
 | v2.17.0 | - | Added bitmap filtering support |
 
 ## References
 
 - [Issue #19566](https://github.com/opensearch-project/OpenSearch/issues/19566): Bug report for must_not terms query issue
+- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): Performance issue with TermInSetQuery sorting
+- [Lucene PR #14435](https://github.com/apache/lucene/pull/14435): Lucene enhancement for shared packed terms
 - [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/): Official documentation
 - [Roaring Bitmap](https://github.com/RoaringBitmap/RoaringBitmap): Bitmap encoding library
 
 ## Change History
 
+- **v3.4.0** (2025-10-09): Optimized terms query creation for keyword fields with both index and doc_values enabled by packing terms only once when values are identical
 - **v3.3.0** (2025-10-09): Fixed incorrect rewriting of terms query with more than 2 consecutive whole numbers in `must_not` clauses
 - **v2.17.0**: Added bitmap filtering support for efficient large-scale term filtering
