@@ -42,6 +42,7 @@
 ### Security
 
 - [Security AccessController Migration](features/security/security-accesscontroller-migration.md) - Migrate from deprecated java.security.AccessController to org.opensearch.secure_sm.AccessController
+- [Security Bugfixes](features/security/security-bugfixes.md) - Multi-tenancy `.kibana` index fix, WildcardMatcher empty string handling, DLS/FLS internal request fix, PrivilegesEvaluator modularization
 - [Security Features](features/security/security-features.md) - Webhook Basic Auth, REST header propagation, system indices deprecation, static/custom config overlap, search relevance permissions
 - [GitHub Actions Updates](features/security/github-actions-updates.md) - Update GitHub Actions dependencies to support Node.js 24 runtime
 
