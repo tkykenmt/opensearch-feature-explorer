@@ -111,6 +111,7 @@
 - [Percentiles Aggregation](opensearch/percentiles-aggregation.md)
 - [Phone Number Analyzer](opensearch/phone-analyzer.md)
 - [Platform Support](opensearch/platform-support.md)
+- [Plugin Dependencies](opensearch/plugin-dependencies.md)
 - [Plugin Installation](opensearch/plugin-installation.md)
 - [Plugin Testing Framework](opensearch/plugin-testing-framework.md)
 - [Profiler](opensearch/profiler.md)
