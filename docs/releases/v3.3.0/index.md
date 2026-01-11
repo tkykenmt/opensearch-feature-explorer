@@ -109,6 +109,10 @@
 
 - [Query Plugin Dependencies](features/query-insights/query-plugin-dependencies.md)
 
+### SQL
+
+- [SQL/PPL Bug Fixes](features/sql/sql-ppl-bug-fixes.md)
+
 ### Reporting
 
 - [Reporting CVE Fixes](features/reporting/reporting-cve-fixes.md)
