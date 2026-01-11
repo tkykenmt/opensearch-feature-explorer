@@ -200,6 +200,7 @@
 
 ### Index Management
 
+- [ISM Exclusion Pattern](features/index-management/ism-exclusion-pattern.md) - Support exclusion patterns in ISM template index patterns using `-` prefix for selective index management
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md) - Fix ISM policy rebinding, SM deletion snapshot pattern parsing, ExplainSMPolicy serialization, rollup test race conditions
 
 ### Flow Framework
