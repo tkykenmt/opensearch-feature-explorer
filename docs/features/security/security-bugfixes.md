@@ -107,6 +107,13 @@ GET /my-index/_search
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.3.0 | [#5579](https://github.com/opensearch-project/security/pull/5579) | security | Allow plugin system requests when system_indices.enabled is false |
+| v3.3.0 | [#5640](https://github.com/opensearch-project/security/pull/5640) | security | Fix JWT log spam with empty roles_key |
+| v3.3.0 | [#5675](https://github.com/opensearch-project/security/pull/5675) | security | Fix incorrect licenses in Security Principal files |
+| v3.3.0 | [#1577](https://github.com/opensearch-project/security-analytics/pull/1577) | security-analytics | Remove direct reference to Job Scheduler Lock Index |
+| v3.3.0 | [#1583](https://github.com/opensearch-project/security-analytics/pull/1583) | security-analytics | Ensure user attributes in expected format |
+| v3.3.0 | [#1330](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1330) | security-analytics-dashboards-plugin | Upgrade js-yaml to v4.1 |
+| v3.3.0 | [#4245](https://github.com/opensearch-project/sql/pull/4245) | sql | Support serializing/deserializing UDTs in pushed-down scripts |
 | v3.1.0 | [#5307](https://github.com/opensearch-project/security/pull/5307) | security | Fix security index stale cache post snapshot restore |
 | v3.1.0 | [#5279](https://github.com/opensearch-project/security/pull/5279) | security | Fix compliance audit log diff computation |
 | v3.1.0 | [#5303](https://github.com/opensearch-project/security/pull/5303) | security | Fix DlsFlsFilterLeafReader PointValues handling |
@@ -126,6 +133,10 @@ GET /my-index/_search
 
 ## References
 
+- [Issue #5634](https://github.com/opensearch-project/security/issues/5634): JWT log spam bug report
+- [Issue #792](https://github.com/opensearch-project/geospatial/issues/792): Geospatial permissions issue since 3.2.0
+- [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Alerting DLS user attribute issue
+- [Issue #4063](https://github.com/opensearch-project/sql/issues/4063): SQL UDT serialization issue
 - [Issue #5308](https://github.com/opensearch-project/security/issues/5308): Stale cache post snapshot restore
 - [Issue #5280](https://github.com/opensearch-project/security/issues/5280): Compliance audit log diff computation issue
 - [Issue #2189](https://github.com/opensearch-project/security-dashboards-plugin/issues/2189): Page reload on invalid password
@@ -137,5 +148,6 @@ GET /my-index/_search
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): System index access fix for disabled protection, JWT log spam fix, user attribute format standardization, Job Scheduler lock management delegation, license corrections, js-yaml security upgrade, SQL UDT serialization fix
 - **v3.1.0** (2025-06-10): Security backend bug fixes including stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements, password reset UI fixes, forecasting permissions, and guava dependency fixes
 - **v2.18.0** (2024-10-29): Multiple security bug fixes including system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
