@@ -276,6 +276,9 @@ Response includes:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#1655](https://github.com/opensearch-project/neural-search/pull/1655) | Fix IT failures in multi-node environments |
+| v3.4.0 | [#1674](https://github.com/opensearch-project/neural-search/pull/1674) | Handle non-specified method_parameters in queries |
+| v3.4.0 | [#1683](https://github.com/opensearch-project/neural-search/pull/1683) | Fix disk space recovery on index deletion |
 | v3.3.0 | [#1502](https://github.com/opensearch-project/neural-search/pull/1502) | Add basic classes for SEISMIC algorithm |
 | v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Clustering algorithms & field mapper |
 | v3.3.0 | [#1536](https://github.com/opensearch-project/neural-search/pull/1536) | Circuit breaker and memory stats |
@@ -306,4 +309,5 @@ Response includes:
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Bug fixes for IT failures in multi-node environments, query handling without method_parameters, and disk space recovery on index deletion
 - **v3.3.0** (2025-10-23): Initial implementation of SEISMIC sparse ANN algorithm with full indexing, query, caching, and memory management support
