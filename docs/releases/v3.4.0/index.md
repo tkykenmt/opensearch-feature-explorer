@@ -134,6 +134,7 @@
 
 ### SQL
 
+- [PPL Timechart Functions](features/sql/ppl-timechart-functions.md) - Rate-based aggregation functions (per_second, per_minute, per_hour, per_day), millisecond span support, custom timefield option, merged timechart/chart implementation
 - [PPL Query Optimization](features/sql/ppl-query-optimization.md) - 33 enhancements including sort pushdown, aggregation optimization, distinct count approx, case-to-range queries, fillnull command, YAML explain format
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md) - 48 bug fixes including memory exhaustion fix, race condition fix, rex nested capture groups, filter pushdown improvements, and CVE-2025-48924
 - [SQL CI/Tests](features/sql/sql-ci-tests.md) - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
