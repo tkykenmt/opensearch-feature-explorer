@@ -21,6 +21,9 @@ graph TB
         AUDIT[Compliance Audit Log]
         DLSFLS[DLS/FLS Filter Reader]
         AUTH[Basic Authenticator]
+        WCM[WildcardMatcher]
+        PE[PrivilegesEvaluator]
+        MT[Multi-tenancy]
     end
     
     subgraph "Security Dashboards"
@@ -45,6 +48,9 @@ graph TB
     HASH --> |Field Handling| Core
     CACHE --> |Snapshot Restore| Core
     DLSFLS --> |Field Filtering| Core
+    WCM --> |Pattern Matching| Core
+    PE --> |Authorization| Core
+    MT --> |Index Redirection| Core
 ```
 
 ### Components
@@ -61,6 +67,9 @@ graph TB
 | Compliance Audit Log | Logs diffs for security index write operations | security |
 | DLS/FLS Filter Reader | Handles document and field level security filtering | security |
 | Basic Authenticator | Handles HTTP Basic authentication and logging | security |
+| WildcardMatcher | Pattern matching for index and role names | security |
+| PrivilegesEvaluator | Authorization and privilege evaluation | security |
+| Multi-tenancy | Virtual index redirection for Dashboards tenants | security |
 | Password Reset UI | Manages password reset form in dashboards | security-dashboards-plugin |
 | Permissions Dropdown | Static dropdown for cluster/index permissions | security-dashboards-plugin |
 | Guava Dependencies | Runtime dependencies for security analytics | security-analytics |
@@ -107,6 +116,18 @@ GET /my-index/_search
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.4.0 | [#5694](https://github.com/opensearch-project/security/pull/5694) | security | Create WildcardMatcher.NONE for empty string input |
+| v3.4.0 | [#5714](https://github.com/opensearch-project/security/pull/5714) | security | Improve array validator to check for blank strings |
+| v3.4.0 | [#5710](https://github.com/opensearch-project/security/pull/5710) | security | Use RestRequestFilter.getFilteredRequest for sensitive params |
+| v3.4.0 | [#5723](https://github.com/opensearch-project/security/pull/5723) | security | Fix deprecated SSL transport settings in demo certificates |
+| v3.4.0 | [#5721](https://github.com/opensearch-project/security/pull/5721) | security | Fix DlsFlsValveImpl condition for internal requests |
+| v3.4.0 | [#5778](https://github.com/opensearch-project/security/pull/5778) | security | Fix `.kibana` index update operations in multi-tenancy |
+| v3.4.0 | [#5750](https://github.com/opensearch-project/security/pull/5750) | security | Replace AccessController and remove Extension restriction |
+| v3.4.0 | [#5749](https://github.com/opensearch-project/security/pull/5749) | security | Add security provider earlier in bootstrap process |
+| v3.4.0 | [#5791](https://github.com/opensearch-project/security/pull/5791) | security | Modularized PrivilegesEvaluator |
+| v3.4.0 | [#5804](https://github.com/opensearch-project/security/pull/5804) | security | Cleaned up use of PrivilegesEvaluatorResponse |
+| v3.4.0 | [#5816](https://github.com/opensearch-project/security/pull/5816) | security | Remove reflective call to getInnerChannel |
+| v3.4.0 | [#5736](https://github.com/opensearch-project/security/pull/5736) | security | Fix build failure in SecurityFilterTests |
 | v3.3.0 | [#5579](https://github.com/opensearch-project/security/pull/5579) | security | Allow plugin system requests when system_indices.enabled is false |
 | v3.3.0 | [#5640](https://github.com/opensearch-project/security/pull/5640) | security | Fix JWT log spam with empty roles_key |
 | v3.3.0 | [#5675](https://github.com/opensearch-project/security/pull/5675) | security | Fix incorrect licenses in Security Principal files |
@@ -133,6 +154,11 @@ GET /my-index/_search
 
 ## References
 
+- [Issue #1951](https://github.com/opensearch-project/observability/issues/1951): `.kibana` index update issue in multi-tenancy
+- [Issue #5697](https://github.com/opensearch-project/security/issues/5697): Deprecated SSL transport settings
+- [Issue #3420](https://github.com/opensearch-project/security/issues/3420): BCFKS keystore loading issue
+- [Issue #5399](https://github.com/opensearch-project/security/issues/5399): Pluggable PrivilegesEvaluator
+- [Issue #840](https://github.com/opensearch-project/performance-analyzer/issues/840): getInnerChannel reflection removal
 - [Issue #5634](https://github.com/opensearch-project/security/issues/5634): JWT log spam bug report
 - [Issue #792](https://github.com/opensearch-project/geospatial/issues/792): Geospatial permissions issue since 3.2.0
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Alerting DLS user attribute issue
@@ -148,6 +174,7 @@ GET /my-index/_search
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Multi-tenancy `.kibana` index update fix, WildcardMatcher empty string handling, array validator blank string checks, audit log sensitive parameter filtering, deprecated SSL settings update, BCFIPS provider bootstrap timing, AccessController migration, PrivilegesEvaluator modularization, PrivilegesEvaluatorResponse cleanup, reflective getInnerChannel removal
 - **v3.3.0** (2026-01-11): System index access fix for disabled protection, JWT log spam fix, user attribute format standardization, Job Scheduler lock management delegation, license corrections, js-yaml security upgrade, SQL UDT serialization fix
 - **v3.1.0** (2025-06-10): Security backend bug fixes including stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements, password reset UI fixes, forecasting permissions, and guava dependency fixes
 - **v2.18.0** (2024-10-29): Multiple security bug fixes including system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
