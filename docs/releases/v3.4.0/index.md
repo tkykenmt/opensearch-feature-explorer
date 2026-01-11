@@ -159,3 +159,7 @@
 ### Index Management
 
 - [Index Management Bugfixes](features/index-management/index-management-bugfixes.md) - Fix ISM policy rebinding, SM deletion snapshot pattern parsing, ExplainSMPolicy serialization, rollup test race conditions
+
+### Flow Framework
+
+- [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) - Fix incorrect output dimension default (768→384) in semantic search with local model template
