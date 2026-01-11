@@ -209,6 +209,7 @@
 - [Content Management](opensearch-dashboards/content-management.md)
 - [Content Security Policy (CSP)](opensearch-dashboards/dashboards-csp.md)
 - [Cross-Cluster Search](opensearch-dashboards/cross-cluster-search.md)
+- [Dashboard & Visualization Fixes](opensearch-dashboards/dashboard-and-visualization-fixes.md)
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards CI/Tests](opensearch-dashboards/dashboards-ci-tests.md)
 - [Dashboards Console](opensearch-dashboards/dashboards-console.md)
