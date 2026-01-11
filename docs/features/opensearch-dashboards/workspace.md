@@ -167,6 +167,7 @@ opensearch_security.multitenancy.enabled: false
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#10861](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10861) | Remove restriction that workspace cannot be created without datasource |
 | v3.3.0 | [#9781](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9781) | Add batch delete method for workspaces, fix deletion error |
 | v3.0.0 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |
 | v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors |
@@ -207,6 +208,7 @@ opensearch_security.multitenancy.enabled: false
 
 ## Change History
 
+- **v3.4.0** (2026-02-18): Removed restriction requiring data source selection during workspace creation; workspaces can now be created without associated data sources
 - **v3.3.0** (2026-01-14): Added batch delete method for workspaces with improved error handling and detailed success/failure notifications
 - **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
 - **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements
