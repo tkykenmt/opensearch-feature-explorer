@@ -220,3 +220,7 @@
 
 - [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md) - Conditional resource sharing fallback, client API extensions for validate/suggest, auto_create field, suggest API read access
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md) - Fix 3-AZ forecast results index creation, frequency-aware missing data detection, and data source error toast suppression
+
+### Anomaly Detection Dashboards Plugin
+
+- [Anomaly Detection Daily Insights](features/anomaly-detection-dashboards-plugin/anomaly-detection-daily-insights.md) - New Daily Insights page with AI-powered anomaly correlation, automated detector creation via ML agents, and multi-cluster index management

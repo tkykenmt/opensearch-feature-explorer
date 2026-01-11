@@ -452,6 +452,10 @@
 - [Remote/Multi-Index Support](anomaly-detection/remote-multi-index-support.md)
 - [Anomaly Detection Dependencies](anomaly-detection/anomaly-detection-dependencies.md)
 
+## anomaly-detection-dashboards-plugin
+
+- [Anomaly Detection Daily Insights](anomaly-detection-dashboards-plugin/anomaly-detection-daily-insights.md)
+
 ## observability
 
 - [Observability Cypress Updates](observability/observability-cypress-updates.md)
