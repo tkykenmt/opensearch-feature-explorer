@@ -48,6 +48,7 @@
 ## opensearch-dashboards
 
 - [CI/CD & Build Fixes](features/opensearch-dashboards/ci-cd-build-fixes.md)
+- [Query Assistant](features/opensearch-dashboards/query-assistant.md)
 - [Dashboard & Visualization Fixes](features/opensearch-dashboards/dashboard-and-visualization-fixes.md)
 - [Cross-Cluster Search](features/opensearch-dashboards/cross-cluster-search.md)
 - [Data Importer](features/opensearch-dashboards/data-importer.md)
