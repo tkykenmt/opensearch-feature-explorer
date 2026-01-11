@@ -579,6 +579,7 @@
 
 ## user-behavior-insights
 
+- [User Behavior Insights Build Infrastructure](user-behavior-insights/user-behavior-insights-build.md)
 - [User Behavior Insights Data Generator](user-behavior-insights/user-behavior-insights-data-generator.md)
 - [User Plugin Fixes](user-behavior-insights/user-plugin-fixes.md)
 
