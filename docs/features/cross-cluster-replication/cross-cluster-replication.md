@@ -150,6 +150,7 @@ POST _plugins/_replication/follower-index/_stop
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.4.0 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | cross-cluster-replication | Fix the requirement of empty request body in pause replication |
 | v3.3.0 | [#1580](https://github.com/opensearch-project/cross-cluster-replication/pull/1580) | cross-cluster-replication | Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput |
 | v3.2.0 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | cross-cluster-replication | Add missing method for RemoteClusterRepository class |
 | v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |
@@ -161,6 +162,7 @@ POST _plugins/_replication/follower-index/_stop
 ## References
 
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices
+- [Issue #1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468): Bug report for required empty request body in pause API
 - [Issue #1557](https://github.com/opensearch-project/cross-cluster-replication/issues/1557): Distribution Build Failed for cross-cluster-replication-3.2.0
 - [Issue #1568](https://github.com/opensearch-project/cross-cluster-replication/issues/1568): Bug report for 2GB limit breach during large document replication
 - [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
@@ -172,6 +174,7 @@ POST _plugins/_replication/follower-index/_stop
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Made pause replication API request body optional, defaulting to "User initiated" reason
 - **v3.3.0** (2025-11-18): Fixed 2GB limit breach for large document replication with dynamic batch size adjustment and new index-level batch size setting
 - **v3.2.0** (2025-08-06): Build fix - added missing `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method to RemoteClusterRepository
 - **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
