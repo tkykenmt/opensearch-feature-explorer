@@ -112,6 +112,7 @@ flowchart TB
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `detection_interval` | Time between detection runs | Required |
+| `frequency` | Detection execution frequency (v3.3.0+, must be multiple of interval) | Same as `detection_interval` |
 | `window_delay` | Extra time for data collection | 1 minute |
 | `shingle_size` | Number of intervals for pattern detection | 8 |
 | `category_field` | Field(s) for entity grouping | None (single-entity) |
@@ -130,6 +131,7 @@ flowchart TB
 | `/_plugins/_anomaly_detection/detectors/<id>/_stop` | POST | Stop detection |
 | `/_plugins/_anomaly_detection/detectors/<id>/_profile` | GET | Get detector profile |
 | `/_plugins/_anomaly_detection/detectors/results/_search` | POST | Search results |
+| `/_plugins/_anomaly_detection/detectors/_suggest/{suggestType}` | POST | Get configuration suggestions (v3.3.0+) |
 
 ### Usage Example
 
@@ -231,6 +233,13 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1562](https://github.com/opensearch-project/anomaly-detection/pull/1562) | Add frequency scheduling in real time |
+| v3.3.0 | [#1563](https://github.com/opensearch-project/anomaly-detection/pull/1563) | Adding AD suggest API |
+| v3.3.0 | [#1098](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1098) | Add Suggest parameters button + move operational settings to Configure Model |
+| v3.3.0 | [#1565](https://github.com/opensearch-project/anomaly-detection/pull/1565) | Make frequency optional; fix STOPPED state; add ecommerce tests |
+| v3.3.0 | [#1571](https://github.com/opensearch-project/anomaly-detection/pull/1571) | Fix flaky ITs |
+| v3.3.0 | [#1572](https://github.com/opensearch-project/anomaly-detection/pull/1572) | Fix tests by adding the new node setting for protected types |
+| v3.3.0 | [#1579](https://github.com/opensearch-project/anomaly-detection/pull/1579) | Exclude long-running tests from integTestRemote |
 | v3.3.0 | [#1546](https://github.com/opensearch-project/anomaly-detection/pull/1546) | Updates search handler to consume resource authz and updates resource authz related tests |
 | v3.2.0 | [#1513](https://github.com/opensearch-project/anomaly-detection/pull/1513) | Support >1 hr intervals |
 | v3.2.0 | [#1533](https://github.com/opensearch-project/anomaly-detection/pull/1533) | Centralized resource access control for detectors and forecasters |
@@ -272,6 +281,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Change History
 
+- **v3.3.0** (2026-01-14): **Frequency scheduling and Suggest API** - Added `frequency` parameter for flexible detection intervals separate from data aggregation, new Suggest API (`/_plugins/_anomaly_detection/detectors/_suggest`) for automated configuration recommendations, Dashboards UI enhancements with Suggest Parameters button and Operation Settings panel reorganization, bug fixes for STOPPED state race condition, flaky integration tests, and protected resource types compatibility
 - **v3.3.0** (2026-01-14): **Resource authorization integration** - Search handler updated to consume `PluginClient` for DLS-style filtering of protected resources, enabling fine-grained resource sharing with the Security plugin's new access control framework
 - **v3.2.0** (2025-08-05): **Long interval support** (>1 hour detection intervals for daily/weekly monitoring), **centralized resource access control** integration with security plugin auto-evaluation, concurrency bug fixes for HCAD multi-node clusters, forecasting interval calculation fixes, Dashboards UI improvements, build infrastructure updates (Gradle 8.14, Nebula 12.2.1)
 - **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
