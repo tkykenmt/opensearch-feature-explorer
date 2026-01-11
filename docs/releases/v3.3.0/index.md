@@ -182,3 +182,7 @@
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
+
+### OpenSearch Remote Metadata SDK
+
+- [Remote Client Enhancements](features/opensearch-remote-metadata-sdk/remote-client-enhancements.md)
