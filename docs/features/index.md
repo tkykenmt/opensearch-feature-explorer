@@ -180,6 +180,7 @@
 - [Task Management](opensearch/task-management.md)
 - [Test Fixes](opensearch/test-fixes.md)
 - [Thread Context Permissions](opensearch/thread-context-permissions.md)
+- [Thread Pool](opensearch/thread-pool.md)
 - [Tiered Caching](opensearch/tiered-caching.md)
 - [Translog](opensearch/translog.md)
 - [Transport Nodes Action Optimization](opensearch/transport-nodes-action-optimization.md)

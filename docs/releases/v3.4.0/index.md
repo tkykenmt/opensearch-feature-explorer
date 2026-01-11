@@ -26,6 +26,7 @@
 - [Settings Bugfixes](features/opensearch/settings-bugfixes.md) - Fix duplicate registration of dynamic settings and patch version build issues
 - [Stats Builder Pattern Deprecations](features/opensearch/stats-builder-pattern-deprecations.md) - Deprecated constructors in 30+ Stats classes in favor of Builder pattern
 - [Terms Query Optimization](features/opensearch/terms-query-optimization.md) - Pack terms once for keyword fields with index and docValues enabled
+- [Thread Pool](features/opensearch/thread-pool.md) - ForkJoinPool thread pool type support for work-stealing parallelism
 - [Transport Actions API](features/opensearch/transport-actions-api.md) - Internal API for retrieving metadata about requested indices from transport actions
 - [XContent Filtering](features/opensearch/xcontent-filtering.md) - Case-insensitive filtering support for XContentMapValues.filter
 - [Plugin Dependencies](features/opensearch/plugin-dependencies.md) - Range semver support for dependencies in plugin-descriptor.properties
