@@ -357,6 +357,7 @@
 - [PPL Rex and Regex Commands](sql/ppl-rex-and-regex-commands.md)
 - [PPL Spath Command](sql/ppl-spath-command.md)
 - [PPL Timechart Command](sql/ppl-timechart-command.md)
+- [PPL Commands (Calcite)](sql/ppl-commands-calcite.md)
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL Error Handling](sql/sql-error-handling.md)
 - [SQL Pagination](sql/sql-pagination.md)
