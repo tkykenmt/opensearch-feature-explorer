@@ -158,6 +158,7 @@
 ### Learning to Rank
 
 - [Learning to Rank Bugfixes](features/learning/learning-to-rank-bugfixes.md) - Legacy version ID fix, integration test stability, rescore-only SLTR logging fix
+- [Learning to Rank Enhancements](features/learning/learning-to-rank-enhancements.md) - Test infrastructure improvements, narrowed index cleanup scope for better test isolation
 
 ### ML Commons
 
