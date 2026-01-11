@@ -115,6 +115,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |
 | v3.3.0 | [#845](https://github.com/opensearch-project/performance-analyzer/pull/845) | Use Subclass method for Version and Channel type for security plugin compatibility |
 | v3.3.0 | [#846](https://github.com/opensearch-project/performance-analyzer/pull/846) | Increment to 3.3.0.0 and update SHA files |
 | v3.2.0 | [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |
@@ -130,6 +131,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Build configuration update - restore Java 21 minimum compatibility, remove Java 24 from CI matrix, simplify build.gradle version selection
 - **v3.3.0** (2026-01-11): Transport channel wrapper improvements - delegate getProfileName(), getChannelType(), getVersion(), and get() to wrapped channel; removed getInnerChannel() method for better security plugin compatibility
 - **v3.2.0** (2025-07-18): Build infrastructure update - SpotBugs 6.2.2, Checkstyle 10.26.1; Removed CVE-2025-27820 workaround
 - **v2.17.0** (2024-09-17): Added RTFCacheConfigMetricsCollector for cache configuration telemetry; Updated PA Commons dependency to 1.6.0
