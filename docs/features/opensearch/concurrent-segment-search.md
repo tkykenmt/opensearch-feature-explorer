@@ -117,6 +117,7 @@ PUT _cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19584](https://github.com/opensearch-project/OpenSearch/pull/19584) | Omit maxScoreCollector in SimpleTopDocsCollectorContext when concurrent segment search enabled |
 | v3.3.0 | [#19053](https://github.com/opensearch-project/OpenSearch/pull/19053) | Fix assertion error when collapsing search results with concurrent segment search |
 | v3.2.0 | [#18451](https://github.com/opensearch-project/OpenSearch/pull/18451) | Optimize grouping for segment concurrent search |
 
@@ -131,6 +132,7 @@ PUT _cluster/settings
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Performance optimization - omit MaxScoreCollector in SimpleTopDocsCollectorContext when sorting by score with concurrent segment search enabled (~10% latency improvement)
 - **v3.3.0** (2025-10-30): Fixed assertion error when using field collapsing with concurrent segment search by removing setShardIndex parameter from CollapseTopFieldDocs.merge()
 - **v3.2.0** (2025-07-31): Optimized segment grouping algorithm using priority queue for better load balancing
 - **v3.0.0**: Concurrent segment search enabled by default in `auto` mode
