@@ -133,6 +133,10 @@
 
 - [Version Increment](features/multi-plugin/version-increment.md)
 
+### User Behavior Insights
+
+- [User Plugin Fixes](features/user-behavior-insights/user-plugin-fixes.md)
+
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
