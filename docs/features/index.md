@@ -311,6 +311,7 @@
 - [Flint Index Operations](sql/flint-index-operations.md)
 - [Flint Query Scheduler](sql/flint-query-scheduler.md)
 - [PPL Documentation](sql/ppl-documentation.md)
+- [PPL Patterns Command](sql/ppl-patterns-command.md)
 - [PPL Rename Command](sql/ppl-rename-command.md)
 - [PPL Spath Command](sql/ppl-spath-command.md)
 - [Security Lake Data Source](sql/security-lake-data-source.md)
