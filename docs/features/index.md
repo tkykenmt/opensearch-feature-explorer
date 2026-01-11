@@ -12,6 +12,7 @@
 - [Neural Search Reranking](neural-search/neural-search-reranking.md)
 - [Neural Search Stats](neural-search/neural-search-stats.md)
 - [Neural Sparse Search](neural-search/neural-sparse-search.md)
+- [SEISMIC Sparse ANN](neural-search/seismic-sparse-ann.md)
 - [Semantic Field](neural-search/semantic-field.md)
 - [Text Chunking](neural-search/text-chunking.md)
 
