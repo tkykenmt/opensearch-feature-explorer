@@ -102,6 +102,7 @@
 
 ### ML Commons
 
+- [Agentic Memory and ScratchPad](features/ml-commons/agentic-memory-and-scratchpad.md)
 - [Global Resource Support](features/ml-commons/global-resource-support.md)
 - [Index Insight](features/ml-commons/index-insight.md)
 - [MCP Connector - Streamable HTTP Support](features/ml-commons/mcp-connector.md)
