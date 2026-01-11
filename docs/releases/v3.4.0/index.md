@@ -129,6 +129,10 @@
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
 
+### Learning to Rank
+
+- [Learning to Rank Bugfixes](features/learning/learning-to-rank-bugfixes.md) - Legacy version ID fix, integration test stability, rescore-only SLTR logging fix
+
 ### OpenSearch Remote Metadata SDK
 
 - [Remote Model Bugfixes](features/opensearch-remote-metadata-sdk/remote-model-bugfixes.md) - Fix error when updating global model status in DynamoDB backend
