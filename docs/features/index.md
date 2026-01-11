@@ -106,6 +106,7 @@
 - [Node Stats](opensearch/node-stats.md)
 - [Nodes Info API](opensearch/nodes-info-api.md)
 - [Node Roles Configuration](opensearch/node-roles-configuration.md)
+- [Normalizer Enhancements](opensearch/normalizer-enhancements.md)
 - [Numeric Terms Aggregation Optimization](opensearch/numeric-terms-aggregation-optimization.md)
 - [Offline Nodes (Background Tasks)](opensearch/offline-nodes.md)
 - [OOM Prevention](opensearch/oom-prevention.md)
