@@ -101,6 +101,8 @@ flowchart TB
 | Span Flyout | Detailed span information panel |
 | Correlation Saved Object | Stores trace-to-log correlation configuration |
 | Tab Registry | Flavor-based tab registration system |
+| Span Status Filter | Popover-based filter for span status (Error, OK, Unset) |
+| Trace ID Badge | Clickable badge displaying trace ID with copy functionality |
 
 ### Configuration
 
@@ -181,6 +183,27 @@ POST .kibana/_doc/correlations:trace-logs-1
 4. Query traces from external cluster
 ```
 
+#### Filtering Spans by Status
+
+```
+1. Navigate to Trace Details page
+2. Click "Filter by status" button in the span hierarchy table toolbar
+3. Select one or more status options:
+   - Error: Shows spans with error status
+   - OK: Shows spans with successful status
+   - Unset: Shows spans with unset/unknown status
+4. Selected filters appear as badges and persist across navigation
+```
+
+#### Copying Trace ID
+
+```
+1. Open Trace Details page
+2. Locate the "Trace ID: {id}" badge in the header
+3. Click the badge to copy the trace ID to clipboard
+4. A tooltip confirms the copy action
+```
+
 ## Limitations
 
 - Service map tab is currently disabled
@@ -188,11 +211,17 @@ POST .kibana/_doc/correlations:trace-logs-1
 - Start time rounding may occur with imprecise data
 - Maximum spans displayed limited by browser performance
 - Log correlation requires manual saved object configuration
+- Span status filter state is stored in session storage and resets on browser close
+- Root span detection falls back to earliest span if no span without parent is found
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#10745](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10745) | Add span status filters to trace details |
+| v3.4.0 | [#10630](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10630) | Fix trace details page header to always show root span |
+| v3.4.0 | [#10651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10651) | Traces code block scrollbar to scroll on edge |
+| v3.4.0 | [#10698](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10698) | Remove service.name column from traces table |
 | v3.3.0 | [#10386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10386) | Add Correlations Saved Object Type Registration |
 | v3.3.0 | [#10392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10392) | Add traces chart (request count, error count, latency) |
 | v3.3.0 | [#10393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10393) | Trace Details: Log correlation (tabs + redirect) |
@@ -210,4 +239,5 @@ POST .kibana/_doc/correlations:trace-logs-1
 
 ## Change History
 
+- **v3.4.0** (2026-03-18): Added span status filters (Error, OK, Unset), improved page header to show root span service/operation, copyable trace ID badge, scrollbar fixes, removed duplicate service.name column
 - **v3.3.0** (2026-03-18): Initial implementation with trace charts, log correlation, timeline waterfall visualization, external datasource support, configurable default columns, and OTEL schema support
