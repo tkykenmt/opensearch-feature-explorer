@@ -95,11 +95,18 @@ POST test/_search
 
 - Derived fields do not support exists queries; they are silently skipped when querying parent object fields
 - The IP field enhancement requires Lucene 10.2+ for `DocValuesMultiRangeQuery` support
+- Complex wildcard patterns may hit `TooComplexToDeterminizeException` if the automaton exceeds the determinization work limit
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19489](https://github.com/opensearch-project/OpenSearch/pull/19489) | Fix case-insensitive wildcard + aggregation query crash |
+| v3.4.0 | [#19637](https://github.com/opensearch-project/OpenSearch/pull/19637) | Fix IndexOutOfBoundsException when running include/exclude on non-existent prefix in terms aggregations |
+| v3.4.0 | [#19442](https://github.com/opensearch-project/OpenSearch/pull/19442) | Fix Unified highlighter for nested fields when using matchPhrasePrefixQuery |
+| v3.4.0 | [#19650](https://github.com/opensearch-project/OpenSearch/pull/19650) | Fix NPE of ScriptScoreQuery |
+| v3.4.0 | [#20204](https://github.com/opensearch-project/OpenSearch/pull/20204) | Fix array out of bounds during aggregation |
+| v3.4.0 | [#19719](https://github.com/opensearch-project/OpenSearch/pull/19719) | Fix wildcard query with escaped backslash followed by wildcard character |
 | v3.1.0 | [#17843](https://github.com/opensearch-project/OpenSearch/pull/17843) | Fix object field exists query |
 | v3.1.0 | [#18161](https://github.com/opensearch-project/OpenSearch/pull/18161) | Use Bad Request status for InputCoercionException |
 | v3.1.0 | [#18194](https://github.com/opensearch-project/OpenSearch/pull/18194) | Null check field names in QueryStringQueryBuilder |
@@ -108,6 +115,11 @@ POST test/_search
 
 ## References
 
+- [Issue #19319](https://github.com/opensearch-project/OpenSearch/issues/19319): Error when use both wildcard + aggregation
+- [Issue #19636](https://github.com/opensearch-project/OpenSearch/issues/19636): Include/Exclude on terms aggregation can cause IndexOutOfBoundsException
+- [Issue #19106](https://github.com/opensearch-project/OpenSearch/issues/19106): Unified highlighter does not highlight nested fields when match_phrase_prefix is used
+- [Issue #18446](https://github.com/opensearch-project/OpenSearch/issues/18446): Null pointer exception on a term filter nested inside a script score
+- [Issue #19365](https://github.com/opensearch-project/OpenSearch/issues/19365): array_index_out_of_bounds_exception on aggregations with unsigned_long
 - [Issue #17808](https://github.com/opensearch-project/OpenSearch/issues/17808): Object Field exists query returns wrong result
 - [Issue #18131](https://github.com/opensearch-project/OpenSearch/issues/18131): XContent parsing exceptions return 500 status
 - [Issue #17394](https://github.com/opensearch-project/OpenSearch/issues/17394): Unlimit IP/masks terms query for doc_values only fields
@@ -115,4 +127,5 @@ POST test/_search
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Six bug fixes for wildcard queries, aggregations, highlighters, and script score queries
 - **v3.1.0** (2026-01-10): Initial implementation with five bug fixes for query handling
