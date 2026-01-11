@@ -115,6 +115,10 @@
 
 - [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md) - Security fix for CVE-2025-57810 (jspdf bump) and null/undefined datetime handling in CSV reports
 
+### Dashboards Notifications
+
+- [Notifications UX](features/dashboards-notifications/notifications-ux.md) - Fix channel name edit refetching on every keystroke
+
 ### User Behavior Insights
 
 - [User Behavior Insights Build](features/user-behavior-insights/user-behavior-insights-build.md) - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
