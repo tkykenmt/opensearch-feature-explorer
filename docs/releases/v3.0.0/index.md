@@ -20,6 +20,7 @@
 - [Concurrent Segment Search Auto Mode Default](features/opensearch/concurrent-segment-search.md)
 - [Deprecated Code Cleanup](features/opensearch/deprecated-code-cleanup.md)
 - [Field Type Fixes](features/opensearch/field-type-fixes.md)
+- [Field Types](features/opensearch/field-types.md)
 - [Cluster Permissions](features/opensearch/cluster-permissions.md)
 - [gRPC Transport & Services](features/opensearch/grpc-transport--services.md)
 - [Mapping Transformer](features/opensearch/mapping-transformer.md)
