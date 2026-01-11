@@ -102,6 +102,7 @@
 
 ### ML Commons
 
+- [MCP Connector - Streamable HTTP Support](features/ml-commons/mcp-connector.md)
 - [ML Commons Agent Enhancements](features/ml-commons/ml-commons-agent-enhancements.md)
 - [ML Commons Bug Fixes](features/ml-commons/ml-commons-bug-fixes.md)
 - [ML Commons Connector Enhancements](features/ml-commons/ml-commons-connector-enhancements.md)

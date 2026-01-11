@@ -127,10 +127,11 @@ flowchart TB
 
 | API | Method | Description |
 |-----|--------|-------------|
+| `/_plugins/_ml/mcp/stream` | POST | Streamable HTTP endpoint (v3.3.0+, recommended) |
 | `/_plugins/_ml/mcp_tools/_register` | POST | Register tools for MCP server |
 | `/_plugins/_ml/mcp_tools/_remove` | POST | Remove registered MCP tools |
-| `/_plugins/_ml/sse` | GET | Create SSE session |
-| `/_plugins/_ml/sse/message` | POST | Send MCP JSON-RPC messages |
+| `/_plugins/_ml/sse` | GET | Create SSE session (deprecated in v3.3.0) |
+| `/_plugins/_ml/sse/message` | POST | Send MCP JSON-RPC messages (deprecated in v3.3.0) |
 
 ### Agent Types
 
@@ -146,6 +147,19 @@ flowchart TB
 #### MCP Connector (Client)
 
 ```json
+// Streamable HTTP (v3.3.0+, recommended)
+POST /_plugins/_ml/connectors/_create
+{
+  "name": "External MCP Server (Streamable HTTP)",
+  "description": "Connect to external MCP server via Streamable HTTP",
+  "version": "1",
+  "protocol": "mcp_streamable_http",
+  "parameters": {
+    "endpoint": "http://mcp-server:8080/mcp/"
+  }
+}
+
+// SSE (deprecated in v3.3.0)
 POST /_plugins/_ml/connectors/_create
 {
   "name": "External MCP Server",
@@ -261,11 +275,14 @@ POST /_plugins/_ml/models/_register
 - MCP connector is experimental
 - Async execution requires polling for results
 - MCP server SSE sessions have timeout limits
+- SSE transport is deprecated in v3.3.0; use Streamable HTTP (`/_plugins/_ml/mcp/stream`) instead
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4169](https://github.com/opensearch-project/ml-commons/pull/4169) | MCP Connectors for Streamable HTTP |
+| v3.3.0 | [#4162](https://github.com/opensearch-project/ml-commons/pull/4162) | Support Streamable HTTP and deprecate SSE in MCP server |
 | v3.1.0 | [#3787](https://github.com/opensearch-project/ml-commons/pull/3787) | Add Unit Tests for MCP feature |
 | v3.1.0 | [#3821](https://github.com/opensearch-project/ml-commons/pull/3821) | Downgrade MCP version to 0.9 |
 | v3.0.0 | [#3721](https://github.com/opensearch-project/ml-commons/pull/3721) | Onboard MCP - MCP connector support |
@@ -306,5 +323,6 @@ POST /_plugins/_ml/models/_register
 
 ## Change History
 
+- **v3.3.0** (2025-09-30): Streamable HTTP transport for MCP connectors (`mcp_streamable_http` protocol), stateless MCP server at `/_plugins/_ml/mcp/stream`, SSE transport deprecated, MCP Java SDK updated to 0.12.1
 - **v3.1.0** (2025-07-15): MCP SDK downgrade to 0.9.0 for compatibility, added comprehensive unit tests for MCP components
 - **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models
