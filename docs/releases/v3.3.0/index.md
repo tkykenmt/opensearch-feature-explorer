@@ -88,6 +88,7 @@
 ### Security
 
 - [Client Certificate Authentication - skip_users](features/security/security-client-certificate-authentication.md)
+- [JWT Authentication - Direct JWKS Support](features/security/jwt-authentication.md)
 - [Resource Access Control Documentation](features/security/resource-access-control-documentation.md)
 - [Security Configuration Enhancements](features/security/security-configuration-enhancements.md)
 - [Security Plugin Bug Fixes](features/security/security-plugin-bug-fixes.md)
