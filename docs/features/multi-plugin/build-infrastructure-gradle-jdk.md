@@ -48,9 +48,10 @@ graph TB
 
 | Setting | Description | Current Value |
 |---------|-------------|---------------|
-| Gradle Version | Build tool version | 8.14.3 |
-| JDK (CI) | CI workflow JDK version | 24 |
+| Gradle Version | Build tool version | 9.1.0 |
+| JDK (Bundled) | Bundled JDK version | 25.0.1+8 |
 | JDK (Runtime) | Minimum runtime JDK | 21 |
+| JDK Vendor | JDK distribution | Adoptium Temurin |
 | Kotlin Version | Kotlin plugin version | 2.2.0 |
 | Codecov | Code coverage reporting | Enabled |
 
@@ -59,7 +60,7 @@ graph TB
 ```groovy
 // build.gradle - Gradle wrapper configuration
 wrapper {
-    gradleVersion = '8.14.3'
+    gradleVersion = '9.1.0'
     distributionType = Wrapper.DistributionType.ALL
 }
 
@@ -71,7 +72,7 @@ jobs:
     steps:
       - uses: actions/setup-java@v4
         with:
-          java-version: '24'
+          java-version: '25'
           distribution: 'temurin'
 ```
 
@@ -89,14 +90,17 @@ jobs:
 
 ## Limitations
 
-- JDK 24 is used for CI builds; production deployments may use different JDK versions
-- Some third-party dependencies may require updates for full JDK 24 compatibility
+- JDK 25 is bundled; production deployments may use different JDK versions
+- Some third-party dependencies may require updates for full JDK 25 compatibility
 - Gradle version upgrades may require plugin compatibility updates
+- Gradle warning mode temporarily set to `all` pending Protobuf plugin update
 
 ## Related PRs
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.4.0 | [#19575](https://github.com/opensearch-project/OpenSearch/pull/19575) | OpenSearch | Update to Gradle 9.1 |
+| v3.4.0 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | OpenSearch | Update bundled JDK to JDK-25 |
 | v3.2.0 | [#2792](https://github.com/opensearch-project/k-NN/pull/2792) | k-NN | Bump JDK to 24, Gradle to 8.14 |
 | v3.2.0 | [#2828](https://github.com/opensearch-project/k-NN/pull/2828) | k-NN | Bump Gradle to 8.14.3 |
 | v3.2.0 | [#3983](https://github.com/opensearch-project/ml-commons/pull/3983) | ml-commons | Gradle 8.14, JDK 24 |
@@ -107,10 +111,13 @@ jobs:
 
 ## References
 
+- [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): Update bundled JDK to JDK25
 - [OpenSearch automated build system](https://opensearch.org/blog/public-jenkins/): Public Jenkins infrastructure
 - [Gradle Documentation](https://docs.gradle.org/): Official Gradle documentation
+- [Adoptium](https://adoptium.net/): Eclipse Temurin JDK distribution
 - [OpenJDK](https://openjdk.org/): OpenJDK project
 
 ## Change History
 
+- **v3.4.0** (2026-01): Gradle 9.1, bundled JDK 25.0.1+8, forbiddenapis 3.10, Mockito 5.20.0
 - **v3.2.0** (2025): Gradle 8.14/8.14.3, JDK 24 CI support, multi-node testing, Codecov integration, Maven endpoint updates
