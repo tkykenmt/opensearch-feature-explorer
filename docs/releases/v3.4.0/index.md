@@ -11,7 +11,7 @@
 - [Dashboards Visualizations](features/opensearch-dashboards/dashboards-visualizations.md) - Bar gauge, customizable legends, numerical color fields, and table column ordering
 - [Dashboards Workspace](features/opensearch-dashboards/dashboards-workspace.md) - Remove restriction requiring data source for workspace creation
 - [Dashboards Traces](features/opensearch-dashboards/dashboards-traces.md) - Span status filters and trace details UX improvements
-- [Dashboards Logs View](features/opensearch-dashboards/dashboards-logs-view.md) - Redesigned logs tab with expandable rows and multiple dataset support
+- [Dashboards Dataset Management](features/opensearch-dashboards/dashboards-dataset-management.md) - Schema mapping, wildcard prefix, and enhanced dataset table
 
 ## Bug Fixes
 
