@@ -150,6 +150,8 @@ POST my_index/_search
 | v3.4.0 | [#269](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/269) | Fix ML index warning in YAML test parsing |
 | v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/271) | Use implicit wait_for instead of explicit refresh |
 | v3.4.0 | [#266](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/266) | Fix rescore-only feature SLTR logging |
+| v3.4.0 | [#256](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/256) | Allow warnings about directly accessing the .plugins-ml-config index |
+| v3.4.0 | [#259](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/259) | Test isolation improvements - narrow index cleanup scope |
 | v3.3.0 | [#226](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/226) | Fix bad inclusion of log4j in plugin JAR |
 | v3.3.0 | [#219](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/219) | Update System.env syntax for Gradle 9 compatibility |
 | v3.3.0 | [#228](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/228) | Add code coverage report generation |
@@ -174,7 +176,7 @@ POST my_index/_search
 
 ## Change History
 
-- **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix
+- **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix; Test infrastructure enhancements - narrowed index cleanup scope to LTR indexes only, improved test isolation for parallel execution
 - **v3.3.0** (2026-01-14): Build infrastructure fixes - log4j exclusion from JAR, Gradle 9 compatibility, hybrid float comparison for tests, code coverage reporting, spotless plugin upgrade
 - **v3.2.0** (2025-09-16): Added XGBoost missing values support for correct NaN handling; Build infrastructure upgrade (Gradle 8.14, JDK 24 support); fixed flaky test with ULP tolerance adjustment
 - **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test
