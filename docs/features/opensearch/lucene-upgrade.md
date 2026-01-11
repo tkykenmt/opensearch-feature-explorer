@@ -69,6 +69,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#20026](https://github.com/opensearch-project/OpenSearch/pull/20026) | Bump Apache Lucene from 10.3.1 to 10.3.2 |
 | v3.3.0 | [#19296](https://github.com/opensearch-project/OpenSearch/pull/19296) | Bump Apache Lucene from 10.2.2 to 10.3.0 |
 | v3.3.0 | [k-NN#2878](https://github.com/opensearch-project/k-NN/pull/2878) | Fix KNN build due to Lucene 10.3 upgrade |
 | v3.3.0 | [custom-codecs#277](https://github.com/opensearch-project/custom-codecs/pull/277) | Update for Lucene 10.3 |
@@ -82,6 +83,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 ## References
 
+- [Lucene 10.3.2 Release](https://github.com/apache/lucene/releases/tag/releases%2Flucene%2F10.3.2): Official Lucene 10.3.2 release
 - [Lucene 10.3.0 Changelog](https://lucene.apache.org/core/10_3_0/changes/Changes.html): Official Lucene 10.3.0 release notes
 - [Lucene 10.2.1 Changelog](https://lucene.apache.org/core/10_2_1/changes/Changes.html): Official Lucene 10.2.1 release notes
 - [Lucene 10.2.0 Changelog](https://lucene.apache.org/core/10_2_0/changes/Changes.html): Official Lucene 10.2.0 release notes
@@ -93,6 +95,7 @@ GET /_nodes?filter_path=nodes.*.version
 
 ## Change History
 
+- **v3.4.0**: Upgrade to Apache Lucene 10.3.2. Bug fix release addressing potential EOF exception in MaxScoreBulkScorer during optimized filter iterations (GITHUB#15380).
 - **v3.3.0**: Upgrade to Apache Lucene 10.3.0. New KNN1030Codec for k-NN plugin, Lucene103 codecs for custom-codecs plugin. API changes include new `AcceptDocs` interface replacing `Bits` in vector search, and `IOContext` hints for optimized file access.
 - **v3.3.0**: Migrate deprecated `Operations#union(Automaton, Automaton)` usages to `Operations#union(Collection<Automaton>)` in AutomatonQueries, XContentMapValues, and SystemIndices classes.
 - **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager). Plugin updates: neural-search hybrid query refactoring, learning-to-rank RankerQuery fix.
