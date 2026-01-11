@@ -14,6 +14,7 @@
 ## opensearch
 
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
+- [Security Manager Replacement (Java Agent)](features/opensearch/security-manager-replacement-java-agent.md)
 - [Bulk API Changes](features/opensearch/bulk-api-changes.md)
 - [DocValues Optimization](features/opensearch/docvalues-optimization.md)
 - [Concurrent Segment Search Auto Mode Default](features/opensearch/concurrent-segment-search.md)

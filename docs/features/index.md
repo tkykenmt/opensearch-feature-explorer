@@ -168,6 +168,7 @@
 - [Search Tie-breaking](opensearch/search-tie-breaking.md)
 - [Secure Aux Transport Settings](opensearch/secure-aux-transport-settings.md)
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
+- [Security Manager Replacement](opensearch/security-manager-replacement.md)
 - [Segment Replication](opensearch/segment-replication.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Semantic Version Field Type](opensearch/semantic-version-field-type.md)
