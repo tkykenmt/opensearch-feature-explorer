@@ -148,6 +148,7 @@
 
 ### Multi-Plugin
 
+- [Gradle 9 Compatibility](features/multi-plugin/gradle-9-compatibility.md)
 - [Version Increment](features/multi-plugin/version-increment.md)
 
 ### User Behavior Insights
