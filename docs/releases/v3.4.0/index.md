@@ -93,3 +93,7 @@
 ### Search Relevance
 
 - [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
+
+### Multi-Repository
+
+- [Version Increments](features/multi-repo/version-increments.md) - Version bump to 3.4.0 across index-management, notifications, and dashboards-notifications
