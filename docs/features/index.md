@@ -132,6 +132,7 @@
 - [Query Cache](opensearch/query-cache.md)
 - [Query Coordinator Context](opensearch/query-coordinator-context.md)
 - [Query Optimization](opensearch/query-optimization.md)
+- [Query Performance Optimizations](opensearch/query-performance-optimizations.md)
 - [Query Phase Plugin Extension](opensearch/query-phase-plugin-extension.md)
 - [Query Phase Result Consumer](opensearch/query-phase-result-consumer.md)
 - [Query Rewriting](opensearch/query-rewriting.md)
