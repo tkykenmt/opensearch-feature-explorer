@@ -127,6 +127,7 @@ The following plugins support multi-tenancy with remote metadata storage:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291) | Fix error when updating model status |
 | v3.3.0 | [#234](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/234) | Add SeqNo and PrimaryTerm support to Put and Delete requests |
 | v3.3.0 | [#244](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/244) | Add RefreshPolicy and timeout support to Put, Update, Delete, and Bulk requests |
 | v3.3.0 | [#236](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/236) | Throw exception on empty string for put request ID |
@@ -159,6 +160,7 @@ The following plugins support multi-tenancy with remote metadata storage:
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Fix error when updating global model status in DynamoDB backend - added `isGlobalResource` check to properly handle tenant ID for global resources (PR #291)
 - **v3.3.0** (2025-09-22): Added SeqNo/PrimaryTerm support for Put and Delete requests, RefreshPolicy and timeout configuration for write operations, empty string ID validation fix, and ThreadContextAccess API compatibility fixes (PRs #234, #244, #236, #250, #254)
 - **v3.0.0** (2025-05-06): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
 - **v3.0.0** (2025-05-06): Added developer guide with migration instructions (PR #124)
