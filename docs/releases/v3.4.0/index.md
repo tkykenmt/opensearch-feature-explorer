@@ -60,6 +60,10 @@
 
 ## Bug Fixes
 
+### Alerting
+
+- [Alerting Build](features/alerting/alerting-build.md) - Fix build script to only publish alerting plugin zip, excluding sample remote monitor plugin
+
 ### OpenSearch
 
 - [Java Agent](features/opensearch/java-agent.md) - Fix JRT protocol URL filtering to allow MCP server connections
