@@ -126,6 +126,7 @@ POST _bulk
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#20132](https://github.com/opensearch-project/OpenSearch/pull/20132) | Fix `indices` property initialization during deserialization |
 | v3.0.0 | [#17801](https://github.com/opensearch-project/OpenSearch/pull/17801) | Remove deprecated `batch_size` parameter |
 | v2.9.0 | [#8039](https://github.com/opensearch-project/OpenSearch/pull/8039) | Enforce 512 byte document ID limit |
 | v2.14.0 | [#12457](https://github.com/opensearch-project/OpenSearch/pull/12457) | Add batch processing for ingest processors |
@@ -138,6 +139,7 @@ POST _bulk
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Fixed `indices` property not being initialized during deserialization
 - **v3.0.0** (2025-05-13): Removed deprecated `batch_size` parameter; batch processing is now automatic
 - **v2.14.0** (2024-04-30): Added `batch_size` parameter for ingest pipeline batch processing (deprecated)
 - **v2.9.0** (2023-07-18): Enforced 512 byte document ID limit in bulk updates

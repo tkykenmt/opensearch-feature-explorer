@@ -27,6 +27,10 @@
 
 ## Bug Fixes
 
+### OpenSearch
+
+- [Bulk Request Bugfixes](features/opensearch/bulk-request-bugfixes.md) - Fix indices property initialization during BulkRequest deserialization
+
 ### OpenSearch Dashboards
 
 - [Dashboards Console](features/opensearch-dashboards/dashboards-console.md) - Fix for console_polling setting update
