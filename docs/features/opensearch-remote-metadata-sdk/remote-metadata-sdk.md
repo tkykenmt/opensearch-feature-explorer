@@ -127,6 +127,11 @@ The following plugins support multi-tenancy with remote metadata storage:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#234](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/234) | Add SeqNo and PrimaryTerm support to Put and Delete requests |
+| v3.3.0 | [#244](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/244) | Add RefreshPolicy and timeout support to Put, Update, Delete, and Bulk requests |
+| v3.3.0 | [#236](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/236) | Throw exception on empty string for put request ID |
+| v3.3.0 | [#250](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/250) | Update argument type for ThreadContextAccess:doPrivileged |
+| v3.3.0 | [#254](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/254) | Use AccessController instead of ThreadContextAccess |
 | v3.0.0 | [#124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124) | Add a developer guide |
 | v3.0.0 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update |
 | v3.0.0 | [#121](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/121) | Use SdkClientDelegate's classloader for ServiceLoader |
@@ -147,9 +152,13 @@ The following plugins support multi-tenancy with remote metadata storage:
 - [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() eventually consistent bug
 - [Issue #132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132): Aggregation API failure bug
 - [Issue #154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154): DDBClient validation bug
+- [Issue #178](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/178): RefreshPolicy support request
+- [Issue #191](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/191): Empty string ID validation
+- [Issue #233](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/233): SeqNo/PrimaryTerm support request
 - [Issue #1082](https://github.com/opensearch-project/flow-framework/issues/1082): Version conflict bug in flow-framework
 
 ## Change History
 
+- **v3.3.0** (2025-09-22): Added SeqNo/PrimaryTerm support for Put and Delete requests, RefreshPolicy and timeout configuration for write operations, empty string ID validation fix, and ThreadContextAccess API compatibility fixes (PRs #234, #244, #236, #250, #254)
 - **v3.0.0** (2025-05-06): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
 - **v3.0.0** (2025-05-06): Added developer guide with migration instructions (PR #124)
