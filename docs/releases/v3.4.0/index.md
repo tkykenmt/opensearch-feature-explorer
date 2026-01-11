@@ -83,3 +83,7 @@
 ### User Behavior Insights
 
 - [User Behavior Insights Build](features/user-behavior-insights/user-behavior-insights-build.md) - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
+
+### Search Relevance
+
+- [Search Relevance CI/Tests](features/search-relevance/ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups

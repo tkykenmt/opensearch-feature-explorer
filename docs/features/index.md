@@ -321,6 +321,7 @@
 ## search-relevance
 
 - [Search Relevance Workbench](search-relevance/search-relevance-workbench.md)
+- [Search Relevance CI/Tests](search-relevance/ci-tests.md)
 
 ## dashboards-flow-framework
 
