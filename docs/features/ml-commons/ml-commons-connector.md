@@ -55,6 +55,7 @@ flowchart TB
 | `RemoteConnectorExecutor` | Interface defining the execution flow for remote connector invocations |
 | `AwsConnectorExecutor` | Implementation for AWS services using SigV4 authentication |
 | `HttpConnector` | Base connector implementation for HTTP-based services |
+| `MLHttpClientFactory` | HTTP client factory for creating async HTTP clients (moved to `common` module in v3.3.0) |
 
 ### Configuration
 
@@ -127,15 +128,19 @@ When `skip_validating_missing_parameters` is `true`, the `${parameters.role}` pl
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#4121](https://github.com/opensearch-project/ml-commons/pull/4121) | Parameter Passing for Predict via Remote Connector |
+| v3.3.0 | [#4175](https://github.com/opensearch-project/ml-commons/pull/4175) | Move HttpClientFactory to common to expose to other components |
 | v2.17.0 | [#2830](https://github.com/opensearch-project/ml-commons/pull/2830) | Backport: Support skip_validating_missing_parameters in connector |
 | v2.17.0 | [#2812](https://github.com/opensearch-project/ml-commons/pull/2812) | Support skip_validating_missing_parameters in connector |
 
 ## References
 
+- [Issue #4105](https://github.com/opensearch-project/ml-commons/issues/4105): Feature request for parameter passing in predict API
 - [Issue #2712](https://github.com/opensearch-project/ml-commons/issues/2712): KnowledgeBaseTool parameter placeholder error
-- [Connector Blueprints Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/blueprints/): Official connector configuration guide
-- [Connectors Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/connectors/): Connector overview and examples
+- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/): Official connector configuration guide
+- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Connector overview and examples
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Added parameter passing support for predict operations via remote connectors; moved `MLHttpClientFactory` to common module for broader accessibility
 - **v2.17.0** (2024-09-17): Added `skip_validating_missing_parameters` parameter to allow bypassing payload validation for unfilled parameter placeholders
