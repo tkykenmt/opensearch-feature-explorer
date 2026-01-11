@@ -129,6 +129,7 @@
 
 - [k-NN Bug Fixes](features/k-nn/k-nn-bug-fixes.md)
 - [k-NN Engine Enhancements](features/k-nn/k-nn-engine-enhancements.md)
+- [Late Interaction](features/k-nn/late-interaction.md)
 
 ### Geospatial
 
