@@ -181,3 +181,7 @@
 ### Cross-Cluster Replication
 
 - [Cross-Cluster Replication Bugfixes](features/cross-cluster-replication/cross-cluster-replication-bugfixes.md) - Make pause replication API request body optional
+
+### Anomaly Detection
+
+- [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md) - Fix 3-AZ forecast results index creation, frequency-aware missing data detection, and data source error toast suppression
