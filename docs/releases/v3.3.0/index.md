@@ -149,6 +149,10 @@
 
 - [Learning to Rank Fixes](features/learning/learning-to-rank-fixes.md)
 
+### Notifications
+
+- [Notifications Plugin Fixes](features/notifications/notifications-plugin-fixes.md)
+
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
