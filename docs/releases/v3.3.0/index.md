@@ -109,6 +109,7 @@
 - [ML Commons Connector Enhancements](features/ml-commons/ml-commons-connector-enhancements.md)
 - [ML Commons Multi-tenancy](features/ml-commons/ml-commons-multi-tenancy.md)
 - [ML Commons Tools Enhancements](features/ml-commons/ml-commons-tools-enhancements.md)
+- [ML Inference Processors](features/ml-commons/ml-inference-processors.md)
 - [Metrics Framework Bug Fix](features/ml-commons/metrics-framework.md)
 - [Move Common String](features/ml-commons/move-common-string.md)
 - [Streaming APIs](features/ml-commons/streaming-apis.md)
