@@ -57,6 +57,10 @@
 
 - [Security Analytics Bugfixes](features/security-analytics-dashboards-plugin/security-analytics-bugfixes.md) - Fix correlation table rendering bug in correlations overview page
 
+### Alerting
+
+- [PPL Alerting](features/alerting/ppl-alerting.md) - V2 alerting API with PPL query support, stateless alerts with automatic expiration, per-result and result-set trigger modes
+
 ### OpenSearch Dashboards
 
 - [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-dev-tools.md) - PATCH method support for Dev Tools console

@@ -563,6 +563,7 @@
 ## alerting
 
 - [Alerting](alerting/alerting.md)
+- [PPL Alerting](alerting/ppl-alerting.md)
 
 ## alerting-dashboards-plugin
 
