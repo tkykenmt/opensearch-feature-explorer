@@ -76,6 +76,10 @@
 
 - [Alerting Build](features/alerting/alerting-build.md) - Fix build script to only publish alerting plugin zip, excluding sample remote monitor plugin
 
+### Alerting Dashboards Plugin
+
+- [Alerting Enhancements](features/alerting-dashboards-plugin/alerting-enhancements.md) - Keyword filter support for bucket-level monitor triggers and MDS client fix for OpenSearch API calls
+
 ### OpenSearch
 
 - [Java Agent](features/opensearch/java-agent.md) - Fix JRT protocol URL filtering to allow MCP server connections

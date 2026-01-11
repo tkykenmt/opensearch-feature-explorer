@@ -566,6 +566,7 @@
 
 ## alerting-dashboards-plugin
 
+- [Alerting Dashboards Plugin](alerting-dashboards-plugin/alerting-dashboards.md)
 - [Alerting Summary & Insights](alerting-dashboards-plugin/alerting-summary-insights.md)
 
 ## query-insights
