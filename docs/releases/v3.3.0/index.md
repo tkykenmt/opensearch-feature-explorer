@@ -137,6 +137,7 @@
 ### SQL
 
 - [PPL Rename Command - Wildcard Support](features/sql/ppl-rename-command.md)
+- [PPL Rex and Regex Commands](features/sql/ppl-rex-and-regex-commands.md)
 - [PPL Spath Command](features/sql/ppl-spath-command.md)
 - [SQL/PPL Bug Fixes](features/sql/sql-ppl-bug-fixes.md)
 
