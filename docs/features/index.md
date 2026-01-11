@@ -367,6 +367,7 @@
 ## ml-commons
 
 - [Agent Framework](ml-commons/ml-commons-agent-framework.md)
+- [Agentic Memory](ml-commons/agentic-memory.md)
 - [Batch Ingestion](ml-commons/batch-ingestion.md)
 - [Index Insight](ml-commons/index-insight.md)
 - [Metrics Framework](ml-commons/metrics-framework.md)
