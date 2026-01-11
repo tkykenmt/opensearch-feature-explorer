@@ -102,6 +102,7 @@
 
 ### ML Commons
 
+- [Global Resource Support](features/ml-commons/global-resource-support.md)
 - [Index Insight](features/ml-commons/index-insight.md)
 - [MCP Connector - Streamable HTTP Support](features/ml-commons/mcp-connector.md)
 - [ML Commons Agent Enhancements](features/ml-commons/ml-commons-agent-enhancements.md)
