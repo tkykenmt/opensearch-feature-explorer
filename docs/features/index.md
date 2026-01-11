@@ -323,6 +323,7 @@
 
 ## search-relevance
 
+- [Scheduled Experiments](search-relevance/scheduled-experiments.md)
 - [Search Relevance Workbench](search-relevance/search-relevance-workbench.md)
 - [Search Relevance CI/Tests](search-relevance/ci-tests.md)
 - [Security Integration Test Control](search-relevance/security-integ-test-control.md)
