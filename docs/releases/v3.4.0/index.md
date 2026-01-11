@@ -17,6 +17,10 @@
 - [ActionPlugin Enhancements](features/opensearch/actionplugin-enhancements.md) - Pass REST header registry to getRestHandlerWrapper for efficient header access
 - [WildcardFieldMapper](features/opensearch/wildcardfieldmapper.md) - Change doc_values default to true for nested query support
 
+### Security
+
+- [Security AccessController Migration](features/security/security-accesscontroller-migration.md) - Migrate from deprecated java.security.AccessController to org.opensearch.secure_sm.AccessController
+
 ### OpenSearch Dashboards
 
 - [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-dev-tools.md) - PATCH method support for Dev Tools console
