@@ -104,6 +104,10 @@
 - [SQL CI/Tests](features/sql/sql-ci-tests.md) - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
 - [SQL Documentation](features/sql/sql-documentation.md) - PPL command documentation standardization, typo fixes, enhanced examples, and function documentation improvements
 
+### Query Insights
+
+- [Query Insights CI/Tests](features/query-insights/ci-tests.md) - Multi-node integration tests, health stats REST API tests, and flaky test fixes
+
 ### k-NN
 
 - [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
