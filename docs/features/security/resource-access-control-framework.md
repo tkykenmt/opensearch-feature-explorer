@@ -94,7 +94,7 @@ sequenceDiagram
 |-----------|-------------|
 | `opensearch-security-spi` | Service Provider Interface package for plugins to implement resource sharing |
 | `ResourceSharingExtension` | Interface that plugins implement to declare themselves as resource plugins |
-| `ResourceProvider` | Record containing resource class name and index name |
+| `ResourceProvider` | Interface (v3.4.0+) containing resource type, index name, and optional type field |
 | `ResourceSharingClient` | Client interface for plugins to perform access control operations |
 | `ResourceAccessEvaluator` | Evaluates access permissions automatically via Security Filter |
 | `ResourceSharingIndexHandler` | Manages CRUD operations on per-resource sharing indices |
@@ -127,11 +127,12 @@ PUT _cluster/settings
 
 Each resource index has a backing sharing index with naming convention: `{resourceIndex}-sharing`
 
-**Sharing Document Structure:**
+**Sharing Document Structure (v3.4.0+):**
 
 ```json
 {
   "resource_id": "resource-123",
+  "resource_type": "sample-resource",
   "created_by": {
     "user": "owner_username"
   },
@@ -341,6 +342,14 @@ The Security Dashboards Plugin provides a UI for managing resource sharing.
 
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
+| v3.4.0 | [#5713](https://github.com/opensearch-project/security/pull/5713) | security | Allow multiple sharable resource types in single resource index |
+| v3.4.0 | [#5772](https://github.com/opensearch-project/security/pull/5772) | security | Keep track of resource_type on resource sharing document |
+| v3.4.0 | [#5789](https://github.com/opensearch-project/security/pull/5789) | security | Requires default_owner for resource/migrate API |
+| v3.4.0 | [#5717](https://github.com/opensearch-project/security/pull/5717) | security | Make migrate API require default access level |
+| v3.4.0 | [#5718](https://github.com/opensearch-project/security/pull/5718) | security | Removes share and revoke Java APIs |
+| v3.4.0 | [#5755](https://github.com/opensearch-project/security/pull/5755) | security | Refactor ResourceProvider to interface and ResourceSharing refactors |
+| v3.4.0 | [#5799](https://github.com/opensearch-project/security/pull/5799) | security | Adds POST support for update sharing info API |
+| v3.4.0 | [#2338](https://github.com/opensearch-project/security-dashboards-plugin/pull/2338) | security-dashboards-plugin | Changes PATCH update sharing API to POST |
 | v3.3.0 | [#3715](https://github.com/opensearch-project/ml-commons/pull/3715) | ml-commons | Onboards ML-Model-Group to centralized resource access control |
 | v3.3.0 | [#2304](https://github.com/opensearch-project/security-dashboards-plugin/pull/2304) | security-dashboards-plugin | Adds Resource Access Management Dashboard |
 | v3.3.0 | [#5600](https://github.com/opensearch-project/security/pull/5600) | security | DLS-based automatic filtering using `all_shared_principals` |
@@ -374,6 +383,7 @@ The Security Dashboards Plugin provides a UI for managing resource sharing.
 
 ## Change History
 
+- **v3.4.0** (2026-01): Multiple resource types per index support, resource_type tracking on sharing documents, ResourceProvider refactored to interface, ResourceSharing Builder pattern, POST support for update sharing API, removed Java share/revoke APIs in favor of REST, migration API requires default_owner parameter
 - **v3.3.0** (2026-01): ML-Commons model group onboarding, Resource Access Management Dashboard UI, DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
 - **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
 - **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation
