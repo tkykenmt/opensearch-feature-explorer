@@ -119,6 +119,7 @@
 ### k-NN
 
 - [k-NN Bug Fixes](features/k-nn/k-nn-bug-fixes.md)
+- [k-NN Engine Enhancements](features/k-nn/k-nn-engine-enhancements.md)
 
 ### Geospatial
 
