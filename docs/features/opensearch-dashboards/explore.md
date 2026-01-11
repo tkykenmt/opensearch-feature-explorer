@@ -27,6 +27,8 @@ Key benefits include:
 - Facet filtering for quick data narrowing with default observability fields (v3.3.0)
 - Explore experience modal for first-time user onboarding (v3.3.0)
 - Query panel actions registry for plugin extensibility (v3.3.0)
+- Flyout action support in query panel actions registry (v3.4.0)
+- `queryInEditor` dependency for accessing current editor content (v3.4.0)
 - Mouse hover states for line chart interactivity (v3.3.0)
 - Intelligent date format inference for axis labels (v3.3.0)
 - Auto-enable related UI settings when Explore is activated (v3.3.0)
@@ -203,6 +205,9 @@ flowchart TB
 | `FacetFilter` | UI component for facet-based filtering with default observability fields (v3.3.0) |
 | `ExploreExperienceModal` | Welcome modal for first-time users with saved object tracking (v3.3.0) |
 | `queryPanelActionsRegistry` | Registry service for external plugin actions (v3.3.0) |
+| `FlyoutActionConfig` | Configuration interface for flyout-type actions (v3.4.0) |
+| `FlyoutComponentProps` | Props interface passed to flyout React components (v3.4.0) |
+| `useQueryPanelActionDependencies` | Hook to gather all dependencies for query panel actions (v3.4.0) |
 | `buildTemporalAxisFormatting` | Utility for inferring date formats based on data granularity (v3.3.0) |
 | `TabContentErrorGuard` | Error boundary for tab-specific query failures (v3.3.0) |
 
@@ -275,6 +280,7 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849) | Enhance query action service to allow flyout registration |
 | v3.3.0 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter |
 | v3.3.0 | [#10412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10412) | Introduce tab content error guard |
 | v3.3.0 | [#10425](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10425) | Infer axis date format |
@@ -378,5 +384,6 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Enhanced Query Panel Actions Registry with flyout action support, enabling external plugins to render inline flyout panels from the actions dropdown. Added `queryInEditor` dependency for accessing current editor content (pre-transformed with source clause). Added comprehensive Explore plugin components architecture documentation.
 - **v3.3.0** (2026-01-14): Added facet filtering with default observability fields (serviceName, http status code, status.code), explore experience modal for first-time user onboarding with saved object tracking, query panel actions registry for plugin extensibility, mouse hover states for line chart interactivity, intelligent date format inference for axis labels based on data granularity, auto-enable related UI settings when Explore is activated (theme v9, new home page, query enhancements), tab content error guard for isolated error handling, query panel display without datasets, link to detail page in expanded row, Patterns tab flyout with detailed pattern inspection, "search with pattern" functionality for log filtering, events table with pagination, Calcite query engine compatibility, "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page, metric visualization with sparkline support, histogram visualization (numerical, time-series, categorical), table visualization enhancements (column alignment, Excel-like filters, statistical footers, cell customization), dark/light theme support with new color palettes, hover highlighting for bar/pie charts, Gantt chart improvements (service name display, span selection, error indicators), metric style updates with percentage change option. Bug fixes: ScopedHistory navigation error, Refresh button query execution, active tab preservation on save/load, removed Explore from Patterns tab
 - **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation
