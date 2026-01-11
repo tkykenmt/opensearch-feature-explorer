@@ -146,16 +146,19 @@ CityResponse response = AccessController.doPrivileged(() ->
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19683](https://github.com/opensearch-project/OpenSearch/pull/19683) | Allow JRT protocol URLs in protection domain extraction |
 | v3.2.0 | [#18346](https://github.com/opensearch-project/OpenSearch/pull/18346) | Create equivalents of JSM's AccessController in the java agent |
 
 ## References
 
 - [Issue #18339](https://github.com/opensearch-project/OpenSearch/issues/18339): Feature request for AccessController replacement
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): Original JSM replacement discussion
+- [Issue #4209](https://github.com/opensearch-project/ml-commons/issues/4209): Bug report - Failed to get tools from external MCP server
 - [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
 - [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
 - [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Detailed explanation of JSM replacement strategy
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Fix JRT protocol URL filtering in protection domain extraction to allow MCP server connections
 - **v3.2.0** (2026-01-11): Initial implementation with `doPrivileged` and `doPrivilegedChecked` methods
