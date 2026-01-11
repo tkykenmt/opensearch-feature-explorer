@@ -106,6 +106,7 @@
 
 ### Dashboards Flow Framework
 
+- [Dashboards Agent & Assistant](features/dashboards-flow-framework/dashboards-agent-assistant.md) - Agent summary visualization, memory integration, simplified configuration, automatic response filters
 - [Dashboards Flow Framework Bugfixes](features/dashboards-flow-framework/dashboards-flow-framework-bugfixes.md) - Gracefully handle workflows with no provisioned resources
 
 ### Dashboards Observability

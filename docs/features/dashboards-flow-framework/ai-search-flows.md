@@ -162,17 +162,63 @@ workflows:
 | Custom String | Input | Static string value |
 | No Transformation | Output | Preserves model output as-is |
 
+### Agent Configuration (v3.4.0+)
+
+The plugin now includes enhanced agent configuration capabilities:
+
+#### Agent Summary Visualization
+
+A "View agent summary" button displays agent execution steps in a modal, showing:
+- Available tools
+- Tool execution sequence
+- Validation results
+
+#### Memory Integration
+
+Support for conversational search with memory persistence:
+
+| Feature | Description |
+|---------|-------------|
+| Continue conversation | Injects `memory_id` from previous response |
+| Remove conversation | Clears `memory_id` for fresh context |
+| Auto-clear | Memory cleared when switching to flow agents |
+
+#### Simplified Agent Configuration
+
+| Change | Description |
+|--------|-------------|
+| Unified model field | Single "model" field replaces separate LLM configuration |
+| Auto-inferred LLM interface | Automatically detects interface from connector URL |
+| Hidden advanced settings | LLM interface moved under "Advanced settings" |
+
+#### Automatic Response Filters
+
+For flow agents, response filters are auto-configured for supported providers:
+- OpenAI: Auto-configured
+- Bedrock Claude: Auto-configured
+- Unknown/Custom: Manual configuration required
+
 ## Limitations
 
 - Models must have defined interfaces for simplified ML processor forms
 - Datasource version required for simulate API calls
 - Plugin URL unchanged from original "flow-framework" for compatibility
 - Complex nested data may require JSONPath expressions
+- Memory integration only works with conversational agents, not flow agents
+- Automatic LLM interface inference may not work for custom connectors
+- Response filter auto-configuration limited to OpenAI and Bedrock Claude providers
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#626](https://github.com/opensearch-project/dashboards-assistant/pull/626) | Disable dashboards assistant chatbot if investigation feature flag enabled |
+| v3.4.0 | [#801](https://github.com/opensearch-project/dashboards-flow-framework/pull/801) | Add agent summary |
+| v3.4.0 | [#796](https://github.com/opensearch-project/dashboards-flow-framework/pull/796) | Clean up / hide complex fields on agent configuration |
+| v3.4.0 | [#803](https://github.com/opensearch-project/dashboards-flow-framework/pull/803) | Clean up agent summary formatting |
+| v3.4.0 | [#809](https://github.com/opensearch-project/dashboards-flow-framework/pull/809) | Integrate with memory |
+| v3.4.0 | [#817](https://github.com/opensearch-project/dashboards-flow-framework/pull/817) | Automatically add response filters to flow agents when possible |
+| v3.4.0 | [#820](https://github.com/opensearch-project/dashboards-flow-framework/pull/820) | Remove default empty tool field values; fix EuiSelect values in Firefox |
 | v3.1.0 | [#722](https://github.com/opensearch-project/dashboards-flow-framework/pull/722) | Integrate preview panel into inspector panel |
 | v3.1.0 | [#737](https://github.com/opensearch-project/dashboards-flow-framework/pull/737) | Refactor form navigation to left panel |
 | v3.1.0 | [#742](https://github.com/opensearch-project/dashboards-flow-framework/pull/742) | Added Semantic Search using Sparse Encoders template |
@@ -197,5 +243,6 @@ workflows:
 
 ## Change History
 
+- **v3.4.0** (2026-01-14): Added agent summary visualization, memory integration for conversational search, simplified agent configuration with auto-inferred LLM interface, automatic response filters for flow agents, Firefox EuiSelect fixes
 - **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
 - **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering
