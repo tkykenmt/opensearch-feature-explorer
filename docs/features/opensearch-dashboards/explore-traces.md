@@ -97,7 +97,8 @@ flowchart TB
 | Tree View | Hierarchical span table with parent-child relationships |
 | Timeline Waterfall | Inline waterfall bars showing span timing relative to trace |
 | Timeline Ruler | Ruler with millisecond measurements for visual comparison |
-| Logs Tab | Correlated logs view with redirect to Discover |
+| Logs Tab | Correlated logs view with accordion-based dataset grouping and expandable rows |
+| DatasetLogsTable | Table component with expandable rows and code block message display |
 | Span Flyout | Detailed span information panel |
 | Correlation Saved Object | Stores trace-to-log correlation configuration |
 | Tab Registry | Flavor-based tab registration system |
@@ -109,6 +110,7 @@ flowchart TB
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `explore:defaultTraceColumns` | Default columns for Explore traces tab | Experimental |
+| `LOGS_DATA` | Maximum number of logs displayed per dataset in Logs tab | 10 |
 | Correlation Type | `APM-Correlation` for trace-log relationships | N/A |
 | Log Service Name Field | Field mapping for service name in logs | `service.name` |
 | Log Span ID Field | Field mapping for span ID in logs | `span_id` |
@@ -218,6 +220,8 @@ POST .kibana/_doc/correlations:trace-logs-1
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Redesigned logs tab with accordion and expandable rows |
+| v3.4.0 | [#10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716) | Added support for multiple log datasets with accordion display |
 | v3.4.0 | [#10745](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10745) | Add span status filters to trace details |
 | v3.4.0 | [#10630](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10630) | Fix trace details page header to always show root span |
 | v3.4.0 | [#10651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10651) | Traces code block scrollbar to scroll on edge |
@@ -239,5 +243,5 @@ POST .kibana/_doc/correlations:trace-logs-1
 
 ## Change History
 
-- **v3.4.0** (2026-03-18): Added span status filters (Error, OK, Unset), improved page header to show root span service/operation, copyable trace ID badge, scrollbar fixes, removed duplicate service.name column
+- **v3.4.0** (2026-03-18): Redesigned Logs tab with expandable rows and code block message display, accordion-based dataset grouping, support for multiple log datasets, added span status filters (Error, OK, Unset), improved page header to show root span service/operation, copyable trace ID badge, scrollbar fixes, removed duplicate service.name column
 - **v3.3.0** (2026-03-18): Initial implementation with trace charts, log correlation, timeline waterfall visualization, external datasource support, configurable default columns, and OTEL schema support
