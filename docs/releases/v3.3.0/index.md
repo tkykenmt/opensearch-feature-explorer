@@ -106,6 +106,10 @@
 
 - [Query Plugin Dependencies](features/query-insights/query-plugin-dependencies.md)
 
+### Reporting
+
+- [Reporting CVE Fixes](features/reporting/reporting-cve-fixes.md)
+
 ### CI/CD
 
 - [CI/CD Workflow Updates](features/ci/cd-workflow-updates.md)
