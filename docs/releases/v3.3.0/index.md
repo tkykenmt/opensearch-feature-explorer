@@ -124,6 +124,7 @@
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
 - [SEISMIC Sparse ANN](features/neural-search/seismic-sparse-ann.md)
 - [Semantic Field MultiFields Fix](features/neural-search/semantic-field-multifields-fix.md)
+- [Semantic Highlighting Batch Inference](features/neural-search/semantic-highlighting.md)
 
 ### k-NN
 

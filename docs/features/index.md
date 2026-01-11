@@ -14,6 +14,7 @@
 - [Neural Sparse Search](neural-search/neural-sparse-search.md)
 - [SEISMIC Sparse ANN](neural-search/seismic-sparse-ann.md)
 - [Semantic Field](neural-search/semantic-field.md)
+- [Semantic Highlighting](neural-search/semantic-highlighting.md)
 - [Text Chunking](neural-search/text-chunking.md)
 
 ## opensearch
