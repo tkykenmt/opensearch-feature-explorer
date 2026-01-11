@@ -101,6 +101,7 @@
 
 ### Dashboards Assistant
 
+- [Discover Summary](features/dashboards-assistant/discover-summary.md) - Log pattern detection for Discover Summary with specialized agent selection
 - [Dashboards Assistant Bugfixes](features/dashboards-assistant/dashboards-assistant-bugfixes.md) - Text2Viz header fix and capability services access settings fix
 
 ### Dashboards Flow Framework
