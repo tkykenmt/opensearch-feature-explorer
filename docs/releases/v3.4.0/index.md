@@ -4,6 +4,7 @@
 
 ### OpenSearch Dashboards
 
+- [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-dev-tools.md) - PATCH method support for Dev Tools console
 - [Dashboards Explore](features/opensearch-dashboards/dashboards-explore.md) - Histogram breakdowns, Field Statistics tab, trace flyout, correlations, cancel query, and by-value embeddables
 - [Dashboards Global Search](features/opensearch-dashboards/dashboards-global-search.md) - Assets search and enhanced command system for global search
 - [Dashboards CSP](features/opensearch-dashboards/dashboards-csp.md) - Dynamic configuration support for CSP report-only mode
