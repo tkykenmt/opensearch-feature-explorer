@@ -102,6 +102,7 @@
 
 ### Neural Search
 
+- [Neural Search Bug Fixes](features/neural-search/neural-search-bug-fixes.md)
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
 
 ### Geospatial

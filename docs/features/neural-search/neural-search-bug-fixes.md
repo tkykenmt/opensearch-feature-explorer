@@ -79,6 +79,19 @@ graph TB
 | Stack overflow prevention | v3.1.0 | Uses iterative approach for semantic field collection |
 | Score handling | v3.1.0 | Returns null score for single shard with non-score sorting |
 
+#### Data Processing
+
+| Fix | Version | Description |
+|-----|---------|-------------|
+| Nested list order | v3.3.0 | Fixes reversed order of values in nested lists with embedding processor |
+
+#### Test Infrastructure
+
+| Fix | Version | Description |
+|-----|---------|-------------|
+| Mock inline support | v3.3.0 | Enables mocking of final classes and static functions |
+| BWC disk cleanup | v3.3.0 | Adds CI action to clean up disk space for BWC tests |
+
 ### Configuration
 
 No new configuration options were added. These are internal bug fixes.
@@ -144,6 +157,9 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix reversed order of values in nested list with embedding processor |
+| v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Enable mocking of final classes and static functions |
+| v3.3.0 | [#1584](https://github.com/opensearch-project/neural-search/pull/1584) | Add CI action to clean up disk and apply to BWC |
 | v3.1.0 | [#1277](https://github.com/opensearch-project/neural-search/pull/1277) | Fix score value as null for single shard sorting |
 | v3.1.0 | [#1291](https://github.com/opensearch-project/neural-search/pull/1291) | Return bad request for invalid stat parameters |
 | v3.1.0 | [#1305](https://github.com/opensearch-project/neural-search/pull/1305) | Add validation for nested hybrid query |
@@ -154,6 +170,8 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## References
 
+- [Issue #1569](https://github.com/opensearch-project/neural-search/issues/1569): ProcessorDocumentUtils.handleList messes up the order of nested lists
+- [Issue #1582](https://github.com/opensearch-project/neural-search/issues/1582): Normalization Processor's BWC tests are failing
 - [Issue #1108](https://github.com/opensearch-project/neural-search/issues/1108): Nested hybrid query bug
 - [Issue #1274](https://github.com/opensearch-project/neural-search/issues/1274): Hybrid search sort score corruption
 - [Issue #1368](https://github.com/opensearch-project/neural-search/issues/1368): Stats BWC test failure
@@ -164,4 +182,5 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Added 3 fixes for nested list ordering, unit test mocking support, and CI disk cleanup
 - **v3.1.0** (2026-01-10): Added 7 bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability improvements
