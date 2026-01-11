@@ -38,6 +38,15 @@ Key benefits include:
 - Numerical field support for color mapping (v3.4.0)
 - Customized column ordering for table visualizations (v3.4.0)
 - Improved gauge and bar gauge threshold logic with negative value support (v3.4.0)
+- Histogram breakdowns for subdividing time-series by categorical fields (v3.4.0)
+- Field Statistics tab for data profiling without writing queries (v3.4.0)
+- Trace flyout panel replacing expandable rows (v3.4.0)
+- Hierarchy timeline table with waterfall bars for trace analysis (v3.4.0)
+- Correlations tab for linking trace and logs datasets (v3.4.0)
+- Cancel query feature with timeout-based UI (v3.4.0)
+- By-value explore embeddables without stored saved objects (v3.4.0)
+- State timeline visualization (v3.4.0)
+- Time zoom interaction for explore visualizations (v3.4.0)
 
 ## Details
 
@@ -217,6 +226,15 @@ flowchart TB
 | `useQueryPanelActionDependencies` | Hook to gather all dependencies for query panel actions (v3.4.0) |
 | `buildTemporalAxisFormatting` | Utility for inferring date formats based on data granularity (v3.3.0) |
 | `TabContentErrorGuard` | Error boundary for tab-specific query failures (v3.3.0) |
+| `BreakdownFieldSelector` | UI for selecting breakdown field in histogram header (v3.4.0) |
+| `FieldStatsContainer` | Data fetching and state management for field statistics (v3.4.0) |
+| `FieldStatsTable` | Sortable table with expandable rows for field statistics (v3.4.0) |
+| `TraceFlyout` | Flyout panel for trace details (v3.4.0) |
+| `SpanHierarchyTable` | Hierarchy view with timeline waterfall bars (v3.4.0) |
+| `SpanListTable` | Flat list view with filtering and sorting (v3.4.0) |
+| `CorrelationsTab` | UI for linking trace and logs datasets (v3.4.0) |
+| `QueryCancelButton` | Cancel button for running queries (v3.4.0) |
+| `StateTimeline` | State timeline visualization with value mapping (v3.4.0) |
 
 ### Configuration
 
@@ -295,8 +313,29 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.4.0 | [#10894](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10894) | Add tests for gauge and bar gauge |
 | v3.4.0 | [#10896](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10896) | Add tests for table visualization |
 | v3.4.0 | [#10898](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10898) | Add customized column order toggle for table visualization |
+| v3.4.0 | [#10558](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10558) | Add timefield and currentTime to prompt |
+| v3.4.0 | [#10563](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10563) | Add state timeline visualization |
+| v3.4.0 | [#10606](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10606) | Add time zoom in interaction to explore vis |
+| v3.4.0 | [#10629](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10629) | Improve timeline loading state with spinner |
+| v3.4.0 | [#10655](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10655) | Implement trace flyout |
+| v3.4.0 | [#10657](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10657) | Add span kind column |
+| v3.4.0 | [#10663](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10663) | Discover Histogram Breakdowns |
+| v3.4.0 | [#10676](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10676) | Replace Timeline gantt chart with hierarchy timeline table |
+| v3.4.0 | [#10713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10713) | Show query panel in traces and metrics without datasets |
+| v3.4.0 | [#10723](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10723) | Field Statistics Tab |
+| v3.4.0 | [#10727](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10727) | Add cancel query feature to discover |
+| v3.4.0 | [#10729](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10729) | Add correlations tab for trace and logs linking |
+| v3.4.0 | [#10764](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10764) | Histogram Breakdowns enable timechart for every dataset |
+| v3.4.0 | [#10799](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10799) | Experimental Explore feature flag |
+| v3.4.0 | [#10842](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10842) | Add resultsActionBar slot to explore plugin |
+| v3.4.0 | [#10927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10927) | Log action menu support for non-filterable time columns |
+| v3.4.0 | [#10970](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10970) | Support by-value explore embeddables |
+| v3.4.0 | [#10513](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10513) | Split Aggregations Query from Logs Query |
+| v3.4.0 | [#10574](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10574) | Fix field formatter not applied to explore query result |
+| v3.4.0 | [#10582](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10582) | Fix column focus issue |
+| v3.4.0 | [#10597](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10597) | Clear editor after dataset change |
+| v3.4.0 | [#10661](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10661) | Add backticks to explore's data source command |
 | v3.4.0 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue |
-| v3.4.0 | [#10657](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10657) | Fix tabs length and scroll persistence |
 | v3.3.0 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter |
 | v3.3.0 | [#10412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10412) | Introduce tab content error guard |
 | v3.3.0 | [#10425](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10425) | Infer axis date format |
@@ -400,6 +439,6 @@ source = opensearch_dashboards_sample_data_ecommerce
 
 ## Change History
 
-- **v3.4.0** (2026-01-14): Added bar gauge visualization type, customizable legend names, numerical field support for color mapping, customized column ordering for table visualizations with dashboard persistence, improved gauge and bar gauge threshold logic with negative value support and debounce. Enhanced Query Panel Actions Registry with flyout action support, enabling external plugins to render inline flyout panels from the actions dropdown. Added `queryInEditor` dependency for accessing current editor content (pre-transformed with source clause). Bug fixes: breadcrumb floating issue, tabs length and scroll persistence.
+- **v3.4.0** (2026-01-14): Added histogram breakdowns for subdividing time-series visualizations by categorical fields with PPL timechart integration, Field Statistics tab (experimental) for data profiling with type-specific statistics, trace flyout panel replacing expandable rows, hierarchy timeline table with waterfall bars replacing Gantt chart, correlations tab for linking trace and logs datasets, cancel query feature with timeout-based UI, by-value explore embeddables without stored saved objects, state timeline visualization with value mapping and color groups, time zoom interaction for explore visualizations, span kind column for enhanced trace information, query panel display in traces and metrics without datasets, results action bar slot for plugin extensibility, log action menu support for non-filterable time columns. Added bar gauge visualization type, customizable legend names, numerical field support for color mapping, customized column ordering for table visualizations with dashboard persistence, improved gauge and bar gauge threshold logic with negative value support and debounce. Enhanced Query Panel Actions Registry with flyout action support, enabling external plugins to render inline flyout panels from the actions dropdown. Added `queryInEditor` dependency for accessing current editor content (pre-transformed with source clause). Bug fixes: breadcrumb floating issue, tabs length and scroll persistence, field formatter not applied to explore query result, column focus issue, clear editor after dataset change, split aggregations query from logs query.
 - **v3.3.0** (2026-01-14): Added facet filtering with default observability fields (serviceName, http status code, status.code), explore experience modal for first-time user onboarding with saved object tracking, query panel actions registry for plugin extensibility, mouse hover states for line chart interactivity, intelligent date format inference for axis labels based on data granularity, auto-enable related UI settings when Explore is activated (theme v9, new home page, query enhancements), tab content error guard for isolated error handling, query panel display without datasets, link to detail page in expanded row, Patterns tab flyout with detailed pattern inspection, "search with pattern" functionality for log filtering, events table with pagination, Calcite query engine compatibility, "Show Raw Data" toggle for non-table visualizations, improved Patterns tab error handling with custom error page, metric visualization with sparkline support, histogram visualization (numerical, time-series, categorical), table visualization enhancements (column alignment, Excel-like filters, statistical footers, cell customization), dark/light theme support with new color palettes, hover highlighting for bar/pie charts, Gantt chart improvements (service name display, span selection, error indicators), metric style updates with percentage change option. Bug fixes: ScopedHistory navigation error, Refresh button query execution, active tab preservation on save/load, removed Explore from Patterns tab
 - **v3.2.0** (2026-01-10): Initial implementation with query panel, auto-visualization, multi-flavor support, dashboard embeddable, patterns tab, chart type switcher, Trace Details page with Gantt chart and service map visualization, PPL filter support, improved fields selector with result/schema grouping, query editor performance optimizations, bidirectional URL-Redux synchronization, global header controls, and in-editor PPL documentation
