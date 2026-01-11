@@ -104,6 +104,7 @@
 
 - [Neural Search Bug Fixes](features/neural-search/neural-search-bug-fixes.md)
 - [Neural Search Dependencies](features/neural-search/neural-search-dependencies.md)
+- [Semantic Field MultiFields Fix](features/neural-search/semantic-field-multifields-fix.md)
 
 ### Geospatial
 

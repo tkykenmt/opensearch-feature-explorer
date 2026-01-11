@@ -240,6 +240,7 @@ GET /my-nlp-index/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1572](https://github.com/opensearch-project/neural-search/pull/1572) | Fix not able to index the multiFields for the rawFieldType |
 | v3.2.0 | [#1420](https://github.com/opensearch-project/neural-search/pull/1420) | Support configuring the auto-generated knn_vector field through the semantic field |
 | v3.2.0 | [#1438](https://github.com/opensearch-project/neural-search/pull/1438) | Support configuring the ingest batch size for the semantic field |
 | v3.2.0 | [#1434](https://github.com/opensearch-project/neural-search/pull/1434) | Allow configuring prune strategies for sparse encoding in semantic fields |
@@ -259,6 +260,7 @@ GET /my-nlp-index/_search
 ## References
 
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
+- [Issue #1571](https://github.com/opensearch-project/neural-search/issues/1571): MultiFields doesn't work for semantic field type
 - [Documentation: Semantic Field Type](https://docs.opensearch.org/3.1/field-types/supported-field-types/semantic/)
 - [Documentation: Semantic Search](https://docs.opensearch.org/3.1/vector-search/ai-search/semantic-search/)
 - [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
@@ -268,6 +270,7 @@ GET /my-nlp-index/_search
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.3.0 | 2025-12 | Bug fix: MultiFields now properly indexed for semantic fields with supported raw field types |
 | v3.2.0 | 2025-09 | knn_vector field configuration, ingest batch size setting, sparse encoding prune strategies, chunking strategies configuration, embedding reuse option, remote dense model handling fix, neural sparse analyzer version fix |
 | v3.1.0 | 2025-06 | Semantic mapping transformer, ingest processor, query logic, chunking support, search analyzer support, stats tracking |
 | v3.0.0 | 2025-03 | Initial semantic field mapper implementation (feature-flagged) |
