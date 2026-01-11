@@ -312,6 +312,7 @@
 - [Flint Query Scheduler](sql/flint-query-scheduler.md)
 - [PPL Documentation](sql/ppl-documentation.md)
 - [PPL Rename Command](sql/ppl-rename-command.md)
+- [PPL Spath Command](sql/ppl-spath-command.md)
 - [Security Lake Data Source](sql/security-lake-data-source.md)
 - [SQL Error Handling](sql/sql-error-handling.md)
 - [SQL Pagination](sql/sql-pagination.md)
