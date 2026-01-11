@@ -101,6 +101,7 @@
 ### ML Commons
 
 - [ML Commons Bug Fixes](features/ml-commons/ml-commons-bug-fixes.md)
+- [ML Commons Multi-tenancy](features/ml-commons/ml-commons-multi-tenancy.md)
 - [ML Commons Tools Enhancements](features/ml-commons/ml-commons-tools-enhancements.md)
 - [Metrics Framework Bug Fix](features/ml-commons/metrics-framework.md)
 - [Move Common String](features/ml-commons/move-common-string.md)
