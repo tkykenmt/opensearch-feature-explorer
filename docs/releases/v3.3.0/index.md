@@ -205,3 +205,7 @@
 ### OpenSearch Remote Metadata SDK
 
 - [Remote Client Enhancements](features/opensearch-remote-metadata-sdk/remote-client-enhancements.md)
+
+### Skills
+
+- [Skills Tools](features/skills/skills-tools.md)
