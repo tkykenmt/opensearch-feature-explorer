@@ -496,6 +496,7 @@
 ## index-management
 
 - [Index Management](index-management/index-management.md)
+- [Snapshot Management](index-management/snapshot-management.md)
 
 ## index-management-dashboards
 

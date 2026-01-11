@@ -139,6 +139,7 @@
 ### Index Management
 
 - [Index Management Enhancements](features/index-management/index-management-enhancements.md)
+- [Snapshot Management](features/index-management/snapshot-management.md)
 
 ### Job Scheduler
 
