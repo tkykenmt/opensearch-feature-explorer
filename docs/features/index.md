@@ -185,6 +185,7 @@
 - [Chart & Visualization Fixes](opensearch-dashboards/chart-visualization-fixes.md)
 - [Code Quality & Testing](opensearch-dashboards/dashboards-code-quality-testing.md)
 - [Content Management](opensearch-dashboards/content-management.md)
+- [Content Security Policy (CSP)](opensearch-dashboards/dashboards-csp.md)
 - [Cross-Cluster Search](opensearch-dashboards/cross-cluster-search.md)
 - [Dashboards CI/CD & Documentation](opensearch-dashboards/dashboards-ci-cd-documentation.md)
 - [Dashboards Console](opensearch-dashboards/dashboards-console.md)
