@@ -145,6 +145,10 @@
 
 - [User Plugin Fixes](features/user-behavior-insights/user-plugin-fixes.md)
 
+### Learning to Rank
+
+- [Learning to Rank Fixes](features/learning/learning-to-rank-fixes.md)
+
 ### Dependencies
 
 - [Dependency Updates](features/dependency-updates.md)
