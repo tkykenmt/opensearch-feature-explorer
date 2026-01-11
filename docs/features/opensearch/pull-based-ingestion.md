@@ -92,17 +92,20 @@ flowchart TB
 
 ### Configuration
 
-| Setting | Description | Default |
-|---------|-------------|---------|
-| `ingestion_source.type` | Streaming source type (`kafka` or `kinesis`) | Required |
-| `ingestion_source.pointer.init.reset` | Initial position (`earliest`, `latest`, `reset_by_offset`, `reset_by_timestamp`) | `earliest` |
-| `ingestion_source.pointer.init.reset.value` | Value for offset/timestamp reset | Required for reset modes |
-| `ingestion_source.error_strategy` | Error handling (`DROP` or `BLOCK`) | `DROP` |
-| `ingestion_source.max_batch_size` | Maximum records per poll | 1000 |
-| `ingestion_source.poll.timeout` | Poll timeout in milliseconds | 1000 |
-| `ingestion_source.num_processor_threads` | Number of processor threads | 1 |
-| `ingestion_source.internal_queue_size` | Internal queue size between poller and processor | 100 |
-| `ingestion_source.param.*` | Source-specific parameters (topic, bootstrap_servers, etc.) | Varies |
+| Setting | Description | Default | Dynamic |
+|---------|-------------|---------|---------|
+| `ingestion_source.type` | Streaming source type (`kafka` or `kinesis`) | Required | No |
+| `ingestion_source.pointer.init.reset` | Initial position (`earliest`, `latest`, `reset_by_offset`, `reset_by_timestamp`) | `earliest` | No |
+| `ingestion_source.pointer.init.reset.value` | Value for offset/timestamp reset | Required for reset modes | No |
+| `ingestion_source.error_strategy` | Error handling (`DROP` or `BLOCK`) | `DROP` | No |
+| `ingestion_source.max_batch_size` | Maximum records per poll | 1000 | No |
+| `ingestion_source.poll.timeout` | Poll timeout in milliseconds | 1000 | No |
+| `ingestion_source.num_processor_threads` | Number of processor threads | 1 | No |
+| `ingestion_source.internal_queue_size` | Internal queue size between poller and processor | 100 | No |
+| `ingestion_source.mapper_type` | Message mapper type (`default` or `raw_payload`) | `default` | No |
+| `ingestion_source.pointer_based_lag_update_interval` | Interval for updating pointer-based lag metric | `10s` | No |
+| `ingestion_source.param.*` | Source-specific parameters (topic, bootstrap_servers, etc.) | Varies | Yes |
+| `index.periodic_flush_interval` | Interval for periodic flush | `10m` (pull-based) / `-1` (regular) | Yes |
 
 ### Usage Example
 
@@ -115,11 +118,15 @@ PUT /my-index
       "pointer.init.reset": "earliest",
       "error_strategy": "drop",
       "internal_queue_size": 500,
+      "mapper_type": "raw_payload",
+      "pointer_based_lag_update_interval": "5s",
       "param": {
         "topic": "my-topic",
-        "bootstrap_servers": "localhost:9092"
+        "bootstrap_servers": "localhost:9092",
+        "auto.offset.reset": "earliest"
       }
     },
+    "index.periodic_flush_interval": "5m",
     "index.number_of_shards": 3,
     "index.number_of_replicas": 1,
     "index.replication.type": "SEGMENT"
@@ -127,7 +134,13 @@ PUT /my-index
 }
 ```
 
-### Message Format
+### Message Mappers
+
+Pull-based ingestion supports pluggable message mappers that transform incoming messages to the internal format.
+
+#### Default Mapper
+
+Expects messages in the standard format with metadata fields:
 
 ```json
 {
@@ -147,6 +160,25 @@ PUT /my-index
 | `_version` | No | External version for conflict detection |
 | `_op_type` | No | Operation type: `index`, `create`, or `delete` |
 | `_source` | Yes | Document content |
+
+#### Raw Payload Mapper
+
+Uses the entire message payload as the document source. Document ID is generated from shard ID and stream pointer (e.g., `0-100` for shard 0, offset 100).
+
+Input message:
+```json
+{"name": "alice", "age": 30}
+```
+
+Indexed document:
+```json
+{
+  "_id": "0-100",
+  "_source": {"name": "alice", "age": 30}
+}
+```
+
+**Note**: Raw payload mapper does not support document versioning. Use for append-only workloads where eventual consistency is acceptable.
 
 ### Management APIs
 
@@ -185,6 +217,28 @@ GET /<index>/ingestion/_state
 | `total_poller_message_dropped_count` | Messages dropped by poller |
 | `total_duplicate_message_skipped_count` | Duplicate messages skipped (deprecated in v3.4.0) |
 | `lag_in_millis` | Ingestion lag in milliseconds |
+| `pointer_based_lag` | Offset difference between latest available and current position (Kafka only, v3.4.0+) |
+| `periodic_flush_count` | Number of periodic flushes executed (v3.4.0+) |
+
+### Dynamic Configuration Updates
+
+Starting in v3.4.0, `ingestion_source.param.*` settings can be updated dynamically without recreating the index:
+
+```json
+PUT /my-index/_settings
+{
+  "ingestion_source.param.auto.offset.reset": "latest",
+  "ingestion_source.param.max.poll.records": "200"
+}
+```
+
+When settings are updated:
+1. Consumer is marked for reinitialization
+2. Blocking queues are cleared
+3. New consumer is created with updated configuration
+4. Consumer restarts from the latest committed `batchStartPointer`
+
+**Note**: Consumer reinitialization may cause brief message reprocessing from the last committed offset.
 
 ## Limitations
 
@@ -199,6 +253,10 @@ GET /<index>/ingestion/_state
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19635](https://github.com/opensearch-project/OpenSearch/pull/19635) | Add Kafka offset based consumer lag |
+| v3.4.0 | [#19878](https://github.com/opensearch-project/OpenSearch/pull/19878) | Add time based periodic flush support |
+| v3.4.0 | [#19765](https://github.com/opensearch-project/OpenSearch/pull/19765) | Support message mappers and raw payloads |
+| v3.4.0 | [#19963](https://github.com/opensearch-project/OpenSearch/pull/19963) | Update ingestion stream params to be dynamic |
 | v3.4.0 | [#19607](https://github.com/opensearch-project/OpenSearch/pull/19607) | Fix out-of-bounds offset scenarios and remove persisted offsets |
 | v3.4.0 | [#19757](https://github.com/opensearch-project/OpenSearch/pull/19757) | Fix file-based ingestion consumer start point handling |
 | v3.3.0 | [#19316](https://github.com/opensearch-project/OpenSearch/pull/19316) | Support all-active mode in pull-based ingestion |
@@ -229,7 +287,7 @@ GET /<index>/ingestion/_state
 
 ## Change History
 
-- **v3.4.0**: Fixed out-of-bounds offset handling by setting Kafka `auto.offset.reset` to `none` by default. Removed persisted pointers concept to fix correctness issues during consumer rewind. Pull-based ingestion now provides at-least-once processing guarantees. Deprecated `totalDuplicateMessageSkippedCount` metric. Fixed file-based ingestion consumer to track line numbers when start point exceeds file length.
+- **v3.4.0**: Added offset-based consumer lag metric for Kafka with configurable update interval (`pointer_based_lag_update_interval`). Added time-based periodic flush support with `index.periodic_flush_interval` setting (defaults to 10 minutes for pull-based indexes). Added message mapper framework with `raw_payload` mapper for ingesting raw JSON payloads using stream pointer as document ID. Made `ingestion_source.param.*` settings dynamic, enabling consumer configuration updates without index recreation. Fixed out-of-bounds offset handling by setting Kafka `auto.offset.reset` to `none` by default. Removed persisted pointers concept to fix correctness issues during consumer rewind. Deprecated `totalDuplicateMessageSkippedCount` metric.
 - **v3.3.0**: Added all-active ingestion mode enabling replica shards to independently ingest from streaming sources. Fixed ingestion state XContent serialization for remote cluster state compatibility. Fixed lag metric calculation when streaming source is empty. Fixed pause state initialization during replica promotion. Added fail-fast behavior for mapper/parsing errors.
 - **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
 - **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.
