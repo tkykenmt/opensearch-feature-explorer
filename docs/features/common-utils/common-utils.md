@@ -128,6 +128,7 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#869](https://github.com/opensearch-project/common-utils/pull/869) | Backport release notes for 2.13 to main branch |
 | v3.2.0 | [#850](https://github.com/opensearch-project/common-utils/pull/850) | Pinned commons-beanutils dependency to fix CVE-2025-48734 |
 | v3.2.0 | [#847](https://github.com/opensearch-project/common-utils/pull/847) | Revert PublishFindingsRequest to use a list of findings |
 | v3.2.0 | [#848](https://github.com/opensearch-project/common-utils/pull/848) | Switch gradle to 8.14 and JDK to 24 |
@@ -144,5 +145,6 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 
 ## Change History
 
+- **v3.3.0** (2025-10-16): Added release notes for version 2.13.0.0 (backported to main branch)
 - **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
 - **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info

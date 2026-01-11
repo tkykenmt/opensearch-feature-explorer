@@ -115,6 +115,10 @@
 
 - [CI/CD Workflow Updates](features/ci/cd-workflow-updates.md)
 
+### Common Utils
+
+- [Common Utils Release Notes](features/common-utils/common-utils-release-notes.md)
+
 ### Observability
 
 - [Observability Cypress Updates](features/observability/observability-cypress-updates.md)
