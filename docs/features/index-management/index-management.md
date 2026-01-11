@@ -232,6 +232,9 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1460](https://github.com/opensearch-project/index-management/pull/1460) | Using Scripted Avg Class in AvgAggregationBuilder for rollup aggregation fix |
+| v3.3.0 | [#1491](https://github.com/opensearch-project/index-management/pull/1491) | Fix the build for upstream OpenSearch changes |
+| v3.3.0 | [#1473](https://github.com/opensearch-project/index-management/pull/1473) | Dependabot: bump 1password/load-secrets-action from 2 to 3 |
 | v3.2.0 | [#1440](https://github.com/opensearch-project/index-management/pull/1440) | Support for no_alias and min_state_age in ISM Transitions |
 | v3.2.0 | [#1444](https://github.com/opensearch-project/index-management/pull/1444) | Add history index pattern to System Index descriptors |
 | v3.2.0 | [#1442](https://github.com/opensearch-project/index-management/pull/1442) | Fix Integration test and lint errors |
@@ -265,6 +268,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Fixed rollup aggregation reduction bug when searching rollup and raw indices together by using ScriptedAvg class, build fixes for upstream OpenSearch changes, dependency updates
 - **v3.2.0** (2026-01-10): Added `no_alias` and `min_state_age` transition conditions for ISM, registered ISM history index as System Index descriptor, fixed integration tests and lint errors
 - **v3.1.0** (2026-01-10): Fixed false positive notifications in Snapshot Management by suppressing user notifications for internal VersionConflictEngineException errors
 - **v3.0.0** (2025-05-06): Added ISM unfollow action for CCR, rollup target index settings, CVE fixes, Java Agent migration
