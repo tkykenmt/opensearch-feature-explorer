@@ -4,6 +4,7 @@
 
 ### OpenSearch Dashboards
 
+- [Dashboards CSP](features/opensearch-dashboards/dashboards-csp.md) - Dynamic configuration support for CSP report-only mode
 - [Dashboards Data Connections](features/opensearch-dashboards/dashboards-data-connections.md) - Prometheus saved object support for data connections
 
 ## Bug Fixes
