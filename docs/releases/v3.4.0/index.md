@@ -28,6 +28,7 @@
 - [Transport Actions API](features/opensearch/transport-actions-api.md) - Internal API for retrieving metadata about requested indices from transport actions
 - [XContent Filtering](features/opensearch/xcontent-filtering.md) - Case-insensitive filtering support for XContentMapValues.filter
 - [Plugin Dependencies](features/opensearch/plugin-dependencies.md) - Range semver support for dependencies in plugin-descriptor.properties
+- [Query String Monitoring](features/opensearch/query-string-monitoring.md) - Monitoring mode for query string length validation with warning logs instead of rejection
 - [Repository Encryption](features/opensearch/repository-encryption.md) - Server-side encryption support for S3 remote store repositories
 - [ActionPlugin Enhancements](features/opensearch/actionplugin-enhancements.md) - Pass REST header registry to getRestHandlerWrapper for efficient header access
 - [WildcardFieldMapper](features/opensearch/wildcardfieldmapper.md) - Change doc_values default to true for nested query support
