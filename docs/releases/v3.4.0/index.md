@@ -9,6 +9,7 @@
 - [Build Tool Upgrades](features/opensearch/build-tool-upgrades.md) - Gradle 9.1 and bundled JDK 25 updates
 - [Concurrent Segment Search](features/opensearch/concurrent-segment-search.md) - Performance optimization by omitting MaxScoreCollector when sorting by score
 - [Context Aware Segments](features/opensearch/context-aware-segments.md) - Collocate related documents into same segments based on grouping criteria for improved query performance
+- [Index Settings](features/opensearch/index-settings.md) - Custom creation_date setting and tier-aware shard limit validation for local and remote indices
 - [Segment Grouping](features/opensearch/segment-grouping.md) - Mapper for defining context-aware segment grouping criteria with Painless script support
 - [Dependency Updates (OpenSearch Core)](features/opensearch/dependency-updates-opensearch-core.md) - 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness
 - [Engine Refactoring](features/opensearch/engine-refactoring.md) - Move prepareIndex/prepareDelete to Engine class and make NoOpResult constructors public
