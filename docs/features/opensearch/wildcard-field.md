@@ -63,7 +63,7 @@ flowchart TB
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `doc_values` | Enable doc values for aggregations/sorting | `false` |
+| `doc_values` | Enable doc values for aggregations/sorting | `true` (since v3.4.0, was `false` before) |
 | `ignore_above` | Maximum string length to index | `2147483647` |
 | `normalizer` | Normalizer for preprocessing (e.g., `lowercase`) | none |
 | `null_value` | Value to use for null fields | `null` |
@@ -142,6 +142,7 @@ GET logs/_search
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#19796](https://github.com/opensearch-project/OpenSearch/pull/19796) | Change doc_values default to true |
 | v3.3.0 | [#18568](https://github.com/opensearch-project/OpenSearch/pull/18568) | Fix sorting bug by disabling pruning for doc_values |
 | v3.0.0 | [#17349](https://github.com/opensearch-project/OpenSearch/pull/17349) | Optimize to 3-gram only indexing |
 | v2.18.0 | [#15737](https://github.com/opensearch-project/OpenSearch/pull/15737) | Fix wildcard query containing escaped character |
@@ -151,6 +152,7 @@ GET logs/_search
 ## References
 
 - [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
+- [Issue #18678](https://github.com/opensearch-project/OpenSearch/issues/18678): Bug report for nested query on wildcard field returning no results
 - [Issue #18461](https://github.com/opensearch-project/OpenSearch/issues/18461): Bug report for wildcard sort error with doc_values
 - [Issue #17099](https://github.com/opensearch-project/OpenSearch/issues/17099): 3-gram optimization feature request with benchmarks
 - [Issue #15555](https://github.com/opensearch-project/OpenSearch/issues/15555): Bug report for escaped wildcard character handling
@@ -159,6 +161,7 @@ GET logs/_search
 
 ## Change History
 
+- **v3.4.0** (2025-11-18): Changed `doc_values` default from `false` to `true`, fixing nested query issues
 - **v3.3.0** (2025-09-10): Fixed sorting bug when `doc_values` enabled by disabling Lucene's dynamic pruning optimization
 - **v3.0.0** (2025-05-06): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
 - **v2.18.0** (2024-11-05): Fixed escaped wildcard character handling and case-insensitive query behavior
