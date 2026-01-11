@@ -130,6 +130,10 @@ flowchart TB
 | ReAct Agent | `src/agents/langgraph/react_agent.ts` | LangGraph-based reasoning agent |
 | Bedrock Client | `src/agents/langgraph/bedrock_client.ts` | AWS Bedrock API integration |
 | MCP Clients | `src/mcp/` | Local and HTTP MCP server clients |
+| SuggestedActionsService | `src/plugins/chat` | Registry for suggestion providers (v3.4.0) |
+| ChatSuggestions | `src/plugins/chat` | UI for contextual suggestions (v3.4.0) |
+| LogActionRegistry | `src/plugins/explore` | Registry for log entry actions (v3.4.0) |
+| LogActionMenu | `src/plugins/explore` | Dropdown for log actions (v3.4.0) |
 
 ### Configuration
 
@@ -250,12 +254,19 @@ npm run start:ag-ui
 - **Single-threaded**: One conversation at a time per agent instance
 - **MCP Configuration**: Servers must be pre-configured before agent starts
 - **Limited Testing**: Comprehensive test coverage is ongoing
-- **No Persistence**: Conversation history not persisted across sessions
+- **Session-based Persistence**: Conversation history persists within browser session only (v3.4.0+)
 
 ## Related PRs
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#10824](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10824) | Register chat as the global search command |
+| v3.4.0 | [#10834](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10834) | Add AI related actions in Explore |
+| v3.4.0 | [#10863](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10863) | Add suggestion system for chat |
+| v3.4.0 | [#10895](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10895) | Persist chatbot state in localStorage |
+| v3.4.0 | [#10916](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10916) | Add session storage persistence for chat history |
+| v3.4.0 | [#10924](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10924) | Add close button for chatbot header |
+| v3.4.0 | [#10934](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10934) | Add getThreadId$ observable in chat service |
 | v3.3.0 | [#10600](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10600) | Add experimental AI Chat and Context Provider plugins |
 | v3.3.0 | [#10612](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10612) | AG-UI compliant LangGraph ReAct agent implementation |
 | v3.3.0 | [#10624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10624) | Mark context provider and chat as experimental |
@@ -264,6 +275,7 @@ npm run start:ag-ui
 
 - [RFC #10585](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10585): AI Assistant Framework for OpenSearch Dashboards
 - [RFC #10571](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10571): Context Design and Page Tools Architecture
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/index/)
 - [AG-UI Protocol Documentation](https://docs.ag-ui.com/introduction)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
@@ -271,4 +283,5 @@ npm run start:ag-ui
 
 ## Change History
 
+- **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
 - **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent
