@@ -116,3 +116,25 @@ Related categories:
 - neural-search ↔ ml-commons, k-nn
 - security ↔ security-dashboards-plugin
 - sql ↔ dashboards-query-workbench
+
+## File Naming
+
+### Directory = Context
+Don't repeat directory name in filename:
+- Bad: `security/security-plugin.md`
+- Good: `security/overview.md`
+
+### File Patterns
+| Pattern | Purpose |
+|---------|---------|
+| `index.md` | Directory listing |
+| `overview.md` | Plugin/feature overview |
+| `{feature}.md` | Main feature doc |
+| `configuration.md` | Config reference |
+| `api.md` | API reference |
+
+### Avoid Temporal Files
+Merge into main doc's Change History:
+- `*-bugfixes.md`
+- `*-enhancements.md`
+- `*-breaking-changes.md`

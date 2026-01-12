@@ -86,6 +86,35 @@ Store fetched data in `.cache/` to avoid redundant API calls.
 - Include diagrams showing architecture and processing flows
 - Use tables for configuration options, components, and PR lists
 
+## File Naming Conventions
+
+### Directory = Context
+Don't repeat directory name in filename:
+```
+# Bad
+security/security-plugin.md
+
+# Good
+security/overview.md
+security/configuration.md
+```
+
+### File Type Patterns
+| Pattern | Purpose | Example |
+|---------|---------|---------|
+| `index.md` | Directory overview/listing | `sql/index.md` |
+| `overview.md` | Plugin/feature overview | `security/overview.md` |
+| `{feature}.md` | Main feature doc | `sql/calcite-engine.md` |
+| `{feature}-{aspect}.md` | Feature aspect | `sql/calcite-engine-optimization.md` |
+| `configuration.md` | Configuration reference | `security/configuration.md` |
+| `api.md` | API reference | `k-nn/api.md` |
+
+### Avoid Temporal Files
+Don't create separate files for version-specific content:
+- `*-bugfixes.md` → merge into main doc's Change History
+- `*-enhancements.md` → merge into main doc's Change History
+- `*-breaking-changes.md` → merge into main doc or release notes
+
 ## Report Output Format
 
 ### Release Report Template (docs/releases/v{version}/features/{item-name}.md)
