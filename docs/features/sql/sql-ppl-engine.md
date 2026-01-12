@@ -225,6 +225,26 @@ POST /_plugins/_ppl
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Fix: Add hashCode() and equals() to ExprJavaType value class |
+| v3.4.0 | [#4868](https://github.com/opensearch-project/sql/pull/4868) | Fix: LogPatternAggFunction parameter/return logic |
+| v3.4.0 | [#4850](https://github.com/opensearch-project/sql/pull/4850) | Fix: Grouping key field type overwrite |
+| v3.4.0 | [#4841](https://github.com/opensearch-project/sql/pull/4841) | Fix: Memory exhaustion for multiple filtering operations |
+| v3.4.0 | [#4744](https://github.com/opensearch-project/sql/pull/4744) | Fix: Filter push down redundant filter queries |
+| v3.4.0 | [#4454](https://github.com/opensearch-project/sql/pull/4454) | Fix: Remove shared mutable optimizer field (race condition) |
+| v3.4.0 | [#4641](https://github.com/opensearch-project/sql/pull/4641) | Fix: Rex nested capture groups extraction |
+| v3.4.0 | [#4665](https://github.com/opensearch-project/sql/pull/4665) | Fix: CVE-2025-48924 |
+| v3.3.0 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix: count(*) and dc(field) to be capped at MAX_INTEGER |
+| v3.3.0 | [#4407](https://github.com/opensearch-project/sql/pull/4407) | Fix: Mod function should return decimal instead of float |
+| v3.3.0 | [#4360](https://github.com/opensearch-project/sql/pull/4360) | Fix: ClassCastException for value-storing aggregates on nested PPL fields |
+| v3.3.0 | [#4369](https://github.com/opensearch-project/sql/pull/4369) | Fix: No index found should throw IndexNotFoundException |
+| v3.3.0 | [#3613](https://github.com/opensearch-project/sql/pull/3613) | Fix: SQL type mapping for legacy JDBC output |
+| v3.1.0 | [#3660](https://github.com/opensearch-project/sql/pull/3660) | Fix: Long IN-lists causes crash |
+| v3.1.0 | [#3621](https://github.com/opensearch-project/sql/pull/3621) | Fix: Add trimmed project before aggregate to avoid NPE in Calcite |
+| v3.1.0 | [#3693](https://github.com/opensearch-project/sql/pull/3693) | Fix: Error when pushing down script filter with struct field |
+| v3.1.0 | [#3674](https://github.com/opensearch-project/sql/pull/3674) | Fix: Alias type referring to nested field |
+| v3.1.0 | [#3748](https://github.com/opensearch-project/sql/pull/3748) | Fix: ATAN(x, y) and CONV(x, a, b) functions |
+| v3.1.0 | [#3679](https://github.com/opensearch-project/sql/pull/3679) | Fix: Return double with correct precision for UNIX_TIMESTAMP |
+| v3.1.0 | [#3713](https://github.com/opensearch-project/sql/pull/3713) | Fix: Prevent push down limit with offset reach maxResultWindow |
 | v3.1.0 | [#3559](https://github.com/opensearch-project/sql/pull/3559) | Add JSON functions |
 | v3.1.0 | [#3584](https://github.com/opensearch-project/sql/pull/3584) | Add lambda function and array related functions |
 | v3.1.0 | [#3574](https://github.com/opensearch-project/sql/pull/3574) | Implement cryptographic hash UDFs |
@@ -268,6 +288,8 @@ POST /_plugins/_ppl
 
 ## Change History
 
-- **v3.1.0** (2025-07-15): New functions - JSON manipulation (json, json_valid, json_object, json_array, json_extract, json_delete, json_set, json_append, json_extend, json_keys), lambda/array functions (array, array_length, forall, exists, filter, transform, reduce), cryptographic hashes (md5, sha1, sha2), time conditions (earliest, latest), approximate distinct count (distinct_count_approx); Enhancements - match_only_text field type support, object field merging across indices; Breaking change - percentile function switched to MergingDigest algorithm
+- **v3.4.0** (2026-01): Bug fixes including critical memory exhaustion fix for multiple filter operations, race condition fix in concurrent queries, rex command nested capture group extraction fix, filter pushdown redundant query fix, CVE-2025-48924 security fix
+- **v3.3.0** (2026-01): Bug fixes including count overflow handling (integer to bigint), decimal precision fixes (MOD function, negative scale), nested field aggregation ClassCastException fix, IndexNotFoundException for missing patterns, legacy JDBC type mapping
+- **v3.1.0** (2025-07-15): New functions - JSON manipulation (json, json_valid, json_object, json_array, json_extract, json_delete, json_set, json_append, json_extend, json_keys), lambda/array functions (array, array_length, forall, exists, filter, transform, reduce), cryptographic hashes (md5, sha1, sha2), time conditions (earliest, latest), approximate distinct count (distinct_count_approx); Bug fixes - long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling improvements, Calcite engine stability; Enhancements - match_only_text field type support, object field merging across indices; Breaking change - percentile function switched to MergingDigest algorithm
 - **v3.0.0** (2025-05-06): Major update - Apache Calcite integration (V3 engine), new PPL commands (lookup, join, subsearch), json functions, improved patterns command with Brain algorithm, comment support, function framework refactoring; breaking changes include removal of SparkSQL, DELETE statement, DSL format, scroll API, and opendistro settings
 - **v2.17.0** (2024-09-17): Enhancements - increased default query size limit (200 → 10000), common geo point format support, TakeOrderedOperator for query optimization, complex predicate support in PPL IF function; Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes

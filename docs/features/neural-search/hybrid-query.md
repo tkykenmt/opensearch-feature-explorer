@@ -203,6 +203,9 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.3.0 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix: Reversed order of values in nested list with embedding processor |
+| v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Enable mocking of final classes and static functions |
+| v3.3.0 | [#1584](https://github.com/opensearch-project/neural-search/pull/1584) | Add CI action to clean up disk and apply to BWC |
 | v3.2.0 | [#1431](https://github.com/opensearch-project/neural-search/pull/1431) | Add upper bound parameter for min-max normalization technique |
 | v3.2.0 | [#1447](https://github.com/opensearch-project/neural-search/pull/1447) | Enable inner hits within collapse parameter for hybrid query |
 | v3.2.0 | [#1471](https://github.com/opensearch-project/neural-search/pull/1471) | Add setting for number of documents stored by HybridCollapsingTopDocsCollector |
@@ -210,6 +213,13 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v3.1.0 | [#1345](https://github.com/opensearch-project/neural-search/pull/1345) | Add collapse functionality to hybrid query |
 | v3.1.0 | [#1289](https://github.com/opensearch-project/neural-search/pull/1289) | Custom bulk scorer for hybrid query (2-3x performance) |
 | v3.1.0 | [#1322](https://github.com/opensearch-project/neural-search/pull/1322) | Support custom weights in RRF normalization processor |
+| v3.1.0 | [#1277](https://github.com/opensearch-project/neural-search/pull/1277) | Fix: Score value as null for single shard sorting |
+| v3.1.0 | [#1291](https://github.com/opensearch-project/neural-search/pull/1291) | Fix: Return bad request for invalid stat parameters |
+| v3.1.0 | [#1305](https://github.com/opensearch-project/neural-search/pull/1305) | Fix: Add validation for nested hybrid query |
+| v3.1.0 | [#1357](https://github.com/opensearch-project/neural-search/pull/1357) | Fix: Use stack for semantic field collection |
+| v3.1.0 | [#1373](https://github.com/opensearch-project/neural-search/pull/1373) | Fix: Filter stats based on cluster version |
+| v3.1.0 | [#1393](https://github.com/opensearch-project/neural-search/pull/1393) | Fix: Radial search serialization |
+| v3.1.0 | [#1396](https://github.com/opensearch-project/neural-search/pull/1396) | Fix: Neural query with semantic field |
 | v3.0.0 | [#1224](https://github.com/opensearch-project/neural-search/pull/1224) | Add Z Score normalization technique |
 | v3.0.0 | [#1195](https://github.com/opensearch-project/neural-search/pull/1195) | Lower bounds for min-max normalization |
 | v3.0.0 | [#1206](https://github.com/opensearch-project/neural-search/pull/1206) | Filter support for HybridQueryBuilder and NeuralQueryBuilder |
@@ -247,11 +257,17 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - [Issue #1379](https://github.com/opensearch-project/neural-search/issues/1379): Inner hits compatibility with collapse request
 - [Issue #1381](https://github.com/opensearch-project/neural-search/issues/1381): Collapse document storage setting request
 - [Issue #1344](https://github.com/opensearch-project/neural-search/issues/1344): Flaky test bug in HybridQueryDocIdStream
+- [Issue #1569](https://github.com/opensearch-project/neural-search/issues/1569): ProcessorDocumentUtils.handleList messes up the order of nested lists
+- [Issue #1108](https://github.com/opensearch-project/neural-search/issues/1108): Nested hybrid query bug
+- [Issue #1274](https://github.com/opensearch-project/neural-search/issues/1274): Hybrid search sort score corruption
+- [Issue #1368](https://github.com/opensearch-project/neural-search/issues/1368): Stats BWC test failure
+- [Issue #1392](https://github.com/opensearch-project/neural-search/issues/1392): Radial search fails on 3.0
 
 ## Change History
 
+- **v3.3.0** (2026-01-11): Bug fixes for nested list ordering in embedding processor, unit test mocking support, CI disk cleanup for BWC tests
 - **v3.2.0** (2026-01-14): Upper bound parameter for min-max normalization, inner hits support within collapse, configurable collapse document storage setting, HybridQueryDocIdStream bug fix
-- **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support
+- **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support; Bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability improvements
 - **v3.0.0** (2025-05-13): Z-Score normalization, lower bounds for min-max, filter support, inner hits, Stats API, semantic highlighter, analyzer-based neural sparse query, optimized embedding generation
 - **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic

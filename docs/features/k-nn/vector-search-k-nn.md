@@ -223,6 +223,21 @@ PUT /_cluster/settings
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.4.0 | [#2918](https://github.com/opensearch-project/k-NN/pull/2918) | Fix: Block memory optimized search for old indices created before 2.18 |
+| v3.4.0 | [#2965](https://github.com/opensearch-project/k-NN/pull/2965) | Fix: NativeEngineKnnQuery to return correct totalHits |
+| v3.4.0 | [#2974](https://github.com/opensearch-project/k-NN/pull/2974) | Fix: Race condition on transforming vector in KNNQueryBuilder |
+| v3.4.0 | [#2992](https://github.com/opensearch-project/k-NN/pull/2992) | Fix: Faiss IP score to distance calculation |
+| v3.4.0 | [#2994](https://github.com/opensearch-project/k-NN/pull/2994) | Fix: Backwards compatibility for disk-based vector search segment merge |
+| v3.3.0 | [#2867](https://github.com/opensearch-project/k-NN/pull/2867) | Fix: Use queryVector length if present in MDC check |
+| v3.3.0 | [#2882](https://github.com/opensearch-project/k-NN/pull/2882) | Fix: Derived source deserialization bug on invalid documents |
+| v3.3.0 | [#2892](https://github.com/opensearch-project/k-NN/pull/2892) | Fix: Invalid cosine score range in LuceneOnFaiss |
+| v3.3.0 | [#2836](https://github.com/opensearch-project/k-NN/pull/2836) | Fix: Allows k to be nullable to fix filter bug |
+| v3.3.0 | [#2903](https://github.com/opensearch-project/k-NN/pull/2903) | Fix: Integer overflow for distance computation estimation |
+| v3.3.0 | [#2912](https://github.com/opensearch-project/k-NN/pull/2912) | Fix: AVX2 detection on other platforms |
+| v3.3.0 | [#2905](https://github.com/opensearch-project/k-NN/pull/2905) | Fix: byte[] radial search for FAISS |
+| v3.3.0 | [#2911](https://github.com/opensearch-project/k-NN/pull/2911) | Fix: Use unique doc ID for MMR rerank |
+| v3.3.0 | [#2916](https://github.com/opensearch-project/k-NN/pull/2916) | Fix: Local ref leak in JNI |
+| v3.3.0 | [#2921](https://github.com/opensearch-project/k-NN/pull/2921) | Fix: Rescoring logic for nested exact search |
 | v3.2.0 | [#2819](https://github.com/opensearch-project/k-NN/pull/2819) | Support GPU indexing for FP16, Byte and Binary |
 | v3.2.0 | [#2718](https://github.com/opensearch-project/k-NN/pull/2718) | Add random rotation feature to binary encoder |
 | v3.2.0 | [#2733](https://github.com/opensearch-project/k-NN/pull/2733) | Asymmetric Distance Computation (ADC) for binary quantized faiss indices |
@@ -236,6 +251,15 @@ PUT /_cluster/settings
 | v3.1.0 | [#2704](https://github.com/opensearch-project/k-NN/pull/2704) | Apply mask operation in preindex to optimize derived source |
 | v3.1.0 | [#2351](https://github.com/opensearch-project/k-NN/pull/2351) | Remove redundant type conversions for script scoring with binary vectors |
 | v3.1.0 | [#2727](https://github.com/opensearch-project/k-NN/pull/2727) | Refactor Knn Search Results to use TopDocs |
+| v3.1.0 | [#2666](https://github.com/opensearch-project/k-NN/pull/2666) | Fix: Quantization cache scale and thread safety |
+| v3.1.0 | [#2671](https://github.com/opensearch-project/k-NN/pull/2671) | Fix: Rescoring for dimensions > 1000 |
+| v3.1.0 | [#2692](https://github.com/opensearch-project/k-NN/pull/2692) | Fix: Honor slice count for non-quantization cases |
+| v3.1.0 | [#2702](https://github.com/opensearch-project/k-NN/pull/2702) | Fix: Block derived source if index.knn is false |
+| v3.1.0 | [#2719](https://github.com/opensearch-project/k-NN/pull/2719) | Fix: Avoid opening graph file if already loaded |
+| v3.1.0 | [#2722](https://github.com/opensearch-project/k-NN/pull/2722) | Fix: Block mode/compression for pre-2.17.0 indices |
+| v3.1.0 | [#2728](https://github.com/opensearch-project/k-NN/pull/2728) | Fix: RefCount and ClearCache race conditions |
+| v3.1.0 | [#2739](https://github.com/opensearch-project/k-NN/pull/2739) | Fix: LuceneOnFaiss to use sliced IndexInput |
+| v3.1.0 | [#2641](https://github.com/opensearch-project/k-NN/pull/2641) | Fix: Nested vector query with efficient filter |
 | v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | Breaking changes - remove deprecated settings |
 | v2.18.0 | [#2195](https://github.com/opensearch-project/k-NN/pull/2195) | Fix lucene codec after lucene version bumped to 9.12 |
 | v2.18.0 | [#2133](https://github.com/opensearch-project/k-NN/pull/2133) | Optimize KNNVectorValues creation for non-quantization cases |
@@ -284,8 +308,10 @@ PUT /_cluster/settings
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): Bug fixes for memory optimized search on old indices (NPE), totalHits inconsistency, race condition in KNNQueryBuilder with cosine similarity, Faiss inner product score-to-distance calculation, disk-based vector search BWC for segment merge
+- **v3.3.0** (2026-01-11): Bug fixes for MDC check NPE with byte vectors, derived source deserialization on invalid documents, cosine score range in LuceneOnFaiss, filter k nullable, integer overflow in distance computation, AVX2 detection on non-Linux/Mac/Windows platforms, radial search for byte vectors with FAISS, MMR doc ID issue, JNI local reference leak, nested exact search rescoring
 - **v3.2.0** (2025-10-01): GPU indexing support for FP16, Byte, and Binary vectors via Cagra2; Asymmetric Distance Computation (ADC) for improved recall on binary quantized indices; random rotation feature for binary encoder; gRPC support for k-NN queries; nested search support for IndexBinaryHNSWCagra; dynamic index thread quantity defaults (4 threads for 32+ core machines); NativeMemoryCacheKeyHelper @ collision fix
-- **v3.1.0** (2025-07-15): Memory-optimized search (LuceneOnFaiss) integration into KNNWeight with layered architecture; rescore support for Lucene engine; 4x compression rescore context optimization; derived source indexing optimization; script scoring performance improvement for binary vectors; TopDocs refactoring for search results
+- **v3.1.0** (2025-07-15): Memory-optimized search (LuceneOnFaiss) integration into KNNWeight with layered architecture; rescore support for Lucene engine; 4x compression rescore context optimization; derived source indexing optimization; script scoring performance improvement for binary vectors; TopDocs refactoring for search results; Bug fixes for quantization cache scale/thread safety, rescoring for dimensions > 1000, native memory cache race conditions, nested vector query with efficient filter, mode/compression backward compatibility for pre-2.17.0 indices
 - **v3.0.0** (2025-05-06): Breaking changes removing deprecated index settings; node-level circuit breakers; filter function in KNNQueryBuilder; concurrency optimizations for graph loading; Remote Native Index Build foundation
 - **v2.18.0** (2024-11-05): Lucene 9.12 codec compatibility (KNN9120Codec); force merge performance optimization for non-quantization cases (~20% improvement); removed deprecated benchmarks folder; code refactoring improvements
 - **v2.17.0** (2024-09-17): Memory overflow fix for cache behavior; improved filter handling for non-existent fields; script_fields context support; field name validation for snapshots; graph merge stats fix; binary vector IVF training fix; Windows build improvements
