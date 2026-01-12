@@ -37,8 +37,7 @@ graph LR
 | **fetch-release** | Fetch release notes → parse and save all items to JSON cache |
 | **planner** | Read JSON cache → create tracking Issue with all items |
 | **create-issues** | Create individual investigation Issues from tracking Issue |
-| **investigate** | Deep investigation of release items → create release & feature reports |
-| **explore** | Interactive Q&A + URL import |
+| **investigate** | Deep investigation (4 modes: Issue, PR, Feature, Interactive Q&A) |
 | **summarize** | Aggregate release reports into release summary |
 | **translate** | Translate reports to other languages |
 | **dev** | Development and maintenance of this tool itself |
@@ -178,14 +177,20 @@ Quick investigation of a specific feature without full release workflow.
 
 ```mermaid
 flowchart LR
-    A[PR Number] --> B[feature-investigate]
+    A[PR Number] --> B[investigate]
     C[Feature Name] --> B
-    B --> D[Release Report]
-    B --> E[Feature Report]
+    B --> D[Feature Report]
 ```
 
 ```bash
-python run.py feature-investigate "Star Tree" --pr 16233
+# From a specific PR
+python run.py investigate --pr 16233
+
+# From feature name + PR
+python run.py investigate --feature "Star Tree" --pr 16233
+
+# Feature deep dive (searches all related PRs)
+python run.py investigate --feature "Star Tree"
 ```
 
 ### Use Case 3: Interactive Exploration
@@ -194,14 +199,13 @@ Explore features interactively with Q&A.
 
 ```mermaid
 flowchart LR
-    A[Feature Name] --> B[explore]
-    B --> C[Q&A Session]
-    C --> D[Import URLs]
-    D --> C
+    A[investigate] --> B[Q&A Session]
+    B --> C[Import URLs]
+    C --> B
 ```
 
 ```bash
-python run.py explore "Segment Replication" --lang ja
+python run.py investigate
 ```
 
 ### Planner Options
