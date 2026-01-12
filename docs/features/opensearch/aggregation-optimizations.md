@@ -286,6 +286,9 @@ GET /taxi/_search
 | v3.3.0 | [#18978](https://github.com/opensearch-project/OpenSearch/pull/18978) | Rare terms aggregation precomputation |
 | v3.3.0 | [#18732](https://github.com/opensearch-project/OpenSearch/pull/18732) | String terms aggregation optimization |
 | v3.3.0 | [#19088](https://github.com/opensearch-project/OpenSearch/pull/19088) | Date histogram rounding optimization |
+| v3.0.0 | [#17312](https://github.com/opensearch-project/OpenSearch/pull/17312) | Introduce `execution_hint` for Cardinality aggregation |
+| v3.0.0 | [#14993](https://github.com/opensearch-project/OpenSearch/pull/14993) | Latency and memory allocation improvements to Multi Term Aggregation |
+| v3.0.0 | [#17252](https://github.com/opensearch-project/OpenSearch/pull/17252) | Improve performance of NumericTermAggregation by avoiding unnecessary sorting |
 
 ## References
 
@@ -297,13 +300,16 @@ GET /taxi/_search
 - [Issue #13122](https://github.com/opensearch-project/OpenSearch/issues/13122): Rare Terms Aggregation Performance Optimization
 - [Issue #18704](https://github.com/opensearch-project/OpenSearch/issues/18704): Optimize String terms agg
 - [Issue #10954](https://github.com/opensearch-project/OpenSearch/issues/10954): Use Collector.setWeight to improve aggregation performance
+- [Issue #16837](https://github.com/opensearch-project/OpenSearch/issues/16837): Use of Binary DocValue for high cardinality fields
 - [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
 - [Percentile Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile/)
 - [Rare Terms Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/rare-terms/)
 - [Terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/terms/)
 - [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+- [Multi-terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/multi-terms/)
 
 ## Change History
 
 - **v3.4.0** (2026-01): Added hybrid cardinality collector, filter rewrite + skip list for sub-aggregations, MergingDigest for percentiles, primitive arrays for matrix_stats, skip list for auto_date_histogram
 - **v3.3.0** (2026-01): Added precomputation for rare terms, quickselect for string terms, object reuse for date histogram
+- **v3.0.0** (2025-02): Added `execution_hint` parameter for cardinality aggregation, multi-term aggregation latency/memory improvements, numeric term aggregation sorting optimization

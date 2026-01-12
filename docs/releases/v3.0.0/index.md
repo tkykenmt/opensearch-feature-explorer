@@ -14,6 +14,7 @@
 
 ## opensearch
 
+- [Aggregations](features/opensearch/aggregations.md)
 - [Arrow Flight RPC](features/opensearch/arrow-flight-rpc.md)
 - [Extensions Framework](features/opensearch/extensions-framework.md)
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
