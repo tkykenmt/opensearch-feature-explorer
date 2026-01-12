@@ -144,4 +144,4 @@ GET _rules/workload_group?index_pattern=logs*&invalid_param=ignored
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/workload-management.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-workload-management.md)

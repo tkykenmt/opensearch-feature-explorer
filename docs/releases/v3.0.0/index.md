@@ -17,90 +17,90 @@ tags:
 ### neural-search
 
 - [Analyzer-Based Neural Sparse Query](features/neural-search/analyzer-based-neural-sparse-query.md)
-- [Hybrid Query](features/neural-search/hybrid-query.md)
+- [Hybrid Query](features/neural-search/neural-search-hybrid-query.md)
 - [Neural Search Compatibility](features/neural-search/neural-search-compatibility.md)
 - [Neural Search Refactoring](features/neural-search/neural-search-refactoring.md)
-- [Semantic Field](features/neural-search/semantic-field.md)
+- [Semantic Field](features/neural-search/neural-search-semantic-field.md)
 
 ## opensearch
 
 - [Aggregations](features/opensearch/aggregations.md)
-- [Arrow Flight RPC](features/opensearch/arrow-flight-rpc.md)
-- [Extensions Framework](features/opensearch/extensions-framework.md)
-- [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
-- [Cluster Management](features/opensearch/cluster-management.md)
-- [Configuration Utilities](features/opensearch/configuration-utilities.md)
-- [Rule-Based Auto-Tagging](features/opensearch/rule-based-auto-tagging.md)
+- [Arrow Flight RPC](features/opensearch/opensearch-arrow-flight-rpc.md)
+- [Extensions Framework](features/opensearch/opensearch-extensions-framework.md)
+- [Automata & Regex Optimization](features/opensearch/opensearch-automata-regex-optimization.md)
+- [Cluster Management](features/opensearch/opensearch-cluster-management.md)
+- [Configuration Utilities](features/opensearch/opensearch-configuration-utilities.md)
+- [Rule-Based Auto-Tagging](features/opensearch/opensearch-rule-based-auto-tagging.md)
 - [Security Manager Replacement (Java Agent)](features/opensearch/security-manager-replacement-java-agent.md)
 - [Bulk API Changes](features/opensearch/bulk-api-changes.md)
-- [DocValues Optimization](features/opensearch/docvalues-optimization.md)
-- [Events Correlation Engine](features/opensearch/events-correlation-engine.md)
-- [Concurrent Segment Search Auto Mode Default](features/opensearch/concurrent-segment-search.md)
-- [Deprecated Code Cleanup](features/opensearch/deprecated-code-cleanup.md)
+- [DocValues Optimization](features/opensearch/opensearch-docvalues-optimization.md)
+- [Events Correlation Engine](features/opensearch/events-security-analytics-correlation-engine.md)
+- [Concurrent Segment Search Auto Mode Default](features/opensearch/opensearch-concurrent-segment-search.md)
+- [Deprecated Code Cleanup](features/opensearch/deprecated-opensearch-code-cleanup.md)
 - [Field Type Fixes](features/opensearch/field-type-fixes.md)
 - [Field Types](features/opensearch/field-types.md)
 - [Flat Object DocValues Retrieval](features/opensearch/flat-object-docvalues.md)
-- [Cluster Permissions](features/opensearch/cluster-permissions.md)
-- [gRPC Transport & Services](features/opensearch/grpc-transport--services.md)
-- [Mapping Transformer](features/opensearch/mapping-transformer.md)
-- [Cluster Manager Throttling](features/opensearch/cluster-manager-throttling.md)
-- [Dependency Bumps](features/opensearch/dependency-bumps.md)
+- [Cluster Permissions](features/opensearch/opensearch-cluster-permissions.md)
+- [gRPC Transport & Services](features/opensearch/opensearch-grpc-transport--services.md)
+- [Mapping Transformer](features/opensearch/opensearch-mapping-transformer.md)
+- [Cluster Manager Throttling](features/opensearch/opensearch-cluster-manager-throttling.md)
+- [Dependency Bumps](features/opensearch/multi-plugin-dependency-bumps.md)
 - [Locale Provider Changes](features/opensearch/locale-provider-changes.md)
 - [HTTP API Improvements](features/opensearch/http-api-improvements.md)
 - [Indexing Buffer Fix](features/opensearch/indexing-buffer-fix.md)
-- [Jackson & Query Limits](features/opensearch/jackson--query-limits.md)
-- [Source Field Matching](features/opensearch/source-field-matching.md)
-- [Cryptography & Security Libraries](features/opensearch/cryptography-security-libraries.md)
-- [Gradle Build System](features/opensearch/gradle-build-system.md)
-- [HTTP/2 Support](features/opensearch/http2-support.md)
+- [Jackson & Query Limits](features/opensearch/opensearch-jackson--query-limits.md)
+- [Source Field Matching](features/opensearch/opensearch-source-field-matching.md)
+- [Cryptography & Security Libraries](features/opensearch/opensearch-cryptography-security-libraries.md)
+- [Gradle Build System](features/opensearch/opensearch-gradle-build-system.md)
+- [HTTP/2 Support](features/opensearch/opensearch-http2-support.md)
 - [HTTP Client Fixes](features/opensearch/http-client-fixes.md)
 - [HTTP Client Migration](features/opensearch/http-client-migration.md)
-- [Java Runtime & JPMS](features/opensearch/java-runtime-and-jpms.md)
-- [Lucene 10 Upgrade](features/opensearch/lucene-10-upgrade.md)
-- [Lucene Similarity](features/opensearch/lucene-similarity.md)
-- [Merge & Segment Settings](features/opensearch/merge-segment-settings.md)
+- [Java Runtime & JPMS](features/opensearch/opensearch-java-runtime-and-jpms.md)
+- [Lucene 10 Upgrade](features/opensearch/opensearch-lucene-10-upgrade.md)
+- [Lucene Similarity](features/opensearch/opensearch-lucene-similarity.md)
+- [Merge & Segment Settings](features/opensearch/opensearch-merge-segment-settings.md)
 - [Node Stats & API Fixes](features/opensearch/node-stats-and-api-fixes.md)
 - [Numeric Types](features/opensearch/numeric-types.md)
 - [Query & Aggregation Fixes](features/opensearch/query-and-aggregation-fixes.md)
-- [Query Builders](features/opensearch/query-builders.md)
-- [Query Performance Optimizations](features/opensearch/query-performance-optimizations.md)
+- [Query Builders](features/opensearch/opensearch-query-builders.md)
+- [Query Performance Optimizations](features/opensearch/opensearch-query-performance-optimizations.md)
 - [Node Roles & Configuration](features/opensearch/node-roles-and-configuration.md)
-- [Node Roles Configuration (Environment Variables)](features/opensearch/node-roles-configuration.md)
+- [Node Roles Configuration (Environment Variables)](features/opensearch/opensearch-node-roles-configuration.md)
 - [Nodes Info API Changes](features/opensearch/nodes-info-api-changes.md)
-- [Pipeline ID Limits](features/opensearch/pipeline-id-limits.md)
+- [Pipeline ID Limits](features/opensearch/opensearch-pipeline-id-limits.md)
 - [Plugin System](features/opensearch/plugin-system.md)
-- [Refresh Task Scheduling](features/opensearch/refresh-task-scheduling.md)
+- [Refresh Task Scheduling](features/opensearch/opensearch-refresh-task-scheduling.md)
 - [Remote Cluster State Download Setting](features/opensearch/remote-cluster-state-download-setting.md)
-- [Search Backpressure](features/opensearch/search-backpressure.md)
-- [Search Task Management](features/opensearch/search-task-management.md)
-- [Segment Warmer](features/opensearch/segment-warmer.md)
+- [Search Backpressure](features/opensearch/opensearch-search-backpressure.md)
+- [Search Task Management](features/opensearch/search-opensearch-task-management.md)
+- [Segment Warmer](features/opensearch/opensearch-segment-warmer.md)
 - [Star Tree Enhancements](features/opensearch/star-tree-enhancements.md)
-- [Stream Input/Output](features/opensearch/stream-inputoutput.md)
-- [Thread Context Permissions](features/opensearch/thread-context-permissions.md)
-- [Tiered Caching](features/opensearch/tiered-caching.md)
+- [Stream Input/Output](features/opensearch/opensearch-stream-inputoutput.md)
+- [Thread Context Permissions](features/opensearch/opensearch-thread-context-permissions.md)
+- [Tiered Caching](features/opensearch/opensearch-tiered-caching.md)
 - [Track Total Hits](features/opensearch/track-total-hits.md)
-- [Views](features/opensearch/views.md)
+- [Views](features/opensearch/opensearch-views.md)
 - [Warm/Hot Tiering](features/opensearch/warm-hot-tiering.md)
-- [Wildcard Field](features/opensearch/wildcard-field.md)
-- [Search Replica & Reader-Writer Separation](features/opensearch/search-replica-reader-writer-separation.md)
+- [Wildcard Field](features/opensearch/opensearch-wildcard-field.md)
+- [Search Replica & Reader-Writer Separation](features/opensearch/opensearch-search-replica-reader-writer-separation.md)
 - [Search Utilities](features/opensearch/search-utilities.md)
-- [Segment Replication](features/opensearch/segment-replication.md)
+- [Segment Replication](features/opensearch/segment-opensearch-replication.md)
 - [Shard Management](features/opensearch/shard-management.md)
-- [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md)
+- [Pull-based Ingestion](features/opensearch/opensearch-pull-based-ingestion.md)
 
 ## opensearch-dashboards
 
 - [CI/CD & Build Fixes](features/opensearch-dashboards/ci-cd-build-fixes.md)
-- [Dashboards Dependency Updates](features/opensearch-dashboards/dashboards-dependency-updates.md)
-- [Dashboards Features](features/opensearch-dashboards/dashboards-features.md)
-- [Query Assistant](features/opensearch-dashboards/query-assistant.md)
+- [Dashboards Dependency Updates](features/opensearch-dashboards/dashboards-opensearch-dashboards-dependency-updates.md)
+- [Dashboards Features](features/opensearch-dashboards/opensearch-dashboards-dashboards-features.md)
+- [Query Assistant](features/opensearch-dashboards/opensearch-dashboards-query-assistant.md)
 - [Dashboard & Visualization Fixes](features/opensearch-dashboards/dashboard-and-visualization-fixes.md)
-- [Cross-Cluster Search](features/opensearch-dashboards/cross-cluster-search.md)
-- [Data Importer](features/opensearch-dashboards/data-importer.md)
-- [Dashboards CI/CD & Documentation](features/opensearch-dashboards/dashboards-ci-cd-documentation.md)
-- [Dashboards Cypress Testing](features/opensearch-dashboards/dashboards-cypress-testing.md)
+- [Cross-Cluster Search](features/opensearch-dashboards/opensearch-dashboards-cross-cluster-search.md)
+- [Data Importer](features/opensearch-dashboards/opensearch-dashboards-data-importer.md)
+- [Dashboards CI/CD & Documentation](features/opensearch-dashboards/opensearch-dashboards-dashboards-ci-cd-documentation.md)
+- [Dashboards Cypress Testing](features/opensearch-dashboards/opensearch-dashboards-dashboards-cypress-testing.md)
 - [Dashboards Dependencies](features/opensearch-dashboards/dashboards-dependencies.md)
-- [Dashboards Frontend Cleanup](features/opensearch-dashboards/dashboards-frontend-cleanup.md)
+- [Dashboards Frontend Cleanup](features/opensearch-dashboards/opensearch-dashboards-dashboards-frontend-cleanup.md)
 - [Dashboards UI/UX Fixes](features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
 - [Discover Plugin Enhancements](features/opensearch-dashboards/discover-plugin-enhancements.md)
 - [Discover Summary / AI Assistant Integration](features/opensearch-dashboards/discover-summary-ai-assistant-integration.md)
@@ -110,12 +110,12 @@ tags:
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md)
 - [Workspace Improvements](features/opensearch-dashboards/workspace-improvements.md)
 - [Multi-Data Source (MDS)](features/opensearch-dashboards/multi-data-source-mds.md)
-- [Webpack & Build Performance](features/opensearch-dashboards/webpack-and-build-performance.md)
+- [Webpack & Build Performance](features/opensearch-dashboards/opensearch-dashboards-webpack-and-build-performance.md)
 - [Dashboards CVE Fixes](features/opensearch-dashboards/dashboards-cve-fixes.md)
 
 ## reporting
 
-- [AUTO Version Increment](features/reporting/auto-version-increment.md)
+- [AUTO Version Increment](features/reporting/auto-multi-plugin-version-increment.md)
 - [CI/Workflow Fixes](features/reporting/ci-workflow-fixes.md)
 - [Java Agent Build Fix](features/reporting/java-agent-build-fix.md)
 
@@ -129,12 +129,12 @@ tags:
 - [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)
 - [Security Plugin Changes](features/security/security-plugin-changes.md)
 - [Security Code Quality & Testing](features/security/security-code-quality-testing.md)
-- [Security Dependency Bumps](features/security/security-dependency-bumps.md)
-- [Systemd Security Configurations](features/security/systemd-security-configurations.md)
+- [Security Dependency Bumps](features/security/security-multi-plugin-dependency-bumps.md)
+- [Systemd Security Configurations](features/security/opensearch-systemd-security-configurations.md)
 
 ## dashboards-flow-framework
 
-- [AI Search Flows](features/dashboards-flow-framework/ai-search-flows.md)
+- [AI Search Flows](features/dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
 - [AI Search Flows Dashboards Bug Fixes](features/dashboards-flow-framework/ai-search-flows-dashboards-bugfixes.md)
 - [Dashboards BWC](features/dashboards-flow-framework/dashboards-bwc.md)
 - [Data Ingestion Dashboards](features/dashboards-flow-framework/data-ingestion-dashboards.md)
@@ -146,10 +146,10 @@ tags:
 
 ## sql
 
-- [Calcite Query Engine](features/sql/calcite-query-engine.md)
+- [Calcite Query Engine](features/sql/sql-calcite-query-engine.md)
 - [SQL/PPL Engine](features/sql/sqlppl-engine.md)
 - [SQL/PPL v3.0.0 Breaking Changes](features/sql/sql-ppl-v3-breaking-changes.md)
-- [SQL/PPL Documentation](features/sql/sql-ppl-documentation.md)
+- [SQL/PPL Documentation](features/sql/sql-sql-ppl-documentation.md)
 
 ## asynchronous-search
 
@@ -161,12 +161,12 @@ tags:
 
 ## multi-plugin
 
-- [CI/CD & Testing Infrastructure](features/multi-plugin/ci-cd-testing-infrastructure.md)
-- [CVE Fixes & Dependency Updates](features/multi-plugin/cve-fixes-dependency-updates.md)
+- [CI/CD & Testing Infrastructure](features/multi-plugin/multi-plugin-ci-cd-testing-infrastructure.md)
+- [CVE Fixes & Dependency Updates](features/multi-plugin/cve-fixes-opensearch-dashboards-dependency-updates.md)
 - [CVE Fixes & Dependency Updates (Batch 2)](features/multi-plugin/cve-fixes-dependency-updates-batch2.md)
-- [JDK 21 & Java Agent Migration](features/multi-plugin/jdk-21-java-agent-migration.md)
+- [JDK 21 & Java Agent Migration](features/multi-plugin/multi-plugin-jdk-21-reporting-java-agent-migration.md)
 - [Java Agent / SecurityManager Migration (Batch 2)](features/multi-plugin/java-agent-securitymanager-migration-batch2.md)
-- [Version Bumps & Release Notes](features/multi-plugin/version-bumps-release-notes.md)
+- [Version Bumps & Release Notes](features/multi-plugin/multi-plugin-version-bumps-release-notes.md)
 - [Version Bumps & Release Qualifiers (Batch 2)](features/multi-plugin/version-bumps-release-qualifiers-batch2.md)
 
 ## opensearch-remote-metadata-sdk
@@ -192,12 +192,12 @@ tags:
 
 ## dashboards-observability
 
-- [Observability Notebooks](features/dashboards-observability/observability-notebooks.md)
-- [Observability / Traces](features/dashboards-observability/observability-traces.md)
+- [Observability Notebooks](features/dashboards-observability/dashboards-observability-observability-notebooks.md)
+- [Observability / Traces](features/dashboards-observability/dashboards-observability-observability-traces.md)
 
 ## dashboards-maps
 
-- [Maps & Geospatial](features/dashboards-maps/maps-geospatial.md)
+- [Maps & Geospatial](features/dashboards-maps/dashboards-maps-maps-geospatial.md)
 
 ## custom-codecs
 
@@ -210,7 +210,7 @@ tags:
 
 ## dashboards-assistant
 
-- [AI Assistant / Chatbot](features/dashboards-assistant/ai-assistant-chatbot.md)
+- [AI Assistant / Chatbot](features/dashboards-assistant/dashboards-assistant-ai-assistant-chatbot.md)
 
 ## dashboards-query-workbench
 
@@ -218,10 +218,10 @@ tags:
 
 ## k-nn
 
-- [Vector Search (k-NN)](features/k-nn/vector-search-k-nn.md)
+- [Vector Search (k-NN)](features/k-nn/k-nn-vector-search-k-nn.md)
 - [Explain API Support](features/k-nn/explain-api-support.md)
-- [Lucene On Faiss (Memory Optimized Search)](features/k-nn/lucene-on-faiss.md)
-- [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md)
+- [Lucene On Faiss (Memory Optimized Search)](features/k-nn/k-nn-lucene-on-faiss.md)
+- [Remote Vector Index Build](features/k-nn/k-nn-remote-vector-index-build.md)
 - [Derived Source & Codec Refactoring](features/k-nn/derived-source-codec-refactoring.md)
 
 ## learning
@@ -260,7 +260,7 @@ tags:
 ## skills
 
 - [Skills / Tools Bugfixes and Enhancements](features/skills/skills-tools-bugfixes.md)
-- [Skills Plugin Compatibility](features/skills/skills-plugin-compatibility.md)
+- [Skills Plugin Compatibility](features/skills/skills-opensearch-dashboards-plugin-compatibility.md)
 - [SQL Plugin Jar Hell Fix](features/skills/sql-plugin-jar-hell-fix.md)
 
 ## security-analytics

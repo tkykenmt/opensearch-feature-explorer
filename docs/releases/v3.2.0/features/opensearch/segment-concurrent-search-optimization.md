@@ -111,4 +111,4 @@ The optimized grouping algorithm provides:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/concurrent-segment-search.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-concurrent-segment-search.md)

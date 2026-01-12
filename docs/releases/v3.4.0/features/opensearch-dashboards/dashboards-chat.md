@@ -179,4 +179,4 @@ No migration required. New features are additive and backward compatible with ex
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/ai-chat.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-ai-chat.md)

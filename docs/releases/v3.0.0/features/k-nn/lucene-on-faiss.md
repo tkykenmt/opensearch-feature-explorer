@@ -154,4 +154,4 @@ PUT /my-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/lucene-on-faiss.md)
+- [Full feature documentation](../../../../features/k-nn/k-nn-lucene-on-faiss.md)

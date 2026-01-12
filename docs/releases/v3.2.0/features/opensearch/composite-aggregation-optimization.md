@@ -117,4 +117,4 @@ POST /logs-*/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/composite-aggregation.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-composite-aggregation.md)

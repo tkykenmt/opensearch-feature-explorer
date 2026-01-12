@@ -122,4 +122,4 @@ if (assistantEnabled) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-assistant/ai-assistant-chatbot.md)
+- [Full feature documentation](../../../../features/dashboards-assistant/dashboards-assistant-ai-assistant-chatbot.md)

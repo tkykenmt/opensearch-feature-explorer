@@ -11,23 +11,23 @@ AI-powered search capabilities using neural networks and embeddings.
 
 ## Overview
 
-- [Hybrid Query](hybrid-query.md) - Combine neural and lexical search
+- [Hybrid Query](neural-search-hybrid-query.md) - Combine neural and lexical search
 
 ## Search Types
 
 | Document | Description |
 |----------|-------------|
-| [Neural Sparse Search](neural-sparse-search.md) | Sparse vector search |
-| [SEISMIC Sparse ANN](seismic-sparse-ann.md) | High-performance sparse search |
-| [Agentic Search](agentic-search.md) | AI agent-powered search |
+| [Neural Sparse Search](neural-search-neural-sparse-search.md) | Sparse vector search |
+| [SEISMIC Sparse ANN](neural-search-seismic-sparse-ann.md) | High-performance sparse search |
+| [Agentic Search](neural-search-agentic-search.md) | AI agent-powered search |
 
 ## Semantic Features
 
 | Document | Description |
 |----------|-------------|
-| [Semantic Field](semantic-field.md) | Auto-embedding field type |
-| [Semantic Highlighting](semantic-highlighting.md) | AI-powered highlighting |
-| [Text Chunking](text-chunking.md) | Document chunking strategies |
+| [Semantic Field](neural-search-semantic-field.md) | Auto-embedding field type |
+| [Semantic Highlighting](neural-search-semantic-highlighting.md) | AI-powered highlighting |
+| [Text Chunking](neural-search-text-chunking.md) | Document chunking strategies |
 
 ## Ranking & Scoring
 
@@ -40,7 +40,7 @@ AI-powered search capabilities using neural networks and embeddings.
 
 | Document | Description |
 |----------|-------------|
-| [Batch Ingestion](batch-ingestion.md) | Bulk embedding generation |
+| [Batch Ingestion](ml-commons-neural-search-batch-ingestion.md) | Bulk embedding generation |
 
 ## Observability
 

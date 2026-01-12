@@ -97,4 +97,4 @@ No migration required. These are additive improvements to the existing Query Pan
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/query-editor.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-query-editor.md)

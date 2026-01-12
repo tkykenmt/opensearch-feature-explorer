@@ -81,4 +81,4 @@ For workflow maintainers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/github-actions-updates.md)
+- [Full feature documentation](../../../features/security/security-github-actions-updates.md)

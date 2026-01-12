@@ -114,4 +114,4 @@ protected QueryBuilder doRewrite(QueryRewriteContext queryRewriteContext) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/query-coordinator-context.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-query-coordinator-context.md)

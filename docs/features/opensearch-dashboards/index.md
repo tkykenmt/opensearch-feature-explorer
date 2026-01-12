@@ -11,109 +11,109 @@ Core features and improvements for OpenSearch Dashboards.
 
 | Document | Description |
 |----------|-------------|
-| [AI Chat](ai-chat.md) | AI chat interface |
-| [AI Insights](dashboards-ai-insights.md) | AI-powered insights |
-| [Query Assistant](query-assistant.md) | Natural language queries |
+| [AI Chat](opensearch-dashboards-ai-chat.md) | AI chat interface |
+| [AI Insights](opensearch-dashboards-dashboards-ai-insights.md) | AI-powered insights |
+| [Query Assistant](opensearch-dashboards-query-assistant.md) | Natural language queries |
 
 ## Data & Query
 
 | Document | Description |
 |----------|-------------|
-| [Discover](discover.md) | Data exploration |
-| [Query Editor](query-editor.md) | Query editing |
-| [Query Enhancements](query-enhancements.md) | Query improvements |
-| [Async Query](async-query.md) | Asynchronous queries |
-| [Cross-Cluster Search](cross-cluster-search.md) | Multi-cluster queries |
-| [Saved Query UX](saved-query-ux.md) | Saved queries |
+| [Discover](opensearch-dashboards-discover.md) | Data exploration |
+| [Query Editor](opensearch-dashboards-query-editor.md) | Query editing |
+| [Query Enhancements](opensearch-dashboards-query-enhancements.md) | Query improvements |
+| [Async Query](opensearch-dashboards-async-query.md) | Asynchronous queries |
+| [Cross-Cluster Search](opensearch-dashboards-cross-cluster-search.md) | Multi-cluster queries |
+| [Saved Query UX](opensearch-dashboards-saved-query-ux.md) | Saved queries |
 
 ## Data Sources
 
 | Document | Description |
 |----------|-------------|
-| [Data Connections](data-connections.md) | Connection management |
-| [Data Source Selector](data-source-selector.md) | Source selection |
-| [Data Source Permissions](data-source-permissions.md) | Access control |
-| [Data Importer](data-importer.md) | Data import |
-| [Dataset Explorer](dataset-explorer.md) | Dataset browsing |
-| [Dataset Management](dataset-management.md) | Dataset operations |
+| [Data Connections](opensearch-dashboards-data-connections.md) | Connection management |
+| [Data Source Selector](opensearch-dashboards-data-source-selector.md) | Source selection |
+| [Data Source Permissions](opensearch-dashboards-data-source-permissions.md) | Access control |
+| [Data Importer](opensearch-dashboards-data-importer.md) | Data import |
+| [Dataset Explorer](opensearch-dashboards-dataset-explorer.md) | Dataset browsing |
+| [Dataset Management](opensearch-dashboards-dataset-management.md) | Dataset operations |
 
 ## Visualization
 
 | Document | Description |
 |----------|-------------|
-| [Bar Chart Enhancements](bar-chart-enhancements.md) | Chart improvements |
-| [TSVB Visualization](tsvb-visualization.md) | Time series visual builder |
-| [Input Control Visualization](input-control-visualization.md) | Interactive controls |
+| [Bar Chart Enhancements](opensearch-dashboards-bar-chart-enhancements.md) | Chart improvements |
+| [TSVB Visualization](opensearch-dashboards-tsvb-visualization.md) | Time series visual builder |
+| [Input Control Visualization](opensearch-dashboards-input-control-visualization.md) | Interactive controls |
 
 ## Navigation & UI
 
 | Document | Description |
 |----------|-------------|
-| [Navigation](navigation.md) | Navigation system |
-| [Global Search](global-search.md) | Search functionality |
-| [Workspace](workspace.md) | Workspace management |
-| [Banner Plugin](banner-plugin.md) | Banner display |
-| [OUI](oui.md) | OpenSearch UI components |
-| [UI Settings](ui-settings.md) | UI configuration |
+| [Navigation](opensearch-dashboards-navigation.md) | Navigation system |
+| [Global Search](opensearch-dashboards-global-search.md) | Search functionality |
+| [Workspace](opensearch-dashboards-workspace.md) | Workspace management |
+| [Banner Plugin](opensearch-dashboards-banner-plugin.md) | Banner display |
+| [OUI](opensearch-dashboards-oui.md) | OpenSearch UI components |
+| [UI Settings](opensearch-dashboards-ui-settings.md) | UI configuration |
 
 ## Developer Tools
 
 | Document | Description |
 |----------|-------------|
-| [Dev Tools](dev-tools.md) | Developer console |
-| [Dashboards Console](dashboards-console.md) | Console improvements |
-| [Monaco Editor](monaco-editor.md) | Code editor |
+| [Dev Tools](opensearch-dashboards-dev-tools.md) | Developer console |
+| [Dashboards Console](opensearch-dashboards-dashboards-console.md) | Console improvements |
+| [Monaco Editor](opensearch-dashboards-monaco-editor.md) | Code editor |
 
 ## Observability
 
 | Document | Description |
 |----------|-------------|
-| [Explore](explore.md) | Explore plugin |
-| [Explore Traces](explore-traces.md) | Trace exploration |
+| [Explore](opensearch-dashboards-explore.md) | Explore plugin |
+| [Explore Traces](opensearch-dashboards-explore-traces.md) | Trace exploration |
 
 ## Configuration
 
 | Document | Description |
 |----------|-------------|
-| [Dynamic Config](dynamic-config.md) | Dynamic configuration |
-| [Experimental Features](experimental-features.md) | Feature flags |
-| [Plugin Compatibility](plugin-compatibility.md) | Plugin versions |
-| [i18n & Localization](i18n-localization.md) | Internationalization |
+| [Dynamic Config](opensearch-dashboards-dynamic-config.md) | Dynamic configuration |
+| [Experimental Features](opensearch-dashboards-experimental-features.md) | Feature flags |
+| [Plugin Compatibility](opensearch-dashboards-plugin-compatibility.md) | Plugin versions |
+| [i18n & Localization](opensearch-dashboards-i18n-localization.md) | Internationalization |
 
 ## Security
 
 | Document | Description |
 |----------|-------------|
-| [CSP](dashboards-csp.md) | Content Security Policy |
-| [DOMPurify Sanitization](dompurify-sanitization.md) | XSS protection |
+| [CSP](opensearch-dashboards-dashboards-csp.md) | Content Security Policy |
+| [DOMPurify Sanitization](opensearch-dashboards-dompurify-sanitization.md) | XSS protection |
 
 ## Performance & Build
 
 | Document | Description |
 |----------|-------------|
-| [Webpack & Build Performance](webpack-and-build-performance.md) | Build optimization |
-| [OSD Optimizer Cache](osd-optimizer-cache.md) | Build caching |
-| [Dependency Updates](dependency-updates.md) | Dependencies |
+| [Webpack & Build Performance](opensearch-dashboards-webpack-and-build-performance.md) | Build optimization |
+| [OSD Optimizer Cache](opensearch-dashboards-osd-optimizer-cache.md) | Build caching |
+| [Dependency Updates](opensearch-dashboards-dependency-updates.md) | Dependencies |
 
 ## Quality & Testing
 
 | Document | Description |
 |----------|-------------|
-| [Code Quality & Testing](dashboards-code-quality-testing.md) | Code quality |
-| [CI/Tests](dashboards-ci-tests.md) | Test infrastructure |
-| [Cypress Testing](dashboards-cypress-testing.md) | E2E tests |
-| [CI/CD & Documentation](dashboards-ci-cd-documentation.md) | CI pipelines |
+| [Code Quality & Testing](opensearch-dashboards-dashboards-code-quality-testing.md) | Code quality |
+| [CI/Tests](dashboards-dashboards-observability-search-relevance-ci-tests.md) | Test infrastructure |
+| [Cypress Testing](opensearch-dashboards-dashboards-cypress-testing.md) | E2E tests |
+| [CI/CD & Documentation](opensearch-dashboards-dashboards-ci-cd-documentation.md) | CI pipelines |
 
 ## Maintenance
 
 | Document | Description |
 |----------|-------------|
-| [Dashboards Features](dashboards-features.md) | Feature overview |
-| [Dashboards Improvements](dashboards-improvements.md) | General improvements |
-| [Dashboards Maintenance](dashboards-maintenance.md) | Maintenance tasks |
-| [Frontend Cleanup](dashboards-frontend-cleanup.md) | Code cleanup |
-| [UI Updates](dashboards-ui-updates.md) | UI changes |
-| [Content Management](content-management.md) | Content handling |
-| [Sample Data](sample-data.md) | Sample datasets |
-| [Keyboard Shortcuts](keyboard-shortcuts.md) | Shortcuts |
-| [Vended Dashboard Progress](vended-dashboard-progress.md) | Vended dashboards |
+| [Dashboards Features](opensearch-dashboards-dashboards-features.md) | Feature overview |
+| [Dashboards Improvements](opensearch-dashboards-dashboards-improvements.md) | General improvements |
+| [Dashboards Maintenance](opensearch-dashboards-dashboards-maintenance.md) | Maintenance tasks |
+| [Frontend Cleanup](opensearch-dashboards-dashboards-frontend-cleanup.md) | Code cleanup |
+| [UI Updates](opensearch-dashboards-dashboards-ui-updates.md) | UI changes |
+| [Content Management](opensearch-dashboards-content-management.md) | Content handling |
+| [Sample Data](opensearch-dashboards-sample-data.md) | Sample datasets |
+| [Keyboard Shortcuts](opensearch-dashboards-keyboard-shortcuts.md) | Shortcuts |
+| [Vended Dashboard Progress](opensearch-dashboards-vended-dashboard-progress.md) | Vended dashboards |

@@ -126,10 +126,10 @@ PUT _cluster/settings
 - **v3.2.0** (2025-07): Enhanced auto-deployment to handle partially deployed models by comparing current worker nodes against target worker nodes
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
 - [Flow Framework](../flow-framework/flow-framework.md)
 - [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-plugin-dependencies.md)
+- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

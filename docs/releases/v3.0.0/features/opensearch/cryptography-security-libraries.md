@@ -146,4 +146,4 @@ TrustManagerFactory tmf = TrustManagerFactory.getInstance("PKIX", "BCJSSE");
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/cryptography-security-libraries.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-cryptography-security-libraries.md)

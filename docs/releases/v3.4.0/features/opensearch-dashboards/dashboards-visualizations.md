@@ -109,4 +109,4 @@ No migration required. New features are additive and backward compatible.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/explore.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-explore.md)

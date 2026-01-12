@@ -196,4 +196,4 @@ No migration required. Existing SEISMIC indexes without nested fields continue t
 
 ## Related Feature Report
 
-- [Full SEISMIC feature documentation](../../../features/neural-search/seismic-sparse-ann.md)
+- [Full SEISMIC feature documentation](../../../features/neural-search/neural-search-seismic-sparse-ann.md)

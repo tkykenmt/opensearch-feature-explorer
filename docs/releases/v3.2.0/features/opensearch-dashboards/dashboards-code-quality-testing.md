@@ -132,4 +132,4 @@ For developers working with TypeScript errors:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dashboards-code-quality-testing.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-code-quality-testing.md)

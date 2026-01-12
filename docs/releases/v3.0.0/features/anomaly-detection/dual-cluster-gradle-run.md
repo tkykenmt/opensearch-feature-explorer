@@ -103,4 +103,4 @@ graph TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/dual-cluster-development.md)
+- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection-dual-cluster-development.md)

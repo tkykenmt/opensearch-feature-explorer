@@ -148,4 +148,4 @@ curl -X POST http://localhost:5601/api/opensearch-dashboards/settings \
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/experimental-features.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-experimental-features.md)

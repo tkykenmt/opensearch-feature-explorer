@@ -139,4 +139,4 @@ This is a backward-compatible change. Existing clients will continue to work, bu
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/multi-search-api.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-multi-search-api.md)

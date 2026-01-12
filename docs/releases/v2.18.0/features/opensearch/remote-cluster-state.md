@@ -125,4 +125,4 @@ This is a backward-compatible enhancement. No migration is required. The feature
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/cluster-state-management.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-cluster-state-management.md)

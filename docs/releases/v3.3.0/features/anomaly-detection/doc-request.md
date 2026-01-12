@@ -108,4 +108,4 @@ boolean hasAccess = resourceAccessEvaluator.evaluate(user, resourceType, resourc
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/docrequest-refactoring.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-docrequest-refactoring.md)

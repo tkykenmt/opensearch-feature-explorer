@@ -156,7 +156,7 @@ opensearch_security.proxycache:
   - Improved redirect URL handling in OpenSearch Dashboards
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

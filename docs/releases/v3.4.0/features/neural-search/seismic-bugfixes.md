@@ -123,4 +123,4 @@ GET my-seismic-index/_search
 
 ## Related Feature Report
 
-- [SEISMIC Sparse ANN](../../../features/neural-search/seismic-sparse-ann.md)
+- [SEISMIC Sparse ANN](../../../features/neural-search/neural-search-seismic-sparse-ann.md)

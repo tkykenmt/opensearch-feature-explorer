@@ -97,7 +97,7 @@ GET _plugins/_anomaly_detection/detectors/<matching_detector_id>
 
 ## Related Features
 - [Alerting](../alerting/alerting.md)
-- [ML Commons](../ml-commons/agentic-memory.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
 - [Job Scheduler](../job-scheduler/job-scheduler.md)
 
 ## References

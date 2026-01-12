@@ -89,4 +89,4 @@ The fixes are transparent to users. The dynamic config system now correctly hand
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dynamic-config.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dynamic-config.md)

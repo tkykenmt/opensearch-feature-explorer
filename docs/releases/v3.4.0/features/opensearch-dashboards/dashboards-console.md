@@ -73,4 +73,4 @@ const onSaveSettings = (newSettings: DevToolsSettings) => {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-console.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-console.md)

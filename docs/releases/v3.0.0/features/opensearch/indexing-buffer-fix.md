@@ -101,4 +101,4 @@ If your application parses the Nodes Info API response and relies on these field
 
 ## Related Feature Report
 
-- [Nodes Info API](../../../features/opensearch/nodes-info-api.md)
+- [Nodes Info API](../../../features/opensearch/opensearch-nodes-info-api.md)

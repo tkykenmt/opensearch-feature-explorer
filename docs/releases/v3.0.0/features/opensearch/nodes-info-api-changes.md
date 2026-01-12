@@ -107,4 +107,4 @@ If your application relies on `search_pipelines` information from the Nodes Info
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/nodes-info-api.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-nodes-info-api.md)

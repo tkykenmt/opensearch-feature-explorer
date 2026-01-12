@@ -113,4 +113,4 @@ java.lang.NoClassDefFoundError: software/amazon/awssdk/http/auth/aws/scheme/AwsV
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/crypto-kms-plugin.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-crypto-kms-plugin.md)

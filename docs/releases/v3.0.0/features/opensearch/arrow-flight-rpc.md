@@ -159,4 +159,4 @@ This is a new experimental feature. To adopt:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/arrow-flight-rpc.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-arrow-flight-rpc.md)

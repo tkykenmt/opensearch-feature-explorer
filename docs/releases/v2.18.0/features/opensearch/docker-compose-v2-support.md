@@ -97,4 +97,4 @@ No migration required. This is a backward-compatible change that adds support fo
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/docker-compose-v2-support.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-docker-compose-v2-support.md)

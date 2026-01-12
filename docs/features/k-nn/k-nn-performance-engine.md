@@ -176,8 +176,8 @@ GET /products-vectors/_search
 - **v2.18.0** (2024-11-05): Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

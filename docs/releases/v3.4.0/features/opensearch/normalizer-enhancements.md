@@ -114,4 +114,4 @@ The stored and indexed value will be truncated to `abcdefghij` (10 characters, l
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/normalizer-enhancements.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-normalizer-enhancements.md)

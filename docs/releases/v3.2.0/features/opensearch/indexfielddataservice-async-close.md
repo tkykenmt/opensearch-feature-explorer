@@ -135,4 +135,4 @@ This is a transparent bugfix. No migration steps are required.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/field-data-cache.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-field-data-cache.md)

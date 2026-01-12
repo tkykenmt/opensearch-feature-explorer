@@ -159,4 +159,4 @@ This is a new feature with no migration required. To adopt:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/rule-based-auto-tagging.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-rule-based-auto-tagging.md)

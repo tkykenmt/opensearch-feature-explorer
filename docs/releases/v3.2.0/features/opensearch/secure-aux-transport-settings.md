@@ -114,4 +114,4 @@ Plugins implementing `SecureAuxTransportSettingsProvider` must update their impl
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/secure-aux-transport-settings.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-secure-aux-transport-settings.md)

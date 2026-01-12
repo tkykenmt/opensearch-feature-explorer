@@ -143,4 +143,4 @@ source=data | rex field=title mode=sed "y/ /_/" | fields title
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/ppl-rex-and-regex-commands.md)
+- [Full feature documentation](../../../../features/sql/sql-ppl-rex-and-regex-commands.md)

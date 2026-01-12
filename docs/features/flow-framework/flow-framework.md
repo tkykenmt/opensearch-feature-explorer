@@ -203,8 +203,8 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
 
 ## Related Features
-- [ML Commons](../ml-commons/agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/ai-search-flows.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
+- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
 
 ## References
 

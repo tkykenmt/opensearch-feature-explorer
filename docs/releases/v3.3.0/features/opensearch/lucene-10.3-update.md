@@ -102,4 +102,4 @@ GET /_nodes?filter_path=nodes.*.version
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/lucene-upgrade.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-lucene-upgrade.md)

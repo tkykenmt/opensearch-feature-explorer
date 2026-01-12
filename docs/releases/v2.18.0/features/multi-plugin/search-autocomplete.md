@@ -142,4 +142,4 @@ GET products/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/search-autocomplete.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-search-autocomplete.md)

@@ -131,4 +131,4 @@ GET opensearch_dashboards_sample_data_ecommerce/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/percentiles-aggregation.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-percentiles-aggregation.md)

@@ -223,4 +223,4 @@ The Explore plugin is experimental and runs alongside the existing Discover plug
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/explore.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-explore.md)

@@ -156,4 +156,4 @@ GET case_test/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/wildcard-field.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-wildcard-field.md)

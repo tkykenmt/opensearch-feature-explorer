@@ -174,4 +174,4 @@ POST _plugins/_security_analytics/threat_intel/sources/
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security-analytics/threat-intelligence.md)
+- [Full feature documentation](../../../features/security-analytics/security-analytics-threat-intelligence.md)

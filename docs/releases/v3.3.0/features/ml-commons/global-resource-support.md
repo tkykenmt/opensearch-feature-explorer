@@ -122,4 +122,4 @@ When deploying a model that references a global connector, the system automatica
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/global-resource-support.md)
+- [Full feature documentation](../../../../features/ml-commons/ml-commons-global-resource-support.md)

@@ -117,4 +117,4 @@ When a query exceeds thresholds, the aggregation will now properly terminate:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/aggregation-task-cancellation.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-aggregation-task-cancellation.md)

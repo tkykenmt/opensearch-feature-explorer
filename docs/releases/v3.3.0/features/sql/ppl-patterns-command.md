@@ -102,4 +102,4 @@ Output:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/ppl-patterns-command.md)
+- [Full feature documentation](../../../../features/sql/sql-ppl-patterns-command.md)

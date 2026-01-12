@@ -134,4 +134,4 @@ No migration required. This is a bug fix that improves cluster stability during 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/cluster-state-caching.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-cluster-state-caching.md)

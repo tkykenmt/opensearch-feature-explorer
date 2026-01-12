@@ -123,4 +123,4 @@ TermsReduceBenchmark shows no regression from these changes.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/query-phase-result-consumer.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-query-phase-result-consumer.md)

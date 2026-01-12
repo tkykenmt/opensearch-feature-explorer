@@ -125,7 +125,7 @@ opensearch-reporting-cli \
 - **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component
 
 ## Related Features
-- [Reporting](../reporting/auto-version-management.md)
+- [Reporting](../reporting/reporting-auto-version-management.md)
 
 ## References
 

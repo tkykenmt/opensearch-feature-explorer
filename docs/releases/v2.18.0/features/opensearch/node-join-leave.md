@@ -107,4 +107,4 @@ No migration required. This is a bug fix that improves cluster stability automat
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/node-join-leave.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-node-join-leave.md)

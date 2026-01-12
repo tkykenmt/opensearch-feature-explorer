@@ -108,9 +108,9 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 - **v3.3.0** (2026-01-10): Migrated from commons-lang to commons-lang3, updated Lucene codec paths, forced error_prone_annotations version
 
 ## Related Features
-- [ML Commons](../ml-commons/agentic-memory.md)
-- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
+- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

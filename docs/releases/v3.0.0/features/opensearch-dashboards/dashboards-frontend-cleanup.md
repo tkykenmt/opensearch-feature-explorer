@@ -125,4 +125,4 @@ The following files were removed from the Discover plugin:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dashboards-frontend-cleanup.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-frontend-cleanup.md)

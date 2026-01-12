@@ -111,4 +111,4 @@ No migration required. The metrics are automatically available when the telemetr
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/async-shard-fetch-metrics.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-async-shard-fetch-metrics.md)

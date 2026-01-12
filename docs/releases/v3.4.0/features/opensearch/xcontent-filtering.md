@@ -124,4 +124,4 @@ public Set<String> getFilteredFields() {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/xcontent-filtering.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-xcontent-filtering.md)

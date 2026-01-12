@@ -157,8 +157,8 @@ POST my_index/_search
 - **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test
 
 ## Related Features
-- [Search Relevance](../search-relevance/ci-tests.md)
-- [ML Commons](../ml-commons/agentic-memory.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
 
 ## References
 

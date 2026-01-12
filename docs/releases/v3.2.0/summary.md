@@ -54,14 +54,14 @@ graph TB
 | Feature | Description | Report |
 |---------|-------------|--------|
 | gRPC Transport GA | Production-ready gRPC transport with plugin extensibility and proper status codes | [Details](features/opensearch/grpc-transport.md) |
-| Agentic Search | [Experimental] Natural language search with LLM-powered query translation | [Details](features/neural-search/agentic-search.md) |
-| Streaming Aggregation | Memory-efficient aggregation via segment-level streaming to coordinator | [Details](features/opensearch/streaming-transport-aggregation.md) |
+| Agentic Search | [Experimental] Natural language search with LLM-powered query translation | [Details](features/neural-search/neural-search-agentic-search.md) |
+| Streaming Aggregation | Memory-efficient aggregation via segment-level streaming to coordinator | [Details](features/opensearch/opensearch-streaming-transport-aggregation.md) |
 | GPU Indexing (FP16/Byte/Binary) | Extended GPU acceleration for additional vector types | [Details](features/k-nn/k-nn-vector-search.md) |
 | ADC & Random Rotation | Improved recall for binary quantized indices | [Details](features/k-nn/k-nn-vector-search.md) |
-| Argon2 Password Hashing | Modern memory-hard password hashing algorithm | [Details](features/security/argon2-password-hashing.md) |
-| SPIFFE X.509 SVID Support | Workload identity authentication via SPIFFE | [Details](features/security/spiffe-x.509-svid-support.md) |
-| Semantic Version Field Type | New `version` field type for semantic versioning | [Details](features/opensearch/semantic-version-field-type.md) |
-| Combined Fields Query | BM25F scoring for multi-field text search | [Details](features/opensearch/combined-fields-query.md) |
+| Argon2 Password Hashing | Modern memory-hard password hashing algorithm | [Details](features/security/security-argon2-password-hashing.md) |
+| SPIFFE X.509 SVID Support | Workload identity authentication via SPIFFE | [Details](features/security/security-spiffe-x.509-svid-support.md) |
+| Semantic Version Field Type | New `version` field type for semantic versioning | [Details](features/opensearch/opensearch-semantic-version-field-type.md) |
+| Combined Fields Query | BM25F scoring for multi-field text search | [Details](features/opensearch/opensearch-combined-fields-query.md) |
 | Execute Tool API | Direct tool execution without agent orchestration | [Details](features/ml-commons/ml-commons-agent-tools-memory.md) |
 | Memory Container APIs | AI-oriented persistent memory for agents | [Details](features/ml-commons/ml-commons-agent-tools-memory.md) |
 | Job Scheduler REST APIs | List jobs and locks via REST endpoints | [Details](features/job-scheduler/job-scheduler-enhancements.md) |
@@ -73,18 +73,18 @@ graph TB
 
 | Area | Description | Report |
 |------|-------------|--------|
-| Semantic Field | knn_vector config, batch size, prune strategies, chunking, embedding reuse | [Details](features/neural-search/semantic-field.md) |
+| Semantic Field | knn_vector config, batch size, prune strategies, chunking, embedding reuse | [Details](features/neural-search/neural-search-semantic-field.md) |
 | Hybrid Query | Upper bound for min-max normalization, inner hits with collapse | [Details](features/neural-search/hybrid-query-normalization.md) |
 | Approximation Framework | Extended to all numeric types (int, float, double, half_float, unsigned_long) | [Details](features/opensearch/approximation-framework-numeric-types.md) |
 | PPL/SQL Engine | Expanded pushdown, RelJson security, ~30% performance improvement | [Details](features/sql/ppl-engine.md) |
-| Star-tree Index | IP field search support and query statistics | [Details](features/opensearch/star-tree-index.md) |
+| Star-tree Index | IP field search support and query statistics | [Details](features/opensearch/opensearch-star-tree-index.md) |
 | Security Performance | Precomputed privileges toggle, optimized wildcard matching | [Details](features/security/security-performance-optimization.md) |
-| FIPS Compliance | BC-FIPS libraries, OpenSAML shadow JAR isolation | [Details](features/security/security-fips-compliance.md) |
+| FIPS Compliance | BC-FIPS libraries, OpenSAML shadow JAR isolation | [Details](features/security/security-opensearch-fips-compliance.md) |
 | Anomaly Detection | Support for >1 hour intervals, centralized resource access control | [Details](features/anomaly-detection/anomaly-detection-enhancements.md) |
 | ML Commons Connectors | Pre/post-process validation, improved URI validation | [Details](features/ml-commons/ml-commons-connectors.md) |
 | Search Relevance Workbench | New default UI, dashboard visualization, task scheduling | [Details](features/dashboards-search-relevance/search-relevance-workbench.md) |
 | Query Insights | MDS support for inflight queries, 30s default auto-refresh | [Details](features/query-insights-dashboards/query-insights-live-queries-enhancement.md) |
-| Lucene-on-Faiss | ADC support for memory-optimized binary quantized search | [Details](features/k-nn/lucene-on-faiss.md) |
+| Lucene-on-Faiss | ADC support for memory-optimized binary quantized search | [Details](features/k-nn/k-nn-lucene-on-faiss.md) |
 
 ## Bug Fixes
 
@@ -99,7 +99,7 @@ graph TB
 | Alerting MGet | Fix MGet bug, randomize fan-out distribution | [Details](features/alerting/alerting-plugin.md) |
 | Flow Framework | Memory fixes, error handling, race condition fix | [Details](features/flow-framework/flow-framework-bugfixes.md) |
 | Neural Search Collapse | Fix collapse bug with knn query deduplication | [#1413](https://github.com/opensearch-project/neural-search/pull/1413) |
-| CVE-2025-48734 | commons-beanutils security fix | [Details](features/multi-repo/cve-fixes-dependency-updates.md) |
+| CVE-2025-48734 | commons-beanutils security fix | [Details](features/multi-repo/cve-fixes-opensearch-dashboards-dependency-updates.md) |
 
 ## Breaking Changes
 

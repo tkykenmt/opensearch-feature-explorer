@@ -144,4 +144,4 @@ No migration required. The enhanced profiling is automatically available when us
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/profiler.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-profiler.md)

@@ -57,4 +57,4 @@ None specific to this update.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dompurify-sanitization.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dompurify-sanitization.md)

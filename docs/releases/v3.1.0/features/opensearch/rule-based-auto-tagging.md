@@ -168,4 +168,4 @@ GET logs-prod-2025/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/workload-management.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-workload-management.md)

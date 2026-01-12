@@ -107,4 +107,4 @@ If upgrading is not immediately possible:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/randomness.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-randomness.md)

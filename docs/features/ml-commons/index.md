@@ -18,7 +18,7 @@ Machine learning capabilities for OpenSearch including model deployment, inferen
 | [Model Deployment](ml-commons-model-deployment.md) | Deploy and manage ML models |
 | [Model Inference](ml-commons-model-inference.md) | Run inference on deployed models |
 | [Connector](ml-commons-connector.md) | Connect to external ML services |
-| [Connector Validation](connector-model-validation.md) | Validate connector configurations |
+| [Connector Validation](ml-commons-connector-model-validation.md) | Validate connector configurations |
 | [Sparse Encoding](ml-commons-sparse-encoding.md) | Sparse vector encoding |
 
 ## AI Agents & Tools
@@ -26,8 +26,8 @@ Machine learning capabilities for OpenSearch including model deployment, inferen
 | Document | Description |
 |----------|-------------|
 | [Agent Framework](ml-commons-agent-framework.md) | Build conversational AI agents |
-| [PlanExecuteReflect Agent](planexecutereflect-agent.md) | Advanced reasoning agent |
-| [Agentic Memory](agentic-memory.md) | Memory management for agents |
+| [PlanExecuteReflect Agent](ml-commons-planexecutereflect-agent.md) | Advanced reasoning agent |
+| [Agentic Memory](ml-commons-agentic-memory.md) | Memory management for agents |
 | [Tools](ml-commons-tools.md) | Tools for agent capabilities |
 | [MCP Integration](ml-commons-mcp.md) | Model Context Protocol support |
 
@@ -35,27 +35,27 @@ Machine learning capabilities for OpenSearch including model deployment, inferen
 
 | Document | Description |
 |----------|-------------|
-| [ML Inference Processor](ml-inference-processor.md) | Ingest pipeline processor |
-| [Batch Ingestion](batch-ingestion.md) | Bulk data processing |
-| [Streaming APIs](streaming-apis.md) | Real-time streaming inference |
-| [Query Assist](query-assist.md) | AI-powered query assistance |
+| [ML Inference Processor](ml-commons-ml-inference-processor.md) | Ingest pipeline processor |
+| [Batch Ingestion](ml-commons-neural-search-batch-ingestion.md) | Bulk data processing |
+| [Streaming APIs](ml-commons-streaming-apis.md) | Real-time streaming inference |
+| [Query Assist](ml-commons-query-assist.md) | AI-powered query assistance |
 
 ## Configuration & APIs
 
 | Document | Description |
 |----------|-------------|
 | [Configuration](ml-commons-configuration.md) | Plugin settings |
-| [Config API](ml-config-api.md) | Configuration management API |
+| [Config API](ml-commons-ml-config-api.md) | Configuration management API |
 | [Blueprints](ml-commons-blueprints.md) | Pre-built model configurations |
-| [Global Resource Support](global-resource-support.md) | Cluster-wide resources |
-| [Multi-tenancy](ml-commons-multi-tenancy.md) | Tenant isolation |
+| [Global Resource Support](ml-commons-global-resource-support.md) | Cluster-wide resources |
+| [Multi-tenancy](ml-commons-security-multi-tenancy.md) | Tenant isolation |
 
 ## Observability
 
 | Document | Description |
 |----------|-------------|
-| [Metrics Framework](metrics-framework.md) | ML metrics and monitoring |
-| [Index Insight](index-insight.md) | Index analysis with ML |
+| [Metrics Framework](ml-commons-metrics-framework.md) | ML metrics and monitoring |
+| [Index Insight](ml-commons-index-insight.md) | Index analysis with ML |
 | [Memory Metadata](ml-commons-memory-metadata.md) | Memory usage tracking |
 | [Error Handling](ml-commons-error-handling.md) | Error management |
 

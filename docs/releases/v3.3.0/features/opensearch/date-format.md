@@ -115,4 +115,4 @@ No migration is required. The new format is additive and does not affect existin
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/date-format.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-date-format.md)

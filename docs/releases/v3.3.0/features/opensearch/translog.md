@@ -116,4 +116,4 @@ Translog translog = new LocalTranslog(
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/translog.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-translog.md)

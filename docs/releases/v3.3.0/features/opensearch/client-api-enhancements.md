@@ -163,4 +163,4 @@ client.admin().indices().existsAsync(new IndicesExistsRequest(indexName))
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/client-api-enhancements.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-client-api-enhancements.md)

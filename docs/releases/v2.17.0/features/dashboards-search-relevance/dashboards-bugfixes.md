@@ -84,4 +84,4 @@ doc-table {
 
 ## Related Feature Report
 
-- [Dashboards Search Relevance Documentation Maintenance](../../../features/dashboards-search-relevance/documentation-maintenance.md)
+- [Dashboards Search Relevance Documentation Maintenance](../../../features/dashboards-search-relevance/dashboards-search-relevance-documentation-maintenance.md)

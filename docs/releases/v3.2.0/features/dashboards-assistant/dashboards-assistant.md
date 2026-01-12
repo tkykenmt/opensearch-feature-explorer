@@ -86,4 +86,4 @@ No migration required. The change is backward compatible with existing configura
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-assistant/text-to-visualization.md)
+- [Full feature documentation](../../../../features/dashboards-assistant/dashboards-assistant-text-to-visualization.md)

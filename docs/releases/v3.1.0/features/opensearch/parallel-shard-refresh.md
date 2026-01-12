@@ -105,4 +105,4 @@ PUT /_cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/parallel-shard-refresh.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-parallel-shard-refresh.md)

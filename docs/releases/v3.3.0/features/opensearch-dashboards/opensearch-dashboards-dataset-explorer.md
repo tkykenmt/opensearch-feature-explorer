@@ -135,4 +135,4 @@ const DatasetSelectWidget = () => {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dataset-explorer.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dataset-explorer.md)

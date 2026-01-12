@@ -100,4 +100,4 @@ None. This is a code cleanup change that improves maintainability.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/lucene-integration.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-lucene-integration.md)

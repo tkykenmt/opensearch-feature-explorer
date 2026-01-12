@@ -104,4 +104,4 @@ If you have tests or code that uses `batch_size` as a Bulk API parameter:
 
 ## Related Feature Report
 
-- [Batch Ingestion feature documentation](../../../../features/neural-search/batch-ingestion.md)
+- [Batch Ingestion feature documentation](../../../../features/neural-search/ml-commons-neural-search-batch-ingestion.md)

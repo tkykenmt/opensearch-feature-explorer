@@ -116,4 +116,4 @@ jwt_auth_domain:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/jwt-authentication.md)
+- [Full feature documentation](../../../../features/security/security-jwt-authentication.md)

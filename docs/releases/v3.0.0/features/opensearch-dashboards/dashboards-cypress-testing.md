@@ -98,4 +98,4 @@ yarn run cypress run --spec "cypress/integration/discover/sidebar.spec.js"
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dashboards-cypress-testing.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-cypress-testing.md)

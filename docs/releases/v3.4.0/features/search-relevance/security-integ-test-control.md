@@ -66,4 +66,4 @@ No migration required. Existing CI workflows that need security testing should a
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/search-relevance/security-integ-test-control.md)
+- [Full feature documentation](../../../features/search-relevance/search-relevance-security-integ-test-control.md)

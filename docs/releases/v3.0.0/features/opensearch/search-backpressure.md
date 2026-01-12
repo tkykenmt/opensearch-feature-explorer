@@ -97,4 +97,4 @@ No migration required. The new field is automatically available after upgrading 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/search-backpressure.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-search-backpressure.md)

@@ -133,4 +133,4 @@ The query result component now properly surfaces errors from async search strate
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/query-editor.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-query-editor.md)

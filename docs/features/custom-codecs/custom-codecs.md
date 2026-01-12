@@ -212,7 +212,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 - **v2.9.0** (2023-07-24): Initial implementation of ZSTD codecs (`zstd`, `zstd_no_dict`)
 
 ## Related Features
-- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

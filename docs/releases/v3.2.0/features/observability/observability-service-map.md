@@ -91,4 +91,4 @@ After updating these settings, the service map will request up to the configured
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-observability/trace-analytics.md)
+- [Full feature documentation](../../../../features/dashboards-observability/dashboards-observability-trace-analytics.md)

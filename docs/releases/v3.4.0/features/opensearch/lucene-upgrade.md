@@ -72,4 +72,4 @@ No migration steps are required. This is a minor version bump with backward-comp
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/lucene-upgrade.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-lucene-upgrade.md)

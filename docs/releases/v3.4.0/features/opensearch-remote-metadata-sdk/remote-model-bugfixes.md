@@ -77,4 +77,4 @@ No migration required. This is a transparent bug fix.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-remote-metadata-sdk/remote-metadata-sdk.md)
+- [Full feature documentation](../../../../features/opensearch-remote-metadata-sdk/opensearch-remote-metadata-sdk-remote-metadata-sdk.md)

@@ -206,4 +206,4 @@ Response includes scores for each named query:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/rescore-named-queries.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-rescore-named-queries.md)

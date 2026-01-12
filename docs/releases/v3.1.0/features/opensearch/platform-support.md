@@ -114,4 +114,4 @@ export JAVA_HOME=/path/to/your/jdk
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/platform-support.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-platform-support.md)

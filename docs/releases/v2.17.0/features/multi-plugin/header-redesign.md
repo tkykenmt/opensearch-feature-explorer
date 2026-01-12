@@ -127,4 +127,4 @@ if (useNewPageHeader) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/header-redesign.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-header-redesign.md)

@@ -135,4 +135,4 @@ If the cluster state changes during pagination (workload groups added/removed), 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/workload-management.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-workload-management.md)

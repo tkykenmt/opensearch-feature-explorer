@@ -20,26 +20,26 @@ tags:
 - [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md)
 - [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md)
 - [Anomaly Detection Missing Data Handling](features/anomaly-detection/anomaly-detection-missing-data-handling.md)
-- [Remote/Multi-Index Support](features/anomaly-detection/remote-multi-index-support.md)
+- [Remote/Multi-Index Support](features/anomaly-detection/anomaly-detection-remote-multi-index-support.md)
 
 ### common
 - [Common Infrastructure](features/common/common-infrastructure.md)
 
 ### dashboards-maps
 - [Maps Plugin Bugfixes](features/dashboards-maps/maps-plugin-bugfixes.md)
-- [Maps Plugin UI Updates](features/dashboards-maps/maps-plugin-ui-updates.md)
+- [Maps Plugin UI Updates](features/dashboards-maps/dashboards-maps-maps-plugin-ui-updates.md)
 
 ### dashboards-notifications
 - [Notifications Bugfixes](features/dashboards-notifications/notifications-bugfixes.md)
-- [Notifications Navigation](features/dashboards-notifications/notifications-navigation.md)
+- [Notifications Navigation](features/dashboards-notifications/notifications-opensearch-dashboards-navigation.md)
 
 ### dashboards-observability
 - [Observability Enhancements](features/dashboards-observability/observability-enhancements.md)
-- [Observability Multi-Data Source Support](features/observability/observability-multi-data-source-support.md)
-- [Observability Notebooks Bugfixes](features/dashboards-observability/observability-notebooks.md)
+- [Observability Multi-Data Source Support](features/observability/dashboards-observability-observability-multi-plugin-multi-data-source-support.md)
+- [Observability Notebooks Bugfixes](features/dashboards-observability/dashboards-observability-observability-notebooks.md)
 - [Observability UI Updates](features/observability/observability-ui-updates.md)
-- [Observability Workspace Integration](features/observability/observability-workspace-integration.md)
-- [Trace Analytics Custom Source](features/dashboards-observability/trace-analytics.md)
+- [Observability Workspace Integration](features/observability/dashboards-observability-observability-workspace-integration.md)
+- [Trace Analytics Custom Source](features/dashboards-observability/dashboards-observability-trace-analytics.md)
 - [Trace Analytics Bugfixes](features/observability/trace-analytics-bugfixes.md)
 
 ### dashboards-query-workbench
@@ -48,10 +48,10 @@ tags:
 ### dashboards-search-relevance
 - [Dashboards Bugfixes](features/dashboards-search-relevance/dashboards-bugfixes.md)
 - [Documentation Link Updates](features/dashboards-search-relevance/documentation-link-updates.md)
-- [Search Comparison Card](features/dashboards-search-relevance/search-comparison.md)
+- [Search Comparison Card](features/dashboards-search-relevance/dashboards-search-relevance-search-comparison.md)
 
 ### opensearch-dashboards
-- [Dashboards UI Updates](features/opensearch-dashboards/dashboards-ui-updates.md)
+- [Dashboards UI Updates](features/opensearch-dashboards/opensearch-dashboards-dashboards-ui-updates.md)
 
 ### documentation-website
 - [Top N API Documentation Update](features/documentation-website/top-n-api-documentation.md)
@@ -68,13 +68,13 @@ tags:
 - [Index Management UI Updates](features/index-management-dashboards/index-management-ui-updates.md)
 
 ### job-scheduler
-- [Dependency Bumps](features/job-scheduler/dependency-bumps.md)
+- [Dependency Bumps](features/job-scheduler/multi-plugin-dependency-bumps.md)
 - [Job Scheduler Bugfixes](features/job-scheduler/job-scheduler-bugfixes.md)
 
 ### security
 - [Alerting Comments Security](features/security/alerting-comments.md)
-- [Correlation Alerts](features/security/correlation-alerts.md)
-- [Dependency Bumps](features/security/dependency-bumps.md)
+- [Correlation Alerts](features/security/security-correlation-alerts.md)
+- [Dependency Bumps](features/security/multi-plugin-dependency-bumps.md)
 - [Security Auth Enhancements](features/security/security-auth-enhancements.md)
 - [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)
 
@@ -91,35 +91,35 @@ tags:
 - [Security Dashboards UI Enhancements](features/security-dashboards/security-dashboards-ui.md)
 
 ### opensearch-system-templates
-- [System Templates](features/opensearch-system-templates/system-templates.md)
+- [System Templates](features/opensearch-system-templates/opensearch-system-templates-system-templates.md)
 
 ### dashboards-plugins
 - [CVE Fixes](features/dashboards-plugins/cve-fixes.md)
 
 ### ml-commons
-- [Batch Ingestion](features/ml-commons/batch-ingestion.md)
+- [Batch Ingestion](features/ml-commons/ml-commons-neural-search-batch-ingestion.md)
 - [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md)
 - [ML Commons Connector Enhancements](features/ml-commons/ml-commons-connector-enhancements.md)
 - [ML Commons Memory Metadata](features/ml-commons/ml-commons-memory-metadata.md)
 - [ML Commons Test Fixes](features/ml-commons/ml-commons-test-fixes.md)
-- [ML Config API](features/ml-commons/ml-config-api.md)
-- [ML Inference Processor - One-to-One Support](features/ml-commons/ml-inference-processor.md)
-- [Query Assist](features/ml-commons/query-assist.md)
+- [ML Config API](features/ml-commons/ml-commons-ml-config-api.md)
+- [ML Inference Processor - One-to-One Support](features/ml-commons/ml-commons-ml-inference-processor.md)
+- [Query Assist](features/ml-commons/ml-commons-query-assist.md)
 
 ### ml-commons-dashboards
 - [ML Commons UI Updates](features/ml-commons-dashboards/ml-commons-ui-updates.md)
 
 ### neural-search
 - [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md)
-- [Neural Search Hybrid Query Bugfixes](features/neural-search/neural-search-hybrid-query.md)
+- [Neural Search Hybrid Query Bugfixes](features/neural-search/neural-search-neural-search-hybrid-query.md)
 - [Neural Search Rescore](features/neural-search/neural-search-rescore.md)
 
 ### multi-plugin
 - [CI/Infrastructure Fixes](features/multi-plugin/ci-infrastructure-fixes.md)
-- [Header Redesign](features/multi-plugin/header-redesign.md)
-- [Look & Feel UI Improvements](features/multi-plugin/look-and-feel-ui-improvements.md)
-- [Maintainer Updates](features/multi-plugin/maintainer-updates.md)
-- [Multi-Data Source Support](features/multi-plugin/multi-data-source-support.md)
+- [Header Redesign](features/multi-plugin/multi-plugin-header-redesign.md)
+- [Look & Feel UI Improvements](features/multi-plugin/multi-plugin-look-and-feel-ui-improvements.md)
+- [Maintainer Updates](features/multi-plugin/multi-plugin-maintainer-updates.md)
+- [Multi-Data Source Support](features/multi-plugin/multi-plugin-multi-data-source-support.md)
 - [Release Notes and Version Updates](features/multi-plugin/release-notes-and-version-updates.md)
 
 ### performance-analyzer
@@ -134,14 +134,14 @@ tags:
 - [Reporting Enhancements](features/reporting/reporting-enhancements.md)
 
 ### sql
-- [Flint Index Operations](features/sql/flint-index-operations.md)
-- [Flint Query Scheduler](features/sql/flint-query-scheduler.md)
-- [Security Lake Data Source](features/sql/security-lake-data-source.md)
+- [Flint Index Operations](features/sql/sql-flint-index-operations.md)
+- [Flint Query Scheduler](features/sql/sql-flint-query-scheduler.md)
+- [Security Lake Data Source](features/sql/sql-security-lake-data-source.md)
 - [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md)
 - [SQL/PPL Enhancements](features/sql/sql-ppl-enhancements.md)
 
 ### k-nn
-- [Disk-Based Vector Search](features/k-nn/disk-based-vector-search.md)
+- [Disk-Based Vector Search](features/k-nn/k-nn-disk-based-vector-search.md)
 - [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md)
 - [k-NN Byte Vector Support](features/k-nn/k-nn-byte-vector-support.md)
 - [k-NN Iterative Graph Build](features/k-nn/k-nn-iterative-graph-build.md)

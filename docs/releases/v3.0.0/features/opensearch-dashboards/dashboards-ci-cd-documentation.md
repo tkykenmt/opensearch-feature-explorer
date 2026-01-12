@@ -103,4 +103,4 @@ To set up the development environment with Docker for Cypress testing:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-ci-cd-documentation.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-ci-cd-documentation.md)

@@ -158,4 +158,4 @@ The skip list optimization automatically kicks in when:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/numeric-field-skip-list.md)
+- [Full feature documentation](../../../features/opensearch/numeric-field-opensearch-skip-list.md)

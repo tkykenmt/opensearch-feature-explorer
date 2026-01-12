@@ -169,4 +169,4 @@ source=apache_logs | grok message '%{COMMONAPACHELOG}'
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/calcite-query-engine.md)
+- [Full feature documentation](../../../../features/sql/sql-calcite-query-engine.md)

@@ -82,4 +82,4 @@ No migration required. This is a bugfix that automatically takes effect for any 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/navigation.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-navigation.md)

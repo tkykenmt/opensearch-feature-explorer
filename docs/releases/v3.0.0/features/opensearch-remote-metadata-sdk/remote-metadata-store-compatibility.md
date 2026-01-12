@@ -60,4 +60,4 @@ Plugin developers using the Remote Metadata SDK with OpenSearch 3.0.0 should ens
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-remote-metadata-sdk/remote-metadata-sdk.md)
+- [Full feature documentation](../../../features/opensearch-remote-metadata-sdk/opensearch-remote-metadata-sdk-remote-metadata-sdk.md)

@@ -142,4 +142,4 @@ GET /_cat/shards?v&h=index,shard,prirep,merges.warmer.ongoing_count
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/segment-warmer.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-segment-warmer.md)

@@ -182,4 +182,4 @@ POST _plugins/_ml/agents/_register
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/agentic-memory.md)
+- [Full feature documentation](../../../../features/ml-commons/ml-commons-agentic-memory.md)

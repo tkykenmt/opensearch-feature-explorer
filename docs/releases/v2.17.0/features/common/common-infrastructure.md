@@ -71,4 +71,4 @@ No migration required. This is a process improvement that applies to new pull re
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/common/pr-template-api-spec.md)
+- [Full feature documentation](../../../../features/common/common-pr-template-api-spec.md)

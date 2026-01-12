@@ -189,4 +189,4 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/list-apis-paginated.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-list-apis-paginated.md)

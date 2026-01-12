@@ -166,4 +166,4 @@ Existing queries continue to work without changes. To enable batch processing:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/semantic-highlighting.md)
+- [Full feature documentation](../../../features/neural-search/neural-search-semantic-highlighting.md)

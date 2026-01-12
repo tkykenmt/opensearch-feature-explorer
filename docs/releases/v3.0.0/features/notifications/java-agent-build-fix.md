@@ -87,4 +87,4 @@ Plugin developers maintaining forks or custom builds of the Notifications plugin
 
 ## Related Feature Report
 
-- [JDK 21 & Java Agent Migration](../../../../features/multi-plugin/jdk-21-java-agent-migration.md)
+- [JDK 21 & Java Agent Migration](../../../../features/multi-plugin/multi-plugin-jdk-21-reporting-java-agent-migration.md)

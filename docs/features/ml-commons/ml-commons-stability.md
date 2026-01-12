@@ -104,10 +104,10 @@ Backward-compatible configuration handling:
 - **v2.17.0** (2024-09-17): Multiple stability fixes including model deletion race condition, Cohere validation, agent error formatting, config backward compatibility, and guardrails default type
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
 - [Flow Framework](../flow-framework/flow-framework.md)
 - [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-plugin-dependencies.md)
+- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

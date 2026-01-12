@@ -95,4 +95,4 @@ DELETE _rules/workload_group/<rule_id>
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/workload-management.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-workload-management.md)

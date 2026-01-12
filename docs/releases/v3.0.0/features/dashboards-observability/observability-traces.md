@@ -152,4 +152,4 @@ From the trace detail view:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-observability/observability-traces.md)
+- [Full feature documentation](../../../features/dashboards-observability/dashboards-observability-observability-traces.md)

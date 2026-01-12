@@ -114,4 +114,4 @@ No migration required. This is a transparent bugfix that improves error handling
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/remote-vector-index-build.md)
+- [Full feature documentation](../../../../features/k-nn/k-nn-remote-vector-index-build.md)

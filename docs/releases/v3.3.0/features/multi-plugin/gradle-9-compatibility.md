@@ -86,4 +86,4 @@ No user action required. This is an internal build system fix that ensures CI/CD
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/gradle-9-compatibility.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-gradle-9-compatibility.md)

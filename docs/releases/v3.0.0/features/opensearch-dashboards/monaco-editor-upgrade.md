@@ -162,4 +162,4 @@ const suggestionProvider = {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/monaco-editor.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-monaco-editor.md)

@@ -151,4 +151,4 @@ Response includes the new `status_counter` section showing cumulative counts sin
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/search-api-tracker.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-search-api-tracker.md)

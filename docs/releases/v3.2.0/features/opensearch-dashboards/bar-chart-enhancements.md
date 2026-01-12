@@ -98,4 +98,4 @@ interface BarChartStyleControls {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/bar-chart-enhancements.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-bar-chart-enhancements.md)

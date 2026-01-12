@@ -207,7 +207,7 @@ config:
 - **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

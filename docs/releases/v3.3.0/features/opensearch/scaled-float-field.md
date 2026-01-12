@@ -127,4 +127,4 @@ POST test-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/scaled-float-field.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-scaled-float-field.md)

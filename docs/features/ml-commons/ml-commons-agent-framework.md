@@ -244,10 +244,10 @@ PUT /_plugins/_ml/agents/{agent_id}
 - **v2.13.0** (2024-03-26): Initial agent framework with flow and conversational agents
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
 - [Flow Framework](../flow-framework/flow-framework.md)
 - [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-plugin-dependencies.md)
+- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

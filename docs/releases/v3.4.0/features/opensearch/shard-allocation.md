@@ -109,4 +109,4 @@ No migration required. This is a bug fix that ensures existing settings work as 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/shard-allocation.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-shard-allocation.md)

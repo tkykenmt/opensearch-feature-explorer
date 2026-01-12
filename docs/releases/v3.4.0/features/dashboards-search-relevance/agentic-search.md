@@ -141,4 +141,4 @@ No migration required. The new features are backward compatible with existing ag
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/agentic-search.md)
+- [Full feature documentation](../../../../features/neural-search/neural-search-agentic-search.md)

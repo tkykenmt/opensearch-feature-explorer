@@ -162,7 +162,7 @@ POST _plugins/_replication/follower-index/_stop
 - **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation
 
 ## Related Features
-- [Security](../security/alerting-comments-security.md)
+- [Security](../security/security-alerting-comments-security.md)
 
 ## References
 

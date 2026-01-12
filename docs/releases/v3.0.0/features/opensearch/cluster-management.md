@@ -117,4 +117,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/cluster-management.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-cluster-management.md)

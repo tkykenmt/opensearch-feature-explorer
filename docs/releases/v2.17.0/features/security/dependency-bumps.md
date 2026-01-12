@@ -81,4 +81,4 @@ The Security plugin received 12 dependency updates:
 
 ## Related Feature Report
 
-- [Dependency Management](../../../../features/multi-plugin/dependency-bumps.md)
+- [Dependency Management](../../../../features/multi-plugin/multi-plugin-dependency-bumps.md)

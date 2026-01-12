@@ -101,7 +101,7 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 - **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements
 
 ## Related Features
-- [Security Analytics](../security-analytics/correlation-engine.md)
+- [Security Analytics](../security-analytics/security-analytics-correlation-engine.md)
 
 ## References
 

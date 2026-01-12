@@ -94,4 +94,4 @@ Added comprehensive Cypress tests for discover visualization:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/discover.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-discover.md)

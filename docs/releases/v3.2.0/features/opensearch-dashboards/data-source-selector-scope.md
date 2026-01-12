@@ -146,4 +146,4 @@ For plugins using the data source menu directly:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/data-source-selector.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-data-source-selector.md)

@@ -131,4 +131,4 @@ Check `startree_query_total` - queries from restricted users will not increment 
 
 ## Related Feature Report
 
-- [Star Tree Index feature documentation](../../../features/opensearch/star-tree-index.md)
+- [Star Tree Index feature documentation](../../../features/opensearch/opensearch-star-tree-index.md)

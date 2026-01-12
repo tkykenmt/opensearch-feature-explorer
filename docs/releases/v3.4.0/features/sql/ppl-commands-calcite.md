@@ -170,4 +170,4 @@ source=data | appendpipe [stats avg(value) as avg_value]
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/ppl-commands-calcite.md)
+- [Full feature documentation](../../../features/sql/sql-ppl-commands-calcite.md)

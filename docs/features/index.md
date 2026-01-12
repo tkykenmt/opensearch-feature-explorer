@@ -33,7 +33,7 @@ Comprehensive documentation of OpenSearch features organized by category.
 | Category | Description |
 |----------|-------------|
 | [Security Plugin](security/index.md) | Authentication and authorization |
-| [Security Analytics](security-analytics/correlation-engine.md) | Threat detection |
+| [Security Analytics](security-analytics/security-analytics-correlation-engine.md) | Threat detection |
 
 ## Observability
 
@@ -49,7 +49,7 @@ Comprehensive documentation of OpenSearch features organized by category.
 | Category | Description |
 |----------|-------------|
 | [Index Management](index-management/index-management.md) | Index lifecycle policies |
-| [Cross-Cluster Replication](cross-cluster-replication/cross-cluster-replication.md) | Data replication |
+| [Cross-Cluster Replication](cross-cluster-replication/cross-cluster-opensearch-replication.md) | Data replication |
 | [Custom Codecs](custom-codecs/custom-codecs.md) | Compression codecs |
 | [Job Scheduler](job-scheduler/job-scheduler.md) | Scheduled tasks |
 
@@ -59,9 +59,9 @@ Comprehensive documentation of OpenSearch features organized by category.
 |----------|-------------|
 | [OpenSearch Dashboards](opensearch-dashboards/) | Core dashboards features |
 | [Dashboards Assistant](dashboards-assistant/dashboards-assistant.md) | AI assistant |
-| [Dashboards Observability](dashboards-observability/trace-analytics.md) | Observability UI |
-| [Maps](dashboards-maps/maps-geospatial.md) | Geospatial visualization |
-| [Query Workbench](dashboards-query-workbench/query-workbench.md) | SQL/PPL editor |
+| [Dashboards Observability](dashboards-observability/dashboards-observability-trace-analytics.md) | Observability UI |
+| [Maps](dashboards-maps/dashboards-maps-maps-geospatial.md) | Geospatial visualization |
+| [Query Workbench](dashboards-query-workbench/dashboards-query-workbench-query-workbench.md) | SQL/PPL editor |
 
 ## Core
 
@@ -75,5 +75,5 @@ Comprehensive documentation of OpenSearch features organized by category.
 
 | Category | Description |
 |----------|-------------|
-| [Multi-Plugin](multi-plugin/dependency-bumps.md) | Cross-plugin updates |
+| [Multi-Plugin](multi-plugin/multi-plugin-dependency-bumps.md) | Cross-plugin updates |
 | [Common Utils](common-utils/common-utils.md) | Shared utilities |

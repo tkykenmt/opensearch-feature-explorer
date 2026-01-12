@@ -135,4 +135,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Warm Storage Tiering](../../../features/opensearch/warm-storage-tiering.md)
+- [Warm Storage Tiering](../../../features/opensearch/opensearch-warm-storage-tiering.md)

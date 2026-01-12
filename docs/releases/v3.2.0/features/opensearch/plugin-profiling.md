@@ -185,4 +185,4 @@ public class MySearchPlugin implements SearchPlugin {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/profiler.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-profiler.md)

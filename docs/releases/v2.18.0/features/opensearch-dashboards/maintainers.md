@@ -41,4 +41,4 @@ The following entry was added to the Current Maintainers table:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/maintainer-updates.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-maintainer-updates.md)

@@ -170,4 +170,4 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/keyboard-shortcuts.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-keyboard-shortcuts.md)

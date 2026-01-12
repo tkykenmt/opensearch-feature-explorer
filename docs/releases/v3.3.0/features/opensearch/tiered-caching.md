@@ -104,4 +104,4 @@ No migration required. The fix is automatically applied when upgrading to v3.3.0
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/tiered-caching.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-tiered-caching.md)

@@ -156,7 +156,7 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 - **v2.19.0**: Initial optimized privilege evaluation
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

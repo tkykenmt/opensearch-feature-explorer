@@ -92,4 +92,4 @@ No migration required. Existing scripts that include an empty body `{}` will con
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/cross-cluster-replication/cross-cluster-replication.md)
+- [Full feature documentation](../../../features/cross-cluster-replication/cross-cluster-opensearch-replication.md)

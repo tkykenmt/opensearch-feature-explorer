@@ -145,4 +145,4 @@ docker run --gpus all -p 80:1025 \
 
 ## Related Feature Report
 
-- [Remote Vector Index Build](../../../features/k-nn/remote-vector-index-build.md)
+- [Remote Vector Index Build](../../../features/k-nn/k-nn-remote-vector-index-build.md)

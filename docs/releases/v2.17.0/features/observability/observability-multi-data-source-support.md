@@ -140,4 +140,4 @@ await UploadAssets(tutorialId, selectedDataSourceId, selectedDataSourceLabel);
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-observability/observability-multi-data-source-support.md)
+- [Full feature documentation](../../../features/dashboards-observability/dashboards-observability-observability-multi-plugin-multi-data-source-support.md)

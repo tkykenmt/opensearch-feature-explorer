@@ -92,4 +92,4 @@ The index-management-dashboards-plugin PR also included:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/testing-library-updates.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-testing-library-updates.md)

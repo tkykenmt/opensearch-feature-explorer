@@ -144,4 +144,4 @@ Key differences:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/java-agent-accesscontroller.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-java-agent-accesscontroller.md)

@@ -139,4 +139,4 @@ cluster1:otel-v1-apm-span-*,cluster2:otel-v1-apm-span-*
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-observability/trace-analytics.md)
+- [Full feature documentation](../../../../features/dashboards-observability/dashboards-observability-trace-analytics.md)

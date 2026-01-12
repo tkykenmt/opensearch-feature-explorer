@@ -141,4 +141,4 @@ This preserves subtle variations in the query that would be lost with symmetric 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/lucene-on-faiss.md)
+- [Full feature documentation](../../../../features/k-nn/k-nn-lucene-on-faiss.md)

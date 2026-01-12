@@ -189,4 +189,4 @@ POST /_plugins/_alerting/v2/monitors
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/alerting/ppl-alerting.md)
+- [Full feature documentation](../../../features/alerting/alerting-ppl-alerting.md)

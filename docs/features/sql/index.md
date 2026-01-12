@@ -15,7 +15,7 @@ OpenSearch SQL/PPL plugin provides SQL and Piped Processing Language (PPL) query
 
 | Engine | Description | Document |
 |--------|-------------|----------|
-| V3 Calcite | Apache Calcite-based with advanced optimization | [Calcite Query Engine](calcite-query-engine.md) |
+| V3 Calcite | Apache Calcite-based with advanced optimization | [Calcite Query Engine](sql-calcite-query-engine.md) |
 | V2 | Modern query engine | [SQL/PPL Engine](sql-ppl-engine.md) |
 | V1 Legacy | Original engine (pagination, cursor) | [SQL/PPL Engine](sql-ppl-engine.md) |
 
@@ -24,24 +24,24 @@ OpenSearch SQL/PPL plugin provides SQL and Piped Processing Language (PPL) query
 ### Commands
 | Document | Description |
 |----------|-------------|
-| [PPL Commands (Calcite)](ppl-commands-calcite.md) | chart, streamstats, multisearch, replace, appendpipe |
-| [Patterns Command](ppl-patterns-command.md) | Log pattern extraction |
-| [Timechart Command](ppl-timechart-command.md) | Time-series aggregation |
-| [Rename Command](ppl-rename-command.md) | Field renaming with wildcards |
-| [Rex and Regex Commands](ppl-rex-and-regex-commands.md) | Regex-based text processing |
-| [Spath Command](ppl-spath-command.md) | JSON field extraction |
+| [PPL Commands (Calcite)](sql-ppl-commands-calcite.md) | chart, streamstats, multisearch, replace, appendpipe |
+| [Patterns Command](sql-ppl-patterns-command.md) | Log pattern extraction |
+| [Timechart Command](sql-ppl-timechart-command.md) | Time-series aggregation |
+| [Rename Command](sql-ppl-rename-command.md) | Field renaming with wildcards |
+| [Rex and Regex Commands](sql-ppl-rex-and-regex-commands.md) | Regex-based text processing |
+| [Spath Command](sql-ppl-spath-command.md) | JSON field extraction |
 
 ### Functions
 | Document | Description |
 |----------|-------------|
-| [Aggregate Functions](ppl-aggregate-functions.md) | count, avg, sum, take, etc. |
-| [Eval Functions](ppl-eval-functions.md) | Data transformation functions |
+| [Aggregate Functions](sql-ppl-aggregate-functions.md) | count, avg, sum, take, etc. |
+| [Eval Functions](sql-ppl-eval-functions.md) | Data transformation functions |
 
 ### Optimization
 | Document | Description |
 |----------|-------------|
-| [Query Optimization](ppl-query-optimization.md) | Pushdown, sort, aggregation optimizations |
-| [Query Enhancements](ppl-query-enhancements.md) | Full-text search, time modifiers, JOIN |
+| [Query Optimization](ppl-opensearch-query-optimization.md) | Pushdown, sort, aggregation optimizations |
+| [Query Enhancements](ppl-opensearch-dashboards-query-enhancements.md) | Full-text search, time modifiers, JOIN |
 
 ## SQL Features
 
@@ -55,14 +55,14 @@ OpenSearch SQL/PPL plugin provides SQL and Piped Processing Language (PPL) query
 
 | Document | Description |
 |----------|-------------|
-| [Security Lake](security-lake-data-source.md) | Query Amazon Security Lake |
-| [Flint Index Operations](flint-index-operations.md) | Flint index management |
-| [Flint Query Scheduler](flint-query-scheduler.md) | Automatic index refresh |
+| [Security Lake](sql-security-lake-data-source.md) | Query Amazon Security Lake |
+| [Flint Index Operations](sql-flint-index-operations.md) | Flint index management |
+| [Flint Query Scheduler](sql-flint-query-scheduler.md) | Automatic index refresh |
 
 ## Maintenance
 
 | Document | Description |
 |----------|-------------|
-| [CI/Tests](sql-ci-tests.md) | Testing infrastructure |
+| [CI/Tests](sql-dashboards-observability-search-relevance-ci-tests.md) | Testing infrastructure |
 | [Plugin Maintenance](sql-plugin-maintenance.md) | Dependencies and security fixes |
-| [Documentation](ppl-documentation.md) | PPL documentation updates |
+| [Documentation](sql-ppl-documentation.md) | PPL documentation updates |

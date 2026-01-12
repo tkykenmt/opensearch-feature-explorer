@@ -116,4 +116,4 @@ No migration required. This change ensures correct behavior when `track_total_hi
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/approximation-framework.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-approximation-framework.md)

@@ -143,4 +143,4 @@ When multi-select is enabled, selecting datasets concatenates their IDs with com
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/data-connections.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-data-connections.md)

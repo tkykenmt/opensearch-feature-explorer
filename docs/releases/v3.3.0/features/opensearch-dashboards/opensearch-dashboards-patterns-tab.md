@@ -146,4 +146,4 @@ No migration required. The changes are backward compatible with both V2 and Calc
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/explore.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-explore.md)

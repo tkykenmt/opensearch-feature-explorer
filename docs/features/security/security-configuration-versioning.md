@@ -293,7 +293,7 @@ curl -XPOST "https://localhost:9200/_plugins/_security/api/version/rollback/v2" 
 - **v3.2.0** (2025-06-18): Initial implementation with versioning infrastructure, change detection, and retention policy
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

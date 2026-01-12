@@ -103,4 +103,4 @@ No migration required. These are internal bugfixes that take effect automaticall
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/settings-management.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-settings-management.md)

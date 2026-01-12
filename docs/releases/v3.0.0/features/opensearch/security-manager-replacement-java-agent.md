@@ -89,7 +89,7 @@ The Java agent automatically enforces these permissions at runtime.
 
 1. **No code changes required for most plugins**: The `plugin-security.policy` format remains unchanged
 2. **Remove JSM-specific code**: Code using `System.setSecurityManager()` should be removed
-3. **Update AccessController usage**: Replace `java.security.AccessController.doPrivileged()` with `org.opensearch.secure_sm.AccessController.doPrivileged()` (see [AccessController feature](../../../features/opensearch/java-agent-accesscontroller.md))
+3. **Update AccessController usage**: Replace `java.security.AccessController.doPrivileged()` with `org.opensearch.secure_sm.AccessController.doPrivileged()` (see [AccessController feature](../../../features/opensearch/opensearch-java-agent-accesscontroller.md))
 4. **Breaking change warning**: Third-party plugins may need updates due to changes in security verification
 
 ## Limitations
@@ -127,4 +127,4 @@ The Java agent automatically enforces these permissions at runtime.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/security-manager-replacement.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-security-manager-replacement.md)

@@ -124,5 +124,5 @@ For plugin developers using the Security plugin's test framework:
 
 ## Related Feature Report
 
-- [Plugin Testing Framework](../../../features/opensearch/plugin-testing-framework.md)
+- [Plugin Testing Framework](../../../features/opensearch/opensearch-plugin-testing-framework.md)
 - [Security Testing Framework](../../../features/security/security-testing-framework.md)

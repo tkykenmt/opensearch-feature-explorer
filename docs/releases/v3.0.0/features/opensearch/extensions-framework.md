@@ -148,4 +148,4 @@ String oboToken = tokenManager.issueOnBehalfOfToken(subject, claims).asAuthHeade
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/extensions-framework.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-extensions-framework.md)
