@@ -127,10 +127,10 @@ GET _cat/shards?v&h=index,shard,prirep,state,docs,store,node
 - [Default action groups](https://docs.opensearch.org/3.0/security/access-control/default-action-groups/): Predefined permission groups
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17203](https://github.com/opensearch-project/OpenSearch/pull/17203) | Changed CatShardsAction to internal to allow non-admin users |
-| v3.0.0 | [#18185](https://github.com/opensearch-project/OpenSearch/pull/18185) | Adding new permission for _cat/shard action to 3.0 release notes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17203](https://github.com/opensearch-project/OpenSearch/pull/17203) | Changed CatShardsAction to internal to allow non-admin users |   |
+| v3.0.0 | [#18185](https://github.com/opensearch-project/OpenSearch/pull/18185) | Adding new permission for _cat/shard action to 3.0 release notes |   |
 
 ### Issues (Design / RFC)
 - [Issue #17199](https://github.com/opensearch-project/OpenSearch/issues/17199): Bug report - Make CatShardsAction internal

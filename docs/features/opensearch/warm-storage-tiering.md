@@ -201,17 +201,17 @@ PUT _plugins/_ism/policies/hot-warm-policy
 - [ISM Policies](https://docs.opensearch.org/3.0/im-plugin/ism/policies/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18375](https://github.com/opensearch-project/OpenSearch/pull/18375) | Add support for Warm Indices Write Block on Flood Watermark breach |
-| v3.2.0 | [#18767](https://github.com/opensearch-project/OpenSearch/pull/18767) | FS stats for warm nodes based on addressable space; changed default remote_data_ratio from 0 to 5 (min: 1) |
-| v3.2.0 | [#18686](https://github.com/opensearch-project/OpenSearch/pull/18686) | Disallow resize for Warm Index, add Parameterized ITs for close in remote store |
-| v3.2.0 | [#18666](https://github.com/opensearch-project/OpenSearch/pull/18666) | Replaced CPU load average with AverageTracker classes, adjusted default thresholds |
-| v3.1.0 | [#18082](https://github.com/opensearch-project/OpenSearch/pull/18082) | Add Warm Disk Threshold Allocation Decider for Warm shards |
-| v3.1.0 | [#18229](https://github.com/opensearch-project/OpenSearch/pull/18229) | Added Auto Force Merge Manager to enhance hot to warm migration |
-| v3.0.0 | [#17490](https://github.com/opensearch-project/OpenSearch/pull/17490) | Added Warm index setting and updated nomenclature for hot/warm tiering |
-| v3.0.0 | [#17573](https://github.com/opensearch-project/OpenSearch/pull/17573) | Renamed node role from search to warm |
-| v3.0.0 | [#17620](https://github.com/opensearch-project/OpenSearch/pull/17620) | Introduced new search node role for search-only shards |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18375](https://github.com/opensearch-project/OpenSearch/pull/18375) | Add support for Warm Indices Write Block on Flood Watermark breach |   |
+| v3.2.0 | [#18767](https://github.com/opensearch-project/OpenSearch/pull/18767) | FS stats for warm nodes based on addressable space; changed default remote_data_ratio from 0 to 5 (min: 1) | [#18768](https://github.com/opensearch-project/OpenSearch/issues/18768) |
+| v3.2.0 | [#18686](https://github.com/opensearch-project/OpenSearch/pull/18686) | Disallow resize for Warm Index, add Parameterized ITs for close in remote store |   |
+| v3.2.0 | [#18666](https://github.com/opensearch-project/OpenSearch/pull/18666) | Replaced CPU load average with AverageTracker classes, adjusted default thresholds |   |
+| v3.1.0 | [#18082](https://github.com/opensearch-project/OpenSearch/pull/18082) | Add Warm Disk Threshold Allocation Decider for Warm shards | [#8535](https://github.com/opensearch-project/OpenSearch/issues/8535) |
+| v3.1.0 | [#18229](https://github.com/opensearch-project/OpenSearch/pull/18229) | Added Auto Force Merge Manager to enhance hot to warm migration |   |
+| v3.0.0 | [#17490](https://github.com/opensearch-project/OpenSearch/pull/17490) | Added Warm index setting and updated nomenclature for hot/warm tiering |   |
+| v3.0.0 | [#17573](https://github.com/opensearch-project/OpenSearch/pull/17573) | Renamed node role from search to warm |   |
+| v3.0.0 | [#17620](https://github.com/opensearch-project/OpenSearch/pull/17620) | Introduced new search node role for search-only shards |   |
 
 ### Issues (Design / RFC)
 - [Issue #8535](https://github.com/opensearch-project/OpenSearch/issues/8535): Add support for a FileCacheDecider

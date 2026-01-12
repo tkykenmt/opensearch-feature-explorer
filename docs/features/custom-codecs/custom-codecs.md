@@ -217,12 +217,12 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 - [OpenSearch 2.9.0 Blog](https://opensearch.org/blog/introducing-opensearch-2-9-0/): ZSTD codec introduction
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#263](https://github.com/opensearch-project/custom-codecs/pull/263) | Adding support for composite index |
-| v3.1.0 | [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |
-| v3.1.0 | [#255](https://github.com/opensearch-project/custom-codecs/pull/255) | Fix version on BWC test dependency |
-| v3.0.0 | [#228](https://github.com/opensearch-project/custom-codecs/pull/228) | Upgrade to Lucene 10.1.0 and introduce new Codec implementation |
-| v3.0.0 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZSTD lib version to 1.5.6-1 |
-| v3.0.0 | [#235](https://github.com/opensearch-project/custom-codecs/pull/235) | Fix build due to phasing off SecurityManager in favor of Java Agent |
-| v3.0.0 | [#237](https://github.com/opensearch-project/custom-codecs/pull/237) | Add java agent plugin |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#263](https://github.com/opensearch-project/custom-codecs/pull/263) | Adding support for composite index | [#209](https://github.com/opensearch-project/custom-codecs/issues/209) |
+| v3.1.0 | [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |   |
+| v3.1.0 | [#255](https://github.com/opensearch-project/custom-codecs/pull/255) | Fix version on BWC test dependency |   |
+| v3.0.0 | [#228](https://github.com/opensearch-project/custom-codecs/pull/228) | Upgrade to Lucene 10.1.0 and introduce new Codec implementation |   |
+| v3.0.0 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZSTD lib version to 1.5.6-1 |   |
+| v3.0.0 | [#235](https://github.com/opensearch-project/custom-codecs/pull/235) | Fix build due to phasing off SecurityManager in favor of Java Agent |   |
+| v3.0.0 | [#237](https://github.com/opensearch-project/custom-codecs/pull/237) | Add java agent plugin |   |

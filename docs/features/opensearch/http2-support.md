@@ -178,9 +178,9 @@ curl --http2-prior-knowledge \
 - [RFC 7540](https://tools.ietf.org/html/rfc7540): HTTP/2 specification
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#3847](https://github.com/opensearch-project/OpenSearch/pull/3847) | Initial HTTP/2 server-side support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#3847](https://github.com/opensearch-project/OpenSearch/pull/3847) | Initial HTTP/2 server-side support | [#3651](https://github.com/opensearch-project/OpenSearch/issues/3651) |
 
 ### Issues (Design / RFC)
 - [Issue #3651](https://github.com/opensearch-project/OpenSearch/issues/3651): Original feature request for HTTP/2 support

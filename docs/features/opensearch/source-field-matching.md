@@ -119,9 +119,9 @@ GET /index/_search
 - [Retrieve Specific Fields](https://docs.opensearch.org/3.0/search-plugins/searching-data/retrieve-specific-fields/): Source filtering documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17160](https://github.com/opensearch-project/OpenSearch/pull/17160) | Add HashSet based filtering optimization to XContentMapValues |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17160](https://github.com/opensearch-project/OpenSearch/pull/17160) | Add HashSet based filtering optimization to XContentMapValues | [#17114](https://github.com/opensearch-project/OpenSearch/issues/17114) |
 
 ### Issues (Design / RFC)
 - [Issue #17114](https://github.com/opensearch-project/OpenSearch/issues/17114): Bug report - Fetching source uses automata even for simple matching

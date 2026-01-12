@@ -126,10 +126,10 @@ PUT _cluster/settings
 - [OpenSearch 2.4.0 Blog](https://opensearch.org/blog/opensearch-2-4-is-available-today/): Introduction of cluster manager task throttling
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.4.0 | [#4986](https://github.com/opensearch-project/OpenSearch/pull/4986) | Initial cluster manager task throttling implementation |
-| v3.0.0 | [#17711](https://github.com/opensearch-project/OpenSearch/pull/17711) | Enabled default throttling for all tasks |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.4.0 | [#4986](https://github.com/opensearch-project/OpenSearch/pull/4986) | Initial cluster manager task throttling implementation |   |
+| v3.0.0 | [#17711](https://github.com/opensearch-project/OpenSearch/pull/17711) | Enabled default throttling for all tasks | [#17685](https://github.com/opensearch-project/OpenSearch/issues/17685) |
 
 ### Issues (Design / RFC)
 - [Issue #17685](https://github.com/opensearch-project/OpenSearch/issues/17685): Feature request for default throttling in v3.0.0

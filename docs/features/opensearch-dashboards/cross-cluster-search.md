@@ -146,10 +146,10 @@ source = remote-cluster:logs-2024.01.01 | head 10
 - [Cross-cluster replication intro blog](https://opensearch.org/blog/cross-cluster-replication-intro/): Related blog post on cross-cluster features
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9566](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9566) | Show cross cluster connections in Data Sources and Workspaces page |
-| v3.0.0 | [#9660](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9660) | Show cross cluster connections in Index Pattern and Discover Page |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9566](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9566) | Show cross cluster connections in Data Sources and Workspaces page | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9660](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9660) | Show cross cluster connections in Index Pattern and Discover Page | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 
 ### Issues (Design / RFC)
 - [Issue #9578](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9578): Original enhancement request

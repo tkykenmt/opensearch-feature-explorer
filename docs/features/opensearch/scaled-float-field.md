@@ -118,9 +118,9 @@ Higher scaling factors provide more precision but require more storage space.
 - [Numeric field types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19188](https://github.com/opensearch-project/OpenSearch/pull/19188) | Fix precision issue between indexing and querying |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19188](https://github.com/opensearch-project/OpenSearch/pull/19188) | Fix precision issue between indexing and querying |   |
 
 ### Issues (Design / RFC)
 - [Issue #12433](https://github.com/opensearch-project/OpenSearch/issues/12433): Bug report for precision mismatch

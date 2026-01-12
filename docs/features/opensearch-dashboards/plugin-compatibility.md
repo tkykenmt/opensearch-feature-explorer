@@ -117,6 +117,6 @@ if (mode === 'ignore') {
 - [A comprehensive guide to setting up and connecting self-managed OpenSearch Dashboards](https://opensearch.org/blog/a-comprehensive-guide-to-setup-and-connect-self-managed-dashboards-with-amazon-opensearch-domain/): Discusses version compatibility bypass
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#10273](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10273) | Add `--single-version` flag with strict/ignore modes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#10273](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10273) | Add `--single-version` flag with strict/ignore modes |   |

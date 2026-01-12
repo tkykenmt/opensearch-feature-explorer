@@ -167,10 +167,10 @@ curl -X POST 'http://localhost:5601/api/opensearch-dashboards/settings?scope=use
 - [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): OpenSearch Dashboards Workspace
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927) | Make UI setting client more robust when setting key does not exist |
-| v2.18.0 | [#7953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7953) | Initial implementation of user level settings |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927) | Make UI setting client more robust when setting key does not exist |   |
+| v2.18.0 | [#7953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7953) | Initial implementation of user level settings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 
 ### Issues (Design / RFC)
 - [Issue #7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821): RFC - User level settings

@@ -145,6 +145,6 @@ EnumSet<MyOption> options = in.readOptionalEnumSet(MyOption.class);
 - [ml-commons MLStatsInput](https://github.com/opensearch-project/ml-commons/blob/main/plugin/src/main/java/org/opensearch/ml/stats/MLStatsInput.java): Example usage in plugin
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17556](https://github.com/opensearch-project/OpenSearch/pull/17556) | Add optional enum set read/write functionality |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17556](https://github.com/opensearch-project/OpenSearch/pull/17556) | Add optional enum set read/write functionality |   |

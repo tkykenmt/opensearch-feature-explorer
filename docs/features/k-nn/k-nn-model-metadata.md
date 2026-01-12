@@ -176,6 +176,6 @@ PUT /my-index
 - [k-NN Vector Quantization](https://docs.opensearch.org/latest/search-plugins/knn/knn-vector-quantization/): PQ and quantization methods
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2005](https://github.com/opensearch-project/k-NN/pull/2005) | Add model version to model metadata and change model metadata reads to be from cluster metadata |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2005](https://github.com/opensearch-project/k-NN/pull/2005) | Add model version to model metadata and change model metadata reads to be from cluster metadata |   |

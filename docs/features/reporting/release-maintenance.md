@@ -65,10 +65,10 @@ Release notes follow a standard format:
 - [Release Notes Guidelines](https://github.com/opensearch-project/opensearch-plugins/blob/main/RELEASE_NOTES.md): Official release notes format
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | [AUTO] Increment version to 3.1.0-SNAPSHOT |
-| v3.1.0 | [#1101](https://github.com/opensearch-project/reporting/pull/1101) | Adding release notes for 3.1.0 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | [AUTO] Increment version to 3.1.0-SNAPSHOT |   |
+| v3.1.0 | [#1101](https://github.com/opensearch-project/reporting/pull/1101) | Adding release notes for 3.1.0 |   |
 
 ### Issues (Design / RFC)
 - [Issue #1095](https://github.com/opensearch-project/reporting/issues/1095): [RELEASE] Release version 3.1.0

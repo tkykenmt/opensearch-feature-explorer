@@ -122,8 +122,8 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 - [Simple Schema for Observability](https://github.com/opensearch-project/opensearch-catalog/tree/main/docs/schema/observability): Schema specification
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#2530](https://github.com/opensearch-project/dashboards-observability/pull/2530) | Clean up interface for integrations static serving |
-| v3.0.0 | [#2387](https://github.com/opensearch-project/dashboards-observability/pull/2387) | Improve error handling when setting up and reading a new integration |
-| v3.0.0 | [#2376](https://github.com/opensearch-project/dashboards-observability/pull/2376) | Improve the test results for Integrations internals |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#2530](https://github.com/opensearch-project/dashboards-observability/pull/2530) | Clean up interface for integrations static serving |   |
+| v3.0.0 | [#2387](https://github.com/opensearch-project/dashboards-observability/pull/2387) | Improve error handling when setting up and reading a new integration |   |
+| v3.0.0 | [#2376](https://github.com/opensearch-project/dashboards-observability/pull/2376) | Improve the test results for Integrations internals |   |

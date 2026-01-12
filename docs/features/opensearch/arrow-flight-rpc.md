@@ -231,10 +231,10 @@ public class MyStreamProducer implements StreamProducer<VectorSchemaRoot, Buffer
 - [Blog: OpenSearch and Apache Arrow](https://opensearch.org/blog/opensearch-and-apache-arrow-a-tour-of-the-archery-range/): Overview of Arrow Flight integration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#16962](https://github.com/opensearch-project/OpenSearch/pull/16962) | Arrow Flight RPC plugin with Flight server bootstrap logic and client for internode communication |
-| v3.0.0 | [#16691](https://github.com/opensearch-project/OpenSearch/pull/16691) | Library changes containing POJOs and Arrow vector APIs |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#16962](https://github.com/opensearch-project/OpenSearch/pull/16962) | Arrow Flight RPC plugin with Flight server bootstrap logic and client for internode communication | [#16963](https://github.com/opensearch-project/OpenSearch/issues/16963) |
+| v3.0.0 | [#16691](https://github.com/opensearch-project/OpenSearch/pull/16691) | Library changes containing POJOs and Arrow vector APIs | [#16679](https://github.com/opensearch-project/OpenSearch/issues/16679) |
 
 ### Issues (Design / RFC)
 - [Issue #16679](https://github.com/opensearch-project/OpenSearch/issues/16679): META - Streams using Apache Arrow and Flight

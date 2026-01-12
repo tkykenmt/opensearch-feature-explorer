@@ -95,10 +95,10 @@ GET _plugins/_anomaly_detection/detectors/<matching_detector_id>
 - [Backend Role Filtering](https://docs.opensearch.org/latest/observing-your-data/ad/security/#advanced-limit-access-by-backend-role): Backend role configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#859](https://github.com/opensearch-project/anomaly-detection/pull/859) | Backport: Admin priority over backend role filtering |
-| v2.7.0 | [#850](https://github.com/opensearch-project/anomaly-detection/pull/850) | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#859](https://github.com/opensearch-project/anomaly-detection/pull/859) | Backport: Admin priority over backend role filtering |   |
+| v2.7.0 | [#850](https://github.com/opensearch-project/anomaly-detection/pull/850) | Initial implementation | [#842](https://github.com/opensearch-project/anomaly-detection/issues/842) |
 
 ### Issues (Design / RFC)
 - [Issue #842](https://github.com/opensearch-project/anomaly-detection/issues/842): Original feature request

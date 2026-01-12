@@ -118,10 +118,10 @@ public class MyPlugin implements IdentityAwarePlugin {
 - [PR #14630](https://github.com/opensearch-project/OpenSearch/pull/14630): Original Subject.runAs implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18570](https://github.com/opensearch-project/OpenSearch/pull/18570) | Update Subject interface to use CheckedRunnable |
-| v3.0.0 | [#14630](https://github.com/opensearch-project/OpenSearch/pull/14630) | Add runAs to Subject interface and introduce IdentityAwarePlugin |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18570](https://github.com/opensearch-project/OpenSearch/pull/18570) | Update Subject interface to use CheckedRunnable |   |
+| v3.0.0 | [#14630](https://github.com/opensearch-project/OpenSearch/pull/14630) | Add runAs to Subject interface and introduce IdentityAwarePlugin |   |
 
 ### Issues (Design / RFC)
 - [Security Issue #4439](https://github.com/opensearch-project/security/issues/4439): Related security feature request

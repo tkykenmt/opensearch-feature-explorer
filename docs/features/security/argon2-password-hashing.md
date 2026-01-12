@@ -181,9 +181,9 @@ $argon2id$v=19$m=65536,t=3,p=1$<salt>$<hash>
 - [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official configuration reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5441](https://github.com/opensearch-project/security/pull/5441) | Initial Argon2 implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#5441](https://github.com/opensearch-project/security/pull/5441) | Initial Argon2 implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #4592](https://github.com/opensearch-project/security/issues/4592): Feature request for Argon2 support

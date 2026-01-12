@@ -199,22 +199,22 @@ source=logs | stats c() as total
 - [Lucene Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4378](https://github.com/opensearch-project/sql/pull/4378) | Change default search sort tiebreaker to `_shard_doc` for PIT search |
-| v3.3.0 | [#4375](https://github.com/opensearch-project/sql/pull/4375) | Support direct query data sources (experimental) |
-| v3.3.0 | [#4344](https://github.com/opensearch-project/sql/pull/4344) | Add error handling for known limitation of SQL JOIN |
-| v3.3.0 | [#4337](https://github.com/opensearch-project/sql/pull/4337) | Optimize count aggregation performance using native doc_count |
-| v3.3.0 | [#4333](https://github.com/opensearch-project/sql/pull/4333) | Add max/min eval functions |
-| v3.3.0 | [#4327](https://github.com/opensearch-project/sql/pull/4327) | Date/Time based Span aggregation null bucket fix |
-| v3.3.0 | [#4281](https://github.com/opensearch-project/sql/pull/4281) | Add non-numeric field support for max/min functions |
-| v3.3.0 | [#4276](https://github.com/opensearch-project/sql/pull/4276) | Add `values` stats function with UDAF |
-| v3.3.0 | [#4246](https://github.com/opensearch-project/sql/pull/4246) | Support ISO8601-formatted string in PPL |
-| v3.3.0 | [#4224](https://github.com/opensearch-project/sql/pull/4224) | Support time modifiers in search command |
-| v3.3.0 | [#4152](https://github.com/opensearch-project/sql/pull/4152) | Search command revamp |
-| v3.3.0 | [#4142](https://github.com/opensearch-project/sql/pull/4142) | Add shortcut for count() |
-| v3.3.0 | [#4106](https://github.com/opensearch-project/sql/pull/4106) | strftime function implementation |
-| v3.3.0 | [#3803](https://github.com/opensearch-project/sql/pull/3803) | Support join field list and join options |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4378](https://github.com/opensearch-project/sql/pull/4378) | Change default search sort tiebreaker to `_shard_doc` for PIT search | [#3064](https://github.com/opensearch-project/sql/issues/3064) |
+| v3.3.0 | [#4375](https://github.com/opensearch-project/sql/pull/4375) | Support direct query data sources (experimental) |   |
+| v3.3.0 | [#4344](https://github.com/opensearch-project/sql/pull/4344) | Add error handling for known limitation of SQL JOIN | [#4058](https://github.com/opensearch-project/sql/issues/4058) |
+| v3.3.0 | [#4337](https://github.com/opensearch-project/sql/pull/4337) | Optimize count aggregation performance using native doc_count | [#4265](https://github.com/opensearch-project/sql/issues/4265) |
+| v3.3.0 | [#4333](https://github.com/opensearch-project/sql/pull/4333) | Add max/min eval functions | [#4341](https://github.com/opensearch-project/sql/issues/4341) |
+| v3.3.0 | [#4327](https://github.com/opensearch-project/sql/pull/4327) | Date/Time based Span aggregation null bucket fix | [#4318](https://github.com/opensearch-project/sql/issues/4318) |
+| v3.3.0 | [#4281](https://github.com/opensearch-project/sql/pull/4281) | Add non-numeric field support for max/min functions | [#4050](https://github.com/opensearch-project/sql/issues/4050) |
+| v3.3.0 | [#4276](https://github.com/opensearch-project/sql/pull/4276) | Add `values` stats function with UDAF | [#4026](https://github.com/opensearch-project/sql/issues/4026) |
+| v3.3.0 | [#4246](https://github.com/opensearch-project/sql/pull/4246) | Support ISO8601-formatted string in PPL | [#4188](https://github.com/opensearch-project/sql/issues/4188) |
+| v3.3.0 | [#4224](https://github.com/opensearch-project/sql/pull/4224) | Support time modifiers in search command | [#4135](https://github.com/opensearch-project/sql/issues/4135) |
+| v3.3.0 | [#4152](https://github.com/opensearch-project/sql/pull/4152) | Search command revamp | [#4007](https://github.com/opensearch-project/sql/issues/4007) |
+| v3.3.0 | [#4142](https://github.com/opensearch-project/sql/pull/4142) | Add shortcut for count() |   |
+| v3.3.0 | [#4106](https://github.com/opensearch-project/sql/pull/4106) | strftime function implementation |   |
+| v3.3.0 | [#3803](https://github.com/opensearch-project/sql/pull/3803) | Support join field list and join options | [#3775](https://github.com/opensearch-project/sql/issues/3775) |
 
 ### Issues (Design / RFC)
 - [Issue #4135](https://github.com/opensearch-project/sql/issues/4135): Time modifiers feature request

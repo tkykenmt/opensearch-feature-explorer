@@ -96,9 +96,9 @@ The Dependabot workflow automates three tasks:
 - [Geospatial PR #238](https://github.com/opensearch-project/geospatial/pull/238): Reference implementation in another OpenSearch repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#5318](https://github.com/opensearch-project/security/pull/5318) | Add workflow for changelog verification |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#5318](https://github.com/opensearch-project/security/pull/5318) | Add workflow for changelog verification |   |
 
 ### Issues (Design / RFC)
 - [Issue #5095](https://github.com/opensearch-project/security/issues/5095): Original feature request

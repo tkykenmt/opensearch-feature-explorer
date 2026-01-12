@@ -73,7 +73,7 @@ Enhanced error handling for edge cases:
 - [PR #8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226): Enhanced search API cleanup
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225) | Post 2.17 version bump |
-| v2.18.0 | [#8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226) | Clean up enhanced search API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225) | Post 2.17 version bump |   |
+| v2.18.0 | [#8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226) | Clean up enhanced search API |   |

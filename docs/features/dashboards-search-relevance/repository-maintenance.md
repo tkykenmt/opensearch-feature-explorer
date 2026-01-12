@@ -82,10 +82,10 @@ Keeping GitHub Actions dependencies updated ensures:
 - [OpenSearch Maintainer Guidelines](https://github.com/opensearch-project/.github/blob/main/MAINTAINERS.md)
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.2.0 | [#569](https://github.com/opensearch-project/dashboards-search-relevance/pull/569) | dashboards-search-relevance | Adding new maintainers |
-| v3.2.0 | [#576](https://github.com/opensearch-project/dashboards-search-relevance/pull/576) | dashboards-search-relevance | Update maintainer list |
-| v3.2.0 | [#601](https://github.com/opensearch-project/dashboards-search-relevance/pull/601) | dashboards-search-relevance | Add issue template and codecov |
-| v3.2.0 | [#2260](https://github.com/opensearch-project/security/pull/2260) | security | Bump actions/checkout |
-| v3.2.0 | [#2263](https://github.com/opensearch-project/security/pull/2263) | security | Bump codecov/codecov-action |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.2.0 | [#569](https://github.com/opensearch-project/dashboards-search-relevance/pull/569) | dashboards-search-relevance | Adding new maintainers |   |
+| v3.2.0 | [#576](https://github.com/opensearch-project/dashboards-search-relevance/pull/576) | dashboards-search-relevance | Update maintainer list |   |
+| v3.2.0 | [#601](https://github.com/opensearch-project/dashboards-search-relevance/pull/601) | dashboards-search-relevance | Add issue template and codecov |   |
+| v3.2.0 | [#2260](https://github.com/opensearch-project/security/pull/2260) | security | Bump actions/checkout |   |
+| v3.2.0 | [#2263](https://github.com/opensearch-project/security/pull/2263) | security | Bump codecov/codecov-action |   |

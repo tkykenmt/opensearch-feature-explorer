@@ -109,8 +109,8 @@ Version resolution uses maven-metadata.xml to get the latest snapshot build.
 - [OpenSearch CI Snapshots](https://ci.opensearch.org/ci/dbc/snapshots/maven/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#2501](https://github.com/opensearch-project/dashboards-observability/pull/2501) | Fix typo in checkout step name |
-| v3.4.0 | [#2526](https://github.com/opensearch-project/dashboards-observability/pull/2526) | Update snapshots and unit tests |
-| v3.4.0 | [#2528](https://github.com/opensearch-project/dashboards-observability/pull/2528) | Update CI workflows for Integ tests |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#2501](https://github.com/opensearch-project/dashboards-observability/pull/2501) | Fix typo in checkout step name |   |
+| v3.4.0 | [#2526](https://github.com/opensearch-project/dashboards-observability/pull/2526) | Update snapshots and unit tests |   |
+| v3.4.0 | [#2528](https://github.com/opensearch-project/dashboards-observability/pull/2528) | Update CI workflows for Integ tests |   |

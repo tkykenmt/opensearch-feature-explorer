@@ -141,10 +141,10 @@ source=logs | patterns message by level mode=aggregation | fields level, pattern
 - [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4155](https://github.com/opensearch-project/sql/pull/4155) | Add sample_logs output field |
-| v3.3.0 | [#4402](https://github.com/opensearch-project/sql/pull/4402) | Add show_numbered_token option, fix continuous wildcards bug |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4155](https://github.com/opensearch-project/sql/pull/4155) | Add sample_logs output field | [#4139](https://github.com/opensearch-project/sql/issues/4139) |
+| v3.3.0 | [#4402](https://github.com/opensearch-project/sql/pull/4402) | Add show_numbered_token option, fix continuous wildcards bug | [#4364](https://github.com/opensearch-project/sql/issues/4364) |
 
 ### Issues (Design / RFC)
 - [Issue #4139](https://github.com/opensearch-project/sql/issues/4139): Feature request for sample_logs field

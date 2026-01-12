@@ -126,20 +126,20 @@ source = logs-* | where status >= 400 | head 100
 - [Query Workbench](https://docs.opensearch.org/3.0/dashboards/query-workbench/): SQL/PPL query interface documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9120](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9120) | Fix PPL grammar parsing issues in auto-suggest |
-| v3.0.0 | [#9379](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9379) | Make PPL time column respect timezone and date format |
-| v3.0.0 | [#9436](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9436) | Make PPL handle milliseconds in date fields |
-| v3.0.0 | [#9586](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9586) | Correctly show error message in DQL and PPL query editor |
-| v3.0.0 | [#9603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9603) | Skip appending time range when not querying with source |
-| v2.18.0 | [#8245](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8245) | Expose method to register search strategy routes |
-| v2.18.0 | [#8252](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8252) | Fix running recent query button |
-| v2.18.0 | [#8299](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8299) | Expose datasets and data_frames directories for imports |
-| v2.18.0 | [#8322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8322) | Add keyboard shortcut for running queries |
-| v2.18.0 | [#8555](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8555) | Refactored polling logic to poll for results once current request completes |
-| v2.18.0 | [#8650](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8650) | Fix random big number when loading in query result |
-| v2.18.0 | [#8724](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8724) | Polling for PPL results; Saved dataset to saved queries |
-| v2.18.0 | [#8743](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8743) | Fix error handling in query enhancement facet |
-| v2.18.0 | [#8749](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8749) | Updates query and language if language is not supported by query data |
-| v2.18.0 | [#8771](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8771) | Fix error handling for ppl jobs API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9120](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9120) | Fix PPL grammar parsing issues in auto-suggest | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9379](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9379) | Make PPL time column respect timezone and date format | [#9104](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9104) |
+| v3.0.0 | [#9436](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9436) | Make PPL handle milliseconds in date fields | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9586](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9586) | Correctly show error message in DQL and PPL query editor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9603) | Skip appending time range when not querying with source | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8245](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8245) | Expose method to register search strategy routes |   |
+| v2.18.0 | [#8252](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8252) | Fix running recent query button | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8299](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8299) | Expose datasets and data_frames directories for imports |   |
+| v2.18.0 | [#8322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8322) | Add keyboard shortcut for running queries | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8555](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8555) | Refactored polling logic to poll for results once current request completes |   |
+| v2.18.0 | [#8650](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8650) | Fix random big number when loading in query result | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8724](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8724) | Polling for PPL results; Saved dataset to saved queries |   |
+| v2.18.0 | [#8743](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8743) | Fix error handling in query enhancement facet | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8749](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8749) | Updates query and language if language is not supported by query data |   |
+| v2.18.0 | [#8771](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8771) | Fix error handling for ppl jobs API | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

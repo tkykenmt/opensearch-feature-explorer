@@ -118,9 +118,9 @@ Node join/leave is handled automatically by the cluster. Relevant log messages:
 - [Creating a Cluster](https://docs.opensearch.org/2.18/tuning-your-cluster/): Cluster tuning guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15521](https://github.com/opensearch-project/OpenSearch/pull/15521) | Fix race condition in node-join/node-left loop |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15521](https://github.com/opensearch-project/OpenSearch/pull/15521) | Fix race condition in node-join/node-left loop | [#4874](https://github.com/opensearch-project/OpenSearch/issues/4874) |
 
 ### Issues (Design / RFC)
 - [Issue #4874](https://github.com/opensearch-project/OpenSearch/issues/4874): Race in node-left and node-join can prevent node from joining the cluster indefinitely

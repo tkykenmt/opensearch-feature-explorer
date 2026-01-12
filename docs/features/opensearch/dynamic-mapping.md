@@ -196,9 +196,9 @@ PUT my-index
 - [API Specification PR #944](https://github.com/opensearch-project/opensearch-api-specification/pull/944): API spec update
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19065](https://github.com/opensearch-project/OpenSearch/pull/19065) | Add `false_allow_templates` as a dynamic mapping option |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19065](https://github.com/opensearch-project/OpenSearch/pull/19065) | Add `false_allow_templates` as a dynamic mapping option | [#18617](https://github.com/opensearch-project/OpenSearch/issues/18617) |
 
 ### Issues (Design / RFC)
 - [Issue #18617](https://github.com/opensearch-project/OpenSearch/issues/18617): Feature request for `false_allow_templates`

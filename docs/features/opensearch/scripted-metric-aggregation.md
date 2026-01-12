@@ -138,7 +138,7 @@ GET rollup_index,raw_index/_search
 - [Index Management PR #1268](https://github.com/opensearch-project/index-management/pull/1268): Original rollup and raw indices search support
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19006](https://github.com/opensearch-project/OpenSearch/pull/19006) | Adding ScriptedAvg class to painless spi to allowlist usage from plugins |
-| v3.2.0 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric Aggregation when reducing aggregations in InternalValueCount and InternalAvg |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19006](https://github.com/opensearch-project/OpenSearch/pull/19006) | Adding ScriptedAvg class to painless spi to allowlist usage from plugins |   |
+| v3.2.0 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric Aggregation when reducing aggregations in InternalValueCount and InternalAvg |   |

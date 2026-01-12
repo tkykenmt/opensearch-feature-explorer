@@ -312,6 +312,6 @@ POST _plugins/_anomaly_detection/detectors
 - [Random Cut Forest Library](https://github.com/aws/random-cut-forest-by-aws): RCF 4.1.0 with missing data support
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1274](https://github.com/opensearch-project/anomaly-detection/pull/1274) | Add Support for Handling Missing Data in Anomaly Detection |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#1274](https://github.com/opensearch-project/anomaly-detection/pull/1274) | Add Support for Handling Missing Data in Anomaly Detection |   |

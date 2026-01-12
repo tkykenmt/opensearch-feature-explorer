@@ -169,12 +169,12 @@ GET _nodes/<node_id>/stats/indices/search
 - [Nodes Stats API Documentation](https://docs.opensearch.org/latest/api-reference/nodes-apis/nodes-stats/): Official API documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19340](https://github.com/opensearch-project/OpenSearch/pull/19340) | Handle negative search request nodes stats |
-| v2.17.0 | [#15054](https://github.com/opensearch-project/OpenSearch/pull/15054) | Initial implementation - Add took time to request nodes stats |
-| v2.18.0 | [#16290](https://github.com/opensearch-project/OpenSearch/pull/16290) | Enable search.request_stats_enabled by default |
-| v2.18.0 | [#16320](https://github.com/opensearch-project/OpenSearch/pull/16320) | Backport to 2.x branch |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19340](https://github.com/opensearch-project/OpenSearch/pull/19340) | Handle negative search request nodes stats | [#16598](https://github.com/opensearch-project/OpenSearch/issues/16598) |
+| v2.17.0 | [#15054](https://github.com/opensearch-project/OpenSearch/pull/15054) | Initial implementation - Add took time to request nodes stats | [#10768](https://github.com/opensearch-project/OpenSearch/issues/10768) |
+| v2.18.0 | [#16290](https://github.com/opensearch-project/OpenSearch/pull/16290) | Enable search.request_stats_enabled by default |   |
+| v2.18.0 | [#16320](https://github.com/opensearch-project/OpenSearch/pull/16320) | Backport to 2.x branch |   |
 
 ### Issues (Design / RFC)
 - [Issue #16598](https://github.com/opensearch-project/OpenSearch/issues/16598): Bug report - Negative Search Stats causing nodes/stats API failures

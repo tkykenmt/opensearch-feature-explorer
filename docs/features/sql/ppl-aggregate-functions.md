@@ -186,12 +186,12 @@ Both `list()` and `values()` functions support:
 - [SQL Aggregate Functions](https://docs.opensearch.org/3.0/search-plugins/sql/sql/aggregations/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4223](https://github.com/opensearch-project/sql/pull/4223) | Support first/last aggregate functions for PPL |
-| v3.3.0 | [#4161](https://github.com/opensearch-project/sql/pull/4161) | Add support for `list()` multi-value stats function |
-| v3.3.0 | [#4084](https://github.com/opensearch-project/sql/pull/4084) | Support distinct_count/dc in eventstats |
-| v3.3.0 | [#4212](https://github.com/opensearch-project/sql/pull/4212) | Add earliest/latest aggregate function for eventstats |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4223](https://github.com/opensearch-project/sql/pull/4223) | Support first/last aggregate functions for PPL |   |
+| v3.3.0 | [#4161](https://github.com/opensearch-project/sql/pull/4161) | Add support for `list()` multi-value stats function |   |
+| v3.3.0 | [#4084](https://github.com/opensearch-project/sql/pull/4084) | Support distinct_count/dc in eventstats | [#4052](https://github.com/opensearch-project/sql/issues/4052) |
+| v3.3.0 | [#4212](https://github.com/opensearch-project/sql/pull/4212) | Add earliest/latest aggregate function for eventstats |   |
 
 ### Issues (Design / RFC)
 - [Issue #4203](https://github.com/opensearch-project/sql/issues/4203): PPL first/last aggregate function

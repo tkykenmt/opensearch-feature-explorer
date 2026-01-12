@@ -166,29 +166,29 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 - [Skills Repository](https://github.com/opensearch-project/skills): Source code
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#678](https://github.com/opensearch-project/skills/pull/678) | Increase max_sample_count to 5 for log insight |
-| v3.3.0 | [#625](https://github.com/opensearch-project/skills/pull/625) | Log patterns analysis tool |
-| v3.3.0 | [#634](https://github.com/opensearch-project/skills/pull/634) | Data Distribution Tool |
-| v3.3.0 | [#636](https://github.com/opensearch-project/skills/pull/636) | Add more information in PPL tool when passing to SageMaker |
-| v3.3.0 | [#641](https://github.com/opensearch-project/skills/pull/641) | Delete-single-baseline (DataDistributionTool fix) |
-| v3.3.0 | [#639](https://github.com/opensearch-project/skills/pull/639) | Fix WebSearchTool issue |
-| v3.2.0 | [#596](https://github.com/opensearch-project/skills/pull/596) | Merge index schema meta for PPLTool |
-| v3.2.0 | [#609](https://github.com/opensearch-project/skills/pull/609) | Mask error message in PPLTool |
-| v3.2.0 | [#618](https://github.com/opensearch-project/skills/pull/618) | Update parameter handling of tools |
-| v3.1.0 | [#587](https://github.com/opensearch-project/skills/pull/587) | Add data source type parameter to PPLTool for Spark/S3 support |
-| v3.1.0 | [#581](https://github.com/opensearch-project/skills/pull/581) | Fix fields bug in PPL tool (multi-field mapping support) |
-| v3.1.0 | [#575](https://github.com/opensearch-project/skills/pull/575) | Fix conflict in dependency versions |
-| v3.0.0 | [#553](https://github.com/opensearch-project/skills/pull/553) | Support phasing off SecurityManager usage in favor of Java Agent |
-| v3.0.0 | [#549](https://github.com/opensearch-project/skills/pull/549) | Add attributes to tools to adapt the upstream changes |
-| v3.0.0 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool |
-| v3.0.0 | [#545](https://github.com/opensearch-project/skills/pull/545) | Fix jar hell for SQL jar |
-| v3.0.0 | [#541](https://github.com/opensearch-project/skills/pull/541) | Fix PPLTool empty list bug |
-| v3.0.0 | [#529](https://github.com/opensearch-project/skills/pull/529) | Update ML Commons dependencies |
-| v3.0.0 | [#521](https://github.com/opensearch-project/skills/pull/521) | Developer guide enhancement |
-| v2.18.0 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |
-| v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#678](https://github.com/opensearch-project/skills/pull/678) | Increase max_sample_count to 5 for log insight |   |
+| v3.3.0 | [#625](https://github.com/opensearch-project/skills/pull/625) | Log patterns analysis tool |   |
+| v3.3.0 | [#634](https://github.com/opensearch-project/skills/pull/634) | Data Distribution Tool |   |
+| v3.3.0 | [#636](https://github.com/opensearch-project/skills/pull/636) | Add more information in PPL tool when passing to SageMaker |   |
+| v3.3.0 | [#641](https://github.com/opensearch-project/skills/pull/641) | Delete-single-baseline (DataDistributionTool fix) |   |
+| v3.3.0 | [#639](https://github.com/opensearch-project/skills/pull/639) | Fix WebSearchTool issue |   |
+| v3.2.0 | [#596](https://github.com/opensearch-project/skills/pull/596) | Merge index schema meta for PPLTool |   |
+| v3.2.0 | [#609](https://github.com/opensearch-project/skills/pull/609) | Mask error message in PPLTool |   |
+| v3.2.0 | [#618](https://github.com/opensearch-project/skills/pull/618) | Update parameter handling of tools | [#617](https://github.com/opensearch-project/skills/issues/617) |
+| v3.1.0 | [#587](https://github.com/opensearch-project/skills/pull/587) | Add data source type parameter to PPLTool for Spark/S3 support |   |
+| v3.1.0 | [#581](https://github.com/opensearch-project/skills/pull/581) | Fix fields bug in PPL tool (multi-field mapping support) |   |
+| v3.1.0 | [#575](https://github.com/opensearch-project/skills/pull/575) | Fix conflict in dependency versions |   |
+| v3.0.0 | [#553](https://github.com/opensearch-project/skills/pull/553) | Support phasing off SecurityManager usage in favor of Java Agent |   |
+| v3.0.0 | [#549](https://github.com/opensearch-project/skills/pull/549) | Add attributes to tools to adapt the upstream changes |   |
+| v3.0.0 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool |   |
+| v3.0.0 | [#545](https://github.com/opensearch-project/skills/pull/545) | Fix jar hell for SQL jar |   |
+| v3.0.0 | [#541](https://github.com/opensearch-project/skills/pull/541) | Fix PPLTool empty list bug |   |
+| v3.0.0 | [#529](https://github.com/opensearch-project/skills/pull/529) | Update ML Commons dependencies |   |
+| v3.0.0 | [#521](https://github.com/opensearch-project/skills/pull/521) | Developer guide enhancement |   |
+| v2.18.0 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |   |
+| v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool |   |
 
 ### Issues (Design / RFC)
 - [Issue #538](https://github.com/opensearch-project/skills/issues/538): WebSearchTool feature request

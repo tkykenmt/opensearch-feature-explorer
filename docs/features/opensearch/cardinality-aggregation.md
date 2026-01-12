@@ -123,9 +123,9 @@ Requirements for pruning:
 - [HyperLogLog++ Paper](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/40671.pdf)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19473](https://github.com/opensearch-project/OpenSearch/pull/19473) | Fix cardinality agg pruning optimization by self collecting |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19473](https://github.com/opensearch-project/OpenSearch/pull/19473) | Fix cardinality agg pruning optimization by self collecting |   |
 
 ### Issues (Design / RFC)
 - [Issue #19367](https://github.com/opensearch-project/OpenSearch/issues/19367): Performance regression after Lucene 10.3.0

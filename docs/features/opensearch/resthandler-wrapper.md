@@ -120,8 +120,8 @@ class Wrapper implements RestHandler {
 - [BaseRestHandlerTests.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/test/java/org/opensearch/rest/BaseRestHandlerTests.java): Test coverage
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16154](https://github.com/opensearch-project/OpenSearch/pull/16154) | Ensure Wrapper delegates all implementations |
-| v2.17.0 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Added `isActionPaginated()` method (caused delegation gap) |
-| v1.0.0 | [#1004](https://github.com/opensearch-project/OpenSearch/pull/1004) | Original introduction of RestHandler.Wrapper |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#16154](https://github.com/opensearch-project/OpenSearch/pull/16154) | Ensure Wrapper delegates all implementations |   |
+| v2.17.0 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Added `isActionPaginated()` method (caused delegation gap) | [#14258](https://github.com/opensearch-project/OpenSearch/issues/14258) |
+| v1.0.0 | [#1004](https://github.com/opensearch-project/OpenSearch/pull/1004) | Original introduction of RestHandler.Wrapper |   |

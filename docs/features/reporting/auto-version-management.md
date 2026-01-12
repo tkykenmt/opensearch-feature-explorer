@@ -63,6 +63,6 @@ graph TB
 - [OpenSearch Release Process](https://github.com/opensearch-project/.github/blob/main/RELEASING.md)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | Increment to 3.1.0-SNAPSHOT |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | Increment to 3.1.0-SNAPSHOT |   |

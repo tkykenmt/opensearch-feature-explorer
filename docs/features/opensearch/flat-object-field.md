@@ -191,12 +191,12 @@ This is more efficient than loading the entire `_source` when you only need spec
 - [Use flat object in OpenSearch](https://opensearch.org/blog/flat-object/): Blog post
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#16802](https://github.com/opensearch-project/OpenSearch/pull/16802) | Added ability to retrieve value from DocValues in flat_object field |
-| v2.18.0 | [#14383](https://github.com/opensearch-project/OpenSearch/pull/14383) | Use IndexOrDocValuesQuery to optimize query, delegate to KeywordFieldType |
-| v2.18.0 | [#15985](https://github.com/opensearch-project/OpenSearch/pull/15985) | Fix infinite loop when parsing invalid token types |
-| v2.7.0 | - | Initial implementation of flat_object field type |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#16802](https://github.com/opensearch-project/OpenSearch/pull/16802) | Added ability to retrieve value from DocValues in flat_object field | [#16742](https://github.com/opensearch-project/OpenSearch/issues/16742) |
+| v2.18.0 | [#14383](https://github.com/opensearch-project/OpenSearch/pull/14383) | Use IndexOrDocValuesQuery to optimize query, delegate to KeywordFieldType | [#11635](https://github.com/opensearch-project/OpenSearch/issues/11635) |
+| v2.18.0 | [#15985](https://github.com/opensearch-project/OpenSearch/pull/15985) | Fix infinite loop when parsing invalid token types | [#15982](https://github.com/opensearch-project/OpenSearch/issues/15982) |
+| v2.7.0 | - | Initial implementation of flat_object field type |   |
 
 ### Issues (Design / RFC)
 - [Issue #16742](https://github.com/opensearch-project/OpenSearch/issues/16742): Feature request for DocValues retrieval

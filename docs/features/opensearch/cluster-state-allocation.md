@@ -124,10 +124,10 @@ PUT _cluster/settings
 - [Cluster Settings - Allocation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19701](https://github.com/opensearch-project/OpenSearch/pull/19701) | Fix concurrent modification in DiscoveryNodeFilters |
-| v3.4.0 | [#20080](https://github.com/opensearch-project/OpenSearch/pull/20080) | Version-aware serialization for remote state entities |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19701](https://github.com/opensearch-project/OpenSearch/pull/19701) | Fix concurrent modification in DiscoveryNodeFilters |   |
+| v3.4.0 | [#20080](https://github.com/opensearch-project/OpenSearch/pull/20080) | Version-aware serialization for remote state entities | [#19843](https://github.com/opensearch-project/OpenSearch/issues/19843) |
 
 ### Issues (Design / RFC)
 - [Issue #19843](https://github.com/opensearch-project/OpenSearch/issues/19843): Remote state backward compatibility bug

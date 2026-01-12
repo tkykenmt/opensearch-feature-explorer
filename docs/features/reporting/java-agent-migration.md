@@ -120,9 +120,9 @@ allprojects {
 - [PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Custom Gradle plugin for Java Agent
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#1085](https://github.com/opensearch-project/reporting/pull/1085) | Fix build due to phasing off SecurityManager usage in favor of Java Agent |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#1085](https://github.com/opensearch-project/reporting/pull/1085) | Fix build due to phasing off SecurityManager usage in favor of Java Agent |   |
 
 ### Issues (Design / RFC)
 - [Issue #16634](https://github.com/opensearch-project/OpenSearch/issues/16634): META - Replace Java Security Manager

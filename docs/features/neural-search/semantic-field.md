@@ -256,24 +256,24 @@ GET /my-nlp-index/_search
 - [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#1572](https://github.com/opensearch-project/neural-search/pull/1572) | Fix not able to index the multiFields for the rawFieldType |
-| v3.2.0 | [#1420](https://github.com/opensearch-project/neural-search/pull/1420) | Support configuring the auto-generated knn_vector field through the semantic field |
-| v3.2.0 | [#1438](https://github.com/opensearch-project/neural-search/pull/1438) | Support configuring the ingest batch size for the semantic field |
-| v3.2.0 | [#1434](https://github.com/opensearch-project/neural-search/pull/1434) | Allow configuring prune strategies for sparse encoding in semantic fields |
-| v3.2.0 | [#1446](https://github.com/opensearch-project/neural-search/pull/1446) | Support configuring the chunking strategies through the semantic field |
-| v3.2.0 | [#1480](https://github.com/opensearch-project/neural-search/pull/1480) | Support configuring reusing existing embedding for the semantic field |
-| v3.2.0 | [#1427](https://github.com/opensearch-project/neural-search/pull/1427) | Handle remote dense model properly during mapping transform |
-| v3.2.0 | [#1475](https://github.com/opensearch-project/neural-search/pull/1475) | Fix minimal supported version for neural sparse query analyzer field |
-| v3.1.0 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer |
-| v3.1.0 | [#1309](https://github.com/opensearch-project/neural-search/pull/1309) | Add semantic ingest processor |
-| v3.1.0 | [#1315](https://github.com/opensearch-project/neural-search/pull/1315) | Implement query logic for semantic field |
-| v3.1.0 | [#1337](https://github.com/opensearch-project/neural-search/pull/1337) | Enable/disable chunking support |
-| v3.1.0 | [#1341](https://github.com/opensearch-project/neural-search/pull/1341) | Add search analyzer support at query time |
-| v3.1.0 | [#1367](https://github.com/opensearch-project/neural-search/pull/1367) | Support analyzer at semantic field creation time |
-| v3.1.0 | [#1362](https://github.com/opensearch-project/neural-search/pull/1362) | Add stats tracking for semantic field |
-| v3.0.0 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#1572](https://github.com/opensearch-project/neural-search/pull/1572) | Fix not able to index the multiFields for the rawFieldType | [#1571](https://github.com/opensearch-project/neural-search/issues/1571) |
+| v3.2.0 | [#1420](https://github.com/opensearch-project/neural-search/pull/1420) | Support configuring the auto-generated knn_vector field through the semantic field | [#1356](https://github.com/opensearch-project/neural-search/issues/1356) |
+| v3.2.0 | [#1438](https://github.com/opensearch-project/neural-search/pull/1438) | Support configuring the ingest batch size for the semantic field | [#1349](https://github.com/opensearch-project/neural-search/issues/1349) |
+| v3.2.0 | [#1434](https://github.com/opensearch-project/neural-search/pull/1434) | Allow configuring prune strategies for sparse encoding in semantic fields | [#1351](https://github.com/opensearch-project/neural-search/issues/1351) |
+| v3.2.0 | [#1446](https://github.com/opensearch-project/neural-search/pull/1446) | Support configuring the chunking strategies through the semantic field | [#1354](https://github.com/opensearch-project/neural-search/issues/1354) |
+| v3.2.0 | [#1480](https://github.com/opensearch-project/neural-search/pull/1480) | Support configuring reusing existing embedding for the semantic field | [#1350](https://github.com/opensearch-project/neural-search/issues/1350) |
+| v3.2.0 | [#1427](https://github.com/opensearch-project/neural-search/pull/1427) | Handle remote dense model properly during mapping transform | [#1426](https://github.com/opensearch-project/neural-search/issues/1426) |
+| v3.2.0 | [#1475](https://github.com/opensearch-project/neural-search/pull/1475) | Fix minimal supported version for neural sparse query analyzer field | [#1416](https://github.com/opensearch-project/neural-search/issues/1416) |
+| v3.1.0 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer |   |
+| v3.1.0 | [#1309](https://github.com/opensearch-project/neural-search/pull/1309) | Add semantic ingest processor |   |
+| v3.1.0 | [#1315](https://github.com/opensearch-project/neural-search/pull/1315) | Implement query logic for semantic field |   |
+| v3.1.0 | [#1337](https://github.com/opensearch-project/neural-search/pull/1337) | Enable/disable chunking support |   |
+| v3.1.0 | [#1341](https://github.com/opensearch-project/neural-search/pull/1341) | Add search analyzer support at query time | [#1341](https://github.com/opensearch-project/neural-search/issues/1341) |
+| v3.1.0 | [#1367](https://github.com/opensearch-project/neural-search/pull/1367) | Support analyzer at semantic field creation time |   |
+| v3.1.0 | [#1362](https://github.com/opensearch-project/neural-search/pull/1362) | Add stats tracking for semantic field |   |
+| v3.0.0 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper |   |
 
 ### Issues (Design / RFC)
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal

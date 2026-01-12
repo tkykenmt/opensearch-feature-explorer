@@ -105,9 +105,9 @@ Randomness.shuffle(items);
 - [BouncyCastle FIPS Documentation](https://www.bouncycastle.org/fips-java/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18758](https://github.com/opensearch-project/OpenSearch/pull/18758) | Use `new SecureRandom()` to avoid blocking |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18758](https://github.com/opensearch-project/OpenSearch/pull/18758) | Use `new SecureRandom()` to avoid blocking | [#18729](https://github.com/opensearch-project/OpenSearch/issues/18729) |
 
 ### Issues (Design / RFC)
 - [Issue #18729](https://github.com/opensearch-project/OpenSearch/issues/18729): OpenSearch 3.1.0 freezes when running on AlmaLinux 8

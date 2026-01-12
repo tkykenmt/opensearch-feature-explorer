@@ -71,7 +71,7 @@ Typical files updated by version increment PRs:
 - [OpenSearch Release Process](https://github.com/opensearch-project/.github/blob/main/RELEASING.md)
 
 ### Pull Requests
-| Version | Repository | PR | Description |
-|---------|------------|-----|-------------|
-| v3.3.0 | alerting | [#1918](https://github.com/opensearch-project/alerting/pull/1918) | Increment to 3.3.0-SNAPSHOT |
-| v3.3.0 | index-management | [#1467](https://github.com/opensearch-project/index-management/pull/1467) | Increment to 3.3.0-SNAPSHOT |
+| Version | Repository | PR | Description | Related Issue |
+|---------|------------|-----|-------------|---------------|
+| v3.3.0 | alerting | [#1918](https://github.com/opensearch-project/alerting/pull/1918) | Increment to 3.3.0-SNAPSHOT |   |
+| v3.3.0 | index-management | [#1467](https://github.com/opensearch-project/index-management/pull/1467) | Increment to 3.3.0-SNAPSHOT |   |

@@ -105,11 +105,11 @@ dependencies {
 - [UBI Specification](https://github.com/o19s/ubi): Industry-standard UBI schema
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#140](https://github.com/opensearch-project/user-behavior-insights/pull/140) | Onboarding new maven snapshots publishing to s3 |
-| v3.3.0 | [#127](https://github.com/opensearch-project/user-behavior-insights/pull/127) | Increment version to 3.3.0-SNAPSHOT |
-| v3.3.0 | [#128](https://github.com/opensearch-project/user-behavior-insights/pull/128) | Fix dependency errors for integration tests |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#140](https://github.com/opensearch-project/user-behavior-insights/pull/140) | Onboarding new maven snapshots publishing to s3 |   |
+| v3.3.0 | [#127](https://github.com/opensearch-project/user-behavior-insights/pull/127) | Increment version to 3.3.0-SNAPSHOT |   |
+| v3.3.0 | [#128](https://github.com/opensearch-project/user-behavior-insights/pull/128) | Fix dependency errors for integration tests |   |
 
 ### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from sonatype snapshots repo to ci.opensearch.org

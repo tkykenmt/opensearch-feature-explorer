@@ -96,7 +96,7 @@ describe('MyComponent', () => {
 - [Testing Library Best Practices](https://testing-library.com/docs/guiding-principles)
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.1.0 | [#1042](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1042) | anomaly-detection-dashboards-plugin | Update from v12.1.6 to v14.4.3 |
-| v3.1.0 | [#1321](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1321) | index-management-dashboards-plugin | Update from v13.1.9 to v14.4.3 |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.1.0 | [#1042](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1042) | anomaly-detection-dashboards-plugin | Update from v12.1.6 to v14.4.3 |   |
+| v3.1.0 | [#1321](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1321) | index-management-dashboards-plugin | Update from v13.1.9 to v14.4.3 |   |

@@ -108,12 +108,12 @@ flowchart TB
 - [Apache Calcite Release History](https://calcite.apache.org/docs/history.html)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19068](https://github.com/opensearch-project/OpenSearch/pull/19068) | OpenTelemetry 1.53.0 |
-| v3.3.0 | [#19125](https://github.com/opensearch-project/OpenSearch/pull/19125) | Tika 3.2.2 (CVE fix) |
-| v3.3.0 | [#19136](https://github.com/opensearch-project/OpenSearch/pull/19136) | SLF4J 2.0.17 |
-| v3.3.0 | [#18922](https://github.com/opensearch-project/OpenSearch/pull/18922) | GCS SDK 2.55.0 |
-| v3.3.0 | [#19229](https://github.com/opensearch-project/OpenSearch/pull/19229) | commons-lang3 migration |
-| v3.3.0 | [#10378](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10378) | pbkdf2, form-data CVE fixes |
-| v3.3.0 | [#10442](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10442) | cipher-base, sha.js fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19068](https://github.com/opensearch-project/OpenSearch/pull/19068) | OpenTelemetry 1.53.0 |   |
+| v3.3.0 | [#19125](https://github.com/opensearch-project/OpenSearch/pull/19125) | Tika 3.2.2 (CVE fix) |   |
+| v3.3.0 | [#19136](https://github.com/opensearch-project/OpenSearch/pull/19136) | SLF4J 2.0.17 |   |
+| v3.3.0 | [#18922](https://github.com/opensearch-project/OpenSearch/pull/18922) | GCS SDK 2.55.0 |   |
+| v3.3.0 | [#19229](https://github.com/opensearch-project/OpenSearch/pull/19229) | commons-lang3 migration |   |
+| v3.3.0 | [#10378](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10378) | pbkdf2, form-data CVE fixes |   |
+| v3.3.0 | [#10442](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10442) | cipher-base, sha.js fixes | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

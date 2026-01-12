@@ -108,22 +108,22 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 - [Application Analytics](https://docs.opensearch.org/2.17/observing-your-data/app-analytics/): Correlating logs, traces, and metrics
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2177](https://github.com/opensearch-project/dashboards-observability/pull/2177) | Services data picker fix, metrics refresh button, overview page title, URL redirection |
-| v2.18.0 | [#2171](https://github.com/opensearch-project/dashboards-observability/pull/2171) | Header control styling, integrations UI updates, Cypress testing updates |
-| v2.18.0 | [#2178](https://github.com/opensearch-project/dashboards-observability/pull/2178) | Custom traces table with filters (All Spans, Traces, Service Entry, Trace Root) |
-| v2.18.0 | [#2186](https://github.com/opensearch-project/dashboards-observability/pull/2186) | Overview page typography and navigation-aware title |
-| v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | Getting Started rework - Logs/Metrics/Traces structure |
-| v2.18.0 | [#2196](https://github.com/opensearch-project/dashboards-observability/pull/2196) | CI workflow build cache optimization |
-| v2.18.0 | [#2146](https://github.com/opensearch-project/dashboards-observability/pull/2146) | Fix getting started cards re-direction to integrations |
-| v2.18.0 | [#2201](https://github.com/opensearch-project/dashboards-observability/pull/2201) | Update traces span redirection to Discover |
-| v2.18.0 | [#2209](https://github.com/opensearch-project/dashboards-observability/pull/2209) | Update getting started cards content and visual design |
-| v2.18.0 | [#2210](https://github.com/opensearch-project/dashboards-observability/pull/2210) | Observability Overview page rework |
-| v2.18.0 | [#2211](https://github.com/opensearch-project/dashboards-observability/pull/2211) | Rotate x-Axis labels by 45 degrees |
-| v2.18.0 | [#2217](https://github.com/opensearch-project/dashboards-observability/pull/2217) | Metrics fixes - disable expand button |
-| v2.18.0 | [#2219](https://github.com/opensearch-project/dashboards-observability/pull/2219) | Re-direction fix for associated logs from traces |
-| v2.18.0 | [#2225](https://github.com/opensearch-project/dashboards-observability/pull/2225) | Fixes span to logs redirection, updates MDS label |
-| v2.17.0 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |
-| v2.17.0 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |
-| v2.17.0 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2177](https://github.com/opensearch-project/dashboards-observability/pull/2177) | Services data picker fix, metrics refresh button, overview page title, URL redirection |   |
+| v2.18.0 | [#2171](https://github.com/opensearch-project/dashboards-observability/pull/2171) | Header control styling, integrations UI updates, Cypress testing updates |   |
+| v2.18.0 | [#2178](https://github.com/opensearch-project/dashboards-observability/pull/2178) | Custom traces table with filters (All Spans, Traces, Service Entry, Trace Root) |   |
+| v2.18.0 | [#2186](https://github.com/opensearch-project/dashboards-observability/pull/2186) | Overview page typography and navigation-aware title |   |
+| v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | Getting Started rework - Logs/Metrics/Traces structure |   |
+| v2.18.0 | [#2196](https://github.com/opensearch-project/dashboards-observability/pull/2196) | CI workflow build cache optimization | [#2188](https://github.com/opensearch-project/dashboards-observability/issues/2188) |
+| v2.18.0 | [#2146](https://github.com/opensearch-project/dashboards-observability/pull/2146) | Fix getting started cards re-direction to integrations |   |
+| v2.18.0 | [#2201](https://github.com/opensearch-project/dashboards-observability/pull/2201) | Update traces span redirection to Discover |   |
+| v2.18.0 | [#2209](https://github.com/opensearch-project/dashboards-observability/pull/2209) | Update getting started cards content and visual design |   |
+| v2.18.0 | [#2210](https://github.com/opensearch-project/dashboards-observability/pull/2210) | Observability Overview page rework |   |
+| v2.18.0 | [#2211](https://github.com/opensearch-project/dashboards-observability/pull/2211) | Rotate x-Axis labels by 45 degrees |   |
+| v2.18.0 | [#2217](https://github.com/opensearch-project/dashboards-observability/pull/2217) | Metrics fixes - disable expand button |   |
+| v2.18.0 | [#2219](https://github.com/opensearch-project/dashboards-observability/pull/2219) | Re-direction fix for associated logs from traces |   |
+| v2.18.0 | [#2225](https://github.com/opensearch-project/dashboards-observability/pull/2225) | Fixes span to logs redirection, updates MDS label |   |
+| v2.17.0 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |   |
+| v2.17.0 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |   |
+| v2.17.0 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |   |

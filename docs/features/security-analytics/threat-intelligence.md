@@ -191,25 +191,25 @@ POST _plugins/_security_analytics/threat_intel/sources/
 - [Getting Started Guide](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/getting-started/): Setup guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#1493](https://github.com/opensearch-project/security-analytics/pull/1493) | Custom format IOC upload support |
-| v3.0.0 | [#1455](https://github.com/opensearch-project/security-analytics/pull/1455) | Custom format implementation (2.x backport) |
-| v2.18.0 | [#1335](https://github.com/opensearch-project/security-analytics/pull/1335) | Add null check for multi-indicator type scans |
-| v2.18.0 | [#1373](https://github.com/opensearch-project/security-analytics/pull/1373) | Fix ListIOCs API count limits (total IOCs and findings per IOC) |
-| v2.18.0 | [#1392](https://github.com/opensearch-project/security-analytics/pull/1392) | Add exists check for IOC index creation |
-| v2.18.0 | [#1356](https://github.com/opensearch-project/security-analytics/pull/1356) | Fix notifications listener leak in threat intel monitor |
-| v2.18.0 | [#1317](https://github.com/opensearch-project/security-analytics/pull/1317) | Threat intel monitor bug fixes (empty index sort, grouped listener) |
-| v2.18.0 | [#1383](https://github.com/opensearch-project/security-analytics/pull/1383) | Fix search monitor query in update threat intel alert status API |
-| v2.18.0 | [#1393](https://github.com/opensearch-project/security-analytics/pull/1393) | Add validation for threat intel source config |
-| v2.18.0 | [#1180](https://github.com/opensearch-project/security-analytics/pull/1180) | Backport of alias resolution and enum fixes |
-| v2.18.0 | [#1173](https://github.com/opensearch-project/security-analytics/pull/1173) | Fix alias resolution in threat intel monitor |
-| v2.18.0 | [#1178](https://github.com/opensearch-project/security-analytics/pull/1178) | Fix enum state query for REFRESHING state |
-| v2.17.0 | [#1207](https://github.com/opensearch-project/security-analytics/pull/1207) | User validation for threat intel transport layer |
-| v2.17.0 | [#1234](https://github.com/opensearch-project/security-analytics/pull/1234) | Make threat intel run with standard detectors |
-| v2.17.0 | [#1254](https://github.com/opensearch-project/security-analytics/pull/1254) | Event-driven lock release for source config |
-| v2.17.0 | [#1274](https://github.com/opensearch-project/security-analytics/pull/1274) | Fix threat intel multinode tests |
-| v2.17.0 | [#1278](https://github.com/opensearch-project/security-analytics/pull/1278) | Stash context for List IOCs API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#1493](https://github.com/opensearch-project/security-analytics/pull/1493) | Custom format IOC upload support |   |
+| v3.0.0 | [#1455](https://github.com/opensearch-project/security-analytics/pull/1455) | Custom format implementation (2.x backport) |   |
+| v2.18.0 | [#1335](https://github.com/opensearch-project/security-analytics/pull/1335) | Add null check for multi-indicator type scans |   |
+| v2.18.0 | [#1373](https://github.com/opensearch-project/security-analytics/pull/1373) | Fix ListIOCs API count limits (total IOCs and findings per IOC) | [#1191](https://github.com/opensearch-project/security-analytics/issues/1191) |
+| v2.18.0 | [#1392](https://github.com/opensearch-project/security-analytics/pull/1392) | Add exists check for IOC index creation |   |
+| v2.18.0 | [#1356](https://github.com/opensearch-project/security-analytics/pull/1356) | Fix notifications listener leak in threat intel monitor |   |
+| v2.18.0 | [#1317](https://github.com/opensearch-project/security-analytics/pull/1317) | Threat intel monitor bug fixes (empty index sort, grouped listener) |   |
+| v2.18.0 | [#1383](https://github.com/opensearch-project/security-analytics/pull/1383) | Fix search monitor query in update threat intel alert status API |   |
+| v2.18.0 | [#1393](https://github.com/opensearch-project/security-analytics/pull/1393) | Add validation for threat intel source config | [#1366](https://github.com/opensearch-project/security-analytics/issues/1366) |
+| v2.18.0 | [#1180](https://github.com/opensearch-project/security-analytics/pull/1180) | Backport of alias resolution and enum fixes |   |
+| v2.18.0 | [#1173](https://github.com/opensearch-project/security-analytics/pull/1173) | Fix alias resolution in threat intel monitor |   |
+| v2.18.0 | [#1178](https://github.com/opensearch-project/security-analytics/pull/1178) | Fix enum state query for REFRESHING state |   |
+| v2.17.0 | [#1207](https://github.com/opensearch-project/security-analytics/pull/1207) | User validation for threat intel transport layer |   |
+| v2.17.0 | [#1234](https://github.com/opensearch-project/security-analytics/pull/1234) | Make threat intel run with standard detectors |   |
+| v2.17.0 | [#1254](https://github.com/opensearch-project/security-analytics/pull/1254) | Event-driven lock release for source config | [#1224](https://github.com/opensearch-project/security-analytics/issues/1224) |
+| v2.17.0 | [#1274](https://github.com/opensearch-project/security-analytics/pull/1274) | Fix threat intel multinode tests |   |
+| v2.17.0 | [#1278](https://github.com/opensearch-project/security-analytics/pull/1278) | Stash context for List IOCs API |   |
 
 ### Issues (Design / RFC)
 - [Issue #1191](https://github.com/opensearch-project/security-analytics/issues/1191): ListIOCsAPI total hits and findings count per IOC are incorrect

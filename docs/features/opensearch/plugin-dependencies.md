@@ -171,12 +171,12 @@ When `opensearch-security` is listed in both `extended.plugins` and `optional.pl
 - [OpenSearch Versioning Blog](https://opensearch.org/blog/what-is-semver/): OpenSearch Versioning, or What is SemVer anyway?
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19939](https://github.com/opensearch-project/OpenSearch/pull/19939) | Add RangeSemver for `dependencies` in `plugin-descriptor.properties` |
-| v3.0.0 | [#17893](https://github.com/opensearch-project/OpenSearch/pull/17893) | Relaxes jarHell check for optionally extended plugins |
-| v2.16.0 | [#18557](https://github.com/opensearch-project/OpenSearch/pull/18557) | Added support for range version support in semver |
-| v2.13.0 | - | Initial SemverRange implementation with tilde and caret operators |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19939](https://github.com/opensearch-project/OpenSearch/pull/19939) | Add RangeSemver for `dependencies` in `plugin-descriptor.properties` |   |
+| v3.0.0 | [#17893](https://github.com/opensearch-project/OpenSearch/pull/17893) | Relaxes jarHell check for optionally extended plugins |   |
+| v2.16.0 | [#18557](https://github.com/opensearch-project/OpenSearch/pull/18557) | Added support for range version support in semver | [#18554](https://github.com/opensearch-project/OpenSearch/issues/18554) |
+| v2.13.0 | - | Initial SemverRange implementation with tilde and caret operators |   |
 
 ### Issues (Design / RFC)
 - [Issue #1707](https://github.com/opensearch-project/OpenSearch/issues/1707): Cannot install old patch version of plugins on newer OpenSearch builds

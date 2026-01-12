@@ -162,21 +162,21 @@ POST my_index/_search
 - [GitHub Repository](https://github.com/opensearch-project/opensearch-learning-to-rank-base)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#264](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/264) | Use OpenSearch Version.computeID for legacy version IDs |
-| v3.4.0 | [#269](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/269) | Fix ML index warning in YAML test parsing |
-| v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/271) | Use implicit wait_for instead of explicit refresh |
-| v3.4.0 | [#266](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/266) | Fix rescore-only feature SLTR logging |
-| v3.4.0 | [#256](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/256) | Allow warnings about directly accessing the .plugins-ml-config index |
-| v3.4.0 | [#259](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/259) | Test isolation improvements - narrow index cleanup scope |
-| v3.3.0 | [#226](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/226) | Fix bad inclusion of log4j in plugin JAR |
-| v3.3.0 | [#219](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/219) | Update System.env syntax for Gradle 9 compatibility |
-| v3.3.0 | [#228](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/228) | Add code coverage report generation |
-| v3.3.0 | [#221](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/221) | Hybrid method for float comparison in assertions |
-| v3.3.0 | [#222](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/222) | Upgrade spotless plugin and address build deprecations |
-| v3.2.0 | [#206](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/206) | Add support to handle missing values for XGBoost models |
-| v3.2.0 | [#202](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/202) | Bump gradle to 8.14, codecov to v5 and support JDK24 |
-| v3.2.0 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Fix flaky test with ULP tolerance adjustment |
-| v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format |
-| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#264](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/264) | Use OpenSearch Version.computeID for legacy version IDs |   |
+| v3.4.0 | [#269](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/269) | Fix ML index warning in YAML test parsing | [#265](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/265) |
+| v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/271) | Use implicit wait_for instead of explicit refresh |   |
+| v3.4.0 | [#266](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/266) | Fix rescore-only feature SLTR logging |   |
+| v3.4.0 | [#256](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/256) | Allow warnings about directly accessing the .plugins-ml-config index | [#249](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/249) |
+| v3.4.0 | [#259](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/259) | Test isolation improvements - narrow index cleanup scope | [#245](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/245) |
+| v3.3.0 | [#226](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/226) | Fix bad inclusion of log4j in plugin JAR |   |
+| v3.3.0 | [#219](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/219) | Update System.env syntax for Gradle 9 compatibility |   |
+| v3.3.0 | [#228](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/228) | Add code coverage report generation | [#227](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/227) |
+| v3.3.0 | [#221](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/221) | Hybrid method for float comparison in assertions |   |
+| v3.3.0 | [#222](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/222) | Upgrade spotless plugin and address build deprecations |   |
+| v3.2.0 | [#206](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/206) | Add support to handle missing values for XGBoost models | [#200](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/200) |
+| v3.2.0 | [#202](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/202) | Bump gradle to 8.14, codecov to v5 and support JDK24 |   |
+| v3.2.0 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Fix flaky test with ULP tolerance adjustment |   |
+| v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format |   |
+| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |   |

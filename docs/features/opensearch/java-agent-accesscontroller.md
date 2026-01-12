@@ -157,10 +157,10 @@ CityResponse response = AccessController.doPrivileged(() ->
 - [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Detailed explanation of JSM replacement strategy
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19683](https://github.com/opensearch-project/OpenSearch/pull/19683) | Allow JRT protocol URLs in protection domain extraction |
-| v3.2.0 | [#18346](https://github.com/opensearch-project/OpenSearch/pull/18346) | Create equivalents of JSM's AccessController in the java agent |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19683](https://github.com/opensearch-project/OpenSearch/pull/19683) | Allow JRT protocol URLs in protection domain extraction | [#4209](https://github.com/opensearch-project/OpenSearch/issues/4209) |
+| v3.2.0 | [#18346](https://github.com/opensearch-project/OpenSearch/pull/18346) | Create equivalents of JSM's AccessController in the java agent | [#18339](https://github.com/opensearch-project/OpenSearch/issues/18339) |
 
 ### Issues (Design / RFC)
 - [Issue #18339](https://github.com/opensearch-project/OpenSearch/issues/18339): Feature request for AccessController replacement

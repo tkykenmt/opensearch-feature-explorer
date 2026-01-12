@@ -127,11 +127,11 @@ Supported BWC versions: 2.9.0 through 2.20.0-SNAPSHOT
 - [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Breaking changes overview
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1245](https://github.com/opensearch-project/neural-search/pull/1245) | OpenSearch 3.0 beta compatibility |
-| v3.0.0 | [#1141](https://github.com/opensearch-project/neural-search/pull/1141) | OpenSearch 3.0 compatibility |
-| v3.0.0 | [#502](https://github.com/opensearch-project/neural-search/pull/502) | Code guidelines |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#1245](https://github.com/opensearch-project/neural-search/pull/1245) | OpenSearch 3.0 beta compatibility |   |
+| v3.0.0 | [#1141](https://github.com/opensearch-project/neural-search/pull/1141) | OpenSearch 3.0 compatibility |   |
+| v3.0.0 | [#502](https://github.com/opensearch-project/neural-search/pull/502) | Code guidelines |   |
 
 ### Issues (Design / RFC)
 - [Issue #225](https://github.com/opensearch-project/neural-search/issues/225): Release version 3.0.0

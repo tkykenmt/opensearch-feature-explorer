@@ -138,10 +138,10 @@ vis_type_timeseries.enabled: true
 - [Visualizing data from multiple data sources](https://opensearch.org/blog/vega-tsvb-mds-visualizations/): Blog post on TSVB with MDS
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504) | Allow hiding axis, per-axis scale, compressed input fields |
-| v2.14.0 | - | Multi-data source support introduced |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504) | Allow hiding axis, per-axis scale, compressed input fields | [#1929](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1929) |
+| v2.14.0 | - | Multi-data source support introduced |   |
 
 ### Issues (Design / RFC)
 - [Issue #1929](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1929): Axis scale override bug

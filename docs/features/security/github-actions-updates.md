@@ -111,16 +111,16 @@ jobs:
 - [Wandalen/wretry.action](https://github.com/Wandalen/wretry.action)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [security#5810](https://github.com/opensearch-project/security/pull/5810) | Bump actions/checkout from 5 to 6 |
-| v3.4.0 | [security#5740](https://github.com/opensearch-project/security/pull/5740) | Bump actions/upload-artifact from 4 to 5 |
-| v3.4.0 | [security#5739](https://github.com/opensearch-project/security/pull/5739) | Bump actions/download-artifact from 5 to 6 |
-| v3.4.0 | [security#5704](https://github.com/opensearch-project/security/pull/5704) | Bump stefanzweifel/git-auto-commit-action from 6 to 7 |
-| v3.4.0 | [security#5702](https://github.com/opensearch-project/security/pull/5702) | Bump github/codeql-action from 3 to 4 |
-| v3.4.0 | [security#5630](https://github.com/opensearch-project/security/pull/5630) | Bump derek-ho/start-opensearch from 7 to 8 |
-| v3.4.0 | [security-dashboards-plugin#2339](https://github.com/opensearch-project/security-dashboards-plugin/pull/2339) | Bump actions/checkout from 5 to 6 |
-| v3.4.0 | [security-dashboards-plugin#2329](https://github.com/opensearch-project/security-dashboards-plugin/pull/2329) | Bump stefanzweifel/git-auto-commit-action from 6 to 7 |
-| v3.4.0 | [security-dashboards-plugin#2323](https://github.com/opensearch-project/security-dashboards-plugin/pull/2323) | Bump actions/setup-java from 4 to 5 |
-| v3.4.0 | [security-dashboards-plugin#2322](https://github.com/opensearch-project/security-dashboards-plugin/pull/2322) | Bump Wandalen/wretry.action from 3.3.0 to 3.8.0 |
-| v3.4.0 | [security-dashboards-plugin#2321](https://github.com/opensearch-project/security-dashboards-plugin/pull/2321) | Bump derek-ho/setup-opensearch-dashboards from 1 to 3 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [security#5810](https://github.com/opensearch-project/security/pull/5810) | Bump actions/checkout from 5 to 6 |   |
+| v3.4.0 | [security#5740](https://github.com/opensearch-project/security/pull/5740) | Bump actions/upload-artifact from 4 to 5 |   |
+| v3.4.0 | [security#5739](https://github.com/opensearch-project/security/pull/5739) | Bump actions/download-artifact from 5 to 6 |   |
+| v3.4.0 | [security#5704](https://github.com/opensearch-project/security/pull/5704) | Bump stefanzweifel/git-auto-commit-action from 6 to 7 |   |
+| v3.4.0 | [security#5702](https://github.com/opensearch-project/security/pull/5702) | Bump github/codeql-action from 3 to 4 |   |
+| v3.4.0 | [security#5630](https://github.com/opensearch-project/security/pull/5630) | Bump derek-ho/start-opensearch from 7 to 8 |   |
+| v3.4.0 | [security-dashboards-plugin#2339](https://github.com/opensearch-project/security-dashboards-plugin/pull/2339) | Bump actions/checkout from 5 to 6 |   |
+| v3.4.0 | [security-dashboards-plugin#2329](https://github.com/opensearch-project/security-dashboards-plugin/pull/2329) | Bump stefanzweifel/git-auto-commit-action from 6 to 7 |   |
+| v3.4.0 | [security-dashboards-plugin#2323](https://github.com/opensearch-project/security-dashboards-plugin/pull/2323) | Bump actions/setup-java from 4 to 5 |   |
+| v3.4.0 | [security-dashboards-plugin#2322](https://github.com/opensearch-project/security-dashboards-plugin/pull/2322) | Bump Wandalen/wretry.action from 3.3.0 to 3.8.0 |   |
+| v3.4.0 | [security-dashboards-plugin#2321](https://github.com/opensearch-project/security-dashboards-plugin/pull/2321) | Bump derek-ho/setup-opensearch-dashboards from 1 to 3 |   |

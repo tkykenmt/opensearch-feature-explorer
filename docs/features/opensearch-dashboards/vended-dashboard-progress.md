@@ -170,6 +170,6 @@ During sync:
 - [opensearch-spark #1195](https://github.com/opensearch-project/opensearch-spark/pull/1195): Index state reporting support
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#9862](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9862) | Implement polling for index state in Vended Dashboard progress |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#9862](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9862) | Implement polling for index state in Vended Dashboard progress |   |

@@ -190,6 +190,6 @@ When the Security plugin is enabled, users need the following permission:
 - [Segment replication](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18257](https://github.com/opensearch-project/OpenSearch/pull/18257) | Initial implementation of Remote Store Metadata API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18257](https://github.com/opensearch-project/OpenSearch/pull/18257) | Initial implementation of Remote Store Metadata API |   |

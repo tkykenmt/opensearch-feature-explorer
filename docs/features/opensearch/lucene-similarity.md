@@ -158,9 +158,9 @@ PUT /my-index
 - [Keyword Search Documentation](https://docs.opensearch.org/3.0/search-plugins/keyword-search/): BM25 configuration guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17306](https://github.com/opensearch-project/OpenSearch/pull/17306) | Use Lucene `BM25Similarity` as default |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17306](https://github.com/opensearch-project/OpenSearch/pull/17306) | Use Lucene `BM25Similarity` as default |   |
 
 ### Issues (Design / RFC)
 - [Issue #17315](https://github.com/opensearch-project/OpenSearch/issues/17315): Original feature request

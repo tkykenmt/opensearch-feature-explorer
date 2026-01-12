@@ -169,11 +169,11 @@ curl -X GET "localhost:9200/_cluster/pending_tasks?pretty"
 - [Cluster Manager Task Throttling](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Related cluster manager documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#17780](https://github.com/opensearch-project/OpenSearch/pull/17780) | Added time_in_execution to pending tasks API |
-| v3.1.0 | [#18421](https://github.com/opensearch-project/OpenSearch/pull/18421) | Added node-left metric with reason tags |
-| v3.1.0 | [#18435](https://github.com/opensearch-project/OpenSearch/pull/18435) | Added FS health check failure metric |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#17780](https://github.com/opensearch-project/OpenSearch/pull/17780) | Added time_in_execution to pending tasks API | [#11818](https://github.com/opensearch-project/OpenSearch/issues/11818) |
+| v3.1.0 | [#18421](https://github.com/opensearch-project/OpenSearch/pull/18421) | Added node-left metric with reason tags |   |
+| v3.1.0 | [#18435](https://github.com/opensearch-project/OpenSearch/pull/18435) | Added FS health check failure metric |   |
 
 ### Issues (Design / RFC)
 - [Issue #11818](https://github.com/opensearch-project/OpenSearch/issues/11818): Original feature request for task execution latency

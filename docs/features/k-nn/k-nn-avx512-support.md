@@ -141,10 +141,10 @@ SIMD optimization is most effective when:
 - [Blog: Boosting k-NN exact search performance](https://opensearch.org/blog/boosting-k-nn-exact-search/): Performance analysis with SIMD
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2110](https://github.com/opensearch-project/k-NN/pull/2110) | Add AVX512 support to k-NN for FAISS library |
-| v2.13.0 | - | Initial SIMD support with AVX2 and NEON |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2110](https://github.com/opensearch-project/k-NN/pull/2110) | Add AVX512 support to k-NN for FAISS library | [#2056](https://github.com/opensearch-project/k-NN/issues/2056) |
+| v2.13.0 | - | Initial SIMD support with AVX2 and NEON |   |
 
 ### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/k-NN/issues/2056): Feature request for FAISS AVX512 support

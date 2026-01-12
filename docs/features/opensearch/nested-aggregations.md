@@ -145,9 +145,9 @@ POST index/_search
 - [Nested Field Type](https://docs.opensearch.org/2.18/field-types/supported-field-types/nested/): Nested field type documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15931](https://github.com/opensearch-project/OpenSearch/pull/15931) | Fix infinite loop in nested agg |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15931](https://github.com/opensearch-project/OpenSearch/pull/15931) | Fix infinite loop in nested agg | [#15914](https://github.com/opensearch-project/OpenSearch/issues/15914) |
 
 ### Issues (Design / RFC)
 - [Issue #15914](https://github.com/opensearch-project/OpenSearch/issues/15914): Bug report for infinite loop in deep nested aggregations

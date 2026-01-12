@@ -302,22 +302,22 @@ calcite:
 - [OpenSearch PPL Blog: Lookup, Join, and Subsearch](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4750](https://github.com/opensearch-project/sql/pull/4750) | Pushdown sort by complex expressions |
-| v3.4.0 | [#4657](https://github.com/opensearch-project/sql/pull/4657) | Support push down sort after limit |
-| v3.4.0 | [#4603](https://github.com/opensearch-project/sql/pull/4603) | Pushdown sort aggregate metrics |
-| v3.4.0 | [#4614](https://github.com/opensearch-project/sql/pull/4614) | Pushdown distinct count approx |
-| v3.4.0 | [#4400](https://github.com/opensearch-project/sql/pull/4400) | Pushdown case function as range queries |
-| v3.4.0 | [#4421](https://github.com/opensearch-project/sql/pull/4421) | PPL fillnull command enhancement |
-| v3.4.0 | [#4446](https://github.com/opensearch-project/sql/pull/4446) | Support format=yaml in Explain API |
-| v3.4.0 | [#4501](https://github.com/opensearch-project/sql/pull/4501) | Configurable subsearch/join limits |
-| v3.4.0 | [#4544](https://github.com/opensearch-project/sql/pull/4544) | Make composite bucket size configurable |
-| v3.3.0 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Single group-by optimization |
-| v3.3.0 | [#4166](https://github.com/opensearch-project/sql/pull/4166) | Pushdown earliest/latest functions |
-| v3.3.0 | [#4213](https://github.com/opensearch-project/sql/pull/4213) | Filtered aggregation pushdown |
-| v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Limit pushdown into bucket size |
-| v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Auto date histogram pushdown |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#4750](https://github.com/opensearch-project/sql/pull/4750) | Pushdown sort by complex expressions | [#3912](https://github.com/opensearch-project/sql/issues/3912) |
+| v3.4.0 | [#4657](https://github.com/opensearch-project/sql/pull/4657) | Support push down sort after limit | [#4570](https://github.com/opensearch-project/sql/issues/4570) |
+| v3.4.0 | [#4603](https://github.com/opensearch-project/sql/pull/4603) | Pushdown sort aggregate metrics | [#4282](https://github.com/opensearch-project/sql/issues/4282) |
+| v3.4.0 | [#4614](https://github.com/opensearch-project/sql/pull/4614) | Pushdown distinct count approx |   |
+| v3.4.0 | [#4400](https://github.com/opensearch-project/sql/pull/4400) | Pushdown case function as range queries | [#4201](https://github.com/opensearch-project/sql/issues/4201) |
+| v3.4.0 | [#4421](https://github.com/opensearch-project/sql/pull/4421) | PPL fillnull command enhancement | [#4419](https://github.com/opensearch-project/sql/issues/4419) |
+| v3.4.0 | [#4446](https://github.com/opensearch-project/sql/pull/4446) | Support format=yaml in Explain API |   |
+| v3.4.0 | [#4501](https://github.com/opensearch-project/sql/pull/4501) | Configurable subsearch/join limits | [#3731](https://github.com/opensearch-project/sql/issues/3731) |
+| v3.4.0 | [#4544](https://github.com/opensearch-project/sql/pull/4544) | Make composite bucket size configurable | [#4517](https://github.com/opensearch-project/sql/issues/4517) |
+| v3.3.0 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Single group-by optimization | [#3528](https://github.com/opensearch-project/sql/issues/3528) |
+| v3.3.0 | [#4166](https://github.com/opensearch-project/sql/pull/4166) | Pushdown earliest/latest functions |   |
+| v3.3.0 | [#4213](https://github.com/opensearch-project/sql/pull/4213) | Filtered aggregation pushdown | [#3949](https://github.com/opensearch-project/sql/issues/3949) |
+| v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Limit pushdown into bucket size | [#3961](https://github.com/opensearch-project/sql/issues/3961) |
+| v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Auto date histogram pushdown | [#4210](https://github.com/opensearch-project/sql/issues/4210) |
 
 ### Issues (Design / RFC)
 - [Issue #4201](https://github.com/opensearch-project/sql/issues/4201): Pushdown case function in aggregations

@@ -132,6 +132,6 @@ The API includes built-in security measures:
 - [ML Commons cluster settings](https://docs.opensearch.org/latest/ml-commons-plugin/cluster-settings/): Configuration settings reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2850](https://github.com/opensearch-project/ml-commons/pull/2850) | Expose ML Config API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2850](https://github.com/opensearch-project/ml-commons/pull/2850) | Expose ML Config API |   |

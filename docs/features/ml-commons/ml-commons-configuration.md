@@ -88,9 +88,9 @@ CreateIndexRequest request = new CreateIndexRequest(indexName)
 - [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#3017](https://github.com/opensearch-project/ml-commons/pull/3017) | Support index.auto_expand_replicas 0-all for .plugins-ml-config |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#3017](https://github.com/opensearch-project/ml-commons/pull/3017) | Support index.auto_expand_replicas 0-all for .plugins-ml-config | [#3002](https://github.com/opensearch-project/ml-commons/issues/3002) |
 
 ### Issues (Design / RFC)
 - [Issue #3002](https://github.com/opensearch-project/ml-commons/issues/3002): Original feature request

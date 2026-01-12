@@ -135,11 +135,11 @@ PUT /_ingest/pipeline/sparse-pipeline
 - [Sparse Encoding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/sparse-encoding/): Processor docs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#852](https://github.com/opensearch-project/neural-search/pull/852) | Update tests to use batch_size in processor |
-| v2.16.0 | - | Batch size moved from Bulk API to processor configuration |
-| v2.14.0 | - | Initial batch ingestion support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#852](https://github.com/opensearch-project/neural-search/pull/852) | Update tests to use batch_size in processor | [#14283](https://github.com/opensearch-project/neural-search/issues/14283) |
+| v2.16.0 | - | Batch size moved from Bulk API to processor configuration |   |
+| v2.14.0 | - | Initial batch ingestion support |   |
 
 ### Issues (Design / RFC)
 - [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Make batch ingestion automatic

@@ -170,9 +170,9 @@ Without a region, only numbers with international prefix (`+`) are fully parsed.
 - [Falsehoods about phone numbers](https://github.com/google/libphonenumber/blob/master/FALSEHOODS.md): Why phone number parsing is complex
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15915](https://github.com/opensearch-project/OpenSearch/pull/15915) | Initial implementation of phone number analyzer |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15915](https://github.com/opensearch-project/OpenSearch/pull/15915) | Initial implementation of phone number analyzer | [#11326](https://github.com/opensearch-project/OpenSearch/issues/11326) |
 
 ### Issues (Design / RFC)
 - [Issue #11326](https://github.com/opensearch-project/OpenSearch/issues/11326): Original RFC for phone number analyzer

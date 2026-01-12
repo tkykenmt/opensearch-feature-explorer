@@ -230,18 +230,18 @@ POST .kibana/_doc/correlations:trace-logs-1
 - [OpenTelemetry Protocol](https://opentelemetry.io/docs/specs/otel/): OTEL specification
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Redesigned logs tab with accordion and expandable rows |
-| v3.4.0 | [#10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716) | Added support for multiple log datasets with accordion display |
-| v3.4.0 | [#10745](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10745) | Add span status filters to trace details |
-| v3.4.0 | [#10630](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10630) | Fix trace details page header to always show root span |
-| v3.4.0 | [#10651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10651) | Traces code block scrollbar to scroll on edge |
-| v3.4.0 | [#10698](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10698) | Remove service.name column from traces table |
-| v3.3.0 | [#10386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10386) | Add Correlations Saved Object Type Registration |
-| v3.3.0 | [#10392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10392) | Add traces chart (request count, error count, latency) |
-| v3.3.0 | [#10393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10393) | Trace Details: Log correlation (tabs + redirect) |
-| v3.3.0 | [#10406](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10406) | Add experimental default trace columns UI setting |
-| v3.3.0 | [#10418](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10418) | Trace Details: Support external datasets |
-| v3.3.0 | [#10431](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10431) | Switch primary schema for trace details, disable service map |
-| v3.3.0 | [#10642](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10642) | Add Timeline waterfall bars column to SpanDetailTableHierarchy |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Redesigned logs tab with accordion and expandable rows |   |
+| v3.4.0 | [#10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716) | Added support for multiple log datasets with accordion display |   |
+| v3.4.0 | [#10745](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10745) | Add span status filters to trace details |   |
+| v3.4.0 | [#10630](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10630) | Fix trace details page header to always show root span | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10651) | Traces code block scrollbar to scroll on edge |   |
+| v3.4.0 | [#10698](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10698) | Remove service.name column from traces table |   |
+| v3.3.0 | [#10386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10386) | Add Correlations Saved Object Type Registration |   |
+| v3.3.0 | [#10392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10392) | Add traces chart (request count, error count, latency) | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10393) | Trace Details: Log correlation (tabs + redirect) | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10406](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10406) | Add experimental default trace columns UI setting | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10418](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10418) | Trace Details: Support external datasets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10431](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10431) | Switch primary schema for trace details, disable service map | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10642](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10642) | Add Timeline waterfall bars column to SpanDetailTableHierarchy |   |

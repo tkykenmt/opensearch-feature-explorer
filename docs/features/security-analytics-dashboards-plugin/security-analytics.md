@@ -106,8 +106,8 @@ graph TB
 - [Security Analytics Settings](https://docs.opensearch.org/3.0/security-analytics/settings/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1360](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1360) | Correlation table rendering fixed |
-| v3.2.0 | [#1313](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1313) | Remove correlated findings bar chart that uses vega |
-| v3.2.0 | [#1312](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1312) | Update API call to get IOC types |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1360](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1360) | Correlation table rendering fixed |   |
+| v3.2.0 | [#1313](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1313) | Remove correlated findings bar chart that uses vega |   |
+| v3.2.0 | [#1312](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1312) | Update API call to get IOC types |   |

@@ -148,11 +148,11 @@ const appLinks: AppLinkSchema[] = [
 - [Trace Analytics Getting Started](https://docs.opensearch.org/latest/observing-your-data/trace/getting-started/): Using OTEL data with trace analytics
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8291) | Update sample data page UI when useUpdatedUX enabled |
-| v2.18.0 | [#8587](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8587) | Add support for OTEL sample data - logs, traces and metrics |
-| v2.18.0 | [#8693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8693) | Update OTEL sample data description with compatible OS version |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8291) | Update sample data page UI when useUpdatedUX enabled | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8587](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8587) | Add support for OTEL sample data - logs, traces and metrics |   |
+| v2.18.0 | [#8693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8693) | Update OTEL sample data description with compatible OS version |   |
 
 ### Issues (Design / RFC)
 - [Issue #8312](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8312): Update Sample Data Page UI for New Updated UX

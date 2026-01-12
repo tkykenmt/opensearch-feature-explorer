@@ -183,9 +183,9 @@ GET my-knn-index/_search?explain=true
 - [Explain API documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/explain/): General Explain API reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#2403](https://github.com/opensearch-project/k-NN/pull/2403) | Added Explain API support for Exact/ANN/Radial/Disk based KNN search on Faiss Engine |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#2403](https://github.com/opensearch-project/k-NN/pull/2403) | Added Explain API support for Exact/ANN/Radial/Disk based KNN search on Faiss Engine | [#875](https://github.com/opensearch-project/k-NN/issues/875) |
 
 ### Issues (Design / RFC)
 - [Issue #875](https://github.com/opensearch-project/k-NN/issues/875): Original feature request - Explain API not compatible with k-NN queries

@@ -217,29 +217,29 @@ Job Scheduler supports two schedule formats:
 - [Keep a Changelog](https://keepachangelog.com/en/1.0.0/): Changelog format specification
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#814](https://github.com/opensearch-project/job-scheduler/pull/814) | Job History Service - creates history index recording job execution times |
-| v3.3.0 | [#714](https://github.com/opensearch-project/job-scheduler/pull/714) | Make LockService an interface and replace usages of ThreadContext.stashContext |
-| v3.3.0 | [#833](https://github.com/opensearch-project/job-scheduler/pull/833) | Create Guice module to bind LockService interface from SPI to LockServiceImpl |
-| v3.3.0 | [#831](https://github.com/opensearch-project/job-scheduler/pull/831) | Introduce configurable remote metadata client and migrate LockService to SdkClient |
-| v3.3.0 | [#810](https://github.com/opensearch-project/job-scheduler/pull/810) | Update delete_backport_branch workflow to include release-chores branches |
-| v3.2.0 | [#849](https://github.com/opensearch-project/common-utils/pull/849) | Add Seconds as a supported unit for IntervalSchedule |
-| v3.2.0 | [#786](https://github.com/opensearch-project/job-scheduler/pull/786) | Adds REST API to list jobs with an option to list them per node |
-| v3.2.0 | [#796](https://github.com/opensearch-project/job-scheduler/pull/796) | Support defining IntervalSchedule in seconds |
-| v3.2.0 | [#802](https://github.com/opensearch-project/job-scheduler/pull/802) | Rest API to list all locks with option to get a specific lock |
-| v3.2.0 | [#792](https://github.com/opensearch-project/job-scheduler/pull/792) | Make Lock service not final |
-| v3.2.0 | [#801](https://github.com/opensearch-project/job-scheduler/pull/801) | Move info about delay to the schedule portion in List Jobs API |
-| v3.2.0 | [#793](https://github.com/opensearch-project/job-scheduler/pull/793) | Ensure that dates are serialized in TransportGetScheduledInfoAction |
-| v3.2.0 | [#790](https://github.com/opensearch-project/job-scheduler/pull/790) | Use Text Blocks when defining multi-line strings |
-| v3.1.0 | [#778](https://github.com/opensearch-project/job-scheduler/pull/778) | Add CHANGELOG and changelog_verifier workflow |
-| v3.1.0 | [#766](https://github.com/opensearch-project/job-scheduler/pull/766) | Increment version to 3.1.0-SNAPSHOT |
-| v3.1.0 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency |
-| v3.0.0 | [#702](https://github.com/opensearch-project/job-scheduler/pull/702) | Enable custom start commands and options to resolve GHA issues |
-| v3.0.0 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring |
-| v3.0.0 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |
-| v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection |
-| v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#814](https://github.com/opensearch-project/job-scheduler/pull/814) | Job History Service - creates history index recording job execution times | [#808](https://github.com/opensearch-project/job-scheduler/issues/808) |
+| v3.3.0 | [#714](https://github.com/opensearch-project/job-scheduler/pull/714) | Make LockService an interface and replace usages of ThreadContext.stashContext | [#238](https://github.com/opensearch-project/job-scheduler/issues/238) |
+| v3.3.0 | [#833](https://github.com/opensearch-project/job-scheduler/pull/833) | Create Guice module to bind LockService interface from SPI to LockServiceImpl |   |
+| v3.3.0 | [#831](https://github.com/opensearch-project/job-scheduler/pull/831) | Introduce configurable remote metadata client and migrate LockService to SdkClient | [#828](https://github.com/opensearch-project/job-scheduler/issues/828) |
+| v3.3.0 | [#810](https://github.com/opensearch-project/job-scheduler/pull/810) | Update delete_backport_branch workflow to include release-chores branches |   |
+| v3.2.0 | [#849](https://github.com/opensearch-project/common-utils/pull/849) | Add Seconds as a supported unit for IntervalSchedule |   |
+| v3.2.0 | [#786](https://github.com/opensearch-project/job-scheduler/pull/786) | Adds REST API to list jobs with an option to list them per node | [#775](https://github.com/opensearch-project/job-scheduler/issues/775) |
+| v3.2.0 | [#796](https://github.com/opensearch-project/job-scheduler/pull/796) | Support defining IntervalSchedule in seconds |   |
+| v3.2.0 | [#802](https://github.com/opensearch-project/job-scheduler/pull/802) | Rest API to list all locks with option to get a specific lock |   |
+| v3.2.0 | [#792](https://github.com/opensearch-project/job-scheduler/pull/792) | Make Lock service not final |   |
+| v3.2.0 | [#801](https://github.com/opensearch-project/job-scheduler/pull/801) | Move info about delay to the schedule portion in List Jobs API |   |
+| v3.2.0 | [#793](https://github.com/opensearch-project/job-scheduler/pull/793) | Ensure that dates are serialized in TransportGetScheduledInfoAction |   |
+| v3.2.0 | [#790](https://github.com/opensearch-project/job-scheduler/pull/790) | Use Text Blocks when defining multi-line strings |   |
+| v3.1.0 | [#778](https://github.com/opensearch-project/job-scheduler/pull/778) | Add CHANGELOG and changelog_verifier workflow | [#777](https://github.com/opensearch-project/job-scheduler/issues/777) |
+| v3.1.0 | [#766](https://github.com/opensearch-project/job-scheduler/pull/766) | Increment version to 3.1.0-SNAPSHOT |   |
+| v3.1.0 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency |   |
+| v3.0.0 | [#702](https://github.com/opensearch-project/job-scheduler/pull/702) | Enable custom start commands and options to resolve GHA issues | [#698](https://github.com/opensearch-project/job-scheduler/issues/698) |
+| v3.0.0 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring |   |
+| v3.0.0 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |   |
+| v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection |   |
+| v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates |   |
 
 ### Issues (Design / RFC)
 - [Issue #808](https://github.com/opensearch-project/job-scheduler/issues/808): Feature request for Job execution History index

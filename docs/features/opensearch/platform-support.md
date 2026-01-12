@@ -149,9 +149,9 @@ cd opensearch-3.1.0
 - [Tarball Installation](https://docs.opensearch.org/3.1/install-and-configure/install-opensearch/tar/): Tarball installation guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18156](https://github.com/opensearch-project/OpenSearch/pull/18156) | Add support for linux riscv64 platform |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18156](https://github.com/opensearch-project/OpenSearch/pull/18156) | Add support for linux riscv64 platform | [#2341](https://github.com/opensearch-project/OpenSearch/issues/2341) |
 
 ### Issues (Design / RFC)
 - [Issue #2341](https://github.com/opensearch-project/OpenSearch/issues/2341): RISC-V 64 support request

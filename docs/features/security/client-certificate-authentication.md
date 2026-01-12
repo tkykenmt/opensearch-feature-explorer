@@ -211,9 +211,9 @@ print(response.json())
 - [Generating Self-Signed Certificates](https://docs.opensearch.org/3.0/security/configuration/generate-certificates/): Certificate generation guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator |   |
 
 ### Issues (Design / RFC)
 - [Issue #4378](https://github.com/opensearch-project/security/issues/4378): Client certificate setting bypasses password requirements

@@ -187,16 +187,16 @@ classDiagram
 - [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#2606](https://github.com/opensearch-project/k-NN/pull/2606) | Switch derived source from field attributes to segment attribute |
-| v3.0.0 | [#2612](https://github.com/opensearch-project/k-NN/pull/2612) | Migrate derived source from filter to mask |
-| v3.0.0 | [#2646](https://github.com/opensearch-project/k-NN/pull/2646) | Consolidate MethodFieldMapper and LuceneFieldMapper into EngineFieldMapper |
-| v3.0.0 | [#2541](https://github.com/opensearch-project/k-NN/pull/2541) | Small Refactor Post Lucene 10.0.1 upgrade |
-| v3.0.0 | [#2546](https://github.com/opensearch-project/k-NN/pull/2546) | Refactor codec to leverage backwards_codecs |
-| v3.0.0 | [#2573](https://github.com/opensearch-project/k-NN/pull/2573) | Blocking Index Creation using NMSLIB |
-| v3.0.0 | [#2575](https://github.com/opensearch-project/k-NN/pull/2575) | Improve Streaming Compatibility Issue for MethodComponentContext |
-| v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | 3.0.0 Breaking Changes For KNN |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#2606](https://github.com/opensearch-project/k-NN/pull/2606) | Switch derived source from field attributes to segment attribute |   |
+| v3.0.0 | [#2612](https://github.com/opensearch-project/k-NN/pull/2612) | Migrate derived source from filter to mask | [#2377](https://github.com/opensearch-project/k-NN/issues/2377) |
+| v3.0.0 | [#2646](https://github.com/opensearch-project/k-NN/pull/2646) | Consolidate MethodFieldMapper and LuceneFieldMapper into EngineFieldMapper | [#2640](https://github.com/opensearch-project/k-NN/issues/2640) |
+| v3.0.0 | [#2541](https://github.com/opensearch-project/k-NN/pull/2541) | Small Refactor Post Lucene 10.0.1 upgrade |   |
+| v3.0.0 | [#2546](https://github.com/opensearch-project/k-NN/pull/2546) | Refactor codec to leverage backwards_codecs | [#2539](https://github.com/opensearch-project/k-NN/issues/2539) |
+| v3.0.0 | [#2573](https://github.com/opensearch-project/k-NN/pull/2573) | Blocking Index Creation using NMSLIB |   |
+| v3.0.0 | [#2575](https://github.com/opensearch-project/k-NN/pull/2575) | Improve Streaming Compatibility Issue for MethodComponentContext |   |
+| v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | 3.0.0 Breaking Changes For KNN |   |
 
 ### Issues (Design / RFC)
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): RFC - Derived Source for Vectors

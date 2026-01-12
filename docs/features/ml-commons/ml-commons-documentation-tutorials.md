@@ -173,19 +173,19 @@ PUT test-index
 - [Agents and Tools](https://opensearch.org/docs/latest/ml-commons-plugin/agents-tools/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4130](https://github.com/opensearch-project/ml-commons/pull/4130) | ColPali multimodal blueprint |
-| v3.3.0 | [#4160](https://github.com/opensearch-project/ml-commons/pull/4160) | Ollama connector blueprint |
-| v3.3.0 | [#4127](https://github.com/opensearch-project/ml-commons/pull/4127) | Agentic search tutorial |
-| v3.3.0 | [#4125](https://github.com/opensearch-project/ml-commons/pull/4125) | Agentic memory with Strands agents tutorial |
-| v3.3.0 | [#4145](https://github.com/opensearch-project/ml-commons/pull/4145) | Instance type fix in tutorial |
-| v3.3.0 | [#4124](https://github.com/opensearch-project/ml-commons/pull/4124) | Additional unit tests |
-| v3.3.0 | [#4126](https://github.com/opensearch-project/ml-commons/pull/4126) | Additional unit tests |
-| v3.2.0 | [#3576](https://github.com/opensearch-project/ml-commons/pull/3576) | Multi modal tutorial using ml inference processor |
-| v3.2.0 | [#3879](https://github.com/opensearch-project/ml-commons/pull/3879) | Semantic highlighter blueprint for SageMaker |
-| v3.2.0 | [#3857](https://github.com/opensearch-project/ml-commons/pull/3857) | Neural Sparse Remote Model documentation |
-| v3.2.0 | [#3966](https://github.com/opensearch-project/ml-commons/pull/3966) | Language identification tutorial |
-| v3.2.0 | [#3980](https://github.com/opensearch-project/ml-commons/pull/3980) | Aleph alpha blueprint link fix |
-| v3.2.0 | [#4045](https://github.com/opensearch-project/ml-commons/pull/4045) | Agentic RAG tutorial |
-| v3.2.0 | [#3944](https://github.com/opensearch-project/ml-commons/pull/3944) | Multi-modal search notebook |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4130](https://github.com/opensearch-project/ml-commons/pull/4130) | ColPali multimodal blueprint |   |
+| v3.3.0 | [#4160](https://github.com/opensearch-project/ml-commons/pull/4160) | Ollama connector blueprint | [#4146](https://github.com/opensearch-project/ml-commons/issues/4146) |
+| v3.3.0 | [#4127](https://github.com/opensearch-project/ml-commons/pull/4127) | Agentic search tutorial |   |
+| v3.3.0 | [#4125](https://github.com/opensearch-project/ml-commons/pull/4125) | Agentic memory with Strands agents tutorial |   |
+| v3.3.0 | [#4145](https://github.com/opensearch-project/ml-commons/pull/4145) | Instance type fix in tutorial |   |
+| v3.3.0 | [#4124](https://github.com/opensearch-project/ml-commons/pull/4124) | Additional unit tests |   |
+| v3.3.0 | [#4126](https://github.com/opensearch-project/ml-commons/pull/4126) | Additional unit tests |   |
+| v3.2.0 | [#3576](https://github.com/opensearch-project/ml-commons/pull/3576) | Multi modal tutorial using ml inference processor |   |
+| v3.2.0 | [#3879](https://github.com/opensearch-project/ml-commons/pull/3879) | Semantic highlighter blueprint for SageMaker |   |
+| v3.2.0 | [#3857](https://github.com/opensearch-project/ml-commons/pull/3857) | Neural Sparse Remote Model documentation | [#9714](https://github.com/opensearch-project/ml-commons/issues/9714) |
+| v3.2.0 | [#3966](https://github.com/opensearch-project/ml-commons/pull/3966) | Language identification tutorial |   |
+| v3.2.0 | [#3980](https://github.com/opensearch-project/ml-commons/pull/3980) | Aleph alpha blueprint link fix |   |
+| v3.2.0 | [#4045](https://github.com/opensearch-project/ml-commons/pull/4045) | Agentic RAG tutorial |   |
+| v3.2.0 | [#3944](https://github.com/opensearch-project/ml-commons/pull/3944) | Multi-modal search notebook |   |

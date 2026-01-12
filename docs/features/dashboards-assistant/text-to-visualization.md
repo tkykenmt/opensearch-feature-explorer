@@ -212,14 +212,14 @@ interface VisNLQSavedObject {
 - [Flow Framework](https://docs.opensearch.org/2.18/automating-configurations/): Workflow automation for agent setup
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#264](https://github.com/opensearch-project/dashboards-assistant/pull/264) | Initial implementation of text to visualization |
-| v2.18.0 | [#295](https://github.com/opensearch-project/dashboards-assistant/pull/295) | Add discovery summary API |
-| v2.18.0 | [#349](https://github.com/opensearch-project/dashboards-assistant/pull/349) | Integration with Discover page |
-| v3.0.0 | [#510](https://github.com/opensearch-project/dashboards-assistant/pull/510) | Add metrics collection for t2viz |
-| v3.1.0 | [#546](https://github.com/opensearch-project/dashboards-assistant/pull/546) | Prevent navigation when PPL returns no results |
-| v3.2.0 | [#589](https://github.com/opensearch-project/dashboards-assistant/pull/589) | Support natural language visualization in new dashboard ingress (Explore UI) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#264](https://github.com/opensearch-project/dashboards-assistant/pull/264) | Initial implementation of text to visualization |   |
+| v2.18.0 | [#295](https://github.com/opensearch-project/dashboards-assistant/pull/295) | Add discovery summary API |   |
+| v2.18.0 | [#349](https://github.com/opensearch-project/dashboards-assistant/pull/349) | Integration with Discover page |   |
+| v3.0.0 | [#510](https://github.com/opensearch-project/dashboards-assistant/pull/510) | Add metrics collection for t2viz |   |
+| v3.1.0 | [#546](https://github.com/opensearch-project/dashboards-assistant/pull/546) | Prevent navigation when PPL returns no results |   |
+| v3.2.0 | [#589](https://github.com/opensearch-project/dashboards-assistant/pull/589) | Support natural language visualization in new dashboard ingress (Explore UI) |   |
 
 ### Issues (Design / RFC)
 - [Issue #294](https://github.com/opensearch-project/dashboards-assistant/issues/294): Feature request for data summary API

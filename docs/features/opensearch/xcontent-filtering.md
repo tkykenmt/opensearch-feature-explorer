@@ -148,6 +148,6 @@ public interface RestRequestFilter {
 - [RestRequestFilter.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/rest/RestRequestFilter.java): Extension point for sensitive data filtering
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19976](https://github.com/opensearch-project/OpenSearch/pull/19976) | Add case sensitivity as an argument to XContentMapValues.filter |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19976](https://github.com/opensearch-project/OpenSearch/pull/19976) | Add case sensitivity as an argument to XContentMapValues.filter |   |

@@ -203,13 +203,13 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#10324](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10324) | Refactor Banner Extensibility Model via Chrome Service |
-| v3.2.0 | [#10264](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10264) | Add global banner support via UI settings with live updates |
-| v3.2.0 | [#9989](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9989) | Initial implementation with feature flag |
-| v3.2.0 | [#10251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10251) | Fix font size and center alignment |
-| v3.2.0 | [#10254](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10254) | Reset lighthouse baseline |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#10324](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10324) | Refactor Banner Extensibility Model via Chrome Service |   |
+| v3.2.0 | [#10264](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10264) | Add global banner support via UI settings with live updates |   |
+| v3.2.0 | [#9989](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9989) | Initial implementation with feature flag |   |
+| v3.2.0 | [#10251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10251) | Fix font size and center alignment |   |
+| v3.2.0 | [#10254](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10254) | Reset lighthouse baseline |   |
 
 ### Issues (Design / RFC)
 - [Issue #10223](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10223): Banner extensibility model refactor

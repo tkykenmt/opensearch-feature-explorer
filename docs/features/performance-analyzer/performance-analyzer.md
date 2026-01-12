@@ -127,11 +127,11 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 - [PA Commons Repository](https://github.com/opensearch-project/performance-analyzer-commons): Commons library
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |
-| v3.3.0 | [#845](https://github.com/opensearch-project/performance-analyzer/pull/845) | Use Subclass method for Version and Channel type for security plugin compatibility |
-| v3.3.0 | [#846](https://github.com/opensearch-project/performance-analyzer/pull/846) | Increment to 3.3.0.0 and update SHA files |
-| v3.2.0 | [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |
-| v2.17.0 | [#690](https://github.com/opensearch-project/performance-analyzer/pull/690) | Added CacheConfig Telemetry collectors |
-| v2.17.0 | [#712](https://github.com/opensearch-project/performance-analyzer/pull/712) | Bump PA to use 1.6.0 PA commons lib |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |   |
+| v3.3.0 | [#845](https://github.com/opensearch-project/performance-analyzer/pull/845) | Use Subclass method for Version and Channel type for security plugin compatibility |   |
+| v3.3.0 | [#846](https://github.com/opensearch-project/performance-analyzer/pull/846) | Increment to 3.3.0.0 and update SHA files |   |
+| v3.2.0 | [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |   |
+| v2.17.0 | [#690](https://github.com/opensearch-project/performance-analyzer/pull/690) | Added CacheConfig Telemetry collectors |   |
+| v2.17.0 | [#712](https://github.com/opensearch-project/performance-analyzer/pull/712) | Bump PA to use 1.6.0 PA commons lib |   |

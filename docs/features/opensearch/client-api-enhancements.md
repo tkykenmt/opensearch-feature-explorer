@@ -154,7 +154,7 @@ client.admin().indices().refreshAsync(new RefreshRequest("my-index"))
 - [PR #19161](https://github.com/opensearch-project/OpenSearch/pull/19161): IndicesAdminClient extension
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18998](https://github.com/opensearch-project/OpenSearch/pull/18998) | Add CompletionStage variants to Client interface |
-| v3.3.0 | [#19161](https://github.com/opensearch-project/OpenSearch/pull/19161) | Add CompletionStage variants to IndicesAdminClient |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18998](https://github.com/opensearch-project/OpenSearch/pull/18998) | Add CompletionStage variants to Client interface |   |
+| v3.3.0 | [#19161](https://github.com/opensearch-project/OpenSearch/pull/19161) | Add CompletionStage variants to IndicesAdminClient |   |

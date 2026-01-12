@@ -80,6 +80,6 @@ module.exports = function (api) {
 - [PR #9831](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9831): Path alias extraction in OSD core
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#580](https://github.com/opensearch-project/dashboards-assistant/pull/580) | Fix failed CI due to path alias |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#580](https://github.com/opensearch-project/dashboards-assistant/pull/580) | Fix failed CI due to path alias |   |

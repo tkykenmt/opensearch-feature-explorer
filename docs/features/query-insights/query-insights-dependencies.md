@@ -86,7 +86,7 @@ configurations.all {
 - [Query Insights Plugin](https://github.com/opensearch-project/query-insights): GitHub repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#371](https://github.com/opensearch-project/query-insights/pull/371) | CVE-2025-27820 and CVE-2025-48734 fix |
-| v3.3.0 | [#375](https://github.com/opensearch-project/query-insights/pull/375) | Backport to 3.1 branch |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#371](https://github.com/opensearch-project/query-insights/pull/371) | CVE-2025-27820 and CVE-2025-48734 fix |   |
+| v3.3.0 | [#375](https://github.com/opensearch-project/query-insights/pull/375) | Backport to 3.1 branch |   |

@@ -124,16 +124,16 @@ googleJavaFormat {
 - [opensearch-build #5789](https://github.com/opensearch-project/opensearch-build/pull/5789): S3 publishing support
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4824](https://github.com/opensearch-project/sql/pull/4824) | Bump Gradle to 9.2.0 and JDK to 25 |
-| v3.4.0 | [#4857](https://github.com/opensearch-project/sql/pull/4857) | Support timeouts for Calcite queries |
-| v3.4.0 | [#4838](https://github.com/opensearch-project/sql/pull/4838) | Execute yamlRestTest in integration job |
-| v3.4.0 | [#4716](https://github.com/opensearch-project/sql/pull/4716) | Split BWC tests to prevent disk exhaustion |
-| v3.4.0 | [#4646](https://github.com/opensearch-project/sql/pull/4646) | Add build cache for jitpack dependencies |
-| v3.4.0 | [#4598](https://github.com/opensearch-project/sql/pull/4598) | Onboard async query core to maven snapshots |
-| v3.4.0 | [#4588](https://github.com/opensearch-project/sql/pull/4588) | Onboard maven snapshots publishing to S3 |
-| v3.4.0 | [#4484](https://github.com/opensearch-project/sql/pull/4484) | Publish internal modules for downstream reuse |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#4824](https://github.com/opensearch-project/sql/pull/4824) | Bump Gradle to 9.2.0 and JDK to 25 | [#4722](https://github.com/opensearch-project/sql/issues/4722) |
+| v3.4.0 | [#4857](https://github.com/opensearch-project/sql/pull/4857) | Support timeouts for Calcite queries |   |
+| v3.4.0 | [#4838](https://github.com/opensearch-project/sql/pull/4838) | Execute yamlRestTest in integration job |   |
+| v3.4.0 | [#4716](https://github.com/opensearch-project/sql/pull/4716) | Split BWC tests to prevent disk exhaustion |   |
+| v3.4.0 | [#4646](https://github.com/opensearch-project/sql/pull/4646) | Add build cache for jitpack dependencies |   |
+| v3.4.0 | [#4598](https://github.com/opensearch-project/sql/pull/4598) | Onboard async query core to maven snapshots |   |
+| v3.4.0 | [#4588](https://github.com/opensearch-project/sql/pull/4588) | Onboard maven snapshots publishing to S3 |   |
+| v3.4.0 | [#4484](https://github.com/opensearch-project/sql/pull/4484) | Publish internal modules for downstream reuse |   |
 
 ### Issues (Design / RFC)
 - [Issue #4722](https://github.com/opensearch-project/sql/issues/4722): Gradle upgrade tracking

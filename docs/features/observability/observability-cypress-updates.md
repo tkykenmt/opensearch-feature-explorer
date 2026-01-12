@@ -65,6 +65,6 @@ yarn cypress open
 - [dashboards-observability Repository](https://github.com/opensearch-project/dashboards-observability): Source repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#2507](https://github.com/opensearch-project/dashboards-observability/pull/2507) | Update @cypress/request to 3.0.9 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#2507](https://github.com/opensearch-project/dashboards-observability/pull/2507) | Update @cypress/request to 3.0.9 |   |

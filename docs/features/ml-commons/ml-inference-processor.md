@@ -264,15 +264,15 @@ POST _plugins/_ml/agents/_register
 - [Blog: Introduction to ML inference processors](https://opensearch.org/blog/introduction-to-ml-inference-processors-in-opensearch-review-summarization-and-semantic-search/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4111](https://github.com/opensearch-project/ml-commons/pull/4111) | Add passthrough post process function |
-| v3.3.0 | [#4236](https://github.com/opensearch-project/ml-commons/pull/4236) | Add output transformation support with mean pooling |
-| v3.3.0 | [#4093](https://github.com/opensearch-project/ml-commons/pull/4093) | Add processor chain framework |
-| v3.3.0 | [#4260](https://github.com/opensearch-project/ml-commons/pull/4260) | Refactor processor chain with additional processors |
-| v2.17.0 | [#2801](https://github.com/opensearch-project/ml-commons/pull/2801) | Support one_to_one in ML Inference Search Response Processor |
-| v2.16.0 | - | ML Inference Search Request/Response Processors |
-| v2.14.0 | - | Initial ML Inference Ingest Processor |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4111](https://github.com/opensearch-project/ml-commons/pull/4111) | Add passthrough post process function |   |
+| v3.3.0 | [#4236](https://github.com/opensearch-project/ml-commons/pull/4236) | Add output transformation support with mean pooling |   |
+| v3.3.0 | [#4093](https://github.com/opensearch-project/ml-commons/pull/4093) | Add processor chain framework |   |
+| v3.3.0 | [#4260](https://github.com/opensearch-project/ml-commons/pull/4260) | Refactor processor chain with additional processors |   |
+| v2.17.0 | [#2801](https://github.com/opensearch-project/ml-commons/pull/2801) | Support one_to_one in ML Inference Search Response Processor |   |
+| v2.16.0 | - | ML Inference Search Request/Response Processors |   |
+| v2.14.0 | - | Initial ML Inference Ingest Processor |   |
 
 ### Issues (Design / RFC)
 - [Issue #2173](https://github.com/opensearch-project/ml-commons/issues/2173): RFC - ML Inference Processors

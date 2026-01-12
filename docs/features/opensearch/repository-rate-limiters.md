@@ -126,9 +126,9 @@ PUT /_snapshot/s3-repository
 - [Take and Restore Snapshots](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/): Snapshot operations guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18069](https://github.com/opensearch-project/OpenSearch/pull/18069) | Making multi rate limiters in repository dynamic |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18069](https://github.com/opensearch-project/OpenSearch/pull/18069) | Making multi rate limiters in repository dynamic | [#17488](https://github.com/opensearch-project/OpenSearch/issues/17488) |
 
 ### Issues (Design / RFC)
 - [Issue #17488](https://github.com/opensearch-project/OpenSearch/issues/17488): Feature request for dynamic snapshot rate settings

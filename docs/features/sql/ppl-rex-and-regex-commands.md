@@ -214,11 +214,11 @@ source=data | rex field=phone mode=sed "s/(\d{3})(\d{3})(\d{4})/\1-\2-\3/" | fie
 - [Java Pattern Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html): Java regex syntax reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4083](https://github.com/opensearch-project/sql/pull/4083) | Implementation of `regex` command in PPL |
-| v3.3.0 | [#4109](https://github.com/opensearch-project/sql/pull/4109) | Core implementation of `rex` command (extract mode) |
-| v3.3.0 | [#4241](https://github.com/opensearch-project/sql/pull/4241) | Implementation of `sed` mode and `offset_field` in rex command |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4083](https://github.com/opensearch-project/sql/pull/4083) | Implementation of `regex` command in PPL |   |
+| v3.3.0 | [#4109](https://github.com/opensearch-project/sql/pull/4109) | Core implementation of `rex` command (extract mode) |   |
+| v3.3.0 | [#4241](https://github.com/opensearch-project/sql/pull/4241) | Implementation of `sed` mode and `offset_field` in rex command | [#4108](https://github.com/opensearch-project/sql/issues/4108) |
 
 ### Issues (Design / RFC)
 - [Issue #4082](https://github.com/opensearch-project/sql/issues/4082): RFC for regex command

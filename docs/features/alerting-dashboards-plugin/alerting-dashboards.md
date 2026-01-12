@@ -104,7 +104,7 @@ Bucket-level monitors support various filter operators:
 - [Alerting Dashboards Plugin Repository](https://github.com/opensearch-project/alerting-dashboards-plugin): Source code repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1325](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1325) | Allow keyword filter to be attached to bucket level monitor trigger |
-| v3.4.0 | [#1313](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1313) | Onboarded opensearch apis to use MDS client when MDS is enabled |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1325](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1325) | Allow keyword filter to be attached to bucket level monitor trigger |   |
+| v3.4.0 | [#1313](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1313) | Onboarded opensearch apis to use MDS client when MDS is enabled |   |

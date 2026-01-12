@@ -125,9 +125,9 @@ PUT /my-index/_settings
 - [Blog: Adaptive refresh for resilient segment replication](https://opensearch.org/blog/adaptive-refresh-for-resilient-segment-replication/): Related refresh improvements for segment replication
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17777](https://github.com/opensearch-project/OpenSearch/pull/17777) | Implement fixed interval refresh task scheduling |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17777](https://github.com/opensearch-project/OpenSearch/pull/17777) | Implement fixed interval refresh task scheduling |   |
 
 ### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes

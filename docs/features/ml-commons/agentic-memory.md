@@ -187,13 +187,13 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 - [OpenSearch as an Agentic Memory Solution Blog](https://opensearch.org/blog/opensearch-as-an-agentic-memory-solution-building-context-aware-agents-using-persistent-memory/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4192](https://github.com/opensearch-project/ml-commons/pull/4192) | Add WriteToScratchPad and ReadFromScratchPad tools |
-| v3.3.0 | [#4218](https://github.com/opensearch-project/ml-commons/pull/4218) | Refactor Agentic Memory |
-| v3.3.0 | [#4246](https://github.com/opensearch-project/ml-commons/pull/4246) | Add create session API |
-| v3.3.0 | [#4201](https://github.com/opensearch-project/ml-commons/pull/4201) | Add updated time to message |
-| v3.3.0 | [#4240](https://github.com/opensearch-project/ml-commons/pull/4240) | Enable agentic memory by default for GA |
-| v3.3.0 | [#4238](https://github.com/opensearch-project/ml-commons/pull/4238) | Add delete_all_memories parameter |
-| v3.3.0 | [#4282](https://github.com/opensearch-project/ml-commons/pull/4282) | Improve semantic fact extraction prompt |
-| v3.3.0 | [#4288](https://github.com/opensearch-project/ml-commons/pull/4288) | Improve user preference extraction prompt |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4192](https://github.com/opensearch-project/ml-commons/pull/4192) | Add WriteToScratchPad and ReadFromScratchPad tools |   |
+| v3.3.0 | [#4218](https://github.com/opensearch-project/ml-commons/pull/4218) | Refactor Agentic Memory |   |
+| v3.3.0 | [#4246](https://github.com/opensearch-project/ml-commons/pull/4246) | Add create session API |   |
+| v3.3.0 | [#4201](https://github.com/opensearch-project/ml-commons/pull/4201) | Add updated time to message | [#4193](https://github.com/opensearch-project/ml-commons/issues/4193) |
+| v3.3.0 | [#4240](https://github.com/opensearch-project/ml-commons/pull/4240) | Enable agentic memory by default for GA |   |
+| v3.3.0 | [#4238](https://github.com/opensearch-project/ml-commons/pull/4238) | Add delete_all_memories parameter |   |
+| v3.3.0 | [#4282](https://github.com/opensearch-project/ml-commons/pull/4282) | Improve semantic fact extraction prompt |   |
+| v3.3.0 | [#4288](https://github.com/opensearch-project/ml-commons/pull/4288) | Improve user preference extraction prompt |   |

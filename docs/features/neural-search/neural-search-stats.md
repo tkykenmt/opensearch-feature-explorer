@@ -217,15 +217,15 @@ GET /_plugins/_neural/stats?include_individual_nodes=false
 - [Neural Search Stats API Documentation](https://docs.opensearch.org/3.0/vector-search/api/neural/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1308](https://github.com/opensearch-project/neural-search/pull/1308) | Add stats for text chunking processor algorithms |
-| v3.1.0 | [#1327](https://github.com/opensearch-project/neural-search/pull/1327) | Add stats tracking for semantic highlighting |
-| v3.1.0 | [#1332](https://github.com/opensearch-project/neural-search/pull/1332) | Add stats for text embedding processor with skip_existing flag |
-| v3.1.0 | [#1326](https://github.com/opensearch-project/neural-search/pull/1326) | Add stats for score/rank based normalization and hybrid query |
-| v3.1.0 | [#1343](https://github.com/opensearch-project/neural-search/pull/1343) | Add stats for neural query enricher, sparse encoding, reranker |
-| v3.1.0 | [#1360](https://github.com/opensearch-project/neural-search/pull/1360) | Add include_individual_nodes, include_all_nodes, include_info params |
-| v3.1.0 | [#1378](https://github.com/opensearch-project/neural-search/pull/1378) | Combine skip_existing flag stats into single stat |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#1308](https://github.com/opensearch-project/neural-search/pull/1308) | Add stats for text chunking processor algorithms |   |
+| v3.1.0 | [#1327](https://github.com/opensearch-project/neural-search/pull/1327) | Add stats tracking for semantic highlighting |   |
+| v3.1.0 | [#1332](https://github.com/opensearch-project/neural-search/pull/1332) | Add stats for text embedding processor with skip_existing flag |   |
+| v3.1.0 | [#1326](https://github.com/opensearch-project/neural-search/pull/1326) | Add stats for score/rank based normalization and hybrid query | [#1146](https://github.com/opensearch-project/neural-search/issues/1146) |
+| v3.1.0 | [#1343](https://github.com/opensearch-project/neural-search/pull/1343) | Add stats for neural query enricher, sparse encoding, reranker |   |
+| v3.1.0 | [#1360](https://github.com/opensearch-project/neural-search/pull/1360) | Add include_individual_nodes, include_all_nodes, include_info params |   |
+| v3.1.0 | [#1378](https://github.com/opensearch-project/neural-search/pull/1378) | Combine skip_existing flag stats into single stat |   |
 
 ### Issues (Design / RFC)
 - [Issue #1146](https://github.com/opensearch-project/neural-search/issues/1146): Stats for normalization processor

@@ -101,7 +101,7 @@ Config saved objects are treated specially in workspace contexts:
 - [Dynamic configuration in OpenSearch Dashboards](https://docs.opensearch.org/2.18/security/multi-tenancy/dynamic-config/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8160](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8160) | Fix config related issues and dedup category |
-| v2.18.0 | [#8184](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8184) | Fix bug when dynamic config index and alias are checked |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8160](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8160) | Fix config related issues and dedup category | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8184](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8184) | Fix bug when dynamic config index and alias are checked | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

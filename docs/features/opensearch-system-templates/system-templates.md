@@ -138,8 +138,8 @@ The index automatically inherits optimized settings from the `nginx-logs` templa
 - [OpenSearch Blog: Application-Based Configuration Templates](https://opensearch.org/blog/abc-templates/): Feature announcement and details
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [opensearch-system-templates#3](https://github.com/opensearch-project/opensearch-system-templates/pull/3) | Initial implementation with basic templates |
-| v2.17.0 | [opensearch-system-templates#8](https://github.com/opensearch-project/opensearch-system-templates/pull/8) | Add nginx, apache, AWS, k8s templates + zstd support |
-| v2.17.0 | [opensearch-system-templates#11](https://github.com/opensearch-project/opensearch-system-templates/pull/11) | Backport to 2.x branch |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [opensearch-system-templates#3](https://github.com/opensearch-project/opensearch-system-templates/pull/3) | Initial implementation with basic templates |   |
+| v2.17.0 | [opensearch-system-templates#8](https://github.com/opensearch-project/opensearch-system-templates/pull/8) | Add nginx, apache, AWS, k8s templates + zstd support |   |
+| v2.17.0 | [opensearch-system-templates#11](https://github.com/opensearch-project/opensearch-system-templates/pull/11) | Backport to 2.x branch |   |

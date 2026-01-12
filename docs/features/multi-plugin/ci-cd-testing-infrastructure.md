@@ -112,14 +112,14 @@ flowchart TB
 - [remote-vector-index-builder](https://github.com/opensearch-project/remote-vector-index-builder): Remote index builder repository
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.0.0 | [#2620](https://github.com/opensearch-project/k-NN/pull/2620) | k-NN | GitHub Action for remote index builder ITs |
-| v3.0.0 | [#3342](https://github.com/opensearch-project/sql/pull/3342) | sql | Build Calcite integration test framework |
-| v3.0.0 | [#3413](https://github.com/opensearch-project/sql/pull/3413) | sql | Separate with/without pushdown ITs |
-| v3.0.0 | [#3447](https://github.com/opensearch-project/sql/pull/3447) | sql | Use entire shadow jar to fix IT |
-| v3.0.0 | [#3469](https://github.com/opensearch-project/sql/pull/3469) | sql | Set bouncycastle version inline |
-| v3.0.0 | [#3544](https://github.com/opensearch-project/sql/pull/3544) | sql | Only enable fallback for tests that need it |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.0.0 | [#2620](https://github.com/opensearch-project/k-NN/pull/2620) | k-NN | GitHub Action for remote index builder ITs |   |
+| v3.0.0 | [#3342](https://github.com/opensearch-project/sql/pull/3342) | sql | Build Calcite integration test framework | [#3330](https://github.com/opensearch-project/sql/issues/3330) |
+| v3.0.0 | [#3413](https://github.com/opensearch-project/sql/pull/3413) | sql | Separate with/without pushdown ITs | [#3411](https://github.com/opensearch-project/sql/issues/3411) |
+| v3.0.0 | [#3447](https://github.com/opensearch-project/sql/pull/3447) | sql | Use entire shadow jar to fix IT |   |
+| v3.0.0 | [#3469](https://github.com/opensearch-project/sql/pull/3469) | sql | Set bouncycastle version inline |   |
+| v3.0.0 | [#3544](https://github.com/opensearch-project/sql/pull/3544) | sql | Only enable fallback for tests that need it | [#3546](https://github.com/opensearch-project/sql/issues/3546) |
 
 ### Issues (Design / RFC)
 - [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Remote index builder testing task

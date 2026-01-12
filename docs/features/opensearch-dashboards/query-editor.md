@@ -138,15 +138,15 @@ The footer bar displays:
 - [PPL Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/index/): Official PPL documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#10503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10503) | Add PPL Formatter in Query panel |
-| v3.3.0 | [#10536](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10536) | Update Simplified PPL grammar to latest version |
-| v3.3.0 | [#10581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10581) | Remove error popover from query panel |
-| v3.3.0 | [#10446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10446) | Fix Enter command behaviour in query editor |
-| v3.2.0 | [#9960](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9960) | Fix autocomplete for new query panel |
-| v3.2.0 | [#10259](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10259) | Change query editor UI - edit button placement |
-| v3.2.0 | [#10337](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10337) | Change generated query UI - scrollable display |
-| v2.18.0 | [#8565](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8565) | Adds editor footer to single line editor on focus |
-| v2.18.0 | [#8045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8045) | Fix order of query editor extensions not working |
-| v2.18.0 | [#8087](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8087) | PPL Autocomplete functions, fields, & table suggestion |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#10503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10503) | Add PPL Formatter in Query panel | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10536](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10536) | Update Simplified PPL grammar to latest version | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10581) | Remove error popover from query panel |   |
+| v3.3.0 | [#10446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10446) | Fix Enter command behaviour in query editor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9960](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9960) | Fix autocomplete for new query panel | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10259](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10259) | Change query editor UI - edit button placement |   |
+| v3.2.0 | [#10337](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10337) | Change generated query UI - scrollable display |   |
+| v2.18.0 | [#8565](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8565) | Adds editor footer to single line editor on focus | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8045) | Fix order of query editor extensions not working | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8087](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8087) | PPL Autocomplete functions, fields, & table suggestion | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

@@ -143,6 +143,6 @@ PUT _snapshot/hdfs_backup
 - [Configuring the Security Backend](https://docs.opensearch.org/3.0/security/configuration/configuration/): Security backend configuration reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19952](https://github.com/opensearch-project/OpenSearch/pull/19952) | Update Hadoop to 3.4.2 and enable security (Kerberos) integration tests under JDK-24 and above |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19952](https://github.com/opensearch-project/OpenSearch/pull/19952) | Update Hadoop to 3.4.2 and enable security (Kerberos) integration tests under JDK-24 and above |   |

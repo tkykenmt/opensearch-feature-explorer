@@ -233,10 +233,10 @@ Both documents share the anchor `/company/engineering` and are routed to the sam
 - [Search Processors](https://docs.opensearch.org/3.2/search-plugins/search-pipelines/search-processors/): Search pipeline processors
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18826](https://github.com/opensearch-project/OpenSearch/pull/18826) | Add hierarchical routing processors for ingest and search pipelines |
-| v3.2.0 | [#18834](https://github.com/opensearch-project/OpenSearch/pull/18834) | Add ACL-aware routing processors for multi-tenant document routing |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18826](https://github.com/opensearch-project/OpenSearch/pull/18826) | Add hierarchical routing processors for ingest and search pipelines |   |
+| v3.2.0 | [#18834](https://github.com/opensearch-project/OpenSearch/pull/18834) | Add ACL-aware routing processors for multi-tenant document routing | [#18829](https://github.com/opensearch-project/OpenSearch/issues/18829) |
 
 ### Issues (Design / RFC)
 - [Issue #18829](https://github.com/opensearch-project/OpenSearch/issues/18829): RFC: ACL-Aware Routing Strategy for Shard Assignment

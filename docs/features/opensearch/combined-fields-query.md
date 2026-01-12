@@ -161,9 +161,9 @@ This approach provides more intuitive scoring compared to alternatives like `mul
 - [BM25F and combined_fields query](https://opensourceconnections.com/blog/2021/06/30/better-term-centric-scoring-in-elasticsearch-with-bm25f-and-the-combined_fields-query/): Background on BM25F scoring algorithm and its benefits
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18724](https://github.com/opensearch-project/OpenSearch/pull/18724) | Add combined_fields query to utilize Lucene's CombinedField (BM25F Text) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18724](https://github.com/opensearch-project/OpenSearch/pull/18724) | Add combined_fields query to utilize Lucene's CombinedField (BM25F Text) | [#3996](https://github.com/opensearch-project/OpenSearch/issues/3996) |
 
 ### Issues (Design / RFC)
 - [Issue #3996](https://github.com/opensearch-project/OpenSearch/issues/3996): Original feature request for combined_fields (BM25F) support

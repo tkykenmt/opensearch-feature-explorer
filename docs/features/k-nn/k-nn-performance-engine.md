@@ -176,20 +176,20 @@ GET /products-vectors/_search
 - [k-NN Vector Quantization](https://docs.opensearch.org/2.18/search-plugins/knn/knn-vector-quantization/): Quantization options
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2221](https://github.com/opensearch-project/k-NN/pull/2221) | Update default engine to FAISS |
-| v2.18.0 | [#2229](https://github.com/opensearch-project/k-NN/pull/2229) | Update approximate_threshold to 15K |
-| v2.18.0 | [#2172](https://github.com/opensearch-project/k-NN/pull/2172) | Shard-level rescoring control |
-| v2.18.0 | [#2149](https://github.com/opensearch-project/k-NN/pull/2149) | Dimension-based rescore context |
-| v2.18.0 | [#2059](https://github.com/opensearch-project/k-NN/pull/2059) | Short circuit for empty segments |
-| v2.18.0 | [#2146](https://github.com/opensearch-project/k-NN/pull/2146) | Optimize reduceToTopK |
-| v2.18.0 | [#2155](https://github.com/opensearch-project/k-NN/pull/2155) | KNNIterators filter support |
-| v2.18.0 | [#2200](https://github.com/opensearch-project/k-NN/pull/2200) | PQ compression level calculation |
-| v2.18.0 | [#2182](https://github.com/opensearch-project/k-NN/pull/2182) | Remove FSDirectory dependency |
-| v2.18.0 | [#1946](https://github.com/opensearch-project/k-NN/pull/1946) | DocValuesProducers for memory release |
-| v2.18.0 | [#2147](https://github.com/opensearch-project/k-NN/pull/2147) | KNN80DocValues fix |
-| v2.18.0 | [#2183](https://github.com/opensearch-project/k-NN/pull/2183) | Binary quantized vector score fix |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2221](https://github.com/opensearch-project/k-NN/pull/2221) | Update default engine to FAISS |   |
+| v2.18.0 | [#2229](https://github.com/opensearch-project/k-NN/pull/2229) | Update approximate_threshold to 15K |   |
+| v2.18.0 | [#2172](https://github.com/opensearch-project/k-NN/pull/2172) | Shard-level rescoring control |   |
+| v2.18.0 | [#2149](https://github.com/opensearch-project/k-NN/pull/2149) | Dimension-based rescore context |   |
+| v2.18.0 | [#2059](https://github.com/opensearch-project/k-NN/pull/2059) | Short circuit for empty segments |   |
+| v2.18.0 | [#2146](https://github.com/opensearch-project/k-NN/pull/2146) | Optimize reduceToTopK | [#2145](https://github.com/opensearch-project/k-NN/issues/2145) |
+| v2.18.0 | [#2155](https://github.com/opensearch-project/k-NN/pull/2155) | KNNIterators filter support |   |
+| v2.18.0 | [#2200](https://github.com/opensearch-project/k-NN/pull/2200) | PQ compression level calculation |   |
+| v2.18.0 | [#2182](https://github.com/opensearch-project/k-NN/pull/2182) | Remove FSDirectory dependency |   |
+| v2.18.0 | [#1946](https://github.com/opensearch-project/k-NN/pull/1946) | DocValuesProducers for memory release |   |
+| v2.18.0 | [#2147](https://github.com/opensearch-project/k-NN/pull/2147) | KNN80DocValues fix |   |
+| v2.18.0 | [#2183](https://github.com/opensearch-project/k-NN/pull/2183) | Binary quantized vector score fix |   |
 
 ### Issues (Design / RFC)
 - [Issue #1885](https://github.com/opensearch-project/k-NN/issues/1885): Memory release improvements

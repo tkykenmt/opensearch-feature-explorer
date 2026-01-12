@@ -106,9 +106,9 @@ SystemCallFilter=@system-service
 - [Compatible Operating Systems](https://docs.opensearch.org/3.0/install-and-configure/os-comp/): Supported Linux distributions
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18309](https://github.com/opensearch-project/OpenSearch/pull/18309) | Add seccomp in systemd config |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18309](https://github.com/opensearch-project/OpenSearch/pull/18309) | Add seccomp in systemd config |   |
 
 ### Issues (Design / RFC)
 - [Issue #18273](https://github.com/opensearch-project/OpenSearch/issues/18273): Bug report - fails to start on Debian with network.host: 0.0.0.0

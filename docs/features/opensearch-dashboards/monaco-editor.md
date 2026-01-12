@@ -157,10 +157,10 @@ window.MonacoEnvironment = {
 - [Monaco Editor GitHub](https://github.com/microsoft/monaco-editor): Source repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9618) | Bump monaco-editor from 0.30.1 to 0.52.0 |
-| v3.0.0 | [#9497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9497) | Bump monaco-editor from 0.17.0 to 0.30.1 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9618) | Bump monaco-editor from 0.30.1 to 0.52.0 |   |
+| v3.0.0 | [#9497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9497) | Bump monaco-editor from 0.17.0 to 0.30.1 |   |
 
 ### Issues (Design / RFC)
 - [Issue #9573](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9573): Monaco upgrade implementation notes

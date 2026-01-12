@@ -178,7 +178,7 @@ The correlation graph in OpenSearch Dashboards displays:
 - [Blog: Correlating security events](https://opensearch.org/blog/correlating-security-events/): Feature overview
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Removed incomplete events-correlation-engine from core |
-| v2.x | Various | Security Analytics correlation engine implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Removed incomplete events-correlation-engine from core | [#6779](https://github.com/opensearch-project/OpenSearch/issues/6779) |
+| v2.x | Various | Security Analytics correlation engine implementation |   |

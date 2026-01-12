@@ -116,12 +116,12 @@ source=logs | where status =
 - [Improving ease of use in OpenSearch Dashboards with Vega visualizations](https://opensearch.org/blog/improving-dashboards-usability-with-vega/): Blog post
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#8275](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8275) | Autocomplete Value Suggestion |
-| v3.0.0 | [#9064](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9064) | Dependency license validation |
-| v3.0.0 | [#9152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9152) | Vega PPL time field support |
-| v3.0.0 | [#9298](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9298) | Discover scrolling improvements |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#8275](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8275) | Autocomplete Value Suggestion | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9064](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9064) | Dependency license validation |   |
+| v3.0.0 | [#9152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9152) | Vega PPL time field support | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9298](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9298) | Discover scrolling improvements |   |
 
 ### Issues (Design / RFC)
 - [Issue #9169](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9169): Vega PPL %timefield% feature request

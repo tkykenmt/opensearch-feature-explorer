@@ -209,33 +209,33 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Hugging Face paraphrase-MiniLM-L3-v2](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2): Model documentation for semantic search with local model template
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1270](https://github.com/opensearch-project/flow-framework/pull/1270) | Fix incorrect field map output dimensions in semantic search with local model template |
-| v3.3.0 | [#1217](https://github.com/opensearch-project/flow-framework/pull/1217) | Pre-create ML Commons indices for Tenant Aware tests |
-| v3.2.0 | [#1185](https://github.com/opensearch-project/flow-framework/pull/1185) | Fix ApiSpecFetcher Memory Issues and Exception Handling |
-| v3.2.0 | [#1190](https://github.com/opensearch-project/flow-framework/pull/1190) | Better handling of Workflow Steps with Bad Request status |
-| v3.2.0 | [#1194](https://github.com/opensearch-project/flow-framework/pull/1194) | Update RegisterLocalCustomModelStep for 3.1+ compatibility |
-| v3.2.0 | [#1200](https://github.com/opensearch-project/flow-framework/pull/1200) | Avoid race condition setting encryption key |
-| v3.2.0 | [#1205](https://github.com/opensearch-project/flow-framework/pull/1205) | Fixing connector name in default use case |
-| v3.1.0 | [#1151](https://github.com/opensearch-project/flow-framework/pull/1151) | Fixing llm field processing in RegisterAgentStep |
-| v3.1.0 | [#1154](https://github.com/opensearch-project/flow-framework/pull/1154) | Include exception type in WorkflowState error field even if no cause |
-| v3.1.0 | [#1155](https://github.com/opensearch-project/flow-framework/pull/1155) | Pass llm spec params to builder |
-| v3.1.0 | [#1141](https://github.com/opensearch-project/flow-framework/pull/1141) | Conditionally include ddb-client dependency only if env variable set |
-| v3.1.0 | [#1137](https://github.com/opensearch-project/flow-framework/pull/1137) | Add data summary with log pattern agent template |
-| v3.0.0 | [#1026](https://github.com/opensearch-project/flow-framework/pull/1026) | Fix breaking changes for 3.0.0 release |
-| v3.0.0 | [#1074](https://github.com/opensearch-project/flow-framework/pull/1074) | Add per-tenant provisioning throttling |
-| v3.0.0 | [#1083](https://github.com/opensearch-project/flow-framework/pull/1083) | Change REST status codes for RBAC and provisioning |
-| v3.0.0 | [#1096](https://github.com/opensearch-project/flow-framework/pull/1096) | Fix Config parser does not handle tenant_id field |
-| v3.0.0 | [#1098](https://github.com/opensearch-project/flow-framework/pull/1098) | Complete action listener on failed synchronous workflow provisioning |
-| v3.0.0 | [#1107](https://github.com/opensearch-project/flow-framework/pull/1107) | Fix bug handleReprovision missing wait_for_completion_timeout response |
-| v3.0.0 | [#1113](https://github.com/opensearch-project/flow-framework/pull/1113) | Add new attributes field to ToolStep |
-| v3.0.0 | [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |
-| v2.18.0 | [#899](https://github.com/opensearch-project/flow-framework/pull/899) | Add optional config field to tool step |
-| v2.18.0 | [#898](https://github.com/opensearch-project/flow-framework/pull/898) | Incrementally remove resources from workflow state during deprovisioning |
-| v2.18.0 | [#918](https://github.com/opensearch-project/flow-framework/pull/918) | Fixed template update location and improved logger statements in ReprovisionWorkflowTransportAction |
-| v2.18.0 | [#894](https://github.com/opensearch-project/flow-framework/pull/894) | Update workflow state without using painless script |
-| v2.17.0 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1270](https://github.com/opensearch-project/flow-framework/pull/1270) | Fix incorrect field map output dimensions in semantic search with local model template | [#1254](https://github.com/opensearch-project/flow-framework/issues/1254) |
+| v3.3.0 | [#1217](https://github.com/opensearch-project/flow-framework/pull/1217) | Pre-create ML Commons indices for Tenant Aware tests | [#1216](https://github.com/opensearch-project/flow-framework/issues/1216) |
+| v3.2.0 | [#1185](https://github.com/opensearch-project/flow-framework/pull/1185) | Fix ApiSpecFetcher Memory Issues and Exception Handling |   |
+| v3.2.0 | [#1190](https://github.com/opensearch-project/flow-framework/pull/1190) | Better handling of Workflow Steps with Bad Request status | [#1189](https://github.com/opensearch-project/flow-framework/issues/1189) |
+| v3.2.0 | [#1194](https://github.com/opensearch-project/flow-framework/pull/1194) | Update RegisterLocalCustomModelStep for 3.1+ compatibility | [#1180](https://github.com/opensearch-project/flow-framework/issues/1180) |
+| v3.2.0 | [#1200](https://github.com/opensearch-project/flow-framework/pull/1200) | Avoid race condition setting encryption key |   |
+| v3.2.0 | [#1205](https://github.com/opensearch-project/flow-framework/pull/1205) | Fixing connector name in default use case | [#1197](https://github.com/opensearch-project/flow-framework/issues/1197) |
+| v3.1.0 | [#1151](https://github.com/opensearch-project/flow-framework/pull/1151) | Fixing llm field processing in RegisterAgentStep |   |
+| v3.1.0 | [#1154](https://github.com/opensearch-project/flow-framework/pull/1154) | Include exception type in WorkflowState error field even if no cause | [#1153](https://github.com/opensearch-project/flow-framework/issues/1153) |
+| v3.1.0 | [#1155](https://github.com/opensearch-project/flow-framework/pull/1155) | Pass llm spec params to builder |   |
+| v3.1.0 | [#1141](https://github.com/opensearch-project/flow-framework/pull/1141) | Conditionally include ddb-client dependency only if env variable set |   |
+| v3.1.0 | [#1137](https://github.com/opensearch-project/flow-framework/pull/1137) | Add data summary with log pattern agent template |   |
+| v3.0.0 | [#1026](https://github.com/opensearch-project/flow-framework/pull/1026) | Fix breaking changes for 3.0.0 release |   |
+| v3.0.0 | [#1074](https://github.com/opensearch-project/flow-framework/pull/1074) | Add per-tenant provisioning throttling |   |
+| v3.0.0 | [#1083](https://github.com/opensearch-project/flow-framework/pull/1083) | Change REST status codes for RBAC and provisioning |   |
+| v3.0.0 | [#1096](https://github.com/opensearch-project/flow-framework/pull/1096) | Fix Config parser does not handle tenant_id field | [#1095](https://github.com/opensearch-project/flow-framework/issues/1095) |
+| v3.0.0 | [#1098](https://github.com/opensearch-project/flow-framework/pull/1098) | Complete action listener on failed synchronous workflow provisioning | [#1097](https://github.com/opensearch-project/flow-framework/issues/1097) |
+| v3.0.0 | [#1107](https://github.com/opensearch-project/flow-framework/pull/1107) | Fix bug handleReprovision missing wait_for_completion_timeout response | [#1106](https://github.com/opensearch-project/flow-framework/issues/1106) |
+| v3.0.0 | [#1113](https://github.com/opensearch-project/flow-framework/pull/1113) | Add new attributes field to ToolStep | [#1112](https://github.com/opensearch-project/flow-framework/issues/1112) |
+| v3.0.0 | [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |   |
+| v2.18.0 | [#899](https://github.com/opensearch-project/flow-framework/pull/899) | Add optional config field to tool step | [#878](https://github.com/opensearch-project/flow-framework/issues/878) |
+| v2.18.0 | [#898](https://github.com/opensearch-project/flow-framework/pull/898) | Incrementally remove resources from workflow state during deprovisioning | [#780](https://github.com/opensearch-project/flow-framework/issues/780) |
+| v2.18.0 | [#918](https://github.com/opensearch-project/flow-framework/pull/918) | Fixed template update location and improved logger statements in ReprovisionWorkflowTransportAction | [#870](https://github.com/opensearch-project/flow-framework/issues/870) |
+| v2.18.0 | [#894](https://github.com/opensearch-project/flow-framework/pull/894) | Update workflow state without using painless script | [#779](https://github.com/opensearch-project/flow-framework/issues/779) |
+| v2.17.0 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings |   |
 
 ### Issues (Design / RFC)
 - [Issue #1254](https://github.com/opensearch-project/flow-framework/issues/1254): Incorrect field map output dimensions in semantic search with local model template

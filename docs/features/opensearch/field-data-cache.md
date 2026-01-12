@@ -134,11 +134,11 @@ PUT _cluster/settings
 - [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/): Clear index caches including field data
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19152](https://github.com/opensearch-project/OpenSearch/pull/19152) | Make field data cache size setting dynamic and add default limit |
-| v3.3.0 | [#19116](https://github.com/opensearch-project/OpenSearch/pull/19116) | Remove unnecessary looping in field data cache clear |
-| v3.2.0 | [#18888](https://github.com/opensearch-project/OpenSearch/pull/18888) | Close IndexFieldDataService asynchronously |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19152](https://github.com/opensearch-project/OpenSearch/pull/19152) | Make field data cache size setting dynamic and add default limit | [#19104](https://github.com/opensearch-project/OpenSearch/issues/19104) |
+| v3.3.0 | [#19116](https://github.com/opensearch-project/OpenSearch/pull/19116) | Remove unnecessary looping in field data cache clear |   |
+| v3.2.0 | [#18888](https://github.com/opensearch-project/OpenSearch/pull/18888) | Close IndexFieldDataService asynchronously |   |
 
 ### Issues (Design / RFC)
 - [Issue #19104](https://github.com/opensearch-project/OpenSearch/issues/19104): Change default settings for field data cache size

@@ -142,9 +142,9 @@ POST /_plugins/_ml/mcp/tools/_register
 - [Using MCP Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/): MCP integration overview
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#3988](https://github.com/opensearch-project/ml-commons/pull/3988) | Throw proper 400 errors instead of 500 for agent execute and MCP |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#3988](https://github.com/opensearch-project/ml-commons/pull/3988) | Throw proper 400 errors instead of 500 for agent execute and MCP | [#3987](https://github.com/opensearch-project/ml-commons/issues/3987) |
 
 ### Issues (Design / RFC)
 - [Issue #3987](https://github.com/opensearch-project/ml-commons/issues/3987): Original feature request for improved error handling

@@ -124,15 +124,15 @@ GET /_nodes/stats/caches/request_cache?level=tier
 - [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19000](https://github.com/opensearch-project/OpenSearch/pull/19000) | Handle query execution exception |
-| v3.0.0 | [#17513](https://github.com/opensearch-project/OpenSearch/pull/17513) | Single cache manager for all ehcache disk caches |
-| v3.0.0 | [#17190](https://github.com/opensearch-project/OpenSearch/pull/17190) | Took-time threshold guards heap tier as well as disk tier |
-| v2.19.0 | - | Disk cache partitioning for improved concurrency |
-| v2.18.0 | [#16047](https://github.com/opensearch-project/OpenSearch/pull/16047) | Segmented cache changes for improved concurrency |
-| v2.14.0 | - | Initial tiered caching support (experimental) |
-| v2.13.0 | - | cache-ehcache plugin introduced |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19000](https://github.com/opensearch-project/OpenSearch/pull/19000) | Handle query execution exception |   |
+| v3.0.0 | [#17513](https://github.com/opensearch-project/OpenSearch/pull/17513) | Single cache manager for all ehcache disk caches |   |
+| v3.0.0 | [#17190](https://github.com/opensearch-project/OpenSearch/pull/17190) | Took-time threshold guards heap tier as well as disk tier | [#16162](https://github.com/opensearch-project/OpenSearch/issues/16162) |
+| v2.19.0 | - | Disk cache partitioning for improved concurrency |   |
+| v2.18.0 | [#16047](https://github.com/opensearch-project/OpenSearch/pull/16047) | Segmented cache changes for improved concurrency | [#13989](https://github.com/opensearch-project/OpenSearch/issues/13989) |
+| v2.14.0 | - | Initial tiered caching support (experimental) |   |
+| v2.13.0 | - | cache-ehcache plugin introduced |   |
 
 ### Issues (Design / RFC)
 - [Issue #16162](https://github.com/opensearch-project/OpenSearch/issues/16162): RFC - Optimize caching policy for Request cache

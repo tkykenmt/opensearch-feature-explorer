@@ -181,10 +181,10 @@ public class OnBehalfOfClaims {
 - [Introducing Extensions Blog](https://opensearch.org/blog/introducing-extensions-for-opensearch/): Blog post introducing extensions architecture
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#8679](https://github.com/opensearch-project/OpenSearch/pull/8679) | Implement on behalf of token passing for extensions |
-| v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch/pull/9618) | Provide service accounts tokens to extensions |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#8679](https://github.com/opensearch-project/OpenSearch/pull/8679) | Implement on behalf of token passing for extensions |   |
+| v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch/pull/9618) | Provide service accounts tokens to extensions |   |
 
 ### Issues (Design / RFC)
 - [Issue #2764](https://github.com/opensearch-project/security/issues/2764): Determine how auth tokens are forwarded to Extensions

@@ -156,16 +156,16 @@ POST /_plugins/_query/_datasources
 - [Data Sources Overview](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Data sources management
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.0.0 | [#9361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9361) | OpenSearch-Dashboards | Add MDS to msearch |
-| v3.0.0 | [#9343](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9343) | OpenSearch-Dashboards | Change from cluster to data sources for dataset selector column |
-| v3.0.0 | [#9637](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9637) | OpenSearch-Dashboards | Trim the URL for creating data source |
-| v2.18.0 | [#8008](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8008) | OpenSearch-Dashboards | Add MDS support for Integration |
-| v2.18.0 | [#2051](https://github.com/opensearch-project/dashboards-observability/pull/2051) | dashboards-observability | MDS support in Integrations for observability plugin |
-| v2.17.0 | [#411](https://github.com/opensearch-project/dashboards-reporting/pull/411) | dashboards-reporting | De-register reporting when MDS is enabled |
-| v2.17.0 | [#249](https://github.com/opensearch-project/dashboards-notifications/pull/249) | dashboards-notifications | Persist dataSourceId across applications |
-| v2.14.0 | [#186](https://github.com/opensearch-project/dashboards-notifications/pull/186) | dashboards-notifications | Initial MDS support in Notifications |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.0.0 | [#9361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9361) | OpenSearch-Dashboards | Add MDS to msearch | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9343](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9343) | OpenSearch-Dashboards | Change from cluster to data sources for dataset selector column | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9637](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9637) | OpenSearch-Dashboards | Trim the URL for creating data source |   |
+| v2.18.0 | [#8008](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8008) | OpenSearch-Dashboards | Add MDS support for Integration | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#2051](https://github.com/opensearch-project/dashboards-observability/pull/2051) | dashboards-observability | MDS support in Integrations for observability plugin |   |
+| v2.17.0 | [#411](https://github.com/opensearch-project/dashboards-reporting/pull/411) | dashboards-reporting | De-register reporting when MDS is enabled |   |
+| v2.17.0 | [#249](https://github.com/opensearch-project/dashboards-notifications/pull/249) | dashboards-notifications | Persist dataSourceId across applications |   |
+| v2.14.0 | [#186](https://github.com/opensearch-project/dashboards-notifications/pull/186) | dashboards-notifications | Initial MDS support in Notifications |   |
 
 ### Issues (Design / RFC)
 - [Issue #2174](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/2174): MDS batch concurrent search feature request

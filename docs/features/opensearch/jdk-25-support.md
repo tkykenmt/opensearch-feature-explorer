@@ -106,10 +106,10 @@ POST /my-index/_update/1
 - [OpenSearch Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using Different Java Runtimes with OpenSearch
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19706](https://github.com/opensearch-project/OpenSearch/pull/19706) | Wrap checked exceptions in painless.DefBootstrap to support JDK-25 |
-| v3.4.0 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | Update bundled JDK to JDK-25 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19706](https://github.com/opensearch-project/OpenSearch/pull/19706) | Wrap checked exceptions in painless.DefBootstrap to support JDK-25 |   |
+| v3.4.0 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | Update bundled JDK to JDK-25 | [#19314](https://github.com/opensearch-project/OpenSearch/issues/19314) |
 
 ### Issues (Design / RFC)
 - [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): JDK 25 support tracking issue

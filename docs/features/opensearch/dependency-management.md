@@ -136,19 +136,19 @@ Dependencies are automatically resolved during build:
 - [OpenSearch Dependency Policy](https://github.com/opensearch-project/OpenSearch/blob/main/DEVELOPER_GUIDE.md)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19178](https://github.com/opensearch-project/OpenSearch/pull/19178) | Netty 4.2.4 upgrade |
-| v3.4.0 | [#20084](https://github.com/opensearch-project/OpenSearch/pull/20084) | Nimbus JOSE+JWT 10.6 |
-| v3.4.0 | [#19615](https://github.com/opensearch-project/OpenSearch/pull/19615) | Azure Storage 12.30.3 |
-| v3.4.0 | [#20023](https://github.com/opensearch-project/OpenSearch/pull/20023) | Google Cloud Storage 2.60.0 |
-| v3.4.0 | [#19818](https://github.com/opensearch-project/OpenSearch/pull/19818) | Bouncy Castle FIPS 2.1.2 |
-| v3.0.0 | [#17515](https://github.com/opensearch-project/OpenSearch/pull/17515) | Switch to JDK 21 LTS |
-| v3.0.0 | [#17396](https://github.com/opensearch-project/OpenSearch/pull/17396) | AWS SDK 2.30.31 |
-| v3.0.0 | [#17322](https://github.com/opensearch-project/OpenSearch/pull/17322) | Reactor Netty 1.2.3 |
-| v3.0.0 | [#16757](https://github.com/opensearch-project/OpenSearch/pull/16757) | HttpClient5 upgrade |
-| v3.0.0 | [#17607](https://github.com/opensearch-project/OpenSearch/pull/17607) | Nimbus JOSE+JWT 10.0.2 |
-| v3.0.0 | [#17562](https://github.com/opensearch-project/OpenSearch/pull/17562) | Azure Storage 12.30.0 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19178](https://github.com/opensearch-project/OpenSearch/pull/19178) | Netty 4.2.4 upgrade | [#14804](https://github.com/opensearch-project/OpenSearch/issues/14804) |
+| v3.4.0 | [#20084](https://github.com/opensearch-project/OpenSearch/pull/20084) | Nimbus JOSE+JWT 10.6 |   |
+| v3.4.0 | [#19615](https://github.com/opensearch-project/OpenSearch/pull/19615) | Azure Storage 12.30.3 |   |
+| v3.4.0 | [#20023](https://github.com/opensearch-project/OpenSearch/pull/20023) | Google Cloud Storage 2.60.0 |   |
+| v3.4.0 | [#19818](https://github.com/opensearch-project/OpenSearch/pull/19818) | Bouncy Castle FIPS 2.1.2 |   |
+| v3.0.0 | [#17515](https://github.com/opensearch-project/OpenSearch/pull/17515) | Switch to JDK 21 LTS |   |
+| v3.0.0 | [#17396](https://github.com/opensearch-project/OpenSearch/pull/17396) | AWS SDK 2.30.31 |   |
+| v3.0.0 | [#17322](https://github.com/opensearch-project/OpenSearch/pull/17322) | Reactor Netty 1.2.3 |   |
+| v3.0.0 | [#16757](https://github.com/opensearch-project/OpenSearch/pull/16757) | HttpClient5 upgrade | [#15927](https://github.com/opensearch-project/OpenSearch/issues/15927) |
+| v3.0.0 | [#17607](https://github.com/opensearch-project/OpenSearch/pull/17607) | Nimbus JOSE+JWT 10.0.2 |   |
+| v3.0.0 | [#17562](https://github.com/opensearch-project/OpenSearch/pull/17562) | Azure Storage 12.30.0 |   |
 
 ### Issues (Design / RFC)
 - [Issue #14804](https://github.com/opensearch-project/OpenSearch/issues/14804): Netty 4.2 upgrade request

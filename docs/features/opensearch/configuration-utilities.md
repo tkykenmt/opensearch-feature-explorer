@@ -127,6 +127,6 @@ The utility provides consistent, informative error messages:
 - [PR #17223](https://github.com/opensearch-project/OpenSearch/pull/17223): Implementation PR
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17223](https://github.com/opensearch-project/OpenSearch/pull/17223) | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17223](https://github.com/opensearch-project/OpenSearch/pull/17223) | Initial implementation |   |

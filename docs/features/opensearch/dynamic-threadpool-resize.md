@@ -172,6 +172,6 @@ This ensures `core ≤ max` invariant is maintained during the transition.
 - [PR #16236](https://github.com/opensearch-project/OpenSearch/pull/16236): Original implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16236](https://github.com/opensearch-project/OpenSearch/pull/16236) | Add support to dynamically resize threadpools size |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#16236](https://github.com/opensearch-project/OpenSearch/pull/16236) | Add support to dynamically resize threadpools size |   |

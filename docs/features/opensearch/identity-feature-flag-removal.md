@@ -122,10 +122,10 @@ public class CustomIdentityPlugin extends Plugin implements IdentityPlugin, Acti
 - [Blog: Introducing identity and access control for OpenSearch](https://opensearch.org/blog/introducing-identity/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15430](https://github.com/opensearch-project/OpenSearch/pull/15430) | Remove identity-related feature flagged code from the RestController |
-| v2.18.0 | [#16024](https://github.com/opensearch-project/OpenSearch/pull/16024) | Remove Identity FeatureFlag |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15430](https://github.com/opensearch-project/OpenSearch/pull/15430) | Remove identity-related feature flagged code from the RestController |   |
+| v2.18.0 | [#16024](https://github.com/opensearch-project/OpenSearch/pull/16024) | Remove Identity FeatureFlag | [#4439](https://github.com/opensearch-project/OpenSearch/issues/4439) |
 
 ### Issues (Design / RFC)
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): Remove Identity feature flag

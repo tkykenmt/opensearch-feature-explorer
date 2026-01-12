@@ -126,11 +126,11 @@ POST _plugins/_alerting/comments
 - [Predefined Roles](https://docs.opensearch.org/2.17/security/access-control/users-roles/): Security plugin predefined roles
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [security#4700](https://github.com/opensearch-project/security/pull/4700) | Adding alerting comments security actions to roles.yml |
-| v2.17.0 | [security#4724](https://github.com/opensearch-project/security/pull/4724) | Changing comments permission for alerting_ack_alerts role |
-| v2.15.0 | [alerting#1561](https://github.com/opensearch-project/alerting/pull/1561) | Alerting Comments feature (experimental) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [security#4700](https://github.com/opensearch-project/security/pull/4700) | Adding alerting comments security actions to roles.yml |   |
+| v2.17.0 | [security#4724](https://github.com/opensearch-project/security/pull/4724) | Changing comments permission for alerting_ack_alerts role |   |
+| v2.15.0 | [alerting#1561](https://github.com/opensearch-project/alerting/pull/1561) | Alerting Comments feature (experimental) |   |
 
 ### Issues (Design / RFC)
 - [GitHub Issue #6999](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6999): Alerting Comments feature tracking

@@ -144,10 +144,10 @@ POST /my-index/_search
 - [Range Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/range/): Official Range query documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18189](https://github.com/opensearch-project/OpenSearch/pull/18189) | Improve sort-query performance for approximated match_all queries |
-| v3.1.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Add BooleanQuery rewrite for must_not RangeQuery clauses |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18189](https://github.com/opensearch-project/OpenSearch/pull/18189) | Improve sort-query performance for approximated match_all queries | [#18206](https://github.com/opensearch-project/OpenSearch/issues/18206) |
+| v3.1.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Add BooleanQuery rewrite for must_not RangeQuery clauses |   |
 
 ### Issues (Design / RFC)
 - [Issue #18206](https://github.com/opensearch-project/OpenSearch/issues/18206): Improve performance for approximated `match_all` sort queries

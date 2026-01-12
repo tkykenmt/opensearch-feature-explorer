@@ -139,9 +139,9 @@ GET /students/_search
 - [Terms Query Documentation](https://docs.opensearch.org/3.2/query-dsl/term/terms/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Add query clause support for terms lookup |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Add query clause support for terms lookup |   |
 
 ### Issues (Design / RFC)
 - [Issue #17599](https://github.com/opensearch-project/OpenSearch/issues/17599): Feature request for query-based lookup

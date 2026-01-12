@@ -182,7 +182,7 @@ module.exports = {
 - [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer): Bundle analysis tool
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320) | Webpack bundle analyser limit check |
-| v3.0.0 | [#9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304) | Lighthouse Page Performance Metrics CI workflow |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320) | Webpack bundle analyser limit check |   |
+| v3.0.0 | [#9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304) | Lighthouse Page Performance Metrics CI workflow |   |

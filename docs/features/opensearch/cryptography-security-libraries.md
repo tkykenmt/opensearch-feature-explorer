@@ -169,11 +169,11 @@ SSLContext sslContext = SSLContextBuilder.create()
 - [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Security architecture changes in 3.0
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18427](https://github.com/opensearch-project/OpenSearch/pull/18427) | Update FipsMode check to catch NoSuchMethodError |
-| v3.0.0 | [#17393](https://github.com/opensearch-project/OpenSearch/pull/17393) | Use BC libraries to parse PEM files, increase key length |
-| v3.0.0 | [#17507](https://github.com/opensearch-project/OpenSearch/pull/17507) | Migrate BC libs to their FIPS counterparts |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18427](https://github.com/opensearch-project/OpenSearch/pull/18427) | Update FipsMode check to catch NoSuchMethodError |   |
+| v3.0.0 | [#17393](https://github.com/opensearch-project/OpenSearch/pull/17393) | Use BC libraries to parse PEM files, increase key length |   |
+| v3.0.0 | [#17507](https://github.com/opensearch-project/OpenSearch/pull/17507) | Migrate BC libs to their FIPS counterparts |   |
 
 ### Issues (Design / RFC)
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): RFC - Proposal for supporting FIPS 140-2 enforced mode

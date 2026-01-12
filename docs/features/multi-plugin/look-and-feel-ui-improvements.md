@@ -158,14 +158,14 @@ const MyComponent = () => {
 - [OpenSearch Dashboards](https://docs.opensearch.org/2.17/dashboards/): Main dashboards documentation
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v2.17.0 | [#826](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/826) | anomaly-detection-dashboards-plugin | Smaller buttons and compressed form components |
-| v2.17.0 | [#836](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/836) | anomaly-detection-dashboards-plugin | Consistency and density improvements |
-| v2.17.0 | [#2068](https://github.com/opensearch-project/dashboards-observability/pull/2068) | dashboards-observability | Smaller buttons and compressed form components |
-| v2.17.0 | [#2071](https://github.com/opensearch-project/dashboards-observability/pull/2071) | dashboards-observability | Integrations density and consistency improvements |
-| v2.17.0 | [#1103](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1103) | index-management-dashboards-plugin | Smaller buttons and compressed form components |
-| v2.17.0 | [#231](https://github.com/opensearch-project/dashboards-notifications/pull/231) | dashboards-notifications | Smaller buttons and compressed form components |
-| v2.17.0 | [#398](https://github.com/opensearch-project/dashboards-reporting/pull/398) | dashboards-reporting | Smaller buttons and compressed form components |
-| v2.17.0 | [#421](https://github.com/opensearch-project/dashboards-search-relevance/pull/421) | dashboards-search-relevance | Smaller buttons and compressed form components |
-| v2.17.0 | [#349](https://github.com/opensearch-project/ml-commons-dashboards/pull/349) | ml-commons-dashboards | Smaller buttons and compressed form components |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v2.17.0 | [#826](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/826) | anomaly-detection-dashboards-plugin | Smaller buttons and compressed form components |   |
+| v2.17.0 | [#836](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/836) | anomaly-detection-dashboards-plugin | Consistency and density improvements |   |
+| v2.17.0 | [#2068](https://github.com/opensearch-project/dashboards-observability/pull/2068) | dashboards-observability | Smaller buttons and compressed form components |   |
+| v2.17.0 | [#2071](https://github.com/opensearch-project/dashboards-observability/pull/2071) | dashboards-observability | Integrations density and consistency improvements |   |
+| v2.17.0 | [#1103](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1103) | index-management-dashboards-plugin | Smaller buttons and compressed form components |   |
+| v2.17.0 | [#231](https://github.com/opensearch-project/dashboards-notifications/pull/231) | dashboards-notifications | Smaller buttons and compressed form components |   |
+| v2.17.0 | [#398](https://github.com/opensearch-project/dashboards-reporting/pull/398) | dashboards-reporting | Smaller buttons and compressed form components |   |
+| v2.17.0 | [#421](https://github.com/opensearch-project/dashboards-search-relevance/pull/421) | dashboards-search-relevance | Smaller buttons and compressed form components |   |
+| v2.17.0 | [#349](https://github.com/opensearch-project/ml-commons-dashboards/pull/349) | ml-commons-dashboards | Smaller buttons and compressed form components |   |

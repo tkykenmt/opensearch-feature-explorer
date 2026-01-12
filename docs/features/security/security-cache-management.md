@@ -183,10 +183,10 @@ curl -X PUT "https://localhost:9200/_cluster/settings" \
 - [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official security configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#5337](https://github.com/opensearch-project/security/pull/5337) | Add flush cache endpoint for individual user |
-| v3.1.0 | [#5324](https://github.com/opensearch-project/security/pull/5324) | Register cluster settings listener for dynamic TTL |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#5337](https://github.com/opensearch-project/security/pull/5337) | Add flush cache endpoint for individual user |   |
+| v3.1.0 | [#5324](https://github.com/opensearch-project/security/pull/5324) | Register cluster settings listener for dynamic TTL |   |
 
 ### Issues (Design / RFC)
 - [Issue #2829](https://github.com/opensearch-project/security/issues/2829): Feature request for per-user cache invalidation

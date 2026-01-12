@@ -145,7 +145,7 @@ When using remote indexes with fine-grained access control:
 - [Anomaly Detection API](https://docs.opensearch.org/2.17/observing-your-data/ad/api/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1290](https://github.com/opensearch-project/anomaly-detection/pull/1290) | Adding remote index and multi-index checks in validation |
-| v2.17.0 | [#1295](https://github.com/opensearch-project/anomaly-detection/pull/1295) | Backport to 2.17 branch |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#1290](https://github.com/opensearch-project/anomaly-detection/pull/1290) | Adding remote index and multi-index checks in validation |   |
+| v2.17.0 | [#1295](https://github.com/opensearch-project/anomaly-detection/pull/1295) | Backport to 2.17 branch |   |

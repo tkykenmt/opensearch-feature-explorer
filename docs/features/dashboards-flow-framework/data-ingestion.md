@@ -127,17 +127,17 @@ The data ingestion feature provides fine-grained error handling:
 - [JSON Lines specification](https://jsonlines.org/): JSON Lines format specification
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling |
-| v3.0.0 | [#639](https://github.com/opensearch-project/dashboards-flow-framework/pull/639) | Change ingestion input to JSON Lines format |
-| v3.0.0 | [#606](https://github.com/opensearch-project/dashboards-flow-framework/pull/606) | Fix local cluster version detection |
-| v3.0.0 | [#613](https://github.com/opensearch-project/dashboards-flow-framework/pull/613) | UX improvements XI |
-| v3.0.0 | [#618](https://github.com/opensearch-project/dashboards-flow-framework/pull/618) | UX improvements XII |
-| v3.0.0 | [#630](https://github.com/opensearch-project/dashboards-flow-framework/pull/630) | Bug fixes XIII |
-| v3.0.0 | [#644](https://github.com/opensearch-project/dashboards-flow-framework/pull/644) | Various bug fixes & improvements |
-| v3.0.0 | [#654](https://github.com/opensearch-project/dashboards-flow-framework/pull/654) | Search Index Local Cluster fix |
-| v3.0.0 | [#672](https://github.com/opensearch-project/dashboards-flow-framework/pull/672) | JSON Lines autofilling fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling | [#571](https://github.com/opensearch-project/dashboards-flow-framework/issues/571) |
+| v3.0.0 | [#639](https://github.com/opensearch-project/dashboards-flow-framework/pull/639) | Change ingestion input to JSON Lines format |   |
+| v3.0.0 | [#606](https://github.com/opensearch-project/dashboards-flow-framework/pull/606) | Fix local cluster version detection |   |
+| v3.0.0 | [#613](https://github.com/opensearch-project/dashboards-flow-framework/pull/613) | UX improvements XI |   |
+| v3.0.0 | [#618](https://github.com/opensearch-project/dashboards-flow-framework/pull/618) | UX improvements XII |   |
+| v3.0.0 | [#630](https://github.com/opensearch-project/dashboards-flow-framework/pull/630) | Bug fixes XIII |   |
+| v3.0.0 | [#644](https://github.com/opensearch-project/dashboards-flow-framework/pull/644) | Various bug fixes & improvements | [#627](https://github.com/opensearch-project/dashboards-flow-framework/issues/627) |
+| v3.0.0 | [#654](https://github.com/opensearch-project/dashboards-flow-framework/pull/654) | Search Index Local Cluster fix | [#653](https://github.com/opensearch-project/dashboards-flow-framework/issues/653) |
+| v3.0.0 | [#672](https://github.com/opensearch-project/dashboards-flow-framework/pull/672) | JSON Lines autofilling fixes |   |
 
 ### Issues (Design / RFC)
 - [Issue #571](https://github.com/opensearch-project/dashboards-flow-framework/issues/571): Fine-grained error handling feature request

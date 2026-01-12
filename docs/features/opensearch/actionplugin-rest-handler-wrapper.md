@@ -125,9 +125,9 @@ public class MySecurityPlugin extends Plugin implements ActionPlugin {
 - [ActionModule.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/ActionModule.java): Implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19875](https://github.com/opensearch-project/OpenSearch/pull/19875) | Pass registry of headers to getRestHandlerWrapper |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19875](https://github.com/opensearch-project/OpenSearch/pull/19875) | Pass registry of headers to getRestHandlerWrapper | [#4799](https://github.com/opensearch-project/OpenSearch/issues/4799) |
 
 ### Issues (Design / RFC)
 - [Issue #4799](https://github.com/opensearch-project/security/issues/4799): Original bug report about dropped headers

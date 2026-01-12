@@ -174,12 +174,12 @@ if (showActionsInGroup) {
 - [Getting started with multilayer maps](https://opensearch.org/blog/multilayer-maps/): Maps plugin blog post
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#680](https://github.com/opensearch-project/dashboards-maps/pull/680) | Fix flyout overlay issue with new application header |
-| v2.17.0 | [#653](https://github.com/opensearch-project/dashboards-maps/pull/653) | Conditionally use the new Page Header variant on the Maps listing page |
-| v2.17.0 | [#654](https://github.com/opensearch-project/dashboards-maps/pull/654) | Conditionally use the new Application Header variant on the Maps visualization page |
-| v2.17.0 | [#655](https://github.com/opensearch-project/dashboards-maps/pull/655) | Conditionally use full width for Maps listing page table |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#680](https://github.com/opensearch-project/dashboards-maps/pull/680) | Fix flyout overlay issue with new application header |   |
+| v2.17.0 | [#653](https://github.com/opensearch-project/dashboards-maps/pull/653) | Conditionally use the new Page Header variant on the Maps listing page |   |
+| v2.17.0 | [#654](https://github.com/opensearch-project/dashboards-maps/pull/654) | Conditionally use the new Application Header variant on the Maps visualization page |   |
+| v2.17.0 | [#655](https://github.com/opensearch-project/dashboards-maps/pull/655) | Conditionally use full width for Maps listing page table |   |
 
 ### Issues (Design / RFC)
 - [Issue #649](https://github.com/opensearch-project/dashboards-maps/issues/649): Support Trineo new headers change in maps

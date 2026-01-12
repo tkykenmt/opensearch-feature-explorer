@@ -137,21 +137,21 @@ data_source:
 - [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/3.0/dashboards/management/S3-data-source/): S3 data source documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9355) | Deletes S3 Jobs in Backend when Original Query is Canceled |
-| v3.0.0 | [#9430](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9430) | Add mappings for tinyint, smallint, and bigint in S3 dataset type |
-| v3.0.0 | [#9575](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9575) | Fix potential memory leak in getDirectQueryConnections |
-| v3.4.0 | [#10968](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10968) | Create saved object for prometheus data-connection |
-| v2.18.0 | [#8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255) | Support data connections and multi-select table in dataset picker |
-| v2.18.0 | [#8460](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8460) | Replace segmented button with tabs |
-| v2.18.0 | [#8492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8492) | Add DataSource type display and Discover redirection |
-| v2.18.0 | [#8503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8503) | Fix hide local cluster flag in sample data page |
-| v2.18.0 | [#8537](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8537) | Mute non-MDS endpoints when MDS enabled |
-| v2.18.0 | [#8544](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8544) | Direct query connections fit and finish fixes |
-| v2.18.0 | [#8713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8713) | Add MDS support to auto-complete API |
-| v2.17.0 | [#7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925) | Add data-connection saved object type for external connections |
-| v2.16.0 | [#7143](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7143) | Initial migration of direct query data source to data source management |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9355) | Deletes S3 Jobs in Backend when Original Query is Canceled | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9430](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9430) | Add mappings for tinyint, smallint, and bigint in S3 dataset type | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9575](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9575) | Fix potential memory leak in getDirectQueryConnections | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10968](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10968) | Create saved object for prometheus data-connection | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255) | Support data connections and multi-select table in dataset picker | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8460](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8460) | Replace segmented button with tabs | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8492) | Add DataSource type display and Discover redirection | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8503) | Fix hide local cluster flag in sample data page | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8537](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8537) | Mute non-MDS endpoints when MDS enabled |   |
+| v2.18.0 | [#8544](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8544) | Direct query connections fit and finish fixes |   |
+| v2.18.0 | [#8713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8713) | Add MDS support to auto-complete API | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.17.0 | [#7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925) | Add data-connection saved object type for external connections | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7143](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7143) | Initial migration of direct query data source to data source management | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 
 ### Issues (Design / RFC)
 - [Issue #8256](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8256): Redirection issue for direct query datasource

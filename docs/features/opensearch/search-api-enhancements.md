@@ -111,11 +111,11 @@ aggregation:
 - [Grouping Top N Queries](https://docs.opensearch.org/2.18/observing-your-data/query-insights/grouping-top-n-queries/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15916](https://github.com/opensearch-project/OpenSearch/pull/15916) | Implement WithFieldName in ValuesSourceAggregationBuilder & FieldSortBuilder |
-| v2.18.0 | [#15967](https://github.com/opensearch-project/OpenSearch/pull/15967) | Add successfulSearchShardIndices in SearchRequestContext |
-| v2.17.0 | [#15705](https://github.com/opensearch-project/OpenSearch/pull/15705) | Adding WithFieldName interface for QueryBuilders |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15916](https://github.com/opensearch-project/OpenSearch/pull/15916) | Implement WithFieldName in ValuesSourceAggregationBuilder & FieldSortBuilder |   |
+| v2.18.0 | [#15967](https://github.com/opensearch-project/OpenSearch/pull/15967) | Add successfulSearchShardIndices in SearchRequestContext |   |
+| v2.17.0 | [#15705](https://github.com/opensearch-project/OpenSearch/pull/15705) | Adding WithFieldName interface for QueryBuilders |   |
 
 ### Issues (Design / RFC)
 - [Issue #69](https://github.com/opensearch-project/query-insights/issues/69): Query Shape Field Data Type RFC

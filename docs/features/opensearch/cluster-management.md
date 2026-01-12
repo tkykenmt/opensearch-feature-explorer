@@ -114,10 +114,10 @@ PUT _cluster/settings
 - [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Cluster tuning guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run |
-| v3.0.0 | [#16445](https://github.com/opensearch-project/OpenSearch/pull/16445) | Change priority for scheduling reroute during timeout |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run |   |
+| v3.0.0 | [#16445](https://github.com/opensearch-project/OpenSearch/pull/16445) | Change priority for scheduling reroute during timeout |   |
 
 ### Issues (Design / RFC)
 - [Issue #12249](https://github.com/opensearch-project/OpenSearch/issues/12249): Reduce TaskBatcher excessive logging in DEBUG mode

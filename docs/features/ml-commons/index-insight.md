@@ -236,9 +236,9 @@ POST /_plugins/_ml/agents/_register
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4088](https://github.com/opensearch-project/ml-commons/pull/4088) | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4088](https://github.com/opensearch-project/ml-commons/pull/4088) | Initial implementation | [#3993](https://github.com/opensearch-project/ml-commons/issues/3993) |
 
 ### Issues (Design / RFC)
 - [Issue #3993](https://github.com/opensearch-project/ml-commons/issues/3993): RFC: Index insight: A feature to enhance indices related AI features

@@ -120,13 +120,13 @@ OpenSearchClient client = new OpenSearchClient(builder.build());
 - [Apache HttpClient 5.x](https://hc.apache.org/httpcomponents-client-5.1.x/): Apache HttpClient project
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17248](https://github.com/opensearch-project/OpenSearch/pull/17248) | Add HTTP/2 protocol support to HttpRequest.HttpVersion |
-| v3.0.0 | [#9993](https://github.com/opensearch-project/OpenSearch/pull/9993) | Don't over-allocate in HeapBufferedAsyncEntityConsumer |
-| v3.0.0 | [#4944](https://github.com/opensearch-project/OpenSearch/pull/4944) | Fix compression support for h2c protocol |
-| v3.0.0 | [#4827](https://github.com/opensearch-project/OpenSearch/pull/4827) | Fix JDK 16+ protocol version parsing |
-| v3.0.0 | [#4459](https://github.com/opensearch-project/OpenSearch/pull/4459) | Migrate client transports to Apache HttpClient / Core 5.x |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17248](https://github.com/opensearch-project/OpenSearch/pull/17248) | Add HTTP/2 protocol support to HttpRequest.HttpVersion |   |
+| v3.0.0 | [#9993](https://github.com/opensearch-project/OpenSearch/pull/9993) | Don't over-allocate in HeapBufferedAsyncEntityConsumer | [#9866](https://github.com/opensearch-project/OpenSearch/issues/9866) |
+| v3.0.0 | [#4944](https://github.com/opensearch-project/OpenSearch/pull/4944) | Fix compression support for h2c protocol | [#163](https://github.com/opensearch-project/OpenSearch/issues/163) |
+| v3.0.0 | [#4827](https://github.com/opensearch-project/OpenSearch/pull/4827) | Fix JDK 16+ protocol version parsing |   |
+| v3.0.0 | [#4459](https://github.com/opensearch-project/OpenSearch/pull/4459) | Migrate client transports to Apache HttpClient / Core 5.x | [#4256](https://github.com/opensearch-project/OpenSearch/issues/4256) |
 
 ### Issues (Design / RFC)
 - [Issue #9866](https://github.com/opensearch-project/OpenSearch/issues/9866): Memory over-allocation performance issue

@@ -169,10 +169,10 @@ GET products/_search
 - [Elasticsearch PR #82430](https://github.com/elastic/elasticsearch/pull/82430): Original fix in Elasticsearch
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15988](https://github.com/opensearch-project/OpenSearch/pull/15988) | Fix search_as_you_type not supporting multi-fields |
-| v2.18.0 | [#7991](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7991) | Keep Autocomplete suggestion window open and put user hints below the suggestion window |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15988](https://github.com/opensearch-project/OpenSearch/pull/15988) | Fix search_as_you_type not supporting multi-fields |   |
+| v2.18.0 | [#7991](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7991) | Keep Autocomplete suggestion window open and put user hints below the suggestion window |   |
 
 ### Issues (Design / RFC)
 - [Issue #5035](https://github.com/opensearch-project/OpenSearch/issues/5035): Original bug report for search_as_you_type multi-fields

@@ -173,9 +173,9 @@ curl -X PUT "http://localhost:9200/_plugins/_ml/memory/{memory_id}" \
 - [Conversational Search](https://docs.opensearch.org/latest/search-plugins/conversational-search/): Conversational search overview
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2750](https://github.com/opensearch-project/ml-commons/pull/2750) | Adding additional info for memory metadata |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2750](https://github.com/opensearch-project/ml-commons/pull/2750) | Adding additional info for memory metadata |   |
 
 ### Issues (Design / RFC)
 - [Issue #2755](https://github.com/opensearch-project/ml-commons/issues/2755): Original feature request

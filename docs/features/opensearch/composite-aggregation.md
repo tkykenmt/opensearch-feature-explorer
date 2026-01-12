@@ -116,9 +116,9 @@ POST /logs/_search
 - [Bucket Aggregations](https://docs.opensearch.org/3.0/aggregations/bucket/index/): OpenSearch documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18531](https://github.com/opensearch-project/OpenSearch/pull/18531) | Optimize by removing unnecessary object allocations |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18531](https://github.com/opensearch-project/OpenSearch/pull/18531) | Optimize by removing unnecessary object allocations | [#18440](https://github.com/opensearch-project/OpenSearch/issues/18440) |
 
 ### Issues (Design / RFC)
 - [Issue #18440](https://github.com/opensearch-project/OpenSearch/issues/18440): Composite Terms Aggregation Performance Improvement

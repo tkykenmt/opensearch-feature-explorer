@@ -212,14 +212,14 @@ DELETE /_plugins/_search_relevance/experiments/schedule/{id}
 - [Search Relevance Overview](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/): Search Relevance plugin documentation
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.4.0 | [#220](https://github.com/opensearch-project/search-relevance/pull/220) | search-relevance | Backend APIs and scheduled job runner |
-| v3.4.0 | [#636](https://github.com/opensearch-project/dashboards-search-relevance/pull/636) | dashboards-search-relevance | UI components for scheduling |
-| v3.4.0 | [#324](https://github.com/opensearch-project/search-relevance/pull/324) | search-relevance | Data integrity for experiment deletion |
-| v3.4.0 | [#685](https://github.com/opensearch-project/dashboards-search-relevance/pull/685) | dashboards-search-relevance | GUID search for Search Configuration |
-| v3.4.0 | [#686](https://github.com/opensearch-project/dashboards-search-relevance/pull/686) | dashboards-search-relevance | Type/status filtering |
-| v3.4.0 | [#670](https://github.com/opensearch-project/dashboards-search-relevance/pull/670) | dashboards-search-relevance | Experiment detail page title |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.4.0 | [#220](https://github.com/opensearch-project/search-relevance/pull/220) | search-relevance | Backend APIs and scheduled job runner |   |
+| v3.4.0 | [#636](https://github.com/opensearch-project/dashboards-search-relevance/pull/636) | dashboards-search-relevance | UI components for scheduling |   |
+| v3.4.0 | [#324](https://github.com/opensearch-project/search-relevance/pull/324) | search-relevance | Data integrity for experiment deletion |   |
+| v3.4.0 | [#685](https://github.com/opensearch-project/dashboards-search-relevance/pull/685) | dashboards-search-relevance | GUID search for Search Configuration | [#676](https://github.com/opensearch-project/dashboards-search-relevance/issues/676) |
+| v3.4.0 | [#686](https://github.com/opensearch-project/dashboards-search-relevance/pull/686) | dashboards-search-relevance | Type/status filtering | [#634](https://github.com/opensearch-project/dashboards-search-relevance/issues/634) |
+| v3.4.0 | [#670](https://github.com/opensearch-project/dashboards-search-relevance/pull/670) | dashboards-search-relevance | Experiment detail page title |   |
 
 ### Issues (Design / RFC)
 - [Issue #213](https://github.com/opensearch-project/search-relevance/issues/213): Original feature request for scheduled experiments

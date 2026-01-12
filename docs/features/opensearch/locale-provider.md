@@ -107,9 +107,9 @@ POST /my-index/_doc
 - [Blog: How to start contributing to OpenSearch](https://opensearch.org/blog/how-to-start-contributing-to-opensearch-a-beginners-guide-based-on-my-journey/): Contributor journey
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#14345](https://github.com/opensearch-project/OpenSearch/pull/14345) | Changed locale provider from COMPAT to CLDR |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#14345](https://github.com/opensearch-project/OpenSearch/pull/14345) | Changed locale provider from COMPAT to CLDR | [#11550](https://github.com/opensearch-project/OpenSearch/issues/11550) |
 
 ### Issues (Design / RFC)
 - [Issue #11550](https://github.com/opensearch-project/OpenSearch/issues/11550): Original feature request

@@ -143,12 +143,12 @@ Notebooks are stored as saved objects in the `.kibana` index. Each notebook cont
 - [Blog: Feature Deep Dive - OpenSearch Dashboards Notebooks](https://opensearch.org/blog/feature-highlight-opensearch-dashboards-notebooks/): Feature overview and use cases
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks |
-| v2.17.0 | [#2110](https://github.com/opensearch-project/dashboards-observability/pull/2110) | UI update: badge counter in breadcrumbs, simplified delete workflow |
-| v2.17.0 | [#2108](https://github.com/opensearch-project/dashboards-observability/pull/2108) | Fix sample notebooks for MDS environments |
-| v1.0.0 | - | Initial production release of Notebooks |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks |   |
+| v2.17.0 | [#2110](https://github.com/opensearch-project/dashboards-observability/pull/2110) | UI update: badge counter in breadcrumbs, simplified delete workflow |   |
+| v2.17.0 | [#2108](https://github.com/opensearch-project/dashboards-observability/pull/2108) | Fix sample notebooks for MDS environments |   |
+| v1.0.0 | - | Initial production release of Notebooks |   |
 
 ### Issues (Design / RFC)
 - [Issue #2350](https://github.com/opensearch-project/dashboards-observability/issues/2350): Deprecation notice for legacy notebooks

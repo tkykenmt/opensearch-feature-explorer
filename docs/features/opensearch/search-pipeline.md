@@ -277,11 +277,11 @@ Response includes system-generated processor and factory statistics:
 - [System-Generated Search Pipelines Blog](https://opensearch.org/blog/making-search-smarter-with-system-generated-search-pipelines/): System-generated pipelines explanation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19128](https://github.com/opensearch-project/OpenSearch/pull/19128) | Added system-generated search pipeline support |
-| v3.2.0 | [#18564](https://github.com/opensearch-project/OpenSearch/pull/18564) | Added search pipeline support in search and msearch template |
-| v2.18.0 | [#15923](https://github.com/opensearch-project/OpenSearch/pull/15923) | Added msearch API support for search pipeline name |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19128](https://github.com/opensearch-project/OpenSearch/pull/19128) | Added system-generated search pipeline support | [#18731](https://github.com/opensearch-project/OpenSearch/issues/18731) |
+| v3.2.0 | [#18564](https://github.com/opensearch-project/OpenSearch/pull/18564) | Added search pipeline support in search and msearch template | [#18508](https://github.com/opensearch-project/OpenSearch/issues/18508) |
+| v2.18.0 | [#15923](https://github.com/opensearch-project/OpenSearch/pull/15923) | Added msearch API support for search pipeline name | [#15748](https://github.com/opensearch-project/OpenSearch/issues/15748) |
 
 ### Issues (Design / RFC)
 - [Issue #18731](https://github.com/opensearch-project/OpenSearch/issues/18731): Feature request for system-generated search pipeline

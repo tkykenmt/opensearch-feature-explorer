@@ -79,6 +79,6 @@ The Metrics Framework requires OpenSearch version 3.1.0 or later. The stats coll
 - [ML Commons APIs](https://docs.opensearch.org/3.0/ml-commons-plugin/api/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4220](https://github.com/opensearch-project/ml-commons/pull/4220) | Fix version checking logic for starting the stats collector job |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4220](https://github.com/opensearch-project/ml-commons/pull/4220) | Fix version checking logic for starting the stats collector job |   |

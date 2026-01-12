@@ -141,6 +141,6 @@ GET /my-nlp-index/_search
 - [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/): Documentation on disk-based vector search
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#885](https://github.com/opensearch-project/neural-search/pull/885) | Adds rescore parameter support in neural search |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#885](https://github.com/opensearch-project/neural-search/pull/885) | Adds rescore parameter support in neural search |   |

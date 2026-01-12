@@ -120,8 +120,8 @@ Special value handling:
 - [Execute Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/execute-agent/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4296](https://github.com/opensearch-project/ml-commons/pull/4296) | Enable execute tool feature flag by default |
-| v3.3.0 | [#4133](https://github.com/opensearch-project/ml-commons/pull/4133) | Add PlainNumberAdapter for Gson in SearchIndexTool |
-| v3.3.0 | [#4215](https://github.com/opensearch-project/ml-commons/pull/4215) | Standardize setting naming convention |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4296](https://github.com/opensearch-project/ml-commons/pull/4296) | Enable execute tool feature flag by default |   |
+| v3.3.0 | [#4133](https://github.com/opensearch-project/ml-commons/pull/4133) | Add PlainNumberAdapter for Gson in SearchIndexTool |   |
+| v3.3.0 | [#4215](https://github.com/opensearch-project/ml-commons/pull/4215) | Standardize setting naming convention |   |

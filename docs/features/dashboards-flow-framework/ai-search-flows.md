@@ -226,25 +226,25 @@ For flow agents, response filters are auto-configured for supported providers:
 - [flow-framework Repository](https://github.com/opensearch-project/flow-framework)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#626](https://github.com/opensearch-project/dashboards-assistant/pull/626) | Disable dashboards assistant chatbot if investigation feature flag enabled |
-| v3.4.0 | [#801](https://github.com/opensearch-project/dashboards-flow-framework/pull/801) | Add agent summary |
-| v3.4.0 | [#796](https://github.com/opensearch-project/dashboards-flow-framework/pull/796) | Clean up / hide complex fields on agent configuration |
-| v3.4.0 | [#803](https://github.com/opensearch-project/dashboards-flow-framework/pull/803) | Clean up agent summary formatting |
-| v3.4.0 | [#809](https://github.com/opensearch-project/dashboards-flow-framework/pull/809) | Integrate with memory |
-| v3.4.0 | [#817](https://github.com/opensearch-project/dashboards-flow-framework/pull/817) | Automatically add response filters to flow agents when possible |
-| v3.4.0 | [#820](https://github.com/opensearch-project/dashboards-flow-framework/pull/820) | Remove default empty tool field values; fix EuiSelect values in Firefox |
-| v3.1.0 | [#722](https://github.com/opensearch-project/dashboards-flow-framework/pull/722) | Integrate preview panel into inspector panel |
-| v3.1.0 | [#737](https://github.com/opensearch-project/dashboards-flow-framework/pull/737) | Refactor form navigation to left panel |
-| v3.1.0 | [#742](https://github.com/opensearch-project/dashboards-flow-framework/pull/742) | Added Semantic Search using Sparse Encoders template |
-| v3.1.0 | [#743](https://github.com/opensearch-project/dashboards-flow-framework/pull/743) | Misc UI improvements IV |
-| v3.1.0 | [#1139](https://github.com/opensearch-project/flow-framework/pull/1139) | Make thread pool sizes configurable (backend) |
-| v3.0.0 | [#662](https://github.com/opensearch-project/dashboards-flow-framework/pull/662) | Rename to "AI Search Flows" |
-| v3.0.0 | [#665](https://github.com/opensearch-project/dashboards-flow-framework/pull/665) | Add RAG + hybrid search preset |
-| v3.0.0 | [#676](https://github.com/opensearch-project/dashboards-flow-framework/pull/676) | Simplify ML processor forms |
-| v3.0.0 | [#610](https://github.com/opensearch-project/dashboards-flow-framework/pull/610) | Simplify RAG presets |
-| v3.0.0 | [#604](https://github.com/opensearch-project/dashboards-flow-framework/pull/604) | Refactor quick configure components; improve processor error handling |
-| v3.0.0 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 |
-| v3.0.0 | [#602](https://github.com/opensearch-project/dashboards-flow-framework/pull/602) | Legacy preset integration |
-| v3.0.0 | [#701](https://github.com/opensearch-project/dashboards-flow-framework/pull/701) | Optional model inputs support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#626](https://github.com/opensearch-project/dashboards-assistant/pull/626) | Disable dashboards assistant chatbot if investigation feature flag enabled |   |
+| v3.4.0 | [#801](https://github.com/opensearch-project/dashboards-flow-framework/pull/801) | Add agent summary |   |
+| v3.4.0 | [#796](https://github.com/opensearch-project/dashboards-flow-framework/pull/796) | Clean up / hide complex fields on agent configuration |   |
+| v3.4.0 | [#803](https://github.com/opensearch-project/dashboards-flow-framework/pull/803) | Clean up agent summary formatting |   |
+| v3.4.0 | [#809](https://github.com/opensearch-project/dashboards-flow-framework/pull/809) | Integrate with memory | [#782](https://github.com/opensearch-project/dashboards-flow-framework/issues/782) |
+| v3.4.0 | [#817](https://github.com/opensearch-project/dashboards-flow-framework/pull/817) | Automatically add response filters to flow agents when possible | [#815](https://github.com/opensearch-project/dashboards-flow-framework/issues/815) |
+| v3.4.0 | [#820](https://github.com/opensearch-project/dashboards-flow-framework/pull/820) | Remove default empty tool field values; fix EuiSelect values in Firefox |   |
+| v3.1.0 | [#722](https://github.com/opensearch-project/dashboards-flow-framework/pull/722) | Integrate preview panel into inspector panel |   |
+| v3.1.0 | [#737](https://github.com/opensearch-project/dashboards-flow-framework/pull/737) | Refactor form navigation to left panel |   |
+| v3.1.0 | [#742](https://github.com/opensearch-project/dashboards-flow-framework/pull/742) | Added Semantic Search using Sparse Encoders template |   |
+| v3.1.0 | [#743](https://github.com/opensearch-project/dashboards-flow-framework/pull/743) | Misc UI improvements IV |   |
+| v3.1.0 | [#1139](https://github.com/opensearch-project/flow-framework/pull/1139) | Make thread pool sizes configurable (backend) |   |
+| v3.0.0 | [#662](https://github.com/opensearch-project/dashboards-flow-framework/pull/662) | Rename to "AI Search Flows" |   |
+| v3.0.0 | [#665](https://github.com/opensearch-project/dashboards-flow-framework/pull/665) | Add RAG + hybrid search preset |   |
+| v3.0.0 | [#676](https://github.com/opensearch-project/dashboards-flow-framework/pull/676) | Simplify ML processor forms |   |
+| v3.0.0 | [#610](https://github.com/opensearch-project/dashboards-flow-framework/pull/610) | Simplify RAG presets |   |
+| v3.0.0 | [#604](https://github.com/opensearch-project/dashboards-flow-framework/pull/604) | Refactor quick configure components; improve processor error handling |   |
+| v3.0.0 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 |   |
+| v3.0.0 | [#602](https://github.com/opensearch-project/dashboards-flow-framework/pull/602) | Legacy preset integration | [#546](https://github.com/opensearch-project/dashboards-flow-framework/issues/546) |
+| v3.0.0 | [#701](https://github.com/opensearch-project/dashboards-flow-framework/pull/701) | Optional model inputs support |   |

@@ -163,10 +163,10 @@ public static ValueSource wrap(Object value, ScriptService scriptService) {
 - [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch (Final)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18965](https://github.com/opensearch-project/OpenSearch/pull/18965) | Refactor if-else chains to pattern matching switch |
-| v3.3.0 | [#19163](https://github.com/opensearch-project/OpenSearch/pull/19163) | Remove Java version cap on forbidden APIs |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18965](https://github.com/opensearch-project/OpenSearch/pull/18965) | Refactor if-else chains to pattern matching switch | [#17874](https://github.com/opensearch-project/OpenSearch/issues/17874) |
+| v3.3.0 | [#19163](https://github.com/opensearch-project/OpenSearch/pull/19163) | Remove Java version cap on forbidden APIs |   |
 
 ### Issues (Design / RFC)
 - [Issue #17874](https://github.com/opensearch-project/OpenSearch/issues/17874): Original feature request

@@ -238,15 +238,15 @@ POST /_plugins/_ml/agents/_register
 - [Blog: Introducing agentic search in OpenSearch](https://opensearch.org/blog/introducing-agentic-search-in-opensearch-transforming-data-interaction-through-natural-language/): Official announcement
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [neural-search#1669](https://github.com/opensearch-project/neural-search/pull/1669) | Preserve source parameter for agentic query |
-| v3.4.0 | [dashboards-search-relevance#693](https://github.com/opensearch-project/dashboards-search-relevance/pull/693) | Add support for agent search in pairwise comparison |
-| v3.4.0 | [dashboards-search-relevance#802](https://github.com/opensearch-project/dashboards-search-relevance/pull/802) | Add MCP server support |
-| v3.4.0 | [dashboards-search-relevance#812](https://github.com/opensearch-project/dashboards-search-relevance/pull/812) | Improve Test Flow UX |
-| v3.3.0 | [ml-commons#4203](https://github.com/opensearch-project/ml-commons/pull/4203) | Support Query Planner Tool with Conversational Agent |
-| v3.3.0 | [ml-commons#4262](https://github.com/opensearch-project/ml-commons/pull/4262) | Use same model for Agent and QPT |
-| v3.2.0 | [#1484](https://github.com/opensearch-project/neural-search/pull/1484) | Initial implementation of agentic search query clause and processor |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [neural-search#1669](https://github.com/opensearch-project/neural-search/pull/1669) | Preserve source parameter for agentic query | [#1664](https://github.com/opensearch-project/neural-search/issues/1664) |
+| v3.4.0 | [dashboards-search-relevance#693](https://github.com/opensearch-project/dashboards-search-relevance/pull/693) | Add support for agent search in pairwise comparison |   |
+| v3.4.0 | [dashboards-search-relevance#802](https://github.com/opensearch-project/dashboards-search-relevance/pull/802) | Add MCP server support |   |
+| v3.4.0 | [dashboards-search-relevance#812](https://github.com/opensearch-project/dashboards-search-relevance/pull/812) | Improve Test Flow UX |   |
+| v3.3.0 | [ml-commons#4203](https://github.com/opensearch-project/ml-commons/pull/4203) | Support Query Planner Tool with Conversational Agent |   |
+| v3.3.0 | [ml-commons#4262](https://github.com/opensearch-project/ml-commons/pull/4262) | Use same model for Agent and QPT |   |
+| v3.2.0 | [#1484](https://github.com/opensearch-project/neural-search/pull/1484) | Initial implementation of agentic search query clause and processor |   |
 
 ### Issues (Design / RFC)
 - [Issue #1479](https://github.com/opensearch-project/neural-search/issues/1479): RFC - Design for Agentic Search

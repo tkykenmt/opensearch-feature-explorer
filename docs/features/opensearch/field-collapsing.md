@@ -133,9 +133,9 @@ GET /products/_search
 - [Collapse processor documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/collapse-processor/): Search pipeline collapse processor
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19261](https://github.com/opensearch-project/OpenSearch/pull/19261) | Field collapsing supports search_after |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19261](https://github.com/opensearch-project/OpenSearch/pull/19261) | Field collapsing supports search_after | [#3725](https://github.com/opensearch-project/OpenSearch/issues/3725) |
 
 ### Issues (Design / RFC)
 - [Issue #3725](https://github.com/opensearch-project/OpenSearch/issues/3725): Feature request for search_after support

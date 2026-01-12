@@ -87,13 +87,13 @@ graph TB
 - [Search Relevance Repository](https://github.com/opensearch-project/search-relevance)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#311](https://github.com/opensearch-project/search-relevance/pull/311) | Fixed CalculateJudgmentsIT dependency on UBI plugin |
-| v3.4.0 | [#300](https://github.com/opensearch-project/search-relevance/pull/300) | Added JDWP debug support for test Gradle task |
-| v3.4.0 | [#296](https://github.com/opensearch-project/search-relevance/pull/296) | Fixed duplicate JDWP configuration in integTest |
-| v3.4.0 | [#307](https://github.com/opensearch-project/search-relevance/pull/307) | Removed deprecated AccessController.doPrivileged() |
-| v3.4.0 | [#288](https://github.com/opensearch-project/search-relevance/pull/288) | Small cleanups to test classes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#311](https://github.com/opensearch-project/search-relevance/pull/311) | Fixed CalculateJudgmentsIT dependency on UBI plugin | [#302](https://github.com/opensearch-project/search-relevance/issues/302) |
+| v3.4.0 | [#300](https://github.com/opensearch-project/search-relevance/pull/300) | Added JDWP debug support for test Gradle task | [#299](https://github.com/opensearch-project/search-relevance/issues/299) |
+| v3.4.0 | [#296](https://github.com/opensearch-project/search-relevance/pull/296) | Fixed duplicate JDWP configuration in integTest | [#295](https://github.com/opensearch-project/search-relevance/issues/295) |
+| v3.4.0 | [#307](https://github.com/opensearch-project/search-relevance/pull/307) | Removed deprecated AccessController.doPrivileged() |   |
+| v3.4.0 | [#288](https://github.com/opensearch-project/search-relevance/pull/288) | Small cleanups to test classes |   |
 
 ### Issues (Design / RFC)
 - [Issue #302](https://github.com/opensearch-project/search-relevance/issues/302): CalculateJudgmentsIT UBI dependency issue

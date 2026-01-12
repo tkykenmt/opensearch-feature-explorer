@@ -122,11 +122,11 @@ source=orders
 - [Scheduled Query Acceleration](https://docs.opensearch.org/latest/dashboards/management/scheduled-query-acceleration/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#130](https://github.com/opensearch-project/dashboards-query-workbench/pull/130) | Update packages and tsconfig |
-| v3.0.0 | [#133](https://github.com/opensearch-project/dashboards-query-workbench/pull/133) | Update form validations and tests for acceleration |
-| v3.0.0 | [#139](https://github.com/opensearch-project/dashboards-query-workbench/pull/139) | Updates 2.x branch with opensearch-spark changes |
-| v2.18.0 | [#401](https://github.com/opensearch-project/dashboards-query-workbench/pull/401) | Fix workbench routes to support modal mounting |
-| v2.18.0 | [#408](https://github.com/opensearch-project/dashboards-query-workbench/pull/408) | Added error handling for API calls |
-| v2.17.0 | [#370](https://github.com/opensearch-project/dashboards-query-workbench/pull/370) | Use smaller and compressed variants of buttons and form components |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#130](https://github.com/opensearch-project/dashboards-query-workbench/pull/130) | Update packages and tsconfig |   |
+| v3.0.0 | [#133](https://github.com/opensearch-project/dashboards-query-workbench/pull/133) | Update form validations and tests for acceleration |   |
+| v3.0.0 | [#139](https://github.com/opensearch-project/dashboards-query-workbench/pull/139) | Updates 2.x branch with opensearch-spark changes |   |
+| v2.18.0 | [#401](https://github.com/opensearch-project/dashboards-query-workbench/pull/401) | Fix workbench routes to support modal mounting |   |
+| v2.18.0 | [#408](https://github.com/opensearch-project/dashboards-query-workbench/pull/408) | Added error handling for API calls |   |
+| v2.17.0 | [#370](https://github.com/opensearch-project/dashboards-query-workbench/pull/370) | Use smaller and compressed variants of buttons and form components |   |

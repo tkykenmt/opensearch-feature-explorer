@@ -187,12 +187,12 @@ Widget C,19.99,200
 - [Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/data_importer/README.md)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9602](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9602) | Add a new Data Importer Plugin to OSD Core |
-| v3.0.0 | [#9408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9408) | Data importer P0 release (feature branch) |
-| v3.0.0 | [#10478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10478) | Move Data Importer to Data Administration under settings |
-| v3.0.0 | [#10961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10961) | Data importer UI fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9602](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9602) | Add a new Data Importer Plugin to OSD Core | [#9199](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9199) |
+| v3.0.0 | [#9408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9408) | Data importer P0 release (feature branch) |   |
+| v3.0.0 | [#10478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10478) | Move Data Importer to Data Administration under settings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#10961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10961) | Data importer UI fixes |   |
 
 ### Issues (Design / RFC)
 - [Issue #9199](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9199): RFC - Integrate a Data Importer Plugin into Dashboards

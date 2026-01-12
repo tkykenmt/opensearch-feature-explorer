@@ -136,9 +136,9 @@ Metrics will be written to `logs/_otel_metrics.log` by default, or exported via 
 - [Metrics Framework Documentation](https://docs.opensearch.org/2.18/monitoring-your-cluster/metrics/getting-started/): Official OpenSearch metrics framework docs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15976](https://github.com/opensearch-project/OpenSearch/pull/15976) | Add success and failure count OTel metrics for async shard fetch |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15976](https://github.com/opensearch-project/OpenSearch/pull/15976) | Add success and failure count OTel metrics for async shard fetch |   |
 
 ### Issues (Design / RFC)
 - [Issue #8098](https://github.com/opensearch-project/OpenSearch/issues/8098): META - Cluster Manager Async Shard Fetch Revamp

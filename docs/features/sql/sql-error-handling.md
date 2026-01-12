@@ -121,7 +121,7 @@ POST /_plugins/_sql
 - [SQL Plugin Documentation](https://docs.opensearch.org/latest/search-plugins/sql/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#3066](https://github.com/opensearch-project/sql/pull/3066) | Improve error handling for malformed query cursors |
-| v2.18.0 | [#3080](https://github.com/opensearch-project/sql/pull/3080) | Improve error handling for some more edge cases |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#3066](https://github.com/opensearch-project/sql/pull/3066) | Improve error handling for malformed query cursors |   |
+| v2.18.0 | [#3080](https://github.com/opensearch-project/sql/pull/3080) | Improve error handling for some more edge cases |   |

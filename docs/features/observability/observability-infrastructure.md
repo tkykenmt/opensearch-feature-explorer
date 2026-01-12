@@ -89,10 +89,10 @@ publishing {
 - [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#1931](https://github.com/opensearch-project/observability/pull/1931) | Update maven snapshot publish endpoint and credential |
-| v3.2.0 | [#1937](https://github.com/opensearch-project/observability/pull/1937) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#1931](https://github.com/opensearch-project/observability/pull/1931) | Update maven snapshot publish endpoint and credential |   |
+| v3.2.0 | [#1937](https://github.com/opensearch-project/observability/pull/1937) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 | [#1932](https://github.com/opensearch-project/observability/issues/1932) |
 
 ### Issues (Design / RFC)
 - [Issue #5551](https://github.com/opensearch-project/opensearch-build/issues/5551): Plugin snapshot publishing migration

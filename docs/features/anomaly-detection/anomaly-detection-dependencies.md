@@ -84,6 +84,6 @@ dependencies {
 - [Anomaly Detection Repository](https://github.com/opensearch-project/anomaly-detection)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#1337](https://github.com/opensearch-project/anomaly-detection/pull/1337) | Updating several dependencies |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#1337](https://github.com/opensearch-project/anomaly-detection/pull/1337) | Updating several dependencies |   |

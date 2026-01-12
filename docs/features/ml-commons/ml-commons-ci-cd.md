@@ -136,9 +136,9 @@ jobs:
 - [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/ml-commons/blob/main/DEVELOPER_GUIDE.md): Developer guide with approval info
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#3005](https://github.com/opensearch-project/ml-commons/pull/3005) | Add Test Env Require Approval Action |
-| v2.18.0 | [#3162](https://github.com/opensearch-project/ml-commons/pull/3162) | Upgrading upload artifact to v4 |
-| v2.18.0 | [#2881](https://github.com/opensearch-project/ml-commons/pull/2881) | Bump actions/download-artifact from 3 to 4.1.7 |
-| v2.18.0 | [#3062](https://github.com/opensearch-project/ml-commons/pull/3062) | Updates dev guide to inform the workflow approval step |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#3005](https://github.com/opensearch-project/ml-commons/pull/3005) | Add Test Env Require Approval Action |   |
+| v2.18.0 | [#3162](https://github.com/opensearch-project/ml-commons/pull/3162) | Upgrading upload artifact to v4 |   |
+| v2.18.0 | [#2881](https://github.com/opensearch-project/ml-commons/pull/2881) | Bump actions/download-artifact from 3 to 4.1.7 |   |
+| v2.18.0 | [#3062](https://github.com/opensearch-project/ml-commons/pull/3062) | Updates dev guide to inform the workflow approval step |   |

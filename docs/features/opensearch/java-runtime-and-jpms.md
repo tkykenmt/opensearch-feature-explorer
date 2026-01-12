@@ -141,16 +141,16 @@ JDK 21 provides stable `MemorySegment` API for memory-mapped files:
 - [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17153](https://github.com/opensearch-project/OpenSearch/pull/17153) | Refactor codebase for JPMS support |
-| v3.0.0 | [#17117](https://github.com/opensearch-project/OpenSearch/pull/17117) | Refactor bootstrap package |
-| v3.0.0 | [#17241](https://github.com/opensearch-project/OpenSearch/pull/17241) | Refactor Lucene packages |
-| v3.0.0 | [#17272](https://github.com/opensearch-project/OpenSearch/pull/17272) | Refactor client package |
-| v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 (requires JDK 21) |
-| v3.0.0 | [#16429](https://github.com/opensearch-project/OpenSearch/pull/16429) | Update JDK to 23.0.1 |
-| v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | Custom Gradle plugin for Java agent (SecurityManager replacement) |
-| v2.4.0 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Enable JDK 19 preview APIs for mmap |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17153](https://github.com/opensearch-project/OpenSearch/pull/17153) | Refactor codebase for JPMS support |   |
+| v3.0.0 | [#17117](https://github.com/opensearch-project/OpenSearch/pull/17117) | Refactor bootstrap package |   |
+| v3.0.0 | [#17241](https://github.com/opensearch-project/OpenSearch/pull/17241) | Refactor Lucene packages |   |
+| v3.0.0 | [#17272](https://github.com/opensearch-project/OpenSearch/pull/17272) | Refactor client package |   |
+| v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 (requires JDK 21) | [#11415](https://github.com/opensearch-project/OpenSearch/issues/11415) |
+| v3.0.0 | [#16429](https://github.com/opensearch-project/OpenSearch/pull/16429) | Update JDK to 23.0.1 |   |
+| v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | Custom Gradle plugin for Java agent (SecurityManager replacement) |   |
+| v2.4.0 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Enable JDK 19 preview APIs for mmap |   |
 
 ### Issues (Design / RFC)
 - [Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): META - Split and modularize the server monolith

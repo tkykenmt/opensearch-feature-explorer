@@ -149,13 +149,13 @@ POST /my-index/_scale
 - [Blog: Improve OpenSearch cluster performance by separating search and indexing workloads](https://opensearch.org/blog/improve-opensearch-cluster-performance-by-separating-search-and-indexing-workloads/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17299](https://github.com/opensearch-project/OpenSearch/pull/17299) | Scale-to-zero (search_only mode) support |
-| v3.0.0 | [#17741](https://github.com/opensearch-project/OpenSearch/pull/17741) | AutoExpand for SearchReplica |
-| v3.0.0 | [#17803](https://github.com/opensearch-project/OpenSearch/pull/17803) | Search Only strict routing setting |
-| v2.17.0 | [#15368](https://github.com/opensearch-project/OpenSearch/pull/15368) | Initial search replica implementation |
-| v2.17.0 | [#15445](https://github.com/opensearch-project/OpenSearch/pull/15445) | Pull-based replica support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17299](https://github.com/opensearch-project/OpenSearch/pull/17299) | Scale-to-zero (search_only mode) support |   |
+| v3.0.0 | [#17741](https://github.com/opensearch-project/OpenSearch/pull/17741) | AutoExpand for SearchReplica | [#17310](https://github.com/opensearch-project/OpenSearch/issues/17310) |
+| v3.0.0 | [#17803](https://github.com/opensearch-project/OpenSearch/pull/17803) | Search Only strict routing setting | [#17424](https://github.com/opensearch-project/OpenSearch/issues/17424) |
+| v2.17.0 | [#15368](https://github.com/opensearch-project/OpenSearch/pull/15368) | Initial search replica implementation |   |
+| v2.17.0 | [#15445](https://github.com/opensearch-project/OpenSearch/pull/15445) | Pull-based replica support |   |
 
 ### Issues (Design / RFC)
 - [Issue #15306](https://github.com/opensearch-project/OpenSearch/issues/15306): META - Reader/Writer Separation

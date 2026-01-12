@@ -124,10 +124,10 @@ POST /_plugins/_ml/agents/{agent_id}/_execute
 - [Building a plan-execute-reflect agent tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/build-plan-execute-reflect-agent/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#3778](https://github.com/opensearch-project/ml-commons/pull/3778) | Adding test cases for PlanExecuteReflect Agent |
-| v3.0.0 | [#3716](https://github.com/opensearch-project/ml-commons/pull/3716) | Initial PlanExecuteReflect Agent implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#3778](https://github.com/opensearch-project/ml-commons/pull/3778) | Adding test cases for PlanExecuteReflect Agent | [#3750](https://github.com/opensearch-project/ml-commons/issues/3750) |
+| v3.0.0 | [#3716](https://github.com/opensearch-project/ml-commons/pull/3716) | Initial PlanExecuteReflect Agent implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #3750](https://github.com/opensearch-project/ml-commons/issues/3750): Test coverage request

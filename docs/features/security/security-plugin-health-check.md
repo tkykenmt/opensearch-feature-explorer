@@ -118,9 +118,9 @@ The health check endpoint is designed for use with load balancers:
 - [Security API Documentation](https://docs.opensearch.org/3.0/security/access-control/api/): Official API docs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5626](https://github.com/opensearch-project/security/pull/5626) | Add AuthZ initialization completion check |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#5626](https://github.com/opensearch-project/security/pull/5626) | Add AuthZ initialization completion check |   |
 
 ### Issues (Design / RFC)
 - [Issue #5603](https://github.com/opensearch-project/security/issues/5603): Security Initialization Issues

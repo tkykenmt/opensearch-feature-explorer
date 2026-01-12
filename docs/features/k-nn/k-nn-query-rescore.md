@@ -159,7 +159,7 @@ GET my-knn-index/_search
 - [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2190](https://github.com/opensearch-project/k-NN/pull/2190) | JavaDoc cleanup for RescoreContext |
-| v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2190](https://github.com/opensearch-project/k-NN/pull/2190) | JavaDoc cleanup for RescoreContext |   |
+| v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |   |

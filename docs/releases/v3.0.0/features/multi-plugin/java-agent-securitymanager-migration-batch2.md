@@ -59,13 +59,13 @@ flowchart LR
 
 #### Affected Repositories
 
-| Repository | PR | Description |
-|------------|-----|-------------|
-| learning | #156 | Support phasing off SecurityManager usage in favor of Java Agent |
-| security | #157, #303, #1505, #1504, #68, #3551 | Java Agent Gradle plugin migration and build fixes |
-| query | #296 | Support phasing off SecurityManager usage in favor of Java Agent |
-| system | #62 | Update Gradle 8.10.2, JDK 23, and Lucene 10 support |
-| sql | #3539 | Fix build due to phasing off SecurityManager usage |
+| Repository | PR | Description | Related Issue |
+|------------|-----|-------------|---------------|
+| learning | #156 | Support phasing off SecurityManager usage in favor of Java Agent |   |
+| security | #157, #303, #1505, #1504, #68, #3551 | Java Agent Gradle plugin migration and build fixes |   |
+| query | #296 | Support phasing off SecurityManager usage in favor of Java Agent |   |
+| system | #62 | Update Gradle 8.10.2, JDK 23, and Lucene 10 support |   |
+| sql | #3539 | Fix build due to phasing off SecurityManager usage |   |
 
 #### New Configuration
 

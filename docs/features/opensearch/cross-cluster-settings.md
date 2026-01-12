@@ -132,9 +132,9 @@ GET my-remote-cluster:my-index/_search
 - [Remote cluster information API](https://docs.opensearch.org/3.0/api-reference/cluster-api/remote-info/): API reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18766](https://github.com/opensearch-project/OpenSearch/pull/18766) | Fix skip_unavailable setting changing to default during node drop |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18766](https://github.com/opensearch-project/OpenSearch/pull/18766) | Fix skip_unavailable setting changing to default during node drop | [#13798](https://github.com/opensearch-project/OpenSearch/issues/13798) |
 
 ### Issues (Design / RFC)
 - [Issue #13798](https://github.com/opensearch-project/OpenSearch/issues/13798): Bug report for skip_unavailable reset issue

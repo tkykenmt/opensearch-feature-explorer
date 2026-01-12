@@ -264,35 +264,35 @@ When settings are updated:
 - [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19635](https://github.com/opensearch-project/OpenSearch/pull/19635) | Add Kafka offset based consumer lag |
-| v3.4.0 | [#19878](https://github.com/opensearch-project/OpenSearch/pull/19878) | Add time based periodic flush support |
-| v3.4.0 | [#19765](https://github.com/opensearch-project/OpenSearch/pull/19765) | Support message mappers and raw payloads |
-| v3.4.0 | [#19963](https://github.com/opensearch-project/OpenSearch/pull/19963) | Update ingestion stream params to be dynamic |
-| v3.4.0 | [#19607](https://github.com/opensearch-project/OpenSearch/pull/19607) | Fix out-of-bounds offset scenarios and remove persisted offsets |
-| v3.4.0 | [#19757](https://github.com/opensearch-project/OpenSearch/pull/19757) | Fix file-based ingestion consumer start point handling |
-| v3.3.0 | [#19316](https://github.com/opensearch-project/OpenSearch/pull/19316) | Support all-active mode in pull-based ingestion |
-| v3.3.0 | [#19320](https://github.com/opensearch-project/OpenSearch/pull/19320) | Fix ingestion state XContent serialization and fail fast on parsing errors |
-| v3.3.0 | [#19393](https://github.com/opensearch-project/OpenSearch/pull/19393) | Fix lag metric when streaming source is empty |
-| v3.3.0 | [#19212](https://github.com/opensearch-project/OpenSearch/pull/19212) | Fix ingestion pause state initialization on replica promotion |
-| v3.3.0 | [#19380](https://github.com/opensearch-project/OpenSearch/pull/19380) | Fix flaky test IngestFromKinesisIT.testAllActiveIngestion |
-| v3.2.0 | [#18591](https://github.com/opensearch-project/OpenSearch/pull/18591) | File-based ingestion plugin (ingestion-fs) for local testing |
-| v3.1.0 | [#17977](https://github.com/opensearch-project/OpenSearch/pull/17977) | Lag metrics for polling |
-| v3.1.0 | [#18088](https://github.com/opensearch-project/OpenSearch/pull/18088) | Error metrics and configurable queue size |
-| v3.1.0 | [#18250](https://github.com/opensearch-project/OpenSearch/pull/18250) | Transient failure retries and create mode |
-| v3.1.0 | [#18280](https://github.com/opensearch-project/OpenSearch/pull/18280) | Cluster write block support |
-| v3.1.0 | [#18332](https://github.com/opensearch-project/OpenSearch/pull/18332) | Consumer reset in Resume API |
-| v3.0.0 | [#16958](https://github.com/opensearch-project/OpenSearch/pull/16958) | Core pull-based ingestion engine, APIs, and Kafka plugin |
-| v3.0.0 | [#17354](https://github.com/opensearch-project/OpenSearch/pull/17354) | Offset management with rewind by offset/timestamp support |
-| v3.0.0 | [#17427](https://github.com/opensearch-project/OpenSearch/pull/17427) | Error handling strategies (DROP and BLOCK) |
-| v3.0.0 | [#17615](https://github.com/opensearch-project/OpenSearch/pull/17615) | Kinesis plugin support |
-| v3.0.0 | [#17631](https://github.com/opensearch-project/OpenSearch/pull/17631) | Ingestion management APIs (pause, resume, get state) |
-| v3.0.0 | [#17768](https://github.com/opensearch-project/OpenSearch/pull/17768) | Disable index API for ingestion engine |
-| v3.0.0 | [#17822](https://github.com/opensearch-project/OpenSearch/pull/17822) | Update and delete support with auto-generated IDs |
-| v3.0.0 | [#17863](https://github.com/opensearch-project/OpenSearch/pull/17863) | Configurable maxPollSize and pollTimeout |
-| v3.0.0 | [#17918](https://github.com/opensearch-project/OpenSearch/pull/17918) | External versioning support for out-of-order updates |
-| v3.0.0 | [#17912](https://github.com/opensearch-project/OpenSearch/pull/17912) | Multi-threaded writer support with configurable processor threads |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19635](https://github.com/opensearch-project/OpenSearch/pull/19635) | Add Kafka offset based consumer lag |   |
+| v3.4.0 | [#19878](https://github.com/opensearch-project/OpenSearch/pull/19878) | Add time based periodic flush support | [#19860](https://github.com/opensearch-project/OpenSearch/issues/19860) |
+| v3.4.0 | [#19765](https://github.com/opensearch-project/OpenSearch/pull/19765) | Support message mappers and raw payloads | [#19548](https://github.com/opensearch-project/OpenSearch/issues/19548) |
+| v3.4.0 | [#19963](https://github.com/opensearch-project/OpenSearch/pull/19963) | Update ingestion stream params to be dynamic |   |
+| v3.4.0 | [#19607](https://github.com/opensearch-project/OpenSearch/pull/19607) | Fix out-of-bounds offset scenarios and remove persisted offsets | [#19591](https://github.com/opensearch-project/OpenSearch/issues/19591) |
+| v3.4.0 | [#19757](https://github.com/opensearch-project/OpenSearch/pull/19757) | Fix file-based ingestion consumer start point handling | [#19723](https://github.com/opensearch-project/OpenSearch/issues/19723) |
+| v3.3.0 | [#19316](https://github.com/opensearch-project/OpenSearch/pull/19316) | Support all-active mode in pull-based ingestion | [#19287](https://github.com/opensearch-project/OpenSearch/issues/19287) |
+| v3.3.0 | [#19320](https://github.com/opensearch-project/OpenSearch/pull/19320) | Fix ingestion state XContent serialization and fail fast on parsing errors | [#19286](https://github.com/opensearch-project/OpenSearch/issues/19286) |
+| v3.3.0 | [#19393](https://github.com/opensearch-project/OpenSearch/pull/19393) | Fix lag metric when streaming source is empty |   |
+| v3.3.0 | [#19212](https://github.com/opensearch-project/OpenSearch/pull/19212) | Fix ingestion pause state initialization on replica promotion | [#17693](https://github.com/opensearch-project/OpenSearch/issues/17693) |
+| v3.3.0 | [#19380](https://github.com/opensearch-project/OpenSearch/pull/19380) | Fix flaky test IngestFromKinesisIT.testAllActiveIngestion | [#17678](https://github.com/opensearch-project/OpenSearch/issues/17678) |
+| v3.2.0 | [#18591](https://github.com/opensearch-project/OpenSearch/pull/18591) | File-based ingestion plugin (ingestion-fs) for local testing | [#18590](https://github.com/opensearch-project/OpenSearch/issues/18590) |
+| v3.1.0 | [#17977](https://github.com/opensearch-project/OpenSearch/pull/17977) | Lag metrics for polling |   |
+| v3.1.0 | [#18088](https://github.com/opensearch-project/OpenSearch/pull/18088) | Error metrics and configurable queue size |   |
+| v3.1.0 | [#18250](https://github.com/opensearch-project/OpenSearch/pull/18250) | Transient failure retries and create mode |   |
+| v3.1.0 | [#18280](https://github.com/opensearch-project/OpenSearch/pull/18280) | Cluster write block support | [#18279](https://github.com/opensearch-project/OpenSearch/issues/18279) |
+| v3.1.0 | [#18332](https://github.com/opensearch-project/OpenSearch/pull/18332) | Consumer reset in Resume API | [#17442](https://github.com/opensearch-project/OpenSearch/issues/17442) |
+| v3.0.0 | [#16958](https://github.com/opensearch-project/OpenSearch/pull/16958) | Core pull-based ingestion engine, APIs, and Kafka plugin | [#16927](https://github.com/opensearch-project/OpenSearch/issues/16927) |
+| v3.0.0 | [#17354](https://github.com/opensearch-project/OpenSearch/pull/17354) | Offset management with rewind by offset/timestamp support | [#17318](https://github.com/opensearch-project/OpenSearch/issues/17318) |
+| v3.0.0 | [#17427](https://github.com/opensearch-project/OpenSearch/pull/17427) | Error handling strategies (DROP and BLOCK) | [#17085](https://github.com/opensearch-project/OpenSearch/issues/17085) |
+| v3.0.0 | [#17615](https://github.com/opensearch-project/OpenSearch/pull/17615) | Kinesis plugin support |   |
+| v3.0.0 | [#17631](https://github.com/opensearch-project/OpenSearch/pull/17631) | Ingestion management APIs (pause, resume, get state) |   |
+| v3.0.0 | [#17768](https://github.com/opensearch-project/OpenSearch/pull/17768) | Disable index API for ingestion engine |   |
+| v3.0.0 | [#17822](https://github.com/opensearch-project/OpenSearch/pull/17822) | Update and delete support with auto-generated IDs |   |
+| v3.0.0 | [#17863](https://github.com/opensearch-project/OpenSearch/pull/17863) | Configurable maxPollSize and pollTimeout |   |
+| v3.0.0 | [#17918](https://github.com/opensearch-project/OpenSearch/pull/17918) | External versioning support for out-of-order updates | [#17913](https://github.com/opensearch-project/OpenSearch/issues/17913) |
+| v3.0.0 | [#17912](https://github.com/opensearch-project/OpenSearch/pull/17912) | Multi-threaded writer support with configurable processor threads | [#17875](https://github.com/opensearch-project/OpenSearch/issues/17875) |
 
 ### Issues (Design / RFC)
 - [Issue #16495](https://github.com/opensearch-project/OpenSearch/issues/16495): RFC - Streaming ingestion (pull based)

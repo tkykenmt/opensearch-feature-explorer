@@ -133,9 +133,9 @@ GET _nodes/stats
 - [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Related feature for search task management
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17726](https://github.com/opensearch-project/OpenSearch/pull/17726) | Add tracking for long-running SearchTask post cancellation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17726](https://github.com/opensearch-project/OpenSearch/pull/17726) | Add tracking for long-running SearchTask post cancellation |   |
 
 ### Issues (Design / RFC)
 - [Issue #17719](https://github.com/opensearch-project/OpenSearch/issues/17719): Track long running SearchTask post cancellation

@@ -163,7 +163,7 @@ The system automatically detects the dataset type and routes to the appropriate 
 - [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/latest/dashboards/management/S3-data-source/): S3 data source setup
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8481) | Add logic to poll for async query result |
-| v2.18.0 | [#8706](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8706) | Add support for async PPL to Discover |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8481) | Add logic to poll for async query result |   |
+| v2.18.0 | [#8706](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8706) | Add support for async PPL to Discover |   |

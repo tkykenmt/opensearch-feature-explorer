@@ -129,9 +129,9 @@ POST _reindex
 - [Reindex Data Guide](https://docs.opensearch.org/3.0/im-plugin/reindex-data/): Guide for reindexing data
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18964](https://github.com/opensearch-project/OpenSearch/pull/18964) | Fix slice validation to prevent OOM on coordinator |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18964](https://github.com/opensearch-project/OpenSearch/pull/18964) | Fix slice validation to prevent OOM on coordinator | [#18963](https://github.com/opensearch-project/OpenSearch/issues/18963) |
 
 ### Issues (Design / RFC)
 - [Issue #18963](https://github.com/opensearch-project/OpenSearch/issues/18963): Bug report for OOM with large slice values

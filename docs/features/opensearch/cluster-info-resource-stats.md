@@ -147,9 +147,9 @@ When serialized, the resource usage stats appear in the ClusterInfo response:
 - [ClusterInfo.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/ClusterInfo.java): Source code
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18480](https://github.com/opensearch-project/OpenSearch/pull/18480) | Add NodeResourceUsageStats to ClusterInfo |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18480](https://github.com/opensearch-project/OpenSearch/pull/18480) | Add NodeResourceUsageStats to ClusterInfo |   |
 
 ### Issues (Design / RFC)
 - [Issue #18472](https://github.com/opensearch-project/OpenSearch/issues/18472): Original feature request for Writable Warm support

@@ -137,14 +137,14 @@ describe('Discover Sidebar', () => {
 - [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9154](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9154) | Refactor sidebar spec |
-| v3.0.0 | [#9285](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9285) | Table canvas tests |
-| v3.0.0 | [#9288](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9288) | Saved searches tests |
-| v3.0.0 | [#9292](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9292) | Inspect functionality tests |
-| v3.0.0 | [#9386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9386) | Top values and filter tests |
-| v3.0.0 | [#9433](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9433) | Fix flaky tests |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9154](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9154) | Refactor sidebar spec |   |
+| v3.0.0 | [#9285](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9285) | Table canvas tests |   |
+| v3.0.0 | [#9288](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9288) | Saved searches tests | [#8961](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8961) |
+| v3.0.0 | [#9292](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9292) | Inspect functionality tests | [#8955](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8955) |
+| v3.0.0 | [#9386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9386) | Top values and filter tests | [#8946](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8946) |
+| v3.0.0 | [#9433](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9433) | Fix flaky tests |   |
 
 ### Issues (Design / RFC)
 - [Issue #8946](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8946): Discover 2.0 testing initiative

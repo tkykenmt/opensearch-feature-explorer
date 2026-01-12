@@ -259,13 +259,13 @@ Forecasting uses the same security framework as anomaly detection:
 - [One Million Entities Blog](https://opensearch.org/blog/one-million-enitities-in-one-minute/): High-cardinality performance
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1489](https://github.com/opensearch-project/anomaly-detection/pull/1489) | Fix incorrect task state handling |
-| v3.1.0 | [#1493](https://github.com/opensearch-project/anomaly-detection/pull/1493) | Fix range query on non-epoch date mappings |
-| v3.1.0 | [#1496](https://github.com/opensearch-project/anomaly-detection/pull/1496) | Refine cold-start, window delay, task updates |
-| v3.1.0 | [#1479](https://github.com/opensearch-project/anomaly-detection/pull/1479) | State machine, config index, suggest/validate APIs |
-| v3.1.0 | [#1038](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1038) | Forecasting frontend |
-| v3.1.0 | [#1047](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1047) | Validation and error display improvements |
-| v3.1.0 | [#1050](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1050) | Missing data error surfacing |
-| v3.1.0 | [#1052](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1052) | Create Forecaster UI improvements |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#1489](https://github.com/opensearch-project/anomaly-detection/pull/1489) | Fix incorrect task state handling |   |
+| v3.1.0 | [#1493](https://github.com/opensearch-project/anomaly-detection/pull/1493) | Fix range query on non-epoch date mappings |   |
+| v3.1.0 | [#1496](https://github.com/opensearch-project/anomaly-detection/pull/1496) | Refine cold-start, window delay, task updates |   |
+| v3.1.0 | [#1479](https://github.com/opensearch-project/anomaly-detection/pull/1479) | State machine, config index, suggest/validate APIs |   |
+| v3.1.0 | [#1038](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1038) | Forecasting frontend |   |
+| v3.1.0 | [#1047](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1047) | Validation and error display improvements |   |
+| v3.1.0 | [#1050](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1050) | Missing data error surfacing |   |
+| v3.1.0 | [#1052](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1052) | Create Forecaster UI improvements |   |

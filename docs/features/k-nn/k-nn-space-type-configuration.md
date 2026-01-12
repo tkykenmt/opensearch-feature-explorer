@@ -161,9 +161,9 @@ POST _plugins/_knn/models/my-model/_train
 - [k-NN Index](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Index configuration guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as a top level parameter while creating vector field |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as a top level parameter while creating vector field |   |
 
 ### Issues (Design / RFC)
 - [Issue #1949](https://github.com/opensearch-project/k-NN/issues/1949): RFC - Disk-based Mode Design

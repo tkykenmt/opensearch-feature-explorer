@@ -62,7 +62,7 @@ No additional configuration is required. The fixes are applied at the source cod
 - [OpenSearch Dashboards PR #5338](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5338): Replace `node-sass` with `sass-embedded`
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#426](https://github.com/opensearch-project/dashboards-search-relevance/pull/426) | Fix sass division warning |
-| v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#426](https://github.com/opensearch-project/dashboards-search-relevance/pull/426) | Fix sass division warning |   |
+| v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |   |

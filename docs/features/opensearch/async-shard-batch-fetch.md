@@ -121,13 +121,13 @@ cluster.allocator.existing_shards_allocator.batch_enabled: false
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18139](https://github.com/opensearch-project/OpenSearch/pull/18139) | Enabled Async Shard Batch Fetch by default |
-| v2.18.0 | [#15976](https://github.com/opensearch-project/OpenSearch/pull/15976) | Added OTel metrics for async shard fetch |
-| v2.14.0 | [#12440](https://github.com/opensearch-project/OpenSearch/pull/12440) | Batch allocator timeout settings |
-| v2.14.0 | [#12010](https://github.com/opensearch-project/OpenSearch/pull/12010) | Batch mode implementation |
-| v2.9.0 | [#8960](https://github.com/opensearch-project/OpenSearch/pull/8960) | Initial batch fetch transport actions |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18139](https://github.com/opensearch-project/OpenSearch/pull/18139) | Enabled Async Shard Batch Fetch by default | [#17713](https://github.com/opensearch-project/OpenSearch/issues/17713) |
+| v2.18.0 | [#15976](https://github.com/opensearch-project/OpenSearch/pull/15976) | Added OTel metrics for async shard fetch |   |
+| v2.14.0 | [#12440](https://github.com/opensearch-project/OpenSearch/pull/12440) | Batch allocator timeout settings |   |
+| v2.14.0 | [#12010](https://github.com/opensearch-project/OpenSearch/pull/12010) | Batch mode implementation |   |
+| v2.9.0 | [#8960](https://github.com/opensearch-project/OpenSearch/pull/8960) | Initial batch fetch transport actions |   |
 
 ### Issues (Design / RFC)
 - [Issue #8098](https://github.com/opensearch-project/OpenSearch/issues/8098): META - Cluster Manager Async Shard Fetch Revamp

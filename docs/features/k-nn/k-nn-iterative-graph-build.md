@@ -140,9 +140,9 @@ flowchart TD
 - [FAISS Documentation](https://github.com/facebookresearch/faiss/wiki): FAISS library documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1950](https://github.com/opensearch-project/k-NN/pull/1950) | Integrates FAISS iterative builds with NativeEngines990KnnVectorsFormat |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#1950](https://github.com/opensearch-project/k-NN/pull/1950) | Integrates FAISS iterative builds with NativeEngines990KnnVectorsFormat |   |
 
 ### Issues (Design / RFC)
 - [Issue #1853](https://github.com/opensearch-project/k-NN/issues/1853): RFC - Integrating KNNVectorsFormat in Native Vector Search Engine

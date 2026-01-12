@@ -182,33 +182,33 @@ opensearch_security.multitenancy.enabled: false
 - [v2.18 Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): v2.18 workspace documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10861](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10861) | Remove restriction that workspace cannot be created without datasource |
-| v3.3.0 | [#9781](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9781) | Add batch delete method for workspaces, fix deletion error |
-| v3.0.0 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |
-| v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors |
-| v3.0.0 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |
-| v2.18.0 | [#8500](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8500) | Workspace-level UI settings and hide non-global settings |
-| v2.18.0 | [#8594](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8594) | Add workspace collaborators page |
-| v2.18.0 | [#8486](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8486) | Add WorkspaceCollaboratorTypesService and AddCollaboratorsModal |
-| v2.18.0 | [#8557](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8557) | Add ACL auditor |
-| v2.18.0 | [#8538](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8538) | Add global search bar into left nav |
-| v2.18.0 | [#8013](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8013) | Integrate workspace with data connections frontend |
-| v2.18.0 | [#8200](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8200) | Update workspace server for data connection type |
-| v2.18.0 | [#8501](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8501) | Add collaborator table to workspace detail page |
-| v2.18.0 | [#8520](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8520) | Remove collaborators in workspace creation page |
-| v2.18.0 | [#8461](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8461) | Require at least one data source in workspace creation |
-| v2.18.0 | [#8435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8435) | Remove What's New card in workspace overview |
-| v2.18.0 | [#8445](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8445) | Fix use case hidden features not accessible |
-| v2.18.0 | [#8524](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8524) | Fix Analytics/Essential use case overview crash |
-| v2.18.0 | [#8541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8541) | Fix workspace selector jump on hover/click |
-| v2.18.0 | [#8570](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8570) | Fix workspace update navigation modal issue |
-| v2.18.0 | [#8581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8581) | Disable copy all button when no saved objects |
-| v2.18.0 | [#8592](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8592) | Fix workspace selector style alignment |
-| v2.18.0 | [#8606](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8606) | Fix duplicate visualizations in dashboard |
-| v2.18.0 | [#8648](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8648) | Fix assets page crash after permission revocation |
-| v2.18.0 | [#8649](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8649) | Finetune search bar and workspace selector style |
-| v2.18.0 | [#8675](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8675) | Fix non-workspace admin defaultIndex update |
-| v2.18.0 | [#8718](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8718) | Fix index pattern issues |
-| v2.18.0 | [#8719](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8719) | Generate short URL with workspace info |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10861](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10861) | Remove restriction that workspace cannot be created without datasource | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#9781](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9781) | Add batch delete method for workspaces, fix deletion error |   |
+| v3.0.0 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |   |
+| v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |   |
+| v2.18.0 | [#8500](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8500) | Workspace-level UI settings and hide non-global settings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8594](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8594) | Add workspace collaborators page |   |
+| v2.18.0 | [#8486](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8486) | Add WorkspaceCollaboratorTypesService and AddCollaboratorsModal |   |
+| v2.18.0 | [#8557](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8557) | Add ACL auditor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8538](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8538) | Add global search bar into left nav | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8013](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8013) | Integrate workspace with data connections frontend |   |
+| v2.18.0 | [#8200](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8200) | Update workspace server for data connection type |   |
+| v2.18.0 | [#8501](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8501) | Add collaborator table to workspace detail page |   |
+| v2.18.0 | [#8520](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8520) | Remove collaborators in workspace creation page |   |
+| v2.18.0 | [#8461](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8461) | Require at least one data source in workspace creation |   |
+| v2.18.0 | [#8435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8435) | Remove What's New card in workspace overview | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8445](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8445) | Fix use case hidden features not accessible |   |
+| v2.18.0 | [#8524](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8524) | Fix Analytics/Essential use case overview crash |   |
+| v2.18.0 | [#8541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8541) | Fix workspace selector jump on hover/click |   |
+| v2.18.0 | [#8570](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8570) | Fix workspace update navigation modal issue | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8581) | Disable copy all button when no saved objects | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8592](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8592) | Fix workspace selector style alignment |   |
+| v2.18.0 | [#8606](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8606) | Fix duplicate visualizations in dashboard | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8648](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8648) | Fix assets page crash after permission revocation | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8649](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8649) | Finetune search bar and workspace selector style | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8675](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8675) | Fix non-workspace admin defaultIndex update | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8718](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8718) | Fix index pattern issues |   |
+| v2.18.0 | [#8719](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8719) | Generate short URL with workspace info | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

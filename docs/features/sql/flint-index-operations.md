@@ -141,10 +141,10 @@ VACUUM MATERIALIZED VIEW mys3.default.http_logs_metrics
 - [Scheduled Query Acceleration](https://docs.opensearch.org/2.17/dashboards/management/scheduled-query-acceleration/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2995](https://github.com/opensearch-project/sql/pull/2995) | Delegate vacuum operation to Spark |
-| v2.14.0 | [#2557](https://github.com/opensearch-project/sql/pull/2557) | Initial vacuum implementation in SQL plugin |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2995](https://github.com/opensearch-project/sql/pull/2995) | Delegate vacuum operation to Spark |   |
+| v2.14.0 | [#2557](https://github.com/opensearch-project/sql/pull/2557) | Initial vacuum implementation in SQL plugin |   |
 
 ### Issues (Design / RFC)
 - [Issue #580](https://github.com/opensearch-project/opensearch-spark/issues/580): VACUUM should delete checkpoint data

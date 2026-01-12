@@ -153,9 +153,9 @@ python ubi_data_generator.py \
 - [Amazon ESCI Dataset](https://github.com/amazon-science/esci-data): Shopping Queries Dataset
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#102](https://github.com/opensearch-project/user-behavior-insights/pull/102) | Added search_config field for A/B TDI testing |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#102](https://github.com/opensearch-project/user-behavior-insights/pull/102) | Added search_config field for A/B TDI testing |   |
 
 ### Issues (Design / RFC)
 - [RFC: Team Draft Interleaving](https://github.com/opensearch-project/OpenSearch/issues/18383): A/B testing RFC

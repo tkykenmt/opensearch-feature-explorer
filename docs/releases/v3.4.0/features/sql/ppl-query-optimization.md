@@ -25,12 +25,12 @@ Multiple PRs improve sort operation pushdown to OpenSearch:
 
 #### New Internal Functions
 
-| Function | PR | Description |
-|----------|-----|-------------|
-| `MAP_REMOVE` | #4511 | Remove keys from map structures |
-| `MAP_APPEND` | #4515 | Append values to map structures |
-| `MAP_CONCAT` | #4477 | Concatenate multiple maps |
-| `JSON_EXTRACT_ALL` | #4489 | Extract all values from JSON |
+| Function | PR | Description | Related Issue |
+|----------|-----|-------------|---------------|
+| `MAP_REMOVE` | #4511 | Remove keys from map structures |   |
+| `MAP_APPEND` | #4515 | Append values to map structures |   |
+| `MAP_CONCAT` | #4477 | Concatenate multiple maps |   |
+| `JSON_EXTRACT_ALL` | #4489 | Extract all values from JSON |   |
 
 #### Command Enhancements
 

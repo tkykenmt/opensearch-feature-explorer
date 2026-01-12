@@ -135,7 +135,7 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 - [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.13.0 | - | Initial CSP dynamic configuration for frame-ancestors |
-| v3.4.0 | [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.13.0 | - | Initial CSP dynamic configuration for frame-ancestors |   |
+| v3.4.0 | [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |   |

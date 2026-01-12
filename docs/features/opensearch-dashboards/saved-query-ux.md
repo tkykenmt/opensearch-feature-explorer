@@ -183,7 +183,7 @@ await savedQueryService.deleteSavedQuery(savedQuery.id);
 - [PR #8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616): Sample queries feature
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469) | Enhances the saved query UX with flyout-based interface |
-| v2.18.0 | [#8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616) | Adds sample queries and saved queries to Discover no results page |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469) | Enhances the saved query UX with flyout-based interface |   |
+| v2.18.0 | [#8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616) | Adds sample queries and saved queries to Discover no results page | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

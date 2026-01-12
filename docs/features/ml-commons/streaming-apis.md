@@ -297,10 +297,10 @@ data: {"inference_results":[{"output":[{"name":"response","dataAsMap":{"content"
 - [Blog: Introducing real-time streaming for AI models and agents](https://opensearch.org/blog/introducing-real-time-streaming-for-ai-models-and-agents-in-opensearch/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [ml-commons#4187](https://github.com/opensearch-project/ml-commons/pull/4187) | [FEATURE] Predict Stream - model prediction streaming |
-| v3.3.0 | [ml-commons#4212](https://github.com/opensearch-project/ml-commons/pull/4212) | [FEATURE] Agent Execute Stream - agent execution streaming |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [ml-commons#4187](https://github.com/opensearch-project/ml-commons/pull/4187) | [FEATURE] Predict Stream - model prediction streaming | [#3630](https://github.com/opensearch-project/ml-commons/issues/3630) |
+| v3.3.0 | [ml-commons#4212](https://github.com/opensearch-project/ml-commons/pull/4212) | [FEATURE] Agent Execute Stream - agent execution streaming | [#3630](https://github.com/opensearch-project/ml-commons/issues/3630) |
 
 ### Issues (Design / RFC)
 - [Issue ml-commons#3630](https://github.com/opensearch-project/ml-commons/issues/3630): RFC for Remote Model Inference Streaming

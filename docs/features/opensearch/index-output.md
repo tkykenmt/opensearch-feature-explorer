@@ -97,9 +97,9 @@ Numeric fields and timestamps use primitive writes internally, which now benefit
 - [ByteSizeCachingDirectory.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/store/ByteSizeCachingDirectory.java): Source code
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19432](https://github.com/opensearch-project/OpenSearch/pull/19432) | Delegate primitive write methods with ByteSizeCachingDirectory wrapped IndexOutput |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19432](https://github.com/opensearch-project/OpenSearch/pull/19432) | Delegate primitive write methods with ByteSizeCachingDirectory wrapped IndexOutput | [#19420](https://github.com/opensearch-project/OpenSearch/issues/19420) |
 
 ### Issues (Design / RFC)
 - [Issue #19420](https://github.com/opensearch-project/OpenSearch/issues/19420): Original bug report

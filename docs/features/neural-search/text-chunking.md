@@ -187,10 +187,10 @@ PUT _ingest/pipeline/char-chunking-pipeline
 - [Text Chunking Guide](https://docs.opensearch.org/latest/search-plugins/text-chunking/): Usage guide for semantic search
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1342](https://github.com/opensearch-project/neural-search/pull/1342) | Add FixedCharLengthChunker for character length-based chunking |
-| v2.18.0 | [#907](https://github.com/opensearch-project/neural-search/pull/907) | Add ignore_missing field to text chunking processors |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#1342](https://github.com/opensearch-project/neural-search/pull/1342) | Add FixedCharLengthChunker for character length-based chunking |   |
+| v2.18.0 | [#907](https://github.com/opensearch-project/neural-search/pull/907) | Add ignore_missing field to text chunking processors |   |
 
 ### Issues (Design / RFC)
 - [Issue #906](https://github.com/opensearch-project/neural-search/issues/906): Feature request for ignore_missing field

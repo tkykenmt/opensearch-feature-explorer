@@ -219,21 +219,21 @@ POST /logs/_search
 - [Blog: The power of star-tree indexes](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): Performance analysis and use cases
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations |
-| v3.3.0 | [#19209](https://github.com/opensearch-project/OpenSearch/pull/19209) | Add search & star-tree search query failure count metrics |
-| v3.2.0 | [security#5492](https://github.com/opensearch-project/security/pull/5492) | Restrict star-tree for users with DLS/FLS/Field Masking |
-| v3.2.0 | [#18707](https://github.com/opensearch-project/OpenSearch/pull/18707) | Add star-tree search statistics |
-| v3.2.0 | [#18671](https://github.com/opensearch-project/OpenSearch/pull/18671) | Add IP field search support |
-| v3.1.0 | [#18070](https://github.com/opensearch-project/OpenSearch/pull/18070) | Remove feature flag, add index-level star-tree search setting |
-| v3.1.0 | [#18048](https://github.com/opensearch-project/OpenSearch/pull/18048) | Support nested bucket aggregations |
-| v3.1.0 | [#17855](https://github.com/opensearch-project/OpenSearch/pull/17855) | Support date range queries in aggregations |
-| v3.0.0 | [#17941](https://github.com/opensearch-project/OpenSearch/pull/17941) | Boolean query support |
-| v3.0.0 | [#17275](https://github.com/opensearch-project/OpenSearch/pull/17275) | Unsigned-long query support |
-| v3.0.0 | [#17273](https://github.com/opensearch-project/OpenSearch/pull/17273) | Range aggregations |
-| v3.0.0 | [#17165](https://github.com/opensearch-project/OpenSearch/pull/17165) | Terms aggregations (keyword/numeric) |
-| v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations | [#18398](https://github.com/opensearch-project/OpenSearch/issues/18398) |
+| v3.3.0 | [#19209](https://github.com/opensearch-project/OpenSearch/pull/19209) | Add search & star-tree search query failure count metrics | [#19210](https://github.com/opensearch-project/OpenSearch/issues/19210) |
+| v3.2.0 | [security#5492](https://github.com/opensearch-project/security/pull/5492) | Restrict star-tree for users with DLS/FLS/Field Masking |   |
+| v3.2.0 | [#18707](https://github.com/opensearch-project/OpenSearch/pull/18707) | Add star-tree search statistics |   |
+| v3.2.0 | [#18671](https://github.com/opensearch-project/OpenSearch/pull/18671) | Add IP field search support | [#16547](https://github.com/opensearch-project/OpenSearch/issues/16547) |
+| v3.1.0 | [#18070](https://github.com/opensearch-project/OpenSearch/pull/18070) | Remove feature flag, add index-level star-tree search setting |   |
+| v3.1.0 | [#18048](https://github.com/opensearch-project/OpenSearch/pull/18048) | Support nested bucket aggregations | [#17274](https://github.com/opensearch-project/OpenSearch/issues/17274) |
+| v3.1.0 | [#17855](https://github.com/opensearch-project/OpenSearch/pull/17855) | Support date range queries in aggregations | [#17443](https://github.com/opensearch-project/OpenSearch/issues/17443) |
+| v3.0.0 | [#17941](https://github.com/opensearch-project/OpenSearch/pull/17941) | Boolean query support | [#17267](https://github.com/opensearch-project/OpenSearch/issues/17267) |
+| v3.0.0 | [#17275](https://github.com/opensearch-project/OpenSearch/pull/17275) | Unsigned-long query support | [#15231](https://github.com/opensearch-project/OpenSearch/issues/15231) |
+| v3.0.0 | [#17273](https://github.com/opensearch-project/OpenSearch/pull/17273) | Range aggregations | [#16553](https://github.com/opensearch-project/OpenSearch/issues/16553) |
+| v3.0.0 | [#17165](https://github.com/opensearch-project/OpenSearch/pull/17165) | Terms aggregations (keyword/numeric) | [#16551](https://github.com/opensearch-project/OpenSearch/issues/16551) |
+| v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query |   |
 
 ### Issues (Design / RFC)
 - [Issue #18398](https://github.com/opensearch-project/OpenSearch/issues/18398): Multi-terms aggregation feature request

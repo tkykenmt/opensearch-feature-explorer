@@ -109,9 +109,9 @@ import { EuiTitle, EuiButtonIcon, EuiToolTip } from '@elastic/eui';
 - [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#7741](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7741) | Revisit updated header spacing, bump OUI to 1.10.0 |
-| v2.17.0 | [#7799](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7799) | Add iconGap to TopNavControl, bump OUI to 1.11.0 |
-| v2.17.0 | [#7865](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7865) | Update OUI to 1.12 |
-| v2.17.0 | [#7637](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7637) | Introduce redesign page and application headers, update OUI to 1.9.0 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#7741](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7741) | Revisit updated header spacing, bump OUI to 1.10.0 |   |
+| v2.17.0 | [#7799](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7799) | Add iconGap to TopNavControl, bump OUI to 1.11.0 |   |
+| v2.17.0 | [#7865](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7865) | Update OUI to 1.12 |   |
+| v2.17.0 | [#7637](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7637) | Introduce redesign page and application headers, update OUI to 1.9.0 |   |

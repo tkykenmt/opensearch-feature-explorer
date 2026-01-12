@@ -127,10 +127,10 @@ node.attr.remote_store.repository.my-remote-state-repo.settings.region: us-east-
 - [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15424](https://github.com/opensearch-project/OpenSearch/pull/15424) | Fallback to remote cluster-state on term-version check mismatch |
-| v2.18.0 | [#16215](https://github.com/opensearch-project/OpenSearch/pull/16215) | Fix: Update last seen cluster state in commit phase |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15424](https://github.com/opensearch-project/OpenSearch/pull/15424) | Fallback to remote cluster-state on term-version check mismatch | [#15414](https://github.com/opensearch-project/OpenSearch/issues/15414) |
+| v2.18.0 | [#16215](https://github.com/opensearch-project/OpenSearch/pull/16215) | Fix: Update last seen cluster state in commit phase |   |
 
 ### Issues (Design / RFC)
 - [Issue #15414](https://github.com/opensearch-project/OpenSearch/issues/15414): Feature request for leveraging ClusterState from Publish phase

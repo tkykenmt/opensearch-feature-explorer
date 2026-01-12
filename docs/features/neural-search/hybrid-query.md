@@ -220,39 +220,39 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - [Neural Search Tutorial](https://docs.opensearch.org/3.1/tutorials/vector-search/neural-search-tutorial/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix: Reversed order of values in nested list with embedding processor |
-| v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Enable mocking of final classes and static functions |
-| v3.3.0 | [#1584](https://github.com/opensearch-project/neural-search/pull/1584) | Add CI action to clean up disk and apply to BWC |
-| v3.2.0 | [#1431](https://github.com/opensearch-project/neural-search/pull/1431) | Add upper bound parameter for min-max normalization technique |
-| v3.2.0 | [#1447](https://github.com/opensearch-project/neural-search/pull/1447) | Enable inner hits within collapse parameter for hybrid query |
-| v3.2.0 | [#1471](https://github.com/opensearch-project/neural-search/pull/1471) | Add setting for number of documents stored by HybridCollapsingTopDocsCollector |
-| v3.2.0 | [#1414](https://github.com/opensearch-project/neural-search/pull/1414) | Fix the HybridQueryDocIdStream to properly handle upTo value |
-| v3.1.0 | [#1345](https://github.com/opensearch-project/neural-search/pull/1345) | Add collapse functionality to hybrid query |
-| v3.1.0 | [#1289](https://github.com/opensearch-project/neural-search/pull/1289) | Custom bulk scorer for hybrid query (2-3x performance) |
-| v3.1.0 | [#1322](https://github.com/opensearch-project/neural-search/pull/1322) | Support custom weights in RRF normalization processor |
-| v3.1.0 | [#1277](https://github.com/opensearch-project/neural-search/pull/1277) | Fix: Score value as null for single shard sorting |
-| v3.1.0 | [#1291](https://github.com/opensearch-project/neural-search/pull/1291) | Fix: Return bad request for invalid stat parameters |
-| v3.1.0 | [#1305](https://github.com/opensearch-project/neural-search/pull/1305) | Fix: Add validation for nested hybrid query |
-| v3.1.0 | [#1357](https://github.com/opensearch-project/neural-search/pull/1357) | Fix: Use stack for semantic field collection |
-| v3.1.0 | [#1373](https://github.com/opensearch-project/neural-search/pull/1373) | Fix: Filter stats based on cluster version |
-| v3.1.0 | [#1393](https://github.com/opensearch-project/neural-search/pull/1393) | Fix: Radial search serialization |
-| v3.1.0 | [#1396](https://github.com/opensearch-project/neural-search/pull/1396) | Fix: Neural query with semantic field |
-| v3.0.0 | [#1224](https://github.com/opensearch-project/neural-search/pull/1224) | Add Z Score normalization technique |
-| v3.0.0 | [#1195](https://github.com/opensearch-project/neural-search/pull/1195) | Lower bounds for min-max normalization |
-| v3.0.0 | [#1206](https://github.com/opensearch-project/neural-search/pull/1206) | Filter support for HybridQueryBuilder and NeuralQueryBuilder |
-| v3.0.0 | [#1253](https://github.com/opensearch-project/neural-search/pull/1253) | Inner hits support with hybrid query |
-| v3.0.0 | [#1256](https://github.com/opensearch-project/neural-search/pull/1256) | Add stats API |
-| v3.0.0 | [#1193](https://github.com/opensearch-project/neural-search/pull/1193) | Support semantic sentence highlighter |
-| v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Analyzer-based neural sparse query |
-| v3.0.0 | [#1191](https://github.com/opensearch-project/neural-search/pull/1191) | Optimize embedding generation in Text Embedding Processor |
-| v3.0.0 | [#1246](https://github.com/opensearch-project/neural-search/pull/1246) | Optimize embedding generation in Sparse Encoding Processor |
-| v3.0.0 | [#1249](https://github.com/opensearch-project/neural-search/pull/1249) | Optimize embedding generation in Text/Image Embedding Processor |
-| v2.18.0 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query |
-| v2.17.0 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removed misleading pagination code, added clear error |
-| v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results |
-| v2.11.0 | - | Initial implementation of hybrid search |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix: Reversed order of values in nested list with embedding processor | [#1569](https://github.com/opensearch-project/neural-search/issues/1569) |
+| v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Enable mocking of final classes and static functions |   |
+| v3.3.0 | [#1584](https://github.com/opensearch-project/neural-search/pull/1584) | Add CI action to clean up disk and apply to BWC | [#1583](https://github.com/opensearch-project/neural-search/issues/1583) |
+| v3.2.0 | [#1431](https://github.com/opensearch-project/neural-search/pull/1431) | Add upper bound parameter for min-max normalization technique | [#1210](https://github.com/opensearch-project/neural-search/issues/1210) |
+| v3.2.0 | [#1447](https://github.com/opensearch-project/neural-search/pull/1447) | Enable inner hits within collapse parameter for hybrid query |   |
+| v3.2.0 | [#1471](https://github.com/opensearch-project/neural-search/pull/1471) | Add setting for number of documents stored by HybridCollapsingTopDocsCollector | [#1381](https://github.com/opensearch-project/neural-search/issues/1381) |
+| v3.2.0 | [#1414](https://github.com/opensearch-project/neural-search/pull/1414) | Fix the HybridQueryDocIdStream to properly handle upTo value | [#1344](https://github.com/opensearch-project/neural-search/issues/1344) |
+| v3.1.0 | [#1345](https://github.com/opensearch-project/neural-search/pull/1345) | Add collapse functionality to hybrid query |   |
+| v3.1.0 | [#1289](https://github.com/opensearch-project/neural-search/pull/1289) | Custom bulk scorer for hybrid query (2-3x performance) |   |
+| v3.1.0 | [#1322](https://github.com/opensearch-project/neural-search/pull/1322) | Support custom weights in RRF normalization processor |   |
+| v3.1.0 | [#1277](https://github.com/opensearch-project/neural-search/pull/1277) | Fix: Score value as null for single shard sorting | [#1274](https://github.com/opensearch-project/neural-search/issues/1274) |
+| v3.1.0 | [#1291](https://github.com/opensearch-project/neural-search/pull/1291) | Fix: Return bad request for invalid stat parameters |   |
+| v3.1.0 | [#1305](https://github.com/opensearch-project/neural-search/pull/1305) | Fix: Add validation for nested hybrid query | [#1108](https://github.com/opensearch-project/neural-search/issues/1108) |
+| v3.1.0 | [#1357](https://github.com/opensearch-project/neural-search/pull/1357) | Fix: Use stack for semantic field collection |   |
+| v3.1.0 | [#1373](https://github.com/opensearch-project/neural-search/pull/1373) | Fix: Filter stats based on cluster version | [#1368](https://github.com/opensearch-project/neural-search/issues/1368) |
+| v3.1.0 | [#1393](https://github.com/opensearch-project/neural-search/pull/1393) | Fix: Radial search serialization | [#1392](https://github.com/opensearch-project/neural-search/issues/1392) |
+| v3.1.0 | [#1396](https://github.com/opensearch-project/neural-search/pull/1396) | Fix: Neural query with semantic field |   |
+| v3.0.0 | [#1224](https://github.com/opensearch-project/neural-search/pull/1224) | Add Z Score normalization technique | [#376](https://github.com/opensearch-project/neural-search/issues/376) |
+| v3.0.0 | [#1195](https://github.com/opensearch-project/neural-search/pull/1195) | Lower bounds for min-max normalization |   |
+| v3.0.0 | [#1206](https://github.com/opensearch-project/neural-search/pull/1206) | Filter support for HybridQueryBuilder and NeuralQueryBuilder | [#1206](https://github.com/opensearch-project/neural-search/issues/1206) |
+| v3.0.0 | [#1253](https://github.com/opensearch-project/neural-search/pull/1253) | Inner hits support with hybrid query |   |
+| v3.0.0 | [#1256](https://github.com/opensearch-project/neural-search/pull/1256) | Add stats API | [#1196](https://github.com/opensearch-project/neural-search/issues/1196) |
+| v3.0.0 | [#1193](https://github.com/opensearch-project/neural-search/pull/1193) | Support semantic sentence highlighter |   |
+| v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Analyzer-based neural sparse query |   |
+| v3.0.0 | [#1191](https://github.com/opensearch-project/neural-search/pull/1191) | Optimize embedding generation in Text Embedding Processor |   |
+| v3.0.0 | [#1246](https://github.com/opensearch-project/neural-search/pull/1246) | Optimize embedding generation in Sparse Encoding Processor |   |
+| v3.0.0 | [#1249](https://github.com/opensearch-project/neural-search/pull/1249) | Optimize embedding generation in Text/Image Embedding Processor | [#1138](https://github.com/opensearch-project/neural-search/issues/1138) |
+| v2.18.0 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query |   |
+| v2.17.0 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removed misleading pagination code, added clear error |   |
+| v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results | [#875](https://github.com/opensearch-project/neural-search/issues/875) |
+| v2.11.0 | - | Initial implementation of hybrid search |   |
 
 ### Issues (Design / RFC)
 - [Issue #665](https://github.com/opensearch-project/neural-search/issues/665): Hybrid search and collapse compatibility request

@@ -136,9 +136,9 @@ To reduce memory pressure during large searches:
 - [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19066](https://github.com/opensearch-project/OpenSearch/pull/19066) | Add circuit breaking logic for shard level results |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19066](https://github.com/opensearch-project/OpenSearch/pull/19066) | Add circuit breaking logic for shard level results | [#18999](https://github.com/opensearch-project/OpenSearch/issues/18999) |
 
 ### Issues (Design / RFC)
 - [Issue #18999](https://github.com/opensearch-project/OpenSearch/issues/18999): Original bug report

@@ -147,10 +147,10 @@ PUT /my-index/_settings
 - [Segment replication documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18479](https://github.com/opensearch-project/OpenSearch/pull/18479) | Start in "clusterless" mode if a clusterless ClusterPlugin is loaded |
-| v3.2.0 | [#18857](https://github.com/opensearch-project/OpenSearch/pull/18857) | Add support for custom remote store segment path prefix |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18479](https://github.com/opensearch-project/OpenSearch/pull/18479) | Start in "clusterless" mode if a clusterless ClusterPlugin is loaded |   |
+| v3.2.0 | [#18857](https://github.com/opensearch-project/OpenSearch/pull/18857) | Add support for custom remote store segment path prefix | [#18750](https://github.com/opensearch-project/OpenSearch/issues/18750) |
 
 ### Issues (Design / RFC)
 - [Issue #17957](https://github.com/opensearch-project/OpenSearch/issues/17957): RFC - Cloud-native OpenSearch

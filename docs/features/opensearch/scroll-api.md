@@ -148,10 +148,10 @@ GET /my-index/_search?scroll=10m
 - [Paginate Results](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) | Cache `StoredFieldsReader` for scroll query optimization |
-| v3.3.0 | [#19031](https://github.com/opensearch-project/OpenSearch/pull/19031) | Improved error handling for invalid scroll IDs |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) | Cache `StoredFieldsReader` for scroll query optimization |   |
+| v3.3.0 | [#19031](https://github.com/opensearch-project/OpenSearch/pull/19031) | Improved error handling for invalid scroll IDs |   |
 
 ### Issues (Design / RFC)
 - [Issue #16262](https://github.com/opensearch-project/OpenSearch/issues/16262): Performance degradation with Scroll API in versions >= 2.6

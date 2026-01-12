@@ -131,11 +131,11 @@ PUT /_cluster/settings
 - [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18649](https://github.com/opensearch-project/OpenSearch/pull/18649) | Make node duress values cacheable for NodeDuressTrackers |
-| v3.0.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API |
-| v2.18.0 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18649](https://github.com/opensearch-project/OpenSearch/pull/18649) | Make node duress values cacheable for NodeDuressTrackers | [#18641](https://github.com/opensearch-project/OpenSearch/issues/18641) |
+| v3.0.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API |   |
+| v2.18.0 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings |   |
 
 ### Issues (Design / RFC)
 - [Issue #18641](https://github.com/opensearch-project/OpenSearch/issues/18641): Latency regression due to node duress trackers

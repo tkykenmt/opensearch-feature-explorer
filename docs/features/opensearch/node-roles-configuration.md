@@ -157,12 +157,12 @@ coordinating-1    -         -
 - [CAT Nodes API](https://docs.opensearch.org/3.0/api-reference/cat/cat-nodes/): View node information
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#10625](https://github.com/opensearch-project/OpenSearch/pull/10625) | Fix empty array parsing from environment variables |
-| v2.4.0 | [#4689](https://github.com/opensearch-project/OpenSearch/pull/4689) | Add 'search' node role |
-| v2.3.0 | [#3436](https://github.com/opensearch-project/OpenSearch/pull/3436) | Support dynamic node roles |
-| v2.7.0 | [#6331](https://github.com/opensearch-project/OpenSearch/pull/6331) | Fix deprecated master role attachment |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#10625](https://github.com/opensearch-project/OpenSearch/pull/10625) | Fix empty array parsing from environment variables | [#3412](https://github.com/opensearch-project/OpenSearch/issues/3412) |
+| v2.4.0 | [#4689](https://github.com/opensearch-project/OpenSearch/pull/4689) | Add 'search' node role | [#4652](https://github.com/opensearch-project/OpenSearch/issues/4652) |
+| v2.3.0 | [#3436](https://github.com/opensearch-project/OpenSearch/pull/3436) | Support dynamic node roles |   |
+| v2.7.0 | [#6331](https://github.com/opensearch-project/OpenSearch/pull/6331) | Fix deprecated master role attachment | [#6103](https://github.com/opensearch-project/OpenSearch/issues/6103) |
 
 ### Issues (Design / RFC)
 - [Issue #3412](https://github.com/opensearch-project/OpenSearch/issues/3412): Bug report for empty node.roles environment variable

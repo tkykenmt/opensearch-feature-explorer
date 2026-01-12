@@ -177,9 +177,9 @@ datasetManagement.aliasedAsIndexPattern: false
 - [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#10355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10355) | Update for datasets, redirection, and accordion timeline |
-| v3.3.0 | [#10379](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10379) | Allow apps to configure available types in the dataset explorer |
-| v3.3.0 | [#10491](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10491) | Introduce dataset SignalType |
-| v3.3.0 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Dataset type and management |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#10355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10355) | Update for datasets, redirection, and accordion timeline | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10379](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10379) | Allow apps to configure available types in the dataset explorer |   |
+| v3.3.0 | [#10491](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10491) | Introduce dataset SignalType | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Dataset type and management | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

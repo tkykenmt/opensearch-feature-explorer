@@ -204,84 +204,84 @@ GET /_insights/live_queries?sort=latency&size=5
 - [GitHub Repository](https://github.com/opensearch-project/query-insights)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#426](https://github.com/opensearch-project/query-insights/pull/426) | Change matchQuery to termQuery for query ID matching |
-| v3.3.0 | [#420](https://github.com/opensearch-project/query-insights/pull/420) | Filter out shard-level tasks from live queries |
-| v3.3.0 | [#413](https://github.com/opensearch-project/query-insights/pull/413) | Fix time range validation (from < to) |
-| v3.3.0 | [#414](https://github.com/opensearch-project/query-insights/pull/414) | Fix positive size parameter validation |
-| v3.3.0 | [#430](https://github.com/opensearch-project/query-insights/pull/430) | Fix flaky test by clearing stale queue records |
-| v3.3.0 | [#435](https://github.com/opensearch-project/query-insights/pull/435) | Add unit tests for queue clearing |
-| v3.3.0 | [#366](https://github.com/opensearch-project/query-insights-dashboards/pull/366) | Fix Group By selector on Configuration page |
-| v3.3.0 | [#367](https://github.com/opensearch-project/query-insights-dashboards/pull/367) | Fix query ID matching in retrieveQueryById |
-| v3.3.0 | [#338](https://github.com/opensearch-project/query-insights-dashboards/pull/338) | Fix filter and date picker bugs |
-| v3.3.0 | [#329](https://github.com/opensearch-project/query-insights-dashboards/pull/329) | Cypress workflow fix |
-| v3.3.0 | [#327](https://github.com/opensearch-project/query-insights-dashboards/pull/327) | Update delete-backport-branch workflow |
-| v3.2.0 | [#381](https://github.com/opensearch-project/query-insights/pull/381) | Increase reader search limit to 500 and fix sort by metric type |
-| v3.2.0 | [#392](https://github.com/opensearch-project/query-insights/pull/392) | Update Maven endpoint and bump Gradle/Java versions |
-| v3.2.0 | [#393](https://github.com/opensearch-project/query-insights/pull/393) | Fix codecov configuration |
-| v3.2.0 | [#394](https://github.com/opensearch-project/query-insights/pull/394) | Migrate to codecov v3 |
-| v3.2.0 | [#395](https://github.com/opensearch-project/query-insights/pull/395) | Add release notes for 3.2.0 |
-| v3.2.0 | [#217](https://github.com/opensearch-project/query-insights-dashboards/pull/217) | MDS support for Inflight Queries |
-| v3.2.0 | [#304](https://github.com/opensearch-project/query-insights-dashboards/pull/304) | Updated default auto-refresh interval to 30s |
-| v3.2.0 | [#243](https://github.com/opensearch-project/query-insights-dashboards/pull/243) | react-vis implementation for Live Queries Dashboards |
-| v3.2.0 | [#247](https://github.com/opensearch-project/query-insights-dashboards/pull/247) | Revert renderApp to use default export |
-| v3.2.0 | [#258](https://github.com/opensearch-project/query-insights-dashboards/pull/258) | Fix for UI bugs (number formatting, validation, refresh button) |
-| v3.2.0 | [#267](https://github.com/opensearch-project/query-insights-dashboards/pull/267) | Search bar fix for Top N Queries page |
-| v3.2.0 | [#285](https://github.com/opensearch-project/query-insights-dashboards/pull/285) | Fix top queries table sorting with correct id |
-| v3.2.0 | [#306](https://github.com/opensearch-project/query-insights-dashboards/pull/306) | Removed search bar Cypress tests |
-| v3.1.0 | [#326](https://github.com/opensearch-project/query-insights/pull/326) | Add metric labels to historical data |
-| v3.1.0 | [#336](https://github.com/opensearch-project/query-insights/pull/336) | Consolidate grouping settings |
-| v3.1.0 | [#308](https://github.com/opensearch-project/query-insights/pull/308) | Add setting to exclude certain indices |
-| v3.1.0 | [#344](https://github.com/opensearch-project/query-insights/pull/344) | Asynchronous search operations in reader |
-| v3.1.0 | [#355](https://github.com/opensearch-project/query-insights/pull/355) | Added isCancelled field in Live Queries API |
-| v3.1.0 | [#199](https://github.com/opensearch-project/query-insights-dashboards/pull/199) | New Live Queries Dashboard |
-| v3.1.0 | [#155](https://github.com/opensearch-project/query-insights-dashboards/pull/155) | New Workload Management Dashboard |
-| v3.1.0 | [#179](https://github.com/opensearch-project/query-insights-dashboards/pull/179) | Remove duplicate requests on overview page |
-| v3.1.0 | [#209](https://github.com/opensearch-project/query-insights-dashboards/pull/209) | Add unit tests for WLM dashboard |
-| v3.1.0 | [#365](https://github.com/opensearch-project/query-insights/pull/365) | Fix node-level top queries request parameter serialization |
-| v3.1.0 | [#210](https://github.com/opensearch-project/query-insights-dashboards/pull/210) | Fix live query status field location in response |
-| v3.1.0 | [#206](https://github.com/opensearch-project/query-insights-dashboards/pull/206) | Fix failing Cypress tests |
-| v3.1.0 | [#205](https://github.com/opensearch-project/query-insights-dashboards/pull/205) | Fix CI version mismatch |
-| v3.4.0 | [#407](https://github.com/opensearch-project/query-insights-dashboards/pull/407) | Add version-aware settings support |
-| v3.4.0 | [#403](https://github.com/opensearch-project/query-insights-dashboards/pull/403) | MDS support for live queries page |
-| v3.4.0 | [#481](https://github.com/opensearch-project/query-insights/pull/481) | Exclude internal `top_queries-*` indices from tracking |
-| v3.4.0 | [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node, healthstats integration tests and fix flaky tests |
-| v3.4.0 | [#411](https://github.com/opensearch-project/query-insights-dashboards/pull/411) | Fix MDS support in server/wlmRoutes |
-| v3.4.0 | [#396](https://github.com/opensearch-project/query-insights-dashboards/pull/396) | Remove "Open in search comparison" button |
-| v3.4.0 | [#435](https://github.com/opensearch-project/query-insights-dashboards/pull/435) | Fix Jest test failures due to Monaco editor imports |
-| v3.4.0 | [#421](https://github.com/opensearch-project/query-insights-dashboards/pull/421) | Fix MDS Selector for Workload Management Dashboards |
-| v3.1.0 | [#364](https://github.com/opensearch-project/query-insights/pull/364) | Fix flaky integration tests |
-| v3.0.0 | [#295](https://github.com/opensearch-project/query-insights/pull/295) | Inflight Queries API |
-| v3.0.0 | [#254](https://github.com/opensearch-project/query-insights/pull/254) | Default index template for local index |
-| v3.0.0 | [#300](https://github.com/opensearch-project/query-insights/pull/300) | Top queries API verbose param |
-| v3.0.0 | [#298](https://github.com/opensearch-project/query-insights/pull/298) | Skip profile queries |
-| v3.0.0 | [#266](https://github.com/opensearch-project/query-insights/pull/266) | Strict hash check on top queries indices |
-| v3.0.0 | [#234](https://github.com/opensearch-project/query-insights/pull/234) | Fix default exporter settings |
-| v3.0.0 | [#257](https://github.com/opensearch-project/query-insights/pull/257) | Change local index replica count to 0 |
-| v3.0.0 | [#262](https://github.com/opensearch-project/query-insights/pull/262) | Use ClusterStateRequest with index pattern for expired index deletion |
-| v3.0.0 | [#281](https://github.com/opensearch-project/query-insights/pull/281) | Reduce MAX_TOP_N_INDEX_READ_SIZE to 50, sort by desc latency |
-| v3.0.0 | [#267](https://github.com/opensearch-project/query-insights/pull/267) | Integration tests for exporter and reader |
-| v2.18.0 | [#84](https://github.com/opensearch-project/query-insights/pull/84) | Support time range parameter for historical top N queries |
-| v2.18.0 | [#111](https://github.com/opensearch-project/query-insights/pull/111) | Refactor query shape field data maps with WithFieldName interface |
-| v2.18.0 | [#120](https://github.com/opensearch-project/query-insights/pull/120) | Add data models for health stats API |
-| v2.18.0 | [#122](https://github.com/opensearch-project/query-insights/pull/122) | Create health_stats API for query insights |
-| v2.18.0 | [#124](https://github.com/opensearch-project/query-insights/pull/124) | Add OpenTelemetry counters for error metrics |
-| v2.18.0 | [#135](https://github.com/opensearch-project/query-insights/pull/135) | Add grouping settings for query field name and type |
-| v2.18.0 | [#140](https://github.com/opensearch-project/query-insights/pull/140) | Add field type to query shape |
-| v2.18.0 | [#142](https://github.com/opensearch-project/query-insights/pull/142) | Add cache eviction and listener for invalidating index field type mappings |
-| v2.18.0 | [#8627](https://github.com/opensearch-project/documentation-website/pull/8627) | Documentation for health_stats API and error metrics |
-| v2.17.0 | [#74](https://github.com/opensearch-project/query-insights/pull/74) | Fix listener startup when query metrics enabled |
-| v2.17.0 | [#64](https://github.com/opensearch-project/query-insights/pull/64) | Add query shape hash method |
-| v2.17.0 | [#71](https://github.com/opensearch-project/query-insights/pull/71) | Add more integration tests |
-| v2.17.0 | [#85](https://github.com/opensearch-project/query-insights/pull/85) | Query grouping integration tests |
-| v2.17.0 | [#89](https://github.com/opensearch-project/query-insights/pull/89) | Additional grouping ITs and refactor |
-| v2.17.0 | [#58](https://github.com/opensearch-project/query-insights/pull/58) | Fix CVE-2023-2976 for checkstyle |
-| v2.17.0 | [#59](https://github.com/opensearch-project/query-insights/pull/59) | Fix security based integration tests |
-| v2.17.0 | [#8139](https://github.com/opensearch-project/documentation-website/pull/8139) | Update GET top N api documentation |
-| v2.17.0 | [#51](https://github.com/opensearch-project/query-insights/pull/51) | Add code hygiene checks (Spotless, Checkstyle) |
-| v2.17.0 | [#90](https://github.com/opensearch-project/query-insights/pull/90) | Fix snapshot publishing configuration |
-| v2.12.0 | - | Initial release with Top N queries |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#426](https://github.com/opensearch-project/query-insights/pull/426) | Change matchQuery to termQuery for query ID matching | [#425](https://github.com/opensearch-project/query-insights/issues/425) |
+| v3.3.0 | [#420](https://github.com/opensearch-project/query-insights/pull/420) | Filter out shard-level tasks from live queries |   |
+| v3.3.0 | [#413](https://github.com/opensearch-project/query-insights/pull/413) | Fix time range validation (from < to) |   |
+| v3.3.0 | [#414](https://github.com/opensearch-project/query-insights/pull/414) | Fix positive size parameter validation |   |
+| v3.3.0 | [#430](https://github.com/opensearch-project/query-insights/pull/430) | Fix flaky test by clearing stale queue records |   |
+| v3.3.0 | [#435](https://github.com/opensearch-project/query-insights/pull/435) | Add unit tests for queue clearing |   |
+| v3.3.0 | [#366](https://github.com/opensearch-project/query-insights-dashboards/pull/366) | Fix Group By selector on Configuration page |   |
+| v3.3.0 | [#367](https://github.com/opensearch-project/query-insights-dashboards/pull/367) | Fix query ID matching in retrieveQueryById |   |
+| v3.3.0 | [#338](https://github.com/opensearch-project/query-insights-dashboards/pull/338) | Fix filter and date picker bugs |   |
+| v3.3.0 | [#329](https://github.com/opensearch-project/query-insights-dashboards/pull/329) | Cypress workflow fix |   |
+| v3.3.0 | [#327](https://github.com/opensearch-project/query-insights-dashboards/pull/327) | Update delete-backport-branch workflow |   |
+| v3.2.0 | [#381](https://github.com/opensearch-project/query-insights/pull/381) | Increase reader search limit to 500 and fix sort by metric type |   |
+| v3.2.0 | [#392](https://github.com/opensearch-project/query-insights/pull/392) | Update Maven endpoint and bump Gradle/Java versions |   |
+| v3.2.0 | [#393](https://github.com/opensearch-project/query-insights/pull/393) | Fix codecov configuration |   |
+| v3.2.0 | [#394](https://github.com/opensearch-project/query-insights/pull/394) | Migrate to codecov v3 |   |
+| v3.2.0 | [#395](https://github.com/opensearch-project/query-insights/pull/395) | Add release notes for 3.2.0 |   |
+| v3.2.0 | [#217](https://github.com/opensearch-project/query-insights-dashboards/pull/217) | MDS support for Inflight Queries |   |
+| v3.2.0 | [#304](https://github.com/opensearch-project/query-insights-dashboards/pull/304) | Updated default auto-refresh interval to 30s |   |
+| v3.2.0 | [#243](https://github.com/opensearch-project/query-insights-dashboards/pull/243) | react-vis implementation for Live Queries Dashboards |   |
+| v3.2.0 | [#247](https://github.com/opensearch-project/query-insights-dashboards/pull/247) | Revert renderApp to use default export |   |
+| v3.2.0 | [#258](https://github.com/opensearch-project/query-insights-dashboards/pull/258) | Fix for UI bugs (number formatting, validation, refresh button) |   |
+| v3.2.0 | [#267](https://github.com/opensearch-project/query-insights-dashboards/pull/267) | Search bar fix for Top N Queries page |   |
+| v3.2.0 | [#285](https://github.com/opensearch-project/query-insights-dashboards/pull/285) | Fix top queries table sorting with correct id |   |
+| v3.2.0 | [#306](https://github.com/opensearch-project/query-insights-dashboards/pull/306) | Removed search bar Cypress tests |   |
+| v3.1.0 | [#326](https://github.com/opensearch-project/query-insights/pull/326) | Add metric labels to historical data | [#301](https://github.com/opensearch-project/query-insights/issues/301) |
+| v3.1.0 | [#336](https://github.com/opensearch-project/query-insights/pull/336) | Consolidate grouping settings | [#136](https://github.com/opensearch-project/query-insights/issues/136) |
+| v3.1.0 | [#308](https://github.com/opensearch-project/query-insights/pull/308) | Add setting to exclude certain indices |   |
+| v3.1.0 | [#344](https://github.com/opensearch-project/query-insights/pull/344) | Asynchronous search operations in reader |   |
+| v3.1.0 | [#355](https://github.com/opensearch-project/query-insights/pull/355) | Added isCancelled field in Live Queries API |   |
+| v3.1.0 | [#199](https://github.com/opensearch-project/query-insights-dashboards/pull/199) | New Live Queries Dashboard |   |
+| v3.1.0 | [#155](https://github.com/opensearch-project/query-insights-dashboards/pull/155) | New Workload Management Dashboard |   |
+| v3.1.0 | [#179](https://github.com/opensearch-project/query-insights-dashboards/pull/179) | Remove duplicate requests on overview page |   |
+| v3.1.0 | [#209](https://github.com/opensearch-project/query-insights-dashboards/pull/209) | Add unit tests for WLM dashboard |   |
+| v3.1.0 | [#365](https://github.com/opensearch-project/query-insights/pull/365) | Fix node-level top queries request parameter serialization |   |
+| v3.1.0 | [#210](https://github.com/opensearch-project/query-insights-dashboards/pull/210) | Fix live query status field location in response |   |
+| v3.1.0 | [#206](https://github.com/opensearch-project/query-insights-dashboards/pull/206) | Fix failing Cypress tests |   |
+| v3.1.0 | [#205](https://github.com/opensearch-project/query-insights-dashboards/pull/205) | Fix CI version mismatch |   |
+| v3.4.0 | [#407](https://github.com/opensearch-project/query-insights-dashboards/pull/407) | Add version-aware settings support |   |
+| v3.4.0 | [#403](https://github.com/opensearch-project/query-insights-dashboards/pull/403) | MDS support for live queries page |   |
+| v3.4.0 | [#481](https://github.com/opensearch-project/query-insights/pull/481) | Exclude internal `top_queries-*` indices from tracking |   |
+| v3.4.0 | [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node, healthstats integration tests and fix flaky tests |   |
+| v3.4.0 | [#411](https://github.com/opensearch-project/query-insights-dashboards/pull/411) | Fix MDS support in server/wlmRoutes |   |
+| v3.4.0 | [#396](https://github.com/opensearch-project/query-insights-dashboards/pull/396) | Remove "Open in search comparison" button |   |
+| v3.4.0 | [#435](https://github.com/opensearch-project/query-insights-dashboards/pull/435) | Fix Jest test failures due to Monaco editor imports |   |
+| v3.4.0 | [#421](https://github.com/opensearch-project/query-insights-dashboards/pull/421) | Fix MDS Selector for Workload Management Dashboards |   |
+| v3.1.0 | [#364](https://github.com/opensearch-project/query-insights/pull/364) | Fix flaky integration tests |   |
+| v3.0.0 | [#295](https://github.com/opensearch-project/query-insights/pull/295) | Inflight Queries API |   |
+| v3.0.0 | [#254](https://github.com/opensearch-project/query-insights/pull/254) | Default index template for local index | [#248](https://github.com/opensearch-project/query-insights/issues/248) |
+| v3.0.0 | [#300](https://github.com/opensearch-project/query-insights/pull/300) | Top queries API verbose param | [#291](https://github.com/opensearch-project/query-insights/issues/291) |
+| v3.0.0 | [#298](https://github.com/opensearch-project/query-insights/pull/298) | Skip profile queries |   |
+| v3.0.0 | [#266](https://github.com/opensearch-project/query-insights/pull/266) | Strict hash check on top queries indices |   |
+| v3.0.0 | [#234](https://github.com/opensearch-project/query-insights/pull/234) | Fix default exporter settings | [#232](https://github.com/opensearch-project/query-insights/issues/232) |
+| v3.0.0 | [#257](https://github.com/opensearch-project/query-insights/pull/257) | Change local index replica count to 0 | [#256](https://github.com/opensearch-project/query-insights/issues/256) |
+| v3.0.0 | [#262](https://github.com/opensearch-project/query-insights/pull/262) | Use ClusterStateRequest with index pattern for expired index deletion | [#261](https://github.com/opensearch-project/query-insights/issues/261) |
+| v3.0.0 | [#281](https://github.com/opensearch-project/query-insights/pull/281) | Reduce MAX_TOP_N_INDEX_READ_SIZE to 50, sort by desc latency |   |
+| v3.0.0 | [#267](https://github.com/opensearch-project/query-insights/pull/267) | Integration tests for exporter and reader |   |
+| v2.18.0 | [#84](https://github.com/opensearch-project/query-insights/pull/84) | Support time range parameter for historical top N queries | [#12](https://github.com/opensearch-project/query-insights/issues/12) |
+| v2.18.0 | [#111](https://github.com/opensearch-project/query-insights/pull/111) | Refactor query shape field data maps with WithFieldName interface | [#109](https://github.com/opensearch-project/query-insights/issues/109) |
+| v2.18.0 | [#120](https://github.com/opensearch-project/query-insights/pull/120) | Add data models for health stats API |   |
+| v2.18.0 | [#122](https://github.com/opensearch-project/query-insights/pull/122) | Create health_stats API for query insights |   |
+| v2.18.0 | [#124](https://github.com/opensearch-project/query-insights/pull/124) | Add OpenTelemetry counters for error metrics |   |
+| v2.18.0 | [#135](https://github.com/opensearch-project/query-insights/pull/135) | Add grouping settings for query field name and type |   |
+| v2.18.0 | [#140](https://github.com/opensearch-project/query-insights/pull/140) | Add field type to query shape |   |
+| v2.18.0 | [#142](https://github.com/opensearch-project/query-insights/pull/142) | Add cache eviction and listener for invalidating index field type mappings |   |
+| v2.18.0 | [#8627](https://github.com/opensearch-project/documentation-website/pull/8627) | Documentation for health_stats API and error metrics | [#8343](https://github.com/opensearch-project/documentation-website/issues/8343) |
+| v2.17.0 | [#74](https://github.com/opensearch-project/query-insights/pull/74) | Fix listener startup when query metrics enabled |   |
+| v2.17.0 | [#64](https://github.com/opensearch-project/query-insights/pull/64) | Add query shape hash method |   |
+| v2.17.0 | [#71](https://github.com/opensearch-project/query-insights/pull/71) | Add more integration tests |   |
+| v2.17.0 | [#85](https://github.com/opensearch-project/query-insights/pull/85) | Query grouping integration tests |   |
+| v2.17.0 | [#89](https://github.com/opensearch-project/query-insights/pull/89) | Additional grouping ITs and refactor |   |
+| v2.17.0 | [#58](https://github.com/opensearch-project/query-insights/pull/58) | Fix CVE-2023-2976 for checkstyle | [#57](https://github.com/opensearch-project/query-insights/issues/57) |
+| v2.17.0 | [#59](https://github.com/opensearch-project/query-insights/pull/59) | Fix security based integration tests |   |
+| v2.17.0 | [#8139](https://github.com/opensearch-project/documentation-website/pull/8139) | Update GET top N api documentation | [#80](https://github.com/opensearch-project/documentation-website/issues/80) |
+| v2.17.0 | [#51](https://github.com/opensearch-project/query-insights/pull/51) | Add code hygiene checks (Spotless, Checkstyle) |   |
+| v2.17.0 | [#90](https://github.com/opensearch-project/query-insights/pull/90) | Fix snapshot publishing configuration |   |
+| v2.12.0 | - | Initial release with Top N queries |   |
 
 ### Issues (Design / RFC)
 - [Issue #9](https://github.com/opensearch-project/query-insights/issues/9): Enrich operational metrics in Query Insights

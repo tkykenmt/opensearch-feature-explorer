@@ -107,9 +107,9 @@ graph TB
 - [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | GettingStarted Rework - signal-based organization |
-| v2.18.0 | [#2205](https://github.com/opensearch-project/dashboards-observability/pull/2205) | GettingStarted Fit and Finish - UI polish |
-| v2.18.0 | [#2200](https://github.com/opensearch-project/dashboards-observability/pull/2200) | Auto trigger schema setup |
-| v2.17.0 | [#2016](https://github.com/opensearch-project/dashboards-observability/pull/2016) | Update ndjson so workflow matches patterns created |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | GettingStarted Rework - signal-based organization |   |
+| v2.18.0 | [#2205](https://github.com/opensearch-project/dashboards-observability/pull/2205) | GettingStarted Fit and Finish - UI polish |   |
+| v2.18.0 | [#2200](https://github.com/opensearch-project/dashboards-observability/pull/2200) | Auto trigger schema setup |   |
+| v2.17.0 | [#2016](https://github.com/opensearch-project/dashboards-observability/pull/2016) | Update ndjson so workflow matches patterns created |   |

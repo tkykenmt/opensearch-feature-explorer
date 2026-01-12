@@ -381,29 +381,29 @@ GET testindex/_search
 - [Blog: Scaling neural sparse search to billions of vectors](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1678](https://github.com/opensearch-project/neural-search/pull/1678) | Support nested field ingestion and query |
-| v3.4.0 | [#1655](https://github.com/opensearch-project/neural-search/pull/1655) | Fix IT failures in multi-node environments |
-| v3.4.0 | [#1674](https://github.com/opensearch-project/neural-search/pull/1674) | Handle non-specified method_parameters in queries |
-| v3.4.0 | [#1683](https://github.com/opensearch-project/neural-search/pull/1683) | Fix disk space recovery on index deletion |
-| v3.3.0 | [#1502](https://github.com/opensearch-project/neural-search/pull/1502) | Add basic classes for SEISMIC algorithm |
-| v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Clustering algorithms & field mapper |
-| v3.3.0 | [#1536](https://github.com/opensearch-project/neural-search/pull/1536) | Circuit breaker and memory stats |
-| v3.3.0 | [#1537](https://github.com/opensearch-project/neural-search/pull/1537) | Add codec |
-| v3.3.0 | [#1539](https://github.com/opensearch-project/neural-search/pull/1539) | Add query |
-| v3.3.0 | [#1553](https://github.com/opensearch-project/neural-search/pull/1553) | Ingestion interface |
-| v3.3.0 | [#1554](https://github.com/opensearch-project/neural-search/pull/1554) | Index thread quantity setting API |
-| v3.3.0 | [#1555](https://github.com/opensearch-project/neural-search/pull/1555) | Add IT for memory stats |
-| v3.3.0 | [#1557](https://github.com/opensearch-project/neural-search/pull/1557) | Query interface |
-| v3.3.0 | [#1559](https://github.com/opensearch-project/neural-search/pull/1559) | WarmUp and clearCache IT |
-| v3.3.0 | [#1562](https://github.com/opensearch-project/neural-search/pull/1562) | Remaining integration tests |
-| v3.3.0 | [#1564](https://github.com/opensearch-project/neural-search/pull/1564) | Delete/update doc ITs |
-| v3.3.0 | [#1565](https://github.com/opensearch-project/neural-search/pull/1565) | Change default circuit breaker limit to 10% |
-| v3.3.0 | [#1566](https://github.com/opensearch-project/neural-search/pull/1566) | Fix flakey warm up IT |
-| v3.3.0 | [#1577](https://github.com/opensearch-project/neural-search/pull/1577) | Add stats for SEISMIC query |
-| v3.3.0 | [#1580](https://github.com/opensearch-project/neural-search/pull/1580) | Dynamic max float value for byte quantization |
-| v3.3.0 | [#1581](https://github.com/opensearch-project/neural-search/pull/1581) | Change path of index_thread_qty API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1678](https://github.com/opensearch-project/neural-search/pull/1678) | Support nested field ingestion and query | [#1666](https://github.com/opensearch-project/neural-search/issues/1666) |
+| v3.4.0 | [#1655](https://github.com/opensearch-project/neural-search/pull/1655) | Fix IT failures in multi-node environments | [#1653](https://github.com/opensearch-project/neural-search/issues/1653) |
+| v3.4.0 | [#1674](https://github.com/opensearch-project/neural-search/pull/1674) | Handle non-specified method_parameters in queries | [#1673](https://github.com/opensearch-project/neural-search/issues/1673) |
+| v3.4.0 | [#1683](https://github.com/opensearch-project/neural-search/pull/1683) | Fix disk space recovery on index deletion |   |
+| v3.3.0 | [#1502](https://github.com/opensearch-project/neural-search/pull/1502) | Add basic classes for SEISMIC algorithm |   |
+| v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Clustering algorithms & field mapper |   |
+| v3.3.0 | [#1536](https://github.com/opensearch-project/neural-search/pull/1536) | Circuit breaker and memory stats |   |
+| v3.3.0 | [#1537](https://github.com/opensearch-project/neural-search/pull/1537) | Add codec |   |
+| v3.3.0 | [#1539](https://github.com/opensearch-project/neural-search/pull/1539) | Add query |   |
+| v3.3.0 | [#1553](https://github.com/opensearch-project/neural-search/pull/1553) | Ingestion interface |   |
+| v3.3.0 | [#1554](https://github.com/opensearch-project/neural-search/pull/1554) | Index thread quantity setting API |   |
+| v3.3.0 | [#1555](https://github.com/opensearch-project/neural-search/pull/1555) | Add IT for memory stats |   |
+| v3.3.0 | [#1557](https://github.com/opensearch-project/neural-search/pull/1557) | Query interface |   |
+| v3.3.0 | [#1559](https://github.com/opensearch-project/neural-search/pull/1559) | WarmUp and clearCache IT |   |
+| v3.3.0 | [#1562](https://github.com/opensearch-project/neural-search/pull/1562) | Remaining integration tests |   |
+| v3.3.0 | [#1564](https://github.com/opensearch-project/neural-search/pull/1564) | Delete/update doc ITs |   |
+| v3.3.0 | [#1565](https://github.com/opensearch-project/neural-search/pull/1565) | Change default circuit breaker limit to 10% |   |
+| v3.3.0 | [#1566](https://github.com/opensearch-project/neural-search/pull/1566) | Fix flakey warm up IT |   |
+| v3.3.0 | [#1577](https://github.com/opensearch-project/neural-search/pull/1577) | Add stats for SEISMIC query |   |
+| v3.3.0 | [#1580](https://github.com/opensearch-project/neural-search/pull/1580) | Dynamic max float value for byte quantization |   |
+| v3.3.0 | [#1581](https://github.com/opensearch-project/neural-search/pull/1581) | Change path of index_thread_qty API |   |
 
 ### Issues (Design / RFC)
 - [RFC #1335](https://github.com/opensearch-project/neural-search/issues/1335): Sparse ANN Algorithm: Seismic

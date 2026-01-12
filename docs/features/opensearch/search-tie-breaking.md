@@ -140,9 +140,9 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder()
 - [Paginate Results](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/): Pagination methods comparison
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18924](https://github.com/opensearch-project/OpenSearch/pull/18924) | Initial implementation of _shard_doc sort |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18924](https://github.com/opensearch-project/OpenSearch/pull/18924) | Initial implementation of _shard_doc sort |   |
 
 ### Issues (Design / RFC)
 - [Issue #17064](https://github.com/opensearch-project/OpenSearch/issues/17064): Original feature request

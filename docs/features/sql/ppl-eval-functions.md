@@ -195,13 +195,13 @@ source=metrics
 - [OpenSearch SQL Functions](https://docs.opensearch.org/3.0/search-plugins/sql/functions/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4438](https://github.com/opensearch-project/sql/pull/4438) | Add `mvappend` function |
-| v3.4.0 | [#4497](https://github.com/opensearch-project/sql/pull/4497) | Support `tostring()` eval function |
-| v3.4.0 | [#4765](https://github.com/opensearch-project/sql/pull/4765) | Add `regexp_replace()` as alias |
-| v3.4.0 | [#4794](https://github.com/opensearch-project/sql/pull/4794) | Support `mvindex` eval function |
-| v3.4.0 | [#4828](https://github.com/opensearch-project/sql/pull/4828) | Support `mvdedup` eval function |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#4438](https://github.com/opensearch-project/sql/pull/4438) | Add `mvappend` function |   |
+| v3.4.0 | [#4497](https://github.com/opensearch-project/sql/pull/4497) | Support `tostring()` eval function | [#4492](https://github.com/opensearch-project/sql/issues/4492) |
+| v3.4.0 | [#4765](https://github.com/opensearch-project/sql/pull/4765) | Add `regexp_replace()` as alias | [#4764](https://github.com/opensearch-project/sql/issues/4764) |
+| v3.4.0 | [#4794](https://github.com/opensearch-project/sql/pull/4794) | Support `mvindex` eval function |   |
+| v3.4.0 | [#4828](https://github.com/opensearch-project/sql/pull/4828) | Support `mvdedup` eval function |   |
 
 ### Issues (Design / RFC)
 - [Issue #4492](https://github.com/opensearch-project/sql/issues/4492): tostring implementation request

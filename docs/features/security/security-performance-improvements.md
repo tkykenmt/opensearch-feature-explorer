@@ -155,12 +155,12 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 - [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5465](https://github.com/opensearch-project/security/pull/5465) | Precomputed privileges toggle setting |
-| v3.2.0 | [#5470](https://github.com/opensearch-project/security/pull/5470) | Optimized wildcard matching |
-| v3.1.0 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove unused custom User serialization |
-| v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#5465](https://github.com/opensearch-project/security/pull/5465) | Precomputed privileges toggle setting |   |
+| v3.2.0 | [#5470](https://github.com/opensearch-project/security/pull/5470) | Optimized wildcard matching |   |
+| v3.1.0 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove unused custom User serialization | [#5200](https://github.com/opensearch-project/security/issues/5200) |
+| v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object | [#5168](https://github.com/opensearch-project/security/issues/5168) |
 
 ### Issues (Design / RFC)
 - [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue

@@ -267,53 +267,53 @@ POST /_plugins/_ppl
 - [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Feature announcement
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4372](https://github.com/opensearch-project/sql/pull/4372) | Enable Calcite by default and implicit fallback for unsupported commands |
-| v3.3.0 | [#4353](https://github.com/opensearch-project/sql/pull/4353) | Enhance cost computing mechanism and push down context |
-| v3.3.0 | [#4279](https://github.com/opensearch-project/sql/pull/4279) | Push down project operator with non-identity projections into scan |
-| v3.3.0 | [#4217](https://github.com/opensearch-project/sql/pull/4217) | `mvjoin` support in PPL Calcite |
-| v3.3.0 | [#4092](https://github.com/opensearch-project/sql/pull/4092) | Add `regex_match` function for PPL with Calcite engine support |
-| v3.3.0 | [#3993](https://github.com/opensearch-project/sql/pull/3993) | Support `timechart` command with Calcite |
-| v3.2.0 | [#3620](https://github.com/opensearch-project/sql/pull/3620) | Support Sort pushdown |
-| v3.2.0 | [#3916](https://github.com/opensearch-project/sql/pull/3916) | Support aggregation push down with scripts |
-| v3.2.0 | [#3850](https://github.com/opensearch-project/sql/pull/3850) | Support partial filter push down |
-| v3.2.0 | [#3834](https://github.com/opensearch-project/sql/pull/3834) | Support relevance query functions pushdown |
-| v3.2.0 | [#3859](https://github.com/opensearch-project/sql/pull/3859) | Filter script pushdown with RelJson serialization |
-| v3.2.0 | [#3853](https://github.com/opensearch-project/sql/pull/3853) | Skip codegen for Scan only plan (~30% improvement) |
-| v3.2.0 | [#3952](https://github.com/opensearch-project/sql/pull/3952) | Disable v2 fallback by default |
-| v3.2.0 | [#3823](https://github.com/opensearch-project/sql/pull/3823) | Support span push down |
-| v3.2.0 | [#3840](https://github.com/opensearch-project/sql/pull/3840) | Support filter push down for Sarg value |
-| v3.2.0 | [#3864](https://github.com/opensearch-project/sql/pull/3864) | Support pushdown physical sort for SortMergeJoin |
-| v3.2.0 | [#3880](https://github.com/opensearch-project/sql/pull/3880) | Push down QUERY_SIZE_LIMIT |
-| v3.2.0 | [#3914](https://github.com/opensearch-project/sql/pull/3914) | Support function argument coercion |
-| v3.2.0 | [#3919](https://github.com/opensearch-project/sql/pull/3919) | Support casting to IP with Calcite |
-| v3.2.0 | [#3821](https://github.com/opensearch-project/sql/pull/3821) | Add compare_ip operator UDFs |
-| v3.1.0 | [#3738](https://github.com/opensearch-project/sql/pull/3738) | Support ResourceMonitor with Calcite |
-| v3.1.0 | [#3747](https://github.com/opensearch-project/sql/pull/3747) | Support `flatten` command with Calcite |
-| v3.1.0 | [#3745](https://github.com/opensearch-project/sql/pull/3745) | Support `expand` command with Calcite |
-| v3.1.0 | [#3741](https://github.com/opensearch-project/sql/pull/3741) | Support trendline command in Calcite |
-| v3.1.0 | [#3729](https://github.com/opensearch-project/sql/pull/3729) | Support `appendcol` command with Calcite |
-| v3.1.0 | [#3678](https://github.com/opensearch-project/sql/pull/3678) | Support Grok command in Calcite engine |
-| v3.1.0 | [#3673](https://github.com/opensearch-project/sql/pull/3673) | Support decimal literal with Calcite |
-| v3.1.0 | [#3647](https://github.com/opensearch-project/sql/pull/3647) | Support `top`, `rare` commands with Calcite |
-| v3.1.0 | [#3634](https://github.com/opensearch-project/sql/pull/3634) | Support `fillnull` command with Calcite |
-| v3.1.0 | [#3628](https://github.com/opensearch-project/sql/pull/3628) | Support function `coalesce` with Calcite |
-| v3.1.0 | [#3627](https://github.com/opensearch-project/sql/pull/3627) | Support functions `isempty`, `isblank`, `ispresent` |
-| v3.1.0 | [#3626](https://github.com/opensearch-project/sql/pull/3626) | Implement Parameter Validation for PPL functions |
-| v3.1.0 | [#3624](https://github.com/opensearch-project/sql/pull/3624) | Support `describe` command with Calcite |
-| v3.1.0 | [#3615](https://github.com/opensearch-project/sql/pull/3615) | Support Limit pushdown |
-| v3.1.0 | [#3612](https://github.com/opensearch-project/sql/pull/3612) | Add UT for PredicateAnalyzer and AggregateAnalyzer |
-| v3.1.0 | [#3605](https://github.com/opensearch-project/sql/pull/3605) | Add row count estimation for CalciteIndexScan |
-| v3.1.0 | [#3604](https://github.com/opensearch-project/sql/pull/3604) | Implement `geoip` udf with Calcite |
-| v3.1.0 | [#3603](https://github.com/opensearch-project/sql/pull/3603) | Implement `cidrmatch` udf with Calcite |
-| v3.1.0 | [#3585](https://github.com/opensearch-project/sql/pull/3585) | Support `eventstats` command with Calcite |
-| v3.1.0 | [#3570](https://github.com/opensearch-project/sql/pull/3570) | Calcite patterns command brain pattern method |
-| v3.0.0 | [#3249](https://github.com/opensearch-project/sql/pull/3249) | Framework of Calcite Engine |
-| v3.0.0 | [#3364](https://github.com/opensearch-project/sql/pull/3364) | PPL join command |
-| v3.0.0 | [#3419](https://github.com/opensearch-project/sql/pull/3419) | Lookup command |
-| v3.0.0 | [#3371](https://github.com/opensearch-project/sql/pull/3371) | IN subquery |
-| v3.0.0 | [#3388](https://github.com/opensearch-project/sql/pull/3388) | EXISTS subquery |
-| v3.0.0 | [#3374](https://github.com/opensearch-project/sql/pull/3374) | UDF interface |
-| v3.0.0 | [#3468](https://github.com/opensearch-project/sql/pull/3468) | Enable Calcite by default |
-| v3.0.0 | [#3521](https://github.com/opensearch-project/sql/pull/3521) | Enhanced explain output |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4372](https://github.com/opensearch-project/sql/pull/4372) | Enable Calcite by default and implicit fallback for unsupported commands | [#4314](https://github.com/opensearch-project/sql/issues/4314) |
+| v3.3.0 | [#4353](https://github.com/opensearch-project/sql/pull/4353) | Enhance cost computing mechanism and push down context | [#4312](https://github.com/opensearch-project/sql/issues/4312) |
+| v3.3.0 | [#4279](https://github.com/opensearch-project/sql/pull/4279) | Push down project operator with non-identity projections into scan | [#4230](https://github.com/opensearch-project/sql/issues/4230) |
+| v3.3.0 | [#4217](https://github.com/opensearch-project/sql/pull/4217) | `mvjoin` support in PPL Calcite | [#4146](https://github.com/opensearch-project/sql/issues/4146) |
+| v3.3.0 | [#4092](https://github.com/opensearch-project/sql/pull/4092) | Add `regex_match` function for PPL with Calcite engine support |   |
+| v3.3.0 | [#3993](https://github.com/opensearch-project/sql/pull/3993) | Support `timechart` command with Calcite | [#3965](https://github.com/opensearch-project/sql/issues/3965) |
+| v3.2.0 | [#3620](https://github.com/opensearch-project/sql/pull/3620) | Support Sort pushdown | [#3380](https://github.com/opensearch-project/sql/issues/3380) |
+| v3.2.0 | [#3916](https://github.com/opensearch-project/sql/pull/3916) | Support aggregation push down with scripts | [#3386](https://github.com/opensearch-project/sql/issues/3386) |
+| v3.2.0 | [#3850](https://github.com/opensearch-project/sql/pull/3850) | Support partial filter push down | [#3470](https://github.com/opensearch-project/sql/issues/3470) |
+| v3.2.0 | [#3834](https://github.com/opensearch-project/sql/pull/3834) | Support relevance query functions pushdown | [#3462](https://github.com/opensearch-project/sql/issues/3462) |
+| v3.2.0 | [#3859](https://github.com/opensearch-project/sql/pull/3859) | Filter script pushdown with RelJson serialization | [#3379](https://github.com/opensearch-project/sql/issues/3379) |
+| v3.2.0 | [#3853](https://github.com/opensearch-project/sql/pull/3853) | Skip codegen for Scan only plan (~30% improvement) | [#3852](https://github.com/opensearch-project/sql/issues/3852) |
+| v3.2.0 | [#3952](https://github.com/opensearch-project/sql/pull/3952) | Disable v2 fallback by default | [#3942](https://github.com/opensearch-project/sql/issues/3942) |
+| v3.2.0 | [#3823](https://github.com/opensearch-project/sql/pull/3823) | Support span push down | [#3384](https://github.com/opensearch-project/sql/issues/3384) |
+| v3.2.0 | [#3840](https://github.com/opensearch-project/sql/pull/3840) | Support filter push down for Sarg value | [#3839](https://github.com/opensearch-project/sql/issues/3839) |
+| v3.2.0 | [#3864](https://github.com/opensearch-project/sql/pull/3864) | Support pushdown physical sort for SortMergeJoin | [#3863](https://github.com/opensearch-project/sql/issues/3863) |
+| v3.2.0 | [#3880](https://github.com/opensearch-project/sql/pull/3880) | Push down QUERY_SIZE_LIMIT | [#3879](https://github.com/opensearch-project/sql/issues/3879) |
+| v3.2.0 | [#3914](https://github.com/opensearch-project/sql/pull/3914) | Support function argument coercion |   |
+| v3.2.0 | [#3919](https://github.com/opensearch-project/sql/pull/3919) | Support casting to IP with Calcite | [#3918](https://github.com/opensearch-project/sql/issues/3918) |
+| v3.2.0 | [#3821](https://github.com/opensearch-project/sql/pull/3821) | Add compare_ip operator UDFs | [#3776](https://github.com/opensearch-project/sql/issues/3776) |
+| v3.1.0 | [#3738](https://github.com/opensearch-project/sql/pull/3738) | Support ResourceMonitor with Calcite | [#3454](https://github.com/opensearch-project/sql/issues/3454) |
+| v3.1.0 | [#3747](https://github.com/opensearch-project/sql/pull/3747) | Support `flatten` command with Calcite | [#3712](https://github.com/opensearch-project/sql/issues/3712) |
+| v3.1.0 | [#3745](https://github.com/opensearch-project/sql/pull/3745) | Support `expand` command with Calcite | [#3711](https://github.com/opensearch-project/sql/issues/3711) |
+| v3.1.0 | [#3741](https://github.com/opensearch-project/sql/pull/3741) | Support trendline command in Calcite | [#3466](https://github.com/opensearch-project/sql/issues/3466) |
+| v3.1.0 | [#3729](https://github.com/opensearch-project/sql/pull/3729) | Support `appendcol` command with Calcite | [#3172](https://github.com/opensearch-project/sql/issues/3172) |
+| v3.1.0 | [#3678](https://github.com/opensearch-project/sql/pull/3678) | Support Grok command in Calcite engine | [#3677](https://github.com/opensearch-project/sql/issues/3677) |
+| v3.1.0 | [#3673](https://github.com/opensearch-project/sql/pull/3673) | Support decimal literal with Calcite | [#3614](https://github.com/opensearch-project/sql/issues/3614) |
+| v3.1.0 | [#3647](https://github.com/opensearch-project/sql/pull/3647) | Support `top`, `rare` commands with Calcite | [#3464](https://github.com/opensearch-project/sql/issues/3464) |
+| v3.1.0 | [#3634](https://github.com/opensearch-project/sql/pull/3634) | Support `fillnull` command with Calcite | [#3461](https://github.com/opensearch-project/sql/issues/3461) |
+| v3.1.0 | [#3628](https://github.com/opensearch-project/sql/pull/3628) | Support function `coalesce` with Calcite | [#3610](https://github.com/opensearch-project/sql/issues/3610) |
+| v3.1.0 | [#3627](https://github.com/opensearch-project/sql/pull/3627) | Support functions `isempty`, `isblank`, `ispresent` | [#3609](https://github.com/opensearch-project/sql/issues/3609) |
+| v3.1.0 | [#3626](https://github.com/opensearch-project/sql/pull/3626) | Implement Parameter Validation for PPL functions | [#3608](https://github.com/opensearch-project/sql/issues/3608) |
+| v3.1.0 | [#3624](https://github.com/opensearch-project/sql/pull/3624) | Support `describe` command with Calcite | [#3460](https://github.com/opensearch-project/sql/issues/3460) |
+| v3.1.0 | [#3615](https://github.com/opensearch-project/sql/pull/3615) | Support Limit pushdown | [#3381](https://github.com/opensearch-project/sql/issues/3381) |
+| v3.1.0 | [#3612](https://github.com/opensearch-project/sql/pull/3612) | Add UT for PredicateAnalyzer and AggregateAnalyzer | [#3340](https://github.com/opensearch-project/sql/issues/3340) |
+| v3.1.0 | [#3605](https://github.com/opensearch-project/sql/pull/3605) | Add row count estimation for CalciteIndexScan | [#3557](https://github.com/opensearch-project/sql/issues/3557) |
+| v3.1.0 | [#3604](https://github.com/opensearch-project/sql/pull/3604) | Implement `geoip` udf with Calcite | [#3506](https://github.com/opensearch-project/sql/issues/3506) |
+| v3.1.0 | [#3603](https://github.com/opensearch-project/sql/pull/3603) | Implement `cidrmatch` udf with Calcite | [#3505](https://github.com/opensearch-project/sql/issues/3505) |
+| v3.1.0 | [#3585](https://github.com/opensearch-project/sql/pull/3585) | Support `eventstats` command with Calcite | [#3563](https://github.com/opensearch-project/sql/issues/3563) |
+| v3.1.0 | [#3570](https://github.com/opensearch-project/sql/pull/3570) | Calcite patterns command brain pattern method | [#3569](https://github.com/opensearch-project/sql/issues/3569) |
+| v3.0.0 | [#3249](https://github.com/opensearch-project/sql/pull/3249) | Framework of Calcite Engine | [#3250](https://github.com/opensearch-project/sql/issues/3250) |
+| v3.0.0 | [#3364](https://github.com/opensearch-project/sql/pull/3364) | PPL join command | [#3356](https://github.com/opensearch-project/sql/issues/3356) |
+| v3.0.0 | [#3419](https://github.com/opensearch-project/sql/pull/3419) | Lookup command | [#3358](https://github.com/opensearch-project/sql/issues/3358) |
+| v3.0.0 | [#3371](https://github.com/opensearch-project/sql/pull/3371) | IN subquery | [#3359](https://github.com/opensearch-project/sql/issues/3359) |
+| v3.0.0 | [#3388](https://github.com/opensearch-project/sql/pull/3388) | EXISTS subquery | [#3360](https://github.com/opensearch-project/sql/issues/3360) |
+| v3.0.0 | [#3374](https://github.com/opensearch-project/sql/pull/3374) | UDF interface |   |
+| v3.0.0 | [#3468](https://github.com/opensearch-project/sql/pull/3468) | Enable Calcite by default | [#3451](https://github.com/opensearch-project/sql/issues/3451) |
+| v3.0.0 | [#3521](https://github.com/opensearch-project/sql/pull/3521) | Enhanced explain output | [#3519](https://github.com/opensearch-project/sql/issues/3519) |

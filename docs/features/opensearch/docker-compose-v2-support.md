@@ -114,9 +114,9 @@ Running tests:
 - [Docker Compose v2 Migration](https://docs.docker.com/compose/releases/migrate/): Official Docker documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16049](https://github.com/opensearch-project/OpenSearch/pull/16049) | Add support for docker compose v2 in TestFixturesPlugin |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#16049](https://github.com/opensearch-project/OpenSearch/pull/16049) | Add support for docker compose v2 in TestFixturesPlugin |   |
 
 ### Issues (Design / RFC)
 - [Issue #16050](https://github.com/opensearch-project/OpenSearch/issues/16050): Original bug report

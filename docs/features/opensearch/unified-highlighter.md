@@ -147,9 +147,9 @@ GET my-index/_search
 - [Documentation PR #9793](https://github.com/opensearch-project/documentation-website/pull/9793): Documentation for matched_fields support
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18166](https://github.com/opensearch-project/OpenSearch/pull/18166) | Add support for matched_fields with the unified highlighter |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18166](https://github.com/opensearch-project/OpenSearch/pull/18166) | Add support for matched_fields with the unified highlighter | [#18164](https://github.com/opensearch-project/OpenSearch/issues/18164) |
 
 ### Issues (Design / RFC)
 - [Issue #18164](https://github.com/opensearch-project/OpenSearch/issues/18164): Feature request for matched_fields support

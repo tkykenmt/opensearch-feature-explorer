@@ -209,13 +209,13 @@ GET /logs/_search
 - [Lucene PR #14401](https://github.com/apache/lucene/pull/14401): Enable collectors to take advantage of pre-aggregated data
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19643](https://github.com/opensearch-project/OpenSearch/pull/19643) | Handle deleted documents for filter rewrite sub-aggregation optimization |
-| v3.4.0 | [#19933](https://github.com/opensearch-project/OpenSearch/pull/19933) | Add bulk collect API for filter rewrite sub-aggregation optimization |
-| v3.4.0 | [#20009](https://github.com/opensearch-project/OpenSearch/pull/20009) | Allow collectors take advantage of preaggregated data using collectRange API |
-| v3.4.0 | [#20067](https://github.com/opensearch-project/OpenSearch/pull/20067) | Bulk collection logic for metrics and cardinality aggregations |
-| v3.0.0 | [#17447](https://github.com/opensearch-project/OpenSearch/pull/17447) | Support sub agg in filter rewrite optimization (initial implementation) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19643](https://github.com/opensearch-project/OpenSearch/pull/19643) | Handle deleted documents for filter rewrite sub-aggregation optimization | [#19642](https://github.com/opensearch-project/OpenSearch/issues/19642) |
+| v3.4.0 | [#19933](https://github.com/opensearch-project/OpenSearch/pull/19933) | Add bulk collect API for filter rewrite sub-aggregation optimization |   |
+| v3.4.0 | [#20009](https://github.com/opensearch-project/OpenSearch/pull/20009) | Allow collectors take advantage of preaggregated data using collectRange API |   |
+| v3.4.0 | [#20067](https://github.com/opensearch-project/OpenSearch/pull/20067) | Bulk collection logic for metrics and cardinality aggregations |   |
+| v3.0.0 | [#17447](https://github.com/opensearch-project/OpenSearch/pull/17447) | Support sub agg in filter rewrite optimization (initial implementation) | [#12602](https://github.com/opensearch-project/OpenSearch/issues/12602) |
 
 ### Issues (Design / RFC)
 - [Issue #19642](https://github.com/opensearch-project/OpenSearch/issues/19642): Handle deleted documents for filter rewrite subaggregation optimization

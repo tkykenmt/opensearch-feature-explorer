@@ -105,9 +105,9 @@ No user-facing configuration. This is an internal implementation detail.
 - [OpenSearch PR #1500](https://github.com/opensearch-project/OpenSearch/pull/1500): Original concurrent segment search implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19595](https://github.com/opensearch-project/OpenSearch/pull/19595) | Remove MultiCollectorWrapper and use MultiCollector in Lucene instead |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19595](https://github.com/opensearch-project/OpenSearch/pull/19595) | Remove MultiCollectorWrapper and use MultiCollector in Lucene instead |   |
 
 ### Issues (Design / RFC)
 - [LUCENE-10244](https://github.com/apache/lucene/issues/11280): Lucene issue for public `getCollectors()` method

@@ -170,7 +170,7 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 - [Working with Detectors](https://docs.opensearch.org/latest/security-analytics/usage/detectors/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1226](https://github.com/opensearch-project/security-analytics/pull/1226) | Added triggers in getDetectors API response |
-| v2.17.0 | [#1212](https://github.com/opensearch-project/security-analytics/pull/1212) | Secure rest tests for threat intel monitor APIs |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#1226](https://github.com/opensearch-project/security-analytics/pull/1226) | Added triggers in getDetectors API response |   |
+| v2.17.0 | [#1212](https://github.com/opensearch-project/security-analytics/pull/1212) | Secure rest tests for threat intel monitor APIs |   |

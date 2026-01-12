@@ -134,12 +134,12 @@ POST _plugins/_sql/close
 - [Pagination Limitations](https://docs.opensearch.org/2.18/search-plugins/sql/limitation/): SQL pagination limitations
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |
-| v2.18.0 | [#3108](https://github.com/opensearch-project/sql/pull/3108) | Fix: PIT refactor minor issues |
-| v2.18.0 | [#2759](https://github.com/opensearch-project/sql/pull/2759) | Original: Pretty parameter support |
-| v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Original: PIT refactor bug fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |   |
+| v2.18.0 | [#3108](https://github.com/opensearch-project/sql/pull/3108) | Fix: PIT refactor minor issues |   |
+| v2.18.0 | [#2759](https://github.com/opensearch-project/sql/pull/2759) | Original: Pretty parameter support | [#2460](https://github.com/opensearch-project/sql/issues/2460) |
+| v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Original: PIT refactor bug fixes |   |
 
 ### Issues (Design / RFC)
 - [Issue #2460](https://github.com/opensearch-project/sql/issues/2460): SQL pagination doesn't work in Dev tools

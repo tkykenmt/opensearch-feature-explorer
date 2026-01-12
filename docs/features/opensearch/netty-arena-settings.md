@@ -116,9 +116,9 @@ cat /proc/$(pgrep -f opensearch)/maps | grep "indices" | awk '{print $6}' | sort
 - [Blog: Use Lucene's MMapDirectory on 64bit](https://blog.thetaphi.de/2012/07/use-lucenes-mmapdirectory-on-64bit.html): Background on memory mapping behavior
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19503](https://github.com/opensearch-project/OpenSearch/pull/19503) | Setting number of sharedArenaMaxPermits to 1 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19503](https://github.com/opensearch-project/OpenSearch/pull/19503) | Setting number of sharedArenaMaxPermits to 1 |   |
 
 ### Issues (Design / RFC)
 - [Issue #19482](https://github.com/opensearch-project/OpenSearch/issues/19482): BUG - Frequent stats calls causing memory mapped segments to bloat up

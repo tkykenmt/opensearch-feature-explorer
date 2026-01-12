@@ -152,6 +152,6 @@ Any tenant can then create models using this global connector.
 - [Remote Metadata SDK](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4003](https://github.com/opensearch-project/ml-commons/pull/4003) | Add global resource support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4003](https://github.com/opensearch-project/ml-commons/pull/4003) | Add global resource support |   |

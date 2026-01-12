@@ -107,9 +107,9 @@ curl -X GET "localhost:9200"
 - [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Overview of 3.0 features
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 for 3.0.0 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 for 3.0.0 | [#11415](https://github.com/opensearch-project/OpenSearch/issues/11415) |
 
 ### Issues (Design / RFC)
 - [Issue #11415](https://github.com/opensearch-project/OpenSearch/issues/11415): Original feature request

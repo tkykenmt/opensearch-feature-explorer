@@ -155,9 +155,9 @@ When cancelled, the response will include:
 - [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation on configuring search backpressure
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18426](https://github.com/opensearch-project/OpenSearch/pull/18426) | Add task cancellation check in aggregation code paths |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18426](https://github.com/opensearch-project/OpenSearch/pull/18426) | Add task cancellation check in aggregation code paths | [#15413](https://github.com/opensearch-project/OpenSearch/issues/15413) |
 
 ### Issues (Design / RFC)
 - [Issue #15413](https://github.com/opensearch-project/OpenSearch/issues/15413): Original bug report describing the problem with non-terminable nested aggregations

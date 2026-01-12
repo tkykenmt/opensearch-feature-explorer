@@ -139,9 +139,9 @@ source=accounts | rename name as user_name age as user_age country as location
 - [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4019](https://github.com/opensearch-project/sql/pull/4019) | Add wildcard support for rename command |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4019](https://github.com/opensearch-project/sql/pull/4019) | Add wildcard support for rename command |   |
 
 ### Issues (Design / RFC)
 - [Issue #4008](https://github.com/opensearch-project/sql/issues/4008): Feature request for wildcard rename support

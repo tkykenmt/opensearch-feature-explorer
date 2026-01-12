@@ -132,9 +132,9 @@ DELETE _index_template/logs-base
 - [Index Templates Documentation](https://docs.opensearch.org/3.0/im-plugin/index-templates/): Template configuration guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#20102](https://github.com/opensearch-project/OpenSearch/pull/20102) | Fix deletion of unused templates matching data streams |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#20102](https://github.com/opensearch-project/OpenSearch/pull/20102) | Fix deletion of unused templates matching data streams | [#20078](https://github.com/opensearch-project/OpenSearch/issues/20078) |
 
 ### Issues (Design / RFC)
 - [Issue #20078](https://github.com/opensearch-project/OpenSearch/issues/20078): Bug report for template deletion failure

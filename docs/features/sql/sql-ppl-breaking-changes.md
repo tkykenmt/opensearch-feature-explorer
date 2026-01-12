@@ -122,14 +122,14 @@ POST /_plugins/_sql
 - [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands (join, lookup, subsearch)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support |
-| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |
-| v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement |
-| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |
-| v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage |
-| v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format |
-| v3.0.0 | [#3439](https://github.com/opensearch-project/sql/pull/3439) | Support CAST function with Calcite |
-| v3.0.0 | [#3473](https://github.com/opensearch-project/sql/pull/3473) | Add datetime functions |
-| v3.0.0 | [#3488](https://github.com/opensearch-project/sql/pull/3488) | Documentation for PPL V3 engine and limitations |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support | [#3286](https://github.com/opensearch-project/sql/issues/3286) |
+| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |   |
+| v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement | [#3281](https://github.com/opensearch-project/sql/issues/3281) |
+| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |   |
+| v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage | [#3284](https://github.com/opensearch-project/sql/issues/3284) |
+| v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format | [#3280](https://github.com/opensearch-project/sql/issues/3280) |
+| v3.0.0 | [#3439](https://github.com/opensearch-project/sql/pull/3439) | Support CAST function with Calcite | [#3417](https://github.com/opensearch-project/sql/issues/3417) |
+| v3.0.0 | [#3473](https://github.com/opensearch-project/sql/pull/3473) | Add datetime functions |   |
+| v3.0.0 | [#3488](https://github.com/opensearch-project/sql/pull/3488) | Documentation for PPL V3 engine and limitations | [#3431](https://github.com/opensearch-project/sql/issues/3431) |

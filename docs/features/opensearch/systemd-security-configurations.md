@@ -213,11 +213,11 @@ public void testRebootSysCall() throws IOException, InterruptedException {
 - [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17107](https://github.com/opensearch-project/security/pull/17107) | Add systemd configurations to strengthen OS core security |
-| v3.0.0 | [#17410](https://github.com/opensearch-project/OpenSearch/pull/17410) | Added integ tests for systemd configs |
-| v3.0.0 | [#17641](https://github.com/opensearch-project/OpenSearch/pull/17641) | Fix systemd integTest on deb regarding path ownership check |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17107](https://github.com/opensearch-project/security/pull/17107) | Add systemd configurations to strengthen OS core security |   |
+| v3.0.0 | [#17410](https://github.com/opensearch-project/OpenSearch/pull/17410) | Added integ tests for systemd configs |   |
+| v3.0.0 | [#17641](https://github.com/opensearch-project/OpenSearch/pull/17641) | Fix systemd integTest on deb regarding path ownership check | [#17614](https://github.com/opensearch-project/OpenSearch/issues/17614) |
 
 ### Issues (Design / RFC)
 - [Issue #17614](https://github.com/opensearch-project/OpenSearch/issues/17614): Bug fix for deb package ownership check

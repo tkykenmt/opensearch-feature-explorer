@@ -77,12 +77,12 @@ The Skills plugin follows automated dependency management using Mend (formerly W
 - [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#427](https://github.com/opensearch-project/skills/pull/427) | Fix test failure due to external change |
-| v2.18.0 | [#437](https://github.com/opensearch-project/skills/pull/437) | Update mockito monorepo to v5.14.2 |
-| v2.18.0 | [#363](https://github.com/opensearch-project/skills/pull/363) | Update junit5 monorepo to v5.11.2 |
-| v2.18.0 | [#43](https://github.com/opensearch-project/skills/pull/43) | Update byte-buddy to v1.15.4 |
-| v2.18.0 | [#279](https://github.com/opensearch-project/skills/pull/279) | Update byte-buddy-agent to v1.15.4 |
-| v2.18.0 | [#432](https://github.com/opensearch-project/skills/pull/432) | Update Gradle to v8.10.2 |
-| v2.18.0 | [#434](https://github.com/opensearch-project/skills/pull/434) | Update io.freefair.lombok to v8.10.2 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#427](https://github.com/opensearch-project/skills/pull/427) | Fix test failure due to external change |   |
+| v2.18.0 | [#437](https://github.com/opensearch-project/skills/pull/437) | Update mockito monorepo to v5.14.2 |   |
+| v2.18.0 | [#363](https://github.com/opensearch-project/skills/pull/363) | Update junit5 monorepo to v5.11.2 |   |
+| v2.18.0 | [#43](https://github.com/opensearch-project/skills/pull/43) | Update byte-buddy to v1.15.4 |   |
+| v2.18.0 | [#279](https://github.com/opensearch-project/skills/pull/279) | Update byte-buddy-agent to v1.15.4 |   |
+| v2.18.0 | [#432](https://github.com/opensearch-project/skills/pull/432) | Update Gradle to v8.10.2 |   |
+| v2.18.0 | [#434](https://github.com/opensearch-project/skills/pull/434) | Update io.freefair.lombok to v8.10.2 |   |

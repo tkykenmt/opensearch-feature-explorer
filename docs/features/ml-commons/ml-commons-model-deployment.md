@@ -128,6 +128,6 @@ PUT _cluster/settings
 - [Undeploy Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/undeploy-model/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#3423](https://github.com/opensearch-project/ml-commons/pull/3423) | Run auto deploy remote model in partially deployed status |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#3423](https://github.com/opensearch-project/ml-commons/pull/3423) | Run auto deploy remote model in partially deployed status |   |

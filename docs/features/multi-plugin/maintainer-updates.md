@@ -61,11 +61,11 @@ Each OpenSearch repository contains a MAINTAINERS.md file with:
 - [OpenSearch Project Governance](https://github.com/opensearch-project/.github/blob/main/GOVERNANCE.md)
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v2.18.0 | [#8415](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8415) | opensearch-dashboards | Add Hailong-am as maintainer |
-| v2.17.0 | [#4673](https://github.com/opensearch-project/security/pull/4673) | security | Add Nils Bandener as maintainer |
-| v2.17.0 | [#1233](https://github.com/opensearch-project/index-management/pull/1233) | index-management | Move inactive maintainers to emeritus |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v2.18.0 | [#8415](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8415) | opensearch-dashboards | Add Hailong-am as maintainer | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.17.0 | [#4673](https://github.com/opensearch-project/security/pull/4673) | security | Add Nils Bandener as maintainer |   |
+| v2.17.0 | [#1233](https://github.com/opensearch-project/index-management/pull/1233) | index-management | Move inactive maintainers to emeritus | [#1230](https://github.com/opensearch-project/index-management/issues/1230) |
 
 ### Issues (Design / RFC)
 - [Issue #1230](https://github.com/opensearch-project/index-management/issues/1230): Index Management maintainer update request

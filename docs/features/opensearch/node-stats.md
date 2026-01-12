@@ -171,10 +171,10 @@ OpenSearch requires read access to cgroup files for CPU statistics on Linux:
 - [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#20108](https://github.com/opensearch-project/OpenSearch/pull/20108) | Fix negative CPU usage values by adding cgroup permissions |
-| v3.0.0 | [#17576](https://github.com/opensearch-project/OpenSearch/pull/17576) | Fix NPE in node stats due to QueryGroupTasks |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#20108](https://github.com/opensearch-project/OpenSearch/pull/20108) | Fix negative CPU usage values by adding cgroup permissions | [#19120](https://github.com/opensearch-project/OpenSearch/issues/19120) |
+| v3.0.0 | [#17576](https://github.com/opensearch-project/OpenSearch/pull/17576) | Fix NPE in node stats due to QueryGroupTasks | [#17518](https://github.com/opensearch-project/OpenSearch/issues/17518) |
 
 ### Issues (Design / RFC)
 - [Issue #19120](https://github.com/opensearch-project/OpenSearch/issues/19120): Bug report for negative CPU values

@@ -106,6 +106,6 @@ After enabling, access the ML Commons Dashboards through:
 - [You can now see ML model status in OpenSearch Dashboards](https://opensearch.org/blog/ml-deployment-status/): Blog post introducing the feature
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#355](https://github.com/opensearch-project/ml-commons-dashboards/pull/355) | Align font size and style with UX guideline |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#355](https://github.com/opensearch-project/ml-commons-dashboards/pull/355) | Align font size and style with UX guideline |   |

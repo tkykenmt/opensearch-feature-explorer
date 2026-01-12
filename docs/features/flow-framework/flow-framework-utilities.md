@@ -200,10 +200,10 @@ String mappingJson = """
 - [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#1168](https://github.com/opensearch-project/flow-framework/pull/1168) | Add JsonToJson Recommender as a utility function |
-| v3.2.0 | [#1176](https://github.com/opensearch-project/flow-framework/pull/1176) | Add JsonToJson Transformer as a utility function |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#1168](https://github.com/opensearch-project/flow-framework/pull/1168) | Add JsonToJson Recommender as a utility function | [#1167](https://github.com/opensearch-project/flow-framework/issues/1167) |
+| v3.2.0 | [#1176](https://github.com/opensearch-project/flow-framework/pull/1176) | Add JsonToJson Transformer as a utility function | [#1167](https://github.com/opensearch-project/flow-framework/issues/1167) |
 
 ### Issues (Design / RFC)
 - [Issue #1167](https://github.com/opensearch-project/flow-framework/issues/1167): Feature request for JsonToJson utilities

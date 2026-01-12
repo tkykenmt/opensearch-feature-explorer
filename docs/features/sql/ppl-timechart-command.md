@@ -159,13 +159,13 @@ source=application_logs
 - [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4464](https://github.com/opensearch-project/sql/pull/4464) | Add `per_second` function support |
-| v3.4.0 | [#4531](https://github.com/opensearch-project/sql/pull/4531) | Add `per_minute`, `per_hour`, `per_day` functions |
-| v3.4.0 | [#4672](https://github.com/opensearch-project/sql/pull/4672) | Support millisecond span |
-| v3.4.0 | [#4755](https://github.com/opensearch-project/sql/pull/4755) | Merge `timechart` and `chart` implementations |
-| v3.4.0 | [#4784](https://github.com/opensearch-project/sql/pull/4784) | Add `timefield` option |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#4464](https://github.com/opensearch-project/sql/pull/4464) | Add `per_second` function support |   |
+| v3.4.0 | [#4531](https://github.com/opensearch-project/sql/pull/4531) | Add `per_minute`, `per_hour`, `per_day` functions | [#4350](https://github.com/opensearch-project/sql/issues/4350) |
+| v3.4.0 | [#4672](https://github.com/opensearch-project/sql/pull/4672) | Support millisecond span | [#4550](https://github.com/opensearch-project/sql/issues/4550) |
+| v3.4.0 | [#4755](https://github.com/opensearch-project/sql/pull/4755) | Merge `timechart` and `chart` implementations | [#4581](https://github.com/opensearch-project/sql/issues/4581) |
+| v3.4.0 | [#4784](https://github.com/opensearch-project/sql/pull/4784) | Add `timefield` option | [#4576](https://github.com/opensearch-project/sql/issues/4576) |
 
 ### Issues (Design / RFC)
 - [Issue #4350](https://github.com/opensearch-project/sql/issues/4350): PPL `per_*` aggregation function support

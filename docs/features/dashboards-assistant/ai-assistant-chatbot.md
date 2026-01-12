@@ -140,21 +140,21 @@ PUT .plugins-ml-config/_doc/os_chat
 - [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#539](https://github.com/opensearch-project/dashboards-assistant/pull/539) | Style single metric in text2vis |
-| v3.1.0 | [#545](https://github.com/opensearch-project/dashboards-assistant/pull/545) | Improve chatbot UX by scrolling user input message to top |
-| v3.1.0 | [#546](https://github.com/opensearch-project/dashboards-assistant/pull/546) | Prevent t2viz navigation on PPL errors |
-| v3.1.0 | [#549](https://github.com/opensearch-project/dashboards-assistant/pull/549) | Buffer for special characters when streaming |
-| v3.1.0 | [#553](https://github.com/opensearch-project/dashboards-assistant/pull/553) | Save chatbot flyout state to local storage |
-| v3.1.0 | [#557](https://github.com/opensearch-project/dashboards-assistant/pull/557) | T2viz time range support from context |
-| v3.1.0 | [#568](https://github.com/opensearch-project/dashboards-assistant/pull/568) | Add format instruction for alert summary |
-| v3.1.0 | [#578](https://github.com/opensearch-project/dashboards-assistant/pull/578) | Admin UI setting for dashboard assistant features |
-| v3.0.0 | [#398](https://github.com/opensearch-project/dashboards-assistant/pull/398) | Expose chatEnabled flag to capabilities |
-| v3.0.0 | [#435](https://github.com/opensearch-project/dashboards-assistant/pull/435) | Update chatbot UI to align with new look |
-| v3.0.0 | [#493](https://github.com/opensearch-project/dashboards-assistant/pull/493) | Support streaming output |
-| v3.0.0 | [#505](https://github.com/opensearch-project/dashboards-assistant/pull/505) | Generate visualization on t2v page mount |
-| v3.0.0 | [#514](https://github.com/opensearch-project/dashboards-assistant/pull/514) | Add auto aggregation suggest for t2v |
-| v3.0.0 | [#540](https://github.com/opensearch-project/dashboards-assistant/pull/540) | Change chatbot entry point to single button |
-| v2.18.0 | [#267](https://github.com/opensearch-project/dashboards-assistant/pull/267) | Add assistant capabilities to control rendering components |
-| v2.18.0 | [#307](https://github.com/opensearch-project/dashboards-assistant/pull/307) | Expose API to check if agent config name has agent ID configured |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#539](https://github.com/opensearch-project/dashboards-assistant/pull/539) | Style single metric in text2vis |   |
+| v3.1.0 | [#545](https://github.com/opensearch-project/dashboards-assistant/pull/545) | Improve chatbot UX by scrolling user input message to top |   |
+| v3.1.0 | [#546](https://github.com/opensearch-project/dashboards-assistant/pull/546) | Prevent t2viz navigation on PPL errors |   |
+| v3.1.0 | [#549](https://github.com/opensearch-project/dashboards-assistant/pull/549) | Buffer for special characters when streaming |   |
+| v3.1.0 | [#553](https://github.com/opensearch-project/dashboards-assistant/pull/553) | Save chatbot flyout state to local storage |   |
+| v3.1.0 | [#557](https://github.com/opensearch-project/dashboards-assistant/pull/557) | T2viz time range support from context |   |
+| v3.1.0 | [#568](https://github.com/opensearch-project/dashboards-assistant/pull/568) | Add format instruction for alert summary |   |
+| v3.1.0 | [#578](https://github.com/opensearch-project/dashboards-assistant/pull/578) | Admin UI setting for dashboard assistant features |   |
+| v3.0.0 | [#398](https://github.com/opensearch-project/dashboards-assistant/pull/398) | Expose chatEnabled flag to capabilities |   |
+| v3.0.0 | [#435](https://github.com/opensearch-project/dashboards-assistant/pull/435) | Update chatbot UI to align with new look |   |
+| v3.0.0 | [#493](https://github.com/opensearch-project/dashboards-assistant/pull/493) | Support streaming output |   |
+| v3.0.0 | [#505](https://github.com/opensearch-project/dashboards-assistant/pull/505) | Generate visualization on t2v page mount |   |
+| v3.0.0 | [#514](https://github.com/opensearch-project/dashboards-assistant/pull/514) | Add auto aggregation suggest for t2v |   |
+| v3.0.0 | [#540](https://github.com/opensearch-project/dashboards-assistant/pull/540) | Change chatbot entry point to single button |   |
+| v2.18.0 | [#267](https://github.com/opensearch-project/dashboards-assistant/pull/267) | Add assistant capabilities to control rendering components |   |
+| v2.18.0 | [#307](https://github.com/opensearch-project/dashboards-assistant/pull/307) | Expose API to check if agent config name has agent ID configured |   |

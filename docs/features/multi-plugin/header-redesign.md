@@ -186,18 +186,18 @@ const MyPluginPage: React.FC = () => {
 - [Custom Branding](https://docs.opensearch.org/2.17/dashboards/branding/): Condensed header configuration
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v2.17.0 | [#841](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/841) | anomaly-detection-dashboards-plugin | Header redesign for AD pages |
-| v2.17.0 | [#2050](https://github.com/opensearch-project/dashboards-observability/pull/2050) | dashboards-observability | New page header for metrics |
-| v2.17.0 | [#2081](https://github.com/opensearch-project/dashboards-observability/pull/2081) | dashboards-observability | New page header for applications |
-| v2.17.0 | [#2099](https://github.com/opensearch-project/dashboards-observability/pull/2099) | dashboards-observability | New page header for notebooks |
-| v2.17.0 | [#236](https://github.com/opensearch-project/dashboards-notifications/pull/236) | dashboards-notifications | Page header for notifications |
-| v2.17.0 | [#428](https://github.com/opensearch-project/dashboards-search-relevance/pull/428) | dashboards-search-relevance | New page header for search relevance |
-| v2.17.0 | [#1105](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1105) | index-management-dashboards-plugin | Update header for Snapshot pages |
-| v2.17.0 | [#1108](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1108) | index-management-dashboards-plugin | Update header for ISM policies |
-| v2.17.0 | [#1115](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1115) | index-management-dashboards-plugin | Update header for data streams and rollups |
-| v2.17.0 | [#1122](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1122) | index-management-dashboards-plugin | Update header for component templates |
-| v2.17.0 | [#1124](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1124) | index-management-dashboards-plugin | Update header for aliases, templates, transforms |
-| v2.17.0 | [#1126](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1126) | index-management-dashboards-plugin | Update header for notification settings |
-| v2.17.0 | [#351](https://github.com/opensearch-project/ml-commons-dashboards/pull/351) | ml-commons-dashboards | Support new page header |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v2.17.0 | [#841](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/841) | anomaly-detection-dashboards-plugin | Header redesign for AD pages |   |
+| v2.17.0 | [#2050](https://github.com/opensearch-project/dashboards-observability/pull/2050) | dashboards-observability | New page header for metrics |   |
+| v2.17.0 | [#2081](https://github.com/opensearch-project/dashboards-observability/pull/2081) | dashboards-observability | New page header for applications |   |
+| v2.17.0 | [#2099](https://github.com/opensearch-project/dashboards-observability/pull/2099) | dashboards-observability | New page header for notebooks |   |
+| v2.17.0 | [#236](https://github.com/opensearch-project/dashboards-notifications/pull/236) | dashboards-notifications | Page header for notifications |   |
+| v2.17.0 | [#428](https://github.com/opensearch-project/dashboards-search-relevance/pull/428) | dashboards-search-relevance | New page header for search relevance |   |
+| v2.17.0 | [#1105](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1105) | index-management-dashboards-plugin | Update header for Snapshot pages |   |
+| v2.17.0 | [#1108](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1108) | index-management-dashboards-plugin | Update header for ISM policies |   |
+| v2.17.0 | [#1115](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1115) | index-management-dashboards-plugin | Update header for data streams and rollups |   |
+| v2.17.0 | [#1122](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1122) | index-management-dashboards-plugin | Update header for component templates |   |
+| v2.17.0 | [#1124](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1124) | index-management-dashboards-plugin | Update header for aliases, templates, transforms |   |
+| v2.17.0 | [#1126](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1126) | index-management-dashboards-plugin | Update header for notification settings |   |
+| v2.17.0 | [#351](https://github.com/opensearch-project/ml-commons-dashboards/pull/351) | ml-commons-dashboards | Support new page header |   |

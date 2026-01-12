@@ -216,10 +216,10 @@ POST _plugins/_sm/policies/monitored-backup
 - [OpenSearch Dashboards SM](https://docs.opensearch.org/3.0/dashboards/sm-dashboards/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#1452](https://github.com/opensearch-project/index-management/pull/1452) | Add support for deletion-only policies and snapshot patterns |
-| v3.3.0 | [#1480](https://github.com/opensearch-project/index-management/pull/1480) | Exclude global state from ISM snapshot action |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#1452](https://github.com/opensearch-project/index-management/pull/1452) | Add support for deletion-only policies and snapshot patterns | [#867](https://github.com/opensearch-project/index-management/issues/867) |
+| v3.3.0 | [#1480](https://github.com/opensearch-project/index-management/pull/1480) | Exclude global state from ISM snapshot action | [#1479](https://github.com/opensearch-project/index-management/issues/1479) |
 
 ### Issues (Design / RFC)
 - [Issue #867](https://github.com/opensearch-project/index-management/issues/867): Feature request for deletion-only SM policies

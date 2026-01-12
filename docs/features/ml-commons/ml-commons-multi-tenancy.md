@@ -132,16 +132,16 @@ POST /_plugins/_ml/models/_register?deploy=true
 - [Multi-tenancy Configuration](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy setup
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4120](https://github.com/opensearch-project/ml-commons/pull/4120) | Support multi-tenancy for LocalRegexGuardrail |
-| v3.3.0 | [#4196](https://github.com/opensearch-project/ml-commons/pull/4196) | Fixing validate access for multi-tenancy |
-| v3.0.0 | [#3700](https://github.com/opensearch-project/ml-commons/pull/3700) | Fix config index masterkey for multi-tenancy |
-| v2.19.0 | [#3432](https://github.com/opensearch-project/ml-commons/pull/3432) | Multi-tenancy support for ML components |
-| v2.19.0 | [#3416](https://github.com/opensearch-project/ml-commons/pull/3416) | Multi-tenancy support additions |
-| v2.19.0 | [#3399](https://github.com/opensearch-project/ml-commons/pull/3399) | Multi-tenancy support additions |
-| v2.19.0 | [#3382](https://github.com/opensearch-project/ml-commons/pull/3382) | Multi-tenancy support additions |
-| v2.19.0 | [#3307](https://github.com/opensearch-project/ml-commons/pull/3307) | Primary setup for multi-tenancy |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4120](https://github.com/opensearch-project/ml-commons/pull/4120) | Support multi-tenancy for LocalRegexGuardrail | [#4119](https://github.com/opensearch-project/ml-commons/issues/4119) |
+| v3.3.0 | [#4196](https://github.com/opensearch-project/ml-commons/pull/4196) | Fixing validate access for multi-tenancy |   |
+| v3.0.0 | [#3700](https://github.com/opensearch-project/ml-commons/pull/3700) | Fix config index masterkey for multi-tenancy |   |
+| v2.19.0 | [#3432](https://github.com/opensearch-project/ml-commons/pull/3432) | Multi-tenancy support for ML components |   |
+| v2.19.0 | [#3416](https://github.com/opensearch-project/ml-commons/pull/3416) | Multi-tenancy support additions |   |
+| v2.19.0 | [#3399](https://github.com/opensearch-project/ml-commons/pull/3399) | Multi-tenancy support additions |   |
+| v2.19.0 | [#3382](https://github.com/opensearch-project/ml-commons/pull/3382) | Multi-tenancy support additions |   |
+| v2.19.0 | [#3307](https://github.com/opensearch-project/ml-commons/pull/3307) | Primary setup for multi-tenancy |   |
 
 ### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/ml-commons/issues/4119): Add multi-tenancy support to Guardrails

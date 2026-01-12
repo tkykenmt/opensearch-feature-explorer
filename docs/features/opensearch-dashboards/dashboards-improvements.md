@@ -90,6 +90,6 @@ const queryStatus: QueryStatus = {
 - [PR #8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212): Initial implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212) | Add loading indicator and counter to query result |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212) | Add loading indicator and counter to query result | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

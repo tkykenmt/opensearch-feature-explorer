@@ -144,6 +144,6 @@ azure.client.default.proxy.port: 1080
 - [Azure SDK ProxyOptions](https://learn.microsoft.com/en-us/java/api/com.azure.core.http.proxyoptions)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18904](https://github.com/opensearch-project/OpenSearch/pull/18904) | Fix socks5 user password settings for Azure repo |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18904](https://github.com/opensearch-project/OpenSearch/pull/18904) | Fix socks5 user password settings for Azure repo |   |

@@ -135,9 +135,9 @@ POST _plugins/_ml/models/<model_id>/_predict
 - [Improving document retrieval with sparse semantic encoders](https://opensearch.org/blog/improving-document-retrieval-with-sparse-semantic-encoders/): Technical blog post
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#3963](https://github.com/opensearch-project/ml-commons/pull/3963) | Sparse encoding/tokenize support TOKEN_ID format embedding |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#3963](https://github.com/opensearch-project/ml-commons/pull/3963) | Sparse encoding/tokenize support TOKEN_ID format embedding |   |
 
 ### Issues (Design / RFC)
 - [Issue #3865](https://github.com/opensearch-project/ml-commons/issues/3865): RFC - Support additional output formats for sparse models

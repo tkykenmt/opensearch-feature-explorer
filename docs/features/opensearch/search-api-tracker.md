@@ -164,9 +164,9 @@ ActionListener<SearchResponse> searchStatusStatsUpdateListener = ActionListener.
 - [Node Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation for the Node Stats API
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#18601](https://github.com/opensearch-project/OpenSearch/pull/18601) | Add search API tracker |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#18601](https://github.com/opensearch-project/OpenSearch/pull/18601) | Add search API tracker |   |
 
 ### Issues (Design / RFC)
 - [Issue #18377](https://github.com/opensearch-project/OpenSearch/issues/18377): Feature request for tracking non-successful Search API calls across coordinator nodes

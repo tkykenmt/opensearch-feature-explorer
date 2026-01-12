@@ -71,6 +71,6 @@ dependencies {
 - [Security plugin build.gradle](https://github.com/opensearch-project/security/blob/main/build.gradle): Build configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5659](https://github.com/opensearch-project/security/pull/5659) | Initial implementation of version sync |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#5659](https://github.com/opensearch-project/security/pull/5659) | Initial implementation of version sync |   |

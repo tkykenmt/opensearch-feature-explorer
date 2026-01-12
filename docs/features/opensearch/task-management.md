@@ -159,9 +159,9 @@ The `resource_stats` object tracks resource usage for tasks that support resourc
 - [task-index-mapping.json](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/resources/org/opensearch/tasks/task-index-mapping.json): Source mapping file
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16201](https://github.com/opensearch-project/OpenSearch/pull/16201) | Fix missing fields in task index mapping |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#16201](https://github.com/opensearch-project/OpenSearch/pull/16201) | Fix missing fields in task index mapping | [#16060](https://github.com/opensearch-project/OpenSearch/issues/16060) |
 
 ### Issues (Design / RFC)
 - [Issue #16060](https://github.com/opensearch-project/OpenSearch/issues/16060): Bug report for missing mapping fields

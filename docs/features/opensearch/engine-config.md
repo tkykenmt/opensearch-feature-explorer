@@ -148,6 +148,6 @@ EngineConfig encryptedConfig = existingConfig.toBuilder()
 - [EngineConfig.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/engine/EngineConfig.java): Source code
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19054](https://github.com/opensearch-project/OpenSearch/pull/19054) | Add toBuilder() method for easy config modification |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19054](https://github.com/opensearch-project/OpenSearch/pull/19054) | Add toBuilder() method for easy config modification |   |

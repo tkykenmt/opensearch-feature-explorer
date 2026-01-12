@@ -205,11 +205,11 @@ chrome.globalSearch.getAllSearchCommands$().subscribe(commands => {
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10789](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10789) | Add assets search command and enhance search commands |
-| v3.3.0 | [#10414](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10414) | Global search URL in workspace |
-| v2.18.0 | [#8538](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8538) | Add global search bar into left nav |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10789](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10789) | Add assets search command and enhance search commands | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10414](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10414) | Global search URL in workspace | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8538](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8538) | Add global search bar into left nav | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 
 ### Issues (Design / RFC)
 - [Issue #10741](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10741): RFC - Global Search Enhancements for New Home

@@ -128,6 +128,6 @@ QueryBuilder query = QueryBuilders.matchQuery("field", "value")
 - [Constant score query](https://docs.opensearch.org/3.0/query-dsl/compound/constant-score/): Constant score query documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17409](https://github.com/opensearch-project/OpenSearch/pull/17409) | Add filter function for AbstractQueryBuilder, BoolQueryBuilder, ConstantScoreQueryBuilder |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17409](https://github.com/opensearch-project/OpenSearch/pull/17409) | Add filter function for AbstractQueryBuilder, BoolQueryBuilder, ConstantScoreQueryBuilder | [#17409](https://github.com/opensearch-project/OpenSearch/issues/17409) |

@@ -96,9 +96,9 @@ By submitting this pull request, I confirm that my contribution is made under th
 - [Developer Guide](https://github.com/opensearch-project/opensearch-api-specification/blob/main/DEVELOPER_GUIDE.md): Guide for contributing API specs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Add API spec checkbox to common-utils |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Add API spec checkbox to common-utils |   |
 
 ### Issues (Design / RFC)
 - [Issue #387](https://github.com/opensearch-project/opensearch-api-specification/issues/387): Original proposal for API spec checkbox

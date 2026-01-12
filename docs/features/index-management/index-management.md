@@ -312,33 +312,33 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - [Index Management Security](https://docs.opensearch.org/3.0/im-plugin/security/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1509](https://github.com/opensearch-project/index-management/pull/1509) | Supporting Exclusion pattern in index pattern in ISM |
-| v3.4.0 | [#1529](https://github.com/opensearch-project/index-management/pull/1529) | Fix race condition in rollup start/stop tests |
-| v3.4.0 | [#1525](https://github.com/opensearch-project/index-management/pull/1525) | Fix ISM policy rebinding after removal |
-| v3.4.0 | [#1507](https://github.com/opensearch-project/index-management/pull/1507) | Fix ExplainSMPolicy serialization for null creation |
-| v3.4.0 | [#1503](https://github.com/opensearch-project/index-management/pull/1503) | Fix snapshot pattern parsing in SM deletion |
-| v3.3.0 | [#1460](https://github.com/opensearch-project/index-management/pull/1460) | Using Scripted Avg Class in AvgAggregationBuilder for rollup aggregation fix |
-| v3.3.0 | [#1491](https://github.com/opensearch-project/index-management/pull/1491) | Fix the build for upstream OpenSearch changes |
-| v3.3.0 | [#1473](https://github.com/opensearch-project/index-management/pull/1473) | Dependabot: bump 1password/load-secrets-action from 2 to 3 |
-| v3.2.0 | [#1440](https://github.com/opensearch-project/index-management/pull/1440) | Support for no_alias and min_state_age in ISM Transitions |
-| v3.2.0 | [#1444](https://github.com/opensearch-project/index-management/pull/1444) | Add history index pattern to System Index descriptors |
-| v3.2.0 | [#1442](https://github.com/opensearch-project/index-management/pull/1442) | Fix Integration test and lint errors |
-| v3.1.0 | [#1413](https://github.com/opensearch-project/index-management/pull/1413) | Removed unnecessary user notifications for version conflict exception |
-| v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | Adding unfollow action in ISM for CCR |
-| v3.0.0 | [#1377](https://github.com/opensearch-project/index-management/pull/1377) | Target Index Settings for rollup |
-| v3.0.0 | [#1388](https://github.com/opensearch-project/index-management/pull/1388) | CVE fix: logback-core upgrade |
-| v3.0.0 | [#1404](https://github.com/opensearch-project/index-management/pull/1404) | Java Agent migration build fix |
-| v2.18.0 | [#1268](https://github.com/opensearch-project/index-management/pull/1268) | Allow non-rollup and rollup indices to be searched together |
-| v2.18.0 | [#1179](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1179) | Fit and Finish UX changes |
-| v2.18.0 | [#1182](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1182) | Replace EuiText with EuiTitle for section headers |
-| v2.18.0 | [#1191](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1191) | Setting validation for transform APIs |
-| v2.18.0 | [#1257](https://github.com/opensearch-project/index-management/pull/1257) | Fixing snapshot bug - partial snapshot detection |
-| v2.18.0 | [#1187](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1187) | Create snapshot policy button reload fix |
-| v2.18.0 | [#1189](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1189) | Data source initialization fix |
-| v2.17.0 | [#1219](https://github.com/opensearch-project/index-management/pull/1219) | Skip execution optimization using cluster service |
-| v2.17.0 | [#1222](https://github.com/opensearch-project/index-management/pull/1222) | Security integration test fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1509](https://github.com/opensearch-project/index-management/pull/1509) | Supporting Exclusion pattern in index pattern in ISM | [#375](https://github.com/opensearch-project/index-management/issues/375) |
+| v3.4.0 | [#1529](https://github.com/opensearch-project/index-management/pull/1529) | Fix race condition in rollup start/stop tests | [#90](https://github.com/opensearch-project/index-management/issues/90) |
+| v3.4.0 | [#1525](https://github.com/opensearch-project/index-management/pull/1525) | Fix ISM policy rebinding after removal | [#1524](https://github.com/opensearch-project/index-management/issues/1524) |
+| v3.4.0 | [#1507](https://github.com/opensearch-project/index-management/pull/1507) | Fix ExplainSMPolicy serialization for null creation | [#1506](https://github.com/opensearch-project/index-management/issues/1506) |
+| v3.4.0 | [#1503](https://github.com/opensearch-project/index-management/pull/1503) | Fix snapshot pattern parsing in SM deletion | [#1502](https://github.com/opensearch-project/index-management/issues/1502) |
+| v3.3.0 | [#1460](https://github.com/opensearch-project/index-management/pull/1460) | Using Scripted Avg Class in AvgAggregationBuilder for rollup aggregation fix |   |
+| v3.3.0 | [#1491](https://github.com/opensearch-project/index-management/pull/1491) | Fix the build for upstream OpenSearch changes |   |
+| v3.3.0 | [#1473](https://github.com/opensearch-project/index-management/pull/1473) | Dependabot: bump 1password/load-secrets-action from 2 to 3 |   |
+| v3.2.0 | [#1440](https://github.com/opensearch-project/index-management/pull/1440) | Support for no_alias and min_state_age in ISM Transitions | [#1439](https://github.com/opensearch-project/index-management/issues/1439) |
+| v3.2.0 | [#1444](https://github.com/opensearch-project/index-management/pull/1444) | Add history index pattern to System Index descriptors |   |
+| v3.2.0 | [#1442](https://github.com/opensearch-project/index-management/pull/1442) | Fix Integration test and lint errors | [#1441](https://github.com/opensearch-project/index-management/issues/1441) |
+| v3.1.0 | [#1413](https://github.com/opensearch-project/index-management/pull/1413) | Removed unnecessary user notifications for version conflict exception |   |
+| v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | Adding unfollow action in ISM for CCR |   |
+| v3.0.0 | [#1377](https://github.com/opensearch-project/index-management/pull/1377) | Target Index Settings for rollup | [#1376](https://github.com/opensearch-project/index-management/issues/1376) |
+| v3.0.0 | [#1388](https://github.com/opensearch-project/index-management/pull/1388) | CVE fix: logback-core upgrade |   |
+| v3.0.0 | [#1404](https://github.com/opensearch-project/index-management/pull/1404) | Java Agent migration build fix |   |
+| v2.18.0 | [#1268](https://github.com/opensearch-project/index-management/pull/1268) | Allow non-rollup and rollup indices to be searched together | [#1213](https://github.com/opensearch-project/index-management/issues/1213) |
+| v2.18.0 | [#1179](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1179) | Fit and Finish UX changes |   |
+| v2.18.0 | [#1182](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1182) | Replace EuiText with EuiTitle for section headers |   |
+| v2.18.0 | [#1191](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1191) | Setting validation for transform APIs |   |
+| v2.18.0 | [#1257](https://github.com/opensearch-project/index-management/pull/1257) | Fixing snapshot bug - partial snapshot detection |   |
+| v2.18.0 | [#1187](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1187) | Create snapshot policy button reload fix |   |
+| v2.18.0 | [#1189](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1189) | Data source initialization fix |   |
+| v2.17.0 | [#1219](https://github.com/opensearch-project/index-management/pull/1219) | Skip execution optimization using cluster service | [#1075](https://github.com/opensearch-project/index-management/issues/1075) |
+| v2.17.0 | [#1222](https://github.com/opensearch-project/index-management/pull/1222) | Security integration test fixes |   |
 
 ### Issues (Design / RFC)
 - [Issue #375](https://github.com/opensearch-project/index-management/issues/375): Feature request for ISM template exclusion patterns

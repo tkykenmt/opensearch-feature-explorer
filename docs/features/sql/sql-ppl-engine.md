@@ -242,56 +242,56 @@ POST /_plugins/_ppl
 - [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Fix: Add hashCode() and equals() to ExprJavaType value class |
-| v3.4.0 | [#4868](https://github.com/opensearch-project/sql/pull/4868) | Fix: LogPatternAggFunction parameter/return logic |
-| v3.4.0 | [#4850](https://github.com/opensearch-project/sql/pull/4850) | Fix: Grouping key field type overwrite |
-| v3.4.0 | [#4841](https://github.com/opensearch-project/sql/pull/4841) | Fix: Memory exhaustion for multiple filtering operations |
-| v3.4.0 | [#4744](https://github.com/opensearch-project/sql/pull/4744) | Fix: Filter push down redundant filter queries |
-| v3.4.0 | [#4454](https://github.com/opensearch-project/sql/pull/4454) | Fix: Remove shared mutable optimizer field (race condition) |
-| v3.4.0 | [#4641](https://github.com/opensearch-project/sql/pull/4641) | Fix: Rex nested capture groups extraction |
-| v3.4.0 | [#4665](https://github.com/opensearch-project/sql/pull/4665) | Fix: CVE-2025-48924 |
-| v3.3.0 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix: count(*) and dc(field) to be capped at MAX_INTEGER |
-| v3.3.0 | [#4407](https://github.com/opensearch-project/sql/pull/4407) | Fix: Mod function should return decimal instead of float |
-| v3.3.0 | [#4360](https://github.com/opensearch-project/sql/pull/4360) | Fix: ClassCastException for value-storing aggregates on nested PPL fields |
-| v3.3.0 | [#4369](https://github.com/opensearch-project/sql/pull/4369) | Fix: No index found should throw IndexNotFoundException |
-| v3.3.0 | [#3613](https://github.com/opensearch-project/sql/pull/3613) | Fix: SQL type mapping for legacy JDBC output |
-| v3.1.0 | [#3660](https://github.com/opensearch-project/sql/pull/3660) | Fix: Long IN-lists causes crash |
-| v3.1.0 | [#3621](https://github.com/opensearch-project/sql/pull/3621) | Fix: Add trimmed project before aggregate to avoid NPE in Calcite |
-| v3.1.0 | [#3693](https://github.com/opensearch-project/sql/pull/3693) | Fix: Error when pushing down script filter with struct field |
-| v3.1.0 | [#3674](https://github.com/opensearch-project/sql/pull/3674) | Fix: Alias type referring to nested field |
-| v3.1.0 | [#3748](https://github.com/opensearch-project/sql/pull/3748) | Fix: ATAN(x, y) and CONV(x, a, b) functions |
-| v3.1.0 | [#3679](https://github.com/opensearch-project/sql/pull/3679) | Fix: Return double with correct precision for UNIX_TIMESTAMP |
-| v3.1.0 | [#3713](https://github.com/opensearch-project/sql/pull/3713) | Fix: Prevent push down limit with offset reach maxResultWindow |
-| v3.1.0 | [#3559](https://github.com/opensearch-project/sql/pull/3559) | Add JSON functions |
-| v3.1.0 | [#3584](https://github.com/opensearch-project/sql/pull/3584) | Add lambda function and array related functions |
-| v3.1.0 | [#3574](https://github.com/opensearch-project/sql/pull/3574) | Implement cryptographic hash UDFs |
-| v3.1.0 | [#3640](https://github.com/opensearch-project/sql/pull/3640) | Add earliest and latest condition functions |
-| v3.1.0 | [#3654](https://github.com/opensearch-project/sql/pull/3654) | Add DISTINCT_COUNT_APPROX function |
-| v3.1.0 | [#3653](https://github.com/opensearch-project/sql/pull/3653) | Support merging object-type fields from multiple indices |
-| v3.1.0 | [#3663](https://github.com/opensearch-project/sql/pull/3663) | Support match_only_text field type |
-| v3.1.0 | [#3698](https://github.com/opensearch-project/sql/pull/3698) | Switch percentile to MergingDigest algorithm |
-| v3.0.0 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge Calcite engine to main |
-| v2.17.0 | [#2877](https://github.com/opensearch-project/sql/pull/2877) | Change default value of plugins.query.size_limit to 10000 |
-| v2.17.0 | [#2896](https://github.com/opensearch-project/sql/pull/2896) | Support common format geo point |
-| v2.17.0 | [#2906](https://github.com/opensearch-project/sql/pull/2906) | Add TakeOrderedOperator |
-| v2.17.0 | [#2970](https://github.com/opensearch-project/sql/pull/2970) | IF function complex predicate support in PPL |
-| v2.17.0 | [#2842](https://github.com/opensearch-project/sql/pull/2842) | Boolean function in PPL case insensitivity fix |
-| v2.17.0 | [#2884](https://github.com/opensearch-project/sql/pull/2884) | Restrict UDF functions in async query API |
-| v2.17.0 | [#2890](https://github.com/opensearch-project/sql/pull/2890) | Update SqlBaseParser for build fix |
-| v2.17.0 | [#2972](https://github.com/opensearch-project/sql/pull/2972) | Fix SparkExecutionEngineConfigClusterSetting deserialize issue |
-| v2.17.0 | [#2982](https://github.com/opensearch-project/sql/pull/2982) | Fix jobType for Batch and IndexDML query |
-| v2.17.0 | [#2983](https://github.com/opensearch-project/sql/pull/2983) | Fix handler for existing query |
-| v2.17.0 | [#2996](https://github.com/opensearch-project/sql/pull/2996) | Fix BWC integration test |
-| v3.0.0 | [#3243](https://github.com/opensearch-project/sql/pull/3243) | Add `json` function and `cast(x as json)` |
-| v3.0.0 | [#3263](https://github.com/opensearch-project/sql/pull/3263) | Improved patterns command with Brain algorithm |
-| v3.0.0 | [#2806](https://github.com/opensearch-project/sql/pull/2806) | Support line and block comments in PPL |
-| v3.0.0 | [#3522](https://github.com/opensearch-project/sql/pull/3522) | Function framework refactoring |
-| v3.0.0 | [#3304](https://github.com/opensearch-project/sql/pull/3304) | Add functions to SQL query validator |
-| v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support |
-| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |
-| v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement |
-| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |
-| v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage |
-| v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Fix: Add hashCode() and equals() to ExprJavaType value class | [#4726](https://github.com/opensearch-project/sql/issues/4726) |
+| v3.4.0 | [#4868](https://github.com/opensearch-project/sql/pull/4868) | Fix: LogPatternAggFunction parameter/return logic | [#4866](https://github.com/opensearch-project/sql/issues/4866) |
+| v3.4.0 | [#4850](https://github.com/opensearch-project/sql/pull/4850) | Fix: Grouping key field type overwrite | [#4845](https://github.com/opensearch-project/sql/issues/4845) |
+| v3.4.0 | [#4841](https://github.com/opensearch-project/sql/pull/4841) | Fix: Memory exhaustion for multiple filtering operations |   |
+| v3.4.0 | [#4744](https://github.com/opensearch-project/sql/pull/4744) | Fix: Filter push down redundant filter queries | [#4729](https://github.com/opensearch-project/sql/issues/4729) |
+| v3.4.0 | [#4454](https://github.com/opensearch-project/sql/pull/4454) | Fix: Remove shared mutable optimizer field (race condition) |   |
+| v3.4.0 | [#4641](https://github.com/opensearch-project/sql/pull/4641) | Fix: Rex nested capture groups extraction | [#4466](https://github.com/opensearch-project/sql/issues/4466) |
+| v3.4.0 | [#4665](https://github.com/opensearch-project/sql/pull/4665) | Fix: CVE-2025-48924 |   |
+| v3.3.0 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix: count(*) and dc(field) to be capped at MAX_INTEGER |   |
+| v3.3.0 | [#4407](https://github.com/opensearch-project/sql/pull/4407) | Fix: Mod function should return decimal instead of float | [#4406](https://github.com/opensearch-project/sql/issues/4406) |
+| v3.3.0 | [#4360](https://github.com/opensearch-project/sql/pull/4360) | Fix: ClassCastException for value-storing aggregates on nested PPL fields | [#4359](https://github.com/opensearch-project/sql/issues/4359) |
+| v3.3.0 | [#4369](https://github.com/opensearch-project/sql/pull/4369) | Fix: No index found should throw IndexNotFoundException | [#4342](https://github.com/opensearch-project/sql/issues/4342) |
+| v3.3.0 | [#3613](https://github.com/opensearch-project/sql/pull/3613) | Fix: SQL type mapping for legacy JDBC output | [#1545](https://github.com/opensearch-project/sql/issues/1545) |
+| v3.1.0 | [#3660](https://github.com/opensearch-project/sql/pull/3660) | Fix: Long IN-lists causes crash | [#1469](https://github.com/opensearch-project/sql/issues/1469) |
+| v3.1.0 | [#3621](https://github.com/opensearch-project/sql/pull/3621) | Fix: Add trimmed project before aggregate to avoid NPE in Calcite | [#3566](https://github.com/opensearch-project/sql/issues/3566) |
+| v3.1.0 | [#3693](https://github.com/opensearch-project/sql/pull/3693) | Fix: Error when pushing down script filter with struct field | [#3312](https://github.com/opensearch-project/sql/issues/3312) |
+| v3.1.0 | [#3674](https://github.com/opensearch-project/sql/pull/3674) | Fix: Alias type referring to nested field | [#3646](https://github.com/opensearch-project/sql/issues/3646) |
+| v3.1.0 | [#3748](https://github.com/opensearch-project/sql/pull/3748) | Fix: ATAN(x, y) and CONV(x, a, b) functions | [#3672](https://github.com/opensearch-project/sql/issues/3672) |
+| v3.1.0 | [#3679](https://github.com/opensearch-project/sql/pull/3679) | Fix: Return double with correct precision for UNIX_TIMESTAMP | [#3611](https://github.com/opensearch-project/sql/issues/3611) |
+| v3.1.0 | [#3713](https://github.com/opensearch-project/sql/pull/3713) | Fix: Prevent push down limit with offset reach maxResultWindow | [#3102](https://github.com/opensearch-project/sql/issues/3102) |
+| v3.1.0 | [#3559](https://github.com/opensearch-project/sql/pull/3559) | Add JSON functions |   |
+| v3.1.0 | [#3584](https://github.com/opensearch-project/sql/pull/3584) | Add lambda function and array related functions |   |
+| v3.1.0 | [#3574](https://github.com/opensearch-project/sql/pull/3574) | Implement cryptographic hash UDFs | [#3573](https://github.com/opensearch-project/sql/issues/3573) |
+| v3.1.0 | [#3640](https://github.com/opensearch-project/sql/pull/3640) | Add earliest and latest condition functions |   |
+| v3.1.0 | [#3654](https://github.com/opensearch-project/sql/pull/3654) | Add DISTINCT_COUNT_APPROX function |   |
+| v3.1.0 | [#3653](https://github.com/opensearch-project/sql/pull/3653) | Support merging object-type fields from multiple indices |   |
+| v3.1.0 | [#3663](https://github.com/opensearch-project/sql/pull/3663) | Support match_only_text field type |   |
+| v3.1.0 | [#3698](https://github.com/opensearch-project/sql/pull/3698) | Switch percentile to MergingDigest algorithm | [#3697](https://github.com/opensearch-project/sql/issues/3697) |
+| v3.0.0 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge Calcite engine to main |   |
+| v2.17.0 | [#2877](https://github.com/opensearch-project/sql/pull/2877) | Change default value of plugins.query.size_limit to 10000 |   |
+| v2.17.0 | [#2896](https://github.com/opensearch-project/sql/pull/2896) | Support common format geo point |   |
+| v2.17.0 | [#2906](https://github.com/opensearch-project/sql/pull/2906) | Add TakeOrderedOperator |   |
+| v2.17.0 | [#2970](https://github.com/opensearch-project/sql/pull/2970) | IF function complex predicate support in PPL |   |
+| v2.17.0 | [#2842](https://github.com/opensearch-project/sql/pull/2842) | Boolean function in PPL case insensitivity fix |   |
+| v2.17.0 | [#2884](https://github.com/opensearch-project/sql/pull/2884) | Restrict UDF functions in async query API |   |
+| v2.17.0 | [#2890](https://github.com/opensearch-project/sql/pull/2890) | Update SqlBaseParser for build fix |   |
+| v2.17.0 | [#2972](https://github.com/opensearch-project/sql/pull/2972) | Fix SparkExecutionEngineConfigClusterSetting deserialize issue |   |
+| v2.17.0 | [#2982](https://github.com/opensearch-project/sql/pull/2982) | Fix jobType for Batch and IndexDML query |   |
+| v2.17.0 | [#2983](https://github.com/opensearch-project/sql/pull/2983) | Fix handler for existing query |   |
+| v2.17.0 | [#2996](https://github.com/opensearch-project/sql/pull/2996) | Fix BWC integration test |   |
+| v3.0.0 | [#3243](https://github.com/opensearch-project/sql/pull/3243) | Add `json` function and `cast(x as json)` | [#3209](https://github.com/opensearch-project/sql/issues/3209) |
+| v3.0.0 | [#3263](https://github.com/opensearch-project/sql/pull/3263) | Improved patterns command with Brain algorithm | [#3251](https://github.com/opensearch-project/sql/issues/3251) |
+| v3.0.0 | [#2806](https://github.com/opensearch-project/sql/pull/2806) | Support line and block comments in PPL | [#2805](https://github.com/opensearch-project/sql/issues/2805) |
+| v3.0.0 | [#3522](https://github.com/opensearch-project/sql/pull/3522) | Function framework refactoring | [#3493](https://github.com/opensearch-project/sql/issues/3493) |
+| v3.0.0 | [#3304](https://github.com/opensearch-project/sql/pull/3304) | Add functions to SQL query validator | [#3237](https://github.com/opensearch-project/sql/issues/3237) |
+| v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support | [#3286](https://github.com/opensearch-project/sql/issues/3286) |
+| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |   |
+| v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement | [#3281](https://github.com/opensearch-project/sql/issues/3281) |
+| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |   |
+| v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage | [#3284](https://github.com/opensearch-project/sql/issues/3284) |
+| v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format | [#3280](https://github.com/opensearch-project/sql/issues/3280) |

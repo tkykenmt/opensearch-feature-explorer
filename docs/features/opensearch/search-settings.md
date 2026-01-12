@@ -113,6 +113,6 @@ The query string length limit helps protect against:
 - [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Initial implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Introduced search.query.max_query_string_length setting |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Introduced search.query.max_query_string_length setting |   |

@@ -132,9 +132,9 @@ PUT /my-index/_settings
 - [Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Best practices blog
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18917](https://github.com/opensearch-project/OpenSearch/pull/18917) | Fix unnecessary refreshes during update retry conflicts |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18917](https://github.com/opensearch-project/OpenSearch/pull/18917) | Fix unnecessary refreshes during update retry conflicts | [#15261](https://github.com/opensearch-project/OpenSearch/issues/15261) |
 
 ### Issues (Design / RFC)
 - [Issue #15261](https://github.com/opensearch-project/OpenSearch/issues/15261): Bug report for unnecessary refresh on update conflicts

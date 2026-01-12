@@ -146,6 +146,6 @@ Translog translog = new LocalTranslog(
 - [opensearch-storage-encryption#39](https://github.com/opensearch-project/opensearch-storage-encryption/pull/39): Related storage encryption use case
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18918](https://github.com/opensearch-project/OpenSearch/pull/18918) | Add Channel Factory parameter to Translog |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18918](https://github.com/opensearch-project/OpenSearch/pull/18918) | Add Channel Factory parameter to Translog |   |

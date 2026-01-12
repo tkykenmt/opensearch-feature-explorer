@@ -147,8 +147,8 @@ forecast_read_access:
 - [Security Dashboards Plugin PR #2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253): Frontend dropdown update
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#5386](https://github.com/opensearch-project/security/pull/5386) | Add forecast roles and permissions |
-| v3.1.0 | [#5405](https://github.com/opensearch-project/security/pull/5405) | Add missing cluster:monitor permission |
-| v3.1.0 | [#5412](https://github.com/opensearch-project/security/pull/5412) | Add missing mapping get permission |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#5386](https://github.com/opensearch-project/security/pull/5386) | Add forecast roles and permissions |   |
+| v3.1.0 | [#5405](https://github.com/opensearch-project/security/pull/5405) | Add missing cluster:monitor permission |   |
+| v3.1.0 | [#5412](https://github.com/opensearch-project/security/pull/5412) | Add missing mapping get permission |   |

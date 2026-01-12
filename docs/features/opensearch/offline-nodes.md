@@ -149,9 +149,9 @@ if (assigned) {
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#13574](https://github.com/opensearch-project/OpenSearch/pull/13574) | Adds offline-tasks library containing various interfaces for Offline Background Tasks |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#13574](https://github.com/opensearch-project/OpenSearch/pull/13574) | Adds offline-tasks library containing various interfaces for Offline Background Tasks | [#13575](https://github.com/opensearch-project/OpenSearch/issues/13575) |
 
 ### Issues (Design / RFC)
 - [Issue #13575](https://github.com/opensearch-project/OpenSearch/issues/13575): Add a new library containing required abstractions to run Offline Background Tasks

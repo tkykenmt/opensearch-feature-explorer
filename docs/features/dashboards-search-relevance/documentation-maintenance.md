@@ -43,6 +43,6 @@ Documentation must be kept up-to-date as the project evolves.
 - [dashboards-search-relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |   |

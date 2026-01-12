@@ -123,18 +123,18 @@ graph TB
 - [Index Management Dashboards Plugin Repository](https://github.com/opensearch-project/index-management-dashboards-plugin)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1106](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1106) | Navigation redesign |
-| v2.17.0 | [#1123](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1123) | ISM pages look and feel |
-| v2.17.0 | [#1132](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1132) | Snapshots, datastreams, rollups styling |
-| v2.17.0 | [#1141](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1141) | MDS support in Shrink page |
-| v2.17.0 | [#1143](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1143) | Notification modal on Indexes page |
-| v2.17.0 | [#1148](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1148) | Snapshot Management consistency |
-| v2.17.0 | [#1150](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1150) | ISM policy & Composable template styling |
-| v2.17.0 | [#1153](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1153) | DataStreams and Rollups styling |
-| v2.17.0 | [#1154](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1154) | Indexes and Transform styling |
-| v2.17.0 | [#1155](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1155) | Aliases, Templates styling |
-| v2.17.0 | [#1157](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1157) | Snapshot Management pages styling |
-| v2.17.0 | [#1164](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1164) | Job count in titles |
-| v2.17.0 | [#1166](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1166) | History navigation bug fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#1106](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1106) | Navigation redesign |   |
+| v2.17.0 | [#1123](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1123) | ISM pages look and feel |   |
+| v2.17.0 | [#1132](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1132) | Snapshots, datastreams, rollups styling |   |
+| v2.17.0 | [#1141](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1141) | MDS support in Shrink page |   |
+| v2.17.0 | [#1143](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1143) | Notification modal on Indexes page |   |
+| v2.17.0 | [#1148](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1148) | Snapshot Management consistency |   |
+| v2.17.0 | [#1150](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1150) | ISM policy & Composable template styling |   |
+| v2.17.0 | [#1153](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1153) | DataStreams and Rollups styling |   |
+| v2.17.0 | [#1154](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1154) | Indexes and Transform styling |   |
+| v2.17.0 | [#1155](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1155) | Aliases, Templates styling |   |
+| v2.17.0 | [#1157](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1157) | Snapshot Management pages styling |   |
+| v2.17.0 | [#1164](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1164) | Job count in titles |   |
+| v2.17.0 | [#1166](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1166) | History navigation bug fixes |   |

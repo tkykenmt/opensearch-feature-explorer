@@ -185,7 +185,7 @@ GET /sales/_search
 - [Lucene DocValues](https://lucene.apache.org/core/9_0_0/core/org/apache/lucene/index/DocValues.html)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17643](https://github.com/opensearch-project/OpenSearch/pull/17643) | Unwrap singleton DocValues in date histogram aggregation |
-| v3.0.0 | [#17740](https://github.com/opensearch-project/OpenSearch/pull/17740) | Unwrap singleton DocValues in global ordinal value source of composite aggregation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17643](https://github.com/opensearch-project/OpenSearch/pull/17643) | Unwrap singleton DocValues in date histogram aggregation |   |
+| v3.0.0 | [#17740](https://github.com/opensearch-project/OpenSearch/pull/17740) | Unwrap singleton DocValues in global ordinal value source of composite aggregation |   |

@@ -136,12 +136,12 @@ When `skip_validating_missing_parameters` is `true`, the `${parameters.role}` pl
 - [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Connector overview and examples
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4121](https://github.com/opensearch-project/ml-commons/pull/4121) | Parameter Passing for Predict via Remote Connector |
-| v3.3.0 | [#4175](https://github.com/opensearch-project/ml-commons/pull/4175) | Move HttpClientFactory to common to expose to other components |
-| v2.17.0 | [#2830](https://github.com/opensearch-project/ml-commons/pull/2830) | Backport: Support skip_validating_missing_parameters in connector |
-| v2.17.0 | [#2812](https://github.com/opensearch-project/ml-commons/pull/2812) | Support skip_validating_missing_parameters in connector |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4121](https://github.com/opensearch-project/ml-commons/pull/4121) | Parameter Passing for Predict via Remote Connector | [#4105](https://github.com/opensearch-project/ml-commons/issues/4105) |
+| v3.3.0 | [#4175](https://github.com/opensearch-project/ml-commons/pull/4175) | Move HttpClientFactory to common to expose to other components |   |
+| v2.17.0 | [#2830](https://github.com/opensearch-project/ml-commons/pull/2830) | Backport: Support skip_validating_missing_parameters in connector |   |
+| v2.17.0 | [#2812](https://github.com/opensearch-project/ml-commons/pull/2812) | Support skip_validating_missing_parameters in connector | [#2712](https://github.com/opensearch-project/ml-commons/issues/2712) |
 
 ### Issues (Design / RFC)
 - [Issue #4105](https://github.com/opensearch-project/ml-commons/issues/4105): Feature request for parameter passing in predict API

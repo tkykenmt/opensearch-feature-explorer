@@ -148,10 +148,10 @@ The API returns indexing buffer information with the following fields:
 - [PR #17070](https://github.com/opensearch-project/OpenSearch/pull/17070): Indexing buffer format fix
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17070](https://github.com/opensearch-project/OpenSearch/pull/17070) | Breaking change: Fix swapped indexing buffer field formats |
-| v3.0.0 | [#12497](https://github.com/opensearch-project/OpenSearch/pull/12497) | Breaking change: Do not request search_pipelines by default |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17070](https://github.com/opensearch-project/OpenSearch/pull/17070) | Breaking change: Fix swapped indexing buffer field formats | [#16910](https://github.com/opensearch-project/OpenSearch/issues/16910) |
+| v3.0.0 | [#12497](https://github.com/opensearch-project/OpenSearch/pull/12497) | Breaking change: Do not request search_pipelines by default |   |
 
 ### Issues (Design / RFC)
 - [Issue #16910](https://github.com/opensearch-project/OpenSearch/issues/16910): Bug report for swapped field formats

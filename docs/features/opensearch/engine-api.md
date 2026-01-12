@@ -141,11 +141,11 @@ public enum Type {
 - [Introduction to OpenSearch Plugins](https://opensearch.org/blog/plugins-intro/): Blog post explaining Engine Plugin interface
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19551](https://github.com/opensearch-project/OpenSearch/pull/19551) | Move prepareIndex and prepareDelete methods to Engine class |
-| v3.4.0 | [#19950](https://github.com/opensearch-project/OpenSearch/pull/19950) | Make NoOpResult constructors public |
-| v3.3.0 | [#19275](https://github.com/opensearch-project/OpenSearch/pull/19275) | Make all methods in Engine.Result public |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19551](https://github.com/opensearch-project/OpenSearch/pull/19551) | Move prepareIndex and prepareDelete methods to Engine class | [#19550](https://github.com/opensearch-project/OpenSearch/issues/19550) |
+| v3.4.0 | [#19950](https://github.com/opensearch-project/OpenSearch/pull/19950) | Make NoOpResult constructors public | [#19949](https://github.com/opensearch-project/OpenSearch/issues/19949) |
+| v3.3.0 | [#19275](https://github.com/opensearch-project/OpenSearch/pull/19275) | Make all methods in Engine.Result public |   |
 
 ### Issues (Design / RFC)
 - [Issue #19550](https://github.com/opensearch-project/OpenSearch/issues/19550): Feature request for custom document parsing

@@ -163,10 +163,10 @@ GET _plugins/_asynchronous_search/FklfVlU4eFdIUTh1Q1hyM3ZnT19fUVEUd29KLWZYUUI3Tz
 - [GitHub Repository](https://github.com/opensearch-project/asynchronous-search)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#754](https://github.com/opensearch-project/asynchronous-search/pull/754) | Gradle 8.14.3 upgrade and JDK 24 CI support |
-| v3.2.0 | [#748](https://github.com/opensearch-project/asynchronous-search/pull/748) | Maven snapshot publishing endpoint migration |
-| v3.0.0 | [#724](https://github.com/opensearch-project/asynchronous-search/pull/724) | Version increment for 3.0.0 GA |
-| v3.0.0 | [#698](https://github.com/opensearch-project/asynchronous-search/pull/698) | JDK23 support and Gradle 8.10.2 |
-| v3.0.0 | [#582](https://github.com/opensearch-project/asynchronous-search/pull/582) | JDK21 baseline for 3.0 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#754](https://github.com/opensearch-project/asynchronous-search/pull/754) | Gradle 8.14.3 upgrade and JDK 24 CI support |   |
+| v3.2.0 | [#748](https://github.com/opensearch-project/asynchronous-search/pull/748) | Maven snapshot publishing endpoint migration |   |
+| v3.0.0 | [#724](https://github.com/opensearch-project/asynchronous-search/pull/724) | Version increment for 3.0.0 GA |   |
+| v3.0.0 | [#698](https://github.com/opensearch-project/asynchronous-search/pull/698) | JDK23 support and Gradle 8.10.2 |   |
+| v3.0.0 | [#582](https://github.com/opensearch-project/asynchronous-search/pull/582) | JDK21 baseline for 3.0 | [#581](https://github.com/opensearch-project/asynchronous-search/issues/581) |

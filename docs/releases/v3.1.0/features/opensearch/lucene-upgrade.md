@@ -59,12 +59,12 @@ DisiPriorityQueue queue = DisiPriorityQueue.ofMaxSize(size);
 - [Apache Lucene 10.2.0 Release Notes](https://lucene.apache.org/core/10_2_0/changes/Changes.html)
 
 ### Pull Requests
-| Repository | PR | Description |
-|------------|-----|-------------|
-| OpenSearch | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Core Lucene upgrade to 10.2.1 |
-| OpenSearch | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction |
-| neural-search | [#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies |
-| opensearch-learning-to-rank-base | [#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes |
+| Repository | PR | Description | Related Issue |
+|------------|-----|-------------|---------------|
+| OpenSearch | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Core Lucene upgrade to 10.2.1 |   |
+| OpenSearch | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction | [#18394](https://github.com/opensearch-project/OpenSearch/issues/18394) |
+| neural-search | [#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies |   |
+| opensearch-learning-to-rank-base | [#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes |   |
 
 ### Issues (Design / RFC)
 - [Issue #184](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/184): Learning to Rank compatibility issue

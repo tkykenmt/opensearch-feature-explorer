@@ -151,6 +151,6 @@ When security is enabled (`-Dsecurity=true`), both clusters are configured with:
 - [build.gradle](https://github.com/opensearch-project/anomaly-detection/blob/main/build.gradle): Gradle build configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Initial implementation of dual cluster gradle run |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Initial implementation of dual cluster gradle run |   |

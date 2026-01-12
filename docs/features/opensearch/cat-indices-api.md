@@ -152,9 +152,9 @@ yellow open   logs    abc123def456ghi789jkl   5   1     100000     50.2mb
 - [CAT API Overview](https://docs.opensearch.org/3.0/api-reference/cat/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18405](https://github.com/opensearch-project/OpenSearch/pull/18405) | Add last index request timestamp columns |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18405](https://github.com/opensearch-project/OpenSearch/pull/18405) | Add last index request timestamp columns | [#10766](https://github.com/opensearch-project/OpenSearch/issues/10766) |
 
 ### Issues (Design / RFC)
 - [Issue #10766](https://github.com/opensearch-project/OpenSearch/issues/10766): Stats API to identify which indices are getting updates

@@ -177,12 +177,12 @@ class MyPlugin {
 - [Source Code](https://github.com/opensearch-project/OpenSearch-Dashboards/tree/main/src/plugins/content_management): Plugin implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8624) | Add Page API to allow remove section |
-| v2.17.0 | [#7651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7651) | Allow updating section input after page rendered |
-| v2.17.0 | [#7633](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7633) | Fix content provider ID exception handling |
-| v2.16.0 | [#7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201) | Initial implementation - new core plugin for dynamic content rendering |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8624) | Add Page API to allow remove section | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.17.0 | [#7651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7651) | Allow updating section input after page rendered | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.17.0 | [#7633](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7633) | Fix content provider ID exception handling | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201) | Initial implementation - new core plugin for dynamic content rendering | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 
 ### Issues (Design / RFC)
 - [PR #7228](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7228): RFC for Content Management plugin

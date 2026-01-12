@@ -183,9 +183,9 @@ QueryCollectorArguments args = new QueryCollectorArguments.Builder()
 - [PR #18007](https://github.com/opensearch-project/OpenSearch/pull/18007): POC for Hybrid Search in core (motivation and benchmarks)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18637](https://github.com/opensearch-project/OpenSearch/pull/18637) | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18637](https://github.com/opensearch-project/OpenSearch/pull/18637) | Initial implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #18278](https://github.com/opensearch-project/OpenSearch/issues/18278): Original feature request

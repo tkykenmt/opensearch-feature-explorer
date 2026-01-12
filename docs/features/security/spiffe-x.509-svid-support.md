@@ -125,6 +125,6 @@ Example SPIFFE ID format:
 - [X509-SVID Specification](https://github.com/spiffe/spiffe/blob/main/standards/X509-SVID.md)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5521](https://github.com/opensearch-project/security/pull/5521) | Initial implementation of SPIFFEPrincipalExtractor |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#5521](https://github.com/opensearch-project/security/pull/5521) | Initial implementation of SPIFFEPrincipalExtractor |   |

@@ -136,9 +136,9 @@ flowchart TB
 - [JoinHelper.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/coordination/JoinHelper.java): Source implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19307](https://github.com/opensearch-project/OpenSearch/pull/19307) | Fix: Cache serialised cluster state based on cluster state version and node version |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19307](https://github.com/opensearch-project/OpenSearch/pull/19307) | Fix: Cache serialised cluster state based on cluster state version and node version |   |
 
 ### Issues (Design / RFC)
 - [Issue #19272](https://github.com/opensearch-project/OpenSearch/issues/19272): [BUG] Join Failure - Mixed Version cluster

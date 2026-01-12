@@ -152,10 +152,10 @@ A value of `19.99` with `scaling_factor: 100` is stored as `1999`.
 - [Mapping parameters](https://docs.opensearch.org/3.0/field-types/mapping-parameters/index/): Mapping parameter reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18706](https://github.com/opensearch-project/OpenSearch/pull/18706) | Fix field-level ignore_malformed override |
-| v3.2.0 | [#18952](https://github.com/opensearch-project/OpenSearch/pull/18952) | Fix scaled_float encodePoint method |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18706](https://github.com/opensearch-project/OpenSearch/pull/18706) | Fix field-level ignore_malformed override | [#16599](https://github.com/opensearch-project/OpenSearch/issues/16599) |
+| v3.2.0 | [#18952](https://github.com/opensearch-project/OpenSearch/pull/18952) | Fix scaled_float encodePoint method | [#18546](https://github.com/opensearch-project/OpenSearch/issues/18546) |
 
 ### Issues (Design / RFC)
 - [Issue #16599](https://github.com/opensearch-project/OpenSearch/issues/16599): Bug report for ignore_malformed override

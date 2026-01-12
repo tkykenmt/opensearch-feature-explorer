@@ -148,27 +148,27 @@ i18n.translate('title', { defaultMessage: 'Workspace' });
 - [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8411](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8411) | Add i18n checks to PR workflows |
-| v2.18.0 | [#8424](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8424) | Add preliminary translations for 14 locales |
-| v2.18.0 | [#8392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8392) | Fix dynamic i18n in core |
-| v2.18.0 | [#8393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8393) | Fix dynamic i18n in console plugin |
-| v2.18.0 | [#8394](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8394) | Fix dynamic i18n in dataSourceManagement |
-| v2.18.0 | [#8516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8516) | Backport #8394 to 2.x branch |
-| v2.18.0 | [#8396](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8396) | Fix dynamic i18n in discover plugin |
-| v2.18.0 | [#8397](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8397) | Fix dynamic i18n in queryEnhancements |
-| v2.18.0 | [#8398](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8398) | Fix dynamic i18n in indexPatternManagement |
-| v2.18.0 | [#8401](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8401) | Fix unprefixed identifiers in dashboard |
-| v2.18.0 | [#8402](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8402) | Fix TopNavControlDescriptionData in dataSource |
-| v2.18.0 | [#8403](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8403) | Fix dynamic i18n in home plugin |
-| v2.18.0 | [#8404](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8404) | Fix dynamic i18n in opensearchDashboardsReact |
-| v2.18.0 | [#8406](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8406) | Fix unprefixed identifiers in visTypeVega |
-| v2.18.0 | [#8407](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8407) | Fix duplicate identifiers in visualize |
-| v2.18.0 | [#8408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8408) | Fix unprefixed identifiers in management |
-| v2.18.0 | [#8409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8409) | Fix identifiers in visAugmenter |
-| v2.18.0 | [#8412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8412) | Fix unprefixed i18n identifiers in examples |
-| v2.18.0 | [#8423](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8423) | Add precommit hook to validate i18n |
-| v2.18.0 | [#8483](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8483) | Fix inconsistent i18n key names |
-| v2.18.0 | [#8399](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8399) | Fix dynamic i18n in visBuilder plugin |
-| v2.18.0 | [#8674](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8674) | Fix unsupported language from localStorage |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8411](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8411) | Add i18n checks to PR workflows |   |
+| v2.18.0 | [#8424](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8424) | Add preliminary translations for 14 locales |   |
+| v2.18.0 | [#8392](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8392) | Fix dynamic i18n in core |   |
+| v2.18.0 | [#8393](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8393) | Fix dynamic i18n in console plugin |   |
+| v2.18.0 | [#8394](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8394) | Fix dynamic i18n in dataSourceManagement |   |
+| v2.18.0 | [#8516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8516) | Backport #8394 to 2.x branch |   |
+| v2.18.0 | [#8396](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8396) | Fix dynamic i18n in discover plugin |   |
+| v2.18.0 | [#8397](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8397) | Fix dynamic i18n in queryEnhancements |   |
+| v2.18.0 | [#8398](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8398) | Fix dynamic i18n in indexPatternManagement |   |
+| v2.18.0 | [#8401](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8401) | Fix unprefixed identifiers in dashboard |   |
+| v2.18.0 | [#8402](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8402) | Fix TopNavControlDescriptionData in dataSource |   |
+| v2.18.0 | [#8403](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8403) | Fix dynamic i18n in home plugin |   |
+| v2.18.0 | [#8404](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8404) | Fix dynamic i18n in opensearchDashboardsReact |   |
+| v2.18.0 | [#8406](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8406) | Fix unprefixed identifiers in visTypeVega |   |
+| v2.18.0 | [#8407](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8407) | Fix duplicate identifiers in visualize |   |
+| v2.18.0 | [#8408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8408) | Fix unprefixed identifiers in management |   |
+| v2.18.0 | [#8409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8409) | Fix identifiers in visAugmenter |   |
+| v2.18.0 | [#8412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8412) | Fix unprefixed i18n identifiers in examples |   |
+| v2.18.0 | [#8423](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8423) | Add precommit hook to validate i18n |   |
+| v2.18.0 | [#8483](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8483) | Fix inconsistent i18n key names |   |
+| v2.18.0 | [#8399](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8399) | Fix dynamic i18n in visBuilder plugin |   |
+| v2.18.0 | [#8674](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8674) | Fix unsupported language from localStorage | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

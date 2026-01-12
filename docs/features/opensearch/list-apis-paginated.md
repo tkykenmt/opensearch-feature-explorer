@@ -201,11 +201,11 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 - [List shards Documentation](https://docs.opensearch.org/2.18/api-reference/list/list-shards/): List shards API
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Implementing pagination for `_cat/indices` API |
-| v2.18.0 | [#14641](https://github.com/opensearch-project/OpenSearch/pull/14641) | Implementing pagination for `_cat/shards` |
-| v2.18.0 | [#15986](https://github.com/opensearch-project/OpenSearch/pull/15986) | Add changes to block calls in cat shards, indices and segments based on dynamic limit settings |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Implementing pagination for `_cat/indices` API | [#14258](https://github.com/opensearch-project/OpenSearch/issues/14258) |
+| v2.18.0 | [#14641](https://github.com/opensearch-project/OpenSearch/pull/14641) | Implementing pagination for `_cat/shards` | [#14257](https://github.com/opensearch-project/OpenSearch/issues/14257) |
+| v2.18.0 | [#15986](https://github.com/opensearch-project/OpenSearch/pull/15986) | Add changes to block calls in cat shards, indices and segments based on dynamic limit settings | [#15954](https://github.com/opensearch-project/OpenSearch/issues/15954) |
 
 ### Issues (Design / RFC)
 - [Issue #14258](https://github.com/opensearch-project/OpenSearch/issues/14258): Paginate `_cat/indices` API

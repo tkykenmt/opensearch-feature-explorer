@@ -132,13 +132,13 @@ Each batch returns a separate JSON response:
 - [Streaming Bulk API Documentation](https://docs.opensearch.org/latest/api-reference/document-apis/bulk-streaming/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18599](https://github.com/opensearch-project/OpenSearch/pull/18599) | Fix HTTP/2 communication when reactor-netty is enabled |
-| v2.18.0 | [#16337](https://github.com/opensearch-project/OpenSearch/pull/16337) | Fix intermittent newline termination failures |
-| v2.18.0 | [#16158](https://github.com/opensearch-project/OpenSearch/pull/16158) | Fix streaming bulk request hangs |
-| v2.17.0 | [#15381](https://github.com/opensearch-project/OpenSearch/pull/15381) | Introduce bulk HTTP API streaming flavor |
-| v2.15.0 | [#13772](https://github.com/opensearch-project/OpenSearch/pull/13772) | Enhance RestAction with request/response streaming support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18599](https://github.com/opensearch-project/OpenSearch/pull/18599) | Fix HTTP/2 communication when reactor-netty is enabled | [#18559](https://github.com/opensearch-project/OpenSearch/issues/18559) |
+| v2.18.0 | [#16337](https://github.com/opensearch-project/OpenSearch/pull/16337) | Fix intermittent newline termination failures | [#16214](https://github.com/opensearch-project/OpenSearch/issues/16214) |
+| v2.18.0 | [#16158](https://github.com/opensearch-project/OpenSearch/pull/16158) | Fix streaming bulk request hangs | [#16035](https://github.com/opensearch-project/OpenSearch/issues/16035) |
+| v2.17.0 | [#15381](https://github.com/opensearch-project/OpenSearch/pull/15381) | Introduce bulk HTTP API streaming flavor | [#9070](https://github.com/opensearch-project/OpenSearch/issues/9070) |
+| v2.15.0 | [#13772](https://github.com/opensearch-project/OpenSearch/pull/13772) | Enhance RestAction with request/response streaming support | [#9071](https://github.com/opensearch-project/OpenSearch/issues/9071) |
 
 ### Issues (Design / RFC)
 - [Issue #9065](https://github.com/opensearch-project/OpenSearch/issues/9065): Streaming Bulk API tracking issue

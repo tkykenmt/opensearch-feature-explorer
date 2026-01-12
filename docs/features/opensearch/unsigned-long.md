@@ -168,10 +168,10 @@ POST my_index/_search
 - [Numeric Field Types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Overview of all numeric types
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17207](https://github.com/opensearch-project/OpenSearch/pull/17207) | Fix unsigned long sorting assertion in LongHashSet |
-| v2.8.0 | - | Initial implementation of unsigned_long field type |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17207](https://github.com/opensearch-project/OpenSearch/pull/17207) | Fix unsigned long sorting assertion in LongHashSet | [#17206](https://github.com/opensearch-project/OpenSearch/issues/17206) |
+| v2.8.0 | - | Initial implementation of unsigned_long field type |   |
 
 ### Issues (Design / RFC)
 - [Issue #17206](https://github.com/opensearch-project/OpenSearch/issues/17206): Bug report for LongHashSet assertion error

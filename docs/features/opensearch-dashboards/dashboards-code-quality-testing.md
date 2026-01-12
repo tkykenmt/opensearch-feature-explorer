@@ -128,17 +128,17 @@ yarn lint
 - [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#9922](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9922) | Add guidelines on testing and development |
-| v3.2.0 | [#9931](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9931) | Use `// @ts-expect-error` instead of ts_error_baseline |
-| v3.2.0 | [#9912](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9912) | Refactor TS types of explore visualization interfaces |
-| v3.2.0 | [#10124](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10124) | Split page components into smaller container components |
-| v3.2.0 | [#10263](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10263) | Add cypress test for default vis on rule matching |
-| v3.2.0 | [#10288](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10288) | Add integ tests for New Autocomplete experience in Explore |
-| v3.2.0 | [#10290](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10290) | Re-enable recent query cypress test for explore |
-| v3.2.0 | [#10299](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10299) | Cypress tests for AI mode for explore |
-| v3.2.0 | [#10302](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10302) | Add Tests for Filter In/Filter Out Actions in Explore |
-| v3.2.0 | [#10307](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10307) | Unskip saved queries test for explore |
-| v3.2.0 | [#10310](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10310) | Add Test to validate PPL query not starting with source |
-| v3.2.0 | [#10328](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10328) | Fixed linting error and update caniuse version |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#9922](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9922) | Add guidelines on testing and development |   |
+| v3.2.0 | [#9931](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9931) | Use `// @ts-expect-error` instead of ts_error_baseline |   |
+| v3.2.0 | [#9912](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9912) | Refactor TS types of explore visualization interfaces | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10124](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10124) | Split page components into smaller container components | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10263](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10263) | Add cypress test for default vis on rule matching | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10288](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10288) | Add integ tests for New Autocomplete experience in Explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10290](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10290) | Re-enable recent query cypress test for explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10299](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10299) | Cypress tests for AI mode for explore |   |
+| v3.2.0 | [#10302](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10302) | Add Tests for Filter In/Filter Out Actions in Explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10307](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10307) | Unskip saved queries test for explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10310](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10310) | Add Test to validate PPL query not starting with source | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10328](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10328) | Fixed linting error and update caniuse version | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

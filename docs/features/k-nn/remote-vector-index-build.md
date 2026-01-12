@@ -210,19 +210,19 @@ POST my-vectors/_bulk
 - [GPU Acceleration Blog](https://opensearch.org/blog/GPU-Accelerated-Vector-Search-OpenSearch-New-Frontier/): Performance benchmarks
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#2773](https://github.com/opensearch-project/k-NN/pull/2773) | Don't fall back to CPU on terminal failures |
-| v3.1.0 | [#2662](https://github.com/opensearch-project/k-NN/pull/2662) | Add tuned repository upload/download buffer sizes |
-| v3.1.0 | [#2734](https://github.com/opensearch-project/k-NN/pull/2734) | Add segment size upper bound setting and GA settings changes |
-| v3.1.0 | [#2693](https://github.com/opensearch-project/k-NN/pull/2693) | Fix remote build metrics timing and add exception logging |
-| v3.1.0 | [#2743](https://github.com/opensearch-project/k-NN/pull/2743) | Fix GPU index setting to only evaluate when cluster setting is set |
-| v3.1.0 | [#2659](https://github.com/opensearch-project/k-NN/pull/2659) | Add testing support to run all ITs with remote index builder |
-| v3.1.0 | [#2700](https://github.com/opensearch-project/k-NN/pull/2700) | Fix KNNSettingsTests after change in MockNode constructor |
-| v3.0.0 | [#2576](https://github.com/opensearch-project/k-NN/pull/2576) | Client polling, encoder validation, parameter retrieval |
-| v3.0.0 | [#2603](https://github.com/opensearch-project/k-NN/pull/2603) | Separate client module for reduced dependencies |
-| v3.0.0 | [#2615](https://github.com/opensearch-project/k-NN/pull/2615) | Metric collection for monitoring |
-| v3.0.0 | [#2627](https://github.com/opensearch-project/k-NN/pull/2627) | COSINESIMIL space type fix |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#2773](https://github.com/opensearch-project/k-NN/pull/2773) | Don't fall back to CPU on terminal failures | [#2766](https://github.com/opensearch-project/k-NN/issues/2766) |
+| v3.1.0 | [#2662](https://github.com/opensearch-project/k-NN/pull/2662) | Add tuned repository upload/download buffer sizes |   |
+| v3.1.0 | [#2734](https://github.com/opensearch-project/k-NN/pull/2734) | Add segment size upper bound setting and GA settings changes | [#2732](https://github.com/opensearch-project/k-NN/issues/2732) |
+| v3.1.0 | [#2693](https://github.com/opensearch-project/k-NN/pull/2693) | Fix remote build metrics timing and add exception logging |   |
+| v3.1.0 | [#2743](https://github.com/opensearch-project/k-NN/pull/2743) | Fix GPU index setting to only evaluate when cluster setting is set |   |
+| v3.1.0 | [#2659](https://github.com/opensearch-project/k-NN/pull/2659) | Add testing support to run all ITs with remote index builder | [#2553](https://github.com/opensearch-project/k-NN/issues/2553) |
+| v3.1.0 | [#2700](https://github.com/opensearch-project/k-NN/pull/2700) | Fix KNNSettingsTests after change in MockNode constructor |   |
+| v3.0.0 | [#2576](https://github.com/opensearch-project/k-NN/pull/2576) | Client polling, encoder validation, parameter retrieval |   |
+| v3.0.0 | [#2603](https://github.com/opensearch-project/k-NN/pull/2603) | Separate client module for reduced dependencies | [#2602](https://github.com/opensearch-project/k-NN/issues/2602) |
+| v3.0.0 | [#2615](https://github.com/opensearch-project/k-NN/pull/2615) | Metric collection for monitoring |   |
+| v3.0.0 | [#2627](https://github.com/opensearch-project/k-NN/pull/2627) | COSINESIMIL space type fix |   |
 
 ### Issues (Design / RFC)
 - [Issue #2391](https://github.com/opensearch-project/k-NN/issues/2391): Meta issue tracking all remote build work

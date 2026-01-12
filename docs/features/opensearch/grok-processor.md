@@ -132,9 +132,9 @@ PUT _ingest/pipeline/multi_ip
 - [Oniguruma Regex Library](https://github.com/kkos/oniguruma): Underlying regex engine
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18799](https://github.com/opensearch-project/OpenSearch/pull/18799) | Added `capture_all_matches` option for multi-value capture |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18799](https://github.com/opensearch-project/OpenSearch/pull/18799) | Added `capture_all_matches` option for multi-value capture |   |
 
 ### Issues (Design / RFC)
 - [Issue #18790](https://github.com/opensearch-project/OpenSearch/issues/18790): Feature request for multi-value capture

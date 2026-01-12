@@ -135,9 +135,9 @@ flowchart TB
 - [Flow Framework Workflow Steps](https://docs.opensearch.org/latest/automating-configurations/workflow-steps/): Workflow step reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#846](https://github.com/opensearch-project/flow-framework/pull/846) | Support parsing connector_id when creating tools |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#846](https://github.com/opensearch-project/flow-framework/pull/846) | Support parsing connector_id when creating tools | [#845](https://github.com/opensearch-project/flow-framework/issues/845) |
 
 ### Issues (Design / RFC)
 - [Issue #845](https://github.com/opensearch-project/flow-framework/issues/845): Original feature request

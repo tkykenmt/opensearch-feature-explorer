@@ -109,9 +109,9 @@ yarn osd clean
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8472](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8472) | Switch to content-based hashing |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8472](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8472) | Switch to content-based hashing | [#8428](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8428) |
 
 ### Issues (Design / RFC)
 - [Issue #8428](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8428): Original feature request for improved cache strategy

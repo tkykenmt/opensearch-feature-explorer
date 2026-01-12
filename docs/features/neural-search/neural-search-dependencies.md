@@ -106,8 +106,8 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 - [k-NN PR #2863 Comment](https://github.com/opensearch-project/k-NN/pull/2863#issuecomment-3251945721): Original jar hell issue report
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#1551](https://github.com/opensearch-project/neural-search/pull/1551) | Remove commons-lang dependency and use gradle version catalog for commons-lang3 |
-| v3.3.0 | [#1574](https://github.com/opensearch-project/neural-search/pull/1574) | Update Lucene101 codec path to backward path & force errorprone version |
-| v3.3.0 | [#1589](https://github.com/opensearch-project/neural-search/pull/1589) | Upgrade QA Gradle Dependency Version with commons-lang3 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#1551](https://github.com/opensearch-project/neural-search/pull/1551) | Remove commons-lang dependency and use gradle version catalog for commons-lang3 |   |
+| v3.3.0 | [#1574](https://github.com/opensearch-project/neural-search/pull/1574) | Update Lucene101 codec path to backward path & force errorprone version |   |
+| v3.3.0 | [#1589](https://github.com/opensearch-project/neural-search/pull/1589) | Upgrade QA Gradle Dependency Version with commons-lang3 |   |

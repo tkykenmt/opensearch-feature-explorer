@@ -90,8 +90,8 @@ const cleanHTML = DOMPurify.sanitize(dirtyHTML, {
 - [CVE-2024-45801](https://nvd.nist.gov/vuln/detail/CVE-2024-45801): Nesting-based mXSS vulnerability
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 (CVE-2025-26791) |
-| v2.17.1 | [#8346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8346) | Bump dompurify from 3.0.11 to 3.1.6 (CVE-2024-45801) |
-| v2.5.0 | [#2918](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/2918) | Initial DOMPurify integration for table visualization |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 (CVE-2025-26791) |   |
+| v2.17.1 | [#8346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8346) | Bump dompurify from 3.0.11 to 3.1.6 (CVE-2024-45801) |   |
+| v2.5.0 | [#2918](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/2918) | Initial DOMPurify integration for table visualization |   |

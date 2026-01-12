@@ -101,10 +101,10 @@ GET .opensearch-sap-*/_settings?flat_settings=true
 - [System Indexes Configuration](https://docs.opensearch.org/latest/security/configuration/system-indices/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#1358](https://github.com/opensearch-project/security-analytics/pull/1358) | Update replicas to 1-20 and primary shards to 1 |
-| v2.18.0 | [#1364](https://github.com/opensearch-project/security-analytics/pull/1364) | Update min replicas to 0 |
-| v2.18.0 | [#1365](https://github.com/opensearch-project/security-analytics/pull/1365) | Enable dedicated query index settings |
-| v2.18.0 | [#1324](https://github.com/opensearch-project/security-analytics/pull/1324) | Separate doc-level monitor query indices |
-| v2.18.0 | [#1382](https://github.com/opensearch-project/security-analytics/pull/1382) | Set refresh policy to IMMEDIATE for correlation alerts |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#1358](https://github.com/opensearch-project/security-analytics/pull/1358) | Update replicas to 1-20 and primary shards to 1 |   |
+| v2.18.0 | [#1364](https://github.com/opensearch-project/security-analytics/pull/1364) | Update min replicas to 0 |   |
+| v2.18.0 | [#1365](https://github.com/opensearch-project/security-analytics/pull/1365) | Enable dedicated query index settings |   |
+| v2.18.0 | [#1324](https://github.com/opensearch-project/security-analytics/pull/1324) | Separate doc-level monitor query indices |   |
+| v2.18.0 | [#1382](https://github.com/opensearch-project/security-analytics/pull/1382) | Set refresh policy to IMMEDIATE for correlation alerts |   |

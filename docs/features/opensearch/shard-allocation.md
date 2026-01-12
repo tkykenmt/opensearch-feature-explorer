@@ -158,11 +158,11 @@ PUT /_cluster/settings
 - [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Recommended settings for segment replication
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix WeightFunction constraint reset bug |
-| v3.0.0 | [#17295](https://github.com/opensearch-project/OpenSearch/pull/17295) | Add cluster and index level settings to limit total primary shards per node |
-| v3.0.0 | [#16471](https://github.com/opensearch-project/OpenSearch/pull/16471) | Add setting to adjust the primary constraint weights |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix WeightFunction constraint reset bug |   |
+| v3.0.0 | [#17295](https://github.com/opensearch-project/OpenSearch/pull/17295) | Add cluster and index level settings to limit total primary shards per node | [#17293](https://github.com/opensearch-project/OpenSearch/issues/17293) |
+| v3.0.0 | [#16471](https://github.com/opensearch-project/OpenSearch/pull/16471) | Add setting to adjust the primary constraint weights | [#16470](https://github.com/opensearch-project/OpenSearch/issues/16470) |
 
 ### Issues (Design / RFC)
 - [Issue #17293](https://github.com/opensearch-project/OpenSearch/issues/17293): Feature request for primary shard count constraint

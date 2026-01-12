@@ -115,9 +115,9 @@ PUT _search/pipeline/my-search-pipeline
 - [Search Pipeline Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Official search pipeline docs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17786](https://github.com/opensearch-project/OpenSearch/pull/17786) | Introduce 512 byte limit to search and ingest pipeline IDs |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17786](https://github.com/opensearch-project/OpenSearch/pull/17786) | Introduce 512 byte limit to search and ingest pipeline IDs | [#17766](https://github.com/opensearch-project/OpenSearch/issues/17766) |
 
 ### Issues (Design / RFC)
 - [Issue #17766](https://github.com/opensearch-project/OpenSearch/issues/17766): Original feature request

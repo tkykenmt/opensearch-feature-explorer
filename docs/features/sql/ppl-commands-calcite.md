@@ -176,20 +176,20 @@ source=sales | appendpipe [stats sum(amount) as total | eval category='TOTAL']
 - [PPL Commands Reference](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL commands reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4579](https://github.com/opensearch-project/sql/pull/4579) | Support `chart` command in PPL |
-| v3.4.0 | [#4297](https://github.com/opensearch-project/sql/pull/4297) | Support `streamstats` command with Calcite |
-| v3.4.0 | [#4332](https://github.com/opensearch-project/sql/pull/4332) | Support `multisearch` command in Calcite |
-| v3.4.0 | [#4451](https://github.com/opensearch-project/sql/pull/4451) | Support `replace` command in Calcite |
-| v3.4.0 | [#4602](https://github.com/opensearch-project/sql/pull/4602) | Support `appendpipe` command in PPL |
-| v3.4.0 | [#4831](https://github.com/opensearch-project/sql/pull/4831) | Add `bucket_nullable` for `streamstats` |
-| v3.4.0 | [#4817](https://github.com/opensearch-project/sql/pull/4817) | Add `bucket_nullable` for `eventstats` |
-| v3.4.0 | [#4843](https://github.com/opensearch-project/sql/pull/4843) | Remove redundant push-down-filters |
-| v3.4.0 | [#4844](https://github.com/opensearch-project/sql/pull/4844) | Convert `dedup` pushdown to composite + top_hits |
-| v3.4.0 | [#4698](https://github.com/opensearch-project/sql/pull/4698) | Support wildcard for replace command |
-| v3.4.0 | [#4696](https://github.com/opensearch-project/sql/pull/4696) | Support `usenull` option in `top` and `rare` |
-| v3.4.0 | [#4707](https://github.com/opensearch-project/sql/pull/4707) | Pushdown `top`/`rare` to nested aggregation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#4579](https://github.com/opensearch-project/sql/pull/4579) | Support `chart` command in PPL | [#399](https://github.com/opensearch-project/sql/issues/399) |
+| v3.4.0 | [#4297](https://github.com/opensearch-project/sql/pull/4297) | Support `streamstats` command with Calcite | [#4207](https://github.com/opensearch-project/sql/issues/4207) |
+| v3.4.0 | [#4332](https://github.com/opensearch-project/sql/pull/4332) | Support `multisearch` command in Calcite |   |
+| v3.4.0 | [#4451](https://github.com/opensearch-project/sql/pull/4451) | Support `replace` command in Calcite | [#3975](https://github.com/opensearch-project/sql/issues/3975) |
+| v3.4.0 | [#4602](https://github.com/opensearch-project/sql/pull/4602) | Support `appendpipe` command in PPL |   |
+| v3.4.0 | [#4831](https://github.com/opensearch-project/sql/pull/4831) | Add `bucket_nullable` for `streamstats` | [#4802](https://github.com/opensearch-project/sql/issues/4802) |
+| v3.4.0 | [#4817](https://github.com/opensearch-project/sql/pull/4817) | Add `bucket_nullable` for `eventstats` | [#4801](https://github.com/opensearch-project/sql/issues/4801) |
+| v3.4.0 | [#4843](https://github.com/opensearch-project/sql/pull/4843) | Remove redundant push-down-filters | [#4811](https://github.com/opensearch-project/sql/issues/4811) |
+| v3.4.0 | [#4844](https://github.com/opensearch-project/sql/pull/4844) | Convert `dedup` pushdown to composite + top_hits | [#4797](https://github.com/opensearch-project/sql/issues/4797) |
+| v3.4.0 | [#4698](https://github.com/opensearch-project/sql/pull/4698) | Support wildcard for replace command | [#3975](https://github.com/opensearch-project/sql/issues/3975) |
+| v3.4.0 | [#4696](https://github.com/opensearch-project/sql/pull/4696) | Support `usenull` option in `top` and `rare` | [#4684](https://github.com/opensearch-project/sql/issues/4684) |
+| v3.4.0 | [#4707](https://github.com/opensearch-project/sql/pull/4707) | Pushdown `top`/`rare` to nested aggregation | [#4671](https://github.com/opensearch-project/sql/issues/4671) |
 
 ### Issues (Design / RFC)
 - [Issue #399](https://github.com/opensearch-project/sql/issues/399): chart command feature request

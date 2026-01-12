@@ -68,9 +68,9 @@ validateTimeNearRefTime(
 - [Reporting Documentation](https://docs.opensearch.org/2.17/reporting/): Official OpenSearch Reporting docs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1022](https://github.com/opensearch-project/reporting/pull/1022) | Increase accuracy seconds for on-demand report test |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#1022](https://github.com/opensearch-project/reporting/pull/1022) | Increase accuracy seconds for on-demand report test | [#1019](https://github.com/opensearch-project/reporting/issues/1019) |
 
 ### Issues (Design / RFC)
 - [Issue #1019](https://github.com/opensearch-project/reporting/issues/1019): Original test failure report

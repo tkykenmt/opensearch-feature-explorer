@@ -159,6 +159,6 @@ GET /_cluster/stats/os,indices/shards,docs/nodes/_all
 - [PR #14447](https://github.com/opensearch-project/OpenSearch/pull/14447): Original motivation for performance improvements
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15938](https://github.com/opensearch-project/OpenSearch/pull/15938) | URI path filtering support in cluster stats API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15938](https://github.com/opensearch-project/OpenSearch/pull/15938) | URI path filtering support in cluster stats API |   |

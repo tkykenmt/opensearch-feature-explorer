@@ -155,9 +155,9 @@ GET /_tasks?actions=*warmup*
 - [Disk-based vector search](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/disk-based-vector-search/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#2954](https://github.com/opensearch-project/k-NN/pull/2954) | Memory optimized search warmup |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#2954](https://github.com/opensearch-project/k-NN/pull/2954) | Memory optimized search warmup |   |
 
 ### Issues (Design / RFC)
 - [Issue #2939](https://github.com/opensearch-project/k-NN/issues/2939): Original feature request for indirect loading Faiss index in warmup API

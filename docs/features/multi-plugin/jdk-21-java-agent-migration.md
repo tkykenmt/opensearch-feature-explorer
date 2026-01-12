@@ -141,30 +141,30 @@ jobs:
 - [JDK 24 Project](https://openjdk.org/projects/jdk/24/): SecurityManager permanently disabled
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.1.0 | [#17989](https://github.com/opensearch-project/OpenSearch/pull/17989) | OpenSearch | Enhance Java Agent to intercept newByteChannel from FileSystemProvider |
-| v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | OpenSearch | Custom Gradle plugin for Java Agent |
-| v3.0.0 | [#730](https://github.com/opensearch-project/flow-framework/pull/730) | flow-framework | JDK 21 target compatibility |
-| v3.0.0 | [#1108](https://github.com/opensearch-project/flow-framework/pull/1108) | flow-framework | Java Agent Gradle plugin |
-| v3.0.0 | [#1087](https://github.com/opensearch-project/flow-framework/pull/1087) | flow-framework | BC to BCFIPS migration |
-| v3.0.0 | [#2422](https://github.com/opensearch-project/k-NN/pull/2422) | k-NN | JDK 21 minimum |
-| v3.0.0 | [#1921](https://github.com/opensearch-project/k-NN/pull/1921) | k-NN | Remove JDK 11/17 CI |
-| v3.0.0 | [#719](https://github.com/opensearch-project/asynchronous-search/pull/719) | asynchronous-search | Java Agent migration |
-| v3.0.0 | [#695](https://github.com/opensearch-project/geospatial/pull/695) | geospatial | JDK 21 baseline |
-| v3.0.0 | [#723](https://github.com/opensearch-project/geospatial/pull/723) | geospatial | Gradle 8.10.2, JDK 23 |
-| v3.0.0 | [#722](https://github.com/opensearch-project/job-scheduler/pull/722) | job-scheduler | Shadow plugin update |
-| v3.0.0 | [#1013](https://github.com/opensearch-project/notifications/pull/1013) | notifications | Java Agent build fix |
-| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/156) | learning | Java Agent migration |
-| v3.0.0 | [#157](https://github.com/opensearch-project/security/pull/157) | security | Java Agent Gradle plugin |
-| v3.0.0 | [#296](https://github.com/opensearch-project/query-insights/pull/296) | query | Java Agent migration |
-| v3.0.0 | [#303](https://github.com/opensearch-project/security/pull/303) | security | Java Agent Gradle plugin |
-| v3.0.0 | [#1505](https://github.com/opensearch-project/security/pull/1505) | security | Java Agent Gradle plugin |
-| v3.0.0 | [#1504](https://github.com/opensearch-project/security/pull/1504) | security | Build fix for Java Agent |
-| v3.0.0 | [#62](https://github.com/opensearch-project/opensearch-system-templates/pull/62) | system | Gradle 8.10.2, JDK 23, Lucene 10 |
-| v3.0.0 | [#68](https://github.com/opensearch-project/security/pull/68) | security | Java Agent Gradle plugin |
-| v3.0.0 | [#3551](https://github.com/opensearch-project/security/pull/3551) | security | Java Agent Gradle plugin |
-| v3.0.0 | [#3539](https://github.com/opensearch-project/sql/pull/3539) | sql | Build fix for Java Agent |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.1.0 | [#17989](https://github.com/opensearch-project/OpenSearch/pull/17989) | OpenSearch | Enhance Java Agent to intercept newByteChannel from FileSystemProvider |   |
+| v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | OpenSearch | Custom Gradle plugin for Java Agent |   |
+| v3.0.0 | [#730](https://github.com/opensearch-project/flow-framework/pull/730) | flow-framework | JDK 21 target compatibility |   |
+| v3.0.0 | [#1108](https://github.com/opensearch-project/flow-framework/pull/1108) | flow-framework | Java Agent Gradle plugin |   |
+| v3.0.0 | [#1087](https://github.com/opensearch-project/flow-framework/pull/1087) | flow-framework | BC to BCFIPS migration |   |
+| v3.0.0 | [#2422](https://github.com/opensearch-project/k-NN/pull/2422) | k-NN | JDK 21 minimum |   |
+| v3.0.0 | [#1921](https://github.com/opensearch-project/k-NN/pull/1921) | k-NN | Remove JDK 11/17 CI |   |
+| v3.0.0 | [#719](https://github.com/opensearch-project/asynchronous-search/pull/719) | asynchronous-search | Java Agent migration |   |
+| v3.0.0 | [#695](https://github.com/opensearch-project/geospatial/pull/695) | geospatial | JDK 21 baseline |   |
+| v3.0.0 | [#723](https://github.com/opensearch-project/geospatial/pull/723) | geospatial | Gradle 8.10.2, JDK 23 | [#722](https://github.com/opensearch-project/geospatial/issues/722) |
+| v3.0.0 | [#722](https://github.com/opensearch-project/job-scheduler/pull/722) | job-scheduler | Shadow plugin update |   |
+| v3.0.0 | [#1013](https://github.com/opensearch-project/notifications/pull/1013) | notifications | Java Agent build fix |   |
+| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/156) | learning | Java Agent migration |   |
+| v3.0.0 | [#157](https://github.com/opensearch-project/security/pull/157) | security | Java Agent Gradle plugin |   |
+| v3.0.0 | [#296](https://github.com/opensearch-project/query-insights/pull/296) | query | Java Agent migration |   |
+| v3.0.0 | [#303](https://github.com/opensearch-project/security/pull/303) | security | Java Agent Gradle plugin |   |
+| v3.0.0 | [#1505](https://github.com/opensearch-project/security/pull/1505) | security | Java Agent Gradle plugin |   |
+| v3.0.0 | [#1504](https://github.com/opensearch-project/security/pull/1504) | security | Build fix for Java Agent |   |
+| v3.0.0 | [#62](https://github.com/opensearch-project/opensearch-system-templates/pull/62) | system | Gradle 8.10.2, JDK 23, Lucene 10 | [#61](https://github.com/opensearch-project/opensearch-system-templates/issues/61) |
+| v3.0.0 | [#68](https://github.com/opensearch-project/security/pull/68) | security | Java Agent Gradle plugin |   |
+| v3.0.0 | [#3551](https://github.com/opensearch-project/security/pull/3551) | security | Java Agent Gradle plugin |   |
+| v3.0.0 | [#3539](https://github.com/opensearch-project/sql/pull/3539) | sql | Build fix for Java Agent |   |
 
 ### Issues (Design / RFC)
 - [Issue #10745](https://github.com/opensearch-project/OpenSearch/issues/10745): Set OpenSearch 3.0.0 baseline JDK to JDK-21

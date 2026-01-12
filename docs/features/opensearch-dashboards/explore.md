@@ -314,133 +314,133 @@ source = opensearch_dashboards_sample_data_ecommerce
 - [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849) | Enhance query action service to allow flyout registration |
-| v3.4.0 | [#10604](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10604) | Allow customizing legend name |
-| v3.4.0 | [#10697](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10697) | Add bar gauge visualization |
-| v3.4.0 | [#10808](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10808) | Support numerical field as color field |
-| v3.4.0 | [#10868](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10868) | Refactor threshold logic of gauge and bar gauge |
-| v3.4.0 | [#10894](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10894) | Add tests for gauge and bar gauge |
-| v3.4.0 | [#10896](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10896) | Add tests for table visualization |
-| v3.4.0 | [#10898](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10898) | Add customized column order toggle for table visualization |
-| v3.4.0 | [#10558](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10558) | Add timefield and currentTime to prompt |
-| v3.4.0 | [#10563](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10563) | Add state timeline visualization |
-| v3.4.0 | [#10606](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10606) | Add time zoom in interaction to explore vis |
-| v3.4.0 | [#10629](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10629) | Improve timeline loading state with spinner |
-| v3.4.0 | [#10655](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10655) | Implement trace flyout |
-| v3.4.0 | [#10657](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10657) | Add span kind column |
-| v3.4.0 | [#10663](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10663) | Discover Histogram Breakdowns |
-| v3.4.0 | [#10676](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10676) | Replace Timeline gantt chart with hierarchy timeline table |
-| v3.4.0 | [#10713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10713) | Show query panel in traces and metrics without datasets |
-| v3.4.0 | [#10723](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10723) | Field Statistics Tab |
-| v3.4.0 | [#10727](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10727) | Add cancel query feature to discover |
-| v3.4.0 | [#10729](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10729) | Add correlations tab for trace and logs linking |
-| v3.4.0 | [#10764](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10764) | Histogram Breakdowns enable timechart for every dataset |
-| v3.4.0 | [#10799](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10799) | Experimental Explore feature flag |
-| v3.4.0 | [#10842](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10842) | Add resultsActionBar slot to explore plugin |
-| v3.4.0 | [#10927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10927) | Log action menu support for non-filterable time columns |
-| v3.4.0 | [#10970](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10970) | Support by-value explore embeddables |
-| v3.4.0 | [#10513](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10513) | Split Aggregations Query from Logs Query |
-| v3.4.0 | [#10574](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10574) | Fix field formatter not applied to explore query result |
-| v3.4.0 | [#10582](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10582) | Fix column focus issue |
-| v3.4.0 | [#10597](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10597) | Clear editor after dataset change |
-| v3.4.0 | [#10661](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10661) | Add backticks to explore's data source command |
-| v3.4.0 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue |
-| v3.3.0 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter |
-| v3.3.0 | [#10412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10412) | Introduce tab content error guard |
-| v3.3.0 | [#10425](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10425) | Infer axis date format |
-| v3.3.0 | [#10432](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10432) | Update default columns and facets |
-| v3.3.0 | [#10443](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10443) | Revert AI mode default |
-| v3.3.0 | [#10450](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10450) | Add link to detail page in expanded row |
-| v3.3.0 | [#10526](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10526) | Add query panel actions registry |
-| v3.3.0 | [#10557](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10557) | Show query panel without datasets |
-| v3.3.0 | [#10560](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10560) | Add mouse hover state for line charts |
-| v3.3.0 | [#10588](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10588) | Auto-enable related flags with Explore |
-| v3.3.0 | [#10607](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10607) | Add explore experience modal |
-| v3.3.0 | [#10622](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10622) | Enhance explore modal UI |
-| v3.3.0 | [#10369](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10369) | Fix ScopedHistory navigation error |
-| v3.3.0 | [#10370](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10370) | Allow Refresh to run query |
-| v3.3.0 | [#10388](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10388) | Preserve active tab on save/load |
-| v3.3.0 | [#10391](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10391) | Remove Explore from Patterns tab |
-| v3.3.0 | [#10464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10464) | Patterns tab flyout |
-| v3.3.0 | [#10489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10489) | Search with pattern functionality and events table |
-| v3.3.0 | [#10535](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10535) | Patterns tab Calcite compatibility workarounds |
-| v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |
-| v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling |
-| v3.3.0 | [#10449](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10449) | Metric viz with sparkline support |
-| v3.3.0 | [#10452](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10452) | Gantt chart improvements |
-| v3.3.0 | [#10465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10465) | Histogram visualization |
-| v3.3.0 | [#10469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10469) | Discover viz theme and defaults |
-| v3.3.0 | [#10470](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10470) | Table visualization enhancement |
-| v3.3.0 | [#10482](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10482) | Metric viz style update with percentage change |
-| v3.2.0 | [#9874](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9874) | Add pie, scatter, heatmap, single metric auto visualization |
-| v3.2.0 | [#9886](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9886) | New query editor in storybook |
-| v3.2.0 | [#9901](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9901) | Tab registry service integration |
-| v3.2.0 | [#9902](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9902) | Logs, traces, metrics flavor support |
-| v3.2.0 | [#9908](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9908) | Explore embeddable |
-| v3.2.0 | [#9920](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9920) | Bar chart with style panel |
-| v3.2.0 | [#9933](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9933) | Patterns tab UI |
-| v3.2.0 | [#9953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9953) | PPL visualization filters |
-| v3.2.0 | [#9961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9961) | Chart type switcher |
-| v3.2.0 | [#9964](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9964) | Style options saving |
-| v3.2.0 | [#9973](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9973) | Area chart support |
-| v3.2.0 | [#9978](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9978) | State loading from object |
-| v3.2.0 | [#9985](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9985) | Table action bar and field selector |
-| v3.2.0 | [#10020](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10020) | Optimizer worker timeout fix |
-| v3.2.0 | [#10051](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10051) | Heatmap style panel UI |
-| v3.2.0 | [#10055](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10055) | Add to dashboard modal naming |
-| v3.2.0 | [#10061](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10061) | Add to dashboard save behavior |
-| v3.2.0 | [#10072](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10072) | Chart expand reset fix |
-| v3.2.0 | [#10085](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10085) | Scatter grid enablement |
-| v3.2.0 | [#10093](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10093) | Aggregate function spacing fix |
-| v3.2.0 | [#10096](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10096) | Viz tab scroll and resize |
-| v3.2.0 | [#10101](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10101) | Axes UI fixes |
-| v3.2.0 | [#10113](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10113) | Chart time range update fix |
-| v3.2.0 | [#10127](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10127) | Antlr to Monaco token mappings |
-| v3.2.0 | [#10158](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10158) | Saved object fetch optimization |
-| v3.2.0 | [#10173](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10173) | TypeScript error fixes |
-| v3.2.0 | [#10208](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10208) | Tooltip configurations |
-| v3.2.0 | [#10248](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10248) | PPL histogram display fix |
-| v3.2.0 | [#10255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10255) | Axes and heatmap styles |
-| v3.2.0 | [#10258](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10258) | SCSS import path fix |
-| v3.2.0 | [#10260](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10260) | Show query handling |
-| v3.2.0 | [#10261](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10261) | Field selector collapse UI |
-| v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |
-| v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling |
-| v3.2.0 | [#10269](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10269) | Dataset select to query panel |
-| v3.2.0 | [#10270](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10270) | Global banner offset |
-| v3.2.0 | [#10281](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10281) | URL state time filter fix |
-| v3.2.0 | [#10306](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10306) | Metric range and threshold fix |
-| v3.2.0 | [#10309](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10309) | UI setting validation fix |
-| v3.2.0 | [#10311](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10311) | Legend visibility logic |
-| v3.2.0 | [#10318](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10318) | Cypress tests for dashboard and styles |
-| v3.2.0 | [#10322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10322) | CI group fixes |
-| v3.2.0 | [#10323](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10323) | Time filter loading fix |
-| v3.2.0 | [#10330](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10330) | Log table dashboard test fix |
-| v3.2.0 | [#10332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10332) | New button URL state fix |
-| v3.2.0 | [#10333](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10333) | PPL millisecond precision fix |
-| v3.2.0 | [#10336](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10336) | Query execution button fix |
-| v3.2.0 | [#10348](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10348) | Query button color consistency |
-| v3.2.0 | [#9932](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9932) | Histogram UI fix |
-| v3.2.0 | [#9946](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9946) | Tab preservation and cache update |
-| v3.2.0 | [#9972](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9972) | Panels layout adjustment |
-| v3.2.0 | [#10253](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10253) | Trace Details page with Gantt chart and service map |
-| v3.2.0 | [#10001](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10001) | Add inspection button to action bar in tabs |
-| v3.2.0 | [#10045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10045) | Support PPL filters in Explore |
-| v3.2.0 | [#10048](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10048) | Update fields selector grouping (result/schema) |
-| v3.2.0 | [#10092](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10092) | Update explore chart UI |
-| v3.2.0 | [#10095](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10095) | Add documentation for PPL commands |
-| v3.2.0 | [#10109](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10109) | Make log table columns controlled by query result |
-| v3.2.0 | [#10136](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10136) | Add columns filter UI and update fields selector panel style |
-| v3.2.0 | [#10140](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10140) | Change fields selector default to show missing fields |
-| v3.2.0 | [#10249](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10249) | Query editor for explore layout refactor |
-| v3.2.0 | [#10265](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10265) | Move datepicker and run button to global header |
-| v3.2.0 | [#10274](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10274) | Segregate keywords into Commands, Operators, Functions |
-| v3.2.0 | [#10285](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10285) | Improve query editor performance |
-| v3.2.0 | [#10321](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10321) | Implement bidirectional URL-Redux synchronization |
-| v3.2.0 | [#10334](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10334) | Change query panel UI around editor language |
-| v3.2.0 | [#10347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10347) | Add tooltip for language reference in explore |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849) | Enhance query action service to allow flyout registration |   |
+| v3.4.0 | [#10604](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10604) | Allow customizing legend name |   |
+| v3.4.0 | [#10697](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10697) | Add bar gauge visualization |   |
+| v3.4.0 | [#10808](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10808) | Support numerical field as color field | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10868](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10868) | Refactor threshold logic of gauge and bar gauge |   |
+| v3.4.0 | [#10894](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10894) | Add tests for gauge and bar gauge | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10896](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10896) | Add tests for table visualization | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10898](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10898) | Add customized column order toggle for table visualization | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10558](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10558) | Add timefield and currentTime to prompt |   |
+| v3.4.0 | [#10563](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10563) | Add state timeline visualization |   |
+| v3.4.0 | [#10606](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10606) | Add time zoom in interaction to explore vis | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10629](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10629) | Improve timeline loading state with spinner | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10655](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10655) | Implement trace flyout |   |
+| v3.4.0 | [#10657](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10657) | Add span kind column | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10663](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10663) | Discover Histogram Breakdowns | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10676](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10676) | Replace Timeline gantt chart with hierarchy timeline table |   |
+| v3.4.0 | [#10713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10713) | Show query panel in traces and metrics without datasets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10723](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10723) | Field Statistics Tab |   |
+| v3.4.0 | [#10727](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10727) | Add cancel query feature to discover |   |
+| v3.4.0 | [#10729](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10729) | Add correlations tab for trace and logs linking |   |
+| v3.4.0 | [#10764](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10764) | Histogram Breakdowns enable timechart for every dataset | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10799](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10799) | Experimental Explore feature flag |   |
+| v3.4.0 | [#10842](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10842) | Add resultsActionBar slot to explore plugin |   |
+| v3.4.0 | [#10927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10927) | Log action menu support for non-filterable time columns |   |
+| v3.4.0 | [#10970](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10970) | Support by-value explore embeddables | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10513](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10513) | Split Aggregations Query from Logs Query | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10574](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10574) | Fix field formatter not applied to explore query result |   |
+| v3.4.0 | [#10582](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10582) | Fix column focus issue |   |
+| v3.4.0 | [#10597](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10597) | Clear editor after dataset change |   |
+| v3.4.0 | [#10661](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10661) | Add backticks to explore's data source command |   |
+| v3.4.0 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue |   |
+| v3.3.0 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10412) | Introduce tab content error guard | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10425](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10425) | Infer axis date format |   |
+| v3.3.0 | [#10432](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10432) | Update default columns and facets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10443](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10443) | Revert AI mode default | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10450](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10450) | Add link to detail page in expanded row | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10526](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10526) | Add query panel actions registry |   |
+| v3.3.0 | [#10557](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10557) | Show query panel without datasets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10560](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10560) | Add mouse hover state for line charts | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10588](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10588) | Auto-enable related flags with Explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10607](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10607) | Add explore experience modal | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10622](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10622) | Enhance explore modal UI | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10369](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10369) | Fix ScopedHistory navigation error |   |
+| v3.3.0 | [#10370](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10370) | Allow Refresh to run query |   |
+| v3.3.0 | [#10388](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10388) | Preserve active tab on save/load |   |
+| v3.3.0 | [#10391](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10391) | Remove Explore from Patterns tab |   |
+| v3.3.0 | [#10464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10464) | Patterns tab flyout | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10489) | Search with pattern functionality and events table | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10535](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10535) | Patterns tab Calcite compatibility workarounds | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |   |
+| v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10449](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10449) | Metric viz with sparkline support | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10452](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10452) | Gantt chart improvements | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10465) | Histogram visualization | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10469) | Discover viz theme and defaults | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10470](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10470) | Table visualization enhancement |   |
+| v3.3.0 | [#10482](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10482) | Metric viz style update with percentage change | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9874](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9874) | Add pie, scatter, heatmap, single metric auto visualization |   |
+| v3.2.0 | [#9886](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9886) | New query editor in storybook |   |
+| v3.2.0 | [#9901](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9901) | Tab registry service integration | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9902](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9902) | Logs, traces, metrics flavor support | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9908](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9908) | Explore embeddable |   |
+| v3.2.0 | [#9920](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9920) | Bar chart with style panel | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9933](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9933) | Patterns tab UI | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9953) | PPL visualization filters | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9961) | Chart type switcher | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9964](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9964) | Style options saving |   |
+| v3.2.0 | [#9973](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9973) | Area chart support | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9978](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9978) | State loading from object |   |
+| v3.2.0 | [#9985](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9985) | Table action bar and field selector | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10020](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10020) | Optimizer worker timeout fix |   |
+| v3.2.0 | [#10051](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10051) | Heatmap style panel UI | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10055](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10055) | Add to dashboard modal naming |   |
+| v3.2.0 | [#10061](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10061) | Add to dashboard save behavior | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10072](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10072) | Chart expand reset fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10085](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10085) | Scatter grid enablement |   |
+| v3.2.0 | [#10093](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10093) | Aggregate function spacing fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10096](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10096) | Viz tab scroll and resize | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10101](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10101) | Axes UI fixes |   |
+| v3.2.0 | [#10113](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10113) | Chart time range update fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10127](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10127) | Antlr to Monaco token mappings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10158](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10158) | Saved object fetch optimization | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10173](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10173) | TypeScript error fixes | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10208](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10208) | Tooltip configurations |   |
+| v3.2.0 | [#10248](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10248) | PPL histogram display fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10255) | Axes and heatmap styles | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10258](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10258) | SCSS import path fix |   |
+| v3.2.0 | [#10260](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10260) | Show query handling |   |
+| v3.2.0 | [#10261](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10261) | Field selector collapse UI | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.3.0 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |   |
+| v3.3.0 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10269](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10269) | Dataset select to query panel |   |
+| v3.2.0 | [#10270](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10270) | Global banner offset | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10281](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10281) | URL state time filter fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10306](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10306) | Metric range and threshold fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10309](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10309) | UI setting validation fix |   |
+| v3.2.0 | [#10311](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10311) | Legend visibility logic |   |
+| v3.2.0 | [#10318](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10318) | Cypress tests for dashboard and styles |   |
+| v3.2.0 | [#10322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10322) | CI group fixes | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10323](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10323) | Time filter loading fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10330](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10330) | Log table dashboard test fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10332) | New button URL state fix |   |
+| v3.2.0 | [#10333](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10333) | PPL millisecond precision fix |   |
+| v3.2.0 | [#10336](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10336) | Query execution button fix |   |
+| v3.2.0 | [#10348](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10348) | Query button color consistency |   |
+| v3.2.0 | [#9932](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9932) | Histogram UI fix | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9946](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9946) | Tab preservation and cache update | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#9972](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9972) | Panels layout adjustment | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10253](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10253) | Trace Details page with Gantt chart and service map | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10001](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10001) | Add inspection button to action bar in tabs | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10045) | Support PPL filters in Explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10048](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10048) | Update fields selector grouping (result/schema) | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10092](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10092) | Update explore chart UI | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10095](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10095) | Add documentation for PPL commands | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10109](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10109) | Make log table columns controlled by query result | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10136](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10136) | Add columns filter UI and update fields selector panel style | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10140](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10140) | Change fields selector default to show missing fields | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10249](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10249) | Query editor for explore layout refactor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10265](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10265) | Move datepicker and run button to global header |   |
+| v3.2.0 | [#10274](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10274) | Segregate keywords into Commands, Operators, Functions | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10285](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10285) | Improve query editor performance |   |
+| v3.2.0 | [#10321](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10321) | Implement bidirectional URL-Redux synchronization | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10334](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10334) | Change query panel UI around editor language |   |
+| v3.2.0 | [#10347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10347) | Add tooltip for language reference in explore |   |
 
 ### Issues (Design / RFC)
 - [Issue #9898](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9898): RFC for React Flow library introduction

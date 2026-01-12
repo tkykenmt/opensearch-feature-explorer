@@ -239,10 +239,10 @@ PUT /_plugins/_security/api/resource/share
 - [Resource Sharing Blog](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Introducing resource sharing
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1251](https://github.com/opensearch-project/flow-framework/pull/1251) | Onboard to resource-sharing and access control framework |
-| v2.17.0 | [#838](https://github.com/opensearch-project/flow-framework/pull/838) | Initial implementation of backend role-based access control |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1251](https://github.com/opensearch-project/flow-framework/pull/1251) | Onboard to resource-sharing and access control framework | [#1250](https://github.com/opensearch-project/flow-framework/issues/1250) |
+| v2.17.0 | [#838](https://github.com/opensearch-project/flow-framework/pull/838) | Initial implementation of backend role-based access control |   |
 
 ### Issues (Design / RFC)
 - [Issue #1250](https://github.com/opensearch-project/flow-framework/issues/1250): Request to onboard to centralized authz framework

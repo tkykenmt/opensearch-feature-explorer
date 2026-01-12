@@ -176,11 +176,11 @@ GET /my-index/_search
 - [Lucene PR #450](https://github.com/apache/lucene/pull/450): Related Lucene API change
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18715](https://github.com/opensearch-project/OpenSearch/pull/18715) | Fix max_score is null when sorting on score firstly |
-| v3.2.0 | [#18802](https://github.com/opensearch-project/OpenSearch/pull/18802) | Use ScoreDoc instead of FieldDoc for TopScoreDocCollectorManager |
-| v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18715](https://github.com/opensearch-project/OpenSearch/pull/18715) | Fix max_score is null when sorting on score firstly | [#18714](https://github.com/opensearch-project/OpenSearch/issues/18714) |
+| v3.2.0 | [#18802](https://github.com/opensearch-project/OpenSearch/pull/18802) | Use ScoreDoc instead of FieldDoc for TopScoreDocCollectorManager |   |
+| v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction | [#18394](https://github.com/opensearch-project/OpenSearch/issues/18394) |
 
 ### Issues (Design / RFC)
 - [Issue #18714](https://github.com/opensearch-project/OpenSearch/issues/18714): Bug report for max_score null issue

@@ -291,19 +291,19 @@ GET /taxi/_search
 - [Multi-terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/multi-terms/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19524](https://github.com/opensearch-project/OpenSearch/pull/19524) | Hybrid Cardinality collector for high cardinality queries |
-| v3.4.0 | [#19573](https://github.com/opensearch-project/OpenSearch/pull/19573) | Filter rewrite + skip list for sub-aggregation optimization |
-| v3.4.0 | [#19648](https://github.com/opensearch-project/OpenSearch/pull/19648) | MergingDigest implementation for percentiles aggregation |
-| v3.4.0 | [#19989](https://github.com/opensearch-project/OpenSearch/pull/19989) | Primitive arrays for matrix_stats aggregation |
-| v3.4.0 | [#20057](https://github.com/opensearch-project/OpenSearch/pull/20057) | Skip list optimization for auto_date_histogram |
-| v3.3.0 | [#18978](https://github.com/opensearch-project/OpenSearch/pull/18978) | Rare terms aggregation precomputation |
-| v3.3.0 | [#18732](https://github.com/opensearch-project/OpenSearch/pull/18732) | String terms aggregation optimization |
-| v3.3.0 | [#19088](https://github.com/opensearch-project/OpenSearch/pull/19088) | Date histogram rounding optimization |
-| v3.0.0 | [#17312](https://github.com/opensearch-project/OpenSearch/pull/17312) | Introduce `execution_hint` for Cardinality aggregation |
-| v3.0.0 | [#14993](https://github.com/opensearch-project/OpenSearch/pull/14993) | Latency and memory allocation improvements to Multi Term Aggregation |
-| v3.0.0 | [#17252](https://github.com/opensearch-project/OpenSearch/pull/17252) | Improve performance of NumericTermAggregation by avoiding unnecessary sorting |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19524](https://github.com/opensearch-project/OpenSearch/pull/19524) | Hybrid Cardinality collector for high cardinality queries |   |
+| v3.4.0 | [#19573](https://github.com/opensearch-project/OpenSearch/pull/19573) | Filter rewrite + skip list for sub-aggregation optimization |   |
+| v3.4.0 | [#19648](https://github.com/opensearch-project/OpenSearch/pull/19648) | MergingDigest implementation for percentiles aggregation | [#18122](https://github.com/opensearch-project/OpenSearch/issues/18122) |
+| v3.4.0 | [#19989](https://github.com/opensearch-project/OpenSearch/pull/19989) | Primitive arrays for matrix_stats aggregation | [#19741](https://github.com/opensearch-project/OpenSearch/issues/19741) |
+| v3.4.0 | [#20057](https://github.com/opensearch-project/OpenSearch/pull/20057) | Skip list optimization for auto_date_histogram | [#19827](https://github.com/opensearch-project/OpenSearch/issues/19827) |
+| v3.3.0 | [#18978](https://github.com/opensearch-project/OpenSearch/pull/18978) | Rare terms aggregation precomputation | [#13122](https://github.com/opensearch-project/OpenSearch/issues/13122) |
+| v3.3.0 | [#18732](https://github.com/opensearch-project/OpenSearch/pull/18732) | String terms aggregation optimization | [#18704](https://github.com/opensearch-project/OpenSearch/issues/18704) |
+| v3.3.0 | [#19088](https://github.com/opensearch-project/OpenSearch/pull/19088) | Date histogram rounding optimization |   |
+| v3.0.0 | [#17312](https://github.com/opensearch-project/OpenSearch/pull/17312) | Introduce `execution_hint` for Cardinality aggregation | [#16837](https://github.com/opensearch-project/OpenSearch/issues/16837) |
+| v3.0.0 | [#14993](https://github.com/opensearch-project/OpenSearch/pull/14993) | Latency and memory allocation improvements to Multi Term Aggregation |   |
+| v3.0.0 | [#17252](https://github.com/opensearch-project/OpenSearch/pull/17252) | Improve performance of NumericTermAggregation by avoiding unnecessary sorting |   |
 
 ### Issues (Design / RFC)
 - [Issue #19260](https://github.com/opensearch-project/OpenSearch/issues/19260): Auto Select Ordinals cardinality collector for high cardinality queries

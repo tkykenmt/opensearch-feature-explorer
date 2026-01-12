@@ -214,15 +214,15 @@ When MDS is enabled, integration instances include a `references` field:
 - [Multiple Data Sources Blog](https://opensearch.org/blog/multiple-data-source/): Feature announcement and overview
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2213](https://github.com/opensearch-project/dashboards-observability/pull/2213) | Fix missing else condition for MDS remote cluster calls |
-| v2.18.0 | [#2222](https://github.com/opensearch-project/dashboards-observability/pull/2222) | MDS plugin de-registration and error code changes |
-| v2.18.0 | [#2225](https://github.com/opensearch-project/dashboards-observability/pull/2225) | Fixes span to logs redirection, updates MDS label when undefined |
-| v2.17.0 | [#2048](https://github.com/opensearch-project/dashboards-observability/pull/2048) | Multi-data Source Support for Getting Started |
-| v2.17.0 | [#2051](https://github.com/opensearch-project/dashboards-observability/pull/2051) | MDS support in Integrations |
-| v2.17.0 | [#2097](https://github.com/opensearch-project/dashboards-observability/pull/2097) | Deregister plugins in MDS mode |
-| v2.17.0 | [#2140](https://github.com/opensearch-project/dashboards-observability/pull/2140) | Support for absent local cluster |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2213](https://github.com/opensearch-project/dashboards-observability/pull/2213) | Fix missing else condition for MDS remote cluster calls |   |
+| v2.18.0 | [#2222](https://github.com/opensearch-project/dashboards-observability/pull/2222) | MDS plugin de-registration and error code changes |   |
+| v2.18.0 | [#2225](https://github.com/opensearch-project/dashboards-observability/pull/2225) | Fixes span to logs redirection, updates MDS label when undefined |   |
+| v2.17.0 | [#2048](https://github.com/opensearch-project/dashboards-observability/pull/2048) | Multi-data Source Support for Getting Started |   |
+| v2.17.0 | [#2051](https://github.com/opensearch-project/dashboards-observability/pull/2051) | MDS support in Integrations |   |
+| v2.17.0 | [#2097](https://github.com/opensearch-project/dashboards-observability/pull/2097) | Deregister plugins in MDS mode |   |
+| v2.17.0 | [#2140](https://github.com/opensearch-project/dashboards-observability/pull/2140) | Support for absent local cluster |   |
 
 ### Issues (Design / RFC)
 - [Issue #1440](https://github.com/opensearch-project/dashboards-observability/issues/1440): Original feature request

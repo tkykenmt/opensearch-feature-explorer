@@ -158,13 +158,13 @@ flowchart TB
 - [Roaring Bitmap](https://github.com/RoaringBitmap/RoaringBitmap): Bitmap encoding library
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19350](https://github.com/opensearch-project/OpenSearch/pull/19350) | Pack terms once for keyword fields with index and docValues |
-| v3.4.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |
-| v3.3.0 | [#19587](https://github.com/opensearch-project/OpenSearch/pull/19587) | Fix rewriting terms query with consecutive whole numbers |
-| v3.0.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |
-| v2.17.0 | - | Added bitmap filtering support |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19350](https://github.com/opensearch-project/OpenSearch/pull/19350) | Pack terms once for keyword fields with index and docValues |   |
+| v3.4.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |   |
+| v3.3.0 | [#19587](https://github.com/opensearch-project/OpenSearch/pull/19587) | Fix rewriting terms query with consecutive whole numbers | [#19566](https://github.com/opensearch-project/OpenSearch/issues/19566) |
+| v3.0.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |   |
+| v2.17.0 | - | Added bitmap filtering support |   |
 
 ### Issues (Design / RFC)
 - [Issue #19566](https://github.com/opensearch-project/OpenSearch/issues/19566): Bug report for must_not terms query issue

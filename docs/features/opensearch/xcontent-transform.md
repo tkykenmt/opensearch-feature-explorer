@@ -201,9 +201,9 @@ List<Map<String, Object>> results = documents.stream()
 - [XContent Filtering](xcontent-filtering.md): Related filtering functionality
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17612](https://github.com/opensearch-project/OpenSearch/pull/17612) | Add dfs transformation function in XContentMapValues |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17612](https://github.com/opensearch-project/OpenSearch/pull/17612) | Add dfs transformation function in XContentMapValues | [#2377](https://github.com/opensearch-project/OpenSearch/issues/2377) |
 
 ### Issues (Design / RFC)
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): RFC - Derived Source for Vectors (motivation)

@@ -294,10 +294,10 @@ curl -XPOST "https://localhost:9200/_plugins/_security/api/version/rollback/v2" 
 - [Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | View API and Rollback API for versioned security configurations |
-| v3.2.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | Initial implementation of versioned security configuration management |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | View API and Rollback API for versioned security configurations |   |
+| v3.2.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | Initial implementation of versioned security configuration management |   |
 
 ### Issues (Design / RFC)
 - [Issue #5093](https://github.com/opensearch-project/security/issues/5093): Original feature request for tracking security index patches

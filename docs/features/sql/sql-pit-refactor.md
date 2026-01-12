@@ -158,9 +158,9 @@ POST _plugins/_sql
 - [Paginate Results](https://docs.opensearch.org/2.18/search-plugins/searching-data/paginate/): General pagination guide
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2981](https://github.com/opensearch-project/sql/pull/2981) | Add missing refactoring of Scroll to PIT API calls for Joins and Pagination query |
-| v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Bug fixes for minor issues with SQL PIT refactor |
-| v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |
-| v2.18.0 | [#3108](https://github.com/opensearch-project/sql/pull/3108) | Backport: PIT refactor bug fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2981](https://github.com/opensearch-project/sql/pull/2981) | Add missing refactoring of Scroll to PIT API calls for Joins and Pagination query |   |
+| v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Bug fixes for minor issues with SQL PIT refactor |   |
+| v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |   |
+| v2.18.0 | [#3108](https://github.com/opensearch-project/sql/pull/3108) | Backport: PIT refactor bug fixes |   |

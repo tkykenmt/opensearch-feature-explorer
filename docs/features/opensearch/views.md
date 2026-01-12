@@ -227,9 +227,9 @@ PUT /views/application-logs
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#11957](https://github.com/opensearch-project/OpenSearch/pull/11957) | Projected Views - Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#11957](https://github.com/opensearch-project/OpenSearch/pull/11957) | Projected Views - Initial implementation | [#3888](https://github.com/opensearch-project/OpenSearch/issues/3888) |
 
 ### Issues (Design / RFC)
 - [Issue #6181](https://github.com/opensearch-project/OpenSearch/issues/6181): RFC - Data projection with views

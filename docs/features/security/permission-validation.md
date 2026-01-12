@@ -140,9 +140,9 @@ PUT /new_index?has_permission_check=true
 - [Permissions Documentation](https://docs.opensearch.org/3.2/security/access-control/permissions/): Official documentation on OpenSearch permissions
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5496](https://github.com/opensearch-project/security/pull/5496) | Initial implementation of permission validation via query parameter |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#5496](https://github.com/opensearch-project/security/pull/5496) | Initial implementation of permission validation via query parameter |   |
 
 ### Issues (Design / RFC)
 - [Issue #5468](https://github.com/opensearch-project/security/issues/5468): Original feature request for Security Permissions Simulation

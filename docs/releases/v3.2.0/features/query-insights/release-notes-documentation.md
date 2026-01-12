@@ -18,24 +18,24 @@ The Query Insights plugin v3.2.0 release includes:
 
 #### Enhancements
 
-| Change | PR | Description |
-|--------|-----|-------------|
-| Reader Search Limit | [#381](https://github.com/opensearch-project/query-insights/pull/381) | Increase reader search limit from default to 500 and fix sort by metric type |
+| Change | PR | Description | Related Issue |
+|--------|-----|-------------|---------------|
+| Reader Search Limit | [#381](https://github.com/opensearch-project/query-insights/pull/381) | Increase reader search limit from default to 500 and fix sort by metric type |   |
 
 #### Infrastructure
 
-| Change | PR | Description |
-|--------|-----|-------------|
-| Build System | [#392](https://github.com/opensearch-project/query-insights/pull/392) | Update Maven endpoint and bump Gradle/Java versions |
-| Codecov Fix | [#393](https://github.com/opensearch-project/query-insights/pull/393) | Fix codecov configuration |
-| Codecov v3 | [#394](https://github.com/opensearch-project/query-insights/pull/394) | Migrate to codecov v3 |
+| Change | PR | Description | Related Issue |
+|--------|-----|-------------|---------------|
+| Build System | [#392](https://github.com/opensearch-project/query-insights/pull/392) | Update Maven endpoint and bump Gradle/Java versions |   |
+| Codecov Fix | [#393](https://github.com/opensearch-project/query-insights/pull/393) | Fix codecov configuration |   |
+| Codecov v3 | [#394](https://github.com/opensearch-project/query-insights/pull/394) | Migrate to codecov v3 |   |
 
 #### Maintenance
 
-| Change | PR | Description |
-|--------|-----|-------------|
-| Version Increment | [#380](https://github.com/opensearch-project/query-insights/pull/380) | Increment version to 3.2.0-SNAPSHOT |
-| Release Notes | [#395](https://github.com/opensearch-project/query-insights/pull/395) | Add release notes for 3.2.0 |
+| Change | PR | Description | Related Issue |
+|--------|-----|-------------|---------------|
+| Version Increment | [#380](https://github.com/opensearch-project/query-insights/pull/380) | Increment version to 3.2.0-SNAPSHOT |   |
+| Release Notes | [#395](https://github.com/opensearch-project/query-insights/pull/395) | Add release notes for 3.2.0 |   |
 
 ## Limitations
 

@@ -163,9 +163,9 @@ GET /my-index/_search
 - [Prefix Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/prefix/): Official docs on prefix queries
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17268](https://github.com/opensearch-project/OpenSearch/pull/17268) | Remove MinimizationOperations to fix memory exhaustion |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17268](https://github.com/opensearch-project/OpenSearch/pull/17268) | Remove MinimizationOperations to fix memory exhaustion | [#16975](https://github.com/opensearch-project/OpenSearch/issues/16975) |
 
 ### Issues (Design / RFC)
 - [Issue #16975](https://github.com/opensearch-project/OpenSearch/issues/16975): Bug report - Memory exhaustion with case-insensitive term queries

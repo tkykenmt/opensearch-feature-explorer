@@ -144,9 +144,9 @@ GET /my-index/_search?routing=user1
 - [Search Shard Routing Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/search-shard-routing/): Official documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18848](https://github.com/opensearch-project/OpenSearch/pull/18848) | Fix: Ignore awareness attributes when custom preference is set |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18848](https://github.com/opensearch-project/OpenSearch/pull/18848) | Fix: Ignore awareness attributes when custom preference is set | [#18817](https://github.com/opensearch-project/OpenSearch/issues/18817) |
 
 ### Issues (Design / RFC)
 - [Issue #18817](https://github.com/opensearch-project/OpenSearch/issues/18817): Bug report for custom preference with awareness attributes

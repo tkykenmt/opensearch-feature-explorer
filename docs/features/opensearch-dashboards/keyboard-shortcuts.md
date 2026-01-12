@@ -188,11 +188,11 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 - [Dev Tools Console Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Keyboard shortcuts in Dev Tools
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#10409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10409) | Add keyboard shortcuts configuration option |
-| v3.3.0 | [#10455](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10455) | Add useKeyboardShortcut hook |
-| v3.3.0 | [#10466](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10466) | Add keyboard shortcut help modal |
-| v3.3.0 | [#10509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10509) | Register navigation shortcuts |
-| v3.3.0 | [#10543](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10543) | Add Cypress tests, enable by default |
-| v3.3.0 | [#10545](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10545) | Enable comment shortcuts in Query Editor |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#10409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10409) | Add keyboard shortcuts configuration option |   |
+| v3.3.0 | [#10455](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10455) | Add useKeyboardShortcut hook |   |
+| v3.3.0 | [#10466](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10466) | Add keyboard shortcut help modal |   |
+| v3.3.0 | [#10509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10509) | Register navigation shortcuts |   |
+| v3.3.0 | [#10543](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10543) | Add Cypress tests, enable by default |   |
+| v3.3.0 | [#10545](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10545) | Enable comment shortcuts in Query Editor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

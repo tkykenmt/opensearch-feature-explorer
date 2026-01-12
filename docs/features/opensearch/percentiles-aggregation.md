@@ -146,9 +146,9 @@ The t-digest algorithm maintains a compact summary of a data distribution using 
 - [t-digest Paper](https://github.com/tdunning/t-digest): Algorithm details and implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18124](https://github.com/opensearch-project/OpenSearch/pull/18124) | Switch to MergingDigest for ~2-30x performance improvement |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#18124](https://github.com/opensearch-project/OpenSearch/pull/18124) | Switch to MergingDigest for ~2-30x performance improvement | [#18122](https://github.com/opensearch-project/OpenSearch/issues/18122) |
 
 ### Issues (Design / RFC)
 - [Issue #18122](https://github.com/opensearch-project/OpenSearch/issues/18122): Performance improvement request

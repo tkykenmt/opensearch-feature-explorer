@@ -126,14 +126,14 @@ opensearch-reporting-cli \
 - [CLI Documentation](https://docs.opensearch.org/3.0/reporting/rep-cli-index/): Reporting using the CLI
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#650](https://github.com/opensearch-project/dashboards-reporting/pull/650) | Bump jspdf to fix CVE-2025-57810 |
-| v3.4.0 | [#649](https://github.com/opensearch-project/dashboards-reporting/pull/649) | Undefined and null check for date time values |
-| v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation |
-| v3.0.0 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |
-| v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |
-| v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#650](https://github.com/opensearch-project/dashboards-reporting/pull/650) | Bump jspdf to fix CVE-2025-57810 |   |
+| v3.4.0 | [#649](https://github.com/opensearch-project/dashboards-reporting/pull/649) | Undefined and null check for date time values |   |
+| v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation |   |
+| v3.0.0 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |   |
+| v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |   |
+| v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |   |
 
 ### Issues (Design / RFC)
 - [Issue #308](https://github.com/opensearch-project/dashboards-reporting/issues/308): Undefined date throws error while creating CSV

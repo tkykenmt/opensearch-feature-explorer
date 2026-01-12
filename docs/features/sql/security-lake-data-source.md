@@ -150,10 +150,10 @@ WITH (auto_refresh=true)
 - [Security Lake Connector Documentation](https://github.com/opensearch-project/sql/blob/main/docs/user/ppl/admin/connectors/security_lake_connector.rst)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2858](https://github.com/opensearch-project/sql/pull/2858) | Add flags for Iceberg and Lake Formation and Security Lake as a data source type |
-| v2.17.0 | [#2959](https://github.com/opensearch-project/sql/pull/2959) | Adds validation to allow only flint queries and sql SELECT queries to security lake type datasource |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2858](https://github.com/opensearch-project/sql/pull/2858) | Add flags for Iceberg and Lake Formation and Security Lake as a data source type |   |
+| v2.17.0 | [#2959](https://github.com/opensearch-project/sql/pull/2959) | Adds validation to allow only flint queries and sql SELECT queries to security lake type datasource | [#2907](https://github.com/opensearch-project/sql/issues/2907) |
 
 ### Issues (Design / RFC)
 - [Issue #2907](https://github.com/opensearch-project/sql/issues/2907): Original feature request

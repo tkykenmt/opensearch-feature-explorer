@@ -114,6 +114,6 @@ The bar size controls appear in the "Bar Settings" accordion within the style op
 - [PR #10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152): Initial implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152) | Add Bar Size Control Switch for auto/manual bar sizing |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152) | Add Bar Size Control Switch for auto/manual bar sizing |   |

@@ -134,9 +134,9 @@ PUT /my-warm-index
 - [Remote-backed storage documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/remote-store/index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#17988](https://github.com/opensearch-project/OpenSearch/pull/17988) | Add composite directory factory |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#17988](https://github.com/opensearch-project/OpenSearch/pull/17988) | Add composite directory factory |   |
 
 ### Issues (Design / RFC)
 - [Issue #17982](https://github.com/opensearch-project/OpenSearch/issues/17982): Need for Composite Directory Factory

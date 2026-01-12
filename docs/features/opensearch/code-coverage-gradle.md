@@ -177,11 +177,11 @@ $buildDir/build/reports/jacoco/test/html/
 - [PR #18376](https://github.com/opensearch-project/OpenSearch/pull/18376): javaRestTest coverage addition
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19165](https://github.com/opensearch-project/OpenSearch/pull/19165) | Include internalClusterTests and yamlRestTest in code coverage report |
-| v3.3.0 | [#19085](https://github.com/opensearch-project/OpenSearch/pull/19085) | Grant access to testclusters dir for tests |
-| v3.2.0 | [#18509](https://github.com/opensearch-project/OpenSearch/pull/18509) | Initial implementation - local code coverage with Gradle |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19165](https://github.com/opensearch-project/OpenSearch/pull/19165) | Include internalClusterTests and yamlRestTest in code coverage report |   |
+| v3.3.0 | [#19085](https://github.com/opensearch-project/OpenSearch/pull/19085) | Grant access to testclusters dir for tests |   |
+| v3.2.0 | [#18509](https://github.com/opensearch-project/OpenSearch/pull/18509) | Initial implementation - local code coverage with Gradle |   |
 
 ### Issues (Design / RFC)
 - [Issue #19140](https://github.com/opensearch-project/OpenSearch/issues/19140): Bug report - Code coverage report does not include internalClusterTests

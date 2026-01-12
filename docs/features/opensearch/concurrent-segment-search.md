@@ -132,14 +132,14 @@ PUT _cluster/settings
 - [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19584](https://github.com/opensearch-project/OpenSearch/pull/19584) | Omit maxScoreCollector in SimpleTopDocsCollectorContext when concurrent segment search enabled |
-| v3.3.0 | [#19053](https://github.com/opensearch-project/OpenSearch/pull/19053) | Fix assertion error when collapsing search results with concurrent segment search |
-| v3.2.0 | [#18451](https://github.com/opensearch-project/OpenSearch/pull/18451) | Optimize grouping for segment concurrent search |
-| v3.0.0 | [#17978](https://github.com/opensearch-project/OpenSearch/pull/17978) | Enable concurrent_segment_search auto mode by default |
-| v2.17.0 | - | Introduced `auto` mode for aggregation requests |
-| v2.12.0 | - | GA release of concurrent segment search (disabled by default) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19584](https://github.com/opensearch-project/OpenSearch/pull/19584) | Omit maxScoreCollector in SimpleTopDocsCollectorContext when concurrent segment search enabled |   |
+| v3.3.0 | [#19053](https://github.com/opensearch-project/OpenSearch/pull/19053) | Fix assertion error when collapsing search results with concurrent segment search | [#19051](https://github.com/opensearch-project/OpenSearch/issues/19051) |
+| v3.2.0 | [#18451](https://github.com/opensearch-project/OpenSearch/pull/18451) | Optimize grouping for segment concurrent search |   |
+| v3.0.0 | [#17978](https://github.com/opensearch-project/OpenSearch/pull/17978) | Enable concurrent_segment_search auto mode by default | [#17981](https://github.com/opensearch-project/OpenSearch/issues/17981) |
+| v2.17.0 | - | Introduced `auto` mode for aggregation requests |   |
+| v2.12.0 | - | GA release of concurrent segment search (disabled by default) |   |
 
 ### Issues (Design / RFC)
 - [Issue #7358](https://github.com/opensearch-project/OpenSearch/issues/7358): Original issue discussing slice computation mechanisms

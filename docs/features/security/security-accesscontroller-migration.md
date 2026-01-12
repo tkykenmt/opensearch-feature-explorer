@@ -172,10 +172,10 @@ public static Connection getConnection(final Settings settings, final Path confi
 - [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#5750](https://github.com/opensearch-project/security/pull/5750) | Replace AccessController and remove restriction on word Extension |
-| v3.4.0 | [#5815](https://github.com/opensearch-project/security/pull/5815) | Clean up AccessController with Exception disambiguation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#5750](https://github.com/opensearch-project/security/pull/5750) | Replace AccessController and remove restriction on word Extension |   |
+| v3.4.0 | [#5815](https://github.com/opensearch-project/security/pull/5815) | Clean up AccessController with Exception disambiguation |   |
 
 ### Issues (Design / RFC)
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): RFC - Replace Java Security Manager (JSM)

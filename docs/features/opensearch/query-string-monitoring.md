@@ -125,7 +125,7 @@ PUT _cluster/settings
 - [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Original max length setting
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19539](https://github.com/opensearch-project/OpenSearch/pull/19539) | Introduced monitoring mode for query string query max length |
-| v2.19.4 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Initial implementation of `search.query.max_query_string_length` setting |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19539](https://github.com/opensearch-project/OpenSearch/pull/19539) | Introduced monitoring mode for query string query max length |   |
+| v2.19.4 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Initial implementation of `search.query.max_query_string_length` setting |   |

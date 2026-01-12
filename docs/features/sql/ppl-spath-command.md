@@ -135,9 +135,9 @@ source=logs | spath output=a input=doc "['a fancy field name']"
 - [json_extract Function](https://github.com/opensearch-project/sql/blob/main/integ-test/src/test/java/org/opensearch/sql/calcite/remote/CalcitePPLJsonBuiltinFunctionIT.java): Related JSON extraction tests
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4120](https://github.com/opensearch-project/sql/pull/4120) | Starter implementation for `spath` command |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#4120](https://github.com/opensearch-project/sql/pull/4120) | Starter implementation for `spath` command |   |
 
 ### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/sql/issues/4119): RFC - Improved structured data extraction with `spath`

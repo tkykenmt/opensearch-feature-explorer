@@ -169,9 +169,9 @@ class ObsDashboardStateManager {
 - [OpenSearch-Dashboards #7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201): Content Management plugin RFC and implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2223](https://github.com/opensearch-project/dashboards-observability/pull/2223) | Fix non-workspace admin update observability:defaultDashboard |
-| v2.17.0 | [#2101](https://github.com/opensearch-project/dashboards-observability/pull/2101) | Make createAssets API compatible with workspace |
-| v2.17.0 | [#2077](https://github.com/opensearch-project/dashboards-observability/pull/2077) | OverviewPage made with Content Management |
-| v2.16.0 | [#7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201) | Content Management plugin introduction (dependency) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#2223](https://github.com/opensearch-project/dashboards-observability/pull/2223) | Fix non-workspace admin update observability:defaultDashboard |   |
+| v2.17.0 | [#2101](https://github.com/opensearch-project/dashboards-observability/pull/2101) | Make createAssets API compatible with workspace |   |
+| v2.17.0 | [#2077](https://github.com/opensearch-project/dashboards-observability/pull/2077) | OverviewPage made with Content Management |   |
+| v2.16.0 | [#7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201) | Content Management plugin introduction (dependency) | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

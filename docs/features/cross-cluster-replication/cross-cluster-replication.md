@@ -168,16 +168,16 @@ POST _plugins/_replication/follower-index/_stop
 - [Introduction to Cross-Cluster Replication blog](https://opensearch.org/blog/cross-cluster-replication-intro/)
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.4.0 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | cross-cluster-replication | Fix the requirement of empty request body in pause replication |
-| v3.3.0 | [#1580](https://github.com/opensearch-project/cross-cluster-replication/pull/1580) | cross-cluster-replication | Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput |
-| v3.2.0 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | cross-cluster-replication | Add missing method for RemoteClusterRepository class |
-| v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |
-| v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM |
-| v3.0.0 | [#1496](https://github.com/opensearch-project/cross-cluster-replication/pull/1496) | cross-cluster-replication | Gradle 8.10.2 and JDK23 support |
-| v2.17.0 | [#1412](https://github.com/opensearch-project/cross-cluster-replication/pull/1412) | cross-cluster-replication | Update remote-migration IT with correct setting names |
-| v1.1.0 | - | cross-cluster-replication | Initial CCR implementation |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.4.0 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | cross-cluster-replication | Fix the requirement of empty request body in pause replication | [#1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468) |
+| v3.3.0 | [#1580](https://github.com/opensearch-project/cross-cluster-replication/pull/1580) | cross-cluster-replication | Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput | [#1568](https://github.com/opensearch-project/cross-cluster-replication/issues/1568) |
+| v3.2.0 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | cross-cluster-replication | Add missing method for RemoteClusterRepository class |   |
+| v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication plugin interface |   |
+| v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM |   |
+| v3.0.0 | [#1496](https://github.com/opensearch-project/cross-cluster-replication/pull/1496) | cross-cluster-replication | Gradle 8.10.2 and JDK23 support |   |
+| v2.17.0 | [#1412](https://github.com/opensearch-project/cross-cluster-replication/pull/1412) | cross-cluster-replication | Update remote-migration IT with correct setting names |   |
+| v1.1.0 | - | cross-cluster-replication | Initial CCR implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices

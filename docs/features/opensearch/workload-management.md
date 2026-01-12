@@ -303,48 +303,48 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 - [Rule Lifecycle API](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ### Pull Requests
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.4.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Security attribute feature for WLM dashboard |
-| v3.3.0 | [#19502](https://github.com/opensearch-project/OpenSearch/pull/19502) | OpenSearch | Add check to stop workload group deletion with associated rules |
-| v3.3.0 | [#299](https://github.com/opensearch-project/query-insights-dashboards/pull/299) | query-insights-dashboards | Bi-directional navigation between WLM and Live Queries |
-| v3.3.0 | [#330](https://github.com/opensearch-project/query-insights-dashboards/pull/330) | query-insights-dashboards | Add navigation for Query Insights and WLM dashboards |
-| v3.3.0 | [#336](https://github.com/opensearch-project/query-insights-dashboards/pull/336) | query-insights-dashboards | Enable WLM mode in pipeline |
-| v3.3.0 | [#348](https://github.com/opensearch-project/query-insights-dashboards/pull/348) | query-insights-dashboards | Add feature flag for WLM |
-| v3.3.0 | [#352](https://github.com/opensearch-project/query-insights-dashboards/pull/352) | query-insights-dashboards | MDS support for WLM |
-| v3.3.0 | [#361](https://github.com/opensearch-project/query-insights-dashboards/pull/361) | query-insights-dashboards | Version decoupling for WLM dashboard |
-| v3.3.0 | [#363](https://github.com/opensearch-project/query-insights-dashboards/pull/363) | query-insights-dashboards | Version decouple unit tests |
-| v3.3.0 | [#19599](https://github.com/opensearch-project/OpenSearch/pull/19599) | OpenSearch | Fix auto tagging label resolving logic for principal attributes |
-| v3.3.0 | [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | OpenSearch | Bug fix on Update Rule API with multiple attributes |
-| v3.3.0 | [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | OpenSearch | Add autotagging label resolving logic for multiple attributes |
-| v3.3.0 | [#19429](https://github.com/opensearch-project/OpenSearch/pull/19429) | OpenSearch | Modify get rule API to suit nested attributes |
-| v3.3.0 | [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | OpenSearch | Restructure in-memory trie to store values as a set |
-| v3.3.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Add logic to extract security attributes for rule-based autotagging |
-| v3.3.0 | [#18550](https://github.com/opensearch-project/OpenSearch/pull/18550) | OpenSearch | Add autotagging rule integration tests |
-| v3.2.0 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | OpenSearch | Bug fix and improvements for rule-based auto tagging |
-| v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | OpenSearch | Add configurable limit on rule cardinality |
-| v3.2.0 | [#18652](https://github.com/opensearch-project/OpenSearch/pull/18652) | OpenSearch | Add WLM mode validation for workload group CRUD requests |
-| v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | OpenSearch | Fix delete rule event consumption for wildcard index based rules |
-| v3.2.0 | [#18709](https://github.com/opensearch-project/OpenSearch/pull/18709) | OpenSearch | Rename WorkloadGroupTestUtil to WorkloadManagementTestUtil |
-| v3.2.0 | [#18711](https://github.com/opensearch-project/OpenSearch/pull/18711) | OpenSearch | Rename QueryGroup to WorkloadGroup in comments and Javadocs |
-| v3.2.0 | [#18712](https://github.com/opensearch-project/OpenSearch/pull/18712) | OpenSearch | Modify logging message to show actual resiliency mode |
-| v3.0.0 | [#17901](https://github.com/opensearch-project/OpenSearch/pull/17901) | OpenSearch | Rename QueryGroup to WorkloadGroup |
-| v3.0.0 | [#16981](https://github.com/opensearch-project/OpenSearch/pull/16981) | OpenSearch | Add WLM support for search scroll API |
-| v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | OpenSearch | Add paginated wlm/stats API |
-| v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | OpenSearch | Add Get Rule API for auto-tagging |
-| v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | OpenSearch | Add WLM ActionFilter for automatic tagging |
-| v3.1.0 | [#17792](https://github.com/opensearch-project/OpenSearch/pull/17792) | OpenSearch | Add Create Rule API |
-| v3.1.0 | [#17797](https://github.com/opensearch-project/OpenSearch/pull/17797) | OpenSearch | Add Update Rule API |
-| v3.1.0 | [#18128](https://github.com/opensearch-project/OpenSearch/pull/18128) | OpenSearch | Add refresh-based rule synchronization |
-| v3.1.0 | [#18184](https://github.com/opensearch-project/OpenSearch/pull/18184) | OpenSearch | Add Delete Rule API |
-| v3.1.0 | [#18488](https://github.com/opensearch-project/OpenSearch/pull/18488) | OpenSearch | Bug fix for update rule API |
-| v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | OpenSearch | Add cancellation framework changes in WLM |
-| v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | OpenSearch | QueryGroup Stats API logic |
-| v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | OpenSearch | Add WLM resiliency orchestrator (QueryGroup Service) |
-| v2.18.0 | [#15955](https://github.com/opensearch-project/OpenSearch/pull/15955) | OpenSearch | Add integration tests for WLM CRUD APIs |
-| v2.18.0 | [#16370](https://github.com/opensearch-project/OpenSearch/pull/16370) | OpenSearch | Make QueryGroups durable |
-| v2.18.0 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | OpenSearch | Improve rejection logic for WLM |
-| v2.18.0 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | OpenSearch | WLM create/update REST API bug fix |
+| Version | PR | Repository | Description | Related Issue |
+|---------|-----|------------|-------------|---------------|
+| v3.4.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Security attribute feature for WLM dashboard |   |
+| v3.3.0 | [#19502](https://github.com/opensearch-project/OpenSearch/pull/19502) | OpenSearch | Add check to stop workload group deletion with associated rules | [#19388](https://github.com/opensearch-project/OpenSearch/issues/19388) |
+| v3.3.0 | [#299](https://github.com/opensearch-project/query-insights-dashboards/pull/299) | query-insights-dashboards | Bi-directional navigation between WLM and Live Queries |   |
+| v3.3.0 | [#330](https://github.com/opensearch-project/query-insights-dashboards/pull/330) | query-insights-dashboards | Add navigation for Query Insights and WLM dashboards |   |
+| v3.3.0 | [#336](https://github.com/opensearch-project/query-insights-dashboards/pull/336) | query-insights-dashboards | Enable WLM mode in pipeline |   |
+| v3.3.0 | [#348](https://github.com/opensearch-project/query-insights-dashboards/pull/348) | query-insights-dashboards | Add feature flag for WLM |   |
+| v3.3.0 | [#352](https://github.com/opensearch-project/query-insights-dashboards/pull/352) | query-insights-dashboards | MDS support for WLM |   |
+| v3.3.0 | [#361](https://github.com/opensearch-project/query-insights-dashboards/pull/361) | query-insights-dashboards | Version decoupling for WLM dashboard |   |
+| v3.3.0 | [#363](https://github.com/opensearch-project/query-insights-dashboards/pull/363) | query-insights-dashboards | Version decouple unit tests |   |
+| v3.3.0 | [#19599](https://github.com/opensearch-project/OpenSearch/pull/19599) | OpenSearch | Fix auto tagging label resolving logic for principal attributes |   |
+| v3.3.0 | [#19497](https://github.com/opensearch-project/OpenSearch/pull/19497) | OpenSearch | Bug fix on Update Rule API with multiple attributes |   |
+| v3.3.0 | [#19486](https://github.com/opensearch-project/OpenSearch/pull/19486) | OpenSearch | Add autotagging label resolving logic for multiple attributes |   |
+| v3.3.0 | [#19429](https://github.com/opensearch-project/OpenSearch/pull/19429) | OpenSearch | Modify get rule API to suit nested attributes |   |
+| v3.3.0 | [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | OpenSearch | Restructure in-memory trie to store values as a set |   |
+| v3.3.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Add logic to extract security attributes for rule-based autotagging |   |
+| v3.3.0 | [#18550](https://github.com/opensearch-project/OpenSearch/pull/18550) | OpenSearch | Add autotagging rule integration tests |   |
+| v3.2.0 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | OpenSearch | Bug fix and improvements for rule-based auto tagging |   |
+| v3.2.0 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | OpenSearch | Add configurable limit on rule cardinality |   |
+| v3.2.0 | [#18652](https://github.com/opensearch-project/OpenSearch/pull/18652) | OpenSearch | Add WLM mode validation for workload group CRUD requests |   |
+| v3.2.0 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | OpenSearch | Fix delete rule event consumption for wildcard index based rules |   |
+| v3.2.0 | [#18709](https://github.com/opensearch-project/OpenSearch/pull/18709) | OpenSearch | Rename WorkloadGroupTestUtil to WorkloadManagementTestUtil |   |
+| v3.2.0 | [#18711](https://github.com/opensearch-project/OpenSearch/pull/18711) | OpenSearch | Rename QueryGroup to WorkloadGroup in comments and Javadocs |   |
+| v3.2.0 | [#18712](https://github.com/opensearch-project/OpenSearch/pull/18712) | OpenSearch | Modify logging message to show actual resiliency mode |   |
+| v3.0.0 | [#17901](https://github.com/opensearch-project/OpenSearch/pull/17901) | OpenSearch | Rename QueryGroup to WorkloadGroup |   |
+| v3.0.0 | [#16981](https://github.com/opensearch-project/OpenSearch/pull/16981) | OpenSearch | Add WLM support for search scroll API | [#16874](https://github.com/opensearch-project/OpenSearch/issues/16874) |
+| v3.1.0 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | OpenSearch | Add paginated wlm/stats API |   |
+| v3.1.0 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | OpenSearch | Add Get Rule API for auto-tagging |   |
+| v3.1.0 | [#17791](https://github.com/opensearch-project/OpenSearch/pull/17791) | OpenSearch | Add WLM ActionFilter for automatic tagging |   |
+| v3.1.0 | [#17792](https://github.com/opensearch-project/OpenSearch/pull/17792) | OpenSearch | Add Create Rule API |   |
+| v3.1.0 | [#17797](https://github.com/opensearch-project/OpenSearch/pull/17797) | OpenSearch | Add Update Rule API |   |
+| v3.1.0 | [#18128](https://github.com/opensearch-project/OpenSearch/pull/18128) | OpenSearch | Add refresh-based rule synchronization |   |
+| v3.1.0 | [#18184](https://github.com/opensearch-project/OpenSearch/pull/18184) | OpenSearch | Add Delete Rule API |   |
+| v3.1.0 | [#18488](https://github.com/opensearch-project/OpenSearch/pull/18488) | OpenSearch | Bug fix for update rule API |   |
+| v2.18.0 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | OpenSearch | Add cancellation framework changes in WLM | [#14883](https://github.com/opensearch-project/OpenSearch/issues/14883) |
+| v2.18.0 | [#15777](https://github.com/opensearch-project/OpenSearch/pull/15777) | OpenSearch | QueryGroup Stats API logic |   |
+| v2.18.0 | [#15925](https://github.com/opensearch-project/OpenSearch/pull/15925) | OpenSearch | Add WLM resiliency orchestrator (QueryGroup Service) |   |
+| v2.18.0 | [#15955](https://github.com/opensearch-project/OpenSearch/pull/15955) | OpenSearch | Add integration tests for WLM CRUD APIs |   |
+| v2.18.0 | [#16370](https://github.com/opensearch-project/OpenSearch/pull/16370) | OpenSearch | Make QueryGroups durable |   |
+| v2.18.0 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | OpenSearch | Improve rejection logic for WLM |   |
+| v2.18.0 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | OpenSearch | WLM create/update REST API bug fix |   |
 
 ### Issues (Design / RFC)
 - [RFC #12342](https://github.com/opensearch-project/OpenSearch/issues/12342): Search Query Sandboxing: User Experience

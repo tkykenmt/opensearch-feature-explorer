@@ -127,10 +127,10 @@ POST /my-index/_search?batched_reduce_size=256
 - [Search Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/search-settings/): Search configuration options
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19396](https://github.com/opensearch-project/OpenSearch/pull/19396) | Harden the circuit breaker and failure handle logic in query result consumer |
-| v3.3.0 | [#19231](https://github.com/opensearch-project/OpenSearch/pull/19231) | Fix incomplete callback loops in QueryPhaseResultConsumer |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19396](https://github.com/opensearch-project/OpenSearch/pull/19396) | Harden the circuit breaker and failure handle logic in query result consumer |   |
+| v3.3.0 | [#19231](https://github.com/opensearch-project/OpenSearch/pull/19231) | Fix incomplete callback loops in QueryPhaseResultConsumer | [#19094](https://github.com/opensearch-project/OpenSearch/issues/19094) |
 
 ### Issues (Design / RFC)
 - [Issue #19094](https://github.com/opensearch-project/OpenSearch/issues/19094): Flaky Test Report for SearchPhaseControllerTests

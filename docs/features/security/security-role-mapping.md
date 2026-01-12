@@ -139,7 +139,7 @@ if (userInfo != null) {
 - [PR #5212](https://github.com/opensearch-project/security/pull/5212): Immutable user object implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#5369](https://github.com/opensearch-project/security/pull/5369) | Fix: Include mapped roles when setting userInfo in ThreadContext |
-| v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Performance: Immutable user object |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#5369](https://github.com/opensearch-project/security/pull/5369) | Fix: Include mapped roles when setting userInfo in ThreadContext |   |
+| v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Performance: Immutable user object | [#5168](https://github.com/opensearch-project/security/issues/5168) |

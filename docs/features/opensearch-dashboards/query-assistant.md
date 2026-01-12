@@ -136,17 +136,17 @@ Example natural language queries:
 - [OpenSearch adds a new generative AI assistant toolkit](https://opensearch.org/blog/opensearch-adds-new-generative-ai-assistant-toolkit/): Introduction blog post
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9647](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9647) | Support streaming when content type is event stream |
-| v3.0.0 | [#9232](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9232) | Display query assistant when dataset is not supported |
-| v3.0.0 | [#9532](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9532) | Append prompt for query assistant in request payload |
-| v3.0.0 | [#9277](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9277) | Hide assistant entry when data2summary agent missing |
-| v3.0.0 | [#9464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9464) | Organizing generated summary by using markdown format |
-| v3.0.0 | [#9480](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9480) | Should not show summary if there is no response |
-| v3.0.0 | [#9492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9492) | Text size in generated summary should be s |
-| v3.0.0 | [#9509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9509) | Fix minor UX style issues on discover summary section |
-| v3.0.0 | [#9519](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9519) | Discover summary regression when result is empty |
-| v3.0.0 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Clear discover summary if t2ppl failed |
-| v3.0.0 | [#9553](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9553) | Use markdown in discover summary |
-| v3.0.0 | [#9601](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9601) | Fix PPL refresh on regeneration |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#9647](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9647) | Support streaming when content type is event stream | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9232](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9232) | Display query assistant when dataset is not supported | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9532](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9532) | Append prompt for query assistant in request payload |   |
+| v3.0.0 | [#9277](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9277) | Hide assistant entry when data2summary agent missing |   |
+| v3.0.0 | [#9464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9464) | Organizing generated summary by using markdown format |   |
+| v3.0.0 | [#9480](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9480) | Should not show summary if there is no response | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9492) | Text size in generated summary should be s |   |
+| v3.0.0 | [#9509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9509) | Fix minor UX style issues on discover summary section |   |
+| v3.0.0 | [#9519](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9519) | Discover summary regression when result is empty | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Clear discover summary if t2ppl failed | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9553](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9553) | Use markdown in discover summary | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9601](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9601) | Fix PPL refresh on regeneration |   |

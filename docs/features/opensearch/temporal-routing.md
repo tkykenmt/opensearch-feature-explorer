@@ -208,9 +208,9 @@ GET logs/_search?search_pipeline=temporal-routing-search
 - [Search pipelines](https://docs.opensearch.org/3.3/search-plugins/search-pipelines/): Search pipeline documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18966](https://github.com/opensearch-project/OpenSearch/pull/18966) | Add temporal routing processors for time-based document routing |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18966](https://github.com/opensearch-project/OpenSearch/pull/18966) | Add temporal routing processors for time-based document routing |   |
 
 ### Issues (Design / RFC)
 - [Issue #18920](https://github.com/opensearch-project/OpenSearch/issues/18920): RFC for Temporal Routing Processors

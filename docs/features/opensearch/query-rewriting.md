@@ -211,9 +211,9 @@ QueryRewriterRegistry.INSTANCE.registerRewriter(new QueryRewriter() {
 - [Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/query-rewriting/): Query rewriting overview
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19060](https://github.com/opensearch-project/OpenSearch/pull/19060) | Initial implementation of query rewriting infrastructure |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19060](https://github.com/opensearch-project/OpenSearch/pull/19060) | Initial implementation of query rewriting infrastructure |   |
 
 ### Issues (Design / RFC)
 - [Issue #18906](https://github.com/opensearch-project/OpenSearch/issues/18906): RFC for Query Rewriting, Logical Planning, and Cost-Based Execution

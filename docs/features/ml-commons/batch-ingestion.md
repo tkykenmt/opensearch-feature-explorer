@@ -316,14 +316,14 @@ sequenceDiagram
 - [Scaling Vector Generation Blog](https://opensearch.org/blog/scaling-vector-generation-batch-ml-inference-with-opensearch-ingestion-and-ml-commons/): Blog post on batch ML inference integration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#3080](https://github.com/opensearch-project/ml-commons/pull/3080) | Default action types for batch job task management |
-| v2.18.0 | [#2989](https://github.com/opensearch-project/ml-commons/pull/2989) | Connector credential support for batch ingestion |
-| v2.18.0 | [#3098](https://github.com/opensearch-project/ml-commons/pull/3098) | Model group access control for batch job APIs |
-| v2.18.0 | [#3116](https://github.com/opensearch-project/ml-commons/pull/3116) | Rate limiting and configurable bulk size |
-| v2.17.0 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters |
-| v2.17.0 | [#2825](https://github.com/opensearch-project/ml-commons/pull/2825) | Support get batch transform job status in get task API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#3080](https://github.com/opensearch-project/ml-commons/pull/3080) | Default action types for batch job task management |   |
+| v2.18.0 | [#2989](https://github.com/opensearch-project/ml-commons/pull/2989) | Connector credential support for batch ingestion |   |
+| v2.18.0 | [#3098](https://github.com/opensearch-project/ml-commons/pull/3098) | Model group access control for batch job APIs |   |
+| v2.18.0 | [#3116](https://github.com/opensearch-project/ml-commons/pull/3116) | Rate limiting and configurable bulk size |   |
+| v2.17.0 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters |   |
+| v2.17.0 | [#2825](https://github.com/opensearch-project/ml-commons/pull/2825) | Support get batch transform job status in get task API |   |
 
 ### Issues (Design / RFC)
 - [Issue #2840](https://github.com/opensearch-project/ml-commons/issues/2840): Offline Batch Inference and Batch Ingestion

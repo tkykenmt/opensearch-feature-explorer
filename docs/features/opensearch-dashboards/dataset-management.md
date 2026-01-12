@@ -216,19 +216,19 @@ datasetManagement.aliasedAsIndexPattern: false
 - [Dashboards Management](https://docs.opensearch.org/3.0/dashboards/management/management-index/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10623) | Wildcard prefix support for index datasets |
-| v3.4.0 | [#10690](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10690) | Save dataset from configurator |
-| v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Logs tab with accordion UI |
-| v3.4.0 | [#10704](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10704) | Dataset creation flow update |
-| v3.4.0 | [#10714](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10714) | Schema mapping introduction |
-| v3.4.0 | [#10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716) | Multiple log datasets support |
-| v3.4.0 | [#10737](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10737) | Data scope and schema mapping on edit page |
-| v3.4.0 | [#10776](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10776) | Dataset table with display name/description |
-| v3.4.0 | [#10779](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10779) | Display name/description on edit page |
-| v3.4.0 | [#10781](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10781) | Empty logs component |
-| v3.4.0 | [#10791](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10791) | Index pattern → dataset terminology conversion |
-| v3.4.0 | [#10572](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10572) | Fix dataset filter by signal type |
-| v3.4.0 | [#10692](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10692) | Restrict patterns tab to default datasets |
-| v3.3.0 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Initial dataset type and management |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10623) | Wildcard prefix support for index datasets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10690](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10690) | Save dataset from configurator | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Logs tab with accordion UI |   |
+| v3.4.0 | [#10704](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10704) | Dataset creation flow update | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10714](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10714) | Schema mapping introduction | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716) | Multiple log datasets support |   |
+| v3.4.0 | [#10737](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10737) | Data scope and schema mapping on edit page | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10776](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10776) | Dataset table with display name/description | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10779](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10779) | Display name/description on edit page | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10781](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10781) | Empty logs component |   |
+| v3.4.0 | [#10791](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10791) | Index pattern → dataset terminology conversion | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10572](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10572) | Fix dataset filter by signal type | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.4.0 | [#10692](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10692) | Restrict patterns tab to default datasets |   |
+| v3.3.0 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Initial dataset type and management | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

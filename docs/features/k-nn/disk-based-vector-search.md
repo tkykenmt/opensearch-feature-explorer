@@ -191,14 +191,14 @@ This approach requires no pretraining and can begin ingestion immediately.
 - [Blog: Reduce costs with disk-based vector search](https://opensearch.org/blog/reduce-cost-with-disk-based-vector-search/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2034](https://github.com/opensearch-project/k-NN/pull/2034) | Introduce mode and compression param resolution |
-| v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |
-| v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as top level parameter |
-| v2.17.0 | [#2200](https://github.com/opensearch-project/k-NN/pull/2200) | Add CompressionLevel calculation for PQ |
-| v2.18.0 | [#2281](https://github.com/opensearch-project/k-NN/pull/2281) | Fix bug when segment has no vector field for disk-based search |
-| v2.19.0 | [#2290](https://github.com/opensearch-project/k-NN/pull/2290) | Allow method parameter override for training based indices |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#2034](https://github.com/opensearch-project/k-NN/pull/2034) | Introduce mode and compression param resolution |   |
+| v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |   |
+| v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as top level parameter |   |
+| v2.17.0 | [#2200](https://github.com/opensearch-project/k-NN/pull/2200) | Add CompressionLevel calculation for PQ |   |
+| v2.18.0 | [#2281](https://github.com/opensearch-project/k-NN/pull/2281) | Fix bug when segment has no vector field for disk-based search |   |
+| v2.19.0 | [#2290](https://github.com/opensearch-project/k-NN/pull/2290) | Allow method parameter override for training based indices | [#2246](https://github.com/opensearch-project/k-NN/issues/2246) |
 
 ### Issues (Design / RFC)
 - [RFC: Disk-based Mode Design (#1949)](https://github.com/opensearch-project/k-NN/issues/1949): Design document for mode parameter

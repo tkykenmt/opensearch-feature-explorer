@@ -155,14 +155,14 @@ GET logs/_search
 - [OpenSearch 2.15 Blog](https://opensearch.org/blog/diving-into-opensearch-2-15/): Initial feature announcement
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19796](https://github.com/opensearch-project/OpenSearch/pull/19796) | Change doc_values default to true |
-| v3.3.0 | [#18568](https://github.com/opensearch-project/OpenSearch/pull/18568) | Fix sorting bug by disabling pruning for doc_values |
-| v3.0.0 | [#17349](https://github.com/opensearch-project/OpenSearch/pull/17349) | Optimize to 3-gram only indexing |
-| v2.18.0 | [#15737](https://github.com/opensearch-project/OpenSearch/pull/15737) | Fix wildcard query containing escaped character |
-| v2.18.0 | [#15882](https://github.com/opensearch-project/OpenSearch/pull/15882) | Fix case-insensitive query on wildcard field |
-| v2.15.0 | Initial | Wildcard field type introduction |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19796](https://github.com/opensearch-project/OpenSearch/pull/19796) | Change doc_values default to true | [#18678](https://github.com/opensearch-project/OpenSearch/issues/18678) |
+| v3.3.0 | [#18568](https://github.com/opensearch-project/OpenSearch/pull/18568) | Fix sorting bug by disabling pruning for doc_values |   |
+| v3.0.0 | [#17349](https://github.com/opensearch-project/OpenSearch/pull/17349) | Optimize to 3-gram only indexing | [#17099](https://github.com/opensearch-project/OpenSearch/issues/17099) |
+| v2.18.0 | [#15737](https://github.com/opensearch-project/OpenSearch/pull/15737) | Fix wildcard query containing escaped character | [#15555](https://github.com/opensearch-project/OpenSearch/issues/15555) |
+| v2.18.0 | [#15882](https://github.com/opensearch-project/OpenSearch/pull/15882) | Fix case-insensitive query on wildcard field | [#15855](https://github.com/opensearch-project/OpenSearch/issues/15855) |
+| v2.15.0 | Initial | Wildcard field type introduction |   |
 
 ### Issues (Design / RFC)
 - [Issue #18678](https://github.com/opensearch-project/OpenSearch/issues/18678): Bug report for nested query on wildcard field returning no results

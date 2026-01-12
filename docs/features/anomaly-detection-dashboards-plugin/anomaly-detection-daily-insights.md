@@ -147,8 +147,8 @@ The Daily Insights page displays:
 - [Anomaly Detection Dashboards Plugin](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1118](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1118) | Introduce Daily Insights Page |
-| v3.4.0 | [#1119](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1119) | Adding Indices management and selection for daily insights |
-| v3.4.0 | [#1120](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1120) | Adding data selector for index management |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#1118](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1118) | Introduce Daily Insights Page |   |
+| v3.4.0 | [#1119](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1119) | Adding Indices management and selection for daily insights |   |
+| v3.4.0 | [#1120](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1120) | Adding data selector for index management |   |

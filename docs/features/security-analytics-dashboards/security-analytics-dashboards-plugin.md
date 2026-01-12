@@ -105,26 +105,26 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 - [security-analytics-dashboards-plugin](https://github.com/opensearch-project/security-analytics-dashboards-plugin): GitHub repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#1169](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1169) | Update category to flatten menus in analytics(all) use case |
-| v2.18.0 | [#1174](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1174) | Fit and Finish UX Fixes |
-| v2.18.0 | [#1175](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1175) | Security analytics overview page improvements |
-| v2.18.0 | [#1197](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1197) | Added HOURS option for source refresh interval |
-| v2.18.0 | [#1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160) | Fix findings page crash and rule severity correctness |
-| v2.18.0 | [#1186](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1186) | Avoid showing unhelpful error toast when datasource is not yet selected |
-| v2.18.0 | [#1188](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1188) | Update getting started cards content and visual design |
-| v2.18.0 | [#1192](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1192) | Fix data source picker remount multiple times |
-| v2.18.0 | [#1199](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1199) | Switch to default datasource instead of local cluster on initial loading |
-| v2.18.0 | [#1200](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1200) | Make data source default cluster for threat alerts card |
-| v2.17.0 | [#1100](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1100) | Update data source selection label and help text |
-| v2.17.0 | [#1124](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1124) | Add threat alerts card for Analytics (All) workspace |
-| v2.17.0 | [#1125](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1125) | Update URL with data source ID; redirect on reload |
-| v2.17.0 | [#1147](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1147) | Fit and Finishes Changes for Security Analytics |
-| v2.17.0 | [#1093](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1093) | Navigation category and workspace availability fix |
-| v2.17.0 | [#1107](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1107) | UI fixes for correlation graph, pagination, filtering |
-| v2.17.0 | [#1123](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1123) | PageHeader and SideNav bug fixes |
-| v2.17.0 | [#1132](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1132) | Multi data source support check |
-| v2.17.0 | [#1136](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1136) | Import fix for webpack compatibility |
-| v2.17.0 | [#1144](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1144) | Remove problematic import |
-| v2.17.0 | [#1149](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1149) | URL state passthrough fix |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#1169](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1169) | Update category to flatten menus in analytics(all) use case |   |
+| v2.18.0 | [#1174](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1174) | Fit and Finish UX Fixes |   |
+| v2.18.0 | [#1175](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1175) | Security analytics overview page improvements |   |
+| v2.18.0 | [#1197](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1197) | Added HOURS option for source refresh interval |   |
+| v2.18.0 | [#1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160) | Fix findings page crash and rule severity correctness |   |
+| v2.18.0 | [#1186](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1186) | Avoid showing unhelpful error toast when datasource is not yet selected |   |
+| v2.18.0 | [#1188](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1188) | Update getting started cards content and visual design |   |
+| v2.18.0 | [#1192](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1192) | Fix data source picker remount multiple times |   |
+| v2.18.0 | [#1199](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1199) | Switch to default datasource instead of local cluster on initial loading |   |
+| v2.18.0 | [#1200](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1200) | Make data source default cluster for threat alerts card |   |
+| v2.17.0 | [#1100](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1100) | Update data source selection label and help text |   |
+| v2.17.0 | [#1124](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1124) | Add threat alerts card for Analytics (All) workspace |   |
+| v2.17.0 | [#1125](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1125) | Update URL with data source ID; redirect on reload |   |
+| v2.17.0 | [#1147](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1147) | Fit and Finishes Changes for Security Analytics |   |
+| v2.17.0 | [#1093](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1093) | Navigation category and workspace availability fix |   |
+| v2.17.0 | [#1107](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1107) | UI fixes for correlation graph, pagination, filtering |   |
+| v2.17.0 | [#1123](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1123) | PageHeader and SideNav bug fixes |   |
+| v2.17.0 | [#1132](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1132) | Multi data source support check |   |
+| v2.17.0 | [#1136](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1136) | Import fix for webpack compatibility |   |
+| v2.17.0 | [#1144](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1144) | Remove problematic import |   |
+| v2.17.0 | [#1149](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1149) | URL state passthrough fix |   |

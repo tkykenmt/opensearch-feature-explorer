@@ -171,9 +171,9 @@ public ResolvedIndices resolveIndices(ReindexRequest request) {
 - [ResolvedIndices.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/metadata/ResolvedIndices.java): Main data class source
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#18523](https://github.com/opensearch-project/OpenSearch/pull/18523) | Initial implementation of explicit index resolution API |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#18523](https://github.com/opensearch-project/OpenSearch/pull/18523) | Initial implementation of explicit index resolution API | [#5367](https://github.com/opensearch-project/OpenSearch/issues/5367) |
 
 ### Issues (Design / RFC)
 - [Issue #5367](https://github.com/opensearch-project/security/issues/5367): Index pattern resolution improvements (motivation)

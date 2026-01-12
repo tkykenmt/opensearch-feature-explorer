@@ -106,11 +106,11 @@ public class MyNodesRequest extends BaseNodesRequest<MyNodesRequest> {
 - [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Node roles configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17682](https://github.com/opensearch-project/OpenSearch/pull/17682) | Unset discovery nodes for every transport node actions request (breaking change) |
-| v2.16.0 | [#15131](https://github.com/opensearch-project/OpenSearch/pull/15131) | Reset discovery nodes in all transport node actions request |
-| v2.16.0 | [#14749](https://github.com/opensearch-project/OpenSearch/pull/14749) | Initial optimization for NodeStats, ClusterStats, NodeInfo |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17682](https://github.com/opensearch-project/OpenSearch/pull/17682) | Unset discovery nodes for every transport node actions request (breaking change) | [#17008](https://github.com/opensearch-project/OpenSearch/issues/17008) |
+| v2.16.0 | [#15131](https://github.com/opensearch-project/OpenSearch/pull/15131) | Reset discovery nodes in all transport node actions request |   |
+| v2.16.0 | [#14749](https://github.com/opensearch-project/OpenSearch/pull/14749) | Initial optimization for NodeStats, ClusterStats, NodeInfo | [#14713](https://github.com/opensearch-project/OpenSearch/issues/14713) |
 
 ### Issues (Design / RFC)
 - [Issue #17008](https://github.com/opensearch-project/OpenSearch/issues/17008): Feature request for v3.0.0 breaking change

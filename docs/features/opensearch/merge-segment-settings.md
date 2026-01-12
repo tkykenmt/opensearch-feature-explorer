@@ -135,11 +135,11 @@ POST /my-index/_forcemerge?max_num_segments=1
 - [Force Merge API](https://docs.opensearch.org/3.0/api-reference/index-apis/force-merge/): Force merge documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17255](https://github.com/opensearch-project/OpenSearch/pull/17255) | Increase force merge threads to 1/8th of cores |
-| v3.0.0 | [#17699](https://github.com/opensearch-project/OpenSearch/pull/17699) | Increase floor segment size to 16MB |
-| v3.0.0 | [#17774](https://github.com/opensearch-project/OpenSearch/pull/17774) | Increase default maxMergeAtOnce to 30 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17255](https://github.com/opensearch-project/OpenSearch/pull/17255) | Increase force merge threads to 1/8th of cores |   |
+| v3.0.0 | [#17699](https://github.com/opensearch-project/OpenSearch/pull/17699) | Increase floor segment size to 16MB |   |
+| v3.0.0 | [#17774](https://github.com/opensearch-project/OpenSearch/pull/17774) | Increase default maxMergeAtOnce to 30 | [#17051](https://github.com/opensearch-project/OpenSearch/issues/17051) |
 
 ### Issues (Design / RFC)
 - [Issue #17051](https://github.com/opensearch-project/OpenSearch/issues/17051): Increase maxMergeAtOnce parameter in OpenSearch 3.0

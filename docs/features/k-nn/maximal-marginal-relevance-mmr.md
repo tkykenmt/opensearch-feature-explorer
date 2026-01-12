@@ -234,10 +234,10 @@ Choose candidates based on your diversity requirements and latency budget.
 - [Blog: Improving vector search diversity through native MMR](https://opensearch.org/blog/improving-vector-search-diversity-through-native-mmr/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [k-NN #2868](https://github.com/opensearch-project/k-NN/pull/2868) | Support native Maximal Marginal Relevance |
-| v3.3.0 | [neural-search #1567](https://github.com/opensearch-project/neural-search/pull/1567) | Support native MMR for neural query |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [k-NN #2868](https://github.com/opensearch-project/k-NN/pull/2868) | Support native Maximal Marginal Relevance | [#2804](https://github.com/opensearch-project/k-NN/issues/2804) |
+| v3.3.0 | [neural-search #1567](https://github.com/opensearch-project/neural-search/pull/1567) | Support native MMR for neural query | [#1481](https://github.com/opensearch-project/neural-search/issues/1481) |
 
 ### Issues (Design / RFC)
 - [Issue k-NN #2804](https://github.com/opensearch-project/k-NN/issues/2804): Original feature request

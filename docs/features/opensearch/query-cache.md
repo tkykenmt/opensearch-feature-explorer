@@ -118,9 +118,9 @@ Costly queries include:
 - [Lucene PR #14412](https://github.com/apache/lucene/pull/14412): Upstream Lucene change for dynamic skip cache factor
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18351](https://github.com/opensearch-project/OpenSearch/pull/18351) | Add dynamic settings for skip_cache_factor and min_frequency |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#18351](https://github.com/opensearch-project/OpenSearch/pull/18351) | Add dynamic settings for skip_cache_factor and min_frequency | [#17736](https://github.com/opensearch-project/OpenSearch/issues/17736) |
 
 ### Issues (Design / RFC)
 - [Issue #17736](https://github.com/opensearch-project/OpenSearch/issues/17736): Feature request for dynamic query cache settings

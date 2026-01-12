@@ -107,10 +107,10 @@ POST _plugins/_notifications/configs
 - [Gradle 8.14 Release Notes](https://docs.gradle.org/8.14/release-notes.html)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#1074](https://github.com/opensearch-project/notifications/pull/1074) | Fix issue publishing maven snapshots by forcing slf4j version |
-| v3.3.0 | [#1069](https://github.com/opensearch-project/notifications/pull/1069) | Fix: Update System.env syntax for Gradle 9 compatibility |
-| v3.2.0 | [#1057](https://github.com/opensearch-project/notifications/pull/1057) | Updated gradle, jdk and other dependencies |
-| v3.1.0 | [#1036](https://github.com/opensearch-project/notifications/pull/1036) | Upgrade javax to jakarta mail |
-| v3.1.0 | [#1027](https://github.com/opensearch-project/notifications/pull/1027) | Version increment to 3.1.0-SNAPSHOT |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#1074](https://github.com/opensearch-project/notifications/pull/1074) | Fix issue publishing maven snapshots by forcing slf4j version |   |
+| v3.3.0 | [#1069](https://github.com/opensearch-project/notifications/pull/1069) | Fix: Update System.env syntax for Gradle 9 compatibility |   |
+| v3.2.0 | [#1057](https://github.com/opensearch-project/notifications/pull/1057) | Updated gradle, jdk and other dependencies |   |
+| v3.1.0 | [#1036](https://github.com/opensearch-project/notifications/pull/1036) | Upgrade javax to jakarta mail |   |
+| v3.1.0 | [#1027](https://github.com/opensearch-project/notifications/pull/1027) | Version increment to 3.1.0-SNAPSHOT |   |

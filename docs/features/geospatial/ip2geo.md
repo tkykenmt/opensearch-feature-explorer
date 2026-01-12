@@ -197,14 +197,14 @@ Fields available depend on the datasource. GeoLite2 City provides:
 - [Geospatial Plugin](https://github.com/opensearch-project/geospatial): Source repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#795](https://github.com/opensearch-project/geospatial/pull/795) | Remove deprecated URL(String) usage |
-| v3.2.0 | [#782](https://github.com/opensearch-project/geospatial/pull/782) | Block redirect in IP2Geo and move validation to transport action |
-| v3.2.0 | [#715](https://github.com/opensearch-project/geospatial/pull/715) | Replace ThreadContext.stashContext with pluginSubject.runAs |
-| v3.1.0 | [#761](https://github.com/opensearch-project/geospatial/pull/761) | Reset datasource metadata on update failure |
-| v3.1.0 | [#766](https://github.com/opensearch-project/geospatial/pull/766) | Cache refresh and retry on errors |
-| v2.10.0 | - | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#795](https://github.com/opensearch-project/geospatial/pull/795) | Remove deprecated URL(String) usage |   |
+| v3.2.0 | [#782](https://github.com/opensearch-project/geospatial/pull/782) | Block redirect in IP2Geo and move validation to transport action |   |
+| v3.2.0 | [#715](https://github.com/opensearch-project/geospatial/pull/715) | Replace ThreadContext.stashContext with pluginSubject.runAs | [#238](https://github.com/opensearch-project/geospatial/issues/238) |
+| v3.1.0 | [#761](https://github.com/opensearch-project/geospatial/pull/761) | Reset datasource metadata on update failure |   |
+| v3.1.0 | [#766](https://github.com/opensearch-project/geospatial/pull/766) | Cache refresh and retry on errors |   |
+| v2.10.0 | - | Initial implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #238](https://github.com/opensearch-project/opensearch-plugins/issues/238): META - Remove usages of ThreadContext.stashContext

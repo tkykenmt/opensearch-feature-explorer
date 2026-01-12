@@ -160,9 +160,9 @@ Query Assist provides clear feedback for different error scenarios:
 - [dashboards-assistant Getting Started Guide](https://github.com/opensearch-project/dashboards-assistant/blob/main/GETTING_STARTED_GUIDE.md)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#875](https://github.com/opensearch-project/flow-framework/pull/875) | Add query assist data summary agent template |
-| v2.17.0 | [#7998](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7998) | Agent error badge, ml-commons response schema update |
-| v2.16.0 | [#7212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7212) | Add query enhancements plugin as core plugin |
-| v2.13.0 | - | Initial Query Assist implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#875](https://github.com/opensearch-project/flow-framework/pull/875) | Add query assist data summary agent template |   |
+| v2.17.0 | [#7998](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7998) | Agent error badge, ml-commons response schema update | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7212) | Add query enhancements plugin as core plugin |   |
+| v2.13.0 | - | Initial Query Assist implementation |   |

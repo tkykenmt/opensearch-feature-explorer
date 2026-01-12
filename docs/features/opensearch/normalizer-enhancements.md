@@ -139,9 +139,9 @@ Result: `naive approach with l` (lowercased, ASCII-folded, truncated to 20 chars
 - [Normalizer Mapping Parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/normalizer/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19779](https://github.com/opensearch-project/OpenSearch/pull/19779) | Add truncate filter support in normalizers |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19779](https://github.com/opensearch-project/OpenSearch/pull/19779) | Add truncate filter support in normalizers | [#19778](https://github.com/opensearch-project/OpenSearch/issues/19778) |
 
 ### Issues (Design / RFC)
 - [Issue #19778](https://github.com/opensearch-project/OpenSearch/issues/19778): Feature request for truncate filter in normalizers

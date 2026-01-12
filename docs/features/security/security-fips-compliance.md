@@ -130,10 +130,10 @@ authc:
 - [Shibboleth FIPS Documentation](https://shibboleth.atlassian.net/wiki/spaces/DEV/pages/1159627167/FIPS): OpenSAML FIPS considerations
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5404](https://github.com/opensearch-project/security/pull/5404) | Moved OpenSAML jars to Shadow Jar configuration |
-| v3.2.0 | [#5439](https://github.com/opensearch-project/security/pull/5439) | Replaced standard BouncyCastle with BC-FIPS |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#5404](https://github.com/opensearch-project/security/pull/5404) | Moved OpenSAML jars to Shadow Jar configuration |   |
+| v3.2.0 | [#5439](https://github.com/opensearch-project/security/pull/5439) | Replaced standard BouncyCastle with BC-FIPS |   |
 
 ### Issues (Design / RFC)
 - [Issue #5438](https://github.com/opensearch-project/security/issues/5438): Complete transition to FIPS distribution of BouncyCastle

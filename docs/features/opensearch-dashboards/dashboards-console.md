@@ -130,10 +130,10 @@ PATCH _plugins/_security/api/roles/my_role
 - [Security API Documentation](https://docs.opensearch.org/latest/security/access-control/api/): OpenSearch Security plugin PATCH APIs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10361) | Add support for PATCH method in dev tools |
-| v3.4.0 | [#10595](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10595) | Fix: Allow updating of console_polling through the UI |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10361) | Add support for PATCH method in dev tools |   |
+| v3.4.0 | [#10595](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10595) | Fix: Allow updating of console_polling through the UI | [#10544](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10544) |
 
 ### Issues (Design / RFC)
 - [Issue #10105](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10105): Bug report - PATCH API calls not supported in DevTools console

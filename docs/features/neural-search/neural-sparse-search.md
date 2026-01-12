@@ -187,11 +187,11 @@ GET /my-sparse-index/_search
 - [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1359](https://github.com/opensearch-project/neural-search/pull/1359) | Validate model_id and analyzer mutual exclusivity |
-| v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |
-| v2.11.0 | - | Initial neural sparse query implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#1359](https://github.com/opensearch-project/neural-search/pull/1359) | Validate model_id and analyzer mutual exclusivity |   |
+| v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |   |
+| v2.11.0 | - | Initial neural sparse query implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #1052](https://github.com/opensearch-project/neural-search/issues/1052): RFC for analyzer-based neural sparse query

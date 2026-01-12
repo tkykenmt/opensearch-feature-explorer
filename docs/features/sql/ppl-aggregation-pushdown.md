@@ -228,14 +228,14 @@ source=sales | stats sum(amount) by product | sort -sum(amount) | head 10
 - [OpenSearch Aggregations](https://docs.opensearch.org/3.0/aggregations/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Speed up aggregation pushdown for single group-by expression |
-| v3.3.0 | [#3971](https://github.com/opensearch-project/sql/pull/3971) | SUM aggregation enhancement on operations with literal |
-| v3.3.0 | [#4166](https://github.com/opensearch-project/sql/pull/4166) | Pushdown earliest/latest aggregate functions |
-| v3.3.0 | [#4213](https://github.com/opensearch-project/sql/pull/4213) | Enable pushdown optimization for filtered aggregation |
-| v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Push down limit operator into aggregation bucket size |
-| v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Push down stats with bins on time field into auto_date_histogram |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Speed up aggregation pushdown for single group-by expression | [#3528](https://github.com/opensearch-project/sql/issues/3528) |
+| v3.3.0 | [#3971](https://github.com/opensearch-project/sql/pull/3971) | SUM aggregation enhancement on operations with literal | [#3967](https://github.com/opensearch-project/sql/issues/3967) |
+| v3.3.0 | [#4166](https://github.com/opensearch-project/sql/pull/4166) | Pushdown earliest/latest aggregate functions |   |
+| v3.3.0 | [#4213](https://github.com/opensearch-project/sql/pull/4213) | Enable pushdown optimization for filtered aggregation | [#3949](https://github.com/opensearch-project/sql/issues/3949) |
+| v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Push down limit operator into aggregation bucket size | [#3961](https://github.com/opensearch-project/sql/issues/3961) |
+| v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Push down stats with bins on time field into auto_date_histogram | [#4210](https://github.com/opensearch-project/sql/issues/4210) |
 
 ### Issues (Design / RFC)
 - [Issue #3528](https://github.com/opensearch-project/sql/issues/3528): Span query in PPL is slower than date histogram aggregation

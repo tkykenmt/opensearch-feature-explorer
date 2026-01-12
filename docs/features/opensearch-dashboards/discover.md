@@ -153,34 +153,34 @@ Requires ML agent configuration:
 - [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/): AI summary feature docs
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#550](https://github.com/opensearch-project/dashboards-assistant/pull/550) | Support log pattern in discover summary |
-| v3.4.0 | [#9693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9693) | Support log pattern agent in discover summary |
-| v3.2.0 | [#10345](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10345) | Fix empty page when no index patterns exist |
-| v3.2.0 | [#10315](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10315) | Add cypress tests for discover visualization |
-| v3.0.0 | [#9530](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9530) | Add CSV export from Discover page |
-| v3.0.0 | [#9498](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9498) | Move HITs counter and show results count |
-| v3.0.0 | [#9494](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9494) | Update position of query summary and editor |
-| v3.0.0 | [#9481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9481) | Allow customizing summary panel title |
-| v3.0.0 | [#9469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9469) | Update formatHit to accept type parameter |
-| v3.0.0 | [#9655](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9655) | Enable experimental __enhance with resultsActionBar |
-| v3.0.0 | [#9316](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9316) | Clean up sync URL subscription in topNav |
-| v3.0.0 | [#9347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9347) | Fix flattenHit modifying original array |
-| v3.0.0 | [#9523](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9523) | Correctly show selected columns from saved search |
-| v3.0.0 | [#9529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9529) | Correctly load saved search from snapshot URL |
-| v3.0.0 | [#9541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9541) | Correctly load saved search query in query editor |
-| v3.0.0 | [#9465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9465) | Prevent visiting Discover outside workspace |
-| v2.18.0 | [#8186](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8186) | Add data summary panel in discover |
-| v2.18.0 | [#8214](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8214) | Add cache time and refresh button to dataset selector |
-| v2.18.0 | [#8651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8651) | Update the appearance of Discover |
-| v2.18.0 | [#8352](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8352) | Add discover summary error info and button click logic |
-| v2.18.0 | [#8060](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8060) | Fix row rendering in Discover infinite scroll |
-| v2.18.0 | [#8082](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8082) | Fix infinite loop cause discover hang |
-| v2.18.0 | [#8609](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8609) | Add support for S3 fields in Discover |
-| v2.18.0 | [#8659](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8659) | Fix UI stuck on searching after deleting index pattern |
-| v2.18.0 | [#8755](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8755) | Fix time field wrapping overlap on language change |
-| v2.18.0 | [#8707](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8707) | Ensure saved query loaded properly from asset |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#550](https://github.com/opensearch-project/dashboards-assistant/pull/550) | Support log pattern in discover summary |   |
+| v3.4.0 | [#9693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9693) | Support log pattern agent in discover summary | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.2.0 | [#10345](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10345) | Fix empty page when no index patterns exist |   |
+| v3.2.0 | [#10315](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10315) | Add cypress tests for discover visualization | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9530](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9530) | Add CSV export from Discover page |   |
+| v3.0.0 | [#9498](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9498) | Move HITs counter and show results count |   |
+| v3.0.0 | [#9494](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9494) | Update position of query summary and editor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9481) | Allow customizing summary panel title | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9469) | Update formatHit to accept type parameter |   |
+| v3.0.0 | [#9655](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9655) | Enable experimental __enhance with resultsActionBar |   |
+| v3.0.0 | [#9316](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9316) | Clean up sync URL subscription in topNav | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9347) | Fix flattenHit modifying original array | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9523](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9523) | Correctly show selected columns from saved search | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9529) | Correctly load saved search from snapshot URL | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9541) | Correctly load saved search query in query editor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v3.0.0 | [#9465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9465) | Prevent visiting Discover outside workspace | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8186](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8186) | Add data summary panel in discover |   |
+| v2.18.0 | [#8214](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8214) | Add cache time and refresh button to dataset selector | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8651) | Update the appearance of Discover |   |
+| v2.18.0 | [#8352](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8352) | Add discover summary error info and button click logic | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8060](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8060) | Fix row rendering in Discover infinite scroll |   |
+| v2.18.0 | [#8082](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8082) | Fix infinite loop cause discover hang | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8609](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8609) | Add support for S3 fields in Discover |   |
+| v2.18.0 | [#8659](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8659) | Fix UI stuck on searching after deleting index pattern |   |
+| v2.18.0 | [#8755](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8755) | Fix time field wrapping overlap on language change |   |
+| v2.18.0 | [#8707](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8707) | Ensure saved query loaded properly from asset |   |
 
 ### Issues (Design / RFC)
 - [Issue #8177](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8177): Feature request for LLM data summary

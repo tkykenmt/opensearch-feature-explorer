@@ -144,8 +144,8 @@ if (isPreV219) {
 - [Flow Framework](https://github.com/opensearch-project/flow-framework): Backend plugin
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612) | Support 2.17 BWC with latest backend integrations |
-| v3.0.0 | [#591](https://github.com/opensearch-project/dashboards-flow-framework/pull/591) | Integrate with synchronous provisioning feature |
-| v3.0.0 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling with verbose pipeline |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612) | Support 2.17 BWC with latest backend integrations |   |
+| v3.0.0 | [#591](https://github.com/opensearch-project/dashboards-flow-framework/pull/591) | Integrate with synchronous provisioning feature |   |
+| v3.0.0 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling with verbose pipeline | [#571](https://github.com/opensearch-project/dashboards-flow-framework/issues/571) |

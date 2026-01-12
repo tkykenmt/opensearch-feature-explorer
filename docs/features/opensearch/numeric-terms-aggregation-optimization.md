@@ -148,9 +148,9 @@ Possible values for `result_selection_strategy`:
 - [Lucene ArrayUtil.select](https://lucene.apache.org/core/9_0_0/core/org/apache/lucene/util/ArrayUtil.html): QuickSelect implementation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18702](https://github.com/opensearch-project/OpenSearch/pull/18702) | Initial implementation with quickselect optimization |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18702](https://github.com/opensearch-project/OpenSearch/pull/18702) | Initial implementation with quickselect optimization | [#18703](https://github.com/opensearch-project/OpenSearch/issues/18703) |
 
 ### Issues (Design / RFC)
 - [Issue #18703](https://github.com/opensearch-project/OpenSearch/issues/18703): Original performance optimization request

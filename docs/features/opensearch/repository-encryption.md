@@ -156,9 +156,9 @@ PUT _snapshot/my-s3-repo
 - [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Repository configuration options
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19630](https://github.com/opensearch-project/OpenSearch/pull/19630) | Add support for repository with Server side encryption enabled and client side encryption |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19630](https://github.com/opensearch-project/OpenSearch/pull/19630) | Add support for repository with Server side encryption enabled and client side encryption | [#19235](https://github.com/opensearch-project/OpenSearch/issues/19235) |
 
 ### Issues (Design / RFC)
 - [Issue #19235](https://github.com/opensearch-project/OpenSearch/issues/19235): Original feature request

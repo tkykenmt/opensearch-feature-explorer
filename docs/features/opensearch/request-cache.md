@@ -130,10 +130,10 @@ GET /_nodes/stats/indices/request_cache
 - [Documentation: Tiered cache](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup |
-| v3.3.0 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default keyword parameters |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup |   |
+| v3.3.0 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default keyword parameters |   |
 
 ### Issues (Design / RFC)
 - [Issue #19118](https://github.com/opensearch-project/OpenSearch/issues/19118): Repeated iteration through keys on cache clear API

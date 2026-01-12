@@ -93,6 +93,6 @@ When security testing is enabled, the following certificates are downloaded from
 - [OpenSearch Security Repository](https://github.com/opensearch-project/security): Source of test certificates
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#287](https://github.com/opensearch-project/search-relevance/pull/287) | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#287](https://github.com/opensearch-project/search-relevance/pull/287) | Initial implementation |   |

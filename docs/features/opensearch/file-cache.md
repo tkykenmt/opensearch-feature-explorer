@@ -245,12 +245,12 @@ PUT _cluster/settings
 - [Nodes Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Added file cache active usage guard rails to DiskThresholdMonitor |
-| v3.1.0 | [#17617](https://github.com/opensearch-project/OpenSearch/pull/17617) | Added File Cache Pinning |
-| v3.1.0 | [#17538](https://github.com/opensearch-project/OpenSearch/pull/17538) | Added File Cache Stats (block and full file level) |
-| v2.7.0 | Initial | File Cache introduced for Searchable Snapshots |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Added file cache active usage guard rails to DiskThresholdMonitor |   |
+| v3.1.0 | [#17617](https://github.com/opensearch-project/OpenSearch/pull/17617) | Added File Cache Pinning | [#13648](https://github.com/opensearch-project/OpenSearch/issues/13648) |
+| v3.1.0 | [#17538](https://github.com/opensearch-project/OpenSearch/pull/17538) | Added File Cache Stats (block and full file level) | [#17479](https://github.com/opensearch-project/OpenSearch/issues/17479) |
+| v2.7.0 | Initial | File Cache introduced for Searchable Snapshots |   |
 
 ### Issues (Design / RFC)
 - [Issue #17479](https://github.com/opensearch-project/OpenSearch/issues/17479): More refined stats in FileCache

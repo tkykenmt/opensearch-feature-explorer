@@ -88,6 +88,6 @@ To add an Input Control to a dashboard:
 - [PR #8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108): Disabled range control sizing fix
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108) | Fix disabled ValidatedDualRange component sizing |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108) | Fix disabled ValidatedDualRange component sizing |   |

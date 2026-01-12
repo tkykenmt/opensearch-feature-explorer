@@ -151,6 +151,6 @@ public class MyPluginIT extends OpenSearchIntegTestCase {
 - [Backwards Compatibility Testing](https://opensearch.org/blog/bwc-testing-for-opensearch/): BWC testing framework
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Enable testing for ExtensiblePlugins using classpath plugins |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Enable testing for ExtensiblePlugins using classpath plugins |   |

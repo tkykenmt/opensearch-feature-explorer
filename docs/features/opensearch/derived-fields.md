@@ -156,11 +156,11 @@ PUT /logs/_mapping
 - [Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/derived/): Official derived field documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19496](https://github.com/opensearch-project/OpenSearch/pull/19496) | Fix derived field rewrite to handle range queries |
-| v2.17.0 | - | Added aggregation support for derived fields |
-| v2.15.0 | - | Initial implementation of derived fields |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19496](https://github.com/opensearch-project/OpenSearch/pull/19496) | Fix derived field rewrite to handle range queries | [#19337](https://github.com/opensearch-project/OpenSearch/issues/19337) |
+| v2.17.0 | - | Added aggregation support for derived fields |   |
+| v2.15.0 | - | Initial implementation of derived fields |   |
 
 ### Issues (Design / RFC)
 - [Issue #19337](https://github.com/opensearch-project/OpenSearch/issues/19337): Bug report for derived field rewrite issues with range queries

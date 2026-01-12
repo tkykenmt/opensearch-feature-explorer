@@ -120,9 +120,9 @@ Example response:
 - [Nodes Stats API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-stats/): Node statistics API
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15611](https://github.com/opensearch-project/OpenSearch/pull/15611) | Add new metric REMOTE_STORE to NodeStats API response |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15611](https://github.com/opensearch-project/OpenSearch/pull/15611) | Add new metric REMOTE_STORE to NodeStats API response | [#15896](https://github.com/opensearch-project/OpenSearch/issues/15896) |
 
 ### Issues (Design / RFC)
 - [Issue #15896](https://github.com/opensearch-project/OpenSearch/issues/15896): Original feature request

@@ -133,13 +133,13 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 - [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): API reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19684](https://github.com/opensearch-project/OpenSearch/pull/19684) | Fix NPE in validateSearchableSnapshotRestorable when shard size is unavailable |
-| v3.1.0 | [#17532](https://github.com/opensearch-project/OpenSearch/pull/17532) | Fix infinite loop when simultaneously creating snapshot and updating repository |
-| v3.1.0 | [#18218](https://github.com/opensearch-project/OpenSearch/pull/18218) | Avoid NPE on SnapshotInfo if 'shallow' boolean not present |
-| v2.18.0 | [#16292](https://github.com/opensearch-project/OpenSearch/pull/16292) | Add support for renaming aliases during snapshot restore |
-| v2.18.0 | [#16296](https://github.com/opensearch-project/OpenSearch/pull/16296) | Optimise clone operation for incremental full cluster snapshots |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19684](https://github.com/opensearch-project/OpenSearch/pull/19684) | Fix NPE in validateSearchableSnapshotRestorable when shard size is unavailable | [#19349](https://github.com/opensearch-project/OpenSearch/issues/19349) |
+| v3.1.0 | [#17532](https://github.com/opensearch-project/OpenSearch/pull/17532) | Fix infinite loop when simultaneously creating snapshot and updating repository | [#17531](https://github.com/opensearch-project/OpenSearch/issues/17531) |
+| v3.1.0 | [#18218](https://github.com/opensearch-project/OpenSearch/pull/18218) | Avoid NPE on SnapshotInfo if 'shallow' boolean not present | [#18187](https://github.com/opensearch-project/OpenSearch/issues/18187) |
+| v2.18.0 | [#16292](https://github.com/opensearch-project/OpenSearch/pull/16292) | Add support for renaming aliases during snapshot restore | [#15632](https://github.com/opensearch-project/OpenSearch/issues/15632) |
+| v2.18.0 | [#16296](https://github.com/opensearch-project/OpenSearch/pull/16296) | Optimise clone operation for incremental full cluster snapshots | [#16295](https://github.com/opensearch-project/OpenSearch/issues/16295) |
 
 ### Issues (Design / RFC)
 - [Issue #19349](https://github.com/opensearch-project/OpenSearch/issues/19349): Bug report for NullPointerException when restoring remote snapshots with missing shard size

@@ -170,10 +170,10 @@ PUT /my-index
 - [Store Subdirectory Module](store-subdirectory-module.md): First implementation using StoreFactory
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19091](https://github.com/opensearch-project/OpenSearch/pull/19091) | Add StoreFactory plugin interface for custom Store implementations |
-| v3.3.0 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Add subdirectory-aware store module (first implementation using StoreFactory) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19091](https://github.com/opensearch-project/OpenSearch/pull/19091) | Add StoreFactory plugin interface for custom Store implementations | [#19090](https://github.com/opensearch-project/OpenSearch/issues/19090) |
+| v3.3.0 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Add subdirectory-aware store module (first implementation using StoreFactory) | [#19131](https://github.com/opensearch-project/OpenSearch/issues/19131) |
 
 ### Issues (Design / RFC)
 - [Issue #19090](https://github.com/opensearch-project/OpenSearch/issues/19090): Feature request for custom Store implementations through plugin

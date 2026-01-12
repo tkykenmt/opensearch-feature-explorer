@@ -135,9 +135,9 @@ GET /_tenant:acme/_search
 - [Resolve Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/resolve-index/): Index resolution documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18593](https://github.com/opensearch-project/OpenSearch/pull/18593) | Initial implementation |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18593](https://github.com/opensearch-project/OpenSearch/pull/18593) | Initial implementation | [#18676](https://github.com/opensearch-project/OpenSearch/issues/18676) |
 
 ### Issues (Design / RFC)
 - [Issue #18676](https://github.com/opensearch-project/OpenSearch/issues/18676): Original feature request

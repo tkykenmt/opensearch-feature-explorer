@@ -129,9 +129,9 @@ mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get \
 - [Blog: OpenSearch plugin zips now in Maven repo](https://opensearch.org/blog/opensearch-plugin-zips-now-in-maven-repo/): Background on Maven publishing infrastructure
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19619](https://github.com/opensearch-project/OpenSearch/pull/19619) | Onboarding new maven snapshots publishing to S3 (OpenSearch Core) |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19619](https://github.com/opensearch-project/OpenSearch/pull/19619) | Onboarding new maven snapshots publishing to S3 (OpenSearch Core) |   |
 
 ### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org

@@ -203,9 +203,9 @@ GET /my_index/_search?include_named_queries_score=true
 - [Highlight query matches](https://docs.opensearch.org/3.2/search-plugins/searching-data/highlight/): Documentation on rescore and highlighting
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18697](https://github.com/opensearch-project/OpenSearch/pull/18697) | Include named queries from rescore contexts in matched_queries array |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18697](https://github.com/opensearch-project/OpenSearch/pull/18697) | Include named queries from rescore contexts in matched_queries array | [#18665](https://github.com/opensearch-project/OpenSearch/issues/18665) |
 
 ### Issues (Design / RFC)
 - [Issue #18665](https://github.com/opensearch-project/OpenSearch/issues/18665): Original feature request

@@ -146,11 +146,11 @@ POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
 - [Correlating Security Events](https://opensearch.org/blog/correlating-security-events/): Blog post on correlation engine
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#4689](https://github.com/opensearch-project/security/pull/4689) | Added API roles for correlationAlerts |
-| v2.17.0 | [#4704](https://github.com/opensearch-project/security/pull/4704) | Permission changes for correlationAlerts |
-| v2.15.0 | [#988](https://github.com/opensearch-project/security-analytics/issues/988) | Feature request - Alerts in Correlations |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#4689](https://github.com/opensearch-project/security/pull/4689) | Added API roles for correlationAlerts |   |
+| v2.17.0 | [#4704](https://github.com/opensearch-project/security/pull/4704) | Permission changes for correlationAlerts |   |
+| v2.15.0 | [#988](https://github.com/opensearch-project/security-analytics/issues/988) | Feature request - Alerts in Correlations |   |
 
 ### Issues (Design / RFC)
 - [Issue #988](https://github.com/opensearch-project/security-analytics/issues/988): Original feature request

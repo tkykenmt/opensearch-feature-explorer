@@ -126,10 +126,10 @@ MappedFieldType original = wrappedType.unwrap();
 - [SemanticFieldType PR](https://github.com/opensearch-project/neural-search/pull/1225): Example usage in neural-search
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17627](https://github.com/opensearch-project/OpenSearch/pull/17627) | Add FilterFieldType |
-| v3.0.0 | [#17951](https://github.com/opensearch-project/OpenSearch/pull/17951) | Fix instanceof checks to use unwrap() |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17627](https://github.com/opensearch-project/OpenSearch/pull/17627) | Add FilterFieldType | [#17624](https://github.com/opensearch-project/OpenSearch/issues/17624) |
+| v3.0.0 | [#17951](https://github.com/opensearch-project/OpenSearch/pull/17951) | Fix instanceof checks to use unwrap() | [#17802](https://github.com/opensearch-project/OpenSearch/issues/17802) |
 
 ### Issues (Design / RFC)
 - [Issue #17624](https://github.com/opensearch-project/OpenSearch/issues/17624): FilterFieldType feature request

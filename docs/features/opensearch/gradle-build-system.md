@@ -130,10 +130,10 @@ dependencies {
 - [Dependabot Gradle Support](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#gradle): GitHub Dependabot configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17233](https://github.com/opensearch-project/OpenSearch/pull/17233) | Convert transport-reactor-netty4 to use gradle version catalog |
-| v2.19.0 | [#16284](https://github.com/opensearch-project/OpenSearch/pull/16284) | Initial implementation of Gradle version catalog |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#17233](https://github.com/opensearch-project/OpenSearch/pull/17233) | Convert transport-reactor-netty4 to use gradle version catalog |   |
+| v2.19.0 | [#16284](https://github.com/opensearch-project/OpenSearch/pull/16284) | Initial implementation of Gradle version catalog | [#3782](https://github.com/opensearch-project/OpenSearch/issues/3782) |
 
 ### Issues (Design / RFC)
 - [Issue #3782](https://github.com/opensearch-project/OpenSearch/issues/3782): Original feature request for Dependabot support

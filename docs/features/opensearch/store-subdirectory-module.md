@@ -135,11 +135,11 @@ PUT /my-index
 ## References
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Initial implementation with recovery support |
-| v3.0.0 | [#20157](https://github.com/opensearch-project/OpenSearch/pull/20157) | Handle custom metadata files in subdirectory-store |
-| v3.3.0 | [#19470](https://github.com/opensearch-project/OpenSearch/pull/19470) | Fix stats API for SubdirectoryAwareStore |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Initial implementation with recovery support | [#19131](https://github.com/opensearch-project/OpenSearch/issues/19131) |
+| v3.0.0 | [#20157](https://github.com/opensearch-project/OpenSearch/pull/20157) | Handle custom metadata files in subdirectory-store |   |
+| v3.3.0 | [#19470](https://github.com/opensearch-project/OpenSearch/pull/19470) | Fix stats API for SubdirectoryAwareStore | [#19468](https://github.com/opensearch-project/OpenSearch/issues/19468) |
 
 ### Issues (Design / RFC)
 - [Issue #19131](https://github.com/opensearch-project/OpenSearch/issues/19131): Original feature request

@@ -210,12 +210,12 @@ PUT _cluster/settings
 - [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): Official announcement blog
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18911](https://github.com/opensearch-project/OpenSearch/pull/18911) | Fix system ingest pipeline not triggered when request forwarded from non-ingest node |
-| v3.2.0 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories |
-| v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |
-| v3.1.0 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#18911](https://github.com/opensearch-project/OpenSearch/pull/18911) | Fix system ingest pipeline not triggered when request forwarded from non-ingest node | [#18909](https://github.com/opensearch-project/OpenSearch/issues/18909) |
+| v3.2.0 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories |   |
+| v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |   |
+| v3.1.0 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations | [#18276](https://github.com/opensearch-project/OpenSearch/issues/18276) |
 
 ### Issues (Design / RFC)
 - [Issue #18909](https://github.com/opensearch-project/OpenSearch/issues/18909): System ingest pipeline not triggered when request is from a non-ingest node

@@ -104,6 +104,6 @@ When a user lacks permission, the wrapper throws a forbidden error:
 - [Multiple Data Sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Configuring multiple data sources
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8118](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8118) | Fix missing functions in client wrapper |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#8118](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8118) | Fix missing functions in client wrapper | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

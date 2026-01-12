@@ -140,9 +140,9 @@ plugins.security.ssl.aux.experimental-secure-transport-grpc.enabled_ciphers:
 - [gRPC APIs Documentation](https://docs.opensearch.org/3.2/api-reference/grpc-apis/index/): gRPC transport documentation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5375](https://github.com/opensearch-project/security/pull/5375) | Add support for configuring auxiliary transports for SSL only |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#5375](https://github.com/opensearch-project/security/pull/5375) | Add support for configuring auxiliary transports for SSL only |   |
 
 ### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations

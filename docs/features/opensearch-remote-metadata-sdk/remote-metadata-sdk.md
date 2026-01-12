@@ -151,26 +151,26 @@ The following plugins support multi-tenancy with remote metadata storage:
 - [Zero-ETL Replication](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OpenSearchIngestionForDynamoDB.html): DynamoDB to OpenSearch replication
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271) | Add CMK support to encrypt/decrypt customer data |
-| v3.4.0 | [#295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295) | Add assume role for CMK |
-| v3.4.0 | [#291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291) | Fix error when updating model status |
-| v3.3.0 | [#234](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/234) | Add SeqNo and PrimaryTerm support to Put and Delete requests |
-| v3.3.0 | [#244](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/244) | Add RefreshPolicy and timeout support to Put, Update, Delete, and Bulk requests |
-| v3.3.0 | [#236](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/236) | Throw exception on empty string for put request ID |
-| v3.3.0 | [#250](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/250) | Update argument type for ThreadContextAccess:doPrivileged |
-| v3.3.0 | [#254](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/254) | Use AccessController instead of ThreadContextAccess |
-| v3.0.0 | [#73](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/73) | Update o.o.client imports to o.o.transport.client for JPMS compatibility |
-| v3.0.0 | [#124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124) | Add a developer guide |
-| v3.0.0 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update |
-| v3.0.0 | [#121](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/121) | Use SdkClientDelegate's classloader for ServiceLoader |
-| v3.0.0 | [#128](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/128) | Ensure consistent reads on DynamoDB getItem calls |
-| v3.0.0 | [#130](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/130) | Return 404 for Index not found on Local Cluster search |
-| v3.0.0 | [#141](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/141) | Directly return responses from Local Cluster client |
-| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/156) | Make generated responses robust to URL encoded values |
-| v3.0.0 | [#157](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/157) | Validate request fields in DDB Put and Update |
-| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271) | Add CMK support to encrypt/decrypt customer data |   |
+| v3.4.0 | [#295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295) | Add assume role for CMK |   |
+| v3.4.0 | [#291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291) | Fix error when updating model status |   |
+| v3.3.0 | [#234](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/234) | Add SeqNo and PrimaryTerm support to Put and Delete requests | [#233](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/233) |
+| v3.3.0 | [#244](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/244) | Add RefreshPolicy and timeout support to Put, Update, Delete, and Bulk requests | [#178](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/178) |
+| v3.3.0 | [#236](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/236) | Throw exception on empty string for put request ID | [#191](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/191) |
+| v3.3.0 | [#250](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/250) | Update argument type for ThreadContextAccess:doPrivileged |   |
+| v3.3.0 | [#254](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/254) | Use AccessController instead of ThreadContextAccess |   |
+| v3.0.0 | [#73](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/73) | Update o.o.client imports to o.o.transport.client for JPMS compatibility |   |
+| v3.0.0 | [#124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124) | Add a developer guide |   |
+| v3.0.0 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update |   |
+| v3.0.0 | [#121](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/121) | Use SdkClientDelegate's classloader for ServiceLoader |   |
+| v3.0.0 | [#128](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/128) | Ensure consistent reads on DynamoDB getItem calls | [#127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127) |
+| v3.0.0 | [#130](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/130) | Return 404 for Index not found on Local Cluster search |   |
+| v3.0.0 | [#141](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/141) | Directly return responses from Local Cluster client | [#132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132) |
+| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/156) | Make generated responses robust to URL encoded values |   |
+| v3.0.0 | [#157](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/157) | Validate request fields in DDB Put and Update | [#154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154) |
+| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures |   |
 
 ### Issues (Design / RFC)
 - [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() eventually consistent bug

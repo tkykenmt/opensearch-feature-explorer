@@ -76,6 +76,6 @@ windows-mac-builds:
 - [dashboards-reporting repository](https://github.com/opensearch-project/dashboards-reporting): Source repository
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#548](https://github.com/opensearch-project/dashboards-reporting/pull/548) | CI updates and workflow fixes |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.0.0 | [#548](https://github.com/opensearch-project/dashboards-reporting/pull/548) | CI updates and workflow fixes |   |

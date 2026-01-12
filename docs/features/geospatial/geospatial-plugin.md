@@ -76,10 +76,10 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 - [Geospatial Repository](https://github.com/opensearch-project/geospatial): Source code
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#776](https://github.com/opensearch-project/geospatial/pull/776) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
-| v3.0.0 | [#732](https://github.com/opensearch-project/geospatial/pull/732) | Persist licenses and developer fields in pom file |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.2.0 | [#776](https://github.com/opensearch-project/geospatial/pull/776) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |   |
+| v3.0.0 | [#732](https://github.com/opensearch-project/geospatial/pull/732) | Persist licenses and developer fields in pom file | [#731](https://github.com/opensearch-project/geospatial/issues/731) |
 
 ### Issues (Design / RFC)
 - [Issue #731](https://github.com/opensearch-project/geospatial/issues/731): Maven POM metadata bug report

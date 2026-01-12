@@ -155,9 +155,9 @@ Throttle Enabled: {{ctx.action.throttle_enabled}}
 - [OpenSearch Alerting Documentation](https://opensearch.org/docs/latest/monitoring-plugins/alerting/monitors/#available-variables): Official documentation for available variables
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#710](https://github.com/opensearch-project/common-utils/pull/710) | Add missing ctx variables |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.17.0 | [#710](https://github.com/opensearch-project/common-utils/pull/710) | Add missing ctx variables |   |
 
 ### Issues (Design / RFC)
 - [Issue #200](https://github.com/opensearch-project/alerting/issues/200): Original feature request for missing ctx variables

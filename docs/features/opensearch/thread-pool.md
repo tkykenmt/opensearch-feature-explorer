@@ -168,9 +168,9 @@ Response includes pool-specific metrics:
 - [Nodes Stats API](https://docs.opensearch.org/latest/api-reference/nodes-apis/nodes-stats/): Thread pool statistics
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19008](https://github.com/opensearch-project/OpenSearch/pull/19008) | Add support for a ForkJoinPool type |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#19008](https://github.com/opensearch-project/OpenSearch/pull/19008) | Add support for a ForkJoinPool type | [#18674](https://github.com/opensearch-project/OpenSearch/issues/18674) |
 
 ### Issues (Design / RFC)
 - [Issue #18674](https://github.com/opensearch-project/OpenSearch/issues/18674): Feature request for ForkJoinPool support

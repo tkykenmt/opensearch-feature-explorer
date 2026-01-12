@@ -99,48 +99,48 @@ Dependency updates in the Security plugin follow this process:
 - [Logback](https://logback.qos.ch/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) |
-| v3.3.0 | [#5629](https://github.com/opensearch-project/security/pull/5629) | Bump nimbus-jose-jwt 10.4.2 → 10.5 |
-| v3.3.0 | [#5568](https://github.com/opensearch-project/security/pull/5568) | Bump jjwt_version 0.12.6 → 0.13.0 |
-| v3.3.0 | [#5569](https://github.com/opensearch-project/security/pull/5569) | Bump spring_version 6.2.9 → 6.2.11 |
-| v3.3.0 | [#5567](https://github.com/opensearch-project/security/pull/5567) | Bump open_saml_version 5.1.4 → 5.1.6 |
-| v3.3.0 | [#5585](https://github.com/opensearch-project/security/pull/5585) | Bump open_saml_shib_version 9.1.4 → 9.1.6 |
-| v3.3.0 | [#5665](https://github.com/opensearch-project/security/pull/5665) | Bump guava 33.4.8-jre → 33.5.0-jre |
-| v3.3.0 | [#5589](https://github.com/opensearch-project/security/pull/5589) | Bump metrics-core 4.2.33 → 4.2.37 |
-| v3.3.0 | [#5566](https://github.com/opensearch-project/security/pull/5566) | Bump mockito-core 5.18.0 → 5.20.0 |
-| v3.3.0 | [#5584](https://github.com/opensearch-project/security/pull/5584) | Bump com.github.spotbugs 6.2.4 → 6.4.1 |
-| v3.3.0 | [#5572](https://github.com/opensearch-project/security/pull/5572) | Bump actions/checkout 4 → 5 |
-| v3.3.0 | [#5582](https://github.com/opensearch-project/security/pull/5582) | Bump actions/setup-java 4 → 5 |
-| v3.1.0 | [#5380](https://github.com/opensearch-project/security/pull/5380) | Bump bouncycastle_version 1.80 → 1.81 |
-| v3.1.0 | [#5131](https://github.com/opensearch-project/security/pull/5131) | Upgrade kafka_version 3.7.1 → 4.0.0 |
-| v3.1.0 | [#5284](https://github.com/opensearch-project/security/pull/5284) | Bump guava 33.4.6-jre → 33.4.8-jre |
-| v3.1.0 | [#5283](https://github.com/opensearch-project/security/pull/5283) | Bump spring_version 6.2.5 → 6.2.7 |
-| v3.1.0 | [#5296](https://github.com/opensearch-project/security/pull/5296) | Bump mockito-core 5.15.2 → 5.18.0 |
-| v3.1.0 | [#5293](https://github.com/opensearch-project/security/pull/5293) | Bump asm 9.7.1 → 9.8 |
-| v3.1.0 | [#5295](https://github.com/opensearch-project/security/pull/5295) | Bump commons-codec 1.16.1 → 1.18.0 |
-| v3.1.0 | [#5313](https://github.com/opensearch-project/security/pull/5313) | Bump byte-buddy 1.15.11 → 1.17.5 |
-| v3.1.0 | [#5328](https://github.com/opensearch-project/security/pull/5328) | Bump commons-io 2.18.0 → 2.19.0 |
-| v3.1.0 | [#5316](https://github.com/opensearch-project/security/pull/5316) | Bump commons-collections4 4.4 → 4.5 |
-| v3.1.0 | [#5371](https://github.com/opensearch-project/security/pull/5371) | Bump junit-jupiter 5.12.2 → 5.13.1 |
-| v3.1.0 | [#5292](https://github.com/opensearch-project/security/pull/5292) | Bump jackson-databind |
-| v3.1.0 | [#2231](https://github.com/opensearch-project/security-dashboards-plugin/pull/2231) | Fix CVE-2024-52798 |
-| v3.0.0 | [#5203](https://github.com/opensearch-project/security/pull/5203) | Bump spring_version 6.2.4 → 6.2.5 |
-| v3.0.0 | [#5202](https://github.com/opensearch-project/security/pull/5202) | Bump bouncycastle_version 1.78 → 1.80 |
-| v3.0.0 | [#5231](https://github.com/opensearch-project/security/pull/5231) | Bump google-java-format 1.25.2 → 1.26.0 |
-| v3.0.0 | [#5230](https://github.com/opensearch-project/security/pull/5230) | Bump open_saml_shib_version 9.1.3 → 9.1.4 |
-| v3.0.0 | [#5229](https://github.com/opensearch-project/security/pull/5229) | Bump randomizedtesting-runner 2.8.2 → 2.8.3 |
-| v3.0.0 | [#5227](https://github.com/opensearch-project/security/pull/5227) | Bump open_saml_version 5.1.3 → 5.1.4 |
-| v3.0.0 | [#5244](https://github.com/opensearch-project/security/pull/5244) | Bump asm 9.7.1 → 9.8 |
-| v3.0.0 | [#5246](https://github.com/opensearch-project/security/pull/5246) | Bump nebula.ospackage 11.11.1 → 11.11.2 |
-| v3.0.0 | [#5245](https://github.com/opensearch-project/security/pull/5245) | Bump error_prone_annotations 2.36.0 → 2.37.0 |
-| v3.0.0 | [#5267](https://github.com/opensearch-project/security/pull/5267) | Bump commons-io 2.18.0 → 2.19.0 |
-| v3.0.0 | [#5266](https://github.com/opensearch-project/security/pull/5266) | Bump commons-text 1.13.0 → 1.13.1 |
-| v3.0.0 | [#5268](https://github.com/opensearch-project/security/pull/5268) | Bump junit-jupiter-api 5.12.1 → 5.12.2 |
-| v3.0.0 | [#5265](https://github.com/opensearch-project/security/pull/5265) | Bump failureaccess 1.0.2 → 1.0.3 |
-| v2.18.0 | [#4738](https://github.com/opensearch-project/security/pull/4738) | Bump snappy-java 1.1.10.6 → 1.1.10.7 |
-| v2.18.0 | [#4736](https://github.com/opensearch-project/security/pull/4736) | Bump gradle.test-retry 1.5.10 → 1.6.0 |
-| v2.18.0 | [#4750](https://github.com/opensearch-project/security/pull/4750) | Bump commons-io 2.16.1 → 2.17.0 |
-| v2.18.0 | [#4749](https://github.com/opensearch-project/security/pull/4749) | Bump scala-library 2.13.14 → 2.13.15 |
-| v2.18.0 | [#4717](https://github.com/opensearch-project/security/pull/4717) | Bump checker-qual and logback-classic |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) |   |
+| v3.3.0 | [#5629](https://github.com/opensearch-project/security/pull/5629) | Bump nimbus-jose-jwt 10.4.2 → 10.5 |   |
+| v3.3.0 | [#5568](https://github.com/opensearch-project/security/pull/5568) | Bump jjwt_version 0.12.6 → 0.13.0 |   |
+| v3.3.0 | [#5569](https://github.com/opensearch-project/security/pull/5569) | Bump spring_version 6.2.9 → 6.2.11 |   |
+| v3.3.0 | [#5567](https://github.com/opensearch-project/security/pull/5567) | Bump open_saml_version 5.1.4 → 5.1.6 |   |
+| v3.3.0 | [#5585](https://github.com/opensearch-project/security/pull/5585) | Bump open_saml_shib_version 9.1.4 → 9.1.6 |   |
+| v3.3.0 | [#5665](https://github.com/opensearch-project/security/pull/5665) | Bump guava 33.4.8-jre → 33.5.0-jre |   |
+| v3.3.0 | [#5589](https://github.com/opensearch-project/security/pull/5589) | Bump metrics-core 4.2.33 → 4.2.37 |   |
+| v3.3.0 | [#5566](https://github.com/opensearch-project/security/pull/5566) | Bump mockito-core 5.18.0 → 5.20.0 |   |
+| v3.3.0 | [#5584](https://github.com/opensearch-project/security/pull/5584) | Bump com.github.spotbugs 6.2.4 → 6.4.1 |   |
+| v3.3.0 | [#5572](https://github.com/opensearch-project/security/pull/5572) | Bump actions/checkout 4 → 5 |   |
+| v3.3.0 | [#5582](https://github.com/opensearch-project/security/pull/5582) | Bump actions/setup-java 4 → 5 |   |
+| v3.1.0 | [#5380](https://github.com/opensearch-project/security/pull/5380) | Bump bouncycastle_version 1.80 → 1.81 |   |
+| v3.1.0 | [#5131](https://github.com/opensearch-project/security/pull/5131) | Upgrade kafka_version 3.7.1 → 4.0.0 |   |
+| v3.1.0 | [#5284](https://github.com/opensearch-project/security/pull/5284) | Bump guava 33.4.6-jre → 33.4.8-jre |   |
+| v3.1.0 | [#5283](https://github.com/opensearch-project/security/pull/5283) | Bump spring_version 6.2.5 → 6.2.7 |   |
+| v3.1.0 | [#5296](https://github.com/opensearch-project/security/pull/5296) | Bump mockito-core 5.15.2 → 5.18.0 |   |
+| v3.1.0 | [#5293](https://github.com/opensearch-project/security/pull/5293) | Bump asm 9.7.1 → 9.8 |   |
+| v3.1.0 | [#5295](https://github.com/opensearch-project/security/pull/5295) | Bump commons-codec 1.16.1 → 1.18.0 |   |
+| v3.1.0 | [#5313](https://github.com/opensearch-project/security/pull/5313) | Bump byte-buddy 1.15.11 → 1.17.5 |   |
+| v3.1.0 | [#5328](https://github.com/opensearch-project/security/pull/5328) | Bump commons-io 2.18.0 → 2.19.0 |   |
+| v3.1.0 | [#5316](https://github.com/opensearch-project/security/pull/5316) | Bump commons-collections4 4.4 → 4.5 |   |
+| v3.1.0 | [#5371](https://github.com/opensearch-project/security/pull/5371) | Bump junit-jupiter 5.12.2 → 5.13.1 |   |
+| v3.1.0 | [#5292](https://github.com/opensearch-project/security/pull/5292) | Bump jackson-databind |   |
+| v3.1.0 | [#2231](https://github.com/opensearch-project/security-dashboards-plugin/pull/2231) | Fix CVE-2024-52798 |   |
+| v3.0.0 | [#5203](https://github.com/opensearch-project/security/pull/5203) | Bump spring_version 6.2.4 → 6.2.5 |   |
+| v3.0.0 | [#5202](https://github.com/opensearch-project/security/pull/5202) | Bump bouncycastle_version 1.78 → 1.80 |   |
+| v3.0.0 | [#5231](https://github.com/opensearch-project/security/pull/5231) | Bump google-java-format 1.25.2 → 1.26.0 |   |
+| v3.0.0 | [#5230](https://github.com/opensearch-project/security/pull/5230) | Bump open_saml_shib_version 9.1.3 → 9.1.4 |   |
+| v3.0.0 | [#5229](https://github.com/opensearch-project/security/pull/5229) | Bump randomizedtesting-runner 2.8.2 → 2.8.3 |   |
+| v3.0.0 | [#5227](https://github.com/opensearch-project/security/pull/5227) | Bump open_saml_version 5.1.3 → 5.1.4 |   |
+| v3.0.0 | [#5244](https://github.com/opensearch-project/security/pull/5244) | Bump asm 9.7.1 → 9.8 |   |
+| v3.0.0 | [#5246](https://github.com/opensearch-project/security/pull/5246) | Bump nebula.ospackage 11.11.1 → 11.11.2 |   |
+| v3.0.0 | [#5245](https://github.com/opensearch-project/security/pull/5245) | Bump error_prone_annotations 2.36.0 → 2.37.0 |   |
+| v3.0.0 | [#5267](https://github.com/opensearch-project/security/pull/5267) | Bump commons-io 2.18.0 → 2.19.0 |   |
+| v3.0.0 | [#5266](https://github.com/opensearch-project/security/pull/5266) | Bump commons-text 1.13.0 → 1.13.1 |   |
+| v3.0.0 | [#5268](https://github.com/opensearch-project/security/pull/5268) | Bump junit-jupiter-api 5.12.1 → 5.12.2 |   |
+| v3.0.0 | [#5265](https://github.com/opensearch-project/security/pull/5265) | Bump failureaccess 1.0.2 → 1.0.3 |   |
+| v2.18.0 | [#4738](https://github.com/opensearch-project/security/pull/4738) | Bump snappy-java 1.1.10.6 → 1.1.10.7 |   |
+| v2.18.0 | [#4736](https://github.com/opensearch-project/security/pull/4736) | Bump gradle.test-retry 1.5.10 → 1.6.0 |   |
+| v2.18.0 | [#4750](https://github.com/opensearch-project/security/pull/4750) | Bump commons-io 2.16.1 → 2.17.0 |   |
+| v2.18.0 | [#4749](https://github.com/opensearch-project/security/pull/4749) | Bump scala-library 2.13.14 → 2.13.15 |   |
+| v2.18.0 | [#4717](https://github.com/opensearch-project/security/pull/4717) | Bump checker-qual and logback-classic |   |

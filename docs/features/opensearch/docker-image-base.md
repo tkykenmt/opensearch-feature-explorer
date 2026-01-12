@@ -92,9 +92,9 @@ docker run -d -p 9200:9200 -p 9600:9600 \
 - [AlmaLinux](https://almalinux.org/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19154](https://github.com/opensearch-project/OpenSearch/pull/19154) | Replace centos:8 with almalinux:8 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19154](https://github.com/opensearch-project/OpenSearch/pull/19154) | Replace centos:8 with almalinux:8 |   |
 
 ### Issues (Design / RFC)
 - [opensearch-build Issue #4573](https://github.com/opensearch-project/opensearch-build/issues/4573): OS compatibility changes

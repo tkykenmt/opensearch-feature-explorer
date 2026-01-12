@@ -154,18 +154,18 @@ POST /_plugins/_ml/connectors/_create
 - [Bedrock Titan Embedding Models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#3871](https://github.com/opensearch-project/ml-commons/pull/3871) | Add blueprint for Bedrock Claude v4 |
-| v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |
-| v3.0.0 | [#3584](https://github.com/opensearch-project/ml-commons/pull/3584) | Add blueprint for Claude 3.7 on Bedrock |
-| v3.0.0 | [#3725](https://github.com/opensearch-project/ml-commons/pull/3725) | Add standard blueprint for Azure embedding ada2 |
-| v3.0.0 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |
-| v3.0.0 | [#2975](https://github.com/opensearch-project/ml-commons/pull/2975) | Add tutorial for RAG of OpenAI and Bedrock |
-| v2.18.0 | [#2960](https://github.com/opensearch-project/ml-commons/pull/2960) | Connector blueprint for Amazon Bedrock Converse |
-| v2.18.0 | [#3058](https://github.com/opensearch-project/ml-commons/pull/3058) | Support role temporary credential in connector tutorial |
-| v2.18.0 | [#3064](https://github.com/opensearch-project/ml-commons/pull/3064) | Add tutorial for cross-account model invocation |
-| v2.18.0 | [#3094](https://github.com/opensearch-project/ml-commons/pull/3094) | Tune Titan embedding model blueprint for V2 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.1.0 | [#3871](https://github.com/opensearch-project/ml-commons/pull/3871) | Add blueprint for Bedrock Claude v4 |   |
+| v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |   |
+| v3.0.0 | [#3584](https://github.com/opensearch-project/ml-commons/pull/3584) | Add blueprint for Claude 3.7 on Bedrock |   |
+| v3.0.0 | [#3725](https://github.com/opensearch-project/ml-commons/pull/3725) | Add standard blueprint for Azure embedding ada2 | [#3686](https://github.com/opensearch-project/ml-commons/issues/3686) |
+| v3.0.0 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |   |
+| v3.0.0 | [#2975](https://github.com/opensearch-project/ml-commons/pull/2975) | Add tutorial for RAG of OpenAI and Bedrock |   |
+| v2.18.0 | [#2960](https://github.com/opensearch-project/ml-commons/pull/2960) | Connector blueprint for Amazon Bedrock Converse |   |
+| v2.18.0 | [#3058](https://github.com/opensearch-project/ml-commons/pull/3058) | Support role temporary credential in connector tutorial |   |
+| v2.18.0 | [#3064](https://github.com/opensearch-project/ml-commons/pull/3064) | Add tutorial for cross-account model invocation |   |
+| v2.18.0 | [#3094](https://github.com/opensearch-project/ml-commons/pull/3094) | Tune Titan embedding model blueprint for V2 | [#3081](https://github.com/opensearch-project/ml-commons/issues/3081) |
 
 ### Issues (Design / RFC)
 - [Issue #3619](https://github.com/opensearch-project/ml-commons/issues/3619): Standard blueprints feature request

@@ -111,9 +111,9 @@ POST my-index/_doc/1
 - [Format mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/format/): Date format configuration
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19245](https://github.com/opensearch-project/OpenSearch/pull/19245) | Add `epoch_micros` date format |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [#19245](https://github.com/opensearch-project/OpenSearch/pull/19245) | Add `epoch_micros` date format | [#14669](https://github.com/opensearch-project/OpenSearch/issues/14669) |
 
 ### Issues (Design / RFC)
 - [Issue #14669](https://github.com/opensearch-project/OpenSearch/issues/14669): Feature request for epoch_micros support

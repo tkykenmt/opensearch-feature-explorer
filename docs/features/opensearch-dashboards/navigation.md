@@ -130,11 +130,11 @@ The navigation automatically adapts to screen size:
 - [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.18/dashboards/quickstart/): Official documentation on navigation
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#10678](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10678) | Fix disabled prop propagation for EuiSideNavItem |
-| v2.18.0 | [#8332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8332) | Flatten left nav in Analytics(all) use case |
-| v2.18.0 | [#8286](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8286) | Remember state when expand/collapse left nav |
-| v2.18.0 | [#8489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8489) | Update border style when new left nav expanded |
-| v2.18.0 | [#8076](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8076) | Add sample data menu back |
-| v2.18.0 | [#7962](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7962) | Make left nav compatible with small screen |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.4.0 | [#10678](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10678) | Fix disabled prop propagation for EuiSideNavItem |   |
+| v2.18.0 | [#8332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8332) | Flatten left nav in Analytics(all) use case | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8286](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8286) | Remember state when expand/collapse left nav | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8489) | Update border style when new left nav expanded | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#8076](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8076) | Add sample data menu back | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.18.0 | [#7962](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7962) | Make left nav compatible with small screen | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

@@ -128,7 +128,7 @@ This approach handles:
 - [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original issue report and workarounds
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [security#5667](https://github.com/opensearch-project/security/pull/5667) | Add fallback logic for ssl_engine attribute |
-| v3.3.0 | [OpenSearch#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Implement SslHandler retrieval for reactor-netty4 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.3.0 | [security#5667](https://github.com/opensearch-project/security/pull/5667) | Add fallback logic for ssl_engine attribute |   |
+| v3.3.0 | [OpenSearch#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Implement SslHandler retrieval for reactor-netty4 |   |

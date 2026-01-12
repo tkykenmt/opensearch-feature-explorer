@@ -99,6 +99,6 @@ PUT /_cluster/settings
 - [Cluster Settings Documentation](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster settings reference
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16347](https://github.com/opensearch-project/OpenSearch/pull/16347) | Make multiple settings dynamic for tuning on larger clusters |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#16347](https://github.com/opensearch-project/OpenSearch/pull/16347) | Make multiple settings dynamic for tuning on larger clusters |   |

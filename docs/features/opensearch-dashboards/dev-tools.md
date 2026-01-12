@@ -121,6 +121,6 @@ GET _cat/indices?v
 - [Top 3 scenarios for managing multiple clusters](https://opensearch.org/blog/top-3-scenarios-where-managing-multiple-clusters-with-one-opensearch-dashboards-is-a-life-saver/): Blog post on Dev Tools with MDS
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#7938](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7938) | Change dev tools to a modal |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#7938](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7938) | Change dev tools to a modal | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

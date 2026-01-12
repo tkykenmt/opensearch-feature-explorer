@@ -88,10 +88,10 @@ curl -s localhost:9200
 - [Protocol Buffers](https://protobuf.dev/)
 
 ### Pull Requests
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Apache Lucene 9.12.0 |
-| v2.18.0 | [#16182](https://github.com/opensearch-project/OpenSearch/pull/16182) | Netty 4.1.114.Final |
-| v2.18.0 | [#16213](https://github.com/opensearch-project/OpenSearch/pull/16213) | gRPC 1.68.0 |
-| v2.18.0 | [#15684](https://github.com/opensearch-project/OpenSearch/pull/15684) | Protobuf 3.25.4 |
-| v2.18.0 | [#16011](https://github.com/opensearch-project/OpenSearch/pull/16011) | Protobuf 3.25.5 |
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.18.0 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Apache Lucene 9.12.0 |   |
+| v2.18.0 | [#16182](https://github.com/opensearch-project/OpenSearch/pull/16182) | Netty 4.1.114.Final |   |
+| v2.18.0 | [#16213](https://github.com/opensearch-project/OpenSearch/pull/16213) | gRPC 1.68.0 |   |
+| v2.18.0 | [#15684](https://github.com/opensearch-project/OpenSearch/pull/15684) | Protobuf 3.25.4 |   |
+| v2.18.0 | [#16011](https://github.com/opensearch-project/OpenSearch/pull/16011) | Protobuf 3.25.5 | [#16006](https://github.com/opensearch-project/OpenSearch/issues/16006) |
