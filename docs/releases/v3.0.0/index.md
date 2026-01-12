@@ -118,6 +118,7 @@
 - [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)
 - [Security Plugin Changes](features/security/security-plugin-changes.md)
 - [Security Code Quality & Testing](features/security/security-code-quality-testing.md)
+- [Security Dependency Bumps](features/security/security-dependency-bumps.md)
 - [Systemd Security Configurations](features/security/systemd-security-configurations.md)
 
 ## dashboards-flow-framework
