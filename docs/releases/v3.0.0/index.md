@@ -238,6 +238,7 @@
 ## skills
 
 - [Skills / Tools Bugfixes and Enhancements](features/skills/skills-tools-bugfixes.md)
+- [Skills Plugin Compatibility](features/skills/skills-plugin-compatibility.md)
 
 ## security-analytics
 
