@@ -227,6 +227,10 @@
 
 - [Alerting Bugfixes](features/alerting/alerting-bugfixes.md)
 
+## alerting-dashboards-plugin
+
+- [Alerting Improvements](features/alerting-dashboards-plugin/alerting-improvements.md)
+
 ## query-insights
 
 - [Query Insights](features/query-insights/query-insights.md)

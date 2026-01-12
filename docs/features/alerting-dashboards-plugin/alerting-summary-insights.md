@@ -92,7 +92,7 @@ flowchart TB
 | `assistant.alertInsight.enabled` | Enable/disable alert insights | `false` | `opensearch_dashboards.yml` |
 | `DEFAULT_LOG_PATTERN_TOP_N` | Number of top log patterns | `3` | `constants.js` |
 | `DEFAULT_LOG_PATTERN_SAMPLE_SIZE` | Sample size for patterns | `20` | `constants.js` |
-| `DEFAULT_ACTIVE_ALERTS_TOP_N` | Max alerts in context | `10` | `constants.js` |
+| `DEFAULT_ACTIVE_ALERTS_AI_TOP_N` | Max alerts in AI summary context | `1` | `constants.js` |
 | `DEFAULT_DSL_QUERY_DATE_FORMAT` | DSL date format | `YYYY-MM-DDTHH:mm:ssZ` | `constants.js` |
 | `DEFAULT_PPL_QUERY_DATE_FORMAT` | PPL date format | `YYYY-MM-DD HH:mm:ss` | `constants.js` |
 
@@ -168,7 +168,7 @@ The feature translates DSL filters to PPL for log pattern analysis:
 - Log pattern analysis requires monitors created via visual editor
 - Requires dashboards-assistant plugin installation
 - LLM model must be deployed and configured
-- Context limited to 10 active alerts for token management
+- Only the latest active alert is included in AI summary context (v3.0.0+)
 - PPL patterns command required for log pattern extraction
 - Only first index supported for multi-index monitors
 
@@ -176,16 +176,18 @@ The feature translates DSL filters to PPL for log pattern analysis:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#1220](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1220) | Only use latest active alert for alert summary context |
 | v2.18.0 | [#996](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/996) | Context aware alert analysis |
 | v2.18.0 | [#1119](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1119) | Support top N log pattern data |
 
 ## References
 
 - [Issue #995](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/995): Original feature request
-- [Alert Insights Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/alert-insight/): Official docs
+- [Alert Insights Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/alert-insight/): Official docs
 - [Flow Framework Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates): Agent templates
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/2.18/ml-commons-plugin/opensearch-assistant/): Assistant overview
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): Assistant overview
 
 ## Change History
 
+- **v3.0.0** (2025-01-07): Optimized alert context to use only latest active alert for AI summaries
 - **v2.18.0** (2024-11-05): Initial implementation with context-aware alert analysis and log pattern support
