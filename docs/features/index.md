@@ -96,6 +96,7 @@
 - [Gradle Build System](opensearch/gradle-build-system.md)
 - [Grok Processor](opensearch/grok-processor.md)
 - [HTTP Client](opensearch/http-client.md)
+- [HTTP/2 Support](opensearch/http2-support.md)
 - [Identity Feature Flag Removal](opensearch/identity-feature-flag-removal.md)
 - [Index Output Optimization](opensearch/index-output.md)
 - [Index Refresh](opensearch/index-refresh.md)

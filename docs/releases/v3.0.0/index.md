@@ -40,6 +40,7 @@
 - [Source Field Matching](features/opensearch/source-field-matching.md)
 - [Cryptography & Security Libraries](features/opensearch/cryptography-security-libraries.md)
 - [Gradle Build System](features/opensearch/gradle-build-system.md)
+- [HTTP/2 Support](features/opensearch/http2-support.md)
 - [HTTP Client Fixes](features/opensearch/http-client-fixes.md)
 - [HTTP Client Migration](features/opensearch/http-client-migration.md)
 - [Java Runtime & JPMS](features/opensearch/java-runtime-and-jpms.md)
