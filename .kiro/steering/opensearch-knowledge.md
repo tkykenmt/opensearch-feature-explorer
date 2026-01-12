@@ -313,27 +313,33 @@ Use `web_fetch` to retrieve full content from returned URLs.
 
 ## File Naming Conventions
 
-### Prefix with Feature/Plugin Name
-Include feature/plugin name prefix for searchability:
+### Prefix Rules
+Include repository/plugin name prefix for searchability and context independence:
+
+| File Type | Pattern | Example |
+|-----------|---------|---------|
+| Main feature doc | `{repo}/{repo}.md` | `security/security.md` |
+| Sub-feature | `{repo}/{repo}-{aspect}.md` | `security/security-jwt.md` |
+| Directory index | `{repo}/index.md` | `security/index.md` |
+
+Repository name = OpenSearch plugin/component repository name (e.g., `security`, `k-nn`, `ml-commons`, `neural-search`)
+
 ```
 # Good - searchable, identifiable
-security/security-plugin.md
-security/security-configuration.md
-sql/sql-ppl-engine.md
+security/security.md
+security/security-jwt-authentication.md
+k-nn/k-nn-performance.md
+ml-commons/ml-commons-agent-framework.md
 
 # Avoid - ambiguous without context
 security/overview.md
-security/configuration.md
+security/plugin.md
 ```
 
-### File Type Patterns
-| Pattern | Purpose | Example |
-|---------|---------|---------|
-| `index.md` | Directory overview/listing | `sql/index.md` |
-| `{feature}.md` | Main feature doc | `sql/calcite-query-engine.md` |
-| `{feature}-{aspect}.md` | Feature aspect | `sql/ppl-query-optimization.md` |
-| `configuration.md` | Configuration reference | `security/configuration.md` |
-| `api.md` | API reference | `k-nn/api.md` |
+### Rationale
+- Searchability: Prefix makes files findable across the codebase
+- Context independence: File name alone identifies the feature
+- Consistency: All feature-related files share the same prefix
 
 ### Avoid Temporal Files
 Don't create separate files for version-specific content:
