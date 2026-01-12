@@ -68,6 +68,7 @@
 - [Search Replica & Reader-Writer Separation](features/opensearch/search-replica-reader-writer-separation.md)
 - [Search Utilities](features/opensearch/search-utilities.md)
 - [Segment Replication](features/opensearch/segment-replication.md)
+- [Shard Management](features/opensearch/shard-management.md)
 
 ## opensearch-dashboards
 
