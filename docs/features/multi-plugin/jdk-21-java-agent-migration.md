@@ -145,6 +145,16 @@ jobs:
 | v3.0.0 | [#723](https://github.com/opensearch-project/geospatial/pull/723) | geospatial | Gradle 8.10.2, JDK 23 |
 | v3.0.0 | [#722](https://github.com/opensearch-project/job-scheduler/pull/722) | job-scheduler | Shadow plugin update |
 | v3.0.0 | [#1013](https://github.com/opensearch-project/notifications/pull/1013) | notifications | Java Agent build fix |
+| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/156) | learning | Java Agent migration |
+| v3.0.0 | [#157](https://github.com/opensearch-project/security/pull/157) | security | Java Agent Gradle plugin |
+| v3.0.0 | [#296](https://github.com/opensearch-project/query-insights/pull/296) | query | Java Agent migration |
+| v3.0.0 | [#303](https://github.com/opensearch-project/security/pull/303) | security | Java Agent Gradle plugin |
+| v3.0.0 | [#1505](https://github.com/opensearch-project/security/pull/1505) | security | Java Agent Gradle plugin |
+| v3.0.0 | [#1504](https://github.com/opensearch-project/security/pull/1504) | security | Build fix for Java Agent |
+| v3.0.0 | [#62](https://github.com/opensearch-project/opensearch-system-templates/pull/62) | system | Gradle 8.10.2, JDK 23, Lucene 10 |
+| v3.0.0 | [#68](https://github.com/opensearch-project/security/pull/68) | security | Java Agent Gradle plugin |
+| v3.0.0 | [#3551](https://github.com/opensearch-project/security/pull/3551) | security | Java Agent Gradle plugin |
+| v3.0.0 | [#3539](https://github.com/opensearch-project/sql/pull/3539) | sql | Build fix for Java Agent |
 
 ## References
 
