@@ -198,6 +198,10 @@
 
 - [AI Assistant / Chatbot](features/dashboards-assistant/ai-assistant-chatbot.md)
 
+## dashboards-query-workbench
+
+- [Query Workbench Dashboards](features/dashboards-query-workbench/query-workbench-dashboards.md)
+
 ## k-nn
 
 - [Vector Search (k-NN)](features/k-nn/vector-search-k-nn.md)
