@@ -112,6 +112,7 @@
 - [Security Plugin Bugfixes](features/security/security-plugin-bugfixes.md)
 - [Security Plugin Bugfixes for Release 3.0](features/security/release-3-0-bugfixes.md)
 - [Security Plugin Changes](features/security/security-plugin-changes.md)
+- [Systemd Security Configurations](features/security/systemd-security-configurations.md)
 
 ## dashboards-flow-framework
 
