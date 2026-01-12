@@ -211,15 +211,15 @@ Steps to adopt this change (if applicable).
 ## Limitations
 Known limitations specific to this release.
 
-## Related PRs
-| PR | Description |
-|----|-------------|
-| [#1234](url) | Main implementation |
-
 ## References
-- [Issue #1000](url): Feature request
-- [Documentation](url): Official docs
-- [Blog](url): Announcement blog
+
+### Pull Requests
+| PR | Description | Related Issue |
+|----|-------------|---------------|
+| [#1234](url) | Main implementation | [#1000](url) |
+
+### Documentation
+- [Feature Documentation](url)
 
 ## Related Feature Report
 - [Full feature documentation](../../../features/{repository-name}/{feature-name}.md)
@@ -241,8 +241,12 @@ Create `docs/features/{repository-name}/{feature-name}.md` following the templat
 - Configuration table
 - Usage examples
 - Limitations
-- References (all PRs, Issues, docs, **blogs from search results**)
 - Change History (starting with this version, sorted by version descending)
+- References section with subsections:
+  - Documentation
+  - Blog Posts
+  - Pull Requests (table with Version, PR, Description, Related Issue)
+  - Issues (Design / RFC)
 
 ### For update-feature (feature report exists):
 1. Read existing `docs/features/{repository-name}/{feature-name}.md`
