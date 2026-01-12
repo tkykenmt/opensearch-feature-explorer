@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # SQL Pagination
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - security
+---
+
 # Security Analytics UX
 
 ## Summary

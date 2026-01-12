@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # Release Notes & Documentation
 
 ## Summary

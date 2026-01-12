@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Dynamic Mapping
 
 ## Summary

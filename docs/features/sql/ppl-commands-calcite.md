@@ -1,3 +1,11 @@
+---
+tags:
+  - neural-search
+  - performance
+  - search
+  - sql
+---
+
 # PPL Commands (Calcite)
 
 ## Summary

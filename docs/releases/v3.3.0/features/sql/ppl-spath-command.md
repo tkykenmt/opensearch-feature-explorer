@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # PPL Spath Command
 
 ## Summary

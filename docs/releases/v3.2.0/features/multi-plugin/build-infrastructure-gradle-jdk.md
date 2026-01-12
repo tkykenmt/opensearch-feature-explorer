@@ -1,3 +1,13 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - search
+  - security
+  - sql
+---
+
 # Build Infrastructure (Gradle/JDK)
 
 ## Summary

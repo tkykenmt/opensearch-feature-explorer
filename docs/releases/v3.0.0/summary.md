@@ -1,3 +1,16 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - k-nn
+  - ml
+  - neural-search
+  - performance
+  - search
+  - security
+  - sql
+---
+
 # OpenSearch v3.0.0 Release Summary
 
 ## Summary

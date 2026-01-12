@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - neural-search
+  - search
+---
+
 # ML Commons Batch Ingestion
 
 ## Summary

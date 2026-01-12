@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - indexing
+---
+
 # Dynamic Config Bugfixes
 
 ## Summary

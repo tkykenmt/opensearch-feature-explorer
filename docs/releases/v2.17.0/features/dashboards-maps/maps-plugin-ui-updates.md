@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Maps Plugin UI Updates
 
 ## Summary

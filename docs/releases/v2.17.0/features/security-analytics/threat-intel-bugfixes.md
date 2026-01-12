@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Threat Intel Bugfixes
 
 ## Summary

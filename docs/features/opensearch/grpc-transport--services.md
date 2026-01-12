@@ -1,3 +1,10 @@
+---
+tags:
+  - performance
+  - search
+  - security
+---
+
 # gRPC Transport & Services
 
 ## Summary

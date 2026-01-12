@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+  - security
+---
+
 # Security Analytics System Indices
 
 ## Summary

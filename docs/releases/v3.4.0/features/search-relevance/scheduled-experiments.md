@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - performance
+  - search
+---
+
 # Scheduled Experiments
 
 ## Summary

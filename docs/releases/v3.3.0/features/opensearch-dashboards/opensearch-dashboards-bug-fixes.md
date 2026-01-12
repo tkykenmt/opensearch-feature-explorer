@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # OpenSearch Dashboards Bug Fixes
 
 ## Summary

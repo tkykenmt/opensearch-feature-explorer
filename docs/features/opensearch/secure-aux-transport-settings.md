@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Secure Aux Transport Settings
 
 ## Summary

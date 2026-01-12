@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Notifications Bugfixes
 
 ## Summary

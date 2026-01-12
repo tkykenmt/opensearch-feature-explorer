@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Engine Refactoring
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Lucene 9.12.0 Upgrade
 
 ## Summary

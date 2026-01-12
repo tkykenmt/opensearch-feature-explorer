@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - sql
+---
+
 # SQL Plugin Jar Hell Fix
 
 ## Summary

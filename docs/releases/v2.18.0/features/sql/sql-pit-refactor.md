@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # SQL PIT Refactor for Joins and Pagination
 
 ## Summary

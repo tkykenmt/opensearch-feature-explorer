@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Discover Plugin Fixes
 
 ## Summary

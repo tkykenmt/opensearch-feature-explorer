@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Tiered Caching
 
 ## Summary

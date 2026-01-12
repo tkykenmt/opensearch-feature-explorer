@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+---
+
 # Segment Warmer Metrics
 
 ## Summary

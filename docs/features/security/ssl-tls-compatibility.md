@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Security SSL/TLS Compatibility
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Static Banner Plugin
 
 ## Summary

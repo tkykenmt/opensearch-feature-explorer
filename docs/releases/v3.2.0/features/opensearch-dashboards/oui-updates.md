@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - indexing
+---
+
 # OUI (OpenSearch UI) Updates
 
 ## Summary

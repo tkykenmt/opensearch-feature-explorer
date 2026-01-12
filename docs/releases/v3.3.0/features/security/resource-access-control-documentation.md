@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Resource Access Control Documentation
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - sql
+---
+
 # PPL Patterns Command Enhancements
 
 ## Summary

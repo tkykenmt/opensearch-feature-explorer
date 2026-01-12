@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+---
+
 # Search API Tracker
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Node Roles & Configuration
 
 ## Summary

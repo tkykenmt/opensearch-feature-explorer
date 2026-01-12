@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - performance
+---
+
 # OSD Optimizer Cache
 
 ## Summary

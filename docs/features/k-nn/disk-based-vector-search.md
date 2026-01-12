@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - search
+---
+
 # Disk-Based Vector Search
 
 ## Summary

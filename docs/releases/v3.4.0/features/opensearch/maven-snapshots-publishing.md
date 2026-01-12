@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Maven Snapshots Publishing
 
 ## Summary

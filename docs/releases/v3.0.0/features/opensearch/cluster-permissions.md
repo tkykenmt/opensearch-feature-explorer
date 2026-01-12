@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - security
+---
+
 # Cluster Permissions
 
 ## Summary

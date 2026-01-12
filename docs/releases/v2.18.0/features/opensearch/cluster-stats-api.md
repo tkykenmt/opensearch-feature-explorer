@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # Cluster Stats API - URI Path Filtering
 
 ## Summary

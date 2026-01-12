@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - observability
+---
+
 # Dashboards Logs View
 
 ## Summary

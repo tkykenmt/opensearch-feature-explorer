@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Dashboards Frontend Cleanup
 
 ## Summary

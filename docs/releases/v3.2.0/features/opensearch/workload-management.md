@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Workload Management
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Search Replica & Reader-Writer Separation
 
 ## Summary

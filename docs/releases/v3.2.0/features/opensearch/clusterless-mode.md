@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Clusterless Mode
 
 ## Summary

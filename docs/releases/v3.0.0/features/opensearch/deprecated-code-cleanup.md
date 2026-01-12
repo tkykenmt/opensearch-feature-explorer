@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Deprecated Code Cleanup
 
 ## Summary

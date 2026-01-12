@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+---
+
 # Alerting Plugin
 
 ## Summary

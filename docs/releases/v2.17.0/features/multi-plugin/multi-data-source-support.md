@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Multi-Data Source Support
 
 ## Summary

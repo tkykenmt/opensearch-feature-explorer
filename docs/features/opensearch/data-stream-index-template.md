@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - observability
+---
+
 # Data Stream & Index Template
 
 ## Summary

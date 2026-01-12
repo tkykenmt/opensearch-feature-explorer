@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # JWT Authentication
 
 ## Summary

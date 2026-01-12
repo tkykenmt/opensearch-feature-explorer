@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Stream Input/Output
 
 ## Summary

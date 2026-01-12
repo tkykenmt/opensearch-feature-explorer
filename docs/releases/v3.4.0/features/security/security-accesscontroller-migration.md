@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Security AccessController Migration
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Search Pipeline in Templates
 
 ## Summary

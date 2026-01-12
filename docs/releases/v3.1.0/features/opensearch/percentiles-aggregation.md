@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Percentiles Aggregation Performance Improvement
 
 ## Summary

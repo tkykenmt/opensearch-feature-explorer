@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - sql
+---
+
 # CI/Infrastructure Fixes
 
 ## Summary

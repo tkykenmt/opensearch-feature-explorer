@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - search
+  - security
+---
+
 # ML Commons Bug Fixes
 
 ## Summary

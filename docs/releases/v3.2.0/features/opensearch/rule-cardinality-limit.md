@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Rule Cardinality Limit
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - ml
+---
+
 # ML Commons Testing & Coverage
 
 ## Summary

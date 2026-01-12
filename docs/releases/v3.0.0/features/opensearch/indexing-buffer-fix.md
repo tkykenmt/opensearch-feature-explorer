@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Indexing Buffer Fix
 
 ## Summary

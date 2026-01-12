@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Global Banner Support via UI Settings
 
 ## Summary

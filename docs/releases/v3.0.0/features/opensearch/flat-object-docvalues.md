@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Flat Object Field Type: DocValues Retrieval
 
 ## Summary

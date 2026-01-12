@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Rule-based Auto Tagging Fix
 
 ## Summary

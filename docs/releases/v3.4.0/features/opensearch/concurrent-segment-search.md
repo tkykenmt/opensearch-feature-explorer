@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # Concurrent Segment Search Performance Optimization
 
 ## Summary

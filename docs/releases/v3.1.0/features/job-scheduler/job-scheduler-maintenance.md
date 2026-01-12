@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - sql
+---
+
 # Job Scheduler Maintenance
 
 ## Summary

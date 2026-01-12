@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Locale Provider Changes
 
 ## Summary

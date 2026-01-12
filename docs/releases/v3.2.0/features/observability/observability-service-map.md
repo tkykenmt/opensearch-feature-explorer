@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+---
+
 # Observability Service Map
 
 ## Summary

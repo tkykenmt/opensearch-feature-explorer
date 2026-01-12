@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # QAT-Accelerated Zstandard Compression
 
 ## Summary

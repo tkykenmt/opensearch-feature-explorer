@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Data Source Permissions
 
 ## Summary

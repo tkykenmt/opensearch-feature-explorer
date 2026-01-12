@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Remote Metadata Store Compatibility
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Circuit Breaker Hardening in Query Result Consumer
 
 ## Summary

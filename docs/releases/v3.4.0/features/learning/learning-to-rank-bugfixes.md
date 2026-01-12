@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+---
+
 # Learning to Rank Bugfixes
 
 ## Summary

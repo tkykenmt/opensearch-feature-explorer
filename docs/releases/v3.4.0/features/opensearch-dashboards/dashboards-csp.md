@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Dashboards CSP Dynamic Configuration
 
 ## Summary

@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # Search Relevance Workbench
 
 ## Summary

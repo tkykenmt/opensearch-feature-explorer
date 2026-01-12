@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+  - sql
+---
+
 # Async Query
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - performance
+  - search
+  - security
+---
+
 # OpenSearch Core Dependencies
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+---
+
 # Lucene 10 Upgrade
 
 ## Summary

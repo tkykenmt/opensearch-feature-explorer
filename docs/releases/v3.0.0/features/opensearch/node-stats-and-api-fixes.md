@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Node Stats & API Fixes
 
 ## Summary

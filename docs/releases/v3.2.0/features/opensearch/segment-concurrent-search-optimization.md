@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Segment Concurrent Search Optimization
 
 ## Summary

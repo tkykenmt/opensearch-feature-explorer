@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # TSVB Visualization
 
 ## Summary

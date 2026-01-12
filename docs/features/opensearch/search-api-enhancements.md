@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Search API Enhancements
 
 ## Summary

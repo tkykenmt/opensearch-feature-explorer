@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+  - sql
+---
+
 # SQL/PPL Enhancements
 
 ## Summary

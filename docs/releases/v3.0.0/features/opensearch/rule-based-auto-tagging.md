@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+---
+
 # Rule-Based Auto-Tagging
 
 ## Summary

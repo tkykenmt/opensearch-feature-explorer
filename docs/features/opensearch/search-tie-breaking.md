@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Search Tie-breaking (_shard_doc)
 
 ## Summary

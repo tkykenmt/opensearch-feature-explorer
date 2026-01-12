@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+---
+
 # CI/Test Infrastructure
 
 ## Summary

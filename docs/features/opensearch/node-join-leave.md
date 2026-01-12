@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Node Join/Leave
 
 ## Summary

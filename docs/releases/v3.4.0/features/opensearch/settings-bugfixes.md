@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Settings Bugfixes
 
 ## Summary

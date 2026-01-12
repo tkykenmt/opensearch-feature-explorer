@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # WLM Security Attributes
 
 ## Summary

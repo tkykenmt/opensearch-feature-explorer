@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Bulk API Enhancements
 
 ## Summary

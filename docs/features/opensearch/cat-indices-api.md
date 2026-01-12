@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+---
+
 # Cat Indices API
 
 ## Summary

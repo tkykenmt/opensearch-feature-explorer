@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Field Mapping Fixes
 
 ## Summary

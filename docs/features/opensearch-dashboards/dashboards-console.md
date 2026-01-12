@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Dashboards Console (Dev Tools)
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Dashboards i18n
 
 ## Summary

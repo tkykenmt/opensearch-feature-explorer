@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - neural-search
+  - observability
+  - performance
+  - search
+---
+
 # OpenSearch Features
 
 ## neural-search

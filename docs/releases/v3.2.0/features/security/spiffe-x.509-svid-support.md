@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # SPIFFE X.509 SVID Support
 
 ## Summary

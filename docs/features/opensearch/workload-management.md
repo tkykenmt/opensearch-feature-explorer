@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Workload Management
 
 ## Summary

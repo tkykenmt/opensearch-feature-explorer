@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Azure Repository Fixes
 
 ## Summary

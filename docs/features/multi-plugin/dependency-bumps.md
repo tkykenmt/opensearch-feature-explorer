@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Dependency Bumps
 
 ## Summary

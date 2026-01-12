@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+---
+
 # Search Backpressure Stats Enhancement
 
 ## Summary

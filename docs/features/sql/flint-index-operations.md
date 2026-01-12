@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - search
+  - sql
+---
+
 # Flint Index Operations
 
 ## Summary

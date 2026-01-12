@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - search
+  - security
+  - sql
+---
+
 # Security Lake Data Source
 
 ## Summary

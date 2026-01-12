@@ -1,3 +1,11 @@
+---
+tags:
+  - performance
+  - search
+  - security
+  - sql
+---
+
 # SQL/PPL Engine Enhancements
 
 ## Summary

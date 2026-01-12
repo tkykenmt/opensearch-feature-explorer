@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Subject Interface Update
 
 ## Summary

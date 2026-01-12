@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Query Insights Bugfixes
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Dashboard Assistant CI Configuration
 
 ## Summary

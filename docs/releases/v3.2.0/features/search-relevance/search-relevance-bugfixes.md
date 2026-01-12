@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Search Relevance Bugfixes
 
 ## Summary

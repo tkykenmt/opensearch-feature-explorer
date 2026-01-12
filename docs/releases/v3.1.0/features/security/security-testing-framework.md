@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Security Testing Framework
 
 ## Summary

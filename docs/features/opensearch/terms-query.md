@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Terms Query
 
 ## Summary

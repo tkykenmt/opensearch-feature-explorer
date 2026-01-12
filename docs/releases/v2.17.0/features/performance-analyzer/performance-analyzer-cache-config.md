@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # Performance Analyzer Cache Config
 
 ## Summary

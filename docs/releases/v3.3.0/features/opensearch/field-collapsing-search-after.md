@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Field Collapsing with search_after Support
 
 ## Summary

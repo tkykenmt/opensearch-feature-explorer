@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - sql
+---
+
 # Monaco Editor
 
 ## Summary

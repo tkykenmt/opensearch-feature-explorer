@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Bulk Request Bugfixes
 
 ## Summary

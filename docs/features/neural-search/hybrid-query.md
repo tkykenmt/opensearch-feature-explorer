@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - neural-search
+  - search
+---
+
 # Hybrid Query
 
 ## Summary

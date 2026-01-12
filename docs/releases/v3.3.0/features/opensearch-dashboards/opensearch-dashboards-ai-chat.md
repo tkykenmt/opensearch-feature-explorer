@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - ml
+---
+
 # OpenSearch Dashboards AI Chat
 
 ## Summary

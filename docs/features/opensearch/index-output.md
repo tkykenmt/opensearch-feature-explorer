@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Index Output Optimization
 
 ## Summary

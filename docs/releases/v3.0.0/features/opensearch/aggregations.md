@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Aggregations
 
 ## Summary

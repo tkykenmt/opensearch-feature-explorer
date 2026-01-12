@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+---
+
 # OpenSearch Dashboards Traces
 
 ## Summary

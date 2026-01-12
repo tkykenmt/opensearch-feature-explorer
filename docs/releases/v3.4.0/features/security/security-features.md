@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - security
+---
+
 # Security Features
 
 ## Summary

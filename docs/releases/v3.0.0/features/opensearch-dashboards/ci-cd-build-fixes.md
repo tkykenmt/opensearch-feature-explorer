@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - performance
+---
+
 # CI/CD & Build Fixes
 
 ## Summary

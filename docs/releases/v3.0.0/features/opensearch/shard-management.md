@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Shard Management
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+  - sql
+---
+
 # ML Skills Text2Spark PPL
 
 ## Summary

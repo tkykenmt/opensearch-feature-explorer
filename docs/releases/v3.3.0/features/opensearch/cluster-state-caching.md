@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Cluster State Caching
 
 ## Summary

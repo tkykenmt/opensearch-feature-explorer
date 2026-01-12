@@ -1,3 +1,10 @@
+---
+tags:
+  - performance
+  - search
+  - sql
+---
+
 # PPL Query Enhancements
 
 ## Summary

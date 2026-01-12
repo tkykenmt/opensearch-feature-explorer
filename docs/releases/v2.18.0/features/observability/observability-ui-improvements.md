@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - performance
+---
+
 # Observability UI Improvements
 
 ## Summary

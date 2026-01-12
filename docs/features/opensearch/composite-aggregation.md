@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Composite Aggregation
 
 ## Summary

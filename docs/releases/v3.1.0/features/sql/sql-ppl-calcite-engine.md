@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+  - sql
+---
+
 # SQL/PPL Calcite Engine
 
 ## Summary

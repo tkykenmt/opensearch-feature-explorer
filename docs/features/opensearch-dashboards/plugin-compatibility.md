@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - indexing
+---
+
 # Plugin Compatibility
 
 ## Summary

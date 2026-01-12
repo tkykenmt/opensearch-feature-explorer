@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - sql
+---
+
 # Dashboard Assistant (AI Chatbot)
 
 ## Summary

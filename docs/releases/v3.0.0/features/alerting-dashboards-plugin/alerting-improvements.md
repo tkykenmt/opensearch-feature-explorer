@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+---
+
 # Alerting Improvements
 
 ## Summary

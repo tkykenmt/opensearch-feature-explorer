@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - neural-search
+  - performance
+  - search
+---
+
 # SEISMIC Sparse ANN
 
 ## Summary

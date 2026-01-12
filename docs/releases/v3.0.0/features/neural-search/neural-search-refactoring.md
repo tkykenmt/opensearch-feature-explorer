@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - neural-search
+  - search
+---
+
 # Neural Search Refactoring
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+---
+
 # Scripted Metric Aggregation
 
 ## Summary

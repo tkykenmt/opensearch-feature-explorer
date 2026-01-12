@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - observability
+---
+
 # Observability Multi-Data Source Support
 
 ## Summary

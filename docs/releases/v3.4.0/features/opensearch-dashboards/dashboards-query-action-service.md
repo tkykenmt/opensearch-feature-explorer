@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Dashboards Query Action Service
 
 ## Summary

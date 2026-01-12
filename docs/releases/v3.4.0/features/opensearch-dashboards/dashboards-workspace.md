@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Dashboards Workspace
 
 ## Summary

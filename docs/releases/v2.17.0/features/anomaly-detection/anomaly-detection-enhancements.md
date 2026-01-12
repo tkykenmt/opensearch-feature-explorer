@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - performance
+---
+
 # Anomaly Detection Enhancements
 
 ## Summary

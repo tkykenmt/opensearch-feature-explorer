@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - observability
+  - search
+---
+
 # Plugin Profiling
 
 ## Summary

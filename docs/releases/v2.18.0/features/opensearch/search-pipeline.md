@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Search Pipeline: msearch API Support
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - ml
+  - observability
+  - search
+  - security
+---
+
 # Alerting User Custom Attributes
 
 ## Summary

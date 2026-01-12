@@ -1,3 +1,9 @@
+---
+tags:
+  - neural-search
+  - search
+---
+
 # Search Relevance Bugfixes
 
 ## Summary

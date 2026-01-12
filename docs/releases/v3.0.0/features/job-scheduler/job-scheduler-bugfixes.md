@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - security
+---
+
 # Job Scheduler Bug Fixes
 
 ## Summary

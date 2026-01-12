@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # User Behavior Insights Build
 
 ## Summary

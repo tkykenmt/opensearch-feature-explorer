@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - security
+---
+
 # Security Bugfixes
 
 ## Summary

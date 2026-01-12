@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Search Autocomplete
 
 ## Summary

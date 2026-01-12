@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Cluster Manager Throttling
 
 ## Summary

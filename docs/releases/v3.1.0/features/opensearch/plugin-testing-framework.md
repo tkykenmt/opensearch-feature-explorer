@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Plugin Testing Framework
 
 ## Summary

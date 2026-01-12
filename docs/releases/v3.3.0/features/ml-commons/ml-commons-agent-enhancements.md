@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - observability
+---
+
 # ML Commons Agent Enhancements
 
 ## Summary

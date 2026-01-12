@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - performance
+---
+
 # Dashboards Code Quality & Testing
 
 ## Summary

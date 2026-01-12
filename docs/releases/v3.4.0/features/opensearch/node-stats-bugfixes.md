@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Node Stats Bugfixes
 
 ## Summary

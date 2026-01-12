@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - neural-search
+  - security
+---
+
 # Job Scheduler Changelog
 
 ## Summary

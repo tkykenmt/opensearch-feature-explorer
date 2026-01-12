@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - security
+---
+
 # Security Configuration
 
 ## Summary

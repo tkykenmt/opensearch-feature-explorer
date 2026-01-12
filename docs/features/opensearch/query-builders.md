@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Query Builders
 
 ## Summary

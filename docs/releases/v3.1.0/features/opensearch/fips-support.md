@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # FIPS Support
 
 ## Summary

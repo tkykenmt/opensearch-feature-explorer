@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Experimental Features - User Personal Settings
 
 ## Summary

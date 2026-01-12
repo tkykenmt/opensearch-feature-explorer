@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - neural-search
+---
+
 # Semantic Field MultiFields Fix
 
 ## Summary

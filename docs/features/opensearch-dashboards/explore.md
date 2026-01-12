@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - observability
+  - performance
+  - search
+  - sql
+---
+
 # Explore Plugin
 
 ## Summary

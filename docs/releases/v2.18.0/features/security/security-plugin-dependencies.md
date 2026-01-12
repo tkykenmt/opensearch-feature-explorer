@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - security
+---
+
 # Security Plugin Dependencies
 
 ## Summary

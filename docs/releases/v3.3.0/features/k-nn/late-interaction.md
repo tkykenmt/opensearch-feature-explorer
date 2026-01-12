@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - neural-search
+  - search
+---
+
 # Late Interaction
 
 ## Summary

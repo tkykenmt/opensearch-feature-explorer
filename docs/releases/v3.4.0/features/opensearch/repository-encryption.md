@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Repository Encryption
 
 ## Summary

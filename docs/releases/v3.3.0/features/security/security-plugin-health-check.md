@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Security Plugin Health Check
 
 ## Summary

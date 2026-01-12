@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Remote Store
 
 ## Summary

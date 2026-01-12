@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - search
+---
+
 # AI Assistant / Chatbot
 
 ## Summary

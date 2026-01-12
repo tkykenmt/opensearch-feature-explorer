@@ -1,3 +1,10 @@
+---
+tags:
+  - neural-search
+  - performance
+  - search
+---
+
 # Neural Search Stats
 
 ## Summary

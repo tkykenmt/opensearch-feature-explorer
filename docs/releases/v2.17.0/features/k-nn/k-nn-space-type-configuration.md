@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - observability
+  - search
+---
+
 # k-NN Space Type Configuration
 
 ## Summary

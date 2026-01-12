@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Data Ingestion Dashboards
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Flat Object Field
 
 ## Summary

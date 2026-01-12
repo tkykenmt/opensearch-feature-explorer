@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # CI/CD & Build Improvements
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - observability
+---
+
 # Dynamic Mapping: false_allow_templates Option
 
 ## Summary

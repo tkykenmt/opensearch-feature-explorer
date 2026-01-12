@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Rule-based Auto Tagging
 
 ## Summary

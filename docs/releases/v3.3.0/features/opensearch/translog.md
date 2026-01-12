@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Translog Channel Factory Parameter
 
 ## Summary

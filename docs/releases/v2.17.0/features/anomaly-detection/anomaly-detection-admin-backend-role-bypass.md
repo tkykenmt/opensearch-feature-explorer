@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - search
+  - security
+---
+
 # Anomaly Detection Admin Backend Role Bypass
 
 ## Summary

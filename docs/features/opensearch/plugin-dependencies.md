@@ -1,3 +1,8 @@
+---
+tags:
+  - neural-search
+---
+
 # Plugin Dependencies
 
 ## Summary

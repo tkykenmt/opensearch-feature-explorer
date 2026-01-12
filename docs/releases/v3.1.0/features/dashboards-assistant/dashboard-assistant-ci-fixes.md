@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Dashboard Assistant CI Fixes
 
 ## Summary

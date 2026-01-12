@@ -1,3 +1,10 @@
+---
+tags:
+  - observability
+  - performance
+  - search
+---
+
 # Query Shape Generation
 
 ## Summary

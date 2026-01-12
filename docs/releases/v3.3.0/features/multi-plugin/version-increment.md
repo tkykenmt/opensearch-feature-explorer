@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - observability
+  - search
+---
+
 # Version Increment
 
 ## Summary

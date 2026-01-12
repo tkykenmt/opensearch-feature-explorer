@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+  - security
+---
+
 # Doc-Level Monitor Query Indices
 
 ## Summary

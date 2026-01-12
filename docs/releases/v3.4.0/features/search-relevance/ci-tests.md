@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # Search Relevance CI/Tests
 
 ## Summary

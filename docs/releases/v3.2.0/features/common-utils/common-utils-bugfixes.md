@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Common Utils Bugfixes
 
 ## Summary

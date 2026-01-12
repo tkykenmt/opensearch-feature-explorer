@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Lucene Integration
 
 ## Summary

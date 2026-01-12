@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - search
+  - security
+---
+
 # Cross-Cluster Settings
 
 ## Summary

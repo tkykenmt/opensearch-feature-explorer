@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+  - sql
+---
+
 # Flint Query Scheduler
 
 ## Summary

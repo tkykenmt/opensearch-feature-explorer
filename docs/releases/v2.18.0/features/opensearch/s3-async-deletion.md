@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # S3 Async Deletion
 
 ## Summary

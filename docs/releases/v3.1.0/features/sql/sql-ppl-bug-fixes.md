@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # SQL/PPL Bug Fixes
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # OpenSearch v2.18.0 Release
 
 ## Overview

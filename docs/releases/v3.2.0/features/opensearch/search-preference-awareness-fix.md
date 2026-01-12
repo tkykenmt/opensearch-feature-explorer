@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Search Preference & Awareness Fix
 
 ## Summary

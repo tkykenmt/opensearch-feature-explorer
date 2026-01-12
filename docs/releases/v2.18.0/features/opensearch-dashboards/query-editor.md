@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - sql
+---
+
 # Query Editor
 
 ## Summary

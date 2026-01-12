@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Pull-based Ingestion
 
 ## Summary

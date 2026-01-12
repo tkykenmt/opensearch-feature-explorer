@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - k-nn
+---
+
 # k-NN Derived Source & Codec Refactoring
 
 ## Summary

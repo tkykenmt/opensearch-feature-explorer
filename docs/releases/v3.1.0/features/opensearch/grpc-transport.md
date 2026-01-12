@@ -1,3 +1,10 @@
+---
+tags:
+  - observability
+  - performance
+  - search
+---
+
 # gRPC Transport Performance Optimization
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Search Relevance Dashboards Fixes
 
 ## Summary

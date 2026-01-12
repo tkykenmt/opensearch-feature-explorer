@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - neural-search
+  - performance
+---
+
 # System Ingest Pipeline
 
 ## Summary

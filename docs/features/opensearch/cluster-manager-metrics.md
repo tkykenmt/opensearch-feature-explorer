@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - performance
+---
+
 # Cluster Manager Metrics
 
 ## Summary

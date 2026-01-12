@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+  - security
+---
+
 # Resource Sharing Bug Fixes and Enhancements
 
 ## Summary

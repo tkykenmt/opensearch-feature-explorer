@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - ml
+  - neural-search
+  - performance
+  - search
+---
+
 # Agentic Search
 
 ## Summary

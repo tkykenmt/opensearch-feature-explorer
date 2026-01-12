@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # WLM Dashboards Bugfixes
 
 ## Summary

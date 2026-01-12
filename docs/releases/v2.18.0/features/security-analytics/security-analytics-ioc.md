@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Security Analytics IOC Bug Fixes
 
 ## Summary

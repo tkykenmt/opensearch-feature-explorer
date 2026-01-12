@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Query Phase Result Consumer
 
 ## Summary

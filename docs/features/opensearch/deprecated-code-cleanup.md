@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Deprecated Code Cleanup
 
 ## Summary

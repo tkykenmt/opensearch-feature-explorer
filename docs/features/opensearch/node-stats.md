@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+---
+
 # Node Stats
 
 ## Summary

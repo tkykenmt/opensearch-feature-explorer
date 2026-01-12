@@ -1,3 +1,14 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - neural-search
+  - observability
+  - performance
+  - search
+---
+
 # Vector Search (k-NN)
 
 ## Summary

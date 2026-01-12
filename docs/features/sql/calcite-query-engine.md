@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+  - sql
+---
+
 # Calcite Query Engine
 
 ## Summary

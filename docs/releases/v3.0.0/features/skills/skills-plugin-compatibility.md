@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - security
+---
+
 # Skills Plugin Compatibility
 
 ## Summary

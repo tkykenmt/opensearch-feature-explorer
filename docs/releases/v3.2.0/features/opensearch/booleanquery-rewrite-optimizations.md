@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # BooleanQuery Rewrite Optimizations
 
 ## Summary

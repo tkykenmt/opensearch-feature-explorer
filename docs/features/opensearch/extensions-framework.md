@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Extensions Framework
 
 ## Summary

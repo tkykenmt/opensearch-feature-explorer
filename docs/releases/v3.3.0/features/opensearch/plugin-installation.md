@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Plugin Installation: Directory Support in Config
 
 ## Summary

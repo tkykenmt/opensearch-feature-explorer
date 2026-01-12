@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # PR Template API Specification Checkbox
 
 ## Summary

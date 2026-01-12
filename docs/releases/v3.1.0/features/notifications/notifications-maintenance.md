@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - indexing
+---
+
 # Notifications Maintenance
 
 ## Summary

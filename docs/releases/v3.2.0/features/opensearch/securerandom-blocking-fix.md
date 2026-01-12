@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # SecureRandom Blocking Fix
 
 ## Summary

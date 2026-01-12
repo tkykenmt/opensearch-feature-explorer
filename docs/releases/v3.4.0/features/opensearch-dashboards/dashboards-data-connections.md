@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - search
+  - security
+  - sql
+---
+
 # Dashboards Data Connections
 
 ## Summary

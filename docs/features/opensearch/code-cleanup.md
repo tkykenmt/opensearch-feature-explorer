@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Code Cleanup
 
 ## Summary

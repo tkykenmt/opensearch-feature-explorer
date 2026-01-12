@@ -1,3 +1,13 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - neural-search
+  - performance
+  - search
+---
+
 # Neural Search Rescore
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+---
+
 # Remote Store Metadata API
 
 ## Summary

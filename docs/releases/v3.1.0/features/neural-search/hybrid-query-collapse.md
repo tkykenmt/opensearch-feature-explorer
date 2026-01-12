@@ -1,3 +1,10 @@
+---
+tags:
+  - neural-search
+  - performance
+  - search
+---
+
 # Hybrid Query Collapse
 
 ## Summary

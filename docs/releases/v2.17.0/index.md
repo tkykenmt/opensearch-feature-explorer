@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - observability
+  - search
+---
+
 # OpenSearch v2.17.0
 
 - [Release Summary](summary.md)

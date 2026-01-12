@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # User Behavior Insights Data Generator
 
 ## Summary

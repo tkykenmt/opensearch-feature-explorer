@@ -1,3 +1,11 @@
+---
+tags:
+  - ml
+  - neural-search
+  - observability
+  - search
+---
+
 # Neural Search Stats
 
 ## Summary

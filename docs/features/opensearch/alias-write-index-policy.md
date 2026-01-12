@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Alias Write Index Policy
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - ml
+  - observability
+  - performance
+---
+
 # Performance Analyzer
 
 ## Summary

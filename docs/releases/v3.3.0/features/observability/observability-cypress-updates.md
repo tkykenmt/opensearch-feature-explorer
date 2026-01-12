@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - security
+---
+
 # Observability Cypress Updates
 
 ## Summary

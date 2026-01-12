@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - search
+  - security
+---
+
 # Security Analytics Detectors
 
 ## Summary

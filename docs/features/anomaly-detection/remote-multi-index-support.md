@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+---
+
 # Anomaly Detection Remote/Multi-Index Support
 
 ## Summary

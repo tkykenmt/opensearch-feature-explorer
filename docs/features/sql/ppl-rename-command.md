@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # PPL Rename Command
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+---
+
 # Lucene On Faiss (Memory Optimized Search)
 
 ## Summary

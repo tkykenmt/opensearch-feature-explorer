@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Query String & Regex Fixes
 
 ## Summary

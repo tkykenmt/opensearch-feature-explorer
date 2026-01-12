@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Snapshot & Restore Bugfixes
 
 ## Summary

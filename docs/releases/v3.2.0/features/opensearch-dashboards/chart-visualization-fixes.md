@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - observability
+---
+
 # Chart & Visualization Fixes
 
 ## Summary

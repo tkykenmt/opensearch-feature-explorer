@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # CI/Workflow Fixes
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Snapshot Management
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Security FIPS Compliance
 
 ## Summary

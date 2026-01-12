@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Pipeline ID Limits
 
 ## Summary

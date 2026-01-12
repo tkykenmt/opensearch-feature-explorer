@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Data Source Permissions Bugfix
 
 ## Summary

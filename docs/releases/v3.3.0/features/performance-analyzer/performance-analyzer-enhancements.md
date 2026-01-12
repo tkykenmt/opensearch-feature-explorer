@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - security
+---
+
 # Performance Analyzer Enhancements
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - security
+---
+
 # ML Commons Enhancements
 
 ## Summary

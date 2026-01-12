@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Composite Aggregation Optimization
 
 ## Summary

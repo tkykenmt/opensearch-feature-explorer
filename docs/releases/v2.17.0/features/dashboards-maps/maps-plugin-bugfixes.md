@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Maps Plugin Bugfixes
 
 ## Summary

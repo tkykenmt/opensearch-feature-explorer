@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - search
+  - security
+---
+
 # Asynchronous Search
 
 ## Summary

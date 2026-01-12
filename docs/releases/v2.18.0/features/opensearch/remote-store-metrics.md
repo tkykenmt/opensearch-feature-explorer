@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - search
+---
+
 # Remote Store Metrics
 
 ## Summary

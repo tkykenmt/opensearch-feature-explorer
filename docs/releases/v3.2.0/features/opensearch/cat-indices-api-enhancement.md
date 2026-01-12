@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+---
+
 # Cat Indices API Enhancement
 
 ## Summary

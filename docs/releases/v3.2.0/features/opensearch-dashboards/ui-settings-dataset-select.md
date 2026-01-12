@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - performance
+---
+
 # UI Settings & Dataset Select
 
 ## Summary

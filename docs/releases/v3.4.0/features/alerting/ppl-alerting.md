@@ -1,3 +1,11 @@
+---
+tags:
+  - ml
+  - observability
+  - search
+  - sql
+---
+
 # PPL Alerting
 
 ## Summary

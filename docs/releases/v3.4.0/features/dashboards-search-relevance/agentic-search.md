@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - ml
+  - neural-search
+  - search
+---
+
 # Agentic Search
 
 ## Summary

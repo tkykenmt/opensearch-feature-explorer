@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Argon2 Password Hashing
 
 ## Summary

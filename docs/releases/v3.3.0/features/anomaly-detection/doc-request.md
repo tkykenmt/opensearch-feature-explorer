@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - security
+---
+
 # Doc Request Resource Type Support
 
 ## Summary

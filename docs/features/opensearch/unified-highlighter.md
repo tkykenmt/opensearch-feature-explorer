@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Unified Highlighter
 
 ## Summary

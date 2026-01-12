@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - k-nn
+  - ml
+  - search
+---
+
 # Data Ingestion in OpenSearch Flow
 
 ## Summary

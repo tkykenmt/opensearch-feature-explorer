@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - sql
+---
+
 # PPL Query Support
 
 ## Summary

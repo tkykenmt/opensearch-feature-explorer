@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - observability
+---
+
 # Alerting Build
 
 ## Summary

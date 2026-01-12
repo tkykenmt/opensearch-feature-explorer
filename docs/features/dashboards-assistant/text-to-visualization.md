@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - ml
+  - search
+  - sql
+---
+
 # Text to Visualization (t2viz)
 
 ## Summary

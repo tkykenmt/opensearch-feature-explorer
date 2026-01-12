@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # RestHandler Improvements
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Threat Intel Bug Fixes
 
 ## Summary

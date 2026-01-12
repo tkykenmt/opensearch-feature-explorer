@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - observability
+---
+
 # Remote Vector Index Build
 
 ## Summary

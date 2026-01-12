@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+---
+
 # Alerting Dashboards Plugin
 
 ## Summary

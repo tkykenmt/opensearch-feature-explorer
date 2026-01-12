@@ -1,3 +1,11 @@
+---
+tags:
+  - ml
+  - neural-search
+  - performance
+  - search
+---
+
 # Semantic Highlighting Batch Inference
 
 ## Summary

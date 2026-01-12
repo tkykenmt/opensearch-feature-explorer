@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - performance
+  - security
+---
+
 # Skills Plugin Dependencies
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - search
+---
+
 # OpenSearch Dashboards Explore
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - ml
+---
+
 # Dual Cluster Development Environment
 
 ## Summary

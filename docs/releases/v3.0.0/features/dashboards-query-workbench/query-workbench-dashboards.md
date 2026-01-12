@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+  - security
+---
+
 # Query Workbench Dashboards
 
 ## Summary

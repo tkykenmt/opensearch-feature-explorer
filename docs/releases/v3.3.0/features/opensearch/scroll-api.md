@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Scroll API Error Handling Improvement
 
 ## Summary

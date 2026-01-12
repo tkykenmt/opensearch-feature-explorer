@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - performance
+  - security
+---
+
 # Security Backend Bug Fixes
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Store Subdirectory Module
 
 ## Summary

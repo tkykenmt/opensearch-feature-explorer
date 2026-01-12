@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # SQL Point in Time (PIT) Refactor
 
 ## Summary

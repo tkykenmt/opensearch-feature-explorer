@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Search Scoring Fixes
 
 ## Summary

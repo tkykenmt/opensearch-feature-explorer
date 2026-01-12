@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - observability
+  - performance
+---
+
 # k-NN Maintenance
 
 ## Summary

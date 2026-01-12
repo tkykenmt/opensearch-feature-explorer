@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Warm/Hot Tiering
 
 ## Summary

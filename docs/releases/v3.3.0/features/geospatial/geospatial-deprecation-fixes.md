@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Geospatial Deprecation Fixes
 
 ## Summary

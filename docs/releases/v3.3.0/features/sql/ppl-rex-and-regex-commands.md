@@ -1,3 +1,10 @@
+---
+tags:
+  - observability
+  - search
+  - sql
+---
+
 # PPL Rex and Regex Commands
 
 ## Summary

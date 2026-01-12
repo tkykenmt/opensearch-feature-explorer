@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - neural-search
+  - performance
+---
+
 # Batch Ingestion
 
 ## Summary

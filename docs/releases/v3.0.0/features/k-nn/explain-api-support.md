@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - performance
+  - search
+---
+
 # Explain API Support
 
 ## Summary

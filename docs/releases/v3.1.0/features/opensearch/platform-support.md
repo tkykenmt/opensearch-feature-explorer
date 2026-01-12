@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Platform Support - Linux RISC-V 64
 
 ## Summary

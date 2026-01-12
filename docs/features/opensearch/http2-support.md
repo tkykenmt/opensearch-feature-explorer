@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # HTTP/2 Support
 
 ## Summary

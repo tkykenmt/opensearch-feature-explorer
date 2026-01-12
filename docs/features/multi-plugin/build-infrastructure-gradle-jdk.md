@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Build Infrastructure (Gradle/JDK)
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - neural-search
+  - search
+---
+
 # Maximal Marginal Relevance (MMR)
 
 ## Summary

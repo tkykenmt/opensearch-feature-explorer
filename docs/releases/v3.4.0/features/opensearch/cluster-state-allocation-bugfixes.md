@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Cluster State & Allocation Bugfixes
 
 ## Summary

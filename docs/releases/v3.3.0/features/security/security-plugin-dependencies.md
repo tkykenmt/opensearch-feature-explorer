@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - security
+---
+
 # Security Plugin Dependencies
 
 ## Summary

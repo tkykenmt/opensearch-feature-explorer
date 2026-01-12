@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - observability
+  - security
+---
+
 # CI/CD & Build Improvements
 
 ## Summary

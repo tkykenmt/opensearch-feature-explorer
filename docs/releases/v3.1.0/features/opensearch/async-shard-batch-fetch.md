@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Async Shard Batch Fetch
 
 ## Summary

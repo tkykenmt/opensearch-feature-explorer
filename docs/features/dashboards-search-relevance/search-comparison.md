@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Search Comparison (Compare Search Results)
 
 ## Summary

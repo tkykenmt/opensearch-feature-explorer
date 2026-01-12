@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Nested Aggregations
 
 ## Summary

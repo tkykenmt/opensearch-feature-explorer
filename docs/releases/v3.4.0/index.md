@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+  - security
+---
+
 # OpenSearch v3.4.0 Release
 
 - [Release Summary](summary.md)

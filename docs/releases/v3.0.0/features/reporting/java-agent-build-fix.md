@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - security
+---
+
 # Java Agent Build Fix
 
 ## Summary

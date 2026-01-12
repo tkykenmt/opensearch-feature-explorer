@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # List APIs (Paginated)
 
 ## Summary

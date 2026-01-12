@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - search
+---
+
 # k-NN Query Rescore
 
 ## Summary

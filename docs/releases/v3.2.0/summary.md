@@ -1,3 +1,15 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - neural-search
+  - observability
+  - performance
+  - search
+  - security
+  - sql
+---
+
 # OpenSearch v3.2.0 Release Summary
 
 ## Summary

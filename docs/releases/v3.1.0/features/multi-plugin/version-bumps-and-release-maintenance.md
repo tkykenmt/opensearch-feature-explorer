@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Version Bumps and Release Maintenance
 
 ## Summary

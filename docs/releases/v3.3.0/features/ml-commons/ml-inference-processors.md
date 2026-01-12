@@ -1,3 +1,8 @@
+---
+tags:
+  - ml
+---
+
 # ML Inference Processors
 
 ## Summary

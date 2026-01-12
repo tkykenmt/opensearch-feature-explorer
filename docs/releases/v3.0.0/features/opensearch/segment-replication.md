@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - observability
+---
+
 # Segment Replication Improvements
 
 ## Summary

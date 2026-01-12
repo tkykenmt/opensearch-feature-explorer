@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - sql
+---
+
 # S3 / Direct Query Connections
 
 ## Summary

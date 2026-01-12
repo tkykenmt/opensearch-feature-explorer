@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Track Total Hits
 
 ## Summary

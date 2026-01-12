@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - search
+---
+
 # Dashboards AI Insights
 
 ## Summary

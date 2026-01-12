@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Security JWT Enhancements
 
 ## Summary

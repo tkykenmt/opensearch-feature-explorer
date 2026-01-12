@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+  - security
+---
+
 # Data Connections - Dataset Picker Support
 
 ## Summary

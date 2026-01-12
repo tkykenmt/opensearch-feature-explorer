@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+---
+
 # k-NN Engine Enhancements
 
 ## Summary

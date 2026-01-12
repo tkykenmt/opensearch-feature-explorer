@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - security
+---
+
 # Notifications Plugin
 
 ## Summary

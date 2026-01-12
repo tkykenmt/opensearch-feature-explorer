@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Search Comparison Card for Search Use Case Overview
 
 ## Summary

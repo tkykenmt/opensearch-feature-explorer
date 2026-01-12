@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - observability
+  - search
+---
+
 # Rescore Named Queries
 
 ## Summary

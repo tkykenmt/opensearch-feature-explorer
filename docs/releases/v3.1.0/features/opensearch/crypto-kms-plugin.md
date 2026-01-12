@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Crypto/KMS Plugin
 
 ## Summary

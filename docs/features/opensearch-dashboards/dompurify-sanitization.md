@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # DOMPurify Sanitization
 
 ## Summary

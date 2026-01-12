@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Geospatial Plugin Bugfixes
 
 ## Summary

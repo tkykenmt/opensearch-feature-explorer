@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Maven POM Metadata Fix
 
 ## Summary

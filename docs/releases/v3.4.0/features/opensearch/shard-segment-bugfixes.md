@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Shard & Segment Bugfixes
 
 ## Summary

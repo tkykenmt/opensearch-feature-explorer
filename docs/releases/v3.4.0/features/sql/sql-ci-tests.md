@@ -1,3 +1,10 @@
+---
+tags:
+  - performance
+  - search
+  - sql
+---
+
 # SQL CI/Tests
 
 ## Summary

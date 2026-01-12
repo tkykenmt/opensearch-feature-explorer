@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+  - sql
+---
+
 # Dashboards Explore
 
 ## Summary

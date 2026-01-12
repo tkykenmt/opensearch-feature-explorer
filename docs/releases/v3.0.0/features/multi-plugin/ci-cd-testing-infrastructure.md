@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - search
+  - sql
+---
+
 # CI/CD & Testing Infrastructure
 
 ## Summary

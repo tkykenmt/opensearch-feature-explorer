@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Cluster State & Allocation
 
 ## Summary

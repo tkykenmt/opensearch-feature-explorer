@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - ml
+  - search
+---
+
 # Maximal Marginal Relevance (MMR)
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - performance
+---
+
 # Performance Analyzer Bugfixes
 
 ## Summary

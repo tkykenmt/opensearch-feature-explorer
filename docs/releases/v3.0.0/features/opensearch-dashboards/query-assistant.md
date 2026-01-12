@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - ml
+  - search
+  - sql
+---
+
 # Query Assistant
 
 ## Summary

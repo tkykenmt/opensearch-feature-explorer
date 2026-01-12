@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+  - security
+  - sql
+---
+
 # Dashboards Bugfixes
 
 ## Summary

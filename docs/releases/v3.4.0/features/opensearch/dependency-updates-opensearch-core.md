@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - security
+---
+
 # Dependency Updates (OpenSearch Core)
 
 ## Summary

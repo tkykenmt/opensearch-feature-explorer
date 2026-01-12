@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Auxiliary Transport SSL
 
 ## Summary

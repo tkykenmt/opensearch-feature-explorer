@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Secure Transport Parameters
 
 ## Summary

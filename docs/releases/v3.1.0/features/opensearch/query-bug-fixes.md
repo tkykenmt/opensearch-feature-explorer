@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Query Bug Fixes
 
 ## Summary

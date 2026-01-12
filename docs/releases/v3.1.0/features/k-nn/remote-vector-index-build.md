@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - observability
+  - performance
+---
+
 # Remote Vector Index Build Enhancements
 
 ## Summary

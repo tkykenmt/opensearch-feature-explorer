@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Streaming Transport & Aggregation
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # S3 Repository Compatibility Fix
 
 ## Summary

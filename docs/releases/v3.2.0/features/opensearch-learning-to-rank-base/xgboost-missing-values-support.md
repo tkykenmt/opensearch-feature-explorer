@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # XGBoost Missing Values Support
 
 ## Summary

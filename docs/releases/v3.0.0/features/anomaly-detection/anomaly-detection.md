@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - observability
+  - security
+---
+
 # Anomaly Detection
 
 ## Summary

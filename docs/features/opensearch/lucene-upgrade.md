@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+  - security
+---
+
 # Lucene Upgrade
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+---
+
 # System Templates (Application-Based Configuration)
 
 ## Summary

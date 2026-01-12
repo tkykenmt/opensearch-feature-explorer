@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # NRT Replication Engine
 
 ## Summary

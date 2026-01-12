@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - security
+---
+
 # Dependency Updates (OpenSearch Dashboards)
 
 ## Summary

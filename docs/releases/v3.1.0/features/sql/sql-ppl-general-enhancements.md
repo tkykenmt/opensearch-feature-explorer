@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - sql
+---
+
 # SQL/PPL General Enhancements
 
 ## Summary

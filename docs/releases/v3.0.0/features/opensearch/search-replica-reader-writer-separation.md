@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Search Replica & Reader-Writer Separation
 
 ## Summary

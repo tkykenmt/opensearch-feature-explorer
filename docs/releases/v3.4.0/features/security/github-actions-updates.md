@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # GitHub Actions Updates
 
 ## Summary

@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - observability
+  - performance
+---
+
 # Observability Traces
 
 ## Summary

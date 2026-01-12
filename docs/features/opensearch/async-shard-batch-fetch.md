@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Async Shard Batch Fetch
 
 ## Summary

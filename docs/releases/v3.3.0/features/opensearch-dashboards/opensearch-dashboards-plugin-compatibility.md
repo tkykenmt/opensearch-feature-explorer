@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # OpenSearch Dashboards Plugin Compatibility
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - security
+---
+
 # HTTP/2 Support
 
 ## Summary

@@ -1,3 +1,13 @@
+---
+tags:
+  - dashboards
+  - k-nn
+  - ml
+  - performance
+  - search
+  - security
+---
+
 # OpenSearch v2.17.0 Release Summary
 
 ## Summary

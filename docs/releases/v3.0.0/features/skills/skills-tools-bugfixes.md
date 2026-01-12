@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # Skills / Tools Bugfixes and Enhancements
 
 ## Summary

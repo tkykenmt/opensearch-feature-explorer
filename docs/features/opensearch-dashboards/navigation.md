@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+  - security
+---
+
 # Navigation
 
 ## Summary

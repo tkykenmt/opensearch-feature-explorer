@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - performance
+  - search
+---
+
 # k-NN Bug Fixes
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - sql
+---
+
 # PPL Patterns Command
 
 ## Summary

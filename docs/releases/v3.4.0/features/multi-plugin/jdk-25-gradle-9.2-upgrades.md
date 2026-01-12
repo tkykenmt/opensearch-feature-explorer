@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # JDK 25 & Gradle 9.2 Upgrades
 
 ## Summary

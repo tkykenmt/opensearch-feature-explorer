@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Query Phase Plugin Extension
 
 ## Summary

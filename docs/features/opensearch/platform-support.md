@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Platform Support
 
 ## Summary

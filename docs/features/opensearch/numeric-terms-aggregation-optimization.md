@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Numeric Terms Aggregation Optimization
 
 ## Summary

@@ -1,3 +1,13 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - search
+  - security
+  - sql
+---
+
 # Release Notes and Version Updates
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Fetch Phase Profiling
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - search
+---
+
 # Dashboards UI/UX Fixes
 
 ## Summary

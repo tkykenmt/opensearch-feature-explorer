@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # JDK 25 Support
 
 ## Summary

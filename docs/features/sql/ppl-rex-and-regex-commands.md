@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # PPL Rex and Regex Commands
 
 ## Summary

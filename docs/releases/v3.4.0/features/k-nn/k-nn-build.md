@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - security
+---
+
 # k-NN Build
 
 ## Summary

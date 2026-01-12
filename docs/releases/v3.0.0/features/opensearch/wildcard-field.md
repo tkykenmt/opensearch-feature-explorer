@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Wildcard Field 3-gram Indexing Optimization
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - performance
+  - search
+---
+
 # Index Insight
 
 ## Summary

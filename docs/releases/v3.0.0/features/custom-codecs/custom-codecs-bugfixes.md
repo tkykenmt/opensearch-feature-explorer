@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - ml
+---
+
 # Custom Codecs Bugfixes
 
 ## Summary

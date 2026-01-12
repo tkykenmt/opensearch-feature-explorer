@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - observability
+  - security
+  - sql
+---
+
 # Dependency Updates
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Numeric Types
 
 ## Summary

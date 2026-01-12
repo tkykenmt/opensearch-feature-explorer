@@ -1,3 +1,8 @@
+---
+tags:
+  - observability
+---
+
 # Cluster Manager Metrics
 
 ## Summary

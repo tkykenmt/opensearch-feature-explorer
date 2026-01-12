@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # DocRequest Refactoring
 
 ## Summary

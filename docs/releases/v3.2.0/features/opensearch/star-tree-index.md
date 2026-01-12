@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+  - search
+  - security
+---
+
 # Star Tree Index
 
 ## Summary

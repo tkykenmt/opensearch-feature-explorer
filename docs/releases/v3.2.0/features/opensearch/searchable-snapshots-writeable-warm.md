@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - performance
+---
+
 # Searchable Snapshots & Writeable Warm
 
 ## Summary

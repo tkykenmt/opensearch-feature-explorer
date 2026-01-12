@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - ml
+---
+
 # ML Commons Release Notes and Documentation
 
 ## Summary

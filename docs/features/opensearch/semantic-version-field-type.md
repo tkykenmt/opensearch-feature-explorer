@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - neural-search
+  - search
+---
+
 # Semantic Version Field Type
 
 ## Summary

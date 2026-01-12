@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # i18n & Localization
 
 ## Summary

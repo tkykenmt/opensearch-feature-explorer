@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - sql
+---
+
 # Alerting Summary & Insights
 
 ## Summary

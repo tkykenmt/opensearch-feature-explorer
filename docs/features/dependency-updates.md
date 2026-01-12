@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - security
+---
+
 # Dependency Updates
 
 ## Summary

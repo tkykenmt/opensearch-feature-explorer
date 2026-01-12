@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - indexing
+---
+
 # Notifications Plugin Fixes
 
 ## Summary

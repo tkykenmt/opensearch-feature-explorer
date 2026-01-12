@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - security
+---
+
 # Correlation Engine
 
 ## Summary

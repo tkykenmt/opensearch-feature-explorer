@@ -1,3 +1,8 @@
+---
+tags:
+  - observability
+---
+
 # Pull-based Ingestion Bugfixes
 
 ## Summary

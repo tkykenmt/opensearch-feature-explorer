@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Docker Compose v2 Support
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Reporting Enhancements
 
 ## Summary

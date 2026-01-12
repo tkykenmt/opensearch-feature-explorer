@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - observability
+---
+
 # Pull-based Ingestion
 
 ## Summary

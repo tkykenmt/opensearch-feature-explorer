@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+---
+
 # Vector Search (k-NN)
 
 ## Summary

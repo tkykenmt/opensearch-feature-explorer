@@ -1,3 +1,10 @@
+---
+tags:
+  - performance
+  - search
+  - security
+---
+
 # Query Plugin Dependencies
 
 ## Summary

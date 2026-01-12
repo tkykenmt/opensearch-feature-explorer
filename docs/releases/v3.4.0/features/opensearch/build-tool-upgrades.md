@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Build Tool Upgrades
 
 ## Summary

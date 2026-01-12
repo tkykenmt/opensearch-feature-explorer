@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Approximation Framework Enhancements
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Store Subdirectory Module - Stats API Fix
 
 ## Summary

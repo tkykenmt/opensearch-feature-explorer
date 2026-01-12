@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # HDFS Repository Kerberos Authentication
 
 ## Summary

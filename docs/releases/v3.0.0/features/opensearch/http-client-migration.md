@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # HTTP Client Migration
 
 ## Summary

@@ -1,3 +1,15 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - k-nn
+  - ml
+  - neural-search
+  - performance
+  - search
+  - security
+---
+
 # OpenSearch v2.18.0 Release Summary
 
 ## Summary

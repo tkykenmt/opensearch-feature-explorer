@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # CI/CD Workflow
 
 ## Summary

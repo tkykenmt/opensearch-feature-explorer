@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Lucene Upgrade
 
 ## Summary

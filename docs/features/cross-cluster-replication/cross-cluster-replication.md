@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - ml
+---
+
 # Cross-Cluster Replication (CCR)
 
 ## Summary

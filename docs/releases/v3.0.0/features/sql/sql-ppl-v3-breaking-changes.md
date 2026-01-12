@@ -1,3 +1,9 @@
+---
+tags:
+  - search
+  - sql
+---
+
 # SQL/PPL v3.0.0 Breaking Changes
 
 ## Summary

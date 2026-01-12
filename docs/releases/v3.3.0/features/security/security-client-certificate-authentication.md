@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Security Client Certificate Authentication
 
 ## Summary

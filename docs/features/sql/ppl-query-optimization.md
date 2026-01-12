@@ -1,3 +1,11 @@
+---
+tags:
+  - observability
+  - performance
+  - search
+  - sql
+---
+
 # PPL Query Optimization
 
 ## Summary

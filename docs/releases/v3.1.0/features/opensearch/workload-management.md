@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Paginated WLM Stats API
 
 ## Summary

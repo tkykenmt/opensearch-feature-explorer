@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - security
+---
+
 # Security Manager Replacement
 
 ## Summary

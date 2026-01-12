@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # ML Inference Processor - One-to-One Support
 
 ## Summary

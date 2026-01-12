@@ -1,3 +1,11 @@
+---
+tags:
+  - observability
+  - performance
+  - search
+  - sql
+---
+
 # SQL/PPL Engine
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Dashboards Cypress Testing
 
 ## Summary

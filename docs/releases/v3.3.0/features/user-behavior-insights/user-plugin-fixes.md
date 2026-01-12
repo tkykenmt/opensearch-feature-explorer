@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # User Plugin Fixes
 
 ## Summary

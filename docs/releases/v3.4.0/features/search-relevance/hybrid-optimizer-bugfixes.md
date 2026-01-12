@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Hybrid Optimizer Bugfixes
 
 ## Summary

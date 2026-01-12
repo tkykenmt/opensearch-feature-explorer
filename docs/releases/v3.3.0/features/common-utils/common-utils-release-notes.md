@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Common Utils Release Notes
 
 ## Summary

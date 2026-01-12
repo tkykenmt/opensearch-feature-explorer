@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Field Type Fixes
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # ML Commons Tutorials and Blueprints
 
 ## Summary

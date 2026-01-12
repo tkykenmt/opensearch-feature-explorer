@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - observability
+  - performance
+  - search
+---
+
 # Alerting Bugfixes
 
 ## Summary

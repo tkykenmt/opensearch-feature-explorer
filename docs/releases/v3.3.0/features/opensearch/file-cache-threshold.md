@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # File Cache Active Usage Guard Rails
 
 ## Summary

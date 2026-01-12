@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Query Insights Plugin (Batch 2)
 
 ## Summary

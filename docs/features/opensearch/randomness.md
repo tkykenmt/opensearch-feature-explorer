@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Randomness
 
 ## Summary

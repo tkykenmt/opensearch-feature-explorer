@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Configuration Utilities
 
 ## Summary

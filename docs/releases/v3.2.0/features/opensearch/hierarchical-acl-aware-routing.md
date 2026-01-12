@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Hierarchical & ACL-aware Routing
 
 ## Summary

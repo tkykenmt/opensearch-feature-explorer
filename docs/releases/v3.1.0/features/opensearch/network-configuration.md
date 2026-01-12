@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Network Configuration
 
 ## Summary

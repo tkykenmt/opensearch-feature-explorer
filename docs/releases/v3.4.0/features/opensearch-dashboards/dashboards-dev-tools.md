@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Dashboards Dev Tools - PATCH Method Support
 
 ## Summary

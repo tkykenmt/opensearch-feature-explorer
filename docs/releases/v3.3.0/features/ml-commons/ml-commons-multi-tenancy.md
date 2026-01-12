@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+---
+
 # ML Commons Multi-tenancy
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - observability
+---
+
 # Anomaly Detection Forecasting
 
 ## Summary

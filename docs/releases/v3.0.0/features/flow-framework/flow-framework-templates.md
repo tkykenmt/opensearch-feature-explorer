@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - ml
+---
+
 # Flow Framework Templates
 
 ## Summary

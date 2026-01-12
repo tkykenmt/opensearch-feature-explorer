@@ -1,3 +1,14 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - neural-search
+  - performance
+  - search
+  - security
+---
+
 # Search Relevance Workbench
 
 ## Summary

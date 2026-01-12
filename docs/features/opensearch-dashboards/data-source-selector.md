@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Data Source Selector
 
 ## Summary

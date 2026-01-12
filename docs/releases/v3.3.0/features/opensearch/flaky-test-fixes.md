@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Flaky Test Fixes
 
 ## Summary

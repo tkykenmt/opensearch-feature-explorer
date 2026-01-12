@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Remote Cluster State Fallback
 
 ## Summary

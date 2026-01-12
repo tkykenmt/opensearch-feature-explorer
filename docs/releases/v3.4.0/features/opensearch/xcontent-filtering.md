@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # XContent Filtering
 
 ## Summary

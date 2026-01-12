@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - security
+---
+
 # CI/CD Workflow Updates
 
 ## Summary

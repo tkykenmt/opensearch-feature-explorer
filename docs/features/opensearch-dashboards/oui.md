@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # OpenSearch UI (OUI)
 
 ## Summary

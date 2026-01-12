@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Java Runtime & JPMS
 
 ## Summary

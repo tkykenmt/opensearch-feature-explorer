@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - neural-search
+  - search
+---
+
 # Neural Search Dependencies
 
 ## Summary

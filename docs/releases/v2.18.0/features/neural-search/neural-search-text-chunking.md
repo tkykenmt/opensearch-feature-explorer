@@ -1,3 +1,9 @@
+---
+tags:
+  - neural-search
+  - search
+---
+
 # Neural Search Text Chunking Enhancement
 
 ## Summary

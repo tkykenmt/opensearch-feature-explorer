@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Security Code Quality & Testing
 
 ## Summary

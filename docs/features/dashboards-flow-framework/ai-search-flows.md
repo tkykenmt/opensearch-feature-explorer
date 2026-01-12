@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - neural-search
+  - search
+---
+
 # AI Search Flows
 
 ## Summary

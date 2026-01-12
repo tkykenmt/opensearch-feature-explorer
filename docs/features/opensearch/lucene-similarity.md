@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # Lucene Similarity
 
 ## Summary

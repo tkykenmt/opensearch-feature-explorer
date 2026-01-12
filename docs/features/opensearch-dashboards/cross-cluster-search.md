@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+---
+
 # Cross-Cluster Search in OpenSearch Dashboards
 
 ## Summary

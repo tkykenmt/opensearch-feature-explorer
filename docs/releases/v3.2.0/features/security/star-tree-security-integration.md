@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+  - security
+---
+
 # Star Tree Security Integration
 
 ## Summary

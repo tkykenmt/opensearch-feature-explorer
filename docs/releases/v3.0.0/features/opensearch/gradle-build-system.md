@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Gradle Build System
 
 ## Summary

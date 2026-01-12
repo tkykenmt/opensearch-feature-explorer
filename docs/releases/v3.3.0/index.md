@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # OpenSearch v3.3.0 Release
 
 - [Release Summary](summary.md)

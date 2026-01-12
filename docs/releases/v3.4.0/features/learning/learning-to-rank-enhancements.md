@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+  - security
+---
+
 # Learning to Rank Enhancements
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Look & Feel UI Improvements
 
 ## Summary

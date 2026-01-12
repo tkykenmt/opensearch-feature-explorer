@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - search
+  - sql
+---
+
 # Query Workbench UI Improvements
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # OUI Updates
 
 ## Summary

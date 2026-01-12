@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - search
+  - security
+---
+
 # Reporting Plugin
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # DocValues Optimization
 
 ## Summary

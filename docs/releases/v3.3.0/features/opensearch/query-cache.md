@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Query Cache Dynamic Settings
 
 ## Summary

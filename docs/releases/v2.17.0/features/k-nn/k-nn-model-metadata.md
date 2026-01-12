@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - performance
+---
+
 # k-NN Model Metadata
 
 ## Summary

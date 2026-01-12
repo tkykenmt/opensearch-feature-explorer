@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - ml
+---
+
 # OpenSearch Dashboards Reporting
 
 ## Summary

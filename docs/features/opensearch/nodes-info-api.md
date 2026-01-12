@@ -1,3 +1,10 @@
+---
+tags:
+  - observability
+  - performance
+  - search
+---
+
 # Nodes Info API
 
 ## Summary

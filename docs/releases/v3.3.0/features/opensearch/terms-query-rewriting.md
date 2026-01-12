@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Terms Query Rewriting
 
 ## Summary

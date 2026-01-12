@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+---
+
 # Concurrent Segment Search Auto Mode Default
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Combined Fields Query
 
 ## Summary

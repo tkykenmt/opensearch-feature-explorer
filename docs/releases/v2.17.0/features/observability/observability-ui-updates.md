@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+  - sql
+---
+
 # Observability UI Updates
 
 ## Summary

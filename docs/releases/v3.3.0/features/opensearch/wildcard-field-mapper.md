@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Wildcard Field Mapper
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Backward Compatibility
 
 ## Summary

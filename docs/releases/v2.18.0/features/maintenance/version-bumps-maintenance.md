@@ -1,3 +1,13 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - k-nn
+  - ml
+  - search
+  - security
+---
+
 # Version Bumps & Maintenance
 
 ## Summary

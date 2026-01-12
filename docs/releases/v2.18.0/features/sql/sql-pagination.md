@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - sql
+---
+
 # SQL Pagination Bug Fixes
 
 ## Summary

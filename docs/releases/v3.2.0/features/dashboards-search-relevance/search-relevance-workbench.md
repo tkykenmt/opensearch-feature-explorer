@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - performance
+  - search
+---
+
 # Search Relevance Workbench
 
 ## Summary

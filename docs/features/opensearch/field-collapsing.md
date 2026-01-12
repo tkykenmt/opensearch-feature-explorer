@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Field Collapsing
 
 ## Summary

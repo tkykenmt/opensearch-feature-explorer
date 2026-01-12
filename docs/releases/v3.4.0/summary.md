@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - ml
+  - performance
+  - search
+  - sql
+---
+
 # OpenSearch v3.4.0 Release Summary
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Settings Management
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+---
+
 # Toast Notification Error Message Bug Fix
 
 ## Summary

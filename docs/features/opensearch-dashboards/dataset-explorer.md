@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - observability
+  - search
+---
+
 # Dataset Explorer
 
 ## Summary

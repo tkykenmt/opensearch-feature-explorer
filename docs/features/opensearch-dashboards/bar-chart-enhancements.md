@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - performance
+---
+
 # Bar Chart Enhancements
 
 ## Summary

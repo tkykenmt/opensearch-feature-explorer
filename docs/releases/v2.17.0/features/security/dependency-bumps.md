@@ -1,3 +1,10 @@
+---
+tags:
+  - observability
+  - performance
+  - security
+---
+
 # Dependency Bumps (Security)
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - search
+  - sql
+---
+
 # Skills / Tools
 
 ## Summary

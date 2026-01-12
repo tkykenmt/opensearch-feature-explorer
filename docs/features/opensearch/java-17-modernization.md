@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Java 17 Modernization
 
 ## Summary

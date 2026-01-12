@@ -1,3 +1,11 @@
+---
+tags:
+  - k-nn
+  - ml
+  - search
+  - security
+---
+
 # JDK 21 & Java Agent Migration
 
 ## Summary

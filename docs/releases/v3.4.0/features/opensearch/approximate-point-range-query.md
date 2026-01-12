@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # ApproximatePointRangeQuery Pack Method Optimization
 
 ## Summary

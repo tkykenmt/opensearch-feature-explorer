@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - indexing
+---
+
 # Input Control Visualization Bugfix
 
 ## Summary

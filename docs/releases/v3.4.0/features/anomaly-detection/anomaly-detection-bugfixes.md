@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+---
+
 # Anomaly Detection Bugfixes
 
 ## Summary

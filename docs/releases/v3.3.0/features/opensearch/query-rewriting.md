@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Query Rewriting Infrastructure
 
 ## Summary

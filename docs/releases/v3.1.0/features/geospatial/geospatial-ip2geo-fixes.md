@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Geospatial Ip2Geo Fixes
 
 ## Summary

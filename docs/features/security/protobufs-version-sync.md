@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Protobufs Version Synchronization
 
 ## Summary

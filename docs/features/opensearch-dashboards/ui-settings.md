@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # UI Settings
 
 ## Summary

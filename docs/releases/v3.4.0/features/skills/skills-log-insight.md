@@ -1,3 +1,12 @@
+---
+tags:
+  - ml
+  - observability
+  - performance
+  - search
+  - sql
+---
+
 # Skills Log Insight
 
 ## Summary

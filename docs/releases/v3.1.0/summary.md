@@ -1,3 +1,16 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - neural-search
+  - observability
+  - performance
+  - search
+  - security
+  - sql
+---
+
 # OpenSearch v3.1.0 Release Summary
 
 ## Summary

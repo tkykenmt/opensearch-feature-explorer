@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - search
+  - security
+---
+
 # Asynchronous Search GA Release Preparation
 
 ## Summary

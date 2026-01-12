@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+---
+
 # Query Version-Aware Settings
 
 ## Summary

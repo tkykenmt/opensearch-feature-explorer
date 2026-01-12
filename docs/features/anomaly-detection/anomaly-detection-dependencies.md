@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - security
+---
+
 # Anomaly Detection Dependencies
 
 ## Summary

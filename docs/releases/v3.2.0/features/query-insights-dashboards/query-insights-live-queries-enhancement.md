@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+---
+
 # Query Insights Live Queries Enhancement
 
 ## Summary

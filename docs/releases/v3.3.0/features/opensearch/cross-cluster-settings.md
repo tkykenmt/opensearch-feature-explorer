@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Cross-Cluster Settings
 
 ## Summary

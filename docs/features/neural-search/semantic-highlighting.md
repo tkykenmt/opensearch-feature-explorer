@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - neural-search
+  - search
+---
+
 # Semantic Highlighting
 
 ## Summary

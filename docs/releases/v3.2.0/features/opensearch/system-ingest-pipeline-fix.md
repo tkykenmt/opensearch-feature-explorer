@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # System Ingest Pipeline Fix
 
 ## Summary

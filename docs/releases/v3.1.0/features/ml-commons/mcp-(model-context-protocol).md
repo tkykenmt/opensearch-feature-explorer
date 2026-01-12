@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - ml
+---
+
 # MCP (Model Context Protocol)
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - observability
+  - sql
+---
+
 # Skills Tools
 
 ## Summary

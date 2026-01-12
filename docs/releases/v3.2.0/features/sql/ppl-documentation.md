@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - sql
+---
+
 # SQL/PPL Documentation
 
 ## Summary

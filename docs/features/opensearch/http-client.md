@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - security
+---
+
 # HTTP Client
 
 ## Summary

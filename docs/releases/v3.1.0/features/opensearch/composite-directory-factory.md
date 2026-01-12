@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Composite Directory Factory
 
 ## Summary

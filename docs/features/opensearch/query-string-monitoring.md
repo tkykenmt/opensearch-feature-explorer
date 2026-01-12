@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # Query String Monitoring
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Dashboards Content Security Policy (CSP)
 
 ## Summary

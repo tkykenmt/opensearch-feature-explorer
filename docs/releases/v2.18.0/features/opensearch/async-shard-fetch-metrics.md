@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - observability
+---
+
 # Async Shard Fetch Metrics
 
 ## Summary

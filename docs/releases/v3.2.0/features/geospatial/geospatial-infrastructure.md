@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Geospatial Infrastructure
 
 ## Summary

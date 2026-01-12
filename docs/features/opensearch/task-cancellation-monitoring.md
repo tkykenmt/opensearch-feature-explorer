@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Task Cancellation Monitoring
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - search
+  - security
+  - sql
+---
+
 # SQL Plugin Maintenance
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Aggregation Optimizations
 
 ## Summary

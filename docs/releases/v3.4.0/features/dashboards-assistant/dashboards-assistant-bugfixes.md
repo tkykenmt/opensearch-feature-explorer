@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Dashboards Assistant Bugfixes
 
 ## Summary

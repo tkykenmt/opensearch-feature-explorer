@@ -1,3 +1,14 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - observability
+  - performance
+  - search
+  - security
+---
+
 # Version Increment (Maintenance)
 
 ## Summary

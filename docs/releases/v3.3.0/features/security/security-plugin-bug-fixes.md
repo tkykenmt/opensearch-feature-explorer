@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - security
+  - sql
+---
+
 # Security Plugin Bug Fixes
 
 ## Summary

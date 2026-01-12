@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # ZSTD Library Version Bump
 
 ## Summary

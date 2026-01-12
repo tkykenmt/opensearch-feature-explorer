@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - security
+---
+
 # Reporting Plugin Java Agent Migration
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Custom Index Name Resolver
 
 ## Summary

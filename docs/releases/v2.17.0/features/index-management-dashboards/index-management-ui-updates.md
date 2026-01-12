@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - neural-search
+---
+
 # Index Management UI Updates
 
 ## Summary

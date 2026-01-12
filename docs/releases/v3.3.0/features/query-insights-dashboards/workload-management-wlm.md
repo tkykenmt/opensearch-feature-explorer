@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Workload Management (WLM) Dashboard Enhancements
 
 ## Summary

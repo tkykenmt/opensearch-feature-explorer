@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - observability
+  - sql
+---
+
 # Trace Details Page
 
 ## Summary

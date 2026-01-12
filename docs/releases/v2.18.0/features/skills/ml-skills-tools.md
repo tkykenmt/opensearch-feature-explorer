@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - observability
+  - search
+---
+
 # ML Skills & Tools
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Security Analytics Findings Bugfixes
 
 ## Summary

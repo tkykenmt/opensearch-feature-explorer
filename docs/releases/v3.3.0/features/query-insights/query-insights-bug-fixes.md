@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - performance
+  - search
+---
+
 # Query Insights Bug Fixes
 
 ## Summary

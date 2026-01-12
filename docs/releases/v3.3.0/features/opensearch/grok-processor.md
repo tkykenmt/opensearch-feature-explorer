@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Grok Processor - Capture All Matches
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - sql
+---
+
 # PPL Alerting
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Client Certificate Authentication
 
 ## Summary

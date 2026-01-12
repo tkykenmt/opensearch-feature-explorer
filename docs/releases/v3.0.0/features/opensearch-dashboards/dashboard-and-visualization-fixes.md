@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Dashboard & Visualization Fixes
 
 ## Summary

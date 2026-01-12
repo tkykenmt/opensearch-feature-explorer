@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - security
+---
+
 # Security Analytics Data Source
 
 ## Summary

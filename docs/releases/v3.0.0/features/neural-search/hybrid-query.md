@@ -1,3 +1,12 @@
+---
+tags:
+  - ml
+  - neural-search
+  - observability
+  - performance
+  - search
+---
+
 # Neural Search / Hybrid Query
 
 ## Summary

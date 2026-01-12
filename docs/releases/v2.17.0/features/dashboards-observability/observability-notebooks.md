@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - observability
+---
+
 # Observability Notebooks Bugfixes
 
 ## Summary

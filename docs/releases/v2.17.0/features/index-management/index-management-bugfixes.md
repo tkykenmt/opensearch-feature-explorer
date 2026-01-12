@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - security
+---
+
 # Index Management Bugfixes
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Merged Segment Warmer
 
 ## Summary

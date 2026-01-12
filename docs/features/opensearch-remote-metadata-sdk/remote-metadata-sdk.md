@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # OpenSearch Remote Metadata SDK
 
 ## Summary

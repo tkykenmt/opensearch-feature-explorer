@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - security
+---
+
 # Resource Access Control
 
 ## Summary

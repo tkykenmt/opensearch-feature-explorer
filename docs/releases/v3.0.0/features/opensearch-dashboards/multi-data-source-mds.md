@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Multi-Data Source (MDS)
 
 ## Summary

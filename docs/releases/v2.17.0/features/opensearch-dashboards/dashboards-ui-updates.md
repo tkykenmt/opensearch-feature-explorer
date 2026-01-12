@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - neural-search
+---
+
 # Dashboards UI Updates
 
 ## Summary

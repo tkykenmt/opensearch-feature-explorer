@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Gradle 9 Compatibility
 
 ## Summary

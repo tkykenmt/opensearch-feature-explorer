@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # ActionPlugin Enhancements
 
 ## Summary

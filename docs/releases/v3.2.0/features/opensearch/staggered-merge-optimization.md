@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # Staggered Merge Optimization
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - security
+---
+
 # Security Plugin Health Check
 
 ## Summary

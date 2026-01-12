@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - observability
+  - performance
+---
+
 # Webpack & Build Performance
 
 ## Summary

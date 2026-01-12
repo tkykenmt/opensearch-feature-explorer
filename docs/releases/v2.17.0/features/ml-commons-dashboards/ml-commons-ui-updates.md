@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+---
+
 # ML Commons UI Updates
 
 ## Summary

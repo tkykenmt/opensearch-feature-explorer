@@ -1,3 +1,8 @@
+---
+tags:
+  - performance
+---
+
 # JDK 25 Support
 
 ## Summary

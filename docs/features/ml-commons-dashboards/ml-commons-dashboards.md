@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - ml
+---
+
 # ML Commons Dashboards
 
 ## Summary

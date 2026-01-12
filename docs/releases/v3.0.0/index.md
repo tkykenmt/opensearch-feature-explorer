@@ -1,3 +1,13 @@
+---
+tags:
+  - indexing
+  - ml
+  - neural-search
+  - performance
+  - search
+  - security
+---
+
 # OpenSearch v3.0.0
 
 - [Release Summary](summary.md)

@@ -1,3 +1,13 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - observability
+  - search
+  - security
+---
+
 # Look & Feel UI Improvements
 
 ## Summary

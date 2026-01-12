@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - performance
+---
+
 # Data Stream & Index Template Bugfixes
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - security
+---
+
 # Security Cache Management
 
 ## Summary

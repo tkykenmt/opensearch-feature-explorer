@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # Rescore Named Queries
 
 ## Summary

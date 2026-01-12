@@ -1,3 +1,9 @@
+---
+tags:
+  - neural-search
+  - search
+---
+
 # Query & Aggregation Fixes
 
 ## Summary

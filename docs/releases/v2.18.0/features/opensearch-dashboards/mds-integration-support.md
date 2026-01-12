@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - observability
+  - search
+  - sql
+---
+
 # Multi Data Source (MDS) Support for Integration
 
 ## Summary

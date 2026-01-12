@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - security
+---
+
 # Security Dashboards UI Fixes
 
 ## Summary

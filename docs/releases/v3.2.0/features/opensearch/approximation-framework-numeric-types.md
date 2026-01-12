@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - performance
+  - search
+---
+
 # Approximation Framework: Numeric Types Extension
 
 ## Summary

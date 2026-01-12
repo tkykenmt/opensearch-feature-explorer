@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - ml
+  - observability
+  - performance
+  - search
+---
+
 # Search Relevance Bug Fixes
 
 ## Summary

@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - search
+---
+
 # k-NN Byte Vector Support
 
 ## Summary

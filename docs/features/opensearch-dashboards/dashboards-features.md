@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - performance
+  - search
+  - sql
+---
+
 # Dashboards Features
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - performance
+---
+
 # k-NN Iterative Graph Build
 
 ## Summary

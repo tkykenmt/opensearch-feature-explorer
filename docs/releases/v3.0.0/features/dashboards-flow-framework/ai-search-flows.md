@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - k-nn
+  - ml
+  - search
+---
+
 # AI Search Flows
 
 ## Summary

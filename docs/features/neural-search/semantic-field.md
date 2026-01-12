@@ -1,3 +1,12 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - ml
+  - neural-search
+  - search
+---
+
 # Semantic Field
 
 ## Summary

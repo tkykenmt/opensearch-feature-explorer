@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Remote Store CMK Support
 
 ## Summary

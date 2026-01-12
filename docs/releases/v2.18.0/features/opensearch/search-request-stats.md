@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - search
+---
+
 # Search Request Stats
 
 ## Summary

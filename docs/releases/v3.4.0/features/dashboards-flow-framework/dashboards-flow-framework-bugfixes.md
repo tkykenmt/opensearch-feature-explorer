@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # Dashboards Flow Framework Bugfixes
 
 ## Summary

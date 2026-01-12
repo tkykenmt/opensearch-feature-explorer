@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - search
+---
+
 # Alerting
 
 ## Summary

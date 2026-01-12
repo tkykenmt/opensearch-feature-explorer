@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Segment Grouping Mapper
 
 ## Summary

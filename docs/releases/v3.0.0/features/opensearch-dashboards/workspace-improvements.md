@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - search
+  - security
+---
+
 # Workspace Improvements
 
 ## Summary

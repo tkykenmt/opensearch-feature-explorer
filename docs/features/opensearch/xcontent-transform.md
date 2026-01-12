@@ -1,3 +1,9 @@
+---
+tags:
+  - k-nn
+  - search
+---
+
 # XContent Transform
 
 ## Summary

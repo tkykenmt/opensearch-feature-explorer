@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Dashboards CI/CD & Documentation
 
 ## Summary

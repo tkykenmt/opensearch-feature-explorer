@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - search
+---
+
 # OpenSearch Dashboards Keyboard Shortcuts
 
 ## Summary

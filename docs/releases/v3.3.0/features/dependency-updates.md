@@ -1,3 +1,12 @@
+---
+tags:
+  - dashboards
+  - k-nn
+  - observability
+  - performance
+  - security
+---
+
 # Dependency Updates
 
 ## Summary

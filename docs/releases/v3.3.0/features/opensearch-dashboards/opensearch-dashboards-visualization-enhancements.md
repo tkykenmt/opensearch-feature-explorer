@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - observability
+---
+
 # OpenSearch Dashboards Visualization Enhancements
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Parallel Shard Refresh
 
 ## Summary

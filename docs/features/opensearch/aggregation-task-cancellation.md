@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Aggregation Task Cancellation
 
 ## Summary

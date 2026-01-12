@@ -1,3 +1,10 @@
+---
+tags:
+  - k-nn
+  - ml
+  - neural-search
+---
+
 # Semantic Field Enhancements
 
 ## Summary

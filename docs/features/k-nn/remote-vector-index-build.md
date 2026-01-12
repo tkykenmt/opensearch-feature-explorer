@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - search
+---
+
 # Remote Vector Index Build
 
 ## Summary

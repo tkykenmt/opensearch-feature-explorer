@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - neural-search
+  - security
+---
+
 # Security Dashboards UI Enhancements
 
 ## Summary

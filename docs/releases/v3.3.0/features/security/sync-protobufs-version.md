@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Sync `org.opensearch:protobufs` Version with Core
 
 ## Summary

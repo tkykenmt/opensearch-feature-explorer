@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - performance
+---
+
 # AI Assistant / Chatbot
 
 ## Summary

@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Dependency Bumps (Job Scheduler)
 
 ## Summary

@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - search
+---
+
 # Discover Summary - Log Pattern Support
 
 ## Summary

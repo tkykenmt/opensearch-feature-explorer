@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - ml
+  - performance
+  - search
+---
+
 # Discover
 
 ## Summary

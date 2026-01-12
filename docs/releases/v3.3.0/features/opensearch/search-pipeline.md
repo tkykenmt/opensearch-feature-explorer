@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - search
+---
+
 # System-Generated Search Pipeline
 
 ## Summary

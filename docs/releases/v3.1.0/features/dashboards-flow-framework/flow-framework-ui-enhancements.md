@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - neural-search
+  - search
+---
+
 # Flow Framework UI Enhancements
 
 ## Summary

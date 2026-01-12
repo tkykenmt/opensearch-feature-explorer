@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - ml
+  - observability
+---
+
 # Alerting Bugfixes
 
 ## Summary

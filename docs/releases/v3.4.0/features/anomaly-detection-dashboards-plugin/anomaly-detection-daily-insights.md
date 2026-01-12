@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - ml
+  - search
+---
+
 # Anomaly Detection Daily Insights
 
 ## Summary

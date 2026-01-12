@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Cluster Info & Resource Stats
 
 ## Summary

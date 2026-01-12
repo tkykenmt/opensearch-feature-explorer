@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Thread Context Permissions
 
 ## Summary

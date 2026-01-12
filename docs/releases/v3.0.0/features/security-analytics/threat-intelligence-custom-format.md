@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # Threat Intelligence Custom Format Support
 
 ## Summary

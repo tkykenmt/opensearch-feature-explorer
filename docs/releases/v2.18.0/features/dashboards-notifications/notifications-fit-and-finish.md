@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - neural-search
+  - search
+---
+
 # Notifications Fit & Finish
 
 ## Summary

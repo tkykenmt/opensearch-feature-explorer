@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - neural-search
+---
+
 # UI/UX Improvements
 
 ## Summary

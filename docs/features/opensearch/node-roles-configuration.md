@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - ml
+  - performance
+  - search
+---
+
 # Node Roles Configuration
 
 ## Summary

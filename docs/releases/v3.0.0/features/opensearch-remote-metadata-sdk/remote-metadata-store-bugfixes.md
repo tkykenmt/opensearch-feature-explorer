@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # Remote Metadata Store Bugfixes
 
 ## Summary

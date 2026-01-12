@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - performance
+---
+
 # Warm Indices
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Input Control Visualization
 
 ## Summary

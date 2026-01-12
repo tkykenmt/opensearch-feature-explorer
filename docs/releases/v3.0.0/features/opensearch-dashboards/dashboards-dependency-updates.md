@@ -1,3 +1,10 @@
+---
+tags:
+  - dashboards
+  - performance
+  - security
+---
+
 # Dashboards Dependency Updates
 
 ## Summary

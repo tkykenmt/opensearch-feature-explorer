@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - search
+---
+
 # OpenSearch Learning to Rank
 
 ## Summary

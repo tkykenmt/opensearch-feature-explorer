@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - observability
+  - performance
+---
+
 # Metrics Framework (ML Commons)
 
 ## Summary

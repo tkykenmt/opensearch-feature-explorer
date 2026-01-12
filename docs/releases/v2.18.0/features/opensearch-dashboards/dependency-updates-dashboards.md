@@ -1,3 +1,9 @@
+---
+tags:
+  - dashboards
+  - security
+---
+
 # Dependency Updates (Dashboards)
 
 ## Summary

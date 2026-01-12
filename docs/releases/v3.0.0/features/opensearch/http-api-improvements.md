@@ -1,3 +1,9 @@
+---
+tags:
+  - indexing
+  - security
+---
+
 # HTTP API Improvements
 
 ## Summary

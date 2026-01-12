@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # ActionPlugin REST Handler Wrapper
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # UI/UX Bugfixes (2)
 
 ## Summary

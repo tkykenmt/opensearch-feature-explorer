@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Versioned Security Configuration
 
 ## Summary

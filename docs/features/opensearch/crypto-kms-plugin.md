@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Crypto KMS Plugin
 
 ## Summary

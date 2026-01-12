@@ -1,3 +1,11 @@
+---
+tags:
+  - dashboards
+  - indexing
+  - observability
+  - sql
+---
+
 # Dashboards Observability CI/Tests
 
 ## Summary

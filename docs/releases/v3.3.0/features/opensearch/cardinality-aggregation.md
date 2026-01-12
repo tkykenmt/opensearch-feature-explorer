@@ -1,3 +1,9 @@
+---
+tags:
+  - performance
+  - search
+---
+
 # Cardinality Aggregation Pruning Fix
 
 ## Summary

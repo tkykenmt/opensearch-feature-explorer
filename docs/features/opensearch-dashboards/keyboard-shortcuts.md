@@ -1,3 +1,8 @@
+---
+tags:
+  - dashboards
+---
+
 # Keyboard Shortcuts
 
 ## Summary

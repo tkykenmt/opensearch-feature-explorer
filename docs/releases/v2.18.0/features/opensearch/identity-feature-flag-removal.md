@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Identity Feature Flag Removal
 
 ## Summary

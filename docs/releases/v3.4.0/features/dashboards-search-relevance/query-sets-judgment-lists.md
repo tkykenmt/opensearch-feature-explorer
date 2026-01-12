@@ -1,3 +1,8 @@
+---
+tags:
+  - search
+---
+
 # Query Sets & Judgment Lists
 
 ## Summary

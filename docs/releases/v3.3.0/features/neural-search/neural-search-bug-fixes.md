@@ -1,3 +1,10 @@
+---
+tags:
+  - ml
+  - neural-search
+  - search
+---
+
 # Neural Search Bug Fixes
 
 ## Summary

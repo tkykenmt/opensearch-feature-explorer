@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - observability
+  - security
+---
+
 # Test Infrastructure
 
 ## Summary

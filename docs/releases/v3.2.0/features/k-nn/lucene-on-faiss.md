@@ -1,3 +1,11 @@
+---
+tags:
+  - indexing
+  - k-nn
+  - performance
+  - search
+---
+
 # Lucene-on-Faiss: ADC Support
 
 ## Summary

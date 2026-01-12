@@ -1,3 +1,8 @@
+---
+tags:
+  - security
+---
+
 # Tenancy Access Control
 
 ## Summary

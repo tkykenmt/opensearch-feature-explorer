@@ -1,3 +1,10 @@
+---
+tags:
+  - indexing
+  - search
+  - sql
+---
+
 # SQL/PPL Bug Fixes
 
 ## Summary

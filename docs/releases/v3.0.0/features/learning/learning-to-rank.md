@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - search
+---
+
 # Learning to Rank Bug Fixes
 
 ## Summary

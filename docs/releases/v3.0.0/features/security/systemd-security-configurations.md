@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - security
+---
+
 # Systemd Security Configurations
 
 ## Summary

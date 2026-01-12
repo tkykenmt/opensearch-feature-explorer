@@ -1,3 +1,9 @@
+---
+tags:
+  - ml
+  - performance
+---
+
 # Anomaly Detection Enhancements
 
 ## Summary

@@ -1,3 +1,8 @@
+---
+tags:
+  - indexing
+---
+
 # Streaming Indexing
 
 ## Summary

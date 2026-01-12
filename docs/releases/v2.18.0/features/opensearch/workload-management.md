@@ -1,3 +1,9 @@
+---
+tags:
+  - observability
+  - search
+---
+
 # Workload Management
 
 ## Summary
