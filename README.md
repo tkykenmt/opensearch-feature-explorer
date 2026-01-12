@@ -5,7 +5,7 @@ A tool to analyze OpenSearch release notes and generate detailed feature/release
 ## Overview
 
 ```mermaid
-graph LR
+graph TB
     subgraph Input
         RN[Release Notes]
         PR[Pull Requests]
@@ -102,7 +102,7 @@ Enable the following in your repository settings (Settings → General):
 Complete workflow for investigating a new OpenSearch release.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[release-investigate] --> B[(Release Reports)]
     A --> C[(Feature Reports)]
     A --> D[(Release Summary)]
@@ -118,7 +118,7 @@ python run.py release-investigate 3.0.0
 #### Step 1: Parse Release Notes
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[fetch-release] --> B[(raw-items.json)]
     B --> C[group-release]
     C --> D[(groups.json)]
@@ -132,7 +132,7 @@ python run.py group-release 3.0.0 --all
 #### Step 2: Create GitHub Project & Issues
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[(groups.json)] --> B[planner]
     B --> C[(GitHub Project)]
     B --> D[(Issues)]
@@ -145,7 +145,7 @@ python run.py planner 3.0.0
 #### Step 3: Investigate Each Issue
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[(Issue)] --> B[investigate]
     B --> C[(Release Report)]
     B --> D[(Feature Report)]
@@ -160,7 +160,7 @@ python run.py batch-investigate --all
 #### Step 4: Create Release Summary
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[(Release Reports)] --> B[summarize]
     B --> C[(Release Summary)]
 ```
@@ -176,7 +176,7 @@ python run.py summarize 3.0.0
 Quick investigation of a specific feature without full release workflow.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[PR Number] --> B[investigate]
     C[Feature Name] --> B
     B --> D[Feature Report]
@@ -198,7 +198,7 @@ python run.py investigate --feature "Star Tree"
 Explore features interactively with Q&A.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[investigate] --> B[Q&A Session]
     B --> C[Import URLs]
     C --> B
