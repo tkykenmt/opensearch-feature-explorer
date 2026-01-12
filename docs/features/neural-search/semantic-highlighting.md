@@ -208,6 +208,7 @@ POST /my-index/_search
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [neural-search#1520](https://github.com/opensearch-project/neural-search/pull/1520) | Add batch inference support for semantic highlighting |
+| v3.0.0 | [neural-search#1183](https://github.com/opensearch-project/neural-search/pull/1183) | Encapsulate KNNQueryBuilder within NeuralKNNQueryBuilder (foundation for query text preservation) |
 | v3.0.0 | - | Initial semantic highlighting implementation |
 
 ## References
