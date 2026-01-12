@@ -223,8 +223,10 @@ POST /my-index/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [neural-search#1520](https://github.com/opensearch-project/neural-search/pull/1520) | Add batch inference support for semantic highlighting | [#1516](https://github.com/opensearch-project/neural-search/issues/1516) |
-| v3.0.0 | [neural-search#1183](https://github.com/opensearch-project/neural-search/pull/1183) | Encapsulate KNNQueryBuilder within NeuralKNNQueryBuilder (foundation for query text preservation) |   |
+| v3.0.0 | [neural-search#1183](https://github.com/opensearch-project/neural-search/pull/1183) | Encapsulate KNNQueryBuilder within NeuralKNNQueryBuilder (foundation for query text preservation) | [#1182](https://github.com/opensearch-project/neural-search/issues/1182) |
 | v3.0.0 | - | Initial semantic highlighting implementation |   |
 
 ### Issues (Design / RFC)
+- [Issue #1175](https://github.com/opensearch-project/neural-search/issues/1175): [RFC] OpenSearch Semantic Sentence Highlighting
+- [Issue #1182](https://github.com/opensearch-project/neural-search/issues/1182): Semantic Highlighter Project Tasks Tracker
 - [Issue #1516](https://github.com/opensearch-project/neural-search/issues/1516): Batch Inference Support for Semantic Highlighting
