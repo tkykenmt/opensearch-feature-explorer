@@ -97,4 +97,4 @@ cluster.allocator.shard.batch.replica_allocator_timeout: 30s
 
 ## Related Feature Report
 
-- [Async Shard Batch Fetch feature documentation](../../../features/opensearch/async-shard-batch-fetch.md)
+- [Async Shard Batch Fetch feature documentation](../../../features/opensearch/opensearch-async-shard-batch-fetch.md)

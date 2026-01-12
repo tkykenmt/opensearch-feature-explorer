@@ -138,4 +138,4 @@ const appLinks: AppLinkSchema[] = [
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/sample-data.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-sample-data.md)

@@ -120,4 +120,4 @@ PUT /my-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/jackson--query-limits.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-jackson--query-limits.md)

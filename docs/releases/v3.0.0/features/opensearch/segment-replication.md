@@ -122,4 +122,4 @@ GET _cat/segment_replication?v
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/segment-replication.md)
+- [Full feature documentation](../../../features/opensearch/segment-opensearch-replication.md)

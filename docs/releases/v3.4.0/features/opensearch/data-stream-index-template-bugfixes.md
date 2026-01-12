@@ -107,4 +107,4 @@ No migration required. This is a bugfix that enables previously blocked operatio
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/data-stream-index-template.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-data-stream-index-template.md)

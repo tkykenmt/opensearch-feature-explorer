@@ -160,4 +160,4 @@ GET /_cluster/stats/indices,os,jvm/shards/nodes/_all
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/cluster-stats-api.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-cluster-stats-api.md)

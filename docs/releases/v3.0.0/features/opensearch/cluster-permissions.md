@@ -97,4 +97,4 @@ my_role:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/cluster-permissions.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-cluster-permissions.md)

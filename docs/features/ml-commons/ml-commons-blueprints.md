@@ -150,10 +150,10 @@ POST /_plugins/_ml/connectors/_create
 - **v2.9.0** (2023-07-24): Initial connector blueprints feature
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
 - [Flow Framework](../flow-framework/flow-framework.md)
 - [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-plugin-dependencies.md)
+- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

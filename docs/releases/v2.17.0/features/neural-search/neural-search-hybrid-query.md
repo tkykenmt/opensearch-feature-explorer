@@ -110,4 +110,4 @@ illegal_argument_exception: In the current OpenSearch version pagination is not 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/hybrid-query.md)
+- [Full feature documentation](../../../../features/neural-search/neural-search-hybrid-query.md)

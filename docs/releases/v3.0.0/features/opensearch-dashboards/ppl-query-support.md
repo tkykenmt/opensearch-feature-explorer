@@ -144,4 +144,4 @@ No migration required. These are bugfixes that improve existing PPL query functi
 
 ## Related Feature Report
 
-- [Query Enhancements](../../../../features/opensearch-dashboards/query-enhancements.md)
+- [Query Enhancements](../../../../features/opensearch-dashboards/opensearch-dashboards-query-enhancements.md)

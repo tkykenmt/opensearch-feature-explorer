@@ -87,4 +87,4 @@ If you're using S3-compatible storage and previously had to configure `legacy_md
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/s3-repository.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-s3-repository.md)

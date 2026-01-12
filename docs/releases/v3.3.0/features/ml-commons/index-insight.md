@@ -198,4 +198,4 @@ POST /_plugins/_ml/agents/_register
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/index-insight.md)
+- [Full feature documentation](../../../../features/ml-commons/ml-commons-index-insight.md)

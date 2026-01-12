@@ -61,4 +61,4 @@ None - this is a documentation maintenance change.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-search-relevance/documentation-maintenance.md)
+- [Full feature documentation](../../../../features/dashboards-search-relevance/dashboards-search-relevance-documentation-maintenance.md)

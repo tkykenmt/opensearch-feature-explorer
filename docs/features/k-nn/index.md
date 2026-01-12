@@ -10,17 +10,17 @@ Approximate k-nearest neighbor search for vector similarity in OpenSearch.
 
 ## Overview
 
-- [Vector Search (k-NN)](vector-search-k-nn.md) - Core k-NN functionality
+- [Vector Search (k-NN)](k-nn-vector-search-k-nn.md) - Core k-NN functionality
 
 ## Search Features
 
 | Document | Description |
 |----------|-------------|
-| [Disk-based Vector Search](disk-based-vector-search.md) | Memory-efficient vector search |
-| [Explain API](explain-api.md) | Query explanation for k-NN |
+| [Disk-based Vector Search](k-nn-disk-based-vector-search.md) | Memory-efficient vector search |
+| [Explain API](k-nn-explain-api.md) | Query explanation for k-NN |
 | [Query Rescore](k-nn-query-rescore.md) | Rescore k-NN results |
-| [MMR](maximal-marginal-relevance-mmr.md) | Diversity in search results |
-| [Late Interaction](late-interaction.md) | ColBERT-style retrieval |
+| [MMR](k-nn-maximal-marginal-relevance-mmr.md) | Diversity in search results |
+| [Late Interaction](k-nn-late-interaction.md) | ColBERT-style retrieval |
 
 ## Engines & Performance
 
@@ -28,7 +28,7 @@ Approximate k-nearest neighbor search for vector similarity in OpenSearch.
 |----------|-------------|
 | [Engine Enhancements](k-nn-engine-enhancements.md) | Engine improvements |
 | [Performance Engine](k-nn-performance-engine.md) | Performance optimizations |
-| [Lucene on Faiss](lucene-on-faiss.md) | Faiss backend for Lucene |
+| [Lucene on Faiss](k-nn-lucene-on-faiss.md) | Faiss backend for Lucene |
 | [AVX-512 Support](k-nn-avx512-support.md) | SIMD acceleration |
 | [Memory Optimized Warmup](k-nn-memory-optimized-warmup.md) | Efficient index warming |
 
@@ -37,7 +37,7 @@ Approximate k-nearest neighbor search for vector similarity in OpenSearch.
 | Document | Description |
 |----------|-------------|
 | [Iterative Graph Build](k-nn-iterative-graph-build.md) | Incremental index building |
-| [Remote Vector Index Build](remote-vector-index-build.md) | Offload index building |
+| [Remote Vector Index Build](k-nn-remote-vector-index-build.md) | Offload index building |
 | [Derived Source Codec](k-nn-derived-source-codec-refactoring.md) | Codec improvements |
 
 ## Vector Types & Configuration
@@ -53,7 +53,7 @@ Approximate k-nearest neighbor search for vector similarity in OpenSearch.
 
 | Document | Description |
 |----------|-------------|
-| [SEISMIC Sparse ANN](../neural-search/seismic-sparse-ann.md) | Sparse vector search |
+| [SEISMIC Sparse ANN](../neural-search/neural-search-seismic-sparse-ann.md) | Sparse vector search |
 
 ## Maintenance
 

@@ -148,4 +148,4 @@ This query now returns the expected document.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/wildcard-field.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-wildcard-field.md)

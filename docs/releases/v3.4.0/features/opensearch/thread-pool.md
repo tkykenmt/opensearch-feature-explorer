@@ -108,4 +108,4 @@ pool.submit(() -> {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/thread-pool.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-thread-pool.md)

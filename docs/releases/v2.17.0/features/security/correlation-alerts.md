@@ -103,4 +103,4 @@ POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/correlation-alerts.md)
+- [Full feature documentation](../../../../features/security/security-correlation-alerts.md)

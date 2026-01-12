@@ -139,4 +139,4 @@ Queries on the `tags` field will not be cached, preventing stale results if `use
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/request-cache.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-request-cache.md)

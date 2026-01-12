@@ -110,4 +110,4 @@ For S3 repositories, the `S3Repository.isSeverSideEncryptionEnabled()` method al
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/repository-encryption.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-repository-encryption.md)

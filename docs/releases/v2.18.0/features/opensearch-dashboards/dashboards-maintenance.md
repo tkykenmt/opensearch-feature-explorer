@@ -81,4 +81,4 @@ The Discover plugin's enhanced search functionality received significant cleanup
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-maintenance.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-maintenance.md)

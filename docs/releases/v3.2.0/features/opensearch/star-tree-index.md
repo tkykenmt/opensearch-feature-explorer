@@ -149,4 +149,4 @@ POST /logs/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/star-tree-index.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-star-tree-index.md)

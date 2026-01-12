@@ -87,4 +87,4 @@ No migration required. The default value of 32,000 characters is generous enough
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/search-settings.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-search-settings.md)

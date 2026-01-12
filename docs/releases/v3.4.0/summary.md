@@ -46,14 +46,14 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| PPL Alerting | V2 alerting API with PPL query support, stateless alerts, per-result and result-set trigger modes | [Details](features/alerting/ppl-alerting.md) |
+| PPL Alerting | V2 alerting API with PPL query support, stateless alerts, per-result and result-set trigger modes | [Details](features/alerting/alerting-ppl-alerting.md) |
 | Agentic Search UX | No-code agent builder with MCP server support, conversational memory, and simplified configuration | [Details](features/dashboards-flow-framework/dashboards-agent-assistant.md) |
-| Scheduled Experiments | Cron-based scheduling for recurring search relevance experiments with historical tracking | [Details](features/search-relevance/scheduled-experiments.md) |
+| Scheduled Experiments | Cron-based scheduling for recurring search relevance experiments with historical tracking | [Details](features/search-relevance/search-relevance-scheduled-experiments.md) |
 | ISM Exclusion Pattern | Support exclusion patterns in ISM templates using `-` prefix for selective index management | [Details](features/index-management/ism-exclusion-pattern.md) |
 | k-NN Memory Optimized Warmup | Optimized warmup procedure for memory-optimized search with page cache pre-loading | [Details](features/k-nn/k-nn-memory-optimized-warmup.md) |
 | Query Version-Aware Settings | Dynamic feature detection based on cluster version for Query Insights Dashboards | [Details](features/query-insights-dashboards/query-version-aware-settings.md) |
 | WLM Security Attributes | Security attribute extraction for WLM rule-based auto-tagging (username, roles) | [Details](features/security/wlm-security-attributes.md) |
-| Anomaly Detection Daily Insights | AI-powered anomaly correlation with automated detector creation via ML agents | [Details](features/anomaly-detection-dashboards-plugin/anomaly-detection-daily-insights.md) |
+| Anomaly Detection Daily Insights | AI-powered anomaly correlation with automated detector creation via ML agents | [Details](features/anomaly-detection-dashboards-plugin/anomaly-detection-dashboards-plugin-anomaly-detection-daily-insights.md) |
 | Remote Store CMK Support | Customer-managed key encryption/decryption with STS role assumption for cross-account access | [Details](features/opensearch-remote-metadata-sdk/remote-store-cmk-support.md) |
 | Flow Framework Access Control | Integration with centralized Resource Sharing and Access Control framework | [Details](features/flow-framework/flow-framework-access-control.md) |
 
@@ -61,15 +61,15 @@ graph TB
 
 | Area | Description | Report |
 |------|-------------|--------|
-| Aggregation Performance | Hybrid cardinality collector, filter rewrite + skip list (up to 10x), MergingDigest for percentiles, matrix_stats 5x speedup | [Details](features/opensearch/aggregation-optimizations.md) |
-| Scroll Query Performance | Cache StoredFieldsReader per segment for ~19% improvement | [Details](features/opensearch/scroll-query-optimization.md) |
+| Aggregation Performance | Hybrid cardinality collector, filter rewrite + skip list (up to 10x), MergingDigest for percentiles, matrix_stats 5x speedup | [Details](features/opensearch/opensearch-aggregation-optimizations.md) |
+| Scroll Query Performance | Cache StoredFieldsReader per segment for ~19% improvement | [Details](features/opensearch/scroll-opensearch-query-optimization.md) |
 | gRPC Transport | Support for ConstantScoreQuery, FuzzyQuery, MatchBoolPrefixQuery, MatchPhrasePrefix, PrefixQuery, MatchQuery; CBOR/SMILE/YAML formats | [Details](features/opensearch/grpc-transport.md) |
-| PPL Commands | New chart, streamstats, multisearch, replace, appendpipe commands; bucket_nullable, usenull options | [Details](features/sql/ppl-commands-calcite.md) |
-| PPL Functions | New mvindex, mvdedup, mvappend, tostring functions; per_second/minute/hour/day for timechart | [Details](features/sql/ppl-eval-functions.md) |
-| PPL Query Optimization | 33 enhancements including sort pushdown, distinct count approx, case-to-range queries | [Details](features/sql/ppl-query-optimization.md) |
+| PPL Commands | New chart, streamstats, multisearch, replace, appendpipe commands; bucket_nullable, usenull options | [Details](features/sql/sql-ppl-commands-calcite.md) |
+| PPL Functions | New mvindex, mvdedup, mvappend, tostring functions; per_second/minute/hour/day for timechart | [Details](features/sql/sql-ppl-eval-functions.md) |
+| PPL Query Optimization | 33 enhancements including sort pushdown, distinct count approx, case-to-range queries | [Details](features/sql/ppl-opensearch-query-optimization.md) |
 | Security Configuration | Dedicated config reloading thread, dynamic resource settings, X509v3 SAN authentication, securityadmin timeout | [Details](features/security/security-configuration.md) |
 | Resource Sharing | Multi-type index support, ResourceProvider interface, Builder pattern, REST API improvements | [Details](features/security/resource-sharing.md) |
-| Dashboards Explore | Histogram breakdowns, Field Statistics tab, trace flyout, correlations, cancel query | [Details](features/opensearch-dashboards/dashboards-explore.md) |
+| Dashboards Explore | Histogram breakdowns, Field Statistics tab, trace flyout, correlations, cancel query | [Details](features/opensearch-dashboards/dashboards-opensearch-dashboards-explore.md) |
 | Dashboards Chat | Global search integration, suggestion system, state persistence, session storage | [Details](features/opensearch-dashboards/dashboards-chat.md) |
 | ML Commons | Sensitive parameter filtering, resource type support, increased batch task limits (max: 10,000) | [Details](features/ml-commons/ml-commons-enhancements.md) |
 | k-NN Enhancements | Native SIMD scoring for FP16, VectorSearcherHolder memory optimization | [Details](features/k-nn/k-nn-enhancements.md) |
@@ -109,7 +109,7 @@ Notable dependency updates in this release:
 - **Calcite**: 1.41.0 for SQL plugin
 - **Security**: 28 dependency updates addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
 
-See [Dependency Updates](features/multi-repo/dependency-updates.md) and [JDK 25 & Gradle 9.2 Upgrades](features/multi-plugin/jdk-25-gradle-9.2-upgrades.md) for details.
+See [Dependency Updates](features/multi-repo/opensearch-dashboards-dependency-updates.md) and [JDK 25 & Gradle 9.2 Upgrades](features/multi-plugin/jdk-25-gradle-9.2-upgrades.md) for details.
 
 ## References
 

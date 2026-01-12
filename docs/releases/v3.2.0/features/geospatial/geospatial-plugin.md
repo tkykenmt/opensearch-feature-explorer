@@ -108,4 +108,4 @@ No changes to user-facing APIs. The security improvements are transparent to use
 
 ## Related Feature Report
 
-- [Full IP2Geo documentation](../../../features/geospatial/ip2geo.md)
+- [Full IP2Geo documentation](../../../features/geospatial/geospatial-ip2geo.md)

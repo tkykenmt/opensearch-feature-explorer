@@ -139,4 +139,4 @@ const createReqBody = {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/multi-data-source-support.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-multi-data-source-support.md)

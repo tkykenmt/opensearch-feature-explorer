@@ -177,4 +177,4 @@ graph TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/explore-traces.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-explore-traces.md)

@@ -94,4 +94,4 @@ These dependency updates are transparent to users. No configuration changes are 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-plugin-dependencies.md)
+- [Full feature documentation](../../../../features/security/security-opensearch-plugin-dependencies.md)

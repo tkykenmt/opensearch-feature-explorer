@@ -113,4 +113,4 @@ PUT /logs/_mapping
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/derived-fields.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-derived-fields.md)

@@ -175,4 +175,4 @@ convertIndexPatternToDataset('index-pattern');  // → 'dataset'
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dataset-management.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dataset-management.md)

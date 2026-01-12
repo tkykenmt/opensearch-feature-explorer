@@ -119,4 +119,4 @@ Existing pipelines using the ML Inference Search Response Processor continue to 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-inference-processor.md)
+- [Full feature documentation](../../../../features/ml-commons/ml-commons-ml-inference-processor.md)

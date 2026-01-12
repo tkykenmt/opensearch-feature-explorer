@@ -93,4 +93,4 @@ if (FipsMode.CHECK.isFipsEnabled()) {
 
 ## Related Feature Report
 
-- [Cryptography & Security Libraries](../../../features/opensearch/cryptography-security-libraries.md)
+- [Cryptography & Security Libraries](../../../features/opensearch/opensearch-cryptography-security-libraries.md)

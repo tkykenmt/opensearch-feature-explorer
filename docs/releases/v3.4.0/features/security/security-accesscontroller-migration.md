@@ -176,4 +176,4 @@ For plugin developers extending the security plugin:
 
 ## Related Feature Report
 
-- [Java Agent AccessController](../../../../features/opensearch/java-agent-accesscontroller.md)
+- [Java Agent AccessController](../../../../features/opensearch/opensearch-java-agent-accesscontroller.md)

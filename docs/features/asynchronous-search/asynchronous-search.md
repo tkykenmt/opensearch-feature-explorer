@@ -163,7 +163,7 @@ GET _plugins/_asynchronous_search/FklfVlU4eFdIUTh1Q1hyM3ZnT19fUVEUd29KLWZYUUI3Tz
 - **v1.0.0** (2021-07-12): Initial release with OpenSearch
 
 ## Related Features
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

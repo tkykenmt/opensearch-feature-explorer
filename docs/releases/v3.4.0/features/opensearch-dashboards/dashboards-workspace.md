@@ -79,4 +79,4 @@ No migration required. Existing workspaces are unaffected. This change only affe
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/workspace.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-workspace.md)

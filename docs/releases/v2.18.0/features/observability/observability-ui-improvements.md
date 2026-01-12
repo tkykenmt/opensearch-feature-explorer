@@ -121,4 +121,4 @@ sessionStorage.setItem('traceTableMode', 'all_spans');
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-observability/observability-ui.md)
+- [Full feature documentation](../../../features/dashboards-observability/dashboards-observability-observability-ui.md)

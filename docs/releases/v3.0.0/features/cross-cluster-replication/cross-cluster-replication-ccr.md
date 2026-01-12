@@ -157,4 +157,4 @@ To use the new `stop_replication` action:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/cross-cluster-replication/cross-cluster-replication.md)
+- [Full feature documentation](../../../../features/cross-cluster-replication/cross-cluster-opensearch-replication.md)

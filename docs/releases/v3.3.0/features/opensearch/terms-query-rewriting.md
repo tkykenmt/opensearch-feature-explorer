@@ -111,4 +111,4 @@ No migration is required. This is a bug fix that restores the expected behavior 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/terms-query.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-terms-query.md)

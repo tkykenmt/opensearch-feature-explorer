@@ -119,4 +119,4 @@ To enable log pattern summaries:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/discover.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-discover.md)

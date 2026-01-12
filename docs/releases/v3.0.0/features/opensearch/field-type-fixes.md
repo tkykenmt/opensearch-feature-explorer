@@ -124,4 +124,4 @@ Plugin developers who perform `instanceof` checks on `MappedFieldType` should:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/filter-field-type.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-filter-field-type.md)

@@ -168,4 +168,4 @@ Fixed overlapping data labels on map layers introduced in #703. Reverted the `te
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-maps/maps-geospatial.md)
+- [Full feature documentation](../../../features/dashboards-maps/dashboards-maps-maps-geospatial.md)

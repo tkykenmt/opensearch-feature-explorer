@@ -119,4 +119,4 @@ PUT _ingest/pipeline/log_pipeline
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/grok-processor.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-grok-processor.md)

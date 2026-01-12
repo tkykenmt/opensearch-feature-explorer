@@ -178,4 +178,4 @@ For plugin developers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/java-17-modernization.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-java-17-modernization.md)

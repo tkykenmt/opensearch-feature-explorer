@@ -112,4 +112,4 @@ No migration required. This is a transparent bugfix that enables previously brok
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/parent-child-query.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-parent-child-query.md)

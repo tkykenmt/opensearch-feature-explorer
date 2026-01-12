@@ -105,4 +105,4 @@ uiSettings.setWithScope('defaultDataSource', 'my-ds-id', UiSettingScope.WORKSPAC
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/ui-settings.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-ui-settings.md)

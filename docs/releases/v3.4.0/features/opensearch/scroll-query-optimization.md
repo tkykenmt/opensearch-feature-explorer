@@ -131,4 +131,4 @@ No migration required. This is a transparent performance improvement that applie
 
 ## Related Feature Report
 
-- [Full Scroll API documentation](../../../features/opensearch/scroll-api.md)
+- [Full Scroll API documentation](../../../features/opensearch/opensearch-scroll-api.md)

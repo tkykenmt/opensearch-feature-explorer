@@ -139,5 +139,5 @@ java {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/multi-plugin/jdk-21-java-agent-migration.md)
-- [Security Manager Replacement](../../../features/opensearch/security-manager-replacement.md)
+- [Full feature documentation](../../../features/multi-plugin/multi-plugin-jdk-21-reporting-java-agent-migration.md)
+- [Security Manager Replacement](../../../features/opensearch/opensearch-security-manager-replacement.md)

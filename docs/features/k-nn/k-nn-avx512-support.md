@@ -140,8 +140,8 @@ SIMD optimization is most effective when:
 - **v2.13.0**: Initial SIMD support with AVX2 (x64) and NEON (ARM64)
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

@@ -81,4 +81,4 @@ The fixes are automatic and require no configuration changes. Error indicators n
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-observability/trace-analytics.md)
+- [Full feature documentation](../../../../features/dashboards-observability/dashboards-observability-trace-analytics.md)

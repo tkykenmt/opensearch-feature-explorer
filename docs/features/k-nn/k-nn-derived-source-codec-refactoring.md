@@ -184,8 +184,8 @@ classDiagram
 - **v3.0.0** (2025-05-13): Initial implementation - derived source mask approach, codec refactoring, field mapper consolidation, NMSLIB deprecation, removal of deprecated settings
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

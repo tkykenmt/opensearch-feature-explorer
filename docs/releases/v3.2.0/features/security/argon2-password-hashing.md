@@ -137,4 +137,4 @@ admin:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/argon2-password-hashing.md)
+- [Full feature documentation](../../../features/security/security-argon2-password-hashing.md)

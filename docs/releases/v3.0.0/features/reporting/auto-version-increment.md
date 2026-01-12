@@ -63,4 +63,4 @@ No functional changes. These are infrastructure maintenance commits that:
 
 ## Related Feature Report
 
-- [Version Management](../../../features/reporting/auto-version-management.md)
+- [Version Management](../../../features/reporting/reporting-auto-version-management.md)

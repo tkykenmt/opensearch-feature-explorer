@@ -127,4 +127,4 @@ PUT .plugins-ml-config/_doc/os_chat
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-assistant/ai-assistant-chatbot.md)
+- [Full feature documentation](../../../features/dashboards-assistant/dashboards-assistant-ai-assistant-chatbot.md)

@@ -148,4 +148,4 @@ To enable alert insights:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/alerting-dashboards-plugin/alerting-summary-insights.md)
+- [Full feature documentation](../../../features/alerting-dashboards-plugin/alerting-dashboards-plugin-alerting-summary-insights.md)

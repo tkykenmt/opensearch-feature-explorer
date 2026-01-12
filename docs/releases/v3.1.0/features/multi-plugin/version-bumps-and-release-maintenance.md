@@ -80,4 +80,4 @@ No migration required. Version bumps are internal maintenance changes that don't
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/version-bumps-release-maintenance.md)
+- [Full feature documentation](../../../../features/multi-plugin/version-bumps-observability-reporting-release-maintenance.md)

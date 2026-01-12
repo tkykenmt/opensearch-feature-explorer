@@ -109,4 +109,4 @@ enum ResultStatus {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-improvements.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-improvements.md)

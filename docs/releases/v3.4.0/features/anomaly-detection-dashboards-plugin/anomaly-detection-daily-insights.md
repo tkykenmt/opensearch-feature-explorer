@@ -121,4 +121,4 @@ graph TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection-dashboards-plugin/anomaly-detection-daily-insights.md)
+- [Full feature documentation](../../../../features/anomaly-detection-dashboards-plugin/anomaly-detection-dashboards-plugin-anomaly-detection-daily-insights.md)

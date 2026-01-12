@@ -124,4 +124,4 @@ No migration required. This is a bug fix that improves reliability of search ope
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/query-phase-result-consumer.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-query-phase-result-consumer.md)

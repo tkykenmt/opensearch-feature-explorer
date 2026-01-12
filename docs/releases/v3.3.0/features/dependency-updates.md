@@ -125,4 +125,4 @@ The Bouncy Castle upgrade includes security improvements:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../features/dependency-updates.md)
+- [Full feature documentation](../../features/opensearch-dashboards-dependency-updates.md)

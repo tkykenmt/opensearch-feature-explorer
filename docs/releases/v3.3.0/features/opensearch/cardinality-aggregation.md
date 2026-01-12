@@ -103,4 +103,4 @@ PUT /_cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/cardinality-aggregation.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-cardinality-aggregation.md)

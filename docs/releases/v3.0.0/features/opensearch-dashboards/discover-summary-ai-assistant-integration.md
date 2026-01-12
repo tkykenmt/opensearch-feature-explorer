@@ -92,4 +92,4 @@ The summary now renders with proper markdown formatting:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/query-assistant.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-query-assistant.md)

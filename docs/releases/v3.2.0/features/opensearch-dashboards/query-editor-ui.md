@@ -100,7 +100,7 @@ The Query Editor in Explore now provides smoother autocomplete interaction:
 ## References
 
 ### Documentation
-- [Query Editor Feature](../../../features/opensearch-dashboards/query-editor.md): Full feature documentation
+- [Query Editor Feature](../../../features/opensearch-dashboards/opensearch-dashboards-query-editor.md): Full feature documentation
 
 ### Pull Requests
 | PR | Description |
@@ -111,4 +111,4 @@ The Query Editor in Explore now provides smoother autocomplete interaction:
 
 ## Related Feature Report
 
-- [Query Editor](../../../features/opensearch-dashboards/query-editor.md)
+- [Query Editor](../../../features/opensearch-dashboards/opensearch-dashboards-query-editor.md)

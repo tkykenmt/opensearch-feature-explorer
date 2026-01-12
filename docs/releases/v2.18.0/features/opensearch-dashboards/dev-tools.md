@@ -105,4 +105,4 @@ The Dev Tools modal is accessed via the header icon:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dev-tools.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dev-tools.md)

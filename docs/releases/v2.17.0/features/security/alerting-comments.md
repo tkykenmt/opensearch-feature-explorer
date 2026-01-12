@@ -95,4 +95,4 @@ No migration required. The updated roles are automatically applied when upgradin
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/alerting-comments-security.md)
+- [Full feature documentation](../../../features/security/security-alerting-comments-security.md)

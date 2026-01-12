@@ -129,4 +129,4 @@ For plugin developers migrating to the version catalog:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/gradle-build-system.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-gradle-build-system.md)

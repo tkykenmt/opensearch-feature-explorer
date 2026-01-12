@@ -61,4 +61,4 @@ No migration required. This is a build fix that does not change any user-facing 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/cross-cluster-replication/cross-cluster-replication.md)
+- [Full feature documentation](../../../../features/cross-cluster-replication/cross-cluster-opensearch-replication.md)

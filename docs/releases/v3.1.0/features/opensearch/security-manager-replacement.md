@@ -132,4 +132,4 @@ grant {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/multi-plugin/jdk-21-java-agent-migration.md)
+- [Full feature documentation](../../../features/multi-plugin/multi-plugin-jdk-21-reporting-java-agent-migration.md)

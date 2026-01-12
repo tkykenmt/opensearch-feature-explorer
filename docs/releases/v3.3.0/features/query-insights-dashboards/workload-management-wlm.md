@@ -123,5 +123,5 @@ A critical backend fix prevents workload group deletion when associated rules ex
 
 ## Related Feature Report
 
-- [Full Workload Management documentation](../../../features/opensearch/workload-management.md)
+- [Full Workload Management documentation](../../../features/opensearch/opensearch-workload-management.md)
 - [Query Insights documentation](../../../features/query-insights/query-insights.md)

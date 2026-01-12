@@ -159,8 +159,8 @@ GET my-knn-index/_search
 - **v2.17.0** (2024-09-17): Initial implementation of k-NN query rescore support for native engines
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

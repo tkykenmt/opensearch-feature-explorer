@@ -130,4 +130,4 @@ core.chrome.navGroup.addNavLinksToGroup(
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/navigation.md)
+- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-navigation.md)

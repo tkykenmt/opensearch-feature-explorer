@@ -106,4 +106,4 @@ PUT _ingest/pipeline/text-chunking-pipeline
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/text-chunking.md)
+- [Full feature documentation](../../../../features/neural-search/neural-search-text-chunking.md)

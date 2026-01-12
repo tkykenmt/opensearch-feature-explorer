@@ -143,4 +143,4 @@ public class ClasspathPluginIT extends OpenSearchIntegTestCase {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/plugin-testing-framework.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-plugin-testing-framework.md)

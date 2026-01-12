@@ -114,4 +114,4 @@ No migration required. This is a bug fix that makes `unsigned_long` fields work 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/unsigned-long.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-unsigned-long.md)

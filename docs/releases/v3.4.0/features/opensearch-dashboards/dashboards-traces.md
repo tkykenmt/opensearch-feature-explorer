@@ -120,4 +120,4 @@ No migration required. Changes are backward compatible.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/explore-traces.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-explore-traces.md)

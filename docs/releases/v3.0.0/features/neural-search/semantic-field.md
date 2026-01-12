@@ -96,4 +96,4 @@ The semantic field is gated behind a feature flag (`semantic_field_enabled`) and
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/semantic-field.md)
+- [Full feature documentation](../../../../features/neural-search/neural-search-semantic-field.md)

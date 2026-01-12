@@ -100,4 +100,4 @@ PUT _snapshot/my-s3-compatible-repo
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/s3-repository.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-s3-repository.md)

@@ -90,7 +90,7 @@ Dependency updates in the Security plugin follow this process:
 - **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

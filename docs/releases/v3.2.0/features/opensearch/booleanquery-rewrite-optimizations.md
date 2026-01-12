@@ -151,4 +151,4 @@ The optimization applies when:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/booleanquery-rewrite-optimizations.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-booleanquery-rewrite-optimizations.md)

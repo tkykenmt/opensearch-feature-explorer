@@ -178,4 +178,4 @@ const CreateMonitorFlyout: React.FC<FlyoutComponentProps> = ({
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/explore.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-explore.md)

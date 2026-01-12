@@ -68,4 +68,4 @@ This release includes several improvements to the Search Relevance plugin's CI/C
 - [Issue #306](https://github.com/opensearch-project/search-relevance/issues/306): AccessController deprecation warnings
 
 ## Related Feature Report
-- [Full feature documentation](../../../../features/search-relevance/ci-tests.md)
+- [Full feature documentation](../../../../features/search-relevance/dashboards-observability-search-relevance-ci-tests.md)

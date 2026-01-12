@@ -122,4 +122,4 @@ This is a new utility method with no breaking changes. Existing code using `XCon
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/xcontent-transform.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-xcontent-transform.md)

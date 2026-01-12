@@ -118,4 +118,4 @@ logs-2024.03                   1710001234567                2024-03-09T16:20:34.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/cat-indices-api.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-cat-indices-api.md)

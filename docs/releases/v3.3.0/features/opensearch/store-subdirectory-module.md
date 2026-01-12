@@ -116,4 +116,4 @@ No migration required. This is a bug fix that automatically takes effect when up
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/store-subdirectory-module.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-store-subdirectory-module.md)

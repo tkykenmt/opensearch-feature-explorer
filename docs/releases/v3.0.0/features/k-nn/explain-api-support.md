@@ -155,4 +155,4 @@ No migration required. This is a new feature that enhances existing functionalit
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/explain-api.md)
+- [Full feature documentation](../../../../features/k-nn/k-nn-explain-api.md)

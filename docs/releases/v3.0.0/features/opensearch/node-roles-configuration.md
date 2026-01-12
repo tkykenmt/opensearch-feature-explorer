@@ -158,4 +158,4 @@ This is marked as a breaking change because the behavior of parsing `[]` from en
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/node-roles-configuration.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-node-roles-configuration.md)

@@ -129,4 +129,4 @@ PUT _plugins/_anomaly_detection/detectors
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/remote-multi-index-support.md)
+- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection-remote-multi-index-support.md)

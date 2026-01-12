@@ -97,4 +97,4 @@ source=events | eval parsed = json_extract(payload, '$.status')
 
 ## Related Feature Report
 
-- [Calcite Query Engine](../../../../features/sql/calcite-query-engine.md)
+- [Calcite Query Engine](../../../../features/sql/sql-calcite-query-engine.md)

@@ -133,4 +133,4 @@ GET counters/_search
 
 ## Related Feature Report
 
-- [Approximation Framework](../../../features/opensearch/approximation-framework.md)
+- [Approximation Framework](../../../features/opensearch/opensearch-approximation-framework.md)

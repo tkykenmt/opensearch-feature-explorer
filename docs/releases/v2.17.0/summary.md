@@ -47,29 +47,29 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| Disk-Based Vector Search | Reduces memory by up to 32x using binary quantization and two-phase search | [Details](features/k-nn/disk-based-vector-search.md) |
+| Disk-Based Vector Search | Reduces memory by up to 32x using binary quantization and two-phase search | [Details](features/k-nn/k-nn-disk-based-vector-search.md) |
 | Faiss Byte Vector Support | 75% memory reduction with byte vectors for HNSW and IVF algorithms | [Details](features/k-nn/k-nn-byte-vector-support.md) |
-| Batch Asynchronous Ingestion | Ingest pre-generated embeddings from S3 or OpenAI into OpenSearch | [Details](features/ml-commons/batch-ingestion.md) |
+| Batch Asynchronous Ingestion | Ingest pre-generated embeddings from S3 or OpenAI into OpenSearch | [Details](features/ml-commons/ml-commons-neural-search-batch-ingestion.md) |
 | Flow Framework Access Control | Backend role-based access control for workflow templates | [Details](features/flow-framework/flow-framework-access-control.md) |
 | Missing Data Handling | Imputation options for anomaly detection (zero, fixed, previous) | [Details](features/anomaly-detection/anomaly-detection-missing-data-handling.md) |
 | Query Shape Generation | Group similar queries by structural similarity in Query Insights | [Details](features/query-insights/query-shape-generation.md) |
-| Security Lake Data Source | Query Amazon Security Lake tables directly from OpenSearch | [Details](features/sql/security-lake-data-source.md) |
-| System Templates (Experimental) | Pre-defined index templates with optimized settings for logs/metrics | [Details](features/opensearch-system-templates/system-templates.md) |
+| Security Lake Data Source | Query Amazon Security Lake tables directly from OpenSearch | [Details](features/sql/sql-security-lake-data-source.md) |
+| System Templates (Experimental) | Pre-defined index templates with optimized settings for logs/metrics | [Details](features/opensearch-system-templates/opensearch-system-templates-system-templates.md) |
 
 ## Improvements
 
 | Area | Description | Report |
 |------|-------------|--------|
-| Header Redesign | Consistent page headers across 7+ Dashboards plugins | [Details](features/multi-plugin/header-redesign.md) |
-| Look & Feel Updates | Smaller, compressed UI components for improved density | [Details](features/multi-plugin/look-and-feel-ui-improvements.md) |
-| Multi-Data Source Support | Extended MDS support to Observability and Integrations | [Details](features/multi-plugin/multi-data-source-support.md) |
+| Header Redesign | Consistent page headers across 7+ Dashboards plugins | [Details](features/multi-plugin/multi-plugin-header-redesign.md) |
+| Look & Feel Updates | Smaller, compressed UI components for improved density | [Details](features/multi-plugin/multi-plugin-look-and-feel-ui-improvements.md) |
+| Multi-Data Source Support | Extended MDS support to Observability and Integrations | [Details](features/multi-plugin/multi-plugin-multi-data-source-support.md) |
 | JWT Multiple Keys | Support for multiple signing keys enabling zero-downtime rotation | [Details](features/security/security-auth-enhancements.md) |
 | Proxy Multi-Auth | Proxy authentication support in multi-auth configurations | [Details](features/security/security-auth-enhancements.md) |
 | k-NN Query Rescore | Two-phase search with rescoring for improved recall | [Details](features/k-nn/k-nn-query-rescore.md) |
-| ML Inference One-to-One | Run model predictions per document in search response processor | [Details](features/ml-commons/ml-inference-processor.md) |
+| ML Inference One-to-One | Run model predictions per document in search response processor | [Details](features/ml-commons/ml-commons-ml-inference-processor.md) |
 | Flow Framework Reprovision | Update pipelines and index settings without full deprovision | [Details](features/flow-framework/flow-framework-reprovision-api.md) |
-| Remote/Multi-Index AD | Anomaly detection across remote clusters and multiple indices | [Details](features/anomaly-detection/remote-multi-index-support.md) |
-| Flint Query Scheduler | Integrated job scheduler for async query management | [Details](features/sql/flint-query-scheduler.md) |
+| Remote/Multi-Index AD | Anomaly detection across remote clusters and multiple indices | [Details](features/anomaly-detection/anomaly-detection-remote-multi-index-support.md) |
+| Flint Query Scheduler | Integrated job scheduler for async query management | [Details](features/sql/sql-flint-query-scheduler.md) |
 | Performance Analyzer Cache Config | New collector for cache configuration metrics | [Details](features/performance-analyzer/performance-analyzer-cache-config.md) |
 
 ## Bug Fixes
@@ -95,10 +95,10 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| System Templates | Application-based configuration templates for logs, metrics, and cloud services | [Details](features/opensearch-system-templates/system-templates.md) |
+| System Templates | Application-based configuration templates for logs, metrics, and cloud services | [Details](features/opensearch-system-templates/opensearch-system-templates-system-templates.md) |
 | Search-Only Replicas | New replica shard type for search isolation (not covered in reports) | - |
 | Approximation Framework | Short-circuit expensive queries by scoring only relevant documents | - |
-| Custom Trace Source | OpenTelemetry-based trace source with redesigned UI | [Details](features/dashboards-observability/trace-analytics.md) |
+| Custom Trace Source | OpenTelemetry-based trace source with redesigned UI | [Details](features/dashboards-observability/dashboards-observability-trace-analytics.md) |
 
 ## Dependencies
 

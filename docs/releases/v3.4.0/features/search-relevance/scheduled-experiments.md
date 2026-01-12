@@ -146,4 +146,4 @@ The cron expression follows standard Unix cron format:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/search-relevance/scheduled-experiments.md)
+- [Full feature documentation](../../../../features/search-relevance/search-relevance-scheduled-experiments.md)

@@ -104,4 +104,4 @@ This release includes 12 PRs across 5 repositories addressing CI/CD and build in
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ci/cd-build-improvements.md)
+- [Full feature documentation](../../../../features/ci/ci-cd-build-improvements.md)

@@ -87,4 +87,4 @@ The GitHub Actions updates provide:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-search-relevance/repository-maintenance.md)
+- [Full feature documentation](../../../features/dashboards-search-relevance/dashboards-search-relevance-repository-maintenance.md)

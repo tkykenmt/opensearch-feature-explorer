@@ -138,4 +138,4 @@ const topNavConfig: TopNavMenuIconData[] = [
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-maps/maps-plugin-ui-updates.md)
+- [Full feature documentation](../../../../features/dashboards-maps/dashboards-maps-maps-plugin-ui-updates.md)

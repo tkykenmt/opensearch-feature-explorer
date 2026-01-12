@@ -92,4 +92,4 @@ Continue with installation? [y/N]y
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/plugin-installation.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-plugin-installation.md)

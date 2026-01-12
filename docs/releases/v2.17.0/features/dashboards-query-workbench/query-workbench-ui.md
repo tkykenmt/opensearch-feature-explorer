@@ -106,4 +106,4 @@ No configuration changes or API modifications are required.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-query-workbench/query-workbench.md)
+- [Full feature documentation](../../../features/dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)

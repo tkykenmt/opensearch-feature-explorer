@@ -116,7 +116,7 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 - **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions
 
 ## Related Features
-- [Security](../security/alerting-comments-security.md)
+- [Security](../security/security-alerting-comments-security.md)
 
 ## References
 

@@ -53,15 +53,15 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| Lucene 10 Upgrade | Upgrade to Apache Lucene 10.1.0 with improved I/O parallelism, search execution, and vector search | [Details](features/opensearch/lucene-10-upgrade.md) |
-| JDK 21 Minimum | JDK 21 becomes the minimum supported Java runtime | [Details](features/opensearch/java-runtime-and-jpms.md) |
-| gRPC Transport | Experimental high-performance gRPC transport with protocol buffers | [Details](features/opensearch/grpc-transport--services.md) |
-| Calcite PPL Engine | Apache Calcite-based query engine with join, lookup, and subsearch commands | [Details](features/sql/calcite-query-engine.md) |
+| Lucene 10 Upgrade | Upgrade to Apache Lucene 10.1.0 with improved I/O parallelism, search execution, and vector search | [Details](features/opensearch/opensearch-lucene-10-upgrade.md) |
+| JDK 21 Minimum | JDK 21 becomes the minimum supported Java runtime | [Details](features/opensearch/opensearch-java-runtime-and-jpms.md) |
+| gRPC Transport | Experimental high-performance gRPC transport with protocol buffers | [Details](features/opensearch/opensearch-grpc-transport--services.md) |
+| Calcite PPL Engine | Apache Calcite-based query engine with join, lookup, and subsearch commands | [Details](features/sql/sql-calcite-query-engine.md) |
 | MCP Support | Model Context Protocol for AI agent integration (client and server) | [Details](features/ml-commons/ml-commons-mcp.md) |
-| Semantic Field | New field type for automatic text-to-vector transformation | [Details](features/neural-search/semantic-field.md) |
-| Data Importer | New Dashboards plugin for importing CSV, JSON, NDJSON files | [Details](features/opensearch-dashboards/data-importer.md) |
+| Semantic Field | New field type for automatic text-to-vector transformation | [Details](features/neural-search/neural-search-semantic-field.md) |
+| Data Importer | New Dashboards plugin for importing CSV, JSON, NDJSON files | [Details](features/opensearch-dashboards/opensearch-dashboards-data-importer.md) |
 | Live Queries API | Real-time monitoring of in-flight search queries | [Details](features/query-insights/query-insights.md) |
-| Remote Vector Index Build | Experimental GPU-accelerated vector index building | [Details](features/k-nn/remote-vector-index-build.md) |
+| Remote Vector Index Build | Experimental GPU-accelerated vector index building | [Details](features/k-nn/k-nn-remote-vector-index-build.md) |
 | Threat Intel Custom Format | Upload IOCs in custom JSON formats with JSONPath | [Details](features/security-analytics/threat-intelligence-custom-format.md) |
 
 ## Improvements
@@ -69,22 +69,22 @@ graph TB
 | Area | Description | Report |
 |------|-------------|--------|
 | Star-Tree Index | Support for terms/range aggregations, boolean queries, unsigned-long | [Details](features/opensearch/star-tree-enhancements.md) |
-| Hybrid Query | Z-score normalization, lower bounds for min-max, filter support, inner hits | [Details](features/neural-search/hybrid-query.md) |
-| Wildcard Field | 3-gram only indexing reduces storage by ~20% | [Details](features/opensearch/wildcard-field.md) |
-| Tiered Caching | Single cache manager, took-time policy for heap tier | [Details](features/opensearch/tiered-caching.md) |
-| k-NN | Node-level circuit breakers, explain API, Lucene-on-Faiss mode | [Details](features/k-nn/vector-search-k-nn.md) |
+| Hybrid Query | Z-score normalization, lower bounds for min-max, filter support, inner hits | [Details](features/neural-search/neural-search-hybrid-query.md) |
+| Wildcard Field | 3-gram only indexing reduces storage by ~20% | [Details](features/opensearch/opensearch-wildcard-field.md) |
+| Tiered Caching | Single cache manager, took-time policy for heap tier | [Details](features/opensearch/opensearch-tiered-caching.md) |
+| k-NN | Node-level circuit breakers, explain API, Lucene-on-Faiss mode | [Details](features/k-nn/k-nn-vector-search-k-nn.md) |
 | Security | Optimized privilege evaluation, CIDR ranges in ignore_hosts | [Details](features/security/security-plugin-changes.md) |
 | Workspace | Saved objects isolation fix, stale workspace error handling | [Details](features/opensearch-dashboards/workspace-improvements.md) |
-| AI Search Flows | Simplified RAG presets, model suggestions, JSON Lines ingestion | [Details](features/dashboards-flow-framework/ai-search-flows.md) |
+| AI Search Flows | Simplified RAG presets, model suggestions, JSON Lines ingestion | [Details](features/dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md) |
 
 ## Breaking Changes
 
 | Change | Migration | Report |
 |--------|-----------|--------|
-| JDK 21 Required | Upgrade to JDK 21+ before upgrading to OpenSearch 3.0.0 | [Details](features/opensearch/java-runtime-and-jpms.md) |
-| Lucene 10 API Changes | Update plugins using Lucene APIs directly | [Details](features/opensearch/lucene-10-upgrade.md) |
-| JPMS Split Package Elimination | Update imports for relocated classes | [Details](features/opensearch/java-runtime-and-jpms.md) |
-| k-NN Settings Removed | `ef_construction`, `m`, `space_type` removed from index settings | [Details](features/k-nn/vector-search-k-nn.md) |
+| JDK 21 Required | Upgrade to JDK 21+ before upgrading to OpenSearch 3.0.0 | [Details](features/opensearch/opensearch-java-runtime-and-jpms.md) |
+| Lucene 10 API Changes | Update plugins using Lucene APIs directly | [Details](features/opensearch/opensearch-lucene-10-upgrade.md) |
+| JPMS Split Package Elimination | Update imports for relocated classes | [Details](features/opensearch/opensearch-java-runtime-and-jpms.md) |
+| k-NN Settings Removed | `ef_construction`, `m`, `space_type` removed from index settings | [Details](features/k-nn/k-nn-vector-search-k-nn.md) |
 | SQL/PPL Changes | SparkSQL removed, opendistro endpoints deprecated, scroll API deprecated | [Details](features/sql/sql-ppl-v3-breaking-changes.md) |
 | Security Changes | Blake2b hash fix, OpenSSL provider removed, whitelist→allowlist | [Details](features/security/security-plugin-changes.md) |
 | ML Commons | CatIndexTool uses `_list/indices` API, batch ingestion REST API deprecated | [Details](features/ml-commons/ml-commons-mcp.md) |
@@ -94,8 +94,8 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| gRPC Transport | High-performance binary transport using protocol buffers | [Details](features/opensearch/grpc-transport--services.md) |
-| Remote Vector Index Build | GPU-accelerated vector index construction | [Details](features/k-nn/remote-vector-index-build.md) |
+| gRPC Transport | High-performance binary transport using protocol buffers | [Details](features/opensearch/opensearch-grpc-transport--services.md) |
+| Remote Vector Index Build | GPU-accelerated vector index construction | [Details](features/k-nn/k-nn-remote-vector-index-build.md) |
 | MCP Protocol | Model Context Protocol for AI agent integration | [Details](features/ml-commons/ml-commons-mcp.md) |
 | Plan-Execute-Reflect Agent | Autonomous multi-step problem-solving agent | [Details](features/ml-commons/ml-commons-mcp.md) |
 | Pull-Based Ingestion | Fetch data directly from Kafka/Kinesis | N/A |

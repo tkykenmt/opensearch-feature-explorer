@@ -208,4 +208,4 @@ POST /_plugins/_ppl
 
 ## Related Feature Report
 
-- [Full Calcite Query Engine documentation](../../../features/sql/calcite-query-engine.md)
+- [Full Calcite Query Engine documentation](../../../features/sql/sql-calcite-query-engine.md)

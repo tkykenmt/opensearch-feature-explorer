@@ -147,4 +147,4 @@ PUT /warm-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/index-settings.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-index-settings.md)

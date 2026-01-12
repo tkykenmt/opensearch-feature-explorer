@@ -100,4 +100,4 @@ No migration required. This is a bug fix that improves the reliability of existi
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/cross-cluster-settings.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-cross-cluster-settings.md)

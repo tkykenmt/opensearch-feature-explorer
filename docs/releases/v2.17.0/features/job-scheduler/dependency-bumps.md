@@ -61,4 +61,4 @@ The Job Scheduler plugin received 4 dependency updates via Dependabot:
 
 ## Related Feature Report
 
-- [Dependency Management](../../../../features/multi-plugin/dependency-bumps.md)
+- [Dependency Management](../../../../features/multi-plugin/multi-plugin-dependency-bumps.md)

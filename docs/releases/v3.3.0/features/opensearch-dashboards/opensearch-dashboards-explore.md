@@ -171,4 +171,4 @@ explorePlugin.queryPanelActionsRegistry.register({
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/explore.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-explore.md)

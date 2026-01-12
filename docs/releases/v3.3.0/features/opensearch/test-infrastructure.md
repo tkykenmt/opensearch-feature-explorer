@@ -150,4 +150,4 @@ integTest {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/code-coverage-gradle.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-code-coverage-gradle.md)

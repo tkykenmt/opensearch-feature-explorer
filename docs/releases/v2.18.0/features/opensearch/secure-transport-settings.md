@@ -97,4 +97,4 @@ With this fix, the setting change is now properly propagated to the transport la
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/secure-transport-settings.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-secure-transport-settings.md)

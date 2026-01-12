@@ -92,4 +92,4 @@ No migration required. Existing threat intel monitors will benefit from these fi
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security-analytics/threat-intelligence.md)
+- [Full feature documentation](../../../features/security-analytics/security-analytics-threat-intelligence.md)

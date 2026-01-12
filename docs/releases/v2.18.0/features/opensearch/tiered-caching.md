@@ -116,4 +116,4 @@ The segmented architecture addresses two key performance issues:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/tiered-caching.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-tiered-caching.md)

@@ -120,4 +120,4 @@ If you have automation scripts that create or modify workload groups, ensure tha
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/workload-management.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-workload-management.md)

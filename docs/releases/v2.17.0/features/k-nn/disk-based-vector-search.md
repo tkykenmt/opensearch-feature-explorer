@@ -190,4 +190,4 @@ POST /_plugins/_knn/models/my-model/_train
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/disk-based-vector-search.md)
+- [Full feature documentation](../../../features/k-nn/k-nn-disk-based-vector-search.md)

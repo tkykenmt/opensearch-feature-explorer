@@ -165,7 +165,7 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 - **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool
 
 ## Related Features
-- [ML Commons](../ml-commons/agentic-memory.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
 - [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
 
 ## References

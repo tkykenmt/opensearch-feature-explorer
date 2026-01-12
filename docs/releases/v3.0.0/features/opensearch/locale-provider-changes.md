@@ -84,4 +84,4 @@ If your application uses locale-specific date parsing with custom formats, you m
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/locale-provider.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-locale-provider.md)

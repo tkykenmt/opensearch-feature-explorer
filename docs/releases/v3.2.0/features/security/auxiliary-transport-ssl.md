@@ -138,4 +138,4 @@ grpcurl -insecure -cert esnode.pem -key esnode-key.pem localhost:9400 list
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/auxiliary-transport-ssl.md)
+- [Full feature documentation](../../../../features/security/security-auxiliary-transport-ssl.md)

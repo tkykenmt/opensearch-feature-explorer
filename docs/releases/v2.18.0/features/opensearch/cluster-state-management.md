@@ -115,4 +115,4 @@ This fix is particularly important for clusters using remote cluster state publi
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/cluster-state-management.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-cluster-state-management.md)

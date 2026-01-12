@@ -60,4 +60,4 @@ The fix corrects the height and spacing of disabled range slider controls to mat
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/input-control-visualization.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-input-control-visualization.md)

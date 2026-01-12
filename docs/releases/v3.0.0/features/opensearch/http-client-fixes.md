@@ -135,4 +135,4 @@ These are bug fixes with no breaking changes. Users upgrading from earlier versi
 
 ## Related Feature Report
 
-- [Full HTTP Client documentation](../../../features/opensearch/http-client.md)
+- [Full HTTP Client documentation](../../../features/opensearch/opensearch-http-client.md)

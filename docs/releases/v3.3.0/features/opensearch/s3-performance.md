@@ -145,4 +145,4 @@ PUT _snapshot/my-s3-repo
 
 ## Related Feature Report
 
-- [Full S3 Repository documentation](../../../../features/opensearch/s3-repository.md)
+- [Full S3 Repository documentation](../../../../features/opensearch/opensearch-s3-repository.md)

@@ -132,4 +132,4 @@ PUT /_ingest/pipeline/my-pipeline
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/geospatial/ip2geo.md)
+- [Full feature documentation](../../../features/geospatial/geospatial-ip2geo.md)

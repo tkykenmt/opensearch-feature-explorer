@@ -103,7 +103,7 @@ After enabling, access the ML Commons Dashboards through:
 - **v2.9.0**: Initial introduction of ML Commons Dashboards
 
 ## Related Features
-- [ML Commons](../ml-commons/agentic-memory.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
 
 ## References
 

@@ -133,8 +133,8 @@ POST _plugins/_sql/close
 - **v2.18.0** (2024-10-29): Fixed pagination with `pretty` parameter; Fixed PIT refactor issues (join query NPE, incorrect cursor generation)
 
 ## Related Features
-- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

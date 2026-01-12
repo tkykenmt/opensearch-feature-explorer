@@ -116,4 +116,4 @@ public Builder toBuilder() {
 
 ## Related Feature Report
 
-- [Segment Warmer](../../../../features/opensearch/segment-warmer.md)
+- [Segment Warmer](../../../../features/opensearch/opensearch-segment-warmer.md)

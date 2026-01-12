@@ -154,4 +154,4 @@ All optimizations are enabled by default and require no configuration changes. T
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/aggregation-optimizations.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-aggregation-optimizations.md)

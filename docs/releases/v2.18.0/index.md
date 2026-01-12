@@ -18,56 +18,56 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### OpenSearch
 
-- [Lucene 9.12.0 Upgrade](features/opensearch/lucene-upgrade.md) - Upgrade Apache Lucene from 9.11.1 to 9.12.0 with new postings format, JDK 23 support, and performance optimizations
-- [List APIs (Paginated)](features/opensearch/list-apis-paginated.md) - New `_list/indices` and `_list/shards` APIs with pagination support, plus cat API response limits
-- [Cluster Stats API](features/opensearch/cluster-stats-api.md) - URI path filtering support for selective metric retrieval
+- [Lucene 9.12.0 Upgrade](features/opensearch/opensearch-lucene-upgrade.md) - Upgrade Apache Lucene from 9.11.1 to 9.12.0 with new postings format, JDK 23 support, and performance optimizations
+- [List APIs (Paginated)](features/opensearch/opensearch-list-apis-paginated.md) - New `_list/indices` and `_list/shards` APIs with pagination support, plus cat API response limits
+- [Cluster Stats API](features/opensearch/opensearch-cluster-stats-api.md) - URI path filtering support for selective metric retrieval
 - [OpenSearch Core Dependencies](features/opensearch/opensearch-core-dependencies.md) - 26 dependency updates including Lucene 9.12.0, Netty 4.1.114, gRPC 1.68.0, Protobuf 3.25.5
-- [Cluster State Management](features/opensearch/cluster-state-management.md) - Fix voting configuration mismatch by updating lastSeenClusterState in commit phase
+- [Cluster State Management](features/opensearch/opensearch-cluster-state-management.md) - Fix voting configuration mismatch by updating lastSeenClusterState in commit phase
 - [Remote Cluster State](features/opensearch/remote-cluster-state.md) - Fallback to remote cluster state on term-version check mismatch for improved performance in large clusters
-- [Dynamic Settings](features/opensearch/dynamic-settings.md) - Make multiple cluster settings dynamic for tuning on larger clusters
+- [Dynamic Settings](features/opensearch/opensearch-dynamic-settings.md) - Make multiple cluster settings dynamic for tuning on larger clusters
 - [Wildcard Query Fixes](features/opensearch/wildcard-query-fixes.md) - Fix escaped wildcard character handling and case-insensitive query on wildcard field
-- [Flat Object Field](features/opensearch/flat-object-field.md) - Fix infinite loop when flat_object field contains invalid token types
-- [Flat Object Query Optimization](features/opensearch/flat-object-query-optimization.md) - Use IndexOrDocValuesQuery to optimize query performance, enable wildcard queries
-- [Index Settings](features/opensearch/index-settings.md) - Fix default value handling when setting index.number_of_replicas and index.number_of_routing_shards to null
-- [Multi-Search API](features/opensearch/multi-search-api.md) - Fix multi-search with template doesn't return status code
-- [Node Join/Leave](features/opensearch/node-join-leave.md) - Fix race condition in node-join and node-left loop
-- [Search Backpressure](features/opensearch/search-backpressure.md) - Add validation for cancellation settings to prevent cluster crashes
-- [Search Pipeline](features/opensearch/search-pipeline.md) - Add support for msearch API to pass search pipeline name
-- [Star Tree Index](features/opensearch/star-tree-index.md) - Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
-- [Tiered Caching](features/opensearch/tiered-caching.md) - Segmented cache architecture for improved concurrency and performance
-- [Streaming Indexing](features/opensearch/streaming-indexing.md) - Bug fixes for streaming bulk request hangs and newline termination errors
-- [Replication](features/opensearch/replication.md) - Fix array hashCode calculation in ResyncReplicationRequest
-- [Task Management](features/opensearch/task-management.md) - Fix missing fields in task index mapping for proper task result storage
+- [Flat Object Field](features/opensearch/opensearch-flat-object-field.md) - Fix infinite loop when flat_object field contains invalid token types
+- [Flat Object Query Optimization](features/opensearch/flat-object-opensearch-query-optimization.md) - Use IndexOrDocValuesQuery to optimize query performance, enable wildcard queries
+- [Index Settings](features/opensearch/opensearch-index-settings.md) - Fix default value handling when setting index.number_of_replicas and index.number_of_routing_shards to null
+- [Multi-Search API](features/opensearch/opensearch-multi-search-api.md) - Fix multi-search with template doesn't return status code
+- [Node Join/Leave](features/opensearch/opensearch-node-join-leave.md) - Fix race condition in node-join and node-left loop
+- [Search Backpressure](features/opensearch/opensearch-search-backpressure.md) - Add validation for cancellation settings to prevent cluster crashes
+- [Search Pipeline](features/opensearch/opensearch-search-pipeline.md) - Add support for msearch API to pass search pipeline name
+- [Star Tree Index](features/opensearch/opensearch-star-tree-index.md) - Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
+- [Tiered Caching](features/opensearch/opensearch-tiered-caching.md) - Segmented cache architecture for improved concurrency and performance
+- [Streaming Indexing](features/opensearch/opensearch-streaming-indexing.md) - Bug fixes for streaming bulk request hangs and newline termination errors
+- [Replication](features/opensearch/opensearch-replication.md) - Fix array hashCode calculation in ResyncReplicationRequest
+- [Task Management](features/opensearch/opensearch-task-management.md) - Fix missing fields in task index mapping for proper task result storage
 - [Test Fixes](features/opensearch/test-fixes.md) - Fix flaky test in ApproximatePointRangeQueryTests by adjusting totalHits assertion logic
-- [Nested Aggregations](features/opensearch/nested-aggregations.md) - Fix infinite loop in nested aggregations with deep-level nested objects
-- [Phone Analyzer](features/opensearch/phone-analyzer.md) - New `phone` and `phone-search` analyzers for phone number indexing and search
-- [Code Cleanup](features/opensearch/code-cleanup.md) - Query approximation simplification, Stream API optimization, typo fix
-- [Search Request Stats](features/opensearch/search-request-stats.md) - Enable coordinator search.request_stats_enabled by default
-- [Secure Transport Settings](features/opensearch/secure-transport-settings.md) - Add dynamic SecureTransportParameters to fix SSL dual mode regression
-- [Identity Feature Flag Removal](features/opensearch/identity-feature-flag-removal.md) - Remove experimental identity feature flag, move authentication to plugins
-- [Docker Compose v2 Support](features/opensearch/docker-compose-v2-support.md) - Add support for Docker Compose v2 in TestFixturesPlugin for modern Docker installations
-- [Snapshot Restore Enhancements](features/opensearch/snapshot-restore-enhancements.md) - Alias renaming during restore and clone operation optimization for doc-rep clusters
-- [Remote Store Metrics](features/opensearch/remote-store-metrics.md) - New REMOTE_STORE metric in Node Stats API for monitoring pinned timestamp fetch operations
-- [S3 Repository](features/opensearch/s3-repository.md) - Standard retry mode for S3 clients and SLF4J warning fix
+- [Nested Aggregations](features/opensearch/opensearch-nested-aggregations.md) - Fix infinite loop in nested aggregations with deep-level nested objects
+- [Phone Analyzer](features/opensearch/opensearch-phone-analyzer.md) - New `phone` and `phone-search` analyzers for phone number indexing and search
+- [Code Cleanup](features/opensearch/opensearch-code-cleanup.md) - Query approximation simplification, Stream API optimization, typo fix
+- [Search Request Stats](features/opensearch/opensearch-search-request-stats.md) - Enable coordinator search.request_stats_enabled by default
+- [Secure Transport Settings](features/opensearch/opensearch-secure-transport-settings.md) - Add dynamic SecureTransportParameters to fix SSL dual mode regression
+- [Identity Feature Flag Removal](features/opensearch/opensearch-identity-feature-flag-removal.md) - Remove experimental identity feature flag, move authentication to plugins
+- [Docker Compose v2 Support](features/opensearch/opensearch-docker-compose-v2-support.md) - Add support for Docker Compose v2 in TestFixturesPlugin for modern Docker installations
+- [Snapshot Restore Enhancements](features/opensearch/opensearch-snapshot-restore-enhancements.md) - Alias renaming during restore and clone operation optimization for doc-rep clusters
+- [Remote Store Metrics](features/opensearch/opensearch-remote-store-metrics.md) - New REMOTE_STORE metric in Node Stats API for monitoring pinned timestamp fetch operations
+- [S3 Repository](features/opensearch/opensearch-s3-repository.md) - Standard retry mode for S3 clients and SLF4J warning fix
 - [S3 Async Deletion](features/opensearch/s3-async-deletion.md) - Async deletion support for S3 repository using S3 async client
-- [Dynamic Threadpool Resize](features/opensearch/dynamic-threadpool-resize.md) - Runtime thread pool size adjustment via cluster settings API
-- [Async Shard Fetch Metrics](features/opensearch/async-shard-fetch-metrics.md) - OTel counter metrics for async shard fetch success and failure tracking
-- [Search API Enhancements](features/opensearch/search-api-enhancements.md) - WithFieldName interface for aggregation/sort builders and successfulSearchShardIndices in SearchRequestContext
-- [Offline Nodes](features/opensearch/offline-nodes.md) - New offline-tasks library with core abstractions for running background tasks on dedicated offline nodes
-- [Workload Management](features/opensearch/workload-management.md) - Query sandboxing with tenant-level admission control, resource limits (CPU/memory), QueryGroup Stats API, and persistence
+- [Dynamic Threadpool Resize](features/opensearch/opensearch-dynamic-threadpool-resize.md) - Runtime thread pool size adjustment via cluster settings API
+- [Async Shard Fetch Metrics](features/opensearch/opensearch-async-shard-fetch-metrics.md) - OTel counter metrics for async shard fetch success and failure tracking
+- [Search API Enhancements](features/opensearch/opensearch-search-api-enhancements.md) - WithFieldName interface for aggregation/sort builders and successfulSearchShardIndices in SearchRequestContext
+- [Offline Nodes](features/opensearch/opensearch-offline-nodes.md) - New offline-tasks library with core abstractions for running background tasks on dedicated offline nodes
+- [Workload Management](features/opensearch/opensearch-workload-management.md) - Query sandboxing with tenant-level admission control, resource limits (CPU/memory), QueryGroup Stats API, and persistence
 
 ### OpenSearch Dashboards
 
-- [Dev Tools Modal](features/opensearch-dashboards/dev-tools.md) - Dev Tools console rendered as a modal overlay for improved workflow
+- [Dev Tools Modal](features/opensearch-dashboards/opensearch-dashboards-dev-tools.md) - Dev Tools console rendered as a modal overlay for improved workflow
 - [Navigation Updates](features/opensearch-dashboards/navigation-updates.md) - Flattened navigation, persistent state, small screen support, border style updates
-- [Content Management](features/opensearch-dashboards/content-management.md) - Add Page API to allow remove section
-- [Discover](features/opensearch-dashboards/discover.md) - Data summary panel, updated appearance, cache management, and bug fixes
+- [Content Management](features/opensearch-dashboards/opensearch-dashboards-content-management.md) - Add Page API to allow remove section
+- [Discover](features/opensearch-dashboards/opensearch-dashboards-discover.md) - Data summary panel, updated appearance, cache management, and bug fixes
 - [CI/CD & Build Improvements](features/opensearch-dashboards/cicd-build-dashboards.md) - Switch OSD Optimizer to content-based hashing for CI compatibility
-- [Input Control Visualization](features/opensearch-dashboards/input-control-visualization.md) - Fix disabled ValidatedDualRange component sizing
-- [Data Source Permissions](features/opensearch-dashboards/data-source-permissions.md) - Fix missing functions in data source permission saved object wrapper
-- [Dynamic Config](features/opensearch-dashboards/dynamic-config.md) - Bugfixes for config saved objects, global config discovery, and index/alias validation
-- [i18n & Localization](features/opensearch-dashboards/i18n-localization.md) - i18n validation workflows, precommit hook, translation fixes, language selection fix
-- [Data Connections](features/opensearch-dashboards/data-connections.md) - Dataset picker support for data connections with multi-select table, pagination, and search
+- [Input Control Visualization](features/opensearch-dashboards/opensearch-dashboards-input-control-visualization.md) - Fix disabled ValidatedDualRange component sizing
+- [Data Source Permissions](features/opensearch-dashboards/opensearch-dashboards-data-source-permissions.md) - Fix missing functions in data source permission saved object wrapper
+- [Dynamic Config](features/opensearch-dashboards/opensearch-dashboards-dynamic-config.md) - Bugfixes for config saved objects, global config discovery, and index/alias validation
+- [i18n & Localization](features/opensearch-dashboards/opensearch-dashboards-i18n-localization.md) - i18n validation workflows, precommit hook, translation fixes, language selection fix
+- [Data Connections](features/opensearch-dashboards/opensearch-dashboards-data-connections.md) - Dataset picker support for data connections with multi-select table, pagination, and search
 - [Data Connections Bugfixes](features/opensearch-dashboards/data-connections-bugfixes.md) - MDS endpoint unification, tabs navigation, type display, auto-complete MDS support
 - [Dependency Updates](features/opensearch-dashboards/dependency-updates-dashboards.md) - JSON11 upgrade for UTF-8 safety, chokidar bump
 - [Discover Bugfixes (2)](features/opensearch-dashboards/discover-bugfixes-2.md) - S3 fields support, deleted index pattern handling, time field display, saved query loading
@@ -75,27 +75,27 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [OUI Updates](features/opensearch-dashboards/oui-updates.md) - Updates to OpenSearch UI component library (1.13 → 1.15)
 - [Query Enhancements (2)](features/opensearch-dashboards/query-enhancements-2.md) - Async polling, error handling, language compatibility, saved query fixes
 - [Query Enhancements Bugfixes](features/opensearch-dashboards/query-enhancements-bugfixes.md) - Search strategy extensibility, recent query fix, module exports, keyboard shortcuts
-- [Sample Data](features/opensearch-dashboards/sample-data.md) - Updated UI for new UX, OTEL sample data support for traces, metrics, and logs
+- [Sample Data](features/opensearch-dashboards/opensearch-dashboards-sample-data.md) - Updated UI for new UX, OTEL sample data support for traces, metrics, and logs
 - [Sample Data Bugfixes](features/opensearch-dashboards/sample-data-bugfixes.md) - Update OTEL sample data description with compatible OS version
-- [Saved Query UX](features/opensearch-dashboards/saved-query-ux.md) - New flyout-based UI for saved queries, sample queries on no results page
+- [Saved Query UX](features/opensearch-dashboards/opensearch-dashboards-saved-query-ux.md) - New flyout-based UI for saved queries, sample queries on no results page
 - [TSVB Visualization](features/opensearch-dashboards/tsvb-visualization-bugfixes.md) - Hidden axis option, per-axis scale setting, compressed input fields
 - [UI/UX Bugfixes](features/opensearch-dashboards/ui-ux-bugfixes.md) - Sidebar tooltips, initial page fixes, overlay positioning, Chrome 129 workaround, OUI breakpoints, HeaderControl rendering
 - [UI/UX Bugfixes (2)](features/opensearch-dashboards/ui-ux-bugfixes-2.md) - Responsive design fixes for home page, page header, recent menu, and getting started cards
 - [UI/UX Improvements](features/opensearch-dashboards/ui-ux-improvements.md) - Page title semantic improvements (h1 + xs size) for accessibility
-- [Workspace](features/opensearch-dashboards/workspace.md) - Workspace-level UI settings, collaborator management, data connection integration, global search bar, ACL auditor
+- [Workspace](features/opensearch-dashboards/opensearch-dashboards-workspace.md) - Workspace-level UI settings, collaborator management, data connection integration, global search bar, ACL auditor
 - [Workspace Bugfixes](features/opensearch-dashboards/workspace-bugfixes.md) - 13 bug fixes for workspace UI/UX, page crashes, permissions, and navigation
-- [Dashboards Maintenance](features/opensearch-dashboards/dashboards-maintenance.md) - Version bump post 2.17, enhanced search API cleanup
-- [Query Editor](features/opensearch-dashboards/query-editor.md) - Footer bar for single-line editor, extension ordering fix, PPL autocomplete improvements
-- [Async Query](features/opensearch-dashboards/async-query.md) - Frontend polling for async search, async PPL support for S3 datasets
-- [Dashboards Improvements](features/opensearch-dashboards/dashboards-improvements.md) - Loading indicator with time counter for query results
+- [Dashboards Maintenance](features/opensearch-dashboards/opensearch-dashboards-dashboards-maintenance.md) - Version bump post 2.17, enhanced search API cleanup
+- [Query Editor](features/opensearch-dashboards/opensearch-dashboards-query-editor.md) - Footer bar for single-line editor, extension ordering fix, PPL autocomplete improvements
+- [Async Query](features/opensearch-dashboards/opensearch-dashboards-async-query.md) - Frontend polling for async search, async PPL support for S3 datasets
+- [Dashboards Improvements](features/opensearch-dashboards/opensearch-dashboards-dashboards-improvements.md) - Loading indicator with time counter for query results
 - [MDS Integration Support](features/opensearch-dashboards/mds-integration-support.md) - Multi Data Source support for Integration feature
-- [Experimental Features](features/opensearch-dashboards/experimental-features.md) - User personal settings with scoped uiSettings and User Settings page
+- [Experimental Features](features/opensearch-dashboards/opensearch-dashboards-experimental-features.md) - User personal settings with scoped uiSettings and User Settings page
 - [Security CVE Fixes](features/opensearch-dashboards/security-cve-fixes.md) - Security updates for dns-sync, axios, path-to-regexp, dompurify, elliptic, micromatch
 
 ### Multi-Plugin
 
-- [Dependency Updates](features/multi-plugin/dependency-updates.md) - 19 dependency updates including CVE-2024-7254 fix, Gradle 8.10.2, upload-artifact v4
-- [Search Autocomplete](features/multi-plugin/search-autocomplete.md) - Fix search_as_you_type multi-fields support and enhanced Dashboards autocomplete UX
+- [Dependency Updates](features/multi-plugin/opensearch-dashboards-dependency-updates.md) - 19 dependency updates including CVE-2024-7254 fix, Gradle 8.10.2, upload-artifact v4
+- [Search Autocomplete](features/multi-plugin/multi-plugin-search-autocomplete.md) - Fix search_as_you_type multi-fields support and enhanced Dashboards autocomplete UX
 - [Release Notes](features/multi-plugin/release-notes.md) - v2.18.0 release notes added across alerting, common-utils, notifications, query-insights, and security repositories
 
 ### Flow Framework
@@ -103,7 +103,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 - [Flow Framework](features/flow-framework/flow-framework.md) - Add optional config field to tool step, incremental resource removal during deprovisioning
 - [Flow Framework Workflow State](features/flow-framework/flow-framework-workflow-state.md) - Remove Painless scripts for workflow state updates, implement optimistic locking
 - [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) - Fix template update location in ReprovisionWorkflowTransportAction, improved logger statements
-- [Query Assist Data Summary Agent](features/flow-framework/query-assist.md) - Add sample template for Query Assist Data Summary Agent using Claude on Bedrock
+- [Query Assist Data Summary Agent](features/flow-framework/ml-commons-query-assist.md) - Add sample template for Query Assist Data Summary Agent using Claude on Bedrock
 
 ### Alerting
 
@@ -112,7 +112,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Alerting Dashboards Plugin
 
-- [Alerting Summary & Insights](features/alerting-dashboards-plugin/alerting-summary-insights.md) - AI-powered alert insights with context-aware analysis, LLM-generated summaries, and log pattern detection for visual editor monitors
+- [Alerting Summary & Insights](features/alerting-dashboards-plugin/alerting-dashboards-plugin-alerting-summary-insights.md) - AI-powered alert insights with context-aware analysis, LLM-generated summaries, and log pattern detection for visual editor monitors
 
 ### Common Utils
 
@@ -137,7 +137,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Neural Search
 
 - [Neural Search Reranking](features/neural-search/neural-search-reranking.md) - ByFieldRerankProcessor for field-based reranking and hybrid query rescorer support
-- [Neural Search Text Chunking](features/neural-search/neural-search-text-chunking.md) - Add `ignore_missing` parameter to text chunking processors for flexible handling of optional fields
+- [Neural Search Text Chunking](features/neural-search/neural-search-neural-search-text-chunking.md) - Add `ignore_missing` parameter to text chunking processors for flexible handling of optional fields
 - [Neural Search Bugfixes](features/neural-search/neural-search-bugfixes.md) - Fixed incorrect document order for nested aggregations in hybrid query
 
 ### ML Commons
@@ -184,7 +184,7 @@ This page contains feature reports for OpenSearch v2.18.0.
 ### Dashboards Assistant
 
 - [Assistant Capabilities](features/dashboards-assistant/assistant-capabilities.md) - Capability-based UI rendering control, new API to check agent config existence, agentName renamed to agentConfigName
-- [Text to Visualization (t2viz)](features/dashboards-assistant/text-to-visualization.md) - AI-powered visualization generation from natural language queries using LLM agents
+- [Text to Visualization (t2viz)](features/dashboards-assistant/dashboards-assistant-text-to-visualization.md) - AI-powered visualization generation from natural language queries using LLM agents
 
 ### Dashboards Maps
 
@@ -225,12 +225,12 @@ This page contains feature reports for OpenSearch v2.18.0.
 
 ### Skills
 
-- [Skills Plugin Dependencies](features/skills/skills-plugin-dependencies.md) - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes
+- [Skills Plugin Dependencies](features/skills/skills-opensearch-plugin-dependencies.md) - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes
 - [ML Skills & Tools](features/skills/ml-skills-tools.md) - New LogPatternTool for log pattern analysis, customizable prompt support for CreateAnomalyDetectorTool
 
 ### CI/CD
 
-- [CI/CD & Build Improvements](features/ci/cd-build-improvements.md) - JDK-21 baseline updates, CI workflow fixes, test security improvements, backport process enhancements across index-management, ml-commons, notifications, and observability
+- [CI/CD & Build Improvements](features/ci/ci-cd-build-improvements.md) - JDK-21 baseline updates, CI workflow fixes, test security improvements, backport process enhancements across index-management, ml-commons, notifications, and observability
 
 ### Maintenance
 

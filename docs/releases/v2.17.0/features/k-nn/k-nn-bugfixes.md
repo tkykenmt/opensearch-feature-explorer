@@ -138,4 +138,4 @@ Parallelized `make` operations to reduce build time when building the plugin or 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/vector-search-k-nn.md)
+- [Full feature documentation](../../../features/k-nn/k-nn-vector-search-k-nn.md)

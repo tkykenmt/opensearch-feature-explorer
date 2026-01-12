@@ -142,4 +142,4 @@ The `MLConfig` object contains:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-config-api.md)
+- [Full feature documentation](../../../../features/ml-commons/ml-commons-ml-config-api.md)

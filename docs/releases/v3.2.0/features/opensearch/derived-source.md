@@ -124,4 +124,4 @@ PUT sample-index/_settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/derived-source.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-derived-source.md)

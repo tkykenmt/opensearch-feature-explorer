@@ -134,4 +134,4 @@ fetchNotebooks = () => {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-observability/observability-notebooks.md)
+- [Full feature documentation](../../../../features/dashboards-observability/dashboards-observability-observability-notebooks.md)

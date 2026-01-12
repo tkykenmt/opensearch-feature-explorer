@@ -110,4 +110,4 @@ source=accounts | where NOT state = 'CA'
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/ppl-documentation.md)
+- [Full feature documentation](../../../../features/sql/sql-ppl-documentation.md)

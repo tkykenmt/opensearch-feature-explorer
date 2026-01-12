@@ -110,4 +110,4 @@ public UnaryOperator<RestHandler> getRestHandlerWrapper(
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/actionplugin-rest-handler-wrapper.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-actionplugin-rest-handler-wrapper.md)

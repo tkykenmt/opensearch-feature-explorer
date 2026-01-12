@@ -100,4 +100,4 @@ No migration required. These are bug fixes that improve existing functionality. 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/streaming-indexing.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-streaming-indexing.md)

@@ -104,7 +104,7 @@ dependencies {
 - **v3.3.0** (2026-01-11): Fixed dependency version conflicts for integration tests
 
 ## Related Features
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

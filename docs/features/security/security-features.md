@@ -131,7 +131,7 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 - **v2.18.0** (2024-10-29): Bug fixes for system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

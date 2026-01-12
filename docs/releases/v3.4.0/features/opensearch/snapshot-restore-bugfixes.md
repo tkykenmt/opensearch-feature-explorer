@@ -125,4 +125,4 @@ No migration required. This is a bugfix that improves reliability of searchable 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/snapshot-restore-enhancements.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-snapshot-restore-enhancements.md)

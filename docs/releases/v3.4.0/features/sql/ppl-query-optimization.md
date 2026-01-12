@@ -201,4 +201,4 @@ explain format=yaml source=accounts | where age > 30
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/ppl-query-optimization.md)
+- [Full feature documentation](../../../../features/sql/ppl-opensearch-query-optimization.md)

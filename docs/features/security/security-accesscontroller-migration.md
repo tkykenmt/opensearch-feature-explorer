@@ -169,7 +169,7 @@ public static Connection getConnection(final Settings settings, final Path confi
 - **v3.4.0** (2026-01-11): Complete migration of security plugin from `java.security.AccessController` to `org.opensearch.secure_sm.AccessController`
 
 ## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

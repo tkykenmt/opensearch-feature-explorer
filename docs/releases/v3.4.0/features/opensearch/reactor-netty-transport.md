@@ -83,4 +83,4 @@ No migration required. This is a bug fix that improves resource management witho
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/reactor-netty-transport.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-reactor-netty-transport.md)

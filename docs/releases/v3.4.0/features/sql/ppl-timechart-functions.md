@@ -169,4 +169,4 @@ source=high_frequency_logs
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/ppl-timechart-command.md)
+- [Full feature documentation](../../../features/sql/sql-ppl-timechart-command.md)

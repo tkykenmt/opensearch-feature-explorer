@@ -208,4 +208,4 @@ PUT /my-index/_settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/pull-based-ingestion.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-pull-based-ingestion.md)

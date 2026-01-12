@@ -136,4 +136,4 @@ this.servers = ConfigurationUtils.readStringProperty(params, "bootstrap_servers"
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/configuration-utilities.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-configuration-utilities.md)

@@ -130,4 +130,4 @@ No migration required. The fix is backward compatible and automatically applies 
 
 ## Related Feature Report
 
-- [Streaming Indexing](../../../features/opensearch/streaming-indexing.md)
+- [Streaming Indexing](../../../features/opensearch/opensearch-streaming-indexing.md)

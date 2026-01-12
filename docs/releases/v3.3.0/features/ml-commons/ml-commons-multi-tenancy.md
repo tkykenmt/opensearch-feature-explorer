@@ -119,4 +119,4 @@ The tenant ID is automatically propagated from the model's tenant context to the
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-multi-tenancy.md)
+- [Full feature documentation](../../../../features/ml-commons/ml-commons-security-multi-tenancy.md)

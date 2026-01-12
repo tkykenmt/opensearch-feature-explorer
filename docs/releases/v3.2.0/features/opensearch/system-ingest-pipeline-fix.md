@@ -95,4 +95,4 @@ Without this fix, documents indexed through non-ingest nodes would not have syst
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/system-ingest-pipeline.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-system-ingest-pipeline.md)

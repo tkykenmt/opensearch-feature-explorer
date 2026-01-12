@@ -175,4 +175,4 @@ The response highlights both "running" (matched via stemming in `content.english
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/unified-highlighter.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-unified-highlighter.md)

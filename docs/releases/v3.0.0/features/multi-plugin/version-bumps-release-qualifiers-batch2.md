@@ -100,4 +100,4 @@ version = '3.1.0-SNAPSHOT'
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/version-bumps-release-notes.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-version-bumps-release-notes.md)

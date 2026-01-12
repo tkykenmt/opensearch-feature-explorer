@@ -100,4 +100,4 @@ If you were planning to use the events-correlation-engine plugin:
 
 ## Related Feature Report
 
-- [Correlation Engine (Security Analytics)](../../../features/security-analytics/correlation-engine.md)
+- [Correlation Engine (Security Analytics)](../../../features/security-analytics/security-analytics-correlation-engine.md)

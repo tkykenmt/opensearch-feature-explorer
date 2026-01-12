@@ -107,4 +107,4 @@ When switching from an index pattern (supporting DQL) to an S3 connection (suppo
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/query-enhancements.md)
+- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-query-enhancements.md)

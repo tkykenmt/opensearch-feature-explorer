@@ -92,4 +92,4 @@ No migration required. The changes are purely UI improvements that take effect i
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-dashboards-plugin/security-dashboards-role-management.md)
+- [Full feature documentation](../../../../features/security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)

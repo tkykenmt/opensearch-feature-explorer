@@ -136,10 +136,10 @@ When `skip_validating_missing_parameters` is `true`, the `${parameters.role}` pl
 - **v2.17.0** (2024-09-17): Added `skip_validating_missing_parameters` parameter to allow bypassing payload validation for unfilled parameter placeholders
 
 ## Related Features
-- [Neural Search](../neural-search/agentic-search.md)
+- [Neural Search](../neural-search/neural-search-agentic-search.md)
 - [Flow Framework](../flow-framework/flow-framework.md)
 - [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-plugin-dependencies.md)
+- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

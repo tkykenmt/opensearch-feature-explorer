@@ -96,4 +96,4 @@ The previous approach of manually copying all fields was:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/engine-config.md)
+- [Full feature documentation](../../../../features/opensearch/opensearch-engine-config.md)

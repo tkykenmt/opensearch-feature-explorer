@@ -120,4 +120,4 @@ Plugin developers should:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/look-and-feel-ui-improvements.md)
+- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-look-and-feel-ui-improvements.md)

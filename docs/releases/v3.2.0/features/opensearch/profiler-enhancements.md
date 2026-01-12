@@ -111,4 +111,4 @@ Timing types that were never invoked now correctly show `0` instead of large inc
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/profiler.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-profiler.md)

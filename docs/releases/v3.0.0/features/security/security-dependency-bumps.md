@@ -75,4 +75,4 @@ Both OpenSAML versions (5.1.4 and Shibboleth 9.1.4) include maintenance updates 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-plugin-dependencies.md)
+- [Full feature documentation](../../../features/security/security-opensearch-plugin-dependencies.md)

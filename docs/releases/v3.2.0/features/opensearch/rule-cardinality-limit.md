@@ -114,4 +114,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/workload-management.md)
+- [Full feature documentation](../../../features/opensearch/opensearch-workload-management.md)

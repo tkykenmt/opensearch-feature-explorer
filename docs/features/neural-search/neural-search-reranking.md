@@ -195,9 +195,9 @@ PUT /_search/pipeline/cohere_rerank_pipeline
 - **v2.12.0** (2024-02-20): Initial rerank processor implementation with ML-based reranking
 
 ## Related Features
-- [ML Commons](../ml-commons/agentic-memory.md)
-- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/ci-tests.md)
+- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
+- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

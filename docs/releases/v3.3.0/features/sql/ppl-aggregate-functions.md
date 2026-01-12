@@ -160,4 +160,4 @@ source=transactions | eventstats earliest(amount), latest(amount) by account_id
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/ppl-aggregate-functions.md)
+- [Full feature documentation](../../../features/sql/sql-ppl-aggregate-functions.md)

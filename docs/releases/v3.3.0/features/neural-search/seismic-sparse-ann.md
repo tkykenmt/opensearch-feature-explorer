@@ -226,4 +226,4 @@ GET sparse-vector-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/seismic-sparse-ann.md)
+- [Full feature documentation](../../../features/neural-search/neural-search-seismic-sparse-ann.md)
