@@ -13,6 +13,7 @@
 
 ## opensearch
 
+- [Arrow Flight RPC](features/opensearch/arrow-flight-rpc.md)
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
 - [Cluster Management](features/opensearch/cluster-management.md)
 - [Rule-Based Auto-Tagging](features/opensearch/rule-based-auto-tagging.md)

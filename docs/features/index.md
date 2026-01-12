@@ -22,6 +22,7 @@
 - [Aggregation Optimizations](opensearch/aggregation-optimizations.md)
 - [Alias Write Index Policy](opensearch/alias-write-index-policy.md)
 - [Approximation Framework](opensearch/approximation-framework.md)
+- [Arrow Flight RPC](opensearch/arrow-flight-rpc.md)
 - [BooleanQuery Rewrite Optimizations](opensearch/booleanquery-rewrite-optimizations.md)
 - [Aggregation Task Cancellation](opensearch/aggregation-task-cancellation.md)
 - [Async Shard Batch Fetch](opensearch/async-shard-batch-fetch.md)
