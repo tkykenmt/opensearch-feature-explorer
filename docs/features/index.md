@@ -174,6 +174,7 @@
 - [Secure Transport Settings](opensearch/secure-transport-settings.md)
 - [Security Manager Replacement](opensearch/security-manager-replacement.md)
 - [Segment Replication](opensearch/segment-replication.md)
+- [Systemd Security Configurations](opensearch/systemd-security-configurations.md)
 - [Segment Warmer](opensearch/segment-warmer.md)
 - [Semantic Version Field Type](opensearch/semantic-version-field-type.md)
 - [Settings Management](opensearch/settings-management.md)
