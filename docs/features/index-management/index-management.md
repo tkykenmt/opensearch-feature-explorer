@@ -325,7 +325,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 | v3.2.0 | [#1440](https://github.com/opensearch-project/index-management/pull/1440) | Support for no_alias and min_state_age in ISM Transitions | [#1439](https://github.com/opensearch-project/index-management/issues/1439) |
 | v3.2.0 | [#1444](https://github.com/opensearch-project/index-management/pull/1444) | Add history index pattern to System Index descriptors |   |
 | v3.2.0 | [#1442](https://github.com/opensearch-project/index-management/pull/1442) | Fix Integration test and lint errors | [#1441](https://github.com/opensearch-project/index-management/issues/1441) |
-| v3.1.0 | [#1413](https://github.com/opensearch-project/index-management/pull/1413) | Removed unnecessary user notifications for version conflict exception |   |
+| v3.1.0 | [#1413](https://github.com/opensearch-project/index-management/pull/1413) | Removed unnecessary user notifications for version conflict exception | [#1371](https://github.com/opensearch-project/index-management/issues/1371) |
 | v3.0.0 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | Adding unfollow action in ISM for CCR |   |
 | v3.0.0 | [#1377](https://github.com/opensearch-project/index-management/pull/1377) | Target Index Settings for rollup | [#1376](https://github.com/opensearch-project/index-management/issues/1376) |
 | v3.0.0 | [#1388](https://github.com/opensearch-project/index-management/pull/1388) | CVE fix: logback-core upgrade |   |

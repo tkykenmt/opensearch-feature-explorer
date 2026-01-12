@@ -185,7 +185,7 @@ curl -X PUT "https://localhost:9200/_cluster/settings" \
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#5337](https://github.com/opensearch-project/security/pull/5337) | Add flush cache endpoint for individual user |   |
+| v3.1.0 | [#5337](https://github.com/opensearch-project/security/pull/5337) | Add flush cache endpoint for individual user | [#2829](https://github.com/opensearch-project/security/issues/2829) |
 | v3.1.0 | [#5324](https://github.com/opensearch-project/security/pull/5324) | Register cluster settings listener for dynamic TTL |   |
 
 ### Issues (Design / RFC)

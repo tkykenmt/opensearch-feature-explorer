@@ -141,7 +141,7 @@ public void testCreateAndShareResource() throws Exception {
 |---------|-----|-------------|---------------|
 | v3.1.0 | [#5322](https://github.com/opensearch-project/security/pull/5322) | Use extendedPlugins in integrationTest framework |   |
 | v3.1.0 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Core Plugin Testing Framework enhancement |   |
-| v3.0.0 | [#5206](https://github.com/opensearch-project/security/pull/5206) | Tests for ConfigurationRepository class |   |
+| v3.0.0 | [#5206](https://github.com/opensearch-project/security/pull/5206) | Tests for ConfigurationRepository class | [#3255](https://github.com/opensearch-project/security/issues/3255) |
 | v3.0.0 | [#5214](https://github.com/opensearch-project/security/pull/5214) | Refactor InternalAuditLogTest to use Awaitility |   |
 | v3.0.0 | [#5218](https://github.com/opensearch-project/security/pull/5218) | Remove Java version check for reflection args |   |
 | v3.0.0 | [#5223](https://github.com/opensearch-project/security/pull/5223) | Migrate from com.amazon.dlic to org.opensearch.security |   |

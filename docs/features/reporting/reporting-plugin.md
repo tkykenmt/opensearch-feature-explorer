@@ -126,7 +126,7 @@ The Reporting plugin integrates with OpenSearch Security:
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#640](https://github.com/opensearch-project/reporting/pull/640) | Fixing CVE-2025-7783 |   |
 | v3.2.0 | [#1108](https://github.com/opensearch-project/reporting/pull/1108) | Create report indices in system context to avoid permission issues | [#998](https://github.com/opensearch-project/reporting/issues/998) |
-| v3.2.0 | [#599](https://github.com/opensearch-project/dashboards-reporting/pull/599) | Fix tenant URL parsing when generating reports from Discover |   |
+| v3.2.0 | [#599](https://github.com/opensearch-project/dashboards-reporting/pull/599) | Fix tenant URL parsing when generating reports from Discover | [#535](https://github.com/opensearch-project/dashboards-reporting/issues/535) |
 
 ### Issues (Design / RFC)
 - [Issue #998](https://github.com/opensearch-project/reporting/issues/998): Permission issue when creating reporting indices

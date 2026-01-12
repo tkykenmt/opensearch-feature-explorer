@@ -131,9 +131,9 @@ public class NeuralQueryBuilder extends AbstractQueryBuilder<NeuralQueryBuilder>
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#17890](https://github.com/opensearch-project/OpenSearch/pull/17890) | Allow to get the search request from the QueryCoordinatorContext |   |
-| v3.1.0 | [#18272](https://github.com/opensearch-project/OpenSearch/pull/18272) | Use QueryCoordinatorContext for the rewrite in validate API |   |
-| v2.19.0 | [#16818](https://github.com/opensearch-project/OpenSearch/pull/16818) | Introduce Template query (initial QueryCoordinatorContext) |   |
+| v3.1.0 | [#17890](https://github.com/opensearch-project/OpenSearch/pull/17890) | Allow to get the search request from the QueryCoordinatorContext | [#1211](https://github.com/opensearch-project/neural-search/issues/1211) |
+| v3.1.0 | [#18272](https://github.com/opensearch-project/OpenSearch/pull/18272) | Use QueryCoordinatorContext for the rewrite in validate API | [#803](https://github.com/opensearch-project/neural-search/issues/803) |
+| v2.19.0 | [#16818](https://github.com/opensearch-project/OpenSearch/pull/16818) | Introduce Template query (initial QueryCoordinatorContext) | [#16823](https://github.com/opensearch-project/OpenSearch/issues/16823) |
 
 ### Issues (Design / RFC)
 - [Issue #1211](https://github.com/opensearch-project/neural-search/issues/1211): RFC - Support Semantic Field Type to Simplify Neural Search Set Up

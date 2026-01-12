@@ -128,7 +128,7 @@ PUT /my-index/_settings
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#17782](https://github.com/opensearch-project/OpenSearch/pull/17782) | Implement parallel shard refresh behind cluster settings |   |
+| v3.1.0 | [#17782](https://github.com/opensearch-project/OpenSearch/pull/17782) | Implement parallel shard refresh behind cluster settings | [#17776](https://github.com/opensearch-project/OpenSearch/issues/17776) |
 
 ### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes

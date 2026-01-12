@@ -303,17 +303,17 @@ POST /_plugins/_ml/models/_register
 | v3.1.0 | [#3787](https://github.com/opensearch-project/ml-commons/pull/3787) | Add Unit Tests for MCP feature | [#3743](https://github.com/opensearch-project/ml-commons/issues/3743) |
 | v3.1.0 | [#3821](https://github.com/opensearch-project/ml-commons/pull/3821) | Downgrade MCP version to 0.9 |   |
 | v3.0.0 | [#3721](https://github.com/opensearch-project/ml-commons/pull/3721) | Onboard MCP - MCP connector support | [#3660](https://github.com/opensearch-project/ml-commons/issues/3660) |
-| v3.0.0 | [#3781](https://github.com/opensearch-project/ml-commons/pull/3781) | Support MCP server in OpenSearch |   |
+| v3.0.0 | [#3781](https://github.com/opensearch-project/ml-commons/pull/3781) | Support MCP server in OpenSearch | [#17577](https://github.com/opensearch-project/OpenSearch/issues/17577) |
 | v3.0.0 | [#3803](https://github.com/opensearch-project/ml-commons/pull/3803) | Support MCP session management |   |
 | v3.0.0 | [#3810](https://github.com/opensearch-project/ml-commons/pull/3810) | Support customized message endpoint |   |
 | v3.0.0 | [#3716](https://github.com/opensearch-project/ml-commons/pull/3716) | Plan, Execute and Reflect Agent Type |   |
 | v3.0.0 | [#3731](https://github.com/opensearch-project/ml-commons/pull/3731) | Support custom prompts for PlanExecuteReflect agent |   |
 | v3.0.0 | [#3712](https://github.com/opensearch-project/ml-commons/pull/3712) | Function calling for OpenAI v1, Bedrock Claude, DeepSeek |   |
 | v3.0.0 | [#3714](https://github.com/opensearch-project/ml-commons/pull/3714) | Implement async mode in agent execution | [#3762](https://github.com/opensearch-project/ml-commons/issues/3762) |
-| v3.0.0 | [#3600](https://github.com/opensearch-project/ml-commons/pull/3600) | Support sentence highlighting QA model |   |
-| v3.0.0 | [#3699](https://github.com/opensearch-project/ml-commons/pull/3699) | Update highlighting model translator |   |
+| v3.0.0 | [#3600](https://github.com/opensearch-project/ml-commons/pull/3600) | Support sentence highlighting QA model | [#1182](https://github.com/opensearch-project/neural-search/issues/1182) |
+| v3.0.0 | [#3699](https://github.com/opensearch-project/ml-commons/pull/3699) | Update highlighting model translator | [#1182](https://github.com/opensearch-project/neural-search/issues/1182) |
 | v3.0.0 | [#3658](https://github.com/opensearch-project/ml-commons/pull/3658) | Add parser for ModelTensorOutput and ModelTensors |   |
-| v3.0.0 | [#3243](https://github.com/opensearch-project/ml-commons/pull/3243) | Use _list/indices API in CatIndexTool |   |
+| v3.0.0 | [#3243](https://github.com/opensearch-project/ml-commons/pull/3243) | Use _list/indices API in CatIndexTool | [#3182](https://github.com/opensearch-project/ml-commons/issues/3182) |
 | v3.0.0 | [#3688](https://github.com/opensearch-project/ml-commons/pull/3688) | Deprecate batch ingestion REST API |   |
 | v3.0.0 | [#3652](https://github.com/opensearch-project/ml-commons/pull/3652) | Fix circuit breaker issue for remote model |   |
 | v3.0.0 | [#3814](https://github.com/opensearch-project/ml-commons/pull/3814) | Exclude circuit breaker for Agent |   |
@@ -324,7 +324,7 @@ POST /_plugins/_ml/models/_register
 | v3.0.0 | [#3759](https://github.com/opensearch-project/ml-commons/pull/3759) | Fix null GetResponse handling |   |
 | v3.0.0 | [#3730](https://github.com/opensearch-project/ml-commons/pull/3730) | Fix input/output map length error message |   |
 | v3.0.0 | [#3700](https://github.com/opensearch-project/ml-commons/pull/3700) | Fix config index masterkey for multi-tenancy |   |
-| v3.0.0 | [#3768](https://github.com/opensearch-project/ml-commons/pull/3768) | Fix metadata client responses |   |
+| v3.0.0 | [#3768](https://github.com/opensearch-project/ml-commons/pull/3768) | Fix metadata client responses | [#410](https://github.com/opensearch-project/ml-commons-dashboards/issues/410) |
 
 ### Issues (Design / RFC)
 - [Issue #3660](https://github.com/opensearch-project/ml-commons/issues/3660): Feature request for MCP protocol support

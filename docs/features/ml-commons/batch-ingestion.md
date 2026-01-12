@@ -322,7 +322,7 @@ sequenceDiagram
 | v2.18.0 | [#2989](https://github.com/opensearch-project/ml-commons/pull/2989) | Connector credential support for batch ingestion |   |
 | v2.18.0 | [#3098](https://github.com/opensearch-project/ml-commons/pull/3098) | Model group access control for batch job APIs |   |
 | v2.18.0 | [#3116](https://github.com/opensearch-project/ml-commons/pull/3116) | Rate limiting and configurable bulk size |   |
-| v2.17.0 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters |   |
+| v2.17.0 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters | [#2840](https://github.com/opensearch-project/ml-commons/issues/2840) |
 | v2.17.0 | [#2825](https://github.com/opensearch-project/ml-commons/pull/2825) | Support get batch transform job status in get task API |   |
 
 ### Issues (Design / RFC)

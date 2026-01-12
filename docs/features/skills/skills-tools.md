@@ -182,13 +182,13 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 | v3.1.0 | [#575](https://github.com/opensearch-project/skills/pull/575) | Fix conflict in dependency versions |   |
 | v3.0.0 | [#553](https://github.com/opensearch-project/skills/pull/553) | Support phasing off SecurityManager usage in favor of Java Agent |   |
 | v3.0.0 | [#549](https://github.com/opensearch-project/skills/pull/549) | Add attributes to tools to adapt the upstream changes |   |
-| v3.0.0 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool |   |
+| v3.0.0 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool | [#538](https://github.com/opensearch-project/skills/issues/538) |
 | v3.0.0 | [#545](https://github.com/opensearch-project/skills/pull/545) | Fix jar hell for SQL jar |   |
 | v3.0.0 | [#541](https://github.com/opensearch-project/skills/pull/541) | Fix PPLTool empty list bug |   |
 | v3.0.0 | [#529](https://github.com/opensearch-project/skills/pull/529) | Update ML Commons dependencies |   |
 | v3.0.0 | [#521](https://github.com/opensearch-project/skills/pull/521) | Developer guide enhancement |   |
 | v2.18.0 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |   |
-| v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool |   |
+| v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool | [#337](https://github.com/opensearch-project/skills/issues/337) |
 
 ### Issues (Design / RFC)
 - [Issue #538](https://github.com/opensearch-project/skills/issues/538): WebSearchTool feature request

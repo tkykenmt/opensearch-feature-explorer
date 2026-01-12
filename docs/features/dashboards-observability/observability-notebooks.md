@@ -145,7 +145,7 @@ Notebooks are stored as saved objects in the `.kibana` index. Each notebook cont
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks |   |
+| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks | [#2350](https://github.com/opensearch-project/dashboards-observability/issues/2350) |
 | v2.17.0 | [#2110](https://github.com/opensearch-project/dashboards-observability/pull/2110) | UI update: badge counter in breadcrumbs, simplified delete workflow |   |
 | v2.17.0 | [#2108](https://github.com/opensearch-project/dashboards-observability/pull/2108) | Fix sample notebooks for MDS environments |   |
 | v1.0.0 | - | Initial production release of Notebooks |   |

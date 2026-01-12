@@ -253,16 +253,16 @@ PUT /my-index
 | v3.0.0 | [#9392](https://github.com/opensearch-project/OpenSearch/pull/9392) | Remove mmap.extensions setting | [#8297](https://github.com/opensearch-project/OpenSearch/issues/8297) |
 | v3.0.0 | [#13988](https://github.com/opensearch-project/OpenSearch/pull/13988) | Remove COMPAT locale provider | [#11550](https://github.com/opensearch-project/OpenSearch/issues/11550) |
 | v3.0.0 | [#16887](https://github.com/opensearch-project/OpenSearch/issues/16887) | Remove transport-nio plugin |   |
-| v3.0.0 | [#10894](https://github.com/opensearch-project/OpenSearch/pull/10894) | Deprecate CamelCase PathHierarchy tokenizer |   |
+| v3.0.0 | [#10894](https://github.com/opensearch-project/OpenSearch/pull/10894) | Deprecate CamelCase PathHierarchy tokenizer | [#2773](https://github.com/opensearch-project/OpenSearch/issues/2773) |
 | v3.0.0 | [#14283](https://github.com/opensearch-project/OpenSearch/issues/14283) | Remove deprecated batch_size parameter |   |
-| v3.0.0 | [#4042](https://github.com/opensearch-project/OpenSearch/pull/4042) | Rename Plugin classes to Module |   |
+| v3.0.0 | [#4042](https://github.com/opensearch-project/OpenSearch/pull/4042) | Rename Plugin classes to Module | [#4034](https://github.com/opensearch-project/OpenSearch/issues/4034) |
 | v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | k-NN breaking changes for 3.0 |   |
 | v3.0.0 | [#5089](https://github.com/opensearch-project/security/pull/5089) | Fix Blake2b hash implementation | [#4274](https://github.com/opensearch-project/security/issues/4274) |
-| v3.0.0 | [#5224](https://github.com/opensearch-project/security/pull/5224) | Remove whitelist settings |   |
+| v3.0.0 | [#5224](https://github.com/opensearch-project/security/pull/5224) | Remove whitelist settings | [#1483](https://github.com/opensearch-project/OpenSearch/issues/1483) |
 | v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support | [#3286](https://github.com/opensearch-project/sql/issues/3286) |
-| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |   |
+| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints | [#3282](https://github.com/opensearch-project/sql/issues/3282) |
 | v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement | [#3281](https://github.com/opensearch-project/sql/issues/3281) |
-| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove legacy notebooks |   |
+| v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove legacy notebooks | [#2350](https://github.com/opensearch-project/dashboards-observability/issues/2350) |
 | v2.0.0 | [#1940](https://github.com/opensearch-project/OpenSearch/issues/1940) | Remove mapping types parameter |   |
 
 ### Issues (Design / RFC)

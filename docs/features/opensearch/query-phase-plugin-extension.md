@@ -185,7 +185,7 @@ QueryCollectorArguments args = new QueryCollectorArguments.Builder()
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#18637](https://github.com/opensearch-project/OpenSearch/pull/18637) | Initial implementation |   |
+| v3.2.0 | [#18637](https://github.com/opensearch-project/OpenSearch/pull/18637) | Initial implementation | [#18278](https://github.com/opensearch-project/OpenSearch/issues/18278) |
 
 ### Issues (Design / RFC)
 - [Issue #18278](https://github.com/opensearch-project/OpenSearch/issues/18278): Original feature request

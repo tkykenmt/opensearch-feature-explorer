@@ -135,7 +135,7 @@ GET _nodes/stats
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#17726](https://github.com/opensearch-project/OpenSearch/pull/17726) | Add tracking for long-running SearchTask post cancellation |   |
+| v3.0.0 | [#17726](https://github.com/opensearch-project/OpenSearch/pull/17726) | Add tracking for long-running SearchTask post cancellation | [#17719](https://github.com/opensearch-project/OpenSearch/issues/17719) |
 
 ### Issues (Design / RFC)
 - [Issue #17719](https://github.com/opensearch-project/OpenSearch/issues/17719): Track long running SearchTask post cancellation

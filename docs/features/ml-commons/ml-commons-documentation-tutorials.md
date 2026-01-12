@@ -183,7 +183,7 @@ PUT test-index
 | v3.3.0 | [#4124](https://github.com/opensearch-project/ml-commons/pull/4124) | Additional unit tests |   |
 | v3.3.0 | [#4126](https://github.com/opensearch-project/ml-commons/pull/4126) | Additional unit tests |   |
 | v3.2.0 | [#3576](https://github.com/opensearch-project/ml-commons/pull/3576) | Multi modal tutorial using ml inference processor |   |
-| v3.2.0 | [#3879](https://github.com/opensearch-project/ml-commons/pull/3879) | Semantic highlighter blueprint for SageMaker |   |
+| v3.2.0 | [#3879](https://github.com/opensearch-project/ml-commons/pull/3879) | Semantic highlighter blueprint for SageMaker | [#1182](https://github.com/opensearch-project/neural-search/issues/1182) |
 | v3.2.0 | [#3857](https://github.com/opensearch-project/ml-commons/pull/3857) | Neural Sparse Remote Model documentation | [#9714](https://github.com/opensearch-project/ml-commons/issues/9714) |
 | v3.2.0 | [#3966](https://github.com/opensearch-project/ml-commons/pull/3966) | Language identification tutorial |   |
 | v3.2.0 | [#3980](https://github.com/opensearch-project/ml-commons/pull/3980) | Aleph alpha blueprint link fix |   |

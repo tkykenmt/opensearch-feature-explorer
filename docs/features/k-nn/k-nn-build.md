@@ -131,7 +131,7 @@ permission java.lang.RuntimePermission "loadLibrary.opensearchknn_faiss_avx512_s
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#3025](https://github.com/opensearch-project/k-NN/pull/3025) | Include opensearchknn_simd in build configurations |   |
-| v3.4.0 | [#2943](https://github.com/opensearch-project/k-NN/pull/2943) | Onboard to S3 snapshots |   |
+| v3.4.0 | [#2943](https://github.com/opensearch-project/k-NN/pull/2943) | Onboard to S3 snapshots | [#5360](https://github.com/opensearch-project/opensearch-build/issues/5360) |
 
 ### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org snapshots repo

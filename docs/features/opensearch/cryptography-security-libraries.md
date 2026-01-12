@@ -171,7 +171,7 @@ SSLContext sslContext = SSLContextBuilder.create()
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#18427](https://github.com/opensearch-project/OpenSearch/pull/18427) | Update FipsMode check to catch NoSuchMethodError |   |
+| v3.1.0 | [#18427](https://github.com/opensearch-project/OpenSearch/pull/18427) | Update FipsMode check to catch NoSuchMethodError | [#4915](https://github.com/opensearch-project/security/issues/4915) |
 | v3.0.0 | [#17393](https://github.com/opensearch-project/OpenSearch/pull/17393) | Use BC libraries to parse PEM files, increase key length |   |
 | v3.0.0 | [#17507](https://github.com/opensearch-project/OpenSearch/pull/17507) | Migrate BC libs to their FIPS counterparts |   |
 

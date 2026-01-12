@@ -241,8 +241,8 @@ Based on OpenSearch Benchmark tests:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.17.0 | [#1823](https://github.com/opensearch-project/k-NN/pull/1823) | Add HNSW support for Faiss byte vector |   |
-| v2.17.0 | [#2002](https://github.com/opensearch-project/k-NN/pull/2002) | Add IVF support for Faiss byte vector |   |
+| v2.17.0 | [#1823](https://github.com/opensearch-project/k-NN/pull/1823) | Add HNSW support for Faiss byte vector | [#1659](https://github.com/opensearch-project/k-NN/issues/1659) |
+| v2.17.0 | [#2002](https://github.com/opensearch-project/k-NN/pull/2002) | Add IVF support for Faiss byte vector | [#1659](https://github.com/opensearch-project/k-NN/issues/1659) |
 
 ### Issues (Design / RFC)
 - [Issue #1659](https://github.com/opensearch-project/k-NN/issues/1659): Original feature request

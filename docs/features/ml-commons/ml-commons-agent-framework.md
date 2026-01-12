@@ -253,21 +253,21 @@ PUT /_plugins/_ml/agents/{agent_id}
 | v3.3.0 | [#4198](https://github.com/opensearch-project/ml-commons/pull/4198) | Update interaction with failure message on agent execution failure | [#4197](https://github.com/opensearch-project/ml-commons/issues/4197) |
 | v3.3.0 | [#4173](https://github.com/opensearch-project/ml-commons/pull/4173) | Move common string to common package |   |
 | v3.2.0 | [#4035](https://github.com/opensearch-project/ml-commons/pull/4035) | Add Execute Tool API |   |
-| v3.2.0 | [#4050](https://github.com/opensearch-project/ml-commons/pull/4050) | Implement create and add memory container API |   |
+| v3.2.0 | [#4050](https://github.com/opensearch-project/ml-commons/pull/4050) | Implement create and add memory container API | [#3979](https://github.com/opensearch-project/ml-commons/issues/3979) |
 | v3.2.0 | [#4055](https://github.com/opensearch-project/ml-commons/pull/4055) | Enable AI-Oriented memory operations |   |
-| v3.2.0 | [#4006](https://github.com/opensearch-project/ml-commons/pull/4006) | Initiate QueryPlanningTool |   |
+| v3.2.0 | [#4006](https://github.com/opensearch-project/ml-commons/pull/4006) | Initiate QueryPlanningTool | [#4005](https://github.com/opensearch-project/ml-commons/issues/4005) |
 | v3.2.0 | [#4027](https://github.com/opensearch-project/ml-commons/pull/4027) | Delete memory container API |   |
 | v3.2.0 | [#4069](https://github.com/opensearch-project/ml-commons/pull/4069) | GET memory API |   |
 | v3.2.0 | [#4053](https://github.com/opensearch-project/ml-commons/pull/4053) | Support output filter and improve SearchIndexTool |   |
 | v3.2.0 | [#4008](https://github.com/opensearch-project/ml-commons/pull/4008) | Add date/time injection for agents | [#4009](https://github.com/opensearch-project/ml-commons/issues/4009) |
 | v3.2.0 | [#4031](https://github.com/opensearch-project/ml-commons/pull/4031) | Ensure chat agent returns response at max iterations | [#4011](https://github.com/opensearch-project/ml-commons/issues/4011) |
 | v3.1.0 | [#3820](https://github.com/opensearch-project/ml-commons/pull/3820) | Expose Update Agent API | [#3748](https://github.com/opensearch-project/ml-commons/issues/3748) |
-| v3.1.0 | [#3874](https://github.com/opensearch-project/ml-commons/pull/3874) | Support persisting MCP tools in system index |   |
-| v3.1.0 | [#3888](https://github.com/opensearch-project/ml-commons/pull/3888) | Use function calling for existing LLM interfaces |   |
+| v3.1.0 | [#3874](https://github.com/opensearch-project/ml-commons/pull/3874) | Support persisting MCP tools in system index | [#3841](https://github.com/opensearch-project/ml-commons/issues/3841) |
+| v3.1.0 | [#3888](https://github.com/opensearch-project/ml-commons/pull/3888) | Use function calling for existing LLM interfaces | [#3847](https://github.com/opensearch-project/ml-commons/issues/3847) |
 | v3.1.0 | [#3891](https://github.com/opensearch-project/ml-commons/pull/3891) | Add custom SSE endpoint for MCP Client | [#3816](https://github.com/opensearch-project/ml-commons/issues/3816) |
 | v3.1.0 | [#3884](https://github.com/opensearch-project/ml-commons/pull/3884) | PlanExecuteReflect: Return memory early to track progress | [#3881](https://github.com/opensearch-project/ml-commons/issues/3881) |
 | v3.1.0 | [#3810](https://github.com/opensearch-project/ml-commons/pull/3810) | Support customized message endpoint |   |
-| v3.1.0 | [#3845](https://github.com/opensearch-project/ml-commons/pull/3845) | Add error handling for plan&execute agent |   |
+| v3.1.0 | [#3845](https://github.com/opensearch-project/ml-commons/pull/3845) | Add error handling for plan&execute agent | [#3848](https://github.com/opensearch-project/ml-commons/issues/3848) |
 | v3.1.0 | [#3661](https://github.com/opensearch-project/ml-commons/pull/3661) | Metrics framework integration with ml-commons | [#3635](https://github.com/opensearch-project/ml-commons/issues/3635) |
 | v3.1.0 | [#3862](https://github.com/opensearch-project/ml-commons/pull/3862) | Fix connector private IP validation when executing agent | [#3839](https://github.com/opensearch-project/ml-commons/issues/3839) |
 | v3.1.0 | [#3814](https://github.com/opensearch-project/ml-commons/pull/3814) | Exclude circuit breaker for Agent |   |

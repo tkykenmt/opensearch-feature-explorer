@@ -137,7 +137,7 @@ source=logs | spath output=a input=doc "['a fancy field name']"
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#4120](https://github.com/opensearch-project/sql/pull/4120) | Starter implementation for `spath` command |   |
+| v3.3.0 | [#4120](https://github.com/opensearch-project/sql/pull/4120) | Starter implementation for `spath` command | [#4119](https://github.com/opensearch-project/sql/issues/4119) |
 
 ### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/sql/issues/4119): RFC - Improved structured data extraction with `spath`

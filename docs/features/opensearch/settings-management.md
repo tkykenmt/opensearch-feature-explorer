@@ -146,7 +146,7 @@ PUT /_cluster/settings
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#20140](https://github.com/opensearch-project/OpenSearch/pull/20140) | Fix duplicate registration of FieldDataCache dynamic setting |   |
 | v3.2.0 | [#18885](https://github.com/opensearch-project/OpenSearch/pull/18885) | Ignore archived settings on update | [#8714](https://github.com/opensearch-project/OpenSearch/issues/8714) |
-| v2.10.0 | [#9019](https://github.com/opensearch-project/OpenSearch/pull/9019) | Add support to clear archived index settings |   |
+| v2.10.0 | [#9019](https://github.com/opensearch-project/OpenSearch/pull/9019) | Add support to clear archived index settings | [#2803](https://github.com/opensearch-project/OpenSearch/issues/2803) |
 
 ### Issues (Design / RFC)
 - [Issue #8714](https://github.com/opensearch-project/OpenSearch/issues/8714): Unable to change any cluster setting with archived settings

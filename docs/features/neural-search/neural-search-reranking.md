@@ -198,7 +198,7 @@ PUT /_search/pipeline/cohere_rerank_pipeline
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#932](https://github.com/opensearch-project/neural-search/pull/932) | ByFieldRerankProcessor for second level reranking | [#926](https://github.com/opensearch-project/neural-search/issues/926) |
-| v2.18.0 | [#917](https://github.com/opensearch-project/neural-search/pull/917) | Added rescorer in hybrid query |   |
+| v2.18.0 | [#917](https://github.com/opensearch-project/neural-search/pull/917) | Added rescorer in hybrid query | [#914](https://github.com/opensearch-project/neural-search/issues/914) |
 | v2.12.0 | - | Initial rerank processor implementation |   |
 
 ### Issues (Design / RFC)

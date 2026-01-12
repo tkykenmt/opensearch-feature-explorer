@@ -98,7 +98,7 @@ The Dependabot workflow automates three tasks:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#5318](https://github.com/opensearch-project/security/pull/5318) | Add workflow for changelog verification |   |
+| v3.1.0 | [#5318](https://github.com/opensearch-project/security/pull/5318) | Add workflow for changelog verification | [#5095](https://github.com/opensearch-project/security/issues/5095) |
 
 ### Issues (Design / RFC)
 - [Issue #5095](https://github.com/opensearch-project/security/issues/5095): Original feature request

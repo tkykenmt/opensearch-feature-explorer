@@ -160,7 +160,7 @@ PUT /_cluster/settings
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix WeightFunction constraint reset bug |   |
+| v3.4.0 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix WeightFunction constraint reset bug | [#13429](https://github.com/opensearch-project/OpenSearch/issues/13429) |
 | v3.0.0 | [#17295](https://github.com/opensearch-project/OpenSearch/pull/17295) | Add cluster and index level settings to limit total primary shards per node | [#17293](https://github.com/opensearch-project/OpenSearch/issues/17293) |
 | v3.0.0 | [#16471](https://github.com/opensearch-project/OpenSearch/pull/16471) | Add setting to adjust the primary constraint weights | [#16470](https://github.com/opensearch-project/OpenSearch/issues/16470) |
 

@@ -270,7 +270,7 @@ GET /logs/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19130](https://github.com/opensearch-project/OpenSearch/pull/19130) | Adding logic for histogram aggregation using skiplist |   |
-| v3.3.0 | [#19142](https://github.com/opensearch-project/OpenSearch/pull/19142) | Add skip_list param for date, scaled float and token count fields |   |
+| v3.3.0 | [#19142](https://github.com/opensearch-project/OpenSearch/pull/19142) | Add skip_list param for date, scaled float and token count fields | [#19123](https://github.com/opensearch-project/OpenSearch/issues/19123) |
 | v3.3.0 | [#19438](https://github.com/opensearch-project/OpenSearch/pull/19438) | Add sub aggregation support for histogram aggregation using skiplist |   |
 | v3.3.0 | [#19480](https://github.com/opensearch-project/OpenSearch/pull/19480) | Enable skip_list for @timestamp field or index sort field by default | [#19123](https://github.com/opensearch-project/OpenSearch/issues/19123) |
 | v3.2.0 | [#18889](https://github.com/opensearch-project/OpenSearch/pull/18889) | Add skip_list parameter to Numeric Field Mappers (default false) |   |

@@ -186,8 +186,8 @@ GET /products-vectors/_search
 | v2.18.0 | [#2146](https://github.com/opensearch-project/k-NN/pull/2146) | Optimize reduceToTopK | [#2145](https://github.com/opensearch-project/k-NN/issues/2145) |
 | v2.18.0 | [#2155](https://github.com/opensearch-project/k-NN/pull/2155) | KNNIterators filter support |   |
 | v2.18.0 | [#2200](https://github.com/opensearch-project/k-NN/pull/2200) | PQ compression level calculation |   |
-| v2.18.0 | [#2182](https://github.com/opensearch-project/k-NN/pull/2182) | Remove FSDirectory dependency |   |
-| v2.18.0 | [#1946](https://github.com/opensearch-project/k-NN/pull/1946) | DocValuesProducers for memory release |   |
+| v2.18.0 | [#2182](https://github.com/opensearch-project/k-NN/pull/2182) | Remove FSDirectory dependency | [#1885](https://github.com/opensearch-project/k-NN/issues/1885) |
+| v2.18.0 | [#1946](https://github.com/opensearch-project/k-NN/pull/1946) | DocValuesProducers for memory release | [#1885](https://github.com/opensearch-project/k-NN/issues/1885) |
 | v2.18.0 | [#2147](https://github.com/opensearch-project/k-NN/pull/2147) | KNN80DocValues fix |   |
 | v2.18.0 | [#2183](https://github.com/opensearch-project/k-NN/pull/2183) | Binary quantized vector score fix |   |
 

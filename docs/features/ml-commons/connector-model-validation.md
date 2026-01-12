@@ -175,8 +175,8 @@ With this schema, a prediction request with `"inputText": "5.11"` will correctly
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#3579](https://github.com/opensearch-project/ml-commons/pull/3579) | Enhance validation for create connector API - pre/post-process function validation | [#2993](https://github.com/opensearch-project/ml-commons/issues/2993) |
-| v3.2.0 | [#3972](https://github.com/opensearch-project/ml-commons/pull/3972) | Add validation for creating URI in connectors - improved error messages |   |
-| v3.1.0 | [#3805](https://github.com/opensearch-project/ml-commons/pull/3805) | Add validation for name and description for model, model group, and connector resources |   |
+| v3.2.0 | [#3972](https://github.com/opensearch-project/ml-commons/pull/3972) | Add validation for creating URI in connectors - improved error messages | [#3921](https://github.com/opensearch-project/ml-commons/issues/3921) |
+| v3.1.0 | [#3805](https://github.com/opensearch-project/ml-commons/pull/3805) | Add validation for name and description for model, model group, and connector resources | [#3639](https://github.com/opensearch-project/ml-commons/issues/3639) |
 | v3.1.0 | [#3761](https://github.com/opensearch-project/ml-commons/pull/3761) | Don't convert schema-defined strings to other types during validation | [#3758](https://github.com/opensearch-project/ml-commons/issues/3758) |
 | v3.1.0 | [#3909](https://github.com/opensearch-project/ml-commons/pull/3909) | Fixed NPE for connector retrying policy | [#3906](https://github.com/opensearch-project/ml-commons/issues/3906) |
 | v3.1.0 | [#3931](https://github.com/opensearch-project/ml-commons/pull/3931) | Fix tool not found in MCP memory issue |   |

@@ -128,8 +128,8 @@ To view role permissions in OpenSearch Dashboards:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#2254](https://github.com/opensearch-project/security-dashboards-plugin/pull/2254) | Show all index patterns in index permission panel |   |
-| v3.2.0 | [#2255](https://github.com/opensearch-project/security-dashboards-plugin/pull/2255) | Add missing index permissions to the list |   |
+| v3.2.0 | [#2254](https://github.com/opensearch-project/security-dashboards-plugin/pull/2254) | Show all index patterns in index permission panel | [#1303](https://github.com/opensearch-project/security-dashboards-plugin/issues/1303) |
+| v3.2.0 | [#2255](https://github.com/opensearch-project/security-dashboards-plugin/pull/2255) | Add missing index permissions to the list | [#1969](https://github.com/opensearch-project/security-dashboards-plugin/issues/1969) |
 
 ### Issues (Design / RFC)
 - [Issue #1303](https://github.com/opensearch-project/security-dashboards-plugin/issues/1303): Index permissions view abbreviated with no way to expand

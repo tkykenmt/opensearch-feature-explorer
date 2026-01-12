@@ -190,5 +190,5 @@ GET /my_index/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18621](https://github.com/opensearch-project/OpenSearch/pull/18621) | Fix visitor pattern for HasParentQuery and HasChildQuery |   |
-| v2.16.0 | [#14739](https://github.com/opensearch-project/OpenSearch/pull/14739) | Fix visitor pattern for NestedQueryBuilder |   |
+| v2.16.0 | [#14739](https://github.com/opensearch-project/OpenSearch/pull/14739) | Fix visitor pattern for NestedQueryBuilder | [#813](https://github.com/opensearch-project/neural-search/issues/813) |
 | - | [#10110](https://github.com/opensearch-project/OpenSearch/pull/10110) | Original visitor pattern implementation |   |

@@ -163,14 +163,14 @@ The following plugins support multi-tenancy with remote metadata storage:
 | v3.3.0 | [#254](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/254) | Use AccessController instead of ThreadContextAccess |   |
 | v3.0.0 | [#73](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/73) | Update o.o.client imports to o.o.transport.client for JPMS compatibility |   |
 | v3.0.0 | [#124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124) | Add a developer guide |   |
-| v3.0.0 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update |   |
+| v3.0.0 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update | [#1082](https://github.com/opensearch-project/flow-framework/issues/1082) |
 | v3.0.0 | [#121](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/121) | Use SdkClientDelegate's classloader for ServiceLoader |   |
 | v3.0.0 | [#128](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/128) | Ensure consistent reads on DynamoDB getItem calls | [#127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127) |
 | v3.0.0 | [#130](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/130) | Return 404 for Index not found on Local Cluster search |   |
 | v3.0.0 | [#141](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/141) | Directly return responses from Local Cluster client | [#132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132) |
-| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/156) | Make generated responses robust to URL encoded values |   |
+| v3.0.0 | [#156](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/156) | Make generated responses robust to URL encoded values | [#154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154) |
 | v3.0.0 | [#157](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/157) | Validate request fields in DDB Put and Update | [#154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154) |
-| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures |   |
+| v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures | [#154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154) |
 
 ### Issues (Design / RFC)
 - [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() eventually consistent bug

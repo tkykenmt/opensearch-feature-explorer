@@ -333,7 +333,7 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.4.0 | [#10663](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10663) | Discover Histogram Breakdowns | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.4.0 | [#10676](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10676) | Replace Timeline gantt chart with hierarchy timeline table |   |
 | v3.4.0 | [#10713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10713) | Show query panel in traces and metrics without datasets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
-| v3.4.0 | [#10723](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10723) | Field Statistics Tab |   |
+| v3.4.0 | [#10723](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10723) | Field Statistics Tab | [#10614](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10614) |
 | v3.4.0 | [#10727](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10727) | Add cancel query feature to discover |   |
 | v3.4.0 | [#10729](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10729) | Add correlations tab for trace and logs linking |   |
 | v3.4.0 | [#10764](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10764) | Histogram Breakdowns enable timechart for every dataset | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
@@ -345,8 +345,8 @@ source = opensearch_dashboards_sample_data_ecommerce
 | v3.4.0 | [#10574](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10574) | Fix field formatter not applied to explore query result |   |
 | v3.4.0 | [#10582](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10582) | Fix column focus issue |   |
 | v3.4.0 | [#10597](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10597) | Clear editor after dataset change |   |
-| v3.4.0 | [#10661](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10661) | Add backticks to explore's data source command |   |
-| v3.4.0 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue |   |
+| v3.4.0 | [#10661](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10661) | Add backticks to explore's data source command | [#4444](https://github.com/opensearch-project/sql/issues/4444) |
+| v3.4.0 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue | [#10580](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10580) |
 | v3.3.0 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.3.0 | [#10412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10412) | Introduce tab content error guard | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.3.0 | [#10425](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10425) | Infer axis date format |   |

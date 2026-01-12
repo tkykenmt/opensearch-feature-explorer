@@ -177,9 +177,9 @@ Benchmark results on `http_logs` dataset:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#18498](https://github.com/opensearch-project/OpenSearch/pull/18498) | Extend must_not rewrite to numeric match, term, and terms queries |   |
-| v3.0.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Initial must_not rewrite for range queries |   |
-| v3.0.0 | [#18541](https://github.com/opensearch-project/OpenSearch/pull/18541) | Boolean must → filter rewrite for constant-scoring queries |   |
+| v3.2.0 | [#18498](https://github.com/opensearch-project/OpenSearch/pull/18498) | Extend must_not rewrite to numeric match, term, and terms queries | [#17586](https://github.com/opensearch-project/OpenSearch/issues/17586) |
+| v3.0.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Initial must_not rewrite for range queries | [#17586](https://github.com/opensearch-project/OpenSearch/issues/17586) |
+| v3.0.0 | [#18541](https://github.com/opensearch-project/OpenSearch/pull/18541) | Boolean must → filter rewrite for constant-scoring queries | [#17586](https://github.com/opensearch-project/OpenSearch/issues/17586) |
 
 ### Issues (Design / RFC)
 - [Issue #17586](https://github.com/opensearch-project/OpenSearch/issues/17586): Original feature request with detailed benchmarks

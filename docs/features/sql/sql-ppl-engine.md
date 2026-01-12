@@ -265,12 +265,12 @@ POST /_plugins/_ppl
 | v3.1.0 | [#3679](https://github.com/opensearch-project/sql/pull/3679) | Fix: Return double with correct precision for UNIX_TIMESTAMP | [#3611](https://github.com/opensearch-project/sql/issues/3611) |
 | v3.1.0 | [#3713](https://github.com/opensearch-project/sql/pull/3713) | Fix: Prevent push down limit with offset reach maxResultWindow | [#3102](https://github.com/opensearch-project/sql/issues/3102) |
 | v3.1.0 | [#3559](https://github.com/opensearch-project/sql/pull/3559) | Add JSON functions |   |
-| v3.1.0 | [#3584](https://github.com/opensearch-project/sql/pull/3584) | Add lambda function and array related functions |   |
+| v3.1.0 | [#3584](https://github.com/opensearch-project/sql/pull/3584) | Add lambda function and array related functions | [#3575](https://github.com/opensearch-project/sql/issues/3575) |
 | v3.1.0 | [#3574](https://github.com/opensearch-project/sql/pull/3574) | Implement cryptographic hash UDFs | [#3573](https://github.com/opensearch-project/sql/issues/3573) |
 | v3.1.0 | [#3640](https://github.com/opensearch-project/sql/pull/3640) | Add earliest and latest condition functions |   |
 | v3.1.0 | [#3654](https://github.com/opensearch-project/sql/pull/3654) | Add DISTINCT_COUNT_APPROX function |   |
 | v3.1.0 | [#3653](https://github.com/opensearch-project/sql/pull/3653) | Support merging object-type fields from multiple indices |   |
-| v3.1.0 | [#3663](https://github.com/opensearch-project/sql/pull/3663) | Support match_only_text field type |   |
+| v3.1.0 | [#3663](https://github.com/opensearch-project/sql/pull/3663) | Support match_only_text field type | [#3655](https://github.com/opensearch-project/sql/issues/3655) |
 | v3.1.0 | [#3698](https://github.com/opensearch-project/sql/pull/3698) | Switch percentile to MergingDigest algorithm | [#3697](https://github.com/opensearch-project/sql/issues/3697) |
 | v3.0.0 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge Calcite engine to main |   |
 | v2.17.0 | [#2877](https://github.com/opensearch-project/sql/pull/2877) | Change default value of plugins.query.size_limit to 10000 |   |
@@ -290,8 +290,8 @@ POST /_plugins/_ppl
 | v3.0.0 | [#3522](https://github.com/opensearch-project/sql/pull/3522) | Function framework refactoring | [#3493](https://github.com/opensearch-project/sql/issues/3493) |
 | v3.0.0 | [#3304](https://github.com/opensearch-project/sql/pull/3304) | Add functions to SQL query validator | [#3237](https://github.com/opensearch-project/sql/issues/3237) |
 | v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support | [#3286](https://github.com/opensearch-project/sql/issues/3286) |
-| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |   |
+| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints | [#3282](https://github.com/opensearch-project/sql/issues/3282) |
 | v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement | [#3281](https://github.com/opensearch-project/sql/issues/3281) |
-| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |   |
+| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type | [#3339](https://github.com/opensearch-project/sql/issues/3339) |
 | v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage | [#3284](https://github.com/opensearch-project/sql/issues/3284) |
 | v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format | [#3280](https://github.com/opensearch-project/sql/issues/3280) |

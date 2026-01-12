@@ -160,7 +160,7 @@ PUT /my-index
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#17306](https://github.com/opensearch-project/OpenSearch/pull/17306) | Use Lucene `BM25Similarity` as default |   |
+| v3.0.0 | [#17306](https://github.com/opensearch-project/OpenSearch/pull/17306) | Use Lucene `BM25Similarity` as default | [#17315](https://github.com/opensearch-project/OpenSearch/issues/17315) |
 
 ### Issues (Design / RFC)
 - [Issue #17315](https://github.com/opensearch-project/OpenSearch/issues/17315): Original feature request

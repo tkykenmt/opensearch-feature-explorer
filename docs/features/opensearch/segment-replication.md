@@ -138,13 +138,13 @@ GET _cat/segment_replication?v
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit |   |
+| v3.3.0 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit | [#19213](https://github.com/opensearch-project/OpenSearch/issues/19213) |
 | v3.3.0 | [#18997](https://github.com/opensearch-project/OpenSearch/pull/18997) | Fix NullPointerException in segment replicator |   |
 | v3.2.0 | [#18602](https://github.com/opensearch-project/OpenSearch/pull/18602) | Fix bugs in replication lag computation | [#18437](https://github.com/opensearch-project/OpenSearch/issues/18437) |
 | v3.0.0 | [#17055](https://github.com/opensearch-project/OpenSearch/pull/17055) | Implemented computation of segment replication stats at shard level | [#16801](https://github.com/opensearch-project/OpenSearch/issues/16801) |
-| v3.0.0 | [#17831](https://github.com/opensearch-project/OpenSearch/pull/17831) | Avoid skewed segment replication lag metric |   |
-| v3.0.0 | [#17568](https://github.com/opensearch-project/OpenSearch/pull/17568) | Increase the default segment counter step size when replica promoting |   |
-| v3.0.0 | [#17749](https://github.com/opensearch-project/OpenSearch/pull/17749) | Add cluster setting for retry timeout of publish checkpoint tx action |   |
+| v3.0.0 | [#17831](https://github.com/opensearch-project/OpenSearch/pull/17831) | Avoid skewed segment replication lag metric | [#10764](https://github.com/opensearch-project/OpenSearch/issues/10764) |
+| v3.0.0 | [#17568](https://github.com/opensearch-project/OpenSearch/pull/17568) | Increase the default segment counter step size when replica promoting | [#17566](https://github.com/opensearch-project/OpenSearch/issues/17566) |
+| v3.0.0 | [#17749](https://github.com/opensearch-project/OpenSearch/pull/17749) | Add cluster setting for retry timeout of publish checkpoint tx action | [#17595](https://github.com/opensearch-project/OpenSearch/issues/17595) |
 
 ### Issues (Design / RFC)
 - [Issue #19213](https://github.com/opensearch-project/OpenSearch/issues/19213): Bug report for NRTReplicationEngine file deletion issue

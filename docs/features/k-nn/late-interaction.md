@@ -213,7 +213,7 @@ Late interaction models that can be used with OpenSearch:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [k-NN#2909](https://github.com/opensearch-project/k-NN/pull/2909) | Add lateInteractionFunction |   |
+| v3.3.0 | [k-NN#2909](https://github.com/opensearch-project/k-NN/pull/2909) | Add lateInteractionFunction | [#18091](https://github.com/opensearch-project/OpenSearch/issues/18091) |
 
 ### Issues (Design / RFC)
 - [Issue k-NN#2706](https://github.com/opensearch-project/k-NN/issues/2706): RFC for MultiVector Field Type for Late-interaction Score

@@ -163,7 +163,7 @@ POST _plugins/_knn/models/my-model/_train
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as a top level parameter while creating vector field |   |
+| v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as a top level parameter while creating vector field | [#1949](https://github.com/opensearch-project/k-NN/issues/1949) |
 
 ### Issues (Design / RFC)
 - [Issue #1949](https://github.com/opensearch-project/k-NN/issues/1949): RFC - Disk-based Mode Design

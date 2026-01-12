@@ -177,9 +177,9 @@ if (showActionsInGroup) {
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#680](https://github.com/opensearch-project/dashboards-maps/pull/680) | Fix flyout overlay issue with new application header |   |
-| v2.17.0 | [#653](https://github.com/opensearch-project/dashboards-maps/pull/653) | Conditionally use the new Page Header variant on the Maps listing page |   |
-| v2.17.0 | [#654](https://github.com/opensearch-project/dashboards-maps/pull/654) | Conditionally use the new Application Header variant on the Maps visualization page |   |
-| v2.17.0 | [#655](https://github.com/opensearch-project/dashboards-maps/pull/655) | Conditionally use full width for Maps listing page table |   |
+| v2.17.0 | [#653](https://github.com/opensearch-project/dashboards-maps/pull/653) | Conditionally use the new Page Header variant on the Maps listing page | [#649](https://github.com/opensearch-project/dashboards-maps/issues/649) |
+| v2.17.0 | [#654](https://github.com/opensearch-project/dashboards-maps/pull/654) | Conditionally use the new Application Header variant on the Maps visualization page | [#649](https://github.com/opensearch-project/dashboards-maps/issues/649) |
+| v2.17.0 | [#655](https://github.com/opensearch-project/dashboards-maps/pull/655) | Conditionally use full width for Maps listing page table | [#649](https://github.com/opensearch-project/dashboards-maps/issues/649) |
 
 ### Issues (Design / RFC)
 - [Issue #649](https://github.com/opensearch-project/dashboards-maps/issues/649): Support Trineo new headers change in maps

@@ -171,7 +171,7 @@ PUT my-index
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#2736](https://github.com/opensearch-project/k-NN/pull/2736) | Added engine as a top-level optional parameter | [#2534](https://github.com/opensearch-project/k-NN/issues/2534) |
-| v3.3.0 | [#2833](https://github.com/opensearch-project/k-NN/pull/2833) | Migrate k-NN plugin to use GRPC transport-grpc SPI interface |   |
+| v3.3.0 | [#2833](https://github.com/opensearch-project/k-NN/pull/2833) | Migrate k-NN plugin to use GRPC transport-grpc SPI interface | [#2816](https://github.com/opensearch-project/k-NN/issues/2816) |
 
 ### Issues (Design / RFC)
 - [Issue #2534](https://github.com/opensearch-project/k-NN/issues/2534): Make engine top level field mapping parameter

@@ -132,8 +132,8 @@ GET /_nodes/stats/indices/request_cache
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup |   |
-| v3.3.0 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default keyword parameters |   |
+| v3.3.0 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup | [#19183](https://github.com/opensearch-project/OpenSearch/issues/19183) |
+| v3.3.0 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default keyword parameters | [#19279](https://github.com/opensearch-project/OpenSearch/issues/19279) |
 
 ### Issues (Design / RFC)
 - [Issue #19118](https://github.com/opensearch-project/OpenSearch/issues/19118): Repeated iteration through keys on cache clear API

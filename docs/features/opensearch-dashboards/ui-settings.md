@@ -135,7 +135,7 @@ const effectiveDefault = await uiSettings.get('defaultDataSource');
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#9854](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9854) | Backward compatibility for UI setting client | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
-| v3.2.0 | [#9726](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9726) | Multi-scope UI settings support |   |
+| v3.2.0 | [#9726](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9726) | Multi-scope UI settings support | [#7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821) |
 
 ### Issues (Design / RFC)
 - [Issue #7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821): Original feature request for workspace-scoped UI settings

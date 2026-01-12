@@ -140,15 +140,15 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#878](https://github.com/opensearch-project/common-utils/pull/878) | Update user attributes XContent parsing logic |   |
+| v3.3.0 | [#878](https://github.com/opensearch-project/common-utils/pull/878) | Update user attributes XContent parsing logic | [#1829](https://github.com/opensearch-project/alerting/issues/1829) |
 | v3.3.0 | [#860](https://github.com/opensearch-project/common-utils/pull/860) | Update delete_backport_branch workflow to include release-chores branches |   |
 | v3.3.0 | [#869](https://github.com/opensearch-project/common-utils/pull/869) | Backport release notes for 2.13 to main branch |   |
 | v3.2.0 | [#850](https://github.com/opensearch-project/common-utils/pull/850) | Pinned commons-beanutils dependency to fix CVE-2025-48734 |   |
 | v3.2.0 | [#847](https://github.com/opensearch-project/common-utils/pull/847) | Revert PublishFindingsRequest to use a list of findings |   |
 | v3.2.0 | [#848](https://github.com/opensearch-project/common-utils/pull/848) | Switch gradle to 8.14 and JDK to 24 |   |
-| v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | Adding replication (CCR) plugin interface |   |
+| v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | Adding replication (CCR) plugin interface | [#726](https://github.com/opensearch-project/index-management/issues/726) |
 | v3.0.0 | [#790](https://github.com/opensearch-project/common-utils/pull/790) | Fix imports for split transport package |   |
-| v3.0.0 | [#801](https://github.com/opensearch-project/common-utils/pull/801) | Escape/Unescape pipe in UserInfo |   |
+| v3.0.0 | [#801](https://github.com/opensearch-project/common-utils/pull/801) | Escape/Unescape pipe in UserInfo | [#2756](https://github.com/opensearch-project/security/issues/2756) |
 
 ### Issues (Design / RFC)
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username pipe character issue

@@ -202,13 +202,13 @@ opensearch.experimental.feature.merged_segment_warmer.enabled: true
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#19715](https://github.com/opensearch-project/OpenSearch/pull/19715) | Remove experimental feature flag - GA graduation |   |
-| v3.4.0 | [#19629](https://github.com/opensearch-project/OpenSearch/pull/19629) | Add configurable resiliency features and cluster merge scheduler settings |   |
-| v3.4.0 | [#18929](https://github.com/opensearch-project/OpenSearch/pull/18929) | Add metrics for merged segment warmer operations |   |
-| v3.4.0 | [#19436](https://github.com/opensearch-project/OpenSearch/pull/19436) | Exception handling to prevent shard failures during warming |   |
+| v3.4.0 | [#19629](https://github.com/opensearch-project/OpenSearch/pull/19629) | Add configurable resiliency features and cluster merge scheduler settings | [#11410](https://github.com/opensearch-project/documentation-website/issues/11410) |
+| v3.4.0 | [#18929](https://github.com/opensearch-project/OpenSearch/pull/18929) | Add metrics for merged segment warmer operations | [#17528](https://github.com/opensearch-project/OpenSearch/issues/17528) |
+| v3.4.0 | [#19436](https://github.com/opensearch-project/OpenSearch/pull/19436) | Exception handling to prevent shard failures during warming | [#19435](https://github.com/opensearch-project/OpenSearch/issues/19435) |
 | v3.4.0 | [#20105](https://github.com/opensearch-project/OpenSearch/pull/20105) | Fix EngineConfig.toBuilder() to include mergedSegmentTransferTracker |   |
 | v3.2.0 | [#18683](https://github.com/opensearch-project/OpenSearch/pull/18683) | Remote store support for merged segment warming |   |
-| v3.0.0 | [#18255](https://github.com/opensearch-project/OpenSearch/pull/18255) | Local merged segment warmer implementation |   |
-| v3.0.0 | [#17881](https://github.com/opensearch-project/OpenSearch/pull/17881) | Initial implementation - MergedSegmentWarmerFactory infrastructure |   |
+| v3.0.0 | [#18255](https://github.com/opensearch-project/OpenSearch/pull/18255) | Local merged segment warmer implementation | [#17528](https://github.com/opensearch-project/OpenSearch/issues/17528) |
+| v3.0.0 | [#17881](https://github.com/opensearch-project/OpenSearch/pull/17881) | Initial implementation - MergedSegmentWarmerFactory infrastructure | [#1694](https://github.com/opensearch-project/OpenSearch/issues/1694) |
 
 ### Issues (Design / RFC)
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment into Segment Replication

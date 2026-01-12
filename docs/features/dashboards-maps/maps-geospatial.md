@@ -175,7 +175,7 @@ flowchart TB
 | v3.0.0 | [#703](https://github.com/opensearch-project/dashboards-maps/pull/703) | Introduce cluster layer | [#250](https://github.com/opensearch-project/dashboards-maps/issues/250) |
 | v3.0.0 | [#704](https://github.com/opensearch-project/dashboards-maps/pull/704) | Fix layer config panel background |   |
 | v3.0.0 | [#718](https://github.com/opensearch-project/dashboards-maps/pull/718) | Fix data label overlap |   |
-| v2.17.0 | [#651](https://github.com/opensearch-project/dashboards-maps/pull/651) | Deprecate maps multi data source display |   |
+| v2.17.0 | [#651](https://github.com/opensearch-project/dashboards-maps/pull/651) | Deprecate maps multi data source display | [#649](https://github.com/opensearch-project/dashboards-maps/issues/649) |
 | v2.17.0 | [#664](https://github.com/opensearch-project/dashboards-maps/pull/664) | Migrate integration tests to FTR repository | [#592](https://github.com/opensearch-project/dashboards-maps/issues/592) |
 
 ### Issues (Design / RFC)

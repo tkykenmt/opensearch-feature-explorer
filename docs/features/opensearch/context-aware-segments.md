@@ -261,8 +261,8 @@ POST /logs-index/_doc
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19233](https://github.com/opensearch-project/OpenSearch/pull/19233) | Add a mapper for context aware segments grouping criteria |   |
-| v3.4.0 | [#19098](https://github.com/opensearch-project/OpenSearch/pull/19098) | Add support for context aware segments |   |
+| v3.4.0 | [#19233](https://github.com/opensearch-project/OpenSearch/pull/19233) | Add a mapper for context aware segments grouping criteria | [#19223](https://github.com/opensearch-project/OpenSearch/issues/19223) |
+| v3.4.0 | [#19098](https://github.com/opensearch-project/OpenSearch/pull/19098) | Add support for context aware segments | [#19530](https://github.com/opensearch-project/OpenSearch/issues/19530) |
 
 ### Issues (Design / RFC)
 - [Issue #19530](https://github.com/opensearch-project/OpenSearch/issues/19530): LLD for Context Aware Segments

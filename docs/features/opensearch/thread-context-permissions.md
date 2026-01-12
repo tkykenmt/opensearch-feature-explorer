@@ -123,7 +123,7 @@ public class MyPlugin extends Plugin {
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#15016](https://github.com/opensearch-project/OpenSearch/pull/15016) | Add ThreadContextPermission for markAsSystemContext | [#14931](https://github.com/opensearch-project/OpenSearch/issues/14931) |
-| v3.0.0 | [#15039](https://github.com/opensearch-project/OpenSearch/pull/15039) | Add ThreadContextPermission for stashAndMergeHeaders and stashWithOrigin |   |
+| v3.0.0 | [#15039](https://github.com/opensearch-project/OpenSearch/pull/15039) | Add ThreadContextPermission for stashAndMergeHeaders and stashWithOrigin | [#14931](https://github.com/opensearch-project/OpenSearch/issues/14931) |
 
 ### Issues (Design / RFC)
 - [Issue #14931](https://github.com/opensearch-project/OpenSearch/issues/14931): Original feature request for higher-level plugin context switching APIs

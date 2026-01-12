@@ -137,7 +137,7 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#5792](https://github.com/opensearch-project/security/pull/5792) | Add Basic Authentication support for webhook audit log sink | [#5738](https://github.com/opensearch-project/security/issues/5738) |
 | v3.4.0 | [#5396](https://github.com/opensearch-project/security/pull/5396) | Ensure REST headers from ActionPlugin.getRestHeaders are carried to ThreadContext | [#4799](https://github.com/opensearch-project/security/issues/4799) |
-| v3.4.0 | [#5775](https://github.com/opensearch-project/security/pull/5775) | Deprecate plugins.security.system_indices.indices setting |   |
+| v3.4.0 | [#5775](https://github.com/opensearch-project/security/pull/5775) | Deprecate plugins.security.system_indices.indices setting | [#5565](https://github.com/opensearch-project/security/issues/5565) |
 | v3.4.0 | [#5805](https://github.com/opensearch-project/security/pull/5805) | Allow overlap of static and custom security configs, prefer static |   |
 | v3.4.0 | [#5590](https://github.com/opensearch-project/security/pull/5590) | Update read access to search-relevance indices |   |
 | v3.4.0 | [#5694](https://github.com/opensearch-project/security/pull/5694) | Fix: Create WildcardMatcher.NONE for empty string input |   |
@@ -145,13 +145,13 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 | v3.4.0 | [#5710](https://github.com/opensearch-project/security/pull/5710) | Fix: Use RestRequestFilter.getFilteredRequest for sensitive params |   |
 | v3.4.0 | [#5723](https://github.com/opensearch-project/security/pull/5723) | Fix: Deprecated SSL transport settings in demo certificates | [#5697](https://github.com/opensearch-project/security/issues/5697) |
 | v3.4.0 | [#5721](https://github.com/opensearch-project/security/pull/5721) | Fix: DlsFlsValveImpl condition for internal requests |   |
-| v3.4.0 | [#5778](https://github.com/opensearch-project/security/pull/5778) | Fix: `.kibana` index update operations in multi-tenancy |   |
+| v3.4.0 | [#5778](https://github.com/opensearch-project/security/pull/5778) | Fix: `.kibana` index update operations in multi-tenancy | [#1951](https://github.com/opensearch-project/observability/issues/1951) |
 | v3.4.0 | [#5750](https://github.com/opensearch-project/security/pull/5750) | Fix: Replace AccessController and remove Extension restriction |   |
-| v3.4.0 | [#5749](https://github.com/opensearch-project/security/pull/5749) | Fix: Add security provider earlier in bootstrap process |   |
+| v3.4.0 | [#5749](https://github.com/opensearch-project/security/pull/5749) | Fix: Add security provider earlier in bootstrap process | [#3420](https://github.com/opensearch-project/security/issues/3420) |
 | v3.4.0 | [#5791](https://github.com/opensearch-project/security/pull/5791) | Fix: Modularized PrivilegesEvaluator |   |
 | v3.3.0 | [#5579](https://github.com/opensearch-project/security/pull/5579) | Fix: Allow plugin system requests when system_indices.enabled is false | [#792](https://github.com/opensearch-project/security/issues/792) |
 | v3.3.0 | [#5640](https://github.com/opensearch-project/security/pull/5640) | Fix: JWT log spam with empty roles_key | [#5634](https://github.com/opensearch-project/security/issues/5634) |
-| v3.1.0 | [#5307](https://github.com/opensearch-project/security/pull/5307) | Fix: Security index stale cache post snapshot restore |   |
+| v3.1.0 | [#5307](https://github.com/opensearch-project/security/pull/5307) | Fix: Security index stale cache post snapshot restore | [#5308](https://github.com/opensearch-project/security/issues/5308) |
 | v3.1.0 | [#5279](https://github.com/opensearch-project/security/pull/5279) | Fix: Compliance audit log diff computation | [#5280](https://github.com/opensearch-project/security/issues/5280) |
 | v3.1.0 | [#5303](https://github.com/opensearch-project/security/pull/5303) | Fix: DlsFlsFilterLeafReader PointValues handling |   |
 | v3.1.0 | [#5377](https://github.com/opensearch-project/security/pull/5377) | Fix: Conditional invalid auth header logging |   |

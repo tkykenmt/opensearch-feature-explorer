@@ -90,13 +90,13 @@ GET /_nodes?filter_path=nodes.*.version
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#20026](https://github.com/opensearch-project/OpenSearch/pull/20026) | Bump Apache Lucene from 10.3.1 to 10.3.2 |   |
 | v3.3.0 | [#19296](https://github.com/opensearch-project/OpenSearch/pull/19296) | Bump Apache Lucene from 10.2.2 to 10.3.0 | [#18638](https://github.com/opensearch-project/OpenSearch/issues/18638) |
-| v3.3.0 | [k-NN#2878](https://github.com/opensearch-project/k-NN/pull/2878) | Fix KNN build due to Lucene 10.3 upgrade |   |
+| v3.3.0 | [k-NN#2878](https://github.com/opensearch-project/k-NN/pull/2878) | Fix KNN build due to Lucene 10.3 upgrade | [#2876](https://github.com/opensearch-project/k-NN/issues/2876) |
 | v3.3.0 | [custom-codecs#277](https://github.com/opensearch-project/custom-codecs/pull/277) | Update for Lucene 10.3 | [#276](https://github.com/opensearch-project/custom-codecs/issues/276) |
 | v3.3.0 | [#19397](https://github.com/opensearch-project/OpenSearch/pull/19397) | Migrate deprecated usages of Operations#union |   |
 | v3.1.0 | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Upgrade to Lucene 10.2.1 |   |
 | v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction | [#18394](https://github.com/opensearch-project/OpenSearch/issues/18394) |
-| v3.1.0 | [neural-search#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies for hybrid query |   |
-| v3.1.0 | [learning-to-rank-base#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes for RankerQuery |   |
+| v3.1.0 | [neural-search#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies for hybrid query | [#1334](https://github.com/opensearch-project/neural-search/issues/1334) |
+| v3.1.0 | [learning-to-rank-base#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes for RankerQuery | [#184](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/184) |
 | v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Apache Lucene 10 update | [#11415](https://github.com/opensearch-project/OpenSearch/issues/11415) |
 | v2.18.0 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Update Apache Lucene to 9.12.0 |   |
 

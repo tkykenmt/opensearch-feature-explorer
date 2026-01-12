@@ -242,7 +242,7 @@ PUT /_plugins/_security/api/resource/share
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#1251](https://github.com/opensearch-project/flow-framework/pull/1251) | Onboard to resource-sharing and access control framework | [#1250](https://github.com/opensearch-project/flow-framework/issues/1250) |
-| v2.17.0 | [#838](https://github.com/opensearch-project/flow-framework/pull/838) | Initial implementation of backend role-based access control |   |
+| v2.17.0 | [#838](https://github.com/opensearch-project/flow-framework/pull/838) | Initial implementation of backend role-based access control | [#668](https://github.com/opensearch-project/flow-framework/issues/668) |
 
 ### Issues (Design / RFC)
 - [Issue #1250](https://github.com/opensearch-project/flow-framework/issues/1250): Request to onboard to centralized authz framework

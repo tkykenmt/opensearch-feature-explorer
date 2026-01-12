@@ -222,7 +222,7 @@ POST my-vectors/_bulk
 | v3.0.0 | [#2576](https://github.com/opensearch-project/k-NN/pull/2576) | Client polling, encoder validation, parameter retrieval |   |
 | v3.0.0 | [#2603](https://github.com/opensearch-project/k-NN/pull/2603) | Separate client module for reduced dependencies | [#2602](https://github.com/opensearch-project/k-NN/issues/2602) |
 | v3.0.0 | [#2615](https://github.com/opensearch-project/k-NN/pull/2615) | Metric collection for monitoring |   |
-| v3.0.0 | [#2627](https://github.com/opensearch-project/k-NN/pull/2627) | COSINESIMIL space type fix |   |
+| v3.0.0 | [#2627](https://github.com/opensearch-project/k-NN/pull/2627) | COSINESIMIL space type fix | [#33](https://github.com/opensearch-project/remote-vector-index-builder/issues/33) |
 
 ### Issues (Design / RFC)
 - [Issue #2391](https://github.com/opensearch-project/k-NN/issues/2391): Meta issue tracking all remote build work

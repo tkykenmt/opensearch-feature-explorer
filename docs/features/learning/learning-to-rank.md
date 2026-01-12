@@ -176,7 +176,7 @@ POST my_index/_search
 | v3.3.0 | [#221](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/221) | Hybrid method for float comparison in assertions |   |
 | v3.3.0 | [#222](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/222) | Upgrade spotless plugin and address build deprecations |   |
 | v3.2.0 | [#206](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/206) | Add support to handle missing values for XGBoost models | [#200](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/200) |
-| v3.2.0 | [#202](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/202) | Bump gradle to 8.14, codecov to v5 and support JDK24 |   |
+| v3.2.0 | [#202](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/202) | Bump gradle to 8.14, codecov to v5 and support JDK24 | [#196](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/196) |
 | v3.2.0 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Fix flaky test with ULP tolerance adjustment |   |
-| v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format |   |
+| v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format | [#497](https://github.com/o19s/elasticsearch-learning-to-rank/issues/497) |
 | v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |   |

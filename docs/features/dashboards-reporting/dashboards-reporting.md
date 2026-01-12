@@ -129,10 +129,10 @@ opensearch-reporting-cli \
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#650](https://github.com/opensearch-project/dashboards-reporting/pull/650) | Bump jspdf to fix CVE-2025-57810 |   |
-| v3.4.0 | [#649](https://github.com/opensearch-project/dashboards-reporting/pull/649) | Undefined and null check for date time values |   |
-| v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation |   |
+| v3.4.0 | [#649](https://github.com/opensearch-project/dashboards-reporting/pull/649) | Undefined and null check for date time values | [#308](https://github.com/opensearch-project/dashboards-reporting/issues/308) |
+| v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation | [#414](https://github.com/opensearch-project/dashboards-reporting/issues/414) |
 | v3.0.0 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |   |
-| v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |   |
+| v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix | [#401](https://github.com/opensearch-project/dashboards-reporting/issues/401) |
 | v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |   |
 
 ### Issues (Design / RFC)

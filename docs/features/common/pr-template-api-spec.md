@@ -98,7 +98,7 @@ By submitting this pull request, I confirm that my contribution is made under th
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.17.0 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Add API spec checkbox to common-utils |   |
+| v2.17.0 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Add API spec checkbox to common-utils | [#387](https://github.com/opensearch-project/opensearch-api-specification/issues/387) |
 
 ### Issues (Design / RFC)
 - [Issue #387](https://github.com/opensearch-project/opensearch-api-specification/issues/387): Original proposal for API spec checkbox

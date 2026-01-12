@@ -171,7 +171,7 @@ GET products/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.18.0 | [#15988](https://github.com/opensearch-project/OpenSearch/pull/15988) | Fix search_as_you_type not supporting multi-fields |   |
+| v2.18.0 | [#15988](https://github.com/opensearch-project/OpenSearch/pull/15988) | Fix search_as_you_type not supporting multi-fields | [#5035](https://github.com/opensearch-project/OpenSearch/issues/5035) |
 | v2.18.0 | [#7991](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7991) | Keep Autocomplete suggestion window open and put user hints below the suggestion window |   |
 
 ### Issues (Design / RFC)

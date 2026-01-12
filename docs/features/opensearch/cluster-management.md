@@ -116,7 +116,7 @@ PUT _cluster/settings
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run |   |
+| v3.0.0 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run | [#12249](https://github.com/opensearch-project/OpenSearch/issues/12249) |
 | v3.0.0 | [#16445](https://github.com/opensearch-project/OpenSearch/pull/16445) | Change priority for scheduling reroute during timeout |   |
 
 ### Issues (Design / RFC)

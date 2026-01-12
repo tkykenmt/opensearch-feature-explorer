@@ -170,9 +170,9 @@ PUT my-index/_settings
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#19931](https://github.com/opensearch-project/OpenSearch/pull/19931) | Allow setting index.creation_date on index creation |   |
-| v3.4.0 | [#19532](https://github.com/opensearch-project/OpenSearch/pull/19532) | Add separate shard limit validation for local and remote indices |   |
+| v3.4.0 | [#19532](https://github.com/opensearch-project/OpenSearch/pull/19532) | Add separate shard limit validation for local and remote indices | [#19610](https://github.com/opensearch-project/OpenSearch/issues/19610) |
 | v2.18.0 | [#14948](https://github.com/opensearch-project/OpenSearch/pull/14948) | Fix update settings with null replica not honoring cluster setting |   |
-| v2.18.0 | [#16331](https://github.com/opensearch-project/OpenSearch/pull/16331) | Fix wrong default value when setting routing shards to null |   |
+| v2.18.0 | [#16331](https://github.com/opensearch-project/OpenSearch/pull/16331) | Fix wrong default value when setting routing shards to null | [#16327](https://github.com/opensearch-project/OpenSearch/issues/16327) |
 
 ### Issues (Design / RFC)
 - [Issue #19610](https://github.com/opensearch-project/OpenSearch/issues/19610): Feature request for tier-agnostic shard limit validation

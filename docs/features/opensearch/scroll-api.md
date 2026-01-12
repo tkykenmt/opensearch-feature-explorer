@@ -150,7 +150,7 @@ GET /my-index/_search?scroll=10m
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) | Cache `StoredFieldsReader` for scroll query optimization |   |
+| v3.4.0 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) | Cache `StoredFieldsReader` for scroll query optimization | [#16262](https://github.com/opensearch-project/OpenSearch/issues/16262) |
 | v3.3.0 | [#19031](https://github.com/opensearch-project/OpenSearch/pull/19031) | Improved error handling for invalid scroll IDs |   |
 
 ### Issues (Design / RFC)

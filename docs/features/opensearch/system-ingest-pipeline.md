@@ -213,8 +213,8 @@ PUT _cluster/settings
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18911](https://github.com/opensearch-project/OpenSearch/pull/18911) | Fix system ingest pipeline not triggered when request forwarded from non-ingest node | [#18909](https://github.com/opensearch-project/OpenSearch/issues/18909) |
-| v3.2.0 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories |   |
-| v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |   |
+| v3.2.0 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories | [#1349](https://github.com/opensearch-project/neural-search/issues/1349) |
+| v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline | [#17509](https://github.com/opensearch-project/OpenSearch/issues/17509) |
 | v3.1.0 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations | [#18276](https://github.com/opensearch-project/OpenSearch/issues/18276) |
 
 ### Issues (Design / RFC)

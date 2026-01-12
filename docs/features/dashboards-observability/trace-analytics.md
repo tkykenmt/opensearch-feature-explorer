@@ -160,19 +160,19 @@ http://host:port/app/observability-traces#/services
 | v3.2.0 | [#2472](https://github.com/opensearch-project/dashboards-observability/pull/2472) | [Traces] Make service map max nodes and max edges values user-configurable |   |
 | v3.2.0 | [#2475](https://github.com/opensearch-project/dashboards-observability/pull/2475) | [Bug] Traces error display - fix nested status.code handling |   |
 | v3.2.0 | [#2478](https://github.com/opensearch-project/dashboards-observability/pull/2478) | [Bug] Fixed metrics viz not showing up in local cluster |   |
-| v3.1.0 | [#2457](https://github.com/opensearch-project/dashboards-observability/pull/2457) | Merge custom source and data prepper mode |   |
+| v3.1.0 | [#2457](https://github.com/opensearch-project/dashboards-observability/pull/2457) | Merge custom source and data prepper mode | [#2141](https://github.com/opensearch-project/dashboards-observability/issues/2141) |
 | v3.1.0 | [#2450](https://github.com/opensearch-project/dashboards-observability/pull/2450) | Span Flyout - support new format with nested field flattening |   |
-| v3.0.0 | [#2375](https://github.com/opensearch-project/dashboards-observability/pull/2375) | Support custom logs correlation |   |
+| v3.0.0 | [#2375](https://github.com/opensearch-project/dashboards-observability/pull/2375) | Support custom logs correlation | [#2141](https://github.com/opensearch-project/dashboards-observability/issues/2141) |
 | v3.0.0 | [#2380](https://github.com/opensearch-project/dashboards-observability/pull/2380) | Database selector in integration setup |   |
-| v3.0.0 | [#2383](https://github.com/opensearch-project/dashboards-observability/pull/2383) | Service Content/View Optimizations |   |
+| v3.0.0 | [#2383](https://github.com/opensearch-project/dashboards-observability/pull/2383) | Service Content/View Optimizations | [#2334](https://github.com/opensearch-project/dashboards-observability/issues/2334) |
 | v3.0.0 | [#2390](https://github.com/opensearch-project/dashboards-observability/pull/2390) | Custom source switch to data grid |   |
 | v3.0.0 | [#2398](https://github.com/opensearch-project/dashboards-observability/pull/2398) | Trace to logs correlation |   |
 | v3.0.0 | [#2410](https://github.com/opensearch-project/dashboards-observability/pull/2410) | Amazon Network Firewall Integration |   |
 | v3.0.0 | [#2432](https://github.com/opensearch-project/dashboards-observability/pull/2432) | OTEL attributes field support |   |
 | v2.17.0 | [#2112](https://github.com/opensearch-project/dashboards-observability/pull/2112) | Custom source support for trace analytics |   |
 | v2.17.0 | [#2125](https://github.com/opensearch-project/dashboards-observability/pull/2125) | Update landing page to traces |   |
-| v2.17.0 | [#2006](https://github.com/opensearch-project/dashboards-observability/pull/2006) | MDS fix for local cluster rendering |   |
-| v2.17.0 | [#2023](https://github.com/opensearch-project/dashboards-observability/pull/2023) | Traces/Spans tab fix for App Analytics |   |
+| v2.17.0 | [#2006](https://github.com/opensearch-project/dashboards-observability/pull/2006) | MDS fix for local cluster rendering | [#1878](https://github.com/opensearch-project/dashboards-observability/issues/1878) |
+| v2.17.0 | [#2023](https://github.com/opensearch-project/dashboards-observability/pull/2023) | Traces/Spans tab fix for App Analytics | [#1931](https://github.com/opensearch-project/dashboards-observability/issues/1931) |
 | v2.17.0 | [#2024](https://github.com/opensearch-project/dashboards-observability/pull/2024) | Fix direct URL load |   |
 | v2.17.0 | [#2037](https://github.com/opensearch-project/dashboards-observability/pull/2037) | Breadcrumbs and ID pathing fix |   |
 | v2.17.0 | [#2100](https://github.com/opensearch-project/dashboards-observability/pull/2100) | Fix missing MDS ID in flyout |   |

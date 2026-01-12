@@ -124,7 +124,7 @@ The verification process:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19343](https://github.com/opensearch-project/OpenSearch/pull/19343) | Allow plugins to copy folders into their config dir during installation |   |
-| v3.1.0 | [#18147](https://github.com/opensearch-project/OpenSearch/pull/18147) | Fix native plugin installation error caused by PGP public key change |   |
+| v3.1.0 | [#18147](https://github.com/opensearch-project/OpenSearch/pull/18147) | Fix native plugin installation error caused by PGP public key change | [#3747](https://github.com/opensearch-project/opensearch-build/issues/3747) |
 
 ### Issues (Design / RFC)
 - [Issue #5308](https://github.com/opensearch-project/opensearch-build/issues/5308): New PGP key for signing artifacts starting 3.0.0

@@ -122,7 +122,7 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 | v2.17.0 | [#2082](https://github.com/opensearch-project/security-dashboards-plugin/pull/2082) | Conditionally change where avatar shows up |   |
 | v2.17.0 | [#2083](https://github.com/opensearch-project/security-dashboards-plugin/pull/2083) | Adds page headers for updated UX |   |
 | v2.17.0 | [#2101](https://github.com/opensearch-project/security-dashboards-plugin/pull/2101) | Consistency and density improvements |   |
-| v2.17.0 | [#2057](https://github.com/opensearch-project/security-dashboards-plugin/pull/2057) | Do not register tenancy app if disabled in yml |   |
+| v2.17.0 | [#2057](https://github.com/opensearch-project/security-dashboards-plugin/pull/2057) | Do not register tenancy app if disabled in yml | [#2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056) |
 | v2.17.0 | [#2096](https://github.com/opensearch-project/security-dashboards-plugin/pull/2096) | Fix basepath nextUrl validation |   |
 | v2.17.0 | [#2108](https://github.com/opensearch-project/security-dashboards-plugin/pull/2108) | UX fixes for page header |   |
 | v2.17.0 | [#2084](https://github.com/opensearch-project/security-dashboards-plugin/pull/2084) | Update titles and descriptions |   |

@@ -147,7 +147,7 @@ POST /my-index/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.1.0 | [#18189](https://github.com/opensearch-project/OpenSearch/pull/18189) | Improve sort-query performance for approximated match_all queries | [#18206](https://github.com/opensearch-project/OpenSearch/issues/18206) |
-| v3.1.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Add BooleanQuery rewrite for must_not RangeQuery clauses |   |
+| v3.1.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Add BooleanQuery rewrite for must_not RangeQuery clauses | [#17586](https://github.com/opensearch-project/OpenSearch/issues/17586) |
 
 ### Issues (Design / RFC)
 - [Issue #18206](https://github.com/opensearch-project/OpenSearch/issues/18206): Improve performance for approximated `match_all` sort queries

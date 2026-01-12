@@ -108,7 +108,7 @@ SystemCallFilter=@system-service
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#18309](https://github.com/opensearch-project/OpenSearch/pull/18309) | Add seccomp in systemd config |   |
+| v3.1.0 | [#18309](https://github.com/opensearch-project/OpenSearch/pull/18309) | Add seccomp in systemd config | [#18273](https://github.com/opensearch-project/OpenSearch/issues/18273) |
 
 ### Issues (Design / RFC)
 - [Issue #18273](https://github.com/opensearch-project/OpenSearch/issues/18273): Bug report - fails to start on Debian with network.host: 0.0.0.0

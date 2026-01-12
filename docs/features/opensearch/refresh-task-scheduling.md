@@ -127,7 +127,7 @@ PUT /my-index/_settings
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#17777](https://github.com/opensearch-project/OpenSearch/pull/17777) | Implement fixed interval refresh task scheduling |   |
+| v3.0.0 | [#17777](https://github.com/opensearch-project/OpenSearch/pull/17777) | Implement fixed interval refresh task scheduling | [#17776](https://github.com/opensearch-project/OpenSearch/issues/17776) |
 
 ### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes

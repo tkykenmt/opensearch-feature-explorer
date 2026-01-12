@@ -293,8 +293,8 @@ GET /taxi/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19524](https://github.com/opensearch-project/OpenSearch/pull/19524) | Hybrid Cardinality collector for high cardinality queries |   |
-| v3.4.0 | [#19573](https://github.com/opensearch-project/OpenSearch/pull/19573) | Filter rewrite + skip list for sub-aggregation optimization |   |
+| v3.4.0 | [#19524](https://github.com/opensearch-project/OpenSearch/pull/19524) | Hybrid Cardinality collector for high cardinality queries | [#19260](https://github.com/opensearch-project/OpenSearch/issues/19260) |
+| v3.4.0 | [#19573](https://github.com/opensearch-project/OpenSearch/pull/19573) | Filter rewrite + skip list for sub-aggregation optimization | [#17447](https://github.com/opensearch-project/OpenSearch/issues/17447) |
 | v3.4.0 | [#19648](https://github.com/opensearch-project/OpenSearch/pull/19648) | MergingDigest implementation for percentiles aggregation | [#18122](https://github.com/opensearch-project/OpenSearch/issues/18122) |
 | v3.4.0 | [#19989](https://github.com/opensearch-project/OpenSearch/pull/19989) | Primitive arrays for matrix_stats aggregation | [#19741](https://github.com/opensearch-project/OpenSearch/issues/19741) |
 | v3.4.0 | [#20057](https://github.com/opensearch-project/OpenSearch/pull/20057) | Skip list optimization for auto_date_histogram | [#19827](https://github.com/opensearch-project/OpenSearch/issues/19827) |

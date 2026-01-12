@@ -160,7 +160,7 @@ grpcurl -insecure localhost:9400 list
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18616](https://github.com/opensearch-project/OpenSearch/pull/18616) | Update interface to distinguish between aux transport types |   |
-| v3.2.0 | [security#5375](https://github.com/opensearch-project/security/pull/5375) | TLS support for auxiliary transports in security plugin |   |
+| v3.2.0 | [security#5375](https://github.com/opensearch-project/security/pull/5375) | TLS support for auxiliary transports in security plugin | [#17795](https://github.com/opensearch-project/OpenSearch/issues/17795) |
 
 ### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations

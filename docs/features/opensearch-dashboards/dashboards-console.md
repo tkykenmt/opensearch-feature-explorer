@@ -132,7 +132,7 @@ PATCH _plugins/_security/api/roles/my_role
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#10361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10361) | Add support for PATCH method in dev tools |   |
+| v3.4.0 | [#10361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10361) | Add support for PATCH method in dev tools | [#10105](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10105) |
 | v3.4.0 | [#10595](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10595) | Fix: Allow updating of console_polling through the UI | [#10544](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10544) |
 
 ### Issues (Design / RFC)

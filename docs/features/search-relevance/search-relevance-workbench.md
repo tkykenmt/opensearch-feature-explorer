@@ -178,21 +178,21 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.2.0 | [#604](https://github.com/opensearch-project/dashboards-search-relevance/pull/604) | Date picker fields for implicit judgment filtering |   |
 | v3.2.0 | [#614](https://github.com/opensearch-project/dashboards-search-relevance/pull/614) | Default to new SRW UI with opt-out option | [#605](https://github.com/opensearch-project/dashboards-search-relevance/issues/605) |
 | v3.2.0 | [#567](https://github.com/opensearch-project/dashboards-search-relevance/pull/567) | Show names instead of IDs in experiment creation |   |
-| v3.2.0 | [#574](https://github.com/opensearch-project/dashboards-search-relevance/pull/574) | Retrieve experiment results using experimentId field |   |
+| v3.2.0 | [#574](https://github.com/opensearch-project/dashboards-search-relevance/pull/574) | Retrieve experiment results using experimentId field | [#175](https://github.com/opensearch-project/search-relevance/issues/175) |
 | v3.2.0 | [#573](https://github.com/opensearch-project/dashboards-search-relevance/pull/573) | Add tooltips for metrics |   |
 | v3.2.0 | [#572](https://github.com/opensearch-project/dashboards-search-relevance/pull/572) | Remove IDs from experiment table, link type instead |   |
 | v3.2.0 | [#593](https://github.com/opensearch-project/dashboards-search-relevance/pull/593) | Publish metrics stats without authorization |   |
 | v3.2.0 | [#165](https://github.com/opensearch-project/search-relevance/pull/165) | Date filtering for UBI events in implicit judgments |   |
 | v3.2.0 | [#174](https://github.com/opensearch-project/search-relevance/pull/174) | Enrich results index for dashboard visualization |   |
-| v3.2.0 | [#139](https://github.com/opensearch-project/search-relevance/pull/139) | Task scheduling for hybrid optimizer experiments |   |
-| v3.2.0 | [#167](https://github.com/opensearch-project/search-relevance/pull/167) | Task scheduling for pointwise experiments |   |
+| v3.2.0 | [#139](https://github.com/opensearch-project/search-relevance/pull/139) | Task scheduling for hybrid optimizer experiments | [#159](https://github.com/opensearch-project/search-relevance/issues/159) |
+| v3.2.0 | [#167](https://github.com/opensearch-project/search-relevance/pull/167) | Task scheduling for pointwise experiments | [#162](https://github.com/opensearch-project/search-relevance/issues/162) |
 | v3.2.0 | [#578](https://github.com/opensearch-project/dashboards-search-relevance/pull/578) | Improve messaging when backend plugin is disabled | [#543](https://github.com/opensearch-project/dashboards-search-relevance/issues/543) |
-| v3.2.0 | [#582](https://github.com/opensearch-project/dashboards-search-relevance/pull/582) | Do not show Pipeline error if there are no pipelines yet |   |
-| v3.2.0 | [#585](https://github.com/opensearch-project/dashboards-search-relevance/pull/585) | Avoid validation results overflow in Search Configuration creation |   |
-| v3.2.0 | [#586](https://github.com/opensearch-project/dashboards-search-relevance/pull/586) | Fix wrong unique number of results in Venn diagram |   |
+| v3.2.0 | [#582](https://github.com/opensearch-project/dashboards-search-relevance/pull/582) | Do not show Pipeline error if there are no pipelines yet | [#557](https://github.com/opensearch-project/dashboards-search-relevance/issues/557) |
+| v3.2.0 | [#585](https://github.com/opensearch-project/dashboards-search-relevance/pull/585) | Avoid validation results overflow in Search Configuration creation | [#584](https://github.com/opensearch-project/dashboards-search-relevance/issues/584) |
+| v3.2.0 | [#586](https://github.com/opensearch-project/dashboards-search-relevance/pull/586) | Fix wrong unique number of results in Venn diagram | [#529](https://github.com/opensearch-project/dashboards-search-relevance/issues/529) |
 | v3.2.0 | [#176](https://github.com/opensearch-project/search-relevance/pull/176) | Bug fix on REST APIs error status for creations |   |
-| v3.2.0 | [#177](https://github.com/opensearch-project/search-relevance/pull/177) | Added queryText and referenceAnswer text validation from manual input |   |
-| v3.2.0 | [#187](https://github.com/opensearch-project/search-relevance/pull/187) | Fixed pipeline parameter being ignored in pairwise metrics processing for hybrid |   |
+| v3.2.0 | [#177](https://github.com/opensearch-project/search-relevance/pull/177) | Added queryText and referenceAnswer text validation from manual input | [#186](https://github.com/opensearch-project/search-relevance/issues/186) |
+| v3.2.0 | [#187](https://github.com/opensearch-project/search-relevance/pull/187) | Fixed pipeline parameter being ignored in pairwise metrics processing for hybrid | [#170](https://github.com/opensearch-project/search-relevance/issues/170) |
 | v3.2.0 | [#612](https://github.com/opensearch-project/dashboards-search-relevance/pull/612) | Bug fixes for error messages not render correctly for toast notifications |   |
 | v3.1.0 | [#533](https://github.com/opensearch-project/opensearch-dashboards-search-relevance/pull/533) | Add search relevance workbench features (Dashboards) |   |
 | v3.1.0 | [#26](https://github.com/opensearch-project/opensearch-search-relevance/pull/26) | Added new experiment type for hybrid search |   |
@@ -205,19 +205,19 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.1.0 | [#5376](https://github.com/opensearch-project/security/pull/5376) | Integrate search-relevance functionalities with security plugin |   |
 | v3.1.0 | [#70](https://github.com/opensearch-project/search-relevance/pull/70) | Add realistic ESCI-based test dataset |   |
 | v3.1.0 | [#22](https://github.com/opensearch-project/search-relevance/pull/22) | Build search request with normal parsing and wrapper query |   |
-| v3.1.0 | [#27](https://github.com/opensearch-project/search-relevance/pull/27) | LLM Judgment Processor improvements |   |
+| v3.1.0 | [#27](https://github.com/opensearch-project/search-relevance/pull/27) | LLM Judgment Processor improvements | [#28](https://github.com/opensearch-project/search-relevance/issues/28) |
 | v3.1.0 | [#45](https://github.com/opensearch-project/search-relevance/pull/45) | Handle when no experiment variants exist |   |
 | v3.1.0 | [#60](https://github.com/opensearch-project/search-relevance/pull/60) | Enable Search Relevance backend plugin in demo scripts |   |
 | v3.1.0 | [#64](https://github.com/opensearch-project/search-relevance/pull/64) | Migrate from judgment score to judgment rating |   |
-| v3.1.0 | [#65](https://github.com/opensearch-project/search-relevance/pull/65) | Added lazy index creation for APIs |   |
+| v3.1.0 | [#65](https://github.com/opensearch-project/search-relevance/pull/65) | Added lazy index creation for APIs | [#55](https://github.com/opensearch-project/search-relevance/issues/55) |
 | v3.1.0 | [#69](https://github.com/opensearch-project/search-relevance/pull/69) | Extend hybrid search optimizer demo script |   |
-| v3.1.0 | [#74](https://github.com/opensearch-project/search-relevance/pull/74) | Set limit for number of fields programmatically |   |
-| v3.1.0 | [#77](https://github.com/opensearch-project/search-relevance/pull/77) | Change model for Judgment entity |   |
-| v3.1.0 | [#93](https://github.com/opensearch-project/search-relevance/pull/93) | Fix judgment handling for implicit judgments |   |
+| v3.1.0 | [#74](https://github.com/opensearch-project/search-relevance/pull/74) | Set limit for number of fields programmatically | [#71](https://github.com/opensearch-project/search-relevance/issues/71) |
+| v3.1.0 | [#77](https://github.com/opensearch-project/search-relevance/pull/77) | Change model for Judgment entity | [#71](https://github.com/opensearch-project/search-relevance/issues/71) |
+| v3.1.0 | [#93](https://github.com/opensearch-project/search-relevance/pull/93) | Fix judgment handling for implicit judgments | [#71](https://github.com/opensearch-project/search-relevance/issues/71) |
 | v3.1.0 | [#98](https://github.com/opensearch-project/search-relevance/pull/98) | Refactor and fix LLM judgment duplication issue |   |
-| v3.1.0 | [#99](https://github.com/opensearch-project/search-relevance/pull/99) | Change model for Experiment and Evaluation Result entities |   |
+| v3.1.0 | [#99](https://github.com/opensearch-project/search-relevance/pull/99) | Change model for Experiment and Evaluation Result entities | [#71](https://github.com/opensearch-project/search-relevance/issues/71) |
 | v3.1.0 | [#116](https://github.com/opensearch-project/search-relevance/pull/116) | Add text validation and query set file size check |   |
-| v3.1.0 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer |   |
+| v3.1.0 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer | [#109](https://github.com/opensearch-project/search-relevance/issues/109) |
 | v3.4.0 | [#308](https://github.com/opensearch-project/search-relevance/pull/308) | Fix floating-point precision issues in Hybrid Optimizer weight generation | [#298](https://github.com/opensearch-project/search-relevance/issues/298) |
 | v3.4.0 | [#292](https://github.com/opensearch-project/search-relevance/pull/292) | Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion | [#282](https://github.com/opensearch-project/search-relevance/issues/282) |
 | v3.4.0 | [#260](https://github.com/opensearch-project/search-relevance/pull/260) | Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL | [#255](https://github.com/opensearch-project/search-relevance/issues/255) |

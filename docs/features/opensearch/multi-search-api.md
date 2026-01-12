@@ -152,7 +152,7 @@ GET _msearch/template
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.18.0 | [#16265](https://github.com/opensearch-project/OpenSearch/pull/16265) | Fix multi-search with template doesn't return status code |   |
+| v2.18.0 | [#16265](https://github.com/opensearch-project/OpenSearch/pull/16265) | Fix multi-search with template doesn't return status code | [#11133](https://github.com/opensearch-project/OpenSearch/issues/11133) |
 
 ### Issues (Design / RFC)
 - [Issue #11133](https://github.com/opensearch-project/OpenSearch/issues/11133): Bug report for missing status field

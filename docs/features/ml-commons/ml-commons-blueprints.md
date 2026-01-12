@@ -157,7 +157,7 @@ POST /_plugins/_ml/connectors/_create
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.1.0 | [#3871](https://github.com/opensearch-project/ml-commons/pull/3871) | Add blueprint for Bedrock Claude v4 |   |
-| v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |   |
+| v3.0.0 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search | [#3619](https://github.com/opensearch-project/ml-commons/issues/3619) |
 | v3.0.0 | [#3584](https://github.com/opensearch-project/ml-commons/pull/3584) | Add blueprint for Claude 3.7 on Bedrock |   |
 | v3.0.0 | [#3725](https://github.com/opensearch-project/ml-commons/pull/3725) | Add standard blueprint for Azure embedding ada2 | [#3686](https://github.com/opensearch-project/ml-commons/issues/3686) |
 | v3.0.0 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |   |

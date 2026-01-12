@@ -157,7 +157,7 @@ Throttle Enabled: {{ctx.action.throttle_enabled}}
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.17.0 | [#710](https://github.com/opensearch-project/common-utils/pull/710) | Add missing ctx variables |   |
+| v2.17.0 | [#710](https://github.com/opensearch-project/common-utils/pull/710) | Add missing ctx variables | [#200](https://github.com/opensearch-project/alerting/issues/200) |
 
 ### Issues (Design / RFC)
 - [Issue #200](https://github.com/opensearch-project/alerting/issues/200): Original feature request for missing ctx variables

@@ -130,10 +130,10 @@ The `newExperience` DataGrid table option was removed. The `DefaultDiscoverTable
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#9446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9446) | Remove deprecated CssDistFilename |   |
-| v3.0.0 | [#9448](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9448) | Remove withLongNumerals in HttpFetchOptions |   |
+| v3.0.0 | [#9446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9446) | Remove deprecated CssDistFilename | [#9253](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9253) |
+| v3.0.0 | [#9448](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9448) | Remove withLongNumerals in HttpFetchOptions | [#9253](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9253) |
 | v3.0.0 | [#9484](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9484) | Remove @elastic/filesaver | [#9341](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9341) |
-| v3.0.0 | [#9531](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9531) | Remove newExperience table option |   |
+| v3.0.0 | [#9531](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9531) | Remove newExperience table option | [#9253](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9253) |
 | v2.x | [#5592](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5592) | Deprecate withLongNumerals |   |
 | v2.x | [#7625](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7625) | Deprecate CssDistFilename |   |
 | v2.x | [#9511](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9511) | Deprecate newExperience table option |   |

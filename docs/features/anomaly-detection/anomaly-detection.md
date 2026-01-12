@@ -269,7 +269,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 | v3.3.0 | [#1563](https://github.com/opensearch-project/anomaly-detection/pull/1563) | Adding AD suggest API |   |
 | v3.3.0 | [#1098](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1098) | Add Suggest parameters button + move operational settings to Configure Model |   |
 | v3.3.0 | [#1565](https://github.com/opensearch-project/anomaly-detection/pull/1565) | Make frequency optional; fix STOPPED state; add ecommerce tests |   |
-| v3.3.0 | [#1571](https://github.com/opensearch-project/anomaly-detection/pull/1571) | Fix flaky ITs |   |
+| v3.3.0 | [#1571](https://github.com/opensearch-project/anomaly-detection/pull/1571) | Fix flaky ITs | [#5693](https://github.com/opensearch-project/opensearch-build/issues/5693) |
 | v3.3.0 | [#1572](https://github.com/opensearch-project/anomaly-detection/pull/1572) | Fix tests by adding the new node setting for protected types |   |
 | v3.3.0 | [#1579](https://github.com/opensearch-project/anomaly-detection/pull/1579) | Exclude long-running tests from integTestRemote |   |
 | v3.3.0 | [#1546](https://github.com/opensearch-project/anomaly-detection/pull/1546) | Updates search handler to consume resource authz and updates resource authz related tests |   |
@@ -286,7 +286,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 | v3.2.0 | [#1068](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1068) | Fix: fetch full forecaster list, and fix delete bug |   |
 | v3.0.0 | [#1460](https://github.com/opensearch-project/anomaly-detection/pull/1460) | AWS SAM template for WAF log analysis |   |
 | v3.0.0 | [#1446](https://github.com/opensearch-project/anomaly-detection/pull/1446) | Distinguish local cluster when name matches remote |   |
-| v3.0.0 | [#1424](https://github.com/opensearch-project/anomaly-detection/pull/1424) | Fix breaking changes for 3.0.0 release |   |
+| v3.0.0 | [#1424](https://github.com/opensearch-project/anomaly-detection/pull/1424) | Fix breaking changes for 3.0.0 release | [#3351](https://github.com/opensearch-project/OpenSearch/issues/3351) |
 | v3.0.0 | [#1450](https://github.com/opensearch-project/anomaly-detection/pull/1450) | Java Agent migration (SecurityManager removal) |   |
 | v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Dual cluster gradle run for development |   |
 | v2.18.0 | [#1341](https://github.com/opensearch-project/anomaly-detection/pull/1341) | Add rule validation in AnomalyDetector constructor |   |

@@ -160,10 +160,10 @@ Query 2 - Boosted field:
 | v3.4.0 | [#687](https://github.com/opensearch-project/dashboards-search-relevance/pull/687) | Added support for filtering Query Sets by GUID |   |
 | v3.3.0 | [#632](https://github.com/opensearch-project/dashboards-search-relevance/pull/632) | Improve color coding for search result comparison |   |
 | v3.3.0 | [#637](https://github.com/opensearch-project/dashboards-search-relevance/pull/637) | Allow more than 10 results in pairwise comparison view |   |
-| v3.3.0 | [#645](https://github.com/opensearch-project/dashboards-search-relevance/pull/645) | Show first 10,000 experiment results |   |
-| v3.1.0 | [#542](https://github.com/opensearch-project/dashboards-search-relevance/pull/542) | Fix schema validation in POST Query Sets endpoint |   |
-| v2.17.0 | [#427](https://github.com/opensearch-project/dashboards-search-relevance/pull/427) | Add compare queries card to search use case overview page |   |
-| v2.14.0 | [#383](https://github.com/opensearch-project/dashboards-search-relevance/pull/383) | Multi-datasource support for Search-relevance |   |
+| v3.3.0 | [#645](https://github.com/opensearch-project/dashboards-search-relevance/pull/645) | Show first 10,000 experiment results | [#157](https://github.com/opensearch-project/search-relevance/issues/157) |
+| v3.1.0 | [#542](https://github.com/opensearch-project/dashboards-search-relevance/pull/542) | Fix schema validation in POST Query Sets endpoint | [#541](https://github.com/opensearch-project/dashboards-search-relevance/issues/541) |
+| v2.17.0 | [#427](https://github.com/opensearch-project/dashboards-search-relevance/pull/427) | Add compare queries card to search use case overview page | [#7807](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7807) |
+| v2.14.0 | [#383](https://github.com/opensearch-project/dashboards-search-relevance/pull/383) | Multi-datasource support for Search-relevance | [#371](https://github.com/opensearch-project/dashboards-search-relevance/issues/371) |
 | v2.14.0 | [#352](https://github.com/opensearch-project/dashboards-search-relevance/pull/352) | Add ability to select a search pipeline in comparison tool | [#260](https://github.com/opensearch-project/dashboards-search-relevance/issues/260) |
 
 ### Issues (Design / RFC)

@@ -110,6 +110,6 @@ For Cypress testing, an alternative Docker development environment is available:
 | v3.0.0 | [#9325](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9325) | Add 2.19 Release Notes | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.0.0 | [#9362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9362) | Docker development environment for Cypress |   |
 | v3.0.0 | [#9463](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9463) | Understanding Discover 2.0 documentation |   |
-| v3.0.0 | [#9467](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9467) | Add Joey Liu as maintainer |   |
+| v3.0.0 | [#9467](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9467) | Add Joey Liu as maintainer | [#295](https://github.com/opensearch-project/.github/issues/295) |
 | v3.0.0 | [#9525](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9525) | Getting started with Discover 2.0 |   |
 | v3.0.0 | [#6585](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6585) | Pre-commit hook for developer docs | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

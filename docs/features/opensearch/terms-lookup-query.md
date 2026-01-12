@@ -141,7 +141,7 @@ GET /students/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Add query clause support for terms lookup |   |
+| v3.2.0 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Add query clause support for terms lookup | [#17599](https://github.com/opensearch-project/OpenSearch/issues/17599) |
 
 ### Issues (Design / RFC)
 - [Issue #17599](https://github.com/opensearch-project/OpenSearch/issues/17599): Feature request for query-based lookup

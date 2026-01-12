@@ -125,9 +125,9 @@ POST /_plugins/_sql
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support | [#3286](https://github.com/opensearch-project/sql/issues/3286) |
-| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints |   |
+| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints | [#3282](https://github.com/opensearch-project/sql/issues/3282) |
 | v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement | [#3281](https://github.com/opensearch-project/sql/issues/3281) |
-| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |   |
+| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type | [#3339](https://github.com/opensearch-project/sql/issues/3339) |
 | v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage | [#3284](https://github.com/opensearch-project/sql/issues/3284) |
 | v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format | [#3280](https://github.com/opensearch-project/sql/issues/3280) |
 | v3.0.0 | [#3439](https://github.com/opensearch-project/sql/pull/3439) | Support CAST function with Calcite | [#3417](https://github.com/opensearch-project/sql/issues/3417) |

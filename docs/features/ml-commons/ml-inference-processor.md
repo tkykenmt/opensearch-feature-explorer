@@ -267,10 +267,10 @@ POST _plugins/_ml/agents/_register
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#4111](https://github.com/opensearch-project/ml-commons/pull/4111) | Add passthrough post process function |   |
-| v3.3.0 | [#4236](https://github.com/opensearch-project/ml-commons/pull/4236) | Add output transformation support with mean pooling |   |
+| v3.3.0 | [#4236](https://github.com/opensearch-project/ml-commons/pull/4236) | Add output transformation support with mean pooling | [#18091](https://github.com/opensearch-project/OpenSearch/issues/18091) |
 | v3.3.0 | [#4093](https://github.com/opensearch-project/ml-commons/pull/4093) | Add processor chain framework |   |
 | v3.3.0 | [#4260](https://github.com/opensearch-project/ml-commons/pull/4260) | Refactor processor chain with additional processors |   |
-| v2.17.0 | [#2801](https://github.com/opensearch-project/ml-commons/pull/2801) | Support one_to_one in ML Inference Search Response Processor |   |
+| v2.17.0 | [#2801](https://github.com/opensearch-project/ml-commons/pull/2801) | Support one_to_one in ML Inference Search Response Processor | [#2173](https://github.com/opensearch-project/ml-commons/issues/2173) |
 | v2.16.0 | - | ML Inference Search Request/Response Processors |   |
 | v2.14.0 | - | Initial ML Inference Ingest Processor |   |
 

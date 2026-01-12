@@ -234,12 +234,12 @@ Job Scheduler supports two schedule formats:
 | v3.2.0 | [#790](https://github.com/opensearch-project/job-scheduler/pull/790) | Use Text Blocks when defining multi-line strings |   |
 | v3.1.0 | [#778](https://github.com/opensearch-project/job-scheduler/pull/778) | Add CHANGELOG and changelog_verifier workflow | [#777](https://github.com/opensearch-project/job-scheduler/issues/777) |
 | v3.1.0 | [#766](https://github.com/opensearch-project/job-scheduler/pull/766) | Increment version to 3.1.0-SNAPSHOT |   |
-| v3.1.0 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency |   |
+| v3.1.0 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency | [#18113](https://github.com/opensearch-project/OpenSearch/issues/18113) |
 | v3.0.0 | [#702](https://github.com/opensearch-project/job-scheduler/pull/702) | Enable custom start commands and options to resolve GHA issues | [#698](https://github.com/opensearch-project/job-scheduler/issues/698) |
-| v3.0.0 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring |   |
+| v3.0.0 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring | [#8110](https://github.com/opensearch-project/OpenSearch/issues/8110) |
 | v3.0.0 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |   |
-| v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection |   |
-| v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates |   |
+| v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection | [#238](https://github.com/opensearch-project/opensearch-plugins/issues/238) |
+| v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates | [#14984](https://github.com/opensearch-project/OpenSearch/issues/14984) |
 
 ### Issues (Design / RFC)
 - [Issue #808](https://github.com/opensearch-project/job-scheduler/issues/808): Feature request for Job execution History index

@@ -286,10 +286,10 @@ When settings are updated:
 | v3.0.0 | [#16958](https://github.com/opensearch-project/OpenSearch/pull/16958) | Core pull-based ingestion engine, APIs, and Kafka plugin | [#16927](https://github.com/opensearch-project/OpenSearch/issues/16927) |
 | v3.0.0 | [#17354](https://github.com/opensearch-project/OpenSearch/pull/17354) | Offset management with rewind by offset/timestamp support | [#17318](https://github.com/opensearch-project/OpenSearch/issues/17318) |
 | v3.0.0 | [#17427](https://github.com/opensearch-project/OpenSearch/pull/17427) | Error handling strategies (DROP and BLOCK) | [#17085](https://github.com/opensearch-project/OpenSearch/issues/17085) |
-| v3.0.0 | [#17615](https://github.com/opensearch-project/OpenSearch/pull/17615) | Kinesis plugin support |   |
-| v3.0.0 | [#17631](https://github.com/opensearch-project/OpenSearch/pull/17631) | Ingestion management APIs (pause, resume, get state) |   |
-| v3.0.0 | [#17768](https://github.com/opensearch-project/OpenSearch/pull/17768) | Disable index API for ingestion engine |   |
-| v3.0.0 | [#17822](https://github.com/opensearch-project/OpenSearch/pull/17822) | Update and delete support with auto-generated IDs |   |
+| v3.0.0 | [#17615](https://github.com/opensearch-project/OpenSearch/pull/17615) | Kinesis plugin support | [#16930](https://github.com/opensearch-project/OpenSearch/issues/16930) |
+| v3.0.0 | [#17631](https://github.com/opensearch-project/OpenSearch/pull/17631) | Ingestion management APIs (pause, resume, get state) | [#17442](https://github.com/opensearch-project/OpenSearch/issues/17442) |
+| v3.0.0 | [#17768](https://github.com/opensearch-project/OpenSearch/pull/17768) | Disable index API for ingestion engine | [#16930](https://github.com/opensearch-project/OpenSearch/issues/16930) |
+| v3.0.0 | [#17822](https://github.com/opensearch-project/OpenSearch/pull/17822) | Update and delete support with auto-generated IDs | [#16929](https://github.com/opensearch-project/OpenSearch/issues/16929) |
 | v3.0.0 | [#17863](https://github.com/opensearch-project/OpenSearch/pull/17863) | Configurable maxPollSize and pollTimeout |   |
 | v3.0.0 | [#17918](https://github.com/opensearch-project/OpenSearch/pull/17918) | External versioning support for out-of-order updates | [#17913](https://github.com/opensearch-project/OpenSearch/issues/17913) |
 | v3.0.0 | [#17912](https://github.com/opensearch-project/OpenSearch/pull/17912) | Multi-threaded writer support with configurable processor threads | [#17875](https://github.com/opensearch-project/OpenSearch/issues/17875) |

@@ -189,37 +189,37 @@ config:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#5341](https://github.com/opensearch-project/security/pull/5341) | Plugin permission declaration mechanism |   |
+| v3.2.0 | [#5341](https://github.com/opensearch-project/security/pull/5341) | Plugin permission declaration mechanism | [#4439](https://github.com/opensearch-project/security/issues/4439) |
 | v3.2.0 | [#5467](https://github.com/opensearch-project/security/pull/5467) | Nested JWT claim support for subject | [#5430](https://github.com/opensearch-project/security/issues/5430) |
 | v3.2.0 | [#5530](https://github.com/opensearch-project/security/pull/5530) | Stream transport security integration |   |
 | v3.2.0 | [#5423](https://github.com/opensearch-project/security/pull/5423) | Subject interface compilation fix |   |
-| v3.2.0 | [#5432](https://github.com/opensearch-project/security/pull/5432) | SecureHttpTransportParameters provider |   |
+| v3.2.0 | [#5432](https://github.com/opensearch-project/security/pull/5432) | SecureHttpTransportParameters provider | [#18559](https://github.com/opensearch-project/OpenSearch/issues/18559) |
 | v3.2.0 | [#5445](https://github.com/opensearch-project/security/pull/5445) | Cluster permission detection fix |   |
-| v3.2.0 | [#5456](https://github.com/opensearch-project/security/pull/5456) | Mixed cluster config update fix |   |
-| v3.2.0 | [#5506](https://github.com/opensearch-project/security/pull/5506) | JWT clock skew tolerance fix |   |
-| v3.2.0 | [#5517](https://github.com/opensearch-project/security/pull/5517) | Demo certificate installation fix |   |
+| v3.2.0 | [#5456](https://github.com/opensearch-project/security/pull/5456) | Mixed cluster config update fix | [#5365](https://github.com/opensearch-project/security/issues/5365) |
+| v3.2.0 | [#5506](https://github.com/opensearch-project/security/pull/5506) | JWT clock skew tolerance fix | [#5505](https://github.com/opensearch-project/security/issues/5505) |
+| v3.2.0 | [#5517](https://github.com/opensearch-project/security/pull/5517) | Demo certificate installation fix | [#5044](https://github.com/opensearch-project/security/issues/5044) |
 | v3.2.0 | [#5436](https://github.com/opensearch-project/security/pull/5436) | JWT Vendor refactoring |   |
 | v3.2.0 | [#5519](https://github.com/opensearch-project/security/pull/5519) | Tenancy access serialization |   |
 | v3.0.0 | [#5089](https://github.com/opensearch-project/security/pull/5089) | Fix Blake2b hash implementation (breaking) | [#4274](https://github.com/opensearch-project/security/issues/4274) |
 | v3.0.0 | [#5220](https://github.com/opensearch-project/security/pull/5220) | Remove OpenSSL provider (breaking) |   |
-| v3.0.0 | [#5224](https://github.com/opensearch-project/security/pull/5224) | Remove whitelist settings (breaking) |   |
+| v3.0.0 | [#5224](https://github.com/opensearch-project/security/pull/5224) | Remove whitelist settings (breaking) | [#1483](https://github.com/opensearch-project/OpenSearch/issues/1483) |
 | v3.0.0 | [#4380](https://github.com/opensearch-project/security/pull/4380) | Optimized Privilege Evaluation |   |
-| v3.0.0 | [#5099](https://github.com/opensearch-project/security/pull/5099) | CIDR ranges in ignore_hosts |   |
+| v3.0.0 | [#5099](https://github.com/opensearch-project/security/pull/5099) | CIDR ranges in ignore_hosts | [#4927](https://github.com/opensearch-project/security/issues/4927) |
 | v3.0.0 | [#5119](https://github.com/opensearch-project/security/pull/5119) | Add 'good' password validation strength |   |
-| v3.0.0 | [#5160](https://github.com/opensearch-project/security/pull/5160) | Add stop-replication permission |   |
+| v3.0.0 | [#5160](https://github.com/opensearch-project/security/pull/5160) | Add stop-replication permission | [#726](https://github.com/opensearch-project/index-management/issues/726) |
 | v3.0.0 | [#5153](https://github.com/opensearch-project/security/pull/5153) | Secure password generator action |   |
 | v3.0.0 | [#5193](https://github.com/opensearch-project/security/pull/5193) | Default to v7 config models | [#5191](https://github.com/opensearch-project/security/issues/5191) |
-| v3.0.0 | [#5175](https://github.com/opensearch-project/security/pull/5175) | Escape pipe character in usernames |   |
+| v3.0.0 | [#5175](https://github.com/opensearch-project/security/pull/5175) | Escape pipe character in usernames | [#2756](https://github.com/opensearch-project/security/issues/2756) |
 | v3.0.0 | [#5217](https://github.com/opensearch-project/security/pull/5217) | Fix IllegalArgumentException in stateful index privileges | [#5216](https://github.com/opensearch-project/security/issues/5216) |
 | v3.0.0 | [#5243](https://github.com/opensearch-project/security/pull/5243) | Fix DlsFlsFilterLeafReader termVectors assertion errors | [#5238](https://github.com/opensearch-project/security/issues/5238) |
 | v3.0.0 | [#5304](https://github.com/opensearch-project/security/pull/5304) | Fix DlsFlsFilterLeafReader PointValues and object attributes |   |
-| v3.0.0 | [#4979](https://github.com/opensearch-project/security/pull/4979) | Only check validity of certs in node certificate chain |   |
+| v3.0.0 | [#4979](https://github.com/opensearch-project/security/pull/4979) | Only check validity of certs in node certificate chain | [#4949](https://github.com/opensearch-project/security/issues/4949) |
 | v3.0.0 | [#5157](https://github.com/opensearch-project/security/pull/5157) | Fix version matcher in demo config installer |   |
 | v3.0.0 | [#2218](https://github.com/opensearch-project/security/pull/2218) | Remove tenant panels when multitenancy disabled | [#2194](https://github.com/opensearch-project/security/issues/2194) |
 | v3.0.0 | [#2223](https://github.com/opensearch-project/security/pull/2223) | Add cat shard API permission |   |
 | v3.0.0 | [#4966](https://github.com/opensearch-project/security/pull/4966) | Run Security build on opensearch-build image | [#3494](https://github.com/opensearch-project/security/issues/3494) |
 | v3.0.0 | [#1454](https://github.com/opensearch-project/security/pull/1454) | Java-agent gradle plugin for SecurityManager phase-off |   |
-| v3.0.0 | [#1414](https://github.com/opensearch-project/security/pull/1414) | Use testclusters when testing with security |   |
+| v3.0.0 | [#1414](https://github.com/opensearch-project/security/pull/1414) | Use testclusters when testing with security | [#1413](https://github.com/opensearch-project/security/issues/1413) |
 | v3.0.0 | [#713](https://github.com/opensearch-project/security/pull/713) | Fetch certs from security repo, remove local demo certs |   |
 | v3.0.0 | [#1281](https://github.com/opensearch-project/security/pull/1281) | Fix custom rule creation |   |
 | v3.0.0 | [#1401](https://github.com/opensearch-project/security/pull/1401) | Fix Docker Security Tests qualifier parsing |   |

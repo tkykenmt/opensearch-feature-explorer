@@ -166,7 +166,7 @@ ActionListener<SearchResponse> searchStatusStatsUpdateListener = ActionListener.
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#18601](https://github.com/opensearch-project/OpenSearch/pull/18601) | Add search API tracker |   |
+| v3.4.0 | [#18601](https://github.com/opensearch-project/OpenSearch/pull/18601) | Add search API tracker | [#18377](https://github.com/opensearch-project/OpenSearch/issues/18377) |
 
 ### Issues (Design / RFC)
 - [Issue #18377](https://github.com/opensearch-project/OpenSearch/issues/18377): Feature request for tracking non-successful Search API calls across coordinator nodes

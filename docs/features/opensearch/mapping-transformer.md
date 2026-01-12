@@ -198,7 +198,7 @@ Transformed mapping (after semantic field transformer):
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#17635](https://github.com/opensearch-project/OpenSearch/pull/17635) | Initial implementation of mapping transformer |   |
+| v3.0.0 | [#17635](https://github.com/opensearch-project/OpenSearch/pull/17635) | Initial implementation of mapping transformer | [#17500](https://github.com/opensearch-project/OpenSearch/issues/17500) |
 
 ### Issues (Design / RFC)
 - [Issue #17500](https://github.com/opensearch-project/OpenSearch/issues/17500): RFC - Introduce Mapping Transformer

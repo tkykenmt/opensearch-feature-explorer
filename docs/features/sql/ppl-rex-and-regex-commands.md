@@ -216,8 +216,8 @@ source=data | rex field=phone mode=sed "s/(\d{3})(\d{3})(\d{4})/\1-\2-\3/" | fie
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#4083](https://github.com/opensearch-project/sql/pull/4083) | Implementation of `regex` command in PPL |   |
-| v3.3.0 | [#4109](https://github.com/opensearch-project/sql/pull/4109) | Core implementation of `rex` command (extract mode) |   |
+| v3.3.0 | [#4083](https://github.com/opensearch-project/sql/pull/4083) | Implementation of `regex` command in PPL | [#4111](https://github.com/opensearch-project/sql/issues/4111) |
+| v3.3.0 | [#4109](https://github.com/opensearch-project/sql/pull/4109) | Core implementation of `rex` command (extract mode) | [#4111](https://github.com/opensearch-project/sql/issues/4111) |
 | v3.3.0 | [#4241](https://github.com/opensearch-project/sql/pull/4241) | Implementation of `sed` mode and `offset_field` in rex command | [#4108](https://github.com/opensearch-project/sql/issues/4108) |
 
 ### Issues (Design / RFC)

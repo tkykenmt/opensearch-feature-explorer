@@ -192,9 +192,9 @@ GET /.async-query-scheduler/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#3097](https://github.com/opensearch-project/sql/pull/3097) | Remove scheduler index from SystemIndexDescriptor |   |
-| v2.17.0 | [#2834](https://github.com/opensearch-project/sql/pull/2834) | Flint query scheduler part 1 - integrate job scheduler plugin |   |
-| v2.17.0 | [#2961](https://github.com/opensearch-project/sql/pull/2961) | Flint query scheduler part 2 - scheduler service and Flint integration |   |
-| v2.17.0 | [#2973](https://github.com/opensearch-project/sql/pull/2973) | Add feature flag for async query scheduler |   |
+| v2.17.0 | [#2834](https://github.com/opensearch-project/sql/pull/2834) | Flint query scheduler part 1 - integrate job scheduler plugin | [#416](https://github.com/opensearch-project/opensearch-spark/issues/416) |
+| v2.17.0 | [#2961](https://github.com/opensearch-project/sql/pull/2961) | Flint query scheduler part 2 - scheduler service and Flint integration | [#2833](https://github.com/opensearch-project/sql/issues/2833) |
+| v2.17.0 | [#2973](https://github.com/opensearch-project/sql/pull/2973) | Add feature flag for async query scheduler | [#622](https://github.com/opensearch-project/opensearch-spark/issues/622) |
 
 ### Issues (Design / RFC)
 - [Issue #2832](https://github.com/opensearch-project/sql/issues/2832): Integrate job scheduler plugin

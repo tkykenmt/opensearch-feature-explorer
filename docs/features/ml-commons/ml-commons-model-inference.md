@@ -268,9 +268,9 @@ PUT /_search/pipeline/summarize_pipeline
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#2976](https://github.com/opensearch-project/ml-commons/pull/2976) | Filter out remote model auto redeployment |   |
 | v2.18.0 | [#3072](https://github.com/opensearch-project/ml-commons/pull/3072) | Allow llmQuestion to be optional when llmMessages is used |   |
-| v2.18.0 | [#3061](https://github.com/opensearch-project/ml-commons/pull/3061) | Support ML Inference Search Processor Writing to Search Extension |   |
-| v2.18.0 | [#2899](https://github.com/opensearch-project/ml-commons/pull/2899) | Enable pass query string to input_map in ml inference search response processor |   |
-| v2.18.0 | [#2977](https://github.com/opensearch-project/ml-commons/pull/2977) | Add config field in MLToolSpec for static parameters |   |
+| v2.18.0 | [#3061](https://github.com/opensearch-project/ml-commons/pull/3061) | Support ML Inference Search Processor Writing to Search Extension | [#2878](https://github.com/opensearch-project/ml-commons/issues/2878) |
+| v2.18.0 | [#2899](https://github.com/opensearch-project/ml-commons/pull/2899) | Enable pass query string to input_map in ml inference search response processor | [#2897](https://github.com/opensearch-project/ml-commons/issues/2897) |
+| v2.18.0 | [#2977](https://github.com/opensearch-project/ml-commons/pull/2977) | Add config field in MLToolSpec for static parameters | [#2836](https://github.com/opensearch-project/ml-commons/issues/2836) |
 | v2.18.0 | [#3154](https://github.com/opensearch-project/ml-commons/pull/3154) | Add textract and comprehend url to trusted endpoints |   |
 
 ### Issues (Design / RFC)

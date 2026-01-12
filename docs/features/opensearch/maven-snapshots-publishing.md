@@ -131,7 +131,7 @@ mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get \
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19619](https://github.com/opensearch-project/OpenSearch/pull/19619) | Onboarding new maven snapshots publishing to S3 (OpenSearch Core) |   |
+| v3.4.0 | [#19619](https://github.com/opensearch-project/OpenSearch/pull/19619) | Onboarding new maven snapshots publishing to S3 (OpenSearch Core) | [#5360](https://github.com/opensearch-project/opensearch-build/issues/5360) |
 
 ### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org

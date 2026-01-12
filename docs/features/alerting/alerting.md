@@ -176,16 +176,16 @@ POST _plugins/_alerting/monitors
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#1608](https://github.com/opensearch-project/alerting/pull/1608) | Fix build script to only publish alerting zip |   |
-| v3.3.0 | [#1917](https://github.com/opensearch-project/alerting/pull/1917) | Adds support for leveraging user custom attributes in Alerting monitors |   |
+| v3.3.0 | [#1917](https://github.com/opensearch-project/alerting/pull/1917) | Adds support for leveraging user custom attributes in Alerting monitors | [#1829](https://github.com/opensearch-project/alerting/issues/1829) |
 | v3.2.0 | [#1885](https://github.com/opensearch-project/alerting/pull/1885) | Fix MGet bug, randomize fan out distribution |   |
 | v3.2.0 | [#1818](https://github.com/opensearch-project/alerting/pull/1818) | Refactored consistent responses and fixed unrelated exceptions | [#1057](https://github.com/opensearch-project/alerting/issues/1057) |
-| v3.2.0 | [#1869](https://github.com/opensearch-project/alerting/pull/1869) | Update the maven snapshot publish endpoint and credential |   |
+| v3.2.0 | [#1869](https://github.com/opensearch-project/alerting/pull/1869) | Update the maven snapshot publish endpoint and credential | [#5551](https://github.com/opensearch-project/opensearch-build/issues/5551) |
 | v3.1.0 | [#1850](https://github.com/opensearch-project/alerting/pull/1850) | Timebox doc level monitor execution |   |
 | v3.1.0 | [#1854](https://github.com/opensearch-project/alerting/pull/1854) | Prevent dry run execution of doc level monitor with index pattern |   |
 | v3.1.0 | [#1856](https://github.com/opensearch-project/alerting/pull/1856) | Use transport service timeout instead of custom impl |   |
-| v3.1.0 | [#1860](https://github.com/opensearch-project/alerting/pull/1860) | Publish list of findings instead of individual ones |   |
+| v3.1.0 | [#1860](https://github.com/opensearch-project/alerting/pull/1860) | Publish list of findings instead of individual ones | [#1859](https://github.com/opensearch-project/alerting/issues/1859) |
 | v3.1.0 | [#829](https://github.com/opensearch-project/common-utils/pull/829) | Validate index patterns not allowed in doc level monitor |   |
-| v3.1.0 | [#832](https://github.com/opensearch-project/common-utils/pull/832) | Update PublishFindingsRequest to use list of findings |   |
+| v3.1.0 | [#832](https://github.com/opensearch-project/common-utils/pull/832) | Update PublishFindingsRequest to use list of findings | [#1859](https://github.com/opensearch-project/alerting/issues/1859) |
 | v3.1.0 | [#835](https://github.com/opensearch-project/common-utils/pull/835) | Fix isDocLevelMonitor check for threat intel monitor |   |
 | v3.1.0 | [#1248](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1248) | Add alert insight to alerts card on overview page |   |
 | v3.1.0 | [#1256](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1256) | Add error handling for extract log pattern |   |
@@ -213,7 +213,7 @@ POST _plugins/_alerting/monitors
 | v2.17.0 | [#1027](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1027) | Fixed cypress tests |   |
 | v2.17.0 | [#1028](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1028) | Fix workspace navigation visibility |   |
 | v2.17.0 | [#1040](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1040) | Fix failed UT of AddAlertingMonitor.test.js |   |
-| v2.17.0 | [#794](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/794) | Fix trigger name validation |   |
+| v2.17.0 | [#794](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/794) | Fix trigger name validation | [#671](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/671) |
 | v2.17.0 | [#1073](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1073) | Fix alerts card in all-use case overview page |   |
 
 ### Issues (Design / RFC)

@@ -120,7 +120,7 @@ The health check endpoint is designed for use with load balancers:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#5626](https://github.com/opensearch-project/security/pull/5626) | Add AuthZ initialization completion check |   |
+| v3.3.0 | [#5626](https://github.com/opensearch-project/security/pull/5626) | Add AuthZ initialization completion check | [#5603](https://github.com/opensearch-project/security/issues/5603) |
 
 ### Issues (Design / RFC)
 - [Issue #5603](https://github.com/opensearch-project/security/issues/5603): Security Initialization Issues

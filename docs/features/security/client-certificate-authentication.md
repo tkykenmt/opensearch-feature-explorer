@@ -213,7 +213,7 @@ print(response.json())
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator |   |
+| v3.3.0 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator | [#4378](https://github.com/opensearch-project/security/issues/4378) |
 
 ### Issues (Design / RFC)
 - [Issue #4378](https://github.com/opensearch-project/security/issues/4378): Client certificate setting bypasses password requirements

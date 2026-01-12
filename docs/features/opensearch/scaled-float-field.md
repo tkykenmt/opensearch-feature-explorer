@@ -120,7 +120,7 @@ Higher scaling factors provide more precision but require more storage space.
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#19188](https://github.com/opensearch-project/OpenSearch/pull/19188) | Fix precision issue between indexing and querying |   |
+| v3.3.0 | [#19188](https://github.com/opensearch-project/OpenSearch/pull/19188) | Fix precision issue between indexing and querying | [#12433](https://github.com/opensearch-project/OpenSearch/issues/12433) |
 
 ### Issues (Design / RFC)
 - [Issue #12433](https://github.com/opensearch-project/OpenSearch/issues/12433): Bug report for precision mismatch

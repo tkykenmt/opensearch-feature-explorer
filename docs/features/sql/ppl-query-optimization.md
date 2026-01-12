@@ -310,11 +310,11 @@ calcite:
 | v3.4.0 | [#4614](https://github.com/opensearch-project/sql/pull/4614) | Pushdown distinct count approx |   |
 | v3.4.0 | [#4400](https://github.com/opensearch-project/sql/pull/4400) | Pushdown case function as range queries | [#4201](https://github.com/opensearch-project/sql/issues/4201) |
 | v3.4.0 | [#4421](https://github.com/opensearch-project/sql/pull/4421) | PPL fillnull command enhancement | [#4419](https://github.com/opensearch-project/sql/issues/4419) |
-| v3.4.0 | [#4446](https://github.com/opensearch-project/sql/pull/4446) | Support format=yaml in Explain API |   |
+| v3.4.0 | [#4446](https://github.com/opensearch-project/sql/pull/4446) | Support format=yaml in Explain API | [#4351](https://github.com/opensearch-project/sql/issues/4351) |
 | v3.4.0 | [#4501](https://github.com/opensearch-project/sql/pull/4501) | Configurable subsearch/join limits | [#3731](https://github.com/opensearch-project/sql/issues/3731) |
 | v3.4.0 | [#4544](https://github.com/opensearch-project/sql/pull/4544) | Make composite bucket size configurable | [#4517](https://github.com/opensearch-project/sql/issues/4517) |
 | v3.3.0 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Single group-by optimization | [#3528](https://github.com/opensearch-project/sql/issues/3528) |
-| v3.3.0 | [#4166](https://github.com/opensearch-project/sql/pull/4166) | Pushdown earliest/latest functions |   |
+| v3.3.0 | [#4166](https://github.com/opensearch-project/sql/pull/4166) | Pushdown earliest/latest functions | [#3639](https://github.com/opensearch-project/sql/issues/3639) |
 | v3.3.0 | [#4213](https://github.com/opensearch-project/sql/pull/4213) | Filtered aggregation pushdown | [#3949](https://github.com/opensearch-project/sql/issues/3949) |
 | v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Limit pushdown into bucket size | [#3961](https://github.com/opensearch-project/sql/issues/3961) |
 | v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Auto date histogram pushdown | [#4210](https://github.com/opensearch-project/sql/issues/4210) |

@@ -142,7 +142,7 @@ plugins.security.ssl.aux.experimental-secure-transport-grpc.enabled_ciphers:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#5375](https://github.com/opensearch-project/security/pull/5375) | Add support for configuring auxiliary transports for SSL only |   |
+| v3.2.0 | [#5375](https://github.com/opensearch-project/security/pull/5375) | Add support for configuring auxiliary transports for SSL only | [#17795](https://github.com/opensearch-project/OpenSearch/issues/17795) |
 
 ### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations

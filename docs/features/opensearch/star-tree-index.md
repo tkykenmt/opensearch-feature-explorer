@@ -233,7 +233,7 @@ POST /logs/_search
 | v3.0.0 | [#17275](https://github.com/opensearch-project/OpenSearch/pull/17275) | Unsigned-long query support | [#15231](https://github.com/opensearch-project/OpenSearch/issues/15231) |
 | v3.0.0 | [#17273](https://github.com/opensearch-project/OpenSearch/pull/17273) | Range aggregations | [#16553](https://github.com/opensearch-project/OpenSearch/issues/16553) |
 | v3.0.0 | [#17165](https://github.com/opensearch-project/OpenSearch/pull/17165) | Terms aggregations (keyword/numeric) | [#16551](https://github.com/opensearch-project/OpenSearch/issues/16551) |
-| v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query |   |
+| v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query | [#15257](https://github.com/opensearch-project/OpenSearch/issues/15257) |
 
 ### Issues (Design / RFC)
 - [Issue #18398](https://github.com/opensearch-project/OpenSearch/issues/18398): Multi-terms aggregation feature request

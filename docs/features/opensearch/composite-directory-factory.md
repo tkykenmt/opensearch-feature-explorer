@@ -136,7 +136,7 @@ PUT /my-warm-index
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.1.0 | [#17988](https://github.com/opensearch-project/OpenSearch/pull/17988) | Add composite directory factory |   |
+| v3.1.0 | [#17988](https://github.com/opensearch-project/OpenSearch/pull/17988) | Add composite directory factory | [#17982](https://github.com/opensearch-project/OpenSearch/issues/17982) |
 
 ### Issues (Design / RFC)
 - [Issue #17982](https://github.com/opensearch-project/OpenSearch/issues/17982): Need for Composite Directory Factory

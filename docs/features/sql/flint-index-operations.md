@@ -144,7 +144,7 @@ VACUUM MATERIALIZED VIEW mys3.default.http_logs_metrics
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.17.0 | [#2995](https://github.com/opensearch-project/sql/pull/2995) | Delegate vacuum operation to Spark |   |
-| v2.14.0 | [#2557](https://github.com/opensearch-project/sql/pull/2557) | Initial vacuum implementation in SQL plugin |   |
+| v2.14.0 | [#2557](https://github.com/opensearch-project/sql/pull/2557) | Initial vacuum implementation in SQL plugin | [#104](https://github.com/opensearch-project/opensearch-spark/issues/104) |
 
 ### Issues (Design / RFC)
 - [Issue #580](https://github.com/opensearch-project/opensearch-spark/issues/580): VACUUM should delete checkpoint data

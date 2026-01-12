@@ -234,7 +234,7 @@ For flow agents, response filters are auto-configured for supported providers:
 | v3.4.0 | [#803](https://github.com/opensearch-project/dashboards-flow-framework/pull/803) | Clean up agent summary formatting |   |
 | v3.4.0 | [#809](https://github.com/opensearch-project/dashboards-flow-framework/pull/809) | Integrate with memory | [#782](https://github.com/opensearch-project/dashboards-flow-framework/issues/782) |
 | v3.4.0 | [#817](https://github.com/opensearch-project/dashboards-flow-framework/pull/817) | Automatically add response filters to flow agents when possible | [#815](https://github.com/opensearch-project/dashboards-flow-framework/issues/815) |
-| v3.4.0 | [#820](https://github.com/opensearch-project/dashboards-flow-framework/pull/820) | Remove default empty tool field values; fix EuiSelect values in Firefox |   |
+| v3.4.0 | [#820](https://github.com/opensearch-project/dashboards-flow-framework/pull/820) | Remove default empty tool field values; fix EuiSelect values in Firefox | [#4477](https://github.com/opensearch-project/ml-commons/issues/4477) |
 | v3.1.0 | [#722](https://github.com/opensearch-project/dashboards-flow-framework/pull/722) | Integrate preview panel into inspector panel |   |
 | v3.1.0 | [#737](https://github.com/opensearch-project/dashboards-flow-framework/pull/737) | Refactor form navigation to left panel |   |
 | v3.1.0 | [#742](https://github.com/opensearch-project/dashboards-flow-framework/pull/742) | Added Semantic Search using Sparse Encoders template |   |
@@ -245,6 +245,6 @@ For flow agents, response filters are auto-configured for supported providers:
 | v3.0.0 | [#676](https://github.com/opensearch-project/dashboards-flow-framework/pull/676) | Simplify ML processor forms |   |
 | v3.0.0 | [#610](https://github.com/opensearch-project/dashboards-flow-framework/pull/610) | Simplify RAG presets |   |
 | v3.0.0 | [#604](https://github.com/opensearch-project/dashboards-flow-framework/pull/604) | Refactor quick configure components; improve processor error handling |   |
-| v3.0.0 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 |   |
+| v3.0.0 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 | [#550](https://github.com/opensearch-project/dashboards-flow-framework/issues/550) |
 | v3.0.0 | [#602](https://github.com/opensearch-project/dashboards-flow-framework/pull/602) | Legacy preset integration | [#546](https://github.com/opensearch-project/dashboards-flow-framework/issues/546) |
 | v3.0.0 | [#701](https://github.com/opensearch-project/dashboards-flow-framework/pull/701) | Optional model inputs support |   |

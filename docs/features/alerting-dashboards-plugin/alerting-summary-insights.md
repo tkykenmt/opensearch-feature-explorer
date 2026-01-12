@@ -188,7 +188,7 @@ The feature translates DSL filters to PPL for log pattern analysis:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#1220](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1220) | Only use latest active alert for alert summary context |   |
-| v2.18.0 | [#996](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/996) | Context aware alert analysis |   |
+| v2.18.0 | [#996](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/996) | Context aware alert analysis | [#995](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/995) |
 | v2.18.0 | [#1119](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1119) | Support top N log pattern data |   |
 
 ### Issues (Design / RFC)

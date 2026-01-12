@@ -190,7 +190,7 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#4192](https://github.com/opensearch-project/ml-commons/pull/4192) | Add WriteToScratchPad and ReadFromScratchPad tools |   |
-| v3.3.0 | [#4218](https://github.com/opensearch-project/ml-commons/pull/4218) | Refactor Agentic Memory |   |
+| v3.3.0 | [#4218](https://github.com/opensearch-project/ml-commons/pull/4218) | Refactor Agentic Memory | [#4239](https://github.com/opensearch-project/ml-commons/issues/4239) |
 | v3.3.0 | [#4246](https://github.com/opensearch-project/ml-commons/pull/4246) | Add create session API |   |
 | v3.3.0 | [#4201](https://github.com/opensearch-project/ml-commons/pull/4201) | Add updated time to message | [#4193](https://github.com/opensearch-project/ml-commons/issues/4193) |
 | v3.3.0 | [#4240](https://github.com/opensearch-project/ml-commons/pull/4240) | Enable agentic memory by default for GA |   |

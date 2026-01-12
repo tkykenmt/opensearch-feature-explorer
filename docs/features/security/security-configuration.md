@@ -211,14 +211,14 @@ config:
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#5479](https://github.com/opensearch-project/security/pull/5479) | Moved configuration reloading to dedicated thread | [#5464](https://github.com/opensearch-project/security/issues/5464) |
 | v3.4.0 | [#5677](https://github.com/opensearch-project/security/pull/5677) | Makes resource settings dynamic |   |
-| v3.4.0 | [#5701](https://github.com/opensearch-project/security/pull/5701) | Add support for X509v3 extensions (SAN) for authentication |   |
+| v3.4.0 | [#5701](https://github.com/opensearch-project/security/pull/5701) | Add support for X509v3 extensions (SAN) for authentication | [#5643](https://github.com/opensearch-project/security/issues/5643) |
 | v3.4.0 | [#5752](https://github.com/opensearch-project/security/pull/5752) | Call AdminDns.isAdmin once per request |   |
 | v3.4.0 | [#5769](https://github.com/opensearch-project/security/pull/5769) | Headers copy optimization |   |
-| v3.4.0 | [#5787](https://github.com/opensearch-project/security/pull/5787) | Add --timeout option to securityadmin.sh |   |
+| v3.4.0 | [#5787](https://github.com/opensearch-project/security/pull/5787) | Add --timeout option to securityadmin.sh | [#5653](https://github.com/opensearch-project/security/issues/5653) |
 | v3.3.0 | [#5671](https://github.com/opensearch-project/security/pull/5671) | Adds protected resource types setting |   |
 | v3.3.0 | [#5673](https://github.com/opensearch-project/security/pull/5673) | Make user attribute serialization dynamic |   |
 | v3.0.0 | [#5193](https://github.com/opensearch-project/security/pull/5193) | Default to v7 models if _meta not present | [#5191](https://github.com/opensearch-project/security/issues/5191) |
-| v3.0.0 | [#5175](https://github.com/opensearch-project/security/pull/5175) | Escape pipe character for injected users |   |
+| v3.0.0 | [#5175](https://github.com/opensearch-project/security/pull/5175) | Escape pipe character for injected users | [#2756](https://github.com/opensearch-project/security/issues/2756) |
 | v3.0.0 | [#5157](https://github.com/opensearch-project/security/pull/5157) | Fix version matcher in demo config installer |   |
 | v2.18.0 | [#4753](https://github.com/opensearch-project/security/pull/4753) | Auto-convert security config models from v6 to v7 |   |
 

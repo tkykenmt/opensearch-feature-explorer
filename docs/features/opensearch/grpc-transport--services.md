@@ -287,46 +287,46 @@ Documents in gRPC requests must be Base64 encoded:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19005](https://github.com/opensearch-project/OpenSearch/pull/19005) | Introduce gRPC Interceptor Chain with pluggable interceptors |   |
+| v3.4.0 | [#19005](https://github.com/opensearch-project/OpenSearch/pull/19005) | Introduce gRPC Interceptor Chain with pluggable interceptors | [#5379](https://github.com/opensearch-project/security/issues/5379) |
 | v3.4.0 | [#19304](https://github.com/opensearch-project/OpenSearch/pull/19304) | Add BindableServices extension point for custom gRPC services | [#19025](https://github.com/opensearch-project/OpenSearch/issues/19025) |
 | v3.4.0 | [#19568](https://github.com/opensearch-project/OpenSearch/pull/19568) | Return full error details for gRPC error responses | [#18926](https://github.com/opensearch-project/OpenSearch/issues/18926) |
 | v3.4.0 | [#19744](https://github.com/opensearch-project/OpenSearch/pull/19744) | Add SMILE/CBOR/YAML document format support to Bulk gRPC endpoint | [#19311](https://github.com/opensearch-project/OpenSearch/issues/19311) |
 | v3.4.0 | [#19776](https://github.com/opensearch-project/OpenSearch/pull/19776) | Thread Context preservation by gRPC Interceptor |   |
 | v3.4.0 | [#19831](https://github.com/opensearch-project/OpenSearch/pull/19831) | Bump opensearch-protobufs to 0.23.0 |   |
-| v3.4.0 | [#19854](https://github.com/opensearch-project/OpenSearch/pull/19854) | Implement ConstantScoreQuery, FuzzyQuery, MatchBoolPrefixQuery, etc. |   |
-| v3.4.0 | [#19868](https://github.com/opensearch-project/OpenSearch/pull/19868) | Implement Highlight and Sort for gRPC Search |   |
-| v3.4.0 | [#19888](https://github.com/opensearch-project/OpenSearch/pull/19888) | Implement FunctionScoreQuery |   |
+| v3.4.0 | [#19854](https://github.com/opensearch-project/OpenSearch/pull/19854) | Implement ConstantScoreQuery, FuzzyQuery, MatchBoolPrefixQuery, etc. | [#19526](https://github.com/opensearch-project/OpenSearch/issues/19526) |
+| v3.4.0 | [#19868](https://github.com/opensearch-project/OpenSearch/pull/19868) | Implement Highlight and Sort for gRPC Search | [#19526](https://github.com/opensearch-project/OpenSearch/issues/19526) |
+| v3.4.0 | [#19888](https://github.com/opensearch-project/OpenSearch/pull/19888) | Implement FunctionScoreQuery | [#19526](https://github.com/opensearch-project/OpenSearch/issues/19526) |
 | v3.4.0 | [#20059](https://github.com/opensearch-project/OpenSearch/pull/20059) | Bump opensearch-protobufs to 0.24.0, add DerivedFields support |   |
-| v3.4.0 | [#20162](https://github.com/opensearch-project/OpenSearch/pull/20162) | Throw exceptions for unsupported gRPC request fields |   |
+| v3.4.0 | [#20162](https://github.com/opensearch-project/OpenSearch/pull/20162) | Throw exceptions for unsupported gRPC request fields | [#19526](https://github.com/opensearch-project/OpenSearch/issues/19526) |
 | v3.4.0 | [#5763](https://github.com/opensearch-project/security/pull/5763) | Fix security plugin compilation for protobuf 0.23.0 |   |
 | v3.4.0 | [#20010](https://github.com/opensearch-project/OpenSearch/pull/20010) | Fix ClassCastException in FlightClientChannel for requests larger than 16KB |   |
 | v3.4.0 | [#19937](https://github.com/opensearch-project/OpenSearch/pull/19937) | Fix GRPC Bulk - update doc field, fetchSource default, pipeline support |   |
 | v3.4.0 | [#19948](https://github.com/opensearch-project/OpenSearch/pull/19948) | Fix node bootstrap error when enable stream transport and remote cluster state |   |
 | v3.3.0 | [#18949](https://github.com/opensearch-project/OpenSearch/pull/18949) | Publish transport-grpc-spi for QueryBuilderProtoConverter |   |
-| v3.3.0 | [#19007](https://github.com/opensearch-project/OpenSearch/pull/19007) | Upgrade opensearch-protobufs to 0.13.0 |   |
+| v3.3.0 | [#19007](https://github.com/opensearch-project/OpenSearch/pull/19007) | Upgrade opensearch-protobufs to 0.13.0 | [#19020](https://github.com/opensearch-project/OpenSearch/issues/19020) |
 | v3.3.0 | [#19278](https://github.com/opensearch-project/OpenSearch/pull/19278) | Optimize gRPC transport thread management | [#19277](https://github.com/opensearch-project/OpenSearch/issues/19277) |
 | v3.3.0 | [#19280](https://github.com/opensearch-project/OpenSearch/pull/19280) | Zero-copy BytesRef optimization for search hits | [#19310](https://github.com/opensearch-project/OpenSearch/issues/19310) |
 | v3.3.0 | [#19339](https://github.com/opensearch-project/OpenSearch/pull/19339) | Add failureaccess runtime dependency |   |
 | v3.3.0 | [#19391](https://github.com/opensearch-project/OpenSearch/pull/19391) | Implement Boolean query and registry injection | [#19390](https://github.com/opensearch-project/OpenSearch/issues/19390) |
 | v3.3.0 | [#19392](https://github.com/opensearch-project/OpenSearch/pull/19392) | Implement Exists, Regexp, Wildcard queries | [#18907](https://github.com/opensearch-project/OpenSearch/issues/18907) |
-| v3.3.0 | [#19447](https://github.com/opensearch-project/OpenSearch/pull/19447) | Bump protobufs to 0.18.0, fix Inner Hits |   |
+| v3.3.0 | [#19447](https://github.com/opensearch-project/OpenSearch/pull/19447) | Bump protobufs to 0.18.0, fix Inner Hits | [#19446](https://github.com/opensearch-project/OpenSearch/issues/19446) |
 | v3.3.0 | [#19448](https://github.com/opensearch-project/OpenSearch/pull/19448) | Implement Ids, Range, Terms Set queries | [#18907](https://github.com/opensearch-project/OpenSearch/issues/18907) |
 | v3.3.0 | [#19449](https://github.com/opensearch-project/OpenSearch/pull/19449) | Implement Match Phrase, MultiMatch queries | [#19389](https://github.com/opensearch-project/OpenSearch/issues/19389) |
 | v3.3.0 | [#19451](https://github.com/opensearch-project/OpenSearch/pull/19451) | Implement GeoBoundingBox, GeoDistance queries | [#19450](https://github.com/opensearch-project/OpenSearch/issues/19450) |
 | v3.3.0 | [#19453](https://github.com/opensearch-project/OpenSearch/pull/19453) | Implement Nested query, bump to protobufs 0.19.0 | [#19452](https://github.com/opensearch-project/OpenSearch/issues/19452) |
 | v3.3.0 | [#19455](https://github.com/opensearch-project/OpenSearch/pull/19455) | Implement Script query | [#19454](https://github.com/opensearch-project/OpenSearch/issues/19454) |
-| v3.2.0 | [#18516](https://github.com/opensearch-project/OpenSearch/pull/18516) | Make GRPC transport extensible to allow plugins to register custom services |   |
+| v3.2.0 | [#18516](https://github.com/opensearch-project/OpenSearch/pull/18516) | Make GRPC transport extensible to allow plugins to register custom services | [#18513](https://github.com/opensearch-project/OpenSearch/issues/18513) |
 | v3.2.0 | [#18897](https://github.com/opensearch-project/OpenSearch/pull/18897) | Move transport-grpc from a core plugin to a module | [#18893](https://github.com/opensearch-project/OpenSearch/issues/18893) |
-| v3.2.0 | [#18915](https://github.com/opensearch-project/OpenSearch/pull/18915) | Remove `experimental` designation from transport-grpc settings |   |
-| v3.2.0 | [#18923](https://github.com/opensearch-project/OpenSearch/pull/18923) | Rename package to org.opensearch.transport.grpc |   |
+| v3.2.0 | [#18915](https://github.com/opensearch-project/OpenSearch/pull/18915) | Remove `experimental` designation from transport-grpc settings | [#16787](https://github.com/opensearch-project/OpenSearch/issues/16787) |
+| v3.2.0 | [#18923](https://github.com/opensearch-project/OpenSearch/pull/18923) | Rename package to org.opensearch.transport.grpc | [#18893](https://github.com/opensearch-project/OpenSearch/issues/18893) |
 | v3.2.0 | [#18925](https://github.com/opensearch-project/OpenSearch/pull/18925) | Map to proper GRPC status codes and achieve exception handling parity | [#18926](https://github.com/opensearch-project/OpenSearch/issues/18926) |
-| v3.2.0 | [#18880](https://github.com/opensearch-project/OpenSearch/pull/18880) | Upgrade to protobufs 0.6.0 |   |
+| v3.2.0 | [#18880](https://github.com/opensearch-project/OpenSearch/pull/18880) | Upgrade to protobufs 0.6.0 | [#16787](https://github.com/opensearch-project/OpenSearch/issues/16787) |
 | v3.1.0 | [#18303](https://github.com/opensearch-project/OpenSearch/pull/18303) | Optimize gRPC perf by passing by reference | [#18291](https://github.com/opensearch-project/OpenSearch/issues/18291) |
-| v3.1.0 | [#18031](https://github.com/opensearch-project/OpenSearch/pull/18031) | Package reorganization to org.opensearch.plugin.transport.grpc |   |
+| v3.1.0 | [#18031](https://github.com/opensearch-project/OpenSearch/pull/18031) | Package reorganization to org.opensearch.plugin.transport.grpc | [#16787](https://github.com/opensearch-project/OpenSearch/issues/16787) |
 | v3.0.0 | [#17796](https://github.com/opensearch-project/OpenSearch/pull/17796) | Enable TLS for Netty4GrpcServerTransport | [#16905](https://github.com/opensearch-project/OpenSearch/issues/16905) |
-| v3.0.0 | [#17727](https://github.com/opensearch-project/OpenSearch/pull/17727) | Add DocumentService and Bulk gRPC endpoint v1 |   |
-| v3.0.0 | [#17830](https://github.com/opensearch-project/OpenSearch/pull/17830) | SearchService and Search gRPC endpoint v1 |   |
-| v3.0.0 | [#17888](https://github.com/opensearch-project/OpenSearch/pull/17888) | Add terms query support in Search gRPC endpoint |   |
+| v3.0.0 | [#17727](https://github.com/opensearch-project/OpenSearch/pull/17727) | Add DocumentService and Bulk gRPC endpoint v1 | [#16784](https://github.com/opensearch-project/OpenSearch/issues/16784) |
+| v3.0.0 | [#17830](https://github.com/opensearch-project/OpenSearch/pull/17830) | SearchService and Search gRPC endpoint v1 | [#16783](https://github.com/opensearch-project/OpenSearch/issues/16783) |
+| v3.0.0 | [#17888](https://github.com/opensearch-project/OpenSearch/pull/17888) | Add terms query support in Search gRPC endpoint | [#16783](https://github.com/opensearch-project/OpenSearch/issues/16783) |
 
 ### Issues (Design / RFC)
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue

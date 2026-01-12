@@ -266,14 +266,14 @@ GET /my-nlp-index/_search
 | v3.2.0 | [#1480](https://github.com/opensearch-project/neural-search/pull/1480) | Support configuring reusing existing embedding for the semantic field | [#1350](https://github.com/opensearch-project/neural-search/issues/1350) |
 | v3.2.0 | [#1427](https://github.com/opensearch-project/neural-search/pull/1427) | Handle remote dense model properly during mapping transform | [#1426](https://github.com/opensearch-project/neural-search/issues/1426) |
 | v3.2.0 | [#1475](https://github.com/opensearch-project/neural-search/pull/1475) | Fix minimal supported version for neural sparse query analyzer field | [#1416](https://github.com/opensearch-project/neural-search/issues/1416) |
-| v3.1.0 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer |   |
-| v3.1.0 | [#1309](https://github.com/opensearch-project/neural-search/pull/1309) | Add semantic ingest processor |   |
-| v3.1.0 | [#1315](https://github.com/opensearch-project/neural-search/pull/1315) | Implement query logic for semantic field |   |
+| v3.1.0 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer | [#803](https://github.com/opensearch-project/neural-search/issues/803) |
+| v3.1.0 | [#1309](https://github.com/opensearch-project/neural-search/pull/1309) | Add semantic ingest processor | [#803](https://github.com/opensearch-project/neural-search/issues/803) |
+| v3.1.0 | [#1315](https://github.com/opensearch-project/neural-search/pull/1315) | Implement query logic for semantic field | [#803](https://github.com/opensearch-project/neural-search/issues/803) |
 | v3.1.0 | [#1337](https://github.com/opensearch-project/neural-search/pull/1337) | Enable/disable chunking support |   |
 | v3.1.0 | [#1341](https://github.com/opensearch-project/neural-search/pull/1341) | Add search analyzer support at query time | [#1341](https://github.com/opensearch-project/neural-search/issues/1341) |
 | v3.1.0 | [#1367](https://github.com/opensearch-project/neural-search/pull/1367) | Support analyzer at semantic field creation time |   |
 | v3.1.0 | [#1362](https://github.com/opensearch-project/neural-search/pull/1362) | Add stats tracking for semantic field |   |
-| v3.0.0 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper |   |
+| v3.0.0 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper | [#803](https://github.com/opensearch-project/neural-search/issues/803) |
 
 ### Issues (Design / RFC)
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal

@@ -138,7 +138,7 @@ flowchart TB
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#19307](https://github.com/opensearch-project/OpenSearch/pull/19307) | Fix: Cache serialised cluster state based on cluster state version and node version |   |
+| v3.3.0 | [#19307](https://github.com/opensearch-project/OpenSearch/pull/19307) | Fix: Cache serialised cluster state based on cluster state version and node version | [#19272](https://github.com/opensearch-project/OpenSearch/issues/19272) |
 
 ### Issues (Design / RFC)
 - [Issue #19272](https://github.com/opensearch-project/OpenSearch/issues/19272): [BUG] Join Failure - Mixed Version cluster

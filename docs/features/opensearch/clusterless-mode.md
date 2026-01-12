@@ -149,7 +149,7 @@ PUT /my-index/_settings
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#18479](https://github.com/opensearch-project/OpenSearch/pull/18479) | Start in "clusterless" mode if a clusterless ClusterPlugin is loaded |   |
+| v3.2.0 | [#18479](https://github.com/opensearch-project/OpenSearch/pull/18479) | Start in "clusterless" mode if a clusterless ClusterPlugin is loaded | [#17957](https://github.com/opensearch-project/OpenSearch/issues/17957) |
 | v3.2.0 | [#18857](https://github.com/opensearch-project/OpenSearch/pull/18857) | Add support for custom remote store segment path prefix | [#18750](https://github.com/opensearch-project/OpenSearch/issues/18750) |
 
 ### Issues (Design / RFC)

@@ -277,10 +277,10 @@ POST /_plugins/_alerting/v2/monitors
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [alerting#1960](https://github.com/opensearch-project/alerting/pull/1960) | PPL Alerting: Execute Monitor and Monitor Stats |   |
-| v3.4.0 | [alerting#1966](https://github.com/opensearch-project/alerting/pull/1966) | PPL Alerting: Get and Search Monitors |   |
-| v3.4.0 | [alerting#1968](https://github.com/opensearch-project/alerting/pull/1968) | PPL Alerting: Delete Monitor, More V1/V2 Separation |   |
-| v3.4.0 | [alerting#1972](https://github.com/opensearch-project/alerting/pull/1972) | PPL Alerting: Get Alerts and Alert Lifecycle |   |
+| v3.4.0 | [alerting#1960](https://github.com/opensearch-project/alerting/pull/1960) | PPL Alerting: Execute Monitor and Monitor Stats | [#1880](https://github.com/opensearch-project/alerting/issues/1880) |
+| v3.4.0 | [alerting#1966](https://github.com/opensearch-project/alerting/pull/1966) | PPL Alerting: Get and Search Monitors | [#1880](https://github.com/opensearch-project/alerting/issues/1880) |
+| v3.4.0 | [alerting#1968](https://github.com/opensearch-project/alerting/pull/1968) | PPL Alerting: Delete Monitor, More V1/V2 Separation | [#1880](https://github.com/opensearch-project/alerting/issues/1880) |
+| v3.4.0 | [alerting#1972](https://github.com/opensearch-project/alerting/pull/1972) | PPL Alerting: Get Alerts and Alert Lifecycle | [#1880](https://github.com/opensearch-project/alerting/issues/1880) |
 
 ### Issues (Design / RFC)
 - [Issue alerting#1880](https://github.com/opensearch-project/alerting/issues/1880): RFC for Alerting V2

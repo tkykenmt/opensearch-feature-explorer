@@ -134,8 +134,8 @@ PUT /_cluster/settings
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18649](https://github.com/opensearch-project/OpenSearch/pull/18649) | Make node duress values cacheable for NodeDuressTrackers | [#18641](https://github.com/opensearch-project/OpenSearch/issues/18641) |
-| v3.0.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API |   |
-| v2.18.0 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings |   |
+| v3.0.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API | [#8698](https://github.com/opensearch-project/OpenSearch/issues/8698) |
+| v2.18.0 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings | [#15495](https://github.com/opensearch-project/OpenSearch/issues/15495) |
 
 ### Issues (Design / RFC)
 - [Issue #18641](https://github.com/opensearch-project/OpenSearch/issues/18641): Latency regression due to node duress trackers

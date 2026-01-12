@@ -142,7 +142,7 @@ PUT /new_index?has_permission_check=true
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#5496](https://github.com/opensearch-project/security/pull/5496) | Initial implementation of permission validation via query parameter |   |
+| v3.2.0 | [#5496](https://github.com/opensearch-project/security/pull/5496) | Initial implementation of permission validation via query parameter | [#5468](https://github.com/opensearch-project/security/issues/5468) |
 
 ### Issues (Design / RFC)
 - [Issue #5468](https://github.com/opensearch-project/security/issues/5468): Original feature request for Security Permissions Simulation

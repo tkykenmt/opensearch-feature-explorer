@@ -115,17 +115,17 @@ ThreadPoolStats.Stats threadStats = new ThreadPoolStats.Stats.Builder()
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#19317](https://github.com/opensearch-project/OpenSearch/pull/19317) | ThreadPoolStats.Stats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
 | v3.4.0 | [#19306](https://github.com/opensearch-project/OpenSearch/pull/19306) | IndexingStats.Stats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
-| v3.4.0 | [#19835](https://github.com/opensearch-project/OpenSearch/pull/19835) | RefreshStats Builder |   |
-| v3.4.0 | [#19863](https://github.com/opensearch-project/OpenSearch/pull/19863) | DocStats and StoreStats Builder |   |
-| v3.4.0 | [#19862](https://github.com/opensearch-project/OpenSearch/pull/19862) | Condition.Stats and DirectoryFileTransferTracker.Stats Builder |   |
-| v3.4.0 | [#19837](https://github.com/opensearch-project/OpenSearch/pull/19837) | RemoteTranslogTransferTracker.Stats and RemoteSegmentTransferTracker.Stats Builder |   |
-| v3.4.0 | [#19935](https://github.com/opensearch-project/OpenSearch/pull/19935) | GetStats, FlushStats and QueryCacheStats Builder |   |
-| v3.4.0 | [#19936](https://github.com/opensearch-project/OpenSearch/pull/19936) | FieldDataStats and CompletionStats Builder |   |
-| v3.4.0 | [#19961](https://github.com/opensearch-project/OpenSearch/pull/19961) | TranslogStats and RequestCacheStats Builder |   |
-| v3.4.0 | [#19991](https://github.com/opensearch-project/OpenSearch/pull/19991) | IndexPressureStats, DeviceStats and TransportStats Builder |   |
-| v3.4.0 | [#20015](https://github.com/opensearch-project/OpenSearch/pull/20015) | Cache.CacheStats Builder |   |
-| v3.4.0 | [#20014](https://github.com/opensearch-project/OpenSearch/pull/20014) | HttpStats, ScriptStats, AdaptiveSelectionStats and OsStats Builder |   |
-| v3.4.0 | [#19966](https://github.com/opensearch-project/OpenSearch/pull/19966) | ShardStats, WarmerStats and IndexingPressureStats Builder |   |
+| v3.4.0 | [#19835](https://github.com/opensearch-project/OpenSearch/pull/19835) | RefreshStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19863](https://github.com/opensearch-project/OpenSearch/pull/19863) | DocStats and StoreStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19862](https://github.com/opensearch-project/OpenSearch/pull/19862) | Condition.Stats and DirectoryFileTransferTracker.Stats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19837](https://github.com/opensearch-project/OpenSearch/pull/19837) | RemoteTranslogTransferTracker.Stats and RemoteSegmentTransferTracker.Stats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19935](https://github.com/opensearch-project/OpenSearch/pull/19935) | GetStats, FlushStats and QueryCacheStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19936](https://github.com/opensearch-project/OpenSearch/pull/19936) | FieldDataStats and CompletionStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19961](https://github.com/opensearch-project/OpenSearch/pull/19961) | TranslogStats and RequestCacheStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19991](https://github.com/opensearch-project/OpenSearch/pull/19991) | IndexPressureStats, DeviceStats and TransportStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#20015](https://github.com/opensearch-project/OpenSearch/pull/20015) | Cache.CacheStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#20014](https://github.com/opensearch-project/OpenSearch/pull/20014) | HttpStats, ScriptStats, AdaptiveSelectionStats and OsStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
+| v3.4.0 | [#19966](https://github.com/opensearch-project/OpenSearch/pull/19966) | ShardStats, WarmerStats and IndexingPressureStats Builder | [#19225](https://github.com/opensearch-project/OpenSearch/issues/19225) |
 
 ### Issues (Design / RFC)
 - [Issue #19225](https://github.com/opensearch-project/OpenSearch/issues/19225): Use Builder pattern instead of constructors for Stats API classes

@@ -160,7 +160,7 @@ GET /test_index/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18215](https://github.com/opensearch-project/OpenSearch/pull/18215) | Fix regex query from query string query to work with field alias | [#18214](https://github.com/opensearch-project/OpenSearch/issues/18214) |
-| v3.2.0 | [#18640](https://github.com/opensearch-project/OpenSearch/pull/18640) | Fix backward compatibility regression with COMPLEMENT for Regexp queries |   |
+| v3.2.0 | [#18640](https://github.com/opensearch-project/OpenSearch/pull/18640) | Fix backward compatibility regression with COMPLEMENT for Regexp queries | [#18397](https://github.com/opensearch-project/OpenSearch/issues/18397) |
 | v3.2.0 | [#18883](https://github.com/opensearch-project/OpenSearch/pull/18883) | Propagate TooComplexToDeterminizeException in query_string regex queries | [#18733](https://github.com/opensearch-project/OpenSearch/issues/18733) |
 
 ### Issues (Design / RFC)

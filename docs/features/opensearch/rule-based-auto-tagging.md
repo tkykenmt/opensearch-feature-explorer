@@ -226,9 +226,9 @@ When evaluating a request:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.0.0 | [#17238](https://github.com/opensearch-project/OpenSearch/pull/17238) | Add rule schema for auto tagging |   |
-| v3.0.0 | [#17342](https://github.com/opensearch-project/OpenSearch/pull/17342) | Add in-memory attribute value store |   |
-| v3.0.0 | [#17365](https://github.com/opensearch-project/OpenSearch/pull/17365) | Add in-memory rule processing service |   |
+| v3.0.0 | [#17238](https://github.com/opensearch-project/OpenSearch/pull/17238) | Add rule schema for auto tagging | [#16797](https://github.com/opensearch-project/OpenSearch/issues/16797) |
+| v3.0.0 | [#17342](https://github.com/opensearch-project/OpenSearch/pull/17342) | Add in-memory attribute value store | [#16797](https://github.com/opensearch-project/OpenSearch/issues/16797) |
+| v3.0.0 | [#17365](https://github.com/opensearch-project/OpenSearch/pull/17365) | Add in-memory rule processing service | [#16797](https://github.com/opensearch-project/OpenSearch/issues/16797) |
 
 ### Issues (Design / RFC)
 - [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC - Automated labeling of search requests

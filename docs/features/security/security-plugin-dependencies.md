@@ -101,7 +101,7 @@ Dependency updates in the Security plugin follow this process:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) |   |
+| v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) | [#5593](https://github.com/opensearch-project/security/issues/5593) |
 | v3.3.0 | [#5629](https://github.com/opensearch-project/security/pull/5629) | Bump nimbus-jose-jwt 10.4.2 → 10.5 |   |
 | v3.3.0 | [#5568](https://github.com/opensearch-project/security/pull/5568) | Bump jjwt_version 0.12.6 → 0.13.0 |   |
 | v3.3.0 | [#5569](https://github.com/opensearch-project/security/pull/5569) | Bump spring_version 6.2.9 → 6.2.11 |   |

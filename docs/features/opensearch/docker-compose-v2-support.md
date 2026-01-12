@@ -116,7 +116,7 @@ Running tests:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.18.0 | [#16049](https://github.com/opensearch-project/OpenSearch/pull/16049) | Add support for docker compose v2 in TestFixturesPlugin |   |
+| v2.18.0 | [#16049](https://github.com/opensearch-project/OpenSearch/pull/16049) | Add support for docker compose v2 in TestFixturesPlugin | [#16050](https://github.com/opensearch-project/OpenSearch/issues/16050) |
 
 ### Issues (Design / RFC)
 - [Issue #16050](https://github.com/opensearch-project/OpenSearch/issues/16050): Original bug report

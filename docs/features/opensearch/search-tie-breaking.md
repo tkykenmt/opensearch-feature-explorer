@@ -142,7 +142,7 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder()
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.3.0 | [#18924](https://github.com/opensearch-project/OpenSearch/pull/18924) | Initial implementation of _shard_doc sort |   |
+| v3.3.0 | [#18924](https://github.com/opensearch-project/OpenSearch/pull/18924) | Initial implementation of _shard_doc sort | [#17064](https://github.com/opensearch-project/OpenSearch/issues/17064) |
 
 ### Issues (Design / RFC)
 - [Issue #17064](https://github.com/opensearch-project/OpenSearch/issues/17064): Original feature request

@@ -230,7 +230,7 @@ graph TB
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19788](https://github.com/opensearch-project/OpenSearch/pull/19788) | Add LEGACY_MD5_CHECKSUM_CALCULATION to repository-s3 settings list |   |
+| v3.4.0 | [#19788](https://github.com/opensearch-project/OpenSearch/pull/19788) | Add LEGACY_MD5_CHECKSUM_CALCULATION to repository-s3 settings list | [#18240](https://github.com/opensearch-project/OpenSearch/issues/18240) |
 | v3.3.0 | [#18800](https://github.com/opensearch-project/OpenSearch/pull/18800) | Switch default async HTTP client to AWS CRT for improved throughput | [#18535](https://github.com/opensearch-project/OpenSearch/issues/18535) |
 | v3.3.0 | [#19220](https://github.com/opensearch-project/OpenSearch/pull/19220) | Fix S3-compatible repository checksum trailing headers issue | [#18240](https://github.com/opensearch-project/OpenSearch/issues/18240) |
 | v3.1.0 | [#18312](https://github.com/opensearch-project/OpenSearch/pull/18312) | Add support for SSE-KMS and S3 bucket owner verification | [#14606](https://github.com/opensearch-project/OpenSearch/issues/14606) |

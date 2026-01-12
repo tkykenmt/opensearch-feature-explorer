@@ -155,7 +155,7 @@ python ubi_data_generator.py \
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.2.0 | [#102](https://github.com/opensearch-project/user-behavior-insights/pull/102) | Added search_config field for A/B TDI testing |   |
+| v3.2.0 | [#102](https://github.com/opensearch-project/user-behavior-insights/pull/102) | Added search_config field for A/B TDI testing | [#18383](https://github.com/opensearch-project/OpenSearch/issues/18383) |
 
 ### Issues (Design / RFC)
 - [RFC: Team Draft Interleaving](https://github.com/opensearch-project/OpenSearch/issues/18383): A/B testing RFC

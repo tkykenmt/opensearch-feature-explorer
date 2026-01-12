@@ -135,7 +135,7 @@ PUT my-vector-index
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.17.0 | [#1945](https://github.com/opensearch-project/k-NN/pull/1945) | Integrate Lucene Vector field with native engines |   |
+| v2.17.0 | [#1945](https://github.com/opensearch-project/k-NN/pull/1945) | Integrate Lucene Vector field with native engines | [#1853](https://github.com/opensearch-project/k-NN/issues/1853) |
 | v2.17.0 | [#1939](https://github.com/opensearch-project/k-NN/pull/1939) | Restructure mappers for FlatVectorsMapper |   |
 
 ### Issues (Design / RFC)

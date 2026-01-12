@@ -160,10 +160,10 @@ opensearch_security.proxycache:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.17.0 | [#4632](https://github.com/opensearch-project/security/pull/4632) | Allow multiple signing keys to be provided |   |
+| v2.17.0 | [#4632](https://github.com/opensearch-project/security/pull/4632) | Allow multiple signing keys to be provided | [#4613](https://github.com/opensearch-project/security/issues/4613) |
 | v2.17.0 | [#4666](https://github.com/opensearch-project/security/pull/4666) | Backport multiple signing keys to 2.x |   |
 | v2.17.0 | [#4538](https://github.com/opensearch-project/security/pull/4538) | Add `ignore_hosts` config option for auth failure listener | [#4262](https://github.com/opensearch-project/security/issues/4262) |
-| v2.17.0 | [#2076](https://github.com/opensearch-project/security-dashboards-plugin/pull/2076) | Add Proxy Auth to Multi Auth Options |   |
+| v2.17.0 | [#2076](https://github.com/opensearch-project/security-dashboards-plugin/pull/2076) | Add Proxy Auth to Multi Auth Options | [#1724](https://github.com/opensearch-project/security-dashboards-plugin/issues/1724) |
 | v2.17.0 | [#2072](https://github.com/opensearch-project/security-dashboards-plugin/pull/2072) | Use `getRedirectUrl` from OSD to generate nextUrl |   |
 
 ### Issues (Design / RFC)

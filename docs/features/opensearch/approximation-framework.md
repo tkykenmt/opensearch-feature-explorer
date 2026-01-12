@@ -183,13 +183,13 @@ GET logs/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v3.4.0 | [#19553](https://github.com/opensearch-project/OpenSearch/pull/19553) | Use Lucene `pack` method for `half_float` and `unsigned_long` |   |
-| v3.2.0 | [#18530](https://github.com/opensearch-project/OpenSearch/pull/18530) | Extend Approximation Framework to other numeric types (int, float, double, half_float, unsigned_long) |   |
+| v3.4.0 | [#19553](https://github.com/opensearch-project/OpenSearch/pull/19553) | Use Lucene `pack` method for `half_float` and `unsigned_long` | [#14406](https://github.com/opensearch-project/OpenSearch/issues/14406) |
+| v3.2.0 | [#18530](https://github.com/opensearch-project/OpenSearch/pull/18530) | Extend Approximation Framework to other numeric types (int, float, double, half_float, unsigned_long) | [#18334](https://github.com/opensearch-project/OpenSearch/issues/18334) |
 | v3.2.0 | [#18896](https://github.com/opensearch-project/OpenSearch/pull/18896) | Support `search_after` numeric queries with Approximation Framework | [#18546](https://github.com/opensearch-project/OpenSearch/issues/18546) |
 | v3.2.0 | [#18511](https://github.com/opensearch-project/OpenSearch/pull/18511) | Added approximation support for range queries with `now` in date field | [#18503](https://github.com/opensearch-project/OpenSearch/issues/18503) |
-| v3.2.0 | [#18763](https://github.com/opensearch-project/OpenSearch/pull/18763) | Disable approximation framework when dealing with multiple sorts |   |
-| v3.1.0 | [#18439](https://github.com/opensearch-project/OpenSearch/pull/18439) | BKD traversal optimization for skewed datasets |   |
-| v3.0.0 | [#18017](https://github.com/opensearch-project/OpenSearch/pull/18017) | Skip approximation when `track_total_hits` is set to `true` |   |
+| v3.2.0 | [#18763](https://github.com/opensearch-project/OpenSearch/pull/18763) | Disable approximation framework when dealing with multiple sorts | [#18619](https://github.com/opensearch-project/OpenSearch/issues/18619) |
+| v3.1.0 | [#18439](https://github.com/opensearch-project/OpenSearch/pull/18439) | BKD traversal optimization for skewed datasets | [#18341](https://github.com/opensearch-project/OpenSearch/issues/18341) |
+| v3.0.0 | [#18017](https://github.com/opensearch-project/OpenSearch/pull/18017) | Skip approximation when `track_total_hits` is set to `true` | [#14406](https://github.com/opensearch-project/OpenSearch/issues/14406) |
 | v3.0.0 | - | Initial GA release of Approximation Framework |   |
 
 ### Issues (Design / RFC)

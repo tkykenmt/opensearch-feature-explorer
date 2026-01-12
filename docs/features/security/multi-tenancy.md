@@ -158,4 +158,4 @@ PUT _plugins/_security/api/tenants/analytics
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#5519](https://github.com/opensearch-project/security/pull/5519) | Add tenancy access info to serialized user in threadcontext |   |
 | v3.0.0 | [#2218](https://github.com/opensearch-project/security/pull/2218) | Remove tenant panels when multitenancy disabled | [#2194](https://github.com/opensearch-project/security/issues/2194) |
-| v2.17.0 | [#2057](https://github.com/opensearch-project/security-dashboards-plugin/pull/2057) | Do not register tenancy app if disabled in yml |   |
+| v2.17.0 | [#2057](https://github.com/opensearch-project/security-dashboards-plugin/pull/2057) | Do not register tenancy app if disabled in yml | [#2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056) |

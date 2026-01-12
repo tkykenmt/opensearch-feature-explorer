@@ -191,9 +191,9 @@ For Linux distributions using systemd, OpenSearch applies additional OS-level pr
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#17724](https://github.com/opensearch-project/OpenSearch/pull/17724) | Create initial Java Agent to intercept Socket::connect calls | [#17660](https://github.com/opensearch-project/OpenSearch/issues/17660) |
 | v3.0.0 | [#17746](https://github.com/opensearch-project/OpenSearch/pull/17746) | Enhance Java Agent to intercept System::exit | [#17723](https://github.com/opensearch-project/OpenSearch/issues/17723) |
-| v3.0.0 | [#17753](https://github.com/opensearch-project/OpenSearch/pull/17753) | Add a policy parser for Java agent security policies |   |
+| v3.0.0 | [#17753](https://github.com/opensearch-project/OpenSearch/pull/17753) | Add a policy parser for Java agent security policies | [#17659](https://github.com/opensearch-project/OpenSearch/issues/17659) |
 | v3.0.0 | [#17757](https://github.com/opensearch-project/OpenSearch/pull/17757) | Enhance Java Agent to intercept Runtime::halt | [#17755](https://github.com/opensearch-project/OpenSearch/issues/17755) |
-| v3.0.0 | [#17760](https://github.com/opensearch-project/OpenSearch/pull/17760) | Implement File Interceptor and add integration tests |   |
+| v3.0.0 | [#17760](https://github.com/opensearch-project/OpenSearch/pull/17760) | Implement File Interceptor and add integration tests | [#17662](https://github.com/opensearch-project/OpenSearch/issues/17662) |
 | v3.0.0 | [#17861](https://github.com/opensearch-project/OpenSearch/pull/17861) | Phase off SecurityManager usage in favor of Java Agent | [#17662](https://github.com/opensearch-project/OpenSearch/issues/17662) |
 
 ### Issues (Design / RFC)
