@@ -202,6 +202,7 @@
 - [Explain API Support](features/k-nn/explain-api-support.md)
 - [Lucene On Faiss (Memory Optimized Search)](features/k-nn/lucene-on-faiss.md)
 - [Remote Vector Index Build](features/k-nn/remote-vector-index-build.md)
+- [Derived Source & Codec Refactoring](features/k-nn/derived-source-codec-refactoring.md)
 
 ## learning
 

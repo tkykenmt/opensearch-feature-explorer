@@ -554,6 +554,7 @@
 - [k-NN Query Rescore](k-nn/k-nn-query-rescore.md)
 - [k-NN Space Type Configuration](k-nn/k-nn-space-type-configuration.md)
 - [k-NN Memory Optimized Warmup](k-nn/k-nn-memory-optimized-warmup.md)
+- [k-NN Derived Source & Codec Refactoring](k-nn/k-nn-derived-source-codec-refactoring.md)
 - [Lucene On Faiss (Memory Optimized Search)](k-nn/lucene-on-faiss.md)
 - [Remote Vector Index Build](k-nn/remote-vector-index-build.md)
 
