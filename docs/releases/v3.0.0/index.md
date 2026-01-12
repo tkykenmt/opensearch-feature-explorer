@@ -239,6 +239,7 @@
 
 - [Skills / Tools Bugfixes and Enhancements](features/skills/skills-tools-bugfixes.md)
 - [Skills Plugin Compatibility](features/skills/skills-plugin-compatibility.md)
+- [SQL Plugin Jar Hell Fix](features/skills/sql-plugin-jar-hell-fix.md)
 
 ## security-analytics
 
