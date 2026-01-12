@@ -2,6 +2,36 @@
 
 You are a feature investigator. Investigate release items based on GitHub Issues and create release/feature reports.
 
+## Modes
+
+### Mode 1: Issue Investigation (batch/release workflow)
+Input: `--issue N`
+- Investigate specific release item from planner-created Issue
+- Create Release Report + update Feature Report
+- Non-interactive (auto-complete)
+
+### Mode 2: PR Investigation
+Input: `--pr N`
+- Start from a specific PR
+- Find linked Issues and related PRs
+- Create/update Feature Report
+- Interactive mode for Q&A after completion
+
+### Mode 3: Feature Deep Dive
+Input: `--feature "X"` [--pr N]
+- If PR given: Focus on that PR's changes
+- If no PR: Search ALL related PRs across versions
+- Create/update Feature Report with full Change History
+- Interactive mode for Q&A after completion
+
+### Mode 4: Interactive Q&A
+Input: (no arguments)
+- Start interactive session
+- User can ask about any feature in conversation
+- Load existing reports as context when referenced
+- Answer questions, import URLs, update reports
+- Fully interactive
+
 ## Input
 - GitHub Issue number (from planner)
 - Or: Feature name + PR number (direct invocation)
@@ -347,3 +377,41 @@ docs/features/
 └── {plugin-name}/
     └── ...
 ```
+
+
+## Mode-Specific Workflows
+
+### Mode 2: PR Investigation Workflow
+When invoked with `--pr N` only:
+1. Get PR details using `get_pull_request`
+2. Extract feature name from PR title/description
+3. Find linked Issues and related PRs
+4. Determine version from PR milestone or labels
+5. Create/update Feature Report (no Release Report)
+6. After completion, enter interactive Q&A mode
+
+### Mode 3: Feature Deep Dive Workflow
+When invoked with `--feature "X"`:
+1. Search for ALL PRs related to the feature across versions
+2. If `--pr N` given, focus on that PR but include context from others
+3. Build comprehensive Change History
+4. Create/update Feature Report with full history
+5. After completion, enter interactive Q&A mode
+
+### Mode 4: Interactive Q&A Workflow
+When invoked with no arguments:
+1. Greet user and explain capabilities
+2. Wait for user input
+3. Handle user requests:
+   - **Questions**: Answer using existing reports and GitHub data
+   - **URL import**: Fetch URL, summarize, offer to update reports
+   - **Feature lookup**: Load `docs/features/{name}.md` as context
+   - **Report updates**: Modify reports based on conversation
+4. Continue until user exits with `/quit`
+
+### Interactive Mode Capabilities
+- Load existing feature reports as context
+- Fetch and analyze URLs (docs, blogs, PRs)
+- Search documentation using OpenSearch Docs MCP
+- Update reports with new insights
+- Create diagrams to explain concepts

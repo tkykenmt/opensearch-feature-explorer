@@ -20,7 +20,6 @@ AGENTS = {
     "planner": "planner.json",
     "create-issues": "create-issues.json",
     "investigate": "investigate.json",
-    "explore": "explore.json",
     "summarize": "summarize.json",
     "translate": "translate.json",
     "generate-release-docs": "generate-release-docs.json",
@@ -261,19 +260,20 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
         force = getattr(args, "overwrite", False)
         pr_mode = " Use PR workflow (create branch, pull request, and auto-merge)." if use_pr else " Push directly to main."
         force_mode = " Overwrite existing reports." if force else ""
+        # Mode 1: Issue Investigation
         if hasattr(args, "issue") and args.issue:
             return f"Investigate GitHub Issue #{args.issue}.{pr_mode}{force_mode}{lang_instruction}"
+        # Mode 2: PR Investigation
+        if hasattr(args, "pr") and args.pr and not (hasattr(args, "feature") and args.feature):
+            return f"Investigate PR #{args.pr}.{pr_mode}{force_mode}{lang_instruction}"
+        # Mode 3: Feature Deep Dive
         if hasattr(args, "feature") and args.feature:
             prompt = f'Investigate feature "{args.feature}"'
-            if args.pr:
+            if hasattr(args, "pr") and args.pr:
                 prompt += f" starting from PR #{args.pr}"
             return prompt + f".{pr_mode}{force_mode}{lang_instruction}"
-        # No issue or feature specified - pick oldest open issue
-        return f"Find the oldest open Issue with label 'new-feature' or 'update-feature' and investigate it.{pr_mode}{force_mode}{lang_instruction}"
-    
-    if mode == "explore":
-        lang = args.lang if hasattr(args, "lang") and args.lang else "en"
-        return f'Explore the "{args.feature}" feature in language code "{lang}"'
+        # Mode 4: Interactive Q&A (no arguments)
+        return ""
     
     if mode == "summarize":
         return f"Create release summary for OpenSearch v{args.version}.{lang_instruction}"
@@ -417,7 +417,8 @@ def run_release_investigate(version: str, lang: str | None = None, no_pr: bool =
 
 
 def run_feature_investigate(feature: str, pr: int | None = None, lang: str | None = None, no_pr: bool = False) -> int:
-    """Single feature investigation wrapper."""
+    """Single feature investigation - deprecated, use investigate --feature instead."""
+    print("Warning: feature-investigate is deprecated. Use 'investigate --feature' instead.")
     lang_instruction = f" Output in language code '{lang}'." if lang else ""
     pr_mode = " Push directly to main." if no_pr else " Use PR workflow (create branch, pull request, and auto-merge)."
     
@@ -435,14 +436,15 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python run.py planner 3.0.0
-  python run.py parse-release 3.0.0
+  python run.py fetch-release 3.0.0
+  python run.py group-release 3.0.0 --all
   python run.py planner 3.0.0
   python run.py create-issues --tracking 123
-  python run.py create-issues --tracking 123 --limit 20
   python run.py investigate --issue 123
-  python run.py investigate "Star Tree" --pr 16233
-  python run.py explore "Segment Replication" --lang ja
+  python run.py investigate --pr 16233
+  python run.py investigate --feature "Star Tree" --pr 16233
+  python run.py investigate --feature "Star Tree"
+  python run.py investigate
   python run.py summarize 3.0.0
   python run.py translate --feature "Segment Replication" --to ja
         """,
@@ -477,10 +479,10 @@ Examples:
     ci.add_argument("--category", choices=["features", "enhancements", "breaking", "bugfixes"], help="Filter by category")
     
     # investigate
-    inv = subparsers.add_parser("investigate", help="Investigate a single feature")
-    inv.add_argument("feature", nargs="?", help="Feature name")
-    inv.add_argument("--issue", type=int, help="GitHub Issue number to investigate")
-    inv.add_argument("--pr", type=int, help="Starting PR number")
+    inv = subparsers.add_parser("investigate", help="Investigate features (4 modes: --issue, --pr, --feature, or interactive)")
+    inv.add_argument("--issue", type=int, help="Mode 1: Investigate from GitHub Issue")
+    inv.add_argument("--pr", type=int, help="Mode 2: Investigate from PR (or use with --feature)")
+    inv.add_argument("--feature", help="Mode 3: Feature deep dive")
     inv.add_argument("--lang", help="Output language code (e.g., ja)")
     inv.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     inv.add_argument("--overwrite", action="store_true", help="Overwrite existing reports")
@@ -492,11 +494,6 @@ Examples:
     ba.add_argument("--all", action="store_true", help="Process all open issues")
     ba.add_argument("--lang", help="Output language code (e.g., ja)")
     ba.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
-    
-    # explore
-    ex = subparsers.add_parser("explore", help="Explore a feature interactively")
-    ex.add_argument("feature", help="Feature name to explore")
-    ex.add_argument("--lang", help="Response language code (e.g., ja)")
     
     # summarize
     su = subparsers.add_parser("summarize", help="Create release summary from feature reports")
@@ -520,8 +517,8 @@ Examples:
     ri.add_argument("--lang", help="Output language code (e.g., ja)")
     ri.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
-    # feature-investigate (wrapper)
-    fi = subparsers.add_parser("feature-investigate", help="Investigate a single feature (wrapper for investigate)")
+    # feature-investigate (deprecated wrapper)
+    fi = subparsers.add_parser("feature-investigate", help="[DEPRECATED] Use 'investigate --feature' instead")
     fi.add_argument("feature", help="Feature name to investigate")
     fi.add_argument("--pr", type=int, help="Starting PR number")
     fi.add_argument("--lang", help="Output language code (e.g., ja)")
@@ -547,8 +544,11 @@ Examples:
         run_group_release(args.version, args.batch_size, getattr(args, "all", False))
     else:
         prompt = build_prompt(args.mode, args)
-        # These modes run non-interactively by default
-        no_interactive = args.mode in ("planner", "create-issues", "summarize", "generate-release-docs", "investigate")
+        # These modes run non-interactively by default, except investigate without args (Mode 4)
+        no_interactive = args.mode in ("planner", "create-issues", "summarize", "generate-release-docs")
+        if args.mode == "investigate":
+            # Mode 4 (no args) is interactive, others are non-interactive
+            no_interactive = bool(getattr(args, "issue", None) or getattr(args, "pr", None) or getattr(args, "feature", None))
         run_kiro(args.mode, prompt, no_interactive=no_interactive)
 
 
