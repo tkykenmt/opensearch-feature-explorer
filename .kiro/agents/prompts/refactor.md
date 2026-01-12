@@ -72,3 +72,47 @@ Use LLM for:
    - Commit changes
    - Update progress (Issue mode)
 5. Close Issue when complete (Issue mode)
+
+## Directory Organization
+
+### index.md Creation
+Create index.md when directory has 5+ files:
+- Categorize files by theme/function
+- Use tables with Document | Description columns
+- Parent index.md links to child index.md, not individual files
+
+### File Count Thresholds
+| Files | Action |
+|-------|--------|
+| 1-4 | No index.md needed |
+| 5-10 | Simple index.md with file list |
+| 11+ | Categorized index.md with sections |
+
+## Duplicate Handling
+
+### Detection Criteria
+Consolidate when:
+- Same topic in multiple files (e.g., `sql-ppl-engine.md` + `sql-ppl-breaking-changes.md`)
+- One file is subset of another
+- Version-specific content belongs in main feature doc's Change History
+
+### Consolidation Process
+1. Identify primary file (more comprehensive)
+2. Merge unique content from secondary file
+3. Update Change History if applicable
+4. Delete secondary file
+5. Update any references
+
+## Cross-References
+
+### Related Features Section
+```markdown
+## Related Features
+- [Feature Name](relative/path.md)
+```
+
+### Category Mappings
+Related categories:
+- neural-search ↔ ml-commons, k-nn
+- security ↔ security-dashboards-plugin
+- sql ↔ dashboards-query-workbench
