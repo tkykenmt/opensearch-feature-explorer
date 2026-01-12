@@ -270,10 +270,21 @@ When settings are updated:
 | v3.1.0 | [#18250](https://github.com/opensearch-project/OpenSearch/pull/18250) | Transient failure retries and create mode |
 | v3.1.0 | [#18280](https://github.com/opensearch-project/OpenSearch/pull/18280) | Cluster write block support |
 | v3.1.0 | [#18332](https://github.com/opensearch-project/OpenSearch/pull/18332) | Consumer reset in Resume API |
-| v3.0.0 | [#16927](https://github.com/opensearch-project/OpenSearch/issues/16927) | Initial pull-based ingestion implementation |
+| v3.0.0 | [#16958](https://github.com/opensearch-project/OpenSearch/pull/16958) | Core pull-based ingestion engine, APIs, and Kafka plugin |
+| v3.0.0 | [#17354](https://github.com/opensearch-project/OpenSearch/pull/17354) | Offset management with rewind by offset/timestamp support |
+| v3.0.0 | [#17427](https://github.com/opensearch-project/OpenSearch/pull/17427) | Error handling strategies (DROP and BLOCK) |
+| v3.0.0 | [#17615](https://github.com/opensearch-project/OpenSearch/pull/17615) | Kinesis plugin support |
+| v3.0.0 | [#17631](https://github.com/opensearch-project/OpenSearch/pull/17631) | Ingestion management APIs (pause, resume, get state) |
+| v3.0.0 | [#17768](https://github.com/opensearch-project/OpenSearch/pull/17768) | Disable index API for ingestion engine |
+| v3.0.0 | [#17822](https://github.com/opensearch-project/OpenSearch/pull/17822) | Update and delete support with auto-generated IDs |
+| v3.0.0 | [#17863](https://github.com/opensearch-project/OpenSearch/pull/17863) | Configurable maxPollSize and pollTimeout |
+| v3.0.0 | [#17918](https://github.com/opensearch-project/OpenSearch/pull/17918) | External versioning support for out-of-order updates |
+| v3.0.0 | [#17912](https://github.com/opensearch-project/OpenSearch/pull/17912) | Multi-threaded writer support with configurable processor threads |
 
 ## References
 
+- [Issue #16495](https://github.com/opensearch-project/OpenSearch/issues/16495): RFC - Streaming ingestion (pull based)
+- [Issue #16929](https://github.com/opensearch-project/OpenSearch/issues/16929): Pull-based ingestion tracking issue
 - [Issue #19591](https://github.com/opensearch-project/OpenSearch/issues/19591): Duplicate/old message skipping bug
 - [Issue #19723](https://github.com/opensearch-project/OpenSearch/issues/19723): File-based ingestion flaky test
 - [Issue #19287](https://github.com/opensearch-project/OpenSearch/issues/19287): All-active mode feature request
@@ -291,4 +302,4 @@ When settings are updated:
 - **v3.3.0**: Added all-active ingestion mode enabling replica shards to independently ingest from streaming sources. Fixed ingestion state XContent serialization for remote cluster state compatibility. Fixed lag metric calculation when streaming source is empty. Fixed pause state initialization during replica promotion. Added fail-fast behavior for mapper/parsing errors.
 - **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
 - **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.
-- **v3.0.0**: Initial implementation with Kafka and Kinesis support, pause/resume APIs, basic metrics.
+- **v3.0.0**: Initial experimental implementation with core ingestion engine, Kafka plugin (`ingestion-kafka`), and Kinesis plugin (`ingestion-kinesis`). Added offset management with rewind by offset/timestamp support. Introduced error handling strategies (DROP and BLOCK). Added ingestion management APIs (pause, resume, get state). Implemented update and delete operations with auto-generated IDs for upserts. Added external versioning support for handling out-of-order updates from streaming sources. Introduced multi-threaded writer support with configurable `num_processor_threads`. Added configurable `maxPollSize` and `pollTimeout` settings. Disabled traditional REST API indexing for pull-based indexes.
