@@ -128,14 +128,15 @@ Steps to adopt this change (if applicable).
 ## Limitations
 Known limitations specific to this release.
 
-## Related PRs
-| PR | Description |
-|----|-------------|
-| [#1234](url) | Main implementation |
-
 ## References
-- [Issue #1000](url): Feature request
-- [Documentation](url): Official docs
+
+### Pull Requests
+| PR | Description | Related Issue |
+|----|-------------|---------------|
+| [#1234](url) | Main implementation | [#1000](url) |
+
+### Documentation
+- [Feature Documentation](url)
 
 ## Related Feature Report
 - [Full feature documentation](../../features/{feature-name}.md)
@@ -178,16 +179,28 @@ flowchart LR
 ## Limitations
 Known limitations or constraints
 
-## Related PRs
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1234](https://github.com/opensearch-project/OpenSearch/pull/1234) | Initial implementation |
+## Change History
+- **v3.5.0** (2024-01-15): Added feature X, performance improvements
+- **v3.4.0** (2023-10-01): Initial implementation
 
 ## References
-- [Issue #1000](https://github.com/opensearch-project/OpenSearch/issues/1000): Original feature request
 
-## Change History
-- **v3.4.0** (YYYY-MM-DD): Initial implementation
+### Documentation
+- [Feature Documentation](url)
+- [API Reference](url)
+
+### Blog Posts
+- [Feature Announcement](url)
+
+### Pull Requests
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v3.5.0 | [#2345](url) | Performance improvements | [#2300](url) |
+| v3.4.0 | [#1234](url) | Initial implementation | [#1000](url) |
+
+### Issues (Design / RFC)
+- [#1000](url): Original feature request
+- [#900](url): Design RFC
 ```
 
 ### Release Summary Template (docs/releases/v{version}/summary.md)
