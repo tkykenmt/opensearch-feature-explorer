@@ -159,7 +159,7 @@ graph TB
 
 ### Data Flow
 ```mermaid
-flowchart LR
+flowchart TB
     ...
 ```
 
