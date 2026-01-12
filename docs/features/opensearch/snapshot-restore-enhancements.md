@@ -132,6 +132,9 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 - **v3.1.0** (2026-01-10): Fixed infinite loop when updating repository during snapshot creation; fixed NPE when restoring legacy searchable snapshots
 - **v2.18.0** (2024-11-05): Added alias renaming support during snapshot restore; optimized clone operations for doc-rep clusters
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

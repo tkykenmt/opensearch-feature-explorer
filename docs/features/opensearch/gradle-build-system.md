@@ -128,6 +128,9 @@ dependencies {
 - **v3.0.0** (2025-05-06): Added Netty and Reactor Netty bundles, converted transport-reactor-netty4 plugin
 - **v2.19.0** (2025-02-11): Initial implementation of Gradle version catalog, migrated core dependencies from buildSrc/version.properties
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -137,6 +137,9 @@ JDK 21 provides stable `MemorySegment` API for memory-mapped files:
 - **v1.3.0** (2022-03-17): Introduced `OPENSEARCH_JAVA_HOME` environment variable, downgraded bundled JDK to 11 LTS
 - **v1.0.0** (2021-07-12): Initial release with JDK 15 bundled, JDK 11 minimum
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

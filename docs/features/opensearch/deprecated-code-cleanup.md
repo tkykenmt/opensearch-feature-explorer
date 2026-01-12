@@ -240,6 +240,9 @@ PUT /my-index
   - New JSON processing limits introduced
 - **v2.0.0** (2022-05-26): Initial deprecation of non-inclusive terminology, thread pool settings marked for removal, mapping types parameter removed
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

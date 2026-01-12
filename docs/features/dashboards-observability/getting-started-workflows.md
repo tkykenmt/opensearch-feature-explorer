@@ -107,6 +107,10 @@ graph TB
 - **v2.18.0** (2024-11-12): Major restructure - reorganized into Logs/Metrics/Traces signal types, added telemetry source dropdown with icons, Self Managed/AWS tabs for OTEL, auto index template creation, UI polish
 - **v2.17.0** (2024-10-22): Fixed index pattern mismatches - CSV workflow now uses `logs-*` pattern, removed unused `otel-metrics*` from OTel workflow
 
+## Related Features
+- [SQL/PPL](../sql/calcite-query-engine.md)
+- [Observability](../observability/observability-cypress-updates.md)
+
 ## References
 
 ### Documentation

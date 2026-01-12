@@ -146,6 +146,10 @@ flowchart TB
 
 - **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
 
+## Related Features
+- [SQL/PPL](../sql/calcite-query-engine.md)
+- [Observability](../observability/observability-cypress-updates.md)
+
 ## References
 
 ### Documentation

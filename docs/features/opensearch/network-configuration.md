@@ -104,6 +104,9 @@ SystemCallFilter=@system-service
 
 - **v3.1.0** (2026-01-10): Fixed systemd service file to allow seccomp system call, enabling proper startup with `network.host: 0.0.0.0`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

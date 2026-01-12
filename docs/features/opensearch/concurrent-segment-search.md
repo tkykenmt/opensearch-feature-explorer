@@ -129,6 +129,9 @@ PUT _cluster/settings
 - **v2.17.0**: Introduced `auto` mode with pluggable `ConcurrentSearchRequestDecider` for aggregation requests
 - **v2.12.0**: GA release of concurrent segment search (disabled by default)
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

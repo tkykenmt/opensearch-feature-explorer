@@ -165,6 +165,9 @@ ActionListener<SearchResponse> searchStatusStatsUpdateListener = ActionListener.
 
 - **v3.4.0**: Initial implementation with `StatusCounterStats`, `SearchResponseStatusStats`, and refactored `DocStatusStats`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

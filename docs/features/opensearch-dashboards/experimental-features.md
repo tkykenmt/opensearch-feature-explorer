@@ -166,6 +166,9 @@ curl -X POST 'http://localhost:5601/api/opensearch-dashboards/settings?scope=use
 - **v3.2.0** (2026-01-10): Improved UiSettingsClient robustness for non-existent setting keys
 - **v2.18.0** (2024-10-22): Initial implementation with user settings page, scoped uiSettings, and UserUISettingsClientWrapper
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

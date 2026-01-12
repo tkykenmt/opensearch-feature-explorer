@@ -158,6 +158,10 @@ POST /.plugins-ml-config/_doc/os_text2vega
 
 - **v3.0.0** (2025-05-06): Added text-to-visualization sample templates for Claude Haiku model
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Flow Framework (Dashboards)](../dashboards-flow-framework/ai-search-flows.md)
+
 ## References
 
 ### Documentation

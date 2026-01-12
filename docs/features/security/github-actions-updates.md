@@ -102,6 +102,9 @@ jobs:
 
 - **v3.4.0**: Updated multiple GitHub Actions to support Node.js 24 runtime
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

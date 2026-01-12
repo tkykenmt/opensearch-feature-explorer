@@ -123,6 +123,9 @@ PUT _cluster/settings
 - **v3.4.0** (2025-12-09): Added `search.query.max_query_string_length_monitor_only` setting for monitoring mode
 - **v2.19.4** (2025-10-01): Initial implementation of `search.query.max_query_string_length` setting
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

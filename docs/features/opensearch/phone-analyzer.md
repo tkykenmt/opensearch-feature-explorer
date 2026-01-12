@@ -167,6 +167,9 @@ Without a region, only numbers with international prefix (`+`) are fully parsed.
 
 - **v2.18.0** (2024-10-22): Initial implementation with `phone` and `phone-search` analyzers/tokenizers
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

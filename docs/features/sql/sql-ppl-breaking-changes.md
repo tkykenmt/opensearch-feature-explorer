@@ -116,6 +116,10 @@ POST /_plugins/_sql
 
 - **v3.0.0** (2025-05-06): Major breaking changes - removed SparkSQL, DELETE statement, DSL format, scroll API, opendistro settings/endpoints; added Calcite-based functions, unified PPL data types, and documentation for V3 engine with new commands (join, lookup, subquery)
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

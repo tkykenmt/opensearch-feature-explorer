@@ -66,6 +66,9 @@ yarn cypress open
 
 - **v3.3.0** (2025-10-02): Updated @cypress/request from 3.0.1 to 3.0.9 to address security advisories
 
+## Related Features
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

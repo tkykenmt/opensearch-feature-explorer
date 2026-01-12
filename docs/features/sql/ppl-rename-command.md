@@ -139,6 +139,10 @@ source=accounts | rename name as user_name age as user_age country as location
 - **v3.3.0** (2026): Added wildcard pattern support for batch field renaming, space-delimited syntax, and updated field rename behavior for non-existent/existing field scenarios
 - **v1.0.0**: Initial implementation with basic single and multiple field rename support
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

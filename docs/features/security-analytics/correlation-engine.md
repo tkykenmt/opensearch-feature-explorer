@@ -173,6 +173,11 @@ The correlation graph in OpenSearch Dashboards displays:
 - **v2.9.0**: Correlation engine enhancements in Security Analytics
 - **v2.6.0**: Initial correlation engine release in Security Analytics plugin
 
+## Related Features
+- [Security](../security/alerting-comments-security.md)
+- [Alerting](../alerting/alerting.md)
+- [Notifications](../notifications/notifications-plugin.md)
+
 ## References
 
 ### Documentation

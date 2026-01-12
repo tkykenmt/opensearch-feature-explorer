@@ -148,6 +148,9 @@ Possible values for `result_selection_strategy`:
 
 - **v3.2.0** (2025-08-07): Initial implementation with configurable bucket selection strategy factor
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

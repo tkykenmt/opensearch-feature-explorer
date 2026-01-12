@@ -147,6 +147,9 @@ cd opensearch-3.1.0
 
 - **v3.1.0** (2025-04-30): Added Linux riscv64 platform support
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

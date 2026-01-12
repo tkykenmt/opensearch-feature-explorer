@@ -146,6 +146,9 @@ The API returns indexing buffer information with the following fields:
 - **v3.0.0** (2025-05-06): Breaking change - Fixed swapped `total_indexing_buffer` and `total_indexing_buffer_in_bytes` field formats
 - **v3.0.0** (2025-05-06): Breaking change - `search_pipelines` metric excluded from default metrics set
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

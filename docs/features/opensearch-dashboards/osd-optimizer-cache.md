@@ -112,6 +112,9 @@ yarn osd clean
 
 - **v2.18.0** (2024-10-22): Switched from mtime-based caching to SHA-1 content hashing for CI compatibility
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Pull Requests

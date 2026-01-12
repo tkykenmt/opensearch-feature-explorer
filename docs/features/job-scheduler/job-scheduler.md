@@ -212,6 +212,11 @@ Job Scheduler supports two schedule formats:
 - **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
 - **v2.17.0** (2024-09-17): Fixed system index compatibility with v1 templates in LockService and JobDetailsService
 
+## Related Features
+- [Index Management](../index-management/index-management.md)
+- [Anomaly Detection](../anomaly-detection/anomaly-detection.md)
+- [Alerting](../alerting/alerting.md)
+
 ## References
 
 ### Documentation

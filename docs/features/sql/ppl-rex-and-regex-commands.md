@@ -214,6 +214,10 @@ source=data | rex field=phone mode=sed "s/(\d{3})(\d{3})(\d{4})/\1-\2-\3/" | fie
 
 - **v3.3.0** (2025-09): Initial implementation of `regex` and `rex` commands with extract mode, sed mode, and offset_field support
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

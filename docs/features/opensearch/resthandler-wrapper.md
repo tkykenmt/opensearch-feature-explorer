@@ -118,6 +118,9 @@ class Wrapper implements RestHandler {
 
 - **v2.18.0** (2024-11-12): Added missing delegation for `isActionPaginated()` and `supportsStreaming()` methods, added reflection-based test to prevent future regressions
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

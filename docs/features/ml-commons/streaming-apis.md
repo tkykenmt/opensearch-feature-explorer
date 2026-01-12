@@ -291,6 +291,12 @@ data: {"inference_results":[{"output":[{"name":"response","dataAsMap":{"content"
 
 - **v3.3.0** (2025): Initial implementation with Predict Stream and Execute Stream Agent APIs
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

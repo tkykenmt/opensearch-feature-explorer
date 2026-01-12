@@ -189,6 +189,11 @@ GET /my-sparse-index/_search
 - **v3.0.0** (2025-03-11): Added analyzer-based neural sparse query support, enabling tokenization without ML Commons models
 - **v2.11.0**: Initial implementation of neural sparse query with model-based and raw token support
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

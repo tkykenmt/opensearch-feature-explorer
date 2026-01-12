@@ -112,6 +112,9 @@ The bar size controls appear in the "Bar Settings" accordion within the style op
 
 - **v3.2.0**: Initial implementation - Added bar size mode toggle with auto/manual options
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

@@ -152,6 +152,9 @@ PUT _plugins/_security/api/tenants/analytics
 - **v3.0.0**: Removed tenant panels when multitenancy is disabled
 - **v2.17.0**: Fixed tenancy app registration when disabled in configuration
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

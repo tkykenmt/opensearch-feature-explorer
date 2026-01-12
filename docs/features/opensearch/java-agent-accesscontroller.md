@@ -153,6 +153,9 @@ CityResponse response = AccessController.doPrivileged(() ->
 - **v3.4.0** (2026-01-11): Fix JRT protocol URL filtering in protection domain extraction to allow MCP server connections
 - **v3.2.0** (2026-01-11): Initial implementation with `doPrivileged` and `doPrivilegedChecked` methods
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

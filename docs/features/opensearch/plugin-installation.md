@@ -120,6 +120,9 @@ The verification process:
 - **v3.3.0** (2026-01-11): Added support for copying directories to plugin config folder during installation
 - **v3.1.0** (2026-01-10): Fixed signature verification failure caused by PGP public key change; added BouncyCastle FIPS provider initialization
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

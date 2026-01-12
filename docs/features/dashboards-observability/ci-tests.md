@@ -109,6 +109,10 @@ Version resolution uses maven-metadata.xml to get the latest snapshot build.
 
 - **v3.4.0** (2026-01-11): Migrated to OpenSearch CI snapshot repository, updated to 3.4.0, added dynamic snapshot version resolution, improved error handling
 
+## Related Features
+- [SQL/PPL](../sql/calcite-query-engine.md)
+- [Observability](../observability/observability-cypress-updates.md)
+
 ## References
 
 ### Documentation

@@ -148,6 +148,9 @@ const appLinks: AppLinkSchema[] = [
 
 - **v2.18.0** (2024-11-12): Updated sample data page UI with new UX; Added OTEL sample data for traces, metrics, logs, and service maps; Added compatibility warning to OTEL sample data description (OpenSearch 2.13+ required)
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

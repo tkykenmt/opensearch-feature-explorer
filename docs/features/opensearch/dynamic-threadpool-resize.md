@@ -169,6 +169,9 @@ This ensures `core ≤ max` invariant is maintained during the transition.
 
 - **v2.18.0** (2024-10-29): Initial implementation - dynamic thread pool resize capability
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

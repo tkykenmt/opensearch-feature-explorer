@@ -177,6 +177,10 @@ source=sales | appendpipe [stats sum(amount) as total | eval category='TOTAL']
 
 - **v3.4.0** (2026-01-11): Added `chart`, `streamstats`, `multisearch`, `replace`, `appendpipe` commands; added `bucket_nullable` for eventstats/streamstats; added `usenull` for top/rare; pushdown optimizations for top/rare/dedup
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

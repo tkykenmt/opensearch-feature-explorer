@@ -131,6 +131,9 @@ GET _cat/segment_replication?v
 - **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
 - **v3.0.0** (2025-05-13): Implemented shard-level stats computation on replicas; Fixed skewed lag metric when same checkpoint published twice; Increased default segment counter step size from 10 to 100,000; Added configurable publish checkpoint retry timeout setting
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

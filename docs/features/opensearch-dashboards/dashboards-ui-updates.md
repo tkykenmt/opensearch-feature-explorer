@@ -107,6 +107,9 @@ import { EuiTitle, EuiButtonIcon, EuiToolTip } from '@elastic/eui';
 
 - **v2.17.0** (2024-09-17): OUI upgrades from 1.9.0 to 1.12.0, header spacing improvements, recent items button refactoring
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

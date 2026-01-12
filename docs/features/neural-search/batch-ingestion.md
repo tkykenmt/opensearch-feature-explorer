@@ -135,6 +135,11 @@ PUT /_ingest/pipeline/sparse-pipeline
 - **v2.16.0**: Batch size configuration moved from Bulk API to processor level
 - **v2.14.0**: Initial batch ingestion feature introduced
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

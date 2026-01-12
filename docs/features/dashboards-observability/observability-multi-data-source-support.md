@@ -211,6 +211,10 @@ When MDS is enabled, integration instances include a `references` field:
 - **v2.18.0** (2024-10-22): Bug fixes for MDS including plugin de-registration improvements, error code handling, remote cluster call fixes, and MDS label handling
 - **v2.17.0** (2024-09-17): Initial MDS support for Getting Started, Integrations, and plugin deregistration
 
+## Related Features
+- [SQL/PPL](../sql/calcite-query-engine.md)
+- [Observability](../observability/observability-cypress-updates.md)
+
 ## References
 
 ### Documentation

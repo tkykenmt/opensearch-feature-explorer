@@ -143,6 +143,11 @@ When using remote indexes with fine-grained access control:
 
 - **v2.17.0** (2024-09-17): Initial implementation of remote index and multi-index validation support
 
+## Related Features
+- [Alerting](../alerting/alerting.md)
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Job Scheduler](../job-scheduler/job-scheduler.md)
+
 ## References
 
 ### Documentation

@@ -86,6 +86,9 @@ The resync mechanism is internal to OpenSearch and triggered automatically durin
 
 - **v2.18.0** (2024-10-22): Fixed `hashCode()` calculation in `ResyncReplicationRequest` to properly handle array fields using `Arrays.hashCode()`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -144,6 +144,9 @@ POST index/_search
 
 - **v2.18.0** (2024-10-22): Fixed infinite loop bug in deeply nested aggregations ([#15931](https://github.com/opensearch-project/OpenSearch/pull/15931))
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

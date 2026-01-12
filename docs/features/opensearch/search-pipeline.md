@@ -270,6 +270,9 @@ Response includes system-generated processor and factory statistics:
 - **v3.2.0** (2026-01-14): Added support for specifying search pipeline in search template and msearch template APIs
 - **v2.18.0** (2024-11-05): Added support for specifying search pipeline in msearch API request body
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

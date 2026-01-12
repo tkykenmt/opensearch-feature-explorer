@@ -263,6 +263,9 @@ POST /logs-index/_doc
 - **v3.4.0** (2025-11-07): Added `context_aware_grouping` mapper for defining grouping criteria with Painless script support
 - **v3.4.0** (2025-11-07): Initial implementation with CompositeIndexWriter, CriteriaBasedMergePolicy, and experimental feature flag
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Pull Requests

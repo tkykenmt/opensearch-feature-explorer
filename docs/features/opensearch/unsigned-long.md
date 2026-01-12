@@ -167,6 +167,9 @@ POST my_index/_search
 - **v3.0.0** (2025-03-05): Fixed bug where terms queries on unsigned_long fields with values > Long.MAX_VALUE caused assertion errors. Introduced `UnsignedLongHashSet` class with proper unsigned comparison.
 - **v2.8.0**: Initial implementation of unsigned_long field type.
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

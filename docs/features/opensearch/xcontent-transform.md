@@ -200,6 +200,9 @@ List<Map<String, Object>> results = documents.stream()
 
 - **v3.0.0** (2025-03-20): Initial implementation for k-NN derived source support
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

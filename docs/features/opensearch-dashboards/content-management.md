@@ -176,6 +176,9 @@ class MyPlugin {
 - **v2.17.0** (2024-09-17): Added `updatePageSection` API for dynamic section input updates
 - **v2.16.0** (2024-08-06): Initial implementation with page registration, content providers, and section rendering
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

@@ -154,6 +154,10 @@ Throttle Enabled: {{ctx.action.throttle_enabled}}
 
 - **v2.17.0** (2024-09-17): Added missing context variables for monitor, trigger, action, schedule, and input models
 
+## Related Features
+- [Alerting](../alerting/alerting.md)
+- [Notifications](../notifications/notifications-plugin.md)
+
 ## References
 
 ### Documentation

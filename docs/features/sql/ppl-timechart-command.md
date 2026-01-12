@@ -161,6 +161,10 @@ source=application_logs
 
 - **v3.4.0** (2026-01): Added `per_second`, `per_minute`, `per_hour`, `per_day` functions; millisecond span support; `timefield` option; merged `timechart` and `chart` implementations
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

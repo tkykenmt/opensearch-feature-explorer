@@ -141,6 +141,9 @@ POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
 - **v2.17.0** (2024-09-17): Added API role permissions for correlation alerts in security plugin
 - **v2.15.0**: Initial implementation of correlation alerts feature in Security Analytics
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

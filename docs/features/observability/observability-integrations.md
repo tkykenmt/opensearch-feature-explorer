@@ -121,6 +121,9 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 - **v3.4.0** (2026-01-14): Improved static file serving with image type validation and SVG sanitization
 - **v3.0.0** (2025-05-06): Improved error handling and test result quality for integration configuration parsing
 
+## Related Features
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

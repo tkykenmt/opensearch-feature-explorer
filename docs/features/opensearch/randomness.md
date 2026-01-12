@@ -103,6 +103,9 @@ Randomness.shuffle(items);
 
 - **v3.2.0** (2025-07-16): Fixed blocking issue by reverting to `new SecureRandom()` in non-FIPS mode
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

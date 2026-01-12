@@ -228,6 +228,10 @@ source=sales | stats sum(amount) by product | sort -sum(amount) | head 10
 
 - **v3.3.0** (2026-01-11): Added single group-by optimization, filtered aggregation pushdown, limit pushdown, SUM literal optimization, earliest/latest pushdown, and auto_date_histogram support
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

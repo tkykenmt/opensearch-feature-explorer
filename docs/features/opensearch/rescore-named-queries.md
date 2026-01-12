@@ -204,6 +204,9 @@ GET /my_index/_search?include_named_queries_score=true
 
 - **v3.2.0** (2025-07-09): Initial implementation - named queries from rescore contexts now appear in matched_queries array
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -118,6 +118,9 @@ GET /index/_search
 
 - **v3.0.0** (2025-05-06): Added HashSet-based filtering optimization for simple field names to prevent TooComplexToDeterminizeException
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

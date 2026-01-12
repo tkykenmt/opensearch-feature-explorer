@@ -198,6 +198,10 @@ source=logs | stats c() as total
 
 - **v3.3.0**: Search command revamp with full-text search, time modifiers, strftime function, JOIN enhancements, max/min eval functions, count() shortcut, ISO8601 support
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

@@ -156,6 +156,9 @@ PUT /logs/_mapping
 - **v2.17.0**: Added support for most aggregation types on derived fields
 - **v2.15.0**: Initial implementation of derived fields feature
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

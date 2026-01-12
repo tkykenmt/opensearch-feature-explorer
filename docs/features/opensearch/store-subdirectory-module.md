@@ -137,6 +137,9 @@ PUT /my-index
 - **v3.0.0** (2025-09-02): Added support for custom metadata files in subdirectory-store recovery
 - **v3.0.0** (2025-09-02): Initial implementation with SubdirectoryStorePlugin, SubdirectoryAwareStore, and peer recovery support
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Pull Requests

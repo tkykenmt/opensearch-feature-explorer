@@ -183,6 +183,9 @@ QueryCollectorArguments args = new QueryCollectorArguments.Builder()
 
 - **v3.2.0** (2025-07-01): Initial implementation - Added `QueryCollectorContextSpec`, `QueryCollectorContextSpecFactory`, `QueryCollectorContextSpecRegistry`, and `QueryCollectorArguments` classes. Extended `SearchPlugin` interface with `getCollectorContextSpecFactories()` method.
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

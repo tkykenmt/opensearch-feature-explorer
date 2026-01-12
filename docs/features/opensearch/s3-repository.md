@@ -221,6 +221,9 @@ graph TB
 - **v3.1.0** (2025-07): Added SSE-KMS support, bucket owner verification, removed legacy server_side_encryption setting
 - **v2.18.0** (2024-10-22): Added async deletion support, changed default retry mechanism to Standard Mode, fixed SLF4J warnings
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

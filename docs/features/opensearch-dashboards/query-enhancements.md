@@ -126,6 +126,9 @@ source = logs-* | where status >= 400 | head 100
 - **v3.0.0** (2025-03-11): PPL query bugfixes - grammar parsing in auto-suggest, timezone handling for time columns, millisecond precision in date fields, error message display in query editors, time range handling for non-search queries
 - **v2.18.0** (2024-11-05): Bug fixes for async polling, error handling, language compatibility, saved query persistence; Added extensibility for custom search strategies via `defineSearchStrategyRoute`; Added keyboard shortcut (Cmd/Ctrl+Enter) for query execution; Exposed datasets and data_frames modules for external plugin imports
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

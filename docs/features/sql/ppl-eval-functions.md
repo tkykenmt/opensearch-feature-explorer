@@ -196,6 +196,10 @@ source=metrics
 
 - **v3.4.0** (2026-01-11): Added `mvappend`, `mvindex`, `mvdedup`, `tostring`, and `regexp_replace` functions
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

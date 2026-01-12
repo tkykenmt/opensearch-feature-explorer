@@ -139,6 +139,9 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder()
 
 - **v3.3.0** (2025-09-30): Initial implementation - Added `_shard_doc` pseudo-field for deterministic tie-breaking with PIT pagination
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

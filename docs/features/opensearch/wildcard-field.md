@@ -153,6 +153,9 @@ GET logs/_search
 - **v2.18.0** (2024-11-05): Fixed escaped wildcard character handling and case-insensitive query behavior
 - **v2.15.0** (2024-06-25): Initial introduction of wildcard field type with 1-3 gram indexing
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

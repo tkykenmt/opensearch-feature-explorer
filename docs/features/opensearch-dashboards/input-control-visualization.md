@@ -86,6 +86,9 @@ To add an Input Control to a dashboard:
 
 - **v2.18.0** (2024-11-05): Fixed sizing of disabled ValidatedDualRange components in range slider controls
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

@@ -137,6 +137,9 @@ The footer bar displays:
 - **v3.2.0**: Fixed autocomplete stale query issue, improved Tab/Enter key handling for suggestions, made generated query scrollable, refined "Replace query" button placement
 - **v2.18.0** (2024-11-05): Added footer bar to single-line editor, fixed query editor extension ordering, improved PPL autocomplete
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

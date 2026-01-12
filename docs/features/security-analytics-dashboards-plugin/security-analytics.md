@@ -101,6 +101,10 @@ graph TB
 - **v3.4.0** (2026-01): Fixed correlation table rendering bug - table was not being populated due to missing error handling and incorrect filter logic
 - **v3.2.0** (2026-01): Bugfixes for correlations page (removed Vega chart) and IOC types API update
 
+## Related Features
+- [Security Analytics](../security-analytics/correlation-engine.md)
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

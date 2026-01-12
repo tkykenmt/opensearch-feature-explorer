@@ -158,6 +158,10 @@ GET my-knn-index/_search
 - **v2.18.0** (2024-10-22): JavaDoc cleanup for RescoreContext class
 - **v2.17.0** (2024-09-17): Initial implementation of k-NN query rescore support for native engines
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

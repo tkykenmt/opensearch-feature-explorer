@@ -60,6 +60,10 @@ No additional configuration is required. The fixes are applied at the source cod
 
 - **v2.17.0** (2024-09-17): Fixed Sass division warning by updating to `calc()` syntax; Fixed broken LICENSE file link and removed unused Docker documentation links
 
+## Related Features
+- [Search Relevance](../search-relevance/ci-tests.md)
+- [Neural Search](../neural-search/agentic-search.md)
+
 ## References
 
 ### Documentation

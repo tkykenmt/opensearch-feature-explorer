@@ -288,6 +288,12 @@ POST /_plugins/_ml/models/_register
 - **v3.1.0** (2025-07-15): MCP SDK downgrade to 0.9.0 for compatibility, added comprehensive unit tests for MCP components
 - **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

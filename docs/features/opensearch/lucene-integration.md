@@ -104,6 +104,9 @@ No user-facing configuration. This is an internal implementation detail.
 
 - **v3.4.0** (2026-01-11): Removed `MultiCollectorWrapper`, now using Lucene's native `MultiCollector.getCollectors()` API
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

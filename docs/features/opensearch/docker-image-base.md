@@ -88,6 +88,9 @@ docker run -d -p 9200:9200 -p 9600:9600 \
 
 - **v3.3.0** (2025-08-27): Migrated from CentOS 8 to AlmaLinux 8 base image
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

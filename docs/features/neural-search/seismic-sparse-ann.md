@@ -377,6 +377,11 @@ GET testindex/_search
 - **v3.4.0** (2026-01-11): Added nested field support for text chunking workflows; bug fixes for IT failures, query handling, and disk space recovery
 - **v3.3.0** (2025-10-23): Initial implementation of SEISMIC sparse ANN algorithm with full indexing, query, caching, and memory management support
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

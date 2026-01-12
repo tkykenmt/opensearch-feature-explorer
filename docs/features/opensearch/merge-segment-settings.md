@@ -134,6 +134,9 @@ POST /my-index/_forcemerge?max_num_segments=1
 
 - **v3.0.0** (2025-05-06): Floor segment size increased to 16MB, maxMergeAtOnce increased to 30, force merge threads scaled to 1/8th of cores, new cluster-level setting added
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

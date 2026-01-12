@@ -85,6 +85,9 @@ configurations.all {
 
 - **v3.3.0**: Fixed CVE-2025-27820 (httpclient5) and CVE-2025-48734 (commons-beanutils)
 
+## Related Features
+- [Performance Analyzer](../performance-analyzer/performance-analyzer.md)
+
 ## References
 
 ### Documentation

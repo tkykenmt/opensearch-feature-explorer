@@ -125,6 +125,9 @@ PUT /my-index/_settings
 
 - **v3.1.0** (2025-04-20): Initial implementation of parallel shard refresh with cluster setting control
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

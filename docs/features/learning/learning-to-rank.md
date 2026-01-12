@@ -156,6 +156,10 @@ POST my_index/_search
 - **v3.2.0** (2025-09-16): Added XGBoost missing values support for correct NaN handling; Build infrastructure upgrade (Gradle 8.14, JDK 24 support); fixed flaky test with ULP tolerance adjustment
 - **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test
 
+## Related Features
+- [Search Relevance](../search-relevance/ci-tests.md)
+- [ML Commons](../ml-commons/agentic-memory.md)
+
 ## References
 
 ### Documentation

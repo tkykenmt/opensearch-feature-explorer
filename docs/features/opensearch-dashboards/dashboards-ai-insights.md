@@ -145,6 +145,9 @@ assistant.chat.enabled: true
 
 - **v3.4.0** (2026-01-12): Added Detection Insights workspace category and log pattern agent support in Discover summary
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

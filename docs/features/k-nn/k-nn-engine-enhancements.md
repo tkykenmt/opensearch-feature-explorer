@@ -167,6 +167,10 @@ PUT my-index
 
 - **v3.3.0** (2026-01-11): Added top-level engine parameter and gRPC transport support for k-NN queries
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

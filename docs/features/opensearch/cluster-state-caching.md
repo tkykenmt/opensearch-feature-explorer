@@ -135,6 +135,9 @@ flowchart TB
 
 - **v3.3.0** (2025-09-30): Fixed cluster state caching to use both cluster state version and node version as cache keys, resolving join failures in mixed-version clusters
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

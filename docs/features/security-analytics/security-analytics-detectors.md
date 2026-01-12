@@ -168,6 +168,11 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 
 - **v2.17.0** (2024-09-17): Added triggers field to Get Detectors API response; Added secure REST tests for threat intel monitor APIs
 
+## Related Features
+- [Security](../security/alerting-comments-security.md)
+- [Alerting](../alerting/alerting.md)
+- [Notifications](../notifications/notifications-plugin.md)
+
 ## References
 
 ### Documentation

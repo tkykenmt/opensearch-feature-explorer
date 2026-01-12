@@ -190,6 +190,10 @@ GET /.async-query-scheduler/_search
 - **v2.18.0** (2024-10-23): Bugfix - Remove scheduler index from SystemIndexDescriptor to prevent conflicts with Job Scheduler plugin
 - **v2.17.0** (2024-09-17): Initial implementation with Job Scheduler integration, scheduler service, and feature flag support
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

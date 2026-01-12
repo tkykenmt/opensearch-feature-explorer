@@ -134,6 +134,9 @@ Example natural language queries:
 - **v3.0.0** (2025): Added streaming support, unsupported dataset handling, prompt customization, markdown rendering for summaries, improved empty result handling, UX style fixes, and multiple bug fixes for UI state management
 - **v2.13** (2024): Initial implementation of OpenSearch Assistant toolkit
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

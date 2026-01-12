@@ -143,6 +143,9 @@ POST /my-index/_search
 
 - **v3.1.0** (2025): Initial implementation with must_not range rewrite and sort-query optimization
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

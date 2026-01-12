@@ -159,6 +159,9 @@ Search latency may increase by 10-100% depending on the number of documents retr
 - **v3.2.0** (2026-01-10): Integration across get/search/recovery paths - Added DerivedSourceDirectoryReader, DerivedSourceLeafReader, DerivedSourceStoredFieldsReader, TranslogOperationHelper; Added dynamic `index.derived_source.translog.enabled` setting; Fixed flaky test issues from reverted PR #18054; Added Star-Tree mapper compatibility
 - **v3.1.0** (2026-01-10): Initial implementation - Added derive source support for basic field types including Date, Number, Boolean, IP, Keyword, Text, Geo Point, Constant Keyword, Scaled Float, and Wildcard
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

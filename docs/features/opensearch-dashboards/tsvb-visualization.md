@@ -137,6 +137,9 @@ vis_type_timeseries.enabled: true
 - **v2.18.0** (2024-10-29): Added hidden axis option, per-axis scale setting, compressed UI input fields ([#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504))
 - **v2.14.0**: Added multi-data source support for TSVB visualizations
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

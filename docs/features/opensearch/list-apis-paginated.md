@@ -198,6 +198,9 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 
 - **v2.18.0** (2024-10-22): Initial implementation with `_list/indices`, `_list/shards` APIs and cat API response limits
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

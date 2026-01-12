@@ -176,6 +176,9 @@ datasetManagement.aliasedAsIndexPattern: false
 
 - **v3.3.0** (2026-01-11): Initial implementation with SignalType filtering, configurable dataset types, and dataset management plugin
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

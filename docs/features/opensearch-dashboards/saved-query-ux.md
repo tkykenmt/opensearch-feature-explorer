@@ -181,6 +181,9 @@ await savedQueryService.deleteSavedQuery(savedQuery.id);
 
 - **v2.18.0** (2024-10-29): Initial implementation with flyout-based UI and sample queries on no results page
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

@@ -144,6 +144,11 @@ GET /my-nlp-index/_search
 
 - **v2.17.0** (2024-09-17): Initial implementation - added rescore parameter support to neural query
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

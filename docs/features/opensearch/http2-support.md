@@ -176,6 +176,9 @@ curl --http2-prior-knowledge \
 
 - **v3.0.0**: Initial implementation with h2c support, HTTP/1.1 upgrade, and prior knowledge connections
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

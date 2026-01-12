@@ -145,6 +145,9 @@ The t-digest algorithm maintains a compact summary of a data distribution using 
 
 - **v3.1.0** (2025-05-28): Switched from AVLTreeDigest to MergingDigest for significant performance improvements (up to 30x faster for low-cardinality fields)
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

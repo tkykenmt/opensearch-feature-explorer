@@ -142,6 +142,10 @@ VACUUM MATERIALIZED VIEW mys3.default.http_logs_metrics
 - **v2.17.0** (2024-09-17): Delegated vacuum operation to Spark for checkpoint cleanup support
 - **v2.14.0**: Initial vacuum operation implementation in SQL plugin
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

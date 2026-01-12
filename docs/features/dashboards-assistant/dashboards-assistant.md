@@ -91,6 +91,11 @@ graph TB
 
 - **v3.1.0** (2026-01-10): Bug fixes for UI behavior, error logging, insights request timing, and conversation loading state
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Flow Framework (Dashboards)](../dashboards-flow-framework/ai-search-flows.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

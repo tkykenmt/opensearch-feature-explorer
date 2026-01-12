@@ -103,6 +103,9 @@ dependencies {
 - **v3.4.0** (2026-01-11): Migrated Maven snapshot publishing from Sonatype to S3, added backport workflows
 - **v3.3.0** (2026-01-11): Fixed dependency version conflicts for integration tests
 
+## Related Features
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

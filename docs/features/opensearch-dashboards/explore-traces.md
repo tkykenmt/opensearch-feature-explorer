@@ -227,6 +227,9 @@ POST .kibana/_doc/correlations:trace-logs-1
 - **v3.4.0** (2026-03-18): Redesigned Logs tab with expandable rows and code block message display, accordion-based dataset grouping, support for multiple log datasets, added span status filters (Error, OK, Unset), improved page header to show root span service/operation, copyable trace ID badge, scrollbar fixes, removed duplicate service.name column
 - **v3.3.0** (2026-03-18): Initial implementation with trace charts, log correlation, timeline waterfall visualization, external datasource support, configurable default columns, and OTEL schema support
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

@@ -136,6 +136,9 @@ Metrics will be written to `logs/_otel_metrics.log` by default, or exported via 
 
 - **v2.18.0** (2024-10-22): Initial implementation - Added success and failure counter metrics for async shard fetch operations
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

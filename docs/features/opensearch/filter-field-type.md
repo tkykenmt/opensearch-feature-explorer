@@ -124,6 +124,9 @@ MappedFieldType original = wrappedType.unwrap();
 
 - **v3.0.0** (2025-04-21): Initial implementation of `FilterFieldType` and codebase-wide `instanceof` fixes
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

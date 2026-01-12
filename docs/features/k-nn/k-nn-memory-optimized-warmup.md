@@ -155,6 +155,10 @@ GET /_tasks?actions=*warmup*
 
 - **v3.4.0** (2026-01-11): Initial implementation of memory-optimized search warmup optimization
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

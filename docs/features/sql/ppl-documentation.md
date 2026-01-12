@@ -135,6 +135,10 @@ source=users
 - **v3.4.0** (2026-01-11): Standardized PPL command documentation structure; added where command examples; fixed typos; enhanced function documentation for isnull/isnotnull and json_valid; added IP datatype documentation
 - **v3.2.0** (2026-01-11): Added Collection, Cryptographic, and JSON function categories to index; updated V3 engine limitations to reflect newly supported features
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

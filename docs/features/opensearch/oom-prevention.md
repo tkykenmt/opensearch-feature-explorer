@@ -136,6 +136,9 @@ To reduce memory pressure during large searches:
 
 - **v3.3.0**: Initial implementation - Added circuit breaker checks for shard result buffering with automatic task cancellation
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

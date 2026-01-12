@@ -118,6 +118,9 @@ Higher scaling factors provide more precision but require more storage space.
 
 - **v3.3.0**: Fixed precision issue where `match` queries failed for certain values due to inconsistent scaling between indexing and querying. The `scale()` method now uses direct multiplication for both operations.
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

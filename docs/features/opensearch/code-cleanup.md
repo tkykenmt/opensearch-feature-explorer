@@ -82,6 +82,9 @@ opensearch.experimental.feature.approximate_point_range_query.enabled: true
 
 - **v2.18.0** (2024-11-05): Query approximation simplification, Stream API optimization, typo fix
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

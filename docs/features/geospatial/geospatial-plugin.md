@@ -75,6 +75,9 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 - **v3.2.0** (2026-01-11): Upgraded Gradle to 8.14.3, enabled JDK 24 CI checks, updated Lombok plugin to 8.14
 - **v3.0.0** (2025-05-06): Fixed Maven POM metadata to include license, description, and developer information for all published artifacts
 
+## Related Features
+- [Maps (Dashboards)](../dashboards-maps/maps-geospatial.md)
+
 ## References
 
 ### Documentation

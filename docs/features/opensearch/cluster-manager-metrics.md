@@ -167,6 +167,9 @@ curl -X GET "localhost:9200/_cluster/pending_tasks?pretty"
 
 - **v3.1.0** (2025-06): Initial implementation with three metrics: task execution time, node-left counter, and FS health failure counter
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

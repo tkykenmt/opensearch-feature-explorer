@@ -134,6 +134,10 @@ permission java.lang.RuntimePermission "loadLibrary.opensearchknn_faiss_avx512_s
 
 - **v3.4.0** (2026-01-11): Added SIMD library to build configurations; migrated to S3 snapshots repository
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Pull Requests

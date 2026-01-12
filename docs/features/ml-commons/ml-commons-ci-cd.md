@@ -134,6 +134,12 @@ jobs:
 
 - **v2.18.0** (2024-10-29): Added workflow approval system, upgraded artifact actions to v4, updated developer guide
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

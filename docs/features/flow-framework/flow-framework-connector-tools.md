@@ -133,6 +133,10 @@ flowchart TB
 
 - **v2.17.0** (2024-10-15): Added support for parsing `connector_id` from previous node inputs in ToolStep
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Flow Framework (Dashboards)](../dashboards-flow-framework/ai-search-flows.md)
+
 ## References
 
 ### Documentation

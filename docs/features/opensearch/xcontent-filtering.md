@@ -146,6 +146,9 @@ public interface RestRequestFilter {
 
 - **v3.4.0** (2025-11-19): Added case-insensitive filtering support via new `caseSensitive` parameter
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

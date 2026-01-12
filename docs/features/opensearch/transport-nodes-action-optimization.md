@@ -104,6 +104,9 @@ public class MyNodesRequest extends BaseNodesRequest<MyNodesRequest> {
 - **v3.0.0** (2025-05-13): Breaking change - removed `includeDiscoveryNodes` field, made optimization mandatory for all TransportNodesAction requests
 - **v2.16.0** (2024-07-22): Initial optimization with opt-in flag for NodeStats, ClusterStats, NodeInfo actions
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

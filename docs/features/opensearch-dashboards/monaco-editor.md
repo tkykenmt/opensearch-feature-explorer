@@ -157,6 +157,9 @@ window.MonacoEnvironment = {
   - Updated completion provider signatures with context and token parameters
   - Added babel plugins for modern JavaScript syntax support
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

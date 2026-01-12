@@ -146,6 +146,9 @@ public class MyPluginIT extends OpenSearchIntegTestCase {
 
 - **v3.1.0** (2025-05-08): Initial implementation - Enable testing for ExtensiblePlugins using classpath plugins
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

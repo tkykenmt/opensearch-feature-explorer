@@ -161,6 +161,10 @@ POST _plugins/_knn/models/my-model/_train
 
 - **v2.17.0** (2024-09-17): Initial implementation - Added `space_type` as top-level parameter for knn_vector field mappings
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

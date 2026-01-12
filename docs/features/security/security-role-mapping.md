@@ -135,6 +135,9 @@ if (userInfo != null) {
 
 - **v3.1.0** (2026-01-10): Fix mapped roles not being included in ThreadContext userInfo after immutable User object change
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

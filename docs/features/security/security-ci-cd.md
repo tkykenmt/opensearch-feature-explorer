@@ -92,6 +92,9 @@ The Dependabot workflow automates three tasks:
 
 - **v3.1.0** (2025-05-12): Initial implementation with changelog verifier and Dependabot PR workflows
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

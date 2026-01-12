@@ -112,6 +112,9 @@ The query string length limit helps protect against:
 
 - **v3.3.0** (2025-10-01): Added `search.query.max_query_string_length` setting to limit query string length
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

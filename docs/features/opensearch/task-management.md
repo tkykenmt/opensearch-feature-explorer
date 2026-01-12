@@ -158,6 +158,9 @@ The `resource_stats` object tracks resource usage for tasks that support resourc
 
 - **v2.18.0** (2024-11-05): Fixed missing `cancellation_time_millis` and `resource_stats` fields in task index mapping
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

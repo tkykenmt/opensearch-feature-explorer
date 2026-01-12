@@ -134,6 +134,10 @@ source=logs | spath output=a input=doc "['a fancy field name']"
 
 - **v3.3.0** (2025-08-28): Initial implementation with JSON path support, rewriting to json_extract internally
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

@@ -113,6 +113,9 @@ PUT _search/pipeline/my-search-pipeline
 
 - **v3.0.0** (2025-05-13): Initial implementation - 512 byte limit for ingest and search pipeline IDs
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

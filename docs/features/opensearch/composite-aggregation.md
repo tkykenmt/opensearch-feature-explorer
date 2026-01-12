@@ -115,6 +115,9 @@ POST /logs/_search
 
 - **v3.2.0**: Performance optimization - reusable Slot object, single-loop initialization, reduced GC pressure
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -102,6 +102,9 @@ After enabling, access the ML Commons Dashboards through:
 - **v2.17.0** (2024-09-17): UI refinements to align font sizes and styles with UX guidelines
 - **v2.9.0**: Initial introduction of ML Commons Dashboards
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+
 ## References
 
 ### Documentation

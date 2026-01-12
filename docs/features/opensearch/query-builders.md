@@ -125,6 +125,9 @@ QueryBuilder query = QueryBuilders.matchQuery("field", "value")
 
 - **v3.0.0** (2025-03-03): Added `filter()` method to `QueryBuilder` interface with implementations in `AbstractQueryBuilder`, `BoolQueryBuilder`, and `ConstantScoreQueryBuilder`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

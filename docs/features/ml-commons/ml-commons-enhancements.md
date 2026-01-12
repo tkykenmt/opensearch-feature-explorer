@@ -169,6 +169,12 @@ PUT _cluster/settings
 
 - **v3.4.0** (2026-01-11): Added sensitive parameter filtering for connector APIs, resource type support for resource sharing client, increased batch task limits (default: 100, max: 10,000)
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

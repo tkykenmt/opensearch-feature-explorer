@@ -126,6 +126,9 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 - **v3.2.0** (2025-07-18): Build infrastructure update - SpotBugs 6.2.2, Checkstyle 10.26.1; Removed CVE-2025-27820 workaround
 - **v2.17.0** (2024-09-17): Added RTFCacheConfigMetricsCollector for cache configuration telemetry; Updated PA Commons dependency to 1.6.0
 
+## Related Features
+- [Query Insights](../query-insights/query-insights.md)
+
 ## References
 
 ### Documentation

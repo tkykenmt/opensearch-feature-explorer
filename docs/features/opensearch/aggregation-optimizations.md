@@ -286,6 +286,9 @@ GET /taxi/_search
 - **v3.3.0** (2026-01): Added precomputation for rare terms, quickselect for string terms, object reuse for date histogram
 - **v3.0.0** (2025-02): Added `execution_hint` parameter for cardinality aggregation, multi-term aggregation latency/memory improvements, numeric term aggregation sorting optimization
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

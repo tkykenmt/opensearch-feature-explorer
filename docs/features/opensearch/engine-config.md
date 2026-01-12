@@ -146,6 +146,9 @@ EngineConfig encryptedConfig = existingConfig.toBuilder()
 
 - **v3.3.0**: Added `toBuilder()` method; promoted `EngineConfig.Builder` and `CodecService` to public API
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

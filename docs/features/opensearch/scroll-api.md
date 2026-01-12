@@ -146,6 +146,9 @@ GET /my-index/_search?scroll=10m
 - **v3.4.0**: Added `StoredFieldsReader` caching per segment in `ScrollContext` to optimize sequential document access across scroll batches, addressing performance regression in versions >= 2.6.0
 - **v3.3.0**: Improved error handling - scroll IDs referencing missing nodes now return HTTP 400 (Bad Request) with `IllegalArgumentException` instead of HTTP 500 (Internal Server Error) with `IllegalStateException`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

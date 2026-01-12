@@ -231,6 +231,9 @@ Both documents share the anchor `/company/engineering` and are routed to the sam
 
 - **v3.2.0** (2025-08): Initial implementation of hierarchical and ACL-aware routing processors
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

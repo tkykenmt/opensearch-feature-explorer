@@ -83,6 +83,11 @@ dependencies {
 
 - **v2.18.0** (2024-10-29): Updated Jackson to 2.18.0, JUnit Jupiter to 5.11.2, Mockito to 5.14.1; removed unused javassist dependency
 
+## Related Features
+- [Alerting](../alerting/alerting.md)
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Job Scheduler](../job-scheduler/job-scheduler.md)
+
 ## References
 
 ### Documentation

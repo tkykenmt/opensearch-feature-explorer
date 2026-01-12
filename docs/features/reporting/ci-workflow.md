@@ -74,6 +74,9 @@ windows-mac-builds:
 
 - **v3.0.0** (2025-05-06): Upgraded actions/checkout to v4, consolidated Windows/macOS builds into matrix job, fixed documentation links
 
+## Related Features
+- [Reporting (Dashboards)](../dashboards-reporting/dashboards-reporting.md)
+
 ## References
 
 ### Documentation

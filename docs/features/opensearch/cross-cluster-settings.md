@@ -132,6 +132,9 @@ GET my-remote-cluster:my-index/_search
 
 - **v3.3.0** (2025-08-20): Fixed `skip_unavailable` setting persistence during seed node updates
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

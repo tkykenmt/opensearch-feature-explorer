@@ -117,6 +117,9 @@ Costly queries include:
 
 - **v3.3.0** (2025-08-21): Added dynamic cluster settings for `skip_cache_factor`, `min_frequency`, and `costly_min_frequency`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

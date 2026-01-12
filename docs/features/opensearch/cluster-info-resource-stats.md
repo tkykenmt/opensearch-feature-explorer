@@ -147,6 +147,9 @@ When serialized, the resource usage stats appear in the ClusterInfo response:
 
 - **v3.2.0** (2025-06-23): Initial implementation - Added NodeResourceUsageStats to ClusterInfo for cluster-wide resource visibility
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

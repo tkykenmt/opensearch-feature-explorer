@@ -120,6 +120,9 @@ graph TB
 
 - **v2.17.0** (2024-09-17): Comprehensive UI/UX improvements implementing "Look and Feel" and "Fit and Finish" design guidelines across all pages, navigation redesign, notification modal, MDS support for Shrink page, history navigation bug fixes
 
+## Related Features
+- [Index Management](../index-management/index-management.md)
+
 ## References
 
 ### Documentation

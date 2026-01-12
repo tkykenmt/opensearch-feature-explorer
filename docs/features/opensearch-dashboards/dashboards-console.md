@@ -129,6 +129,9 @@ PATCH _plugins/_security/api/roles/my_role
 - **v3.4.0** (2025-10-14): Added support for PATCH HTTP method with JSON array body parsing
 - **v3.4.0** (2025-10-03): Fixed bug where `console_polling` setting could not be updated through the UI
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

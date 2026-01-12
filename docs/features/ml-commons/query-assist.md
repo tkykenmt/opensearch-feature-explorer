@@ -157,6 +157,12 @@ Query Assist provides clear feedback for different error scenarios:
 - **v2.16.0** (2024-08-06): Query enhancements plugin added as core plugin with Query Assist feature
 - **v2.13.0** (2024-02-20): Initial introduction of Query Assist in OpenSearch Dashboards
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

@@ -170,6 +170,12 @@ With this schema, a prediction request with `"inputText": "5.11"` will correctly
 - **v3.2.0** (2025-07): Added pre/post-process function validation for connectors, improved URI validation with clearer error messages
 - **v3.1.0** (2025-06): Added input validation for name/description fields, fixed schema string type preservation, fixed connector retry policy NPE, fixed MCP tool memory synchronization, fixed Bedrock DeepSeek tool result format
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

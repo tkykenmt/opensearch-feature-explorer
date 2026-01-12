@@ -155,6 +155,9 @@ GET /test_index/_search
 
 - **v3.2.0** (2025): Fixed field alias support for regex in query_string, restored COMPLEMENT flag backward compatibility, fixed TooComplexToDeterminizeException propagation
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

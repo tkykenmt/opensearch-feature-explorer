@@ -144,6 +144,9 @@ source = remote-cluster:logs-2024.01.01 | head 10
 
 - **v3.0.0** (2025-05-06): Initial implementation of Cross-Cluster Search UI support in OpenSearch Dashboards
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

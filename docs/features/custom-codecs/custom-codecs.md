@@ -211,6 +211,9 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 - **v2.15.0** (2024-06-25): Added QAT hardware-accelerated codecs (`qat_lz4`, `qat_deflate`)
 - **v2.9.0** (2023-07-24): Initial implementation of ZSTD codecs (`zstd`, `zstd_no_dict`)
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

@@ -115,6 +115,9 @@ ThreadPoolStats.Stats threadStats = new ThreadPoolStats.Stats.Builder()
 
 - **v3.4.0** (2026-01-11): Initial implementation - deprecated constructors in 30+ Stats classes in favor of Builder pattern
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Pull Requests

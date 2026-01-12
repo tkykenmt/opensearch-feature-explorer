@@ -208,6 +208,10 @@ Late interaction models that can be used with OpenSearch:
 
 - **v3.3.0** (2025-10-14): Initial implementation of `lateInteractionScore` function in k-NN plugin
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

@@ -126,6 +126,9 @@ node.attr.remote_store.repository.my-remote-state-repo.settings.region: us-east-
 - **v2.18.0** (2024-10-29): Added fallback mechanism to use pre-commit state or remote cluster state on term-version mismatch, reducing unnecessary cluster state transfers in large clusters
 - **v2.18.0** (2024-10-29): Fixed voting configuration mismatch by updating lastSeenClusterState in commit phase
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -173,6 +173,9 @@ $buildDir/build/reports/jacoco/test/html/
 - **v3.3.0** (2025-10-14): Expanded coverage to include internalClusterTest and yamlRestTest; added testclusters directory permissions
 - **v3.2.0** (2025-06-13): Initial implementation - ability to run code coverage locally with Gradle and produce JaCoCo reports
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -211,6 +211,11 @@ DELETE /_plugins/_search_relevance/experiments/schedule/{id}
 
 - **v3.4.0** (2025-12): Initial implementation with scheduling APIs, UI components, and dedicated dashboard
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Learning to Rank](../learning/learning-to-rank.md)
+
 ## References
 
 ### Documentation

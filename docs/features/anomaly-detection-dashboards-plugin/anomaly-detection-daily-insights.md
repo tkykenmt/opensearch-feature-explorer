@@ -146,6 +146,9 @@ The Daily Insights page displays:
 
 - **v3.4.0** (2026-01): Initial implementation with Daily Insights page, Indices Management, and Index Selection Modal
 
+## Related Features
+- [Anomaly Detection](../anomaly-detection/anomaly-detection.md)
+
 ## References
 
 ### Documentation

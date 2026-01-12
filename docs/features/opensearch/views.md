@@ -231,6 +231,9 @@ PUT /views/application-logs
 
 - **v3.0.0** (2024-02-20): Initial implementation of Views feature with CRUD operations and search support
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Pull Requests

@@ -223,6 +223,10 @@ For flow agents, response filters are auto-configured for supported providers:
 - **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
 - **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering, refactored quick configure components with Formik integration, improved processor error handling with dynamic error display, added version compatibility check to hide search query section for versions < 2.19.0
 
+## Related Features
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+
 ## References
 
 ### Documentation

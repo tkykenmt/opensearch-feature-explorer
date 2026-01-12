@@ -132,6 +132,12 @@ POST _plugins/_ml/models/<model_id>/_predict
 
 - **v3.2.0** (2025-07-21): Added TOKEN_ID format support for sparse encoding and sparse tokenize models
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

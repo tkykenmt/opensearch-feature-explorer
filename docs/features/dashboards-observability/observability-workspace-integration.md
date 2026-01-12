@@ -169,6 +169,10 @@ class ObsDashboardStateManager {
 - **v2.18.0** (2024-10-22): Fixed permission issue where non-workspace admins could update `observability:defaultDashboard` setting
 - **v2.17.0** (2024-10-15): Initial implementation - workspace-compatible createAssets API and Content Management-based Overview page
 
+## Related Features
+- [SQL/PPL](../sql/calcite-query-engine.md)
+- [Observability](../observability/observability-cypress-updates.md)
+
 ## References
 
 ### Documentation

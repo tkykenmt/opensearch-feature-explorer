@@ -190,6 +190,9 @@ GET /metrics/_search
 
 - **v3.0.0** (2025-04): Added ApproximateMatchAllQuery, sub-aggregation support in filter rewrite, disabled keyword term scoring by default, and pre-sorted terms optimization for TermInSetQuery
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

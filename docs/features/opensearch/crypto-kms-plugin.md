@@ -100,6 +100,9 @@ The plugin will automatically integrate with the CryptoHandlerRegistry when Open
 
 - **v3.1.0** (2026-01-10): Fixed plugin loading by decoupling CryptoPlugin and CryptoKeyProviderPlugin initialization; upgraded AWS SDK v2.x dependencies to fix NoClassDefFoundError
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Pull Requests

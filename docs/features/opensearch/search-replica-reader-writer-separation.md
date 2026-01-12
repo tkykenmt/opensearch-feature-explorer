@@ -145,6 +145,9 @@ POST /my-index/_scale
 - **v3.0.0** (2025-04-08): Added scale-to-zero support, auto-expand search replicas, and strict routing setting
 - **v2.17.0** (2024-09): Initial experimental implementation with search replicas and pull-based replication
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

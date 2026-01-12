@@ -171,6 +171,12 @@ PUT test-index
 - **v3.3.0** (2025): Added ColPali multimodal blueprint, Ollama connector blueprint, agentic search tutorial, agentic memory with Strands agents tutorial, conversational search with Ollama tutorial, instance type fix in language identification tutorial, additional unit tests
 - **v3.2.0** (2025): Added multi-modal search tutorial, semantic highlighter blueprint, neural sparse documentation, language identification tutorial, agentic RAG tutorial, e-commerce demo notebook, and Aleph Alpha blueprint fix
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

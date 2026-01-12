@@ -121,6 +121,10 @@ POST /_plugins/_sql
 
 - **v2.18.0** (2024-11-05): Improved error handling for malformed cursors and edge cases in query parsing
 
+## Related Features
+- [Query Workbench](../dashboards-query-workbench/query-workbench.md)
+- [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
+
 ## References
 
 ### Documentation

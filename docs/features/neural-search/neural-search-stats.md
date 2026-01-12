@@ -218,6 +218,11 @@ GET /_plugins/_neural/stats?include_individual_nodes=false
 
 - **v3.1.0** (2026-01-10): Comprehensive stats coverage for all Neural Search components including text chunking, text embedding, hybrid query, normalization processors, semantic highlighting, and API parameter enhancements
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

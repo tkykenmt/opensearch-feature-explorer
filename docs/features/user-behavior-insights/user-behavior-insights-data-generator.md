@@ -149,6 +149,9 @@ python ubi_data_generator.py \
 
 - **v3.2.0** (2025-06-26): Added `search_config` field to support A/B TDI testing simulation
 
+## Related Features
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

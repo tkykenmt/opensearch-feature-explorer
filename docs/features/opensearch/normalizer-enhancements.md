@@ -136,6 +136,9 @@ Result: `naive approach with l` (lowercased, ASCII-folded, truncated to 20 chars
 
 - **v3.4.0** (2025-11-17): Added `truncate` token filter support in normalizers
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

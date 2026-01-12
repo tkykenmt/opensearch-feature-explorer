@@ -119,6 +119,9 @@ The health check endpoint is designed for use with load balancers:
 
 - **v3.3.0**: Added PrivilegesEvaluator (AuthZ) initialization check to health API. Previously only checked BackendRegistry (AuthN) initialization.
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

@@ -208,6 +208,9 @@ chrome.globalSearch.getAllSearchCommands$().subscribe(commands => {
 - **v3.3.0**: Fixed global search URL handling in workspace context
 - **v2.18.0** (2024-11-05): Initial implementation - added global search bar into left navigation for searching pages across workspaces
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Pull Requests

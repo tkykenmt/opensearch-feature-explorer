@@ -118,6 +118,9 @@ public class CustomIdentityPlugin extends Plugin implements IdentityPlugin, Acti
 
 - **v2.18.0** (2024-10-22): Removed Identity feature flag, moved authentication logic to identity plugins
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

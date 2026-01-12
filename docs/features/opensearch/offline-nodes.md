@@ -152,6 +152,9 @@ if (assigned) {
 
 - **v2.18.0** (2024-11-05): Initial implementation - Added offline-tasks library with core abstractions and interfaces
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Pull Requests

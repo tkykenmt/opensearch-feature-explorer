@@ -244,6 +244,9 @@ PUT _cluster/settings
 - **v3.1.0** (2025-05-28): Added file pinning support and granular statistics (full file, block file, pinned file stats)
 - **v2.7.0**: Initial implementation for Searchable Snapshots
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

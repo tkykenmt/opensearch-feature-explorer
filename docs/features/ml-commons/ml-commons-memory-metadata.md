@@ -173,6 +173,12 @@ curl -X PUT "http://localhost:9200/_plugins/_ml/memory/{memory_id}" \
 
 - **v2.17.0** (2024-09-17): Added `additional_info` field to memory metadata for storing custom key-value pairs
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

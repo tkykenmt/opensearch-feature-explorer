@@ -159,6 +159,9 @@ GET /_cluster/stats/os,indices/shards,docs/nodes/_all
 - **v2.18.0** (2024-10-22): Added URI path filtering support for selective metric retrieval
 - **v1.0.0**: Initial cluster stats API implementation
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

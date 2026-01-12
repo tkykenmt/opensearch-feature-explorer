@@ -132,6 +132,12 @@ POST /_plugins/_ml/models/_register?deploy=true
 - **v3.0.0**: Fixed config index masterkey for multi-tenancy
 - **v2.19.0**: Initial multi-tenancy implementation for connectors, models, agents
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

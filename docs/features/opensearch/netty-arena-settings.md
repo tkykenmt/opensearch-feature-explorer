@@ -113,6 +113,9 @@ cat /proc/$(pgrep -f opensearch)/maps | grep "indices" | awk '{print $6}' | sort
 
 - **v3.3.0** (2025-10-02): Initial implementation - Set `sharedArenaMaxPermits=1` as default to mitigate memory-mapped segment bloat
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

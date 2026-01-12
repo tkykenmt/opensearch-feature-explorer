@@ -137,6 +137,9 @@ GET rollup_index,raw_index/_search
 - **v3.3.0** (2025-08-19): Added `ScriptedAvg` class to Painless SPI allowlist, enabling plugins to use scripted averages in Painless scripts; registered `ScriptedAvg` in `Streamables.java` with byte marker 28 for cross-node streaming
 - **v3.2.0** (2025-08-06): Added support for `InternalScriptedMetric` in `InternalValueCount` and `InternalAvg` reduce methods, enabling searches across rollup and raw indices
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

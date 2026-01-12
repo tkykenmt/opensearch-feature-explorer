@@ -106,6 +106,10 @@ POST _plugins/_notifications/configs
 - **v3.2.0** (2026-01-11): Infrastructure updates - Gradle 8.14, JaCoCo 0.8.13, nebula.ospackage 12.0.0, JDK 24 CI support
 - **v3.1.0** (2026-01-10): Migrated from javax.mail to jakarta.mail APIs to avoid version conflicts; updated greenmail test dependency to 2.0.1
 
+## Related Features
+- [Alerting](../alerting/alerting.md)
+- [Common Utils](../common-utils/common-utils.md)
+
 ## References
 
 ### Documentation

@@ -179,6 +179,9 @@ GET logs/_search
 - **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
 - **v3.0.0**: Initial GA release with basic early termination support; added logic to skip approximation when `track_total_hits: true` is set
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -282,6 +282,9 @@ Documents in gRPC requests must be Base64 encoded:
 - **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
 - **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -141,6 +141,10 @@ if (isPreV219) {
 
 - **v3.0.0** (2025-05-06): Added BWC support for 2.17 data sources with conditional API execution
 
+## Related Features
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+
 ## References
 
 ### Documentation

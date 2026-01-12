@@ -92,6 +92,9 @@ function MyComponent() {
 - **v3.2.0** (2025-07-29): Updated to OUI 1.21 with `preserveTabContent` prop for `EuiTabbedContent` component
 - **v2.18.0** (2024-11-05): Updated to OUI 1.15 with new `$euiSideNavBackgroundColor` variable, font changes from Fira Code to Source Code Pro
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

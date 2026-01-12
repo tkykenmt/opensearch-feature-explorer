@@ -126,6 +126,9 @@ To view role permissions in OpenSearch Dashboards:
 
 - **v3.2.0** (2025-06): Added full index pattern display, added missing index permissions (`mget*`, `mtv*`, `bulk*`)
 
+## Related Features
+- [Security](../security/alerting-comments-security.md)
+
 ## References
 
 ### Documentation

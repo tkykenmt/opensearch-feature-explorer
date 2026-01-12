@@ -261,6 +261,12 @@ POST _plugins/_ml/agents/_register
 - **v2.16.0**: Added ML Inference Search Request and Search Response Processors
 - **v2.14.0**: Initial ML Inference Ingest Processor implementation
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

@@ -78,6 +78,11 @@ module.exports = function (api) {
 
 - **v3.1.0** (2025-06-03): Added path alias plugin to babel configuration for CI compatibility
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Flow Framework (Dashboards)](../dashboards-flow-framework/ai-search-flows.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

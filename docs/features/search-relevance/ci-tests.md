@@ -86,6 +86,11 @@ graph TB
 ## Change History
 - **v3.4.0** (2026-01-11): Fixed UBI test dependencies, added JDWP debug support, removed deprecated AccessController usage, test code cleanups
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [k-NN Vector Search](../k-nn/disk-based-vector-search.md)
+- [Learning to Rank](../learning/learning-to-rank.md)
+
 ## References
 
 ### Documentation

@@ -98,6 +98,9 @@ The plugin uses the following URL parameters for state management:
 - **v2.15.0**: Bug fixes for MDS support in getServerFeatures API
 - **v2.14.0**: Added Multi-Data-Source (MDS) support
 
+## Related Features
+- [Notifications](../notifications/notifications-plugin.md)
+
 ## References
 
 ### Documentation

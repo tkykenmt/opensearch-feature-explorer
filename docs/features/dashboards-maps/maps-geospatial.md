@@ -165,6 +165,9 @@ flowchart TB
 - **v3.0.0** (2025-05-06): Added Cluster Layer with geohash/geotile/geohex aggregations, legend support, and multi-data source support. Fixed layer config panel styling and data label overlap issues.
 - **v2.17.0** (2024-09-17): Deprecated multi-data source display in Maps UI (Trineo UX alignment). Migrated integration tests to opensearch-dashboards-functional-test repository.
 
+## Related Features
+- [Geospatial](../geospatial/geospatial-plugin.md)
+
 ## References
 
 ### Documentation

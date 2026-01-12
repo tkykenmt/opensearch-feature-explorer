@@ -43,6 +43,10 @@ Documentation must be kept up-to-date as the project evolves.
 
 - **v2.17.0** (2024-09-17): Fixed broken LICENSE file link and removed unused Docker documentation links
 
+## Related Features
+- [Search Relevance](../search-relevance/ci-tests.md)
+- [Neural Search](../neural-search/agentic-search.md)
+
 ## References
 
 ### Documentation

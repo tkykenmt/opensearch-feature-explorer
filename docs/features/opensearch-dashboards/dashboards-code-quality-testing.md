@@ -128,6 +128,9 @@ yarn lint
 
 - **v3.2.0** (2025-08): Added testing guidelines, replaced ts_error_baseline with @ts-expect-error, added Cypress tests for Explore, component refactoring
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

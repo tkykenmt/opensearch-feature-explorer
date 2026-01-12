@@ -300,6 +300,9 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 - **v3.0.0** (2025-02-25): Renamed QueryGroup to WorkloadGroup throughout the codebase for clearer terminology (PR #17901); API endpoints changed from `_wlm/query_group` to `_wlm/workload_group`; Response field changed from `query_groups` to `workload_groups`; Added WLM support for search scroll API to fix warning logs when using scroll operations (PR #16981); Modified `TransportSearchScrollAction` to set `queryGroupId` from thread context; Added `isQueryGroupSet()` method to `QueryGroupTask`
 - **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

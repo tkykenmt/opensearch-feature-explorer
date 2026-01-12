@@ -205,6 +205,9 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 - **v3.2.0** (2026-01-10): Added UI Settings support for dynamic banner configuration via Advanced Settings
 - **v3.2.0** (2026-01-10): Initial implementation with static banner, feature flag, markdown support, and dismissal functionality
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Pull Requests

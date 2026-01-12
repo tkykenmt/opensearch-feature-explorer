@@ -150,6 +150,11 @@ When security is enabled (`-Dsecurity=true`), both clusters are configured with:
 
 - **v3.0.0** (2025-05-06): Initial implementation - Added `-PdualCluster` property to launch leader and follower clusters for cross-cluster testing
 
+## Related Features
+- [Alerting](../alerting/alerting.md)
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Job Scheduler](../job-scheduler/job-scheduler.md)
+
 ## References
 
 ### Documentation

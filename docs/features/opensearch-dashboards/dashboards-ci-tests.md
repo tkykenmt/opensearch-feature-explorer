@@ -96,6 +96,9 @@ jobs:
 
 - **v3.4.0**: Added 3.* branch support to unit test workflow
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

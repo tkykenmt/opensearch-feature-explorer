@@ -136,6 +136,9 @@ Dependencies are automatically resolved during build:
 - **v3.4.0** (2026-01-14): Netty 4.2.4 upgrade (HTTP/3 readiness), 32 dependency updates including cloud SDKs and security libraries
 - **v3.0.0** (2025-05-06): JDK 21 LTS default, AWS SDK 2.30.x, Reactor Netty 1.2.x, 30 dependency updates
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

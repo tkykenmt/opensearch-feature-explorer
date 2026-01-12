@@ -64,6 +64,9 @@ Release notes follow a standard format:
 
 - **v3.1.0** (2025-06-13): Version increment to 3.1.0-SNAPSHOT and release notes added
 
+## Related Features
+- [Reporting (Dashboards)](../dashboards-reporting/dashboards-reporting.md)
+
 ## References
 
 ### Documentation

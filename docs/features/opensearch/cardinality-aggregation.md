@@ -123,6 +123,9 @@ Requirements for pruning:
 
 - **v3.3.0**: Fixed pruning optimization regression caused by Lucene 10.3.0's BulkScorer behavior; replaced with self-collecting approach
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

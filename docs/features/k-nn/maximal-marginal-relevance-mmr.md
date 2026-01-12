@@ -229,6 +229,10 @@ Choose candidates based on your diversity requirements and latency budget.
 
 - **v3.3.0** (2025-09-26): Initial implementation with native MMR support for k-NN and neural queries
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

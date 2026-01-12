@@ -120,6 +120,9 @@ source=orders
 - **v2.18.0** (2024-11-12): Bug fixes for modal mounting support and MDS error handling
 - **v2.17.0** (2024-09-17): UI improvements with smaller and compressed button/form variants for better consistency
 
+## Related Features
+- [SQL/PPL](../sql/calcite-query-engine.md)
+
 ## References
 
 ### Documentation

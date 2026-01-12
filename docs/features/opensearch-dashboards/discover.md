@@ -155,6 +155,9 @@ Requires ML agent configuration:
 - **v3.0.0** (2025-05-13): Added CSV export functionality, reorganized results display with ResultsActionBar, customizable summary panel title, experimental Data plugin `__enhance` API with resultsActionBar, and 6 bug fixes for saved search handling and workspace integration
 - **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

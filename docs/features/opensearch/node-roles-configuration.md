@@ -157,6 +157,9 @@ coordinating-1    -         -
 - **v2.3.0** (2022-09-06): Added support for dynamic/custom node roles defined by plugins
 - **v2.0.0** (2022-05-26): Renamed `master` role to `cluster_manager`
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

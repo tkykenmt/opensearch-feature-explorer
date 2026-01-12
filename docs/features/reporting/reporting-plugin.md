@@ -119,6 +119,9 @@ The Reporting plugin integrates with OpenSearch Security:
 - **v3.2.0** (2026-01-11): Fixed system index creation permissions and tenant URL parsing
 - **v3.1.0** (2025-06-13): Version increment and release notes maintenance
 
+## Related Features
+- [Reporting (Dashboards)](../dashboards-reporting/dashboards-reporting.md)
+
 ## References
 
 ### Documentation

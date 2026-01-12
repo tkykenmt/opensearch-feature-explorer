@@ -164,6 +164,10 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 - **v3.0.0** (2025-02-25): Added WebSearchTool, fixed PPLTool empty list bug, updated dependencies, enhanced developer guide; added `attributes` field to all tool classes for ML Commons Plan-Execute-Reflect agent compatibility ([#549](https://github.com/opensearch-project/skills/pull/549)); added Java Agent plugin support for SecurityManager deprecation ([#553](https://github.com/opensearch-project/skills/pull/553)); fixed jar hell issue by creating thin SQL JAR with only `org/opensearch/sql/**` classes ([#545](https://github.com/opensearch-project/skills/pull/545))
 - **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool
 
+## Related Features
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+
 ## References
 
 ### Documentation

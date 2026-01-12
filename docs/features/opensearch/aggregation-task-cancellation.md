@@ -154,6 +154,9 @@ When cancelled, the response will include:
 
 - **v3.2.0** (2025-06-11): Initial implementation - Added cancellation checks in aggregation code paths during query phase
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

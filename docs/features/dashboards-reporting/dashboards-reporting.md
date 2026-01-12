@@ -124,6 +124,9 @@ opensearch-reporting-cli \
 - **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
 - **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component
 
+## Related Features
+- [Reporting](../reporting/auto-version-management.md)
+
 ## References
 
 ### Documentation

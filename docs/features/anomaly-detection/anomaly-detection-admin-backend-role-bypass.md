@@ -95,6 +95,11 @@ GET _plugins/_anomaly_detection/detectors/<matching_detector_id>
 - **v2.17.0** (2024-09-17): Backported admin bypass feature to 2.x branch
 - **v2.7.0** (2023-04-11): Initial implementation of admin priority over backend role filtering
 
+## Related Features
+- [Alerting](../alerting/alerting.md)
+- [ML Commons](../ml-commons/agentic-memory.md)
+- [Job Scheduler](../job-scheduler/job-scheduler.md)
+
 ## References
 
 ### Documentation

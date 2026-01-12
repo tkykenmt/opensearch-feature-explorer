@@ -101,6 +101,9 @@ Config saved objects are treated specially in workspace contexts:
 
 - **v2.18.0** (2024-11-05): Fixed config saved objects workspace handling, global config discovery during upgrades, and dynamic config index/alias validation
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

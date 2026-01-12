@@ -146,6 +146,9 @@ GET /my-index/_search?routing=user1
 
 - **v3.2.0** (2025-08-01): Fixed custom string preference to ignore awareness attributes for consistent routing
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

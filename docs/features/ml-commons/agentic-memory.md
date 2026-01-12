@@ -184,6 +184,12 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 
 - **v3.3.0** (2025-10): GA release with ScratchPad tools, session API, refactored architecture, improved fact extraction prompts, and feature enabled by default
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Flow Framework](../flow-framework/flow-framework.md)
+- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
+- [Skills](../skills/skills-plugin-dependencies.md)
+
 ## References
 
 ### Documentation

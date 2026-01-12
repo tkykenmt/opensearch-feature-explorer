@@ -177,6 +177,10 @@ PUT /my-index
 
 - **v2.17.0** (2024-09-17): Added model version tracking to metadata; optimized metadata reads to use cluster metadata directly instead of full model retrieval
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

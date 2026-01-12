@@ -161,6 +161,9 @@ The system automatically detects the dataset type and routes to the appropriate 
 
 - **v2.18.0** (2024-11-05): Initial implementation with frontend polling and async PPL support for S3 datasets
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation

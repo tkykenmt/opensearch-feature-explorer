@@ -169,6 +169,9 @@ PUT /my-index
 
 - **v3.3.0** (2026-01-11): Initial implementation with StoreFactory interface, index.store.factory setting, and public API exposure for Store.LoadedMetadata and Store.OnClose
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

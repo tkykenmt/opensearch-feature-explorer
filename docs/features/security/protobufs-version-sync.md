@@ -69,6 +69,9 @@ dependencies {
 
 - **v3.3.0** (2026-01-11): Initial implementation - synchronized protobufs version with core
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

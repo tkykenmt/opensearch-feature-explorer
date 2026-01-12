@@ -183,6 +183,10 @@ GET my-knn-index/_search?explain=true
 
 - **v3.0.0** (2025-05-06): Initial implementation - Added Explain API support for Exact/ANN/Radial/Disk based k-NN search on Faiss engine
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

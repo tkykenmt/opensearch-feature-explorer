@@ -120,6 +120,9 @@ Example SPIFFE ID format:
 
 - **v3.2.0**: Initial implementation of SPIFFE X.509 SVID support via `SPIFFEPrincipalExtractor`
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

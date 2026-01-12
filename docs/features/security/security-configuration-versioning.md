@@ -292,6 +292,9 @@ curl -XPOST "https://localhost:9200/_plugins/_security/api/version/rollback/v2" 
 - **v3.3.0** (2025-10-01): Added View API and Rollback API for viewing version history and restoring previous configurations
 - **v3.2.0** (2025-06-18): Initial implementation with versioning infrastructure, change detection, and retention policy
 
+## Related Features
+- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-role-management.md)
+
 ## References
 
 ### Documentation

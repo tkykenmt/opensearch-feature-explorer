@@ -128,6 +128,9 @@ POST _reindex
 
 - **v3.3.0** (2026-01-11): Fixed slice validation to prevent JVM OOM on coordinator when using excessively large slice values
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

@@ -134,6 +134,9 @@ GET /_tenant:acme/_search
 
 - **v3.2.0** (2025-07-04): Initial implementation - Added support for custom index name resolvers through ClusterPlugin interface
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

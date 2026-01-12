@@ -170,6 +170,9 @@ GET _nodes/<node_id>/stats/indices/search
 - **v2.18.0** (2024-11-05): Enabled `search.request_stats_enabled` by default
 - **v2.17.0** (2024-09-17): Initial implementation with `took` statistics and phase breakdowns
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

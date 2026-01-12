@@ -160,6 +160,9 @@ This approach provides more intuitive scoring compared to alternatives like `mul
 
 - **v3.2.0** (2025-07): Initial implementation of combined_fields query with BM25F scoring support
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Blog Posts

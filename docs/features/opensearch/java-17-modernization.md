@@ -160,6 +160,9 @@ public static ValueSource wrap(Object value, ScriptService scriptService) {
 
 - **v3.3.0** (2025-09): Initial Java 17 modernization with pattern matching switch refactoring and forbidden APIs update
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

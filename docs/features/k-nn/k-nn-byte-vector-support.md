@@ -235,6 +235,10 @@ Based on OpenSearch Benchmark tests:
 
 - **v2.17.0** (2024-09-17): Initial implementation with HNSW and IVF support for Faiss byte vectors
 
+## Related Features
+- [Neural Search](../neural-search/agentic-search.md)
+- [Search Relevance](../search-relevance/ci-tests.md)
+
 ## References
 
 ### Documentation

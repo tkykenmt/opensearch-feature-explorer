@@ -170,6 +170,9 @@ public ResolvedIndices resolveIndices(ReindexRequest request) {
 
 - **v3.4.0** (2025-10-23): Initial implementation introducing `TransportIndicesResolvingAction`, `ActionRequestMetadata`, `ResolvedIndices`, and `OptionallyResolvedIndices` classes
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

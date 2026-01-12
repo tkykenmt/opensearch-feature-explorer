@@ -157,6 +157,9 @@ PUT /my-index
 
 - **v3.0.0** (2025-05-06): Changed default similarity from `LegacyBM25Similarity` to Lucene's `BM25Similarity`. Added `LegacyBM25` type for backward compatibility.
 
+## Related Features
+- [OpenSearch Dashboards](../opensearch-dashboards/ai-chat.md)
+
 ## References
 
 ### Documentation

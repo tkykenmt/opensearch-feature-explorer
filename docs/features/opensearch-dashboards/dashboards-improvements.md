@@ -90,6 +90,9 @@ const queryStatus: QueryStatus = {
 
 - **v2.18.0** (2024-11-05): Added loading indicator with time counter for query results
 
+## Related Features
+- [OpenSearch Core](../opensearch/actionplugin-rest-handler-wrapper.md)
+
 ## References
 
 ### Documentation
