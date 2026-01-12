@@ -119,19 +119,16 @@ Related categories:
 
 ## File Naming
 
-### Directory = Context
-Don't repeat directory name in filename:
-- Bad: `security/security-plugin.md`
-- Good: `security/overview.md`
+### Prefix Rules
+Include repository/plugin name prefix for searchability:
 
-### File Patterns
-| Pattern | Purpose |
-|---------|---------|
-| `index.md` | Directory listing |
-| `overview.md` | Plugin/feature overview |
-| `{feature}.md` | Main feature doc |
-| `configuration.md` | Config reference |
-| `api.md` | API reference |
+| File Type | Pattern | Example |
+|-----------|---------|---------|
+| Main feature doc | `{repo}/{repo}.md` | `security/security.md` |
+| Sub-feature | `{repo}/{repo}-{aspect}.md` | `security/security-jwt.md` |
+| Directory index | `{repo}/index.md` | `security/index.md` |
+
+Repository name = OpenSearch plugin/component repository name (e.g., `security`, `k-nn`, `ml-commons`, `neural-search`)
 
 ### Avoid Temporal Files
 Merge into main doc's Change History:

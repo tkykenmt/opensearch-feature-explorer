@@ -121,6 +121,28 @@ After loading the target Issue, check for duplicates:
      - Close the Issue using `update_issue` with `state: "closed"`
    - Continue investigation with the current Issue
 
+## Step 1.5: Check Existing Files
+
+Before creating new files, search for existing reports:
+
+### Search with GitHub MCP
+Use `search_code` to find existing reports:
+```
+search_code(q="{feature-name} repo:{owner}/{repo} path:docs/features")
+```
+
+Also search by key terms:
+```
+search_code(q="{key-term} repo:{owner}/{repo} path:docs/features extension:md")
+```
+
+### Decision
+- **Exact match found**: Update existing file (don't create new)
+- **Related file found**: Consider merging or add cross-reference
+- **No match**: Create new file with proper naming convention
+
+**IMPORTANT**: Never create a new file if an existing file covers the same feature.
+
 ## Step 2: Deep Investigation
 
 **IMPORTANT**: Thoroughly read ALL sources. Don't just list references - actually fetch and analyze their content.
