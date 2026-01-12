@@ -154,6 +154,7 @@
 - [CVE Fixes & Dependency Updates](features/multi-plugin/cve-fixes-dependency-updates.md)
 - [CVE Fixes & Dependency Updates (Batch 2)](features/multi-plugin/cve-fixes-dependency-updates-batch2.md)
 - [JDK 21 & Java Agent Migration](features/multi-plugin/jdk-21-java-agent-migration.md)
+- [Java Agent / SecurityManager Migration (Batch 2)](features/multi-plugin/java-agent-securitymanager-migration-batch2.md)
 - [Version Bumps & Release Notes](features/multi-plugin/version-bumps-release-notes.md)
 
 ## opensearch-remote-metadata-sdk
