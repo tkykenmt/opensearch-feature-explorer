@@ -9,6 +9,7 @@
 - [Analyzer-Based Neural Sparse Query](features/neural-search/analyzer-based-neural-sparse-query.md)
 - [Hybrid Query](features/neural-search/hybrid-query.md)
 - [Neural Search Compatibility](features/neural-search/neural-search-compatibility.md)
+- [Neural Search Refactoring](features/neural-search/neural-search-refactoring.md)
 - [Semantic Field](features/neural-search/semantic-field.md)
 
 ## opensearch
