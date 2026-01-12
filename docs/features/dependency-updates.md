@@ -75,7 +75,7 @@ graph TB
 ### Update Process
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Identify Update] --> B{Type?}
     B -->|CVE| C[Priority Fix]
     B -->|Deprecation| D[Migration Plan]

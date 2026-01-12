@@ -38,7 +38,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Query Vector] --> B[k-NN Plugin]
     B --> C[JNI Bridge]
     C --> D[SIMD-Optimized Faiss]

@@ -59,7 +59,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Schedule Creation"
         A[User] --> B[Enter Cron Expression]
         B --> C[Create Schedule API]

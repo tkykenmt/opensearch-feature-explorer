@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         Q[PPL Query]
     end

@@ -39,7 +39,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Certificate Processing"
         Cert[X.509 Certificate] --> DN[Distinguished Name]
         Cert --> SAN[Subject Alternative Names]

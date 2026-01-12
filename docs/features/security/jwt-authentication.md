@@ -44,7 +44,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[JWT Token] --> B[Base64 Decode]
     B --> C[Parse Header]
     B --> D[Parse Payload]

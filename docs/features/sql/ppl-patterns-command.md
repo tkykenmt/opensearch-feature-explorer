@@ -50,7 +50,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Source Index] --> B[patterns command]
     B --> C{Mode}
     C -->|label| D[Per-document patterns]

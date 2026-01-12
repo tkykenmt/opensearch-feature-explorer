@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Creation
         A[Builder] -->|build| B[Stats Object]
     end

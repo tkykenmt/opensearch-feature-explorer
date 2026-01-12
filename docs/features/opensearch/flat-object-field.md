@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[JSON Object] --> B[Parse Object]
     B --> C[Extract Keys]
     B --> D[Extract Values]

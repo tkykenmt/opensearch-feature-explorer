@@ -87,7 +87,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         Q[Query with profile:true]
     end

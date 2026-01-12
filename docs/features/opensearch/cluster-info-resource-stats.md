@@ -39,7 +39,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Collection
         RT[ResourceTracker] -->|Moving Average| RUS[ResourceUsageStats]
     end

@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     PR[Pull Request] --> CI[CI Checks]
     CI --> Build[Gradle Build]
     Build --> Test[Tests]

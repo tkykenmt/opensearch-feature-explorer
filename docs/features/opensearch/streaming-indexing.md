@@ -33,7 +33,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         A[Document 1] --> B[Document 2]
         B --> C[Document N]

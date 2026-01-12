@@ -38,7 +38,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Client] -->|Predict Request| B[MLPredictTaskRunner]
     B -->|Check Cache| C[MLModelCacheHelper]
     C -->|Get Worker Nodes| D[MLModelCache]

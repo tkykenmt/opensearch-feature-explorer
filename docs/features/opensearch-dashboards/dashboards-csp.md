@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Request[HTTP Request] --> Handler[Route Handler]
     Handler --> DynamicCheck{Dynamic Config?}
     DynamicCheck -->|Yes| DynamicValue[Use Dynamic Value]

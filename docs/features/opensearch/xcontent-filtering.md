@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Source Map] --> B{Has Wildcards?}
     B -->|No| C[HashSet Matching]
     B -->|Yes| D[Automaton Matching]

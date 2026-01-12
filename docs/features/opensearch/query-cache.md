@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Q[Filter Query] --> P{Policy Check}
     P --> |"frequency >= threshold"| C{Cache Lookup}
     P --> |"frequency < threshold"| E[Execute Query]

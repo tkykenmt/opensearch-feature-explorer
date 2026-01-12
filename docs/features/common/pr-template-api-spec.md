@@ -30,7 +30,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Contributor] --> B[Create PR]
     B --> C[PR Template Displayed]
     C --> D{API Changes?}

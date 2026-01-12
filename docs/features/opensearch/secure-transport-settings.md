@@ -39,7 +39,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Cluster Settings Update] --> B[SSLConfig Listener]
     B --> C[Update Parameters]
     C --> D1[SecureTransportSettingsProvider.parameters]

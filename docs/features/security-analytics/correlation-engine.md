@@ -46,7 +46,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Log Data] --> B[Detectors]
     B --> C[Detection Rules]
     C --> D[Findings]

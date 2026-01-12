@@ -43,7 +43,7 @@ When creating a data stream or its backing indexes, OpenSearch:
 3. Applies that template's settings, mappings, and aliases to the backing index
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Index/Data Stream Name] --> B{Find Matching Templates}
     B --> C[Template 1: priority 50]
     B --> D[Template 2: priority 100]

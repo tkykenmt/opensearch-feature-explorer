@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "CompletionStage Flow"
         A[Request] --> B[*Async Method]
         B --> C[CompletableFuture]

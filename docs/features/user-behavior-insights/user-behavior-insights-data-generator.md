@@ -40,7 +40,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Generation
         Q[Query Selection] --> I[Impression Generation]
         I --> C[Click Simulation]

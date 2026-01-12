@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Connector Creation] -->|connector_id| B[Tool Creation]
     B -->|MLToolSpec with connector_id| C[Agent Registration]
     C -->|Agent with ConnectorTool| D[Ready for Execution]

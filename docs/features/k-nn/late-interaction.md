@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Ingestion
         D[Document] --> Model[Late Interaction Model]
         Model --> MV[Multi-Vectors]

@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Source Data] --> B[Time Bucketing]
     B --> C[Aggregation]
     C --> D{Has per_* function?}

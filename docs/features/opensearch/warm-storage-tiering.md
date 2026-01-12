@@ -38,7 +38,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Ingestion
         D[Documents] --> HN[Hot Node]
     end

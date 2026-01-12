@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Plugin Archive] --> B[Extract]
     B --> C[Read Manifest]
     C --> D[Get opensearchDashboardsVersion]

@@ -36,7 +36,7 @@ flowchart TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "must_not Rewrite"
         A["must_not: range[a,b]"] --> B["Complement Calculation"]
         B --> C["should: [lt a, gt b]"]

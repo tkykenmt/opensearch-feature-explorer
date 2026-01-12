@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Ingest
         A[Document] --> B[Parse Timestamp]
         B --> C[Truncate to Granularity]

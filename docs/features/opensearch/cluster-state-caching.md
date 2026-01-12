@@ -111,7 +111,7 @@ Key behaviors:
 The caching is transparent and automatic. During node join:
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Node Join Request] --> B{Cache Check}
     B -->|Hit| C[Return Cached Bytes]
     B -->|Miss| D[Serialize State]

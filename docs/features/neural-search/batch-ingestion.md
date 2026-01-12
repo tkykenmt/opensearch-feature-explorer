@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     D1[Doc 1] --> B1[Batch 1]
     D2[Doc 2] --> B1
     D3[Doc 3] --> B2[Batch 2]

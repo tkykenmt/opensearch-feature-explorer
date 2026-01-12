@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[API Request] --> B[Index Expression]
     B --> C[Custom Resolver 1]
     C --> D[Custom Resolver N]

@@ -47,7 +47,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Asset Creation"
         REQ[Request] --> WS{Workspace?}
         WS -->|Yes| PREFIX[Prefix IDs]

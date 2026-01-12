@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Numeric Values] --> B[Add to TDigest]
     B --> C[Compress into Centroids]
     C --> D[Serialize for Transport]

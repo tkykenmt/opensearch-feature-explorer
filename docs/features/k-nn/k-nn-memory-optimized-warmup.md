@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Warmup API] --> B[Index Shard]
     B --> C[Segment Reader]
     C --> D[Field Info]

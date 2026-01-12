@@ -40,7 +40,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Authentication
         A[OpenSearch] -->|1. Read keytab| B[Keytab File]
         B -->|2. Request TGT| C[KDC]

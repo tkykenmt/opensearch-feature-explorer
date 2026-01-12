@@ -39,7 +39,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     User[User Input] --> Editor[Query Editor]
     Editor --> Parser[Language Parser]
     Parser --> Autocomplete[Autocomplete Engine]

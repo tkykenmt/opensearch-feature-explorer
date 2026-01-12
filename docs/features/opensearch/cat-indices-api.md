@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Index Operations"
         IDX[Index Request] --> SHARD[IndexShard]
         DEL[Delete Request] --> SHARD

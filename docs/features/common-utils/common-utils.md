@@ -52,7 +52,7 @@ graph TB
 The library provides standardized interfaces for inter-plugin communication:
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Plugin A"
         PA[Plugin Code]
     end

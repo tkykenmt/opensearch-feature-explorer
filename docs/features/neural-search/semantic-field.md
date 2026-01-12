@@ -60,7 +60,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Indexing
         Text[Raw Text] --> SIP[Semantic Ingest Processor]
         SIP --> Chunk{Chunking?}

@@ -101,7 +101,7 @@ flowchart TB
 The `context_aware_grouping` mapper defines how documents are grouped into segments:
 
 ```mermaid
-graph LR
+graph TB
     subgraph "Index Mapping"
         CAG[context_aware_grouping]
         Fields[fields]

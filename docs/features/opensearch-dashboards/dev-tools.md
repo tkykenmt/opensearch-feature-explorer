@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     User -->|Write Query| Editor[Query Editor]
     Editor -->|Execute| HTTP[HTTP Service]
     HTTP -->|Request| OS[OpenSearch]

@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Code Change] --> B[PR Created]
     B --> C{CI Checks}
     C -->|Pass| D[Review]

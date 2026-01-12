@@ -116,7 +116,7 @@ Neural sparse query supports three encoding methods:
 The neural sparse query supports two-phase execution for improved performance:
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Query Tokens] --> B[Split by Threshold]
     B --> C[High-Weight Tokens]
     B --> D[Low-Weight Tokens]

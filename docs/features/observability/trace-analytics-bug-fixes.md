@@ -51,7 +51,7 @@ graph TB
 ### Time Processing Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Time Picker Value] --> B{Is End Time?}
     B -->|Yes| C[dateMath.parse with roundUp: true]
     B -->|No| D[dateMath.parse]

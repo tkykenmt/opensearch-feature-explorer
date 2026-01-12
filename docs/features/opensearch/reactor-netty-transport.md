@@ -41,7 +41,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Streaming Request"
         Request[HTTP Request] --> Transport[Reactor Netty Transport]
         Transport --> SSE[SSE/Streaming Handler]

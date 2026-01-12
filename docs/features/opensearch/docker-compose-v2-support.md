@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Test Task] --> B[preProcessFixture]
     B --> C[composeUp]
     C --> D[postProcessFixture]

@@ -27,7 +27,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         QT[Query Text]
         RC[Rescore Config]

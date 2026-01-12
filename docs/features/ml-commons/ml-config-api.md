@@ -43,7 +43,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Client Application] -->|"getConfig(configId)"| B[MachineLearningNodeClient]
     B -->|"MLConfigGetRequest"| C[GetConfigTransportAction]
     C -->|"Security Check"| D{Is MASTER_KEY?}

@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Client Request] --> B[SearchService]
     B --> C[getRewriteContext]
     C --> D[QueryCoordinatorContext]

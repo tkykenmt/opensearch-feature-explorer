@@ -51,7 +51,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Cache Invalidation"
         A[Admin Request] --> B{Endpoint}
         B -->|/cache| C[Invalidate All]

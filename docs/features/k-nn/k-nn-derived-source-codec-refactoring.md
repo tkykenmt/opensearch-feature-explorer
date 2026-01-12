@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Ingestion
         A[Index Request] --> B[Parse Document]
         B --> C[Extract Vectors]

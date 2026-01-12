@@ -31,7 +31,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[JSON Text Field] --> B[spath command]
     B --> C[json_extract function]
     C --> D[Extracted Value]

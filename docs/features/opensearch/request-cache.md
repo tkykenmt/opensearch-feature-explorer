@@ -32,7 +32,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Cache Clear Flow"
         A[Clear Cache API] --> B[TransportClearIndicesCacheAction]
         B --> C[Per-Shard: Queue Cleanup Key]

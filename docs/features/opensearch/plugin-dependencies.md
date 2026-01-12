@@ -44,7 +44,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Plugin ZIP] --> B[Extract]
     B --> C[Read plugin-descriptor.properties]
     C --> D{Has dependencies?}

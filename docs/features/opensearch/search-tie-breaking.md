@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Document] --> B[Shard ID]
     A --> C[Segment docBase]
     A --> D[Local doc ID]

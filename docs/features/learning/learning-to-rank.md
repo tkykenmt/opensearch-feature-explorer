@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Model Upload"
         A[Model File] --> B{Parser}
         B -->|RankLib| C[RanklibModelParser]

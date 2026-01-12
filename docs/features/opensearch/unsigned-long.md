@@ -29,7 +29,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[String/Number Input] --> B[Parse as BigInteger]
     B --> C[Convert to long bits]
     C --> D[Store in Doc Values]

@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "User Request"
         U[User] --> |Generate Report| D[Dashboards]
     end

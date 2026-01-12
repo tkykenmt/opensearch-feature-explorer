@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Java
         VV[VectorValues] --> OHT[OffHeapVectorTransfer]
         OHT --> |"Batch"| JNI[JNI Layer]

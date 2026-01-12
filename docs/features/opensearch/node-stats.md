@@ -51,7 +51,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Client Request] --> B[REST Handler]
     B --> C[NodesStatsRequest]
     C --> D[Transport Action]

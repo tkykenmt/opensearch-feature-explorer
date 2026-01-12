@@ -44,7 +44,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[YAML Config] --> B[Server Plugin]
     B --> C[Browser Config]
     C --> D[Plugin Start]

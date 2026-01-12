@@ -33,7 +33,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Startup"
         P[Plugins] -->|register headers| AM[ActionModule]
         AM -->|collect| HS[Headers Set]

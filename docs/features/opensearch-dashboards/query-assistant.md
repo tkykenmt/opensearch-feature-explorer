@@ -53,7 +53,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Question] --> B[Query Assistant UI]
     B --> C{Dataset Supported?}
     C -->|No| D[Show Error Placeholder]

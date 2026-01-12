@@ -92,7 +92,7 @@ When `node.roles` is not specified, a node assumes all default roles:
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Client
         C[Application]
     end

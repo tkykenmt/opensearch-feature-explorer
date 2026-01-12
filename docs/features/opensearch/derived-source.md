@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Fetch Phase"
         A[Document Request] --> B[FieldMapper.deriveSource]
         B --> C[DerivedFieldGenerator]

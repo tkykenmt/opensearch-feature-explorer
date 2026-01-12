@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Version 2.x"
         A[Deprecated Feature] --> B[Warning Logged]
         B --> C[Feature Still Works]

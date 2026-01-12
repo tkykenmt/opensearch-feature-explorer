@@ -55,7 +55,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Query] --> B[AgenticSearchQueryBuilder]
     B --> C[AgenticQueryTranslatorProcessor]
     C --> D{Has agentic query?}

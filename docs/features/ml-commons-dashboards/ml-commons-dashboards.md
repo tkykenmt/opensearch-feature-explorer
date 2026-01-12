@@ -39,7 +39,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     User[User] --> Dashboard[Deployed Models Dashboard]
     Dashboard --> |List Models| API[ML Commons API]
     Dashboard --> |Select Model| Preview[Preview Panel]

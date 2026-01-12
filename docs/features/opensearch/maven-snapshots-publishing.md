@@ -37,7 +37,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Code Push] --> B[GitHub Actions Trigger]
     B --> C[Load 1Password Secrets]
     C --> D[Assume AWS IAM Role]

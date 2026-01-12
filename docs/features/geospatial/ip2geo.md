@@ -38,7 +38,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Setup Phase"
         A1[Create Datasource] --> B1[Download GeoIP Data]
         B1 --> C1[Index to System Index]

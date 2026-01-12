@@ -47,7 +47,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Request] --> B[Cluster Settings API]
     B --> C{Validate Settings}
     C -->|Invalid| D[Reject with Error]

@@ -33,7 +33,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Indexing Operation] --> B[Store.createOutput]
     B --> C[ByteSizeCachingDirectory]
     C --> D[Wrapped IndexOutput]

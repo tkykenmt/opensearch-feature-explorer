@@ -42,7 +42,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "JWT Multi-Key Validation"
         Token[JWT Token] --> P1[Parser 1]
         P1 -->|Fail| P2[Parser 2]

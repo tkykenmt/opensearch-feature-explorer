@@ -40,7 +40,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Client Request] --> B[Resolve Index Names]
     B --> C[Iterate Shards]
     C --> D{Remote Store Enabled?}

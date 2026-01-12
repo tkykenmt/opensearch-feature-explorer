@@ -27,7 +27,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Lookup Index"
         L1[Document 1] --> V1[field: value1, value2]
         L2[Document 2] --> V2[field: value3]

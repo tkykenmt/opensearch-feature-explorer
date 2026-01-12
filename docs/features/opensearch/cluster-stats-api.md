@@ -42,7 +42,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         A[Client Request]
     end

@@ -43,7 +43,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Action] --> B{Page Type}
     B -->|Listing| C[Maps List]
     B -->|Visualization| D[Map Editor]

@@ -50,7 +50,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Request"
         R1[Initial Request]
         R2[Paginated Request]

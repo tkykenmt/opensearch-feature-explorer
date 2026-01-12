@@ -36,7 +36,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     Request[ActionRequest] --> TIRA[TransportIndicesResolvingAction]
     TIRA --> Resolve[resolveIndices]
     Resolve --> RI[ResolvedIndices]

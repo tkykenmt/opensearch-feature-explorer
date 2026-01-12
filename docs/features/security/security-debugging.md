@@ -32,7 +32,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[ClusterChangedEvent] --> B[ClusterInfoHolder]
     B --> C[Store DiscoveryNodes]
     D[Security Check] --> E{Initialized?}

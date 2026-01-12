@@ -32,7 +32,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Registration
         A[Plugin loads] --> B[SearchModule init]
         B --> C[Register factories]

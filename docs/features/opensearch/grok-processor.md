@@ -25,7 +25,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Raw Log Line] --> B[Grok Pattern Matching]
     B --> C{Match Found?}
     C -->|Yes| D[Extract Named Captures]

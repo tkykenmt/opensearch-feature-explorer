@@ -26,7 +26,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Source Fields] --> B[Pattern Matching]
     B --> C{Wildcard?}
     C -->|Yes| D[Match Fields]

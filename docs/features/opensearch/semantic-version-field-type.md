@@ -35,7 +35,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[User Input<br/>1.0.0-alpha] --> B[Parse & Validate]
     B --> C[Normalize<br/>Zero-pad numbers]
     C --> D[Index<br/>Multiple fields]

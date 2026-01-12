@@ -72,7 +72,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Run Tests] --> B[JaCoCo Agent<br/>Instruments Code]
     B --> C[Generate .exec Files]
     C --> D[jacocoTestReport Task]

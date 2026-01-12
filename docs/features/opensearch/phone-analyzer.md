@@ -51,7 +51,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         Raw[Raw Phone Number<br/>+41 60 555 12 34]
     end

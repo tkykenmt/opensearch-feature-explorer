@@ -122,7 +122,7 @@ GET index/_search
 When a `terms` query is used in a `must_not` clause, OpenSearch rewrites it into complement range queries for better performance. For whole number fields with consecutive values, intermediate ranges are skipped since no values can exist between consecutive integers.
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph "Input"
         A["must_not: terms [1, 2, 3]"]
     end

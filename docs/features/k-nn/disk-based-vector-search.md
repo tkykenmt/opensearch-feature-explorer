@@ -34,7 +34,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Ingestion
         V[Vectors] --> BQ[Binary Quantization]
         BQ --> |"1 bit per dimension"| QI[Quantized Index]

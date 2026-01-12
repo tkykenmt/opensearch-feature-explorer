@@ -48,7 +48,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Config Change] --> B{Cluster Manager?}
     B -->|No| C[Skip]
     B -->|Yes| D{Feature Enabled?}

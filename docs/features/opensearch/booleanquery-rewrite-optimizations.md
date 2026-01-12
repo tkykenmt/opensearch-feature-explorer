@@ -30,7 +30,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         A["must_not: term(status=200)"]
     end

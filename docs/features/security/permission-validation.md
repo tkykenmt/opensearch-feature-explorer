@@ -30,7 +30,7 @@ graph TB
 ### Data Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Input
         A[REST Request]
         B[Query Param: has_permission_check=true]
