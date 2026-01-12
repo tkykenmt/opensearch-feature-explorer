@@ -10,7 +10,9 @@ tags:
 
 ## Summary
 
-The OpenSearch SQL/PPL Engine provides SQL and Piped Processing Language (PPL) query interfaces for OpenSearch. Starting with v3.0.0, the plugin integrates Apache Calcite as a new query engine (V3) that enables advanced features like joins, lookups, and subsearches for complex log analysis and data correlation workflows.
+The OpenSearch SQL/PPL Engine provides SQL and Piped Processing Language (PPL) query interfaces for OpenSearch. The plugin supports three query engines: V1 (legacy), V2, and V3 (Calcite-based). Starting with v3.0.0, the Calcite engine enables advanced features like joins, lookups, and subsearches.
+
+> **Note**: For detailed information about the V3 Calcite engine, including PPL commands, functions, and optimization features, see [Calcite Query Engine](calcite-query-engine.md).
 
 ## Details
 
@@ -33,19 +35,6 @@ graph TB
             V3[V3 Calcite Engine]
         end
         
-        subgraph "Calcite Processing"
-            RelBuilder[RelBuilder]
-            RelNode[RelNode Tree]
-            Optimizer[Query Optimizer]
-            OSRel[OpenSearchEnumerableRel]
-        end
-        
-        subgraph "Execution"
-            Linq4j[Linq4j Code Gen]
-            QueryBuilder[OpenSearch QueryBuilder]
-            Pushdown[Filter Pushdown]
-        end
-        
         OS[OpenSearch]
     end
     
@@ -55,48 +44,22 @@ graph TB
     AST --> V1
     AST --> V2
     AST --> V3
-    V3 --> RelBuilder
-    RelBuilder --> RelNode
-    RelNode --> Optimizer
-    Optimizer --> OSRel
-    OSRel --> Linq4j
-    OSRel --> Pushdown
-    Pushdown --> QueryBuilder
-    Linq4j --> OS
-    QueryBuilder --> OS
-    V2 --> OS
     V1 --> OS
+    V2 --> OS
+    V3 --> OS
+    
+    click V3 "calcite-query-engine.md" "Calcite Engine Details"
 ```
 
-### Data Flow
+### Query Engines
 
-```mermaid
-flowchart TB
-    Query[SQL/PPL Query] --> Parse[ANTLR4 Parse]
-    Parse --> AST[Build AST]
-    AST --> Convert[Convert to RelNode]
-    Convert --> Optimize[Calcite Optimize]
-    Optimize --> Plan[Execution Plan]
-    Plan --> Execute[Execute]
-    Execute --> Format[Format Response]
-    Format --> Response[Return Results]
-```
+| Engine | Description | Use Case |
+|--------|-------------|----------|
+| V1 (Legacy) | Original SQL engine | Pagination, cursor, JSON output |
+| V2 | Modern engine with improved features | General SQL/PPL queries |
+| V3 (Calcite) | Apache Calcite-based with advanced optimization | Joins, lookups, subsearches, analytics |
 
-### Components
-
-| Component | Description |
-|-----------|-------------|
-| REST Handler | Handles `/_plugins/_sql` and `/_plugins/_ppl` endpoints |
-| ANTLR4 Parser | Parses SQL/PPL syntax into parse tree, then AST |
-| V1 Engine | Original SQL processing engine (legacy) |
-| V2 Engine | Modern query engine with improved features |
-| V3 Calcite Engine | Apache Calcite-based engine with advanced optimization |
-| PPLFuncImpTable | Logical-level function implementation registry |
-| PPLBuiltinOperators | Physical-level UDF implementations |
-| RelBuilder | Converts AST to Calcite RelNode tree |
-| Query Optimizer | Applies transformation rules for optimization |
-| OpenSearchEnumerableRel | OpenSearch-specific Calcite operators |
-| Linq4j | Code generation for row-by-row processing |
+For V3 Calcite engine details, see [Calcite Query Engine](calcite-query-engine.md).
 
 ### Configuration
 
@@ -104,206 +67,54 @@ flowchart TB
 |---------|-------------|---------|
 | `plugins.sql.enabled` | Enable/disable SQL support | `true` |
 | `plugins.ppl.enabled` | Enable/disable PPL support | `true` |
-| `plugins.calcite.enabled` | Enable V3 Calcite engine | `false` |
+| `plugins.calcite.enabled` | Enable V3 Calcite engine | `true` (v3.3.0+) |
 | `plugins.sql.slowlog` | Slow query log threshold (seconds) | `2` |
 | `plugins.sql.cursor.keep_alive` | Cursor keep alive duration | `1m` |
 | `plugins.query.memory_limit` | Query memory limit | `85%` |
-| `plugins.query.size_limit` | Maximum query result size | `10000` (v2.17.0+), `200` (prior) |
-| `plugins.query.field_type_tolerance` | Handle array datasets | `true` |
-
-### PPL Commands (V3)
-
-| Command | Description | Example |
-|---------|-------------|---------|
-| `lookup` | Enrich data with reference table | `source=logs \| lookup users user_id` |
-| `join` | Correlate data from multiple indexes | `source=a \| join ON a.id = b.id b` |
-| `subsearch` | Dynamic filtering with subqueries | `source=a \| where exists [source=b \| where ...]` |
-| `patterns` | Extract log patterns (Brain algorithm) | `source=logs \| patterns message` |
+| `plugins.query.size_limit` | Maximum query result size | `10000` |
 
 ### Usage Example
 
 ```bash
-# Enable Calcite engine
-PUT _cluster/settings
-{
-  "transient": {
-    "plugins.calcite.enabled": true
-  }
-}
-
 # SQL Query
 POST /_plugins/_sql
 {
   "query": "SELECT * FROM my_index WHERE status = 'active' LIMIT 10"
 }
 
-# PPL Query with lookup
+# PPL Query
 POST /_plugins/_ppl
 {
-  "query": "source=auth_logs | lookup user_info user_id | where status='failed'"
+  "query": "source=my_index | where status = 'active' | head 10"
 }
 
-# PPL Query with join
+# PPL with join (V3 Calcite)
 POST /_plugins/_ppl
 {
-  "query": "source=auth_logs | join left=l right=r ON l.user_id = r.user_id app_logs | fields timestamp, user_id, action"
-}
-
-# PPL Query with subsearch
-POST /_plugins/_ppl
-{
-  "query": "source=auth_logs | where status='failed' AND exists [source=app_logs | where user_id=auth_logs.user_id]"
-}
-
-# PPL with comments
-POST /_plugins/_ppl
-{
-  "query": "source=logs /* main logs */ | where level = 'ERROR' // filter errors"
-}
-
-# JSON functions
-POST /_plugins/_ppl
-{
-  "query": "source=data | eval parsed = json(json_string) | fields parsed"
+  "query": "source=auth_logs | join ON auth_logs.user_id = users.user_id users | fields timestamp, user_id, name"
 }
 ```
 
 ## Limitations
 
-- V3 Calcite engine is experimental (v3.0.0)
-- JOIN queries auto-terminate after 60 seconds by default
-- Some features not supported in V3: `trendline`, `top`, `rare`, `fillnull`, `dedup` with `consecutive=true`
 - Pagination/cursor only supported in V1 engine
 - JSON formatted output only in V1 engine
-- Aggregation over expressions not supported
-- Subquery in FROM clause has limited support
-
-### PPL Functions (v3.1.0+)
-
-#### JSON Functions
-
-| Function | Syntax | Description |
-|----------|--------|-------------|
-| `json` | `json(value)` | Returns value if valid JSON, else null |
-| `json_valid` | `json_valid(value)` | Returns true if value is valid JSON |
-| `json_object` | `json_object(key1, val1, ...)` | Creates JSON object from key-value pairs |
-| `json_array` | `json_array(val1, val2, ...)` | Creates JSON array from values |
-| `json_array_length` | `json_array_length(json_string)` | Returns array length |
-| `json_extract` | `json_extract(target, path1, ...)` | Extracts values using paths |
-| `json_delete` | `json_delete(target, path1, ...)` | Removes values at paths |
-| `json_set` | `json_set(target, path1, val1, ...)` | Sets values at paths |
-| `json_append` | `json_append(target, path, val)` | Appends to array at path |
-| `json_extend` | `json_extend(target, path, array)` | Extends array at path |
-| `json_keys` | `json_keys(target)` | Returns object keys |
-
-#### Lambda and Array Functions
-
-| Function | Syntax | Description |
-|----------|--------|-------------|
-| `array` | `array(val1, val2, ...)` | Creates array with type inference |
-| `array_length` | `array_length(arr)` | Returns array length |
-| `forall` | `forall(arr, x -> predicate)` | True if all elements satisfy predicate |
-| `exists` | `exists(arr, x -> predicate)` | True if any element satisfies predicate |
-| `filter` | `filter(arr, x -> predicate)` | Returns elements satisfying predicate |
-| `transform` | `transform(arr, x -> expr)` | Transforms each element |
-| `reduce` | `reduce(arr, init, (acc, x) -> expr)` | Reduces array to single value |
-
-#### Cryptographic Hash Functions
-
-| Function | Syntax | Description |
-|----------|--------|-------------|
-| `md5` | `md5(string)` | MD5 hash |
-| `sha1` | `sha1(string)` | SHA-1 hash |
-| `sha2` | `sha2(string, bits)` | SHA-2 hash (224, 256, 384, 512) |
-
-#### Time Condition Functions
-
-| Function | Syntax | Description |
-|----------|--------|-------------|
-| `earliest` | `earliest(relative_time)` | Calculates timestamp from relative time string |
-| `latest` | `latest(relative_time)` | Calculates timestamp from relative time string |
-
-#### Aggregation Functions
-
-| Function | Syntax | Description |
-|----------|--------|-------------|
-| `distinct_count_approx` | `distinct_count_approx(field)` | Approximate cardinality using HyperLogLog++ |
+- V3 Calcite limitations: see [Calcite Query Engine - Limitations](calcite-query-engine.md#limitations)
 
 ## Change History
 
-- **v3.4.0** (2026-01): Bug fixes including critical memory exhaustion fix for multiple filter operations, race condition fix in concurrent queries, rex command nested capture group extraction fix, filter pushdown redundant query fix, CVE-2025-48924 security fix
-- **v3.3.0** (2026-01): Bug fixes including count overflow handling (integer to bigint), decimal precision fixes (MOD function, negative scale), nested field aggregation ClassCastException fix, IndexNotFoundException for missing patterns, legacy JDBC type mapping
-- **v3.1.0** (2025-07-15): New functions - JSON manipulation (json, json_valid, json_object, json_array, json_extract, json_delete, json_set, json_append, json_extend, json_keys), lambda/array functions (array, array_length, forall, exists, filter, transform, reduce), cryptographic hashes (md5, sha1, sha2), time conditions (earliest, latest), approximate distinct count (distinct_count_approx); Bug fixes - long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling improvements, Calcite engine stability; Enhancements - match_only_text field type support, object field merging across indices; Breaking change - percentile function switched to MergingDigest algorithm
-- **v3.0.0** (2025-05-06): Major update - Apache Calcite integration (V3 engine), new PPL commands (lookup, join, subsearch), json functions, improved patterns command with Brain algorithm, comment support, function framework refactoring; breaking changes include removal of SparkSQL, DELETE statement, DSL format, scroll API, and opendistro settings
-- **v2.17.0** (2024-09-17): Enhancements - increased default query size limit (200 → 10000), common geo point format support, TakeOrderedOperator for query optimization, complex predicate support in PPL IF function; Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes
+- **v3.3.0**: Calcite enabled by default; see [Calcite Query Engine](calcite-query-engine.md) for details
+- **v3.0.0**: Apache Calcite integration (V3 engine)
+- **v2.17.0**: Increased default query size limit (200 → 10000)
 
 ## Related Features
+- [Calcite Query Engine](calcite-query-engine.md)
 - [Query Workbench](../dashboards-query-workbench/query-workbench.md)
 - [Observability (Dashboards)](../dashboards-observability/ci-tests.md)
 
 ## References
 
 ### Documentation
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
-- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
-- [PPL Commands](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL command reference
-- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
-
-### Blog Posts
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands
-
-### Pull Requests
-| Version | PR | Description | Related Issue |
-|---------|-----|-------------|---------------|
-| v3.4.0 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Fix: Add hashCode() and equals() to ExprJavaType value class | [#4726](https://github.com/opensearch-project/sql/issues/4726) |
-| v3.4.0 | [#4868](https://github.com/opensearch-project/sql/pull/4868) | Fix: LogPatternAggFunction parameter/return logic | [#4866](https://github.com/opensearch-project/sql/issues/4866) |
-| v3.4.0 | [#4850](https://github.com/opensearch-project/sql/pull/4850) | Fix: Grouping key field type overwrite | [#4845](https://github.com/opensearch-project/sql/issues/4845) |
-| v3.4.0 | [#4841](https://github.com/opensearch-project/sql/pull/4841) | Fix: Memory exhaustion for multiple filtering operations |   |
-| v3.4.0 | [#4744](https://github.com/opensearch-project/sql/pull/4744) | Fix: Filter push down redundant filter queries | [#4729](https://github.com/opensearch-project/sql/issues/4729) |
-| v3.4.0 | [#4454](https://github.com/opensearch-project/sql/pull/4454) | Fix: Remove shared mutable optimizer field (race condition) |   |
-| v3.4.0 | [#4641](https://github.com/opensearch-project/sql/pull/4641) | Fix: Rex nested capture groups extraction | [#4466](https://github.com/opensearch-project/sql/issues/4466) |
-| v3.4.0 | [#4665](https://github.com/opensearch-project/sql/pull/4665) | Fix: CVE-2025-48924 |   |
-| v3.3.0 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix: count(*) and dc(field) to be capped at MAX_INTEGER |   |
-| v3.3.0 | [#4407](https://github.com/opensearch-project/sql/pull/4407) | Fix: Mod function should return decimal instead of float | [#4406](https://github.com/opensearch-project/sql/issues/4406) |
-| v3.3.0 | [#4360](https://github.com/opensearch-project/sql/pull/4360) | Fix: ClassCastException for value-storing aggregates on nested PPL fields | [#4359](https://github.com/opensearch-project/sql/issues/4359) |
-| v3.3.0 | [#4369](https://github.com/opensearch-project/sql/pull/4369) | Fix: No index found should throw IndexNotFoundException | [#4342](https://github.com/opensearch-project/sql/issues/4342) |
-| v3.3.0 | [#3613](https://github.com/opensearch-project/sql/pull/3613) | Fix: SQL type mapping for legacy JDBC output | [#1545](https://github.com/opensearch-project/sql/issues/1545) |
-| v3.1.0 | [#3660](https://github.com/opensearch-project/sql/pull/3660) | Fix: Long IN-lists causes crash | [#1469](https://github.com/opensearch-project/sql/issues/1469) |
-| v3.1.0 | [#3621](https://github.com/opensearch-project/sql/pull/3621) | Fix: Add trimmed project before aggregate to avoid NPE in Calcite | [#3566](https://github.com/opensearch-project/sql/issues/3566) |
-| v3.1.0 | [#3693](https://github.com/opensearch-project/sql/pull/3693) | Fix: Error when pushing down script filter with struct field | [#3312](https://github.com/opensearch-project/sql/issues/3312) |
-| v3.1.0 | [#3674](https://github.com/opensearch-project/sql/pull/3674) | Fix: Alias type referring to nested field | [#3646](https://github.com/opensearch-project/sql/issues/3646) |
-| v3.1.0 | [#3748](https://github.com/opensearch-project/sql/pull/3748) | Fix: ATAN(x, y) and CONV(x, a, b) functions | [#3672](https://github.com/opensearch-project/sql/issues/3672) |
-| v3.1.0 | [#3679](https://github.com/opensearch-project/sql/pull/3679) | Fix: Return double with correct precision for UNIX_TIMESTAMP | [#3611](https://github.com/opensearch-project/sql/issues/3611) |
-| v3.1.0 | [#3713](https://github.com/opensearch-project/sql/pull/3713) | Fix: Prevent push down limit with offset reach maxResultWindow | [#3102](https://github.com/opensearch-project/sql/issues/3102) |
-| v3.1.0 | [#3559](https://github.com/opensearch-project/sql/pull/3559) | Add JSON functions |   |
-| v3.1.0 | [#3584](https://github.com/opensearch-project/sql/pull/3584) | Add lambda function and array related functions | [#3575](https://github.com/opensearch-project/sql/issues/3575) |
-| v3.1.0 | [#3574](https://github.com/opensearch-project/sql/pull/3574) | Implement cryptographic hash UDFs | [#3573](https://github.com/opensearch-project/sql/issues/3573) |
-| v3.1.0 | [#3640](https://github.com/opensearch-project/sql/pull/3640) | Add earliest and latest condition functions |   |
-| v3.1.0 | [#3654](https://github.com/opensearch-project/sql/pull/3654) | Add DISTINCT_COUNT_APPROX function |   |
-| v3.1.0 | [#3653](https://github.com/opensearch-project/sql/pull/3653) | Support merging object-type fields from multiple indices |   |
-| v3.1.0 | [#3663](https://github.com/opensearch-project/sql/pull/3663) | Support match_only_text field type | [#3655](https://github.com/opensearch-project/sql/issues/3655) |
-| v3.1.0 | [#3698](https://github.com/opensearch-project/sql/pull/3698) | Switch percentile to MergingDigest algorithm | [#3697](https://github.com/opensearch-project/sql/issues/3697) |
-| v3.0.0 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge Calcite engine to main |   |
-| v2.17.0 | [#2877](https://github.com/opensearch-project/sql/pull/2877) | Change default value of plugins.query.size_limit to 10000 |   |
-| v2.17.0 | [#2896](https://github.com/opensearch-project/sql/pull/2896) | Support common format geo point |   |
-| v2.17.0 | [#2906](https://github.com/opensearch-project/sql/pull/2906) | Add TakeOrderedOperator |   |
-| v2.17.0 | [#2970](https://github.com/opensearch-project/sql/pull/2970) | IF function complex predicate support in PPL |   |
-| v2.17.0 | [#2842](https://github.com/opensearch-project/sql/pull/2842) | Boolean function in PPL case insensitivity fix |   |
-| v2.17.0 | [#2884](https://github.com/opensearch-project/sql/pull/2884) | Restrict UDF functions in async query API |   |
-| v2.17.0 | [#2890](https://github.com/opensearch-project/sql/pull/2890) | Update SqlBaseParser for build fix |   |
-| v2.17.0 | [#2972](https://github.com/opensearch-project/sql/pull/2972) | Fix SparkExecutionEngineConfigClusterSetting deserialize issue |   |
-| v2.17.0 | [#2982](https://github.com/opensearch-project/sql/pull/2982) | Fix jobType for Batch and IndexDML query |   |
-| v2.17.0 | [#2983](https://github.com/opensearch-project/sql/pull/2983) | Fix handler for existing query |   |
-| v2.17.0 | [#2996](https://github.com/opensearch-project/sql/pull/2996) | Fix BWC integration test |   |
-| v3.0.0 | [#3243](https://github.com/opensearch-project/sql/pull/3243) | Add `json` function and `cast(x as json)` | [#3209](https://github.com/opensearch-project/sql/issues/3209) |
-| v3.0.0 | [#3263](https://github.com/opensearch-project/sql/pull/3263) | Improved patterns command with Brain algorithm | [#3251](https://github.com/opensearch-project/sql/issues/3251) |
-| v3.0.0 | [#2806](https://github.com/opensearch-project/sql/pull/2806) | Support line and block comments in PPL | [#2805](https://github.com/opensearch-project/sql/issues/2805) |
-| v3.0.0 | [#3522](https://github.com/opensearch-project/sql/pull/3522) | Function framework refactoring | [#3493](https://github.com/opensearch-project/sql/issues/3493) |
-| v3.0.0 | [#3304](https://github.com/opensearch-project/sql/pull/3304) | Add functions to SQL query validator | [#3237](https://github.com/opensearch-project/sql/issues/3237) |
-| v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support | [#3286](https://github.com/opensearch-project/sql/issues/3286) |
-| v3.0.0 | [#3326](https://github.com/opensearch-project/sql/pull/3326) | Remove opendistro settings and endpoints | [#3282](https://github.com/opensearch-project/sql/issues/3282) |
-| v3.0.0 | [#3337](https://github.com/opensearch-project/sql/pull/3337) | Deprecate SQL Delete statement | [#3281](https://github.com/opensearch-project/sql/issues/3281) |
-| v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type | [#3339](https://github.com/opensearch-project/sql/issues/3339) |
-| v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage | [#3284](https://github.com/opensearch-project/sql/issues/3284) |
-| v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format | [#3280](https://github.com/opensearch-project/sql/issues/3280) |
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
+- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/)
+- [SQL Plugin Repository](https://github.com/opensearch-project/sql)
