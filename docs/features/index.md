@@ -85,6 +85,7 @@
 - [Engine API](opensearch/engine-api.md)
 - [Engine Config](opensearch/engine-config.md)
 - [Engine Optimization Fixes](opensearch/engine-optimization-fixes.md)
+- [Extensions Framework](opensearch/extensions-framework.md)
 - [Locale Provider](opensearch/locale-provider.md)
 - [HTTP API](opensearch/http-api.md)
 - [Jackson & Query Limits](opensearch/jackson--query-limits.md)

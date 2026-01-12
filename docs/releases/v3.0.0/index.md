@@ -14,6 +14,7 @@
 ## opensearch
 
 - [Arrow Flight RPC](features/opensearch/arrow-flight-rpc.md)
+- [Extensions Framework](features/opensearch/extensions-framework.md)
 - [Automata & Regex Optimization](features/opensearch/automata-regex-optimization.md)
 - [Cluster Management](features/opensearch/cluster-management.md)
 - [Configuration Utilities](features/opensearch/configuration-utilities.md)
