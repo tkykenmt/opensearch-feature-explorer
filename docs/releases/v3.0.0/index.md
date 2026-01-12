@@ -242,6 +242,7 @@
 ## query-insights
 
 - [Query Insights](features/query-insights/query-insights.md)
+- [Query Insights Bugfixes (Batch 2)](features/query-insights/query-insights-bugfixes-batch2.md)
 
 ## skills
 
