@@ -111,6 +111,9 @@ source=orders
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.0.0 | [#130](https://github.com/opensearch-project/dashboards-query-workbench/pull/130) | Update packages and tsconfig |
+| v3.0.0 | [#133](https://github.com/opensearch-project/dashboards-query-workbench/pull/133) | Update form validations and tests for acceleration |
+| v3.0.0 | [#139](https://github.com/opensearch-project/dashboards-query-workbench/pull/139) | Updates 2.x branch with opensearch-spark changes |
 | v2.18.0 | [#401](https://github.com/opensearch-project/dashboards-query-workbench/pull/401) | Fix workbench routes to support modal mounting |
 | v2.18.0 | [#408](https://github.com/opensearch-project/dashboards-query-workbench/pull/408) | Added error handling for API calls |
 | v2.17.0 | [#370](https://github.com/opensearch-project/dashboards-query-workbench/pull/370) | Use smaller and compressed variants of buttons and form components |
@@ -124,5 +127,6 @@ source=orders
 
 ## Change History
 
+- **v3.0.0** (2025-02-25): Maintenance updates including dependency bumps (glob-parent, @babel/helpers, @babel/runtime), CI/CD improvements (actions/cache v4), and Cypress test enhancements
 - **v2.18.0** (2024-11-12): Bug fixes for modal mounting support and MDS error handling
 - **v2.17.0** (2024-09-17): UI improvements with smaller and compressed button/form variants for better consistency
