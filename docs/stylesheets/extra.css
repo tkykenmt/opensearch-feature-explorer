@@ -22,27 +22,3 @@
   max-width: 100%;
   overflow-x: auto;
 }
-
-
-/* AI Translate UI */
-.ai-translate {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-}
-.ai-translate select,
-.ai-translate button {
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  border: 1px solid var(--md-default-fg-color--lighter);
-  font-size: 0.8rem;
-}
-.ai-translate button {
-  background: var(--md-primary-fg-color);
-  color: white;
-  cursor: pointer;
-}
-.ai-translate button:hover {
-  opacity: 0.9;
-}
