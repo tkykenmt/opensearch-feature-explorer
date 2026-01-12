@@ -136,6 +136,7 @@ PUT /_ingest/pipeline/sparse-pipeline
 - **v2.14.0**: Initial batch ingestion feature introduced
 
 ## Related Features
+- [Batch Ingestion (Ingest Pipeline)](../neural-search/neural-search-batch-ingestion.md) - Different feature: batch processing in ingest pipelines
 - [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
 - [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
 - [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
