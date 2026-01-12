@@ -232,6 +232,15 @@ After creating the release report, update `docs/releases/v{version}/index.md`:
 
 ## Step 4: Update/Create Feature Report (SECONDARY OUTPUT)
 
+### Bugfix Items - Special Handling
+**IMPORTANT**: Bug fixes should NOT create separate `-fixes.md` or `-bugfixes.md` feature reports.
+
+For bugfix category items:
+1. Find the parent feature report (e.g., `k-nn-bug-fixes` → `vector-search-k-nn.md`)
+2. Update the parent feature's Change History with the bug fix info
+3. Add bug fix PRs to the parent's References section
+4. Do NOT create a new feature report for bug fixes
+
 ### For new-feature (feature report doesn't exist):
 Create `docs/features/{repository-name}/{feature-name}.md` following the template in steering/opensearch-knowledge.md:
 - Summary section (accessible overview)
