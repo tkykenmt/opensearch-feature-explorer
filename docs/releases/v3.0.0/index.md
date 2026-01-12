@@ -70,6 +70,7 @@
 - [Search Utilities](features/opensearch/search-utilities.md)
 - [Segment Replication](features/opensearch/segment-replication.md)
 - [Shard Management](features/opensearch/shard-management.md)
+- [Pull-based Ingestion](features/opensearch/pull-based-ingestion.md)
 
 ## opensearch-dashboards
 
