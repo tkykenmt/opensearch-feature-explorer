@@ -201,6 +201,7 @@
 - [Transport Actions API](opensearch/transport-actions-api.md)
 - [Unified Highlighter](opensearch/unified-highlighter.md)
 - [Unsigned Long](opensearch/unsigned-long.md)
+- [Views](opensearch/views.md)
 - [Warm Storage Tiering](opensearch/warm-storage-tiering.md)
 - [Wildcard Field](opensearch/wildcard-field.md)
 - [Workload Management](opensearch/workload-management.md)
