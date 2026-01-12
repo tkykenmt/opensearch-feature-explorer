@@ -67,6 +67,8 @@ Security-related dependency updates are prioritized and may include:
 
 ## Change History
 
+- **v3.4.0** (2026-01-11): 28 dependency updates across 7 repositories addressing CVE-2025-11226 (logback), CVE-2025-58457 (Spring Framework), CVE-2025-41249 (Zookeeper); major updates include Spring Framework 7.0.1, Calcite 1.41.0, Bouncy Castle 1.83
+- **v3.3.0** (2026-01-11): 55 dependency updates including OpenTelemetry 1.53.0, SLF4J 2.0.17, GCS SDK 2.55.0, commons-lang3 migration, and multiple CVE fixes
 - **v3.2.0** (2026-01-10): 20 dependency updates in OpenSearch core including Apache Lucene 10.2.2, Log4j 2.25.1, BouncyCastle FIPS updates, OkHttp 5.1.0, Azure SDK updates, Kafka clients 3.9.1
 - **v3.1.0** (2026-01-10): 21 dependency updates in OpenSearch core including CVE-2025-27820 fix (Apache HttpClient5/HttpCore5), Netty 4.1.121.Final, Gson 2.13.1, Azure SDK updates, Gradle Actions 4
 - **v2.18.0** (2024-11-05): 19 dependency updates including CVE-2024-7254 fix (protobuf), Gradle 8.10.2, upload-artifact v4
