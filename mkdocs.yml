@@ -1,6 +1,9 @@
 site_name: OpenSearch Feature Explorer
 site_description: Feature analysis and release notes documentation for OpenSearch
 site_url: https://tkykenmt.github.io/opensearch-feature-explorer/
+repo_url: https://github.com/tkykenmt/opensearch-feature-explorer
+repo_name: tkykenmt/opensearch-feature-explorer
+edit_uri: edit/main/docs/
 
 docs_dir: docs
 site_dir: site
@@ -26,11 +29,22 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - header.autohide
     - search.highlight
+    - search.suggest
+    - search.share
     - content.code.copy
+    - content.tabs.link
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/ai-translate.js
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -45,7 +59,23 @@ markdown_extensions:
   - tables
 
 plugins:
-  - search
+  - search:
+      lang:
+        - en
+        - ja
+      separator: '[\s\-\.]+'
+  - social
+  - meta
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - tags:
+      tags_file: tags.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tkykenmt/opensearch-feature-explorer
 
 nav:
   - Home: index.md
