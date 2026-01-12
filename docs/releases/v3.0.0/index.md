@@ -121,6 +121,7 @@
 ## dashboards-flow-framework
 
 - [AI Search Flows](features/dashboards-flow-framework/ai-search-flows.md)
+- [AI Search Flows Dashboards Bug Fixes](features/dashboards-flow-framework/ai-search-flows-dashboards-bugfixes.md)
 - [Dashboards BWC](features/dashboards-flow-framework/dashboards-bwc.md)
 - [Data Ingestion Dashboards](features/dashboards-flow-framework/data-ingestion-dashboards.md)
 
