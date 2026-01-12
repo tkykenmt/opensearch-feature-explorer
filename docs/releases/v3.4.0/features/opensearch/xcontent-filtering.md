@@ -106,16 +106,16 @@ public Set<String> getFilteredFields() {
 - Wildcard patterns in includes/excludes are also matched case-insensitively when `caseSensitive=false`
 - Performance impact is minimal as the lowercase conversion happens once per filter operation
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons Connector Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/remote-models/index/#step-2-create-a-connector): Example use case with sensitive credentials
+- [RestRequestFilter.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/rest/RestRequestFilter.java): Extension point for filtering sensitive request content
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19976](https://github.com/opensearch-project/OpenSearch/pull/19976) | Add case sensitivity as an argument to XContentMapValues.filter |
-
-## References
-
-- [RestRequestFilter.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/rest/RestRequestFilter.java): Extension point for filtering sensitive request content
-- [ML Commons Connector Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/remote-models/index/#step-2-create-a-connector): Example use case with sensitive credentials
 
 ## Related Feature Report
 

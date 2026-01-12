@@ -42,19 +42,21 @@ The ULP (Units in Last Place) value of 30,000 means there can be up to 30,000 re
 - The relaxed ULP tolerance is specific to test assertions and does not affect production scoring behavior
 - JDK 23 support removed from CI matrix in favor of JDK 24
 
-## Related PRs
+## References
 
+### Documentation
+- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
+- [GitHub Repository](https://github.com/opensearch-project/opensearch-learning-to-rank-base)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#202](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/202) | Bump gradle to 8.14, codecov to v5 and support JDK24 |
 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Updating ULP for similarity score comparisons to 30000 to avoid flaky tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #196](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/196): Distribution Build Failed for opensearch-learning-to-rank-base-3.2.0
 - [Issue #152](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/152): Flaky test LtrQueryTests.testOnRewrittenQueries
-- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
-- [GitHub Repository](https://github.com/opensearch-project/opensearch-learning-to-rank-base)
 
 ## Related Feature Report
 

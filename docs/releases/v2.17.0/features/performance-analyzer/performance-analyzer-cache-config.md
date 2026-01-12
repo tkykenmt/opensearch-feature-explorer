@@ -97,16 +97,16 @@ The collector creates gauge metrics that are lazily initialized and properly cle
 - Metrics are only available when Performance Analyzer is enabled
 - Collection interval is fixed at 60 seconds
 
-## Related PRs
+## References
 
+### Documentation
+- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
+- [Performance Analyzer Repository](https://github.com/opensearch-project/performance-analyzer): Source code
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#690](https://github.com/opensearch-project/performance-analyzer/pull/690) | Added CacheConfig Telemetry collectors |
-
-## References
-
-- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
-- [Performance Analyzer Repository](https://github.com/opensearch-project/performance-analyzer): Source code
 
 ## Related Feature Report
 

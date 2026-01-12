@@ -56,17 +56,17 @@ No migration required. These changes are transparent to users.
 
 None specific to this release.
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#1057](https://github.com/opensearch-project/notifications/pull/1057) | Updated gradle, jdk and other dependencies |
-
 ## References
 
+### Documentation
 - [Gradle 8.14 Release Notes](https://docs.gradle.org/8.14/release-notes.html)
 - [JaCoCo 0.8.13 Release](https://www.jacoco.org/jacoco/trunk/doc/changes.html)
 - [OpenSearch Notifications Repository](https://github.com/opensearch-project/notifications)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#1057](https://github.com/opensearch-project/notifications/pull/1057) | Updated gradle, jdk and other dependencies |
 
 ## Related Feature Report
 

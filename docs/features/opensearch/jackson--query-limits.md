@@ -127,19 +127,21 @@ If nesting exceeds `index.query.max_nested_depth`, an `IllegalArgumentException`
 - Nested query depth limit only applies to nested queries, not general JSON document depth
 - No API to query current effective limits at runtime
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Initial implementation - Jackson 2.16.x XContent constraints and nested query depth limit
+
+## References
+
+### Documentation
+- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): OpenSearch 3.0 breaking changes documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#11811](https://github.com/opensearch-project/OpenSearch/pull/11811) | Jackson default maximums for XContent parsing |
 | v3.0.0 | [#11670](https://github.com/opensearch-project/OpenSearch/pull/11670) | Nested query depth limit setting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11278](https://github.com/opensearch-project/OpenSearch/issues/11278): Jackson default maximums feature request
 - [Issue #3268](https://github.com/opensearch-project/OpenSearch/issues/3268): Nested query depth limit feature request
-- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): OpenSearch 3.0 breaking changes documentation
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Initial implementation - Jackson 2.16.x XContent constraints and nested query depth limit

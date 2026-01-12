@@ -133,8 +133,19 @@ flowchart TB
 - Maximum 10,000 spans can be retrieved for pagination
 - Service map generation requires proper span relationships
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
+
+## References
+
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/index/): Official documentation
+- [Trace Analytics Plugin](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Dashboards plugin guide
+- [Jaeger Trace Data](https://docs.opensearch.org/3.0/observing-your-data/trace/trace-analytics-jaeger/): Jaeger integration
+- [Simple Schema for Observability](https://docs.opensearch.org/3.0/observing-your-data/ss4o/): SS4O schema
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#2375](https://github.com/opensearch-project/dashboards-observability/pull/2375) | Support custom logs correlation |
@@ -145,15 +156,6 @@ flowchart TB
 | v3.0.0 | [#2410](https://github.com/opensearch-project/dashboards-observability/pull/2410) | Amazon Network Firewall Integration |
 | v3.0.0 | [#2432](https://github.com/opensearch-project/dashboards-observability/pull/2432) | OTEL attributes field support |
 
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/index/): Official documentation
-- [Trace Analytics Plugin](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Dashboards plugin guide
-- [Jaeger Trace Data](https://docs.opensearch.org/3.0/observing-your-data/trace/trace-analytics-jaeger/): Jaeger integration
-- [Simple Schema for Observability](https://docs.opensearch.org/3.0/observing-your-data/ss4o/): SS4O schema
+### Issues (Design / RFC)
 - [Issue #2141](https://github.com/opensearch-project/dashboards-observability/issues/2141): Custom logs correlation request
 - [Issue #2334](https://github.com/opensearch-project/dashboards-observability/issues/2334): Service optimizations
-
-## Change History
-
-- **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements

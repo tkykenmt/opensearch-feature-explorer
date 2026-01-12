@@ -120,8 +120,22 @@ Example natural language queries:
 - Streaming requires backend support for `text/event-stream` content type
 - Data2Summary agent must be configured for assistant entry to appear
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025): Added streaming support, unsupported dataset handling, prompt customization, markdown rendering for summaries, improved empty result handling, UX style fixes, and multiple bug fixes for UI state management
+- **v2.13** (2024): Initial implementation of OpenSearch Assistant toolkit
+
+## References
+
+### Documentation
+- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/): Official documentation
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): ML Commons integration guide
+- [Build your own chatbot](https://docs.opensearch.org/3.0/ml-commons-plugin/tutorials/build-chatbot/): Tutorial for configuring the assistant
+
+### Blog Posts
+- [OpenSearch adds a new generative AI assistant toolkit](https://opensearch.org/blog/opensearch-adds-new-generative-ai-assistant-toolkit/): Introduction blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9647](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9647) | Support streaming when content type is event stream |
@@ -136,15 +150,3 @@ Example natural language queries:
 | v3.0.0 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Clear discover summary if t2ppl failed |
 | v3.0.0 | [#9553](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9553) | Use markdown in discover summary |
 | v3.0.0 | [#9601](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9601) | Fix PPL refresh on regeneration |
-
-## References
-
-- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/): Official documentation
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): ML Commons integration guide
-- [OpenSearch adds a new generative AI assistant toolkit](https://opensearch.org/blog/opensearch-adds-new-generative-ai-assistant-toolkit/): Introduction blog post
-- [Build your own chatbot](https://docs.opensearch.org/3.0/ml-commons-plugin/tutorials/build-chatbot/): Tutorial for configuring the assistant
-
-## Change History
-
-- **v3.0.0** (2025): Added streaming support, unsupported dataset handling, prompt customization, markdown rendering for summaries, improved empty result handling, UX style fixes, and multiple bug fixes for UI state management
-- **v2.13** (2024): Initial implementation of OpenSearch Assistant toolkit

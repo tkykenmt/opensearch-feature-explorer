@@ -152,8 +152,16 @@ This is an experimental feature requiring:
 - **Repository**: Only Amazon S3 repositories supported
 - **Space Types**: L2, inner product, and cosine similarity
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Official docs
+- [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): Build service repository
+
+### Blog Posts
+- [GPU Acceleration Blog](https://opensearch.org/blog/GPU-Accelerated-Vector-Search-OpenSearch-New-Frontier/): Benchmarking results
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2576](https://github.com/opensearch-project/k-NN/pull/2576) | Client polling mechanism, encoder check, method parameter retrieval |
@@ -161,12 +169,8 @@ This is an experimental feature requiring:
 | [#2615](https://github.com/opensearch-project/k-NN/pull/2615) | Add metric collection for remote build process |
 | [#2627](https://github.com/opensearch-project/k-NN/pull/2627) | Fix COSINESIMIL space type support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2391](https://github.com/opensearch-project/k-NN/issues/2391): Meta issue for remote vector index build
-- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Official docs
-- [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): Build service repository
-- [GPU Acceleration Blog](https://opensearch.org/blog/GPU-Accelerated-Vector-Search-OpenSearch-New-Frontier/): Benchmarking results
 
 ## Related Feature Report
 

@@ -125,8 +125,17 @@ Dependencies are automatically resolved during build:
 - Cloud SDK versions must be coordinated across plugins
 - Security patches may require immediate updates outside normal release cycles
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Netty 4.2.4 upgrade (HTTP/3 readiness), 32 dependency updates including cloud SDKs and security libraries
+- **v3.0.0** (2025-05-06): JDK 21 LTS default, AWS SDK 2.30.x, Reactor Netty 1.2.x, 30 dependency updates
+
+## References
+
+### Documentation
+- [OpenSearch Dependency Policy](https://github.com/opensearch-project/OpenSearch/blob/main/DEVELOPER_GUIDE.md)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19178](https://github.com/opensearch-project/OpenSearch/pull/19178) | Netty 4.2.4 upgrade |
@@ -141,13 +150,6 @@ Dependencies are automatically resolved during build:
 | v3.0.0 | [#17607](https://github.com/opensearch-project/OpenSearch/pull/17607) | Nimbus JOSE+JWT 10.0.2 |
 | v3.0.0 | [#17562](https://github.com/opensearch-project/OpenSearch/pull/17562) | Azure Storage 12.30.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14804](https://github.com/opensearch-project/OpenSearch/issues/14804): Netty 4.2 upgrade request
 - [Issue #15927](https://github.com/opensearch-project/OpenSearch/issues/15927): ExtendedSocketOption support
-- [OpenSearch Dependency Policy](https://github.com/opensearch-project/OpenSearch/blob/main/DEVELOPER_GUIDE.md)
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Netty 4.2.4 upgrade (HTTP/3 readiness), 32 dependency updates including cloud SDKs and security libraries
-- **v3.0.0** (2025-05-06): JDK 21 LTS default, AWS SDK 2.30.x, Reactor Netty 1.2.x, 30 dependency updates

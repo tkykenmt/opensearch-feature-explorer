@@ -89,17 +89,19 @@ No migration required. The metrics are automatically available when the telemetr
 - Metrics are aggregated counts and do not include per-shard or per-node breakdowns
 - No histogram or latency metrics are included in this change
 
-## Related PRs
+## References
 
+### Documentation
+- [Metrics Framework Documentation](https://docs.opensearch.org/2.18/monitoring-your-cluster/metrics/getting-started/): Official docs for metrics framework
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15976](https://github.com/opensearch-project/OpenSearch/pull/15976) | Add success and failure count OTel metrics for async shard fetch |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8098](https://github.com/opensearch-project/OpenSearch/issues/8098): META - Cluster Manager Async Shard Fetch Revamp
 - [Issue #5098](https://github.com/opensearch-project/OpenSearch/issues/5098): Async shard fetches taking up GBs of memory
-- [Metrics Framework Documentation](https://docs.opensearch.org/2.18/monitoring-your-cluster/metrics/getting-started/): Official docs for metrics framework
 
 ## Related Feature Report
 

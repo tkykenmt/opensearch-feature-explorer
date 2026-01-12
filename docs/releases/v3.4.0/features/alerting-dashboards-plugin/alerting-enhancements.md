@@ -90,18 +90,18 @@ With this fix, users can now create bucket-level monitor triggers with keyword f
 - The MDS client fix requires Multi-Data Source to be enabled in OpenSearch Dashboards configuration
 - Keyword filters are only applicable to bucket-level monitors, not query-level or document-level monitors
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [Triggers Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/triggers/): Trigger configuration guide
+- [Per Query and Per Bucket Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-query-bucket-monitors/): Monitor types documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1325](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1325) | Allow keyword filter to be attached to bucket level monitor trigger |
 | [#1313](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1313) | Onboarded opensearch apis to use MDS client when MDS is enabled |
-
-## References
-
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [Triggers Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/triggers/): Trigger configuration guide
-- [Per Query and Per Bucket Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-query-bucket-monitors/): Monitor types documentation
 
 ## Related Feature Report
 

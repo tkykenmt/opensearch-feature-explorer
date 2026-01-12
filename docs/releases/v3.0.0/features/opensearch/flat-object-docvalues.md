@@ -119,17 +119,19 @@ GET /test-index/_search
 - Custom formats and time zones are not supported for flat_object DocValues
 - Aggregations on flat_object subfields remain unsupported
 
-## Related PRs
+## References
 
+### Documentation
+- [Flat object documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/flat-object/): Official documentation
+- [DocValues vs Stored Fields](https://sease.io/2020/03/docvalues-vs-stored-fields-apache-solr-features-and-performance-smackdown.html): Performance comparison
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16802](https://github.com/opensearch-project/OpenSearch/pull/16802) | Added ability to retrieve value from DocValues in a flat_object field |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16742](https://github.com/opensearch-project/OpenSearch/issues/16742): Feature request for DocValues retrieval in flat_object fields
-- [Flat object documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/flat-object/): Official documentation
-- [DocValues vs Stored Fields](https://sease.io/2020/03/docvalues-vs-stored-fields-apache-solr-features-and-performance-smackdown.html): Performance comparison
 
 ## Related Feature Report
 

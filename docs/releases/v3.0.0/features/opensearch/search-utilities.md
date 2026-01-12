@@ -101,16 +101,18 @@ This is a new utility method with no breaking changes. Existing code using `XCon
 - The transformer function receives the current value and must return the transformed value
 - For overlapping paths (e.g., `"test"` and `"test.nested"`), only the shorter path's transformer is applied
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN PR #2583](https://github.com/opensearch-project/k-NN/pull/2583): Related k-NN implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17612](https://github.com/opensearch-project/OpenSearch/pull/17612) | Add dfs transformation function in XContentMapValues |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): RFC - Derived Source for Vectors
-- [k-NN PR #2583](https://github.com/opensearch-project/k-NN/pull/2583): Related k-NN implementation
 
 ## Related Feature Report
 

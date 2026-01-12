@@ -119,18 +119,20 @@ GET products/_search
 - The `search_as_you_type` multi-fields fix is available in v2.18.0+ and v3.0.0+
 - Dashboards autocomplete improvements apply to DQL queries; PPL and SQL may require additional modifications for optimal behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [search_as_you_type Documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/search-as-you-type/): Official field type documentation
+- [Autocomplete Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/autocomplete/): Autocomplete functionality guide
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#15988](https://github.com/opensearch-project/OpenSearch/pull/15988) | OpenSearch | Fix search_as_you_type not supporting multi-fields |
 | [#7991](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7991) | OpenSearch-Dashboards | Keep Autocomplete suggestion window open and put user hints below the suggestion window |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5035](https://github.com/opensearch-project/OpenSearch/issues/5035): Original bug report for search_as_you_type multi-fields
-- [search_as_you_type Documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/search-as-you-type/): Official field type documentation
-- [Autocomplete Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/autocomplete/): Autocomplete functionality guide
 
 ## Related Feature Report
 

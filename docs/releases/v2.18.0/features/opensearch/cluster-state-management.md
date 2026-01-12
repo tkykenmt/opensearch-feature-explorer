@@ -98,15 +98,15 @@ This fix is particularly important for clusters using remote cluster state publi
 - This is a bug fix with no new configuration options
 - Only affects clusters using remote cluster state publication
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16215](https://github.com/opensearch-project/OpenSearch/pull/16215) | Update last seen cluster state in commit phase |
-
-## References
-
-- [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
 
 ## Related Feature Report
 

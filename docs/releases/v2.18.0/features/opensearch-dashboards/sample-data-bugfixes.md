@@ -41,15 +41,15 @@ Users attempting to load OTEL sample data on OpenSearch versions prior to 2.13 w
 - OTEL sample data remains incompatible with OpenSearch versions prior to 2.13
 - Future releases plan to make the sample data compatible with all OpenSearch versions
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.18/dashboards/quickstart/): Documentation on adding sample data
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8693) | Update OTEL sample data description with compatible OS version |
-
-## References
-
-- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.18/dashboards/quickstart/): Documentation on adding sample data
 
 ## Related Feature Report
 

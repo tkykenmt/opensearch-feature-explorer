@@ -71,22 +71,26 @@ If you were planning to use the events-correlation-engine plugin:
 - Correlation functionality is only available through Security Analytics for security-focused use cases
 - General-purpose event correlation across non-security log sources requires custom implementation
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/): Official Security Analytics docs
+- [Correlation Engine APIs](https://docs.opensearch.org/3.0/security-analytics/api-tools/correlation-eng/): API documentation
+- [Creating Correlation Rules](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/correlation-config/): Configuration guide
+- [PR #16885](https://github.com/opensearch-project/OpenSearch/pull/16885): Plugin removal PR
+
+### Blog Posts
+- [Blog: Correlating security events](https://opensearch.org/blog/correlating-security-events/): Overview of correlation capabilities
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Remove the events-correlation-engine plugin |
 | [#6854](https://github.com/opensearch-project/OpenSearch/issues/6854) | [META] OpenSearch Events Correlation Engine (original proposal) |
 | [#6779](https://github.com/opensearch-project/OpenSearch/issues/6779) | RFC: Events Correlation Engine |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #6854](https://github.com/opensearch-project/OpenSearch/issues/6854): Original META issue for Events Correlation Engine
-- [PR #16885](https://github.com/opensearch-project/OpenSearch/pull/16885): Plugin removal PR
-- [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/): Official Security Analytics docs
-- [Correlation Engine APIs](https://docs.opensearch.org/3.0/security-analytics/api-tools/correlation-eng/): API documentation
-- [Creating Correlation Rules](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/correlation-config/): Configuration guide
-- [Blog: Correlating security events](https://opensearch.org/blog/correlating-security-events/): Overview of correlation capabilities
 
 ## Related Feature Report
 

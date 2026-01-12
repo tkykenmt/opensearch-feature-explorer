@@ -137,20 +137,22 @@ const appLinks: AppLinkSchema[] = [
 - OTEL sample data has no associated dashboard; users navigate directly to Trace Analytics
 - Updated UI only visible when `useUpdatedUX` flag is enabled
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-12): Updated sample data page UI with new UX; Added OTEL sample data for traces, metrics, logs, and service maps; Added compatibility warning to OTEL sample data description (OpenSearch 2.13+ required)
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/latest/dashboards/quickstart/): Official documentation on adding sample data
+- [Trace Analytics Getting Started](https://docs.opensearch.org/latest/observing-your-data/trace/getting-started/): Using OTEL data with trace analytics
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8291) | Update sample data page UI when useUpdatedUX enabled |
 | v2.18.0 | [#8587](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8587) | Add support for OTEL sample data - logs, traces and metrics |
 | v2.18.0 | [#8693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8693) | Update OTEL sample data description with compatible OS version |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8312](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8312): Update Sample Data Page UI for New Updated UX
-- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/latest/dashboards/quickstart/): Official documentation on adding sample data
-- [Trace Analytics Getting Started](https://docs.opensearch.org/latest/observing-your-data/trace/getting-started/): Using OTEL data with trace analytics
-
-## Change History
-
-- **v2.18.0** (2024-11-12): Updated sample data page UI with new UX; Added OTEL sample data for traces, metrics, logs, and service maps; Added compatibility warning to OTEL sample data description (OpenSearch 2.13+ required)

@@ -53,16 +53,16 @@ No user-facing changes. This fix only affects the development and CI/CD test env
 - The Worker mock is a no-op implementation and does not provide actual Web Worker functionality
 - Tests that rely on real Worker behavior would need additional mocking
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #593](https://github.com/opensearch-project/dashboards-assistant/pull/593): Main implementation
+- [OpenSearch Dashboards Assistant](https://github.com/opensearch-project/dashboards-assistant): Repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#593](https://github.com/opensearch-project/dashboards-assistant/pull/593) | Fix failed unit tests due to missing Worker |
-
-## References
-
-- [PR #593](https://github.com/opensearch-project/dashboards-assistant/pull/593): Main implementation
-- [OpenSearch Dashboards Assistant](https://github.com/opensearch-project/dashboards-assistant): Repository
 
 ## Related Feature Report
 

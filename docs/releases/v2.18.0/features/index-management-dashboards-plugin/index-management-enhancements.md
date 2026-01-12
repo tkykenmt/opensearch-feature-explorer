@@ -101,8 +101,13 @@ The Dashboards plugin includes several fit-and-finish improvements:
 - When searching mixed indices, results from overlapping time periods may be counted twice (once from raw data, once from rollup)
 - Index name validation may reject previously valid names that don't conform to the new stricter rules
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Rollups Documentation](https://docs.opensearch.org/2.18/im-plugin/index-rollups/index/): Official documentation
+- [Index Transforms Documentation](https://docs.opensearch.org/2.18/im-plugin/index-transforms/index/): Official documentation
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1268](https://github.com/opensearch-project/index-management/pull/1268) | index-management | Allow non-rollup and rollup indices to be searched together |
@@ -110,11 +115,8 @@ The Dashboards plugin includes several fit-and-finish improvements:
 | [#1182](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1182) | index-management-dashboards-plugin | Replace EuiText with EuiTitle for section headers |
 | [#1191](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1191) | index-management-dashboards-plugin | Setting validation for transform APIs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1213](https://github.com/opensearch-project/index-management/issues/1213): Feature request for mixed rollup/non-rollup search
-- [Index Rollups Documentation](https://docs.opensearch.org/2.18/im-plugin/index-rollups/index/): Official documentation
-- [Index Transforms Documentation](https://docs.opensearch.org/2.18/im-plugin/index-transforms/index/): Official documentation
 
 ## Related Feature Report
 

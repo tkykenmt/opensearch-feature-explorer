@@ -92,18 +92,18 @@ class MyPlugin {
 - Custom search strategies must implement the `ISearchStrategy` interface
 - The keyboard shortcut only works when the query editor has focus
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Workbench Documentation](https://docs.opensearch.org/2.18/dashboards/query-workbench/): Official query interface documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8245](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8245) | Expose method to register search strategy routes in query enhancement |
 | [#8252](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8252) | Fix running recent query button to work properly |
 | [#8299](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8299) | Expose datasets and data_frames directories for specific imports |
 | [#8322](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8322) | Add keyboard shortcut for running queries |
-
-## References
-
-- [Query Workbench Documentation](https://docs.opensearch.org/2.18/dashboards/query-workbench/): Official query interface documentation
 
 ## Related Feature Report
 

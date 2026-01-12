@@ -187,8 +187,20 @@ PUT _plugins/_ism/policies/hot-warm-policy
 - Remote object stores may incur per-request retrieval costs
 - Recommended to maintain a remote data to cache ratio of 5:1 or less for optimal performance
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-22): Added write block support for warm indices on flood watermark breach; added WarmFsService for accurate warm node FS stats based on addressable space; disallowed resize operations (clone/shrink/split) on warm indices; changed default remote_data_ratio from 0 to 5 with minimum of 1; improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
+- **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
+- **v3.0.0** (2025-03-18): Established warm/hot tiering foundation - renamed "search" node role to "warm" for warm indices; introduced new exclusive "search" role for search-only shards; added `index.warm` setting; renamed feature flag to `WRITABLE_WARM_INDEX_EXPERIMENTAL_FLAG`
+
+## References
+
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+- [Creating a Cluster - Hot and Warm Nodes](https://docs.opensearch.org/3.0/tuning-your-cluster/)
+- [ISM Policies](https://docs.opensearch.org/3.0/im-plugin/ism/policies/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18375](https://github.com/opensearch-project/OpenSearch/pull/18375) | Add support for Warm Indices Write Block on Flood Watermark breach |
@@ -201,20 +213,10 @@ PUT _plugins/_ism/policies/hot-warm-policy
 | v3.0.0 | [#17573](https://github.com/opensearch-project/OpenSearch/pull/17573) | Renamed node role from search to warm |
 | v3.0.0 | [#17620](https://github.com/opensearch-project/OpenSearch/pull/17620) | Introduced new search node role for search-only shards |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8535](https://github.com/opensearch-project/OpenSearch/issues/8535): Add support for a FileCacheDecider
 - [Issue #18768](https://github.com/opensearch-project/OpenSearch/issues/18768): [WRITABLE WARM] FS stats for warm nodes
 - [Issue #11676](https://github.com/opensearch-project/OpenSearch/issues/11676): Remote data ratio configuration details
 - [Issue #17489](https://github.com/opensearch-project/OpenSearch/issues/17489): Update nomenclature for tiering indices for writable warm
 - [Issue #13149](https://github.com/opensearch-project/OpenSearch/issues/13149): [META] Writable Warm Index
 - [Issue #17422](https://github.com/opensearch-project/OpenSearch/issues/17422): Restrict Search Replica Allocation to Search-Dedicated Nodes
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
-- [Creating a Cluster - Hot and Warm Nodes](https://docs.opensearch.org/3.0/tuning-your-cluster/)
-- [ISM Policies](https://docs.opensearch.org/3.0/im-plugin/ism/policies/)
-
-## Change History
-
-- **v3.2.0** (2025-07-22): Added write block support for warm indices on flood watermark breach; added WarmFsService for accurate warm node FS stats based on addressable space; disallowed resize operations (clone/shrink/split) on warm indices; changed default remote_data_ratio from 0 to 5 with minimum of 1; improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
-- **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
-- **v3.0.0** (2025-03-18): Established warm/hot tiering foundation - renamed "search" node role to "warm" for warm indices; introduced new exclusive "search" role for search-only shards; added `index.warm` setting; renamed feature flag to `WRITABLE_WARM_INDEX_EXPERIMENTAL_FLAG`

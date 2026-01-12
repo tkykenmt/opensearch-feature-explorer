@@ -96,18 +96,20 @@ For plugin maintainers:
 - Detekt static analysis tool does not yet support JDK 24, requiring `jvmTarget = "21"` workaround
 - Legacy Sonatype URL is kept as fallback in repositories for backward compatibility
 
-## Related PRs
+## References
 
+### Documentation
+- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/): Official migration documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1931](https://github.com/opensearch-project/observability/pull/1931) | Update the maven snapshot publish endpoint and credential |
 | [#1937](https://github.com/opensearch-project/observability/pull/1937) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1932](https://github.com/opensearch-project/observability/issues/1932): Release version 3.2.0
 - [Issue #5551](https://github.com/opensearch-project/opensearch-build/issues/5551): Plugin snapshot publishing migration
-- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/): Official migration documentation
 
 ## Related Feature Report
 

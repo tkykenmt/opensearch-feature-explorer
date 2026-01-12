@@ -187,8 +187,16 @@ GET sparse-vector-index/_search
 - Memory-intensive: ~53 GB per data node for 8.8M documents
 - Best suited for datasets with 1M+ documents
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
+- [SEISMIC Paper](https://dl.acm.org/doi/10.1145/3626772.3657769): Efficient Inverted Indexes for Approximate Retrieval over Learned Sparse Representations
+
+### Blog Posts
+- [Blog: Scaling neural sparse search to billions of vectors](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1502](https://github.com/opensearch-project/neural-search/pull/1502) | Add basic classes for SEISMIC algorithm |
@@ -205,13 +213,9 @@ GET sparse-vector-index/_search
 | [#1580](https://github.com/opensearch-project/neural-search/pull/1580) | Dynamic max float value for byte quantization |
 | [#1581](https://github.com/opensearch-project/neural-search/pull/1581) | Change path of index_thread_qty API |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #1335](https://github.com/opensearch-project/neural-search/issues/1335): Sparse ANN Algorithm: Seismic
 - [Design #1390](https://github.com/opensearch-project/neural-search/issues/1390): Approximate Sparse Nearest-Neighbor Search in OpenSearch
-- [SEISMIC Paper](https://dl.acm.org/doi/10.1145/3626772.3657769): Efficient Inverted Indexes for Approximate Retrieval over Learned Sparse Representations
-- [Blog: Scaling neural sparse search to billions of vectors](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/)
-- [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
 
 ## Related Feature Report
 

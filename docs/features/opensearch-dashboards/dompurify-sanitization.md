@@ -76,22 +76,22 @@ const cleanHTML = DOMPurify.sanitize(dirtyHTML, {
 - Some legitimate HTML patterns may be stripped if they resemble attack vectors
 - Configuration must balance security with functionality
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 (CVE-2025-26791) |
-| v2.17.1 | [#8346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8346) | Bump dompurify from 3.0.11 to 3.1.6 (CVE-2024-45801) |
-| v2.5.0 | [#2918](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/2918) | Initial DOMPurify integration for table visualization |
-
-## References
-
-- [DOMPurify GitHub](https://github.com/cure53/DOMPurify): Official DOMPurify repository
-- [CVE-2025-26791](https://nvd.nist.gov/vuln/detail/CVE-2025-26791): mXSS vulnerability in template literal regex
-- [CVE-2024-45801](https://nvd.nist.gov/vuln/detail/CVE-2024-45801): Nesting-based mXSS vulnerability
-
 ## Change History
 
 - **v3.0.0** (2025-05-06): Updated to 3.2.4 to fix CVE-2025-26791 (mXSS via template literal regex)
 - **v2.17.1** (2024-10-01): Updated to 3.1.6 to fix CVE-2024-45801 (nesting-based mXSS)
 - **v2.5.0** (2023-01-24): Initial integration for table visualization URL formatting
+
+## References
+
+### Documentation
+- [DOMPurify GitHub](https://github.com/cure53/DOMPurify): Official DOMPurify repository
+- [CVE-2025-26791](https://nvd.nist.gov/vuln/detail/CVE-2025-26791): mXSS vulnerability in template literal regex
+- [CVE-2024-45801](https://nvd.nist.gov/vuln/detail/CVE-2024-45801): Nesting-based mXSS vulnerability
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 (CVE-2025-26791) |
+| v2.17.1 | [#8346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8346) | Bump dompurify from 3.0.11 to 3.1.6 (CVE-2024-45801) |
+| v2.5.0 | [#2918](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/2918) | Initial DOMPurify integration for table visualization |

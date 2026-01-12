@@ -64,19 +64,19 @@ No user action required. This is an internal build system fix that ensures CI/CD
 
 - This fix only addresses the Sonatype credentials syntax; other uses of `$System.env` may require similar updates in the future.
 
-## Related PRs
+## References
 
+### Documentation
+- [Gradle 9 Release Notes](https://docs.gradle.org/9.0/release-notes.html): Breaking changes in Gradle 9
+- [Example failed workflow](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/actions/runs/17023398832/job/48255946880#step:5:74): CI failure demonstrating the issue
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1920](https://github.com/opensearch-project/alerting/pull/1920) | alerting: Update System.env syntax |
 | [#763](https://github.com/opensearch-project/asynchronous-search/pull/763) | asynchronous-search: Update System.env syntax |
 | [#867](https://github.com/opensearch-project/common-utils/pull/867) | common-utils: Update System.env syntax |
 | [#245](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/245) | opensearch-remote-metadata-sdk: Original fix example |
-
-## References
-
-- [Gradle 9 Release Notes](https://docs.gradle.org/9.0/release-notes.html): Breaking changes in Gradle 9
-- [Example failed workflow](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/actions/runs/17023398832/job/48255946880#step:5:74): CI failure demonstrating the issue
 
 ## Related Feature Report
 

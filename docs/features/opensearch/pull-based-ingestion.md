@@ -249,8 +249,21 @@ When settings are updated:
 - Consumer reset only works when ingestion is paused
 - Provides at-least-once processing guarantees (use versioning for exactly-once semantics)
 
-## Related PRs
+## Change History
 
+- **v3.4.0**: Added offset-based consumer lag metric for Kafka with configurable update interval (`pointer_based_lag_update_interval`). Added time-based periodic flush support with `index.periodic_flush_interval` setting (defaults to 10 minutes for pull-based indexes). Added message mapper framework with `raw_payload` mapper for ingesting raw JSON payloads using stream pointer as document ID. Made `ingestion_source.param.*` settings dynamic, enabling consumer configuration updates without index recreation. Fixed out-of-bounds offset handling by setting Kafka `auto.offset.reset` to `none` by default. Removed persisted pointers concept to fix correctness issues during consumer rewind. Deprecated `totalDuplicateMessageSkippedCount` metric.
+- **v3.3.0**: Added all-active ingestion mode enabling replica shards to independently ingest from streaming sources. Fixed ingestion state XContent serialization for remote cluster state compatibility. Fixed lag metric calculation when streaming source is empty. Fixed pause state initialization during replica promotion. Added fail-fast behavior for mapper/parsing errors.
+- **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
+- **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.
+- **v3.0.0**: Initial experimental implementation with core ingestion engine, Kafka plugin (`ingestion-kafka`), and Kinesis plugin (`ingestion-kinesis`). Added offset management with rewind by offset/timestamp support. Introduced error handling strategies (DROP and BLOCK). Added ingestion management APIs (pause, resume, get state). Implemented update and delete operations with auto-generated IDs for upserts. Added external versioning support for handling out-of-order updates from streaming sources. Introduced multi-threaded writer support with configurable `num_processor_threads`. Added configurable `maxPollSize` and `pollTimeout` settings. Disabled traditional REST API indexing for pull-based indexes.
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19635](https://github.com/opensearch-project/OpenSearch/pull/19635) | Add Kafka offset based consumer lag |
@@ -281,8 +294,7 @@ When settings are updated:
 | v3.0.0 | [#17918](https://github.com/opensearch-project/OpenSearch/pull/17918) | External versioning support for out-of-order updates |
 | v3.0.0 | [#17912](https://github.com/opensearch-project/OpenSearch/pull/17912) | Multi-threaded writer support with configurable processor threads |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16495](https://github.com/opensearch-project/OpenSearch/issues/16495): RFC - Streaming ingestion (pull based)
 - [Issue #16929](https://github.com/opensearch-project/OpenSearch/issues/16929): Pull-based ingestion tracking issue
 - [Issue #19591](https://github.com/opensearch-project/OpenSearch/issues/19591): Duplicate/old message skipping bug
@@ -293,13 +305,3 @@ When settings are updated:
 - [Issue #17442](https://github.com/opensearch-project/OpenSearch/issues/17442): Ingestion management APIs
 - [Issue #18279](https://github.com/opensearch-project/OpenSearch/issues/18279): Cluster write block support
 - [Issue #18590](https://github.com/opensearch-project/OpenSearch/issues/18590): File-based ingestion plugin request
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
-
-## Change History
-
-- **v3.4.0**: Added offset-based consumer lag metric for Kafka with configurable update interval (`pointer_based_lag_update_interval`). Added time-based periodic flush support with `index.periodic_flush_interval` setting (defaults to 10 minutes for pull-based indexes). Added message mapper framework with `raw_payload` mapper for ingesting raw JSON payloads using stream pointer as document ID. Made `ingestion_source.param.*` settings dynamic, enabling consumer configuration updates without index recreation. Fixed out-of-bounds offset handling by setting Kafka `auto.offset.reset` to `none` by default. Removed persisted pointers concept to fix correctness issues during consumer rewind. Deprecated `totalDuplicateMessageSkippedCount` metric.
-- **v3.3.0**: Added all-active ingestion mode enabling replica shards to independently ingest from streaming sources. Fixed ingestion state XContent serialization for remote cluster state compatibility. Fixed lag metric calculation when streaming source is empty. Fixed pause state initialization during replica promotion. Added fail-fast behavior for mapper/parsing errors.
-- **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
-- **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.
-- **v3.0.0**: Initial experimental implementation with core ingestion engine, Kafka plugin (`ingestion-kafka`), and Kinesis plugin (`ingestion-kinesis`). Added offset management with rewind by offset/timestamp support. Introduced error handling strategies (DROP and BLOCK). Added ingestion management APIs (pause, resume, get state). Implemented update and delete operations with auto-generated IDs for upserts. Added external versioning support for handling out-of-order updates from streaming sources. Introduced multi-threaded writer support with configurable `num_processor_threads`. Added configurable `maxPollSize` and `pollTimeout` settings. Disabled traditional REST API indexing for pull-based indexes.

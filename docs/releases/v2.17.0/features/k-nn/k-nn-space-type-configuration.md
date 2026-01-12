@@ -122,17 +122,19 @@ PUT my-vector-index
 - Cannot use top-level `space_type` with model-based indices (`model_id` parameter)
 - If both top-level and method-level `space_type` are specified, they must be identical
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Vector Documentation](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/): Official field type documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Index configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as a top level parameter while creating vector field |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1949](https://github.com/opensearch-project/k-NN/issues/1949): RFC - Disk-based Mode Design
-- [k-NN Vector Documentation](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/): Official field type documentation
-- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Index configuration guide
 
 ## Related Feature Report
 

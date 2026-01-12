@@ -91,16 +91,16 @@ This change is backward compatible:
 - The model must be trained or prompted to understand and utilize the `datasourceType` parameter
 - Only two data source types are currently supported: `Opensearch` (default) and `s3` (Spark)
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): Official PPL tool reference
+- [Skills Repository](https://github.com/opensearch-project/skills): Source code
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#587](https://github.com/opensearch-project/skills/pull/587) | Add data source type in the request body from PPL tool to model endpoint |
-
-## References
-
-- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): Official PPL tool reference
-- [Skills Repository](https://github.com/opensearch-project/skills): Source code
 
 ## Related Feature Report
 

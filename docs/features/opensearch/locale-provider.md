@@ -93,19 +93,23 @@ POST /my-index/_doc
 - Locale data differences between CLDR and COMPAT may affect date parsing
 - Custom date formats using locale-specific names require testing when upgrading
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Changed locale provider from COMPAT to CLDR to address JDK 21+ deprecation warnings
+
+## References
+
+### Documentation
+- [CLDR Supported Locales (JDK 11)](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html): Oracle documentation
+- [JDK-8305402](https://bugs.openjdk.org/browse/JDK-8305402): COMPAT locale provider removal notice
+
+### Blog Posts
+- [Blog: How to start contributing to OpenSearch](https://opensearch.org/blog/how-to-start-contributing-to-opensearch-a-beginners-guide-based-on-my-journey/): Contributor journey
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#14345](https://github.com/opensearch-project/OpenSearch/pull/14345) | Changed locale provider from COMPAT to CLDR |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11550](https://github.com/opensearch-project/OpenSearch/issues/11550): Original feature request
-- [JDK-8305402](https://bugs.openjdk.org/browse/JDK-8305402): COMPAT locale provider removal notice
-- [CLDR Supported Locales (JDK 11)](https://www.oracle.com/java/technologies/javase/jdk11-suported-locales.html): Oracle documentation
-- [Blog: How to start contributing to OpenSearch](https://opensearch.org/blog/how-to-start-contributing-to-opensearch-a-beginners-guide-based-on-my-journey/): Contributor journey
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Changed locale provider from COMPAT to CLDR to address JDK 21+ deprecation warnings

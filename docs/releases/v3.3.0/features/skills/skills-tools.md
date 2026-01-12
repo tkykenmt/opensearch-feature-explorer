@@ -107,8 +107,14 @@ POST /_plugins/_ml/agents/{agent_id}/_execute
 - DataDistributionTool performance depends on sample size configuration
 - Both tools require appropriate index permissions
 
-## Related PRs
+## References
 
+### Documentation
+- [LogPatternTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/log-pattern-tool/): Official documentation
+- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Tools overview
+- [Skills Repository](https://github.com/opensearch-project/skills): Source code
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#625](https://github.com/opensearch-project/skills/pull/625) | Log patterns analysis tool |
@@ -116,12 +122,6 @@ POST /_plugins/_ml/agents/{agent_id}/_execute
 | [#636](https://github.com/opensearch-project/skills/pull/636) | Add more information in PPL tool when passing to SageMaker |
 | [#641](https://github.com/opensearch-project/skills/pull/641) | Delete-single-baseline (DataDistributionTool fix) |
 | [#639](https://github.com/opensearch-project/skills/pull/639) | Fix WebSearchTool issue |
-
-## References
-
-- [LogPatternTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/log-pattern-tool/): Official documentation
-- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Tools overview
-- [Skills Repository](https://github.com/opensearch-project/skills): Source code
 
 ## Related Feature Report
 

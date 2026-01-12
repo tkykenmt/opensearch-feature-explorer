@@ -67,17 +67,17 @@ No migration required. The default value of 32,000 characters is generous enough
 - Does not limit other query types or the overall request body size
 - The check occurs at parse time, so invalid queries may still consume some resources before being rejected
 
-## Related PRs
+## References
 
+### Documentation
+- [Query String Query Documentation](https://docs.opensearch.org/latest/query-dsl/full-text/query-string/): Official query string query docs
+- [Search Settings Documentation](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/search-settings/): Search configuration reference
+- [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Introduced new setting search.query.max_query_string_length |
-
-## References
-
-- [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Main implementation
-- [Query String Query Documentation](https://docs.opensearch.org/latest/query-dsl/full-text/query-string/): Official query string query docs
-- [Search Settings Documentation](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/search-settings/): Search configuration reference
 
 ## Related Feature Report
 

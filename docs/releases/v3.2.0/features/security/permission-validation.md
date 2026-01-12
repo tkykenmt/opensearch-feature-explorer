@@ -100,16 +100,18 @@ This is a new feature with no migration required. The feature is available immed
 - Super admins always receive `accessAllowed: true` as they bypass normal privilege evaluation
 - The feature checks permissions at the time of the request; cached permissions may not reflect very recent role changes
 
-## Related PRs
+## References
 
+### Documentation
+- [Permissions Documentation](https://docs.opensearch.org/3.2/security/access-control/permissions/): Official documentation on permissions and the `perform_permission_check` parameter
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5496](https://github.com/opensearch-project/security/pull/5496) | Add url query param (has_permission_check=true) to check if a user has access to call an API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5468](https://github.com/opensearch-project/security/issues/5468): Security Permissions Simulation feature request
-- [Permissions Documentation](https://docs.opensearch.org/3.2/security/access-control/permissions/): Official documentation on permissions and the `perform_permission_check` parameter
 
 ## Related Feature Report
 

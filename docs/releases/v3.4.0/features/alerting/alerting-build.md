@@ -54,18 +54,20 @@ No migration required. This is a build infrastructure fix that does not affect r
 
 None specific to this fix.
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Repository](https://github.com/opensearch-project/alerting): OpenSearch Alerting plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1608](https://github.com/opensearch-project/alerting/pull/1608) | Backport to 2.15: Fixing build script to only publish alerting zip |
 | [#1605](https://github.com/opensearch-project/alerting/pull/1605) | Original fix: Fixing build script to only publish alerting zip |
 | [#1604](https://github.com/opensearch-project/alerting/pull/1604) | Related: Fix pluginzippublish issue |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1599](https://github.com/opensearch-project/alerting/issues/1599): Maven failed publishPluginZipPublicationToZipStagingRepository
-- [Alerting Repository](https://github.com/opensearch-project/alerting): OpenSearch Alerting plugin
 
 ## Related Feature Report
 

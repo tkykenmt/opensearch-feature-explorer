@@ -121,8 +121,25 @@ PUT .plugins-ml-config/_doc/os_chat
 - Response quality depends on the underlying LLM model
 - Admin UI settings require OpenSearch Dashboards 3.1.0+
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-10): T2viz enhancements (single metric styling, time range support, error prevention), streaming buffer for special characters, persistent flyout state, admin UI settings for centralized feature control, alert summary format instructions
+- **v3.0.0** (2025-05-06): Major UI redesign, streaming output support, single button entry point, text-to-visualization enhancements with auto-aggregation, conversation auto-loading
+- **v2.18.0** (2024-11-05): Added assistant capabilities for conditional UI rendering, new API to check agent config existence, renamed agentName to agentConfigName for clarity
+- **v2.13** (2024): Initial introduction of OpenSearch Assistant for OpenSearch Dashboards
+
+## References
+
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/index/)
+- [Build Your Own Chatbot Tutorial](https://docs.opensearch.org/3.1/tutorials/gen-ai/chatbots/build-chatbot/)
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.1/ml-commons-plugin/opensearch-assistant/)
+- [Alert Insights](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/alert-insight/)
+- [Data Summary](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/data-summary/)
+- [Text to Visualization](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/text-to-visualization/)
+- [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#539](https://github.com/opensearch-project/dashboards-assistant/pull/539) | Style single metric in text2vis |
@@ -141,20 +158,3 @@ PUT .plugins-ml-config/_doc/os_chat
 | v3.0.0 | [#540](https://github.com/opensearch-project/dashboards-assistant/pull/540) | Change chatbot entry point to single button |
 | v2.18.0 | [#267](https://github.com/opensearch-project/dashboards-assistant/pull/267) | Add assistant capabilities to control rendering components |
 | v2.18.0 | [#307](https://github.com/opensearch-project/dashboards-assistant/pull/307) | Expose API to check if agent config name has agent ID configured |
-
-## References
-
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/index/)
-- [Build Your Own Chatbot Tutorial](https://docs.opensearch.org/3.1/tutorials/gen-ai/chatbots/build-chatbot/)
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.1/ml-commons-plugin/opensearch-assistant/)
-- [Alert Insights](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/alert-insight/)
-- [Data Summary](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/data-summary/)
-- [Text to Visualization](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/text-to-visualization/)
-- [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
-
-## Change History
-
-- **v3.1.0** (2026-01-10): T2viz enhancements (single metric styling, time range support, error prevention), streaming buffer for special characters, persistent flyout state, admin UI settings for centralized feature control, alert summary format instructions
-- **v3.0.0** (2025-05-06): Major UI redesign, streaming output support, single button entry point, text-to-visualization enhancements with auto-aggregation, conversation auto-loading
-- **v2.18.0** (2024-11-05): Added assistant capabilities for conditional UI rendering, new API to check agent config existence, renamed agentName to agentConfigName for clarity
-- **v2.13** (2024): Initial introduction of OpenSearch Assistant for OpenSearch Dashboards

@@ -88,8 +88,9 @@ PUT _cluster/settings
 - Query timeout only applies to Calcite-based queries
 - Build cache may need manual clearing if dependency issues occur
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4890](https://github.com/opensearch-project/sql/pull/4890) | Add config for CodeRabbit review |
@@ -123,8 +124,7 @@ PUT _cluster/settings
 | [#4025](https://github.com/opensearch-project/sql/pull/4025) | Update delete_backport_branch workflow |
 | [#4861](https://github.com/opensearch-project/sql/pull/4861) | Fix clickbench query 43 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4722](https://github.com/opensearch-project/sql/issues/4722): Gradle upgrade tracking
 - [Issue #4842](https://github.com/opensearch-project/sql/issues/4842): Query timeout issue
 

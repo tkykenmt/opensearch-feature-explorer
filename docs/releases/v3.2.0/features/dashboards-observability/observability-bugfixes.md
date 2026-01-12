@@ -61,17 +61,17 @@ The fixes are automatic and require no configuration changes. Error indicators n
 - Error detection relies on status code value of `2` (OTel ERROR status)
 - Metrics visualization fix only affects local cluster instances without MDS configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.2/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
+- [Data Prepper OTel Span Template](https://github.com/opensearch-project/data-prepper/blob/main/data-prepper-plugins/opensearch/src/main/resources/index-template/otel-v1-apm-span-index-standard-template.json): New Data Prepper format reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2475](https://github.com/opensearch-project/dashboards-observability/pull/2475) | [Bug] Traces error display |
 | [#2478](https://github.com/opensearch-project/dashboards-observability/pull/2478) | [Bug] Fixed metrics viz not showing up |
-
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.2/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
-- [Data Prepper OTel Span Template](https://github.com/opensearch-project/data-prepper/blob/main/data-prepper-plugins/opensearch/src/main/resources/index-template/otel-v1-apm-span-index-standard-template.json): New Data Prepper format reference
 
 ## Related Feature Report
 

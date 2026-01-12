@@ -108,18 +108,18 @@ Check `startree_query_total` - queries from restricted users will not increment 
 - Performance impact: Users with DLS/FLS/Field Masking will not benefit from star-tree query acceleration
 - No partial optimization: Even if only one field is masked, the entire star-tree optimization is disabled
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#5492](https://github.com/opensearch-project/security/pull/5492) | Restricting star tree index for users with DLS/FLS/FieldMasking restrictions |
-
 ## References
 
+### Documentation
 - [Star-tree index documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Official star-tree documentation
 - [Document-level security](https://docs.opensearch.org/3.0/security/access-control/document-level-security/): DLS configuration
 - [Field-level security](https://docs.opensearch.org/3.0/security/access-control/field-level-security/): FLS configuration
 - [Field masking](https://docs.opensearch.org/3.0/security/access-control/field-masking/): Field masking configuration
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#5492](https://github.com/opensearch-project/security/pull/5492) | Restricting star tree index for users with DLS/FLS/FieldMasking restrictions |
 
 ## Related Feature Report
 

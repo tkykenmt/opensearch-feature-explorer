@@ -142,19 +142,19 @@ client.admin().indices().refreshAsync(new RefreshRequest("my-index"))
 - Default implementations wrap `ActionListener`, so no performance improvement over callback pattern
 - Requires Java 8+ for `CompletionStage` support
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-08): Initial implementation with CompletionStage variants for Client and IndicesAdminClient interfaces
+
+## References
+
+### Documentation
+- [Java CompletionStage API](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html): Java documentation
+- [PR #18998](https://github.com/opensearch-project/OpenSearch/pull/18998): Initial implementation
+- [PR #19161](https://github.com/opensearch-project/OpenSearch/pull/19161): IndicesAdminClient extension
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18998](https://github.com/opensearch-project/OpenSearch/pull/18998) | Add CompletionStage variants to Client interface |
 | v3.3.0 | [#19161](https://github.com/opensearch-project/OpenSearch/pull/19161) | Add CompletionStage variants to IndicesAdminClient |
-
-## References
-
-- [PR #18998](https://github.com/opensearch-project/OpenSearch/pull/18998): Initial implementation
-- [PR #19161](https://github.com/opensearch-project/OpenSearch/pull/19161): IndicesAdminClient extension
-- [Java CompletionStage API](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html): Java documentation
-
-## Change History
-
-- **v3.3.0** (2025-08): Initial implementation with CompletionStage variants for Client and IndicesAdminClient interfaces

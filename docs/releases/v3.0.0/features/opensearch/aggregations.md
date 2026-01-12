@@ -114,19 +114,21 @@ GET /events/_search
 - Ordinals use byte arrays sized by field cardinality; very high cardinality fields risk OOM errors
 - Multi-term aggregation still consumes more memory than single terms aggregation
 
-## Related PRs
+## References
 
+### Documentation
+- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/): Official documentation with execution_hint details
+- [Multi-terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/multi-terms/): Multi-terms aggregation usage
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17312](https://github.com/opensearch-project/OpenSearch/pull/17312) | Introduce `execution_hint` for Cardinality aggregation |
 | [#14993](https://github.com/opensearch-project/OpenSearch/pull/14993) | Latency and memory allocation improvements to Multi Term Aggregation queries |
 | [#17252](https://github.com/opensearch-project/OpenSearch/pull/17252) | Improve performance of NumericTermAggregation by avoiding unnecessary sorting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16837](https://github.com/opensearch-project/OpenSearch/issues/16837): Feature request for high cardinality field aggregation improvements
-- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/): Official documentation with execution_hint details
-- [Multi-terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/multi-terms/): Multi-terms aggregation usage
 
 ## Related Feature Report
 

@@ -116,8 +116,13 @@ When multiple rules match a request, the system uses priority-based scoring:
 - Index pattern values limited to 100 characters
 - Principal attributes only available when security context is present
 
-## Related PRs
+## References
 
+### Documentation
+- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
+- [Rules API Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#19599](https://github.com/opensearch-project/OpenSearch/pull/19599) | OpenSearch | Fix auto tagging label resolving logic for principal attributes |
@@ -127,11 +132,8 @@ When multiple rules match a request, the system uses priority-based scoring:
 | [#19344](https://github.com/opensearch-project/OpenSearch/pull/19344) | OpenSearch | Restructure in-memory trie to store values as a set |
 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Add logic to extract security attributes for rule-based autotagging |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC for automated labeling of search requests
-- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
-- [Rules API Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ## Related Feature Report
 

@@ -85,8 +85,22 @@ The plugin uses the following URL parameters for state management:
 - Email functionality requires proper SMTP or SES configuration
 - Some channel types may require additional AWS permissions
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Fixed channel name edit UX regression - prevented unnecessary API refetching on every keystroke when editing channel names
+- **v2.18.0** (2024-11-05): Fit & Finish UX improvements - standardized semantic headers (H1/H2/H3), consistent text sizes, smaller context menus, 16px content-to-header spacing, full-width content sections, separated table filters, added default pill to encryption method dropdown. Also fixed default data source selection and typo in recipient groups UI.
+- **v2.17.0** (2024-09-17): Changed navigation parent item name to "Notification channels", added description for left navigation, fixed link checker CI, added dataSourceId persistence for new navigation
+- **v2.15.0**: Bug fixes for MDS support in getServerFeatures API
+- **v2.14.0**: Added Multi-Data-Source (MDS) support
+
+## References
+
+### Documentation
+- [OpenSearch Notifications Documentation](https://docs.opensearch.org/latest/observing-your-data/notifications/index/)
+- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
+- [notifications Repository](https://github.com/opensearch-project/notifications)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#393](https://github.com/opensearch-project/dashboards-notifications/pull/393) | Fix channel name edit refetching on every keystroke |
@@ -102,17 +116,3 @@ The plugin uses the following URL parameters for state management:
 | v2.17.0 | [#244](https://github.com/opensearch-project/dashboards-notifications/pull/244) | Persist dataSourceId across applications |
 | v2.14.0 | [#186](https://github.com/opensearch-project/dashboards-notifications/pull/186) | Added MDS Support |
 | v2.15.0 | [#205](https://github.com/opensearch-project/dashboards-notifications/pull/205) | Bug fixes for MDS in getServerFeatures API |
-
-## References
-
-- [OpenSearch Notifications Documentation](https://docs.opensearch.org/latest/observing-your-data/notifications/index/)
-- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
-- [notifications Repository](https://github.com/opensearch-project/notifications)
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Fixed channel name edit UX regression - prevented unnecessary API refetching on every keystroke when editing channel names
-- **v2.18.0** (2024-11-05): Fit & Finish UX improvements - standardized semantic headers (H1/H2/H3), consistent text sizes, smaller context menus, 16px content-to-header spacing, full-width content sections, separated table filters, added default pill to encryption method dropdown. Also fixed default data source selection and typo in recipient groups UI.
-- **v2.17.0** (2024-09-17): Changed navigation parent item name to "Notification channels", added description for left navigation, fixed link checker CI, added dataSourceId persistence for new navigation
-- **v2.15.0**: Bug fixes for MDS support in getServerFeatures API
-- **v2.14.0**: Added Multi-Data-Source (MDS) support

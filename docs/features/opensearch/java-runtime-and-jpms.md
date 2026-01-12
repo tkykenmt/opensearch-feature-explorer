@@ -125,8 +125,22 @@ JDK 21 provides stable `MemorySegment` API for memory-mapped files:
 - **JPMS not fully enabled**: Module descriptors (`module-info.java`) not yet added
 - **Reflection restrictions**: Future JPMS enforcement may restrict reflective access
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): JDK 21 minimum requirement, JPMS Phase 0 split package elimination
+- **v2.4.0** (2022-11-15): Added JDK 19 preview API support for memory mapping
+- **v1.3.0** (2022-03-17): Introduced `OPENSEARCH_JAVA_HOME` environment variable, downgraded bundled JDK to 11 LTS
+- **v1.0.0** (2021-07-12): Initial release with JDK 15 bundled, JDK 11 minimum
+
+## References
+
+### Documentation
+- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
+
+### Blog Posts
+- [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17153](https://github.com/opensearch-project/OpenSearch/pull/17153) | Refactor codebase for JPMS support |
@@ -138,17 +152,7 @@ JDK 21 provides stable `MemorySegment` API for memory-mapped files:
 | v3.0.0 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | Custom Gradle plugin for Java agent (SecurityManager replacement) |
 | v2.4.0 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Enable JDK 19 preview APIs for mmap |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): META - Split and modularize the server monolith
 - [Issue #1588](https://github.com/opensearch-project/OpenSearch/issues/1588): JPMS support tracking
 - [Issue #5910](https://github.com/opensearch-project/OpenSearch/issues/5910): Modularization discussion
-- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
-- [Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using different Java runtimes
-
-## Change History
-
-- **v3.0.0** (2025-05-06): JDK 21 minimum requirement, JPMS Phase 0 split package elimination
-- **v2.4.0** (2022-11-15): Added JDK 19 preview API support for memory mapping
-- **v1.3.0** (2022-03-17): Introduced `OPENSEARCH_JAVA_HOME` environment variable, downgraded bundled JDK to 11 LTS
-- **v1.0.0** (2021-07-12): Initial release with JDK 15 bundled, JDK 11 minimum

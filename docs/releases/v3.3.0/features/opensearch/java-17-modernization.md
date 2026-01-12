@@ -156,18 +156,20 @@ For plugin developers:
 - Pattern matching switch expressions require Java 17 or later
 - The `ignored` pattern variable is used for cases where the matched value is not needed
 
-## Related PRs
+## References
 
+### Documentation
+- [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
+- [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch (Final)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18965](https://github.com/opensearch-project/OpenSearch/pull/18965) | Refactor if-else chains to use Java 17 pattern matching switch expressions |
 | [#19163](https://github.com/opensearch-project/OpenSearch/pull/19163) | Remove cap on Java version used by forbidden APIs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17874](https://github.com/opensearch-project/OpenSearch/issues/17874): Feature request for Java 17 pattern matching
-- [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
-- [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch (Final)
 
 ## Related Feature Report
 

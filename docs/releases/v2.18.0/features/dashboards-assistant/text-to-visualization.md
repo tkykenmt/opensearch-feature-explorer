@@ -132,19 +132,21 @@ To enable text to visualization:
 - Currently only supports Vega-Lite visualization type
 - Requires LLM model (e.g., Claude) to be configured via connector
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/text-to-visualization/): Official text to visualization docs
+- [ML Commons Agents](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/): Agent configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#264](https://github.com/opensearch-project/dashboards-assistant/pull/264) | Add new feature to support text to visualization |
 | [#295](https://github.com/opensearch-project/dashboards-assistant/pull/295) | Add discovery summary API |
 | [#349](https://github.com/opensearch-project/dashboards-assistant/pull/349) | Take index pattern and user input to t2viz from discover |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #294](https://github.com/opensearch-project/dashboards-assistant/issues/294): Feature request for data summary API
-- [Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/text-to-visualization/): Official text to visualization docs
-- [ML Commons Agents](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/): Agent configuration guide
 
 ## Related Feature Report
 

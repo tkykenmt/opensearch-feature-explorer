@@ -81,19 +81,14 @@ The dataset selector component in the Explore feature received visual improvemen
 - The UI settings client fix only addresses the public (browser-side) client; server-side behavior remains unchanged
 - Dataset selector visual changes are specific to the Explore feature
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927): UI settings client robustness fix
+- [PR #10344](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10344): Dataset selector UI update
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927) | Make UI setting client more robust when the setting key does not exist |
 | [#10344](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10344) | UI update for dataset select |
-
-## References
-
-- [PR #9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927): UI settings client robustness fix
-- [PR #10344](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10344): Dataset selector UI update
-
-## Related Feature Reports
-
-- [Discover](../../../features/opensearch-dashboards/discover.md): Dataset selector is part of the Discover/Explore feature
-- [Dashboards UI/UX Fixes](../../../features/opensearch-dashboards/dashboards-ui-ux-fixes.md): Related UI improvements

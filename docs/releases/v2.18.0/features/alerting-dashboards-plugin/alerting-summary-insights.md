@@ -124,18 +124,20 @@ To enable alert insights:
 - LLM model must be configured and deployed
 - Context size limited to top 10 active alerts to manage token usage
 
-## Related PRs
+## References
 
+### Documentation
+- [Alert Insights Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/alert-insight/): Official documentation
+- [Flow Framework Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates): Agent templates
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#996](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/996) | Context aware alert analysis |
 | [#1119](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1119) | Support top N log pattern data in summary context provider |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #995](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/995): Feature request for context-aware alert analysis
-- [Alert Insights Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/alert-insight/): Official documentation
-- [Flow Framework Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates): Agent templates
 
 ## Related Feature Report
 

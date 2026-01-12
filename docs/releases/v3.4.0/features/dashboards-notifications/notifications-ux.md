@@ -60,17 +60,17 @@ After this fix, users can edit channel names normally:
 - This fix is specific to the channel name field editing flow
 - Other fields in the edit form were not affected by this bug
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Notifications Documentation](https://docs.opensearch.org/latest/observing-your-data/notifications/index/)
+- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#393](https://github.com/opensearch-project/dashboards-notifications/pull/393) | Avoid refetching channel config on every keystroke for name update |
 | [#257](https://github.com/opensearch-project/dashboards-notifications/pull/257) | Edit page changes as per new page header (introduced the regression) |
-
-## References
-
-- [OpenSearch Notifications Documentation](https://docs.opensearch.org/latest/observing-your-data/notifications/index/)
-- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
 
 ## Related Feature Report
 

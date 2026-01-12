@@ -119,8 +119,19 @@ Each batch returns a separate JSON response:
 - Requires HTTP/2 or HTTP/1.1 with chunked transfer encoding
 - Default HTTP transport (`netty4`) does not support streaming
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-15): Fix HTTP/2 communication when reactor-netty-secure is enabled
+- **v2.18.0** (2024-11-05): Bug fixes for request hangs and newline termination errors
+- **v2.17.0** (2024-09-17): Initial release of Streaming Bulk API
+- **v2.15.0** (2024-06-25): RestAction streaming support foundation
+
+## References
+
+### Documentation
+- [Streaming Bulk API Documentation](https://docs.opensearch.org/latest/api-reference/document-apis/bulk-streaming/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18599](https://github.com/opensearch-project/OpenSearch/pull/18599) | Fix HTTP/2 communication when reactor-netty is enabled |
@@ -129,16 +140,7 @@ Each batch returns a separate JSON response:
 | v2.17.0 | [#15381](https://github.com/opensearch-project/OpenSearch/pull/15381) | Introduce bulk HTTP API streaming flavor |
 | v2.15.0 | [#13772](https://github.com/opensearch-project/OpenSearch/pull/13772) | Enhance RestAction with request/response streaming support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9065](https://github.com/opensearch-project/OpenSearch/issues/9065): Streaming Bulk API tracking issue
 - [Issue #9070](https://github.com/opensearch-project/OpenSearch/issues/9070): Bulk HTTP API streaming flavor
 - [Issue #9071](https://github.com/opensearch-project/OpenSearch/issues/9071): RestAction streaming support
-- [Streaming Bulk API Documentation](https://docs.opensearch.org/latest/api-reference/document-apis/bulk-streaming/)
-
-## Change History
-
-- **v3.2.0** (2025-07-15): Fix HTTP/2 communication when reactor-netty-secure is enabled
-- **v2.18.0** (2024-11-05): Bug fixes for request hangs and newline termination errors
-- **v2.17.0** (2024-09-17): Initial release of Streaming Bulk API
-- **v2.15.0** (2024-06-25): RestAction streaming support foundation

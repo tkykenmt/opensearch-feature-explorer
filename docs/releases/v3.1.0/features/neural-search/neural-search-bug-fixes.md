@@ -97,8 +97,13 @@ Fixed score values showing as `null` for single shard indices when sorting by no
 - Multi-node integration tests for radial search require manual verification (automated multi-node test CI in progress)
 - Stats API BWC fix is a workaround; full fix requires OpenSearch core changes for enum reading
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
+- [Neural Query DSL](https://docs.opensearch.org/3.0/query-dsl/specialized/neural/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1277](https://github.com/opensearch-project/neural-search/pull/1277) | Fix score value as null for single shard when sorting |
@@ -109,14 +114,11 @@ Fixed score values showing as `null` for single shard indices when sorting by no
 | [#1393](https://github.com/opensearch-project/neural-search/pull/1393) | Fix neural radial search serialization in multi-node clusters |
 | [#1396](https://github.com/opensearch-project/neural-search/pull/1396) | Fix bugs for neural query with semantic field using sparse model |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1108](https://github.com/opensearch-project/neural-search/issues/1108): Nested hybrid query bug report
 - [Issue #1274](https://github.com/opensearch-project/neural-search/issues/1274): Hybrid search with sort corrupts scores
 - [Issue #1368](https://github.com/opensearch-project/neural-search/issues/1368): Stats BWC test failure
 - [Issue #1392](https://github.com/opensearch-project/neural-search/issues/1392): Neural query with min_score/max_distance fails on 3.0
-- [Neural Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
-- [Neural Query DSL](https://docs.opensearch.org/3.0/query-dsl/specialized/neural/)
 
 ## Related Feature Report
 

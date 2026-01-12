@@ -102,18 +102,20 @@ PUT my-knn-index
 - Old KNN80DocValuesFormat must be maintained until next major release
 - Search interface migration to codec search interface is planned for future releases
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1945](https://github.com/opensearch-project/k-NN/pull/1945) | Integrate Lucene Vector field with native engines |
 | [#1939](https://github.com/opensearch-project/k-NN/pull/1939) | Restructure mappers (dependency) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1853](https://github.com/opensearch-project/k-NN/issues/1853): RFC - Integrating KNNVectorsFormat in Native Vector Search Engine
 - [Issue #1087](https://github.com/opensearch-project/k-NN/issues/1087): Original investigation
-- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/)
 
 ## Related Feature Report
 

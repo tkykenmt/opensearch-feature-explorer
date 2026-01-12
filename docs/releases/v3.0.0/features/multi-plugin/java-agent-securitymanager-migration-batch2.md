@@ -103,8 +103,15 @@ java {
 - **SecurityManager Removal**: Any code relying on SecurityManager permissions must be refactored
 - **Plugin Dependencies**: Plugins depending on other plugins must ensure all dependencies are also migrated
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Core SecurityManager replacement implementation
+- [PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Custom Gradle plugin for Java Agent
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#156](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/156) | learning | Support phasing off SecurityManager usage in favor of Java Agent |
@@ -118,14 +125,9 @@ java {
 | [#3551](https://github.com/opensearch-project/security/pull/3551) | security | Using java-agent gradle plugin to phase off Security Manager |
 | [#3539](https://github.com/opensearch-project/sql/pull/3539) | sql | Fix build due to phasing off SecurityManager usage |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17658](https://github.com/opensearch-project/OpenSearch/issues/17658): META - Security Manager Replacement with Java Agent
 - [Issue #17662](https://github.com/opensearch-project/OpenSearch/issues/17662): Phase off SecurityManager usage in favor of Java Agent
-- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Core SecurityManager replacement implementation
-- [PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Custom Gradle plugin for Java Agent
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
 
 ## Related Feature Report
 

@@ -110,19 +110,21 @@ The verification process:
 - Signature verification requires network access to download signature files
 - Custom plugins from untrusted sources bypass signature verification
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Added support for copying directories to plugin config folder during installation
+- **v3.1.0** (2026-01-10): Fixed signature verification failure caused by PGP public key change; added BouncyCastle FIPS provider initialization
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Installing plugins
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19343](https://github.com/opensearch-project/OpenSearch/pull/19343) | Allow plugins to copy folders into their config dir during installation |
 | v3.1.0 | [#18147](https://github.com/opensearch-project/OpenSearch/pull/18147) | Fix native plugin installation error caused by PGP public key change |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5308](https://github.com/opensearch-project/opensearch-build/issues/5308): New PGP key for signing artifacts starting 3.0.0
-- [Documentation](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Installing plugins
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Added support for copying directories to plugin config folder during installation
-- **v3.1.0** (2026-01-10): Fixed signature verification failure caused by PGP public key change; added BouncyCastle FIPS provider initialization

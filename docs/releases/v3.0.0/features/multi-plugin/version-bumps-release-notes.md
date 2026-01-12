@@ -59,8 +59,9 @@ Typical files modified in version bump PRs:
 - Version bump PRs are routine maintenance and do not introduce functional changes
 - Release notes content depends on features merged before the cutoff date
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1843](https://github.com/opensearch-project/alerting/pull/1843) | alerting | Added 3.0 release notes |
@@ -79,8 +80,7 @@ Typical files modified in version bump PRs:
 | [#1283](https://github.com/opensearch-project/security/pull/1283) | security | Added 3.0.0 release notes |
 | [#3589](https://github.com/opensearch-project/sql/pull/3589) | sql | Remove beta1 qualifier |
 
-## References
-
+### Issues (Design / RFC)
 - [opensearch-build#5267](https://github.com/opensearch-project/opensearch-build/issues/5267): Release coordination issue
 - [opensearch-build#3747](https://github.com/opensearch-project/opensearch-build/issues/3747): Build configuration issue
 

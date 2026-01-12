@@ -163,8 +163,19 @@ GET /products-vectors/_search
 - Memory circuit breaker may reject queries under high load
 - Exact search performance degrades with large document counts
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements
+
+## References
+
+### Documentation
+- [k-NN Search Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/index/): Official k-NN plugin documentation
+- [k-NN Performance Tuning](https://docs.opensearch.org/2.18/search-plugins/knn/performance-tuning/): Performance optimization guide
+- [k-NN Index Configuration](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/): Index settings and mappings
+- [k-NN Vector Quantization](https://docs.opensearch.org/2.18/search-plugins/knn/knn-vector-quantization/): Quantization options
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#2221](https://github.com/opensearch-project/k-NN/pull/2221) | Update default engine to FAISS |
@@ -180,15 +191,6 @@ GET /products-vectors/_search
 | v2.18.0 | [#2147](https://github.com/opensearch-project/k-NN/pull/2147) | KNN80DocValues fix |
 | v2.18.0 | [#2183](https://github.com/opensearch-project/k-NN/pull/2183) | Binary quantized vector score fix |
 
-## References
-
-- [k-NN Search Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/index/): Official k-NN plugin documentation
-- [k-NN Performance Tuning](https://docs.opensearch.org/2.18/search-plugins/knn/performance-tuning/): Performance optimization guide
-- [k-NN Index Configuration](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/): Index settings and mappings
-- [k-NN Vector Quantization](https://docs.opensearch.org/2.18/search-plugins/knn/knn-vector-quantization/): Quantization options
+### Issues (Design / RFC)
 - [Issue #1885](https://github.com/opensearch-project/k-NN/issues/1885): Memory release improvements
 - [Issue #2163](https://github.com/opensearch-project/k-NN/issues/2163): Default engine change
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements

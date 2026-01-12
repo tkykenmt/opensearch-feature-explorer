@@ -86,18 +86,20 @@ Numeric fields and timestamps use primitive writes internally, which now benefit
 - Performance improvement varies based on workload (more benefit for numeric-heavy indices)
 - Only affects primitive write methods; byte array writes were already optimized
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-28): Added delegation for `writeInt`, `writeShort`, `writeLong` methods to improve BKD merge performance
+
+## References
+
+### Documentation
+- [Lucene PR #321](https://github.com/apache/lucene/pull/321): Lucene optimization for primitive writes
+- [ByteSizeCachingDirectory.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/store/ByteSizeCachingDirectory.java): Source code
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19432](https://github.com/opensearch-project/OpenSearch/pull/19432) | Delegate primitive write methods with ByteSizeCachingDirectory wrapped IndexOutput |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19420](https://github.com/opensearch-project/OpenSearch/issues/19420): Original bug report
-- [Lucene PR #321](https://github.com/apache/lucene/pull/321): Lucene optimization for primitive writes
-- [ByteSizeCachingDirectory.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/store/ByteSizeCachingDirectory.java): Source code
-
-## Change History
-
-- **v3.3.0** (2025-09-28): Added delegation for `writeInt`, `writeShort`, `writeLong` methods to improve BKD merge performance

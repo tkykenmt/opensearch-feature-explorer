@@ -92,18 +92,18 @@ When a user lacks permission, the wrapper throws a forbidden error:
 - The wrapper must expose all saved object client functions to avoid runtime errors
 - Permission settings are cluster-wide, not per-data-source
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8118](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8118) | Fix missing functions in client wrapper |
+- **v2.18.0** (2024-11-05): Fixed missing saved object client functions in permission wrapper
 
 ## References
 
+### Documentation
 - [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official documentation
 - [Data Source Permissions](https://docs.opensearch.org/2.18/security/access-control/permissions/#data-source-permissions): Permission configuration
 - [Multiple Data Sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Configuring multiple data sources
 
-## Change History
-
-- **v2.18.0** (2024-11-05): Fixed missing saved object client functions in permission wrapper
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#8118](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8118) | Fix missing functions in client wrapper |

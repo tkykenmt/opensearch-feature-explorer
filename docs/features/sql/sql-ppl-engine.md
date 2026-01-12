@@ -221,8 +221,27 @@ POST /_plugins/_ppl
 |----------|--------|-------------|
 | `distinct_count_approx` | `distinct_count_approx(field)` | Approximate cardinality using HyperLogLog++ |
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Bug fixes including critical memory exhaustion fix for multiple filter operations, race condition fix in concurrent queries, rex command nested capture group extraction fix, filter pushdown redundant query fix, CVE-2025-48924 security fix
+- **v3.3.0** (2026-01): Bug fixes including count overflow handling (integer to bigint), decimal precision fixes (MOD function, negative scale), nested field aggregation ClassCastException fix, IndexNotFoundException for missing patterns, legacy JDBC type mapping
+- **v3.1.0** (2025-07-15): New functions - JSON manipulation (json, json_valid, json_object, json_array, json_extract, json_delete, json_set, json_append, json_extend, json_keys), lambda/array functions (array, array_length, forall, exists, filter, transform, reduce), cryptographic hashes (md5, sha1, sha2), time conditions (earliest, latest), approximate distinct count (distinct_count_approx); Bug fixes - long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling improvements, Calcite engine stability; Enhancements - match_only_text field type support, object field merging across indices; Breaking change - percentile function switched to MergingDigest algorithm
+- **v3.0.0** (2025-05-06): Major update - Apache Calcite integration (V3 engine), new PPL commands (lookup, join, subsearch), json functions, improved patterns command with Brain algorithm, comment support, function framework refactoring; breaking changes include removal of SparkSQL, DELETE statement, DSL format, scroll API, and opendistro settings
+- **v2.17.0** (2024-09-17): Enhancements - increased default query size limit (200 → 10000), common geo point format support, TakeOrderedOperator for query optimization, complex predicate support in PPL IF function; Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes
+
+## References
+
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
+- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
+- [PPL Commands](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL command reference
+- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
+
+### Blog Posts
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Fix: Add hashCode() and equals() to ExprJavaType value class |
@@ -276,20 +295,3 @@ POST /_plugins/_ppl
 | v3.0.0 | [#3345](https://github.com/opensearch-project/sql/pull/3345) | Unified OpenSearch PPL Data Type |
 | v3.0.0 | [#3346](https://github.com/opensearch-project/sql/pull/3346) | Deprecate scroll API usage |
 | v3.0.0 | [#3367](https://github.com/opensearch-project/sql/pull/3367) | Deprecate OpenSearch DSL format |
-
-## References
-
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
-- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
-- [PPL Commands](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL command reference
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands
-- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
-
-## Change History
-
-- **v3.4.0** (2026-01): Bug fixes including critical memory exhaustion fix for multiple filter operations, race condition fix in concurrent queries, rex command nested capture group extraction fix, filter pushdown redundant query fix, CVE-2025-48924 security fix
-- **v3.3.0** (2026-01): Bug fixes including count overflow handling (integer to bigint), decimal precision fixes (MOD function, negative scale), nested field aggregation ClassCastException fix, IndexNotFoundException for missing patterns, legacy JDBC type mapping
-- **v3.1.0** (2025-07-15): New functions - JSON manipulation (json, json_valid, json_object, json_array, json_extract, json_delete, json_set, json_append, json_extend, json_keys), lambda/array functions (array, array_length, forall, exists, filter, transform, reduce), cryptographic hashes (md5, sha1, sha2), time conditions (earliest, latest), approximate distinct count (distinct_count_approx); Bug fixes - long IN-list crash, function fixes (ATAN, CONV, UNIX_TIMESTAMP), field handling improvements, Calcite engine stability; Enhancements - match_only_text field type support, object field merging across indices; Breaking change - percentile function switched to MergingDigest algorithm
-- **v3.0.0** (2025-05-06): Major update - Apache Calcite integration (V3 engine), new PPL commands (lookup, join, subsearch), json functions, improved patterns command with Brain algorithm, comment support, function framework refactoring; breaking changes include removal of SparkSQL, DELETE statement, DSL format, scroll API, and opendistro settings
-- **v2.17.0** (2024-09-17): Enhancements - increased default query size limit (200 → 10000), common geo point format support, TakeOrderedOperator for query optimization, complex predicate support in PPL IF function; Bugfixes - PPL boolean function case insensitivity, UDF function restrictions, SqlBaseParser build fix, Spark execution engine config deserialization fix, job type handling fixes

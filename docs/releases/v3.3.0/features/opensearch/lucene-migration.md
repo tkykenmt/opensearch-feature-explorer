@@ -89,15 +89,15 @@ This is an internal code change with no user-facing impact. No migration steps a
 - No functional changes to automaton behavior
 - No configuration changes required
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache Lucene Operations API](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/util/automaton/Operations.html): Lucene automaton operations documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19397](https://github.com/opensearch-project/OpenSearch/pull/19397) | Migrate deprecated usages of Operations#union |
-
-## References
-
-- [Apache Lucene Operations API](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/util/automaton/Operations.html): Lucene automaton operations documentation
 
 ## Related Feature Report
 

@@ -87,8 +87,12 @@ The following classes were removed from JaCoCo exclusions as they now have test 
 - The integration test fix is specific to the ML Commons test infrastructure
 - Memory container tests focus on unit testing; integration tests are planned for future releases
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/): Official ML Commons docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3883](https://github.com/opensearch-project/ml-commons/pull/3883) | SearchIndexTool arguments parsing logic improvement |
@@ -96,11 +100,9 @@ The following classes were removed from JaCoCo exclusions as they now have test 
 | [#4056](https://github.com/opensearch-project/ml-commons/pull/4056) | Unit tests for create and get memory container |
 | [#4057](https://github.com/opensearch-project/ml-commons/pull/4057) | Additional unit tests and JaCoCo upgrade |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2560](https://github.com/opensearch-project/ml-commons/issues/2560): Related to master key consistency
 - [Issue #3834](https://github.com/opensearch-project/ml-commons/issues/3834): MCP tool schema alignment
-- [ML Commons Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/): Official ML Commons docs
 
 ## Related Feature Report
 

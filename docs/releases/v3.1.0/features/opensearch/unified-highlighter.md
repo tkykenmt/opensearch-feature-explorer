@@ -153,17 +153,19 @@ The response highlights both "running" (matched via stemming in `content.english
 - The unified highlighter still does not support span queries (same as before)
 - Performance may vary compared to FVH depending on field size and offset source
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation PR #9793](https://github.com/opensearch-project/documentation-website/pull/9793): Documentation update
+- [Highlight Query Matches](https://docs.opensearch.org/3.0/search-plugins/searching-data/highlight/): Official highlighting documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18166](https://github.com/opensearch-project/OpenSearch/pull/18166) | Add support for matched_fields with the unified highlighter |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18164](https://github.com/opensearch-project/OpenSearch/issues/18164): Feature request for matched_fields support
-- [Documentation PR #9793](https://github.com/opensearch-project/documentation-website/pull/9793): Documentation update
-- [Highlight Query Matches](https://docs.opensearch.org/3.0/search-plugins/searching-data/highlight/): Official highlighting documentation
 
 ## Related Feature Report
 

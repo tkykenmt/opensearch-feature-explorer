@@ -121,19 +121,21 @@ DELETE _index_template/logs-base
 - Legacy (v1) index templates don't support the `priority` field
 - Data stream templates require the `data_stream` object to be present
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-12-09): Fixed bug preventing deletion of unused index templates that match data stream patterns but have lower priority than the active template
+
+## References
+
+### Documentation
+- [Data Streams Documentation](https://docs.opensearch.org/3.0/im-plugin/data-streams/): Official documentation
+- [Index Templates Documentation](https://docs.opensearch.org/3.0/im-plugin/index-templates/): Template configuration guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#20102](https://github.com/opensearch-project/OpenSearch/pull/20102) | Fix deletion of unused templates matching data streams |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #20078](https://github.com/opensearch-project/OpenSearch/issues/20078): Bug report for template deletion failure
 - [Issue #9194](https://github.com/opensearch-project/OpenSearch/issues/9194): Earlier related fix
-- [Data Streams Documentation](https://docs.opensearch.org/3.0/im-plugin/data-streams/): Official documentation
-- [Index Templates Documentation](https://docs.opensearch.org/3.0/im-plugin/index-templates/): Template configuration guide
-
-## Change History
-
-- **v3.4.0** (2025-12-09): Fixed bug preventing deletion of unused index templates that match data stream patterns but have lower priority than the active template

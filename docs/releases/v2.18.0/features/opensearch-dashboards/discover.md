@@ -118,8 +118,13 @@ To use the data summary feature:
 - Summary feature only works with PPL queries when query assist is enabled
 - Cache refresh clears all dataset caches, not individual ones
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/): Official docs
+- [Analyzing Data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8186](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8186) | Add data summary panel in discover |
@@ -139,12 +144,9 @@ To use the data summary feature:
 | [#8347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8347) | Prevent too many queries sent from dataset selector |
 | [#8368](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8368) | Data.search() should not ignore strategy parameter |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8177](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8177): Feature request for LLM data summary
 - [Issue #7626](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7626): Discover hang bug report
-- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/): Official docs
-- [Analyzing Data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official docs
 
 ## Related Feature Report
 

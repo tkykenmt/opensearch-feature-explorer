@@ -160,8 +160,13 @@ PUT _wlm/query_group
 - Only users with administrator-level permissions can create and update query groups
 - Feature requires installing the `workload-management` plugin
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Query Group Lifecycle API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/query-group-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15651](https://github.com/opensearch-project/OpenSearch/pull/15651) | Add cancellation framework changes in WLM |
@@ -172,11 +177,8 @@ PUT _wlm/query_group
 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | Improve rejection logic for WLM |
 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | WLM create/update REST API bug fix |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #12342](https://github.com/opensearch-project/OpenSearch/issues/12342): Search Query Sandboxing: User Experience
-- [Workload Management Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Query Group Lifecycle API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/workload-management/query-group-lifecycle-api/)
 
 ## Related Feature Report
 

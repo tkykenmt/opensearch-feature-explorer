@@ -185,16 +185,18 @@ Response includes scores for each named query:
 - Named queries in rescore are only supported in OpenSearch 3.2.0 and above
 - The feature works with the standard query rescorer; custom rescorers need to implement `getParsedQueries()` method
 
-## Related PRs
+## References
 
+### Documentation
+- [Highlight query matches](https://docs.opensearch.org/3.2/search-plugins/searching-data/highlight/): Documentation on using rescore with highlighting
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18697](https://github.com/opensearch-project/OpenSearch/pull/18697) | Include named queries from rescore contexts in matched_queries array |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18665](https://github.com/opensearch-project/OpenSearch/issues/18665): Feature request for surfacing named rescore queries
-- [Highlight query matches](https://docs.opensearch.org/3.2/search-plugins/searching-data/highlight/): Documentation on using rescore with highlighting
 
 ## Related Feature Report
 

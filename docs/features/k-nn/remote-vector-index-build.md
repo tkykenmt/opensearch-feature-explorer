@@ -192,8 +192,24 @@ POST my-vectors/_bulk
 - **Network**: Requires connectivity between OpenSearch, S3, and build service
 - **Size Bounds**: Segments exceeding `knn.remote_index_build.size.max` fall back to CPU build
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-06-27): Improved error handling - don't fall back to CPU on terminal failures (e.g., IndexInput closed, index deleted). Added `TerminalIOException` to distinguish recoverable vs terminal I/O errors.
+- **v3.1.0** (2025-06-16): GA preparation with tuned buffer sizes (50MB vector upload/download, 8KB doc ID), new segment size upper bound setting (`knn.remote_index_build.size.max`), renamed settings for production use, fixed metrics timing for CPU fallback, improved exception logging
+- **v3.1.0** (2025-05-13): Added comprehensive integration test support with `@ExpectRemoteBuildValidation` annotation, updated GitHub Actions workflow to use official Docker image and run all ITs, fixed MockNode constructor compatibility
+- **v3.0.0** (2025-05-06): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Official OpenSearch docs
+- [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): GPU build service
+- [User Guide](https://github.com/opensearch-project/remote-vector-index-builder/blob/main/USER_GUIDE.md): Service setup instructions
+
+### Blog Posts
+- [GPU Acceleration Blog](https://opensearch.org/blog/GPU-Accelerated-Vector-Search-OpenSearch-New-Frontier/): Performance benchmarks
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#2773](https://github.com/opensearch-project/k-NN/pull/2773) | Don't fall back to CPU on terminal failures |
@@ -208,20 +224,8 @@ POST my-vectors/_bulk
 | v3.0.0 | [#2615](https://github.com/opensearch-project/k-NN/pull/2615) | Metric collection for monitoring |
 | v3.0.0 | [#2627](https://github.com/opensearch-project/k-NN/pull/2627) | COSINESIMIL space type fix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2391](https://github.com/opensearch-project/k-NN/issues/2391): Meta issue tracking all remote build work
 - [Issue #2518](https://github.com/opensearch-project/k-NN/issues/2518): Low-level design document
 - [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Integration testing support meta issue
 - [Issue #2766](https://github.com/opensearch-project/k-NN/issues/2766): Bug report - Terminate Index build request if Failed to write index in segment
-- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Official OpenSearch docs
-- [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): GPU build service
-- [User Guide](https://github.com/opensearch-project/remote-vector-index-builder/blob/main/USER_GUIDE.md): Service setup instructions
-- [GPU Acceleration Blog](https://opensearch.org/blog/GPU-Accelerated-Vector-Search-OpenSearch-New-Frontier/): Performance benchmarks
-
-## Change History
-
-- **v3.2.0** (2025-06-27): Improved error handling - don't fall back to CPU on terminal failures (e.g., IndexInput closed, index deleted). Added `TerminalIOException` to distinguish recoverable vs terminal I/O errors.
-- **v3.1.0** (2025-06-16): GA preparation with tuned buffer sizes (50MB vector upload/download, 8KB doc ID), new segment size upper bound setting (`knn.remote_index_build.size.max`), renamed settings for production use, fixed metrics timing for CPU fallback, improved exception logging
-- **v3.1.0** (2025-05-13): Added comprehensive integration test support with `@ExpectRemoteBuildValidation` annotation, updated GitHub Actions workflow to use official Docker image and run all ITs, fixed MockNode constructor compatibility
-- **v3.0.0** (2025-05-06): Initial experimental implementation with HTTP client, S3 repository integration, metrics, and COSINESIMIL support

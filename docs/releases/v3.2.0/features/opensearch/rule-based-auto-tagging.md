@@ -126,16 +126,16 @@ GET _rules/workload_group?index_pattern=logs*&invalid_param=ignored
 - Force refresh may have minor performance impact on high-frequency rule creation
 - Whitelist approach requires attribute registry to be properly configured for each feature type
 
-## Related PRs
+## References
 
+### Documentation
+- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
+- [Rules API Documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18726](https://github.com/opensearch-project/OpenSearch/pull/18726) | Bug fix and improvements for rule-based auto tagging |
-
-## References
-
-- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
-- [Rules API Documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ## Related Feature Report
 

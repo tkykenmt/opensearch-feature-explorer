@@ -126,17 +126,19 @@ flowchart TB
 - Cache is invalidated on every cluster state version change
 - Only applies to nodes running OpenSearch 2.9.0 or later (older nodes use uncompressed validation)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-30): Fixed cluster state caching to use both cluster state version and node version as cache keys, resolving join failures in mixed-version clusters
+
+## References
+
+### Documentation
+- [JoinHelper.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/coordination/JoinHelper.java): Source implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19307](https://github.com/opensearch-project/OpenSearch/pull/19307) | Fix: Cache serialised cluster state based on cluster state version and node version |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19272](https://github.com/opensearch-project/OpenSearch/issues/19272): [BUG] Join Failure - Mixed Version cluster
-- [JoinHelper.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/coordination/JoinHelper.java): Source implementation
-
-## Change History
-
-- **v3.3.0** (2025-09-30): Fixed cluster state caching to use both cluster state version and node version as cache keys, resolving join failures in mixed-version clusters

@@ -91,17 +91,17 @@ The plugin will automatically integrate with the CryptoHandlerRegistry when Open
 - Requires proper AWS credentials configuration
 - Network access to AWS KMS endpoints required
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-10): Fixed plugin loading by decoupling CryptoPlugin and CryptoKeyProviderPlugin initialization; upgraded AWS SDK v2.x dependencies to fix NoClassDefFoundError
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#18270](https://github.com/opensearch-project/OpenSearch/pull/18270) | Decouple CryptoPlugin and KeyProvider initialization |
 | v3.1.0 | [#18268](https://github.com/opensearch-project/OpenSearch/pull/18268) | Upgrade dependencies for AWS SDK v2.x |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12472](https://github.com/opensearch-project/OpenSearch/issues/12472): Feature request to decouple CryptoPlugin and CryptoKeyProviderPlugin
-
-## Change History
-
-- **v3.1.0** (2026-01-10): Fixed plugin loading by decoupling CryptoPlugin and CryptoKeyProviderPlugin initialization; upgraded AWS SDK v2.x dependencies to fix NoClassDefFoundError

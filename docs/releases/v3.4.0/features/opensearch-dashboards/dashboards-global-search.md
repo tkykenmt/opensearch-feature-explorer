@@ -157,14 +157,14 @@ chrome.globalSearch.registerSearchCommand({
 - Action commands receive only the search query text, not page context
 - The `@` prefix is required to search assets; default search only queries pages
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10789](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10789) | Add assets search command and enhance search commands |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10741](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10741): RFC - Global Search Enhancements for New Home
 
 ## Related Feature Report

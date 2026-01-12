@@ -94,8 +94,12 @@ plugins:
 - Datastream audit logs require OpenSearch 2.18.0+ on all nodes
 - JWT authentication in MultipleAuthentication requires proper configuration of all auth backends
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Audit Log Storage Types](https://docs.opensearch.org/2.18/security/audit-logs/storage-types/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4756](https://github.com/opensearch-project/security/pull/4756) | Support datastreams as an AuditLog Sink |
@@ -109,15 +113,13 @@ plugins:
 | [#4754](https://github.com/opensearch-project/security/pull/4754) | Fix rolesMappingConfiguration in tests |
 | [#4726](https://github.com/opensearch-project/security/pull/4726) | Fix SSL exception handler in OpenSearchSecureSettingsFactory |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4493](https://github.com/opensearch-project/security/issues/4493): V6/V7 configuration consolidation proposal
 - [Issue #4687](https://github.com/opensearch-project/security/issues/4687): Circuit breaker issue with security APIs
 - [Issue #4601](https://github.com/opensearch-project/security/issues/4601): Certificate error message improvement
 - [Issue #3745](https://github.com/opensearch-project/security/issues/3745): Datastream support for audit logs
 - [Issue #4494](https://github.com/opensearch-project/security/issues/4494): Header serialization issue during upgrades
 - [Issue #4670](https://github.com/opensearch-project/security/issues/4670): Rolling upgrade serialization issue
-- [Documentation: Audit Log Storage Types](https://docs.opensearch.org/2.18/security/audit-logs/storage-types/)
 
 ## Related Feature Report
 

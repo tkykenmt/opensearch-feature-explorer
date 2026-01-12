@@ -50,18 +50,18 @@ The update introduces the `preserveTabContent` prop to `EuiTabbedContent` compon
 - OUI updates may require snapshot test updates in plugins using affected components
 - The `preserveTabContent` prop defaults to `false`, maintaining backward compatibility
 
-## Related PRs
+## References
 
+### Documentation
+- [OUI 1.20.0 Release](https://github.com/opensearch-project/oui/releases/tag/1.20.0): OUI version 1.20 release notes
+- [OUI 1.21.0 Release](https://github.com/opensearch-project/oui/releases/tag/1.21.0): OUI version 1.21 release notes
+- [OUI Repository](https://github.com/opensearch-project/oui): OpenSearch UI component library
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10153](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10153) | Update oui to 1.20 |
 | [#10284](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10284) | Update oui to 1.21 |
-
-## References
-
-- [OUI 1.20.0 Release](https://github.com/opensearch-project/oui/releases/tag/1.20.0): OUI version 1.20 release notes
-- [OUI 1.21.0 Release](https://github.com/opensearch-project/oui/releases/tag/1.21.0): OUI version 1.21 release notes
-- [OUI Repository](https://github.com/opensearch-project/oui): OpenSearch UI component library
 
 ## Related Feature Report
 

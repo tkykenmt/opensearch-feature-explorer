@@ -104,18 +104,20 @@ PUT /my-index/_settings
 - **No cluster state updates**: `submitStateUpdateTasks` throws `UnsupportedOperationException` in clusterless mode
 - **Limited discovery**: Only the local node is discoverable in clusterless mode
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote-backed storage documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/remote-store/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18479](https://github.com/opensearch-project/OpenSearch/pull/18479) | Start in "clusterless" mode if a clusterless ClusterPlugin is loaded |
 | [#18857](https://github.com/opensearch-project/OpenSearch/pull/18857) | Add support for custom remote store segment path prefix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17957](https://github.com/opensearch-project/OpenSearch/issues/17957): RFC - Cloud-native OpenSearch
 - [Issue #18750](https://github.com/opensearch-project/OpenSearch/issues/18750): Feature request for custom remote store path component
-- [Remote-backed storage documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/remote-store/index/)
 
 ## Related Feature Report
 

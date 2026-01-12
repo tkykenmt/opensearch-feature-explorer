@@ -112,14 +112,14 @@ PUT /my-logs-index
 - Search idle is disabled for context-aware indices to ensure periodic sync between child and parent IndexWriters
 - Blocking refresh is always used when context aware is enabled
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19098](https://github.com/opensearch-project/OpenSearch/pull/19098) | Add support for context aware segments |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19530](https://github.com/opensearch-project/OpenSearch/issues/19530): LLD for Context Aware Segments
 - [RFC #18576](https://github.com/opensearch-project/OpenSearch/issues/18576): Context Aware Segments RFC
 

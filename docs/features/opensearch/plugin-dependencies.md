@@ -155,8 +155,22 @@ When `opensearch-security` is listed in both `extended.plugins` and `optional.pl
 - Optional extended plugins must still be listed in `extended.plugins`
 - Some features may not function when optional dependencies are not installed (a warning is logged)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-11): Extended range semver support to `dependencies` field in plugin-descriptor.properties
+- **v3.0.0** (2025-05): Relaxed jarHell check for optionally extended plugins, enabling plugins to declare optional dependencies without jar conflicts
+- **v2.16.0** (2025-07): Added explicit range notation support (`[2.0.0, 3.0.0)`) for `opensearch.version`
+- **v2.13.0** (2024-02): Initial SemverRange implementation with tilde (`~`) and caret (`^`) operators
+
+## References
+
+### Documentation
+- [Documentation: Installing plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Official plugin installation guide
+
+### Blog Posts
+- [OpenSearch Versioning Blog](https://opensearch.org/blog/what-is-semver/): OpenSearch Versioning, or What is SemVer anyway?
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19939](https://github.com/opensearch-project/OpenSearch/pull/19939) | Add RangeSemver for `dependencies` in `plugin-descriptor.properties` |
@@ -164,17 +178,7 @@ When `opensearch-security` is listed in both `extended.plugins` and `optional.pl
 | v2.16.0 | [#18557](https://github.com/opensearch-project/OpenSearch/pull/18557) | Added support for range version support in semver |
 | v2.13.0 | - | Initial SemverRange implementation with tilde and caret operators |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1707](https://github.com/opensearch-project/OpenSearch/issues/1707): Cannot install old patch version of plugins on newer OpenSearch builds
 - [Issue #18554](https://github.com/opensearch-project/OpenSearch/issues/18554): Add range support in SemVer
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing - motivation for optional plugin dependencies
-- [Documentation: Installing plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Official plugin installation guide
-- [OpenSearch Versioning Blog](https://opensearch.org/blog/what-is-semver/): OpenSearch Versioning, or What is SemVer anyway?
-
-## Change History
-
-- **v3.4.0** (2025-11): Extended range semver support to `dependencies` field in plugin-descriptor.properties
-- **v3.0.0** (2025-05): Relaxed jarHell check for optionally extended plugins, enabling plugins to declare optional dependencies without jar conflicts
-- **v2.16.0** (2025-07): Added explicit range notation support (`[2.0.0, 3.0.0)`) for `opensearch.version`
-- **v2.13.0** (2024-02): Initial SemverRange implementation with tilde (`~`) and caret (`^`) operators

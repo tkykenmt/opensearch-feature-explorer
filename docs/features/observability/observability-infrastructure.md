@@ -78,19 +78,21 @@ publishing {
 - Detekt static analysis does not yet support JDK 24, requiring JVM target override
 - Legacy Sonatype URL maintained for backward compatibility during transition
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-04): Maven snapshot publishing migration to Central Portal, Gradle 8.14.3 upgrade, JDK 24 CI support
+
+## References
+
+### Documentation
+- [observability repository](https://github.com/opensearch-project/observability)
+- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#1931](https://github.com/opensearch-project/observability/pull/1931) | Update maven snapshot publish endpoint and credential |
 | v3.2.0 | [#1937](https://github.com/opensearch-project/observability/pull/1937) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
 
-## References
-
-- [observability repository](https://github.com/opensearch-project/observability)
+### Issues (Design / RFC)
 - [Issue #5551](https://github.com/opensearch-project/opensearch-build/issues/5551): Plugin snapshot publishing migration
-- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/)
-
-## Change History
-
-- **v3.2.0** (2025-08-04): Maven snapshot publishing migration to Central Portal, Gradle 8.14.3 upgrade, JDK 24 CI support

@@ -122,8 +122,18 @@ POST _plugins/_sql/close
 - `fetch_size` of 0 disables pagination
 - Cursor context has a timeout (configurable via PIT settings)
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-29): Fixed pagination with `pretty` parameter; Fixed PIT refactor issues (join query NPE, incorrect cursor generation)
+
+## References
+
+### Documentation
+- [SQL and PPL API Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/): Official API documentation
+- [Point in Time Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/): PIT in SQL
+- [Pagination Limitations](https://docs.opensearch.org/2.18/search-plugins/sql/limitation/): SQL pagination limitations
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |
@@ -131,13 +141,5 @@ POST _plugins/_sql/close
 | v2.18.0 | [#2759](https://github.com/opensearch-project/sql/pull/2759) | Original: Pretty parameter support |
 | v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Original: PIT refactor bug fixes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2460](https://github.com/opensearch-project/sql/issues/2460): SQL pagination doesn't work in Dev tools
-- [SQL and PPL API Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/): Official API documentation
-- [Point in Time Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/): PIT in SQL
-- [Pagination Limitations](https://docs.opensearch.org/2.18/search-plugins/sql/limitation/): SQL pagination limitations
-
-## Change History
-
-- **v2.18.0** (2024-10-29): Fixed pagination with `pretty` parameter; Fixed PIT refactor issues (join query NPE, incorrect cursor generation)

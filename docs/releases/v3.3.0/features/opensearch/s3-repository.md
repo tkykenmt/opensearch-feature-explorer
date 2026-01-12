@@ -78,18 +78,20 @@ PUT _snapshot/my-s3-compatible-repo
 - Some S3-compatible providers may still have compatibility issues depending on their specific implementation
 - The `LegacyMd5Plugin` adds overhead for MD5 calculation when enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
+- [AWS SDK Discussion #5802](https://github.com/aws/aws-sdk-java-v2/discussions/5802): Workaround for checksum trailing headers
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19220](https://github.com/opensearch-project/OpenSearch/pull/19220) | Fix issue with s3-compatible repositories due to missing checksum trailing headers |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18240](https://github.com/opensearch-project/OpenSearch/issues/18240): Snapshot repositories don't work with S3 compatible storage in 3.0.0
 - [Issue #19124](https://github.com/opensearch-project/OpenSearch/issues/19124): repository-s3 error x-amz-trailer
-- [AWS SDK Discussion #5802](https://github.com/aws/aws-sdk-java-v2/discussions/5802): Workaround for checksum trailing headers
-- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
 
 ## Related Feature Report
 

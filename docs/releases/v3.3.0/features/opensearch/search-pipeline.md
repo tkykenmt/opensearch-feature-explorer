@@ -216,18 +216,22 @@ public Map<String, SystemGeneratedFactory<SearchRequestProcessor>>
 - All system-generated factories are disabled by default and must be explicitly enabled
 - Conflict detection is the processor's responsibility to implement
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Pipelines Documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/index/): Official documentation
+- [Example Plugin](https://github.com/opensearch-project/OpenSearch/tree/main/plugins/examples/system-search-processor): Reference implementation
+
+### Blog Posts
+- [Blog: Making search smarter with system-generated search pipelines](https://opensearch.org/blog/making-search-smarter-with-system-generated-search-pipelines/): Detailed explanation and examples
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19128](https://github.com/opensearch-project/OpenSearch/pull/19128) | Support system generated search pipeline |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18731](https://github.com/opensearch-project/OpenSearch/issues/18731): Feature request for system-generated search pipeline
-- [Blog: Making search smarter with system-generated search pipelines](https://opensearch.org/blog/making-search-smarter-with-system-generated-search-pipelines/): Detailed explanation and examples
-- [Search Pipelines Documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/index/): Official documentation
-- [Example Plugin](https://github.com/opensearch-project/OpenSearch/tree/main/plugins/examples/system-search-processor): Reference implementation
 
 ## Related Feature Report
 

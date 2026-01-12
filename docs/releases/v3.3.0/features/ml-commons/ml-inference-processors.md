@@ -162,8 +162,14 @@ POST _plugins/_ml/agents/_register
 - All vectors must have the same dimension for pooling
 - Processor chain is currently available for agent tools, not ingest processors
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Inference Ingest Processor Documentation](https://docs.opensearch.org/latest/ingest-pipelines/processors/ml-inference/)
+- [ML Inference Search Request Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-request/)
+- [ML Inference Search Response Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-response/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4111](https://github.com/opensearch-project/ml-commons/pull/4111) | Add ml-commons passthrough post process function |
@@ -171,12 +177,8 @@ POST _plugins/_ml/agents/_register
 | [#4093](https://github.com/opensearch-project/ml-commons/pull/4093) | Add processor chain and support for model and tool |
 | [#4260](https://github.com/opensearch-project/ml-commons/pull/4260) | Refactor and add more validation to processor chain |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4235](https://github.com/opensearch-project/ml-commons/issues/4235): Processor chain feature request
-- [ML Inference Ingest Processor Documentation](https://docs.opensearch.org/latest/ingest-pipelines/processors/ml-inference/)
-- [ML Inference Search Request Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-request/)
-- [ML Inference Search Response Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-response/)
 
 ## Related Feature Report
 

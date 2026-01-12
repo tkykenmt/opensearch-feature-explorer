@@ -93,19 +93,21 @@ public Builder toBuilder() {
 - The merged segment warmer exception handling logs warnings but silently skips warming - administrators should monitor logs for repeated warnings
 - These fixes are specific to edge cases and do not change normal operation behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote Segment Warmer Documentation](https://docs.opensearch.org/3.4/tuning-your-cluster/availability-and-recovery/remote-store/remote-segment-warmer/): Official docs
+- [PR #18929](https://github.com/opensearch-project/OpenSearch/pull/18929): Original PR that added MergedSegmentTransferTracker to EngineConfig
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19436](https://github.com/opensearch-project/OpenSearch/pull/19436) | Avoid primary shard failure caused by merged segment warmer exceptions |
 | [#19775](https://github.com/opensearch-project/OpenSearch/pull/19775) | Fixed assertion unsafe use of ClusterService.state() in ResourceUsageCollectorService |
 | [#20105](https://github.com/opensearch-project/OpenSearch/pull/20105) | Fix toBuilder method in EngineConfig to include mergedSegmentTransferTracker |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19435](https://github.com/opensearch-project/OpenSearch/issues/19435): BUG - Avoid primary shard failure caused by merge segment warmer exceptions
-- [PR #18929](https://github.com/opensearch-project/OpenSearch/pull/18929): Original PR that added MergedSegmentTransferTracker to EngineConfig
-- [Remote Segment Warmer Documentation](https://docs.opensearch.org/3.4/tuning-your-cluster/availability-and-recovery/remote-store/remote-segment-warmer/): Official docs
 
 ## Related Feature Report
 

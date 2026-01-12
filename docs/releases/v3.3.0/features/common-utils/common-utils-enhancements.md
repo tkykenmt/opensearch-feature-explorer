@@ -95,19 +95,21 @@ List<String> customAttributeNames = List.of("attr1=value1", "attr2=value2");
 - The `custom_attribute_names` field name is retained for backward compatibility, even though it now contains both names and values
 - Plugins must update their test fixtures to use the new `key=value` format
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #827](https://github.com/opensearch-project/common-utils/pull/827): Original custom attributes implementation
+- [PR #1236](https://github.com/opensearch-project/flow-framework/pull/1236): Flow Framework test fix for new format
+- [PR #1583](https://github.com/opensearch-project/security-analytics/pull/1583): Security Analytics test fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#878](https://github.com/opensearch-project/common-utils/pull/878) | Update user attributes XContent parsing logic |
 | [#860](https://github.com/opensearch-project/common-utils/pull/860) | Update delete_backport_branch workflow to include release-chores branches |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Related Alerting issue for custom attributes
-- [PR #827](https://github.com/opensearch-project/common-utils/pull/827): Original custom attributes implementation
-- [PR #1236](https://github.com/opensearch-project/flow-framework/pull/1236): Flow Framework test fix for new format
-- [PR #1583](https://github.com/opensearch-project/security-analytics/pull/1583): Security Analytics test fix
 
 ## Related Feature Report
 

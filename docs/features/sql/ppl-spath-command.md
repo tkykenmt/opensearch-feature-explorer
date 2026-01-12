@@ -124,18 +124,20 @@ source=logs | spath output=a input=doc "['a fancy field name']"
 - **String output**: Always returns string values; explicit casting required for numeric operations
 - **No automatic type inference**: Unlike direct field indexing, types must be cast manually
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-08-28): Initial implementation with JSON path support, rewriting to json_extract internally
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/functions/): Official PPL commands reference
+- [json_extract Function](https://github.com/opensearch-project/sql/blob/main/integ-test/src/test/java/org/opensearch/sql/calcite/remote/CalcitePPLJsonBuiltinFunctionIT.java): Related JSON extraction tests
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4120](https://github.com/opensearch-project/sql/pull/4120) | Starter implementation for `spath` command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/sql/issues/4119): RFC - Improved structured data extraction with `spath`
-- [PPL Commands Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/functions/): Official PPL commands reference
-- [json_extract Function](https://github.com/opensearch-project/sql/blob/main/integ-test/src/test/java/org/opensearch/sql/calcite/remote/CalcitePPLJsonBuiltinFunctionIT.java): Related JSON extraction tests
-
-## Change History
-
-- **v3.3.0** (2025-08-28): Initial implementation with JSON path support, rewriting to json_extract internally

@@ -65,15 +65,15 @@ No migration required. This is a bugfix that automatically takes effect for any 
 - Only affects the collapsible navigation groups component
 - Visual styling of disabled items depends on the EUI theme
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/3.0/dashboards/quickstart/): Navigation documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10678](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10678) | Ensure the disabled prop gets passed to the EuiSideNavItem for navlinks |
-
-## References
-
-- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/3.0/dashboards/quickstart/): Navigation documentation
 
 ## Related Feature Report
 

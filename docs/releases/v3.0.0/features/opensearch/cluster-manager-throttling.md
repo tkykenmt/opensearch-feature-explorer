@@ -127,16 +127,18 @@ PUT _cluster/settings
 - The default thresholds are based on general usage patterns and may need tuning for specific workloads
 - When throttled, tasks are rejected and must be retried by the client with exponential backoff
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Cluster manager task throttling
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17711](https://github.com/opensearch-project/OpenSearch/pull/17711) | Enabled default throttling for all tasks submitted to cluster manager |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17685](https://github.com/opensearch-project/OpenSearch/issues/17685): Feature request for default throttling
-- [Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Cluster manager task throttling
 
 ## Related Feature Report
 

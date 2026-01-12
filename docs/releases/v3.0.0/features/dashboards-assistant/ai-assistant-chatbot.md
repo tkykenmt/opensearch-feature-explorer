@@ -93,8 +93,14 @@ PUT .plugins-ml-config/_doc/os_chat
 - Text-to-visualization requires PPL queries with aggregations
 - The experimental badge has been removed from natural language visualization
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/)
+- [Build Your Own Chatbot Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/chatbots/build-chatbot/)
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#398](https://github.com/opensearch-project/dashboards-assistant/pull/398) | Expose chatEnabled flag to capabilities |
@@ -109,11 +115,7 @@ PUT .plugins-ml-config/_doc/os_chat
 | [#514](https://github.com/opensearch-project/dashboards-assistant/pull/514) | Add auto aggregation suggest for t2v |
 | [#540](https://github.com/opensearch-project/dashboards-assistant/pull/540) | Change chatbot entry point to single button |
 
-## References
-
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/)
-- [Build Your Own Chatbot Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/chatbots/build-chatbot/)
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/)
+### Issues (Design / RFC)
 - [Issue #387](https://github.com/opensearch-project/dashboards-assistant/issues/387): Streaming output feature request
 
 ## Related Feature Report

@@ -138,17 +138,19 @@ const suggestionProvider = {
 - Some older plugins may need updates to work with the new Monaco API
 - Worker files are simplified and may have reduced functionality compared to Monaco's full workers
 
-## Related PRs
+## References
 
+### Documentation
+- [Monaco Editor Changelog](https://github.com/microsoft/monaco-editor/blob/main/CHANGELOG.md): Official changelog
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9497) | Bump monaco-editor from 0.17.0 to 0.30.1 |
 | [#9618](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9618) | Bump monaco-editor from 0.30.1 to 0.52.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9573](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9573): Bump monaco-editor from 0.30.1 to 0.52.0 (implementation notes)
-- [Monaco Editor Changelog](https://github.com/microsoft/monaco-editor/blob/main/CHANGELOG.md): Official changelog
 
 ## Related Feature Report
 

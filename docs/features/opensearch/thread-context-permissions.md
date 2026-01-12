@@ -109,19 +109,21 @@ public class MyPlugin extends Plugin {
 - Does not provide fine-grained control over which origins or headers can be set
 - Permission is binary (granted or not)—no partial access
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2024-07-31): Initial implementation - Added ThreadContextPermission for markAsSystemContext, stashWithOrigin, and stashAndMergeHeaders methods
+
+## References
+
+### Documentation
+- [OpenSearch Security Permissions](https://docs.opensearch.org/3.0/security/access-control/permissions/): Security plugin permissions documentation
+- [Installing Plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Plugin security policy documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#15016](https://github.com/opensearch-project/OpenSearch/pull/15016) | Add ThreadContextPermission for markAsSystemContext |
 | v3.0.0 | [#15039](https://github.com/opensearch-project/OpenSearch/pull/15039) | Add ThreadContextPermission for stashAndMergeHeaders and stashWithOrigin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14931](https://github.com/opensearch-project/OpenSearch/issues/14931): Original feature request for higher-level plugin context switching APIs
-- [OpenSearch Security Permissions](https://docs.opensearch.org/3.0/security/access-control/permissions/): Security plugin permissions documentation
-- [Installing Plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Plugin security policy documentation
-
-## Change History
-
-- **v3.0.0** (2024-07-31): Initial implementation - Added ThreadContextPermission for markAsSystemContext, stashWithOrigin, and stashAndMergeHeaders methods

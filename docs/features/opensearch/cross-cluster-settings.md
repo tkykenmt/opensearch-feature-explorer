@@ -121,18 +121,20 @@ GET my-remote-cluster:my-index/_search
 - `skip_unavailable` only affects search operations, not replication
 - Proxy mode requires additional infrastructure setup
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-08-20): Fixed `skip_unavailable` setting persistence during seed node updates
+
+## References
+
+### Documentation
+- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official docs
+- [Remote cluster information API](https://docs.opensearch.org/3.0/api-reference/cluster-api/remote-info/): API reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18766](https://github.com/opensearch-project/OpenSearch/pull/18766) | Fix skip_unavailable setting changing to default during node drop |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13798](https://github.com/opensearch-project/OpenSearch/issues/13798): Bug report for skip_unavailable reset issue
-- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official docs
-- [Remote cluster information API](https://docs.opensearch.org/3.0/api-reference/cluster-api/remote-info/): API reference
-
-## Change History
-
-- **v3.3.0** (2025-08-20): Fixed `skip_unavailable` setting persistence during seed node updates

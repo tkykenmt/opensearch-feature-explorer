@@ -105,16 +105,16 @@ TermsReduceBenchmark shows no regression from these changes.
 - Circuit breaker estimation remains approximate
 - The hardened checks add minimal overhead to each result consumption
 
-## Related PRs
+## References
 
+### Documentation
+- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): OpenSearch circuit breaker configuration
+- [Search Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/search-settings/): Search configuration options
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19396](https://github.com/opensearch-project/OpenSearch/pull/19396) | Harden the circuit breaker and failure handle logic in query result consumer |
-
-## References
-
-- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): OpenSearch circuit breaker configuration
-- [Search Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/search-settings/): Search configuration options
 
 ## Related Feature Report
 

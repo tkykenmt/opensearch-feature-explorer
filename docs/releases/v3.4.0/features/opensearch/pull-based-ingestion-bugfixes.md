@@ -86,18 +86,20 @@ Users can override `auto.offset.reset` to `earliest` or `latest` to handle out-o
 - Pull-based ingestion provides at-least-once processing guarantees (not exactly-once without versioning)
 - `totalDuplicateMessageSkippedCount` metric is deprecated and will be removed in a future version
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19607](https://github.com/opensearch-project/OpenSearch/pull/19607) | Fix pull-based ingestion out-of-bounds offset scenarios and remove persisted offsets |
 | [#19757](https://github.com/opensearch-project/OpenSearch/pull/19757) | Fix file-based ingestion consumer to handle start point beyond max line number |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19591](https://github.com/opensearch-project/OpenSearch/issues/19591): Bug report for duplicate/old message skipping logic
 - [Issue #19723](https://github.com/opensearch-project/OpenSearch/issues/19723): Flaky test report for FileBasedIngestionSingleNodeTests
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
 
 ## Related Feature Report
 

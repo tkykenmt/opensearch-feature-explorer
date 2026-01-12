@@ -39,15 +39,15 @@ This release includes governance updates across four repositories:
 - These are administrative changes only; no functional impact on the software
 - Some PR references in the original tracking may have incorrect numbers
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#4673](https://github.com/opensearch-project/security/pull/4673) | security | Add Nils Bandener as maintainer (backport 2.x) |
 | [#1233](https://github.com/opensearch-project/index-management/pull/1233) | index-management | Move non-active maintainers to emeritus |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1230](https://github.com/opensearch-project/index-management/issues/1230): Index Management maintainer update request
 
 ## Related Feature Report

@@ -81,21 +81,21 @@ graph TB
 - NLQ Visualization is not available from the "Create new" dropdown menu (by design)
 - Insights API calls are deferred until user explicitly requests them
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-10): Bug fixes for UI behavior, error logging, insights request timing, and conversation loading state
+
+## References
+
+### Documentation
+- [dashboards-assistant repository](https://github.com/opensearch-project/dashboards-assistant)
+- [Text to Visualization](text-to-visualization.md)
+- [AI Assistant Chatbot](ai-assistant-chatbot.md)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#579](https://github.com/opensearch-project/dashboards-assistant/pull/579) | Fix unnecessary embeddable in create new dropdown |
 | v3.1.0 | [#548](https://github.com/opensearch-project/dashboards-assistant/pull/548) | Log error body or message instead of the entire error object |
 | v3.1.0 | [#520](https://github.com/opensearch-project/dashboards-assistant/pull/520) | Fix http request for insights to be triggered only after view insights button is clicked |
 | v3.1.0 | [#569](https://github.com/opensearch-project/dashboards-assistant/pull/569) | Fix chat page conversation loading state |
-
-## References
-
-- [dashboards-assistant repository](https://github.com/opensearch-project/dashboards-assistant)
-- [Text to Visualization](text-to-visualization.md)
-- [AI Assistant Chatbot](ai-assistant-chatbot.md)
-
-## Change History
-
-- **v3.1.0** (2026-01-10): Bug fixes for UI behavior, error logging, insights request timing, and conversation loading state

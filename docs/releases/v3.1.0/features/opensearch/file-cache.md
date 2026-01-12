@@ -157,19 +157,21 @@ public void afterSyncToRemote(String file) {
 - File pinning is currently used internally by Composite Directory; no public API for manual pinning
 - Pinned files count against cache capacity but cannot be evicted, which may impact cache efficiency if many files are pinned
 
-## Related PRs
+## References
 
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17538](https://github.com/opensearch-project/OpenSearch/pull/17538) | Added File Cache Stats - Block level and full file level stats |
 | [#17617](https://github.com/opensearch-project/OpenSearch/pull/17617) | Added File Cache Pinning support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17479](https://github.com/opensearch-project/OpenSearch/issues/17479): More refined stats in FileCache
 - [Issue #13648](https://github.com/opensearch-project/OpenSearch/issues/13648): File Pinning support in FileCache
 - [Issue #13149](https://github.com/opensearch-project/OpenSearch/issues/13149): META - Writable Warm Index
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
 
 ## Related Feature Report
 

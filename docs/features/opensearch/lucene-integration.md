@@ -94,18 +94,20 @@ No user-facing configuration. This is an internal implementation detail.
 - Lucene API changes may require OpenSearch updates
 - Custom collectors must be compatible with `MultiCollector` wrapping
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Removed `MultiCollectorWrapper`, now using Lucene's native `MultiCollector.getCollectors()` API
+
+## References
+
+### Documentation
+- [Lucene PR #455](https://github.com/apache/lucene/pull/455): Made `MultiCollector.getCollectors()` public in Lucene 9.1
+- [OpenSearch PR #1500](https://github.com/opensearch-project/OpenSearch/pull/1500): Original concurrent segment search implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19595](https://github.com/opensearch-project/OpenSearch/pull/19595) | Remove MultiCollectorWrapper and use MultiCollector in Lucene instead |
 
-## References
-
+### Issues (Design / RFC)
 - [LUCENE-10244](https://github.com/apache/lucene/issues/11280): Lucene issue for public `getCollectors()` method
-- [Lucene PR #455](https://github.com/apache/lucene/pull/455): Made `MultiCollector.getCollectors()` public in Lucene 9.1
-- [OpenSearch PR #1500](https://github.com/opensearch-project/OpenSearch/pull/1500): Original concurrent segment search implementation
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Removed `MultiCollectorWrapper`, now using Lucene's native `MultiCollector.getCollectors()` API

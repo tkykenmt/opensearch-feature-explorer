@@ -97,8 +97,15 @@ Left Navigation:
 - The Preview tab in Inspector requires remounting when becoming active due to ReactFlow rendering constraints
 - Models must have defined interfaces for simplified ML processor forms
 
-## Related PRs
+## References
 
+### Documentation
+- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
+- [Documentation PR #9881](https://github.com/opensearch-project/documentation-website/pull/9881): Thread pool configuration docs
+- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
+- [flow-framework Repository](https://github.com/opensearch-project/flow-framework)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#722](https://github.com/opensearch-project/dashboards-flow-framework/pull/722) | Integrate preview panel into inspector panel |
@@ -107,13 +114,6 @@ Left Navigation:
 | [#743](https://github.com/opensearch-project/dashboards-flow-framework/pull/743) | Misc improvements IV (UI polish) |
 | [#744](https://github.com/opensearch-project/dashboards-flow-framework/pull/744) | Update README.md (fix broken link) |
 | [#1139](https://github.com/opensearch-project/flow-framework/pull/1139) | Make thread pool sizes configurable (backend) |
-
-## References
-
-- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
-- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
-- [flow-framework Repository](https://github.com/opensearch-project/flow-framework)
-- [Documentation PR #9881](https://github.com/opensearch-project/documentation-website/pull/9881): Thread pool configuration docs
 
 ## Related Feature Report
 

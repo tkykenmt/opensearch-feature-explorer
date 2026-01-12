@@ -122,19 +122,21 @@ No migration required. The changes are backward compatible with both V2 and Calc
 - Events table pagination fetches data on each page change (no client-side caching)
 - Flyout requires valid pattern data; displays error callout if data is unavailable
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Piped Processing Language reference
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Blog Posts
+- [Explore OpenSearch 3.3 Blog](https://opensearch.org/blog/explore-opensearch-3-3/): Release announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10464) | Patterns tab flyout implementation |
 | [#10489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10489) | Search with pattern functionality and events table |
 | [#10535](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10535) | Calcite compatibility workarounds |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-- [Explore OpenSearch 3.3 Blog](https://opensearch.org/blog/explore-opensearch-3-3/): Release announcement
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Piped Processing Language reference
 
 ## Related Feature Report
 

@@ -148,8 +148,13 @@ graph TB
 - `strftime` does not directly accept string inputs; use `unix_timestamp()` for conversion
 - All timestamps in `strftime` are interpreted as UTC timezone
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
+- [SQL and PPL API](https://docs.opensearch.org/3.0/search-plugins/sql/sql-ppl-api/)
+
+### Pull Requests
 | PR | Description | Author |
 |----|-------------|--------|
 | [#4378](https://github.com/opensearch-project/sql/pull/4378) | Change default search sort tiebreaker to `_shard_doc` for PIT search | LantaoJin |
@@ -167,14 +172,11 @@ graph TB
 | [#4106](https://github.com/opensearch-project/sql/pull/4106) | strftime function implementation | vamsimanohar |
 | [#3803](https://github.com/opensearch-project/sql/pull/3803) | Support join field list and join options | LantaoJin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4135](https://github.com/opensearch-project/sql/issues/4135): Time modifiers feature request
 - [Issue #4007](https://github.com/opensearch-project/sql/issues/4007): Search command revamp request
 - [Issue #3775](https://github.com/opensearch-project/sql/issues/3775): Join field list and options request
 - [Issue #4341](https://github.com/opensearch-project/sql/issues/4341): max/min eval functions request
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
-- [SQL and PPL API](https://docs.opensearch.org/3.0/search-plugins/sql/sql-ppl-api/)
 
 ## Related Feature Report
 

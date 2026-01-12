@@ -66,18 +66,20 @@ These changes are internal infrastructure updates and do not affect plugin funct
 - No functional changes in this release
 - These are maintenance updates only
 
-## Related PRs
+## References
 
+### Documentation
+- [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
+- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#754](https://github.com/opensearch-project/asynchronous-search/pull/754) | Bump gradle to 8.14.3 and use JDK 24 in CI workflow |
 | [#748](https://github.com/opensearch-project/asynchronous-search/pull/748) | Update the Maven snapshot publish endpoint and credential |
 
-## References
-
-- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/)
+### Issues (Design / RFC)
 - [opensearch-build#5551](https://github.com/opensearch-project/opensearch-build/issues/5551): Maven snapshot migration campaign
-- [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
 
 ## Related Feature Report
 

@@ -120,20 +120,24 @@ POST _plugins/_ml/models/<model_id>/_predict
 - Format is per-request; no model-level default configuration
 - Array-based format (indices/values) not yet supported
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-21): Added TOKEN_ID format support for sparse encoding and sparse tokenize models
+
+## References
+
+### Documentation
+- [Register Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/register-model/): Model registration documentation
+- [Neural Sparse Search](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/): Neural sparse search guide
+- [Sparse Encoding Processor](https://docs.opensearch.org/3.0/ingest-pipelines/processors/sparse-encoding/): Ingest pipeline processor
+
+### Blog Posts
+- [Improving document retrieval with sparse semantic encoders](https://opensearch.org/blog/improving-document-retrieval-with-sparse-semantic-encoders/): Technical blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#3963](https://github.com/opensearch-project/ml-commons/pull/3963) | Sparse encoding/tokenize support TOKEN_ID format embedding |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3865](https://github.com/opensearch-project/ml-commons/issues/3865): RFC - Support additional output formats for sparse models
-- [Register Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/register-model/): Model registration documentation
-- [Neural Sparse Search](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/): Neural sparse search guide
-- [Sparse Encoding Processor](https://docs.opensearch.org/3.0/ingest-pipelines/processors/sparse-encoding/): Ingest pipeline processor
-- [Improving document retrieval with sparse semantic encoders](https://opensearch.org/blog/improving-document-retrieval-with-sparse-semantic-encoders/): Technical blog post
-
-## Change History
-
-- **v3.2.0** (2025-07-21): Added TOKEN_ID format support for sparse encoding and sparse tokenize models

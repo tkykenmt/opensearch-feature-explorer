@@ -87,16 +87,18 @@ No migration required. This is a bug fix that improves cluster stability automat
 - The `pendingDisconnections` set is only maintained on the active cluster manager node
 - If a disconnect is initiated while a connect is in progress, callers must ensure proper sequencing
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/cluster-settings/): Cluster manager timeout settings
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15521](https://github.com/opensearch-project/OpenSearch/pull/15521) | Fix for race condition in node-join/node-left loop |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4874](https://github.com/opensearch-project/OpenSearch/issues/4874): Original bug report - Race in node-left and node-join can prevent node from joining the cluster indefinitely
-- [Cluster Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/cluster-settings/): Cluster manager timeout settings
 
 ## Related Feature Report
 

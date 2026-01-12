@@ -124,19 +124,21 @@ PUT /my-warm-index
 - The factory type `default` is reserved and cannot be overridden by plugins
 - Custom implementations must handle all aspects of local/remote coordination
 
-## Related PRs
+## Change History
 
+- **v3.1.0**: Initial implementation - pluggable composite directory factory with default implementation
+
+## References
+
+### Documentation
+- [Remote-backed storage documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/remote-store/index/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#17988](https://github.com/opensearch-project/OpenSearch/pull/17988) | Add composite directory factory |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17982](https://github.com/opensearch-project/OpenSearch/issues/17982): Need for Composite Directory Factory
 - [Issue #12809](https://github.com/opensearch-project/OpenSearch/issues/12809): Writable Warm feature
 - [Issue #12781](https://github.com/opensearch-project/OpenSearch/issues/12781): Composite Directory
-- [Remote-backed storage documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/remote-store/index/)
-
-## Change History
-
-- **v3.1.0**: Initial implementation - pluggable composite directory factory with default implementation

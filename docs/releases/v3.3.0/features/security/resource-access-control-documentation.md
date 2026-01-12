@@ -103,17 +103,19 @@ PUT _cluster/settings
 - Feature must be explicitly enabled via configuration
 - Protected types must be declared for resource-level authorization to take effect
 
-## Related PRs
+## References
 
+### Documentation
+- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Full documentation
+- [spi/README.md](https://github.com/opensearch-project/security/blob/main/spi/README.md): SPI implementation guide
+
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5540](https://github.com/opensearch-project/security/pull/5540) | Adds comprehensive documentation for Resource Access Control feature |
-
-## References
-
-- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Full documentation
-- [spi/README.md](https://github.com/opensearch-project/security/blob/main/spi/README.md): SPI implementation guide
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
 
 ## Related Feature Report
 

@@ -127,19 +127,21 @@ Result: `naive approach with l` (lowercased, ASCII-folded, truncated to 20 chars
 - Cannot perform operations that change token count (e.g., synonyms, stemming)
 - The truncate filter requires a positive `length` parameter
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19779](https://github.com/opensearch-project/OpenSearch/pull/19779) | Add truncate filter support in normalizers |
+- **v3.4.0** (2025-11-17): Added `truncate` token filter support in normalizers
 
 ## References
 
-- [Issue #19778](https://github.com/opensearch-project/OpenSearch/issues/19778): Feature request for truncate filter in normalizers
+### Documentation
 - [Normalizers Documentation](https://docs.opensearch.org/3.0/analyzers/normalizers/)
 - [Truncate Token Filter Documentation](https://docs.opensearch.org/3.0/analyzers/token-filters/truncate/)
 - [Normalizer Mapping Parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/normalizer/)
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#19779](https://github.com/opensearch-project/OpenSearch/pull/19779) | Add truncate filter support in normalizers |
 
-- **v3.4.0** (2025-11-17): Added `truncate` token filter support in normalizers
+### Issues (Design / RFC)
+- [Issue #19778](https://github.com/opensearch-project/OpenSearch/issues/19778): Feature request for truncate filter in normalizers

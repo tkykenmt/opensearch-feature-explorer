@@ -85,18 +85,20 @@ By submitting this pull request, I confirm that my contribution is made under th
 - Relies on contributor and reviewer diligence
 - Each repository maintains its own template copy
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Added API specification checkbox to PR template
+
+## References
+
+### Documentation
+- [OpenSearch API Specification](https://github.com/opensearch-project/opensearch-api-specification): Central API specification repository
+- [Developer Guide](https://github.com/opensearch-project/opensearch-api-specification/blob/main/DEVELOPER_GUIDE.md): Guide for contributing API specs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Add API spec checkbox to common-utils |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #387](https://github.com/opensearch-project/opensearch-api-specification/issues/387): Original proposal for API spec checkbox
-- [OpenSearch API Specification](https://github.com/opensearch-project/opensearch-api-specification): Central API specification repository
-- [Developer Guide](https://github.com/opensearch-project/opensearch-api-specification/blob/main/DEVELOPER_GUIDE.md): Guide for contributing API specs
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Added API specification checkbox to PR template

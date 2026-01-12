@@ -92,18 +92,20 @@ The stored and indexed value will be truncated to `abcdefghij` (10 characters, l
 - Truncation happens at the character level, which may split multi-byte characters in certain edge cases
 - Cannot be combined with non-normalizing token filters in a normalizer
 
-## Related PRs
+## References
 
+### Documentation
+- [Truncate Token Filter Documentation](https://docs.opensearch.org/3.0/analyzers/token-filters/truncate/)
+- [Normalizers Documentation](https://docs.opensearch.org/3.0/analyzers/normalizers/)
+- [Documentation PR #11429](https://github.com/opensearch-project/documentation-website/pull/11429): Public documentation update
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19779](https://github.com/opensearch-project/OpenSearch/pull/19779) | Make truncate filter a normalizer token filter |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19778](https://github.com/opensearch-project/OpenSearch/issues/19778): Feature request for truncate filter in normalizers
-- [Truncate Token Filter Documentation](https://docs.opensearch.org/3.0/analyzers/token-filters/truncate/)
-- [Normalizers Documentation](https://docs.opensearch.org/3.0/analyzers/normalizers/)
-- [Documentation PR #11429](https://github.com/opensearch-project/documentation-website/pull/11429): Public documentation update
 
 ## Related Feature Report
 

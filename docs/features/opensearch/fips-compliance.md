@@ -133,21 +133,23 @@ public class MyFipsTests extends MyTests implements RestClientFipsAwareTestCase 
 - **TLS Protocols**: Only TLSv1.2 and TLSv1.3 are allowed in FIPS mode
 - **Performance**: FIPS-validated implementations may have different performance characteristics
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Test suite FIPS 140-3 compliance support with BC-FIPS provider
+
+## References
+
+### Documentation
+- [Bouncy Castle FIPS](https://www.bouncycastle.org/fips-java/): BC-FIPS Java Documentation
+- [NIST FIPS 140-3](https://csrc.nist.gov/publications/detail/fips/140/3/final): Security Requirements for Cryptographic Modules
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#18491](https://github.com/opensearch-project/OpenSearch/pull/18491) | Make test-suite runnable under FIPS compliance support |
 | v3.4.0 | [#18921](https://github.com/opensearch-project/OpenSearch/pull/18921) | Add build-tooling to run in FIPS environment |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #4254](https://github.com/opensearch-project/security/issues/4254): FIPS-140 Compliance Roadmap for OpenSearch
 - [Issue #17634](https://github.com/opensearch-project/OpenSearch/issues/17634): META - Replace Bouncycastle dependencies with FIPS counterparts
 - [Issue #18324](https://github.com/opensearch-project/OpenSearch/issues/18324): Documentation for FIPS configuration
-- [NIST FIPS 140-3](https://csrc.nist.gov/publications/detail/fips/140/3/final): Security Requirements for Cryptographic Modules
-- [Bouncy Castle FIPS](https://www.bouncycastle.org/fips-java/): BC-FIPS Java Documentation
-
-## Change History
-
-- **v3.4.0** (2026-01): Test suite FIPS 140-3 compliance support with BC-FIPS provider

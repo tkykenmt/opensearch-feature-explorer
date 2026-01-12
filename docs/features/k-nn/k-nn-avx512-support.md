@@ -126,21 +126,25 @@ SIMD optimization is most effective when:
 - Settings are static and require cluster restart to change
 - ARM64 platforms use NEON instructions (cannot be disabled)
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Added AVX512 SIMD support for Faiss engine on x64 Linux
+- **v2.13.0**: Initial SIMD support with AVX2 (x64) and NEON (ARM64)
+
+## References
+
+### Documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/#simd-optimization-for-the-faiss-engine): Official SIMD documentation
+- [k-NN Settings](https://docs.opensearch.org/2.18/search-plugins/knn/settings/): Configuration reference
+
+### Blog Posts
+- [Blog: Boosting k-NN exact search performance](https://opensearch.org/blog/boosting-k-nn-exact-search/): Performance analysis with SIMD
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#2110](https://github.com/opensearch-project/k-NN/pull/2110) | Add AVX512 support to k-NN for FAISS library |
 | v2.13.0 | - | Initial SIMD support with AVX2 and NEON |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/k-NN/issues/2056): Feature request for FAISS AVX512 support
-- [k-NN Index Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/#simd-optimization-for-the-faiss-engine): Official SIMD documentation
-- [k-NN Settings](https://docs.opensearch.org/2.18/search-plugins/knn/settings/): Configuration reference
-- [Blog: Boosting k-NN exact search performance](https://opensearch.org/blog/boosting-k-nn-exact-search/): Performance analysis with SIMD
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Added AVX512 SIMD support for Faiss engine on x64 Linux
-- **v2.13.0**: Initial SIMD support with AVX2 (x64) and NEON (ARM64)

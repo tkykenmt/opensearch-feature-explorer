@@ -182,22 +182,24 @@ jwt_auth_domain:
 - JWKS endpoints must return valid JSON Web Key Set format
 - SSL/TLS configuration for JWKS endpoints uses the `jwks` prefix in settings
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Added direct JWKS endpoint support with `jwks_uri` configuration, security validation features, and automatic fallback to static key authentication
+- **v3.1.0** (2025-06-06): Added support for nested claim paths in `roles_key` configuration
+
+## References
+
+### Documentation
+- [JWT Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/jwt/): Official docs
+- [OpenID Connect Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/openid-connect/): OIDC integration
+- [JSON Web Key (JWK) Specification](https://datatracker.ietf.org/doc/html/rfc7517): RFC 7517
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#5578](https://github.com/opensearch-project/security/pull/5578) | Direct JWKS (JSON Web Key Set) support in the JWT authentication backend |
 | v3.1.0 | [#5355](https://github.com/opensearch-project/security/pull/5355) | Handle roles in nested claim for JWT auth backends |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4974](https://github.com/opensearch-project/security/issues/4974): Feature request for JWKS with JWT without OIDC
 - [Issue #5343](https://github.com/opensearch-project/security/issues/5343): Support roles in nested JWT claims
-- [JWT Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/jwt/): Official docs
-- [OpenID Connect Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/openid-connect/): OIDC integration
-- [JSON Web Key (JWK) Specification](https://datatracker.ietf.org/doc/html/rfc7517): RFC 7517
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Added direct JWKS endpoint support with `jwks_uri` configuration, security validation features, and automatic fallback to static key authentication
-- **v3.1.0** (2025-06-06): Added support for nested claim paths in `roles_key` configuration

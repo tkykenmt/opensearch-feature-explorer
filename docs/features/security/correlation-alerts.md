@@ -130,23 +130,27 @@ POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
 - Within each rule's time window, only one correlation alert is generated; subsequent matches update the existing alert
 - Requires the Security Analytics plugin to be installed and configured
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Added API role permissions for correlation alerts in security plugin
+- **v2.15.0**: Initial implementation of correlation alerts feature in Security Analytics
+
+## References
+
+### Documentation
+- [Correlation Engine APIs](https://docs.opensearch.org/2.17/security-analytics/api-tools/correlation-eng/): Official API documentation
+- [Working with Alerts](https://docs.opensearch.org/2.17/security-analytics/usage/alerts/): Security Analytics alerts guide
+- [Creating Correlation Rules](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/correlation-config/): Correlation rule configuration
+
+### Blog Posts
+- [Correlating Security Events](https://opensearch.org/blog/correlating-security-events/): Blog post on correlation engine
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#4689](https://github.com/opensearch-project/security/pull/4689) | Added API roles for correlationAlerts |
 | v2.17.0 | [#4704](https://github.com/opensearch-project/security/pull/4704) | Permission changes for correlationAlerts |
 | v2.15.0 | [#988](https://github.com/opensearch-project/security-analytics/issues/988) | Feature request - Alerts in Correlations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #988](https://github.com/opensearch-project/security-analytics/issues/988): Original feature request
-- [Correlation Engine APIs](https://docs.opensearch.org/2.17/security-analytics/api-tools/correlation-eng/): Official API documentation
-- [Working with Alerts](https://docs.opensearch.org/2.17/security-analytics/usage/alerts/): Security Analytics alerts guide
-- [Creating Correlation Rules](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/correlation-config/): Correlation rule configuration
-- [Correlating Security Events](https://opensearch.org/blog/correlating-security-events/): Blog post on correlation engine
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Added API role permissions for correlation alerts in security plugin
-- **v2.15.0**: Initial implementation of correlation alerts feature in Security Analytics

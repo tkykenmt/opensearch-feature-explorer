@@ -113,17 +113,19 @@ public Eval rewriteAsEval() {
 - **String output**: Always returns strings for inner types; explicit casting is required for numeric operations
 - **Indexing recommended**: For filtering on nested fields, it's generally better to index fields directly rather than using `spath`
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/functions/): Official PPL commands reference
+- [json_extract Function](https://github.com/opensearch-project/sql/blob/main/integ-test/src/test/java/org/opensearch/sql/calcite/remote/CalcitePPLJsonBuiltinFunctionIT.java): Related JSON extraction functionality
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4120](https://github.com/opensearch-project/sql/pull/4120) | Starter implementation for `spath` command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/sql/issues/4119): RFC - Improved structured data extraction with `spath`
-- [PPL Commands Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/functions/): Official PPL commands reference
-- [json_extract Function](https://github.com/opensearch-project/sql/blob/main/integ-test/src/test/java/org/opensearch/sql/calcite/remote/CalcitePPLJsonBuiltinFunctionIT.java): Related JSON extraction functionality
 
 ## Related Feature Report
 

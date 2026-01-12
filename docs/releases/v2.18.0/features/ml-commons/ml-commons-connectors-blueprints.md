@@ -108,21 +108,21 @@ Cross-account connector configuration:
 - `binary` embedding type not supported in built-in post-process function for Titan V2
 - Neural search plugin only supports one embedding per document
 
-## Related PRs
+## References
 
+### Documentation
+- [Connector Blueprints Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/blueprints/)
+- [Connectors Overview](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/connectors/)
+- [Amazon Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html)
+- [Bedrock Titan Embedding Models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2960](https://github.com/opensearch-project/ml-commons/pull/2960) | Connector blueprint for Amazon Bedrock Converse |
 | [#3058](https://github.com/opensearch-project/ml-commons/pull/3058) | Support role temporary credential in connector tutorial |
 | [#3064](https://github.com/opensearch-project/ml-commons/pull/3064) | Add tutorial for cross-account model invocation |
 | [#3094](https://github.com/opensearch-project/ml-commons/pull/3094) | Tune Titan embedding model blueprint for V2 |
-
-## References
-
-- [Connector Blueprints Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/blueprints/)
-- [Connectors Overview](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/connectors/)
-- [Amazon Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html)
-- [Bedrock Titan Embedding Models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html)
 
 ## Related Feature Report
 

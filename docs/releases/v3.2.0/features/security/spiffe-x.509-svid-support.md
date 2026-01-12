@@ -113,18 +113,18 @@ node:
 - Returns `null` if no SPIFFE URI is present (falls back to default behavior)
 - Requires certificates to follow the [X509-SVID specification](https://github.com/spiffe/spiffe/blob/main/standards/X509-SVID.md)
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch TLS Configuration](https://docs.opensearch.org/3.0/security/configuration/tls/)
+- [Client Certificate Authentication](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/)
+- [SPIFFE Official Website](https://spiffe.io/)
+- [X509-SVID Specification](https://github.com/spiffe/spiffe/blob/main/standards/X509-SVID.md)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5521](https://github.com/opensearch-project/security/pull/5521) | Add SPIFFEPrincipalExtractor |
-
-## References
-
-- [SPIFFE Official Website](https://spiffe.io/)
-- [X509-SVID Specification](https://github.com/spiffe/spiffe/blob/main/standards/X509-SVID.md)
-- [OpenSearch TLS Configuration](https://docs.opensearch.org/3.0/security/configuration/tls/)
-- [Client Certificate Authentication](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/)
 
 ## Related Feature Report
 

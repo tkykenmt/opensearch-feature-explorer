@@ -89,18 +89,20 @@ containsMatcher.test("application-error-log");  // Uses String.contains()
 - The setting is node-scoped and requires a node restart to change
 - Wildcard optimizations only apply to simple prefix and contains patterns; complex patterns still use the general algorithm
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5465](https://github.com/opensearch-project/security/pull/5465) | Introduced setting for disabling denormalized privilege data structures |
 | [#5470](https://github.com/opensearch-project/security/pull/5470) | Optimizations and simplifications for WildcardMatcher |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation project
-- [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
 
 ## Related Feature Report
 

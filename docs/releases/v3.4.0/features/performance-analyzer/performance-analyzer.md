@@ -55,17 +55,19 @@ No migration required. This is a build infrastructure change that does not affec
 - This change only affects the build and CI configuration
 - Runtime Java version requirements remain unchanged (Java 21+)
 
-## Related PRs
+## References
 
+### Documentation
+- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
+- [PR #896](https://github.com/opensearch-project/performance-analyzer/pull/896): Upgrade to JDK25 and gradle 9.2.0
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #883](https://github.com/opensearch-project/performance-analyzer/issues/883): [Release 3.4.0] Gradle 9.2.0 and GitHub Actions JDK 25 Upgrade
-- [PR #896](https://github.com/opensearch-project/performance-analyzer/pull/896): Upgrade to JDK25 and gradle 9.2.0
-- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
 
 ## Related Feature Report
 

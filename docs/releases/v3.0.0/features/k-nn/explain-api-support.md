@@ -132,17 +132,19 @@ No migration required. This is a new feature that enhances existing functionalit
 - Explain for k-NN search with nested fields does not return detailed explanations
 - The explain operation is expensive in terms of resources and time; use sparingly in production
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN query explain documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/k-nn/k-nn-explain/): Official documentation
+- [Explain API documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/explain/): General Explain API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2403](https://github.com/opensearch-project/k-NN/pull/2403) | Added Explain API support for Exact/ANN/Radial/Disk based KNN search on Faiss Engine |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #875](https://github.com/opensearch-project/k-NN/issues/875): Original feature request - Explain API not compatible with k-NN queries
-- [k-NN query explain documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/k-nn/k-nn-explain/): Official documentation
-- [Explain API documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/explain/): General Explain API reference
 
 ## Related Feature Report
 

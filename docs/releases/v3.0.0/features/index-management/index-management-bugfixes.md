@@ -73,8 +73,13 @@ Fixed build issues related to the deprecation of SecurityManager in favor of Jav
 - The `unfollow` action requires the cross-cluster-replication plugin to be installed
 - Target index settings for rollup only apply when creating a new target index
 
-## Related PRs
+## References
 
+### Documentation
+- [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
+- [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | Adding unfollow action in ISM to invoke stop replication for CCR |
@@ -83,12 +88,9 @@ Fixed build issues related to the deprecation of SecurityManager in favor of Jav
 | [#1404](https://github.com/opensearch-project/index-management/pull/1404) | Fix build due to phasing off SecurityManager usage in favor of Java Agent |
 | [#1308](https://github.com/opensearch-project/index-management/pull/1308) | Bump codecov/codecov-action from 1 to 5 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Original feature request for unfollow action
 - [Issue #1376](https://github.com/opensearch-project/index-management/issues/1376): Target index settings feature request
-- [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
-- [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/)
 
 ## Related Feature Report
 

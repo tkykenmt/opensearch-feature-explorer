@@ -124,8 +124,13 @@ PUT /binary-index
 - Rescore is only supported for `faiss` and `lucene` engines (not `nmslib`)
 - The derived source optimization requires the preindex listener to be called before writeField
 
-## Related PRs
+## References
 
+### Documentation
+- [Memory-optimized vectors documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/): Official docs on compression and rescoring
+- [k-NN query documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/k-nn/index/): k-NN query reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2735](https://github.com/opensearch-project/k-NN/pull/2735) | Integrate LuceneOnFaiss memory-optimized search into KNNWeight |
@@ -135,11 +140,8 @@ PUT /binary-index
 | [#2351](https://github.com/opensearch-project/k-NN/pull/2351) | Remove redundant type conversions for script scoring with binary vectors |
 | [#2727](https://github.com/opensearch-project/k-NN/pull/2727) | Refactor Knn Search Results to use TopDocs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1827](https://github.com/opensearch-project/k-NN/issues/1827): Remove double converting for script scoring with binary vector
-- [Memory-optimized vectors documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/): Official docs on compression and rescoring
-- [k-NN query documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/k-nn/index/): k-NN query reference
 
 ## Related Feature Report
 

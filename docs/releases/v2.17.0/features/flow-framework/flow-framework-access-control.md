@@ -125,17 +125,19 @@ All Flow Framework APIs now support backend role filtering:
 - Users with `flow_framework_read_access` can still view results of any workflow (security consideration)
 - The feature follows the same pattern as Anomaly Detection; changing backend roles after creation is not supported in this release
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.17/automating-configurations/workflow-security/): Workflow template security
+- [Documentation PR #8076](https://github.com/opensearch-project/documentation-website/pull/8076): Documentation for this feature
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#838](https://github.com/opensearch-project/flow-framework/pull/838) | Adds user level access control based on backend roles |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #668](https://github.com/opensearch-project/flow-framework/issues/668): Feature request for backend role-based access control
-- [Documentation](https://docs.opensearch.org/2.17/automating-configurations/workflow-security/): Workflow template security
-- [Documentation PR #8076](https://github.com/opensearch-project/documentation-website/pull/8076): Documentation for this feature
 
 ## Related Feature Report
 

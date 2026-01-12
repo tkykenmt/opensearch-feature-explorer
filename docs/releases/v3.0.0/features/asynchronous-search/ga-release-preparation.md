@@ -41,8 +41,14 @@ This release item contains no new features or API changes. The asynchronous-sear
 - No new features introduced in this release
 - This is a maintenance release for GA version alignment
 
-## Related PRs
+## References
 
+### Documentation
+- [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
+- [Asynchronous Search Security](https://docs.opensearch.org/3.0/search-plugins/async/security/)
+- [Asynchronous Search Settings](https://docs.opensearch.org/3.0/search-plugins/async/settings/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#724](https://github.com/opensearch-project/asynchronous-search/pull/724) | Increment version to 3.0.0-SNAPSHOT |
@@ -50,11 +56,7 @@ This release item contains no new features or API changes. The asynchronous-sear
 | [#698](https://github.com/opensearch-project/asynchronous-search/pull/698) | Update main branch for 3.0.0.0-alpha1 / gradle 8.10.2 / JDK23 |
 | [#582](https://github.com/opensearch-project/asynchronous-search/pull/582) | Set JDK21 as the baseline for the 3.0 major version |
 
-## References
-
-- [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
-- [Asynchronous Search Security](https://docs.opensearch.org/3.0/search-plugins/async/security/)
-- [Asynchronous Search Settings](https://docs.opensearch.org/3.0/search-plugins/async/settings/)
+### Issues (Design / RFC)
 - [Issue #318](https://github.com/opensearch-project/asynchronous-search/issues/318): 3.0.0 release tracking
 
 ## Related Feature Report

@@ -204,21 +204,23 @@ POST _plugins/_sm/policies/monitored-backup
 - Large repositories require more memory on the cluster manager node
 - Multiple policies with overlapping schedules and indexes may impact performance
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01): Added optional creation workflow, snapshot pattern support for deletion, and ISM snapshot global state fix
+
+## References
+
+### Documentation
+- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
+- [Snapshot Management API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/sm-api/)
+- [OpenSearch Dashboards SM](https://docs.opensearch.org/3.0/dashboards/sm-dashboards/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#1452](https://github.com/opensearch-project/index-management/pull/1452) | Add support for deletion-only policies and snapshot patterns |
 | v3.3.0 | [#1480](https://github.com/opensearch-project/index-management/pull/1480) | Exclude global state from ISM snapshot action |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #867](https://github.com/opensearch-project/index-management/issues/867): Feature request for deletion-only SM policies
 - [Issue #1479](https://github.com/opensearch-project/index-management/issues/1479): Bug report for ISM snapshot global state
-- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
-- [Snapshot Management API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/sm-api/)
-- [OpenSearch Dashboards SM](https://docs.opensearch.org/3.0/dashboards/sm-dashboards/)
-
-## Change History
-
-- **v3.3.0** (2026-01): Added optional creation workflow, snapshot pattern support for deletion, and ISM snapshot global state fix

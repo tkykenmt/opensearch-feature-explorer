@@ -47,15 +47,15 @@ No migration required. This is a transparent fix that ensures correct dependency
 
 None specific to this release.
 
-## Related PRs
+## References
 
+### Documentation
+- [Skills Repository](https://github.com/opensearch-project/skills): Source code
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#575](https://github.com/opensearch-project/skills/pull/575) | Fix conflict in dependency versions |
-
-## References
-
-- [Skills Repository](https://github.com/opensearch-project/skills): Source code
 
 ## Related Feature Report
 

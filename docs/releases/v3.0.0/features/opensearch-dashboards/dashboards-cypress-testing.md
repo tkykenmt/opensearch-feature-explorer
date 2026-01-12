@@ -60,8 +60,9 @@ yarn run cypress run --spec "cypress/integration/discover/sidebar.spec.js"
 - Some tests may require specific test data setup
 - Tests are designed for Discover 2.0 features and may not cover legacy Discover
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9154](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9154) | Refactor TESTID-140 sidebar spec and clean up |
@@ -83,8 +84,7 @@ yarn run cypress run --spec "cypress/integration/discover/sidebar.spec.js"
 | [#9490](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9490) | Clear session storage in S3 integ test |
 | [#9628](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9628) | Reenable saved search cypress tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8946](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8946): TESTID-140 Sidebar testing
 - [Issue #8954](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8954): Sharing spec testing
 - [Issue #8955](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8955): Inspect functionality testing

@@ -184,8 +184,12 @@ public class SampleResourceExtension implements ResourceSharingExtension {
 - Resource type extraction happens during index operations via Lucene document inspection
 - Java APIs for share/revoke have been removed in favor of REST APIs
 
-## Related PRs
+## References
 
+### Documentation
+- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Complete developer guide
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#5713](https://github.com/opensearch-project/security/pull/5713) | security | Allow multiple sharable resource types in single resource index |
@@ -197,10 +201,8 @@ public class SampleResourceExtension implements ResourceSharingExtension {
 | [#5799](https://github.com/opensearch-project/security/pull/5799) | security | Adds POST support for update sharing info API |
 | [#2338](https://github.com/opensearch-project/security-dashboards-plugin/pull/2338) | security-dashboards-plugin | Changes PATCH update sharing API to POST |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing - main tracking issue
-- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Complete developer guide
 
 ## Related Feature Report
 

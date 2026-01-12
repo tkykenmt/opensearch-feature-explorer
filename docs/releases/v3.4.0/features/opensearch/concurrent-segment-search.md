@@ -67,18 +67,20 @@ With concurrent segment search enabled (`search.concurrent_segment_search.mode: 
 - The optimization only applies when `_score` is the primary sort field
 - Queries with custom sort orders that don't use score as primary sort will not benefit from this optimization
 
-## Related PRs
+## References
 
+### Documentation
+- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+
+### Blog Posts
+- [Introducing concurrent segment search in OpenSearch](https://opensearch.org/blog/concurrent_segment_search/): Introduction blog post
+- [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19584](https://github.com/opensearch-project/OpenSearch/pull/19584) | Omit maxScoreCollector in SimpleTopDocsCollectorContext when concurrent segment search enabled |
 | [#19181](https://github.com/opensearch-project/OpenSearch/pull/19181) | Related: Omit maxScoreCollector for field collapsing when sort by score descending |
-
-## References
-
-- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
-- [Introducing concurrent segment search in OpenSearch](https://opensearch.org/blog/concurrent_segment_search/): Introduction blog post
-- [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
 
 ## Related Feature Report
 

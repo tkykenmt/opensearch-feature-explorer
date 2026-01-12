@@ -183,21 +183,23 @@ PUT my-index
 - Template matching is evaluated in order; first match wins
 - Deeply nested objects require templates for each level of the hierarchy
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025): Added `false_allow_templates` dynamic mapping option
+
+## References
+
+### Documentation
+- [Documentation: Dynamic mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/dynamic/): Official documentation
+- [Documentation: Mappings and field types](https://docs.opensearch.org/3.0/field-types/): Field types overview
+- [Documentation PR #10388](https://github.com/opensearch-project/documentation-website/pull/10388): Documentation update
+- [API Specification PR #944](https://github.com/opensearch-project/opensearch-api-specification/pull/944): API spec update
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19065](https://github.com/opensearch-project/OpenSearch/pull/19065) | Add `false_allow_templates` as a dynamic mapping option |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18617](https://github.com/opensearch-project/OpenSearch/issues/18617): Feature request for `false_allow_templates`
 - [Issue #11276](https://github.com/opensearch-project/OpenSearch/issues/11276): Related feature request
-- [Documentation: Dynamic mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/dynamic/): Official documentation
-- [Documentation: Mappings and field types](https://docs.opensearch.org/3.0/field-types/): Field types overview
-- [API Specification PR #944](https://github.com/opensearch-project/opensearch-api-specification/pull/944): API spec update
-- [Documentation PR #10388](https://github.com/opensearch-project/documentation-website/pull/10388): Documentation update
-
-## Change History
-
-- **v3.3.0** (2025): Added `false_allow_templates` dynamic mapping option

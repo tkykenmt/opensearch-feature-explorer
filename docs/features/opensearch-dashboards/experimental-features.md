@@ -156,20 +156,22 @@ curl -X POST 'http://localhost:5601/api/opensearch-dashboards/settings?scope=use
 - **No Version Migration**: User settings do not automatically migrate between OSD versions (unlike global settings)
 - **Single User Storage**: Settings are stored per username, not supporting multiple profiles per user
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-01-10): Improved UiSettingsClient robustness for non-existent setting keys
+- **v2.18.0** (2024-10-22): Initial implementation with user settings page, scoped uiSettings, and UserUISettingsClientWrapper
+
+## References
+
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): OpenSearch Dashboards Workspace
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#9927](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9927) | Make UI setting client more robust when setting key does not exist |
 | v2.18.0 | [#7953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7953) | Initial implementation of user level settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821): RFC - User level settings
 - [Issue #7909](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7909): User setting page feature request
-- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): OpenSearch Dashboards Workspace
-
-## Change History
-
-- **v3.2.0** (2026-01-10): Improved UiSettingsClient robustness for non-existent setting keys
-- **v2.18.0** (2024-10-22): Initial implementation with user settings page, scoped uiSettings, and UserUISettingsClientWrapper

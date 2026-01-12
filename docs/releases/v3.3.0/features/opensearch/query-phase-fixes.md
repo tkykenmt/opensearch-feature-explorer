@@ -103,16 +103,18 @@ No migration required. This is a bug fix that improves reliability of search ope
 - This fix addresses callback loop issues but does not change the fundamental architecture of incremental aggregation reduction
 - The fix is specific to the `QueryPhaseResultConsumer` class and does not affect other search phase consumers
 
-## Related PRs
+## References
 
+### Documentation
+- [Search API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/search/): OpenSearch Search API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19231](https://github.com/opensearch-project/OpenSearch/pull/19231) | Add graceful handling of failures in QueryPhaseResultConsumer |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19094](https://github.com/opensearch-project/OpenSearch/issues/19094): Flaky Test Report for SearchPhaseControllerTests
-- [Search API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/search/): OpenSearch Search API reference
 
 ## Related Feature Report
 

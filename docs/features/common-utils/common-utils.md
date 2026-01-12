@@ -124,8 +124,20 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 - User info format uses pipe delimiter, requiring escape handling for pipe characters in values
 - Library changes require coordinated updates across dependent plugins
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-16): Updated user attributes XContent parsing to use `key=value` format in `custom_attribute_names`, updated delete_backport_branch workflow to include release-chores branches
+- **v3.3.0** (2025-10-16): Added release notes for version 2.13.0.0 (backported to main branch)
+- **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
+- **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info
+
+## References
+
+### Documentation
+- [Common Utils Repository](https://github.com/opensearch-project/common-utils)
+- [CVE-2025-48734 Advisory](https://advisories.opensearch.org/advisories/CVE-2025-48734): Security advisory for commons-beanutils
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#878](https://github.com/opensearch-project/common-utils/pull/878) | Update user attributes XContent parsing logic |
@@ -138,17 +150,7 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 | v3.0.0 | [#790](https://github.com/opensearch-project/common-utils/pull/790) | Fix imports for split transport package |
 | v3.0.0 | [#801](https://github.com/opensearch-project/common-utils/pull/801) | Escape/Unescape pipe in UserInfo |
 
-## References
-
-- [Common Utils Repository](https://github.com/opensearch-project/common-utils)
-- [CVE-2025-48734 Advisory](https://advisories.opensearch.org/advisories/CVE-2025-48734): Security advisory for commons-beanutils
+### Issues (Design / RFC)
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username pipe character issue
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Manage CCR follower indices
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Custom attributes for Alerting
-
-## Change History
-
-- **v3.3.0** (2025-10-16): Updated user attributes XContent parsing to use `key=value` format in `custom_attribute_names`, updated delete_backport_branch workflow to include release-chores branches
-- **v3.3.0** (2025-10-16): Added release notes for version 2.13.0.0 (backported to main branch)
-- **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
-- **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info

@@ -299,19 +299,19 @@ POST _plugins/_anomaly_detection/detectors
 - Preview mode uses linear interpolation instead of configured imputation for efficiency
 - First imputation in a continuous missing area may generate NaN values that are not saved
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1274](https://github.com/opensearch-project/anomaly-detection/pull/1274) | Add Support for Handling Missing Data in Anomaly Detection |
-
-## References
-
-- [Forum Discussion](https://forum.opensearch.org/t/do-missing-buckets-ruin-anomaly-detection/16535): Original feature request
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Setting imputation options
-- [Anomaly Result Mapping](https://docs.opensearch.org/2.17/observing-your-data/ad/result-mapping/): feature_imputed field documentation
-- [Random Cut Forest Library](https://github.com/aws/random-cut-forest-by-aws): RCF 4.1.0 with missing data support
-
 ## Change History
 
 - **v2.17.0** (2024-09-17): Initial implementation with four imputation methods, feature_imputed tracking, HC detector broadcast support, historical analysis integration
+
+## References
+
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Setting imputation options
+- [Anomaly Result Mapping](https://docs.opensearch.org/2.17/observing-your-data/ad/result-mapping/): feature_imputed field documentation
+- [Forum Discussion](https://forum.opensearch.org/t/do-missing-buckets-ruin-anomaly-detection/16535): Original feature request
+- [Random Cut Forest Library](https://github.com/aws/random-cut-forest-by-aws): RCF 4.1.0 with missing data support
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#1274](https://github.com/opensearch-project/anomaly-detection/pull/1274) | Add Support for Handling Missing Data in Anomaly Detection |

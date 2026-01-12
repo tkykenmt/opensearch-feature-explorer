@@ -66,8 +66,12 @@ Users upgrading from v2.12-2.15 with threat intel enabled should note:
 - These fixes are backported from main branch; some may have been available in earlier 2.x releases
 - Multi-node environments should ensure all nodes are upgraded to v2.17.0 for consistent behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Threat Intelligence Documentation](https://docs.opensearch.org/2.17/security-analytics/threat-intelligence/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1207](https://github.com/opensearch-project/security-analytics/pull/1207) | User validation for threat intel transport layer |
@@ -82,9 +86,7 @@ Users upgrading from v2.12-2.15 with threat intel enabled should note:
 | [#1274](https://github.com/opensearch-project/security-analytics/pull/1274) | Fix threat intel multinode tests |
 | [#1278](https://github.com/opensearch-project/security-analytics/pull/1278) | Stash context for List IOCs API |
 
-## References
-
-- [Threat Intelligence Documentation](https://docs.opensearch.org/2.17/security-analytics/threat-intelligence/index/): Official documentation
+### Issues (Design / RFC)
 - [Issue #1224](https://github.com/opensearch-project/security-analytics/issues/1224): Lock release issue
 - [Issue #1247](https://github.com/opensearch-project/security-analytics/issues/1247): Job mapping upgrade issue
 - [Issue #1255](https://github.com/opensearch-project/security-analytics/issues/1255): Empty IOC index cleanup issue

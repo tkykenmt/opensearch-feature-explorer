@@ -97,8 +97,13 @@ public void testFlsFieldMasking() {
 - These are internal improvements with no user-facing changes
 - Test improvements are for development/CI purposes only
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Plugin Documentation](https://docs.opensearch.org/3.0/security/index/): OpenSearch Security plugin docs
+- [PR #5071](https://github.com/opensearch-project/security/pull/5071): Original flakiness fix for InternalAuditLogTest
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#5206](https://github.com/opensearch-project/security/pull/5206) | security | Tests for ConfigurationRepository class |
@@ -108,11 +113,8 @@ public void testFlsFieldMasking() {
 | [#5237](https://github.com/opensearch-project/security/pull/5237) | security | More tests for FLS and field masking |
 | [#17796](https://github.com/opensearch-project/OpenSearch/pull/17796) | OpenSearch | Enable TLS for Netty4GrpcServerTransport |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3255](https://github.com/opensearch-project/security/issues/3255): Test coverage improvement tracking
-- [PR #5071](https://github.com/opensearch-project/security/pull/5071): Original flakiness fix for InternalAuditLogTest
-- [Security Plugin Documentation](https://docs.opensearch.org/3.0/security/index/): OpenSearch Security plugin docs
 
 ## Related Feature Report
 

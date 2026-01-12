@@ -75,8 +75,19 @@ curl -s localhost:9200
 - Custom analyzers may need verification after Lucene upgrades
 - Some cloud SDK updates may require credential refresh
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Major dependency updates including Lucene 9.12.0, Netty 4.1.114.Final, gRPC 1.68.0, Protobuf 3.25.5, and 22 additional library updates
+
+## References
+
+### Documentation
+- [Apache Lucene](https://lucene.apache.org/)
+- [Netty Project](https://netty.io/)
+- [gRPC Java](https://github.com/grpc/grpc-java)
+- [Protocol Buffers](https://protobuf.dev/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Apache Lucene 9.12.0 |
@@ -84,14 +95,3 @@ curl -s localhost:9200
 | v2.18.0 | [#16213](https://github.com/opensearch-project/OpenSearch/pull/16213) | gRPC 1.68.0 |
 | v2.18.0 | [#15684](https://github.com/opensearch-project/OpenSearch/pull/15684) | Protobuf 3.25.4 |
 | v2.18.0 | [#16011](https://github.com/opensearch-project/OpenSearch/pull/16011) | Protobuf 3.25.5 |
-
-## References
-
-- [Apache Lucene](https://lucene.apache.org/)
-- [Netty Project](https://netty.io/)
-- [gRPC Java](https://github.com/grpc/grpc-java)
-- [Protocol Buffers](https://protobuf.dev/)
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Major dependency updates including Lucene 9.12.0, Netty 4.1.114.Final, gRPC 1.68.0, Protobuf 3.25.5, and 22 additional library updates

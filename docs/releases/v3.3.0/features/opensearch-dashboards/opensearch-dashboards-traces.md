@@ -150,8 +150,14 @@ graph TB
 - Start time rounding may occur if data lacks expected precision
 - Timeline waterfall requires proper span time range data
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
+- [Simple Schema for Observability](https://docs.opensearch.org/3.0/observing-your-data/ss4o/): SS4O schema definitions
+- [Observability Overview](https://docs.opensearch.org/3.0/observing-your-data/): OpenSearch observability features
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10386) | Add Correlations Saved Object Type Registration |
@@ -161,12 +167,6 @@ graph TB
 | [#10418](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10418) | Trace Details: Support external datasets |
 | [#10431](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10431) | Switch primary schema for trace details, disable service map |
 | [#10642](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10642) | Add Timeline waterfall bars column to SpanDetailTableHierarchy |
-
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
-- [Simple Schema for Observability](https://docs.opensearch.org/3.0/observing-your-data/ss4o/): SS4O schema definitions
-- [Observability Overview](https://docs.opensearch.org/3.0/observing-your-data/): OpenSearch observability features
 
 ## Related Feature Report
 

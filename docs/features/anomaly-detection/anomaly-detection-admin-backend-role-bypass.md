@@ -83,20 +83,22 @@ GET _plugins/_anomaly_detection/detectors/<matching_detector_id>
 - Custom admin roles require manual configuration
 - Feature requires Security plugin to be enabled
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Backported admin bypass feature to 2.x branch
+- **v2.7.0** (2023-04-11): Initial implementation of admin priority over backend role filtering
+
+## References
+
+### Documentation
+- [Anomaly Detection Security](https://docs.opensearch.org/latest/observing-your-data/ad/security/): Security documentation
+- [Backend Role Filtering](https://docs.opensearch.org/latest/observing-your-data/ad/security/#advanced-limit-access-by-backend-role): Backend role configuration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#859](https://github.com/opensearch-project/anomaly-detection/pull/859) | Backport: Admin priority over backend role filtering |
 | v2.7.0 | [#850](https://github.com/opensearch-project/anomaly-detection/pull/850) | Initial implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #842](https://github.com/opensearch-project/anomaly-detection/issues/842): Original feature request
-- [Anomaly Detection Security](https://docs.opensearch.org/latest/observing-your-data/ad/security/): Security documentation
-- [Backend Role Filtering](https://docs.opensearch.org/latest/observing-your-data/ad/security/#advanced-limit-access-by-backend-role): Backend role configuration
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Backported admin bypass feature to 2.x branch
-- **v2.7.0** (2023-04-11): Initial implementation of admin priority over backend role filtering

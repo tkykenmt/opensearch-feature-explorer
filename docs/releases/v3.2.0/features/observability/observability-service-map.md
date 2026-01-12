@@ -69,16 +69,18 @@ After updating these settings, the service map will request up to the configured
 - Settings apply globally to all users in the tenant
 - Minimum value is 1 for both settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/latest/observing-your-data/trace/ta-dashboards/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2472](https://github.com/opensearch-project/dashboards-observability/pull/2472) | [Traces] Make service map max nodes and max edges values user-configurable |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2471](https://github.com/opensearch-project/dashboards-observability/issues/2471): Feature request for configurable service map limits
-- [Trace Analytics Documentation](https://docs.opensearch.org/latest/observing-your-data/trace/ta-dashboards/): Official documentation
 
 ## Related Feature Report
 

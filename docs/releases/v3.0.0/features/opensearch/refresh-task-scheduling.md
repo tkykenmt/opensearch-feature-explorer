@@ -99,17 +99,19 @@ PUT _cluster/settings
 - When refresh duration exceeds the configured interval, refreshes are scheduled immediately (no backpressure mechanism)
 - Staggered start only applies to the initial refresh; subsequent refreshes follow the calculated schedule
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Background on refresh interval optimization
+- [Blog: Adaptive refresh for resilient segment replication](https://opensearch.org/blog/adaptive-refresh-for-resilient-segment-replication/): Related refresh improvements
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17777](https://github.com/opensearch-project/OpenSearch/pull/17777) | Implement fixed interval refresh task scheduling |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes
-- [Blog: Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Background on refresh interval optimization
-- [Blog: Adaptive refresh for resilient segment replication](https://opensearch.org/blog/adaptive-refresh-for-resilient-segment-replication/): Related refresh improvements
 
 ## Related Feature Report
 

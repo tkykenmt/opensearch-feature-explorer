@@ -165,19 +165,21 @@ This is a new feature with no migration required. To use batch ingestion:
 - Credentials must be provided in plaintext in the request body
 - No automatic retry mechanism for failed document ingestion
 
-## Related PRs
+## References
 
+### Documentation
+- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
+- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/async-batch-ingest/): API reference
+- [Batch Predict API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/model-apis/batch-predict/): Related batch prediction API
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters |
 | [#2825](https://github.com/opensearch-project/ml-commons/pull/2825) | Support get batch transform job status in get task API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2840](https://github.com/opensearch-project/ml-commons/issues/2840): Offline Batch Inference and Batch Ingestion
-- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
-- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/async-batch-ingest/): API reference
-- [Batch Predict API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/model-apis/batch-predict/): Related batch prediction API
 
 ## Related Feature Report
 

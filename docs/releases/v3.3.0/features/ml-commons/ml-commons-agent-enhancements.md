@@ -117,19 +117,21 @@ GET /_plugins/_ml/agents/<agent_id>
 - Model tags cache is cleared on each metrics collection run
 - Batch size for agent metrics collection is limited to 10,000 agents
 
-## Related PRs
+## References
 
+### Documentation
+- [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/): Official agent API documentation
+- [Get Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/get-agent/): Get agent endpoint documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4180](https://github.com/opensearch-project/ml-commons/pull/4180) | Add Get Agent to ML Client |
 | [#4221](https://github.com/opensearch-project/ml-commons/pull/4221) | Introduce agent metrics & Add is_hidden tag for model metrics |
 | [#4198](https://github.com/opensearch-project/ml-commons/pull/4198) | Update interaction with failure message on agent execution failure |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4197](https://github.com/opensearch-project/ml-commons/issues/4197): Feature request for failure message updates
-- [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/): Official agent API documentation
-- [Get Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/get-agent/): Get agent endpoint documentation
 
 ## Related Feature Report
 

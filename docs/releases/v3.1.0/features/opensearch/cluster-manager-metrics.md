@@ -121,19 +121,21 @@ The `fsHealth.failure.count` metric increments each time a filesystem health che
 - Node left metrics require the metrics framework to be enabled
 - FS health check metrics are only emitted when health checks are enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT Pending Tasks API](https://docs.opensearch.org/3.0/api-reference/cat/cat-pending-tasks/): API documentation
+- [Metrics Reference](https://docs.opensearch.org/3.0/monitoring-your-cluster/pa/reference/): Performance Analyzer metrics
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17780](https://github.com/opensearch-project/OpenSearch/pull/17780) | Added time_in_execution attribute to /_cluster/pending_tasks response |
 | [#18421](https://github.com/opensearch-project/OpenSearch/pull/18421) | Added node-left metric to cluster manager |
 | [#18435](https://github.com/opensearch-project/OpenSearch/pull/18435) | Added FS Health Check Failure metric |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11818](https://github.com/opensearch-project/OpenSearch/issues/11818): Feature request for latency metrics of task execution
-- [CAT Pending Tasks API](https://docs.opensearch.org/3.0/api-reference/cat/cat-pending-tasks/): API documentation
-- [Metrics Reference](https://docs.opensearch.org/3.0/monitoring-your-cluster/pa/reference/): Performance Analyzer metrics
 
 ## Related Feature Report
 

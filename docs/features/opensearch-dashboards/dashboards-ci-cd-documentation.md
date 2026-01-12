@@ -92,8 +92,16 @@ For Cypress testing, an alternative Docker development environment is available:
 - Docker development environment is optimized for Cypress testing scenarios
 - License validation may require updates when adding new dependencies
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): CI/CD hardening, Discover 2.0 documentation, Docker development environment, pre-commit hooks for developer docs
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9064](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9064) | CI hardening: lockfile, license validation, actions bump |
@@ -105,11 +113,3 @@ For Cypress testing, an alternative Docker development environment is available:
 | v3.0.0 | [#9467](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9467) | Add Joey Liu as maintainer |
 | v3.0.0 | [#9525](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9525) | Getting started with Discover 2.0 |
 | v3.0.0 | [#6585](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6585) | Pre-commit hook for developer docs |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-
-## Change History
-
-- **v3.0.0** (2025-05-06): CI/CD hardening, Discover 2.0 documentation, Docker development environment, pre-commit hooks for developer docs

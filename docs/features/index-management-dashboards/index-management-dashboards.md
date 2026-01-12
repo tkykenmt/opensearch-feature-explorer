@@ -110,8 +110,19 @@ graph TB
 - Some operations require appropriate security permissions
 - Multi-Data Source support requires MDS to be enabled in Dashboards
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Comprehensive UI/UX improvements implementing "Look and Feel" and "Fit and Finish" design guidelines across all pages, navigation redesign, notification modal, MDS support for Shrink page, history navigation bug fixes
+
+## References
+
+### Documentation
+- [Index Management Documentation](https://docs.opensearch.org/2.17/dashboards/im-dashboards/index/)
+- [Snapshot Management Documentation](https://docs.opensearch.org/2.17/dashboards/sm-dashboards/)
+- [Index State Management Documentation](https://docs.opensearch.org/2.17/im-plugin/ism/index/)
+- [Index Management Dashboards Plugin Repository](https://github.com/opensearch-project/index-management-dashboards-plugin)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#1106](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1106) | Navigation redesign |
@@ -127,14 +138,3 @@ graph TB
 | v2.17.0 | [#1157](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1157) | Snapshot Management pages styling |
 | v2.17.0 | [#1164](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1164) | Job count in titles |
 | v2.17.0 | [#1166](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1166) | History navigation bug fixes |
-
-## References
-
-- [Index Management Documentation](https://docs.opensearch.org/2.17/dashboards/im-dashboards/index/)
-- [Snapshot Management Documentation](https://docs.opensearch.org/2.17/dashboards/sm-dashboards/)
-- [Index State Management Documentation](https://docs.opensearch.org/2.17/im-plugin/ism/index/)
-- [Index Management Dashboards Plugin Repository](https://github.com/opensearch-project/index-management-dashboards-plugin)
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Comprehensive UI/UX improvements implementing "Look and Feel" and "Fit and Finish" design guidelines across all pages, navigation redesign, notification modal, MDS support for Shrink page, history navigation bug fixes

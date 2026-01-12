@@ -86,16 +86,18 @@ curl -XGET "https://localhost:9200/_plugins/_security/health"
 - The health check only validates initialization status, not ongoing operational health
 - In `lenient` mode, the initialization checks are bypassed
 
-## Related PRs
+## References
 
+### Documentation
+- [Security API Documentation](https://docs.opensearch.org/3.0/security/access-control/api/): Official Security plugin API docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5626](https://github.com/opensearch-project/security/pull/5626) | Add AuthZ initialization completion check in health check API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5603](https://github.com/opensearch-project/security/issues/5603): Security Initialization Issues (bug report)
-- [Security API Documentation](https://docs.opensearch.org/3.0/security/access-control/api/): Official Security plugin API docs
 
 ## Related Feature Report
 

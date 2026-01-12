@@ -166,19 +166,23 @@ data: {"inference_results":[{"output":[{"name":"response","dataAsMap":{"content"
 - **Agent Type**: Execute Stream Agent API only supports conversational agents
 - **Security Configuration**: Requires specific HTTP type configuration for security-enabled clusters
 
-## Related PRs
+## References
 
+### Documentation
+- [Predict Stream API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/train-predict/predict-stream/)
+- [Execute Stream Agent API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/agent-apis/execute-stream-agent/)
+
+### Blog Posts
+- [Blog: Introducing real-time streaming for AI models and agents](https://opensearch.org/blog/introducing-real-time-streaming-for-ai-models-and-agents-in-opensearch/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [ml-commons#4187](https://github.com/opensearch-project/ml-commons/pull/4187) | [FEATURE] Predict Stream - adds model prediction streaming |
 | [ml-commons#4212](https://github.com/opensearch-project/ml-commons/pull/4212) | [FEATURE] Agent Execute Stream - adds agent execution streaming |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue ml-commons#3630](https://github.com/opensearch-project/ml-commons/issues/3630): RFC for Remote Model Inference Streaming
-- [Predict Stream API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/train-predict/predict-stream/)
-- [Execute Stream Agent API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/agent-apis/execute-stream-agent/)
-- [Blog: Introducing real-time streaming for AI models and agents](https://opensearch.org/blog/introducing-real-time-streaming-for-ai-models-and-agents-in-opensearch/)
 
 ## Related Feature Report
 

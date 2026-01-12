@@ -141,18 +141,20 @@ yellow open   logs    abc123def456ghi789jkl   5   1     100000     50.2mb
 - Timestamp columns reset when shards are relocated or nodes restart
 - Mixed-version clusters may show incomplete data for newer columns
 
-## Related PRs
+## Change History
 
+- **v3.2.0**: Added `last_index_request_timestamp` and `last_index_request_timestamp_string` columns to track indexing activity
+
+## References
+
+### Documentation
+- [CAT indices API Documentation](https://docs.opensearch.org/3.0/api-reference/cat/cat-indices/)
+- [CAT API Overview](https://docs.opensearch.org/3.0/api-reference/cat/index/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18405](https://github.com/opensearch-project/OpenSearch/pull/18405) | Add last index request timestamp columns |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10766](https://github.com/opensearch-project/OpenSearch/issues/10766): Stats API to identify which indices are getting updates
-- [CAT indices API Documentation](https://docs.opensearch.org/3.0/api-reference/cat/cat-indices/)
-- [CAT API Overview](https://docs.opensearch.org/3.0/api-reference/cat/index/)
-
-## Change History
-
-- **v3.2.0**: Added `last_index_request_timestamp` and `last_index_request_timestamp_string` columns to track indexing activity

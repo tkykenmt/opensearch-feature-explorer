@@ -101,18 +101,18 @@ The query string length limit helps protect against:
 - Does not limit other query types or overall request body size
 - Length check occurs at parse time, not at request receipt
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Introduced search.query.max_query_string_length setting |
-
-## References
-
-- [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Initial implementation
-- [Query String Query](https://docs.opensearch.org/latest/query-dsl/full-text/query-string/): Query string syntax documentation
-- [Search Settings](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/search-settings/): Search configuration reference
-
 ## Change History
 
 - **v3.3.0** (2025-10-01): Added `search.query.max_query_string_length` setting to limit query string length
+
+## References
+
+### Documentation
+- [Query String Query](https://docs.opensearch.org/latest/query-dsl/full-text/query-string/): Query string syntax documentation
+- [Search Settings](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/search-settings/): Search configuration reference
+- [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Initial implementation
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Introduced search.query.max_query_string_length setting |

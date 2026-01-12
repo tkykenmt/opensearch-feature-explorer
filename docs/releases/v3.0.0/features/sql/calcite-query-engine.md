@@ -177,8 +177,15 @@ POST /_plugins/_ppl
 - Pagination/cursor not supported in Calcite engine
 - Aggregation over expressions has limited support
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+
+### Blog Posts
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Feature announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3249](https://github.com/opensearch-project/sql/pull/3249) | Framework of Calcite Engine: Parser, Catalog Binding and Plan Converter |
@@ -219,14 +226,11 @@ POST /_plugins/_ppl
 | [#3549](https://github.com/opensearch-project/sql/pull/3549) | Support UDT for BINARY |
 | [#3558](https://github.com/opensearch-project/sql/pull/3558) | Support CASE function |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3250](https://github.com/opensearch-project/sql/issues/3250): Calcite Engine Framework
 - [Issue #3356](https://github.com/opensearch-project/sql/issues/3356): PPL Join Command
 - [Issue #3358](https://github.com/opensearch-project/sql/issues/3358): Lookup Command
 - [Issue #3451](https://github.com/opensearch-project/sql/issues/3451): Enable Calcite by Default
-- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Feature announcement
 
 ## Related Feature Report
 

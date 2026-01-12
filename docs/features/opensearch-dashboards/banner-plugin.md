@@ -194,8 +194,15 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 - Single banner only (no stacking)
 - UI Settings changes require page reload (v3.2.0)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-08-08): Refactored extensibility model via Chrome Service, removed `injectedMetadata` dependency, added `setGlobalBanner`/`getGlobalBanner$` APIs
+- **v3.2.0** (2026-01-10): Added UI Settings support for dynamic banner configuration via Advanced Settings
+- **v3.2.0** (2026-01-10): Initial implementation with static banner, feature flag, markdown support, and dismissal functionality
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#10324](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10324) | Refactor Banner Extensibility Model via Chrome Service |
@@ -204,14 +211,7 @@ The Banner Plugin was created as a standalone plugin rather than extending the e
 | v3.2.0 | [#10251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10251) | Fix font size and center alignment |
 | v3.2.0 | [#10254](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10254) | Reset lighthouse baseline |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10223](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10223): Banner extensibility model refactor
 - [Issue #9861](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9861): RFC - OpenSearch Dashboards Banner Plugin
 - [Issue #9990](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9990): Meta issue tracking banner plugin development
-
-## Change History
-
-- **v3.3.0** (2025-08-08): Refactored extensibility model via Chrome Service, removed `injectedMetadata` dependency, added `setGlobalBanner`/`getGlobalBanner$` APIs
-- **v3.2.0** (2026-01-10): Added UI Settings support for dynamic banner configuration via Advanced Settings
-- **v3.2.0** (2026-01-10): Initial implementation with static banner, feature flag, markdown support, and dismissal functionality

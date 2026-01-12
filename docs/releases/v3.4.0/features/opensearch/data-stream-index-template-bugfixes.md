@@ -85,17 +85,19 @@ No migration required. This is a bugfix that enables previously blocked operatio
 - The fix only applies to composable index templates (v2 templates)
 - Legacy index templates are not affected by this change
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Streams Documentation](https://docs.opensearch.org/3.0/im-plugin/data-streams/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20102](https://github.com/opensearch-project/OpenSearch/pull/20102) | Fix deletion failure of unused index template matching data stream |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #20078](https://github.com/opensearch-project/OpenSearch/issues/20078): Original bug report
 - [Issue #9194](https://github.com/opensearch-project/OpenSearch/issues/9194): Related earlier fix for non-data-stream templates
-- [Data Streams Documentation](https://docs.opensearch.org/3.0/im-plugin/data-streams/): Official docs
 
 ## Related Feature Report
 

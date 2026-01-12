@@ -109,19 +109,19 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 - The `recencyEmphasis` parameter now requires a minimum value of 2 (previously allowed 1)
 - DataSourceView no longer filters data sources by version compatibility in AD plugin
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection API](https://docs.opensearch.org/2.17/observing-your-data/ad/api/): API reference
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1287](https://github.com/opensearch-project/anomaly-detection/pull/1287) | anomaly-detection | Prevent resetting latest flag of real-time when starting historical analysis |
 | [#1292](https://github.com/opensearch-project/anomaly-detection/pull/1292) | anomaly-detection | Correct handling of null max aggregation values in SearchResponse |
 | [#828](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/828) | anomaly-detection-dashboards-plugin | Fix dataSourceId not showing in URL on Overview landing page |
 | [#837](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/837) | anomaly-detection-dashboards-plugin | Remove dataSourceFilter that breaks DataSourceView |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection API](https://docs.opensearch.org/2.17/observing-your-data/ad/api/): API reference
 
 ## Related Feature Report
 

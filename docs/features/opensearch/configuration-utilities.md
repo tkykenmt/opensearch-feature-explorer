@@ -116,17 +116,17 @@ The utility provides consistent, informative error messages:
 - No built-in support for list/array properties
 - No support for enum parsing
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17223](https://github.com/opensearch-project/OpenSearch/pull/17223) | Initial implementation |
-
-## References
-
-- [PR #17223](https://github.com/opensearch-project/OpenSearch/pull/17223): Implementation PR
-- [Ingest Processors](https://docs.opensearch.org/3.0/ingest-pipelines/processors/index-processors/): Related configuration patterns
-
 ## Change History
 
 - **v3.0.0** (2025-02-05): Initial implementation - Added ConfigurationUtils to core library with support for string, boolean, int, and double property parsing
+
+## References
+
+### Documentation
+- [Ingest Processors](https://docs.opensearch.org/3.0/ingest-pipelines/processors/index-processors/): Related configuration patterns
+- [PR #17223](https://github.com/opensearch-project/OpenSearch/pull/17223): Implementation PR
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#17223](https://github.com/opensearch-project/OpenSearch/pull/17223) | Initial implementation |

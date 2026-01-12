@@ -185,8 +185,20 @@ opensearch.experimental.feature.merged_segment_warmer.enabled: true
 - Not applicable to document replication indexes
 - Failures during warming are logged but do not block merge operations
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-12-09): GA graduation - Removed experimental feature flag; feature now controlled by dynamic cluster setting `indices.replication.merges.warmer.enabled`; Added segment size threshold filtering (`min_segment_size_threshold`, default 500MB); Added cluster-level merge scheduler settings (`ClusterMergeSchedulerConfig`); Added min node version check (V_3_4_0); Bugfixes for exception handling and EngineConfig builder
+- **v3.3.0** (2025-10-14): Added comprehensive metrics for monitoring segment warmer operations - `MergedSegmentTransferTracker` and `MergedSegmentWarmerStats` expose invocation counts, timing, bytes transferred, and failure counts via stats APIs
+- **v3.2.0** (2025-08-05): Added remote store support - merged segments are uploaded to remote store and replicated to replicas via `RemoteStorePublishMergedSegmentAction`
+- **v3.0.0** (2025-05-06): Initial implementation - introduced `MergedSegmentWarmerFactory` with `LocalMergedSegmentWarmer` and `RemoteStoreMergedSegmentWarmer` infrastructure
+
+## References
+
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official docs
+- [Remote-backed Storage Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19715](https://github.com/opensearch-project/OpenSearch/pull/19715) | Remove experimental feature flag - GA graduation |
@@ -198,17 +210,7 @@ opensearch.experimental.feature.merged_segment_warmer.enabled: true
 | v3.0.0 | [#18255](https://github.com/opensearch-project/OpenSearch/pull/18255) | Local merged segment warmer implementation |
 | v3.0.0 | [#17881](https://github.com/opensearch-project/OpenSearch/pull/17881) | Initial implementation - MergedSegmentWarmerFactory infrastructure |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment into Segment Replication
 - [Issue #18625](https://github.com/opensearch-project/OpenSearch/issues/18625): META - Merged segment pre-copy tracking issue
 - [Issue #1694](https://github.com/opensearch-project/OpenSearch/issues/1694): Original Segment Replication feature request
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official docs
-- [Remote-backed Storage Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs
-
-## Change History
-
-- **v3.4.0** (2025-12-09): GA graduation - Removed experimental feature flag; feature now controlled by dynamic cluster setting `indices.replication.merges.warmer.enabled`; Added segment size threshold filtering (`min_segment_size_threshold`, default 500MB); Added cluster-level merge scheduler settings (`ClusterMergeSchedulerConfig`); Added min node version check (V_3_4_0); Bugfixes for exception handling and EngineConfig builder
-- **v3.3.0** (2025-10-14): Added comprehensive metrics for monitoring segment warmer operations - `MergedSegmentTransferTracker` and `MergedSegmentWarmerStats` expose invocation counts, timing, bytes transferred, and failure counts via stats APIs
-- **v3.2.0** (2025-08-05): Added remote store support - merged segments are uploaded to remote store and replicated to replicas via `RemoteStorePublishMergedSegmentAction`
-- **v3.0.0** (2025-05-06): Initial implementation - introduced `MergedSegmentWarmerFactory` with `LocalMergedSegmentWarmer` and `RemoteStoreMergedSegmentWarmer` infrastructure

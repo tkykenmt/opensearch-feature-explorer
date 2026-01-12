@@ -120,8 +120,16 @@ source=apache_logs | grok message '%{COMMONAPACHELOG}'
 - `flatten` works only with struct/object fields, not arrays
 - `grok` patterns must be valid Grok syntax
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL command reference
+- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Calcite engine configuration
+
+### Blog Posts
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): PPL 3.0 feature announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3738](https://github.com/opensearch-project/sql/pull/3738) | Support ResourceMonitor with Calcite |
@@ -145,11 +153,7 @@ source=apache_logs | grok message '%{COMMONAPACHELOG}'
 | [#3585](https://github.com/opensearch-project/sql/pull/3585) | Support `eventstats` command with Calcite |
 | [#3570](https://github.com/opensearch-project/sql/pull/3570) | Calcite patterns command brain pattern method |
 
-## References
-
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL command reference
-- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Calcite engine configuration
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): PPL 3.0 feature announcement
+### Issues (Design / RFC)
 - [Issue #3454](https://github.com/opensearch-project/sql/issues/3454): ResourceMonitor feature request
 - [Issue #3563](https://github.com/opensearch-project/sql/issues/3563): eventstats feature request
 - [Issue #3464](https://github.com/opensearch-project/sql/issues/3464): top/rare commands feature request

@@ -86,18 +86,20 @@ This enhancement supports:
 - The `search_config` values are currently hardcoded to "teamA" and "teamB"
 - Distribution probabilities (50/50 for impressions, 60/40 for clicks) are fixed and not configurable via command-line arguments
 
-## Related PRs
+## References
 
+### Documentation
+- [User Behavior Insights Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official UBI documentation
+- [Chorus OpenSearch Edition PR #159](https://github.com/o19s/chorus-opensearch-edition/pull/159): Related implementation in Chorus
+- [UBI Data Generator](https://github.com/opensearch-project/user-behavior-insights/tree/main/ubi-data-generator): Source code for the data generator
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#102](https://github.com/opensearch-project/user-behavior-insights/pull/102) | Adding a field to store the A/B TDI configs per event in the data generator |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC: Team Draft Interleaving for A/B Testing](https://github.com/opensearch-project/OpenSearch/issues/18383): Original RFC for TDI A/B testing in OpenSearch
-- [Chorus OpenSearch Edition PR #159](https://github.com/o19s/chorus-opensearch-edition/pull/159): Related implementation in Chorus
-- [User Behavior Insights Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official UBI documentation
-- [UBI Data Generator](https://github.com/opensearch-project/user-behavior-insights/tree/main/ubi-data-generator): Source code for the data generator
 
 ## Related Feature Report
 

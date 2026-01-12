@@ -50,8 +50,14 @@ These dependency updates are transparent to users. No configuration changes are 
 - Kafka 4.0.0 upgrade required internal test adjustments but does not affect user-facing functionality
 - Some dependency updates are automated via Dependabot and follow standard security plugin review processes
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2024-52798 Advisory](https://advisories.opensearch.org/advisories/CVE-2024-52798): Security vulnerability fixed in this release
+- [Bouncy Castle Release Notes](https://github.com/bcgit/bc-java/blob/main/docs/releasenotes.html): Cryptographic library updates
+- [Apache Kafka 4.0.0](https://kafka.apache.org/): Major version upgrade details
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#5380](https://github.com/opensearch-project/security/pull/5380) | security | Bump bouncycastle_version from 1.80 to 1.81 |
@@ -78,12 +84,6 @@ These dependency updates are transparent to users. No configuration changes are 
 | [#1517](https://github.com/opensearch-project/security/pull/1517) | security | Increment version to 3.1.0-SNAPSHOT |
 | [#1301](https://github.com/opensearch-project/security/pull/1301) | security | Increment version to 3.1.0.0 |
 | [#2231](https://github.com/opensearch-project/security-dashboards-plugin/pull/2231) | security-dashboards-plugin | Fix CVE-2024-52798 |
-
-## References
-
-- [CVE-2024-52798 Advisory](https://advisories.opensearch.org/advisories/CVE-2024-52798): Security vulnerability fixed in this release
-- [Bouncy Castle Release Notes](https://github.com/bcgit/bc-java/blob/main/docs/releasenotes.html): Cryptographic library updates
-- [Apache Kafka 4.0.0](https://kafka.apache.org/): Major version upgrade details
 
 ## Related Feature Report
 

@@ -117,23 +117,25 @@ PATCH _plugins/_security/api/roles/my_role
 - Large clusters may experience slower autocomplete due to mapping retrieval
 - PATCH requests require the request body to be a JSON array (JSON Patch format)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-10-14): Added support for PATCH HTTP method with JSON array body parsing
+- **v3.4.0** (2025-10-03): Fixed bug where `console_polling` setting could not be updated through the UI
+
+## References
+
+### Documentation
+- [Dev Tools Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/index-dev/): Dev Tools overview
+- [Running Queries Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Running queries in the Dev Tools console
+- [Security API Documentation](https://docs.opensearch.org/latest/security/access-control/api/): OpenSearch Security plugin PATCH APIs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10361) | Add support for PATCH method in dev tools |
 | v3.4.0 | [#10595](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10595) | Fix: Allow updating of console_polling through the UI |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10105](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10105): Bug report - PATCH API calls not supported in DevTools console
 - [Issue #2343](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/2343): Feature request - Dev Tools should support PATCH method
 - [Issue #10544](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10544): Bug report - Cannot update console_polling value through UI
-- [Dev Tools Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/index-dev/): Dev Tools overview
-- [Running Queries Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Running queries in the Dev Tools console
-- [Security API Documentation](https://docs.opensearch.org/latest/security/access-control/api/): OpenSearch Security plugin PATCH APIs
-
-## Change History
-
-- **v3.4.0** (2025-10-14): Added support for PATCH HTTP method with JSON array body parsing
-- **v3.4.0** (2025-10-03): Fixed bug where `console_polling` setting could not be updated through the UI

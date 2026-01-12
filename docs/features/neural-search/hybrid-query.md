@@ -199,8 +199,27 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - **Collapse pagination**: Collapse reduces total results, affecting page distribution.
 - **Bounds array size**: Both `lower_bounds` and `upper_bounds` arrays must match the number of sub-queries in the hybrid query.
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Bug fixes for nested list ordering in embedding processor, unit test mocking support, CI disk cleanup for BWC tests
+- **v3.2.0** (2026-01-14): Upper bound parameter for min-max normalization, inner hits support within collapse, configurable collapse document storage setting, HybridQueryDocIdStream bug fix
+- **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support; Bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability improvements
+- **v3.0.0** (2025-05-13): Z-Score normalization, lower bounds for min-max, filter support, inner hits, Stats API, semantic highlighter, analyzer-based neural sparse query, optimized embedding generation
+- **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
+- **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
+- **v2.11.0** (2023-10-16): Initial implementation of hybrid search
+
+## References
+
+### Documentation
+- [Hybrid Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/index/)
+- [Collapsing Hybrid Query Results](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)
+- [Hybrid Query DSL](https://docs.opensearch.org/3.1/query-dsl/compound/hybrid/)
+- [Neural Search API](https://docs.opensearch.org/3.1/vector-search/api/neural/)
+- [Normalization Processor](https://docs.opensearch.org/3.1/search-plugins/search-pipelines/normalization-processor/)
+- [Neural Search Tutorial](https://docs.opensearch.org/3.1/tutorials/vector-search/neural-search-tutorial/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix: Reversed order of values in nested list with embedding processor |
@@ -235,14 +254,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results |
 | v2.11.0 | - | Initial implementation of hybrid search |
 
-## References
-
-- [Hybrid Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/index/)
-- [Collapsing Hybrid Query Results](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)
-- [Hybrid Query DSL](https://docs.opensearch.org/3.1/query-dsl/compound/hybrid/)
-- [Neural Search API](https://docs.opensearch.org/3.1/vector-search/api/neural/)
-- [Normalization Processor](https://docs.opensearch.org/3.1/search-plugins/search-pipelines/normalization-processor/)
-- [Neural Search Tutorial](https://docs.opensearch.org/3.1/tutorials/vector-search/neural-search-tutorial/)
+### Issues (Design / RFC)
 - [Issue #665](https://github.com/opensearch-project/neural-search/issues/665): Hybrid search and collapse compatibility request
 - [Issue #1152](https://github.com/opensearch-project/neural-search/issues/1152): Custom weights in RRF request
 - [Issue #1290](https://github.com/opensearch-project/neural-search/issues/1290): RFC for speeding up score collecting
@@ -262,13 +274,3 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - [Issue #1274](https://github.com/opensearch-project/neural-search/issues/1274): Hybrid search sort score corruption
 - [Issue #1368](https://github.com/opensearch-project/neural-search/issues/1368): Stats BWC test failure
 - [Issue #1392](https://github.com/opensearch-project/neural-search/issues/1392): Radial search fails on 3.0
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Bug fixes for nested list ordering in embedding processor, unit test mocking support, CI disk cleanup for BWC tests
-- **v3.2.0** (2026-01-14): Upper bound parameter for min-max normalization, inner hits support within collapse, configurable collapse document storage setting, HybridQueryDocIdStream bug fix
-- **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support; Bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability improvements
-- **v3.0.0** (2025-05-13): Z-Score normalization, lower bounds for min-max, filter support, inner hits, Stats API, semantic highlighter, analyzer-based neural sparse query, optimized embedding generation
-- **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
-- **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
-- **v2.11.0** (2023-10-16): Initial implementation of hybrid search

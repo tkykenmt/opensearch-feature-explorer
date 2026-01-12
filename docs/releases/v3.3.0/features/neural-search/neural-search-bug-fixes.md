@@ -89,16 +89,16 @@ No migration required. These are internal bug fixes and infrastructure improveme
 - The mock-maker-inline feature requires Java 9+ and may have performance overhead in tests
 - CI disk cleanup action is specific to GitHub Actions runners
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix reversed order of values in nested list with embedding processor |
 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Enable mocking of final classes and static functions |
 | [#1584](https://github.com/opensearch-project/neural-search/pull/1584) | Add CI action to clean up disk and apply to BWC |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1569](https://github.com/opensearch-project/neural-search/issues/1569): ProcessorDocumentUtils.handleList messes up the order of nested lists
 - [Issue #1582](https://github.com/opensearch-project/neural-search/issues/1582): Normalization Processor's BWC tests are failing
 - [Issue #1583](https://github.com/opensearch-project/neural-search/issues/1583): Disable ml-commons circuit breaker in bwc tests

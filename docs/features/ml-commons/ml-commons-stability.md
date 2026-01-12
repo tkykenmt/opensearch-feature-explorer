@@ -88,8 +88,21 @@ Backward-compatible configuration handling:
 - Remote inference depends on external service availability
 - Agent execution timeouts may vary based on underlying model response times
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): 7 bug fixes including agent type update validation, QueryPlanningTool model ID parsing, tool config empty values handling, agentic memory multi-node fixes, error message escaping, and sensitive log removal
+- **v3.3.0** (2025-10-15): 29 bug fixes including Agent Framework parsing fixes, Agentic Memory validation and security improvements, multi-tenancy NPE fix, RAG response fix for search templates, metrics correlation fix, and various serialization/parsing fixes
+- **v3.1.0** (2025-07-15): Hidden model trusted connector bypass, SearchIndexTool MCP compatibility, commons-beanutils CVE fix
+- **v2.18.0** (2024-11-05): Multiple bugfixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC
+- **v2.17.0** (2024-09-17): Multiple stability fixes including model deletion race condition, Cohere validation, agent error formatting, config backward compatibility, and guardrails default type
+
+## References
+
+### Documentation
+- [OpenSearch ML Commons Documentation](https://opensearch.org/docs/latest/ml-commons-plugin/index/)
+- [ML Commons Repository](https://github.com/opensearch-project/ml-commons)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4341](https://github.com/opensearch-project/ml-commons/pull/4341) | Fix: Agent type update - make type immutable |
@@ -132,9 +145,7 @@ Backward-compatible configuration handling:
 | v2.17.0 | [#2892](https://github.com/opensearch-project/ml-commons/pull/2892) | Fix: Config API backward compatibility |
 | v2.17.0 | [#2898](https://github.com/opensearch-project/ml-commons/pull/2898) | Fix: HTTP dependency in batch jobs |
 
-## References
-
-- [ML Commons Repository](https://github.com/opensearch-project/ml-commons)
+### Issues (Design / RFC)
 - [Issue #2793](https://github.com/opensearch-project/ml-commons/issues/2793): Model deletion 500 error
 - [Issue #2829](https://github.com/opensearch-project/ml-commons/issues/2829): Model interface validation
 - [Issue #4340](https://github.com/opensearch-project/ml-commons/issues/4340): Update agent API silently fails when changing agent type
@@ -142,12 +153,3 @@ Backward-compatible configuration handling:
 - [Issue #4135](https://github.com/opensearch-project/ml-commons/issues/4135): Agent parsing issue
 - [Issue #4186](https://github.com/opensearch-project/ml-commons/issues/4186): NPE with multi-tenancy off
 - [Issue #4018](https://github.com/opensearch-project/ml-commons/issues/4018): Missing RAG response issue
-- [OpenSearch ML Commons Documentation](https://opensearch.org/docs/latest/ml-commons-plugin/index/)
-
-## Change History
-
-- **v3.4.0** (2026-01-14): 7 bug fixes including agent type update validation, QueryPlanningTool model ID parsing, tool config empty values handling, agentic memory multi-node fixes, error message escaping, and sensitive log removal
-- **v3.3.0** (2025-10-15): 29 bug fixes including Agent Framework parsing fixes, Agentic Memory validation and security improvements, multi-tenancy NPE fix, RAG response fix for search templates, metrics correlation fix, and various serialization/parsing fixes
-- **v3.1.0** (2025-07-15): Hidden model trusted connector bypass, SearchIndexTool MCP compatibility, commons-beanutils CVE fix
-- **v2.18.0** (2024-11-05): Multiple bugfixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC
-- **v2.17.0** (2024-09-17): Multiple stability fixes including model deletion race condition, Cohere validation, agent error formatting, config backward compatibility, and guardrails default type

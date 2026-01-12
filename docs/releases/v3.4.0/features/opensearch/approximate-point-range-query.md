@@ -110,19 +110,21 @@ GET counters/_search
 - Requires Lucene 10.3.0 or later
 - No functional changes to query behavior or performance
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #18530](https://github.com/opensearch-project/OpenSearch/pull/18530): Extend Approximation Framework to other numeric types (v3.2.0)
+- [Lucene 10.3.0 Changes](https://lucene.apache.org/core/10_3_0/changes/Changes.html#v10.3.0.new_features): Lucene release notes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19553](https://github.com/opensearch-project/OpenSearch/pull/19553) | Use Lucene `pack` method for `half_float` and `unsigned_long` |
 | [apache/lucene#14784](https://github.com/apache/lucene/pull/14784) | Make `pack` methods public for `BigIntegerPoint` and `HalfFloatPoint` |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14406](https://github.com/opensearch-project/OpenSearch/issues/14406): Feature request to expand ApproximatePointRangeQuery to other numeric types
 - [Issue #18334](https://github.com/opensearch-project/OpenSearch/issues/18334): Feature request to improve numeric range query performance
-- [PR #18530](https://github.com/opensearch-project/OpenSearch/pull/18530): Extend Approximation Framework to other numeric types (v3.2.0)
-- [Lucene 10.3.0 Changes](https://lucene.apache.org/core/10_3_0/changes/Changes.html#v10.3.0.new_features): Lucene release notes
 
 ## Related Feature Report
 

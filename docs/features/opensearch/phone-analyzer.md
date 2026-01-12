@@ -157,21 +157,23 @@ Without a region, only numbers with international prefix (`+`) are fully parsed.
 - `phone-email` analyzer from the original elasticsearch-phone is not included
 - Alphabetic phone representations (e.g., `1-800-MICROSOFT`) are not fully supported
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15915](https://github.com/opensearch-project/OpenSearch/pull/15915) | Initial implementation of phone number analyzer |
+- **v2.18.0** (2024-10-22): Initial implementation with `phone` and `phone-search` analyzers/tokenizers
 
 ## References
 
-- [Issue #11326](https://github.com/opensearch-project/OpenSearch/issues/11326): Original RFC for phone number analyzer
+### Documentation
 - [Documentation](https://docs.opensearch.org/2.18/analyzers/supported-analyzers/phone-analyzers/): Official phone analyzer documentation
 - [libphonenumber](https://github.com/google/libphonenumber): Google's phone number parsing library
 - [elasticsearch-phone](https://github.com/purecloudlabs/elasticsearch-phone): Original Elasticsearch plugin this is based on
 - [Falsehoods about phone numbers](https://github.com/google/libphonenumber/blob/master/FALSEHOODS.md): Why phone number parsing is complex
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#15915](https://github.com/opensearch-project/OpenSearch/pull/15915) | Initial implementation of phone number analyzer |
+
+### Issues (Design / RFC)
+- [Issue #11326](https://github.com/opensearch-project/OpenSearch/issues/11326): Original RFC for phone number analyzer
 - [Documentation Issue #8389](https://github.com/opensearch-project/documentation-website/issues/8389): Documentation PR
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Initial implementation with `phone` and `phone-search` analyzers/tokenizers

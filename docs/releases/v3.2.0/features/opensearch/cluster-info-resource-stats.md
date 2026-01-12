@@ -111,16 +111,18 @@ for (Map.Entry<String, NodeResourceUsageStats> entry : resourceStats.entrySet())
 - I/O usage stats are only available on Linux systems
 - Stats are collected at configurable intervals and may not reflect real-time values
 
-## Related PRs
+## References
 
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation for resource_usage_stats metric
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18480](https://github.com/opensearch-project/OpenSearch/pull/18480) | Add NodeResourceUsageStats to ClusterInfo |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18472](https://github.com/opensearch-project/OpenSearch/issues/18472): [Writable Warm] Adding Support For NodeResourceUsageStats in ClusterInfo
-- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation for resource_usage_stats metric
 
 ## Related Feature Report
 

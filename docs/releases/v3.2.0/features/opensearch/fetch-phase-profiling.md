@@ -191,16 +191,18 @@ Response includes fetch phase profiling:
 - Profiling adds overhead to fetch operations
 - Only the standard fetch phase is profiled; nested fetch contexts are excluded
 
-## Related PRs
+## References
 
+### Documentation
+- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18664](https://github.com/opensearch-project/OpenSearch/pull/18664) | Add fetch phase profiling |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1764](https://github.com/opensearch-project/OpenSearch/issues/1764): Original feature request (December 2021)
-- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
 
 ## Related Feature Report
 

@@ -123,19 +123,19 @@ These changes are backward compatible. The UI automatically adapts based on the 
 - Avatar placement in left nav requires `home:useNewHomePage` to be enabled
 - Some visual changes may require theme updates to fully take effect
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Dashboards Plugin Repository](https://github.com/opensearch-project/security-dashboards-plugin)
+- [OpenSearch Dashboards Look & Feel Guidelines](https://github.com/AMoo-Miki/OpenSearch-Dashboards/tree/header-collective)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2079](https://github.com/opensearch-project/security-dashboards-plugin/pull/2079) | Use smaller and compressed variants of buttons and form components |
 | [#2082](https://github.com/opensearch-project/security-dashboards-plugin/pull/2082) | Conditionally change where avatar shows up |
 | [#2083](https://github.com/opensearch-project/security-dashboards-plugin/pull/2083) | Adds page headers for updated UX |
 | [#2101](https://github.com/opensearch-project/security-dashboards-plugin/pull/2101) | Consistency and density improvements |
-
-## References
-
-- [Security Dashboards Plugin Repository](https://github.com/opensearch-project/security-dashboards-plugin)
-- [OpenSearch Dashboards Look & Feel Guidelines](https://github.com/AMoo-Miki/OpenSearch-Dashboards/tree/header-collective)
 
 ## Related Feature Report
 

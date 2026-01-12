@@ -79,8 +79,18 @@ publishing {
 - The fix is specific to Sonatype credentials; other environment variable usages may need similar updates
 - Requires Gradle wrapper update to Gradle 9+ for full compatibility testing
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01): Fixed Gradle 9 compatibility across 16 plugin repositories by updating `$System.env` syntax to `System.getenv()`
+
+## References
+
+### Documentation
+- [Gradle 9 Release Notes](https://docs.gradle.org/9.0/release-notes.html): Official Gradle 9 documentation
+- [opensearch-remote-metadata-sdk#245](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/245): Original fix that restored successful snapshots
+- [Example failed workflow](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/actions/runs/17023398832/job/48255946880#step:5:74): CI failure demonstrating the issue
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [alerting#1920](https://github.com/opensearch-project/alerting/pull/1920) | alerting plugin fix |
@@ -99,13 +109,3 @@ publishing {
 | v3.3.0 | [user-behavior-insights#122](https://github.com/opensearch-project/user-behavior-insights/pull/122) | UBI plugin fix |
 | v3.3.0 | [dashboards-search-relevance#227](https://github.com/opensearch-project/dashboards-search-relevance/pull/227) | search-relevance fix |
 | v3.3.0 | [skills#630](https://github.com/opensearch-project/skills/pull/630) | skills plugin fix |
-
-## References
-
-- [Gradle 9 Release Notes](https://docs.gradle.org/9.0/release-notes.html): Official Gradle 9 documentation
-- [opensearch-remote-metadata-sdk#245](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/245): Original fix that restored successful snapshots
-- [Example failed workflow](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/actions/runs/17023398832/job/48255946880#step:5:74): CI failure demonstrating the issue
-
-## Change History
-
-- **v3.3.0** (2026-01): Fixed Gradle 9 compatibility across 16 plugin repositories by updating `$System.env` syntax to `System.getenv()`

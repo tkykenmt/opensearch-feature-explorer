@@ -81,8 +81,15 @@ CI/CD improvements typically involve changes to:
 - JDK baseline updates may require contributors to update their development environments
 - Backport automation relies on proper labeling of PRs
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): GitHub Actions version upgrades (checkout v6, github-script v8, codecov-action v5), test reliability improvements for anomaly-detection and neural-search, CI disk space management for ml-commons, S3 snapshots integration for neural-search, multi-node testing in neural-search, code coverage threshold adjustment in learning-to-rank
+- **v3.3.0** (2025-08-25): Update delete_backport_branch workflow to include release-chores branches in security and ml-commons, modernize workflow to use actions/github-script
+- **v2.18.0** (2024-11-05): JDK-21 baseline for index-management, CI workflow fixes for notifications, observability, and query-insights, test security improvements for ml-commons, backport process improvements
+
+## References
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.4.0 | [#1603](https://github.com/opensearch-project/anomaly-detection/pull/1603) | anomaly-detection | Prevent oversized bulk requests in synthetic data test |
@@ -110,14 +117,7 @@ CI/CD improvements typically involve changes to:
 | v2.18.0 | [#2187](https://github.com/opensearch-project/observability/pull/2187) | observability | Add compile step before Cypress |
 | v2.18.0 | [#117](https://github.com/opensearch-project/query-insights/pull/117) | query-insights | Upgrade deprecated actions/upload-artifact to v3 |
 
-## References
-
+### Issues (Design / RFC)
 - [ml-commons Issue #2915](https://github.com/opensearch-project/ml-commons/issues/2915): API keys in integration test logs
 - [opensearch-build Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): S3 snapshots onboarding
 - [neural-search Issue #1672](https://github.com/opensearch-project/neural-search/issues/1672): Codecov rate limit issue
-
-## Change History
-
-- **v3.4.0** (2026-01-11): GitHub Actions version upgrades (checkout v6, github-script v8, codecov-action v5), test reliability improvements for anomaly-detection and neural-search, CI disk space management for ml-commons, S3 snapshots integration for neural-search, multi-node testing in neural-search, code coverage threshold adjustment in learning-to-rank
-- **v3.3.0** (2025-08-25): Update delete_backport_branch workflow to include release-chores branches in security and ml-commons, modernize workflow to use actions/github-script
-- **v2.18.0** (2024-11-05): JDK-21 baseline for index-management, CI workflow fixes for notifications, observability, and query-insights, test security improvements for ml-commons, backport process improvements

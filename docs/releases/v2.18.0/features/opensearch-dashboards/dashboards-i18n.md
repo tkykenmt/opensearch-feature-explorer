@@ -96,17 +96,19 @@ No migration required. This is a bugfix that improves i18n compliance without ch
 - This fix is specific to the dataSourceManagement plugin
 - Other plugins received similar fixes in separate PRs
 
-## Related PRs
+## References
 
+### Documentation
+- [i18n Framework Documentation](https://github.com/opensearch-project/OpenSearch-Dashboards/tree/main/packages/osd-i18n)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8394](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8394) | Main implementation (merged to main) |
 | [#8516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8516) | Backport to 2.x branch |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8394](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8394): Original PR
-- [i18n Framework Documentation](https://github.com/opensearch-project/OpenSearch-Dashboards/tree/main/packages/osd-i18n)
 
 ## Related Feature Report
 

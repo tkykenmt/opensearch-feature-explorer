@@ -123,17 +123,19 @@ GET _nodes/stats
 - Mixed-version clusters may have inconsistent statistics reporting
 - The service adds minimal overhead but does consume some resources for tracking
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added SearchTask (coordinator-level) tracking alongside existing SearchShardTask tracking
+
+## References
+
+### Documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Related feature for search task management
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17726](https://github.com/opensearch-project/OpenSearch/pull/17726) | Add tracking for long-running SearchTask post cancellation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17719](https://github.com/opensearch-project/OpenSearch/issues/17719): Track long running SearchTask post cancellation
-- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Related feature for search task management
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added SearchTask (coordinator-level) tracking alongside existing SearchShardTask tracking

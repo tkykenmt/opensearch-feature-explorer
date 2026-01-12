@@ -160,8 +160,15 @@ POST /_plugins/_knn/models/my-model/_train
 - Training support for mode/compression was partially implemented (quantization framework limitations)
 - Performance varies by dataset; text embeddings generally perform better than image embeddings
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Disk-based vector search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/)
+
+### Blog Posts
+- [Blog: Reduce costs with disk-based vector search](https://opensearch.org/blog/reduce-cost-with-disk-based-vector-search/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2034](https://github.com/opensearch-project/k-NN/pull/2034) | Introduce mode and compression param resolution |
@@ -169,13 +176,10 @@ POST /_plugins/_knn/models/my-model/_train
 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as top level parameter |
 | [#2200](https://github.com/opensearch-project/k-NN/pull/2200) | Add CompressionLevel calculation for PQ |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC: Disk-based Mode Design (#1949)](https://github.com/opensearch-project/k-NN/issues/1949)
 - [RFC: Optimized Disk-Based Vector Search (#1779)](https://github.com/opensearch-project/k-NN/issues/1779)
 - [RFC: Two-phased Search Re-score Design (#1861)](https://github.com/opensearch-project/k-NN/issues/1861)
-- [Documentation: Disk-based vector search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/)
-- [Blog: Reduce costs with disk-based vector search](https://opensearch.org/blog/reduce-cost-with-disk-based-vector-search/)
 
 ## Related Feature Report
 

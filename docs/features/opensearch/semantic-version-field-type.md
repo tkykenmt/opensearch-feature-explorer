@@ -216,18 +216,20 @@ Example: `1.0.0-alpha` → `00000000000000000001.00000000000000000000.0000000000
 - Leading zeros in numeric identifiers are invalid (e.g., `01.0.0`)
 - Maximum version number is limited by integer range
 
-## Related PRs
+## Change History
 
+- **v3.2.0**: Initial implementation with support for term, range, prefix, wildcard, regex, and fuzzy queries
+
+## References
+
+### Documentation
+- [Semantic Versioning 2.0.0](https://semver.org/): Official SemVer specification
+- [SemVer Regex](https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string): Official regex for validation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18454](https://github.com/opensearch-project/OpenSearch/pull/18454) | Initial implementation of Semantic Version field type |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16814](https://github.com/opensearch-project/OpenSearch/issues/16814): Original feature request
-- [Semantic Versioning 2.0.0](https://semver.org/): Official SemVer specification
-- [SemVer Regex](https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string): Official regex for validation
-
-## Change History
-
-- **v3.2.0**: Initial implementation with support for term, range, prefix, wildcard, regex, and fuzzy queries

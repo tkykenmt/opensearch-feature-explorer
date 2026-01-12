@@ -103,18 +103,22 @@ cat /proc/$(pgrep -f opensearch)/maps | grep "indices" | awk '{print $6}' | sort
 - The setting is a JVM-level configuration and requires a restart to change
 - Does not address the root cause in Lucene's CompoundReader behavior with `IOContext.DEFAULT`
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-02): Initial implementation - Set `sharedArenaMaxPermits=1` as default to mitigate memory-mapped segment bloat
+
+## References
+
+### Documentation
+- [Lucene MMapDirectory JavaDoc](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/store/MMapDirectory.html): Official API documentation
+
+### Blog Posts
+- [Blog: Use Lucene's MMapDirectory on 64bit](https://blog.thetaphi.de/2012/07/use-lucenes-mmapdirectory-on-64bit.html): Background on memory mapping behavior
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19503](https://github.com/opensearch-project/OpenSearch/pull/19503) | Setting number of sharedArenaMaxPermits to 1 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19482](https://github.com/opensearch-project/OpenSearch/issues/19482): BUG - Frequent stats calls causing memory mapped segments to bloat up
-- [Lucene MMapDirectory JavaDoc](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/store/MMapDirectory.html): Official API documentation
-- [Blog: Use Lucene's MMapDirectory on 64bit](https://blog.thetaphi.de/2012/07/use-lucenes-mmapdirectory-on-64bit.html): Background on memory mapping behavior
-
-## Change History
-
-- **v3.3.0** (2025-10-02): Initial implementation - Set `sharedArenaMaxPermits=1` as default to mitigate memory-mapped segment bloat

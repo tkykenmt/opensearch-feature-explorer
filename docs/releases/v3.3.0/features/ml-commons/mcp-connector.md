@@ -165,19 +165,21 @@ POST /_plugins/_ml/mcp/stream
 - Streamable HTTP requires MCP clients that support the 2024-11-05 protocol version
 - The `mcp_server_enabled` setting must be enabled to use the MCP server functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [MCP Server APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/index/)
+- [Connecting to External MCP Server](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/mcp-connector/)
+- [Using MCP Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4169](https://github.com/opensearch-project/ml-commons/pull/4169) | [MCP Connector] MCP Connectors for streamable HTTP |
 | [#4162](https://github.com/opensearch-project/ml-commons/pull/4162) | [MCP Server] Support Streamable HTTP and deprecate SSE in MCP server |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1319](https://github.com/tkykenmt/opensearch-feature-explorer/issues/1319): MCP Connector feature tracking
-- [MCP Server APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/index/)
-- [Connecting to External MCP Server](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/mcp-connector/)
-- [Using MCP Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
 
 ## Related Feature Report
 

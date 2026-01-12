@@ -107,18 +107,20 @@ Costly queries include:
 - Node-level cache; not shared across nodes in a cluster
 - Dynamic settings are cluster-wide; per-index configuration not supported
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-08-21): Added dynamic cluster settings for `skip_cache_factor`, `min_frequency`, and `costly_min_frequency`
+
+## References
+
+### Documentation
+- [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): OpenSearch documentation
+- [Lucene PR #14412](https://github.com/apache/lucene/pull/14412): Upstream Lucene change for dynamic skip cache factor
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18351](https://github.com/opensearch-project/OpenSearch/pull/18351) | Add dynamic settings for skip_cache_factor and min_frequency |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17736](https://github.com/opensearch-project/OpenSearch/issues/17736): Feature request for dynamic query cache settings
-- [Lucene PR #14412](https://github.com/apache/lucene/pull/14412): Upstream Lucene change for dynamic skip cache factor
-- [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): OpenSearch documentation
-
-## Change History
-
-- **v3.3.0** (2025-08-21): Added dynamic cluster settings for `skip_cache_factor`, `min_frequency`, and `costly_min_frequency`

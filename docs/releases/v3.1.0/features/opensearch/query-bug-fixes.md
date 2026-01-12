@@ -121,8 +121,12 @@ POST test/_search
 
 - Derived fields still do not support exists queries directly; they are silently skipped when querying parent object fields
 
-## Related PRs
+## References
 
+### Documentation
+- [Query string documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17843](https://github.com/opensearch-project/OpenSearch/pull/17843) | Fix object field exists query |
@@ -131,12 +135,10 @@ POST test/_search
 | [#18357](https://github.com/opensearch-project/OpenSearch/pull/18357) | DocValues-only IP field supports terms_query with more than 1025 IP masks |
 | [#18242](https://github.com/opensearch-project/OpenSearch/pull/18242) | Fix MatrixStatsAggregator reuse when mode parameter changes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17808](https://github.com/opensearch-project/OpenSearch/issues/17808): Object Field exists query returns wrong result
 - [Issue #18131](https://github.com/opensearch-project/OpenSearch/issues/18131): XContent parsing exceptions return 500 status
 - [Issue #17394](https://github.com/opensearch-project/OpenSearch/issues/17394): Unlimit IP/masks terms query for doc_values only fields
-- [Query string documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/)
 
 ## Related Feature Report
 

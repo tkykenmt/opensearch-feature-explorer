@@ -50,17 +50,17 @@ For plugin developers extending the Notifications plugin:
 - No functional changes or new features in this release
 - This is purely a maintenance/dependency update
 
-## Related PRs
+## References
 
+### Documentation
+- [Jakarta Mail 2.0 Specification](https://jakarta.ee/specifications/mail/2.0/)
+- [OpenSearch Notifications Repository](https://github.com/opensearch-project/notifications)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1036](https://github.com/opensearch-project/notifications/pull/1036) | Upgrade javax to jakarta to avoid version conflicts |
 | [#1027](https://github.com/opensearch-project/notifications/pull/1027) | Increment version to 3.1.0-SNAPSHOT |
-
-## References
-
-- [Jakarta Mail 2.0 Specification](https://jakarta.ee/specifications/mail/2.0/)
-- [OpenSearch Notifications Repository](https://github.com/opensearch-project/notifications)
 
 ## Related Feature Report
 

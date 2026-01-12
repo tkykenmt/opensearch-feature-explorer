@@ -118,8 +118,13 @@ sdkClient.putDataObjectAsync(putRequest)
 - RefreshPolicy and timeout may not be applicable on all client implementations (e.g., DynamoDB doesn't have an equivalent concept for refresh)
 - Bulk request individual items always use `RefreshPolicy.NONE` - the refresh policy applies to the bulk request as a whole
 
-## Related PRs
+## References
 
+### Documentation
+- [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
+- [OpenSearch PR #19239](https://github.com/opensearch-project/OpenSearch/pull/19239): ThreadContextAccess API change in OpenSearch core
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#234](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/234) | Add SeqNo and PrimaryTerm support to Put and Delete requests |
@@ -128,14 +133,11 @@ sdkClient.putDataObjectAsync(putRequest)
 | [#250](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/250) | Update argument type for ThreadContextAccess:doPrivileged |
 | [#254](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/254) | Use AccessController instead of ThreadContextAccess as it's for internal use |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #233](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/233): SeqNo/PrimaryTerm support request
 - [Issue #136](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/136): Timeout support request
 - [Issue #178](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/178): RefreshPolicy support request
 - [Issue #191](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/191): Empty string ID validation
-- [OpenSearch PR #19239](https://github.com/opensearch-project/OpenSearch/pull/19239): ThreadContextAccess API change in OpenSearch core
-- [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
 
 ## Related Feature Report
 

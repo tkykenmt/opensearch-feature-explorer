@@ -72,16 +72,18 @@ No migration required. The fix is backward compatible and automatically handles 
 - The fix treats the symptom (negative values) rather than the root cause (race condition in phase tracking)
 - Negative values are logged as warnings for monitoring but the underlying race condition may still occur
 
-## Related PRs
+## References
 
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19340](https://github.com/opensearch-project/OpenSearch/pull/19340) | Handle negative search request nodes stats |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16598](https://github.com/opensearch-project/OpenSearch/issues/16598): Bug report - Negative Search Stats causing nodes/stats API failures
-- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
 
 ## Related Feature Report
 

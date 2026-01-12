@@ -110,20 +110,22 @@ No migration required. Both changes are backward compatible:
 - Incremental state updates have a 1-second timeout; failures are logged but don't block deprovisioning
 - The backup full-list update at the end ensures consistency even if incremental updates fail
 
-## Related PRs
+## References
 
+### Documentation
+- [Deprovision Workflow API](https://docs.opensearch.org/2.18/automating-configurations/api/deprovision-workflow/): Official documentation
+- [ML-Commons PR #2977](https://github.com/opensearch-project/ml-commons/pull/2977): Related ML-Commons change for config field
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#899](https://github.com/opensearch-project/flow-framework/pull/899) | Add optional config field to tool step |
 | [#898](https://github.com/opensearch-project/flow-framework/pull/898) | Incrementally remove resources from workflow state during deprovisioning |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #878](https://github.com/opensearch-project/flow-framework/issues/878): ML-commons introducing new optional field "config" in MLToolSpec
 - [Issue #780](https://github.com/opensearch-project/flow-framework/issues/780): Update WorkflowState resources during deprovisioning
 - [Issue #691](https://github.com/opensearch-project/flow-framework/issues/691): Handle successful deprovision with failure in workflow state update
-- [ML-Commons PR #2977](https://github.com/opensearch-project/ml-commons/pull/2977): Related ML-Commons change for config field
-- [Deprovision Workflow API](https://docs.opensearch.org/2.18/automating-configurations/api/deprovision-workflow/): Official documentation
 
 ## Related Feature Report
 

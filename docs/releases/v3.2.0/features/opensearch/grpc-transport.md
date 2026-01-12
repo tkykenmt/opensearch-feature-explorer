@@ -155,8 +155,12 @@ try {
 - Aggregation support not yet available via gRPC
 - Only Bulk and Search endpoints implemented
 
-## Related PRs
+## References
 
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18516](https://github.com/opensearch-project/OpenSearch/pull/18516) | Make GRPC transport extensible to allow plugins to register custom services |
@@ -166,12 +170,10 @@ try {
 | [#18925](https://github.com/opensearch-project/OpenSearch/pull/18925) | Map to proper GRPC status codes and achieve exception handling parity with HTTP |
 | [#18880](https://github.com/opensearch-project/OpenSearch/pull/18880) | Upgrade to protobufs 0.6.0 and clean up deprecated TermQueryProtoUtils code |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18893](https://github.com/opensearch-project/OpenSearch/issues/18893): Move transport-grpc from plugin to module
 - [Issue #18513](https://github.com/opensearch-project/OpenSearch/issues/18513): GRPC Plugin Extensibility for Query Conversion
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
 
 ## Related Feature Report
 

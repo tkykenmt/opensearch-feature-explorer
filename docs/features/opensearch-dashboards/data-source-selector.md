@@ -133,18 +133,18 @@ Using the aggregated view:
 - The legacy `DataSourceSelector` component requires manual scope handling
 - Data source filtering is applied client-side after fetching all data sources
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#9832](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9832) | Support scope in data source selector |
+- **v3.2.0** (2026-01-10): Added workspace-aware scope support for default data source retrieval
 
 ## References
 
+### Documentation
 - [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace documentation
 - [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Data source management guide
 - [Manage Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/manage-workspace/): Workspace management including data source associations
 
-## Change History
-
-- **v3.2.0** (2026-01-10): Added workspace-aware scope support for default data source retrieval
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#9832](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9832) | Support scope in data source selector |

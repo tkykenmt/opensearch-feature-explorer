@@ -99,16 +99,18 @@ No migration required. The fix is automatically applied when upgrading to v3.3.0
 - This fix specifically addresses `NRTReplicationEngine` (used by replica shards in segment replication)
 - Primary shards using `InternalEngine` were not affected by this bug
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official segment replication docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19213](https://github.com/opensearch-project/OpenSearch/issues/19213): Bug report - NoSuchFileException when traversing files from acquireLastIndexCommit
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official segment replication docs
 
 ## Related Feature Report
 

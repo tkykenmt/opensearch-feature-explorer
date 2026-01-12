@@ -107,18 +107,20 @@ GET _cat/indices?v
 - Large responses may impact browser performance
 - Modal mode uses in-memory routing (no browser history)
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#7938](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7938) | Change dev tools to a modal |
-
-## References
-
-- [Dev Tools Documentation](https://docs.opensearch.org/latest/dashboards/dev-tools/index-dev/): Official documentation
-- [Running queries in the Dev Tools console](https://docs.opensearch.org/latest/dashboards/dev-tools/run-queries/): Query guide
-- [Top 3 scenarios for managing multiple clusters](https://opensearch.org/blog/top-3-scenarios-where-managing-multiple-clusters-with-one-opensearch-dashboards-is-a-life-saver/): Blog post on Dev Tools with MDS
-
 ## Change History
 
 - **v2.18.0** (2024-11-05): Changed Dev Tools to render inside a modal overlay for improved UX
+
+## References
+
+### Documentation
+- [Dev Tools Documentation](https://docs.opensearch.org/latest/dashboards/dev-tools/index-dev/): Official documentation
+- [Running queries in the Dev Tools console](https://docs.opensearch.org/latest/dashboards/dev-tools/run-queries/): Query guide
+
+### Blog Posts
+- [Top 3 scenarios for managing multiple clusters](https://opensearch.org/blog/top-3-scenarios-where-managing-multiple-clusters-with-one-opensearch-dashboards-is-a-life-saver/): Blog post on Dev Tools with MDS
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#7938](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7938) | Change dev tools to a modal |

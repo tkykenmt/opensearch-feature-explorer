@@ -136,18 +136,20 @@ When serialized, the resource usage stats appear in the ClusterInfo response:
 - Cluster manager nodes do not report resource usage stats by default (only data and warm nodes)
 - Stats are cleared when nodes are removed from the cluster
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-06-23): Initial implementation - Added NodeResourceUsageStats to ClusterInfo for cluster-wide resource visibility
+
+## References
+
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation including resource_usage_stats metric
+- [ClusterInfo.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/ClusterInfo.java): Source code
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18480](https://github.com/opensearch-project/OpenSearch/pull/18480) | Add NodeResourceUsageStats to ClusterInfo |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18472](https://github.com/opensearch-project/OpenSearch/issues/18472): Original feature request for Writable Warm support
-- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation including resource_usage_stats metric
-- [ClusterInfo.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/ClusterInfo.java): Source code
-
-## Change History
-
-- **v3.2.0** (2025-06-23): Initial implementation - Added NodeResourceUsageStats to ClusterInfo for cluster-wide resource visibility

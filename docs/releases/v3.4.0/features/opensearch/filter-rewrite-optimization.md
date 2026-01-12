@@ -141,8 +141,12 @@ All optimizations are enabled by default and require no configuration changes. T
 - `collectRange` API requires queries that rewrite to MatchAllDocsQuery, PointRangeQuery on fully matching segments, or doc-value range queries
 - Performance gains depend on data distribution and aggregation complexity
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene PR #14401](https://github.com/apache/lucene/pull/14401): Enable collectors to take advantage of pre-aggregated data
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19643](https://github.com/opensearch-project/OpenSearch/pull/19643) | Handle deleted documents for filter rewrite sub-aggregation optimization |
@@ -150,12 +154,10 @@ All optimizations are enabled by default and require no configuration changes. T
 | [#20009](https://github.com/opensearch-project/OpenSearch/pull/20009) | Allow collectors take advantage of preaggregated data using collectRange API |
 | [#20067](https://github.com/opensearch-project/OpenSearch/pull/20067) | Bulk collection logic for metrics and cardinality aggregations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19642](https://github.com/opensearch-project/OpenSearch/issues/19642): Handle deleted documents for filter rewrite subaggregation optimization
 - [Issue #19324](https://github.com/opensearch-project/OpenSearch/issues/19324): [META] Use Lucene bulk collection API to speed up aggregation
 - [Issue #20031](https://github.com/opensearch-project/OpenSearch/issues/20031): [META] Advanced Query Engine Performance Optimizations in OpenSearch
-- [Lucene PR #14401](https://github.com/apache/lucene/pull/14401): Enable collectors to take advantage of pre-aggregated data
 
 ## Related Feature Report
 

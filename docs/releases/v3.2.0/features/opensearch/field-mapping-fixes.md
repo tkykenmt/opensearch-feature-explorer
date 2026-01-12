@@ -112,18 +112,20 @@ PUT /my-index/_doc/1
 - The fix only applies to field types that support `ignore_malformed` (listed above)
 - Versions prior to 3.2.0 (back to 2.4) have the incorrect behavior where index-level settings always take precedence
 
-## Related PRs
+## References
 
+### Documentation
+- [Numeric field types documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official docs for scaled_float
+- [Mapping parameters](https://docs.opensearch.org/3.0/field-types/mapping-parameters/index/): Documentation on ignore_malformed
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18706](https://github.com/opensearch-project/OpenSearch/pull/18706) | Field-level ignore_malformed should override index-level setting |
 | [#18952](https://github.com/opensearch-project/OpenSearch/pull/18952) | Bug fix for `scaled_float` in `encodePoint` method |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16599](https://github.com/opensearch-project/OpenSearch/issues/16599): Original bug report for ignore_malformed override
-- [Numeric field types documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official docs for scaled_float
-- [Mapping parameters](https://docs.opensearch.org/3.0/field-types/mapping-parameters/index/): Documentation on ignore_malformed
 
 ## Related Feature Report
 

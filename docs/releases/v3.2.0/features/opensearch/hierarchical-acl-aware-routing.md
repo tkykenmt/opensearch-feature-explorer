@@ -151,18 +151,20 @@ The search processors use identical hashing to ensure queries are routed to the 
 - Search processors only extract routing from `term`, `terms`, `prefix`, and `wildcard` queries on the configured field
 - `should` and `must_not` clauses in bool queries are ignored for routing extraction
 
-## Related PRs
+## References
 
+### Documentation
+- [Routing Documentation](https://docs.opensearch.org/3.2/field-types/metadata-fields/routing/): OpenSearch routing field documentation
+- [Search Shard Routing](https://docs.opensearch.org/3.2/search-plugins/searching-data/search-shard-routing/): Search routing documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18826](https://github.com/opensearch-project/OpenSearch/pull/18826) | Add hierarchical routing processors for ingest and search pipelines |
 | [#18834](https://github.com/opensearch-project/OpenSearch/pull/18834) | Add ACL-aware routing processors for multi-tenant document routing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18829](https://github.com/opensearch-project/OpenSearch/issues/18829): RFC: ACL-Aware Routing Strategy for Shard Assignment
-- [Routing Documentation](https://docs.opensearch.org/3.2/field-types/metadata-fields/routing/): OpenSearch routing field documentation
-- [Search Shard Routing](https://docs.opensearch.org/3.2/search-plugins/searching-data/search-shard-routing/): Search routing documentation
 
 ## Related Feature Report
 

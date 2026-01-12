@@ -61,17 +61,17 @@ The Discover plugin's enhanced search functionality received significant cleanup
 - These are internal maintenance changes with no user-facing feature impact
 - The API path changes may affect custom integrations using the old endpoints
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225): Version bump
+- [PR #8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226): API cleanup
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225) | Post 2.17 version bump to 2.18.0 |
 | [#8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226) | Clean up enhanced search API |
-
-## References
-
-- [PR #8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225): Version bump
-- [PR #8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226): API cleanup
 
 ## Related Feature Report
 

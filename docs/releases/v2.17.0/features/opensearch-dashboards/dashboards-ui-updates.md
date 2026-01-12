@@ -71,16 +71,16 @@ The header changes are automatically applied when using the new top navigation. 
 - Header spacing changes are specific to the new top navigation design
 - Some styling uses CSS `:has()` selector which may not work in older browsers
 
-## Related PRs
+## References
 
+### Documentation
+- [OUI 1.10.0 Release](https://github.com/opensearch-project/oui/releases)
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#7741](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7741) | Revisit updated header spacing, bump OUI to 1.10.0 |
-
-## References
-
-- [OUI 1.10.0 Release](https://github.com/opensearch-project/oui/releases)
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ## Related Feature Report
 

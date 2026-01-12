@@ -87,15 +87,15 @@ uiSettings.setWithScope('defaultDataSource', 'my-ds-id', UiSettingScope.WORKSPAC
 - Deprecation warnings are logged but the deprecated behavior will be removed in the next major release
 - Settings with multiple scopes that don't include `global` will default to the first scope in the array
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9854](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9854) | Keep backward compatibility for UI setting client |
 | [#9726](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9726) | Original multi-scope UI settings implementation (introduced breaking change) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821): Original feature request for workspace-scoped UI settings
 
 ## Related Feature Report

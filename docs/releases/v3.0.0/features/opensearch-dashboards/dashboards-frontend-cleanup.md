@@ -98,8 +98,15 @@ The following files were removed from the Discover plugin:
 - Plugins using `withLongNumerals` will need code changes
 - Plugins importing `@elastic/filesaver` must update imports
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official breaking changes for v3.0.0
+- [PR #5592](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5592): Original deprecation of withLongNumerals
+- [PR #7625](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7625): Original deprecation of CssDistFilename
+- [PR #9511](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9511): Deprecation of newExperience table option
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9446) | Remove deprecated CssDistFilename for 3.0 |
@@ -107,14 +114,9 @@ The following files were removed from the Discover plugin:
 | [#9484](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9484) | Remove @elastic/filesaver in favor of file-saver |
 | [#9531](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9531) | Remove the deprecated "newExperience" table option in Discover |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9253](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9253): Planned Breaking Changes for 3.0 in OpenSearch-Dashboards
 - [Issue #9341](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9341): Remove @elastic/filesaver dependency
-- [PR #5592](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5592): Original deprecation of withLongNumerals
-- [PR #7625](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7625): Original deprecation of CssDistFilename
-- [PR #9511](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9511): Deprecation of newExperience table option
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official breaking changes for v3.0.0
 
 ## Related Feature Report
 

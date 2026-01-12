@@ -62,18 +62,18 @@ Enhanced error handling for edge cases:
 - Maintenance changes are typically internal and don't add user-facing features
 - API path changes may require updates to custom integrations
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Version bump to 2.18.0, enhanced search API cleanup (removed ConnectionsService, deprecated routes, improved error handling)
+
+## References
+
+### Documentation
+- [PR #8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225): Version bump post 2.17 release
+- [PR #8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226): Enhanced search API cleanup
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225) | Post 2.17 version bump |
 | v2.18.0 | [#8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226) | Clean up enhanced search API |
-
-## References
-
-- [PR #8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225): Version bump post 2.17 release
-- [PR #8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226): Enhanced search API cleanup
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Version bump to 2.18.0, enhanced search API cleanup (removed ConnectionsService, deprecated routes, improved error handling)

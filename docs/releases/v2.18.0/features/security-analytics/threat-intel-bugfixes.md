@@ -68,8 +68,12 @@ No migration required. Existing threat intel monitors will benefit from these fi
 - These fixes address stability issues but do not change the fundamental behavior of threat intel monitors
 - Source configs with null values created before this fix can still be read and deleted but cannot be updated
 
-## Related PRs
+## References
 
+### Documentation
+- [Threat Intelligence Documentation](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1356](https://github.com/opensearch-project/security-analytics/pull/1356) | Fix notifications listener leak in threat intel monitor |
@@ -77,11 +81,9 @@ No migration required. Existing threat intel monitors will benefit from these fi
 | [#1383](https://github.com/opensearch-project/security-analytics/pull/1383) | Fix search monitor query in update threat intel alert status API |
 | [#1393](https://github.com/opensearch-project/security-analytics/pull/1393) | Add validation for threat intel source config |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1319](https://github.com/opensearch-project/security-analytics/issues/1319): Threat intel monitor bug fixes tracking
 - [Issue #1366](https://github.com/opensearch-project/security-analytics/issues/1366): Source config validation issue
-- [Threat Intelligence Documentation](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/index/): Official documentation
 
 ## Related Feature Report
 

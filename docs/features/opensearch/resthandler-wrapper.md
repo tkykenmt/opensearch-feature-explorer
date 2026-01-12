@@ -109,19 +109,19 @@ class Wrapper implements RestHandler {
 - Must be kept in sync with `RestHandler` interface changes
 - Reflection-based test ensures completeness but adds test complexity
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-12): Added missing delegation for `isActionPaginated()` and `supportsStreaming()` methods, added reflection-based test to prevent future regressions
+
+## References
+
+### Documentation
+- [RestHandler.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/rest/RestHandler.java): Source code
+- [BaseRestHandlerTests.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/test/java/org/opensearch/rest/BaseRestHandlerTests.java): Test coverage
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#16154](https://github.com/opensearch-project/OpenSearch/pull/16154) | Ensure Wrapper delegates all implementations |
 | v2.17.0 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Added `isActionPaginated()` method (caused delegation gap) |
 | v1.0.0 | [#1004](https://github.com/opensearch-project/OpenSearch/pull/1004) | Original introduction of RestHandler.Wrapper |
-
-## References
-
-- [RestHandler.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/rest/RestHandler.java): Source code
-- [BaseRestHandlerTests.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/test/java/org/opensearch/rest/BaseRestHandlerTests.java): Test coverage
-
-## Change History
-
-- **v2.18.0** (2024-11-12): Added missing delegation for `isActionPaginated()` and `supportsStreaming()` methods, added reflection-based test to prevent future regressions

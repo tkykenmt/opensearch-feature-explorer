@@ -105,17 +105,17 @@ if (isVersion33OrHigher(version)) {
 - If version detection fails, Live Queries tab defaults to hidden (`DEFAULT_SHOW_LIVE_QUERIES_ON_ERROR = false`)
 - Version is cached per data source ID; changing data sources triggers a new version check
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.4/observing-your-data/query-insights/query-insights-dashboard/)
+- [Live Queries Documentation](https://docs.opensearch.org/3.4/observing-your-data/query-insights/live-queries/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#407](https://github.com/opensearch-project/query-insights-dashboards/pull/407) | Add version-aware settings support |
 | [#403](https://github.com/opensearch-project/query-insights-dashboards/pull/403) | MDS support for live queries page |
-
-## References
-
-- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.4/observing-your-data/query-insights/query-insights-dashboard/)
-- [Live Queries Documentation](https://docs.opensearch.org/3.4/observing-your-data/query-insights/live-queries/)
 
 ## Related Feature Report
 

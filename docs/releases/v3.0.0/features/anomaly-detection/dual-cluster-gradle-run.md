@@ -83,17 +83,17 @@ graph TB
 - Security plugin configuration is shared between clusters when enabled
 - Backport to 2.x branch failed due to merge conflicts (requires manual backport)
 
-## Related PRs
+## References
 
+### Documentation
+- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/anomaly-detection/blob/main/DEVELOPER_GUIDE.md): Updated developer documentation
+- [PR #1441](https://github.com/opensearch-project/anomaly-detection/pull/1441): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Adding dual cluster arg to gradle run |
 | [#1442](https://github.com/opensearch-project/anomaly-detection/pull/1442) | Backport to 2.x (includes #1441) |
-
-## References
-
-- [PR #1441](https://github.com/opensearch-project/anomaly-detection/pull/1441): Main implementation
-- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/anomaly-detection/blob/main/DEVELOPER_GUIDE.md): Updated developer documentation
 
 ## Related Feature Report
 

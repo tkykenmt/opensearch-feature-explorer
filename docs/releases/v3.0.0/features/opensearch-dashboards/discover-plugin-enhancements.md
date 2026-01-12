@@ -110,8 +110,9 @@ downloadCSV(data, columns, 'max-available');
 - CSV export "Max Available" only available for DQL/Lucene queries (not SQL)
 - Summary panel customization requires server restart
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9530](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9530) | Add CSV export from Discover page |
@@ -127,8 +128,7 @@ downloadCSV(data, columns, 'max-available');
 | [#9541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9541) | Correctly load saved search query in query editor |
 | [#9465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9465) | Prevent visiting Discover outside workspace |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9309](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9309): URL sync subscription leak
 - [Issue #9318](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9318): flattenHit array mutation bug
 

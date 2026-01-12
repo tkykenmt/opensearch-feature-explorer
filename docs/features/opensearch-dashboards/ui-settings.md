@@ -124,18 +124,18 @@ const effectiveDefault = await uiSettings.get('defaultDataSource');
 - Workspace-scoped settings require workspace context to be active
 - User-scoped settings require authentication
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-01-10): Added backward compatibility for multi-scope settings, deprecation warnings for legacy API usage
+- **v3.1.0**: Initial multi-scope UI settings support with workspace integration
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#9854](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9854) | Backward compatibility for UI setting client |
 | v3.2.0 | [#9726](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9726) | Multi-scope UI settings support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821): Original feature request for workspace-scoped UI settings
-
-## Change History
-
-- **v3.2.0** (2026-01-10): Added backward compatibility for multi-scope settings, deprecation warnings for legacy API usage
-- **v3.1.0**: Initial multi-scope UI settings support with workspace integration

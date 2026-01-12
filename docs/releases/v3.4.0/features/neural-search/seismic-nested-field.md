@@ -170,18 +170,20 @@ No migration required. Existing SEISMIC indexes without nested fields continue t
 - **Inner Hits**: Returns only the top-K child documents found by SEISMIC, not all scored children.
 - **Approximate Threshold**: Counts child documents, not parent documents.
 
-## Related PRs
+## References
 
+### Documentation
+- [Text Chunking Documentation](https://docs.opensearch.org/latest/vector-search/ingesting-data/text-chunking/)
+- [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1678](https://github.com/opensearch-project/neural-search/pull/1678) | Support nested field ingestion and query for SEISMIC |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1666](https://github.com/opensearch-project/neural-search/issues/1666): Feature request for text chunking search with Sparse ANN
 - [Issue #1671](https://github.com/opensearch-project/neural-search/issues/1671): Design document for nested field support
-- [Text Chunking Documentation](https://docs.opensearch.org/latest/vector-search/ingesting-data/text-chunking/)
-- [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
 
 ## Related Feature Report
 

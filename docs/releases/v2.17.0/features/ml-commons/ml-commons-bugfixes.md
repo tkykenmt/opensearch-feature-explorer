@@ -102,8 +102,9 @@ Fixed HTTP dependency issue in `CancelBatchJobTransportAction` that could cause 
 - The model deletion fix handles concurrent requests but does not prevent all race conditions in distributed environments
 - Custom prompt `toString()` conversion may not preserve complex nested structures
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2806](https://github.com/opensearch-project/ml-commons/pull/2806) | Fix delete local model twice quickly get 500 response issue |
@@ -120,8 +121,7 @@ Fixed HTTP dependency issue in `CancelBatchJobTransportAction` that could cause 
 | [#2831](https://github.com/opensearch-project/ml-commons/pull/2831) | Fix Cohere test |
 | [#356](https://github.com/opensearch-project/ml-commons/pull/356) | Bump micromatch from 4.0.5 to 4.0.8 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2793](https://github.com/opensearch-project/ml-commons/issues/2793): Deleting a deleted model causes 500 error
 - [Issue #2829](https://github.com/opensearch-project/ml-commons/issues/2829): Model interface validation issue
 - [Issue #2839](https://github.com/opensearch-project/ml-commons/issues/2839): toString issue in parameters

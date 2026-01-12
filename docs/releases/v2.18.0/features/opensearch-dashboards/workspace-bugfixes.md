@@ -80,8 +80,14 @@ graph TB
 
 Workspace default index patterns no longer inherit from global settings, preventing permission errors when users lack access to global index patterns.
 
-## Related PRs
+## References
 
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): Official workspace feature documentation
+- [Getting Started with Workspaces](https://docs.opensearch.org/2.18/dashboards/workspace/index/): Introduction to workspaces in v2.18
+- [Workspaces APIs](https://docs.opensearch.org/2.18/dashboards/workspace/apis/): API reference for workspace operations
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8435) | Remove What's New card in workspace overview |
@@ -97,12 +103,6 @@ Workspace default index patterns no longer inherit from global settings, prevent
 | [#8675](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8675) | Fix non-workspace admin defaultIndex update |
 | [#8718](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8718) | Fix index pattern issues |
 | [#8719](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8719) | Generate short URL with workspace info |
-
-## References
-
-- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): Official workspace feature documentation
-- [Getting Started with Workspaces](https://docs.opensearch.org/2.18/dashboards/workspace/index/): Introduction to workspaces in v2.18
-- [Workspaces APIs](https://docs.opensearch.org/2.18/dashboards/workspace/apis/): API reference for workspace operations
 
 ## Related Feature Report
 

@@ -87,16 +87,18 @@ pool.submit(() -> {
 - Queue size and keep-alive settings are not applicable to ForkJoinPool types
 - Stats for ForkJoinPool show fixed values (active=0, queue=0, etc.) as ForkJoinPool manages its own internal state differently
 
-## Related PRs
+## References
 
+### Documentation
+- [opensearch-jvector PR #116](https://github.com/opensearch-project/opensearch-jvector/pull/116): Related jVector integration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19008](https://github.com/opensearch-project/OpenSearch/pull/19008) | Add support for a ForkJoinPool type |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18674](https://github.com/opensearch-project/OpenSearch/issues/18674): Feature request for ForkJoinPool support
-- [opensearch-jvector PR #116](https://github.com/opensearch-project/opensearch-jvector/pull/116): Related jVector integration
 
 ## Related Feature Report
 

@@ -114,8 +114,12 @@ No migration required. These are bug fixes that improve existing functionality.
 
 - The query ID field mapping change from `text` to `keyword` only affects new indices; existing indices retain the old mapping
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#426](https://github.com/opensearch-project/query-insights/pull/426) | query-insights | Change matchQuery to termQuery for query ID matching |
@@ -130,12 +134,10 @@ No migration required. These are bug fixes that improve existing functionality.
 | [#329](https://github.com/opensearch-project/query-insights-dashboards/pull/329) | query-insights-dashboards | Cypress workflow fix |
 | [#327](https://github.com/opensearch-project/query-insights-dashboards/pull/327) | query-insights-dashboards | Update delete-backport-branch workflow |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #425](https://github.com/opensearch-project/query-insights/issues/425): Query ID matching returns incorrect results
 - [Issue #350](https://github.com/opensearch-project/query-insights-dashboards/issues/350): Group By selector shows "None" after refresh
 - [Issue #351](https://github.com/opensearch-project/query-insights-dashboards/issues/351): Configuration page validation issues
-- [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
 
 ## Related Feature Report
 

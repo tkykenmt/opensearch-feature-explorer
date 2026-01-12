@@ -81,18 +81,18 @@ No migration required. This is a bug fix that enables previously failing queries
 - The `ScriptedAvg` class expects a specific format from the scripted metric aggregation result
 - Invalid scripted metric results will throw an `IllegalArgumentException` with a descriptive error message
 
-## Related PRs
+## References
 
+### Documentation
+- [Scripted Metric Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/scripted-metric/): Official docs
+- [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/): Rollup feature docs
+- [PR #18288](https://github.com/opensearch-project/OpenSearch/pull/18288): Related PR (closed without merge)
+- [Index Management PR #1268](https://github.com/opensearch-project/index-management/pull/1268): Original rollup and raw indices search support
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric Aggregation when reducing aggregations in InternalValueCount and InternalAvg |
-
-## References
-
-- [PR #18288](https://github.com/opensearch-project/OpenSearch/pull/18288): Related PR (closed without merge)
-- [Index Management PR #1268](https://github.com/opensearch-project/index-management/pull/1268): Original rollup and raw indices search support
-- [Scripted Metric Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/scripted-metric/): Official docs
-- [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/): Rollup feature docs
 
 ## Related Feature Report
 

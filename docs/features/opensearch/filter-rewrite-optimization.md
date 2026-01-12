@@ -197,8 +197,18 @@ GET /logs/_search
 - Performance gains vary based on data distribution and segment characteristics
 - Deleted documents add overhead for LiveDocs filtering
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Added bulk collection APIs (`collect(DocIdStream, long)`, `collectRange(int, int)`), deleted documents handling, and optimized implementations for avg, sum, min, max, stats, and cardinality aggregations
+
+## References
+
+### Documentation
+- [Range Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/range/)
+- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+- [Lucene PR #14401](https://github.com/apache/lucene/pull/14401): Enable collectors to take advantage of pre-aggregated data
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19643](https://github.com/opensearch-project/OpenSearch/pull/19643) | Handle deleted documents for filter rewrite sub-aggregation optimization |
@@ -207,15 +217,7 @@ GET /logs/_search
 | v3.4.0 | [#20067](https://github.com/opensearch-project/OpenSearch/pull/20067) | Bulk collection logic for metrics and cardinality aggregations |
 | v3.0.0 | [#17447](https://github.com/opensearch-project/OpenSearch/pull/17447) | Support sub agg in filter rewrite optimization (initial implementation) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19642](https://github.com/opensearch-project/OpenSearch/issues/19642): Handle deleted documents for filter rewrite subaggregation optimization
 - [Issue #19324](https://github.com/opensearch-project/OpenSearch/issues/19324): [META] Use Lucene bulk collection API to speed up aggregation
 - [Issue #20031](https://github.com/opensearch-project/OpenSearch/issues/20031): [META] Advanced Query Engine Performance Optimizations in OpenSearch
-- [Lucene PR #14401](https://github.com/apache/lucene/pull/14401): Enable collectors to take advantage of pre-aggregated data
-- [Range Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/range/)
-- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
-
-## Change History
-
-- **v3.4.0** (2026-01): Added bulk collection APIs (`collect(DocIdStream, long)`, `collectRange(int, int)`), deleted documents handling, and optimized implementations for avg, sum, min, max, stats, and cardinality aggregations

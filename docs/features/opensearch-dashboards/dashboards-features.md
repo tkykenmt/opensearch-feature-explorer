@@ -103,8 +103,19 @@ source=logs | where status =
 - Vega time field support requires explicit `%timefield%` parameter in the specification
 - Field-level security and masking are applied to value suggestions
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-02): Added autocomplete value suggestions, Vega PPL time field support, dependency license validation, and Discover scrolling improvements
+
+## References
+
+### Documentation
+- [Vega Documentation](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Official Vega visualization docs
+
+### Blog Posts
+- [Improving ease of use in OpenSearch Dashboards with Vega visualizations](https://opensearch.org/blog/improving-dashboards-usability-with-vega/): Blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#8275](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8275) | Autocomplete Value Suggestion |
@@ -112,12 +123,5 @@ source=logs | where status =
 | v3.0.0 | [#9152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9152) | Vega PPL time field support |
 | v3.0.0 | [#9298](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9298) | Discover scrolling improvements |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9169](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9169): Vega PPL %timefield% feature request
-- [Vega Documentation](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Official Vega visualization docs
-- [Improving ease of use in OpenSearch Dashboards with Vega visualizations](https://opensearch.org/blog/improving-dashboards-usability-with-vega/): Blog post
-
-## Change History
-
-- **v3.0.0** (2025-02): Added autocomplete value suggestions, Vega PPL time field support, dependency license validation, and Discover scrolling improvements

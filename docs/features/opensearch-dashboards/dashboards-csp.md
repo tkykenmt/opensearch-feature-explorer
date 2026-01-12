@@ -121,21 +121,21 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 - Requires Security plugin permissions to modify `.opensearch_dashboards_config` index
 - Dynamic configurations override YAML configurations (except for empty CSP rules)
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.13.0 | - | Initial CSP dynamic configuration for frame-ancestors |
-| v3.4.0 | [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |
+- **v3.4.0** (2026-01): Added dynamic configuration support for CSP-Report-Only `isEmitting` setting
+- **v2.13.0**: Initial implementation of dynamic CSP configuration for `frame-ancestors` directive
 
 ## References
 
+### Documentation
 - [CSP Dynamic Configuration Documentation](https://docs.opensearch.org/3.0/dashboards/csp/csp-dynamic-configuration/)
 - [applicationConfig Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/application_config/README.md)
 - [cspHandler Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/csp_handler/README.md)
 - [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 
-## Change History
-
-- **v3.4.0** (2026-01): Added dynamic configuration support for CSP-Report-Only `isEmitting` setting
-- **v2.13.0**: Initial implementation of dynamic CSP configuration for `frame-ancestors` directive
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.13.0 | - | Initial CSP dynamic configuration for frame-ancestors |
+| v3.4.0 | [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |

@@ -56,17 +56,17 @@ For plugin developers extending Neural Search:
 
 - The error_prone_annotations version is forced to 2.21.1 as a temporary workaround until upstream dependencies resolve the version conflict
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN PR #2863 Comment](https://github.com/opensearch-project/k-NN/pull/2863#issuecomment-3251945721): Original jar hell issue report
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1551](https://github.com/opensearch-project/neural-search/pull/1551) | Remove commons-lang dependency and use gradle version catalog for commons-lang3 |
 | [#1574](https://github.com/opensearch-project/neural-search/pull/1574) | Update Lucene101 codec path to backward path & force errorprone version |
 | [#1589](https://github.com/opensearch-project/neural-search/pull/1589) | Upgrade QA Gradle Dependency Version with commons-lang3 |
-
-## References
-
-- [k-NN PR #2863 Comment](https://github.com/opensearch-project/k-NN/pull/2863#issuecomment-3251945721): Original jar hell issue report
 
 ## Related Feature Report
 

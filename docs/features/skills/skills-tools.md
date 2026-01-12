@@ -147,8 +147,25 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 - PPLTool requires an LLM model for natural language translation
 - Some tools require specific plugins to be installed (e.g., anomaly detection, alerting)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Increased max_sample_count from 2 to 5 for LogPatternAnalysisTool log insight mode, providing more representative sample logs per pattern
+- **v3.3.0** (2026-01-11): Added LogPatternAnalysisTool for intelligent log pattern detection with sequence analysis and time-based comparison; added DataDistributionTool for statistical distribution analysis with divergence calculation; enhanced PPLTool to include mappings, current_time, and os_version when passing to SageMaker; fixed WebSearchTool using AsyncHttpClient from ml-commons; fixed DataDistributionTool to remove baselinePercentage when no baseline provided
+- **v3.2.0** (2026-01-11): Added index schema merging for PPLTool when using index patterns (merges mappings from all matching indexes); added error message masking in PPLTool to redact SageMaker ARNs and AWS account numbers; standardized parameter handling across all tools using `extractInputParameters` utility
+- **v3.1.0** (2025-05-06): Added data source type parameter (`datasourceType`) to PPLTool for Spark/S3 data source support; fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
+- **v3.0.0** (2025-02-25): Added WebSearchTool, fixed PPLTool empty list bug, updated dependencies, enhanced developer guide; added `attributes` field to all tool classes for ML Commons Plan-Execute-Reflect agent compatibility ([#549](https://github.com/opensearch-project/skills/pull/549)); added Java Agent plugin support for SecurityManager deprecation ([#553](https://github.com/opensearch-project/skills/pull/553)); fixed jar hell issue by creating thin SQL JAR with only `org/opensearch/sql/**` classes ([#545](https://github.com/opensearch-project/skills/pull/545))
+- **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool
+
+## References
+
+### Documentation
+- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Official tools documentation
+- [WebSearchTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/web-search-tool/): WebSearchTool reference
+- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): PPL tool reference
+- [CreateAnomalyDetectorTool Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/tools/create-anomaly-detector/): CreateAnomalyDetectorTool reference
+- [Skills Repository](https://github.com/opensearch-project/skills): Source code
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#678](https://github.com/opensearch-project/skills/pull/678) | Increase max_sample_count to 5 for log insight |
@@ -173,21 +190,6 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 | v2.18.0 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |
 | v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #538](https://github.com/opensearch-project/skills/issues/538): WebSearchTool feature request
 - [Issue #337](https://github.com/opensearch-project/skills/issues/337): Create Anomaly Detector Tool feature request
-- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Official tools documentation
-- [WebSearchTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/web-search-tool/): WebSearchTool reference
-- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): PPL tool reference
-- [CreateAnomalyDetectorTool Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/tools/create-anomaly-detector/): CreateAnomalyDetectorTool reference
-- [Skills Repository](https://github.com/opensearch-project/skills): Source code
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Increased max_sample_count from 2 to 5 for LogPatternAnalysisTool log insight mode, providing more representative sample logs per pattern
-- **v3.3.0** (2026-01-11): Added LogPatternAnalysisTool for intelligent log pattern detection with sequence analysis and time-based comparison; added DataDistributionTool for statistical distribution analysis with divergence calculation; enhanced PPLTool to include mappings, current_time, and os_version when passing to SageMaker; fixed WebSearchTool using AsyncHttpClient from ml-commons; fixed DataDistributionTool to remove baselinePercentage when no baseline provided
-- **v3.2.0** (2026-01-11): Added index schema merging for PPLTool when using index patterns (merges mappings from all matching indexes); added error message masking in PPLTool to redact SageMaker ARNs and AWS account numbers; standardized parameter handling across all tools using `extractInputParameters` utility
-- **v3.1.0** (2025-05-06): Added data source type parameter (`datasourceType`) to PPLTool for Spark/S3 data source support; fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
-- **v3.0.0** (2025-02-25): Added WebSearchTool, fixed PPLTool empty list bug, updated dependencies, enhanced developer guide; added `attributes` field to all tool classes for ML Commons Plan-Execute-Reflect agent compatibility ([#549](https://github.com/opensearch-project/skills/pull/549)); added Java Agent plugin support for SecurityManager deprecation ([#553](https://github.com/opensearch-project/skills/pull/553)); fixed jar hell issue by creating thin SQL JAR with only `org/opensearch/sql/**` classes ([#545](https://github.com/opensearch-project/skills/pull/545))
-- **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool

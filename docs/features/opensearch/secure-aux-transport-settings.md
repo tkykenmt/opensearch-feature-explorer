@@ -146,19 +146,21 @@ grpcurl -insecure localhost:9400 list
 - Users can configure `clientauth_mode` to allow/disallow certificates, but no permissions are checked
 - Each transport type requires separate configuration; no inheritance from main transport settings
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-09-16): Updated interface to accept `auxTransportType` string parameter, enabling transport-specific SSL configurations
+
+## References
+
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official gRPC transport documentation
+- [SecureAuxTransportSettingsProvider.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/plugins/SecureAuxTransportSettingsProvider.java): Interface source code
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18616](https://github.com/opensearch-project/OpenSearch/pull/18616) | Update interface to distinguish between aux transport types |
 | v3.2.0 | [security#5375](https://github.com/opensearch-project/security/pull/5375) | TLS support for auxiliary transports in security plugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations
-- [SecureAuxTransportSettingsProvider.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/plugins/SecureAuxTransportSettingsProvider.java): Interface source code
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official gRPC transport documentation
-
-## Change History
-
-- **v3.2.0** (2025-09-16): Updated interface to accept `auxTransportType` string parameter, enabling transport-specific SSL configurations

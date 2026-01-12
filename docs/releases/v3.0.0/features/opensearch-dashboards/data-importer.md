@@ -124,8 +124,12 @@ This is a new feature with no migration required. To enable:
 - No support for editing data before import in v3.0.0
 - Plugin must be explicitly enabled in configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9602](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9602) | Add a new Data Importer Plugin to OSD Core |
@@ -133,10 +137,8 @@ This is a new feature with no migration required. To enable:
 | [#10478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10478) | Move Data Importer to Data Administration under settings |
 | [#10961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10961) | Data importer UI fixes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9199](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9199): RFC - Integrate a Data Importer Plugin into Dashboards
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ## Related Feature Report
 

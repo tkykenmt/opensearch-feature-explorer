@@ -104,26 +104,30 @@ The Reporting plugin integrates with OpenSearch Security:
 - Large reports may timeout depending on cluster configuration
 - Report scheduling requires the Job Scheduler plugin
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Security fix for CVE-2025-7783
+- **v3.2.0** (2026-01-11): Fixed system index creation permissions and tenant URL parsing
+- **v3.1.0** (2025-06-13): Version increment and release notes maintenance
+
+## References
+
+### Documentation
+- [Reporting Documentation](https://docs.opensearch.org/3.0/reporting/): Official OpenSearch Reporting documentation
+- [Reporting CLI](https://docs.opensearch.org/3.0/reporting/rep-cli-index/): Command-line interface for report generation
+- [Reporting Repository](https://github.com/opensearch-project/reporting): Backend plugin repository
+- [Dashboards Reporting Repository](https://github.com/opensearch-project/dashboards-reporting): Frontend plugin repository
+
+### Blog Posts
+- [OpenSearch Reporting 101](https://opensearch.org/blog/feature-highlight-reporting/): Feature highlight blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#640](https://github.com/opensearch-project/reporting/pull/640) | Fixing CVE-2025-7783 |
 | v3.2.0 | [#1108](https://github.com/opensearch-project/reporting/pull/1108) | Create report indices in system context to avoid permission issues |
 | v3.2.0 | [#599](https://github.com/opensearch-project/dashboards-reporting/pull/599) | Fix tenant URL parsing when generating reports from Discover |
 
-## References
-
-- [Reporting Documentation](https://docs.opensearch.org/3.0/reporting/): Official OpenSearch Reporting documentation
-- [Reporting CLI](https://docs.opensearch.org/3.0/reporting/rep-cli-index/): Command-line interface for report generation
+### Issues (Design / RFC)
 - [Issue #998](https://github.com/opensearch-project/reporting/issues/998): Permission issue when creating reporting indices
 - [Issue #535](https://github.com/opensearch-project/dashboards-reporting/issues/535): Tenant URL parsing bug
-- [OpenSearch Reporting 101](https://opensearch.org/blog/feature-highlight-reporting/): Feature highlight blog post
-- [Reporting Repository](https://github.com/opensearch-project/reporting): Backend plugin repository
-- [Dashboards Reporting Repository](https://github.com/opensearch-project/dashboards-reporting): Frontend plugin repository
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Security fix for CVE-2025-7783
-- **v3.2.0** (2026-01-11): Fixed system index creation permissions and tenant URL parsing
-- **v3.1.0** (2025-06-13): Version increment and release notes maintenance

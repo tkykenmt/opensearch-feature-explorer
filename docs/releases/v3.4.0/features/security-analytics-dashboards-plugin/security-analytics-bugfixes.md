@@ -58,17 +58,17 @@ No migration required. The fix is backward compatible and automatically applies 
 - The correlation table requires findings data to be present for correlations to be displayed
 - Correlation rules must be properly configured with at least two log sources
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#1360](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1360) | Correlation table rendering fixed |
-
 ## References
 
+### Documentation
 - [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/)
 - [Creating Correlation Rules](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/correlation-config/)
 - [Working with the Correlation Graph](https://docs.opensearch.org/3.0/security-analytics/usage/correlation-graph/)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#1360](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1360) | Correlation table rendering fixed |
 
 ## Related Feature Report
 

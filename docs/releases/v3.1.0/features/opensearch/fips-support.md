@@ -71,15 +71,17 @@ if (FipsMode.CHECK.isFipsEnabled()) {
 - This is a test framework change; production FIPS mode detection is handled separately
 - Full FIPS compliance requires additional configuration and BC-FIPS libraries
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Plugin CI Failure](https://github.com/opensearch-project/security/actions/runs/15408478290/job/43355642640?pr=5370): Original error that prompted this fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18427](https://github.com/opensearch-project/OpenSearch/pull/18427) | Update FipsMode check to catch NoSuchMethodError |
 
-## References
-
-- [Security Plugin CI Failure](https://github.com/opensearch-project/security/actions/runs/15408478290/job/43355642640?pr=5370): Original error that prompted this fix
+### Issues (Design / RFC)
 - [Issue #4915](https://github.com/opensearch-project/security/issues/4915): OpenSAML incompatibility with BC-FIPS
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): RFC - Proposal for supporting FIPS 140-2 enforced mode
 - [Issue #4254](https://github.com/opensearch-project/security/issues/4254): RFC - FIPS-140 Compliance Roadmap for OpenSearch

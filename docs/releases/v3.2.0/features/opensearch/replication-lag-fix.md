@@ -84,17 +84,19 @@ graph TB
 - This fix only affects segment replication; document replication uses different mechanisms
 - Historical lag data collected before this fix may be inaccurate
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official segment replication docs
+- [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API for viewing segment replication metrics
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18602](https://github.com/opensearch-project/OpenSearch/pull/18602) | Fix bugs in replication lag computation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18437](https://github.com/opensearch-project/OpenSearch/issues/18437): Bug report for incorrect segment replication lag metric
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official segment replication docs
-- [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API for viewing segment replication metrics
 
 ## Related Feature Report
 

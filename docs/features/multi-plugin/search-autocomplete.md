@@ -157,20 +157,22 @@ GET products/_search
 - Multi-fields support was added in v2.18.0 (previously silently ignored)
 - Dashboards autocomplete behavior may vary between DQL, PPL, and SQL query languages
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Fixed search_as_you_type multi-fields support; Enhanced Dashboards autocomplete UX with persistent suggestions and user hints
+
+## References
+
+### Documentation
+- [search_as_you_type Documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/search-as-you-type/): Official field type documentation
+- [Autocomplete Documentation](https://docs.opensearch.org/latest/search-plugins/searching-data/autocomplete/): Autocomplete functionality guide
+- [Elasticsearch PR #82430](https://github.com/elastic/elasticsearch/pull/82430): Original fix in Elasticsearch
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#15988](https://github.com/opensearch-project/OpenSearch/pull/15988) | Fix search_as_you_type not supporting multi-fields |
 | v2.18.0 | [#7991](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7991) | Keep Autocomplete suggestion window open and put user hints below the suggestion window |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5035](https://github.com/opensearch-project/OpenSearch/issues/5035): Original bug report for search_as_you_type multi-fields
-- [search_as_you_type Documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/search-as-you-type/): Official field type documentation
-- [Autocomplete Documentation](https://docs.opensearch.org/latest/search-plugins/searching-data/autocomplete/): Autocomplete functionality guide
-- [Elasticsearch PR #82430](https://github.com/elastic/elasticsearch/pull/82430): Original fix in Elasticsearch
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Fixed search_as_you_type multi-fields support; Enhanced Dashboards autocomplete UX with persistent suggestions and user hints

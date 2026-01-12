@@ -236,8 +236,26 @@ GET /my-nlp-index/_search
 - Two-phase processor: `neural_sparse_two_phase_processor` not supported when querying semantic field directly
 - Cannot change `raw_field_type` or `semantic_info_field_name` after index creation
 
-## Related PRs
+## Change History
 
+| Version | Date | Changes |
+|---------|------|---------|
+| v3.3.0 | 2025-12 | Bug fix: MultiFields now properly indexed for semantic fields with supported raw field types |
+| v3.2.0 | 2025-09 | knn_vector field configuration, ingest batch size setting, sparse encoding prune strategies, chunking strategies configuration, embedding reuse option, remote dense model handling fix, neural sparse analyzer version fix |
+| v3.1.0 | 2025-06 | Semantic mapping transformer, ingest processor, query logic, chunking support, search analyzer support, stats tracking |
+| v3.0.0 | 2025-03 | Initial semantic field mapper implementation (feature-flagged) |
+
+## References
+
+### Documentation
+- [Documentation: Semantic Field Type](https://docs.opensearch.org/3.1/field-types/supported-field-types/semantic/)
+- [Documentation: Semantic Search](https://docs.opensearch.org/3.1/vector-search/ai-search/semantic-search/)
+
+### Blog Posts
+- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
+- [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#1572](https://github.com/opensearch-project/neural-search/pull/1572) | Fix not able to index the multiFields for the rawFieldType |
@@ -257,20 +275,6 @@ GET /my-nlp-index/_search
 | v3.1.0 | [#1362](https://github.com/opensearch-project/neural-search/pull/1362) | Add stats tracking for semantic field |
 | v3.0.0 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
 - [Issue #1571](https://github.com/opensearch-project/neural-search/issues/1571): MultiFields doesn't work for semantic field type
-- [Documentation: Semantic Field Type](https://docs.opensearch.org/3.1/field-types/supported-field-types/semantic/)
-- [Documentation: Semantic Search](https://docs.opensearch.org/3.1/vector-search/ai-search/semantic-search/)
-- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
-- [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
-
-## Change History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| v3.3.0 | 2025-12 | Bug fix: MultiFields now properly indexed for semantic fields with supported raw field types |
-| v3.2.0 | 2025-09 | knn_vector field configuration, ingest batch size setting, sparse encoding prune strategies, chunking strategies configuration, embedding reuse option, remote dense model handling fix, neural sparse analyzer version fix |
-| v3.1.0 | 2025-06 | Semantic mapping transformer, ingest processor, query logic, chunking support, search analyzer support, stats tracking |
-| v3.0.0 | 2025-03 | Initial semantic field mapper implementation (feature-flagged) |

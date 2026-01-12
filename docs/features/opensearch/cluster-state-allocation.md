@@ -113,19 +113,21 @@ PUT _cluster/settings
 - Allocation filter updates are eventually consistent across the cluster
 - Mixed-version clusters may experience serialization issues with remote state (fixed in v3.4.0)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Fixed concurrent modification in allocation filters; Added version-aware serialization for remote state entities
+
+## References
+
+### Documentation
+- [Remote Cluster State Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
+- [Cluster Settings - Allocation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19701](https://github.com/opensearch-project/OpenSearch/pull/19701) | Fix concurrent modification in DiscoveryNodeFilters |
 | v3.4.0 | [#20080](https://github.com/opensearch-project/OpenSearch/pull/20080) | Version-aware serialization for remote state entities |
 
-## References
-
-- [Remote Cluster State Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
-- [Cluster Settings - Allocation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/)
+### Issues (Design / RFC)
 - [Issue #19843](https://github.com/opensearch-project/OpenSearch/issues/19843): Remote state backward compatibility bug
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Fixed concurrent modification in allocation filters; Added version-aware serialization for remote state entities

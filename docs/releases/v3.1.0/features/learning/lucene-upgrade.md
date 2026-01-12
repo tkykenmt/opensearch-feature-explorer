@@ -42,16 +42,18 @@ This is an internal plugin update. No user action is required. The Learning to R
 
 - This update only addresses Lucene API compatibility; no new features are added
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache Lucene 10.2.1 Changes](https://lucene.apache.org/core/10_2_1/changes/Changes.html)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #184](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/184): Unable to build/run due to DisiPriorityQueue being abstract
-- [Apache Lucene 10.2.1 Changes](https://lucene.apache.org/core/10_2_1/changes/Changes.html)
 
 ## Related Feature Report
 

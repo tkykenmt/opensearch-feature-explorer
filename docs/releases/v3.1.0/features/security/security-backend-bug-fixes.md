@@ -78,8 +78,9 @@ Simplified the logic in the basic authenticator to only log "Invalid Authorizati
 - The cache reload on snapshot restore adds a small overhead during restore operations
 - The compliance audit log fix requires proper configuration of `write_log_diffs` and `write_metadata_only` settings
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#5307](https://github.com/opensearch-project/security/pull/5307) | security | Fixes security index stale cache issue post snapshot restore |
@@ -92,8 +93,7 @@ Simplified the logic in the basic authenticator to only log "Invalid Authorizati
 | [#2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253) | security-dashboards-plugin | Adds forecasting transport actions to static dropdown |
 | [#1530](https://github.com/opensearch-project/security-analytics/pull/1530) | security-analytics | Switch guava deps from compileOnly to implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5308](https://github.com/opensearch-project/security/issues/5308): Stale cache post snapshot restore
 - [Issue #5280](https://github.com/opensearch-project/security/issues/5280): Issue computing diffs in compliance audit log
 - [Issue #2189](https://github.com/opensearch-project/security-dashboards-plugin/issues/2189): Page reload on invalid password

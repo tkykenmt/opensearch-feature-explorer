@@ -123,19 +123,23 @@ String oboToken = tokenManager.issueOnBehalfOfToken(subject, claims).asAuthHeade
 - Service account token rotation is not yet implemented
 - Security plugin implementation of the token interfaces is pending
 
-## Related PRs
+## References
 
+### Documentation
+- [Extensions Documentation](https://docs.opensearch.org/3.0/developer-documentation/extensions/): Official OpenSearch extensions documentation
+
+### Blog Posts
+- [Introducing Extensions Blog](https://opensearch.org/blog/introducing-extensions-for-opensearch/): Blog post introducing extensions architecture
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8679](https://github.com/opensearch-project/OpenSearch/pull/8679) | Implement on behalf of token passing for extensions |
 | [#9618](https://github.com/opensearch-project/OpenSearch/pull/9618) | Provide service accounts tokens to extensions |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2764](https://github.com/opensearch-project/security/issues/2764): Determine how auth tokens are forwarded to Extensions
 - [Issue #3176](https://github.com/opensearch-project/security/issues/3176): Issue and ferry a Service Account Token to an Extension on bootstrap
-- [Extensions Documentation](https://docs.opensearch.org/3.0/developer-documentation/extensions/): Official OpenSearch extensions documentation
-- [Introducing Extensions Blog](https://opensearch.org/blog/introducing-extensions-for-opensearch/): Blog post introducing extensions architecture
 
 ## Related Feature Report
 

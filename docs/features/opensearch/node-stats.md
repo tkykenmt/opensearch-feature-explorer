@@ -160,20 +160,22 @@ OpenSearch requires read access to cgroup files for CPU statistics on Linux:
 - Some metrics are platform-specific (e.g., cgroup stats are Linux-only)
 - High-frequency polling can impact cluster performance
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Fixed negative CPU usage values on Linux systems with combined cpu,cpuacct cgroup controller
+- **v3.0.0** (2025-05-13): Fixed NullPointerException when gathering node stats with QueryGroupTasks that don't have queryGroupId set
+
+## References
+
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#20108](https://github.com/opensearch-project/OpenSearch/pull/20108) | Fix negative CPU usage values by adding cgroup permissions |
 | v3.0.0 | [#17576](https://github.com/opensearch-project/OpenSearch/pull/17576) | Fix NPE in node stats due to QueryGroupTasks |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19120](https://github.com/opensearch-project/OpenSearch/issues/19120): Bug report for negative CPU values
 - [Issue #17518](https://github.com/opensearch-project/OpenSearch/issues/17518): NPE in node stats due to QueryGroupTasks
-- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Fixed negative CPU usage values on Linux systems with combined cpu,cpuacct cgroup controller
-- **v3.0.0** (2025-05-13): Fixed NullPointerException when gathering node stats with QueryGroupTasks that don't have queryGroupId set

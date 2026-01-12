@@ -78,17 +78,19 @@ CreateIndexRequest request = new CreateIndexRequest(indexName)
 - Only suitable for small, critical indices
 - Higher indexing load due to replication to all nodes
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Changed `.plugins-ml-config` index to use `auto_expand_replicas: 0-all` for maximum availability
+
+## References
+
+### Documentation
+- [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#3017](https://github.com/opensearch-project/ml-commons/pull/3017) | Support index.auto_expand_replicas 0-all for .plugins-ml-config |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3002](https://github.com/opensearch-project/ml-commons/issues/3002): Original feature request
-- [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Official documentation
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Changed `.plugins-ml-config` index to use `auto_expand_replicas: 0-all` for maximum availability

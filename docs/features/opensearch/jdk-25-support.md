@@ -93,19 +93,23 @@ POST /my-index/_update/1
 - Other JDK 25 compatibility issues may require separate fixes
 - The fix uses Java 21+ pattern matching syntax (`switch` expressions with type patterns)
 
-## Related PRs
+## Change History
 
+- **v3.4.0**: Added JDK 25 compatibility through exception wrapping in Painless DefBootstrap
+
+## References
+
+### Documentation
+- [JDK-8351996](https://bugs.openjdk.org/browse/JDK-8351996): Behavioral updates for ClassValue::remove
+
+### Blog Posts
+- [OpenSearch Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using Different Java Runtimes with OpenSearch
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19706](https://github.com/opensearch-project/OpenSearch/pull/19706) | Wrap checked exceptions in painless.DefBootstrap to support JDK-25 |
 | v3.4.0 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | Update bundled JDK to JDK-25 |
 
-## References
-
-- [JDK-8351996](https://bugs.openjdk.org/browse/JDK-8351996): Behavioral updates for ClassValue::remove
+### Issues (Design / RFC)
 - [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): JDK 25 support tracking issue
-- [OpenSearch Java Runtime Blog](https://opensearch.org/blog/opensearch-java-runtime/): Using Different Java Runtimes with OpenSearch
-
-## Change History
-
-- **v3.4.0**: Added JDK 25 compatibility through exception wrapping in Painless DefBootstrap

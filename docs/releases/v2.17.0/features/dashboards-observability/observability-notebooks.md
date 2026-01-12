@@ -93,16 +93,16 @@ For MDS environments, adding sample notebooks now prompts for data source select
 - Sample notebooks require the selected data source to be accessible
 - Badge counter only displays when new navigation is enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Notebooks Documentation](https://docs.opensearch.org/2.17/observing-your-data/notebooks/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2110](https://github.com/opensearch-project/dashboards-observability/pull/2110) | UI update: badge counter in breadcrumbs, simplified delete workflow |
 | [#2108](https://github.com/opensearch-project/dashboards-observability/pull/2108) | Fix sample notebooks for MDS environments |
-
-## References
-
-- [Notebooks Documentation](https://docs.opensearch.org/2.17/observing-your-data/notebooks/): Official documentation
 
 ## Related Feature Report
 

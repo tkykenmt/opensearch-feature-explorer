@@ -96,16 +96,18 @@ POST /logs-*/_search
 - Thread safety relies on single-threaded `LeafCollector` execution
 - Future intra-segment concurrent search may require additional changes (tracked in [#18879](https://github.com/opensearch-project/OpenSearch/pull/18879))
 
-## Related PRs
+## References
 
+### Documentation
+- [Bucket Aggregations](https://docs.opensearch.org/3.0/aggregations/bucket/index/): OpenSearch documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18531](https://github.com/opensearch-project/OpenSearch/pull/18531) | Optimize Composite Aggregations by removing unnecessary object allocations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18440](https://github.com/opensearch-project/OpenSearch/issues/18440): Composite Terms Aggregation Performance Improvement
-- [Bucket Aggregations](https://docs.opensearch.org/3.0/aggregations/bucket/index/): OpenSearch documentation
 
 ## Related Feature Report
 

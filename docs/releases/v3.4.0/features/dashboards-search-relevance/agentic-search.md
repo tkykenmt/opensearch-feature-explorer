@@ -107,8 +107,15 @@ No migration required. The new features are backward compatible with existing ag
 - Memory ID management requires a conversational agent type
 - Source parameter preservation only applies to the neural-search plugin's agentic query translator
 
-## Related PRs
+## References
 
+### Documentation
+- [Agentic Search Documentation](https://docs.opensearch.org/latest/vector-search/ai-search/agentic-search/index/): Setup and usage guide
+
+### Blog Posts
+- [Blog: Introducing agentic search in OpenSearch](https://opensearch.org/blog/introducing-agentic-search-in-opensearch-transforming-data-interaction-through-natural-language/): Official announcement
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#693](https://github.com/opensearch-project/dashboards-search-relevance/pull/693) | dashboards-search-relevance | Add support for agent search in pairwise comparison |
@@ -120,12 +127,9 @@ No migration required. The new features are backward compatible with existing ag
 | [#813](https://github.com/opensearch-project/dashboards-search-relevance/pull/813) | dashboards-search-relevance | Add version filtering on agentic search use case |
 | [#1669](https://github.com/opensearch-project/neural-search/pull/1669) | neural-search | Preserve source parameter for the query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1664](https://github.com/opensearch-project/neural-search/issues/1664): Agentic Search: Support of `_source.excludes`
 - [Issue #677](https://github.com/opensearch-project/dashboards-search-relevance/issues/677): Agent search support tracking
-- [Blog: Introducing agentic search in OpenSearch](https://opensearch.org/blog/introducing-agentic-search-in-opensearch-transforming-data-interaction-through-natural-language/): Official announcement
-- [Agentic Search Documentation](https://docs.opensearch.org/latest/vector-search/ai-search/agentic-search/index/): Setup and usage guide
 
 ## Related Feature Report
 

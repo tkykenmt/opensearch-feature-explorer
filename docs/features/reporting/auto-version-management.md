@@ -52,17 +52,17 @@ graph TB
 - Automated PRs require human review before merge
 - Version conflicts may occur if manual version changes are made
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | Increment to 3.1.0-SNAPSHOT |
-
-## References
-
-- [OpenSearch Build Repository](https://github.com/opensearch-project/opensearch-build)
-- [OpenSearch Release Process](https://github.com/opensearch-project/.github/blob/main/RELEASING.md)
-
 ## Change History
 
 - **v3.0.0** (2025-05-06): Version increment to 3.1.0-SNAPSHOT for reporting repository
+
+## References
+
+### Documentation
+- [OpenSearch Build Repository](https://github.com/opensearch-project/opensearch-build)
+- [OpenSearch Release Process](https://github.com/opensearch-project/.github/blob/main/RELEASING.md)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | Increment to 3.1.0-SNAPSHOT |

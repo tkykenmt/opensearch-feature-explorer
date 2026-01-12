@@ -85,16 +85,18 @@ PUT _ingest/pipeline/text-chunking-pipeline
 
 - The `ignore_missing` parameter only affects null/missing fields; empty strings are still processed and produce empty chunk results
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/ingest-pipelines/processors/text-chunking/): Text chunking processor documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#907](https://github.com/opensearch-project/neural-search/pull/907) | Add ignore_missing field to text chunking processors |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #906](https://github.com/opensearch-project/neural-search/issues/906): Feature request for ignore_missing field
-- [Documentation](https://docs.opensearch.org/2.18/ingest-pipelines/processors/text-chunking/): Text chunking processor documentation
 
 ## Related Feature Report
 

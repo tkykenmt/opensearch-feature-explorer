@@ -115,19 +115,19 @@ PUT _cluster/settings
 - Planning worker nodes are stored in memory and may need re-sync after cluster restart
 - Auto-deployment only works for function types that support it (e.g., REMOTE models)
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#3423](https://github.com/opensearch-project/ml-commons/pull/3423) | Run auto deploy remote model in partially deployed status |
+- **v3.2.0** (2025-07): Enhanced auto-deployment to handle partially deployed models by comparing current worker nodes against target worker nodes
 
 ## References
 
+### Documentation
 - [Deploy Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/deploy-model/)
 - [Register Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/register-model/)
 - [Connecting to externally hosted models](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/index/)
 - [Undeploy Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/undeploy-model/)
 
-## Change History
-
-- **v3.2.0** (2025-07): Enhanced auto-deployment to handle partially deployed models by comparing current worker nodes against target worker nodes
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#3423](https://github.com/opensearch-project/ml-commons/pull/3423) | Run auto deploy remote model in partially deployed status |

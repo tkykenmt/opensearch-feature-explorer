@@ -134,16 +134,16 @@ GET /_remotestore/metadata/my-index-1?pretty
 - Requires `cluster:admin/remotestore/metadata` permission when Security plugin is enabled
 - Marked as `@ExperimentalApi` - API may change in future releases
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote-backed storage documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/)
+- [Remote Store Stats API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-store-stats-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18257](https://github.com/opensearch-project/OpenSearch/pull/18257) | Created an API to fetch remote store metadata |
-
-## References
-
-- [Remote-backed storage documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/)
-- [Remote Store Stats API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-store-stats-api/)
 
 ## Related Feature Report
 

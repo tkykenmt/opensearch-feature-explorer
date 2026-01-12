@@ -107,18 +107,20 @@ For plugin developers migrating to the version catalog:
 - Some dependencies may still use the legacy `versions.properties` approach
 - Dependabot can only monitor dependencies listed in the version catalog
 
-## Related PRs
+## References
 
+### Documentation
+- [Gradle Version Catalogs](https://docs.gradle.org/current/userguide/platforms.html): Official Gradle documentation
+- [Dependabot Gradle Support](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#gradle): GitHub Dependabot configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17233](https://github.com/opensearch-project/OpenSearch/pull/17233) | Convert transport-reactor-netty4 to use gradle version catalog |
 | [#16284](https://github.com/opensearch-project/OpenSearch/pull/16284) | Initial implementation of Gradle version catalog |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3782](https://github.com/opensearch-project/OpenSearch/issues/3782): Original feature request for Dependabot support
-- [Gradle Version Catalogs](https://docs.gradle.org/current/userguide/platforms.html): Official Gradle documentation
-- [Dependabot Gradle Support](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#gradle): GitHub Dependabot configuration
 
 ## Related Feature Report
 

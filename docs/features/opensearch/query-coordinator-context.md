@@ -121,20 +121,20 @@ public class NeuralQueryBuilder extends AbstractQueryBuilder<NeuralQueryBuilder>
 - Index mapping lookup requires additional calls to cluster state
 - Only available during coordinator-level query rewriting (not shard-level)
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-05-15): Added `getSearchRequest()` method, broadened constructor to accept `IndicesRequest`, integrated with Validate Query API
+- **v2.19.0** (2025-01-23): Initial implementation with Template query support
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#17890](https://github.com/opensearch-project/OpenSearch/pull/17890) | Allow to get the search request from the QueryCoordinatorContext |
 | v3.1.0 | [#18272](https://github.com/opensearch-project/OpenSearch/pull/18272) | Use QueryCoordinatorContext for the rewrite in validate API |
 | v2.19.0 | [#16818](https://github.com/opensearch-project/OpenSearch/pull/16818) | Introduce Template query (initial QueryCoordinatorContext) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1211](https://github.com/opensearch-project/neural-search/issues/1211): RFC - Support Semantic Field Type to Simplify Neural Search Set Up
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Semantic field feature request
-
-## Change History
-
-- **v3.1.0** (2025-05-15): Added `getSearchRequest()` method, broadened constructor to accept `IndicesRequest`, integrated with Validate Query API
-- **v2.19.0** (2025-01-23): Initial implementation with Template query support

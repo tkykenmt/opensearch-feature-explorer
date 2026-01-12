@@ -146,21 +146,23 @@ To use collapse with hybrid queries:
 - **Pagination behavior**: Collapse reduces total results, affecting page distribution
 - **Differs from collapse processor**: Results may differ from the `collapse` response processor which applies post-query
 
-## Related PRs
+## References
 
+### Documentation
+- [Collapsing Hybrid Query Results Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)
+- [Collapse Search Results Documentation](https://docs.opensearch.org/3.1/search-plugins/searching-data/collapse-search/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1345](https://github.com/opensearch-project/neural-search/pull/1345) | Add collapse functionality to hybrid query |
 | [#1289](https://github.com/opensearch-project/neural-search/pull/1289) | Custom bulk scorer for hybrid query (2-3x performance) |
 | [#1322](https://github.com/opensearch-project/neural-search/pull/1322) | Support custom weights in RRF normalization processor |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #665](https://github.com/opensearch-project/neural-search/issues/665): Feature request for hybrid search and collapse compatibility
 - [Issue #1152](https://github.com/opensearch-project/neural-search/issues/1152): Feature request for custom weights in RRF
 - [Issue #1290](https://github.com/opensearch-project/neural-search/issues/1290): RFC for speeding up score collecting for hybrid query
-- [Collapsing Hybrid Query Results Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)
-- [Collapse Search Results Documentation](https://docs.opensearch.org/3.1/search-plugins/searching-data/collapse-search/)
 
 ## Related Feature Report
 

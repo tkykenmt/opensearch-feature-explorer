@@ -121,17 +121,17 @@ permission java.lang.RuntimePermission "loadLibrary.opensearchknn_faiss_avx512_s
 - NMSLIB does not have AVX-optimized variants
 - S3 snapshot publishing requires AWS credentials (handled by CI/CD)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Added SIMD library to build configurations; migrated to S3 snapshots repository
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#3025](https://github.com/opensearch-project/k-NN/pull/3025) | Include opensearchknn_simd in build configurations |
 | v3.4.0 | [#2943](https://github.com/opensearch-project/k-NN/pull/2943) | Onboard to S3 snapshots |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org snapshots repo
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Added SIMD library to build configurations; migrated to S3 snapshots repository

@@ -128,18 +128,20 @@ POST _plugins/_ml/agents/{agent_id}/_execute
 - Custom regex patterns must be valid Java regex expressions
 - CreateAnomalyDetectorTool custom prompts must follow the expected output format for proper parsing
 
-## Related PRs
+## References
 
+### Documentation
+- [CreateAnomalyDetectorTool Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/tools/create-anomaly-detector/): Official documentation
+- [Agents and Tools](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/): ML Commons agents and tools overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |
 | [#399](https://github.com/opensearch-project/skills/pull/399) | Optimize default prompt and make prompt customizable for CreateAnomalyDetectorTool |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #337](https://github.com/opensearch-project/skills/issues/337): Create Anomaly Detector Tool feature request
-- [CreateAnomalyDetectorTool Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/tools/create-anomaly-detector/): Official documentation
-- [Agents and Tools](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/): ML Commons agents and tools overview
 
 ## Related Feature Report
 

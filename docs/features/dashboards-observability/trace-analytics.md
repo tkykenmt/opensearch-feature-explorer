@@ -138,8 +138,23 @@ http://host:port/app/observability-traces#/services
 - Maximum 10,000 spans can be retrieved for pagination
 - Service map generation requires proper span relationships
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-02-18): User-configurable service map max nodes and max edges settings, bug fixes for traces error display (nested status.code handling) and metrics visualization rendering in local cluster instances
+- **v3.1.0** (2026-01-21): Merged custom source mode into default Data Prepper mode, span flyout support for new Data Prepper format with nested field flattening, unified experience with cross-cluster search, custom indices, data grid, and dynamic filters
+- **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
+- **v2.17.0** (2024-09-17): Custom source support (experimental) for custom span/service indices with CCS support, landing page changed to Traces, Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements
+
+## References
+
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/latest/observing-your-data/trace/index/): Official documentation
+- [Trace Analytics Plugin](https://docs.opensearch.org/latest/observing-your-data/trace/ta-dashboards/): Dashboards plugin guide
+- [Jaeger Trace Data](https://docs.opensearch.org/latest/observing-your-data/trace/trace-analytics-jaeger/): Jaeger integration
+- [Simple Schema for Observability](https://docs.opensearch.org/latest/observing-your-data/ss4o/): SS4O schema
+- [Application Analytics](https://docs.opensearch.org/latest/observing-your-data/app-analytics/): App analytics documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#2472](https://github.com/opensearch-project/dashboards-observability/pull/2472) | [Traces] Make service map max nodes and max edges values user-configurable |
@@ -162,19 +177,6 @@ http://host:port/app/observability-traces#/services
 | v2.17.0 | [#2037](https://github.com/opensearch-project/dashboards-observability/pull/2037) | Breadcrumbs and ID pathing fix |
 | v2.17.0 | [#2100](https://github.com/opensearch-project/dashboards-observability/pull/2100) | Fix missing MDS ID in flyout |
 
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/latest/observing-your-data/trace/index/): Official documentation
-- [Trace Analytics Plugin](https://docs.opensearch.org/latest/observing-your-data/trace/ta-dashboards/): Dashboards plugin guide
-- [Jaeger Trace Data](https://docs.opensearch.org/latest/observing-your-data/trace/trace-analytics-jaeger/): Jaeger integration
-- [Simple Schema for Observability](https://docs.opensearch.org/latest/observing-your-data/ss4o/): SS4O schema
-- [Application Analytics](https://docs.opensearch.org/latest/observing-your-data/app-analytics/): App analytics documentation
+### Issues (Design / RFC)
 - [Issue #1878](https://github.com/opensearch-project/dashboards-observability/issues/1878): MDS rendering issue
 - [Issue #1931](https://github.com/opensearch-project/dashboards-observability/issues/1931): App Analytics crash
-
-## Change History
-
-- **v3.2.0** (2026-02-18): User-configurable service map max nodes and max edges settings, bug fixes for traces error display (nested status.code handling) and metrics visualization rendering in local cluster instances
-- **v3.1.0** (2026-01-21): Merged custom source mode into default Data Prepper mode, span flyout support for new Data Prepper format with nested field flattening, unified experience with cross-cluster search, custom indices, data grid, and dynamic filters
-- **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
-- **v2.17.0** (2024-09-17): Custom source support (experimental) for custom span/service indices with CCS support, landing page changed to Traces, Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements

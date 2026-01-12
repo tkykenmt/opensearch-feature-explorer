@@ -56,16 +56,16 @@ import {
 
 None specific to this fix.
 
-## Related PRs
+## References
 
+### Documentation
+- [Release Notes v2.18.0](https://github.com/opensearch-project/dashboards-reporting/blob/main/release-notes/opensearch-dashboards-reporting.release-notes-2.18.0.0.md)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |
 | [#431](https://github.com/opensearch-project/dashboards-reporting/pull/431) | Original PR that removed imports |
-
-## References
-
-- [Release Notes v2.18.0](https://github.com/opensearch-project/dashboards-reporting/blob/main/release-notes/opensearch-dashboards-reporting.release-notes-2.18.0.0.md)
 
 ## Related Feature Report
 

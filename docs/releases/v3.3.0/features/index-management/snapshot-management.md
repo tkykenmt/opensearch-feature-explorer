@@ -149,19 +149,21 @@ POST _plugins/_sm/policies/combined-policy
 - Snapshot patterns use simple glob matching, not full regex support
 - Pattern-matched snapshots are combined with policy snapshots for deletion condition evaluation
 
-## Related PRs
+## References
 
+### Documentation
+- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
+- [Snapshot Management API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/sm-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1452](https://github.com/opensearch-project/index-management/pull/1452) | Add support in SM Plugin to delete snapshots created manually |
 | [#1480](https://github.com/opensearch-project/index-management/pull/1480) | Do not include global state in snapshot step |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #867](https://github.com/opensearch-project/index-management/issues/867): Feature request for deletion-only SM policies
 - [Issue #1479](https://github.com/opensearch-project/index-management/issues/1479): Bug report for ISM snapshot global state
-- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
-- [Snapshot Management API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/sm-api/)
 
 ## Related Feature Report
 

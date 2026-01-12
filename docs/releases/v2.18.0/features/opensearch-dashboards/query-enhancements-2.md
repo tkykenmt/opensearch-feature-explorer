@@ -81,8 +81,13 @@ When switching from an index pattern (supporting DQL) to an S3 connection (suppo
 
 - The SQL PR #8708 mentioned in the issue body appears to reference a different repository or numbering scheme and could not be verified
 
-## Related PRs
+## References
 
+### Documentation
+- [Dashboards Query Language (DQL)](https://docs.opensearch.org/2.18/dashboards/dql/): Official documentation
+- [Query Workbench](https://docs.opensearch.org/2.18/dashboards/query-workbench/): SQL/PPL query interface
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8555](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8555) | Refactored polling logic to poll for results once current request completes |
@@ -91,11 +96,6 @@ When switching from an index pattern (supporting DQL) to an S3 connection (suppo
 | [#8743](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8743) | Fix error handling in query enhancement facet |
 | [#8749](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8749) | Updates query and language if language is not supported by query data |
 | [#8771](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8771) | Fix error handling for ppl jobs API |
-
-## References
-
-- [Dashboards Query Language (DQL)](https://docs.opensearch.org/2.18/dashboards/dql/): Official documentation
-- [Query Workbench](https://docs.opensearch.org/2.18/dashboards/query-workbench/): SQL/PPL query interface
 
 ## Related Feature Report
 

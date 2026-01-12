@@ -133,19 +133,19 @@ Translog translog = new LocalTranslog(
 - Custom channel factories must be compatible with all translog file operations
 - The channel factory cannot be changed after translog creation
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18918](https://github.com/opensearch-project/OpenSearch/pull/18918) | Add Channel Factory parameter to Translog |
+- **v3.3.0** (2025-08-27): Added `ChannelFactory` parameter to Translog constructor, enabling custom file channel implementations for use cases like storage encryption
 
 ## References
 
+### Documentation
 - [OpenSearch Introduction - Translog](https://docs.opensearch.org/3.0/getting-started/intro/#translog): Official translog documentation
 - [Tuning for Indexing Speed](https://docs.opensearch.org/3.0/tuning-your-cluster/performance/): Translog tuning recommendations
 - [Remote-backed Storage](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Remote translog configuration
 - [opensearch-storage-encryption#39](https://github.com/opensearch-project/opensearch-storage-encryption/pull/39): Related storage encryption use case
 
-## Change History
-
-- **v3.3.0** (2025-08-27): Added `ChannelFactory` parameter to Translog constructor, enabling custom file channel implementations for use cases like storage encryption
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#18918](https://github.com/opensearch-project/OpenSearch/pull/18918) | Add Channel Factory parameter to Translog |

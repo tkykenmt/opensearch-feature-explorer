@@ -48,15 +48,15 @@ No migration required. Existing CI workflows that need security testing should a
 - The system property must be explicitly set to `"true"` (string comparison) to enable security testing
 - Security certificates are downloaded from the security repository's main branch at build time
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #287](https://github.com/opensearch-project/search-relevance/pull/287): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#287](https://github.com/opensearch-project/search-relevance/pull/287) | Use a system property to control run integ test with security plugin |
-
-## References
-
-- [PR #287](https://github.com/opensearch-project/search-relevance/pull/287): Main implementation
 
 ## Related Feature Report
 

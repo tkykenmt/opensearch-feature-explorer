@@ -106,20 +106,22 @@ public class MyPlugin implements IdentityAwarePlugin {
 - Custom implementations must properly handle thread context stashing
 - The `runAs` method does not return a value (changed in v3.2.0)
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-01-10): Updated `runAs` method to use `CheckedRunnable` instead of `Callable`, changed return type from `T` to `void`, and added `@PublicApi` annotation to `CheckedRunnable`
+- **v3.0.0** (2024-08-28): Initial implementation - added `runAs` method to Subject interface and introduced `IdentityAwarePlugin` extension point
+
+## References
+
+### Documentation
+- [PR #18570](https://github.com/opensearch-project/OpenSearch/pull/18570): Subject interface update
+- [PR #14630](https://github.com/opensearch-project/OpenSearch/pull/14630): Original Subject.runAs implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18570](https://github.com/opensearch-project/OpenSearch/pull/18570) | Update Subject interface to use CheckedRunnable |
 | v3.0.0 | [#14630](https://github.com/opensearch-project/OpenSearch/pull/14630) | Add runAs to Subject interface and introduce IdentityAwarePlugin |
 
-## References
-
-- [PR #18570](https://github.com/opensearch-project/OpenSearch/pull/18570): Subject interface update
-- [PR #14630](https://github.com/opensearch-project/OpenSearch/pull/14630): Original Subject.runAs implementation
+### Issues (Design / RFC)
 - [Security Issue #4439](https://github.com/opensearch-project/security/issues/4439): Related security feature request
-
-## Change History
-
-- **v3.2.0** (2026-01-10): Updated `runAs` method to use `CheckedRunnable` instead of `Callable`, changed return type from `T` to `void`, and added `@PublicApi` annotation to `CheckedRunnable`
-- **v3.0.0** (2024-08-28): Initial implementation - added `runAs` method to Subject interface and introduced `IdentityAwarePlugin` extension point

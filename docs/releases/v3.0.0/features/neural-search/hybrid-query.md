@@ -277,8 +277,14 @@ GET /my-index/_search?search_pipeline=v3-hybrid-pipeline
 - Semantic highlighter requires a deployed sentence highlighting model
 - `skip_existing` optimization requires document ID to be present for comparison
 
-## Related PRs
+## References
 
+### Documentation
+- [Hybrid Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/hybrid-search/index/)
+- [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
+- [Normalization Processor](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/normalization-processor/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#838](https://github.com/opensearch-project/neural-search/pull/838) | Set neural-search plugin 3.0.0 baseline JDK version to JDK-21 |
@@ -299,11 +305,7 @@ GET /my-index/_search?search_pipeline=v3-hybrid-pipeline
 | [#1257](https://github.com/opensearch-project/neural-search/pull/1257) | Add validations for TextImageEmbeddingProcessor |
 | [#1277](https://github.com/opensearch-project/neural-search/pull/1277) | Fix score value as null for single shard sorting |
 
-## References
-
-- [Hybrid Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/hybrid-search/index/)
-- [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
-- [Normalization Processor](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/normalization-processor/)
+### Issues (Design / RFC)
 - [Issue #376](https://github.com/opensearch-project/neural-search/issues/376): Z-Score normalization request
 - [Issue #718](https://github.com/opensearch-project/neural-search/issues/718): Inner hits support request
 - [Issue #1138](https://github.com/opensearch-project/neural-search/issues/1138): Embedding optimization RFC

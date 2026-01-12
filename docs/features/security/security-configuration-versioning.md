@@ -281,21 +281,23 @@ curl -XPOST "https://localhost:9200/_plugins/_security/api/version/rollback/v2" 
 - **Rollback Creates New Version**: Rolling back creates a new version entry (e.g., rolling back from v5 to v3 creates v6 with v3's content)
 - **Admin Access Required**: View and Rollback APIs require admin/security manager permissions
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-01): Added View API and Rollback API for viewing version history and restoring previous configurations
+- **v3.2.0** (2025-06-18): Initial implementation with versioning infrastructure, change detection, and retention policy
+
+## References
+
+### Documentation
+- [Security Configuration Versioning Documentation](https://docs.opensearch.org/3.3/security/configuration/versioning/): Official documentation (v3.3.0+)
+- [Security Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/index/)
+- [Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | View API and Rollback API for versioned security configurations |
 | v3.2.0 | [#5357](https://github.com/opensearch-project/security/pull/5357) | Initial implementation of versioned security configuration management |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5093](https://github.com/opensearch-project/security/issues/5093): Original feature request for tracking security index patches
-- [Security Configuration Versioning Documentation](https://docs.opensearch.org/3.3/security/configuration/versioning/): Official documentation (v3.3.0+)
-- [Security Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/index/)
-- [Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
-
-## Change History
-
-- **v3.3.0** (2025-10-01): Added View API and Rollback API for viewing version history and restoring previous configurations
-- **v3.2.0** (2025-06-18): Initial implementation with versioning infrastructure, change detection, and retention policy

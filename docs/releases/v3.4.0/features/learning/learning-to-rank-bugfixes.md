@@ -101,8 +101,13 @@ GET test_index/_search
 
 - The `wait_for` refresh approach may not work in serverless configurations, but this only affects tests, not production usage
 
-## Related PRs
+## References
 
+### Documentation
+- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
+- [OpenSearch PR #19793](https://github.com/opensearch-project/OpenSearch/pull/19793): Legacy version ID removal in OpenSearch core
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#264](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/264) | Use OpenSearch Version.computeID for legacy version IDs |
@@ -110,11 +115,8 @@ GET test_index/_search
 | [#271](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/271) | Use implicit wait_for instead of explicit refresh |
 | [#266](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/266) | Fix rescore-only feature SLTR logging |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #265](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/265): Integration test failures for v3.4.0
-- [OpenSearch PR #19793](https://github.com/opensearch-project/OpenSearch/pull/19793): Legacy version ID removal in OpenSearch core
-- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
 
 ## Related Feature Report
 

@@ -52,15 +52,15 @@ import static org.opensearch.ml.common.utils.ToolUtils.NO_ESCAPE_PARAMS;
 
 None. This is a backward-compatible refactoring change.
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #4173](https://github.com/opensearch-project/ml-commons/pull/4173): Implementation PR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4173](https://github.com/opensearch-project/ml-commons/pull/4173) | Move common string |
-
-## References
-
-- [PR #4173](https://github.com/opensearch-project/ml-commons/pull/4173): Implementation PR
 
 ## Related Feature Report
 

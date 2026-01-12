@@ -77,14 +77,14 @@ cluster.allocator.shard.batch.replica_allocator_timeout: 30s
 - **Known issue**: When multiple replica shards exist for the same shard ID (one INITIALIZING, one UNASSIGNED), the UNASSIGNED shard may be temporarily blocked until the INITIALIZING shard completes or times out ([#18098](https://github.com/opensearch-project/OpenSearch/issues/18098))
 - **Minimum timeout**: The allocator timeout cannot be set below 20 seconds when enabled
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18139](https://github.com/opensearch-project/OpenSearch/pull/18139) | Enabled Async Shard Batch Fetch by default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17713](https://github.com/opensearch-project/OpenSearch/issues/17713): Feature request to enable by default
 - [Issue #18098](https://github.com/opensearch-project/OpenSearch/issues/18098): Known issue with replica shard assignment
 - [Issue #8098](https://github.com/opensearch-project/OpenSearch/issues/8098): META - Cluster Manager Async Shard Fetch Revamp

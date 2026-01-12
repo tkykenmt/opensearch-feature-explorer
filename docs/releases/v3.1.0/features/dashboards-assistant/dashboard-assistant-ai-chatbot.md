@@ -55,8 +55,14 @@ Admin UI settings can be configured through OpenSearch Dashboards Management →
 - Admin UI settings require OpenSearch Dashboards 3.1.0+ with corresponding backend support
 - Streaming buffer may introduce slight delay for markdown content with special characters
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/index/)
+- [Text to Visualization](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/text-to-visualization/)
+- [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#539](https://github.com/opensearch-project/dashboards-assistant/pull/539) | Style single metric in text2vis |
@@ -67,12 +73,6 @@ Admin UI settings can be configured through OpenSearch Dashboards Management →
 | [#557](https://github.com/opensearch-project/dashboards-assistant/pull/557) | T2viz supports reading time range from context |
 | [#568](https://github.com/opensearch-project/dashboards-assistant/pull/568) | Add format instruction for alert summary |
 | [#578](https://github.com/opensearch-project/dashboards-assistant/pull/578) | Add admin UI setting option for control all dashboard assistant features |
-
-## References
-
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/index/)
-- [Text to Visualization](https://docs.opensearch.org/3.1/dashboards/dashboards-assistant/text-to-visualization/)
-- [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
 
 ## Related Feature Report
 

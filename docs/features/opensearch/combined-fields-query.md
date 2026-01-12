@@ -151,18 +151,20 @@ This approach provides more intuitive scoring compared to alternatives like `mul
 - **No Phrase Support**: Phrase queries (quoted strings like `"exact phrase"`) are explicitly not supported and will throw an error
 - **Experimental Status**: The feature is marked as `@opensearch.experimental`, indicating the API may change in future releases
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07): Initial implementation of combined_fields query with BM25F scoring support
+
+## References
+
+### Blog Posts
+- [BM25F and combined_fields query](https://opensourceconnections.com/blog/2021/06/30/better-term-centric-scoring-in-elasticsearch-with-bm25f-and-the-combined_fields-query/): Background on BM25F scoring algorithm and its benefits
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18724](https://github.com/opensearch-project/OpenSearch/pull/18724) | Add combined_fields query to utilize Lucene's CombinedField (BM25F Text) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3996](https://github.com/opensearch-project/OpenSearch/issues/3996): Original feature request for combined_fields (BM25F) support
 - [Documentation Issue #10209](https://github.com/opensearch-project/documentation-website/issues/10209): Documentation request for combined_fields query
-- [BM25F and combined_fields query](https://opensourceconnections.com/blog/2021/06/30/better-term-centric-scoring-in-elasticsearch-with-bm25f-and-the-combined_fields-query/): Background on BM25F scoring algorithm and its benefits
-
-## Change History
-
-- **v3.2.0** (2025-07): Initial implementation of combined_fields query with BM25F scoring support

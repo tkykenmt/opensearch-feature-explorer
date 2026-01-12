@@ -116,14 +116,14 @@ For plugin developers who were relying on the banner plugin's previous architect
 - Only one global banner can be active at a time (last `setGlobalBanner` call wins)
 - Banner state is not persisted across page reloads (plugin must re-register on start)
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10324](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10324) | Refactor Banner Extensibility Model via Chrome Service |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10223](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10223): Banner extensibility model refactor proposal
 - [Issue #9990](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9990): Meta issue tracking banner plugin development
 

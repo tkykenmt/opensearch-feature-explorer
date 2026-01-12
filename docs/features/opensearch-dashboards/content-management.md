@@ -165,8 +165,18 @@ class MyPlugin {
 - Dashboard sections are exclusive - one section can only hold one dashboard
 - Content providers must be registered during the start phase
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Added `getPage` API and `removeSection` method; UI fix for card section spacing
+- **v2.17.0** (2024-09-17): Added `updatePageSection` API for dynamic section input updates
+- **v2.16.0** (2024-08-06): Initial implementation with page registration, content providers, and section rendering
+
+## References
+
+### Documentation
+- [Source Code](https://github.com/opensearch-project/OpenSearch-Dashboards/tree/main/src/plugins/content_management): Plugin implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8624) | Add Page API to allow remove section |
@@ -174,13 +184,5 @@ class MyPlugin {
 | v2.17.0 | [#7633](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7633) | Fix content provider ID exception handling |
 | v2.16.0 | [#7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201) | Initial implementation - new core plugin for dynamic content rendering |
 
-## References
-
+### Issues (Design / RFC)
 - [PR #7228](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7228): RFC for Content Management plugin
-- [Source Code](https://github.com/opensearch-project/OpenSearch-Dashboards/tree/main/src/plugins/content_management): Plugin implementation
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Added `getPage` API and `removeSection` method; UI fix for card section spacing
-- **v2.17.0** (2024-09-17): Added `updatePageSection` API for dynamic section input updates
-- **v2.16.0** (2024-08-06): Initial implementation with page registration, content providers, and section rendering

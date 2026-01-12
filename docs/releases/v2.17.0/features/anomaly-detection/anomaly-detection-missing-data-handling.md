@@ -198,17 +198,17 @@ When imputation occurs, the anomaly result includes a `feature_imputed` array:
 - Preview mode uses linear interpolation instead of configured imputation for efficiency
 - Quality of imputed data directly affects model performance
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Setting imputation options
+- [Anomaly Result Mapping](https://docs.opensearch.org/2.17/observing-your-data/ad/result-mapping/): feature_imputed field documentation
+- [Forum Discussion](https://forum.opensearch.org/t/do-missing-buckets-ruin-anomaly-detection/16535): Original feature request
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1274](https://github.com/opensearch-project/anomaly-detection/pull/1274) | Add Support for Handling Missing Data in Anomaly Detection |
-
-## References
-
-- [Forum Discussion](https://forum.opensearch.org/t/do-missing-buckets-ruin-anomaly-detection/16535): Original feature request
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Setting imputation options
-- [Anomaly Result Mapping](https://docs.opensearch.org/2.17/observing-your-data/ad/result-mapping/): feature_imputed field documentation
 
 ## Related Feature Report
 

@@ -166,8 +166,13 @@ GET /_insights/top_queries?from=2024-10-01T00:00:00.000Z&to=2024-10-31T23:59:59.
 - OpenTelemetry metrics require proper OTel collector configuration to be collected
 - Field type cache may consume additional memory for clusters with many indexes
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
+- [Query Insights Health Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/health/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#84](https://github.com/opensearch-project/query-insights/pull/84) | Support time range parameter for historical top N queries |
@@ -180,14 +185,11 @@ GET /_insights/top_queries?from=2024-10-01T00:00:00.000Z&to=2024-10-31T23:59:59.
 | [#142](https://github.com/opensearch-project/query-insights/pull/142) | Add cache eviction and listener for invalidating index field type mappings |
 | [#8627](https://github.com/opensearch-project/documentation-website/pull/8627) | Documentation for health_stats API and error metrics |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9](https://github.com/opensearch-project/query-insights/issues/9): Enrich operational metrics in Query Insights
 - [Issue #12](https://github.com/opensearch-project/query-insights/issues/12): Historical top N queries from local index
 - [Issue #69](https://github.com/opensearch-project/query-insights/issues/69): Query shape field type RFC
 - [Issue #109](https://github.com/opensearch-project/query-insights/issues/109): Refactor query shape field data maps
-- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
-- [Query Insights Health Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/health/)
 
 ## Related Feature Report
 

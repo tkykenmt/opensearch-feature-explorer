@@ -251,20 +251,20 @@ POST /logs-index/_doc
 - **Index Setting Final**: `index.context_aware.enabled` cannot be changed after index creation
 - **Node Restart Required**: Feature flag requires node restart to take effect
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-11-07): Added `context_aware_grouping` mapper for defining grouping criteria with Painless script support
+- **v3.4.0** (2025-11-07): Initial implementation with CompositeIndexWriter, CriteriaBasedMergePolicy, and experimental feature flag
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19233](https://github.com/opensearch-project/OpenSearch/pull/19233) | Add a mapper for context aware segments grouping criteria |
 | v3.4.0 | [#19098](https://github.com/opensearch-project/OpenSearch/pull/19098) | Add support for context aware segments |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19530](https://github.com/opensearch-project/OpenSearch/issues/19530): LLD for Context Aware Segments
 - [RFC #19223](https://github.com/opensearch-project/OpenSearch/issues/19223): Context aware segments user experience
 - [RFC #18576](https://github.com/opensearch-project/OpenSearch/issues/18576): Context Aware Segments RFC
-
-## Change History
-
-- **v3.4.0** (2025-11-07): Added `context_aware_grouping` mapper for defining grouping criteria with Painless script support
-- **v3.4.0** (2025-11-07): Initial implementation with CompositeIndexWriter, CriteriaBasedMergePolicy, and experimental feature flag

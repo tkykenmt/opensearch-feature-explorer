@@ -133,8 +133,13 @@ POST /index/_search
 - The wildcard field type still has known performance characteristics compared to keyword fields for exact match queries
 - Match_only_text highlighting uses plain highlighter since positions are not stored
 
-## Related PRs
+## References
 
+### Documentation
+- [Terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/terms/)
+- [Wildcard Field Type Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17418](https://github.com/opensearch-project/OpenSearch/pull/17418) | Fix missing bucket in terms aggregation with missing value |
@@ -145,15 +150,12 @@ POST /index/_search
 | [#17101](https://github.com/opensearch-project/OpenSearch/pull/17101) | Add highlighting for match_only_text field |
 | [#16781](https://github.com/opensearch-project/OpenSearch/pull/16781) | Fix illegal argument exception when creating a PIT |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17391](https://github.com/opensearch-project/OpenSearch/issues/17391): Missing bucket in terms aggregation
 - [Issue #16795](https://github.com/opensearch-project/OpenSearch/issues/16795): Exists queries on nested flat_object fields
 - [Issue #16754](https://github.com/opensearch-project/OpenSearch/issues/16754): Term query on wildcard field
 - [Issue #16750](https://github.com/opensearch-project/OpenSearch/issues/16750): PIT creation exception
 - [Issue #15403](https://github.com/opensearch-project/OpenSearch/issues/15403): FunctionScoreQueryBuilder default_model_id
-- [Terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/terms/)
-- [Wildcard Field Type Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/)
 
 ## Related Feature Report
 

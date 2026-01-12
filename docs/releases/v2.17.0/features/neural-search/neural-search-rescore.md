@@ -87,16 +87,16 @@ GET /my-nlp-index/_search
 - Radial search does not support disk-based vector search with rescoring
 - The `on_disk` mode only works with the `float` data type
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Query Documentation](https://docs.opensearch.org/2.17/query-dsl/specialized/neural/): Official neural query reference
+- [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/): Documentation on disk-based vector search and rescoring
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#885](https://github.com/opensearch-project/neural-search/pull/885) | Adds rescore parameter support in neural search |
-
-## References
-
-- [Neural Query Documentation](https://docs.opensearch.org/2.17/query-dsl/specialized/neural/): Official neural query reference
-- [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/): Documentation on disk-based vector search and rescoring
 
 ## Related Feature Report
 

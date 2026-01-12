@@ -138,8 +138,23 @@ GET logs/_search
 - **Storage overhead**: While optimized in v3.0.0, wildcard fields still require more storage than keyword fields due to n-gram indexing
 - **Not for full-text search**: Wildcard fields don't support full-text analysis; use `text` fields for natural language content
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-11-18): Changed `doc_values` default from `false` to `true`, fixing nested query issues
+- **v3.3.0** (2025-09-10): Fixed sorting bug when `doc_values` enabled by disabling Lucene's dynamic pruning optimization
+- **v3.0.0** (2025-05-06): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
+- **v2.18.0** (2024-11-05): Fixed escaped wildcard character handling and case-insensitive query behavior
+- **v2.15.0** (2024-06-25): Initial introduction of wildcard field type with 1-3 gram indexing
+
+## References
+
+### Documentation
+- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
+
+### Blog Posts
+- [OpenSearch 2.15 Blog](https://opensearch.org/blog/diving-into-opensearch-2-15/): Initial feature announcement
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19796](https://github.com/opensearch-project/OpenSearch/pull/19796) | Change doc_values default to true |
@@ -149,20 +164,9 @@ GET logs/_search
 | v2.18.0 | [#15882](https://github.com/opensearch-project/OpenSearch/pull/15882) | Fix case-insensitive query on wildcard field |
 | v2.15.0 | Initial | Wildcard field type introduction |
 
-## References
-
-- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
+### Issues (Design / RFC)
 - [Issue #18678](https://github.com/opensearch-project/OpenSearch/issues/18678): Bug report for nested query on wildcard field returning no results
 - [Issue #18461](https://github.com/opensearch-project/OpenSearch/issues/18461): Bug report for wildcard sort error with doc_values
 - [Issue #17099](https://github.com/opensearch-project/OpenSearch/issues/17099): 3-gram optimization feature request with benchmarks
 - [Issue #15555](https://github.com/opensearch-project/OpenSearch/issues/15555): Bug report for escaped wildcard character handling
 - [Issue #15855](https://github.com/opensearch-project/OpenSearch/issues/15855): Bug report for case-insensitive query issue
-- [OpenSearch 2.15 Blog](https://opensearch.org/blog/diving-into-opensearch-2-15/): Initial feature announcement
-
-## Change History
-
-- **v3.4.0** (2025-11-18): Changed `doc_values` default from `false` to `true`, fixing nested query issues
-- **v3.3.0** (2025-09-10): Fixed sorting bug when `doc_values` enabled by disabling Lucene's dynamic pruning optimization
-- **v3.0.0** (2025-05-06): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
-- **v2.18.0** (2024-11-05): Fixed escaped wildcard character handling and case-insensitive query behavior
-- **v2.15.0** (2024-06-25): Initial introduction of wildcard field type with 1-3 gram indexing

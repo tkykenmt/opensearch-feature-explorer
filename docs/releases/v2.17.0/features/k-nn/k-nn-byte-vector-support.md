@@ -131,18 +131,22 @@ GET test-index/_search
 - Some recall loss compared to float vectors (typically 1-9% depending on dataset)
 - SIMD optimization recommended for best performance
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/): k-NN vector quantization
+
+### Blog Posts
+- [Blog](https://opensearch.org/blog/faiss-byte-vector/): Introducing byte vector support for Faiss
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1823](https://github.com/opensearch-project/k-NN/pull/1823) | Add HNSW support for Faiss byte vector |
 | [#2002](https://github.com/opensearch-project/k-NN/pull/2002) | Add IVF support for Faiss byte vector |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1659](https://github.com/opensearch-project/k-NN/issues/1659): Feature request for Faiss byte vector support
-- [Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/): k-NN vector quantization
-- [Blog](https://opensearch.org/blog/faiss-byte-vector/): Introducing byte vector support for Faiss
 
 ## Related Feature Report
 

@@ -149,21 +149,21 @@ The system automatically detects the dataset type and routes to the appropriate 
 - Requires Apache Spark / EMR Serverless for query execution
 - S3 data source must be configured in OpenSearch Dashboards
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8481) | Add logic to poll for async query result |
-| v2.18.0 | [#8706](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8706) | Add support for async PPL to Discover |
+- **v2.18.0** (2024-11-05): Initial implementation with frontend polling and async PPL support for S3 datasets
 
 ## References
 
+### Documentation
 - [Scheduled Query Acceleration](https://docs.opensearch.org/latest/dashboards/management/scheduled-query-acceleration/): SQA documentation
 - [Optimizing query performance using OpenSearch indexing](https://docs.opensearch.org/latest/dashboards/management/accelerate-external-data/): Index acceleration for external data
 - [SQL and PPL](https://docs.opensearch.org/latest/search-plugins/sql/index/): SQL/PPL plugin documentation
 - [Query Workbench](https://docs.opensearch.org/latest/dashboards/query-workbench/): Interactive query interface
 - [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/latest/dashboards/management/S3-data-source/): S3 data source setup
 
-## Change History
-
-- **v2.18.0** (2024-11-05): Initial implementation with frontend polling and async PPL support for S3 datasets
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#8481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8481) | Add logic to poll for async query result |
+| v2.18.0 | [#8706](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8706) | Add support for async PPL to Discover |

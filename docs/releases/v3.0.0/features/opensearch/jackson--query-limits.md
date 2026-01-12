@@ -96,18 +96,20 @@ PUT /my-index
 - Nested query depth limit is per-index but requires index settings update for existing indices
 - No runtime API to query current XContent limits
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0 breaking changes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#11811](https://github.com/opensearch-project/OpenSearch/pull/11811) | Ensure Jackson default maximums introduced in 2.16.0 do not conflict with OpenSearch settings |
 | [#11670](https://github.com/opensearch-project/OpenSearch/pull/11670) | Introduce index.query.max_nested_depth |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11278](https://github.com/opensearch-project/OpenSearch/issues/11278): Jackson default maximums feature request
 - [Issue #3268](https://github.com/opensearch-project/OpenSearch/issues/3268): Nested query depth limit feature request
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0 breaking changes
 
 ## Related Feature Report
 

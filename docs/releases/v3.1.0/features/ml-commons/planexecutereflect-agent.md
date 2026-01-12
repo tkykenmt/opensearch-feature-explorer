@@ -86,17 +86,19 @@ public void testBasicExecution() {
 - This is a code quality improvement only; no functional changes to the PlanExecuteReflect Agent
 - The PlanExecuteReflect Agent remains an experimental feature
 
-## Related PRs
+## References
 
+### Documentation
+- [Plan-execute-reflect agents documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
+- [PR #3716](https://github.com/opensearch-project/ml-commons/pull/3716): Related PlanExecuteReflect Agent implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3778](https://github.com/opensearch-project/ml-commons/pull/3778) | Adding test cases for PlanExecuteReflect Agent |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3750](https://github.com/opensearch-project/ml-commons/issues/3750): Original feature request for test coverage
-- [PR #3716](https://github.com/opensearch-project/ml-commons/pull/3716): Related PlanExecuteReflect Agent implementation
-- [Plan-execute-reflect agents documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
 
 ## Related Feature Report
 

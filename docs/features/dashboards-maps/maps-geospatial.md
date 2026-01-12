@@ -153,8 +153,23 @@ flowchart TB
 - Maximum 10,000 documents per document layer
 - Border thickness limited to 0-100px
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added Cluster Layer with geohash/geotile/geohex aggregations, legend support, and multi-data source support. Fixed layer config panel styling and data label overlap issues.
+- **v2.17.0** (2024-09-17): Deprecated multi-data source display in Maps UI (Trineo UX alignment). Migrated integration tests to opensearch-dashboards-functional-test repository.
+
+## References
+
+### Documentation
+- [Using Maps](https://docs.opensearch.org/3.0/dashboards/visualize/maps/): Official documentation
+- [Geohash Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geohash-grid/): Geohash aggregation docs
+- [Geotile Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geotile-grid/): Geotile aggregation docs
+- [Geohex Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geohex-grid/): Geohex aggregation docs
+
+### Blog Posts
+- [Getting started with multilayer maps](https://opensearch.org/blog/multilayer-maps/): Blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#703](https://github.com/opensearch-project/dashboards-maps/pull/703) | Introduce cluster layer |
@@ -163,16 +178,5 @@ flowchart TB
 | v2.17.0 | [#651](https://github.com/opensearch-project/dashboards-maps/pull/651) | Deprecate maps multi data source display |
 | v2.17.0 | [#664](https://github.com/opensearch-project/dashboards-maps/pull/664) | Migrate integration tests to FTR repository |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #250](https://github.com/opensearch-project/dashboards-maps/issues/250): Cluster layer feature request
-- [Using Maps](https://docs.opensearch.org/3.0/dashboards/visualize/maps/): Official documentation
-- [Geohash Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geohash-grid/): Geohash aggregation docs
-- [Geotile Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geotile-grid/): Geotile aggregation docs
-- [Geohex Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geohex-grid/): Geohex aggregation docs
-- [Getting started with multilayer maps](https://opensearch.org/blog/multilayer-maps/): Blog post
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added Cluster Layer with geohash/geotile/geohex aggregations, legend support, and multi-data source support. Fixed layer config panel styling and data label overlap issues.
-- **v2.17.0** (2024-09-17): Deprecated multi-data source display in Maps UI (Trineo UX alignment). Migrated integration tests to opensearch-dashboards-functional-test repository.

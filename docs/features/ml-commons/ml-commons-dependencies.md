@@ -37,17 +37,17 @@ configurations.all {
 - Dependency versions must be kept in sync with OpenSearch core to avoid conflicts
 - Major version upgrades may require code changes
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4176](https://github.com/opensearch-project/ml-commons/pull/4176) | Update Gson from 2.11.0 to 2.13.2 |
-
-## References
-
-- [ML Commons Repository](https://github.com/opensearch-project/ml-commons)
-- [OpenSearch Dependency Management](https://github.com/opensearch-project/OpenSearch/blob/main/buildSrc/version.properties)
-
 ## Change History
 
 - **v3.3.0**: Updated Gson from 2.11.0 to 2.13.2 to resolve conflict with OpenSearch core
+
+## References
+
+### Documentation
+- [ML Commons Repository](https://github.com/opensearch-project/ml-commons)
+- [OpenSearch Dependency Management](https://github.com/opensearch-project/OpenSearch/blob/main/buildSrc/version.properties)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#4176](https://github.com/opensearch-project/ml-commons/pull/4176) | Update Gson from 2.11.0 to 2.13.2 |

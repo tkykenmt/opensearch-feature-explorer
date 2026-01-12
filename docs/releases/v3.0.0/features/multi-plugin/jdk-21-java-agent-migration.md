@@ -102,8 +102,13 @@ plugins {
 - **SecurityManager Removal**: Code relying on SecurityManager permissions must be refactored
 - **CI Matrix**: Older JDK versions no longer tested in CI pipelines
 
-## Related PRs
+## References
 
+### Documentation
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+- [JDK 24 Project](https://openjdk.org/projects/jdk/24/): SecurityManager permanently disabled
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | OpenSearch | Custom Gradle plugin for Java Agent |
@@ -117,12 +122,9 @@ plugins {
 | [#723](https://github.com/opensearch-project/geospatial/pull/723) | geospatial | Gradle 8.10.2, JDK 23 support |
 | [#722](https://github.com/opensearch-project/job-scheduler/pull/722) | job-scheduler | Shadow plugin update |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10745](https://github.com/opensearch-project/OpenSearch/issues/10745): Set OpenSearch 3.0.0 baseline JDK to JDK-21
 - [Issue #16634](https://github.com/opensearch-project/OpenSearch/issues/16634): META - Replace Java Security Manager
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-- [JDK 24 Project](https://openjdk.org/projects/jdk/24/): SecurityManager permanently disabled
 
 ## Related Feature Report
 

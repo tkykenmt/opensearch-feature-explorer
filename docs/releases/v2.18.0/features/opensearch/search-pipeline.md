@@ -81,19 +81,23 @@ No migration required. This is a backward-compatible enhancement. Existing msear
 - The `search_pipeline` parameter in the request body is only supported in OpenSearch 2.18.0 and later
 - When both query parameter and request body specify a pipeline, the query parameter takes precedence
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation PR #8372](https://github.com/opensearch-project/documentation-website/pull/8372): Public documentation
+- [Using a Search Pipeline](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/using-search-pipeline/): Official documentation
+- [Search Pipelines Overview](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/index/): Search pipeline concepts
+
+### Blog Posts
+- [Hybrid Search Blog](https://opensearch.org/blog/hybrid-search/): Hybrid search with normalization processor
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15923](https://github.com/opensearch-project/OpenSearch/pull/15923) | Added support for msearch API to pass search pipeline name |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15748](https://github.com/opensearch-project/OpenSearch/issues/15748): Feature request for search-pipeline in Multi-Search API
-- [Documentation PR #8372](https://github.com/opensearch-project/documentation-website/pull/8372): Public documentation
-- [Using a Search Pipeline](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/using-search-pipeline/): Official documentation
-- [Search Pipelines Overview](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/index/): Search pipeline concepts
-- [Hybrid Search Blog](https://opensearch.org/blog/hybrid-search/): Hybrid search with normalization processor
 
 ## Related Feature Report
 

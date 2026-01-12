@@ -120,18 +120,18 @@ When multi-select is enabled, selecting datasets concatenates their IDs with com
 - UX is not finalized (as noted in the PR description)
 - Multi-select requires all selected items to be of the same type
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official documentation
+- [PR #8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255): Main implementation
+- [PR #7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925): Data-connection saved object type (prerequisite)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255) | Support data connections and multi-select table in dataset picker |
 | [#7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925) | Add data-connection saved object type for external connections |
-
-## References
-
-- [PR #8255](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8255): Main implementation
-- [PR #7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925): Data-connection saved object type (prerequisite)
-- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official documentation
 
 ## Related Feature Report
 

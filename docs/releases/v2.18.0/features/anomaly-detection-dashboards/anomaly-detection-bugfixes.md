@@ -117,18 +117,18 @@ prepareDetector(
 - These fixes are specific to the Dashboards UI; backend anomaly detection functionality is unchanged
 - The preview fix requires both imputation and suppression rules to be properly configured in the detector form
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.18/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection Dashboards Plugin](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin): Source repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#887](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/887) | Fix custom result index session not rendering issue |
 | [#889](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/889) | Fix issues in running historical analysis and custom result index section |
 | [#898](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/898) | Fix preview not considering rules and imputation options |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.18/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection Dashboards Plugin](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin): Source repository
 
 ## Related Feature Report
 

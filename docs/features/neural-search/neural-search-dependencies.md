@@ -95,19 +95,19 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 - Jar hell errors can occur if plugins include duplicate classes
 - Forced dependency versions are temporary workarounds until upstream fixes are available
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-10): Migrated from commons-lang to commons-lang3, updated Lucene codec paths, forced error_prone_annotations version
+
+## References
+
+### Documentation
+- [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/): Official documentation
+- [k-NN PR #2863 Comment](https://github.com/opensearch-project/k-NN/pull/2863#issuecomment-3251945721): Original jar hell issue report
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#1551](https://github.com/opensearch-project/neural-search/pull/1551) | Remove commons-lang dependency and use gradle version catalog for commons-lang3 |
 | v3.3.0 | [#1574](https://github.com/opensearch-project/neural-search/pull/1574) | Update Lucene101 codec path to backward path & force errorprone version |
 | v3.3.0 | [#1589](https://github.com/opensearch-project/neural-search/pull/1589) | Upgrade QA Gradle Dependency Version with commons-lang3 |
-
-## References
-
-- [k-NN PR #2863 Comment](https://github.com/opensearch-project/k-NN/pull/2863#issuecomment-3251945721): Original jar hell issue report
-- [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/): Official documentation
-
-## Change History
-
-- **v3.3.0** (2026-01-10): Migrated from commons-lang to commons-lang3, updated Lucene codec paths, forced error_prone_annotations version

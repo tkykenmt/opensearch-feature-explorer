@@ -149,8 +149,13 @@ PUT /my-index/_settings
 - Valid score range for bounds is [-10000.0, 10000.0]
 - The collapse document storage setting only affects hybrid queries with collapse enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Normalization Processor Documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/normalization-processor/)
+- [Hybrid Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/hybrid-search/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1431](https://github.com/opensearch-project/neural-search/pull/1431) | Add upper bound parameter for min-max normalization technique |
@@ -158,14 +163,11 @@ PUT /my-index/_settings
 | [#1471](https://github.com/opensearch-project/neural-search/pull/1471) | Add setting for number of documents stored by HybridCollapsingTopDocsCollector |
 | [#1414](https://github.com/opensearch-project/neural-search/pull/1414) | Fix the HybridQueryDocIdStream to properly handle upTo value |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1210](https://github.com/opensearch-project/neural-search/issues/1210): Feature request for upper bound in min-max normalization
 - [Issue #1379](https://github.com/opensearch-project/neural-search/issues/1379): Feature request for inner hits compatibility with collapse
 - [Issue #1381](https://github.com/opensearch-project/neural-search/issues/1381): Feature request for collapse document storage setting
 - [Issue #1344](https://github.com/opensearch-project/neural-search/issues/1344): Flaky test bug in HybridQueryDocIdStream
-- [Normalization Processor Documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/normalization-processor/)
-- [Hybrid Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/hybrid-search/index/)
 
 ## Related Feature Report
 

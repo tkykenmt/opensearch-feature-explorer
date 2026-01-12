@@ -114,16 +114,16 @@ GET /_plugins/_knn/models/my-model?filter_path=model_id,state,model_version
 - Models created before v2.17.0 will not have version information
 - The version reflects the OpenSearch version at training time, not the current cluster version
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Plugin API Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/api/): Official API documentation for k-NN models
+- [Approximate k-NN Search](https://docs.opensearch.org/2.17/search-plugins/knn/approximate-knn/): Guide on training and using k-NN models
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2005](https://github.com/opensearch-project/k-NN/pull/2005) | Add model version to model metadata and change model metadata reads to be from cluster metadata |
-
-## References
-
-- [k-NN Plugin API Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/api/): Official API documentation for k-NN models
-- [Approximate k-NN Search](https://docs.opensearch.org/2.17/search-plugins/knn/approximate-knn/): Guide on training and using k-NN models
 
 ## Related Feature Report
 

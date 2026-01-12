@@ -102,17 +102,17 @@ if (assistantEnabled) {
 - The capability check is performed at runtime, so UI may briefly render before being hidden if capability is disabled
 - Agent config existence check requires a valid data source ID for multi-data-source environments
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/index/)
+- [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#267](https://github.com/opensearch-project/dashboards-assistant/pull/267) | Add assistant capabilities to control rendering components |
 | [#307](https://github.com/opensearch-project/dashboards-assistant/pull/307) | Expose API to check if agent config name has agent ID configured |
-
-## References
-
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/index/)
-- [dashboards-assistant Repository](https://github.com/opensearch-project/dashboards-assistant)
 
 ## Related Feature Report
 

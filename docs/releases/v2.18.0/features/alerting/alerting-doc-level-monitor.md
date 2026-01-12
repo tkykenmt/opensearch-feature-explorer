@@ -111,8 +111,15 @@ POST _plugins/_alerting/monitors
 - External monitors with `deleteQueryIndexInEveryRun=true` may have slightly higher overhead due to index recreation
 - Comments system indices require security plugin integration for proper access control
 
-## Related PRs
+## References
 
+### Documentation
+- [Per Document Monitors Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/per-document-monitors/): Official documentation for per-document monitors
+- [Alerting Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/index/): Main alerting documentation
+- [PR #1655](https://github.com/opensearch-project/alerting/pull/1655): Related PR for alerting comments feature
+- [PR #1673](https://github.com/opensearch-project/alerting/pull/1673): Related PR for query index creation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1659](https://github.com/opensearch-project/alerting/pull/1659) | Adding Alerting Comments system indices and Security ITs |
@@ -120,13 +127,6 @@ POST _plugins/_alerting/monitors
 | [#1664](https://github.com/opensearch-project/alerting/pull/1664) | Separate doc-level monitor query indices for externally defined monitors |
 | [#1668](https://github.com/opensearch-project/alerting/pull/1668) | Move deletion of query index before its creation |
 | [#1674](https://github.com/opensearch-project/alerting/pull/1674) | Create query index at the time of monitor creation |
-
-## References
-
-- [Per Document Monitors Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/per-document-monitors/): Official documentation for per-document monitors
-- [Alerting Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/index/): Main alerting documentation
-- [PR #1655](https://github.com/opensearch-project/alerting/pull/1655): Related PR for alerting comments feature
-- [PR #1673](https://github.com/opensearch-project/alerting/pull/1673): Related PR for query index creation
 
 ## Related Feature Report
 

@@ -76,8 +76,13 @@ After enabling, new detectors will create dedicated query indices with pattern:
 - Dedicated query indices increase the total number of indices in the cluster
 - Changing the setting does not automatically migrate existing detectors
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Analytics Documentation](https://docs.opensearch.org/2.18/security-analytics/)
+- [Security Analytics System Indexes](https://docs.opensearch.org/2.18/security-analytics/security/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1358](https://github.com/opensearch-project/security-analytics/pull/1358) | Update replicas to 1-20 and primary shards to 1 |
@@ -85,11 +90,6 @@ After enabling, new detectors will create dedicated query indices with pattern:
 | [#1365](https://github.com/opensearch-project/security-analytics/pull/1365) | Enable dedicated query index settings |
 | [#1324](https://github.com/opensearch-project/security-analytics/pull/1324) | Separate doc-level monitor query indices |
 | [#1382](https://github.com/opensearch-project/security-analytics/pull/1382) | Set refresh policy to IMMEDIATE for correlation alerts |
-
-## References
-
-- [Security Analytics Documentation](https://docs.opensearch.org/2.18/security-analytics/)
-- [Security Analytics System Indexes](https://docs.opensearch.org/2.18/security-analytics/security/)
 
 ## Related Feature Report
 

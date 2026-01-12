@@ -82,15 +82,15 @@ For developers building the k-NN plugin locally:
 - The S3 snapshot repository requires AWS credentials for publishing (handled automatically in CI)
 - SIMD optimizations are only available on x64 architectures
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3025](https://github.com/opensearch-project/k-NN/pull/3025) | Include opensearchknn_simd in build configurations |
 | [#2943](https://github.com/opensearch-project/k-NN/pull/2943) | Onboard to S3 snapshots |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org snapshots repo
 
 ## Related Feature Report

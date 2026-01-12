@@ -134,22 +134,24 @@ The API returns indexing buffer information with the following fields:
 - Metric selection is per-request; there is no cluster-level default configuration
 - Some metrics may have performance implications when requested frequently
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Breaking change - Fixed swapped `total_indexing_buffer` and `total_indexing_buffer_in_bytes` field formats
+- **v3.0.0** (2025-05-06): Breaking change - `search_pipelines` metric excluded from default metrics set
+
+## References
+
+### Documentation
+- [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): Official API reference
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): v3.0.0 breaking changes
+- [PR #12497](https://github.com/opensearch-project/OpenSearch/pull/12497): Default metrics change
+- [PR #17070](https://github.com/opensearch-project/OpenSearch/pull/17070): Indexing buffer format fix
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17070](https://github.com/opensearch-project/OpenSearch/pull/17070) | Breaking change: Fix swapped indexing buffer field formats |
 | v3.0.0 | [#12497](https://github.com/opensearch-project/OpenSearch/pull/12497) | Breaking change: Do not request search_pipelines by default |
 
-## References
-
-- [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): Official API reference
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): v3.0.0 breaking changes
+### Issues (Design / RFC)
 - [Issue #16910](https://github.com/opensearch-project/OpenSearch/issues/16910): Bug report for swapped field formats
-- [PR #12497](https://github.com/opensearch-project/OpenSearch/pull/12497): Default metrics change
-- [PR #17070](https://github.com/opensearch-project/OpenSearch/pull/17070): Indexing buffer format fix
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Breaking change - Fixed swapped `total_indexing_buffer` and `total_indexing_buffer_in_bytes` field formats
-- **v3.0.0** (2025-05-06): Breaking change - `search_pipelines` metric excluded from default metrics set

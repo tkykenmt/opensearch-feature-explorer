@@ -85,19 +85,21 @@ illegal_argument_exception: In the current OpenSearch version pagination is not 
 - **Pagination not supported**: Hybrid queries do not support the `from` parameter. Use `search_after` for pagination instead.
 - **Concurrent segment search edge cases**: While the merge logic fix addresses the known issue, the order of shard results is non-deterministic with concurrent segment search.
 
-## Related PRs
+## References
 
+### Documentation
+- [Hybrid Search Documentation](https://docs.opensearch.org/2.17/search-plugins/hybrid-search/)
+- [Hybrid Query DSL](https://docs.opensearch.org/2.17/query-dsl/compound/hybrid/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removing code to cut search results of hybrid search in the priority queue |
 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic in hybrid query for multiple shards case |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #875](https://github.com/opensearch-project/neural-search/issues/875): Unable to merge results from shards
 - [Issue #280](https://github.com/opensearch-project/neural-search/issues/280): Pagination support tracking issue
-- [Hybrid Search Documentation](https://docs.opensearch.org/2.17/search-plugins/hybrid-search/)
-- [Hybrid Query DSL](https://docs.opensearch.org/2.17/query-dsl/compound/hybrid/)
 
 ## Related Feature Report
 

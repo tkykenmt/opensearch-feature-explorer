@@ -91,19 +91,19 @@ This ensures that when users navigate between Channels, Email Senders, and Email
 - Data source persistence in Notifications requires the new navigation experience to be enabled
 - The `dataSourceId` URL parameter is only added when `multiDataSourceEnabled` is true
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
+- [PR #411](https://github.com/opensearch-project/dashboards-reporting/pull/411): De-register reporting when MDS is enabled
+- [PR #249](https://github.com/opensearch-project/dashboards-notifications/pull/249): Persist dataSourceId across applications
+- [PR #244](https://github.com/opensearch-project/dashboards-notifications/pull/244): Original implementation (main branch)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#411](https://github.com/opensearch-project/dashboards-reporting/pull/411) | dashboards-reporting | De-register reporting when MDS is enabled |
 | [#249](https://github.com/opensearch-project/dashboards-notifications/pull/249) | dashboards-notifications | Persist dataSourceId across applications under new Nav change |
-
-## References
-
-- [PR #411](https://github.com/opensearch-project/dashboards-reporting/pull/411): De-register reporting when MDS is enabled
-- [PR #249](https://github.com/opensearch-project/dashboards-notifications/pull/249): Persist dataSourceId across applications
-- [PR #244](https://github.com/opensearch-project/dashboards-notifications/pull/244): Original implementation (main branch)
-- [Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
 
 ## Related Feature Report
 

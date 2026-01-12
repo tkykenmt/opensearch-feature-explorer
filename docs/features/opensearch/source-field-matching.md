@@ -108,18 +108,20 @@ GET /index/_search
 - Disabling `_source` in index mappings affects features like `update`, `update_by_query`, and `reindex`
 - Dots in field names are treated as sub-objects (e.g., including `a` will also include `a.b`)
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added HashSet-based filtering optimization for simple field names to prevent TooComplexToDeterminizeException
+
+## References
+
+### Documentation
+- [Source Field Documentation](https://docs.opensearch.org/3.0/field-types/metadata-fields/source/): Official `_source` field documentation
+- [Retrieve Specific Fields](https://docs.opensearch.org/3.0/search-plugins/searching-data/retrieve-specific-fields/): Source filtering documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17160](https://github.com/opensearch-project/OpenSearch/pull/17160) | Add HashSet based filtering optimization to XContentMapValues |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17114](https://github.com/opensearch-project/OpenSearch/issues/17114): Bug report - Fetching source uses automata even for simple matching
-- [Source Field Documentation](https://docs.opensearch.org/3.0/field-types/metadata-fields/source/): Official `_source` field documentation
-- [Retrieve Specific Fields](https://docs.opensearch.org/3.0/search-plugins/searching-data/retrieve-specific-fields/): Source filtering documentation
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added HashSet-based filtering optimization for simple field names to prevent TooComplexToDeterminizeException

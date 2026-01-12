@@ -96,16 +96,18 @@ jwt_auth_domain:
 - If any intermediate key is missing or not a Map, role extraction fails gracefully with an empty role set
 - The final value must be either a comma-separated string or a Collection of strings
 
-## Related PRs
+## References
 
+### Documentation
+- [JWT Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/jwt/): Official JWT configuration docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5355](https://github.com/opensearch-project/security/pull/5355) | Handle roles in nested claim for JWT auth backends |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5343](https://github.com/opensearch-project/security/issues/5343): Original feature request
-- [JWT Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/jwt/): Official JWT configuration docs
 
 ## Related Feature Report
 

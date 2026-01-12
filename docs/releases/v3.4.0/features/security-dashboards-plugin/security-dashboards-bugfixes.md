@@ -41,16 +41,16 @@ const updateObject: InternalUserUpdate = {
 
 - This fix only applies to the Dashboards UI; direct REST API calls to the security plugin can still create users with blank backend roles if not validated server-side
 
-## Related PRs
+## References
 
+### Documentation
+- [Defining users and roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/): OpenSearch Security documentation
+- [PR #2330](https://github.com/opensearch-project/security-dashboards-plugin/pull/2330): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2330](https://github.com/opensearch-project/security-dashboards-plugin/pull/2330) | Filter blank backend role before creating internal user |
-
-## References
-
-- [PR #2330](https://github.com/opensearch-project/security-dashboards-plugin/pull/2330): Main implementation
-- [Defining users and roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/): OpenSearch Security documentation
 
 ## Related Feature Report
 

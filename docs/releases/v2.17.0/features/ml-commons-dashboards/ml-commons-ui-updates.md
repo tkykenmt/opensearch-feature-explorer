@@ -57,15 +57,15 @@ After (using `EuiText size="s"`):
 - This is a visual-only change with no functional impact
 - The changes apply only to the ML Commons Dashboards plugin UI
 
-## Related PRs
+## References
 
+### Documentation
+- [Managing ML models in OpenSearch Dashboards](https://docs.opensearch.org/2.17/ml-commons-plugin/ml-dashboard/): Official documentation for ML Commons Dashboards
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#355](https://github.com/opensearch-project/ml-commons-dashboards/pull/355) | Align font size and style with UX guideline |
-
-## References
-
-- [Managing ML models in OpenSearch Dashboards](https://docs.opensearch.org/2.17/ml-commons-plugin/ml-dashboard/): Official documentation for ML Commons Dashboards
 
 ## Related Feature Report
 

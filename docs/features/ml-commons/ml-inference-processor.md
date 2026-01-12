@@ -246,8 +246,24 @@ POST _plugins/_ml/agents/_register
 - All vectors must have the same dimension for pooling
 - Processor chain is currently available for agent tools, not ingest processors
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-01): Added output transformation support (mean/max pooling), passthrough post-process function, and processor chain framework with 9 built-in processors
+- **v2.17.0** (2024-10-15): Added `one_to_one` parameter for per-document inference in search response processor
+- **v2.16.0**: Added ML Inference Search Request and Search Response Processors
+- **v2.14.0**: Initial ML Inference Ingest Processor implementation
+
+## References
+
+### Documentation
+- [ML Inference Ingest Processor Documentation](https://docs.opensearch.org/latest/ingest-pipelines/processors/ml-inference/)
+- [ML Inference Search Request Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-request/)
+- [ML Inference Search Response Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-response/)
+
+### Blog Posts
+- [Blog: Introduction to ML inference processors](https://opensearch.org/blog/introduction-to-ml-inference-processors-in-opensearch-review-summarization-and-semantic-search/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4111](https://github.com/opensearch-project/ml-commons/pull/4111) | Add passthrough post process function |
@@ -258,18 +274,6 @@ POST _plugins/_ml/agents/_register
 | v2.16.0 | - | ML Inference Search Request/Response Processors |
 | v2.14.0 | - | Initial ML Inference Ingest Processor |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2173](https://github.com/opensearch-project/ml-commons/issues/2173): RFC - ML Inference Processors
 - [Issue #4235](https://github.com/opensearch-project/ml-commons/issues/4235): Processor chain feature request
-- [ML Inference Ingest Processor Documentation](https://docs.opensearch.org/latest/ingest-pipelines/processors/ml-inference/)
-- [ML Inference Search Request Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-request/)
-- [ML Inference Search Response Processor Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/ml-inference-search-response/)
-- [Blog: Introduction to ML inference processors](https://opensearch.org/blog/introduction-to-ml-inference-processors-in-opensearch-review-summarization-and-semantic-search/)
-
-## Change History
-
-- **v3.3.0** (2025-10-01): Added output transformation support (mean/max pooling), passthrough post-process function, and processor chain framework with 9 built-in processors
-- **v2.17.0** (2024-10-15): Added `one_to_one` parameter for per-document inference in search response processor
-- **v2.16.0**: Added ML Inference Search Request and Search Response Processors
-- **v2.14.0**: Initial ML Inference Ingest Processor implementation

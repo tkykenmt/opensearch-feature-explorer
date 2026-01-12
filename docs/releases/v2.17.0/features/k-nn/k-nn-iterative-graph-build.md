@@ -111,16 +111,18 @@ transferLimit = max(1, streamingMemoryLimit / bytesPerVector)
 - Model-based indexes (using `model_id`) use the traditional bulk build
 - Binary vector indexes use the default build strategy
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Official k-NN index documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1950](https://github.com/opensearch-project/k-NN/pull/1950) | Integrates FAISS iterative builds with NativeEngines990KnnVectorsFormat |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1853](https://github.com/opensearch-project/k-NN/issues/1853): RFC - Integrating KNNVectorsFormat in Native Vector Search Engine
-- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Official k-NN index documentation
 
 ## Related Feature Report
 

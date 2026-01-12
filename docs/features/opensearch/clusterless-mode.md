@@ -136,20 +136,22 @@ PUT /my-index/_settings
 - **No GatewayService**: Gateway service is not created in clusterless mode
 - **Limited actions**: Some transport actions that require Discovery are not available
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07): Initial experimental implementation with clusterless startup mode and custom remote store path prefix support
+
+## References
+
+### Documentation
+- [Remote-backed storage documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/remote-store/index/)
+- [Segment replication documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18479](https://github.com/opensearch-project/OpenSearch/pull/18479) | Start in "clusterless" mode if a clusterless ClusterPlugin is loaded |
 | v3.2.0 | [#18857](https://github.com/opensearch-project/OpenSearch/pull/18857) | Add support for custom remote store segment path prefix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17957](https://github.com/opensearch-project/OpenSearch/issues/17957): RFC - Cloud-native OpenSearch
 - [Issue #18750](https://github.com/opensearch-project/OpenSearch/issues/18750): Feature request for custom remote store path component
-- [Remote-backed storage documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/remote-store/index/)
-- [Segment replication documentation](https://docs.opensearch.org/3.2/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
-
-## Change History
-
-- **v3.2.0** (2025-07): Initial experimental implementation with clusterless startup mode and custom remote store path prefix support

@@ -115,16 +115,18 @@ This ordering ensures that custom expressions are resolved before the WildcardEx
 - Each resolver class can only be registered once across all plugins
 - Custom resolvers must be thread-safe as they may be called concurrently
 
-## Related PRs
+## References
 
+### Documentation
+- [Resolve Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/resolve-index/): Documentation on index resolution
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18593](https://github.com/opensearch-project/OpenSearch/pull/18593) | Add support for custom index name resolver from cluster plugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18676](https://github.com/opensearch-project/OpenSearch/issues/18676): Feature request for custom index name resolver support
-- [Resolve Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/resolve-index/): Documentation on index resolution
 
 ## Related Feature Report
 

@@ -189,19 +189,19 @@ Transformed mapping (after semantic field transformer):
 - Transformers modify mappings in place; there's no transaction or rollback mechanism
 - Async transformer execution requires careful error handling to avoid request timeouts
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Initial implementation - introduced MappingTransformer interface, MappingTransformerRegistry, and integration with index/template transport actions
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17635](https://github.com/opensearch-project/OpenSearch/pull/17635) | Initial implementation of mapping transformer |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17500](https://github.com/opensearch-project/OpenSearch/issues/17500): RFC - Introduce Mapping Transformer
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Proposal to support semantic field in neural search
 - [Issue #1211](https://github.com/opensearch-project/neural-search/issues/1211): HLD of the semantic field
 - [Issue #1212](https://github.com/opensearch-project/neural-search/issues/1212): LLD of the semantic field
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Initial implementation - introduced MappingTransformer interface, MappingTransformerRegistry, and integration with index/template transport actions

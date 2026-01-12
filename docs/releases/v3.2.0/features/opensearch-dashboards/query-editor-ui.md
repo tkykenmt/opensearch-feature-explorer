@@ -89,17 +89,17 @@ The Query Editor in Explore now provides smoother autocomplete interaction:
 - The 100ms delay for retriggering suggestions is a workaround and may feel slightly delayed
 - The max height for generated query is fixed at `3 * $ouiSize`
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Editor Feature](../../../features/opensearch-dashboards/query-editor.md): Full feature documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9960](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9960) | Fix autocomplete for new query panel |
 | [#10259](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10259) | Change query editor UI - edit button placement |
 | [#10337](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10337) | Change generated query UI - scrollable display |
-
-## References
-
-- [Query Editor Feature](../../../features/opensearch-dashboards/query-editor.md): Full feature documentation
 
 ## Related Feature Report
 

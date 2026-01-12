@@ -130,19 +130,21 @@ POST /_plugins/_ml/mcp/tools/_register
 - Error handling improvements are applied incrementally; some edge cases may still return 500 errors
 - Custom exception types from external connectors may not follow this pattern
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#3988](https://github.com/opensearch-project/ml-commons/pull/3988) | Throw proper 400 errors instead of 500 for agent execute and MCP |
+- **v3.2.0**: Initial implementation - proper 400 errors for agent execution and MCP tool registration
 
 ## References
 
-- [Issue #3987](https://github.com/opensearch-project/ml-commons/issues/3987): Original feature request for improved error handling
+### Documentation
 - [Execute Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/execute-agent/): Agent execution documentation
 - [Register MCP Tools API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/register-mcp-tools/): MCP tool registration documentation
 - [Using MCP Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/): MCP integration overview
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#3988](https://github.com/opensearch-project/ml-commons/pull/3988) | Throw proper 400 errors instead of 500 for agent execute and MCP |
 
-- **v3.2.0**: Initial implementation - proper 400 errors for agent execution and MCP tool registration
+### Issues (Design / RFC)
+- [Issue #3987](https://github.com/opensearch-project/ml-commons/issues/3987): Original feature request for improved error handling

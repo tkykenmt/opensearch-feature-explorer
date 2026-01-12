@@ -35,12 +35,12 @@ When deleting a workflow:
 
 None identified.
 
-## Related PRs
+## References
 
+### Documentation
+- [dashboards-flow-framework](https://github.com/opensearch-project/dashboards-flow-framework): Flow Framework Dashboards plugin repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#821](https://github.com/opensearch-project/dashboards-flow-framework/pull/821) | Gracefully handle workflows with no provisioned resources |
-
-## References
-
-- [dashboards-flow-framework](https://github.com/opensearch-project/dashboards-flow-framework): Flow Framework Dashboards plugin repository

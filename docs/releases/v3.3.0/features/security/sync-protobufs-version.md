@@ -53,15 +53,15 @@ The protobufs version is defined in OpenSearch core at:
 - If a breaking change is introduced in protobufs, the Security plugin build will fail until compatibility is restored
 - Requires the Security plugin to be built against a compatible OpenSearch core version
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch core libs.versions.toml](https://github.com/opensearch-project/OpenSearch/blob/main/gradle/libs.versions.toml#L25): Protobufs version definition
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5659](https://github.com/opensearch-project/security/pull/5659) | Sync `org.opensearch:protobufs` version with core |
-
-## References
-
-- [OpenSearch core libs.versions.toml](https://github.com/opensearch-project/OpenSearch/blob/main/gradle/libs.versions.toml#L25): Protobufs version definition
 
 ## Related Feature Report
 

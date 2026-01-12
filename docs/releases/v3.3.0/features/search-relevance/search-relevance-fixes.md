@@ -88,17 +88,19 @@ All rating formats (integer `1`, string `"0.5"`, float `0.75`) are now handled c
 - Ratings must still be valid numeric values (parseable as float)
 - Non-numeric strings like `"high"` or `"relevant"` will still fail validation
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/)
+- [Search Relevance Plugin Repository](https://github.com/opensearch-project/search-relevance)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#230](https://github.com/opensearch-project/search-relevance/pull/230) | Improve ImportJudgmentsProcessor handling of ratings data types |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #229](https://github.com/opensearch-project/search-relevance/issues/229): Bug report - Posting rating as integer causes class cast issues
-- [Search Relevance Plugin Repository](https://github.com/opensearch-project/search-relevance)
-- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/)
 
 ## Related Feature Report
 

@@ -150,18 +150,20 @@ POST _plugins/_knn/models/my-model/_train
 - If both top-level and method-level `space_type` are specified, they must be identical
 - Only supported for OpenSearch version 2.17.0 and later
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation - Added `space_type` as top-level parameter for knn_vector field mappings
+
+## References
+
+### Documentation
+- [k-NN Vector Field Type](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/): Official documentation
+- [k-NN Index](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Index configuration guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#2044](https://github.com/opensearch-project/k-NN/pull/2044) | Add spaceType as a top level parameter while creating vector field |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1949](https://github.com/opensearch-project/k-NN/issues/1949): RFC - Disk-based Mode Design
-- [k-NN Vector Field Type](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/): Official documentation
-- [k-NN Index](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Index configuration guide
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation - Added `space_type` as top-level parameter for knn_vector field mappings

@@ -98,18 +98,20 @@ No migration required. The changes are backward compatible and automatically app
 - Hybrid optimizer experiments with more than 10,000 evaluation results will only display the first 10,000 due to OpenSearch's `max_result_window` limit
 - A warning toast is displayed when results are truncated
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.3/search-plugins/search-relevance/comparing-search-results/): Comparing search results
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#632](https://github.com/opensearch-project/dashboards-search-relevance/pull/632) | Improve color coding for search result comparison |
 | [#637](https://github.com/opensearch-project/dashboards-search-relevance/pull/637) | Allow more than 10 results in pairwise comparison view |
 | [#645](https://github.com/opensearch-project/dashboards-search-relevance/pull/645) | Show first 10,000 experiment results |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #157](https://github.com/opensearch-project/search-relevance/issues/157): No evaluation results loaded for extensive experiments
-- [Documentation](https://docs.opensearch.org/3.3/search-plugins/search-relevance/comparing-search-results/): Comparing search results
 
 ## Related Feature Report
 

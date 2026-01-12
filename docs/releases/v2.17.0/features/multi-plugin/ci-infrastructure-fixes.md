@@ -65,17 +65,19 @@ env:
 - These are infrastructure-only changes with no user-facing impact
 - The `ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION` flag is a temporary workaround
 
-## Related PRs
+## References
 
+### Blog Posts
+- [GitHub Actions upload-artifact deprecation notice](https://github.blog/changelog/2024-02-13-deprecation-notice-v1-and-v2-of-the-artifact-actions/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#703](https://github.com/opensearch-project/common-utils/pull/703) | common-utils | Fixed CI build failures due to GLIBC version issues |
 | [#2046](https://github.com/opensearch-project/dashboards-observability/pull/2046) | dashboards-observability | Fixed CI workflow checks, added Job Scheduler dependency |
 | [#2133](https://github.com/opensearch-project/dashboards-observability/pull/2133) | dashboards-observability | Updated actions/upload-artifact from v1 to v4 |
 
-## References
-
-- [GitHub Actions upload-artifact deprecation notice](https://github.blog/changelog/2024-02-13-deprecation-notice-v1-and-v2-of-the-artifact-actions/)
+### Issues (Design / RFC)
 - [Issue #1886](https://github.com/opensearch-project/dashboards-observability/issues/1886): Observability CI failures
 
 ## Related Feature Report

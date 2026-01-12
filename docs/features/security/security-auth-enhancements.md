@@ -142,8 +142,22 @@ opensearch_security.proxycache:
 - Proxy auth in multi-auth requires proper header allowlist configuration
 - Rate limiting `ignore_hosts` uses wildcard matching, not regex
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-10-22): Initial implementation
+  - Added multiple JWT signing keys support for zero-downtime key rotation
+  - Added `ignore_hosts` configuration for IP-based rate limiting
+  - Added proxy authentication support in multi-auth configurations
+  - Improved redirect URL handling in OpenSearch Dashboards
+
+## References
+
+### Documentation
+- [JWT Documentation](https://docs.opensearch.org/2.17/security/authentication-backends/jwt/): JSON Web Token authentication
+- [API Rate Limiting](https://docs.opensearch.org/2.17/security/configuration/api-rate-limiting/): Rate limiting configuration
+- [Proxy Authentication](https://docs.opensearch.org/2.17/security/authentication-backends/proxy/): Proxy-based authentication
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#4632](https://github.com/opensearch-project/security/pull/4632) | Allow multiple signing keys to be provided |
@@ -152,19 +166,7 @@ opensearch_security.proxycache:
 | v2.17.0 | [#2076](https://github.com/opensearch-project/security-dashboards-plugin/pull/2076) | Add Proxy Auth to Multi Auth Options |
 | v2.17.0 | [#2072](https://github.com/opensearch-project/security-dashboards-plugin/pull/2072) | Use `getRedirectUrl` from OSD to generate nextUrl |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4613](https://github.com/opensearch-project/security/issues/4613): Support multiple keys in JWT configuration
 - [Issue #4262](https://github.com/opensearch-project/security/issues/4262): IP rate-limiting should support ignore hosts
 - [Issue #1724](https://github.com/opensearch-project/security-dashboards-plugin/issues/1724): Add proxy authentication support to multi-auth framework
-- [JWT Documentation](https://docs.opensearch.org/2.17/security/authentication-backends/jwt/): JSON Web Token authentication
-- [API Rate Limiting](https://docs.opensearch.org/2.17/security/configuration/api-rate-limiting/): Rate limiting configuration
-- [Proxy Authentication](https://docs.opensearch.org/2.17/security/authentication-backends/proxy/): Proxy-based authentication
-
-## Change History
-
-- **v2.17.0** (2024-10-22): Initial implementation
-  - Added multiple JWT signing keys support for zero-downtime key rotation
-  - Added `ignore_hosts` configuration for IP-based rate limiting
-  - Added proxy authentication support in multi-auth configurations
-  - Improved redirect URL handling in OpenSearch Dashboards

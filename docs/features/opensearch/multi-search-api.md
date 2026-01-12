@@ -138,19 +138,21 @@ GET _msearch/template
 - Each search is independent; no cross-search dependencies
 - Large batch sizes may impact cluster performance
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16265](https://github.com/opensearch-project/OpenSearch/pull/16265) | Fix multi-search with template doesn't return status code |
+- **v2.18.0** (2024-10-22): Added `status` field to Multi-Search Template API responses for consistency with Multi-Search API
 
 ## References
 
-- [Issue #11133](https://github.com/opensearch-project/OpenSearch/issues/11133): Bug report for missing status field
+### Documentation
 - [Multi-Search API Documentation](https://docs.opensearch.org/latest/api-reference/multi-search/): Official multi-search docs
 - [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/msearch-template/): Official template docs
 - [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-template/): Search template reference
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#16265](https://github.com/opensearch-project/OpenSearch/pull/16265) | Fix multi-search with template doesn't return status code |
 
-- **v2.18.0** (2024-10-22): Added `status` field to Multi-Search Template API responses for consistency with Multi-Search API
+### Issues (Design / RFC)
+- [Issue #11133](https://github.com/opensearch-project/OpenSearch/issues/11133): Bug report for missing status field

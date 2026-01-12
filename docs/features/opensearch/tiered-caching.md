@@ -105,8 +105,25 @@ GET /_nodes/stats/caches/request_cache?level=tier
 - Disk cache data is not persisted between process restarts
 - Minimum disk cache size is 10 MB
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-11-18): Fixed query execution exception handling; ensures proper cleanup of concurrent request tracking map when exceptions occur
+- **v3.0.0** (2025-05-06): Single cache manager for disk caches reduces CPU overhead; took-time policy extended to guard heap tier
+- **v2.19.0** (2025-02-11): Disk cache partitioning with read/write locks for improved concurrency
+- **v2.18.0** (2024-11-05): Segmented cache architecture with configurable segments; query recomputation moved outside write lock; new settings for segment count and per-tier sizes
+- **v2.14.0** (2024-05-14): Initial experimental tiered caching support for request cache
+- **v2.13.0** (2024-04-02): cache-ehcache plugin introduced for disk cache implementation
+
+## References
+
+### Documentation
+- [Tiered Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
+- [Request Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/request-cache/)
+
+### Blog Posts
+- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19000](https://github.com/opensearch-project/OpenSearch/pull/19000) | Handle query execution exception |
@@ -117,20 +134,7 @@ GET /_nodes/stats/caches/request_cache?level=tier
 | v2.14.0 | - | Initial tiered caching support (experimental) |
 | v2.13.0 | - | cache-ehcache plugin introduced |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16162](https://github.com/opensearch-project/OpenSearch/issues/16162): RFC - Optimize caching policy for Request cache
 - [Issue #13989](https://github.com/opensearch-project/OpenSearch/issues/13989): Performance improvement for TieredCaching
 - [Issue #10024](https://github.com/opensearch-project/OpenSearch/issues/10024): Tiered caching tracking issue
-- [Tiered Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
-- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
-- [Request Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/request-cache/)
-
-## Change History
-
-- **v3.3.0** (2025-11-18): Fixed query execution exception handling; ensures proper cleanup of concurrent request tracking map when exceptions occur
-- **v3.0.0** (2025-05-06): Single cache manager for disk caches reduces CPU overhead; took-time policy extended to guard heap tier
-- **v2.19.0** (2025-02-11): Disk cache partitioning with read/write locks for improved concurrency
-- **v2.18.0** (2024-11-05): Segmented cache architecture with configurable segments; query recomputation moved outside write lock; new settings for segment count and per-tier sizes
-- **v2.14.0** (2024-05-14): Initial experimental tiered caching support for request cache
-- **v2.13.0** (2024-04-02): cache-ehcache plugin introduced for disk cache implementation

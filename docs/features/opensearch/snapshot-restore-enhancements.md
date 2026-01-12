@@ -120,8 +120,19 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 - When repository is updated during snapshot creation, the snapshot operation will fail and must be retried
 - File cache validation may be less accurate when shard size information is unavailable (logs warning)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Fixed NPE when restoring remote snapshots with missing shard size information in ClusterInfo cache
+- **v3.1.0** (2026-01-10): Fixed infinite loop when updating repository during snapshot creation; fixed NPE when restoring legacy searchable snapshots
+- **v2.18.0** (2024-11-05): Added alias renaming support during snapshot restore; optimized clone operations for doc-rep clusters
+
+## References
+
+### Documentation
+- [Snapshot Restore Documentation](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
+- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): API reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19684](https://github.com/opensearch-project/OpenSearch/pull/19684) | Fix NPE in validateSearchableSnapshotRestorable when shard size is unavailable |
@@ -130,18 +141,9 @@ POST /_snapshot/{repository}/{snapshot}/_restore
 | v2.18.0 | [#16292](https://github.com/opensearch-project/OpenSearch/pull/16292) | Add support for renaming aliases during snapshot restore |
 | v2.18.0 | [#16296](https://github.com/opensearch-project/OpenSearch/pull/16296) | Optimise clone operation for incremental full cluster snapshots |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19349](https://github.com/opensearch-project/OpenSearch/issues/19349): Bug report for NullPointerException when restoring remote snapshots with missing shard size
 - [Issue #17531](https://github.com/opensearch-project/OpenSearch/issues/17531): Bug report for infinite loop during concurrent snapshot/repository update
 - [Issue #18187](https://github.com/opensearch-project/OpenSearch/issues/18187): Bug report for NPE when restoring legacy searchable snapshots
 - [Issue #15632](https://github.com/opensearch-project/OpenSearch/issues/15632): Original feature request for alias renaming
 - [Issue #16295](https://github.com/opensearch-project/OpenSearch/issues/16295): Clone optimization request
-- [Snapshot Restore Documentation](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
-- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): API reference
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Fixed NPE when restoring remote snapshots with missing shard size information in ClusterInfo cache
-- **v3.1.0** (2026-01-10): Fixed infinite loop when updating repository during snapshot creation; fixed NPE when restoring legacy searchable snapshots
-- **v2.18.0** (2024-11-05): Added alias renaming support during snapshot restore; optimized clone operations for doc-rep clusters

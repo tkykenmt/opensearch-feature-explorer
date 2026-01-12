@@ -54,17 +54,17 @@ yarn cypress open
 - These dependencies are development-only and do not affect production deployments
 - Security advisories in transient dependencies may require periodic updates
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#2507](https://github.com/opensearch-project/dashboards-observability/pull/2507) | Update @cypress/request to 3.0.9 |
-
-## References
-
-- [Cypress Documentation](https://docs.cypress.io/): Official Cypress documentation
-- [dashboards-observability Repository](https://github.com/opensearch-project/dashboards-observability): Source repository
-
 ## Change History
 
 - **v3.3.0** (2025-10-02): Updated @cypress/request from 3.0.1 to 3.0.9 to address security advisories
+
+## References
+
+### Documentation
+- [Cypress Documentation](https://docs.cypress.io/): Official Cypress documentation
+- [dashboards-observability Repository](https://github.com/opensearch-project/dashboards-observability): Source repository
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#2507](https://github.com/opensearch-project/dashboards-observability/pull/2507) | Update @cypress/request to 3.0.9 |

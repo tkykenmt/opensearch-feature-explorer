@@ -117,19 +117,21 @@ client.verifyResourceAccess(resourceId, indexName, listener);
 - Migration API requires cluster admin privileges
 - Initial plugin support limited to Anomaly Detection and ML Commons
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Feature overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5389](https://github.com/opensearch-project/security/pull/5389) | Migration API for existing sharing info |
 | [#5408](https://github.com/opensearch-project/security/pull/5408) | Resource Access Evaluator for standalone authorization |
 | [#5541](https://github.com/opensearch-project/security/pull/5541) | Client accessor pattern fix for optional security plugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5391](https://github.com/opensearch-project/security/issues/5391): Migration API tracking issue
 - [Issue #5442](https://github.com/opensearch-project/security/issues/5442): Resource Access Evaluator tracking issue
-- [Blog: Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Feature overview
 
 ## Related Feature Report
 

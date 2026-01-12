@@ -77,17 +77,17 @@ To add an Input Control to a dashboard:
 - Options list works best with keyword fields for exact matching
 - Parent-child control relationships require careful configuration
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108) | Fix disabled ValidatedDualRange component sizing |
-
-## References
-
-- [Building data visualizations](https://docs.opensearch.org/2.18/dashboards/visualize/viz-index/): OpenSearch Dashboards visualization documentation
-- [PR #8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108): Disabled range control sizing fix
-
 ## Change History
 
 - **v2.18.0** (2024-11-05): Fixed sizing of disabled ValidatedDualRange components in range slider controls
+
+## References
+
+### Documentation
+- [Building data visualizations](https://docs.opensearch.org/2.18/dashboards/visualize/viz-index/): OpenSearch Dashboards visualization documentation
+- [PR #8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108): Disabled range control sizing fix
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108) | Fix disabled ValidatedDualRange component sizing |

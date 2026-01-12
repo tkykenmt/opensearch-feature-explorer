@@ -112,8 +112,13 @@ PUT _cluster/settings
 - The TakeOrderedOperator optimization applies only to specific query patterns
 - Geo point format support is for reading/querying; indexing behavior unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [Geo Point Documentation](https://opensearch.org/docs/latest/field-types/supported-field-types/geo-point/): OpenSearch geo point formats
+- [SQL and PPL Documentation](https://docs.opensearch.org/2.17/search-plugins/sql/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2877](https://github.com/opensearch-project/sql/pull/2877) | Change default value of plugins.query.size_limit to MAX_RESULT_WINDOW (10000) |
@@ -121,15 +126,12 @@ PUT _cluster/settings
 | [#2906](https://github.com/opensearch-project/sql/pull/2906) | Add TakeOrderedOperator |
 | [#2970](https://github.com/opensearch-project/sql/pull/2970) | IF function should support complex predicates in PPL |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2859](https://github.com/opensearch-project/sql/issues/2859): Query size limit issue
 - [Issue #1432](https://github.com/opensearch-project/sql/issues/1432): Geo point format support request
 - [Issue #2857](https://github.com/opensearch-project/sql/issues/2857): TakeOrderedOperator feature request
 - [Issue #2600](https://github.com/opensearch-project/sql/issues/2600): IF function complex predicate support
 - [Issue #2653](https://github.com/opensearch-project/sql/issues/2653): IF function predicate parsing issue
-- [Geo Point Documentation](https://opensearch.org/docs/latest/field-types/supported-field-types/geo-point/): OpenSearch geo point formats
-- [SQL and PPL Documentation](https://docs.opensearch.org/2.17/search-plugins/sql/index/): Official documentation
 
 ## Related Feature Report
 

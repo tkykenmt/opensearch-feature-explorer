@@ -104,8 +104,13 @@ No migration required. These changes are backward compatible.
 - Schema merging may produce large field lists for index patterns matching many indexes with diverse schemas
 - Error masking only applies to SageMaker-related errors in PPLTool
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): Official PPL tool reference
+- [ML Commons PR #4053](https://github.com/opensearch-project/ml-commons/pull/4053): Unified tool parameter handling
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#596](https://github.com/opensearch-project/skills/pull/596) | Merge index schema meta for PPLTool |
@@ -115,11 +120,8 @@ No migration required. These changes are backward compatible.
 | [#615](https://github.com/opensearch-project/skills/pull/615) | Bump gradle, java, lombok and fix AD configrequest change |
 | [#605](https://github.com/opensearch-project/skills/pull/605) | Bump version to 3.2.0.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #617](https://github.com/opensearch-project/skills/issues/617): Parameter handling failures after ML Commons update
-- [ML Commons PR #4053](https://github.com/opensearch-project/ml-commons/pull/4053): Unified tool parameter handling
-- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): Official PPL tool reference
 
 ## Related Feature Report
 

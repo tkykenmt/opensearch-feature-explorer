@@ -90,20 +90,20 @@ No migration required. The plugin automatically detects the backend version and 
 - Verbose pipeline errors are not available for pre-2.19 backends
 - Some workflow templates may not be available for pre-2.19 data sources
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612): Main BWC implementation
+- [PR #591](https://github.com/opensearch-project/dashboards-flow-framework/pull/591): Synchronous provisioning integration
+- [PR #598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598): Verbose pipeline error handling
+- [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework): Backend plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612) | Support 2.17 BWC with latest backend integrations |
 | [#591](https://github.com/opensearch-project/dashboards-flow-framework/pull/591) | Integrate with synchronous provisioning feature |
 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling with verbose pipeline |
-
-## References
-
-- [PR #612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612): Main BWC implementation
-- [PR #591](https://github.com/opensearch-project/dashboards-flow-framework/pull/591): Synchronous provisioning integration
-- [PR #598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598): Verbose pipeline error handling
-- [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework): Backend plugin
 
 ## Related Feature Report
 

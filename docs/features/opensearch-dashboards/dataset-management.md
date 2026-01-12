@@ -204,8 +204,18 @@ datasetManagement.aliasedAsIndexPattern: false
 - Wildcard prefix only supported for index datasets (not data streams)
 - Schema mappings are stored per-dataset, not globally
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Major enhancements including schema mapping, wildcard prefix support, multiple log datasets, enhanced table with metadata columns, and dynamic terminology conversion
+- **v3.3.0** (2026-01-11): Initial implementation with basic dataset type and management plugin
+
+## References
+
+### Documentation
+- [Index Patterns Documentation](https://docs.opensearch.org/3.0/dashboards/management/index-patterns/)
+- [Dashboards Management](https://docs.opensearch.org/3.0/dashboards/management/management-index/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10623) | Wildcard prefix support for index datasets |
@@ -222,13 +232,3 @@ datasetManagement.aliasedAsIndexPattern: false
 | v3.4.0 | [#10572](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10572) | Fix dataset filter by signal type |
 | v3.4.0 | [#10692](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10692) | Restrict patterns tab to default datasets |
 | v3.3.0 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Initial dataset type and management |
-
-## References
-
-- [Index Patterns Documentation](https://docs.opensearch.org/3.0/dashboards/management/index-patterns/)
-- [Dashboards Management](https://docs.opensearch.org/3.0/dashboards/management/management-index/)
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Major enhancements including schema mapping, wildcard prefix support, multiple log datasets, enhanced table with metadata columns, and dynamic terminology conversion
-- **v3.3.0** (2026-01-11): Initial implementation with basic dataset type and management plugin

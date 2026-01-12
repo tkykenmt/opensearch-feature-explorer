@@ -156,8 +156,17 @@ PUT my-index/_settings
 - Remote-capable shard limits only apply to clusters with remote store enabled
 - `index.routing.allocation.total_primary_shards_per_node` requires remote store enabled clusters
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-01-15): Added custom creation_date setting and tier-aware shard limit validation
+- **v2.18.0** (2024-11-05): Fixed default value handling when `index.number_of_replicas` and `index.number_of_routing_shards` are set to `null`
+
+## References
+
+### Documentation
+- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19931](https://github.com/opensearch-project/OpenSearch/pull/19931) | Allow setting index.creation_date on index creation |
@@ -165,14 +174,7 @@ PUT my-index/_settings
 | v2.18.0 | [#14948](https://github.com/opensearch-project/OpenSearch/pull/14948) | Fix update settings with null replica not honoring cluster setting |
 | v2.18.0 | [#16331](https://github.com/opensearch-project/OpenSearch/pull/16331) | Fix wrong default value when setting routing shards to null |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19610](https://github.com/opensearch-project/OpenSearch/issues/19610): Feature request for tier-agnostic shard limit validation
 - [Issue #14810](https://github.com/opensearch-project/OpenSearch/issues/14810): Bug report for replica count default
 - [Issue #16327](https://github.com/opensearch-project/OpenSearch/issues/16327): Bug report for routing shards default
-- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official documentation
-
-## Change History
-
-- **v3.4.0** (2025-01-15): Added custom creation_date setting and tier-aware shard limit validation
-- **v2.18.0** (2024-11-05): Fixed default value handling when `index.number_of_replicas` and `index.number_of_routing_shards` are set to `null`

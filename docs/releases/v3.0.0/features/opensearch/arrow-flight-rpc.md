@@ -132,19 +132,23 @@ This is a new experimental feature. To adopt:
 - **Certificate Hot Reload**: Not yet supported ([#16965](https://github.com/opensearch-project/OpenSearch/issues/16965))
 - **Default Tuning**: Server, client, and allocator configs need tuning after benchmarks ([#16966](https://github.com/opensearch-project/OpenSearch/issues/16966))
 
-## Related PRs
+## References
 
+### Documentation
+- [Arrow Flight](https://arrow.apache.org/docs/format/Flight.html): Arrow Flight RPC documentation
+- [Apache Arrow](https://arrow.apache.org/): Apache Arrow project homepage
+
+### Blog Posts
+- [Blog: OpenSearch and Apache Arrow](https://opensearch.org/blog/opensearch-and-apache-arrow-a-tour-of-the-archery-range/): Overview of Arrow Flight integration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16962](https://github.com/opensearch-project/OpenSearch/pull/16962) | Arrow Flight RPC plugin with Flight server bootstrap logic and client for internode communication |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16963](https://github.com/opensearch-project/OpenSearch/issues/16963): Arrow Flight server and client bootstrap logic feature request
 - [Issue #16679](https://github.com/opensearch-project/OpenSearch/issues/16679): META - Streams using Apache Arrow and Flight
-- [Blog: OpenSearch and Apache Arrow](https://opensearch.org/blog/opensearch-and-apache-arrow-a-tour-of-the-archery-range/): Overview of Arrow Flight integration
-- [Apache Arrow](https://arrow.apache.org/): Apache Arrow project homepage
-- [Arrow Flight](https://arrow.apache.org/docs/format/Flight.html): Arrow Flight RPC documentation
 
 ## Related Feature Report
 

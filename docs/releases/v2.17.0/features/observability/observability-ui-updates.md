@@ -83,18 +83,18 @@ The new Logs UI provides a more streamlined experience:
 - UI changes are primarily cosmetic and do not affect underlying functionality
 - Some snapshot tests required updates due to component structure changes
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/ta-dashboards/): Official trace analytics plugin documentation
+- [Observability Overview](https://docs.opensearch.org/2.17/observing-your-data/): OpenSearch Observability documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |
 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |
 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |
-
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/ta-dashboards/): Official trace analytics plugin documentation
-- [Observability Overview](https://docs.opensearch.org/2.17/observing-your-data/): OpenSearch Observability documentation
 
 ## Related Feature Report
 

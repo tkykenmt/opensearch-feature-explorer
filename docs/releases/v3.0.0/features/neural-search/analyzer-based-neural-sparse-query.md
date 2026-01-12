@@ -93,17 +93,19 @@ The analyzer extracts tokens and their weights from the payload attribute. If no
 - Token weights must be encoded as 4-byte floats in the payload attribute
 - Two-phase processing with analyzer requires token splitting at query time (not during rewrite)
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
+- [Neural Search API Documentation](https://docs.opensearch.org/3.0/vector-search/api/neural/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1052](https://github.com/opensearch-project/neural-search/issues/1052): RFC for analyzer-based neural sparse query
-- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
-- [Neural Search API Documentation](https://docs.opensearch.org/3.0/vector-search/api/neural/)
 
 ## Related Feature Report
 

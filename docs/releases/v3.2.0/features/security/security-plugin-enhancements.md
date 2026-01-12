@@ -138,8 +138,13 @@ cluster_permissions:
 - Stream transport security integration is currently limited to node-to-node communication
 - Plugin permissions are evaluated at plugin load time and cannot be dynamically updated
 
-## Related PRs
+## References
 
+### Documentation
+- [Authentication Backends Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/authc-index/)
+- [OpenSearch Core PR #18722](https://github.com/opensearch-project/OpenSearch/pull/18722): Stream transport introduction
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5341](https://github.com/opensearch-project/security/pull/5341) | Plugin permission declaration mechanism |
@@ -154,15 +159,12 @@ cluster_permissions:
 | [#5436](https://github.com/opensearch-project/security/pull/5436) | JWT Vendor refactoring |
 | [#5519](https://github.com/opensearch-project/security/pull/5519) | Tenancy access serialization |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5430](https://github.com/opensearch-project/security/issues/5430): Nested JWT claims feature request
 - [Issue #5505](https://github.com/opensearch-project/security/issues/5505): JWT clock skew tolerance bug
 - [Issue #5044](https://github.com/opensearch-project/security/issues/5044): Demo certificate installation issue
 - [Issue #5365](https://github.com/opensearch-project/security/issues/5365): Mixed cluster config update bug
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): Plugin permission declaration
-- [OpenSearch Core PR #18722](https://github.com/opensearch-project/OpenSearch/pull/18722): Stream transport introduction
-- [Authentication Backends Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/authc-index/)
 
 ## Related Feature Report
 

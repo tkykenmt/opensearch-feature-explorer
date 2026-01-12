@@ -149,8 +149,16 @@ source=application_logs
 - Variable-length spans (month/quarter/year) use dynamic calculation which may have slight performance overhead
 - The `timechart` command requires a timestamp field in the source data
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Added `per_second`, `per_minute`, `per_hour`, `per_day` functions; millisecond span support; `timefield` option; merged `timechart` and `chart` implementations
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4464](https://github.com/opensearch-project/sql/pull/4464) | Add `per_second` function support |
@@ -159,16 +167,10 @@ source=application_logs
 | v3.4.0 | [#4755](https://github.com/opensearch-project/sql/pull/4755) | Merge `timechart` and `chart` implementations |
 | v3.4.0 | [#4784](https://github.com/opensearch-project/sql/pull/4784) | Add `timefield` option |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4350](https://github.com/opensearch-project/sql/issues/4350): PPL `per_*` aggregation function support
 - [Issue #4550](https://github.com/opensearch-project/sql/issues/4550): Millisecond span bug fix
 - [Issue #4576](https://github.com/opensearch-project/sql/issues/4576): Custom timestamp field feature request
 - [Issue #4581](https://github.com/opensearch-project/sql/issues/4581): Timechart bug fixes
 - [Issue #4582](https://github.com/opensearch-project/sql/issues/4582): Timechart bug fixes
 - [Issue #4632](https://github.com/opensearch-project/sql/issues/4632): Timechart bug fixes
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
-
-## Change History
-
-- **v3.4.0** (2026-01): Added `per_second`, `per_minute`, `per_hour`, `per_day` functions; millisecond span support; `timefield` option; merged `timechart` and `chart` implementations

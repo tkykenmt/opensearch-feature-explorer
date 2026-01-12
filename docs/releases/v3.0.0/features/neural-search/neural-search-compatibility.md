@@ -82,20 +82,24 @@ For plugin developers extending neural-search:
 - BWC tests are now limited to Linux platforms only
 - Rolling upgrade BWC tests require 2.20.0-SNAPSHOT as the minimum version
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene 10 Changelog](https://lucene.apache.org/core/10_0_0/changes/Changes.html): Apache Lucene 10 changes
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): New features and breaking changes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1141](https://github.com/opensearch-project/neural-search/pull/1141) | Update neural-search for OpenSearch 3.0 compatibility |
 | [#1245](https://github.com/opensearch-project/neural-search/pull/1245) | Update neural-search for OpenSearch 3.0 beta compatibility |
 | [#502](https://github.com/opensearch-project/neural-search/pull/502) | Adding code guidelines |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #225](https://github.com/opensearch-project/neural-search/issues/225): Release version 3.0.0
 - [Issue #3747](https://github.com/opensearch-project/opensearch-build/issues/3747): OpenSearch 3.0.0 release tracking
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): New features and breaking changes
-- [Lucene 10 Changelog](https://lucene.apache.org/core/10_0_0/changes/Changes.html): Apache Lucene 10 changes
 
 ## Related Feature Report
 

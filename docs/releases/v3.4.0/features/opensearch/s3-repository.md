@@ -66,17 +66,19 @@ If you're using S3-compatible storage and previously had to configure `legacy_md
 - The setting only affects S3-compatible storage providers that don't support AWS SDK v2's checksum trailing headers
 - When enabled, uses MD5 checksums instead of the newer CRC-based checksums
 
-## Related PRs
+## References
 
+### Documentation
+- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
+- [PR #19220](https://github.com/opensearch-project/OpenSearch/pull/19220): Fix issue with s3-compatible repositories due to missing checksum trailing headers (v3.3.0)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19788](https://github.com/opensearch-project/OpenSearch/pull/19788) | Add S3Repository.LEGACY_MD5_CHECKSUM_CALCULATION to list of repository-s3 settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18240](https://github.com/opensearch-project/OpenSearch/issues/18240): Snapshot repositories don't work with S3 compatible storage in 3.0.0
-- [PR #19220](https://github.com/opensearch-project/OpenSearch/pull/19220): Fix issue with s3-compatible repositories due to missing checksum trailing headers (v3.3.0)
-- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
 
 ## Related Feature Report
 

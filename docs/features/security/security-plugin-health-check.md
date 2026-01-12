@@ -108,17 +108,19 @@ The health check endpoint is designed for use with load balancers:
 - Does not validate connectivity to external authentication backends (LDAP, SAML, etc.)
 - In lenient mode, always reports `UP` regardless of actual initialization state
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Added PrivilegesEvaluator (AuthZ) initialization check to health API. Previously only checked BackendRegistry (AuthN) initialization.
+
+## References
+
+### Documentation
+- [Security API Documentation](https://docs.opensearch.org/3.0/security/access-control/api/): Official API docs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#5626](https://github.com/opensearch-project/security/pull/5626) | Add AuthZ initialization completion check |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5603](https://github.com/opensearch-project/security/issues/5603): Security Initialization Issues
-- [Security API Documentation](https://docs.opensearch.org/3.0/security/access-control/api/): Official API docs
-
-## Change History
-
-- **v3.3.0**: Added PrivilegesEvaluator (AuthZ) initialization check to health API. Previously only checked BackendRegistry (AuthN) initialization.

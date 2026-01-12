@@ -128,8 +128,12 @@ source=data | appendpipe [stats avg(value) as avg_value]
 - `dedup` pushdown does not support script expressions
 - `streamstats` with `global=true + window + group` uses correlated joins which may impact performance on large datasets
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4579](https://github.com/opensearch-project/sql/pull/4579) | Support `chart` command in PPL |
@@ -145,8 +149,7 @@ source=data | appendpipe [stats avg(value) as avg_value]
 | [#4696](https://github.com/opensearch-project/sql/pull/4696) | Support `usenull` option in PPL `top` and `rare` commands |
 | [#4707](https://github.com/opensearch-project/sql/pull/4707) | Pushdown `top`/`rare` commands to nested aggregation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #399](https://github.com/opensearch-project/sql/issues/399): chart command feature request
 - [Issue #4207](https://github.com/opensearch-project/sql/issues/4207): streamstats command feature request
 - [Issue #4348](https://github.com/opensearch-project/sql/issues/4348): multisearch command feature request
@@ -157,7 +160,6 @@ source=data | appendpipe [stats avg(value) as avg_value]
 - [Issue #4801](https://github.com/opensearch-project/sql/issues/4801): bucket_nullable for eventstats
 - [Issue #4802](https://github.com/opensearch-project/sql/issues/4802): bucket_nullable for streamstats
 - [Issue #4811](https://github.com/opensearch-project/sql/issues/4811): redundant filter optimization
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL documentation
 
 ## Related Feature Report
 

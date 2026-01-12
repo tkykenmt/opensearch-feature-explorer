@@ -71,17 +71,19 @@ PUT _cluster/settings
 - The fix is included in v2.18.0 and later versions
 - Clusters running earlier versions should avoid setting `cancellation_burst` to non-default values
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
+- [Forum Post](https://forum.opensearch.org/t/unable-to-start-opensearch-loop-failed-to-apply-settings-and-rate-must-be-greater-than-zero/20908): Original bug report
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15495](https://github.com/opensearch-project/OpenSearch/issues/15495): [BUG] Updating some search backpressure settings crash the cluster
-- [Forum Post](https://forum.opensearch.org/t/unable-to-start-opensearch-loop-failed-to-apply-settings-and-rate-must-be-greater-than-zero/20908): Original bug report
-- [Search Backpressure Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
 
 ## Related Feature Report
 

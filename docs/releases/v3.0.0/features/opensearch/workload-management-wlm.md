@@ -102,18 +102,20 @@ If you have existing scripts or applications using the WLM API:
 - The renaming is a breaking change for API consumers using the old endpoints
 - Scroll API tracking requires the workload-management plugin to be installed
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Workload Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16981](https://github.com/opensearch-project/OpenSearch/pull/16981) | Add WLM support for search scroll API |
 | [#17901](https://github.com/opensearch-project/OpenSearch/pull/17901) | Rename QueryGroup to WorkloadGroup |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16874](https://github.com/opensearch-project/OpenSearch/issues/16874): Bug report for QueryGroupTask warning in 2.18
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Workload Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
 
 ## Related Feature Report
 

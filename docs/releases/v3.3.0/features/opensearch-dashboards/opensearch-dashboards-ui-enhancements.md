@@ -83,21 +83,16 @@ No migration required. These are additive UI enhancements.
 - Batch delete processes workspaces serially to avoid conflicts, which may be slower for large batches
 - Patterns error page requires a valid query to display the attempted pattern
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Documentation](https://docs.opensearch.org/3.0/dashboards/): Official documentation
+- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Workspace feature documentation
+- [Manage Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/manage-workspace/): Workspace management guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10516](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10516) | Add "Show Raw Data" toggle for non-table visualizations |
 | [#10540](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10540) | Custom patterns error page and query error handling |
 | [#9781](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9781) | Add batch delete method for workspaces, fix deletion error |
-
-## References
-
-- [OpenSearch Dashboards Documentation](https://docs.opensearch.org/3.0/dashboards/): Official documentation
-- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Workspace feature documentation
-- [Manage Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/manage-workspace/): Workspace management guide
-
-## Related Feature Reports
-
-- [Explore Feature](../../../features/opensearch-dashboards/explore.md)
-- [Workspace Feature](../../../features/opensearch-dashboards/workspace.md)

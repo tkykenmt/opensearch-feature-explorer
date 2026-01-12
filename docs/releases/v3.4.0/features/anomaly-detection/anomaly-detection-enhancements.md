@@ -128,20 +128,20 @@ graph TB
 - Conditional resource sharing requires Security plugin with Resource Access Control Framework support
 - Client API methods require proper NamedWriteableRegistry configuration for cross-plugin serialization
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
+- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
+- [Resource Access Control Framework](../../../features/security/resource-access-control-framework.md): Resource sharing documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [anomaly-detection#1569](https://github.com/opensearch-project/anomaly-detection/pull/1569) | Adds capability to automatically switch to old access-control if model-group is excluded from protected resources setting |
 | [anomaly-detection#1605](https://github.com/opensearch-project/anomaly-detection/pull/1605) | Adding suggest and validate transport actions to node client |
 | [anomaly-detection#1602](https://github.com/opensearch-project/anomaly-detection/pull/1602) | Adding auto create as an optional field on detectors |
 | [security#5754](https://github.com/opensearch-project/security/pull/5754) | Add suggest api to ad read access role |
-
-## References
-
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
-- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
-- [Resource Access Control Framework](../../../features/security/resource-access-control-framework.md): Resource sharing documentation
 
 ## Related Feature Report
 

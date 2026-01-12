@@ -107,8 +107,12 @@ source=index | eval result = mvdedup(array(1, 2, 2, 3, 1, 4))
 - `tostring` format argument only applies to numeric values
 - These functions are available in the Calcite-based PPL engine
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4438](https://github.com/opensearch-project/sql/pull/4438) | Add `mvappend` function for Calcite PPL |
@@ -117,13 +121,11 @@ source=index | eval result = mvdedup(array(1, 2, 2, 3, 1, 4))
 | [#4794](https://github.com/opensearch-project/sql/pull/4794) | Support `mvindex` eval function |
 | [#4828](https://github.com/opensearch-project/sql/pull/4828) | Support `mvdedup` eval function |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4492](https://github.com/opensearch-project/sql/issues/4492): tostring implementation request
 - [Issue #4433](https://github.com/opensearch-project/sql/issues/4433): mvappend function request
 - [Issue #4764](https://github.com/opensearch-project/sql/issues/4764): regexp_replace alias request
 - [RFC #4287](https://github.com/opensearch-project/sql/issues/4287): tostring function RFC
-- [OpenSearch PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
 
 ## Related Feature Report
 

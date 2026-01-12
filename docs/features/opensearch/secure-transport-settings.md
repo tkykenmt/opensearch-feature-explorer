@@ -180,24 +180,26 @@ http.type: reactor-netty4-secure
 - Dynamic updates only affect new connections; existing connections are not affected
 - The `SecureHttpTransportParameters` default implementation returns empty values, requiring plugins to provide actual configuration
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface to `SecureHttpTransportSettingsProvider` for cleaner SSL configuration in Reactor Netty 4 HTTP transport
+- **v2.18.0** (2024-10-29): Added `parameters()` method and `SecureTransportParameters` interface to support dynamic SSL dual mode settings
+
+## References
+
+### Documentation
+- [Network Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration documentation
+- [TLS Configuration](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS documentation
+- [PR #18572](https://github.com/opensearch-project/OpenSearch/pull/18572): SecureHttpTransportParameters implementation
+- [PR #16387](https://github.com/opensearch-project/OpenSearch/pull/16387): SecureTransportParameters implementation
+- [Security PR #4820](https://github.com/opensearch-project/security/pull/4820): Security plugin implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18572](https://github.com/opensearch-project/OpenSearch/pull/18572) | Introduce SecureHttpTransportParameters experimental API |
 | v2.18.0 | [#16387](https://github.com/opensearch-project/OpenSearch/pull/16387) | Add method to return dynamic SecureTransportParameters |
 | v2.18.0 | [#4820](https://github.com/opensearch-project/security/pull/4820) | Security plugin: propagate dual mode from cluster settings |
 
-## References
-
-- [PR #18572](https://github.com/opensearch-project/OpenSearch/pull/18572): SecureHttpTransportParameters implementation
-- [PR #16387](https://github.com/opensearch-project/OpenSearch/pull/16387): SecureTransportParameters implementation
+### Issues (Design / RFC)
 - [Issue #18559](https://github.com/opensearch-project/OpenSearch/issues/18559): HTTP/2 communication bug with reactor-netty
-- [Security PR #4820](https://github.com/opensearch-project/security/pull/4820): Security plugin implementation
-- [Network Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration documentation
-- [TLS Configuration](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS documentation
-
-## Change History
-
-- **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface to `SecureHttpTransportSettingsProvider` for cleaner SSL configuration in Reactor Netty 4 HTTP transport
-- **v2.18.0** (2024-10-29): Added `parameters()` method and `SecureTransportParameters` interface to support dynamic SSL dual mode settings

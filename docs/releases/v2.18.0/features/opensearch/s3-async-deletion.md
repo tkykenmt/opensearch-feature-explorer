@@ -88,16 +88,16 @@ PUT _cluster/settings
 - The feature requires the S3 async client to be properly configured
 - Batch size for deletions is controlled by the existing `bulk_deletes_size` setting
 
-## Related PRs
+## References
 
+### Documentation
+- [Snapshot Management](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/): OpenSearch snapshot documentation
+- [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Main implementation PR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15621](https://github.com/opensearch-project/OpenSearch/pull/15621) | Add support for async deletion in S3BlobContainer |
-
-## References
-
-- [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Main implementation PR
-- [Snapshot Management](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/): OpenSearch snapshot documentation
 
 ## Related Feature Report
 

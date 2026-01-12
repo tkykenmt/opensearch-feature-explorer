@@ -75,20 +75,22 @@ GET /_nodes?filter_path=nodes.*.version
 - Indices created with Lucene 10.3 cannot be read by older OpenSearch versions
 - Some deprecated Lucene APIs have been removed
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene 10.3.0 Changelog](https://lucene.apache.org/core/10_3_0/changes/Changes.html): Official Lucene 10.3.0 release notes
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#19296](https://github.com/opensearch-project/OpenSearch/pull/19296) | OpenSearch | Bump Apache Lucene from 10.2.2 to 10.3.0 |
 | [#2878](https://github.com/opensearch-project/k-NN/pull/2878) | k-NN | Fix KNN build due to Lucene 10.3 upgrade |
 | [#277](https://github.com/opensearch-project/custom-codecs/pull/277) | custom-codecs | Update for Lucene 10.3 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18638](https://github.com/opensearch-project/OpenSearch/issues/18638): Feature request for Lucene 10.3 upgrade
 - [Issue #2888](https://github.com/opensearch-project/k-NN/issues/2888): Fix KNN build after Lucene 10.3 upgrade
 - [Issue #276](https://github.com/opensearch-project/custom-codecs/issues/276): Distribution build failed for custom-codecs-3.3.0
-- [Lucene 10.3.0 Changelog](https://lucene.apache.org/core/10_3_0/changes/Changes.html): Official Lucene 10.3.0 release notes
 
 ## Related Feature Report
 

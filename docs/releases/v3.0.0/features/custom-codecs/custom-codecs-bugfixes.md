@@ -126,21 +126,21 @@ apply plugin: 'opensearch.java-agent'
 - Backward compatibility codecs are read-only; new segments use Lucene 10.1.0 codecs
 - QAT-accelerated ZSTD (`qat_zstd`) not yet available despite library support
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official documentation
+- [Custom Codecs Repository](https://github.com/opensearch-project/custom-codecs): Source code
+- [OpenSearch PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Java Agent Gradle plugin in core OpenSearch
+- [zstd-jni 1.5.6-1 Release](https://github.com/luben/zstd-jni/releases/tag/v1.5.6-1): ZSTD library release notes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#228](https://github.com/opensearch-project/custom-codecs/pull/228) | Upgrade to Lucene 10.1.0 and introduce new Codec implementation |
 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZSTD lib version to 1.5.6-1 |
 | [#235](https://github.com/opensearch-project/custom-codecs/pull/235) | Fix build due to phasing off SecurityManager in favor of Java Agent |
 | [#237](https://github.com/opensearch-project/custom-codecs/pull/237) | Add java agent plugin (replaces manual configuration) |
-
-## References
-
-- [Custom Codecs Repository](https://github.com/opensearch-project/custom-codecs): Source code
-- [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official documentation
-- [OpenSearch PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Java Agent Gradle plugin in core OpenSearch
-- [zstd-jni 1.5.6-1 Release](https://github.com/luben/zstd-jni/releases/tag/v1.5.6-1): ZSTD library release notes
 
 ## Related Feature Report
 

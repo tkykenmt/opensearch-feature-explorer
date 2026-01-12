@@ -130,8 +130,14 @@ POST _plugins/_ml/agents/_register
 - Multi-modal embedding requires images in Base64 format
 - Language identification model supports limited languages based on the underlying model
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons Connector Blueprints](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
+- [ML Inference Processor](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ml-inference/)
+- [OpenSearch Tutorials](https://docs.opensearch.org/3.0/tutorials/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3576](https://github.com/opensearch-project/ml-commons/pull/3576) | Add multi modal tutorial using ml inference processor |
@@ -141,12 +147,6 @@ POST _plugins/_ml/agents/_register
 | [#3980](https://github.com/opensearch-project/ml-commons/pull/3980) | Update link to the model in the aleph alpha blueprint |
 | [#4045](https://github.com/opensearch-project/ml-commons/pull/4045) | Add agentic rag tutorial |
 | [#3944](https://github.com/opensearch-project/ml-commons/pull/3944) | Notebook for step by step in multi-modal search in ml-inference processor |
-
-## References
-
-- [ML Commons Connector Blueprints](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
-- [ML Inference Processor](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ml-inference/)
-- [OpenSearch Tutorials](https://docs.opensearch.org/3.0/tutorials/)
 
 ## Related Feature Report
 

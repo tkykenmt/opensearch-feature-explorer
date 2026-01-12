@@ -44,17 +44,19 @@ No migration steps required. The dependency updates are backward compatible.
 - These are development/build-time dependency updates
 - The JSON11 fix specifically addresses UTF-8 encoding issues in JSON stringification
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Forum Discussion](https://forum.opensearch.org/t/json-parse-bad-escaped-character/20211): Community report of the issue
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8603) | Upgrade JSON11 from 1.1.2 to 2.0.0 to ensure UTF-8 safety |
 | [#8490](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8490) | Bump chokidar from 3.5.3 to 3.6.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7367](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7367): JSON.parse: bad escaped character bug report
-- [OpenSearch Forum Discussion](https://forum.opensearch.org/t/json-parse-bad-escaped-character/20211): Community report of the issue
 
 ## Related Feature Report
 

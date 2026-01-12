@@ -84,17 +84,19 @@ To reproduce the fixed behavior:
 - These fixes are specific to the dashboard visualization workflow
 - The location state preservation fix is particularly relevant when `storeInSessionStorage` is enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #8164](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8164): Original PR that introduced the location state handling
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9072](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9072) | Preserve location state at dashboard app startup to fix adding a new visualization |
 | [#8530](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8530) | Encode searchId as it tends to be decoded after adds into url |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7204](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7204): Original bug report for "Add to Dashboards after saving" not working
-- [PR #8164](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8164): Original PR that introduced the location state handling
 
 ## Related Feature Report
 

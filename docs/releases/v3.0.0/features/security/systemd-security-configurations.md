@@ -144,19 +144,23 @@ grep Seccomp /proc/$(systemctl show --property=MainPID opensearch | cut -d= -f2)
 - Custom data paths require manual configuration in systemd overrides
 - Some monitoring tools may require additional capabilities
 
-## Related PRs
+## References
 
+### Documentation
+- [systemd.exec documentation](https://www.freedesktop.org/software/systemd/man/systemd.exec.html)
+
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17107](https://github.com/opensearch-project/security/pull/17107) | Add systemd configurations to strengthen OS core security |
 | [#17410](https://github.com/opensearch-project/OpenSearch/pull/17410) | Added integ tests for systemd configs |
 | [#17641](https://github.com/opensearch-project/OpenSearch/pull/17641) | Fix systemd integTest on deb regarding path ownership check |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17614](https://github.com/opensearch-project/OpenSearch/issues/17614): Bug fix for deb package ownership check
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
-- [systemd.exec documentation](https://www.freedesktop.org/software/systemd/man/systemd.exec.html)
 
 ## Related Feature Report
 

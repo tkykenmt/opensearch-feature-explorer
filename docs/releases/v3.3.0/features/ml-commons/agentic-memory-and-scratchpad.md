@@ -147,8 +147,16 @@ POST _plugins/_ml/agents/_register
 - Long-term memory extraction is asynchronous; design for eventual consistency
 - PII is excluded from long-term memory records by default
 
-## Related PRs
+## References
 
+### Documentation
+- [Agentic Memory APIs Documentation](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_apis.md)
+- [Agentic Memory Tutorial](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_tutorial.md)
+
+### Blog Posts
+- [OpenSearch as an Agentic Memory Solution Blog](https://opensearch.org/blog/opensearch-as-an-agentic-memory-solution-building-context-aware-agents-using-persistent-memory/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4192](https://github.com/opensearch-project/ml-commons/pull/4192) | Add WriteToScratchPad and ReadFromScratchPad tools |
@@ -160,11 +168,7 @@ POST _plugins/_ml/agents/_register
 | [#4282](https://github.com/opensearch-project/ml-commons/pull/4282) | Improve semantic fact extraction prompt and add JSON enforcement |
 | [#4288](https://github.com/opensearch-project/ml-commons/pull/4288) | Improve user preference extraction prompt with XML-based structure |
 
-## References
-
-- [Agentic Memory APIs Documentation](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_apis.md)
-- [Agentic Memory Tutorial](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_tutorial.md)
-- [OpenSearch as an Agentic Memory Solution Blog](https://opensearch.org/blog/opensearch-as-an-agentic-memory-solution-building-context-aware-agents-using-persistent-memory/)
+### Issues (Design / RFC)
 - [Issue #4239](https://github.com/opensearch-project/ml-commons/issues/4239): Related feature request
 - [Issue #4193](https://github.com/opensearch-project/ml-commons/issues/4193): Add updated time to message request
 

@@ -103,17 +103,19 @@ No migration required. This is a bugfix that improves reliability of searchable 
 - File cache validation may be less accurate when shard size information is unavailable
 - The warning log indicates validation is proceeding with incomplete data
 
-## Related PRs
+## References
 
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/): Official documentation
+- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19684](https://github.com/opensearch-project/OpenSearch/pull/19684) | Fix NPE in validateSearchableSnapshotRestorable when shard size is unavailable |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19349](https://github.com/opensearch-project/OpenSearch/issues/19349): Bug report for NullPointerException when creating remote index from snapshot
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/): Official documentation
-- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): API reference
 
 ## Related Feature Report
 

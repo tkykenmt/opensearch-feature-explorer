@@ -96,16 +96,18 @@ No migration required. This is a bug fix that automatically takes effect when up
 - The fix applies only to indices using the `store-subdirectory` module
 - Files that become inaccessible during size estimation are skipped with a debug log
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #19132](https://github.com/opensearch-project/OpenSearch/pull/19132): Original store-subdirectory module implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19470](https://github.com/opensearch-project/OpenSearch/pull/19470) | Fix stats API of SubdirectoryAwareStore |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19468](https://github.com/opensearch-project/OpenSearch/issues/19468): Bug report for incorrect stats API values
-- [PR #19132](https://github.com/opensearch-project/OpenSearch/pull/19132): Original store-subdirectory module implementation
 
 ## Related Feature Report
 

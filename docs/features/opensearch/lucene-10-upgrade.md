@@ -93,20 +93,24 @@ curl -X GET "localhost:9200"
 - `german2` stemmer merged into `german` stemmer
 - Plugins using Lucene APIs directly may require updates
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Upgraded from Lucene 9.12.1 to Lucene 10.1.0
+
+## References
+
+### Documentation
+- [Lucene 10.0.0 Release Notes](https://cwiki.apache.org/confluence/display/LUCENE/Release+Notes+10.0.0): Official release notes
+- [Lucene 10 Changelog](https://lucene.apache.org/core/10_0_0/changes/Changes.html#v10.0.0): Detailed changes
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Overview of 3.0 features
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 for 3.0.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11415](https://github.com/opensearch-project/OpenSearch/issues/11415): Original feature request
-- [Lucene 10.0.0 Release Notes](https://cwiki.apache.org/confluence/display/LUCENE/Release+Notes+10.0.0): Official release notes
-- [Lucene 10 Changelog](https://lucene.apache.org/core/10_0_0/changes/Changes.html#v10.0.0): Detailed changes
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Overview of 3.0 features
 - [JDK 21 Dependency](https://github.com/opensearch-project/OpenSearch/issues/14011): JDK 21 requirement tracking
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Upgraded from Lucene 9.12.1 to Lucene 10.1.0

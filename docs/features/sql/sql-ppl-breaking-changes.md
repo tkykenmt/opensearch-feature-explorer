@@ -105,8 +105,23 @@ POST /_plugins/_sql
 - Nested field queries have specific syntax requirements
 - Calcite engine migration is ongoing; some functions may behave differently
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Major breaking changes - removed SparkSQL, DELETE statement, DSL format, scroll API, opendistro settings/endpoints; added Calcite-based functions, unified PPL data types, and documentation for V3 engine with new commands (join, lookup, subquery)
+
+## References
+
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official SQL/PPL documentation
+- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): v3.0.0 breaking changes
+- [PPL V3 Engine Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 engine limitations
+- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands (join, lookup, subsearch)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support |
@@ -118,16 +133,3 @@ POST /_plugins/_sql
 | v3.0.0 | [#3439](https://github.com/opensearch-project/sql/pull/3439) | Support CAST function with Calcite |
 | v3.0.0 | [#3473](https://github.com/opensearch-project/sql/pull/3473) | Add datetime functions |
 | v3.0.0 | [#3488](https://github.com/opensearch-project/sql/pull/3488) | Documentation for PPL V3 engine and limitations |
-
-## References
-
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official SQL/PPL documentation
-- [Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/): v3.0.0 breaking changes
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
-- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
-- [PPL V3 Engine Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 engine limitations
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands (join, lookup, subsearch)
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Major breaking changes - removed SparkSQL, DELETE statement, DSL format, scroll API, opendistro settings/endpoints; added Calcite-based functions, unified PPL data types, and documentation for V3 engine with new commands (join, lookup, subquery)

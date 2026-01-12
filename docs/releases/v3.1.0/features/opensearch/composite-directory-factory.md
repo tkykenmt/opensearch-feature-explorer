@@ -106,18 +106,20 @@ PUT /my-warm-index
 - Hot indices do not yet support composite directories
 - The `CompositeDirectory` class fields were changed from private to protected to enable extension
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote-backed storage documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/remote-store/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17988](https://github.com/opensearch-project/OpenSearch/pull/17988) | Add composite directory factory |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17982](https://github.com/opensearch-project/OpenSearch/issues/17982): Need for Composite Directory Factory
 - [Issue #12809](https://github.com/opensearch-project/OpenSearch/issues/12809): Writable Warm feature
 - [Issue #12781](https://github.com/opensearch-project/OpenSearch/issues/12781): Composite Directory
-- [Remote-backed storage documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/remote-store/index/)
 
 ## Related Feature Report
 

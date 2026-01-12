@@ -163,8 +163,25 @@ opensearch_security.multitenancy.enabled: false
 - Global search bar does not yet support searching saved objects
 - Collaborator types must be registered during plugin setup phase
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-02-18): Removed restriction requiring data source selection during workspace creation; workspaces can now be created without associated data sources
+- **v3.3.0** (2026-01-14): Added batch delete method for workspaces with improved error handling and detailed success/failure notifications
+- **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
+- **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements
+
+## References
+
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace feature documentation
+- [Getting Started with Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/index/): Introduction to workspaces
+- [Create a Workspace](https://docs.opensearch.org/3.0/dashboards/workspace/create-workspace/): How to create workspaces
+- [Manage Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/manage-workspace/): Workspace management guide
+- [Workspace ACLs](https://docs.opensearch.org/3.0/dashboards/workspace/workspace-acl/): Access control documentation
+- [Workspaces APIs](https://docs.opensearch.org/3.0/dashboards/workspace/apis/): API reference
+- [v2.18 Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): v2.18 workspace documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10861](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10861) | Remove restriction that workspace cannot be created without datasource |
@@ -195,20 +212,3 @@ opensearch_security.multitenancy.enabled: false
 | v2.18.0 | [#8675](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8675) | Fix non-workspace admin defaultIndex update |
 | v2.18.0 | [#8718](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8718) | Fix index pattern issues |
 | v2.18.0 | [#8719](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8719) | Generate short URL with workspace info |
-
-## References
-
-- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace feature documentation
-- [Getting Started with Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/index/): Introduction to workspaces
-- [Create a Workspace](https://docs.opensearch.org/3.0/dashboards/workspace/create-workspace/): How to create workspaces
-- [Manage Workspaces](https://docs.opensearch.org/3.0/dashboards/workspace/manage-workspace/): Workspace management guide
-- [Workspace ACLs](https://docs.opensearch.org/3.0/dashboards/workspace/workspace-acl/): Access control documentation
-- [Workspaces APIs](https://docs.opensearch.org/3.0/dashboards/workspace/apis/): API reference
-- [v2.18 Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): v2.18 workspace documentation
-
-## Change History
-
-- **v3.4.0** (2026-02-18): Removed restriction requiring data source selection during workspace creation; workspaces can now be created without associated data sources
-- **v3.3.0** (2026-01-14): Added batch delete method for workspaces with improved error handling and detailed success/failure notifications
-- **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
-- **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements

@@ -75,8 +75,9 @@ for (let i = 0; i < 3; i++) {
 - Retry logic adds up to 3 seconds delay per failed deletion attempt
 - Windows long path support requires the `@osd/cross-platform` package
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9366](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9366) | Update actions/cache from v1 to v4 |
@@ -84,8 +85,7 @@ for (let i = 0; i < 3; i++) {
 | [#9581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9581) | Fix permissions for bundler performance testing CI |
 | [#9561](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9561) | Retry on file/folder deletion with Windows longpath support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9397](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9397): Windows build failure discussion
 - [Issue #3747](https://github.com/opensearch-project/opensearch-build/issues/3747): opensearch-build Windows issue
 

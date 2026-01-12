@@ -142,16 +142,18 @@ This plugin is intended for local testing only. For production use cases, contin
 - Files must exist before index creation (missing files result in empty index)
 - One-to-one mapping between shards and files
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18591](https://github.com/opensearch-project/OpenSearch/pull/18591) | Introduce ingestion-fs plugin for file-based indexing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18590](https://github.com/opensearch-project/OpenSearch/issues/18590): Feature request for file-based ingestion plugin
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
 - [META Issue #16930](https://github.com/opensearch-project/OpenSearch/issues/16930): Pull-based ingestion tracking issue
 
 ## Related Feature Report

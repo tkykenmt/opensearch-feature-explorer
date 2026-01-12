@@ -224,23 +224,27 @@ PUT /_plugins/_security/api/resource/share
 - The feature requires the Security plugin to be enabled
 - Resource sharing is experimental and disabled by default (v3.4.0+)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Integration with centralized Resource Sharing and Access Control framework
+- **v2.17.0** (2024-09-17): Initial implementation of user-level access control based on backend roles
+
+## References
+
+### Documentation
+- [Workflow Security Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/): Official documentation
+- [Access Control Documentation](https://docs.opensearch.org/3.0/security/access-control/index/): OpenSearch access control concepts
+
+### Blog Posts
+- [Resource Sharing Blog](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Introducing resource sharing
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#1251](https://github.com/opensearch-project/flow-framework/pull/1251) | Onboard to resource-sharing and access control framework |
 | v2.17.0 | [#838](https://github.com/opensearch-project/flow-framework/pull/838) | Initial implementation of backend role-based access control |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1250](https://github.com/opensearch-project/flow-framework/issues/1250): Request to onboard to centralized authz framework
 - [Issue #668](https://github.com/opensearch-project/flow-framework/issues/668): Original feature request
 - [Security Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing design
-- [Resource Sharing Blog](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Introducing resource sharing
-- [Workflow Security Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/): Official documentation
-- [Access Control Documentation](https://docs.opensearch.org/3.0/security/access-control/index/): OpenSearch access control concepts
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Integration with centralized Resource Sharing and Access Control framework
-- **v2.17.0** (2024-09-17): Initial implementation of user-level access control based on backend roles

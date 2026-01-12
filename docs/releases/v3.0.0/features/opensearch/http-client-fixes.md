@@ -110,8 +110,12 @@ These are bug fixes with no breaking changes. Users upgrading from earlier versi
 - HTTP/2 support still requires explicit configuration
 - The memory fix applies only to `HeapBufferedAsyncEntityConsumer`; custom entity consumers may need similar updates
 
-## Related PRs
+## References
 
+### Documentation
+- [HTTPCLIENT-2219](https://issues.apache.org/jira/browse/HTTPCLIENT-2219): Apache HttpClient JDK 16+ issue
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4827](https://github.com/opensearch-project/OpenSearch/pull/4827) | Fix 'org.apache.hc.core5.http.ParseException: Invalid protocol version' under JDK 16+ |
@@ -119,11 +123,9 @@ These are bug fixes with no breaking changes. Users upgrading from earlier versi
 | [#9993](https://github.com/opensearch-project/OpenSearch/pull/9993) | Don't over-allocate in HeapBufferedAsyncEntityConsumer |
 | [#17248](https://github.com/opensearch-project/OpenSearch/pull/17248) | Add HTTP/2 protocol support to HttpRequest.HttpVersion |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9866](https://github.com/opensearch-project/OpenSearch/issues/9866): Performance regression report (memory over-allocation)
 - [Issue opensearch-go#163](https://github.com/opensearch-project/opensearch-go/issues/163): H2C compression bug report
-- [HTTPCLIENT-2219](https://issues.apache.org/jira/browse/HTTPCLIENT-2219): Apache HttpClient JDK 16+ issue
 
 ## Related Feature Report
 

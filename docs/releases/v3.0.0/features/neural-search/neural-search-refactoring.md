@@ -97,17 +97,19 @@ This is an internal refactoring with no user-facing API changes. Existing neural
 - This refactoring is a foundation for future features (semantic highlighting) and does not add new user-facing functionality in this release
 - The original query text preservation is currently internal and not exposed through public APIs
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural/): Official neural query docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1183](https://github.com/opensearch-project/neural-search/pull/1183) | Encapsulate KNNQueryBuilder creation within NeuralKNNQueryBuilder |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1182](https://github.com/opensearch-project/neural-search/issues/1182): Semantic Highlighter Project Tasks Tracker
 - [Issue #1175](https://github.com/opensearch-project/neural-search/issues/1175): RFC - OpenSearch Semantic Sentence Highlighting
-- [Neural Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural/): Official neural query docs
 
 ## Related Feature Report
 

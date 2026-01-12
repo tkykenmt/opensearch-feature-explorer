@@ -69,15 +69,15 @@ No migration required. The change is backward compatible with existing configura
 - The text-to-visualization feature still requires the assistant capability to be enabled for full functionality
 - When assistant is disabled, saved NLQ visualizations cannot be rendered even though the alias is registered
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/text-to-visualization/): Text to visualization documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#589](https://github.com/opensearch-project/dashboards-assistant/pull/589) | Update dashboards-assistant for new dashboard ingress support |
-
-## References
-
-- [Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/text-to-visualization/): Text to visualization documentation
 
 ## Related Feature Report
 

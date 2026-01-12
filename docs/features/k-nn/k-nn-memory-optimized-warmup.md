@@ -143,19 +143,21 @@ GET /_tasks?actions=*warmup*
 - The warmup operation is idempotent but may need to be re-run after index changes
 - Does not apply to indexes using the Lucene or nmslib engines
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#2954](https://github.com/opensearch-project/k-NN/pull/2954) | Memory optimized search warmup |
+- **v3.4.0** (2026-01-11): Initial implementation of memory-optimized search warmup optimization
 
 ## References
 
-- [Issue #2939](https://github.com/opensearch-project/k-NN/issues/2939): Original feature request for indirect loading Faiss index in warmup API
+### Documentation
 - [k-NN Warmup API Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/#warmup-operation)
 - [Memory-optimized vectors Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
 - [Disk-based vector search](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/disk-based-vector-search/)
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#2954](https://github.com/opensearch-project/k-NN/pull/2954) | Memory optimized search warmup |
 
-- **v3.4.0** (2026-01-11): Initial implementation of memory-optimized search warmup optimization
+### Issues (Design / RFC)
+- [Issue #2939](https://github.com/opensearch-project/k-NN/issues/2939): Original feature request for indirect loading Faiss index in warmup API

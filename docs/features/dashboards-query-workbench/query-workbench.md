@@ -107,8 +107,21 @@ source=orders
 - External data source queries require additional Spark configuration
 - Large result sets may impact browser performance
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-02-25): Maintenance updates including dependency bumps (glob-parent, @babel/helpers, @babel/runtime), CI/CD improvements (actions/cache v4), and Cypress test enhancements
+- **v2.18.0** (2024-11-12): Bug fixes for modal mounting support and MDS error handling
+- **v2.17.0** (2024-09-17): UI improvements with smaller and compressed button/form variants for better consistency
+
+## References
+
+### Documentation
+- [Query Workbench Documentation](https://docs.opensearch.org/latest/dashboards/query-workbench/)
+- [SQL Plugin Documentation](https://docs.opensearch.org/latest/search-plugins/sql/index/)
+- [PPL Documentation](https://docs.opensearch.org/latest/search-plugins/sql/ppl/index/)
+- [Scheduled Query Acceleration](https://docs.opensearch.org/latest/dashboards/management/scheduled-query-acceleration/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#130](https://github.com/opensearch-project/dashboards-query-workbench/pull/130) | Update packages and tsconfig |
@@ -117,16 +130,3 @@ source=orders
 | v2.18.0 | [#401](https://github.com/opensearch-project/dashboards-query-workbench/pull/401) | Fix workbench routes to support modal mounting |
 | v2.18.0 | [#408](https://github.com/opensearch-project/dashboards-query-workbench/pull/408) | Added error handling for API calls |
 | v2.17.0 | [#370](https://github.com/opensearch-project/dashboards-query-workbench/pull/370) | Use smaller and compressed variants of buttons and form components |
-
-## References
-
-- [Query Workbench Documentation](https://docs.opensearch.org/latest/dashboards/query-workbench/)
-- [SQL Plugin Documentation](https://docs.opensearch.org/latest/search-plugins/sql/index/)
-- [PPL Documentation](https://docs.opensearch.org/latest/search-plugins/sql/ppl/index/)
-- [Scheduled Query Acceleration](https://docs.opensearch.org/latest/dashboards/management/scheduled-query-acceleration/)
-
-## Change History
-
-- **v3.0.0** (2025-02-25): Maintenance updates including dependency bumps (glob-parent, @babel/helpers, @babel/runtime), CI/CD improvements (actions/cache v4), and Cypress test enhancements
-- **v2.18.0** (2024-11-12): Bug fixes for modal mounting support and MDS error handling
-- **v2.17.0** (2024-09-17): UI improvements with smaller and compressed button/form variants for better consistency

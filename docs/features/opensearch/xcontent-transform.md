@@ -190,18 +190,20 @@ List<Map<String, Object>> results = documents.stream()
 - Transformer functions must handle null values if fields may be null
 - In-place mode modifies the original map; use with caution
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-03-20): Initial implementation for k-NN derived source support
+
+## References
+
+### Documentation
+- [XContentMapValues.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/common/xcontent/support/XContentMapValues.java): Core implementation
+- [XContent Filtering](xcontent-filtering.md): Related filtering functionality
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17612](https://github.com/opensearch-project/OpenSearch/pull/17612) | Add dfs transformation function in XContentMapValues |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): RFC - Derived Source for Vectors (motivation)
-- [XContentMapValues.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/common/xcontent/support/XContentMapValues.java): Core implementation
-- [XContent Filtering](xcontent-filtering.md): Related filtering functionality
-
-## Change History
-
-- **v3.0.0** (2025-03-20): Initial implementation for k-NN derived source support

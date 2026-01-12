@@ -72,16 +72,18 @@ When setting up bidirectional Cross-Cluster Replication:
 - Does not affect existing aliases in the target cluster
 - Cannot selectively apply policy to specific aliases (applies to all)
 
-## Related PRs
+## References
 
+### Documentation
+- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19368](https://github.com/opensearch-project/OpenSearch/pull/19368) | Enable Safe Bidirectional CCR via Alias policy on Restore |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16139](https://github.com/opensearch-project/OpenSearch/issues/16139): Unable to restore an index from snapshot that was a write index at the time
-- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): Official documentation
 
 ## Related Feature Report
 

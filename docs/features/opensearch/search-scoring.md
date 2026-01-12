@@ -163,22 +163,24 @@ GET /my-index/_search
 - Ascending score sort does not compute `max_score` (returns `null`)
 - `max_score` reflects only the scores of returned documents, not all matching documents
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07): Fixed max_score null when sorting by _score with secondary fields; Use ScoreDoc for TopScoreDocCollectorManager
+- **v3.1.0** (2025-04): Updated deprecated TopScoreDocCollectorManager construction
+
+## References
+
+### Documentation
+- [Search API Documentation](https://docs.opensearch.org/3.2/api-reference/search-apis/search/): Official search API docs
+- [Sort Results Documentation](https://docs.opensearch.org/3.2/search-plugins/searching-data/sort/): Sorting documentation
+- [Lucene PR #450](https://github.com/apache/lucene/pull/450): Related Lucene API change
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18715](https://github.com/opensearch-project/OpenSearch/pull/18715) | Fix max_score is null when sorting on score firstly |
 | v3.2.0 | [#18802](https://github.com/opensearch-project/OpenSearch/pull/18802) | Use ScoreDoc instead of FieldDoc for TopScoreDocCollectorManager |
 | v3.1.0 | [#18395](https://github.com/opensearch-project/OpenSearch/pull/18395) | Replace deprecated TopScoreDocCollectorManager construction |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18714](https://github.com/opensearch-project/OpenSearch/issues/18714): Bug report for max_score null issue
-- [Search API Documentation](https://docs.opensearch.org/3.2/api-reference/search-apis/search/): Official search API docs
-- [Sort Results Documentation](https://docs.opensearch.org/3.2/search-plugins/searching-data/sort/): Sorting documentation
-- [Lucene PR #450](https://github.com/apache/lucene/pull/450): Related Lucene API change
-
-## Change History
-
-- **v3.2.0** (2025-07): Fixed max_score null when sorting by _score with secondary fields; Use ScoreDoc for TopScoreDocCollectorManager
-- **v3.1.0** (2025-04): Updated deprecated TopScoreDocCollectorManager construction

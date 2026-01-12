@@ -171,8 +171,22 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 - Token limits of LLMs constrain the amount of context that can be processed at once
 - Namespace matching is exact; partial matches are not supported
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10): GA release with ScratchPad tools, session API, refactored architecture, improved fact extraction prompts, and feature enabled by default
+
+## References
+
+### Documentation
+- [Agentic Memory APIs Documentation](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_apis.md)
+- [Memory APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/memory-apis/index/)
+- [Agentic Memory Tutorial](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_tutorial.md)
+- [Agentic Memory with Strands Agent](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_with_strands_agent.md)
+
+### Blog Posts
+- [OpenSearch as an Agentic Memory Solution Blog](https://opensearch.org/blog/opensearch-as-an-agentic-memory-solution-building-context-aware-agents-using-persistent-memory/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4192](https://github.com/opensearch-project/ml-commons/pull/4192) | Add WriteToScratchPad and ReadFromScratchPad tools |
@@ -183,15 +197,3 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 | v3.3.0 | [#4238](https://github.com/opensearch-project/ml-commons/pull/4238) | Add delete_all_memories parameter |
 | v3.3.0 | [#4282](https://github.com/opensearch-project/ml-commons/pull/4282) | Improve semantic fact extraction prompt |
 | v3.3.0 | [#4288](https://github.com/opensearch-project/ml-commons/pull/4288) | Improve user preference extraction prompt |
-
-## References
-
-- [Agentic Memory APIs Documentation](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_apis.md)
-- [Agentic Memory Tutorial](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_tutorial.md)
-- [Agentic Memory with Strands Agent](https://github.com/opensearch-project/ml-commons/blob/main/docs/tutorials/agentic_memory/agentic_memory_with_strands_agent.md)
-- [OpenSearch as an Agentic Memory Solution Blog](https://opensearch.org/blog/opensearch-as-an-agentic-memory-solution-building-context-aware-agents-using-persistent-memory/)
-- [Memory APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/memory-apis/index/)
-
-## Change History
-
-- **v3.3.0** (2025-10): GA release with ScratchPad tools, session API, refactored architecture, improved fact extraction prompts, and feature enabled by default

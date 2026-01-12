@@ -61,17 +61,21 @@ If your application uses locale-specific date parsing with custom formats, you m
 - Applications relying on exact locale-specific string matching may need updates
 - Custom date formats using locale-specific day/month names should be tested
 
-## Related PRs
+## References
 
+### Documentation
+- [JDK-8305402](https://bugs.openjdk.org/browse/JDK-8305402): COMPAT locale provider removal notice
+
+### Blog Posts
+- [Blog: How to start contributing to OpenSearch](https://opensearch.org/blog/how-to-start-contributing-to-opensearch-a-beginners-guide-based-on-my-journey/): Contributor journey including this fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#14345](https://github.com/opensearch-project/OpenSearch/pull/14345) | Changed locale provider from COMPAT to CLDR |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11550](https://github.com/opensearch-project/OpenSearch/issues/11550): COMPAT locale provider deprecation warning
-- [JDK-8305402](https://bugs.openjdk.org/browse/JDK-8305402): COMPAT locale provider removal notice
-- [Blog: How to start contributing to OpenSearch](https://opensearch.org/blog/how-to-start-contributing-to-opensearch-a-beginners-guide-based-on-my-journey/): Contributor journey including this fix
 
 ## Related Feature Report
 

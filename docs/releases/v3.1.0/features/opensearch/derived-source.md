@@ -107,18 +107,22 @@ PUT sample-index
 - Geo point values always output in `{"lat": lat_val, "lon": lon_val}` format
 - Some precision loss may occur for geo point and half_float fields
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Derived source](https://docs.opensearch.org/latest/field-types/metadata-fields/source/#derived-source)
+
+### Blog Posts
+- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17759](https://github.com/opensearch-project/OpenSearch/pull/17759) | Adding support for derive source feature and implementing it for various type of field mappers |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17073](https://github.com/opensearch-project/OpenSearch/issues/17073): Add support for deriving source field in FieldMapper
 - [Issue #9568](https://github.com/opensearch-project/OpenSearch/issues/9568): Optimizing Data Storage and Retrieval for Time Series data
-- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
-- [Documentation: Derived source](https://docs.opensearch.org/latest/field-types/metadata-fields/source/#derived-source)
 
 ## Related Feature Report
 

@@ -89,17 +89,19 @@ Timing types that were never invoked now correctly show `0` instead of large inc
 - This fix only affects concurrent segment search profiling
 - Non-concurrent search profiling was not affected by this bug
 
-## Related PRs
+## References
 
+### Documentation
+- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official documentation
+- [Concurrent Segment Search](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Feature documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18540](https://github.com/opensearch-project/OpenSearch/pull/18540) | Fix concurrent timings in profiler |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18534](https://github.com/opensearch-project/OpenSearch/issues/18534): Bug report - Profile timings incorrect for concurrent segments
-- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official documentation
-- [Concurrent Segment Search](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Feature documentation
 
 ## Related Feature Report
 

@@ -92,17 +92,19 @@ java.lang.NoClassDefFoundError: software/amazon/awssdk/http/auth/aws/scheme/AwsV
 - Only one `CryptoPlugin` implementation is supported at a time
 - The crypto-kms plugin still requires proper AWS credentials configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #17396](https://github.com/opensearch-project/OpenSearch/pull/17396): Previous AWS SDK v2.x migration (missing dependencies)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18270](https://github.com/opensearch-project/OpenSearch/pull/18270) | Decouple the init of Crypto Plugin and KeyProvider in CryptoRegistry |
 | [#18268](https://github.com/opensearch-project/OpenSearch/pull/18268) | Upgrade crypto kms plugin dependencies for AWS SDK v2.x |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12472](https://github.com/opensearch-project/OpenSearch/issues/12472): Original feature request to decouple CryptoPlugin and CryptoKeyProviderPlugin
-- [PR #17396](https://github.com/opensearch-project/OpenSearch/pull/17396): Previous AWS SDK v2.x migration (missing dependencies)
 
 ## Related Feature Report
 

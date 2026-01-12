@@ -139,16 +139,16 @@ GET /_cluster/stats/indices,os,jvm/shards/nodes/_all
 - Rolling upgrades require all nodes to be on compatible versions before using filtered endpoints
 - The `_all` keyword cannot be combined with individual metrics in the same request
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Stats API Documentation](https://docs.opensearch.org/2.18/api-reference/cluster-api/cluster-stats/)
+- [PR #14447](https://github.com/opensearch-project/OpenSearch/pull/14447): Original motivation for performance improvements
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15938](https://github.com/opensearch-project/OpenSearch/pull/15938) | URI path filtering support in cluster stats API |
-
-## References
-
-- [Cluster Stats API Documentation](https://docs.opensearch.org/2.18/api-reference/cluster-api/cluster-stats/)
-- [PR #14447](https://github.com/opensearch-project/OpenSearch/pull/14447): Original motivation for performance improvements
 
 ## Related Feature Report
 

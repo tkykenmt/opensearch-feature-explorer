@@ -107,8 +107,12 @@ yarn i18n:extract
 - Precommit hook only validates staged files, not the entire codebase
 - Translations are preliminary and may need community refinement
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8411](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8411) | Add i18n checks to PR workflows, ignore missing formats, add help text |
@@ -127,10 +131,6 @@ yarn i18n:extract
 | [#8407](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8407) | Fix duplicate identifiers in visualize plugin |
 | [#8408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8408) | Fix unprefixed identifiers in management plugin |
 | [#8409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8409) | Fix unprefixed/duplicate identifiers in visAugmenter plugin |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ## Related Feature Report
 

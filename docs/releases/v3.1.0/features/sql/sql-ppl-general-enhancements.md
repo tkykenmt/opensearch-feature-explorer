@@ -99,8 +99,13 @@ source=index1, index2 | fields machine.os1, machine.os2
 - JSON path syntax uses `{index}` for array access (e.g., `"a{0}.b"`)
 - `distinct_count_approx` provides approximate results with HyperLogLog++ precision
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL/PPL Functions Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/functions/): Official function reference
+- [OpenSearch Spark Collection Functions](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/ppl-lang/functions/ppl-collection.md): Lambda function reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3559](https://github.com/opensearch-project/sql/pull/3559) | Add JSON functions |
@@ -112,8 +117,7 @@ source=index1, index2 | fields machine.os1, machine.os2
 | [#3663](https://github.com/opensearch-project/sql/pull/3663) | Support match_only_text field type |
 | [#3698](https://github.com/opensearch-project/sql/pull/3698) | Switch percentile to MergingDigest algorithm |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3573](https://github.com/opensearch-project/sql/issues/3573): Cryptographic hash functions request
 - [Issue #3575](https://github.com/opensearch-project/sql/issues/3575): Lambda and array functions request
 - [Issue #3565](https://github.com/opensearch-project/sql/issues/3565): JSON functions request
@@ -122,8 +126,6 @@ source=index1, index2 | fields machine.os1, machine.os2
 - [Issue #3625](https://github.com/opensearch-project/sql/issues/3625): Object field merging request
 - [Issue #3655](https://github.com/opensearch-project/sql/issues/3655): match_only_text support request
 - [Issue #3697](https://github.com/opensearch-project/sql/issues/3697): Percentile algorithm alignment
-- [SQL/PPL Functions Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/functions/): Official function reference
-- [OpenSearch Spark Collection Functions](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/ppl-lang/functions/ppl-collection.md): Lambda function reference
 
 ## Related Feature Report
 

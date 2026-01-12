@@ -49,8 +49,12 @@ No migration steps required. These are maintenance updates that do not change th
 - No new features introduced in this release
 - Changes are primarily infrastructure and dependency updates
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Workbench Documentation](https://docs.opensearch.org/3.0/dashboards/query-workbench/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#126](https://github.com/opensearch-project/dashboards-query-workbench/pull/126) | dashboards-query-workbench | Updated package.json |
@@ -62,9 +66,7 @@ No migration steps required. These are maintenance updates that do not change th
 | [#156](https://github.com/opensearch-project/dashboards-query-workbench/pull/156) | dashboards-query-workbench | Update babel/runtime version |
 | [#168](https://github.com/opensearch-project/dashboards-query-workbench/pull/168) | dashboards-query-workbench | Improved Cypress test for dynamic column |
 
-## References
-
-- [Query Workbench Documentation](https://docs.opensearch.org/3.0/dashboards/query-workbench/)
+### Issues (Design / RFC)
 - [GitHub Issue #205](https://github.com/tkykenmt/opensearch-feature-explorer/issues/205): Tracking issue
 
 ## Related Feature Report

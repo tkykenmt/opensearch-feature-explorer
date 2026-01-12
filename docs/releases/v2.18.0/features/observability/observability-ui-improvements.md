@@ -96,8 +96,13 @@ sessionStorage.setItem('traceTableMode', 'all_spans');
 - Sorting and pagination push-down not included in traces table update
 - Integration redirect only available for Nginx currently
 
-## Related PRs
+## References
 
+### Documentation
+- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/): Official OpenSearch Observability docs
+- [Trace Analytics](https://docs.opensearch.org/2.18/observing-your-data/trace/ta-dashboards/): Trace Analytics plugin documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2177](https://github.com/opensearch-project/dashboards-observability/pull/2177) | Services data picker fix, metrics refresh button, overview page title, URL redirection |
@@ -106,11 +111,6 @@ sessionStorage.setItem('traceTableMode', 'all_spans');
 | [#2186](https://github.com/opensearch-project/dashboards-observability/pull/2186) | Overview page typography and navigation-aware title |
 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | Getting Started rework - Logs/Metrics/Traces structure |
 | [#2196](https://github.com/opensearch-project/dashboards-observability/pull/2196) | CI workflow build cache optimization |
-
-## References
-
-- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/): Official OpenSearch Observability docs
-- [Trace Analytics](https://docs.opensearch.org/2.18/observing-your-data/trace/ta-dashboards/): Trace Analytics plugin documentation
 
 ## Related Feature Report
 

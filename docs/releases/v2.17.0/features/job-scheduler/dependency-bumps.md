@@ -40,18 +40,18 @@ The Job Scheduler plugin received 4 dependency updates via Dependabot:
 - These are maintenance updates with no functional changes
 - No migration required
 
-## Related PRs
+## References
 
+### Documentation
+- [Job Scheduler Repository](https://github.com/opensearch-project/job-scheduler)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#653](https://github.com/opensearch-project/job-scheduler/pull/653) | Bump org.gradle.test-retry from 1.5.9 to 1.5.10 |
 | [#663](https://github.com/opensearch-project/job-scheduler/pull/663) | Bump com.google.googlejavaformat:google-java-format |
 | [#666](https://github.com/opensearch-project/job-scheduler/pull/666) | Bump org.slf4j:slf4j-api from 2.0.13 to 2.0.16 |
 | [#668](https://github.com/opensearch-project/job-scheduler/pull/668) | Bump com.netflix.nebula.ospackage from 11.9.1 to 11.10.0 |
-
-## References
-
-- [Job Scheduler Repository](https://github.com/opensearch-project/job-scheduler)
 
 ## Related Feature Report
 

@@ -127,16 +127,18 @@ This query now returns the expected document.
 - Indexes created before v3.4.0 without explicit `doc_values: true` will retain `doc_values: false`
 - Slightly increased storage for new indexes due to doc values being enabled by default
 
-## Related PRs
+## References
 
+### Documentation
+- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19796](https://github.com/opensearch-project/OpenSearch/pull/19796) | Change the default value of doc_values in WildcardFieldMapper to true |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18678](https://github.com/opensearch-project/OpenSearch/issues/18678): Bug report for nested query on wildcard type field returning no results
-- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
 
 ## Related Feature Report
 

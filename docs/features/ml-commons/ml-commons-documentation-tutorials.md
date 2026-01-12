@@ -159,8 +159,20 @@ PUT test-index
 - Language identification accuracy depends on the underlying model
 - SageMaker blueprints require endpoint deployment
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025): Added ColPali multimodal blueprint, Ollama connector blueprint, agentic search tutorial, agentic memory with Strands agents tutorial, conversational search with Ollama tutorial, instance type fix in language identification tutorial, additional unit tests
+- **v3.2.0** (2025): Added multi-modal search tutorial, semantic highlighter blueprint, neural sparse documentation, language identification tutorial, agentic RAG tutorial, e-commerce demo notebook, and Aleph Alpha blueprint fix
+
+## References
+
+### Documentation
+- [ML Commons Connector Blueprints](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
+- [ML Inference Processor](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ml-inference/)
+- [OpenSearch Tutorials](https://docs.opensearch.org/3.0/tutorials/)
+- [Agents and Tools](https://opensearch.org/docs/latest/ml-commons-plugin/agents-tools/index/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4130](https://github.com/opensearch-project/ml-commons/pull/4130) | ColPali multimodal blueprint |
@@ -177,15 +189,3 @@ PUT test-index
 | v3.2.0 | [#3980](https://github.com/opensearch-project/ml-commons/pull/3980) | Aleph alpha blueprint link fix |
 | v3.2.0 | [#4045](https://github.com/opensearch-project/ml-commons/pull/4045) | Agentic RAG tutorial |
 | v3.2.0 | [#3944](https://github.com/opensearch-project/ml-commons/pull/3944) | Multi-modal search notebook |
-
-## References
-
-- [ML Commons Connector Blueprints](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
-- [ML Inference Processor](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ml-inference/)
-- [OpenSearch Tutorials](https://docs.opensearch.org/3.0/tutorials/)
-- [Agents and Tools](https://opensearch.org/docs/latest/ml-commons-plugin/agents-tools/index/)
-
-## Change History
-
-- **v3.3.0** (2025): Added ColPali multimodal blueprint, Ollama connector blueprint, agentic search tutorial, agentic memory with Strands agents tutorial, conversational search with Ollama tutorial, instance type fix in language identification tutorial, additional unit tests
-- **v3.2.0** (2025): Added multi-modal search tutorial, semantic highlighter blueprint, neural sparse documentation, language identification tutorial, agentic RAG tutorial, e-commerce demo notebook, and Aleph Alpha blueprint fix

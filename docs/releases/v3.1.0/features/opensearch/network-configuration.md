@@ -72,16 +72,18 @@ Users who previously worked around this issue by manually editing `/lib/systemd/
 - This fix only applies to systemd-based installations (RPM/DEB packages)
 - Docker and tarball installations are not affected as they don't use systemd
 
-## Related PRs
+## References
 
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18309](https://github.com/opensearch-project/OpenSearch/pull/18309) | Add seccomp in systemd config |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18273](https://github.com/opensearch-project/OpenSearch/issues/18273): Bug report - 3.0.0 fails to start on Debian due to bootstrap checks
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration guide
 
 ## Related Feature Report
 

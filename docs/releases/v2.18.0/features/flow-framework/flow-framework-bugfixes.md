@@ -74,16 +74,18 @@ No migration required. This is a bug fix that improves reliability without chang
 - The fix addresses the specific race condition in reprovision workflows
 - Template updates are now asynchronous at the start of execution
 
-## Related PRs
+## References
 
+### Documentation
+- [Create or Update Workflow API](https://docs.opensearch.org/2.18/automating-configurations/api/create-workflow/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#918](https://github.com/opensearch-project/flow-framework/pull/918) | Fixed Template Update Location and Improved Logger Statements in ReprovisionWorkflowTransportAction |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #870](https://github.com/opensearch-project/flow-framework/issues/870): Reprovision Workflow IT is flaky
-- [Create or Update Workflow API](https://docs.opensearch.org/2.18/automating-configurations/api/create-workflow/)
 
 ## Related Feature Report
 

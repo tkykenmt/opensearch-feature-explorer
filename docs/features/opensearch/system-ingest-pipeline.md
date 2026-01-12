@@ -197,8 +197,19 @@ PUT _cluster/settings
 - Cache invalidation occurs on any index mapping change
 - Maximum 100 cached pipelines with 60-minute TTL
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-05): Fixed system ingest pipeline not triggered when request forwarded from non-ingest node (#18911)
+- **v3.2.0** (2025-07-09): Added index settings support for processor factories (#18708)
+- **v3.1.0** (2025-05-09): Initial implementation of system ingest pipeline (#17817)
+- **v3.1.0** (2025-06-11): Added bulk update operation support (#18277)
+
+## References
+
+### Blog Posts
+- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): Official announcement blog
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18911](https://github.com/opensearch-project/OpenSearch/pull/18911) | Fix system ingest pipeline not triggered when request forwarded from non-ingest node |
@@ -206,8 +217,7 @@ PUT _cluster/settings
 | v3.1.0 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |
 | v3.1.0 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18909](https://github.com/opensearch-project/OpenSearch/issues/18909): System ingest pipeline not triggered when request is from a non-ingest node
 - [Issue #17509](https://github.com/opensearch-project/OpenSearch/issues/17509): RFC - Support System Generated Ingest Pipeline/Processor
 - [Issue #18276](https://github.com/opensearch-project/OpenSearch/issues/18276): Support system ingest pipelines for bulk update operations
@@ -215,12 +225,4 @@ PUT _cluster/settings
 - [Issue #18151](https://github.com/opensearch-project/OpenSearch/issues/18151): Related issue resolved by #17817
 - [Issue #17819](https://github.com/opensearch-project/OpenSearch/issues/17819): Partially resolved by #17817
 - [Issue #1349](https://github.com/opensearch-project/neural-search/issues/1349): Semantic Field Enhancement - Configure Batch Size for Embedding Generation
-- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): Official announcement blog
 - [Neural Search Semantic Field RFC](https://github.com/opensearch-project/neural-search/issues/1211): Primary use case for system ingest pipelines
-
-## Change History
-
-- **v3.2.0** (2025-08-05): Fixed system ingest pipeline not triggered when request forwarded from non-ingest node (#18911)
-- **v3.2.0** (2025-07-09): Added index settings support for processor factories (#18708)
-- **v3.1.0** (2025-05-09): Initial implementation of system ingest pipeline (#17817)
-- **v3.1.0** (2025-06-11): Added bulk update operation support (#18277)

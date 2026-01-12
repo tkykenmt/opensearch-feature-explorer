@@ -59,8 +59,20 @@ release-notes/
 - Release notes accuracy depends on PR descriptions and changelog entries
 - Timing of version bumps must coordinate with release branch creation
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-01-11): Version bumps across 14 repositories (alerting, asynchronous-search, custom, index-management, ml-commons, notifications, observability, query, dashboards, reporting, security, learning, performance, system)
+- **v3.1.0** (2026-01-10): Version bumps across 11 repositories (alerting, asynchronous-search, common-utils, dashboards-notifications, notifications, reporting, index-management-dashboards, index-management, ml-commons, observability, sql, OpenSearch core)
+- **v3.0.0** (2025-05-06): Version bumps and release notes across 15 repositories including batch 2 (learning, security, performance, query, dashboards, reporting) in addition to alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins
+- **v2.18.0** (2024-11-05): Release notes across 5 repositories (alerting, common-utils, notifications, query-insights, security)
+- **v2.17.0** (2024-09-17): Version bumps and release notes across 12 repositories (alerting, anomaly-detection, asynchronous-search, common-utils, dashboards-notifications, index-management, job-scheduler, ml-commons, notifications, query-insights, security, sql)
+
+## References
+
+### Documentation
+- [OpenSearch Release Process](https://github.com/opensearch-project/opensearch-build/blob/main/RELEASING.md): Official release documentation
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.1.0 | [#1837](https://github.com/opensearch-project/alerting/pull/1837) | alerting | Auto-increment to 3.1.0-SNAPSHOT |
@@ -130,15 +142,5 @@ release-notes/
 | v2.17.0 | [#4615](https://github.com/opensearch-project/security/pull/4615) | security | Increment version to 2.17.0-SNAPSHOT |
 | v2.17.0 | [#2892](https://github.com/opensearch-project/sql/pull/2892) | sql | Increment version to 2.17.0-SNAPSHOT |
 
-## References
-
+### Issues (Design / RFC)
 - [opensearch-build#5267](https://github.com/opensearch-project/opensearch-build/issues/5267): Release coordination
-- [OpenSearch Release Process](https://github.com/opensearch-project/opensearch-build/blob/main/RELEASING.md): Official release documentation
-
-## Change History
-
-- **v3.2.0** (2026-01-11): Version bumps across 14 repositories (alerting, asynchronous-search, custom, index-management, ml-commons, notifications, observability, query, dashboards, reporting, security, learning, performance, system)
-- **v3.1.0** (2026-01-10): Version bumps across 11 repositories (alerting, asynchronous-search, common-utils, dashboards-notifications, notifications, reporting, index-management-dashboards, index-management, ml-commons, observability, sql, OpenSearch core)
-- **v3.0.0** (2025-05-06): Version bumps and release notes across 15 repositories including batch 2 (learning, security, performance, query, dashboards, reporting) in addition to alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins
-- **v2.18.0** (2024-11-05): Release notes across 5 repositories (alerting, common-utils, notifications, query-insights, security)
-- **v2.17.0** (2024-09-17): Version bumps and release notes across 12 repositories (alerting, anomaly-detection, asynchronous-search, common-utils, dashboards-notifications, index-management, job-scheduler, ml-commons, notifications, query-insights, security, sql)

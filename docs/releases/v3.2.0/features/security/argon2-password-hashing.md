@@ -116,17 +116,19 @@ admin:
 - Changing algorithm settings requires rehashing all passwords
 - Higher memory settings may impact authentication performance under heavy load
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Password hashing configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5441](https://github.com/opensearch-project/security/pull/5441) | Adds Argon2 support for password hashing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4592](https://github.com/opensearch-project/security/issues/4592): Feature request for Argon2 support
 - [Issue #4590](https://github.com/opensearch-project/security/issues/4590): Related BCrypt configuration feature
-- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Password hashing configuration
 
 ## Related Feature Report
 

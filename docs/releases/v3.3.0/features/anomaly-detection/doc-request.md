@@ -85,17 +85,19 @@ boolean hasAccess = resourceAccessEvaluator.evaluate(user, resourceType, resourc
 - Resource sharing requires Security plugin with experimental feature enabled
 - Only single-document operations are supported (not bulk operations)
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): A new access control model for OpenSearch
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [opensearch#19313](https://github.com/opensearch-project/OpenSearch/pull/19313) | Add new extensible method to DocRequest to specify type |
 | [anomaly-detection#1566](https://github.com/opensearch-project/anomaly-detection/pull/1566) | Adds resource types to DocRequests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): A new access control model for OpenSearch
 
 ## Related Feature Report
 

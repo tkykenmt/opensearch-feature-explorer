@@ -61,16 +61,16 @@ New test cases were added to `MLCommonsClusterEventListenerTests.java` to verify
 - This fix is backported to 3.1 and 3.2 branches
 - Clusters that were affected by this bug may need to restart nodes to trigger the stats collector job
 
-## Related PRs
+## References
 
+### Documentation
+- [Metrics Framework Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/metrics/getting-started/)
+- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4220](https://github.com/opensearch-project/ml-commons/pull/4220) | Fix version checking logic for starting the stats collector job |
-
-## References
-
-- [Metrics Framework Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/metrics/getting-started/)
-- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
 
 ## Related Feature Report
 

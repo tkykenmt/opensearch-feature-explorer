@@ -35,40 +35,23 @@ The release notes for version 2.13.0.0 document the following changes:
 The release notes file follows the standard OpenSearch release notes format:
 
 ```markdown
-## Version 2.13.0.0 2023-03-21
-
-Compatible with OpenSearch 2.13.0
-
-### Maintenance
-* Increment version to 2.13.0-SNAPSHOT ([#591](url))
-
-### Enhancement
-* add queryFieldNames field in Doc Level Queries ([#582](url)) ([#597](url))
-
-# Features
-* fix findings API enhancemnts ([#611](url)) ([#617](url))
-* Feature findings enhancemnt ([#596](url)) ([#606](url))
-
-### Documentation
-* Added 2.13.0.0 release notes ([#622](url))
-```
 
 ## Limitations
 
 - This is a documentation-only change with no functional impact
 - The release notes document changes from the 2.13.0.0 release cycle
 
-## Related PRs
+## References
 
+### Documentation
+- [Common Utils Repository](https://github.com/opensearch-project/common-utils)
+- [Release Notes File](https://github.com/opensearch-project/common-utils/blob/main/release-notes/opensearch-common-utils.release-notes-2.13.0.0.md)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#869](https://github.com/opensearch-project/common-utils/pull/869) | Backport release notes for 2.13 to main branch |
 | [#623](https://github.com/opensearch-project/common-utils/pull/623) | Original PR adding release notes for 2.13 |
-
-## References
-
-- [Common Utils Repository](https://github.com/opensearch-project/common-utils)
-- [Release Notes File](https://github.com/opensearch-project/common-utils/blob/main/release-notes/opensearch-common-utils.release-notes-2.13.0.0.md)
 
 ## Related Feature Report
 

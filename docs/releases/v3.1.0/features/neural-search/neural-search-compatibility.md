@@ -42,17 +42,19 @@ No migration required. This is a build infrastructure change that does not affec
 - This change is specific to the 3.0 beta release cycle
 - No functional changes to neural search capabilities
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/neural-sparse-search/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1245](https://github.com/opensearch-project/neural-search/pull/1245) | Update neural-search for OpenSearch 3.0 beta compatibility |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #225](https://github.com/opensearch-project/neural-search/issues/225): Release version 3.0.0
 - [Issue #3747](https://github.com/opensearch-project/opensearch-build/issues/3747): Release version 3.0.0 (build)
-- [Neural Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/neural-sparse-search/): Official docs
 
 ## Related Feature Report
 

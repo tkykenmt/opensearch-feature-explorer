@@ -83,21 +83,21 @@ No new configuration options were added. Existing settings remain unchanged.
 - The request serialization fix requires all nodes in the cluster to be on v3.1.0+ for full functionality
 - Mixed-version clusters will fall back to the previous behavior (parameters not passed to older nodes)
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/index/)
+- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/query-insights-dashboard/)
+- [GitHub: query-insights](https://github.com/opensearch-project/query-insights)
+- [GitHub: query-insights-dashboards](https://github.com/opensearch-project/query-insights-dashboards)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#365](https://github.com/opensearch-project/query-insights/pull/365) | query-insights | Fix node-level top queries request parameter serialization |
 | [#210](https://github.com/opensearch-project/query-insights-dashboards/pull/210) | query-insights-dashboards | Fix live query status field location in response |
 | [#206](https://github.com/opensearch-project/query-insights-dashboards/pull/206) | query-insights-dashboards | Fix failing Cypress tests with improved timeouts and health checks |
 | [#205](https://github.com/opensearch-project/query-insights-dashboards/pull/205) | query-insights-dashboards | Fix version mismatch in CI binary installation workflow |
-
-## References
-
-- [Query Insights Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/index/)
-- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/query-insights-dashboard/)
-- [GitHub: query-insights](https://github.com/opensearch-project/query-insights)
-- [GitHub: query-insights-dashboards](https://github.com/opensearch-project/query-insights-dashboards)
 
 ## Related Feature Report
 

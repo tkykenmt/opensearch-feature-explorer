@@ -88,17 +88,19 @@ No migration required. This is a bug fix that ensures existing settings work as 
 - The fix only addresses the constraint reset issue; it does not change the fundamental behavior of primary shard balancing
 - Primary shard balance is still a best-effort optimization and may not achieve perfect balance in all scenarios
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster routing allocation settings
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Recommended settings for segment replication
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix Allocation and Rebalance Constraints of WeightFunction are incorrectly reset |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13429](https://github.com/opensearch-project/OpenSearch/issues/13429): Original bug report
-- [Cluster Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster routing allocation settings
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Recommended settings for segment replication
 
 ## Related Feature Report
 

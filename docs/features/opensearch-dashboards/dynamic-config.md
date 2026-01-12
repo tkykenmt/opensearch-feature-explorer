@@ -91,17 +91,17 @@ Config saved objects are treated specially in workspace contexts:
 - Invalid alias configurations require manual cleanup before server restart
 - Index names must follow the pattern `.opensearch_dashboards_dynamic_config_N` where N is a positive integer
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Fixed config saved objects workspace handling, global config discovery during upgrades, and dynamic config index/alias validation
+
+## References
+
+### Documentation
+- [Dynamic configuration in OpenSearch Dashboards](https://docs.opensearch.org/2.18/security/multi-tenancy/dynamic-config/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8160](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8160) | Fix config related issues and dedup category |
 | v2.18.0 | [#8184](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8184) | Fix bug when dynamic config index and alias are checked |
-
-## References
-
-- [Dynamic configuration in OpenSearch Dashboards](https://docs.opensearch.org/2.18/security/multi-tenancy/dynamic-config/): Official documentation
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Fixed config saved objects workspace handling, global config discovery during upgrades, and dynamic config index/alias validation

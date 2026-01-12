@@ -151,20 +151,22 @@ public static ValueSource wrap(Object value, ScriptService scriptService) {
 - Pattern matching switch is a language feature, not a runtime feature - compiled code requires Java 17+ bytecode
 - Some deprecated APIs (Security Manager related) are set to warn rather than error due to pervasive usage
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09): Initial Java 17 modernization with pattern matching switch refactoring and forbidden APIs update
+
+## References
+
+### Documentation
+- [Forbidden APIs Plugin](https://github.com/policeman-tools/forbidden-apis): Build plugin documentation
+- [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
+- [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch (Final)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18965](https://github.com/opensearch-project/OpenSearch/pull/18965) | Refactor if-else chains to pattern matching switch |
 | v3.3.0 | [#19163](https://github.com/opensearch-project/OpenSearch/pull/19163) | Remove Java version cap on forbidden APIs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17874](https://github.com/opensearch-project/OpenSearch/issues/17874): Original feature request
-- [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
-- [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch (Final)
-- [Forbidden APIs Plugin](https://github.com/policeman-tools/forbidden-apis): Build plugin documentation
-
-## Change History
-
-- **v3.3.0** (2025-09): Initial Java 17 modernization with pattern matching switch refactoring and forbidden APIs update

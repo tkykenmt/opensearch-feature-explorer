@@ -123,8 +123,20 @@ public void testCreateAndShareResource() throws Exception {
 - Extensions require `META-INF/services` files for ServiceLoader discovery
 - Resource sharing tests require the Security plugin to be properly configured
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-05-13): Use extendedPlugins in integrationTest framework for sample resource plugin testing, refactor resource sharing to use in-memory updates
+- **v3.0.0** (2025-03-25): Added ConfigurationRepository tests, FLS/field masking tests, refactored InternalAuditLogTest to use Awaitility, migrated packages from com.amazon.dlic to org.opensearch.security
+
+## References
+
+### Documentation
+- [Security Plugin Documentation](https://docs.opensearch.org/3.0/security/index/): OpenSearch Security plugin docs
+- [PR #5322](https://github.com/opensearch-project/security/pull/5322): Security plugin test framework update
+- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Core Plugin Testing Framework
+- [Plugin Testing Framework](../opensearch/plugin-testing-framework.md): Core testing framework feature
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#5322](https://github.com/opensearch-project/security/pull/5322) | Use extendedPlugins in integrationTest framework |
@@ -135,15 +147,5 @@ public void testCreateAndShareResource() throws Exception {
 | v3.0.0 | [#5223](https://github.com/opensearch-project/security/pull/5223) | Migrate from com.amazon.dlic to org.opensearch.security |
 | v3.0.0 | [#5237](https://github.com/opensearch-project/security/pull/5237) | More tests for FLS and field masking |
 
-## References
-
-- [PR #5322](https://github.com/opensearch-project/security/pull/5322): Security plugin test framework update
-- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Core Plugin Testing Framework
+### Issues (Design / RFC)
 - [Issue #3255](https://github.com/opensearch-project/security/issues/3255): Test coverage improvement tracking
-- [Security Plugin Documentation](https://docs.opensearch.org/3.0/security/index/): OpenSearch Security plugin docs
-- [Plugin Testing Framework](../opensearch/plugin-testing-framework.md): Core testing framework feature
-
-## Change History
-
-- **v3.1.0** (2025-05-13): Use extendedPlugins in integrationTest framework for sample resource plugin testing, refactor resource sharing to use in-memory updates
-- **v3.0.0** (2025-03-25): Added ConfigurationRepository tests, FLS/field masking tests, refactored InternalAuditLogTest to use Awaitility, migrated packages from com.amazon.dlic to org.opensearch.security

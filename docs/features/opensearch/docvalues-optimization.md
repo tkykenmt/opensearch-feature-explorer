@@ -173,19 +173,19 @@ GET /sales/_search
 - Performance improvement varies based on query complexity and data characteristics
 - Currently implemented for DateHistogramAggregator and GlobalOrdinalValuesSource
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17643](https://github.com/opensearch-project/OpenSearch/pull/17643) | Unwrap singleton DocValues in date histogram aggregation |
-| v3.0.0 | [#17740](https://github.com/opensearch-project/OpenSearch/pull/17740) | Unwrap singleton DocValues in global ordinal value source of composite aggregation |
+- **v3.0.0** (2025-04): Initial implementation for DateHistogramAggregator and GlobalOrdinalValuesSource
 
 ## References
 
+### Documentation
 - [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
 - [Bucket Aggregations Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/index/)
 - [Lucene DocValues](https://lucene.apache.org/core/9_0_0/core/org/apache/lucene/index/DocValues.html)
 
-## Change History
-
-- **v3.0.0** (2025-04): Initial implementation for DateHistogramAggregator and GlobalOrdinalValuesSource
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#17643](https://github.com/opensearch-project/OpenSearch/pull/17643) | Unwrap singleton DocValues in date histogram aggregation |
+| v3.0.0 | [#17740](https://github.com/opensearch-project/OpenSearch/pull/17740) | Unwrap singleton DocValues in global ordinal value source of composite aggregation |

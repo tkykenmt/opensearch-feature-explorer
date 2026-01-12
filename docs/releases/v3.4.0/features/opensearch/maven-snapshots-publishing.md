@@ -91,16 +91,18 @@ For developers consuming OpenSearch snapshots:
 - Publishing requires AWS IAM role assumption (internal CI only)
 - The S3 repository does not support browsing via web interface like Sonatype
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: OpenSearch plugin zips now in Maven repo](https://opensearch.org/blog/opensearch-plugin-zips-now-in-maven-repo/): Background on Maven publishing
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19619](https://github.com/opensearch-project/OpenSearch/pull/19619) | Onboarding new maven snapshots publishing to S3 (OpenSearch Core) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org
-- [Blog: OpenSearch plugin zips now in Maven repo](https://opensearch.org/blog/opensearch-plugin-zips-now-in-maven-repo/): Background on Maven publishing
 
 ## Related Feature Report
 

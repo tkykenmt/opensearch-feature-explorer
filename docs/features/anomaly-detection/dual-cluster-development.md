@@ -140,17 +140,17 @@ When security is enabled (`-Dsecurity=true`), both clusters are configured with:
 - Single node per cluster (no multi-node cluster simulation)
 - Requires sufficient system resources to run two JVM instances
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Initial implementation of dual cluster gradle run |
-
-## References
-
-- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/anomaly-detection/blob/main/DEVELOPER_GUIDE.md): Official developer documentation
-- [build.gradle](https://github.com/opensearch-project/anomaly-detection/blob/main/build.gradle): Gradle build configuration
-
 ## Change History
 
 - **v3.0.0** (2025-05-06): Initial implementation - Added `-PdualCluster` property to launch leader and follower clusters for cross-cluster testing
+
+## References
+
+### Documentation
+- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/anomaly-detection/blob/main/DEVELOPER_GUIDE.md): Official developer documentation
+- [build.gradle](https://github.com/opensearch-project/anomaly-detection/blob/main/build.gradle): Gradle build configuration
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Initial implementation of dual cluster gradle run |

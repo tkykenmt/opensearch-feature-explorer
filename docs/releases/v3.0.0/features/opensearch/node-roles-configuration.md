@@ -137,17 +137,19 @@ This is marked as a breaking change because the behavior of parsing `[]` from en
 - Whitespace within the array is handled, but the outer brackets are required
 - This fix applies to all list settings, not just `node.roles`
 
-## Related PRs
+## References
 
+### Documentation
+- [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Official documentation
+- [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Node roles and cluster configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10625](https://github.com/opensearch-project/OpenSearch/pull/10625) | Treat Setting value with empty array string as empty array |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3412](https://github.com/opensearch-project/OpenSearch/issues/3412): Bug report for empty node.roles environment variable
-- [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Official documentation
-- [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Node roles and cluster configuration guide
 
 ## Related Feature Report
 

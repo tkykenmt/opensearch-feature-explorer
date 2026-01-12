@@ -129,17 +129,19 @@ GET /students/_search
 - Large term lists may impact query performance
 - Cannot use both `id` and `query` parameters simultaneously
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-01): Added support for query clause in terms lookup, enabling multi-document value extraction
+
+## References
+
+### Documentation
+- [Terms Query Documentation](https://docs.opensearch.org/3.2/query-dsl/term/terms/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Add query clause support for terms lookup |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17599](https://github.com/opensearch-project/OpenSearch/issues/17599): Feature request for query-based lookup
-- [Terms Query Documentation](https://docs.opensearch.org/3.2/query-dsl/term/terms/): Official documentation
-
-## Change History
-
-- **v3.2.0** (2025-08-01): Added support for query clause in terms lookup, enabling multi-document value extraction

@@ -114,8 +114,16 @@ googleJavaFormat {
 - Some tests may be flaky due to timing dependencies
 - Build cache may need manual clearing for dependency resolution issues
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Major CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
+
+## References
+
+### Documentation
+- [opensearch-build #5789](https://github.com/opensearch-project/opensearch-build/pull/5789): S3 publishing support
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4824](https://github.com/opensearch-project/sql/pull/4824) | Bump Gradle to 9.2.0 and JDK to 25 |
@@ -127,13 +135,7 @@ googleJavaFormat {
 | v3.4.0 | [#4588](https://github.com/opensearch-project/sql/pull/4588) | Onboard maven snapshots publishing to S3 |
 | v3.4.0 | [#4484](https://github.com/opensearch-project/sql/pull/4484) | Publish internal modules for downstream reuse |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4722](https://github.com/opensearch-project/sql/issues/4722): Gradle upgrade tracking
 - [Issue #4842](https://github.com/opensearch-project/sql/issues/4842): Query timeout issue
-- [opensearch-build #5789](https://github.com/opensearch-project/opensearch-build/pull/5789): S3 publishing support
 - [opensearch-build #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Maven snapshots onboarding
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Major CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing

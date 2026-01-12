@@ -175,8 +175,17 @@ const MyPluginPage: React.FC = () => {
 - Some visual inconsistencies may exist during transition period
 - Feature flag must be enabled to see new header design
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation across 7 plugin repositories with 16 PRs
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.17/dashboards/quickstart/): Navigation menu documentation
+- [Custom Branding](https://docs.opensearch.org/2.17/dashboards/branding/): Condensed header configuration
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v2.17.0 | [#841](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/841) | anomaly-detection-dashboards-plugin | Header redesign for AD pages |
@@ -192,12 +201,3 @@ const MyPluginPage: React.FC = () => {
 | v2.17.0 | [#1124](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1124) | index-management-dashboards-plugin | Update header for aliases, templates, transforms |
 | v2.17.0 | [#1126](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1126) | index-management-dashboards-plugin | Update header for notification settings |
 | v2.17.0 | [#351](https://github.com/opensearch-project/ml-commons-dashboards/pull/351) | ml-commons-dashboards | Support new page header |
-
-## References
-
-- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.17/dashboards/quickstart/): Navigation menu documentation
-- [Custom Branding](https://docs.opensearch.org/2.17/dashboards/branding/): Condensed header configuration
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation across 7 plugin repositories with 16 PRs

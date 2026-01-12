@@ -133,20 +133,22 @@ POST /my-index/_search
   - Only applies to approximated `match_all` queries
   - Requires sorting on indexed numeric fields
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025): Initial implementation with must_not range rewrite and sort-query optimization
+
+## References
+
+### Documentation
+- [Boolean Query Documentation](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Official Boolean query documentation
+- [Range Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/range/): Official Range query documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#18189](https://github.com/opensearch-project/OpenSearch/pull/18189) | Improve sort-query performance for approximated match_all queries |
 | v3.1.0 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Add BooleanQuery rewrite for must_not RangeQuery clauses |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18206](https://github.com/opensearch-project/OpenSearch/issues/18206): Improve performance for approximated `match_all` sort queries
 - [Issue #17586](https://github.com/opensearch-project/OpenSearch/issues/17586): Feature Request - Rewrites for BooleanQuery
-- [Boolean Query Documentation](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Official Boolean query documentation
-- [Range Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/range/): Official Range query documentation
-
-## Change History
-
-- **v3.1.0** (2025): Initial implementation with must_not range rewrite and sort-query optimization

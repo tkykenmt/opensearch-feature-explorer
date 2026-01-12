@@ -70,8 +70,14 @@ This release focuses on security-critical dependency updates across the OpenSear
 - Spring Framework 7.0.1 is a major version upgrade that may require testing for compatibility
 - Some updates are repository-specific and may not apply to all deployment configurations
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2025-11226](https://nvd.nist.gov/vuln/detail/CVE-2025-11226): Logback ACE vulnerability
+- [Logback 1.5.19 Release Notes](https://logback.qos.ch/news.html#1.5.19)
+- [Apache Calcite 1.41.0 Release](https://calcite.apache.org/docs/history.html)
+
+### Pull Requests
 | PR | Title | Repository |
 |----|-------|------------|
 | [#893](https://github.com/opensearch-project/common-utils/pull/893) | Update logback dependencies to version 1.5.19 | common-utils |
@@ -102,12 +108,6 @@ This release focuses on security-critical dependency updates across the OpenSear
 | [#5823](https://github.com/opensearch-project/security/pull/5823) | Bump commons-codec:commons-codec from 1.19.0 to 1.20.0 | security |
 | [#5829](https://github.com/opensearch-project/security/pull/5829) | Upgrade springframework to 7.0.1 and zookeeper to 3.9.4 | security |
 | [#4714](https://github.com/opensearch-project/sql/pull/4714) | Bump Calcite to 1.41.0 | sql |
-
-## References
-
-- [CVE-2025-11226](https://nvd.nist.gov/vuln/detail/CVE-2025-11226): Logback ACE vulnerability
-- [Logback 1.5.19 Release Notes](https://logback.qos.ch/news.html#1.5.19)
-- [Apache Calcite 1.41.0 Release](https://calcite.apache.org/docs/history.html)
 
 ## Related Feature Report
 

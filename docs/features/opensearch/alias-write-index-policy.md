@@ -105,18 +105,20 @@ Failed to restore snapshot: alias [rollover_alias] has more than one write index
 - Only affects aliases being restored, not existing aliases in the cluster
 - Requires OpenSearch 3.3.0 or later
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025): Initial implementation - Added `alias_write_index_policy` parameter to Restore Snapshot API
+
+## References
+
+### Documentation
+- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): Official documentation
+- [Alias API](https://docs.opensearch.org/3.0/api-reference/index-apis/alias/): Alias `is_write_index` documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19368](https://github.com/opensearch-project/OpenSearch/pull/19368) | Enable Safe Bidirectional CCR via Alias policy on Restore |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16139](https://github.com/opensearch-project/OpenSearch/issues/16139): Original bug report for write index restore failure
-- [Restore Snapshot API](https://docs.opensearch.org/3.0/api-reference/snapshots/restore-snapshot/): Official documentation
-- [Alias API](https://docs.opensearch.org/3.0/api-reference/index-apis/alias/): Alias `is_write_index` documentation
-
-## Change History
-
-- **v3.3.0** (2025): Initial implementation - Added `alias_write_index_policy` parameter to Restore Snapshot API

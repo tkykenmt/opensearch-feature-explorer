@@ -57,8 +57,15 @@ Example mapping that now works correctly:
 - The bucket selector aggregation fix requires corresponding changes in common-utils (PR #773)
 - Backporting the bucket selector fix to versions prior to v2.4 requires separate PRs due to code location changes
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
+- [common-utils PR #773](https://github.com/opensearch-project/common-utils/pull/773): Related bucket selector fix in common-utils
+- [job-scheduler PR #762](https://github.com/opensearch-project/job-scheduler/pull/762): Related Java Agent migration
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1780](https://github.com/opensearch-project/alerting/pull/1780) | alerting | Fix bucket selector aggregation writeable name |
@@ -66,13 +73,6 @@ Example mapping that now works correctly:
 | [#1824](https://github.com/opensearch-project/alerting/pull/1824) | alerting | Use java-agent Gradle plugin |
 | [#1831](https://github.com/opensearch-project/alerting/pull/1831) | alerting | Correct release notes filename |
 | [#1234](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1234) | alerting-dashboards-plugin | Fix .keyword subfield selection in bucket monitor |
-
-## References
-
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
-- [common-utils PR #773](https://github.com/opensearch-project/common-utils/pull/773): Related bucket selector fix in common-utils
-- [job-scheduler PR #762](https://github.com/opensearch-project/job-scheduler/pull/762): Related Java Agent migration
 
 ## Related Feature Report
 

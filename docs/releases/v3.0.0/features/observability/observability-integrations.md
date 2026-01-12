@@ -75,17 +75,19 @@ No migration required. These are internal improvements that don't affect the pub
 - Error context is only available in test environments
 - Enhanced error messages are limited to integration configuration parsing
 
-## Related PRs
+## References
 
+### Documentation
+- [Integrations in OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/integrations/index/): Official documentation
+
+### Blog Posts
+- [Test Failures Should Be Actionable](https://testing.googleblog.com/2024/05/test-failures-should-be-actionable.html): Google Testing Blog article referenced in PR #2376
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2387](https://github.com/opensearch-project/dashboards-observability/pull/2387) | Improve error handling when setting up and reading a new integration |
 | [#2376](https://github.com/opensearch-project/dashboards-observability/pull/2376) | Improve the test results for Integrations internals |
-
-## References
-
-- [Integrations in OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/integrations/index/): Official documentation
-- [Test Failures Should Be Actionable](https://testing.googleblog.com/2024/05/test-failures-should-be-actionable.html): Google Testing Blog article referenced in PR #2376
 
 ## Related Feature Report
 

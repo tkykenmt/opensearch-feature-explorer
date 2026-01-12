@@ -52,17 +52,17 @@ module.exports = function (api) {
 - This fix only affects the test environment configuration
 - No runtime behavior changes
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #580](https://github.com/opensearch-project/dashboards-assistant/pull/580): Main fix implementation
+- [PR #9831](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9831): Root cause - path alias extraction in OSD core
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#580](https://github.com/opensearch-project/dashboards-assistant/pull/580) | Fix failed CI due to path alias |
 | [#9831](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9831) | Extract path alias babel config to reusable function (OSD core) |
-
-## References
-
-- [PR #580](https://github.com/opensearch-project/dashboards-assistant/pull/580): Main fix implementation
-- [PR #9831](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9831): Root cause - path alias extraction in OSD core
 
 ## Related Feature Report
 

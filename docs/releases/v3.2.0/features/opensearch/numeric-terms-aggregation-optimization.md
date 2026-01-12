@@ -108,16 +108,18 @@ Benchmark results show significant improvements when the requested bucket size i
 - Does not apply when ordering by key
 - The factor setting affects all numeric terms aggregations cluster-wide
 
-## Related PRs
+## References
 
+### Documentation
+- [Terms Aggregation Documentation](https://docs.opensearch.org/3.2/aggregations/bucket/terms/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18702](https://github.com/opensearch-project/OpenSearch/pull/18702) | Optimization in Numeric Terms Aggregation query for Large Bucket Counts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18703](https://github.com/opensearch-project/OpenSearch/issues/18703): Performance optimization request
-- [Terms Aggregation Documentation](https://docs.opensearch.org/3.2/aggregations/bucket/terms/): Official docs
 
 ## Related Feature Report
 

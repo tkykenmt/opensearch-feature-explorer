@@ -89,16 +89,16 @@ PUT /_cluster/settings
 - Settings changes take effect immediately but may not affect in-progress operations
 - Some settings have maximum value constraints for safety
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16347](https://github.com/opensearch-project/OpenSearch/pull/16347) | Make multiple settings dynamic for tuning on larger clusters |
-
-## References
-
-- [Cluster Settings Documentation](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster settings reference
-
 ## Change History
 
 - **v2.18.0** (2024-10-22): Made `cluster.fault_detection.follower_check.interval`, `cluster.publish.timeout`, `cluster.follower_lag.timeout`, and `cluster.allocator.gateway.batch_size` dynamic; increased `follower_check.timeout` max from 60s to 150s
+
+## References
+
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster settings reference
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#16347](https://github.com/opensearch-project/OpenSearch/pull/16347) | Make multiple settings dynamic for tuning on larger clusters |

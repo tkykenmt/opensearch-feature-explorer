@@ -147,8 +147,12 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 - Shortcuts are only active when keyboard shortcuts are enabled in configuration
 - Navigation shortcuts require a workspace to be selected
 
-## Related PRs
+## References
 
+### Documentation
+- [Dev Tools Console - Keyboard Shortcuts](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Documentation on keyboard shortcuts in Dev Tools
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10409) | Add keyboard shortcuts configuration option |
@@ -157,10 +161,6 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 | [#10509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10509) | Register shortcuts for OSD (Discover, Dashboard, Visualization) |
 | [#10543](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10543) | Add Cypress tests and enable shortcuts by default |
 | [#10545](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10545) | Enable shortcuts to comment lines in Query Editor |
-
-## References
-
-- [Dev Tools Console - Keyboard Shortcuts](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Documentation on keyboard shortcuts in Dev Tools
 
 ## Related Feature Report
 

@@ -142,8 +142,16 @@ Use mapping-level parameters instead:
 - Derived source mask approach requires segment migration during merges for pre-3.0 segments
 - Operation-based recovery may be slower when derived source is enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: k-NN vector field type](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/)
+- [Documentation: Breaking changes](https://docs.opensearch.org/3.0/breaking-changes/)
+
+### Blog Posts
+- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2606](https://github.com/opensearch-project/k-NN/pull/2606) | Switch derived source from field attributes to segment attribute |
@@ -155,15 +163,11 @@ Use mapping-level parameters instead:
 | [#2575](https://github.com/opensearch-project/k-NN/pull/2575) | Improve Streaming Compatibility Issue for MethodComponentContext |
 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | 3.0.0 Breaking Changes For KNN |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): RFC - Derived Source for Vectors
 - [Issue #2539](https://github.com/opensearch-project/k-NN/issues/2539): Introduce backwards_codecs to manage older codecs
 - [Issue #2631](https://github.com/opensearch-project/k-NN/issues/2631): Merge MethodFieldMapper and LuceneFieldMapper into EngineFieldMapper
 - [Issue #2640](https://github.com/opensearch-project/k-NN/issues/2640): Remove doc values for lucene engine
-- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
-- [Documentation: k-NN vector field type](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/)
-- [Documentation: Breaking changes](https://docs.opensearch.org/3.0/breaking-changes/)
 
 ## Related Feature Report
 

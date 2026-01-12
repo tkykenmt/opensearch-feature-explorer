@@ -80,16 +80,16 @@ const queryStatus: QueryStatus = {
 - Timer updates at 1-second intervals
 - Only available in query-enabled views (Discover, Query Workbench)
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212) | Add loading indicator and counter to query result |
-
-## References
-
-- [PR #8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212): Initial implementation
-
 ## Change History
 
 - **v2.18.0** (2024-11-05): Added loading indicator with time counter for query results
+
+## References
+
+### Documentation
+- [PR #8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212): Initial implementation
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212) | Add loading indicator and counter to query result |

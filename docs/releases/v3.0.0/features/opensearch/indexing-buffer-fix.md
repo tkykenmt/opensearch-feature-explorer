@@ -80,17 +80,19 @@ If your application parses the Nodes Info API response and relies on these field
 - No backward compatibility option is provided
 - The change only takes effect in v3.0.0 and later
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
+- [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17070](https://github.com/opensearch-project/OpenSearch/pull/17070) | Fix interchanged formats of total_indexing_buffer_in_bytes and total_indexing_buffer |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16910](https://github.com/opensearch-project/OpenSearch/issues/16910): Bug report - NodesInfoResponse serializes fields swapped
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
-- [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): API reference
 
 ## Related Feature Report
 

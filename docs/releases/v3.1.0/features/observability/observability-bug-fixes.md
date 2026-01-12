@@ -87,17 +87,17 @@ For NFW integration, the warning messages are now hidden and empty indexes displ
 - The Jaeger fix only affects Jaeger mode; Data Prepper mode time handling remains unchanged
 - NFW integration default values are placeholders and should be interpreted as "no data available"
 
-## Related PRs
+## References
 
+### Documentation
+- [Analyzing Jaeger trace data](https://docs.opensearch.org/3.1/observing-your-data/trace/trace-analytics-jaeger/): Official documentation for Jaeger trace analytics
+- [Trace Analytics](https://docs.opensearch.org/3.1/observing-your-data/trace/index/): Trace Analytics overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2460](https://github.com/opensearch-project/dashboards-observability/pull/2460) | Fix Jaeger end time processing |
 | [#2452](https://github.com/opensearch-project/dashboards-observability/pull/2452) | NFW Integration Vega Vis Warning Msg Fix |
-
-## References
-
-- [Analyzing Jaeger trace data](https://docs.opensearch.org/3.1/observing-your-data/trace/trace-analytics-jaeger/): Official documentation for Jaeger trace analytics
-- [Trace Analytics](https://docs.opensearch.org/3.1/observing-your-data/trace/index/): Trace Analytics overview
 
 ## Related Feature Report
 

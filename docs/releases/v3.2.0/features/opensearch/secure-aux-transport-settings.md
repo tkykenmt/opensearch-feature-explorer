@@ -93,17 +93,19 @@ Plugins implementing `SecureAuxTransportSettingsProvider` must update their impl
 - This is a breaking API change for existing implementations
 - No authorization component is provided; only SSL/TLS configuration is supported
 
-## Related PRs
+## References
 
+### Documentation
+- [SecureAuxTransportSettingsProvider.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/plugins/SecureAuxTransportSettingsProvider.java): Interface definition
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18616](https://github.com/opensearch-project/OpenSearch/pull/18616) | Update SecureAuxTransportSettingsProvider to distinguish between aux transport types |
 | [security#5375](https://github.com/opensearch-project/security/pull/5375) | TLS support for auxiliary transports (security plugin implementation) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations
-- [SecureAuxTransportSettingsProvider.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/plugins/SecureAuxTransportSettingsProvider.java): Interface definition
 
 ## Related Feature Report
 

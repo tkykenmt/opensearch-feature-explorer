@@ -138,20 +138,22 @@ WITH (auto_refresh=true)
 - Requires EMR Serverless as the Spark execution engine
 - Session tag is required for Lake Formation authorization
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation with SECURITY_LAKE data source type and query validation
+
+## References
+
+### Documentation
+- [Amazon Security Lake Documentation](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html)
+- [OpenSearch S3 Data Source Documentation](https://docs.opensearch.org/2.17/dashboards/management/S3-data-source/)
+- [Security Lake Connector Documentation](https://github.com/opensearch-project/sql/blob/main/docs/user/ppl/admin/connectors/security_lake_connector.rst)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#2858](https://github.com/opensearch-project/sql/pull/2858) | Add flags for Iceberg and Lake Formation and Security Lake as a data source type |
 | v2.17.0 | [#2959](https://github.com/opensearch-project/sql/pull/2959) | Adds validation to allow only flint queries and sql SELECT queries to security lake type datasource |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2907](https://github.com/opensearch-project/sql/issues/2907): Original feature request
-- [Amazon Security Lake Documentation](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html)
-- [OpenSearch S3 Data Source Documentation](https://docs.opensearch.org/2.17/dashboards/management/S3-data-source/)
-- [Security Lake Connector Documentation](https://github.com/opensearch-project/sql/blob/main/docs/user/ppl/admin/connectors/security_lake_connector.rst)
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation with SECURITY_LAKE data source type and query validation

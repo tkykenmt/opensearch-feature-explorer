@@ -49,8 +49,12 @@ The alerting repository includes additional dependency fixes:
 - Version bumps are mechanical changes with no functional impact
 - Timing must coordinate with release branch creation
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Release Process](https://github.com/opensearch-project/opensearch-build/blob/main/RELEASING.md): Official release documentation
+
+### Pull Requests
 | PR | Title | Repository |
 |----|-------|------------|
 | [#1892](https://github.com/opensearch-project/alerting/pull/1892) | Moved the commons-beanutils pinning to the core gradle file | alerting |
@@ -73,10 +77,6 @@ The alerting repository includes additional dependency fixes:
 | [#86](https://github.com/opensearch-project/opensearch-system-templates/pull/86) | [AUTO] Increment version to 3.2.0-SNAPSHOT | system |
 | [#823](https://github.com/opensearch-project/performance-analyzer/pull/823) | Increment version to 3.2.0-SNAPSHOT | performance |
 | [#380](https://github.com/opensearch-project/query-insights/pull/380) | [AUTO] Increment version to 3.2.0-SNAPSHOT | query |
-
-## References
-
-- [OpenSearch Release Process](https://github.com/opensearch-project/opensearch-build/blob/main/RELEASING.md): Official release documentation
 
 ## Related Feature Report
 

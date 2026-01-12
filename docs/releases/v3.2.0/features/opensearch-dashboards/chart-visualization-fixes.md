@@ -48,17 +48,17 @@ The "Associate data sources" button in the Data Sources page had a bug where cli
 - The line chart legend fix is specific to the Explore plugin's line visualization
 - The popover fix is specific to the workspace data source association component
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #9911](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9911): Line chart legend fix
+- [PR #9993](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9993): Popover toggle fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9911](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9911) | Disable legend for line chart when it is 1 metric and 1 date |
 | [#9993](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9993) | Fix popover not close if double click |
-
-## References
-
-- [PR #9911](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9911): Line chart legend fix
-- [PR #9993](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9993): Popover toggle fix
 
 ## Related Feature Report
 

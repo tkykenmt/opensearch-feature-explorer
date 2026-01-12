@@ -91,17 +91,17 @@ After the fix, error responses return appropriate status codes:
 - PR #112 listed in the issue is a version increment PR (v1.3.13.0), not a bugfix
 - These fixes are specific to the Dashboards Query Workbench plugin
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Workbench Documentation](https://docs.opensearch.org/2.18/dashboards/query-workbench/)
+- [Multi Data Source Documentation](https://docs.opensearch.org/2.18/dashboards/data-sources/configuring-and-using-multiple-data-sources/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#401](https://github.com/opensearch-project/dashboards-query-workbench/pull/401) | Fix workbench routes to support modal mounting |
 | [#408](https://github.com/opensearch-project/dashboards-query-workbench/pull/408) | Added error handling for API calls |
-
-## References
-
-- [Query Workbench Documentation](https://docs.opensearch.org/2.18/dashboards/query-workbench/)
-- [Multi Data Source Documentation](https://docs.opensearch.org/2.18/dashboards/data-sources/configuring-and-using-multiple-data-sources/)
 
 ## Related Feature Report
 

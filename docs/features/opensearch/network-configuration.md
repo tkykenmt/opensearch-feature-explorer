@@ -95,18 +95,20 @@ SystemCallFilter=@system-service
 - System call filters require kernel support for seccomp
 - Systemd service hardening may conflict with OpenSearch security requirements
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-10): Fixed systemd service file to allow seccomp system call, enabling proper startup with `network.host: 0.0.0.0`
+
+## References
+
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration guide
+- [Compatible Operating Systems](https://docs.opensearch.org/3.0/install-and-configure/os-comp/): Supported Linux distributions
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#18309](https://github.com/opensearch-project/OpenSearch/pull/18309) | Add seccomp in systemd config |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18273](https://github.com/opensearch-project/OpenSearch/issues/18273): Bug report - fails to start on Debian with network.host: 0.0.0.0
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official network configuration guide
-- [Compatible Operating Systems](https://docs.opensearch.org/3.0/install-and-configure/os-comp/): Supported Linux distributions
-
-## Change History
-
-- **v3.1.0** (2026-01-10): Fixed systemd service file to allow seccomp system call, enabling proper startup with `network.host: 0.0.0.0`

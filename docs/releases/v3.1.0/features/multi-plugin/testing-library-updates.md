@@ -72,17 +72,17 @@ The index-management-dashboards-plugin PR also included:
 - Tests must be updated to use async/await pattern when calling user event methods
 - The `userEvent.setup()` call should be placed at the describe block level for optimal performance
 
-## Related PRs
+## References
 
+### Documentation
+- [@testing-library/user-event v14 Migration Guide](https://testing-library.com/docs/user-event/intro)
+- [GitHub: @testing-library/user-event](https://github.com/testing-library/user-event)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1042](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1042) | anomaly-detection-dashboards-plugin | Update testing-library/user-event dependency |
 | [#1321](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1321) | index-management-dashboards-plugin | Updated @testing-library/user-event dependency |
-
-## References
-
-- [@testing-library/user-event v14 Migration Guide](https://testing-library.com/docs/user-event/intro)
-- [GitHub: @testing-library/user-event](https://github.com/testing-library/user-event)
 
 ## Related Feature Report
 

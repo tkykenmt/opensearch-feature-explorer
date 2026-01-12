@@ -116,17 +116,19 @@ PUT /my-index/_settings
 - Benefits are most noticeable with indexes having multiple shards
 - Part of a larger initiative for remote store data freshness improvements
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-04-20): Initial implementation of parallel shard refresh with cluster setting control
+
+## References
+
+### Documentation
+- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation on refresh operations
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#17782](https://github.com/opensearch-project/OpenSearch/pull/17782) | Implement parallel shard refresh behind cluster settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes
-- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation on refresh operations
-
-## Change History
-
-- **v3.1.0** (2025-04-20): Initial implementation of parallel shard refresh with cluster setting control

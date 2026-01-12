@@ -94,16 +94,18 @@ POST /my-index/_search
 - This fix specifically addresses the `ClassValue` behavioral change in JDK 25
 - Other JDK 25 compatibility issues may require separate fixes
 
-## Related PRs
+## References
 
+### Documentation
+- [JDK-8351996](https://bugs.openjdk.org/browse/JDK-8351996): Behavioral updates for ClassValue::remove
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19706](https://github.com/opensearch-project/OpenSearch/pull/19706) | Wrap checked exceptions in painless.DefBootstrap to support JDK-25 |
 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | Update bundled JDK to JDK-25 (depends on this fix) |
 
-## References
-
-- [JDK-8351996](https://bugs.openjdk.org/browse/JDK-8351996): Behavioral updates for ClassValue::remove
+### Issues (Design / RFC)
 - [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): JDK 25 support tracking issue
 
 ## Related Feature Report

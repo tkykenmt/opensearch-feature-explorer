@@ -85,16 +85,18 @@ PUT /_cluster/settings
 - Part of a larger initiative to improve data freshness for remote store indexes
 - Performance benefits are most noticeable with indexes having multiple shards
 
-## Related PRs
+## References
 
+### Documentation
+- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation on refresh operations
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17782](https://github.com/opensearch-project/OpenSearch/pull/17782) | Implement parallel shard refresh behind cluster settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes
-- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation on refresh operations
 
 ## Related Feature Report
 

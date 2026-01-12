@@ -164,20 +164,22 @@ datasetManagement.aliasedAsIndexPattern: false
 - Only three signal types are currently supported (logs, metrics, traces)
 - Filtering is binary (traces vs non-traces) in the current implementation
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Initial implementation with SignalType filtering, configurable dataset types, and dataset management plugin
+
+## References
+
+### Documentation
+- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/)
+
+### Blog Posts
+- [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#10355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10355) | Update for datasets, redirection, and accordion timeline |
 | v3.3.0 | [#10379](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10379) | Allow apps to configure available types in the dataset explorer |
 | v3.3.0 | [#10491](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10491) | Introduce dataset SignalType |
 | v3.3.0 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Dataset type and management |
-
-## References
-
-- [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/)
-- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/)
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Initial implementation with SignalType filtering, configurable dataset types, and dataset management plugin

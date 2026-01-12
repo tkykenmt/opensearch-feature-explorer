@@ -132,18 +132,18 @@ azure.client.default.proxy.port: 1080
 - When using token credentials, they take precedence over storage account keys or SAS tokens
 - SOCKS5 proxy authentication requires credentials to be stored in the OpenSearch keystore
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18904](https://github.com/opensearch-project/OpenSearch/pull/18904) | Fix socks5 user password settings for Azure repo |
+- **v3.2.0** (2025-08-05): Fixed SOCKS5 proxy authentication - credentials now properly set via ProxyOptions.setCredentials() instead of JDK Authenticator
 
 ## References
 
+### Documentation
 - [OpenSearch Snapshot and Restore Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/)
 - [Azure Blob Storage Introduction](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction)
 - [Azure SDK ProxyOptions](https://learn.microsoft.com/en-us/java/api/com.azure.core.http.proxyoptions)
 
-## Change History
-
-- **v3.2.0** (2025-08-05): Fixed SOCKS5 proxy authentication - credentials now properly set via ProxyOptions.setCredentials() instead of JDK Authenticator
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#18904](https://github.com/opensearch-project/OpenSearch/pull/18904) | Fix socks5 user password settings for Azure repo |

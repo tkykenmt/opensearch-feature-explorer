@@ -126,18 +126,18 @@ To use CMK encryption:
 - Existing unencrypted data cannot be read with CMK parameters enabled
 - Cross-region KMS access requires Multi-Region Keys (MRK)
 
-## Related PRs
+## References
 
+### Documentation
+- [AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/what-is-database-encryption-sdk.html): AWS documentation for database encryption
+- [AWS KMS Multi-Region Keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html): Multi-region key documentation
+- [Release Notes v3.4.0](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/release-notes/opensearch-opensearch-remote-metadata-sdk.release-notes-3.4.0.0.md): Official release notes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271) | Add CMK support to accept CMK to encrypt/decrypt customer data |
 | [#295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295) | Add assume role for CMK |
-
-## References
-
-- [Release Notes v3.4.0](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/release-notes/opensearch-opensearch-remote-metadata-sdk.release-notes-3.4.0.0.md): Official release notes
-- [AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/what-is-database-encryption-sdk.html): AWS documentation for database encryption
-- [AWS KMS Multi-Region Keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html): Multi-region key documentation
 
 ## Related Feature Report
 

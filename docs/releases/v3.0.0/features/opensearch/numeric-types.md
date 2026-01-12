@@ -94,16 +94,18 @@ No migration required. This is a bug fix that makes `unsigned_long` fields work 
 - The `unsigned_long` field type still cannot be used as an index sort field
 - Aggregations across mixed numeric types with `unsigned_long` may lose precision due to `double` conversion
 
-## Related PRs
+## References
 
+### Documentation
+- [Unsigned Long Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/unsigned-long/): Official docs for unsigned_long field type
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17207](https://github.com/opensearch-project/OpenSearch/pull/17207) | Fix Bug - Handle unsigned long in sorting order assertion of LongHashSet |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17206](https://github.com/opensearch-project/OpenSearch/issues/17206): Bug report - Sorted Order Assertion in LongHashSet.java is incorrect
-- [Unsigned Long Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/unsigned-long/): Official docs for unsigned_long field type
 
 ## Related Feature Report
 

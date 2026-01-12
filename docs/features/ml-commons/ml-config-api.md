@@ -121,17 +121,17 @@ The API includes built-in security measures:
 - Cannot retrieve the `MASTER_KEY` configuration for security reasons
 - Requires the ML Commons plugin to be installed and enabled
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2850](https://github.com/opensearch-project/ml-commons/pull/2850) | Expose ML Config API |
-
-## References
-
-- [ML Commons APIs](https://docs.opensearch.org/latest/ml-commons-plugin/api/index/): Official API documentation
-- [ML Commons cluster settings](https://docs.opensearch.org/latest/ml-commons-plugin/cluster-settings/): Configuration settings reference
-
 ## Change History
 
 - **v2.17.0** (2024-09-17): Initial exposure of ML Config API through MachineLearningClient interface
+
+## References
+
+### Documentation
+- [ML Commons APIs](https://docs.opensearch.org/latest/ml-commons-plugin/api/index/): Official API documentation
+- [ML Commons cluster settings](https://docs.opensearch.org/latest/ml-commons-plugin/cluster-settings/): Configuration settings reference
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#2850](https://github.com/opensearch-project/ml-commons/pull/2850) | Expose ML Config API |

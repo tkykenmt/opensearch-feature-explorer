@@ -64,17 +64,19 @@ Plugin developers maintaining forks or custom builds of the Reporting plugin sho
 - Tests must run with the Java Agent enabled
 - Not backward compatible with OpenSearch 2.x
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting plugin documentation
+- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Phase off SecurityManager usage in favor of Java Agent
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1085](https://github.com/opensearch-project/reporting/pull/1085) | Fix build due to phasing off SecurityManager usage in favor of Java Agent |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16634](https://github.com/opensearch-project/OpenSearch/issues/16634): META - Replace Java Security Manager
-- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Phase off SecurityManager usage in favor of Java Agent
-- [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting plugin documentation
 
 ## Related Feature Report
 

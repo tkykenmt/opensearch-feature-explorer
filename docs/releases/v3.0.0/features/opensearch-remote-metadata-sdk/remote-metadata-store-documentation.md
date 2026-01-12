@@ -81,18 +81,18 @@ sdkClient.getDataObjectAsync(getDataObjectRequest)
 - Manual index/table creation required before using the SDK
 - Currently unused thread pool parameter may be needed in future implementations
 
-## Related PRs
+## References
 
+### Documentation
+- [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
+- [PR #124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124): Add a developer guide
+- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/DEVELOPER_GUIDE.md): Full developer guide
+- [SDK Client Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124) | Add a developer guide |
-
-## References
-
-- [PR #124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124): Add a developer guide
-- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/DEVELOPER_GUIDE.md): Full developer guide
-- [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
-- [SDK Client Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
 
 ## Related Feature Report
 

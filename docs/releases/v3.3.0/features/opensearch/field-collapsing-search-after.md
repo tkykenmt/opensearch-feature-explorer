@@ -89,16 +89,18 @@ GET /my-index/_search
 - Cannot be used with scroll context (unchanged)
 - Cannot be used with rescore (unchanged)
 
-## Related PRs
+## References
 
+### Documentation
+- [Collapse search results documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/collapse-search/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19261](https://github.com/opensearch-project/OpenSearch/pull/19261) | Field collapsing supports search_after |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3725](https://github.com/opensearch-project/OpenSearch/issues/3725): Original feature request
-- [Collapse search results documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/collapse-search/): Official docs
 
 ## Related Feature Report
 

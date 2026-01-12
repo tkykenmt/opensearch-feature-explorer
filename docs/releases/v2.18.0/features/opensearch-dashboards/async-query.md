@@ -133,18 +133,18 @@ type IDataFramePollingResponse = {
 - Time filter support for async PPL queries is pending (noted as TODO)
 - Only S3 datasets use async strategies; OpenSearch indexes use synchronous strategies
 
-## Related PRs
+## References
 
+### Documentation
+- [Scheduled Query Acceleration](https://docs.opensearch.org/2.18/dashboards/management/scheduled-query-acceleration/): SQA documentation
+- [SQL and PPL](https://docs.opensearch.org/2.18/search-plugins/sql/index/): SQL/PPL plugin documentation
+- [Query Workbench](https://docs.opensearch.org/2.18/dashboards/query-workbench/): Query Workbench documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8481](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8481) | Add logic to poll for async query result |
 | [#8706](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8706) | Add support for async PPL to Discover |
-
-## References
-
-- [Scheduled Query Acceleration](https://docs.opensearch.org/2.18/dashboards/management/scheduled-query-acceleration/): SQA documentation
-- [SQL and PPL](https://docs.opensearch.org/2.18/search-plugins/sql/index/): SQL/PPL plugin documentation
-- [Query Workbench](https://docs.opensearch.org/2.18/dashboards/query-workbench/): Query Workbench documentation
 
 ## Related Feature Report
 

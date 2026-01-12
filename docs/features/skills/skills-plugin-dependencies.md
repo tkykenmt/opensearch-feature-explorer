@@ -65,7 +65,18 @@ The Skills plugin follows automated dependency management using Mend (formerly W
 - ByteBuddy version must be compatible with Mockito version
 - Test fixes may be needed when dependent plugins change their APIs
 
-## Related PRs
+## Change History
+- **v2.18.0** (2024-10-29): Updated Mockito to 5.14.2, JUnit5 to 5.11.2, ByteBuddy to 1.15.4, Gradle to 8.10.2, Lombok plugin to 8.10.2; Fixed test failures from AnomalyDetector API changes
+
+## References
+
+### Documentation
+- [Mockito Documentation](https://site.mockito.org/)
+- [Gradle Documentation](https://docs.gradle.org/)
+- [Skills Plugin Repository](https://github.com/opensearch-project/skills)
+- [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#427](https://github.com/opensearch-project/skills/pull/427) | Fix test failure due to external change |
@@ -75,12 +86,3 @@ The Skills plugin follows automated dependency management using Mend (formerly W
 | v2.18.0 | [#279](https://github.com/opensearch-project/skills/pull/279) | Update byte-buddy-agent to v1.15.4 |
 | v2.18.0 | [#432](https://github.com/opensearch-project/skills/pull/432) | Update Gradle to v8.10.2 |
 | v2.18.0 | [#434](https://github.com/opensearch-project/skills/pull/434) | Update io.freefair.lombok to v8.10.2 |
-
-## References
-- [Skills Plugin Repository](https://github.com/opensearch-project/skills)
-- [Mockito Documentation](https://site.mockito.org/)
-- [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
-- [Gradle Documentation](https://docs.gradle.org/)
-
-## Change History
-- **v2.18.0** (2024-10-29): Updated Mockito to 5.14.2, JUnit5 to 5.11.2, ByteBuddy to 1.15.4, Gradle to 8.10.2, Lombok plugin to 8.10.2; Fixed test failures from AnomalyDetector API changes

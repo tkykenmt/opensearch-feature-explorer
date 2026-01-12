@@ -140,18 +140,18 @@ BulkRequestBody {
 
 - The `object` field fallback for update operations is deprecated and will be removed in a future release.
 
-## Related PRs
+## References
 
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official gRPC documentation
+- [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20010](https://github.com/opensearch-project/OpenSearch/pull/20010) | Fix ClassCastException in FlightClientChannel for requests larger than 16KB |
 | [#19937](https://github.com/opensearch-project/OpenSearch/pull/19937) | Fix GRPC Bulk - update doc field, fetchSource default, pipeline support, zero-copy |
 | [#19948](https://github.com/opensearch-project/OpenSearch/pull/19948) | Fix node bootstrap error when enable stream transport and remote cluster state |
-
-## References
-
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official gRPC documentation
-- [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
 
 ## Related Feature Report
 

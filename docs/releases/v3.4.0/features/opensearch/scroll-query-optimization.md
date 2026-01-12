@@ -108,17 +108,19 @@ No migration required. This is a transparent performance improvement that applie
 - Cached readers are cleaned up when the scroll context is closed
 - Thread safety note: Scroll requests are serialized (client waits for response before sending next request), so the cache is safe for sequential single-threaded access across different threads
 
-## Related PRs
+## References
 
+### Documentation
+- [Scroll API Documentation](https://docs.opensearch.org/3.4/api-reference/search-apis/scroll/)
+- [OpenSearch Benchmark big5 Workload](https://github.com/opensearch-project/opensearch-benchmark-workloads/blob/main/big5/operations/default.json)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) | Cache the `StoredFieldsReader` for scroll query optimization |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16262](https://github.com/opensearch-project/OpenSearch/issues/16262): Performance degradation with Scroll API in OpenSearch versions >= 2.6
-- [Scroll API Documentation](https://docs.opensearch.org/3.4/api-reference/search-apis/scroll/)
-- [OpenSearch Benchmark big5 Workload](https://github.com/opensearch-project/opensearch-benchmark-workloads/blob/main/big5/operations/default.json)
 
 ## Related Feature Report
 

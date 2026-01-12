@@ -39,15 +39,15 @@ No migration required. This is a CI infrastructure change that does not affect p
 - `actions/upload-artifact@v3` has different retention and artifact handling compared to v1/v2
 - Future upgrades to v4 may be needed as GitHub continues to deprecate older versions
 
-## Related PRs
+## References
 
+### Blog Posts
+- [GitHub Blog: Deprecation notice for v1 and v2 of artifact actions](https://github.blog/changelog/2024-02-13-deprecation-notice-v1-and-v2-of-the-artifact-actions/): Official deprecation announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#117](https://github.com/opensearch-project/query-insights/pull/117) | Upgrade deprecated actions/upload-artifact versions to v3 |
-
-## References
-
-- [GitHub Blog: Deprecation notice for v1 and v2 of artifact actions](https://github.blog/changelog/2024-02-13-deprecation-notice-v1-and-v2-of-the-artifact-actions/): Official deprecation announcement
 
 ## Related Feature Report
 

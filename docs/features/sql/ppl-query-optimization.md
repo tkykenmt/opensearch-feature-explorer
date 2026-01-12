@@ -286,8 +286,22 @@ calcite:
 - Sort pushdown for complex expressions requires Calcite engine
 - Some functions are not pushdown-compatible and execute post-aggregation
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Added sort pushdown for complex expressions, sort after limit, sort on aggregation metrics, distinct count approx pushdown, case-to-range aggregation, fillnull command enhancement, YAML explain format, configurable subsearch/join limits, composite bucket size configuration, and internal map/JSON functions
+- **v3.3.0** (2025-10-01): Added single group-by optimization, filtered aggregation pushdown, limit pushdown, SUM literal optimization, earliest/latest pushdown, and auto_date_histogram support
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+- [OpenSearch Aggregations](https://docs.opensearch.org/3.0/aggregations/)
+- [SQL and PPL API](https://docs.opensearch.org/3.0/search-plugins/sql/sql-ppl-api/)
+
+### Blog Posts
+- [OpenSearch PPL Blog: Lookup, Join, and Subsearch](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4750](https://github.com/opensearch-project/sql/pull/4750) | Pushdown sort by complex expressions |
@@ -305,18 +319,8 @@ calcite:
 | v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Limit pushdown into bucket size |
 | v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Auto date histogram pushdown |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4201](https://github.com/opensearch-project/sql/issues/4201): Pushdown case function in aggregations
 - [Issue #4282](https://github.com/opensearch-project/sql/issues/4282): Pushdown sort aggregate metrics
 - [Issue #3912](https://github.com/opensearch-project/sql/issues/3912): Pushdown sort by complex expressions
 - [Issue #3528](https://github.com/opensearch-project/sql/issues/3528): Span query slower than date histogram
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
-- [OpenSearch Aggregations](https://docs.opensearch.org/3.0/aggregations/)
-- [SQL and PPL API](https://docs.opensearch.org/3.0/search-plugins/sql/sql-ppl-api/)
-- [OpenSearch PPL Blog: Lookup, Join, and Subsearch](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/)
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Added sort pushdown for complex expressions, sort after limit, sort on aggregation metrics, distinct count approx pushdown, case-to-range aggregation, fillnull command enhancement, YAML explain format, configurable subsearch/join limits, composite bucket size configuration, and internal map/JSON functions
-- **v3.3.0** (2025-10-01): Added single group-by optimization, filtered aggregation pushdown, limit pushdown, SUM literal optimization, earliest/latest pushdown, and auto_date_histogram support

@@ -242,8 +242,23 @@ Forecasting uses the same security framework as anomaly detection:
 - Forecast accuracy declines with longer horizons
 - Custom result indexes require separate lifecycle management
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-07-08): Bug fixes for task state handling, date format compatibility, cold-start/window delay refinements, UI validation and error display improvements, missing data error surfacing, Create Forecaster UI enhancements
+
+## References
+
+### Documentation
+- [Forecasting Documentation](https://docs.opensearch.org/3.1/observing-your-data/forecast/index/): Official documentation
+- [Getting Started with Forecasting](https://docs.opensearch.org/3.1/observing-your-data/forecast/getting-started/): Setup guide
+- [Managing Forecasters](https://docs.opensearch.org/3.1/observing-your-data/forecast/managing-forecasters/): Lifecycle management
+- [Forecasting Security](https://docs.opensearch.org/3.1/observing-your-data/forecast/security/): Security configuration
+- [Forecasting API](https://docs.opensearch.org/3.1/observing-your-data/forecast/api/): API reference
+
+### Blog Posts
+- [One Million Entities Blog](https://opensearch.org/blog/one-million-enitities-in-one-minute/): High-cardinality performance
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#1489](https://github.com/opensearch-project/anomaly-detection/pull/1489) | Fix incorrect task state handling |
@@ -254,16 +269,3 @@ Forecasting uses the same security framework as anomaly detection:
 | v3.1.0 | [#1047](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1047) | Validation and error display improvements |
 | v3.1.0 | [#1050](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1050) | Missing data error surfacing |
 | v3.1.0 | [#1052](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1052) | Create Forecaster UI improvements |
-
-## References
-
-- [Forecasting Documentation](https://docs.opensearch.org/3.1/observing-your-data/forecast/index/): Official documentation
-- [Getting Started with Forecasting](https://docs.opensearch.org/3.1/observing-your-data/forecast/getting-started/): Setup guide
-- [Managing Forecasters](https://docs.opensearch.org/3.1/observing-your-data/forecast/managing-forecasters/): Lifecycle management
-- [Forecasting Security](https://docs.opensearch.org/3.1/observing-your-data/forecast/security/): Security configuration
-- [Forecasting API](https://docs.opensearch.org/3.1/observing-your-data/forecast/api/): API reference
-- [One Million Entities Blog](https://opensearch.org/blog/one-million-enitities-in-one-minute/): High-cardinality performance
-
-## Change History
-
-- **v3.1.0** (2025-07-08): Bug fixes for task state handling, date format compatibility, cold-start/window delay refinements, UI validation and error display improvements, missing data error surfacing, Create Forecaster UI enhancements

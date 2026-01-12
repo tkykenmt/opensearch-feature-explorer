@@ -92,8 +92,25 @@ jobs:
 - Node.js runtime version changes may affect custom JavaScript actions
 - Some actions require specific permissions in workflow files
 
-## Related PRs
+## Change History
 
+- **v3.4.0**: Updated multiple GitHub Actions to support Node.js 24 runtime
+
+## References
+
+### Documentation
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [actions/checkout](https://github.com/actions/checkout)
+- [actions/setup-java](https://github.com/actions/setup-java)
+- [actions/upload-artifact](https://github.com/actions/upload-artifact)
+- [actions/download-artifact](https://github.com/actions/download-artifact)
+- [github/codeql-action](https://github.com/github/codeql-action)
+- [stefanzweifel/git-auto-commit-action](https://github.com/stefanzweifel/git-auto-commit-action)
+- [derek-ho/start-opensearch](https://github.com/derek-ho/start-opensearch)
+- [derek-ho/setup-opensearch-dashboards](https://github.com/derek-ho/setup-opensearch-dashboards)
+- [Wandalen/wretry.action](https://github.com/Wandalen/wretry.action)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [security#5810](https://github.com/opensearch-project/security/pull/5810) | Bump actions/checkout from 5 to 6 |
@@ -107,20 +124,3 @@ jobs:
 | v3.4.0 | [security-dashboards-plugin#2323](https://github.com/opensearch-project/security-dashboards-plugin/pull/2323) | Bump actions/setup-java from 4 to 5 |
 | v3.4.0 | [security-dashboards-plugin#2322](https://github.com/opensearch-project/security-dashboards-plugin/pull/2322) | Bump Wandalen/wretry.action from 3.3.0 to 3.8.0 |
 | v3.4.0 | [security-dashboards-plugin#2321](https://github.com/opensearch-project/security-dashboards-plugin/pull/2321) | Bump derek-ho/setup-opensearch-dashboards from 1 to 3 |
-
-## References
-
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [actions/checkout](https://github.com/actions/checkout)
-- [actions/setup-java](https://github.com/actions/setup-java)
-- [actions/upload-artifact](https://github.com/actions/upload-artifact)
-- [actions/download-artifact](https://github.com/actions/download-artifact)
-- [github/codeql-action](https://github.com/github/codeql-action)
-- [stefanzweifel/git-auto-commit-action](https://github.com/stefanzweifel/git-auto-commit-action)
-- [derek-ho/start-opensearch](https://github.com/derek-ho/start-opensearch)
-- [derek-ho/setup-opensearch-dashboards](https://github.com/derek-ho/setup-opensearch-dashboards)
-- [Wandalen/wretry.action](https://github.com/Wandalen/wretry.action)
-
-## Change History
-
-- **v3.4.0**: Updated multiple GitHub Actions to support Node.js 24 runtime

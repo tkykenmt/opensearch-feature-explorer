@@ -71,8 +71,12 @@ source=table1 | join left=t1 right=t2 on t1.id=t2.id table2 | fields t1.id, t2.i
 - Script filter pushdown is disabled for struct type fields in v2 engine (Calcite engine doesn't support script pushdown)
 - Alias fields pointing to text type require using the original field's keyword for filter operations
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.1/search-plugins/sql/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3693](https://github.com/opensearch-project/sql/pull/3693) | Fix error when pushing down script filter with struct field |
@@ -93,8 +97,7 @@ source=table1 | join left=t1 right=t2 on t1.id=t2.id table2 | fields t1.id, t2.i
 | [#3649](https://github.com/opensearch-project/sql/pull/3649) | Create a new directory org/opensearch/direct-query/ |
 | [#3622](https://github.com/opensearch-project/sql/pull/3622) | Add a TPC-H PPL query suite |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1469](https://github.com/opensearch-project/sql/issues/1469): Long IN-lists causes crash
 - [Issue #3312](https://github.com/opensearch-project/sql/issues/3312): Script filter with struct field error
 - [Issue #3646](https://github.com/opensearch-project/sql/issues/3646): Alias type referring to nested field
@@ -103,7 +106,6 @@ source=table1 | join left=t1 right=t2 on t1.id=t2.id table2 | fields t1.id, t2.i
 - [Issue #3672](https://github.com/opensearch-project/sql/issues/3672): ATAN and CONV function bugs
 - [Issue #3611](https://github.com/opensearch-project/sql/issues/3611): UNIX_TIMESTAMP precision
 - [Issue #3102](https://github.com/opensearch-project/sql/issues/3102): Limit with offset exceeds maxResultWindow
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.1/search-plugins/sql/index/)
 
 ## Related Feature Report
 

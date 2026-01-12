@@ -99,8 +99,13 @@ java {
 - Some repositories use Gradle 9.2.0, others use 9.2.1 depending on merge timing
 - Kotlin version upgrades were included in some but not all repositories
 
-## Related PRs
+## References
 
+### Documentation
+- [Gradle 9.2 Release Notes](https://docs.gradle.org/9.2/release-notes.html): Official Gradle 9.2 release notes
+- [JDK 25 Release](https://openjdk.org/projects/jdk/25/): OpenJDK 25 project page
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#2984](https://github.com/opensearch-project/k-NN/pull/2984) | k-NN | Gradle 9.2.0 and GitHub Actions JDK 25 Upgrade |
@@ -109,13 +114,10 @@ java {
 | [#1667](https://github.com/opensearch-project/neural-search/pull/1667) | neural-search | Update to Gradle 9.2 and run CI checks with JDK 25 |
 | [#1618](https://github.com/opensearch-project/security/pull/1618) | security | JDK upgrade to 25 and gradle upgrade to 9.2 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2976](https://github.com/opensearch-project/k-NN/issues/2976): k-NN Gradle/JDK upgrade tracking
 - [Issue #1977](https://github.com/opensearch-project/alerting/issues/1977): Alerting Gradle/JDK upgrade tracking
 - [Issue #4389](https://github.com/opensearch-project/ml-commons/issues/4389): ml-commons Gradle/JDK upgrade tracking
-- [Gradle 9.2 Release Notes](https://docs.gradle.org/9.2/release-notes.html): Official Gradle 9.2 release notes
-- [JDK 25 Release](https://openjdk.org/projects/jdk/25/): OpenJDK 25 project page
 
 ## Related Feature Report
 

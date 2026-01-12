@@ -130,19 +130,21 @@ Creating a Prometheus data connection:
 - MDS support for Prometheus may be simplified in future releases (see PR #11154)
 - Saved objects are stored in the local OpenSearch cluster, not in remote MDS clusters
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Official documentation
+- [Multi-Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring multiple data sources
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10968](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10968) | Create saved object for prometheus data-connection |
 | [#11154](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11154) | Remove MDS support for Prometheus (follow-up) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1741](https://github.com/tkykenmt/opensearch-feature-explorer/issues/1741): Feature tracking issue
 - [RFC #9535](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9535): Prometheus as first-class datasource proposal
-- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Official documentation
-- [Multi-Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring multiple data sources
 
 ## Related Feature Report
 

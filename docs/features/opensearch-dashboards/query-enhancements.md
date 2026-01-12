@@ -113,8 +113,19 @@ source = logs-* | where status >= 400 | head 100
 - S3 connections only support SQL and PPL (not DQL or Lucene)
 - Async query polling may have latency depending on query complexity
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-03-11): PPL query bugfixes - grammar parsing in auto-suggest, timezone handling for time columns, millisecond precision in date fields, error message display in query editors, time range handling for non-search queries
+- **v2.18.0** (2024-11-05): Bug fixes for async polling, error handling, language compatibility, saved query persistence; Added extensibility for custom search strategies via `defineSearchStrategyRoute`; Added keyboard shortcut (Cmd/Ctrl+Enter) for query execution; Exposed datasets and data_frames modules for external plugin imports
+
+## References
+
+### Documentation
+- [Dashboards Query Language (DQL)](https://docs.opensearch.org/3.0/dashboards/dql/): Official DQL documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL language reference
+- [Query Workbench](https://docs.opensearch.org/3.0/dashboards/query-workbench/): SQL/PPL query interface documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9120](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9120) | Fix PPL grammar parsing issues in auto-suggest |
@@ -132,14 +143,3 @@ source = logs-* | where status >= 400 | head 100
 | v2.18.0 | [#8743](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8743) | Fix error handling in query enhancement facet |
 | v2.18.0 | [#8749](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8749) | Updates query and language if language is not supported by query data |
 | v2.18.0 | [#8771](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8771) | Fix error handling for ppl jobs API |
-
-## References
-
-- [Dashboards Query Language (DQL)](https://docs.opensearch.org/3.0/dashboards/dql/): Official DQL documentation
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL language reference
-- [Query Workbench](https://docs.opensearch.org/3.0/dashboards/query-workbench/): SQL/PPL query interface documentation
-
-## Change History
-
-- **v3.0.0** (2025-03-11): PPL query bugfixes - grammar parsing in auto-suggest, timezone handling for time columns, millisecond precision in date fields, error message display in query editors, time range handling for non-search queries
-- **v2.18.0** (2024-11-05): Bug fixes for async polling, error handling, language compatibility, saved query persistence; Added extensibility for custom search strategies via `defineSearchStrategyRoute`; Added keyboard shortcut (Cmd/Ctrl+Enter) for query execution; Exposed datasets and data_frames modules for external plugin imports

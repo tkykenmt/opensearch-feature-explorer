@@ -120,16 +120,18 @@ GET /_cat/shards?v&h=index,shard,prirep,merges.warmer.ongoing_count
 - Requires segment replication (`replication.type: SEGMENT`)
 - Experimental feature requiring feature flag: `opensearch.experimental.feature.merged_segment_warmer.enabled: true`
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #18683](https://github.com/opensearch-project/OpenSearch/pull/18683): Remote store support for merged segment warming
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18929](https://github.com/opensearch-project/OpenSearch/pull/18929) | Add metrics for the merged segment warmer feature |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment into Segment Replication
-- [PR #18683](https://github.com/opensearch-project/OpenSearch/pull/18683): Remote store support for merged segment warming
 
 ## Related Feature Report
 

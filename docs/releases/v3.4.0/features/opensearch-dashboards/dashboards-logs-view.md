@@ -91,17 +91,17 @@ No migration required. The new UI is automatically available when viewing trace 
 - Log correlation requires pre-configured correlation saved objects
 - Empty datasets show "No logs found for this dataset" message
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703): Initial redesign implementation
+- [PR #10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716): Multiple dataset support
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Redesigned logs tab with accordion and expandable rows |
 | [#10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716) | Added support for multiple log datasets with accordion display |
-
-## References
-
-- [PR #10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703): Initial redesign implementation
-- [PR #10716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10716): Multiple dataset support
 
 ## Related Feature Report
 

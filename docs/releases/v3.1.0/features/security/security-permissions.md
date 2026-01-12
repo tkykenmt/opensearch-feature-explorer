@@ -104,19 +104,19 @@ forecast_read_access:
 - The forecast roles are specific to the Forecasting plugin and do not cover Anomaly Detection (which has separate `anomaly_read_access` and `anomaly_full_access` roles)
 - Cross-cluster forecasting requires additional cluster connectivity configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Security Permissions Documentation](https://docs.opensearch.org/3.0/security/access-control/permissions/)
+- [Defining Users and Roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/)
+- [Security Dashboards Plugin PR #2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253): Frontend dropdown update for forecast permissions
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5386](https://github.com/opensearch-project/security/pull/5386) | Add forecast roles and permissions |
 | [#5405](https://github.com/opensearch-project/security/pull/5405) | Add missing cluster:monitor permission |
 | [#5412](https://github.com/opensearch-project/security/pull/5412) | Add missing mapping get permission |
-
-## References
-
-- [Security Dashboards Plugin PR #2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253): Frontend dropdown update for forecast permissions
-- [OpenSearch Security Permissions Documentation](https://docs.opensearch.org/3.0/security/access-control/permissions/)
-- [Defining Users and Roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/)
 
 ## Related Feature Report
 

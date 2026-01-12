@@ -122,18 +122,20 @@ GET /products/_search
 - Total hits reflects all matching documents before collapsing, not the number of collapsed groups
 - Aggregations are not affected by collapse (computed on all matching documents)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026): Added `search_after` pagination support for field collapsing (requires collapse field = sort field)
+
+## References
+
+### Documentation
+- [Collapse search results documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/collapse-search/): Official documentation
+- [Collapse processor documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/collapse-processor/): Search pipeline collapse processor
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19261](https://github.com/opensearch-project/OpenSearch/pull/19261) | Field collapsing supports search_after |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3725](https://github.com/opensearch-project/OpenSearch/issues/3725): Feature request for search_after support
-- [Collapse search results documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/collapse-search/): Official documentation
-- [Collapse processor documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/collapse-processor/): Search pipeline collapse processor
-
-## Change History
-
-- **v3.3.0** (2026): Added `search_after` pagination support for field collapsing (requires collapse field = sort field)

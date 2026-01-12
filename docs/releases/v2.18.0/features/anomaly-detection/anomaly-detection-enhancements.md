@@ -108,18 +108,18 @@ If the feature name doesn't exist or is disabled, the API will return a validati
 - Rule validation only occurs at detector creation/update time
 - Threshold value validation only applies to specific threshold types (margin and ratio types)
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.18/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection API](https://docs.opensearch.org/2.18/observing-your-data/ad/api/): API reference
+- [Suppression Rules](https://docs.opensearch.org/2.18/observing-your-data/ad/index/#suppressing-anomalies-with-threshold-based-rules): Threshold-based rule configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1341](https://github.com/opensearch-project/anomaly-detection/pull/1341) | Add rule validation in AnomalyDetector constructor |
 | [#1334](https://github.com/opensearch-project/anomaly-detection/pull/1334) | Bump RCF version and fix default rules bug in AnomalyDetector |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.18/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection API](https://docs.opensearch.org/2.18/observing-your-data/ad/api/): API reference
-- [Suppression Rules](https://docs.opensearch.org/2.18/observing-your-data/ad/index/#suppressing-anomalies-with-threshold-based-rules): Threshold-based rule configuration
 
 ## Related Feature Report
 

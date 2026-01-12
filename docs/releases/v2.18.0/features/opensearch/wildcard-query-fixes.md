@@ -133,18 +133,20 @@ GET case_test/_search
 
 - These fixes apply only to the `wildcard` field type, not to wildcard queries on `keyword` or `text` fields (which already worked correctly)
 
-## Related PRs
+## References
 
+### Documentation
+- [Wildcard Field Documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/wildcard/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15737](https://github.com/opensearch-project/OpenSearch/pull/15737) | Fix wildcard query containing escaped character |
 | [#15882](https://github.com/opensearch-project/OpenSearch/pull/15882) | Fix case-insensitive query on wildcard field |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15555](https://github.com/opensearch-project/OpenSearch/issues/15555): Bug report for escaped wildcard character handling
 - [Issue #15855](https://github.com/opensearch-project/OpenSearch/issues/15855): Bug report for case-insensitive query issue
-- [Wildcard Field Documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/wildcard/): Official documentation
 
 ## Related Feature Report
 

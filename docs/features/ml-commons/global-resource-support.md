@@ -139,19 +139,19 @@ Any tenant can then create models using this global connector.
 - Global resources must be managed by administrators with appropriate permissions
 - The `isGlobalResource()` check adds latency to model deployment (mitigated by caching)
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4003](https://github.com/opensearch-project/ml-commons/pull/4003) | Add global resource support |
-
-## References
-
-- [PR #4003](https://github.com/opensearch-project/ml-commons/pull/4003): Main implementation
-- [Remote Metadata SDK](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
-- [Multi-tenancy Documentation](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy configuration
-- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/): ML Commons configuration reference
-
 ## Change History
 
 - **v3.3.0** (2025-09-24): Initial implementation with support for global connectors, models, and agents; async model initialization; DynamoDB integration via remote metadata SDK
+
+## References
+
+### Documentation
+- [Multi-tenancy Documentation](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy configuration
+- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/): ML Commons configuration reference
+- [PR #4003](https://github.com/opensearch-project/ml-commons/pull/4003): Main implementation
+- [Remote Metadata SDK](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#4003](https://github.com/opensearch-project/ml-commons/pull/4003) | Add global resource support |

@@ -161,14 +161,14 @@ sequenceDiagram
 - **No security integration**: Views do not yet integrate with document-level security or field-level security
 - **Maximum limits**: Views are limited to 25 targets, 64-character names, and 64-character index patterns
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#11957](https://github.com/opensearch-project/OpenSearch/pull/11957) | Projected Views - Initial implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #6181](https://github.com/opensearch-project/OpenSearch/issues/6181): RFC - Data projection with views
 - [Issue #3888](https://github.com/opensearch-project/security/issues/3888): Related security plugin issue
 

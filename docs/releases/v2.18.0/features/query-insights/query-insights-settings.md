@@ -70,16 +70,16 @@ PUT _cluster/settings
 - More granular grouping may result in more query groups being tracked
 - Consider adjusting `max_groups_excluding_topn` if tracking limits are reached
 
-## Related PRs
+## References
 
+### Documentation
+- [Grouping Top N Queries Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/grouping-top-n-queries/)
+- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#144](https://github.com/opensearch-project/query-insights/pull/144) | Set default true for field name and type setting |
-
-## References
-
-- [Grouping Top N Queries Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/grouping-top-n-queries/)
-- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
 
 ## Related Feature Report
 

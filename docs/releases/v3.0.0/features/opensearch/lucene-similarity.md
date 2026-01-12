@@ -107,17 +107,19 @@ PUT /my-index
 - The `LegacyBM25Similarity` class is marked as deprecated and may be removed in future versions
 - Mixed clusters during rolling upgrades may produce inconsistent scores if indexes use different defaults
 
-## Related PRs
+## References
 
+### Documentation
+- [Similarity Documentation](https://docs.opensearch.org/3.0/field-types/mapping-parameters/similarity/): Official OpenSearch docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17306](https://github.com/opensearch-project/OpenSearch/pull/17306) | Use Lucene `BM25Similarity` as default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17315](https://github.com/opensearch-project/OpenSearch/issues/17315): Deprecate `LegacyBM25Similarity` and default to `BM25Similarity`
 - [Lucene Issue #9609](https://github.com/apache/lucene/issues/9609): Related Lucene discussion
-- [Similarity Documentation](https://docs.opensearch.org/3.0/field-types/mapping-parameters/similarity/): Official OpenSearch docs
 
 ## Related Feature Report
 

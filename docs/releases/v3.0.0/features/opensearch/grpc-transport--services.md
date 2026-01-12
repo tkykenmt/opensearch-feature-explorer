@@ -155,8 +155,15 @@ SearchResponse searchResponse = searchStub.search(searchRequest);
 - **Limited service coverage**: Only Bulk and Search endpoints available initially
 - **No aggregations**: Aggregation support not yet implemented in gRPC Search API
 
-## Related PRs
+## References
 
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official docs
+- [Bulk (gRPC) Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk API reference
+- [Search (gRPC) Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search API reference
+- [Additional Plugins - transport-grpc](https://docs.opensearch.org/3.0/install-and-configure/additional-plugins/index/): Plugin installation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17796](https://github.com/opensearch-project/OpenSearch/pull/17796) | Enable TLS for Netty4GrpcServerTransport |
@@ -164,13 +171,8 @@ SearchResponse searchResponse = searchStub.search(searchRequest);
 | [#17830](https://github.com/opensearch-project/OpenSearch/pull/17830) | SearchService and Search gRPC endpoint v1 |
 | [#17888](https://github.com/opensearch-project/OpenSearch/pull/17888) | Add terms query support in Search gRPC endpoint |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official docs
-- [Bulk (gRPC) Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk API reference
-- [Search (gRPC) Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search API reference
-- [Additional Plugins - transport-grpc](https://docs.opensearch.org/3.0/install-and-configure/additional-plugins/index/): Plugin installation
 
 ## Related Feature Report
 

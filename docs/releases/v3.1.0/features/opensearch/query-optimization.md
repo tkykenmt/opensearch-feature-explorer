@@ -136,18 +136,20 @@ These optimizations are applied automatically. No migration steps are required.
   - The range query uses `INTERSECTS` relation (default)
 - **Sort optimization** applies only to approximated `match_all` queries
 
-## Related PRs
+## References
 
+### Documentation
+- [Boolean Query Documentation](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Official docs for Boolean queries
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18189](https://github.com/opensearch-project/OpenSearch/pull/18189) | Improve sort-query performance by retaining the default `totalHitsThreshold` for approximated `match_all` queries |
 | [#17655](https://github.com/opensearch-project/OpenSearch/pull/17655) | Add BooleanQuery rewrite for must_not RangeQuery clauses |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18206](https://github.com/opensearch-project/OpenSearch/issues/18206): Improve performance for approximated `match_all` sort queries
 - [Issue #17586](https://github.com/opensearch-project/OpenSearch/issues/17586): Feature Request - Rewrites for BooleanQuery
-- [Boolean Query Documentation](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Official docs for Boolean queries
 
 ## Related Feature Report
 

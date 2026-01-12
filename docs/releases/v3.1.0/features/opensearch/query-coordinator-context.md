@@ -93,15 +93,15 @@ protected QueryBuilder doRewrite(QueryRewriteContext queryRewriteContext) {
 - The `getContextVariables()` method only returns pipeline context variables when the request is a `PipelinedRequest`
 - For other `IndicesRequest` types, context variables will be empty
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17890](https://github.com/opensearch-project/OpenSearch/pull/17890) | Allow to get the search request from the QueryCoordinatorContext |
 | [#18272](https://github.com/opensearch-project/OpenSearch/pull/18272) | Use QueryCoordinatorContext for the rewrite in validate API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1211](https://github.com/opensearch-project/neural-search/issues/1211): RFC - Support Semantic Field Type to Simplify Neural Search Set Up
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Semantic field feature request
 

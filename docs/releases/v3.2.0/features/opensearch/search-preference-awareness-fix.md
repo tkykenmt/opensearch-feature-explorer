@@ -84,16 +84,18 @@ No migration required. This is a behavioral fix that makes custom preference str
 - Other preference types (`_primary`, `_local`, `_shards`, etc.) already bypassed awareness attributes
 - Weighted routing still takes precedence when configured with strict mode
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Shard Routing Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/search-shard-routing/): Official documentation on search shard routing
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18848](https://github.com/opensearch-project/OpenSearch/pull/18848) | Ignore awareness attributes when custom preference is set |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18817](https://github.com/opensearch-project/OpenSearch/issues/18817): Bug report - Custom string preference with awareness attributes does not produce consistent routing
-- [Search Shard Routing Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/search-shard-routing/): Official documentation on search shard routing
 
 ## Related Feature Report
 

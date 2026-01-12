@@ -152,20 +152,22 @@ This is a new experimental feature. To enable:
 - **Single-threaded**: One agent conversation at a time
 - **Limited Testing**: Comprehensive testing is ongoing
 
-## Related PRs
+## References
 
+### Documentation
+- [AG-UI Protocol](https://docs.ag-ui.com/introduction): Agent UI protocol specification
+- [Model Context Protocol](https://modelcontextprotocol.io/): MCP specification
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10600](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10600) | Add experimental AI Chat and Context Provider plugins |
 | [#10612](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10612) | AG-UI compliant LangGraph ReAct agent implementation |
 | [#10624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10624) | Mark context provider and chat as experimental |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #10585](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10585): AI Assistant Framework for OpenSearch Dashboards
 - [RFC #10571](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10571): Context Design and Page Tools Architecture
-- [AG-UI Protocol](https://docs.ag-ui.com/introduction): Agent UI protocol specification
-- [Model Context Protocol](https://modelcontextprotocol.io/): MCP specification
 
 ## Related Feature Report
 

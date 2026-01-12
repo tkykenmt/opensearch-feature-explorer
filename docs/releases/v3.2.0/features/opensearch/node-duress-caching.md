@@ -80,17 +80,19 @@ No migration required. This is a transparent performance optimization that maint
 - The `TimeBasedExpiryTracker` is intentionally not completely thread-safe for nanosecond-level precision; minor timing variations are tolerable
 - During the cache window, duress state changes may not be immediately reflected (up to 1 second delay)
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/): Workload management feature overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18649](https://github.com/opensearch-project/OpenSearch/pull/18649) | Make node duress values cacheable for NodeDuressTrackers |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18641](https://github.com/opensearch-project/OpenSearch/issues/18641): Latency regression due to node duress trackers
-- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/): Workload management feature overview
 
 ## Related Feature Report
 

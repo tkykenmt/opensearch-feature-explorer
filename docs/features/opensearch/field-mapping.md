@@ -141,19 +141,21 @@ A value of `19.99` with `scaling_factor: 100` is stored as `1999`.
 - When a field is ignored, it is not searchable but the document is still indexed
 - Ignored fields are tracked in the `_ignored` metadata field
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08): Fixed field-level `ignore_malformed` to properly override index-level setting; Fixed `scaled_float` `encodePoint` method bug
+
+## References
+
+### Documentation
+- [Numeric field types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official documentation
+- [Mapping parameters](https://docs.opensearch.org/3.0/field-types/mapping-parameters/index/): Mapping parameter reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18706](https://github.com/opensearch-project/OpenSearch/pull/18706) | Fix field-level ignore_malformed override |
 | v3.2.0 | [#18952](https://github.com/opensearch-project/OpenSearch/pull/18952) | Fix scaled_float encodePoint method |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16599](https://github.com/opensearch-project/OpenSearch/issues/16599): Bug report for ignore_malformed override
-- [Numeric field types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official documentation
-- [Mapping parameters](https://docs.opensearch.org/3.0/field-types/mapping-parameters/index/): Mapping parameter reference
-
-## Change History
-
-- **v3.2.0** (2025-08): Fixed field-level `ignore_malformed` to properly override index-level setting; Fixed `scaled_float` `encodePoint` method bug

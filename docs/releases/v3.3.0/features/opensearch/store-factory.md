@@ -128,15 +128,15 @@ PUT /my-index
 - Custom stores must properly implement all Store methods for compatibility
 - The `StoreFactory` interface is marked as `@ExperimentalApi`
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19091](https://github.com/opensearch-project/OpenSearch/pull/19091) | Add StoreFactory plugin interface for custom Store implementations |
 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Add subdirectory-aware store module with recovery support (first implementation) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19090](https://github.com/opensearch-project/OpenSearch/issues/19090): Feature request for custom Store implementations through plugin
 - [Issue #19131](https://github.com/opensearch-project/OpenSearch/issues/19131): Store module/plugin to handle subdirectory copying during recovery
 

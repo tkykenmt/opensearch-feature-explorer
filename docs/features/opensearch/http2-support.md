@@ -167,18 +167,20 @@ curl --http2-prior-knowledge \
 - Response ordering is not guaranteed (unlike HTTP/1.1 pipelining where responses match request order)
 - Some older clients may not support HTTP/2 upgrade mechanism
 
-## Related PRs
+## Change History
 
+- **v3.0.0**: Initial implementation with h2c support, HTTP/1.1 upgrade, and prior knowledge connections
+
+## References
+
+### Documentation
+- [Network settings documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): OpenSearch network configuration
+- [RFC 7540](https://tools.ietf.org/html/rfc7540): HTTP/2 specification
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#3847](https://github.com/opensearch-project/OpenSearch/pull/3847) | Initial HTTP/2 server-side support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3651](https://github.com/opensearch-project/OpenSearch/issues/3651): Original feature request for HTTP/2 support
-- [Network settings documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): OpenSearch network configuration
-- [RFC 7540](https://tools.ietf.org/html/rfc7540): HTTP/2 specification
-
-## Change History
-
-- **v3.0.0**: Initial implementation with h2c support, HTTP/1.1 upgrade, and prior knowledge connections

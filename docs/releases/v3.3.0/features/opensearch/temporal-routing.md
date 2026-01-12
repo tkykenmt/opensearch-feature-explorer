@@ -145,16 +145,18 @@ The search is routed only to shards containing `2023-12-15` data.
 - Only `MUST` and `FILTER` clauses in boolean queries are considered for routing extraction
 - `SHOULD` clauses are ignored as they don't guarantee document presence on specific shards
 
-## Related PRs
+## References
 
+### Documentation
+- [Routing documentation](https://docs.opensearch.org/3.3/mappings/metadata-fields/routing/): OpenSearch routing concepts
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18966](https://github.com/opensearch-project/OpenSearch/pull/18966) | Add temporal routing processors for time-based document routing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18920](https://github.com/opensearch-project/OpenSearch/issues/18920): RFC for Temporal Routing Processors
-- [Routing documentation](https://docs.opensearch.org/3.3/mappings/metadata-fields/routing/): OpenSearch routing concepts
 
 ## Related Feature Report
 

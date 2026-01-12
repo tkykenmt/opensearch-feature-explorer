@@ -77,17 +77,19 @@ These are bugfixes with no migration required. The changes are backward compatib
 
 - The remote state version fix requires all nodes in the cluster to be upgraded to benefit from the improved version handling during mixed-version rolling upgrades.
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote Cluster State Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19701](https://github.com/opensearch-project/OpenSearch/pull/19701) | Fix potential concurrent modification exception in DiscoveryNodeFilters |
 | [#20080](https://github.com/opensearch-project/OpenSearch/pull/20080) | Adding version checks to remote entities using bytestream ser/de |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19843](https://github.com/opensearch-project/OpenSearch/issues/19843): BUG - Modification to ClusterState Object lacks backward compatibility in remote publication mode
-- [Remote Cluster State Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/): Official documentation
 
 ## Related Feature Report
 

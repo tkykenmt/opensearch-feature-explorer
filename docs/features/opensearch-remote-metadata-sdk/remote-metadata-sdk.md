@@ -129,8 +129,28 @@ The following plugins support multi-tenancy with remote metadata storage:
 - CMK encryption is only supported for the DynamoDB backend
 - Existing unencrypted data cannot be read with CMK parameters enabled
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Add CMK support for encrypting/decrypting customer data in DynamoDB backend with STS role assumption for cross-account access (PRs #271, #295); Fix error when updating global model status (PR #291)
+- **v3.3.0** (2025-09-22): Added SeqNo/PrimaryTerm support for Put and Delete requests, RefreshPolicy and timeout configuration for write operations, empty string ID validation fix, and ThreadContextAccess API compatibility fixes (PRs #234, #244, #236, #250, #254)
+- **v3.0.0** (2025-05-06): Update `Client` import path from `org.opensearch.client.Client` to `org.opensearch.transport.client.Client` for JPMS compatibility with OpenSearch 3.0.0 (PR #73)
+- **v3.0.0** (2025-05-06): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
+- **v3.0.0** (2025-05-06): Added developer guide with migration instructions (PR #124)
+
+## References
+
+### Documentation
+- [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
+- [AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/what-is-database-encryption-sdk.html): AWS documentation for database encryption
+- [AWS KMS Multi-Region Keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html): Multi-region key documentation
+- [PR #124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124): Add a developer guide
+- [PR #271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271): CMK encryption support
+- [PR #295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295): Assume role for CMK
+- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/DEVELOPER_GUIDE.md): Full developer guide
+- [SDK Client Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
+- [Zero-ETL Replication](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OpenSearchIngestionForDynamoDB.html): DynamoDB to OpenSearch replication
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271) | Add CMK support to encrypt/decrypt customer data |
@@ -152,17 +172,7 @@ The following plugins support multi-tenancy with remote metadata storage:
 | v3.0.0 | [#157](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/157) | Validate request fields in DDB Put and Update |
 | v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures |
 
-## References
-
-- [PR #124](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/124): Add a developer guide
-- [PR #271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271): CMK encryption support
-- [PR #295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295): Assume role for CMK
-- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/blob/main/DEVELOPER_GUIDE.md): Full developer guide
-- [Plugin as a Service Documentation](https://docs.opensearch.org/3.0/developer-documentation/plugin-as-a-service/index/): Official OpenSearch documentation
-- [SDK Client Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
-- [Zero-ETL Replication](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OpenSearchIngestionForDynamoDB.html): DynamoDB to OpenSearch replication
-- [AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/what-is-database-encryption-sdk.html): AWS documentation for database encryption
-- [AWS KMS Multi-Region Keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html): Multi-region key documentation
+### Issues (Design / RFC)
 - [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() eventually consistent bug
 - [Issue #132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132): Aggregation API failure bug
 - [Issue #154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154): DDBClient validation bug
@@ -170,11 +180,3 @@ The following plugins support multi-tenancy with remote metadata storage:
 - [Issue #191](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/191): Empty string ID validation
 - [Issue #233](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/233): SeqNo/PrimaryTerm support request
 - [Issue #1082](https://github.com/opensearch-project/flow-framework/issues/1082): Version conflict bug in flow-framework
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Add CMK support for encrypting/decrypting customer data in DynamoDB backend with STS role assumption for cross-account access (PRs #271, #295); Fix error when updating global model status (PR #291)
-- **v3.3.0** (2025-09-22): Added SeqNo/PrimaryTerm support for Put and Delete requests, RefreshPolicy and timeout configuration for write operations, empty string ID validation fix, and ThreadContextAccess API compatibility fixes (PRs #234, #244, #236, #250, #254)
-- **v3.0.0** (2025-05-06): Update `Client` import path from `org.opensearch.client.Client` to `org.opensearch.transport.client.Client` for JPMS compatibility with OpenSearch 3.0.0 (PR #73)
-- **v3.0.0** (2025-05-06): Bug fixes for version conflict detection, DynamoDB consistency, error handling, response passthrough, URL encoding, and request validation (PRs #114, #121, #128, #130, #141, #156, #157, #158)
-- **v3.0.0** (2025-05-06): Added developer guide with migration instructions (PR #124)

@@ -120,8 +120,13 @@ No migration required. These are bugfixes that improve existing PPL query functi
 - PPL date formatting relies on UTC conversion; complex timezone scenarios may require additional handling
 - Error message parsing handles multiple formats but may not cover all edge cases
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL language reference
+- [SQL and PPL](https://docs.opensearch.org/3.0/search-plugins/sql/index/): SQL/PPL plugin overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9120](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9120) | Fix PPL grammar parsing issues in auto-suggest |
@@ -129,11 +134,6 @@ No migration required. These are bugfixes that improve existing PPL query functi
 | [#9436](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9436) | Make PPL handle milliseconds in date fields |
 | [#9586](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9586) | Correctly show error message in DQL and PPL query editor |
 | [#9603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9603) | Skip appending time range when not querying with source |
-
-## References
-
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL language reference
-- [SQL and PPL](https://docs.opensearch.org/3.0/search-plugins/sql/index/): SQL/PPL plugin overview
 
 ## Related Feature Report
 

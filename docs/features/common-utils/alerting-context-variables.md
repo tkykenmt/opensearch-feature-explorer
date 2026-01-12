@@ -145,17 +145,19 @@ Throttle Enabled: {{ctx.action.throttle_enabled}}
 - Some variables may be null depending on monitor configuration
 - The `results` and `alert` context variables are populated at runtime and not covered by this feature
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Added missing context variables for monitor, trigger, action, schedule, and input models
+
+## References
+
+### Documentation
+- [OpenSearch Alerting Documentation](https://opensearch.org/docs/latest/monitoring-plugins/alerting/monitors/#available-variables): Official documentation for available variables
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#710](https://github.com/opensearch-project/common-utils/pull/710) | Add missing ctx variables |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #200](https://github.com/opensearch-project/alerting/issues/200): Original feature request for missing ctx variables
-- [OpenSearch Alerting Documentation](https://opensearch.org/docs/latest/monitoring-plugins/alerting/monitors/#available-variables): Official documentation for available variables
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Added missing context variables for monitor, trigger, action, schedule, and input models

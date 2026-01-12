@@ -277,8 +277,25 @@ POST /_plugins/_ml/models/_register
 - MCP server SSE sessions have timeout limits
 - SSE transport is deprecated in v3.3.0; use Streamable HTTP (`/_plugins/_ml/mcp/stream`) instead
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-30): Streamable HTTP transport for MCP connectors (`mcp_streamable_http` protocol), stateless MCP server at `/_plugins/_ml/mcp/stream`, SSE transport deprecated, MCP Java SDK updated to 0.12.1
+- **v3.1.0** (2025-07-15): MCP SDK downgrade to 0.9.0 for compatibility, added comprehensive unit tests for MCP components
+- **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models
+
+## References
+
+### Documentation
+- [MCP Server APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/index/)
+- [Using MCP Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
+- [Connecting to External MCP Server](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/mcp-connector/)
+- [Plan-Execute-Reflect Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
+- [Building a Plan-Execute-Reflect Agent Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/build-plan-execute-reflect-agent/)
+- [Register MCP Tools API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/register-mcp-tools/)
+- [MCP SSE Session API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/sse-session/)
+- [MCP SSE Message API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/sse-message/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4169](https://github.com/opensearch-project/ml-commons/pull/4169) | MCP Connectors for Streamable HTTP |
@@ -309,20 +326,5 @@ POST /_plugins/_ml/models/_register
 | v3.0.0 | [#3700](https://github.com/opensearch-project/ml-commons/pull/3700) | Fix config index masterkey for multi-tenancy |
 | v3.0.0 | [#3768](https://github.com/opensearch-project/ml-commons/pull/3768) | Fix metadata client responses |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3660](https://github.com/opensearch-project/ml-commons/issues/3660): Feature request for MCP protocol support
-- [MCP Server APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/index/)
-- [Using MCP Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
-- [Connecting to External MCP Server](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/mcp-connector/)
-- [Plan-Execute-Reflect Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
-- [Building a Plan-Execute-Reflect Agent Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/build-plan-execute-reflect-agent/)
-- [Register MCP Tools API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/register-mcp-tools/)
-- [MCP SSE Session API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/sse-session/)
-- [MCP SSE Message API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/sse-message/)
-
-## Change History
-
-- **v3.3.0** (2025-09-30): Streamable HTTP transport for MCP connectors (`mcp_streamable_http` protocol), stateless MCP server at `/_plugins/_ml/mcp/stream`, SSE transport deprecated, MCP Java SDK updated to 0.12.1
-- **v3.1.0** (2025-07-15): MCP SDK downgrade to 0.9.0 for compatibility, added comprehensive unit tests for MCP components
-- **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models

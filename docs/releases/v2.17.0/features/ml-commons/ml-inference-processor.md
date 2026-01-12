@@ -94,18 +94,22 @@ Existing pipelines using the ML Inference Search Response Processor continue to 
 - Higher resource consumption for large result sets
 - Error in any single prediction can fail the entire response (unless `ignore_failure: true`)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.17/search-plugins/search-pipelines/ml-inference-search-response/): ML inference search response processor
+
+### Blog Posts
+- [Blog](https://opensearch.org/blog/introduction-to-ml-inference-processors-in-opensearch-review-summarization-and-semantic-search/): Introduction to ML inference processors
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2801](https://github.com/opensearch-project/ml-commons/pull/2801) | Support one_to_one in ML Inference Search Response Processor |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2173](https://github.com/opensearch-project/ml-commons/issues/2173): RFC - ML Inference Processors
 - [Issue #2444](https://github.com/opensearch-project/ml-commons/issues/2444): Related feature request
-- [Documentation](https://docs.opensearch.org/2.17/search-plugins/search-pipelines/ml-inference-search-response/): ML inference search response processor
-- [Blog](https://opensearch.org/blog/introduction-to-ml-inference-processors-in-opensearch-review-summarization-and-semantic-search/): Introduction to ML inference processors
 
 ## Related Feature Report
 

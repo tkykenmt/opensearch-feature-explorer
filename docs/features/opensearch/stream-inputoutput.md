@@ -133,18 +133,18 @@ EnumSet<MyOption> options = in.readOptionalEnumSet(MyOption.class);
 - The `readOptionalEnumSet` method returns an empty EnumSet (not null) when null/empty was written
 - Enum class must be provided at read time due to Java type erasure
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17556](https://github.com/opensearch-project/OpenSearch/pull/17556) | Add optional enum set read/write functionality |
+- **v3.0.0** (2025-05-06): Added `writeOptionalEnumSet` and `readOptionalEnumSet` methods for optional EnumSet serialization
 
 ## References
 
+### Documentation
 - [StreamInput.java](https://github.com/opensearch-project/OpenSearch/blob/main/libs/core/src/main/java/org/opensearch/core/common/io/stream/StreamInput.java): Source code
 - [StreamOutput.java](https://github.com/opensearch-project/OpenSearch/blob/main/libs/core/src/main/java/org/opensearch/core/common/io/stream/StreamOutput.java): Source code
 - [ml-commons MLStatsInput](https://github.com/opensearch-project/ml-commons/blob/main/plugin/src/main/java/org/opensearch/ml/stats/MLStatsInput.java): Example usage in plugin
 
-## Change History
-
-- **v3.0.0** (2025-05-06): Added `writeOptionalEnumSet` and `readOptionalEnumSet` methods for optional EnumSet serialization
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#17556](https://github.com/opensearch-project/OpenSearch/pull/17556) | Add optional enum set read/write functionality |

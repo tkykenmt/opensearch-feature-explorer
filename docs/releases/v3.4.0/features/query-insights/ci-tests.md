@@ -77,17 +77,17 @@ public void testMultiNodeDataCollectionAndAggregation() {
 - `QueryInsightsClusterIT` is excluded from security integration tests because multi-node clusters with demo SSL certificates are not supported in Java 21
 - Tests require increased window sizes (5 minutes instead of 1 minute) to prevent timing-related failures
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node, healthstats integration tests and fix flaky tests |
-
 ## References
 
+### Documentation
 - [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
 - [Health Stats API Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/health/)
 - [GitHub Repository](https://github.com/opensearch-project/query-insights)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node, healthstats integration tests and fix flaky tests |
 
 ## Related Feature Report
 

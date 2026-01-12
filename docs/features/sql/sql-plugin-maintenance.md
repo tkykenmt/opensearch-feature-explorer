@@ -61,20 +61,22 @@ source=my_index | where field = 'value'
 - Maintenance updates are typically transparent to users
 - Security fixes may require cluster restart to take effect
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Bumped commons-io to 2.14.0 to fix CVE-2024-47554, fixed test failures on 2.18 branch
+
+## References
+
+### Documentation
+- [SQL Plugin Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql/index/): Official SQL documentation
+- [CVE-2024-47554](https://www.mend.io/vulnerability-database/CVE-2024-47554): Apache Commons IO vulnerability
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#3091](https://github.com/opensearch-project/sql/pull/3091) | Bump commons-io to 2.14.0 (backport) |
 | v2.18.0 | [#3113](https://github.com/opensearch-project/sql/pull/3113) | Fix tests on 2.18 branch |
 | v2.18.0 | [#3083](https://github.com/opensearch-project/sql/pull/3083) | Bump commons-io to 2.14.0 (main) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3055](https://github.com/opensearch-project/sql/issues/3055): CVE-2024-47554 vulnerability report
-- [CVE-2024-47554](https://www.mend.io/vulnerability-database/CVE-2024-47554): Apache Commons IO vulnerability
-- [SQL Plugin Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql/index/): Official SQL documentation
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Bumped commons-io to 2.14.0 to fix CVE-2024-47554, fixed test failures on 2.18 branch

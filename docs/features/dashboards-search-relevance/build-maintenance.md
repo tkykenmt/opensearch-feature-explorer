@@ -50,19 +50,19 @@ No additional configuration is required. The fixes are applied at the source cod
 - Build warnings may appear with older Sass compiler versions
 - Future Sass versions may introduce additional deprecations requiring updates
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Fixed Sass division warning by updating to `calc()` syntax; Fixed broken LICENSE file link and removed unused Docker documentation links
+
+## References
+
+### Documentation
+- [Sass Breaking Change: Slash as Division](https://sass-lang.com/documentation/breaking-changes/slash-div/)
+- [dashboards-search-relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
+- [OpenSearch Dashboards PR #5338](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5338): Replace `node-sass` with `sass-embedded`
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#426](https://github.com/opensearch-project/dashboards-search-relevance/pull/426) | Fix sass division warning |
 | v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |
-
-## References
-
-- [dashboards-search-relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
-- [Sass Breaking Change: Slash as Division](https://sass-lang.com/documentation/breaking-changes/slash-div/)
-- [OpenSearch Dashboards PR #5338](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5338): Replace `node-sass` with `sass-embedded`
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Fixed Sass division warning by updating to `calc()` syntax; Fixed broken LICENSE file link and removed unused Docker documentation links

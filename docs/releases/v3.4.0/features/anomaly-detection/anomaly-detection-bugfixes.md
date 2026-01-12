@@ -86,18 +86,18 @@ No migration required. These are backward-compatible bugfixes.
 - The auto-expand replicas fix only applies to newly created forecast results indices; existing indices are not modified
 - The frequency-aware missing data detection requires the detector to have a `frequency` field configured
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1615](https://github.com/opensearch-project/anomaly-detection/pull/1615) | anomaly-detection | Fix auto-expand replicas for default results index on 3AZ domains |
 | [#1116](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1116) | anomaly-detection-dashboards-plugin | Honor detector frequency when flagging missing feature data |
 | [#1126](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1126) | anomaly-detection-dashboards-plugin | Address error toast on page open with data source enabled |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
 
 ## Related Feature Report
 

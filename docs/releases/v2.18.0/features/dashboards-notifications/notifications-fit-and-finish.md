@@ -63,18 +63,18 @@ No migration required. These are purely visual/UX improvements with no API or co
 - These changes only affect the Dashboards UI; backend functionality remains unchanged
 - Some visual differences may be noticeable when comparing with older versions
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Notifications Documentation](https://docs.opensearch.org/2.18/observing-your-data/notifications/index/)
+- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#256](https://github.com/opensearch-project/dashboards-notifications/pull/256) | Updated Fit and Finish guidelines - semantic headers, text sizes, context menus |
 | [#263](https://github.com/opensearch-project/dashboards-notifications/pull/263) | Fit and Finish UX Fixes - spacing, full-width content, button styling |
 | [#270](https://github.com/opensearch-project/dashboards-notifications/pull/270) | Fit and Finish UX Fixes Pt 2 - filter separation, encryption method default pill |
-
-## References
-
-- [OpenSearch Notifications Documentation](https://docs.opensearch.org/2.18/observing-your-data/notifications/index/)
-- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
 
 ## Related Feature Report
 

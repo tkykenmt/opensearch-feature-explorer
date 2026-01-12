@@ -125,22 +125,24 @@ GET /logs/_search
 - String terms quickselect optimization does not apply to significant terms aggregations
 - Date histogram optimization benefits are most visible with sub-aggregations that prevent precomputation
 
-## Related PRs
+## References
 
+### Documentation
+- [Rare Terms Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/rare-terms/)
+- [Terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/terms/)
+- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18978](https://github.com/opensearch-project/OpenSearch/pull/18978) | Rare terms aggregation precomputation |
 | [#18732](https://github.com/opensearch-project/OpenSearch/pull/18732) | String terms aggregation optimization for large bucket counts |
 | [#19088](https://github.com/opensearch-project/OpenSearch/pull/19088) | Date histogram optimization with rounding utility refactoring |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13122](https://github.com/opensearch-project/OpenSearch/issues/13122): Rare Terms Aggregation Performance Optimization
 - [Issue #18704](https://github.com/opensearch-project/OpenSearch/issues/18704): Optimize String terms agg
 - [Issue #10954](https://github.com/opensearch-project/OpenSearch/issues/10954): Use Collector.setWeight to improve aggregation performance
-- [Rare Terms Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/rare-terms/)
-- [Terms Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/terms/)
-- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
 
 ## Related Feature Report
 

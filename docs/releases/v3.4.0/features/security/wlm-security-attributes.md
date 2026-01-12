@@ -102,16 +102,16 @@ No migration is required. Existing WLM rules using `index_pattern` continue to w
 - The `principal` attribute is only available when security is enabled
 - Backend roles are not currently supported (only frontend roles)
 
-## Related PRs
+## References
 
+### Documentation
+- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
+- [Workload Management Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5606](https://github.com/opensearch-project/security/pull/5606) | Add logic to extract security attributes for rule-based autotagging |
-
-## References
-
-- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
-- [Workload Management Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
 
 ## Related Feature Report
 

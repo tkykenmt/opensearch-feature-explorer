@@ -102,8 +102,13 @@ Users upgrading from v3.0.0 must update their cluster and index settings to use 
 - **Repository**: Only Amazon S3 repositories
 - **Size Bounds**: Segments exceeding `knn.remote_index_build.size.max` fall back to CPU build
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Remote index build docs
+- [Settings Reference](https://docs.opensearch.org/3.0/vector-search/settings/): k-NN settings documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2662](https://github.com/opensearch-project/k-NN/pull/2662) | Add tuned repository upload/download buffer sizes |
@@ -111,12 +116,9 @@ Users upgrading from v3.0.0 must update their cluster and index settings to use 
 | [#2693](https://github.com/opensearch-project/k-NN/pull/2693) | Fix remote build metrics timing and add exception logging |
 | [#2743](https://github.com/opensearch-project/k-NN/pull/2743) | Fix GPU index setting to only evaluate when cluster setting is set |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2732](https://github.com/opensearch-project/k-NN/issues/2732): Upper bound setting request
 - [Issue #2595](https://github.com/opensearch-project/k-NN/pull/2595): Benchmarking results for buffer sizes
-- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Remote index build docs
-- [Settings Reference](https://docs.opensearch.org/3.0/vector-search/settings/): k-NN settings documentation
 
 ## Related Feature Report
 

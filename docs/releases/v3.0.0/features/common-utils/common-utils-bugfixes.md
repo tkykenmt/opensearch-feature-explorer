@@ -121,19 +121,21 @@ ReplicationPluginInterface.stopReplication(client, request, object : ActionListe
 - The pipe escaping solution uses backslash as the escape character, which may conflict if backslashes are present in usernames
 - The replication interface requires both ISM and CCR plugins to be installed
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #17272](https://github.com/opensearch-project/OpenSearch/pull/17272): Related OpenSearch core transport package split
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | Adding replication (CCR) plugin interface and classes |
 | [#790](https://github.com/opensearch-project/common-utils/pull/790) | Fix imports related to split package of org.opensearch.transport |
 | [#801](https://github.com/opensearch-project/common-utils/pull/801) | Escape/Unescape pipe UserInfo in ThreadContext |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username cannot have '|' in the security plugin
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Manage CCR follower indices with ISM
-- [PR #17272](https://github.com/opensearch-project/OpenSearch/pull/17272): Related OpenSearch core transport package split
 
 ## Related Feature Report
 

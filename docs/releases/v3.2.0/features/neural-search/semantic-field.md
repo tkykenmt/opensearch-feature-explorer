@@ -194,8 +194,9 @@ PUT /my-semantic-index
 - `skip_existing_embedding` requires the document to have existing embeddings to reuse
 - Chunking configuration cannot be changed after index creation
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1420](https://github.com/opensearch-project/neural-search/pull/1420) | Support configuring the auto-generated knn_vector field through the semantic field |
@@ -206,8 +207,7 @@ PUT /my-semantic-index
 | [#1427](https://github.com/opensearch-project/neural-search/pull/1427) | Handle remote dense model properly during mapping transform |
 | [#1475](https://github.com/opensearch-project/neural-search/pull/1475) | Fix minimal supported version for neural sparse query analyzer field |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1349](https://github.com/opensearch-project/neural-search/issues/1349): Configure batch size for embedding generation
 - [Issue #1350](https://github.com/opensearch-project/neural-search/issues/1350): Allow to reuse existing embedding
 - [Issue #1351](https://github.com/opensearch-project/neural-search/issues/1351): Allow to configure prune for embedding generation

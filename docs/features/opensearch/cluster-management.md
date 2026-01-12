@@ -103,19 +103,21 @@ PUT _cluster/settings
 - DEBUG logging shows abbreviated task summaries; enable TRACE for full details
 - Priority escalation should be used cautiously as it may affect other cluster operations
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-03-18): Added configurable reroute priority settings, optimized MasterService logging to reduce recovery time for large clusters
+
+## References
+
+### Documentation
+- [Cluster Allocation Explain API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-allocation/): Official documentation
+- [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Cluster tuning guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run |
 | v3.0.0 | [#16445](https://github.com/opensearch-project/OpenSearch/pull/16445) | Change priority for scheduling reroute during timeout |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12249](https://github.com/opensearch-project/OpenSearch/issues/12249): Reduce TaskBatcher excessive logging in DEBUG mode
-- [Cluster Allocation Explain API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-allocation/): Official documentation
-- [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Cluster tuning guide
-
-## Change History
-
-- **v3.0.0** (2025-03-18): Added configurable reroute priority settings, optimized MasterService logging to reduce recovery time for large clusters

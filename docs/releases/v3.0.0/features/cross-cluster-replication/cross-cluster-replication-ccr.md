@@ -131,20 +131,24 @@ To use the new `stop_replication` action:
 - If called on a non-replicated index, the action will fail with an error message
 - The action is not idempotent - calling it on an already-stopped replication will fail
 
-## Related PRs
+## References
 
+### Documentation
+- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/): Official CCR documentation
+- [ISM documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/): Index State Management documentation
+
+### Blog Posts
+- [OpenSearch 1.1.0 CCR announcement](https://opensearch.org/blog/launch-announcement-1-1/): Original CCR introduction
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | common-utils | Adding replication (CCR) plugin interface and classes |
 | [#1198](https://github.com/opensearch-project/index-management/pull/1198) | index-management | Adding unfollow action in ISM to invoke stop replication for CCR |
 | [#1496](https://github.com/opensearch-project/cross-cluster-replication/pull/1496) | cross-cluster-replication | Update CCR with Gradle 8.10.2 and support JDK23 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Original feature request for managing CCR follower indices
-- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/): Official CCR documentation
-- [ISM documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/): Index State Management documentation
-- [OpenSearch 1.1.0 CCR announcement](https://opensearch.org/blog/launch-announcement-1-1/): Original CCR introduction
 
 ## Related Feature Report
 

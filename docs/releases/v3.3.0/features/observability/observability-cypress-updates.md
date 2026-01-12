@@ -40,16 +40,16 @@ The `@cypress/request` dependency was updated from version 3.0.1 to 3.0.9 to add
 - This update only addresses transient development dependencies
 - The vulnerabilities were in dependencies never directly called by the codebase
 
-## Related PRs
+## References
 
+### Documentation
+- [Observability Documentation](https://docs.opensearch.org/3.3/observing-your-data/): Official docs
+- [PR #2507](https://github.com/opensearch-project/dashboards-observability/pull/2507): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2507](https://github.com/opensearch-project/dashboards-observability/pull/2507) | Update cypress/requests |
-
-## References
-
-- [PR #2507](https://github.com/opensearch-project/dashboards-observability/pull/2507): Main implementation
-- [Observability Documentation](https://docs.opensearch.org/3.3/observing-your-data/): Official docs
 
 ## Related Feature Report
 

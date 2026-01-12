@@ -112,17 +112,21 @@ GET logs/_search
 - Search patterns with fewer than 3 consecutive non-wildcard characters may have slightly different performance characteristics
 - The optimization is most beneficial for longer strings; very short field values may not see significant storage savings
 
-## Related PRs
+## References
 
+### Documentation
+- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
+
+### Blog Posts
+- [OpenSearch 2.15 Blog](https://opensearch.org/blog/diving-into-opensearch-2-15/): Initial wildcard field introduction
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17349](https://github.com/opensearch-project/OpenSearch/pull/17349) | Wildcard field use only 3-gram to index |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17099](https://github.com/opensearch-project/OpenSearch/issues/17099): Feature request with benchmark data
-- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
-- [OpenSearch 2.15 Blog](https://opensearch.org/blog/diving-into-opensearch-2-15/): Initial wildcard field introduction
 
 ## Related Feature Report
 

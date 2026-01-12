@@ -99,8 +99,9 @@ transport.ssl.enforce_hostname_verification: false
 - BCFIPS provider timing change may affect custom bootstrap configurations
 - Some fixes are backported to 2.19 and 3.3 branches
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1994](https://github.com/opensearch-project/security/pull/1994) | Fix CI check with security failing due to empty string in password |
@@ -120,8 +121,7 @@ transport.ssl.enforce_hostname_verification: false
 | [#5804](https://github.com/opensearch-project/security/pull/5804) | Cleaned up use of PrivilegesEvaluatorResponse |
 | [#5816](https://github.com/opensearch-project/security/pull/5816) | Remove reflective call to getInnerChannel |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1951](https://github.com/opensearch-project/observability/issues/1951): `.kibana` index update issue
 - [Issue #5697](https://github.com/opensearch-project/security/issues/5697): Deprecated SSL transport settings
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): BCFKS keystore loading issue

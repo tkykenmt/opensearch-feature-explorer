@@ -195,8 +195,28 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 - Changing codec on an existing index requires closing the index or reindexing
 - QAT `hardware` mode requires hardware availability; use `auto` for fallback to software
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-01-14): Added composite index (star-tree) support - codecs now delegate to `CompositeCodec` when index has composite fields
+- **v3.1.0** (2025-09-16): Added QAT-accelerated ZSTD codec (`qat_zstd`), upgraded qat-java to 2.3.2
+- **v3.1.0** (2025-09-16): Fixed BWC test dependency version and added java-agent plugin to BWC tests
+- **v3.0.0** (2025-05-06): Upgraded to Lucene 10.1.0 with new codec implementations (Lucene101*), bumped zstd-jni to 1.5.6-1, migrated to Java Agent from SecurityManager
+- **v2.15.0** (2024-06-25): Added QAT hardware-accelerated codecs (`qat_lz4`, `qat_deflate`)
+- **v2.9.0** (2023-07-24): Initial implementation of ZSTD codecs (`zstd`, `zstd_no_dict`)
+
+## References
+
+### Documentation
+- [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official documentation
+- [Custom Codecs Repository](https://github.com/opensearch-project/custom-codecs): Source code
+- [ZSTD GitHub](https://github.com/facebook/zstd): Zstandard compression algorithm
+- [zstd-jni](https://github.com/luben/zstd-jni): JNI bindings for ZSTD
+- [Intel QAT Overview](https://www.intel.com/content/www/us/en/developer/topic-technology/open/quick-assist-technology/overview.html): Hardware acceleration
+
+### Blog Posts
+- [OpenSearch 2.9.0 Blog](https://opensearch.org/blog/introducing-opensearch-2-9-0/): ZSTD codec introduction
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#263](https://github.com/opensearch-project/custom-codecs/pull/263) | Adding support for composite index |
@@ -206,21 +226,3 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 | v3.0.0 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZSTD lib version to 1.5.6-1 |
 | v3.0.0 | [#235](https://github.com/opensearch-project/custom-codecs/pull/235) | Fix build due to phasing off SecurityManager in favor of Java Agent |
 | v3.0.0 | [#237](https://github.com/opensearch-project/custom-codecs/pull/237) | Add java agent plugin |
-
-## References
-
-- [Custom Codecs Repository](https://github.com/opensearch-project/custom-codecs): Source code
-- [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official documentation
-- [ZSTD GitHub](https://github.com/facebook/zstd): Zstandard compression algorithm
-- [zstd-jni](https://github.com/luben/zstd-jni): JNI bindings for ZSTD
-- [Intel QAT Overview](https://www.intel.com/content/www/us/en/developer/topic-technology/open/quick-assist-technology/overview.html): Hardware acceleration
-- [OpenSearch 2.9.0 Blog](https://opensearch.org/blog/introducing-opensearch-2-9-0/): ZSTD codec introduction
-
-## Change History
-
-- **v3.2.0** (2026-01-14): Added composite index (star-tree) support - codecs now delegate to `CompositeCodec` when index has composite fields
-- **v3.1.0** (2025-09-16): Added QAT-accelerated ZSTD codec (`qat_zstd`), upgraded qat-java to 2.3.2
-- **v3.1.0** (2025-09-16): Fixed BWC test dependency version and added java-agent plugin to BWC tests
-- **v3.0.0** (2025-05-06): Upgraded to Lucene 10.1.0 with new codec implementations (Lucene101*), bumped zstd-jni to 1.5.6-1, migrated to Java Agent from SecurityManager
-- **v2.15.0** (2024-06-25): Added QAT hardware-accelerated codecs (`qat_lz4`, `qat_deflate`)
-- **v2.9.0** (2023-07-24): Initial implementation of ZSTD codecs (`zstd`, `zstd_no_dict`)

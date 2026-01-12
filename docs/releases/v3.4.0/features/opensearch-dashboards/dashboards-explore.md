@@ -158,8 +158,9 @@ const pplInput = {
 - Field Statistics supports PPL as the default query language
 - Correlations limited to 1 trace per correlation and max 5 logs datasets per correlation
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10558](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10558) | Add timefield and currentTime to prompt |
@@ -185,8 +186,7 @@ const pplInput = {
 | [#10597](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10597) | Clear editor after dataset change |
 | [#10661](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10661) | Add backticks to explore's data source command |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #10619](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10619): Histogram Breakdowns RFC
 - [RFC #10614](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10614): Field Statistics RFC
 - [Issue #10386](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10386): Correlations feature request

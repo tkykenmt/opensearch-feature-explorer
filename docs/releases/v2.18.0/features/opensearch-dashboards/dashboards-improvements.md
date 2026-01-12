@@ -91,15 +91,15 @@ enum ResultStatus {
 - Time counter updates every 1 second (not real-time)
 - Only applies to Discover and query-enabled views
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212): Implementation PR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212) | Add loading indicator and counter to query result |
-
-## References
-
-- [PR #8212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8212): Implementation PR
 
 ## Related Feature Report
 

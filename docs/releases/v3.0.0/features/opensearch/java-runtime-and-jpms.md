@@ -109,8 +109,15 @@ OpenSearch 3.0.0 can leverage JDK 21's `MemorySegment` API for memory-mapped fil
 - **Plugin compatibility**: Plugins compiled against older OpenSearch versions may need updates
 - **JPMS not fully enabled**: Phase 0 only eliminates split packages; full module descriptors are planned for future releases
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official breaking changes for v3.0.0
+
+### Blog Posts
+- [Using Different Java Runtimes with OpenSearch](https://opensearch.org/blog/opensearch-java-runtime/): Blog post on Java runtime options
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17153](https://github.com/opensearch-project/OpenSearch/pull/17153) | Refactor codebase to eliminate top level split packages for JPMS support |
@@ -122,11 +129,8 @@ OpenSearch 3.0.0 can leverage JDK 21's `MemorySegment` API for memory-mapped fil
 | [#17900](https://github.com/opensearch-project/OpenSearch/pull/17900) | Custom Gradle plugin to leverage Java agent (SecurityManager replacement) |
 | [#5151](https://github.com/opensearch-project/OpenSearch/pull/5151) | Allow mmap to use JDK-19 preview APIs in Lucene 9.4+ |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): META - Split and modularize the server monolith
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official breaking changes for v3.0.0
-- [Using Different Java Runtimes with OpenSearch](https://opensearch.org/blog/opensearch-java-runtime/): Blog post on Java runtime options
 
 ## Related Feature Report
 

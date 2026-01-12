@@ -104,18 +104,20 @@ GET _cluster/state/metadata/my-index
 - These fixes only affect new operations after upgrading to v2.18.0
 - Existing indexes with incorrect settings are not automatically corrected
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/index-settings/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#14948](https://github.com/opensearch-project/OpenSearch/pull/14948) | Fix update settings with null replica not honoring cluster setting |
 | [#16331](https://github.com/opensearch-project/OpenSearch/pull/16331) | Fix wrong default value when setting `index.number_of_routing_shards` to null |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14810](https://github.com/opensearch-project/OpenSearch/issues/14810): Bug report for replica count default
 - [Issue #16327](https://github.com/opensearch-project/OpenSearch/issues/16327): Bug report for routing shards default
-- [Index Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/index-settings/): Official documentation
 
 ## Related Feature Report
 

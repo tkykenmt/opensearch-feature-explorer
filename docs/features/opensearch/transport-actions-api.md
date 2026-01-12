@@ -159,19 +159,21 @@ public ResolvedIndices resolveIndices(ReindexRequest request) {
 - Primarily designed for security plugin use case
 - Resolution is performed on each `ActionFilter.apply()` call (not cached) to handle request modifications
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#18523](https://github.com/opensearch-project/OpenSearch/pull/18523) | Initial implementation of explicit index resolution API |
+- **v3.4.0** (2025-10-23): Initial implementation introducing `TransportIndicesResolvingAction`, `ActionRequestMetadata`, `ResolvedIndices`, and `OptionallyResolvedIndices` classes
 
 ## References
 
-- [Issue #5367](https://github.com/opensearch-project/security/issues/5367): Index pattern resolution improvements (motivation)
+### Documentation
 - [PR #5399](https://github.com/opensearch-project/security/pull/5399): Security plugin implementation using this API
 - [TransportIndicesResolvingAction.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/support/TransportIndicesResolvingAction.java): Interface source
 - [ResolvedIndices.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/metadata/ResolvedIndices.java): Main data class source
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#18523](https://github.com/opensearch-project/OpenSearch/pull/18523) | Initial implementation of explicit index resolution API |
 
-- **v3.4.0** (2025-10-23): Initial implementation introducing `TransportIndicesResolvingAction`, `ActionRequestMetadata`, `ResolvedIndices`, and `OptionallyResolvedIndices` classes
+### Issues (Design / RFC)
+- [Issue #5367](https://github.com/opensearch-project/security/issues/5367): Index pattern resolution improvements (motivation)

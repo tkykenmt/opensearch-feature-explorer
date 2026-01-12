@@ -91,18 +91,20 @@ GET /_msearch/template
 - Pipeline must exist before being referenced in a template request
 - Version compatibility: This feature requires OpenSearch 3.2.0 or later
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/search-template/): Official search template docs
+- [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/msearch-template/): Official msearch template docs
+- [Search Pipelines Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/): Search pipeline overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18564](https://github.com/opensearch-project/OpenSearch/pull/18564) | Add support for search pipeline in search and msearch template |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18508](https://github.com/opensearch-project/OpenSearch/issues/18508): Feature request for search pipeline support in msearch template
-- [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/search-template/): Official search template docs
-- [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/msearch-template/): Official msearch template docs
-- [Search Pipelines Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/): Search pipeline overview
 
 ## Related Feature Report
 

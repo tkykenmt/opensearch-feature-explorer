@@ -66,16 +66,16 @@ assert request1.hashCode() == request2.hashCode(); // Now works correctly
 - This is an internal bug fix with no user-facing API changes
 - No migration steps required
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment replication documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Related replication concepts
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16378](https://github.com/opensearch-project/OpenSearch/pull/16378) | Fix array hashCode calculation in ResyncReplicationRequest |
 | [#15383](https://github.com/opensearch-project/OpenSearch/pull/15383) | Previous attempt (closed without merge) |
-
-## References
-
-- [Segment replication documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Related replication concepts
 
 ## Related Feature Report
 

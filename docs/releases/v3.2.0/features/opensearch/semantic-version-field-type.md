@@ -145,16 +145,18 @@ Example ordering:
 - Version strings must conform to SemVer 2.0.0 format
 - Leading zeros in numeric identifiers are not allowed (e.g., `01.0.0` is invalid)
 
-## Related PRs
+## References
 
+### Documentation
+- [Semantic Versioning 2.0.0](https://semver.org/): SemVer specification
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18454](https://github.com/opensearch-project/OpenSearch/pull/18454) | Add Semantic Version field type mapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16814](https://github.com/opensearch-project/OpenSearch/issues/16814): Feature request for semantic versioning support
-- [Semantic Versioning 2.0.0](https://semver.org/): SemVer specification
 
 ## Related Feature Report
 

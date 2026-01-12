@@ -98,17 +98,17 @@ config/my-plugin/
 - Config directories are only copied if they don't already exist at the destination
 - Existing files/directories are preserved (not overwritten)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Installing plugins
+- [PR #19343](https://github.com/opensearch-project/OpenSearch/pull/19343): Main implementation
+- [security-analytics sigma rules](https://github.com/opensearch-project/security-analytics/tree/main/src/main/resources/rules): Motivation for this change
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19343](https://github.com/opensearch-project/OpenSearch/pull/19343) | Allow plugins to copy folders into their config dir during installation |
-
-## References
-
-- [PR #19343](https://github.com/opensearch-project/OpenSearch/pull/19343): Main implementation
-- [security-analytics sigma rules](https://github.com/opensearch-project/security-analytics/tree/main/src/main/resources/rules): Motivation for this change
-- [Documentation](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Installing plugins
 
 ## Related Feature Report
 

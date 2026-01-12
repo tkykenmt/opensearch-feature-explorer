@@ -86,8 +86,16 @@ POST /_plugins/_ml/connectors/_create
 - Extended thinking mode increases token usage due to internal reasoning blocks
 - Maven snapshot publishing requires 1Password service account token configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/): Official migration documentation
+- [Extended Thinking Mode](https://www.anthropic.com/news/visible-extended-thinking): Anthropic documentation
+
+### Blog Posts
+- [Claude 4 on Amazon Bedrock](https://www.aboutamazon.com/news/aws/anthropic-claude-4-opus-sonnet-amazon-bedrock): Announcement blog
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3811](https://github.com/opensearch-project/ml-commons/pull/3811) | Change release note - fix markdown formatting and add MCP server feature |
@@ -95,13 +103,9 @@ POST /_plugins/_ml/connectors/_create
 | [#3876](https://github.com/opensearch-project/ml-commons/pull/3876) | Replace the usage of elasticsearch with OpenSearch in README |
 | [#3871](https://github.com/opensearch-project/ml-commons/pull/3871) | Added blueprint for Bedrock Claude v4 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3875](https://github.com/opensearch-project/ml-commons/issues/3875): Replace elasticsearch with OpenSearch in README
 - [Issue #5551](https://github.com/opensearch-project/opensearch-build/issues/5551): Sonatype migration campaign
-- [Sonatype Central Portal Snapshots](https://central.sonatype.org/publish/publish-portal-snapshots/): Official migration documentation
-- [Claude 4 on Amazon Bedrock](https://www.aboutamazon.com/news/aws/anthropic-claude-4-opus-sonnet-amazon-bedrock): Announcement blog
-- [Extended Thinking Mode](https://www.anthropic.com/news/visible-extended-thinking): Anthropic documentation
 
 ## Related Feature Report
 

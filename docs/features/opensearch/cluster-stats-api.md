@@ -147,18 +147,18 @@ GET /_cluster/stats/os,indices/shards,docs/nodes/_all
 - Index metrics require the `indices` metric to be included in the request
 - During rolling upgrades, filtered requests may fail if sent to older nodes
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15938](https://github.com/opensearch-project/OpenSearch/pull/15938) | URI path filtering support in cluster stats API |
-
-## References
-
-- [Cluster Stats API Documentation](https://docs.opensearch.org/latest/api-reference/cluster-api/cluster-stats/)
-- [PR #14447](https://github.com/opensearch-project/OpenSearch/pull/14447): Original motivation for performance improvements
-
 ## Change History
 
 - **v2.18.0** (2024-10-22): Added URI path filtering support for selective metric retrieval
 - **v1.0.0**: Initial cluster stats API implementation
+
+## References
+
+### Documentation
+- [Cluster Stats API Documentation](https://docs.opensearch.org/latest/api-reference/cluster-api/cluster-stats/)
+- [PR #14447](https://github.com/opensearch-project/OpenSearch/pull/14447): Original motivation for performance improvements
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#15938](https://github.com/opensearch-project/OpenSearch/pull/15938) | URI path filtering support in cluster stats API |

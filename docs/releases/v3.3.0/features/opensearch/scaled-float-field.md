@@ -106,16 +106,18 @@ POST test-index/_search
 - Floating-point precision limitations still apply (e.g., `79.99 * 100 = 7998.999...`)
 - The fix prioritizes consistency over precision - both indexing and querying now use the same (potentially imprecise) multiplication
 
-## Related PRs
+## References
 
+### Documentation
+- [Numeric field types documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official docs for scaled_float
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19188](https://github.com/opensearch-project/OpenSearch/pull/19188) | Fix the `scaled_float` precision issue |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12433](https://github.com/opensearch-project/OpenSearch/issues/12433): Bug report - `match` query on `scaled_float` no longer matches for some values
-- [Numeric field types documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official docs for scaled_float
 
 ## Related Feature Report
 

@@ -98,18 +98,18 @@ graph TB
 - Requires ML Commons agent to be configured for auto-creating detectors
 - Insights are filtered to show only results from the most recent job execution window
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/)
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1118](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1118) | Introduce Daily Insights Page |
 | [#1119](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1119) | Adding Indices management and selection for daily insights |
 | [#1120](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1120) | Adding data selector for index management |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/)
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/)
 
 ## Related Feature Report
 

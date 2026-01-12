@@ -115,16 +115,18 @@ public class SecurityActionFilter implements ActionFilter {
 - Not all transport actions implement `TransportIndicesResolvingAction` yet; `OptionallyResolvedIndices.unknown()` is returned for those
 - The API is primarily designed for the security plugin use case
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #5399](https://github.com/opensearch-project/security/pull/5399): Security plugin draft implementation using this API
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18523](https://github.com/opensearch-project/OpenSearch/pull/18523) | Explicit index resolution API - main implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5367](https://github.com/opensearch-project/security/issues/5367): Index pattern resolution improvements (security plugin)
-- [PR #5399](https://github.com/opensearch-project/security/pull/5399): Security plugin draft implementation using this API
 
 ## Related Feature Report
 

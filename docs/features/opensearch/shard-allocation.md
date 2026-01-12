@@ -146,23 +146,25 @@ PUT /_cluster/settings
 - Primary shard limit settings (`total_primary_shards_per_node`) require remote store to be enabled
 - Setting limits too low may result in unassigned shards
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-10-10): Fixed bug where allocation and rebalance constraints were incorrectly reset when updating balance factors
+- **v3.0.0** (2025-05-13): Added primary shard limit settings (`total_primary_shards_per_node`) at cluster and index levels for remote store clusters; Added `primary_constraint.threshold` setting to adjust primary constraint weights
+
+## References
+
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster routing allocation settings
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Recommended settings for segment replication
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix WeightFunction constraint reset bug |
 | v3.0.0 | [#17295](https://github.com/opensearch-project/OpenSearch/pull/17295) | Add cluster and index level settings to limit total primary shards per node |
 | v3.0.0 | [#16471](https://github.com/opensearch-project/OpenSearch/pull/16471) | Add setting to adjust the primary constraint weights |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17293](https://github.com/opensearch-project/OpenSearch/issues/17293): Feature request for primary shard count constraint
 - [Issue #16470](https://github.com/opensearch-project/OpenSearch/issues/16470): Bug report for high primary shard weight causing uneven distribution
 - [Issue #13429](https://github.com/opensearch-project/OpenSearch/issues/13429): Bug report for constraint reset issue
-- [Cluster Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster routing allocation settings
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Recommended settings for segment replication
-
-## Change History
-
-- **v3.4.0** (2025-10-10): Fixed bug where allocation and rebalance constraints were incorrectly reset when updating balance factors
-- **v3.0.0** (2025-05-13): Added primary shard limit settings (`total_primary_shards_per_node`) at cluster and index levels for remote store clusters; Added `primary_constraint.threshold` setting to adjust primary constraint weights

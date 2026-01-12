@@ -200,8 +200,25 @@ POST /logs/_search
 - `minimum_should_match` parameter not supported
 - Nested aggregations limited to 3-4 levels
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-28): Added multi-terms aggregation support (up to 40x performance improvement), search query failure statistics (query_failed, startree_query_failed)
+- **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
+- **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
+- **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
+- **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
+- **v2.18** (2024-10-22): Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.1/search-plugins/star-tree-index/): Official star-tree index documentation
+- [Field Type Documentation](https://docs.opensearch.org/3.1/field-types/supported-field-types/star-tree/): Star-tree field type reference
+
+### Blog Posts
+- [Blog: The power of star-tree indexes](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): Performance analysis and use cases
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations |
@@ -218,8 +235,7 @@ POST /logs/_search
 | v3.0.0 | [#17165](https://github.com/opensearch-project/OpenSearch/pull/17165) | Terms aggregations (keyword/numeric) |
 | v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18398](https://github.com/opensearch-project/OpenSearch/issues/18398): Multi-terms aggregation feature request
 - [Issue #19210](https://github.com/opensearch-project/OpenSearch/issues/19210): Query failure stats feature request
 - [Issue #17443](https://github.com/opensearch-project/OpenSearch/issues/17443): Date range query support
@@ -230,15 +246,3 @@ POST /logs/_search
 - [Issue #15231](https://github.com/opensearch-project/OpenSearch/issues/15231): Unsigned long support
 - [Issue #17267](https://github.com/opensearch-project/OpenSearch/issues/17267): Boolean query support
 - [Issue #15257](https://github.com/opensearch-project/OpenSearch/issues/15257): Star-tree tracking issue
-- [Documentation](https://docs.opensearch.org/3.1/search-plugins/star-tree-index/): Official star-tree index documentation
-- [Field Type Documentation](https://docs.opensearch.org/3.1/field-types/supported-field-types/star-tree/): Star-tree field type reference
-- [Blog: The power of star-tree indexes](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): Performance analysis and use cases
-
-## Change History
-
-- **v3.3.0** (2025-10-28): Added multi-terms aggregation support (up to 40x performance improvement), search query failure statistics (query_failed, startree_query_failed)
-- **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
-- **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
-- **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
-- **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
-- **v2.18** (2024-10-22): Initial experimental release with metric aggregations (sum, min, max, avg, value_count)

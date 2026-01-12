@@ -139,8 +139,22 @@ Query 2 - Boosted field:
 - Requires manual query construction in OpenSearch Query DSL
 - Hybrid optimizer experiments with more than 10,000 evaluation results will only display the first 10,000 due to OpenSearch's `max_result_window` limit (v3.3.0+)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-03-11): Added support for filtering Query Sets by GUID, introduced strongly typed `QuerySetItem` interface
+- **v3.3.0** (2026-01-14): Improved color coding for visual comparison, fixed pairwise comparison to show more than 10 results, added support for large experiment results up to 10,000
+- **v3.1.0** (2025-06-11): Fixed schema validation in POST Query Sets endpoint - added missing `querySetSize` parameter
+- **v2.17.0** (2024-09-17): Added Compare Queries card to Search use case overview page via Content Management integration
+- **v2.14.0** (2024-05-02): Added multi-datasource support and search pipeline selection
+- **v2.11.0** (2023-10-16): Fixed ace editor theme consistency for dark mode
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/latest/search-plugins/search-relevance/compare-search-results/): Comparing search results
+- [Search Relevance Stats API](https://docs.opensearch.org/latest/search-plugins/search-relevance/stats-api/): API for search relevance statistics
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#687](https://github.com/opensearch-project/dashboards-search-relevance/pull/687) | Added support for filtering Query Sets by GUID |
@@ -152,18 +166,6 @@ Query 2 - Boosted field:
 | v2.14.0 | [#383](https://github.com/opensearch-project/dashboards-search-relevance/pull/383) | Multi-datasource support for Search-relevance |
 | v2.14.0 | [#352](https://github.com/opensearch-project/dashboards-search-relevance/pull/352) | Add ability to select a search pipeline in comparison tool |
 
-## References
-
-- [Documentation](https://docs.opensearch.org/latest/search-plugins/search-relevance/compare-search-results/): Comparing search results
+### Issues (Design / RFC)
 - [Issue #7807](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7807): Search use case overview page
 - [Issue #157](https://github.com/opensearch-project/search-relevance/issues/157): No evaluation results loaded for extensive experiments
-- [Search Relevance Stats API](https://docs.opensearch.org/latest/search-plugins/search-relevance/stats-api/): API for search relevance statistics
-
-## Change History
-
-- **v3.4.0** (2026-03-11): Added support for filtering Query Sets by GUID, introduced strongly typed `QuerySetItem` interface
-- **v3.3.0** (2026-01-14): Improved color coding for visual comparison, fixed pairwise comparison to show more than 10 results, added support for large experiment results up to 10,000
-- **v3.1.0** (2025-06-11): Fixed schema validation in POST Query Sets endpoint - added missing `querySetSize` parameter
-- **v2.17.0** (2024-09-17): Added Compare Queries card to Search use case overview page via Content Management integration
-- **v2.14.0** (2024-05-02): Added multi-datasource support and search pipeline selection
-- **v2.11.0** (2023-10-16): Fixed ace editor theme consistency for dark mode

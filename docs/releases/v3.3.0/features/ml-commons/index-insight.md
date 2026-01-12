@@ -179,14 +179,14 @@ POST /_plugins/_ml/agents/_register
 - Only admin users can modify index insight configuration
 - Large indices may experience longer generation times for statistical data
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4088](https://github.com/opensearch-project/ml-commons/pull/4088) | Add Index Insight Feature |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3993](https://github.com/opensearch-project/ml-commons/issues/3993): RFC: Index insight: A feature to enhance indices related AI features
 
 ## Related Feature Report

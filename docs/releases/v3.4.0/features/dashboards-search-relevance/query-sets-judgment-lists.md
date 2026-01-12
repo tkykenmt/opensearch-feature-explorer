@@ -65,18 +65,22 @@ No migration required. This is a backward-compatible enhancement that extends ex
 - GUID is not displayed in the Query Sets table UI, but can be used for filtering
 - Filtering is case-insensitive and supports partial matches
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/latest/search-plugins/search-relevance/index/): Search Relevance overview
+
+### Blog Posts
+- [Blog: Measuring and improving search quality metrics](https://opensearch.org/blog/measuring-and-improving-search-quality-metrics/): Detailed guide on using Query Sets and Judgment Lists
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#687](https://github.com/opensearch-project/dashboards-search-relevance/pull/687) | Added support for filtering Query Sets by GUID and aligned QuerySetItem typing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #679](https://github.com/opensearch-project/dashboards-search-relevance/issues/679): Feature request for GUID filtering
 - [Issue #663](https://github.com/opensearch-project/dashboards-search-relevance/issues/663): Parent issue for Query Set improvements
-- [Documentation](https://docs.opensearch.org/latest/search-plugins/search-relevance/index/): Search Relevance overview
-- [Blog: Measuring and improving search quality metrics](https://opensearch.org/blog/measuring-and-improving-search-quality-metrics/): Detailed guide on using Query Sets and Judgment Lists
 
 ## Related Feature Report
 

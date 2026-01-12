@@ -109,8 +109,12 @@ From the trace detail view:
 - Discover may show errors when loading data from specific indexes using PPL (known issue)
 - Sorting is disabled on attribute fields in the data grid
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/index/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2375](https://github.com/opensearch-project/dashboards-observability/pull/2375) | Support custom logs correlation |
@@ -133,11 +137,9 @@ From the trace detail view:
 | [#2399](https://github.com/opensearch-project/dashboards-observability/pull/2399) | Traces table fix for invalid date |
 | [#2437](https://github.com/opensearch-project/dashboards-observability/pull/2437) | Traces - Custom Traces mode pagination reset |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2141](https://github.com/opensearch-project/dashboards-observability/issues/2141): Custom logs correlation feature request
 - [Issue #2334](https://github.com/opensearch-project/dashboards-observability/issues/2334): Service Content/View Optimizations
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/index/): Official docs
 
 ## Related Feature Report
 

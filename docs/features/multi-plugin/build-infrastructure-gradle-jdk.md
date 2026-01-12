@@ -95,8 +95,23 @@ jobs:
 - Gradle version upgrades may require plugin compatibility updates
 - Gradle warning mode temporarily set to `all` pending Protobuf plugin update
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Gradle 9.2 and JDK 25 upgrades across 24 plugin repositories (alerting, anomaly-detection, asynchronous-search, common-utils, cross-cluster-replication, custom-codecs, geospatial, index-management, job-scheduler, k-NN, learning-to-rank, ml-commons, neural-search, notifications, observability, performance-analyzer, query-insights, reporting, search-processor, security, skills, system-templates, user-behavior-insights)
+- **v3.4.0** (2026-01): Gradle 9.1, bundled JDK 25.0.1+8, forbiddenapis 3.10, Mockito 5.20.0 (OpenSearch core)
+- **v3.2.0** (2025): Gradle 8.14/8.14.3, JDK 24 CI support, multi-node testing, Codecov integration, Maven endpoint updates
+
+## References
+
+### Documentation
+- [Gradle Documentation](https://docs.gradle.org/): Official Gradle documentation
+- [Adoptium](https://adoptium.net/): Eclipse Temurin JDK distribution
+- [OpenJDK](https://openjdk.org/): OpenJDK project
+
+### Blog Posts
+- [OpenSearch automated build system](https://opensearch.org/blog/public-jenkins/): Public Jenkins infrastructure
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.4.0 | [#19575](https://github.com/opensearch-project/OpenSearch/pull/19575) | OpenSearch | Update to Gradle 9.1 |
@@ -117,18 +132,7 @@ jobs:
 | v3.2.0 | [#1320](https://github.com/opensearch-project/neural-search/pull/1320) | neural-search | Multi-node integration tests |
 | v3.2.0 | [#1911](https://github.com/opensearch-project/alerting/pull/1911) | alerting | Gradle 8.14, JDK 24 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): Update bundled JDK to JDK25
 - [Issue #2976](https://github.com/opensearch-project/k-NN/issues/2976): k-NN Gradle/JDK upgrade tracking
 - [Issue #4389](https://github.com/opensearch-project/ml-commons/issues/4389): ml-commons Gradle/JDK upgrade tracking
-- [OpenSearch automated build system](https://opensearch.org/blog/public-jenkins/): Public Jenkins infrastructure
-- [Gradle Documentation](https://docs.gradle.org/): Official Gradle documentation
-- [Adoptium](https://adoptium.net/): Eclipse Temurin JDK distribution
-- [OpenJDK](https://openjdk.org/): OpenJDK project
-
-## Change History
-
-- **v3.4.0** (2026-01): Gradle 9.2 and JDK 25 upgrades across 24 plugin repositories (alerting, anomaly-detection, asynchronous-search, common-utils, cross-cluster-replication, custom-codecs, geospatial, index-management, job-scheduler, k-NN, learning-to-rank, ml-commons, neural-search, notifications, observability, performance-analyzer, query-insights, reporting, search-processor, security, skills, system-templates, user-behavior-insights)
-- **v3.4.0** (2026-01): Gradle 9.1, bundled JDK 25.0.1+8, forbiddenapis 3.10, Mockito 5.20.0 (OpenSearch core)
-- **v3.2.0** (2025): Gradle 8.14/8.14.3, JDK 24 CI support, multi-node testing, Codecov integration, Maven endpoint updates

@@ -120,23 +120,21 @@ try (var lock = new FeatureFlags.TestUtils.FlagWriteLock(STAR_TREE_INDEX)) {
 - The FeatureFlags refactoring is a breaking change for test code that relied on the old `FeatureFlagSetter` pattern
 - The CAT recovery output format change may affect scripts that parse the raw output
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT Recovery API Documentation](https://docs.opensearch.org/3.0/api-reference/cat/cat-recovery/)
+- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
+- [Experimental Feature Flags Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/experimental/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17576](https://github.com/opensearch-project/OpenSearch/pull/17576) | Fix NPE in node stats due to QueryGroupTasks |
 | [#17598](https://github.com/opensearch-project/OpenSearch/pull/17598) | Fix bytes parameter on `_cat/recovery` |
 | [#17611](https://github.com/opensearch-project/OpenSearch/pull/17611) | Refactor FeatureFlags for performance |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17518](https://github.com/opensearch-project/OpenSearch/issues/17518): NPE in node stats due to QueryGroupTasks
 - [Issue #17596](https://github.com/opensearch-project/OpenSearch/issues/17596): Bytes parameter doesn't work on `_cat/recovery`
 - [Issue #16519](https://github.com/opensearch-project/OpenSearch/issues/16519): FeatureFlags.isEnabled is slow
-- [CAT Recovery API Documentation](https://docs.opensearch.org/3.0/api-reference/cat/cat-recovery/)
-- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
-- [Experimental Feature Flags Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/experimental/)
-
-## Related Feature Reports
-
-- [Node Stats](../../../features/opensearch/node-stats.md)

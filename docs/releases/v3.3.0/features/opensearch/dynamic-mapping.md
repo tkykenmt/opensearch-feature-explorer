@@ -101,18 +101,20 @@ To adopt this feature:
 - The feature requires OpenSearch 3.3.0 or later
 - Cannot be combined with other dynamic values on the same mapping level
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Dynamic mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/dynamic/): Official docs on dynamic mapping
+- [Documentation PR #10388](https://github.com/opensearch-project/documentation-website/pull/10388): Documentation update
+- [API Specification PR #944](https://github.com/opensearch-project/opensearch-api-specification/pull/944): API spec update
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19065](https://github.com/opensearch-project/OpenSearch/pull/19065) | Add `false_allow_templates` as a dynamic mapping option |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18617](https://github.com/opensearch-project/OpenSearch/issues/18617): Feature request for `false_allow_templates`
-- [Documentation: Dynamic mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/dynamic/): Official docs on dynamic mapping
-- [API Specification PR #944](https://github.com/opensearch-project/opensearch-api-specification/pull/944): API spec update
-- [Documentation PR #10388](https://github.com/opensearch-project/documentation-website/pull/10388): Documentation update
 
 ## Related Feature Report
 

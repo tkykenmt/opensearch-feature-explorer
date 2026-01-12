@@ -99,16 +99,18 @@ GET _nodes/stats
 - Mixed-version clusters: nodes running versions prior to 3.0.0 will not report `search_task` statistics
 - The monitoring service must be enabled for tracking to occur
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Related search backpressure feature
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17726](https://github.com/opensearch-project/OpenSearch/pull/17726) | Add tracking for long-running SearchTask post cancellation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17719](https://github.com/opensearch-project/OpenSearch/issues/17719): Track long running SearchTask post cancellation
-- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Related search backpressure feature
 
 ## Related Feature Report
 

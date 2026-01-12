@@ -338,8 +338,23 @@ The Security Dashboards Plugin provides a UI for managing resource sharing.
 - Share/Update Access modal for managing permissions
 - Support for users, roles, and backend_roles at different access levels
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Multiple resource types per index support, resource_type tracking on sharing documents, ResourceProvider refactored to interface, ResourceSharing Builder pattern, POST support for update sharing API, removed Java share/revoke APIs in favor of REST, migration API requires default_owner parameter
+- **v3.3.0** (2026-01): ML-Commons model group onboarding, Resource Access Management Dashboard UI, DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
+- **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
+- **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation
+
+## References
+
+### Documentation
+- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Complete developer and user guide
+- [spi/README.md](https://github.com/opensearch-project/security/blob/main/spi/README.md): SPI implementation guide
+
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.4.0 | [#5713](https://github.com/opensearch-project/security/pull/5713) | security | Allow multiple sharable resource types in single resource index |
@@ -370,20 +385,9 @@ The Security Dashboards Plugin provides a UI for managing resource sharing.
 | v3.1.0 | [#5281](https://github.com/opensearch-project/security/pull/5281) | security | Introduces Centralized Resource Access Control Framework |
 | v3.1.0 | [#5358](https://github.com/opensearch-project/security/pull/5358) | security | Store resource sharing info in 1:1 backing indices |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing proposal
 - [Issue #5391](https://github.com/opensearch-project/security/issues/5391): Migration API tracking issue
 - [Issue #5442](https://github.com/opensearch-project/security/issues/5442): Resource Access Evaluator tracking issue
 - [Issue #3890](https://github.com/opensearch-project/ml-commons/issues/3890): Onboard ML plugin to Centralized Resource AuthZ framework
 - [Issue #2303](https://github.com/opensearch-project/security-dashboards-plugin/issues/2303): Resource Access Management Dashboard feature request
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
-- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Complete developer and user guide
-- [spi/README.md](https://github.com/opensearch-project/security/blob/main/spi/README.md): SPI implementation guide
-
-## Change History
-
-- **v3.4.0** (2026-01): Multiple resource types per index support, resource_type tracking on sharing documents, ResourceProvider refactored to interface, ResourceSharing Builder pattern, POST support for update sharing API, removed Java share/revoke APIs in favor of REST, migration API requires default_owner parameter
-- **v3.3.0** (2026-01): ML-Commons model group onboarding, Resource Access Management Dashboard UI, DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
-- **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
-- **v3.1.0** (2025): Initial implementation with centralized SPI, 1:1 backing sharing indices, and automatic access evaluation

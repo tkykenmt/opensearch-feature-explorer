@@ -107,15 +107,15 @@ SearchResponse response = builder.execute().actionGet();
 - Does not support concurrent segment search mode with streaming
 - Only `QUERY_THEN_FETCH` search type is supported for streaming
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18722](https://github.com/opensearch-project/OpenSearch/pull/18722) | APIs for stream transport and stream-based search action |
 | [#18874](https://github.com/opensearch-project/OpenSearch/pull/18874) | Streaming aggregation implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #16774](https://github.com/opensearch-project/OpenSearch/issues/16774): Streaming Aggregation - A Memory-Efficient Approach
 - [RFC #18425](https://github.com/opensearch-project/OpenSearch/issues/18425): Alternate Stream Transport in OpenSearch
 

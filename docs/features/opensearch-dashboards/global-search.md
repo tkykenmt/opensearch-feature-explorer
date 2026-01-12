@@ -196,20 +196,20 @@ chrome.globalSearch.getAllSearchCommands$().subscribe(commands => {
 - When multiple commands specify `inputPlaceholder`, only the first registered command's placeholder is used
 - Search results are limited to 10 items per command type
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-10-29): Added assets search command (`@` prefix) for searching dashboards and visualizations; enhanced GlobalSearchCommand interface with `action` property for Enter-key triggered actions; migrated to observable-based architecture with `getAllSearchCommands$`; added request cancellation support via `abortSignal`
+- **v3.3.0**: Fixed global search URL handling in workspace context
+- **v2.18.0** (2024-11-05): Initial implementation - added global search bar into left navigation for searching pages across workspaces
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10789](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10789) | Add assets search command and enhance search commands |
 | v3.3.0 | [#10414](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10414) | Global search URL in workspace |
 | v2.18.0 | [#8538](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8538) | Add global search bar into left nav |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10741](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10741): RFC - Global Search Enhancements for New Home
-
-## Change History
-
-- **v3.4.0** (2025-10-29): Added assets search command (`@` prefix) for searching dashboards and visualizations; enhanced GlobalSearchCommand interface with `action` property for Enter-key triggered actions; migrated to observable-based architecture with `getAllSearchCommands$`; added request cancellation support via `abortSignal`
-- **v3.3.0**: Fixed global search URL handling in workspace context
-- **v2.18.0** (2024-11-05): Initial implementation - added global search bar into left navigation for searching pages across workspaces

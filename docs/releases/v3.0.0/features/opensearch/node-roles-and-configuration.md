@@ -96,19 +96,21 @@ Based on testing in large clusters (1000+ nodes), this change provides significa
 - This is a breaking change for plugins that relied on the `includeDiscoveryNodes` parameter
 - The `TransportNodesReloadSecureSettingsAction` previously required discovery nodes but has been updated to work without them
 
-## Related PRs
+## References
 
+### Documentation
+- [Nodes APIs Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/index/): Official API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17682](https://github.com/opensearch-project/OpenSearch/pull/17682) | Unset discovery nodes for every transport node actions request |
 | [#15131](https://github.com/opensearch-project/OpenSearch/pull/15131) | Reset discovery nodes in all transport node actions request (predecessor) |
 | [#14749](https://github.com/opensearch-project/OpenSearch/pull/14749) | Optimise TransportNodesAction to not send DiscoveryNodes (initial optimization) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17008](https://github.com/opensearch-project/OpenSearch/issues/17008): Feature request for unsetting discoveryNodes from BaseNodeRequest
 - [Issue #14713](https://github.com/opensearch-project/OpenSearch/issues/14713): Original performance issue
-- [Nodes APIs Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/index/): Official API documentation
 
 ## Related Feature Report
 

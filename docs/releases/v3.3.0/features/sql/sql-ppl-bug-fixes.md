@@ -85,8 +85,12 @@ source=demo-logs-otel-v1* 5a57f0a17fc6f59fb2ad8ec6b52ea3fa
 - Geopoint fix currently handles only map case; array and other complex scenarios require follow-up
 - Some backports to 2.19-dev branch failed and required manual backporting
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4416](https://github.com/opensearch-project/sql/pull/4416) | Fix count(*) and dc(field) to be capped at MAX_INTEGER |
@@ -116,8 +120,7 @@ source=demo-logs-otel-v1* 5a57f0a17fc6f59fb2ad8ec6b52ea3fa
 | [#3726](https://github.com/opensearch-project/sql/pull/3726) | Add splunk to ppl cheat sheet |
 | [#3613](https://github.com/opensearch-project/sql/pull/3613) | Bugfix: SQL type mapping for legacy JDBC output |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4387](https://github.com/opensearch-project/sql/issues/4387): Filter pushdown missing analyzed node
 - [Issue #4380](https://github.com/opensearch-project/sql/issues/4380): parse/grok/patterns NULL handling
 - [Issue #4376](https://github.com/opensearch-project/sql/issues/4376): Limit pushdown with offset
@@ -128,7 +131,6 @@ source=demo-logs-otel-v1* 5a57f0a17fc6f59fb2ad8ec6b52ea3fa
 - [Issue #4324](https://github.com/opensearch-project/sql/issues/4324): Geopoint in complex data types
 - [Issue #1545](https://github.com/opensearch-project/sql/issues/1545): Legacy JDBC type mapping
 - [Issue #3159](https://github.com/opensearch-project/sql/issues/3159): Legacy JDBC type mapping
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
 
 ## Related Feature Report
 

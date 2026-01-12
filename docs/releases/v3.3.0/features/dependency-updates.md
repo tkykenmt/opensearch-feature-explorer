@@ -84,10 +84,14 @@ The Bouncy Castle upgrade includes security improvements:
 - Some dependency updates required resolution overrides in package.json for transitive dependencies (cipher-base, sha.js)
 - The hadoop-minicluster dependency required explicit exclusions for commons-lang and org.jsonschema2pojo
 
-## Related PRs
+## References
 
-### OpenSearch Core
+### Documentation
+- [CVE-2025-54988](https://nvd.nist.gov/vuln/detail/CVE-2025-54988): Apache Tika vulnerability
+- [GHSA-cpq7-6gpm-g9rc](https://github.com/advisories/GHSA-cpq7-6gpm-g9rc): cipher-base/sha.js vulnerability
+- [commons-lang deprecation notice](https://mvnrepository.com/artifact/commons-lang/commons-lang)
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19068](https://github.com/opensearch-project/OpenSearch/pull/19068) | Update OpenTelemetry to 1.53.0 |
@@ -98,16 +102,10 @@ The Bouncy Castle upgrade includes security improvements:
 | [#19103](https://github.com/opensearch-project/OpenSearch/pull/19103) | Bump netty from 4.1.121.Final to 4.1.125.Final |
 | [#19222](https://github.com/opensearch-project/OpenSearch/pull/19222) | Bump reactor-netty and Bouncy Castle modules |
 | [#19495](https://github.com/opensearch-project/OpenSearch/pull/19495) | Bump io.grpc deps from 1.68.2 to 1.75.0 |
-
-### OpenSearch Dashboards
-
 | PR | Description |
 |----|-------------|
 | [#10378](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10378) | CVE-2025-6545/CVE-2025-7783: Bump pbkdf2, form-data |
 | [#10442](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10442) | Fix GHSA-cpq7-6gpm-g9rc: cipher-base, sha.js |
-
-### Plugins
-
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#2863](https://github.com/opensearch-project/k-nn/pull/2863) | k-nn | Replace commons-lang with commons-lang3 |
@@ -115,12 +113,6 @@ The Bouncy Castle upgrade includes security improvements:
 | [#1094](https://github.com/opensearch-project/anomaly-detection/pull/1094) | anomaly-detection | Bump axios from 1.8.2 to 1.12.1 |
 | [#1084](https://github.com/opensearch-project/anomaly-detection/pull/1084) | anomaly-detection | Bump cipher-base from 1.0.4 to 1.0.6 |
 | [#1085](https://github.com/opensearch-project/anomaly-detection/pull/1085) | anomaly-detection | Bump sha.js from 2.4.11 to 2.4.12 |
-
-## References
-
-- [CVE-2025-54988](https://nvd.nist.gov/vuln/detail/CVE-2025-54988): Apache Tika vulnerability
-- [GHSA-cpq7-6gpm-g9rc](https://github.com/advisories/GHSA-cpq7-6gpm-g9rc): cipher-base/sha.js vulnerability
-- [commons-lang deprecation notice](https://mvnrepository.com/artifact/commons-lang/commons-lang)
 
 ## Related Feature Report
 

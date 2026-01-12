@@ -105,16 +105,18 @@ No configuration changes are required. The protection is automatically enabled. 
 - The circuit breaker check adds minimal overhead to each shard result processing
 - Very large aggregation results may still trigger circuit breaker errors; consider using `batched_reduce_size` to control memory usage
 
-## Related PRs
+## References
 
+### Documentation
+- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19066](https://github.com/opensearch-project/OpenSearch/pull/19066) | Add circuit breaking logic for shard level results |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18999](https://github.com/opensearch-project/OpenSearch/issues/18999): Original bug report for OOM during large shard searches
-- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): Official documentation
 
 ## Related Feature Report
 

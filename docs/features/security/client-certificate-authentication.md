@@ -196,22 +196,24 @@ print(response.json())
 - SAN values are truncated at 8192 characters for safety
 - When `skip_users` matches, the user must have valid credentials for another auth backend
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator |
-
-## References
-
-- [Issue #4378](https://github.com/opensearch-project/security/issues/4378): Client certificate setting bypasses password requirements
-- [Client Certificate Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/): Official documentation
-- [Configuring TLS Certificates](https://docs.opensearch.org/3.0/security/configuration/tls/): TLS configuration guide
-- [Generating Self-Signed Certificates](https://docs.opensearch.org/3.0/security/configuration/generate-certificates/): Certificate generation guide
-
 ## Change History
 
 - **v3.3.0** (2026-01-14): Added `skip_users` configuration option
   - Allows specific certificate DNs to bypass client certificate authentication
   - Enables OpenSearch Dashboards with basic auth when client cert is required
   - Uses WildcardMatcher for flexible DN pattern matching
+
+## References
+
+### Documentation
+- [Client Certificate Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/): Official documentation
+- [Configuring TLS Certificates](https://docs.opensearch.org/3.0/security/configuration/tls/): TLS configuration guide
+- [Generating Self-Signed Certificates](https://docs.opensearch.org/3.0/security/configuration/generate-certificates/): Certificate generation guide
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator |
+
+### Issues (Design / RFC)
+- [Issue #4378](https://github.com/opensearch-project/security/issues/4378): Client certificate setting bypasses password requirements

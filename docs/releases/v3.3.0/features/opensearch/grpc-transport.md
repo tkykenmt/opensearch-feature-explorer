@@ -151,8 +151,13 @@ public class KNNQueryBuilderProtoConverter implements QueryBuilderProtoConverter
 - Sort-related protobufs temporarily removed (to be fixed in future release)
 - Some advanced query options may not be fully supported in gRPC format
 
-## Related PRs
+## References
 
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
+- [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18949](https://github.com/opensearch-project/OpenSearch/pull/18949) | Publish transport-grpc-spi for QueryBuilderProtoConverter |
@@ -169,13 +174,10 @@ public class KNNQueryBuilderProtoConverter implements QueryBuilderProtoConverter
 | [#19453](https://github.com/opensearch-project/OpenSearch/pull/19453) | Implement Nested query, bump to protobufs 0.19.0 |
 | [#19455](https://github.com/opensearch-project/OpenSearch/pull/19455) | Implement Script query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18513](https://github.com/opensearch-project/OpenSearch/issues/18513): GRPC Plugin Extensibility for Query Conversion
 - [Issue #19277](https://github.com/opensearch-project/OpenSearch/issues/19277): Optimize gRPC server for higher throughput
 - [Issue #19310](https://github.com/opensearch-project/OpenSearch/issues/19310): Zero-copy optimization for search hits
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
-- [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
 
 ## Related Feature Report
 

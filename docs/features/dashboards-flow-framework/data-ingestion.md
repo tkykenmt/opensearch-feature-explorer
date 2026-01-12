@@ -115,8 +115,18 @@ The data ingestion feature provides fine-grained error handling:
 - Error handling quality depends on model interface definitions
 - Local cluster version detection required for proper preset rendering
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025): Added fine-grained error handling, JSON Lines format support, local cluster version detection fixes, and various UX improvements
+
+## References
+
+### Documentation
+- [Documentation: Building AI search workflows](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/): Official OpenSearch Flow documentation
+- [Ingest Pipelines](https://docs.opensearch.org/3.0/ingest-pipelines/): OpenSearch ingest pipeline documentation
+- [JSON Lines specification](https://jsonlines.org/): JSON Lines format specification
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling |
@@ -129,15 +139,7 @@ The data ingestion feature provides fine-grained error handling:
 | v3.0.0 | [#654](https://github.com/opensearch-project/dashboards-flow-framework/pull/654) | Search Index Local Cluster fix |
 | v3.0.0 | [#672](https://github.com/opensearch-project/dashboards-flow-framework/pull/672) | JSON Lines autofilling fixes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #571](https://github.com/opensearch-project/dashboards-flow-framework/issues/571): Fine-grained error handling feature request
 - [Issue #627](https://github.com/opensearch-project/dashboards-flow-framework/issues/627): Various bug fixes request
 - [Issue #653](https://github.com/opensearch-project/dashboards-flow-framework/issues/653): Search Index Local Cluster bug
-- [Documentation: Building AI search workflows](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/): Official OpenSearch Flow documentation
-- [JSON Lines specification](https://jsonlines.org/): JSON Lines format specification
-- [Ingest Pipelines](https://docs.opensearch.org/3.0/ingest-pipelines/): OpenSearch ingest pipeline documentation
-
-## Change History
-
-- **v3.0.0** (2025): Added fine-grained error handling, JSON Lines format support, local cluster version detection fixes, and various UX improvements

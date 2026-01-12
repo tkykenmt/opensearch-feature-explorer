@@ -107,21 +107,21 @@ Special value handling:
 - `NaN` and `Infinity` values are converted to `null` in SearchIndexTool queries
 - Tools must be registered before use with agents
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4296](https://github.com/opensearch-project/ml-commons/pull/4296) | Enable execute tool feature flag by default |
-| v3.3.0 | [#4133](https://github.com/opensearch-project/ml-commons/pull/4133) | Add PlainNumberAdapter for Gson in SearchIndexTool |
-| v3.3.0 | [#4215](https://github.com/opensearch-project/ml-commons/pull/4215) | Standardize setting naming convention |
+- **v3.3.0** (2026-01): Execute Tool API enabled by default, PlainNumberAdapter added for SearchIndexTool, setting naming standardization
 
 ## References
 
+### Documentation
 - [SearchIndexTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/search-index-tool/)
 - [Tools Overview](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/)
 - [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
 - [Execute Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/execute-agent/)
 
-## Change History
-
-- **v3.3.0** (2026-01): Execute Tool API enabled by default, PlainNumberAdapter added for SearchIndexTool, setting naming standardization
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#4296](https://github.com/opensearch-project/ml-commons/pull/4296) | Enable execute tool feature flag by default |
+| v3.3.0 | [#4133](https://github.com/opensearch-project/ml-commons/pull/4133) | Add PlainNumberAdapter for Gson in SearchIndexTool |
+| v3.3.0 | [#4215](https://github.com/opensearch-project/ml-commons/pull/4215) | Standardize setting naming convention |

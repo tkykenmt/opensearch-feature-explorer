@@ -51,8 +51,12 @@ The Security plugin received 12 dependency updates:
 - These are maintenance updates with no functional changes
 - No migration required
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Plugin Repository](https://github.com/opensearch-project/security)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4696](https://github.com/opensearch-project/security/pull/4696) | Bump error_prone_annotations from 2.30.0 to 2.31.0 |
@@ -67,10 +71,6 @@ The Security plugin received 12 dependency updates:
 | [#4660](https://github.com/opensearch-project/security/pull/4660) | Bump metrics-core from 4.2.26 to 4.2.27 |
 | [#4681](https://github.com/opensearch-project/security/pull/4681) | Bump nebula.ospackage from 11.9.1 to 11.10.0 |
 | [#4623](https://github.com/opensearch-project/security/pull/4623) | Bump checker-qual from 3.45.0 to 3.46.0 |
-
-## References
-
-- [Security Plugin Repository](https://github.com/opensearch-project/security)
 
 ## Related Feature Report
 

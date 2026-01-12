@@ -98,19 +98,21 @@ GET my-seismic-index/_search
 - The fixes are specific to SEISMIC sparse ANN indices (requires `index.sparse: true`)
 - Force merge is still recommended for optimal SEISMIC performance
 
-## Related PRs
+## References
 
+### Blog Posts
+- [SEISMIC Blog](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/): Scaling neural sparse search to billions of vectors
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1655](https://github.com/opensearch-project/neural-search/pull/1655) | Fix IT failures in multi-node environments with dedicated master/data nodes |
 | [#1674](https://github.com/opensearch-project/neural-search/pull/1674) | Handle non-specified method_parameters in sparse ANN queries |
 | [#1683](https://github.com/opensearch-project/neural-search/pull/1683) | Fix disk space recovery when deleting sparse ANN indices |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1653](https://github.com/opensearch-project/neural-search/issues/1653): IT failures with dedicated master/data nodes
 - [Issue #1673](https://github.com/opensearch-project/neural-search/issues/1673): Query error when method_parameters not specified
-- [SEISMIC Blog](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/): Scaling neural sparse search to billions of vectors
 
 ## Related Feature Report
 

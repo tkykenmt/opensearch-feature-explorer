@@ -102,17 +102,17 @@ When deploying a model that references a global connector, the system automatica
 - The `global_tenant_id` setting must be configured at node startup (NodeScope, Final)
 - Cache TTL configuration is also immutable after startup
 
-## Related PRs
+## References
 
+### Documentation
+- [Multi-tenancy Documentation](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy configuration
+- [PR #4003](https://github.com/opensearch-project/ml-commons/pull/4003): Main implementation
+- [Remote Metadata SDK](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4003](https://github.com/opensearch-project/ml-commons/pull/4003) | Add global resource support |
-
-## References
-
-- [PR #4003](https://github.com/opensearch-project/ml-commons/pull/4003): Main implementation
-- [Remote Metadata SDK](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
-- [Multi-tenancy Documentation](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy configuration
 
 ## Related Feature Report
 

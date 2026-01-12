@@ -91,8 +91,12 @@ While labeled as an improvement, this PR adds Multi-Data Source (MDS) support to
 - Search bar on Top N Queries page only searches by query ID column
 - Cypress tests for search bar functionality are disabled due to framework limitations
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.2/observing-your-data/query-insights/query-insights-dashboard/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#217](https://github.com/opensearch-project/query-insights-dashboards/pull/217) | MDS support for Inflight Queries |
@@ -103,12 +107,10 @@ While labeled as an improvement, this PR adds Multi-Data Source (MDS) support to
 | [#285](https://github.com/opensearch-project/query-insights-dashboards/pull/285) | Fix top queries table sorting with correct id |
 | [#306](https://github.com/opensearch-project/query-insights-dashboards/pull/306) | Removed search bar Cypress tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #214](https://github.com/opensearch-project/query-insights-dashboards/issues/214): Search bar not working
 - [Issue #152](https://github.com/opensearch-project/query-insights-dashboards/issues/152): MDS support for Live Queries
 - [Cypress Issue #8267](https://github.com/cypress-io/cypress/issues/8267): Enter key not triggered after typing
-- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.2/observing-your-data/query-insights/query-insights-dashboard/)
 
 ## Related Feature Report
 

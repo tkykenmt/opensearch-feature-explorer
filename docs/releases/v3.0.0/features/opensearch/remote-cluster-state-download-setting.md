@@ -49,16 +49,18 @@ PUT /_cluster/settings
 - When disabled, nodes may have stale cluster state until the next successful cluster state update from the cluster manager
 - Only applicable to remote cluster state enabled clusters
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote cluster state](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16798](https://github.com/opensearch-project/OpenSearch/pull/16798) | Introduce a setting to disable download of full cluster state from remote on term mismatch |
 
-## References
-
+### Issues (Design / RFC)
 - [Documentation Issue #8957](https://github.com/opensearch-project/documentation-website/issues/8957): Public documentation request
-- [Remote cluster state](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/): Official documentation
 
 ## Related Feature Report
 

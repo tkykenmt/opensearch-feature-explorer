@@ -285,8 +285,24 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 - Requires installing the `workload-management` plugin
 - Operates at node level for search workloads
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Security plugin integration for WLM auto-tagging now available as a stable feature; Added `PrincipalAttribute`, `PrincipalExtractor`, `PrincipalAttributeExtractorExtension`, and `PrincipalAttributesExtension` components in Security plugin to extract username and roles from authenticated requests; Security plugin now depends on `workload-management-wlm-spi` (optional) and `autotagging-commons-spi` for SPI integration (PR #5606)
+- **v3.3.0** (2026-01-11): **Dashboard Enhancements**: Added bi-directional navigation between WLM and Live Queries dashboards (PR #299); Added WLM Group column to Live Queries table with clickable links; Added Multi-Data Source (MDS) support for WLM dashboard (PR #352); Added feature flag for WLM (PR #348); Added version decoupling requiring data source >= v3.1 (PR #361); Added check to prevent workload group deletion when associated rules exist (PR #19502). **Backend**: Added security attributes support (`principal.username`, `principal.role`) for rule-based auto-tagging via Security plugin integration (PR #5606); Implemented multi-attribute label resolving logic with priority-based scoring via `FeatureValueResolver` and `MatchLabel`; Restructured in-memory trie to store values as sets for multiple labels per attribute key; Enhanced GET Rule API to support filtering by nested attributes; Added comprehensive integration tests for auto-tagging scenarios; Fixed Update Rule API handling for multiple attributes; Fixed principal attribute scoring to correctly assign 0.0 for unspecified attributes (PR #19599)
+- **v3.2.0** (2026-01-10): Added WLM mode validation for workload group CRUD requests (Create/Update/Delete operations now fail when WLM mode is `disabled` or `monitor_only`); Added `WlmClusterSettingValuesProvider` component for centralized cluster settings management; Renamed `WorkloadGroupTestUtil` to `WorkloadManagementTestUtil`; Updated all "QueryGroup" references to "WorkloadGroup" in comments and Javadocs; Improved logging to dynamically show actual resiliency mode; Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules; Bug fixes including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
+- **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
+- **v3.0.0** (2025-02-25): Renamed QueryGroup to WorkloadGroup throughout the codebase for clearer terminology (PR #17901); API endpoints changed from `_wlm/query_group` to `_wlm/workload_group`; Response field changed from `query_groups` to `workload_groups`; Added WLM support for search scroll API to fix warning logs when using scroll operations (PR #16981); Modified `TransportSearchScrollAction` to set `queryGroupId` from thread context; Added `isQueryGroupSet()` method to `QueryGroupTask`
+- **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic
+
+## References
+
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Query Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
+- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
+- [Rule Lifecycle API](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.4.0 | [#5606](https://github.com/opensearch-project/security/pull/5606) | security | Security attribute feature for WLM dashboard |
@@ -330,24 +346,10 @@ GET _list/wlm_stats?size=50&sort=node_id&order=asc&next_token=<encrypted_token>
 | v2.18.0 | [#16417](https://github.com/opensearch-project/OpenSearch/pull/16417) | OpenSearch | Improve rejection logic for WLM |
 | v2.18.0 | [#16422](https://github.com/opensearch-project/OpenSearch/pull/16422) | OpenSearch | WLM create/update REST API bug fix |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #12342](https://github.com/opensearch-project/OpenSearch/issues/12342): Search Query Sandboxing: User Experience
 - [Issue #16874](https://github.com/opensearch-project/OpenSearch/issues/16874): Bug report for QueryGroupTask warning in scroll API
 - [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC for automated labeling of search requests
 - [Issue #17592](https://github.com/opensearch-project/OpenSearch/issues/17592): Feature request for paginating _wlm/stats API
 - [Issue #153](https://github.com/opensearch-project/query-insights-dashboards/issues/153): Feature request for bi-directional navigation
 - [Issue #19388](https://github.com/opensearch-project/OpenSearch/issues/19388): Bug report for WLM _rules API ValidationException
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Query Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
-- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
-- [Rule Lifecycle API](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Security plugin integration for WLM auto-tagging now available as a stable feature; Added `PrincipalAttribute`, `PrincipalExtractor`, `PrincipalAttributeExtractorExtension`, and `PrincipalAttributesExtension` components in Security plugin to extract username and roles from authenticated requests; Security plugin now depends on `workload-management-wlm-spi` (optional) and `autotagging-commons-spi` for SPI integration (PR #5606)
-- **v3.3.0** (2026-01-11): **Dashboard Enhancements**: Added bi-directional navigation between WLM and Live Queries dashboards (PR #299); Added WLM Group column to Live Queries table with clickable links; Added Multi-Data Source (MDS) support for WLM dashboard (PR #352); Added feature flag for WLM (PR #348); Added version decoupling requiring data source >= v3.1 (PR #361); Added check to prevent workload group deletion when associated rules exist (PR #19502). **Backend**: Added security attributes support (`principal.username`, `principal.role`) for rule-based auto-tagging via Security plugin integration (PR #5606); Implemented multi-attribute label resolving logic with priority-based scoring via `FeatureValueResolver` and `MatchLabel`; Restructured in-memory trie to store values as sets for multiple labels per attribute key; Enhanced GET Rule API to support filtering by nested attributes; Added comprehensive integration tests for auto-tagging scenarios; Fixed Update Rule API handling for multiple attributes; Fixed principal attribute scoring to correctly assign 0.0 for unspecified attributes (PR #19599)
-- **v3.2.0** (2026-01-10): Added WLM mode validation for workload group CRUD requests (Create/Update/Delete operations now fail when WLM mode is `disabled` or `monitor_only`); Added `WlmClusterSettingValuesProvider` component for centralized cluster settings management; Renamed `WorkloadGroupTestUtil` to `WorkloadManagementTestUtil`; Updated all "QueryGroup" references to "WorkloadGroup" in comments and Javadocs; Improved logging to dynamically show actual resiliency mode; Added configurable rule cardinality limit (`wlm.autotagging.max_rules`) with default of 200 rules (range: 10-500); Fixed delete rule event consumption for wildcard index based rules; Bug fixes including stricter attribute parameter extraction, centralized feature value validation, force refresh for immediate rule visibility, and graceful IndexNotFoundException handling
-- **v3.1.0** (2026-01-10): Added rule-based auto-tagging with full CRUD API (`/_rules/workload_group`), WLM ActionFilter for automatic request tagging, refresh-based rule synchronization, and paginated `/_list/wlm_stats` API
-- **v3.0.0** (2025-02-25): Renamed QueryGroup to WorkloadGroup throughout the codebase for clearer terminology (PR #17901); API endpoints changed from `_wlm/query_group` to `_wlm/workload_group`; Response field changed from `query_groups` to `workload_groups`; Added WLM support for search scroll API to fix warning logs when using scroll operations (PR #16981); Modified `TransportSearchScrollAction` to set `queryGroupId` from thread context; Added `isQueryGroupSet()` method to `QueryGroupTask`
-- **v2.18.0** (2024-10-22): Initial implementation with QueryGroup CRUD APIs, Stats API, resource cancellation framework, resiliency orchestrator, persistence, and enhanced rejection logic

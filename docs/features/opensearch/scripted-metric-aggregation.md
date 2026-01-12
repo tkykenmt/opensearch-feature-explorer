@@ -125,20 +125,20 @@ GET rollup_index,raw_index/_search
 - When using with rollup indices, the scripted metric result must match expected formats (`ScriptedAvg` for avg, numeric for value_count)
 - Invalid scripted metric results throw `IllegalArgumentException` with descriptive error messages
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19006](https://github.com/opensearch-project/OpenSearch/pull/19006) | Adding ScriptedAvg class to painless spi to allowlist usage from plugins |
-| v3.2.0 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric Aggregation when reducing aggregations in InternalValueCount and InternalAvg |
-
-## References
-
-- [Scripted Metric Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/scripted-metric/): Official documentation
-- [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/): Rollup feature documentation
-- [Index Management PR #1268](https://github.com/opensearch-project/index-management/pull/1268): Original rollup and raw indices search support
-
 ## Change History
 
 - **v3.3.0** (2025-08-19): Added `ScriptedAvg` class to Painless SPI allowlist, enabling plugins to use scripted averages in Painless scripts; registered `ScriptedAvg` in `Streamables.java` with byte marker 28 for cross-node streaming
 - **v3.2.0** (2025-08-06): Added support for `InternalScriptedMetric` in `InternalValueCount` and `InternalAvg` reduce methods, enabling searches across rollup and raw indices
+
+## References
+
+### Documentation
+- [Scripted Metric Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/scripted-metric/): Official documentation
+- [Index Rollups Documentation](https://docs.opensearch.org/3.0/im-plugin/index-rollups/index/): Rollup feature documentation
+- [Index Management PR #1268](https://github.com/opensearch-project/index-management/pull/1268): Original rollup and raw indices search support
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#19006](https://github.com/opensearch-project/OpenSearch/pull/19006) | Adding ScriptedAvg class to painless spi to allowlist usage from plugins |
+| v3.2.0 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric Aggregation when reducing aggregations in InternalValueCount and InternalAvg |

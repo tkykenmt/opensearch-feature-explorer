@@ -100,18 +100,20 @@ POST my-index/_doc/1
 - Custom patterns must follow Java's DateTimeFormatter syntax
 - Maximum epoch values are constrained by Java's `Long.MAX_VALUE`
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-12): Added `epoch_micros` date format for microsecond precision timestamps
+
+## References
+
+### Documentation
+- [Date field type documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/date/): Official date field documentation
+- [Format mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/format/): Date format configuration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19245](https://github.com/opensearch-project/OpenSearch/pull/19245) | Add `epoch_micros` date format |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14669](https://github.com/opensearch-project/OpenSearch/issues/14669): Feature request for epoch_micros support
-- [Date field type documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/date/): Official date field documentation
-- [Format mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/format/): Date format configuration
-
-## Change History
-
-- **v3.3.0** (2025-09-12): Added `epoch_micros` date format for microsecond precision timestamps

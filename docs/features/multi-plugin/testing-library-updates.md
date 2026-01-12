@@ -84,19 +84,19 @@ describe('MyComponent', () => {
 - Tests written for older versions need migration to the new API
 - The `setup()` method should be called once per test suite for optimal performance
 
-## Related PRs
+## Change History
 
-| Version | PR | Repository | Description |
-|---------|-----|------------|-------------|
-| v3.1.0 | [#1042](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1042) | anomaly-detection-dashboards-plugin | Update from v12.1.6 to v14.4.3 |
-| v3.1.0 | [#1321](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1321) | index-management-dashboards-plugin | Update from v13.1.9 to v14.4.3 |
+- **v3.1.0** (2025-06): Updated `@testing-library/user-event` to v14.4.3 in anomaly-detection-dashboards-plugin and index-management-dashboards-plugin
 
 ## References
 
+### Documentation
 - [@testing-library/user-event Documentation](https://testing-library.com/docs/user-event/intro)
 - [GitHub: @testing-library/user-event](https://github.com/testing-library/user-event)
 - [Testing Library Best Practices](https://testing-library.com/docs/guiding-principles)
 
-## Change History
-
-- **v3.1.0** (2025-06): Updated `@testing-library/user-event` to v14.4.3 in anomaly-detection-dashboards-plugin and index-management-dashboards-plugin
+### Pull Requests
+| Version | PR | Repository | Description |
+|---------|-----|------------|-------------|
+| v3.1.0 | [#1042](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1042) | anomaly-detection-dashboards-plugin | Update from v12.1.6 to v14.4.3 |
+| v3.1.0 | [#1321](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1321) | index-management-dashboards-plugin | Update from v13.1.9 to v14.4.3 |

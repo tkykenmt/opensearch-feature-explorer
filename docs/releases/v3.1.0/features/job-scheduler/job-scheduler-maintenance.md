@@ -68,18 +68,20 @@ This is a transparent change for users. Plugin developers extending Job Schedule
 - No functional changes in this release
 - This is a maintenance-only release for Job Scheduler
 
-## Related PRs
+## References
 
+### Documentation
+- [Job Scheduler Documentation](https://docs.opensearch.org/3.1/monitoring-your-cluster/job-scheduler/index/)
+- [v3.1.0 Release Notes](https://github.com/opensearch-project/job-scheduler/blob/main/release-notes/opensearch-job-scheduler.release-notes-3.1.0.0.md)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#766](https://github.com/opensearch-project/job-scheduler/pull/766) | Increment version to 3.1.0-SNAPSHOT |
 | [#773](https://github.com/opensearch-project/job-scheduler/pull/773) | Remove guava dependency |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18113](https://github.com/opensearch-project/OpenSearch/issues/18113): Remove Guava from plugins
-- [v3.1.0 Release Notes](https://github.com/opensearch-project/job-scheduler/blob/main/release-notes/opensearch-job-scheduler.release-notes-3.1.0.0.md)
-- [Job Scheduler Documentation](https://docs.opensearch.org/3.1/monitoring-your-cluster/job-scheduler/index/)
 
 ## Related Feature Report
 

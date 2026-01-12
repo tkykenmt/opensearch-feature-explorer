@@ -95,21 +95,21 @@ graph TB
 - AWS deployment option only available for OpenTelemetry workflows
 - Index patterns must match the actual indices created by data ingestion pipelines
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-12): Major restructure - reorganized into Logs/Metrics/Traces signal types, added telemetry source dropdown with icons, Self Managed/AWS tabs for OTEL, auto index template creation, UI polish
+- **v2.17.0** (2024-10-22): Fixed index pattern mismatches - CSV workflow now uses `logs-*` pattern, removed unused `otel-metrics*` from OTel workflow
+
+## References
+
+### Documentation
+- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/)
+- [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | GettingStarted Rework - signal-based organization |
 | v2.18.0 | [#2205](https://github.com/opensearch-project/dashboards-observability/pull/2205) | GettingStarted Fit and Finish - UI polish |
 | v2.18.0 | [#2200](https://github.com/opensearch-project/dashboards-observability/pull/2200) | Auto trigger schema setup |
 | v2.17.0 | [#2016](https://github.com/opensearch-project/dashboards-observability/pull/2016) | Update ndjson so workflow matches patterns created |
-
-## References
-
-- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/)
-- [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
-
-## Change History
-
-- **v2.18.0** (2024-11-12): Major restructure - reorganized into Logs/Metrics/Traces signal types, added telemetry source dropdown with icons, Self Managed/AWS tabs for OTEL, auto index template creation, UI polish
-- **v2.17.0** (2024-10-22): Fixed index pattern mismatches - CSV workflow now uses `logs-*` pattern, removed unused `otel-metrics*` from OTel workflow

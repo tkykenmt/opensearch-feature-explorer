@@ -101,16 +101,16 @@ ConstantScoreQueryBuilder csQuery = new ConstantScoreQueryBuilder(
 - `SpanGapQueryBuilder` throws `UnsupportedOperationException` when `filter()` is called, as span queries don't support filtering
 - The `filter()` method returns a new `BoolQueryBuilder` for most query types, which may affect reference equality checks
 
-## Related PRs
+## References
 
+### Documentation
+- [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): Official documentation on query vs filter context
+- [Boolean query](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Boolean query documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17409](https://github.com/opensearch-project/OpenSearch/pull/17409) | Add filter function for AbstractQueryBuilder, BoolQueryBuilder, ConstantScoreQueryBuilder |
-
-## References
-
-- [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): Official documentation on query vs filter context
-- [Boolean query](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Boolean query documentation
 
 ## Related Feature Report
 

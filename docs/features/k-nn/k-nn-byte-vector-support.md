@@ -224,21 +224,25 @@ Based on OpenSearch Benchmark tests:
 - SIMD optimization (AVX2/NEON) recommended for best performance
 - Not supported with Lucene engine for Faiss-specific features
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation with HNSW and IVF support for Faiss byte vectors
+
+## References
+
+### Documentation
+- [k-NN Vector Quantization Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/)
+- [k-NN Vector Field Type](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/)
+- [Faiss ScalarQuantizer Documentation](https://faiss.ai/cpp_api/struct/structfaiss_1_1ScalarQuantizer.html)
+
+### Blog Posts
+- [Blog: Introducing byte vector support for Faiss](https://opensearch.org/blog/faiss-byte-vector/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#1823](https://github.com/opensearch-project/k-NN/pull/1823) | Add HNSW support for Faiss byte vector |
 | v2.17.0 | [#2002](https://github.com/opensearch-project/k-NN/pull/2002) | Add IVF support for Faiss byte vector |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1659](https://github.com/opensearch-project/k-NN/issues/1659): Original feature request
-- [k-NN Vector Quantization Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/)
-- [k-NN Vector Field Type](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/)
-- [Blog: Introducing byte vector support for Faiss](https://opensearch.org/blog/faiss-byte-vector/)
-- [Faiss ScalarQuantizer Documentation](https://faiss.ai/cpp_api/struct/structfaiss_1_1ScalarQuantizer.html)
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation with HNSW and IVF support for Faiss byte vectors

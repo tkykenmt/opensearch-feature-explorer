@@ -93,8 +93,13 @@ POST _plugins/_sql?pretty
 - The `fetch_size` parameter is only supported for the `jdbc` response format
 - A value of 0 for `fetch_size` falls back to non-paginated response
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL API Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/): Official API documentation
+- [Point in Time Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/): PIT in SQL
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Backport: SQL pagination should work with the `pretty` parameter |
@@ -102,11 +107,8 @@ POST _plugins/_sql?pretty
 | [#2759](https://github.com/opensearch-project/sql/pull/2759) | Original: SQL pagination should work with the `pretty` parameter |
 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Original: Bug Fixes for minor issues with SQL PIT refactor |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2460](https://github.com/opensearch-project/sql/issues/2460): SQL pagination doesn't work in Dev tools
-- [SQL and PPL API Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/): Official API documentation
-- [Point in Time Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/): PIT in SQL
 
 ## Related Feature Report
 

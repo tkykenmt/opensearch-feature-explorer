@@ -97,16 +97,18 @@ When a query exceeds thresholds, the aggregation will now properly terminate:
 - The fetch phase (where `InternalAggregation` results are transformed) does not yet have cancellation checks
 - A follow-up PR is planned to add cancellation checks in the fetch phase
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation on search backpressure
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18426](https://github.com/opensearch-project/OpenSearch/pull/18426) | Add task cancellation check in aggregation code paths |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15413](https://github.com/opensearch-project/OpenSearch/issues/15413): Original bug report - Deeply nested aggregations are not terminable
-- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation on search backpressure
 
 ## Related Feature Report
 

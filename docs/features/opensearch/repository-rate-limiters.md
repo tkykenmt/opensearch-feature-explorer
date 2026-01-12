@@ -115,18 +115,20 @@ PUT /_snapshot/s3-repository
 - Only the five rate limiter settings are dynamically reloadable; other repository settings require recreation
 - Rate changes affect ongoing operations immediately
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-01): Made rate limiter settings dynamically reloadable without repository recreation
+
+## References
+
+### Documentation
+- [Register Snapshot Repository API](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
+- [Take and Restore Snapshots](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/): Snapshot operations guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18069](https://github.com/opensearch-project/OpenSearch/pull/18069) | Making multi rate limiters in repository dynamic |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17488](https://github.com/opensearch-project/OpenSearch/issues/17488): Feature request for dynamic snapshot rate settings
-- [Register Snapshot Repository API](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
-- [Take and Restore Snapshots](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/): Snapshot operations guide
-
-## Change History
-
-- **v3.2.0** (2025-07-01): Made rate limiter settings dynamically reloadable without repository recreation

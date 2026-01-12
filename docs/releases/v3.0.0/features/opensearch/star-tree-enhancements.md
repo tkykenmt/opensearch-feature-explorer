@@ -155,8 +155,15 @@ No migration required. Star-tree indexes created in v2.18+ continue to work. New
 - Updates and deletions are not reflected in star-tree index
 - Queries on date fields are not yet supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Star-tree index documentation
+
+### Blog Posts
+- [Blog](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): The power of star-tree indexes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17165](https://github.com/opensearch-project/OpenSearch/pull/17165) | Keyword & Numeric Terms Aggregation support |
@@ -164,14 +171,11 @@ No migration required. Star-tree indexes created in v2.18+ continue to work. New
 | [#17275](https://github.com/opensearch-project/OpenSearch/pull/17275) | Unsigned-long query support |
 | [#17941](https://github.com/opensearch-project/OpenSearch/pull/17941) | Boolean Query support in aggregations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16551](https://github.com/opensearch-project/OpenSearch/issues/16551): Bucket terms aggregation with metric aggregation
 - [Issue #16553](https://github.com/opensearch-project/OpenSearch/issues/16553): Range aggregations with metric sub-aggregation
 - [Issue #15231](https://github.com/opensearch-project/OpenSearch/issues/15231): Handle unsigned long in star tree
 - [Issue #17267](https://github.com/opensearch-project/OpenSearch/issues/17267): Boolean query support
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Star-tree index documentation
-- [Blog](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): The power of star-tree indexes
 
 ## Related Feature Report
 

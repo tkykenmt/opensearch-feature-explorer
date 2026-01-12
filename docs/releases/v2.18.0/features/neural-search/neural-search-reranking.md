@@ -133,20 +133,22 @@ GET /my-index/_search
 - Hybrid query rescore does not work with sorting (same as traditional query behavior)
 - Rescore window size affects performance; larger windows increase latency
 
-## Related PRs
+## References
 
+### Documentation
+- [Rerank Processor Documentation](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/rerank-processor/): Official rerank processor reference
+- [Reranking by Field Documentation](https://docs.opensearch.org/2.18/search-plugins/search-relevance/rerank-by-field/): Official by_field reranking guide
+- [Reranking Search Results](https://docs.opensearch.org/2.18/search-plugins/search-relevance/reranking-search-results/): Overview of reranking capabilities
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#932](https://github.com/opensearch-project/neural-search/pull/932) | ByFieldRerankProcessor for second level reranking |
 | [#917](https://github.com/opensearch-project/neural-search/pull/917) | Added rescorer in hybrid query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #926](https://github.com/opensearch-project/neural-search/issues/926): Feature request for ByFieldRerankProcessor
 - [Issue #914](https://github.com/opensearch-project/neural-search/issues/914): Bug report - rescore queries didn't modify scores with hybrid query
-- [Rerank Processor Documentation](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/rerank-processor/): Official rerank processor reference
-- [Reranking by Field Documentation](https://docs.opensearch.org/2.18/search-plugins/search-relevance/rerank-by-field/): Official by_field reranking guide
-- [Reranking Search Results](https://docs.opensearch.org/2.18/search-plugins/search-relevance/reranking-search-results/): Overview of reranking capabilities
 
 ## Related Feature Report
 

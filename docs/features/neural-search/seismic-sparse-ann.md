@@ -364,8 +364,23 @@ GET testindex/_search
 - **Two-Phase Query**: Neural sparse two-phase query not supported with SEISMIC fields
 - **Nested Score Mode**: Only `score_mode: "max"` is supported for nested queries (v3.4.0)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Added nested field support for text chunking workflows; bug fixes for IT failures, query handling, and disk space recovery
+- **v3.3.0** (2025-10-23): Initial implementation of SEISMIC sparse ANN algorithm with full indexing, query, caching, and memory management support
+
+## References
+
+### Documentation
+- [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
+- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
+- [Text Chunking Documentation](https://docs.opensearch.org/latest/vector-search/ingesting-data/text-chunking/)
+- [SEISMIC Paper](https://dl.acm.org/doi/10.1145/3626772.3657769): Efficient Inverted Indexes for Approximate Retrieval over Learned Sparse Representations
+
+### Blog Posts
+- [Blog: Scaling neural sparse search to billions of vectors](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#1678](https://github.com/opensearch-project/neural-search/pull/1678) | Support nested field ingestion and query |
@@ -390,20 +405,9 @@ GET testindex/_search
 | v3.3.0 | [#1580](https://github.com/opensearch-project/neural-search/pull/1580) | Dynamic max float value for byte quantization |
 | v3.3.0 | [#1581](https://github.com/opensearch-project/neural-search/pull/1581) | Change path of index_thread_qty API |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #1335](https://github.com/opensearch-project/neural-search/issues/1335): Sparse ANN Algorithm: Seismic
 - [Design #1390](https://github.com/opensearch-project/neural-search/issues/1390): Approximate Sparse Nearest-Neighbor Search in OpenSearch
 - [Memory Management Design #1444](https://github.com/opensearch-project/neural-search/issues/1444): SEISMIC memory management
 - [Issue #1666](https://github.com/opensearch-project/neural-search/issues/1666): Feature request for text chunking search with Sparse ANN
 - [Issue #1671](https://github.com/opensearch-project/neural-search/issues/1671): Design document for nested field support
-- [SEISMIC Paper](https://dl.acm.org/doi/10.1145/3626772.3657769): Efficient Inverted Indexes for Approximate Retrieval over Learned Sparse Representations
-- [Blog: Scaling neural sparse search to billions of vectors](https://opensearch.org/blog/scaling-neural-sparse-search-to-billions-of-vectors-with-approximate-search/)
-- [Neural Sparse Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
-- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
-- [Text Chunking Documentation](https://docs.opensearch.org/latest/vector-search/ingesting-data/text-chunking/)
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Added nested field support for text chunking workflows; bug fixes for IT failures, query handling, and disk space recovery
-- **v3.3.0** (2025-10-23): Initial implementation of SEISMIC sparse ANN algorithm with full indexing, query, caching, and memory management support

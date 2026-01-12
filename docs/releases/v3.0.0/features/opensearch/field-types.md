@@ -89,17 +89,19 @@ Plugin developers creating custom field types that wrap existing types should:
 - Plugin developers must remember to call `unwrap()` before `instanceof` checks
 - Adds a small overhead for type resolution in wrapped types
 
-## Related PRs
+## References
 
+### Documentation
+- [Mappings and field types](https://docs.opensearch.org/3.0/field-types/): OpenSearch field types documentation
+- [neural-search PR #1225](https://github.com/opensearch-project/neural-search/pull/1225): Example usage with SemanticFieldType
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17627](https://github.com/opensearch-project/OpenSearch/pull/17627) | Add FilterFieldType for developers who want to wrap MappedFieldType |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17624](https://github.com/opensearch-project/OpenSearch/issues/17624): Feature request for easier field type wrapping
-- [Mappings and field types](https://docs.opensearch.org/3.0/field-types/): OpenSearch field types documentation
-- [neural-search PR #1225](https://github.com/opensearch-project/neural-search/pull/1225): Example usage with SemanticFieldType
 
 ## Related Feature Report
 

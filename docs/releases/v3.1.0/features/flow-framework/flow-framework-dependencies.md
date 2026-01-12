@@ -116,18 +116,18 @@ version:
 - The log pattern agent template requires Amazon Bedrock access with Claude model
 - Template credentials must be configured with valid AWS access keys
 
-## Related PRs
+## References
 
+### Documentation
+- [Flow Framework Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
+- [LogPatternTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/log-pattern-tool/)
+- [Flow Agents Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1141](https://github.com/opensearch-project/flow-framework/pull/1141) | Conditionally include ddb-client dependency only if env variable set |
 | [#1137](https://github.com/opensearch-project/flow-framework/pull/1137) | Add data summary with log pattern agent template |
-
-## References
-
-- [Flow Framework Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
-- [LogPatternTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/log-pattern-tool/)
-- [Flow Agents Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
 
 ## Related Feature Report
 

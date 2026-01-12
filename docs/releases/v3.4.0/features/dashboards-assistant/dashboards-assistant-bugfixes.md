@@ -27,13 +27,13 @@ Fixed an issue where capability services were being accessed before user login, 
 
 None identified.
 
-## Related PRs
+## References
 
+### Documentation
+- [dashboards-investigation#244](https://github.com/opensearch-project/dashboards-investigation/pull/244): Related fix for capability services
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#627](https://github.com/opensearch-project/dashboards-assistant/pull/627) | Fix text2viz header |
 | [#628](https://github.com/opensearch-project/dashboards-assistant/pull/628) | Fix capability services access settings before login |
-
-## References
-
-- [dashboards-investigation#244](https://github.com/opensearch-project/dashboards-investigation/pull/244): Related fix for capability services

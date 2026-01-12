@@ -95,8 +95,13 @@ if (Version.CURRENT.onOrAfter(Version.V_3_3_0)) {
 - The ISM policy rebinding fix only affects new policy removals; existing affected indexes may need manual intervention
 - The snapshot pattern fix requires SM policies to be re-evaluated on next scheduled run
 
-## Related PRs
+## References
 
+### Documentation
+- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
+- [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1525](https://github.com/opensearch-project/index-management/pull/1525) | Fix ISM policy rebinding after removal |
@@ -104,14 +109,11 @@ if (Version.CURRENT.onOrAfter(Version.V_3_3_0)) {
 | [#1507](https://github.com/opensearch-project/index-management/pull/1507) | Fix ExplainSMPolicy serialization for null creation |
 | [#1529](https://github.com/opensearch-project/index-management/pull/1529) | Fix race condition in rollup start/stop tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1524](https://github.com/opensearch-project/index-management/issues/1524): ISM policy rebinding bug report
 - [Issue #1502](https://github.com/opensearch-project/index-management/issues/1502): SM deletion snapshot pattern bug report
 - [Issue #1506](https://github.com/opensearch-project/index-management/issues/1506): ExplainSMPolicy serialization bug report
 - [Issue #90](https://github.com/opensearch-project/index-management/issues/90): Flaky tests tracking issue
-- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
-- [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
 
 ## Related Feature Report
 

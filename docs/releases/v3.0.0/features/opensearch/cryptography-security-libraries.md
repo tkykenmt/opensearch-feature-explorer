@@ -122,18 +122,22 @@ TrustManagerFactory tmf = TrustManagerFactory.getInstance("PKIX", "BCJSSE");
 - Plugins with direct Bouncy Castle dependencies may require updates
 - PBKDF-OPENSSL not supported in FIPS mode (use PBKDF2 instead)
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #14912](https://github.com/opensearch-project/OpenSearch/pull/14912): Original FIPS support PR (split into #17393 and #17507)
+
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Related security architecture changes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17393](https://github.com/opensearch-project/OpenSearch/pull/17393) | Use BC libraries to parse PEM files, increase key length, allow general use of known cryptographic binary extensions |
 | [#17507](https://github.com/opensearch-project/OpenSearch/pull/17507) | Migrate BC libs to their FIPS counterparts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): RFC - Proposal for supporting FIPS 140-2 enforced mode
-- [PR #14912](https://github.com/opensearch-project/OpenSearch/pull/14912): Original FIPS support PR (split into #17393 and #17507)
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Related security architecture changes
 
 ## Related Feature Report
 

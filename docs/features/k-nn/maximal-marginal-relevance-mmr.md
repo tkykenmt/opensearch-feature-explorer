@@ -218,23 +218,27 @@ Choose candidates based on your diversity requirements and latency budget.
 - Nested fields containing vectors are not supported
 - Remote cluster vector field info cannot be auto-resolved
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [k-NN #2868](https://github.com/opensearch-project/k-NN/pull/2868) | Support native Maximal Marginal Relevance |
-| v3.3.0 | [neural-search #1567](https://github.com/opensearch-project/neural-search/pull/1567) | Support native MMR for neural query |
+- **v3.3.0** (2025-09-26): Initial implementation with native MMR support for k-NN and neural queries
 
 ## References
 
-- [Issue k-NN #2804](https://github.com/opensearch-project/k-NN/issues/2804): Original feature request
-- [Issue neural-search #1481](https://github.com/opensearch-project/neural-search/issues/1481): Neural-search feature request
-- [Blog: Improving vector search diversity through native MMR](https://opensearch.org/blog/improving-vector-search-diversity-through-native-mmr/)
+### Documentation
 - [Documentation: System-generated search processors](https://docs.opensearch.org/latest/search-plugins/search-pipelines/system-generated-search-processors/)
 - [Documentation: Semantic field type](https://docs.opensearch.org/latest/field-types/supported-field-types/semantic/)
 - [Documentation: Cross-cluster search](https://docs.opensearch.org/latest/search-plugins/cross-cluster-search/)
 - [LangChain MMR Retriever](https://docs.langchain.com/docs/modules/data_connection/retrievers/vectorstores#maximal-marginal-relevance)
 
-## Change History
+### Blog Posts
+- [Blog: Improving vector search diversity through native MMR](https://opensearch.org/blog/improving-vector-search-diversity-through-native-mmr/)
 
-- **v3.3.0** (2025-09-26): Initial implementation with native MMR support for k-NN and neural queries
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [k-NN #2868](https://github.com/opensearch-project/k-NN/pull/2868) | Support native Maximal Marginal Relevance |
+| v3.3.0 | [neural-search #1567](https://github.com/opensearch-project/neural-search/pull/1567) | Support native MMR for neural query |
+
+### Issues (Design / RFC)
+- [Issue k-NN #2804](https://github.com/opensearch-project/k-NN/issues/2804): Original feature request
+- [Issue neural-search #1481](https://github.com/opensearch-project/neural-search/issues/1481): Neural-search feature request

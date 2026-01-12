@@ -99,17 +99,17 @@ Can now use the standard installation process with `http.type: reactor-netty4-se
 - The fix is specific to the `transport-reactor-netty4` plugin; other custom transport implementations may need similar updates
 - Client authentication mode must be properly configured in `opensearch.yml`
 
-## Related PRs
+## References
 
+### Documentation
+- [TLS Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS configuration guide
+- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original issue report
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#5667](https://github.com/opensearch-project/security/pull/5667) | security | Add fallback logic to use 'ssl_engine' if 'ssl_handler' attribute is not available/compatible |
 | [#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | OpenSearch | Implement SslHandler retrieval logic for transport-reactor-netty4 plugin |
-
-## References
-
-- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original issue report
-- [TLS Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS configuration guide
 
 ## Related Feature Report
 

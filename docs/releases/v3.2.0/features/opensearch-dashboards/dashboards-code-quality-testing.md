@@ -101,8 +101,12 @@ For developers working with TypeScript errors:
 - `// @ts-expect-error` does not support expecting specific error codes (TypeScript limitation)
 - Error codes in comments are for reference only
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9922](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9922) | Add guidelines on testing and development |
@@ -119,10 +123,6 @@ For developers working with TypeScript errors:
 | [#10310](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10310) | Add Test to validate PPL query not starting with source |
 | [#10328](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10328) | Fixed linting error of new discover state of tab slice |
 | [#10328](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10328) | Update caniuse version |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ## Related Feature Report
 

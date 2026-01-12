@@ -77,16 +77,18 @@ No migration required. This is a backward-compatible change that adds support fo
 - Requires Docker to be installed and running
 - Docker Compose v2 detection requires Docker CLI with compose plugin
 
-## Related PRs
+## References
 
+### Documentation
+- [Docker Compose v2 Migration](https://docs.docker.com/compose/releases/migrate/): Official Docker documentation on v1 to v2 migration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16049](https://github.com/opensearch-project/OpenSearch/pull/16049) | Add support for docker compose v2 in TestFixturesPlugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16050](https://github.com/opensearch-project/OpenSearch/issues/16050): Bug report for docker-compose v1 dependency
-- [Docker Compose v2 Migration](https://docs.docker.com/compose/releases/migrate/): Official Docker documentation on v1 to v2 migration
 
 ## Related Feature Report
 

@@ -102,8 +102,12 @@ core.chrome.navGroup.addNavLinksToGroup(
 - Navigation state persistence uses browser local storage, so state is not synced across devices
 - Some plugins may need updates to fully support the flattened navigation structure
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.18/dashboards/quickstart/): Documentation on docking/undocking navigation
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#8332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8332) | OpenSearch-Dashboards | Flatten left nav in Analytics(all) use case |
@@ -115,10 +119,6 @@ core.chrome.navGroup.addNavLinksToGroup(
 | [#883](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/883) | anomaly-detection-dashboards-plugin | Update category to flatten menus |
 | [#2182](https://github.com/opensearch-project/dashboards-observability/pull/2182) | dashboards-observability | Update category to flatten menus |
 | [#1114](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1114) | alerting-dashboards-plugin | Update category to flatten menus |
-
-## References
-
-- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.18/dashboards/quickstart/): Documentation on docking/undocking navigation
 
 ## Related Feature Report
 

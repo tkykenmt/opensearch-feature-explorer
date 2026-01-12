@@ -130,18 +130,20 @@ The `sparse_embedding_format` parameter is now correctly passed through to the r
 - Parameters must be serializable to JSON via `toXContent()`
 - If a parameter placeholder is not filled and `skip_validating_missing_parameters` is `false`, the request will fail validation
 
-## Related PRs
+## References
 
+### Documentation
+- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/): Official connector configuration guide
+- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Connector overview and examples
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4121](https://github.com/opensearch-project/ml-commons/pull/4121) | Parameter Passing for Predict via Remote Connector |
 | [#4175](https://github.com/opensearch-project/ml-commons/pull/4175) | Move HttpClientFactory to common to expose to other components |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4105](https://github.com/opensearch-project/ml-commons/issues/4105): Feature request for parameter passing
-- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/): Official connector configuration guide
-- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Connector overview and examples
 
 ## Related Feature Report
 

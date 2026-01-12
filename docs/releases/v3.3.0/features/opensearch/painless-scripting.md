@@ -97,19 +97,19 @@ No migration required. This is an additive change that enables new functionality
 - The class is intended for use with rollup aggregation scenarios
 - Scripts using `ScriptedAvg` must ensure proper handling in the reduce phase
 
-## Related PRs
+## References
 
+### Documentation
+- [Script APIs Documentation](https://docs.opensearch.org/3.0/api-reference/script-apis/index/): Painless scripting documentation
+- [Scripted Metric Aggregation](https://docs.opensearch.org/3.0/aggregations/metric/scripted-metric/): Scripted metric aggregation documentation
+- [PR #19006](https://github.com/opensearch-project/OpenSearch/pull/19006): Main implementation
+- [PR #18411](https://github.com/opensearch-project/OpenSearch/pull/18411): Prerequisite PR for scripted metric support
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19006](https://github.com/opensearch-project/OpenSearch/pull/19006) | Adding ScriptedAvg class to painless spi to allowlist usage from plugins |
 | [#18411](https://github.com/opensearch-project/OpenSearch/pull/18411) | Supporting Scripted Metric in InternalValueCount and InternalAvg (prerequisite) |
-
-## References
-
-- [PR #19006](https://github.com/opensearch-project/OpenSearch/pull/19006): Main implementation
-- [PR #18411](https://github.com/opensearch-project/OpenSearch/pull/18411): Prerequisite PR for scripted metric support
-- [Script APIs Documentation](https://docs.opensearch.org/3.0/api-reference/script-apis/index/): Painless scripting documentation
-- [Scripted Metric Aggregation](https://docs.opensearch.org/3.0/aggregations/metric/scripted-metric/): Scripted metric aggregation documentation
 
 ## Related Feature Report
 

@@ -78,8 +78,12 @@ To set up the development environment with Docker for Cypress testing:
 - Pre-commit hook requires Node.js environment
 - Docker development setup is specific to Cypress testing scenarios
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9064](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9064) | Improve CI checks: lockfile sync, license validation, actions bump |
@@ -91,10 +95,6 @@ To set up the development environment with Docker for Cypress testing:
 | [#9467](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9467) | Add Joey Liu as maintainer |
 | [#9525](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9525) | Getting started with Discover 2.0 |
 | [#6585](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6585) | Add git pre-commit hook for developer docs |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
 
 ## Related Feature Report
 

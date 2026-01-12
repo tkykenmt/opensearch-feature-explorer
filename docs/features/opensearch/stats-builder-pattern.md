@@ -104,8 +104,13 @@ ThreadPoolStats.Stats threadStats = new ThreadPoolStats.Stats.Builder()
 - Slightly more verbose than constructor calls for simple cases
 - Requires migration from deprecated constructors before next major version
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Initial implementation - deprecated constructors in 30+ Stats classes in favor of Builder pattern
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19317](https://github.com/opensearch-project/OpenSearch/pull/19317) | ThreadPoolStats.Stats Builder |
@@ -122,11 +127,6 @@ ThreadPoolStats.Stats threadStats = new ThreadPoolStats.Stats.Builder()
 | v3.4.0 | [#20014](https://github.com/opensearch-project/OpenSearch/pull/20014) | HttpStats, ScriptStats, AdaptiveSelectionStats and OsStats Builder |
 | v3.4.0 | [#19966](https://github.com/opensearch-project/OpenSearch/pull/19966) | ShardStats, WarmerStats and IndexingPressureStats Builder |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19225](https://github.com/opensearch-project/OpenSearch/issues/19225): Use Builder pattern instead of constructors for Stats API classes
 - [Issue #18723](https://github.com/opensearch-project/OpenSearch/issues/18723): Related SearchStats refactoring
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Initial implementation - deprecated constructors in 30+ Stats classes in favor of Builder pattern

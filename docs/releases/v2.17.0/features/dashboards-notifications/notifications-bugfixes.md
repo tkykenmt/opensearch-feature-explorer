@@ -72,18 +72,18 @@ This ensures that when users navigate between Channels, Email Senders, and Email
 - The dataSourceId persistence only applies when multi-data-source is enabled
 - URL-based state management may cause issues with very long dataSourceId values
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Notifications Documentation](https://docs.opensearch.org/2.17/observing-your-data/notifications/index/)
+- [Backport PR #249 (2.x)](https://github.com/opensearch-project/dashboards-notifications/pull/249)
+- [Backport PR #255 (2.17)](https://github.com/opensearch-project/dashboards-notifications/pull/255)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#242](https://github.com/opensearch-project/dashboards-notifications/pull/242) | Fix link checker - Added missing CONTRIBUTING.md and NOTICE files |
 | [#244](https://github.com/opensearch-project/dashboards-notifications/pull/244) | Persist dataSourceId across applications under new Nav change |
-
-## References
-
-- [OpenSearch Notifications Documentation](https://docs.opensearch.org/2.17/observing-your-data/notifications/index/)
-- [Backport PR #249 (2.x)](https://github.com/opensearch-project/dashboards-notifications/pull/249)
-- [Backport PR #255 (2.17)](https://github.com/opensearch-project/dashboards-notifications/pull/255)
 
 ## Related Feature Report
 

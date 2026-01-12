@@ -75,16 +75,18 @@ No migration required. The new field is automatically available after upgrading 
 - The `completion_count` is reset when the node restarts
 - When querying mixed-version clusters, nodes running versions prior to 3.0.0 will return `-1` for `completion_count`
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8698](https://github.com/opensearch-project/OpenSearch/issues/8698): Original feature request
-- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official docs
 
 ## Related Feature Report
 

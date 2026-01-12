@@ -52,8 +52,12 @@ Corrected the job type assignment for Batch and IndexDML queries, ensuring prope
 - These are bugfixes only; no new features are introduced
 - UDF creation is now restricted in async query API
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/2.17/search-plugins/sql/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2842](https://github.com/opensearch-project/sql/pull/2842) | Boolean function in PPL should be case insensitive (backport of #2758) |
@@ -64,11 +68,9 @@ Corrected the job type assignment for Batch and IndexDML queries, ensuring prope
 | [#2983](https://github.com/opensearch-project/sql/pull/2983) | Fix handler for existing query (backport of #2968) |
 | [#2996](https://github.com/opensearch-project/sql/pull/2996) | Fix :integ-test:sqlBwcCluster#fullRestartClusterTask (backport of #2900) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2431](https://github.com/opensearch-project/sql/issues/2431): Boolean function case sensitivity issue
 - [Issue #2761](https://github.com/opensearch-project/sql/issues/2761): UDF restriction requirement
-- [SQL and PPL Documentation](https://docs.opensearch.org/2.17/search-plugins/sql/index/): Official documentation
 
 ## Related Feature Report
 

@@ -85,17 +85,17 @@ After this fix, the data source selector is visible on all WLM pages regardless 
 - This fix is specific to the Workload Management dashboards within the Query Insights plugin
 - Other plugins may have similar issues if they rely on `PageHeader` for data source selector rendering
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Multiple Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/)
+- [Query Insights Dashboards Repository](https://github.com/opensearch-project/query-insights-dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#421](https://github.com/opensearch-project/query-insights-dashboards/pull/421) | Fix MDS Selector for Workload Management Dashboards |
-
-## References
-
-- [Query Insights Dashboards Repository](https://github.com/opensearch-project/query-insights-dashboards)
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Multiple Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/)
 
 ## Related Feature Report
 

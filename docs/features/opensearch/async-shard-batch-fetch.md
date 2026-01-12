@@ -111,8 +111,16 @@ cluster.allocator.existing_shards_allocator.batch_enabled: false
 - **Minimum timeout**: Allocator timeout cannot be set below 20 seconds when enabled
 - **Memory during batch**: While batching reduces overall memory, large batches still require memory for aggregated responses
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-04-30): Enabled by default, updated timeout defaults to 20s
+- **v2.18.0** (2024-10-22): Added OTel metrics for async shard fetch success/failure
+- **v2.14.0** (2024-05-21): Added configurable timeout settings for batch allocators
+- **v2.9.0** (2023-07-18): Initial batch fetch implementation (experimental, disabled by default)
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#18139](https://github.com/opensearch-project/OpenSearch/pull/18139) | Enabled Async Shard Batch Fetch by default |
@@ -121,16 +129,8 @@ cluster.allocator.existing_shards_allocator.batch_enabled: false
 | v2.14.0 | [#12010](https://github.com/opensearch-project/OpenSearch/pull/12010) | Batch mode implementation |
 | v2.9.0 | [#8960](https://github.com/opensearch-project/OpenSearch/pull/8960) | Initial batch fetch transport actions |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8098](https://github.com/opensearch-project/OpenSearch/issues/8098): META - Cluster Manager Async Shard Fetch Revamp
 - [Issue #5098](https://github.com/opensearch-project/OpenSearch/issues/5098): Original issue - Async shard fetches causing memory spikes with >50k shards
 - [Issue #17713](https://github.com/opensearch-project/OpenSearch/issues/17713): Feature request to enable by default
 - [Issue #18098](https://github.com/opensearch-project/OpenSearch/issues/18098): Known issue with replica shard assignment in batch mode
-
-## Change History
-
-- **v3.1.0** (2025-04-30): Enabled by default, updated timeout defaults to 20s
-- **v2.18.0** (2024-10-22): Added OTel metrics for async shard fetch success/failure
-- **v2.14.0** (2024-05-21): Added configurable timeout settings for batch allocators
-- **v2.9.0** (2023-07-18): Initial batch fetch implementation (experimental, disabled by default)

@@ -231,8 +231,20 @@ PUT _cluster/settings
 - Pinned files cannot be evicted even under memory pressure
 - Threshold monitoring is per-node; index blocks affect all shards on the node
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-06): Added file cache active usage threshold monitoring with automatic index blocking
+- **v3.1.0** (2025-05-28): Added file pinning support and granular statistics (full file, block file, pinned file stats)
+- **v2.7.0**: Initial implementation for Searchable Snapshots
+
+## References
+
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+- [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/)
+- [Nodes Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Added file cache active usage guard rails to DiskThresholdMonitor |
@@ -240,17 +252,7 @@ PUT _cluster/settings
 | v3.1.0 | [#17538](https://github.com/opensearch-project/OpenSearch/pull/17538) | Added File Cache Stats (block and full file level) |
 | v2.7.0 | Initial | File Cache introduced for Searchable Snapshots |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17479](https://github.com/opensearch-project/OpenSearch/issues/17479): More refined stats in FileCache
 - [Issue #13648](https://github.com/opensearch-project/OpenSearch/issues/13648): File Pinning support in FileCache
 - [Issue #13149](https://github.com/opensearch-project/OpenSearch/issues/13149): META - Writable Warm Index
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
-- [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/)
-- [Nodes Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
-
-## Change History
-
-- **v3.3.0** (2025-10-06): Added file cache active usage threshold monitoring with automatic index blocking
-- **v3.1.0** (2025-05-28): Added file pinning support and granular statistics (full file, block file, pinned file stats)
-- **v2.7.0**: Initial implementation for Searchable Snapshots

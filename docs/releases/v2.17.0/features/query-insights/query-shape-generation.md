@@ -150,19 +150,23 @@ sort:
 - Maximum groups limit (default 100) may cause some query groups to be discarded in high-cardinality environments
 - Query shape generation adds minimal overhead but should be monitored in high-throughput scenarios
 
-## Related PRs
+## References
 
+### Documentation
+- [Grouping Top N Queries Documentation](https://docs.opensearch.org/2.17/observing-your-data/query-insights/grouping-top-n-queries/)
+
+### Blog Posts
+- [Query Insights Blog](https://opensearch.org/blog/query-insights/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#44](https://github.com/opensearch-project/query-insights/pull/44) | Add ability to generate query shape for aggregation and sort |
 | [#66](https://github.com/opensearch-project/query-insights/pull/66) | Query grouping framework for Top N queries and group by query similarity |
 | [#73](https://github.com/opensearch-project/query-insights/pull/73) | Minor enhancements to query categorization on tags and unit types |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13357](https://github.com/opensearch-project/OpenSearch/issues/13357): RFC - Grouping similar Top N Queries by Latency and Resource Usage
-- [Grouping Top N Queries Documentation](https://docs.opensearch.org/2.17/observing-your-data/query-insights/grouping-top-n-queries/)
-- [Query Insights Blog](https://opensearch.org/blog/query-insights/)
 
 ## Related Feature Report
 

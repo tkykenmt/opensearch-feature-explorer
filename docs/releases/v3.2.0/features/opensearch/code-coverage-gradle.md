@@ -122,18 +122,18 @@ The previous commands `codeCoverageReportForUnitTest`, `codeCoverageReportForInt
 - The `jacocoTestReport` task only runs if at least one `.exec` file exists
 - HTML and CSV reports are disabled by default to save disk space
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#18509](https://github.com/opensearch-project/OpenSearch/pull/18509) | Ability to run Code Coverage locally with Gradle |
-
 ## References
 
+### Documentation
+- [JaCoCo Gradle Plugin](https://docs.gradle.org/current/userguide/jacoco_plugin.html): Official documentation
 - [PR #18509](https://github.com/opensearch-project/OpenSearch/pull/18509): Main implementation
 - [PR #18358](https://github.com/opensearch-project/OpenSearch/pull/18358): Related coverage improvement work
 - [PR #18376](https://github.com/opensearch-project/OpenSearch/pull/18376): javaRestTest coverage addition
-- [JaCoCo Gradle Plugin](https://docs.gradle.org/current/userguide/jacoco_plugin.html): Official documentation
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#18509](https://github.com/opensearch-project/OpenSearch/pull/18509) | Ability to run Code Coverage locally with Gradle |
 
 ## Related Feature Report
 

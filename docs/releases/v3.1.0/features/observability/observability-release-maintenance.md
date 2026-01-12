@@ -46,8 +46,9 @@ The v3.1.0 release of the Observability plugins includes:
 - This is a maintenance release with no new major features
 - Bug fixes are specific to trace analytics functionality
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1922](https://github.com/opensearch-project/observability/pull/1922) | observability | Increment version to 3.1.0-SNAPSHOT |
@@ -55,8 +56,7 @@ The v3.1.0 release of the Observability plugins includes:
 | [#2443](https://github.com/opensearch-project/dashboards-observability/pull/2443) | dashboards-observability | Increment version to 3.1.0.0 |
 | [#2464](https://github.com/opensearch-project/dashboards-observability/pull/2464) | dashboards-observability | Adding release notes for 3.1.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1924](https://github.com/opensearch-project/observability/issues/1924): Release notes tracking issue (observability)
 - [Issue #2444](https://github.com/opensearch-project/dashboards-observability/issues/2444): Release notes tracking issue (dashboards-observability)
 

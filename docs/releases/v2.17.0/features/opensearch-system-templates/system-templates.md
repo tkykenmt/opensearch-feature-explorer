@@ -95,19 +95,21 @@ Based on testing with HTTP logs dataset:
 - Context cannot be removed once configured for an index
 - Cannot override template-defined settings during index creation
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Index context](https://opensearch.org/docs/latest/im-plugin/index-context/)
+- [Repository: opensearch-system-templates](https://github.com/opensearch-project/opensearch-system-templates)
+
+### Blog Posts
+- [Blog: OpenSearch simplified: The power of ABC templates](https://opensearch.org/blog/opensearch-simplified-the-power-of-application-based-templates/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3](https://github.com/opensearch-project/opensearch-system-templates/pull/3) | Basic templates and addition of build steps |
 | [#11](https://github.com/opensearch-project/opensearch-system-templates/pull/11) | Backport: Onboarding new templates and adding zstd support |
 | [#8](https://github.com/opensearch-project/opensearch-system-templates/pull/8) | Onboarding new templates and adding zstd support (main) |
-
-## References
-
-- [Blog: OpenSearch simplified: The power of ABC templates](https://opensearch.org/blog/opensearch-simplified-the-power-of-application-based-templates/)
-- [Documentation: Index context](https://opensearch.org/docs/latest/im-plugin/index-context/)
-- [Repository: opensearch-system-templates](https://github.com/opensearch-project/opensearch-system-templates)
 
 ## Related Feature Report
 

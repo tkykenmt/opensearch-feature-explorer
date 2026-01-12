@@ -116,17 +116,19 @@ The new JWKS implementation includes built-in security protections:
 - SSL/TLS configuration for JWKS endpoints uses the `jwks` prefix in settings
 - Key rotation requires the JWKS endpoint to be accessible
 
-## Related PRs
+## References
 
+### Documentation
+- [JWT Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/jwt/): Official docs
+- [JSON Web Key (JWK) Specification](https://datatracker.ietf.org/doc/html/rfc7517): RFC 7517
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5578](https://github.com/opensearch-project/security/pull/5578) | Direct JWKS (JSON Web Key Set) support in the JWT authentication backend |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4974](https://github.com/opensearch-project/security/issues/4974): Feature request for JWKS with JWT without OIDC
-- [JWT Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/jwt/): Official docs
-- [JSON Web Key (JWK) Specification](https://datatracker.ietf.org/doc/html/rfc7517): RFC 7517
 
 ## Related Feature Report
 

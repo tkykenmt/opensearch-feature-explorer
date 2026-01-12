@@ -116,8 +116,13 @@ PUT /my-knn-index
 - Compression levels above 32x are capped at 32x for oversampling calculations
 - SIMD optimization for FAISS is only supported on Linux
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Performance Tuning](https://docs.opensearch.org/2.18/search-plugins/knn/performance-tuning/): Official performance tuning guide
+- [k-NN Index](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/): Index configuration documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2221](https://github.com/opensearch-project/k-NN/pull/2221) | Update default engine to FAISS |
@@ -133,10 +138,7 @@ PUT /my-knn-index
 | [#2147](https://github.com/opensearch-project/k-NN/pull/2147) | KNN80DocValues for BinaryDocValues fields only |
 | [#2183](https://github.com/opensearch-project/k-NN/pull/2183) | Score fix for binary quantized vectors |
 
-## References
-
-- [k-NN Performance Tuning](https://docs.opensearch.org/2.18/search-plugins/knn/performance-tuning/): Official performance tuning guide
-- [k-NN Index](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/): Index configuration documentation
+### Issues (Design / RFC)
 - [Issue #2163](https://github.com/opensearch-project/k-NN/issues/2163): Default engine change discussion
 - [Issue #1885](https://github.com/opensearch-project/k-NN/issues/1885): Memory release improvements
 

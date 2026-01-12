@@ -96,16 +96,18 @@ logs-2024.03                   1710001234567                2024-03-09T16:20:34.
 - The timestamp is not persisted - it resets when a shard is relocated or the node restarts
 - In mixed-version clusters, older nodes will report `0` for this field
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT indices API Documentation](https://docs.opensearch.org/3.0/api-reference/cat/cat-indices/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18405](https://github.com/opensearch-project/OpenSearch/pull/18405) | Expose Last Index Request Timestamp in Cat Indices API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10766](https://github.com/opensearch-project/OpenSearch/issues/10766): Stats API to identify which indices (and shards?) are getting updates
-- [CAT indices API Documentation](https://docs.opensearch.org/3.0/api-reference/cat/cat-indices/)
 
 ## Related Feature Report
 

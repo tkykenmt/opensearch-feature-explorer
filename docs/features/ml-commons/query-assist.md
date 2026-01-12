@@ -141,17 +141,16 @@ Query Assist provides clear feedback for different error scenarios:
 - Query quality depends on the underlying language model
 - Index patterns without data sources have limited support
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#875](https://github.com/opensearch-project/flow-framework/pull/875) | Add query assist data summary agent template |
-| v2.17.0 | [#7998](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7998) | Agent error badge, ml-commons response schema update |
-| v2.16.0 | [#7212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7212) | Add query enhancements plugin as core plugin |
-| v2.13.0 | - | Initial Query Assist implementation |
+- **v2.18.0** (2024-11-12): Added Query Assist Data Summary Agent sample template to Flow Framework
+- **v2.17.0** (2024-10-08): Enhanced error handling with agent error badge, updated ml-commons response schema processing, improved index pattern support
+- **v2.16.0** (2024-08-06): Query enhancements plugin added as core plugin with Query Assist feature
+- **v2.13.0** (2024-02-20): Initial introduction of Query Assist in OpenSearch Dashboards
 
 ## References
 
+### Documentation
 - [OpenSearch Assistant Documentation](https://docs.opensearch.org/latest/dashboards/dashboards-assistant/index/)
 - [Data Summary Documentation](https://docs.opensearch.org/latest/dashboards/dashboards-assistant/data-summary/)
 - [PPL Tool Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/agents-tools/tools/ppl-tool/)
@@ -160,9 +159,10 @@ Query Assist provides clear feedback for different error scenarios:
 - [Flow Framework Sample Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates)
 - [dashboards-assistant Getting Started Guide](https://github.com/opensearch-project/dashboards-assistant/blob/main/GETTING_STARTED_GUIDE.md)
 
-## Change History
-
-- **v2.18.0** (2024-11-12): Added Query Assist Data Summary Agent sample template to Flow Framework
-- **v2.17.0** (2024-10-08): Enhanced error handling with agent error badge, updated ml-commons response schema processing, improved index pattern support
-- **v2.16.0** (2024-08-06): Query enhancements plugin added as core plugin with Query Assist feature
-- **v2.13.0** (2024-02-20): Initial introduction of Query Assist in OpenSearch Dashboards
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#875](https://github.com/opensearch-project/flow-framework/pull/875) | Add query assist data summary agent template |
+| v2.17.0 | [#7998](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7998) | Agent error badge, ml-commons response schema update |
+| v2.16.0 | [#7212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7212) | Add query enhancements plugin as core plugin |
+| v2.13.0 | - | Initial Query Assist implementation |

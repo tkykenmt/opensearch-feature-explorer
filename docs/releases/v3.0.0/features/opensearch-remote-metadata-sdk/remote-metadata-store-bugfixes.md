@@ -101,8 +101,9 @@ No migration required. These are backward-compatible bug fixes that improve exis
 - DynamoDB strongly consistent reads may have slightly higher latency than eventually consistent reads
 - Search operations on DynamoDB still require zero-ETL replication to OpenSearch
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#114](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/114) | Fix version conflict check for update |
@@ -114,8 +115,7 @@ No migration required. These are backward-compatible bug fixes that improve exis
 | [#157](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/157) | Validate request fields in DDB Put and Update implementations |
 | [#158](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/158) | Properly handle remote client search failures with status codes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #127](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/127): DDB getItem() API is only eventually consistent
 - [Issue #132](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/132): Unable to call aggregation in ml-commons API
 - [Issue #154](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/issues/154): DDBClient does not validate request fields

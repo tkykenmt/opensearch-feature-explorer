@@ -54,19 +54,18 @@ No configuration changes required. These fixes are automatically applied when up
 - The forecasting feature remains in active development
 - High-cardinality detection still requires sufficient cluster resources
 
-## Related PRs
+## References
 
-### Backend (anomaly-detection)
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1508](https://github.com/opensearch-project/anomaly-detection/pull/1508) | Fixing concurrency bug on writer |
 | [#1528](https://github.com/opensearch-project/anomaly-detection/pull/1528) | Fix: advance past current interval & anchor on now |
 | [#1535](https://github.com/opensearch-project/anomaly-detection/pull/1535) | Changing search calls on interval calculation |
 | [#1537](https://github.com/opensearch-project/anomaly-detection/pull/1537) | Bumping gradle and nebula versions |
-
-### Dashboards (anomaly-detection-dashboards-plugin)
-
 | PR | Description |
 |----|-------------|
 | [#1001](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1001) | Restrict Suggest anomaly detector to only show for OpenSearch datasets |
@@ -76,9 +75,7 @@ No configuration changes required. These fixes are automatically applied when up
 | [#1064](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1064) | Fix ribbon encoding issue in contextual launch |
 | [#1068](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1068) | Fix: fetch full forecaster list, and fix delete bug |
 
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
+### Issues (Design / RFC)
 - [GitHub Issue #715](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/issues/715): Data filter UI issue
 
 ## Related Feature Report

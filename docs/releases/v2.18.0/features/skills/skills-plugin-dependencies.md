@@ -44,7 +44,15 @@ No migration steps required. These are internal dependency updates that maintain
 ## Limitations
 - ByteBuddy updates may require Java agent configuration adjustments in some environments
 
-## Related PRs
+## References
+
+### Documentation
+- [Mockito 5.14.2 Release Notes](https://github.com/mockito/mockito/releases/tag/v5.14.2)
+- [JUnit5 5.11.2 Release Notes](https://github.com/junit-team/junit5/releases/tag/r5.11.2)
+- [Gradle 8.10.2 Release Notes](https://docs.gradle.org/8.10.2/release-notes.html)
+- [ByteBuddy Project](https://bytebuddy.net)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#427](https://github.com/opensearch-project/skills/pull/427) | Fix test failure due to external change |
@@ -54,12 +62,6 @@ No migration steps required. These are internal dependency updates that maintain
 | [#279](https://github.com/opensearch-project/skills/pull/279) | Update byte-buddy-agent to v1.15.4 |
 | [#432](https://github.com/opensearch-project/skills/pull/432) | Update Gradle to v8.10.2 |
 | [#434](https://github.com/opensearch-project/skills/pull/434) | Update io.freefair.lombok to v8.10.2 |
-
-## References
-- [Mockito 5.14.2 Release Notes](https://github.com/mockito/mockito/releases/tag/v5.14.2)
-- [JUnit5 5.11.2 Release Notes](https://github.com/junit-team/junit5/releases/tag/r5.11.2)
-- [Gradle 8.10.2 Release Notes](https://docs.gradle.org/8.10.2/release-notes.html)
-- [ByteBuddy Project](https://bytebuddy.net)
 
 ## Related Feature Report
 - [Full feature documentation](../../../features/skills/skills-plugin-dependencies.md)

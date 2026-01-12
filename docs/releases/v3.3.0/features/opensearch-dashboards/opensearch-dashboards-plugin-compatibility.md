@@ -81,16 +81,18 @@ bin/opensearch-dashboards-plugin install --single-version ignore <plugin-url>
 - Plugin functionality is not guaranteed when using `ignore` mode with mismatched versions
 - Server-side plugin manifest parsing still uses exact version matching
 
-## Related PRs
+## References
 
+### Documentation
+- [Managing OpenSearch Dashboards plugins](https://docs.opensearch.org/3.0/install-and-configure/install-dashboards/plugins/): Official documentation on plugin management
+
+### Blog Posts
+- [Introduction to OpenSearch Dashboard Plugins](https://opensearch.org/blog/dashboards-plugins-intro/): Blog post on plugin architecture
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10273](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10273) | Enhanced plugin version compatibility with strict/ignore modes |
-
-## References
-
-- [Managing OpenSearch Dashboards plugins](https://docs.opensearch.org/3.0/install-and-configure/install-dashboards/plugins/): Official documentation on plugin management
-- [Introduction to OpenSearch Dashboard Plugins](https://opensearch.org/blog/dashboards-plugins-intro/): Blog post on plugin architecture
 
 ## Related Feature Report
 

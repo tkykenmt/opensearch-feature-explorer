@@ -98,20 +98,20 @@ import { EuiTitle, EuiButtonIcon, EuiToolTip } from '@elastic/eui';
 - CSS `:has()` selector used in some styles may not work in older browsers
 - Custom themes may need adjustment for new header styling
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): OUI upgrades from 1.9.0 to 1.12.0, header spacing improvements, recent items button refactoring
+
+## References
+
+### Documentation
+- [OUI Repository](https://github.com/opensearch-project/oui)
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#7741](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7741) | Revisit updated header spacing, bump OUI to 1.10.0 |
 | v2.17.0 | [#7799](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7799) | Add iconGap to TopNavControl, bump OUI to 1.11.0 |
 | v2.17.0 | [#7865](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7865) | Update OUI to 1.12 |
 | v2.17.0 | [#7637](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7637) | Introduce redesign page and application headers, update OUI to 1.9.0 |
-
-## References
-
-- [OUI Repository](https://github.com/opensearch-project/oui)
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-
-## Change History
-
-- **v2.17.0** (2024-09-17): OUI upgrades from 1.9.0 to 1.12.0, header spacing improvements, recent items button refactoring

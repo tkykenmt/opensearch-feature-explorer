@@ -200,8 +200,18 @@ DELETE /_plugins/_search_relevance/experiments/schedule/{id}
 - Resource monitoring for scheduled jobs is not yet implemented
 - Cannot modify an existing schedule; must delete and recreate
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-12): Initial implementation with scheduling APIs, UI components, and dedicated dashboard
+
+## References
+
+### Documentation
+- [Job Scheduler Plugin](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/): OpenSearch Job Scheduler documentation
+- [Cron Expression Reference](https://docs.opensearch.org/3.0/observing-your-data/alerting/cron/): Cron expression format guide
+- [Search Relevance Overview](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/): Search Relevance plugin documentation
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.4.0 | [#220](https://github.com/opensearch-project/search-relevance/pull/220) | search-relevance | Backend APIs and scheduled job runner |
@@ -211,15 +221,7 @@ DELETE /_plugins/_search_relevance/experiments/schedule/{id}
 | v3.4.0 | [#686](https://github.com/opensearch-project/dashboards-search-relevance/pull/686) | dashboards-search-relevance | Type/status filtering |
 | v3.4.0 | [#670](https://github.com/opensearch-project/dashboards-search-relevance/pull/670) | dashboards-search-relevance | Experiment detail page title |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #213](https://github.com/opensearch-project/search-relevance/issues/213): Original feature request for scheduled experiments
 - [Issue #226](https://github.com/opensearch-project/search-relevance/issues/226): Scheduling requirements
 - [Issue #238](https://github.com/opensearch-project/search-relevance/issues/238): Data integrity requirements
-- [Job Scheduler Plugin](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/): OpenSearch Job Scheduler documentation
-- [Cron Expression Reference](https://docs.opensearch.org/3.0/observing-your-data/alerting/cron/): Cron expression format guide
-- [Search Relevance Overview](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/): Search Relevance plugin documentation
-
-## Change History
-
-- **v3.4.0** (2025-12): Initial implementation with scheduling APIs, UI components, and dedicated dashboard

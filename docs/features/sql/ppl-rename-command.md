@@ -128,18 +128,20 @@ source=accounts | rename name as user_name age as user_age country as location
 - Literal asterisk (`*`) characters in field names cannot be matched
 - Consecutive wildcards (e.g., `**`) in non-full patterns are not supported
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4019](https://github.com/opensearch-project/sql/pull/4019) | Add wildcard support for rename command |
-
-## References
-
-- [Issue #4008](https://github.com/opensearch-project/sql/issues/4008): Feature request for wildcard rename support
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
-
 ## Change History
 
 - **v3.3.0** (2026): Added wildcard pattern support for batch field renaming, space-delimited syntax, and updated field rename behavior for non-existent/existing field scenarios
 - **v1.0.0**: Initial implementation with basic single and multiple field rename support
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#4019](https://github.com/opensearch-project/sql/pull/4019) | Add wildcard support for rename command |
+
+### Issues (Design / RFC)
+- [Issue #4008](https://github.com/opensearch-project/sql/issues/4008): Feature request for wildcard rename support

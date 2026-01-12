@@ -137,18 +137,20 @@ Possible values for `result_selection_strategy`:
 - Factor setting is cluster-wide, affecting all numeric terms aggregations
 - Memory overhead for QUICK_SELECT_OR_SELECT_ALL is O(bucketsInOrd) vs O(size) for PRIORITY_QUEUE
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-07): Initial implementation with configurable bucket selection strategy factor
+
+## References
+
+### Documentation
+- [Terms Aggregation Documentation](https://docs.opensearch.org/3.2/aggregations/bucket/terms/): Official terms aggregation docs
+- [Lucene ArrayUtil.select](https://lucene.apache.org/core/9_0_0/core/org/apache/lucene/util/ArrayUtil.html): QuickSelect implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18702](https://github.com/opensearch-project/OpenSearch/pull/18702) | Initial implementation with quickselect optimization |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18703](https://github.com/opensearch-project/OpenSearch/issues/18703): Original performance optimization request
-- [Terms Aggregation Documentation](https://docs.opensearch.org/3.2/aggregations/bucket/terms/): Official terms aggregation docs
-- [Lucene ArrayUtil.select](https://lucene.apache.org/core/9_0_0/core/org/apache/lucene/util/ArrayUtil.html): QuickSelect implementation
-
-## Change History
-
-- **v3.2.0** (2025-08-07): Initial implementation with configurable bucket selection strategy factor

@@ -41,16 +41,18 @@ No migration required. This is a build fix that does not change any user-facing 
 
 - The `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method throws `UnsupportedOperationException` as this operation is not applicable to cross-cluster replication's remote repository implementation
 
-## Related PRs
+## References
 
+### Documentation
+- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | Add missing method for RemoteClusterRepository class |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1557](https://github.com/opensearch-project/cross-cluster-replication/issues/1557): Distribution Build Failed for cross-cluster-replication-3.2.0
-- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
 
 ## Related Feature Report
 

@@ -126,18 +126,18 @@ pageLoadAssetSizeVariation:
 - Performance thresholds are warnings only (don't fail CI)
 - Lighthouse results can vary based on CI runner load
 
-## Related PRs
+## References
 
+### Documentation
+- [Lighthouse CI Documentation](https://github.com/GoogleChrome/lighthouse-ci)
+- [PR #9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320): Bundle analyzer implementation
+- [PR #9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304): Lighthouse CI implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320) | Webpack bundle analyser limit check |
 | [#9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304) | Lighthouse Page Performance Metrics CI workflow |
-
-## References
-
-- [PR #9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320): Bundle analyzer implementation
-- [PR #9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304): Lighthouse CI implementation
-- [Lighthouse CI Documentation](https://github.com/GoogleChrome/lighthouse-ci)
 
 ## Related Feature Report
 

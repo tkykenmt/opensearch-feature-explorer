@@ -1,8 +1,14 @@
 # Discover Summary / AI Assistant Integration
 
 ## Summary
+- Total records: 383
+- Error rate: 15%
+- Top sources: artifacts.opensearch.org
 
-This release includes multiple bug fixes and UX improvements for the Discover Summary feature in OpenSearch Dashboards. The Discover Summary uses AI/LLM to generate human-readable summaries of query results, helping users quickly understand their data. These fixes address markdown rendering, empty result handling, text styling, and error state management.
+### Key Findings
+1. Most errors are 404 responses
+2. Peak traffic from CN region
+```
 
 ## Details
 
@@ -53,15 +59,6 @@ The Discover Summary feature is accessed through the Discover page when using PP
 The summary now renders with proper markdown formatting:
 
 ```markdown
-## Summary
-- Total records: 383
-- Error rate: 15%
-- Top sources: artifacts.opensearch.org
-
-### Key Findings
-1. Most errors are 404 responses
-2. Peak traffic from CN region
-```
 
 ## Limitations
 
@@ -69,8 +66,13 @@ The summary now renders with proper markdown formatting:
 - Markdown rendering depends on `EuiMarkdownFormat` component capabilities
 - Summary unavailable message now indicates to check for "results or errors" (improved from just "results")
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Summary Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/data-summary/): Official documentation for the data summary feature
+- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/): Parent feature documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9464](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9464) | Organizing generated summary by using markdown format |
@@ -80,11 +82,6 @@ The summary now renders with proper markdown formatting:
 | [#9519](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9519) | Discover summary regression when result is empty |
 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Clear discover summary if t2ppl failed |
 | [#9553](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9553) | Use markdown in discover summary |
-
-## References
-
-- [Data Summary Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/data-summary/): Official documentation for the data summary feature
-- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/): Parent feature documentation
 
 ## Related Feature Report
 

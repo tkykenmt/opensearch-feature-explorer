@@ -119,20 +119,24 @@ POST /logs/_search
 - Star-tree statistics are only available in OpenSearch 3.2.0+
 - Existing star-tree limitations still apply (immutable data, no updates/deletes)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation PR #10667](https://github.com/opensearch-project/documentation-website/pull/10667): Star-tree stats documentation
+- [Documentation PR #10668](https://github.com/opensearch-project/documentation-website/pull/10668): IP field support documentation
+- [Star-tree index documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Official documentation
+
+### Blog Posts
+- [OpenSearch 3.2 announcement](https://opensearch.org/blog/introducing-opensearch-3-2-next-generation-search-and-anayltics-with-enchanced-ai-capabilities/): Release blog post
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18707](https://github.com/opensearch-project/OpenSearch/pull/18707) | Add star-tree search related stats for nodes, indices, and shards |
 | [#18671](https://github.com/opensearch-project/OpenSearch/pull/18671) | Add search support for IP field type in star-tree queries |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16547](https://github.com/opensearch-project/OpenSearch/issues/16547): IP field support feature request
-- [Documentation PR #10667](https://github.com/opensearch-project/documentation-website/pull/10667): Star-tree stats documentation
-- [Documentation PR #10668](https://github.com/opensearch-project/documentation-website/pull/10668): IP field support documentation
-- [Star-tree index documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Official documentation
-- [OpenSearch 3.2 announcement](https://opensearch.org/blog/introducing-opensearch-3-2-next-generation-search-and-anayltics-with-enchanced-ai-capabilities/): Release blog post
 
 ## Related Feature Report
 

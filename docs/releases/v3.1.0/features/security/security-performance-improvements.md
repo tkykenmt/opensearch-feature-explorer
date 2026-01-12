@@ -121,18 +121,20 @@ Based on benchmarks from the PR, users with many attributes see significant impr
 - The caching mechanism adds memory overhead proportional to the number of unique users
 - Custom authentication backends require code changes to support the new API
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove support for unused custom User serialization |
 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5168](https://github.com/opensearch-project/security/issues/5168): Make User object immutable
 - [Issue #5200](https://github.com/opensearch-project/security/issues/5200): When to retire serialization backward compat code
-- [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
 
 ## Related Feature Report
 

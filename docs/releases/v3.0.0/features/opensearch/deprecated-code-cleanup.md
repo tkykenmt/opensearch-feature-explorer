@@ -197,8 +197,15 @@ index:
 - NMSLIB engine deprecated; new indexes should use Faiss or Lucene
 - Legacy notebooks not accessible after upgrade
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/)
+
+### Blog Posts
+- [OpenSearch 3.0 Blog Post](https://opensearch.org/blog/opensearch-3-0-what-to-expect/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2595](https://github.com/opensearch-project/OpenSearch/issues/2595) | Cleanup deprecated thread pool settings |
@@ -214,10 +221,7 @@ index:
 | [#5089](https://github.com/opensearch-project/security/pull/5089) | Fix Blake2b hash implementation |
 | [#5224](https://github.com/opensearch-project/security/pull/5224) | Remove whitelist settings |
 
-## References
-
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/)
-- [OpenSearch 3.0 Blog Post](https://opensearch.org/blog/opensearch-3-0-what-to-expect/)
+### Issues (Design / RFC)
 - [Meta Issue #5243](https://github.com/opensearch-project/opensearch-build/issues/5243): Full list of breaking changes
 - [Issue #2773](https://github.com/opensearch-project/OpenSearch/issues/2773): List of deprecated code removal in 3.0
 - [Issue #5214](https://github.com/opensearch-project/OpenSearch/issues/5214): Remove deprecated terms from Java API

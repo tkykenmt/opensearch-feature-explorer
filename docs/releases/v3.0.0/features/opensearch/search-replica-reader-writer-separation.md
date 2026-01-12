@@ -129,23 +129,27 @@ PUT /_cluster/settings
 - Auto-expand search replicas only considers nodes with the `search` role
 - When all search replicas are unassigned and strict routing is enabled, search requests fail with a clear error message
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Scale API](https://docs.opensearch.org/3.0/api-reference/index-apis/scale/)
+- [Documentation: Separate Index and Search Workloads](https://docs.opensearch.org/3.0/tuning-your-cluster/separate-index-and-search-workloads/)
+
+### Blog Posts
+- [Blog: Improve OpenSearch cluster performance by separating search and indexing workloads](https://opensearch.org/blog/improve-opensearch-cluster-performance-by-separating-search-and-indexing-workloads/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17299](https://github.com/opensearch-project/OpenSearch/pull/17299) | Scale-to-zero (search_only mode) with Reader/Writer Separation |
 | [#17741](https://github.com/opensearch-project/OpenSearch/pull/17741) | Support AutoExpand for SearchReplica |
 | [#17803](https://github.com/opensearch-project/OpenSearch/pull/17803) | Added Search Only strict routing setting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15306](https://github.com/opensearch-project/OpenSearch/issues/15306): META - Reader/Writer Separation
 - [Issue #16720](https://github.com/opensearch-project/OpenSearch/issues/16720): Scale to Zero feature request
 - [Issue #17310](https://github.com/opensearch-project/OpenSearch/issues/17310): Auto-expand-replica for search replicas
 - [Issue #17424](https://github.com/opensearch-project/OpenSearch/issues/17424): Strict routing for search replicas
-- [Documentation: Scale API](https://docs.opensearch.org/3.0/api-reference/index-apis/scale/)
-- [Documentation: Separate Index and Search Workloads](https://docs.opensearch.org/3.0/tuning-your-cluster/separate-index-and-search-workloads/)
-- [Blog: Improve OpenSearch cluster performance by separating search and indexing workloads](https://opensearch.org/blog/improve-opensearch-cluster-performance-by-separating-search-and-indexing-workloads/)
 
 ## Related Feature Report
 

@@ -103,17 +103,19 @@ AccessController.doPrivileged((PrivilegedAction<Void>) () -> {
 - Plugins compiled against older OpenSearch versions will fail at runtime if they call these methods without the required permissions
 - The Security Manager must be enabled for these permissions to be enforced (default in OpenSearch)
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Security Plugin Documentation](https://docs.opensearch.org/3.0/security/access-control/permissions/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15016](https://github.com/opensearch-project/OpenSearch/pull/15016) | Add ThreadContextPermission for markAsSystemContext |
 | [#15039](https://github.com/opensearch-project/OpenSearch/pull/15039) | Add ThreadContextPermission for stashAndMergeHeaders and stashWithOrigin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14931](https://github.com/opensearch-project/OpenSearch/issues/14931): Feature request for higher-level APIs for plugins to switch contexts
-- [OpenSearch Security Plugin Documentation](https://docs.opensearch.org/3.0/security/access-control/permissions/)
 
 ## Related Feature Report
 

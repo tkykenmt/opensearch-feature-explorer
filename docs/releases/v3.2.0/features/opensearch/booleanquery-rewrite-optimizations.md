@@ -130,16 +130,18 @@ The optimization applies when:
 - Terms queries using BITMAP value type are not rewritten
 - Terms queries using termsLookup are not rewritten
 
-## Related PRs
+## References
 
+### Documentation
+- [Boolean Query Documentation](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18498](https://github.com/opensearch-project/OpenSearch/pull/18498) | Extend BooleanQuery must_not rewrite to numeric match, term, and terms queries |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17586](https://github.com/opensearch-project/OpenSearch/issues/17586): Feature request for BooleanQuery rewrites
-- [Boolean Query Documentation](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Official docs
 
 ## Related Feature Report
 

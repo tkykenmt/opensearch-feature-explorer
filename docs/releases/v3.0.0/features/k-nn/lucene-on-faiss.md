@@ -118,8 +118,15 @@ PUT /my-index
 - Only L2 and INNER_PRODUCT space types are supported
 - Results may differ slightly from full-memory FAISS search due to Lucene's early termination logic
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Memory-optimized vectors](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
+
+### Blog Posts
+- [Blog: Lucene-on-Faiss](https://opensearch.org/blog/lucene-on-faiss-powering-opensearchs-high-performance-memory-efficient-vector-search/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2630](https://github.com/opensearch-project/k-NN/pull/2630) | Main implementation combining 10 sub-PRs |
@@ -134,11 +141,8 @@ PUT /my-index
 | [#2621](https://github.com/opensearch-project/k-NN/pull/2621) | CAGRA index partial loading |
 | [#2609](https://github.com/opensearch-project/k-NN/pull/2609) | Monotonic integer encoding for HNSW |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC Issue #2401](https://github.com/opensearch-project/k-NN/issues/2401): Partial loading with FAISS engine
-- [Documentation: Memory-optimized vectors](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
-- [Blog: Lucene-on-Faiss](https://opensearch.org/blog/lucene-on-faiss-powering-opensearchs-high-performance-memory-efficient-vector-search/)
 
 ## Related Feature Report
 

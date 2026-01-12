@@ -155,8 +155,12 @@ No migration required. New features are additive and backward compatible with ex
 - Session storage cleared when browser tab is closed
 - Global search integration requires chat plugin to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10824](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10824) | Register chat as the global search command |
@@ -166,10 +170,6 @@ No migration required. New features are additive and backward compatible with ex
 | [#10916](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10916) | Add session storage persistence for chat history |
 | [#10924](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10924) | Add close button for chatbot header |
 | [#10934](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10934) | Add getThreadId$ observable in chat service |
-
-## References
-
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/index/)
 
 ## Related Feature Report
 

@@ -150,19 +150,21 @@ POST _plugins/_security_analytics/threat_intel/sources/
 - The `ioc_schema` field is only supported for `IOC_UPLOAD` and `S3_CUSTOM` source types
 - Labels field parsing from custom schema is not yet supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Threat Intelligence Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/index/): Official docs
+- [Source API Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/api/source/): API reference
+- [JSONPath Wikipedia](https://en.wikipedia.org/wiki/JSONPath): JSONPath specification reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1493](https://github.com/opensearch-project/security-analytics/pull/1493) | Adds support for uploading threat intelligence in Custom Format (main branch) |
 | [#1455](https://github.com/opensearch-project/security-analytics/pull/1455) | Original implementation for 2.x branch |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1421](https://github.com/opensearch-project/security-analytics/issues/1421): Feature request for custom JSON schema support
-- [Threat Intelligence Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/index/): Official docs
-- [Source API Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/api/source/): API reference
-- [JSONPath Wikipedia](https://en.wikipedia.org/wiki/JSONPath): JSONPath specification reference
 
 ## Related Feature Report
 

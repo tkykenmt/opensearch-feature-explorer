@@ -173,17 +173,19 @@ QueryCollectorArguments args = new QueryCollectorArguments.Builder()
 - **Registration order matters**: Factories are evaluated in the order they were registered
 - **Static registry**: The registry is static, meaning all factories are shared across the cluster
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-01): Initial implementation - Added `QueryCollectorContextSpec`, `QueryCollectorContextSpecFactory`, `QueryCollectorContextSpecRegistry`, and `QueryCollectorArguments` classes. Extended `SearchPlugin` interface with `getCollectorContextSpecFactories()` method.
+
+## References
+
+### Documentation
+- [PR #18007](https://github.com/opensearch-project/OpenSearch/pull/18007): POC for Hybrid Search in core (motivation and benchmarks)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18637](https://github.com/opensearch-project/OpenSearch/pull/18637) | Initial implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18278](https://github.com/opensearch-project/OpenSearch/issues/18278): Original feature request
-- [PR #18007](https://github.com/opensearch-project/OpenSearch/pull/18007): POC for Hybrid Search in core (motivation and benchmarks)
-
-## Change History
-
-- **v3.2.0** (2025-07-01): Initial implementation - Added `QueryCollectorContextSpec`, `QueryCollectorContextSpecFactory`, `QueryCollectorContextSpecRegistry`, and `QueryCollectorArguments` classes. Extended `SearchPlugin` interface with `getCollectorContextSpecFactories()` method.

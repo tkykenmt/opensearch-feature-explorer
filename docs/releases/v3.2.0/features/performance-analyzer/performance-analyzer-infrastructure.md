@@ -52,18 +52,18 @@ This workaround is no longer needed as the updated dependencies now include the 
 - No functional changes to Performance Analyzer behavior
 - This is a build-time only change with no runtime impact
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump spotbug to 6.2.2 and checkstyle 10.26.1 |
-
 ## References
 
+### Documentation
+- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official docs
 - [PR #826](https://github.com/opensearch-project/performance-analyzer/pull/826): Main implementation
 - [SpotBugs](https://spotbugs.github.io/): Static analysis tool for Java
 - [Checkstyle](https://checkstyle.org/): Code style checker for Java
-- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official docs
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump spotbug to 6.2.2 and checkstyle 10.26.1 |
 
 ## Related Feature Report
 

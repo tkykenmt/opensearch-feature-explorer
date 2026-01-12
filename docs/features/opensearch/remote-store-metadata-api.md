@@ -178,18 +178,18 @@ When the Security plugin is enabled, users need the following permission:
 - Marked as `@ExperimentalApi` - the API surface may change in future releases
 - Does not provide real-time metrics (use Remote Store Stats API for performance monitoring)
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18257](https://github.com/opensearch-project/OpenSearch/pull/18257) | Initial implementation of Remote Store Metadata API |
+- **v3.2.0**: Initial implementation - Added cluster-level API to fetch segment and translog metadata from remote store
 
 ## References
 
+### Documentation
 - [Remote-backed storage documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/)
 - [Remote Store Stats API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/remote-store-stats-api/)
 - [Segment replication](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
 
-## Change History
-
-- **v3.2.0**: Initial implementation - Added cluster-level API to fetch segment and translog metadata from remote store
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#18257](https://github.com/opensearch-project/OpenSearch/pull/18257) | Initial implementation of Remote Store Metadata API |

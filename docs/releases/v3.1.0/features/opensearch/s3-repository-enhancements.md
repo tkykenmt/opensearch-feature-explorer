@@ -134,19 +134,21 @@ PUT _snapshot/my-repo
 - Cross-account KMS key access requires appropriate key policies
 - S3 Bucket Keys are only effective with SSE-KMS encryption
 
-## Related PRs
+## References
 
+### Documentation
+- [AWS SSE-KMS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html): AWS KMS encryption guide
+- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
+- [AWS Bucket Owner Condition](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-owner-condition.html): Bucket owner verification guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18312](https://github.com/opensearch-project/OpenSearch/pull/18312) | Add support for SSE-KMS and S3 bucket owner verification |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14606](https://github.com/opensearch-project/OpenSearch/issues/14606): Feature request for SSE-KMS support
 - [Documentation Issue #9929](https://github.com/opensearch-project/documentation-website/issues/9929): Documentation update request
-- [AWS SSE-KMS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html): AWS KMS encryption guide
-- [AWS Bucket Owner Condition](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-owner-condition.html): Bucket owner verification guide
-- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
 
 ## Related Feature Report
 

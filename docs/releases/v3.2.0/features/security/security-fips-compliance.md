@@ -95,15 +95,15 @@ For users upgrading to v3.2.0:
 - OpenSAML versions past 4.0 have inherent FIPS compatibility issues; the shadow JAR approach works around this by excluding problematic classes
 - The `NamedCurve` service is excluded from OpenSAML, which may affect certain elliptic curve operations within SAML processing
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5404](https://github.com/opensearch-project/security/pull/5404) | Moved OpenSAML jars to Shadow Jar configuration for FIPS compatibility |
 | [#5439](https://github.com/opensearch-project/security/pull/5439) | Replaced standard BouncyCastle with BC-FIPS |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5438](https://github.com/opensearch-project/security/issues/5438): Complete transition to FIPS distribution of BouncyCastle
 - [Issue #4915](https://github.com/opensearch-project/security/issues/4915): OpenSAML incompatibility with BC-FIPS
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): RFC for FIPS 140-2 enforced mode support

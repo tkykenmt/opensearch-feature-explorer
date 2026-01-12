@@ -83,18 +83,20 @@ No migration required. These are transparent bug fixes that improve existing fun
 - The system context fix only applies to index creation; other operations still respect user permissions
 - The URL parsing fix specifically handles the `security_tenant` parameter; other query parameters may still interfere
 
-## Related PRs
+## References
 
+### Documentation
+- [Reporting Documentation](https://docs.opensearch.org/3.0/reporting/): Official OpenSearch Reporting documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1108](https://github.com/opensearch-project/reporting/pull/1108) | Create report definitions and instances indices in system context |
 | [#599](https://github.com/opensearch-project/dashboards-reporting/pull/599) | Fix tenant issue when redirecting from Discover |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #998](https://github.com/opensearch-project/reporting/issues/998): Can't create reporting indices due to permission issue
 - [Issue #535](https://github.com/opensearch-project/dashboards-reporting/issues/535): Saved search id parsing logic does not consider tenant in URL
-- [Reporting Documentation](https://docs.opensearch.org/3.0/reporting/): Official OpenSearch Reporting documentation
 
 ## Related Feature Report
 

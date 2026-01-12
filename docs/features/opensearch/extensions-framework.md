@@ -166,22 +166,26 @@ public class OnBehalfOfClaims {
 - Extensions cannot yet run in a horizontally scaled configuration
 - Real-time anomaly detection support in extensions is still in development
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2024-09-17): Added On Behalf Of token passing and Service Account token issuance for extensions
+
+## References
+
+### Documentation
+- [Extensions Documentation](https://docs.opensearch.org/3.0/developer-documentation/extensions/): Official OpenSearch extensions documentation
+- [Extension Design Documentation](https://opensearch-project.github.io/opensearch-sdk-java/DESIGN.html): Detailed design documentation
+- [OpenSearch SDK Java](https://github.com/opensearch-project/opensearch-sdk-java): Java SDK for building extensions
+
+### Blog Posts
+- [Introducing Extensions Blog](https://opensearch.org/blog/introducing-extensions-for-opensearch/): Blog post introducing extensions architecture
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#8679](https://github.com/opensearch-project/OpenSearch/pull/8679) | Implement on behalf of token passing for extensions |
 | v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch/pull/9618) | Provide service accounts tokens to extensions |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2764](https://github.com/opensearch-project/security/issues/2764): Determine how auth tokens are forwarded to Extensions
 - [Issue #3176](https://github.com/opensearch-project/security/issues/3176): Issue and ferry a Service Account Token to an Extension on bootstrap
-- [Extensions Documentation](https://docs.opensearch.org/3.0/developer-documentation/extensions/): Official OpenSearch extensions documentation
-- [Introducing Extensions Blog](https://opensearch.org/blog/introducing-extensions-for-opensearch/): Blog post introducing extensions architecture
-- [OpenSearch SDK Java](https://github.com/opensearch-project/opensearch-sdk-java): Java SDK for building extensions
-- [Extension Design Documentation](https://opensearch-project.github.io/opensearch-sdk-java/DESIGN.html): Detailed design documentation
-
-## Change History
-
-- **v3.0.0** (2024-09-17): Added On Behalf Of token passing and Service Account token issuance for extensions

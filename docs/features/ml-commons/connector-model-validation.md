@@ -158,8 +158,20 @@ With this schema, a prediction request with `"inputText": "5.11"` will correctly
 - Schema validation requires explicit type definitions in model interface
 - Connector retry policy updates require inline connectors (not standalone connector_id references)
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07): Added pre/post-process function validation for connectors, improved URI validation with clearer error messages
+- **v3.1.0** (2025-06): Added input validation for name/description fields, fixed schema string type preservation, fixed connector retry policy NPE, fixed MCP tool memory synchronization, fixed Bedrock DeepSeek tool result format
+
+## References
+
+### Documentation
+- [Update Model API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/update-model/)
+- [Update Connector API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/update-connector/)
+- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
+- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#3579](https://github.com/opensearch-project/ml-commons/pull/3579) | Enhance validation for create connector API - pre/post-process function validation |
@@ -170,19 +182,9 @@ With this schema, a prediction request with `"inputText": "5.11"` will correctly
 | v3.1.0 | [#3931](https://github.com/opensearch-project/ml-commons/pull/3931) | Fix tool not found in MCP memory issue |
 | v3.1.0 | [#3933](https://github.com/opensearch-project/ml-commons/pull/3933) | Fix: Ensure proper format for Bedrock DeepSeek tool result |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2993](https://github.com/opensearch-project/ml-commons/issues/2993): Enhance validation for create connector API
 - [Issue #3921](https://github.com/opensearch-project/ml-commons/issues/3921): Agent run failed with unclear error when URL is invalid
 - [Issue #3639](https://github.com/opensearch-project/ml-commons/issues/3639): Enhance Input Validation for UpdateModel and UpdateModelGroup APIs
 - [Issue #3758](https://github.com/opensearch-project/ml-commons/issues/3758): Model interface validation failed when there is integer within text
 - [Issue #3906](https://github.com/opensearch-project/ml-commons/issues/3906): Gracefully handle error when user attempts to update retry_policy
-- [Update Model API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/update-model/)
-- [Update Connector API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/update-connector/)
-- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
-- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/)
-
-## Change History
-
-- **v3.2.0** (2025-07): Added pre/post-process function validation for connectors, improved URI validation with clearer error messages
-- **v3.1.0** (2025-06): Added input validation for name/description fields, fixed schema string type preservation, fixed connector retry policy NPE, fixed MCP tool memory synchronization, fixed Bedrock DeepSeek tool result format

@@ -82,17 +82,17 @@ When security testing is enabled, the following certificates are downloaded from
 - The `-Dsecurity` property requires exact string value `"true"` to enable
 - Certificate download requires network access to GitHub
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#287](https://github.com/opensearch-project/search-relevance/pull/287) | Initial implementation |
-
-## References
-
-- [PR #287](https://github.com/opensearch-project/search-relevance/pull/287): Use a system property to control run integ test with security plugin
-- [OpenSearch Security Repository](https://github.com/opensearch-project/security): Source of test certificates
-
 ## Change History
 
 - **v3.4.0** (2026-01-11): Initial implementation - Added system property to control security plugin integration in tests
+
+## References
+
+### Documentation
+- [PR #287](https://github.com/opensearch-project/search-relevance/pull/287): Use a system property to control run integ test with security plugin
+- [OpenSearch Security Repository](https://github.com/opensearch-project/security): Source of test certificates
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#287](https://github.com/opensearch-project/search-relevance/pull/287) | Initial implementation |

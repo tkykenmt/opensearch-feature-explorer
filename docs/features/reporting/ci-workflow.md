@@ -65,17 +65,17 @@ windows-mac-builds:
 - E2E tests only run on push to main branch, not on pull requests
 - Windows builds require `core.longpaths` git configuration
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#548](https://github.com/opensearch-project/dashboards-reporting/pull/548) | CI updates and workflow fixes |
-
-## References
-
-- [dashboards-reporting repository](https://github.com/opensearch-project/dashboards-reporting): Source repository
-- [GitHub Actions documentation](https://docs.github.com/en/actions): GitHub Actions reference
-
 ## Change History
 
 - **v3.0.0** (2025-05-06): Upgraded actions/checkout to v4, consolidated Windows/macOS builds into matrix job, fixed documentation links
+
+## References
+
+### Documentation
+- [GitHub Actions documentation](https://docs.github.com/en/actions): GitHub Actions reference
+- [dashboards-reporting repository](https://github.com/opensearch-project/dashboards-reporting): Source repository
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#548](https://github.com/opensearch-project/dashboards-reporting/pull/548) | CI updates and workflow fixes |

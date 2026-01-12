@@ -54,18 +54,20 @@ No migration required. This is a documentation improvement only.
 
 None - this is a documentation update.
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #8139](https://github.com/opensearch-project/documentation-website/pull/8139): Main implementation
+- [Top N Queries Documentation](https://opensearch.org/docs/latest/observing-your-data/query-insights/top-n-queries/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8139](https://github.com/opensearch-project/documentation-website/pull/8139) | Update GET top N api documentation |
 
-## References
-
-- [PR #8139](https://github.com/opensearch-project/documentation-website/pull/8139): Main implementation
+### Issues (Design / RFC)
 - [Issue #80](https://github.com/opensearch-project/query-insights/issues/80): Related issue
 - [Issue #83](https://github.com/opensearch-project/query-insights/issues/83): Related issue
-- [Top N Queries Documentation](https://opensearch.org/docs/latest/observing-your-data/query-insights/top-n-queries/): Official documentation
 
 ## Related Feature Report
 

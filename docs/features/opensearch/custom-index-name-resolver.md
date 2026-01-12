@@ -125,17 +125,19 @@ GET /_tenant:acme/_search
 - Each resolver class can only be registered once across all plugins
 - Custom expressions must not conflict with built-in patterns (wildcards, date math)
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-04): Initial implementation - Added support for custom index name resolvers through ClusterPlugin interface
+
+## References
+
+### Documentation
+- [Resolve Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/resolve-index/): Index resolution documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18593](https://github.com/opensearch-project/OpenSearch/pull/18593) | Initial implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18676](https://github.com/opensearch-project/OpenSearch/issues/18676): Original feature request
-- [Resolve Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/resolve-index/): Index resolution documentation
-
-## Change History
-
-- **v3.2.0** (2025-07-04): Initial implementation - Added support for custom index name resolvers through ClusterPlugin interface

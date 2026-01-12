@@ -66,18 +66,20 @@ The backport workflow was also improved with:
 
 - The batch findings API is no longer available; use the list-based API instead
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2025-48734 Advisory](https://advisories.opensearch.org/advisories/CVE-2025-48734): Security advisory for commons-beanutils
+- [OpenSearch PR #18085](https://github.com/opensearch-project/OpenSearch/pull/18085): Related JDK 24 update in OpenSearch core
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#850](https://github.com/opensearch-project/common-utils/pull/850) | Pinned commons-beanutils dependency to fix CVE-2025-48734 |
 | [#847](https://github.com/opensearch-project/common-utils/pull/847) | Revert PublishFindingsRequest to use a list of findings |
 | [#848](https://github.com/opensearch-project/common-utils/pull/848) | Switch gradle to 8.14 and JDK to 24 |
 
-## References
-
-- [CVE-2025-48734 Advisory](https://advisories.opensearch.org/advisories/CVE-2025-48734): Security advisory for commons-beanutils
-- [OpenSearch PR #18085](https://github.com/opensearch-project/OpenSearch/pull/18085): Related JDK 24 update in OpenSearch core
+### Issues (Design / RFC)
 - [OpenSearch Issue #17661](https://github.com/opensearch-project/OpenSearch/issues/17661): JDK 24 upgrade tracking issue
 
 ## Related Feature Report

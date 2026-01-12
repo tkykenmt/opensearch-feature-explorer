@@ -73,18 +73,18 @@ This feature is additive and requires no migration. Existing clusters using `sea
 - Warning logs may impact log volume in high-traffic environments with many oversized queries
 - The setting is cluster-wide; per-index configuration is not supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Query String Query Documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/): Official query string documentation
+- [PR #19539](https://github.com/opensearch-project/OpenSearch/pull/19539): Main implementation
+- [PR #19491 Discussion](https://github.com/opensearch-project/OpenSearch/pull/19491#issuecomment-3362082746): Feature request discussion
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19539](https://github.com/opensearch-project/OpenSearch/pull/19539) | Introduced monitoring mode for query string query max length |
 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Original implementation of `search.query.max_query_string_length` setting |
-
-## References
-
-- [PR #19539](https://github.com/opensearch-project/OpenSearch/pull/19539): Main implementation
-- [PR #19491 Discussion](https://github.com/opensearch-project/OpenSearch/pull/19491#issuecomment-3362082746): Feature request discussion
-- [Query String Query Documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/): Official query string documentation
 
 ## Related Feature Report
 

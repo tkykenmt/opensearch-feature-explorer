@@ -102,17 +102,19 @@ export const getSpanIndices = (mode: TraceAnalyticsMode) => {
 - The `dataPrepperIndicesExist` check has been removed; users should configure indices in Advanced Settings if defaults don't exist
 - Nested field filtering in span flyout requires the new flattening logic
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2457](https://github.com/opensearch-project/dashboards-observability/pull/2457) | Merge custom source and data prepper mode in trace analytics |
 | [#2450](https://github.com/opensearch-project/dashboards-observability/pull/2450) | Span Flyout - support new format with nested field flattening |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2141](https://github.com/opensearch-project/dashboards-observability/issues/2141): RFC: Enhancements to Trace Analytics Plugin
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official documentation
 
 ## Related Feature Report
 

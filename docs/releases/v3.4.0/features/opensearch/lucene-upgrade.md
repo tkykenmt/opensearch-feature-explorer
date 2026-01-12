@@ -52,15 +52,17 @@ No migration steps are required. This is a minor version bump with backward-comp
 
 - This is a bug fix release with no new features from Lucene
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene 10.3.2 Release](https://github.com/apache/lucene/releases/tag/releases%2Flucene%2F10.3.2): Official Lucene 10.3.2 release
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20026](https://github.com/opensearch-project/OpenSearch/pull/20026) | Bump lucene version from 10.3.1 to 10.3.2 |
 
-## References
-
-- [Lucene 10.3.2 Release](https://github.com/apache/lucene/releases/tag/releases%2Flucene%2F10.3.2): Official Lucene 10.3.2 release
+### Issues (Design / RFC)
 - [GITHUB#15380](https://github.com/apache/lucene/issues/15380): Fix potential EOF in MaxScoreBulkScorer
 
 ## Related Feature Report

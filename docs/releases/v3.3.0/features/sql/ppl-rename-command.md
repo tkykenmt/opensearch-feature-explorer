@@ -106,16 +106,18 @@ source=accounts | rename *ame as *_ame, *_ame as *_AME
 - Cannot match literal `*` characters in field names
 - The `rename` command is executed on the coordination node, not rewritten to OpenSearch DSL
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4019](https://github.com/opensearch-project/sql/pull/4019) | Add wildcard support for rename command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4008](https://github.com/opensearch-project/sql/issues/4008): Feature request for wildcard rename support
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
 
 ## Related Feature Report
 

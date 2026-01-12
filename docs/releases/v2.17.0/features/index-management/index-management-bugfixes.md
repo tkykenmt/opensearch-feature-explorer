@@ -93,17 +93,19 @@ No migration required. These are internal improvements that do not affect the pu
 
 - The skip execution check now relies on node versions rather than plugin versions, which may behave differently in heterogeneous clusters with different plugin installations
 
-## Related PRs
+## References
 
+### Documentation
+- [Index State Management Documentation](https://docs.opensearch.org/2.17/im-plugin/ism/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1219](https://github.com/opensearch-project/index-management/pull/1219) | Skipping execution based on cluster service - replaces expensive NodesInfoRequest |
 | [#1222](https://github.com/opensearch-project/index-management/pull/1222) | Use adminClient instead of client when interacting with system index in integTests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1075](https://github.com/opensearch-project/index-management/issues/1075): ISM listener blocking Cluster Applier thread with expensive nodes info call
-- [Index State Management Documentation](https://docs.opensearch.org/2.17/im-plugin/ism/index/)
 
 ## Related Feature Report
 

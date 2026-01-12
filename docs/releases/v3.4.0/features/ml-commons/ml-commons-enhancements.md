@@ -115,20 +115,20 @@ The `credential` and `Authorization` fields are now automatically filtered from 
 - Sensitive parameter filtering only applies to REST API request logging; stored credentials remain encrypted in the connector index
 - Resource type changes require corresponding security plugin updates (v3.4.0+)
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/): Configuration options
+- [Create Connector API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/create-connector/): Connector creation documentation
+- [Batch Predict API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/batch-predict/): Batch inference documentation
+- [Security PR #5713](https://github.com/opensearch-project/security/pull/5713): Related security plugin changes for resource type support
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4308](https://github.com/opensearch-project/ml-commons/pull/4308) | Declare credential and *.Authorization as sensitive param in create connector API |
 | [#4333](https://github.com/opensearch-project/ml-commons/pull/4333) | Pass resourceType instead of resourceIndex to resourceSharingClient |
 | [#4474](https://github.com/opensearch-project/ml-commons/pull/4474) | Allow higher maximum number of batch inference job tasks |
-
-## References
-
-- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/): Configuration options
-- [Create Connector API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/create-connector/): Connector creation documentation
-- [Batch Predict API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/batch-predict/): Batch inference documentation
-- [Security PR #5713](https://github.com/opensearch-project/security/pull/5713): Related security plugin changes for resource type support
 
 ## Related Feature Report
 

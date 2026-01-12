@@ -142,8 +142,17 @@ source=otel_logs /* OpenTelemetry logs */
   - `count`/`dc`/`distinct_count`: V2 returns `int`, V3 returns `bigint`
 - JOIN queries auto-terminate after 60 seconds by default (configurable via hint)
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
+- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 engine limitations
+
+### Blog Posts
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands introduction
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3448](https://github.com/opensearch-project/sql/pull/3448) | Merge feature/calcite-engine to main |
@@ -155,13 +164,8 @@ source=otel_logs /* OpenTelemetry logs */
 | [#3269](https://github.com/opensearch-project/sql/pull/3269) | Add SQLQuery Utils support for Vacuum queries |
 | [#3278](https://github.com/opensearch-project/reporting/pull/3278) | Clean up syntax error reporting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #154](https://github.com/tkykenmt/opensearch-feature-explorer/issues/154): SQL/PPL Engine tracking issue
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
-- [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 engine limitations
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): New PPL commands introduction
 
 ## Related Feature Report
 

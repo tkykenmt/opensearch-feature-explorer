@@ -52,8 +52,12 @@ PR [#3935](https://github.com/opensearch-project/ml-commons/pull/3935) forces th
 
 - The SearchIndexTool parsing change maintains backward compatibility but may require schema updates for MCP tool registrations
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch#17556](https://github.com/opensearch-project/OpenSearch/pull/17556): Core optional EnumSet streaming APIs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3838](https://github.com/opensearch-project/ml-commons/pull/3838) | Exclude trusted connector check for hidden model |
@@ -66,10 +70,8 @@ PR [#3935](https://github.com/opensearch-project/ml-commons/pull/3935) forces th
 | [#426](https://github.com/opensearch-project/ml-commons/pull/426) | Bump version to 3.1.0.0 |
 | [#588](https://github.com/opensearch-project/ml-commons/pull/588) | Fix model deploy failure due to ml-commons update |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3834](https://github.com/opensearch-project/ml-commons/issues/3834): SearchIndexTool MCP schema alignment
-- [OpenSearch#17556](https://github.com/opensearch-project/OpenSearch/pull/17556): Core optional EnumSet streaming APIs
 
 ## Related Feature Report
 

@@ -68,18 +68,20 @@ For developers:
 - Multi-data source display is no longer available in Maps when data source feature is enabled
 - This is a UX simplification, not a removal of multi-data source support for data layers
 
-## Related PRs
+## References
 
+### Documentation
+- [FTR PR #1540](https://github.com/opensearch-project/opensearch-dashboards-functional-test/pull/1540): Move maps integration tests to FTR repo
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#651](https://github.com/opensearch-project/dashboards-maps/pull/651) | Deprecate maps multi data source display |
 | [#664](https://github.com/opensearch-project/dashboards-maps/pull/664) | Use functional test repo to run maps integration test workflow |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #649](https://github.com/opensearch-project/dashboards-maps/issues/649): Support Trineo new headers change in maps
 - [Issue #592](https://github.com/opensearch-project/dashboards-maps/issues/592): Cypress CI failed with Electron Renderer crash
-- [FTR PR #1540](https://github.com/opensearch-project/opensearch-dashboards-functional-test/pull/1540): Move maps integration tests to FTR repo
 
 ## Related Feature Report
 

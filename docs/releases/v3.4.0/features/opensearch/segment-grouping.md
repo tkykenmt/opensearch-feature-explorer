@@ -132,14 +132,14 @@ PUT /tenant-index
 - **Field Validation**: Script field usage validation is limited; users can reference multiple fields in scripts while declaring only one, which may affect query optimizations
 - **No Aggregation Support**: The `context_aware_grouping` field type cannot be used in aggregations
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19233](https://github.com/opensearch-project/OpenSearch/pull/19233) | Add a mapper for context aware segments grouping criteria |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #19223](https://github.com/opensearch-project/OpenSearch/issues/19223): Context aware segments user experience
 - [RFC #18576](https://github.com/opensearch-project/OpenSearch/issues/18576): Context Aware Segments
 

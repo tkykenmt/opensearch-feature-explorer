@@ -96,17 +96,19 @@ No migration required. This is a bug fix that restores correct behavior for hybr
 - Aggregation scores in the response are not normalized (expected behavior)
 - The fix applies to all nested aggregation scenarios with hybrid query
 
-## Related PRs
+## References
 
+### Documentation
+- [Hybrid Search Documentation](https://docs.opensearch.org/2.18/search-plugins/hybrid-search/)
+- [Nested Aggregations](https://docs.opensearch.org/2.18/aggregations/bucket/nested/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #955](https://github.com/opensearch-project/neural-search/issues/955): Bug report for incorrect nested aggregation results
-- [Hybrid Search Documentation](https://docs.opensearch.org/2.18/search-plugins/hybrid-search/)
-- [Nested Aggregations](https://docs.opensearch.org/2.18/aggregations/bucket/nested/)
 
 ## Related Feature Report
 

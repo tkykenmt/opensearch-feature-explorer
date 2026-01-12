@@ -102,17 +102,17 @@ yarn osd clean
 - Hash computation has minor overhead compared to mtime checks
 - Large codebases may experience longer initial hash computation
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Switched from mtime-based caching to SHA-1 content hashing for CI compatibility
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8472](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8472) | Switch to content-based hashing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8428](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8428): Original feature request for improved cache strategy
 - [Issue #2188](https://github.com/opensearch-project/dashboards-observability/issues/2188): Related CI caching discussion
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Switched from mtime-based caching to SHA-1 content hashing for CI compatibility

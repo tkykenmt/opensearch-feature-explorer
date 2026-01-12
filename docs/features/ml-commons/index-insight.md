@@ -229,16 +229,16 @@ POST /_plugins/_ml/agents/_register
 - Pattern matching for similar indices is limited to 100 patterns
 - Batch processing timeout is 60 seconds per batch
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Initial implementation with StatisticalDataTask, FieldDescriptionTask, and LogRelatedIndexCheckTask
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4088](https://github.com/opensearch-project/ml-commons/pull/4088) | Initial implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3993](https://github.com/opensearch-project/ml-commons/issues/3993): RFC: Index insight: A feature to enhance indices related AI features
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Initial implementation with StatisticalDataTask, FieldDescriptionTask, and LogRelatedIndexCheckTask

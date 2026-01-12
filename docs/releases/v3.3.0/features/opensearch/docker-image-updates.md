@@ -79,17 +79,19 @@ This change is transparent to users. The OpenSearch Docker images will continue 
 - This change only affects the official OpenSearch Docker images
 - Custom Docker builds using CentOS 8 should migrate to AlmaLinux 8 or another supported base
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Compatible Operating Systems](https://docs.opensearch.org/3.3/install-and-configure/os-comp/)
+- [CentOS Docker Hub Deprecation Notice](https://hub.docker.com/_/centos)
+- [AlmaLinux Official Site](https://almalinux.org/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19154](https://github.com/opensearch-project/OpenSearch/pull/19154) | Replace centos:8 with almalinux:8 since centos docker images are deprecated |
 
-## References
-
-- [CentOS Docker Hub Deprecation Notice](https://hub.docker.com/_/centos)
-- [AlmaLinux Official Site](https://almalinux.org/)
-- [OpenSearch Compatible Operating Systems](https://docs.opensearch.org/3.3/install-and-configure/os-comp/)
+### Issues (Design / RFC)
 - [opensearch-build Issue #4573](https://github.com/opensearch-project/opensearch-build/issues/4573): Remove CentOS8, add Almalinux8/Rockylinux8
 
 ## Related Feature Report

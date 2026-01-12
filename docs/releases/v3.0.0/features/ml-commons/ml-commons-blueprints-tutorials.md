@@ -102,8 +102,16 @@ POST /_plugins/_ml/connectors/_create
 - Standard blueprints require ML inference processor for input/output mapping
 - Azure OpenAI requires proper endpoint and deployment name configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
+- [Supported Connectors](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/supported-connectors/)
+
+### Blog Posts
+- [AWS Blog: Claude 3.7 on Bedrock](https://aws.amazon.com/blogs/aws/anthropics-claude-3-7-sonnet-the-first-hybrid-reasoning-model-is-now-available-in-amazon-bedrock/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3659](https://github.com/opensearch-project/ml-commons/pull/3659) | Add standard blueprint for vector search |
@@ -112,12 +120,8 @@ POST /_plugins/_ml/connectors/_create
 | [#3612](https://github.com/opensearch-project/ml-commons/pull/3612) | Fix template query link |
 | [#2975](https://github.com/opensearch-project/ml-commons/pull/2975) | Add tutorial for RAG of OpenAI and Bedrock |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3619](https://github.com/opensearch-project/ml-commons/issues/3619): Standard blueprints feature request
-- [Connector Blueprints Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/)
-- [Supported Connectors](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/supported-connectors/)
-- [AWS Blog: Claude 3.7 on Bedrock](https://aws.amazon.com/blogs/aws/anthropics-claude-3-7-sonnet-the-first-hybrid-reasoning-model-is-now-available-in-amazon-bedrock/)
 
 ## Related Feature Report
 

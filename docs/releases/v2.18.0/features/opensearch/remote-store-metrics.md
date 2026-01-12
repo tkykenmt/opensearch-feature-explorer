@@ -92,17 +92,19 @@ GET _nodes/stats/remote_store,indices
 - The metric is only meaningful for remote-backed storage clusters with pinned timestamps enabled
 - Additional remote store metrics may be added in future releases
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote Store Stats API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-store-stats-api/): Shard-level remote store statistics
+- [Nodes Stats API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-stats/): Node statistics API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15611](https://github.com/opensearch-project/OpenSearch/pull/15611) | Add new metric REMOTE_STORE to NodeStats API response |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15896](https://github.com/opensearch-project/OpenSearch/issues/15896): Feature request for adding pinned timestamps to node stats
-- [Remote Store Stats API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-store-stats-api/): Shard-level remote store statistics
-- [Nodes Stats API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-stats/): Node statistics API documentation
 
 ## Related Feature Report
 

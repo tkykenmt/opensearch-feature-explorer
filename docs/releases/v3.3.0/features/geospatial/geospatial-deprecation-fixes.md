@@ -71,16 +71,16 @@ No migration is required. This is a transparent internal change that maintains f
 - No functional changes or new limitations introduced
 - This is purely a code modernization change
 
-## Related PRs
+## References
 
+### Documentation
+- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official IP2Geo processor documentation
+- [Java URL Deprecation](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/net/URL.html): Java documentation on URL constructor deprecation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#795](https://github.com/opensearch-project/geospatial/pull/795) | Remove deprecated URL(String) usage |
-
-## References
-
-- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official IP2Geo processor documentation
-- [Java URL Deprecation](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/net/URL.html): Java documentation on URL constructor deprecation
 
 ## Related Feature Report
 

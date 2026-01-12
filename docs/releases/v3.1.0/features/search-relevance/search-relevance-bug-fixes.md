@@ -119,8 +119,12 @@ Response structure with fixed field names:
 - Query set size limited to 150 queries by default (configurable)
 - Existing data using dynamic field names requires migration
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.1/search-plugins/search-relevance/using-search-relevance-workbench/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#22](https://github.com/opensearch-project/search-relevance/pull/22) | Build search request with normal parsing and wrapper query |
@@ -138,8 +142,7 @@ Response structure with fixed field names:
 | [#116](https://github.com/opensearch-project/search-relevance/pull/116) | Add text validation and query set file size check |
 | [#124](https://github.com/opensearch-project/search-relevance/pull/124) | Fixed missing variants in Hybrid Optimizer |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12](https://github.com/opensearch-project/search-relevance/issues/12): LLM Judgment improvements
 - [Issue #14](https://github.com/opensearch-project/search-relevance/issues/14): Search request builder fix
 - [Issue #55](https://github.com/opensearch-project/search-relevance/issues/55): Lazy index creation
@@ -147,7 +150,6 @@ Response structure with fixed field names:
 - [Issue #95](https://github.com/opensearch-project/search-relevance/issues/95): LLM judgment duplication
 - [Issue #109](https://github.com/opensearch-project/search-relevance/issues/109): Missing variants in Hybrid Optimizer
 - [Issue #114](https://github.com/opensearch-project/search-relevance/issues/114): Input validation
-- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.1/search-plugins/search-relevance/using-search-relevance-workbench/)
 
 ## Related Feature Report
 

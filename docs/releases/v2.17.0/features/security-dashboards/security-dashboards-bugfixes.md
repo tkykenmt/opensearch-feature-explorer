@@ -83,8 +83,12 @@ Updated navigation items with clearer titles and added descriptions:
 - These fixes are specific to the new left navigation feature flag (`getNavGroupEnabled`)
 - The tenancy app visibility fix only affects the new navigation; classic navigation behavior is unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Dashboards Plugin](https://github.com/opensearch-project/security-dashboards-plugin)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2057](https://github.com/opensearch-project/security-dashboards-plugin/pull/2057) | Do not register tenancy app if disabled in yml |
@@ -92,11 +96,9 @@ Updated navigation items with clearer titles and added descriptions:
 | [#2108](https://github.com/opensearch-project/security-dashboards-plugin/pull/2108) | UX fixes for page header |
 | [#2084](https://github.com/opensearch-project/security-dashboards-plugin/pull/2084) | Update titles and descriptions |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056): Tenant link not hidden when new navigation enabled
 - [Issue #2097](https://github.com/opensearch-project/security-dashboards-plugin/issues/2097): invalidNextUrl when nextUrl is basePath
-- [Security Dashboards Plugin](https://github.com/opensearch-project/security-dashboards-plugin)
 
 ## Related Feature Report
 

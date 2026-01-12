@@ -118,8 +118,12 @@ PUT _cluster/settings
 - Asynchronous reader operations require integration tests for full transport layer validation
 - WLM Dashboard requires the Workload Management plugin to be installed for full functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#326](https://github.com/opensearch-project/query-insights/pull/326) | query-insights | Add metric labels to historical data |
@@ -132,15 +136,13 @@ PUT _cluster/settings
 | [#179](https://github.com/opensearch-project/query-insights-dashboards/pull/179) | query-insights-dashboards | Remove duplicate requests on overview page |
 | [#209](https://github.com/opensearch-project/query-insights-dashboards/pull/209) | query-insights-dashboards | Add unit tests for WLM dashboard |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #301](https://github.com/opensearch-project/query-insights/issues/301): Metric labels for historical data
 - [Issue #136](https://github.com/opensearch-project/query-insights/issues/136): Consolidate grouping settings
 - [Issue #260](https://github.com/opensearch-project/query-insights/issues/260): Exclude indices from insights
 - [Issue #354](https://github.com/opensearch-project/query-insights/issues/354): isCancelled field in Live Queries
 - [Issue #152](https://github.com/opensearch-project/query-insights-dashboards/issues/152): Live Queries Dashboard
 - [Issue #105](https://github.com/opensearch-project/query-insights-dashboards/issues/105): Duplicate requests bug
-- [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
 
 ## Related Feature Report
 

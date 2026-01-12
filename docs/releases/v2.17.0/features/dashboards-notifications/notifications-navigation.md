@@ -62,16 +62,16 @@ No migration required. This is a UI-only change that takes effect automatically 
 - The renamed navigation item only appears when the new navigation system is enabled
 - Legacy navigation continues to show "Notifications" under the Management category
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Notifications Documentation](https://docs.opensearch.org/2.17/observing-your-data/notifications/index/)
+- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#234](https://github.com/opensearch-project/dashboards-notifications/pull/234) | Change parent item name for new navigation |
-
-## References
-
-- [OpenSearch Notifications Documentation](https://docs.opensearch.org/2.17/observing-your-data/notifications/index/)
-- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
 
 ## Related Feature Report
 

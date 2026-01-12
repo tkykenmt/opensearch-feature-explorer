@@ -90,18 +90,18 @@ The improvement is most significant for queries with many terms, where the sorti
 - Fields using custom `rewriteForDocValue()` implementations that transform values will still use separate queries
 - The optimization is transparent and cannot be disabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/): Official documentation
+- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): Original performance issue report
+- [Lucene PR #14435](https://github.com/apache/lucene/pull/14435): Lucene enhancement enabling this optimization
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19350](https://github.com/opensearch-project/OpenSearch/pull/19350) | Pack terms once when `terms` query is created for indexed and docValues keyword field |
 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery() (prerequisite) |
-
-## References
-
-- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): Original performance issue report
-- [Lucene PR #14435](https://github.com/apache/lucene/pull/14435): Lucene enhancement enabling this optimization
-- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/): Official documentation
 
 ## Related Feature Report
 

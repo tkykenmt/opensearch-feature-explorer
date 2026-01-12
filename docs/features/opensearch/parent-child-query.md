@@ -173,22 +173,22 @@ GET /my_index/_search
 - Parent-child relationships cannot span multiple indices
 - The `search.allow_expensive_queries` setting can disable join queries
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18621](https://github.com/opensearch-project/OpenSearch/pull/18621) | Fix visitor pattern for HasParentQuery and HasChildQuery |
-| v2.16.0 | [#14739](https://github.com/opensearch-project/OpenSearch/pull/14739) | Fix visitor pattern for NestedQueryBuilder |
-| - | [#10110](https://github.com/opensearch-project/OpenSearch/pull/10110) | Original visitor pattern implementation |
+- **v3.2.0** (2026-01-10): Fixed QueryBuilderVisitor pattern for HasParentQuery and HasChildQuery to properly traverse sub-queries
 
 ## References
 
+### Documentation
 - [Has Child Query Documentation](https://docs.opensearch.org/3.0/query-dsl/joining/has-child/): Official has_child query docs
 - [Has Parent Query Documentation](https://docs.opensearch.org/3.0/query-dsl/joining/has-parent/): Official has_parent query docs
 - [Joining Queries Overview](https://docs.opensearch.org/3.0/query-dsl/joining/index/): Overview of all joining queries
 - [Join Field Type](https://docs.opensearch.org/3.0/field-types/supported-field-types/join/): Join field mapping documentation
 - [Inner Hits](https://docs.opensearch.org/3.0/search-plugins/searching-data/inner-hits/): Retrieving nested/child documents
 
-## Change History
-
-- **v3.2.0** (2026-01-10): Fixed QueryBuilderVisitor pattern for HasParentQuery and HasChildQuery to properly traverse sub-queries
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#18621](https://github.com/opensearch-project/OpenSearch/pull/18621) | Fix visitor pattern for HasParentQuery and HasChildQuery |
+| v2.16.0 | [#14739](https://github.com/opensearch-project/OpenSearch/pull/14739) | Fix visitor pattern for NestedQueryBuilder |
+| - | [#10110](https://github.com/opensearch-project/OpenSearch/pull/10110) | Original visitor pattern implementation |

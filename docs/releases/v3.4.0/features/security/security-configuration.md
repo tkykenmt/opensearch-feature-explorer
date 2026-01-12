@@ -122,8 +122,12 @@ PUT _cluster/settings
 - SAN extraction requires certificates with properly configured X509v3 extensions
 - Configuration reloading thread improvements are internal and not user-configurable
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Client Certificate Authentication](https://docs.opensearch.org/3.4/security/authentication-backends/client-auth/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5479](https://github.com/opensearch-project/security/pull/5479) | Moved configuration reloading to dedicated thread |
@@ -133,13 +137,11 @@ PUT _cluster/settings
 | [#5769](https://github.com/opensearch-project/security/pull/5769) | Headers copy optimization |
 | [#5787](https://github.com/opensearch-project/security/pull/5787) | Add --timeout option to securityadmin.sh |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue
 - [Issue #5643](https://github.com/opensearch-project/security/issues/5643): SAN authentication feature request
 - [Issue #5653](https://github.com/opensearch-project/security/issues/5653): SocketTimeoutException in securityadmin
 - [Issue #4209](https://github.com/opensearch-project/security/issues/4209): X509v3 SAN support request
-- [Documentation: Client Certificate Authentication](https://docs.opensearch.org/3.4/security/authentication-backends/client-auth/)
 
 ## Related Feature Report
 

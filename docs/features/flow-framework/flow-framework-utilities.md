@@ -189,20 +189,22 @@ String mappingJson = """
 - The recommender only maps values that exist in both input and output; unmapped fields are skipped
 - Thread-safe: all public APIs are static and use local variables only
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-06): Initial implementation of JsonToJsonRecommender and JsonToJsonTransformer utilities for automated JSON field mapping and transformation
+
+## References
+
+### Documentation
+- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
+- [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#1168](https://github.com/opensearch-project/flow-framework/pull/1168) | Add JsonToJson Recommender as a utility function |
 | v3.2.0 | [#1176](https://github.com/opensearch-project/flow-framework/pull/1176) | Add JsonToJson Transformer as a utility function |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1167](https://github.com/opensearch-project/flow-framework/issues/1167): Feature request for JsonToJson utilities
 - [OpenSearch Issue #18507](https://github.com/opensearch-project/OpenSearch/issues/18507): Related core OpenSearch issue
-- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
-- [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework)
-
-## Change History
-
-- **v3.2.0** (2025-08-06): Initial implementation of JsonToJsonRecommender and JsonToJsonTransformer utilities for automated JSON field mapping and transformation

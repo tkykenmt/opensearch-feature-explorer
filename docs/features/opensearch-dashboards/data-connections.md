@@ -121,8 +121,22 @@ data_source:
 - The "Query data" card redirects to Discover without pre-selecting the datasource
 - If more than 10 data sources are loaded on a single page, server crashes may occur due to deprecated `parseUrl` function in elasticsearch legacy library
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-13): S3 query cancellation, extended numeric type mappings (tinyint, smallint, bigint), memory leak fix for Node.js 20 compatibility, increased client pool size to 10
+- **v3.4.0** (2025-03-11): Prometheus saved object support - Prometheus connections now stored as `data-connection` saved objects with MDS support, added "No Auth" authentication option
+- **v2.18.0** (2024-10-22): Dataset picker data connections support (multi-select table, pagination, search), UI improvements (tabs navigation, type display), MDS endpoint unification, auto-complete MDS support, fit and finish fixes
+- **v2.17.0** (2024-09-17): Added data-connection saved object type for external connections (CloudWatch, Security Lake)
+- **v2.16.0**: Initial migration of direct query data source to data source management plugin
+
+## References
+
+### Documentation
+- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Official documentation
+- [Multi-Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring multiple data sources
+- [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/3.0/dashboards/management/S3-data-source/): S3 data source documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9355) | Deletes S3 Jobs in Backend when Original Query is Canceled |
@@ -139,20 +153,8 @@ data_source:
 | v2.17.0 | [#7925](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7925) | Add data-connection saved object type for external connections |
 | v2.16.0 | [#7143](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7143) | Initial migration of direct query data source to data source management |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8256](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8256): Redirection issue for direct query datasource
 - [Issue #8536](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8536): Deprecate non-MDS data connection endpoint
 - [Issue #9459](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9459): Node.js v20 Plugin Verification Meta Issue
 - [RFC #9535](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9535): Prometheus as first-class datasource proposal
-- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Official documentation
-- [Multi-Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring multiple data sources
-- [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/3.0/dashboards/management/S3-data-source/): S3 data source documentation
-
-## Change History
-
-- **v3.0.0** (2025-05-13): S3 query cancellation, extended numeric type mappings (tinyint, smallint, bigint), memory leak fix for Node.js 20 compatibility, increased client pool size to 10
-- **v3.4.0** (2025-03-11): Prometheus saved object support - Prometheus connections now stored as `data-connection` saved objects with MDS support, added "No Auth" authentication option
-- **v2.18.0** (2024-10-22): Dataset picker data connections support (multi-select table, pagination, search), UI improvements (tabs navigation, type display), MDS endpoint unification, auto-complete MDS support, fit and finish fixes
-- **v2.17.0** (2024-09-17): Added data-connection saved object type for external connections (CloudWatch, Security Lake)
-- **v2.16.0**: Initial migration of direct query data source to data source management plugin

@@ -36,8 +36,9 @@ Standard release preparation activities including:
 
 These are routine maintenance PRs with no functional changes.
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1205](https://github.com/opensearch-project/security/pull/1205) | security | Added 2.18.0 release notes |
@@ -60,6 +61,5 @@ These are routine maintenance PRs with no functional changes.
 | [#957](https://github.com/opensearch-project/notifications/pull/957) | notifications | Version increment |
 | [#1037](https://github.com/opensearch-project/dashboards-reporting/pull/1037) | dashboards-reporting | Version increment |
 
-## References
-
+### Issues (Design / RFC)
 - [GitHub Issue #611](https://github.com/tkykenmt/opensearch-feature-explorer/issues/611): Investigation tracking issue

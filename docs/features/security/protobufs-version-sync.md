@@ -60,17 +60,17 @@ dependencies {
 - Breaking changes in protobufs require coordinated updates between core and Security plugin
 - Security plugin must be built against a compatible OpenSearch core version
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#5659](https://github.com/opensearch-project/security/pull/5659) | Initial implementation of version sync |
-
-## References
-
-- [OpenSearch core libs.versions.toml](https://github.com/opensearch-project/OpenSearch/blob/main/gradle/libs.versions.toml): Version catalog
-- [Security plugin build.gradle](https://github.com/opensearch-project/security/blob/main/build.gradle): Build configuration
-
 ## Change History
 
 - **v3.3.0** (2026-01-11): Initial implementation - synchronized protobufs version with core
+
+## References
+
+### Documentation
+- [OpenSearch core libs.versions.toml](https://github.com/opensearch-project/OpenSearch/blob/main/gradle/libs.versions.toml): Version catalog
+- [Security plugin build.gradle](https://github.com/opensearch-project/security/blob/main/build.gradle): Build configuration
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#5659](https://github.com/opensearch-project/security/pull/5659) | Initial implementation of version sync |

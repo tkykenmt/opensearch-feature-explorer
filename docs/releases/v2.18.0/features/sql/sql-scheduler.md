@@ -67,17 +67,17 @@ No migration is required. The fix is transparent to users and does not affect ex
 
 None specific to this bugfix.
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/scheduled-query-acceleration/): Scheduled Query Acceleration
+- [PR #3092](https://github.com/opensearch-project/sql/pull/3092): Original implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3092](https://github.com/opensearch-project/sql/pull/3092) | Remove scheduler index from SystemIndexDescriptor (main) |
 | [#3097](https://github.com/opensearch-project/sql/pull/3097) | Backport to 2.x branch |
-
-## References
-
-- [PR #3092](https://github.com/opensearch-project/sql/pull/3092): Original implementation
-- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/scheduled-query-acceleration/): Scheduled Query Acceleration
 
 ## Related Feature Report
 

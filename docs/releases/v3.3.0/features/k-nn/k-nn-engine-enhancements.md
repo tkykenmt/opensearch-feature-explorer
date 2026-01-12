@@ -152,19 +152,21 @@ PUT test-index
 - When using 4x compression, only Lucene engine is supported
 - Training operations require FAISS engine regardless of top-level setting
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Vector Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/): Official k-NN vector field documentation
+- [gRPC Search API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): gRPC Search API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2736](https://github.com/opensearch-project/k-NN/pull/2736) | Added engine as a top-level optional parameter while creating vector field |
 | [#2833](https://github.com/opensearch-project/k-NN/pull/2833) | Migrate k-NN plugin to use GRPC transport-grpc SPI interface |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2534](https://github.com/opensearch-project/k-NN/issues/2534): Make engine top level field mapping parameter
 - [Issue #2816](https://github.com/opensearch-project/k-NN/issues/2816): Add GRPC support for k-NN queries
-- [k-NN Vector Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/): Official k-NN vector field documentation
-- [gRPC Search API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): gRPC Search API documentation
 
 ## Related Feature Report
 

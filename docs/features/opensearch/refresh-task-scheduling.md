@@ -111,19 +111,23 @@ PUT /my-index/_settings
 - Staggered start applies only to initial refresh after task creation
 - Does not address the underlying cause of slow refreshes
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Initial implementation with cluster-level setting and dynamic sleep duration calculation
+
+## References
+
+### Documentation
+- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation on refresh operations
+
+### Blog Posts
+- [Blog: Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Background on refresh interval concepts
+- [Blog: Adaptive refresh for resilient segment replication](https://opensearch.org/blog/adaptive-refresh-for-resilient-segment-replication/): Related refresh improvements for segment replication
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17777](https://github.com/opensearch-project/OpenSearch/pull/17777) | Implement fixed interval refresh task scheduling |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17776](https://github.com/opensearch-project/OpenSearch/issues/17776): META - Improve Data Freshness for Remote Store Indexes
-- [Blog: Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Background on refresh interval concepts
-- [Blog: Adaptive refresh for resilient segment replication](https://opensearch.org/blog/adaptive-refresh-for-resilient-segment-replication/): Related refresh improvements for segment replication
-- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation on refresh operations
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Initial implementation with cluster-level setting and dynamic sleep duration calculation

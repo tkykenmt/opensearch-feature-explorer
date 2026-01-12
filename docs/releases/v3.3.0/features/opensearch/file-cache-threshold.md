@@ -122,17 +122,17 @@ PUT _cluster/settings
 - Index blocks are applied at the index level, affecting all shards on the node
 - Auto-release of blocks requires cache pressure to drop below the threshold
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Addition of fileCache activeUsage guard rails to DiskThresholdMonitor |
-
 ## References
 
+### Documentation
 - [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
 - [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/)
 - [Nodes Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Addition of fileCache activeUsage guard rails to DiskThresholdMonitor |
 
 ## Related Feature Report
 

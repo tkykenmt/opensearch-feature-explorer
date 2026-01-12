@@ -99,16 +99,18 @@ PUT _ingest/pipeline/log_pipeline
 - The `capture_all_matches` option applies to all fields in the pattern; selective per-field control is not supported
 - Type coercion (e.g., `:int`, `:long`) is applied to each captured value individually
 
-## Related PRs
+## References
 
+### Documentation
+- [Grok Processor Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/grok/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18799](https://github.com/opensearch-project/OpenSearch/pull/18799) | Grok processor supports capturing multiple values for same field name |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18790](https://github.com/opensearch-project/OpenSearch/issues/18790): Bug report - Grok processor only extracts the first matched value for repeated field name
-- [Grok Processor Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/grok/): Official documentation
 
 ## Related Feature Report
 

@@ -193,17 +193,19 @@ GET /my_index/_search?include_named_queries_score=true
 - Custom rescorer implementations must override `getParsedQueries()` to support named queries
 - Named queries are evaluated per-document during the fetch phase, which may have performance implications for very large result sets
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-09): Initial implementation - named queries from rescore contexts now appear in matched_queries array
+
+## References
+
+### Documentation
+- [Highlight query matches](https://docs.opensearch.org/3.2/search-plugins/searching-data/highlight/): Documentation on rescore and highlighting
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18697](https://github.com/opensearch-project/OpenSearch/pull/18697) | Include named queries from rescore contexts in matched_queries array |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18665](https://github.com/opensearch-project/OpenSearch/issues/18665): Original feature request
-- [Highlight query matches](https://docs.opensearch.org/3.2/search-plugins/searching-data/highlight/): Documentation on rescore and highlighting
-
-## Change History
-
-- **v3.2.0** (2025-07-09): Initial implementation - named queries from rescore contexts now appear in matched_queries array

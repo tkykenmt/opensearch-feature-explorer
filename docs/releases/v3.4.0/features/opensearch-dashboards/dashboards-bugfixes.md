@@ -50,8 +50,12 @@ For the Axios upgrade, a TypeScript patch is applied using `patch-package` to ha
 
 - The TableIdents fix is a temporary workaround until the SQL grammar is properly updated (tracked in [opensearch-project/sql#4444](https://github.com/opensearch-project/sql/issues/4444))
 
-## Related PRs
+## References
 
+### Documentation
+- [Axios PR #6982](https://github.com/axios/axios/pull/6982): Breaking TypeScript change
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#10687](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10687) | OpenSearch-Dashboards | Fix TableIdents with * |
@@ -62,10 +66,8 @@ For the Axios upgrade, a TypeScript patch is applied using `patch-package` to ha
 | [#628](https://github.com/opensearch-project/dashboards-assistant/pull/628) | dashboards-assistant | Fix capability services access settings |
 | [#821](https://github.com/opensearch-project/dashboards-flow-framework/pull/821) | dashboards-flow-framework | Gracefully handle workflows with no provisioned resources |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10523](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10523): Axios CVE tracking
 - [Issue #10685](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10685): Axios CVE tracking
 - [Issue #4444](https://github.com/opensearch-project/sql/issues/4444): SQL grammar fix for TableIdents
-- [Axios PR #6982](https://github.com/axios/axios/pull/6982): Breaking TypeScript change
 - [Axios Issue #7059](https://github.com/axios/axios/issues/7059): TypeScript type issue

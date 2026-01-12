@@ -43,15 +43,15 @@ No migration required. This is a documentation fix only.
 
 None - this is a documentation maintenance change.
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |
-
-## References
-
-- [PR #420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420): Main implementation
 
 ## Related Feature Report
 

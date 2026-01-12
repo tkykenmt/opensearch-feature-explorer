@@ -137,8 +137,15 @@ explain format=yaml source=accounts | where age > 30
 - Range aggregations ignore null values (different from CASE function behavior)
 - Some optimizations require specific query patterns to trigger
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+
+### Blog Posts
+- [OpenSearch PPL Blog: Lookup, Join, and Subsearch](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4703](https://github.com/opensearch-project/sql/pull/4703) | Merge group fields for aggregate with dependent group fields |
@@ -175,8 +182,7 @@ explain format=yaml source=accounts | where age > 30
 | [#4421](https://github.com/opensearch-project/sql/pull/4421) | PPL fillnull command enhancement |
 | [#4446](https://github.com/opensearch-project/sql/pull/4446) | Support format=yaml in Explain API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4201](https://github.com/opensearch-project/sql/issues/4201): Pushdown case function in aggregations
 - [Issue #4282](https://github.com/opensearch-project/sql/issues/4282): Pushdown sort aggregate metrics
 - [Issue #4533](https://github.com/opensearch-project/sql/issues/4533): Pushdown distinct count approx
@@ -184,8 +190,6 @@ explain format=yaml source=accounts | where age > 30
 - [Issue #3912](https://github.com/opensearch-project/sql/issues/3912): Pushdown sort by complex expressions
 - [Issue #4517](https://github.com/opensearch-project/sql/issues/4517): Make composite bucket size configurable
 - [Issue #3731](https://github.com/opensearch-project/sql/issues/3731): Configurable limitations for subsearch/join
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
-- [OpenSearch PPL Blog: Lookup, Join, and Subsearch](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/)
 
 ## Related Feature Report
 

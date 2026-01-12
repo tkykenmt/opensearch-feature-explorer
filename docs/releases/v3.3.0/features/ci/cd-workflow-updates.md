@@ -79,18 +79,18 @@ flowchart LR
 - Branch deletion requires appropriate permissions (contents:write or pull-requests:write)
 - The ml-commons PR (#4090) is still open and not yet merged
 
-## Related PRs
+## References
 
+### Documentation
+- [security PR #5548](https://github.com/opensearch-project/security/pull/5548): Main implementation for security plugin
+- [ml-commons PR #4090](https://github.com/opensearch-project/ml-commons/pull/4090): Implementation for ml-commons plugin
+- [actions/github-script](https://github.com/actions/github-script): Official GitHub Action for running scripts
+
+### Pull Requests
 | PR | Repository | Description | Status |
 |----|------------|-------------|--------|
 | [#5548](https://github.com/opensearch-project/security/pull/5548) | security | Update delete_backport_branch workflow | Merged |
 | [#4090](https://github.com/opensearch-project/ml-commons/pull/4090) | ml-commons | Update delete_backport_branch workflow | Open |
-
-## References
-
-- [security PR #5548](https://github.com/opensearch-project/security/pull/5548): Main implementation for security plugin
-- [ml-commons PR #4090](https://github.com/opensearch-project/ml-commons/pull/4090): Implementation for ml-commons plugin
-- [actions/github-script](https://github.com/actions/github-script): Official GitHub Action for running scripts
 
 ## Related Feature Report
 

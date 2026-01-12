@@ -48,20 +48,20 @@ The release maintenance process includes:
 - Release maintenance PRs are routine and do not introduce new functionality
 - Version increments are typically automated
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-06-13): Version increment and release notes for both plugins
+
+## References
+
+### Documentation
+- [observability repository](https://github.com/opensearch-project/observability)
+- [dashboards-observability repository](https://github.com/opensearch-project/dashboards-observability)
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.1.0 | [#1922](https://github.com/opensearch-project/observability/pull/1922) | observability | Increment version to 3.1.0-SNAPSHOT |
 | v3.1.0 | [#1929](https://github.com/opensearch-project/observability/pull/1929) | observability | Adding release notes for 3.1.0 |
 | v3.1.0 | [#2443](https://github.com/opensearch-project/dashboards-observability/pull/2443) | dashboards-observability | Increment version to 3.1.0.0 |
 | v3.1.0 | [#2464](https://github.com/opensearch-project/dashboards-observability/pull/2464) | dashboards-observability | Adding release notes for 3.1.0 |
-
-## References
-
-- [observability repository](https://github.com/opensearch-project/observability)
-- [dashboards-observability repository](https://github.com/opensearch-project/dashboards-observability)
-
-## Change History
-
-- **v3.1.0** (2025-06-13): Version increment and release notes for both plugins

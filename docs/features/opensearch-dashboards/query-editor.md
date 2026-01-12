@@ -124,8 +124,20 @@ The footer bar displays:
 - PPL and SQL require additional plugins for full functionality
 - Autocomplete suggestions depend on index pattern field mappings
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Added PPL Formatter (`Shift+Option+F`), updated PPL grammar to latest version, removed redundant error popover, fixed Enter key behavior when switching query languages
+- **v3.2.0**: Fixed autocomplete stale query issue, improved Tab/Enter key handling for suggestions, made generated query scrollable, refined "Replace query" button placement
+- **v2.18.0** (2024-11-05): Added footer bar to single-line editor, fixed query editor extension ordering, improved PPL autocomplete
+
+## References
+
+### Documentation
+- [Dashboards Query Language (DQL)](https://docs.opensearch.org/3.3/dashboards/dql/): Official DQL documentation
+- [Query Workbench](https://docs.opensearch.org/3.3/dashboards/query-workbench/): Query Workbench documentation
+- [PPL Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/index/): Official PPL documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#10503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10503) | Add PPL Formatter in Query panel |
@@ -138,15 +150,3 @@ The footer bar displays:
 | v2.18.0 | [#8565](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8565) | Adds editor footer to single line editor on focus |
 | v2.18.0 | [#8045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8045) | Fix order of query editor extensions not working |
 | v2.18.0 | [#8087](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8087) | PPL Autocomplete functions, fields, & table suggestion |
-
-## References
-
-- [Dashboards Query Language (DQL)](https://docs.opensearch.org/3.3/dashboards/dql/): Official DQL documentation
-- [Query Workbench](https://docs.opensearch.org/3.3/dashboards/query-workbench/): Query Workbench documentation
-- [PPL Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/index/): Official PPL documentation
-
-## Change History
-
-- **v3.3.0**: Added PPL Formatter (`Shift+Option+F`), updated PPL grammar to latest version, removed redundant error popover, fixed Enter key behavior when switching query languages
-- **v3.2.0**: Fixed autocomplete stale query issue, improved Tab/Enter key handling for suggestions, made generated query scrollable, refined "Replace query" button placement
-- **v2.18.0** (2024-11-05): Added footer bar to single-line editor, fixed query editor extension ordering, improved PPL autocomplete

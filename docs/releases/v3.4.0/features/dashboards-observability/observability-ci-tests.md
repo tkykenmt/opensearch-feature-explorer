@@ -82,18 +82,18 @@ Affected snapshot files:
 - These are maintenance changes with no user-facing impact
 - CI workflows are specific to the dashboards-observability repository
 
-## Related PRs
+## References
 
+### Documentation
+- [dashboards-observability repository](https://github.com/opensearch-project/dashboards-observability)
+- [OpenSearch CI Snapshots](https://ci.opensearch.org/ci/dbc/snapshots/maven/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2501](https://github.com/opensearch-project/dashboards-observability/pull/2501) | Fix typo in checkout step name |
 | [#2526](https://github.com/opensearch-project/dashboards-observability/pull/2526) | Update snapshots and unit tests |
 | [#2528](https://github.com/opensearch-project/dashboards-observability/pull/2528) | Update CI workflows for Integ tests |
-
-## References
-
-- [dashboards-observability repository](https://github.com/opensearch-project/dashboards-observability)
-- [OpenSearch CI Snapshots](https://ci.opensearch.org/ci/dbc/snapshots/maven/)
 
 ## Related Feature Report
 

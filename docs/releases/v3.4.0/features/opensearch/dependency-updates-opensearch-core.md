@@ -87,8 +87,12 @@ The Netty upgrade (PR #19178) is the most significant change:
 - Netty 4.2 is a prerequisite for HTTP/3 but does not enable it in this release
 - Some transitive dependencies may have version conflicts requiring resolution
 
-## Related PRs
+## References
 
+### Documentation
+- [Netty 4.2 Release Notes](https://netty.io/news/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19178](https://github.com/opensearch-project/OpenSearch/pull/19178) | Netty 4.2.4 upgrade |
@@ -108,10 +112,8 @@ The Netty upgrade (PR #19178) is the most significant change:
 | [#19785](https://github.com/opensearch-project/OpenSearch/pull/19785) | github/codeql-action v4 |
 | [#19781](https://github.com/opensearch-project/OpenSearch/pull/19781) | gradle/actions v5 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14804](https://github.com/opensearch-project/OpenSearch/issues/14804): Netty 4.2 upgrade request
-- [Netty 4.2 Release Notes](https://netty.io/news/)
 
 ## Related Feature Report
 

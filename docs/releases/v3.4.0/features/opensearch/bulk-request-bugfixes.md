@@ -87,16 +87,16 @@ No migration required. This is a transparent bug fix that ensures correct behavi
 
 - This fix only affects the deserialization path; the `indices` property is still not explicitly serialized (it's reconstructed from the request items)
 
-## Related PRs
+## References
 
+### Documentation
+- [Bulk API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk/): Official documentation
+- [TransportBulkAction.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/bulk/TransportBulkAction.java): Code showing when serialization occurs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20132](https://github.com/opensearch-project/OpenSearch/pull/20132) | Fixed handling of property index in BulkRequest during deserialization |
-
-## References
-
-- [TransportBulkAction.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/bulk/TransportBulkAction.java): Code showing when serialization occurs
-- [Bulk API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk/): Official documentation
 
 ## Related Feature Report
 

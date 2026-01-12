@@ -174,20 +174,22 @@ POST _plugins/_anomaly_detection/detectors
 - Cold entity queue processing may have different latency characteristics than cached entities
 - Centralized access control requires the security plugin to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
+- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1513](https://github.com/opensearch-project/anomaly-detection/pull/1513) | Support >1 hr intervals |
 | [#1533](https://github.com/opensearch-project/anomaly-detection/pull/1533) | Onboards to centralized resource access control for detectors and forecasters |
 | [#1400](https://github.com/opensearch-project/anomaly-detection/pull/1400) | Original resource permissions implementation (refactored by #1533) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1054](https://github.com/tkykenmt/opensearch-feature-explorer/issues/1054): Anomaly Detection Enhancements tracking issue
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
-- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
 
 ## Related Feature Report
 

@@ -65,19 +65,21 @@ No migration required. The changes are purely UI improvements that take effect i
 - The full list display may result in longer page layouts for roles with many index patterns
 - No pagination or virtual scrolling for very large permission lists
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Defining users and roles](https://docs.opensearch.org/3.2/security/access-control/users-roles/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2254](https://github.com/opensearch-project/security-dashboards-plugin/pull/2254) | Show all index patterns in index permission panel |
 | [#2255](https://github.com/opensearch-project/security-dashboards-plugin/pull/2255) | Add missing index permissions to the list |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1303](https://github.com/opensearch-project/security-dashboards-plugin/issues/1303): Index permissions view abbreviated with no way to expand
 - [Issue #1969](https://github.com/opensearch-project/security-dashboards-plugin/issues/1969): Permissions not displayed in index permissions category
 - [Issue #1891](https://github.com/opensearch-project/security-dashboards-plugin/issues/1891): Related truncation issue
-- [Documentation: Defining users and roles](https://docs.opensearch.org/3.2/security/access-control/users-roles/)
 
 ## Related Feature Report
 

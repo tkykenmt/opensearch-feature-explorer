@@ -73,20 +73,20 @@ GET sample-data-*,sample-rollup/_search
 - The rollup aggregation fix requires OpenSearch core v3.3.0+ with the `ScriptedAvg` class support
 - Mixed rollup/raw index search still requires `plugins.rollup.search.search_source_indices: true`
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Rollups Documentation](https://docs.opensearch.org/3.3/im-plugin/index-rollups/index/)
+- [Index Rollups API](https://docs.opensearch.org/3.3/im-plugin/index-rollups/rollup-api/)
+- [OpenSearch PR #18411](https://github.com/opensearch-project/OpenSearch/pull/18411): Core changes for InternalScriptedMetric support in aggregation reduction
+- [OpenSearch PR #18288](https://github.com/opensearch-project/OpenSearch/pull/18288): Related aggregation changes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1460](https://github.com/opensearch-project/index-management/pull/1460) | Using Scripted Avg Class in AvgAggregationBuilder in place of double |
 | [#1491](https://github.com/opensearch-project/index-management/pull/1491) | Fix the build |
 | [#1473](https://github.com/opensearch-project/index-management/pull/1473) | Dependabot: bump 1password/load-secrets-action from 2 to 3 |
-
-## References
-
-- [OpenSearch PR #18411](https://github.com/opensearch-project/OpenSearch/pull/18411): Core changes for InternalScriptedMetric support in aggregation reduction
-- [OpenSearch PR #18288](https://github.com/opensearch-project/OpenSearch/pull/18288): Related aggregation changes
-- [Index Rollups Documentation](https://docs.opensearch.org/3.3/im-plugin/index-rollups/index/)
-- [Index Rollups API](https://docs.opensearch.org/3.3/im-plugin/index-rollups/rollup-api/)
 
 ## Related Feature Report
 

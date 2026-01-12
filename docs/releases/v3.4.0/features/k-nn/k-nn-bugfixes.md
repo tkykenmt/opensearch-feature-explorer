@@ -109,8 +109,12 @@ sequenceDiagram
 - Memory-optimized search remains unavailable for indices created before OpenSearch 2.17
 - Users must reindex to use memory-optimized search on legacy indices
 
-## Related PRs
+## References
 
+### Documentation
+- [Memory-optimized vectors documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2918](https://github.com/opensearch-project/k-NN/pull/2918) | Block memory optimized search for old indices created before 2.18 |
@@ -119,13 +123,11 @@ sequenceDiagram
 | [#2992](https://github.com/opensearch-project/k-NN/pull/2992) | Fix Faiss IP score to distance calculation |
 | [#2994](https://github.com/opensearch-project/k-NN/pull/2994) | Fix backwards compatibility for disk-based vector search segment merge |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2917](https://github.com/opensearch-project/k-NN/issues/2917): Block using memory optimized search for indices created before 2.17
 - [Issue #2962](https://github.com/opensearch-project/k-NN/issues/2962): Fix different hit counts when memory optimized search is enabled
 - [Issue #2982](https://github.com/opensearch-project/k-NN/issues/2982): Radial kNN search with innerproduct space incorrectly applies min_score filter
 - [Issue #2991](https://github.com/opensearch-project/k-NN/issues/2991): Disk Based BWC Issues for 2.19 -> 3.3 upgrade
-- [Memory-optimized vectors documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
 
 ## Related Feature Report
 

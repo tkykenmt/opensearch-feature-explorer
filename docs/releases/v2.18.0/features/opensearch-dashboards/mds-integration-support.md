@@ -113,19 +113,21 @@ const createReqBody = {
 - Saved objects (visualizations, dashboards) created by integrations may not automatically inherit data source references (see [Issue #2061](https://github.com/opensearch-project/dashboards-observability/issues/2061))
 - Integration assets need to be manually associated with the correct data source
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#8008](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8008) | OpenSearch-Dashboards | Add MDS support for Integration in data source management |
 | [#2051](https://github.com/opensearch-project/dashboards-observability/pull/2051) | dashboards-observability | MDS support in Integrations for observability plugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1440](https://github.com/opensearch-project/dashboards-observability/issues/1440): Original feature request for MDS in Integrations
 - [Issue #2061](https://github.com/opensearch-project/dashboards-observability/issues/2061): Feature request for saved objects assets support
 - [Issue #2159](https://github.com/opensearch-project/dashboards-observability/issues/2159): Bug - Integrations doesn't create objects using selected data source
-- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
 
 ## Related Feature Report
 

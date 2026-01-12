@@ -252,8 +252,18 @@ PUT /_search/pipeline/summarize_pipeline
 - Remote model auto-redeployment is filtered out (auto-deploy on first request is used instead)
 - Local models require explicit deployment before use
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-12): Added remote model auto-redeployment filtering, optional llmQuestion for RAG, search extension output support, query string in input_map, MLToolSpec config field, AWS Textract/Comprehend trusted endpoints
+
+## References
+
+### Documentation
+- [ML inference search response processor documentation](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/ml-inference-search-response/)
+- [Agents and tools documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/)
+- [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#2976](https://github.com/opensearch-project/ml-commons/pull/2976) | Filter out remote model auto redeployment |
@@ -263,17 +273,9 @@ PUT /_search/pipeline/summarize_pipeline
 | v2.18.0 | [#2977](https://github.com/opensearch-project/ml-commons/pull/2977) | Add config field in MLToolSpec for static parameters |
 | v2.18.0 | [#3154](https://github.com/opensearch-project/ml-commons/pull/3154) | Add textract and comprehend url to trusted endpoints |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2897](https://github.com/opensearch-project/ml-commons/issues/2897): Query text in input_map feature request
 - [Issue #2878](https://github.com/opensearch-project/ml-commons/issues/2878): Search extension output feature request
 - [Issue #3067](https://github.com/opensearch-project/ml-commons/issues/3067): Optional llmQuestion feature request
 - [Issue #2836](https://github.com/opensearch-project/ml-commons/issues/2836): Static tool parameters feature request
 - [Issue #2918](https://github.com/opensearch-project/ml-commons/issues/2918): MLToolSpec config field feature request
-- [ML inference search response processor documentation](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/ml-inference-search-response/)
-- [Agents and tools documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/)
-- [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/)
-
-## Change History
-
-- **v2.18.0** (2024-11-12): Added remote model auto-redeployment filtering, optional llmQuestion for RAG, search extension output support, query string in input_map, MLToolSpec config field, AWS Textract/Comprehend trusted endpoints

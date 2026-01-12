@@ -142,8 +142,21 @@ coordinating-1    -         -
 - Coordinating-only nodes still consume resources for query coordination
 - The `master` role is deprecated; use `cluster_manager` instead
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-02-25): Fixed empty array parsing from environment variables for `node.roles` setting
+- **v2.4.0** (2022-11-15): Added `search` node role for dedicated search workloads
+- **v2.3.0** (2022-09-06): Added support for dynamic/custom node roles defined by plugins
+- **v2.0.0** (2022-05-26): Renamed `master` role to `cluster_manager`
+
+## References
+
+### Documentation
+- [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Official documentation
+- [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Cluster architecture guide
+- [CAT Nodes API](https://docs.opensearch.org/3.0/api-reference/cat/cat-nodes/): View node information
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#10625](https://github.com/opensearch-project/OpenSearch/pull/10625) | Fix empty array parsing from environment variables |
@@ -151,16 +164,5 @@ coordinating-1    -         -
 | v2.3.0 | [#3436](https://github.com/opensearch-project/OpenSearch/pull/3436) | Support dynamic node roles |
 | v2.7.0 | [#6331](https://github.com/opensearch-project/OpenSearch/pull/6331) | Fix deprecated master role attachment |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3412](https://github.com/opensearch-project/OpenSearch/issues/3412): Bug report for empty node.roles environment variable
-- [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Official documentation
-- [Creating a Cluster](https://docs.opensearch.org/3.0/tuning-your-cluster/): Cluster architecture guide
-- [CAT Nodes API](https://docs.opensearch.org/3.0/api-reference/cat/cat-nodes/): View node information
-
-## Change History
-
-- **v3.0.0** (2025-02-25): Fixed empty array parsing from environment variables for `node.roles` setting
-- **v2.4.0** (2022-11-15): Added `search` node role for dedicated search workloads
-- **v2.3.0** (2022-09-06): Added support for dynamic/custom node roles defined by plugins
-- **v2.0.0** (2022-05-26): Renamed `master` role to `cluster_manager`

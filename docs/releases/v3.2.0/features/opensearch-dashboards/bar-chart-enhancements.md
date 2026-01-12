@@ -77,17 +77,17 @@ interface BarChartStyleControls {
 - Bar size controls are only available in the Explore plugin's bar chart visualization
 - Manual mode settings are scaled values, not direct pixel measurements
 
-## Related PRs
+## References
 
+### Documentation
+- [Building data visualizations](https://docs.opensearch.org/3.0/dashboards/visualize/viz-index/): OpenSearch visualization documentation
+- [Vega](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Vega visualization documentation
+- [PR #10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152) | Add Bar Size Control Switch for auto/manual bar sizing |
-
-## References
-
-- [PR #10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152): Main implementation
-- [Building data visualizations](https://docs.opensearch.org/3.0/dashboards/visualize/viz-index/): OpenSearch visualization documentation
-- [Vega](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Vega visualization documentation
 
 ## Related Feature Report
 

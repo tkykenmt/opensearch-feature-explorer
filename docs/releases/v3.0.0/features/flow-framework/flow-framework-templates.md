@@ -103,17 +103,17 @@ POST /.plugins-ml-config/_doc/os_text2vega
 - Requires valid AWS credentials (access_key, secret_key, session_token)
 - The text-to-visualization feature is experimental
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |
-
 ## References
 
+### Documentation
 - [Text to visualization documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/text-to-visualization/)
 - [Workflow templates documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
 - [Flow agents documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |
 
 ## Related Feature Report
 

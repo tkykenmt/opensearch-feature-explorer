@@ -68,16 +68,16 @@ Without this fix, OpenSearch Dashboards would display an "Internal Server Error"
 
 None specific to this fix.
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official documentation for data sources
+- [Data Source Permissions](https://docs.opensearch.org/2.18/security/access-control/permissions/#data-source-permissions): Permission configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8118](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8118) | Fix data source permission client wrapper error |
-
-## References
-
-- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official documentation for data sources
-- [Data Source Permissions](https://docs.opensearch.org/2.18/security/access-control/permissions/#data-source-permissions): Permission configuration
 
 ## Related Feature Report
 

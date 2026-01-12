@@ -36,16 +36,16 @@ No migration required. This is a transparent dependency update that maintains ba
 
 None. Gson 2.13.2 is backward compatible with 2.11.0.
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch PR #19290](https://github.com/opensearch-project/OpenSearch/pull/19290): Bump com.google.code.gson:gson from 2.13.1 to 2.13.2 in /plugins/repository-hdfs
+- [Gson 2.13.2 Release](https://github.com/google/gson/releases/tag/gson-parent-2.13.2): Improved JPMS module packaging
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4176](https://github.com/opensearch-project/ml-commons/pull/4176) | Updating gson version to resolve conflict coming from core |
-
-## References
-
-- [OpenSearch PR #19290](https://github.com/opensearch-project/OpenSearch/pull/19290): Bump com.google.code.gson:gson from 2.13.1 to 2.13.2 in /plugins/repository-hdfs
-- [Gson 2.13.2 Release](https://github.com/google/gson/releases/tag/gson-parent-2.13.2): Improved JPMS module packaging
 
 ## Related Feature Report
 

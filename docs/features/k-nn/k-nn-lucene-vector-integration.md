@@ -122,20 +122,22 @@ PUT my-vector-index
 - Search interface not yet migrated to use codec search interface (planned for future)
 - Iterative graph builds during indexing require additional implementation
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation - Lucene KNNVectorsFormat integration for native engines behind cluster setting
+
+## References
+
+### Documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/)
+- [k-NN Vector Field Types](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#1945](https://github.com/opensearch-project/k-NN/pull/1945) | Integrate Lucene Vector field with native engines |
 | v2.17.0 | [#1939](https://github.com/opensearch-project/k-NN/pull/1939) | Restructure mappers for FlatVectorsMapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1853](https://github.com/opensearch-project/k-NN/issues/1853): RFC - Integrating KNNVectorsFormat in Native Vector Search Engine
 - [Issue #1087](https://github.com/opensearch-project/k-NN/issues/1087): Original investigation on KNNVectorsFormat migration
-- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/)
-- [k-NN Vector Field Types](https://docs.opensearch.org/2.17/field-types/supported-field-types/knn-vector/)
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation - Lucene KNNVectorsFormat integration for native engines behind cluster setting

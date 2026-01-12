@@ -113,8 +113,25 @@ PUT _cluster/settings
 - Terms aggregations may have additional document count error due to slice-level `shard_size` application
 - Sorting optimization may have varying performance depending on data layout
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Performance optimization - omit MaxScoreCollector in SimpleTopDocsCollectorContext when sorting by score with concurrent segment search enabled (~10% latency improvement)
+- **v3.3.0** (2025-10-30): Fixed assertion error when using field collapsing with concurrent segment search by removing setShardIndex parameter from CollapseTopFieldDocs.merge()
+- **v3.2.0** (2025-07-31): Optimized segment grouping algorithm using priority queue for better load balancing
+- **v3.0.0** (2025-04-24): **Breaking change** - Concurrent segment search enabled by default in `auto` mode. Default slice count formula: `Math.min(vCPU / 2, 4)`. Setting key renamed from `CONCURRENT_SEGMENT_SEARCH_TARGET_MAX_SLICE_COUNT_KEY` to `CONCURRENT_SEGMENT_SEARCH_MAX_SLICE_COUNT_KEY`. Aggregation workloads may experience increased CPU utilization.
+- **v2.17.0**: Introduced `auto` mode with pluggable `ConcurrentSearchRequestDecider` for aggregation requests
+- **v2.12.0**: GA release of concurrent segment search (disabled by default)
+
+## References
+
+### Documentation
+- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+
+### Blog Posts
+- [Introducing concurrent segment search in OpenSearch](https://opensearch.org/blog/concurrent_segment_search/): Introduction blog post
+- [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19584](https://github.com/opensearch-project/OpenSearch/pull/19584) | Omit maxScoreCollector in SimpleTopDocsCollectorContext when concurrent segment search enabled |
@@ -124,20 +141,7 @@ PUT _cluster/settings
 | v2.17.0 | - | Introduced `auto` mode for aggregation requests |
 | v2.12.0 | - | GA release of concurrent segment search (disabled by default) |
 
-## References
-
-- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+### Issues (Design / RFC)
 - [Issue #7358](https://github.com/opensearch-project/OpenSearch/issues/7358): Original issue discussing slice computation mechanisms
 - [Issue #19051](https://github.com/opensearch-project/OpenSearch/issues/19051): Assertion error with field collapsing
 - [Issue #19111](https://github.com/opensearch-project/OpenSearch/issues/19111): Inconsistent field collapsing results
-- [Introducing concurrent segment search in OpenSearch](https://opensearch.org/blog/concurrent_segment_search/): Introduction blog post
-- [Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance analysis blog
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Performance optimization - omit MaxScoreCollector in SimpleTopDocsCollectorContext when sorting by score with concurrent segment search enabled (~10% latency improvement)
-- **v3.3.0** (2025-10-30): Fixed assertion error when using field collapsing with concurrent segment search by removing setShardIndex parameter from CollapseTopFieldDocs.merge()
-- **v3.2.0** (2025-07-31): Optimized segment grouping algorithm using priority queue for better load balancing
-- **v3.0.0** (2025-04-24): **Breaking change** - Concurrent segment search enabled by default in `auto` mode. Default slice count formula: `Math.min(vCPU / 2, 4)`. Setting key renamed from `CONCURRENT_SEGMENT_SEARCH_TARGET_MAX_SLICE_COUNT_KEY` to `CONCURRENT_SEGMENT_SEARCH_MAX_SLICE_COUNT_KEY`. Aggregation workloads may experience increased CPU utilization.
-- **v2.17.0**: Introduced `auto` mode with pluggable `ConcurrentSearchRequestDecider` for aggregation requests
-- **v2.12.0**: GA release of concurrent segment search (disabled by default)

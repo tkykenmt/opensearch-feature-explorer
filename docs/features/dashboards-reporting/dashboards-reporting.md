@@ -112,8 +112,20 @@ opensearch-reporting-cli \
 - Time range parameters are optional; reports without them use the dashboard's default time range
 - The popover UI requires JavaScript to be enabled
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Security fix for CVE-2025-57810 (jspdf bump), fixed null/undefined datetime handling in CSV reports
+- **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
+- **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting overview
+- [Dashboard Reporting](https://docs.opensearch.org/3.0/reporting/report-dashboard-index/): Reporting using OpenSearch Dashboards
+- [CLI Documentation](https://docs.opensearch.org/3.0/reporting/rep-cli-index/): Reporting using the CLI
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#650](https://github.com/opensearch-project/dashboards-reporting/pull/650) | Bump jspdf to fix CVE-2025-57810 |
@@ -123,17 +135,7 @@ opensearch-reporting-cli \
 | v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |
 | v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #308](https://github.com/opensearch-project/dashboards-reporting/issues/308): Undefined date throws error while creating CSV
 - [Issue #414](https://github.com/opensearch-project/dashboards-reporting/issues/414): Absolute date interval interpreted as relative to "now"
 - [Issue #401](https://github.com/opensearch-project/dashboards-reporting/issues/401): Reporting UI issue
-- [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting overview
-- [Dashboard Reporting](https://docs.opensearch.org/3.0/reporting/report-dashboard-index/): Reporting using OpenSearch Dashboards
-- [CLI Documentation](https://docs.opensearch.org/3.0/reporting/rep-cli-index/): Reporting using the CLI
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Security fix for CVE-2025-57810 (jspdf bump), fixed null/undefined datetime handling in CSV reports
-- **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
-- **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component

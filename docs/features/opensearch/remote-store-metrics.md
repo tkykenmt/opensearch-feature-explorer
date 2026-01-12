@@ -108,19 +108,21 @@ Example response:
 - Requires `cluster.remote_store.pinned_timestamps.enabled` to be `true` for meaningful data
 - Does not include shard-level metrics (use Remote Store Stats API for shard-level data)
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#15611](https://github.com/opensearch-project/OpenSearch/pull/15611) | Add new metric REMOTE_STORE to NodeStats API response |
+- **v2.18.0** (2024-11-05): Initial implementation - added `last_successful_fetch_of_pinned_timestamps` metric to Node Stats API
 
 ## References
 
-- [Issue #15896](https://github.com/opensearch-project/OpenSearch/issues/15896): Original feature request
+### Documentation
 - [Remote Store Stats API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-store-stats-api/): Shard-level remote store statistics
 - [Remote-backed Storage](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/index/): Remote store documentation
 - [Nodes Stats API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-stats/): Node statistics API
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#15611](https://github.com/opensearch-project/OpenSearch/pull/15611) | Add new metric REMOTE_STORE to NodeStats API response |
 
-- **v2.18.0** (2024-11-05): Initial implementation - added `last_successful_fetch_of_pinned_timestamps` metric to Node Stats API
+### Issues (Design / RFC)
+- [Issue #15896](https://github.com/opensearch-project/OpenSearch/issues/15896): Original feature request

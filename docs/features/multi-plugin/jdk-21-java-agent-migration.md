@@ -129,8 +129,18 @@ jobs:
 - **SecurityManager Code**: Legacy permission-based code must be refactored
 - **Third-party Dependencies**: Some libraries may require updates for JDK 21
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-14): Enhanced Java Agent to intercept `newByteChannel` from `FileSystemProvider.class`, improved argument type handling for `Set<OpenOption>`, fixed policy variable expansion
+- **v3.0.0** (2025-05-06): JDK 21 minimum requirement, Java Agent Gradle plugin, SecurityManager phase-out across all plugins
+
+## References
+
+### Documentation
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+- [JDK 24 Project](https://openjdk.org/projects/jdk/24/): SecurityManager permanently disabled
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.1.0 | [#17989](https://github.com/opensearch-project/OpenSearch/pull/17989) | OpenSearch | Enhance Java Agent to intercept newByteChannel from FileSystemProvider |
@@ -156,15 +166,7 @@ jobs:
 | v3.0.0 | [#3551](https://github.com/opensearch-project/security/pull/3551) | security | Java Agent Gradle plugin |
 | v3.0.0 | [#3539](https://github.com/opensearch-project/sql/pull/3539) | sql | Build fix for Java Agent |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10745](https://github.com/opensearch-project/OpenSearch/issues/10745): Set OpenSearch 3.0.0 baseline JDK to JDK-21
 - [Issue #16634](https://github.com/opensearch-project/OpenSearch/issues/16634): META - Replace Java Security Manager
 - [Issue #16753](https://github.com/opensearch-project/OpenSearch/issues/16753): Java Agent implementation tracking
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-- [JDK 24 Project](https://openjdk.org/projects/jdk/24/): SecurityManager permanently disabled
-
-## Change History
-
-- **v3.1.0** (2026-01-14): Enhanced Java Agent to intercept `newByteChannel` from `FileSystemProvider.class`, improved argument type handling for `Set<OpenOption>`, fixed policy variable expansion
-- **v3.0.0** (2025-05-06): JDK 21 minimum requirement, Java Agent Gradle plugin, SecurityManager phase-out across all plugins

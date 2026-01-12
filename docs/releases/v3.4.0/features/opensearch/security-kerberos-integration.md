@@ -76,15 +76,15 @@ No migration required. The Hadoop upgrade is backward compatible. Existing HDFS 
 - Kerberos integration tests require a properly configured Kerberos environment
 - The `keytab` file must be placed in the `config` directory or a subdirectory
 
-## Related PRs
+## References
 
+### Documentation
+- [Kerberos Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/kerberos/): Official OpenSearch Kerberos configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19952](https://github.com/opensearch-project/OpenSearch/pull/19952) | Update Hadoop to 3.4.2 and enable security (Kerberos) integration tests under JDK-24 and above |
-
-## References
-
-- [Kerberos Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/kerberos/): Official OpenSearch Kerberos configuration guide
 
 ## Related Feature Report
 

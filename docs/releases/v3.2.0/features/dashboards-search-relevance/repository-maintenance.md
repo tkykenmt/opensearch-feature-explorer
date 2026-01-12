@@ -58,8 +58,9 @@ The GitHub Actions updates provide:
 - These are infrastructure/maintenance changes with no user-facing feature impact
 - GitHub Actions updates may require workflow file adjustments in forks
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#569](https://github.com/opensearch-project/dashboards-search-relevance/pull/569) | dashboards-search-relevance | Adding @fen-qin and @epugh as maintainers |
@@ -74,8 +75,7 @@ The GitHub Actions updates provide:
 | [#2267](https://github.com/opensearch-project/security/pull/2267) | security | Bump derek-ho/start-opensearch from 6 to 7 |
 | [#2268](https://github.com/opensearch-project/security/pull/2268) | security | Bump stefanzweifel/git-auto-commit-action from 5 to 6 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #562](https://github.com/opensearch-project/dashboards-search-relevance/issues/562): Request for issue templates and codecov
 
 ## Related Feature Report

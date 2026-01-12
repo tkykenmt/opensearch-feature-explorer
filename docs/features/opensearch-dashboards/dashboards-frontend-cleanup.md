@@ -117,8 +117,17 @@ The `newExperience` DataGrid table option was removed. The `DefaultDiscoverTable
 - No automatic migration path for custom plugins
 - Plugins must be updated before upgrading to v3.0.0
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Removed deprecated CssDistFilename exports, withLongNumerals option, @elastic/filesaver dependency, and newExperience Discover table option
+
+## References
+
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
+- [file-saver npm package](https://www.npmjs.com/package/file-saver): Replacement for @elastic/filesaver
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9446) | Remove deprecated CssDistFilename |
@@ -129,13 +138,6 @@ The `newExperience` DataGrid table option was removed. The `DefaultDiscoverTable
 | v2.x | [#7625](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7625) | Deprecate CssDistFilename |
 | v2.x | [#9511](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9511) | Deprecate newExperience table option |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9253](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9253): Planned Breaking Changes for 3.0
 - [Issue #9341](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9341): Remove @elastic/filesaver dependency
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
-- [file-saver npm package](https://www.npmjs.com/package/file-saver): Replacement for @elastic/filesaver
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Removed deprecated CssDistFilename exports, withLongNumerals option, @elastic/filesaver dependency, and newExperience Discover table option

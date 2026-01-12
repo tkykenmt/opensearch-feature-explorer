@@ -124,8 +124,16 @@ For users upgrading from OpenSearch 2.x:
 - Cross-cluster detection requires proper cluster connectivity and permissions
 - The `#local` suffix is internal and should not be used in user configurations
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official OpenSearch anomaly detection docs
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
+
+### Blog Posts
+- [AWS Blog: Analyze AWS WAF logs using Amazon OpenSearch Service](https://aws.amazon.com/blogs/security/analyze-aws-waf-logs-using-amazon-opensearch-service-anomaly-detection-built-on-random-cut-forests/): Blog post for WAF log analysis
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1460](https://github.com/opensearch-project/anomaly-detection/pull/1460) | Add AWS SAM template for WAF log analysis and anomaly detection |
@@ -135,11 +143,7 @@ For users upgrading from OpenSearch 2.x:
 | [#1456](https://github.com/opensearch-project/anomaly-detection/pull/1456) | Add integtest.sh to specifically run integTestRemote task |
 | [#1441](https://github.com/opensearch-project/anomaly-detection/pull/1441) | Adding dual cluster arg to gradle run |
 
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official OpenSearch anomaly detection docs
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
-- [AWS Blog: Analyze AWS WAF logs using Amazon OpenSearch Service](https://aws.amazon.com/blogs/security/analyze-aws-waf-logs-using-amazon-opensearch-service-anomaly-detection-built-on-random-cut-forests/): Blog post for WAF log analysis
+### Issues (Design / RFC)
 - [OpenSearch Issue #3351](https://github.com/opensearch-project/OpenSearch/issues/3351): Breaking changes tracking
 
 ## Related Feature Report

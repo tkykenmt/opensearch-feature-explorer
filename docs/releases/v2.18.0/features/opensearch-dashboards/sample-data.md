@@ -115,17 +115,19 @@ const appLinks: AppLinkSchema[] = [
 - OTEL sample data has no associated dashboard (overviewDashboard is empty)
 - OTEL data requires Observability plugin for full functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Quickstart](https://docs.opensearch.org/2.18/dashboards/quickstart/): Adding sample data
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8291) | Update sample data page UI when useUpdatedUX enabled |
 | [#8587](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8587) | Add support for OTEL sample data - logs, traces and metrics |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8312](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8312): Update Sample Data Page UI for New Updated UX
-- [OpenSearch Dashboards Quickstart](https://docs.opensearch.org/2.18/dashboards/quickstart/): Adding sample data
 
 ## Related Feature Report
 

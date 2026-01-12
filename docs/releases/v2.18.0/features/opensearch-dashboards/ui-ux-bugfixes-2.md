@@ -83,15 +83,15 @@ The getting started cards now use a consistent pattern:
 - The horizontal scrollbar on small screens may not be ideal for all use cases but prevents content overflow
 - Card titles are hidden via CSS rather than removed from the component structure
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8529) | Update the title of header recent menu |
 | [#8554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8554) | Fix new home page small screen display issues |
 | [#8600](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8600) | Fix padding and responsive behavior of page header |
 | [#8614](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8614) | Update content and styling of use case getting started cards |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)

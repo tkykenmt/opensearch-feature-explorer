@@ -129,16 +129,18 @@ This is a non-breaking change. Existing code using `DocWriteRequest` or `GetRequ
 - Resource sharing functionality requires the Security plugin with resource sharing enabled
 - The `type()` method default value is "indices" for backward compatibility
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): A new access control model for OpenSearch
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18269](https://github.com/opensearch-project/OpenSearch/pull/18269) | Create generic DocRequest to better categorize ActionRequests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing (Security plugin)
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): A new access control model for OpenSearch
 
 ## Related Feature Report
 

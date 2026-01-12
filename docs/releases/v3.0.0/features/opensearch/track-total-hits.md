@@ -92,17 +92,21 @@ No migration required. This change ensures correct behavior when `track_total_hi
 - When `track_total_hits: true` is set, queries will not benefit from the Approximation Framework's performance optimizations
 - For large result sets, queries with `track_total_hits: true` may have higher latency
 
-## Related PRs
+## References
 
+### Documentation
+- [Search API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/search/): `track_total_hits` parameter reference
+
+### Blog Posts
+- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Framework overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18017](https://github.com/opensearch-project/OpenSearch/pull/18017) | Skip approximation when `track_total_hits` is set to `true` |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14406](https://github.com/opensearch-project/OpenSearch/issues/14406): Expand ApproximatePointRangeQuery to other numeric types
-- [Search API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/search/): `track_total_hits` parameter reference
-- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Framework overview
 
 ## Related Feature Report
 

@@ -108,19 +108,21 @@ allprojects {
 - Not backward compatible with OpenSearch 2.x builds
 - Plugin must be rebuilt for OpenSearch 3.0
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added Java Agent build configuration for SecurityManager replacement
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting plugin documentation
+- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Phase off SecurityManager usage in favor of Java Agent
+- [PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Custom Gradle plugin for Java Agent
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#1085](https://github.com/opensearch-project/reporting/pull/1085) | Fix build due to phasing off SecurityManager usage in favor of Java Agent |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16634](https://github.com/opensearch-project/OpenSearch/issues/16634): META - Replace Java Security Manager
-- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Phase off SecurityManager usage in favor of Java Agent
-- [PR #17900](https://github.com/opensearch-project/OpenSearch/pull/17900): Custom Gradle plugin for Java Agent
-- [Documentation](https://docs.opensearch.org/3.0/reporting/): Reporting plugin documentation
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added Java Agent build configuration for SecurityManager replacement

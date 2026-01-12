@@ -86,16 +86,16 @@ The Dev Tools modal is accessed via the header icon:
 - The modal covers the entire viewport, hiding the underlying page content
 - When multiple overlay masks exist, closing the Dev Tools modal may affect scroll behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Dev Tools Documentation](https://docs.opensearch.org/2.18/dashboards/dev-tools/index-dev/): Official documentation
+- [Running queries in the Dev Tools console](https://docs.opensearch.org/2.18/dashboards/dev-tools/run-queries/): Query guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#7938](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7938) | Change dev tools to a modal |
-
-## References
-
-- [Dev Tools Documentation](https://docs.opensearch.org/2.18/dashboards/dev-tools/index-dev/): Official documentation
-- [Running queries in the Dev Tools console](https://docs.opensearch.org/2.18/dashboards/dev-tools/run-queries/): Query guide
 
 ## Related Feature Report
 

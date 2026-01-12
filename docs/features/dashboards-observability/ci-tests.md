@@ -97,20 +97,20 @@ Version resolution uses maven-metadata.xml to get the latest snapshot build.
 - Integration tests require Java 21 (Corretto distribution)
 - E2E tests have a 1200-second timeout for Dashboards startup
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Migrated to OpenSearch CI snapshot repository, updated to 3.4.0, added dynamic snapshot version resolution, improved error handling
+
+## References
+
+### Documentation
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [dashboards-observability repository](https://github.com/opensearch-project/dashboards-observability)
+- [OpenSearch CI Snapshots](https://ci.opensearch.org/ci/dbc/snapshots/maven/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#2501](https://github.com/opensearch-project/dashboards-observability/pull/2501) | Fix typo in checkout step name |
 | v3.4.0 | [#2526](https://github.com/opensearch-project/dashboards-observability/pull/2526) | Update snapshots and unit tests |
 | v3.4.0 | [#2528](https://github.com/opensearch-project/dashboards-observability/pull/2528) | Update CI workflows for Integ tests |
-
-## References
-
-- [dashboards-observability repository](https://github.com/opensearch-project/dashboards-observability)
-- [OpenSearch CI Snapshots](https://ci.opensearch.org/ci/dbc/snapshots/maven/)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Migrated to OpenSearch CI snapshot repository, updated to 3.4.0, added dynamic snapshot version resolution, improved error handling

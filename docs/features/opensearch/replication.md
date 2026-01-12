@@ -77,17 +77,17 @@ The resync mechanism is internal to OpenSearch and triggered automatically durin
 - Large resync operations can impact cluster performance during recovery
 - Network bandwidth is consumed during resync between primary and replicas
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16378](https://github.com/opensearch-project/OpenSearch/pull/16378) | Fix array hashCode calculation in ResyncReplicationRequest |
-
-## References
-
-- [Segment replication documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Alternative replication strategy
-- [Cross-cluster replication](https://docs.opensearch.org/latest/tuning-your-cluster/replication-plugin/index/): Replication across clusters
-
 ## Change History
 
 - **v2.18.0** (2024-10-22): Fixed `hashCode()` calculation in `ResyncReplicationRequest` to properly handle array fields using `Arrays.hashCode()`
+
+## References
+
+### Documentation
+- [Segment replication documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Alternative replication strategy
+- [Cross-cluster replication](https://docs.opensearch.org/latest/tuning-your-cluster/replication-plugin/index/): Replication across clusters
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#16378](https://github.com/opensearch-project/OpenSearch/pull/16378) | Fix array hashCode calculation in ResyncReplicationRequest |

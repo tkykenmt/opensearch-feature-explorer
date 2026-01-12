@@ -98,19 +98,21 @@ await http.fetch({
 - If more than 10 data sources are loaded on a single page, server crashes may still occur due to a deprecated `parseUrl` function in the elasticsearch legacy library (tracked in Issue #2220)
 - Query cancellation requires the SQL plugin to be installed and configured
 
-## Related PRs
+## References
 
+### Documentation
+- [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/3.0/dashboards/management/S3-data-source/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9355) | Deletes S3 Jobs in Backend when Original Query is Canceled |
 | [#9430](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9430) | Add mappings for tinyint, smallint, and bigint in S3 dataset type |
 | [#9575](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9575) | Fix potential memory leak in getDirectQueryConnections |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9459](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9459): Node.js v20 Plugin Verification Meta Issue
 - [Issue #2220](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/2220): Elasticsearch legacy client deprecation
-- [Connecting Amazon S3 to OpenSearch](https://docs.opensearch.org/3.0/dashboards/management/S3-data-source/): Official documentation
 
 ## Related Feature Report
 

@@ -79,8 +79,12 @@ Fixed `integTest` not being called during release test workflows.
 - Cache endpoint deprecation warnings will appear in logs when using deprecated methods
 - FIPS compatibility requires Bouncy Castle 2.x FIPS libraries
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554): Apache Commons IO vulnerability
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4667](https://github.com/opensearch-project/security/pull/4667) | Move @cliu123 to emeritus status |
@@ -94,11 +98,9 @@ Fixed `integTest` not being called during release test workflows.
 | [#4831](https://github.com/opensearch-project/security/pull/4831) | Fix bulk index requests in BWC tests |
 | [#4792](https://github.com/opensearch-project/security/pull/4792) | Fix CVE-2024-47554 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4728](https://github.com/opensearch-project/security/issues/4728): ASN1 refactoring for FIPS support
 - [Issue #4790](https://github.com/opensearch-project/security/issues/4790): CVE-2024-47554 tracking
-- [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554): Apache Commons IO vulnerability
 
 ## Related Feature Report
 

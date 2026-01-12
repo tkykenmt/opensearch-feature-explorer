@@ -114,21 +114,23 @@ GET _cat/shards?v&h=index,shard,prirep,state,docs,store,node
 - Cluster-level permissions cannot be scoped to specific indexes
 - Internal permissions are not configurable by users
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Changed `CatShardsAction` permission from `cluster:monitor/shards` to `internal:monitor/shards`, restoring pre-2.17 behavior for non-admin users
+- **v2.17.0** (2024-09-17): Introduced `CatShardsAction` with `cluster:monitor/shards` permission for pagination and cancellation support
+
+## References
+
+### Documentation
+- [CAT shards API](https://docs.opensearch.org/3.0/api-reference/cat/cat-shards/): Official documentation
+- [Permissions](https://docs.opensearch.org/3.0/security/access-control/permissions/): Security permissions reference
+- [Default action groups](https://docs.opensearch.org/3.0/security/access-control/default-action-groups/): Predefined permission groups
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17203](https://github.com/opensearch-project/OpenSearch/pull/17203) | Changed CatShardsAction to internal to allow non-admin users |
 | v3.0.0 | [#18185](https://github.com/opensearch-project/OpenSearch/pull/18185) | Adding new permission for _cat/shard action to 3.0 release notes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17199](https://github.com/opensearch-project/OpenSearch/issues/17199): Bug report - Make CatShardsAction internal
-- [CAT shards API](https://docs.opensearch.org/3.0/api-reference/cat/cat-shards/): Official documentation
-- [Permissions](https://docs.opensearch.org/3.0/security/access-control/permissions/): Security permissions reference
-- [Default action groups](https://docs.opensearch.org/3.0/security/access-control/default-action-groups/): Predefined permission groups
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Changed `CatShardsAction` permission from `cluster:monitor/shards` to `internal:monitor/shards`, restoring pre-2.17 behavior for non-admin users
-- **v2.17.0** (2024-09-17): Introduced `CatShardsAction` with `cluster:monitor/shards` permission for pagination and cancellation support

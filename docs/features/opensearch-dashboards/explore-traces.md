@@ -216,8 +216,20 @@ POST .kibana/_doc/correlations:trace-logs-1
 - Span status filter state is stored in session storage and resets on browser close
 - Root span detection falls back to earliest span if no span without parent is found
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-03-18): Redesigned Logs tab with expandable rows and code block message display, accordion-based dataset grouping, support for multiple log datasets, added span status filters (Error, OK, Unset), improved page header to show root span service/operation, copyable trace ID badge, scrollbar fixes, removed duplicate service.name column
+- **v3.3.0** (2026-03-18): Initial implementation with trace charts, log correlation, timeline waterfall visualization, external datasource support, configurable default columns, and OTEL schema support
+
+## References
+
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
+- [Simple Schema for Observability](https://docs.opensearch.org/3.0/observing-your-data/ss4o/): SS4O schema definitions
+- [Observability Overview](https://docs.opensearch.org/3.0/observing-your-data/): OpenSearch observability features
+- [OpenTelemetry Protocol](https://opentelemetry.io/docs/specs/otel/): OTEL specification
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Redesigned logs tab with accordion and expandable rows |
@@ -233,15 +245,3 @@ POST .kibana/_doc/correlations:trace-logs-1
 | v3.3.0 | [#10418](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10418) | Trace Details: Support external datasets |
 | v3.3.0 | [#10431](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10431) | Switch primary schema for trace details, disable service map |
 | v3.3.0 | [#10642](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10642) | Add Timeline waterfall bars column to SpanDetailTableHierarchy |
-
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
-- [Simple Schema for Observability](https://docs.opensearch.org/3.0/observing-your-data/ss4o/): SS4O schema definitions
-- [Observability Overview](https://docs.opensearch.org/3.0/observing-your-data/): OpenSearch observability features
-- [OpenTelemetry Protocol](https://opentelemetry.io/docs/specs/otel/): OTEL specification
-
-## Change History
-
-- **v3.4.0** (2026-03-18): Redesigned Logs tab with expandable rows and code block message display, accordion-based dataset grouping, support for multiple log datasets, added span status filters (Error, OK, Unset), improved page header to show root span service/operation, copyable trace ID badge, scrollbar fixes, removed duplicate service.name column
-- **v3.3.0** (2026-03-18): Initial implementation with trace charts, log correlation, timeline waterfall visualization, external datasource support, configurable default columns, and OTEL schema support

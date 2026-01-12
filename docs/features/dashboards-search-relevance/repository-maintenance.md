@@ -70,8 +70,18 @@ Keeping GitHub Actions dependencies updated ensures:
 - Coverage thresholds may need adjustment per repository
 - GitHub Actions updates may introduce breaking changes requiring workflow adjustments
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2026-01): Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps
+
+## References
+
+### Documentation
+- [Codecov Documentation](https://docs.codecov.com/)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [OpenSearch Maintainer Guidelines](https://github.com/opensearch-project/.github/blob/main/MAINTAINERS.md)
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.2.0 | [#569](https://github.com/opensearch-project/dashboards-search-relevance/pull/569) | dashboards-search-relevance | Adding new maintainers |
@@ -79,13 +89,3 @@ Keeping GitHub Actions dependencies updated ensures:
 | v3.2.0 | [#601](https://github.com/opensearch-project/dashboards-search-relevance/pull/601) | dashboards-search-relevance | Add issue template and codecov |
 | v3.2.0 | [#2260](https://github.com/opensearch-project/security/pull/2260) | security | Bump actions/checkout |
 | v3.2.0 | [#2263](https://github.com/opensearch-project/security/pull/2263) | security | Bump codecov/codecov-action |
-
-## References
-
-- [OpenSearch Maintainer Guidelines](https://github.com/opensearch-project/.github/blob/main/MAINTAINERS.md)
-- [Codecov Documentation](https://docs.codecov.com/)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-
-## Change History
-
-- **v3.2.0** (2026-01): Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps

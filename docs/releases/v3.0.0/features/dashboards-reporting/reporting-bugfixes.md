@@ -60,19 +60,21 @@ Time Range: Aug 1, 2024 00:00:00 to Aug 15, 2024 23:59:59
 - These fixes are specific to the OpenSearch Dashboards Reporting plugin
 - The date range fix applies to new report definitions; existing definitions may need to be recreated
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/reporting/report-dashboard-index/): Reporting using OpenSearch Dashboards
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation |
 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |
 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #414](https://github.com/opensearch-project/dashboards-reporting/issues/414): Absolute date interval interpreted as relative to "now"
 - [Issue #401](https://github.com/opensearch-project/dashboards-reporting/issues/401): Reporting UI issue (popover positioning)
-- [Documentation](https://docs.opensearch.org/3.0/reporting/report-dashboard-index/): Reporting using OpenSearch Dashboards
 
 ## Related Feature Report
 

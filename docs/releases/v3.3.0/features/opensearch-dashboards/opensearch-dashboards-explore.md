@@ -133,8 +133,16 @@ explorePlugin.queryPanelActionsRegistry.register({
 - Custom facet field configuration is not yet available
 - Query panel actions registry is primarily for internal plugin use
 
-## Related PRs
+## References
 
+### Documentation
+- [Explore Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/explore/README.md): Plugin documentation
+- [OpenSearch Dashboards Documentation](https://docs.opensearch.org/latest/dashboards/): Official documentation
+
+### Blog Posts
+- [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/): Official release announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10362](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10362) | Introduce facet filter |
@@ -153,12 +161,6 @@ explorePlugin.queryPanelActionsRegistry.register({
 | [#10370](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10370) | Allow Refresh to run query |
 | [#10388](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10388) | Preserve active tab on save/load |
 | [#10391](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10391) | Remove Explore from Patterns tab |
-
-## References
-
-- [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/): Official release announcement
-- [Explore Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/explore/README.md): Plugin documentation
-- [OpenSearch Dashboards Documentation](https://docs.opensearch.org/latest/dashboards/): Official documentation
 
 ## Related Feature Report
 

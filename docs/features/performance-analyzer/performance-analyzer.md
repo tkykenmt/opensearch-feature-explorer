@@ -111,8 +111,22 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 - Does not support client or server authentication for requests (only encryption in transit)
 - RCA framework requires separate enablement
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Build configuration update - restore Java 21 minimum compatibility, remove Java 24 from CI matrix, simplify build.gradle version selection
+- **v3.3.0** (2026-01-11): Transport channel wrapper improvements - delegate getProfileName(), getChannelType(), getVersion(), and get() to wrapped channel; removed getInnerChannel() method for better security plugin compatibility
+- **v3.2.0** (2025-07-18): Build infrastructure update - SpotBugs 6.2.2, Checkstyle 10.26.1; Removed CVE-2025-27820 workaround
+- **v2.17.0** (2024-09-17): Added RTFCacheConfigMetricsCollector for cache configuration telemetry; Updated PA Commons dependency to 1.6.0
+
+## References
+
+### Documentation
+- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
+- [RCA Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/rca/index/): Root cause analysis
+- [Performance Analyzer Repository](https://github.com/opensearch-project/performance-analyzer): Source code
+- [PA Commons Repository](https://github.com/opensearch-project/performance-analyzer-commons): Commons library
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |
@@ -121,17 +135,3 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 | v3.2.0 | [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |
 | v2.17.0 | [#690](https://github.com/opensearch-project/performance-analyzer/pull/690) | Added CacheConfig Telemetry collectors |
 | v2.17.0 | [#712](https://github.com/opensearch-project/performance-analyzer/pull/712) | Bump PA to use 1.6.0 PA commons lib |
-
-## References
-
-- [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
-- [Performance Analyzer Repository](https://github.com/opensearch-project/performance-analyzer): Source code
-- [PA Commons Repository](https://github.com/opensearch-project/performance-analyzer-commons): Commons library
-- [RCA Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/rca/index/): Root cause analysis
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Build configuration update - restore Java 21 minimum compatibility, remove Java 24 from CI matrix, simplify build.gradle version selection
-- **v3.3.0** (2026-01-11): Transport channel wrapper improvements - delegate getProfileName(), getChannelType(), getVersion(), and get() to wrapped channel; removed getInnerChannel() method for better security plugin compatibility
-- **v3.2.0** (2025-07-18): Build infrastructure update - SpotBugs 6.2.2, Checkstyle 10.26.1; Removed CVE-2025-27820 workaround
-- **v2.17.0** (2024-09-17): Added RTFCacheConfigMetricsCollector for cache configuration telemetry; Updated PA Commons dependency to 1.6.0

@@ -97,17 +97,19 @@ New server-side routes added to `query_enhancements` plugin:
 - **PPL queries**: Limited support - only works for remote indexes that have their mapping stored in the local cluster
 - **Authentication**: Remote cluster authentication must be configured at the OpenSearch level
 
-## Related PRs
+## References
 
+### Documentation
+- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official OpenSearch CCS documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9566](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9566) | Show cross cluster connections in Data Sources and Workspaces page |
 | [#9660](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9660) | Show cross cluster connections in Index Pattern and Discover Page |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9578](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9578): Enhancement request for Cross-Cluster Search support
-- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official OpenSearch CCS documentation
 
 ## Related Feature Report
 

@@ -82,17 +82,19 @@ If you have tests or code that uses `batch_size` as a Bulk API parameter:
 - This is a test infrastructure change only; no user-facing functionality is affected
 - The `batch_size` parameter in Bulk API was deprecated in favor of processor-level configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/batch-ingestion/): Official docs
+- [Sparse Encoding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/sparse-encoding/): Processor configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#852](https://github.com/opensearch-project/neural-search/pull/852) | Remove batch_size of bulk API from tests & refactor BWC version check |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Make batch ingestion automatic, not a parameter on _bulk
-- [Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/batch-ingestion/): Official docs
-- [Sparse Encoding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/sparse-encoding/): Processor configuration
 
 ## Related Feature Report
 

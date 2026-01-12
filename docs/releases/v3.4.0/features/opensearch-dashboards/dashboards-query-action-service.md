@@ -158,17 +158,17 @@ const CreateMonitorFlyout: React.FC<FlyoutComponentProps> = ({
 - Only one flyout can be open at a time
 - Dependencies are not memoized to ensure fresh editor content is always passed
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Panel Actions Documentation](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/docs/plugins/explore/query-panel-actions.md): Official API documentation
+- [PR #10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849): Main implementation
+- [Explore Plugin Components Architecture](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/docs/plugins/explore/explore-plugin-components.md): Comprehensive architecture guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849) | Enhance query action service to allow flyout registration |
-
-## References
-
-- [PR #10849](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10849): Main implementation
-- [Query Panel Actions Documentation](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/docs/plugins/explore/query-panel-actions.md): Official API documentation
-- [Explore Plugin Components Architecture](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/docs/plugins/explore/explore-plugin-components.md): Comprehensive architecture guide
 
 ## Related Feature Report
 

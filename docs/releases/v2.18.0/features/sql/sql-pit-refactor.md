@@ -142,17 +142,17 @@ POST _plugins/_sql
 - In case of cluster or node failure, all PIT data is lost
 - PIT-based pagination requires additional API calls to create/delete PIT contexts
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#2981](https://github.com/opensearch-project/sql/pull/2981) | Add missing refactoring of Scroll to PIT API calls for Joins and Pagination query |
-
 ## References
 
+### Documentation
 - [Point in Time Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/): Official PIT documentation
 - [PIT in SQL](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/#pit-in-sql): SQL-specific PIT usage
 - [SQL Pagination API](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/#paginating-results): Pagination documentation
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#2981](https://github.com/opensearch-project/sql/pull/2981) | Add missing refactoring of Scroll to PIT API calls for Joins and Pagination query |
 
 ## Related Feature Report
 

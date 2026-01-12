@@ -124,20 +124,24 @@ vis_type_timeseries.enabled: true
 - Hidden axis position only available for time series with separate axis
 - Some input fields use legacy HTML inputs due to type compatibility issues with EUI components
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-29): Added hidden axis option, per-axis scale setting, compressed UI input fields ([#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504))
+- **v2.14.0**: Added multi-data source support for TSVB visualizations
+
+## References
+
+### Documentation
+- [TSVB Documentation](https://docs.opensearch.org/latest/dashboards/visualize/tsvb/): Official documentation
+
+### Blog Posts
+- [Visualizing data from multiple data sources](https://opensearch.org/blog/vega-tsvb-mds-visualizations/): Blog post on TSVB with MDS
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504) | Allow hiding axis, per-axis scale, compressed input fields |
 | v2.14.0 | - | Multi-data source support introduced |
 
-## References
-
-- [TSVB Documentation](https://docs.opensearch.org/latest/dashboards/visualize/tsvb/): Official documentation
+### Issues (Design / RFC)
 - [Issue #1929](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1929): Axis scale override bug
-- [Visualizing data from multiple data sources](https://opensearch.org/blog/vega-tsvb-mds-visualizations/): Blog post on TSVB with MDS
-
-## Change History
-
-- **v2.18.0** (2024-10-29): Added hidden axis option, per-axis scale setting, compressed UI input fields ([#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504))
-- **v2.14.0**: Added multi-data source support for TSVB visualizations

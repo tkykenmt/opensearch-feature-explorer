@@ -111,22 +111,24 @@ POST /_plugins/_ml/agents/{agent_id}/_execute
 - Requires thorough tool descriptions for optimal LLM decision-making
 - DeepSeek-R1 on Bedrock requires custom `executor_system_prompt` due to lack of native function calling
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-10): Added comprehensive unit test and integration test coverage
+- **v3.0.0**: Initial experimental release of PlanExecuteReflect Agent
+
+## References
+
+### Documentation
+- [Plan-execute-reflect agents documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
+- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
+- [Building a plan-execute-reflect agent tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/build-plan-execute-reflect-agent/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#3778](https://github.com/opensearch-project/ml-commons/pull/3778) | Adding test cases for PlanExecuteReflect Agent |
 | v3.0.0 | [#3716](https://github.com/opensearch-project/ml-commons/pull/3716) | Initial PlanExecuteReflect Agent implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3750](https://github.com/opensearch-project/ml-commons/issues/3750): Test coverage request
 - [Issue #3745](https://github.com/opensearch-project/ml-commons/issues/3745): Feature tracking issue
-- [Plan-execute-reflect agents documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
-- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
-- [Building a plan-execute-reflect agent tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/build-plan-execute-reflect-agent/)
-
-## Change History
-
-- **v3.1.0** (2026-01-10): Added comprehensive unit test and integration test coverage
-- **v3.0.0**: Initial experimental release of PlanExecuteReflect Agent

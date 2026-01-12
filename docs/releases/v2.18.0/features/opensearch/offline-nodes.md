@@ -110,14 +110,14 @@ This is an experimental feature gated behind a feature flag. To enable:
 - **No built-in queue**: Users must implement their own task queue backend (system index, Kafka, etc.)
 - **Remote Store required**: Offline nodes are designed for Remote Store enabled clusters
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#13574](https://github.com/opensearch-project/OpenSearch/pull/13574) | Adds offline-tasks library containing various interfaces for Offline Background Tasks |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13575](https://github.com/opensearch-project/OpenSearch/issues/13575): Add a new library containing required abstractions to run Offline Background Tasks
 - [Issue #13554](https://github.com/opensearch-project/OpenSearch/issues/13554): Design Proposal - Offline Background Tasks
 - [Issue #12361](https://github.com/opensearch-project/OpenSearch/issues/12361): RFC - Offline Background Tasks

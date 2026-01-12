@@ -145,23 +145,25 @@ GET /test_index/_search
 - Complex regex patterns may exceed `max_determinized_states` limit, causing `TooComplexToDeterminizeException`
 - Regex queries can be resource-intensive; consider using `search.allow_expensive_queries` setting
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025): Fixed field alias support for regex in query_string, restored COMPLEMENT flag backward compatibility, fixed TooComplexToDeterminizeException propagation
+
+## References
+
+### Documentation
+- [Query String Documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/): Official query_string docs
+- [Regular Expression Syntax](https://docs.opensearch.org/3.0/query-dsl/regex-syntax/): Regex syntax reference
+- [Regexp Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/regexp/): Official regexp query docs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18215](https://github.com/opensearch-project/OpenSearch/pull/18215) | Fix regex query from query string query to work with field alias |
 | v3.2.0 | [#18640](https://github.com/opensearch-project/OpenSearch/pull/18640) | Fix backward compatibility regression with COMPLEMENT for Regexp queries |
 | v3.2.0 | [#18883](https://github.com/opensearch-project/OpenSearch/pull/18883) | Propagate TooComplexToDeterminizeException in query_string regex queries |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18214](https://github.com/opensearch-project/OpenSearch/issues/18214): Regex query doesn't support field alias
 - [Issue #18397](https://github.com/opensearch-project/OpenSearch/issues/18397): COMPLEMENT does not work in Regexp queries
 - [Issue #18733](https://github.com/opensearch-project/OpenSearch/issues/18733): query_string behavior using regex when shard failures occur
-- [Query String Documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/): Official query_string docs
-- [Regular Expression Syntax](https://docs.opensearch.org/3.0/query-dsl/regex-syntax/): Regex syntax reference
-- [Regexp Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/regexp/): Official regexp query docs
-
-## Change History
-
-- **v3.2.0** (2025): Fixed field alias support for regex in query_string, restored COMPLEMENT flag backward compatibility, fixed TooComplexToDeterminizeException propagation

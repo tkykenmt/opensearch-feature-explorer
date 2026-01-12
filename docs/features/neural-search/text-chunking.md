@@ -175,21 +175,23 @@ PUT _ingest/pipeline/char-chunking-pipeline
 - Nested field paths must use JSON object notation, not dot notation
 - The `fixed_char_length` algorithm's `overlap_rate` is limited to 0-0.5 range
 
-## Related PRs
+## Change History
 
+- **v3.1.0**: Added `fixed_char_length` algorithm for character-based chunking, beneficial for non-space-delimited languages
+- **v2.18.0** (2024-10-29): Added `ignore_missing` parameter to skip missing fields during processing
+
+## References
+
+### Documentation
+- [Text Chunking Processor Documentation](https://docs.opensearch.org/latest/ingest-pipelines/processors/text-chunking/): Official documentation
+- [Text Chunking Guide](https://docs.opensearch.org/latest/search-plugins/text-chunking/): Usage guide for semantic search
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#1342](https://github.com/opensearch-project/neural-search/pull/1342) | Add FixedCharLengthChunker for character length-based chunking |
 | v2.18.0 | [#907](https://github.com/opensearch-project/neural-search/pull/907) | Add ignore_missing field to text chunking processors |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #906](https://github.com/opensearch-project/neural-search/issues/906): Feature request for ignore_missing field
 - [Issue #1261](https://github.com/opensearch-project/neural-search/issues/1261): Proposal for RecursiveCharacterTextSplitter
-- [Text Chunking Processor Documentation](https://docs.opensearch.org/latest/ingest-pipelines/processors/text-chunking/): Official documentation
-- [Text Chunking Guide](https://docs.opensearch.org/latest/search-plugins/text-chunking/): Usage guide for semantic search
-
-## Change History
-
-- **v3.1.0**: Added `fixed_char_length` algorithm for character-based chunking, beneficial for non-space-delimited languages
-- **v2.18.0** (2024-10-29): Added `ignore_missing` parameter to skip missing fields during processing

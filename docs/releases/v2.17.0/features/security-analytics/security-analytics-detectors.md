@@ -93,18 +93,18 @@ The response now includes the complete trigger configuration, enabling UI compon
 - The trigger information is only included when fetching individual detectors, not in bulk search operations
 - Trigger actions require proper notification channel configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Detector APIs Documentation](https://docs.opensearch.org/2.17/security-analytics/api-tools/detector-api/)
+- [Creating Detectors](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/detectors-config/)
+- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1226](https://github.com/opensearch-project/security-analytics/pull/1226) | Added triggers in getDetectors API response |
 | [#1212](https://github.com/opensearch-project/security-analytics/pull/1212) | Secure rest tests for threat intel monitor APIs |
-
-## References
-
-- [Detector APIs Documentation](https://docs.opensearch.org/2.17/security-analytics/api-tools/detector-api/)
-- [Creating Detectors](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/detectors-config/)
-- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/)
 
 ## Related Feature Report
 

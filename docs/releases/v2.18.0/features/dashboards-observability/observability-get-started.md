@@ -109,17 +109,19 @@ graph TB
 - Telemetry source options vary by signal type
 - AWS deployment option only available for OpenTelemetry workflows
 
-## Related PRs
+## References
 
+### Documentation
+- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2194](https://github.com/opensearch-project/dashboards-observability/pull/2194) | GettingStarted Rework - major restructure |
 | [#2205](https://github.com/opensearch-project/dashboards-observability/pull/2205) | GettingStarted Fit and Finish - UI polish |
 | [#2200](https://github.com/opensearch-project/dashboards-observability/pull/2200) | Auto trigger schema setup |
 
-## References
-
-- [Observability Documentation](https://docs.opensearch.org/2.18/observing-your-data/)
+### Issues (Design / RFC)
 - [GitHub Issue #564](https://github.com/tkykenmt/opensearch-feature-explorer/issues/564): Enhancement tracking
 
 ## Related Feature Report

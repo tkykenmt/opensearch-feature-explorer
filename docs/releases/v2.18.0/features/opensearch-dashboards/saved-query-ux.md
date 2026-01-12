@@ -110,18 +110,18 @@ data.savedQueriesNewUI.enabled: true
 - Sample queries are limited to 5 displayed on the No Results page
 - The new UI requires query enhancements to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Discover Documentation](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official Discover documentation
+- [PR #8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469): Main implementation of new saved query UI
+- [PR #8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616): Sample queries on no results page
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469) | Enhances the saved query UX with flyout-based interface |
 | [#8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616) | Adds sample queries and saved queries to Discover no results page |
-
-## References
-
-- [PR #8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469): Main implementation of new saved query UI
-- [PR #8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616): Sample queries on no results page
-- [Discover Documentation](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official Discover documentation
 
 ## Related Feature Report
 

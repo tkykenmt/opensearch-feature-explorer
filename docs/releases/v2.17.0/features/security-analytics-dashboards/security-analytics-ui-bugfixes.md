@@ -70,8 +70,13 @@ This change avoids importing the entire `common` module which includes `kuery.js
 - These fixes are specific to the Security Analytics Dashboards plugin UI
 - Some fixes are workarounds for upstream OpenSearch Dashboards module compatibility issues
 
-## Related PRs
+## References
 
+### Documentation
+- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/): Official documentation
+- [Setting up Security Analytics](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/index/): Configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1093](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1093) | Update nav category and workspaceAvailability |
@@ -81,11 +86,6 @@ This change avoids importing the entire `common` module which includes `kuery.js
 | [#1136](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1136) | Made import more specific to avoid incorrect modules |
 | [#1144](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1144) | Remove import causing webpack error |
 | [#1149](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1149) | Pass through URL state and params |
-
-## References
-
-- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/): Official documentation
-- [Setting up Security Analytics](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/index/): Configuration guide
 
 ## Related Feature Report
 

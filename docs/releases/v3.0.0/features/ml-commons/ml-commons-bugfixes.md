@@ -127,8 +127,17 @@ POST /_plugins/_ml/agents/<agent_id>/_execute?async=true
 - Plan-Execute-Reflect agent is experimental
 - MCP tools can only be used with conversational or plan-execute-reflect agent types
 
-## Related PRs
+## References
 
+### Documentation
+- [MCP Server APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/index/)
+- [Using MCP Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
+- [Plan-Execute-Reflect Agent](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
+
+### Blog Posts
+- [Introducing MCP in OpenSearch Blog](https://opensearch.org/blog/introducing-mcp-in-opensearch/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#411](https://github.com/opensearch-project/ml-commons/pull/411) | Fix data source not compatible with prerelease |
@@ -161,12 +170,7 @@ POST /_plugins/_ml/agents/<agent_id>/_execute?async=true
 | [#3810](https://github.com/opensearch-project/ml-commons/pull/3810) | Support customized message endpoint and addressing comments |
 | [#3814](https://github.com/opensearch-project/ml-commons/pull/3814) | Excluding circuit breaker for Agent |
 
-## References
-
-- [MCP Server APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/index/)
-- [Using MCP Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
-- [Introducing MCP in OpenSearch Blog](https://opensearch.org/blog/introducing-mcp-in-opensearch/)
-- [Plan-Execute-Reflect Agent](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
+### Issues (Design / RFC)
 - [Issue #3762](https://github.com/opensearch-project/ml-commons/issues/3762): Async agent execution request
 - [Issue #3660](https://github.com/opensearch-project/ml-commons/issues/3660): MCP onboarding request
 - [Issue #3182](https://github.com/opensearch-project/ml-commons/issues/3182): CatIndexTool migration request

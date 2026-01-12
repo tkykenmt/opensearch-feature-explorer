@@ -173,23 +173,25 @@ GET /my-sparse-index/_search
 - Two-phase optimization requires search pipeline configuration
 - Cannot specify both `model_id` and `analyzer` in the same query (v3.1.0+)
 
-## Related PRs
+## Change History
 
+- **v3.1.0**: Added validation to prevent specifying both model_id and analyzer simultaneously
+- **v3.0.0** (2025-03-11): Added analyzer-based neural sparse query support, enabling tokenization without ML Commons models
+- **v2.11.0**: Initial implementation of neural sparse query with model-based and raw token support
+
+## References
+
+### Documentation
+- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
+- [Neural Sparse Search Guide](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
+- [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#1359](https://github.com/opensearch-project/neural-search/pull/1359) | Validate model_id and analyzer mutual exclusivity |
 | v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |
 | v2.11.0 | - | Initial neural sparse query implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1052](https://github.com/opensearch-project/neural-search/issues/1052): RFC for analyzer-based neural sparse query
-- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
-- [Neural Sparse Search Guide](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
-- [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
-
-## Change History
-
-- **v3.1.0**: Added validation to prevent specifying both model_id and analyzer simultaneously
-- **v3.0.0** (2025-03-11): Added analyzer-based neural sparse query support, enabling tokenization without ML Commons models
-- **v2.11.0**: Initial implementation of neural sparse query with model-based and raw token support

@@ -79,15 +79,15 @@ The previous approach of manually copying all fields was:
 - The `toBuilder()` method creates a shallow copy of all configuration values
 - Mutable objects within the configuration are shared between the original and the copy
 
-## Related PRs
+## References
 
+### Documentation
+- [opensearch-storage-encryption PR #39](https://github.com/opensearch-project/opensearch-storage-encryption/pull/39#discussion_r2257070134): Original discussion that motivated this change
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19054](https://github.com/opensearch-project/OpenSearch/pull/19054) | Add toBuilder() method in EngineConfig |
-
-## References
-
-- [opensearch-storage-encryption PR #39](https://github.com/opensearch-project/opensearch-storage-encryption/pull/39#discussion_r2257070134): Original discussion that motivated this change
 
 ## Related Feature Report
 

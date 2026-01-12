@@ -59,16 +59,16 @@ source=my_index | stats count() by a.keyword
 - The fix only affects the `constructTableInfo` method used for OpenSearch indexes
 - S3/Spark data sources use a separate code path (`constructTableInfoByPPLResultForSpark`) which was not affected
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): Official PPL tool documentation
+- [Multi-field Mappings](https://docs.opensearch.org/3.0/field-types/mapping-parameters/fields/): OpenSearch fields mapping parameter
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#581](https://github.com/opensearch-project/skills/pull/581) | Fix fields bug in PPL tool |
-
-## References
-
-- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): Official PPL tool documentation
-- [Multi-field Mappings](https://docs.opensearch.org/3.0/field-types/mapping-parameters/fields/): OpenSearch fields mapping parameter
 
 ## Related Feature Report
 

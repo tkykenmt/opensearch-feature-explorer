@@ -95,17 +95,17 @@ No migration required. This is a new capability that can be used immediately aft
 - Queue sizes cannot be modified dynamically (only thread counts)
 - Changes are applied per-node; cluster-wide settings propagate to all nodes
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT Thread Pool API](https://docs.opensearch.org/2.18/api-reference/cat/cat-thread-pool/): Monitor thread pool status
+- [Nodes Info API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-info/): View thread pool configuration
+- [PR #16236](https://github.com/opensearch-project/OpenSearch/pull/16236): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16236](https://github.com/opensearch-project/OpenSearch/pull/16236) | Add support to dynamically resize threadpools size |
-
-## References
-
-- [PR #16236](https://github.com/opensearch-project/OpenSearch/pull/16236): Main implementation
-- [CAT Thread Pool API](https://docs.opensearch.org/2.18/api-reference/cat/cat-thread-pool/): Monitor thread pool status
-- [Nodes Info API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-info/): View thread pool configuration
 
 ## Related Feature Report
 

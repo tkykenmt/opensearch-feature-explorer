@@ -87,8 +87,24 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 - Some features require specific OpenSearch Dashboards versions for full compatibility
 - Workspace integration requires proper configuration of workspace availability settings
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-12): Comprehensive UX improvements including navigation menu restructuring for Analytics (All) use case, standardized UI spacing and typography (H3 titles, 16px padding), compressed search bars and filters, context-aware page titles, improved button placement with bulk delete and plus icons, tabs moved to top of Alerts/Findings pages, HOURS option for source refresh interval
+- **v2.18.0** (2024-11-12): Findings page stability fixes including crash prevention when custom rules are deleted and correct severity display for multi-rule findings; Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
+- **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
+- **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements
+
+## References
+
+### Documentation
+- [About Security Analytics](https://docs.opensearch.org/2.18/security-analytics/): Overview of Security Analytics
+- [Setting up Security Analytics](https://docs.opensearch.org/2.18/security-analytics/sec-analytics-config/index/): Configuration guide
+- [Using Security Analytics](https://docs.opensearch.org/2.18/security-analytics/usage/index/): Usage documentation
+- [OpenSearch Security for Security Analytics](https://docs.opensearch.org/2.18/security-analytics/security/): Security configuration
+- [Configuring and using multiple data sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Multi-data source configuration
+- [security-analytics-dashboards-plugin](https://github.com/opensearch-project/security-analytics-dashboards-plugin): GitHub repository
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#1169](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1169) | Update category to flatten menus in analytics(all) use case |
@@ -112,19 +128,3 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 | v2.17.0 | [#1136](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1136) | Import fix for webpack compatibility |
 | v2.17.0 | [#1144](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1144) | Remove problematic import |
 | v2.17.0 | [#1149](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1149) | URL state passthrough fix |
-
-## References
-
-- [About Security Analytics](https://docs.opensearch.org/2.18/security-analytics/): Overview of Security Analytics
-- [Setting up Security Analytics](https://docs.opensearch.org/2.18/security-analytics/sec-analytics-config/index/): Configuration guide
-- [Using Security Analytics](https://docs.opensearch.org/2.18/security-analytics/usage/index/): Usage documentation
-- [OpenSearch Security for Security Analytics](https://docs.opensearch.org/2.18/security-analytics/security/): Security configuration
-- [Configuring and using multiple data sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Multi-data source configuration
-- [security-analytics-dashboards-plugin](https://github.com/opensearch-project/security-analytics-dashboards-plugin): GitHub repository
-
-## Change History
-
-- **v2.18.0** (2024-11-12): Comprehensive UX improvements including navigation menu restructuring for Analytics (All) use case, standardized UI spacing and typography (H3 titles, 16px padding), compressed search bars and filters, context-aware page titles, improved button placement with bulk delete and plus icons, tabs moved to top of Alerts/Findings pages, HOURS option for source refresh interval
-- **v2.18.0** (2024-11-12): Findings page stability fixes including crash prevention when custom rules are deleted and correct severity display for multi-rule findings; Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
-- **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
-- **v2.17.0** (2024-09-17): Multiple UI bugfixes including navigation, webpack errors, multi-data source support, and various UI/UX improvements

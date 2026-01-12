@@ -66,8 +66,9 @@ request.headers['Content-Length'] = body.length.toString();
 - These are incremental UI fixes; no new features are introduced
 - Some fixes are specific to workspace-disabled mode
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9665](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9665) | Fix workspace disabled navigation issues |
@@ -83,8 +84,7 @@ request.headers['Content-Length'] = body.length.toString();
 | [#9488](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9488) | Replace formatNumWithCommas with toLocaleString |
 | [#9057](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9057) | Update data source details to use small buttons |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9474](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9474): Dataset selector flashing issue
 - [Issue #9673](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9673): Essential property copy issue
 - [Issue #9679](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9679): Query params signer error

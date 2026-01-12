@@ -98,17 +98,21 @@ No migration required. The optimization is applied automatically to eligible que
 - Queries with `track_total_hits: true` or aggregations do not benefit from this optimization
 - Performance gains depend on the data distribution and query selectivity
 
-## Related PRs
+## References
 
+### Documentation
+- [Nightly Benchmark Dashboard](https://benchmarks.opensearch.org/): Performance metrics
+
+### Blog Posts
+- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Detailed explanation of the framework
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18439](https://github.com/opensearch-project/OpenSearch/pull/18439) | Approximation Framework Enhancement: Update the BKD traversal logic to improve the performance on skewed data |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18341](https://github.com/opensearch-project/OpenSearch/issues/18341): Feature request for improving ApproximatePointRangeQuery traversal
-- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Detailed explanation of the framework
-- [Nightly Benchmark Dashboard](https://benchmarks.opensearch.org/): Performance metrics
 
 ## Related Feature Report
 

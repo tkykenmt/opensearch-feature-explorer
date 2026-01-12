@@ -107,21 +107,6 @@ Supported BWC versions: 2.9.0 through 2.20.0-SNAPSHOT
 - Rolling upgrade requires minimum version 2.20.0-SNAPSHOT for 3.0.0 compatibility
 - Some CI jobs removed for Windows to reduce build times
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#1245](https://github.com/opensearch-project/neural-search/pull/1245) | OpenSearch 3.0 beta compatibility |
-| v3.0.0 | [#1141](https://github.com/opensearch-project/neural-search/pull/1141) | OpenSearch 3.0 compatibility |
-| v3.0.0 | [#502](https://github.com/opensearch-project/neural-search/pull/502) | Code guidelines |
-
-## References
-
-- [Issue #225](https://github.com/opensearch-project/neural-search/issues/225): Release version 3.0.0
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Breaking changes overview
-- [Neural Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/): Official docs
-- [Lucene 10 Changelog](https://lucene.apache.org/core/10_0_0/changes/Changes.html): API changes
-
 ## Change History
 
 - **v3.1.0** (2025-05-06): Build configuration update for OpenSearch 3.0 beta compatibility
@@ -131,3 +116,22 @@ Supported BWC versions: 2.9.0 through 2.20.0-SNAPSHOT
   - Migrated Client import to transport package
   - Updated BWC test infrastructure
   - Removed redundant Windows CI jobs
+
+## References
+
+### Documentation
+- [Neural Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/): Official docs
+- [Lucene 10 Changelog](https://lucene.apache.org/core/10_0_0/changes/Changes.html): API changes
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Breaking changes overview
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#1245](https://github.com/opensearch-project/neural-search/pull/1245) | OpenSearch 3.0 beta compatibility |
+| v3.0.0 | [#1141](https://github.com/opensearch-project/neural-search/pull/1141) | OpenSearch 3.0 compatibility |
+| v3.0.0 | [#502](https://github.com/opensearch-project/neural-search/pull/502) | Code guidelines |
+
+### Issues (Design / RFC)
+- [Issue #225](https://github.com/opensearch-project/neural-search/issues/225): Release version 3.0.0

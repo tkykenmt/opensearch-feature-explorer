@@ -107,18 +107,18 @@ PUT _plugins/_anomaly_detection/detectors
 - Remote cluster connectivity must be established before creating detectors
 - Fine-grained access control requires matching roles on both local and remote clusters
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/)
+- [Anomaly Detection Security](https://docs.opensearch.org/2.17/observing-your-data/ad/security/)
+- [Cross-Cluster Search](https://docs.opensearch.org/2.17/search-plugins/cross-cluster-search/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1290](https://github.com/opensearch-project/anomaly-detection/pull/1290) | Adding remote index and multi-index checks in validation |
 | [#1295](https://github.com/opensearch-project/anomaly-detection/pull/1295) | Backport to 2.17 branch |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/)
-- [Anomaly Detection Security](https://docs.opensearch.org/2.17/observing-your-data/ad/security/)
-- [Cross-Cluster Search](https://docs.opensearch.org/2.17/search-plugins/cross-cluster-search/)
 
 ## Related Feature Report
 

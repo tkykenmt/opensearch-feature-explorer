@@ -120,8 +120,13 @@ CalciteEnumerableIndexScan(..., Project->[count(), span(birthdate,1M)])
 - `bins` parameter not supported (only `span`)
 - Large datasets (>10K rows) may hit circuit breaker limits
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 engine limitations
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4372](https://github.com/opensearch-project/sql/pull/4372) | Enable Calcite by default and implicit fallback for unsupported commands |
@@ -131,15 +136,12 @@ CalciteEnumerableIndexScan(..., Project->[count(), span(birthdate,1M)])
 | [#4092](https://github.com/opensearch-project/sql/pull/4092) | Add `regex_match` function for PPL with Calcite engine support |
 | [#3993](https://github.com/opensearch-project/sql/pull/3993) | Support `timechart` command with Calcite |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4314](https://github.com/opensearch-project/sql/issues/4314): Enable Calcite by default
 - [Issue #4312](https://github.com/opensearch-project/sql/issues/4312): Cost computing enhancement
 - [Issue #4230](https://github.com/opensearch-project/sql/issues/4230): Project pushdown
 - [Issue #4146](https://github.com/opensearch-project/sql/issues/4146): mvjoin support
 - [Issue #3965](https://github.com/opensearch-project/sql/issues/3965): timechart command
-- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 engine limitations
 
 ## Related Feature Report
 

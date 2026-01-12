@@ -57,16 +57,18 @@ No migration required. The fix is automatically applied when upgrading to v3.4.0
 - This fix specifically addresses Linux systems using cgroups v1 with combined controllers
 - Systems using cgroups v2 may have different path structures
 
-## Related PRs
+## References
 
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20108](https://github.com/opensearch-project/OpenSearch/pull/20108) | Add file permissions for 'cpu,cpuacct' cgroup |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19120](https://github.com/opensearch-project/OpenSearch/issues/19120): Original bug report for negative CPU usage values
-- [Nodes Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official API documentation
 
 ## Related Feature Report
 

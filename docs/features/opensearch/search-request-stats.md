@@ -157,8 +157,18 @@ GET _nodes/<node_id>/stats/indices/search
 - Minimal performance overhead when enabled
 - Only tracks coordinator-level statistics (not shard-level)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-30): Fixed negative search stats handling - writes 0 instead of negative values to prevent serialization errors
+- **v2.18.0** (2024-11-05): Enabled `search.request_stats_enabled` by default
+- **v2.17.0** (2024-09-17): Initial implementation with `took` statistics and phase breakdowns
+
+## References
+
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/latest/api-reference/nodes-apis/nodes-stats/): Official API documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19340](https://github.com/opensearch-project/OpenSearch/pull/19340) | Handle negative search request nodes stats |
@@ -166,14 +176,6 @@ GET _nodes/<node_id>/stats/indices/search
 | v2.18.0 | [#16290](https://github.com/opensearch-project/OpenSearch/pull/16290) | Enable search.request_stats_enabled by default |
 | v2.18.0 | [#16320](https://github.com/opensearch-project/OpenSearch/pull/16320) | Backport to 2.x branch |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16598](https://github.com/opensearch-project/OpenSearch/issues/16598): Bug report - Negative Search Stats causing nodes/stats API failures
 - [Issue #10768](https://github.com/opensearch-project/OpenSearch/issues/10768): Original feature request - Search stats for coordinator node misses total search request time
-- [Nodes Stats API Documentation](https://docs.opensearch.org/latest/api-reference/nodes-apis/nodes-stats/): Official API documentation
-
-## Change History
-
-- **v3.3.0** (2025-09-30): Fixed negative search stats handling - writes 0 instead of negative values to prevent serialization errors
-- **v2.18.0** (2024-11-05): Enabled `search.request_stats_enabled` by default
-- **v2.17.0** (2024-09-17): Initial implementation with `took` statistics and phase breakdowns

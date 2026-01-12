@@ -87,17 +87,17 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only'
 - The actual CSP directives and reporting endpoints remain statically configured
 - Requires appropriate permissions to access the `.opensearch_dashboards_config` index when Security plugin is enabled
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |
-
 ## References
 
+### Documentation
 - [CSP Dynamic Configuration Documentation](https://docs.opensearch.org/3.0/dashboards/csp/csp-dynamic-configuration/)
 - [applicationConfig Plugin](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/application_config/README.md)
 - [cspHandler Plugin](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/csp_handler/README.md)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |
 
 ## Related Feature Report
 

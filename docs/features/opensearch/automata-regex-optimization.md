@@ -150,20 +150,22 @@ GET /my-index/_search
 - Complex regular expressions may still hit the `max_determinized_states` limit
 - The `case_insensitive` parameter is not available for all query types
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17268](https://github.com/opensearch-project/OpenSearch/pull/17268) | Remove MinimizationOperations to fix memory exhaustion |
+- **v3.0.0** (2025-05-06): Removed `MinimizationOperations` class; stopped minimizing automata for case-insensitive matches to prevent memory exhaustion
 
 ## References
 
-- [Issue #16975](https://github.com/opensearch-project/OpenSearch/issues/16975): Bug report - Memory exhaustion with case-insensitive term queries
+### Documentation
 - [Regexp Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/regexp/): Official docs on regexp queries
 - [Term Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/term/): Official docs on term queries with `case_insensitive`
 - [Wildcard Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/wildcard/): Official docs on wildcard queries
 - [Prefix Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/prefix/): Official docs on prefix queries
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#17268](https://github.com/opensearch-project/OpenSearch/pull/17268) | Remove MinimizationOperations to fix memory exhaustion |
 
-- **v3.0.0** (2025-05-06): Removed `MinimizationOperations` class; stopped minimizing automata for case-insensitive matches to prevent memory exhaustion
+### Issues (Design / RFC)
+- [Issue #16975](https://github.com/opensearch-project/OpenSearch/issues/16975): Bug report - Memory exhaustion with case-insensitive term queries

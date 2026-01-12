@@ -186,8 +186,29 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - Remote storage backends may have additional latency
 - Synchronous provisioning has timeout limits
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-11-12): Fixed incorrect output dimension default (768→384) in `semantic-search-with-local-model-defaults.json` template to match the actual output dimension of the `paraphrase-MiniLM-L3-v2` model
+- **v3.3.0** (2025-10-07): Fixed tenant-aware integration test failures by pre-creating ML Commons indices; Added `createMLCommonsIndices()` helper method to test infrastructure
+- **v3.2.0** (2025-08-06): Bug fixes for ApiSpecFetcher memory issues and exception handling; Improved error messages for workflow steps with Bad Request status; Updated RegisterLocalCustomModelStep for OpenSearch 3.1+ API compatibility with model_config nesting and space_type support; Fixed encryption key race condition during concurrent template creation; Fixed connector name substitution in default use case templates
+- **v3.1.0** (2025-07-15): Bug fixes for RegisterAgentStep LLM field processing, exception type in WorkflowState error messages, and LLM spec parameter passing; Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
+- **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
+- **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
+- **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
+
+## References
+
+### Documentation
+- [Workflow Settings Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-settings/)
+- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
+- [Workflow Tutorial](https://docs.opensearch.org/3.0/automating-configurations/workflow-tutorial/)
+- [Workflow APIs](https://docs.opensearch.org/3.0/automating-configurations/api/index/)
+- [Workflow Template Security](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/)
+- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
+- [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
+- [Hugging Face paraphrase-MiniLM-L3-v2](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2): Model documentation for semantic search with local model template
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#1270](https://github.com/opensearch-project/flow-framework/pull/1270) | Fix incorrect field map output dimensions in semantic search with local model template |
@@ -216,16 +237,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 | v2.18.0 | [#894](https://github.com/opensearch-project/flow-framework/pull/894) | Update workflow state without using painless script |
 | v2.17.0 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings |
 
-## References
-
-- [Workflow Settings Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-settings/)
-- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
-- [Workflow Tutorial](https://docs.opensearch.org/3.0/automating-configurations/workflow-tutorial/)
-- [Workflow APIs](https://docs.opensearch.org/3.0/automating-configurations/api/index/)
-- [Workflow Template Security](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/)
-- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/)
-- [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
-- [Hugging Face paraphrase-MiniLM-L3-v2](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2): Model documentation for semantic search with local model template
+### Issues (Design / RFC)
 - [Issue #1254](https://github.com/opensearch-project/flow-framework/issues/1254): Incorrect field map output dimensions in semantic search with local model template
 - [Issue #1216](https://github.com/opensearch-project/flow-framework/issues/1216): Tenant Aware Integ Tests failing because indices aren't being created
 - [Issue #1180](https://github.com/opensearch-project/flow-framework/issues/1180): Migrate workflow custom model registration to 3.1
@@ -239,13 +251,3 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Issue #878](https://github.com/opensearch-project/flow-framework/issues/878): ML-commons config field in MLToolSpec
 - [Issue #780](https://github.com/opensearch-project/flow-framework/issues/780): Update WorkflowState resources during deprovisioning
 - [Issue #691](https://github.com/opensearch-project/flow-framework/issues/691): Handle deprovision with workflow state update failure
-
-## Change History
-
-- **v3.4.0** (2025-11-12): Fixed incorrect output dimension default (768→384) in `semantic-search-with-local-model-defaults.json` template to match the actual output dimension of the `paraphrase-MiniLM-L3-v2` model
-- **v3.3.0** (2025-10-07): Fixed tenant-aware integration test failures by pre-creating ML Commons indices; Added `createMLCommonsIndices()` helper method to test infrastructure
-- **v3.2.0** (2025-08-06): Bug fixes for ApiSpecFetcher memory issues and exception handling; Improved error messages for workflow steps with Bad Request status; Updated RegisterLocalCustomModelStep for OpenSearch 3.1+ API compatibility with model_config nesting and space_type support; Fixed encryption key race condition during concurrent template creation; Fixed connector name substitution in default use case templates
-- **v3.1.0** (2025-07-15): Bug fixes for RegisterAgentStep LLM field processing, exception type in WorkflowState error messages, and LLM spec parameter passing; Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
-- **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
-- **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
-- **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings

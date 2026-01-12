@@ -81,18 +81,22 @@ indices.requests.cache.tiered_spillover.disk.store.policies.took_time.threshold:
 - Only supported for the request cache (not query cache)
 - The `cache-ehcache` plugin must be installed for disk tier functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [Tiered Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
+
+### Blog Posts
+- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17513](https://github.com/opensearch-project/OpenSearch/pull/17513) | Single cache manager for all ehcache disk caches |
 | [#17190](https://github.com/opensearch-project/OpenSearch/pull/17190) | Took-time threshold guards heap tier as well as disk tier |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16162](https://github.com/opensearch-project/OpenSearch/issues/16162): RFC - Optimize caching policy for Request cache
-- [Tiered Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
-- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
 
 ## Related Feature Report
 

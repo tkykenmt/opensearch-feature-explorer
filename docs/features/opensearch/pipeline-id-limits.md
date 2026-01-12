@@ -104,18 +104,20 @@ PUT _search/pipeline/my-search-pipeline
 - Multi-byte UTF-8 characters (e.g., CJK characters, emojis) consume more of the byte limit than ASCII characters
 - Existing pipelines with non-compliant IDs created before v3.0.0 will continue to function but cannot be updated
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-13): Initial implementation - 512 byte limit for ingest and search pipeline IDs
+
+## References
+
+### Documentation
+- [Ingest Pipeline Documentation](https://docs.opensearch.org/latest/ingest-pipelines/create-ingest/): Official ingest pipeline docs
+- [Search Pipeline Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Official search pipeline docs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17786](https://github.com/opensearch-project/OpenSearch/pull/17786) | Introduce 512 byte limit to search and ingest pipeline IDs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17766](https://github.com/opensearch-project/OpenSearch/issues/17766): Original feature request
-- [Ingest Pipeline Documentation](https://docs.opensearch.org/latest/ingest-pipelines/create-ingest/): Official ingest pipeline docs
-- [Search Pipeline Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Official search pipeline docs
-
-## Change History
-
-- **v3.0.0** (2025-05-13): Initial implementation - 512 byte limit for ingest and search pipeline IDs

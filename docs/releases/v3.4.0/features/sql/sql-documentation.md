@@ -82,8 +82,13 @@ source=accounts | where NOT state = 'CA'
 - Documentation changes are in-repo RST files, not the official documentation website
 - Some examples may require specific index configurations to run
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL reference
+- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code and in-repo documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4562](https://github.com/opensearch-project/sql/pull/4562) | Update PPL Command Documentation - Major standardization effort |
@@ -93,10 +98,7 @@ source=accounts | where NOT state = 'CA'
 | [#4457](https://github.com/opensearch-project/sql/pull/4457) | Add more examples to the `where` command doc |
 | [#4447](https://github.com/opensearch-project/sql/pull/4447) | Fix typo: evenstats → eventstats |
 
-## References
-
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL reference
-- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code and in-repo documentation
+### Issues (Design / RFC)
 - [Issue #4220](https://github.com/opensearch-project/sql/issues/4220): Documentation improvement tracking issue
 - [Issue #4227](https://github.com/opensearch-project/sql/issues/4227): Where command examples request
 

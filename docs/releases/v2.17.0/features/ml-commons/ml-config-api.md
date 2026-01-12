@@ -122,16 +122,16 @@ The `MLConfig` object contains:
 - No REST API endpoint is exposed; access is only through the Java client
 - Configuration documents must already exist in the `.plugins-ml-config` index
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons APIs](https://docs.opensearch.org/2.17/ml-commons-plugin/api/index/): Official API documentation
+- [ML Commons cluster settings](https://docs.opensearch.org/2.17/ml-commons-plugin/cluster-settings/): Configuration settings reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2850](https://github.com/opensearch-project/ml-commons/pull/2850) | Expose ML Config API |
-
-## References
-
-- [ML Commons APIs](https://docs.opensearch.org/2.17/ml-commons-plugin/api/index/): Official API documentation
-- [ML Commons cluster settings](https://docs.opensearch.org/2.17/ml-commons-plugin/cluster-settings/): Configuration settings reference
 
 ## Related Feature Report
 

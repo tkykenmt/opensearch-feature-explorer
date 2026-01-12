@@ -172,22 +172,24 @@ The feature translates DSL filters to PPL for log pattern analysis:
 - PPL patterns command required for log pattern extraction
 - Only first index supported for multi-index monitors
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-01-07): Optimized alert context to use only latest active alert for AI summaries
+- **v2.18.0** (2024-11-05): Initial implementation with context-aware alert analysis and log pattern support
+
+## References
+
+### Documentation
+- [Alert Insights Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/alert-insight/): Official docs
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): Assistant overview
+- [Flow Framework Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates): Agent templates
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#1220](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1220) | Only use latest active alert for alert summary context |
 | v2.18.0 | [#996](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/996) | Context aware alert analysis |
 | v2.18.0 | [#1119](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1119) | Support top N log pattern data |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #995](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/995): Original feature request
-- [Alert Insights Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/alert-insight/): Official docs
-- [Flow Framework Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates): Agent templates
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): Assistant overview
-
-## Change History
-
-- **v3.0.0** (2025-01-07): Optimized alert context to use only latest active alert for AI summaries
-- **v2.18.0** (2024-11-05): Initial implementation with context-aware alert analysis and log pattern support

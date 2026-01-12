@@ -160,18 +160,18 @@ This ensures `core ≤ max` invariant is maintained during the transition.
 - Changes apply to the current node; cluster settings propagate to all nodes
 - No automatic rollback if resize causes issues
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#16236](https://github.com/opensearch-project/OpenSearch/pull/16236) | Add support to dynamically resize threadpools size |
-
-## References
-
-- [PR #16236](https://github.com/opensearch-project/OpenSearch/pull/16236): Original implementation
-- [CAT Thread Pool API](https://docs.opensearch.org/2.18/api-reference/cat/cat-thread-pool/): Monitor thread pool status
-- [Nodes Info API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-info/): View thread pool configuration
-
 ## Change History
 
 - **v2.18.0** (2024-10-29): Initial implementation - dynamic thread pool resize capability
+
+## References
+
+### Documentation
+- [CAT Thread Pool API](https://docs.opensearch.org/2.18/api-reference/cat/cat-thread-pool/): Monitor thread pool status
+- [Nodes Info API](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-info/): View thread pool configuration
+- [PR #16236](https://github.com/opensearch-project/OpenSearch/pull/16236): Original implementation
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#16236](https://github.com/opensearch-project/OpenSearch/pull/16236) | Add support to dynamically resize threadpools size |

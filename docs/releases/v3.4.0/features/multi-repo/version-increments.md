@@ -78,14 +78,14 @@ override fun <Request : ActionRequest, Response : ActionResponse> apply(
 - These are maintenance changes with no functional impact
 - Legacy version tests in index-management are now ignored due to removal of legacy version support in OpenSearch core
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch PR #19793](https://github.com/opensearch-project/OpenSearch/pull/19793): Legacy version removal (referenced in ignored tests)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1536](https://github.com/opensearch-project/index-management/pull/1536) | index-management | Version increment + ActionFilter interface |
 | [#1081](https://github.com/opensearch-project/notifications/pull/1081) | notifications | Version increment + dependency updates |
 | [#405](https://github.com/opensearch-project/dashboards-notifications/pull/405) | dashboards-notifications | Version increment |
-
-## References
-
-- [OpenSearch PR #19793](https://github.com/opensearch-project/OpenSearch/pull/19793): Legacy version removal (referenced in ignored tests)

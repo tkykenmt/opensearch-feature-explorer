@@ -204,20 +204,22 @@ source=data | rex field=phone mode=sed "s/(\d{3})(\d{3})(\d{4})/\1-\2-\3/" | fie
 - **Max Match Limit**: `max_match` values exceeding the configured limit throw an error
 - **Sed Mode Restrictions**: `offset_field` cannot be used with `mode=sed`
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09): Initial implementation of `regex` and `rex` commands with extract mode, sed mode, and offset_field support
+
+## References
+
+### Documentation
+- [Java Pattern Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html): Java regex syntax reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4083](https://github.com/opensearch-project/sql/pull/4083) | Implementation of `regex` command in PPL |
 | v3.3.0 | [#4109](https://github.com/opensearch-project/sql/pull/4109) | Core implementation of `rex` command (extract mode) |
 | v3.3.0 | [#4241](https://github.com/opensearch-project/sql/pull/4241) | Implementation of `sed` mode and `offset_field` in rex command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4082](https://github.com/opensearch-project/sql/issues/4082): RFC for regex command
 - [Issue #4108](https://github.com/opensearch-project/sql/issues/4108): RFC for rex command
-- [Java Pattern Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html): Java regex syntax reference
-
-## Change History
-
-- **v3.3.0** (2025-09): Initial implementation of `regex` and `rex` commands with extract mode, sed mode, and offset_field support

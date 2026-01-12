@@ -299,8 +299,23 @@ sequenceDiagram
 - Rate limiting returns HTTP 429 when task limits exceeded (v2.18.0+)
 - Connector credential feature requires the connector to have PREDICT action configured (v2.18.0+)
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-29): Added rate limiting, connector credential support, model group access control, and default action types
+- **v2.17.0** (2024-09-17): Initial implementation with S3 and OpenAI data source support, JSONPath field mapping, and batch job status tracking
+
+## References
+
+### Documentation
+- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
+- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/async-batch-ingest/): API reference
+- [Batch Predict API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/model-apis/batch-predict/): Related batch prediction API
+- [ML Commons Cluster Settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Configuration settings
+
+### Blog Posts
+- [Scaling Vector Generation Blog](https://opensearch.org/blog/scaling-vector-generation-batch-ml-inference-with-opensearch-ingestion-and-ml-commons/): Blog post on batch ML inference integration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#3080](https://github.com/opensearch-project/ml-commons/pull/3080) | Default action types for batch job task management |
@@ -310,16 +325,5 @@ sequenceDiagram
 | v2.17.0 | [#2844](https://github.com/opensearch-project/ml-commons/pull/2844) | Offline batch ingestion API actions and data ingesters |
 | v2.17.0 | [#2825](https://github.com/opensearch-project/ml-commons/pull/2825) | Support get batch transform job status in get task API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2840](https://github.com/opensearch-project/ml-commons/issues/2840): Offline Batch Inference and Batch Ingestion
-- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
-- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/async-batch-ingest/): API reference
-- [Batch Predict API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/model-apis/batch-predict/): Related batch prediction API
-- [ML Commons Cluster Settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Configuration settings
-- [Scaling Vector Generation Blog](https://opensearch.org/blog/scaling-vector-generation-batch-ml-inference-with-opensearch-ingestion-and-ml-commons/): Blog post on batch ML inference integration
-
-## Change History
-
-- **v2.18.0** (2024-10-29): Added rate limiting, connector credential support, model group access control, and default action types
-- **v2.17.0** (2024-09-17): Initial implementation with S3 and OpenAI data source support, JSONPath field mapping, and batch job status tracking

@@ -106,18 +106,20 @@ If you have plugins using the `dependencies` field with a single version, no cha
 - Only `opensearch` is allowed as a dependency key
 - Cannot use both `opensearch.version` and `dependencies` properties simultaneously
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Installing plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Plugin compatibility section
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19939](https://github.com/opensearch-project/OpenSearch/pull/19939) | Add RangeSemver for `dependencies` in `plugin-descriptor.properties` |
 | [#18557](https://github.com/opensearch-project/OpenSearch/pull/18557) | Added support for range version support in semver (prerequisite) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1707](https://github.com/opensearch-project/OpenSearch/issues/1707): Cannot install old patch version of plugins on newer OpenSearch builds
 - [Issue #18554](https://github.com/opensearch-project/OpenSearch/issues/18554): Add range support in SemVer
-- [Documentation: Installing plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Plugin compatibility section
 
 ## Related Feature Report
 

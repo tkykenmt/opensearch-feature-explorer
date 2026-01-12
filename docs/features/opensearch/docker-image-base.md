@@ -79,20 +79,22 @@ docker run -d -p 9200:9200 -p 9600:9600 \
 - Custom base images require modifications to the build system
 - ARM64 and x64 architectures are supported
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19154](https://github.com/opensearch-project/OpenSearch/pull/19154) | Replace centos:8 with almalinux:8 |
+- **v3.3.0** (2025-08-27): Migrated from CentOS 8 to AlmaLinux 8 base image
 
 ## References
 
+### Documentation
 - [OpenSearch Docker Installation](https://docs.opensearch.org/3.3/install-and-configure/install-opensearch/docker/)
 - [Compatible Operating Systems](https://docs.opensearch.org/3.3/install-and-configure/os-comp/)
 - [CentOS Docker Hub Deprecation](https://hub.docker.com/_/centos)
 - [AlmaLinux](https://almalinux.org/)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#19154](https://github.com/opensearch-project/OpenSearch/pull/19154) | Replace centos:8 with almalinux:8 |
+
+### Issues (Design / RFC)
 - [opensearch-build Issue #4573](https://github.com/opensearch-project/opensearch-build/issues/4573): OS compatibility changes
-
-## Change History
-
-- **v3.3.0** (2025-08-27): Migrated from CentOS 8 to AlmaLinux 8 base image

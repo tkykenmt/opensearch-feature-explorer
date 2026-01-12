@@ -175,8 +175,17 @@ Both `list()` and `values()` functions support:
 - Window functions require `plugins.calcite.enabled=true`
 - Aggregate functions in eventstats are executed on the coordination node
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Added first/last, list, earliest/latest aggregate functions; extended distinct_count/dc to eventstats command
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+- [SQL Aggregate Functions](https://docs.opensearch.org/3.0/search-plugins/sql/sql/aggregations/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4223](https://github.com/opensearch-project/sql/pull/4223) | Support first/last aggregate functions for PPL |
@@ -184,15 +193,8 @@ Both `list()` and `values()` functions support:
 | v3.3.0 | [#4084](https://github.com/opensearch-project/sql/pull/4084) | Support distinct_count/dc in eventstats |
 | v3.3.0 | [#4212](https://github.com/opensearch-project/sql/pull/4212) | Add earliest/latest aggregate function for eventstats |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4203](https://github.com/opensearch-project/sql/issues/4203): PPL first/last aggregate function
 - [Issue #4026](https://github.com/opensearch-project/sql/issues/4026): Multivalue Statistics Functions for PPL Calcite Engine
 - [Issue #4052](https://github.com/opensearch-project/sql/issues/4052): PPL distinct_count/dc function support for eventstats
 - [Issue #4047](https://github.com/opensearch-project/sql/issues/4047): PPL eventstats command enhancement
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
-- [SQL Aggregate Functions](https://docs.opensearch.org/3.0/search-plugins/sql/sql/aggregations/)
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Added first/last, list, earliest/latest aggregate functions; extended distinct_count/dc to eventstats command

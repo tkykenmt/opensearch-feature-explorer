@@ -116,19 +116,19 @@ This approach handles:
 - Client certificate authentication requires `clientauth_mode` to be `OPTIONAL` or `REQUIRE`
 - The `ssl_engine` fallback is only available in OpenSearch 3.3.0+
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-29): Added fallback logic to use `ssl_engine` attribute when `ssl_handler` is unavailable or incompatible with reactor-netty4 transport
+
+## References
+
+### Documentation
+- [TLS Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS configuration guide
+- [Network Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): HTTP transport configuration
+- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original issue report and workarounds
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [security#5667](https://github.com/opensearch-project/security/pull/5667) | Add fallback logic for ssl_engine attribute |
 | v3.3.0 | [OpenSearch#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Implement SslHandler retrieval for reactor-netty4 |
-
-## References
-
-- [TLS Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/tls/): Official TLS configuration guide
-- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original issue report and workarounds
-- [Network Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): HTTP transport configuration
-
-## Change History
-
-- **v3.3.0** (2025-09-29): Added fallback logic to use `ssl_engine` attribute when `ssl_handler` is unavailable or incompatible with reactor-netty4 transport

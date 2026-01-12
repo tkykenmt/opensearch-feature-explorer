@@ -170,8 +170,17 @@ GET /my-nlp-index/_search
 - Repeated inference: Updates rerun inference even if content unchanged (unless `skip_existing_embedding` enabled)
 - Two-phase processor: `neural_sparse_two_phase_processor` not supported when querying semantic field directly
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Semantic Field Type](https://docs.opensearch.org/3.1/field-types/supported-field-types/semantic/)
+- [Documentation: Semantic Search](https://docs.opensearch.org/3.1/vector-search/ai-search/semantic-search/)
+
+### Blog Posts
+- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
+- [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1276](https://github.com/opensearch-project/neural-search/pull/1276) | Add semantic mapping transformer |
@@ -182,13 +191,8 @@ GET /my-nlp-index/_search
 | [#1367](https://github.com/opensearch-project/neural-search/pull/1367) | Support analyzer at semantic field creation time |
 | [#1362](https://github.com/opensearch-project/neural-search/pull/1362) | Add stats tracking for semantic field |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
-- [Documentation: Semantic Field Type](https://docs.opensearch.org/3.1/field-types/supported-field-types/semantic/)
-- [Documentation: Semantic Search](https://docs.opensearch.org/3.1/vector-search/ai-search/semantic-search/)
-- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
-- [Blog: Advanced usage of the semantic field](https://opensearch.org/blog/advanced-usage-of-the-semantic-field-in-opensearch/)
 
 ## Related Feature Report
 

@@ -67,8 +67,12 @@ Data Sources
 - When `query:enhancements:enabled` is disabled, all redirection points from data connections are disabled
 - The "Query data in Observability Logs" card redirects to Discover without the datasource pre-selected (limitation of current Discover implementation)
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8460](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8460) | Replace segmented button with tabs for OpenSearch connections and Direct query connections |
@@ -78,11 +82,9 @@ Data Sources
 | [#8544](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8544) | Direct query connections fit and finish fixes |
 | [#8713](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8713) | Update auto-complete API with MDS support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8256](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8256): Redirection issue for direct query datasource in dashboards management
 - [Issue #8536](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8536): Deprecate non-MDS data connection endpoint for direct query data source
-- [Data Sources Documentation](https://docs.opensearch.org/2.18/dashboards/management/data-sources/): Official docs
 
 ## Related Feature Report
 

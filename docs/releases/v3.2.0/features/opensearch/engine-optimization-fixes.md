@@ -128,18 +128,20 @@ GET logs-*/_search
 - The optimization applies to timestamp-based sorting only
 - Requires indexes to have the `@timestamp` field or equivalent time field configured for sorting
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+- [PR #7967](https://github.com/opensearch-project/OpenSearch/pull/7967): Original timestamp sort optimization implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18639](https://github.com/opensearch-project/OpenSearch/pull/18639) | Fix leafSorter optimization for ReadOnlyEngine and NRTReplicationEngine |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17579](https://github.com/opensearch-project/OpenSearch/issues/17579): Bug report - Timestamp sort optimizations don't work on searchable snapshot or segrep replicas
-- [PR #7967](https://github.com/opensearch-project/OpenSearch/pull/7967): Original timestamp sort optimization implementation
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
 
 ## Related Feature Report
 

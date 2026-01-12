@@ -93,8 +93,16 @@ The Java agent automatically enforces these permissions at runtime.
 - systemd hardening is only available on Linux distributions using systemd
 - Virtual threads do not carry permissions (by design in JDK)
 
-## Related PRs
+## References
 
+### Documentation
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
+
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17724](https://github.com/opensearch-project/OpenSearch/pull/17724) | Create initial Java Agent to intercept Socket::connect calls |
@@ -104,16 +112,12 @@ The Java agent automatically enforces these permissions at runtime.
 | [#17760](https://github.com/opensearch-project/OpenSearch/pull/17760) | Implement File Interceptor and add integration tests |
 | [#17861](https://github.com/opensearch-project/OpenSearch/pull/17861) | Phase off SecurityManager usage in favor of Java Agent |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17658](https://github.com/opensearch-project/OpenSearch/issues/17658): Parent issue for Security Manager replacement
 - [Issue #17659](https://github.com/opensearch-project/OpenSearch/issues/17659): Add support of Java policies
 - [Issue #17660](https://github.com/opensearch-project/OpenSearch/issues/17660): Create initial Java Agent to intercept Socket::connect calls
 - [Issue #17662](https://github.com/opensearch-project/OpenSearch/issues/17662): Phase off SecurityManager usage in favor of Java Agent
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): Original JSM replacement discussion
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
 
 ## Related Feature Report
 

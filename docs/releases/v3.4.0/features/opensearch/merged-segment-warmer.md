@@ -102,18 +102,20 @@ If upgrading from v3.3.0 or earlier with the experimental feature flag:
 - Feature disabled by default - must be explicitly enabled
 - Only segments larger than threshold are warmed (default 500MB)
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18929](https://github.com/opensearch-project/OpenSearch/pull/18929) | Add metrics for merged segment warmer flow |
 | [#19629](https://github.com/opensearch-project/OpenSearch/pull/19629) | Add configurable resiliency features |
 | [#19715](https://github.com/opensearch-project/OpenSearch/pull/19715) | Remove experimental feature flag |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/)
 
 ## Related Feature Report
 

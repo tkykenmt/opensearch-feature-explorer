@@ -52,8 +52,13 @@ DisiPriorityQueue queue = DisiPriorityQueue.ofMaxSize(size);
 - Plugins using Lucene APIs directly must be updated for compatibility
 - Index format remains compatible; no reindexing required
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache Lucene 10.2.1 Release Notes](https://lucene.apache.org/core/10_2_1/changes/Changes.html)
+- [Apache Lucene 10.2.0 Release Notes](https://lucene.apache.org/core/10_2_0/changes/Changes.html)
+
+### Pull Requests
 | Repository | PR | Description |
 |------------|-----|-------------|
 | OpenSearch | [#17961](https://github.com/opensearch-project/OpenSearch/pull/17961) | Core Lucene upgrade to 10.2.1 |
@@ -61,10 +66,7 @@ DisiPriorityQueue queue = DisiPriorityQueue.ofMaxSize(size);
 | neural-search | [#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies |
 | opensearch-learning-to-rank-base | [#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes |
 
-## References
-
-- [Apache Lucene 10.2.1 Release Notes](https://lucene.apache.org/core/10_2_1/changes/Changes.html)
-- [Apache Lucene 10.2.0 Release Notes](https://lucene.apache.org/core/10_2_0/changes/Changes.html)
+### Issues (Design / RFC)
 - [Issue #184](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/184): Learning to Rank compatibility issue
 
 ## Related Feature Report

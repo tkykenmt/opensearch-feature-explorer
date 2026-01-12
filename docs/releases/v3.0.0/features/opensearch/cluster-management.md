@@ -94,17 +94,19 @@ PUT _cluster/settings
 - The new priority settings only affect reroute tasks triggered by allocator timeouts
 - Short summary format may provide less detail for debugging; use TRACE level for full task details
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Allocation Explain API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-allocation/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run |
 | [#16445](https://github.com/opensearch-project/OpenSearch/pull/16445) | Change priority for scheduling reroute during timeout |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12249](https://github.com/opensearch-project/OpenSearch/issues/12249): Reduce TaskBatcher excessive logging in DEBUG mode
-- [Cluster Allocation Explain API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-allocation/): Official documentation
 
 ## Related Feature Report
 

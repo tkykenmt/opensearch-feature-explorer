@@ -88,20 +88,20 @@ No migration required. This is a transparent bugfix that enables previously brok
 - The fix only addresses the visitor pattern for `HasParentQuery` and `HasChildQuery`
 - Other join queries may still need similar fixes if they have nested sub-queries
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#18621](https://github.com/opensearch-project/OpenSearch/pull/18621) | Fix the visit of sub queries for HasParentQuery and HasChildQuery |
-
 ## References
 
-- [PR #13837](https://github.com/opensearch-project/OpenSearch/pull/13837): Previous visitor pattern fix (stalled)
-- [PR #14739](https://github.com/opensearch-project/OpenSearch/pull/14739): Fix for NestedQueryBuilder visitor
-- [PR #10110](https://github.com/opensearch-project/OpenSearch/pull/10110): Original visitor pattern implementation
+### Documentation
 - [Has Child Query Documentation](https://docs.opensearch.org/3.0/query-dsl/joining/has-child/): Official docs
 - [Has Parent Query Documentation](https://docs.opensearch.org/3.0/query-dsl/joining/has-parent/): Official docs
 - [Joining Queries Documentation](https://docs.opensearch.org/3.0/query-dsl/joining/index/): Overview of joining queries
+- [PR #13837](https://github.com/opensearch-project/OpenSearch/pull/13837): Previous visitor pattern fix (stalled)
+- [PR #14739](https://github.com/opensearch-project/OpenSearch/pull/14739): Fix for NestedQueryBuilder visitor
+- [PR #10110](https://github.com/opensearch-project/OpenSearch/pull/10110): Original visitor pattern implementation
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#18621](https://github.com/opensearch-project/OpenSearch/pull/18621) | Fix the visit of sub queries for HasParentQuery and HasChildQuery |
 
 ## Related Feature Report
 

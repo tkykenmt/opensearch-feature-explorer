@@ -75,8 +75,9 @@ This release includes 12 PRs across 5 repositories addressing CI/CD and build in
 - These changes are infrastructure-focused and do not affect runtime behavior
 - JDK-21 baseline requires users building from source to have JDK-21 installed
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1263](https://github.com/opensearch-project/index-management/pull/1263) | index-management | Move non-active maintainer to emeritus |
@@ -90,8 +91,7 @@ This release includes 12 PRs across 5 repositories addressing CI/CD and build in
 | [#2138](https://github.com/opensearch-project/observability/pull/2138) | observability | CVE fix for lint-staged |
 | [#2187](https://github.com/opensearch-project/observability/pull/2187) | observability | Add compile step before Cypress |
 
-## References
-
+### Issues (Design / RFC)
 - [ml-commons Issue #2915](https://github.com/opensearch-project/ml-commons/issues/2915): API keys in integration test logs
 
 ## Related Feature Report

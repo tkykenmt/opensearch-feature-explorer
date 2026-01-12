@@ -104,18 +104,18 @@ No migration required. The changes are backward compatible with older ml-commons
 - System indexes (starting with `.`) are not supported by the PPL tool
 - External data source types (e.g., S3) are not supported as Query Assist relies on OpenSearch API for index mappings
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/2.17/dashboards/dashboards-assistant/index/)
+- [PPL Tool Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/agents-tools/tools/ppl-tool/)
+- [Event Analytics - Query Assist](https://docs.opensearch.org/2.17/observing-your-data/event-analytics/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#7998](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7998) | Use badge to show agent errors, update ml-commons response schema processing |
 | [#8146](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8146) | Backport to 2.x branch |
-
-## References
-
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/2.17/dashboards/dashboards-assistant/index/)
-- [PPL Tool Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/agents-tools/tools/ppl-tool/)
-- [Event Analytics - Query Assist](https://docs.opensearch.org/2.17/observing-your-data/event-analytics/)
 
 ## Related Feature Report
 

@@ -96,18 +96,20 @@ SearchResponse response = searchStub.search(searchRequest);
 - First request latency improvements are less significant than subsequent requests
 - The gRPC feature remains experimental
 
-## Related PRs
+## References
 
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18303](https://github.com/opensearch-project/OpenSearch/pull/18303) | Optimize gRPC perf by passing by reference |
 | [#18031](https://github.com/opensearch-project/OpenSearch/pull/18031) | Remove package org.opensearch.transport.grpc and replace with org.opensearch.plugin.transport.grpc |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18291](https://github.com/opensearch-project/OpenSearch/issues/18291): gRPC Performance Improvements feature request
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): META - Productionalizing Client/Server GRPC
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
 
 ## Related Feature Report
 

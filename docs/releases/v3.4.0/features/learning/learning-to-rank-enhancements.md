@@ -119,18 +119,20 @@ teardown:
 
 - The `ignore: [400]` parameter for index creation may mask legitimate errors in some edge cases
 
-## Related PRs
+## References
 
+### Documentation
+- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#256](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/256) | Allow warnings about directly accessing the .plugins-ml-config index |
 | [#259](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/259) | Feature/ltr system origin avoid warnings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #245](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/245): Integration test failures for v2.19.4
 - [Issue #249](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/249): Integration test failures for v3.3.2
-- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
 
 ## Related Feature Report
 

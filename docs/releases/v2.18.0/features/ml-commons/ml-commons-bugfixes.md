@@ -84,8 +84,9 @@ After:
 - Connectors created before v2.18.0 will not have `created_time` populated (remains null), but `last_updated_time` will be set on next update
 - The JsonPath fix may require updates to existing pipelines that relied on the previous list-wrapping behavior
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3100](https://github.com/opensearch-project/ml-commons/pull/3100) | Gracefully handle error when generative_qa_parameters is not provided |
@@ -100,8 +101,7 @@ After:
 | [#3073](https://github.com/opensearch-project/ml-commons/pull/3073) | Add Bedrock multimodal built-in function usage example |
 | [#369](https://github.com/opensearch-project/ml-commons/pull/369) | Fix category order and description in data administration |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3092](https://github.com/opensearch-project/ml-commons/issues/3092): RAG pipeline error handling
 - [Issue #2983](https://github.com/opensearch-project/ml-commons/issues/2983): RAG processor NPE
 - [Issue #2974](https://github.com/opensearch-project/ml-commons/issues/2974): ML inference processor JsonPath issue

@@ -165,8 +165,17 @@ source=sales | appendpipe [stats sum(amount) as total | eval category='TOTAL']
 - `dedup` pushdown does not support script expressions
 - `replace` pattern matching is case-sensitive
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Added `chart`, `streamstats`, `multisearch`, `replace`, `appendpipe` commands; added `bucket_nullable` for eventstats/streamstats; added `usenull` for top/rare; pushdown optimizations for top/rare/dedup
+
+## References
+
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL documentation
+- [PPL Commands Reference](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL commands reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4579](https://github.com/opensearch-project/sql/pull/4579) | Support `chart` command in PPL |
@@ -182,8 +191,7 @@ source=sales | appendpipe [stats sum(amount) as total | eval category='TOTAL']
 | v3.4.0 | [#4696](https://github.com/opensearch-project/sql/pull/4696) | Support `usenull` option in `top` and `rare` |
 | v3.4.0 | [#4707](https://github.com/opensearch-project/sql/pull/4707) | Pushdown `top`/`rare` to nested aggregation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #399](https://github.com/opensearch-project/sql/issues/399): chart command feature request
 - [Issue #4207](https://github.com/opensearch-project/sql/issues/4207): streamstats command feature request
 - [Issue #4348](https://github.com/opensearch-project/sql/issues/4348): multisearch command feature request
@@ -193,9 +201,3 @@ source=sales | appendpipe [stats sum(amount) as total | eval category='TOTAL']
 - [Issue #4797](https://github.com/opensearch-project/sql/issues/4797): dedup pushdown optimization
 - [Issue #4801](https://github.com/opensearch-project/sql/issues/4801): bucket_nullable for eventstats
 - [Issue #4802](https://github.com/opensearch-project/sql/issues/4802): bucket_nullable for streamstats
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL documentation
-- [PPL Commands Reference](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL commands reference
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Added `chart`, `streamstats`, `multisearch`, `replace`, `appendpipe` commands; added `bucket_nullable` for eventstats/streamstats; added `usenull` for top/rare; pushdown optimizations for top/rare/dedup

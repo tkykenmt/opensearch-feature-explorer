@@ -101,8 +101,13 @@ Three default use cases had incorrect substitution field `create_connector` inst
 - Memory optimizations in ApiSpecFetcher use static caches which persist for the lifetime of the JVM
 - Race condition fix may cause brief retry delays during concurrent template creation
 
-## Related PRs
+## References
 
+### Documentation
+- [Workflow Settings Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-settings/)
+- [opensearch-remote-metadata-sdk PR #228](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/228): Related overwriteIfExists fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1185](https://github.com/opensearch-project/flow-framework/pull/1185) | Fix ApiSpecFetcher Memory Issues and Exception Handling |
@@ -111,13 +116,10 @@ Three default use cases had incorrect substitution field `create_connector` inst
 | [#1200](https://github.com/opensearch-project/flow-framework/pull/1200) | Avoid race condition setting encryption key |
 | [#1205](https://github.com/opensearch-project/flow-framework/pull/1205) | Fixing connector name in default use case |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1180](https://github.com/opensearch-project/flow-framework/issues/1180): Migrate workflow custom model registration to 3.1
 - [Issue #1189](https://github.com/opensearch-project/flow-framework/issues/1189): Error message for CreateIndexStep when index exists is unhelpful
 - [Issue #1197](https://github.com/opensearch-project/flow-framework/issues/1197): create_connector issue with connector name validation in 3.1.0
-- [opensearch-remote-metadata-sdk PR #228](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/228): Related overwriteIfExists fix
-- [Workflow Settings Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-settings/)
 
 ## Related Feature Report
 

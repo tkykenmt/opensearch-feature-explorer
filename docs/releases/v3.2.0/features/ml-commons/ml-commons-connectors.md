@@ -112,19 +112,21 @@ Please update the endpoint in connection configuration.
 - Custom Painless script functions are not validated
 - Warning messages are logged but do not prevent connector creation
 
-## Related PRs
+## References
 
+### Documentation
+- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Official connector documentation
+- [Connector Blueprints](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/): Pre/post-process function reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3579](https://github.com/opensearch-project/ml-commons/pull/3579) | Enhance validation for create connector API - adds pre/post-process function validation |
 | [#3972](https://github.com/opensearch-project/ml-commons/pull/3972) | Add validation for creating URI in connectors - improves error messages for invalid endpoints |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2993](https://github.com/opensearch-project/ml-commons/issues/2993): Enhancement request for connector validation
 - [Issue #3921](https://github.com/opensearch-project/ml-commons/issues/3921): Bug report for unclear error messages with invalid URLs
-- [Connectors Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Official connector documentation
-- [Connector Blueprints](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/blueprints/): Pre/post-process function reference
 
 ## Related Feature Report
 

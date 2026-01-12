@@ -94,16 +94,18 @@ export JAVA_HOME=/path/to/your/jdk
 - **JDK availability**: Bundled JDK availability depends on upstream JDK distributions supporting riscv64
 - **Testing coverage**: As an emerging platform, testing coverage may be less comprehensive than x64/arm64
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Installation Guide](https://docs.opensearch.org/3.1/install-and-configure/): Official installation documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18156](https://github.com/opensearch-project/OpenSearch/pull/18156) | Add support for linux riscv64 platform |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2341](https://github.com/opensearch-project/OpenSearch/issues/2341): Original feature request for RISC-V 64 support
-- [OpenSearch Installation Guide](https://docs.opensearch.org/3.1/install-and-configure/): Official installation documentation
 
 ## Related Feature Report
 

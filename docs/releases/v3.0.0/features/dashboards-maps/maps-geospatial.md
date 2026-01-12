@@ -139,8 +139,15 @@ Fixed overlapping data labels on map layers introduced in #703. Reverted the `te
 - Geocentroid option is disabled for `geo_shape` field types
 - Maximum border thickness is 100px
 
-## Related PRs
+## References
 
+### Documentation
+- [Using Maps Documentation](https://docs.opensearch.org/3.0/dashboards/visualize/maps/): Official maps documentation
+- [Geohash Grid Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/geohash-grid/): Geohash aggregation reference
+- [Geotile Grid Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/geotile-grid/): Geotile aggregation reference
+- [Geohex Grid Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/geohex-grid/): Geohex aggregation reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#703](https://github.com/opensearch-project/dashboards-maps/pull/703) | Introduce cluster layer in maps-dashboards |
@@ -148,13 +155,8 @@ Fixed overlapping data labels on map layers introduced in #703. Reverted the `te
 | [#718](https://github.com/opensearch-project/dashboards-maps/pull/718) | Fix overlapping data labels on map layer |
 | [#423](https://github.com/opensearch-project/dashboards-maps/pull/423) | Original cluster layer contribution (superseded by #703) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #250](https://github.com/opensearch-project/dashboards-maps/issues/250): Feature request for cluster layer
-- [Using Maps Documentation](https://docs.opensearch.org/3.0/dashboards/visualize/maps/): Official maps documentation
-- [Geohash Grid Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/geohash-grid/): Geohash aggregation reference
-- [Geotile Grid Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/geotile-grid/): Geotile aggregation reference
-- [Geohex Grid Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/geohex-grid/): Geohex aggregation reference
 
 ## Related Feature Report
 

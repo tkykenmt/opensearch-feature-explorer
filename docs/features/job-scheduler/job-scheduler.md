@@ -198,8 +198,25 @@ Job Scheduler supports two schedule formats:
 - Job history records are stored indefinitely; manual cleanup may be required (v3.3.0+)
 - Remote metadata storage (DynamoDB) requires pre-created tables before plugin startup (v3.3.0+)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025): Added Job History Service for tracking job execution history; Refactored LockService to interface with LockServiceImpl; Implemented IdentityAwarePlugin for improved security integration; Added remote metadata storage support via SdkClient (DynamoDB, remote OpenSearch); Added multi-tenancy support
+- **v3.2.0** (2025): Added REST APIs for listing scheduled jobs and locks; Added support for second-level interval scheduling; Made LockService non-final for better extensibility; Fixed date serialization in transport actions
+- **v3.1.0** (2025): Added CHANGELOG and changelog_verifier workflow for iterative release note assembly; Removed Guava dependency to reduce jar hell and dependency conflicts in extending plugins
+- **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads
+- **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
+- **v2.17.0** (2024-09-17): Fixed system index compatibility with v1 templates in LockService and JobDetailsService
+
+## References
+
+### Documentation
+- [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
+- [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
+- [Sample Extension Plugin](https://github.com/opensearch-project/job-scheduler/tree/main/sample-extension-plugin)
+- [opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
+- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/): Changelog format specification
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#814](https://github.com/opensearch-project/job-scheduler/pull/814) | Job History Service - creates history index recording job execution times |
@@ -224,12 +241,7 @@ Job Scheduler supports two schedule formats:
 | v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection |
 | v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates |
 
-## References
-
-- [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
-- [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
-- [Sample Extension Plugin](https://github.com/opensearch-project/job-scheduler/tree/main/sample-extension-plugin)
-- [opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
+### Issues (Design / RFC)
 - [Issue #808](https://github.com/opensearch-project/job-scheduler/issues/808): Feature request for Job execution History index
 - [Issue #828](https://github.com/opensearch-project/job-scheduler/issues/828): Feature request for configurable client wrapper for remote metadata store
 - [Issue #775](https://github.com/opensearch-project/job-scheduler/issues/775): Feature request for REST APIs to list jobs and running jobs
@@ -239,13 +251,3 @@ Job Scheduler supports two schedule formats:
 - [Issue #715](https://github.com/opensearch-project/job-scheduler/issues/715): Release 3.0 Breaking Changes
 - [Issue #14984](https://github.com/opensearch-project/OpenSearch/issues/14984): CreateIndexRequest.mapping() bug with v1 templates
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): RFC - Strengthen System Index Protection in the Plugin Ecosystem
-- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/): Changelog format specification
-
-## Change History
-
-- **v3.3.0** (2025): Added Job History Service for tracking job execution history; Refactored LockService to interface with LockServiceImpl; Implemented IdentityAwarePlugin for improved security integration; Added remote metadata storage support via SdkClient (DynamoDB, remote OpenSearch); Added multi-tenancy support
-- **v3.2.0** (2025): Added REST APIs for listing scheduled jobs and locks; Added support for second-level interval scheduling; Made LockService non-final for better extensibility; Fixed date serialization in transport actions
-- **v3.1.0** (2025): Added CHANGELOG and changelog_verifier workflow for iterative release note assembly; Removed Guava dependency to reduce jar hell and dependency conflicts in extending plugins
-- **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads
-- **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
-- **v2.17.0** (2024-09-17): Fixed system index compatibility with v1 templates in LockService and JobDetailsService

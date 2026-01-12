@@ -179,8 +179,13 @@ Pull-based ingestion is an experimental feature in v3.0.0. To use it:
 - Traditional REST API ingestion disabled for pull-based indexes
 - Partial upserts not supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16958](https://github.com/opensearch-project/OpenSearch/pull/16958) | Core pull-based ingestion engine, APIs, and Kafka plugin |
@@ -194,12 +199,9 @@ Pull-based ingestion is an experimental feature in v3.0.0. To use it:
 | [#17918](https://github.com/opensearch-project/OpenSearch/pull/17918) | External versioning support |
 | [#17912](https://github.com/opensearch-project/OpenSearch/pull/17912) | Multi-threaded writer support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16495](https://github.com/opensearch-project/OpenSearch/issues/16495): RFC - Streaming ingestion (pull based)
 - [Issue #16929](https://github.com/opensearch-project/OpenSearch/issues/16929): Pull-based ingestion tracking issue
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
 
 ## Related Feature Report
 

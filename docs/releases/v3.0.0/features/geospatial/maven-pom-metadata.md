@@ -87,16 +87,18 @@ After the fix, the following POM files contain proper metadata:
 - This is a build/release infrastructure fix with no runtime impact
 - Only affects Maven artifact publishing
 
-## Related PRs
+## References
 
+### Documentation
+- [Job Scheduler build.gradle](https://github.com/opensearch-project/job-scheduler/blob/main/build.gradle): Reference implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#732](https://github.com/opensearch-project/geospatial/pull/732) | Persist licenses and developer fields in pom file |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #731](https://github.com/opensearch-project/geospatial/issues/731): Missing necessary license, description, developer information in maven pom
-- [Job Scheduler build.gradle](https://github.com/opensearch-project/job-scheduler/blob/main/build.gradle): Reference implementation
 
 ## Related Feature Report
 

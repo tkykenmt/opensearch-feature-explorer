@@ -107,8 +107,12 @@ POST /_plugins/_ml/agents/_register
 - Agent type remains immutable once created
 - Empty tool config fields are silently omitted rather than validated at registration time
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons Agents and Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4341](https://github.com/opensearch-project/ml-commons/pull/4341) | Fix agent type update - make type immutable |
@@ -119,12 +123,10 @@ POST /_plugins/_ml/agents/_register
 | [#4450](https://github.com/opensearch-project/ml-commons/pull/4450) | Remove sensitive error log on request body |
 | [#4472](https://github.com/opensearch-project/ml-commons/pull/4472) | Fix OpenAI RAG integration tests (test-only) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4340](https://github.com/opensearch-project/ml-commons/issues/4340): Update agent API silently fails when changing agent type
 - [Issue #4424](https://github.com/opensearch-project/ml-commons/issues/4424): Updating conversational agents causes agentic search to fail
 - [Issue #4477](https://github.com/opensearch-project/ml-commons/issues/4477): Conversational agent execution fails with remote Claude models for certain tool configs
-- [ML Commons Agents and Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/index/)
 
 ## Related Feature Report
 

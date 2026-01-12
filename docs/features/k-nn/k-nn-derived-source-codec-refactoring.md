@@ -172,8 +172,21 @@ classDiagram
 - NMSLIB engine is blocked for new index creation in v3.0.0+
 - Deprecated index-level settings (`ef_construction`, `m`, `space_type`) are removed
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-13): Initial implementation - derived source mask approach, codec refactoring, field mapper consolidation, NMSLIB deprecation, removal of deprecated settings
+
+## References
+
+### Documentation
+- [Documentation: k-NN vector field type](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/)
+- [Documentation: Source field - Derived source](https://docs.opensearch.org/3.0/field-types/metadata-fields/source/#derived-source)
+- [Documentation: Breaking changes](https://docs.opensearch.org/3.0/breaking-changes/)
+
+### Blog Posts
+- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#2606](https://github.com/opensearch-project/k-NN/pull/2606) | Switch derived source from field attributes to segment attribute |
@@ -185,17 +198,8 @@ classDiagram
 | v3.0.0 | [#2575](https://github.com/opensearch-project/k-NN/pull/2575) | Improve Streaming Compatibility Issue for MethodComponentContext |
 | v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | 3.0.0 Breaking Changes For KNN |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): RFC - Derived Source for Vectors
 - [Issue #2539](https://github.com/opensearch-project/k-NN/issues/2539): Introduce backwards_codecs to manage older codecs
 - [Issue #2631](https://github.com/opensearch-project/k-NN/issues/2631): Merge MethodFieldMapper and LuceneFieldMapper into EngineFieldMapper
 - [Issue #2640](https://github.com/opensearch-project/k-NN/issues/2640): Remove doc values for lucene engine
-- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
-- [Documentation: k-NN vector field type](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/)
-- [Documentation: Source field - Derived source](https://docs.opensearch.org/3.0/field-types/metadata-fields/source/#derived-source)
-- [Documentation: Breaking changes](https://docs.opensearch.org/3.0/breaking-changes/)
-
-## Change History
-
-- **v3.0.0** (2025-05-13): Initial implementation - derived source mask approach, codec refactoring, field mapper consolidation, NMSLIB deprecation, removal of deprecated settings

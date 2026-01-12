@@ -92,8 +92,13 @@ This addresses a high-severity vulnerability in protobuf-java (transitive depend
 - Protobuf version bump in ml-commons may require testing K-Means clustering functionality
 - Gradle 8.10.2 requires JDK 17+ for builds
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2024-7254](https://nvd.nist.gov/vuln/detail/CVE-2024-7254): Protobuf DOS vulnerability
+- [GHSA-735f-pc8j-v9w8](https://github.com/advisories/GHSA-735f-pc8j-v9w8): GitHub Security Advisory
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#16254](https://github.com/opensearch-project/OpenSearch/pull/16254) | OpenSearch | Fix protobuf-java client leak |
@@ -102,10 +107,7 @@ This addresses a high-severity vulnerability in protobuf-java (transitive depend
 | [#746](https://github.com/opensearch-project/common-utils/pull/746) | common-utils | Gradle 8.10.2 |
 | [#688](https://github.com/opensearch-project/job-scheduler/pull/688) | job-scheduler | Gradle 8.10.2 + JDK 23 |
 
-## References
-
-- [CVE-2024-7254](https://nvd.nist.gov/vuln/detail/CVE-2024-7254): Protobuf DOS vulnerability
-- [GHSA-735f-pc8j-v9w8](https://github.com/advisories/GHSA-735f-pc8j-v9w8): GitHub Security Advisory
+### Issues (Design / RFC)
 - [Issue #16253](https://github.com/opensearch-project/OpenSearch/issues/16253): protobuf-java leak bug report
 - [Issue #2998](https://github.com/opensearch-project/ml-commons/issues/2998): tribuo-clustering-kmeans vulnerability
 

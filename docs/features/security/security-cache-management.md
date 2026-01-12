@@ -173,18 +173,20 @@ curl -X PUT "https://localhost:9200/_cluster/settings" \
 - Changing TTL recreates all caches, causing temporary cache misses
 - Disabling cache (`ttl_minutes: 0`) increases load on authentication backends
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01): Added selective user cache invalidation endpoint and dynamic TTL configuration
+
+## References
+
+### Documentation
+- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official security configuration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#5337](https://github.com/opensearch-project/security/pull/5337) | Add flush cache endpoint for individual user |
 | v3.1.0 | [#5324](https://github.com/opensearch-project/security/pull/5324) | Register cluster settings listener for dynamic TTL |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2829](https://github.com/opensearch-project/security/issues/2829): Feature request for per-user cache invalidation
-- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official security configuration
-
-## Change History
-
-- **v3.1.0** (2026-01): Added selective user cache invalidation endpoint and dynamic TTL configuration

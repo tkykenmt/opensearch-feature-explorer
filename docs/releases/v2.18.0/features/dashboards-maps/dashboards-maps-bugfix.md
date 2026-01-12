@@ -64,16 +64,16 @@ No migration required. This is a visual bug fix that takes effect automatically.
 - This is a short-term fix; ideally the flyout should be converted to a panel component for better compatibility with the new layout system
 - The breakpoint value (1576px) is specific to the current header implementation and may need adjustment if the header design changes
 
-## Related PRs
+## References
 
+### Documentation
+- [Maps Documentation](https://docs.opensearch.org/2.18/dashboards/visualize/maps/): Official Maps plugin documentation
+- [EuiFlyout Documentation](https://eui.elastic.co/#/layout/flyout): Elastic UI Flyout component reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#680](https://github.com/opensearch-project/dashboards-maps/pull/680) | Fix: prevent overlay from overlapping new application header |
-
-## References
-
-- [Maps Documentation](https://docs.opensearch.org/2.18/dashboards/visualize/maps/): Official Maps plugin documentation
-- [EuiFlyout Documentation](https://eui.elastic.co/#/layout/flyout): Elastic UI Flyout component reference
 
 ## Related Feature Report
 

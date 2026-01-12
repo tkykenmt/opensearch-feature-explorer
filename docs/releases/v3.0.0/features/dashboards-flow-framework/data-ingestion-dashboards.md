@@ -69,8 +69,13 @@ Data ingestion now uses JSON Lines format:
 - JSON Lines format requires one JSON object per line with no trailing commas
 - Error handling requires models with properly defined interfaces for best results
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Building AI search workflows](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/): Official OpenSearch Flow documentation
+- [JSON Lines specification](https://jsonlines.org/): JSON Lines format specification
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling; misc bug fixes |
@@ -83,13 +88,10 @@ Data ingestion now uses JSON Lines format:
 | [#654](https://github.com/opensearch-project/dashboards-flow-framework/pull/654) | Fixed bug related to Search Index in Local Cluster scenario |
 | [#672](https://github.com/opensearch-project/dashboards-flow-framework/pull/672) | Fix missed UI autofilling after JSON Lines change |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #571](https://github.com/opensearch-project/dashboards-flow-framework/issues/571): Fine-grained error handling feature request
 - [Issue #627](https://github.com/opensearch-project/dashboards-flow-framework/issues/627): Various bug fixes request
 - [Issue #653](https://github.com/opensearch-project/dashboards-flow-framework/issues/653): Search Index Local Cluster bug
-- [Documentation: Building AI search workflows](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/): Official OpenSearch Flow documentation
-- [JSON Lines specification](https://jsonlines.org/): JSON Lines format specification
 
 ## Related Feature Report
 

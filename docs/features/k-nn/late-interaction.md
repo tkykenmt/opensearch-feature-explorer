@@ -195,22 +195,26 @@ Late interaction models that can be used with OpenSearch:
 - Storage overhead: 10-100x more vectors compared to single-vector approaches
 - Query latency increases with the number of vectors per document
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-14): Initial implementation of `lateInteractionScore` function in k-NN plugin
+
+## References
+
+### Documentation
+- [Documentation: Late Interaction Score](https://docs.opensearch.org/latest/query-dsl/specialized/script-score/#late-interaction-score): Official documentation
+- [Documentation: Reranking by Field (Late Interaction)](https://docs.opensearch.org/latest/search-plugins/search-relevance/rerank-by-field-late-interaction/): Tutorial for late interaction reranking
+- [ColBERT Paper](https://arxiv.org/abs/2004.12832): Original ColBERT research paper
+- [ColPali Paper](https://arxiv.org/pdf/2407.01449): ColPali for document retrieval
+
+### Blog Posts
+- [Blog: Boost search relevance with late interaction models](https://opensearch.org/blog/boost-search-relevance-with-late-interaction-models/): Comprehensive guide to late interaction
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [k-NN#2909](https://github.com/opensearch-project/k-NN/pull/2909) | Add lateInteractionFunction |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue k-NN#2706](https://github.com/opensearch-project/k-NN/issues/2706): RFC for MultiVector Field Type for Late-interaction Score
 - [Issue OpenSearch#18091](https://github.com/opensearch-project/OpenSearch/issues/18091): Feature request for late interaction models support
-- [Documentation: Late Interaction Score](https://docs.opensearch.org/latest/query-dsl/specialized/script-score/#late-interaction-score): Official documentation
-- [Documentation: Reranking by Field (Late Interaction)](https://docs.opensearch.org/latest/search-plugins/search-relevance/rerank-by-field-late-interaction/): Tutorial for late interaction reranking
-- [Blog: Boost search relevance with late interaction models](https://opensearch.org/blog/boost-search-relevance-with-late-interaction-models/): Comprehensive guide to late interaction
-- [ColBERT Paper](https://arxiv.org/abs/2004.12832): Original ColBERT research paper
-- [ColPali Paper](https://arxiv.org/pdf/2407.01449): ColPali for document retrieval
-
-## Change History
-
-- **v3.3.0** (2025-10-14): Initial implementation of `lateInteractionScore` function in k-NN plugin

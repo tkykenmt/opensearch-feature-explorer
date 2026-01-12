@@ -147,8 +147,17 @@ const MyComponent = () => {
 - Theme-specific font sizes may vary between Next and V7 themes
 - Some third-party components may not follow the same density standards
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation across multiple dashboard plugins
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Advanced Settings](https://docs.opensearch.org/2.17/dashboards/management/advanced-settings/): Customize look and feel settings
+- [OpenSearch Dashboards](https://docs.opensearch.org/2.17/dashboards/): Main dashboards documentation
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v2.17.0 | [#826](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/826) | anomaly-detection-dashboards-plugin | Smaller buttons and compressed form components |
@@ -160,12 +169,3 @@ const MyComponent = () => {
 | v2.17.0 | [#398](https://github.com/opensearch-project/dashboards-reporting/pull/398) | dashboards-reporting | Smaller buttons and compressed form components |
 | v2.17.0 | [#421](https://github.com/opensearch-project/dashboards-search-relevance/pull/421) | dashboards-search-relevance | Smaller buttons and compressed form components |
 | v2.17.0 | [#349](https://github.com/opensearch-project/ml-commons-dashboards/pull/349) | ml-commons-dashboards | Smaller buttons and compressed form components |
-
-## References
-
-- [OpenSearch Dashboards Advanced Settings](https://docs.opensearch.org/2.17/dashboards/management/advanced-settings/): Customize look and feel settings
-- [OpenSearch Dashboards](https://docs.opensearch.org/2.17/dashboards/): Main dashboards documentation
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation across multiple dashboard plugins

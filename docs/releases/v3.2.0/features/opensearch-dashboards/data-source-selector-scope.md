@@ -128,16 +128,16 @@ For plugins using the data source menu directly:
 - The scope is determined at component mount time; dynamic workspace switching requires component remounting
 - Direct usage of `DataSourceSelector` (legacy component) requires manual scope handling via `getWorkspaces()`
 
-## Related PRs
+## References
 
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace documentation
+- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Data source management guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9832](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9832) | Support scope in data source selector |
-
-## References
-
-- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace documentation
-- [Data Sources Documentation](https://docs.opensearch.org/3.0/dashboards/management/data-sources/): Data source management guide
 
 ## Related Feature Report
 

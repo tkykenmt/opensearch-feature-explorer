@@ -76,19 +76,19 @@ With this fix, the setting change is now properly propagated to the transport la
 - The `SecureTransportParameters` interface is marked as `@ExperimentalApi`
 - Currently only exposes `dualModeEnabled()` parameter
 
-## Related PRs
+## References
 
+### Documentation
+- [TLS Configuration Documentation](https://docs.opensearch.org/2.18/security/configuration/tls/): Official TLS configuration guide
+- [PR #16387](https://github.com/opensearch-project/OpenSearch/pull/16387): Main implementation
+- [Security PR #4820](https://github.com/opensearch-project/security/pull/4820): Security plugin companion PR
+- [Security PR #4119](https://github.com/opensearch-project/security/pull/4119): Original change that introduced the regression
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16387](https://github.com/opensearch-project/OpenSearch/pull/16387) | Add method to return dynamic SecureTransportParameters from SecureTransportSettingsProvider interface |
 | [#4820](https://github.com/opensearch-project/security/pull/4820) | Companion PR: Ensure dual mode enabled flag from cluster settings can get propagated to core |
-
-## References
-
-- [PR #16387](https://github.com/opensearch-project/OpenSearch/pull/16387): Main implementation
-- [Security PR #4820](https://github.com/opensearch-project/security/pull/4820): Security plugin companion PR
-- [Security PR #4119](https://github.com/opensearch-project/security/pull/4119): Original change that introduced the regression
-- [TLS Configuration Documentation](https://docs.opensearch.org/2.18/security/configuration/tls/): Official TLS configuration guide
 
 ## Related Feature Report
 

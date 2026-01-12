@@ -106,17 +106,19 @@ POST /logs/_search
 - Memory usage scales with `size` parameter and number of sources
 - Thread safety in concurrent search scenarios requires careful handling
 
-## Related PRs
+## Change History
 
+- **v3.2.0**: Performance optimization - reusable Slot object, single-loop initialization, reduced GC pressure
+
+## References
+
+### Documentation
+- [Bucket Aggregations](https://docs.opensearch.org/3.0/aggregations/bucket/index/): OpenSearch documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18531](https://github.com/opensearch-project/OpenSearch/pull/18531) | Optimize by removing unnecessary object allocations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18440](https://github.com/opensearch-project/OpenSearch/issues/18440): Composite Terms Aggregation Performance Improvement
-- [Bucket Aggregations](https://docs.opensearch.org/3.0/aggregations/bucket/index/): OpenSearch documentation
-
-## Change History
-
-- **v3.2.0**: Performance optimization - reusable Slot object, single-loop initialization, reduced GC pressure

@@ -51,15 +51,15 @@ private boolean userProvided = true;
 
 None. This is a documentation-only change with no impact on functionality.
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #2190](https://github.com/opensearch-project/k-NN/pull/2190): Java Docs Fix for 2.x in Linux Machine
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2190](https://github.com/opensearch-project/k-NN/pull/2190) | Java Docs Fix For 2.x |
-
-## References
-
-- [PR #2190](https://github.com/opensearch-project/k-NN/pull/2190): Java Docs Fix for 2.x in Linux Machine
 
 ## Related Feature Report
 

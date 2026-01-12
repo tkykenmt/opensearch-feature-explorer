@@ -123,19 +123,21 @@ PUT /my-index/_settings
 - Nested aggregations limited to 3-4 levels (BUCKET → BUCKET → BUCKET → METRIC)
 - Updates and deletions still not supported (append-only requirement remains)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.1/search-plugins/star-tree-index/): Official star-tree index documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17855](https://github.com/opensearch-project/OpenSearch/pull/17855) | Support date range queries in star-tree aggregations |
 | [#18048](https://github.com/opensearch-project/OpenSearch/pull/18048) | Support nested bucket aggregations (terms, date histogram, range) |
 | [#18070](https://github.com/opensearch-project/OpenSearch/pull/18070) | Remove feature flag, add index-level star-tree search setting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17443](https://github.com/opensearch-project/OpenSearch/issues/17443): Date range query support request
 - [Issue #17274](https://github.com/opensearch-project/OpenSearch/issues/17274): Nested bucket aggregations request
-- [Documentation](https://docs.opensearch.org/3.1/search-plugins/star-tree-index/): Official star-tree index documentation
 
 ## Related Feature Report
 

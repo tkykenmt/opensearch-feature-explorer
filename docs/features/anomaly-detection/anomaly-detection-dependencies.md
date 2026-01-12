@@ -73,17 +73,17 @@ dependencies {
 - Jackson version must be compatible with OpenSearch core's jackson-core
 - Test dependencies should align with OpenSearch test framework versions
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#1337](https://github.com/opensearch-project/anomaly-detection/pull/1337) | Updating several dependencies |
-
-## References
-
-- [Anomaly Detection Repository](https://github.com/opensearch-project/anomaly-detection)
-- [Anomaly Detection Documentation](https://docs.opensearch.org/latest/observing-your-data/ad/index/)
-
 ## Change History
 
 - **v2.18.0** (2024-10-29): Updated Jackson to 2.18.0, JUnit Jupiter to 5.11.2, Mockito to 5.14.1; removed unused javassist dependency
+
+## References
+
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/latest/observing-your-data/ad/index/)
+- [Anomaly Detection Repository](https://github.com/opensearch-project/anomaly-detection)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#1337](https://github.com/opensearch-project/anomaly-detection/pull/1337) | Updating several dependencies |

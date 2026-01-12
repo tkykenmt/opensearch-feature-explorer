@@ -74,20 +74,20 @@ source=events | eval parsed = json_extract(payload, '$.status')
 - Documentation updates only; no functional changes to the SQL/PPL plugin
 - The V3 Calcite engine remains experimental
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL reference
+- [SQL/PPL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
+- [PR #3559](https://github.com/opensearch-project/sql/pull/3559): JSON functions implementation
+- [PR #3584](https://github.com/opensearch-project/sql/pull/3584): Array/Collection functions implementation
+- [PR #3574](https://github.com/opensearch-project/sql/pull/3574): Cryptographic functions implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3868](https://github.com/opensearch-project/sql/pull/3868) | Update ppl documentation index for new functions |
 | [#3801](https://github.com/opensearch-project/sql/pull/3801) | Update the limitation docs |
-
-## References
-
-- [PR #3559](https://github.com/opensearch-project/sql/pull/3559): JSON functions implementation
-- [PR #3584](https://github.com/opensearch-project/sql/pull/3584): Array/Collection functions implementation
-- [PR #3574](https://github.com/opensearch-project/sql/pull/3574): Cryptographic functions implementation
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): Official PPL reference
-- [SQL/PPL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
 
 ## Related Feature Report
 

@@ -113,22 +113,24 @@ POST _plugins/_alerting/comments
 - If the Security plugin is not installed, comment authors display as "Unknown"
 - Comments feature requires `plugins.alerting.comments_enabled` to be set to `true`
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Added comments search permission to `alerting_read_access`, expanded `alerting_ack_alerts` to full comment access
+- **v2.15.0** (2024-06-25): Initial Alerting Comments feature (experimental)
+
+## References
+
+### Documentation
+- [Alerting Comments Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/comments/): Official documentation
+- [Alerting Security Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/security/): Security configuration
+- [Predefined Roles](https://docs.opensearch.org/2.17/security/access-control/users-roles/): Security plugin predefined roles
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [security#4700](https://github.com/opensearch-project/security/pull/4700) | Adding alerting comments security actions to roles.yml |
 | v2.17.0 | [security#4724](https://github.com/opensearch-project/security/pull/4724) | Changing comments permission for alerting_ack_alerts role |
 | v2.15.0 | [alerting#1561](https://github.com/opensearch-project/alerting/pull/1561) | Alerting Comments feature (experimental) |
 
-## References
-
-- [Alerting Comments Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/comments/): Official documentation
-- [Alerting Security Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/security/): Security configuration
-- [Predefined Roles](https://docs.opensearch.org/2.17/security/access-control/users-roles/): Security plugin predefined roles
+### Issues (Design / RFC)
 - [GitHub Issue #6999](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6999): Alerting Comments feature tracking
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Added comments search permission to `alerting_read_access`, expanded `alerting_ack_alerts` to full comment access
-- **v2.15.0** (2024-06-25): Initial Alerting Comments feature (experimental)

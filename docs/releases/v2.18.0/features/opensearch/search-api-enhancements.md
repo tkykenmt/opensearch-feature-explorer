@@ -87,18 +87,20 @@ These are internal API changes. No migration is required for end users. Plugin d
 - The `WithFieldName` interface only provides access to a single field name; queries operating on multiple fields are not covered
 - `successfulSearchShardIndices` is populated only after search completion
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15916](https://github.com/opensearch-project/OpenSearch/pull/15916) | Implement WithFieldName interface in ValuesSourceAggregationBuilder & FieldSortBuilder |
 | [#15967](https://github.com/opensearch-project/OpenSearch/pull/15967) | Add successfulSearchShardIndices in searchRequestContext |
 | [#15705](https://github.com/opensearch-project/OpenSearch/pull/15705) | Adding WithFieldName interface for QueryBuilders with fieldName (prerequisite) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #69](https://github.com/opensearch-project/query-insights/issues/69): Query Shape Field Data Type RFC
-- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
 
 ## Related Feature Report
 

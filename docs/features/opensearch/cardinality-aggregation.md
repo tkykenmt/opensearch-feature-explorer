@@ -112,18 +112,20 @@ Requirements for pruning:
 - High-cardinality fields may consume significant memory with ordinals collector
 - Pruning optimization may not apply in all scenarios
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Fixed pruning optimization regression caused by Lucene 10.3.0's BulkScorer behavior; replaced with self-collecting approach
+
+## References
+
+### Documentation
+- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
+- [HyperLogLog++ Paper](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/40671.pdf)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19473](https://github.com/opensearch-project/OpenSearch/pull/19473) | Fix cardinality agg pruning optimization by self collecting |
 
-## References
-
-- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
-- [HyperLogLog++ Paper](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/40671.pdf)
+### Issues (Design / RFC)
 - [Issue #19367](https://github.com/opensearch-project/OpenSearch/issues/19367): Performance regression after Lucene 10.3.0
-
-## Change History
-
-- **v3.3.0**: Fixed pruning optimization regression caused by Lucene 10.3.0's BulkScorer behavior; replaced with self-collecting approach

@@ -176,8 +176,17 @@ Widget C,19.99,200
 - **Disabled by Default**: Plugin must be explicitly enabled in configuration
 - **No Index Creation UI**: Index settings and mappings cannot be customized through the UI
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025): Initial implementation with CSV, JSON, and NDJSON support; MDS compatibility; file upload and text input modes
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+- [Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/data_importer/README.md)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9602](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9602) | Add a new Data Importer Plugin to OSD Core |
@@ -185,13 +194,6 @@ Widget C,19.99,200
 | v3.0.0 | [#10478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10478) | Move Data Importer to Data Administration under settings |
 | v3.0.0 | [#10961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10961) | Data importer UI fixes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9199](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9199): RFC - Integrate a Data Importer Plugin into Dashboards
 - [Issue #1791](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1791): Original feature request
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-- [Plugin README](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/src/plugins/data_importer/README.md)
-
-## Change History
-
-- **v3.0.0** (2025): Initial implementation with CSV, JSON, and NDJSON support; MDS compatibility; file upload and text input modes

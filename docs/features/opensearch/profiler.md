@@ -266,8 +266,22 @@ When concurrent segment search is enabled, the profiler provides additional slic
 - Does not measure queue wait time
 - Plugin metrics are only included in the query breakdown, not as separate sections (v3.2.0+)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-08-12): Expanded fetch phase profiling to support inner hits and top hits aggregation phases
+- **v3.2.0** (2025-07-31): Added comprehensive fetch phase profiling with detailed timing breakdowns for fetch operations and sub-phases
+- **v3.2.0** (2025-08-05): Added plugin profiling extensibility and multi-shard fetch phase profiling
+- **v3.2.0** (2025-06-21): Fixed incorrect timing values for concurrent segment search when timers have zero invocations
+
+## References
+
+### Documentation
+- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
+- [Concurrent Segment Search](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Related feature
+- [Inner Hits Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/inner-hits/): Inner hits usage
+- [Top Hits Aggregation](https://docs.opensearch.org/3.0/aggregations/metric/top-hits/): Top hits aggregation usage
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18936](https://github.com/opensearch-project/OpenSearch/pull/18936) | Expand fetch phase profiling to support inner hits and top hits aggregation phases |
@@ -276,20 +290,8 @@ When concurrent segment search is enabled, the profiler provides additional slic
 | v3.2.0 | [#18887](https://github.com/opensearch-project/OpenSearch/pull/18887) | Expand fetch phase profiling to multi-shard queries |
 | v3.2.0 | [#18540](https://github.com/opensearch-project/OpenSearch/pull/18540) | Fix concurrent timings in profiler |
 
-## References
-
-- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
-- [Concurrent Segment Search](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Related feature
-- [Inner Hits Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/inner-hits/): Inner hits usage
-- [Top Hits Aggregation](https://docs.opensearch.org/3.0/aggregations/metric/top-hits/): Top hits aggregation usage
+### Issues (Design / RFC)
 - [Issue #18460](https://github.com/opensearch-project/OpenSearch/issues/18460): RFC for Profiling Extensibility
 - [Issue #1764](https://github.com/opensearch-project/OpenSearch/issues/1764): Original fetch phase profiling request
 - [Issue #18862](https://github.com/opensearch-project/OpenSearch/issues/18862): Feature request for inner hits and top hits profiling
 - [Issue #18864](https://github.com/opensearch-project/OpenSearch/issues/18864): META issue for fetch phase profiling
-
-## Change History
-
-- **v3.3.0** (2025-08-12): Expanded fetch phase profiling to support inner hits and top hits aggregation phases
-- **v3.2.0** (2025-07-31): Added comprehensive fetch phase profiling with detailed timing breakdowns for fetch operations and sub-phases
-- **v3.2.0** (2025-08-05): Added plugin profiling extensibility and multi-shard fetch phase profiling
-- **v3.2.0** (2025-06-21): Fixed incorrect timing values for concurrent segment search when timers have zero invocations

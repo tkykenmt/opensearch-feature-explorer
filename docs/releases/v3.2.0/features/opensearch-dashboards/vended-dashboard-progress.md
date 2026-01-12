@@ -105,17 +105,17 @@ No migration required. The feature is automatically enabled when viewing Vended 
 - Polling interval is fixed at 10 seconds (not configurable via UI)
 - Progress percentages are approximations based on state machine stages
 
-## Related PRs
+## References
 
+### Documentation
+- [Flint Index State Machine](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/index.md#index-state-transition): State transition documentation
+- [Scheduled Query Acceleration](https://docs.opensearch.org/3.0/dashboards/management/scheduled-query-acceleration/): Official documentation
+- [opensearch-spark #1195](https://github.com/opensearch-project/opensearch-spark/pull/1195): Index state reporting support
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9862](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9862) | Implement polling for index state in Vended Dashboard progress |
-
-## References
-
-- [opensearch-spark #1195](https://github.com/opensearch-project/opensearch-spark/pull/1195): Index state reporting support
-- [Flint Index State Machine](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/index.md#index-state-transition): State transition documentation
-- [Scheduled Query Acceleration](https://docs.opensearch.org/3.0/dashboards/management/scheduled-query-acceleration/): Official documentation
 
 ## Related Feature Report
 

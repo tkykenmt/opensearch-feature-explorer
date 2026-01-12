@@ -77,18 +77,20 @@ No migration required. These are bug fixes that improve existing functionality. 
 - The feature remains experimental and is not recommended for production use
 - HTTP/2 or HTTP/1.1 with chunked transfer encoding is required
 
-## Related PRs
+## References
 
+### Documentation
+- [Streaming Bulk API Documentation](https://docs.opensearch.org/2.18/api-reference/document-apis/bulk-streaming/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16158](https://github.com/opensearch-project/OpenSearch/pull/16158) | Fix streaming bulk request hangs |
 | [#16337](https://github.com/opensearch-project/OpenSearch/pull/16337) | Fix intermittent newline termination failures |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16035](https://github.com/opensearch-project/OpenSearch/issues/16035): Streaming bulk request hangs
 - [Issue #16214](https://github.com/opensearch-project/OpenSearch/issues/16214): Intermittent newline termination failures
-- [Streaming Bulk API Documentation](https://docs.opensearch.org/2.18/api-reference/document-apis/bulk-streaming/)
 - [Reactor Netty Issue #3452](https://github.com/reactor/reactor-netty/issues/3452): Partial chunk handling
 
 ## Related Feature Report

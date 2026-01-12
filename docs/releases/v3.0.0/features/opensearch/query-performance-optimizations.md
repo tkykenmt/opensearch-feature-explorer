@@ -115,8 +115,14 @@ GET /logs/_search
 - For sparse data, the optimization may add overhead due to BKD tree traversal costs
 - Composite aggregations are not supported by filter rewrite optimization
 
-## Related PRs
+## References
 
+### Documentation
+- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/)
+- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): TermInSetQuery sorting overhead
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |
@@ -124,17 +130,7 @@ GET /logs/_search
 | [#17447](https://github.com/opensearch-project/OpenSearch/pull/17447) | Support sub agg in filter rewrite optimization |
 | [#17889](https://github.com/opensearch-project/OpenSearch/pull/17889) | Disable scoring of keyword term search by default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12602](https://github.com/opensearch-project/OpenSearch/issues/12602): Proposal for sub-aggregation support in filter rewrite
 - [Issue #17823](https://github.com/opensearch-project/OpenSearch/issues/17823): Keyword term search performance regression since 2.18
-- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): TermInSetQuery sorting overhead
 - [Lucene Issue #14445](https://github.com/apache/lucene/issues/14445): Keyword term query performance regression
-- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/)
-- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
-
-## Related Feature Reports
-
-- [Terms Query](../../../features/opensearch/terms-query.md)
-- [Filter Rewrite Optimization](../../../features/opensearch/filter-rewrite-optimization.md)
-- [Query Performance Optimizations](../../../features/opensearch/query-performance-optimizations.md)

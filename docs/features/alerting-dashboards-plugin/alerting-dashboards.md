@@ -91,20 +91,20 @@ Bucket-level monitors support various filter operators:
 - Keyword filters (INCLUDE/EXCLUDE) are only supported for bucket-level monitors
 - Multi-Data Source requires explicit configuration in OpenSearch Dashboards
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#1325](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1325) | Allow keyword filter to be attached to bucket level monitor trigger |
-| v3.4.0 | [#1313](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1313) | Onboarded opensearch apis to use MDS client when MDS is enabled |
+- **v3.4.0** (2026-01): Added keyword filter support for bucket-level monitor triggers; Fixed MDS client usage for OpenSearch API calls
 
 ## References
 
+### Documentation
 - [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
 - [Triggers Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/triggers/): Trigger configuration guide
 - [Per Query and Per Bucket Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-query-bucket-monitors/): Monitor types documentation
 - [Alerting Dashboards Plugin Repository](https://github.com/opensearch-project/alerting-dashboards-plugin): Source code repository
 
-## Change History
-
-- **v3.4.0** (2026-01): Added keyword filter support for bucket-level monitor triggers; Fixed MDS client usage for OpenSearch API calls
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#1325](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1325) | Allow keyword filter to be attached to bucket level monitor trigger |
+| v3.4.0 | [#1313](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1313) | Onboarded opensearch apis to use MDS client when MDS is enabled |

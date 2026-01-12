@@ -130,18 +130,20 @@ PUT /my-index/_settings
 - Force merge operations are resource-intensive and may impact query performance during execution
 - The feature respects resource thresholds but may still cause temporary performance degradation
 
-## Related PRs
+## References
 
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+- [Creating a Cluster - Warm Nodes](https://docs.opensearch.org/3.1/tuning-your-cluster/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18082](https://github.com/opensearch-project/OpenSearch/pull/18082) | Add Warm Disk Threshold Allocation Decider for Warm shards |
 | [#18229](https://github.com/opensearch-project/OpenSearch/pull/18229) | Added Auto Force Merge Manager to enhance hot to warm migration |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8535](https://github.com/opensearch-project/OpenSearch/issues/8535): Add support for a FileCacheDecider
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
-- [Creating a Cluster - Warm Nodes](https://docs.opensearch.org/3.1/tuning-your-cluster/)
 
 ## Related Feature Report
 

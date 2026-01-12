@@ -107,18 +107,20 @@ Node join/leave is handled automatically by the cluster. Relevant log messages:
 - Node-join requests are rejected if the node has a pending disconnect to prevent race conditions
 - The `pendingDisconnections` tracking is only maintained on the active cluster manager
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Fixed race condition in node-join/node-left loop by introducing pending disconnection tracking
+
+## References
+
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/cluster-settings/): Cluster configuration options
+- [Creating a Cluster](https://docs.opensearch.org/2.18/tuning-your-cluster/): Cluster tuning guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#15521](https://github.com/opensearch-project/OpenSearch/pull/15521) | Fix race condition in node-join/node-left loop |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4874](https://github.com/opensearch-project/OpenSearch/issues/4874): Race in node-left and node-join can prevent node from joining the cluster indefinitely
-- [Cluster Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/cluster-settings/): Cluster configuration options
-- [Creating a Cluster](https://docs.opensearch.org/2.18/tuning-your-cluster/): Cluster tuning guide
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Fixed race condition in node-join/node-left loop by introducing pending disconnection tracking

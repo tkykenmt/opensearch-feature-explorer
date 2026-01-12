@@ -94,8 +94,12 @@ A critical backend fix prevents workload group deletion when associated rules ex
 - Live Query column is hidden when Query Insights plugin is not installed
 - Requires data source version >= 3.1 for version decoupling support
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#299](https://github.com/opensearch-project/query-insights-dashboards/pull/299) | query-insights-dashboards | Bi-directional navigation between WLM and Live Queries |
@@ -107,11 +111,9 @@ A critical backend fix prevents workload group deletion when associated rules ex
 | [#363](https://github.com/opensearch-project/query-insights-dashboards/pull/363) | query-insights-dashboards | Version decouple unit tests |
 | [#19502](https://github.com/opensearch-project/OpenSearch/pull/19502) | OpenSearch | Add check to stop workload group deletion with associated rules |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #153](https://github.com/opensearch-project/query-insights-dashboards/issues/153): Feature request for bi-directional navigation
 - [Issue #19388](https://github.com/opensearch-project/OpenSearch/issues/19388): Bug report for WLM _rules API ValidationException
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
 
 ## Related Feature Report
 

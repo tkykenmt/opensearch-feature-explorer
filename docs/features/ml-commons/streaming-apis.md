@@ -282,21 +282,25 @@ data: {"inference_results":[{"output":[{"name":"response","dataAsMap":{"content"
 - **Security Configuration**: Requires specific HTTP type configuration (`reactor-netty4-secure`) for security-enabled clusters
 - **Multi-node Setup**: Requires additional Arrow Flight host configuration
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025): Initial implementation with Predict Stream and Execute Stream Agent APIs
+
+## References
+
+### Documentation
+- [Predict Stream API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/train-predict/predict-stream/)
+- [Execute Stream Agent API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/agent-apis/execute-stream-agent/)
+- [Installing Plugins](https://docs.opensearch.org/latest/install-and-configure/plugins/)
+
+### Blog Posts
+- [Blog: Introducing real-time streaming for AI models and agents](https://opensearch.org/blog/introducing-real-time-streaming-for-ai-models-and-agents-in-opensearch/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [ml-commons#4187](https://github.com/opensearch-project/ml-commons/pull/4187) | [FEATURE] Predict Stream - model prediction streaming |
 | v3.3.0 | [ml-commons#4212](https://github.com/opensearch-project/ml-commons/pull/4212) | [FEATURE] Agent Execute Stream - agent execution streaming |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue ml-commons#3630](https://github.com/opensearch-project/ml-commons/issues/3630): RFC for Remote Model Inference Streaming
-- [Predict Stream API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/train-predict/predict-stream/)
-- [Execute Stream Agent API Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/agent-apis/execute-stream-agent/)
-- [Blog: Introducing real-time streaming for AI models and agents](https://opensearch.org/blog/introducing-real-time-streaming-for-ai-models-and-agents-in-opensearch/)
-- [Installing Plugins](https://docs.opensearch.org/latest/install-and-configure/plugins/)
-
-## Change History
-
-- **v3.3.0** (2025): Initial implementation with Predict Stream and Execute Stream Agent APIs

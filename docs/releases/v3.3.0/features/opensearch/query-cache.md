@@ -87,17 +87,19 @@ PUT _cluster/settings
 - The query cache only caches filter context queries, not query context queries
 - Segments with fewer than 10,000 documents are not cached regardless of settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): OpenSearch documentation on filter caching
+- [Lucene PR #14412](https://github.com/apache/lucene/pull/14412): Upstream Lucene change enabling dynamic skip cache factor
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18351](https://github.com/opensearch-project/OpenSearch/pull/18351) | Add a dynamic setting to change skip_cache_factor and min_frequency for querycache |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17736](https://github.com/opensearch-project/OpenSearch/issues/17736): Original feature request
-- [Lucene PR #14412](https://github.com/apache/lucene/pull/14412): Upstream Lucene change enabling dynamic skip cache factor
-- [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): OpenSearch documentation on filter caching
 
 ## Related Feature Report
 

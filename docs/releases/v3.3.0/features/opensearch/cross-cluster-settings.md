@@ -80,16 +80,18 @@ No migration required. This is a bug fix that improves the reliability of existi
 - The fix only affects the `skip_unavailable` setting persistence during configuration updates
 - Other cross-cluster settings behavior remains unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18766](https://github.com/opensearch-project/OpenSearch/pull/18766) | Fix skip_unavailable setting changing to default during node drop |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13798](https://github.com/opensearch-project/OpenSearch/issues/13798): Original bug report
-- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official docs
 
 ## Related Feature Report
 

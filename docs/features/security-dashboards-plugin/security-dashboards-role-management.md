@@ -115,20 +115,22 @@ To view role permissions in OpenSearch Dashboards:
 - Very large permission lists may impact page rendering performance
 - Custom permissions not in the predefined list must be added via API or YAML configuration
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-06): Added full index pattern display, added missing index permissions (`mget*`, `mtv*`, `bulk*`)
+
+## References
+
+### Documentation
+- [Documentation: Defining users and roles](https://docs.opensearch.org/3.2/security/access-control/users-roles/)
+- [Documentation: Permissions](https://docs.opensearch.org/3.2/security/access-control/permissions/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#2254](https://github.com/opensearch-project/security-dashboards-plugin/pull/2254) | Show all index patterns in index permission panel |
 | v3.2.0 | [#2255](https://github.com/opensearch-project/security-dashboards-plugin/pull/2255) | Add missing index permissions to the list |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1303](https://github.com/opensearch-project/security-dashboards-plugin/issues/1303): Index permissions view abbreviated with no way to expand
 - [Issue #1969](https://github.com/opensearch-project/security-dashboards-plugin/issues/1969): Permissions not displayed in index permissions category
-- [Documentation: Defining users and roles](https://docs.opensearch.org/3.2/security/access-control/users-roles/)
-- [Documentation: Permissions](https://docs.opensearch.org/3.2/security/access-control/permissions/)
-
-## Change History
-
-- **v3.2.0** (2025-06): Added full index pattern display, added missing index permissions (`mget*`, `mtv*`, `bulk*`)

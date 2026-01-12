@@ -78,20 +78,22 @@ flowchart TB
 - If two or more aliases are renamed to the same name, they will be merged
 - Clone optimization only applies to document replication clusters (not remote store enabled clusters)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/): Snapshot restore API reference
+- [Documentation PR #8544](https://github.com/opensearch-project/documentation-website/pull/8544): Documentation update
+- [API Spec PR #615](https://github.com/opensearch-project/opensearch-api-specification/pull/615): API specification update
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16292](https://github.com/opensearch-project/OpenSearch/pull/16292) | Add support for renaming aliases during snapshot restore |
 | [#16296](https://github.com/opensearch-project/OpenSearch/pull/16296) | Optimise clone operation for incremental full cluster snapshots |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15632](https://github.com/opensearch-project/OpenSearch/issues/15632): Feature request for alias renaming
 - [Issue #16295](https://github.com/opensearch-project/OpenSearch/issues/16295): Clone operation optimization request
-- [Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/): Snapshot restore API reference
-- [API Spec PR #615](https://github.com/opensearch-project/opensearch-api-specification/pull/615): API specification update
-- [Documentation PR #8544](https://github.com/opensearch-project/documentation-website/pull/8544): Documentation update
 
 ## Related Feature Report
 

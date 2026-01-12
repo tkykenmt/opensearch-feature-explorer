@@ -140,19 +140,6 @@ window.MonacoEnvironment = {
 - Custom language support requires implementing full language service
 - Some advanced Monaco features may not be exposed through the OSD wrapper
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9618) | Bump monaco-editor from 0.30.1 to 0.52.0 |
-| v3.0.0 | [#9497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9497) | Bump monaco-editor from 0.17.0 to 0.30.1 |
-
-## References
-
-- [Issue #9573](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9573): Monaco upgrade implementation notes
-- [Monaco Editor Documentation](https://microsoft.github.io/monaco-editor/): Official Monaco documentation
-- [Monaco Editor GitHub](https://github.com/microsoft/monaco-editor): Source repository
-
 ## Change History
 
 - **v3.0.0** (2025-05-06): Major upgrade from 0.17.0 to 0.52.0
@@ -162,3 +149,18 @@ window.MonacoEnvironment = {
   - Added built-in suggestion status bar
   - Updated completion provider signatures with context and token parameters
   - Added babel plugins for modern JavaScript syntax support
+
+## References
+
+### Documentation
+- [Monaco Editor Documentation](https://microsoft.github.io/monaco-editor/): Official Monaco documentation
+- [Monaco Editor GitHub](https://github.com/microsoft/monaco-editor): Source repository
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#9618](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9618) | Bump monaco-editor from 0.30.1 to 0.52.0 |
+| v3.0.0 | [#9497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9497) | Bump monaco-editor from 0.17.0 to 0.30.1 |
+
+### Issues (Design / RFC)
+- [Issue #9573](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9573): Monaco upgrade implementation notes

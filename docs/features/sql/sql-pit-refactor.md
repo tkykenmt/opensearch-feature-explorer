@@ -144,23 +144,23 @@ POST _plugins/_sql
 - Additional API calls required to create/delete PIT contexts
 - Not compatible with cursors from Scroll-based pagination
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2981](https://github.com/opensearch-project/sql/pull/2981) | Add missing refactoring of Scroll to PIT API calls for Joins and Pagination query |
-| v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Bug fixes for minor issues with SQL PIT refactor |
-| v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |
-| v2.18.0 | [#3108](https://github.com/opensearch-project/sql/pull/3108) | Backport: PIT refactor bug fixes |
+- **v2.18.0** (2024-10-29): Initial implementation - Refactored SQL plugin to use PIT API for joins and pagination queries
 
 ## References
 
+### Documentation
 - [Point in Time Documentation](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/): Official PIT documentation
 - [PIT in SQL](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time/#pit-in-sql): SQL-specific PIT usage
 - [Point in Time API](https://docs.opensearch.org/2.18/search-plugins/searching-data/point-in-time-api/): PIT API reference
 - [SQL Pagination API](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/#paginating-results): Pagination documentation
 - [Paginate Results](https://docs.opensearch.org/2.18/search-plugins/searching-data/paginate/): General pagination guide
 
-## Change History
-
-- **v2.18.0** (2024-10-29): Initial implementation - Refactored SQL plugin to use PIT API for joins and pagination queries
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#2981](https://github.com/opensearch-project/sql/pull/2981) | Add missing refactoring of Scroll to PIT API calls for Joins and Pagination query |
+| v2.18.0 | [#3045](https://github.com/opensearch-project/sql/pull/3045) | Bug fixes for minor issues with SQL PIT refactor |
+| v2.18.0 | [#3106](https://github.com/opensearch-project/sql/pull/3106) | Fix: SQL pagination with `pretty` parameter |
+| v2.18.0 | [#3108](https://github.com/opensearch-project/sql/pull/3108) | Backport: PIT refactor bug fixes |

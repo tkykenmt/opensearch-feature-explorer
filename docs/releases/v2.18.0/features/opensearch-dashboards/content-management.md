@@ -96,18 +96,18 @@ This is an additive change with no breaking changes. Existing code continues to 
 - The `getPage` API is marked as experimental and may change in future releases
 - Section removal is immediate and triggers a re-render via RxJS BehaviorSubject
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #8624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8624): Main implementation
+- [PR #7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201): Original Content Management plugin introduction (v2.16.0)
+- [PR #7651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7651): Update section input API (v2.17.0)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8624) | Add Page API to allow remove section |
 | [#8631](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8631) | Backport to 2.x branch |
-
-## References
-
-- [PR #8624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8624): Main implementation
-- [PR #7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201): Original Content Management plugin introduction (v2.16.0)
-- [PR #7651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7651): Update section input API (v2.17.0)
 
 ## Related Feature Report
 

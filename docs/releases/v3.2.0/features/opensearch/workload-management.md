@@ -99,19 +99,19 @@ If you have automation scripts that create or modify workload groups, ensure tha
 - GET operations for workload groups are still allowed when WLM is disabled (read-only access)
 - The validation only applies to REST API operations; internal cluster state changes are not affected
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Workload Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18652](https://github.com/opensearch-project/OpenSearch/pull/18652) | Add WLM mode validation for workload group CRUD requests |
 | [#18709](https://github.com/opensearch-project/OpenSearch/pull/18709) | Rename WorkloadGroupTestUtil to WorkloadManagementTestUtil |
 | [#18711](https://github.com/opensearch-project/OpenSearch/pull/18711) | Rename QueryGroup to WorkloadGroup in comments and Javadocs |
 | [#18712](https://github.com/opensearch-project/OpenSearch/pull/18712) | Modify logging message in WorkloadGroupService to show actual resiliency mode |
-
-## References
-
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Workload Group Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/workload-group-lifecycle-api/)
 
 ## Related Feature Report
 

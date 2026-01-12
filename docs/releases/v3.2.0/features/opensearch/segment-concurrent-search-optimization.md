@@ -89,15 +89,17 @@ The optimized grouping algorithm provides:
 - The optimization is most effective when segments have significantly different document counts
 - For segments with similar document counts, the improvement may be minimal
 
-## Related PRs
+## References
 
+### Documentation
+- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18451](https://github.com/opensearch-project/OpenSearch/pull/18451) | Optimize grouping for segment concurrent search by ensuring that documents within each group are as equal as possible |
 
-## References
-
-- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+### Issues (Design / RFC)
 - [Issue #7358](https://github.com/opensearch-project/OpenSearch/issues/7358): Original issue discussing slice computation mechanisms
 
 ## Related Feature Report

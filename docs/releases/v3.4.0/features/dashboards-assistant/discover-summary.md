@@ -97,17 +97,17 @@ To enable log pattern summaries:
 - Index type detection requires the index name to be passed from the UI
 - Only works with PPL queries in Discover when query assist is enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Summary Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/data-summary/): Official docs for data summary feature
+- [Log Pattern Tool](https://docs.opensearch.org/3.4/ml-commons-plugin/agents-tools/tools/log-pattern-tool/): ML Commons log pattern tool documentation
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#550](https://github.com/opensearch-project/dashboards-assistant/pull/550) | dashboards-assistant | Support log pattern in discover summary |
 | [#9693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9693) | OpenSearch-Dashboards | Support log pattern agent in discover summary |
-
-## References
-
-- [Data Summary Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/data-summary/): Official docs for data summary feature
-- [Log Pattern Tool](https://docs.opensearch.org/3.4/ml-commons-plugin/agents-tools/tools/log-pattern-tool/): ML Commons log pattern tool documentation
 
 ## Related Feature Report
 

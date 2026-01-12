@@ -113,19 +113,23 @@ GET testindex_skiplist/_search
 - Performance benefits are most noticeable for range queries and aggregations on fields with high cardinality
 - The `scaled_float`, `token_count`, and `size` field mappers pass `false` for skip_list internally
 
-## Related PRs
+## References
 
+### Documentation
+- [Numeric field types documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/numeric/)
+- [PR #18066](https://github.com/opensearch-project/OpenSearch/pull/18066): Previous implementation (replaced by #18889)
+
+### Blog Posts
+- [OpenSearch 3.2 Release Blog](https://opensearch.org/blog/introducing-opensearch-3-2-next-generation-search-and-anayltics-with-enchanced-ai-capabilities/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18889](https://github.com/opensearch-project/OpenSearch/pull/18889) | Add skip_list parameter to Numeric Field Mappers (default false) |
 | [#10560](https://github.com/opensearch-project/documentation-website/pull/10560) | Documentation: Add skip_list parameter to numeric field type |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17965](https://github.com/opensearch-project/OpenSearch/issues/17965): [SparseIndex] Modify FieldMappers to enable SkipList
-- [PR #18066](https://github.com/opensearch-project/OpenSearch/pull/18066): Previous implementation (replaced by #18889)
-- [Numeric field types documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/numeric/)
-- [OpenSearch 3.2 Release Blog](https://opensearch.org/blog/introducing-opensearch-3-2-next-generation-search-and-anayltics-with-enchanced-ai-capabilities/)
 
 ## Related Feature Report
 

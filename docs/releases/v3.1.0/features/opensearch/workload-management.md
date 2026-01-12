@@ -113,16 +113,18 @@ If the cluster state changes during pagination (workload groups added/removed), 
 - Maximum page size is 100 results
 - Token becomes invalid if workload groups are added or removed during pagination
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17638](https://github.com/opensearch-project/OpenSearch/pull/17638) | Add paginated wlm/stats API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17592](https://github.com/opensearch-project/OpenSearch/issues/17592): Feature request for paginating _wlm/stats API
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
 - [Issue #14257](https://github.com/opensearch-project/OpenSearch/issues/14257): Pagination for _cat APIs
 - [Issue #15014](https://github.com/opensearch-project/OpenSearch/issues/15014): Introduction of _list APIs
 

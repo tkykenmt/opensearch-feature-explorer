@@ -80,17 +80,19 @@ No configuration changes required. The optimization is automatically applied to 
 - This is an internal optimization with no user-facing configuration
 - Performance gains depend on workload characteristics (more benefit for numeric-heavy indices)
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene PR #321](https://github.com/apache/lucene/pull/321): Original Lucene optimization for primitive writes
+- [RateLimitedIndexOutput](https://github.com/apache/lucene/blob/main/lucene/core/src/java/org/apache/lucene/store/RateLimitedIndexOutput.java): Lucene reference implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19432](https://github.com/opensearch-project/OpenSearch/pull/19432) | Delegate primitive write methods with ByteSizeCachingDirectory wrapped IndexOutput |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19420](https://github.com/opensearch-project/OpenSearch/issues/19420): Bug report identifying the missing delegation
-- [Lucene PR #321](https://github.com/apache/lucene/pull/321): Original Lucene optimization for primitive writes
-- [RateLimitedIndexOutput](https://github.com/apache/lucene/blob/main/lucene/core/src/java/org/apache/lucene/store/RateLimitedIndexOutput.java): Lucene reference implementation
 
 ## Related Feature Report
 

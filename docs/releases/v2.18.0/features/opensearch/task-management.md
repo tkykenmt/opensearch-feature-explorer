@@ -82,16 +82,18 @@ GET .tasks/_search
 - The `resource_stats` field is stored as a disabled object (not indexed/searchable)
 - This fix is specifically for the internal `.tasks` system index
 
-## Related PRs
+## References
 
+### Documentation
+- [Tasks API Documentation](https://docs.opensearch.org/2.18/api-reference/tasks/): Official Tasks API docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16201](https://github.com/opensearch-project/OpenSearch/pull/16201) | Fix missing fields in task index mapping |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16060](https://github.com/opensearch-project/OpenSearch/issues/16060): Original bug report
-- [Tasks API Documentation](https://docs.opensearch.org/2.18/api-reference/tasks/): Official Tasks API docs
 
 ## Related Feature Report
 

@@ -177,8 +177,18 @@ GET /.async-query-scheduler/_search
 - Feature flag must be enabled for the scheduler to function
 - `checkpoint_location` is required when using external scheduler mode
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-23): Bugfix - Remove scheduler index from SystemIndexDescriptor to prevent conflicts with Job Scheduler plugin
+- **v2.17.0** (2024-09-17): Initial implementation with Job Scheduler integration, scheduler service, and feature flag support
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/scheduled-query-acceleration/): Scheduled Query Acceleration
+- [Flint Index Reference](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/index.md): OpenSearch Spark documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#3097](https://github.com/opensearch-project/sql/pull/3097) | Remove scheduler index from SystemIndexDescriptor |
@@ -186,15 +196,7 @@ GET /.async-query-scheduler/_search
 | v2.17.0 | [#2961](https://github.com/opensearch-project/sql/pull/2961) | Flint query scheduler part 2 - scheduler service and Flint integration |
 | v2.17.0 | [#2973](https://github.com/opensearch-project/sql/pull/2973) | Add feature flag for async query scheduler |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2832](https://github.com/opensearch-project/sql/issues/2832): Integrate job scheduler plugin
 - [Issue #2833](https://github.com/opensearch-project/sql/issues/2833): Introduce scheduling service
 - [RFC #416](https://github.com/opensearch-project/opensearch-spark/issues/416): Direct Query External Query Scheduler
-- [Documentation](https://docs.opensearch.org/2.18/dashboards/management/scheduled-query-acceleration/): Scheduled Query Acceleration
-- [Flint Index Reference](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/index.md): OpenSearch Spark documentation
-
-## Change History
-
-- **v2.18.0** (2024-10-23): Bugfix - Remove scheduler index from SystemIndexDescriptor to prevent conflicts with Job Scheduler plugin
-- **v2.17.0** (2024-09-17): Initial implementation with Job Scheduler integration, scheduler service, and feature flag support

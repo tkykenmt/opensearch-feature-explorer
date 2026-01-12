@@ -96,16 +96,18 @@ No migration required. This is a backward-compatible enhancement. Existing workf
 - Only `connector_id`, `model_id`, and `agent_id` are automatically parsed from previous node inputs
 - Other custom parameters must still be specified explicitly in the `parameters` field
 
-## Related PRs
+## References
 
+### Documentation
+- [Connector Tool Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/agents-tools/tools/connector-tool/): Official ConnectorTool documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#846](https://github.com/opensearch-project/flow-framework/pull/846) | Support parsing connector_id when creating tools |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #845](https://github.com/opensearch-project/flow-framework/issues/845): Feature request for connector_id parsing
-- [Connector Tool Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/agents-tools/tools/connector-tool/): Official ConnectorTool documentation
 
 ## Related Feature Report
 

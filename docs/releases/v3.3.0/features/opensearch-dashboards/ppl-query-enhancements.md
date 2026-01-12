@@ -73,20 +73,20 @@ No migration required. These are additive improvements to the existing Query Pan
 - PPL Formatter requires the query to be syntactically valid for best results
 - Formatting preferences are not configurable in this release
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/index/): Official PPL documentation
+- [Query Workbench](https://docs.opensearch.org/3.3/dashboards/query-workbench/): Query Workbench documentation
+- [SQL Plugin PR #4106](https://github.com/opensearch-project/sql/pull/4106): Source PPL grammar update
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10503](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10503) | Add PPL Formatter in Query panel |
 | [#10536](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10536) | Update Simplified PPL grammar to latest version |
 | [#10581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10581) | Remove error popover from query panel |
 | [#10446](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10446) | Fix Enter command behaviour in query editor |
-
-## References
-
-- [PPL Documentation](https://docs.opensearch.org/3.3/search-plugins/sql/ppl/index/): Official PPL documentation
-- [Query Workbench](https://docs.opensearch.org/3.3/dashboards/query-workbench/): Query Workbench documentation
-- [SQL Plugin PR #4106](https://github.com/opensearch-project/sql/pull/4106): Source PPL grammar update
 
 ## Related Feature Report
 

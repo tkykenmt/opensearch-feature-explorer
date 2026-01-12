@@ -86,8 +86,14 @@ Gson 2.13.x includes a bug fix for collection deserialization and internal class
 - Dependency updates may introduce subtle behavioral changes
 - Some updates are backported to 2.x and 3.0 branches where applicable
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2025-27820](https://www.mend.io/vulnerability-database/CVE-2025-27820): Apache HttpCore5 vulnerability
+- [Gson 2.13.0 Release Notes](https://github.com/google/gson/releases/tag/gson-parent-2.13.0)
+- [Netty Releases](https://github.com/netty/netty/releases)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18152](https://github.com/opensearch-project/OpenSearch/pull/18152) | Update Apache HttpClient5 and HttpCore5 (CVE-2025-27820) |
@@ -111,12 +117,6 @@ Gson 2.13.x includes a bug fix for collection deserialization and internal class
 | [#18468](https://github.com/opensearch-project/OpenSearch/pull/18468) | Bump com.squareup.okio:okio from 3.10.2 to 3.12.0 |
 | [#18469](https://github.com/opensearch-project/OpenSearch/pull/18469) | Bump com.azure:azure-xml from 1.1.0 to 1.2.0 |
 | [#18470](https://github.com/opensearch-project/OpenSearch/pull/18470) | Bump com.maxmind.db:maxmind-db from 3.1.1 to 3.2.0 |
-
-## References
-
-- [CVE-2025-27820](https://www.mend.io/vulnerability-database/CVE-2025-27820): Apache HttpCore5 vulnerability
-- [Gson 2.13.0 Release Notes](https://github.com/google/gson/releases/tag/gson-parent-2.13.0)
-- [Netty Releases](https://github.com/netty/netty/releases)
 
 ## Related Feature Report
 

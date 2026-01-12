@@ -143,17 +143,19 @@ This is a transparent enhancement. Existing indexes using custom codecs will con
 - The composite index support inherits all limitations of star-tree indexes (append-only, specific query/aggregation support)
 - ZSTD codecs still cannot be used with k-NN or Security Analytics indexes
 
-## Related PRs
+## References
 
+### Documentation
+- [Star-tree Index Documentation](https://docs.opensearch.org/3.2/search-plugins/star-tree-index/): Official star-tree index documentation
+- [Index Codecs Documentation](https://docs.opensearch.org/3.2/im-plugin/index-codecs/): Custom codecs documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#263](https://github.com/opensearch-project/custom-codecs/pull/263) | Adding support for composite index |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #209](https://github.com/opensearch-project/custom-codecs/issues/209): Feature request for composite codec support
-- [Star-tree Index Documentation](https://docs.opensearch.org/3.2/search-plugins/star-tree-index/): Official star-tree index documentation
-- [Index Codecs Documentation](https://docs.opensearch.org/3.2/im-plugin/index-codecs/): Custom codecs documentation
 
 ## Related Feature Report
 

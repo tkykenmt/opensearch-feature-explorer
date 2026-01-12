@@ -93,17 +93,19 @@ No migration is required. The new format is additive and does not affect existin
 - The `epoch_micros` format is not supported by Joda time (used in legacy date parsing), only by the Java time API
 - Maximum value is constrained by Java's `Long.MAX_VALUE` divided by 1,000,000
 
-## Related PRs
+## References
 
+### Documentation
+- [Date field type documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/date/): Official date field documentation
+- [Format mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/format/): Date format configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19245](https://github.com/opensearch-project/OpenSearch/pull/19245) | Add `epoch_micros` date format |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14669](https://github.com/opensearch-project/OpenSearch/issues/14669): Feature request for epoch_micros support
-- [Date field type documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/date/): Official date field documentation
-- [Format mapping parameter](https://docs.opensearch.org/3.0/field-types/mapping-parameters/format/): Date format configuration
 
 ## Related Feature Report
 

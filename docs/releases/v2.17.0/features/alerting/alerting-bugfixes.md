@@ -66,8 +66,9 @@ Removed the `workspaceAvailability` field from the plugin configuration, which w
 - Lock renewal timeout is fixed at 5 minutes and not configurable
 - Trigger name validation applies only to new monitors; existing monitors with duplicate trigger names are not affected
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1623](https://github.com/opensearch-project/alerting/pull/1623) | alerting | Fix monitor renew lock issue |
@@ -80,8 +81,7 @@ Removed the `workspaceAvailability` field from the plugin configuration, which w
 | [#1071](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1071) | alerting-dashboards-plugin | Backport trigger name validation to 2.17 |
 | [#1073](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1073) | alerting-dashboards-plugin | Fix alerts card in all-use case overview page |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1617](https://github.com/opensearch-project/alerting/issues/1617): Distribution build issue
 - [Issue #671](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/671): Trigger name validation issue
 - [Issue #1039](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/1039): AddAlertingMonitor test failure

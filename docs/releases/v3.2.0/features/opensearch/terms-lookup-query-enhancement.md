@@ -107,16 +107,18 @@ This query:
 - Query-based lookup may have higher latency than ID-based lookup due to search execution
 - The `store` parameter works with both ID and query-based lookups
 
-## Related PRs
+## References
 
+### Documentation
+- [Terms Query Documentation](https://docs.opensearch.org/3.2/query-dsl/term/terms/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Enhance terms lookup query to take a query clause |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17599](https://github.com/opensearch-project/OpenSearch/issues/17599): Original feature request
-- [Terms Query Documentation](https://docs.opensearch.org/3.2/query-dsl/term/terms/): Official documentation
 
 ## Related Feature Report
 

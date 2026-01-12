@@ -139,8 +139,20 @@ Requires ML agent configuration:
 - S3 field support requires query enhancements to be enabled
 - Cache refresh clears all dataset caches, not individual ones
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-11-06): Added log pattern detection for Discover Summary - automatically uses specialized `os_data2summary_with_log_pattern` agent for log indexes
+- **v3.2.0** (2025-08-05): Fixed empty page issue when no index patterns exist, added Cypress tests for discover visualization
+- **v3.0.0** (2025-05-13): Added CSV export functionality, reorganized results display with ResultsActionBar, customizable summary panel title, experimental Data plugin `__enhance` API with resultsActionBar, and 6 bug fixes for saved search handling and workspace integration
+- **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
+
+## References
+
+### Documentation
+- [Analyzing data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official documentation
+- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/): AI summary feature docs
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#550](https://github.com/opensearch-project/dashboards-assistant/pull/550) | Support log pattern in discover summary |
@@ -170,19 +182,9 @@ Requires ML agent configuration:
 | v2.18.0 | [#8755](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8755) | Fix time field wrapping overlap on language change |
 | v2.18.0 | [#8707](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8707) | Ensure saved query loaded properly from asset |
 
-## References
-
-- [Analyzing data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official documentation
-- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/): AI summary feature docs
+### Issues (Design / RFC)
 - [Issue #8177](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8177): Feature request for LLM data summary
 - [Issue #7626](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7626): Discover hang bug report
 - [Issue #8612](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8612): Bug report for deleted index pattern issue
 - [Issue #9309](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9309): URL sync subscription leak
 - [Issue #9318](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9318): flattenHit array mutation bug
-
-## Change History
-
-- **v3.4.0** (2025-11-06): Added log pattern detection for Discover Summary - automatically uses specialized `os_data2summary_with_log_pattern` agent for log indexes
-- **v3.2.0** (2025-08-05): Fixed empty page issue when no index patterns exist, added Cypress tests for discover visualization
-- **v3.0.0** (2025-05-13): Added CSV export functionality, reorganized results display with ResultsActionBar, customizable summary panel title, experimental Data plugin `__enhance` API with resultsActionBar, and 6 bug fixes for saved search handling and workspace integration
-- **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability

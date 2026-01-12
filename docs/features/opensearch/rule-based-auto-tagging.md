@@ -213,20 +213,22 @@ When evaluating a request:
 - All attribute conditions must match (AND logic, no OR support)
 - Feature types must be registered at startup
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-03-11): Initial implementation with rule schema, Patricia Trie-based storage, and rule processing service
+
+## References
+
+### Documentation
+- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+- [Workload Management Overview](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17238](https://github.com/opensearch-project/OpenSearch/pull/17238) | Add rule schema for auto tagging |
 | v3.0.0 | [#17342](https://github.com/opensearch-project/OpenSearch/pull/17342) | Add in-memory attribute value store |
 | v3.0.0 | [#17365](https://github.com/opensearch-project/OpenSearch/pull/17365) | Add in-memory rule processing service |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC - Automated labeling of search requests
-- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
-- [Workload Management Overview](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-
-## Change History
-
-- **v3.0.0** (2025-03-11): Initial implementation with rule schema, Patricia Trie-based storage, and rule processing service

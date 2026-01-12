@@ -62,17 +62,19 @@ Last updated: {{ctx.monitor.last_update_time}}
 - This fix is in the common-utils library; the Alerting plugin must use the updated version to benefit from these changes
 - The original issue (alerting#200) remains open as there may be additional context variables to add
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Alerting Documentation](https://opensearch.org/docs/latest/monitoring-plugins/alerting/monitors/#available-variables): Available variables documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#710](https://github.com/opensearch-project/common-utils/pull/710) | Add missing ctx variables |
 | [#318](https://github.com/opensearch-project/common-utils/pull/318) | Original PR (superseded by #710) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #200](https://github.com/opensearch-project/alerting/issues/200): Missing ctx variables for Actions
-- [OpenSearch Alerting Documentation](https://opensearch.org/docs/latest/monitoring-plugins/alerting/monitors/#available-variables): Available variables documentation
 
 ## Related Feature Report
 

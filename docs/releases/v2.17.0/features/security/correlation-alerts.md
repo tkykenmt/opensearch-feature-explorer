@@ -79,8 +79,13 @@ POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
 - Correlation alerts are only generated for rule-based correlations, not auto-correlations
 - The permissions are specific to the Security Analytics plugin's correlation alerts feature
 
-## Related PRs
+## References
 
+### Documentation
+- [Correlation Engine APIs](https://docs.opensearch.org/2.17/security-analytics/api-tools/correlation-eng/): Official documentation
+- [Working with Alerts](https://docs.opensearch.org/2.17/security-analytics/usage/alerts/): Security Analytics alerts documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4689](https://github.com/opensearch-project/security/pull/4689) | Added API roles for correlationAlerts (backport to 2.x) |
@@ -88,11 +93,8 @@ POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
 | [#4688](https://github.com/opensearch-project/security/pull/4688) | Original PR: Added API roles for correlationAlerts |
 | [#4701](https://github.com/opensearch-project/security/pull/4701) | Original PR: Permission changes for correlationAlerts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #988](https://github.com/opensearch-project/security-analytics/issues/988): Feature request - Alerts in Correlations
-- [Correlation Engine APIs](https://docs.opensearch.org/2.17/security-analytics/api-tools/correlation-eng/): Official documentation
-- [Working with Alerts](https://docs.opensearch.org/2.17/security-analytics/usage/alerts/): Security Analytics alerts documentation
 
 ## Related Feature Report
 

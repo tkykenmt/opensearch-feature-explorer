@@ -134,17 +134,17 @@ The Overview page automatically displays:
 - Dashboard state management uses RxJS BehaviorSubjects (temporary solution, planned migration to Redux or React Context)
 - The `createAssets` API workspace support only applies to new asset creation, not existing assets
 
-## Related PRs
+## References
 
+### Documentation
+- [Observability Documentation](https://docs.opensearch.org/2.17/observing-your-data/): Official observability docs
+- [OpenSearch-Dashboards #7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201): Content Management plugin introduction
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2101](https://github.com/opensearch-project/dashboards-observability/pull/2101) | Make createAssets API compatible with workspace |
 | [#2077](https://github.com/opensearch-project/dashboards-observability/pull/2077) | OverviewPage made with Content Management |
-
-## References
-
-- [OpenSearch-Dashboards #7201](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7201): Content Management plugin introduction
-- [Observability Documentation](https://docs.opensearch.org/2.17/observing-your-data/): Official observability docs
 
 ## Related Feature Report
 

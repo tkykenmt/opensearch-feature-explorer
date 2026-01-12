@@ -139,18 +139,22 @@ Existing queries continue to work without changes. To enable batch processing:
 - Local models continue to use single inference mode
 - Long documents exceeding model token limits (512 tokens) may require chunked processing
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/tutorials/vector-search/semantic-highlighting-tutorial/): Semantic highlighting tutorial
+- [SageMaker Blueprint](https://github.com/opensearch-project/ml-commons/blob/main/docs/remote_inference_blueprints/standard_blueprints/sagemaker_semantic_highlighter_standard_blueprint.md): Amazon SageMaker semantic highlighter blueprint
+
+### Blog Posts
+- [Blog](https://opensearch.org/blog/batch-processing-semantic-highlighting-in-opensearch-3-3/): Batch Processing Semantic Highlighting in OpenSearch 3.3
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [neural-search#1520](https://github.com/opensearch-project/neural-search/pull/1520) | Add semantic highlighting response processor with batch inference support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1516](https://github.com/opensearch-project/neural-search/issues/1516): Batch Inference Support for Semantic Highlighting
-- [Documentation](https://docs.opensearch.org/3.0/tutorials/vector-search/semantic-highlighting-tutorial/): Semantic highlighting tutorial
-- [Blog](https://opensearch.org/blog/batch-processing-semantic-highlighting-in-opensearch-3-3/): Batch Processing Semantic Highlighting in OpenSearch 3.3
-- [SageMaker Blueprint](https://github.com/opensearch-project/ml-commons/blob/main/docs/remote_inference_blueprints/standard_blueprints/sagemaker_semantic_highlighter_standard_blueprint.md): Amazon SageMaker semantic highlighter blueprint
 
 ## Related Feature Report
 

@@ -119,18 +119,22 @@ Key differences:
 - Complex use cases like `TikaImpl` that use `AccessControlContext` need alternative approaches
 - The Java agent only intercepts specific privileged operations (file/network access), not all JSM permission types
 
-## Related PRs
+## References
 
+### Documentation
+- [JEP 486](https://openjdk.org/jeps/486): JDK AccessController removal
+
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Background on JSM replacement strategy
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18346](https://github.com/opensearch-project/OpenSearch/pull/18346) | Create equivalents of JSM's AccessController in the java agent |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18339](https://github.com/opensearch-project/OpenSearch/issues/18339): Original feature request
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): JSM replacement discussion
-- [JEP 486](https://openjdk.org/jeps/486): JDK AccessController removal
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Background on JSM replacement strategy
 
 ## Related Feature Report
 

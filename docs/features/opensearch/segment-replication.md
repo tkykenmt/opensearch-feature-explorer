@@ -119,8 +119,23 @@ GET _cat/segment_replication?v
 - Increased network bandwidth usage on primary shards (node-to-node mode)
 - Get/MultiGet/TermVector operations route to primary for strong reads
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-09): Fixed NullPointerException in SegmentReplicator.getSegmentReplicationStats() caused by race condition; Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
+- **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
+- **v3.0.0** (2025-05-13): Implemented shard-level stats computation on replicas; Fixed skewed lag metric when same checkpoint published twice; Increased default segment counter step size from 10 to 100,000; Added configurable publish checkpoint retry timeout setting
+
+## References
+
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
+- [Segment Replication Backpressure](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/backpressure/): Backpressure mechanism
+- [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API for viewing metrics
+
+### Blog Posts
+- [Segment Replication Blog](https://opensearch.org/blog/segment-replication/): Introduction blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19214](https://github.com/opensearch-project/OpenSearch/pull/19214) | Add reference count control in NRTReplicationEngine#acquireLastIndexCommit |
@@ -131,21 +146,10 @@ GET _cat/segment_replication?v
 | v3.0.0 | [#17568](https://github.com/opensearch-project/OpenSearch/pull/17568) | Increase the default segment counter step size when replica promoting |
 | v3.0.0 | [#17749](https://github.com/opensearch-project/OpenSearch/pull/17749) | Add cluster setting for retry timeout of publish checkpoint tx action |
 
-## References
-
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
-- [Segment Replication Backpressure](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/backpressure/): Backpressure mechanism
-- [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API for viewing metrics
+### Issues (Design / RFC)
 - [Issue #19213](https://github.com/opensearch-project/OpenSearch/issues/19213): Bug report for NRTReplicationEngine file deletion issue
 - [Issue #18437](https://github.com/opensearch-project/OpenSearch/issues/18437): Bug report for lag metric issue
 - [Issue #16801](https://github.com/opensearch-project/OpenSearch/issues/16801): Feature request for redefining segment replication metrics computation
 - [Issue #10764](https://github.com/opensearch-project/OpenSearch/issues/10764): Bug report for skewed lag metric
 - [Issue #17566](https://github.com/opensearch-project/OpenSearch/issues/17566): Feature request for increased segment counter step size
 - [Issue #17595](https://github.com/opensearch-project/OpenSearch/issues/17595): Bug report for segment replication stopping when publish checkpoint fails
-- [Segment Replication Blog](https://opensearch.org/blog/segment-replication/): Introduction blog post
-
-## Change History
-
-- **v3.3.0** (2025-09-09): Fixed NullPointerException in SegmentReplicator.getSegmentReplicationStats() caused by race condition; Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
-- **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
-- **v3.0.0** (2025-05-13): Implemented shard-level stats computation on replicas; Fixed skewed lag metric when same checkpoint published twice; Increased default segment counter step size from 10 to 100,000; Added configurable publish checkpoint retry timeout setting

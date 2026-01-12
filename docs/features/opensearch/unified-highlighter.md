@@ -136,18 +136,20 @@ GET my-index/_search
 - Text reanalysis can be slow for very large fields
 - `matched_fields` requires all fields to have compatible content
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-05-19): Added `matched_fields` support using Lucene 10's `withMaskedFieldsFunc` API
+
+## References
+
+### Documentation
+- [Highlight Query Matches](https://docs.opensearch.org/3.0/search-plugins/searching-data/highlight/): Official highlighting documentation
+- [Documentation PR #9793](https://github.com/opensearch-project/documentation-website/pull/9793): Documentation for matched_fields support
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#18166](https://github.com/opensearch-project/OpenSearch/pull/18166) | Add support for matched_fields with the unified highlighter |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18164](https://github.com/opensearch-project/OpenSearch/issues/18164): Feature request for matched_fields support
-- [Highlight Query Matches](https://docs.opensearch.org/3.0/search-plugins/searching-data/highlight/): Official highlighting documentation
-- [Documentation PR #9793](https://github.com/opensearch-project/documentation-website/pull/9793): Documentation for matched_fields support
-
-## Change History
-
-- **v3.1.0** (2025-05-19): Added `matched_fields` support using Lucene 10's `withMaskedFieldsFunc` API

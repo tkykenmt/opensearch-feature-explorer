@@ -253,8 +253,20 @@ GET /logs/_search
 - Hard bounds in date histogram disable skip list optimization
 - Requires reindexing to enable on existing fields
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-01): Extended skip list support - Added date histogram aggregation optimization, extended to date/scaled_float/token_count fields, added sub-aggregation support, auto-enabled for @timestamp and index sort fields
+- **v3.2.0** (2025-08-19): Initial implementation - Added `skip_list` parameter to all numeric field mappers
+
+## References
+
+### Documentation
+- [Documentation PR #10560](https://github.com/opensearch-project/documentation-website/pull/10560): Add skip_list parameter documentation
+- [Numeric field types documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/numeric/)
+- [Date histogram aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+- [PR #18066](https://github.com/opensearch-project/OpenSearch/pull/18066): Previous implementation (replaced by #18889)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19130](https://github.com/opensearch-project/OpenSearch/pull/19130) | Adding logic for histogram aggregation using skiplist |
@@ -263,18 +275,8 @@ GET /logs/_search
 | v3.3.0 | [#19480](https://github.com/opensearch-project/OpenSearch/pull/19480) | Enable skip_list for @timestamp field or index sort field by default |
 | v3.2.0 | [#18889](https://github.com/opensearch-project/OpenSearch/pull/18889) | Add skip_list parameter to Numeric Field Mappers (default false) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17965](https://github.com/opensearch-project/OpenSearch/issues/17965): [SparseIndex] Modify FieldMappers to enable SkipList
 - [Issue #17283](https://github.com/opensearch-project/OpenSearch/issues/17283): Support for sub-aggregations
 - [Issue #19123](https://github.com/opensearch-project/OpenSearch/issues/19123): Enable skip_list by default in 3.3
-- [PR #18066](https://github.com/opensearch-project/OpenSearch/pull/18066): Previous implementation (replaced by #18889)
-- [Documentation PR #10560](https://github.com/opensearch-project/documentation-website/pull/10560): Add skip_list parameter documentation
 - [Documentation Issue #11166](https://github.com/opensearch-project/documentation-website/issues/11166): Public documentation for skip_list
-- [Numeric field types documentation](https://docs.opensearch.org/latest/field-types/supported-field-types/numeric/)
-- [Date histogram aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
-
-## Change History
-
-- **v3.3.0** (2025-10-01): Extended skip list support - Added date histogram aggregation optimization, extended to date/scaled_float/token_count fields, added sub-aggregation support, auto-enabled for @timestamp and index sort fields
-- **v3.2.0** (2025-08-19): Initial implementation - Added `skip_list` parameter to all numeric field mappers

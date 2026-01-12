@@ -105,8 +105,13 @@ SELECT * FROM my_security_lake.amazon_security_lake_glue_db_us_west_2.amazon_sec
 - DML operations (INSERT, UPDATE, DELETE) are blocked
 - Covering index acceleration is disabled when Lake Formation is enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Amazon Security Lake Documentation](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html)
+- [OpenSearch S3 Data Source Documentation](https://docs.opensearch.org/2.17/dashboards/management/S3-data-source/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2858](https://github.com/opensearch-project/sql/pull/2858) | Add flags for Iceberg and Lake Formation and Security Lake as a data source type |
@@ -114,11 +119,8 @@ SELECT * FROM my_security_lake.amazon_security_lake_glue_db_us_west_2.amazon_sec
 | [#2959](https://github.com/opensearch-project/sql/pull/2959) | Adds validation to allow only flint queries and sql SELECT queries to security lake type datasource |
 | [#2977](https://github.com/opensearch-project/sql/pull/2977) | Backport #2959 to 2.17 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2907](https://github.com/opensearch-project/sql/issues/2907): Limit Spark SQL queries to SELECT + FLINT commands when Lake Formation is enabled
-- [Amazon Security Lake Documentation](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html)
-- [OpenSearch S3 Data Source Documentation](https://docs.opensearch.org/2.17/dashboards/management/S3-data-source/)
 
 ## Related Feature Report
 

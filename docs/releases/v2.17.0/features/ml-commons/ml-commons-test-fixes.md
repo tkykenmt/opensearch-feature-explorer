@@ -95,18 +95,20 @@ POST /_plugins/_ml/models/_register?deploy=true
 - The Bedrock Guardrails tutorial requires AWS credentials with appropriate permissions
 - Guardrail configuration requires creating and managing guardrails in Amazon Bedrock console first
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Guardrails Documentation](https://opensearch.org/docs/latest/ml-commons-plugin/remote-models/guardrails/): Official guardrails documentation
+- [AWS Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-create.html): Creating guardrails in Amazon Bedrock
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2407](https://github.com/opensearch-project/ml-commons/pull/2407) | Test: recover search index tool IT in multi node cluster |
 | [#2695](https://github.com/opensearch-project/ml-commons/pull/2695) | Add tutorial for Bedrock Guardrails |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2362](https://github.com/opensearch-project/ml-commons/issues/2362): Bug report for multi-node cluster test failure
-- [OpenSearch Guardrails Documentation](https://opensearch.org/docs/latest/ml-commons-plugin/remote-models/guardrails/): Official guardrails documentation
-- [AWS Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-create.html): Creating guardrails in Amazon Bedrock
 
 ## Related Feature Report
 

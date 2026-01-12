@@ -96,21 +96,23 @@ PUT /my-index/_settings
 - Force merge thread pool size is calculated at node startup and cannot be changed dynamically
 - The `cluster.default.index.max_merge_at_once` setting only affects indexes without explicit index-level overrides
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official docs
+- [Lucene PR #266](https://github.com/apache/lucene/pull/266): Lucene maxMergeAtOnce increase
+- [Lucene PR #14189](https://github.com/apache/lucene/pull/14189): Lucene floor segment size increase
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17255](https://github.com/opensearch-project/OpenSearch/pull/17255) | Increase force merge threads to 1/8th of cores |
 | [#17699](https://github.com/opensearch-project/OpenSearch/pull/17699) | Increase floor segment size to 16MB |
 | [#17774](https://github.com/opensearch-project/OpenSearch/pull/17774) | Increase default maxMergeAtOnce to 30 and add cluster setting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17051](https://github.com/opensearch-project/OpenSearch/issues/17051): Increase maxMergeAtOnce parameter in OpenSearch 3.0
 - [Issue #16935](https://github.com/opensearch-project/OpenSearch/issues/16935): OpenSearch 3.0 Core Release Tracker
-- [Lucene PR #266](https://github.com/apache/lucene/pull/266): Lucene maxMergeAtOnce increase
-- [Lucene PR #14189](https://github.com/apache/lucene/pull/14189): Lucene floor segment size increase
-- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official docs
 
 ## Related Feature Report
 

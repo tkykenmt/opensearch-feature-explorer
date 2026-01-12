@@ -72,20 +72,20 @@ No migration required. The updated roles are automatically applied when upgradin
 - Comment permissions are inherited from the monitor's backend roles
 - If the Security plugin is not installed, comment authors display as "Unknown"
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Comments Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/comments/): Official documentation for alerting comments
+- [Alerting Security Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/security/): Security configuration for alerting
+- [alerting#1561](https://github.com/opensearch-project/alerting/pull/1561): Alerting Comments feature implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [security#4700](https://github.com/opensearch-project/security/pull/4700) | [Backport 2.x] Adding alerting comments security actions to roles.yml |
 | [security#4724](https://github.com/opensearch-project/security/pull/4724) | [Backport 2.17] Changing comments permission for alerting_ack_alerts role |
 | [security#4699](https://github.com/opensearch-project/security/pull/4699) | Adding alerting comments security actions to roles.yml (main) |
 | [security#4709](https://github.com/opensearch-project/security/pull/4709) | Changing comments permission for alerting_ack_alerts role (main) |
-
-## References
-
-- [Alerting Comments Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/comments/): Official documentation for alerting comments
-- [Alerting Security Documentation](https://docs.opensearch.org/2.17/observing-your-data/alerting/security/): Security configuration for alerting
-- [alerting#1561](https://github.com/opensearch-project/alerting/pull/1561): Alerting Comments feature implementation
 
 ## Related Feature Report
 

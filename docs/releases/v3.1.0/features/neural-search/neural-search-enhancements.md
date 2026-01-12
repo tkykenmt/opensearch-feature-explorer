@@ -114,20 +114,22 @@ PUT _ingest/pipeline/char-chunking-pipeline
 - `fixed_char_length` chunker `overlap_rate` is limited to 0-0.5 range
 - Token weights from analyzers must be encoded as 4-byte floats in the payload attribute
 
-## Related PRs
+## References
 
+### Documentation
+- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/): Official docs
+- [Text Chunking Processor Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/text-chunking/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |
 | [#1342](https://github.com/opensearch-project/neural-search/pull/1342) | Add FixedCharLengthChunker for character length-based chunking |
 | [#1359](https://github.com/opensearch-project/neural-search/pull/1359) | Validate model_id and analyzer mutual exclusivity |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1052](https://github.com/opensearch-project/neural-search/issues/1052): RFC for analyzer-based neural sparse query
 - [Issue #1261](https://github.com/opensearch-project/neural-search/issues/1261): Proposal for RecursiveCharacterTextSplitter
-- [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/): Official docs
-- [Text Chunking Processor Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/text-chunking/): Official docs
 
 ## Related Feature Report
 

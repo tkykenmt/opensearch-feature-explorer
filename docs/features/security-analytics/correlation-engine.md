@@ -160,23 +160,25 @@ The correlation graph in OpenSearch Dashboards displays:
 - Time window affects correlation detection - findings outside the window are not correlated
 - Correlation is focused on security use cases; general-purpose event correlation requires custom implementation
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Removed incomplete events-correlation-engine from core |
-| v2.x | Various | Security Analytics correlation engine implementation |
-
-## References
-
-- [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/): Main Security Analytics documentation
-- [Correlation Engine APIs](https://docs.opensearch.org/3.0/security-analytics/api-tools/correlation-eng/): API reference
-- [Creating Correlation Rules](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/correlation-config/): Configuration guide
-- [Working with the Correlation Graph](https://docs.opensearch.org/3.0/security-analytics/usage/correlation-graph/): UI guide
-- [Blog: Correlating security events](https://opensearch.org/blog/correlating-security-events/): Feature overview
-
 ## Change History
 
 - **v3.0.0** (2024-12): Removed incomplete events-correlation-engine plugin from OpenSearch core; correlation functionality remains available through Security Analytics plugin
 - **v2.9.0**: Correlation engine enhancements in Security Analytics
 - **v2.6.0**: Initial correlation engine release in Security Analytics plugin
+
+## References
+
+### Documentation
+- [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/): Main Security Analytics documentation
+- [Correlation Engine APIs](https://docs.opensearch.org/3.0/security-analytics/api-tools/correlation-eng/): API reference
+- [Creating Correlation Rules](https://docs.opensearch.org/3.0/security-analytics/sec-analytics-config/correlation-config/): Configuration guide
+- [Working with the Correlation Graph](https://docs.opensearch.org/3.0/security-analytics/usage/correlation-graph/): UI guide
+
+### Blog Posts
+- [Blog: Correlating security events](https://opensearch.org/blog/correlating-security-events/): Feature overview
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Removed incomplete events-correlation-engine from core |
+| v2.x | Various | Security Analytics correlation engine implementation |

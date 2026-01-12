@@ -64,17 +64,19 @@ No migration required. This fix is automatically applied when upgrading to v3.2.
 - Archived settings themselves still cannot be modified on open indices (must close the index first)
 - This fix only addresses the validation blocking issue; archived settings remain in the cluster state until explicitly cleared
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Settings API](https://docs.opensearch.org/3.2/api-reference/cluster-api/cluster-settings/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18885](https://github.com/opensearch-project/OpenSearch/pull/18885) | Ignore archived settings on update |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8714](https://github.com/opensearch-project/OpenSearch/issues/8714): Original bug report - Unable to change any cluster setting
 - [Issue #18515](https://github.com/opensearch-project/OpenSearch/issues/18515): Cannot update cluster settings after upgrading to 3.0.0
-- [Cluster Settings API](https://docs.opensearch.org/3.2/api-reference/cluster-api/cluster-settings/): Official documentation
 
 ## Related Feature Report
 

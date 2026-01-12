@@ -144,19 +144,21 @@ PUT _snapshot/my-s3-repo
 - SSE setting is determined at index creation time and cannot be changed afterward
 - Snapshot restore preserves the original SSE setting from the source index
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19630](https://github.com/opensearch-project/OpenSearch/pull/19630) | Add support for repository with Server side encryption enabled and client side encryption |
+- **v3.4.0** (2025-10-28): Initial implementation with `BlobStoreProvider` and SSE support for S3 repositories
 
 ## References
 
-- [Issue #19235](https://github.com/opensearch-project/OpenSearch/issues/19235): Original feature request
+### Documentation
 - [Remote-backed storage](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official documentation
 - [S3 Server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html): AWS S3 SSE documentation
 - [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Repository configuration options
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#19630](https://github.com/opensearch-project/OpenSearch/pull/19630) | Add support for repository with Server side encryption enabled and client side encryption |
 
-- **v3.4.0** (2025-10-28): Initial implementation with `BlobStoreProvider` and SSE support for S3 repositories
+### Issues (Design / RFC)
+- [Issue #19235](https://github.com/opensearch-project/OpenSearch/issues/19235): Original feature request

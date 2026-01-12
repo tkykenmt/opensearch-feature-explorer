@@ -154,18 +154,20 @@ ActionListener<SearchResponse> searchStatusStatsUpdateListener = ActionListener.
 - Historical data is not persisted; counters reset on node restart
 - Does not track internal search phases (query, fetch) separately
 
-## Related PRs
+## Change History
 
+- **v3.4.0**: Initial implementation with `StatusCounterStats`, `SearchResponseStatusStats`, and refactored `DocStatusStats`
+
+## References
+
+### Documentation
+- [Node Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation for the Node Stats API
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#18601](https://github.com/opensearch-project/OpenSearch/pull/18601) | Add search API tracker |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18377](https://github.com/opensearch-project/OpenSearch/issues/18377): Feature request for tracking non-successful Search API calls across coordinator nodes
 - [Issue #18438](https://github.com/opensearch-project/OpenSearch/issues/18438): Bug report requesting DocStatusStats refactoring
-- [Node Stats API](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation for the Node Stats API
-
-## Change History
-
-- **v3.4.0**: Initial implementation with `StatusCounterStats`, `SearchResponseStatusStats`, and refactored `DocStatusStats`

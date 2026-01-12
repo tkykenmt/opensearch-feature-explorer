@@ -133,8 +133,22 @@ POST /my-index/_scale
 - Search-only mode blocks all write operations on the index
 - Recovery behavior depends on remote store state configuration
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-04-08): Added scale-to-zero support, auto-expand search replicas, and strict routing setting
+- **v2.17.0** (2024-09): Initial experimental implementation with search replicas and pull-based replication
+
+## References
+
+### Documentation
+- [Documentation: Scale API](https://docs.opensearch.org/3.0/api-reference/index-apis/scale/)
+- [Documentation: Separate Index and Search Workloads](https://docs.opensearch.org/3.0/tuning-your-cluster/separate-index-and-search-workloads/)
+- [Documentation: Index Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/)
+
+### Blog Posts
+- [Blog: Improve OpenSearch cluster performance by separating search and indexing workloads](https://opensearch.org/blog/improve-opensearch-cluster-performance-by-separating-search-and-indexing-workloads/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17299](https://github.com/opensearch-project/OpenSearch/pull/17299) | Scale-to-zero (search_only mode) support |
@@ -143,18 +157,8 @@ POST /my-index/_scale
 | v2.17.0 | [#15368](https://github.com/opensearch-project/OpenSearch/pull/15368) | Initial search replica implementation |
 | v2.17.0 | [#15445](https://github.com/opensearch-project/OpenSearch/pull/15445) | Pull-based replica support |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15306](https://github.com/opensearch-project/OpenSearch/issues/15306): META - Reader/Writer Separation
 - [Issue #16720](https://github.com/opensearch-project/OpenSearch/issues/16720): Scale to Zero feature request
 - [Issue #17310](https://github.com/opensearch-project/OpenSearch/issues/17310): Auto-expand-replica for search replicas
 - [Issue #17424](https://github.com/opensearch-project/OpenSearch/issues/17424): Strict routing for search replicas
-- [Documentation: Scale API](https://docs.opensearch.org/3.0/api-reference/index-apis/scale/)
-- [Documentation: Separate Index and Search Workloads](https://docs.opensearch.org/3.0/tuning-your-cluster/separate-index-and-search-workloads/)
-- [Documentation: Index Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/)
-- [Blog: Improve OpenSearch cluster performance by separating search and indexing workloads](https://opensearch.org/blog/improve-opensearch-cluster-performance-by-separating-search-and-indexing-workloads/)
-
-## Change History
-
-- **v3.0.0** (2025-04-08): Added scale-to-zero support, auto-expand search replicas, and strict routing setting
-- **v2.17.0** (2024-09): Initial experimental implementation with search replicas and pull-based replication

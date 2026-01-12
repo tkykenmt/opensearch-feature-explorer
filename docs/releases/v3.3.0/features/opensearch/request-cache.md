@@ -115,19 +115,21 @@ Queries on the `tags` field will not be cached, preventing stale results if `use
 - Field data cache optimization using the same pattern is planned for a future release
 - Queries on keyword fields with non-default `use_similarity` or `split_queries_on_whitespace` cannot be cached
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Index request cache](https://docs.opensearch.org/3.0/search-plugins/caching/request-cache/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup |
 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default `use_similarity` or `split_queries_on_whitespace` |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19118](https://github.com/opensearch-project/OpenSearch/issues/19118): Repeated iteration through keys on cache clear API
 - [Issue #19183](https://github.com/opensearch-project/OpenSearch/issues/19183): Add node-level hook to TransportBroadcastByNodeAction
 - [Issue #19279](https://github.com/opensearch-project/OpenSearch/issues/19279): Dynamically updating mapping parameters does not wipe request cache entries
-- [Documentation: Index request cache](https://docs.opensearch.org/3.0/search-plugins/caching/request-cache/)
 
 ## Related Feature Report
 

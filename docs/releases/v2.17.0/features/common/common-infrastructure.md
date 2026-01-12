@@ -50,17 +50,19 @@ No migration required. This is a process improvement that applies to new pull re
 - The checkbox is a reminder only; there is no automated enforcement
 - Contributors must manually create companion PRs for API changes
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch API Specification](https://github.com/opensearch-project/opensearch-api-specification): Central repository for API specifications
+- [Developer Guide](https://github.com/opensearch-project/opensearch-api-specification/blob/main/DEVELOPER_GUIDE.md): Guide for contributing API specs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Update PULL_REQUEST_TEMPLATE to include API spec change checkbox |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #387](https://github.com/opensearch-project/opensearch-api-specification/issues/387): Proposal to add checkbox in plugin PR templates
-- [OpenSearch API Specification](https://github.com/opensearch-project/opensearch-api-specification): Central repository for API specifications
-- [Developer Guide](https://github.com/opensearch-project/opensearch-api-specification/blob/main/DEVELOPER_GUIDE.md): Guide for contributing API specs
 
 ## Related Feature Report
 

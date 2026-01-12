@@ -89,17 +89,19 @@ For S3 repositories, the `S3Repository.isSeverSideEncryptionEnabled()` method al
 - The `BlobStoreProvider` creates separate `BlobStore` instances for SSE and non-SSE operations, which may increase resource usage
 - Mixed-version clusters (with nodes below v3.4.0) cannot use this feature
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote-backed storage documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs on remote store
+- [S3 Server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html): AWS documentation on S3 SSE
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19630](https://github.com/opensearch-project/OpenSearch/pull/19630) | Add support for repository with Server side encryption enabled and client side encryption |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19235](https://github.com/opensearch-project/OpenSearch/issues/19235): Feature request for server-side encrypted repository support
-- [Remote-backed storage documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs on remote store
-- [S3 Server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html): AWS documentation on S3 SSE
 
 ## Related Feature Report
 

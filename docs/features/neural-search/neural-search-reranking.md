@@ -181,24 +181,26 @@ PUT /_search/pipeline/cohere_rerank_pipeline
 - Large rescore window sizes increase latency
 - One-to-one inference cannot write to search extension due to ordering concerns with reranking
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Added ByFieldRerankProcessor for field-based reranking, enabled rescore support in hybrid queries
+- **v2.12.0** (2024-02-20): Initial rerank processor implementation with ML-based reranking
+
+## References
+
+### Documentation
+- [Reranking Search Results](https://docs.opensearch.org/2.18/search-plugins/search-relevance/reranking-search-results/): Overview of reranking capabilities
+- [Rerank Processor](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/rerank-processor/): Rerank processor reference
+- [Reranking by Field](https://docs.opensearch.org/2.18/search-plugins/search-relevance/rerank-by-field/): Field-based reranking guide
+- [Reranking with Cohere](https://docs.opensearch.org/2.18/ml-commons-plugin/tutorials/reranking-cohere/): Tutorial for Cohere Rerank integration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#932](https://github.com/opensearch-project/neural-search/pull/932) | ByFieldRerankProcessor for second level reranking |
 | v2.18.0 | [#917](https://github.com/opensearch-project/neural-search/pull/917) | Added rescorer in hybrid query |
 | v2.12.0 | - | Initial rerank processor implementation |
 
-## References
-
-- [Reranking Search Results](https://docs.opensearch.org/2.18/search-plugins/search-relevance/reranking-search-results/): Overview of reranking capabilities
-- [Rerank Processor](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/rerank-processor/): Rerank processor reference
-- [Reranking by Field](https://docs.opensearch.org/2.18/search-plugins/search-relevance/rerank-by-field/): Field-based reranking guide
-- [Reranking with Cohere](https://docs.opensearch.org/2.18/ml-commons-plugin/tutorials/reranking-cohere/): Tutorial for Cohere Rerank integration
+### Issues (Design / RFC)
 - [Issue #926](https://github.com/opensearch-project/neural-search/issues/926): ByFieldRerankProcessor feature request
 - [Issue #914](https://github.com/opensearch-project/neural-search/issues/914): Hybrid query rescore bug report
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Added ByFieldRerankProcessor for field-based reranking, enabled rescore support in hybrid queries
-- **v2.12.0** (2024-02-20): Initial rerank processor implementation with ML-based reranking

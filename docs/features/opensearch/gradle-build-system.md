@@ -118,20 +118,22 @@ dependencies {
 - Dependabot only monitors dependencies in the version catalog, not legacy properties files
 - Bundle changes require updating both the catalog and consuming build files
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added Netty and Reactor Netty bundles, converted transport-reactor-netty4 plugin
+- **v2.19.0** (2025-02-11): Initial implementation of Gradle version catalog, migrated core dependencies from buildSrc/version.properties
+
+## References
+
+### Documentation
+- [Gradle Version Catalogs](https://docs.gradle.org/current/userguide/platforms.html): Official Gradle documentation
+- [Dependabot Gradle Support](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#gradle): GitHub Dependabot configuration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17233](https://github.com/opensearch-project/OpenSearch/pull/17233) | Convert transport-reactor-netty4 to use gradle version catalog |
 | v2.19.0 | [#16284](https://github.com/opensearch-project/OpenSearch/pull/16284) | Initial implementation of Gradle version catalog |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3782](https://github.com/opensearch-project/OpenSearch/issues/3782): Original feature request for Dependabot support
-- [Gradle Version Catalogs](https://docs.gradle.org/current/userguide/platforms.html): Official Gradle documentation
-- [Dependabot Gradle Support](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#gradle): GitHub Dependabot configuration
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added Netty and Reactor Netty bundles, converted transport-reactor-netty4 plugin
-- **v2.19.0** (2025-02-11): Initial implementation of Gradle version catalog, migrated core dependencies from buildSrc/version.properties

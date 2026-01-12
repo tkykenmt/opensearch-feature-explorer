@@ -125,17 +125,19 @@ const config: BannerConfig = {
 - No `banner:size` setting exposed in UI (uses default)
 - Settings are global (no per-workspace or per-user configuration)
 
-## Related PRs
+## References
 
+### Documentation
+- [Advanced Settings Documentation](https://docs.opensearch.org/3.0/dashboards/management/advanced-settings/): OpenSearch Dashboards Advanced Settings
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10264](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10264) | Add global banner support via UI settings with live updates |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9861](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9861): RFC - OpenSearch Dashboards Banner Plugin
 - [Issue #9990](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9990): Meta issue tracking banner plugin development
-- [Advanced Settings Documentation](https://docs.opensearch.org/3.0/dashboards/management/advanced-settings/): OpenSearch Dashboards Advanced Settings
 
 ## Related Feature Report
 

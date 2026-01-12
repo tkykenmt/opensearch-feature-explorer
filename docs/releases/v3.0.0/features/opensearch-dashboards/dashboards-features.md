@@ -108,8 +108,15 @@ Enhances the Discover page scrolling behavior:
 - Vega time field support requires explicit `%timefield%` configuration
 - Field-level security and masking are respected in value suggestions
 
-## Related PRs
+## References
 
+### Documentation
+- [Vega Documentation](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Official Vega visualization docs
+
+### Blog Posts
+- [Improving ease of use in OpenSearch Dashboards with Vega visualizations](https://opensearch.org/blog/improving-dashboards-usability-with-vega/): Blog post on Vega improvements
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8275](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8275) | Autocomplete Value Suggestion for PPL & SQL |
@@ -117,11 +124,8 @@ Enhances the Discover page scrolling behavior:
 | [#9152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9152) | Vega visualization with PPL time field support |
 | [#9298](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9298) | Improve scrolling experience on Discover page |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9169](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9169): Vega PPL %timefield% feature request
-- [Vega Documentation](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Official Vega visualization docs
-- [Improving ease of use in OpenSearch Dashboards with Vega visualizations](https://opensearch.org/blog/improving-dashboards-usability-with-vega/): Blog post on Vega improvements
 
 ## Related Feature Report
 

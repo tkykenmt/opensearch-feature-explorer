@@ -107,17 +107,17 @@ PUT _cluster/settings
 - The `protected_types` setting is static and requires a cluster restart to change
 - Resource types must be explicitly listed; there is no wildcard support
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+- [PR #5657](https://github.com/opensearch-project/security/pull/5657): Original PR for dynamic user attribute serialization (superseded by #5673)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5671](https://github.com/opensearch-project/security/pull/5671) | Adds a list setting to explicitly specify resources to be protected |
 | [#5673](https://github.com/opensearch-project/security/pull/5673) | Make user attribute serialization property dynamic |
-
-## References
-
-- [PR #5657](https://github.com/opensearch-project/security/pull/5657): Original PR for dynamic user attribute serialization (superseded by #5673)
-- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
 
 ## Related Feature Report
 

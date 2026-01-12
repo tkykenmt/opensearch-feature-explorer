@@ -135,8 +135,14 @@ The new RAG + Hybrid Search preset can be configured with minimal clicks:
 - ML processor forms require models with defined interfaces for simplified configuration
 - Datasource version must be available for simulate API calls ([#657](https://github.com/opensearch-project/dashboards-flow-framework/pull/657))
 
-## Related PRs
+## References
 
+### Documentation
+- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
+- [Creating AI Search Workflows Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/ai-search-flows/building-flows/)
+- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#602](https://github.com/opensearch-project/dashboards-flow-framework/pull/602) | Integrate legacy presets with quick-configure fields |
@@ -159,12 +165,6 @@ The new RAG + Hybrid Search preset can be configured with minimal clicks:
 | [#690](https://github.com/opensearch-project/dashboards-flow-framework/pull/690) | Adding icons to reorder processors up and down |
 | [#701](https://github.com/opensearch-project/dashboards-flow-framework/pull/701) | Support optional model inputs |
 | [#702](https://github.com/opensearch-project/dashboards-flow-framework/pull/702) | Support whitespace for string constant; support ext toggling on ML resp processors |
-
-## References
-
-- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
-- [Creating AI Search Workflows Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/ai-search-flows/building-flows/)
-- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
 
 ## Related Feature Report
 

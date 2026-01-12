@@ -81,19 +81,19 @@ No migration required. These are backward-compatible improvements to error respo
 - Error messages are in English only
 - Some complex malformed queries may still produce less descriptive error messages
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL API Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/)
+- [SQL Plugin Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3066](https://github.com/opensearch-project/sql/pull/3066) | Improve error handling for malformed query cursors |
 | [#3080](https://github.com/opensearch-project/sql/pull/3080) | Improve error handling for some more edge cases |
 | [#3084](https://github.com/opensearch-project/sql/pull/3084) | Backport #3066 to 2.x |
 | [#3112](https://github.com/opensearch-project/sql/pull/3112) | Backport #3080 to 2.18 |
-
-## References
-
-- [SQL and PPL API Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql-ppl-api/)
-- [SQL Plugin Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/index/)
 
 ## Related Feature Report
 

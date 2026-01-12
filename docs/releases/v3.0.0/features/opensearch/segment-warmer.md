@@ -109,17 +109,19 @@ Benchmarks using the `nyc_taxis` workload with 2 primary shards and 1 replica sh
 - **Segment Replication Only**: Only applicable to indexes using segment replication (`replication.type: SEGMENT`)
 - **Implementation Pending**: The `warm()` methods in `LocalMergedSegmentWarmer` and `RemoteStoreMergedSegmentWarmer` contain TODO placeholders in v3.0.0; full implementation is ongoing
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17881](https://github.com/opensearch-project/OpenSearch/pull/17881) | Introducing MergedSegmentWarmerFactory to support the extension of IndexWriter.IndexReaderWarmer |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment into Segment Replication
 - [Issue #1694](https://github.com/opensearch-project/OpenSearch/issues/1694): Original Segment Replication feature request
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official docs
 
 ## Related Feature Report
 

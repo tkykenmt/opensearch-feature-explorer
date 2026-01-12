@@ -134,19 +134,21 @@ The t-digest algorithm maintains a compact summary of a data distribution using 
 - Higher compression values use more memory
 - The `MergingDigest` implementation (v3.1.0+) does not support weighted additions
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#18124](https://github.com/opensearch-project/OpenSearch/pull/18124) | Switch to MergingDigest for ~2-30x performance improvement |
+- **v3.1.0** (2025-05-28): Switched from AVLTreeDigest to MergingDigest for significant performance improvements (up to 30x faster for low-cardinality fields)
 
 ## References
 
-- [Issue #18122](https://github.com/opensearch-project/OpenSearch/issues/18122): Performance improvement request
+### Documentation
 - [Percentile Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile/): Official documentation
 - [Percentile Ranks Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile-ranks/): Related aggregation
 - [t-digest Paper](https://github.com/tdunning/t-digest): Algorithm details and implementation
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#18124](https://github.com/opensearch-project/OpenSearch/pull/18124) | Switch to MergingDigest for ~2-30x performance improvement |
 
-- **v3.1.0** (2025-05-28): Switched from AVLTreeDigest to MergingDigest for significant performance improvements (up to 30x faster for low-cardinality fields)
+### Issues (Design / RFC)
+- [Issue #18122](https://github.com/opensearch-project/OpenSearch/issues/18122): Performance improvement request

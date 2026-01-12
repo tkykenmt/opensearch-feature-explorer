@@ -114,18 +114,20 @@ public class MySecurityPlugin extends Plugin implements ActionPlugin {
 - If multiple plugins attempt to register wrappers, an error is thrown
 - The wrapper applies to all REST handlers, not selectively
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Added `Set<RestHeaderDefinition>` parameter to `getRestHandlerWrapper` method, deprecated single-parameter version
+
+## References
+
+### Documentation
+- [ActionPlugin.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/plugins/ActionPlugin.java): Source code
+- [ActionModule.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/ActionModule.java): Implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19875](https://github.com/opensearch-project/OpenSearch/pull/19875) | Pass registry of headers to getRestHandlerWrapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4799](https://github.com/opensearch-project/security/issues/4799): Original bug report about dropped headers
-- [ActionPlugin.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/plugins/ActionPlugin.java): Source code
-- [ActionModule.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/ActionModule.java): Implementation
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Added `Set<RestHeaderDefinition>` parameter to `getRestHandlerWrapper` method, deprecated single-parameter version

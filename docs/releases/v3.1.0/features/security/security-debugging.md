@@ -81,16 +81,16 @@ No migration required. This is a backward-compatible enhancement that only affec
 - Future enhancements may add detection for other common causes of initialization failure
 - The enhancement focuses on REST API and transport layer errors
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): OpenSearch security configuration
+- [PR #5370](https://github.com/opensearch-project/security/pull/5370): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5370](https://github.com/opensearch-project/security/pull/5370) | Adds details for debugging Security not initialized error |
-
-## References
-
-- [PR #5370](https://github.com/opensearch-project/security/pull/5370): Main implementation
-- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): OpenSearch security configuration
 
 ## Related Feature Report
 

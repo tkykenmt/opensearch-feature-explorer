@@ -118,16 +118,16 @@ this.servers = ConfigurationUtils.readStringProperty(params, "bootstrap_servers"
 - No support for complex nested object parsing - designed for flat configuration maps
 - List/array property parsing is not included in this initial implementation
 
-## Related PRs
+## References
 
+### Documentation
+- [Ingest Processors Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/index-processors/): Related ingest processor configuration patterns
+- [PR #17223](https://github.com/opensearch-project/OpenSearch/pull/17223): Implementation PR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17223](https://github.com/opensearch-project/OpenSearch/pull/17223) | Added ConfigurationUtils to core for the ease of configuration parsing |
-
-## References
-
-- [PR #17223](https://github.com/opensearch-project/OpenSearch/pull/17223): Implementation PR
-- [Ingest Processors Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/index-processors/): Related ingest processor configuration patterns
 
 ## Related Feature Report
 

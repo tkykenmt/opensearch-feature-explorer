@@ -73,18 +73,20 @@ my_role:
 - Other CAT APIs may still require their respective permissions
 - The change is backward compatible for users who already have the `cluster:monitor/shards` permission configured
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT shards API](https://docs.opensearch.org/3.0/api-reference/cat/cat-shards/): Official documentation
+- [Permissions](https://docs.opensearch.org/3.0/security/access-control/permissions/): Security permissions reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17203](https://github.com/opensearch-project/OpenSearch/pull/17203) | Changed CatShardsAction to internal to allow non-admin users |
 | [#18185](https://github.com/opensearch-project/OpenSearch/pull/18185) | Adding new permission for _cat/shard action to 3.0 release notes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17199](https://github.com/opensearch-project/OpenSearch/issues/17199): Bug report - Make CatShardsAction internal
-- [CAT shards API](https://docs.opensearch.org/3.0/api-reference/cat/cat-shards/): Official documentation
-- [Permissions](https://docs.opensearch.org/3.0/security/access-control/permissions/): Security permissions reference
 
 ## Related Feature Report
 

@@ -90,17 +90,21 @@ ps aux | grep opensearch | grep sharedArenaMaxPermits
 - The trade-off favors stability over potential minor performance gains from Arena pooling
 - This is a mitigation for the underlying issue; the root cause in Lucene's CompoundReader behavior remains
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene MMapDirectory](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/store/MMapDirectory.html): Official Lucene documentation
+
+### Blog Posts
+- [Blog: Use Lucene's MMapDirectory on 64bit](https://blog.thetaphi.de/2012/07/use-lucenes-mmapdirectory-on-64bit.html): Background on MMapDirectory behavior
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19503](https://github.com/opensearch-project/OpenSearch/pull/19503) | Setting number of sharedArenaMaxPermits to 1 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19482](https://github.com/opensearch-project/OpenSearch/issues/19482): BUG - Frequent stats calls causing memory mapped segments to bloat up
-- [Lucene MMapDirectory](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/store/MMapDirectory.html): Official Lucene documentation
-- [Blog: Use Lucene's MMapDirectory on 64bit](https://blog.thetaphi.de/2012/07/use-lucenes-mmapdirectory-on-64bit.html): Background on MMapDirectory behavior
 
 ## Related Feature Report
 

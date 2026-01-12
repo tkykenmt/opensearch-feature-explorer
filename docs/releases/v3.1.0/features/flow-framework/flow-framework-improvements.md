@@ -102,20 +102,22 @@ if (llmParams != null) {
 - LLM parameters must be a string-to-string map; non-string values will cause validation errors
 - These fixes are also backported to v2.19.3
 
-## Related PRs
+## References
 
+### Documentation
+- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/): Official documentation for agent registration
+- [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/): Flow agent documentation
+- [Workflow Steps](https://docs.opensearch.org/3.0/automating-configurations/workflow-steps/): Workflow step reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1151](https://github.com/opensearch-project/flow-framework/pull/1151) | Fixing llm field processing in RegisterAgentStep |
 | [#1154](https://github.com/opensearch-project/flow-framework/pull/1154) | Include exception type in WorkflowState error field even if no cause |
 | [#1155](https://github.com/opensearch-project/flow-framework/pull/1155) | Pass llm spec params to builder |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1153](https://github.com/opensearch-project/flow-framework/issues/1153): Workflow state error messages don't include FFE/WSE types
-- [Register Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/register-agent/): Official documentation for agent registration
-- [Flow Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/): Flow agent documentation
-- [Workflow Steps](https://docs.opensearch.org/3.0/automating-configurations/workflow-steps/): Workflow step reference
 
 ## Related Feature Report
 

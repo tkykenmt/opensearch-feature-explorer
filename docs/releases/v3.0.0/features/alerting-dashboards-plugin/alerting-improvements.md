@@ -52,15 +52,15 @@ The change is transparent to users. When viewing alert insights in OpenSearch Da
 - Historical alert context is not included in AI analysis
 - Requires dashboards-assistant plugin for AI features
 
-## Related PRs
+## References
 
+### Documentation
+- [Alert Insights Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/alert-insight/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1220](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1220) | Only use latest active alert for alert summary context |
-
-## References
-
-- [Alert Insights Documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/alert-insight/): Official docs
 
 ## Related Feature Report
 

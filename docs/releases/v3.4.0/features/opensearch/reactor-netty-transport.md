@@ -62,17 +62,19 @@ No migration required. This is a bug fix that improves resource management witho
 - The Reactor Netty 4 Transport remains an experimental feature
 - Requires explicit plugin installation: `./bin/opensearch-plugin install transport-reactor-netty4`
 
-## Related PRs
+## References
 
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official configuration guide
+- [Streaming Bulk API](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk-streaming/): Streaming bulk documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20106](https://github.com/opensearch-project/OpenSearch/pull/20106) | Keep track and release Reactor Netty 4 Transport accepted Http Channels during the Node shutdown |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #20034](https://github.com/opensearch-project/OpenSearch/issues/20034): Flaky Test Report for DetailedErrorsDisabledIT
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official configuration guide
-- [Streaming Bulk API](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk-streaming/): Streaming bulk documentation
 
 ## Related Feature Report
 

@@ -89,17 +89,19 @@ If you have OpenSearch Dashboards configured with `alwaysPresentCertificate: tru
 - Wildcard patterns are supported but regex patterns are not
 - Users in the `skip_users` list must have valid credentials for another authentication backend
 
-## Related PRs
+## References
 
+### Documentation
+- [Client Certificate Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/): Official documentation
+- [PR #5278](https://github.com/opensearch-project/security/pull/5278): Initial implementation attempt (closed)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5525](https://github.com/opensearch-project/security/pull/5525) | Added new option skip_users to client cert authenticator |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4378](https://github.com/opensearch-project/security/issues/4378): Client certificate setting bypasses password requirements
-- [PR #5278](https://github.com/opensearch-project/security/pull/5278): Initial implementation attempt (closed)
-- [Client Certificate Authentication Documentation](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/): Official documentation
 
 ## Related Feature Report
 

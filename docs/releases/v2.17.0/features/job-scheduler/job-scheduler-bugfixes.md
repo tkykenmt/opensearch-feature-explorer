@@ -54,17 +54,19 @@ No migration required. The fix is automatically applied when upgrading to v2.17.
 - This fix addresses the Job Scheduler plugin only; similar issues exist in other plugins (see Related Issues)
 - V1 index templates remain deprecated and should be migrated to v2 composable templates
 
-## Related PRs
+## References
 
+### Documentation
+- [CreateIndexRequest Javadoc](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/admin/indices/create/CreateIndexRequest.java#L246-L257): Documentation for mapping method
+- [Job Scheduler Documentation](https://docs.opensearch.org/2.17/monitoring-your-cluster/job-scheduler/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14984](https://github.com/opensearch-project/OpenSearch/issues/14984): Original bug report affecting multiple plugins
-- [CreateIndexRequest Javadoc](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/action/admin/indices/create/CreateIndexRequest.java#L246-L257): Documentation for mapping method
-- [Job Scheduler Documentation](https://docs.opensearch.org/2.17/monitoring-your-cluster/job-scheduler/index/)
 
 ## Related Feature Report
 

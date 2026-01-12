@@ -133,19 +133,23 @@ source = remote-cluster:logs-2024.01.01 | head 10
 - **Authentication**: Remote cluster authentication must be configured at the OpenSearch cluster level
 - **Network Requirements**: Local cluster must have network access to remote clusters on transport port (default 9300)
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Initial implementation of Cross-Cluster Search UI support in OpenSearch Dashboards
+
+## References
+
+### Documentation
+- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official OpenSearch CCS documentation
+
+### Blog Posts
+- [Cross-cluster replication intro blog](https://opensearch.org/blog/cross-cluster-replication-intro/): Related blog post on cross-cluster features
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9566](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9566) | Show cross cluster connections in Data Sources and Workspaces page |
 | v3.0.0 | [#9660](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9660) | Show cross cluster connections in Index Pattern and Discover Page |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9578](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9578): Original enhancement request
-- [Cross-cluster search documentation](https://docs.opensearch.org/3.0/search-plugins/cross-cluster-search/): Official OpenSearch CCS documentation
-- [Cross-cluster replication intro blog](https://opensearch.org/blog/cross-cluster-replication-intro/): Related blog post on cross-cluster features
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Initial implementation of Cross-Cluster Search UI support in OpenSearch Dashboards

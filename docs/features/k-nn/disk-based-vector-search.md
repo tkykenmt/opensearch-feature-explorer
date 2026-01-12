@@ -175,8 +175,22 @@ This approach requires no pretraining and can begin ingestion immediately.
 - Higher compression levels may require tuning oversample_factor for optimal recall
 - Training support for mode/compression has limitations with the quantization framework
 
-## Related PRs
+## Change History
 
+- **v2.19.0**: Added method parameter override support for training-based indices
+- **v2.18.0**: Bug fixes for segments without vector fields
+- **v2.17.0**: Initial implementation with mode/compression parameters, binary quantization, and two-phase rescoring
+
+## References
+
+### Documentation
+- [Documentation: Disk-based vector search](https://docs.opensearch.org/latest/search-plugins/knn/disk-based-vector-search/)
+- [Documentation: k-NN vector quantization](https://docs.opensearch.org/latest/search-plugins/knn/knn-vector-quantization/)
+
+### Blog Posts
+- [Blog: Reduce costs with disk-based vector search](https://opensearch.org/blog/reduce-cost-with-disk-based-vector-search/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#2034](https://github.com/opensearch-project/k-NN/pull/2034) | Introduce mode and compression param resolution |
@@ -186,17 +200,7 @@ This approach requires no pretraining and can begin ingestion immediately.
 | v2.18.0 | [#2281](https://github.com/opensearch-project/k-NN/pull/2281) | Fix bug when segment has no vector field for disk-based search |
 | v2.19.0 | [#2290](https://github.com/opensearch-project/k-NN/pull/2290) | Allow method parameter override for training based indices |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC: Disk-based Mode Design (#1949)](https://github.com/opensearch-project/k-NN/issues/1949): Design document for mode parameter
 - [RFC: Optimized Disk-Based Vector Search (#1779)](https://github.com/opensearch-project/k-NN/issues/1779): Original feature proposal with benchmarks
 - [RFC: Two-phased Search Re-score Design (#1861)](https://github.com/opensearch-project/k-NN/issues/1861): Rescoring implementation design
-- [Documentation: Disk-based vector search](https://docs.opensearch.org/latest/search-plugins/knn/disk-based-vector-search/)
-- [Documentation: k-NN vector quantization](https://docs.opensearch.org/latest/search-plugins/knn/knn-vector-quantization/)
-- [Blog: Reduce costs with disk-based vector search](https://opensearch.org/blog/reduce-cost-with-disk-based-vector-search/)
-
-## Change History
-
-- **v2.19.0**: Added method parameter override support for training-based indices
-- **v2.18.0**: Bug fixes for segments without vector fields
-- **v2.17.0**: Initial implementation with mode/compression parameters, binary quantization, and two-phase rescoring

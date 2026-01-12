@@ -66,19 +66,19 @@ The Metrics Framework requires OpenSearch version 3.1.0 or later. The stats coll
 - Requires data nodes to be running compatible versions
 - Metric collection adds some overhead to cluster operations
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4220](https://github.com/opensearch-project/ml-commons/pull/4220) | Fix version checking logic for starting the stats collector job |
-
-## References
-
-- [Metrics Framework Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/metrics/getting-started/)
-- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
-- [ML Commons APIs](https://docs.opensearch.org/3.0/ml-commons-plugin/api/index/)
-
 ## Change History
 
 - **v3.3.0** (2026-01-11): Fixed version checking logic bug that prevented stats collector from starting on nodes > v3.1.0
 - **v3.1.0**: Initial implementation of Metrics Framework
+
+## References
+
+### Documentation
+- [Metrics Framework Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/metrics/getting-started/)
+- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
+- [ML Commons APIs](https://docs.opensearch.org/3.0/ml-commons-plugin/api/index/)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#4220](https://github.com/opensearch-project/ml-commons/pull/4220) | Fix version checking logic for starting the stats collector job |

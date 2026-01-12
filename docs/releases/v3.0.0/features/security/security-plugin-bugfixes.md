@@ -99,8 +99,13 @@ config:
 - OpenSSL TLS provider no longer available
 - Some configuration changes require cluster restart
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+- [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
+
+### Pull Requests
 | PR | Description | Category |
 |----|-------------|----------|
 | [#4380](https://github.com/opensearch-project/security/pull/4380) | Optimized Privilege Evaluation | enhancement |
@@ -130,15 +135,12 @@ config:
 | [#1498](https://github.com/opensearch-project/security/pull/1498) | Remove overrides of preserveIndicesUponCompletion | bugfix |
 | [#1503](https://github.com/opensearch-project/security/pull/1503) | Remove usage of deprecated batchSize() method | bugfix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4274](https://github.com/opensearch-project/security/issues/4274): Blake2b hash issue
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation
 - [Issue #4927](https://github.com/opensearch-project/security/issues/4927): CIDR range support
 - [Issue #5238](https://github.com/opensearch-project/security/issues/5238): DlsFlsFilterLeafReader termVectors issue
 - [Issue #1483](https://github.com/opensearch-project/OpenSearch/issues/1483): Deprecate non-inclusive terms
-- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
-- [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
 
 ## Related Feature Report
 

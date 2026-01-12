@@ -85,16 +85,16 @@ No migration required. This is a backward-compatible enhancement that improves r
 - Only applies to models configured with `deploy_to_all_nodes: true`
 - Planning worker nodes are synced in memory, so cluster restarts may require re-sync
 
-## Related PRs
+## References
 
+### Documentation
+- [Deploy Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/deploy-model/)
+- [Connecting to externally hosted models](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3423](https://github.com/opensearch-project/ml-commons/pull/3423) | Run auto deploy remote model in partially deployed status |
-
-## References
-
-- [Deploy Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/deploy-model/)
-- [Connecting to externally hosted models](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/index/)
 
 ## Related Feature Report
 

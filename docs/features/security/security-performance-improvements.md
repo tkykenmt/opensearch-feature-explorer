@@ -142,8 +142,19 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 - Custom authentication/authorization backends require code changes for v3.1.0 compatibility
 - Cache effectiveness depends on user session patterns; highly dynamic user populations may see reduced benefits
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-09-16): Precomputed privileges toggle, optimized wildcard matching
+- **v3.1.0** (2025-05-26): Immutable User object with serialization caching
+- **v3.0.0**: Optimized privilege evaluation for document- and field-level security
+- **v2.19.0**: Initial optimized privilege evaluation
+
+## References
+
+### Blog Posts
+- [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#5465](https://github.com/opensearch-project/security/pull/5465) | Precomputed privileges toggle setting |
@@ -151,17 +162,8 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 | v3.1.0 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove unused custom User serialization |
 | v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue
 - [Issue #5168](https://github.com/opensearch-project/security/issues/5168): Make User object immutable
 - [Issue #5200](https://github.com/opensearch-project/security/issues/5200): Serialization backward compatibility
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation
-- [Blog: Performance optimizations for the OpenSearch security layer](https://opensearch.org/blog/performance-optimizations-for-the-opensearch-security-layer/)
-
-## Change History
-
-- **v3.2.0** (2025-09-16): Precomputed privileges toggle, optimized wildcard matching
-- **v3.1.0** (2025-05-26): Immutable User object with serialization caching
-- **v3.0.0**: Optimized privilege evaluation for document- and field-level security
-- **v2.19.0**: Initial optimized privilege evaluation

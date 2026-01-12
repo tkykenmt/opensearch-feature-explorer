@@ -142,21 +142,23 @@ node.roles: [ search, data ]
 - Warm indices require remote store to be enabled at the cluster level
 - The writable warm index feature is experimental and requires enabling the feature flag
 
-## Related PRs
+## References
 
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+- [Creating a Cluster - Node Roles](https://docs.opensearch.org/3.0/tuning-your-cluster/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17490](https://github.com/opensearch-project/OpenSearch/pull/17490) | Added Warm index setting and updated nomenclature for hot/warm tiering |
 | [#17573](https://github.com/opensearch-project/OpenSearch/pull/17573) | Renamed node role from search to warm |
 | [#17620](https://github.com/opensearch-project/OpenSearch/pull/17620) | Introduced new search node role for search-only shards |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17489](https://github.com/opensearch-project/OpenSearch/issues/17489): Update nomenclature for tiering indices for writable warm
 - [Issue #13149](https://github.com/opensearch-project/OpenSearch/issues/13149): [META] Writable Warm Index
 - [Issue #17422](https://github.com/opensearch-project/OpenSearch/issues/17422): Restrict Search Replica Allocation to Search-Dedicated Nodes
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
-- [Creating a Cluster - Node Roles](https://docs.opensearch.org/3.0/tuning-your-cluster/)
 
 ## Related Feature Report
 

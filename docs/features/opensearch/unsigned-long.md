@@ -156,20 +156,22 @@ POST my_index/_search
 - Stored fields are returned as strings
 - Decimal parts are truncated if supplied
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-03-05): Fixed bug where terms queries on unsigned_long fields with values > Long.MAX_VALUE caused assertion errors. Introduced `UnsignedLongHashSet` class with proper unsigned comparison.
+- **v2.8.0**: Initial implementation of unsigned_long field type.
+
+## References
+
+### Documentation
+- [Unsigned Long Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/unsigned-long/): Official documentation
+- [Numeric Field Types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Overview of all numeric types
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17207](https://github.com/opensearch-project/OpenSearch/pull/17207) | Fix unsigned long sorting assertion in LongHashSet |
 | v2.8.0 | - | Initial implementation of unsigned_long field type |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17206](https://github.com/opensearch-project/OpenSearch/issues/17206): Bug report for LongHashSet assertion error
-- [Unsigned Long Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/unsigned-long/): Official documentation
-- [Numeric Field Types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Overview of all numeric types
-
-## Change History
-
-- **v3.0.0** (2025-03-05): Fixed bug where terms queries on unsigned_long fields with values > Long.MAX_VALUE caused assertion errors. Introduced `UnsignedLongHashSet` class with proper unsigned comparison.
-- **v2.8.0**: Initial implementation of unsigned_long field type.

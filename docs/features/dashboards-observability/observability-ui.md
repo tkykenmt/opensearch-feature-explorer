@@ -94,8 +94,20 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 - Log correlation requires TraceId field in log documents
 - Custom panels are stored as saved objects, not index data
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Services data picker fix, header control styling updates, custom traces table with filtering (All Spans, Traces, Service Entry, Trace Root), overview page typography, Getting Started workflow restructure (Logs/Metrics/Traces), CI build cache optimization, navigation fixes, x-axis label rotation, and trace-to-logs redirection improvements
+- **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns
+
+## References
+
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/ta-dashboards/): Official trace analytics plugin documentation
+- [Observability Overview](https://docs.opensearch.org/2.17/observing-your-data/): OpenSearch Observability documentation
+- [Event Analytics](https://docs.opensearch.org/2.17/observing-your-data/event-analytics/): Log exploration and PPL queries
+- [Application Analytics](https://docs.opensearch.org/2.17/observing-your-data/app-analytics/): Correlating logs, traces, and metrics
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#2177](https://github.com/opensearch-project/dashboards-observability/pull/2177) | Services data picker fix, metrics refresh button, overview page title, URL redirection |
@@ -115,15 +127,3 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 | v2.17.0 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |
 | v2.17.0 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |
 | v2.17.0 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |
-
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/ta-dashboards/): Official trace analytics plugin documentation
-- [Observability Overview](https://docs.opensearch.org/2.17/observing-your-data/): OpenSearch Observability documentation
-- [Event Analytics](https://docs.opensearch.org/2.17/observing-your-data/event-analytics/): Log exploration and PPL queries
-- [Application Analytics](https://docs.opensearch.org/2.17/observing-your-data/app-analytics/): Correlating logs, traces, and metrics
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Services data picker fix, header control styling updates, custom traces table with filtering (All Spans, Traces, Service Entry, Trace Root), overview page typography, Getting Started workflow restructure (Logs/Metrics/Traces), CI build cache optimization, navigation fixes, x-axis label rotation, and trace-to-logs redirection improvements
-- **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns

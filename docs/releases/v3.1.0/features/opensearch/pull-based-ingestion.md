@@ -126,8 +126,13 @@ Update any code using the old enum values:
 - Retry mechanism applies only with DROP error strategy
 - Write block detection requires ClusterApplierService registration
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17977](https://github.com/opensearch-project/OpenSearch/pull/17977) | Emit lag metric for pull-based ingestion poller |
@@ -136,12 +141,9 @@ Update any code using the old enum values:
 | [#18280](https://github.com/opensearch-project/OpenSearch/pull/18280) | Support cluster write blocks |
 | [#18332](https://github.com/opensearch-project/OpenSearch/pull/18332) | Support consumer reset in Resume API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17442](https://github.com/opensearch-project/OpenSearch/issues/17442): Ingestion management APIs for pull-based ingestion
 - [Issue #18279](https://github.com/opensearch-project/OpenSearch/issues/18279): Support cluster write block in pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
 
 ## Related Feature Report
 

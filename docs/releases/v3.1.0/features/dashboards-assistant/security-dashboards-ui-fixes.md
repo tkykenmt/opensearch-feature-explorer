@@ -74,18 +74,18 @@ No configuration changes are required. These fixes are automatically applied whe
 
 - The NLQ visualization embeddable is still available through other means (e.g., from within the assistant chat), just not from the "Create new" dropdown.
 
-## Related PRs
+## References
 
+### Documentation
+- [dashboards-assistant repository](https://github.com/opensearch-project/dashboards-assistant)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#579](https://github.com/opensearch-project/dashboards-assistant/pull/579) | Fix unnecessary embeddable in create new dropdown |
 | [#548](https://github.com/opensearch-project/dashboards-assistant/pull/548) | Log error body or message instead of the entire error object |
 | [#520](https://github.com/opensearch-project/dashboards-assistant/pull/520) | Fix http request for insights to be triggered only after view insights button is clicked |
 | [#569](https://github.com/opensearch-project/dashboards-assistant/pull/569) | Fix chat page conversation loading state |
-
-## References
-
-- [dashboards-assistant repository](https://github.com/opensearch-project/dashboards-assistant)
 
 ## Related Feature Report
 

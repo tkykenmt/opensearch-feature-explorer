@@ -104,18 +104,20 @@ Running tests:
 - Test fixtures are skipped entirely if neither Docker Compose version is available
 - CI environments may need Docker Compose throttling to avoid parallel execution issues
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Added Docker Compose v2 support alongside existing v1 support
+
+## References
+
+### Documentation
+- [Docker Compose v2 Migration](https://docs.docker.com/compose/releases/migrate/): Official Docker documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#16049](https://github.com/opensearch-project/OpenSearch/pull/16049) | Add support for docker compose v2 in TestFixturesPlugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16050](https://github.com/opensearch-project/OpenSearch/issues/16050): Original bug report
-- [Docker Compose v2 Migration](https://docs.docker.com/compose/releases/migrate/): Official Docker documentation
 - [opensearch-api-specification#457](https://github.com/opensearch-project/opensearch-api-specification/issues/457): Similar update in API specification repo
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Added Docker Compose v2 support alongside existing v1 support

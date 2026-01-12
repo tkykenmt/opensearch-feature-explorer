@@ -186,8 +186,13 @@ Response:
 - Lock listing API performs a scroll search on the lock index, which may impact performance with many locks
 - Job listing aggregates data from all nodes, which may be slow in large clusters
 
-## Related PRs
+## References
 
+### Documentation
+- [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
+- [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
+
+### Pull Requests
 | PR | Title | Category | Repository |
 |----|-------|----------|------------|
 | [#849](https://github.com/opensearch-project/common-utils/pull/849) | Add Seconds as a supported unit for IntervalSchedule | feature | common-utils |
@@ -199,11 +204,8 @@ Response:
 | [#793](https://github.com/opensearch-project/job-scheduler/pull/793) | Ensure that dates are serialized in TransportGetScheduledInfoAction | bugfix | job-scheduler |
 | [#790](https://github.com/opensearch-project/job-scheduler/pull/790) | Use Text Blocks when defining multi-line strings | bugfix | job-scheduler |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #775](https://github.com/opensearch-project/job-scheduler/issues/775): Feature request for REST APIs to list jobs and running jobs
-- [Job Scheduler GitHub Repository](https://github.com/opensearch-project/job-scheduler)
-- [Official Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
 
 ## Related Feature Report
 

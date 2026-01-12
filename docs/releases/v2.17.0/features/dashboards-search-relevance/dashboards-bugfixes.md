@@ -63,18 +63,18 @@ doc-table {
 - This is a build-time fix only; no runtime behavior changes
 - The visual appearance of the UI remains unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [Sass Breaking Change: Slash as Division](https://sass-lang.com/documentation/breaking-changes/slash-div/)
+- [OpenSearch Dashboards PR #5338](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5338): Replace `node-sass` with `sass-embedded` (related modernization)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#426](https://github.com/opensearch-project/dashboards-search-relevance/pull/426) | Fix sass division warning |
 | [#435](https://github.com/opensearch-project/dashboards-search-relevance/pull/435) | Backport to 2.x |
 | [#436](https://github.com/opensearch-project/dashboards-search-relevance/pull/436) | Backport to 2.17 |
-
-## References
-
-- [Sass Breaking Change: Slash as Division](https://sass-lang.com/documentation/breaking-changes/slash-div/)
-- [OpenSearch Dashboards PR #5338](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/5338): Replace `node-sass` with `sass-embedded` (related modernization)
 
 ## Related Feature Report
 

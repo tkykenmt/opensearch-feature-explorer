@@ -103,17 +103,17 @@ if ("WRITE".equals(accessLevel)) {
 - Changes to tenant permissions during a long-running request won't be reflected
 - The format change may affect components that parse the user info string with strict field expectations
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards multi-tenancy](https://docs.opensearch.org/3.0/security/multi-tenancy/tenant-index/): Multi-tenancy overview
+- [Multi-tenancy configuration](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): Configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5519](https://github.com/opensearch-project/security/pull/5519) | Add tenancy access info to serialized user in threadcontext |
 | [#5520](https://github.com/opensearch-project/security/pull/5520) | Backport to 2.19 branch |
-
-## References
-
-- [OpenSearch Dashboards multi-tenancy](https://docs.opensearch.org/3.0/security/multi-tenancy/tenant-index/): Multi-tenancy overview
-- [Multi-tenancy configuration](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): Configuration guide
 
 ## Related Feature Report
 

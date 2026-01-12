@@ -86,17 +86,19 @@ No changes to user-facing APIs. The security improvements are transparent to use
 - HTTP redirects are now blocked for all IP2Geo datasource endpoints
 - If your GeoIP data provider uses redirects, you must use the final URL directly
 
-## Related PRs
+## References
 
+### Documentation
+- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official processor documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#782](https://github.com/opensearch-project/geospatial/pull/782) | Block redirect in IP2Geo and move validation to transport action |
 | [#715](https://github.com/opensearch-project/geospatial/pull/715) | Replace usages of ThreadContext.stashContext with pluginSubject.runAs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #238](https://github.com/opensearch-project/opensearch-plugins/issues/238): META - Remove usages of ThreadContext.stashContext
-- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official processor documentation
 
 ## Related Feature Report
 

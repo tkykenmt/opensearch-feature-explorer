@@ -115,8 +115,13 @@ The cron expression follows standard Unix cron format:
 - Workload management and alerting integration are planned for future releases
 - Resource monitoring for scheduled jobs is not yet available
 
-## Related PRs
+## References
 
+### Documentation
+- [Job Scheduler Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/): OpenSearch Job Scheduler plugin
+- [Cron Expression Reference](https://docs.opensearch.org/3.0/observing-your-data/alerting/cron/): Cron expression format
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#220](https://github.com/opensearch-project/search-relevance/pull/220) | search-relevance | Backend APIs and components for scheduled experiments |
@@ -126,13 +131,10 @@ The cron expression follows standard Unix cron format:
 | [#686](https://github.com/opensearch-project/dashboards-search-relevance/pull/686) | dashboards-search-relevance | Client-side filtering by type/status |
 | [#670](https://github.com/opensearch-project/dashboards-search-relevance/pull/670) | dashboards-search-relevance | Experiment detail page title fix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #213](https://github.com/opensearch-project/search-relevance/issues/213): Original feature request
 - [Issue #226](https://github.com/opensearch-project/search-relevance/issues/226): Related scheduling requirements
 - [Issue #238](https://github.com/opensearch-project/search-relevance/issues/238): Data integrity for experiment deletion
-- [Job Scheduler Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/): OpenSearch Job Scheduler plugin
-- [Cron Expression Reference](https://docs.opensearch.org/3.0/observing-your-data/alerting/cron/): Cron expression format
 
 ## Related Feature Report
 

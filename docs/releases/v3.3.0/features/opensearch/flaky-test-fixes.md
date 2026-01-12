@@ -63,18 +63,20 @@ No migration required. These are internal test framework improvements.
 - The disjunction limit check only applies to `maxGaps=0` with `ORDERED` mode
 - Other interval query combinations may still hit Lucene limits in edge cases
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene Disjunctions](https://github.com/apache/lucene/blob/main/lucene/queries/src/java/org/apache/lucene/queries/intervals/Disjunctions.java): Lucene disjunction limit implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19332](https://github.com/opensearch-project/OpenSearch/pull/19332) | Fix Flaky IntervalQueryBuilderTests |
 | [#19327](https://github.com/opensearch-project/OpenSearch/pull/19327) | Fix flaky test in SecureReactorNetty4HttpServerTransportTests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19167](https://github.com/opensearch-project/OpenSearch/issues/19167): IntervalQueryBuilderTests flaky test report
 - [Issue #17486](https://github.com/opensearch-project/OpenSearch/issues/17486): SecureReactorNetty4HttpServerTransportTests flaky test report
-- [Lucene Disjunctions](https://github.com/apache/lucene/blob/main/lucene/queries/src/java/org/apache/lucene/queries/intervals/Disjunctions.java): Lucene disjunction limit implementation
 
 ## Related Feature Report
 

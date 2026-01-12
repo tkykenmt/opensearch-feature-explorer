@@ -159,8 +159,21 @@ if (showActionsInGroup) {
 - The new UI is opt-in and disabled by default
 - Integration tests for the new header UI are implemented separately
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Fix flyout overlay issue with new application header by adjusting pushMinBreakpoint to 1576px
+- **v2.17.0** (2024-09-17): Initial implementation of conditional new header UI support
+
+## References
+
+### Documentation
+- [Maps Documentation](https://docs.opensearch.org/2.17/dashboards/visualize/maps/): Official Maps plugin documentation
+- [OpenSearch Dashboards PR #7691](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7691): Full width table support in OSD core
+
+### Blog Posts
+- [Getting started with multilayer maps](https://opensearch.org/blog/multilayer-maps/): Maps plugin blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#680](https://github.com/opensearch-project/dashboards-maps/pull/680) | Fix flyout overlay issue with new application header |
@@ -168,14 +181,5 @@ if (showActionsInGroup) {
 | v2.17.0 | [#654](https://github.com/opensearch-project/dashboards-maps/pull/654) | Conditionally use the new Application Header variant on the Maps visualization page |
 | v2.17.0 | [#655](https://github.com/opensearch-project/dashboards-maps/pull/655) | Conditionally use full width for Maps listing page table |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #649](https://github.com/opensearch-project/dashboards-maps/issues/649): Support Trineo new headers change in maps
-- [OpenSearch Dashboards PR #7691](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7691): Full width table support in OSD core
-- [Maps Documentation](https://docs.opensearch.org/2.17/dashboards/visualize/maps/): Official Maps plugin documentation
-- [Getting started with multilayer maps](https://opensearch.org/blog/multilayer-maps/): Maps plugin blog post
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Fix flyout overlay issue with new application header by adjusting pushMinBreakpoint to 1576px
-- **v2.17.0** (2024-09-17): Initial implementation of conditional new header UI support

@@ -114,16 +114,18 @@ No migration required. This is a bug fix that improves cluster stability during 
 - Cache is limited to 2 OpenSearch versions (`MAX_VERSIONS_SIZE = 2`) to prevent memory issues
 - In clusters with more than 2 different OpenSearch versions joining simultaneously, some cache misses may occur (causing re-serialization)
 
-## Related PRs
+## References
 
+### Documentation
+- [JoinHelper.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/coordination/JoinHelper.java): Implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19307](https://github.com/opensearch-project/OpenSearch/pull/19307) | Cache serialised cluster state based on cluster state version and node version |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19272](https://github.com/opensearch-project/OpenSearch/issues/19272): [BUG] Join Failure - Mixed Version cluster
-- [JoinHelper.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/cluster/coordination/JoinHelper.java): Implementation
 
 ## Related Feature Report
 

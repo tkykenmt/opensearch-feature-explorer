@@ -247,8 +247,26 @@ POST /_plugins/_ppl
 - `flatten` works only with struct/object fields, not arrays
 - `timechart` does not support pivot formatting or multiple aggregation functions
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Calcite enabled by default (`plugins.calcite.enabled=true`); implicit fallback to V2 for unsupported commands; new functions (`mvjoin`, `regex_match`); `timechart` command for time-series aggregation; enhanced cost computing mechanism; project pushdown optimization for non-identity projections
+- **v3.2.0** (2026-01-11): Major pushdown expansion - sort, aggregation with scripts, partial filter, span, relevance queries, Sarg values; secure RelJson serialization for filter scripts; performance optimization skipping codegen for simple queries (~30% improvement); v2 fallback disabled by default; new UDFs (compare_ip, IP casting); function argument coercion
+- **v3.1.0** (2026-01-10): Expanded command support - eventstats (window functions), flatten, expand, trendline, appendcol, grok, top/rare, fillnull, describe, patterns; new functions (coalesce, isempty, isblank, ispresent, geoip, cidrmatch); performance optimizations (LIMIT pushdown, row count estimation, ResourceMonitor)
+- **v3.0.0** (2025-05-06): Initial implementation - Apache Calcite integration, join/lookup/subsearch commands, UDF framework, custom type system, thread pool execution, enhanced explain output
+
+## References
+
+### Documentation
+- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
+- [PPL Commands](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL command reference
+- [Apache Calcite](https://calcite.apache.org/): Query optimization framework
+- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
+
+### Blog Posts
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Feature announcement
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4372](https://github.com/opensearch-project/sql/pull/4372) | Enable Calcite by default and implicit fallback for unsupported commands |
@@ -299,19 +317,3 @@ POST /_plugins/_ppl
 | v3.0.0 | [#3374](https://github.com/opensearch-project/sql/pull/3374) | UDF interface |
 | v3.0.0 | [#3468](https://github.com/opensearch-project/sql/pull/3468) | Enable Calcite by default |
 | v3.0.0 | [#3521](https://github.com/opensearch-project/sql/pull/3521) | Enhanced explain output |
-
-## References
-
-- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
-- [PPL Commands](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): PPL command reference
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Feature announcement
-- [Apache Calcite](https://calcite.apache.org/): Query optimization framework
-- [SQL Plugin Repository](https://github.com/opensearch-project/sql): Source code
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Calcite enabled by default (`plugins.calcite.enabled=true`); implicit fallback to V2 for unsupported commands; new functions (`mvjoin`, `regex_match`); `timechart` command for time-series aggregation; enhanced cost computing mechanism; project pushdown optimization for non-identity projections
-- **v3.2.0** (2026-01-11): Major pushdown expansion - sort, aggregation with scripts, partial filter, span, relevance queries, Sarg values; secure RelJson serialization for filter scripts; performance optimization skipping codegen for simple queries (~30% improvement); v2 fallback disabled by default; new UDFs (compare_ip, IP casting); function argument coercion
-- **v3.1.0** (2026-01-10): Expanded command support - eventstats (window functions), flatten, expand, trendline, appendcol, grok, top/rare, fillnull, describe, patterns; new functions (coalesce, isempty, isblank, ispresent, geoip, cidrmatch); performance optimizations (LIMIT pushdown, row count estimation, ResourceMonitor)
-- **v3.0.0** (2025-05-06): Initial implementation - Apache Calcite integration, join/lookup/subsearch commands, UDF framework, custom type system, thread pool execution, enhanced explain output

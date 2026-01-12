@@ -160,18 +160,20 @@ public class MySearchPlugin implements SearchPlugin {
 - Fetch phase profiling adds serialization overhead for profile data between nodes
 - Custom metrics must be implemented as `ProfileMetric` (typically `Timer`) instances
 
-## Related PRs
+## References
 
+### Documentation
+- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18656](https://github.com/opensearch-project/OpenSearch/pull/18656) | Extend profile capabilities to plugins |
 | [#18887](https://github.com/opensearch-project/OpenSearch/pull/18887) | Expand fetch phase profiling to multi-shard queries |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18460](https://github.com/opensearch-project/OpenSearch/issues/18460): RFC for Profiling Extensibility
 - [Issue #18863](https://github.com/opensearch-project/OpenSearch/issues/18863): Multi-shard fetch profiling request
-- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
 
 ## Related Feature Report
 

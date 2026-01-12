@@ -46,17 +46,17 @@ No user action required. This is an internal test fix that aligns with the Remot
 
 - This change only affects integration tests, not production functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [Cross-cluster replication documentation](https://docs.opensearch.org/2.17/tuning-your-cluster/replication-plugin/index/)
+- [Remote-backed storage migration](https://docs.opensearch.org/2.17/tuning-your-cluster/availability-and-recovery/remote-store/migrating-to-remote/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1412](https://github.com/opensearch-project/cross-cluster-replication/pull/1412) | Updating remote-migration IT with correct setting name |
 | [#14100](https://github.com/opensearch-project/OpenSearch/pull/14100) | Move Remote Store Migration from DocRep to GA (OpenSearch core) |
-
-## References
-
-- [Cross-cluster replication documentation](https://docs.opensearch.org/2.17/tuning-your-cluster/replication-plugin/index/)
-- [Remote-backed storage migration](https://docs.opensearch.org/2.17/tuning-your-cluster/availability-and-recovery/remote-store/migrating-to-remote/)
 
 ## Related Feature Report
 

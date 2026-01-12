@@ -95,16 +95,16 @@ PUT _cluster/settings
 - The error message currently shows the default limit (200) rather than the configured limit
 - The limit applies cluster-wide, not per feature type
 
-## Related PRs
+## References
 
+### Documentation
+- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+- [Rule Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18663](https://github.com/opensearch-project/OpenSearch/pull/18663) | Add the configurable limit on rule cardinality |
-
-## References
-
-- [Workload Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
-- [Rule Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ## Related Feature Report
 

@@ -138,8 +138,16 @@ i18n.translate('title', { defaultMessage: 'Workspace' });
 - ICU message format variables must use consistent casing between source and translations
 - Translations are preliminary and may need community refinement
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Added preliminary translations for 14 locales, i18n validation to CI/CD workflows, precommit hook, fixed dynamic i18n usage across 12+ plugins
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8411](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8411) | Add i18n checks to PR workflows |
@@ -164,11 +172,3 @@ i18n.translate('title', { defaultMessage: 'Workspace' });
 | v2.18.0 | [#8483](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8483) | Fix inconsistent i18n key names |
 | v2.18.0 | [#8399](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8399) | Fix dynamic i18n in visBuilder plugin |
 | v2.18.0 | [#8674](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8674) | Fix unsupported language from localStorage |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Added preliminary translations for 14 locales, i18n validation to CI/CD workflows, precommit hook, fixed dynamic i18n usage across 12+ plugins

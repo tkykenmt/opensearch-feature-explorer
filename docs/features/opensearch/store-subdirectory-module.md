@@ -126,21 +126,21 @@ PUT /my-index
 - Subdirectory files must follow Lucene file naming conventions for proper metadata handling
 - The `index/`, `translog/`, and `_state/` directories are excluded from subdirectory scanning
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Fixed stats API to correctly report store size by passing wrapped directory to base class
+- **v3.0.0** (2025-09-02): Added support for custom metadata files in subdirectory-store recovery
+- **v3.0.0** (2025-09-02): Initial implementation with SubdirectoryStorePlugin, SubdirectoryAwareStore, and peer recovery support
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Initial implementation with recovery support |
 | v3.0.0 | [#20157](https://github.com/opensearch-project/OpenSearch/pull/20157) | Handle custom metadata files in subdirectory-store |
 | v3.3.0 | [#19470](https://github.com/opensearch-project/OpenSearch/pull/19470) | Fix stats API for SubdirectoryAwareStore |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19131](https://github.com/opensearch-project/OpenSearch/issues/19131): Original feature request
 - [Issue #19468](https://github.com/opensearch-project/OpenSearch/issues/19468): Stats API bug report
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Fixed stats API to correctly report store size by passing wrapped directory to base class
-- **v3.0.0** (2025-09-02): Added support for custom metadata files in subdirectory-store recovery
-- **v3.0.0** (2025-09-02): Initial implementation with SubdirectoryStorePlugin, SubdirectoryAwareStore, and peer recovery support

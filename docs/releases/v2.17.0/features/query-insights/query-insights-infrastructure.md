@@ -102,18 +102,20 @@ No migration required. These are infrastructure-only changes that don't affect p
 - Checkstyle severity is set to `ignore` by default for most rules, with specific rules (imports, System.out.println) set to `error`
 - The code hygiene workflow runs on every push and pull request
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Repository](https://github.com/opensearch-project/query-insights)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#51](https://github.com/opensearch-project/query-insights/pull/51) | Add code hygiene checks for query insights |
 | [#90](https://github.com/opensearch-project/query-insights/pull/90) | Add configuration for publishing snapshot |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7](https://github.com/opensearch-project/query-insights/issues/7): Set up GitHub Actions
 - [Issue #72](https://github.com/opensearch-project/query-insights/issues/72): Snapshots not being published bug report
-- [Query Insights Repository](https://github.com/opensearch-project/query-insights)
 
 ## Related Feature Report
 

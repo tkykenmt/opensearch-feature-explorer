@@ -145,8 +145,12 @@ PUT /_search/pipeline/rerank_pipeline
 - Writing to search extension (`ext`) is only supported for many-to-one inference (`one_to_one: false`)
 - One-to-one inference cannot write to search extension due to ordering concerns with reranking processors
 
-## Related PRs
+## References
 
+### Documentation
+- [ML inference search response processor documentation](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/ml-inference-search-response/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2976](https://github.com/opensearch-project/ml-commons/pull/2976) | Filter out remote model auto redeployment |
@@ -156,14 +160,12 @@ PUT /_search/pipeline/rerank_pipeline
 | [#2977](https://github.com/opensearch-project/ml-commons/pull/2977) | Add config field in MLToolSpec for static parameters |
 | [#3154](https://github.com/opensearch-project/ml-commons/pull/3154) | Add textract and comprehend url to trusted endpoints |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2897](https://github.com/opensearch-project/ml-commons/issues/2897): Query text in input_map feature request
 - [Issue #2878](https://github.com/opensearch-project/ml-commons/issues/2878): Search extension output feature request
 - [Issue #3067](https://github.com/opensearch-project/ml-commons/issues/3067): Optional llmQuestion feature request
 - [Issue #2836](https://github.com/opensearch-project/ml-commons/issues/2836): Static tool parameters feature request
 - [Issue #2918](https://github.com/opensearch-project/ml-commons/issues/2918): MLToolSpec config field feature request
-- [ML inference search response processor documentation](https://docs.opensearch.org/2.18/search-plugins/search-pipelines/ml-inference-search-response/)
 
 ## Related Feature Report
 

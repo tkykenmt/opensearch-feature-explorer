@@ -147,18 +147,20 @@ PUT /my-index
 - Different similarity algorithms produce different score ranges, making cross-index score comparison difficult
 - `LegacyBM25Similarity` is deprecated and may be removed in future versions
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Changed default similarity from `LegacyBM25Similarity` to Lucene's `BM25Similarity`. Added `LegacyBM25` type for backward compatibility.
+
+## References
+
+### Documentation
+- [Similarity Documentation](https://docs.opensearch.org/3.0/field-types/mapping-parameters/similarity/): Official OpenSearch docs
+- [Keyword Search Documentation](https://docs.opensearch.org/3.0/search-plugins/keyword-search/): BM25 configuration guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17306](https://github.com/opensearch-project/OpenSearch/pull/17306) | Use Lucene `BM25Similarity` as default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17315](https://github.com/opensearch-project/OpenSearch/issues/17315): Original feature request
-- [Similarity Documentation](https://docs.opensearch.org/3.0/field-types/mapping-parameters/similarity/): Official OpenSearch docs
-- [Keyword Search Documentation](https://docs.opensearch.org/3.0/search-plugins/keyword-search/): BM25 configuration guide
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Changed default similarity from `LegacyBM25Similarity` to Lucene's `BM25Similarity`. Added `LegacyBM25` type for backward compatibility.

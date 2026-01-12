@@ -114,8 +114,13 @@ POST /_plugins/_flow_framework/workflow/<workflow_id>/_reprovision?wait_for_comp
 - Per-tenant throttling requires tenant awareness to be enabled
 - Config parser fix is specific to remote storage backends (e.g., DynamoDB)
 
-## Related PRs
+## References
 
+### Documentation
+- [Workflow Settings Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-settings/)
+- [Workflow APIs Documentation](https://docs.opensearch.org/3.0/automating-configurations/api/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1026](https://github.com/opensearch-project/flow-framework/pull/1026) | Fix breaking changes for 3.0.0 release |
@@ -126,14 +131,11 @@ POST /_plugins/_flow_framework/workflow/<workflow_id>/_reprovision?wait_for_comp
 | [#1107](https://github.com/opensearch-project/flow-framework/pull/1107) | Fix bug handleReprovision missing wait_for_completion_timeout response |
 | [#1113](https://github.com/opensearch-project/flow-framework/pull/1113) | Add new attributes field to ToolStep |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1095](https://github.com/opensearch-project/flow-framework/issues/1095): Config parser does not handle tenant_id field
 - [Issue #1097](https://github.com/opensearch-project/flow-framework/issues/1097): Action Listener is not completed on failed synchronous provisioning
 - [Issue #1106](https://github.com/opensearch-project/flow-framework/issues/1106): handleReprovision missing wait_for_completion_timeout response logic
 - [Issue #1112](https://github.com/opensearch-project/flow-framework/issues/1112): ToolStep does not include new fields for MLToolSpec
-- [Workflow Settings Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-settings/)
-- [Workflow APIs Documentation](https://docs.opensearch.org/3.0/automating-configurations/api/index/)
 
 ## Related Feature Report
 

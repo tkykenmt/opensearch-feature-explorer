@@ -116,18 +116,22 @@ POST _plugins/_ml/models/<sparse_model_id>/_predict
 - Remote models may not support this parameter (depends on connector implementation)
 - The format selection is per-request; there is no model-level default configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Register Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/register-model/): Official documentation for model registration
+- [Neural Sparse Search](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/): Neural sparse search documentation
+
+### Blog Posts
+- [Improving document retrieval with sparse semantic encoders](https://opensearch.org/blog/improving-document-retrieval-with-sparse-semantic-encoders/): Blog post on sparse encoding
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3963](https://github.com/opensearch-project/ml-commons/pull/3963) | Sparse encoding/tokenize support TOKEN_ID format embedding |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3865](https://github.com/opensearch-project/ml-commons/issues/3865): RFC - Support additional output formats for sparse models
-- [Register Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/register-model/): Official documentation for model registration
-- [Neural Sparse Search](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/): Neural sparse search documentation
-- [Improving document retrieval with sparse semantic encoders](https://opensearch.org/blog/improving-document-retrieval-with-sparse-semantic-encoders/): Blog post on sparse encoding
 
 ## Related Feature Report
 

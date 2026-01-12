@@ -102,18 +102,18 @@ The bar size controls appear in the "Bar Settings" accordion within the style op
 - Width and padding values are multipliers, not direct pixel values
 - Auto mode relies on Vega's default sizing algorithm
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152) | Add Bar Size Control Switch for auto/manual bar sizing |
-
-## References
-
-- [PR #10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152): Initial implementation
-- [Building data visualizations](https://docs.opensearch.org/3.0/dashboards/visualize/viz-index/): OpenSearch visualization documentation
-- [Vega](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Vega visualization documentation
-
 ## Change History
 
 - **v3.2.0**: Initial implementation - Added bar size mode toggle with auto/manual options
+
+## References
+
+### Documentation
+- [Building data visualizations](https://docs.opensearch.org/3.0/dashboards/visualize/viz-index/): OpenSearch visualization documentation
+- [Vega](https://docs.opensearch.org/3.0/dashboards/visualize/vega/): Vega visualization documentation
+- [PR #10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152): Initial implementation
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#10152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10152) | Add Bar Size Control Switch for auto/manual bar sizing |

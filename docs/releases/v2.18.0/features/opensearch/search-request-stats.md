@@ -100,18 +100,20 @@ Response includes:
 - Statistics collection adds minimal overhead to search operations
 - Statistics are per-node and not aggregated across the cluster
 
-## Related PRs
+## References
 
+### Documentation
+- [Nodes Stats API Documentation](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-stats/): Official documentation
+- [PR #15054](https://github.com/opensearch-project/OpenSearch/pull/15054): Original implementation adding took time to request nodes stats
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16290](https://github.com/opensearch-project/OpenSearch/pull/16290) | Enable coordinator search.request_stats_enabled by default |
 | [#16320](https://github.com/opensearch-project/OpenSearch/pull/16320) | Backport to 2.x branch |
 
-## References
-
-- [PR #15054](https://github.com/opensearch-project/OpenSearch/pull/15054): Original implementation adding took time to request nodes stats
+### Issues (Design / RFC)
 - [Issue #10768](https://github.com/opensearch-project/OpenSearch/issues/10768): Feature request for total search request time on coordinator node
-- [Nodes Stats API Documentation](https://docs.opensearch.org/2.18/api-reference/nodes-apis/nodes-stats/): Official documentation
 
 ## Related Feature Report
 

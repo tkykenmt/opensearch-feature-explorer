@@ -61,17 +61,17 @@ Typical files updated by version increment PRs:
 - Requires maintainer approval in each repository
 - Must be coordinated across all plugins for consistent releases
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Version increment to 3.3.0-SNAPSHOT and 3.3.0.0 across 14 plugin repositories
+
+## References
+
+### Documentation
+- [OpenSearch Release Process](https://github.com/opensearch-project/.github/blob/main/RELEASING.md)
+
+### Pull Requests
 | Version | Repository | PR | Description |
 |---------|------------|-----|-------------|
 | v3.3.0 | alerting | [#1918](https://github.com/opensearch-project/alerting/pull/1918) | Increment to 3.3.0-SNAPSHOT |
 | v3.3.0 | index-management | [#1467](https://github.com/opensearch-project/index-management/pull/1467) | Increment to 3.3.0-SNAPSHOT |
-
-## References
-
-- [OpenSearch Release Process](https://github.com/opensearch-project/.github/blob/main/RELEASING.md)
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Version increment to 3.3.0-SNAPSHOT and 3.3.0.0 across 14 plugin repositories

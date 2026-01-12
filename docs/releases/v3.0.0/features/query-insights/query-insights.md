@@ -180,8 +180,13 @@ curl -X PUT 'localhost:9200/_cluster/settings' -H 'Content-Type: application/jso
 - Live Queries API returns only coordinator node resource usage (not data node usage)
 - The `verbose` parameter only affects response serialization, not data collection
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/): Query Insights overview
+- [Live Queries Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/live-queries/): Live Queries API
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#295](https://github.com/opensearch-project/query-insights/pull/295) | Inflight Queries API |
@@ -190,14 +195,11 @@ curl -X PUT 'localhost:9200/_cluster/settings' -H 'Content-Type: application/jso
 | [#298](https://github.com/opensearch-project/query-insights/pull/298) | Skip profile queries |
 | [#266](https://github.com/opensearch-project/query-insights/pull/266) | Add strict hash check on top queries indices |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #285](https://github.com/opensearch-project/query-insights/issues/285): Inflight Queries API feature request
 - [Issue #248](https://github.com/opensearch-project/query-insights/issues/248): Index template feature request
 - [Issue #291](https://github.com/opensearch-project/query-insights/issues/291): Verbose parameter feature request
 - [Issue #180](https://github.com/opensearch-project/query-insights/issues/180): Skip profile queries feature request
-- [Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/): Query Insights overview
-- [Live Queries Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/live-queries/): Live Queries API
 
 ## Related Feature Report
 

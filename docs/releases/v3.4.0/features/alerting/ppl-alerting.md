@@ -162,8 +162,13 @@ POST /_plugins/_alerting/v2/monitors
 - AlertV2 is stateless - no ACTIVE/COMPLETED state transitions like V1
 - Maximum 1000 V2 monitors by default
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): PPL query language reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [alerting#1960](https://github.com/opensearch-project/alerting/pull/1960) | PPL Alerting: Execute Monitor and Monitor Stats |
@@ -171,11 +176,8 @@ POST /_plugins/_alerting/v2/monitors
 | [alerting#1968](https://github.com/opensearch-project/alerting/pull/1968) | PPL Alerting: Delete Monitor, More V1/V2 Separation |
 | [alerting#1972](https://github.com/opensearch-project/alerting/pull/1972) | PPL Alerting: Get Alerts and Alert Lifecycle |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue alerting#1880](https://github.com/opensearch-project/alerting/issues/1880): RFC for Alerting V2
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): PPL query language reference
 
 ## Related Feature Report
 

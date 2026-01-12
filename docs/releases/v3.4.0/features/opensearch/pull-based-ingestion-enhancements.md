@@ -186,19 +186,19 @@ PUT /my-index/_settings
 - Raw payload mapper does not support external versioning
 - Dynamic configuration updates require consumer reinitialization, causing brief reprocessing
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19635](https://github.com/opensearch-project/OpenSearch/pull/19635) | Add Kafka offset based consumer lag |
 | [#19878](https://github.com/opensearch-project/OpenSearch/pull/19878) | Add time based periodic flush support |
 | [#19765](https://github.com/opensearch-project/OpenSearch/pull/19765) | Support message mappers and raw payloads |
 | [#19963](https://github.com/opensearch-project/OpenSearch/pull/19963) | Update ingestion stream params to be dynamic |
-
-## References
-
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
 
 ## Related Feature Report
 

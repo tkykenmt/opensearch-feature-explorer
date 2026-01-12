@@ -78,17 +78,19 @@ No migration required. This is a behavioral change that takes effect immediately
 - Custom admin roles are not automatically recognized
 - Backend role filtering must still be explicitly enabled via cluster settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Security](https://docs.opensearch.org/2.17/observing-your-data/ad/security/): Security configuration documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#859](https://github.com/opensearch-project/anomaly-detection/pull/859) | Backport: Giving admin priority over backend role filtering |
 | [#850](https://github.com/opensearch-project/anomaly-detection/pull/850) | Original: Giving admin priority over backend role filtering |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #842](https://github.com/opensearch-project/anomaly-detection/issues/842): Prioritize admin access over backend roles
-- [Anomaly Detection Security](https://docs.opensearch.org/2.17/observing-your-data/ad/security/): Security configuration documentation
 
 ## Related Feature Report
 

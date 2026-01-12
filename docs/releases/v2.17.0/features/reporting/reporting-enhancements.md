@@ -55,16 +55,18 @@ No migration required. This is a test-only change with no impact on production f
 - This fix addresses test flakiness but does not change the actual report generation behavior
 - The increased tolerance may mask genuine timing regressions in edge cases
 
-## Related PRs
+## References
 
+### Documentation
+- [Reporting Documentation](https://docs.opensearch.org/2.17/reporting/): Official OpenSearch Reporting docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1022](https://github.com/opensearch-project/reporting/pull/1022) | Increase accuracy seconds while testing create on-demand report from definition |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1019](https://github.com/opensearch-project/reporting/issues/1019): Integration test failure for opensearch-reports 2.16.0
-- [Reporting Documentation](https://docs.opensearch.org/2.17/reporting/): Official OpenSearch Reporting docs
 
 ## Related Feature Report
 

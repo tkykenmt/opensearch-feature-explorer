@@ -84,18 +84,18 @@ This fix was prompted by [PR #14718](https://github.com/opensearch-project/OpenS
 - This is an internal API improvement; no user-facing changes
 - Plugins extending `RestHandler.Wrapper` should ensure they also delegate any custom methods
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #16154](https://github.com/opensearch-project/OpenSearch/pull/16154): Main implementation
+- [RestHandler.java](https://github.com/opensearch-project/OpenSearch/blob/2.18/server/src/main/java/org/opensearch/rest/RestHandler.java): Source code
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16154](https://github.com/opensearch-project/OpenSearch/pull/16154) | Ensure RestHandler.Wrapper delegates all implementations |
 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Implementing pagination for _cat/indices API (caused the issue) |
 | [#1004](https://github.com/opensearch-project/OpenSearch/pull/1004) | Original introduction of RestHandler.Wrapper |
-
-## References
-
-- [PR #16154](https://github.com/opensearch-project/OpenSearch/pull/16154): Main implementation
-- [RestHandler.java](https://github.com/opensearch-project/OpenSearch/blob/2.18/server/src/main/java/org/opensearch/rest/RestHandler.java): Source code
 
 ## Related Feature Report
 

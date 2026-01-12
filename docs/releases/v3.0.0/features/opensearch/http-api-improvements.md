@@ -75,8 +75,9 @@ curl -X PUT "localhost:9200/test-index" -H 'Content-Type: application/json' -d'i
 - The `http.max_header_size` setting is a node-level setting and requires a node restart to change
 - Very large headers (>16KB) still require explicit configuration
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4773](https://github.com/opensearch-project/OpenSearch/pull/4773) | Change HTTP code on create index API with bad input from 500 to 400 |
@@ -84,8 +85,7 @@ curl -X PUT "localhost:9200/test-index" -H 'Content-Type: application/json' -d'i
 | [#8986](https://github.com/opensearch-project/OpenSearch/pull/8986) | Return 409 Conflict instead of 503 for concurrent snapshot execution |
 | [#18024](https://github.com/opensearch-project/OpenSearch/pull/18024) | Change default max header size from 8KB to 16KB |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2756](https://github.com/opensearch-project/OpenSearch/issues/2756): Wrong HTTP code returned from create index API with bad input
 - [Issue #4745](https://github.com/opensearch-project/OpenSearch/issues/4745): Update AbstractScopedSettings to throw OpenSearchExceptions
 - [Issue #18022](https://github.com/opensearch-project/OpenSearch/issues/18022): Increase http.max_header_size default to 16KB

@@ -151,8 +151,28 @@ POST _plugins/_alerting/monitors
 - Composite monitors require delegate monitors to be created first
 - Per-document monitors may have performance impact on large datasets
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025): Build script fix to only publish alerting plugin zip, excluding sample remote monitor plugin from release artifacts
+- **v3.3.0** (2025): User custom attributes support for DLS/FLS parameter substitution - monitors now save and pass user custom attributes during execution, enabling DLS queries with `${attr.internal.*}` substitution to work correctly
+- **v3.2.0** (2025): MGet bug fix with proper finding-to-document mapping, randomized fan-out node distribution for better load balancing, consistent API responses when alerting config index doesn't exist, Maven snapshot publishing migration to Sonatype Central
+- **v3.1.0** (2025): Doc-level monitor timeboxing (3-4 min execution limit), batch findings publishing for improved performance, index pattern validation for doc-level monitors, threat intel monitor check fix, alert insight on dashboard overview page, log pattern extraction error handling
+- **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
+- **v2.18.0** (2024-11-05): Doc-level monitor improvements including dynamic query index deletion (`delete_query_index_in_every_run` flag), query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
+- **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes
+
+## References
+
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
+- [Per Document Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-document-monitors/): Per-document monitor documentation
+- [Composite Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/composite-monitors/): Composite monitor documentation
+- [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
+- [Document-Level Security](https://docs.opensearch.org/3.0/security/access-control/document-level-security/): Parameter substitution in DLS queries
+- [Notifications Plugin](https://docs.opensearch.org/3.0/observing-your-data/notifications/index/): Notifications integration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#1608](https://github.com/opensearch-project/alerting/pull/1608) | Fix build script to only publish alerting zip |
@@ -196,28 +216,10 @@ POST _plugins/_alerting/monitors
 | v2.17.0 | [#794](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/794) | Fix trigger name validation |
 | v2.17.0 | [#1073](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1073) | Fix alerts card in all-use case overview page |
 
-## References
-
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
-- [Per Document Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-document-monitors/): Per-document monitor documentation
-- [Composite Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/composite-monitors/): Composite monitor documentation
-- [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
-- [Document-Level Security](https://docs.opensearch.org/3.0/security/access-control/document-level-security/): Parameter substitution in DLS queries
-- [Notifications Plugin](https://docs.opensearch.org/3.0/observing-your-data/notifications/index/): Notifications integration
+### Issues (Design / RFC)
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Alerting does not work with DLS parameter substitution
 - [Issue #1057](https://github.com/opensearch-project/alerting/issues/1057): Return empty responses if there is no alerting config index created
 - [Issue #1853](https://github.com/opensearch-project/alerting/issues/1853): Timebox doc level monitor to avoid duplicate executions
 - [Issue #1859](https://github.com/opensearch-project/alerting/issues/1859): Change publish findings to accept a list of findings
 - [Issue #1617](https://github.com/opensearch-project/alerting/issues/1617): Distribution build issue
 - [Issue #671](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/671): Trigger name validation issue
-
-## Change History
-
-- **v3.4.0** (2025): Build script fix to only publish alerting plugin zip, excluding sample remote monitor plugin from release artifacts
-- **v3.3.0** (2025): User custom attributes support for DLS/FLS parameter substitution - monitors now save and pass user custom attributes during execution, enabling DLS queries with `${attr.internal.*}` substitution to work correctly
-- **v3.2.0** (2025): MGet bug fix with proper finding-to-document mapping, randomized fan-out node distribution for better load balancing, consistent API responses when alerting config index doesn't exist, Maven snapshot publishing migration to Sonatype Central
-- **v3.1.0** (2025): Doc-level monitor timeboxing (3-4 min execution limit), batch findings publishing for improved performance, index pattern validation for doc-level monitors, threat intel monitor check fix, alert insight on dashboard overview page, log pattern extraction error handling
-- **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
-- **v2.18.0** (2024-11-05): Doc-level monitor improvements including dynamic query index deletion (`delete_query_index_in_every_run` flag), query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
-- **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes

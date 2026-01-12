@@ -119,18 +119,22 @@ The following functionalities fall back to V2 engine:
 - JSON functions (`cast to json`, `json`, `json_valid`)
 - Search functions (`match`, `match_phrase`, `query_string`, etc.)
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
+- [PPL V3 Engine Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 limitations documentation
+
+### Blog Posts
+- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Blog post on new PPL commands
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3488](https://github.com/opensearch-project/sql/pull/3488) | Documentation for PPL new engine (V3) and limitations of 3.0.0 Beta |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3431](https://github.com/opensearch-project/sql/issues/3431): Documentation request for PPL V3 engine
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/): Official documentation
-- [PPL V3 Engine Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): V3 limitations documentation
-- [Enhanced Log Analysis Blog](https://opensearch.org/blog/enhanced-log-analysis-with-opensearch-ppl-introducing-lookup-join-and-subsearch/): Blog post on new PPL commands
 
 ## Related Feature Report
 

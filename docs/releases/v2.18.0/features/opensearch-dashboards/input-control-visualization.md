@@ -41,16 +41,16 @@ The fix corrects the height and spacing of disabled range slider controls to mat
 - This fix only affects the visual rendering of disabled range controls
 - No functional changes to the Input Control visualization behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Building data visualizations](https://docs.opensearch.org/2.18/dashboards/visualize/viz-index/): OpenSearch Dashboards visualization documentation
+- [PR #8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108) | Correct the size of disabled ValidatedDualRange components in InputControl visualizations |
-
-## References
-
-- [PR #8108](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8108): Main implementation
-- [Building data visualizations](https://docs.opensearch.org/2.18/dashboards/visualize/viz-index/): OpenSearch Dashboards visualization documentation
 
 ## Related Feature Report
 

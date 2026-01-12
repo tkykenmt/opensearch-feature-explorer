@@ -119,8 +119,19 @@ POST /_plugins/_ml/models/_register?deploy=true
 - All ML resources must be migrated when enabling multi-tenancy on existing clusters
 - `ModelGuardrail` stores tenant context but does not yet use it for model-based validation
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Added multi-tenancy support for LocalRegexGuardrail using SdkClient
+- **v3.0.0**: Fixed config index masterkey for multi-tenancy
+- **v2.19.0**: Initial multi-tenancy implementation for connectors, models, agents
+
+## References
+
+### Documentation
+- [Guardrails Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/guardrails/): Official guardrails configuration guide
+- [Multi-tenancy Configuration](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy setup
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4120](https://github.com/opensearch-project/ml-commons/pull/4120) | Support multi-tenancy for LocalRegexGuardrail |
@@ -132,14 +143,5 @@ POST /_plugins/_ml/models/_register?deploy=true
 | v2.19.0 | [#3382](https://github.com/opensearch-project/ml-commons/pull/3382) | Multi-tenancy support additions |
 | v2.19.0 | [#3307](https://github.com/opensearch-project/ml-commons/pull/3307) | Primary setup for multi-tenancy |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/ml-commons/issues/4119): Add multi-tenancy support to Guardrails
-- [Guardrails Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/guardrails/): Official guardrails configuration guide
-- [Multi-tenancy Configuration](https://docs.opensearch.org/3.0/security/multi-tenancy/multi-tenancy-config/): OpenSearch multi-tenancy setup
-
-## Change History
-
-- **v3.3.0**: Added multi-tenancy support for LocalRegexGuardrail using SdkClient
-- **v3.0.0**: Fixed config index masterkey for multi-tenancy
-- **v2.19.0**: Initial multi-tenancy implementation for connectors, models, agents

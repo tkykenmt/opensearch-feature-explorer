@@ -140,8 +140,12 @@ source=high_frequency_logs
 - `per_*` functions work exclusively with the `timechart` command (due to implicit timestamp field dependency)
 - Variable-length spans (month/quarter/year) require dynamic calculation which may have slight performance overhead
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4464](https://github.com/opensearch-project/sql/pull/4464) | Add `per_second` function support for `timechart` command |
@@ -150,12 +154,10 @@ source=high_frequency_logs
 | [#4755](https://github.com/opensearch-project/sql/pull/4755) | Merge the implementation of `timechart` and `chart` |
 | [#4784](https://github.com/opensearch-project/sql/pull/4784) | Specify timestamp field with `timefield` in timechart command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4350](https://github.com/opensearch-project/sql/issues/4350): PPL `per_*` aggregation function support
 - [Issue #4550](https://github.com/opensearch-project/sql/issues/4550): Span millisecond incorrectly converted to microsecond
 - [Issue #4576](https://github.com/opensearch-project/sql/issues/4576): timechart with option to specify timestamp column
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
 
 ## Related Feature Report
 

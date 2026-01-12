@@ -75,8 +75,9 @@ source=bank | eval t = unix_timestamp(birthdate) | stats count() by t
 - The system index access fix only applies when `plugins.security.system_indices.enabled` is explicitly set to `false`
 - The js-yaml upgrade may require code changes if using deprecated `safeLoad` function directly
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#5579](https://github.com/opensearch-project/security/pull/5579) | security | Allow plugin system requests when system_indices.enabled is false |
@@ -87,8 +88,7 @@ source=bank | eval t = unix_timestamp(birthdate) | stats count() by t
 | [#1330](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1330) | security-analytics-dashboards-plugin | Upgrade js-yaml to v4.1 |
 | [#4245](https://github.com/opensearch-project/sql/pull/4245) | sql | Support serializing/deserializing UDTs in pushed-down scripts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5634](https://github.com/opensearch-project/security/issues/5634): JWT log spam bug report
 - [Issue #792](https://github.com/opensearch-project/geospatial/issues/792): Geospatial permissions issue since 3.2.0
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Alerting DLS user attribute issue

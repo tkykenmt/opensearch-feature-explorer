@@ -87,8 +87,16 @@ For plugin developers:
 - JDK 24 is used for CI builds; runtime JDK requirements remain unchanged
 - Some repositories may require additional dependency updates for full JDK 24 compatibility
 
-## Related PRs
+## References
 
+### Documentation
+- [Gradle 8.14 Release Notes](https://docs.gradle.org/8.14/release-notes.html): Gradle improvements
+- [JDK 24 Release](https://openjdk.org/projects/jdk/24/): JDK 24 features
+
+### Blog Posts
+- [OpenSearch automated build system blog](https://opensearch.org/blog/public-jenkins/): Public Jenkins infrastructure
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#2792](https://github.com/opensearch-project/k-NN/pull/2792) | k-NN | Bump JDK to 24, Gradle to 8.14 |
@@ -106,12 +114,6 @@ For plugin developers:
 | [#1911](https://github.com/opensearch-project/alerting/pull/1911) | alerting | Gradle 8.14, JDK 24, backport fixes |
 | [#1563](https://github.com/opensearch-project/cross-cluster-replication/pull/1563) | cross-cluster-replication | Gradle 8.14, JDK 24 |
 | [#831](https://github.com/opensearch-project/performance-analyzer/pull/831) | performance-analyzer | Gradle 8.14, JDK 24 |
-
-## References
-
-- [OpenSearch automated build system blog](https://opensearch.org/blog/public-jenkins/): Public Jenkins infrastructure
-- [Gradle 8.14 Release Notes](https://docs.gradle.org/8.14/release-notes.html): Gradle improvements
-- [JDK 24 Release](https://openjdk.org/projects/jdk/24/): JDK 24 features
 
 ## Related Feature Report
 

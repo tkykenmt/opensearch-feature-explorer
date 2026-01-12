@@ -188,19 +188,21 @@ MLModelGroupGetRequest request = MLModelGroupGetRequest.builder()
 - ML-Commons is the first plugin to onboard; other plugins will follow in future releases
 - The `all_shared_principals` field must be maintained for DLS filtering to work correctly
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#3715](https://github.com/opensearch-project/ml-commons/pull/3715) | ml-commons | Onboards ML-Model-Group to centralized resource access control |
 | [#2304](https://github.com/opensearch-project/security-dashboards-plugin/pull/2304) | security-dashboards-plugin | Adds Resource Access Management Dashboard |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3890](https://github.com/opensearch-project/ml-commons/issues/3890): Onboard ML plugin to Centralized Resource AuthZ framework
 - [Issue #2303](https://github.com/opensearch-project/security-dashboards-plugin/issues/2303): Resource Access Management Dashboard feature request
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing (main tracking issue)
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement
 
 ## Related Feature Report
 

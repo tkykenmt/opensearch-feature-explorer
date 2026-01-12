@@ -207,8 +207,27 @@ graph TB
 - Cross-region snapshot restore may incur data transfer costs
 - Async deletion is only available for S3 repositories
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-10): Added `legacy_md5_checksum_calculation` to opensearch.yml settings for S3-compatible storage configuration
+- **v3.3.0** (2025-09): Switched default async HTTP client to AWS CRT for ~5-7% throughput improvement; added `s3_async_client_type` setting
+- **v3.3.0** (2025-09): Fixed S3-compatible repository compatibility by making checksum trailing headers conditional
+- **v3.1.0** (2025-07): Added SSE-KMS support, bucket owner verification, removed legacy server_side_encryption setting
+- **v2.18.0** (2024-10-22): Added async deletion support, changed default retry mechanism to Standard Mode, fixed SLF4J warnings
+
+## References
+
+### Documentation
+- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
+- [AWS SDK Retry Behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html): AWS retry modes documentation
+- [AWS SSE-KMS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html): AWS KMS encryption guide
+- [PR #19788](https://github.com/opensearch-project/OpenSearch/pull/19788): Add LEGACY_MD5_CHECKSUM_CALCULATION to settings list
+- [PR #18800](https://github.com/opensearch-project/OpenSearch/pull/18800): AWS CRT async HTTP client implementation
+- [PR #19220](https://github.com/opensearch-project/OpenSearch/pull/19220): S3-compatible repository checksum fix
+- [PR #18312](https://github.com/opensearch-project/OpenSearch/pull/18312): SSE-KMS and bucket owner verification
+- [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Async deletion implementation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19788](https://github.com/opensearch-project/OpenSearch/pull/19788) | Add LEGACY_MD5_CHECKSUM_CALCULATION to repository-s3 settings list |
@@ -219,27 +238,10 @@ graph TB
 | v2.18.0 | [#15978](https://github.com/opensearch-project/OpenSearch/pull/15978) | Change default retry mechanism to Standard Mode |
 | v2.18.0 | [#16194](https://github.com/opensearch-project/OpenSearch/pull/16194) | Fix SLF4J warnings on startup |
 
-## References
-
-- [PR #19788](https://github.com/opensearch-project/OpenSearch/pull/19788): Add LEGACY_MD5_CHECKSUM_CALCULATION to settings list
-- [PR #18800](https://github.com/opensearch-project/OpenSearch/pull/18800): AWS CRT async HTTP client implementation
+### Issues (Design / RFC)
 - [Issue #18535](https://github.com/opensearch-project/OpenSearch/issues/18535): Feature request for S3CrtClient support
-- [PR #19220](https://github.com/opensearch-project/OpenSearch/pull/19220): S3-compatible repository checksum fix
 - [Issue #18240](https://github.com/opensearch-project/OpenSearch/issues/18240): S3 compatible storage broken in 3.0.0
 - [Issue #19124](https://github.com/opensearch-project/OpenSearch/issues/19124): repository-s3 x-amz-trailer error
-- [PR #18312](https://github.com/opensearch-project/OpenSearch/pull/18312): SSE-KMS and bucket owner verification
 - [Issue #14606](https://github.com/opensearch-project/OpenSearch/issues/14606): Feature request for SSE-KMS support
-- [PR #15621](https://github.com/opensearch-project/OpenSearch/pull/15621): Async deletion implementation
 - [Issue #15397](https://github.com/opensearch-project/OpenSearch/issues/15397): Add jitter to downloads from remote store
 - [Issue #16152](https://github.com/opensearch-project/OpenSearch/issues/16152): SLF4J warnings when adding repository-s3
-- [Register Snapshot Repository](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): OpenSearch documentation
-- [AWS SDK Retry Behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html): AWS retry modes documentation
-- [AWS SSE-KMS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html): AWS KMS encryption guide
-
-## Change History
-
-- **v3.4.0** (2025-10): Added `legacy_md5_checksum_calculation` to opensearch.yml settings for S3-compatible storage configuration
-- **v3.3.0** (2025-09): Switched default async HTTP client to AWS CRT for ~5-7% throughput improvement; added `s3_async_client_type` setting
-- **v3.3.0** (2025-09): Fixed S3-compatible repository compatibility by making checksum trailing headers conditional
-- **v3.1.0** (2025-07): Added SSE-KMS support, bucket owner verification, removed legacy server_side_encryption setting
-- **v2.18.0** (2024-10-22): Added async deletion support, changed default retry mechanism to Standard Mode, fixed SLF4J warnings

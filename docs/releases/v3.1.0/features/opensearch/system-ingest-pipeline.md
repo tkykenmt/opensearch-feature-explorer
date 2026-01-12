@@ -168,19 +168,21 @@ public class MyPlugin extends Plugin implements IngestPlugin {
 - No simulation API support yet (planned for future release)
 - No explain API for viewing generated pipelines yet (planned for future release)
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): Official blog post
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17817](https://github.com/opensearch-project/OpenSearch/pull/17817) | Introduce system generated ingest pipeline |
 | [#18277](https://github.com/opensearch-project/OpenSearch/pull/18277) | Support system ingest pipelines for bulk update operations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17509](https://github.com/opensearch-project/OpenSearch/issues/17509): RFC - Support System Generated Ingest Pipeline/Processor
 - [Issue #18276](https://github.com/opensearch-project/OpenSearch/issues/18276): Support system ingest pipelines for bulk update operations
 - [Issue #17742](https://github.com/opensearch-project/OpenSearch/issues/17742): Add configurability to run ingest pipelines during document update operations
-- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): Official blog post
 
 ## Related Feature Report
 

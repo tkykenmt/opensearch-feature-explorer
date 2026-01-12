@@ -148,18 +148,20 @@ The `resource_stats` object tracks resource usage for tasks that support resourc
 - Task results are only stored for completed/cancelled tasks
 - The `.tasks` index uses strict mapping - all fields must be predefined
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Fixed missing `cancellation_time_millis` and `resource_stats` fields in task index mapping
+
+## References
+
+### Documentation
+- [Tasks API Documentation](https://docs.opensearch.org/2.18/api-reference/tasks/): Official Tasks API docs
+- [task-index-mapping.json](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/resources/org/opensearch/tasks/task-index-mapping.json): Source mapping file
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#16201](https://github.com/opensearch-project/OpenSearch/pull/16201) | Fix missing fields in task index mapping |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16060](https://github.com/opensearch-project/OpenSearch/issues/16060): Bug report for missing mapping fields
-- [Tasks API Documentation](https://docs.opensearch.org/2.18/api-reference/tasks/): Official Tasks API docs
-- [task-index-mapping.json](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/resources/org/opensearch/tasks/task-index-mapping.json): Source mapping file
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Fixed missing `cancellation_time_millis` and `resource_stats` fields in task index mapping

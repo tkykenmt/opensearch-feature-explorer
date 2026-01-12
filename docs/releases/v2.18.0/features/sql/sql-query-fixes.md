@@ -89,8 +89,12 @@ POST /_plugins/_sql
 - The alias resolution fix applies only to legacy SQL queries (not the new SQL engine)
 - When an alias points to multiple indices, the first index in the response is used for field mapping resolution
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql/index/): OpenSearch SQL plugin documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3109](https://github.com/opensearch-project/sql/pull/3109) | Backport: Resolve Alias Issues in Legacy SQL with Filters |
@@ -98,11 +102,9 @@ POST /_plugins/_sql
 | [#2960](https://github.com/opensearch-project/sql/pull/2960) | Original: Resolve Alias Issues in Legacy SQL with Filters |
 | [#2836](https://github.com/opensearch-project/sql/pull/2836) | Original: Correct regular expression range |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2912](https://github.com/opensearch-project/sql/issues/2912): Pagination of index aliases is not supported - Re-opened
 - [Issue #1398](https://github.com/opensearch-project/sql/issues/1398): Original alias pagination bug report
-- [SQL Documentation](https://docs.opensearch.org/2.18/search-plugins/sql/sql/index/): OpenSearch SQL plugin documentation
 
 ## Related Feature Report
 

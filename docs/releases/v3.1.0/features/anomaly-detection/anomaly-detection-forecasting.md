@@ -104,8 +104,15 @@ POST _plugins/_forecast/forecasters
 - Maximum 2 category fields per high-cardinality forecaster
 - Model training requires sufficient historical data (minimum 40 data points)
 
-## Related PRs
+## References
 
+### Documentation
+- [Forecasting Documentation](https://docs.opensearch.org/3.1/observing-your-data/forecast/index/): Official documentation
+- [Getting Started with Forecasting](https://docs.opensearch.org/3.1/observing-your-data/forecast/getting-started/): Setup guide
+- [Forecasting API](https://docs.opensearch.org/3.1/observing-your-data/forecast/api/): API reference
+- [Forecasting Security](https://docs.opensearch.org/3.1/observing-your-data/forecast/security/): Security configuration
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1489](https://github.com/opensearch-project/anomaly-detection/pull/1489) | anomaly-detection | Fix incorrect task state handling in ForecastRunOnceTransportAction |
@@ -117,13 +124,6 @@ POST _plugins/_forecast/forecasters
 | [#1047](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1047) | anomaly-detection-dashboards-plugin | Improve validation, error display, and run-once state handling |
 | [#1050](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1050) | anomaly-detection-dashboards-plugin | Surface "missing data" error in test mode |
 | [#1052](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1052) | anomaly-detection-dashboards-plugin | Improve Create Forecaster UI and cleanup logs |
-
-## References
-
-- [Forecasting Documentation](https://docs.opensearch.org/3.1/observing-your-data/forecast/index/): Official documentation
-- [Getting Started with Forecasting](https://docs.opensearch.org/3.1/observing-your-data/forecast/getting-started/): Setup guide
-- [Forecasting API](https://docs.opensearch.org/3.1/observing-your-data/forecast/api/): API reference
-- [Forecasting Security](https://docs.opensearch.org/3.1/observing-your-data/forecast/security/): Security configuration
 
 ## Related Feature Report
 

@@ -82,16 +82,16 @@ GET /api/integrations/repository/{id}/static/{path}
 - SVG sanitization may remove legitimate interactive elements
 - BMP and other less common image formats are not supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Integrations in OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/integrations/index/): Official documentation
+- [DOMPurify](https://github.com/cure53/DOMPurify): XSS sanitization library
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2530](https://github.com/opensearch-project/dashboards-observability/pull/2530) | Clean up interface for integrations static serving |
-
-## References
-
-- [Integrations in OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/integrations/index/): Official documentation
-- [DOMPurify](https://github.com/cure53/DOMPurify): XSS sanitization library
 
 ## Related Feature Report
 

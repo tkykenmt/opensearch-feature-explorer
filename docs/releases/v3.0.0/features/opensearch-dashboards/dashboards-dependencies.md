@@ -38,16 +38,16 @@ No migration steps required. The dependency update is transparent to users and a
 
 None specific to this update.
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2025-26791 - NVD](https://nvd.nist.gov/vuln/detail/CVE-2025-26791): Official CVE entry
+- [DOMPurify GitHub](https://github.com/cure53/DOMPurify): DOMPurify library repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 |
-
-## References
-
-- [CVE-2025-26791 - NVD](https://nvd.nist.gov/vuln/detail/CVE-2025-26791): Official CVE entry
-- [DOMPurify GitHub](https://github.com/cure53/DOMPurify): DOMPurify library repository
 
 ## Related Feature Report
 

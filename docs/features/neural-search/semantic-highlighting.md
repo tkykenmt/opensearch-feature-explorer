@@ -203,24 +203,28 @@ POST /my-index/_search
 - Long documents exceeding model token limits may require chunked processing
 - Model inference adds latency compared to keyword-based highlighting
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10-28): Added batch inference support for remote models with 100-1,300% performance improvements
+- **v3.0.0**: Initial implementation with single inference mode
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/tutorials/vector-search/semantic-highlighting-tutorial/): Semantic highlighting tutorial
+- [Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/highlight/): Highlight query matches
+- [Pretrained Models](https://docs.opensearch.org/3.0/ml-commons-plugin/pretrained-models/): Semantic sentence highlighting models
+
+### Blog Posts
+- [Blog](https://opensearch.org/blog/introducing-semantic-highlighting-in-opensearch/): Introducing semantic highlighting in OpenSearch
+- [Blog](https://opensearch.org/blog/batch-processing-semantic-highlighting-in-opensearch-3-3/): Batch Processing Semantic Highlighting in OpenSearch 3.3
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [neural-search#1520](https://github.com/opensearch-project/neural-search/pull/1520) | Add batch inference support for semantic highlighting |
 | v3.0.0 | [neural-search#1183](https://github.com/opensearch-project/neural-search/pull/1183) | Encapsulate KNNQueryBuilder within NeuralKNNQueryBuilder (foundation for query text preservation) |
 | v3.0.0 | - | Initial semantic highlighting implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1516](https://github.com/opensearch-project/neural-search/issues/1516): Batch Inference Support for Semantic Highlighting
-- [Documentation](https://docs.opensearch.org/3.0/tutorials/vector-search/semantic-highlighting-tutorial/): Semantic highlighting tutorial
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/highlight/): Highlight query matches
-- [Blog](https://opensearch.org/blog/introducing-semantic-highlighting-in-opensearch/): Introducing semantic highlighting in OpenSearch
-- [Blog](https://opensearch.org/blog/batch-processing-semantic-highlighting-in-opensearch-3-3/): Batch Processing Semantic Highlighting in OpenSearch 3.3
-- [Pretrained Models](https://docs.opensearch.org/3.0/ml-commons-plugin/pretrained-models/): Semantic sentence highlighting models
-
-## Change History
-
-- **v3.3.0** (2025-10-28): Added batch inference support for remote models with 100-1,300% performance improvements
-- **v3.0.0**: Initial implementation with single inference mode

@@ -134,19 +134,21 @@ This is a new feature with no migration required. To adopt:
 - Each rule can have only one feature value but multiple attribute values
 - Rule evaluation requires all attribute conditions to match (AND logic)
 
-## Related PRs
+## References
 
+### Documentation
+- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+- [Workload Management](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17238](https://github.com/opensearch-project/OpenSearch/pull/17238) | Add rule schema for auto tagging |
 | [#17342](https://github.com/opensearch-project/OpenSearch/pull/17342) | Add in-memory attribute value store |
 | [#17365](https://github.com/opensearch-project/OpenSearch/pull/17365) | Add in-memory rule processing service |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC - Automated labeling of search requests
-- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
-- [Workload Management](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/workload-management/wlm-feature-overview/)
 
 ## Related Feature Report
 

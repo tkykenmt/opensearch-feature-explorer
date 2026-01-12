@@ -115,17 +115,17 @@ GET my-knn-index/_search
 - Adds latency due to the second-phase exact search
 - Requires full-precision vectors to be stored for rescoring
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |
-
 ## References
 
+### Documentation
 - [Approximate k-NN Search Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/approximate-knn/)
 - [k-NN Vector Quantization](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/)
 - [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |
 
 ## Related Feature Report
 

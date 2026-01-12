@@ -169,20 +169,20 @@ module.exports = {
 - Lighthouse results may vary based on CI runner performance
 - Sample data must be loaded for dashboard performance tests
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320) | Webpack bundle analyser limit check |
-| v3.0.0 | [#9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304) | Lighthouse Page Performance Metrics CI workflow |
+- **v3.0.0** (2025-03-20): Initial implementation with bundle analyzer and Lighthouse CI workflows
 
 ## References
 
+### Documentation
 - [PR #9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320): Bundle analyzer implementation
 - [PR #9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304): Lighthouse CI implementation
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci): Google's Lighthouse CI tool
 - [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer): Bundle analysis tool
 
-## Change History
-
-- **v3.0.0** (2025-03-20): Initial implementation with bundle analyzer and Lighthouse CI workflows
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320) | Webpack bundle analyser limit check |
+| v3.0.0 | [#9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304) | Lighthouse Page Performance Metrics CI workflow |

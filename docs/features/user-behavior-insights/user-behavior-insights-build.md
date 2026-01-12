@@ -92,22 +92,24 @@ dependencies {
 - Backport workflow requires GitHub App token for cross-branch operations
 - S3 repository does not provide the same browsing interface as Sonatype
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Migrated Maven snapshot publishing from Sonatype to S3, added backport workflows
+- **v3.3.0** (2026-01-11): Fixed dependency version conflicts for integration tests
+
+## References
+
+### Documentation
+- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
+- [User Behavior Insights Repository](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
+- [UBI Specification](https://github.com/o19s/ubi): Industry-standard UBI schema
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#140](https://github.com/opensearch-project/user-behavior-insights/pull/140) | Onboarding new maven snapshots publishing to s3 |
 | v3.3.0 | [#127](https://github.com/opensearch-project/user-behavior-insights/pull/127) | Increment version to 3.3.0-SNAPSHOT |
 | v3.3.0 | [#128](https://github.com/opensearch-project/user-behavior-insights/pull/128) | Fix dependency errors for integration tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from sonatype snapshots repo to ci.opensearch.org
-- [User Behavior Insights Repository](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
-- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
-- [UBI Specification](https://github.com/o19s/ubi): Industry-standard UBI schema
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Migrated Maven snapshot publishing from Sonatype to S3, added backport workflows
-- **v3.3.0** (2026-01-11): Fixed dependency version conflicts for integration tests

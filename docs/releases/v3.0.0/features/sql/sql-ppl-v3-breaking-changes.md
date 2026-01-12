@@ -119,8 +119,15 @@ POST /_plugins/_sql?format=jdbc
 - Some Calcite-based functions may have different behavior than legacy implementations
 - PIT-based pagination requires appropriate cluster permissions
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3306](https://github.com/opensearch-project/sql/pull/3306) | Remove SparkSQL support |
@@ -133,8 +140,7 @@ POST /_plugins/_sql?format=jdbc
 | [#3439](https://github.com/opensearch-project/sql/pull/3439) | Support CAST function with Calcite |
 | [#3473](https://github.com/opensearch-project/sql/pull/3473) | Add datetime functions |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3280](https://github.com/opensearch-project/sql/issues/3280): Deprecate DSL format
 - [Issue #3281](https://github.com/opensearch-project/sql/issues/3281): Deprecate DELETE statement
 - [Issue #3282](https://github.com/opensearch-project/sql/issues/3282): Remove opendistro settings
@@ -143,8 +149,6 @@ POST /_plugins/_sql?format=jdbc
 - [Issue #3286](https://github.com/opensearch-project/sql/issues/3286): Remove SparkSQL support
 - [Issue #3339](https://github.com/opensearch-project/sql/issues/3339): Unified PPL data types
 - [Issue #3417](https://github.com/opensearch-project/sql/issues/3417): CAST function with Calcite
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): What to expect in OpenSearch 3.0
 
 ## Related Feature Report
 

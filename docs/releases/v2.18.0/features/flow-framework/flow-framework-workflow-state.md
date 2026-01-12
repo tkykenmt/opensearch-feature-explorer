@@ -95,17 +95,19 @@ No migration required. This is an internal implementation change that maintains 
 - Maximum 5 retries on concurrent update conflicts (configurable via code constant)
 - Higher latency for concurrent updates due to get-modify-update pattern vs. atomic script updates
 
-## Related PRs
+## References
 
+### Documentation
+- [Workflow State API](https://docs.opensearch.org/2.18/automating-configurations/api/search-workflow-state/): Search workflow state documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#894](https://github.com/opensearch-project/flow-framework/pull/894) | Update workflow state without using painless script |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #779](https://github.com/opensearch-project/flow-framework/issues/779): [REFACTOR] Improve Workflow State Resource updates
 - [Issue #780](https://github.com/opensearch-project/flow-framework/issues/780): Related deprovisioning improvements
-- [Workflow State API](https://docs.opensearch.org/2.18/automating-configurations/api/search-workflow-state/): Search workflow state documentation
 
 ## Related Feature Report
 

@@ -41,8 +41,12 @@ Version increment and release notes additions for the 2.17.0 release across mult
 - security: → 2.17.0-SNAPSHOT
 - sql: → 2.17.0-SNAPSHOT
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch 2.17.0 Release Notes](https://github.com/opensearch-project/opensearch-build/blob/main/release-notes/opensearch-release-notes-2.17.0.md)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1650](https://github.com/opensearch-project/alerting/pull/1650) | alerting | Added 2.17 release notes |
@@ -70,10 +74,6 @@ Version increment and release notes additions for the 2.17.0 release across mult
 | [#939](https://github.com/opensearch-project/notifications/pull/939) | notifications | Increment version to 2.17.0-SNAPSHOT |
 | [#376](https://github.com/opensearch-project/query-insights/pull/376) | query-insights | Increment version to 2.17.0.0 |
 | [#4615](https://github.com/opensearch-project/security/pull/4615) | security | Increment version to 2.17.0-SNAPSHOT |
-
-## References
-
-- [OpenSearch 2.17.0 Release Notes](https://github.com/opensearch-project/opensearch-build/blob/main/release-notes/opensearch-release-notes-2.17.0.md)
 
 ## Related Feature Report
 

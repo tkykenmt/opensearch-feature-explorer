@@ -101,25 +101,25 @@ The Reactor Netty transport enables several advanced features:
 - Requires explicit plugin installation
 - Some features may have different behavior compared to the default Netty4 transport
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#20106](https://github.com/opensearch-project/OpenSearch/pull/20106) | Keep track and release accepted Http Channels during Node shutdown |
-| v3.3.0 | [#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Fix SslHandler retrieval for Security plugin compatibility |
-| v3.2.0 | - | Added `SecureHttpTransportParameters` interface |
-| v2.17.0 | - | Initial streaming support |
-
-## References
-
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official configuration guide
-- [Streaming Bulk API](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk-streaming/): Streaming bulk documentation
-- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Security plugin compatibility issue
-- [Project Reactor](https://github.com/reactor/reactor-netty): Underlying reactive framework
-
 ## Change History
 
 - **v3.4.0** (2026-01-14): Fixed HTTP channel tracking and release during node shutdown, resolving flaky test failures
 - **v3.3.0** (2025-09-29): Fixed SslHandler retrieval logic for Security plugin compatibility, added clientAuth support
 - **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface for cleaner SSL configuration
 - **v2.17.0** (2024-09-17): Initial streaming support with reactor-netty4 transport
+
+## References
+
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Official configuration guide
+- [Streaming Bulk API](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk-streaming/): Streaming bulk documentation
+- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Security plugin compatibility issue
+- [Project Reactor](https://github.com/reactor/reactor-netty): Underlying reactive framework
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#20106](https://github.com/opensearch-project/OpenSearch/pull/20106) | Keep track and release accepted Http Channels during Node shutdown |
+| v3.3.0 | [#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Fix SslHandler retrieval for Security plugin compatibility |
+| v3.2.0 | - | Added `SecureHttpTransportParameters` interface |
+| v2.17.0 | - | Initial streaming support |

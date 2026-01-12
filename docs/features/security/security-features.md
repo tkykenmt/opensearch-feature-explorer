@@ -118,8 +118,21 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 - Static security configs always take precedence over custom configs when there is overlap
 - The `plugins.security.system_indices.indices` setting is deprecated and will be removed in v4.0.0
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Added webhook Basic Auth support, fixed REST header propagation, deprecated system_indices.indices setting, allowed static/custom config overlap, updated search relevance permissions; Bug fixes for multi-tenancy `.kibana` index updates, WildcardMatcher empty string handling, array validator blank string checks, audit log sensitive parameter filtering, deprecated SSL settings, BCFIPS provider bootstrap timing, AccessController migration, PrivilegesEvaluator modularization
+- **v3.3.0** (2026-01): Bug fixes for system index access when protection disabled, JWT log spam with empty roles_key
+- **v3.1.0** (2025-06-10): Bug fixes for stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements
+- **v2.18.0** (2024-10-29): Bug fixes for system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
+
+## References
+
+### Documentation
+- [Audit Log Storage Types Documentation](https://docs.opensearch.org/3.0/security/audit-logs/storage-types/)
+- [System Indexes Documentation](https://docs.opensearch.org/3.0/security/configuration/system-indices/)
+- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#5792](https://github.com/opensearch-project/security/pull/5792) | Add Basic Authentication support for webhook audit log sink |
@@ -149,8 +162,7 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 | v2.18.0 | [#4827](https://github.com/opensearch-project/security/pull/4827) | Fix: HashingStoredFieldVisitor |
 | v2.18.0 | [#4777](https://github.com/opensearch-project/security/pull/4777) | Fix: Closed index mappings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5738](https://github.com/opensearch-project/security/issues/5738): Webhook audit log authentication bug report
 - [Issue #4799](https://github.com/opensearch-project/security/issues/4799): SecurityRestFilter drops ThreadContext headers
 - [Issue #5565](https://github.com/opensearch-project/security/issues/5565): Deprecate system_indices.indices setting
@@ -159,13 +171,3 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 - [Issue #4608](https://github.com/opensearch-project/security/issues/4608): SAML failed login audit issue
 - [Issue #4735](https://github.com/opensearch-project/security/issues/4735): Demo config nested YAML issue
 - [Issue #4755](https://github.com/opensearch-project/security/issues/4755): Admin system index read issue
-- [Audit Log Storage Types Documentation](https://docs.opensearch.org/3.0/security/audit-logs/storage-types/)
-- [System Indexes Documentation](https://docs.opensearch.org/3.0/security/configuration/system-indices/)
-- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
-
-## Change History
-
-- **v3.4.0** (2026-01): Added webhook Basic Auth support, fixed REST header propagation, deprecated system_indices.indices setting, allowed static/custom config overlap, updated search relevance permissions; Bug fixes for multi-tenancy `.kibana` index updates, WildcardMatcher empty string handling, array validator blank string checks, audit log sensitive parameter filtering, deprecated SSL settings, BCFIPS provider bootstrap timing, AccessController migration, PrivilegesEvaluator modularization
-- **v3.3.0** (2026-01): Bug fixes for system index access when protection disabled, JWT log spam with empty roles_key
-- **v3.1.0** (2025-06-10): Bug fixes for stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements
-- **v2.18.0** (2024-10-29): Bug fixes for system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings

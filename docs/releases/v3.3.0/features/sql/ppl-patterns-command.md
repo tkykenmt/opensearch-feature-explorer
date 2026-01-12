@@ -77,21 +77,23 @@ Output:
 - The `show_numbered_token` option only affects Calcite engine output
 - V2 engine always uses the standard `<*>` format
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4155](https://github.com/opensearch-project/sql/pull/4155) | Add sample_logs output field to patterns command aggregation result |
 | [#4402](https://github.com/opensearch-project/sql/pull/4402) | Fix numbered token bug and make it optional output |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4139](https://github.com/opensearch-project/sql/issues/4139): Feature request for sample_logs field
 - [Issue #4364](https://github.com/opensearch-project/sql/issues/4364): Feature request for optional numbered tokens
 - [Issue #4363](https://github.com/opensearch-project/sql/issues/4363): Bug report for continuous wildcards
 - [Issue #4362](https://github.com/opensearch-project/sql/issues/4362): Related bug fix
 - [Issue #4366](https://github.com/opensearch-project/sql/issues/4366): Related bug fix
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
 
 ## Related Feature Report
 

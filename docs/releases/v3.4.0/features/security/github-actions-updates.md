@@ -46,10 +46,17 @@ For workflow maintainers:
 - Node.js 24 runtime requires Actions Runner v2.327.1 or newer
 - Some actions may have breaking changes in their major version updates
 
-## Related PRs
+## References
 
-### security Repository
+### Documentation
+- [actions/checkout v6 Release](https://github.com/actions/checkout/releases/tag/v6.0.0)
+- [actions/upload-artifact v5 Release](https://github.com/actions/upload-artifact/releases/tag/v5.0.0)
+- [actions/download-artifact v6 Release](https://github.com/actions/download-artifact/releases/tag/v6.0.0)
+- [actions/setup-java v5 Release](https://github.com/actions/setup-java/releases/tag/v5.0.0)
+- [github/codeql-action v4](https://github.com/github/codeql-action)
+- [stefanzweifel/git-auto-commit-action v7 Release](https://github.com/stefanzweifel/git-auto-commit-action/releases/tag/v7.0.0)
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5810](https://github.com/opensearch-project/security/pull/5810) | Bump actions/checkout from 5 to 6 |
@@ -58,9 +65,6 @@ For workflow maintainers:
 | [#5704](https://github.com/opensearch-project/security/pull/5704) | Bump stefanzweifel/git-auto-commit-action from 6 to 7 |
 | [#5702](https://github.com/opensearch-project/security/pull/5702) | Bump github/codeql-action from 3 to 4 |
 | [#5630](https://github.com/opensearch-project/security/pull/5630) | Bump derek-ho/start-opensearch from 7 to 8 |
-
-### security-dashboards-plugin Repository
-
 | PR | Description |
 |----|-------------|
 | [#2339](https://github.com/opensearch-project/security-dashboards-plugin/pull/2339) | Bump actions/checkout from 5 to 6 |
@@ -68,15 +72,6 @@ For workflow maintainers:
 | [#2323](https://github.com/opensearch-project/security-dashboards-plugin/pull/2323) | Bump actions/setup-java from 4 to 5 |
 | [#2322](https://github.com/opensearch-project/security-dashboards-plugin/pull/2322) | Bump Wandalen/wretry.action from 3.3.0 to 3.8.0 |
 | [#2321](https://github.com/opensearch-project/security-dashboards-plugin/pull/2321) | Bump derek-ho/setup-opensearch-dashboards from 1 to 3 |
-
-## References
-
-- [actions/checkout v6 Release](https://github.com/actions/checkout/releases/tag/v6.0.0)
-- [actions/upload-artifact v5 Release](https://github.com/actions/upload-artifact/releases/tag/v5.0.0)
-- [actions/download-artifact v6 Release](https://github.com/actions/download-artifact/releases/tag/v6.0.0)
-- [actions/setup-java v5 Release](https://github.com/actions/setup-java/releases/tag/v5.0.0)
-- [github/codeql-action v4](https://github.com/github/codeql-action)
-- [stefanzweifel/git-auto-commit-action v7 Release](https://github.com/stefanzweifel/git-auto-commit-action/releases/tag/v7.0.0)
 
 ## Related Feature Report
 

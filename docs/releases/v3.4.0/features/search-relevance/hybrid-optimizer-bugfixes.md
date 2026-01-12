@@ -71,18 +71,20 @@ public void processHybridOptimizerExperiment(...) {
 - These fixes are specific to the Hybrid Optimizer experiment type
 - The weight rounding is fixed at one decimal place (0.1 increments)
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Optimizing hybrid search in OpenSearch](https://opensearch.org/blog/hybrid-search-optimization/): Blog post on hybrid search optimization
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#308](https://github.com/opensearch-project/search-relevance/pull/308) | Fix floating-point precision issues in hybrid optimizer weight generation |
 | [#292](https://github.com/opensearch-project/search-relevance/pull/292) | Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #298](https://github.com/opensearch-project/search-relevance/issues/298): Query weights not exact multiples of increment step
 - [Issue #282](https://github.com/opensearch-project/search-relevance/issues/282): Hybrid Optimizer Result Stuck in Processing
-- [Optimizing hybrid search in OpenSearch](https://opensearch.org/blog/hybrid-search-optimization/): Blog post on hybrid search optimization
 
 ## Related Feature Report
 

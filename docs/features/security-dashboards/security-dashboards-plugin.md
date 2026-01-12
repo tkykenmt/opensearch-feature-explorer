@@ -105,8 +105,17 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 - New navigation features require the nav group feature flag to be enabled
 - Some features depend on the underlying Security plugin configuration
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions
+
+## References
+
+### Documentation
+- [OpenSearch Security Documentation](https://docs.opensearch.org/latest/security/)
+- [Security Dashboards Plugin Repository](https://github.com/opensearch-project/security-dashboards-plugin)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#2079](https://github.com/opensearch-project/security-dashboards-plugin/pull/2079) | Use smaller and compressed variants of buttons and form components |
@@ -118,13 +127,6 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 | v2.17.0 | [#2108](https://github.com/opensearch-project/security-dashboards-plugin/pull/2108) | UX fixes for page header |
 | v2.17.0 | [#2084](https://github.com/opensearch-project/security-dashboards-plugin/pull/2084) | Update titles and descriptions |
 
-## References
-
-- [Security Dashboards Plugin Repository](https://github.com/opensearch-project/security-dashboards-plugin)
+### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056): Tenant link visibility bug
 - [Issue #2097](https://github.com/opensearch-project/security-dashboards-plugin/issues/2097): Basepath nextUrl validation bug
-- [OpenSearch Security Documentation](https://docs.opensearch.org/latest/security/)
-
-## Change History
-
-- **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions

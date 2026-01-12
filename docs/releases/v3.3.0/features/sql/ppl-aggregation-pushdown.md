@@ -131,8 +131,12 @@ source=logs | stats count() by bins(@timestamp, 20)
 - Auto date histogram pushdown only works with time/date fields
 - Some complex expressions may not be pushed down and will execute on the coordination node
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Speed up aggregation pushdown for single group-by expression |
@@ -142,15 +146,13 @@ source=logs | stats count() by bins(@timestamp, 20)
 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Push down limit operator into aggregation bucket size |
 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Push down stats with bins on time field into auto_date_histogram |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3528](https://github.com/opensearch-project/sql/issues/3528): Span query in PPL is slower than date histogram aggregation
 - [Issue #3949](https://github.com/opensearch-project/sql/issues/3949): Support eval-style expressions inside stats command
 - [Issue #3961](https://github.com/opensearch-project/sql/issues/3961): Support Limit pushdown through aggregation
 - [Issue #3967](https://github.com/opensearch-project/sql/issues/3967): Aggregation enhancement for SUM on FIELD + NUMBER
 - [Issue #3639](https://github.com/opensearch-project/sql/issues/3639): PPL earliest/latest aggregation function support
 - [Issue #4210](https://github.com/opensearch-project/sql/issues/4210): Span()/bin should support auto_date_histogram aggregation
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
 
 ## Related Feature Report
 

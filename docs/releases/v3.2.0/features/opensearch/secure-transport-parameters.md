@@ -144,16 +144,18 @@ public class CustomSecureHttpTransportParameters
 - The default implementation returns empty optionals and empty collections, requiring plugins to provide actual values
 - This change is part of ongoing work to fix HTTP/2 communication issues with reactor-netty transport
 
-## Related PRs
+## References
 
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Reactor Netty transport configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18572](https://github.com/opensearch-project/OpenSearch/pull/18572) | Introduce SecureHttpTransportParameters experimental API |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18559](https://github.com/opensearch-project/OpenSearch/issues/18559): BUG - Cannot communicate with http2 when reactor-netty is enabled
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Reactor Netty transport configuration
 
 ## Related Feature Report
 

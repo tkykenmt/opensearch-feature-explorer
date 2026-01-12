@@ -220,17 +220,17 @@ PUT /views/application-logs
 - **Index pattern length**: Each target index pattern limited to 64 characters
 - **Description length**: View descriptions limited to 256 characters
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2024-02-20): Initial implementation of Views feature with CRUD operations and search support
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#11957](https://github.com/opensearch-project/OpenSearch/pull/11957) | Projected Views - Initial implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #6181](https://github.com/opensearch-project/OpenSearch/issues/6181): RFC - Data projection with views
 - [Issue #3888](https://github.com/opensearch-project/security/issues/3888): Related security plugin issue for view-based access control
-
-## Change History
-
-- **v3.0.0** (2024-02-20): Initial implementation of Views feature with CRUD operations and search support

@@ -151,8 +151,16 @@ PUT _plugin/_search_relevance/judgments
 - Requires both frontend (Dashboards) and backend plugins to be enabled
 - Feature must be explicitly enabled via cluster settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Relevance Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/)
+- [Search Relevance Stats API](https://docs.opensearch.org/3.0/search-plugins/search-relevance/stats-api/)
+
+### Blog Posts
+- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post introducing the Search Relevance Workbench
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#533](https://github.com/opensearch-project/opensearch-dashboards-search-relevance/pull/533) | dashboards | Add search relevance workbench features |
@@ -164,12 +172,6 @@ PUT _plugin/_search_relevance/judgments
 | [#63](https://github.com/opensearch-project/opensearch-search-relevance/pull/63) | search | Add stats API |
 | [#29](https://github.com/opensearch-project/opensearch-search-relevance/pull/29) | search | Extend data model to adopt different experiment options/parameters |
 | [#5376](https://github.com/opensearch-project/security/pull/5376) | security | Integrate search-relevance functionalities with security plugin |
-
-## References
-
-- [Search Relevance Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/)
-- [Search Relevance Stats API](https://docs.opensearch.org/3.0/search-plugins/search-relevance/stats-api/)
-- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post introducing the Search Relevance Workbench
 
 ## Related Feature Report
 

@@ -62,8 +62,9 @@ version = '3.1.0-SNAPSHOT'
 - Version bump PRs are routine maintenance with no functional changes
 - These changes must be coordinated with the release branch creation timeline
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Title | Repository |
 |----|-------|------------|
 | [#154](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/154) | Update 3.0.0 qualifier from alpha1 to beta1 | learning |
@@ -85,8 +86,7 @@ version = '3.1.0-SNAPSHOT'
 | [#1500](https://github.com/opensearch-project/security/pull/1500) | Update version qualifier to beta1 | security |
 | [#1283](https://github.com/opensearch-project/security/pull/1283) | Increment version to 3.0.0.0 | security |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #201](https://github.com/tkykenmt/opensearch-feature-explorer/issues/201): Tracking issue
 
 ## Related Feature Report

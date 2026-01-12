@@ -74,16 +74,16 @@ Added comprehensive Cypress tests for discover visualization:
 - The fix only addresses the case where `getDefault()` throws an error; other index pattern loading issues may still occur
 - Cypress tests require workspace and data source setup
 
-## Related PRs
+## References
 
+### Documentation
+- [Index patterns documentation](https://docs.opensearch.org/3.2/dashboards/management/index-patterns/): Official docs on index patterns
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10345](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10345) | Fix: Discover plugin shows empty page instead of no-index-patterns UI |
 | [#10315](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10315) | Add cypress tests for discover visualization |
-
-## References
-
-- [Index patterns documentation](https://docs.opensearch.org/3.2/dashboards/management/index-patterns/): Official docs on index patterns
 
 ## Related Feature Report
 

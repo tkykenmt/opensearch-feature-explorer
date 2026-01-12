@@ -81,18 +81,20 @@ When viewing a dashboard with visualizations from multiple data sources, search 
 - Reporting plugin is still de-registered when MDS is enabled
 - Each `_msearch` batch can only target a single data source
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9361) | Add MDS to msearch |
 | [#9343](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9343) | Change from cluster to data sources for dataset selector column |
 | [#9637](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9637) | Trim the URL for creating data source |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2174](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/2174): Original feature request for MDS batch concurrent search
-- [Documentation](https://docs.opensearch.org/3.0/dashboards/management/multi-data-sources/): Configuring and using multiple data sources
 
 ## Related Feature Report
 

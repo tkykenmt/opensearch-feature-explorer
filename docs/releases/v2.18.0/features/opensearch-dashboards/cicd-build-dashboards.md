@@ -89,14 +89,14 @@ yarn osd clean
 - Initial build after upgrade requires full recompilation
 - Hash computation adds minor overhead compared to mtime checks (offset by cache hit benefits in CI)
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8472](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8472) | Switch OSD Optimizer to rely on file hashes instead of mtimes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8428](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8428): OSD Optimizer: Improve strategy for detecting stale compilation targets
 - [Issue #2188](https://github.com/opensearch-project/dashboards-observability/issues/2188): Related discussion on caching build artifacts
 

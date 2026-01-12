@@ -66,16 +66,16 @@ GET /_nodes?filter_path=nodes.*.version,nodes.*.build_hash
 - The new postings format optimizations primarily benefit conjunction queries
 - JDK 23 Panama Vectorization requires running on JDK 23 or later
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene 9.12.0 Changelog](https://lucene.apache.org/core/9_12_0/changes/Changes.html): Official release notes
+- [OpenSearch PR #15333](https://github.com/opensearch-project/OpenSearch/pull/15333): Main implementation PR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Update Apache Lucene to 9.12.0 |
-
-## References
-
-- [Lucene 9.12.0 Changelog](https://lucene.apache.org/core/9_12_0/changes/Changes.html): Official release notes
-- [OpenSearch PR #15333](https://github.com/opensearch-project/OpenSearch/pull/15333): Main implementation PR
 
 ## Related Feature Report
 

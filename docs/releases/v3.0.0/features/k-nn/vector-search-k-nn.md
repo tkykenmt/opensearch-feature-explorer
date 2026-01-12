@@ -160,8 +160,16 @@ Introduces the foundation for building k-NN indexes on remote infrastructure:
 - Node-level circuit breakers require manual node attribute configuration
 - Parallel graph download not yet implemented for Remote Index Build
 
-## Related PRs
+## References
 
+### Documentation
+- [Vector Search Documentation](https://docs.opensearch.org/3.0/vector-search/): Official docs
+- [k-NN API Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/): API reference
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Release overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | 3.0.0 Breaking Changes for KNN |
@@ -173,14 +181,10 @@ Introduces the foundation for building k-NN indexes on remote infrastructure:
 | [#2554](https://github.com/opensearch-project/k-NN/pull/2554) | Data download and IndexOutput write |
 | [#2560](https://github.com/opensearch-project/k-NN/pull/2560) | RemoteIndexClient skeleton and Build Request |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2263](https://github.com/opensearch-project/k-NN/issues/2263): Node level circuit breaker feature request
 - [Issue #2265](https://github.com/opensearch-project/k-NN/issues/2265): Concurrency optimizations feature request
 - [Issue #2465](https://github.com/opensearch-project/k-NN/issues/2465): Remote Native Index Build design
-- [Vector Search Documentation](https://docs.opensearch.org/3.0/vector-search/): Official docs
-- [k-NN API Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/): API reference
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Release overview
 
 ## Related Feature Report
 

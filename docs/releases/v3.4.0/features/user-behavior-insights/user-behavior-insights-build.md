@@ -71,18 +71,20 @@ repositories {
 - Requires AWS credentials for publishing (handled automatically in CI)
 - S3 repository browsing may differ from Sonatype's web interface
 
-## Related PRs
+## References
 
+### Documentation
+- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
+- [User Behavior Insights Repository](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#140](https://github.com/opensearch-project/user-behavior-insights/pull/140) | Onboarding new maven snapshots publishing to s3 (UBI) |
 | [#127](https://github.com/opensearch-project/user-behavior-insights/pull/127) | Increment version to 3.3.0-SNAPSHOT |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from sonatype snapshots repo to ci.opensearch.org snapshots repo
-- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
-- [User Behavior Insights Repository](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
 
 ## Related Feature Report
 

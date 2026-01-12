@@ -130,17 +130,19 @@ PUT /new_index?has_permission_check=true
 - The check reflects permissions at request time; very recent role changes may not be reflected if caching is involved
 - Does not simulate document-level or field-level security restrictions
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-25): Initial implementation - Added `has_permission_check` query parameter for permission validation without request execution
+
+## References
+
+### Documentation
+- [Permissions Documentation](https://docs.opensearch.org/3.2/security/access-control/permissions/): Official documentation on OpenSearch permissions
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#5496](https://github.com/opensearch-project/security/pull/5496) | Initial implementation of permission validation via query parameter |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5468](https://github.com/opensearch-project/security/issues/5468): Original feature request for Security Permissions Simulation
-- [Permissions Documentation](https://docs.opensearch.org/3.2/security/access-control/permissions/): Official documentation on OpenSearch permissions
-
-## Change History
-
-- **v3.2.0** (2025-07-25): Initial implementation - Added `has_permission_check` query parameter for permission validation without request execution

@@ -93,14 +93,14 @@ No migration required. After upgrading to v3.3.0, existing indices with semantic
 - Existing documents indexed before this fix will not have multiFields populated; reindexing is required
 - MultiFields are only supported when the raw field type supports them (e.g., `text`, `keyword`)
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1572](https://github.com/opensearch-project/neural-search/pull/1572) | Fix not able to index the multiFields for the rawFieldType |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1571](https://github.com/opensearch-project/neural-search/issues/1571): MultiFields doesn't work for semantic field type
 - [Related Issue #3950](https://github.com/opensearch-project/ml-commons/issues/3950): Original user report
 

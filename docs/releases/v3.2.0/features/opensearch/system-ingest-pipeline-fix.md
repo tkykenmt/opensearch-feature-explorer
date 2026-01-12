@@ -74,16 +74,18 @@ Without this fix, documents indexed through non-ingest nodes would not have syst
 - This fix addresses the specific case of request forwarding between nodes
 - The underlying cache invalidation behavior remains unchanged
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): System ingest pipeline overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18911](https://github.com/opensearch-project/OpenSearch/pull/18911) | Reset isPipelineResolved to false to resolve the system ingest pipeline again |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18909](https://github.com/opensearch-project/OpenSearch/issues/18909): System ingest pipeline not triggered when request is from a non-ingest node
-- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): System ingest pipeline overview
 
 ## Related Feature Report
 

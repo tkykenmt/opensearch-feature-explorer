@@ -93,16 +93,18 @@ No migration required. This is a transparent bugfix that improves error handling
 - Only applies to failures during the final write phase (downloading index from S3 to local segment)
 - Other types of failures (S3 connectivity, build service errors) still trigger CPU fallback as before
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Remote index build documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2773](https://github.com/opensearch-project/k-NN/pull/2773) | Don't fall back to CPU on terminal exceptions |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2766](https://github.com/opensearch-project/k-NN/issues/2766): Bug report - Terminate Index build request if Failed to write index in segment
-- [Documentation](https://docs.opensearch.org/3.0/vector-search/remote-index-build/): Remote index build documentation
 
 ## Related Feature Report
 

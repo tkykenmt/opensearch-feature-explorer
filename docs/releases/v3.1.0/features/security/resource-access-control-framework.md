@@ -164,17 +164,19 @@ resourceSharingClient.share(
 - No pattern matching for users/roles/backend_roles - each must be individually specified
 - Resources must be stored in system indices with system index protection enabled
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement blog
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5281](https://github.com/opensearch-project/security/pull/5281) | Introduces Centralized Resource Access Control Framework |
 | [#5358](https://github.com/opensearch-project/security/pull/5358) | Store resource sharing info in indices that map 1-to-1 with resource index |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing proposal
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Official announcement blog
 
 ## Related Feature Report
 

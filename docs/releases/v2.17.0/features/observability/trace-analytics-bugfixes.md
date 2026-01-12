@@ -59,8 +59,13 @@ No migration required. These are bug fixes that improve existing functionality.
 - These fixes are specific to the dashboards-observability plugin
 - MDS support requires proper configuration of data sources in OpenSearch Dashboards
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/index/): Official documentation
+- [CVE-2023-5072](https://nvd.nist.gov/vuln/detail/CVE-2023-5072): org.json vulnerability
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2006](https://github.com/opensearch-project/dashboards-observability/pull/2006) | Trace Analytics bug fix for local cluster rendering |
@@ -73,12 +78,9 @@ No migration required. These are bug fixes that improve existing functionality.
 | [#2012](https://github.com/opensearch-project/dashboards-observability/pull/2012) | Update Getting Started links to match catalog PR merges |
 | [#1966](https://github.com/opensearch-project/dashboards-observability/pull/1966) | Bump org.json:json for CVE-2023-5072 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1878](https://github.com/opensearch-project/dashboards-observability/issues/1878): Trace Analytics MDS rendering issue
 - [Issue #1931](https://github.com/opensearch-project/dashboards-observability/issues/1931): App Analytics page crash for missing MDS ID
-- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/index/): Official documentation
-- [CVE-2023-5072](https://nvd.nist.gov/vuln/detail/CVE-2023-5072): org.json vulnerability
 
 ## Related Feature Report
 

@@ -138,8 +138,15 @@ PUT /gpu-vector-index
 - gRPC integration tests require `OpenSearchGrpcTestCase` fixture (planned for future release)
 - PR #1413 (collapse bug fix) was not accessible for investigation
 
-## Related PRs
+## References
 
+### Documentation
+- [Binary Quantization Documentation](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/binary-quantization/): Official docs
+
+### Blog Posts
+- [ADC Blog Post](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/): Technical deep-dive
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2819](https://github.com/opensearch-project/k-NN/pull/2819) | Support GPU indexing for FP16, Byte and Binary |
@@ -150,15 +157,12 @@ PUT /gpu-vector-index
 | [#2806](https://github.com/opensearch-project/k-NN/pull/2806) | Dynamic index thread quantity defaults based on processor sizes |
 | [#2810](https://github.com/opensearch-project/k-NN/pull/2810) | Fix @ collision in NativeMemoryCacheKeyHelper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2796](https://github.com/opensearch-project/k-NN/issues/2796): GPU indexing RFC
 - [Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): ADC and Random Rotation RFC
 - [Issue #2816](https://github.com/opensearch-project/k-NN/issues/2816): gRPC k-NN support
 - [Issue #2747](https://github.com/opensearch-project/k-NN/issues/2747): Index thread quantity optimization
 - [Issue #2809](https://github.com/opensearch-project/k-NN/issues/2809): NativeMemoryCacheKeyHelper @ collision
-- [Binary Quantization Documentation](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/binary-quantization/): Official docs
-- [ADC Blog Post](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/): Technical deep-dive
 
 ## Related Feature Report
 

@@ -126,16 +126,18 @@ Successfully saved version v2 to .opensearch_security_config_versions
 - **Storage Overhead**: Each version stores complete configuration snapshots
 - **Cluster Manager Dependency**: Version tracking requires an elected cluster manager
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5357](https://github.com/opensearch-project/security/pull/5357) | Introduced new experimental versioned security configuration management feature |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5093](https://github.com/opensearch-project/security/issues/5093): Create a mechanism for tracking patches to the security index
-- [Security Configuration Documentation](https://docs.opensearch.org/3.0/security/configuration/index/)
 
 ## Related Feature Report
 

@@ -126,20 +126,20 @@ if (userInfo != null) {
 - The ThreadContext user info format uses pipe (`|`) as delimiter; values containing pipes must be escaped
 - Backend roles from external systems must match exactly (case-sensitive) with role mapping configuration
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#5369](https://github.com/opensearch-project/security/pull/5369) | Fix: Include mapped roles when setting userInfo in ThreadContext |
-| v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Performance: Immutable user object |
+- **v3.1.0** (2026-01-10): Fix mapped roles not being included in ThreadContext userInfo after immutable User object change
 
 ## References
 
+### Documentation
 - [Defining users and roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/): Official documentation
 - [Security settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Configuration options including `plugins.security.roles_mapping_resolution`
 - [PR #5369](https://github.com/opensearch-project/security/pull/5369): ThreadContext mapped roles fix
 - [PR #5212](https://github.com/opensearch-project/security/pull/5212): Immutable user object implementation
 
-## Change History
-
-- **v3.1.0** (2026-01-10): Fix mapped roles not being included in ThreadContext userInfo after immutable User object change
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#5369](https://github.com/opensearch-project/security/pull/5369) | Fix: Include mapped roles when setting userInfo in ThreadContext |
+| v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Performance: Immutable user object |

@@ -105,17 +105,19 @@ Note: Existing pipelines with long IDs will continue to work, but you cannot upd
 - The validation is based on UTF-8 byte length, not character count (multi-byte characters consume more of the limit)
 - Existing pipelines with non-compliant IDs are not automatically migrated
 
-## Related PRs
+## References
 
+### Documentation
+- [Ingest Pipeline Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/create-ingest/): Official docs for creating ingest pipelines
+- [Search Pipeline Documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/creating-search-pipeline/): Official docs for creating search pipelines
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17786](https://github.com/opensearch-project/OpenSearch/pull/17786) | Introduce 512 byte limit to search and ingest pipeline IDs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17766](https://github.com/opensearch-project/OpenSearch/issues/17766): Original bug report for weak validation
-- [Ingest Pipeline Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/create-ingest/): Official docs for creating ingest pipelines
-- [Search Pipeline Documentation](https://docs.opensearch.org/3.0/search-plugins/search-pipelines/creating-search-pipeline/): Official docs for creating search pipelines
 
 ## Related Feature Report
 

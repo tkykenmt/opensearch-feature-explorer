@@ -108,8 +108,14 @@ With the optimization in v2.18.0, this monitor will only query indices that cont
 - Query index shard settings changes apply only to newly created query indices
 - Bucket-level monitor optimization requires proper timestamp field configuration in the range query
 
-## Related PRs
+## References
 
+### Documentation
+- [Monitors Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/monitors/): Monitor types and configuration
+- [Alerting Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/index/): Official alerting documentation
+- [PR #1674](https://github.com/opensearch-project/alerting/pull/1674): Related PR for query index creation timing
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1685](https://github.com/opensearch-project/alerting/pull/1685) | alerting | Delete query index only if put mappings throws an exception |
@@ -121,13 +127,9 @@ With the optimization in v2.18.0, this monitor will only query indices that cont
 | [#1117](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1117) | alerting-dashboards-plugin | Add width for recent alerts card |
 | [#1124](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1124) | alerting-dashboards-plugin | Fix ui_metadata is not fetched when MDS client is used |
 
-## References
-
-- [Monitors Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/monitors/): Monitor types and configuration
-- [Alerting Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/index/): Official alerting documentation
+### Issues (Design / RFC)
 - [Issue #1710](https://github.com/opensearch-project/alerting/issues/1710): Related issue for bucket-level monitor optimization
 - [Issue #1123](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/1123): Related issue for MDS ui_metadata fix
-- [PR #1674](https://github.com/opensearch-project/alerting/pull/1674): Related PR for query index creation timing
 
 ## Related Feature Report
 

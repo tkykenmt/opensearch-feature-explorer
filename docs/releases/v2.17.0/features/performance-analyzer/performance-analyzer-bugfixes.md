@@ -52,17 +52,17 @@ GET localhost:9600/_plugins/_performanceanalyzer/metrics/units
 - This is a dependency update only; no new user-facing features are introduced
 - Requires restart of the Performance Analyzer agent to pick up the new library
 
-## Related PRs
+## References
 
+### Documentation
+- [Performance Analyzer Documentation](https://docs.opensearch.org/2.17/monitoring-your-cluster/pa/index/): Official documentation
+- [PA Commons PR #90](https://github.com/opensearch-project/performance-analyzer-commons/pull/90): Bump PA commons to 1.6.0
+- [PA Commons PR #82](https://github.com/opensearch-project/performance-analyzer-commons/pull/82): Bugfix for statsCollector scheduling
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#712](https://github.com/opensearch-project/performance-analyzer/pull/712) | Bump PA to use 1.6.0 PA commons lib |
-
-## References
-
-- [PA Commons PR #90](https://github.com/opensearch-project/performance-analyzer-commons/pull/90): Bump PA commons to 1.6.0
-- [PA Commons PR #82](https://github.com/opensearch-project/performance-analyzer-commons/pull/82): Bugfix for statsCollector scheduling
-- [Performance Analyzer Documentation](https://docs.opensearch.org/2.17/monitoring-your-cluster/pa/index/): Official documentation
 
 ## Related Feature Report
 

@@ -33,16 +33,16 @@ Contains information about:
 
 Documentation must be kept up-to-date as the project evolves.
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |
-
-## References
-
-- [dashboards-search-relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
-
 ## Change History
 
 - **v2.17.0** (2024-09-17): Fixed broken LICENSE file link and removed unused Docker documentation links
+
+## References
+
+### Documentation
+- [dashboards-search-relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |

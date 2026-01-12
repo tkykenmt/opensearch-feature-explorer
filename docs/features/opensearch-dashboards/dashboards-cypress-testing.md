@@ -126,8 +126,17 @@ describe('Discover Sidebar', () => {
 - Test data setup may be required before running certain test suites
 - Tests are primarily designed for Discover 2.0 features
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Major expansion of Cypress test coverage for Discover 2.0, including sidebar tests, saved search tests, inspect functionality, query editor tests, and flaky test fixes (18 PRs)
+
+## References
+
+### Documentation
+- [Cypress Documentation](https://docs.cypress.io/)
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#9154](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9154) | Refactor sidebar spec |
@@ -137,12 +146,5 @@ describe('Discover Sidebar', () => {
 | v3.0.0 | [#9386](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9386) | Top values and filter tests |
 | v3.0.0 | [#9433](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9433) | Fix flaky tests |
 
-## References
-
-- [Cypress Documentation](https://docs.cypress.io/)
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+### Issues (Design / RFC)
 - [Issue #8946](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8946): Discover 2.0 testing initiative
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Major expansion of Cypress test coverage for Discover 2.0, including sidebar tests, saved search tests, inspect functionality, query editor tests, and flaky test fixes (18 PRs)

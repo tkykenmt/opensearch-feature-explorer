@@ -165,8 +165,22 @@ GET logs/_search
 - Multiple sort fields disable approximation (v3.2.0+)
 - `search_after` with multiple tie-breaker values is not optimized (v3.2.0+)
 
-## Related PRs
+## Change History
 
+- **v3.4.0**: Adopted Lucene's native `pack` method for `half_float` and `unsigned_long` types, replacing custom encoding methods; requires Lucene 10.3.0
+- **v3.2.0**: Extended Approximation Framework to all numeric types (int, float, double, half_float, unsigned_long); added `search_after` support for numeric queries; approximation for range queries with `now`; automatic disabling for multiple sort fields
+- **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
+- **v3.0.0**: Initial GA release with basic early termination support; added logic to skip approximation when `track_total_hits: true` is set
+
+## References
+
+### Documentation
+- [Nightly Benchmarks](https://benchmarks.opensearch.org/): Performance metrics dashboard
+
+### Blog Posts
+- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19553](https://github.com/opensearch-project/OpenSearch/pull/19553) | Use Lucene `pack` method for `half_float` and `unsigned_long` |
@@ -178,19 +192,9 @@ GET logs/_search
 | v3.0.0 | [#18017](https://github.com/opensearch-project/OpenSearch/pull/18017) | Skip approximation when `track_total_hits` is set to `true` |
 | v3.0.0 | - | Initial GA release of Approximation Framework |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14406](https://github.com/opensearch-project/OpenSearch/issues/14406): Feature request to expand ApproximatePointRangeQuery to other numeric types
 - [Issue #18341](https://github.com/opensearch-project/OpenSearch/issues/18341): Feature request for DFS traversal strategy
 - [Issue #18546](https://github.com/opensearch-project/OpenSearch/issues/18546): Feature request for `search_after` support
 - [Issue #18503](https://github.com/opensearch-project/OpenSearch/issues/18503): Bug report for `now` range queries skipping approximation
-- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
 - [META Issue #18619](https://github.com/opensearch-project/OpenSearch/issues/18619): Future enhancements tracking
-- [Nightly Benchmarks](https://benchmarks.opensearch.org/): Performance metrics dashboard
-
-## Change History
-
-- **v3.4.0**: Adopted Lucene's native `pack` method for `half_float` and `unsigned_long` types, replacing custom encoding methods; requires Lucene 10.3.0
-- **v3.2.0**: Extended Approximation Framework to all numeric types (int, float, double, half_float, unsigned_long); added `search_after` support for numeric queries; approximation for range queries with `now`; automatic disabling for multiple sort fields
-- **v3.1.0** (2025-06-10): Enhanced BKD traversal with DFS strategy for skewed datasets, smart subtree skipping
-- **v3.0.0**: Initial GA release with basic early termination support; added logic to skip approximation when `track_total_hits: true` is set

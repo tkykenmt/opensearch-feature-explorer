@@ -160,19 +160,21 @@ PUT /my-index
 - Recovery operations depend on correct metadata handling in custom stores
 - Only one store factory can be active per index
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Initial implementation with StoreFactory interface, index.store.factory setting, and public API exposure for Store.LoadedMetadata and Store.OnClose
+
+## References
+
+### Documentation
+- [Store Subdirectory Module](store-subdirectory-module.md): First implementation using StoreFactory
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19091](https://github.com/opensearch-project/OpenSearch/pull/19091) | Add StoreFactory plugin interface for custom Store implementations |
 | v3.3.0 | [#19132](https://github.com/opensearch-project/OpenSearch/pull/19132) | Add subdirectory-aware store module (first implementation using StoreFactory) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19090](https://github.com/opensearch-project/OpenSearch/issues/19090): Feature request for custom Store implementations through plugin
 - [Issue #19131](https://github.com/opensearch-project/OpenSearch/issues/19131): Store module/plugin to handle subdirectory copying during recovery
-- [Store Subdirectory Module](store-subdirectory-module.md): First implementation using StoreFactory
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Initial implementation with StoreFactory interface, index.store.factory setting, and public API exposure for Store.LoadedMetadata and Store.OnClose

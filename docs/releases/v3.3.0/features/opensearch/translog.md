@@ -98,16 +98,16 @@ Translog translog = new LocalTranslog(
 - The channel factory is set at translog creation time and cannot be changed afterward
 - Custom channel factories must be compatible with the translog's file operations (read, write, sync)
 
-## Related PRs
+## References
 
+### Documentation
+- [Translog Documentation](https://docs.opensearch.org/3.0/getting-started/intro/#translog): Official translog documentation
+- [opensearch-storage-encryption#39](https://github.com/opensearch-project/opensearch-storage-encryption/pull/39): Related storage encryption PR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18918](https://github.com/opensearch-project/OpenSearch/pull/18918) | Add Channel Factory parameter to Translog |
-
-## References
-
-- [opensearch-storage-encryption#39](https://github.com/opensearch-project/opensearch-storage-encryption/pull/39): Related storage encryption PR
-- [Translog Documentation](https://docs.opensearch.org/3.0/getting-started/intro/#translog): Official translog documentation
 
 ## Related Feature Report
 

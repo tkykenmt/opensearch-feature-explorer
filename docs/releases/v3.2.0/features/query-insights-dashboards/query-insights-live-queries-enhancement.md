@@ -46,17 +46,19 @@ Users can manually refresh or adjust the auto-refresh interval through the UI co
 - The 30-second interval may not be suitable for time-critical monitoring scenarios
 - Users requiring faster updates should manually adjust the refresh interval
 
-## Related PRs
+## References
 
+### Documentation
+- [Live Queries Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/live-queries/)
+- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/query-insights-dashboard/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#304](https://github.com/opensearch-project/query-insights-dashboards/pull/304) | Updated Autorefresh 30s |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #152](https://github.com/opensearch-project/query-insights-dashboards/issues/152): Feature request for In-Flight Query Tracking
-- [Live Queries Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/live-queries/)
-- [Query Insights Dashboards Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/query-insights-dashboard/)
 
 ## Related Feature Report
 

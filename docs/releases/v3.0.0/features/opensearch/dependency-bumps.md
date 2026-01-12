@@ -82,8 +82,13 @@ The HttpCore5/HttpClient5 upgrade enables:
 - Third-party plugins may need updates for compatibility
 - JDK 21 requirement may affect older deployment environments
 
-## Related PRs
+## References
 
+### Documentation
+- [Reactor Netty 1.2.3 Release Notes](https://github.com/reactor/reactor-netty/releases/tag/v1.2.3)
+- [AWS SDK for Java 2.x Changelog](https://github.com/aws/aws-sdk-java-v2/blob/master/CHANGELOG.md)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17515](https://github.com/opensearch-project/OpenSearch/pull/17515) | Switch main/3.x to use JDK21 LTS version |
@@ -117,11 +122,8 @@ The HttpCore5/HttpClient5 upgrade enables:
 | [#17887](https://github.com/opensearch-project/OpenSearch/pull/17887) | Bump Apache POI from 5.2.5 to 5.4.1 |
 | [#17888](https://github.com/opensearch-project/OpenSearch/pull/17888) | Bump opensearch:protobufs from 0.2.0 to 0.3.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15927](https://github.com/opensearch-project/OpenSearch/issues/15927): ExtendedSocketOption support request
-- [Reactor Netty 1.2.3 Release Notes](https://github.com/reactor/reactor-netty/releases/tag/v1.2.3)
-- [AWS SDK for Java 2.x Changelog](https://github.com/aws/aws-sdk-java-v2/blob/master/CHANGELOG.md)
 
 ## Related Feature Report
 

@@ -135,17 +135,19 @@ curl -X PUT "https://localhost:9200/_cluster/settings" \
 - Dynamic TTL changes recreate all caches, temporarily affecting performance
 - The endpoint does not validate if the user exists before invalidation
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official security configuration docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5337](https://github.com/opensearch-project/security/pull/5337) | Add flush cache endpoint for individual user |
 | [#5324](https://github.com/opensearch-project/security/pull/5324) | Register cluster settings listener for `plugins.security.cache.ttl_minutes` |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2829](https://github.com/opensearch-project/security/issues/2829): Feature request for per-user cache invalidation
-- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official security configuration docs
 
 ## Related Feature Report
 

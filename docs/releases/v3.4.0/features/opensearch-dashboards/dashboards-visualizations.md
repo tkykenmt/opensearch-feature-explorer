@@ -82,8 +82,13 @@ No migration required. New features are additive and backward compatible.
 - In dashboard mode, column selector and density options are hidden
 - Numerical color fields require appropriate data ranges for effective visualization
 
-## Related PRs
+## References
 
+### Documentation
+- [Building data visualizations](https://docs.opensearch.org/3.4/dashboards/visualize/viz-index/): Official documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10604](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10604) | Allow customizing legend name |
@@ -95,11 +100,6 @@ No migration required. New features are additive and backward compatible.
 | [#10898](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10898) | Add customized column order toggle for table visualization |
 | [#10599](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10599) | Fix breadcrumb floating issue |
 | [#10657](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10657) | Fix tabs length and scroll persistence |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-- [Building data visualizations](https://docs.opensearch.org/3.4/dashboards/visualize/viz-index/): Official documentation
 
 ## Related Feature Report
 

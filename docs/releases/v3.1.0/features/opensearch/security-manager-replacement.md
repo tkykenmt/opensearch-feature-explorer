@@ -104,8 +104,16 @@ grant {
 - Performance overhead from bytecode instrumentation is minimal but present
 - Policy files must use `${{property}}` syntax (double braces) for system property expansion
 
-## Related PRs
+## References
 
+### Documentation
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager (JDK 24)
+
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17989](https://github.com/opensearch-project/OpenSearch/pull/17989) | Enhance Java Agent to intercept newByteChannel from FileSystemProvider |
@@ -113,12 +121,8 @@ grant {
 | [#17753](https://github.com/opensearch-project/OpenSearch/pull/17753) | Add policy parser for Java Agent (v3.0.0) |
 | [#17894](https://github.com/opensearch-project/OpenSearch/pull/17894) | Limit stack walking to frames before AccessController.doPrivileged (v3.0.0) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): RFC - Replace Java Security Manager (JSM)
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager (JDK 24)
 
 ## Related Feature Report
 

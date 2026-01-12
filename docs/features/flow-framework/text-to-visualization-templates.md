@@ -146,19 +146,19 @@ POST /.plugins-ml-config/_doc/os_text2vega
 - Text-to-visualization feature is experimental
 - Generated Vega-Lite specs may require manual refinement for complex visualizations
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |
+- **v3.0.0** (2025-05-06): Added text-to-visualization sample templates for Claude Haiku model
 
 ## References
 
+### Documentation
 - [Text to visualization documentation](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/text-to-visualization/)
 - [Workflow templates documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
 - [Flow agents documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/flow/)
 - [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/)
 
-## Change History
-
-- **v3.0.0** (2025-05-06): Added text-to-visualization sample templates for Claude Haiku model
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |

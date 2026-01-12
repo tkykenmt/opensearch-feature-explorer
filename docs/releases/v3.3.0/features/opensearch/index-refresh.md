@@ -79,17 +79,21 @@ No migration required. This is a transparent performance improvement that mainta
 - Refresh behavior for successful operations remains unchanged
 - Does not affect bulk operations where some items succeed and others fail (refresh still occurs for successful items)
 
-## Related PRs
+## References
 
+### Documentation
+- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation
+
+### Blog Posts
+- [Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Blog post on refresh optimization
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18917](https://github.com/opensearch-project/OpenSearch/pull/18917) | Fix unnecessary refreshes during update retry conflicts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15261](https://github.com/opensearch-project/OpenSearch/issues/15261): Original bug report - TransportUpdateAction trigger refresh for every failed retry attempt
-- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official documentation
-- [Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Blog post on refresh optimization
 
 ## Related Feature Report
 

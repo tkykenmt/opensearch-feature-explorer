@@ -128,18 +128,22 @@ To use star-tree index:
 - Only metric aggregations supported (no bucket aggregations yet)
 - High cardinality dimensions increase storage and query latency
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/search-plugins/star-tree-index/): Official star-tree index documentation
+- [Field Type Documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/star-tree/): Star-tree field type reference
+
+### Blog Posts
+- [Blog: The power of star-tree indexes](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): Performance analysis and use cases
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Add support for metric aggregations with/without term query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15257](https://github.com/opensearch-project/OpenSearch/issues/15257): Star-tree search tracking issue
-- [Documentation](https://docs.opensearch.org/2.18/search-plugins/star-tree-index/): Official star-tree index documentation
-- [Field Type Documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/star-tree/): Star-tree field type reference
-- [Blog: The power of star-tree indexes](https://opensearch.org/blog/the-power-of-star-tree-indexes-supercharging-opensearch-aggregations/): Performance analysis and use cases
 
 ## Related Feature Report
 

@@ -78,16 +78,18 @@ No migration required. Existing TSVB visualizations will continue to work. The n
 - The "Hidden" axis position is only available for time series visualizations with separate axis enabled
 - Axis scale setting is per-series, not global (this is intentional to allow mixed scales)
 
-## Related PRs
+## References
 
+### Documentation
+- [TSVB Documentation](https://docs.opensearch.org/2.18/dashboards/visualize/tsvb/): Official TSVB documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8504](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8504) | Allow hiding the TSVB axis for time series, compress non-OUI input fields, allow setting scale of each axis |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1929](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1929): Bug report - Separate axis overrides axis scale setting
-- [TSVB Documentation](https://docs.opensearch.org/2.18/dashboards/visualize/tsvb/): Official TSVB documentation
 
 ## Related Feature Report
 

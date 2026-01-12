@@ -67,16 +67,18 @@ When users navigate to a Search workspace overview page, they will see the "Comp
 - The card only appears when the Content Management plugin is available
 - Requires workspace feature to be enabled to see the Search use case overview page
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.17/search-plugins/search-relevance/compare-search-results/): Comparing search results
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#427](https://github.com/opensearch-project/dashboards-search-relevance/pull/427) | Add compare queries card to search use case overview page |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7807](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7807): Search use case overview page
-- [Documentation](https://docs.opensearch.org/2.17/search-plugins/search-relevance/compare-search-results/): Comparing search results
 
 ## Related Feature Report
 

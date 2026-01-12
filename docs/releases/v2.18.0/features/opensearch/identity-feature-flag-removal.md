@@ -98,18 +98,20 @@ public class ShiroIdentityPlugin extends Plugin implements IdentityPlugin, Actio
 - The `IdentityService` class is now marked as `@InternalApi` instead of `@ExperimentalApi`
 - Identity plugins are loaded unconditionally (no feature flag gating)
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Introducing identity and access control for OpenSearch](https://opensearch.org/blog/introducing-identity/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15430](https://github.com/opensearch-project/OpenSearch/pull/15430) | Remove identity-related feature flagged code from the RestController |
 | [#16024](https://github.com/opensearch-project/OpenSearch/pull/16024) | Remove Identity FeatureFlag |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): Remove Identity feature flag
 - [Issue #238](https://github.com/opensearch-project/opensearch-plugins/issues/238): Plugin adoption of new system index mechanism
-- [Blog: Introducing identity and access control for OpenSearch](https://opensearch.org/blog/introducing-identity/)
 
 ## Related Feature Report
 

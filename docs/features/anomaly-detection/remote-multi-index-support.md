@@ -132,20 +132,20 @@ When using remote indexes with fine-grained access control:
 - Network latency to remote clusters may affect detection performance
 - Remote cluster authentication must be properly configured
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1290](https://github.com/opensearch-project/anomaly-detection/pull/1290) | Adding remote index and multi-index checks in validation |
-| v2.17.0 | [#1295](https://github.com/opensearch-project/anomaly-detection/pull/1295) | Backport to 2.17 branch |
+- **v2.17.0** (2024-09-17): Initial implementation of remote index and multi-index validation support
 
 ## References
 
+### Documentation
 - [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/)
 - [Anomaly Detection Security](https://docs.opensearch.org/2.17/observing-your-data/ad/security/)
 - [Cross-Cluster Search](https://docs.opensearch.org/2.17/search-plugins/cross-cluster-search/)
 - [Anomaly Detection API](https://docs.opensearch.org/2.17/observing-your-data/ad/api/)
 
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation of remote index and multi-index validation support
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#1290](https://github.com/opensearch-project/anomaly-detection/pull/1290) | Adding remote index and multi-index checks in validation |
+| v2.17.0 | [#1295](https://github.com/opensearch-project/anomaly-detection/pull/1295) | Backport to 2.17 branch |

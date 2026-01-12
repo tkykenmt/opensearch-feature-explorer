@@ -201,18 +201,20 @@ QueryRewriterRegistry.INSTANCE.registerRewriter(new QueryRewriter() {
 - Custom rewriters must be registered programmatically (no plugin API yet)
 - Query names and boosts are preserved but may affect flattening eligibility
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01): Initial implementation with five built-in rewriters (boolean flattening, must-to-filter, must-not-to-should, terms merging, match-all removal)
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/query-rewriting/): Query rewriting overview
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19060](https://github.com/opensearch-project/OpenSearch/pull/19060) | Initial implementation of query rewriting infrastructure |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18906](https://github.com/opensearch-project/OpenSearch/issues/18906): RFC for Query Rewriting, Logical Planning, and Cost-Based Execution
 - [Issue #12390](https://github.com/opensearch-project/OpenSearch/issues/12390): RFC for Query Planning and Rewriting
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/query-rewriting/): Query rewriting overview
-
-## Change History
-
-- **v3.3.0** (2026-01): Initial implementation with five built-in rewriters (boolean flattening, must-to-filter, must-not-to-should, terms merging, match-all removal)

@@ -53,17 +53,19 @@ No user-facing changes. This is an internal test fix.
 - This fix addresses only the `testApproximateRangeWithSizeOverDefault` test
 - Other flaky tests in `ApproximatePointRangeQueryTests` may require similar fixes
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene IndexSearcher Documentation](https://lucene.apache.org/core/9_11_0/core/org/apache/lucene/search/IndexSearcher.html): Explains totalHits behavior
+- [PR #4270](https://github.com/opensearch-project/OpenSearch/pull/4270): Similar fix for related flaky test issue
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16434](https://github.com/opensearch-project/OpenSearch/pull/16434) | Fix flaky test by adjusting totalHits assertion logic |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15807](https://github.com/opensearch-project/OpenSearch/issues/15807): AUTOCUT Gradle Check Flaky Test Report for ApproximatePointRangeQueryTests
-- [Lucene IndexSearcher Documentation](https://lucene.apache.org/core/9_11_0/core/org/apache/lucene/search/IndexSearcher.html): Explains totalHits behavior
-- [PR #4270](https://github.com/opensearch-project/OpenSearch/pull/4270): Similar fix for related flaky test issue
 
 ## Related Feature Report
 

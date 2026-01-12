@@ -155,22 +155,24 @@ PUT my-index
 - Training operations only support FAISS engine
 - Conflicting engine specifications (top-level vs method-level) cause mapping errors
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#2736](https://github.com/opensearch-project/k-NN/pull/2736) | Added engine as a top-level optional parameter |
-| v3.3.0 | [#2833](https://github.com/opensearch-project/k-NN/pull/2833) | Migrate k-NN plugin to use GRPC transport-grpc SPI interface |
+- **v3.3.0** (2026-01-11): Added top-level engine parameter and gRPC transport support for k-NN queries
 
 ## References
 
-- [Issue #2534](https://github.com/opensearch-project/k-NN/issues/2534): Make engine top level field mapping parameter
-- [Issue #2816](https://github.com/opensearch-project/k-NN/issues/2816): Add GRPC support for k-NN queries
+### Documentation
 - [k-NN Vector Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-vector/): Official k-NN vector field documentation
 - [Methods and Engines](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-methods-engines/): k-NN methods and engines reference
 - [gRPC Search API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): gRPC Search API documentation
 - [gRPC APIs Overview](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): gRPC APIs overview
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#2736](https://github.com/opensearch-project/k-NN/pull/2736) | Added engine as a top-level optional parameter |
+| v3.3.0 | [#2833](https://github.com/opensearch-project/k-NN/pull/2833) | Migrate k-NN plugin to use GRPC transport-grpc SPI interface |
 
-- **v3.3.0** (2026-01-11): Added top-level engine parameter and gRPC transport support for k-NN queries
+### Issues (Design / RFC)
+- [Issue #2534](https://github.com/opensearch-project/k-NN/issues/2534): Make engine top level field mapping parameter
+- [Issue #2816](https://github.com/opensearch-project/k-NN/issues/2816): Add GRPC support for k-NN queries

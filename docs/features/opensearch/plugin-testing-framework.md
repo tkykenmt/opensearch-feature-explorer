@@ -137,18 +137,20 @@ public class MyPluginIT extends OpenSearchIntegTestCase {
 - Only works within OpenSearch's test framework (`OpenSearchIntegTestCase`, `OpenSearchSingleNodeTestCase`)
 - Plugin classes must be on the test classpath
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Enable testing for ExtensiblePlugins using classpath plugins |
-
-## References
-
-- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Main implementation
-- [Introduction to OpenSearch Plugins](https://opensearch.org/blog/plugins-intro/): Plugin architecture overview
-- [Backwards Compatibility Testing](https://opensearch.org/blog/bwc-testing-for-opensearch/): BWC testing framework
-
 ## Change History
 
 - **v3.1.0** (2025-05-08): Initial implementation - Enable testing for ExtensiblePlugins using classpath plugins
+
+## References
+
+### Documentation
+- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Main implementation
+
+### Blog Posts
+- [Introduction to OpenSearch Plugins](https://opensearch.org/blog/plugins-intro/): Plugin architecture overview
+- [Backwards Compatibility Testing](https://opensearch.org/blog/bwc-testing-for-opensearch/): BWC testing framework
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Enable testing for ExtensiblePlugins using classpath plugins |

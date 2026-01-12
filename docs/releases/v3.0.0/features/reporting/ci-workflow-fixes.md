@@ -79,17 +79,17 @@ Fixed incorrect path references in the build workflow:
 - These are infrastructure-only changes with no impact on plugin functionality
 - The changes are specific to the dashboards-reporting repository CI/CD
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #548](https://github.com/opensearch-project/dashboards-reporting/pull/548): Main implementation
+- [dashboards-reporting repository](https://github.com/opensearch-project/dashboards-reporting): Source repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#548](https://github.com/opensearch-project/dashboards-reporting/pull/548) | Minor CI updates and workflow fixes |
 | [#547](https://github.com/opensearch-project/dashboards-reporting/pull/547) | Related: Upgrade dashboards-reporting to node version 20 (closed, not merged) |
-
-## References
-
-- [PR #548](https://github.com/opensearch-project/dashboards-reporting/pull/548): Main implementation
-- [dashboards-reporting repository](https://github.com/opensearch-project/dashboards-reporting): Source repository
 
 ## Related Feature Report
 

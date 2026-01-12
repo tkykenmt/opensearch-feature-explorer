@@ -94,22 +94,24 @@ public class MyNodesRequest extends BaseNodesRequest<MyNodesRequest> {
 - Breaking change for plugins using the removed `includeDiscoveryNodes` parameter
 - The `concreteNodes` field is null when accessed within transport action handlers
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-13): Breaking change - removed `includeDiscoveryNodes` field, made optimization mandatory for all TransportNodesAction requests
+- **v2.16.0** (2024-07-22): Initial optimization with opt-in flag for NodeStats, ClusterStats, NodeInfo actions
+
+## References
+
+### Documentation
+- [Nodes APIs Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/index/): Official API documentation
+- [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Node roles configuration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17682](https://github.com/opensearch-project/OpenSearch/pull/17682) | Unset discovery nodes for every transport node actions request (breaking change) |
 | v2.16.0 | [#15131](https://github.com/opensearch-project/OpenSearch/pull/15131) | Reset discovery nodes in all transport node actions request |
 | v2.16.0 | [#14749](https://github.com/opensearch-project/OpenSearch/pull/14749) | Initial optimization for NodeStats, ClusterStats, NodeInfo |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17008](https://github.com/opensearch-project/OpenSearch/issues/17008): Feature request for v3.0.0 breaking change
 - [Issue #14713](https://github.com/opensearch-project/OpenSearch/issues/14713): Original performance issue report
-- [Nodes APIs Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/index/): Official API documentation
-- [Configuration and System Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/configuration-system/): Node roles configuration
-
-## Change History
-
-- **v3.0.0** (2025-05-13): Breaking change - removed `includeDiscoveryNodes` field, made optimization mandatory for all TransportNodesAction requests
-- **v2.16.0** (2024-07-22): Initial optimization with opt-in flag for NodeStats, ClusterStats, NodeInfo actions

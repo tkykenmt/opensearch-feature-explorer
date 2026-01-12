@@ -40,16 +40,16 @@ configurations.all {
 
 - This is a build-time fix only; no runtime behavior changes
 
-## Related PRs
+## References
 
+### Documentation
+- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
+- [User Behavior Insights Plugin](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#128](https://github.com/opensearch-project/user-behavior-insights/pull/128) | Pass Integration tests - fixes dependency errors |
-
-## References
-
-- [User Behavior Insights Plugin](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
-- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
 
 ## Related Feature Report
 

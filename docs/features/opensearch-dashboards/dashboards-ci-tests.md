@@ -87,18 +87,18 @@ jobs:
 - Some tests may be flaky due to timing-sensitive operations
 - Resource-intensive tests may timeout on shared runners
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#780](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/780) | Update unit test workflow to include 3.* branch |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [Jest Testing Framework](https://jestjs.io/)
-
 ## Change History
 
 - **v3.4.0**: Added 3.* branch support to unit test workflow
+
+## References
+
+### Documentation
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+- [Jest Testing Framework](https://jestjs.io/)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#780](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/780) | Update unit test workflow to include 3.* branch |

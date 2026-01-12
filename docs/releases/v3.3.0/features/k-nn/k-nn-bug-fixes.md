@@ -113,8 +113,12 @@ GET /my-index/_search
 - Derived source feature requires valid JSON documents
 - AVX2 optimizations may not be available on unsupported platforms
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/): k-NN API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2867](https://github.com/opensearch-project/k-NN/pull/2867) | Use queryVector length if present in MDC check |
@@ -128,8 +132,7 @@ GET /my-index/_search
 | [#2916](https://github.com/opensearch-project/k-NN/pull/2916) | Fix local ref leak in JNI |
 | [#2921](https://github.com/opensearch-project/k-NN/pull/2921) | Fix rescoring logic for nested exact search |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2866](https://github.com/opensearch-project/k-NN/issues/2866): Filter ANN Search with Byte[] not working
 - [Issue #2880](https://github.com/opensearch-project/k-NN/issues/2880): Derived Source deserialization exception on doc 4xx
 - [Issue #2887](https://github.com/opensearch-project/k-NN/issues/2887): Cosine similarity score range issue with memory optimized search
@@ -137,7 +140,6 @@ GET /my-index/_search
 - [Issue #2788](https://github.com/opensearch-project/k-NN/issues/2788): AVX2 detection NPE on other platforms
 - [Issue #2864](https://github.com/opensearch-project/k-NN/issues/2864): Radial search for byte[] FAISS
 - [Issue #2895](https://github.com/opensearch-project/k-NN/issues/2895): Nested exact search rescoring issue
-- [k-NN Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/): k-NN API reference
 
 ## Related Feature Report
 

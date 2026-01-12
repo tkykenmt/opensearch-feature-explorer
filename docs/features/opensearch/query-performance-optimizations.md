@@ -180,8 +180,19 @@ GET /metrics/_search
 - **Keyword Scoring**: Disabling scoring changes result ordering for multi-term queries that previously relied on IDF
 - **Terms Query**: Pre-sorted optimization only helps when input terms are already sorted
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-04): Added ApproximateMatchAllQuery, sub-aggregation support in filter rewrite, disabled keyword term scoring by default, and pre-sorted terms optimization for TermInSetQuery
+
+## References
+
+### Documentation
+- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/)
+- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+- [Filter Results Documentation](https://docs.opensearch.org/3.0/search-plugins/filter-search/)
+- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): TermInSetQuery sorting overhead
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |
@@ -189,17 +200,8 @@ GET /metrics/_search
 | v3.0.0 | [#17447](https://github.com/opensearch-project/OpenSearch/pull/17447) | Support sub agg in filter rewrite optimization |
 | v3.0.0 | [#17889](https://github.com/opensearch-project/OpenSearch/pull/17889) | Disable scoring of keyword term search by default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12602](https://github.com/opensearch-project/OpenSearch/issues/12602): Proposal for sub-aggregation support in filter rewrite
 - [Issue #17823](https://github.com/opensearch-project/OpenSearch/issues/17823): Keyword term search performance regression since 2.18
 - [Issue #13788](https://github.com/opensearch-project/OpenSearch/issues/13788): ApproximatePointRangeQuery for range queries
-- [Forum Discussion](https://forum.opensearch.org/t/avoid-re-sorting-when-initializing-terminsetquery/23865): TermInSetQuery sorting overhead
 - [Lucene Issue #14445](https://github.com/apache/lucene/issues/14445): Keyword term query performance regression
-- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/)
-- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
-- [Filter Results Documentation](https://docs.opensearch.org/3.0/search-plugins/filter-search/)
-
-## Change History
-
-- **v3.0.0** (2025-04): Added ApproximateMatchAllQuery, sub-aggregation support in filter rewrite, disabled keyword term scoring by default, and pre-sorted terms optimization for TermInSetQuery

@@ -60,18 +60,18 @@ No migration required. These are transparent dependency updates that do not chan
 
 - These fixes address transitive dependencies; direct usage of affected libraries should also be reviewed in custom implementations
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache HttpClient 5.4.x](https://hc.apache.org/httpcomponents-client-5.4.x/index.html): Official documentation
+- [CVE-2025-27820](https://github.com/advisories/GHSA-73m2-qfq3-56cx): Apache HttpClient domain check bypass
+- [CVE-2025-48734](https://github.com/advisories/GHSA-wxr5-93ph-8wr9): Apache Commons BeanUtils improper access control
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#371](https://github.com/opensearch-project/query-insights/pull/371) | CVE-2025-27820 and CVE-2025-48734 fix (main) |
 | [#375](https://github.com/opensearch-project/query-insights/pull/375) | Backport to 3.1 branch |
-
-## References
-
-- [CVE-2025-27820](https://github.com/advisories/GHSA-73m2-qfq3-56cx): Apache HttpClient domain check bypass
-- [CVE-2025-48734](https://github.com/advisories/GHSA-wxr5-93ph-8wr9): Apache Commons BeanUtils improper access control
-- [Apache HttpClient 5.4.x](https://hc.apache.org/httpcomponents-client-5.4.x/index.html): Official documentation
 
 ## Related Feature Report
 

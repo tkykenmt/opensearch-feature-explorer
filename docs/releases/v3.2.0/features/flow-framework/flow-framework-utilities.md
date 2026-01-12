@@ -154,18 +154,20 @@ These utilities are new additions and do not require migration. They can be used
 - Key names cannot exceed 50,000 characters
 - The recommender only maps values that exist in both input and output; unmapped fields are skipped
 
-## Related PRs
+## References
 
+### Documentation
+- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
+- [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1168](https://github.com/opensearch-project/flow-framework/pull/1168) | Add JsonToJson Recommender as a utility function |
 | [#1176](https://github.com/opensearch-project/flow-framework/pull/1176) | Add JsonToJson Transformer as a utility function |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1167](https://github.com/opensearch-project/flow-framework/issues/1167): Feature request for JsonToJson utilities
-- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
-- [Flow Framework Plugin](https://github.com/opensearch-project/flow-framework)
 
 ## Related Feature Report
 

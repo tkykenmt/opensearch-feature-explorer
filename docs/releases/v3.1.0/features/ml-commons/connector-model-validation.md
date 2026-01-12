@@ -142,8 +142,13 @@ With schema defining `inputText` as string type, the value `"5.11"` is correctly
 - Input validation uses a fixed character set; special characters outside the allowed set will be rejected
 - The schema validation fix requires the model interface to properly define string types for parameters that should remain as strings
 
-## Related PRs
+## References
 
+### Documentation
+- [Update Model API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/update-model/)
+- [Update Connector API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/update-connector/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3805](https://github.com/opensearch-project/ml-commons/pull/3805) | Add validation for name and description for model, model group, and connector resources |
@@ -152,13 +157,10 @@ With schema defining `inputText` as string type, the value `"5.11"` is correctly
 | [#3931](https://github.com/opensearch-project/ml-commons/pull/3931) | Fix tool not found in MCP memory issue |
 | [#3933](https://github.com/opensearch-project/ml-commons/pull/3933) | Fix: Ensure proper format for Bedrock DeepSeek tool result |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3639](https://github.com/opensearch-project/ml-commons/issues/3639): Enhance Input Validation for UpdateModel and UpdateModelGroup APIs
 - [Issue #3758](https://github.com/opensearch-project/ml-commons/issues/3758): Model interface validation failed when there is integer within text
 - [Issue #3906](https://github.com/opensearch-project/ml-commons/issues/3906): Gracefully handle error when user attempts to update retry_policy for a model that doesn't use inline connector
-- [Update Model API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/update-model/)
-- [Update Connector API Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/update-connector/)
 
 ## Related Feature Report
 

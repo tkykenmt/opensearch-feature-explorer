@@ -57,8 +57,13 @@ Minor improvements to code quality:
 - Lucene codec changes require index rebuild for existing indices to use new codec features
 - Force merge optimization only applies to non-quantization scenarios
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/index/): Official k-NN plugin docs
+- [Lucene PR #13538](https://github.com/apache/lucene/pull/13538): FlatFieldVectorsWriter API change
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2195](https://github.com/opensearch-project/k-NN/pull/2195) | Fix lucene codec after lucene version bumped to 9.12 |
@@ -66,12 +71,9 @@ Minor improvements to code quality:
 | [#2127](https://github.com/opensearch-project/k-NN/pull/2127) | Remove benchmarks folder from k-NN repo |
 | [#2167](https://github.com/opensearch-project/k-NN/pull/2167) | Minor refactoring and refactored some unit test |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2193](https://github.com/opensearch-project/k-NN/issues/2193): Fix k-NN build due to lucene upgrade
 - [Issue #2134](https://github.com/opensearch-project/k-NN/issues/2134): Regression in cohere-10m force merge latency
-- [Lucene PR #13538](https://github.com/apache/lucene/pull/13538): FlatFieldVectorsWriter API change
-- [k-NN Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/index/): Official k-NN plugin docs
 
 ## Related Feature Report
 

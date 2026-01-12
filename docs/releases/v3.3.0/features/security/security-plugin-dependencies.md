@@ -70,8 +70,13 @@ No migration steps required. These are transparent dependency updates that maint
 - Dependency updates are coordinated with OpenSearch core version requirements
 - Some transitive dependencies may also be updated automatically
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2025-53864](https://github.com/advisories/GHSA-xwmg-2g98-w7v9): nimbus-jose-jwt vulnerability
+- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) |
@@ -100,11 +105,8 @@ No migration steps required. These are transparent dependency updates that maint
 | [#5553](https://github.com/opensearch-project/security/pull/5553) | Bump org.opensearch:protobufs 0.6.0 → 0.13.0 |
 | [#5583](https://github.com/opensearch-project/security/pull/5583) | Bump spring-kafka-test 4.0.0-M3 → 4.0.0-M5 |
 
-## References
-
-- [CVE-2025-53864](https://github.com/advisories/GHSA-xwmg-2g98-w7v9): nimbus-jose-jwt vulnerability
+### Issues (Design / RFC)
 - [Issue #5593](https://github.com/opensearch-project/security/issues/5593): CVE-2025-53864 tracking issue
-- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
 
 ## Related Feature Report
 

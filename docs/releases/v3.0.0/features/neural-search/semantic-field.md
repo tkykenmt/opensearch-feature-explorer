@@ -69,18 +69,22 @@ The semantic field is gated behind a feature flag (`semantic_field_enabled`) and
 - Cannot change `semantic_info_field_name` after index creation
 - Does not support dynamic mapping
 
-## Related PRs
+## References
 
+### Documentation
+- [Semantic Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/semantic-search/)
+
+### Blog Posts
+- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1225](https://github.com/opensearch-project/neural-search/pull/1225) | Add semantic field mapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Neural Search field type proposal
 - [Issue #1226](https://github.com/opensearch-project/neural-search/issues/1226): Clean up unnecessary feature flag
-- [Semantic Search Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/semantic-search/)
-- [Blog: The new semantic field](https://opensearch.org/blog/the-new-semantic-field-simplifying-semantic-search-in-opensearch/)
 
 ## Related Feature Report
 

@@ -118,19 +118,23 @@ PUT /my-index/_settings
 - In high-conflict scenarios with `retry_on_conflict`, unnecessary refreshes could occur (fixed in v3.3.0)
 - Disabling refresh (`-1`) requires manual refresh to make documents searchable
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Fixed unnecessary refresh operations during update retry conflicts ([#18917](https://github.com/opensearch-project/OpenSearch/pull/18917))
+
+## References
+
+### Documentation
+- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official API documentation
+- [Index Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Configuration reference
+
+### Blog Posts
+- [Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Best practices blog
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18917](https://github.com/opensearch-project/OpenSearch/pull/18917) | Fix unnecessary refreshes during update retry conflicts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15261](https://github.com/opensearch-project/OpenSearch/issues/15261): Bug report for unnecessary refresh on update conflicts
-- [Refresh Index API](https://docs.opensearch.org/3.0/api-reference/index-apis/refresh/): Official API documentation
-- [Index Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Configuration reference
-- [Optimize OpenSearch Refresh Interval](https://opensearch.org/blog/optimize-refresh-interval/): Best practices blog
-
-## Change History
-
-- **v3.3.0**: Fixed unnecessary refresh operations during update retry conflicts ([#18917](https://github.com/opensearch-project/OpenSearch/pull/18917))

@@ -112,20 +112,20 @@ PUT _cluster/settings
 - Warning logs may increase log volume in high-traffic environments
 - Does not limit other query types or overall request size
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19539](https://github.com/opensearch-project/OpenSearch/pull/19539) | Introduced monitoring mode for query string query max length |
-| v2.19.4 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Initial implementation of `search.query.max_query_string_length` setting |
-
-## References
-
-- [PR #19539](https://github.com/opensearch-project/OpenSearch/pull/19539): Monitoring mode implementation
-- [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Original max length setting
-- [Query String Query Documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/): Official documentation
-
 ## Change History
 
 - **v3.4.0** (2025-12-09): Added `search.query.max_query_string_length_monitor_only` setting for monitoring mode
 - **v2.19.4** (2025-10-01): Initial implementation of `search.query.max_query_string_length` setting
+
+## References
+
+### Documentation
+- [Query String Query Documentation](https://docs.opensearch.org/3.0/query-dsl/full-text/query-string/): Official documentation
+- [PR #19539](https://github.com/opensearch-project/OpenSearch/pull/19539): Monitoring mode implementation
+- [PR #19491](https://github.com/opensearch-project/OpenSearch/pull/19491): Original max length setting
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#19539](https://github.com/opensearch-project/OpenSearch/pull/19539) | Introduced monitoring mode for query string query max length |
+| v2.19.4 | [#19491](https://github.com/opensearch-project/OpenSearch/pull/19491) | Initial implementation of `search.query.max_query_string_length` setting |

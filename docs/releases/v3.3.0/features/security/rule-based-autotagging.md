@@ -121,17 +121,17 @@ New compile dependencies:
 - Backend roles are not currently exposed (only frontend roles)
 - Escaped pipe characters in usernames are handled but may cause parsing edge cases
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#5606](https://github.com/opensearch-project/security/pull/5606) | Add logic to extract security attributes for rule-based autotagging |
-
 ## References
 
+### Documentation
 - [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
 - [Rule Lifecycle API](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 - [OpenSearch Core Auto-tagging PRs](https://github.com/opensearch-project/OpenSearch/pull/19486)
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#5606](https://github.com/opensearch-project/security/pull/5606) | Add logic to extract security attributes for rule-based autotagging |
 
 ## Related Feature Report
 

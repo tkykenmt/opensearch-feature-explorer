@@ -113,8 +113,9 @@ PUT _plugins/_ml/memory_containers/{container_id}
 - Some fixes are specific to the new Agentic Memory feature which is experimental
 - Multi-tenancy fixes require proper configuration of the multi-tenancy feature
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4138](https://github.com/opensearch-project/ml-commons/pull/4138) | Agent/Tool Parsing Fixes |
@@ -147,8 +148,7 @@ PUT _plugins/_ml/memory_containers/{container_id}
 | [#4259](https://github.com/opensearch-project/ml-commons/pull/4259) | Fix approver parsing bug in require-approval workflow |
 | [#4174](https://github.com/opensearch-project/ml-commons/pull/4174) | Fix Cohere IT |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4135](https://github.com/opensearch-project/ml-commons/issues/4135): Agent parsing issue
 - [Issue #4136](https://github.com/opensearch-project/ml-commons/issues/4136): Empty LLM content issue
 - [Issue #4137](https://github.com/opensearch-project/ml-commons/issues/4137): Steps with commas issue

@@ -80,16 +80,16 @@ No migration required. This is a transparent bugfix that corrects the behavior o
 - This fix specifically addresses SOCKS5 proxy authentication
 - HTTP/HTTPS proxy authentication was not affected by this issue
 
-## Related PRs
+## References
 
+### Documentation
+- [Azure Repository Plugin Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/)
+- [Azure SDK ProxyOptions](https://learn.microsoft.com/en-us/java/api/com.azure.core.http.proxyoptions)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18904](https://github.com/opensearch-project/OpenSearch/pull/18904) | Fix socks5 user password settings for Azure repo |
-
-## References
-
-- [Azure Repository Plugin Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-restore/)
-- [Azure SDK ProxyOptions](https://learn.microsoft.com/en-us/java/api/com.azure.core.http.proxyoptions)
 
 ## Related Feature Report
 

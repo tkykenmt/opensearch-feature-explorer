@@ -90,8 +90,14 @@ The overview page getting started cards were redesigned with:
 - These fixes are specific to the Security Analytics Dashboards plugin
 - Requires proper data source configuration in OpenSearch Dashboards
 
-## Related PRs
+## References
 
+### Documentation
+- [About Security Analytics](https://docs.opensearch.org/2.18/security-analytics/): Overview of Security Analytics
+- [Configuring and using multiple data sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Multi-data source configuration guide
+- [security-analytics-dashboards-plugin](https://github.com/opensearch-project/security-analytics-dashboards-plugin): GitHub repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1186](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1186) | Avoid showing unhelpful error toast when datasource is not yet selected |
@@ -99,12 +105,6 @@ The overview page getting started cards were redesigned with:
 | [#1192](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1192) | Fix: data source picker remount multiple times |
 | [#1199](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1199) | Bug fix to switch to default datasource instead of local cluster when initial loading |
 | [#1200](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1200) | Make data source default cluster for threat alerts card |
-
-## References
-
-- [About Security Analytics](https://docs.opensearch.org/2.18/security-analytics/): Overview of Security Analytics
-- [Configuring and using multiple data sources](https://docs.opensearch.org/2.18/dashboards/management/multi-data-sources/): Multi-data source configuration guide
-- [security-analytics-dashboards-plugin](https://github.com/opensearch-project/security-analytics-dashboards-plugin): GitHub repository
 
 ## Related Feature Report
 

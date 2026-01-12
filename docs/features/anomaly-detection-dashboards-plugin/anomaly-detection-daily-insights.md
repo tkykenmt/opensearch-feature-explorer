@@ -135,20 +135,20 @@ The Daily Insights page displays:
 - Insights are filtered to show only results from the most recent job execution window (default: 24 hours)
 - Maximum of 3 correlated events displayed on the overview page
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Initial implementation with Daily Insights page, Indices Management, and Index Selection Modal
+
+## References
+
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/)
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/)
+- [Anomaly Detection Dashboards Plugin](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#1118](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1118) | Introduce Daily Insights Page |
 | v3.4.0 | [#1119](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1119) | Adding Indices management and selection for daily insights |
 | v3.4.0 | [#1120](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/1120) | Adding data selector for index management |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/)
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/)
-- [Anomaly Detection Dashboards Plugin](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin)
-
-## Change History
-
-- **v3.4.0** (2026-01): Initial implementation with Daily Insights page, Indices Management, and Index Selection Modal

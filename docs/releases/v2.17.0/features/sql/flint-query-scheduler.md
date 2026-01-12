@@ -113,8 +113,12 @@ WITH (auto_refresh = false);
 - Only one refresh operation can be active for any given index or materialized view at a time
 - Feature flag must be enabled for the scheduler to function
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.17/dashboards/management/scheduled-query-acceleration/): Scheduled Query Acceleration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2834](https://github.com/opensearch-project/sql/pull/2834) | Flint query scheduler part 1 - integrate job scheduler plugin |
@@ -124,12 +128,10 @@ WITH (auto_refresh = false);
 | [#2975](https://github.com/opensearch-project/sql/pull/2975) | Backport to 2.17 |
 | [#2989](https://github.com/opensearch-project/sql/pull/2989) | Backport feature flag to 2.17 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2832](https://github.com/opensearch-project/sql/issues/2832): Integrate job scheduler plugin
 - [Issue #2833](https://github.com/opensearch-project/sql/issues/2833): Introduce scheduling service
 - [RFC #416](https://github.com/opensearch-project/opensearch-spark/issues/416): Direct Query External Query Scheduler
-- [Documentation](https://docs.opensearch.org/2.17/dashboards/management/scheduled-query-acceleration/): Scheduled Query Acceleration
 
 ## Related Feature Report
 

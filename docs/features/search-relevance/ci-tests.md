@@ -78,7 +78,15 @@ graph TB
 - Only one debug agent can be loaded per JVM
 - Integration tests require OpenSearch cluster to be running
 
-## Related PRs
+## Change History
+- **v3.4.0** (2026-01-11): Fixed UBI test dependencies, added JDWP debug support, removed deprecated AccessController usage, test code cleanups
+
+## References
+
+### Documentation
+- [Search Relevance Repository](https://github.com/opensearch-project/search-relevance)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#311](https://github.com/opensearch-project/search-relevance/pull/311) | Fixed CalculateJudgmentsIT dependency on UBI plugin |
@@ -87,12 +95,8 @@ graph TB
 | v3.4.0 | [#307](https://github.com/opensearch-project/search-relevance/pull/307) | Removed deprecated AccessController.doPrivileged() |
 | v3.4.0 | [#288](https://github.com/opensearch-project/search-relevance/pull/288) | Small cleanups to test classes |
 
-## References
+### Issues (Design / RFC)
 - [Issue #302](https://github.com/opensearch-project/search-relevance/issues/302): CalculateJudgmentsIT UBI dependency issue
 - [Issue #299](https://github.com/opensearch-project/search-relevance/issues/299): JDWP debug support request
 - [Issue #295](https://github.com/opensearch-project/search-relevance/issues/295): Duplicate JDWP configuration bug
 - [Issue #306](https://github.com/opensearch-project/search-relevance/issues/306): AccessController deprecation warnings
-- [Search Relevance Repository](https://github.com/opensearch-project/search-relevance)
-
-## Change History
-- **v3.4.0** (2026-01-11): Fixed UBI test dependencies, added JDWP debug support, removed deprecated AccessController usage, test code cleanups

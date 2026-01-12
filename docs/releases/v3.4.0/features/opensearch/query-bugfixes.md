@@ -151,8 +151,9 @@ No migration required. These are bug fixes that improve stability without changi
 - Complex wildcard patterns may still hit `TooComplexToDeterminizeException` if the automaton exceeds the determinization work limit
 - The unified highlighter fix only applies to `match_phrase_prefix` queries on nested fields; other query types were already working
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19489](https://github.com/opensearch-project/OpenSearch/pull/19489) | Fix case-insensitive wildcard + aggregation query crash |
@@ -162,8 +163,7 @@ No migration required. These are bug fixes that improve stability without changi
 | [#20204](https://github.com/opensearch-project/OpenSearch/pull/20204) | Fix array out of bounds during aggregation |
 | [#19719](https://github.com/opensearch-project/OpenSearch/pull/19719) | Fix wildcard query with escaped backslash followed by wildcard character |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19319](https://github.com/opensearch-project/OpenSearch/issues/19319): Error when use both wildcard + aggregation
 - [Issue #19636](https://github.com/opensearch-project/OpenSearch/issues/19636): Include/Exclude on terms aggregation can cause IndexOutOfBoundsException
 - [Issue #19106](https://github.com/opensearch-project/OpenSearch/issues/19106): Unified highlighter does not highlight nested fields when match_phrase_prefix is used

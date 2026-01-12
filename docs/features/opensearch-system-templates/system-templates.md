@@ -125,19 +125,21 @@ The index automatically inherits optimized settings from the `nginx-logs` templa
 - Requires explicit enablement via cluster setting
 - Custom codec requires additional plugin installation
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-10-22): Initial experimental release with 8 templates (logs, metrics, nginx-logs, apache-web-logs, amazon-cloudtrail-logs, amazon-elb-logs, amazon-s3-logs, k8s-logs)
+
+## References
+
+### Documentation
+- [opensearch-system-templates Repository](https://github.com/opensearch-project/opensearch-system-templates): Source code
+
+### Blog Posts
+- [OpenSearch Blog: Application-Based Configuration Templates](https://opensearch.org/blog/abc-templates/): Feature announcement and details
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [opensearch-system-templates#3](https://github.com/opensearch-project/opensearch-system-templates/pull/3) | Initial implementation with basic templates |
 | v2.17.0 | [opensearch-system-templates#8](https://github.com/opensearch-project/opensearch-system-templates/pull/8) | Add nginx, apache, AWS, k8s templates + zstd support |
 | v2.17.0 | [opensearch-system-templates#11](https://github.com/opensearch-project/opensearch-system-templates/pull/11) | Backport to 2.x branch |
-
-## References
-
-- [OpenSearch Blog: Application-Based Configuration Templates](https://opensearch.org/blog/abc-templates/): Feature announcement and details
-- [opensearch-system-templates Repository](https://github.com/opensearch-project/opensearch-system-templates): Source code
-
-## Change History
-
-- **v2.17.0** (2024-10-22): Initial experimental release with 8 templates (logs, metrics, nginx-logs, apache-web-logs, amazon-cloudtrail-logs, amazon-elb-logs, amazon-s3-logs, k8s-logs)

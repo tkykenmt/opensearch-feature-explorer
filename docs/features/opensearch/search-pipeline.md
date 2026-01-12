@@ -256,30 +256,34 @@ Response includes system-generated processor and factory statistics:
 - System-generated factories are disabled by default and must be explicitly enabled (v3.3.0+)
 - Only one system-generated processor per type and stage is allowed per request (v3.3.0+)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-14): Added system-generated search pipeline support for automatic processor generation
+- **v3.2.0** (2026-01-14): Added support for specifying search pipeline in search template and msearch template APIs
+- **v2.18.0** (2024-11-05): Added support for specifying search pipeline in msearch API request body
+
+## References
+
+### Documentation
+- [Search Pipelines Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/): Official documentation
+- [Using a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/using-search-pipeline/): Usage guide
+- [Creating a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Creation guide
+- [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/search-template/): Search template API
+- [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/msearch-template/): Msearch template API
+
+### Blog Posts
+- [Hybrid Search Blog](https://opensearch.org/blog/hybrid-search/): Hybrid search with normalization processor
+- [Optimizing Hybrid Search Blog](https://opensearch.org/blog/hybrid-search-optimization/): Performance optimization
+- [System-Generated Search Pipelines Blog](https://opensearch.org/blog/making-search-smarter-with-system-generated-search-pipelines/): System-generated pipelines explanation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19128](https://github.com/opensearch-project/OpenSearch/pull/19128) | Added system-generated search pipeline support |
 | v3.2.0 | [#18564](https://github.com/opensearch-project/OpenSearch/pull/18564) | Added search pipeline support in search and msearch template |
 | v2.18.0 | [#15923](https://github.com/opensearch-project/OpenSearch/pull/15923) | Added msearch API support for search pipeline name |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18731](https://github.com/opensearch-project/OpenSearch/issues/18731): Feature request for system-generated search pipeline
 - [Issue #18508](https://github.com/opensearch-project/OpenSearch/issues/18508): Feature request for search pipeline support in msearch template
 - [Issue #15748](https://github.com/opensearch-project/OpenSearch/issues/15748): Feature request for msearch pipeline support
-- [Search Pipelines Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/): Official documentation
-- [Using a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/using-search-pipeline/): Usage guide
-- [Creating a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Creation guide
-- [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/search-template/): Search template API
-- [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/msearch-template/): Msearch template API
-- [Hybrid Search Blog](https://opensearch.org/blog/hybrid-search/): Hybrid search with normalization processor
-- [Optimizing Hybrid Search Blog](https://opensearch.org/blog/hybrid-search-optimization/): Performance optimization
-- [System-Generated Search Pipelines Blog](https://opensearch.org/blog/making-search-smarter-with-system-generated-search-pipelines/): System-generated pipelines explanation
-
-## Change History
-
-- **v3.3.0** (2026-01-14): Added system-generated search pipeline support for automatic processor generation
-- **v3.2.0** (2026-01-14): Added support for specifying search pipeline in search template and msearch template APIs
-- **v2.18.0** (2024-11-05): Added support for specifying search pipeline in msearch API request body

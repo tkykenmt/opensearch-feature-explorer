@@ -80,8 +80,12 @@ Fixed global search URL handling within workspaces by correctly handling client 
 - Banner dismissal persists only for the current browser session (cleared when browser closes)
 - Some fixes are specific to the new Explore interface
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10316](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10316) | Standardize axis title behavior |
@@ -107,7 +111,3 @@ Fixed global search URL handling within workspaces by correctly handling client 
 | [#10479](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10479) | Traces span redirection and hover |
 | [#10486](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10486) | Editor spacing and scroll |
 | [#10497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10497) | Gauge/metric units panel |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)

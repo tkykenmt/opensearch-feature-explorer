@@ -143,17 +143,21 @@ PUT _index_template/example-template
 - Settings from templates are provided as a list; the factory must handle precedence logic
 - Dynamic setting changes require index mapping update to trigger cache invalidation
 
-## Related PRs
+## References
 
+### Documentation
+- [Ingest Pipelines Documentation](https://docs.opensearch.org/3.2/ingest-pipelines/): Official documentation
+
+### Blog Posts
+- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): System ingest pipeline overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18708](https://github.com/opensearch-project/OpenSearch/pull/18708) | Pass index settings to system ingest processor factories |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1349](https://github.com/opensearch-project/neural-search/issues/1349): Semantic Field Enhancement - Configure Batch Size for Embedding Generation
-- [Blog: Making ingestion smarter](https://opensearch.org/blog/making-ingestion-smarter-system-ingest-pipelines-in-opensearch/): System ingest pipeline overview
-- [Ingest Pipelines Documentation](https://docs.opensearch.org/3.2/ingest-pipelines/): Official documentation
 
 ## Related Feature Report
 

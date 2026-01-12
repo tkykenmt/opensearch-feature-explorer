@@ -42,15 +42,15 @@ No migration required. This is a transparent dependency update with no API chang
 
 None identified.
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.18/observing-your-data/ad/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1337](https://github.com/opensearch-project/anomaly-detection/pull/1337) | Updating several dependencies |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.18/observing-your-data/ad/index/)
 
 ## Related Feature Report
 

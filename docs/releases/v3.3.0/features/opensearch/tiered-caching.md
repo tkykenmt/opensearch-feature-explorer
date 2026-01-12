@@ -83,16 +83,18 @@ No migration required. The fix is automatically applied when upgrading to v3.3.0
 - The underlying query timeout or cancellation behavior is unchanged
 - Tiered caching remains an experimental feature
 
-## Related PRs
+## References
 
+### Documentation
+- [Tiered Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
+
+### Blog Posts
+- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19000](https://github.com/opensearch-project/OpenSearch/pull/19000) | Handle query execution exception in tiered cache |
-
-## References
-
-- [Tiered Cache Documentation](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
-- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
 
 ## Related Feature Report
 

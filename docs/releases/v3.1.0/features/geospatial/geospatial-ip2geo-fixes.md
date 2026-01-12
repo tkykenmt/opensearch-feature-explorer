@@ -113,16 +113,16 @@ PUT /_ingest/pipeline/my-pipeline
 - Retry logic adds one additional attempt, which may slightly increase latency on first failure
 - Cache reset affects all datasources on the node, not just the failing one
 
-## Related PRs
+## References
 
+### Documentation
+- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official IP2Geo processor documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#761](https://github.com/opensearch-project/geospatial/pull/761) | Reset datasource metadata when failed to update it in postIndex and postDelete |
 | [#766](https://github.com/opensearch-project/geospatial/pull/766) | Refresh the Ip2Geo cache and retry one more time when we run into an issue |
-
-## References
-
-- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official IP2Geo processor documentation
 
 ## Related Feature Report
 

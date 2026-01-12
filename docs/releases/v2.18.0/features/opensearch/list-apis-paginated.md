@@ -163,22 +163,24 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 - `next_token` is Base64 encoded and should be treated as opaque
 - Cat API limits return HTTP 429 when exceeded, requiring client handling
 
-## Related PRs
+## References
 
+### Documentation
+- [List API Documentation](https://docs.opensearch.org/2.18/api-reference/list/): Official docs
+- [List indices Documentation](https://docs.opensearch.org/2.18/api-reference/list/list-indices/): List indices API
+- [List shards Documentation](https://docs.opensearch.org/2.18/api-reference/list/list-shards/): List shards API
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Implementing pagination for `_cat/indices` API |
 | [#14641](https://github.com/opensearch-project/OpenSearch/pull/14641) | Implementing pagination for `_cat/shards` |
 | [#15986](https://github.com/opensearch-project/OpenSearch/pull/15986) | Add changes to block calls in cat shards, indices and segments based on dynamic limit settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14258](https://github.com/opensearch-project/OpenSearch/issues/14258): Paginate `_cat/indices` API
 - [Issue #14257](https://github.com/opensearch-project/OpenSearch/issues/14257): Paginate `_cat/shards` API
 - [Issue #15954](https://github.com/opensearch-project/OpenSearch/issues/15954): Blocking non-paginated calls
-- [List API Documentation](https://docs.opensearch.org/2.18/api-reference/list/): Official docs
-- [List indices Documentation](https://docs.opensearch.org/2.18/api-reference/list/list-indices/): List indices API
-- [List shards Documentation](https://docs.opensearch.org/2.18/api-reference/list/list-shards/): List shards API
 
 ## Related Feature Report
 

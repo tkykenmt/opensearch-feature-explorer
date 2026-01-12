@@ -115,17 +115,21 @@ grpcurl -insecure -cert esnode.pem -key esnode-key.pem localhost:9400 list
 - **Certificate-based access only**: Access control is limited to `clientauth_mode` settings (allow/deny based on certificate presence and trust)
 - **JDK SSL provider only**: Uses JDK SSL provider; OpenSSL provider is not supported for auxiliary transports
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Configuring TLS certificates](https://docs.opensearch.org/3.2/security/configuration/tls/): Official TLS configuration guide
+
+### Blog Posts
+- [gRPC Transport GA](https://opensearch.org/blog/introducing-opensearch-3-2-next-generation-search-and-anayltics-with-enchanced-ai-capabilities/): OpenSearch 3.2 release announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5375](https://github.com/opensearch-project/security/pull/5375) | Add support for configuring auxiliary transports for SSL only |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations
-- [Documentation: Configuring TLS certificates](https://docs.opensearch.org/3.2/security/configuration/tls/): Official TLS configuration guide
-- [gRPC Transport GA](https://opensearch.org/blog/introducing-opensearch-3-2-next-generation-search-and-anayltics-with-enchanced-ai-capabilities/): OpenSearch 3.2 release announcement
 
 ## Related Feature Report
 

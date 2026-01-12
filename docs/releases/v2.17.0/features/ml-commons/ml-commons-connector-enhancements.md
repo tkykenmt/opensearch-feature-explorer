@@ -91,17 +91,19 @@ POST /_plugins/_ml/connectors/_create
 - When validation is skipped, malformed payloads with unfilled placeholders will be sent to the remote service, which may result in errors from the external API
 - Users should ensure their prompts and payloads are correctly formatted when using this option
 
-## Related PRs
+## References
 
+### Documentation
+- [Connector Blueprints Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/blueprints/): Official documentation for connector configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2830](https://github.com/opensearch-project/ml-commons/pull/2830) | Backport to 2.x: Support skip_validating_missing_parameters in connector |
 | [#2812](https://github.com/opensearch-project/ml-commons/pull/2812) | Original implementation: Support skip_validating_missing_parameters in connector |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2712](https://github.com/opensearch-project/ml-commons/issues/2712): KnowledgeBaseTool may return parameter placeholder not filled error
-- [Connector Blueprints Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/blueprints/): Official documentation for connector configuration
 
 ## Related Feature Report
 

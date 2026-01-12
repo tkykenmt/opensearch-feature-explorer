@@ -85,18 +85,18 @@ PUT /my-index
 - QAT-accelerated ZSTD is not yet available in this release (foundation only)
 - Compression levels are limited to range [1, 6]
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official OpenSearch documentation
+- [ZSTD GitHub Repository](https://github.com/facebook/zstd): Zstandard compression algorithm
+- [zstd-jni](https://github.com/luben/zstd-jni): JNI bindings for ZSTD
+- [Intel QAT Overview](https://www.intel.com/content/www/us/en/developer/topic-technology/open/quick-assist-technology/overview.html): Hardware acceleration information
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#232](https://github.com/opensearch-project/custom-codecs/pull/232) | Bump ZTD lib version to 1.5.6-1 |
-
-## References
-
-- [ZSTD GitHub Repository](https://github.com/facebook/zstd): Zstandard compression algorithm
-- [zstd-jni](https://github.com/luben/zstd-jni): JNI bindings for ZSTD
-- [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official OpenSearch documentation
-- [Intel QAT Overview](https://www.intel.com/content/www/us/en/developer/topic-technology/open/quick-assist-technology/overview.html): Hardware acceleration information
 
 ## Related Feature Report
 

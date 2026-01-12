@@ -68,14 +68,14 @@ No migration required. This is a transparent bug fix that improves error message
 - The fix relies on the error object having a `body` property containing the error message
 - If the backend returns errors in a different format, the fallback to the original error object is used
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#612](https://github.com/opensearch-project/dashboards-search-relevance/pull/612) | Bug fixes for error messages not render correctly for toast notifications |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #547](https://github.com/opensearch-project/dashboards-search-relevance/issues/547): Error messages are not surfaced to search relevance workbench
 
 ## Related Feature Report

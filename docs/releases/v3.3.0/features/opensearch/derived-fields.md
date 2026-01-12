@@ -92,16 +92,18 @@ PUT /logs/_mapping
 - Scoring and sorting on derived fields are not yet supported
 - Chained derived fields (one derived field referencing another) are not supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/derived/): Derived field type documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19496](https://github.com/opensearch-project/OpenSearch/pull/19496) | Fix derived field rewrite to handle range queries |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19337](https://github.com/opensearch-project/OpenSearch/issues/19337): Bug report for derived field rewrite issues
-- [Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/derived/): Derived field type documentation
 
 ## Related Feature Report
 

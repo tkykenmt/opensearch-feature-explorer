@@ -119,19 +119,21 @@ docker run --gpus all -p 80:1025 \
 - LocalStack is used for local testing; production tests should use real S3
 - The `@ExpectRemoteBuildValidation` annotation relies on metrics verification, which may not catch all edge cases
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): MockNode constructor change in OpenSearch core
+- [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): GPU build service repository
+- [Developer Guide](https://github.com/opensearch-project/k-NN/blob/main/DEVELOPER_GUIDE.md): Instructions for running tests with remote index builder
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2659](https://github.com/opensearch-project/k-NN/pull/2659) | Add testing support to run all ITs with remote index builder |
 | [#2700](https://github.com/opensearch-project/k-NN/pull/2700) | Fix KNNSettingsTests after change in MockNode constructor |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Meta issue for remote vector index build integration testing support
-- [OpenSearch PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): MockNode constructor change in OpenSearch core
-- [Remote Vector Index Builder](https://github.com/opensearch-project/remote-vector-index-builder): GPU build service repository
-- [Developer Guide](https://github.com/opensearch-project/k-NN/blob/main/DEVELOPER_GUIDE.md): Instructions for running tests with remote index builder
 
 ## Related Feature Report
 

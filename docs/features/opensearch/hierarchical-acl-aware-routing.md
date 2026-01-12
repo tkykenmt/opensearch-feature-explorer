@@ -220,21 +220,23 @@ Both documents share the anchor `/company/engineering` and are routed to the sam
 - **Re-indexing required**: Existing indices need re-indexing to apply new routing
 - **Routing value changes**: Changing `anchor_depth` or `path_separator` will change routing values
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#18826](https://github.com/opensearch-project/OpenSearch/pull/18826) | Add hierarchical routing processors for ingest and search pipelines |
-| v3.2.0 | [#18834](https://github.com/opensearch-project/OpenSearch/pull/18834) | Add ACL-aware routing processors for multi-tenant document routing |
+- **v3.2.0** (2025-08): Initial implementation of hierarchical and ACL-aware routing processors
 
 ## References
 
-- [Issue #18829](https://github.com/opensearch-project/OpenSearch/issues/18829): RFC: ACL-Aware Routing Strategy for Shard Assignment
+### Documentation
 - [Routing Documentation](https://docs.opensearch.org/3.2/field-types/metadata-fields/routing/): OpenSearch routing field
 - [Search Shard Routing](https://docs.opensearch.org/3.2/search-plugins/searching-data/search-shard-routing/): Search routing documentation
 - [Ingest Processors](https://docs.opensearch.org/3.2/ingest-pipelines/processors/index-processors/): Ingest pipeline processors
 - [Search Processors](https://docs.opensearch.org/3.2/search-plugins/search-pipelines/search-processors/): Search pipeline processors
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#18826](https://github.com/opensearch-project/OpenSearch/pull/18826) | Add hierarchical routing processors for ingest and search pipelines |
+| v3.2.0 | [#18834](https://github.com/opensearch-project/OpenSearch/pull/18834) | Add ACL-aware routing processors for multi-tenant document routing |
 
-- **v3.2.0** (2025-08): Initial implementation of hierarchical and ACL-aware routing processors
+### Issues (Design / RFC)
+- [Issue #18829](https://github.com/opensearch-project/OpenSearch/issues/18829): RFC: ACL-Aware Routing Strategy for Shard Assignment

@@ -145,19 +145,21 @@ GET /my-index/_search
 - `max_score` is only computed when `_score` is the first sort field with descending order
 - Ascending score sort (`"order": "asc"`) will still return `max_score: null`
 
-## Related PRs
+## References
 
+### Documentation
+- [Search API Documentation](https://docs.opensearch.org/3.2/api-reference/search-apis/search/): Official search API docs
+- [Sort Results Documentation](https://docs.opensearch.org/3.2/search-plugins/searching-data/sort/): Sorting documentation
+- [Lucene PR #450](https://github.com/apache/lucene/pull/450): Related Lucene API change
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18715](https://github.com/opensearch-project/OpenSearch/pull/18715) | Fix max_score is null when sorting on score firstly |
 | [#18802](https://github.com/opensearch-project/OpenSearch/pull/18802) | Use ScoreDoc instead of FieldDoc when creating TopScoreDocCollectorManager |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18714](https://github.com/opensearch-project/OpenSearch/issues/18714): Bug report for max_score null issue
-- [Lucene PR #450](https://github.com/apache/lucene/pull/450): Related Lucene API change
-- [Search API Documentation](https://docs.opensearch.org/3.2/api-reference/search-apis/search/): Official search API docs
-- [Sort Results Documentation](https://docs.opensearch.org/3.2/search-plugins/searching-data/sort/): Sorting documentation
 
 ## Related Feature Report
 

@@ -99,18 +99,22 @@ PUT sample-index/_settings
 - **Translog-based recovery performance**: Operation-based recovery can be slower when derived source is enabled for translog, as documents must be re-indexed in memory to reconstruct the source
 - **Source format differences**: When `translog.enabled` is `false`, the `_source` format may differ between translog reads (original format) and segment reads (derived format)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Derived source](https://docs.opensearch.org/3.2/field-types/metadata-fields/source/#derived-source)
+
+### Blog Posts
+- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18565](https://github.com/opensearch-project/OpenSearch/pull/18565) | Add integration of derived source feature across various paths like get/search/recovery |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17073](https://github.com/opensearch-project/OpenSearch/issues/17073): Add support for deriving source field in FieldMapper
 - [Issue #9568](https://github.com/opensearch-project/OpenSearch/issues/9568): Optimizing Data Storage and Retrieval for Time Series data
-- [Documentation: Derived source](https://docs.opensearch.org/3.2/field-types/metadata-fields/source/#derived-source)
-- [Blog: Save up to 2x on storage with derived source](https://opensearch.org/blog/save-up-to-2x-on-storage-with-derived-source/)
 
 ## Related Feature Report
 

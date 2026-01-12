@@ -61,16 +61,18 @@ router.post(
 
 - This fix only addresses the schema validation issue; the underlying query set creation functionality was already working correctly on the backend
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Introduction to Search Relevance Workbench
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#542](https://github.com/opensearch-project/dashboards-search-relevance/pull/542) | Fix schema validation in POST Query Sets endpoint |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #541](https://github.com/opensearch-project/dashboards-search-relevance/issues/541): [BUG] Creating a query set with sampling methods throws an error
-- [Blog: Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Introduction to Search Relevance Workbench
 
 ## Related Feature Report
 

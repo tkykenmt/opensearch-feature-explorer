@@ -120,20 +120,22 @@ authc:
 - **NamedCurve Service**: The `org.opensaml.security.crypto.ec.NamedCurve` service is excluded from the shadow JAR
 - **JDK Requirements**: FIPS mode may have specific JDK version requirements depending on the deployment environment
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-06): Full FIPS 140-2 compliance with BC-FIPS libraries and OpenSAML shadow JAR isolation
+
+## References
+
+### Documentation
+- [Shibboleth FIPS Documentation](https://shibboleth.atlassian.net/wiki/spaces/DEV/pages/1159627167/FIPS): OpenSAML FIPS considerations
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#5404](https://github.com/opensearch-project/security/pull/5404) | Moved OpenSAML jars to Shadow Jar configuration |
 | v3.2.0 | [#5439](https://github.com/opensearch-project/security/pull/5439) | Replaced standard BouncyCastle with BC-FIPS |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5438](https://github.com/opensearch-project/security/issues/5438): Complete transition to FIPS distribution of BouncyCastle
 - [Issue #4915](https://github.com/opensearch-project/security/issues/4915): OpenSAML incompatibility with BC-FIPS
 - [Issue #3420](https://github.com/opensearch-project/security/issues/3420): RFC for FIPS 140-2 enforced mode support
-- [Shibboleth FIPS Documentation](https://shibboleth.atlassian.net/wiki/spaces/DEV/pages/1159627167/FIPS): OpenSAML FIPS considerations
-
-## Change History
-
-- **v3.2.0** (2025-06): Full FIPS 140-2 compliance with BC-FIPS libraries and OpenSAML shadow JAR isolation

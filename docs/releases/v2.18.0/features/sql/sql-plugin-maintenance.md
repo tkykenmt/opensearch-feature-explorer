@@ -57,19 +57,23 @@ No migration steps required. This is a transparent dependency upgrade and test f
 
 None specific to this release.
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2024-47554](https://www.mend.io/vulnerability-database/CVE-2024-47554): Vulnerability details
+
+### Blog Posts
+- [Apache Commons IO Security Advisory](https://lists.apache.org/thread/6ozr91rr9cj5lm0zyhv30bsp317hk5z1): Official fix announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3091](https://github.com/opensearch-project/sql/pull/3091) | Backport commons-io bump to 2.x branch |
 | [#3113](https://github.com/opensearch-project/sql/pull/3113) | Fix tests on 2.18 branch |
 | [#3083](https://github.com/opensearch-project/sql/pull/3083) | Original commons-io bump (main branch) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3055](https://github.com/opensearch-project/sql/issues/3055): CVE-2024-47554 security vulnerability report
-- [CVE-2024-47554](https://www.mend.io/vulnerability-database/CVE-2024-47554): Vulnerability details
-- [Apache Commons IO Security Advisory](https://lists.apache.org/thread/6ozr91rr9cj5lm0zyhv30bsp317hk5z1): Official fix announcement
 
 ## Related Feature Report
 

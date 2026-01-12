@@ -127,17 +127,19 @@ integTest {
 - The `testclusters.dir` system property must be explicitly set for plugins that need to write to test cluster directories
 - Coverage reports are only generated when `tests.coverage=true` is set
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #1571](https://github.com/opensearch-project/cross-cluster-replication/pull/1571): CCR issue that triggered testclusters fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19165](https://github.com/opensearch-project/OpenSearch/pull/19165) | Include internalClusterTests and yamlRestTest in code coverage report |
 | [#19085](https://github.com/opensearch-project/OpenSearch/pull/19085) | Grant access to testclusters dir for tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19140](https://github.com/opensearch-project/OpenSearch/issues/19140): Bug report - Code coverage report does not include internalClusterTests
-- [PR #1571](https://github.com/opensearch-project/cross-cluster-replication/pull/1571): CCR issue that triggered testclusters fix
 
 ## Related Feature Report
 

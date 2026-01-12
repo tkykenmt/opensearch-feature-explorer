@@ -126,17 +126,19 @@ PUT /warm-index
 - Remote-capable shard limits only apply to clusters with remote store enabled
 - Setting `index.routing.allocation.total_primary_shards_per_node` or `index.routing.allocation.total_remote_capable_primary_shards_per_node` requires remote store enabled clusters
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19931](https://github.com/opensearch-project/OpenSearch/pull/19931) | Allow setting index.creation_date on index creation for plugin compatibility and migrations |
 | [#19532](https://github.com/opensearch-project/OpenSearch/pull/19532) | Add separate shard limit validation for local and remote indices |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19610](https://github.com/opensearch-project/OpenSearch/issues/19610): Feature request for tier-agnostic shard limit validation
-- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official documentation
 
 ## Related Feature Report
 

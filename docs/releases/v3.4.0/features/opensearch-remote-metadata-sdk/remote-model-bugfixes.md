@@ -59,16 +59,16 @@ No migration required. This is a transparent bug fix.
 - The fix requires the cluster manager to ensure `_seq_no` exists in global resources if they may be updated
 - The `_seq_no` value must come from either the update request or the DDB item source
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291): Fix error when updating model status
+- [opensearch-remote-metadata-sdk Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291) | Fix error when updating model status |
-
-## References
-
-- [PR #291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291): Fix error when updating model status
-- [opensearch-remote-metadata-sdk Repository](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): Source repository
 
 ## Related Feature Report
 

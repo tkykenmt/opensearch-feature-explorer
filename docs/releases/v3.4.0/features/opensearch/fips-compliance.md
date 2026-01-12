@@ -97,16 +97,16 @@ For test developers:
 - Legacy keystore formats (v1, v2) cannot be loaded in FIPS JVM due to PBE unavailability
 - Some tests are skipped in FIPS mode due to algorithm restrictions
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18491](https://github.com/opensearch-project/OpenSearch/pull/18491) | Make test-suite runnable under FIPS compliance support |
 | [#18921](https://github.com/opensearch-project/OpenSearch/pull/18921) | Add build-tooling to run in FIPS environment |
 | [#14912](https://github.com/opensearch-project/OpenSearch/pull/14912) | Original FIPS compliance PR (predecessor) |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #4254](https://github.com/opensearch-project/security/issues/4254): FIPS-140 Compliance Roadmap for OpenSearch
 - [Issue #17634](https://github.com/opensearch-project/OpenSearch/issues/17634): META - Replace Bouncycastle dependencies with FIPS counterparts
 - [Issue #18324](https://github.com/opensearch-project/OpenSearch/issues/18324): Documentation for FIPS configuration

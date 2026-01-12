@@ -171,19 +171,21 @@ $argon2id$v=19$m=65536,t=3,p=1$<salt>$<hash>
 - **Performance Trade-off**: Higher security settings increase authentication latency
 - **Version Compatibility**: Argon2 support requires OpenSearch 3.2.0 or later
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07): Initial implementation with full parameter configurability
+
+## References
+
+### Documentation
+- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official configuration reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#5441](https://github.com/opensearch-project/security/pull/5441) | Initial Argon2 implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4592](https://github.com/opensearch-project/security/issues/4592): Feature request for Argon2 support
 - [Issue #4590](https://github.com/opensearch-project/security/issues/4590): Related BCrypt configuration feature
 - [Issue #4524](https://github.com/opensearch-project/security/pull/4524): Password hashing configuration foundation
-- [Security Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/): Official configuration reference
-
-## Change History
-
-- **v3.2.0** (2025-07): Initial implementation with full parameter configurability

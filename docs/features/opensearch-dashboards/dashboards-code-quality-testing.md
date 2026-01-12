@@ -118,8 +118,16 @@ yarn lint
 - Cypress tests require a running OpenSearch Dashboards instance
 - Some tests may be flaky in CI environments
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08): Added testing guidelines, replaced ts_error_baseline with @ts-expect-error, added Cypress tests for Explore, component refactoring
+
+## References
+
+### Documentation
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#9922](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9922) | Add guidelines on testing and development |
@@ -134,11 +142,3 @@ yarn lint
 | v3.2.0 | [#10307](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10307) | Unskip saved queries test for explore |
 | v3.2.0 | [#10310](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10310) | Add Test to validate PPL query not starting with source |
 | v3.2.0 | [#10328](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10328) | Fixed linting error and update caniuse version |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-
-## Change History
-
-- **v3.2.0** (2025-08): Added testing guidelines, replaced ts_error_baseline with @ts-expect-error, added Cypress tests for Explore, component refactoring

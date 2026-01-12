@@ -102,17 +102,17 @@ Users who were affected by this bug and had to use workarounds (like starting th
 - The `transport-reactor-netty4` plugin remains experimental
 - Requires explicit installation: `./bin/opensearch-plugin install transport-reactor-netty4`
 
-## Related PRs
+## References
 
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Transport configuration
+- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original bug report
+- [Security Plugin PR #5667](https://github.com/opensearch-project/security/pull/5667): Companion fix in Security plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19458](https://github.com/opensearch-project/OpenSearch/pull/19458) | Implement SslHandler retrieval logic for transport-reactor-netty4 plugin |
-
-## References
-
-- [Forum Discussion](https://forum.opensearch.org/t/pods-not-coming-up-after-using-transport-reactor-netty4-plugin-for-mcp-server/26990): Original bug report
-- [Security Plugin PR #5667](https://github.com/opensearch-project/security/pull/5667): Companion fix in Security plugin
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Transport configuration
 
 ## Related Feature Report
 

@@ -110,17 +110,19 @@ Is automatically rewritten to:
 - Must-not-to-should rewriting requires single-valued numeric fields with values in all documents
 - Custom rewriters must be registered programmatically
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/query-rewriting/): Query rewriting overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19060](https://github.com/opensearch-project/OpenSearch/pull/19060) | Implement Query Rewriting Infrastructure |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18906](https://github.com/opensearch-project/OpenSearch/issues/18906): RFC for Query Rewriting, Logical Planning, and Cost-Based Execution
 - [Issue #12390](https://github.com/opensearch-project/OpenSearch/issues/12390): RFC for Query Planning and Rewriting
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/query-rewriting/): Query rewriting overview
 
 ## Related Feature Report
 

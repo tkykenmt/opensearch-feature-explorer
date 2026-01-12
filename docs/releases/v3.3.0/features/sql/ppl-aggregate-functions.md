@@ -133,8 +133,12 @@ source=transactions | eventstats earliest(amount), latest(amount) by account_id
 - `distinct_count()`/`dc()` in eventstats uses approximate counting via `APPROX_DISTINCT_COUNT`
 - Window function argument validation was added for eventstats commands
 
-## Related PRs
+## References
 
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4223](https://github.com/opensearch-project/sql/pull/4223) | Support first/last aggregate functions for PPL |
@@ -142,13 +146,11 @@ source=transactions | eventstats earliest(amount), latest(amount) by account_id
 | [#4084](https://github.com/opensearch-project/sql/pull/4084) | Support distinct_count/dc in eventstats |
 | [#4212](https://github.com/opensearch-project/sql/pull/4212) | Add earliest/latest aggregate function for eventstats PPL command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4203](https://github.com/opensearch-project/sql/issues/4203): PPL first/last aggregate function request
 - [Issue #4026](https://github.com/opensearch-project/sql/issues/4026): Multivalue Statistics Functions for PPL Calcite Engine
 - [Issue #4052](https://github.com/opensearch-project/sql/issues/4052): PPL distinct_count/dc function support for eventstats
 - [Issue #4047](https://github.com/opensearch-project/sql/issues/4047): PPL eventstats command enhancement
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
 
 ## Related Feature Report
 

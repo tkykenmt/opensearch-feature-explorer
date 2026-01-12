@@ -118,18 +118,20 @@ Tokens: ["+41 60 555 12 34", "41 60 555 12 34", "41605551234", "605551234", "41"
 - Collects entire field content into memory (unsuitable for large field values)
 - `phone-email` analyzer from elasticsearch-phone is not ported (can be added if needed)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/analyzers/supported-analyzers/phone-analyzers/): Phone number analyzers
+- [libphonenumber](https://github.com/google/libphonenumber): Google's phone number parsing library
+- [Falsehoods about phone numbers](https://github.com/google/libphonenumber/blob/master/FALSEHOODS.md): Why phone number parsing is complex
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15915](https://github.com/opensearch-project/OpenSearch/pull/15915) | Implement phone number analyzer |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11326](https://github.com/opensearch-project/OpenSearch/issues/11326): RFC for new plugin with normalizer & analyzer for phone numbers
-- [Documentation](https://docs.opensearch.org/2.18/analyzers/supported-analyzers/phone-analyzers/): Phone number analyzers
-- [libphonenumber](https://github.com/google/libphonenumber): Google's phone number parsing library
-- [Falsehoods about phone numbers](https://github.com/google/libphonenumber/blob/master/FALSEHOODS.md): Why phone number parsing is complex
 
 ## Related Feature Report
 

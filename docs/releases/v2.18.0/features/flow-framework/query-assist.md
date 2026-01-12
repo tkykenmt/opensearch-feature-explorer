@@ -104,17 +104,17 @@ The template specifies compatibility with:
 - Template uses Claude Instant model; users may need to modify for other models
 - Credentials must be manually replaced in the template before use
 
-## Related PRs
+## References
 
+### Documentation
+- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/)
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/2.18/ml-commons-plugin/opensearch-assistant/)
+- [Flow Framework Sample Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#875](https://github.com/opensearch-project/flow-framework/pull/875) | Add query assist data summary agent template |
-
-## References
-
-- [Data Summary Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/data-summary/)
-- [Flow Framework Sample Templates](https://github.com/opensearch-project/flow-framework/tree/2.x/sample-templates)
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/2.18/ml-commons-plugin/opensearch-assistant/)
 
 ## Related Feature Report
 

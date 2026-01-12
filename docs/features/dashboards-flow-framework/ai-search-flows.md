@@ -208,8 +208,24 @@ For flow agents, response filters are auto-configured for supported providers:
 - Automatic LLM interface inference may not work for custom connectors
 - Response filter auto-configuration limited to OpenAI and Bedrock Claude providers
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Added agent summary visualization, memory integration for conversational search, simplified agent configuration with auto-inferred LLM interface, automatic response filters for flow agents, Firefox EuiSelect fixes
+- **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
+- **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering, refactored quick configure components with Formik integration, improved processor error handling with dynamic error display, added version compatibility check to hide search query section for versions < 2.19.0
+
+## References
+
+### Documentation
+- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
+- [Creating AI Search Workflows Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/ai-search-flows/building-flows/)
+- [Flow Framework Plugin](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
+- [ML Commons Integration](https://docs.opensearch.org/3.0/ml-commons-plugin/integrating-ml-models/)
+- [Model Configuration Examples](https://github.com/opensearch-project/dashboards-flow-framework/blob/main/documentation/models.md)
+- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
+- [flow-framework Repository](https://github.com/opensearch-project/flow-framework)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#626](https://github.com/opensearch-project/dashboards-assistant/pull/626) | Disable dashboards assistant chatbot if investigation feature flag enabled |
@@ -232,19 +248,3 @@ For flow agents, response filters are auto-configured for supported providers:
 | v3.0.0 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 |
 | v3.0.0 | [#602](https://github.com/opensearch-project/dashboards-flow-framework/pull/602) | Legacy preset integration |
 | v3.0.0 | [#701](https://github.com/opensearch-project/dashboards-flow-framework/pull/701) | Optional model inputs support |
-
-## References
-
-- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
-- [Creating AI Search Workflows Tutorial](https://docs.opensearch.org/3.0/tutorials/gen-ai/ai-search-flows/building-flows/)
-- [Flow Framework Plugin](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/)
-- [ML Commons Integration](https://docs.opensearch.org/3.0/ml-commons-plugin/integrating-ml-models/)
-- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
-- [flow-framework Repository](https://github.com/opensearch-project/flow-framework)
-- [Model Configuration Examples](https://github.com/opensearch-project/dashboards-flow-framework/blob/main/documentation/models.md)
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Added agent summary visualization, memory integration for conversational search, simplified agent configuration with auto-inferred LLM interface, automatic response filters for flow agents, Firefox EuiSelect fixes
-- **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
-- **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering, refactored quick configure components with Formik integration, improved processor error handling with dynamic error display, added version compatibility check to hide search query section for versions < 2.19.0

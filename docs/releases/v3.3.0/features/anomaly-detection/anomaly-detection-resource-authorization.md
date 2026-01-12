@@ -94,16 +94,20 @@ When resource sharing is enabled:
 - Settings require cluster restart to change (dynamic settings available in v3.4.0)
 - Migration API may be needed for existing resources
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Official documentation
+
+### Blog Posts
+- [Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Blog post on the new access control model
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1546](https://github.com/opensearch-project/anomaly-detection/pull/1546) | Updates search handler to consume resource authz and updates resource authz related tests |
 
-## References
-
-- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Official documentation
-- [Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Blog post on the new access control model
+### Issues (Design / RFC)
 - [Security Issue #5608](https://github.com/opensearch-project/security/issues/5608): Feature proposal for resource action groups
 
 ## Related Feature Report

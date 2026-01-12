@@ -188,20 +188,24 @@ PUT /_plugins/_flow_framework/workflow/<workflow_id>?reprovision=true
 - Cannot reprovision workflows in PROVISIONING or NOT_STARTED state
 - Substitution template parameters not yet supported during reprovisioning
 
-## Related PRs
+## References
 
+### Documentation
+- [Create or Update Workflow API Documentation](https://docs.opensearch.org/2.17/automating-configurations/api/create-workflow/)
+
+### Blog Posts
+- [OpenSearch 2.17 Release Blog](https://opensearch.org/blog/introducing-opensearch-2-17/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings |
 | [#824](https://github.com/opensearch-project/flow-framework/pull/824) | Backport to 2.x branch |
 | [#834](https://github.com/opensearch-project/flow-framework/pull/834) | Adding reprovision integration tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #717](https://github.com/opensearch-project/flow-framework/issues/717): Original feature request
 - [Issue #822](https://github.com/opensearch-project/flow-framework/issues/822): Integration tests tracking
-- [Create or Update Workflow API Documentation](https://docs.opensearch.org/2.17/automating-configurations/api/create-workflow/)
-- [OpenSearch 2.17 Release Blog](https://opensearch.org/blog/introducing-opensearch-2-17/)
 
 ## Related Feature Report
 

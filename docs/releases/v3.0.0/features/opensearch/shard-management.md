@@ -105,18 +105,20 @@ PUT /_cluster/settings
 - Setting limits too low may result in unassigned primary shards if nodes cannot accommodate them
 - The constraint weight setting affects both allocation and rebalancing decisions
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster routing allocation settings
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17295](https://github.com/opensearch-project/OpenSearch/pull/17295) | Add cluster and index level settings to limit total primary shards per node |
 | [#16471](https://github.com/opensearch-project/OpenSearch/pull/16471) | Add setting to adjust the primary constraint weights |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17293](https://github.com/opensearch-project/OpenSearch/issues/17293): Feature request for primary shard count constraint
 - [Issue #16470](https://github.com/opensearch-project/OpenSearch/issues/16470): Bug report for high primary shard weight causing uneven distribution
-- [Cluster Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster routing allocation settings
 - [Documentation Issue #9301](https://github.com/opensearch-project/documentation-website/issues/9301): Public documentation for primary shard limit settings
 
 ## Related Feature Report

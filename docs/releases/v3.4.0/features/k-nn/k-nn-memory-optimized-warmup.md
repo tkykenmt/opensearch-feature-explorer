@@ -93,17 +93,19 @@ No migration is required. The warmup API automatically uses the new optimized st
 - Warmup effectiveness depends on available system memory for the page cache
 - Running merge operations during warmup may invalidate the cached segments
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Warmup API Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/#warmup-operation)
+- [Memory-optimized vectors Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2954](https://github.com/opensearch-project/k-NN/pull/2954) | Memory optimized search warmup |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2939](https://github.com/opensearch-project/k-NN/issues/2939): Indirect loading Faiss index in warmup API when memory optimized search is enabled
-- [k-NN Warmup API Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/#warmup-operation)
-- [Memory-optimized vectors Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/)
 
 ## Related Feature Report
 

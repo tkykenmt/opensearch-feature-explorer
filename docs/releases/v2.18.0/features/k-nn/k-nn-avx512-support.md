@@ -97,18 +97,22 @@ The AVX512 instructions process 512 bits (16 floats) per operation compared to A
 - SIMD optimization only applies when vector dimensions are multiples of 8
 - Static setting requires cluster restart to change
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/): SIMD optimization for the Faiss engine
+- [k-NN Settings Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/settings/): AVX512 configuration settings
+
+### Blog Posts
+- [Blog: Boosting k-NN exact search performance](https://opensearch.org/blog/boosting-k-nn-exact-search/): Performance improvements with SIMD
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2110](https://github.com/opensearch-project/k-NN/pull/2110) | Add changes for AVX-512 support in k-NN |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/k-NN/issues/2056): Feature request for FAISS AVX512 support
-- [k-NN Index Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/knn-index/): SIMD optimization for the Faiss engine
-- [k-NN Settings Documentation](https://docs.opensearch.org/2.18/search-plugins/knn/settings/): AVX512 configuration settings
-- [Blog: Boosting k-NN exact search performance](https://opensearch.org/blog/boosting-k-nn-exact-search/): Performance improvements with SIMD
 
 ## Related Feature Report
 

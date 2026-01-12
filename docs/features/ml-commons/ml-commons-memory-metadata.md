@@ -162,19 +162,21 @@ curl -X PUT "http://localhost:9200/_plugins/_ml/memory/{memory_id}" \
 - Uses `flat_object` field type which has specific query behavior compared to nested objects
 - Security mode is `private` - only the creating user can access their memories
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Added `additional_info` field to memory metadata for storing custom key-value pairs
+
+## References
+
+### Documentation
+- [Memory APIs Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/memory-apis/index/): Official Memory API documentation
+- [Conversational Search](https://docs.opensearch.org/latest/search-plugins/conversational-search/): Conversational search overview
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#2750](https://github.com/opensearch-project/ml-commons/pull/2750) | Adding additional info for memory metadata |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2755](https://github.com/opensearch-project/ml-commons/issues/2755): Original feature request
 - [Issue #2632](https://github.com/opensearch-project/ml-commons/issues/2632): Related application_type discussion
-- [Memory APIs Documentation](https://docs.opensearch.org/latest/ml-commons-plugin/api/memory-apis/index/): Official Memory API documentation
-- [Conversational Search](https://docs.opensearch.org/latest/search-plugins/conversational-search/): Conversational search overview
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Added `additional_info` field to memory metadata for storing custom key-value pairs

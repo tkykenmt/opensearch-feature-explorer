@@ -267,8 +267,24 @@ Documents in gRPC requests must be Base64 encoded:
 - **typed_keys**: Parameter not supported in gRPC requests
 - **global_params**: Parameter not supported in Bulk/Search requests
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Pluggable interceptors with ordering, thread context preservation, binary document format support (CBOR/SMILE/YAML), expanded query support (match, fuzzy, constant_score, function_score, prefix, match_bool_prefix, match_phrase_prefix), highlight and sort support, improved error responses, protobufs 0.24.0
+- **v3.3.0** (2026-01-14): Expanded query support (15+ query types), thread management optimization, zero-copy serialization, transport-grpc-spi module for plugin extensibility
+- **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
+- **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
+- **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
+
+## References
+
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
+- [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
+- [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
+- [Additional Plugins](https://docs.opensearch.org/3.0/install-and-configure/additional-plugins/index/): Plugin installation guide
+- [opensearch-protobufs](https://github.com/opensearch-project/opensearch-protobufs): Protocol buffer definitions
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19005](https://github.com/opensearch-project/OpenSearch/pull/19005) | Introduce gRPC Interceptor Chain with pluggable interceptors |
@@ -312,8 +328,7 @@ Documents in gRPC requests must be Base64 encoded:
 | v3.0.0 | [#17830](https://github.com/opensearch-project/OpenSearch/pull/17830) | SearchService and Search gRPC endpoint v1 |
 | v3.0.0 | [#17888](https://github.com/opensearch-project/OpenSearch/pull/17888) | Add terms query support in Search gRPC endpoint |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue
 - [Issue #18893](https://github.com/opensearch-project/OpenSearch/issues/18893): Move transport-grpc from plugin to module
 - [Issue #18513](https://github.com/opensearch-project/OpenSearch/issues/18513): GRPC Plugin Extensibility for Query Conversion
@@ -322,16 +337,3 @@ Documents in gRPC requests must be Base64 encoded:
 - [Issue #19526](https://github.com/opensearch-project/OpenSearch/issues/19526): gRPC Search query support tracking
 - [Issue #19311](https://github.com/opensearch-project/OpenSearch/issues/19311): Binary format support for Bulk API
 - [Issue #5379](https://github.com/opensearch-project/security/issues/5379): gRPC extension points for security
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official documentation
-- [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
-- [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
-- [opensearch-protobufs](https://github.com/opensearch-project/opensearch-protobufs): Protocol buffer definitions
-- [Additional Plugins](https://docs.opensearch.org/3.0/install-and-configure/additional-plugins/index/): Plugin installation guide
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Pluggable interceptors with ordering, thread context preservation, binary document format support (CBOR/SMILE/YAML), expanded query support (match, fuzzy, constant_score, function_score, prefix, match_bool_prefix, match_phrase_prefix), highlight and sort support, improved error responses, protobufs 0.24.0
-- **v3.3.0** (2026-01-14): Expanded query support (15+ query types), thread management optimization, zero-copy serialization, transport-grpc-spi module for plugin extensibility
-- **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
-- **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
-- **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support

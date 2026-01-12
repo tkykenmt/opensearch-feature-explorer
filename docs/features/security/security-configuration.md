@@ -192,8 +192,21 @@ config:
 - OIDC usernames with escaped pipe characters may need special handling in downstream systems
 - SAN extraction requires certificates with properly configured X509v3 extensions
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-01-11): Dedicated configuration reloading thread, dynamic resource settings, X509v3 SAN authentication, performance optimizations, securityadmin timeout option
+- **v3.3.0** (2025-10-01): Added protected resource types setting, made user attribute serialization dynamic
+- **v3.0.0** (2025-05-06): Default to v7 models, escape pipe characters in usernames, fix demo config version matcher
+- **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7
+
+## References
+
+### Documentation
+- [Documentation: Client Certificate Authentication](https://docs.opensearch.org/3.4/security/authentication-backends/client-auth/)
+- [Documentation: Configuration APIs](https://docs.opensearch.org/3.0/api-reference/security/configuration/index/)
+- [Documentation: Upgrade Perform API](https://docs.opensearch.org/3.0/api-reference/security/configuration/upgrade-perform/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#5479](https://github.com/opensearch-project/security/pull/5479) | Moved configuration reloading to dedicated thread |
@@ -209,21 +222,10 @@ config:
 | v3.0.0 | [#5157](https://github.com/opensearch-project/security/pull/5157) | Fix version matcher in demo config installer |
 | v2.18.0 | [#4753](https://github.com/opensearch-project/security/pull/4753) | Auto-convert security config models from v6 to v7 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue
 - [Issue #5643](https://github.com/opensearch-project/security/issues/5643): SAN authentication feature request
 - [Issue #5653](https://github.com/opensearch-project/security/issues/5653): SocketTimeoutException in securityadmin
 - [Issue #4209](https://github.com/opensearch-project/security/issues/4209): X509v3 SAN support request
 - [Issue #5191](https://github.com/opensearch-project/security/issues/5191): Upgrade failure from 2.19 to 3.0.0-alpha1
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username cannot have '|' in the security plugin
-- [Documentation: Client Certificate Authentication](https://docs.opensearch.org/3.4/security/authentication-backends/client-auth/)
-- [Documentation: Configuration APIs](https://docs.opensearch.org/3.0/api-reference/security/configuration/index/)
-- [Documentation: Upgrade Perform API](https://docs.opensearch.org/3.0/api-reference/security/configuration/upgrade-perform/)
-
-## Change History
-
-- **v3.4.0** (2025-01-11): Dedicated configuration reloading thread, dynamic resource settings, X509v3 SAN authentication, performance optimizations, securityadmin timeout option
-- **v3.3.0** (2025-10-01): Added protected resource types setting, made user attribute serialization dynamic
-- **v3.0.0** (2025-05-06): Default to v7 models, escape pipe characters in usernames, fix demo config version matcher
-- **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7

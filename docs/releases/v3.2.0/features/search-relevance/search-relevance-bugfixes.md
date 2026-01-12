@@ -55,8 +55,9 @@ referenceAnswer: max 2000 characters
 - These fixes are part of the experimental Search Relevance Workbench feature
 - Backend plugin must be enabled via cluster settings for full functionality
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#578](https://github.com/opensearch-project/dashboards-search-relevance/pull/578) | dashboards-search-relevance | Improve messaging when backend plugin is disabled |
@@ -67,8 +68,7 @@ referenceAnswer: max 2000 characters
 | [#177](https://github.com/opensearch-project/search-relevance/pull/177) | search-relevance | Added queryText and referenceAnswer text validation from manual input |
 | [#187](https://github.com/opensearch-project/search-relevance/pull/187) | search-relevance | Fixed pipeline parameter being ignored in pairwise metrics processing for hybrid |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #543](https://github.com/opensearch-project/dashboards-search-relevance/issues/543): Backend plugin disabled messaging
 - [Issue #557](https://github.com/opensearch-project/dashboards-search-relevance/issues/557): Pipeline error when no pipelines exist
 - [Issue #584](https://github.com/opensearch-project/dashboards-search-relevance/issues/584): Validation results overflow

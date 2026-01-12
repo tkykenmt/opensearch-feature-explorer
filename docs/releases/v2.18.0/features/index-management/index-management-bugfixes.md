@@ -108,19 +108,19 @@ onSelectedDataSources = (dataSources: DataSourceOption[]) => {
 - The snapshot status fix only affects new snapshot operations; existing snapshots with incorrect status are not retroactively corrected
 - The data source fix requires the multi-data-source feature to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Snapshot Management Documentation](https://docs.opensearch.org/2.18/dashboards/sm-dashboards/)
+- [Snapshot Management API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/snapshots/sm-api/)
+- [Index State Management](https://docs.opensearch.org/2.18/im-plugin/ism/index/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1257](https://github.com/opensearch-project/index-management/pull/1257) | index-management | Fixing snapshot bug |
 | [#1187](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1187) | index-management-dashboards-plugin | Create snapshot policy button reloads the dashboard |
 | [#1189](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1189) | index-management-dashboards-plugin | Fixing a bug with initial data source being set to local cluster |
-
-## References
-
-- [Snapshot Management Documentation](https://docs.opensearch.org/2.18/dashboards/sm-dashboards/)
-- [Snapshot Management API](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/snapshots/sm-api/)
-- [Index State Management](https://docs.opensearch.org/2.18/im-plugin/ism/index/)
 
 ## Related Feature Report
 

@@ -81,17 +81,19 @@ No migration required. These are internal bugfixes that take effect automaticall
 
 - The fix for duplicate settings registration only prevents future duplicates; existing clusters with bloated `settingUpdaters` lists will need a cluster manager restart to clear the duplicates.
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Settings API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-settings/): Official API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#20140](https://github.com/opensearch-project/OpenSearch/pull/20140) | Fix duplicate registration of FieldDataCache dynamic setting |
 | [#19377](https://github.com/opensearch-project/OpenSearch/pull/19377) | Fix issue with updating core with a patch number other than 0 |
 
-## References
-
+### Issues (Design / RFC)
 - [opensearch-build#5720](https://github.com/opensearch-project/opensearch-build/issues/5720): Related build issue for patch version updates
-- [Cluster Settings API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-settings/): Official API documentation
 
 ## Related Feature Report
 

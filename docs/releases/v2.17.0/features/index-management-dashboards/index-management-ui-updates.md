@@ -63,8 +63,13 @@ No migration required. UI changes are applied automatically upon upgrading to v2
 - UI changes are cosmetic and do not affect underlying functionality
 - Some pages may require browser cache clearing to display updated styles
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Management Documentation](https://docs.opensearch.org/2.17/dashboards/im-dashboards/index/)
+- [Snapshot Management Documentation](https://docs.opensearch.org/2.17/dashboards/sm-dashboards/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1106](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1106) | Reorder features and rename title/description in left navigation |
@@ -80,11 +85,6 @@ No migration required. UI changes are applied automatically upon upgrading to v2
 | [#1157](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1157) | Fit and finish for Snapshot Management pages |
 | [#1164](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1164) | Update rollup/transform jobs title with total numbers |
 | [#1166](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1166) | Fix history navigation bugs in rollups and transform pages |
-
-## References
-
-- [Index Management Documentation](https://docs.opensearch.org/2.17/dashboards/im-dashboards/index/)
-- [Snapshot Management Documentation](https://docs.opensearch.org/2.17/dashboards/sm-dashboards/)
 
 ## Related Feature Report
 

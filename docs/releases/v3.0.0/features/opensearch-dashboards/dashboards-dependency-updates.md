@@ -76,19 +76,21 @@ For plugin developers using Vega:
 - Vega update required webpack configuration changes that may affect custom builds
 - Some Vega visualizations may need testing to ensure compatibility with the new version
 
-## Related PRs
+## References
 
+### Documentation
+- [GHSA-mp7w-mhcv-673j](https://github.com/vega/vega/security/advisories/GHSA-mp7w-mhcv-673j): Vega XSS vulnerability advisory
+- [CVE-2025-26791](https://nvd.nist.gov/vuln/detail/CVE-2025-26791): DOMPurify vulnerability
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9412) | Bump markdown-it from 12.3.2 to 13.0.2 |
 | [#9447](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9447) | Bump dompurify from 3.1.6 to 3.2.4 |
 | [#9623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9623) | Bump vega from 5.23.0 to 5.32.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9400](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9400): CVE-2025-25304 in vega-selections
-- [GHSA-mp7w-mhcv-673j](https://github.com/vega/vega/security/advisories/GHSA-mp7w-mhcv-673j): Vega XSS vulnerability advisory
-- [CVE-2025-26791](https://nvd.nist.gov/vuln/detail/CVE-2025-26791): DOMPurify vulnerability
 
 ## Related Feature Report
 

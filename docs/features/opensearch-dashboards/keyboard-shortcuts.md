@@ -178,8 +178,16 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 - Navigation shortcuts require an active workspace selection
 - Custom shortcuts must have unique id+pluginId combinations
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09): Initial implementation with configuration, help modal, React hooks, navigation shortcuts, and query editor shortcuts
+
+## References
+
+### Documentation
+- [Dev Tools Console Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Keyboard shortcuts in Dev Tools
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#10409](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10409) | Add keyboard shortcuts configuration option |
@@ -188,11 +196,3 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 | v3.3.0 | [#10509](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10509) | Register navigation shortcuts |
 | v3.3.0 | [#10543](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10543) | Add Cypress tests, enable by default |
 | v3.3.0 | [#10545](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10545) | Enable comment shortcuts in Query Editor |
-
-## References
-
-- [Dev Tools Console Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Keyboard shortcuts in Dev Tools
-
-## Change History
-
-- **v3.3.0** (2025-09): Initial implementation with configuration, help modal, React hooks, navigation shortcuts, and query editor shortcuts

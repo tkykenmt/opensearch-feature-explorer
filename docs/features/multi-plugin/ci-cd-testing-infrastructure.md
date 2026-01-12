@@ -102,8 +102,16 @@ flowchart TB
 - Calcite IT requires specific cluster configuration for remote execution
 - Some test frameworks are plugin-specific and not shared across repositories
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added remote index builder IT for k-NN, Calcite IT framework for SQL, test optimizations
+
+## References
+
+### Documentation
+- [remote-vector-index-builder](https://github.com/opensearch-project/remote-vector-index-builder): Remote index builder repository
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.0.0 | [#2620](https://github.com/opensearch-project/k-NN/pull/2620) | k-NN | GitHub Action for remote index builder ITs |
@@ -113,14 +121,8 @@ flowchart TB
 | v3.0.0 | [#3469](https://github.com/opensearch-project/sql/pull/3469) | sql | Set bouncycastle version inline |
 | v3.0.0 | [#3544](https://github.com/opensearch-project/sql/pull/3544) | sql | Only enable fallback for tests that need it |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Remote index builder testing task
 - [Issue #3330](https://github.com/opensearch-project/sql/issues/3330): Calcite IT framework request
 - [Issue #3411](https://github.com/opensearch-project/sql/issues/3411): Separate pushdown ITs
 - [Issue #3546](https://github.com/opensearch-project/sql/issues/3546): IT refactoring request
-- [remote-vector-index-builder](https://github.com/opensearch-project/remote-vector-index-builder): Remote index builder repository
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added remote index builder IT for k-NN, Calcite IT framework for SQL, test optimizations

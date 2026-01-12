@@ -68,8 +68,9 @@ GitHub Actions workflow update for checkout v6:
 - Disk circuit breaker threshold adjustment is a workaround for CI environments with limited disk space
 - Code coverage threshold reduction in learning-to-rank is temporary
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1603](https://github.com/opensearch-project/anomaly-detection/pull/1603) | anomaly-detection | Prevent oversized bulk requests in synthetic data test |
@@ -84,8 +85,7 @@ GitHub Actions workflow update for checkout v6:
 | [#1676](https://github.com/opensearch-project/neural-search/pull/1676) | neural-search | Upgrade codecov-action to v5 to fix rate limit issue |
 | [#258](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/258) | learning-to-rank | Reduce required coverage until improvement |
 
-## References
-
+### Issues (Design / RFC)
 - [GitHub Issue #1659](https://github.com/tkykenmt/opensearch-feature-explorer/issues/1659): Investigation tracking issue
 - [opensearch-build Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): S3 snapshots onboarding
 - [neural-search Issue #1672](https://github.com/opensearch-project/neural-search/issues/1672): Codecov rate limit issue

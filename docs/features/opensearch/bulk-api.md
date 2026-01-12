@@ -123,24 +123,6 @@ POST _bulk
 - Large bulk requests may cause memory pressure; consider splitting into smaller batches
 - The `batch_size` parameter was removed in v3.0.0
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#19985](https://github.com/opensearch-project/OpenSearch/pull/19985) | Implement error_trace parameter for bulk requests |
-| v3.4.0 | [#20132](https://github.com/opensearch-project/OpenSearch/pull/20132) | Fix `indices` property initialization during deserialization |
-| v3.0.0 | [#17801](https://github.com/opensearch-project/OpenSearch/pull/17801) | Remove deprecated `batch_size` parameter |
-| v2.9.0 | [#8039](https://github.com/opensearch-project/OpenSearch/pull/8039) | Enforce 512 byte document ID limit |
-| v2.14.0 | [#12457](https://github.com/opensearch-project/OpenSearch/pull/12457) | Add batch processing for ingest processors |
-
-## References
-
-- [Issue #19945](https://github.com/opensearch-project/OpenSearch/issues/19945): Bug report - Bulk API ignores error_trace query parameter
-- [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Make batch ingestion automatic
-- [Issue #6595](https://github.com/opensearch-project/OpenSearch/issues/6595): Bug report for _id size limit bypass
-- [Bulk API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk/): Official documentation
-- [Common REST Parameters](https://docs.opensearch.org/3.0/api-reference/common-parameters/): Documentation for error_trace parameter
-
 ## Change History
 
 - **v3.4.0** (2026-01-14): Added proper `error_trace` parameter support for stack traces in bulk error responses
@@ -149,3 +131,23 @@ POST _bulk
 - **v2.14.0** (2024-04-30): Added `batch_size` parameter for ingest pipeline batch processing (deprecated)
 - **v2.9.0** (2023-07-18): Enforced 512 byte document ID limit in bulk updates
 - **v1.0.0** (2021-07-12): Initial implementation
+
+## References
+
+### Documentation
+- [Bulk API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk/): Official documentation
+- [Common REST Parameters](https://docs.opensearch.org/3.0/api-reference/common-parameters/): Documentation for error_trace parameter
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#19985](https://github.com/opensearch-project/OpenSearch/pull/19985) | Implement error_trace parameter for bulk requests |
+| v3.4.0 | [#20132](https://github.com/opensearch-project/OpenSearch/pull/20132) | Fix `indices` property initialization during deserialization |
+| v3.0.0 | [#17801](https://github.com/opensearch-project/OpenSearch/pull/17801) | Remove deprecated `batch_size` parameter |
+| v2.9.0 | [#8039](https://github.com/opensearch-project/OpenSearch/pull/8039) | Enforce 512 byte document ID limit |
+| v2.14.0 | [#12457](https://github.com/opensearch-project/OpenSearch/pull/12457) | Add batch processing for ingest processors |
+
+### Issues (Design / RFC)
+- [Issue #19945](https://github.com/opensearch-project/OpenSearch/issues/19945): Bug report - Bulk API ignores error_trace query parameter
+- [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Make batch ingestion automatic
+- [Issue #6595](https://github.com/opensearch-project/OpenSearch/issues/6595): Bug report for _id size limit bypass

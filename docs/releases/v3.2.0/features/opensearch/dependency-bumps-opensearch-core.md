@@ -81,8 +81,15 @@ These are routine dependency updates with no breaking changes expected. Users up
 - Some dependency updates may introduce subtle behavioral changes in edge cases
 - Third-party library updates are subject to their respective release notes
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache Lucene 10.2.2 Release Notes](https://lucene.apache.org/core/10_2_2/changes/Changes.html)
+- [Log4j 2.25.0 Release Notes](https://logging.apache.org/log4j/2.x/release-notes.html)
+- [BouncyCastle FIPS Releases](https://www.bouncycastle.org/fips-java/)
+- [OkHttp 5.x Migration Guide](https://square.github.io/okhttp/upgrading_to_okhttp_5/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18573](https://github.com/opensearch-project/OpenSearch/pull/18573) | Bump Apache Lucene to 10.2.2 |
@@ -104,13 +111,6 @@ These are routine dependency updates with no breaking changes expected. Users up
 | [#18803](https://github.com/opensearch-project/OpenSearch/pull/18803) | Bump snappy-java from 1.1.10.7 to 1.1.10.8 |
 | [#18935](https://github.com/opensearch-project/OpenSearch/pull/18935) | Bump grgit-core and kafka-clients |
 | [#18524](https://github.com/opensearch-project/OpenSearch/pull/18524) | Bump git-auto-commit-action from 5 to 6 |
-
-## References
-
-- [Apache Lucene 10.2.2 Release Notes](https://lucene.apache.org/core/10_2_2/changes/Changes.html)
-- [Log4j 2.25.0 Release Notes](https://logging.apache.org/log4j/2.x/release-notes.html)
-- [BouncyCastle FIPS Releases](https://www.bouncycastle.org/fips-java/)
-- [OkHttp 5.x Migration Guide](https://square.github.io/okhttp/upgrading_to_okhttp_5/)
 
 ## Related Feature Report
 

@@ -69,19 +69,19 @@ core.chrome.navGroup.addNavLinksToGroup(DEFAULT_NAV_GROUPS.analytics, [
 - The CI fix uses `ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION` which may have security implications for CI environments
 - These are maintenance fixes with no new user-facing features
 
-## Related PRs
+## References
 
+### Documentation
+- [Observability Documentation](https://docs.opensearch.org/2.17/observing-your-data/)
+- [OpenSearch Dashboards Observability Plugin](https://github.com/opensearch-project/dashboards-observability)
+- [OpenSearch Observability Plugin](https://github.com/opensearch-project/observability)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1861](https://github.com/opensearch-project/observability/pull/1861) | observability | Add allow unsecure node versions to CI .env |
 | [#2044](https://github.com/opensearch-project/dashboards-observability/pull/2044) | dashboards-observability | Remove useless registration of Notebook to analytics nav group |
 | [#2016](https://github.com/opensearch-project/dashboards-observability/pull/2016) | dashboards-observability | Update ndjson so workflow matches patterns created |
-
-## References
-
-- [Observability Documentation](https://docs.opensearch.org/2.17/observing-your-data/)
-- [OpenSearch Dashboards Observability Plugin](https://github.com/opensearch-project/dashboards-observability)
-- [OpenSearch Observability Plugin](https://github.com/opensearch-project/observability)
 
 ## Related Feature Report
 

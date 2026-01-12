@@ -157,19 +157,19 @@ During sync:
 - Only works with direct query data sources (S3, Prometheus)
 - Banner only appears when dashboard contains visualizations from vended data sources
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#9862](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9862) | Implement polling for index state in Vended Dashboard progress |
-
-## References
-
-- [Scheduled Query Acceleration](https://docs.opensearch.org/3.0/dashboards/management/scheduled-query-acceleration/): Official documentation
-- [Flint Index State Machine](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/index.md#index-state-transition): State transition documentation
-- [opensearch-spark #1195](https://github.com/opensearch-project/opensearch-spark/pull/1195): Index state reporting support
-- [Optimizing query performance using OpenSearch indexing](https://docs.opensearch.org/3.0/dashboards/management/accelerate-external-data/): Query acceleration overview
-
 ## Change History
 
 - **v3.2.0** (2025-06-13): Added polling for external index state detection, enabling progress tracking for background auto-refresh jobs
+
+## References
+
+### Documentation
+- [Scheduled Query Acceleration](https://docs.opensearch.org/3.0/dashboards/management/scheduled-query-acceleration/): Official documentation
+- [Flint Index State Machine](https://github.com/opensearch-project/opensearch-spark/blob/main/docs/index.md#index-state-transition): State transition documentation
+- [Optimizing query performance using OpenSearch indexing](https://docs.opensearch.org/3.0/dashboards/management/accelerate-external-data/): Query acceleration overview
+- [opensearch-spark #1195](https://github.com/opensearch-project/opensearch-spark/pull/1195): Index state reporting support
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#9862](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9862) | Implement polling for index state in Vended Dashboard progress |

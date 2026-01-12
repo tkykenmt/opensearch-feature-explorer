@@ -118,19 +118,21 @@ source=data | rex field=title mode=sed "y/ /_/" | fields title
 - **String Fields Only**: `regex` command only supports string field types
 - **Max Match Limit**: `max_match` values exceeding the configured limit will throw an error
 
-## Related PRs
+## References
 
+### Documentation
+- [Java Pattern Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html): Java regex syntax reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4083](https://github.com/opensearch-project/sql/pull/4083) | Implementation of `regex` command in PPL |
 | [#4109](https://github.com/opensearch-project/sql/pull/4109) | Core implementation of `rex` command (extract mode) |
 | [#4241](https://github.com/opensearch-project/sql/pull/4241) | Implementation of `sed` mode and `offset_field` in rex command |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4082](https://github.com/opensearch-project/sql/issues/4082): RFC for regex command
 - [Issue #4108](https://github.com/opensearch-project/sql/issues/4108): RFC for rex command
-- [Java Pattern Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html): Java regex syntax reference
 
 ## Related Feature Report
 

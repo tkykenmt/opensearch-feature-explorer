@@ -114,18 +114,18 @@ const DatasetSelectWidget = () => {
 - SignalType filtering only distinguishes between traces and non-traces datasets currently
 - UI for setting signalType during dataset creation is not yet available (must be set via API)
 
-## Related PRs
+## References
 
+### Blog Posts
+- [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10355](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10355) | Update for datasets, redirection, and accordion timeline |
 | [#10379](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10379) | Allow apps to configure available types in the dataset explorer |
 | [#10491](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10491) | Introduce dataset SignalType |
 | [#10554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10554) | Dataset type and management |
-
-## References
-
-- [OpenSearch 3.3 Release Blog](https://opensearch.org/blog/explore-opensearch-3-3/)
 
 ## Related Feature Report
 

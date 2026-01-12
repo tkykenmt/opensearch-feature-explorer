@@ -138,8 +138,12 @@ curl -X PUT 'localhost:9200/_cluster/settings' -H 'Content-Type: application/jso
 - Local index exporter must be enabled for historical query lookups
 - Expired index deletion runs once per day at 00:05 UTC
 
-## Related PRs
+## References
 
+### Documentation
+- [Top N Queries Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/top-n-queries/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#234](https://github.com/opensearch-project/query-insights/pull/234) | Fix default exporter settings |
@@ -148,14 +152,12 @@ curl -X PUT 'localhost:9200/_cluster/settings' -H 'Content-Type: application/jso
 | [#281](https://github.com/opensearch-project/query-insights/pull/281) | Reduce MAX_TOP_N_INDEX_READ_SIZE to 50, sort by desc latency |
 | [#267](https://github.com/opensearch-project/query-insights/pull/267) | Integration tests for exporter and reader |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #232](https://github.com/opensearch-project/query-insights/issues/232): Default exporter settings bug
 - [Issue #256](https://github.com/opensearch-project/query-insights/issues/256): Local index replica count issue
 - [Issue #261](https://github.com/opensearch-project/query-insights/issues/261): Expired index deletion improvement
 - [Issue #233](https://github.com/opensearch-project/query-insights/issues/233): Integration tests request
 - [Issue #105](https://github.com/opensearch-project/query-insights-dashboards/issues/105): Related dashboards issue for read size
-- [Top N Queries Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/top-n-queries/): Official documentation
 
 ## Related Feature Report
 

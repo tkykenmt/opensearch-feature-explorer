@@ -101,16 +101,18 @@ curl http://localhost:9200 -v --http2-prior-knowledge
 - HTTP/2 over TLS (h2) requires additional configuration with the security plugin
 - Response ordering is not guaranteed with HTTP/2 (unlike HTTP/1.1 pipelining)
 
-## Related PRs
+## References
 
+### Documentation
+- [Network settings documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): OpenSearch network configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3847](https://github.com/opensearch-project/OpenSearch/pull/3847) | Support for HTTP/2 (server-side) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3651](https://github.com/opensearch-project/OpenSearch/issues/3651): Original feature request
-- [Network settings documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): OpenSearch network configuration
 
 ## Related Feature Report
 

@@ -99,18 +99,22 @@ No configuration changes required for end users. The Lucene upgrade is transpare
 - Some Snowball stemmers (`dutch_kp`, `lovins`) are no longer available
 - Plugins compiled against Lucene 9.x APIs may need recompilation
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene 10.0.0 Release Notes](https://cwiki.apache.org/confluence/display/LUCENE/Release+Notes+10.0.0): Official Lucene changelog
+- [Lucene 10.1.0 Changes](https://lucene.apache.org/core/10_0_0/changes/Changes.html#v10.0.0): Detailed change log
+
+### Blog Posts
+- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Overview of 3.0 features and breaking changes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Update to Apache Lucene 10 for 3.0.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11415](https://github.com/opensearch-project/OpenSearch/issues/11415): Feature request for Lucene 10 upgrade
-- [Lucene 10.0.0 Release Notes](https://cwiki.apache.org/confluence/display/LUCENE/Release+Notes+10.0.0): Official Lucene changelog
-- [Lucene 10.1.0 Changes](https://lucene.apache.org/core/10_0_0/changes/Changes.html#v10.0.0): Detailed change log
-- [OpenSearch 3.0 Blog](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Overview of 3.0 features and breaking changes
 - [Breaking Changes Guide](https://github.com/opensearch-project/opensearch-build/issues/5243): 2.x to 3.0 migration guide
 
 ## Related Feature Report

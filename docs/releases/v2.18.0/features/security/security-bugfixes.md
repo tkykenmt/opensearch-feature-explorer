@@ -74,8 +74,12 @@ Fixes an issue filtering out fields on GET Mappings requests for closed indices.
 - The SSL dual mode fix requires the companion OpenSearch core PR to be present
 - Some fixes are backports from the main branch to the 2.x release branch
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch stored_fields documentation](https://opensearch.org/docs/latest/search-plugins/searching-data/retrieve-specific-fields/#searching-with-stored_fields)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#4775](https://github.com/opensearch-project/security/pull/4775) | security | Fix bug where admin can read system index (backport) |
@@ -86,10 +90,8 @@ Fixes an issue filtering out fields on GET Mappings requests for closed indices.
 | [#4777](https://github.com/opensearch-project/security/pull/4777) | security | Fix Get mappings on closed index (backport) |
 | [#1303](https://github.com/opensearch-project/security-analytics/pull/1303) | security-analytics | Remove redundant logic to fix OS launch exception |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4608](https://github.com/opensearch-project/security/issues/4608): SAML failed login audit issue
 - [Issue #4735](https://github.com/opensearch-project/security/issues/4735): Demo config nested YAML issue
 - [Issue #4755](https://github.com/opensearch-project/security/issues/4755): Admin system index read issue
 - [Issue #1273](https://github.com/opensearch-project/security-analytics/issues/1273): OS launch exception issue
-- [OpenSearch stored_fields documentation](https://opensearch.org/docs/latest/search-plugins/searching-data/retrieve-specific-fields/#searching-with-stored_fields)

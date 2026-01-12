@@ -94,16 +94,16 @@ When using fixed value imputation, the field name has changed:
 - The field name change is a breaking change for existing configurations using fixed value imputation
 - Existing detectors with the old field name may not work correctly until updated
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Official documentation
+- [Imputation Options](https://docs.opensearch.org/2.17/observing-your-data/ad/index/#setting-an-imputation-option): Imputation configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1284](https://github.com/opensearch-project/anomaly-detection/pull/1284) | Fix inference logic and standardize config index mapping |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/2.17/observing-your-data/ad/index/): Official documentation
-- [Imputation Options](https://docs.opensearch.org/2.17/observing-your-data/ad/index/#setting-an-imputation-option): Imputation configuration guide
 
 ## Related Feature Report
 

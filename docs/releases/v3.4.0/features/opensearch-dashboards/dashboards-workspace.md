@@ -61,16 +61,16 @@ No migration required. Existing workspaces are unaffected. This change only affe
 - Workspaces created without data sources will have limited functionality until data sources are associated
 - Some use cases may still require data sources for full functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace feature documentation
+- [Create a Workspace](https://docs.opensearch.org/3.0/dashboards/workspace/create-workspace/): How to create workspaces
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10861](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10861) | Remove the restriction that workspace cannot be created without datasource |
-
-## References
-
-- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace feature documentation
-- [Create a Workspace](https://docs.opensearch.org/3.0/dashboards/workspace/create-workspace/): How to create workspaces
 
 ## Related Feature Report
 

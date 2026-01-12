@@ -81,16 +81,18 @@ No migration required. This is a backward-compatible change that only increases 
 
 - The `freeze()` method can only be called once per result; subsequent calls to `setTranslogLocation()` or `setTook()` after freezing will throw `IllegalStateException`
 
-## Related PRs
+## References
 
+### Documentation
+- [Engine.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/engine/Engine.java): Source code
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19275](https://github.com/opensearch-project/OpenSearch/pull/19275) | Make all methods in Engine.Result public |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19276](https://github.com/opensearch-project/OpenSearch/issues/19276): Feature request to make Engine.Result methods public
-- [Engine.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/engine/Engine.java): Source code
 
 ## Related Feature Report
 

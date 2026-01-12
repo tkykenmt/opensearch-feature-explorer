@@ -217,8 +217,17 @@ source=sales | stats sum(amount) by product | sort -sum(amount) | head 10
 - Some functions are not pushdown-compatible and execute post-aggregation
 - `bucket_nullable` setting affects null bucket handling in results
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Added single group-by optimization, filtered aggregation pushdown, limit pushdown, SUM literal optimization, earliest/latest pushdown, and auto_date_histogram support
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
+- [OpenSearch Aggregations](https://docs.opensearch.org/3.0/aggregations/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#3550](https://github.com/opensearch-project/sql/pull/3550) | Speed up aggregation pushdown for single group-by expression |
@@ -228,17 +237,10 @@ source=sales | stats sum(amount) by product | sort -sum(amount) | head 10
 | v3.3.0 | [#4228](https://github.com/opensearch-project/sql/pull/4228) | Push down limit operator into aggregation bucket size |
 | v3.3.0 | [#4329](https://github.com/opensearch-project/sql/pull/4329) | Push down stats with bins on time field into auto_date_histogram |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3528](https://github.com/opensearch-project/sql/issues/3528): Span query in PPL is slower than date histogram aggregation
 - [Issue #3949](https://github.com/opensearch-project/sql/issues/3949): Support eval-style expressions inside stats command
 - [Issue #3961](https://github.com/opensearch-project/sql/issues/3961): Support Limit pushdown through aggregation
 - [Issue #3967](https://github.com/opensearch-project/sql/issues/3967): Aggregation enhancement for SUM on FIELD + NUMBER
 - [Issue #3639](https://github.com/opensearch-project/sql/issues/3639): PPL earliest/latest aggregation function support
 - [Issue #4210](https://github.com/opensearch-project/sql/issues/4210): Span()/bin should support auto_date_histogram aggregation
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/)
-- [OpenSearch Aggregations](https://docs.opensearch.org/3.0/aggregations/)
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Added single group-by optimization, filtered aggregation pushdown, limit pushdown, SUM literal optimization, earliest/latest pushdown, and auto_date_histogram support

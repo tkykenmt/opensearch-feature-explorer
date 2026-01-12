@@ -104,18 +104,20 @@ POST /my-index/_close
 - Close index operations are blocked during the entire migration period
 - No workaround available for closing indexes during migration - migration must complete first
 
-## Related PRs
+## References
 
+### Documentation
+- [Migrating to remote-backed storage](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/migrating-to-remote/): Official migration documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18327](https://github.com/opensearch-project/OpenSearch/pull/18327) | Disabling _close API invocation during remote migration |
 | [#18256](https://github.com/opensearch-project/OpenSearch/pull/18256) | Apply cluster state metadata and routing table diff when building cluster state from remote |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18328](https://github.com/opensearch-project/OpenSearch/issues/18328): Reject close index requests during DocRep to SegRep migration
 - [Issue #18045](https://github.com/opensearch-project/OpenSearch/issues/18045): Remote Cluster State Diff Download Failures during IndicesAliases Action
-- [Migrating to remote-backed storage](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/migrating-to-remote/): Official migration documentation
 
 ## Related Feature Report
 

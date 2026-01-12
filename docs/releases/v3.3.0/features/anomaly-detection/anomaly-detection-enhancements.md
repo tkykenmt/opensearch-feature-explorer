@@ -142,8 +142,14 @@ The Anomaly Detection Dashboards plugin includes corresponding UI updates:
 - Frequency is bounded by `MAX_FREQUENCY_MULTIPLE` to prevent excessive execution
 - Suggest API recommendations are based on data analysis and may need manual adjustment for specific use cases
 
-## Related PRs
+## References
 
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
+- [Anomaly Detector Suggestions](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/suggest-anomaly-detector/): AI-assisted detector suggestions
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1562](https://github.com/opensearch-project/anomaly-detection/pull/1562) | anomaly-detection | Add frequency scheduling in real time |
@@ -153,12 +159,6 @@ The Anomaly Detection Dashboards plugin includes corresponding UI updates:
 | [#1571](https://github.com/opensearch-project/anomaly-detection/pull/1571) | anomaly-detection | Fix flaky ITs |
 | [#1572](https://github.com/opensearch-project/anomaly-detection/pull/1572) | anomaly-detection | Fix tests by adding the new node setting for protected types |
 | [#1579](https://github.com/opensearch-project/anomaly-detection/pull/1579) | anomaly-detection | Exclude long-running tests from integTestRemote |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
-- [Anomaly Detector Suggestions](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/suggest-anomaly-detector/): AI-assisted detector suggestions
 
 ## Related Feature Report
 

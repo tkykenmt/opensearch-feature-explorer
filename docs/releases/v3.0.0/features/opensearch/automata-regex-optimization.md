@@ -82,16 +82,18 @@ The difference is internal - the query now executes more safely without risk of 
 
 - The optimization applies only to case-insensitive queries; regexp queries still use the `max_determinized_states` parameter for controlling complexity
 
-## Related PRs
+## References
 
+### Documentation
+- [Regexp Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/regexp/): Official docs on regexp queries and `case_insensitive` parameter
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17268](https://github.com/opensearch-project/OpenSearch/pull/17268) | Remove MinimizationOperations |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16975](https://github.com/opensearch-project/OpenSearch/issues/16975): Bug report - Can (easily) run out of memory with case-insensitive term queries
-- [Regexp Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/regexp/): Official docs on regexp queries and `case_insensitive` parameter
 
 ## Related Feature Report
 

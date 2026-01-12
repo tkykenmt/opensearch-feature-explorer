@@ -96,19 +96,21 @@ const formSchemaObj = {
 - Model selection is now mandatory for non-custom presets (previously optional)
 - Error display limited to processor-level errors; form validation errors shown separately
 
-## Related PRs
+## References
 
+### Documentation
+- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
+- [PR #586](https://github.com/opensearch-project/dashboards-flow-framework/pull/586): Previous UX updates (continuation)
+- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#604](https://github.com/opensearch-project/dashboards-flow-framework/pull/604) | Refactor quick configure components; improve processor error handling |
 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #550](https://github.com/opensearch-project/dashboards-flow-framework/issues/550): Hide ProcessorList component for SEARCH_REQUEST when version < 2.19.0
-- [PR #586](https://github.com/opensearch-project/dashboards-flow-framework/pull/586): Previous UX updates (continuation)
-- [AI Search Flows Documentation](https://docs.opensearch.org/3.0/vector-search/ai-search/workflow-builder/)
-- [dashboards-flow-framework Repository](https://github.com/opensearch-project/dashboards-flow-framework)
 
 ## Related Feature Report
 

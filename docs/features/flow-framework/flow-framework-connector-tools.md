@@ -124,18 +124,20 @@ flowchart TB
 - Custom parameters must be explicitly specified in the `parameters` field
 - If a parameter is already present in `parameters`, it will not be overwritten by previous node outputs
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-10-15): Added support for parsing `connector_id` from previous node inputs in ToolStep
+
+## References
+
+### Documentation
+- [Connector Tool Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/agents-tools/tools/connector-tool/): Official ConnectorTool documentation
+- [Flow Framework Workflow Steps](https://docs.opensearch.org/latest/automating-configurations/workflow-steps/): Workflow step reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#846](https://github.com/opensearch-project/flow-framework/pull/846) | Support parsing connector_id when creating tools |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #845](https://github.com/opensearch-project/flow-framework/issues/845): Original feature request
-- [Connector Tool Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/agents-tools/tools/connector-tool/): Official ConnectorTool documentation
-- [Flow Framework Workflow Steps](https://docs.opensearch.org/latest/automating-configurations/workflow-steps/): Workflow step reference
-
-## Change History
-
-- **v2.17.0** (2024-10-15): Added support for parsing `connector_id` from previous node inputs in ToolStep

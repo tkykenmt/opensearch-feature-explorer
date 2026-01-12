@@ -100,8 +100,13 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 - Header size increases may impact memory usage under high load
 - Status code changes may affect existing client error handling logic
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): HTTP status code improvements and increased default max header size from 8KB to 16KB
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#4773](https://github.com/opensearch-project/OpenSearch/pull/4773) | Change HTTP code on create index API with bad input from 500 to 400 |
@@ -109,12 +114,7 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 | v3.0.0 | [#8986](https://github.com/opensearch-project/OpenSearch/pull/8986) | Return 409 Conflict instead of 503 for concurrent snapshot execution |
 | v3.0.0 | [#18024](https://github.com/opensearch-project/OpenSearch/pull/18024) | Change default max header size from 8KB to 16KB |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2756](https://github.com/opensearch-project/OpenSearch/issues/2756): Wrong HTTP code returned from create index API
 - [Issue #4745](https://github.com/opensearch-project/OpenSearch/issues/4745): Update AbstractScopedSettings to throw OpenSearchExceptions
 - [Issue #18022](https://github.com/opensearch-project/OpenSearch/issues/18022): Increase http.max_header_size default to 16KB
-
-## Change History
-
-- **v3.0.0** (2025-05-06): HTTP status code improvements and increased default max header size from 8KB to 16KB

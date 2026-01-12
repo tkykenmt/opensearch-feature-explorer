@@ -100,17 +100,19 @@ GET /_search
 - Only one `_shard_doc` sort field allowed per query
 - Bucketed sort is not supported for `_shard_doc`
 
-## Related PRs
+## References
 
+### Documentation
+- [Point in Time Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/point-in-time/): Official PIT documentation
+- [Paginate Results Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/): Pagination methods in OpenSearch
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18924](https://github.com/opensearch-project/OpenSearch/pull/18924) | Add support for search tie-breaking by _shard_doc |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17064](https://github.com/opensearch-project/OpenSearch/issues/17064): Original feature request for _shard_doc equivalent
-- [Point in Time Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/point-in-time/): Official PIT documentation
-- [Paginate Results Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/): Pagination methods in OpenSearch
 
 ## Related Feature Report
 

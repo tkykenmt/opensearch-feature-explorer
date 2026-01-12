@@ -110,19 +110,21 @@ POST _plugins/_alerting/monitors
 - Requires `plugins.security.user_attribute_serialization.enabled` to be set to `true` in the Security plugin
 - Custom attributes must be defined for the user in the Security plugin configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Security Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): How monitors access data with user permissions
+- [Document-Level Security](https://docs.opensearch.org/3.0/security/access-control/document-level-security/): Parameter substitution in DLS queries
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1917](https://github.com/opensearch-project/alerting/pull/1917) | Adds support for leveraging user custom attributes in Alerting monitors |
 | [#827](https://github.com/opensearch-project/common-utils/pull/827) | Common-utils changes for custom attributes support |
 | [#5560](https://github.com/opensearch-project/security/pull/5560) | Security plugin changes for user attribute serialization |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Bug report - Alerting does not work when user has role with parameter substitution in DLS
-- [Alerting Security Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): How monitors access data with user permissions
-- [Document-Level Security](https://docs.opensearch.org/3.0/security/access-control/document-level-security/): Parameter substitution in DLS queries
 
 ## Related Feature Report
 

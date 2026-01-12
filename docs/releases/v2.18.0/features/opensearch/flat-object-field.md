@@ -88,16 +88,18 @@ PUT /test-index/_doc/4
 - Arrays, strings, numbers, and other primitive types are not supported as direct values
 - This is by design, as `flat_object` is intended to store complex nested JSON structures
 
-## Related PRs
+## References
 
+### Documentation
+- [Flat object documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/flat-object/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15985](https://github.com/opensearch-project/OpenSearch/pull/15985) | Avoid infinite loop in flat_object parsing |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15982](https://github.com/opensearch-project/OpenSearch/issues/15982): Bug report for unbounded execution
-- [Flat object documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/flat-object/): Official docs
 
 ## Related Feature Report
 

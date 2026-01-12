@@ -87,8 +87,12 @@ No migration required. These are bug fixes that improve existing functionality.
 - Chrome 129 fix is temporary; may be removed when Chrome fixes the underlying issue
 - OUI breakpoint handling treats xxl/xxxl as xl (no distinct behavior for larger screens)
 
-## Related PRs
+## References
 
+### Documentation
+- [OUI PR #1414](https://github.com/opensearch-project/oui/pull/1414): Chrome 129 fix in OUI
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8216](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8216) | Add tooltips for sidebar icon buttons |
@@ -100,12 +104,10 @@ No migration required. These are bug fixes that improve existing functionality.
 | [#8320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8320) | Update OSD to respect new OUI breakpoints |
 | [#8335](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8335) | Fix HeaderControl not rendered if not mount in initial rendering |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8211](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8211): Pretty string display issue
 - [Issue #8250](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8250): Chrome 129 mask-image rendering
 - [Issue #8313](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8313): HeaderControl rendering issue
-- [OUI PR #1414](https://github.com/opensearch-project/oui/pull/1414): Chrome 129 fix in OUI
 
 ## Related Feature Report
 

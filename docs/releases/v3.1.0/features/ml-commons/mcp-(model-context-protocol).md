@@ -90,19 +90,23 @@ No migration required. The SDK version change is backward compatible.
 - MCP remains an experimental feature
 - MCP server requires `transport-reactor-netty4` plugin to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Using MCP Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
+- [Connecting to External MCP Server](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/mcp-connector/)
+
+### Blog Posts
+- [Introducing MCP in OpenSearch Blog](https://opensearch.org/blog/introducing-mcp-in-opensearch/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3787](https://github.com/opensearch-project/ml-commons/pull/3787) | Add Unit Tests for MCP feature |
 | [#3821](https://github.com/opensearch-project/ml-commons/pull/3821) | Downgrade MCP version to 0.9 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3743](https://github.com/opensearch-project/ml-commons/issues/3743): Add test cases for MCP experimental feature
-- [Using MCP Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/index/)
-- [Connecting to External MCP Server](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/mcp/mcp-connector/)
-- [Introducing MCP in OpenSearch Blog](https://opensearch.org/blog/introducing-mcp-in-opensearch/)
 
 ## Related Feature Report
 

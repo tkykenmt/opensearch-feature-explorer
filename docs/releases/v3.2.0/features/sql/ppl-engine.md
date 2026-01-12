@@ -168,8 +168,13 @@ POST /_plugins/_ppl
 - Script-based aggregations require compatible field types
 - Relevance query pushdown limited to supported functions
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
+- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3620](https://github.com/opensearch-project/sql/pull/3620) | Support Sort pushdown |
@@ -188,13 +193,10 @@ POST /_plugins/_ppl
 | [#3821](https://github.com/opensearch-project/sql/pull/3821) | Add compare_ip operator UDFs |
 | [#3940](https://github.com/opensearch-project/sql/pull/3940) | Append limit operator for QUERY_SIZE_LIMIT |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3470](https://github.com/opensearch-project/sql/issues/3470): Partial filter pushdown request
 - [Issue #3380](https://github.com/opensearch-project/sql/issues/3380): Sort pushdown request
 - [Issue #3379](https://github.com/opensearch-project/sql/issues/3379): Filter script pushdown security
-- [SQL Settings Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/settings/): Configuration reference
-- [SQL Limitations](https://docs.opensearch.org/3.0/search-plugins/sql/limitation/): Engine limitations
 
 ## Related Feature Report
 

@@ -44,15 +44,15 @@ No functional changes. These are infrastructure maintenance commits that:
 - These PRs do not introduce new features or bug fixes
 - They are part of standard release engineering workflow
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Release Process](https://github.com/opensearch-project/opensearch-build)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | Increment version to 3.1.0-SNAPSHOT |
-
-## References
-
-- [OpenSearch Release Process](https://github.com/opensearch-project/opensearch-build)
 
 ## Related Feature Report
 

@@ -77,8 +77,28 @@ Dependency updates in the Security plugin follow this process:
 - Dependency updates may require coordination with OpenSearch core version requirements
 - Some dependencies have transitive dependencies that must also be compatible
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-14): Security fix for CVE-2025-53864 (nimbus-jose-jwt), plus 24 dependency updates including Spring 6.2.11, JJWT 0.13.0, Guava 33.5.0, and CI tooling updates
+- **v3.1.0** (2025-06-03): Major dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, Spring 6.2.7, Guava 33.4.8, JUnit 5.13.1, and CVE-2024-52798 fix
+- **v3.0.0** (2025-02-25): 13 dependency updates including Spring 6.2.5, Bouncy Castle 1.80, OpenSAML 5.1.4/9.1.4, ASM 9.8, Commons IO 2.19.0, JUnit Jupiter 5.12.2
+- **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic
+
+## References
+
+### Documentation
+- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
+- [OpenSearch Security Dashboards Plugin](https://github.com/opensearch-project/security-dashboards-plugin)
+- [CVE-2025-53864 Advisory](https://github.com/advisories/GHSA-xwmg-2g98-w7v9)
+- [CVE-2024-52798 Advisory](https://advisories.opensearch.org/advisories/CVE-2024-52798)
+- [Bouncy Castle](https://www.bouncycastle.org/)
+- [Apache Kafka](https://kafka.apache.org/)
+- [snappy-java](https://github.com/xerial/snappy-java)
+- [Apache Commons IO](https://commons.apache.org/proper/commons-io/)
+- [Scala Library](https://www.scala-lang.org/)
+- [Logback](https://logback.qos.ch/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) |
@@ -124,23 +144,3 @@ Dependency updates in the Security plugin follow this process:
 | v2.18.0 | [#4750](https://github.com/opensearch-project/security/pull/4750) | Bump commons-io 2.16.1 → 2.17.0 |
 | v2.18.0 | [#4749](https://github.com/opensearch-project/security/pull/4749) | Bump scala-library 2.13.14 → 2.13.15 |
 | v2.18.0 | [#4717](https://github.com/opensearch-project/security/pull/4717) | Bump checker-qual and logback-classic |
-
-## References
-
-- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
-- [OpenSearch Security Dashboards Plugin](https://github.com/opensearch-project/security-dashboards-plugin)
-- [CVE-2025-53864 Advisory](https://github.com/advisories/GHSA-xwmg-2g98-w7v9)
-- [CVE-2024-52798 Advisory](https://advisories.opensearch.org/advisories/CVE-2024-52798)
-- [Bouncy Castle](https://www.bouncycastle.org/)
-- [Apache Kafka](https://kafka.apache.org/)
-- [snappy-java](https://github.com/xerial/snappy-java)
-- [Apache Commons IO](https://commons.apache.org/proper/commons-io/)
-- [Scala Library](https://www.scala-lang.org/)
-- [Logback](https://logback.qos.ch/)
-
-## Change History
-
-- **v3.3.0** (2026-01-14): Security fix for CVE-2025-53864 (nimbus-jose-jwt), plus 24 dependency updates including Spring 6.2.11, JJWT 0.13.0, Guava 33.5.0, and CI tooling updates
-- **v3.1.0** (2025-06-03): Major dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, Spring 6.2.7, Guava 33.4.8, JUnit 5.13.1, and CVE-2024-52798 fix
-- **v3.0.0** (2025-02-25): 13 dependency updates including Spring 6.2.5, Bouncy Castle 1.80, OpenSAML 5.1.4/9.1.4, ASM 9.8, Commons IO 2.19.0, JUnit Jupiter 5.12.2
-- **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic

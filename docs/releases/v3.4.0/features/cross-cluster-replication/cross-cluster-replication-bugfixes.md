@@ -72,16 +72,18 @@ No migration required. Existing scripts that include an empty body `{}` will con
 - The default pause reason is always `"User initiated"` when no body is provided
 - This change only affects the pause API; other CCR APIs retain their existing body requirements
 
-## Related PRs
+## References
 
+### Documentation
+- [Cross-cluster replication API documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | Fix the requirement of empty request body in pause replication |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468): Bug report for required empty request body
-- [Cross-cluster replication API documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
 
 ## Related Feature Report
 

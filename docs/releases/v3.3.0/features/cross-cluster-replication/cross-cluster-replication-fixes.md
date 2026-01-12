@@ -100,17 +100,19 @@ No migration required. The fix is backward compatible and automatically handles 
 - The minimum batch size is 16 operations, which may still exceed 2GB for extremely large documents
 - Index-level settings take precedence over cluster-level settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Replication settings documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
+- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1580](https://github.com/opensearch-project/cross-cluster-replication/pull/1580) | Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1568](https://github.com/opensearch-project/cross-cluster-replication/issues/1568): Bug report for 2GB limit breach
-- [Replication settings documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
-- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
 
 ## Related Feature Report
 

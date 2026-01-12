@@ -136,17 +136,17 @@ This is a transparent performance optimization. No migration steps required.
 - Requires DocValues to be enabled on the field
 - Performance gains vary based on data distribution and query patterns
 
-## Related PRs
+## References
 
+### Documentation
+- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+- [Bucket Aggregations Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17643](https://github.com/opensearch-project/OpenSearch/pull/17643) | Unwrap singleton DocValues in date histogram aggregation |
 | [#17740](https://github.com/opensearch-project/OpenSearch/pull/17740) | Unwrap singleton DocValues in global ordinal value source of composite aggregation |
-
-## References
-
-- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
-- [Bucket Aggregations Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/index/)
 
 ## Related Feature Report
 

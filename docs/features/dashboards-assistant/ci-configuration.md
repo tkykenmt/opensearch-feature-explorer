@@ -69,17 +69,17 @@ module.exports = function (api) {
 - Configuration only applies to test environment (`api.env('test')`)
 - Requires `@osd/babel-preset` package from OpenSearch Dashboards core
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#580](https://github.com/opensearch-project/dashboards-assistant/pull/580) | Fix failed CI due to path alias |
-
-## References
-
-- [PR #580](https://github.com/opensearch-project/dashboards-assistant/pull/580): CI fix implementation
-- [PR #9831](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9831): Path alias extraction in OSD core
-
 ## Change History
 
 - **v3.1.0** (2025-06-03): Added path alias plugin to babel configuration for CI compatibility
+
+## References
+
+### Documentation
+- [PR #580](https://github.com/opensearch-project/dashboards-assistant/pull/580): CI fix implementation
+- [PR #9831](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9831): Path alias extraction in OSD core
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#580](https://github.com/opensearch-project/dashboards-assistant/pull/580) | Fix failed CI due to path alias |

@@ -131,16 +131,18 @@ In this example with a 1GB file cache and remote_data_ratio of 2:
 - Only primary shard sizes are counted toward used space on warm nodes
 - The change in default ratio may affect clusters that were previously operating with unlimited remote data
 
-## Related PRs
+## References
 
+### Documentation
+- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18767](https://github.com/opensearch-project/OpenSearch/pull/18767) | FS stats for warm nodes based on addressable space; change default remote_data_ratio from 0 to 5 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18768](https://github.com/opensearch-project/OpenSearch/issues/18768): [WRITABLE WARM] FS stats for warm nodes
-- [Searchable Snapshots Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)
 - [Issue #11676](https://github.com/opensearch-project/OpenSearch/issues/11676): Remote data ratio configuration details
 
 ## Related Feature Report

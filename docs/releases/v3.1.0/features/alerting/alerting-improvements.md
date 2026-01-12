@@ -126,8 +126,13 @@ Added error handling for log pattern extraction in alert insights, gracefully ig
 - Timeboxed execution may cause monitors to complete before processing all documents in very large datasets
 - Batch findings publishing requires corresponding updates in Security Analytics for correlation processing
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [Per Document Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-document-monitors/): Per-document monitor documentation
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1850](https://github.com/opensearch-project/alerting/pull/1850) | alerting | Timebox doc level monitor execution |
@@ -140,12 +145,9 @@ Added error handling for log pattern extraction in alert insights, gracefully ig
 | [#1248](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1248) | alerting-dashboards-plugin | Add alert insight to alerts card on overview page |
 | [#1256](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1256) | alerting-dashboards-plugin | Add error handling for extract log pattern |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1853](https://github.com/opensearch-project/alerting/issues/1853): Timebox doc level monitor to avoid duplicate executions
 - [Issue #1859](https://github.com/opensearch-project/alerting/issues/1859): Change publish findings to accept a list of findings
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [Per Document Monitors](https://docs.opensearch.org/3.0/observing-your-data/alerting/per-document-monitors/): Per-document monitor documentation
 
 ## Related Feature Report
 

@@ -58,17 +58,17 @@ No migration required. These are internal test improvements only.
 
 - `QueryInsightsClusterIT` is excluded from security integration tests due to SSL certificate limitations with multi-node setups in Java 21
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/index/)
+- [Query Insights Health Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/health/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#364](https://github.com/opensearch-project/query-insights/pull/364) | Fix flaky integration tests |
 | [#482](https://github.com/opensearch-project/query-insights/pull/482) | Add multi-node and health stats integration tests, fix additional flaky tests |
-
-## References
-
-- [Query Insights Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/index/)
-- [Query Insights Health Documentation](https://docs.opensearch.org/3.1/observing-your-data/query-insights/health/)
 
 ## Related Feature Report
 

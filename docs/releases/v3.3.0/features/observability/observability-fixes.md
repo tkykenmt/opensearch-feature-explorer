@@ -88,17 +88,17 @@ No migration required. These are internal improvements that enhance user experie
 - Error messages are generic and may not provide specific troubleshooting steps for all error types
 - The 25-second timeout toast is triggered independently of the actual request timeout
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics](https://docs.opensearch.org/3.3/observing-your-data/trace/index/): Trace Analytics overview
+- [Trace Analytics plugin for OpenSearch Dashboards](https://docs.opensearch.org/3.3/observing-your-data/trace/ta-dashboards/): Dashboard plugin documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2463](https://github.com/opensearch-project/dashboards-observability/pull/2463) | [Traces] Toast Error handling - Improved error display for trace analytics |
 | [#2492](https://github.com/opensearch-project/dashboards-observability/pull/2492) | Test fixes - Fixed Jest configuration for module resolution |
-
-## References
-
-- [Trace Analytics](https://docs.opensearch.org/3.3/observing-your-data/trace/index/): Trace Analytics overview
-- [Trace Analytics plugin for OpenSearch Dashboards](https://docs.opensearch.org/3.3/observing-your-data/trace/ta-dashboards/): Dashboard plugin documentation
 
 ## Related Feature Report
 

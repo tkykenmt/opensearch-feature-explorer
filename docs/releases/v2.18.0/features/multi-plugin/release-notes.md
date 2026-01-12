@@ -41,8 +41,9 @@ Release notes were added to 5 plugin repositories documenting the changes includ
 - **Bug Fixes**: Non-flat YAML settings handling, system index read protection, dual mode flag propagation, SAML login fix, stored fields hashing, closed index mappings
 - **Maintenance**: Multiple dependency bumps, maintainer updates, CVE-2024-47554 fix
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#1718](https://github.com/opensearch-project/alerting/pull/1718) | alerting | Added 2.18.0 release notes |
@@ -51,8 +52,7 @@ Release notes were added to 5 plugin repositories documenting the changes includ
 | [#148](https://github.com/opensearch-project/query-insights/pull/148) | query-insights | Add release notes for 2.18 |
 | [#1399](https://github.com/opensearch-project/security/pull/1399) | security | Added 2.18.0 release notes |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1654](https://github.com/opensearch-project/alerting/issues/1654): Alerting release notes tracking
 - [Issue #730](https://github.com/opensearch-project/common-utils/issues/730): Common-utils release notes tracking
 - [Issue #958](https://github.com/opensearch-project/notifications/issues/958): Notifications release notes tracking

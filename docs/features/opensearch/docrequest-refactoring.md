@@ -155,20 +155,22 @@ sequenceDiagram
 - The `type()` method must be overridden for custom resource types
 - Bulk operations are not directly supported (individual items in bulk use `DocWriteRequest`)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-10): Added `type()` method to DocRequest interface for resource sharing; Anomaly Detection plugin implements resource types for detectors and forecasters
+- **v3.1.0** (2025-05-15): Initial implementation - introduced `DocRequest` interface, updated `DocWriteRequest` to extend it, and made `GetRequest` implement it
+
+## References
+
+### Blog Posts
+- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): A new access control model for OpenSearch
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [opensearch#19313](https://github.com/opensearch-project/OpenSearch/pull/19313) | Add new extensible method to DocRequest to specify type |
 | v3.3.0 | [anomaly-detection#1566](https://github.com/opensearch-project/anomaly-detection/pull/1566) | Adds resource types to DocRequests in Anomaly Detection |
 | v3.1.0 | [#18269](https://github.com/opensearch-project/OpenSearch/pull/18269) | Create generic DocRequest to better categorize ActionRequests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing (Security plugin)
-- [Blog: Introducing resource sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): A new access control model for OpenSearch
-
-## Change History
-
-- **v3.3.0** (2026-01-10): Added `type()` method to DocRequest interface for resource sharing; Anomaly Detection plugin implements resource types for detectors and forecasters
-- **v3.1.0** (2025-05-15): Initial implementation - introduced `DocRequest` interface, updated `DocWriteRequest` to extend it, and made `GetRequest` implement it

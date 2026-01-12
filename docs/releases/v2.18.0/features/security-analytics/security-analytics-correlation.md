@@ -99,18 +99,18 @@ No migration required. These are bug fixes that improve existing functionality.
 
 - When a concrete index resolves to multiple monitor input indices (aliases), the system picks one of them to get the field mappings
 
-## Related PRs
+## References
 
+### Documentation
+- [Threat Intelligence Documentation](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/index/): Official docs
+- [Monitor API](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/api/monitor/): API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1180](https://github.com/opensearch-project/security-analytics/pull/1180) | Backport of #1173 and #1178 to 2.x |
 | [#1173](https://github.com/opensearch-project/security-analytics/pull/1173) | Fix alias resolution in threat intel monitor |
 | [#1178](https://github.com/opensearch-project/security-analytics/pull/1178) | Fix enum state query for REFRESHING state |
-
-## References
-
-- [Threat Intelligence Documentation](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/index/): Official docs
-- [Monitor API](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/api/monitor/): API reference
 
 ## Related Feature Report
 

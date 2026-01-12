@@ -104,8 +104,12 @@ Parallelized `make` operations to reduce build time when building the plugin or 
 - The cache memory overflow fix works optimally with `jemalloc` enabled; default `malloc` may still experience delays in memory free-up operations
 - Field name validation is applied at index creation time; existing indexes with invalid field names are not automatically fixed
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1874](https://github.com/opensearch-project/k-NN/pull/1874) | Corrected search logic for non-existent fields in filter |
@@ -117,14 +121,12 @@ Parallelized `make` operations to reduce build time when building the plugin or 
 | [#2090](https://github.com/opensearch-project/k-NN/pull/2090) | Switch MINGW32 to MINGW64 |
 | [#2006](https://github.com/opensearch-project/k-NN/pull/2006) | Parallelize make to reduce build time |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1286](https://github.com/opensearch-project/k-NN/issues/1286): Non-existent field filter error
 - [Issue #1789](https://github.com/opensearch-project/k-NN/issues/1789): Graph merge stats calculation bug
 - [Issue #1859](https://github.com/opensearch-project/k-NN/issues/1859): Space in field name prevents snapshots
 - [Issue #1878](https://github.com/opensearch-project/k-NN/issues/1878): script_fields painless script limitation
 - [Issue #1582](https://github.com/opensearch-project/k-NN/issues/1582): Native memory circuit breaker rearchitecture
-- [k-NN Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/index/)
 
 ## Related Feature Report
 

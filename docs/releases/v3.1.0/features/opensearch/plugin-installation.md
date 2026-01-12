@@ -71,17 +71,19 @@ Continue with installation? [y/N]y
 - This fix is specific to OpenSearch 3.x releases that use the new `release@opensearch.org` signing key
 - Users running OpenSearch 2.x should continue using the previous key for signature verification
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Installing plugins
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18147](https://github.com/opensearch-project/OpenSearch/pull/18147) | Fix the native plugin installation error |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5308](https://github.com/opensearch-project/opensearch-build/issues/5308): New PGP key for signing artifacts starting 3.0.0
 - [Issue #3747](https://github.com/opensearch-project/opensearch-build/issues/3747): Release version 3.0.0
-- [Documentation](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Installing plugins
 
 ## Related Feature Report
 

@@ -84,17 +84,19 @@ No migration required. PATCH method support is automatically available after upg
 - PATCH requests require the request body to be a JSON array (JSON Patch format)
 - Autocomplete for PATCH-specific API endpoints may be limited
 
-## Related PRs
+## References
 
+### Documentation
+- [Security API Documentation](https://docs.opensearch.org/latest/security/access-control/api/): OpenSearch Security plugin PATCH APIs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10361](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10361) | Support PATCH calls from dev tools |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10105](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10105): Bug report - PATCH API calls not supported in DevTools console
 - [Issue #2343](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/2343): Feature request - Dev Tools should support PATCH method
-- [Security API Documentation](https://docs.opensearch.org/latest/security/access-control/api/): OpenSearch Security plugin PATCH APIs
 
 ## Related Feature Report
 

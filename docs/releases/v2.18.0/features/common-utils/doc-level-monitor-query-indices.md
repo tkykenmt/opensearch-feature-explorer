@@ -120,16 +120,16 @@ POST _plugins/_alerting/monitors
 - May increase overhead for monitors that run frequently due to index creation/deletion
 - Not recommended for standard alerting use cases where query persistence is beneficial
 
-## Related PRs
+## References
 
+### Documentation
+- [Per Document Monitors Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/per-document-monitors/): Official documentation for per-document monitors
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [common-utils#734](https://github.com/opensearch-project/common-utils/pull/734) | Add `deleteQueryIndexInEveryRun` flag to Monitor model |
 | [alerting#1664](https://github.com/opensearch-project/alerting/pull/1664) | Implement dynamic query index deletion for doc-level monitors |
-
-## References
-
-- [Per Document Monitors Documentation](https://docs.opensearch.org/2.18/observing-your-data/alerting/per-document-monitors/): Official documentation for per-document monitors
 
 ## Related Feature Report
 

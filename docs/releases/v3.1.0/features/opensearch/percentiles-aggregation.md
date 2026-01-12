@@ -110,17 +110,19 @@ GET opensearch_dashboards_sample_data_ecommerce/_search
 - The `MergingDigest` implementation does not support weighted additions, which required a workaround in the median absolute deviation calculation
 - During rolling upgrades, mixed-version clusters will use the legacy serialization format
 
-## Related PRs
+## References
 
+### Documentation
+- [Percentile Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile/): Official documentation
+- [t-digest Library](https://github.com/tdunning/t-digest): Upstream library with MergingDigest recommendation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18124](https://github.com/opensearch-project/OpenSearch/pull/18124) | Switch percentiles implementation to MergingDigest |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18122](https://github.com/opensearch-project/OpenSearch/issues/18122): Feature request for implementation switch
-- [Percentile Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile/): Official documentation
-- [t-digest Library](https://github.com/tdunning/t-digest): Upstream library with MergingDigest recommendation
 
 ## Related Feature Report
 

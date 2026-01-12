@@ -75,19 +75,19 @@ Fixed typo in the Email Recipient Groups UI:
 - These fixes are specific to MDS-enabled deployments
 - Users with local cluster disabled must ensure a default data source is configured
 
-## Related PRs
+## References
 
+### Documentation
+- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
+- [PR #290 Video Demo](https://github.com/user-attachments/assets/71861be4-3f4f-4cdf-a0cf-9d79bf8b5780)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#287](https://github.com/opensearch-project/dashboards-notifications/pull/287) | Fix typo in recipient |
 | [#290](https://github.com/opensearch-project/dashboards-notifications/pull/290) | Bug fix to switch to default datasource instead of local cluster |
 | [#271](https://github.com/opensearch-project/dashboards-notifications/pull/271) | Fix CI workflow for windows |
 | [#280](https://github.com/opensearch-project/dashboards-notifications/pull/280) | Fix cache cypress hashfile path |
-
-## References
-
-- [dashboards-notifications Repository](https://github.com/opensearch-project/dashboards-notifications)
-- [PR #290 Video Demo](https://github.com/user-attachments/assets/71861be4-3f4f-4cdf-a0cf-9d79bf8b5780)
 
 ## Related Feature Report
 

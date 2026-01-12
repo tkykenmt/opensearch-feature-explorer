@@ -100,19 +100,23 @@ To use late interaction scoring:
 - L1 and LINF space types are not supported
 - Performance depends on the number of vectors per document
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/latest/query-dsl/specialized/script-score/#late-interaction-score): Official late interaction score documentation
+
+### Blog Posts
+- [Blog: Boost search relevance with late interaction models](https://opensearch.org/blog/boost-search-relevance-with-late-interaction-models/): Detailed explanation of late interaction models
+- [Blog: Explore OpenSearch 3.3](https://opensearch.org/blog/explore-opensearch-3-3/): Release announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [k-NN#2909](https://github.com/opensearch-project/k-NN/pull/2909) | Add lateInteractionFunction |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue k-NN#2706](https://github.com/opensearch-project/k-NN/issues/2706): RFC for MultiVector Field Type for Late-interaction Score
 - [Issue OpenSearch#18091](https://github.com/opensearch-project/OpenSearch/issues/18091): Feature request for late interaction models support
-- [Documentation](https://docs.opensearch.org/latest/query-dsl/specialized/script-score/#late-interaction-score): Official late interaction score documentation
-- [Blog: Boost search relevance with late interaction models](https://opensearch.org/blog/boost-search-relevance-with-late-interaction-models/): Detailed explanation of late interaction models
-- [Blog: Explore OpenSearch 3.3](https://opensearch.org/blog/explore-opensearch-3-3/): Release announcement
 
 ## Related Feature Report
 

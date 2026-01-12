@@ -110,21 +110,21 @@ Example SPIFFE ID format:
 - Trust domain validation is not performed by the extractor (handled by TLS layer)
 - Requires SPIFFE-compliant certificates following the X509-SVID specification
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.2.0 | [#5521](https://github.com/opensearch-project/security/pull/5521) | Initial implementation of SPIFFEPrincipalExtractor |
+- **v3.2.0**: Initial implementation of SPIFFE X.509 SVID support via `SPIFFEPrincipalExtractor`
 
 ## References
 
-- [SPIFFE Official Website](https://spiffe.io/)
-- [X509-SVID Specification](https://github.com/spiffe/spiffe/blob/main/standards/X509-SVID.md)
+### Documentation
 - [SPIRE Documentation](https://spiffe.io/docs/latest/spire-about/)
 - [OpenSearch TLS Configuration](https://docs.opensearch.org/3.0/security/configuration/tls/)
 - [Client Certificate Authentication](https://docs.opensearch.org/3.0/security/authentication-backends/client-auth/)
 - [Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+- [SPIFFE Official Website](https://spiffe.io/)
+- [X509-SVID Specification](https://github.com/spiffe/spiffe/blob/main/standards/X509-SVID.md)
 
-## Change History
-
-- **v3.2.0**: Initial implementation of SPIFFE X.509 SVID support via `SPIFFEPrincipalExtractor`
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.2.0 | [#5521](https://github.com/opensearch-project/security/pull/5521) | Initial implementation of SPIFFEPrincipalExtractor |

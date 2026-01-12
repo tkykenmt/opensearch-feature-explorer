@@ -107,19 +107,23 @@ fetchNotebooks = () => {
 - **No automatic migration**: Users must manually migrate notebooks before upgrading
 - **Data loss risk**: Notebooks not migrated before upgrade will be inaccessible
 
-## Related PRs
+## References
 
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
+- [Notebooks Documentation](https://docs.opensearch.org/3.0/observing-your-data/notebooks/): Current notebooks feature documentation
+
+### Blog Posts
+- [Blog: Feature Deep Dive - OpenSearch Dashboards Notebooks](https://opensearch.org/blog/feature-highlight-opensearch-dashboards-notebooks/): Feature overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2350](https://github.com/opensearch-project/dashboards-observability/issues/2350): Deprecation notice for legacy notebooks
 - [Issue #2311](https://github.com/opensearch-project/dashboards-observability/issues/2311): Parent issue for notebooks migration
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/): Official v3.0.0 breaking changes
-- [Notebooks Documentation](https://docs.opensearch.org/3.0/observing-your-data/notebooks/): Current notebooks feature documentation
-- [Blog: Feature Deep Dive - OpenSearch Dashboards Notebooks](https://opensearch.org/blog/feature-highlight-opensearch-dashboards-notebooks/): Feature overview
 
 ## Related Feature Report
 

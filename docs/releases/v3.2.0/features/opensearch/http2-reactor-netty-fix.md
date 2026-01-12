@@ -110,16 +110,18 @@ No migration required. The fix is backward compatible and automatically applies 
 - The `transport-reactor-netty4` plugin remains experimental
 - Requires proper SSL/TLS certificate configuration via security plugin
 
-## Related PRs
+## References
 
+### Documentation
+- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Transport configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18599](https://github.com/opensearch-project/OpenSearch/pull/18599) | Fix HTTP/2 communication when reactor-netty is enabled |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18559](https://github.com/opensearch-project/OpenSearch/issues/18559): Bug report for HTTP/2 failure
-- [Network Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/network-settings/): Transport configuration
 
 ## Related Feature Report
 

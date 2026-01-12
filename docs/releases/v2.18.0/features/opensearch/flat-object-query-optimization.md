@@ -121,18 +121,22 @@ GET /test-index/_search
 - Query optimization depends on both index and doc_values being enabled
 - Performance improvement varies based on data distribution and query selectivity
 
-## Related PRs
+## References
 
+### Documentation
+- [Flat object documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/flat-object/): Official docs
+
+### Blog Posts
+- [Use flat object in OpenSearch](https://opensearch.org/blog/flat-object/): Blog post
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#14383](https://github.com/opensearch-project/OpenSearch/pull/14383) | Flat object field use IndexOrDocValuesQuery to optimize query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11537](https://github.com/opensearch-project/OpenSearch/issues/11537): Feature request for IndexOrDocValuesQuery support
 - [Issue #11635](https://github.com/opensearch-project/OpenSearch/issues/11635): Bug report for code duplication in query generation
-- [Flat object documentation](https://docs.opensearch.org/2.18/field-types/supported-field-types/flat-object/): Official docs
-- [Use flat object in OpenSearch](https://opensearch.org/blog/flat-object/): Blog post
 
 ## Related Feature Report
 

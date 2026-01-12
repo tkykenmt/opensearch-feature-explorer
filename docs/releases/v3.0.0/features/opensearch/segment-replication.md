@@ -94,8 +94,13 @@ GET _cat/segment_replication?v
 - The checkpoint retry timeout setting is cluster-wide and cannot be configured per-index
 - Stats computation requires replicas to be active; stats are empty for shards without active replicas
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
+- [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17055](https://github.com/opensearch-project/OpenSearch/pull/17055) | Implemented computation of segment replication stats at shard level |
@@ -103,14 +108,11 @@ GET _cat/segment_replication?v
 | [#17568](https://github.com/opensearch-project/OpenSearch/pull/17568) | Increase the default segment counter step size when replica promoting |
 | [#17749](https://github.com/opensearch-project/OpenSearch/pull/17749) | Add cluster setting for retry timeout of publish checkpoint tx action |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16801](https://github.com/opensearch-project/OpenSearch/issues/16801): Feature request for redefining segment replication metrics computation
 - [Issue #10764](https://github.com/opensearch-project/OpenSearch/issues/10764): Bug report for skewed lag metric when same checkpoint published twice
 - [Issue #17566](https://github.com/opensearch-project/OpenSearch/issues/17566): Feature request for increased segment counter step size
 - [Issue #17595](https://github.com/opensearch-project/OpenSearch/issues/17595): Bug report for segment replication stopping when publish checkpoint fails
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
-- [CAT Segment Replication API](https://docs.opensearch.org/3.0/api-reference/cat/cat-segment-replication/): API reference
 
 ## Related Feature Report
 

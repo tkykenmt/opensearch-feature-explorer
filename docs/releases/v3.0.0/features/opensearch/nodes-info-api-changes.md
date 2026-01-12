@@ -86,17 +86,17 @@ If your application relies on `search_pipelines` information from the Nodes Info
 - This is a **breaking change** - existing clients expecting `search_pipelines` in default responses will need updates
 - The change affects both REST API and Java transport client behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): Official documentation
+- [PR #12497](https://github.com/opensearch-project/OpenSearch/pull/12497): Main implementation
+- [PR #10296](https://github.com/opensearch-project/OpenSearch/pull/10296): Related - Add optional section of node analyzers into NodeInfo
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#12497](https://github.com/opensearch-project/OpenSearch/pull/12497) | Do not request "search_pipelines" metrics by default in NodesInfoRequest |
-
-## References
-
-- [PR #12497](https://github.com/opensearch-project/OpenSearch/pull/12497): Main implementation
-- [PR #10296](https://github.com/opensearch-project/OpenSearch/pull/10296): Related - Add optional section of node analyzers into NodeInfo
-- [Nodes Info API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-info/): Official documentation
 
 ## Related Feature Report
 

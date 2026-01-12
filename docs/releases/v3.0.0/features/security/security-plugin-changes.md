@@ -128,8 +128,13 @@ auth_failure_listeners:
 - OpenSSL removal may affect performance in some high-throughput TLS scenarios
 - Whitelist settings migration must be done before upgrade
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
+- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5089](https://github.com/opensearch-project/security/pull/5089) | Fix Blake2b hash implementation |
@@ -141,14 +146,11 @@ auth_failure_listeners:
 | [#5160](https://github.com/opensearch-project/security/pull/5160) | Add stop-replication permission |
 | [#5153](https://github.com/opensearch-project/security/pull/5153) | Replace password generator with secure action |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4274](https://github.com/opensearch-project/security/issues/4274): Blake2b hash issue
 - [Issue #3870](https://github.com/opensearch-project/security/issues/3870): Optimized privilege evaluation proposal
 - [Issue #4927](https://github.com/opensearch-project/security/issues/4927): CIDR range support request
 - [Issue #1483](https://github.com/opensearch-project/OpenSearch/issues/1483): Deprecate non-inclusive terms
-- [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
-- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
 
 ## Related Feature Report
 

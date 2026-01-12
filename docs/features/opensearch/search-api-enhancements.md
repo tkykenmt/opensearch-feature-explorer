@@ -99,21 +99,23 @@ aggregation:
 - `successfulSearchShardIndices` is only available after search completion
 - Not all query types implement `WithFieldName` (only those with a single field)
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-12): Extended `WithFieldName` to `ValuesSourceAggregationBuilder` and `FieldSortBuilder`; added `successfulSearchShardIndices` to `SearchRequestContext`
+- **v2.17.0** (2024-09-17): Initial `WithFieldName` interface added for QueryBuilder classes
+
+## References
+
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
+- [Grouping Top N Queries](https://docs.opensearch.org/2.18/observing-your-data/query-insights/grouping-top-n-queries/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#15916](https://github.com/opensearch-project/OpenSearch/pull/15916) | Implement WithFieldName in ValuesSourceAggregationBuilder & FieldSortBuilder |
 | v2.18.0 | [#15967](https://github.com/opensearch-project/OpenSearch/pull/15967) | Add successfulSearchShardIndices in SearchRequestContext |
 | v2.17.0 | [#15705](https://github.com/opensearch-project/OpenSearch/pull/15705) | Adding WithFieldName interface for QueryBuilders |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #69](https://github.com/opensearch-project/query-insights/issues/69): Query Shape Field Data Type RFC
-- [Query Insights Documentation](https://docs.opensearch.org/2.18/observing-your-data/query-insights/index/)
-- [Grouping Top N Queries](https://docs.opensearch.org/2.18/observing-your-data/query-insights/grouping-top-n-queries/)
-
-## Change History
-
-- **v2.18.0** (2024-11-12): Extended `WithFieldName` to `ValuesSourceAggregationBuilder` and `FieldSortBuilder`; added `successfulSearchShardIndices` to `SearchRequestContext`
-- **v2.17.0** (2024-09-17): Initial `WithFieldName` interface added for QueryBuilder classes

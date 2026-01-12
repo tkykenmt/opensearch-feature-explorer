@@ -108,17 +108,19 @@ Higher scaling factors provide more precision but require more storage space.
 - **Range**: Values must fit within a long integer after scaling (approximately ±9.2 × 10¹⁸)
 - **No exact decimal arithmetic**: Unlike BigDecimal, scaled_float uses native floating-point multiplication
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Fixed precision issue where `match` queries failed for certain values due to inconsistent scaling between indexing and querying. The `scale()` method now uses direct multiplication for both operations.
+
+## References
+
+### Documentation
+- [Numeric field types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19188](https://github.com/opensearch-project/OpenSearch/pull/19188) | Fix precision issue between indexing and querying |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #12433](https://github.com/opensearch-project/OpenSearch/issues/12433): Bug report for precision mismatch
-- [Numeric field types](https://docs.opensearch.org/3.0/field-types/supported-field-types/numeric/): Official documentation
-
-## Change History
-
-- **v3.3.0**: Fixed precision issue where `match` queries failed for certain values due to inconsistent scaling between indexing and querying. The `scale()` method now uses direct multiplication for both operations.

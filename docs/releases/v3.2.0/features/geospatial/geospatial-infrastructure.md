@@ -58,17 +58,17 @@ Fixed a flaky test in `UploadStatsServiceTests.java` that could fail due to dupl
 - JDK 24 is the latest supported version; older JDK versions below 21 are not supported
 - Gradle 8.14.3 requires compatible plugin versions
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#776](https://github.com/opensearch-project/geospatial/pull/776) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
-
 ## References
 
+### Documentation
 - [Gradle 8.14.3 Release Notes](https://docs.gradle.org/8.14.3/release-notes.html): Gradle release information
 - [JDK 24 Release](https://openjdk.org/projects/jdk/24/): OpenJDK 24 project page
 - [Lombok Gradle Plugin](https://plugins.gradle.org/plugin/io.freefair.lombok): Lombok plugin for Gradle
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#776](https://github.com/opensearch-project/geospatial/pull/776) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |
 
 ## Related Feature Report
 

@@ -60,11 +60,23 @@ Security-related dependency updates are prioritized and may include:
 - Some updates may be blocked by compatibility requirements with OpenSearch core
 - Transitive dependency conflicts may require manual resolution
 
-## Related PRs
+## Change History
 
-### v3.2.0
+- **v3.2.0** (2026-01-10): 20 dependency updates in OpenSearch core including Apache Lucene 10.2.2, Log4j 2.25.1, BouncyCastle FIPS updates, OkHttp 5.1.0, Azure SDK updates, Kafka clients 3.9.1
+- **v3.1.0** (2026-01-10): 21 dependency updates in OpenSearch core including CVE-2025-27820 fix (Apache HttpClient5/HttpCore5), Netty 4.1.121.Final, Gson 2.13.1, Azure SDK updates, Gradle Actions 4
+- **v2.18.0** (2024-11-05): 19 dependency updates including CVE-2024-7254 fix (protobuf), Gradle 8.10.2, upload-artifact v4
+- **v2.17.0** (2024-09-17): 16 dependency updates across Job Scheduler (4 PRs) and Security (12 PRs) plugins
 
-#### OpenSearch Core
+## References
+
+### Documentation
+- [Dependabot Documentation](https://docs.github.com/en/code-security/dependabot)
+- [CVE-2025-27820](https://www.mend.io/vulnerability-database/CVE-2025-27820): Apache HttpCore5 vulnerability
+- [CVE-2024-7254](https://nvd.nist.gov/vuln/detail/CVE-2024-7254): Protobuf DOS vulnerability
+- [Job Scheduler Repository](https://github.com/opensearch-project/job-scheduler)
+- [Security Plugin Repository](https://github.com/opensearch-project/security)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18573](https://github.com/opensearch-project/OpenSearch/pull/18573) | Bump Apache Lucene to 10.2.2 |
@@ -87,10 +99,6 @@ Security-related dependency updates are prioritized and may include:
 | [#18935](https://github.com/opensearch-project/OpenSearch/pull/18935) | Bump grgit-core from 5.2.1 to 5.3.2 |
 | [#18935](https://github.com/opensearch-project/OpenSearch/pull/18935) | Bump kafka-clients from 3.8.1 to 3.9.1 |
 | [#18524](https://github.com/opensearch-project/OpenSearch/pull/18524) | Bump git-auto-commit-action from 5 to 6 |
-
-### v3.1.0
-
-#### OpenSearch Core
 | PR | Description |
 |----|-------------|
 | [#18152](https://github.com/opensearch-project/OpenSearch/pull/18152) | Update Apache HttpClient5 and HttpCore5 (CVE-2025-27820) |
@@ -114,15 +122,9 @@ Security-related dependency updates are prioritized and may include:
 | [#18468](https://github.com/opensearch-project/OpenSearch/pull/18468) | Bump com.squareup.okio:okio from 3.10.2 to 3.12.0 |
 | [#18469](https://github.com/opensearch-project/OpenSearch/pull/18469) | Bump com.azure:azure-xml from 1.1.0 to 1.2.0 |
 | [#18470](https://github.com/opensearch-project/OpenSearch/pull/18470) | Bump com.maxmind.db:maxmind-db from 3.1.1 to 3.2.0 |
-
-### v2.18.0
-
-#### OpenSearch Core
 | PR | Description |
 |----|-------------|
 | [#16254](https://github.com/opensearch-project/OpenSearch/pull/16254) | Fix protobuf-java leak through client library dependencies |
-
-#### Security
 | PR | Description |
 |----|-------------|
 | [#4829](https://github.com/opensearch-project/security/pull/4829) | Bump Gradle to 8.10.2 |
@@ -133,56 +135,36 @@ Security-related dependency updates are prioritized and may include:
 | [#4737](https://github.com/opensearch-project/security/pull/4737) | Bump nimbus-jose-jwt 9.40 → 9.41.2 |
 | [#4788](https://github.com/opensearch-project/security/pull/4788) | Bump asm 9.7 → 9.7.1 |
 | [#4786](https://github.com/opensearch-project/security/pull/4786) | Bump google-java-format |
-
-#### ML Commons
 | PR | Description |
 |----|-------------|
 | [#3083](https://github.com/opensearch-project/ml-commons/pull/3083) | Bump protobuf to 3.25.5 (CVE-2024-7254 fix) |
-
-#### Job Scheduler
 | PR | Description |
 |----|-------------|
 | [#679](https://github.com/opensearch-project/job-scheduler/pull/679) | Bump org.gradle.test-retry 1.5.10 → 1.6.0 |
 | [#684](https://github.com/opensearch-project/job-scheduler/pull/684) | Bump google-java-format |
 | [#688](https://github.com/opensearch-project/job-scheduler/pull/688) | Gradle 8.10.2 + JDK 23 CI checks |
-
-#### Common Utils
 | PR | Description |
 |----|-------------|
 | [#746](https://github.com/opensearch-project/common-utils/pull/746) | Update Gradle to 8.10.2 |
-
-#### Notifications
 | PR | Description |
 |----|-------------|
 | [#264](https://github.com/opensearch-project/notifications/pull/264) | Upgrade upload-artifact to v4 |
-
-#### Reporting
 | PR | Description |
 |----|-------------|
 | [#462](https://github.com/opensearch-project/reporting/pull/462) | Bump dompurify to 3.0.11 (CVE fix) |
-
-#### OpenSearch Dashboards
 | PR | Description |
 |----|-------------|
 | [#450](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/450) | Bump actions/upload-artifact |
 | [#449](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/449) | Update to latest SVG |
-
-#### Index Management
 | PR | Description |
 |----|-------------|
 | [#1252](https://github.com/opensearch-project/index-management/pull/1252) | Upgrade upload-artifact to version 3 |
-
-### v2.17.0
-
-#### Job Scheduler
 | PR | Description |
 |----|-------------|
 | [#653](https://github.com/opensearch-project/job-scheduler/pull/653) | Bump org.gradle.test-retry from 1.5.9 to 1.5.10 |
 | [#663](https://github.com/opensearch-project/job-scheduler/pull/663) | Bump google-java-format |
 | [#666](https://github.com/opensearch-project/job-scheduler/pull/666) | Bump slf4j-api from 2.0.13 to 2.0.16 |
 | [#668](https://github.com/opensearch-project/job-scheduler/pull/668) | Bump nebula.ospackage from 11.9.1 to 11.10.0 |
-
-#### Security
 | PR | Description |
 |----|-------------|
 | [#4696](https://github.com/opensearch-project/security/pull/4696) | Bump error_prone_annotations from 2.30.0 to 2.31.0 |
@@ -198,19 +180,6 @@ Security-related dependency updates are prioritized and may include:
 | [#4681](https://github.com/opensearch-project/security/pull/4681) | Bump nebula.ospackage from 11.9.1 to 11.10.0 |
 | [#4623](https://github.com/opensearch-project/security/pull/4623) | Bump checker-qual from 3.45.0 to 3.46.0 |
 
-## References
-
-- [Dependabot Documentation](https://docs.github.com/en/code-security/dependabot)
-- [CVE-2025-27820](https://www.mend.io/vulnerability-database/CVE-2025-27820): Apache HttpCore5 vulnerability
-- [CVE-2024-7254](https://nvd.nist.gov/vuln/detail/CVE-2024-7254): Protobuf DOS vulnerability
+### Issues (Design / RFC)
 - [Issue #16253](https://github.com/opensearch-project/OpenSearch/issues/16253): protobuf-java leak bug report
 - [Issue #2998](https://github.com/opensearch-project/ml-commons/issues/2998): tribuo-clustering-kmeans vulnerability
-- [Job Scheduler Repository](https://github.com/opensearch-project/job-scheduler)
-- [Security Plugin Repository](https://github.com/opensearch-project/security)
-
-## Change History
-
-- **v3.2.0** (2026-01-10): 20 dependency updates in OpenSearch core including Apache Lucene 10.2.2, Log4j 2.25.1, BouncyCastle FIPS updates, OkHttp 5.1.0, Azure SDK updates, Kafka clients 3.9.1
-- **v3.1.0** (2026-01-10): 21 dependency updates in OpenSearch core including CVE-2025-27820 fix (Apache HttpClient5/HttpCore5), Netty 4.1.121.Final, Gson 2.13.1, Azure SDK updates, Gradle Actions 4
-- **v2.18.0** (2024-11-05): 19 dependency updates including CVE-2024-7254 fix (protobuf), Gradle 8.10.2, upload-artifact v4
-- **v2.17.0** (2024-09-17): 16 dependency updates across Job Scheduler (4 PRs) and Security (12 PRs) plugins

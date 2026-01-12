@@ -93,19 +93,19 @@ Maintainers can approve the workflow from the GitHub Actions UI.
 - Approval is required per PR, not per commit
 - External contributors may experience delays waiting for approval
 
-## Related PRs
+## References
 
+### Documentation
+- [MAINTAINERS.md](https://github.com/opensearch-project/ml-commons/blob/main/MAINTAINERS.md): List of maintainers
+- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/ml-commons/blob/main/DEVELOPER_GUIDE.md): Developer guide with approval info
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3005](https://github.com/opensearch-project/ml-commons/pull/3005) | Add Test Env Require Approval Action |
 | [#3162](https://github.com/opensearch-project/ml-commons/pull/3162) | Upgrading upload artifact to v4 |
 | [#2881](https://github.com/opensearch-project/ml-commons/pull/2881) | Bump actions/download-artifact from 3 to 4.1.7 |
 | [#3062](https://github.com/opensearch-project/ml-commons/pull/3062) | Updates dev guide to inform the workflow approval step |
-
-## References
-
-- [MAINTAINERS.md](https://github.com/opensearch-project/ml-commons/blob/main/MAINTAINERS.md): List of maintainers
-- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/ml-commons/blob/main/DEVELOPER_GUIDE.md): Developer guide with approval info
 
 ## Related Feature Report
 

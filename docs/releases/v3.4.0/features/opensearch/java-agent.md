@@ -77,16 +77,18 @@ POST /_plugins/_ml/connectors/_create
 - This fix specifically addresses the `jrt:` protocol filtering; other protocol-related issues may require separate fixes
 - The Java agent security model still requires proper `plugin-security.policy` configuration for plugin code
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Background on Java agent security model
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19683](https://github.com/opensearch-project/OpenSearch/pull/19683) | Allow JRT protocol URLs in protection domain extraction |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4209](https://github.com/opensearch-project/ml-commons/issues/4209): Bug report - Failed to get tools from external MCP server
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/): Background on Java agent security model
 
 ## Related Feature Report
 

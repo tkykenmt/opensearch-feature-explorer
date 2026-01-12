@@ -90,16 +90,18 @@ public UnaryOperator<RestHandler> getRestHandlerWrapper(
 - Only one plugin may implement `getRestHandlerWrapper` per cluster
 - The old method signature is deprecated and will be removed in a future release
 
-## Related PRs
+## References
 
+### Documentation
+- [Security PR #5396](https://github.com/opensearch-project/security/pull/5396): Related fix in Security plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19875](https://github.com/opensearch-project/OpenSearch/pull/19875) | Pass registry of headers from ActionPlugin.getRestHeaders to ActionPlugin.getRestHandlerWrapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4799](https://github.com/opensearch-project/security/issues/4799): SecurityRestFilter drops headers from ThreadContext
-- [Security PR #5396](https://github.com/opensearch-project/security/pull/5396): Related fix in Security plugin
 
 ## Related Feature Report
 

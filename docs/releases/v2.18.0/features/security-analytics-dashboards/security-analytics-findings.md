@@ -65,16 +65,16 @@ No migration required. The fix is automatically applied when upgrading to v2.18.
 
 - Threat intel rules are currently excluded from severity prioritization in the correlations findings table
 
-## Related PRs
+## References
 
+### Documentation
+- [Working with findings](https://docs.opensearch.org/2.18/security-analytics/usage/findings/): Official documentation
+- [PR #1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160) | Fix findings page crash and rule severity correctness |
-
-## References
-
-- [PR #1160](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1160): Main implementation
-- [Working with findings](https://docs.opensearch.org/2.18/security-analytics/usage/findings/): Official documentation
 
 ## Related Feature Report
 

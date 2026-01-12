@@ -62,17 +62,17 @@ If you have custom plugins or themes that reference `$ouiSideNavBackgroundColorT
 - These are maintenance updates with no new UI components
 - Font changes may affect the visual appearance of code blocks in existing dashboards
 
-## Related PRs
+## References
 
+### Documentation
+- [OUI Repository](https://github.com/opensearch-project/oui): OpenSearch UI component library
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8246](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8246) | Update OUI to 1.13 |
 | [#8372](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8372) | Update OUI to 1.14 (font changes) |
 | [#8480](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8480) | Update OUI to 1.15 and consume $euiSideNavBackgroundColor |
-
-## References
-
-- [OUI Repository](https://github.com/opensearch-project/oui): OpenSearch UI component library
 
 ## Related Feature Report
 

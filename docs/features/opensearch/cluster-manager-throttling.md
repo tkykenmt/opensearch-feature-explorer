@@ -112,20 +112,24 @@ PUT _cluster/settings
 - When a task is rejected, the entire batch of tasks in that submission is rejected
 - Throttling statistics are reset when the cluster manager node changes
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Enabled default throttling for all task types with predefined thresholds; introduced `ClusterManagerTask` enum
+- **v2.4.0** (2022-11-15): Initial implementation of cluster manager task throttling (disabled by default)
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Official cluster manager task throttling documentation
+
+### Blog Posts
+- [OpenSearch 2.4.0 Blog](https://opensearch.org/blog/opensearch-2-4-is-available-today/): Introduction of cluster manager task throttling
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.4.0 | [#4986](https://github.com/opensearch-project/OpenSearch/pull/4986) | Initial cluster manager task throttling implementation |
 | v3.0.0 | [#17711](https://github.com/opensearch-project/OpenSearch/pull/17711) | Enabled default throttling for all tasks |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17685](https://github.com/opensearch-project/OpenSearch/issues/17685): Feature request for default throttling in v3.0.0
-- [Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Official cluster manager task throttling documentation
-- [OpenSearch 2.4.0 Blog](https://opensearch.org/blog/opensearch-2-4-is-available-today/): Introduction of cluster manager task throttling
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Enabled default throttling for all task types with predefined thresholds; introduced `ClusterManagerTask` enum
-- **v2.4.0** (2022-11-15): Initial implementation of cluster manager task throttling (disabled by default)

@@ -196,19 +196,21 @@ GET logs/_search?search_pipeline=temporal-routing-search
 - The `hash_bucket` setting must be consistent between ingest and search processors
 - Does not replace Index Lifecycle Management (ILM) - this is for shard-level locality within a single index
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#18966](https://github.com/opensearch-project/OpenSearch/pull/18966) | Add temporal routing processors for time-based document routing |
+- **v3.3.0** (2025-08-11): Initial implementation with `TemporalRoutingProcessor` and `TemporalRoutingSearchProcessor`
 
 ## References
 
-- [Issue #18920](https://github.com/opensearch-project/OpenSearch/issues/18920): RFC for Temporal Routing Processors
+### Documentation
 - [Routing documentation](https://docs.opensearch.org/3.3/mappings/metadata-fields/routing/): OpenSearch routing concepts
 - [Ingest processors](https://docs.opensearch.org/3.3/ingest-pipelines/processors/index-processors/): Ingest pipeline processors
 - [Search pipelines](https://docs.opensearch.org/3.3/search-plugins/search-pipelines/): Search pipeline documentation
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#18966](https://github.com/opensearch-project/OpenSearch/pull/18966) | Add temporal routing processors for time-based document routing |
 
-- **v3.3.0** (2025-08-11): Initial implementation with `TemporalRoutingProcessor` and `TemporalRoutingSearchProcessor`
+### Issues (Design / RFC)
+- [Issue #18920](https://github.com/opensearch-project/OpenSearch/issues/18920): RFC for Temporal Routing Processors

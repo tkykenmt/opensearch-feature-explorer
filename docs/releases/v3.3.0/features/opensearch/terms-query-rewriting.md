@@ -90,16 +90,18 @@ No migration is required. This is a bug fix that restores the expected behavior 
 - This fix specifically addresses the complement calculation for whole number fields
 - The optimization for skipping consecutive values only applies to integer-type fields
 
-## Related PRs
+## References
 
+### Documentation
+- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/): Official documentation for terms queries
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19587](https://github.com/opensearch-project/OpenSearch/pull/19587) | Fix rewriting terms query with consecutive whole numbers |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19566](https://github.com/opensearch-project/OpenSearch/issues/19566): Bug report for must_not wrapping terms query
-- [Terms Query Documentation](https://docs.opensearch.org/3.0/query-dsl/term/terms/): Official documentation for terms queries
 
 ## Related Feature Report
 

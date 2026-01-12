@@ -138,8 +138,13 @@ GET logs-prod-2025/_search
 - Pattern matching uses prefix-based wildcards only (e.g., `logs-*`)
 - Rule changes may take up to one sync interval to propagate to all nodes
 
-## Related PRs
+## References
 
+### Documentation
+- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
+- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17336](https://github.com/opensearch-project/OpenSearch/pull/17336) | Add Get Rule API |
@@ -150,12 +155,9 @@ GET logs-prod-2025/_search
 | [#18184](https://github.com/opensearch-project/OpenSearch/pull/18184) | Add Delete Rule API |
 | [#18488](https://github.com/opensearch-project/OpenSearch/pull/18488) | Bug fix for update rule API duplicate detection |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16797](https://github.com/opensearch-project/OpenSearch/issues/16797): RFC for automated labeling of search requests
 - [Issue #13341](https://github.com/opensearch-project/OpenSearch/issues/13341): Related feature request
-- [Rule-based Auto-tagging Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/autotagging/)
-- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.1/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ## Related Feature Report
 

@@ -157,21 +157,23 @@ curl -X GET "localhost:9200/_cluster/pending_tasks?pretty"
 - FS health metrics depend on health monitoring being enabled
 - Metrics are node-local and need aggregation for cluster-wide view
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-06): Initial implementation with three metrics: task execution time, node-left counter, and FS health failure counter
+
+## References
+
+### Documentation
+- [CAT Pending Tasks API](https://docs.opensearch.org/3.0/api-reference/cat/cat-pending-tasks/): API documentation
+- [Metrics Reference](https://docs.opensearch.org/3.0/monitoring-your-cluster/pa/reference/): Performance Analyzer metrics
+- [Cluster Manager Task Throttling](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Related cluster manager documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#17780](https://github.com/opensearch-project/OpenSearch/pull/17780) | Added time_in_execution to pending tasks API |
 | v3.1.0 | [#18421](https://github.com/opensearch-project/OpenSearch/pull/18421) | Added node-left metric with reason tags |
 | v3.1.0 | [#18435](https://github.com/opensearch-project/OpenSearch/pull/18435) | Added FS health check failure metric |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11818](https://github.com/opensearch-project/OpenSearch/issues/11818): Original feature request for task execution latency
-- [CAT Pending Tasks API](https://docs.opensearch.org/3.0/api-reference/cat/cat-pending-tasks/): API documentation
-- [Metrics Reference](https://docs.opensearch.org/3.0/monitoring-your-cluster/pa/reference/): Performance Analyzer metrics
-- [Cluster Manager Task Throttling](https://docs.opensearch.org/3.0/tuning-your-cluster/cluster-manager-task-throttling/): Related cluster manager documentation
-
-## Change History
-
-- **v3.1.0** (2025-06): Initial implementation with three metrics: task execution time, node-left counter, and FS health failure counter

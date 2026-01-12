@@ -84,18 +84,18 @@ The PlainNumberAdapter ensures that numeric values like `0.001` are serialized c
 - `PlainDoubleAdapter` and `PlainFloatAdapter` write `null` for `NaN` and `Infinity` values
 - The adapters are only applied to SearchIndexTool query processing
 
-## Related PRs
+## References
 
+### Documentation
+- [SearchIndexTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/search-index-tool/)
+- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4296](https://github.com/opensearch-project/ml-commons/pull/4296) | Enable execute tool feature flag by default |
 | [#4133](https://github.com/opensearch-project/ml-commons/pull/4133) | Add PlainNumberAdapter and corresponding tests for Gson in SearchIndexTool |
 | [#4215](https://github.com/opensearch-project/ml-commons/pull/4215) | Change the setting name to same naming convention with others |
-
-## References
-
-- [SearchIndexTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/search-index-tool/)
-- [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/)
 
 ## Related Feature Report
 

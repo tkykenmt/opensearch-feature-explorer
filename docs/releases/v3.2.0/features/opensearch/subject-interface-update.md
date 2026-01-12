@@ -75,17 +75,17 @@ If you have custom `Subject` implementations or use `Subject.runAs()`:
 - This is a breaking API change for custom `Subject` implementations
 - Existing code using the return value (though unlikely) will need modification
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #18570](https://github.com/opensearch-project/OpenSearch/pull/18570): Main implementation
+- [PR #14630](https://github.com/opensearch-project/OpenSearch/pull/14630): Related - Add runAs to Subject interface and introduce IdentityAwarePlugin extension point
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18570](https://github.com/opensearch-project/OpenSearch/pull/18570) | Update Subject interface to use CheckedRunnable |
 | [#14630](https://github.com/opensearch-project/OpenSearch/pull/14630) | Original PR that introduced `runAs` to Subject interface |
-
-## References
-
-- [PR #18570](https://github.com/opensearch-project/OpenSearch/pull/18570): Main implementation
-- [PR #14630](https://github.com/opensearch-project/OpenSearch/pull/14630): Related - Add runAs to Subject interface and introduce IdentityAwarePlugin extension point
 
 ## Related Feature Report
 

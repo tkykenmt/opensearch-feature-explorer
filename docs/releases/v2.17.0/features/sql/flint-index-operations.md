@@ -83,17 +83,19 @@ After vacuum, both the OpenSearch index and the S3 checkpoint data are deleted.
 - Vacuum operations now require a Spark job to be submitted, which may increase latency compared to the previous direct handling
 - The operation depends on Flint Spark availability
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #2557](https://github.com/opensearch-project/sql/pull/2557): Original vacuum implementation in SQL plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2985](https://github.com/opensearch-project/sql/pull/2985) | Delegate Flint index vacuum operation to Spark (main) |
 | [#2995](https://github.com/opensearch-project/sql/pull/2995) | Manual backport to 2.17 branch |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #580](https://github.com/opensearch-project/opensearch-spark/issues/580): VACUUM index statement should delete checkpoint data
-- [PR #2557](https://github.com/opensearch-project/sql/pull/2557): Original vacuum implementation in SQL plugin
 
 ## Related Feature Report
 

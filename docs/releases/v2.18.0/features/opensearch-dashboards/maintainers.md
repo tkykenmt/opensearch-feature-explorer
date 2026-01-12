@@ -23,16 +23,16 @@ The following entry was added to the Current Maintainers table:
 - Maintainer updates are administrative and do not affect software functionality
 - Changes require consensus from existing maintainers
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Project Governance](https://github.com/opensearch-project/.github/blob/main/GOVERNANCE.md): Governance documentation
+- [MAINTAINERS.md](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/MAINTAINERS.md): Current maintainer list
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8415](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8415) | Add Hailong-am as maintainer |
-
-## References
-
-- [MAINTAINERS.md](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/MAINTAINERS.md): Current maintainer list
-- [OpenSearch Project Governance](https://github.com/opensearch-project/.github/blob/main/GOVERNANCE.md): Governance documentation
 
 ## Related Feature Report
 

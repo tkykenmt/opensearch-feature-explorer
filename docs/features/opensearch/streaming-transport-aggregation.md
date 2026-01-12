@@ -173,8 +173,17 @@ SearchResponse response = builder.execute().actionGet();
 - Cardinality streaming only supports ordinal value sources (keyword fields)
 - Request cache is automatically disabled for streaming queries
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-10): Added numeric terms aggregator, cardinality aggregator, query planning for flush mode, dynamic cluster setting, request cache handling
+- **v3.2.0** (2025-08): Initial implementation with stream transport framework and streaming terms aggregation with max sub-aggregation support
+
+## References
+
+### Blog Posts
+- [Apache Arrow Flight](https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/): Underlying transport technology
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19335](https://github.com/opensearch-project/OpenSearch/pull/19335) | Add `StreamNumericTermsAggregator` for numeric term aggregation streaming |
@@ -185,15 +194,8 @@ SearchResponse response = builder.execute().actionGet();
 | v3.2.0 | [#18722](https://github.com/opensearch-project/OpenSearch/pull/18722) | APIs for stream transport and stream-based search action |
 | v3.2.0 | [#18874](https://github.com/opensearch-project/OpenSearch/pull/18874) | Streaming aggregation implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #16774](https://github.com/opensearch-project/OpenSearch/issues/16774): Streaming Aggregation - A Memory-Efficient Approach
 - [RFC #18425](https://github.com/opensearch-project/OpenSearch/issues/18425): Alternate Stream Transport in OpenSearch
 - [Issue #19515](https://github.com/opensearch-project/OpenSearch/issues/19515): Extending streaming aggregators to cardinality aggregator
 - [Issue #19518](https://github.com/opensearch-project/OpenSearch/issues/19518): Streaming aggregation with request cache and other fixes
-- [Apache Arrow Flight](https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/): Underlying transport technology
-
-## Change History
-
-- **v3.3.0** (2025-10): Added numeric terms aggregator, cardinality aggregator, query planning for flush mode, dynamic cluster setting, request cache handling
-- **v3.2.0** (2025-08): Initial implementation with stream transport framework and streaming terms aggregation with max sub-aggregation support

@@ -117,17 +117,19 @@ This is a backward-compatible change. Existing clients will continue to work, bu
 - The fix only affects the Multi-Search Template API response format
 - No changes to request format or query behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Multi-Search Template Documentation](https://docs.opensearch.org/2.18/api-reference/msearch-template/): Official API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16265](https://github.com/opensearch-project/OpenSearch/pull/16265) | Fix multi-search with template doesn't return status code |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #11133](https://github.com/opensearch-project/OpenSearch/issues/11133): Bug report - MultiSearchTemplateResponse does not return a status field
 - [Issue #708](https://github.com/opensearch-project/opensearch-java/issues/708): Related Java client issue
-- [Multi-Search Template Documentation](https://docs.opensearch.org/2.18/api-reference/msearch-template/): Official API documentation
 
 ## Related Feature Report
 

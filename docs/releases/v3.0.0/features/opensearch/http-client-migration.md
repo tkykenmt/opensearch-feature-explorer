@@ -81,17 +81,19 @@ ByteArrayEntity entity = new ByteArrayEntity(bytes, ContentType.APPLICATION_JSON
 - Third-party plugins using the REST client directly will need to update their dependencies
 - The migration is a breaking change and requires code modifications for custom client implementations
 
-## Related PRs
+## References
 
+### Documentation
+- [Java Client Documentation](https://docs.opensearch.org/3.0/clients/java/): Official Java client documentation with Apache HttpClient 5 examples
+- [Apache HttpClient 5.x Migration Guide](https://hc.apache.org/httpcomponents-client-5.1.x/migration-guide/index.html): Official Apache migration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4459](https://github.com/opensearch-project/OpenSearch/pull/4459) | Migrate client transports to Apache HttpClient / Core 5.x |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4256](https://github.com/opensearch-project/OpenSearch/issues/4256): Feature request for migration
-- [Java Client Documentation](https://docs.opensearch.org/3.0/clients/java/): Official Java client documentation with Apache HttpClient 5 examples
-- [Apache HttpClient 5.x Migration Guide](https://hc.apache.org/httpcomponents-client-5.1.x/migration-guide/index.html): Official Apache migration guide
 
 ## Related Feature Report
 

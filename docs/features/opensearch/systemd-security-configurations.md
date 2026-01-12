@@ -198,23 +198,27 @@ public void testRebootSysCall() throws IOException, InterruptedException {
 - Container deployments may need different security configurations
 - Not applicable to Windows or macOS deployments
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-04-09): Initial implementation with comprehensive systemd hardening
+
+## References
+
+### Documentation
+- [systemd.exec documentation](https://www.freedesktop.org/software/systemd/man/systemd.exec.html)
+- [seccomp documentation](https://man7.org/linux/man-pages/man2/seccomp.2.html)
+- [Linux Capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html)
+
+### Blog Posts
+- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17107](https://github.com/opensearch-project/security/pull/17107) | Add systemd configurations to strengthen OS core security |
 | v3.0.0 | [#17410](https://github.com/opensearch-project/OpenSearch/pull/17410) | Added integ tests for systemd configs |
 | v3.0.0 | [#17641](https://github.com/opensearch-project/OpenSearch/pull/17641) | Fix systemd integTest on deb regarding path ownership check |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17614](https://github.com/opensearch-project/OpenSearch/issues/17614): Bug fix for deb package ownership check
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): Original JSM replacement discussion
-- [Blog: Finding a replacement for JSM in OpenSearch 3.0](https://opensearch.org/blog/finding-a-replacement-for-jsm-in-opensearch-3-0/)
-- [systemd.exec documentation](https://www.freedesktop.org/software/systemd/man/systemd.exec.html)
-- [seccomp documentation](https://man7.org/linux/man-pages/man2/seccomp.2.html)
-- [Linux Capabilities](https://man7.org/linux/man-pages/man7/capabilities.7.html)
-
-## Change History
-
-- **v3.0.0** (2025-04-09): Initial implementation with comprehensive systemd hardening

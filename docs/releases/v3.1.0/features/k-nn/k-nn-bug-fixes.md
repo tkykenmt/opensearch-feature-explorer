@@ -112,8 +112,12 @@ With shard-level query execution, slice count wasn't honored for the core search
 - Mode and compression parameters cannot be used on indices created before v2.17.0
 - Nested efficient filters require specific query structure (filter inside knn, not double-nested)
 
-## Related PRs
+## References
 
+### Documentation
+- [k-NN Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/): k-NN API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2666](https://github.com/opensearch-project/k-NN/pull/2666) | Fix quantization cache scale and thread safety |
@@ -126,13 +130,11 @@ With shard-level query execution, slice count wasn't honored for the core search
 | [#2739](https://github.com/opensearch-project/k-NN/pull/2739) | Fix LuceneOnFaiss to use sliced IndexInput |
 | [#2641](https://github.com/opensearch-project/k-NN/pull/2641) | Fix nested vector query with efficient filter |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2665](https://github.com/opensearch-project/k-NN/issues/2665): Quantization cache limit bug
 - [Issue #2619](https://github.com/opensearch-project/k-NN/issues/2619): NativeMemoryCacheManager race condition
 - [Issue #2708](https://github.com/opensearch-project/k-NN/issues/2708): Faiss 16x on_disk vectors issue
 - [Issue #2511](https://github.com/opensearch-project/k-NN/issues/2511): Nested knn query with efficient filter bug
-- [k-NN Documentation](https://docs.opensearch.org/3.0/vector-search/api/knn/): k-NN API reference
 
 ## Related Feature Report
 

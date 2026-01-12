@@ -129,18 +129,20 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder()
 - **Single Instance**: Only one `_shard_doc` sort field is allowed per query.
 - **No Bucketed Sort**: Bucketed sort operations are not supported for `_shard_doc`.
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-30): Initial implementation - Added `_shard_doc` pseudo-field for deterministic tie-breaking with PIT pagination
+
+## References
+
+### Documentation
+- [Point in Time Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/point-in-time/): PIT usage guide
+- [Paginate Results](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/): Pagination methods comparison
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18924](https://github.com/opensearch-project/OpenSearch/pull/18924) | Initial implementation of _shard_doc sort |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17064](https://github.com/opensearch-project/OpenSearch/issues/17064): Original feature request
-- [Point in Time Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/point-in-time/): PIT usage guide
-- [Paginate Results](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/): Pagination methods comparison
-
-## Change History
-
-- **v3.3.0** (2025-09-30): Initial implementation - Added `_shard_doc` pseudo-field for deterministic tie-breaking with PIT pagination

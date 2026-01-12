@@ -129,18 +129,20 @@ plugins.security.ssl.aux.experimental-secure-transport-grpc.enabled_ciphers:
 - **JDK SSL provider**: Uses JDK SSL provider; OpenSSL provider is not supported
 - **No hot-reload for auxiliary transports**: Certificate hot-reload is supported but requires the same infrastructure as HTTP/Transport layers
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-01): Initial implementation - TLS support for auxiliary transports with per-transport configuration namespace
+
+## References
+
+### Documentation
+- [Documentation: Configuring TLS certificates](https://docs.opensearch.org/3.2/security/configuration/tls/): Official TLS configuration guide
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.2/api-reference/grpc-apis/index/): gRPC transport documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#5375](https://github.com/opensearch-project/security/pull/5375) | Add support for configuring auxiliary transports for SSL only |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17795](https://github.com/opensearch-project/OpenSearch/issues/17795): Feature request for separation of auxiliary transport SSL configurations
-- [Documentation: Configuring TLS certificates](https://docs.opensearch.org/3.2/security/configuration/tls/): Official TLS configuration guide
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.2/api-reference/grpc-apis/index/): gRPC transport documentation
-
-## Change History
-
-- **v3.2.0** (2025-08-01): Initial implementation - TLS support for auxiliary transports with per-transport configuration namespace

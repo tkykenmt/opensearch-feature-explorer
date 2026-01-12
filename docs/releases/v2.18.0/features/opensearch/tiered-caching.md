@@ -91,17 +91,21 @@ The segmented architecture addresses two key performance issues:
 - Minimum disk cache size is 10 MB
 - Still experimental - not recommended for production use
 
-## Related PRs
+## References
 
+### Documentation
+- [Tiered Cache Documentation](https://docs.opensearch.org/2.18/search-plugins/caching/tiered-cache/)
+
+### Blog Posts
+- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16047](https://github.com/opensearch-project/OpenSearch/pull/16047) | Segmented cache changes for tiered caching |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13989](https://github.com/opensearch-project/OpenSearch/issues/13989): Performance improvement for TieredCaching
-- [Tiered Cache Documentation](https://docs.opensearch.org/2.18/search-plugins/caching/tiered-cache/)
-- [Tiered Caching Blog](https://opensearch.org/blog/tiered-cache/)
 
 ## Related Feature Report
 

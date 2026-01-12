@@ -53,16 +53,18 @@ const onSaveSettings = (newSettings: DevToolsSettings) => {
 
 - The fix requires a valid `dataSourceId` to be present for autocomplete refresh to work
 
-## Related PRs
+## References
 
+### Documentation
+- [Dev Tools Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Running queries in the Dev Tools console
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10595](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10595) | Allow updating of console_polling through the UI |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #10544](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10544): Bug report - Cannot update console_polling value through UI
-- [Dev Tools Documentation](https://docs.opensearch.org/3.0/dashboards/dev-tools/run-queries/): Running queries in the Dev Tools console
 
 ## Related Feature Report
 

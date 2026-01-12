@@ -80,18 +80,20 @@ public Version getVersion() {
 
 - None specific to this release
 
-## Related PRs
+## References
 
+### Documentation
+- [Performance Analyzer Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/pa/index/): Official docs
+- [PR #609](https://github.com/opensearch-project/performance-analyzer/pull/609): Earlier attempt to fix PATransportChannel delegation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#845](https://github.com/opensearch-project/performance-analyzer/pull/845) | Use Subclass method for Version and Channel type which is understood by security plugin |
 | [#846](https://github.com/opensearch-project/performance-analyzer/pull/846) | Increment to 3.3.0.0 and update SHA files |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #606](https://github.com/opensearch-project/performance-analyzer/issues/606): Related issue for transport channel delegation
-- [PR #609](https://github.com/opensearch-project/performance-analyzer/pull/609): Earlier attempt to fix PATransportChannel delegation
-- [Performance Analyzer Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/pa/index/): Official docs
 
 ## Related Feature Report
 

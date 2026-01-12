@@ -142,21 +142,21 @@ if (assigned) {
 - **Implementation Required**: Users must implement queue backend and task workers for their use cases
 - **Multiple Writers**: Requires handling multiple writers for single shard's Remote Segments Store
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Initial implementation - Added offline-tasks library with core abstractions and interfaces
+
+## References
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#13574](https://github.com/opensearch-project/OpenSearch/pull/13574) | Adds offline-tasks library containing various interfaces for Offline Background Tasks |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13575](https://github.com/opensearch-project/OpenSearch/issues/13575): Add a new library containing required abstractions to run Offline Background Tasks
 - [Issue #13554](https://github.com/opensearch-project/OpenSearch/issues/13554): Design Proposal - Offline Background Tasks
 - [Issue #12361](https://github.com/opensearch-project/OpenSearch/issues/12361): RFC - Offline Background Tasks
 - [Issue #12725](https://github.com/opensearch-project/OpenSearch/issues/12725): META - Phase #1 Offline Background Tasks
 - [Issue #12727](https://github.com/opensearch-project/OpenSearch/issues/12727): Feature Request - Background Tasks
 - [Issue #12726](https://github.com/opensearch-project/OpenSearch/issues/12726): Feature Request - Separation of Merges
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Initial implementation - Added offline-tasks library with core abstractions and interfaces

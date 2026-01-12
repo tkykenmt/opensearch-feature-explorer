@@ -77,20 +77,22 @@ The system property was also renamed from `-Dsecurity` to `-Dsecurity.enabled` f
 
 These are internal build and compatibility fixes with no user-facing limitations.
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/): Job Scheduler official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#702](https://github.com/opensearch-project/job-scheduler/pull/702) | Enable custom start commands and options to resolve GHA issues |
 | [#730](https://github.com/opensearch-project/job-scheduler/pull/730) | Fix JS compile issues caused by OpenSearch JPMS Refactoring |
 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #698](https://github.com/opensearch-project/job-scheduler/issues/698): GitHub Action Deprecation: actions/upload-artifact@v3
 - [Issue #715](https://github.com/opensearch-project/job-scheduler/issues/715): [Release 3.0] Planned Breaking Changes for 3.0 in Plugin
 - [OpenSearch Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): JPMS Refactoring tracking issue
-- [Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/): Job Scheduler official docs
 
 ## Related Feature Report
 

@@ -172,18 +172,20 @@ GET my-knn-index/_search?explain=true
 - The explain operation is resource-intensive; use sparingly in production environments
 - Score calculation explanation is currently added only for ANN search
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Initial implementation - Added Explain API support for Exact/ANN/Radial/Disk based k-NN search on Faiss engine
+
+## References
+
+### Documentation
+- [k-NN query explain documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/k-nn/k-nn-explain/): Official documentation
+- [Explain API documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/explain/): General Explain API reference
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#2403](https://github.com/opensearch-project/k-NN/pull/2403) | Added Explain API support for Exact/ANN/Radial/Disk based KNN search on Faiss Engine |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #875](https://github.com/opensearch-project/k-NN/issues/875): Original feature request - Explain API not compatible with k-NN queries
-- [k-NN query explain documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/k-nn/k-nn-explain/): Official documentation
-- [Explain API documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/explain/): General Explain API reference
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Initial implementation - Added Explain API support for Exact/ANN/Radial/Disk based k-NN search on Faiss engine

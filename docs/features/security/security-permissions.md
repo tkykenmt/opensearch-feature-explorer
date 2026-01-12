@@ -135,20 +135,20 @@ forecast_read_access:
 - Cross-cluster forecasting requires `cluster_monitor` permission and proper cluster connectivity
 - Reserved roles cannot be modified through the API; changes require editing `roles.yml` directly
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2025-06): Added `forecast_read_access` and `forecast_full_access` roles with complete permissions for forecasting feature including `cluster_monitor` and `indices:admin/mappings/get`
+
+## References
+
+### Documentation
+- [OpenSearch Security Permissions Documentation](https://docs.opensearch.org/3.0/security/access-control/permissions/)
+- [Defining Users and Roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/)
+- [Security Dashboards Plugin PR #2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253): Frontend dropdown update
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#5386](https://github.com/opensearch-project/security/pull/5386) | Add forecast roles and permissions |
 | v3.1.0 | [#5405](https://github.com/opensearch-project/security/pull/5405) | Add missing cluster:monitor permission |
 | v3.1.0 | [#5412](https://github.com/opensearch-project/security/pull/5412) | Add missing mapping get permission |
-
-## References
-
-- [OpenSearch Security Permissions Documentation](https://docs.opensearch.org/3.0/security/access-control/permissions/)
-- [Defining Users and Roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/)
-- [Security Dashboards Plugin PR #2253](https://github.com/opensearch-project/security-dashboards-plugin/pull/2253): Frontend dropdown update
-
-## Change History
-
-- **v3.1.0** (2025-06): Added `forecast_read_access` and `forecast_full_access` roles with complete permissions for forecasting feature including `cluster_monitor` and `indices:admin/mappings/get`

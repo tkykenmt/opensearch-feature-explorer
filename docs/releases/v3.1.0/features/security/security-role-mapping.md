@@ -67,18 +67,18 @@ No migration required. This is a bug fix that restores expected behavior for plu
 - This fix specifically addresses the regression introduced by the immutable User object change in PR #5212
 - The underlying role mapping configuration and resolution logic remains unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [Defining users and roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/): Official documentation on role mapping
+- [PR #5369](https://github.com/opensearch-project/security/pull/5369): Main implementation
+- [PR #5212](https://github.com/opensearch-project/security/pull/5212): Related immutable user object change
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5369](https://github.com/opensearch-project/security/pull/5369) | Include mapped roles when setting userInfo in ThreadContext |
 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object (introduced the regression) |
-
-## References
-
-- [PR #5369](https://github.com/opensearch-project/security/pull/5369): Main implementation
-- [PR #5212](https://github.com/opensearch-project/security/pull/5212): Related immutable user object change
-- [Defining users and roles](https://docs.opensearch.org/3.0/security/access-control/users-roles/): Official documentation on role mapping
 
 ## Related Feature Report
 

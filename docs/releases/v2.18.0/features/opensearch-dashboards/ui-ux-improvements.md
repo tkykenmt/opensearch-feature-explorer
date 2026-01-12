@@ -55,16 +55,16 @@ The change maintains visual consistency across all theme versions (v7, vNext, v9
 - No visual changes are expected in most cases
 - Custom CSS targeting `.euiText` within page titles may need updates
 
-## Related PRs
+## References
 
+### Documentation
+- [EUI Title Component](https://oui.opensearch.org/1.6/#/display/title): OpenSearch UI title component documentation
+- [PR #8227](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8227): Main implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8227](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8227) | Change page title of application headers to h1 and xs |
-
-## References
-
-- [PR #8227](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8227): Main implementation
-- [EUI Title Component](https://oui.opensearch.org/1.6/#/display/title): OpenSearch UI title component documentation
 
 ## Related Feature Report
 

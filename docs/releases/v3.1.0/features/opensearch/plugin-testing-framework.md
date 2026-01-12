@@ -122,17 +122,19 @@ public class ClasspathPluginIT extends OpenSearchIntegTestCase {
 - Requires creating `META-INF/services` files for extension discovery via Java ServiceLoader
 - Only applicable to integration tests using `OpenSearchIntegTestCase` or `OpenSearchSingleNodeTestCase`
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Main implementation
+
+### Blog Posts
+- [OpenSearch Plugin Development](https://opensearch.org/blog/plugins-intro/): Introduction to OpenSearch plugins
+- [Backwards Compatibility Testing](https://opensearch.org/blog/bwc-testing-for-opensearch/): BWC testing framework for plugins
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Enable testing for ExtensiblePlugins using classpath plugins |
-
-## References
-
-- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Main implementation
-- [OpenSearch Plugin Development](https://opensearch.org/blog/plugins-intro/): Introduction to OpenSearch plugins
-- [Backwards Compatibility Testing](https://opensearch.org/blog/bwc-testing-for-opensearch/): BWC testing framework for plugins
 
 ## Related Feature Report
 

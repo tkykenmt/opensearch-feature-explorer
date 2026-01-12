@@ -79,15 +79,15 @@ If the scroll ID references a node no longer in the cluster, the response is now
 - This change only affects the error response when a scroll ID references a missing node
 - Other scroll-related errors may still return different HTTP status codes
 
-## Related PRs
+## References
 
+### Documentation
+- [Scroll API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/scroll/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19031](https://github.com/opensearch-project/OpenSearch/pull/19031) | IllegalArgumentException when scroll ID references a node not found in Cluster |
-
-## References
-
-- [Scroll API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/scroll/)
 
 ## Related Feature Report
 

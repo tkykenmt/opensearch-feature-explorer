@@ -85,8 +85,14 @@ These are internal dependency updates. No user-facing configuration changes are 
 - Some dependency updates may affect plugin compatibility if plugins directly depend on specific library versions
 - The Lucene upgrade requires index compatibility verification for custom analyzers
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache Lucene 9.12.0 Changes](https://lucene.apache.org/core/9_12_0/changes/Changes.html)
+- [Netty Releases](https://github.com/netty/netty/releases)
+- [gRPC Java Releases](https://github.com/grpc/grpc-java/releases)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Update Apache Lucene to 9.12.0 |
@@ -115,12 +121,6 @@ These are internal dependency updates. No user-facing configuration changes are 
 | [#16039](https://github.com/opensearch-project/OpenSearch/pull/16039) | Bump actions/github-script from 5 to 7 |
 | [#16310](https://github.com/opensearch-project/OpenSearch/pull/16310) | Bump lycheeverse/lychee-action from 1.10.0 to 2.0.2 |
 | [#16309](https://github.com/opensearch-project/OpenSearch/pull/16309) | Bump japicmp Gradle plugin from 0.4.3 to 0.4.4 |
-
-## References
-
-- [Apache Lucene 9.12.0 Changes](https://lucene.apache.org/core/9_12_0/changes/Changes.html)
-- [Netty Releases](https://github.com/netty/netty/releases)
-- [gRPC Java Releases](https://github.com/grpc/grpc-java/releases)
 
 ## Related Feature Report
 

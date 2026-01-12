@@ -118,16 +118,18 @@ No migration required. This is a bug fix that restores expected behavior for nes
 - This fix addresses the infinite loop issue but does not change the fundamental behavior of nested aggregations
 - Performance of deeply nested aggregations depends on the data structure and cardinality
 
-## Related PRs
+## References
 
+### Documentation
+- [Nested Aggregations Documentation](https://docs.opensearch.org/2.18/aggregations/bucket/nested/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15931](https://github.com/opensearch-project/OpenSearch/pull/15931) | Fix infinite loop in nested agg |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15914](https://github.com/opensearch-project/OpenSearch/issues/15914): Original bug report - Deep level aggregations query hang the request
-- [Nested Aggregations Documentation](https://docs.opensearch.org/2.18/aggregations/bucket/nested/): Official documentation
 
 ## Related Feature Report
 

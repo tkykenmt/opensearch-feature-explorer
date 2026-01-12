@@ -85,16 +85,16 @@ No configuration changes or API modifications are required.
 - This change only affects the Query Workbench plugin UI
 - The compressed components are part of the OpenSearch UI (OUI) library and require OUI 1.10.0 or later
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Workbench Documentation](https://docs.opensearch.org/2.17/dashboards/query-workbench/)
+- [OpenSearch Dashboards Design Guidelines](https://oui.opensearch.org/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#370](https://github.com/opensearch-project/dashboards-query-workbench/pull/370) | Use smaller and compressed variants of buttons and form components |
-
-## References
-
-- [Query Workbench Documentation](https://docs.opensearch.org/2.17/dashboards/query-workbench/)
-- [OpenSearch Dashboards Design Guidelines](https://oui.opensearch.org/)
 
 ## Related Feature Report
 

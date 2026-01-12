@@ -91,17 +91,19 @@ This is a transparent optimization with no API changes. Existing queries will au
 - If any field name contains a wildcard (`*`) or dot (`.`), the automaton-based approach is used for all fields
 - Documents with dotted field names in their keys still work correctly, but the optimization checks the prefix before the first dot
 
-## Related PRs
+## References
 
+### Documentation
+- [Source Field Documentation](https://docs.opensearch.org/3.0/field-types/metadata-fields/source/): Official documentation for `_source` field
+- [Retrieve Specific Fields](https://docs.opensearch.org/3.0/search-plugins/searching-data/retrieve-specific-fields/): Documentation on source filtering
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17160](https://github.com/opensearch-project/OpenSearch/pull/17160) | Add HashSet based filtering optimization to XContentMapValues |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17114](https://github.com/opensearch-project/OpenSearch/issues/17114): Original bug report - Fetching source uses automata even for simple matching
-- [Source Field Documentation](https://docs.opensearch.org/3.0/field-types/metadata-fields/source/): Official documentation for `_source` field
-- [Retrieve Specific Fields](https://docs.opensearch.org/3.0/search-plugins/searching-data/retrieve-specific-fields/): Documentation on source filtering
 
 ## Related Feature Report
 

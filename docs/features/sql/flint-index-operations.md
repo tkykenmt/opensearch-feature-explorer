@@ -130,20 +130,22 @@ VACUUM MATERIALIZED VIEW mys3.default.http_logs_metrics
 - Index state transitions must follow valid state machine paths
 - External scheduler mode requires additional configuration
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Delegated vacuum operation to Spark for checkpoint cleanup support
+- **v2.14.0**: Initial vacuum operation implementation in SQL plugin
+
+## References
+
+### Documentation
+- [Scheduled Query Acceleration](https://docs.opensearch.org/2.17/dashboards/management/scheduled-query-acceleration/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#2995](https://github.com/opensearch-project/sql/pull/2995) | Delegate vacuum operation to Spark |
 | v2.14.0 | [#2557](https://github.com/opensearch-project/sql/pull/2557) | Initial vacuum implementation in SQL plugin |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #580](https://github.com/opensearch-project/opensearch-spark/issues/580): VACUUM should delete checkpoint data
 - [Issue #104](https://github.com/opensearch-project/opensearch-spark/issues/104): Original VACUUM feature request
-- [Scheduled Query Acceleration](https://docs.opensearch.org/2.17/dashboards/management/scheduled-query-acceleration/): Official documentation
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Delegated vacuum operation to Spark for checkpoint cleanup support
-- **v2.14.0**: Initial vacuum operation implementation in SQL plugin

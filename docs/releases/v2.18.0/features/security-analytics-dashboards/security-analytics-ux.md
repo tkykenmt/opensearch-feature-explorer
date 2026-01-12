@@ -91,8 +91,13 @@ Added HOURS option for source refresh interval in threat intelligence configurat
 - The context-aware page title requires the new navigation group feature to be enabled
 - Some visual changes may appear different when `newHomePage` feature flag is disabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Analytics Documentation](https://docs.opensearch.org/2.18/security-analytics/): Official documentation
+- [OpenSearch-Dashboards PR #8332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8332): Related navigation changes in core Dashboards
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1169](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1169) | Update category to flatten menus in analytics(all) use case |
@@ -101,11 +106,6 @@ Added HOURS option for source refresh interval in threat intelligence configurat
 | [#1197](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1197) | Added HOURS option for source refresh interval |
 | [#2121](https://github.com/opensearch-project/security-dashboards-plugin/pull/2121) | Update category label for security plugin |
 | [#2130](https://github.com/opensearch-project/security-dashboards-plugin/pull/2130) | Fix button label |
-
-## References
-
-- [Security Analytics Documentation](https://docs.opensearch.org/2.18/security-analytics/): Official documentation
-- [OpenSearch-Dashboards PR #8332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8332): Related navigation changes in core Dashboards
 
 ## Related Feature Report
 

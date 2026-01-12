@@ -94,16 +94,18 @@ No migration required. This is a bug fix that improves error handling without ch
 - The `index.max_slices_per_scroll` setting is per-index; when reindexing from multiple source indexes, the smallest limit applies
 - The default limit of 1024 slices remains unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [Reindex API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/reindex/): Official reindex API documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18964](https://github.com/opensearch-project/OpenSearch/pull/18964) | Fix Using an excessively large reindex slice can lead to a JVM OutOfMemoryError on coordinator |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18963](https://github.com/opensearch-project/OpenSearch/issues/18963): Bug report - Using an excessively large reindex slice can lead to a JVM OutOfMemoryError on coordinator
-- [Reindex API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/reindex/): Official reindex API documentation
 
 ## Related Feature Report
 

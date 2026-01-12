@@ -146,20 +146,20 @@ GET my-knn-index/_search
 - Requires full-precision vectors to be stored alongside quantized vectors
 - Not beneficial for non-quantized indexes where scores are already fully precise
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.18.0 | [#2190](https://github.com/opensearch-project/k-NN/pull/2190) | JavaDoc cleanup for RescoreContext |
-| v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |
-
-## References
-
-- [Approximate k-NN Search Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/approximate-knn/)
-- [k-NN Vector Quantization](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/)
-- [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/)
-
 ## Change History
 
 - **v2.18.0** (2024-10-22): JavaDoc cleanup for RescoreContext class
 - **v2.17.0** (2024-09-17): Initial implementation of k-NN query rescore support for native engines
+
+## References
+
+### Documentation
+- [Approximate k-NN Search Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/approximate-knn/)
+- [k-NN Vector Quantization](https://docs.opensearch.org/2.17/search-plugins/knn/knn-vector-quantization/)
+- [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/)
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.18.0 | [#2190](https://github.com/opensearch-project/k-NN/pull/2190) | JavaDoc cleanup for RescoreContext |
+| v2.17.0 | [#1984](https://github.com/opensearch-project/k-NN/pull/1984) | k-NN query rescore support for native engines |

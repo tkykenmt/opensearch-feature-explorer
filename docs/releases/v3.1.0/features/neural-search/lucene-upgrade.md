@@ -70,17 +70,19 @@ This is an internal plugin update. No user action is required. The hybrid query 
 - This update only addresses Lucene API compatibility; no new features are added
 - The `hybridScores()` method was removed from `HybridQueryScorer` as part of the refactoring
 
-## Related PRs
+## References
 
+### Documentation
+- [Apache Lucene 10.2.1 Changes](https://lucene.apache.org/core/10_2_1/changes/Changes.html)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1336](https://github.com/opensearch-project/neural-search/pull/1336) | Update Lucene dependencies |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1334](https://github.com/opensearch-project/neural-search/issues/1334): Cannot gradle run the neural search repo
 - [Issue #1338](https://github.com/opensearch-project/neural-search/issues/1338): Integration test failures
-- [Apache Lucene 10.2.1 Changes](https://lucene.apache.org/core/10_2_1/changes/Changes.html)
 
 ## Related Feature Report
 

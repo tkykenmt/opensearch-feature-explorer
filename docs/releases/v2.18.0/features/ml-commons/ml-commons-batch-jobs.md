@@ -155,21 +155,21 @@ POST /_plugins/_ml/_batch_ingestion
 - Connector credential feature requires the connector to have PREDICT action configured
 - Default action generation only supports SageMaker, OpenAI, Bedrock, and Cohere remote servers
 
-## Related PRs
+## References
 
+### Documentation
+- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
+- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/async-batch-ingest/): API reference
+- [Batch Predict API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/model-apis/batch-predict/): Batch prediction API
+- [ML Commons Cluster Settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Configuration settings
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3080](https://github.com/opensearch-project/ml-commons/pull/3080) | Enhance batch job task management by adding default action types |
 | [#2989](https://github.com/opensearch-project/ml-commons/pull/2989) | Use connector credential in offline batch ingestion |
 | [#3098](https://github.com/opensearch-project/ml-commons/pull/3098) | Change to model group access for batch job task APIs |
 | [#3116](https://github.com/opensearch-project/ml-commons/pull/3116) | Add rate limiting for offline batch jobs, set default bulk size to 500 |
-
-## References
-
-- [Asynchronous Batch Ingestion Documentation](https://docs.opensearch.org/2.18/ml-commons-plugin/remote-models/async-batch-ingestion/): Official documentation
-- [Asynchronous Batch Ingestion API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/async-batch-ingest/): API reference
-- [Batch Predict API](https://docs.opensearch.org/2.18/ml-commons-plugin/api/model-apis/batch-predict/): Batch prediction API
-- [ML Commons Cluster Settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Configuration settings
 
 ## Related Feature Report
 

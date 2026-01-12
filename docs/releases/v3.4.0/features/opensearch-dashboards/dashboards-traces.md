@@ -98,19 +98,19 @@ No migration required. Changes are backward compatible.
 - Span status filter state is stored in session storage and resets on browser close
 - Root span detection falls back to earliest span if no span without parent is found
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
+- [OpenTelemetry Trace Specification](https://opentelemetry.io/docs/concepts/signals/traces/): OTEL trace concepts
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10745](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10745) | Add span status filters to trace details. Combine bug fixes. |
 | [#10630](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10630) | Fix trace details page header to always show root span |
 | [#10651](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10651) | Traces code block scrollbar to scroll on edge |
 | [#10698](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10698) | Remove service.name column from traces table |
-
-## References
-
-- [Trace Analytics Documentation](https://docs.opensearch.org/3.0/observing-your-data/trace/ta-dashboards/): Official trace analytics guide
-- [OpenTelemetry Trace Specification](https://opentelemetry.io/docs/concepts/signals/traces/): OTEL trace concepts
 
 ## Related Feature Report
 

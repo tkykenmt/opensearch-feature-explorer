@@ -89,18 +89,20 @@ No migration required. These are bug fixes that improve existing functionality w
 - The aggregation-based findings count still has a practical limit based on the terms aggregation bucket size, but this is configurable and much higher than the previous 10,000 limit
 - Multi-indicator type monitors require proper field mappings for each indicator type in the monitored indices
 
-## Related PRs
+## References
 
+### Documentation
+- [Threat Intelligence Documentation](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1335](https://github.com/opensearch-project/security-analytics/pull/1335) | Add null check while adding fetched IOCs into per-indicator-type map |
 | [#1373](https://github.com/opensearch-project/security-analytics/pull/1373) | Fixed ListIOCs number of findings cap |
 | [#1392](https://github.com/opensearch-project/security-analytics/pull/1392) | Add exists check for IOCs index |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1191](https://github.com/opensearch-project/security-analytics/issues/1191): ListIOCsAPI total hits and findings count per IOC are incorrect
-- [Threat Intelligence Documentation](https://docs.opensearch.org/2.18/security-analytics/threat-intelligence/index/): Official documentation
 
 ## Related Feature Report
 

@@ -128,17 +128,19 @@ Response includes the new `status_counter` section showing cumulative counts sin
 - Tracking occurs at the coordinator node level, not at the shard level
 - The PR was closed without being merged as of the investigation date
 
-## Related PRs
+## References
 
+### Documentation
+- [Node Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18601](https://github.com/opensearch-project/OpenSearch/pull/18601) | Add search API tracker |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18377](https://github.com/opensearch-project/OpenSearch/issues/18377): Feature request for tracking non-successful Search API calls
 - [Issue #18438](https://github.com/opensearch-project/OpenSearch/issues/18438): Bug report requesting DocStatusStats refactoring
-- [Node Stats API Documentation](https://docs.opensearch.org/3.0/api-reference/nodes-apis/nodes-stats/): Official documentation
 
 ## Related Feature Report
 

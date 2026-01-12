@@ -100,17 +100,19 @@ PUT _plugins/_ism/policies/log_lifecycle
 - Exclusion patterns only apply to ISM template matching, not to manual policy attachment
 - At least one inclusion pattern is required; all-exclusion patterns are rejected
 
-## Related PRs
+## References
 
+### Documentation
+- [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
+- [ISM API Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1509](https://github.com/opensearch-project/index-management/pull/1509) | Supporting Exclusion pattern in index pattern in ISM |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #375](https://github.com/opensearch-project/index-management/issues/375): Original feature request
-- [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
-- [ISM API Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/api/)
 
 ## Related Feature Report
 

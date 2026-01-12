@@ -133,8 +133,14 @@ opensearchDashboards.dashboardAdmin.users: ["admin"]
 - Global search bar does not yet support searching saved objects
 - Collaborator types must be registered during plugin setup phase
 
-## Related PRs
+## References
 
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): Official v2.18 workspace documentation
+- [Workspace ACLs](https://docs.opensearch.org/2.18/dashboards/workspace/workspace-acl/): Access control documentation
+- [Workspaces APIs](https://docs.opensearch.org/2.18/dashboards/workspace/apis/): API reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8500](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8500) | Workspace-level UI settings and hide non-global settings |
@@ -151,12 +157,6 @@ opensearchDashboards.dashboardAdmin.users: ["admin"]
 | [#8620](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8620) | Add data-connection type support for association modal |
 | [#8641](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8641) | Response forbidden error for non-permitted workspaces |
 | [#8607](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8607) | Limit workspace colors |
-
-## References
-
-- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): Official v2.18 workspace documentation
-- [Workspace ACLs](https://docs.opensearch.org/2.18/dashboards/workspace/workspace-acl/): Access control documentation
-- [Workspaces APIs](https://docs.opensearch.org/2.18/dashboards/workspace/apis/): API reference
 
 ## Related Feature Report
 

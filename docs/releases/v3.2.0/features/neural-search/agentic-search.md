@@ -115,17 +115,21 @@ This is a new experimental feature. To adopt:
 - **Requires ML agent setup**: An ML agent must be configured with appropriate tools before use
 - **Single query type**: The processor only handles `AgenticSearchQueryBuilder` queries
 
-## Related PRs
+## References
 
+### Documentation
+- [Agentic AI Documentation](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/index/): Agent tutorials
+
+### Blog Posts
+- [Blog: Introducing agentic search in OpenSearch](https://opensearch.org/blog/introducing-agentic-search-in-opensearch-transforming-data-interaction-through-natural-language/): Official announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1484](https://github.com/opensearch-project/neural-search/pull/1484) | [Experimental] Adds agentic search query clause and agentic query translator search request processor |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1479](https://github.com/opensearch-project/neural-search/issues/1479): RFC - Design for Agentic Search
-- [Blog: Introducing agentic search in OpenSearch](https://opensearch.org/blog/introducing-agentic-search-in-opensearch-transforming-data-interaction-through-natural-language/): Official announcement
-- [Agentic AI Documentation](https://docs.opensearch.org/3.0/tutorials/gen-ai/agents/index/): Agent tutorials
 
 ## Related Feature Report
 

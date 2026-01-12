@@ -200,8 +200,20 @@ When MDS is enabled, integration instances include a `references` field:
 - Integration assets cannot be automatically migrated between data sources
 - Some visualization types may not fully support MDS
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Bug fixes for MDS including plugin de-registration improvements, error code handling, remote cluster call fixes, and MDS label handling
+- **v2.17.0** (2024-09-17): Initial MDS support for Getting Started, Integrations, and plugin deregistration
+
+## References
+
+### Documentation
+- [Multiple Data Sources Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Official configuration guide
+
+### Blog Posts
+- [Multiple Data Sources Blog](https://opensearch.org/blog/multiple-data-source/): Feature announcement and overview
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#2213](https://github.com/opensearch-project/dashboards-observability/pull/2213) | Fix missing else condition for MDS remote cluster calls |
@@ -212,13 +224,5 @@ When MDS is enabled, integration instances include a `references` field:
 | v2.17.0 | [#2097](https://github.com/opensearch-project/dashboards-observability/pull/2097) | Deregister plugins in MDS mode |
 | v2.17.0 | [#2140](https://github.com/opensearch-project/dashboards-observability/pull/2140) | Support for absent local cluster |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1440](https://github.com/opensearch-project/dashboards-observability/issues/1440): Original feature request
-- [Multiple Data Sources Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Official configuration guide
-- [Multiple Data Sources Blog](https://opensearch.org/blog/multiple-data-source/): Feature announcement and overview
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Bug fixes for MDS including plugin de-registration improvements, error code handling, remote cluster call fixes, and MDS label handling
-- **v2.17.0** (2024-09-17): Initial MDS support for Getting Started, Integrations, and plugin deregistration

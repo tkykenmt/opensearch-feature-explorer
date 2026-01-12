@@ -76,16 +76,18 @@ No migration required. This is a transparent bugfix that improves notification a
 - The underlying race condition still exists; only the notification behavior is changed
 - A future enhancement (noted in TODO) could extract seqNo from the exception and retry the metadata update
 
-## Related PRs
+## References
 
+### Documentation
+- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1413](https://github.com/opensearch-project/index-management/pull/1413) | Removed unnecessary user notifications for version conflict exception |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1371](https://github.com/opensearch-project/index-management/issues/1371): Eliminate False Positive Notifications in Manual Snapshot Policy
-- [Snapshot Management Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/snapshots/snapshot-management/)
 
 ## Related Feature Report
 

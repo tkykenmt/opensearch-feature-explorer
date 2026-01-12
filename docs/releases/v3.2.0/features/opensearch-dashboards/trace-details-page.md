@@ -133,17 +133,21 @@ To enable the Trace Details page:
 - React Flow library is experimental in OpenSearch Dashboards core
 - Gantt chart has maximum height of 600px
 
-## Related PRs
+## References
 
+### Documentation
+- [React Flow Documentation](https://reactflow.dev/): Interactive node-based visualization library
+
+### Blog Posts
+- [OpenSearch 3.3 Blog](https://opensearch.org/blog/explore-opensearch-3-3/): Feature announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10253](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10253) | Trace Details page implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9898](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9898): RFC for React Flow library introduction
-- [React Flow Documentation](https://reactflow.dev/): Interactive node-based visualization library
-- [OpenSearch 3.3 Blog](https://opensearch.org/blog/explore-opensearch-3-3/): Feature announcement
 
 ## Related Feature Report
 

@@ -62,8 +62,9 @@ No migration steps required. These are bug fixes that improve existing functiona
 
 - The `observability:defaultDashboard` setting can now only be updated by workspace owners or OSD admins when workspaces are enabled
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2146](https://github.com/opensearch-project/dashboards-observability/pull/2146) | Fix getting started cards re-direction to integrations |
@@ -79,8 +80,7 @@ No migration steps required. These are bug fixes that improve existing functiona
 | [#2223](https://github.com/opensearch-project/dashboards-observability/pull/2223) | Fix non-workspace admin update observability:defaultDashboard |
 | [#2225](https://github.com/opensearch-project/dashboards-observability/pull/2225) | Fixes span to logs redirection, updates MDS label when undefined |
 
-## References
-
+### Issues (Design / RFC)
 - [opensearch-catalog#195](https://github.com/opensearch-project/opensearch-catalog/issues/195): VPC integration MV creation issue
 
 ## Related Feature Report

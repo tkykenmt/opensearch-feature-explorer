@@ -121,18 +121,20 @@ PUT _ingest/pipeline/multi_ip
 - Grok patterns are evaluated sequentially; only the first matching pattern is used
 - No built-in protection against catastrophic backtracking in regex patterns
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2025-09-12): Added `capture_all_matches` option to capture multiple values for repeated field names into an array
+
+## References
+
+### Documentation
+- [Grok Processor Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/grok/): Official documentation
+- [Oniguruma Regex Library](https://github.com/kkos/oniguruma): Underlying regex engine
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18799](https://github.com/opensearch-project/OpenSearch/pull/18799) | Added `capture_all_matches` option for multi-value capture |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18790](https://github.com/opensearch-project/OpenSearch/issues/18790): Feature request for multi-value capture
-- [Grok Processor Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/grok/): Official documentation
-- [Oniguruma Regex Library](https://github.com/kkos/oniguruma): Underlying regex engine
-
-## Change History
-
-- **v3.3.0** (2025-09-12): Added `capture_all_matches` option to capture multiple values for repeated field names into an array

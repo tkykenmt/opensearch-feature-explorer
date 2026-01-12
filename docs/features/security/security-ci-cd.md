@@ -76,19 +76,6 @@ The Dependabot workflow automates three tasks:
 #### Adding a Changelog Entry
 
 ```markdown
-## [Unreleased 3.x]
-### Added
-- New feature description ([#1234](https://github.com/opensearch-project/security/pull/1234))
-
-### Changed
-- Change description ([#1234](https://github.com/opensearch-project/security/pull/1234))
-
-### Dependencies
-- Bump `library_name` from X.Y.Z to A.B.C ([#1234](https://github.com/opensearch-project/security/pull/1234))
-
-### Fixed
-- Bug fix description ([#1234](https://github.com/opensearch-project/security/pull/1234))
-```
 
 ## Limitations
 
@@ -96,20 +83,22 @@ The Dependabot workflow automates three tasks:
 - Dependabot workflow requires GitHub App credentials configured as repository secrets
 - Dependabot changelog helper targets a specific version section ("Unreleased 3.x")
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.1.0 | [#5318](https://github.com/opensearch-project/security/pull/5318) | Add workflow for changelog verification |
+- **v3.1.0** (2025-05-12): Initial implementation with changelog verifier and Dependabot PR workflows
 
 ## References
 
-- [Issue #5095](https://github.com/opensearch-project/security/issues/5095): Original feature request
+### Documentation
 - [Keep a Changelog](https://keepachangelog.com/en/1.0.0/): Changelog format specification
 - [changelog-enforcer](https://github.com/dangoslen/changelog-enforcer): GitHub Action for enforcing changelog updates
 - [dependabot-changelog-helper](https://github.com/dangoslen/dependabot-changelog-helper): GitHub Action for Dependabot changelog automation
 - [Geospatial PR #238](https://github.com/opensearch-project/geospatial/pull/238): Reference implementation in another OpenSearch repository
 
-## Change History
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.1.0 | [#5318](https://github.com/opensearch-project/security/pull/5318) | Add workflow for changelog verification |
 
-- **v3.1.0** (2025-05-12): Initial implementation with changelog verifier and Dependabot PR workflows
+### Issues (Design / RFC)
+- [Issue #5095](https://github.com/opensearch-project/security/issues/5095): Original feature request

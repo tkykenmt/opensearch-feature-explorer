@@ -121,8 +121,13 @@ PUT /my-index
 - All-active mode requires document replication type (not segment replication)
 - Recovery logic does not yet consider `batchStartPointer` for optimized recovery
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
+- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19316](https://github.com/opensearch-project/OpenSearch/pull/19316) | Support all-active mode in pull-based ingestion |
@@ -131,13 +136,10 @@ PUT /my-index
 | [#19212](https://github.com/opensearch-project/OpenSearch/pull/19212) | Fix ingestion pause state initialization on replica promotion |
 | [#19380](https://github.com/opensearch-project/OpenSearch/pull/19380) | Fix flaky test IngestFromKinesisIT.testAllActiveIngestion |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19287](https://github.com/opensearch-project/OpenSearch/issues/19287): Feature request for all-active mode
 - [Issue #19286](https://github.com/opensearch-project/OpenSearch/issues/19286): Bug report for XContent serialization
 - [Issue #17077](https://github.com/opensearch-project/OpenSearch/issues/17077): Metrics for pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion/): Pull-based ingestion
-- [Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/pull-based-ingestion-management/): Pull-based ingestion management
 
 ## Related Feature Report
 

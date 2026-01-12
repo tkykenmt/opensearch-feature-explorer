@@ -117,19 +117,21 @@ PUT /my-fp16-index
 - Windows is not supported for SIMD optimization
 - The V1 implementation uses Faiss's built-in SIMD; bulk SIMD optimization (V2) is planned for future releases
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Faiss 16-bit scalar quantization](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/faiss-16-bit-quantization/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2922](https://github.com/opensearch-project/k-NN/pull/2922) | Native scoring for FP16 V1 implementation |
 | [#2948](https://github.com/opensearch-project/k-NN/pull/2948) | Removed VectorSearchHolders map from NativeEngines990KnnVectorsReader |
 | [#2968](https://github.com/opensearch-project/k-NN/pull/2968) | Refactor to not use parallel for MMR rerank |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2938](https://github.com/opensearch-project/k-NN/issues/2938): Unnecessary heap usage in NativeEngines990KnnVectorsReader
 - [RFC Issue #2875](https://github.com/opensearch-project/k-NN/issues/2875): Use SIMD for FP16 in LuceneOnFaiss
-- [Documentation: Faiss 16-bit scalar quantization](https://docs.opensearch.org/3.0/vector-search/optimizing-storage/faiss-16-bit-quantization/)
 
 ## Related Feature Report
 

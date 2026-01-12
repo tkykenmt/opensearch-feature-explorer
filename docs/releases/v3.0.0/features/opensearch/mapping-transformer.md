@@ -155,14 +155,14 @@ The `MappingTransformerRegistry` includes built-in error handling:
 - Transformers modify mappings in place; there's no rollback mechanism if a later transformer fails
 - No ordering guarantee between transformers from different plugins
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17635](https://github.com/opensearch-project/OpenSearch/pull/17635) | Introduce mapping transformer to allow transform mappings during index create/update or index template create/update |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17500](https://github.com/opensearch-project/OpenSearch/issues/17500): RFC - Introduce Mapping Transformer
 - [Issue #803](https://github.com/opensearch-project/neural-search/issues/803): Proposal to support semantic field in neural search
 - [Issue #1211](https://github.com/opensearch-project/neural-search/issues/1211): HLD of the semantic field

@@ -187,8 +187,18 @@ source=logs | stats c() as total
 - All timestamps in `strftime` are interpreted as UTC timezone
 - Search command is designed exclusively for full-text search; use `where` command for additional filtering
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Search command revamp with full-text search, time modifiers, strftime function, JOIN enhancements, max/min eval functions, count() shortcut, ISO8601 support
+
+## References
+
+### Documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
+- [SQL and PPL API](https://docs.opensearch.org/3.0/search-plugins/sql/sql-ppl-api/)
+- [Lucene Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#4378](https://github.com/opensearch-project/sql/pull/4378) | Change default search sort tiebreaker to `_shard_doc` for PIT search |
@@ -206,16 +216,8 @@ source=logs | stats c() as total
 | v3.3.0 | [#4106](https://github.com/opensearch-project/sql/pull/4106) | strftime function implementation |
 | v3.3.0 | [#3803](https://github.com/opensearch-project/sql/pull/3803) | Support join field list and join options |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4135](https://github.com/opensearch-project/sql/issues/4135): Time modifiers feature request
 - [Issue #4007](https://github.com/opensearch-project/sql/issues/4007): Search command revamp request
 - [Issue #3775](https://github.com/opensearch-project/sql/issues/3775): Join field list and options request
 - [Issue #4341](https://github.com/opensearch-project/sql/issues/4341): max/min eval functions request
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
-- [SQL and PPL API](https://docs.opensearch.org/3.0/search-plugins/sql/sql-ppl-api/)
-- [Lucene Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
-
-## Change History
-
-- **v3.3.0**: Search command revamp with full-text search, time modifiers, strftime function, JOIN enhancements, max/min eval functions, count() shortcut, ISO8601 support

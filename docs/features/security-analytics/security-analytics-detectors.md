@@ -157,20 +157,20 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 - Threat intelligence feeds only work with standard log types
 - At least one detection rule (custom or pre-packaged) is required
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#1226](https://github.com/opensearch-project/security-analytics/pull/1226) | Added triggers in getDetectors API response |
-| v2.17.0 | [#1212](https://github.com/opensearch-project/security-analytics/pull/1212) | Secure rest tests for threat intel monitor APIs |
+- **v2.17.0** (2024-09-17): Added triggers field to Get Detectors API response; Added secure REST tests for threat intel monitor APIs
 
 ## References
 
+### Documentation
 - [Detector APIs Documentation](https://docs.opensearch.org/latest/security-analytics/api-tools/detector-api/)
 - [Creating Detectors](https://docs.opensearch.org/latest/security-analytics/sec-analytics-config/detectors-config/)
 - [About Security Analytics](https://docs.opensearch.org/latest/security-analytics/)
 - [Working with Detectors](https://docs.opensearch.org/latest/security-analytics/usage/detectors/)
 
-## Change History
-
-- **v2.17.0** (2024-09-17): Added triggers field to Get Detectors API response; Added secure REST tests for threat intel monitor APIs
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#1226](https://github.com/opensearch-project/security-analytics/pull/1226) | Added triggers in getDetectors API response |
+| v2.17.0 | [#1212](https://github.com/opensearch-project/security-analytics/pull/1212) | Secure rest tests for threat intel monitor APIs |

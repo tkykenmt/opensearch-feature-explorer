@@ -157,16 +157,18 @@ The improvement comes from:
 - Only one `QueryCollectorContextSpec` can be active per search request (first matching factory wins)
 - Factories are evaluated in registration order
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #18007](https://github.com/opensearch-project/OpenSearch/pull/18007): POC for moving Hybrid Search to OpenSearch core (benchmarking reference)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18637](https://github.com/opensearch-project/OpenSearch/pull/18637) | Add functionality for plugins to inject QueryCollectorContext during QueryPhase |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18278](https://github.com/opensearch-project/OpenSearch/issues/18278): Feature request for enabling collector context injection from plugins
-- [PR #18007](https://github.com/opensearch-project/OpenSearch/pull/18007): POC for moving Hybrid Search to OpenSearch core (benchmarking reference)
 
 ## Related Feature Report
 

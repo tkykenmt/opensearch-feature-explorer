@@ -230,8 +230,32 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 - Custom result indices must be managed separately for deletion
 - Cross-cluster detection requires proper cluster connectivity
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-02-18): **Enhancements** - Conditional resource sharing with automatic fallback to legacy access control when model-group is excluded from protected resources, new `AnomalyDetectionClient` methods (`validateAnomalyDetector()`, `suggestAnomalyDetector()`) for cross-plugin integration, new `auto_create` field for programmatic detector creation, `anomaly_read_access` role now includes suggest API permission
+- **v3.4.0** (2026-02-18): **Bugfixes** - Fixed forecast results index creation on 3-AZ domains by using `auto_expand_replicas: "0-2"` instead of fixed replica count, improved missing feature data detection to honor detector frequency (prevents false warnings when frequency differs from detection interval), suppressed spurious error toasts when data sources are unavailable in multi-data-source environments
+- **v3.3.0** (2026-01-14): **Frequency scheduling and Suggest API** - Added `frequency` parameter for flexible detection intervals separate from data aggregation, new Suggest API (`/_plugins/_anomaly_detection/detectors/_suggest`) for automated configuration recommendations, Dashboards UI enhancements with Suggest Parameters button and Operation Settings panel reorganization, bug fixes for STOPPED state race condition, flaky integration tests, and protected resource types compatibility
+- **v3.3.0** (2026-01-14): **Resource authorization integration** - Search handler updated to consume `PluginClient` for DLS-style filtering of protected resources, enabling fine-grained resource sharing with the Security plugin's new access control framework
+- **v3.2.0** (2025-08-05): **Long interval support** (>1 hour detection intervals for daily/weekly monitoring), **centralized resource access control** integration with security plugin auto-evaluation, concurrency bug fixes for HCAD multi-node clusters, forecasting interval calculation fixes, Dashboards UI improvements, build infrastructure updates (Gradle 8.14, Nebula 12.2.1)
+- **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
+- **v2.18.0** (2024-11-05): Added suppression rule validation in AnomalyDetector constructor for immediate feedback on configuration errors, fixed default rules bug when empty ruleset provided, upgraded RCF to v4.2.0, Dashboards bugfixes for custom result index rendering, historical analysis route path, custom result index field reset, and preview support for suppression rules and imputation options
+- **v2.17.0** (2024-09-17): Fixed inference logic with new `lastSeenExecutionEndTime` tracking, standardized config index mapping (`defaultFill` → `default_fill`), improved null checks for imputation options, bugfixes for real-time/historical task flag management, null aggregation handling, Dashboards data source integration
+- **v2.x**: High-cardinality detection, historical analysis, custom result indices
+
+## References
+
+### Documentation
+- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
+- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
+- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
+- [GitHub Repository](https://github.com/opensearch-project/anomaly-detection): Source code
+
+### Blog Posts
+- [Real-time Anomaly Detection Blog](https://opensearch.org/blog/real-time-anomaly-detection-in-open-distro-for-elasticsearch/): Introduction to anomaly detection
+- [One Million Entities Blog](https://opensearch.org/blog/one-million-enitities-in-one-minute/): High-cardinality performance improvements
+- [Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Resource sharing access control model
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#1569](https://github.com/opensearch-project/anomaly-detection/pull/1569) | Conditional resource sharing - auto-switch to legacy access control |
@@ -275,26 +299,3 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 | v2.17.0 | [#1292](https://github.com/opensearch-project/anomaly-detection/pull/1292) | Correct handling of null max aggregation values |
 | v2.17.0 | [#828](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/828) | Fix dataSourceId not showing in URL |
 | v2.17.0 | [#837](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/837) | Remove dataSourceFilter that breaks DataSourceView |
-
-## References
-
-- [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
-- [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
-- [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
-- [GitHub Repository](https://github.com/opensearch-project/anomaly-detection): Source code
-- [Real-time Anomaly Detection Blog](https://opensearch.org/blog/real-time-anomaly-detection-in-open-distro-for-elasticsearch/): Introduction to anomaly detection
-- [One Million Entities Blog](https://opensearch.org/blog/one-million-enitities-in-one-minute/): High-cardinality performance improvements
-
-- [Introducing Resource Sharing](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Resource sharing access control model
-
-## Change History
-
-- **v3.4.0** (2026-02-18): **Enhancements** - Conditional resource sharing with automatic fallback to legacy access control when model-group is excluded from protected resources, new `AnomalyDetectionClient` methods (`validateAnomalyDetector()`, `suggestAnomalyDetector()`) for cross-plugin integration, new `auto_create` field for programmatic detector creation, `anomaly_read_access` role now includes suggest API permission
-- **v3.4.0** (2026-02-18): **Bugfixes** - Fixed forecast results index creation on 3-AZ domains by using `auto_expand_replicas: "0-2"` instead of fixed replica count, improved missing feature data detection to honor detector frequency (prevents false warnings when frequency differs from detection interval), suppressed spurious error toasts when data sources are unavailable in multi-data-source environments
-- **v3.3.0** (2026-01-14): **Frequency scheduling and Suggest API** - Added `frequency` parameter for flexible detection intervals separate from data aggregation, new Suggest API (`/_plugins/_anomaly_detection/detectors/_suggest`) for automated configuration recommendations, Dashboards UI enhancements with Suggest Parameters button and Operation Settings panel reorganization, bug fixes for STOPPED state race condition, flaky integration tests, and protected resource types compatibility
-- **v3.3.0** (2026-01-14): **Resource authorization integration** - Search handler updated to consume `PluginClient` for DLS-style filtering of protected resources, enabling fine-grained resource sharing with the Security plugin's new access control framework
-- **v3.2.0** (2025-08-05): **Long interval support** (>1 hour detection intervals for daily/weekly monitoring), **centralized resource access control** integration with security plugin auto-evaluation, concurrency bug fixes for HCAD multi-node clusters, forecasting interval calculation fixes, Dashboards UI improvements, build infrastructure updates (Gradle 8.14, Nebula 12.2.1)
-- **v3.0.0** (2025-05-06): AWS SAM template for WAF logs, cross-cluster improvements, OpenSearch 3.0.0 compatibility updates, Java Agent migration
-- **v2.18.0** (2024-11-05): Added suppression rule validation in AnomalyDetector constructor for immediate feedback on configuration errors, fixed default rules bug when empty ruleset provided, upgraded RCF to v4.2.0, Dashboards bugfixes for custom result index rendering, historical analysis route path, custom result index field reset, and preview support for suppression rules and imputation options
-- **v2.17.0** (2024-09-17): Fixed inference logic with new `lastSeenExecutionEndTime` tracking, standardized config index mapping (`defaultFill` → `default_fill`), improved null checks for imputation options, bugfixes for real-time/historical task flag management, null aggregation handling, Dashboards data source integration
-- **v2.x**: High-cardinality detection, historical analysis, custom result indices

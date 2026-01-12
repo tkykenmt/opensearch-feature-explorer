@@ -69,17 +69,19 @@ Users who previously worked around this issue by manually overriding the dimensi
 - This fix only affects the `semantic_search_with_local_model` workflow template
 - Existing workflows created with the incorrect dimension will need to be recreated
 
-## Related PRs
+## References
 
+### Documentation
+- [Hugging Face Model](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2): Model documentation confirming 384-dimensional output
+- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/): Official documentation for workflow templates
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1270](https://github.com/opensearch-project/flow-framework/pull/1270) | Fix incorrect field map output dimensions in default values |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1254](https://github.com/opensearch-project/flow-framework/issues/1254): Bug report for incorrect output dimensions
-- [Hugging Face Model](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2): Model documentation confirming 384-dimensional output
-- [Workflow Templates Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-templates/): Official documentation for workflow templates
 
 ## Related Feature Report
 

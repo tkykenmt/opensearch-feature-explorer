@@ -136,20 +136,20 @@ getContentManagement().registerContentProvider({
 - URL data source ID handling requires multi-data source to be enabled
 - Fit and finish changes may affect custom CSS overrides
 
-## Related PRs
+## References
 
+### Documentation
+- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/): Overview documentation
+- [Setting up Security Analytics](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/index/): Configuration guide
+- [Index Aliases](https://opensearch.org/docs/latest/im-plugin/index-alias): Alias documentation referenced in help text
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1100](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1100) | Update data source selection label and help text |
 | [#1124](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1124) | Add threat alerts card for Analytics (All) workspace |
 | [#1125](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1125) | Update URL with data source ID; redirect on reload |
 | [#1147](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1147) | Fit and Finishes Changes for Security Analytics |
-
-## References
-
-- [About Security Analytics](https://docs.opensearch.org/2.17/security-analytics/): Overview documentation
-- [Setting up Security Analytics](https://docs.opensearch.org/2.17/security-analytics/sec-analytics-config/index/): Configuration guide
-- [Index Aliases](https://opensearch.org/docs/latest/im-plugin/index-alias): Alias documentation referenced in help text
 
 ## Related Feature Report
 

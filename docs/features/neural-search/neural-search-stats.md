@@ -207,8 +207,16 @@ GET /_plugins/_neural/stats?include_individual_nodes=false
 - All statistics reset when collection is disabled or node restarts
 - Metadata fields (`trailing_interval_value`, `minutes_since_last_event`) only available when `include_metadata=true`
 
-## Related PRs
+## Change History
 
+- **v3.1.0** (2026-01-10): Comprehensive stats coverage for all Neural Search components including text chunking, text embedding, hybrid query, normalization processors, semantic highlighting, and API parameter enhancements
+
+## References
+
+### Documentation
+- [Neural Search Stats API Documentation](https://docs.opensearch.org/3.0/vector-search/api/neural/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.1.0 | [#1308](https://github.com/opensearch-project/neural-search/pull/1308) | Add stats for text chunking processor algorithms |
@@ -219,13 +227,7 @@ GET /_plugins/_neural/stats?include_individual_nodes=false
 | v3.1.0 | [#1360](https://github.com/opensearch-project/neural-search/pull/1360) | Add include_individual_nodes, include_all_nodes, include_info params |
 | v3.1.0 | [#1378](https://github.com/opensearch-project/neural-search/pull/1378) | Combine skip_existing flag stats into single stat |
 
-## References
-
-- [Neural Search Stats API Documentation](https://docs.opensearch.org/3.0/vector-search/api/neural/)
+### Issues (Design / RFC)
 - [Issue #1146](https://github.com/opensearch-project/neural-search/issues/1146): Stats for normalization processor
 - [Issue #1104](https://github.com/opensearch-project/neural-search/issues/1104): Stats API parameters
 - [Issue #1182](https://github.com/opensearch-project/neural-search/issues/1182): Semantic highlighting stats
-
-## Change History
-
-- **v3.1.0** (2026-01-10): Comprehensive stats coverage for all Neural Search components including text chunking, text embedding, hybrid query, normalization processors, semantic highlighting, and API parameter enhancements

@@ -87,17 +87,17 @@ No migration required. These are bug fixes that improve existing behavior.
 - The stale workspace error page requires manual navigation back to the home page
 - Recent items filtering only removes items with errors; it does not automatically clean up the recent items storage
 
-## Related PRs
+## References
 
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace feature documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |
 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors |
 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |
-
-## References
-
-- [Workspace Documentation](https://docs.opensearch.org/3.0/dashboards/workspace/workspace/): Official workspace feature documentation
 
 ## Related Feature Report
 

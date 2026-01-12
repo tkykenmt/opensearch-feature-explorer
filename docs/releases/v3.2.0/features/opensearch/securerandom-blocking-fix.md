@@ -87,16 +87,18 @@ If upgrading is not immediately possible:
 - The fallback path still uses `getInstanceStrong()` and may block if BouncyCastle reflection fails
 - FIPS mode behavior is unchanged and uses BouncyCastle DRBG
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Forum Discussion](https://forum.opensearch.org/t/docker-image-3-1-1-doesnt-seem-to-work/24875): Original bug report and investigation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18758](https://github.com/opensearch-project/OpenSearch/pull/18758) | Use `new SecureRandom()` to avoid blocking |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18729](https://github.com/opensearch-project/OpenSearch/issues/18729): OpenSearch 3.1.0 freezes when running on AlmaLinux 8
-- [OpenSearch Forum Discussion](https://forum.opensearch.org/t/docker-image-3-1-1-doesnt-seem-to-work/24875): Original bug report and investigation
 
 ## Related Feature Report
 

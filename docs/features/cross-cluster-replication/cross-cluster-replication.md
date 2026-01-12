@@ -146,8 +146,28 @@ POST _plugins/_replication/follower-index/_stop
 - Dynamic batch size reduction (for 2GB limit handling) is per-node and not persisted across restarts
 - Minimum batch size is 16 operations, which may still exceed 2GB for extremely large documents
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-14): Made pause replication API request body optional, defaulting to "User initiated" reason
+- **v3.3.0** (2025-11-18): Fixed 2GB limit breach for large document replication with dynamic batch size adjustment and new index-level batch size setting
+- **v3.2.0** (2025-08-06): Build fix - added missing `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method to RemoteClusterRepository
+- **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
+- **v2.17.0** (2024-09-17): Fixed integration tests to use correct cluster setting names after Remote Store Migration GA
+- **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation
+
+## References
+
+### Documentation
+- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
+- [Replication settings](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
+- [Replication API](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
+- [Replication security](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/permissions/)
+- [Auto-follow](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/auto-follow/)
+
+### Blog Posts
+- [Introduction to Cross-Cluster Replication blog](https://opensearch.org/blog/cross-cluster-replication-intro/)
+
+### Pull Requests
 | Version | PR | Repository | Description |
 |---------|-----|------------|-------------|
 | v3.4.0 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | cross-cluster-replication | Fix the requirement of empty request body in pause replication |
@@ -159,24 +179,8 @@ POST _plugins/_replication/follower-index/_stop
 | v2.17.0 | [#1412](https://github.com/opensearch-project/cross-cluster-replication/pull/1412) | cross-cluster-replication | Update remote-migration IT with correct setting names |
 | v1.1.0 | - | cross-cluster-replication | Initial CCR implementation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices
 - [Issue #1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468): Bug report for required empty request body in pause API
 - [Issue #1557](https://github.com/opensearch-project/cross-cluster-replication/issues/1557): Distribution Build Failed for cross-cluster-replication-3.2.0
 - [Issue #1568](https://github.com/opensearch-project/cross-cluster-replication/issues/1568): Bug report for 2GB limit breach during large document replication
-- [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
-- [Replication settings](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)
-- [Replication API](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/api/)
-- [Replication security](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/permissions/)
-- [Auto-follow](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/auto-follow/)
-- [Introduction to Cross-Cluster Replication blog](https://opensearch.org/blog/cross-cluster-replication-intro/)
-
-## Change History
-
-- **v3.4.0** (2026-01-14): Made pause replication API request body optional, defaulting to "User initiated" reason
-- **v3.3.0** (2025-11-18): Fixed 2GB limit breach for large document replication with dynamic batch size adjustment and new index-level batch size setting
-- **v3.2.0** (2025-08-06): Build fix - added missing `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method to RemoteClusterRepository
-- **v3.0.0** (2025-05-06): ISM-CCR integration with `stop_replication` action, Gradle 8.10.2 and JDK23 support
-- **v2.17.0** (2024-09-17): Fixed integration tests to use correct cluster setting names after Remote Store Migration GA
-- **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation

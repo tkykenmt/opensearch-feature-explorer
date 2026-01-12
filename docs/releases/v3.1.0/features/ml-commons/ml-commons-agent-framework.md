@@ -172,8 +172,13 @@ POST /_plugins/_ml/agents/_register
 - Simultaneous tool use with handle/supply not yet supported (planned for future release)
 - Circuit breaker bypass for agents may impact cluster stability under heavy load
 
-## Related PRs
+## References
 
+### Documentation
+- [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/)
+- [Plan-Execute-Reflect Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3820](https://github.com/opensearch-project/ml-commons/pull/3820) | Expose Update Agent API |
@@ -195,8 +200,7 @@ POST /_plugins/_ml/agents/_register
 | [#3814](https://github.com/opensearch-project/ml-commons/pull/3814) | Exclude circuit breaker for Agent |
 | [#3837](https://github.com/opensearch-project/ml-commons/pull/3837) | Add tenantId to connector executor for inline connectors |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3748](https://github.com/opensearch-project/ml-commons/issues/3748): Update Agent API feature request
 - [Issue #2172](https://github.com/opensearch-project/ml-commons/issues/2172): Original Update Agent API request
 - [Issue #3816](https://github.com/opensearch-project/ml-commons/issues/3816): Custom SSE endpoint for MCP
@@ -206,8 +210,6 @@ POST /_plugins/_ml/agents/_register
 - [Issue #3839](https://github.com/opensearch-project/ml-commons/issues/3839): Private IP validation fix
 - [Issue #3635](https://github.com/opensearch-project/ml-commons/issues/3635): Metrics framework integration
 - [Documentation Issue #9865](https://github.com/opensearch-project/documentation-website/issues/9865): Update Agent API documentation
-- [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/)
-- [Plan-Execute-Reflect Agents](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/)
 
 ## Related Feature Report
 

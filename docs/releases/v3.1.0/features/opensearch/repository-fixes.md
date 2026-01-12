@@ -67,18 +67,20 @@ No migration steps required. These are bug fixes that improve stability without 
 - The infinite loop fix causes the snapshot operation to fail with a `RepositoryException` when the repository is updated during snapshot creation. Users should retry the snapshot operation after the repository update completes.
 - Backward compatibility testing for snapshots created in very old OpenSearch versions may still have gaps.
 
-## Related PRs
+## References
 
+### Documentation
+- [Snapshot Repository Documentation](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17532](https://github.com/opensearch-project/OpenSearch/pull/17532) | Fix simultaneously creating a snapshot and updating the repository can potentially trigger an infinite loop |
 | [#18218](https://github.com/opensearch-project/OpenSearch/pull/18218) | Avoid NPE if on SnapshotInfo if 'shallow' boolean not present |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17531](https://github.com/opensearch-project/OpenSearch/issues/17531): Bug report for infinite loop during concurrent snapshot/repository update
 - [Issue #18187](https://github.com/opensearch-project/OpenSearch/issues/18187): Bug report for NPE when restoring legacy searchable snapshots
-- [Snapshot Repository Documentation](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
 
 ## Related Feature Report
 

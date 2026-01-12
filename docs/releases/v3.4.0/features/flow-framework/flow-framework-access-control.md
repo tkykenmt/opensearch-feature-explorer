@@ -131,18 +131,22 @@ GET /_plugins/_security/api/resource/share?resource_id=workflow-123&resource_typ
 - Settings can only be changed via `opensearch.yml` in v3.3; dynamic updates available in v3.4+
 - Sharing metadata is stored in Security plugin's indices, separate from workflow data
 
-## Related PRs
+## References
 
+### Documentation
+- [Workflow Security Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/): Official workflow security docs
+
+### Blog Posts
+- [Resource Sharing Blog](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Introducing resource sharing
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1251](https://github.com/opensearch-project/flow-framework/pull/1251) | Onboards flow-framework plugin to resource-sharing and access control framework |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1250](https://github.com/opensearch-project/flow-framework/issues/1250): Feature request to onboard to centralized authz framework
 - [Security Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing design
-- [Resource Sharing Blog](https://opensearch.org/blog/introducing-resource-sharing-a-new-access-control-model-for-opensearch/): Introducing resource sharing
-- [Workflow Security Documentation](https://docs.opensearch.org/3.0/automating-configurations/workflow-security/): Official workflow security docs
 
 ## Related Feature Report
 

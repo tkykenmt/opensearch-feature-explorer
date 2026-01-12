@@ -78,15 +78,15 @@ DELETE _rules/workload_group/<rule_id>
 - This fix only affects the delete operation for wildcard-based rules
 - Rules without wildcards were not affected by this bug
 
-## Related PRs
+## References
 
+### Documentation
+- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18628](https://github.com/opensearch-project/OpenSearch/pull/18628) | Fix delete rule event consumption for wildcard index based rules |
-
-## References
-
-- [Rule Lifecycle API Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/rule-based-autotagging/rule-lifecycle-api/)
 
 ## Related Feature Report
 

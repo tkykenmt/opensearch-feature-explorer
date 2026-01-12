@@ -144,8 +144,13 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 - Webhook Basic Auth only supports HTTP Basic Authentication; other authentication methods (OAuth, API keys) are not supported
 - The deprecated `plugins.security.system_indices.indices` setting still functions but will be removed in v4.0.0
 
-## Related PRs
+## References
 
+### Documentation
+- [Audit Log Storage Types Documentation](https://docs.opensearch.org/3.0/security/audit-logs/storage-types/)
+- [System Indexes Documentation](https://docs.opensearch.org/3.0/security/configuration/system-indices/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5792](https://github.com/opensearch-project/security/pull/5792) | Add Basic Authentication support for webhook audit log sink |
@@ -154,13 +159,10 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 | [#5805](https://github.com/opensearch-project/security/pull/5805) | Allow overlap of static and custom security configs, prefer static |
 | [#5590](https://github.com/opensearch-project/security/pull/5590) | Update read access to search-relevance indices |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5738](https://github.com/opensearch-project/security/issues/5738): Webhook audit log authentication bug report
 - [Issue #4799](https://github.com/opensearch-project/security/issues/4799): SecurityRestFilter drops ThreadContext headers
 - [Issue #5565](https://github.com/opensearch-project/security/issues/5565): Deprecate system_indices.indices setting
-- [Audit Log Storage Types Documentation](https://docs.opensearch.org/3.0/security/audit-logs/storage-types/)
-- [System Indexes Documentation](https://docs.opensearch.org/3.0/security/configuration/system-indices/)
 
 ## Related Feature Report
 

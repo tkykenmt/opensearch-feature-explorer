@@ -157,18 +157,20 @@ Response includes pool-specific metrics:
 - ForkJoinPool stats show simplified metrics (parallelism only) as the pool manages internal state differently
 - Custom thread factories must implement `ForkJoinWorkerThreadFactory`
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-10-17): Added ForkJoinPool thread pool type support for work-stealing parallelism
+
+## References
+
+### Documentation
+- [CAT Thread Pool API](https://docs.opensearch.org/latest/api-reference/cat/cat-thread-pool/): Official documentation
+- [Nodes Stats API](https://docs.opensearch.org/latest/api-reference/nodes-apis/nodes-stats/): Thread pool statistics
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#19008](https://github.com/opensearch-project/OpenSearch/pull/19008) | Add support for a ForkJoinPool type |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18674](https://github.com/opensearch-project/OpenSearch/issues/18674): Feature request for ForkJoinPool support
-- [CAT Thread Pool API](https://docs.opensearch.org/latest/api-reference/cat/cat-thread-pool/): Official documentation
-- [Nodes Stats API](https://docs.opensearch.org/latest/api-reference/nodes-apis/nodes-stats/): Thread pool statistics
-
-## Change History
-
-- **v3.4.0** (2025-10-17): Added ForkJoinPool thread pool type support for work-stealing parallelism

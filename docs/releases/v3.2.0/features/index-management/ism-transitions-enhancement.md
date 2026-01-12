@@ -101,20 +101,22 @@ This policy:
 - `min_state_age` requires the state metadata to have a valid `startTime`; if missing, the condition will not trigger
 - The `no_alias` condition requires `indexAliasesCount` to be available in the transition context
 
-## Related PRs
+## References
 
+### Documentation
+- [ISM Policies Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/policies/): Official ISM documentation
+- [Index State Management](https://docs.opensearch.org/3.0/im-plugin/ism/index/): ISM overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1440](https://github.com/opensearch-project/index-management/pull/1440) | Support for no_alias and min_state_age in ISM Transitions |
 | [#1444](https://github.com/opensearch-project/index-management/pull/1444) | Add history index pattern to list of System Index descriptors |
 | [#1442](https://github.com/opensearch-project/index-management/pull/1442) | Fix Integration test and lint errors |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1439](https://github.com/opensearch-project/index-management/issues/1439): Feature request for no_alias and min_state_age
 - [Issue #1441](https://github.com/opensearch-project/index-management/issues/1441): Integration test failure
-- [ISM Policies Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/policies/): Official ISM documentation
-- [Index State Management](https://docs.opensearch.org/3.0/im-plugin/ism/index/): ISM overview
 
 ## Related Feature Report
 

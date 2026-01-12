@@ -76,18 +76,20 @@ No migration required. This is a bug fix that makes field collapsing work correc
 - The fix ensures consistent behavior between concurrent and non-concurrent search paths
 - When documents have the same sort value, tie-breaking uses shard index first, then document ID
 
-## Related PRs
+## References
 
+### Documentation
+- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
+- [Lucene PR #757](https://github.com/apache/lucene-solr/pull/757): Original Lucene change that removed setShardIndex from TopDocs.merge()
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19053](https://github.com/opensearch-project/OpenSearch/pull/19053) | Remove the setShardIndex parameter in CollapseTopFieldDocs.merge() |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19051](https://github.com/opensearch-project/OpenSearch/issues/19051): Collapsing search results with concurrent segment search enabled triggers assertion error
 - [Issue #19111](https://github.com/opensearch-project/OpenSearch/issues/19111): Inconsistent field collapsing search results with concurrent segment search
-- [Lucene PR #757](https://github.com/apache/lucene-solr/pull/757): Original Lucene change that removed setShardIndex from TopDocs.merge()
-- [Concurrent Segment Search Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official documentation
 
 ## Related Feature Report
 

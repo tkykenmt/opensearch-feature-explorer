@@ -87,17 +87,19 @@ Users running the demo scripts should note:
 - The test dataset is a subset of the full ESCI dataset, optimized for demonstration purposes
 - Product images are hosted externally and require internet connectivity
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.1/search-plugins/search-relevance/using-search-relevance-workbench/)
+- [ESCI Dataset](https://github.com/amazon-science/esci-data): Amazon Shopping Queries Dataset
+
+### Blog Posts
+- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post demonstrating SRW with ESCI data
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#70](https://github.com/opensearch-project/search-relevance/pull/70) | Use realistic dataset based on ESCI |
-
-## References
-
-- [ESCI Dataset](https://github.com/amazon-science/esci-data): Amazon Shopping Queries Dataset
-- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.1/search-plugins/search-relevance/using-search-relevance-workbench/)
-- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post demonstrating SRW with ESCI data
 
 ## Related Feature Report
 

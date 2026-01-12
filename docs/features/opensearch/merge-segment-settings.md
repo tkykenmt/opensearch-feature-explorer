@@ -123,22 +123,24 @@ POST /my-index/_forcemerge?max_num_segments=1
 - Very large `max_merge_at_once` values may cause memory pressure
 - Force merge thread pool size is fixed at node startup
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Floor segment size increased to 16MB, maxMergeAtOnce increased to 30, force merge threads scaled to 1/8th of cores, new cluster-level setting added
+
+## References
+
+### Documentation
+- [Lucene TieredMergePolicy](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/index/TieredMergePolicy.html): Lucene documentation
+- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official docs
+- [Force Merge API](https://docs.opensearch.org/3.0/api-reference/index-apis/force-merge/): Force merge documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17255](https://github.com/opensearch-project/OpenSearch/pull/17255) | Increase force merge threads to 1/8th of cores |
 | v3.0.0 | [#17699](https://github.com/opensearch-project/OpenSearch/pull/17699) | Increase floor segment size to 16MB |
 | v3.0.0 | [#17774](https://github.com/opensearch-project/OpenSearch/pull/17774) | Increase default maxMergeAtOnce to 30 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17051](https://github.com/opensearch-project/OpenSearch/issues/17051): Increase maxMergeAtOnce parameter in OpenSearch 3.0
 - [Issue #16935](https://github.com/opensearch-project/OpenSearch/issues/16935): OpenSearch 3.0 Core Release Tracker
-- [Lucene TieredMergePolicy](https://lucene.apache.org/core/10_0_0/core/org/apache/lucene/index/TieredMergePolicy.html): Lucene documentation
-- [Index Settings Documentation](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/index-settings/): Official docs
-- [Force Merge API](https://docs.opensearch.org/3.0/api-reference/index-apis/force-merge/): Force merge documentation
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Floor segment size increased to 16MB, maxMergeAtOnce increased to 30, force merge threads scaled to 1/8th of cores, new cluster-level setting added

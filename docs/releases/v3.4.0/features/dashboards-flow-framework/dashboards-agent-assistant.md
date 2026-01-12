@@ -101,8 +101,14 @@ Follow-up query using conversation context:
 - Response filter auto-configuration limited to OpenAI and Bedrock Claude providers
 - Firefox EuiSelect rendering issues require bundled builds (not reproducible in local development)
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/)
+- [Flow Agents Documentation](https://docs.opensearch.org/latest/vector-search/ai-search/agentic-search/flow-agent/)
+- [Agents and Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#626](https://github.com/opensearch-project/dashboards-assistant/pull/626) | Disable dashboards assistant chatbot if investigation feature flag enabled |
@@ -112,12 +118,6 @@ Follow-up query using conversation context:
 | [#809](https://github.com/opensearch-project/dashboards-flow-framework/pull/809) | Integrate with memory |
 | [#817](https://github.com/opensearch-project/dashboards-flow-framework/pull/817) | Automatically add response filters to flow agents when possible |
 | [#820](https://github.com/opensearch-project/dashboards-flow-framework/pull/820) | Remove default empty tool field values; fix EuiSelect values in Firefox |
-
-## References
-
-- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/)
-- [Flow Agents Documentation](https://docs.opensearch.org/latest/vector-search/ai-search/agentic-search/flow-agent/)
-- [Agents and Tools](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/index/)
 
 ## Related Feature Report
 

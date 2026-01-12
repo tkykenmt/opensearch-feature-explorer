@@ -115,19 +115,21 @@ const topNavConfig: TopNavMenuIconData[] = [
 - The new header UI requires OpenSearch Dashboards core support for `HeaderControl` and `HeaderVariant`
 - Integration tests for the new header UI are planned for a separate PR
 
-## Related PRs
+## References
 
+### Documentation
+- [Maps Documentation](https://docs.opensearch.org/2.17/dashboards/visualize/maps/): Official Maps plugin documentation
+- [OpenSearch Dashboards PR #7691](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7691): Full width table support
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#653](https://github.com/opensearch-project/dashboards-maps/pull/653) | Conditionally use the new Page Header variant on the Maps listing page |
 | [#654](https://github.com/opensearch-project/dashboards-maps/pull/654) | Conditionally use the new Application Header variant on the Maps visualization page |
 | [#655](https://github.com/opensearch-project/dashboards-maps/pull/655) | Conditionally use full width for Maps listing page table |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #649](https://github.com/opensearch-project/dashboards-maps/issues/649): Support Trineo new headers change in maps
-- [OpenSearch Dashboards PR #7691](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7691): Full width table support
-- [Maps Documentation](https://docs.opensearch.org/2.17/dashboards/visualize/maps/): Official Maps plugin documentation
 
 ## Related Feature Report
 

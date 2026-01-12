@@ -124,8 +124,14 @@ All optimizations are enabled by default and require no configuration changes. T
 - Filter rewrite + skip list optimization requires data sorted on the aggregation field for maximum benefit
 - Auto date histogram skip list currently only works when auto_date_histogram is root or within range filter rewrite context
 
-## Related PRs
+## References
 
+### Documentation
+- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
+- [Percentile Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile/)
+- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19524](https://github.com/opensearch-project/OpenSearch/pull/19524) | Add Hybrid Cardinality collector to prioritize Ordinals Collector |
@@ -134,16 +140,12 @@ All optimizations are enabled by default and require no configuration changes. T
 | [#19989](https://github.com/opensearch-project/OpenSearch/pull/19989) | Improve performance of matrix_stats aggregation |
 | [#20057](https://github.com/opensearch-project/OpenSearch/pull/20057) | Add skiplist optimization to auto_date_histogram aggregation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19260](https://github.com/opensearch-project/OpenSearch/issues/19260): Auto Select Ordinals cardinality collector for high cardinality queries
 - [Issue #18122](https://github.com/opensearch-project/OpenSearch/issues/18122): Speed up percentile aggregation by switching implementation
 - [Issue #19741](https://github.com/opensearch-project/OpenSearch/issues/19741): Remove maps from hot loop in matrix_stats agg for performance
 - [Issue #19827](https://github.com/opensearch-project/OpenSearch/issues/19827): Add skip_list logic to auto date histogram
 - [Issue #17447](https://github.com/opensearch-project/OpenSearch/pull/17447): Support sub agg in filter rewrite optimization
-- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
-- [Percentile Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/percentile/)
-- [Date Histogram Documentation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
 
 ## Related Feature Report
 

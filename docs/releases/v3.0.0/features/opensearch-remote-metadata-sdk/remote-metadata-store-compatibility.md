@@ -38,17 +38,19 @@ Plugin developers using the Remote Metadata SDK with OpenSearch 3.0.0 should ens
 
 - This is a breaking change from OpenSearch 2.x - plugins must use the matching SDK version for their OpenSearch version
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #73](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/73): Import path update
+- [OpenSearch PR #17272](https://github.com/opensearch-project/OpenSearch/pull/17272): JPMS refactoring in OpenSearch core
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [opensearch-remote-metadata-sdk#73](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/73) | Update o.o.client imports to o.o.transport.client |
 | [OpenSearch#17272](https://github.com/opensearch-project/OpenSearch/pull/17272) | [JPMS Support] Refactoring of `org.opensearch.client` from `:server` module |
 
-## References
-
-- [PR #73](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/73): Import path update
-- [OpenSearch PR #17272](https://github.com/opensearch-project/OpenSearch/pull/17272): JPMS refactoring in OpenSearch core
+### Issues (Design / RFC)
 - [Issue #8110](https://github.com/opensearch-project/OpenSearch/issues/8110): JPMS support tracking issue
 
 ## Related Feature Report

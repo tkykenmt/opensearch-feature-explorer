@@ -82,20 +82,22 @@ POST _ltr/_featureset/my_features/_createmodel
 - Only `float` feature types are supported (OpenSearch scores are always float32)
 - Feature names in the model must match feature names in the feature set
 
-## Related PRs
+## References
 
+### Documentation
+- [XGBoost save_model documentation](https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.save_model)
+- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
+- [Uploading trained models](https://docs.opensearch.org/3.0/search-plugins/ltr/training-models/)
+- [Port from o19s](https://github.com/o19s/elasticsearch-learning-to-rank/pull/500): Original fix in Elasticsearch LTR
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format |
 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |
 
-## References
-
+### Issues (Design / RFC)
 - [Original Issue (o19s)](https://github.com/o19s/elasticsearch-learning-to-rank/issues/497): XGBoost model loading issue
-- [Port from o19s](https://github.com/o19s/elasticsearch-learning-to-rank/pull/500): Original fix in Elasticsearch LTR
-- [XGBoost save_model documentation](https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.save_model)
-- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
-- [Uploading trained models](https://docs.opensearch.org/3.0/search-plugins/ltr/training-models/)
 
 ## Related Feature Report
 

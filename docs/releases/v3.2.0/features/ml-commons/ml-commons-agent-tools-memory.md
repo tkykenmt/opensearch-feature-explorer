@@ -213,8 +213,13 @@ POST /_plugins/_ml/agents/_register
 - AI-oriented memory operations depend on LLM model quality for fact extraction
 - QueryPlanningTool requires compatible LLM connector
 
-## Related PRs
+## References
 
+### Documentation
+- [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/)
+- [Memory APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/memory-apis/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4035](https://github.com/opensearch-project/ml-commons/pull/4035) | Add Execute Tool API |
@@ -244,14 +249,11 @@ POST /_plugins/_ml/agents/_register
 | [#568](https://github.com/opensearch-project/ml-commons/pull/568) | Fetch models from ml-commons and add validation |
 | [#4037](https://github.com/opensearch-project/ml-commons/pull/4037) | Fix unit test for user_requested_tenant_access |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3979](https://github.com/opensearch-project/ml-commons/issues/3979): Memory container feature request
 - [Issue #4005](https://github.com/opensearch-project/ml-commons/issues/4005): QueryPlanningTool feature request
 - [Issue #4009](https://github.com/opensearch-project/ml-commons/issues/4009): Date/time injection feature request
 - [Issue #4011](https://github.com/opensearch-project/ml-commons/issues/4011): Chat agent max iterations bug
-- [Agent APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/index/)
-- [Memory APIs Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/api/memory-apis/index/)
 
 ## Related Feature Report
 

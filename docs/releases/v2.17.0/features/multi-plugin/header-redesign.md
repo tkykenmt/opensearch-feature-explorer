@@ -92,8 +92,13 @@ if (useNewPageHeader) {
 - Some plugins may have minor visual inconsistencies during the transition period
 - Custom plugin pages not updated in this release will retain the old header style
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.17/dashboards/quickstart/): Navigation menu documentation
+- [Custom Branding](https://docs.opensearch.org/2.17/dashboards/branding/): Condensed header configuration
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#841](https://github.com/opensearch-project/anomaly-detection-dashboards-plugin/pull/841) | anomaly-detection-dashboards-plugin | Header redesign for AD pages |
@@ -109,11 +114,6 @@ if (useNewPageHeader) {
 | [#1124](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1124) | index-management-dashboards-plugin | Update header for aliases, templates, transforms |
 | [#1126](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1126) | index-management-dashboards-plugin | Update header for notification settings |
 | [#351](https://github.com/opensearch-project/ml-commons-dashboards/pull/351) | ml-commons-dashboards | Support new page header |
-
-## References
-
-- [OpenSearch Dashboards Quickstart Guide](https://docs.opensearch.org/2.17/dashboards/quickstart/): Navigation menu documentation
-- [Custom Branding](https://docs.opensearch.org/2.17/dashboards/branding/): Condensed header configuration
 
 ## Related Feature Report
 

@@ -105,16 +105,18 @@ This is a backward-compatible enhancement. No migration is required. The feature
 - Remote cluster state fallback only works when remote publication is enabled on all nodes
 - The cache stores only the most recent cluster state by term-version
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15424](https://github.com/opensearch-project/OpenSearch/pull/15424) | Fallback on Term-Version check mismatch - Remote cluster-state |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15414](https://github.com/opensearch-project/OpenSearch/issues/15414): Feature request for leveraging ClusterState from Publish phase
-- [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
 
 ## Related Feature Report
 

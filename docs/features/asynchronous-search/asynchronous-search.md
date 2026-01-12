@@ -148,8 +148,21 @@ GET _plugins/_asynchronous_search/FklfVlU4eFdIUTh1Q1hyM3ZnT19fUVEUd29KLWZYUUI3Tz
 - Query execution time counts against `keep_alive` duration
 - Users can only access their own async searches (with security enabled)
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-09-02): Infrastructure maintenance - Gradle 8.14.3, JDK 24 CI support, Maven snapshot endpoint migration
+- **v3.0.0** (2025-05-06): GA release preparation - JDK21 baseline, Gradle 8.10.2, JDK23 support
+- **v1.0.0** (2021-07-12): Initial release with OpenSearch
+
+## References
+
+### Documentation
+- [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
+- [Asynchronous Search Security](https://docs.opensearch.org/3.0/search-plugins/async/security/)
+- [Asynchronous Search Settings](https://docs.opensearch.org/3.0/search-plugins/async/settings/)
+- [GitHub Repository](https://github.com/opensearch-project/asynchronous-search)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#754](https://github.com/opensearch-project/asynchronous-search/pull/754) | Gradle 8.14.3 upgrade and JDK 24 CI support |
@@ -157,16 +170,3 @@ GET _plugins/_asynchronous_search/FklfVlU4eFdIUTh1Q1hyM3ZnT19fUVEUd29KLWZYUUI3Tz
 | v3.0.0 | [#724](https://github.com/opensearch-project/asynchronous-search/pull/724) | Version increment for 3.0.0 GA |
 | v3.0.0 | [#698](https://github.com/opensearch-project/asynchronous-search/pull/698) | JDK23 support and Gradle 8.10.2 |
 | v3.0.0 | [#582](https://github.com/opensearch-project/asynchronous-search/pull/582) | JDK21 baseline for 3.0 |
-
-## References
-
-- [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
-- [Asynchronous Search Security](https://docs.opensearch.org/3.0/search-plugins/async/security/)
-- [Asynchronous Search Settings](https://docs.opensearch.org/3.0/search-plugins/async/settings/)
-- [GitHub Repository](https://github.com/opensearch-project/asynchronous-search)
-
-## Change History
-
-- **v3.2.0** (2025-09-02): Infrastructure maintenance - Gradle 8.14.3, JDK 24 CI support, Maven snapshot endpoint migration
-- **v3.0.0** (2025-05-06): GA release preparation - JDK21 baseline, Gradle 8.10.2, JDK23 support
-- **v1.0.0** (2021-07-12): Initial release with OpenSearch

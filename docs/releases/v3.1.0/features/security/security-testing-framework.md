@@ -103,18 +103,18 @@ For plugin developers using the Security plugin's test framework:
 - Requires OpenSearch core v3.1.0+ with PR #16908 merged
 - Only applicable to integration tests using the Security plugin's test framework
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Plugin Documentation](https://docs.opensearch.org/3.1/security/index/): OpenSearch Security plugin docs
+- [PR #5322](https://github.com/opensearch-project/security/pull/5322): Main implementation
+- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Core Plugin Testing Framework enhancement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5322](https://github.com/opensearch-project/security/pull/5322) | Use extendedPlugins in integrationTest framework for sample resource plugin testing |
 | [#16908](https://github.com/opensearch-project/OpenSearch/pull/16908) | Enable testing for ExtensiblePlugins using classpath plugins (core dependency) |
-
-## References
-
-- [PR #5322](https://github.com/opensearch-project/security/pull/5322): Main implementation
-- [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Core Plugin Testing Framework enhancement
-- [Security Plugin Documentation](https://docs.opensearch.org/3.1/security/index/): OpenSearch Security plugin docs
 
 ## Related Feature Report
 

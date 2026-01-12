@@ -65,18 +65,18 @@ This allows the plugin tests to execute under the new Java Agent security model,
 - These changes are purely for compatibility; no new user-facing features are added
 - The `attributes` field usage is determined by the ML Commons agent framework
 
-## Related PRs
+## References
 
+### Documentation
+- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Official tools documentation
+- [Plan-Execute-Reflect Agent](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/): Agent documentation
+- [ML Commons PR #3716](https://github.com/opensearch-project/ml-commons/pull/3716): Plan, Execute and Reflect Agent Type (upstream change)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#549](https://github.com/opensearch-project/skills/pull/549) | Add attributes to tools to adapt the upstream changes |
 | [#553](https://github.com/opensearch-project/skills/pull/553) | Support phasing off SecurityManager usage in favor of Java Agent |
-
-## References
-
-- [ML Commons PR #3716](https://github.com/opensearch-project/ml-commons/pull/3716): Plan, Execute and Reflect Agent Type (upstream change)
-- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Official tools documentation
-- [Plan-Execute-Reflect Agent](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/agents/plan-execute-reflect/): Agent documentation
 
 ## Related Feature Report
 

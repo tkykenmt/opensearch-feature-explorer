@@ -124,8 +124,15 @@ When creating implicit judgments from UBI events, specify date range:
 - Polling mechanism has a 10-minute timeout for long-running experiments
 - Metrics stats endpoint is publicly accessible (no authentication required) for monitoring systems
 
-## Related PRs
+## References
 
+### Documentation
+- [Search Relevance Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/)
+
+### Blog Posts
+- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#570](https://github.com/opensearch-project/dashboards-search-relevance/pull/570) | Dashboard visualization for evaluation and hybrid experiments |
@@ -143,8 +150,7 @@ When creating implicit judgments from UBI events, specify date range:
 | [#139](https://github.com/opensearch-project/search-relevance/pull/139) | Task scheduling for hybrid optimizer experiments |
 | [#167](https://github.com/opensearch-project/search-relevance/pull/167) | Task scheduling for pointwise experiments |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #556](https://github.com/opensearch-project/dashboards-search-relevance/issues/556): Polling mechanism request
 - [Issue #591](https://github.com/opensearch-project/dashboards-search-relevance/issues/591): Date filtering for implicit judgments
 - [Issue #605](https://github.com/opensearch-project/dashboards-search-relevance/issues/605): Default UI switch
@@ -152,8 +158,6 @@ When creating implicit judgments from UBI events, specify date range:
 - [Issue #159](https://github.com/opensearch-project/search-relevance/issues/159): Throughput optimization RFC
 - [Issue #162](https://github.com/opensearch-project/search-relevance/issues/162): Pointwise experiment scheduling
 - [Issue #164](https://github.com/opensearch-project/search-relevance/issues/164): UBI date filtering
-- [Search Relevance Documentation](https://docs.opensearch.org/3.0/search-plugins/search-relevance/index/)
-- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post
 
 ## Related Feature Report
 

@@ -129,23 +129,25 @@ PUT /_cluster/settings
 - Archived index settings can only be cleared on closed indices
 - Transient settings are lost on cluster restart
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01): Fixed duplicate registration of dynamic settings (FieldDataCache, QueryCache) that caused memory issues on cluster manager nodes
+- **v3.2.0** (2026-01): Fixed issue where archived settings blocked all settings updates
+- **v2.10.0** (2023-08): Added support to clear archived index settings on closed indices
+
+## References
+
+### Documentation
+- [Cluster Settings API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-settings/): Official API documentation
+- [Configuring OpenSearch](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/): Configuration guide
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#20140](https://github.com/opensearch-project/OpenSearch/pull/20140) | Fix duplicate registration of FieldDataCache dynamic setting |
 | v3.2.0 | [#18885](https://github.com/opensearch-project/OpenSearch/pull/18885) | Ignore archived settings on update |
 | v2.10.0 | [#9019](https://github.com/opensearch-project/OpenSearch/pull/9019) | Add support to clear archived index settings |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8714](https://github.com/opensearch-project/OpenSearch/issues/8714): Unable to change any cluster setting with archived settings
 - [Issue #18515](https://github.com/opensearch-project/OpenSearch/issues/18515): Cannot update cluster settings after upgrading to 3.0.0
-- [Cluster Settings API](https://docs.opensearch.org/3.0/api-reference/cluster-api/cluster-settings/): Official API documentation
-- [Configuring OpenSearch](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/): Configuration guide
-
-## Change History
-
-- **v3.4.0** (2026-01): Fixed duplicate registration of dynamic settings (FieldDataCache, QueryCache) that caused memory issues on cluster manager nodes
-- **v3.2.0** (2026-01): Fixed issue where archived settings blocked all settings updates
-- **v2.10.0** (2023-08): Added support to clear archived index settings on closed indices

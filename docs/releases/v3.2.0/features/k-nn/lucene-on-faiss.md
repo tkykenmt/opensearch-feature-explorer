@@ -117,17 +117,19 @@ This preserves subtle variations in the query that would be lost with symmetric 
 - Byte vector queries are not supported with ADC (only float queries)
 - ADC adds computational overhead compared to symmetric Hamming distance
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Blog: Asymmetric Distance Computation](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/): Detailed explanation of ADC
+- [Blog: Lucene-on-Faiss](https://opensearch.org/blog/lucene-on-faiss-powering-opensearchs-high-performance-memory-efficient-vector-search/): Memory-optimized search overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2781](https://github.com/opensearch-project/k-NN/pull/2781) | Support ADC in Lucene-on-Faiss |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): RFC for ADC and Random Rotation
-- [Blog: Asymmetric Distance Computation](https://opensearch.org/blog/asymmetric-distance-computation-for-binary-quantization/): Detailed explanation of ADC
-- [Blog: Lucene-on-Faiss](https://opensearch.org/blog/lucene-on-faiss-powering-opensearchs-high-performance-memory-efficient-vector-search/): Memory-optimized search overview
 
 ## Related Feature Report
 

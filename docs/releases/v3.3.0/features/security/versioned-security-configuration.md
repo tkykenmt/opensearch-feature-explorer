@@ -114,17 +114,19 @@ Rollback operations work correctly in multi-node clusters:
 - **Rollback Creates New Version**: Rolling back creates a new version entry (e.g., rolling back from v5 to v3 creates v6 with v3's content)
 - **Version Not Found**: Returns 404 if the specified version doesn't exist
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Configuration Versioning Documentation](https://docs.opensearch.org/3.3/security/configuration/versioning/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5357](https://github.com/opensearch-project/security/pull/5357) | Initial versioned security configuration management (v3.2.0) |
 | [#5431](https://github.com/opensearch-project/security/pull/5431) | View API and Rollback API implementation (closed without merge - functionality included in #5357) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5093](https://github.com/opensearch-project/security/issues/5093): Original feature request
-- [Security Configuration Versioning Documentation](https://docs.opensearch.org/3.3/security/configuration/versioning/): Official documentation
 
 ## Related Feature Report
 

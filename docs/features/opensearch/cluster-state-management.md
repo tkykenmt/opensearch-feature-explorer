@@ -116,19 +116,21 @@ node.attr.remote_store.repository.my-remote-state-repo.settings.region: us-east-
 - Unsafe bootstrap scripts cannot be run when remote cluster state is enabled
 - When majority of cluster manager nodes are lost, nodes must be replaced and reseeded to bootstrap a new cluster
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-29): Added fallback mechanism to use pre-commit state or remote cluster state on term-version mismatch, reducing unnecessary cluster state transfers in large clusters
+- **v2.18.0** (2024-10-29): Fixed voting configuration mismatch by updating lastSeenClusterState in commit phase
+
+## References
+
+### Documentation
+- [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#15424](https://github.com/opensearch-project/OpenSearch/pull/15424) | Fallback to remote cluster-state on term-version check mismatch |
 | v2.18.0 | [#16215](https://github.com/opensearch-project/OpenSearch/pull/16215) | Fix: Update last seen cluster state in commit phase |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15414](https://github.com/opensearch-project/OpenSearch/issues/15414): Feature request for leveraging ClusterState from Publish phase
-- [Remote Cluster State Documentation](https://docs.opensearch.org/2.18/tuning-your-cluster/availability-and-recovery/remote-store/remote-cluster-state/)
-
-## Change History
-
-- **v2.18.0** (2024-10-29): Added fallback mechanism to use pre-commit state or remote cluster state on term-version mismatch, reducing unnecessary cluster state transfers in large clusters
-- **v2.18.0** (2024-10-29): Fixed voting configuration mismatch by updating lastSeenClusterState in commit phase

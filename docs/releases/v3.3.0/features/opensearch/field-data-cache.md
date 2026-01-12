@@ -88,19 +88,21 @@ PUT _cluster/settings
 - Cache size changes trigger eviction asynchronously (not immediate)
 - No tiered caching support (heap + disk) for field data cache yet
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT Field Data API](https://docs.opensearch.org/3.0/api-reference/cat/cat-field-data/): View field data cache memory usage
+- [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/): Clear index caches
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19152](https://github.com/opensearch-project/OpenSearch/pull/19152) | Make field data cache size setting dynamic and add default limit |
 | [#19116](https://github.com/opensearch-project/OpenSearch/pull/19116) | Remove unnecessary looping in field data cache clear |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19104](https://github.com/opensearch-project/OpenSearch/issues/19104): Change default settings for field data cache size
 - [Issue #13862](https://github.com/opensearch-project/OpenSearch/issues/13862): Optimize FieldDataCache removal flow
-- [CAT Field Data API](https://docs.opensearch.org/3.0/api-reference/cat/cat-field-data/): View field data cache memory usage
-- [Clear Cache API](https://docs.opensearch.org/3.0/api-reference/index-apis/clear-index-cache/): Clear index caches
 
 ## Related Feature Report
 

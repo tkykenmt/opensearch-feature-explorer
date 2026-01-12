@@ -116,18 +116,20 @@ No migration required. This is an internal test infrastructure fix that does not
 - Production multi-tenant deployments still require external index setup scripts
 - The fix assumes ML Commons is available and the `MLIndex` enum is accessible
 
-## Related PRs
+## References
 
+### Documentation
+- [Flow Framework Documentation](https://docs.opensearch.org/3.0/automating-configurations/index/)
+- [ML Commons PR #4089](https://github.com/opensearch-project/ml-commons/pull/4089): Related ML Commons change that assumes pre-populated indices
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1217](https://github.com/opensearch-project/flow-framework/pull/1217) | Pre-create ML Commons indices for Tenant Aware tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1216](https://github.com/opensearch-project/flow-framework/issues/1216): Tenant Aware Integ Tests failing because indices aren't being created
-- [ML Commons PR #4089](https://github.com/opensearch-project/ml-commons/pull/4089): Related ML Commons change that assumes pre-populated indices
 - [ML Commons Issue #3860](https://github.com/opensearch-project/ml-commons/issues/3860): Related ML Commons issue
-- [Flow Framework Documentation](https://docs.opensearch.org/3.0/automating-configurations/index/)
 
 ## Related Feature Report
 

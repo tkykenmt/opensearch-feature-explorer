@@ -168,8 +168,25 @@ config:
 - OpenSSL TLS provider removed in v3.0.0 (JDK TLS only)
 - Whitelist settings removed in v3.0.0 (use allowlist)
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-09-16): Enhancements - nested JWT claim support for subject extraction, stream transport security integration, plugin permission declaration mechanism via plugin-permissions.yml; Bugfixes - JWT clock skew tolerance now properly applied, demo certificate installation in Helm/K8s environments, mixed cluster config update handling, cluster permission detection, SecureHttpTransportParameters provider, tenancy access serialization; Refactoring - JWT Vendor with flexible claims builder
+- **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
+- **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
+- **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal
+
+## References
+
+### Documentation
+- [Documentation: Security](https://docs.opensearch.org/3.0/security/)
+- [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
+- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
+- [Documentation: Access Control API](https://docs.opensearch.org/3.0/security/access-control/api/)
+- [Documentation: Security APIs](https://docs.opensearch.org/3.0/api-reference/security/index/)
+- [Documentation: Audit Log Storage Types](https://docs.opensearch.org/2.18/security/audit-logs/storage-types/)
+- [OpenSearch Core PR #18722](https://github.com/opensearch-project/OpenSearch/pull/18722): Stream transport introduction (v3.2.0)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#5341](https://github.com/opensearch-project/security/pull/5341) | Plugin permission declaration mechanism |
@@ -235,14 +252,12 @@ config:
 | v2.17.0 | [#4653](https://github.com/opensearch-project/security/pull/4653) | Remove Log4j Strings utility usage |
 | v2.17.0 | [#4694](https://github.com/opensearch-project/security/pull/4694) | PluginSubject build fix |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #5430](https://github.com/opensearch-project/security/issues/5430): Nested JWT claims feature request (v3.2.0)
 - [Issue #5505](https://github.com/opensearch-project/security/issues/5505): JWT clock skew tolerance bug (v3.2.0)
 - [Issue #5044](https://github.com/opensearch-project/security/issues/5044): Demo certificate installation issue (v3.2.0)
 - [Issue #5365](https://github.com/opensearch-project/security/issues/5365): Mixed cluster config update bug (v3.2.0)
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): Plugin permission declaration (v3.2.0)
-- [OpenSearch Core PR #18722](https://github.com/opensearch-project/OpenSearch/pull/18722): Stream transport introduction (v3.2.0)
 - [Issue #4493](https://github.com/opensearch-project/security/issues/4493): V6/V7 configuration consolidation proposal (v2.18.0)
 - [Issue #4687](https://github.com/opensearch-project/security/issues/4687): Circuit breaker issue with security APIs (v2.18.0)
 - [Issue #4601](https://github.com/opensearch-project/security/issues/4601): Certificate error message improvement (v2.18.0)
@@ -260,16 +275,3 @@ config:
 - [Issue #4627](https://github.com/opensearch-project/security/issues/4627): Auth token endpoint issue (v2.17.0)
 - [Issue #4480](https://github.com/opensearch-project/security/issues/4480): Certificate SAN ordering issue (v2.17.0)
 - [Issue #4583](https://github.com/opensearch-project/security/issues/4583): Security provider refactoring (v2.17.0)
-- [Documentation: Security](https://docs.opensearch.org/3.0/security/)
-- [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)
-- [Documentation: Security Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/security-settings/)
-- [Documentation: Access Control API](https://docs.opensearch.org/3.0/security/access-control/api/)
-- [Documentation: Security APIs](https://docs.opensearch.org/3.0/api-reference/security/index/)
-- [Documentation: Audit Log Storage Types](https://docs.opensearch.org/2.18/security/audit-logs/storage-types/)
-
-## Change History
-
-- **v3.2.0** (2025-09-16): Enhancements - nested JWT claim support for subject extraction, stream transport security integration, plugin permission declaration mechanism via plugin-permissions.yml; Bugfixes - JWT clock skew tolerance now properly applied, demo certificate installation in Helm/K8s environments, mixed cluster config update handling, cluster permission detection, SecureHttpTransportParameters provider, tenancy access serialization; Refactoring - JWT Vendor with flexible claims builder
-- **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
-- **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
-- **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal

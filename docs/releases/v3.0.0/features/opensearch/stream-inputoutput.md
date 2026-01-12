@@ -119,16 +119,16 @@ EnumSet<MyEnum> result = in.readOptionalEnumSet(MyEnum.class);
 - When reading a null or empty EnumSet, the method returns an empty `EnumSet.noneOf(enumClass)` rather than `null`. This is consistent with other optional collection readers in OpenSearch.
 - The enum class must be provided when reading, as Java's type erasure prevents runtime type inference.
 
-## Related PRs
+## References
 
+### Documentation
+- [ml-commons MLStatsInput](https://github.com/opensearch-project/ml-commons/blob/main/plugin/src/main/java/org/opensearch/ml/stats/MLStatsInput.java#L142): Example of plugin-specific implementation being consolidated
+- [neural-search NeuralStatsInput PR](https://github.com/opensearch-project/neural-search/pull/1208): Related use case in neural-search plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17556](https://github.com/opensearch-project/OpenSearch/pull/17556) | Add read and write optional enum sets methods to stream input and output |
-
-## References
-
-- [ml-commons MLStatsInput](https://github.com/opensearch-project/ml-commons/blob/main/plugin/src/main/java/org/opensearch/ml/stats/MLStatsInput.java#L142): Example of plugin-specific implementation being consolidated
-- [neural-search NeuralStatsInput PR](https://github.com/opensearch-project/neural-search/pull/1208): Related use case in neural-search plugin
 
 ## Related Feature Report
 

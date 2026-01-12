@@ -145,8 +145,31 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - Requires both frontend (Dashboards) and backend plugins to be enabled
 - Dynamic field mappings may require increased `total_fields.limit` setting
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Bug fix - Fix floating-point precision issues in Hybrid Optimizer weight generation by switching to step-based iteration and rounding, ensuring clean weight pairs like 0.4/0.6 instead of 0.39999998/0.60000002
+- **v3.4.0** (2026-01-11): Bug fix - Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion by correcting failure handling to properly transition to ERROR state
+- **v3.4.0** (2026-01-11): Bug fix - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL, enabling LTR rescore queries in experiments
+- **v3.3.0** (2026-01-11): Bug fix - ImportJudgmentsProcessor now handles numeric ratings (integers, floats) in addition to strings, and preserves original judgment order
+- **v3.2.0** (2026-01-11): Major enhancements - new default SRW UI, dashboard visualization for experiments, polling mechanism for status updates, date filtering for implicit judgments, task scheduling for experiments
+- **v3.2.0** (2026-01-10): Bug fixes - backend plugin disabled messaging, pipeline error suppression, validation results overflow, Venn diagram statistics, REST API error status, input validation, pipeline parameter fix
+- **v3.2.0** (2026-01-10): Fixed toast notification error messages not rendering correctly across multiple UI components
+- **v3.1.0** (2025-06-16): Major feature additions - hybrid search experiment type, feature flag, external judgment import, Stats API, URL path changes, security integration with roles
+- **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
+- **v3.1.0** (2025-06-06): Added realistic ESCI-based test dataset with 150 queries and matching judgments
+
+## References
+
+### Documentation
+- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.1/search-plugins/search-relevance/using-search-relevance-workbench/)
+- [Search Relevance Plugin Repository](https://github.com/opensearch-project/search-relevance)
+- [Dashboards Search Relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
+- [ESCI Dataset](https://github.com/amazon-science/esci-data): Amazon Shopping Queries Dataset
+
+### Blog Posts
+- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#570](https://github.com/opensearch-project/dashboards-search-relevance/pull/570) | Dashboard visualization for evaluation and hybrid experiments |
@@ -200,13 +223,7 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.4.0 | [#260](https://github.com/opensearch-project/search-relevance/pull/260) | Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL |
 | v3.3.0 | [#230](https://github.com/opensearch-project/search-relevance/pull/230) | Fix ImportJudgmentsProcessor to handle numeric ratings |
 
-## References
-
-- [Search Relevance Workbench Documentation](https://docs.opensearch.org/3.1/search-plugins/search-relevance/using-search-relevance-workbench/)
-- [Search Relevance Plugin Repository](https://github.com/opensearch-project/search-relevance)
-- [Dashboards Search Relevance Repository](https://github.com/opensearch-project/dashboards-search-relevance)
-- [ESCI Dataset](https://github.com/amazon-science/esci-data): Amazon Shopping Queries Dataset
-- [Taking your first steps towards search relevance](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Blog post
+### Issues (Design / RFC)
 - [Issue #12](https://github.com/opensearch-project/search-relevance/issues/12): LLM Judgment improvements
 - [Issue #14](https://github.com/opensearch-project/search-relevance/issues/14): Search request builder fix
 - [Issue #55](https://github.com/opensearch-project/search-relevance/issues/55): Lazy index creation
@@ -223,16 +240,3 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - [Issue #298](https://github.com/opensearch-project/search-relevance/issues/298): Floating-point precision in Hybrid Optimizer weights
 - [Issue #282](https://github.com/opensearch-project/search-relevance/issues/282): Hybrid Optimizer stuck in PROCESSING after judgment deletion
 - [Issue #229](https://github.com/opensearch-project/search-relevance/issues/229): Numeric rating type casting bug
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Bug fix - Fix floating-point precision issues in Hybrid Optimizer weight generation by switching to step-based iteration and rounding, ensuring clean weight pairs like 0.4/0.6 instead of 0.39999998/0.60000002
-- **v3.4.0** (2026-01-11): Bug fix - Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion by correcting failure handling to properly transition to ERROR state
-- **v3.4.0** (2026-01-11): Bug fix - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL, enabling LTR rescore queries in experiments
-- **v3.3.0** (2026-01-11): Bug fix - ImportJudgmentsProcessor now handles numeric ratings (integers, floats) in addition to strings, and preserves original judgment order
-- **v3.2.0** (2026-01-11): Major enhancements - new default SRW UI, dashboard visualization for experiments, polling mechanism for status updates, date filtering for implicit judgments, task scheduling for experiments
-- **v3.2.0** (2026-01-10): Bug fixes - backend plugin disabled messaging, pipeline error suppression, validation results overflow, Venn diagram statistics, REST API error status, input validation, pipeline parameter fix
-- **v3.2.0** (2026-01-10): Fixed toast notification error messages not rendering correctly across multiple UI components
-- **v3.1.0** (2025-06-16): Major feature additions - hybrid search experiment type, feature flag, external judgment import, Stats API, URL path changes, security integration with roles
-- **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
-- **v3.1.0** (2025-06-06): Added realistic ESCI-based test dataset with 150 queries and matching judgments

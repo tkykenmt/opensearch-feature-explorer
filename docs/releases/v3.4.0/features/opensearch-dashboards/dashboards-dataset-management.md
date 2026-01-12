@@ -144,8 +144,13 @@ convertIndexPatternToDataset('index-pattern');  // → 'dataset'
 - Terminology conversion uses MutationObserver for portal content (performance consideration)
 - Display name and description require dataset management plugin enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Index Patterns Documentation](https://docs.opensearch.org/3.0/dashboards/management/index-patterns/)
+- [Dashboards Management](https://docs.opensearch.org/3.0/dashboards/management/management-index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#10623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10623) | Add wildcard prefix support for creating index dataset |
@@ -161,11 +166,6 @@ convertIndexPatternToDataset('index-pattern');  // → 'dataset'
 | [#10791](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10791) | Dynamic index pattern → dataset terminology conversion |
 | [#10572](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10572) | Fix dataset filter based on signal type |
 | [#10692](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10692) | Restrict patterns tab to default datasets |
-
-## References
-
-- [Index Patterns Documentation](https://docs.opensearch.org/3.0/dashboards/management/index-patterns/)
-- [Dashboards Management](https://docs.opensearch.org/3.0/dashboards/management/management-index/)
 
 ## Related Feature Report
 

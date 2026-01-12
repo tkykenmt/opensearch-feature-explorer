@@ -101,19 +101,21 @@ PUT _snapshot/my-s3-repo
 - The Standard retry mode has a default maximum of 3 attempts
 - Adaptive retry mode is not supported (only Standard and Legacy)
 
-## Related PRs
+## References
 
+### Documentation
+- [AWS SDK Retry Behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html): AWS documentation on retry modes
+- [Register Snapshot Repository](https://docs.opensearch.org/2.18/api-reference/snapshots/create-repository/): OpenSearch S3 repository documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#15978](https://github.com/opensearch-project/OpenSearch/pull/15978) | Change default retry mechanism of S3 clients to Standard Mode |
 | [#16194](https://github.com/opensearch-project/OpenSearch/pull/16194) | Fix warnings from SLF4J on startup when repository-s3 is installed |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15397](https://github.com/opensearch-project/OpenSearch/issues/15397): Add jitter to downloads from remote store
 - [Issue #16152](https://github.com/opensearch-project/OpenSearch/issues/16152): SLF4J warnings when adding repository-s3
-- [AWS SDK Retry Behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html): AWS documentation on retry modes
-- [Register Snapshot Repository](https://docs.opensearch.org/2.18/api-reference/snapshots/create-repository/): OpenSearch S3 repository documentation
 
 ## Related Feature Report
 

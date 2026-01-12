@@ -197,8 +197,21 @@ interface VisNLQSavedObject {
 - **Agent Configuration**: Requires ML Commons agents to be properly configured
 - **Data Source Support**: Works with index patterns; other data source types have limited support
 
-## Related PRs
+## Change History
 
+- **v3.2.0**: Added support for natural language visualization in new dashboard ingress (Explore UI); restructured alias registration for better integration
+- **v3.1.0**: Added error handling for PPL queries with no results
+- **v3.0.0**: Added metrics collection for t2viz usage
+- **v2.18.0**: Initial implementation with Text2Vega, Text2PPL, and Data2Summary APIs
+
+## References
+
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/text-to-visualization/): Official text to visualization documentation
+- [ML Commons Agents](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/): Agent and tools documentation
+- [Flow Framework](https://docs.opensearch.org/2.18/automating-configurations/): Workflow automation for agent setup
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#264](https://github.com/opensearch-project/dashboards-assistant/pull/264) | Initial implementation of text to visualization |
@@ -208,16 +221,5 @@ interface VisNLQSavedObject {
 | v3.1.0 | [#546](https://github.com/opensearch-project/dashboards-assistant/pull/546) | Prevent navigation when PPL returns no results |
 | v3.2.0 | [#589](https://github.com/opensearch-project/dashboards-assistant/pull/589) | Support natural language visualization in new dashboard ingress (Explore UI) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #294](https://github.com/opensearch-project/dashboards-assistant/issues/294): Feature request for data summary API
-- [Documentation](https://docs.opensearch.org/2.18/dashboards/dashboards-assistant/text-to-visualization/): Official text to visualization documentation
-- [ML Commons Agents](https://docs.opensearch.org/2.18/ml-commons-plugin/agents-tools/index/): Agent and tools documentation
-- [Flow Framework](https://docs.opensearch.org/2.18/automating-configurations/): Workflow automation for agent setup
-
-## Change History
-
-- **v3.2.0**: Added support for natural language visualization in new dashboard ingress (Explore UI); restructured alias registration for better integration
-- **v3.1.0**: Added error handling for PPL queries with no results
-- **v3.0.0**: Added metrics collection for t2viz usage
-- **v2.18.0**: Initial implementation with Text2Vega, Text2PPL, and Data2Summary APIs

@@ -49,17 +49,17 @@ No migration required. This is an internal build infrastructure change that does
 
 - BWC tests require the appropriate plugin artifacts to be available in the `src/test/resources/` directory for the versions being tested
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #255](https://github.com/opensearch-project/custom-codecs/pull/255): Main implementation
+- [custom-codecs repository](https://github.com/opensearch-project/custom-codecs): OpenSearch custom Lucene codecs plugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#255](https://github.com/opensearch-project/custom-codecs/pull/255) | Fix version on bwc test dependency |
 | [#256](https://github.com/opensearch-project/custom-codecs/pull/256) | Backport to 3.1 branch |
-
-## References
-
-- [PR #255](https://github.com/opensearch-project/custom-codecs/pull/255): Main implementation
-- [custom-codecs repository](https://github.com/opensearch-project/custom-codecs): OpenSearch custom Lucene codecs plugin
 
 ## Related Feature Report
 

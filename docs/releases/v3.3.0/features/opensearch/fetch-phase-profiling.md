@@ -121,19 +121,21 @@ No migration required. The enhanced profiling is automatically available when us
 - Each inner hit definition and top hits aggregation creates a separate fetch profile entry
 - Concurrent segment search slice statistics are included for all fetch types
 
-## Related PRs
+## References
 
+### Documentation
+- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
+- [Inner Hits Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/inner-hits/): Inner hits usage
+- [Top Hits Aggregation](https://docs.opensearch.org/3.0/aggregations/metric/top-hits/): Top hits aggregation usage
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18936](https://github.com/opensearch-project/OpenSearch/pull/18936) | Expand fetch phase profiling to support inner hits and top hits aggregation phases |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18862](https://github.com/opensearch-project/OpenSearch/issues/18862): Feature request for inner hits and top hits profiling
 - [Issue #18864](https://github.com/opensearch-project/OpenSearch/issues/18864): META issue for fetch phase profiling
-- [Profile API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/profile/): Official API reference
-- [Inner Hits Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/inner-hits/): Inner hits usage
-- [Top Hits Aggregation](https://docs.opensearch.org/3.0/aggregations/metric/top-hits/): Top hits aggregation usage
 
 ## Related Feature Report
 

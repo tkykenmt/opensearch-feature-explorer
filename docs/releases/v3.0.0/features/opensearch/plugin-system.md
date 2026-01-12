@@ -89,17 +89,19 @@ No migration required. This is a backward-compatible change that relaxes validat
 - Plugins must still ensure runtime compatibility when optional dependencies are not installed
 - Some features may not function without the optional dependencies being installed (a warning is logged)
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: Installing plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Official plugin installation guide
+- [PR #5240](https://github.com/opensearch-project/security/pull/5240): Security plugin changes for resource access control
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17893](https://github.com/opensearch-project/OpenSearch/pull/17893) | Relaxes jarHell check for optionally extended plugins |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing - the feature that required this change
-- [PR #5240](https://github.com/opensearch-project/security/pull/5240): Security plugin changes for resource access control
-- [Documentation: Installing plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Official plugin installation guide
 
 ## Related Feature Report
 

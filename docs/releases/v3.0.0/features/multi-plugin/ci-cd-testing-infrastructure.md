@@ -96,8 +96,12 @@ For SQL plugin developers:
 - Remote index builder tests currently limited to fp_32 precision
 - Calcite IT framework requires specific cluster configuration for remote tests
 
-## Related PRs
+## References
 
+### Documentation
+- [remote-vector-index-builder](https://github.com/opensearch-project/remote-vector-index-builder): Remote index builder repository
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#2620](https://github.com/opensearch-project/k-NN/pull/2620) | k-NN | GitHub Action for remote index builder ITs |
@@ -107,13 +111,11 @@ For SQL plugin developers:
 | [#3469](https://github.com/opensearch-project/sql/pull/3469) | sql | Set bouncycastle version inline |
 | [#3544](https://github.com/opensearch-project/sql/pull/3544) | sql | Only enable fallback for tests that need it |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2553](https://github.com/opensearch-project/k-NN/issues/2553): Remote index builder testing task
 - [Issue #3330](https://github.com/opensearch-project/sql/issues/3330): Calcite IT framework request
 - [Issue #3411](https://github.com/opensearch-project/sql/issues/3411): Separate pushdown ITs
 - [Issue #3546](https://github.com/opensearch-project/sql/issues/3546): IT refactoring request
-- [remote-vector-index-builder](https://github.com/opensearch-project/remote-vector-index-builder): Remote index builder repository
 
 ## Related Feature Report
 

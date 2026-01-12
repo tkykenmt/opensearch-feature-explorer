@@ -94,8 +94,12 @@ No migration required. These are bugfixes and test improvements that don't chang
 - Query metrics collection requires the listener to be active
 - Security-based integration tests require separate test execution
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/2.17/observing-your-data/query-insights/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#74](https://github.com/opensearch-project/query-insights/pull/74) | Make sure listener is started when query metrics enabled |
@@ -106,13 +110,11 @@ No migration required. These are bugfixes and test improvements that don't chang
 | [#58](https://github.com/opensearch-project/query-insights/pull/58) | Fix CVE-2023-2976 for checkstyle |
 | [#59](https://github.com/opensearch-project/query-insights/pull/59) | Fix security based integration tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #57](https://github.com/opensearch-project/query-insights/issues/57): CVE-2023-2976 vulnerability report
 - [Issue #39](https://github.com/opensearch-project/query-insights/issues/39): Security integration tests issue
 - [Issue #8](https://github.com/opensearch-project/query-insights/issues/8): Integration tests tracking
 - [Issue #13357](https://github.com/opensearch-project/OpenSearch/issues/13357): Query grouping feature request
-- [Query Insights Documentation](https://docs.opensearch.org/2.17/observing-your-data/query-insights/index/)
 
 ## Related Feature Report
 

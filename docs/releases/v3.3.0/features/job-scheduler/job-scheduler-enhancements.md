@@ -155,8 +155,13 @@ plugins.jobscheduler.remote_metadata_service_name: es
 - Remote metadata storage (DynamoDB) requires pre-created tables before plugin startup
 - Multi-tenancy support requires additional configuration
 
-## Related PRs
+## References
 
+### Documentation
+- [Job Scheduler Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
+- [opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#814](https://github.com/opensearch-project/job-scheduler/pull/814) | Job History Service - creates history index recording job execution times |
@@ -165,12 +170,9 @@ plugins.jobscheduler.remote_metadata_service_name: es
 | [#831](https://github.com/opensearch-project/job-scheduler/pull/831) | Introduce configurable remote metadata client and migrate LockService to SdkClient |
 | [#810](https://github.com/opensearch-project/job-scheduler/pull/810) | Update delete_backport_branch workflow to include release-chores branches |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #808](https://github.com/opensearch-project/job-scheduler/issues/808): Feature request for Job execution History index
 - [Issue #828](https://github.com/opensearch-project/job-scheduler/issues/828): Feature request for configurable client wrapper for remote metadata store
-- [opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk): SDK for remote metadata storage
-- [Job Scheduler Documentation](https://docs.opensearch.org/3.0/monitoring-your-cluster/job-scheduler/index/)
 
 ## Related Feature Report
 

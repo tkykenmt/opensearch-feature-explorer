@@ -142,18 +142,18 @@ client.admin().indices().existsAsync(new IndicesExistsRequest(indexName))
 - The `CompletionStage` methods use default implementations that wrap `ActionListener`, so there's no performance difference
 - Error handling requires using `exceptionally()` or `handle()` methods instead of `onFailure()`
 
-## Related PRs
+## References
 
+### Documentation
+- [Java CompletionStage Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html): Java API reference
+- [PR #18998](https://github.com/opensearch-project/OpenSearch/pull/18998): Main implementation for Client interface
+- [PR #19161](https://github.com/opensearch-project/OpenSearch/pull/19161): Follow-up for IndicesAdminClient
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18998](https://github.com/opensearch-project/OpenSearch/pull/18998) | Add CompletionStage variants to Client interface |
 | [#19161](https://github.com/opensearch-project/OpenSearch/pull/19161) | Add CompletionStage variants to IndicesAdminClient |
-
-## References
-
-- [PR #18998](https://github.com/opensearch-project/OpenSearch/pull/18998): Main implementation for Client interface
-- [PR #19161](https://github.com/opensearch-project/OpenSearch/pull/19161): Follow-up for IndicesAdminClient
-- [Java CompletionStage Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html): Java API reference
 
 ## Related Feature Report
 

@@ -42,8 +42,13 @@ The Query Insights plugin v3.2.0 release includes:
 - This is a documentation-only release item
 - No functional changes to the Query Insights plugin core functionality
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Plugin Repository](https://github.com/opensearch-project/query-insights)
+- [Release Notes 3.2.0](https://github.com/opensearch-project/query-insights/blob/main/release-notes/opensearch-query-insights.release-notes-3.2.0.0.md)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#380](https://github.com/opensearch-project/query-insights/pull/380) | Version increment to 3.2.0-SNAPSHOT |
@@ -52,11 +57,6 @@ The Query Insights plugin v3.2.0 release includes:
 | [#393](https://github.com/opensearch-project/query-insights/pull/393) | Codecov fix |
 | [#394](https://github.com/opensearch-project/query-insights/pull/394) | Codecov v3 migration |
 | [#395](https://github.com/opensearch-project/query-insights/pull/395) | Release notes for 3.2.0 |
-
-## References
-
-- [Query Insights Plugin Repository](https://github.com/opensearch-project/query-insights)
-- [Release Notes 3.2.0](https://github.com/opensearch-project/query-insights/blob/main/release-notes/opensearch-query-insights.release-notes-3.2.0.0.md)
 
 ## Related Feature Report
 

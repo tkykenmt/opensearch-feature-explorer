@@ -48,16 +48,16 @@ on:
 - This is a CI/infrastructure change with no user-facing impact
 - Requires GitHub Actions workflow permissions to be properly configured
 
-## Related PRs
+## References
 
+### Documentation
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#780](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/780) | Update unit test workflow to include 3.* branch |
-
-## References
-
-- [OpenSearch Dashboards Repository](https://github.com/opensearch-project/OpenSearch-Dashboards)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
 ## Related Feature Report
 

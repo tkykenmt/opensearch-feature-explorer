@@ -153,8 +153,12 @@ The security plugin automatically injects a DLS filter, so the response only inc
 - Tenant tracking only works when multi-tenancy is enabled (`user.getRequestedTenant() != null`)
 - Dashboard APIs require the resource plugin to supply action groups via `resource-action-groups.yml`
 
-## Related PRs
+## References
 
+### Documentation
+- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Developer guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5600](https://github.com/opensearch-project/security/pull/5600) | Use DLS to automatically filter sharable resources based on `all_shared_principals` |
@@ -169,10 +173,8 @@ The security plugin automatically injects a DLS filter, so the response only inc
 | [#5666](https://github.com/opensearch-project/security/pull/5666) | Make initial share map mutable for multiple shares |
 | [#5605](https://github.com/opensearch-project/security/pull/5605) | Match index settings of `.kibana` indices |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4500](https://github.com/opensearch-project/security/issues/4500): Resource Permissions and Sharing proposal
-- [RESOURCE_SHARING_AND_ACCESS_CONTROL.md](https://github.com/opensearch-project/security/blob/main/RESOURCE_SHARING_AND_ACCESS_CONTROL.md): Developer guide
 
 ## Related Feature Report
 

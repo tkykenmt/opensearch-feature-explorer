@@ -97,19 +97,21 @@ mockito = "5.20.0"
 - Some third-party dependencies may require updates for full JDK 25 compatibility
 - HDFS repository plugin requires additional Kerberos file permission for JDK 25
 
-## Related PRs
+## References
 
+### Documentation
+- [Gradle 9.1 Release Notes](https://docs.gradle.org/9.1/release-notes.html): Official Gradle documentation
+- [Adoptium JDK 25](https://adoptium.net/): Eclipse Temurin JDK distribution
+- [OpenSearch Releases](https://opensearch.org/releases/): Official release schedule
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19575](https://github.com/opensearch-project/OpenSearch/pull/19575) | Update to Gradle 9.1 |
 | [#19698](https://github.com/opensearch-project/OpenSearch/pull/19698) | Update bundled JDK to JDK-25 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19314](https://github.com/opensearch-project/OpenSearch/issues/19314): Update bundled JDK to JDK25
-- [Gradle 9.1 Release Notes](https://docs.gradle.org/9.1/release-notes.html): Official Gradle documentation
-- [Adoptium JDK 25](https://adoptium.net/): Eclipse Temurin JDK distribution
-- [OpenSearch Releases](https://opensearch.org/releases/): Official release schedule
 
 ## Related Feature Report
 

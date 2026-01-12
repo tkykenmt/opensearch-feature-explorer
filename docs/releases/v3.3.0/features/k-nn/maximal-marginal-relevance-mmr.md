@@ -154,20 +154,24 @@ Benchmark results on OpenSearch 3.3 with 3 × r6g.2xlarge data nodes:
 - Cross-cluster search requires explicit vector field configuration
 - Nested fields containing vectors are not supported
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation: System-generated search processors](https://docs.opensearch.org/latest/search-plugins/search-pipelines/system-generated-search-processors/)
+- [Documentation: Semantic field type](https://docs.opensearch.org/latest/field-types/supported-field-types/semantic/)
+
+### Blog Posts
+- [Blog: Improving vector search diversity through native MMR](https://opensearch.org/blog/improving-vector-search-diversity-through-native-mmr/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [k-NN #2868](https://github.com/opensearch-project/k-NN/pull/2868) | Support native Maximal Marginal Relevance |
 | [neural-search #1567](https://github.com/opensearch-project/neural-search/pull/1567) | Support native MMR for neural query |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue k-NN #2804](https://github.com/opensearch-project/k-NN/issues/2804): Feature request for native MMR support
 - [Issue neural-search #1481](https://github.com/opensearch-project/neural-search/issues/1481): Feature request for MMR in neural-search
-- [Blog: Improving vector search diversity through native MMR](https://opensearch.org/blog/improving-vector-search-diversity-through-native-mmr/)
-- [Documentation: System-generated search processors](https://docs.opensearch.org/latest/search-plugins/search-pipelines/system-generated-search-processors/)
-- [Documentation: Semantic field type](https://docs.opensearch.org/latest/field-types/supported-field-types/semantic/)
 
 ## Related Feature Report
 

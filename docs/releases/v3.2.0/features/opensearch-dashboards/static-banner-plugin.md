@@ -111,16 +111,16 @@ A ResizeObserver monitors the banner's actual height and updates the CSS variabl
 - No role-based visibility or scheduled banners
 - No Advanced Settings UI for customization (planned for future releases)
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9989](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9989) | Add static banner plugin and feature flag |
 | [#10251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10251) | Fix font size and center alignment for banner text |
 | [#10254](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10254) | Reset lighthouse baseline limit for dashboard and discover |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9861](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9861): RFC - OpenSearch Dashboards Banner Plugin
 - [Issue #9990](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9990): Meta issue tracking banner plugin development
 

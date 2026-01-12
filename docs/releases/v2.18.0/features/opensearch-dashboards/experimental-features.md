@@ -127,17 +127,19 @@ curl -X POST http://localhost:5601/api/opensearch-dashboards/settings \
 - User settings are stored per username, not per session
 - No migration path for existing user preferences from other storage mechanisms
 
-## Related PRs
+## References
 
+### Documentation
+- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): OpenSearch Dashboards Workspace docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#7953](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7953) | [Workspace] Add User level setting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #7821](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7821): RFC - User level settings
 - [Issue #7909](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7909): User setting page feature request
-- [Workspace Documentation](https://docs.opensearch.org/2.18/dashboards/workspace/workspace/): OpenSearch Dashboards Workspace docs
 
 ## Related Feature Report
 

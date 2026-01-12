@@ -89,8 +89,16 @@ No migration required. These changes are backward compatible.
 - Query generation is limited to supported dataset types (index patterns)
 - The data2summary agent must be configured for the assistant entry to appear
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/): Official documentation
+- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): ML Commons integration
+
+### Blog Posts
+- [OpenSearch adds a new generative AI assistant toolkit](https://opensearch.org/blog/opensearch-adds-new-generative-ai-assistant-toolkit/): Introduction blog post
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#9647](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9647) | Support streaming when content type is event stream |
@@ -99,12 +107,6 @@ No migration required. These changes are backward compatible.
 | [#9277](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9277) | Hide the assistant entry when there isn't data2summary agent |
 | [#9552](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9552) | Query-assist removed the placeholder of last ask question |
 | [#9601](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9601) | Query assistant doesn't refresh generated ppl |
-
-## References
-
-- [OpenSearch Assistant for OpenSearch Dashboards](https://docs.opensearch.org/3.0/dashboards/dashboards-assistant/index/): Official documentation
-- [OpenSearch Assistant Toolkit](https://docs.opensearch.org/3.0/ml-commons-plugin/opensearch-assistant/): ML Commons integration
-- [OpenSearch adds a new generative AI assistant toolkit](https://opensearch.org/blog/opensearch-adds-new-generative-ai-assistant-toolkit/): Introduction blog post
 
 ## Related Feature Report
 

@@ -68,18 +68,18 @@ The fixes are transparent to users. The dynamic config system now correctly hand
 
 - If the alias points to multiple indices or a non-dynamic-config index, the server will fail to start with an error message instructing the user to remove the invalid alias.
 
-## Related PRs
+## References
 
+### Documentation
+- [Dynamic configuration in OpenSearch Dashboards](https://docs.opensearch.org/2.18/security/multi-tenancy/dynamic-config/): Official documentation
+- [PR #8160](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8160): Config related issues fix
+- [PR #8184](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8184): Dynamic config index/alias validation fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8160](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8160) | Fix config related issues and dedup category in landing page |
 | [#8184](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8184) | Fix bug when dynamic config index and alias are checked |
-
-## References
-
-- [PR #8160](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8160): Config related issues fix
-- [PR #8184](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8184): Dynamic config index/alias validation fix
-- [Dynamic configuration in OpenSearch Dashboards](https://docs.opensearch.org/2.18/security/multi-tenancy/dynamic-config/): Official documentation
 
 ## Related Feature Report
 

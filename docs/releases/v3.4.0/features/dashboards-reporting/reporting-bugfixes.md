@@ -72,17 +72,19 @@ No migration required. The fixes are backward compatible and automatically appli
 - The datetime null check fix only applies to CSV report generation from Discover
 - PDF report generation uses the updated jspdf library but behavior remains unchanged
 
-## Related PRs
+## References
 
+### Documentation
+- [CVE-2025-57810](https://nvd.nist.gov/vuln/detail/CVE-2025-57810): Security vulnerability in jspdf
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#650](https://github.com/opensearch-project/dashboards-reporting/pull/650) | Bump jspdf to fix CVE-2025-57810 |
 | [#649](https://github.com/opensearch-project/dashboards-reporting/pull/649) | Undefined and null check for date time values |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #308](https://github.com/opensearch-project/dashboards-reporting/issues/308): Original bug report for undefined date error
-- [CVE-2025-57810](https://nvd.nist.gov/vuln/detail/CVE-2025-57810): Security vulnerability in jspdf
 
 ## Related Feature Report
 

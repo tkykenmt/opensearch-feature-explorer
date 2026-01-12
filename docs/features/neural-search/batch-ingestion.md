@@ -118,21 +118,6 @@ PUT /_ingest/pipeline/sparse-pipeline
 - Only `text_embedding` and `sparse_encoding` processors support batching
 - Default batch size is 1 (no batching) for backward compatibility
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#852](https://github.com/opensearch-project/neural-search/pull/852) | Update tests to use batch_size in processor |
-| v2.16.0 | - | Batch size moved from Bulk API to processor configuration |
-| v2.14.0 | - | Initial batch ingestion support |
-
-## References
-
-- [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Make batch ingestion automatic
-- [Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/batch-ingestion/): Official docs
-- [Text Embedding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/text-embedding/): Processor docs
-- [Sparse Encoding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/sparse-encoding/): Processor docs
-
 ## Change History
 
 - **v2.17.0** (2024-09-17): Test infrastructure updated to use processor-level batch_size
@@ -141,3 +126,20 @@ PUT /_ingest/pipeline/sparse-pipeline
   - Added batch_size parameter to pipeline configuration in tests
 - **v2.16.0**: Batch size configuration moved from Bulk API to processor level
 - **v2.14.0**: Initial batch ingestion feature introduced
+
+## References
+
+### Documentation
+- [Batch Ingestion Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/remote-models/batch-ingestion/): Official docs
+- [Text Embedding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/text-embedding/): Processor docs
+- [Sparse Encoding Processor](https://docs.opensearch.org/2.17/ingest-pipelines/processors/sparse-encoding/): Processor docs
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#852](https://github.com/opensearch-project/neural-search/pull/852) | Update tests to use batch_size in processor |
+| v2.16.0 | - | Batch size moved from Bulk API to processor configuration |
+| v2.14.0 | - | Initial batch ingestion support |
+
+### Issues (Design / RFC)
+- [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Make batch ingestion automatic

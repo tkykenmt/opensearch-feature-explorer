@@ -140,20 +140,22 @@ python ubi_data_generator.py \
 - `search_config` values are hardcoded to "teamA" and "teamB"
 - Distribution probabilities for A/B testing simulation are not configurable
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-06-26): Added `search_config` field to support A/B TDI testing simulation
+
+## References
+
+### Documentation
+- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
+- [User Behavior Insights Plugin](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
+- [UBI Specification](https://github.com/o19s/ubi): Industry-standard UBI schema
+- [Amazon ESCI Dataset](https://github.com/amazon-science/esci-data): Shopping Queries Dataset
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#102](https://github.com/opensearch-project/user-behavior-insights/pull/102) | Added search_config field for A/B TDI testing |
 
-## References
-
-- [User Behavior Insights Plugin](https://github.com/opensearch-project/user-behavior-insights): Main UBI repository
-- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
-- [UBI Specification](https://github.com/o19s/ubi): Industry-standard UBI schema
+### Issues (Design / RFC)
 - [RFC: Team Draft Interleaving](https://github.com/opensearch-project/OpenSearch/issues/18383): A/B testing RFC
-- [Amazon ESCI Dataset](https://github.com/amazon-science/esci-data): Shopping Queries Dataset
-
-## Change History
-
-- **v3.2.0** (2025-06-26): Added `search_config` field to support A/B TDI testing simulation

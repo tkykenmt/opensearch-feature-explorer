@@ -135,21 +135,23 @@ GET /my-index/_search?scroll=10m
 - Scroll IDs become invalid when referenced nodes leave the cluster
 - For real-time pagination, consider using `search_after` with Point in Time (PIT) instead
 
-## Related PRs
+## Change History
 
+- **v3.4.0**: Added `StoredFieldsReader` caching per segment in `ScrollContext` to optimize sequential document access across scroll batches, addressing performance regression in versions >= 2.6.0
+- **v3.3.0**: Improved error handling - scroll IDs referencing missing nodes now return HTTP 400 (Bad Request) with `IllegalArgumentException` instead of HTTP 500 (Internal Server Error) with `IllegalStateException`
+
+## References
+
+### Documentation
+- [Scroll API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/scroll/)
+- [Point in Time API](https://docs.opensearch.org/3.0/search-plugins/searching-data/point-in-time/)
+- [Paginate Results](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#20112](https://github.com/opensearch-project/OpenSearch/pull/20112) | Cache `StoredFieldsReader` for scroll query optimization |
 | v3.3.0 | [#19031](https://github.com/opensearch-project/OpenSearch/pull/19031) | Improved error handling for invalid scroll IDs |
 
-## References
-
-- [Scroll API Documentation](https://docs.opensearch.org/3.0/api-reference/search-apis/scroll/)
-- [Point in Time API](https://docs.opensearch.org/3.0/search-plugins/searching-data/point-in-time/)
-- [Paginate Results](https://docs.opensearch.org/3.0/search-plugins/searching-data/paginate/)
+### Issues (Design / RFC)
 - [Issue #16262](https://github.com/opensearch-project/OpenSearch/issues/16262): Performance degradation with Scroll API in versions >= 2.6
-
-## Change History
-
-- **v3.4.0**: Added `StoredFieldsReader` caching per segment in `ScrollContext` to optimize sequential document access across scroll batches, addressing performance regression in versions >= 2.6.0
-- **v3.3.0**: Improved error handling - scroll IDs referencing missing nodes now return HTTP 400 (Bad Request) with `IllegalArgumentException` instead of HTTP 500 (Internal Server Error) with `IllegalStateException`

@@ -100,19 +100,19 @@ PUT /my-index
 - Compression levels limited to range [1, 6]
 - QAT `hardware` mode will fail if hardware is unavailable
 
-## Related PRs
-
-| PR | Description |
-|----|-------------|
-| [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |
-
 ## References
 
-- [Custom Codecs Repository](https://github.com/opensearch-project/custom-codecs): Source code
+### Documentation
 - [Index Codecs Documentation](https://docs.opensearch.org/3.0/im-plugin/index-codecs/): Official documentation
+- [Custom Codecs Repository](https://github.com/opensearch-project/custom-codecs): Source code
 - [Intel QAT Overview](https://www.intel.com/content/www/us/en/developer/topic-technology/open/quick-assist-technology/overview.html): Hardware acceleration
 - [qat-java Library](https://github.com/intel/qat-java): Intel QAT Java bindings
 - [Zstandard](https://github.com/facebook/zstd): ZSTD compression algorithm
+
+### Pull Requests
+| PR | Description |
+|----|-------------|
+| [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |
 
 ## Related Feature Report
 

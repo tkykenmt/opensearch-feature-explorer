@@ -182,8 +182,21 @@ Fields available depend on the datasource. GeoLite2 City provides:
 - For optimal performance, nodes should have both ingest and data roles to avoid internode calls
 - Cache is shared across all IP2Geo processors on each node
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Code modernization - replaced deprecated `URL(String)` constructor with `URI.create(String).toURL()` pattern for Java compatibility
+- **v3.2.0** (2026-01-11): Security improvements - block HTTP redirects in datasource fetching, migrate to PluginSubject for system index access
+- **v3.1.0** (2026-01-10): Bug fixes for cache synchronization - reset metadata on failure, add retry logic with cache refresh
+- **v2.10.0**: Initial implementation of IP2Geo processor
+
+## References
+
+### Documentation
+- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official processor documentation
+- [MaxMind GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data): GeoIP data source
+- [Geospatial Plugin](https://github.com/opensearch-project/geospatial): Source repository
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#795](https://github.com/opensearch-project/geospatial/pull/795) | Remove deprecated URL(String) usage |
@@ -193,16 +206,5 @@ Fields available depend on the datasource. GeoLite2 City provides:
 | v3.1.0 | [#766](https://github.com/opensearch-project/geospatial/pull/766) | Cache refresh and retry on errors |
 | v2.10.0 | - | Initial implementation |
 
-## References
-
-- [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official processor documentation
-- [MaxMind GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data): GeoIP data source
-- [Geospatial Plugin](https://github.com/opensearch-project/geospatial): Source repository
+### Issues (Design / RFC)
 - [Issue #238](https://github.com/opensearch-project/opensearch-plugins/issues/238): META - Remove usages of ThreadContext.stashContext
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Code modernization - replaced deprecated `URL(String)` constructor with `URI.create(String).toURL()` pattern for Java compatibility
-- **v3.2.0** (2026-01-11): Security improvements - block HTTP redirects in datasource fetching, migrate to PluginSubject for system index access
-- **v3.1.0** (2026-01-10): Bug fixes for cache synchronization - reset metadata on failure, add retry logic with cache refresh
-- **v2.10.0**: Initial implementation of IP2Geo processor

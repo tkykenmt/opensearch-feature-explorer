@@ -59,18 +59,18 @@ configurations.all {
 - These are build infrastructure fixes only; no runtime behavior changes
 - Requires Gradle version catalog to define `versions.slf4j`
 
-## Related PRs
+## References
 
+### Documentation
+- [Failed workflow example](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/actions/runs/17023398832/job/48255946880#step:5:74): Gradle 9 syntax failure
+- [Related fix in opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/245): Similar Gradle 9 fix
+- [Snapshot publication failure](https://github.com/opensearch-project/notifications/actions/runs/17410029596/job/50618172116): SLF4J conflict error
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1069](https://github.com/opensearch-project/notifications/pull/1069) | Fix: Update System.env syntax for Gradle 9 compatibility |
 | [#1074](https://github.com/opensearch-project/notifications/pull/1074) | Fix issue publishing maven snapshots by forcing slf4j version |
-
-## References
-
-- [Failed workflow example](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/actions/runs/17023398832/job/48255946880#step:5:74): Gradle 9 syntax failure
-- [Related fix in opensearch-remote-metadata-sdk](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/245): Similar Gradle 9 fix
-- [Snapshot publication failure](https://github.com/opensearch-project/notifications/actions/runs/17410029596/job/50618172116): SLF4J conflict error
 
 ## Related Feature Report
 

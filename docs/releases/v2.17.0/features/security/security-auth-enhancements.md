@@ -164,8 +164,13 @@ opensearch.requestHeadersAllowlist:
 - `ignore_hosts` hostname matching requires `hosts_resolver_mode: ip-hostname` configuration
 - Proxy auth in multi-auth requires proper header configuration on both OpenSearch and Dashboards
 
-## Related PRs
+## References
 
+### Documentation
+- [JWT Documentation](https://docs.opensearch.org/2.17/security/authentication-backends/jwt/): JSON Web Token authentication
+- [API Rate Limiting](https://docs.opensearch.org/2.17/security/configuration/api-rate-limiting/): Rate limiting configuration
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#4632](https://github.com/opensearch-project/security/pull/4632) | security | Allow multiple signing keys to be provided |
@@ -174,13 +179,10 @@ opensearch.requestHeadersAllowlist:
 | [#2076](https://github.com/opensearch-project/security-dashboards-plugin/pull/2076) | security-dashboards-plugin | Add Proxy Auth to Multi Auth Options |
 | [#2072](https://github.com/opensearch-project/security-dashboards-plugin/pull/2072) | security-dashboards-plugin | Use `getRedirectUrl` from OSD to generate nextUrl |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4613](https://github.com/opensearch-project/security/issues/4613): Support multiple keys in JWT configuration
 - [Issue #4262](https://github.com/opensearch-project/security/issues/4262): IP rate-limiting should support ignore hosts
 - [Issue #1724](https://github.com/opensearch-project/security-dashboards-plugin/issues/1724): Add proxy authentication support to multi-auth framework
-- [JWT Documentation](https://docs.opensearch.org/2.17/security/authentication-backends/jwt/): JSON Web Token authentication
-- [API Rate Limiting](https://docs.opensearch.org/2.17/security/configuration/api-rate-limiting/): Rate limiting configuration
 
 ## Related Feature Report
 

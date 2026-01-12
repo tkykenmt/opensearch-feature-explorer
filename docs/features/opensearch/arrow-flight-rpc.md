@@ -217,22 +217,26 @@ public class MyStreamProducer implements StreamProducer<VectorSchemaRoot, Buffer
 - **Performance Tuning**: Default configurations need tuning based on workload benchmarks
 - **Partitioned Streams**: Support for partitioned streams is planned but not yet implemented
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-02-20): Initial implementation with Flight server bootstrap logic and client for internode communication
+
+## References
+
+### Documentation
+- [Arrow Flight](https://arrow.apache.org/docs/format/Flight.html): Arrow Flight RPC documentation
+- [Apache Arrow](https://arrow.apache.org/): Apache Arrow project homepage
+
+### Blog Posts
+- [Blog: OpenSearch and Apache Arrow](https://opensearch.org/blog/opensearch-and-apache-arrow-a-tour-of-the-archery-range/): Overview of Arrow Flight integration
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#16962](https://github.com/opensearch-project/OpenSearch/pull/16962) | Arrow Flight RPC plugin with Flight server bootstrap logic and client for internode communication |
 | v3.0.0 | [#16691](https://github.com/opensearch-project/OpenSearch/pull/16691) | Library changes containing POJOs and Arrow vector APIs |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #16679](https://github.com/opensearch-project/OpenSearch/issues/16679): META - Streams using Apache Arrow and Flight
 - [Issue #16963](https://github.com/opensearch-project/OpenSearch/issues/16963): Arrow Flight server and client bootstrap logic
 - [Issue #17065](https://github.com/opensearch-project/OpenSearch/issues/17065): General purpose FlightProducer
-- [Blog: OpenSearch and Apache Arrow](https://opensearch.org/blog/opensearch-and-apache-arrow-a-tour-of-the-archery-range/): Overview of Arrow Flight integration
-- [Apache Arrow](https://arrow.apache.org/): Apache Arrow project homepage
-- [Arrow Flight](https://arrow.apache.org/docs/format/Flight.html): Arrow Flight RPC documentation
-
-## Change History
-
-- **v3.0.0** (2025-02-20): Initial implementation with Flight server bootstrap logic and client for internode communication

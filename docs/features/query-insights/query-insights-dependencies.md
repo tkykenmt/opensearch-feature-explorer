@@ -74,19 +74,19 @@ configurations.all {
 - Dependency versions must be kept in sync with OpenSearch core requirements
 - Transitive dependency conflicts may require additional resolution rules
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#371](https://github.com/opensearch-project/query-insights/pull/371) | CVE-2025-27820 and CVE-2025-48734 fix |
-| v3.3.0 | [#375](https://github.com/opensearch-project/query-insights/pull/375) | Backport to 3.1 branch |
+- **v3.3.0**: Fixed CVE-2025-27820 (httpclient5) and CVE-2025-48734 (commons-beanutils)
 
 ## References
 
+### Documentation
 - [CVE-2025-27820](https://github.com/advisories/GHSA-73m2-qfq3-56cx): Apache HttpClient domain check bypass
 - [CVE-2025-48734](https://github.com/advisories/GHSA-wxr5-93ph-8wr9): Apache Commons BeanUtils improper access control
 - [Query Insights Plugin](https://github.com/opensearch-project/query-insights): GitHub repository
 
-## Change History
-
-- **v3.3.0**: Fixed CVE-2025-27820 (httpclient5) and CVE-2025-48734 (commons-beanutils)
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#371](https://github.com/opensearch-project/query-insights/pull/371) | CVE-2025-27820 and CVE-2025-48734 fix |
+| v3.3.0 | [#375](https://github.com/opensearch-project/query-insights/pull/375) | Backport to 3.1 branch |

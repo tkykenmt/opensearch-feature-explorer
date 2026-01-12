@@ -54,16 +54,18 @@ No migration required. This is a bug fix that improves stability when using segm
 
 None specific to this fix.
 
-## Related PRs
+## References
 
+### Documentation
+- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18997](https://github.com/opensearch-project/OpenSearch/pull/18997) | Fix NPE in segment replicator |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #15836](https://github.com/opensearch-project/OpenSearch/issues/15836): Flaky test report for IndexStatsIT
-- [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
 
 ## Related Feature Report
 

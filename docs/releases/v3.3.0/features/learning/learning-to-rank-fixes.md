@@ -100,8 +100,13 @@ CI workflow updated to generate and upload coverage reports to Codecov.
 
 - These are infrastructure changes only; no functional changes to the LTR plugin itself
 
-## Related PRs
+## References
 
+### Documentation
+- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
+- [C++ Boost Float Comparison](https://www.boost.org/doc/libs/boost_1_75_0/libs/math/doc/html/math_toolkit/float_comparison.html): Reference for hybrid comparison approach
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#226](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/226) | Fix bad inclusion of log4j in plugin JAR |
@@ -110,11 +115,8 @@ CI workflow updated to generate and upload coverage reports to Codecov.
 | [#221](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/221) | Hybrid method for float comparison in assertions |
 | [#222](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/222) | Upgrade spotless plugin and address build deprecations |
 
-## References
-
+### Issues (Design / RFC)
 - [GitHub Issue #227](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/227): Code coverage request
-- [C++ Boost Float Comparison](https://www.boost.org/doc/libs/boost_1_75_0/libs/math/doc/html/math_toolkit/float_comparison.html): Reference for hybrid comparison approach
-- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
 
 ## Related Feature Report
 

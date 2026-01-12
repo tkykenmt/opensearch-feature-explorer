@@ -118,18 +118,20 @@ POST _reindex
 - Large reindex operations should use slices for better performance
 - The `slices` parameter must not exceed `index.max_slices_per_scroll` (default: 1024)
 
-## Related PRs
+## Change History
 
+- **v3.3.0** (2026-01-11): Fixed slice validation to prevent JVM OOM on coordinator when using excessively large slice values
+
+## References
+
+### Documentation
+- [Reindex API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/reindex/): Official API documentation
+- [Reindex Data Guide](https://docs.opensearch.org/3.0/im-plugin/reindex-data/): Guide for reindexing data
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#18964](https://github.com/opensearch-project/OpenSearch/pull/18964) | Fix slice validation to prevent OOM on coordinator |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18963](https://github.com/opensearch-project/OpenSearch/issues/18963): Bug report for OOM with large slice values
-- [Reindex API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/reindex/): Official API documentation
-- [Reindex Data Guide](https://docs.opensearch.org/3.0/im-plugin/reindex-data/): Guide for reindexing data
-
-## Change History
-
-- **v3.3.0** (2026-01-11): Fixed slice validation to prevent JVM OOM on coordinator when using excessively large slice values

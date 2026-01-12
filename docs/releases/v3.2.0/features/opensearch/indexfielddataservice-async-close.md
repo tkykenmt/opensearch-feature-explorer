@@ -114,16 +114,18 @@ This is a transparent bugfix. No migration steps are required.
 - The underlying inefficiency of iterating over all cache keys remains (planned for future optimization in Issue #13862)
 - Cache clearing errors are logged but do not fail the index removal operation
 
-## Related PRs
+## References
 
+### Documentation
+- [CAT Field Data API](https://docs.opensearch.org/3.0/api-reference/cat/cat-field-data/): API to view field data cache memory usage
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18888](https://github.com/opensearch-project/OpenSearch/pull/18888) | Close IndexFieldDataService asynchronously |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #13862](https://github.com/opensearch-project/OpenSearch/issues/13862): Optimize FieldDataCache removal flow (parent enhancement issue)
-- [CAT Field Data API](https://docs.opensearch.org/3.0/api-reference/cat/cat-field-data/): API to view field data cache memory usage
 
 ## Related Feature Report
 

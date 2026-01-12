@@ -104,18 +104,20 @@ PUT _snapshot/my-repo
 - Failures during the warming process are logged but do not block the merge operation
 - Timeout for merged segment replication is controlled by recovery settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Remote-backed Storage Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18683](https://github.com/opensearch-project/OpenSearch/pull/18683) | Core implementation for warming merged segments in remote-store enabled domains |
 | [#18255](https://github.com/opensearch-project/OpenSearch/pull/18255) | Local merged segment warmer support (prerequisite) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17528](https://github.com/opensearch-project/OpenSearch/issues/17528): RFC - Introduce Pre-copy Merged Segment into Segment Replication
 - [Issue #18625](https://github.com/opensearch-project/OpenSearch/issues/18625): META - Merged segment pre-copy tracking issue
-- [Remote-backed Storage Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/remote-store/index/): Official docs
 
 ## Related Feature Report
 

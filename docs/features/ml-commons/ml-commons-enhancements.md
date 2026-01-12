@@ -159,16 +159,13 @@ PUT _cluster/settings
 - Resource type support requires security plugin v3.4.0 or later
 - Batch task limits are per-cluster, not per-node
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.4.0 | [#4308](https://github.com/opensearch-project/ml-commons/pull/4308) | Declare credential and *.Authorization as sensitive param |
-| v3.4.0 | [#4333](https://github.com/opensearch-project/ml-commons/pull/4333) | Pass resourceType instead of resourceIndex to resourceSharingClient |
-| v3.4.0 | [#4474](https://github.com/opensearch-project/ml-commons/pull/4474) | Allow higher maximum number of batch inference job tasks |
+- **v3.4.0** (2026-01-11): Added sensitive parameter filtering for connector APIs, resource type support for resource sharing client, increased batch task limits (default: 100, max: 10,000)
 
 ## References
 
+### Documentation
 - [ML Commons Cluster Settings](https://docs.opensearch.org/3.0/ml-commons-plugin/cluster-settings/): Full list of configuration options
 - [Create Connector API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/connector-apis/create-connector/): Connector creation documentation
 - [Connectors Overview](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/connectors/): Remote model connector concepts
@@ -176,6 +173,9 @@ PUT _cluster/settings
 - [Asynchronous Batch Ingestion](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/async-batch-ingestion/): Batch ingestion documentation
 - [Security PR #5713](https://github.com/opensearch-project/security/pull/5713): Resource type support in security plugin
 
-## Change History
-
-- **v3.4.0** (2026-01-11): Added sensitive parameter filtering for connector APIs, resource type support for resource sharing client, increased batch task limits (default: 100, max: 10,000)
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.4.0 | [#4308](https://github.com/opensearch-project/ml-commons/pull/4308) | Declare credential and *.Authorization as sensitive param |
+| v3.4.0 | [#4333](https://github.com/opensearch-project/ml-commons/pull/4333) | Pass resourceType instead of resourceIndex to resourceSharingClient |
+| v3.4.0 | [#4474](https://github.com/opensearch-project/ml-commons/pull/4474) | Allow higher maximum number of batch inference job tasks |

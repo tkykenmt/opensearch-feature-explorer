@@ -58,8 +58,9 @@ No migration required. Version bumps are internal maintenance changes that don't
 - Version bump PRs are routine maintenance and don't introduce new features
 - Some repositories may have additional version-specific changes bundled with the bump
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18039](https://github.com/opensearch-project/OpenSearch/pull/18039) | Bump OpenSearch Core main branch to 3.0.0 |
@@ -67,8 +68,7 @@ No migration required. Version bumps are internal maintenance changes that don't
 | [#1414](https://github.com/opensearch-project/index-management/pull/1414) | Auto-increment index-management to 3.1.0-SNAPSHOT |
 | [#820](https://github.com/opensearch-project/common-utils/pull/820) | Auto-increment common-utils to 3.1.0-SNAPSHOT |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3747](https://github.com/opensearch-project/opensearch-build/issues/3747): OpenSearch build version tracking
 
 ## Related Feature Report

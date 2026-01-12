@@ -137,17 +137,17 @@ EngineConfig encryptedConfig = existingConfig.toBuilder()
 - The `toBuilder()` method creates shallow copies of mutable objects
 - Some settings like `codecName` are derived from `IndexSettings` and cannot be directly modified
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#19054](https://github.com/opensearch-project/OpenSearch/pull/19054) | Add toBuilder() method for easy config modification |
-
-## References
-
-- [opensearch-storage-encryption](https://github.com/opensearch-project/opensearch-storage-encryption): Plugin that motivated the toBuilder() addition
-- [EngineConfig.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/engine/EngineConfig.java): Source code
-
 ## Change History
 
 - **v3.3.0**: Added `toBuilder()` method; promoted `EngineConfig.Builder` and `CodecService` to public API
+
+## References
+
+### Documentation
+- [opensearch-storage-encryption](https://github.com/opensearch-project/opensearch-storage-encryption): Plugin that motivated the toBuilder() addition
+- [EngineConfig.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/index/engine/EngineConfig.java): Source code
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#19054](https://github.com/opensearch-project/OpenSearch/pull/19054) | Add toBuilder() method for easy config modification |

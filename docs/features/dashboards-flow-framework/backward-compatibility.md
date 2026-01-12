@@ -132,20 +132,20 @@ if (isPreV219) {
 - Some workflow templates are filtered out for pre-2.19 data sources
 - Manual polling with `sleep()` is used as a workaround for async operations
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-05-06): Added BWC support for 2.17 data sources with conditional API execution
+
+## References
+
+### Documentation
+- [PR #612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612): Main BWC implementation
+- [Dashboards Flow Framework](https://github.com/opensearch-project/dashboards-flow-framework): Plugin repository
+- [Flow Framework](https://github.com/opensearch-project/flow-framework): Backend plugin
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612) | Support 2.17 BWC with latest backend integrations |
 | v3.0.0 | [#591](https://github.com/opensearch-project/dashboards-flow-framework/pull/591) | Integrate with synchronous provisioning feature |
 | v3.0.0 | [#598](https://github.com/opensearch-project/dashboards-flow-framework/pull/598) | Add fine-grained error handling with verbose pipeline |
-
-## References
-
-- [PR #612](https://github.com/opensearch-project/dashboards-flow-framework/pull/612): Main BWC implementation
-- [Dashboards Flow Framework](https://github.com/opensearch-project/dashboards-flow-framework): Plugin repository
-- [Flow Framework](https://github.com/opensearch-project/flow-framework): Backend plugin
-
-## Change History
-
-- **v3.0.0** (2025-05-06): Added BWC support for 2.17 data sources with conditional API execution

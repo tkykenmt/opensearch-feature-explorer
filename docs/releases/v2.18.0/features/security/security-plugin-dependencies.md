@@ -47,8 +47,12 @@ The Security plugin received dependency updates for 5 libraries:
 - These are maintenance updates with no functional changes
 - All updates are backward compatible
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4738](https://github.com/opensearch-project/security/pull/4738) | Bump snappy-java from 1.1.10.6 to 1.1.10.7 |
@@ -56,10 +60,6 @@ The Security plugin received dependency updates for 5 libraries:
 | [#4750](https://github.com/opensearch-project/security/pull/4750) | Bump commons-io from 2.16.1 to 2.17.0 |
 | [#4749](https://github.com/opensearch-project/security/pull/4749) | Bump scala-library from 2.13.14 to 2.13.15 |
 | [#4717](https://github.com/opensearch-project/security/pull/4717) | Bump checker-qual and logback-classic |
-
-## References
-
-- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
 
 ## Related Feature Report
 

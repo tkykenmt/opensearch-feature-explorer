@@ -38,17 +38,19 @@ No migration required. This is a maintenance release with no breaking changes.
 
 None specific to this release.
 
-## Related PRs
+## References
 
+### Documentation
+- [Reporting Repository](https://github.com/opensearch-project/reporting): Export and automate PNG, PDF, and CSV reports in OpenSearch Dashboards
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1092](https://github.com/opensearch-project/reporting/pull/1092) | [AUTO] Increment version to 3.1.0-SNAPSHOT |
 | [#1101](https://github.com/opensearch-project/reporting/pull/1101) | Adding release notes for 3.1.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1095](https://github.com/opensearch-project/reporting/issues/1095): [RELEASE] Release version 3.1.0
-- [Reporting Repository](https://github.com/opensearch-project/reporting): Export and automate PNG, PDF, and CSV reports in OpenSearch Dashboards
 
 ## Related Feature Report
 

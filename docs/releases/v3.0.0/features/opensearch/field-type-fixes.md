@@ -102,18 +102,20 @@ Plugin developers who perform `instanceof` checks on `MappedFieldType` should:
 - The `unwrap()` method returns `this` for non-wrapped types, so existing code will continue to work
 - Casting after `instanceof` check should use the original `fieldType` if the wrapper behavior is needed
 
-## Related PRs
+## References
 
+### Documentation
+- [Mappings and field types](https://docs.opensearch.org/3.0/field-types/): OpenSearch field types documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17951](https://github.com/opensearch-project/OpenSearch/pull/17951) | Add unwrap function to all fieldType instanceof checks |
 | [#17627](https://github.com/opensearch-project/OpenSearch/pull/17627) | Add FilterFieldType (prerequisite) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17802](https://github.com/opensearch-project/OpenSearch/issues/17802): Unwrap FieldType before instanceof check
 - [Issue #17624](https://github.com/opensearch-project/OpenSearch/issues/17624): FilterFieldType feature request
-- [Mappings and field types](https://docs.opensearch.org/3.0/field-types/): OpenSearch field types documentation
 
 ## Related Feature Report
 

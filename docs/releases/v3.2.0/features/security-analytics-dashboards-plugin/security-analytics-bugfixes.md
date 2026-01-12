@@ -63,18 +63,18 @@ const loadIocTypes = async () => {
 
 - The correlated findings bar chart visualization has been removed; users will need to rely on the correlation graph and table views for visualizing correlated findings.
 
-## Related PRs
+## References
 
+### Documentation
+- [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/)
+- [Threat Intelligence Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/index/)
+- [Working with the Correlation Graph](https://docs.opensearch.org/3.0/security-analytics/usage/correlation-graph/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1313](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1313) | Remove correlated findings bar chart that uses vega |
 | [#1312](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1312) | Update API call to get IOC types |
-
-## References
-
-- [Security Analytics Documentation](https://docs.opensearch.org/3.0/security-analytics/)
-- [Threat Intelligence Documentation](https://docs.opensearch.org/3.0/security-analytics/threat-intelligence/index/)
-- [Working with the Correlation Graph](https://docs.opensearch.org/3.0/security-analytics/usage/correlation-graph/)
 
 ## Related Feature Report
 

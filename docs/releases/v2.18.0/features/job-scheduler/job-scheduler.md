@@ -84,18 +84,20 @@ public class MyPlugin implements Plugin, ClusterPlugin {
 - Plugins must be converted to `ClusterPlugin` to use Guice injection
 - Requires Job Scheduler plugin to be installed
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/2.18/monitoring-your-cluster/job-scheduler/index/): Job Scheduler official docs
+- [Geospatial PR #677](https://github.com/opensearch-project/geospatial/pull/677): Companion PR making Geospatial a ClusterPlugin
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return instance of LockService from createComponents |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): RFC - Strengthen System Index Protection in the Plugin Ecosystem
 - [Issue #238](https://github.com/opensearch-project/opensearch-plugins/issues/238): Remove usages of ThreadContext.stashContext across plugins
-- [Geospatial PR #677](https://github.com/opensearch-project/geospatial/pull/677): Companion PR making Geospatial a ClusterPlugin
-- [Documentation](https://docs.opensearch.org/2.18/monitoring-your-cluster/job-scheduler/index/): Job Scheduler official docs
 
 ## Related Feature Report
 

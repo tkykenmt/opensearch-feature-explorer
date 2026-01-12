@@ -52,16 +52,18 @@ The ML config index schema version was incremented from 3 to 4 to trigger the se
 - Using `0-all` can significantly increase storage requirements and indexing load on large clusters
 - This setting is only suitable for small, critical indices like the ML config index
 
-## Related PRs
+## References
 
+### Documentation
+- [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3017](https://github.com/opensearch-project/ml-commons/pull/3017) | Support index.auto_expand_replicas 0-all for .plugins-ml-config |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3002](https://github.com/opensearch-project/ml-commons/issues/3002): Feature request for 0-all support
-- [ML Commons cluster settings](https://docs.opensearch.org/2.18/ml-commons-plugin/cluster-settings/): Official documentation
 
 ## Related Feature Report
 

@@ -126,17 +126,19 @@ To reduce memory pressure during large searches:
 - Very memory-intensive queries may still fail; this is by design to protect cluster stability
 - The `batched_reduce_size` parameter affects both memory usage and reduce performance
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Initial implementation - Added circuit breaker checks for shard result buffering with automatic task cancellation
+
+## References
+
+### Documentation
+- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19066](https://github.com/opensearch-project/OpenSearch/pull/19066) | Add circuit breaking logic for shard level results |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18999](https://github.com/opensearch-project/OpenSearch/issues/18999): Original bug report
-- [Circuit Breaker Settings](https://docs.opensearch.org/3.0/install-and-configure/configuring-opensearch/circuit-breaker/): Official documentation
-
-## Change History
-
-- **v3.3.0**: Initial implementation - Added circuit breaker checks for shard result buffering with automatic task cancellation

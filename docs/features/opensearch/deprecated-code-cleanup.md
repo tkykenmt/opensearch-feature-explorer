@@ -219,8 +219,32 @@ PUT /my-index
 - NMSLIB engine deprecated; new indexes should use Faiss or Lucene
 - Legacy notebooks not accessible after upgrade to 3.0
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-04-29): Major deprecated code cleanup including:
+  - Thread pool settings removed
+  - COMPAT locale provider removed
+  - transport-nio plugin removed
+  - k-NN index settings removed (use method parameters)
+  - SQL DELETE statement and OpenDistro endpoints removed
+  - Legacy notebooks removed
+  - Non-inclusive terminology replaced in Java APIs
+  - JodaCompatibleZonedDateTime deprecated methods removed
+  - batch_size parameter removed from Bulk API
+  - System index REST API access removed
+  - New JSON processing limits introduced
+- **v2.0.0** (2022-05-26): Initial deprecation of non-inclusive terminology, thread pool settings marked for removal, mapping types parameter removed
+
+## References
+
+### Documentation
+- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/)
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+
+### Blog Posts
+- [OpenSearch 3.0 Blog Post](https://opensearch.org/blog/opensearch-3-0-what-to-expect/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#2595](https://github.com/opensearch-project/OpenSearch/issues/2595) | Cleanup deprecated thread pool settings |
@@ -241,27 +265,7 @@ PUT /my-index
 | v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove legacy notebooks |
 | v2.0.0 | [#1940](https://github.com/opensearch-project/OpenSearch/issues/1940) | Remove mapping types parameter |
 
-## References
-
-- [Breaking Changes Documentation](https://docs.opensearch.org/3.0/breaking-changes/)
-- [OpenSearch 3.0 Blog Post](https://opensearch.org/blog/opensearch-3-0-what-to-expect/)
+### Issues (Design / RFC)
 - [Meta Issue #5243](https://github.com/opensearch-project/opensearch-build/issues/5243): Full list of breaking changes
 - [Issue #2773](https://github.com/opensearch-project/OpenSearch/issues/2773): List of deprecated code removal in 3.0
 - [Issue #5214](https://github.com/opensearch-project/OpenSearch/issues/5214): Remove deprecated terms from Java API
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-
-## Change History
-
-- **v3.0.0** (2025-04-29): Major deprecated code cleanup including:
-  - Thread pool settings removed
-  - COMPAT locale provider removed
-  - transport-nio plugin removed
-  - k-NN index settings removed (use method parameters)
-  - SQL DELETE statement and OpenDistro endpoints removed
-  - Legacy notebooks removed
-  - Non-inclusive terminology replaced in Java APIs
-  - JodaCompatibleZonedDateTime deprecated methods removed
-  - batch_size parameter removed from Bulk API
-  - System index REST API access removed
-  - New JSON processing limits introduced
-- **v2.0.0** (2022-05-26): Initial deprecation of non-inclusive terminology, thread pool settings marked for removal, mapping types parameter removed

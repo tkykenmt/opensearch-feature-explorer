@@ -82,16 +82,18 @@ PUT /_cluster/settings
 - The fix is specific to the interaction between cardinality aggregation pruning and Lucene 10.3.0's `BulkScorer` behavior
 - A Lucene issue will be raised to track the underlying `DenseConjunctionBulkCollector` behavior
 
-## Related PRs
+## References
 
+### Documentation
+- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19473](https://github.com/opensearch-project/OpenSearch/pull/19473) | Fix cardinality agg pruning optimization by self collecting |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19367](https://github.com/opensearch-project/OpenSearch/issues/19367): big5.cardinality-low aggs regression after merging Lucene 10.3.0
-- [Cardinality Aggregation Documentation](https://docs.opensearch.org/3.0/aggregations/metric/cardinality/)
 
 ## Related Feature Report
 

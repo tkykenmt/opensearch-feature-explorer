@@ -108,8 +108,12 @@ source=accounts
 - Calcite engine does not support script pushdown
 - Some complex nested field scenarios may still require explicit field references
 
-## Related PRs
+## References
 
+### Documentation
+- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4885](https://github.com/opensearch-project/sql/pull/4885) | Add hashCode() and equals() to ExprJavaType value class |
@@ -161,9 +165,7 @@ source=accounts
 | [#4435](https://github.com/opensearch-project/sql/pull/4435) | Revert to _doc + _id |
 | [#4413](https://github.com/opensearch-project/sql/pull/4413) | Fallback to sub-aggregation if composite unsupported |
 
-## References
-
-- [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
+### Issues (Design / RFC)
 - [Issue #4842](https://github.com/opensearch-project/sql/issues/4842): Memory exhaustion with multiple regex
 - [Issue #4751](https://github.com/opensearch-project/sql/issues/4751): Streamstats null group handling
 - [Issue #4729](https://github.com/opensearch-project/sql/issues/4729): Redundant filter queries

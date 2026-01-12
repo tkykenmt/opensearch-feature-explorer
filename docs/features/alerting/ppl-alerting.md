@@ -263,8 +263,18 @@ POST /_plugins/_alerting/v2/monitors
 - Security roles for V2 APIs may require manual configuration
 - Per-result triggers limited to 10 alerts per execution by default
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025): Initial implementation of PPL Alerting with V2 API layer, PPLSQLMonitor, AlertV2 model, and complete CRUD operations
+
+## References
+
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): PPL query language reference
+- [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [alerting#1960](https://github.com/opensearch-project/alerting/pull/1960) | PPL Alerting: Execute Monitor and Monitor Stats |
@@ -272,13 +282,5 @@ POST /_plugins/_alerting/v2/monitors
 | v3.4.0 | [alerting#1968](https://github.com/opensearch-project/alerting/pull/1968) | PPL Alerting: Delete Monitor, More V1/V2 Separation |
 | v3.4.0 | [alerting#1972](https://github.com/opensearch-project/alerting/pull/1972) | PPL Alerting: Get Alerts and Alert Lifecycle |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue alerting#1880](https://github.com/opensearch-project/alerting/issues/1880): RFC for Alerting V2
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/): PPL query language reference
-- [Alerting Security](https://docs.opensearch.org/3.0/observing-your-data/alerting/security/): Security configuration for alerting
-
-## Change History
-
-- **v3.4.0** (2025): Initial implementation of PPL Alerting with V2 API layer, PPLSQLMonitor, AlertV2 model, and complete CRUD operations

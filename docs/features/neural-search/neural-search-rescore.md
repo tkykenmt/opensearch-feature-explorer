@@ -130,17 +130,17 @@ GET /my-nlp-index/_search
 - Only works with `float` data type vectors
 - Increases search latency due to two-phase processing
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#885](https://github.com/opensearch-project/neural-search/pull/885) | Adds rescore parameter support in neural search |
-
-## References
-
-- [Neural Query Documentation](https://docs.opensearch.org/2.17/query-dsl/specialized/neural/): Official neural query reference
-- [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/): Documentation on disk-based vector search
-
 ## Change History
 
 - **v2.17.0** (2024-09-17): Initial implementation - added rescore parameter support to neural query
+
+## References
+
+### Documentation
+- [Neural Query Documentation](https://docs.opensearch.org/2.17/query-dsl/specialized/neural/): Official neural query reference
+- [Disk-based Vector Search](https://docs.opensearch.org/2.17/search-plugins/knn/disk-based-vector-search/): Documentation on disk-based vector search
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#885](https://github.com/opensearch-project/neural-search/pull/885) | Adds rescore parameter support in neural search |

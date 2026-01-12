@@ -109,20 +109,24 @@ public class CustomIdentityPlugin extends Plugin implements IdentityPlugin, Acti
 - Only one identity plugin can be active at a time
 - The identity-shiro plugin only supports Basic authentication via the Authorization header
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-22): Removed Identity feature flag, moved authentication logic to identity plugins
+
+## References
+
+### Documentation
+- [Experimental feature flags documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/experimental/)
+
+### Blog Posts
+- [Blog: Introducing identity and access control for OpenSearch](https://opensearch.org/blog/introducing-identity/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#15430](https://github.com/opensearch-project/OpenSearch/pull/15430) | Remove identity-related feature flagged code from the RestController |
 | v2.18.0 | [#16024](https://github.com/opensearch-project/OpenSearch/pull/16024) | Remove Identity FeatureFlag |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4439](https://github.com/opensearch-project/security/issues/4439): Remove Identity feature flag
 - [Issue #238](https://github.com/opensearch-project/opensearch-plugins/issues/238): Plugin adoption of new system index mechanism
-- [Blog: Introducing identity and access control for OpenSearch](https://opensearch.org/blog/introducing-identity/)
-- [Experimental feature flags documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/experimental/)
-
-## Change History
-
-- **v2.18.0** (2024-10-22): Removed Identity feature flag, moved authentication logic to identity plugins

@@ -113,8 +113,15 @@ await UploadAssets(tutorialId, selectedDataSourceId, selectedDataSourceLabel);
 - S3 data source registration is disabled when MDS feature flag is enabled
 - Integration assets must be manually migrated if moving between data sources
 
-## Related PRs
+## References
 
+### Documentation
+- [Multiple Data Sources Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Official docs
+
+### Blog Posts
+- [Multiple Data Sources Blog](https://opensearch.org/blog/multiple-data-source/): Launch announcement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2048](https://github.com/opensearch-project/dashboards-observability/pull/2048) | Multi-data Source Support for Getting Started |
@@ -122,11 +129,8 @@ await UploadAssets(tutorialId, selectedDataSourceId, selectedDataSourceLabel);
 | [#2097](https://github.com/opensearch-project/dashboards-observability/pull/2097) | Deregister dashboards, applications, logs in MDS |
 | [#2140](https://github.com/opensearch-project/dashboards-observability/pull/2140) | Add support for register data sources during absence of local cluster |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1440](https://github.com/opensearch-project/dashboards-observability/issues/1440): Feature request for MDS support in Trace Analytics
-- [Multiple Data Sources Documentation](https://docs.opensearch.org/2.17/dashboards/management/multi-data-sources/): Official docs
-- [Multiple Data Sources Blog](https://opensearch.org/blog/multiple-data-source/): Launch announcement
 
 ## Related Feature Report
 

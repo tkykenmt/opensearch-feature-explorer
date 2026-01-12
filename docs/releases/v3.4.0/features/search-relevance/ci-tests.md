@@ -44,7 +44,9 @@ This release includes several improvements to the Search Relevance plugin's CI/C
 ## Limitations
 - Debug mode runs tests with `maxParallelForks = 1` for proper debugger attachment
 
-## Related PRs
+## References
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#311](https://github.com/opensearch-project/search-relevance/pull/311) | Fixed CalculateJudgmentsIT dependency on UBI plugin |
@@ -53,7 +55,7 @@ This release includes several improvements to the Search Relevance plugin's CI/C
 | [#307](https://github.com/opensearch-project/search-relevance/pull/307) | Removed deprecated AccessController.doPrivileged() |
 | [#288](https://github.com/opensearch-project/search-relevance/pull/288) | Small cleanups to test classes |
 
-## References
+### Issues (Design / RFC)
 - [Issue #302](https://github.com/opensearch-project/search-relevance/issues/302): CalculateJudgmentsIT UBI dependency issue
 - [Issue #299](https://github.com/opensearch-project/search-relevance/issues/299): JDWP debug support request
 - [Issue #295](https://github.com/opensearch-project/search-relevance/issues/295): Duplicate JDWP configuration bug

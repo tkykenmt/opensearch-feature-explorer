@@ -98,18 +98,22 @@ Recommendations:
 - `sampler` and `diversified_sampler` aggregations not supported
 - Terms aggregations may have additional document count error due to slice-level `shard_size` application
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official concurrent segment search docs
+
+### Blog Posts
+- [Blog: Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance benchmarks and guidelines
+- [Blog: Introducing concurrent segment search](https://opensearch.org/blog/concurrent_segment_search/): Original feature introduction
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17978](https://github.com/opensearch-project/OpenSearch/pull/17978) | Enable concurrent_segment_search auto mode by default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17981](https://github.com/opensearch-project/OpenSearch/issues/17981): Feature request for enabling auto mode by default
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/concurrent-segment-search/): Official concurrent segment search docs
-- [Blog: Exploring concurrent segment search performance](https://opensearch.org/blog/concurrent-search-follow-up/): Performance benchmarks and guidelines
-- [Blog: Introducing concurrent segment search](https://opensearch.org/blog/concurrent_segment_search/): Original feature introduction
 
 ## Related Feature Report
 

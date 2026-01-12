@@ -92,17 +92,21 @@ POST _bulk
 - Applications that relied on `batch_size` for controlling memory usage must find alternative approaches
 - Custom ingest processors should implement `batchExecute` method for optimal performance
 
-## Related PRs
+## References
 
+### Documentation
+- [Bulk API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk/): Official documentation
+
+### Blog Posts
+- [OpenSearch 3.0 Breaking Changes](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Blog post about v3.0.0 changes
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#17801](https://github.com/opensearch-project/OpenSearch/pull/17801) | Remove deprecated `batch_size` parameter from `_bulk` |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14283](https://github.com/opensearch-project/OpenSearch/issues/14283): Feature request to make batch ingestion automatic
-- [Bulk API Documentation](https://docs.opensearch.org/3.0/api-reference/document-apis/bulk/): Official documentation
-- [OpenSearch 3.0 Breaking Changes](https://opensearch.org/blog/opensearch-3-0-what-to-expect/): Blog post about v3.0.0 changes
 
 ## Related Feature Report
 

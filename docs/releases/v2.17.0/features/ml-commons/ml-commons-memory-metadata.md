@@ -121,18 +121,20 @@ curl -X PUT "http://localhost:9200/_plugins/_ml/memory/{memory_id}" \
 - The `additional_info` field values must be strings (stored as `Map<String, String>`)
 - The field uses `flat_object` type which has specific query limitations compared to nested objects
 
-## Related PRs
+## References
 
+### Documentation
+- [Memory APIs Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/api/memory-apis/index/): Official Memory API docs
+- [Create Memory API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/memory-apis/create-memory/): Create memory documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2750](https://github.com/opensearch-project/ml-commons/pull/2750) | Adding additional info for memory metadata |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2755](https://github.com/opensearch-project/ml-commons/issues/2755): Feature request for additional_info field
 - [Issue #2632](https://github.com/opensearch-project/ml-commons/issues/2632): Related discussion on application_type field
-- [Memory APIs Documentation](https://docs.opensearch.org/2.17/ml-commons-plugin/api/memory-apis/index/): Official Memory API docs
-- [Create Memory API](https://docs.opensearch.org/2.17/ml-commons-plugin/api/memory-apis/create-memory/): Create memory documentation
 
 ## Related Feature Report
 

@@ -80,16 +80,18 @@ This is an internal refactoring with no user-facing changes. No migration is req
 
 None. This is a code cleanup change that improves maintainability.
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene PR #455](https://github.com/apache/lucene/pull/455): Lucene PR that made `MultiCollector.getCollectors()` public
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19595](https://github.com/opensearch-project/OpenSearch/pull/19595) | Remove MultiCollectorWrapper and use MultiCollector in Lucene instead |
 
-## References
-
+### Issues (Design / RFC)
 - [LUCENE-10244](https://github.com/apache/lucene/issues/11280): Original Lucene issue requesting public `getCollectors()` method
-- [Lucene PR #455](https://github.com/apache/lucene/pull/455): Lucene PR that made `MultiCollector.getCollectors()` public
 
 ## Related Feature Report
 

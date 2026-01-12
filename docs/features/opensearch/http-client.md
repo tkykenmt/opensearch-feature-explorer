@@ -107,8 +107,19 @@ OpenSearchClient client = new OpenSearchClient(builder.build());
 - Custom SSL contexts need to be configured for self-signed certificates
 - Connection pool settings may need tuning for high-throughput scenarios
 
-## Related PRs
+## Change History
 
+- **v3.0.0** (2025-03-11): Bug fixes - JDK 16+ TLS fix, h2c compression fix, memory allocation optimization, HTTP/2 protocol version support
+- **v3.0.0** (2025-03-11): Migrated from Apache HttpComponents 4.x to Apache HttpClient 5.x
+
+## References
+
+### Documentation
+- [Java Client Documentation](https://docs.opensearch.org/3.0/clients/java/): Official documentation
+- [HTTPCLIENT-2219](https://issues.apache.org/jira/browse/HTTPCLIENT-2219): Apache HttpClient JDK 16+ issue
+- [Apache HttpClient 5.x](https://hc.apache.org/httpcomponents-client-5.1.x/): Apache HttpClient project
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.0.0 | [#17248](https://github.com/opensearch-project/OpenSearch/pull/17248) | Add HTTP/2 protocol support to HttpRequest.HttpVersion |
@@ -117,16 +128,7 @@ OpenSearchClient client = new OpenSearchClient(builder.build());
 | v3.0.0 | [#4827](https://github.com/opensearch-project/OpenSearch/pull/4827) | Fix JDK 16+ protocol version parsing |
 | v3.0.0 | [#4459](https://github.com/opensearch-project/OpenSearch/pull/4459) | Migrate client transports to Apache HttpClient / Core 5.x |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #9866](https://github.com/opensearch-project/OpenSearch/issues/9866): Memory over-allocation performance issue
 - [Issue opensearch-go#163](https://github.com/opensearch-project/opensearch-go/issues/163): H2C compression bug report
 - [Issue #4256](https://github.com/opensearch-project/OpenSearch/issues/4256): Original feature request
-- [HTTPCLIENT-2219](https://issues.apache.org/jira/browse/HTTPCLIENT-2219): Apache HttpClient JDK 16+ issue
-- [Java Client Documentation](https://docs.opensearch.org/3.0/clients/java/): Official documentation
-- [Apache HttpClient 5.x](https://hc.apache.org/httpcomponents-client-5.1.x/): Apache HttpClient project
-
-## Change History
-
-- **v3.0.0** (2025-03-11): Bug fixes - JDK 16+ TLS fix, h2c compression fix, memory allocation optimization, HTTP/2 protocol version support
-- **v3.0.0** (2025-03-11): Migrated from Apache HttpComponents 4.x to Apache HttpClient 5.x

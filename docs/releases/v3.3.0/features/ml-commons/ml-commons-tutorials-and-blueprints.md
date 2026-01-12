@@ -127,8 +127,15 @@ Shows how to build context-aware AI agents using OpenSearch agentic memory APIs 
 - Agentic search is an experimental feature
 - Agentic memory requires OpenSearch 3.2.0+
 
-## Related PRs
+## References
 
+### Documentation
+- [Connector Blueprints Documentation](https://docs.opensearch.org/3.3/ml-commons-plugin/remote-models/blueprints/)
+- [Agentic Memory APIs](https://docs.opensearch.org/latest/ml-commons-plugin/api/agentic-memory-apis/index/)
+- [Strands Agents](https://strandsagents.com/latest/): Agent framework documentation
+- [ColPali Model](https://huggingface.co/vidore/colpali-v1.3-hf): HuggingFace model page
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4130](https://github.com/opensearch-project/ml-commons/pull/4130) | Add ColPali blueprint |
@@ -139,13 +146,8 @@ Shows how to build context-aware AI agents using OpenSearch agentic memory APIs 
 | [#4124](https://github.com/opensearch-project/ml-commons/pull/4124) | Adding more unit tests |
 | [#4126](https://github.com/opensearch-project/ml-commons/pull/4126) | Adding more unit tests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4146](https://github.com/opensearch-project/ml-commons/issues/4146): Ollama connector request
-- [ColPali Model](https://huggingface.co/vidore/colpali-v1.3-hf): HuggingFace model page
-- [Connector Blueprints Documentation](https://docs.opensearch.org/3.3/ml-commons-plugin/remote-models/blueprints/)
-- [Agentic Memory APIs](https://docs.opensearch.org/latest/ml-commons-plugin/api/agentic-memory-apis/index/)
-- [Strands Agents](https://strandsagents.com/latest/): Agent framework documentation
 
 ## Related Feature Report
 

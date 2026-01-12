@@ -86,16 +86,18 @@ PUT /_snapshot/my-fs-repository/
 - Changing non-reloadable settings (e.g., `chunk_size`, `io_buffer_size`) alongside rate limiters will trigger a full repository recreation
 - The repository must not be in use (no active snapshot/restore operations) when changing non-reloadable settings
 
-## Related PRs
+## References
 
+### Documentation
+- [Register Snapshot Repository API](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18069](https://github.com/opensearch-project/OpenSearch/pull/18069) | Making multi rate limiters in repository dynamic |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17488](https://github.com/opensearch-project/OpenSearch/issues/17488): Feature request for dynamic snapshot rate settings
-- [Register Snapshot Repository API](https://docs.opensearch.org/3.0/api-reference/snapshots/create-repository/): Official documentation
 
 ## Related Feature Report
 

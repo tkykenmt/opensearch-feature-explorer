@@ -150,17 +150,19 @@ This is a non-breaking change that improves API behavior. Client applications th
 - This PR addresses specific error scenarios; other edge cases may still return 500 errors
 - Only affects agent execution and MCP tool registration APIs
 
-## Related PRs
+## References
 
+### Documentation
+- [Execute Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/execute-agent/): Official documentation
+- [Register MCP Tools API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/register-mcp-tools/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#3988](https://github.com/opensearch-project/ml-commons/pull/3988) | Throw proper 400 errors instead of 500 for agent execute and MCP |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3987](https://github.com/opensearch-project/ml-commons/issues/3987): Original feature request
-- [Execute Agent API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/agent-apis/execute-agent/): Official documentation
-- [Register MCP Tools API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/mcp-server-apis/register-mcp-tools/): Official documentation
 
 ## Related Feature Report
 

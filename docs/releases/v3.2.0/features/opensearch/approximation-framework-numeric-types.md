@@ -149,18 +149,22 @@ This enhancement is transparent and requires no configuration changes. Existing 
   - `track_total_hits` not set to `true`
   - Sort field matches the range query field (if sorting)
 
-## Related PRs
+## References
 
+### Documentation
+- [Lucene PR #14784](https://github.com/apache/lucene/pull/14784): Related Lucene enhancement for `pack` support in sandbox types
+
+### Blog Posts
+- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18530](https://github.com/opensearch-project/OpenSearch/pull/18530) | Extend Approximation Framework to other numeric types |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #14406](https://github.com/opensearch-project/OpenSearch/issues/14406): Feature request to expand ApproximatePointRangeQuery to other numeric types
 - [Issue #18334](https://github.com/opensearch-project/OpenSearch/issues/18334): Related tracking issue
-- [Lucene PR #14784](https://github.com/apache/lucene/pull/14784): Related Lucene enhancement for `pack` support in sandbox types
-- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
 
 ## Related Feature Report
 

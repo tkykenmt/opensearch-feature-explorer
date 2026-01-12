@@ -123,18 +123,20 @@ Existing code using the static methods will continue to work but should migrate 
 - Overriding these methods requires understanding of the document lifecycle and translog integration
 - The deprecated static methods will be removed in a future release
 
-## Related PRs
+## References
 
+### Blog Posts
+- [Introduction to OpenSearch Plugins](https://opensearch.org/blog/plugins-intro/): Blog post explaining Engine Plugin interface
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19551](https://github.com/opensearch-project/OpenSearch/pull/19551) | Refactor to move prepareIndex and prepareDelete methods to Engine class |
 | [#19950](https://github.com/opensearch-project/OpenSearch/pull/19950) | Update NoOpResult constructors in the Engine to be public |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19550](https://github.com/opensearch-project/OpenSearch/issues/19550): Feature request for custom document parsing
 - [Issue #19949](https://github.com/opensearch-project/OpenSearch/issues/19949): Feature request for public NoOpResult constructors
-- [Introduction to OpenSearch Plugins](https://opensearch.org/blog/plugins-intro/): Blog post explaining Engine Plugin interface
 
 ## Related Feature Report
 

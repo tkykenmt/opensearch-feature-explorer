@@ -108,8 +108,9 @@ IndexingStats.Stats stats = new IndexingStats.Stats.Builder()
 - Plugin developers using Stats constructors should migrate to Builder pattern
 - Serialization/deserialization behavior unchanged
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19317](https://github.com/opensearch-project/OpenSearch/pull/19317) | ThreadPoolStats.Stats Builder |
@@ -126,8 +127,7 @@ IndexingStats.Stats stats = new IndexingStats.Stats.Builder()
 | [#20014](https://github.com/opensearch-project/OpenSearch/pull/20014) | HttpStats, ScriptStats, AdaptiveSelectionStats and OsStats Builder |
 | [#19966](https://github.com/opensearch-project/OpenSearch/pull/19966) | ShardStats, WarmerStats and IndexingPressureStats Builder |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19225](https://github.com/opensearch-project/OpenSearch/issues/19225): Use Builder pattern instead of constructors for Stats API classes
 - [Issue #18723](https://github.com/opensearch-project/OpenSearch/issues/18723): Related SearchStats refactoring
 

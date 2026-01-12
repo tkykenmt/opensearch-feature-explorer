@@ -134,17 +134,19 @@ GET /my-index/_search?routing=user1
 - `_only_nodes` and `_prefer_nodes` preferences are restricted when strict weighted routing is enabled
 - Awareness-based routing may increase latency if preferred shards are overloaded
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-08-01): Fixed custom string preference to ignore awareness attributes for consistent routing
+
+## References
+
+### Documentation
+- [Search Shard Routing Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/search-shard-routing/): Official documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18848](https://github.com/opensearch-project/OpenSearch/pull/18848) | Fix: Ignore awareness attributes when custom preference is set |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18817](https://github.com/opensearch-project/OpenSearch/issues/18817): Bug report for custom preference with awareness attributes
-- [Search Shard Routing Documentation](https://docs.opensearch.org/3.0/search-plugins/searching-data/search-shard-routing/): Official documentation
-
-## Change History
-
-- **v3.2.0** (2025-08-01): Fixed custom string preference to ignore awareness attributes for consistent routing

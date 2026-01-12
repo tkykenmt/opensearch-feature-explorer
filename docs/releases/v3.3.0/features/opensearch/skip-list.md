@@ -130,8 +130,12 @@ The skip list optimization automatically kicks in when:
 - Sub-aggregation support adds overhead compared to no-op sub-aggregations
 - Requires `doc_values: true` (default)
 
-## Related PRs
+## References
 
+### Documentation
+- [Date histogram aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19130](https://github.com/opensearch-project/OpenSearch/pull/19130) | Adding logic for histogram aggregation using skiplist |
@@ -139,13 +143,11 @@ The skip list optimization automatically kicks in when:
 | [#19438](https://github.com/opensearch-project/OpenSearch/pull/19438) | Add sub aggregation support for histogram aggregation using skiplist |
 | [#19480](https://github.com/opensearch-project/OpenSearch/pull/19480) | Enable skip_list for @timestamp field or index sort field by default |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #17965](https://github.com/opensearch-project/OpenSearch/issues/17965): [SparseIndex] Modify FieldMappers to enable SkipList
 - [Issue #17283](https://github.com/opensearch-project/OpenSearch/issues/17283): Support for sub-aggregations
 - [Issue #19123](https://github.com/opensearch-project/OpenSearch/issues/19123): Enable skip_list by default in 3.3
 - [Documentation Issue #11166](https://github.com/opensearch-project/documentation-website/issues/11166): Public documentation for skip_list
-- [Date histogram aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/date-histogram/)
 
 ## Related Feature Report
 

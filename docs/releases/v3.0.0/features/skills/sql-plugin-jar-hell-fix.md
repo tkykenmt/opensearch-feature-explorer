@@ -53,15 +53,15 @@ No migration required. This is a build-time fix that does not affect plugin conf
 - The thin JAR approach means Skills plugin cannot directly execute SQL queries (it relies on the SQL plugin for actual execution)
 - Only `org/opensearch/sql/**` classes are included; other utility classes from the SQL JAR are excluded
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #543 Comment](https://github.com/opensearch-project/skills/pull/543#issuecomment-2773924634): Original issue discussion
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#545](https://github.com/opensearch-project/skills/pull/545) | Fix jar hell for sql jar |
-
-## References
-
-- [PR #543 Comment](https://github.com/opensearch-project/skills/pull/543#issuecomment-2773924634): Original issue discussion
 
 ## Related Feature Report
 

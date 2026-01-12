@@ -63,17 +63,17 @@ When using the `LogPatternAnalysisTool` in log insight mode (without baseline ti
 - The `max_sample_count` is currently hardcoded and not configurable by users
 - Sample logs are selected by the PPL patterns command, not by the tool itself
 
-## Related PRs
+## References
 
+### Documentation
+- [Log Pattern Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/log-pattern-tool/): Official documentation
+- [LogPatternAnalysisTool Source](https://github.com/opensearch-project/skills/blob/main/src/main/java/org/opensearch/agent/tools/LogPatternAnalysisTool.java): Implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#678](https://github.com/opensearch-project/skills/pull/678) | Backport: Increase max_sample_count to 5 for log insight |
 | [#677](https://github.com/opensearch-project/skills/pull/677) | Original: Increase max_sample_count to 5 for log insight |
-
-## References
-
-- [LogPatternAnalysisTool Source](https://github.com/opensearch-project/skills/blob/main/src/main/java/org/opensearch/agent/tools/LogPatternAnalysisTool.java): Implementation
-- [Log Pattern Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/log-pattern-tool/): Official documentation
 
 ## Related Feature Report
 

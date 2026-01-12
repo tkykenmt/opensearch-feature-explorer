@@ -129,21 +129,23 @@ source=logs | patterns message by level mode=aggregation | fields level, pattern
 - Brain algorithm requires sufficient memory for large datasets (controlled by `buffer_limit`)
 - V2 engine does not support `show_numbered_token` option
 
-## Related PRs
-
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.3.0 | [#4155](https://github.com/opensearch-project/sql/pull/4155) | Add sample_logs output field |
-| v3.3.0 | [#4402](https://github.com/opensearch-project/sql/pull/4402) | Add show_numbered_token option, fix continuous wildcards bug |
-
-## References
-
-- [Issue #4139](https://github.com/opensearch-project/sql/issues/4139): Feature request for sample_logs field
-- [Issue #4364](https://github.com/opensearch-project/sql/issues/4364): Feature request for optional numbered tokens
-- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
-
 ## Change History
 
 - **v3.3.0** (2026-01-14): Added `sample_logs` output field, `show_numbered_token` option, fixed continuous wildcards bug
 - **v3.1.0**: Added aggregation mode, Brain algorithm support
 - **v3.0.0**: Initial patterns command implementation
+
+## References
+
+### Documentation
+- [PPL Commands Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/functions/): Official PPL commands reference
+
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.3.0 | [#4155](https://github.com/opensearch-project/sql/pull/4155) | Add sample_logs output field |
+| v3.3.0 | [#4402](https://github.com/opensearch-project/sql/pull/4402) | Add show_numbered_token option, fix continuous wildcards bug |
+
+### Issues (Design / RFC)
+- [Issue #4139](https://github.com/opensearch-project/sql/issues/4139): Feature request for sample_logs field
+- [Issue #4364](https://github.com/opensearch-project/sql/issues/4364): Feature request for optional numbered tokens

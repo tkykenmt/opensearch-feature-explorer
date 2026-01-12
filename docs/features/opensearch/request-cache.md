@@ -119,21 +119,23 @@ GET /_nodes/stats/indices/request_cache
 - Queries on keyword fields with non-default `use_similarity` or `split_queries_on_whitespace` are not cacheable
 - Cache size is limited to a percentage of heap memory
 
-## Related PRs
+## Change History
 
+- **v3.3.0**: Optimized cache clear performance by adding node-level hook; disabled caching for keyword fields with non-default `use_similarity` or `split_queries_on_whitespace`
+
+## References
+
+### Documentation
+- [Documentation: Index request cache](https://docs.opensearch.org/3.0/search-plugins/caching/request-cache/)
+- [Documentation: Tiered cache](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.3.0 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup |
 | v3.3.0 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default keyword parameters |
 
-## References
-
-- [Documentation: Index request cache](https://docs.opensearch.org/3.0/search-plugins/caching/request-cache/)
-- [Documentation: Tiered cache](https://docs.opensearch.org/3.0/search-plugins/caching/tiered-cache/)
+### Issues (Design / RFC)
 - [Issue #19118](https://github.com/opensearch-project/OpenSearch/issues/19118): Repeated iteration through keys on cache clear API
 - [Issue #19183](https://github.com/opensearch-project/OpenSearch/issues/19183): Add node-level hook to TransportBroadcastByNodeAction
 - [Issue #19279](https://github.com/opensearch-project/OpenSearch/issues/19279): Dynamically updating mapping parameters does not wipe request cache entries
-
-## Change History
-
-- **v3.3.0**: Optimized cache clear performance by adding node-level hook; disabled caching for keyword fields with non-default `use_similarity` or `split_queries_on_whitespace`

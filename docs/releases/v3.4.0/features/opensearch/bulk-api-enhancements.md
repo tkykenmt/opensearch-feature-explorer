@@ -106,16 +106,18 @@ POST _bulk?error_trace=true
 - Stack traces can significantly increase response size for bulk operations with many failures
 - Stack traces are only included when `http.detailed_errors.enabled=true`
 
-## Related PRs
+## References
 
+### Documentation
+- [Common REST Parameters](https://docs.opensearch.org/3.0/api-reference/common-parameters/): Documentation for error_trace parameter
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19985](https://github.com/opensearch-project/OpenSearch/pull/19985) | Implement error_trace parameter for HTTP Bulk requests |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19945](https://github.com/opensearch-project/OpenSearch/issues/19945): Bug report - Bulk API ignores error_trace query parameter
-- [Common REST Parameters](https://docs.opensearch.org/3.0/api-reference/common-parameters/): Documentation for error_trace parameter
 
 ## Related Feature Report
 

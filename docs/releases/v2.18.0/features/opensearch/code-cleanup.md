@@ -99,19 +99,19 @@ public String toString() {
 - These are internal code improvements with no user-facing API changes
 - The query approximation refactoring requires the `approximate_point_range_query` feature flag to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #16273](https://github.com/opensearch-project/OpenSearch/pull/16273): Query approximation framework cleanup
+- [PR #15386](https://github.com/opensearch-project/OpenSearch/pull/15386): Stream API optimization
+- [PR #15362](https://github.com/opensearch-project/OpenSearch/pull/15362): RemoteStoreNodeAttribute typo fix
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16273](https://github.com/opensearch-project/OpenSearch/pull/16273) | Remove ApproximateIndexOrDocValuesQuery |
 | [#15386](https://github.com/opensearch-project/OpenSearch/pull/15386) | Fix inefficient Stream API call chains ending with count() |
 | [#15362](https://github.com/opensearch-project/OpenSearch/pull/15362) | Fix typo super->sb in method toString() of RemoteStoreNodeAttribute |
-
-## References
-
-- [PR #16273](https://github.com/opensearch-project/OpenSearch/pull/16273): Query approximation framework cleanup
-- [PR #15386](https://github.com/opensearch-project/OpenSearch/pull/15386): Stream API optimization
-- [PR #15362](https://github.com/opensearch-project/OpenSearch/pull/15362): RemoteStoreNodeAttribute typo fix
 
 ## Related Feature Report
 

@@ -142,8 +142,26 @@ POST my_index/_search
 - Feature names in models must match feature set definitions
 - Models are copied at creation time; changes to feature sets don't affect existing models
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix; Test infrastructure enhancements - narrowed index cleanup scope to LTR indexes only, improved test isolation for parallel execution
+- **v3.3.0** (2026-01-14): Build infrastructure fixes - log4j exclusion from JAR, Gradle 9 compatibility, hybrid float comparison for tests, code coverage reporting, spotless plugin upgrade
+- **v3.2.0** (2025-09-16): Added XGBoost missing values support for correct NaN handling; Build infrastructure upgrade (Gradle 8.14, JDK 24 support); fixed flaky test with ULP tolerance adjustment
+- **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test
+
+## References
+
+### Documentation
+- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
+- [ML Ranking Core Concepts](https://docs.opensearch.org/3.0/search-plugins/ltr/core-concepts/)
+- [Working with Features](https://docs.opensearch.org/3.0/search-plugins/ltr/working-with-features/)
+- [Uploading Trained Models](https://docs.opensearch.org/3.0/search-plugins/ltr/training-models/)
+- [Searching with LTR](https://docs.opensearch.org/3.0/search-plugins/ltr/searching-with-your-model/)
+- [XGBoost Documentation](https://xgboost.readthedocs.io/)
+- [RankLib Documentation](https://sourceforge.net/p/lemur/wiki/RankLib/)
+- [GitHub Repository](https://github.com/opensearch-project/opensearch-learning-to-rank-base)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#264](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/264) | Use OpenSearch Version.computeID for legacy version IDs |
@@ -162,21 +180,3 @@ POST my_index/_search
 | v3.2.0 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Fix flaky test with ULP tolerance adjustment |
 | v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format |
 | v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |
-
-## References
-
-- [Learning to Rank Documentation](https://docs.opensearch.org/3.0/search-plugins/ltr/index/)
-- [ML Ranking Core Concepts](https://docs.opensearch.org/3.0/search-plugins/ltr/core-concepts/)
-- [Working with Features](https://docs.opensearch.org/3.0/search-plugins/ltr/working-with-features/)
-- [Uploading Trained Models](https://docs.opensearch.org/3.0/search-plugins/ltr/training-models/)
-- [Searching with LTR](https://docs.opensearch.org/3.0/search-plugins/ltr/searching-with-your-model/)
-- [GitHub Repository](https://github.com/opensearch-project/opensearch-learning-to-rank-base)
-- [XGBoost Documentation](https://xgboost.readthedocs.io/)
-- [RankLib Documentation](https://sourceforge.net/p/lemur/wiki/RankLib/)
-
-## Change History
-
-- **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix; Test infrastructure enhancements - narrowed index cleanup scope to LTR indexes only, improved test isolation for parallel execution
-- **v3.3.0** (2026-01-14): Build infrastructure fixes - log4j exclusion from JAR, Gradle 9 compatibility, hybrid float comparison for tests, code coverage reporting, spotless plugin upgrade
-- **v3.2.0** (2025-09-16): Added XGBoost missing values support for correct NaN handling; Build infrastructure upgrade (Gradle 8.14, JDK 24 support); fixed flaky test with ULP tolerance adjustment
-- **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test

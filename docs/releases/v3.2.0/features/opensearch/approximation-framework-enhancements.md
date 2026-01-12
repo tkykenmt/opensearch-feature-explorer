@@ -134,20 +134,22 @@ These enhancements are transparent and require no configuration changes. Queries
 - Multiple sort fields will disable approximation to ensure result correctness
 - `search_after` with multiple tie-breaker values is not optimized (falls back to standard execution)
 
-## Related PRs
+## References
 
+### Blog Posts
+- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18896](https://github.com/opensearch-project/OpenSearch/pull/18896) | Support `search_after` numeric queries with Approximation Framework |
 | [#18511](https://github.com/opensearch-project/OpenSearch/pull/18511) | Added approximation support for range queries with `now` in date field |
 | [#18763](https://github.com/opensearch-project/OpenSearch/pull/18763) | Disable approximation framework when dealing with multiple sorts |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18546](https://github.com/opensearch-project/OpenSearch/issues/18546): Feature request for `search_after` support
 - [Issue #18503](https://github.com/opensearch-project/OpenSearch/issues/18503): Bug report for `now` range queries skipping approximation
 - [Issue #18619](https://github.com/opensearch-project/OpenSearch/issues/18619): META issue for Approximation Framework
-- [OpenSearch Approximation Framework Blog](https://opensearch.org/blog/opensearch-approximation-framework/): Comprehensive overview
 
 ## Related Feature Report
 

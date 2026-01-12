@@ -129,19 +129,21 @@ flowchart TD
 - Binary vector indexes currently use the default build strategy
 - The `append` parameter in vector transfer must be managed carefully to avoid memory issues
 
-## Related PRs
+## Change History
 
+- **v2.17.0** (2024-09-17): Initial implementation of iterative graph build for FAISS indexes
+
+## References
+
+### Documentation
+- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Official k-NN index documentation
+- [FAISS Documentation](https://github.com/facebookresearch/faiss/wiki): FAISS library documentation
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.17.0 | [#1950](https://github.com/opensearch-project/k-NN/pull/1950) | Integrates FAISS iterative builds with NativeEngines990KnnVectorsFormat |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1853](https://github.com/opensearch-project/k-NN/issues/1853): RFC - Integrating KNNVectorsFormat in Native Vector Search Engine
 - [Issue #1087](https://github.com/opensearch-project/k-NN/issues/1087): Original investigation on KNNVectorsFormat migration
-- [k-NN Index Documentation](https://docs.opensearch.org/2.17/search-plugins/knn/knn-index/): Official k-NN index documentation
-- [FAISS Documentation](https://github.com/facebookresearch/faiss/wiki): FAISS library documentation
-
-## Change History
-
-- **v2.17.0** (2024-09-17): Initial implementation of iterative graph build for FAISS indexes

@@ -184,8 +184,17 @@ source=metrics
 - Functions require the Calcite-based PPL engine
 - `mvdedup` preserves first occurrence only; cannot preserve last
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2026-01-11): Added `mvappend`, `mvindex`, `mvdedup`, `tostring`, and `regexp_replace` functions
+
+## References
+
+### Documentation
+- [OpenSearch PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
+- [OpenSearch SQL Functions](https://docs.opensearch.org/3.0/search-plugins/sql/functions/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#4438](https://github.com/opensearch-project/sql/pull/4438) | Add `mvappend` function |
@@ -194,15 +203,8 @@ source=metrics
 | v3.4.0 | [#4794](https://github.com/opensearch-project/sql/pull/4794) | Support `mvindex` eval function |
 | v3.4.0 | [#4828](https://github.com/opensearch-project/sql/pull/4828) | Support `mvdedup` eval function |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4492](https://github.com/opensearch-project/sql/issues/4492): tostring implementation request
 - [Issue #4433](https://github.com/opensearch-project/sql/issues/4433): mvappend function request
 - [Issue #4764](https://github.com/opensearch-project/sql/issues/4764): regexp_replace alias request
 - [RFC #4287](https://github.com/opensearch-project/sql/issues/4287): tostring function RFC
-- [OpenSearch PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/ppl/index/)
-- [OpenSearch SQL Functions](https://docs.opensearch.org/3.0/search-plugins/sql/functions/)
-
-## Change History
-
-- **v3.4.0** (2026-01-11): Added `mvappend`, `mvindex`, `mvdedup`, `tostring`, and `regexp_replace` functions

@@ -101,17 +101,19 @@ No migration is required. The fix is transparent and automatically applies to al
 - Sorting performance on wildcard fields may be slightly slower than keyword fields due to disabled pruning optimization
 - This is a necessary trade-off to ensure correctness given the n-gram indexing strategy
 
-## Related PRs
+## References
 
+### Documentation
+- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
+- [Lucene TermOrdValComparator](https://github.com/apache/lucene/blob/485141dd34ea866ad9dc59843770969d1b0c8fa2/lucene/core/src/java/org/apache/lucene/search/comparators/TermOrdValComparator.java#L569-L572): Source of the pruning logic
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18568](https://github.com/opensearch-project/OpenSearch/pull/18568) | Disable pruning for `doc_values` for the wildcard field mapper |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18461](https://github.com/opensearch-project/OpenSearch/issues/18461): Bug report for wildcard sort error
-- [Lucene TermOrdValComparator](https://github.com/apache/lucene/blob/485141dd34ea866ad9dc59843770969d1b0c8fa2/lucene/core/src/java/org/apache/lucene/search/comparators/TermOrdValComparator.java#L569-L572): Source of the pruning logic
-- [Wildcard Field Documentation](https://docs.opensearch.org/3.0/field-types/supported-field-types/wildcard/): Official documentation
 
 ## Related Feature Report
 

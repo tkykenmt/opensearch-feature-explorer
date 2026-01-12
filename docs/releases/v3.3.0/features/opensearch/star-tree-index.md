@@ -113,19 +113,21 @@ For multi-terms aggregations to use star-tree:
 - Nested metric sub-aggregations (metric inside metric) not supported with star-tree
 - Unsupported sub-aggregations fall back to standard aggregation path
 
-## Related PRs
+## References
 
+### Documentation
+- [Documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Star-tree index documentation
+- [Multi-terms Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/multi-terms/): Multi-terms aggregation reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations using star-tree |
 | [#19209](https://github.com/opensearch-project/OpenSearch/pull/19209) | Add search & star-tree search query failure count metrics |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18398](https://github.com/opensearch-project/OpenSearch/issues/18398): Multi-terms aggregation feature request
 - [Issue #19210](https://github.com/opensearch-project/OpenSearch/issues/19210): Query failure stats feature request
-- [Documentation](https://docs.opensearch.org/3.0/search-plugins/star-tree-index/): Star-tree index documentation
-- [Multi-terms Aggregation](https://docs.opensearch.org/3.0/aggregations/bucket/multi-terms/): Multi-terms aggregation reference
 
 ## Related Feature Report
 

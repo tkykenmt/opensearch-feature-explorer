@@ -171,19 +171,19 @@ await savedQueryService.deleteSavedQuery(savedQuery.id);
 - New flyout UI requires query enhancements to be enabled
 - Saved queries are stored as saved objects and subject to saved object permissions
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-29): Initial implementation with flyout-based UI and sample queries on no results page
+
+## References
+
+### Documentation
+- [Discover Documentation](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official Discover documentation
+- [PR #8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469): Main implementation
+- [PR #8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616): Sample queries feature
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469) | Enhances the saved query UX with flyout-based interface |
 | v2.18.0 | [#8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616) | Adds sample queries and saved queries to Discover no results page |
-
-## References
-
-- [PR #8469](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8469): Main implementation
-- [PR #8616](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8616): Sample queries feature
-- [Discover Documentation](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official Discover documentation
-
-## Change History
-
-- **v2.18.0** (2024-10-29): Initial implementation with flyout-based UI and sample queries on no results page

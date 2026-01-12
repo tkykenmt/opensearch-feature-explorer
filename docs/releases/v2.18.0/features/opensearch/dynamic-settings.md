@@ -89,15 +89,15 @@ No migration required. Existing clusters will continue using default values. Set
 - Very low values for timeout settings can cause cluster instability
 - The `follower_check.timeout` maximum is now 150s (increased from 60s)
 
-## Related PRs
+## References
 
+### Documentation
+- [Cluster Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster settings reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#16347](https://github.com/opensearch-project/OpenSearch/pull/16347) | Make multiple settings dynamic for tuning on larger clusters |
-
-## References
-
-- [Cluster Settings Documentation](https://docs.opensearch.org/2.18/install-and-configure/configuring-opensearch/cluster-settings/): Official cluster settings reference
 
 ## Related Feature Report
 

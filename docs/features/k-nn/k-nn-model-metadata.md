@@ -164,18 +164,18 @@ PUT /my-index
 - Model blob size is limited by the model cache size setting
 - Training requires sufficient native memory on the assigned node
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v2.17.0 | [#2005](https://github.com/opensearch-project/k-NN/pull/2005) | Add model version to model metadata and change model metadata reads to be from cluster metadata |
+- **v2.17.0** (2024-09-17): Added model version tracking to metadata; optimized metadata reads to use cluster metadata directly instead of full model retrieval
 
 ## References
 
+### Documentation
 - [k-NN Plugin API](https://docs.opensearch.org/latest/search-plugins/knn/api/): Official API documentation
 - [Approximate k-NN Search](https://docs.opensearch.org/latest/search-plugins/knn/approximate-knn/): Training and using models
 - [k-NN Vector Quantization](https://docs.opensearch.org/latest/search-plugins/knn/knn-vector-quantization/): PQ and quantization methods
 
-## Change History
-
-- **v2.17.0** (2024-09-17): Added model version tracking to metadata; optimized metadata reads to use cluster metadata directly instead of full model retrieval
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.17.0 | [#2005](https://github.com/opensearch-project/k-NN/pull/2005) | Add model version to model metadata and change model metadata reads to be from cluster metadata |

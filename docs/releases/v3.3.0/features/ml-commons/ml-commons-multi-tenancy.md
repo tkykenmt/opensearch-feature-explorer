@@ -97,16 +97,18 @@ The tenant ID is automatically propagated from the model's tenant context to the
 - Only `LocalRegexGuardrail` has been updated for multi-tenancy in this release
 - `ModelGuardrail` stores tenant context but does not yet use it for validation
 
-## Related PRs
+## References
 
+### Documentation
+- [Guardrails Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/guardrails/): Official guardrails configuration guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4120](https://github.com/opensearch-project/ml-commons/pull/4120) | Support multi-tenancy for LocalRegexGuardrail |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4119](https://github.com/opensearch-project/ml-commons/issues/4119): Feature request for multi-tenancy support in Guardrails
-- [Guardrails Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/remote-models/guardrails/): Official guardrails configuration guide
 
 ## Related Feature Report
 

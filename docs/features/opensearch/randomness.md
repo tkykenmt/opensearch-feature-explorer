@@ -94,18 +94,20 @@ Randomness.shuffle(items);
 - FIPS mode requires BouncyCastle FIPS provider on the classpath
 - Test reproducibility requires the `tests.seed` system property to be set
 
-## Related PRs
+## Change History
 
+- **v3.2.0** (2025-07-16): Fixed blocking issue by reverting to `new SecureRandom()` in non-FIPS mode
+
+## References
+
+### Documentation
+- [Java SecureRandom Documentation](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/SecureRandom.html)
+- [BouncyCastle FIPS Documentation](https://www.bouncycastle.org/fips-java/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.2.0 | [#18758](https://github.com/opensearch-project/OpenSearch/pull/18758) | Use `new SecureRandom()` to avoid blocking |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18729](https://github.com/opensearch-project/OpenSearch/issues/18729): OpenSearch 3.1.0 freezes when running on AlmaLinux 8
-- [Java SecureRandom Documentation](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/security/SecureRandom.html)
-- [BouncyCastle FIPS Documentation](https://www.bouncycastle.org/fips-java/)
-
-## Change History
-
-- **v3.2.0** (2025-07-16): Fixed blocking issue by reverting to `new SecureRandom()` in non-FIPS mode

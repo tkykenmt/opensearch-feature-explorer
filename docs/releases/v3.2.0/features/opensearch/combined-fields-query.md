@@ -99,17 +99,19 @@ GET my_index/_search
 - Only text fields are supported; attempting to use keyword, numeric, or other field types will result in an error
 - Phrase queries (quoted strings) are explicitly not supported
 
-## Related PRs
+## References
 
+### Blog Posts
+- [BM25F and combined_fields query](https://opensourceconnections.com/blog/2021/06/30/better-term-centric-scoring-in-elasticsearch-with-bm25f-and-the-combined_fields-query/): Background on BM25F scoring algorithm
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18724](https://github.com/opensearch-project/OpenSearch/pull/18724) | Add combined_fields query to utilize Lucene's CombinedField (BM25F Text) |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #3996](https://github.com/opensearch-project/OpenSearch/issues/3996): Original feature request for combined_fields support
 - [Documentation Issue #10209](https://github.com/opensearch-project/documentation-website/issues/10209): Documentation request for combined_fields query
-- [BM25F and combined_fields query](https://opensourceconnections.com/blog/2021/06/30/better-term-centric-scoring-in-elasticsearch-with-bm25f-and-the-combined_fields-query/): Background on BM25F scoring algorithm
 
 ## Related Feature Report
 

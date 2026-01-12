@@ -124,21 +124,21 @@ jobs:
 - External contributors may experience CI delays
 - CODEOWNERS file must be kept up-to-date
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-10-29): Added workflow approval system, upgraded artifact actions to v4, updated developer guide
+
+## References
+
+### Documentation
+- [GitHub Actions Environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment): GitHub documentation on environments
+- [MAINTAINERS.md](https://github.com/opensearch-project/ml-commons/blob/main/MAINTAINERS.md): List of maintainers
+- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/ml-commons/blob/main/DEVELOPER_GUIDE.md): Developer guide with approval info
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#3005](https://github.com/opensearch-project/ml-commons/pull/3005) | Add Test Env Require Approval Action |
 | v2.18.0 | [#3162](https://github.com/opensearch-project/ml-commons/pull/3162) | Upgrading upload artifact to v4 |
 | v2.18.0 | [#2881](https://github.com/opensearch-project/ml-commons/pull/2881) | Bump actions/download-artifact from 3 to 4.1.7 |
 | v2.18.0 | [#3062](https://github.com/opensearch-project/ml-commons/pull/3062) | Updates dev guide to inform the workflow approval step |
-
-## References
-
-- [MAINTAINERS.md](https://github.com/opensearch-project/ml-commons/blob/main/MAINTAINERS.md): List of maintainers
-- [DEVELOPER_GUIDE.md](https://github.com/opensearch-project/ml-commons/blob/main/DEVELOPER_GUIDE.md): Developer guide with approval info
-- [GitHub Actions Environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment): GitHub documentation on environments
-
-## Change History
-
-- **v2.18.0** (2024-10-29): Added workflow approval system, upgraded artifact actions to v4, updated developer guide

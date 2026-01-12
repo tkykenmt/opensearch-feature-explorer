@@ -256,8 +256,21 @@ npm run start:ag-ui
 - **Limited Testing**: Comprehensive test coverage is ongoing
 - **Session-based Persistence**: Conversation history persists within browser session only (v3.4.0+)
 
-## Related PRs
+## Change History
 
+- **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
+- **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent
+
+## References
+
+### Documentation
+- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/index/)
+- [AG-UI Protocol Documentation](https://docs.ag-ui.com/introduction)
+- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
+- [AWS Bedrock Documentation](https://docs.aws.amazon.com/bedrock/)
+- [Model Context Protocol](https://modelcontextprotocol.io/)
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v3.4.0 | [#10824](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10824) | Register chat as the global search command |
@@ -271,17 +284,6 @@ npm run start:ag-ui
 | v3.3.0 | [#10612](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10612) | AG-UI compliant LangGraph ReAct agent implementation |
 | v3.3.0 | [#10624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10624) | Mark context provider and chat as experimental |
 
-## References
-
+### Issues (Design / RFC)
 - [RFC #10585](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10585): AI Assistant Framework for OpenSearch Dashboards
 - [RFC #10571](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10571): Context Design and Page Tools Architecture
-- [OpenSearch Assistant Documentation](https://docs.opensearch.org/3.4/dashboards/dashboards-assistant/index/)
-- [AG-UI Protocol Documentation](https://docs.ag-ui.com/introduction)
-- [Model Context Protocol](https://modelcontextprotocol.io/)
-- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
-- [AWS Bedrock Documentation](https://docs.aws.amazon.com/bedrock/)
-
-## Change History
-
-- **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
-- **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent

@@ -93,8 +93,12 @@ No migration required. These are bug fixes with no breaking changes.
 
 - The internal index exclusion only applies to requests where all indices match the `top_queries-*` pattern. Mixed queries (internal + user indices) are still tracked.
 
-## Related PRs
+## References
 
+### Documentation
+- [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
+
+### Pull Requests
 | PR | Repository | Description |
 |----|------------|-------------|
 | [#481](https://github.com/opensearch-project/query-insights/pull/481) | query-insights | Exclude internal `top_queries-*` indices from tracking |
@@ -102,10 +106,8 @@ No migration required. These are bug fixes with no breaking changes.
 | [#396](https://github.com/opensearch-project/query-insights-dashboards/pull/396) | query-insights-dashboards | Remove "Open in search comparison" button |
 | [#435](https://github.com/opensearch-project/query-insights-dashboards/pull/435) | query-insights-dashboards | Fix Jest test failures due to Monaco editor imports |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #477](https://github.com/opensearch-project/query-insights/issues/477): `top_queries-*` indices not filtered when not using from & to parameters
-- [Query Insights Documentation](https://docs.opensearch.org/3.0/observing-your-data/query-insights/index/)
 
 ## Related Feature Report
 

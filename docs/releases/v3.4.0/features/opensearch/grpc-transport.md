@@ -170,8 +170,14 @@ public class MyPlugin extends Plugin implements GrpcInterceptorProvider {
 - **typed_keys**: Parameter not supported in gRPC requests
 - **global_params**: Parameter not supported in Bulk/Search requests
 
-## Related PRs
+## References
 
+### Documentation
+- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official docs
+- [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
+- [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#19005](https://github.com/opensearch-project/OpenSearch/pull/19005) | Introduce gRPC Interceptor Chain with pluggable interceptors |
@@ -187,14 +193,10 @@ public class MyPlugin extends Plugin implements GrpcInterceptorProvider {
 | [#20162](https://github.com/opensearch-project/OpenSearch/pull/20162) | Throw exceptions for unsupported gRPC request fields |
 | [#5763](https://github.com/opensearch-project/security/pull/5763) | Fix security plugin compilation for protobuf 0.23.0 |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #19526](https://github.com/opensearch-project/OpenSearch/issues/19526): gRPC Search query support tracking
 - [Issue #19311](https://github.com/opensearch-project/OpenSearch/issues/19311): Binary format support for Bulk API
 - [Issue #5379](https://github.com/opensearch-project/security/issues/5379): gRPC extension points for security
-- [gRPC APIs Documentation](https://docs.opensearch.org/3.0/api-reference/grpc-apis/index/): Official docs
-- [Bulk (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/bulk/): Bulk endpoint reference
-- [Search (gRPC) API](https://docs.opensearch.org/3.0/api-reference/grpc-apis/search/): Search endpoint reference
 
 ## Related Feature Report
 

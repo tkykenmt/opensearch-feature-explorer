@@ -64,15 +64,17 @@ Plugin developers maintaining forks or custom builds of the Notifications plugin
 - Tests must run with the Java Agent enabled
 - Legacy SecurityManager-based security checks are no longer supported
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Core OpenSearch SecurityManager replacement
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1013](https://github.com/opensearch-project/notifications/pull/1013) | Fix build due to phasing off SecurityManager usage in favor of Java Agent |
 
-## References
-
-- [PR #17861](https://github.com/opensearch-project/OpenSearch/pull/17861): Core OpenSearch SecurityManager replacement
+### Issues (Design / RFC)
 - [Issue #16634](https://github.com/opensearch-project/OpenSearch/issues/16634): META - Replace Java Security Manager
 - [Issue #17662](https://github.com/opensearch-project/OpenSearch/issues/17662): Phase off SecurityManager usage in favor of Java Agent
 

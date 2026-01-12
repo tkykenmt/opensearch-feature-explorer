@@ -137,8 +137,14 @@ POST /_plugins/_ml/agents/_register
 - DuckDuckGo uses HTML scraping which may break if page structure changes
 - Web crawling is subject to rate limiting and robots.txt restrictions
 
-## Related PRs
+## References
 
+### Documentation
+- [WebSearchTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/web-search-tool/): Official documentation
+- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Tools overview
+- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): PPL tool reference
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#547](https://github.com/opensearch-project/skills/pull/547) | Add WebSearchTool |
@@ -146,12 +152,8 @@ POST /_plugins/_ml/agents/_register
 | [#529](https://github.com/opensearch-project/skills/pull/529) | Replace ml-common-client with ml-common-common and ml-common-spi |
 | [#521](https://github.com/opensearch-project/skills/pull/521) | Add tutorial to build and test custom tool |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #538](https://github.com/opensearch-project/skills/issues/538): Feature request for WebSearchTool
-- [WebSearchTool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/web-search-tool/): Official documentation
-- [Tools Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/index/): Tools overview
-- [PPL Tool Documentation](https://docs.opensearch.org/3.0/ml-commons-plugin/agents-tools/tools/ppl-tool/): PPL tool reference
 
 ## Related Feature Report
 

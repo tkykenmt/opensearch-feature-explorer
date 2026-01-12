@@ -153,19 +153,21 @@ For plugin developers extending the security plugin:
 - Existing `plugin-security.policy` files remain valid
 - The migration is internal to the security plugin
 
-## Related PRs
+## References
 
+### Documentation
+- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
+- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5750](https://github.com/opensearch-project/security/pull/5750) | Replace AccessController and remove restriction on word Extension |
 | [#5815](https://github.com/opensearch-project/security/pull/5815) | Clean up AccessController with Exception disambiguation |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1687](https://github.com/opensearch-project/OpenSearch/issues/1687): RFC - Replace Java Security Manager
 - [Issue #17181](https://github.com/opensearch-project/OpenSearch/issues/17181): Permanently turn-off Security Manager starting 3.0
-- [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
-- [JEP 486](https://openjdk.org/jeps/486): Permanently Disable the Security Manager
 
 ## Related Feature Report
 

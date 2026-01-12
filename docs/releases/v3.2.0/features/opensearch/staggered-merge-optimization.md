@@ -115,15 +115,17 @@ PUT _cluster/settings
 - Short polling interval (6 seconds) may slightly increase CPU sampling overhead
 - Trackers require warm-up period before averages stabilize
 
-## Related PRs
+## References
 
+### Documentation
+- [PR #18229](https://github.com/opensearch-project/OpenSearch/pull/18229): Original Auto Force Merge Manager implementation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18666](https://github.com/opensearch-project/OpenSearch/pull/18666) | Replaced CPU load average logic with AverageTracker classes, modified default thresholds |
 
-## References
-
-- [PR #18229](https://github.com/opensearch-project/OpenSearch/pull/18229): Original Auto Force Merge Manager implementation
+### Issues (Design / RFC)
 - [Issue #20127](https://github.com/opensearch-project/OpenSearch/issues/20127): Related test failures being addressed
 
 ## Related Feature Report

@@ -72,20 +72,20 @@ opensearch.experimental.feature.approximate_point_range_query.enabled: true
 - Internal changes only; no user-facing API modifications
 - Query approximation requires feature flag to be enabled
 
-## Related PRs
+## Change History
 
+- **v2.18.0** (2024-11-05): Query approximation simplification, Stream API optimization, typo fix
+
+## References
+
+### Documentation
+- [PR #16273](https://github.com/opensearch-project/OpenSearch/pull/16273): Query approximation framework cleanup
+- [PR #15386](https://github.com/opensearch-project/OpenSearch/pull/15386): Stream API optimization in percolator
+- [PR #15362](https://github.com/opensearch-project/OpenSearch/pull/15362): RemoteStoreNodeAttribute typo fix
+
+### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
 | v2.18.0 | [#16273](https://github.com/opensearch-project/OpenSearch/pull/16273) | Remove ApproximateIndexOrDocValuesQuery |
 | v2.18.0 | [#15386](https://github.com/opensearch-project/OpenSearch/pull/15386) | Fix inefficient Stream API call chains |
 | v2.18.0 | [#15362](https://github.com/opensearch-project/OpenSearch/pull/15362) | Fix typo in RemoteStoreNodeAttribute.toString() |
-
-## References
-
-- [PR #16273](https://github.com/opensearch-project/OpenSearch/pull/16273): Query approximation framework cleanup
-- [PR #15386](https://github.com/opensearch-project/OpenSearch/pull/15386): Stream API optimization in percolator
-- [PR #15362](https://github.com/opensearch-project/OpenSearch/pull/15362): RemoteStoreNodeAttribute typo fix
-
-## Change History
-
-- **v2.18.0** (2024-11-05): Query approximation simplification, Stream API optimization, typo fix

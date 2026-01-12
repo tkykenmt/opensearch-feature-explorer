@@ -71,21 +71,25 @@ The fix removes the redundant `artifact bundlePlugin` line from the publications
 - The ActionFilter interface change requires OpenSearch 3.4.0 or later
 - The CI fix is specific to the opensearch-build release process
 
-## Related PRs
+## References
 
+### Documentation
+- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
+- [OpenSearch PR #18523](https://github.com/opensearch-project/OpenSearch/pull/18523): ActionFilter interface change in core
+
+### Blog Posts
+- [Plugin Zip Publishing Blog](https://opensearch.org/blog/opensearch-plugin-zips-now-in-maven-repo/): OpenSearch plugin zip Maven publishing
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#142](https://github.com/opensearch-project/user-behavior-insights/pull/142) | Adapt ActionFilter interface implementation to core change |
 | [#146](https://github.com/opensearch-project/user-behavior-insights/pull/146) | Export CI env var as true to skip git diff on depth=1 checkout |
 | [#151](https://github.com/opensearch-project/user-behavior-insights/pull/151) | Fix the plugin publish zip errors |
 
-## References
-
-- [OpenSearch PR #18523](https://github.com/opensearch-project/OpenSearch/pull/18523): ActionFilter interface change in core
+### Issues (Design / RFC)
 - [Issue #138](https://github.com/opensearch-project/user-behavior-insights/issues/138): Release version 3.4.0 tracking issue
 - [Issue #5764](https://github.com/opensearch-project/opensearch-build/issues/5764): Build system issue for plugin zip publishing
-- [UBI Documentation](https://docs.opensearch.org/3.0/search-plugins/ubi/index/): Official OpenSearch UBI documentation
-- [Plugin Zip Publishing Blog](https://opensearch.org/blog/opensearch-plugin-zips-now-in-maven-repo/): OpenSearch plugin zip Maven publishing
 
 ## Related Feature Report
 

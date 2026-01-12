@@ -44,8 +44,14 @@ Both OpenSAML versions (5.1.4 and Shibboleth 9.1.4) include maintenance updates 
 - These are maintenance updates with no new features
 - No breaking changes expected from these dependency bumps
 
-## Related PRs
+## References
 
+### Documentation
+- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
+- [Bouncy Castle Release Notes](https://www.bouncycastle.org/releasenotes.html)
+- [Spring Framework 6.2.5 Release](https://github.com/spring-projects/spring-framework/releases/tag/v6.2.5)
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#5203](https://github.com/opensearch-project/security/pull/5203) | Bump spring_version from 6.2.4 to 6.2.5 |
@@ -61,12 +67,6 @@ Both OpenSAML versions (5.1.4 and Shibboleth 9.1.4) include maintenance updates 
 | [#5266](https://github.com/opensearch-project/security/pull/5266) | Bump commons-text from 1.13.0 to 1.13.1 |
 | [#5268](https://github.com/opensearch-project/security/pull/5268) | Bump junit-jupiter-api from 5.12.1 to 5.12.2 |
 | [#5265](https://github.com/opensearch-project/security/pull/5265) | Bump failureaccess from 1.0.2 to 1.0.3 |
-
-## References
-
-- [OpenSearch Security Repository](https://github.com/opensearch-project/security)
-- [Bouncy Castle Release Notes](https://www.bouncycastle.org/releasenotes.html)
-- [Spring Framework 6.2.5 Release](https://github.com/spring-projects/spring-framework/releases/tag/v6.2.5)
 
 ## Related Feature Report
 

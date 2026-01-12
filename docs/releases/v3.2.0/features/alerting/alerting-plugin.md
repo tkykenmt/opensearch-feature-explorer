@@ -108,20 +108,22 @@ GET _plugins/_alerting/monitors/_search
 - The fan-out randomization may result in different nodes being selected on each monitor run, which could affect debugging if issues are node-specific
 - The empty response behavior for SEARCH only applies when the index doesn't exist; other errors are still propagated
 
-## Related PRs
+## References
 
+### Documentation
+- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
+- [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#1885](https://github.com/opensearch-project/alerting/pull/1885) | Fix MGet bug, randomize fan out distribution |
 | [#1818](https://github.com/opensearch-project/alerting/pull/1818) | Refactored consistent responses and fixed unrelated exceptions |
 | [#1869](https://github.com/opensearch-project/alerting/pull/1869) | Update the maven snapshot publish endpoint and credential |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #1057](https://github.com/opensearch-project/alerting/issues/1057): Return empty responses if there is no alerting config index created
 - [Issue #5551](https://github.com/opensearch-project/opensearch-build/issues/5551): Sonatype migration campaign
-- [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
-- [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration
 
 ## Related Feature Report
 

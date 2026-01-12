@@ -85,8 +85,12 @@ These are bug fixes that require no configuration changes. Users will automatica
 - Time field display fix is a workaround; full solution requires Discover re-render capability
 - S3 field support requires query enhancements to be enabled
 
-## Related PRs
+## References
 
+### Documentation
+- [Analyzing data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official documentation
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#8609](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8609) | Add support for S3 fields in Discover |
@@ -94,10 +98,8 @@ These are bug fixes that require no configuration changes. Users will automatica
 | [#8755](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8755) | Fix time field wrapping overlap on language change |
 | [#8707](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8707) | Ensure saved query loaded properly from asset |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #8612](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8612): Bug report for deleted index pattern issue
-- [Analyzing data in Discover](https://docs.opensearch.org/2.18/dashboards/discover/index-discover/): Official documentation
 
 ## Related Feature Report
 

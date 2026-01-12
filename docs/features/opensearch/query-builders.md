@@ -116,18 +116,18 @@ QueryBuilder query = QueryBuilders.matchQuery("field", "value")
 - When `filter()` is called on non-Bool query builders, a new `BoolQueryBuilder` is created, which may affect object identity comparisons
 - Filter context queries do not contribute to relevance scoring
 
-## Related PRs
+## Change History
 
-| Version | PR | Description |
-|---------|-----|-------------|
-| v3.0.0 | [#17409](https://github.com/opensearch-project/OpenSearch/pull/17409) | Add filter function for AbstractQueryBuilder, BoolQueryBuilder, ConstantScoreQueryBuilder |
+- **v3.0.0** (2025-03-03): Added `filter()` method to `QueryBuilder` interface with implementations in `AbstractQueryBuilder`, `BoolQueryBuilder`, and `ConstantScoreQueryBuilder`
 
 ## References
 
+### Documentation
 - [Query and filter context](https://docs.opensearch.org/3.0/query-dsl/query-filter-context/): Understanding query vs filter context
 - [Boolean query](https://docs.opensearch.org/3.0/query-dsl/compound/bool/): Boolean query documentation
 - [Constant score query](https://docs.opensearch.org/3.0/query-dsl/compound/constant-score/): Constant score query documentation
 
-## Change History
-
-- **v3.0.0** (2025-03-03): Added `filter()` method to `QueryBuilder` interface with implementations in `AbstractQueryBuilder`, `BoolQueryBuilder`, and `ConstantScoreQueryBuilder`
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+| v3.0.0 | [#17409](https://github.com/opensearch-project/OpenSearch/pull/17409) | Add filter function for AbstractQueryBuilder, BoolQueryBuilder, ConstantScoreQueryBuilder |

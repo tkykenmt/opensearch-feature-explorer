@@ -124,16 +124,18 @@ PUT _snapshot/my-s3-repo
 - CRT client event loop threads may appear in thread dumps (filtered in tests)
 - Known issue with CRT thread cleanup tracked in [aws-crt-java#905](https://github.com/awslabs/aws-crt-java/issues/905)
 
-## Related PRs
+## References
 
+### Documentation
+- [AWS CRT HTTP Client Documentation](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html): AWS SDK CRT client guide
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#18800](https://github.com/opensearch-project/OpenSearch/pull/18800) | Move async HTTP client to CRT from Netty and add configurability |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #18535](https://github.com/opensearch-project/OpenSearch/issues/18535): Feature request for S3CrtClient support
-- [AWS CRT HTTP Client Documentation](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html): AWS SDK CRT client guide
 
 ## Related Feature Report
 

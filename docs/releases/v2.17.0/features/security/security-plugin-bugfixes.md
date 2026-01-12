@@ -57,8 +57,9 @@ plugins.security.allow_unsafe_democertificates: true
 - Demo certificates should only be used for development/testing environments
 - The `allow_unsafe_democertificates` setting is not recommended for production use
 
-## Related PRs
+## References
 
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#4603](https://github.com/opensearch-project/security/pull/4603) | Fix demo certificate hash validation |
@@ -73,8 +74,7 @@ plugins.security.allow_unsafe_democertificates: true
 | [#4610](https://github.com/opensearch-project/security/pull/4610) | Backport failed PRs |
 | [#4625](https://github.com/opensearch-project/security/pull/4625) | Update PR template backport section |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #4599](https://github.com/opensearch-project/security/issues/4599): Demo certificate setting bug
 - [Issue #4627](https://github.com/opensearch-project/security/issues/4627): Auth token endpoint issue
 - [Issue #4480](https://github.com/opensearch-project/security/issues/4480): Certificate SAN ordering issue

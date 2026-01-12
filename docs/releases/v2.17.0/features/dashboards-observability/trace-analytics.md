@@ -114,18 +114,20 @@ cluster1:otel-v1-apm-span-*,cluster2:otel-v1-apm-span-*
 - No automatic index discovery for custom sources
 - Service map calculations require proper span relationships in custom indices
 
-## Related PRs
+## References
 
+### Documentation
+- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/index/): Official documentation
+- [Data Prepper Schema Documentation](https://github.com/opensearch-project/data-prepper/tree/main/docs/schemas/trace-analytics): Index mapping requirements
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#2112](https://github.com/opensearch-project/dashboards-observability/pull/2112) | Trace Analytics support for custom sources |
 | [#2125](https://github.com/opensearch-project/dashboards-observability/pull/2125) | Update trace analytics landing page to traces |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #2052](https://github.com/opensearch-project/dashboards-observability/issues/2052): Feature request for trace overview page and CCS support
-- [Trace Analytics Documentation](https://docs.opensearch.org/2.17/observing-your-data/trace/index/): Official documentation
-- [Data Prepper Schema Documentation](https://github.com/opensearch-project/data-prepper/tree/main/docs/schemas/trace-analytics): Index mapping requirements
 
 ## Related Feature Report
 

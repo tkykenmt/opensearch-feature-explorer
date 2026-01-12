@@ -90,17 +90,21 @@ No migration required. Existing search configurations with LTR queries that prev
 - The fix requires the LTR plugin to be installed for `sltr` queries to work
 - The integration test validates parsing recognition but does not require a trained LTR model
 
-## Related PRs
+## References
 
+### Documentation
+- [Learning to Rank Documentation](https://docs.opensearch.org/latest/search-plugins/ltr/index/): Official LTR plugin docs
+
+### Blog Posts
+- [Search Relevance Workbench Blog](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Introduction to Search Relevance Workbench
+
+### Pull Requests
 | PR | Description |
 |----|-------------|
 | [#260](https://github.com/opensearch-project/search-relevance/pull/260) | Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL |
 
-## References
-
+### Issues (Design / RFC)
 - [Issue #255](https://github.com/opensearch-project/search-relevance/issues/255): Learning to Rank plugin experiment error
-- [Learning to Rank Documentation](https://docs.opensearch.org/latest/search-plugins/ltr/index/): Official LTR plugin docs
-- [Search Relevance Workbench Blog](https://opensearch.org/blog/taking-your-first-steps-towards-search-relevance/): Introduction to Search Relevance Workbench
 
 ## Related Feature Report
 
