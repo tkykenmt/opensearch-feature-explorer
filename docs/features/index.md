@@ -16,7 +16,7 @@ Comprehensive documentation of OpenSearch features organized by category.
 | [Neural Search](neural-search/index.md) | AI-powered semantic search |
 | [k-NN Vector Search](k-nn/index.md) | Approximate nearest neighbor search |
 | [SQL/PPL](sql/index.md) | SQL and PPL query interfaces |
-| [Learning to Rank](learning/learning-to-rank.md) | ML-based relevance ranking |
+| [Learning to Rank](learning/overview.md) | ML-based relevance ranking |
 | [Query Insights](query-insights/query-insights.md) | Query performance analysis |
 | [Asynchronous Search](asynchronous-search/asynchronous-search.md) | Long-running queries |
 
@@ -40,8 +40,8 @@ Comprehensive documentation of OpenSearch features organized by category.
 | Category | Description |
 |----------|-------------|
 | [Anomaly Detection](anomaly-detection/anomaly-detection.md) | Time-series anomaly detection |
-| [Alerting](alerting/alerting.md) | Alert rules and notifications |
-| [Notifications](notifications/notifications-plugin.md) | Notification channels |
+| [Alerting](alerting/overview.md) | Alert rules and notifications |
+| [Notifications](notifications/overview.md) | Notification channels |
 | [Performance Analyzer](performance-analyzer/performance-analyzer.md) | Cluster performance metrics |
 
 ## Index & Data Management
@@ -68,8 +68,8 @@ Comprehensive documentation of OpenSearch features organized by category.
 | Category | Description |
 |----------|-------------|
 | [OpenSearch Core](opensearch/) | Core engine features |
-| [Geospatial](geospatial/geospatial-plugin.md) | Geospatial queries |
-| [Reporting](reporting/reporting-plugin.md) | Report generation |
+| [Geospatial](geospatial/overview.md) | Geospatial queries |
+| [Reporting](reporting/overview.md) | Report generation |
 
 ## Infrastructure
 

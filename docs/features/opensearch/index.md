@@ -303,7 +303,7 @@ Core engine features for OpenSearch.
 | Document | Description |
 |----------|-------------|
 | [Dependency Management](dependency-management.md) | Dependencies |
-| [OpenSearch Core Dependencies](opensearch-core-dependencies.md) | Core deps |
+| [OpenSearch Core Dependencies](core-dependencies.md) | Core deps |
 | [Code Cleanup](code-cleanup.md) | Cleanup |
 | [Deprecated Code Cleanup](deprecated-code-cleanup.md) | Deprecations |
 | [DocRequest Refactoring](docrequest-refactoring.md) | Refactoring |
