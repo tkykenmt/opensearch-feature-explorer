@@ -228,6 +228,8 @@ For flow agents, response filters are auto-configured for supported providers:
 | v3.0.0 | [#665](https://github.com/opensearch-project/dashboards-flow-framework/pull/665) | Add RAG + hybrid search preset |
 | v3.0.0 | [#676](https://github.com/opensearch-project/dashboards-flow-framework/pull/676) | Simplify ML processor forms |
 | v3.0.0 | [#610](https://github.com/opensearch-project/dashboards-flow-framework/pull/610) | Simplify RAG presets |
+| v3.0.0 | [#604](https://github.com/opensearch-project/dashboards-flow-framework/pull/604) | Refactor quick configure components; improve processor error handling |
+| v3.0.0 | [#605](https://github.com/opensearch-project/dashboards-flow-framework/pull/605) | Hide search query section when version is less than 2.19 |
 | v3.0.0 | [#602](https://github.com/opensearch-project/dashboards-flow-framework/pull/602) | Legacy preset integration |
 | v3.0.0 | [#701](https://github.com/opensearch-project/dashboards-flow-framework/pull/701) | Optional model inputs support |
 
@@ -245,4 +247,4 @@ For flow agents, response filters are auto-configured for supported providers:
 
 - **v3.4.0** (2026-01-14): Added agent summary visualization, memory integration for conversational search, simplified agent configuration with auto-inferred LLM interface, automatic response filters for flow agents, Firefox EuiSelect fixes
 - **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
-- **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering
+- **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering, refactored quick configure components with Formik integration, improved processor error handling with dynamic error display, added version compatibility check to hide search query section for versions < 2.19.0
