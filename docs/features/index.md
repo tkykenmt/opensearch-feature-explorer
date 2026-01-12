@@ -129,6 +129,7 @@
 - [Profiler](opensearch/profiler.md)
 - [Pull-based Ingestion](opensearch/pull-based-ingestion.md)
 - [Query Bug Fixes](opensearch/query-bug-fixes.md)
+- [Query Builders](opensearch/query-builders.md)
 - [Query & Aggregation Fixes](opensearch/query-and-aggregation-fixes.md)
 - [Query Cache](opensearch/query-cache.md)
 - [Query Coordinator Context](opensearch/query-coordinator-context.md)
