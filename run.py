@@ -23,6 +23,7 @@ AGENTS = {
     "summarize": "summarize.json",
     "translate": "translate.json",
     "generate-release-docs": "generate-release-docs.json",
+    "refactor": "refactor.json",
 }
 
 
@@ -291,6 +292,13 @@ def build_prompt(mode: str, args: argparse.Namespace) -> str:
         pr_mode = " Use PR workflow." if use_pr else " Push directly to main."
         return f"Generate release documents for v{args.version} from existing feature documents.{pr_mode}"
     
+    if mode == "refactor":
+        if hasattr(args, "issue") and args.issue:
+            return f"Process refactor Issue #{args.issue}. Read Issue body for transformation rules and target files."
+        if hasattr(args, "file") and args.file:
+            return f"Transform file {args.file} per steering rules."
+        return ""
+    
     return ""
 
 
@@ -365,6 +373,39 @@ def run_batch(count: int | None, lang: str | None = None, no_pr: bool = False, v
     # Summary
     print(f"\n{'='*50}")
     print("Batch Summary")
+    print(f"{'='*50}")
+    success = sum(1 for _, _, status in results if status == "success")
+    print(f"Success: {success}/{total}")
+    for issue_num, issue_title, status in results:
+        print(f"  #{issue_num}: {status} - {issue_title}")
+
+
+def run_batch_refactor():
+    """Process all open refactor-labeled Issues."""
+    issues = get_open_issues(["refactor"])
+    if not issues:
+        print("No open issues found with label: refactor")
+        return
+    
+    total = len(issues)
+    results = []
+    
+    for i, issue in enumerate(issues, 1):
+        issue_num = issue["number"]
+        issue_title = issue["title"]
+        
+        print(f"\n{'='*50}")
+        print(f"Refactor {i}/{total}: Issue #{issue_num}")
+        print(f"  {issue_title}")
+        print(f"{'='*50}\n")
+        
+        prompt = f"Process refactor Issue #{issue_num}. Read Issue body for transformation rules and target files."
+        exit_code = run_kiro("refactor", prompt, no_interactive=True)
+        results.append((issue_num, issue_title, "success" if exit_code == 0 else "failed"))
+    
+    # Summary
+    print(f"\n{'='*50}")
+    print("Batch Refactor Summary")
     print(f"{'='*50}")
     success = sum(1 for _, _, status in results if status == "success")
     print(f"Success: {success}/{total}")
@@ -511,6 +552,15 @@ Examples:
     gr.add_argument("version", help="Version to generate release docs for (e.g., 3.0.0)")
     gr.add_argument("--no-pr", action="store_true", help="Push directly to main instead of creating PR")
     
+    # refactor
+    rf = subparsers.add_parser("refactor", help="Batch structural changes to existing reports")
+    rf.add_argument("file", nargs="?", help="File to transform (File mode)")
+    rf.add_argument("--issue", type=int, help="Issue number with transformation rules (Issue mode)")
+    
+    # batch-refactor
+    brf = subparsers.add_parser("batch-refactor", help="Process all refactor-labeled Issues")
+    brf.add_argument("--all", action="store_true", help="Process all open refactor Issues")
+    
     # release-investigate (orchestrator)
     ri = subparsers.add_parser("release-investigate", help="Full release investigation (fetch → group → plan → investigate → summarize)")
     ri.add_argument("version", help="Version to investigate (e.g., 3.0.0)")
@@ -538,6 +588,8 @@ Examples:
     elif args.mode == "batch-investigate":
         count = None if getattr(args, "all", False) else (args.count or 5)
         run_batch(count, getattr(args, "lang", None), getattr(args, "no_pr", False), getattr(args, "version", None))
+    elif args.mode == "batch-refactor":
+        run_batch_refactor()
     elif args.mode == "fetch-release":
         run_fetch_release(args.version)
     elif args.mode == "group-release":
@@ -545,10 +597,13 @@ Examples:
     else:
         prompt = build_prompt(args.mode, args)
         # These modes run non-interactively by default, except investigate without args (Mode 4)
-        no_interactive = args.mode in ("planner", "create-issues", "summarize", "generate-release-docs")
+        no_interactive = args.mode in ("planner", "create-issues", "summarize", "generate-release-docs", "refactor")
         if args.mode == "investigate":
             # Mode 4 (no args) is interactive, others are non-interactive
             no_interactive = bool(getattr(args, "issue", None) or getattr(args, "pr", None) or getattr(args, "feature", None))
+        if args.mode == "refactor":
+            # File mode (no --issue) is interactive
+            no_interactive = bool(getattr(args, "issue", None))
         run_kiro(args.mode, prompt, no_interactive=no_interactive)
 
 
