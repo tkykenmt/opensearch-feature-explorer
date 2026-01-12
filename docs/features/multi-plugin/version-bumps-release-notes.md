@@ -102,6 +102,21 @@ release-notes/
 | v3.0.0 | [#1843](https://github.com/opensearch-project/alerting/pull/1843) | alerting | Added 3.0 release notes |
 | v3.0.0 | [#775](https://github.com/opensearch-project/common-utils/pull/775) | common-utils | Update shadow plugin and bump to 3.0.0.0-alpha1 |
 | v3.0.0 | [#1384](https://github.com/opensearch-project/index-management/pull/1384) | index-management | Bump Version to 3.0.0-alpha1 |
+| v3.0.0 | [#154](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/154) | learning | Update 3.0.0 qualifier from alpha1 to beta1 |
+| v3.0.0 | [#169](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/169) | learning | Remove beta1 qualifier |
+| v3.0.0 | [#791](https://github.com/opensearch-project/performance-analyzer/pull/791) | performance | Bumps OS to 3.0.0-alpha1 and JDK 21 |
+| v3.0.0 | [#794](https://github.com/opensearch-project/performance-analyzer/pull/794) | performance | Bumps plugin version to 3.0.0.0-beta1 |
+| v3.0.0 | [#247](https://github.com/opensearch-project/query-insights/pull/247) | query | Bump version to 3.0.0-alpha1 & upgrade to gradle 8.10.2 |
+| v3.0.0 | [#290](https://github.com/opensearch-project/query-insights/pull/290) | query | Update 3.0.0 qualifier from alpha1 to beta1 |
+| v3.0.0 | [#329](https://github.com/opensearch-project/query-insights/pull/329) | query | Remove beta1 qualifier |
+| v3.0.0 | [#127](https://github.com/opensearch-project/dashboards-query-workbench/pull/127) | dashboards | Bump to 3.0.0-alpha1 |
+| v3.0.0 | [#154](https://github.com/opensearch-project/dashboards-query-workbench/pull/154) | dashboards | Update 3.0.0 qualifier from alpha1 to beta1 |
+| v3.0.0 | [#1073](https://github.com/opensearch-project/reporting/pull/1073) | reporting | Bump version 3.0.0-alpha1-SNAPSHOT |
+| v3.0.0 | [#1083](https://github.com/opensearch-project/reporting/pull/1083) | reporting | Bump version 3.0.0-beta1-SNAPSHOT |
+| v3.0.0 | [#1517](https://github.com/opensearch-project/security/pull/1517) | security | Increment version to 3.1.0-SNAPSHOT |
+| v3.0.0 | [#1519](https://github.com/opensearch-project/security/pull/1519) | security | Remove beta1 qualifier |
+| v3.0.0 | [#1500](https://github.com/opensearch-project/security/pull/1500) | security | Update version qualifier to beta1 |
+| v3.0.0 | [#1283](https://github.com/opensearch-project/security/pull/1283) | security | Increment version to 3.0.0.0 |
 | v2.18.0 | [#1718](https://github.com/opensearch-project/alerting/pull/1718) | alerting | Added 2.18.0 release notes |
 | v2.18.0 | [#750](https://github.com/opensearch-project/common-utils/pull/750) | common-utils | Added 2.18.0.0 release notes |
 | v2.18.0 | [#980](https://github.com/opensearch-project/notifications/pull/980) | notifications | Added 2.18.0 release notes |
@@ -124,6 +139,6 @@ release-notes/
 
 - **v3.2.0** (2026-01-11): Version bumps across 14 repositories (alerting, asynchronous-search, custom, index-management, ml-commons, notifications, observability, query, dashboards, reporting, security, learning, performance, system)
 - **v3.1.0** (2026-01-10): Version bumps across 11 repositories (alerting, asynchronous-search, common-utils, dashboards-notifications, notifications, reporting, index-management-dashboards, index-management, ml-commons, observability, sql, OpenSearch core)
-- **v3.0.0** (2025-05-06): Version bumps and release notes across 9 repositories (alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins)
+- **v3.0.0** (2025-05-06): Version bumps and release notes across 15 repositories including batch 2 (learning, security, performance, query, dashboards, reporting) in addition to alerting, common-utils, index-management, notifications, security, sql, and dashboard plugins
 - **v2.18.0** (2024-11-05): Release notes across 5 repositories (alerting, common-utils, notifications, query-insights, security)
 - **v2.17.0** (2024-09-17): Version bumps and release notes across 12 repositories (alerting, anomaly-detection, asynchronous-search, common-utils, dashboards-notifications, index-management, job-scheduler, ml-commons, notifications, query-insights, security, sql)

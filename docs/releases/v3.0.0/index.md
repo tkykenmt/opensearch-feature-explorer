@@ -156,6 +156,7 @@
 - [JDK 21 & Java Agent Migration](features/multi-plugin/jdk-21-java-agent-migration.md)
 - [Java Agent / SecurityManager Migration (Batch 2)](features/multi-plugin/java-agent-securitymanager-migration-batch2.md)
 - [Version Bumps & Release Notes](features/multi-plugin/version-bumps-release-notes.md)
+- [Version Bumps & Release Qualifiers (Batch 2)](features/multi-plugin/version-bumps-release-qualifiers-batch2.md)
 
 ## opensearch-remote-metadata-sdk
 
