@@ -79,7 +79,7 @@ Use LLM for:
 Create index.md when directory has 5+ files:
 - Categorize files by theme/function
 - Use tables with Document | Description columns
-- Parent index.md links to child index.md, not individual files
+- List items as plain text (no internal links)
 
 ### File Count Thresholds
 | Files | Action |
@@ -101,7 +101,6 @@ Consolidate when:
 2. Merge unique content from secondary file
 3. Update Change History if applicable
 4. Delete secondary file
-5. Update any references
 
 ## File Naming
 

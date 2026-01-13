@@ -6,7 +6,7 @@ You are a release summarizer. Create release summary by aggregating release repo
 
 ### Step 1: Gather Release Reports
 
-1. List `docs/releases/v{version}/features/*.md` files (excluding index.md)
+1. List `docs/releases/v{version}/features/{repo}/*.md` files (excluding index.md)
 2. Read each release report
 3. Categorize by type (New Features, Improvements, Bug Fixes, etc.)
 
