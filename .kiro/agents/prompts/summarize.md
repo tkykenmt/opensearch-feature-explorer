@@ -43,13 +43,13 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| {Name} | {Brief description from release report} | [Details](features/{item-name}.md) |
+| {Name} | {Brief description from release report} | {item-name} |
 
 ## Improvements
 
 | Area | Description | Report |
 |------|-------------|--------|
-| {Area} | {Brief description} | [Details](features/{item-name}.md) |
+| {Area} | {Brief description} | {item-name} |
 
 ## Bug Fixes
 
@@ -61,7 +61,7 @@ graph TB
 
 | Change | Migration | Report |
 |--------|-----------|--------|
-| {Change} | {Migration steps} | [Details](features/{item-name}.md) |
+| {Change} | {Migration steps} | {item-name} |
 
 ## Dependencies
 
