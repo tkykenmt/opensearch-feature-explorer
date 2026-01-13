@@ -167,6 +167,7 @@ PUT test-index
 
 - **v3.3.0** (2025): Added ColPali multimodal blueprint, Ollama connector blueprint, agentic search tutorial, agentic memory with Strands agents tutorial, conversational search with Ollama tutorial, instance type fix in language identification tutorial, additional unit tests
 - **v3.2.0** (2025): Added multi-modal search tutorial, semantic highlighter blueprint, neural sparse documentation, language identification tutorial, agentic RAG tutorial, e-commerce demo notebook, and Aleph Alpha blueprint fix
+- **v2.19.0** (2025-02-25): Added DeepSeek connector blueprint, Amazon Bedrock cross-encoder tutorials (Amazon Rerank 1.0, Cohere Rerank 3.5), asymmetric embedding model tutorial, ML inference with Cohere rerank tutorial, Cohere multi-modal blueprint (backport), BGE-reranker-m3-v2 SageMaker tutorial, and bug fix for post_process_function
 
 
 ## References
@@ -194,3 +195,10 @@ PUT test-index
 | v3.2.0 | [#3980](https://github.com/opensearch-project/ml-commons/pull/3980) | Aleph alpha blueprint link fix |   |
 | v3.2.0 | [#4045](https://github.com/opensearch-project/ml-commons/pull/4045) | Agentic RAG tutorial |   |
 | v3.2.0 | [#3944](https://github.com/opensearch-project/ml-commons/pull/3944) | Multi-modal search notebook |   |
+| v2.19.0 | [#3436](https://github.com/opensearch-project/ml-commons/pull/3436) | DeepSeek connector blueprint |   |
+| v2.19.0 | [#3278](https://github.com/opensearch-project/ml-commons/pull/3278) | Amazon Bedrock cross-encoder tutorials | [#3245](https://github.com/opensearch-project/ml-commons/issues/3245) |
+| v2.19.0 | [#3258](https://github.com/opensearch-project/ml-commons/pull/3258) | Asymmetric embedding model tutorial | [#3255](https://github.com/opensearch-project/ml-commons/issues/3255) |
+| v2.19.0 | [#3398](https://github.com/opensearch-project/ml-commons/pull/3398) | ML inference with Cohere rerank tutorial |   |
+| v2.19.0 | [#3232](https://github.com/opensearch-project/ml-commons/pull/3232) | Cohere multi-modal blueprint (backport) |   |
+| v2.19.0 | [#2848](https://github.com/opensearch-project/ml-commons/pull/2848) | BGE-reranker-m3-v2 SageMaker tutorial |   |
+| v2.19.0 | [#3296](https://github.com/opensearch-project/ml-commons/pull/3296) | Fix post_process_function in tutorial | [#3247](https://github.com/opensearch-project/ml-commons/issues/3247) |
