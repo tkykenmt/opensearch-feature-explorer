@@ -104,19 +104,4 @@ Consolidate when:
 
 ## File Naming
 
-### Prefix Rules
-Include repository/plugin name prefix for searchability:
-
-| File Type | Pattern | Example |
-|-----------|---------|---------|
-| Main feature doc | `{repo}/{repo}.md` | `security/security.md` |
-| Sub-feature | `{repo}/{repo}-{aspect}.md` | `security/security-jwt.md` |
-| Directory index | `{repo}/index.md` | `security/index.md` |
-
-Repository name = OpenSearch plugin/component repository name (e.g., `security`, `k-nn`, `ml-commons`, `neural-search`)
-
-### Avoid Temporal Files
-Merge into main doc's Change History:
-- `*-bugfixes.md`
-- `*-enhancements.md`
-- `*-breaking-changes.md`
+**Follow DEVELOPMENT.md for file naming conventions.**

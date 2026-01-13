@@ -180,8 +180,8 @@ Save to `.cache/releases/{version}/`:
 ## Step 3: Create Release Report (PRIMARY OUTPUT)
 
 ### Repository Folder Convention
+Use lowercase for folder paths (see DEVELOPMENT.md for directory naming rules).
 - Extract repository name from the Issue body (under "Repository:" field)
-- Convert to lowercase for folder path: `OpenSearch` → `opensearch`, `neural-search` → `neural-search`
 - If repository not specified in Issue, determine from the main PR's repository
 - For items spanning multiple repositories, use the primary repository
 
