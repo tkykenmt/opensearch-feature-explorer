@@ -116,6 +116,7 @@ graph TB
 
 ## Change History
 
+- **v2.19.0** (2025-02-18): Performance improvement using Cat Snapshot API for repository page, bug fixes for snapshot restore alias handling, snapshot policy schedule editing, and index expression display
 - **v2.17.0** (2024-09-17): Comprehensive UI/UX improvements implementing "Look and Feel" and "Fit and Finish" design guidelines across all pages, navigation redesign, notification modal, MDS support for Shrink page, history navigation bug fixes
 
 
@@ -130,6 +131,10 @@ graph TB
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#1242](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1242) | Use Cat Snapshot API for repository snapshot count | Performance |
+| v2.19.0 | [#1193](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1193) | Fix snapshot restore alias handling | Bug fix |
+| v2.19.0 | [#1213](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1213) | Fix snapshot restore default alias value | Bug fix |
+| v2.19.0 | [#1207](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1207) | Fix snapshot policy schedule editing and index expression display | [#947](https://github.com/opensearch-project/index-management-dashboards-plugin/issues/947) |
 | v2.17.0 | [#1106](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1106) | Navigation redesign |   |
 | v2.17.0 | [#1123](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1123) | ISM pages look and feel |   |
 | v2.17.0 | [#1132](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1132) | Snapshots, datastreams, rollups styling |   |
