@@ -2,6 +2,9 @@
 
 ## Features
 
+### opensearch
+- Auto Date Histogram Bug Fix
+
 ### opensearch-dashboards
 - Dashboards Health Checks
 - Data Source Association
