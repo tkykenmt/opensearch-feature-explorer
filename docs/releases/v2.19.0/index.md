@@ -2,6 +2,9 @@
 
 ## Features
 
+### anomaly-detection
+- Anomaly Detection
+
 ### flow-framework
 - Flow Framework
 
