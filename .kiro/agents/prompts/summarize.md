@@ -75,17 +75,17 @@ Notable dependency updates from release notes.
 
 ### Step 4: Update Release Index
 
-Update `docs/releases/v{version}/index.md` to include link to summary:
+Update `docs/releases/v{version}/index.md` to include summary reference:
 
 ```markdown
 # OpenSearch v{version}
 
-- [Release Summary](summary.md)
+- Release Summary
 
 ## Feature Reports
 
-- [Feature 1](features/feature-1.md)
-- [Feature 2](features/feature-2.md)
+- Feature 1
+- Feature 2
 ...
 ```
 

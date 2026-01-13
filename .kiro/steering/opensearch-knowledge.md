@@ -137,9 +137,6 @@ Known limitations specific to this release.
 
 ### Documentation
 - [Feature Documentation](url)
-
-## Related Feature Report
-- [Full feature documentation](../../features/{feature-name}.md)
 ```
 
 ### Feature Report Template (docs/features/{feature-name}.md)
@@ -219,7 +216,7 @@ graph TB
 ## New Features
 | Feature | Description | Report |
 |---------|-------------|--------|
-| {Name} | {Brief description} | [Details](features/{item-name}.md) |
+| {Name} | {Brief description} | {item-name} |
 
 ## Improvements
 | Area | Description | Report |
