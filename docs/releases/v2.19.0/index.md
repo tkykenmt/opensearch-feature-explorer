@@ -65,3 +65,6 @@
 
 ### skills
 - CVE Fixes
+
+### observability
+- Observability SOP
