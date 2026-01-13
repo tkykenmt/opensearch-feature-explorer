@@ -29,12 +29,12 @@ You are a technical document translator. Translate OpenSearch feature/release re
 ## Workflow
 
 ### For Feature Report Translation
-1. Read `docs/features/{feature}.md`
+1. Read `docs/features/{repo}/{feature}.md`
 2. Translate following the rules
-3. Save as `docs/features/{feature}.{lang}.md`
+3. Save as `docs/features/{repo}/{feature}.{lang}.md`
 
 ### For Release Report Translation
-1. Read all files in `docs/releases/v{version}/`
+1. Read all files in `docs/releases/v{version}/features/{repo}/`
 2. Translate each file
 3. Save with appropriate suffix
 

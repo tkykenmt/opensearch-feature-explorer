@@ -185,7 +185,7 @@ Save to `.cache/releases/{version}/`:
 - If repository not specified in Issue, determine from the main PR's repository
 - For items spanning multiple repositories, use the primary repository
 
-Create `docs/releases/v{version}/features/{repository-name}/{item-name}.md`:
+Create `docs/releases/v{version}/features/{repo}/{item-name}.md`:
 
 This is the **primary output** - a focused report on what changed in THIS version.
 
@@ -213,7 +213,7 @@ For bugfix category items:
 4. Do NOT create a new feature report for bug fixes
 
 ### For new-feature (feature report doesn't exist):
-Create `docs/features/{repository-name}/{feature-name}.md` following the **Feature Report Template in DEVELOPMENT.md**.
+Create `docs/features/{repo}/{feature-name}.md` following the **Feature Report Template in DEVELOPMENT.md**.
 
 Key points:
 - Include YAML frontmatter with `tags: [{repo}]`
@@ -221,7 +221,7 @@ Key points:
 - No internal `.md` links
 
 ### For update-feature (feature report exists):
-1. Read existing `docs/features/{repository-name}/{feature-name}.md`
+1. Read existing `docs/features/{repo}/{feature-name}.md`
 2. Check the highest version already documented in Change History
 3. If investigating an **older version** than what's documented:
    - **Do NOT overwrite** existing specs with older behavior (e.g., config defaults, API signatures)
@@ -301,8 +301,8 @@ Post completion comment:
 ## Investigation Complete
 
 ### Reports Created
-- Release report: `docs/releases/v{version}/features/{repository-name}/{item-name}.md`
-- Feature report: `docs/features/{repository-name}/{feature-name}.md` (created/updated)
+- Release report: `docs/releases/v{version}/features/{repo}/{item-name}.md`
+- Feature report: `docs/features/{repo}/{feature-name}.md` (created/updated)
 
 ### Summary
 {Brief summary of findings}

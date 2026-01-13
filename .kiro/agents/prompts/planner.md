@@ -101,8 +101,8 @@ Title: [{category}] {group_name}
 
 ## Tasks
 - [ ] Investigate PRs
-- [ ] Create release report: `docs/releases/v{version}/{group-name}.md`
-- [ ] Update feature report: `docs/features/{feature-name}.md`
+- [ ] Create release report: `docs/releases/v{version}/features/{repo}/{group-name}.md`
+- [ ] Update feature report: `docs/features/{repo}/{feature-name}.md`
 ```
 
 Labels: `release/v{version}`, `status/todo`
