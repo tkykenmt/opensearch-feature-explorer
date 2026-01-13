@@ -266,6 +266,14 @@ mkdocs serve
 # Open http://localhost:8000
 ```
 
+## Development
+
+See [DEVELOPMENT.md](DEVELOPMENT.md) for:
+- Project structure and conventions
+- Document templates and rules
+- Agent system details
+- Contributing guidelines
+
 ## Disclosure
 
 This project uses generative AI to create documentation. Generated content may contain inaccuracies. Always verify information against official OpenSearch documentation and source code.
