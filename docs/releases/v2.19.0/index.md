@@ -46,3 +46,9 @@
 - Discover Enhancements
 - Numeric Precision Setting
 - Workspace Enhancements
+
+### security
+- CVE Fixes
+
+### skills
+- CVE Fixes
