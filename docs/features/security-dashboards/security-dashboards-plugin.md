@@ -111,6 +111,7 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 
 ## Change History
 
+- **v2.19.0** (2025-01-21): Fixed OpenID login redirect to preserve query parameters and URL fragments; Fixed tenant defaulting incorrectly based on preferred tenants order instead of default tenant setting
 - **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions
 
 
@@ -123,6 +124,8 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#2140](https://github.com/opensearch-project/security-dashboards-plugin/pull/2140) | Preserve Query in nextUrl during openid login redirect | [#1823](https://github.com/opensearch-project/security-dashboards-plugin/issues/1823) |
+| v2.19.0 | [#2163](https://github.com/opensearch-project/security-dashboards-plugin/pull/2163) | Fix tenant defaulting incorrectly | [#2019](https://github.com/opensearch-project/security-dashboards-plugin/issues/2019) |
 | v2.17.0 | [#2079](https://github.com/opensearch-project/security-dashboards-plugin/pull/2079) | Use smaller and compressed variants of buttons and form components |   |
 | v2.17.0 | [#2082](https://github.com/opensearch-project/security-dashboards-plugin/pull/2082) | Conditionally change where avatar shows up |   |
 | v2.17.0 | [#2083](https://github.com/opensearch-project/security-dashboards-plugin/pull/2083) | Adds page headers for updated UX |   |
@@ -135,3 +138,5 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 ### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056): Tenant link visibility bug
 - [Issue #2097](https://github.com/opensearch-project/security-dashboards-plugin/issues/2097): Basepath nextUrl validation bug
+- [Issue #1823](https://github.com/opensearch-project/security-dashboards-plugin/issues/1823): Auth redirect resets query
+- [Issue #2019](https://github.com/opensearch-project/security-dashboards-plugin/issues/2019): Tenant defaulting incorrectly based on preferred tenants order
