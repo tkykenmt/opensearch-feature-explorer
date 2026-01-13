@@ -191,6 +191,7 @@ Fields available depend on the datasource. GeoLite2 City provides:
 - **v3.3.0** (2026-01-11): Code modernization - replaced deprecated `URL(String)` constructor with `URI.create(String).toURL()` pattern for Java compatibility
 - **v3.2.0** (2026-01-11): Security improvements - block HTTP redirects in datasource fetching, migrate to PluginSubject for system index access
 - **v3.1.0** (2026-01-10): Bug fixes for cache synchronization - reset metadata on failure, add retry logic with cache refresh
+- **v2.19.0** (2025-02): New `geospatial-client` module for cross-plugin IP enrichment - enables other plugins to leverage IP-to-geolocation via transport action; LockService refactored to use JobScheduler's Guice-injected instance
 - **v2.10.0**: Initial implementation of IP2Geo processor
 
 
@@ -209,6 +210,9 @@ Fields available depend on the datasource. GeoLite2 City provides:
 | v3.2.0 | [#715](https://github.com/opensearch-project/geospatial/pull/715) | Replace ThreadContext.stashContext with pluginSubject.runAs | [#238](https://github.com/opensearch-project/geospatial/issues/238) |
 | v3.1.0 | [#761](https://github.com/opensearch-project/geospatial/pull/761) | Reset datasource metadata on update failure |   |
 | v3.1.0 | [#766](https://github.com/opensearch-project/geospatial/pull/766) | Cache refresh and retry on errors |   |
+| v2.19.0 | [#700](https://github.com/opensearch-project/geospatial/pull/700) | New geospatial-client module for cross-plugin IP enrichment | [#698](https://github.com/opensearch-project/geospatial/issues/698) |
+| v2.19.0 | [#706](https://github.com/opensearch-project/geospatial/pull/706) | CI pipeline update to publish geospatial-client JAR | [#698](https://github.com/opensearch-project/geospatial/issues/698) |
+| v2.19.0 | [#677](https://github.com/opensearch-project/geospatial/pull/677) | Use LockService from JobScheduler via Guice | [security#4439](https://github.com/opensearch-project/security/issues/4439) |
 | v2.10.0 | - | Initial implementation |   |
 
 ### Issues (Design / RFC)

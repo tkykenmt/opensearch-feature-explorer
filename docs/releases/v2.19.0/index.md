@@ -124,6 +124,9 @@
 ### dashboards-observability
 - Observability
 
+### geospatial
+- Geospatial Client Module
+
 ### opensearch-learning-to-rank-base
 - Security Integration Tests
 - System Index Handling
