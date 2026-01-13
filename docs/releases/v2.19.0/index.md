@@ -68,6 +68,7 @@
 
 ### security
 - CVE Fixes
+- JWT Authentication Bug Fixes
 - Security Audit Logging
 - Security Netty
 
