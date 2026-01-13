@@ -190,6 +190,7 @@ jwt_auth_domain:
 
 - **v3.3.0** (2026-01-11): Added direct JWKS endpoint support with `jwks_uri` configuration, security validation features, and automatic fallback to static key authentication
 - **v3.1.0** (2025-06-06): Added support for nested claim paths in `roles_key` configuration
+- **v2.19.0** (2024-12-10): Fixed JWT attribute parsing for list claims to produce valid JSON; reduced log level for authentication failures in multi-domain configurations
 
 
 ## References
@@ -204,6 +205,8 @@ jwt_auth_domain:
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#5578](https://github.com/opensearch-project/security/pull/5578) | Direct JWKS (JSON Web Key Set) support in the JWT authentication backend | [#4974](https://github.com/opensearch-project/security/issues/4974) |
 | v3.1.0 | [#5355](https://github.com/opensearch-project/security/pull/5355) | Handle roles in nested claim for JWT auth backends | [#5343](https://github.com/opensearch-project/security/issues/5343) |
+| v2.19.0 | [#4885](https://github.com/opensearch-project/security/pull/4885) | Fix issue with jwt attribute parsing of lists | [#4267](https://github.com/opensearch-project/security/issues/4267) |
+| v2.19.0 | [#4917](https://github.com/opensearch-project/security/pull/4917) | Reduce log level in HttpJwtAuthenticator if request cannot be authenticated | [#4910](https://github.com/opensearch-project/security/issues/4910) |
 
 ### Issues (Design / RFC)
 - [Issue #4974](https://github.com/opensearch-project/security/issues/4974): Feature request for JWKS with JWT without OIDC
