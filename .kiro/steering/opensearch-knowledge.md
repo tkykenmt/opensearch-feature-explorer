@@ -346,3 +346,49 @@ Don't create separate files for version-specific content:
 - `*-bugfixes.md` → merge into main doc's Change History
 - `*-enhancements.md` → merge into main doc's Change History
 - `*-breaking-changes.md` → merge into main doc or release notes
+
+## Directory Naming
+
+### Rules
+```
+docs/features/{repository-name}/
+```
+- Use OpenSearch repository names as-is
+- Hyphen-separated (lowercase)
+- Remove `-plugin` suffix for dashboards plugins
+
+### Examples
+- `alerting-dashboards-plugin/` → `alerting-dashboards/`
+- `security-dashboards-plugin/` → `security-dashboards/`
+
+## Domain Tag System
+
+### Tag Structure
+```yaml
+tags:
+  # Domain (required, 1 or more)
+  - domain/search
+  - domain/ml
+  - domain/observability
+  - domain/security
+  - domain/data
+  - domain/geo
+  - domain/core
+  - domain/infra
+
+  # Component type (required, exactly 1)
+  - component/server
+  - component/dashboards
+```
+
+### Domain Definitions
+| Domain | Description | Repositories |
+|--------|-------------|--------------|
+| `search` | Search & Query | k-nn, neural-search, sql, asynchronous-search, learning, search-relevance |
+| `ml` | Machine Learning & AI | ml-commons, flow-framework, skills |
+| `observability` | Monitoring & Analytics | alerting, anomaly-detection, notifications, observability, query-insights, performance-analyzer |
+| `security` | Security | security, security-analytics |
+| `data` | Data Management | index-management, cross-cluster-replication, custom-codecs, job-scheduler |
+| `geo` | Geospatial | geospatial |
+| `core` | Core Features | opensearch, common-utils, opensearch-remote-metadata-sdk |
+| `infra` | Infrastructure & CI | ci, multi-plugin, reporting, user-behavior-insights |
