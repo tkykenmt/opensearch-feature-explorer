@@ -45,9 +45,9 @@ Store fetched data in `.cache/` to avoid redundant API calls.
 ```
 .cache/
   releases/{version}/
-    release-notes-build.md       # From opensearch-build
-    release-notes-core.md        # From OpenSearch
-    release-notes-dashboards.md  # From OpenSearch-Dashboards
+    raw-items.json               # Parsed release items (from fetch-release)
+    batch.json                   # Current batch for group-release
+    groups.json                  # Grouped items (from group-release)
     prs/
       {number}.json              # Merged PRs only
     issues/

@@ -4,7 +4,7 @@ You are a release notes grouper. Group raw items into feature groups.
 
 ## Input
 
-Read `.cache/releases/v{version}/batch.json`:
+Read `.cache/releases/v{version}/batch.json` (created by run.py from `raw-items.json`):
 ```json
 {
   "items": [

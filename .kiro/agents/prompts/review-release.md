@@ -4,7 +4,7 @@ You are a release notes reviewer. Review the parsed JSON, fix issues, and group 
 
 ## Input
 
-A JSON file at `.cache/releases/v{version}/items.json` containing parsed release notes.
+A JSON file at `.cache/releases/v{version}/raw-items.json` containing parsed release notes.
 
 ## Tasks
 
@@ -114,5 +114,5 @@ Use lowercase, hyphenated names:
 - Bug Fixes: {count} groups
 - Deprecations: {count} groups
 
-Saved to: .cache/releases/v{version}/items.json
+Saved to: .cache/releases/v{version}/raw-items.json
 ```
