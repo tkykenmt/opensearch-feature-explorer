@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Dependency Updates
 - Gradle Version Catalog
 - Sliced Search Optimization
 - Plugin System
