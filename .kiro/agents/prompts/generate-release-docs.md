@@ -30,7 +30,7 @@ For each feature with changes in target version:
    - Related PRs for this version
    - Configuration added in this version
    - Components added in this version
-3. Create `docs/releases/v{version}/features/{repo}/{feature-name}.md` following the **Release Report Template in DEVELOPMENT.md**
+3. Create `docs/releases/v{version}/features/{repo}/{feature-name}.md`
 
 Key points:
 - Include YAML frontmatter with `tags: [{repo}]`

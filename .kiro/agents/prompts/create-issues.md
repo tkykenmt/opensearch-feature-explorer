@@ -43,7 +43,7 @@ If `--category` specified: filter by category
 For each pending item (not already existing), create an Issue:
 
 #### Repository Name Convention
-Use lowercase for folder paths (see DEVELOPMENT.md for directory naming rules).
+Use lowercase for folder paths.
 
 #### Issue Template
 ```markdown

@@ -180,7 +180,7 @@ Save to `.cache/releases/{version}/`:
 ## Step 3: Create Release Report (PRIMARY OUTPUT)
 
 ### Repository Folder Convention
-Use lowercase for folder paths (see DEVELOPMENT.md for directory naming rules).
+Use lowercase for folder paths.
 - Extract repository name from the Issue body (under "Repository:" field)
 - If repository not specified in Issue, determine from the main PR's repository
 - For items spanning multiple repositories, use the primary repository
@@ -189,7 +189,7 @@ Create `docs/releases/v{version}/features/{repo}/{item-name}.md`:
 
 This is the **primary output** - a focused report on what changed in THIS version.
 
-**Follow the Release Report Template in DEVELOPMENT.md.**
+
 
 Key points:
 - Include YAML frontmatter with `tags: [{repo}]`
@@ -213,7 +213,7 @@ For bugfix category items:
 4. Do NOT create a new feature report for bug fixes
 
 ### For new-feature (feature report doesn't exist):
-Create `docs/features/{repo}/{feature-name}.md` following the **Feature Report Template in DEVELOPMENT.md**.
+Create `docs/features/{repo}/{feature-name}.md`.
 
 Key points:
 - Include YAML frontmatter with `tags: [{repo}]`

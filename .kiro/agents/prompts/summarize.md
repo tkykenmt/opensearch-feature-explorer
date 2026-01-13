@@ -19,7 +19,7 @@ Use GitHub MCP `get_file_contents` to fetch.
 
 ### Step 3: Create Release Summary
 
-Create `docs/releases/v{version}/summary.md` following the **Release Summary Template in DEVELOPMENT.md**.
+Create `docs/releases/v{version}/summary.md`.
 
 Key points:
 - Summary, Highlights (Mermaid), New Features, Improvements, Bug Fixes, Breaking Changes, References
