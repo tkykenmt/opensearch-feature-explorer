@@ -2,6 +2,9 @@
 
 ## Features
 
+### alerting
+- Alerting Integration
+
 ### anomaly-detection
 - Anomaly Detection
 

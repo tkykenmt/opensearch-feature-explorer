@@ -2,6 +2,10 @@
 
 Cumulative feature documentation across all versions.
 
+## alerting
+
+- Alerting Integration
+
 ## neural-search
 
 - Neural Search Enhancements
