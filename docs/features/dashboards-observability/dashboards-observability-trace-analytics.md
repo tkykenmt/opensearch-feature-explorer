@@ -104,6 +104,7 @@ flowchart TB
 | `observability:traceAnalyticsServiceIndices` | Custom service indices (supports wildcards and CCS) | Empty |
 | `observability:traceAnalyticsServiceMapMaxNodes` | Maximum nodes in service map queries | 500 |
 | `observability:traceAnalyticsServiceMapMaxEdges` | Maximum edges in service map queries | 1000 |
+| `TRACE_CUSTOM_MODE_DEFAULT_SETTING` | Enable custom source as default landing page | `false` |
 
 ### Usage Example
 
@@ -147,6 +148,7 @@ http://host:port/app/observability-traces#/services
 - **v3.2.0** (2026-02-18): User-configurable service map max nodes and max edges settings, bug fixes for traces error display (nested status.code handling) and metrics visualization rendering in local cluster instances
 - **v3.1.0** (2026-01-21): Merged custom source mode into default Data Prepper mode, span flyout support for new Data Prepper format with nested field flattening, unified experience with cross-cluster search, custom indices, data grid, and dynamic filters
 - **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
+- **v2.19.0** (2025-01-09): Gantt chart rework with minimap/zoom, service map focus filtering, query optimization (reduced bucket requirements), custom mode default setting, numerous MDS and UI bug fixes
 - **v2.17.0** (2024-09-17): Custom source support (experimental) for custom span/service indices with CCS support, landing page changed to Traces, Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements
 
 
@@ -174,6 +176,14 @@ http://host:port/app/observability-traces#/services
 | v3.0.0 | [#2398](https://github.com/opensearch-project/dashboards-observability/pull/2398) | Trace to logs correlation |   |
 | v3.0.0 | [#2410](https://github.com/opensearch-project/dashboards-observability/pull/2410) | Amazon Network Firewall Integration |   |
 | v3.0.0 | [#2432](https://github.com/opensearch-project/dashboards-observability/pull/2432) | OTEL attributes field support |   |
+| v2.19.0 | [#2283](https://github.com/opensearch-project/dashboards-observability/pull/2283) | Gantt chart / Span list rework |   |
+| v2.19.0 | [#2264](https://github.com/opensearch-project/dashboards-observability/pull/2264) | Service map redirection/Focus field rework |   |
+| v2.19.0 | [#2237](https://github.com/opensearch-project/dashboards-observability/pull/2237) | Overview page missing data source state |   |
+| v2.19.0 | [#2230](https://github.com/opensearch-project/dashboards-observability/pull/2230) | Service map updates |   |
+| v2.19.0 | [#2310](https://github.com/opensearch-project/dashboards-observability/pull/2310) | Query optimization / UI setting / Bugfix |   |
+| v2.19.0 | [#2336](https://github.com/opensearch-project/dashboards-observability/pull/2336) | Add loading status to traces/services pages |   |
+| v2.19.0 | [#2333](https://github.com/opensearch-project/dashboards-observability/pull/2333) | MDS support for missing datasourceId |   |
+| v2.19.0 | [#2235](https://github.com/opensearch-project/dashboards-observability/pull/2235) | Traces/Services bugfixes and UI update |   |
 | v2.17.0 | [#2112](https://github.com/opensearch-project/dashboards-observability/pull/2112) | Custom source support for trace analytics |   |
 | v2.17.0 | [#2125](https://github.com/opensearch-project/dashboards-observability/pull/2125) | Update landing page to traces |   |
 | v2.17.0 | [#2006](https://github.com/opensearch-project/dashboards-observability/pull/2006) | MDS fix for local cluster rendering | [#1878](https://github.com/opensearch-project/dashboards-observability/issues/1878) |

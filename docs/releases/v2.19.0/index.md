@@ -120,6 +120,9 @@
 ### observability
 - Observability SOP
 
+### dashboards-observability
+- Observability
+
 ### opensearch-learning-to-rank-base
 - Security Integration Tests
 - System Index Handling
