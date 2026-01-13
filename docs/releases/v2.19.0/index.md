@@ -5,6 +5,7 @@
 ### opensearch
 - Auto Date Histogram Bug Fix
 - Dependency Updates
+- Fetch Source Context
 - Gradle Version Catalog
 - Sliced Search Optimization
 - Plugin System
