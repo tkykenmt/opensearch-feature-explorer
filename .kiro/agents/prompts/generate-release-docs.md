@@ -30,60 +30,18 @@ For each feature with changes in target version:
    - Related PRs for this version
    - Configuration added in this version
    - Components added in this version
-3. Create `docs/releases/v{version}/features/{feature-name}.md`
+3. Create `docs/releases/v{version}/features/{repo}/{feature-name}.md` following the **Release Report Template in DEVELOPMENT.md**
 
-### Release Report Template
-
-```markdown
-# {Feature Name} - v{version} Changes
-
-## Summary
-Brief description of what changed in this version.
-(Extract from Change History entry)
-
-## Details
-
-### What's New in v{version}
-- Change 1
-- Change 2
-
-### Technical Changes
-
-#### New/Modified Components
-| Component | Description |
-|-----------|-------------|
-(Only components added/modified in this version)
-
-#### New/Modified Configuration
-| Setting | Description | Default |
-|---------|-------------|---------|
-(Only settings added/modified in this version)
-
-### Usage Example
-```json
-// Example specific to this version's changes
-```
-
-## Related PRs
-| PR | Description |
-|----|-------------|
-(Only PRs for this version)
-```
+Key points:
+- Include YAML frontmatter with `tags: [{repo}]`
+- Focus on delta (what's new in this version)
+- No internal `.md` links
 
 ### Step 4: Create Release Index
 
 Create `docs/releases/v{version}/index.md`:
-
-```markdown
-# OpenSearch v{version}
-
-## Feature Reports
-
-| Feature | Description |
-|---------|-------------|
-| {Feature 1} | Brief description |
-| {Feature 2} | Brief description |
-```
+- List feature reports (plain text, no links)
+- Group by repository
 
 ### Step 5: Commit and Push
 

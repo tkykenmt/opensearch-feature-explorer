@@ -19,65 +19,18 @@ Use GitHub MCP `get_file_contents` to fetch.
 
 ### Step 3: Create Release Summary
 
-Create `docs/releases/v{version}/summary.md`:
+Create `docs/releases/v{version}/summary.md` following the **Release Summary Template in DEVELOPMENT.md**.
 
-```markdown
-# OpenSearch v{version} Release Summary
-
-## Summary
-Overview of this release: major themes, key features, overall impact.
-Written for all readers - accessible yet informative.
-
-## Highlights
-
-```mermaid
-graph TB
-    subgraph "Key Changes in v{version}"
-        A[Feature 1]
-        B[Feature 2]
-        C[Improvement 1]
-    end
-```
-
-## New Features
-
-| Feature | Description | Report |
-|---------|-------------|--------|
-| {Name} | {Brief description from release report} | {item-name} |
-
-## Improvements
-
-| Area | Description | Report |
-|------|-------------|--------|
-| {Area} | {Brief description} | {item-name} |
-
-## Bug Fixes
-
-| Fix | Description | PR |
-|-----|-------------|-----|
-| {Fix} | {Description} | [#{number}]({url}) |
-
-## Breaking Changes
-
-| Change | Migration | Report |
-|--------|-----------|--------|
-| {Change} | {Migration steps} | {item-name} |
-
-## Dependencies
-
-Notable dependency updates from release notes.
-
-## References
-
-- [Official Release Notes]({release_notes_url})
-- [Feature Reports](features/)
-```
+Key points:
+- Summary, Highlights (Mermaid), New Features, Improvements, Bug Fixes, Breaking Changes, References
+- No internal `.md` links in tables
+- External links (GitHub PRs) are allowed
 
 ### Step 4: Update Release Index
 
-Update `docs/releases/v{version}/index.md` to include summary reference:
-
-```markdown
+Update `docs/releases/v{version}/index.md`:
+- Add reference to summary
+- List feature reports (plain text, no links)
 # OpenSearch v{version}
 
 - Release Summary
@@ -129,7 +82,7 @@ git checkout $ORIGINAL_BRANCH
 - This agent does NOT investigate individual features
 - It aggregates existing release reports into a summary
 - If release reports are missing, note them and suggest running `investigate`
-- Focus on providing a high-level overview with links to detailed reports
+- Focus on providing a high-level overview
 
 ## Output Files
 
