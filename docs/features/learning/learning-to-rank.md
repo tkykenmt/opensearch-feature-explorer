@@ -79,6 +79,42 @@ flowchart TB
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `ltr.plugin.enabled` | Enable/disable the LTR plugin | `true` |
+| `ltr.breaker.enabled` | Enable/disable the circuit breaker | `true` |
+
+### Circuit Breaker
+
+The LTR plugin includes a memory-based circuit breaker that protects the cluster from resource exhaustion:
+
+- Monitors JVM heap usage with a default threshold of 85%
+- Blocks feature set additions, model creation, and feature store updates when memory is constrained
+- Can be disabled via `ltr.breaker.enabled` setting
+
+### Stats API
+
+The plugin exposes statistics for monitoring via REST endpoints:
+
+```
+GET /_plugins/_ltr/stats
+GET /_plugins/_ltr/stats/{stat}
+GET /_plugins/_ltr/{nodeId}/stats
+GET /_plugins/_ltr/{nodeId}/stats/{stat}
+```
+
+Available statistics:
+- `plugin_status` - Plugin health status (cluster-level)
+- `cache_stats` - Cache performance metrics (node-level)
+- `stores` - Feature store information (cluster-level)
+- `request_total_count` - Total request count (node-level)
+- `request_error_count` - Error request count (node-level)
+
+### Security Roles
+
+Predefined roles for LTR access control (requires Security plugin):
+
+| Role | Permissions |
+|------|-------------|
+| `ltr_read_access` | Read-only access to LTR stats, cache stats, and feature store listing |
+| `ltr_full_access` | Full access to all LTR operations |
 
 ### Usage Example
 
@@ -149,7 +185,7 @@ POST my_index/_search
 ## Change History
 
 - **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix; Test infrastructure enhancements - narrowed index cleanup scope to LTR indexes only, improved test isolation for parallel execution
-- **v2.19.0** (2025-02-18): System index handling - REST handlers now stash thread context before accessing `.ltrstore*` system indices (RestAddFeatureToSet, RestCreateModelFromSet, RestFeatureManager, RestStoreManager); Integration test fixes for system index warnings; Build infrastructure improvements (Java 11/17 builds, LTR onboarding scripts)
+- **v2.19.0** (2025-02-18): Major enhancements - plugin settings for enable/disable control (`ltr.plugin.enabled`, `ltr.breaker.enabled`), memory-based circuit breaker (85% heap threshold), stats REST API (`/_plugins/_ltr/stats`), security roles (`ltr_read_access`, `ltr_full_access`), system index registration for `.ltrstore*`; System index handling - REST handlers now stash thread context before accessing `.ltrstore*` system indices (RestAddFeatureToSet, RestCreateModelFromSet, RestFeatureManager, RestStoreManager); Integration test fixes for system index warnings; Build infrastructure improvements (Java 11/17 builds, LTR onboarding scripts)
 - **v3.3.0** (2026-01-14): Build infrastructure fixes - log4j exclusion from JAR, Gradle 9 compatibility, hybrid float comparison for tests, code coverage reporting, spotless plugin upgrade
 - **v3.2.0** (2025-09-16): Added XGBoost missing values support for correct NaN handling; Build infrastructure upgrade (Gradle 8.14, JDK 24 support); fixed flaky test with ULP tolerance adjustment
 - **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test
@@ -186,6 +222,13 @@ POST my_index/_search
 | v3.2.0 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Fix flaky test with ULP tolerance adjustment |   |
 | v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format | [#497](https://github.com/o19s/elasticsearch-learning-to-rank/issues/497) |
 | v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |   |
+| v2.19.0 | [#76](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/76) | Implemented LTR Settings for plugin enable/disable | [#75](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/75) |
+| v2.19.0 | [#71](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/71) | Implemented circuit breaker | [#70](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/70) |
+| v2.19.0 | [#79](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/79) | Collect stats for usage and health | [#78](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/78) |
+| v2.19.0 | [#89](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/89) | Supplier plugin health and store usage refactoring | |
+| v2.19.0 | [#90](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/90) | Implemented REST endpoint for stats | [#87](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/87) |
+| v2.19.0 | [#125](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/125) | Add .ltrstore* as system index | |
+| v2.19.0 | [#5067](https://github.com/opensearch-project/security/pull/5067) | Added roles for LTR read and full access (security) | |
 | v2.19.0 | [#126](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/126) | Modified Rest Handlers to stash context before modifying system indices | [#120](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/120) |
 | v2.19.0 | [#129](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/129) | Stashed context for GET calls |  |
 | v2.19.0 | [#132](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/132) | Modify ITs to ignore transient warning |  |

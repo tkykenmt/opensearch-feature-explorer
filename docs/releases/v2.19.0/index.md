@@ -108,3 +108,6 @@
 ### opensearch-learning-to-rank-base
 - Security Integration Tests
 - System Index Handling
+
+### learning
+- Learning to Rank
