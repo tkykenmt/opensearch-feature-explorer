@@ -68,6 +68,7 @@
 
 ### skills
 - CVE Fixes
+- CI Fixes
 
 ### observability
 - Observability SOP
