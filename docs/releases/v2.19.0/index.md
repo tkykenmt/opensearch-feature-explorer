@@ -78,6 +78,9 @@
 ### security-dashboards
 - Security Dashboards Bug Fixes
 
+### dashboards-reporting
+- Reporting Bug Fixes
+
 ### skills
 - CVE Fixes
 - CI Fixes
