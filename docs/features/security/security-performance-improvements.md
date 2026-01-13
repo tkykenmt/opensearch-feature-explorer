@@ -151,7 +151,7 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 - **v3.2.0** (2025-09-16): Precomputed privileges toggle, optimized wildcard matching
 - **v3.1.0** (2025-05-26): Immutable User object with serialization caching
 - **v3.0.0**: Optimized privilege evaluation for document- and field-level security
-- **v2.19.0**: Initial optimized privilege evaluation
+- **v2.19.0** (2025-02-11): Initial optimized privilege evaluation with ActionPrivileges class, hash-table-based lookups achieving O(1) complexity, and feature flag for legacy mode
 
 
 ## References
@@ -166,6 +166,9 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 | v3.2.0 | [#5470](https://github.com/opensearch-project/security/pull/5470) | Optimized wildcard matching |   |
 | v3.1.0 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove unused custom User serialization | [#5200](https://github.com/opensearch-project/security/issues/5200) |
 | v3.1.0 | [#5212](https://github.com/opensearch-project/security/pull/5212) | Immutable user object | [#5168](https://github.com/opensearch-project/security/issues/5168) |
+| v2.19.0 | [#4998](https://github.com/opensearch-project/security/pull/4998) | Optimized Privilege Evaluation: Action privileges with feature flag | [#3870](https://github.com/opensearch-project/security/issues/3870) |
+| v2.19.0 | [#4977](https://github.com/opensearch-project/security/pull/4977) | Refactor SafeSerializationUtils for better performance |   |
+| v2.19.0 | [#4926](https://github.com/opensearch-project/security/pull/4926) | Optimize privilege evaluation for '*' index pattern |   |
 
 ### Issues (Design / RFC)
 - [Issue #5464](https://github.com/opensearch-project/security/issues/5464): ActionPrivileges initialization performance issue

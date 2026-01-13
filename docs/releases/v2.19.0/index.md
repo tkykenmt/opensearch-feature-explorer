@@ -87,6 +87,7 @@
 - Security Audit Logging
 - Security Identity Plugin
 - Security Netty
+- Security Privilege Evaluation
 - Security Roles
 
 ### security-analytics
