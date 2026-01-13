@@ -88,8 +88,12 @@ Store fetched data in `.cache/` to avoid redundant API calls.
 
 ## Report Output Format
 
-### Release Report Template (docs/releases/v{version}/features/{item-name}.md)
+### Release Report Template (docs/releases/v{version}/features/{repo}/{item-name}.md)
 ```markdown
+---
+tags:
+  - {repo}
+---
 # {Item Name}
 
 ## Summary
@@ -139,8 +143,12 @@ Known limitations specific to this release.
 - [Feature Documentation](url)
 ```
 
-### Feature Report Template (docs/features/{feature-name}.md)
+### Feature Report Template (docs/features/{repo}/{feature-name}.md)
 ```markdown
+---
+tags:
+  - {repo}
+---
 # {Feature Name}
 
 ## Summary
