@@ -9,6 +9,7 @@
 - Deprecation Logger Cache Bound
 - gRPC Settings
 - Index Settings API
+- Ingest Pipeline Deprecation
 - IP Field
 - List Shards API
 - Match Only Text Field
