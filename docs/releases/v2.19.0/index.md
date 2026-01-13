@@ -14,6 +14,7 @@
 
 ### neural-search
 - Neural Search General Enhancements
+- Neural Sparse Search Pruning
 
 ### opensearch
 - Append Only Indices
