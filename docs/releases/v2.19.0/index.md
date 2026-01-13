@@ -43,6 +43,7 @@
 - Tiered Caching Bug Fixes
 - Unsigned Long Field
 - Workload Management Logging
+- Script Enhancements
 
 ### opensearch-dashboards
 - Dashboards Health Checks

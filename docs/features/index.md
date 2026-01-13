@@ -7,3 +7,4 @@ Cumulative feature documentation across all versions.
 - Append Only Indices
 - Date Field Sorting
 - GetStats API
+- Painless Script Hashing Methods
