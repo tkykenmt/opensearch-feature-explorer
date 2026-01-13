@@ -3346,7 +3346,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2060
     },
     {
       "name": "Multi-Search Request",
@@ -3360,7 +3361,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2061
     },
     {
       "name": "gRPC Settings",
@@ -3374,7 +3376,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2062
     },
     {
       "name": "Workload Management Logging",
@@ -3388,7 +3391,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2063
     },
     {
       "name": "CI Fixes",
@@ -3402,7 +3406,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2064
     },
     {
       "name": "Auto Date Histogram",
@@ -3416,7 +3421,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2065
     },
     {
       "name": "Dashboards Health Checks",
@@ -3430,7 +3436,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2066
     },
     {
       "name": "Discover Enhancements",
@@ -3462,7 +3469,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2067
     },
     {
       "name": "Numeric Precision Setting",
@@ -3476,7 +3484,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2068
     },
     {
       "name": "Dataset Selector",
@@ -3496,7 +3505,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2069
     },
     {
       "name": "Workspace Enhancements",
@@ -3534,7 +3544,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2070
     },
     {
       "name": "Data Source Association",
@@ -3548,7 +3559,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2071
     }
   ],
   "processed_offset": 695,
