@@ -129,6 +129,7 @@ PUT /_cluster/settings
 
 - **v3.1.0** (2026-01-10): Added close index request rejection during migration; Fixed cluster state diff download failures during alias operations
 - **v3.0.0** (2024-12-16): Added `cluster.remote_state.download.serve_read_api.enabled` setting to control full cluster state download on term mismatch
+- **v2.19.0** (2025-02-18): Fixed stale cluster state custom file deletion bug in `RemoteClusterStateCleanupManager`
 
 
 ## References
@@ -144,6 +145,7 @@ PUT /_cluster/settings
 | v3.1.0 | [#18327](https://github.com/opensearch-project/OpenSearch/pull/18327) | Disabling _close API invocation during remote migration | [#18328](https://github.com/opensearch-project/OpenSearch/issues/18328) |
 | v3.1.0 | [#18256](https://github.com/opensearch-project/OpenSearch/pull/18256) | Apply cluster state metadata and routing table diff when building cluster state from remote | [#18045](https://github.com/opensearch-project/OpenSearch/issues/18045) |
 | v3.0.0 | [#16798](https://github.com/opensearch-project/OpenSearch/pull/16798) | Setting to disable full cluster state download from remote on term mismatch | [#8957](https://github.com/opensearch-project/documentation-website/issues/8957) |
+| v2.19.0 | [#16670](https://github.com/opensearch-project/OpenSearch/pull/16670) | Fix stale cluster state custom file deletion | - |
 
 ### Issues (Design / RFC)
 - [Issue #18328](https://github.com/opensearch-project/OpenSearch/issues/18328): Reject close index requests during DocRep to SegRep migration
