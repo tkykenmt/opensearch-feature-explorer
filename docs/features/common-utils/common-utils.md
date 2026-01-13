@@ -131,6 +131,7 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 ## Change History
 
 - **v3.3.0** (2025-10-16): Updated user attributes XContent parsing to use `key=value` format in `custom_attribute_names`, updated delete_backport_branch workflow to include release-chores branches
+- **v2.19.0** (2025-02-04): Fixed bucket selector aggregation writeable name, added fanoutEnabled field to DocLevelMonitorInput for duplicate alert prevention
 - **v3.3.0** (2025-10-16): Added release notes for version 2.13.0.0 (backported to main branch)
 - **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
 - **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info
@@ -154,6 +155,9 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 | v3.0.0 | [#667](https://github.com/opensearch-project/common-utils/pull/667) | Adding replication (CCR) plugin interface | [#726](https://github.com/opensearch-project/index-management/issues/726) |
 | v3.0.0 | [#790](https://github.com/opensearch-project/common-utils/pull/790) | Fix imports for split transport package |   |
 | v3.0.0 | [#801](https://github.com/opensearch-project/common-utils/pull/801) | Escape/Unescape pipe in UserInfo | [#2756](https://github.com/opensearch-project/security/issues/2756) |
+| v2.19.0 | [#773](https://github.com/opensearch-project/common-utils/pull/773) | Fix bucket selector aggregation writeable name |   |
+| v2.19.0 | [#758](https://github.com/opensearch-project/common-utils/pull/758) | Monitor model changed to add optional fanoutEnabled field |   |
+| v2.19.0 | [#780](https://github.com/opensearch-project/common-utils/pull/780) | Added 2.19.0.0 release notes | [#751](https://github.com/opensearch-project/common-utils/issues/751) |
 
 ### Issues (Design / RFC)
 - [Issue #2756](https://github.com/opensearch-project/security/issues/2756): Username pipe character issue
