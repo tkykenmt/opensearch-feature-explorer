@@ -16,6 +16,7 @@
 - Remote Shards Balance Fix
 - Search Response Headers
 - Searchable Snapshot Bug Fixes
+- System Indices
 - Tiered Caching Bug Fixes
 - Unsigned Long Field
 - Workload Management Logging
