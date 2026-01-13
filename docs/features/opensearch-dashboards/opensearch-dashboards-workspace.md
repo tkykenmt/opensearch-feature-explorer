@@ -172,7 +172,7 @@ opensearch_security.multitenancy.enabled: false
 - **v3.4.0** (2026-02-18): Removed restriction requiring data source selection during workspace creation; workspaces can now be created without associated data sources
 - **v3.3.0** (2026-01-14): Added batch delete method for workspaces with improved error handling and detailed success/failure notifications
 - **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
-- **v2.19.0** (2025-01-09): Added two-step loading for data source association modal, improving performance when data sources have many direct query connections
+- **v2.19.0** (2025-01-09): Added dismissible get started section for overview pages; optimized recent items with workspace deletion filtering; refactored bulk_get permission handler for better error responses; added privacy levels for workspace access control; enabled category-based search for Dev Tools; added two-step loading for data source association modal
 - **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements
 
 
@@ -196,6 +196,11 @@ opensearch_security.multitenancy.enabled: false
 | v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.0.0 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |   |
 | v2.19.0 | [#8999](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8999) | Add two-steps loading for associating data sources |   |
+| v2.19.0 | [#8874](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8874) | Support dismiss get started for search/essential/analytics overview page |   |
+| v2.19.0 | [#8900](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8900) | Optimize recent items and filter out items whose workspace is deleted |   |
+| v2.19.0 | [#8906](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8906) | Refactor bulk_get handler in permission wrapper for better error handling |   |
+| v2.19.0 | [#8907](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8907) | Add privacy levels to the workspace |   |
+| v2.19.0 | [#8920](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8920) | Support search dev tools by its category name |   |
 | v2.18.0 | [#8500](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8500) | Workspace-level UI settings and hide non-global settings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8594](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8594) | Add workspace collaborators page |   |
 | v2.18.0 | [#8486](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8486) | Add WorkspaceCollaboratorTypesService and AddCollaboratorsModal |   |
