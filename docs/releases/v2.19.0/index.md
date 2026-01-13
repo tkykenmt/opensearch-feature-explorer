@@ -5,6 +5,7 @@
 ### opensearch
 - Auto Date Histogram Bug Fix
 - CI Fixes
+- gRPC Settings
 - Workload Management Logging
 
 ### opensearch-dashboards

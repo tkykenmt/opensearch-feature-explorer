@@ -278,6 +278,7 @@ Documents in gRPC requests must be Base64 encoded:
 - **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
 - **v3.1.0** (2026-01-14): Performance optimization with pass-by-reference pattern, package reorganization
 - **v3.0.0** (2025-05-06): Initial implementation with DocumentService (Bulk) and SearchService (Search), TLS support
+- **v2.19.0** (2025-01-21): Setting rename from `aux.transport.experimental-transport-grpc.ports` to `aux.transport.experimental-transport-grpc.port` for consistency, HTTP terminology cleanup in variable names
 
 
 ## References
@@ -332,6 +333,7 @@ Documents in gRPC requests must be Base64 encoded:
 | v3.0.0 | [#17727](https://github.com/opensearch-project/OpenSearch/pull/17727) | Add DocumentService and Bulk gRPC endpoint v1 | [#16784](https://github.com/opensearch-project/OpenSearch/issues/16784) |
 | v3.0.0 | [#17830](https://github.com/opensearch-project/OpenSearch/pull/17830) | SearchService and Search gRPC endpoint v1 | [#16783](https://github.com/opensearch-project/OpenSearch/issues/16783) |
 | v3.0.0 | [#17888](https://github.com/opensearch-project/OpenSearch/pull/17888) | Add terms query support in Search gRPC endpoint | [#16783](https://github.com/opensearch-project/OpenSearch/issues/16783) |
+| v2.19.0 | [#17037](https://github.com/opensearch-project/OpenSearch/pull/17037) | Fix GRPC AUX_TRANSPORT_PORT setting name and remove HTTP terminology | [#16556](https://github.com/opensearch-project/OpenSearch/issues/16556) |
 
 ### Issues (Design / RFC)
 - [Issue #16787](https://github.com/opensearch-project/OpenSearch/issues/16787): gRPC Transport tracking issue
