@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Sort Field Merging
 - Inner Hits Optimization
 - CI Fixes
 - Cluster State
