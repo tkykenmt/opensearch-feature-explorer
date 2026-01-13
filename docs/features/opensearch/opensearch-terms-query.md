@@ -151,6 +151,7 @@ flowchart TB
 
 - **v3.4.0** (2025-10-09): Optimized terms query creation for keyword fields with both index and doc_values enabled by packing terms only once when values are identical
 - **v3.3.0** (2025-10-09): Fixed incorrect rewriting of terms query with more than 2 consecutive whole numbers in `must_not` clauses
+- **v2.19.0** (2025-01-22): Improved bitmap filtering performance with new `BitmapIndexQuery` that uses point values traversal instead of `PointInSetQuery`, enabling efficient `IndexOrDocValuesQuery` support
 - **v2.17.0**: Added bitmap filtering support for efficient large-scale term filtering
 
 
@@ -169,6 +170,7 @@ flowchart TB
 | v3.4.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |   |
 | v3.3.0 | [#19587](https://github.com/opensearch-project/OpenSearch/pull/19587) | Fix rewriting terms query with consecutive whole numbers | [#19566](https://github.com/opensearch-project/OpenSearch/issues/19566) |
 | v3.0.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |   |
+| v2.19.0 | [#16936](https://github.com/opensearch-project/OpenSearch/pull/16936) | Improve bitmap filtering performance with BitmapIndexQuery | [#16317](https://github.com/opensearch-project/OpenSearch/issues/16317) |
 | v2.17.0 | - | Added bitmap filtering support |   |
 
 ### Issues (Design / RFC)

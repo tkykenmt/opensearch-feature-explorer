@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Bitmap Filtering Performance Improvement
 - Template Query
 - Dependency Updates
 - Fetch Source Context
