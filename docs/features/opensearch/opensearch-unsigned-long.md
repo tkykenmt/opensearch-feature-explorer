@@ -163,6 +163,7 @@ POST my_index/_search
 ## Change History
 
 - **v3.0.0** (2025-03-05): Fixed bug where terms queries on unsigned_long fields with values > Long.MAX_VALUE caused assertion errors. Introduced `UnsignedLongHashSet` class with proper unsigned comparison.
+- **v2.19.0** (2025-02-18): Added support for retrieving doc values using `docvalue_fields` parameter. Fixed multi-value sort for unsigned long fields by introducing `SortedNumericUnsignedLongValues` and extending `MultiValueMode` with unsigned long support.
 - **v2.8.0**: Initial implementation of unsigned_long field type.
 
 
@@ -176,7 +177,10 @@ POST my_index/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#17207](https://github.com/opensearch-project/OpenSearch/pull/17207) | Fix unsigned long sorting assertion in LongHashSet | [#17206](https://github.com/opensearch-project/OpenSearch/issues/17206) |
+| v2.19.0 | [#16543](https://github.com/opensearch-project/OpenSearch/pull/16543) | Support retrieving doc values of unsigned long field | - |
+| v2.19.0 | [#16732](https://github.com/opensearch-project/OpenSearch/pull/16732) | Fix multi-value sort for unsigned long | [#16698](https://github.com/opensearch-project/OpenSearch/issues/16698) |
 | v2.8.0 | - | Initial implementation of unsigned_long field type |   |
 
 ### Issues (Design / RFC)
 - [Issue #17206](https://github.com/opensearch-project/OpenSearch/issues/17206): Bug report for LongHashSet assertion error
+- [Issue #16698](https://github.com/opensearch-project/OpenSearch/issues/16698): Sort on multi-value unsigned long field is incorrect
