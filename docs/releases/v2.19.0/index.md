@@ -68,6 +68,7 @@
 
 ### security
 - CVE Fixes
+- Security Netty
 
 ### security-analytics
 - Security Analytics Bug Fixes
