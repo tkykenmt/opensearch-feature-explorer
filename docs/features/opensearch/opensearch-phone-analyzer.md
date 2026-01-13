@@ -103,12 +103,21 @@ Output tokens: ["+41 60 555 12 34", "6055512", "41605551", "416055512",
 
 #### phone-search (Search Analyzer)
 
-Generates only basic tokens without n-grams for efficient search:
+Generates only basic tokens without n-grams for efficient search.
 
+**v2.19.0 and later:**
+```
+Input: "+41 60 555 12 34"
+Output tokens: ["+41 60 555 12 34", "41605551234"]
+```
+
+**Before v2.19.0:**
 ```
 Input: "+41 60 555 12 34"
 Output tokens: ["+41 60 555 12 34", "41 60 555 12 34", "41605551234", "605551234", "41"]
 ```
+
+Starting from v2.19.0, the `phone-search` analyzer no longer emits the `tel:`/`sip:` prefix, international calling code, extension numbers, or unformatted national number as separate tokens. This change improves search precision by avoiding false positive matches.
 
 ### Usage Example
 
@@ -163,6 +172,7 @@ Without a region, only numbers with international prefix (`+`) are fully parsed.
 
 ## Change History
 
+- **v2.19.0** (2025-01-10): `phone-search` analyzer no longer emits tel/sip prefix, international calling code, extension numbers, and unformatted input as tokens to improve search precision
 - **v2.18.0** (2024-10-22): Initial implementation with `phone` and `phone-search` analyzers/tokenizers
 
 
@@ -177,6 +187,7 @@ Without a region, only numbers with international prefix (`+`) are fully parsed.
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#16993](https://github.com/opensearch-project/OpenSearch/pull/16993) | `phone-search` analyzer: don't emit sip/tel prefix, int'l prefix, extension & unformatted input | - |
 | v2.18.0 | [#15915](https://github.com/opensearch-project/OpenSearch/pull/15915) | Initial implementation of phone number analyzer | [#11326](https://github.com/opensearch-project/OpenSearch/issues/11326) |
 
 ### Issues (Design / RFC)
