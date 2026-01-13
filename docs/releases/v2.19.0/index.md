@@ -2,6 +2,9 @@
 
 ## Features
 
+### common-utils
+- Common Utils Bug Fixes
+
 ### custom-codecs
 - QAT Security Permission Fix
 
