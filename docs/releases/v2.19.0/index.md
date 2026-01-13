@@ -69,6 +69,9 @@
 ### security
 - CVE Fixes
 
+### security-analytics
+- Security Analytics Bug Fixes
+
 ### security-dashboards
 - Security Dashboards Bug Fixes
 
