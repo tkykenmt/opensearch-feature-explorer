@@ -2,6 +2,9 @@
 
 ## Features
 
+### custom-codecs
+- QAT Security Permission Fix
+
 ### ml-commons
 - ML Commons Tutorials
 
