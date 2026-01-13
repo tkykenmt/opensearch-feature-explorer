@@ -1,12 +1,12 @@
-"""Generate .pages files and index.md for MkDocs navigation."""
+"""Generate index.md and .pages files for MkDocs navigation."""
 
 import mkdocs_gen_files
+import re
 from pathlib import Path
 
 DOCS_DIR = Path("docs")
 FEATURES_DIR = DOCS_DIR / "features"
 
-# Domain mappings for repositories
 DOMAIN_MAPPINGS = {
     "search": ["k-nn", "neural-search", "sql", "asynchronous-search", "learning", "search-relevance", "dashboards-search-relevance"],
     "ml": ["ml-commons", "flow-framework", "skills", "ml-commons-dashboards", "dashboards-flow-framework", "dashboards-assistant"],
@@ -19,22 +19,90 @@ DOMAIN_MAPPINGS = {
     "infra": ["ci", "multi-plugin", "reporting", "user-behavior-insights", "dashboards-reporting", "dashboards-query-workbench"],
 }
 
+DOMAIN_LABELS = {
+    "core": "Core",
+    "search": "Search & Query",
+    "ml": "Machine Learning",
+    "observability": "Observability",
+    "security": "Security",
+    "data": "Data Management",
+    "geo": "Geospatial",
+    "infra": "Infrastructure",
+    "other": "Other",
+}
+
 def get_domain(repo_name: str) -> str:
-    """Get domain for a repository."""
     for domain, repos in DOMAIN_MAPPINGS.items():
         if repo_name in repos:
             return domain
     return "other"
 
-def generate_features_pages():
+def get_title_from_file(filepath: Path) -> str:
+    """Extract H1 title from markdown file."""
+    try:
+        content = filepath.read_text()
+        match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
+        if match:
+            return match.group(1).strip()
+    except:
+        pass
+    return filepath.stem.replace("-", " ").title()
+
+def generate_subdir_index(subdir: Path):
+    """Generate index.md for a feature subdirectory."""
+    md_files = sorted([f for f in subdir.glob("*.md") if f.name != "index.md"])
+    if not md_files:
+        return
+    
+    repo_name = subdir.name
+    title = repo_name.replace("-", " ").title()
+    
+    content = f"# {title}\n\n"
+    content += "| Document | Description |\n"
+    content += "|----------|-------------|\n"
+    
+    for f in md_files:
+        desc = get_title_from_file(f)
+        content += f"| [{f.stem}]({f.name}) | {desc} |\n"
+    
+    with mkdocs_gen_files.open(f"features/{repo_name}/index.md", "w") as out:
+        out.write(content)
+
+def generate_features_index():
+    """Generate main features/index.md."""
+    if not FEATURES_DIR.exists():
+        return
+    
+    subdirs = sorted([d for d in FEATURES_DIR.iterdir() if d.is_dir()])
+    by_domain = {}
+    for subdir in subdirs:
+        domain = get_domain(subdir.name)
+        if domain not in by_domain:
+            by_domain[domain] = []
+        by_domain[domain].append(subdir.name)
+    
+    content = "# OpenSearch Features\n\n"
+    
+    for domain in ["core", "search", "ml", "observability", "security", "data", "geo", "infra", "other"]:
+        if domain not in by_domain:
+            continue
+        content += f"## {DOMAIN_LABELS[domain]}\n\n"
+        content += "| Category | Description |\n"
+        content += "|----------|-------------|\n"
+        for repo in sorted(by_domain[domain]):
+            title = repo.replace("-", " ").title()
+            content += f"| [{title}]({repo}/) | {title} features |\n"
+        content += "\n"
+    
+    with mkdocs_gen_files.open("features/index.md", "w") as f:
+        f.write(content)
+
+def generate_pages_file():
     """Generate .pages for features directory."""
     if not FEATURES_DIR.exists():
         return
     
-    # Get all subdirectories
     subdirs = sorted([d.name for d in FEATURES_DIR.iterdir() if d.is_dir()])
-    
-    # Group by domain
     by_domain = {}
     for subdir in subdirs:
         domain = get_domain(subdir)
@@ -42,15 +110,18 @@ def generate_features_pages():
             by_domain[domain] = []
         by_domain[domain].append(subdir)
     
-    # Generate .pages content
-    pages_content = "nav:\n"
+    content = "nav:\n  - index.md\n"
     for domain in ["core", "search", "ml", "observability", "security", "data", "geo", "infra", "other"]:
         if domain in by_domain:
-            pages_content += f"  # {domain.upper()}\n"
             for repo in sorted(by_domain[domain]):
-                pages_content += f"  - {repo}\n"
+                content += f"  - {repo}\n"
     
     with mkdocs_gen_files.open("features/.pages", "w") as f:
-        f.write(pages_content)
+        f.write(content)
 
-generate_features_pages()
+# Generate all
+generate_features_index()
+generate_pages_file()
+for subdir in FEATURES_DIR.iterdir():
+    if subdir.is_dir():
+        generate_subdir_index(subdir)
