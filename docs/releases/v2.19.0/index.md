@@ -9,6 +9,7 @@
 - Gradle Version Catalog
 - Sliced Search Optimization
 - Plugin System
+- Snapshot Restore Settings
 - Sort Field Merging
 - Inner Hits Optimization
 - CI Fixes
