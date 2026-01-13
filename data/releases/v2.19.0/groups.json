@@ -1850,7 +1850,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 2000
     },
     {
       "name": "Common Utils",
@@ -1876,7 +1877,8 @@
           "category": "bugfix",
           "repository": "common"
         }
-      ]
+      ],
+      "issue_number": 2001
     },
     {
       "name": "Custom Codecs",
@@ -1890,7 +1892,8 @@
           "category": "bugfix",
           "repository": "custom"
         }
-      ]
+      ],
+      "issue_number": 2002
     },
     {
       "name": "Dashboards Maps",
@@ -1904,7 +1907,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 2003
     },
     {
       "name": "Reporting",
@@ -1930,7 +1934,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 2004
     },
     {
       "name": "Security JWT Authentication",
@@ -1950,7 +1955,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2005
     },
     {
       "name": "Security Audit Logging",
@@ -1976,7 +1982,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2006
     },
     {
       "name": "Security Netty",
@@ -1996,7 +2003,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2007
     },
     {
       "name": "Security Analytics",
@@ -2076,7 +2084,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 2008
     },
     {
       "name": "Security Dashboards",
@@ -2096,7 +2105,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2009
     },
     {
       "name": "System Index Handling",
@@ -2152,7 +2162,8 @@
           "category": "bugfix",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2010
     },
     {
       "name": "Security Integration Tests",
@@ -2166,7 +2177,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2011
     },
     {
       "name": "Query Insights Dashboards",
@@ -2228,7 +2240,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 2012
     },
     {
       "name": "Skills CI",
@@ -2242,7 +2255,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 2013
     },
     {
       "name": "ML Commons Tutorials",
@@ -2292,7 +2306,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2014
     },
     {
       "name": "Observability SOP",
@@ -2306,7 +2321,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 2015
     },
     {
       "name": "Star Tree Index",
@@ -2344,7 +2360,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2016
     },
     {
       "name": "Search Replicas",
@@ -2364,7 +2381,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2017
     },
     {
       "name": "Segment Replication",
@@ -2384,7 +2402,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2018
     },
     {
       "name": "Workload Management",
@@ -2398,7 +2417,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2019
     },
     {
       "name": "Request Cache",
