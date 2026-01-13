@@ -57,8 +57,8 @@ Title: [{category}] {Item Name} (v{version})
 - PR: #{pr_number}
 
 ## Deliverables
-1. **Release Report**: `docs/releases/v{version}/features/{repo}/{item-name}.md`
-2. **Feature Report**: `docs/features/{repo}/{feature-name}.md`
+1. **Release Report**: `docs/releases/v{version}/features/{repository}/{item-name}.md`
+2. **Feature Report**: `docs/features/{repository}/{feature-name}.md`
 
 ## Tasks
 - [ ] Investigate PR and related issues
@@ -105,8 +105,8 @@ Remaining pending items: {count}
 
 | # | Item | Repository | Issue |
 |---|------|------------|-------|
-| 1 | {item_name} | {repo} | #{number} |
-| 2 | {item_name} | {repo} | #{number} |
+| 1 | {item_name} | {repository} | #{number} |
+| 2 | {item_name} | {repository} | #{number} |
 ...
 
 ### Progress

@@ -27,7 +27,7 @@ opensearch-feature-explorer/
 │       ├── groups.json
 │       └── prs/, issues/
 └── docs/                     # Generated documentation
-    ├── features/{repo}/      # Cumulative feature docs
+    ├── features/{repository}/      # Cumulative feature docs
     └── releases/v{version}/  # Version-specific docs
 ```
 
@@ -68,11 +68,11 @@ fetch-release → group-release → planner → create-issues → investigate �
 ### Directory Structure
 ```
 docs/
-├── features/{repo}/           # Cumulative feature documentation
-│   ├── {repo}-{feature}.md
+├── features/{repository}/           # Cumulative feature documentation
+│   ├── {repository}-{feature}.md
 │   └── index.md
 └── releases/v{version}/       # Version-specific documentation
-    ├── features/{repo}/
+    ├── features/{repository}/
     │   └── {item-name}.md
     ├── index.md
     └── summary.md
@@ -82,8 +82,8 @@ docs/
 
 | Type | Pattern | Example |
 |------|---------|---------|
-| Feature doc | `{repo}/{repo}-{feature}.md` | `k-nn/k-nn-explain-api.md` |
-| Release doc | `releases/v{ver}/features/{repo}/{item}.md` | `releases/v3.0.0/features/k-nn/explain-api.md` |
+| Feature doc | `{repository}/{repository}-{feature}.md` | `k-nn/k-nn-explain-api.md` |
+| Release doc | `releases/v{ver}/features/{repository}/{item}.md` | `releases/v3.0.0/features/k-nn/explain-api.md` |
 | Index | `{dir}/index.md` | `features/k-nn/index.md` |
 
 Rules:
@@ -105,7 +105,7 @@ Each document has exactly **one tag**: the repository name derived from file pat
 ```yaml
 ---
 tags:
-  - {repo}
+  - {repository}
 ---
 ```
 
@@ -153,7 +153,7 @@ All reports must include YAML frontmatter with tags:
 ```yaml
 ---
 tags:
-  - {repo}
+  - {repository}
 ---
 ```
 
@@ -161,7 +161,7 @@ tags:
 ```markdown
 ---
 tags:
-  - {repo}
+  - {repository}
 ---
 # {Feature Name}
 
@@ -201,7 +201,7 @@ Brief overview accessible to all readers.
 ```markdown
 ---
 tags:
-  - {repo}
+  - {repository}
 ---
 # {Item Name}
 

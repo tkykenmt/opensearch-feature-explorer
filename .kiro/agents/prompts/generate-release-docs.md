@@ -10,7 +10,7 @@ You are a release document generator. Extract version-specific changes from exis
 
 ### Step 1: Scan Feature Documents
 
-1. List all `docs/features/{repo}/*.md` files (excluding index.md and language variants)
+1. List all `docs/features/{repository}/*.md` files (excluding index.md and language variants)
 2. For each file, read the Change History section
 3. Identify features that have changes for the target version
 
@@ -30,10 +30,10 @@ For each feature with changes in target version:
    - Related PRs for this version
    - Configuration added in this version
    - Components added in this version
-3. Create `docs/releases/v{version}/features/{repo}/{feature-name}.md`
+3. Create `docs/releases/v{version}/features/{repository}/{feature-name}.md`
 
 Key points:
-- Include YAML frontmatter with `tags: [{repo}]`
+- Include YAML frontmatter with `tags: [{repository}]`
 - Focus on delta (what's new in this version)
 - No internal `.md` links
 
@@ -73,7 +73,7 @@ Create PR and merge, then return to original branch.
 docs/releases/v{version}/
 ├── index.md
 └── features/
-    └── {repo}/
+    └── {repository}/
         ├── {feature-1}.md
         └── {feature-2}.md
 ```

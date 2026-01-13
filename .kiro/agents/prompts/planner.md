@@ -96,13 +96,13 @@ Title: [{category}] {group_name}
 ## Pull Requests
 | PR | Title | Category | Repository |
 |----|-------|----------|------------|
-| #{pr} | {name} | {category} | {repo} |
+| #{pr} | {name} | {category} | {repository} |
 ...
 
 ## Tasks
 - [ ] Investigate PRs
-- [ ] Create release report: `docs/releases/v{version}/features/{repo}/{group-name}.md`
-- [ ] Update feature report: `docs/features/{repo}/{feature-name}.md`
+- [ ] Create release report: `docs/releases/v{version}/features/{repository}/{group-name}.md`
+- [ ] Update feature report: `docs/features/{repository}/{feature-name}.md`
 ```
 
 Labels: `release/v{version}`, `status/todo`

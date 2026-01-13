@@ -41,8 +41,8 @@ Input: (no arguments)
 
 If a language code is specified (e.g., "Output in language code 'ja'"):
 1. Write reports in the specified language
-2. Release report: `docs/releases/v{version}/features/{repo}/{item-name}.{lang}.md`
-3. Feature report: `docs/features/{repo}/{feature-name}.{lang}.md`
+2. Release report: `docs/releases/v{version}/features/{repository}/{item-name}.{lang}.md`
+3. Feature report: `docs/features/{repository}/{feature-name}.{lang}.md`
 4. Keep technical terms, code, and configuration examples in English
 5. Translate descriptions, explanations, and summaries
 
@@ -58,10 +58,10 @@ Step 1: Load target info
 Step 2: Deep investigation
     ↓
 Step 3: Create RELEASE report (primary output)
-         docs/releases/v{version}/features/{repo}/{item-name}.md
+         docs/releases/v{version}/features/{repository}/{item-name}.md
     ↓
 Step 4: Update/Create FEATURE report (secondary output)
-         docs/features/{repo}/{feature-name}.md
+         docs/features/{repository}/{feature-name}.md
     ↓
 Step 5: Commit and push
     ↓
@@ -128,12 +128,12 @@ Before creating new files, search for existing reports:
 ### Search with GitHub MCP
 Use `search_code` to find existing reports:
 ```
-search_code(q="{feature-name} repo:{owner}/{repo} path:docs/features")
+search_code(q="{feature-name} repo:{owner}/{repository} path:docs/features")
 ```
 
 Also search by key terms:
 ```
-search_code(q="{key-term} repo:{owner}/{repo} path:docs/features extension:md")
+search_code(q="{key-term} repo:{owner}/{repository} path:docs/features extension:md")
 ```
 
 ### Decision
@@ -185,14 +185,14 @@ Use lowercase for folder paths.
 - If repository not specified in Issue, determine from the main PR's repository
 - For items spanning multiple repositories, use the primary repository
 
-Create `docs/releases/v{version}/features/{repo}/{item-name}.md`:
+Create `docs/releases/v{version}/features/{repository}/{item-name}.md`:
 
 This is the **primary output** - a focused report on what changed in THIS version.
 
 
 
 Key points:
-- Include YAML frontmatter with `tags: [{repo}]`
+- Include YAML frontmatter with `tags: [{repository}]`
 - Focus on delta (what's new in this version)
 - No internal `.md` links
 
@@ -213,15 +213,15 @@ For bugfix category items:
 4. Do NOT create a new feature report for bug fixes
 
 ### For new-feature (feature report doesn't exist):
-Create `docs/features/{repo}/{feature-name}.md`.
+Create `docs/features/{repository}/{feature-name}.md`.
 
 Key points:
-- Include YAML frontmatter with `tags: [{repo}]`
+- Include YAML frontmatter with `tags: [{repository}]`
 - Summary, Details, Limitations, Change History, References sections
 - No internal `.md` links
 
 ### For update-feature (feature report exists):
-1. Read existing `docs/features/{repo}/{feature-name}.md`
+1. Read existing `docs/features/{repository}/{feature-name}.md`
 2. Check the highest version already documented in Change History
 3. If investigating an **older version** than what's documented:
    - **Do NOT overwrite** existing specs with older behavior (e.g., config defaults, API signatures)
@@ -301,8 +301,8 @@ Post completion comment:
 ## Investigation Complete
 
 ### Reports Created
-- Release report: `docs/releases/v{version}/features/{repo}/{item-name}.md`
-- Feature report: `docs/features/{repo}/{feature-name}.md` (created/updated)
+- Release report: `docs/releases/v{version}/features/{repository}/{item-name}.md`
+- Feature report: `docs/features/{repository}/{feature-name}.md` (created/updated)
 
 ### Summary
 {Brief summary of findings}
@@ -381,7 +381,7 @@ When invoked with no arguments:
 3. Handle user requests:
    - **Questions**: Answer using existing reports and GitHub data
    - **URL import**: Fetch URL, summarize, offer to update reports
-   - **Feature lookup**: Load `docs/features/{repo}/{name}.md` as context
+   - **Feature lookup**: Load `docs/features/{repository}/{name}.md` as context
    - **Report updates**: Modify reports based on conversation
 4. Continue until user exits with `/quit`
 
