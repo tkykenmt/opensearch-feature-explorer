@@ -31,6 +31,7 @@
 - Remote State Manifest
 - Search Response Headers
 - Searchable Snapshot Bug Fixes
+- Security Transport NIO
 - Sliced Search Optimization
 - Snapshot Restore Settings
 - Sort Field Merging

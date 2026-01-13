@@ -74,7 +74,15 @@ flowchart TB
 |---------|-------------|---------|
 | `plugins.security_config.ssl_dual_mode_enabled` | Enable SSL dual mode for mixed SSL/non-SSL transport | `false` |
 | `plugins.security.ssl_only` | Run security plugin in SSL-only mode | `false` |
-| `http.type` | HTTP transport type (use `reactor-netty4-secure` for secure reactor netty) | `netty4` |
+| `http.type` | HTTP transport type | `netty4` |
+
+#### Supported Secure HTTP Transport Types
+
+| Transport Type | Description | Available Since |
+|----------------|-------------|-----------------|
+| `netty4-secure` | Netty4-based secure HTTP transport | v2.0.0 |
+| `reactor-netty4-secure` | Reactor Netty4-based secure HTTP transport | v2.18.0 |
+| `nio-http-transport-secure` | NIO-based secure HTTP transport | v2.19.0 |
 
 ### Interface Definitions
 
@@ -187,6 +195,7 @@ http.type: reactor-netty4-secure
 ## Change History
 
 - **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface to `SecureHttpTransportSettingsProvider` for cleaner SSL configuration in Reactor Netty 4 HTTP transport
+- **v2.19.0** (2025-01-21): Added NIO secure HTTP transport support (`nio-http-transport-secure`) via PR #16474
 - **v2.18.0** (2024-10-29): Added `parameters()` method and `SecureTransportParameters` interface to support dynamic SSL dual mode settings
 
 
@@ -203,6 +212,7 @@ http.type: reactor-netty4-secure
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18572](https://github.com/opensearch-project/OpenSearch/pull/18572) | Introduce SecureHttpTransportParameters experimental API | [#18559](https://github.com/opensearch-project/OpenSearch/issues/18559) |
+| v2.19.0 | [#16474](https://github.com/opensearch-project/OpenSearch/pull/16474) | Ensure support of the transport-nio by security plugin (HTTP) | [#13245](https://github.com/opensearch-project/OpenSearch/issues/13245) |
 | v2.18.0 | [#16387](https://github.com/opensearch-project/OpenSearch/pull/16387) | Add method to return dynamic SecureTransportParameters |   |
 | v2.18.0 | [#4820](https://github.com/opensearch-project/security/pull/4820) | Security plugin: propagate dual mode from cluster settings |   |
 
