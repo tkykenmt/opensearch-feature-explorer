@@ -64,6 +64,9 @@
 ### opensearch-dashboards
 - Dashboards Health Checks
 
+### query-insights
+- Query Insights Enhancements
+
 ### query-insights-dashboards
 - CI/Infrastructure Fixes
 - Data Source Association
