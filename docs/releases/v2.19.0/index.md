@@ -106,6 +106,9 @@
 ### dashboards-reporting
 - Reporting Bug Fixes
 
+### index-management-dashboards
+- Index Management
+
 ### skills
 - CVE Fixes
 - CI Fixes
