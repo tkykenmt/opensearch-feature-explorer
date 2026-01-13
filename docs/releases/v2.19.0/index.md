@@ -5,6 +5,7 @@
 ### opensearch
 - Auto Date Histogram Bug Fix
 - CI Fixes
+- Deprecation Logger Cache Bound
 - gRPC Settings
 - List Shards API
 - Match Only Text Field
