@@ -19,3 +19,7 @@ Cumulative feature documentation across all versions.
 
 - Security Certificate Management
 - Security Identity Plugin
+
+## sql
+
+- SQL/PPL Engine

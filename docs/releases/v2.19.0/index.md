@@ -97,6 +97,9 @@
 ### security-dashboards
 - Security Dashboards Bug Fixes
 
+### sql
+- SQL/PPL
+
 ### dashboards-assistant
 - AI Assistant UI
 

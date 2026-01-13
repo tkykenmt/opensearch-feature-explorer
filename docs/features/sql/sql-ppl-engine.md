@@ -101,6 +101,7 @@ POST /_plugins/_ppl
 
 - **v3.3.0**: Calcite enabled by default; see Calcite Query Engine for details
 - **v3.0.0**: Apache Calcite integration (V3 engine)
+- **v2.19.0**: PPL metadata fields support (`_id`, `_index`, etc.); grammar validation for PPL; async query state management improvements; bug fixes for datetime parsing, CSV output, and FilterOperator
 - **v2.17.0**: Increased default query size limit (200 → 10000)
 
 
