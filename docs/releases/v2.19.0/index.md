@@ -37,6 +37,7 @@
 - Search Response Headers
 - Searchable Snapshot Bug Fixes
 - Security Transport NIO
+- Segment Replication
 - Sliced Search Optimization
 - Snapshot Repository
 - Snapshot Restore Settings
