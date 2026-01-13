@@ -5,7 +5,7 @@ Transform report files structurally without changing content.
 ## Modes
 
 ### File Mode
-Transform single file per steering rules.
+Transform single file per DEVELOPMENT.md rules.
 ```bash
 python run.py refactor docs/features/k-nn/vector-search-k-nn.md
 ```
