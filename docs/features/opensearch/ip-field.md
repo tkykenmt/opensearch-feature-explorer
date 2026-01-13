@@ -60,6 +60,7 @@ This configuration:
 
 ## Change History
 
+- **v2.19.0** (2025-01-14): Enhanced `terms` query to support more than 1024 IP masks using `MultiRangeQuery` for indexed fields ([#16391](https://github.com/opensearch-project/OpenSearch/pull/16391))
 - **v2.19.0** (2025-01-14): Fixed CIDR notation (IP mask) searching for doc_values-only IP fields ([#16628](https://github.com/opensearch-project/OpenSearch/pull/16628))
 - **v2.12.0** (2024-01-30): Added support for searching IP fields with only doc_values enabled ([#11508](https://github.com/opensearch-project/OpenSearch/pull/11508))
 - **v1.0.0**: Initial implementation of IP field type
@@ -68,9 +69,11 @@ This configuration:
 
 ### Documentation
 - [IP address field type](https://docs.opensearch.org/latest/field-types/supported-field-types/ip/)
+- [Terms query](https://docs.opensearch.org/latest/query-dsl/term/terms/)
 
 ### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.19.0 | [#16391](https://github.com/opensearch-project/OpenSearch/pull/16391) | Support more than 1024 IP masks in terms query |
 | v2.19.0 | [#16628](https://github.com/opensearch-project/OpenSearch/pull/16628) | Fix doc_values only IP field searching for masks |
 | v2.12.0 | [#11508](https://github.com/opensearch-project/OpenSearch/pull/11508) | Enable doc_values-only searching for IP fields |
