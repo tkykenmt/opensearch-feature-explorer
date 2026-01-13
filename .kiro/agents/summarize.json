@@ -2,9 +2,18 @@
   "name": "summarize",
   "description": "Create release summary from existing feature reports",
   "prompt": "You are a release summarizer. Create release summary by aggregating release reports.",
-  "tools": ["@builtin", "@github", "@opensearch-docs"],
-  "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
+  "tools": [
+    "@builtin",
+    "@github",
+    "@opensearch-docs"
+  ],
+  "allowedTools": [
+    "@builtin",
+    "@github",
+    "@opensearch-docs"
+  ],
   "resources": [
+    "file://DEVELOPMENT.md",
     "file://README.md",
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/summarize.md"
@@ -12,11 +21,16 @@
   "mcpServers": {
     "opensearch-docs": {
       "command": "python",
-      "args": ["mcp_server.py"]
+      "args": [
+        "mcp_server.py"
+      ]
     },
     "github": {
       "command": "bash",
-      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
+      "args": [
+        "-c",
+        "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"
+      ]
     }
   }
 }
