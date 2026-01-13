@@ -4,11 +4,11 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
-- IP Field
 - CI Fixes
 - Cluster State
 - Deprecation Logger Cache Bound
 - gRPC Settings
+- IP Field
 - List Shards API
 - Match Only Text Field
 - Multi-Search Request Cancellation Fix
@@ -16,6 +16,7 @@
 - Remote Shards Balance Fix
 - Searchable Snapshot Bug Fixes
 - Tiered Caching Bug Fixes
+- Unsigned Long Field
 - Workload Management Logging
 
 ### opensearch-dashboards
