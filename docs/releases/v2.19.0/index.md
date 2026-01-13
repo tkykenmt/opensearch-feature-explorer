@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- CI Fixes
 
 ### opensearch-dashboards
 - Dashboards Health Checks
