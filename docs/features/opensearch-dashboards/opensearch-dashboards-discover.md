@@ -148,7 +148,7 @@ Requires ML agent configuration:
 - **v3.4.0** (2025-11-06): Added log pattern detection for Discover Summary - automatically uses specialized `os_data2summary_with_log_pattern` agent for log indexes
 - **v3.2.0** (2025-08-05): Fixed empty page issue when no index patterns exist, added Cypress tests for discover visualization
 - **v3.0.0** (2025-05-13): Added CSV export functionality, reorganized results display with ResultsActionBar, customizable summary panel title, experimental Data plugin `__enhance` API with resultsActionBar, and 6 bug fixes for saved search handling and workspace integration
-- **v2.19.0** (2025-01-14): Added indexed views framework to dataset selector, custom time filter logic per dataset type, and query editor bottom panel extension
+- **v2.19.0** (2025-01-14): Added indexed views framework to dataset selector, results canvas banner framework, data2summary agent validation, default query string framework, custom time filter logic per dataset type, query editor bottom panel extension, and Cypress test data attributes
 - **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
 
 
@@ -177,7 +177,10 @@ Requires ML agent configuration:
 | v3.0.0 | [#9529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9529) | Correctly load saved search from snapshot URL | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.0.0 | [#9541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9541) | Correctly load saved search query in query editor | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.0.0 | [#9465](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9465) | Prevent visiting Discover outside workspace | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.19.0 | [#8682](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8682) | Add data test subject for discover cypress test |   |
+| v2.19.0 | [#8716](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8716) | Add data2summary agent check in data summary panel |   |
 | v2.19.0 | [#8851](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8851) | Indexed views framework - show indexed views in dataset selector |   |
+| v2.19.0 | [#8896](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8896) | Framework for default query string using dataset and language |   |
 | v2.19.0 | [#8932](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8932) | Support custom time filter logic based on dataset type |   |
 | v2.18.0 | [#8186](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8186) | Add data summary panel in discover |   |
 | v2.18.0 | [#8214](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8214) | Add cache time and refresh button to dataset selector | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |

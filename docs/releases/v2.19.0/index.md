@@ -5,5 +5,6 @@
 ### opensearch-dashboards
 - Data Source Association
 - Dataset Selector
+- Discover Enhancements
 - Numeric Precision Setting
 - Workspace Enhancements
