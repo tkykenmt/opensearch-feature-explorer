@@ -118,6 +118,7 @@ The verification process:
 
 - **v3.3.0** (2026-01-11): Added support for copying directories to plugin config folder during installation
 - **v3.1.0** (2026-01-10): Fixed signature verification failure caused by PGP public key change; added BouncyCastle FIPS provider initialization
+- **v2.19.0** (2024-12-05): Simplified SNAPSHOT plugin installation by removing staging hash requirement ([#16581](https://github.com/opensearch-project/OpenSearch/pull/16581))
 
 
 ## References
@@ -130,6 +131,7 @@ The verification process:
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19343](https://github.com/opensearch-project/OpenSearch/pull/19343) | Allow plugins to copy folders into their config dir during installation |   |
 | v3.1.0 | [#18147](https://github.com/opensearch-project/OpenSearch/pull/18147) | Fix native plugin installation error caused by PGP public key change | [#3747](https://github.com/opensearch-project/opensearch-build/issues/3747) |
+| v2.19.0 | [#16581](https://github.com/opensearch-project/OpenSearch/pull/16581) | Support installing plugin SNAPSHOTs with SNAPSHOT distribution | [opensearch-build#5096](https://github.com/opensearch-project/opensearch-build/issues/5096) |
 
 ### Issues (Design / RFC)
 - [Issue #5308](https://github.com/opensearch-project/opensearch-build/issues/5308): New PGP key for signing artifacts starting 3.0.0
