@@ -34,11 +34,15 @@ graph TB
 
 | Agent | Description |
 |-------|-------------|
-| **fetch-release** | Fetch release notes → parse and save all items to JSON cache |
-| **planner** | Read JSON cache → create tracking Issue with all items |
+| **fetch-release** | Fetch release notes → parse and save all items to `raw-items.json` |
+| **group-release** | Group raw items into feature groups → save to `groups.json` |
+| **review-groups** | Review and refine groups (split over-aggregated, merge related) |
+| **planner** | Create GitHub Project and Issues from `groups.json` |
 | **create-issues** | Create individual investigation Issues from tracking Issue |
 | **investigate** | Deep investigation (4 modes: Issue, PR, Feature, Interactive Q&A) |
 | **summarize** | Aggregate release reports into release summary |
+| **generate-release-docs** | Generate release docs from existing feature documents |
+| **refactor** | Batch structural changes to existing reports |
 | **translate** | Translate reports to other languages |
 | **dev** | Development and maintenance of this tool itself |
 
@@ -73,9 +77,10 @@ gh auth login -s read:org,repo,workflow,project
 | Issue (group) | `[{category}] {group_name}` | `[feature] Star Tree Index` |
 | Label (release) | `release/v{version}` | `release/v3.0.0` |
 | Label (status) | `status/{status}` | `status/todo`, `status/done` |
+| Cache directory | `.cache/releases/v{version}/` | `.cache/releases/v3.0.0/` |
 | Data directory | `data/releases/v{version}/` | `data/releases/v3.0.0/` |
-| Release report | `docs/releases/v{version}/{group-name}.md` | `docs/releases/v3.0.0/star-tree-index.md` |
-| Feature report | `docs/features/{feature-name}.md` | `docs/features/star-tree-index.md` |
+| Release report | `docs/releases/v{version}/features/{repo}/{item-name}.md` | `docs/releases/v3.0.0/features/opensearch/star-tree-index.md` |
+| Feature report | `docs/features/{repo}/{feature-name}.md` | `docs/features/opensearch/star-tree-index.md` |
 
 ## Setup
 

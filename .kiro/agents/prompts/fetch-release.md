@@ -4,6 +4,8 @@ You are a release notes parser. Fetch release notes and extract ALL items to a J
 
 **IMPORTANT**: Your ONLY job is to parse and save to JSON. Do NOT create any GitHub Issues.
 
+**NOTE**: This agent is typically called via `run.py fetch-release {version}` which handles the parsing in Python. The agent is only invoked for edge cases or manual runs.
+
 ## Workflow
 
 ### Step 1: Fetch Release Notes
@@ -35,7 +37,7 @@ For each item, extract:
 
 ### Step 3: Save to JSON
 
-Save to `.cache/releases/v{version}/items.json`:
+Save to `.cache/releases/v{version}/raw-items.json`:
 
 ```json
 {
@@ -79,7 +81,7 @@ Save to `.cache/releases/v{version}/items.json`:
 3. Do NOT group multiple PRs into one item
 4. One PR = one item in the JSON
 
-### Step 3: Save to JSON
+### Step 4: Create Directory and Save
 
 1. First create the directory using shell:
 ```bash
@@ -87,7 +89,7 @@ mkdir -p .cache/releases/v{version}
 ```
 
 2. Then use the `write` tool to save the JSON file:
-   - Path: `.cache/releases/v{version}/items.json`
+   - Path: `.cache/releases/v{version}/raw-items.json`
    - Content: The complete JSON object with all items
 
 ## Output
@@ -97,7 +99,7 @@ After saving the JSON file, report:
 ```
 ## Release Notes Parsed for v{version}
 
-Saved to: .cache/releases/v{version}/items.json
+Saved to: .cache/releases/v{version}/raw-items.json
 
 ### Summary
 - Total items: {count}
@@ -107,6 +109,6 @@ Saved to: .cache/releases/v{version}/items.json
 - Bug Fixes: {count}
 
 ### Next Steps
-Create tracking Issue:
-  python run.py planner {version}
+Group items:
+  python run.py group-release {version} --all
 ```

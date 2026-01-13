@@ -11,20 +11,23 @@ opensearch-feature-explorer/
 ├── requirements.txt          # Python dependencies
 ├── mkdocs.yml                # MkDocs configuration
 ├── .kiro/
-│   └── agents/
-│       ├── *.json            # Agent configurations
-│       └── prompts/
-│           ├── base.md       # Shared knowledge
-│           └── *.md          # Agent-specific prompts
+│   ├── agents/
+│   │   ├── *.json            # Agent configurations
+│   │   └── prompts/
+│   │       └── *.md          # Agent-specific prompts
+│   └── steering/
+│       └── opensearch-knowledge.md  # Shared knowledge
 ├── data/                     # Persistent data
 │   └── releases/v{version}/
 │       └── groups.json
 ├── .cache/                   # Temporary cache
 │   └── releases/v{version}/
-│       ├── items.json
+│       ├── raw-items.json
+│       ├── batch.json
+│       ├── groups.json
 │       └── prs/, issues/
 └── docs/                     # Generated documentation
-    ├── features/             # Cumulative feature docs
+    ├── features/{repo}/      # Cumulative feature docs
     └── releases/v{version}/  # Version-specific docs
 ```
 
