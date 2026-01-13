@@ -1,11 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - observability
-  - performance
-  - search
   - sql
 ---
 # Calcite Query Engine

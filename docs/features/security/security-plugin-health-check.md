@@ -1,9 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - indexing
-  - performance
   - security
 ---
 # Security Plugin Health Check

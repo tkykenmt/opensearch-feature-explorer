@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
+  - opensearch-dashboards
 ---
 # Input Control Visualization
 

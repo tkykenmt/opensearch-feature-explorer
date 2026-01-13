@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
-  - search
+  - opensearch-dashboards
 ---
 # Dashboards Console (Dev Tools)
 

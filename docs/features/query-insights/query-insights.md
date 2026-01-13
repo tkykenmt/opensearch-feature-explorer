@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - indexing
-  - observability
-  - performance
-  - search
+  - query-insights
 ---
 # Query Insights
 

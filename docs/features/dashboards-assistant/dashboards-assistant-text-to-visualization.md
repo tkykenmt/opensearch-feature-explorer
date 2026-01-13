@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/dashboards
-  - dashboards
-  - ml
-  - search
-  - sql
+  - dashboards-assistant
 ---
 # Text to Visualization (t2viz)
 

@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - ml
-  - security
+  - opensearch
 ---
 # Java Agent AccessController
 

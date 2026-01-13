@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/data
-  - component/server
-  - indexing
-  - performance
-  - search
+  - custom-codecs
 ---
 # Custom Codecs
 

@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - ml
   - security
 ---
 # Security Plugin AccessController Migration

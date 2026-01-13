@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - performance
-  - security
+  - opensearch
 ---
 # Dependency Management
 

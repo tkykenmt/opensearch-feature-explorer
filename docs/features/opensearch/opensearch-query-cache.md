@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - performance
-  - search
+  - opensearch
 ---
 # Query Cache
 

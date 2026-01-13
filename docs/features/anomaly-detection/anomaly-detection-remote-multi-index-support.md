@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - indexing
-  - ml
-  - search
+  - anomaly-detection
 ---
 # Anomaly Detection Remote/Multi-Index Support
 

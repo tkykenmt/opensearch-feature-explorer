@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - performance
+  - opensearch
 ---
 # Cluster Manager Task Throttling
 

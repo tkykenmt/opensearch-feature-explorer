@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - observability
-  - search
-  - security
+  - asynchronous-search
 ---
 # Asynchronous Search
 

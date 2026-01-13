@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - k-nn
-  - performance
-  - search
+  - opensearch
 ---
 # Lucene 10 Upgrade
 

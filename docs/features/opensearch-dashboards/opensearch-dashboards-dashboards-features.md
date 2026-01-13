@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - performance
-  - search
-  - sql
+  - opensearch-dashboards
 ---
 # Dashboards Features
 

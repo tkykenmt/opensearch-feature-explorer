@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - indexing
   - observability
 ---
 # Observability Infrastructure

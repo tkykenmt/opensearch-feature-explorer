@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - observability
-  - search
+  - alerting
 ---
 # Alerting
 

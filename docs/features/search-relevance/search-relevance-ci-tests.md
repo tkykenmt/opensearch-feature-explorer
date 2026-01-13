@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - search
+  - search-relevance
 ---
 # Search Relevance CI/Tests
 

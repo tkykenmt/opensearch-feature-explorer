@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
+  - skills
 ---
 # Skills Plugin Dependencies
 

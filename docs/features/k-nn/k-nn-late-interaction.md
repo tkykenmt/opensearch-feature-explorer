@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
   - k-nn
-  - ml
-  - neural-search
-  - search
 ---
 # Late Interaction
 

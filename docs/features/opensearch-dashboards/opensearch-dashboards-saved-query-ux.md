@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - search
+  - opensearch-dashboards
 ---
 # Saved Query UX
 

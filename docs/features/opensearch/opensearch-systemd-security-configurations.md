@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - ml
-  - performance
-  - security
+  - opensearch
 ---
 # Systemd Security Configurations
 

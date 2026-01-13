@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - indexing
-  - ml
-  - performance
-  - search
+  - ml-commons
 ---
 # Index Insight
 

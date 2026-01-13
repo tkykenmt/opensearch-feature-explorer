@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - dashboards
-  - ml
-  - observability
-  - performance
+  - performance-analyzer
 ---
 # Performance Analyzer
 

@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
+  - ml-commons
 ---
 # ML Commons Error Handling
 

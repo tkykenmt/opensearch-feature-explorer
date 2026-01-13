@@ -1,10 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - observability
-  - performance
-  - search
   - sql
 ---
 # PPL Query Optimization

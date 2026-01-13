@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - k-nn
-  - search
+  - opensearch
 ---
 # XContent Transform
 

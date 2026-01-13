@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
-  - observability
-  - performance
+  - ml-commons
 ---
 # Metrics Framework (ML Commons)
 

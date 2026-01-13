@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - ml
+  - opensearch
 ---
 # Code Coverage (Gradle)
 

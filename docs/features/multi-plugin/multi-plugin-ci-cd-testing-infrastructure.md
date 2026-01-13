@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - indexing
-  - k-nn
-  - security
-  - sql
+  - multi-plugin
 ---
 # CI/CD & Testing Infrastructure
 

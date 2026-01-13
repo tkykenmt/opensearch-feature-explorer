@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - search
+  - common
 ---
 # PR Template API Specification Checkbox
 

@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - indexing
-  - ml
+  - flow-framework
 ---
 # Flow Framework
 

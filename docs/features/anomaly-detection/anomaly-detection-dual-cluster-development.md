@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - indexing
-  - ml
+  - anomaly-detection
 ---
 # Dual Cluster Development Environment
 

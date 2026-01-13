@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - observability
-  - performance
+  - opensearch
 ---
 # Remote Store Metadata API
 

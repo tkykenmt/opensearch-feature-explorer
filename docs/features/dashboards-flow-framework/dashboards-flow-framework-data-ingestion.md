@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/dashboards
-  - dashboards
-  - indexing
-  - k-nn
-  - ml
-  - search
+  - dashboards-flow-framework
 ---
 # Data Ingestion in OpenSearch Flow
 

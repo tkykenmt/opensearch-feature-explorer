@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
-  - ml
-  - search
+  - opensearch-dashboards
 ---
 # Dashboards AI Insights
 

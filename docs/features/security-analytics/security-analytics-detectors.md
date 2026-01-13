@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - indexing
-  - search
-  - security
+  - security-analytics
 ---
 # Security Analytics Detectors
 

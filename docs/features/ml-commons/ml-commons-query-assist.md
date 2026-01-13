@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - dashboards
-  - indexing
-  - ml
-  - search
-  - sql
+  - ml-commons
 ---
 # Query Assist
 

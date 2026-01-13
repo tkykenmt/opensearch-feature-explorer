@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/dashboards
-  - dashboards
-  - indexing
-  - ml
-  - search
-  - sql
+  - alerting-dashboards
 ---
 # Alerting Summary & Insights
 

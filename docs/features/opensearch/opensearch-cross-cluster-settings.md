@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - search
-  - security
+  - opensearch
 ---
 # Cross-Cluster Settings
 

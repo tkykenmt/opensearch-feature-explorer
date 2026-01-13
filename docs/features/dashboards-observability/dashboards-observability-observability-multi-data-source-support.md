@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/dashboards
-  - dashboards
-  - observability
+  - dashboards-observability
 ---
 # Observability Multi-Data Source Support
 

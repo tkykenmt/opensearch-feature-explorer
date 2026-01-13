@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - observability
-  - performance
-  - search
+  - opensearch
 ---
 # Search Request Stats
 

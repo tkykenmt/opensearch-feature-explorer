@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - performance
-  - search
+  - opensearch
 ---
 # Search Replica & Reader-Writer Separation
 

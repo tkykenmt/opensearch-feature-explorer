@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/dashboards
-  - dashboards
+  - dashboards-assistant
 ---
 # Dashboard Assistant CI Configuration
 

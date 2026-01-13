@@ -1,13 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - indexing
-  - ml
-  - observability
-  - search
-  - security
+  - multi-plugin
 ---
 # Look & Feel UI Improvements
 

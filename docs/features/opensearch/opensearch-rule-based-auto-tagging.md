@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - search
+  - opensearch
 ---
 # Rule-Based Auto-Tagging
 

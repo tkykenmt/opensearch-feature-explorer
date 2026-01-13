@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - ml
+  - common-utils
 ---
 # Alerting Context Variables
 

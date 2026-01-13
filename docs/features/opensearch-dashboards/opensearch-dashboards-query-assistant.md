@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
-  - ml
-  - search
-  - sql
+  - opensearch-dashboards
 ---
 # Query Assistant
 

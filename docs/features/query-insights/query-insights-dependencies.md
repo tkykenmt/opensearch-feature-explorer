@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - performance
-  - search
-  - security
+  - query-insights
 ---
 # Query Insights Plugin Dependencies
 

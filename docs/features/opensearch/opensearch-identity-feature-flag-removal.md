@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - security
+  - opensearch
 ---
 # Identity Feature Flag Removal
 

@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/security
-  - component/dashboards
-  - dashboards
-  - security
+  - security-analytics-dashboards
 ---
 # Security Analytics Dashboards Plugin
 

@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
+  - opensearch
 ---
 # Parallel Shard Refresh
 

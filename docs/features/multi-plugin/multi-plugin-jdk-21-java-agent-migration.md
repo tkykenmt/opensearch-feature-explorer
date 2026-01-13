@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - k-nn
-  - ml
-  - search
-  - security
+  - multi-plugin
 ---
 # JDK 21 & Java Agent Migration
 

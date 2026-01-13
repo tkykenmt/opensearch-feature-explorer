@@ -1,7 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
   - security
 ---
 # Security Role Mapping

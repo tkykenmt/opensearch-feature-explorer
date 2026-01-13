@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
+  - reporting
 ---
 # CI/CD Workflow
 

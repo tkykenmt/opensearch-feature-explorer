@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
-  - search
-  - sql
+  - opensearch-dashboards
 ---
 # Async Query
 

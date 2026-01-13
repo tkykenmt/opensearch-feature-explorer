@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - observability
+  - opensearch-dashboards
 ---
 # Explore Traces
 

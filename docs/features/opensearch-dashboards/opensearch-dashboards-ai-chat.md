@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - ml
-  - search
+  - opensearch-dashboards
 ---
 # OpenSearch Dashboards AI Chat
 

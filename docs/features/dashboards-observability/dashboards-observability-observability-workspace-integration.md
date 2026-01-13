@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/dashboards
-  - dashboards
-  - indexing
-  - observability
+  - dashboards-observability
 ---
 # Observability Workspace Integration
 

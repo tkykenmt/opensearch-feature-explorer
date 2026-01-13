@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
   - k-nn
-  - ml
-  - search
 ---
 # Maximal Marginal Relevance (MMR)
 

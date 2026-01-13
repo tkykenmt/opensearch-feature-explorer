@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
   - k-nn
-  - performance
-  - search
 ---
 # k-NN AVX512 SIMD Support
 

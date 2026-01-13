@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/data
-  - component/server
-  - indexing
+  - index-management
 ---
 # Snapshot Management
 

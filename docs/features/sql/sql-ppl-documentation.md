@@ -1,10 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - observability
-  - search
   - sql
 ---
 # PPL Documentation

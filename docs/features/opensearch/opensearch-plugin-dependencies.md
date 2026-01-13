@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - neural-search
+  - opensearch
 ---
 # Plugin Dependencies
 

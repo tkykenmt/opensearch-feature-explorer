@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
-  - security
+  - ml-commons
 ---
 # ML Commons Connector Blueprints
 

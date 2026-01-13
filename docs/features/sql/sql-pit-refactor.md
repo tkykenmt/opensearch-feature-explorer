@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - search
   - sql
 ---
 # SQL Point in Time (PIT) Refactor

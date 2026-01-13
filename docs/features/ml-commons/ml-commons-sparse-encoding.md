@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - indexing
-  - ml
-  - neural-search
-  - search
+  - ml-commons
 ---
 # ML Commons Sparse Encoding
 

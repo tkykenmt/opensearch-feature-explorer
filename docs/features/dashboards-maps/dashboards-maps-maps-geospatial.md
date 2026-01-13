@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/geo
-  - component/dashboards
-  - dashboards
-  - indexing
-  - search
+  - dashboards-maps
 ---
 # Maps & Geospatial
 

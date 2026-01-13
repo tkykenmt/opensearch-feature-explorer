@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - observability
-  - search
+  - opensearch
 ---
 # Cat Indices API
 
