@@ -86,6 +86,7 @@
 - JWT Authentication Bug Fixes
 - Security Audit Logging
 - Security Netty
+- Security Roles
 
 ### security-analytics
 - Security Analytics Bug Fixes
