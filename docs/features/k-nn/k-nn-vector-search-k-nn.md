@@ -222,9 +222,12 @@ PUT /_cluster/settings
 - Graph indexes consume significant memory
 - Remote Index Build is experimental (v3.0.0)
 - Maximum vector dimension depends on engine and available memory
+- NMSLIB engine is deprecated as of v2.19.0; migrate to FAISS or Lucene
+- Derived source feature is experimental (v2.19.0)
 
 ## Change History
 
+- **v2.19.0** (2025-02-18): Cosine similarity support for FAISS engine; AVX-512 SPR build mode for Intel Sapphire Rapids; binary vector support for Lucene engine; derived source for vector fields (experimental); multi-value innerHit for nested k-NN fields; concurrent graph creation for Lucene engine; expand_nested_docs parameter for NMSLIB; NMSLIB engine deprecation; numerous bug fixes including C++17 upgrade, byte vector filter fix, mapping validation, query vector memory release, filter rewrite logic fix
 - **v3.4.0** (2026-01-11): Bug fixes for memory optimized search on old indices (NPE), totalHits inconsistency, race condition in KNNQueryBuilder with cosine similarity, Faiss inner product score-to-distance calculation, disk-based vector search BWC for segment merge
 - **v3.3.0** (2026-01-11): Bug fixes for MDC check NPE with byte vectors, derived source deserialization on invalid documents, cosine score range in LuceneOnFaiss, filter k nullable, integer overflow in distance computation, AVX2 detection on non-Linux/Mac/Windows platforms, radial search for byte vectors with FAISS, MMR doc ID issue, JNI local reference leak, nested exact search rescoring
 - **v3.2.0** (2025-10-01): GPU indexing support for FP16, Byte, and Binary vectors via Cagra2; Asymmetric Distance Computation (ADC) for improved recall on binary quantized indices; random rotation feature for binary encoder; gRPC support for k-NN queries; nested search support for IndexBinaryHNSWCagra; dynamic index thread quantity defaults (4 threads for 32+ core machines); NativeMemoryCacheKeyHelper @ collision fix
@@ -289,6 +292,14 @@ PUT /_cluster/settings
 | v3.1.0 | [#2739](https://github.com/opensearch-project/k-NN/pull/2739) | Fix: LuceneOnFaiss to use sliced IndexInput |   |
 | v3.1.0 | [#2641](https://github.com/opensearch-project/k-NN/pull/2641) | Fix: Nested vector query with efficient filter |   |
 | v3.0.0 | [#2564](https://github.com/opensearch-project/k-NN/pull/2564) | Breaking changes - remove deprecated settings |   |
+| v2.19.0 | [#2376](https://github.com/opensearch-project/k-NN/pull/2376) | Add cosine similarity support for faiss engine | [#2242](https://github.com/opensearch-project/k-NN/issues/2242) |
+| v2.19.0 | [#2404](https://github.com/opensearch-project/k-NN/pull/2404) | Add FAISS_OPT_LEVEL=avx512_spr build mode |   |
+| v2.19.0 | [#2283](https://github.com/opensearch-project/k-NN/pull/2283) | Add multi-value innerHit support for nested k-NN fields | [#2249](https://github.com/opensearch-project/k-NN/issues/2249) |
+| v2.19.0 | [#2292](https://github.com/opensearch-project/k-NN/pull/2292) | Add binary index support for Lucene engine | [#1857](https://github.com/opensearch-project/k-NN/issues/1857) |
+| v2.19.0 | [#2449](https://github.com/opensearch-project/k-NN/pull/2449) | Introduce derived vector source via stored fields | [#2377](https://github.com/opensearch-project/k-NN/issues/2377) |
+| v2.19.0 | [#2331](https://github.com/opensearch-project/k-NN/pull/2331) | Add expand_nested_docs parameter support to NMSLIB engine |   |
+| v2.19.0 | [#2480](https://github.com/opensearch-project/k-NN/pull/2480) | Enable concurrent graph creation for Lucene engine | [#1581](https://github.com/opensearch-project/k-NN/issues/1581) |
+| v2.19.0 | [#2427](https://github.com/opensearch-project/k-NN/pull/2427) | Deprecate nmslib engine |   |
 | v2.18.0 | [#2195](https://github.com/opensearch-project/k-NN/pull/2195) | Fix lucene codec after lucene version bumped to 9.12 | [#2193](https://github.com/opensearch-project/k-NN/issues/2193) |
 | v2.18.0 | [#2133](https://github.com/opensearch-project/k-NN/pull/2133) | Optimize KNNVectorValues creation for non-quantization cases | [#2134](https://github.com/opensearch-project/k-NN/issues/2134) |
 | v2.18.0 | [#2127](https://github.com/opensearch-project/k-NN/pull/2127) | Remove benchmarks folder from k-NN repo | [#1954](https://github.com/opensearch-project/k-NN/issues/1954) |
@@ -324,3 +335,8 @@ PUT /_cluster/settings
 - [Issue #2796](https://github.com/opensearch-project/k-NN/issues/2796): GPU indexing RFC
 - [Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): ADC and Random Rotation RFC
 - [Issue #2816](https://github.com/opensearch-project/k-NN/issues/2816): gRPC k-NN support
+- [Issue #2242](https://github.com/opensearch-project/k-NN/issues/2242): Cosine similarity for FAISS engine
+- [Issue #2249](https://github.com/opensearch-project/k-NN/issues/2249): Multi-value innerHit for nested k-NN fields
+- [Issue #1857](https://github.com/opensearch-project/k-NN/issues/1857): Binary index support for Lucene engine
+- [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): Derived vector source design
+- [Issue #1581](https://github.com/opensearch-project/k-NN/issues/1581): Concurrent graph creation for Lucene
