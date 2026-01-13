@@ -4,4 +4,5 @@
 
 ### opensearch-dashboards
 - Data Source Association
+- Dataset Selector
 - Workspace Enhancements
