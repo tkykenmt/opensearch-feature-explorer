@@ -3004,7 +3004,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2040
     },
     {
       "name": "Plugin System",
@@ -3018,7 +3019,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2041
     },
     {
       "name": "Sort Field Merging",
@@ -3032,7 +3034,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2042
     },
     {
       "name": "Reader Writer Separation",
@@ -3046,7 +3049,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2043
     },
     {
       "name": "Inner Hits Optimization",
@@ -3060,7 +3064,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2044
     },
     {
       "name": "Ingest Pipeline Deprecation",
@@ -3074,7 +3079,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2045
     },
     {
       "name": "Index Settings API",
@@ -3088,7 +3094,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2046
     },
     {
       "name": "Remote State Manifest",
@@ -3108,7 +3115,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2047
     },
     {
       "name": "System Indices",
@@ -3128,7 +3136,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2048
     },
     {
       "name": "Search Response Headers",
@@ -3142,7 +3151,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2049
     },
     {
       "name": "Unsigned Long Field",
@@ -3162,7 +3172,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2050
     },
     {
       "name": "Searchable Snapshot",
@@ -3188,7 +3199,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2051
     },
     {
       "name": "IP Field",
@@ -3202,7 +3214,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2052
     },
     {
       "name": "Cluster State",
@@ -3216,7 +3229,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2053
     },
     {
       "name": "Deprecation Logger",
@@ -3230,7 +3244,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2054
     },
     {
       "name": "Tiered Caching",
@@ -3250,7 +3265,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2055
     },
     {
       "name": "Remote Repository Validation",
@@ -3264,7 +3280,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2056
     },
     {
       "name": "List Shards API",
@@ -3278,7 +3295,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2057
     },
     {
       "name": "Remote Shards Balance",
@@ -3292,7 +3310,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2058
     },
     {
       "name": "Match Only Text Field",
@@ -3312,7 +3331,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2059
     },
     {
       "name": "Phone Search Analyzer",
