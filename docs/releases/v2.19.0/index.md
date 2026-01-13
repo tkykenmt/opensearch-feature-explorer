@@ -124,5 +124,8 @@
 - Security Integration Tests
 - System Index Handling
 
+### k-nn
+- k-NN Vector Search
+
 ### learning
 - Learning to Rank
