@@ -14,6 +14,7 @@
 - Multi-Search Request Cancellation Fix
 - Remote Repository Validation
 - Remote Shards Balance Fix
+- Remote State Manifest
 - Search Response Headers
 - Searchable Snapshot Bug Fixes
 - System Indices
