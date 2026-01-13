@@ -189,60 +189,12 @@ Create `docs/releases/v{version}/features/{repository-name}/{item-name}.md`:
 
 This is the **primary output** - a focused report on what changed in THIS version.
 
-### Release Report Template
-```markdown
-# {Item Name}
+**Follow the Release Report Template in DEVELOPMENT.md.**
 
-## Summary
-What this release item adds/changes and why it matters.
-Focus on the delta - what's new in this version specifically.
-
-## Details
-
-### What's New in v{version}
-Specific changes introduced in this version.
-
-### Technical Changes
-
-#### Architecture Changes
-```mermaid
-graph TB
-    ...
-```
-(Only if architecture changed)
-
-#### New Components
-| Component | Description |
-|-----------|-------------|
-
-#### New Configuration
-| Setting | Description | Default |
-|---------|-------------|---------|
-
-#### API Changes
-New or modified APIs.
-
-### Usage Example
-```json
-// Example showing new functionality
-```
-
-### Migration Notes
-Steps to adopt this change (if applicable).
-
-## Limitations
-Known limitations specific to this release.
-
-## References
-
-### Pull Requests
-| PR | Description | Related Issue |
-|----|-------------|---------------|
-| [#1234](url) | Main implementation | [#1000](url) |
-
-### Documentation
-- [Feature Documentation](url)
-```
+Key points:
+- Include YAML frontmatter with `tags: [{repo}]`
+- Focus on delta (what's new in this version)
+- No internal `.md` links
 
 ### Update Release Index
 After creating the release report, update `docs/releases/v{version}/index.md`:
@@ -261,20 +213,12 @@ For bugfix category items:
 4. Do NOT create a new feature report for bug fixes
 
 ### For new-feature (feature report doesn't exist):
-Create `docs/features/{repository-name}/{feature-name}.md` following the template in steering/opensearch-knowledge.md:
-- Summary section (accessible overview)
-- Details section (technical depth)
-- Architecture diagram
-- Components table
-- Configuration table
-- Usage examples
-- Limitations
-- Change History (starting with this version, sorted by version descending)
-- References section with subsections:
-  - Documentation
-  - Blog Posts
-  - Pull Requests (table with Version, PR, Description, Related Issue)
-  - Issues (Design / RFC)
+Create `docs/features/{repository-name}/{feature-name}.md` following the **Feature Report Template in DEVELOPMENT.md**.
+
+Key points:
+- Include YAML frontmatter with `tags: [{repo}]`
+- Summary, Details, Limitations, Change History, References sections
+- No internal `.md` links
 
 ### For update-feature (feature report exists):
 1. Read existing `docs/features/{repository-name}/{feature-name}.md`
