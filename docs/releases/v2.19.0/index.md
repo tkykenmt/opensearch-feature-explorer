@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Dashboards Health Checks
 - Data Source Association
 - Dataset Selector
 - Discover Enhancements
