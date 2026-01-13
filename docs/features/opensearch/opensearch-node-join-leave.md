@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - search
+  - opensearch
 ---
 # Node Join/Leave
 

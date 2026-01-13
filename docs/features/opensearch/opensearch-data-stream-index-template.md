@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - observability
+  - opensearch
 ---
 # Data Stream & Index Template
 

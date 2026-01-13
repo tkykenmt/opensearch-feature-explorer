@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - dashboards
   - observability
 ---
 # Observability Release Maintenance

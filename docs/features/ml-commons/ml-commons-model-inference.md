@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
-  - search
+  - ml-commons
 ---
 # ML Commons Model & Inference
 

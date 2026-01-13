@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - search
   - sql
 ---
 # PPL Rex and Regex Commands

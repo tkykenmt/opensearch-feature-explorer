@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - dashboards
   - security
 ---
 # GitHub Actions Updates

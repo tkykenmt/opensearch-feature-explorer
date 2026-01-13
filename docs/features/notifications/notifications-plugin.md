@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - dashboards
-  - indexing
-  - security
+  - notifications
 ---
 # Notifications Plugin
 

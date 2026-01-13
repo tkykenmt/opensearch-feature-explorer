@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - indexing
-  - search
-  - sql
+  - multi-plugin
 ---
 # Search Autocomplete
 

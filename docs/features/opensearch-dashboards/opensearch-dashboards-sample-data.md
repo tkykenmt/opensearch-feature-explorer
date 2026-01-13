@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
-  - observability
+  - opensearch-dashboards
 ---
 # Sample Data
 

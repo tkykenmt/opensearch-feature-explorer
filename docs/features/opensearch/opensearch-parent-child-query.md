@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - ml
-  - search
+  - opensearch
 ---
 # Parent-Child Query
 

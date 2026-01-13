@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - ml
   - neural-search
-  - search
 ---
 # Neural Search Reranking
 

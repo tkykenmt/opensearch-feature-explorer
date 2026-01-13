@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
   - k-nn
-  - search
 ---
 # k-NN Byte Vector Support
 

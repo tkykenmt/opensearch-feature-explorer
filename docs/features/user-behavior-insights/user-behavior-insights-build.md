@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - indexing
-  - search
+  - user-behavior-insights
 ---
 # User Behavior Insights Build Infrastructure
 

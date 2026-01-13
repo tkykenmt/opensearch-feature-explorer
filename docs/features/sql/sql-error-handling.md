@@ -1,9 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - search
   - sql
 ---
 # SQL Error Handling

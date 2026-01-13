@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - search
   - security
 ---
 # Permission Validation

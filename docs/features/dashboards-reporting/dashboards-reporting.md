@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/dashboards
-  - dashboards
-  - ml
+  - dashboards-reporting
 ---
 # OpenSearch Dashboards Reporting
 

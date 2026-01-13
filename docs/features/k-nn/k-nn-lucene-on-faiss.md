@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
   - k-nn
-  - performance
-  - search
 ---
 # Lucene On Faiss (Memory Optimized Search)
 

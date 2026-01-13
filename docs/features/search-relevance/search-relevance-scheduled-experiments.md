@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - dashboards
-  - performance
-  - search
+  - search-relevance
 ---
 # Scheduled Experiments
 

@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - security
+  - opensearch-dashboards
 ---
 # DOMPurify Sanitization
 

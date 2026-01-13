@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - performance
-  - search
+  - opensearch
 ---
 # Hierarchical & ACL-aware Routing
 

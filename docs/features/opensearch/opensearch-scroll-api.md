@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - ml
-  - search
+  - opensearch
 ---
 # Scroll API
 

@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
+  - flow-framework
 ---
 # Flow Framework Connector Tools
 

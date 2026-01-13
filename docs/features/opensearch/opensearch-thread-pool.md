@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - k-nn
-  - performance
-  - search
+  - opensearch
 ---
 # Thread Pool
 

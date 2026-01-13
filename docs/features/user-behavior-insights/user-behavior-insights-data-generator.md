@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - search
+  - user-behavior-insights
 ---
 # User Behavior Insights Data Generator
 

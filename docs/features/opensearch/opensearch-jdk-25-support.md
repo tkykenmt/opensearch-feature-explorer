@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - performance
+  - opensearch
 ---
 # JDK 25 Support
 

@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - dashboards
-  - performance
-  - search
+  - opensearch
 ---
 # Approximation Framework
 

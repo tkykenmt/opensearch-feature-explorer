@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/dashboards
-  - dashboards
-  - indexing
-  - ml
-  - neural-search
-  - search
+  - dashboards-flow-framework
 ---
 # AI Search Flows
 

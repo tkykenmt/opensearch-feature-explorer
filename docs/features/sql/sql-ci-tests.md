@@ -1,10 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - performance
-  - search
   - sql
 ---
 # SQL CI/Tests

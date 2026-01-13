@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - indexing
   - security
 ---
 # Security Configuration Versioning

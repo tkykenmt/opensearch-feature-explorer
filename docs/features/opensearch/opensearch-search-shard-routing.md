@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - observability
-  - performance
-  - search
+  - opensearch
 ---
 # Search Shard Routing
 

@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/dashboards
-  - dashboards
-  - observability
-  - search
+  - alerting-dashboards
 ---
 # Alerting Dashboards Plugin
 

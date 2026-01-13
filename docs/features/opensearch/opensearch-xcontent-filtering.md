@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - search
-  - security
+  - opensearch
 ---
 # XContent Filtering
 

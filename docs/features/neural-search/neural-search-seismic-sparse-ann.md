@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
   - neural-search
-  - performance
-  - search
 ---
 # SEISMIC Sparse ANN
 

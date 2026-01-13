@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - security
+  - opensearch
 ---
 # S3 Repository
 

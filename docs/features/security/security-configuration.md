@@ -1,9 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - indexing
-  - ml
   - security
 ---
 # Security Configuration

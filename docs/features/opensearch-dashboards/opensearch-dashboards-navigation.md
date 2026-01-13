@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - observability
-  - search
-  - security
+  - opensearch-dashboards
 ---
 # Navigation
 

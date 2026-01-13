@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/geo
-  - component/server
-  - indexing
-  - performance
+  - geospatial
 ---
 # IP2Geo Processor
 

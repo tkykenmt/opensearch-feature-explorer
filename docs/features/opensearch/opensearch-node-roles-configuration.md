@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - ml
-  - performance
-  - search
+  - opensearch
 ---
 # Node Roles Configuration
 

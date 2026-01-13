@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
   - neural-search
-  - search
 ---
 # Hybrid Query
 

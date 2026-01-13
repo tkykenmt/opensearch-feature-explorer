@@ -1,9 +1,5 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - ml
   - sql
 ---
 # PPL Patterns Command

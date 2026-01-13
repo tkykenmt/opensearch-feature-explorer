@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - indexing
-  - ml
-  - security
+  - multi-plugin
 ---
 # Version Increment
 

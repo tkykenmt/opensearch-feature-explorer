@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
-  - search
-  - security
+  - flow-framework
 ---
 # Flow Framework Access Control
 

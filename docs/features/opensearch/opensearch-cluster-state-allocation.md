@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
+  - opensearch
 ---
 # Cluster State & Allocation
 

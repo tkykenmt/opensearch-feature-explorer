@@ -1,8 +1,5 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - performance
   - security
 ---
 # Security Performance Improvements

@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - indexing
-  - ml
-  - security
+  - ml-commons
 ---
 # ML Config API
 

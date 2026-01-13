@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/geo
-  - component/server
-  - indexing
-  - performance
-  - search
+  - geospatial
 ---
 # Geospatial Plugin
 

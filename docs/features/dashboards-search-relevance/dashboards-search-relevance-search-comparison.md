@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/dashboards
-  - dashboards
-  - indexing
-  - search
+  - dashboards-search-relevance
 ---
 # Search Comparison (Compare Search Results)
 

@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - indexing
+  - multi-plugin
 ---
 # Gradle 9 Compatibility
 

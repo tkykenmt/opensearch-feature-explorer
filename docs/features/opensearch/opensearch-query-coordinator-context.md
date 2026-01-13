@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - neural-search
-  - search
+  - opensearch
 ---
 # Query Coordinator Context
 

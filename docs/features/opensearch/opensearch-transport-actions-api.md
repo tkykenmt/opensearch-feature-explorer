@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - performance
-  - security
+  - opensearch
 ---
 # Transport Actions API
 

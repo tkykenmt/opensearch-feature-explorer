@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - dashboards
-  - indexing
-  - search
+  - opensearch
 ---
 # Search API Tracker
 

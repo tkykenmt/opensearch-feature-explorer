@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - indexing
-  - security
+  - multi-plugin
 ---
 # Maintainer Updates
 

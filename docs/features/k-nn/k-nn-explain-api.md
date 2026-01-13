@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
   - k-nn
-  - performance
-  - search
 ---
 # k-NN Explain API
 

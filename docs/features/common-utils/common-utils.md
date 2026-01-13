@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - ml
-  - security
+  - common-utils
 ---
 # Common Utils
 

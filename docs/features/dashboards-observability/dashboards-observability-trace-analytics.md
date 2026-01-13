@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/dashboards
-  - dashboards
-  - indexing
-  - ml
-  - observability
-  - performance
+  - dashboards-observability
 ---
 # Trace Analytics
 

@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
-  - observability
-  - search
+  - opensearch-dashboards
 ---
 # Dataset Explorer
 

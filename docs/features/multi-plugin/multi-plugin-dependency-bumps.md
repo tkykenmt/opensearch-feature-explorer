@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - security
+  - multi-plugin
 ---
 # Dependency Bumps
 

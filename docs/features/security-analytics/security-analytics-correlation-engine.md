@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - dashboards
-  - observability
-  - security
+  - security-analytics
 ---
 # Correlation Engine
 

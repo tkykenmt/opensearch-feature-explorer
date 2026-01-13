@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/dashboards
-  - dashboards
+  - dashboards-notifications
 ---
 # OpenSearch Dashboards Notifications
 

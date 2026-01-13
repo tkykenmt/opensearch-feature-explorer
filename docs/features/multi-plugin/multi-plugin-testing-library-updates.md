@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - indexing
+  - multi-plugin
 ---
 # Testing Library Updates
 

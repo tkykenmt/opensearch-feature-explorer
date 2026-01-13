@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - search
-  - sql
+  - dashboards-query-workbench
 ---
 # Query Workbench
 

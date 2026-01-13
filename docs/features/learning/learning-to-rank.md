@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/server
-  - indexing
-  - ml
-  - search
+  - learning
 ---
 # Learning to Rank
 

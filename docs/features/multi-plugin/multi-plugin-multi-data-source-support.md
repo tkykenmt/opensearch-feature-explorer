@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - indexing
-  - ml
-  - search
-  - security
+  - multi-plugin
 ---
 # Multi-Data Source Support
 

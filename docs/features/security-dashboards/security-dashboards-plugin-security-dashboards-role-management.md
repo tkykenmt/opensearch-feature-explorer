@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/security
-  - component/dashboards
-  - dashboards
-  - indexing
-  - security
+  - security-dashboards
 ---
 # Security Dashboards Role Management
 

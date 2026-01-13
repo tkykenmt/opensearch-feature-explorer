@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/security
-  - component/server
-  - dashboards
-  - indexing
-  - search
-  - security
+  - security-analytics
 ---
 # Security Analytics System Indices
 

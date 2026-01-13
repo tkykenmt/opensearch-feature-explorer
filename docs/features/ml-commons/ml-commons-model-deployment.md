@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - ml
-  - performance
+  - ml-commons
 ---
 # ML Commons Model Deployment
 

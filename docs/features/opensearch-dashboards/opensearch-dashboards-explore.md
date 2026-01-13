@@ -1,12 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - observability
-  - performance
-  - search
-  - sql
+  - opensearch-dashboards
 ---
 # Explore Plugin
 

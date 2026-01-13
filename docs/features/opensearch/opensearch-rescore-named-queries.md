@@ -1,10 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - ml
-  - observability
-  - search
+  - opensearch
 ---
 # Rescore Named Queries
 

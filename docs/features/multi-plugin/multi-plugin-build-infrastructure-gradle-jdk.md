@@ -1,8 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - indexing
+  - multi-plugin
 ---
 # Build Infrastructure (Gradle/JDK)
 

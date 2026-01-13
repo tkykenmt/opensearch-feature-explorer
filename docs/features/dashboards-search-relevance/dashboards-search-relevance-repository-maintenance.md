@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/search
-  - component/dashboards
-  - ml
-  - security
+  - dashboards-search-relevance
 ---
 # Repository Maintenance
 

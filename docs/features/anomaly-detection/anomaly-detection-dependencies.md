@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/observability
-  - component/server
-  - ml
-  - security
+  - anomaly-detection
 ---
 # Anomaly Detection Dependencies
 

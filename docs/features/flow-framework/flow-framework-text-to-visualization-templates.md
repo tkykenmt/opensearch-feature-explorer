@@ -1,11 +1,6 @@
 ---
 tags:
-  - domain/ml
-  - component/server
-  - dashboards
-  - ml
-  - search
-  - security
+  - flow-framework
 ---
 # Text-to-Visualization Templates
 

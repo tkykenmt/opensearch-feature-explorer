@@ -1,14 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - indexing
-  - ml
-  - observability
-  - performance
-  - search
-  - security
+  - multi-plugin
 ---
 # Version Bumps & Release Notes
 

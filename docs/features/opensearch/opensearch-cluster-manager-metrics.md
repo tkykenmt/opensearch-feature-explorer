@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - observability
-  - performance
+  - opensearch
 ---
 # Cluster Manager Metrics
 

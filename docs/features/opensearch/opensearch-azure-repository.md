@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/server
-  - indexing
-  - security
+  - opensearch
 ---
 # Azure Repository Plugin
 

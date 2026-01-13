@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/infra
-  - component/server
-  - dashboards
-  - performance
+  - reporting
 ---
 # Integration Test Stability
 

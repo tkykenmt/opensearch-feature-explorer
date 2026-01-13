@@ -1,9 +1,6 @@
 ---
 tags:
-  - domain/core
-  - component/dashboards
-  - dashboards
-  - indexing
+  - opensearch-dashboards
 ---
 # Dynamic Config
 
