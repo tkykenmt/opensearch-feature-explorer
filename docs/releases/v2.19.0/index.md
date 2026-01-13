@@ -4,3 +4,4 @@
 
 ### opensearch-dashboards
 - Data Source Association
+- Workspace Enhancements
