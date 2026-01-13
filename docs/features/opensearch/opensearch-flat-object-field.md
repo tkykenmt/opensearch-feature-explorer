@@ -182,6 +182,7 @@ This is more efficient than loading the entire `_source` when you only need spec
 ## Change History
 
 - **v3.0.0** (2025-02-11): Added ability to retrieve values from DocValues in flat_object subfields using `docvalue_fields` parameter with dot notation.
+- **v2.19.0** (2025-01-28): Added support for searching from DocValues using `termQuery` and `termQueryCaseInsensitive` even when `index=false`. Improved parsing performance by reducing two-pass parsing to single-pass, achieving up to 16% latency reduction at p99.9.
 - **v2.18.0** (2024-10-22): Added IndexOrDocValuesQuery optimization for improved query performance. Delegated query generation to KeywordFieldType to reduce code duplication. Enabled wildcard query support. Fixed infinite loop bug when flat_object field receives invalid token types.
 - **v2.7.0** (2023-04-18): Initial implementation of flat_object field type.
 
@@ -199,6 +200,8 @@ This is more efficient than loading the entire `_source` when you only need spec
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#16802](https://github.com/opensearch-project/OpenSearch/pull/16802) | Added ability to retrieve value from DocValues in flat_object field | [#16742](https://github.com/opensearch-project/OpenSearch/issues/16742) |
+| v2.19.0 | [#16974](https://github.com/opensearch-project/OpenSearch/pull/16974) | Support searching from doc_value using termQueryCaseInsensitive/termQuery | [#16973](https://github.com/opensearch-project/OpenSearch/issues/16973) |
+| v2.19.0 | [#16297](https://github.com/opensearch-project/OpenSearch/pull/16297) | Improve flat_object field parsing performance (two-pass to single-pass) | - |
 | v2.18.0 | [#14383](https://github.com/opensearch-project/OpenSearch/pull/14383) | Use IndexOrDocValuesQuery to optimize query, delegate to KeywordFieldType | [#11635](https://github.com/opensearch-project/OpenSearch/issues/11635) |
 | v2.18.0 | [#15985](https://github.com/opensearch-project/OpenSearch/pull/15985) | Fix infinite loop when parsing invalid token types | [#15982](https://github.com/opensearch-project/OpenSearch/issues/15982) |
 | v2.7.0 | - | Initial implementation of flat_object field type |   |
