@@ -2,6 +2,9 @@
 
 ## Features
 
+### ml-commons
+- ML Commons Tutorials
+
 ### opensearch
 - Append Only Indices
 - Synonym Analyzer
