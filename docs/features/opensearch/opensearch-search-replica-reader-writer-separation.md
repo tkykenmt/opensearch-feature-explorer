@@ -140,7 +140,7 @@ POST /my-index/_scale
 ## Change History
 
 - **v3.0.0** (2025-04-08): Added scale-to-zero support, auto-expand search replicas, and strict routing setting
-- **v2.19.0** (2025-01-10): Limited to remote-store-enabled clusters only; updated recovery flow to use empty store recovery instead of peer recovery; excluded search replicas from in-sync allocation ID set
+- **v2.19.0** (2025-01-10): Added snapshot restore support with search replicas; added search replica stats to segment replication stats API; limited to remote-store-enabled clusters only; updated recovery flow to use empty store recovery instead of peer recovery; excluded search replicas from in-sync allocation ID set
 - **v2.17.0** (2024-09): Initial experimental implementation with search replicas and pull-based replication
 
 
@@ -160,6 +160,8 @@ POST /my-index/_scale
 | v3.0.0 | [#17299](https://github.com/opensearch-project/OpenSearch/pull/17299) | Scale-to-zero (search_only mode) support | [#15306](https://github.com/opensearch-project/OpenSearch/issues/15306) |
 | v3.0.0 | [#17741](https://github.com/opensearch-project/OpenSearch/pull/17741) | AutoExpand for SearchReplica | [#17310](https://github.com/opensearch-project/OpenSearch/issues/17310) |
 | v3.0.0 | [#17803](https://github.com/opensearch-project/OpenSearch/pull/17803) | Search Only strict routing setting | [#17424](https://github.com/opensearch-project/OpenSearch/issues/17424) |
+| v2.19.0 | [#16111](https://github.com/opensearch-project/OpenSearch/pull/16111) | Add support for restoring from snapshot with search replicas | [#15532](https://github.com/opensearch-project/OpenSearch/issues/15532) |
+| v2.19.0 | [#16678](https://github.com/opensearch-project/OpenSearch/pull/16678) | Add search replica stats to segment replication stats API | [#15534](https://github.com/opensearch-project/OpenSearch/issues/15534) |
 | v2.19.0 | [#16760](https://github.com/opensearch-project/OpenSearch/pull/16760) | Limit RW separation to remote store enabled clusters and update recovery flow | [#15952](https://github.com/opensearch-project/OpenSearch/issues/15952) |
 | v2.17.0 | [#15368](https://github.com/opensearch-project/OpenSearch/pull/15368) | Initial search replica implementation |   |
 | v2.17.0 | [#15445](https://github.com/opensearch-project/OpenSearch/pull/15445) | Pull-based replica support |   |

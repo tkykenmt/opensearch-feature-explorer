@@ -30,6 +30,7 @@
 - Multi-Search Request Cancellation Fix
 - Plugin System
 - Reader Writer Separation
+- Search Replicas
 - Remote Repository Validation
 - Remote Shards Balance Fix
 - Remote State Manifest
