@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Plugin System
 - Sort Field Merging
 - Inner Hits Optimization
 - CI Fixes
