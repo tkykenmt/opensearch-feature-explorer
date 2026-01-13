@@ -5,6 +5,7 @@
 ### opensearch
 - Auto Date Histogram Bug Fix
 - CI Fixes
+- Workload Management Logging
 
 ### opensearch-dashboards
 - Dashboards Health Checks
