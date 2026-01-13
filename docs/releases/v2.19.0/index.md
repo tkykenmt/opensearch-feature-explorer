@@ -6,6 +6,7 @@
 - Auto Date Histogram Bug Fix
 - CI Fixes
 - gRPC Settings
+- Multi-Search Request Cancellation Fix
 - Workload Management Logging
 
 ### opensearch-dashboards

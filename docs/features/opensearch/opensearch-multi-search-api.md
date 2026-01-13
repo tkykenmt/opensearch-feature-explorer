@@ -144,6 +144,7 @@ GET _msearch/template
 
 ## Change History
 
+- **v2.19.0** (2025-02-18): Fixed task cancellation handling - queued search requests are now properly stopped when the parent `_msearch` task is cancelled
 - **v2.18.0** (2024-10-22): Added `status` field to Multi-Search Template API responses for consistency with Multi-Search API
 
 
@@ -157,6 +158,7 @@ GET _msearch/template
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#17005](https://github.com/opensearch-project/OpenSearch/pull/17005) | Fix task cancellation handling for _msearch API | [#17004](https://github.com/opensearch-project/OpenSearch/issues/17004) |
 | v2.18.0 | [#16265](https://github.com/opensearch-project/OpenSearch/pull/16265) | Fix multi-search with template doesn't return status code | [#11133](https://github.com/opensearch-project/OpenSearch/issues/11133) |
 
 ### Issues (Design / RFC)
