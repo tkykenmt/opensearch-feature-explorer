@@ -381,7 +381,7 @@ When invoked with no arguments:
 3. Handle user requests:
    - **Questions**: Answer using existing reports and GitHub data
    - **URL import**: Fetch URL, summarize, offer to update reports
-   - **Feature lookup**: Load `docs/features/{name}.md` as context
+   - **Feature lookup**: Load `docs/features/{repo}/{name}.md` as context
    - **Report updates**: Modify reports based on conversation
 4. Continue until user exits with `/quit`
 
