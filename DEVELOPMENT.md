@@ -1,6 +1,6 @@
-# OpenSearch Feature Explorer - Development Agent
+# OpenSearch Feature Explorer - Development Guide
 
-You are a development assistant for this tool. Help with code changes, agent improvements, and maintenance tasks.
+Development guide and **Single Source of Truth** for project conventions.
 
 ## Project Structure
 
@@ -16,11 +16,11 @@ opensearch-feature-explorer/
 │   │   └── prompts/
 │   │       └── *.md          # Agent-specific prompts
 │   └── steering/
-│       └── opensearch-knowledge.md  # Shared knowledge
+│       └── opensearch-knowledge.md  # LLM context (references this doc)
 ├── data/                     # Persistent data
 │   └── releases/v{version}/
 │       └── groups.json
-├── .cache/                   # Temporary cache
+├── .cache/                   # Temporary cache (git-ignored)
 │   └── releases/v{version}/
 │       ├── raw-items.json
 │       ├── batch.json
@@ -33,120 +33,295 @@ opensearch-feature-explorer/
 
 ## Agent System
 
-### Agent Configuration (`.kiro/agents/*.json`)
+### Agent Workflow
+```
+fetch-release → group-release → planner → create-issues → investigate → summarize
+```
+
+| Agent | Input | Output |
+|-------|-------|--------|
+| `fetch-release` | Version | `raw-items.json` |
+| `group-release` | `raw-items.json` | `groups.json` |
+| `planner` | `groups.json` | GitHub Project + Issues |
+| `create-issues` | Tracking Issue | Individual Issues |
+| `investigate` | Issue | Release Report + Feature Report |
+| `summarize` | Release Reports | Release Summary |
+| `translate` | Report | Translated Report |
+| `refactor` | Reports | Refactored Reports |
+
+### Agent Configuration
 ```json
 {
   "name": "agent-name",
-  "description": "What this agent does",
   "prompt": ".kiro/agents/prompts/agent-name.md",
-  "tools": ["@builtin", "@github", "@opensearch-docs"],
-  "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
   "mcpServers": {
-    "opensearch-docs": {
-      "command": "python",
-      "args": ["mcp_server.py"]
-    },
-    "github": {
-      "command": "bash",
-      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
-    }
+    "opensearch-docs": { "command": "python", "args": ["mcp_server.py"] },
+    "github": { "command": "bash", "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"] }
   }
 }
 ```
 
-### Available MCP Servers
-- `@builtin`: File system, shell commands
-- `@github`: GitHub API (Issues, PRs, Projects)
-- `@opensearch-docs`: OpenSearch documentation search
+---
 
-### Agent Workflow
-1. `fetch-release` → Parse release notes to `items.json`
-2. `group-release` → Group items to `groups.json`
-3. `planner` → Create GitHub Project & tracking Issues
-4. `create-issues` → Create individual investigation Issues
-5. `investigate` → Deep investigation → reports
-6. `summarize` → Aggregate into release summary
-7. `explore` → Interactive Q&A
-8. `translate` → Translate reports
+## Document Conventions
 
-## Common Tasks
+### Directory Structure
+```
+docs/
+├── features/{repo}/           # Cumulative feature documentation
+│   ├── {repo}-{feature}.md
+│   └── index.md
+└── releases/v{version}/       # Version-specific documentation
+    ├── features/{repo}/
+    │   └── {item-name}.md
+    ├── index.md
+    └── summary.md
+```
 
-### Adding a New Agent
-1. Create `.kiro/agents/{name}.json` with configuration
-2. Create `.kiro/agents/prompts/{name}.md` with instructions
-3. Update README.md if needed
-4. Add CLI command in `run.py` if needed
+### File Naming
 
-### Modifying Agent Behavior
-1. Edit the prompt file in `.kiro/agents/prompts/`
-2. Test with: `kiro chat --agent {name}`
+| Type | Pattern | Example |
+|------|---------|---------|
+| Feature doc | `{repo}/{repo}-{feature}.md` | `k-nn/k-nn-explain-api.md` |
+| Release doc | `releases/v{ver}/features/{repo}/{item}.md` | `releases/v3.0.0/features/k-nn/explain-api.md` |
+| Index | `{dir}/index.md` | `features/k-nn/index.md` |
 
-### Adding MCP Tools
-1. For new MCP server: Add to agent's `mcpServers` config
-2. For existing server: Just use the tool in the prompt
+Rules:
+- Lowercase, hyphen-separated
+- Include repo prefix for searchability
+- Avoid temporal suffixes (`-bugfixes.md`, `-enhancements.md`)
+
+### Directory Naming
+- Use OpenSearch repository names as-is
+- Remove `-plugin` suffix for dashboards plugins
+  - `alerting-dashboards-plugin/` → `alerting-dashboards/`
+
+---
+
+## Tag System
+
+Each document has exactly **one tag**: the repository name derived from file path.
+
+```yaml
+---
+tags:
+  - {repo}
+---
+```
+
+| Path | Tag |
+|------|-----|
+| `docs/features/opensearch/*.md` | `opensearch` |
+| `docs/features/k-nn/*.md` | `k-nn` |
+| `docs/releases/v3.0.0/features/neural-search/*.md` | `neural-search` |
+
+No `domain/`, `component/`, or `topic/` prefixes.
+
+---
+
+## Link Rules
+
+### Internal Links
+**Do NOT use internal `.md` links** between documents.
+
+```markdown
+# Bad - creates maintenance burden
+See [Star Tree Index](../opensearch/opensearch-star-tree-index.md)
+
+# Good - plain text reference
+See Star Tree Index documentation
+```
+
+Rationale: Internal links break when files are moved/renamed.
+
+### External Links
+External links (GitHub PRs, Issues, official docs) are allowed and encouraged.
+
+```markdown
+# Good
+- [#1234](https://github.com/opensearch-project/OpenSearch/pull/1234)
+- [Official Docs](https://opensearch.org/docs/latest/...)
+```
+
+---
+
+## Report Templates
+
+### Frontmatter (Required)
+All reports must include YAML frontmatter with tags:
+
+```yaml
+---
+tags:
+  - {repo}
+---
+```
+
+### Feature Report Structure
+```markdown
+---
+tags:
+  - {repo}
+---
+# {Feature Name}
+
+## Summary
+Brief overview accessible to all readers.
+
+## Details
+
+### Architecture
+(Mermaid diagram)
+
+### Components
+| Component | Description |
+|-----------|-------------|
+
+### Configuration
+| Setting | Description | Default |
+|---------|-------------|---------|
+
+### Usage Example
+
+## Limitations
+
+## Change History
+- **v3.1.0** (2024-03-01): Added X
+- **v3.0.0** (2024-01-15): Initial implementation
+
+## References
+
+### Documentation
+### Pull Requests
+| Version | PR | Description |
+|---------|-----|-------------|
+```
+
+### Release Report Structure
+```markdown
+---
+tags:
+  - {repo}
+---
+# {Item Name}
+
+## Summary
+What changed in this version (delta focus).
+
+## Details
+
+### What's New in v{version}
+
+### Technical Changes
+
+## Limitations
+
+## References
+
+### Pull Requests
+| PR | Description | Related Issue |
+|----|-------------|---------------|
+```
+
+### Release Summary Structure
+```markdown
+# OpenSearch v{version} Release Summary
+
+## Summary
+
+## Highlights
+(Mermaid diagram)
+
+## New Features
+| Feature | Description | Report |
+|---------|-------------|--------|
+
+## Improvements
+
+## Bug Fixes
+
+## Breaking Changes
+
+## References
+```
+
+---
+
+## Mermaid Diagrams
+
+### Direction
+- Default: `TB` (top-to-bottom)
+- Use `LR` only for simple flows (≤3 nodes)
+- Always `TB` when using subgraphs
+
+### Types
+| Use Case | Syntax |
+|----------|--------|
+| Architecture | `graph TB` |
+| Data Flow | `flowchart TB` |
+| Sequence | `sequenceDiagram` |
+| State | `stateDiagram-v2` |
+
+---
+
+## Caching
+
+### Structure
+```
+.cache/releases/v{version}/
+├── raw-items.json    # Parsed release items
+├── batch.json        # Current batch
+├── groups.json       # Grouped items
+├── prs/{number}.json # Merged PRs only
+└── issues/{number}.json # Closed Issues only
+```
+
+### Rules
+- PRs: Cache only if `merged: true`
+- Issues: Cache only if `state: closed`
+- Code files: Do not cache
+
+---
 
 ## Code Conventions
 
-### Python (run.py, mcp_server.py)
+### Python
 - Python 3.8+ compatible
-- Use `argparse` for CLI
-- Use `subprocess` for shell commands
+- `argparse` for CLI
 - JSON for data serialization
 
 ### Prompts
-- Use Markdown with clear sections
-- Include examples for complex operations
-- Reference `base.md` for shared knowledge
-- Use Mermaid for workflow diagrams
+- Markdown with clear sections
+- Reference DEVELOPMENT.md for rules
+- Mermaid for workflow diagrams
 
-### File Naming
-- Agents: lowercase with hyphens (`fetch-release`)
-- Reports: lowercase with hyphens (`star-tree-index.md`)
-- Data: lowercase (`items.json`, `groups.json`)
+### Naming
+- Agents: `lowercase-with-hyphens`
+- Reports: `lowercase-with-hyphens.md`
+- Data: `lowercase.json`
 
-## Testing Changes
+---
 
-### Test Agent Locally
+## Testing
+
 ```bash
+# Test agent
 kiro chat --agent {agent-name}
-```
 
-### Test MCP Server
-```bash
-python mcp_server.py
-# Then test with MCP client
-```
-
-### Test Full Workflow
-```bash
+# Test full workflow
 python run.py fetch-release 3.0.0
 python run.py group-release 3.0.0 --all
 python run.py planner 3.0.0
-```
 
-## Debugging
-
-### Check Agent Config
-```bash
-cat .kiro/agents/{name}.json | jq .
-```
-
-### Check Cached Data
-```bash
-cat .cache/releases/v{version}/items.json | jq .
-cat .cache/releases/v{version}/groups.json | jq .
-```
-
-### View Generated Reports
-```bash
+# Preview docs
 mkdocs serve
-# Open http://localhost:8000
 ```
 
-## When Making Changes
+---
 
-1. Understand the current behavior by reading relevant files
-2. Make minimal, focused changes
-3. Test the change with the appropriate agent
-4. Update documentation if behavior changes
-5. Commit with descriptive message
+## Making Changes
+
+1. Update DEVELOPMENT.md first (SSoT)
+2. Update steering/prompts to reference new rules
+3. Test with appropriate agent
+4. Commit with descriptive message

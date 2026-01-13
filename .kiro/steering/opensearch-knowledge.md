@@ -1,5 +1,9 @@
 # OpenSearch Feature Explorer - Base Knowledge
 
+**For document conventions, templates, and rules, see DEVELOPMENT.md (Single Source of Truth).**
+
+---
+
 ## OpenSearch Domain Knowledge
 
 ### Repository Structure
@@ -11,9 +15,9 @@
 Each item follows `- Description ([#PR_NUMBER](URL))` format with PR links.
 Sections: `### Added`, `### Changed`, `### Fixed`, `### Dependencies`
 
-## GitHub MCP Tools Usage
+---
 
-Use GitHub MCP Server to retrieve repository information.
+## GitHub MCP Tools Usage
 
 ### Repository Detection
 Before using GitHub MCP tools, get the target repository:
@@ -36,258 +40,10 @@ Parse output to extract owner/repo (e.g., `git@github.com:owner/repo.git` → ow
 4. Get related code with `get_file_contents` if needed
 5. Get Issue details with `get_issue` if linked
 
-## Caching
-
-### Cache Directory
-Store fetched data in `.cache/` to avoid redundant API calls.
-
-### Cache Structure
-```
-.cache/
-  releases/{version}/
-    raw-items.json               # Parsed release items (from fetch-release)
-    batch.json                   # Current batch for group-release
-    groups.json                  # Grouped items (from group-release)
-    prs/
-      {number}.json              # Merged PRs only
-    issues/
-      {number}.json              # Closed Issues only
-```
-
-### Cache Rules
-- **Release notes**: Always cache (version-specific, immutable)
-- **PRs**: Cache only if `merged: true`
-- **Issues**: Cache only if `state: closed`
-- **Code files**: Do not cache
-
-### Workflow
-1. Before fetching, check if cached file exists
-2. If cached: Read from `.cache/`
-3. If not cached: Fetch from GitHub, then save to `.cache/` if cacheable
-
-## Writing Rules
-
-### Content Structure
-- Start with "Summary" section: brief overview accessible to all readers
-- Follow with "Details" section: accurate technical content for engineers
-- Include "Limitations" or "Known Issues" section when applicable
-
-### Technical Content
-- Include code/configuration examples where helpful
-- Note version compatibility and migration considerations
-- Mention performance implications if relevant
-- Clearly mark speculation or unverified information
-
-### References
-- Include URLs of referenced Pull Requests and Issues
-- Link to official OpenSearch documentation when available
-
-### Visual Elements
-- Include diagrams showing architecture and processing flows
-- Use tables for configuration options, components, and PR lists
-
-## Report Output Format
-
-### Release Report Template (docs/releases/v{version}/features/{repo}/{item-name}.md)
-```markdown
 ---
-tags:
-  - {repo}
----
-# {Item Name}
 
-## Summary
-What this release item adds/changes and why it matters.
-Focus on the delta - what's new in this version specifically.
+## OpenSearch Docs MCP Tool
 
-## Details
-
-### What's New in v{version}
-Specific changes introduced in this version.
-
-### Technical Changes
-
-#### Architecture Changes
-```mermaid
-graph TB
-    ...
-```
-
-#### New Components
-| Component | Description |
-|-----------|-------------|
-
-#### New Configuration
-| Setting | Description | Default |
-|---------|-------------|---------|
-
-### Usage Example
-```json
-// Example showing new functionality
-```
-
-### Migration Notes
-Steps to adopt this change (if applicable).
-
-## Limitations
-Known limitations specific to this release.
-
-## References
-
-### Pull Requests
-| PR | Description | Related Issue |
-|----|-------------|---------------|
-| [#1234](url) | Main implementation | [#1000](url) |
-
-### Documentation
-- [Feature Documentation](url)
-```
-
-### Feature Report Template (docs/features/{repo}/{feature-name}.md)
-```markdown
----
-tags:
-  - {repo}
----
-# {Feature Name}
-
-## Summary
-Brief overview of what this feature does, why it matters, and key benefits.
-
-## Details
-
-### Architecture
-```mermaid
-graph TB
-    ...
-```
-
-### Data Flow
-```mermaid
-flowchart TB
-    ...
-```
-
-### Components
-| Component | Description |
-|-----------|-------------|
-
-### Configuration
-| Setting | Description | Default |
-|---------|-------------|---------|
-
-### Usage Example
-```yaml
-# Example configuration
-```
-
-## Limitations
-Known limitations or constraints
-
-## Change History
-- **v3.5.0** (2024-01-15): Added feature X, performance improvements
-- **v3.4.0** (2023-10-01): Initial implementation
-
-## References
-
-### Documentation
-- [Feature Documentation](url)
-- [API Reference](url)
-
-### Blog Posts
-- [Feature Announcement](url)
-
-### Pull Requests
-| Version | PR | Description | Related Issue |
-|---------|-----|-------------|---------------|
-| v3.5.0 | [#2345](url) | Performance improvements | [#2300](url) |
-| v3.4.0 | [#1234](url) | Initial implementation | [#1000](url) |
-
-### Issues (Design / RFC)
-- [#1000](url): Original feature request
-- [#900](url): Design RFC
-```
-
-### Release Summary Template (docs/releases/v{version}/summary.md)
-```markdown
-# OpenSearch v{version} Release Summary
-
-## Summary
-Brief overview of this release: major themes, key features, and impact.
-
-## Highlights
-```mermaid
-graph TB
-    ...
-```
-
-## New Features
-| Feature | Description | Report |
-|---------|-------------|--------|
-| {Name} | {Brief description} | {item-name} |
-
-## Improvements
-| Area | Description | Report |
-|------|-------------|--------|
-
-## Bug Fixes
-| Issue | Description | PR |
-|-------|-------------|-----|
-
-## Breaking Changes
-| Change | Migration | Report |
-|--------|-----------|--------|
-
-## Dependencies
-Notable dependency updates
-
-## References
-- Links to all referenced PRs and Issues
-```
-
-## Mermaid Diagram Guidelines
-
-### Diagram Types by Use Case
-| Use Case | Syntax | When to Use |
-|----------|--------|-------------|
-| Architecture | `graph TB` | Component structure |
-| Data Flow | `flowchart TB` | Data flow, processing |
-| Sequence | `sequenceDiagram` | API calls, communication |
-| State | `stateDiagram-v2` | State transitions |
-| Class | `classDiagram` | Class structure |
-
-### Direction Rules
-- Use `TB` (top-to-bottom) as default direction
-- Use `LR` (left-to-right) only for simple flows with 3 or fewer nodes
-- Always use `TB` when diagram contains subgraphs
-
-### Required Diagrams
-- **Feature Report**: Architecture diagram (required), Data Flow (recommended)
-- **Release Summary**: Architecture Changes diagram (if applicable)
-
-## Feature Report Update Rules
-
-### Merge Strategy
-When existing report exists:
-1. Preserve existing structure
-2. Integrate new information into appropriate sections
-3. Update diagrams as needed
-4. Append to Change History
-
-### Change History Format
-```markdown
-## Change History
-- **v3.5.0** (2024-01-15): Added feature X, performance improvements
-- **v3.4.0** (2023-10-01): Initial implementation
-```
-(Newer changes at top)
-
-### Release Dates Reference
-Refer to https://opensearch.org/releases/ for official release dates.
-
-## Resource Search
-
-### OpenSearch Docs MCP Tool
 Use the `search` tool from `opensearch-docs` MCP server to search documentation and blogs.
 
 Parameters:
@@ -315,67 +71,35 @@ Response:
 
 Use `web_fetch` to retrieve full content from returned URLs.
 
+---
 
-## File Naming Conventions
+## Writing Guidelines
 
-### Prefix Rules
-Include repository/plugin name prefix for searchability and context independence:
+### Content Structure
+- Start with "Summary" section: brief overview accessible to all readers
+- Follow with "Details" section: accurate technical content for engineers
+- Include "Limitations" or "Known Issues" section when applicable
 
-| File Type | Pattern | Example |
-|-----------|---------|---------|
-| Main feature doc | `{repo}/{repo}.md` | `security/security.md` |
-| Sub-feature | `{repo}/{repo}-{aspect}.md` | `security/security-jwt.md` |
-| Directory index | `{repo}/index.md` | `security/index.md` |
+### Technical Content
+- Include code/configuration examples where helpful
+- Note version compatibility and migration considerations
+- Mention performance implications if relevant
+- Clearly mark speculation or unverified information
 
-Repository name = OpenSearch plugin/component repository name (e.g., `security`, `k-nn`, `ml-commons`, `neural-search`)
+### References
+- Include URLs of referenced Pull Requests and Issues
+- Link to official OpenSearch documentation when available
 
-```
-# Good - searchable, identifiable
-security/security.md
-security/security-jwt-authentication.md
-k-nn/k-nn-performance.md
-ml-commons/ml-commons-agent-framework.md
+---
 
-# Avoid - ambiguous without context
-security/overview.md
-security/plugin.md
-```
+## Feature Report Update Rules
 
-### Rationale
-- Searchability: Prefix makes files findable across the codebase
-- Context independence: File name alone identifies the feature
-- Consistency: All feature-related files share the same prefix
+### Merge Strategy
+When existing report exists:
+1. Preserve existing structure
+2. Integrate new information into appropriate sections
+3. Update diagrams as needed
+4. Append to Change History (newer at top)
 
-### Avoid Temporal Files
-Don't create separate files for version-specific content:
-- `*-bugfixes.md` → merge into main doc's Change History
-- `*-enhancements.md` → merge into main doc's Change History
-- `*-breaking-changes.md` → merge into main doc or release notes
-
-## Directory Naming
-
-### Rules
-```
-docs/features/{repository-name}/
-```
-- Use OpenSearch repository names as-is
-- Hyphen-separated (lowercase)
-- Remove `-plugin` suffix for dashboards plugins
-
-### Examples
-- `alerting-dashboards-plugin/` → `alerting-dashboards/`
-- `security-dashboards-plugin/` → `security-dashboards/`
-
-## Tag System
-
-Tags are derived from the file path. Each document has exactly one tag: the repository name.
-
-```yaml
-# docs/features/{repo}/*.md → tag: {repo}
-tags:
-  - opensearch      # for docs/features/opensearch/*.md
-  - k-nn            # for docs/features/k-nn/*.md
-  - neural-search   # for docs/features/neural-search/*.md
-```
-
-No manual tag assignment needed - tags match the parent directory name.
+### Release Dates Reference
+Refer to https://opensearch.org/releases/ for official release dates.
