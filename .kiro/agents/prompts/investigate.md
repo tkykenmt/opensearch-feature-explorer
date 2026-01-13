@@ -41,8 +41,8 @@ Input: (no arguments)
 
 If a language code is specified (e.g., "Output in language code 'ja'"):
 1. Write reports in the specified language
-2. Release report: `docs/releases/v{version}/features/{item-name}.{lang}.md`
-3. Feature report: `docs/features/{feature-name}.{lang}.md`
+2. Release report: `docs/releases/v{version}/features/{repo}/{item-name}.{lang}.md`
+3. Feature report: `docs/features/{repo}/{feature-name}.{lang}.md`
 4. Keep technical terms, code, and configuration examples in English
 5. Translate descriptions, explanations, and summaries
 
@@ -58,10 +58,10 @@ Step 1: Load target info
 Step 2: Deep investigation
     ↓
 Step 3: Create RELEASE report (primary output)
-         docs/releases/v{version}/features/{item-name}.md
+         docs/releases/v{version}/features/{repo}/{item-name}.md
     ↓
 Step 4: Update/Create FEATURE report (secondary output)
-         docs/features/{feature-name}.md
+         docs/features/{repo}/{feature-name}.md
     ↓
 Step 5: Commit and push
     ↓
