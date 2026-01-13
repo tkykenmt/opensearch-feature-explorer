@@ -134,8 +134,6 @@ public class NeuralQueryBuilder extends AbstractQueryBuilder<NeuralQueryBuilder>
 - **v3.1.0** (2025-05-15): Added `getSearchRequest()` method, broadened constructor to accept `IndicesRequest`, integrated with Validate Query API
 - **v2.19.0** (2025-01-23): Initial implementation with Template query support
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

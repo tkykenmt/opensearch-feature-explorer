@@ -66,4 +66,4 @@ No user action required. This is an internal test fix that aligns with the Remot
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/cross-cluster-replication/cross-cluster-opensearch-replication.md)
+- Full feature documentation

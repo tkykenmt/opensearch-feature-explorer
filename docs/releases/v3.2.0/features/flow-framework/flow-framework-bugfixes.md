@@ -131,4 +131,4 @@ Three default use cases had incorrect substitution field `create_connector` inst
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/flow-framework/flow-framework.md)
+- Full feature documentation

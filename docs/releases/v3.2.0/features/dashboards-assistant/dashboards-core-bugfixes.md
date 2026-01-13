@@ -73,4 +73,4 @@ No user-facing changes. This fix only affects the development and CI/CD test env
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-assistant/dashboards-core-bugfixes.md)
+- Full feature documentation

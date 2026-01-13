@@ -141,7 +141,7 @@ graph TB
 ### Documentation
 - [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference
 - [Anomaly Detection Security](https://docs.opensearch.org/3.0/observing-your-data/ad/security/): Security configuration
-- [Resource Access Control Framework](../../../features/security/security-resource-access-control-framework.md): Resource sharing documentation
+- Resource Access Control Framework: Resource sharing documentation
 
 ### Pull Requests
 | PR | Description |
@@ -153,4 +153,4 @@ graph TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

@@ -119,4 +119,4 @@ For test developers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-fips-compliance.md)
+- Full feature documentation

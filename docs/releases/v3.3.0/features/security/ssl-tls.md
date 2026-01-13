@@ -119,4 +119,4 @@ Can now use the standard installation process with `http.type: reactor-netty4-se
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-ssl-tls-compatibility.md)
+- Full feature documentation

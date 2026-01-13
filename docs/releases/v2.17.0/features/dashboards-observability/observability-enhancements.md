@@ -93,4 +93,4 @@ core.chrome.navGroup.addNavLinksToGroup(DEFAULT_NAV_GROUPS.analytics, [
 
 ## Related Feature Report
 
-- [Observability Integrations](../../../features/observability/observability-integrations.md)
+- Observability Integrations

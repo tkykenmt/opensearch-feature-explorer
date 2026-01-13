@@ -212,8 +212,6 @@ PUT _cluster/settings
 - **v3.1.0** (2025-05-09): Initial implementation of system ingest pipeline (#17817)
 - **v3.1.0** (2025-06-11): Added bulk update operation support (#18277)
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

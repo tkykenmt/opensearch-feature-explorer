@@ -174,8 +174,6 @@ GET /my-index/_search
 - **v3.2.0** (2025-07): Fixed max_score null when sorting by _score with secondary fields; Use ScoreDoc for TopScoreDocCollectorManager
 - **v3.1.0** (2025-04): Updated deprecated TopScoreDocCollectorManager construction
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

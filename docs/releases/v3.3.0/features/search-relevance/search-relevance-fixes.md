@@ -110,4 +110,4 @@ All rating formats (integer `1`, string `"0.5"`, float `0.75`) are now handled c
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/search-relevance/search-relevance-workbench.md)
+- Full feature documentation

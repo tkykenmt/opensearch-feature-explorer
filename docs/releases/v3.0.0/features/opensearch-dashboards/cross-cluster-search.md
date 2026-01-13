@@ -121,4 +121,4 @@ New server-side routes added to `query_enhancements` plugin:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-cross-cluster-search.md)
+- Full feature documentation

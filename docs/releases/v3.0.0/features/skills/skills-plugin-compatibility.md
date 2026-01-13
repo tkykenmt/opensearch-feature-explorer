@@ -87,4 +87,4 @@ This allows the plugin tests to execute under the new Java Agent security model,
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/skills/skills-tools.md)
+- Full feature documentation

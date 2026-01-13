@@ -193,8 +193,6 @@ jwt_auth_domain:
 - **v3.3.0** (2026-01-11): Added direct JWKS endpoint support with `jwks_uri` configuration, security validation features, and automatic fallback to static key authentication
 - **v3.1.0** (2025-06-06): Added support for nested claim paths in `roles_key` configuration
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

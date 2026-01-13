@@ -136,10 +136,6 @@ PUT .plugins-ml-config/_doc/os_chat
 - **v2.18.0** (2024-11-05): Added assistant capabilities for conditional UI rendering, new API to check agent config existence, renamed agentName to agentConfigName for clarity
 - **v2.13** (2024): Initial introduction of OpenSearch Assistant for OpenSearch Dashboards
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

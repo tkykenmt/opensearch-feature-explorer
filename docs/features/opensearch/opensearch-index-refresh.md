@@ -129,8 +129,6 @@ PUT /my-index/_settings
 
 - **v3.3.0**: Fixed unnecessary refresh operations during update retry conflicts ([#18917](https://github.com/opensearch-project/OpenSearch/pull/18917))
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

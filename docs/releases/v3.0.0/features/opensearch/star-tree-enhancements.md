@@ -188,4 +188,4 @@ No migration required. Star-tree indexes created in v2.18+ continue to work. New
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-star-tree-index.md)
+- Full feature documentation

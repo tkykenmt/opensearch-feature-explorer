@@ -165,4 +165,4 @@ PUT _plugins/_ml/memory_containers/{container_id}
 
 ## Related Feature Report
 
-- [ML Commons Bug Fixes](../../../features/ml-commons/ml-commons-bug-fixes.md)
+- ML Commons Bug Fixes

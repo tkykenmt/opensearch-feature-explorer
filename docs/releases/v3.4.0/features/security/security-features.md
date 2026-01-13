@@ -173,4 +173,4 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-features.md)
+- Full feature documentation

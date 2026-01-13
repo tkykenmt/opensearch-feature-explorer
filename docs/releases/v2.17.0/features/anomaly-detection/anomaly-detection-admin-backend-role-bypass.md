@@ -102,4 +102,4 @@ No migration required. This is a behavioral change that takes effect immediately
 
 ## Related Feature Report
 
-- [Anomaly Detection](../../../features/anomaly-detection/anomaly-detection.md)
+- Anomaly Detection

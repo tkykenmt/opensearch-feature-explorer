@@ -119,8 +119,6 @@ OpenSearchClient client = new OpenSearchClient(builder.build());
 - **v3.0.0** (2025-03-11): Bug fixes - JDK 16+ TLS fix, h2c compression fix, memory allocation optimization, HTTP/2 protocol version support
 - **v3.0.0** (2025-03-11): Migrated from Apache HttpComponents 4.x to Apache HttpClient 5.x
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

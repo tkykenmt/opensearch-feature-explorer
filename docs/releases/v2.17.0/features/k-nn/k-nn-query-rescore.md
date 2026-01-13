@@ -137,4 +137,4 @@ GET my-knn-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-query-rescore.md)
+- Full feature documentation

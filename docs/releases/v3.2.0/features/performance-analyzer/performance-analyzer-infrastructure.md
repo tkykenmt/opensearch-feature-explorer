@@ -74,4 +74,4 @@ This workaround is no longer needed as the updated dependencies now include the 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/performance-analyzer/performance-analyzer.md)
+- Full feature documentation

@@ -119,11 +119,6 @@ Special value handling:
 
 - **v3.3.0** (2026-01): Execute Tool API enabled by default, PlainNumberAdapter added for SearchIndexTool, setting naming standardization
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

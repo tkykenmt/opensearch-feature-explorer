@@ -153,4 +153,4 @@ CalciteEnumerableIndexScan(..., Project->[count(), span(birthdate,1M)])
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-calcite-query-engine.md)
+- Full feature documentation

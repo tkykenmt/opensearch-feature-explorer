@@ -78,4 +78,4 @@ No migration required. The fix is automatically applied when upgrading to v3.4.0
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-node-stats.md)
+- Full feature documentation

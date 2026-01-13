@@ -114,8 +114,6 @@ Running tests:
 
 - **v2.18.0** (2024-10-22): Added Docker Compose v2 support alongside existing v1 support
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

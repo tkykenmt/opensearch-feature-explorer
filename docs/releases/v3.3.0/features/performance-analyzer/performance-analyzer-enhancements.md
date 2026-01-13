@@ -104,4 +104,4 @@ public Version getVersion() {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/performance-analyzer/performance-analyzer.md)
+- Full feature documentation

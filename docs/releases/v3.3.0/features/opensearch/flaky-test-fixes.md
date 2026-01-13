@@ -86,4 +86,4 @@ No migration required. These are internal test framework improvements.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/flaky-test-fixes.md)
+- Full feature documentation

@@ -143,4 +143,4 @@ This is a new experimental feature. To adopt:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-agentic-search.md)
+- Full feature documentation

@@ -129,4 +129,4 @@ PUT /my-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-lucene-similarity.md)
+- Full feature documentation

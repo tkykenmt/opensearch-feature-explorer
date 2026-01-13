@@ -174,4 +174,4 @@ To use collapse with hybrid queries:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-hybrid-query.md)
+- Full feature documentation

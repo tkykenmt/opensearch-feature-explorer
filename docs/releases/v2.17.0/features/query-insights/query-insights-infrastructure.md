@@ -127,4 +127,4 @@ No migration required. These are infrastructure-only changes that don't affect p
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/query-insights/query-insights.md)
+- Full feature documentation

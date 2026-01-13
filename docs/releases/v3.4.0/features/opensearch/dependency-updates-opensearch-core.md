@@ -124,4 +124,4 @@ The Netty upgrade (PR #19178) is the most significant change:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-dependency-management.md)
+- Full feature documentation

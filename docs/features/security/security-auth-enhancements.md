@@ -156,8 +156,6 @@ opensearch_security.proxycache:
   - Added proxy authentication support in multi-auth configurations
   - Improved redirect URL handling in OpenSearch Dashboards
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

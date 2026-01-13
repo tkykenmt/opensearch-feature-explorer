@@ -69,4 +69,4 @@ The Query Insights plugin v3.2.0 release includes:
 
 ## Related Feature Report
 
-- [Query Insights Feature Documentation](../../../../features/query-insights/query-insights.md)
+- Query Insights Feature Documentation

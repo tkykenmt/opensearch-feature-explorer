@@ -128,4 +128,4 @@ For plugin developers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-build-infrastructure-gradle-jdk.md)
+- Full feature documentation

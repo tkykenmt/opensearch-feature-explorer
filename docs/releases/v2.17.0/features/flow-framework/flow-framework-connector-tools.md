@@ -117,4 +117,4 @@ No migration required. This is a backward-compatible enhancement. Existing workf
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/flow-framework/flow-framework-connector-tools.md)
+- Full feature documentation

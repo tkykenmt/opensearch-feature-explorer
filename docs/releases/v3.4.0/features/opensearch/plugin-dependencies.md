@@ -129,4 +129,4 @@ If you have plugins using the `dependencies` field with a single version, no cha
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-plugin-dependencies.md)
+- Full feature documentation

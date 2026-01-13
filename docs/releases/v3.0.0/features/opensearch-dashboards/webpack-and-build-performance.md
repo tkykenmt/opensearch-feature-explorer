@@ -150,4 +150,4 @@ pageLoadAssetSizeVariation:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-webpack-and-build-performance.md)
+- Full feature documentation

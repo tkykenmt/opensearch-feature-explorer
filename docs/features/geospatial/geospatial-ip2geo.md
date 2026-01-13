@@ -196,8 +196,6 @@ Fields available depend on the datasource. GeoLite2 City provides:
 - **v3.1.0** (2026-01-10): Bug fixes for cache synchronization - reset metadata on failure, add retry logic with cache refresh
 - **v2.10.0**: Initial implementation of IP2Geo processor
 
-## Related Features
-- [Maps (Dashboards)](../dashboards-maps/dashboards-maps-maps-geospatial.md)
 
 ## References
 

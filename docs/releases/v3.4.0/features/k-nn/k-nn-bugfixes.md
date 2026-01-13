@@ -140,4 +140,4 @@ sequenceDiagram
 
 ## Related Feature Report
 
-- [Full k-NN plugin documentation](../../../features/k-nn/k-nn-plugin.md)
+- Full k-NN plugin documentation

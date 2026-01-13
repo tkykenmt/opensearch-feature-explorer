@@ -214,8 +214,6 @@ POST _plugins/_sm/policies/monitored-backup
 
 - **v3.3.0** (2026-01): Added optional creation workflow, snapshot pattern support for deletion, and ISM snapshot global state fix
 
-## Related Features
-- [Job Scheduler](../job-scheduler/job-scheduler.md)
 
 ## References
 

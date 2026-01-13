@@ -109,4 +109,4 @@ Updated navigation items with clearer titles and added descriptions:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-dashboards/security-dashboards-plugin.md)
+- Full feature documentation

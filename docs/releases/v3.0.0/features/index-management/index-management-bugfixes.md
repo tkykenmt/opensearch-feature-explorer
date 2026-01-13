@@ -102,4 +102,4 @@ Fixed build issues related to the deprecation of SecurityManager in favor of Jav
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/index-management/index-management.md)
+- Full feature documentation

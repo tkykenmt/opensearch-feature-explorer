@@ -90,4 +90,4 @@ No migration steps required. These are bug fixes that improve stability without 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-snapshot-restore-enhancements.md)
+- Full feature documentation

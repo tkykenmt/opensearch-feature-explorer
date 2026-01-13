@@ -72,4 +72,4 @@ The change is transparent to users. When viewing alert insights in OpenSearch Da
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/alerting-dashboards-plugin/alerting-dashboards-plugin-alerting-summary-insights.md)
+- Full feature documentation

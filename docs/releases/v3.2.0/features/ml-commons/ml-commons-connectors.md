@@ -136,4 +136,4 @@ Please update the endpoint in connection configuration.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-connector-model-validation.md)
+- Full feature documentation

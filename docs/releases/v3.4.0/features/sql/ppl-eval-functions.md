@@ -136,4 +136,4 @@ source=index | eval result = mvdedup(array(1, 2, 2, 3, 1, 4))
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-ppl-eval-functions.md)
+- Full feature documentation

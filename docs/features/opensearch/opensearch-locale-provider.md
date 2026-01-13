@@ -103,8 +103,6 @@ POST /my-index/_doc
 
 - **v3.0.0** (2025-05-06): Changed locale provider from COMPAT to CLDR to address JDK 21+ deprecation warnings
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

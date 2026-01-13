@@ -143,8 +143,6 @@ Translog translog = new LocalTranslog(
 
 - **v3.3.0** (2025-08-27): Added `ChannelFactory` parameter to Translog constructor, enabling custom file channel implementations for use cases like storage encryption
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

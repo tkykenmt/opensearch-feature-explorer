@@ -202,8 +202,6 @@ Transformed mapping (after semantic field transformer):
 
 - **v3.0.0** (2025-05-06): Initial implementation - introduced MappingTransformer interface, MappingTransformerRegistry, and integration with index/template transport actions
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -154,8 +154,6 @@ PUT _snapshot/my-s3-repo
 
 - **v3.4.0** (2025-10-28): Initial implementation with `BlobStoreProvider` and SSE support for S3 repositories
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

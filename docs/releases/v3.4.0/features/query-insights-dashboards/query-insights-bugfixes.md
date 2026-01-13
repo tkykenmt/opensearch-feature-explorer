@@ -119,4 +119,4 @@ No migration required. These are bug fixes with no breaking changes.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/query-insights/query-insights.md)
+- Full feature documentation

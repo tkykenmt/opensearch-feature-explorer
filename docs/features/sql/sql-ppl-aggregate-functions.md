@@ -186,9 +186,6 @@ Both `list()` and `values()` functions support:
 
 - **v3.3.0** (2026-01-11): Added first/last, list, earliest/latest aggregate functions; extended distinct_count/dc to eventstats command
 
-## Related Features
-- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

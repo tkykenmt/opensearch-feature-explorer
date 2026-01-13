@@ -89,4 +89,4 @@ No configuration changes required. These fixes are automatically applied when up
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

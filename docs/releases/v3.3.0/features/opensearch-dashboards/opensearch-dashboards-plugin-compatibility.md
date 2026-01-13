@@ -102,4 +102,4 @@ bin/opensearch-dashboards-plugin install --single-version ignore <plugin-url>
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-plugin-compatibility.md)
+- Full feature documentation

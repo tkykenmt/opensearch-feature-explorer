@@ -137,8 +137,6 @@ data_source:
 - **v2.17.0** (2024-09-17): Added data-connection saved object type for external connections (CloudWatch, Security Lake)
 - **v2.16.0**: Initial migration of direct query data source to data source management plugin
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

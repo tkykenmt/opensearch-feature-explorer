@@ -143,9 +143,6 @@ source=logs | patterns message by level mode=aggregation | fields level, pattern
 - **v3.1.0**: Added aggregation mode, Brain algorithm support
 - **v3.0.0**: Initial patterns command implementation
 
-## Related Features
-- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

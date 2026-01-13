@@ -172,4 +172,4 @@ This is a non-breaking change that improves API behavior. Client applications th
 
 ## Related Feature Report
 
-- [ML Commons Error Handling](../../../features/ml-commons/ml-commons-error-handling.md)
+- ML Commons Error Handling

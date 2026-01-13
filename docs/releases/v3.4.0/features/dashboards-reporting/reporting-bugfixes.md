@@ -95,4 +95,4 @@ No migration required. The fixes are backward compatible and automatically appli
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-reporting/dashboards-reporting.md)
+- Full feature documentation

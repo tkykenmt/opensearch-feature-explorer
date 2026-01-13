@@ -130,8 +130,6 @@ mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get \
 
 - **v3.4.0** (2025-10-15): Migrated snapshot publishing from Sonatype to S3-backed repository at ci.opensearch.org due to Sonatype's 30-day retention policy
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

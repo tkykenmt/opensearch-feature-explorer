@@ -93,4 +93,4 @@ Users who previously worked around this issue by manually editing `/lib/systemd/
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-network-configuration.md)
+- Full feature documentation

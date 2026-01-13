@@ -125,4 +125,4 @@ If you have existing scripts or applications using the WLM API:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-workload-management.md)
+- Full feature documentation

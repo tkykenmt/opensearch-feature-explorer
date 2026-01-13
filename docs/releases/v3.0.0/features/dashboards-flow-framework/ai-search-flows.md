@@ -178,4 +178,4 @@ The new RAG + Hybrid Search preset can be configured with minimal clicks:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
+- Full feature documentation

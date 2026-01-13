@@ -209,8 +209,6 @@ GET logs/_search?search_pipeline=temporal-routing-search
 
 - **v3.3.0** (2025-08-11): Initial implementation with `TemporalRoutingProcessor` and `TemporalRoutingSearchProcessor`
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

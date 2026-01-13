@@ -170,13 +170,11 @@ PUT /my-index
 
 - **v3.3.0** (2026-01-11): Initial implementation with StoreFactory interface, index.store.factory setting, and public API exposure for Store.LoadedMetadata and Store.OnClose
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 
 ### Documentation
-- [Store Subdirectory Module](opensearch-store-subdirectory-module.md): First implementation using StoreFactory
+- Store Subdirectory Module: First implementation using StoreFactory
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |

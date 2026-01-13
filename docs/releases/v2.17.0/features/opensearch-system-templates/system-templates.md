@@ -121,4 +121,4 @@ Based on testing with HTTP logs dataset:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-system-templates/opensearch-system-templates-system-templates.md)
+- Full feature documentation

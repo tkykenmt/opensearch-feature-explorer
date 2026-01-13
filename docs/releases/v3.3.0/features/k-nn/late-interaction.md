@@ -128,4 +128,4 @@ To use late interaction scoring:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-late-interaction.md)
+- Full feature documentation

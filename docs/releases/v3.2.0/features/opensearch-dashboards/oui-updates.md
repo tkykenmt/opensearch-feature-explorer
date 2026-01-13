@@ -72,4 +72,4 @@ The update introduces the `preserveTabContent` prop to `EuiTabbedContent` compon
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-oui.md)
+- Full feature documentation

@@ -116,4 +116,4 @@ For users upgrading to v3.2.0:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-opensearch-fips-compliance.md)
+- Full feature documentation

@@ -183,4 +183,4 @@ Benchmark results on OpenSearch 3.3 with 3 × r6g.2xlarge data nodes:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-maximal-marginal-relevance-mmr.md)
+- Full feature documentation

@@ -124,4 +124,4 @@ PUT /my-index/_settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-merge-segment-settings.md)
+- Full feature documentation

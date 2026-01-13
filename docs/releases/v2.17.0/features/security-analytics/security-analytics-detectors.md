@@ -115,4 +115,4 @@ The response now includes the complete trigger configuration, enabling UI compon
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security-analytics/security-analytics-detectors.md)
+- Full feature documentation

@@ -103,4 +103,4 @@ ByteArrayEntity entity = new ByteArrayEntity(bytes, ContentType.APPLICATION_JSON
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-http-client.md)
+- Full feature documentation

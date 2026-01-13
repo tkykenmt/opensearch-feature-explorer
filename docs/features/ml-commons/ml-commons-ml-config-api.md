@@ -133,11 +133,6 @@ The API includes built-in security measures:
 
 - **v2.17.0** (2024-09-17): Initial exposure of ML Config API through MachineLearningClient interface
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

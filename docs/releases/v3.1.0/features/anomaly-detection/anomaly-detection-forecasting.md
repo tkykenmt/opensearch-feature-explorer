@@ -135,4 +135,4 @@ POST _plugins/_forecast/forecasters
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/anomaly-detection/anomaly-detection-forecasting.md)
+- Full feature documentation

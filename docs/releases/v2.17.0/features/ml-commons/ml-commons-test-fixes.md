@@ -120,4 +120,4 @@ POST /_plugins/_ml/models/_register?deploy=true
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-test-fixes.md)
+- Full feature documentation

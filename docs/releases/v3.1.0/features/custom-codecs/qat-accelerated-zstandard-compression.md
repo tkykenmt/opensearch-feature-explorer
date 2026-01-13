@@ -123,4 +123,4 @@ PUT /my-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/custom-codecs/custom-codecs.md)
+- Full feature documentation

@@ -116,4 +116,4 @@ Maintainers can approve the workflow from the GitHub Actions UI.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-ci-cd.md)
+- Full feature documentation

@@ -160,4 +160,4 @@ PUT /_cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-search-replica-reader-writer-separation.md)
+- Full feature documentation

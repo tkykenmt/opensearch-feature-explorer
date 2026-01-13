@@ -151,4 +151,4 @@ This is a non-breaking change. Existing code using `DocWriteRequest` or `GetRequ
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-docrequest-refactoring.md)
+- Full feature documentation

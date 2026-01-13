@@ -176,4 +176,4 @@ chrome.globalSearch.registerSearchCommand({
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-global-search.md)
+- Full feature documentation

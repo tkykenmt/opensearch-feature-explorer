@@ -104,4 +104,4 @@ No migration required. This is a transparent performance improvement that mainta
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-index-refresh.md)
+- Full feature documentation

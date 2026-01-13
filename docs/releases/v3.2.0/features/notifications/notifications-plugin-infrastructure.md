@@ -76,4 +76,4 @@ None specific to this release.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/notifications/notifications-plugin.md)
+- Full feature documentation

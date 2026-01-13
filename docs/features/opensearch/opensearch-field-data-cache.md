@@ -135,8 +135,6 @@ PUT _cluster/settings
 - **v3.3.0** (2025-09): Added default 35% heap limit, made cache size setting dynamic, optimized cache clearing from O(FN) to O(N) with scheduled cleaner thread
 - **v3.2.0** (2025-08): Changed `IndexFieldDataService.close()` to clear cache asynchronously, preventing cluster applier thread blocking during index removal
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

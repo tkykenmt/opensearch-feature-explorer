@@ -183,8 +183,6 @@ For Linux distributions using systemd, OpenSearch applies additional OS-level pr
 
 - **v3.0.0** (2025-04-09): Initial implementation replacing Java Security Manager with Java agent
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

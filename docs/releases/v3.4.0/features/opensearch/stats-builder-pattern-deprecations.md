@@ -141,4 +141,4 @@ IndexingStats.Stats stats = new IndexingStats.Stats.Builder()
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-stats-builder-pattern.md)
+- Full feature documentation

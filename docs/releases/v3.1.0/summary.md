@@ -54,31 +54,31 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| Semantic Field | GA release with automatic embedding generation, chunking, and search analyzers | [Details](features/neural-search/neural-search-semantic-field.md) |
-| Star-Tree Index | Production-ready with date range queries and nested aggregations | [Details](features/opensearch/opensearch-star-tree-index.md) |
-| Search Relevance Workbench | Experimental toolkit for search algorithm comparison and quality evaluation | [Details](features/search-relevance/search-relevance-workbench.md) |
-| Resource Access Control Framework | Centralized plugin resource sharing with owner-controlled access | [Details](features/security/security-resource-access-control-framework.md) |
-| System Ingest Pipeline | Automatic pipeline generation for plugin developers | [Details](features/opensearch/opensearch-system-ingest-pipeline.md) |
-| Derived Source | Storage optimization by reconstructing _source from doc_values | [Details](features/opensearch/opensearch-derived-source.md) |
-| QAT-Accelerated Zstandard | Hardware-accelerated compression using Intel QAT | [Details](features/custom-codecs/qat-accelerated-zstandard-compression.md) |
-| Hybrid Query Collapse | Document grouping and deduplication in hybrid queries | [Details](features/neural-search/hybrid-query-collapse.md) |
-| Live Queries Dashboard | Real-time query monitoring with cancellation support | [Details](features/query-insights/query-insights-enhancements.md) |
-| Workload Management Dashboard | Full WLM UI for query group management | [Details](features/query-insights/query-insights-enhancements.md) |
+| Semantic Field | GA release with automatic embedding generation, chunking, and search analyzers | Details |
+| Star-Tree Index | Production-ready with date range queries and nested aggregations | Details |
+| Search Relevance Workbench | Experimental toolkit for search algorithm comparison and quality evaluation | Details |
+| Resource Access Control Framework | Centralized plugin resource sharing with owner-controlled access | Details |
+| System Ingest Pipeline | Automatic pipeline generation for plugin developers | Details |
+| Derived Source | Storage optimization by reconstructing _source from doc_values | Details |
+| QAT-Accelerated Zstandard | Hardware-accelerated compression using Intel QAT | Details |
+| Hybrid Query Collapse | Document grouping and deduplication in hybrid queries | Details |
+| Live Queries Dashboard | Real-time query monitoring with cancellation support | Details |
+| Workload Management Dashboard | Full WLM UI for query group management | Details |
 
 ## Improvements
 
 | Area | Description | Report |
 |------|-------------|--------|
-| Hybrid Query Performance | 2-3x faster with custom bulk scorer | [Details](features/neural-search/hybrid-query-collapse.md) |
-| GPU Vector Index Build | Production-ready with tuned buffer sizes and segment size limits | [Details](features/k-nn/k-nn-remote-vector-index-build.md) |
-| PPL/SQL Calcite Engine | 15+ new commands including eventstats, flatten, expand, grok | [Details](features/sql/sql-ppl-calcite-engine.md) |
-| ML Commons Agent Framework | Update Agent API, function calling, MCP tools persistence | [Details](features/ml-commons/ml-commons-agent-framework.md) |
-| Pull-based Ingestion | Lag metrics, error metrics, consumer reset, write block support | [Details](features/opensearch/opensearch-pull-based-ingestion.md) |
-| Warm Storage Tiering | WarmDiskThresholdDecider and AutoForceMergeManager | [Details](features/opensearch/opensearch-warm-storage-tiering.md) |
-| Security Performance | Immutable User object reduces serialization overhead | [Details](features/security/security-performance-improvements.md) |
-| gRPC Transport | 5-11% latency improvement with pass-by-reference optimization | [Details](features/opensearch/grpc-transport.md) |
-| Query Insights | Metric labels, index exclusion, async operations | [Details](features/query-insights/query-insights-enhancements.md) |
-| Percentiles Aggregation | Up to 30x performance improvement with MergingDigest | [Details](features/opensearch/opensearch-percentiles-aggregation.md) |
+| Hybrid Query Performance | 2-3x faster with custom bulk scorer | Details |
+| GPU Vector Index Build | Production-ready with tuned buffer sizes and segment size limits | Details |
+| PPL/SQL Calcite Engine | 15+ new commands including eventstats, flatten, expand, grok | Details |
+| ML Commons Agent Framework | Update Agent API, function calling, MCP tools persistence | Details |
+| Pull-based Ingestion | Lag metrics, error metrics, consumer reset, write block support | Details |
+| Warm Storage Tiering | WarmDiskThresholdDecider and AutoForceMergeManager | Details |
+| Security Performance | Immutable User object reduces serialization overhead | Details |
+| gRPC Transport | 5-11% latency improvement with pass-by-reference optimization | Details |
+| Query Insights | Metric labels, index exclusion, async operations | Details |
+| Percentiles Aggregation | Up to 30x performance improvement with MergingDigest | Details |
 
 ## Bug Fixes
 
@@ -98,17 +98,17 @@ graph TB
 
 | Change | Migration | Report |
 |--------|-----------|--------|
-| Pull-based Ingestion Reset API | Rename `rewind_by_offset` → `reset_by_offset`, `rewind_by_timestamp` → `reset_by_timestamp` | [Details](features/opensearch/opensearch-pull-based-ingestion.md) |
-| Remote Vector Index Build Settings | Update setting names from feature flag pattern to GA naming | [Details](features/k-nn/k-nn-remote-vector-index-build.md) |
-| Query Insights Grouping Settings | Move to `search.insights.top_queries.grouping.*` namespace | [Details](features/query-insights/query-insights-enhancements.md) |
+| Pull-based Ingestion Reset API | Rename `rewind_by_offset` → `reset_by_offset`, `rewind_by_timestamp` → `reset_by_timestamp` | Details |
+| Remote Vector Index Build Settings | Update setting names from feature flag pattern to GA naming | Details |
+| Query Insights Grouping Settings | Move to `search.insights.top_queries.grouping.*` namespace | Details |
 
 ## Experimental Features
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| Resource Access Control | Centralized authorization framework for plugin resources | [Details](features/security/security-resource-access-control-framework.md) |
-| MCP Tools Persistence | Store MCP tools in system index with update/list APIs | [Details](features/ml-commons/ml-commons-agent-framework.md) |
-| Search Relevance Workbench | Search algorithm comparison and quality evaluation toolkit | [Details](features/search-relevance/search-relevance-workbench.md) |
+| Resource Access Control | Centralized authorization framework for plugin resources | Details |
+| MCP Tools Persistence | Store MCP tools in system index with update/list APIs | Details |
+| Search Relevance Workbench | Search algorithm comparison and quality evaluation toolkit | Details |
 
 ## Dependencies
 

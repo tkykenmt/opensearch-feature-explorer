@@ -86,4 +86,4 @@ No migration required. This fix is automatically applied when upgrading to v3.2.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-settings-management.md)
+- Full feature documentation

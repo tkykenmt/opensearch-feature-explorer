@@ -90,8 +90,6 @@ Dependency updates in the Security plugin follow this process:
 - **v3.0.0** (2025-02-25): 13 dependency updates including Spring 6.2.5, Bouncy Castle 1.80, OpenSAML 5.1.4/9.1.4, ASM 9.8, Commons IO 2.19.0, JUnit Jupiter 5.12.2
 - **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

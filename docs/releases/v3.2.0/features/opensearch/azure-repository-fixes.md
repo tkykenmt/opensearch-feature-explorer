@@ -99,4 +99,4 @@ No migration required. This is a transparent bugfix that corrects the behavior o
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-azure-repository.md)
+- Full feature documentation

@@ -114,4 +114,4 @@ GET /_msearch/template
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-search-pipeline.md)
+- Full feature documentation

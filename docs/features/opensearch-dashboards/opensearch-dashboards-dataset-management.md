@@ -216,8 +216,6 @@ datasetManagement.aliasedAsIndexPattern: false
 - **v3.4.0** (2026-01-11): Major enhancements including schema mapping, wildcard prefix support, multiple log datasets, enhanced table with metadata columns, and dynamic terminology conversion
 - **v3.3.0** (2026-01-11): Initial implementation with basic dataset type and management plugin
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

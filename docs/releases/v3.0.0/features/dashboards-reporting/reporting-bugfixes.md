@@ -84,4 +84,4 @@ Time Range: Aug 1, 2024 00:00:00 to Aug 15, 2024 23:59:59
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-reporting/dashboards-reporting.md)
+- Full feature documentation

@@ -155,4 +155,4 @@ GET /_remotestore/metadata/my-index-1?pretty
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-remote-store-metadata-api.md)
+- Full feature documentation

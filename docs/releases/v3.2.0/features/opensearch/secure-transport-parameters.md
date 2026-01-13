@@ -165,4 +165,4 @@ public class CustomSecureHttpTransportParameters
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-secure-transport-settings.md)
+- Full feature documentation

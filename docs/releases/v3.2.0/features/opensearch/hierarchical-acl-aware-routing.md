@@ -176,4 +176,4 @@ The search processors use identical hashing to ensure queries are routed to the 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-hierarchical-acl-aware-routing.md)
+- Full feature documentation

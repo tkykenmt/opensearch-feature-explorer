@@ -203,9 +203,6 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
 - **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
 
 ## References
 

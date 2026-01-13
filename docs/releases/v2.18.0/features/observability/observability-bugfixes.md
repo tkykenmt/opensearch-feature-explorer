@@ -92,6 +92,6 @@ No migration steps required. These are bug fixes that improve existing functiona
 
 ## Related Feature Report
 
-- [Observability UI](../../../features/dashboards-observability/dashboards-observability-observability-ui.md)
-- [Observability Multi-Data Source Support](../../../features/dashboards-observability/dashboards-observability-observability-multi-plugin-multi-data-source-support.md)
-- [Observability Workspace Integration](../../../features/dashboards-observability/dashboards-observability-observability-workspace-integration.md)
+- Observability UI
+- Observability Multi-Data Source Support
+- Observability Workspace Integration

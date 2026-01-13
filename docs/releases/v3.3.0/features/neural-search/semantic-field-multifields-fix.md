@@ -114,4 +114,4 @@ No migration required. After upgrading to v3.3.0, existing indices with semantic
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-semantic-field.md)
+- Full feature documentation

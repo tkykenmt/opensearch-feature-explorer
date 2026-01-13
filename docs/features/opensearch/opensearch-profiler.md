@@ -281,8 +281,6 @@ When concurrent segment search is enabled, the profiler provides additional slic
 - **v3.2.0** (2025-08-05): Added plugin profiling extensibility and multi-shard fetch phase profiling
 - **v3.2.0** (2025-06-21): Fixed incorrect timing values for concurrent segment search when timers have zero invocations
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

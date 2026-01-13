@@ -104,4 +104,4 @@ For developers building the k-NN plugin locally:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-build.md)
+- Full feature documentation

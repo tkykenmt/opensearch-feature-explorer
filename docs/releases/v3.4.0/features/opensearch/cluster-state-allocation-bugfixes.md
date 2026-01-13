@@ -99,4 +99,4 @@ These are bugfixes with no migration required. The changes are backward compatib
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-cluster-state-allocation.md)
+- Full feature documentation

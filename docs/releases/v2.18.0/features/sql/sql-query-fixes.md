@@ -116,4 +116,4 @@ POST /_plugins/_sql
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-query-fixes.md)
+- Full feature documentation

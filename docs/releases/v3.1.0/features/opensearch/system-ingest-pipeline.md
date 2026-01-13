@@ -195,4 +195,4 @@ public class MyPlugin extends Plugin implements IngestPlugin {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-system-ingest-pipeline.md)
+- Full feature documentation

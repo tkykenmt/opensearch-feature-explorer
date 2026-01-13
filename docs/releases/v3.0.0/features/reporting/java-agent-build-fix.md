@@ -88,4 +88,4 @@ Plugin developers maintaining forks or custom builds of the Reporting plugin sho
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/reporting/reporting-java-agent-migration.md)
+- Full feature documentation

@@ -171,4 +171,4 @@ grep Seccomp /proc/$(systemctl show --property=MainPID opensearch | cut -d= -f2)
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-systemd-security-configurations.md)
+- Full feature documentation

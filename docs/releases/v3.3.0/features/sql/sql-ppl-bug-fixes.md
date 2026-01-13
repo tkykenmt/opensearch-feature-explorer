@@ -142,4 +142,4 @@ source=demo-logs-otel-v1* 5a57f0a17fc6f59fb2ad8ec6b52ea3fa
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-ppl-bug-fixes.md)
+- Full feature documentation

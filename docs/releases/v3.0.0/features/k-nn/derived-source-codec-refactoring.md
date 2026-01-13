@@ -178,4 +178,4 @@ Use mapping-level parameters instead:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/k-nn-derived-source-codec-refactoring.md)
+- Full feature documentation

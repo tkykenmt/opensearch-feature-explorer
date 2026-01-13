@@ -107,4 +107,4 @@ No migration required. Existing clusters will continue using default values. Set
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-dynamic-settings.md)
+- Full feature documentation

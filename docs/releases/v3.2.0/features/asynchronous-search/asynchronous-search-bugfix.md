@@ -91,4 +91,4 @@ These changes are internal infrastructure updates and do not affect plugin funct
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/asynchronous-search/asynchronous-search.md)
+- Full feature documentation

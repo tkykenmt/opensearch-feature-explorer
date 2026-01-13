@@ -157,4 +157,4 @@ type IDataFramePollingResponse = {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-async-query.md)
+- Full feature documentation

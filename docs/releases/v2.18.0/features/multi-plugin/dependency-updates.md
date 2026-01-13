@@ -121,4 +121,4 @@ This addresses a high-severity vulnerability in protobuf-java (transitive depend
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/opensearch-dashboards-dependency-updates.md)
+- Full feature documentation

@@ -111,4 +111,4 @@ Plugin developers creating custom field types that wrap existing types should:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-filter-field-type.md)
+- Full feature documentation

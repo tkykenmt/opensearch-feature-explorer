@@ -113,4 +113,4 @@ The improvement is most significant for queries with many terms, where the sorti
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-terms-query.md)
+- Full feature documentation

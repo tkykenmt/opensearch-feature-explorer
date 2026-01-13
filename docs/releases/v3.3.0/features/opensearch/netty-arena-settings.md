@@ -115,4 +115,4 @@ ps aux | grep opensearch | grep sharedArenaMaxPermits
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-netty-arena-settings.md)
+- Full feature documentation

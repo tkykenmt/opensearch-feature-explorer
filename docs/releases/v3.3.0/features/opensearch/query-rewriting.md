@@ -133,4 +133,4 @@ Is automatically rewritten to:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-query-rewriting.md)
+- Full feature documentation

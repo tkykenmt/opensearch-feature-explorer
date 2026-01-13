@@ -105,4 +105,4 @@ After this fix, the data source selector is visible on all WLM pages regardless 
 
 ## Related Feature Report
 
-- [Query Insights](../../../features/query-insights/query-insights.md)
+- Query Insights

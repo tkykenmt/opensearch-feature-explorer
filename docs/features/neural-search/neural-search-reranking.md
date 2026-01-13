@@ -195,10 +195,6 @@ PUT /_search/pipeline/cohere_rerank_pipeline
 - **v2.18.0** (2024-11-05): Added ByFieldRerankProcessor for field-based reranking, enabled rescore support in hybrid queries
 - **v2.12.0** (2024-02-20): Initial rerank processor implementation with ML-based reranking
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

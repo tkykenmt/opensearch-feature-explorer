@@ -182,8 +182,6 @@ module.exports = {
 
 - **v3.0.0** (2025-03-20): Initial implementation with bundle analyzer and Lighthouse CI workflows
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

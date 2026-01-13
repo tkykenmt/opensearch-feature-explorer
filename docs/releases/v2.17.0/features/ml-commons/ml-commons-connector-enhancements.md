@@ -113,4 +113,4 @@ POST /_plugins/_ml/connectors/_create
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-connector.md)
+- Full feature documentation

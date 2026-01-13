@@ -134,4 +134,4 @@ POST /_plugins/_ml/agents/{agent_id}/_execute
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/skills/skills-tools.md)
+- Full feature documentation

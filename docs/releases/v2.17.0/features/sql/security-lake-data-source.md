@@ -134,4 +134,4 @@ SELECT * FROM my_security_lake.amazon_security_lake_glue_db_us_west_2.amazon_sec
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-security-lake-data-source.md)
+- Full feature documentation

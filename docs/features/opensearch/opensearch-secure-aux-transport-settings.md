@@ -156,8 +156,6 @@ grpcurl -insecure localhost:9400 list
 
 - **v3.2.0** (2025-09-16): Updated interface to accept `auxTransportType` string parameter, enabling transport-specific SSL configurations
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

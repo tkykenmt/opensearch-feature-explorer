@@ -69,4 +69,4 @@ This release item contains no new features or API changes. The asynchronous-sear
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/asynchronous-search/asynchronous-search.md)
+- Full feature documentation

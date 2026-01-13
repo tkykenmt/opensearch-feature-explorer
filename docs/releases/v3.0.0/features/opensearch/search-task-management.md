@@ -121,4 +121,4 @@ GET _nodes/stats
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-task-cancellation-monitoring.md)
+- Full feature documentation

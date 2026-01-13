@@ -134,4 +134,4 @@ graph TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-observability/dashboards-observability-getting-started-workflows.md)
+- Full feature documentation

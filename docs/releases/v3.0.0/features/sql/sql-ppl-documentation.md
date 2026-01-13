@@ -146,4 +146,4 @@ The following functionalities fall back to V2 engine:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-ppl-breaking-changes.md)
+- Full feature documentation

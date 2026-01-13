@@ -123,4 +123,4 @@ curl http://localhost:9200 -v --http2-prior-knowledge
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-http2-support.md)
+- Full feature documentation

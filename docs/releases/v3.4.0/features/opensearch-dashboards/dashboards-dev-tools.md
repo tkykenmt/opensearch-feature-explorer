@@ -107,4 +107,4 @@ No migration required. PATCH method support is automatically available after upg
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-console.md)
+- Full feature documentation

@@ -114,4 +114,4 @@ containsMatcher.test("application-error-log");  // Uses String.contains()
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-performance-improvements.md)
+- Full feature documentation

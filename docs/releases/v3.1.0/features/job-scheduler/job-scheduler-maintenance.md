@@ -93,4 +93,4 @@ This is a transparent change for users. Plugin developers extending Job Schedule
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/job-scheduler/job-scheduler.md)
+- Full feature documentation

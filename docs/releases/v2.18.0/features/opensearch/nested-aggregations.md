@@ -139,4 +139,4 @@ No migration required. This is a bug fix that restores expected behavior for nes
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-nested-aggregations.md)
+- Full feature documentation

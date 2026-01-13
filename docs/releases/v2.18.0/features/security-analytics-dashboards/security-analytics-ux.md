@@ -117,4 +117,4 @@ Added HOURS option for source refresh interval in threat intelligence configurat
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-analytics-dashboards/security-analytics-dashboards-plugin.md)
+- Full feature documentation

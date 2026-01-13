@@ -115,8 +115,6 @@ PUT _cluster/settings
 
 - **v3.0.0** (2025-03-18): Added configurable reroute priority settings, optimized MasterService logging to reduce recovery time for large clusters
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

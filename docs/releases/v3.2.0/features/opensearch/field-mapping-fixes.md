@@ -135,4 +135,4 @@ PUT /my-index/_doc/1
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-field-mapping.md)
+- Full feature documentation

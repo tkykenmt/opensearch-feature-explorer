@@ -96,4 +96,4 @@ Uses GitHub App token for authentication to enable auto-commits.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-ci-cd.md)
+- Full feature documentation

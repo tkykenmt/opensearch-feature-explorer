@@ -121,4 +121,4 @@ This is an internal refactoring with no user-facing API changes. Existing neural
 
 ## Related Feature Report
 
-- [Semantic Highlighting](../../../../features/neural-search/neural-search-semantic-highlighting.md)
+- Semantic Highlighting

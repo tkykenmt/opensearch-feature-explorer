@@ -132,8 +132,6 @@ Each batch returns a separate JSON response:
 - **v2.17.0** (2024-09-17): Initial release of Streaming Bulk API
 - **v2.15.0** (2024-06-25): RestAction streaming support foundation
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

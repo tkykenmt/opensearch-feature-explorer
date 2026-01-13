@@ -99,4 +99,4 @@ Fixed incorrect path references in the build workflow:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/reporting/reporting-ci-workflow.md)
+- Full feature documentation

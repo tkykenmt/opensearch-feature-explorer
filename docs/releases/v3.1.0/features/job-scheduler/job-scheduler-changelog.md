@@ -59,4 +59,4 @@ The CHANGELOG follows semantic versioning and includes these sections:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/job-scheduler/job-scheduler.md)
+- Full feature documentation

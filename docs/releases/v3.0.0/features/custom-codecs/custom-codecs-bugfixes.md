@@ -151,4 +151,4 @@ apply plugin: 'opensearch.java-agent'
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/custom-codecs/custom-codecs.md)
+- Full feature documentation

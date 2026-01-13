@@ -150,4 +150,4 @@ No migration required. These are bug fixes that improve existing functionality.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/query-insights/query-insights.md)
+- Full feature documentation

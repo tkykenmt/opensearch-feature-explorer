@@ -213,10 +213,6 @@ interface VisNLQSavedObject {
 - **v3.0.0**: Added metrics collection for t2viz usage
 - **v2.18.0**: Initial implementation with Text2Vega, Text2PPL, and Data2Summary APIs
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

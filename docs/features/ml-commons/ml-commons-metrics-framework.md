@@ -79,11 +79,6 @@ The Metrics Framework requires OpenSearch version 3.1.0 or later. The stats coll
 - **v3.3.0** (2026-01-11): Fixed version checking logic bug that prevented stats collector from starting on nodes > v3.1.0
 - **v3.1.0**: Initial implementation of Metrics Framework
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

@@ -90,4 +90,4 @@ env:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/ci-infrastructure-fixes.md)
+- Full feature documentation

@@ -178,4 +178,4 @@ No migration required. These are bug fixes that improve stability without changi
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/query-bug-fixes.md)
+- Full feature documentation

@@ -76,4 +76,4 @@ No migration required. This is a test-only change with no impact on production f
 
 ## Related Feature Report
 
-- [Integration Test Stability](../../../features/reporting/reporting-integration-test-stability.md)
+- Integration Test Stability

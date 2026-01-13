@@ -153,4 +153,4 @@ GET logs-*/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/engine-optimization-fixes.md)
+- Full feature documentation

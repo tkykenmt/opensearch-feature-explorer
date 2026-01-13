@@ -119,4 +119,4 @@ No migration required. This is a bug fix that restores correct behavior for hybr
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-hybrid-query.md)
+- Full feature documentation

@@ -80,4 +80,4 @@ No migration required. The fix is backward compatible and automatically applies 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-analytics-dashboards-plugin/security-analytics-dashboards-plugin-security-analytics.md)
+- Full feature documentation

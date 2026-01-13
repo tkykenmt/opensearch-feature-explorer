@@ -120,4 +120,4 @@ ConstantScoreQueryBuilder csQuery = new ConstantScoreQueryBuilder(
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-query-builders.md)
+- Full feature documentation

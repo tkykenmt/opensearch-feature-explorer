@@ -168,8 +168,6 @@ sequenceDiagram
 - **v3.3.0** (2026-01-10): Added `type()` method to DocRequest interface for resource sharing; Anomaly Detection plugin implements resource types for detectors and forecasters
 - **v3.1.0** (2025-05-15): Initial implementation - introduced `DocRequest` interface, updated `DocWriteRequest` to extend it, and made `GetRequest` implement it
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

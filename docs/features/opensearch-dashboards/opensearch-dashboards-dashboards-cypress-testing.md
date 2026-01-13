@@ -137,8 +137,6 @@ describe('Discover Sidebar', () => {
 
 - **v3.0.0** (2025-05-06): Major expansion of Cypress test coverage for Discover 2.0, including sidebar tests, saved search tests, inspect functionality, query editor tests, and flaky test fixes (18 PRs)
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

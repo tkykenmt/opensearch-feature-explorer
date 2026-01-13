@@ -140,4 +140,4 @@ OpenSearch 3.0.0 can leverage JDK 21's `MemorySegment` API for memory-mapped fil
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-java-runtime-and-jpms.md)
+- Full feature documentation

@@ -151,4 +151,4 @@ PUT /tenant-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-context-aware-segments.md)
+- Full feature documentation

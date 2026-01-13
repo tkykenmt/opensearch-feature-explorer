@@ -125,4 +125,4 @@ Left Navigation:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
+- Full feature documentation

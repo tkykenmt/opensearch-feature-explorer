@@ -160,4 +160,4 @@ These optimizations are applied automatically. No migration steps are required.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-query-optimization.md)
+- Full feature documentation

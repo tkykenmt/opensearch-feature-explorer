@@ -71,4 +71,4 @@ None. This is a documentation-only change with no impact on functionality.
 
 ## Related Feature Report
 
-- [k-NN Query Rescore](../../../features/k-nn/k-nn-query-rescore.md)
+- k-NN Query Rescore

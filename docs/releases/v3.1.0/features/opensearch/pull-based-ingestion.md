@@ -154,4 +154,4 @@ Update any code using the old enum values:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-pull-based-ingestion.md)
+- Full feature documentation

@@ -116,4 +116,4 @@ POST /_plugins/_ml/connectors/_create
 
 ## Related Feature Report
 
-- [ML Commons Blueprints](../../../features/ml-commons/ml-commons-blueprints.md)
+- ML Commons Blueprints

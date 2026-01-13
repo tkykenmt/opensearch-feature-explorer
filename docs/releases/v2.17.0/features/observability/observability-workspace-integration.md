@@ -155,4 +155,4 @@ The Overview page automatically displays:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-observability/dashboards-observability-observability-workspace-integration.md)
+- Full feature documentation

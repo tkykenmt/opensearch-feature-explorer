@@ -128,4 +128,4 @@ GET test_index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/learning/learning-to-rank.md)
+- Full feature documentation

@@ -136,8 +136,6 @@ public void testCreateAndShareResource() throws Exception {
 - **v3.1.0** (2025-05-13): Use extendedPlugins in integrationTest framework for sample resource plugin testing, refactor resource sharing to use in-memory updates
 - **v3.0.0** (2025-03-25): Added ConfigurationRepository tests, FLS/field masking tests, refactored InternalAuditLogTest to use Awaitility, migrated packages from com.amazon.dlic to org.opensearch.security
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 
@@ -145,7 +143,7 @@ public void testCreateAndShareResource() throws Exception {
 - [Security Plugin Documentation](https://docs.opensearch.org/3.0/security/index/): OpenSearch Security plugin docs
 - [PR #5322](https://github.com/opensearch-project/security/pull/5322): Security plugin test framework update
 - [PR #16908](https://github.com/opensearch-project/OpenSearch/pull/16908): Core Plugin Testing Framework
-- [Plugin Testing Framework](../opensearch/opensearch-plugin-testing-framework.md): Core testing framework feature
+- Plugin Testing Framework: Core testing framework feature
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |

@@ -86,4 +86,4 @@ No migration required. These are purely visual/UX improvements with no API or co
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-notifications/dashboards-notifications.md)
+- Full feature documentation

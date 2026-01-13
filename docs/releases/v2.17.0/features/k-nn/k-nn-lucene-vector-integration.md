@@ -128,4 +128,4 @@ PUT my-knn-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-lucene-vector-integration.md)
+- Full feature documentation

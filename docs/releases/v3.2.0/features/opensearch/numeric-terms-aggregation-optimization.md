@@ -130,4 +130,4 @@ Benchmark results show significant improvements when the requested bucket size i
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-numeric-terms-aggregation-optimization.md)
+- Full feature documentation

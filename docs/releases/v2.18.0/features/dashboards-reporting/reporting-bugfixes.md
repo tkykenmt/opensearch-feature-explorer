@@ -75,4 +75,4 @@ None specific to this fix.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-reporting/reporting.md)
+- Full feature documentation

@@ -146,8 +146,6 @@ GET my-index/_search
 
 - **v3.1.0** (2025-05-19): Added `matched_fields` support using Lucene 10's `withMaskedFieldsFunc` API
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

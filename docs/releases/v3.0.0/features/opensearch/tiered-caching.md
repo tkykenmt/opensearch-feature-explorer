@@ -107,4 +107,4 @@ indices.requests.cache.tiered_spillover.disk.store.policies.took_time.threshold:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-tiered-caching.md)
+- Full feature documentation

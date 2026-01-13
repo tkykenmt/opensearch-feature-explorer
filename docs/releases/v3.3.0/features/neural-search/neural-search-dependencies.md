@@ -77,4 +77,4 @@ For plugin developers extending Neural Search:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-dependencies.md)
+- Full feature documentation

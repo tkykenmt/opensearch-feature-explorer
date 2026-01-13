@@ -69,4 +69,4 @@ Release notes were added to 5 plugin repositories documenting the changes includ
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-version-bumps-release-notes.md)
+- Full feature documentation

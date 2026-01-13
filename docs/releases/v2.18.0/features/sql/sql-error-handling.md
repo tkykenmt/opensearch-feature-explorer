@@ -105,4 +105,4 @@ No migration required. These are backward-compatible improvements to error respo
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-error-handling.md)
+- Full feature documentation

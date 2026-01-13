@@ -128,4 +128,4 @@ The Dashboards plugin includes several fit-and-finish improvements:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/index-management/index-management.md)
+- Full feature documentation

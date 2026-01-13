@@ -229,8 +229,6 @@ Example: `1.0.0-alpha` → `00000000000000000001.00000000000000000000.0000000000
 
 - **v3.2.0**: Initial implementation with support for term, range, prefix, wildcard, regex, and fuzzy queries
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -117,8 +117,6 @@ Node join/leave is handled automatically by the cluster. Relevant log messages:
 
 - **v2.18.0** (2024-10-22): Fixed race condition in node-join/node-left loop by introducing pending disconnection tracking
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

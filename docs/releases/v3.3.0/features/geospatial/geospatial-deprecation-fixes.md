@@ -90,4 +90,4 @@ No migration is required. This is a transparent internal change that maintains f
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/geospatial/geospatial-ip2geo.md)
+- Full feature documentation

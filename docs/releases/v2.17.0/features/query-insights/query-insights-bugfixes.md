@@ -127,4 +127,4 @@ No migration required. These are bugfixes and test improvements that don't chang
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/query-insights/query-insights.md)
+- Full feature documentation

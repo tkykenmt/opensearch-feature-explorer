@@ -203,4 +203,4 @@ GET /_insights/top_queries?from=2024-10-01T00:00:00.000Z&to=2024-10-31T23:59:59.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/query-insights/query-insights.md)
+- Full feature documentation

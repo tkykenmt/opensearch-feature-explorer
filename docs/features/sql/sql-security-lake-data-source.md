@@ -151,9 +151,6 @@ WITH (auto_refresh=true)
 
 - **v2.17.0** (2024-09-17): Initial implementation with SECURITY_LAKE data source type and query validation
 
-## Related Features
-- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

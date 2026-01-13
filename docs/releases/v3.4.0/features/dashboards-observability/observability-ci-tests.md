@@ -105,4 +105,4 @@ Affected snapshot files:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
+- Full feature documentation

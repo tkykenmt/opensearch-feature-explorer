@@ -121,4 +121,4 @@ GET my_index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-combined-fields-query.md)
+- Full feature documentation

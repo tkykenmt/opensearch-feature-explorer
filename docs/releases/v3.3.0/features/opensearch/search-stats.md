@@ -94,4 +94,4 @@ No migration required. The fix is backward compatible and automatically handles 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-search-request-stats.md)
+- Full feature documentation

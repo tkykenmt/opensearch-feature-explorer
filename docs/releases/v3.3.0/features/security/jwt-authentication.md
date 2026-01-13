@@ -138,4 +138,4 @@ The new JWKS implementation includes built-in security protections:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-jwt-authentication.md)
+- Full feature documentation

@@ -193,4 +193,4 @@ opensearch.requestHeadersAllowlist:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-auth-enhancements.md)
+- Full feature documentation

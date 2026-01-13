@@ -127,4 +127,4 @@ PUT /my-index/_settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-clusterless-mode.md)
+- Full feature documentation

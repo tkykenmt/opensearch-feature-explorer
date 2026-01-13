@@ -126,10 +126,6 @@ Supported BWC versions: 2.9.0 through 2.20.0-SNAPSHOT
   - Updated BWC test infrastructure
   - Removed redundant Windows CI jobs
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

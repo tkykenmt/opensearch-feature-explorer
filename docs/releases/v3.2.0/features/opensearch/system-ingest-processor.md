@@ -169,4 +169,4 @@ PUT _index_template/example-template
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-system-ingest-pipeline.md)
+- Full feature documentation

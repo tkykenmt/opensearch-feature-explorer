@@ -140,9 +140,6 @@ SIMD optimization is most effective when:
 - **v2.18.0** (2024-10-22): Added AVX512 SIMD support for Faiss engine on x64 Linux
 - **v2.13.0**: Initial SIMD support with AVX2 (x64) and NEON (ARM64)
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

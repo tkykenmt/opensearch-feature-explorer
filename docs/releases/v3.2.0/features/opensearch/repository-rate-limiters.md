@@ -107,4 +107,4 @@ PUT /_snapshot/my-fs-repository/
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-repository-rate-limiters.md)
+- Full feature documentation

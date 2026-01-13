@@ -136,4 +136,4 @@ Fixed HTTP dependency issue in `CancelBatchJobTransportAction` that could cause 
 
 ## Related Feature Report
 
-- [Full ML Commons documentation](../../../features/ml-commons/ml-commons.md)
+- Full ML Commons documentation

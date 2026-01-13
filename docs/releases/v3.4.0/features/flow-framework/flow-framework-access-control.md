@@ -158,4 +158,4 @@ GET /_plugins/_security/api/resource/share?resource_id=workflow-123&resource_typ
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/flow-framework/flow-framework-access-control.md)
+- Full feature documentation

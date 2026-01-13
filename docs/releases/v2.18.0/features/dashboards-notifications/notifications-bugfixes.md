@@ -97,4 +97,4 @@ Fixed typo in the Email Recipient Groups UI:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-notifications/dashboards-notifications.md)
+- Full feature documentation

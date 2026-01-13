@@ -115,4 +115,4 @@ When using fixed value imputation, the field name has changed:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

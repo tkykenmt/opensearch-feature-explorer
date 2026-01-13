@@ -98,4 +98,4 @@ GET sample-data-*,sample-rollup/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/index-management/index-management.md)
+- Full feature documentation

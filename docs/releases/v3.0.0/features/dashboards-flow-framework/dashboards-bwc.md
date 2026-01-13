@@ -115,4 +115,4 @@ No migration required. The plugin automatically detects the backend version and 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-flow-framework/dashboards-flow-framework-backward-compatibility.md)
+- Full feature documentation

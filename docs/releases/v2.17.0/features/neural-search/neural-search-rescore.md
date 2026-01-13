@@ -111,4 +111,4 @@ GET /my-nlp-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-rescore.md)
+- Full feature documentation

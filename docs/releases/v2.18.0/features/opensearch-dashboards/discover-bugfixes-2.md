@@ -112,4 +112,4 @@ These are bug fixes that require no configuration changes. Users will automatica
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-discover.md)
+- Full feature documentation

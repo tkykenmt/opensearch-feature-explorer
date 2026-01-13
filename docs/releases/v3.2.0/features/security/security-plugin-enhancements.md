@@ -175,4 +175,4 @@ cluster_permissions:
 
 ## Related Feature Report
 
-- [Security Plugin](../../../features/security/security-plugin.md)
+- Security Plugin

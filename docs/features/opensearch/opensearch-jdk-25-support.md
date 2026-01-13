@@ -103,8 +103,6 @@ POST /my-index/_update/1
 
 - **v3.4.0**: Added JDK 25 compatibility through exception wrapping in Painless DefBootstrap
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -88,4 +88,4 @@ No migration required. This is a transparent bug fix that improves error message
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-search-relevance/search-relevance-workbench.md)
+- Full feature documentation

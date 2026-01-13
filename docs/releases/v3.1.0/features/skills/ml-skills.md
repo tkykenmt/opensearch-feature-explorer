@@ -65,4 +65,4 @@ None specific to this release.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/skills/skills-tools.md)
+- Full feature documentation

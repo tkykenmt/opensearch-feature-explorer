@@ -67,4 +67,4 @@ on:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dashboards-dashboards-observability-search-relevance-ci-tests.md)
+- Full feature documentation

@@ -143,4 +143,4 @@ New compile dependencies:
 
 ## Related Feature Report
 
-- [Workload Management](../../../features/opensearch/opensearch-workload-management.md)
+- Workload Management

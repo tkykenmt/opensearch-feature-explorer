@@ -155,9 +155,6 @@ POST _plugins/_sql
 
 - **v2.18.0** (2024-10-29): Initial implementation - Refactored SQL plugin to use PIT API for joins and pagination queries
 
-## Related Features
-- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

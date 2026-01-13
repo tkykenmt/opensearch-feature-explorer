@@ -81,4 +81,4 @@ source=my_index | stats count() by a.keyword
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/skills/skills-tools.md)
+- Full feature documentation

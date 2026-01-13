@@ -300,9 +300,6 @@ calcite:
 - **v3.4.0** (2026-01-11): Added sort pushdown for complex expressions, sort after limit, sort on aggregation metrics, distinct count approx pushdown, case-to-range aggregation, fillnull command enhancement, YAML explain format, configurable subsearch/join limits, composite bucket size configuration, and internal map/JSON functions
 - **v3.3.0** (2025-10-01): Added single group-by optimization, filtered aggregation pushdown, limit pushdown, SUM literal optimization, earliest/latest pushdown, and auto_date_histogram support
 
-## Related Features
-- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

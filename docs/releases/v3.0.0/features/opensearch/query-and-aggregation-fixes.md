@@ -166,4 +166,4 @@ POST /index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/query-and-aggregation-fixes.md)
+- Full feature documentation

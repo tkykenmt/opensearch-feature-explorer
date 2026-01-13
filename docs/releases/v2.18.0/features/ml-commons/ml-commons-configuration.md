@@ -74,4 +74,4 @@ The ML config index schema version was incremented from 3 to 4 to trigger the se
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-configuration.md)
+- Full feature documentation

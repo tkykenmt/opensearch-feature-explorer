@@ -102,8 +102,6 @@ For Cypress testing, an alternative Docker development environment is available:
 
 - **v3.0.0** (2025-05-06): CI/CD hardening, Discover 2.0 documentation, Docker development environment, pre-commit hooks for developer docs
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

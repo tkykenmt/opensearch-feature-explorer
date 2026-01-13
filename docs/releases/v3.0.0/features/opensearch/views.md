@@ -182,4 +182,4 @@ sequenceDiagram
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-views.md)
+- Full feature documentation

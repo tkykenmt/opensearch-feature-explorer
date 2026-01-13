@@ -177,8 +177,6 @@ public class OnBehalfOfClaims {
 
 - **v3.0.0** (2024-09-17): Added On Behalf Of token passing and Service Account token issuance for extensions
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -104,4 +104,4 @@ The difference is internal - the query now executes more safely without risk of 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-automata-regex-optimization.md)
+- Full feature documentation

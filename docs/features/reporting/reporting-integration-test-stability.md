@@ -69,8 +69,6 @@ validateTimeNearRefTime(
 
 - **v2.17.0** (2024-09-17): Increased time tolerance from 1 to 3 seconds for `OnDemandReportGenerationIT`
 
-## Related Features
-- [Reporting (Dashboards)](../dashboards-reporting/dashboards-reporting.md)
 
 ## References
 

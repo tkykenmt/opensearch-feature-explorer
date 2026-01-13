@@ -168,4 +168,4 @@ Example ordering:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-semantic-version-field-type.md)
+- Full feature documentation

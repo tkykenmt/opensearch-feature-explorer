@@ -127,8 +127,6 @@ The `newExperience` DataGrid table option was removed. The `DefaultDiscoverTable
 
 - **v3.0.0** (2025-05-06): Removed deprecated CssDistFilename exports, withLongNumerals option, @elastic/filesaver dependency, and newExperience Discover table option
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

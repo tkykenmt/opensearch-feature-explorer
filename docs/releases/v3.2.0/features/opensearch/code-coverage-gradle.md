@@ -143,4 +143,4 @@ The previous commands `codeCoverageReportForUnitTest`, `codeCoverageReportForInt
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-code-coverage-gradle.md)
+- Full feature documentation

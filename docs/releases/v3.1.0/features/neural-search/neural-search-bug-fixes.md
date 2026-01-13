@@ -131,4 +131,4 @@ Fixed score values showing as `null` for single shard indices when sorting by no
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-bug-fixes.md)
+- Full feature documentation

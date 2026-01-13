@@ -149,4 +149,4 @@ This is a new feature with no migration required. To enable:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-data-importer.md)
+- Full feature documentation

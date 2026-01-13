@@ -82,4 +82,4 @@ If you have custom plugins or themes that reference `$ouiSideNavBackgroundColorT
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-oui.md)
+- Full feature documentation

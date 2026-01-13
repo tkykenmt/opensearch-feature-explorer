@@ -84,4 +84,4 @@ Admin UI settings can be configured through OpenSearch Dashboards Management →
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-assistant/dashboards-assistant-ai-assistant-chatbot.md)
+- Full feature documentation

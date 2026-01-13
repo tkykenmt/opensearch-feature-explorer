@@ -156,4 +156,4 @@ For users upgrading from OpenSearch 2.x:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

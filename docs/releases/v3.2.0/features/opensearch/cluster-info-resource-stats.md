@@ -132,4 +132,4 @@ for (Map.Entry<String, NodeResourceUsageStats> entry : resourceStats.entrySet())
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-cluster-info-resource-stats.md)
+- Full feature documentation

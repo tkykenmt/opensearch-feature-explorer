@@ -216,10 +216,6 @@ POST /my-index/_search
 - **v3.3.0** (2025-10-28): Added batch inference support for remote models with 100-1,300% performance improvements
 - **v3.0.0**: Initial implementation with single inference mode
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

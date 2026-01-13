@@ -56,4 +56,4 @@ None. Gson 2.13.2 is backward compatible with 2.11.0.
 
 ## Related Feature Report
 
-- [ML Commons Dependencies](../../../features/ml-commons/ml-commons-dependencies.md)
+- ML Commons Dependencies

@@ -148,8 +148,6 @@ i18n.translate('title', { defaultMessage: 'Workspace' });
 
 - **v2.18.0** (2024-10-22): Added preliminary translations for 14 locales, i18n validation to CI/CD workflows, precommit hook, fixed dynamic i18n usage across 12+ plugins
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

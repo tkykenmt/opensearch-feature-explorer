@@ -179,4 +179,4 @@ The improvement comes from:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-query-phase-plugin-extension.md)
+- Full feature documentation

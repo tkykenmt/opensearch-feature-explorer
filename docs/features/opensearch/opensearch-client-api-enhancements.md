@@ -154,8 +154,6 @@ client.admin().indices().refreshAsync(new RefreshRequest("my-index"))
 
 - **v3.3.0** (2025-08): Initial implementation with CompletionStage variants for Client and IndicesAdminClient interfaces
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

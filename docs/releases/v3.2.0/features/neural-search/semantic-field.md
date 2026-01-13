@@ -224,4 +224,4 @@ PUT /my-semantic-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-semantic-field.md)
+- Full feature documentation

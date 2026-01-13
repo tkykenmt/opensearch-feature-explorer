@@ -129,4 +129,4 @@ This query:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-terms-lookup-query.md)
+- Full feature documentation

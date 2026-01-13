@@ -111,4 +111,4 @@ GET /my-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-field-collapsing.md)
+- Full feature documentation

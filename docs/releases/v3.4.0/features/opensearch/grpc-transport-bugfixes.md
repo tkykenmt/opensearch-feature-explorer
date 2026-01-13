@@ -161,4 +161,4 @@ BulkRequestBody {
 
 ## Related Feature Report
 
-- [Full gRPC Transport documentation](../../../features/opensearch/opensearch-grpc-transport--services.md)
+- Full gRPC Transport documentation

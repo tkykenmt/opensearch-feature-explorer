@@ -170,4 +170,4 @@ When creating implicit judgments from UBI events, specify date range:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/search-relevance/search-relevance-workbench.md)
+- Full feature documentation

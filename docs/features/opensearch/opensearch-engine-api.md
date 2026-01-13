@@ -138,8 +138,6 @@ public enum Type {
 - **v3.4.0** (2025-12-09): Added `prepareIndex()` and `prepareDelete()` instance methods to Engine class; made `NoOpResult` constructors public; deprecated static methods on IndexShard
 - **v3.3.0** (2025-09-12): Made `setTranslogLocation()`, `setTook()`, and `freeze()` methods public to enable custom Engine implementations
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

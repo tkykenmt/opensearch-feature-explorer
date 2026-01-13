@@ -119,4 +119,4 @@ The collector creates gauge metrics that are lazily initialized and properly cle
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/performance-analyzer/performance-analyzer.md)
+- Full feature documentation

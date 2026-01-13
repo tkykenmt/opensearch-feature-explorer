@@ -193,8 +193,6 @@ PUT my-index
 
 - **v3.3.0** (2025): Added `false_allow_templates` dynamic mapping option
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -81,4 +81,4 @@ No migration required. This is a UI-only change that takes effect automatically 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-notifications/dashboards-notifications.md)
+- Full feature documentation

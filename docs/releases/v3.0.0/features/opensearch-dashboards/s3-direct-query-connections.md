@@ -124,4 +124,4 @@ await http.fetch({
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-data-connections.md)
+- Full feature documentation

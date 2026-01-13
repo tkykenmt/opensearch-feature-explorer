@@ -188,8 +188,6 @@ opensearchDashboards.keyboardShortcuts.enabled: true
 
 - **v3.3.0** (2025-09): Initial implementation with configuration, help modal, React hooks, navigation shortcuts, and query editor shortcuts
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

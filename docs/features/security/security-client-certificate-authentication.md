@@ -209,8 +209,6 @@ print(response.json())
   - Enables OpenSearch Dashboards with basic auth when client cert is required
   - Uses WildcardMatcher for flexible DN pattern matching
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

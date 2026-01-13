@@ -169,8 +169,6 @@ During sync:
 
 - **v3.2.0** (2025-06-13): Added polling for external index state detection, enabling progress tracking for background auto-refresh jobs
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

@@ -135,8 +135,6 @@ const effectiveDefault = await uiSettings.get('defaultDataSource');
 - **v3.2.0** (2026-01-10): Added backward compatibility for multi-scope settings, deprecation warnings for legacy API usage
 - **v3.1.0**: Initial multi-scope UI settings support with workspace integration
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

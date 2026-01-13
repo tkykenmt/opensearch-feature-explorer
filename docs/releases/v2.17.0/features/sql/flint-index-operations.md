@@ -106,4 +106,4 @@ After vacuum, both the OpenSearch index and the S3 checkpoint data are deleted.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-flint-index-operations.md)
+- Full feature documentation

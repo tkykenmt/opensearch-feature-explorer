@@ -86,4 +86,4 @@ Minor improvements to code quality:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-vector-search-k-nn.md)
+- Full feature documentation

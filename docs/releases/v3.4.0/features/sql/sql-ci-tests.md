@@ -138,4 +138,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-dashboards-observability-search-relevance-ci-tests.md)
+- Full feature documentation

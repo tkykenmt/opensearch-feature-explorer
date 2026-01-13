@@ -142,4 +142,4 @@ Tokens: ["+41 60 555 12 34", "41 60 555 12 34", "41605551234", "605551234", "41"
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-phone-analyzer.md)
+- Full feature documentation

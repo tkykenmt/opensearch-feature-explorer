@@ -149,8 +149,6 @@ GET _msearch/template
 
 - **v2.18.0** (2024-10-22): Added `status` field to Multi-Search Template API responses for consistency with Multi-Search API
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

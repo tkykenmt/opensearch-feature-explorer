@@ -63,8 +63,6 @@ graph TB
 
 - **v3.0.0** (2025-05-06): Version increment to 3.1.0-SNAPSHOT for reporting repository
 
-## Related Features
-- [Reporting (Dashboards)](../dashboards-reporting/dashboards-reporting.md)
 
 ## References
 

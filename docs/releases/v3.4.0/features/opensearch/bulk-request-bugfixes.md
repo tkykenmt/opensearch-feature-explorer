@@ -106,4 +106,4 @@ No migration required. This is a transparent bug fix that ensures correct behavi
 
 ## Related Feature Report
 
-- [Full Bulk API documentation](../../../features/opensearch/opensearch-bulk-api.md)
+- Full Bulk API documentation

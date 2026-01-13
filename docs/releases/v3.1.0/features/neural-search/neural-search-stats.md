@@ -198,4 +198,4 @@ Example response:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-stats.md)
+- Full feature documentation

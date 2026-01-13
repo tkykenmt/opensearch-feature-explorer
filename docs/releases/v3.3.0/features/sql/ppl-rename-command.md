@@ -128,4 +128,4 @@ source=accounts | rename *ame as *_ame, *_ame as *_AME
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-ppl-rename-command.md)
+- Full feature documentation

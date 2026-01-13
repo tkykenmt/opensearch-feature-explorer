@@ -183,4 +183,4 @@ POST /_plugins/_ml/agents/<agent_id>/_execute?async=true
 
 ## Related Feature Report
 
-- [ML Commons MCP Feature](../../../features/ml-commons/ml-commons-mcp.md)
+- ML Commons MCP Feature

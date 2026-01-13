@@ -158,8 +158,6 @@ PUT /_cluster/settings
 - **v3.4.0** (2025-10-10): Fixed bug where allocation and rebalance constraints were incorrectly reset when updating balance factors
 - **v3.0.0** (2025-05-13): Added primary shard limit settings (`total_primary_shards_per_node`) at cluster and index levels for remote store clusters; Added `primary_constraint.threshold` setting to adjust primary constraint weights
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

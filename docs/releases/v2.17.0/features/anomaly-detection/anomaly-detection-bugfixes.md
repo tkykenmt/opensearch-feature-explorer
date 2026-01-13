@@ -133,4 +133,4 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

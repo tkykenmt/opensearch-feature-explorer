@@ -119,8 +119,6 @@ public class MyPlugin extends Plugin {
 
 - **v3.0.0** (2024-07-31): Initial implementation - Added ThreadContextPermission for markAsSystemContext, stashWithOrigin, and stashAndMergeHeaders methods
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

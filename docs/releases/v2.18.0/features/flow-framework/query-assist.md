@@ -128,4 +128,4 @@ The template specifies compatibility with:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/ml-commons/ml-commons-query-assist.md)
+- Full feature documentation

@@ -109,4 +109,4 @@ No migration required. These are internal improvements that enhance user experie
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/observability/trace-analytics-bug-fixes.md)
+- Full feature documentation

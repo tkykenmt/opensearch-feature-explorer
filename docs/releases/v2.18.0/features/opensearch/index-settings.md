@@ -127,4 +127,4 @@ GET _cluster/state/metadata/my-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-index-settings.md)
+- Full feature documentation

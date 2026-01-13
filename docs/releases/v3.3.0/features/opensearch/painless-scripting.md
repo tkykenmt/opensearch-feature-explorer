@@ -121,4 +121,4 @@ No migration required. This is an additive change that enables new functionality
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-scripted-metric-aggregation.md)
+- Full feature documentation

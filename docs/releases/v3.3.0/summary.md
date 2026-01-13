@@ -50,39 +50,39 @@ graph TB
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| New Discover Experience | Redesigned interface unifying log analytics, tracing, and AI-powered visualizations | [Details](features/opensearch-dashboards/opensearch-dashboards-opensearch-dashboards-explore.md) |
-| Agentic Search (GA) | Natural language interactions with intelligent agents for query generation | [Details](features/ml-commons/ml-commons-agent-enhancements.md) |
-| Persistent Agentic Memory | AI agents learn and remember across conversations with semantic fact extraction | [Details](features/ml-commons/ml-commons-agent-enhancements.md) |
-| SEISMIC Algorithm | Sparse retrieval with up to 100x faster search latency, 90%+ recall | [Details](features/neural-search/neural-search-bug-fixes.md) |
-| Native MMR Support | Maximal Marginal Relevance for diverse, non-redundant search results | [Details](features/k-nn/k-nn-engine-enhancements.md) |
-| Late Interaction Scoring | ColBERT-style multi-vector precision with single-vector efficiency | [Details](features/k-nn/k-nn-engine-enhancements.md) |
-| Processor Chains | Flexible data transformation pipelines with 10 processor types | [Details](features/ml-commons/ml-commons-connector-enhancements.md) |
-| Discover Traces Interface | Central interface for querying and exploring distributed traces | [Details](features/opensearch-dashboards/opensearch-dashboards-traces.md) |
-| Versioned Security Configuration | Experimental version management for security configurations | [Details](features/security/versioned-security-configuration.md) |
-| Rule-based Auto-tagging | Automatic request labeling based on user attributes and index patterns | [Details](features/security/rule-based-autotagging.md) |
+| New Discover Experience | Redesigned interface unifying log analytics, tracing, and AI-powered visualizations | Details |
+| Agentic Search (GA) | Natural language interactions with intelligent agents for query generation | Details |
+| Persistent Agentic Memory | AI agents learn and remember across conversations with semantic fact extraction | Details |
+| SEISMIC Algorithm | Sparse retrieval with up to 100x faster search latency, 90%+ recall | Details |
+| Native MMR Support | Maximal Marginal Relevance for diverse, non-redundant search results | Details |
+| Late Interaction Scoring | ColBERT-style multi-vector precision with single-vector efficiency | Details |
+| Processor Chains | Flexible data transformation pipelines with 10 processor types | Details |
+| Discover Traces Interface | Central interface for querying and exploring distributed traces | Details |
+| Versioned Security Configuration | Experimental version management for security configurations | Details |
+| Rule-based Auto-tagging | Automatic request labeling based on user attributes and index patterns | Details |
 
 ## Improvements
 
 | Area | Description | Report |
 |------|-------------|--------|
-| Calcite Default Engine | Apache Calcite now default for PPL with implicit V2 fallback | [Details](features/sql/ppl-calcite-engine.md) |
-| gRPC Transport Expansion | 15+ query types including Boolean, Geo, Nested, Script queries | [Details](features/opensearch/grpc-transport.md) |
-| Star-Tree Multi-Terms | Multi-terms aggregations with up to 40x performance improvement | [Details](features/opensearch/opensearch-star-tree-index.md) |
-| Streaming Aggregations | Per-segment flushing for numeric terms and cardinality aggregations | [Details](features/opensearch/streaming-aggregation.md) |
-| Hybrid Query Performance | QueryCollectorContextSpec delivers up to 20% faster hybrid searches | [Details](features/neural-search/neural-search-bug-fixes.md) |
-| Semantic Highlighting Batch | 2x-14x performance improvement with batch inference support | [Details](features/neural-search/neural-search-bug-fixes.md) |
-| Field Data Cache | Async clearing with O(keys) complexity, preventing node drops | [Details](features/opensearch/opensearch-field-data-cache.md) |
-| WLM Dashboard Integration | Bi-directional navigation between WLM and Live Queries | [Details](features/query-insights-dashboards/workload-management-wlm.md) |
-| Resource Sharing DLS | Automatic filtering using Document Level Security | [Details](features/security/resource-sharing.md) |
-| Skip List for Date Histogram | Major performance improvements for date/scaled_float/token_count fields | [Details](features/opensearch/opensearch-skip-list.md) |
+| Calcite Default Engine | Apache Calcite now default for PPL with implicit V2 fallback | Details |
+| gRPC Transport Expansion | 15+ query types including Boolean, Geo, Nested, Script queries | Details |
+| Star-Tree Multi-Terms | Multi-terms aggregations with up to 40x performance improvement | Details |
+| Streaming Aggregations | Per-segment flushing for numeric terms and cardinality aggregations | Details |
+| Hybrid Query Performance | QueryCollectorContextSpec delivers up to 20% faster hybrid searches | Details |
+| Semantic Highlighting Batch | 2x-14x performance improvement with batch inference support | Details |
+| Field Data Cache | Async clearing with O(keys) complexity, preventing node drops | Details |
+| WLM Dashboard Integration | Bi-directional navigation between WLM and Live Queries | Details |
+| Resource Sharing DLS | Automatic filtering using Document Level Security | Details |
+| Skip List for Date Histogram | Major performance improvements for date/scaled_float/token_count fields | Details |
 
 ## Experimental Features
 
 | Feature | Description | Report |
 |---------|-------------|--------|
-| AI-Powered Discover Tools | Conversational interface for query updates and visualization creation | [Details](features/opensearch-dashboards/opensearch-dashboards-opensearch-dashboards-ai-chat.md) |
-| Apache Arrow Integration | High-performance streaming transport via Arrow Flight RPC | [Details](features/opensearch/streaming-aggregation.md) |
-| Remote Model Streaming | Real-time SSE streaming for model prediction and agent execution | [Details](features/ml-commons/ml-commons-connector-enhancements.md) |
+| AI-Powered Discover Tools | Conversational interface for query updates and visualization creation | Details |
+| Apache Arrow Integration | High-performance streaming transport via Arrow Flight RPC | Details |
+| Remote Model Streaming | Real-time SSE streaming for model prediction and agent execution | Details |
 
 ## Bug Fixes
 
@@ -99,8 +99,8 @@ graph TB
 
 | Change | Migration | Report |
 |--------|-----------|--------|
-| Calcite Default | PPL queries now use Calcite by default; set `plugins.calcite.enabled: false` to revert | [Details](features/sql/ppl-calcite-engine.md) |
-| Streaming Setting | Feature flag replaced with dynamic cluster setting `search.stream.enabled` | [Details](features/opensearch/streaming-aggregation.md) |
+| Calcite Default | PPL queries now use Calcite by default; set `plugins.calcite.enabled: false` to revert | Details |
+| Streaming Setting | Feature flag replaced with dynamic cluster setting `search.stream.enabled` | Details |
 
 ## Dependencies
 

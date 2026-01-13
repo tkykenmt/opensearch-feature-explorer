@@ -119,4 +119,4 @@ No migration required. These changes are backward compatible.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-query-assistant.md)
+- Full feature documentation

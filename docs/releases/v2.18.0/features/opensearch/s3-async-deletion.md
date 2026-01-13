@@ -108,4 +108,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [S3 Repository](../../../features/opensearch/opensearch-s3-repository.md)
+- S3 Repository

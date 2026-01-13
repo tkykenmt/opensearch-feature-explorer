@@ -141,8 +141,6 @@ PUT /_cluster/settings
 - **v3.2.0** (2026-01): Fixed issue where archived settings blocked all settings updates
 - **v2.10.0** (2023-08): Added support to clear archived index settings on closed indices
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

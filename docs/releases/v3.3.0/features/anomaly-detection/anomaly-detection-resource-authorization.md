@@ -120,4 +120,4 @@ When resource sharing is enabled:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

@@ -125,4 +125,4 @@ If upgrading from v3.3.0 or earlier with the experimental feature flag:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-segment-warmer.md)
+- Full feature documentation

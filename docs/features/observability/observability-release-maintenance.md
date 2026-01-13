@@ -59,8 +59,6 @@ The release maintenance process includes:
 
 - **v3.1.0** (2025-06-13): Version increment and release notes for both plugins
 
-## Related Features
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

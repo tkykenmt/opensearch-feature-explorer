@@ -138,4 +138,4 @@ transport.ssl.enforce_hostname_verification: false
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-bugfixes.md)
+- Full feature documentation

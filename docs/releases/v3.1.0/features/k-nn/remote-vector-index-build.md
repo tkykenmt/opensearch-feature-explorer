@@ -131,4 +131,4 @@ Users upgrading from v3.0.0 must update their cluster and index settings to use 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-remote-vector-index-build.md)
+- Full feature documentation

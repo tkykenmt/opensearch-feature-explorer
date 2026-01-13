@@ -110,8 +110,6 @@ POST my-index/_doc/1
 
 - **v3.3.0** (2025-09-12): Added `epoch_micros` date format for microsecond precision timestamps
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

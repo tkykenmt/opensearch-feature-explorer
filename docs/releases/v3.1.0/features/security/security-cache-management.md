@@ -158,4 +158,4 @@ curl -X PUT "https://localhost:9200/_cluster/settings" \
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-cache-management.md)
+- Full feature documentation

@@ -97,4 +97,4 @@ No migration required. This is a transparent bugfix that improves notification a
 
 ## Related Feature Report
 
-- [Index Management](../../../features/index-management/index-management.md)
+- Index Management

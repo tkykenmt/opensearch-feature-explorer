@@ -115,4 +115,4 @@ GET _nodes/stats/remote_store,indices
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-remote-store-metrics.md)
+- Full feature documentation

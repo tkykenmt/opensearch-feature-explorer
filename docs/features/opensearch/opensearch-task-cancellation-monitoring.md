@@ -134,8 +134,6 @@ GET _nodes/stats
 
 - **v3.0.0** (2025-05-06): Added SearchTask (coordinator-level) tracking alongside existing SearchShardTask tracking
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

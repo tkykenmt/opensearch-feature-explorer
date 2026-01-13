@@ -123,8 +123,6 @@ PUT _cluster/settings
 
 - **v3.4.0** (2026-01-14): Fixed concurrent modification in allocation filters; Added version-aware serialization for remote state entities
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

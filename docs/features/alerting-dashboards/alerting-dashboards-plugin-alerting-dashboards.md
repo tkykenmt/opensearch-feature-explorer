@@ -103,8 +103,6 @@ Bucket-level monitors support various filter operators:
 
 - **v3.4.0** (2026-01): Added keyword filter support for bucket-level monitor triggers; Fixed MDS client usage for OpenSearch API calls
 
-## Related Features
-- [Alerting](../alerting/alerting.md)
 
 ## References
 

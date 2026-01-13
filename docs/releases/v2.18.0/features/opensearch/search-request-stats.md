@@ -124,4 +124,4 @@ Response includes:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-search-request-stats.md)
+- Full feature documentation

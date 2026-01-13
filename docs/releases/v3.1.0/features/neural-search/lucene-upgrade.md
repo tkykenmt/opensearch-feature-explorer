@@ -93,4 +93,4 @@ This is an internal plugin update. No user action is required. The hybrid query 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-lucene-upgrade.md)
+- Full feature documentation

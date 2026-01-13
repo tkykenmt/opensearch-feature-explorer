@@ -108,4 +108,4 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only'
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-csp.md)
+- Full feature documentation

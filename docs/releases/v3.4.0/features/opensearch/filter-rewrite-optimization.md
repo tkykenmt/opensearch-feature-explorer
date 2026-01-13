@@ -169,4 +169,4 @@ All optimizations are enabled by default and require no configuration changes. T
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-filter-rewrite-optimization.md)
+- Full feature documentation

@@ -61,4 +61,4 @@ The release notes file follows the standard OpenSearch release notes format:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/common-utils/common-utils.md)
+- Full feature documentation

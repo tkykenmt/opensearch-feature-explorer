@@ -141,4 +141,4 @@ The `credential` and `Authorization` fields are now automatically filtered from 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/ml-commons/ml-commons-enhancements.md)
+- Full feature documentation

@@ -129,9 +129,6 @@ The data ingestion feature provides fine-grained error handling:
 
 - **v3.0.0** (2025): Added fine-grained error handling, JSON Lines format support, local cluster version detection fixes, and various UX improvements
 
-## Related Features
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
 
 ## References
 

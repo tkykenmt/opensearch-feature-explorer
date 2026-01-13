@@ -106,4 +106,4 @@ The PlainNumberAdapter ensures that numeric values like `0.001` are serialized c
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-tools.md)
+- Full feature documentation

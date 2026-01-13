@@ -162,8 +162,6 @@ POST _plugins/_replication/follower-index/_stop
 - **v2.17.0** (2024-09-17): Fixed integration tests to use correct cluster setting names after Remote Store Migration GA
 - **v1.1.0** (2021-10-05): Initial cross-cluster replication implementation
 
-## Related Features
-- [Security](../security/security-alerting-comments-security.md)
 
 ## References
 

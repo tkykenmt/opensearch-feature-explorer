@@ -99,8 +99,6 @@ PUT /_cluster/settings
 
 - **v2.18.0** (2024-10-22): Made `cluster.fault_detection.follower_check.interval`, `cluster.publish.timeout`, `cluster.follower_lag.timeout`, and `cluster.allocator.gateway.batch_size` dynamic; increased `follower_check.timeout` max from 60s to 150s
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

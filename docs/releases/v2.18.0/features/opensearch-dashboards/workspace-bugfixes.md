@@ -114,4 +114,4 @@ Workspace default index patterns no longer inherit from global settings, prevent
 
 ## Related Feature Report
 
-- [Full Workspace documentation](../../../features/opensearch-dashboards/opensearch-dashboards-workspace.md)
+- Full Workspace documentation

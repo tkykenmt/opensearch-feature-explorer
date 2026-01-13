@@ -107,4 +107,4 @@ This is an internal code change with no user-facing impact. No migration steps a
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-lucene-upgrade.md)
+- Full feature documentation

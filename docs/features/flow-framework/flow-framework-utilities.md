@@ -201,9 +201,6 @@ String mappingJson = """
 
 - **v3.2.0** (2025-08-06): Initial implementation of JsonToJsonRecommender and JsonToJsonTransformer utilities for automated JSON field mapping and transformation
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
 
 ## References
 

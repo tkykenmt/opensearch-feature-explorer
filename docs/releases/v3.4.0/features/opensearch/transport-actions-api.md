@@ -138,4 +138,4 @@ public class SecurityActionFilter implements ActionFilter {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-transport-actions-api.md)
+- Full feature documentation

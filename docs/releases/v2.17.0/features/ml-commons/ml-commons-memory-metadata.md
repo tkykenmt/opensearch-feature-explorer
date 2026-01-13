@@ -146,4 +146,4 @@ curl -X PUT "http://localhost:9200/_plugins/_ml/memory/{memory_id}" \
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/ml-commons/ml-commons-memory-metadata.md)
+- Full feature documentation

@@ -117,4 +117,4 @@ No migration required. The SDK version change is backward compatible.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-mcp.md)
+- Full feature documentation

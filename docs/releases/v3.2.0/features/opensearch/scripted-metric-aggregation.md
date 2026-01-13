@@ -104,4 +104,4 @@ No migration required. This is a bug fix that enables previously failing queries
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-scripted-metric-aggregation.md)
+- Full feature documentation

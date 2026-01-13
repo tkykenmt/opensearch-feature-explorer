@@ -157,8 +157,6 @@ flowchart TB
 - **v3.3.0** (2025-10-09): Fixed incorrect rewriting of terms query with more than 2 consecutive whole numbers in `must_not` clauses
 - **v2.17.0**: Added bitmap filtering support for efficient large-scale term filtering
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

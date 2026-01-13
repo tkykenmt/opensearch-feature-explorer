@@ -87,4 +87,4 @@ GET /_nodes?filter_path=nodes.*.version,nodes.*.build_hash
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-lucene-upgrade.md)
+- Full feature documentation

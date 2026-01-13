@@ -109,4 +109,4 @@ For NFW integration, the warning messages are now hidden and empty indexes displ
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/observability/trace-analytics-bug-fixes.md)
+- Full feature documentation

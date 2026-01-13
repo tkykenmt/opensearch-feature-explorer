@@ -76,4 +76,4 @@ No user-facing changes. This is an internal test fix.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/test-fixes.md)
+- Full feature documentation

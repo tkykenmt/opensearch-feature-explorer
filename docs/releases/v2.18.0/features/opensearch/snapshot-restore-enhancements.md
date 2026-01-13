@@ -104,4 +104,4 @@ flowchart TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-snapshot-restore-enhancements.md)
+- Full feature documentation

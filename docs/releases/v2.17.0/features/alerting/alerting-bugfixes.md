@@ -96,4 +96,4 @@ Removed the `workspaceAvailability` field from the plugin configuration, which w
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/alerting/alerting.md)
+- Full feature documentation

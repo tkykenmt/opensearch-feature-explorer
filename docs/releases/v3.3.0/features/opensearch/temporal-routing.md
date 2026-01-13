@@ -168,4 +168,4 @@ The search is routed only to shards containing `2023-12-15` data.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-temporal-routing.md)
+- Full feature documentation

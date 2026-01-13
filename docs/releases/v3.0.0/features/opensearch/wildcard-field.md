@@ -138,4 +138,4 @@ GET logs/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-wildcard-field.md)
+- Full feature documentation

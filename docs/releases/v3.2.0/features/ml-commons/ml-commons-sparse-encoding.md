@@ -141,4 +141,4 @@ POST _plugins/_ml/models/<sparse_model_id>/_predict
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-sparse-encoding.md)
+- Full feature documentation

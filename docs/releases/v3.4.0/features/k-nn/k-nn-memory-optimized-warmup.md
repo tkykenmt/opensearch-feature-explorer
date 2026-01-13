@@ -118,4 +118,4 @@ No migration is required. The warmup API automatically uses the new optimized st
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-memory-optimized-warmup.md)
+- Full feature documentation

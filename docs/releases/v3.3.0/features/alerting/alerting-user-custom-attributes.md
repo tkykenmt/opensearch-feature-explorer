@@ -137,4 +137,4 @@ POST _plugins/_alerting/monitors
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/alerting/alerting.md)
+- Full feature documentation

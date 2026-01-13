@@ -108,4 +108,4 @@ POST _ltr/_featureset/my_features/_createmodel
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/learning/learning-to-rank.md)
+- Full feature documentation

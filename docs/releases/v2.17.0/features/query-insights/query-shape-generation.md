@@ -178,4 +178,4 @@ sort:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/query-insights/query-insights.md)
+- Full feature documentation

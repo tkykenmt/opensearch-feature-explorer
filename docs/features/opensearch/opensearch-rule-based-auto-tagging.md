@@ -224,8 +224,6 @@ When evaluating a request:
 
 - **v3.0.0** (2025-03-11): Initial implementation with rule schema, Patricia Trie-based storage, and rule processing service
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

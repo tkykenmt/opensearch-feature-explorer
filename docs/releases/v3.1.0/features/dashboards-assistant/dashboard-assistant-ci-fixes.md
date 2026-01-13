@@ -72,4 +72,4 @@ module.exports = function (api) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-assistant/dashboards-assistant-ci-configuration.md)
+- Full feature documentation

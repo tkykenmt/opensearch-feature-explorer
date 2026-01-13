@@ -112,4 +112,4 @@ With this fix, users can now create bucket-level monitor triggers with keyword f
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/alerting-dashboards-plugin/alerting-dashboards-plugin-alerting-dashboards.md)
+- Full feature documentation

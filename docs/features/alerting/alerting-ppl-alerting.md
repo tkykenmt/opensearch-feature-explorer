@@ -274,10 +274,6 @@ POST /_plugins/_alerting/v2/monitors
 
 - **v3.4.0** (2025): Initial implementation of PPL Alerting with V2 API layer, PPLSQLMonitor, AlertV2 model, and complete CRUD operations
 
-## Related Features
-- [Notifications](../notifications/notifications-plugin.md)
-- [Anomaly Detection](../anomaly-detection/anomaly-detection.md)
-- [Common Utils](../common-utils/common-utils.md)
 
 ## References
 

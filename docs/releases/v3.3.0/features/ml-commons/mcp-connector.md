@@ -189,4 +189,4 @@ POST /_plugins/_ml/mcp/stream
 
 ## Related Feature Report
 
-- [Full MCP feature documentation](../../../features/ml-commons/ml-commons-mcp.md)
+- Full MCP feature documentation

@@ -111,4 +111,4 @@ For plugin developers extending neural-search:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-compatibility.md)
+- Full feature documentation

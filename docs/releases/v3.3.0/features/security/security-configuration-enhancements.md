@@ -127,4 +127,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Security Configuration](../../../features/security/security-configuration.md)
+- Security Configuration

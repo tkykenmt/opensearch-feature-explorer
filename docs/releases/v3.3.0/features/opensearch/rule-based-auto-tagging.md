@@ -145,4 +145,4 @@ When multiple rules match a request, the system uses priority-based scoring:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-workload-management.md)
+- Full feature documentation

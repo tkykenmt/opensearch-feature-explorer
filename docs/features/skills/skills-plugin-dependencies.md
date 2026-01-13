@@ -74,9 +74,6 @@ The Skills plugin follows automated dependency management using Mend (formerly W
 ## Change History
 - **v2.18.0** (2024-10-29): Updated Mockito to 5.14.2, JUnit5 to 5.11.2, ByteBuddy to 1.15.4, Gradle to 8.10.2, Lombok plugin to 8.10.2; Fixed test failures from AnomalyDetector API changes
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
 
 ## References
 

@@ -131,4 +131,4 @@ plugins:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-plugin.md)
+- Full feature documentation

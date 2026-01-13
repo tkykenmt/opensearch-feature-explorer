@@ -125,4 +125,4 @@ To adopt this feature:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-dynamic-mapping.md)
+- Full feature documentation

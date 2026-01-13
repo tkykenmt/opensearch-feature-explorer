@@ -127,4 +127,4 @@ PUT _snapshot/my-repo
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-segment-warmer.md)
+- Full feature documentation

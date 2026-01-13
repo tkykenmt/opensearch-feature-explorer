@@ -70,4 +70,4 @@ Users can manually refresh or adjust the auto-refresh interval through the UI co
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/query-insights/query-insights.md)
+- Full feature documentation

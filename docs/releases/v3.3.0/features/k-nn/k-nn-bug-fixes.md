@@ -152,4 +152,4 @@ GET /my-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-bug-fixes.md)
+- Full feature documentation

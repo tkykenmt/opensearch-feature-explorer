@@ -184,8 +184,6 @@ GET /sales/_search
 
 - **v3.0.0** (2025-04): Initial implementation for DateHistogramAggregator and GlobalOrdinalValuesSource
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

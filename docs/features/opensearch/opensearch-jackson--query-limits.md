@@ -138,8 +138,6 @@ If nesting exceeds `index.query.max_nested_depth`, an `IllegalArgumentException`
 
 - **v3.0.0** (2025-05-06): Initial implementation - Jackson 2.16.x XContent constraints and nested query depth limit
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

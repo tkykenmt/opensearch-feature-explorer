@@ -170,4 +170,4 @@ With schema defining `inputText` as string type, the value `"5.11"` is correctly
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-connector-model-validation.md)
+- Full feature documentation

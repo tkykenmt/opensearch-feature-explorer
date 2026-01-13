@@ -110,4 +110,4 @@ Users running the demo scripts should note:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/search-relevance/search-relevance-workbench.md)
+- Full feature documentation

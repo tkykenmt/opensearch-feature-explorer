@@ -102,4 +102,4 @@ After enabling, new detectors will create dedicated query indices with pattern:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security-analytics/security-analytics-system-indices.md)
+- Full feature documentation

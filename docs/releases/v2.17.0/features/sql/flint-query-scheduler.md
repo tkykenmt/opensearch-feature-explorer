@@ -143,4 +143,4 @@ WITH (auto_refresh = false);
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-flint-query-scheduler.md)
+- Full feature documentation

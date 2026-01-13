@@ -64,4 +64,4 @@ This is an internal plugin update. No user action is required. The Learning to R
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/learning/learning-to-rank.md)
+- Full feature documentation

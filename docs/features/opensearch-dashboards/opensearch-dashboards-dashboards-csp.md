@@ -133,8 +133,6 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 - **v3.4.0** (2026-01): Added dynamic configuration support for CSP-Report-Only `isEmitting` setting
 - **v2.13.0**: Initial implementation of dynamic CSP configuration for `frame-ancestors` directive
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

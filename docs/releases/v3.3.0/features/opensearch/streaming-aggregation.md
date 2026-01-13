@@ -160,4 +160,4 @@ GET /my-index/_search?stream=true
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-streaming-transport-aggregation.md)
+- Full feature documentation

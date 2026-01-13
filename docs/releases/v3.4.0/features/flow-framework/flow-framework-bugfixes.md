@@ -94,4 +94,4 @@ Users who previously worked around this issue by manually overriding the dimensi
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/flow-framework/flow-framework.md)
+- Full feature documentation

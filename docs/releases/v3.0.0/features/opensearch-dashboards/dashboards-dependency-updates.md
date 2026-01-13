@@ -102,4 +102,4 @@ For plugin developers using Vega:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dependency-updates.md)
+- Full feature documentation

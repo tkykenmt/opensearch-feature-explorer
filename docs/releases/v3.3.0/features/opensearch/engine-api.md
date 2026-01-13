@@ -102,4 +102,4 @@ No migration required. This is a backward-compatible change that only increases 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-engine-api.md)
+- Full feature documentation

@@ -89,8 +89,6 @@ publishing {
 
 - **v3.2.0** (2025-08-04): Maven snapshot publishing migration to Central Portal, Gradle 8.14.3 upgrade, JDK 24 CI support
 
-## Related Features
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

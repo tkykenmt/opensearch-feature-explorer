@@ -314,12 +314,11 @@ sequenceDiagram
 - **v2.18.0** (2024-10-29): Added rate limiting, connector credential support, model group access control, and default action types
 - **v2.17.0** (2024-09-17): Initial implementation with S3 and OpenAI data source support, JSONPath field mapping, and batch job status tracking
 
-## Related Features
-- [Batch Ingestion (Ingest Pipeline)](../neural-search/neural-search-batch-ingestion.md) - Different feature: batch processing in ingest pipelines
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
+ - Different feature: batch processing in ingest pipelines
+- Neural Search
+- Flow Framework
+- AI Assistant (Dashboards)
+- Skills
 
 ## References
 

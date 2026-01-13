@@ -151,8 +151,6 @@ A value of `19.99` with `scaling_factor: 100` is stored as `1999`.
 
 - **v3.2.0** (2025-08): Fixed field-level `ignore_malformed` to properly override index-level setting; Fixed `scaled_float` `encodePoint` method bug
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

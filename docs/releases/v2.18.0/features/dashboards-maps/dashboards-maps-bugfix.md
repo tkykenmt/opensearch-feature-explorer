@@ -83,4 +83,4 @@ No migration required. This is a visual bug fix that takes effect automatically.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-maps/dashboards-maps-maps-plugin-ui-updates.md)
+- Full feature documentation

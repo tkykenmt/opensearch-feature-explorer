@@ -126,8 +126,6 @@ This approach handles:
 
 - **v3.3.0** (2025-09-29): Added fallback logic to use `ssl_engine` attribute when `ssl_handler` is unavailable or incompatible with reactor-netty4 transport
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 
