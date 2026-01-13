@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Date Sorting Overflow Prevention
 - Bitmap Filtering Performance Improvement
 - Build Infrastructure
 - CI Fixes
