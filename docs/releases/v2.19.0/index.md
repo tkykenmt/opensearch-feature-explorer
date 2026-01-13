@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Append Only Indices
 - Auto Date Histogram Bug Fix
 - Date Sorting Overflow Prevention
 - Bitmap Filtering Performance Improvement
