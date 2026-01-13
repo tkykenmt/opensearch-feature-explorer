@@ -85,6 +85,7 @@
 - CVE Fixes
 - JWT Authentication Bug Fixes
 - Security Audit Logging
+- Security Certificates
 - Security Identity Plugin
 - Security Netty
 - Security Privilege Evaluation
