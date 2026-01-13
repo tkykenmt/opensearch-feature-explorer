@@ -172,6 +172,7 @@ opensearch_security.multitenancy.enabled: false
 - **v3.4.0** (2026-02-18): Removed restriction requiring data source selection during workspace creation; workspaces can now be created without associated data sources
 - **v3.3.0** (2026-01-14): Added batch delete method for workspaces with improved error handling and detailed success/failure notifications
 - **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
+- **v2.19.0** (2025-01-09): Added two-step loading for data source association modal, improving performance when data sources have many direct query connections
 - **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements
 
 
@@ -194,6 +195,7 @@ opensearch_security.multitenancy.enabled: false
 | v3.0.0 | [#9420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9420) | Fix saved objects find returning all workspaces |   |
 | v3.0.0 | [#9346](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9346) | Filter out recent items with errors | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.0.0 | [#9478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9478) | Add error handling page for stale workspace state |   |
+| v2.19.0 | [#8999](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8999) | Add two-steps loading for associating data sources |   |
 | v2.18.0 | [#8500](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8500) | Workspace-level UI settings and hide non-global settings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8594](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8594) | Add workspace collaborators page |   |
 | v2.18.0 | [#8486](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8486) | Add WorkspaceCollaboratorTypesService and AddCollaboratorsModal |   |
