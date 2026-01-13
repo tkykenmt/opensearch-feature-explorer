@@ -69,6 +69,8 @@ flowchart TB
 | `NormalizationProcessor` | Search pipeline processor for score normalization |
 | `ScoreCombinationTechnique` | Combines normalized scores |
 | `RRFScoreCombinationTechnique` | RRF combination with custom weight support |
+| `ScoreRankerProcessor` | Phase results processor for RRF-based ranking |
+| `ExplanationResponseProcessor` | Response processor for hybrid query explain output |
 | `ZScoreNormalizationTechnique` | Z-Score based normalization |
 | `SemanticHighlighter` | ML-based semantic highlighting for hybrid results |
 | `NeuralStatsAction` | Stats API for neural search observability |
@@ -123,8 +125,10 @@ PUT /_search/pipeline/hybrid-pipeline
 | `normalization.technique` | Score normalization method (`min_max`, `l2`, `z_score`) | `min_max` |
 | `normalization.parameters.lower_bounds` | Lower bound configuration per sub-query | None |
 | `normalization.parameters.upper_bounds` | Upper bound configuration per sub-query | None |
-| `combination.technique` | Score combination method (`arithmetic_mean`, `geometric_mean`, `harmonic_mean`) | `arithmetic_mean` |
+| `combination.technique` | Score combination method (`arithmetic_mean`, `geometric_mean`, `harmonic_mean`, `rrf`) | `arithmetic_mean` |
 | `combination.parameters.weights` | Weights for each sub-query | Equal weights |
+| `combination.parameters.rank_constant` | Constant added to rank in RRF calculation (must be ≥1) | `60` |
+| `pagination_depth` | Reference depth for hybrid query pagination | None |
 | `index.neural_search.hybrid_collapse_docs_per_group_per_subquery` | Documents stored per group per sub-query in collapse | `0` |
 
 #### Lower Bounds Modes
@@ -194,7 +198,8 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## Limitations
 
-- **Explain API**: The `explain` parameter is not fully supported for hybrid queries (partial support added in v3.1.0).
+- **Scroll operation**: Scroll is not supported with hybrid queries; use pagination instead.
+- **Explain API**: The `explain` parameter is not fully supported for hybrid queries (partial support added in v2.19.0 for search-level explain; explain by document ID is not supported).
 - **Nested queries**: Hybrid queries cannot be nested inside other compound queries.
 - **Nested filter**: Nested HybridQueryBuilder does not support the filter function.
 - **Concurrent segment search**: Results may vary due to non-deterministic merge order when concurrent segment search is enabled.
@@ -209,6 +214,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - **v3.2.0** (2026-01-14): Upper bound parameter for min-max normalization, inner hits support within collapse, configurable collapse document storage setting, HybridQueryDocIdStream bug fix
 - **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support; Bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability improvements
 - **v3.0.0** (2025-05-13): Z-Score normalization, lower bounds for min-max, filter support, inner hits, Stats API, semantic highlighter, analyzer-based neural sparse query, optimized embedding generation
+- **v2.19.0** (2025-02-18): Pagination support with `pagination_depth` parameter, Reciprocal Rank Fusion (RRF) via `score-ranker-processor`, explainability with `explain` flag and `explanation_response_processor`; Bug fixes for inconsistent scoring with two-phase iterators and sorted hybrid query field mismatch
 - **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
 - **v2.11.0** (2023-10-16): Initial implementation of hybrid search
@@ -219,6 +225,9 @@ GET /_plugins/_neural/stats/text_embedding_executions
 ### Documentation
 - [Hybrid Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/index/)
 - [Collapsing Hybrid Query Results](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)
+- [Paginating Hybrid Query Results](https://docs.opensearch.org/2.19/vector-search/ai-search/hybrid-search/pagination/)
+- [Hybrid Search Explain](https://docs.opensearch.org/2.19/vector-search/ai-search/hybrid-search/explain/)
+- [Score Ranker Processor](https://docs.opensearch.org/2.19/search-plugins/search-pipelines/score-ranker-processor/)
 - [Hybrid Query DSL](https://docs.opensearch.org/3.1/query-dsl/compound/hybrid/)
 - [Neural Search API](https://docs.opensearch.org/3.1/vector-search/api/neural/)
 - [Normalization Processor](https://docs.opensearch.org/3.1/search-plugins/search-pipelines/normalization-processor/)
@@ -254,6 +263,11 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v3.0.0 | [#1191](https://github.com/opensearch-project/neural-search/pull/1191) | Optimize embedding generation in Text Embedding Processor | [#1138](https://github.com/opensearch-project/neural-search/issues/1138) |
 | v3.0.0 | [#1246](https://github.com/opensearch-project/neural-search/pull/1246) | Optimize embedding generation in Sparse Encoding Processor | [#1138](https://github.com/opensearch-project/neural-search/issues/1138) |
 | v3.0.0 | [#1249](https://github.com/opensearch-project/neural-search/pull/1249) | Optimize embedding generation in Text/Image Embedding Processor | [#1138](https://github.com/opensearch-project/neural-search/issues/1138) |
+| v2.19.0 | [#1048](https://github.com/opensearch-project/neural-search/pull/1048) | Pagination in Hybrid query | [#280](https://github.com/opensearch-project/neural-search/issues/280) |
+| v2.19.0 | [#874](https://github.com/opensearch-project/neural-search/pull/874) | Reciprocal Rank Fusion (RRF) normalization technique | [#865](https://github.com/opensearch-project/neural-search/issues/865), [#659](https://github.com/opensearch-project/neural-search/issues/659) |
+| v2.19.0 | [#970](https://github.com/opensearch-project/neural-search/pull/970) | Explainability in hybrid query | [#658](https://github.com/opensearch-project/neural-search/issues/658), [#905](https://github.com/opensearch-project/neural-search/issues/905) |
+| v2.19.0 | [#998](https://github.com/opensearch-project/neural-search/pull/998) | Address inconsistent scoring in hybrid query results | [#964](https://github.com/opensearch-project/neural-search/issues/964) |
+| v2.19.0 | [#1043](https://github.com/opensearch-project/neural-search/pull/1043) | Fixed document source and score field mismatch in sorted hybrid queries | [#1044](https://github.com/opensearch-project/neural-search/issues/1044) |
 | v2.18.0 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query | [#955](https://github.com/opensearch-project/neural-search/issues/955) |
 | v2.17.0 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removed misleading pagination code, added clear error |   |
 | v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results | [#875](https://github.com/opensearch-project/neural-search/issues/875) |
@@ -270,6 +284,12 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - [Issue #1196](https://github.com/opensearch-project/neural-search/issues/1196): Stats API RFC
 - [Issue #875](https://github.com/opensearch-project/neural-search/issues/875): Unable to merge results from shards
 - [Issue #280](https://github.com/opensearch-project/neural-search/issues/280): Pagination support tracking
+- [Issue #658](https://github.com/opensearch-project/neural-search/issues/658): Hybrid search explainability request
+- [Issue #659](https://github.com/opensearch-project/neural-search/issues/659): RRF normalization request
+- [Issue #865](https://github.com/opensearch-project/neural-search/issues/865): RRF implementation tracking
+- [Issue #905](https://github.com/opensearch-project/neural-search/issues/905): Explainability RFC
+- [Issue #964](https://github.com/opensearch-project/neural-search/issues/964): Inconsistent scoring bug
+- [Issue #1044](https://github.com/opensearch-project/neural-search/issues/1044): Sorted hybrid query mismatch bug
 - [Issue #1210](https://github.com/opensearch-project/neural-search/issues/1210): Upper bound in min-max normalization request
 - [Issue #1379](https://github.com/opensearch-project/neural-search/issues/1379): Inner hits compatibility with collapse request
 - [Issue #1381](https://github.com/opensearch-project/neural-search/issues/1381): Collapse document storage setting request
