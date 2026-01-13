@@ -1,5 +1,7 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - ml
@@ -8,7 +10,6 @@ tags:
   - search
   - security
 ---
-
 # Version Bumps & Release Notes
 
 ## Summary

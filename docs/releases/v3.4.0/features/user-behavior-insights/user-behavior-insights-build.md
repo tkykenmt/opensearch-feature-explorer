@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
 ---
-
 # User Behavior Insights Build
 
 ## Summary

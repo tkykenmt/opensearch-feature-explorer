@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - search
 ---
-
 # Derived Source Integration
 
 ## Summary

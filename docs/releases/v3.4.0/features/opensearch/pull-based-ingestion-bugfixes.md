@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
 ---
-
 # Pull-based Ingestion Bugfixes
 
 ## Summary

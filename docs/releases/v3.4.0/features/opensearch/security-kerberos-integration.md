@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - security
 ---
-
 # Security Kerberos Integration
 
 ## Summary

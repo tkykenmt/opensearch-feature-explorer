@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - observability
   - sql
 ---
-
 # PPL Alerting
 
 ## Summary

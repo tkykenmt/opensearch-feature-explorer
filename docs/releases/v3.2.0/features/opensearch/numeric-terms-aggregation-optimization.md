@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
   - search
 ---
-
 # Numeric Terms Aggregation Optimization
 
 ## Summary

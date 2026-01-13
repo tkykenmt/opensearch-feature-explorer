@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - search
 ---
-
 # Search Relevance Test Data
 
 ## Summary

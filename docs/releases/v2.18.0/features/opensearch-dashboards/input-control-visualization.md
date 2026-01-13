@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
 ---
-
 # Input Control Visualization Bugfix
 
 ## Summary

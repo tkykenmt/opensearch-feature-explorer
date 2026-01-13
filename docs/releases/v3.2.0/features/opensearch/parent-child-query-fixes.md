@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
   - neural-search
   - search
 ---
-
 # Parent-Child Query Fixes
 
 ## Summary

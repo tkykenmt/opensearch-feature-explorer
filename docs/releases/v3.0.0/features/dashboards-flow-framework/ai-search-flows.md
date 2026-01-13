@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - indexing
   - k-nn
   - ml
   - search
 ---
-
 # AI Search Flows
 
 ## Summary

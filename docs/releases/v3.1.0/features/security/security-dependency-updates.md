@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - dashboards
   - observability
   - security
 ---
-
 # Security Dependency Updates
 
 ## Summary

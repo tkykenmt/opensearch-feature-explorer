@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/geo
+  - component/dashboards
   - dashboards
 ---
-
 # Dashboards Maps Bugfix
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - indexing
   - security
 ---
-
 # Threat Intel Bugfixes
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - k-nn
   - ml
   - search
 ---
-
 # ML Commons Blueprints & Tutorials
 
 ## Summary

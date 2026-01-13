@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
   - search
 ---
-
 # Lucene Similarity
 
 ## Summary

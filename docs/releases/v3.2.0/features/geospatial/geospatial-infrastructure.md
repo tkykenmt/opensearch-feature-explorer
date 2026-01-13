@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/geo
+  - component/server
   - security
 ---
-
 # Geospatial Infrastructure
 
 ## Summary

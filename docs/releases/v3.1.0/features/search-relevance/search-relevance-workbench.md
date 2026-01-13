@@ -1,5 +1,7 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - dashboards
   - indexing
   - ml
@@ -8,7 +10,6 @@ tags:
   - search
   - security
 ---
-
 # Search Relevance Workbench
 
 ## Summary

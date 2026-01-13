@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - dashboards
   - indexing
   - ml
   - security
 ---
-
 # ML Commons Enhancements
 
 ## Summary

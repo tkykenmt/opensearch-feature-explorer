@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
 ---
-
 # Percentiles Aggregation Performance Improvement
 
 ## Summary

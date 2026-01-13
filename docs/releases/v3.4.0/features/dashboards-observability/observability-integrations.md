@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - observability
   - security
 ---
-
 # Observability Integrations
 
 ## Summary

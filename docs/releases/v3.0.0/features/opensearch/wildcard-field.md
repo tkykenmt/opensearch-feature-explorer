@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
   - search
 ---
-
 # Wildcard Field 3-gram Indexing Optimization
 
 ## Summary

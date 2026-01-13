@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - ml
   - security
 ---
-
 # Java Agent Build Fix
 
 ## Summary

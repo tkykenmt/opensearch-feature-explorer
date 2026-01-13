@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - observability
   - performance
   - search
   - security
 ---
-
 # Alerting Doc-Level Monitor Bugfixes
 
 ## Summary

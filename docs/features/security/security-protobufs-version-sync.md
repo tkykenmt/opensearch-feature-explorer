@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - security
 ---
-
 # Protobufs Version Synchronization
 
 ## Summary

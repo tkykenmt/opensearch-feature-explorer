@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/dashboards
   - dashboards
   - performance
   - security
 ---
-
 # Security Analytics Data Source
 
 ## Summary

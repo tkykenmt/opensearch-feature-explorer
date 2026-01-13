@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - k-nn
   - ml
   - neural-search
   - search
 ---
-
 # Neural Search Enhancements
 
 ## Summary

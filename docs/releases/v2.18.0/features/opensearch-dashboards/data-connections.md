@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - search
   - security
 ---
-
 # Data Connections - Dataset Picker Support
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - indexing
   - ml
   - search
   - security
 ---
-
 # Threat Intelligence
 
 ## Summary

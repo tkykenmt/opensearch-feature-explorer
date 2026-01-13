@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/geo
+  - component/dashboards
   - dashboards
 ---
-
 # Maps Plugin UI Updates
 
 ## Summary

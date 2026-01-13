@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - dashboards
   - security
 ---
-
 # Security Auth Enhancements
 
 ## Summary

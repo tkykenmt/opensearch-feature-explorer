@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - k-nn
   - performance
   - search
 ---
-
 # Thread Pool
 
 ## Summary

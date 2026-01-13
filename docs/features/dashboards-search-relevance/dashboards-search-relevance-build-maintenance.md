@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Dashboards Search Relevance Build Maintenance
 
 ## Summary

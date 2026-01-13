@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - neural-search
   - performance
   - search
 ---
-
 # Hybrid Query Collapse
 
 ## Summary

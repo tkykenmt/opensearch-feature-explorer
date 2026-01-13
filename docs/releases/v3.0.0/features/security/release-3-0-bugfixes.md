@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - security
 ---
-
 # Security Plugin Bugfixes for Release 3.0
 
 ## Summary

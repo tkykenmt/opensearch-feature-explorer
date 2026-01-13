@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - search
   - security
   - sql
 ---
-
 # Dashboards Data Connections
 
 ## Summary

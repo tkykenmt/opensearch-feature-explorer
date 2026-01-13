@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - observability
   - performance
 ---
-
 # k-NN Testing Infrastructure
 
 ## Summary

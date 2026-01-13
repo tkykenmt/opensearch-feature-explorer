@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # Rule-based Auto Tagging
 
 ## Summary

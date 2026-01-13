@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - ml
   - observability
   - security
 ---
-
 # Anomaly Detection Enhancements
 
 ## Summary

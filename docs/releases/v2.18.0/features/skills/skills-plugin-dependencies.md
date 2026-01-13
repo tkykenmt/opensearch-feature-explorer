@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - performance
   - security
 ---
-
 # Skills Plugin Dependencies
 
 ## Summary

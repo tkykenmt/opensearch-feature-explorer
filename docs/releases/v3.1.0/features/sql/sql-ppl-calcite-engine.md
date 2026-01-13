@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - observability
   - performance
   - search
   - sql
 ---
-
 # SQL/PPL Calcite Engine
 
 ## Summary

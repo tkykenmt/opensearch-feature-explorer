@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - performance
   - search
   - sql
 ---
-
 # SQL/PPL Aggregation Pushdown
 
 ## Summary

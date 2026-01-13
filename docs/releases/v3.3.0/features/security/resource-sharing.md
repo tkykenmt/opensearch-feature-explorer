@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - dashboards
   - performance
   - search
   - security
 ---
-
 # Resource Sharing Bug Fixes and Enhancements
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - search
   - sql
 ---
-
 # ML Skills Text2Spark PPL
 
 ## Summary

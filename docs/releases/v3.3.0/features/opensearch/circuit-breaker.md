@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # Circuit Breaker Hardening in Query Result Consumer
 
 ## Summary

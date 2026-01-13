@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - indexing
   - search
 ---
-
 # Search API Tracker
 
 ## Summary

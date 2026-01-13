@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # Node Join/Leave Race Condition Fix
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - security
 ---
-
 # Snapshot Management Enhancements
 
 ## Summary

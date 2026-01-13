@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - observability
   - sql
 ---
-
 # SQL/PPL General Enhancements
 
 ## Summary

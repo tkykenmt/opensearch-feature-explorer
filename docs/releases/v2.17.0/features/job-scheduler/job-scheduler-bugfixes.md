@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
 ---
-
 # Job Scheduler Bugfixes
 
 ## Summary

@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - security
 ---
-
 # Security FIPS Compliance
 
 ## Summary

@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
 ---
-
 # Bulk Request Bugfixes
 
 ## Summary

@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - ml
   - observability
   - search
 ---
-
 # Version Increment
 
 ## Summary

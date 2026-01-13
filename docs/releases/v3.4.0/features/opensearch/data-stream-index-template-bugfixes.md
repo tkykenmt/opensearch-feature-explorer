@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
 ---
-
 # Data Stream & Index Template Bugfixes
 
 ## Summary

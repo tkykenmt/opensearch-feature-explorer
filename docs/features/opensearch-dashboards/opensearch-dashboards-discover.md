@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - ml
   - search
   - sql
 ---
-
 # Discover
 
 ## Summary

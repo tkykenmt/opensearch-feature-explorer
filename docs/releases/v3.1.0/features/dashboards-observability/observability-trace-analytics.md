@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - indexing
   - observability
   - search
 ---
-
 # Observability Trace Analytics
 
 ## Summary

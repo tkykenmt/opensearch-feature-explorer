@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - search
 ---
-
 # OpenSearch Dashboards Bug Fixes
 
 ## Summary

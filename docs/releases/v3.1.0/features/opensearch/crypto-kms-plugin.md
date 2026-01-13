@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - security
 ---
-
 # Crypto/KMS Plugin
 
 ## Summary

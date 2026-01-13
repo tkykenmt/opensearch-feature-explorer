@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - search
 ---
-
 # ML Inference Processor - One-to-One Support
 
 ## Summary

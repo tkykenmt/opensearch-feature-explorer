@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
 ---
-
 # ML Commons Release Notes and Documentation
 
 ## Summary

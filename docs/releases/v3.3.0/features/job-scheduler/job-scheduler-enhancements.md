@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - observability
   - security
 ---
-
 # Job Scheduler Enhancements
 
 ## Summary

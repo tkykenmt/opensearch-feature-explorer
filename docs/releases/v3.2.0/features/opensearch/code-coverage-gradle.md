@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
 ---
-
 # Code Coverage (Gradle)
 
 ## Summary

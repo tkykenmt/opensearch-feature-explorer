@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - search
 ---
-
 # Learning to Rank Fixes
 
 ## Summary

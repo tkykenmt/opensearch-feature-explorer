@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - neural-search
   - performance
   - search
 ---
-
 # Neural Search Stats
 
 ## Summary

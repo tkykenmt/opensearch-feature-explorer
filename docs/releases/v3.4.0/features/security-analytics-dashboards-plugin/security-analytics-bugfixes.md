@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/dashboards
   - dashboards
   - search
   - security
 ---
-
 # Security Analytics Bugfixes
 
 ## Summary

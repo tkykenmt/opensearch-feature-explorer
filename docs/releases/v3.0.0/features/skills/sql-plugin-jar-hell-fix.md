@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - sql
 ---
-
 # SQL Plugin Jar Hell Fix
 
 ## Summary

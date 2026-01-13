@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - ml
   - observability
   - performance
   - search
 ---
-
 # Query Insights Enhancements
 
 ## Summary

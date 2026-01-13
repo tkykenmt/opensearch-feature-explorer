@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
 ---
-
 # Repository Encryption
 
 ## Summary

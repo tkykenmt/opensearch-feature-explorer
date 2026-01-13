@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - security
 ---
-
 # Docker Image Updates
 
 ## Summary

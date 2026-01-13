@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - dashboards
   - indexing
   - ml
   - security
 ---
-
 # Resource Access Control Framework
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - performance
   - search
   - security
 ---
-
 # Query CI/CD
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Dashboards Assistant
 
 ## Summary

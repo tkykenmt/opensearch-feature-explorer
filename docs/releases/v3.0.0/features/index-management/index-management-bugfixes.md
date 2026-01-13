@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - ml
   - security
 ---
-
 # Index Management Bugfixes
 
 ## Summary

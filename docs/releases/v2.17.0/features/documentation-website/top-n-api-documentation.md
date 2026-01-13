@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
   - search
 ---
-
 # Query Insights Top N API Documentation Update
 
 ## Summary

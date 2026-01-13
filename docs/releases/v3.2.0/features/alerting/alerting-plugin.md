@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - observability
   - search
 ---
-
 # Alerting Plugin
 
 ## Summary

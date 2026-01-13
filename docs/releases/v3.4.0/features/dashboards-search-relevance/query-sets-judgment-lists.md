@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - search
 ---
-
 # Query Sets & Judgment Lists
 
 ## Summary

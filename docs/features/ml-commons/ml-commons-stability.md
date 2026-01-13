@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - search
 ---
-
 # ML Commons Stability and Reliability
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Dashboards i18n
 
 ## Summary

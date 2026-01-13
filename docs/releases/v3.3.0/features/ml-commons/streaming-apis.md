@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
 ---
-
 # Streaming APIs
 
 ## Summary

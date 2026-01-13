@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - ml
   - performance
 ---
-
 # AI Assistant / Chatbot
 
 ## Summary

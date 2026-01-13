@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - dashboards
   - indexing
   - search
 ---
-
 # Search Comparison (Compare Search Results)
 
 ## Summary

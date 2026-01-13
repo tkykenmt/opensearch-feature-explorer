@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - security
 ---
-
 # WLM Security Attributes
 
 ## Summary

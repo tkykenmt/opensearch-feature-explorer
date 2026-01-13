@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - neural-search
   - search
 ---
-
 # System Ingest Processor
 
 ## Summary

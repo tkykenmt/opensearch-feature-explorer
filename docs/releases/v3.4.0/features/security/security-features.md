@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - search
   - security
 ---
-
 # Security Features
 
 ## Summary

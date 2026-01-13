@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - performance
 ---
-
 # UI Settings & Dataset Select
 
 ## Summary

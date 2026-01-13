@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - neural-search
   - search
 ---
-
 # ML Commons Documentation & Tutorials
 
 ## Summary

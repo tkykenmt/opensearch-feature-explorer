@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - search
 ---
-
 # Cross-Cluster Search in OpenSearch Dashboards
 
 ## Summary

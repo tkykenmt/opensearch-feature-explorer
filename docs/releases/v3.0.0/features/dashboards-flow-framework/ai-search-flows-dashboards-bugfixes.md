@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - ml
   - neural-search
   - search
 ---
-
 # AI Search Flows Dashboards Bug Fixes
 
 ## Summary

@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - performance
   - search
   - security
 ---
-
 # Version Bumps & Release Qualifiers (Batch 2)
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - ml
   - search
 ---
-
 # Client API Enhancements
 
 ## Summary

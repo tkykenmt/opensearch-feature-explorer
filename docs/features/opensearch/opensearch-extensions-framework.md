@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - security
 ---
-
 # Extensions Framework
 
 ## Summary

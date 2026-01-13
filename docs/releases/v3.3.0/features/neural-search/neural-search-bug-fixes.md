@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - neural-search
   - search
 ---
-
 # Neural Search Bug Fixes
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - indexing
   - search
   - security
 ---
-
 # Security Permissions
 
 ## Summary

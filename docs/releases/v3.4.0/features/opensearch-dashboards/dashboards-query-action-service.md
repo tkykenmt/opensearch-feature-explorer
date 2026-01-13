@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Dashboards Query Action Service
 
 ## Summary

@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
 ---
-
 # GRPC Transport Bugfixes
 
 ## Summary

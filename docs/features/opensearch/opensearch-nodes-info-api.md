@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
   - performance
   - search
 ---
-
 # Nodes Info API
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - observability
 ---
-
 # Sample Data
 
 ## Summary

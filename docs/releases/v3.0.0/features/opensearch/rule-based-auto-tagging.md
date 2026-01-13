@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - ml
   - search
 ---
-
 # Rule-Based Auto-Tagging
 
 ## Summary

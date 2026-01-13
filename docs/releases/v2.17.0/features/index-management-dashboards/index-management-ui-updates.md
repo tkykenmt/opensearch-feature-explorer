@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/data
+  - component/dashboards
   - dashboards
   - indexing
   - neural-search
 ---
-
 # Index Management UI Updates
 
 ## Summary

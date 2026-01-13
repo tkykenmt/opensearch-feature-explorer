@@ -1,5 +1,7 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - indexing
   - k-nn
@@ -7,7 +9,6 @@ tags:
   - search
   - security
 ---
-
 # Version Bumps & Maintenance
 
 ## Summary

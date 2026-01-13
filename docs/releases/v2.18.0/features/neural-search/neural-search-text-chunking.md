@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - neural-search
   - search
 ---
-
 # Neural Search Text Chunking Enhancement
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
   - search
 ---
-
 # Numeric Field Skip List
 
 ## Summary

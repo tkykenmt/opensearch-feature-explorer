@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - neural-search
   - search
 ---
-
 # Flow Framework UI Enhancements
 
 ## Summary

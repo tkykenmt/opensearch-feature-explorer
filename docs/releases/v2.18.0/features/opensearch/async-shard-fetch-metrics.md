@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
 ---
-
 # Async Shard Fetch Metrics
 
 ## Summary

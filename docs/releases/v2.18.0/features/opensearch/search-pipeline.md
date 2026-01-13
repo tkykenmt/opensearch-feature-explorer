@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - search
 ---
-
 # Search Pipeline: msearch API Support
 
 ## Summary

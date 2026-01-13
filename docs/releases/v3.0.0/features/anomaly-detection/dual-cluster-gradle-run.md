@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - ml
 ---
-
 # Dual Cluster Gradle Run
 
 ## Summary

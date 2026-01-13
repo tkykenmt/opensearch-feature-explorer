@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
   - indexing
 ---
-
 # Anomaly Detection Dashboards Bugfixes
 
 ## Summary

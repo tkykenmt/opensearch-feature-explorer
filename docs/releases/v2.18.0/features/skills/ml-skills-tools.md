@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - observability
   - search
 ---
-
 # ML Skills & Tools
 
 ## Summary

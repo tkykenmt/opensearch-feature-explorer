@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - ml
   - security
 ---
-
 # Repository Maintenance
 
 ## Summary

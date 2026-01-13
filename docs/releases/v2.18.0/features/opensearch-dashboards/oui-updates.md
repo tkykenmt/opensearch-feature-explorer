@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
 ---
-
 # OUI Updates
 
 ## Summary

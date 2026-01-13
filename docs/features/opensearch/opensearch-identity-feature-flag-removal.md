@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - security
 ---
-
 # Identity Feature Flag Removal
 
 ## Summary

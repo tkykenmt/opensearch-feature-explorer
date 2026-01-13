@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
   - search
   - security
 ---
-
 # OpenSearch Core Dependencies
 
 ## Summary

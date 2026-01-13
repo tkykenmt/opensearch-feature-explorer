@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - indexing
   - performance
   - security
 ---
-
 # Security Performance Optimization
 
 ## Summary

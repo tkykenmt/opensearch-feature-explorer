@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
 ---
-
 # Cross-Cluster Replication (CCR)
 
 ## Summary

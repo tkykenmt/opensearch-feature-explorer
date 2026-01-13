@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - observability
 ---
-
 # Metrics Framework Bug Fix
 
 ## Summary

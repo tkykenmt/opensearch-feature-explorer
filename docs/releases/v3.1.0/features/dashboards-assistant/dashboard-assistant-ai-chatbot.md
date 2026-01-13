@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - observability
   - sql
 ---
-
 # Dashboard Assistant (AI Chatbot)
 
 ## Summary

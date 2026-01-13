@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
 ---
-
 # Snapshot Restore Enhancements
 
 ## Summary

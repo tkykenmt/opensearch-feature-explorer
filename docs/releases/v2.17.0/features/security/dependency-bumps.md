@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - observability
   - performance
   - security
 ---
-
 # Dependency Bumps (Security)
 
 ## Summary

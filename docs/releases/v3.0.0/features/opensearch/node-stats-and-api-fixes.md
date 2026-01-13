@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
   - search
 ---
-
 # Node Stats & API Fixes
 
 ## Summary

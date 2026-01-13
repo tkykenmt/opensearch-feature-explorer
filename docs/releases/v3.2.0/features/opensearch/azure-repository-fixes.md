@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - security
 ---
-
 # Azure Repository Fixes
 
 ## Summary

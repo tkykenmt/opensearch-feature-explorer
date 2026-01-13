@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
   - search
 ---
-
 # Approximation Framework: Numeric Types Extension
 
 ## Summary

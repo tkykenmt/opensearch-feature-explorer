@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
   - indexing
   - observability
   - sql
 ---
-
 # Dashboards Observability CI/Tests
 
 ## Summary

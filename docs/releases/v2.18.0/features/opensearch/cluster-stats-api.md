@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
   - performance
   - search
 ---
-
 # Cluster Stats API - URI Path Filtering
 
 ## Summary

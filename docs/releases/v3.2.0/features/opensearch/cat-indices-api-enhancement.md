@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
   - performance
 ---
-
 # Cat Indices API Enhancement
 
 ## Summary

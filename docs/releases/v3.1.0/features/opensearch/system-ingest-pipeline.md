@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - ml
   - neural-search
   - performance
 ---
-
 # System Ingest Pipeline
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
   - observability
   - search
   - sql
 ---
-
 # Observability UI
 
 ## Summary

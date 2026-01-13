@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - search
 ---
-
 # k-NN Documentation
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - observability
 ---
-
 # Alerting Build
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
 ---
-
 # Bulk API Changes
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Workload Management (WLM) Dashboard Enhancements
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
   - search
 ---
-
 # Search Backpressure Stats Enhancement
 
 ## Summary

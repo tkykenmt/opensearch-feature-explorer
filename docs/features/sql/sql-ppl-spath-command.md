@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - search
   - sql
 ---
-
 # PPL Spath Command
 
 ## Summary

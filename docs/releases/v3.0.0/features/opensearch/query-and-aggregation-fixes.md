@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - neural-search
   - search
 ---
-
 # Query & Aggregation Fixes
 
 ## Summary

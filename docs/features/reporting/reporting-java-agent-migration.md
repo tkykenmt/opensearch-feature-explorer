@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - ml
   - security
 ---
-
 # Reporting Plugin Java Agent Migration
 
 ## Summary

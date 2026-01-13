@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
   - observability
   - performance
   - search
   - security
 ---
-
 # Release Notes
 
 ## Summary

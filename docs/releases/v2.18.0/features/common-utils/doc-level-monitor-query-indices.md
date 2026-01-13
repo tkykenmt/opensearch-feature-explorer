@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - ml
   - search
   - security
 ---
-
 # Doc-Level Monitor Query Indices
 
 ## Summary

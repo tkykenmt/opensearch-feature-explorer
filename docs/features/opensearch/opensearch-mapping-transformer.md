@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - ml
   - neural-search
   - search
 ---
-
 # Mapping Transformer
 
 ## Summary

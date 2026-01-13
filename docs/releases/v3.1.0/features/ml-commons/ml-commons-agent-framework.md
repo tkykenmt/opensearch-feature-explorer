@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - observability
 ---
-
 # ML Commons Agent Framework
 
 ## Summary

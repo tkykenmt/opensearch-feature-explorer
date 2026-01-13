@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - indexing
   - ml
   - search
 ---
-
 # Discover Summary - Log Pattern Support
 
 ## Summary

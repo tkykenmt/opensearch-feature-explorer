@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - dashboards
   - search
   - security
 ---
-
 # Repository Maintenance
 
 ## Summary

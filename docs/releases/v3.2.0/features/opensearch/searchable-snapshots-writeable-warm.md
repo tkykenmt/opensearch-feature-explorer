@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
   - performance
 ---
-
 # Searchable Snapshots & Writeable Warm
 
 ## Summary

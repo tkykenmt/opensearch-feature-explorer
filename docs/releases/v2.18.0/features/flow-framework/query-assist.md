@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - dashboards
   - indexing
   - ml
   - search
   - sql
 ---
-
 # Query Assist Data Summary Agent Template
 
 ## Summary

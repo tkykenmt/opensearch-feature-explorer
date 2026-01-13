@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - security
 ---
-
 # HTTP API Improvements
 
 ## Summary

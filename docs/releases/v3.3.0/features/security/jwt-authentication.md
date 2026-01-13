@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - security
 ---
-
 # JWT Authentication - Direct JWKS Support
 
 ## Summary

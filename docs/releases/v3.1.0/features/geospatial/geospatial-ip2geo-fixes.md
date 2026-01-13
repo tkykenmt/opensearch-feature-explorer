@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/geo
+  - component/server
   - indexing
   - performance
 ---
-
 # Geospatial Ip2Geo Fixes
 
 ## Summary

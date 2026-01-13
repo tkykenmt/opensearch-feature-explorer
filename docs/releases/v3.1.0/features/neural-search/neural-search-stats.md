@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - neural-search
   - observability
   - search
 ---
-
 # Neural Search Stats
 
 ## Summary

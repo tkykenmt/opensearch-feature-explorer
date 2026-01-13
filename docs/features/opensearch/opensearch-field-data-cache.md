@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
   - search
 ---
-
 # Field Data Cache
 
 ## Summary

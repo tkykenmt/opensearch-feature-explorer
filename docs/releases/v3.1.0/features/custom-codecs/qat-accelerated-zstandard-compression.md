@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - performance
 ---
-
 # QAT-Accelerated Zstandard Compression
 
 ## Summary

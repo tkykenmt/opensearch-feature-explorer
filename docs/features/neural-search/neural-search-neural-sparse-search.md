@@ -1,5 +1,7 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - ml
@@ -7,7 +9,6 @@ tags:
   - performance
   - search
 ---
-
 # Neural Sparse Search
 
 ## Summary

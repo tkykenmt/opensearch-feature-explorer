@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - ml
 ---
-
 # ML Commons Dashboards
 
 ## Summary

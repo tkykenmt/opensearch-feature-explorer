@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - performance
 ---
-
 # Performance Analyzer
 
 ## Summary

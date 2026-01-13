@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/geo
+  - component/server
   - indexing
   - security
 ---
-
 # Geospatial Plugin Bugfixes
 
 ## Summary

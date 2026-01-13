@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - observability
   - security
 ---
-
 # Security Plugin Dependencies
 
 ## Summary

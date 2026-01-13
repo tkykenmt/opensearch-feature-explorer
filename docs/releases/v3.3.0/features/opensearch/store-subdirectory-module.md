@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
 ---
-
 # Store Subdirectory Module - Stats API Fix
 
 ## Summary

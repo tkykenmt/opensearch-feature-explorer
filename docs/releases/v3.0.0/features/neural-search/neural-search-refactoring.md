@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - k-nn
   - neural-search
   - search
 ---
-
 # Neural Search Refactoring
 
 ## Summary

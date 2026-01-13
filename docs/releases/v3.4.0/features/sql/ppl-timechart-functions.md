@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - observability
   - search
   - sql
 ---
-
 # PPL Timechart Functions
 
 ## Summary

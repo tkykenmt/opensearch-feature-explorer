@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
 ---
-
 # Remote Model Bugfixes
 
 ## Summary

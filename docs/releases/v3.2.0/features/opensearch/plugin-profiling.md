@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - k-nn
   - observability
   - search
 ---
-
 # Plugin Profiling
 
 ## Summary

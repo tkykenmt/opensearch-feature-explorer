@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - security
 ---
-
 # Sync `org.opensearch:protobufs` Version with Core
 
 ## Summary

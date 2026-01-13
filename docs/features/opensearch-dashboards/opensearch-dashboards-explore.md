@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - observability
   - performance
   - search
   - sql
 ---
-
 # Explore Plugin
 
 ## Summary

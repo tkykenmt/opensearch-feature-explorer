@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - dashboards
   - ml
 ---
-
 # Flow Framework Templates
 
 ## Summary

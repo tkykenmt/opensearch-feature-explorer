@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # Platform Support - Linux RISC-V 64
 
 ## Summary

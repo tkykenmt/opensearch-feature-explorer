@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - ml
   - neural-search
   - search
 ---
-
 # Analyzer-Based Neural Sparse Query
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/data
+  - component/dashboards
   - dashboards
   - indexing
 ---
-
 # Index Management Dashboards
 
 ## Summary

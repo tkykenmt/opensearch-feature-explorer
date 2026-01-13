@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - observability
 ---
-
 # OpenSearch Dashboards Visualization Enhancements
 
 ## Summary

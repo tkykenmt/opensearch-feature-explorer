@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - performance
   - search
 ---
-
 # Vector Search (k-NN)
 
 ## Summary

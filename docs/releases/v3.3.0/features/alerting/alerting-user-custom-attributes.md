@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - ml
   - observability
   - search
   - security
 ---
-
 # Alerting User Custom Attributes
 
 ## Summary

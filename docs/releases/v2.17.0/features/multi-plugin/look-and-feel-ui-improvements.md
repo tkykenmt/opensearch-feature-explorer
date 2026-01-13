@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
 ---
-
 # Look & Feel UI Improvements
 
 ## Summary

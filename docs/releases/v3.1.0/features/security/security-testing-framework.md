@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - indexing
   - security
 ---
-
 # Security Testing Framework
 
 ## Summary

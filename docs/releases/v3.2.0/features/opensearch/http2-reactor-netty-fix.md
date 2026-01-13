@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - security
 ---
-
 # HTTP/2 & Reactor-Netty Fix
 
 ## Summary

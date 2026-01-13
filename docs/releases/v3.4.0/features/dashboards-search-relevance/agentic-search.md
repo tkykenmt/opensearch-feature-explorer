@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - dashboards
   - ml
   - neural-search
   - search
 ---
-
 # Agentic Search
 
 ## Summary

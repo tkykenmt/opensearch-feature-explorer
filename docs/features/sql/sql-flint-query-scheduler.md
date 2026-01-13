@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - observability
   - search
   - sql
 ---
-
 # Flint Query Scheduler
 
 ## Summary

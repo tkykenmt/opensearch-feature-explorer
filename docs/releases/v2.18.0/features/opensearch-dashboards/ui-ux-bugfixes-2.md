@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
 ---
-
 # UI/UX Bugfixes (2)
 
 ## Summary

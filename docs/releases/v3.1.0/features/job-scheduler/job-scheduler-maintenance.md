@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - ml
   - sql
 ---
-
 # Job Scheduler Maintenance
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - observability
   - search
   - sql
 ---
-
 # Observability UI Updates
 
 ## Summary

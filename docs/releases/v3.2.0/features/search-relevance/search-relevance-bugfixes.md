@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - dashboards
   - search
 ---
-
 # Search Relevance Bugfixes
 
 ## Summary

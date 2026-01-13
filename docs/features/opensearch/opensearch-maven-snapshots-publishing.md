@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - security
 ---
-
 # Maven Snapshots Publishing
 
 ## Summary

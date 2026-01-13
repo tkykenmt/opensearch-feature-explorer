@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - performance
   - security
 ---
-
 # Performance Analyzer Infrastructure
 
 ## Summary

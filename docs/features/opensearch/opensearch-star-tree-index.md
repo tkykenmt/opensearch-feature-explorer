@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - indexing
   - observability
   - performance
   - search
 ---
-
 # Star Tree Index
 
 ## Summary

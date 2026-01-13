@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - security
 ---
-
 # Events Correlation Engine
 
 ## Summary

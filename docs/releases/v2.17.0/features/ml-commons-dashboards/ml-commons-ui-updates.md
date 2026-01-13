@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - indexing
   - ml
 ---
-
 # ML Commons UI Updates
 
 ## Summary

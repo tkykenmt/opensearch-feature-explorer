@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - ml
   - security
 ---
-
 # Anomaly Detection Dependencies
 
 ## Summary

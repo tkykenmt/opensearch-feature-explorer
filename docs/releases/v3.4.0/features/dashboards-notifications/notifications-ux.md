@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
 ---
-
 # Notifications UX
 
 ## Summary

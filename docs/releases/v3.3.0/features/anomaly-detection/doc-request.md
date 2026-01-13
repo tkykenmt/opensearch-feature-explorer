@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - ml
   - security
 ---
-
 # Doc Request Resource Type Support
 
 ## Summary

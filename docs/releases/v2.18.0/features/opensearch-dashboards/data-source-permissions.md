@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Data Source Permissions Bugfix
 
 ## Summary

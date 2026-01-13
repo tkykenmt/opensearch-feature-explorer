@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
   - k-nn
   - search
   - sql
 ---
-
 # CI/CD & Testing Infrastructure
 
 ## Summary

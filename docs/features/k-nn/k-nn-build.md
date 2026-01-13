@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - performance
   - search
   - security
 ---
-
 # k-NN Build Infrastructure
 
 ## Summary

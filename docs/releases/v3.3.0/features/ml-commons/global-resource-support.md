@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - performance
 ---
-
 # Global Resource Support
 
 ## Summary

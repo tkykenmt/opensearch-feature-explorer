@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
   - observability
   - search
 ---
-
 # Rescore Named Queries
 
 ## Summary

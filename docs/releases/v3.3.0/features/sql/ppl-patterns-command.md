@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - sql
 ---
-
 # PPL Patterns Command Enhancements
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - observability
   - performance
   - search
 ---
-
 # Query Insights
 
 ## Summary

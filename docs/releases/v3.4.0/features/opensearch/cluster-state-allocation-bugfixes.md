@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # Cluster State & Allocation Bugfixes
 
 ## Summary

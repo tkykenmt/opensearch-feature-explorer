@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
 ---
-
 # Backward Compatibility
 
 ## Summary

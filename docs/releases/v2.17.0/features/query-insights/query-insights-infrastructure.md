@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - performance
   - search
 ---
-
 # Query Insights Infrastructure
 
 ## Summary

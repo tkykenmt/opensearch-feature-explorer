@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - ml
   - search
   - security
 ---
-
 # Anomaly Detection Bugfixes
 
 ## Summary

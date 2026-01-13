@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - performance
   - security
 ---
-
 # Security Dashboards UI Fixes
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - search
   - security
 ---
-
 # Security Integration Test Control
 
 ## Summary

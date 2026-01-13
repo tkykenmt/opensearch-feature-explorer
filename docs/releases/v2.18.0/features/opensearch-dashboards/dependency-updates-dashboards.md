@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - security
 ---
-
 # Dependency Updates (Dashboards)
 
 ## Summary

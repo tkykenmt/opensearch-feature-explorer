@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - ml
   - search
   - security
 ---
-
 # Learning to Rank Enhancements
 
 ## Summary

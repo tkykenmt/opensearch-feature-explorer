@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - search
   - sql
 ---
-
 # SQL/PPL Bug Fixes
 
 ## Summary

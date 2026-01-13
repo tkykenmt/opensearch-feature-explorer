@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - search
   - security
   - sql
 ---
-
 # SQL Plugin Maintenance
 
 ## Summary

@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - observability
   - performance
   - search
   - sql
 ---
-
 # Skills Log Insight
 
 ## Summary

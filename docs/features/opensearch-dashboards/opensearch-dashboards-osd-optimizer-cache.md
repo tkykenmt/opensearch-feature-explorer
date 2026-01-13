@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - performance
 ---
-
 # OSD Optimizer Cache
 
 ## Summary

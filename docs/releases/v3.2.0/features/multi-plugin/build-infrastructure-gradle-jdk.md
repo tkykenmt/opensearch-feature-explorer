@@ -1,5 +1,7 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
   - k-nn
   - ml
@@ -7,7 +9,6 @@ tags:
   - security
   - sql
 ---
-
 # Build Infrastructure (Gradle/JDK)
 
 ## Summary

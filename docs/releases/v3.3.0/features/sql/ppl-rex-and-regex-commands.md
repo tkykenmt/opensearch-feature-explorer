@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - observability
   - search
   - sql
 ---
-
 # PPL Rex and Regex Commands
 
 ## Summary

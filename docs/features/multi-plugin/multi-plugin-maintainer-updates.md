@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - security
 ---
-
 # Maintainer Updates
 
 ## Summary

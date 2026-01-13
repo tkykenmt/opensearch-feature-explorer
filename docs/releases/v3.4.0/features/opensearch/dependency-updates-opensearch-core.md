@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
   - security
 ---
-
 # Dependency Updates (OpenSearch Core)
 
 ## Summary

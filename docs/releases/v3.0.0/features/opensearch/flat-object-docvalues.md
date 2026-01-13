@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # Flat Object Field Type: DocValues Retrieval
 
 ## Summary

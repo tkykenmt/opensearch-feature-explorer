@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - search
 ---
-
 # Lucene Upgrade
 
 ## Summary

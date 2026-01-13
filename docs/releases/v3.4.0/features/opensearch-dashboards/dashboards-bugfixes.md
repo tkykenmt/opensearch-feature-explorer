@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - search
   - security
   - sql
 ---
-
 # Dashboards Bugfixes
 
 ## Summary

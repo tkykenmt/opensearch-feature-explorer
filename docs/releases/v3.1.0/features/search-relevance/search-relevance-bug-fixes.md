@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - ml
   - observability
   - performance
   - search
 ---
-
 # Search Relevance Bug Fixes
 
 ## Summary

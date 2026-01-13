@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
   - observability
 ---
-
 # Observability Notebooks Bugfixes
 
 ## Summary

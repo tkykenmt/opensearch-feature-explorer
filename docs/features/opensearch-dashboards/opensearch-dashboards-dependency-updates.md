@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - performance
   - security
 ---
-
 # Dependency Updates (OpenSearch Dashboards)
 
 ## Summary

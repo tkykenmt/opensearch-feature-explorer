@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - observability
   - sql
 ---
-
 # Trace Details Page
 
 ## Summary

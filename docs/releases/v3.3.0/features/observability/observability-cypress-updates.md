@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - observability
   - security
 ---
-
 # Observability Cypress Updates
 
 ## Summary

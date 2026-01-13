@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
   - search
 ---
-
 # Remote Store Metrics
 
 ## Summary

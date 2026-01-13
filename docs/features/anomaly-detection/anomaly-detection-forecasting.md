@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - indexing
   - ml
   - observability
 ---
-
 # Anomaly Detection Forecasting
 
 ## Summary

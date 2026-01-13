@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/geo
+  - component/dashboards
   - dashboards
   - indexing
   - observability
   - search
 ---
-
 # Maps & Geospatial
 
 ## Summary

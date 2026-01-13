@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - ml
   - security
 ---
-
 # Systemd Security Configurations
 
 ## Summary

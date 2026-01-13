@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/geo
+  - component/server
   - search
 ---
-
 # Maven POM Metadata Fix
 
 ## Summary

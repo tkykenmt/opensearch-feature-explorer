@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - performance
   - search
 ---
-
 # Approximation Framework
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - indexing
   - search
 ---
-
 # Deprecated Code Cleanup
 
 ## Summary

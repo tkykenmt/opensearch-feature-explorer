@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - ml
   - observability
 ---
-
 # Alerting Bugfixes
 
 ## Summary

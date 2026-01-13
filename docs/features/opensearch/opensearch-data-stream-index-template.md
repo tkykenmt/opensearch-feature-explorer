@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
 ---
-
 # Data Stream & Index Template
 
 ## Summary

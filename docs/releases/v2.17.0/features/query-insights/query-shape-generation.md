@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - observability
   - performance
   - search
 ---
-
 # Query Shape Generation
 
 ## Summary

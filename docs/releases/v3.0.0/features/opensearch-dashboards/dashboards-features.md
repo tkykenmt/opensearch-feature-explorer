@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - search
   - sql
 ---
-
 # Dashboards Features
 
 ## Summary

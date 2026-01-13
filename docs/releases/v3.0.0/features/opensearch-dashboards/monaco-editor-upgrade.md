@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - ml
   - performance
   - search
 ---
-
 # Monaco Editor Upgrade
 
 ## Summary

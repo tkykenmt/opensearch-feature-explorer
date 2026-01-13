@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - neural-search
   - search
 ---
-
 # Neural Search Dependencies
 
 ## Summary

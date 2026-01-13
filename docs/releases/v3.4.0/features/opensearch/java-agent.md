@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
   - security
 ---
-
 # Java Agent JRT Protocol Fix
 
 ## Summary

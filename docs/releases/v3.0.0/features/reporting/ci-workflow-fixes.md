@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
 ---
-
 # CI/Workflow Fixes
 
 ## Summary

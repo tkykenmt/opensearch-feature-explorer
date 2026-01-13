@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - dashboards
   - indexing
   - neural-search
   - security
 ---
-
 # Job Scheduler Changelog
 
 ## Summary

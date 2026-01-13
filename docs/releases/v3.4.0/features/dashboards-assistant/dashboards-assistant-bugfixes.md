@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - security
 ---
-
 # Dashboards Assistant Bugfixes
 
 ## Summary

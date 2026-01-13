@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - search
 ---
-
 # Flow Framework Dependencies
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
 ---
-
 # Reporting Release Maintenance
 
 ## Summary

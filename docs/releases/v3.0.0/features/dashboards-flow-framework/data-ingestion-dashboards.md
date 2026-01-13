@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - indexing
   - search
 ---
-
 # Data Ingestion Dashboards
 
 ## Summary

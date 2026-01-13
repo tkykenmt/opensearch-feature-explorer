@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
   - security
 ---
-
 # HTTP Client
 
 ## Summary

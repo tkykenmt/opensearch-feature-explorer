@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - dashboards
   - k-nn
   - observability
   - performance
   - security
 ---
-
 # Dependency Updates
 
 ## Summary

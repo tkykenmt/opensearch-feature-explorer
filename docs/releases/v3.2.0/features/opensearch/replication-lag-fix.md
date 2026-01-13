@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
 ---
-
 # Replication Lag Fix
 
 ## Summary

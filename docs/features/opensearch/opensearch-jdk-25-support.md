@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
 ---
-
 # JDK 25 Support
 
 ## Summary

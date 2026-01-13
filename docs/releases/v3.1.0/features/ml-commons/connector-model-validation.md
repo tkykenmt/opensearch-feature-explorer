@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
 ---
-
 # ML Commons Connector/Model Validation Bug Fixes
 
 ## Summary

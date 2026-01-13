@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - dashboards
   - indexing
 ---
-
 # Index Management Bugfixes
 
 ## Summary

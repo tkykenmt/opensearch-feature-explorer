@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - search
 ---
-
 # Updating Gson Version to Resolve Conflict Coming from Core
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
 ---
-
 # Remote Vector Index Build
 
 ## Summary

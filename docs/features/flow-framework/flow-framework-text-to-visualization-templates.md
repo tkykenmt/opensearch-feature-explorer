@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - dashboards
   - ml
   - search
   - security
 ---
-
 # Text-to-Visualization Templates
 
 ## Summary

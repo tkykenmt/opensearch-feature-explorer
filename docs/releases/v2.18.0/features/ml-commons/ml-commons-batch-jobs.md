@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - security
 ---
-
 # ML Commons Batch Jobs
 
 ## Summary

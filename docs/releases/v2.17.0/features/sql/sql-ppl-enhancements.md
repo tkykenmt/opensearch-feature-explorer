@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - performance
   - search
   - sql
 ---
-
 # SQL/PPL Enhancements
 
 ## Summary

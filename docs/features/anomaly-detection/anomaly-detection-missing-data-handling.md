@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - ml
 ---
-
 # Anomaly Detection Missing Data Handling
 
 ## Summary

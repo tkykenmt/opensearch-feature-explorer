@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - sql
 ---
-
 # Flint Index Operations
 
 ## Summary

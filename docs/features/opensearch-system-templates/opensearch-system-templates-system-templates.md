@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - observability
   - performance
 ---
-
 # System Templates (Application-Based Configuration)
 
 ## Summary

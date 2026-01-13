@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - ml
   - search
   - security
   - sql
 ---
-
 # Java Agent / SecurityManager Migration (Batch 2)
 
 ## Summary

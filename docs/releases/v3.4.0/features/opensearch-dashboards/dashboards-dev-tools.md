@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - security
 ---
-
 # Dashboards Dev Tools - PATCH Method Support
 
 ## Summary

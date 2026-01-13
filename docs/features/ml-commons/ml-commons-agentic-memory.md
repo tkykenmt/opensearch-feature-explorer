@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - k-nn
   - ml
   - neural-search
   - search
 ---
-
 # Agentic Memory
 
 ## Summary

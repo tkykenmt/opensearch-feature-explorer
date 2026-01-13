@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/geo
+  - component/server
   - search
 ---
-
 # Geospatial Deprecation Fixes
 
 ## Summary

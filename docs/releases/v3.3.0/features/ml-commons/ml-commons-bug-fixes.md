@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - search
   - security
 ---
-
 # ML Commons Bug Fixes
 
 ## Summary

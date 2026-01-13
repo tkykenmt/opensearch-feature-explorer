@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - search
 ---
-
 # S3 Repository Compatibility Fix
 
 ## Summary

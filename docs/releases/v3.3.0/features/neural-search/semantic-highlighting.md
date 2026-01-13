@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - neural-search
   - performance
   - search
 ---
-
 # Semantic Highlighting Batch Inference
 
 ## Summary

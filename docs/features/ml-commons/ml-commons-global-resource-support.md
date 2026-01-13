@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - security
 ---
-
 # Global Resource Support
 
 ## Summary

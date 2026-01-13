@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - performance
   - search
 ---
-
 # Query Insights Settings
 
 ## Summary

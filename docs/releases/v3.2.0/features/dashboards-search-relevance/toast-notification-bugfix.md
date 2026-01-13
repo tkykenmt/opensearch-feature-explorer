@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - dashboards
   - performance
   - search
 ---
-
 # Toast Notification Error Message Bug Fix
 
 ## Summary

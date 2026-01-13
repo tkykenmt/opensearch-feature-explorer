@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - ml
   - observability
 ---
-
 # Dashboards AI Insights
 
 ## Summary

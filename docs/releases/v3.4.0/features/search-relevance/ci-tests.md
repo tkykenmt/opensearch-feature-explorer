@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - search
 ---
-
 # Search Relevance CI/Tests
 
 ## Summary

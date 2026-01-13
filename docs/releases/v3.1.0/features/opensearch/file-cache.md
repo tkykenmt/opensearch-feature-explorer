@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
   - performance
 ---
-
 # File Cache
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
 ---
-
 # k-NN Derived Source & Codec Refactoring
 
 ## Summary

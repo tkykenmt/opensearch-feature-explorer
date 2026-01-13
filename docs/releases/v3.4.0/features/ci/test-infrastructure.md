@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
   - ml
   - search
 ---
-
 # CI/Test Infrastructure
 
 ## Summary

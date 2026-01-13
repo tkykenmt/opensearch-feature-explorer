@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - observability
   - sql
 ---
-
 # CI/Infrastructure Fixes
 
 ## Summary

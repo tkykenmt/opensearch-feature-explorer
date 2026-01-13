@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - ml
   - neural-search
   - observability
   - performance
   - search
 ---
-
 # Neural Search / Hybrid Query
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - performance
   - search
   - sql
 ---
-
 # PPL Commands (Calcite)
 
 ## Summary

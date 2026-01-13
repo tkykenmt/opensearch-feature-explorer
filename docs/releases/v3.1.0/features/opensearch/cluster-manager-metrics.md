@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
 ---
-
 # Cluster Manager Metrics
 
 ## Summary

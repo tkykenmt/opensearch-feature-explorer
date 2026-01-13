@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - search
 ---
-
 # Search Relevance Fixes
 
 ## Summary

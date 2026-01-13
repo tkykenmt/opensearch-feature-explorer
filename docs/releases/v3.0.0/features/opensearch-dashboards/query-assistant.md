@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - ml
   - search
   - sql
 ---
-
 # Query Assistant
 
 ## Summary

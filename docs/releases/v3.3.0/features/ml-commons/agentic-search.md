@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - neural-search
   - search
 ---
-
 # Agentic Search
 
 ## Summary

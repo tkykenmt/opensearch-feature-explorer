@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
   - ml
   - observability
   - security
 ---
-
 # CI/CD & Build Improvements
 
 ## Summary

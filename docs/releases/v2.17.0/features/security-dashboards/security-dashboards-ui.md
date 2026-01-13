@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/dashboards
   - dashboards
   - neural-search
   - security
 ---
-
 # Security Dashboards UI Enhancements
 
 ## Summary

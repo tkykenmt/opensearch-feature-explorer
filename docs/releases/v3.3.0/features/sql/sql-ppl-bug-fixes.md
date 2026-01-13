@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - search
   - sql
 ---
-
 # SQL/PPL Bug Fixes
 
 ## Summary

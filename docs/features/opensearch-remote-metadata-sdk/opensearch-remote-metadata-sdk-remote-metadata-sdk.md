@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - search
 ---
-
 # OpenSearch Remote Metadata SDK
 
 ## Summary

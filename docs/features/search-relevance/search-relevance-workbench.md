@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - dashboards
   - indexing
   - observability
   - performance
   - search
 ---
-
 # Search Relevance Workbench
 
 ## Summary

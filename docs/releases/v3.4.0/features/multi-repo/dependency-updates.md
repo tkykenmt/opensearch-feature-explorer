@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - indexing
   - observability
   - security
   - sql
 ---
-
 # Dependency Updates
 
 ## Summary

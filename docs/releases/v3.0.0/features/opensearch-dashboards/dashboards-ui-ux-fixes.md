@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - ml
   - search
 ---
-
 # Dashboards UI/UX Fixes
 
 ## Summary

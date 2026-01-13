@@ -1,5 +1,7 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - ml
@@ -7,7 +9,6 @@ tags:
   - search
   - security
 ---
-
 # Look & Feel UI Improvements
 
 ## Summary

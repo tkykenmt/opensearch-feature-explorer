@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/dashboards
   - dashboards
   - neural-search
   - search
 ---
-
 # Notifications Fit & Finish
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - security
 ---
-
 # ISM Transitions Enhancement
 
 ## Summary

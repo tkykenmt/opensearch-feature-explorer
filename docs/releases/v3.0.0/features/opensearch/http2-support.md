@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - performance
   - security
 ---
-
 # HTTP/2 Support
 
 ## Summary

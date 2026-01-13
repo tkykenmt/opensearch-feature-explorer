@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - indexing
   - observability
   - performance
 ---
-
 # Webpack & Build Performance
 
 ## Summary

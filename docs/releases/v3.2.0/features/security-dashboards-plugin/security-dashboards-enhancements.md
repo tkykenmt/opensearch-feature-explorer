@@ -1,12 +1,13 @@
 ---
 tags:
+  - domain/security
+  - component/dashboards
   - dashboards
   - indexing
   - observability
   - search
   - security
 ---
-
 # Security Dashboards Enhancements
 
 ## Summary

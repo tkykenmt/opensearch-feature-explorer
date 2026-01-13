@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - search
   - security
 ---
-
 # Reporting Plugin
 
 ## Summary

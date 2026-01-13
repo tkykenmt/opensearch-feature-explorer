@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - ml
 ---
-
 # AUTO Version Increment
 
 ## Summary

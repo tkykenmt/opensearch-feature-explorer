@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - indexing
   - observability
 ---
-
 # Observability Bug Fixes
 
 ## Summary

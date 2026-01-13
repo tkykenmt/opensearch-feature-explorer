@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - observability
   - performance
 ---
-
 # Warm Indices
 
 ## Summary

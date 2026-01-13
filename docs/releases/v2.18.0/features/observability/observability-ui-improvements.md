@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
   - observability
   - performance
 ---
-
 # Observability UI Improvements
 
 ## Summary

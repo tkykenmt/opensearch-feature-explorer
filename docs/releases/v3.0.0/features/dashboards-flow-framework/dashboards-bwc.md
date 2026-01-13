@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/dashboards
   - dashboards
   - ml
   - search
 ---
-
 # Dashboards BWC
 
 ## Summary

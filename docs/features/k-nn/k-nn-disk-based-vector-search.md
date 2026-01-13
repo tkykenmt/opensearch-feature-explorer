@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - search
 ---
-
 # Disk-Based Vector Search
 
 ## Summary

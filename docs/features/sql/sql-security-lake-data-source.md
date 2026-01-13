@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - search
   - security
   - sql
 ---
-
 # Security Lake Data Source
 
 ## Summary

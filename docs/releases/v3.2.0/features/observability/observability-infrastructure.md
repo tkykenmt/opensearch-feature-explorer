@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - indexing
   - observability
   - security
 ---
-
 # Observability Infrastructure
 
 ## Summary

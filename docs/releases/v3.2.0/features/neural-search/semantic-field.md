@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - k-nn
   - ml
   - neural-search
 ---
-
 # Semantic Field Enhancements
 
 ## Summary

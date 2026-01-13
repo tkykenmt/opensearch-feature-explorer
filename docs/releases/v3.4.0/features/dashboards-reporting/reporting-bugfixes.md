@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/infra
+  - component/dashboards
   - dashboards
   - security
 ---
-
 # Reporting Bugfixes
 
 ## Summary

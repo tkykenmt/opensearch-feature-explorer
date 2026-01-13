@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
   - search
 ---
-
 # Skills / Tools Bugfixes and Enhancements
 
 ## Summary

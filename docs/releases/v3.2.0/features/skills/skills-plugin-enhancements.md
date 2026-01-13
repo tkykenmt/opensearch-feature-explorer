@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - security
 ---
-
 # Skills Plugin Enhancements
 
 ## Summary

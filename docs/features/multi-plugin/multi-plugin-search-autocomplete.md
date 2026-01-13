@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/infra
+  - component/server
   - dashboards
   - indexing
   - search
   - sql
 ---
-
 # Search Autocomplete
 
 ## Summary

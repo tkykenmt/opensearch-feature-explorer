@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - security
 ---
-
 # HDFS Repository Kerberos Authentication
 
 ## Summary

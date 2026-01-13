@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/dashboards
   - dashboards
   - search
 ---
-
 # Search Relevance Dashboards Fixes
 
 ## Summary

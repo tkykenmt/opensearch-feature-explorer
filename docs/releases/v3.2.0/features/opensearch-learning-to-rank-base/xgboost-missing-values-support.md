@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - search
 ---
-
 # XGBoost Missing Values Support
 
 ## Summary

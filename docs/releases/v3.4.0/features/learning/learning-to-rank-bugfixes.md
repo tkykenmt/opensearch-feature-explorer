@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - ml
   - search
 ---
-
 # Learning to Rank Bugfixes
 
 ## Summary

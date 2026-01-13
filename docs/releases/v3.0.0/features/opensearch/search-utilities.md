@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - k-nn
   - search
 ---
-
 # Search Utilities
 
 ## Summary

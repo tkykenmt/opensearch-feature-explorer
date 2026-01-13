@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - ml
   - search
 ---
-
 # OpenSearch Dashboards Explore
 
 ## Summary

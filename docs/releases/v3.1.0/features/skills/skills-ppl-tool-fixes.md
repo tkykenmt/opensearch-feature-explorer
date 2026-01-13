@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - indexing
   - ml
   - search
   - sql
 ---
-
 # Skills PPL Tool Fixes
 
 ## Summary

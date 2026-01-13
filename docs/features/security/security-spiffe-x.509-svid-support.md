@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - ml
   - security
 ---
-
 # SPIFFE X.509 SVID Support
 
 ## Summary

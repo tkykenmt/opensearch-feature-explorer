@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/security
+  - component/dashboards
   - dashboards
   - security
 ---
-
 # Security Dashboards Plugin
 
 ## Summary

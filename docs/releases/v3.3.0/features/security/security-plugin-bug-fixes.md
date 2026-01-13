@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - indexing
   - security
   - sql
 ---
-
 # Security Plugin Bug Fixes
 
 ## Summary

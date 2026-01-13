@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - dashboards
   - search
   - sql
 ---
-
 # SQL Pagination Bug Fixes
 
 ## Summary

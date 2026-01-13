@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - ml
   - search
   - security
 ---
-
 # Anomaly Detection Admin Backend Role Bypass
 
 ## Summary

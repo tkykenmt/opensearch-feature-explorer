@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - ml
   - security
 ---
-
 # Security Manager Replacement
 
 ## Summary

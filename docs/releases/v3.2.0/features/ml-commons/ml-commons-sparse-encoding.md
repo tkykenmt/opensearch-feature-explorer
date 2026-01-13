@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/ml
+  - component/server
   - ml
 ---
-
 # ML Commons Sparse Encoding
 
 ## Summary

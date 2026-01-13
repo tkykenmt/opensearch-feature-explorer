@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - observability
   - performance
 ---
-
 # Performance Analyzer Bugfixes
 
 ## Summary

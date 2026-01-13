@@ -1,8 +1,9 @@
 ---
 tags:
+  - domain/observability
+  - component/server
   - dashboards
 ---
-
 # Notifications Plugin Infrastructure
 
 ## Summary

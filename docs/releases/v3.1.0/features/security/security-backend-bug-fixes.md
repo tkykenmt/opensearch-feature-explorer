@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/security
+  - component/server
   - dashboards
   - indexing
   - performance
   - security
 ---
-
 # Security Backend Bug Fixes
 
 ## Summary

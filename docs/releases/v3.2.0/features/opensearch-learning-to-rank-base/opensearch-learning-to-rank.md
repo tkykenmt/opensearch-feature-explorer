@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - search
 ---
-
 # OpenSearch Learning to Rank
 
 ## Summary

@@ -1,10 +1,11 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - observability
   - search
 ---
-
 # Index Management Enhancements
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/dashboards
   - dashboards
   - performance
   - search
   - security
 ---
-
 # Query Workbench Dashboards
 
 ## Summary

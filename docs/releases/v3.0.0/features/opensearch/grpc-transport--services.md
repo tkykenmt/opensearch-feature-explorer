@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/core
+  - component/server
   - indexing
   - performance
   - search
   - security
 ---
-
 # gRPC Transport & Services
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - performance
   - search
 ---
-
 # Hybrid Optimizer Bugfixes
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 tags:
+  - domain/data
+  - component/server
   - indexing
   - security
 ---
-
 # Job Scheduler
 
 ## Summary

@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - ml
   - performance
 ---
-
 # k-NN Model Metadata
 
 ## Summary

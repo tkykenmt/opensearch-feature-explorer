@@ -1,11 +1,12 @@
 ---
 tags:
+  - domain/search
+  - component/server
   - indexing
   - k-nn
   - observability
   - performance
 ---
-
 # Remote Vector Index Build Enhancements
 
 ## Summary
