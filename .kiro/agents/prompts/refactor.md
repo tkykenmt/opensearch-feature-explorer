@@ -103,20 +103,6 @@ Consolidate when:
 4. Delete secondary file
 5. Update any references
 
-## Cross-References
-
-### Related Features Section
-```markdown
-## Related Features
-- [Feature Name](relative/path.md)
-```
-
-### Category Mappings
-Related categories:
-- neural-search ↔ ml-commons, k-nn
-- security ↔ security-dashboards-plugin
-- sql ↔ dashboards-query-workbench
-
 ## File Naming
 
 ### Prefix Rules

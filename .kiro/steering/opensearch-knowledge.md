@@ -361,34 +361,16 @@ docs/features/{repository-name}/
 - `alerting-dashboards-plugin/` → `alerting-dashboards/`
 - `security-dashboards-plugin/` → `security-dashboards/`
 
-## Domain Tag System
+## Tag System
 
-### Tag Structure
+Tags are derived from the file path. Each document has exactly one tag: the repository name.
+
 ```yaml
+# docs/features/{repo}/*.md → tag: {repo}
 tags:
-  # Domain (required, 1 or more)
-  - domain/search
-  - domain/ml
-  - domain/observability
-  - domain/security
-  - domain/data
-  - domain/geo
-  - domain/core
-  - domain/infra
-
-  # Component type (required, exactly 1)
-  - component/server
-  - component/dashboards
+  - opensearch      # for docs/features/opensearch/*.md
+  - k-nn            # for docs/features/k-nn/*.md
+  - neural-search   # for docs/features/neural-search/*.md
 ```
 
-### Domain Definitions
-| Domain | Description | Repositories |
-|--------|-------------|--------------|
-| `search` | Search & Query | k-nn, neural-search, sql, asynchronous-search, learning, search-relevance |
-| `ml` | Machine Learning & AI | ml-commons, flow-framework, skills |
-| `observability` | Monitoring & Analytics | alerting, anomaly-detection, notifications, observability, query-insights, performance-analyzer |
-| `security` | Security | security, security-analytics |
-| `data` | Data Management | index-management, cross-cluster-replication, custom-codecs, job-scheduler |
-| `geo` | Geospatial | geospatial |
-| `core` | Core Features | opensearch, common-utils, opensearch-remote-metadata-sdk |
-| `infra` | Infrastructure & CI | ci, multi-plugin, reporting, user-behavior-insights |
+No manual tag assignment needed - tags match the parent directory name.
