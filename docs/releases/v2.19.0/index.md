@@ -20,6 +20,7 @@
 - Cluster State
 - Deprecation Logger Cache Bound
 - gRPC Settings
+- gRPC Transport
 - Index Settings API
 - Ingest Pipeline Deprecation
 - IP Field
