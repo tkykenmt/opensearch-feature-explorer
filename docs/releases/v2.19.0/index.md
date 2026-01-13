@@ -69,6 +69,9 @@
 ### security
 - CVE Fixes
 
+### security-dashboards
+- Security Dashboards Bug Fixes
+
 ### skills
 - CVE Fixes
 - CI Fixes
