@@ -2432,7 +2432,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2020
     },
     {
       "name": "Snapshot Repository",
@@ -2452,7 +2453,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2021
     },
     {
       "name": "Synonym Analyzer",
@@ -2466,7 +2468,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2022
     },
     {
       "name": "Script Enhancements",
@@ -2480,7 +2483,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2023
     },
     {
       "name": "Append Only Indices",
@@ -2494,7 +2498,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2024
     },
     {
       "name": "Ingest Pipeline",
@@ -2508,7 +2513,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2025
     },
     {
       "name": "Date Sorting",
@@ -2522,7 +2528,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2026
     },
     {
       "name": "Security Transport NIO",
@@ -2536,7 +2543,8 @@
           "category": "feature",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2027
     },
     {
       "name": "Build Infrastructure",
@@ -2574,7 +2582,8 @@
           "category": "bugfix",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2028
     },
     {
       "name": "CVE Fixes",
@@ -2613,7 +2622,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 2029
     },
     {
       "name": "gRPC Transport",
@@ -2627,7 +2637,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2030
     },
     {
       "name": "Flat Object Field",
@@ -2653,7 +2664,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2031
     },
     {
       "name": "GetStats API",
@@ -2673,7 +2685,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2032
     },
     {
       "name": "Bitmap Filtering",
@@ -2687,7 +2700,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2033
     },
     {
       "name": "Template Query",
@@ -2701,7 +2715,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2034
     },
     {
       "name": "Snapshot Restore Settings",
@@ -2715,7 +2730,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2035
     },
     {
       "name": "Fetch Source Context",
@@ -2729,7 +2745,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2036
     },
     {
       "name": "IP Field Terms Query",
@@ -2743,7 +2760,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2037
     },
     {
       "name": "Dependency Updates",
@@ -2956,7 +2974,8 @@
           "category": "deprecation",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2038
     },
     {
       "name": "Gradle Version Catalog",
@@ -2970,7 +2989,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2039
     },
     {
       "name": "Sliced Search Optimization",
