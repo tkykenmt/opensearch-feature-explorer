@@ -163,6 +163,7 @@ PUT my-index/_settings
 ## Change History
 
 - **v3.4.0** (2025-01-15): Added custom creation_date setting and tier-aware shard limit validation
+- **v2.19.0** (2024-12-10): Fixed Get Index Settings API to show `number_of_routing_shards` when explicitly set at index creation
 - **v2.18.0** (2024-11-05): Fixed default value handling when `index.number_of_replicas` and `index.number_of_routing_shards` are set to `null`
 
 
@@ -176,6 +177,7 @@ PUT my-index/_settings
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#19931](https://github.com/opensearch-project/OpenSearch/pull/19931) | Allow setting index.creation_date on index creation |   |
 | v3.4.0 | [#19532](https://github.com/opensearch-project/OpenSearch/pull/19532) | Add separate shard limit validation for local and remote indices | [#19610](https://github.com/opensearch-project/OpenSearch/issues/19610) |
+| v2.19.0 | [#16294](https://github.com/opensearch-project/OpenSearch/pull/16294) | Fix get index settings API doesn't show `number_of_routing_shards` when explicitly set | [#14199](https://github.com/opensearch-project/OpenSearch/issues/14199) |
 | v2.18.0 | [#14948](https://github.com/opensearch-project/OpenSearch/pull/14948) | Fix update settings with null replica not honoring cluster setting |   |
 | v2.18.0 | [#16331](https://github.com/opensearch-project/OpenSearch/pull/16331) | Fix wrong default value when setting routing shards to null | [#16327](https://github.com/opensearch-project/OpenSearch/issues/16327) |
 
@@ -183,3 +185,4 @@ PUT my-index/_settings
 - [Issue #19610](https://github.com/opensearch-project/OpenSearch/issues/19610): Feature request for tier-agnostic shard limit validation
 - [Issue #14810](https://github.com/opensearch-project/OpenSearch/issues/14810): Bug report for replica count default
 - [Issue #16327](https://github.com/opensearch-project/OpenSearch/issues/16327): Bug report for routing shards default
+- [Issue #14199](https://github.com/opensearch-project/OpenSearch/issues/14199): Bug report for missing `number_of_routing_shards` in Get Index Settings API
