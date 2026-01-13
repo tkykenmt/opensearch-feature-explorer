@@ -17,4 +17,5 @@ Cumulative feature documentation across all versions.
 
 ## security
 
+- Security Certificate Management
 - Security Identity Plugin
