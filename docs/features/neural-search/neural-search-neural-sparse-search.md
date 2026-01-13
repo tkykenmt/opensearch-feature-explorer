@@ -115,13 +115,48 @@ Neural sparse query supports three encoding methods:
    }
    ```
 
+### Sparse Vector Pruning
+
+Sparse vectors often exhibit a long-tail distribution where tokens with lower semantic importance occupy significant storage space. Pruning removes these low-weight tokens to reduce index size while preserving search relevance.
+
+#### Pruning Strategies
+
+| Prune Type | Description | Valid Ratio Range |
+|------------|-------------|-------------------|
+| `top_k` | Keeps only the top K tokens with highest weights | Positive integer |
+| `max_ratio` | Keeps tokens whose weight is within ratio of max weight | [0, 1) |
+| `alpha_mass` | Keeps tokens whose cumulative sum is within ratio of total | [0, 1) |
+| `abs_value` | Keeps tokens with weight above absolute threshold | Non-negative float |
+
+#### Pruning at Ingestion
+
+Configure pruning in the `sparse_encoding` processor:
+
+```json
+PUT /_ingest/pipeline/sparse-pipeline
+{
+  "processors": [
+    {
+      "sparse_encoding": {
+        "model_id": "<model-id>",
+        "field_map": {
+          "text": "text_sparse"
+        },
+        "prune_type": "max_ratio",
+        "prune_ratio": 0.1
+      }
+    }
+  ]
+}
+```
+
 ### Two-Phase Query Optimization
 
 The neural sparse query supports two-phase execution for improved performance:
 
 ```mermaid
 flowchart TB
-    A[Query Tokens] --> B[Split by Threshold]
+    A[Query Tokens] --> B[Split by Prune Strategy]
     B --> C[High-Weight Tokens]
     B --> D[Low-Weight Tokens]
     C --> E[Phase 1: Initial Search]
@@ -135,6 +170,29 @@ Two-phase status values:
 - `NOT_ENABLED`: Standard single-phase execution
 - `PHASE_ONE`: First phase with high-weight tokens only
 - `PHASE_TWO`: Rescoring phase with low-weight tokens
+
+#### Two-Phase Processor Configuration
+
+Configure pruning strategy in the two-phase processor:
+
+```json
+PUT /_search/pipeline/two-phase-pipeline
+{
+  "request_processors": [
+    {
+      "neural_sparse_two_phase_processor": {
+        "enabled": true,
+        "two_phase_parameter": {
+          "prune_type": "max_ratio",
+          "prune_ratio": 0.4,
+          "expansion_rate": 5.0,
+          "max_window_size": 10000
+        }
+      }
+    }
+  ]
+}
+```
 
 ### Usage Example
 
@@ -176,11 +234,18 @@ GET /my-sparse-index/_search
 - Token weights in analyzer mode must be encoded as 4-byte floats in payload attribute
 - Two-phase optimization requires search pipeline configuration
 - Cannot specify both `model_id` and `analyzer` in the same query (v3.1.0+)
+- Pruning configuration:
+  - `prune_ratio` is required when `prune_type` is specified (except for `none`)
+  - Cannot specify `prune_ratio` without `prune_type`
+  - `top_k` ratio must be a positive integer
+  - `max_ratio` and `alpha_mass` ratio must be in range [0, 1)
+  - `abs_value` ratio must be non-negative
 
 ## Change History
 
 - **v3.1.0**: Added validation to prevent specifying both model_id and analyzer simultaneously
 - **v3.0.0** (2025-03-11): Added analyzer-based neural sparse query support, enabling tokenization without ML Commons models
+- **v2.19.0** (2025-01-14): Added pruning support for sparse vectors with four strategies (`top_k`, `max_ratio`, `alpha_mass`, `abs_value`) in both ingestion and two-phase search
 - **v2.11.0**: Initial implementation of neural sparse query with model-based and raw token support
 
 
@@ -190,13 +255,16 @@ GET /my-sparse-index/_search
 - [Neural Sparse Query Documentation](https://docs.opensearch.org/3.0/query-dsl/specialized/neural-sparse/)
 - [Neural Sparse Search Guide](https://docs.opensearch.org/3.0/vector-search/ai-search/neural-sparse-search/)
 - [Neural Search API](https://docs.opensearch.org/3.0/vector-search/api/neural/)
+- [Sparse Encoding Processor](https://docs.opensearch.org/2.19/ingest-pipelines/processors/sparse-encoding/)
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.1.0 | [#1359](https://github.com/opensearch-project/neural-search/pull/1359) | Validate model_id and analyzer mutual exclusivity |   |
 | v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |   |
+| v2.19.0 | [#988](https://github.com/opensearch-project/neural-search/pull/988) | Implement pruning for neural sparse ingestion and two-phase search | [#946](https://github.com/opensearch-project/neural-search/issues/946) |
 | v2.11.0 | - | Initial neural sparse query implementation |   |
 
 ### Issues (Design / RFC)
 - [Issue #1052](https://github.com/opensearch-project/neural-search/issues/1052): RFC for analyzer-based neural sparse query
+- [Issue #946](https://github.com/opensearch-project/neural-search/issues/946): RFC for implementing pruning for neural sparse search
