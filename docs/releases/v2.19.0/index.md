@@ -78,6 +78,9 @@
 ### security-dashboards
 - Security Dashboards Bug Fixes
 
+### dashboards-maps
+- WMS CRS Fix
+
 ### dashboards-reporting
 - Reporting Bug Fixes
 
