@@ -126,6 +126,7 @@ GET /_nodes/stats/indices/request_cache
 ## Change History
 
 - **v3.3.0**: Optimized cache clear performance by adding node-level hook; disabled caching for keyword fields with non-default `use_similarity` or `split_queries_on_whitespace`
+- **v2.19.0**: Added `indices.requests.cache.maximum_cacheable_size` setting to allow caching queries with `size > 0`
 
 
 ## References
@@ -139,6 +140,8 @@ GET /_nodes/stats/indices/request_cache
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19263](https://github.com/opensearch-project/OpenSearch/pull/19263) | Remove unnecessary iteration per-shard in request cache cleanup | [#19183](https://github.com/opensearch-project/OpenSearch/issues/19183) |
 | v3.3.0 | [#19385](https://github.com/opensearch-project/OpenSearch/pull/19385) | Disable request cache for queries on fields with non-default keyword parameters | [#19279](https://github.com/opensearch-project/OpenSearch/issues/19279) |
+| v2.19.0 | [#16484](https://github.com/opensearch-project/OpenSearch/pull/16484) | Adds cluster setting to allow caching requests with size>0 | [#16485](https://github.com/opensearch-project/OpenSearch/issues/16485) |
+| v2.19.0 | [#16570](https://github.com/opensearch-project/OpenSearch/pull/16570) | Change setting to be an int threshold | [#16485](https://github.com/opensearch-project/OpenSearch/issues/16485) |
 
 ### Issues (Design / RFC)
 - [Issue #19118](https://github.com/opensearch-project/OpenSearch/issues/19118): Repeated iteration through keys on cache clear API

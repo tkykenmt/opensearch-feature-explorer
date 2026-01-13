@@ -33,6 +33,7 @@
 - Remote Repository Validation
 - Remote Shards Balance Fix
 - Remote State Manifest
+- Request Cache
 - Search Response Headers
 - Searchable Snapshot Bug Fixes
 - Security Transport NIO
