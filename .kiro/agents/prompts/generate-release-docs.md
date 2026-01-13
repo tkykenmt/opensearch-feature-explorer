@@ -10,7 +10,7 @@ You are a release document generator. Extract version-specific changes from exis
 
 ### Step 1: Scan Feature Documents
 
-1. List all `docs/features/*.md` files (excluding index.md and language variants)
+1. List all `docs/features/{repo}/*.md` files (excluding index.md and language variants)
 2. For each file, read the Change History section
 3. Identify features that have changes for the target version
 
@@ -74,7 +74,7 @@ Create PR and merge, then return to original branch.
 docs/releases/v{version}/
 ├── index.md
 └── features/
-    ├── {feature-1}.md
-    ├── {feature-2}.md
-    └── ...
+    └── {repo}/
+        ├── {feature-1}.md
+        └── {feature-2}.md
 ```
