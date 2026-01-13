@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Flat Object Field
 - GetStats API
 - Bitmap Filtering Performance Improvement
 - Template Query
