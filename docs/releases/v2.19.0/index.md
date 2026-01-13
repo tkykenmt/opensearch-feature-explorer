@@ -11,6 +11,7 @@
 - Multi-Search Request Cancellation Fix
 - Remote Repository Validation
 - Remote Shards Balance Fix
+- Tiered Caching Bug Fixes
 - Workload Management Logging
 
 ### opensearch-dashboards
