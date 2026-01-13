@@ -70,6 +70,7 @@ The Skills plugin follows automated dependency management using Mend (formerly W
 - Test fixes may be needed when dependent plugins change their APIs
 
 ## Change History
+- **v2.19.0** (2024-12-10): Critical security fix for CVE-2022-36944 (scala-library 2.13.9), ByteBuddy 1.15.10 for module conflict resolution
 - **v2.18.0** (2024-10-29): Updated Mockito to 5.14.2, JUnit5 to 5.11.2, ByteBuddy to 1.15.4, Gradle to 8.10.2, Lombok plugin to 8.10.2; Fixed test failures from AnomalyDetector API changes
 
 
@@ -84,6 +85,8 @@ The Skills plugin follows automated dependency management using Mend (formerly W
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#496](https://github.com/opensearch-project/skills/pull/496) | Update scala-library to v2.13.9 (CVE-2022-36944) | [#495](https://github.com/opensearch-project/skills/issues/495) |
+| v2.19.0 | [#466](https://github.com/opensearch-project/skills/pull/466) | Bump byte-buddy 1.15.4 → 1.15.10 |   |
 | v2.18.0 | [#427](https://github.com/opensearch-project/skills/pull/427) | Fix test failure due to external change |   |
 | v2.18.0 | [#437](https://github.com/opensearch-project/skills/pull/437) | Update mockito monorepo to v5.14.2 |   |
 | v2.18.0 | [#363](https://github.com/opensearch-project/skills/pull/363) | Update junit5 monorepo to v5.11.2 |   |

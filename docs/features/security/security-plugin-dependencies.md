@@ -86,6 +86,7 @@ Dependency updates in the Security plugin follow this process:
 - **v3.3.0** (2026-01-14): Security fix for CVE-2025-53864 (nimbus-jose-jwt), plus 24 dependency updates including Spring 6.2.11, JJWT 0.13.0, Guava 33.5.0, and CI tooling updates
 - **v3.1.0** (2025-06-03): Major dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, Spring 6.2.7, Guava 33.4.8, JUnit 5.13.1, and CVE-2024-52798 fix
 - **v3.0.0** (2025-02-25): 13 dependency updates including Spring 6.2.5, Bouncy Castle 1.80, OpenSAML 5.1.4/9.1.4, ASM 9.8, Commons IO 2.19.0, JUnit Jupiter 5.12.2
+- **v2.19.0** (2024-12-10): Security fixes for Cypress and cross-spawn dependencies
 - **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic
 
 
@@ -144,6 +145,7 @@ Dependency updates in the Security plugin follow this process:
 | v3.0.0 | [#5266](https://github.com/opensearch-project/security/pull/5266) | Bump commons-text 1.13.0 → 1.13.1 |   |
 | v3.0.0 | [#5268](https://github.com/opensearch-project/security/pull/5268) | Bump junit-jupiter-api 5.12.1 → 5.12.2 |   |
 | v3.0.0 | [#5265](https://github.com/opensearch-project/security/pull/5265) | Bump failureaccess 1.0.2 → 1.0.3 |   |
+| v2.19.0 | [#1251](https://github.com/opensearch-project/security/pull/1251) | Bump cypress and cross-spawn version |   |
 | v2.18.0 | [#4738](https://github.com/opensearch-project/security/pull/4738) | Bump snappy-java 1.1.10.6 → 1.1.10.7 |   |
 | v2.18.0 | [#4736](https://github.com/opensearch-project/security/pull/4736) | Bump gradle.test-retry 1.5.10 → 1.6.0 |   |
 | v2.18.0 | [#4750](https://github.com/opensearch-project/security/pull/4750) | Bump commons-io 2.16.1 → 2.17.0 |   |
