@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Template Query
 - Dependency Updates
 - Fetch Source Context
 - Gradle Version Catalog
