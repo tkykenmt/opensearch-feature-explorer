@@ -70,6 +70,8 @@ flowchart TB
 | `cluster.indices.replication.strategy` | Default replication type for new indexes | `DOCUMENT` |
 | `cluster.index.restrict.replication.type` | Enforce cluster-level replication type | `false` |
 | `segrep.pressure.enabled` | Enable segment replication backpressure | `false` |
+| `segrep.pressure.checkpoint.limit` | Max checkpoints replica can fall behind before backpressure | `30` (v2.19.0+), `4` (earlier) |
+| `segrep.pressure.time.limit` | Max time replica can lag before backpressure | `5m` |
 | `cluster.routing.allocation.balance.prefer_primary` | Balance primary shards across nodes | `false` |
 | `indices.publish_check_point.retry_timeout` | Retry timeout for publish checkpoint action (v3.0.0+) | `5m` |
 
@@ -128,6 +130,7 @@ GET _cat/segment_replication?v
 - **v3.3.0** (2025-09-09): Fixed NullPointerException in SegmentReplicator.getSegmentReplicationStats() caused by race condition; Fixed reference count control in NRTReplicationEngine#acquireLastIndexCommit to prevent NoSuchFileException
 - **v3.2.0** (2025-07-01): Fixed replication lag computation to use epoch-based timestamps and corrected checkpoint pruning logic
 - **v3.0.0** (2025-05-13): Implemented shard-level stats computation on replicas; Fixed skewed lag metric when same checkpoint published twice; Increased default segment counter step size from 10 to 100,000; Added configurable publish checkpoint retry timeout setting
+- **v2.19.0** (2025-01-21): Increased default `segrep.pressure.checkpoint.limit` from 4 to 30 for better alignment with time limit on remote-backed clusters; Added granular remote publication failure statistics (`incoming_publication_failed_count`) separate from download failure stats
 
 
 ## References
@@ -150,6 +153,8 @@ GET _cat/segment_replication?v
 | v3.0.0 | [#17831](https://github.com/opensearch-project/OpenSearch/pull/17831) | Avoid skewed segment replication lag metric | [#10764](https://github.com/opensearch-project/OpenSearch/issues/10764) |
 | v3.0.0 | [#17568](https://github.com/opensearch-project/OpenSearch/pull/17568) | Increase the default segment counter step size when replica promoting | [#17566](https://github.com/opensearch-project/OpenSearch/issues/17566) |
 | v3.0.0 | [#17749](https://github.com/opensearch-project/OpenSearch/pull/17749) | Add cluster setting for retry timeout of publish checkpoint tx action | [#17595](https://github.com/opensearch-project/OpenSearch/issues/17595) |
+| v2.19.0 | [#16577](https://github.com/opensearch-project/OpenSearch/pull/16577) | Increase segrep pressure checkpoint default limit to 30 | - |
+| v2.19.0 | [#16682](https://github.com/opensearch-project/OpenSearch/pull/16682) | Add stats for remote publication failure and move download failure stats | - |
 
 ### Issues (Design / RFC)
 - [Issue #19213](https://github.com/opensearch-project/OpenSearch/issues/19213): Bug report for NRTReplicationEngine file deletion issue
