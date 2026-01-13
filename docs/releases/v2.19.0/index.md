@@ -17,6 +17,7 @@
 - Index Settings API
 - Ingest Pipeline Deprecation
 - IP Field
+- IP Field Terms Query
 - List Shards API
 - Match Only Text Field
 - Multi-Search Request Cancellation Fix
