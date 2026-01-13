@@ -127,6 +127,7 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 - **v3.4.0** (2026-01): Added webhook Basic Auth support, fixed REST header propagation, deprecated system_indices.indices setting, allowed static/custom config overlap, updated search relevance permissions; Bug fixes for multi-tenancy `.kibana` index updates, WildcardMatcher empty string handling, array validator blank string checks, audit log sensitive parameter filtering, deprecated SSL settings, BCFIPS provider bootstrap timing, AccessController migration, PrivilegesEvaluator modularization
 - **v3.3.0** (2026-01): Bug fixes for system index access when protection disabled, JWT log spam with empty roles_key
 - **v3.1.0** (2025-06-10): Bug fixes for stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements
+- **v2.19.0** (2024-12-10): Bug fixes for compliance audit log `log_request_body` setting, OpenSSL availability warning log noise reduction, OBO authenticator log level correction
 - **v2.18.0** (2024-10-29): Bug fixes for system index protection, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings
 
 
@@ -160,6 +161,9 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 | v3.1.0 | [#5279](https://github.com/opensearch-project/security/pull/5279) | Fix: Compliance audit log diff computation | [#5280](https://github.com/opensearch-project/security/issues/5280) |
 | v3.1.0 | [#5303](https://github.com/opensearch-project/security/pull/5303) | Fix: DlsFlsFilterLeafReader PointValues handling |   |
 | v3.1.0 | [#5377](https://github.com/opensearch-project/security/pull/5377) | Fix: Conditional invalid auth header logging |   |
+| v2.19.0 | [#4918](https://github.com/opensearch-project/security/pull/4918) | Fix: Honor log_request_body setting in compliance audit log | [#4534](https://github.com/opensearch-project/security/issues/4534) |
+| v2.19.0 | [#4906](https://github.com/opensearch-project/security/pull/4906) | Fix: Log OpenSSL warning only when explicitly enabled | [#4881](https://github.com/opensearch-project/security/issues/4881) |
+| v2.19.0 | [#4956](https://github.com/opensearch-project/security/pull/4956) | Fix: Change OBO disabled log level to DEBUG |   |
 | v2.18.0 | [#4775](https://github.com/opensearch-project/security/pull/4775) | Fix: Admin system index read |   |
 | v2.18.0 | [#4770](https://github.com/opensearch-project/security/pull/4770) | Fix: Remove SAML failed login audit |   |
 | v2.18.0 | [#4798](https://github.com/opensearch-project/security/pull/4798) | Fix: Handle non-flat YAML settings |   |
