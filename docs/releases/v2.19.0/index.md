@@ -4,6 +4,7 @@
 
 ### opensearch
 - Auto Date Histogram Bug Fix
+- Inner Hits Optimization
 - CI Fixes
 - Cluster State
 - Deprecation Logger Cache Bound
