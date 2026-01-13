@@ -64,7 +64,6 @@ Create PR and merge, then return to original branch.
 
 - Only process features that have the target version in Change History
 - Keep release reports focused on the delta (what's new)
-- Link back to full feature documentation
 - If a feature was introduced in this version, the release report will be more comprehensive
 - If a feature was updated, focus only on the changes
 
