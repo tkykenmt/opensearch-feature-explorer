@@ -43,6 +43,7 @@
 - Snapshot Repository
 - Snapshot Restore Settings
 - Sort Field Merging
+- Star Tree Index
 - System Indices
 - Template Query
 - Tiered Caching Bug Fixes

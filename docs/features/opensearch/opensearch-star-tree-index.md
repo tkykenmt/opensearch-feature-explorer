@@ -210,8 +210,8 @@ POST /logs/_search
 - **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
 - **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
 - **v3.0.0** (2025-05-12): Added boolean query support, terms aggregations, range aggregations, unsigned-long support
-- **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
-- **v2.18** (2024-10-22): Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
+- **v2.19.0** (2025-01-21): Added keyword field support, IP field support (indexing), object field support, date histogram with metric sub-aggregations, extensible query/field type framework
+- **v2.18.0** (2024-10-22): Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
 
 
 ## References
@@ -238,6 +238,11 @@ POST /logs/_search
 | v3.0.0 | [#17275](https://github.com/opensearch-project/OpenSearch/pull/17275) | Unsigned-long query support | [#15231](https://github.com/opensearch-project/OpenSearch/issues/15231) |
 | v3.0.0 | [#17273](https://github.com/opensearch-project/OpenSearch/pull/17273) | Range aggregations | [#16553](https://github.com/opensearch-project/OpenSearch/issues/16553) |
 | v3.0.0 | [#17165](https://github.com/opensearch-project/OpenSearch/pull/17165) | Terms aggregations (keyword/numeric) | [#16551](https://github.com/opensearch-project/OpenSearch/issues/16551) |
+| v2.19.0 | [#17137](https://github.com/opensearch-project/OpenSearch/pull/17137) | Extensible design for query and field type support | [#16537](https://github.com/opensearch-project/OpenSearch/issues/16537) |
+| v2.19.0 | [#16728](https://github.com/opensearch-project/OpenSearch/pull/16728) | Support object fields in star-tree index | [#16730](https://github.com/opensearch-project/OpenSearch/issues/16730) |
+| v2.19.0 | [#16674](https://github.com/opensearch-project/OpenSearch/pull/16674) | Date histogram with metric aggregation | [#16552](https://github.com/opensearch-project/OpenSearch/issues/16552) |
+| v2.19.0 | [#16641](https://github.com/opensearch-project/OpenSearch/pull/16641) | IP field support in star tree indexing | [#16642](https://github.com/opensearch-project/OpenSearch/issues/16642) |
+| v2.19.0 | [#16233](https://github.com/opensearch-project/OpenSearch/pull/16233) | Keyword field support in star-tree index | [#16232](https://github.com/opensearch-project/OpenSearch/issues/16232) |
 | v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query | [#15257](https://github.com/opensearch-project/OpenSearch/issues/15257) |
 
 ### Issues (Design / RFC)
