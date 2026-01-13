@@ -10,6 +10,7 @@
 
 ### ml-commons
 - ML Commons General Enhancements
+- ML Commons Multi-tenancy
 - ML Commons Tutorials
 
 ### neural-search
