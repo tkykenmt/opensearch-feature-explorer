@@ -136,4 +136,4 @@ source=index1, index2 | fields machine.os1, machine.os2
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-ppl-engine.md)
+- Full feature documentation

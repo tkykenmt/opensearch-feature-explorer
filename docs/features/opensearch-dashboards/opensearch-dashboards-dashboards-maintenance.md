@@ -73,8 +73,6 @@ Enhanced error handling for edge cases:
 
 - **v2.18.0** (2024-10-22): Version bump to 2.18.0, enhanced search API cleanup (removed ConnectionsService, deprecated routes, improved error handling)
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

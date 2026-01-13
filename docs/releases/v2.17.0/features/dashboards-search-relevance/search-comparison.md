@@ -89,4 +89,4 @@ When users navigate to a Search workspace overview page, they will see the "Comp
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-search-relevance/dashboards-search-relevance-search-comparison.md)
+- Full feature documentation

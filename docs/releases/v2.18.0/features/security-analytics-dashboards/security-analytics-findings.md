@@ -85,4 +85,4 @@ No migration required. The fix is automatically applied when upgrading to v2.18.
 
 ## Related Feature Report
 
-- [Security Analytics Dashboards Plugin](../../../features/security-analytics-dashboards/security-analytics-dashboards-plugin.md)
+- Security Analytics Dashboards Plugin

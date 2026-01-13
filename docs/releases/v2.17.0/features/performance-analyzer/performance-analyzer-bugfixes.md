@@ -73,4 +73,4 @@ GET localhost:9600/_plugins/_performanceanalyzer/metrics/units
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/performance-analyzer/performance-analyzer.md)
+- Full feature documentation

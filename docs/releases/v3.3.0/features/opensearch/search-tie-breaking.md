@@ -123,4 +123,4 @@ GET /_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-search-tie-breaking.md)
+- Full feature documentation

@@ -99,4 +99,4 @@ The fix removes the redundant `artifact bundlePlugin` line from the publications
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/user-behavior-insights/user-plugin-fixes.md)
+- Full feature documentation

@@ -113,4 +113,4 @@ After the fix, error responses return appropriate status codes:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
+- Full feature documentation

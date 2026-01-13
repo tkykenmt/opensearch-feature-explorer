@@ -118,4 +118,4 @@ The analyzer extracts tokens and their weights from the payload attribute. If no
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-neural-sparse-search.md)
+- Full feature documentation

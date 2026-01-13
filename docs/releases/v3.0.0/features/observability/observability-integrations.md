@@ -98,4 +98,4 @@ No migration required. These are internal improvements that don't affect the pub
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/observability/observability-integrations.md)
+- Full feature documentation

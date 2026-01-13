@@ -159,4 +159,4 @@ To use the data summary feature:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-discover.md)
+- Full feature documentation

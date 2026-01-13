@@ -61,4 +61,4 @@ None specific to this release.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/reporting/observability-reporting-release-maintenance.md)
+- Full feature documentation

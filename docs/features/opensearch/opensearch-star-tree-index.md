@@ -219,8 +219,6 @@ POST /logs/_search
 - **v2.19** (2024-12-10): Added date histogram aggregations, term/terms/range query support
 - **v2.18** (2024-10-22): Initial experimental release with metric aggregations (sum, min, max, avg, value_count)
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

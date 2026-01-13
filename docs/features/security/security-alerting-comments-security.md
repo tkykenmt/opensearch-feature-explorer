@@ -125,8 +125,6 @@ POST _plugins/_alerting/comments
 - **v2.17.0** (2024-09-17): Added comments search permission to `alerting_read_access`, expanded `alerting_ack_alerts` to full comment access
 - **v2.15.0** (2024-06-25): Initial Alerting Comments feature (experimental)
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

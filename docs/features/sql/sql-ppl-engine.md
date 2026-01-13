@@ -13,7 +13,7 @@ tags:
 
 The OpenSearch SQL/PPL Engine provides SQL and Piped Processing Language (PPL) query interfaces for OpenSearch. The plugin supports three query engines: V1 (legacy), V2, and V3 (Calcite-based). Starting with v3.0.0, the Calcite engine enables advanced features like joins, lookups, and subsearches.
 
-> **Note**: For detailed information about the V3 Calcite engine, including PPL commands, functions, and optimization features, see [Calcite Query Engine](sql-calcite-query-engine.md).
+> **Note**: For detailed information about the V3 Calcite engine, including PPL commands, functions, and optimization features, see Calcite Query Engine.
 
 ## Details
 
@@ -60,7 +60,7 @@ graph TB
 | V2 | Modern engine with improved features | General SQL/PPL queries |
 | V3 (Calcite) | Apache Calcite-based with advanced optimization | Joins, lookups, subsearches, analytics |
 
-For V3 Calcite engine details, see [Calcite Query Engine](sql-calcite-query-engine.md).
+For V3 Calcite engine details, see Calcite Query Engine.
 
 ### Configuration
 
@@ -104,14 +104,10 @@ POST /_plugins/_ppl
 
 ## Change History
 
-- **v3.3.0**: Calcite enabled by default; see [Calcite Query Engine](sql-calcite-query-engine.md) for details
+- **v3.3.0**: Calcite enabled by default; see Calcite Query Engine for details
 - **v3.0.0**: Apache Calcite integration (V3 engine)
 - **v2.17.0**: Increased default query size limit (200 → 10000)
 
-## Related Features
-- [Calcite Query Engine](sql-calcite-query-engine.md)
-- [Query Workbench](../dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
-- [Observability (Dashboards)](../dashboards-observability/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

@@ -127,4 +127,4 @@ No migration required. The feature is automatically enabled when viewing Vended 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-vended-dashboard-progress.md)
+- Full feature documentation

@@ -62,8 +62,11 @@ plugins:
   - search:
       lang:
         - en
-        - ja
-      separator: '[\s\-\.]+'
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
   - social
   - meta
   - git-revision-date-localized:

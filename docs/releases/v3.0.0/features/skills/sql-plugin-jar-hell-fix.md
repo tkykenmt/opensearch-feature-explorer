@@ -72,4 +72,4 @@ No migration required. This is a build-time fix that does not affect plugin conf
 
 ## Related Feature Report
 
-- [Skills Tools](../../../features/skills/skills-tools.md)
+- Skills Tools

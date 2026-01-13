@@ -70,4 +70,4 @@ No migration required. This is an internal build infrastructure change that does
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/custom-codecs/custom-codecs.md)
+- Full feature documentation

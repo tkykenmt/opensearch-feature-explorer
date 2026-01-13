@@ -90,4 +90,4 @@ The backport workflow was also improved with:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/common-utils/common-utils.md)
+- Full feature documentation

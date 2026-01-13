@@ -83,4 +83,4 @@ router.post(
 
 ## Related Feature Report
 
-- [Search Comparison feature documentation](../../../../features/dashboards-search-relevance/dashboards-search-relevance-search-comparison.md)
+- Search Comparison feature documentation

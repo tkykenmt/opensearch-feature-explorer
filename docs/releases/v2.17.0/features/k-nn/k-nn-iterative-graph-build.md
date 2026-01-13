@@ -134,4 +134,4 @@ transferLimit = max(1, streamingMemoryLimit / bytesPerVector)
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-iterative-graph-build.md)
+- Full feature documentation

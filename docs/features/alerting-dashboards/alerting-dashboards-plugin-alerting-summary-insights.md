@@ -187,8 +187,6 @@ The feature translates DSL filters to PPL for log pattern analysis:
 - **v3.0.0** (2025-01-07): Optimized alert context to use only latest active alert for AI summaries
 - **v2.18.0** (2024-11-05): Initial implementation with context-aware alert analysis and log pattern support
 
-## Related Features
-- [Alerting](../alerting/alerting.md)
 
 ## References
 

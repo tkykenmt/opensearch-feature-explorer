@@ -121,4 +121,4 @@ For plugin maintainers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/observability/observability-infrastructure.md)
+- Full feature documentation

@@ -78,4 +78,4 @@ None specific to this fix.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/alerting/alerting.md)
+- Full feature documentation

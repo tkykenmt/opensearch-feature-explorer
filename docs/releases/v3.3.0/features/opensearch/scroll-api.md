@@ -98,4 +98,4 @@ If the scroll ID references a node no longer in the cluster, the response is now
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-scroll-api.md)
+- Full feature documentation

@@ -146,8 +146,6 @@ PUT /my-index/_settings
 
 - **v3.2.0** (2025-07): Initial experimental implementation with clusterless startup mode and custom remote store path prefix support
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

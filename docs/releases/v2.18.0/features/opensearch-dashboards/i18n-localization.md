@@ -140,4 +140,4 @@ yarn i18n:extract
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-i18n-localization.md)
+- Full feature documentation

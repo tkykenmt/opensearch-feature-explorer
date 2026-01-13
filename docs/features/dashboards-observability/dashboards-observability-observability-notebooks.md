@@ -143,9 +143,6 @@ Notebooks are stored as saved objects in the `.kibana` index. Each notebook cont
 - **v2.17.0** (2024-09-17): UI improvements (badge counter in breadcrumbs, simplified delete workflow); fixed sample notebooks for MDS environments
 - **v1.0.0** (2021-07-12): Initial production release with SQL, PPL, and visualization support
 
-## Related Features
-- [SQL/PPL](../sql/sql-calcite-query-engine.md)
-- [Observability](../observability/observability-cypress-updates.md)
 
 ## References
 

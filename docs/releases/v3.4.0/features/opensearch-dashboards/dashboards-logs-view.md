@@ -112,4 +112,4 @@ No migration required. The new UI is automatically available when viewing trace 
 
 ## Related Feature Report
 
-- [Explore Traces](../../../../features/opensearch-dashboards/opensearch-dashboards-explore-traces.md)
+- Explore Traces

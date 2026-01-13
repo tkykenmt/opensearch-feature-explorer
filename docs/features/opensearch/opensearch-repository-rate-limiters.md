@@ -125,8 +125,6 @@ PUT /_snapshot/s3-repository
 
 - **v3.2.0** (2025-07-01): Made rate limiter settings dynamically reloadable without repository recreation
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

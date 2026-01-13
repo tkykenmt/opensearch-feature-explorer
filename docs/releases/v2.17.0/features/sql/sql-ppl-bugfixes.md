@@ -82,4 +82,4 @@ Corrected the job type assignment for Batch and IndexDML queries, ensuring prope
 
 ## Related Feature Report
 
-- [SQL/PPL Engine](../../../features/sql/sql-ppl-engine.md)
+- SQL/PPL Engine

@@ -93,4 +93,4 @@ With concurrent segment search enabled (`search.concurrent_segment_search.mode: 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-concurrent-segment-search.md)
+- Full feature documentation

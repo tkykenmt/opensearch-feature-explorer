@@ -147,4 +147,4 @@ These changes are backward compatible. The UI automatically adapts based on the 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security-dashboards/security-dashboards-plugin.md)
+- Full feature documentation

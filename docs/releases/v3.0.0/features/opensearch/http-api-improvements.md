@@ -100,4 +100,4 @@ curl -X PUT "localhost:9200/test-index" -H 'Content-Type: application/json' -d'i
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-http-api.md)
+- Full feature documentation

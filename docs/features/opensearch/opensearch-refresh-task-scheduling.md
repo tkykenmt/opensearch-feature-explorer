@@ -121,8 +121,6 @@ PUT /my-index/_settings
 
 - **v3.0.0** (2025-05-06): Initial implementation with cluster-level setting and dynamic sleep duration calculation
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

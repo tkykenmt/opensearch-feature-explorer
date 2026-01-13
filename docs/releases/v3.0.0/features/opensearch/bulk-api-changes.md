@@ -117,4 +117,4 @@ POST _bulk
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-bulk-api.md)
+- Full feature documentation

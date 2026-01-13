@@ -135,8 +135,6 @@ PUT /my-warm-index
 
 - **v3.1.0**: Initial implementation - pluggable composite directory factory with default implementation
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

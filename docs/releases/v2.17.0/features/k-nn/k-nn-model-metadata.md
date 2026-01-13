@@ -136,4 +136,4 @@ GET /_plugins/_knn/models/my-model?filter_path=model_id,state,model_version
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/k-nn-model-metadata.md)
+- Full feature documentation

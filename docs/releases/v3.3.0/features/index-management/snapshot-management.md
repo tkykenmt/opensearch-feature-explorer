@@ -174,4 +174,4 @@ POST _plugins/_sm/policies/combined-policy
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/index-management/index-management-snapshot-management.md)
+- Full feature documentation

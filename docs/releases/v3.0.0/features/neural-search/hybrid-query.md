@@ -324,4 +324,4 @@ GET /my-index/_search?search_pipeline=v3-hybrid-pipeline
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-hybrid-query.md)
+- Full feature documentation

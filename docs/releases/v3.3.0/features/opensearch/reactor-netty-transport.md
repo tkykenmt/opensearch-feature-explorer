@@ -122,4 +122,4 @@ Users who were affected by this bug and had to use workarounds (like starting th
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-reactor-netty-transport.md)
+- Full feature documentation

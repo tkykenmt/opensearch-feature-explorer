@@ -178,4 +178,4 @@ This is a new experimental feature. To enable:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-ai-chat.md)
+- Full feature documentation

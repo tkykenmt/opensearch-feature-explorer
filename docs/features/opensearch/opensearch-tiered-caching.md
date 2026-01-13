@@ -122,8 +122,6 @@ GET /_nodes/stats/caches/request_cache?level=tier
 - **v2.14.0** (2024-05-14): Initial experimental tiered caching support for request cache
 - **v2.13.0** (2024-04-02): cache-ehcache plugin introduced for disk cache implementation
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

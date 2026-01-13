@@ -101,4 +101,4 @@ No migration required. This is a backward-compatible enhancement that only affec
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-debugging.md)
+- Full feature documentation

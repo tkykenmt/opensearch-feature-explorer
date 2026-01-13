@@ -121,4 +121,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-refresh-task-scheduling.md)
+- Full feature documentation

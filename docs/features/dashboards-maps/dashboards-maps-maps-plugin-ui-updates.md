@@ -170,8 +170,6 @@ if (showActionsInGroup) {
 - **v2.18.0** (2024-10-22): Fix flyout overlay issue with new application header by adjusting pushMinBreakpoint to 1576px
 - **v2.17.0** (2024-09-17): Initial implementation of conditional new header UI support
 
-## Related Features
-- [Geospatial](../geospatial/geospatial-plugin.md)
 
 ## References
 

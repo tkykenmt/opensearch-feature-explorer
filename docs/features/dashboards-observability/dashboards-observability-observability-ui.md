@@ -108,9 +108,6 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 - **v2.18.0** (2024-10-22): Services data picker fix, header control styling updates, custom traces table with filtering (All Spans, Traces, Service Entry, Trace Root), overview page typography, Getting Started workflow restructure (Logs/Metrics/Traces), CI build cache optimization, navigation fixes, x-axis label rotation, and trace-to-logs redirection improvements
 - **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns
 
-## Related Features
-- [SQL/PPL](../sql/sql-calcite-query-engine.md)
-- [Observability](../observability/observability-cypress-updates.md)
 
 ## References
 

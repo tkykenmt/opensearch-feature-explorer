@@ -187,8 +187,6 @@ Widget C,19.99,200
 
 - **v3.0.0** (2025): Initial implementation with CSV, JSON, and NDJSON support; MDS compatibility; file upload and text input modes
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

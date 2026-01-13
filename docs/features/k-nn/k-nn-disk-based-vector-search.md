@@ -189,9 +189,6 @@ This approach requires no pretraining and can begin ingestion immediately.
 - **v2.18.0**: Bug fixes for segments without vector fields
 - **v2.17.0**: Initial implementation with mode/compression parameters, binary quantization, and two-phase rescoring
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

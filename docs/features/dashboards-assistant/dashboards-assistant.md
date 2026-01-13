@@ -92,17 +92,13 @@ graph TB
 
 - **v3.1.0** (2026-01-10): Bug fixes for UI behavior, error logging, insights request timing, and conversation loading state
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 
 ### Documentation
 - [dashboards-assistant repository](https://github.com/opensearch-project/dashboards-assistant)
-- [Text to Visualization](dashboards-assistant-text-to-visualization.md)
-- [AI Assistant Chatbot](dashboards-assistant-ai-assistant-chatbot.md)
+- Text to Visualization
+- AI Assistant Chatbot
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |

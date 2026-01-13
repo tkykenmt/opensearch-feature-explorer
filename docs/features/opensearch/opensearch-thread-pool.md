@@ -169,8 +169,6 @@ Response includes pool-specific metrics:
 
 - **v3.4.0** (2025-10-17): Added ForkJoinPool thread pool type support for work-stealing parallelism
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

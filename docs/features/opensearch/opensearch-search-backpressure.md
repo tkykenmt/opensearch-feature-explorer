@@ -132,8 +132,6 @@ PUT /_cluster/settings
 - **v3.0.0** (2025-05-06): Added `completion_count` field to stats API for calculating cancellation percentages
 - **v2.18.0** (2024-11-05): Added validation for `cancellation_rate`, `cancellation_ratio`, and `cancellation_burst` settings to prevent cluster crashes
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

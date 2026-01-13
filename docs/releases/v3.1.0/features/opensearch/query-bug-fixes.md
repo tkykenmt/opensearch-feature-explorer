@@ -148,4 +148,4 @@ POST test/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/query-bug-fixes.md)
+- Full feature documentation

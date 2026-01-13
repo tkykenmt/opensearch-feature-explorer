@@ -140,11 +140,6 @@ POST /_plugins/_ml/mcp/tools/_register
 
 - **v3.2.0**: Initial implementation - proper 400 errors for agent execution and MCP tool registration
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

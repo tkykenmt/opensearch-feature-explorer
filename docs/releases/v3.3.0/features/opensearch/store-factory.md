@@ -148,4 +148,4 @@ PUT /my-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-store-factory.md)
+- Full feature documentation

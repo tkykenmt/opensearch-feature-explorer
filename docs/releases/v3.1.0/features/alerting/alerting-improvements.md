@@ -160,4 +160,4 @@ Added error handling for log pattern extraction in alert insights, gracefully ig
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/alerting/alerting.md)
+- Full feature documentation

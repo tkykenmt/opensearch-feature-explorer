@@ -125,8 +125,6 @@ cluster.allocator.existing_shards_allocator.batch_enabled: false
 - **v2.14.0** (2024-05-21): Added configurable timeout settings for batch allocators
 - **v2.9.0** (2023-07-18): Initial batch fetch implementation (experimental, disabled by default)
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

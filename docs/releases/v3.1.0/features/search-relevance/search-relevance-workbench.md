@@ -187,4 +187,4 @@ PUT _plugin/_search_relevance/judgments
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/search-relevance/search-relevance-workbench.md)
+- Full feature documentation

@@ -84,8 +84,6 @@ GET /_nodes?filter_path=nodes.*.version
 - **v3.0.0**: Upgrade to Apache Lucene 10
 - **v2.18.0**: Upgrade to Apache Lucene 9.12.0 with new Lucene912PostingsFormat, JDK 23 Panama Vectorization support, dynamic range facets, and various performance optimizations
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

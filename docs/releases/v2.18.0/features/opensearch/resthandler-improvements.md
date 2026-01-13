@@ -105,4 +105,4 @@ This fix was prompted by [PR #14718](https://github.com/opensearch-project/OpenS
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-resthandler-wrapper.md)
+- Full feature documentation

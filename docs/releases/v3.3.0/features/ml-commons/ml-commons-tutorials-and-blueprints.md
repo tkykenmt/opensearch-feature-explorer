@@ -158,4 +158,4 @@ Shows how to build context-aware AI agents using OpenSearch agentic memory APIs 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-documentation-tutorials.md)
+- Full feature documentation

@@ -141,8 +141,6 @@ PUT /new_index?has_permission_check=true
 
 - **v3.2.0** (2025-07-25): Initial implementation - Added `has_permission_check` query parameter for permission validation without request execution
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

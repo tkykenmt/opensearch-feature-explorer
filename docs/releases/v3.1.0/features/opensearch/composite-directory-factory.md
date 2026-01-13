@@ -129,4 +129,4 @@ PUT /my-warm-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-composite-directory-factory.md)
+- Full feature documentation

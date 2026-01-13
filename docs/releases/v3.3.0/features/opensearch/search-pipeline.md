@@ -242,4 +242,4 @@ public Map<String, SystemGeneratedFactory<SearchRequestProcessor>>
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-search-pipeline.md)
+- Full feature documentation

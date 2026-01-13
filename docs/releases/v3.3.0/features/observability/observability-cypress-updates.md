@@ -61,4 +61,4 @@ The `@cypress/request` dependency was updated from version 3.0.1 to 3.0.9 to add
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/observability/observability-cypress-updates.md)
+- Full feature documentation

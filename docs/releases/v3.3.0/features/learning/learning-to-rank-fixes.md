@@ -127,4 +127,4 @@ CI workflow updated to generate and upload coverage reports to Codecov.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/learning/learning-to-rank.md)
+- Full feature documentation

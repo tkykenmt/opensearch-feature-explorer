@@ -124,4 +124,4 @@ public void testFlsFieldMasking() {
 
 ## Related Feature Report
 
-- [Security Testing Framework](../../../features/security/security-testing-framework.md)
+- Security Testing Framework

@@ -200,8 +200,6 @@ PUT _plugins/_ism/policies/hot-warm-policy
 - **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
 - **v3.0.0** (2025-03-18): Established warm/hot tiering foundation - renamed "search" node role to "warm" for warm indices; introduced new exclusive "search" role for search-only shards; added `index.warm` setting; renamed feature flag to `WRITABLE_WARM_INDEX_EXPERIMENTAL_FLAG`
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

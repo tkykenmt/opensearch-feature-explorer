@@ -153,4 +153,4 @@ The `sparse_embedding_format` parameter is now correctly passed through to the r
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-connector.md)
+- Full feature documentation

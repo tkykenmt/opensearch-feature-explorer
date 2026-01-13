@@ -168,10 +168,6 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 - **v3.1.0** (2025-06-16): Bug fixes - data model restructuring, LLM judgment improvements, search request builder fix, hybrid optimizer fix, input validation
 - **v3.1.0** (2025-06-06): Added realistic ESCI-based test dataset with 150 queries and matching judgments
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Learning to Rank](../learning/learning-to-rank.md)
 
 ## References
 

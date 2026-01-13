@@ -128,4 +128,4 @@ Note: Existing pipelines with long IDs will continue to work, but you cannot upd
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-pipeline-id-limits.md)
+- Full feature documentation

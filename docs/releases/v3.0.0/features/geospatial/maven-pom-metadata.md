@@ -108,4 +108,4 @@ After the fix, the following POM files contain proper metadata:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/geospatial/geospatial-plugin.md)
+- Full feature documentation

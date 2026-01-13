@@ -60,4 +60,4 @@ This release includes governance updates across four repositories:
 
 ## Related Feature Report
 
-- [Maintainer Updates](../../../features/multi-plugin/multi-plugin-maintainer-updates.md)
+- Maintainer Updates

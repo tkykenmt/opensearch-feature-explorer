@@ -142,4 +142,4 @@ GET /test/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-query-string-regex.md)
+- Full feature documentation

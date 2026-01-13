@@ -308,8 +308,6 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - **v2.18.0** (2024-11-05): Added `plugins.rollup.search.search_source_indices` setting to allow searching non-rollup and rollup indices together, UX improvements (refresh buttons, section header styling), transform API input validation, fixed snapshot status detection, fixed snapshot policy button reload, fixed data source initialization
 - **v2.17.0** (2024-09-17): Performance optimization for skip execution check using cluster service instead of NodesInfoRequest, security integration test fixes
 
-## Related Features
-- [Job Scheduler](../job-scheduler/job-scheduler.md)
 
 ## References
 

@@ -161,8 +161,6 @@ GET /my-index/_search
 
 - **v3.0.0** (2025-05-06): Removed `MinimizationOperations` class; stopped minimizing automata for case-insensitive matches to prevent memory exhaustion
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

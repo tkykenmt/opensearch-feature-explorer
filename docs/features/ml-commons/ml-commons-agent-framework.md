@@ -244,11 +244,6 @@ PUT /_plugins/_ml/agents/{agent_id}
 - **v3.0.0** (2025-05-13): Plan-Execute-Reflect agent type, MCP server integration
 - **v2.13.0** (2024-03-26): Initial agent framework with flow and conversational agents
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

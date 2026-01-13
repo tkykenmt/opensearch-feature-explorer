@@ -105,4 +105,4 @@ When viewing a dashboard with visualizations from multiple data sources, search 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/multi-plugin/multi-plugin-multi-data-source-support.md)
+- Full feature documentation

@@ -212,4 +212,4 @@ curl -X PUT 'localhost:9200/_cluster/settings' -H 'Content-Type: application/jso
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/query-insights/query-insights.md)
+- Full feature documentation

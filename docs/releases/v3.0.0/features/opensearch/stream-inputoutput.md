@@ -138,4 +138,4 @@ EnumSet<MyEnum> result = in.readOptionalEnumSet(MyEnum.class);
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-stream-inputoutput.md)
+- Full feature documentation

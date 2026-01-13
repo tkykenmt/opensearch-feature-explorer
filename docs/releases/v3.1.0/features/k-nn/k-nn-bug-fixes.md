@@ -146,4 +146,4 @@ With shard-level query execution, slice count wasn't honored for the core search
 
 ## Related Feature Report
 
-- [Full k-NN documentation](../../../features/k-nn/k-nn.md)
+- Full k-NN documentation

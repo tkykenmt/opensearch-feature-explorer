@@ -70,4 +70,4 @@ The Security plugin received dependency updates for 5 libraries:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-plugin.md)
+- Full feature documentation

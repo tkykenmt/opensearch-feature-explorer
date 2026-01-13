@@ -139,4 +139,4 @@ POST /_plugins/_ml/agents/_register
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-bugfixes.md)
+- Full feature documentation

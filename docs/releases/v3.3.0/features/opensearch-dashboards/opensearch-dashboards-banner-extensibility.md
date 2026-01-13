@@ -136,4 +136,4 @@ For plugin developers who were relying on the banner plugin's previous architect
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-banner-plugin.md)
+- Full feature documentation

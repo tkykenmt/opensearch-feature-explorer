@@ -134,4 +134,4 @@ The HttpCore5/HttpClient5 upgrade enables:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-dependency-management.md)
+- Full feature documentation

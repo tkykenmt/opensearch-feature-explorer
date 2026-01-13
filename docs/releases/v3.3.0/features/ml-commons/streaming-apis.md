@@ -192,4 +192,4 @@ data: {"inference_results":[{"output":[{"name":"response","dataAsMap":{"content"
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-streaming-apis.md)
+- Full feature documentation

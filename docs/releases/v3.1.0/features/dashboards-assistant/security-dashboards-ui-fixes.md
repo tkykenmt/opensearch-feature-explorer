@@ -97,4 +97,4 @@ No configuration changes are required. These fixes are automatically applied whe
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-assistant/dashboards-assistant.md)
+- Full feature documentation

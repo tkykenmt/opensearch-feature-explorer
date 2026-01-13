@@ -173,8 +173,6 @@ OpenSearch requires read access to cgroup files for CPU statistics on Linux:
 - **v3.4.0** (2026-01-11): Fixed negative CPU usage values on Linux systems with combined cpu,cpuacct cgroup controller
 - **v3.0.0** (2025-05-13): Fixed NullPointerException when gathering node stats with QueryGroupTasks that don't have queryGroupId set
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

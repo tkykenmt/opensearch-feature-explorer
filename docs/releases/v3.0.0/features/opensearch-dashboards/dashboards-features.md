@@ -137,4 +137,4 @@ Enhances the Discover page scrolling behavior:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-features.md)
+- Full feature documentation

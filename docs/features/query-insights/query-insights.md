@@ -201,8 +201,6 @@ GET /_insights/live_queries?sort=latency&size=5
 - **v2.17.0**: Fixed listener startup when query metrics enabled; added query shape hash method; fixed CVE-2023-2976; improved integration test coverage for query grouping; added code hygiene checks (Spotless, Checkstyle); fixed snapshot publishing configuration
 - **v2.12.0**: Initial release with Top N queries feature
 
-## Related Features
-- [Performance Analyzer](../performance-analyzer/performance-analyzer.md)
 
 ## References
 

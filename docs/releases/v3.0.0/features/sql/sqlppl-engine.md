@@ -178,4 +178,4 @@ source=otel_logs /* OpenTelemetry logs */
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-ppl-engine.md)
+- Full feature documentation

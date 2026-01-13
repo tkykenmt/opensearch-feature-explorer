@@ -164,4 +164,4 @@ This plugin is intended for local testing only. For production use cases, contin
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-pull-based-ingestion.md)
+- Full feature documentation

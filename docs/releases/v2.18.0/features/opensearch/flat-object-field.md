@@ -109,4 +109,4 @@ PUT /test-index/_doc/4
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-flat-object-field.md)
+- Full feature documentation

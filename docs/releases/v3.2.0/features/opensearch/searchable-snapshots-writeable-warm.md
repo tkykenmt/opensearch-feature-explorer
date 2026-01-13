@@ -155,4 +155,4 @@ In this example with a 1GB file cache and remote_data_ratio of 2:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-warm-storage-tiering.md)
+- Full feature documentation

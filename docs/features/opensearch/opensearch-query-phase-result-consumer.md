@@ -126,8 +126,6 @@ POST /my-index/_search?batched_reduce_size=256
 - **v3.3.0** (2025-10-02): Hardened circuit breaker logic with proactive memory checks before consuming results; centralized failure handling in `onFailure` method; renamed classes for clarity (`PendingMerges` → `PendingReduces`, `MergeTask` → `ReduceTask`, `MergeResult` → `ReduceResult`)
 - **v3.3.0** (2025-09-04): Fixed incomplete callback loops by adding graceful failure handling, clearing pending merge tasks on failure, and properly canceling tasks when failures are detected
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

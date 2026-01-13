@@ -121,4 +121,4 @@ public class ShiroIdentityPlugin extends Plugin implements IdentityPlugin, Actio
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-identity-feature-flag-removal.md)
+- Full feature documentation

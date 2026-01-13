@@ -85,4 +85,4 @@ assert request1.hashCode() == request2.hashCode(); // Now works correctly
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-replication.md)
+- Full feature documentation

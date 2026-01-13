@@ -132,4 +132,4 @@ These are internal dependency updates. No user-facing configuration changes are 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-core-dependencies.md)
+- Full feature documentation

@@ -119,4 +119,4 @@ No migration required. This is a bugfix that improves i18n compliance without ch
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-i18n-localization.md)
+- Full feature documentation

@@ -188,4 +188,4 @@ graph TB
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/ppl-opensearch-dashboards-query-enhancements.md)
+- Full feature documentation

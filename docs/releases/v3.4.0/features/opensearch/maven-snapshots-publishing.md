@@ -113,4 +113,4 @@ For developers consuming OpenSearch snapshots:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-maven-snapshots-publishing.md)
+- Full feature documentation

@@ -96,4 +96,4 @@ No migration required. UI changes are applied automatically upon upgrading to v2
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/index-management-dashboards/index-management-dashboards.md)
+- Full feature documentation

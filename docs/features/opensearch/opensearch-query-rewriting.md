@@ -212,8 +212,6 @@ QueryRewriterRegistry.INSTANCE.registerRewriter(new QueryRewriter() {
 
 - **v3.3.0** (2026-01): Initial implementation with five built-in rewriters (boolean flattening, must-to-filter, must-not-to-should, terms merging, match-all removal)
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

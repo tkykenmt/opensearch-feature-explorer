@@ -136,4 +136,4 @@ Rollback operations work correctly in multi-node clusters:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-configuration-versioning.md)
+- Full feature documentation

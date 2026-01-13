@@ -120,4 +120,4 @@ POST _plugins/_sql?pretty
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-pagination.md)
+- Full feature documentation

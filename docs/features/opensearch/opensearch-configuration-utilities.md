@@ -126,8 +126,6 @@ The utility provides consistent, informative error messages:
 
 - **v3.0.0** (2025-02-05): Initial implementation - Added ConfigurationUtils to core library with support for string, boolean, int, and double property parsing
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

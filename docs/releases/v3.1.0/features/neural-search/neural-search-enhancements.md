@@ -142,5 +142,5 @@ PUT _ingest/pipeline/char-chunking-pipeline
 
 ## Related Feature Report
 
-- [Text Chunking](../../../../features/neural-search/neural-search-text-chunking.md)
-- [Neural Sparse Search](../../../../features/neural-search/neural-search-neural-sparse-search.md)
+- Text Chunking
+- Neural Sparse Search

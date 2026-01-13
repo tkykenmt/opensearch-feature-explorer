@@ -100,4 +100,4 @@ request.headers['Content-Length'] = body.length.toString();
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
+- Full feature documentation

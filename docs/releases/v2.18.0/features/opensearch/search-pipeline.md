@@ -108,4 +108,4 @@ No migration required. This is a backward-compatible enhancement. Existing msear
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-search-pipeline.md)
+- Full feature documentation

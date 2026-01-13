@@ -116,4 +116,4 @@ POST /my-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-jdk-25-support.md)
+- Full feature documentation

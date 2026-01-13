@@ -255,10 +255,6 @@ Forecasting uses the same security framework as anomaly detection:
 
 - **v3.1.0** (2025-07-08): Bug fixes for task state handling, date format compatibility, cold-start/window delay refinements, UI validation and error display improvements, missing data error surfacing, Create Forecaster UI enhancements
 
-## Related Features
-- [Alerting](../alerting/alerting.md)
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Job Scheduler](../job-scheduler/job-scheduler.md)
 
 ## References
 

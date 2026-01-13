@@ -80,4 +80,4 @@ No migration steps required. These are maintenance updates that do not change th
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-query-workbench/dashboards-query-workbench-query-workbench.md)
+- Full feature documentation

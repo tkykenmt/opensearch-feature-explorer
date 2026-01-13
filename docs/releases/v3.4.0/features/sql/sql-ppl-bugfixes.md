@@ -182,4 +182,4 @@ source=accounts
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-ppl-bug-fixes.md)
+- Full feature documentation

@@ -168,10 +168,6 @@ POST _plugins/_alerting/monitors
 - **v2.18.0** (2024-11-05): Doc-level monitor improvements including dynamic query index deletion (`delete_query_index_in_every_run` flag), query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
 - **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes
 
-## Related Features
-- [Notifications](../notifications/notifications-plugin.md)
-- [Anomaly Detection](../anomaly-detection/anomaly-detection.md)
-- [Common Utils](../common-utils/common-utils.md)
 
 ## References
 

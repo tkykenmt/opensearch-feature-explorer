@@ -117,4 +117,4 @@ POST /api/assistant/data2summary
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-ai-insights.md)
+- Full feature documentation

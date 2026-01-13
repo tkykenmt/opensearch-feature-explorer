@@ -69,4 +69,4 @@ The "Associate data sources" button in the Data Sources page had a bug where cli
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/chart-visualization-fixes.md)
+- Full feature documentation

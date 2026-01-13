@@ -269,8 +269,6 @@ npm run start:ag-ui
 - **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
 - **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

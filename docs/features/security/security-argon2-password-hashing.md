@@ -181,8 +181,6 @@ $argon2id$v=19$m=65536,t=3,p=1$<salt>$<hash>
 
 - **v3.2.0** (2025-07): Initial implementation with full parameter configurability
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

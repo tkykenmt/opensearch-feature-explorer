@@ -131,4 +131,4 @@ Benchmarks using the `nyc_taxis` workload with 2 primary shards and 1 replica sh
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-segment-warmer.md)
+- Full feature documentation

@@ -185,8 +185,6 @@ SearchResponse response = builder.execute().actionGet();
 - **v3.3.0** (2025-10): Added numeric terms aggregator, cardinality aggregator, query planning for flush mode, dynamic cluster setting, request cache handling
 - **v3.2.0** (2025-08): Initial implementation with stream transport framework and streaming terms aggregation with max sub-aggregation support
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

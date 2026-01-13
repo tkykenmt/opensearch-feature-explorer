@@ -145,4 +145,4 @@ POST /_plugins/_flow_framework/workflow/<workflow_id>/_reprovision?wait_for_comp
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/flow-framework/flow-framework.md)
+- Full feature documentation

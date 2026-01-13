@@ -94,4 +94,4 @@ repositories {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/user-behavior-insights/user-behavior-insights-build.md)
+- Full feature documentation

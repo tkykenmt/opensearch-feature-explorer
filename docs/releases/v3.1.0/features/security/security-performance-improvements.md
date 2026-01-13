@@ -145,4 +145,4 @@ Based on benchmarks from the PR, users with many attributes see significant impr
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-performance-improvements.md)
+- Full feature documentation

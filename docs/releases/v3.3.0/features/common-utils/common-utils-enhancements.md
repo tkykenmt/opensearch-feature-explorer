@@ -120,4 +120,4 @@ List<String> customAttributeNames = List.of("attr1=value1", "attr2=value2");
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/common-utils/common-utils.md)
+- Full feature documentation

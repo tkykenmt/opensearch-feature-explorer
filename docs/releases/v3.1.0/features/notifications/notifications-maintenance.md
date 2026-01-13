@@ -71,4 +71,4 @@ For plugin developers extending the Notifications plugin:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/notifications/notifications-plugin.md)
+- Full feature documentation

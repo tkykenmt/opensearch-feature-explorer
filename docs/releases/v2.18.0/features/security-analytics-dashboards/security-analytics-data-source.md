@@ -116,4 +116,4 @@ The overview page getting started cards were redesigned with:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-analytics-dashboards/security-analytics-dashboards-plugin.md)
+- Full feature documentation

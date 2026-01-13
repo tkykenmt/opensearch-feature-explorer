@@ -107,4 +107,4 @@ To reproduce the fixed behavior:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/dashboard-and-visualization-fixes.md)
+- Full feature documentation

@@ -117,4 +117,4 @@ This is an additive change with no breaking changes. Existing code continues to 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-content-management.md)
+- Full feature documentation

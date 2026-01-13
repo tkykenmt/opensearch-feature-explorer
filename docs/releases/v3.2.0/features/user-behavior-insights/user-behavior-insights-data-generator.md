@@ -110,4 +110,4 @@ This enhancement supports:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/user-behavior-insights/user-behavior-insights-data-generator.md)
+- Full feature documentation

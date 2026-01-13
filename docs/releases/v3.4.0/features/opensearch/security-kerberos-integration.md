@@ -94,4 +94,4 @@ No migration required. The Hadoop upgrade is backward compatible. Existing HDFS 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-hdfs-repository-kerberos.md)
+- Full feature documentation

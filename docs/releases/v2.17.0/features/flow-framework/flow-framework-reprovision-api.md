@@ -217,4 +217,4 @@ PUT /_plugins/_flow_framework/workflow/<workflow_id>?reprovision=true
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/flow-framework/flow-framework.md)
+- Full feature documentation

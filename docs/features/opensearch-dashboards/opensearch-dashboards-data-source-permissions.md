@@ -103,8 +103,6 @@ When a user lacks permission, the wrapper throws a forbidden error:
 
 - **v2.18.0** (2024-11-05): Fixed missing saved object client functions in permission wrapper
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

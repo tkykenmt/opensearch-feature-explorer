@@ -116,4 +116,4 @@ No migration required. This is a bug fix that improves error handling without ch
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-reindex-api.md)
+- Full feature documentation

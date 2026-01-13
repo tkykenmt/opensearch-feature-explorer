@@ -61,4 +61,4 @@ const updateObject: InternalUserUpdate = {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-dashboards-plugin/security-dashboards-bugfixes.md)
+- Full feature documentation

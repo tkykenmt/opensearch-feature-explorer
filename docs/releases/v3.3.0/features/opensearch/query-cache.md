@@ -111,4 +111,4 @@ PUT _cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-query-cache.md)
+- Full feature documentation

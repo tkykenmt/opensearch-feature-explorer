@@ -155,9 +155,6 @@ http://host:port/app/observability-traces#/services
 - **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
 - **v2.17.0** (2024-09-17): Custom source support (experimental) for custom span/service indices with CCS support, landing page changed to Traces, Multi-Data Source bug fixes, URL routing fixes, breadcrumb navigation improvements
 
-## Related Features
-- [SQL/PPL](../sql/sql-calcite-query-engine.md)
-- [Observability](../observability/observability-cypress-updates.md)
 
 ## References
 

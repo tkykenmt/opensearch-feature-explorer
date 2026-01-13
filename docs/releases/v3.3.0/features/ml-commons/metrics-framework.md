@@ -81,4 +81,4 @@ New test cases were added to `MLCommonsClusterEventListenerTests.java` to verify
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-metrics-framework.md)
+- Full feature documentation

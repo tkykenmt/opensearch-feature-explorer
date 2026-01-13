@@ -143,8 +143,6 @@ public class MyFipsTests extends MyTests implements RestClientFipsAwareTestCase 
 
 - **v3.4.0** (2026-01): Test suite FIPS 140-3 compliance support with BC-FIPS provider
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

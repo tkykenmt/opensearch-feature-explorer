@@ -136,4 +136,4 @@ This ordering ensures that custom expressions are resolved before the WildcardEx
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-custom-index-name-resolver.md)
+- Full feature documentation

@@ -107,4 +107,4 @@ curl -XGET "https://localhost:9200/_plugins/_security/health"
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-plugin-health-check.md)
+- Full feature documentation

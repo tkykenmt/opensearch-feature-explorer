@@ -61,4 +61,4 @@ Users attempting to load OTEL sample data on OpenSearch versions prior to 2.13 w
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-sample-data.md)
+- Full feature documentation

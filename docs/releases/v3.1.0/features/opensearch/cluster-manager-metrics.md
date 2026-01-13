@@ -145,4 +145,4 @@ The `fsHealth.failure.count` metric increments each time a filesystem health che
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-cluster-manager-metrics.md)
+- Full feature documentation

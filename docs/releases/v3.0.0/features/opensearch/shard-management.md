@@ -129,4 +129,4 @@ PUT /_cluster/settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-shard-allocation.md)
+- Full feature documentation

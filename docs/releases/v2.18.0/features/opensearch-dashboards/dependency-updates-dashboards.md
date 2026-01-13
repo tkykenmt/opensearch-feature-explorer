@@ -67,4 +67,4 @@ No migration steps required. The dependency updates are backward compatible.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dependency-updates.md)
+- Full feature documentation

@@ -94,4 +94,4 @@ This ensures that when users navigate between Channels, Email Senders, and Email
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-notifications/dashboards-notifications.md)
+- Full feature documentation

@@ -115,8 +115,6 @@ Failed to restore snapshot: alias [rollover_alias] has more than one write index
 
 - **v3.3.0** (2025): Initial implementation - Added `alias_write_index_policy` parameter to Restore Snapshot API
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

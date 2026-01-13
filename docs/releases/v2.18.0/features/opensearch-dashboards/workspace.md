@@ -167,4 +167,4 @@ opensearchDashboards.dashboardAdmin.users: ["admin"]
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-workspace.md)
+- Full feature documentation

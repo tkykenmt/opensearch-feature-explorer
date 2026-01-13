@@ -110,8 +110,6 @@ aggregation:
 - **v2.18.0** (2024-11-12): Extended `WithFieldName` to `ValuesSourceAggregationBuilder` and `FieldSortBuilder`; added `successfulSearchShardIndices` to `SearchRequestContext`
 - **v2.17.0** (2024-09-17): Initial `WithFieldName` interface added for QueryBuilder classes
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -136,4 +136,4 @@ public Eval rewriteAsEval() {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-ppl-spath-command.md)
+- Full feature documentation

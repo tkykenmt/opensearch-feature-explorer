@@ -143,8 +143,6 @@ Using the aggregated view:
 
 - **v3.2.0** (2026-01-10): Added workspace-aware scope support for default data source retrieval
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

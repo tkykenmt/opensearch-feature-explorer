@@ -236,10 +236,6 @@ POST /_plugins/_ml/agents/_register
 - **v3.3.0** (2026-01-11): Conversational agent support, neural search query generation, unified model configuration, automatic index mapping and sample document retrieval
 - **v3.2.0** (2026-01-10): Initial experimental implementation with `agentic` query clause and `agentic_query_translator` processor
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

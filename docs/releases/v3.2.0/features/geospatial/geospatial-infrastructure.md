@@ -78,4 +78,4 @@ Fixed a flaky test in `UploadStatsServiceTests.java` that could fail due to dupl
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/geospatial/geospatial-plugin.md)
+- Full feature documentation

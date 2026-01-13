@@ -103,4 +103,4 @@ No configuration changes required. The optimization is automatically applied to 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-index-output.md)
+- Full feature documentation

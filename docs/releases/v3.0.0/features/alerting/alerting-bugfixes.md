@@ -84,4 +84,4 @@ Example mapping that now works correctly:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/alerting/alerting.md)
+- Full feature documentation

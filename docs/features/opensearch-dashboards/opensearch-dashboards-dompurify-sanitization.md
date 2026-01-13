@@ -89,8 +89,6 @@ const cleanHTML = DOMPurify.sanitize(dirtyHTML, {
 - **v2.17.1** (2024-10-01): Updated to 3.1.6 to fix CVE-2024-45801 (nesting-based mXSS)
 - **v2.5.0** (2023-01-24): Initial integration for table visualization URL formatting
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

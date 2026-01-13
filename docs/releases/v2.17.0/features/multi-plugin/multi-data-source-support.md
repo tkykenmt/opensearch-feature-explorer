@@ -113,4 +113,4 @@ This ensures that when users navigate between Channels, Email Senders, and Email
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-multi-data-source-support.md)
+- Full feature documentation

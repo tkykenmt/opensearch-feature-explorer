@@ -132,4 +132,4 @@ data.savedQueriesNewUI.enabled: true
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-saved-query-ux.md)
+- Full feature documentation

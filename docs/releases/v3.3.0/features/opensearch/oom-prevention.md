@@ -127,4 +127,4 @@ No configuration changes are required. The protection is automatically enabled. 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-oom-prevention.md)
+- Full feature documentation

@@ -102,10 +102,6 @@ GET .opensearch-sap-*/_settings?flat_settings=true
 
 - **v2.18.0** (2024-10-29): Standardized system index settings (1 primary shard, 1-20 replicas), added dedicated query indices option, fixed correlation alert refresh policy
 
-## Related Features
-- [Security](../security/security-alerting-comments-security.md)
-- [Alerting](../alerting/alerting.md)
-- [Notifications](../notifications/notifications-plugin.md)
 
 ## References
 

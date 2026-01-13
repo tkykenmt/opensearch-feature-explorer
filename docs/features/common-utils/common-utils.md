@@ -139,9 +139,6 @@ ReplicationPluginInterface.stopReplication(client, request, listener)
 - **v3.2.0** (2025-07-17): Security fix for CVE-2025-48734, reverted batch findings API, upgraded to Gradle 8.14 and JDK 24
 - **v3.0.0** (2025-03-19): Added replication plugin interface, fixed transport package imports, added pipe character escaping in user info
 
-## Related Features
-- [Alerting](../alerting/alerting.md)
-- [Notifications](../notifications/notifications-plugin.md)
 
 ## References
 

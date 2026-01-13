@@ -114,8 +114,6 @@ The Reactor Netty transport enables several advanced features:
 - **v3.2.0** (2025-07-15): Added `SecureHttpTransportParameters` interface for cleaner SSL configuration
 - **v2.17.0** (2024-09-17): Initial streaming support with reactor-netty4 transport
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

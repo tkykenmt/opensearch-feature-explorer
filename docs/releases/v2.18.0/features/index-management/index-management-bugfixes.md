@@ -131,4 +131,4 @@ onSelectedDataSources = (dataSources: DataSourceOption[]) => {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/index-management/index-management.md)
+- Full feature documentation

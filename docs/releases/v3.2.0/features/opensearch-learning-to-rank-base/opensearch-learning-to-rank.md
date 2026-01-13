@@ -67,4 +67,4 @@ The ULP (Units in Last Place) value of 30,000 means there can be up to 30,000 re
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/learning/learning-to-rank.md)
+- Full feature documentation

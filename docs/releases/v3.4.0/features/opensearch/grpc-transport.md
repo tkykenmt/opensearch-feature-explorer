@@ -207,4 +207,4 @@ public class MyPlugin extends Plugin implements GrpcInterceptorProvider {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-grpc-transport--services.md)
+- Full feature documentation

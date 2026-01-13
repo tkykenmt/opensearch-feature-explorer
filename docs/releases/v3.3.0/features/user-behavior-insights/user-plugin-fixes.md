@@ -60,4 +60,4 @@ configurations.all {
 
 ## Related Feature Report
 
-- [UBI Data Generator](../../../../features/user-behavior-insights/user-behavior-insights-data-generator.md)
+- UBI Data Generator

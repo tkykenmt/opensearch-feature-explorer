@@ -176,4 +176,4 @@ PUT /_search/pipeline/rerank_pipeline
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/ml-commons/ml-commons-model-inference.md)
+- Full feature documentation

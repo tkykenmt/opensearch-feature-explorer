@@ -111,4 +111,4 @@ These are internal API changes. No migration is required for end users. Plugin d
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-search-api-enhancements.md)
+- Full feature documentation

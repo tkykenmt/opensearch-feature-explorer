@@ -191,10 +191,6 @@ POST _plugins/_security_analytics/threat_intel/sources/
 - **v2.17.0** (2024-09-17): Bug fixes for security (user validation, context stashing), stability (multi-node race conditions, event-driven lock release), and integration with standard detectors
 - **v2.15.0**: Initial threat intelligence feature with S3, IOC_UPLOAD, and URL_DOWNLOAD source types
 
-## Related Features
-- [Security](../security/security-alerting-comments-security.md)
-- [Alerting](../alerting/alerting.md)
-- [Notifications](../notifications/notifications-plugin.md)
 
 ## References
 

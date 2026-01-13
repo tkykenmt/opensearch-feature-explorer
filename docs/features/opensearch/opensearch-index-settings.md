@@ -167,8 +167,6 @@ PUT my-index/_settings
 - **v3.4.0** (2025-01-15): Added custom creation_date setting and tier-aware shard limit validation
 - **v2.18.0** (2024-11-05): Fixed default value handling when `index.number_of_replicas` and `index.number_of_routing_shards` are set to `null`
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

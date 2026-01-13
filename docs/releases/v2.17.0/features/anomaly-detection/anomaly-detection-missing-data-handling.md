@@ -218,4 +218,4 @@ When imputation occurs, the anomaly result includes a `feature_imputed` array:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection-missing-data-handling.md)
+- Full feature documentation

@@ -104,4 +104,4 @@ GET .tasks/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-task-management.md)
+- Full feature documentation

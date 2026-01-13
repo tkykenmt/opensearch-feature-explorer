@@ -156,4 +156,4 @@ This is a transparent performance optimization. No migration steps required.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-docvalues-optimization.md)
+- Full feature documentation

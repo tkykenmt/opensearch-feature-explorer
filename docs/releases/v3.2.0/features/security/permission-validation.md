@@ -122,4 +122,4 @@ This is a new feature with no migration required. The feature is available immed
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-permission-validation.md)
+- Full feature documentation

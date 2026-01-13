@@ -88,4 +88,4 @@ No migration required. This is a bug fix that restores expected behavior for plu
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-role-mapping.md)
+- Full feature documentation

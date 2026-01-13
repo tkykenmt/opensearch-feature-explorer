@@ -130,4 +130,4 @@ If the feature name doesn't exist or is disabled, the API will return a validati
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

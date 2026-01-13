@@ -236,4 +236,4 @@ index:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/deprecated-opensearch-code-cleanup.md)
+- Full feature documentation

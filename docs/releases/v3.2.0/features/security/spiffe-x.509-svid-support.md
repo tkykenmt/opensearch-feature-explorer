@@ -134,4 +134,4 @@ node:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-spiffe-x.509-svid-support.md)
+- Full feature documentation

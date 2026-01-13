@@ -124,8 +124,6 @@ PUT _cluster/settings
 - **v3.0.0** (2025-05-06): Enabled default throttling for all task types with predefined thresholds; introduced `ClusterManagerTask` enum
 - **v2.4.0** (2022-11-15): Initial implementation of cluster manager task throttling (disabled by default)
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -123,4 +123,4 @@ No migration is required. The fix is transparent and automatically applies to al
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-wildcard-field.md)
+- Full feature documentation

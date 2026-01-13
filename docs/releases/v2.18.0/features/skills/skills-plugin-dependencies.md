@@ -72,4 +72,4 @@ No migration steps required. These are internal dependency updates that maintain
 | [#434](https://github.com/opensearch-project/skills/pull/434) | Update io.freefair.lombok to v8.10.2 |
 
 ## Related Feature Report
-- [Full feature documentation](../../../features/skills/skills-opensearch-plugin-dependencies.md)
+- Full feature documentation

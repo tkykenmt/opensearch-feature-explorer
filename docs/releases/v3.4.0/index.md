@@ -8,239 +8,239 @@ tags:
 
 # OpenSearch v3.4.0 Release
 
-- [Release Summary](summary.md)
+- Release Summary
 
 ## Features
 
 ### OpenSearch
 
-- [Aggregation Optimizations](features/opensearch/opensearch-aggregation-optimizations.md) - Hybrid cardinality collector, filter rewrite + skip list, MergingDigest for percentiles, matrix_stats primitive arrays
-- [Filter Rewrite Optimization](features/opensearch/opensearch-filter-rewrite-optimization.md) - Bulk collection APIs for filter rewrite sub-aggregation with up to 20% performance improvement
-- [GRPC Transport](features/opensearch/grpc-transport.md) - Pluggable interceptors, thread context preservation, binary document formats, expanded query support
-- [ApproximatePointRangeQuery Pack Method Optimization](features/opensearch/approximate-point-range-query.md) - Use Lucene's native `pack` method for `half_float` and `unsigned_long` types
-- [Build Tool Upgrades](features/opensearch/build-tool-upgrades.md) - Gradle 9.1 and bundled JDK 25 updates
-- [Concurrent Segment Search](features/opensearch/opensearch-concurrent-segment-search.md) - Performance optimization by omitting MaxScoreCollector when sorting by score
-- [Context Aware Segments](features/opensearch/opensearch-context-aware-segments.md) - Collocate related documents into same segments based on grouping criteria for improved query performance
-- [Index Settings](features/opensearch/opensearch-index-settings.md) - Custom creation_date setting and tier-aware shard limit validation for local and remote indices
-- [Segment Grouping](features/opensearch/segment-grouping.md) - Mapper for defining context-aware segment grouping criteria with Painless script support
-- [Dependency Updates (OpenSearch Core)](features/opensearch/dependency-updates-opensearch-core.md) - 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness
-- [Engine Refactoring](features/opensearch/engine-refactoring.md) - Move prepareIndex/prepareDelete to Engine class and make NoOpResult constructors public
-- [FIPS Compliance](features/opensearch/opensearch-fips-compliance.md) - Test suite FIPS 140-3 compliance support with BC-FIPS provider
-- [JDK 25 Support](features/opensearch/opensearch-jdk-25-support.md) - Painless scripting compatibility fix for JDK 25 ClassValue behavioral change
-- [Lucene Integration](features/opensearch/opensearch-lucene-integration.md) - Remove MultiCollectorWrapper and use Lucene's native MultiCollector API
-- [Lucene Upgrade](features/opensearch/opensearch-lucene-upgrade.md) - Bump Apache Lucene from 10.3.1 to 10.3.2 with MaxScoreBulkScorer bug fix
-- [Maven Snapshots Publishing](features/opensearch/opensearch-maven-snapshots-publishing.md) - Migrate snapshot publishing from Sonatype to S3-backed repository at ci.opensearch.org
-- [Merged Segment Warmer](features/opensearch/merged-opensearch-segment-warmer.md) - GA graduation with configurable resiliency features and cluster-level merge scheduler settings
-- [Node Stats Bugfixes](features/opensearch/node-stats-bugfixes.md) - Fix negative CPU usage values in node stats on certain Linux distributions
-- [Normalizer Enhancements](features/opensearch/opensearch-normalizer-enhancements.md) - Allow truncate token filter in normalizers for keyword field truncation
-- [S3 Repository](features/opensearch/opensearch-s3-repository.md) - Add LEGACY_MD5_CHECKSUM_CALCULATION to opensearch.yml settings for S3-compatible storage
-- [Scroll Query Optimization](features/opensearch/scroll-opensearch-query-optimization.md) - Cache StoredFieldsReader per segment for improved scroll query performance
-- [Search API Tracker](features/opensearch/opensearch-search-api-tracker.md) - Track search response status codes at coordinator node for observability
-- [Security Kerberos Integration](features/opensearch/security-kerberos-integration.md) - Update Hadoop to 3.4.2 and enable Kerberos integration tests for JDK-24+
-- [Settings Bugfixes](features/opensearch/settings-bugfixes.md) - Fix duplicate registration of dynamic settings and patch version build issues
-- [Stats Builder Pattern Deprecations](features/opensearch/stats-builder-pattern-deprecations.md) - Deprecated constructors in 30+ Stats classes in favor of Builder pattern
-- [Terms Query Optimization](features/opensearch/terms-opensearch-query-optimization.md) - Pack terms once for keyword fields with index and docValues enabled
-- [Thread Pool](features/opensearch/opensearch-thread-pool.md) - ForkJoinPool thread pool type support for work-stealing parallelism
-- [Transport Actions API](features/opensearch/opensearch-transport-actions-api.md) - Internal API for retrieving metadata about requested indices from transport actions
-- [XContent Filtering](features/opensearch/opensearch-xcontent-filtering.md) - Case-insensitive filtering support for XContentMapValues.filter
-- [Plugin Dependencies](features/opensearch/opensearch-plugin-dependencies.md) - Range semver support for dependencies in plugin-descriptor.properties
-- [Query String Monitoring](features/opensearch/opensearch-query-string-monitoring.md) - Monitoring mode for query string length validation with warning logs instead of rejection
-- [Repository Encryption](features/opensearch/opensearch-repository-encryption.md) - Server-side encryption support for S3 remote store repositories
-- [ActionPlugin Enhancements](features/opensearch/actionplugin-enhancements.md) - Pass REST header registry to getRestHandlerWrapper for efficient header access
-- [WildcardFieldMapper](features/opensearch/wildcardfieldmapper.md) - Change doc_values default to true for nested query support
+- Aggregation Optimizations - Hybrid cardinality collector, filter rewrite + skip list, MergingDigest for percentiles, matrix_stats primitive arrays
+- Filter Rewrite Optimization - Bulk collection APIs for filter rewrite sub-aggregation with up to 20% performance improvement
+- GRPC Transport - Pluggable interceptors, thread context preservation, binary document formats, expanded query support
+- ApproximatePointRangeQuery Pack Method Optimization - Use Lucene's native `pack` method for `half_float` and `unsigned_long` types
+- Build Tool Upgrades - Gradle 9.1 and bundled JDK 25 updates
+- Concurrent Segment Search - Performance optimization by omitting MaxScoreCollector when sorting by score
+- Context Aware Segments - Collocate related documents into same segments based on grouping criteria for improved query performance
+- Index Settings - Custom creation_date setting and tier-aware shard limit validation for local and remote indices
+- Segment Grouping - Mapper for defining context-aware segment grouping criteria with Painless script support
+- Dependency Updates (OpenSearch Core) - 32 dependency updates including Netty 4.2.4 for HTTP/3 readiness
+- Engine Refactoring - Move prepareIndex/prepareDelete to Engine class and make NoOpResult constructors public
+- FIPS Compliance - Test suite FIPS 140-3 compliance support with BC-FIPS provider
+- JDK 25 Support - Painless scripting compatibility fix for JDK 25 ClassValue behavioral change
+- Lucene Integration - Remove MultiCollectorWrapper and use Lucene's native MultiCollector API
+- Lucene Upgrade - Bump Apache Lucene from 10.3.1 to 10.3.2 with MaxScoreBulkScorer bug fix
+- Maven Snapshots Publishing - Migrate snapshot publishing from Sonatype to S3-backed repository at ci.opensearch.org
+- Merged Segment Warmer - GA graduation with configurable resiliency features and cluster-level merge scheduler settings
+- Node Stats Bugfixes - Fix negative CPU usage values in node stats on certain Linux distributions
+- Normalizer Enhancements - Allow truncate token filter in normalizers for keyword field truncation
+- S3 Repository - Add LEGACY_MD5_CHECKSUM_CALCULATION to opensearch.yml settings for S3-compatible storage
+- Scroll Query Optimization - Cache StoredFieldsReader per segment for improved scroll query performance
+- Search API Tracker - Track search response status codes at coordinator node for observability
+- Security Kerberos Integration - Update Hadoop to 3.4.2 and enable Kerberos integration tests for JDK-24+
+- Settings Bugfixes - Fix duplicate registration of dynamic settings and patch version build issues
+- Stats Builder Pattern Deprecations - Deprecated constructors in 30+ Stats classes in favor of Builder pattern
+- Terms Query Optimization - Pack terms once for keyword fields with index and docValues enabled
+- Thread Pool - ForkJoinPool thread pool type support for work-stealing parallelism
+- Transport Actions API - Internal API for retrieving metadata about requested indices from transport actions
+- XContent Filtering - Case-insensitive filtering support for XContentMapValues.filter
+- Plugin Dependencies - Range semver support for dependencies in plugin-descriptor.properties
+- Query String Monitoring - Monitoring mode for query string length validation with warning logs instead of rejection
+- Repository Encryption - Server-side encryption support for S3 remote store repositories
+- ActionPlugin Enhancements - Pass REST header registry to getRestHandlerWrapper for efficient header access
+- WildcardFieldMapper - Change doc_values default to true for nested query support
 
 ### Security
 
-- [Resource Sharing](features/security/resource-sharing.md) - Multi-type index support, ResourceProvider interface, Builder pattern, REST API improvements
-- [Security AccessController Migration](features/security/security-accesscontroller-migration.md) - Migrate from deprecated java.security.AccessController to org.opensearch.secure_sm.AccessController
-- [Security Bugfixes](features/security/security-bugfixes.md) - Multi-tenancy `.kibana` index fix, WildcardMatcher empty string handling, DLS/FLS internal request fix, PrivilegesEvaluator modularization
-- [Security Configuration](features/security/security-configuration.md) - Dedicated config reloading thread, dynamic resource settings, X509v3 SAN authentication, performance optimizations, securityadmin timeout
-- [Security Features](features/security/security-features.md) - Webhook Basic Auth, REST header propagation, system indices deprecation, static/custom config overlap, search relevance permissions
-- [WLM Security Attributes](features/security/wlm-security-attributes.md) - Security attribute extraction for WLM rule-based auto-tagging (username, roles)
-- [GitHub Actions Updates](features/security/security-github-actions-updates.md) - Update GitHub Actions dependencies to support Node.js 24 runtime
+- Resource Sharing - Multi-type index support, ResourceProvider interface, Builder pattern, REST API improvements
+- Security AccessController Migration - Migrate from deprecated java.security.AccessController to org.opensearch.secure_sm.AccessController
+- Security Bugfixes - Multi-tenancy `.kibana` index fix, WildcardMatcher empty string handling, DLS/FLS internal request fix, PrivilegesEvaluator modularization
+- Security Configuration - Dedicated config reloading thread, dynamic resource settings, X509v3 SAN authentication, performance optimizations, securityadmin timeout
+- Security Features - Webhook Basic Auth, REST header propagation, system indices deprecation, static/custom config overlap, search relevance permissions
+- WLM Security Attributes - Security attribute extraction for WLM rule-based auto-tagging (username, roles)
+- GitHub Actions Updates - Update GitHub Actions dependencies to support Node.js 24 runtime
 
 ### Security Dashboards Plugin
 
-- [Security Dashboards Bugfixes](features/security-dashboards-plugin/security-dashboards-bugfixes.md) - Filter blank backend roles before creating internal user
+- Security Dashboards Bugfixes - Filter blank backend roles before creating internal user
 
 ### Security Analytics Dashboards Plugin
 
-- [Security Analytics Bugfixes](features/security-analytics-dashboards-plugin/security-analytics-bugfixes.md) - Fix correlation table rendering bug in correlations overview page
+- Security Analytics Bugfixes - Fix correlation table rendering bug in correlations overview page
 
 ### Alerting
 
-- [PPL Alerting](features/alerting/alerting-ppl-alerting.md) - V2 alerting API with PPL query support, stateless alerts with automatic expiration, per-result and result-set trigger modes
+- PPL Alerting - V2 alerting API with PPL query support, stateless alerts with automatic expiration, per-result and result-set trigger modes
 
 ### OpenSearch Dashboards
 
-- [Dashboards AI Insights](features/opensearch-dashboards/opensearch-dashboards-dashboards-ai-insights.md) - Detection Insights workspace category and log pattern agent support for Discover Summary
-- [Dashboards Chat](features/opensearch-dashboards/dashboards-chat.md) - Global search integration, suggestion system, state persistence, session storage, Explore integration
-- [Dashboards Dev Tools](features/opensearch-dashboards/dashboards-opensearch-dashboards-dev-tools.md) - PATCH method support for Dev Tools console
-- [Dashboards Explore](features/opensearch-dashboards/dashboards-opensearch-dashboards-explore.md) - Histogram breakdowns, Field Statistics tab, trace flyout, correlations, cancel query, and by-value embeddables
-- [Dashboards Global Search](features/opensearch-dashboards/dashboards-opensearch-dashboards-global-search.md) - Assets search and enhanced command system for global search
-- [Dashboards CSP](features/opensearch-dashboards/opensearch-dashboards-dashboards-csp.md) - Dynamic configuration support for CSP report-only mode
-- [Dashboards Data Connections](features/opensearch-dashboards/dashboards-opensearch-dashboards-data-connections.md) - Prometheus saved object support for data connections
-- [Dashboards Query Action Service](features/opensearch-dashboards/dashboards-query-action-service.md) - Flyout registration support for query panel actions
-- [Dashboards Visualizations](features/opensearch-dashboards/dashboards-visualizations.md) - Bar gauge, customizable legends, numerical color fields, and table column ordering
-- [Dashboards Workspace](features/opensearch-dashboards/dashboards-opensearch-dashboards-workspace.md) - Remove restriction requiring data source for workspace creation
-- [Dashboards Traces](features/opensearch-dashboards/dashboards-traces.md) - Span status filters and trace details UX improvements
-- [Dashboards Dataset Management](features/opensearch-dashboards/dashboards-opensearch-dashboards-dataset-management.md) - Schema mapping, wildcard prefix, and enhanced dataset table
+- Dashboards AI Insights - Detection Insights workspace category and log pattern agent support for Discover Summary
+- Dashboards Chat - Global search integration, suggestion system, state persistence, session storage, Explore integration
+- Dashboards Dev Tools - PATCH method support for Dev Tools console
+- Dashboards Explore - Histogram breakdowns, Field Statistics tab, trace flyout, correlations, cancel query, and by-value embeddables
+- Dashboards Global Search - Assets search and enhanced command system for global search
+- Dashboards CSP - Dynamic configuration support for CSP report-only mode
+- Dashboards Data Connections - Prometheus saved object support for data connections
+- Dashboards Query Action Service - Flyout registration support for query panel actions
+- Dashboards Visualizations - Bar gauge, customizable legends, numerical color fields, and table column ordering
+- Dashboards Workspace - Remove restriction requiring data source for workspace creation
+- Dashboards Traces - Span status filters and trace details UX improvements
+- Dashboards Dataset Management - Schema mapping, wildcard prefix, and enhanced dataset table
 
 ## Bug Fixes
 
 ### Alerting
 
-- [Alerting Build](features/alerting/alerting-build.md) - Fix build script to only publish alerting plugin zip, excluding sample remote monitor plugin
+- Alerting Build - Fix build script to only publish alerting plugin zip, excluding sample remote monitor plugin
 
 ### Alerting Dashboards Plugin
 
-- [Alerting Enhancements](features/alerting-dashboards-plugin/alerting-enhancements.md) - Keyword filter support for bucket-level monitor triggers and MDS client fix for OpenSearch API calls
+- Alerting Enhancements - Keyword filter support for bucket-level monitor triggers and MDS client fix for OpenSearch API calls
 
 ### OpenSearch
 
-- [Java Agent](features/opensearch/java-agent.md) - Fix JRT protocol URL filtering to allow MCP server connections
-- [Bulk Request Bugfixes](features/opensearch/bulk-request-bugfixes.md) - Fix indices property initialization during BulkRequest deserialization
-- [Bulk API Enhancements](features/opensearch/bulk-api-enhancements.md) - Implement error_trace parameter support for bulk requests
-- [Cluster State & Allocation Bugfixes](features/opensearch/cluster-state-allocation-bugfixes.md) - Fix concurrent modification in allocation filters and version compatibility in remote state
-- [Data Stream & Index Template Bugfixes](features/opensearch/data-stream-index-template-bugfixes.md) - Fix deletion of unused index templates matching data streams with lower priority
-- [GRPC Transport Bugfixes](features/opensearch/grpc-transport-bugfixes.md) - Fix ClassCastException for large requests, Bulk API fixes, and node bootstrap with streaming transport
-- [Pull-based Ingestion Bugfixes](features/opensearch/pull-based-ingestion-bugfixes.md) - Fix out-of-bounds offset handling and remove persisted pointers for at-least-once guarantees
-- [Pull-based Ingestion Enhancements](features/opensearch/pull-based-ingestion-enhancements.md) - Offset-based lag metric, periodic flush, message mappers, and dynamic consumer configuration
-- [Query Bugfixes](features/opensearch/query-bugfixes.md) - Fix crashes in wildcard queries, aggregations, highlighters, and script score queries
-- [Reactor Netty Transport](features/opensearch/opensearch-reactor-netty-transport.md) - Fix HTTP channel tracking and release during node shutdown
-- [Shard Allocation](features/opensearch/opensearch-shard-allocation.md) - Fix WeightFunction constraint reset when updating balance factors
-- [Shard & Segment Bugfixes](features/opensearch/shard-segment-bugfixes.md) - Fix merged segment warmer exceptions, ClusterService state assertion, and EngineConfig builder
-- [Snapshot & Restore Bugfixes](features/opensearch/snapshot-restore-bugfixes.md) - Fix NullPointerException when restoring remote snapshot with missing shard size information
+- Java Agent - Fix JRT protocol URL filtering to allow MCP server connections
+- Bulk Request Bugfixes - Fix indices property initialization during BulkRequest deserialization
+- Bulk API Enhancements - Implement error_trace parameter support for bulk requests
+- Cluster State & Allocation Bugfixes - Fix concurrent modification in allocation filters and version compatibility in remote state
+- Data Stream & Index Template Bugfixes - Fix deletion of unused index templates matching data streams with lower priority
+- GRPC Transport Bugfixes - Fix ClassCastException for large requests, Bulk API fixes, and node bootstrap with streaming transport
+- Pull-based Ingestion Bugfixes - Fix out-of-bounds offset handling and remove persisted pointers for at-least-once guarantees
+- Pull-based Ingestion Enhancements - Offset-based lag metric, periodic flush, message mappers, and dynamic consumer configuration
+- Query Bugfixes - Fix crashes in wildcard queries, aggregations, highlighters, and script score queries
+- Reactor Netty Transport - Fix HTTP channel tracking and release during node shutdown
+- Shard Allocation - Fix WeightFunction constraint reset when updating balance factors
+- Shard & Segment Bugfixes - Fix merged segment warmer exceptions, ClusterService state assertion, and EngineConfig builder
+- Snapshot & Restore Bugfixes - Fix NullPointerException when restoring remote snapshot with missing shard size information
 
 ### OpenSearch Dashboards
 
-- [Dashboards Bugfixes](features/opensearch-dashboards/dashboards-bugfixes.md) - SQL query parser fix, Axios CVE update, DOMPurify import, dashboard utilities type checks
-- [Dashboards Console](features/opensearch-dashboards/opensearch-dashboards-dashboards-console.md) - Fix for console_polling setting update
-- [Dashboards Navigation](features/opensearch-dashboards/dashboards-opensearch-dashboards-navigation.md) - Fix disabled prop propagation for navigation links
-- [Dashboards CI/Tests](features/opensearch-dashboards/dashboards-dashboards-observability-search-relevance-ci-tests.md) - Update unit test workflow to include 3.* branch support
+- Dashboards Bugfixes - SQL query parser fix, Axios CVE update, DOMPurify import, dashboard utilities type checks
+- Dashboards Console - Fix for console_polling setting update
+- Dashboards Navigation - Fix disabled prop propagation for navigation links
+- Dashboards CI/Tests - Update unit test workflow to include 3.* branch support
 
 ### Dashboards Assistant
 
-- [Discover Summary](features/dashboards-assistant/discover-summary.md) - Log pattern detection for Discover Summary with specialized agent selection
-- [Dashboards Assistant Bugfixes](features/dashboards-assistant/dashboards-assistant-bugfixes.md) - Text2Viz header fix and capability services access settings fix
+- Discover Summary - Log pattern detection for Discover Summary with specialized agent selection
+- Dashboards Assistant Bugfixes - Text2Viz header fix and capability services access settings fix
 
 ### Dashboards Flow Framework
 
-- [Dashboards Agent & Assistant](features/dashboards-flow-framework/dashboards-agent-assistant.md) - Agent summary visualization, memory integration, simplified configuration, automatic response filters
-- [Dashboards Flow Framework Bugfixes](features/dashboards-flow-framework/dashboards-flow-framework-bugfixes.md) - Gracefully handle workflows with no provisioned resources
+- Dashboards Agent & Assistant - Agent summary visualization, memory integration, simplified configuration, automatic response filters
+- Dashboards Flow Framework Bugfixes - Gracefully handle workflows with no provisioned resources
 
 ### Dashboards Observability
 
-- [Observability CI/Tests](features/dashboards-observability/observability-dashboards-observability-search-relevance-ci-tests.md) - CI workflow updates for 3.4.0, snapshot repository migration, test snapshot updates
-- [Observability Integrations](features/dashboards-observability/observability-integrations.md) - Static file serving cleanup with image type validation and SVG sanitization
+- Observability CI/Tests - CI workflow updates for 3.4.0, snapshot repository migration, test snapshot updates
+- Observability Integrations - Static file serving cleanup with image type validation and SVG sanitization
 
 ### Dashboards Reporting
 
-- [Reporting Bugfixes](features/dashboards-reporting/reporting-bugfixes.md) - Security fix for CVE-2025-57810 (jspdf bump) and null/undefined datetime handling in CSV reports
+- Reporting Bugfixes - Security fix for CVE-2025-57810 (jspdf bump) and null/undefined datetime handling in CSV reports
 
 ### Dashboards Notifications
 
-- [Notifications UX](features/dashboards-notifications/notifications-ux.md) - Fix channel name edit refetching on every keystroke
+- Notifications UX - Fix channel name edit refetching on every keystroke
 
 ### User Behavior Insights
 
-- [User Behavior Insights Build](features/user-behavior-insights/user-behavior-insights-build.md) - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
-- [User Behavior Insights Bugfixes](features/user-behavior-insights/user-behavior-insights-bugfixes.md) - ActionFilter interface adaptation, CI build script fix, plugin zip publishing fix
+- User Behavior Insights Build - Migrate Maven snapshot publishing from Sonatype to S3-backed repository
+- User Behavior Insights Bugfixes - ActionFilter interface adaptation, CI build script fix, plugin zip publishing fix
 
 ### Search Relevance
 
-- [Agentic Search](features/dashboards-search-relevance/neural-search-agentic-search.md) - Pairwise comparison support, MCP server integration, conversational search UI, source parameter preservation
-- [Scheduled Experiments](features/search-relevance/search-relevance-scheduled-experiments.md) - Cron-based scheduling for recurring experiment execution with historical results tracking
-- [Query Sets & Judgment Lists](features/dashboards-search-relevance/query-sets-judgment-lists.md) - GUID filtering support for Query Sets with strongly typed QuerySetItem interface
-- [Search Relevance CI/Tests](features/search-relevance/dashboards-observability-search-relevance-ci-tests.md) - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
-- [Search Relevance Bugfixes](features/search-relevance/search-relevance-bugfixes.md) - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL
-- [Hybrid Optimizer Bugfixes](features/search-relevance/hybrid-optimizer-bugfixes.md) - Fix floating-point precision in weight generation and error handling for deleted judgments
-- [Security Integration Test Control](features/search-relevance/search-relevance-security-integ-test-control.md) - System property to control security plugin integration in tests
+- Agentic Search - Pairwise comparison support, MCP server integration, conversational search UI, source parameter preservation
+- Scheduled Experiments - Cron-based scheduling for recurring experiment execution with historical results tracking
+- Query Sets & Judgment Lists - GUID filtering support for Query Sets with strongly typed QuerySetItem interface
+- Search Relevance CI/Tests - Test dependency fixes, JDWP debugging support, deprecated API removal, and test code cleanups
+- Search Relevance Bugfixes - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL
+- Hybrid Optimizer Bugfixes - Fix floating-point precision in weight generation and error handling for deleted judgments
+- Security Integration Test Control - System property to control security plugin integration in tests
 
 ### SQL
 
-- [PPL Eval Functions](features/sql/sql-ppl-eval-functions.md) - New multivalue functions (mvappend, mvindex, mvdedup), tostring conversion function, and regexp_replace alias
-- [PPL Timechart Functions](features/sql/ppl-timechart-functions.md) - Rate-based aggregation functions (per_second, per_minute, per_hour, per_day), millisecond span support, custom timefield option, merged timechart/chart implementation
-- [PPL Query Optimization](features/sql/ppl-opensearch-query-optimization.md) - 33 enhancements including sort pushdown, aggregation optimization, distinct count approx, case-to-range queries, fillnull command, YAML explain format
-- [SQL/PPL Bugfixes](features/sql/sql-ppl-bugfixes.md) - 48 bug fixes including memory exhaustion fix, race condition fix, rex nested capture groups, filter pushdown improvements, and CVE-2025-48924
-- [SQL CI/Tests](features/sql/sql-dashboards-observability-search-relevance-ci-tests.md) - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
-- [SQL Documentation](features/sql/sql-documentation.md) - PPL command documentation standardization, typo fixes, enhanced examples, and function documentation improvements
-- [PPL Commands (Calcite)](features/sql/sql-ppl-commands-calcite.md) - New PPL commands (chart, streamstats, multisearch, replace, appendpipe) and enhancements (bucket_nullable, usenull, pushdown optimizations)
+- PPL Eval Functions - New multivalue functions (mvappend, mvindex, mvdedup), tostring conversion function, and regexp_replace alias
+- PPL Timechart Functions - Rate-based aggregation functions (per_second, per_minute, per_hour, per_day), millisecond span support, custom timefield option, merged timechart/chart implementation
+- PPL Query Optimization - 33 enhancements including sort pushdown, aggregation optimization, distinct count approx, case-to-range queries, fillnull command, YAML explain format
+- SQL/PPL Bugfixes - 48 bug fixes including memory exhaustion fix, race condition fix, rex nested capture groups, filter pushdown improvements, and CVE-2025-48924
+- SQL CI/Tests - CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
+- SQL Documentation - PPL command documentation standardization, typo fixes, enhanced examples, and function documentation improvements
+- PPL Commands (Calcite) - New PPL commands (chart, streamstats, multisearch, replace, appendpipe) and enhancements (bucket_nullable, usenull, pushdown optimizations)
 
 ### Query Insights
 
-- [Query Insights CI/Tests](features/query-insights/dashboards-observability-search-relevance-ci-tests.md) - Multi-node integration tests, health stats REST API tests, and flaky test fixes
+- Query Insights CI/Tests - Multi-node integration tests, health stats REST API tests, and flaky test fixes
 
 ### Query Insights Dashboards
 
-- [Query Version-Aware Settings](features/query-insights-dashboards/query-version-aware-settings.md) - Version-aware settings support for dynamic feature detection based on cluster version
-- [WLM Dashboards Bugfixes](features/query-insights-dashboards/wlm-dashboards-bugfixes.md) - Fix MDS selector visibility on Workload Management pages when new home page UI is enabled
-- [Query Insights Bugfixes](features/query-insights-dashboards/query-insights-bugfixes.md) - Exclude internal `top_queries-*` indices, MDS support for WLM routes, Jest test fixes
+- Query Version-Aware Settings - Version-aware settings support for dynamic feature detection based on cluster version
+- WLM Dashboards Bugfixes - Fix MDS selector visibility on Workload Management pages when new home page UI is enabled
+- Query Insights Bugfixes - Exclude internal `top_queries-*` indices, MDS support for WLM routes, Jest test fixes
 
 ### k-NN
 
-- [k-NN Build](features/k-nn/k-nn-build.md) - SIMD library build support and S3 snapshots migration
-- [k-NN Enhancements](features/k-nn/k-nn-enhancements.md) - Native SIMD scoring for FP16, VectorSearcherHolder memory optimization, MMR rerank refactoring
-- [k-NN Memory Optimized Warmup](features/k-nn/k-nn-memory-optimized-warmup.md) - Optimized warmup procedure for memory-optimized search with page cache pre-loading
+- k-NN Build - SIMD library build support and S3 snapshots migration
+- k-NN Enhancements - Native SIMD scoring for FP16, VectorSearcherHolder memory optimization, MMR rerank refactoring
+- k-NN Memory Optimized Warmup - Optimized warmup procedure for memory-optimized search with page cache pre-loading
 
 ### Neural Search
 
-- [SEISMIC Bugfixes](features/neural-search/seismic-bugfixes.md) - Fix IT failures in multi-node environments, query handling without method_parameters, and disk space recovery on index deletion
-- [SEISMIC Nested Field](features/neural-search/seismic-nested-field.md) - Support nested field ingestion and query for text chunking workflows with SEISMIC sparse ANN
+- SEISMIC Bugfixes - Fix IT failures in multi-node environments, query handling without method_parameters, and disk space recovery on index deletion
+- SEISMIC Nested Field - Support nested field ingestion and query for text chunking workflows with SEISMIC sparse ANN
 
 ### Performance Analyzer
 
-- [Performance Analyzer](features/performance-analyzer/performance-analyzer.md) - Restore Java 21 minimum compatibility and remove Java 24 from CI matrix
+- Performance Analyzer - Restore Java 21 minimum compatibility and remove Java 24 from CI matrix
 
 ### Learning to Rank
 
-- [Learning to Rank Bugfixes](features/learning/learning-to-rank-bugfixes.md) - Legacy version ID fix, integration test stability, rescore-only SLTR logging fix
-- [Learning to Rank Enhancements](features/learning/learning-to-rank-enhancements.md) - Test infrastructure improvements, narrowed index cleanup scope for better test isolation
+- Learning to Rank Bugfixes - Legacy version ID fix, integration test stability, rescore-only SLTR logging fix
+- Learning to Rank Enhancements - Test infrastructure improvements, narrowed index cleanup scope for better test isolation
 
 ### ML Commons
 
-- [ML Commons Enhancements](features/ml-commons/ml-commons-enhancements.md) - Sensitive parameter filtering for connector APIs, resource type support for resource sharing, increased batch task limits (default: 100, max: 10,000)
-- [ML Commons Bugfixes](features/ml-commons/ml-commons-bugfixes.md) - Agent type update validation, QueryPlanningTool model ID parsing, tool config empty values, agentic memory multi-node fixes
+- ML Commons Enhancements - Sensitive parameter filtering for connector APIs, resource type support for resource sharing, increased batch task limits (default: 100, max: 10,000)
+- ML Commons Bugfixes - Agent type update validation, QueryPlanningTool model ID parsing, tool config empty values, agentic memory multi-node fixes
 
 ### Skills
 
-- [Skills Log Insight](features/skills/skills-log-insight.md) - Increase max_sample_count from 2 to 5 for log insight in LogPatternAnalysisTool
+- Skills Log Insight - Increase max_sample_count from 2 to 5 for log insight in LogPatternAnalysisTool
 
 ### OpenSearch Remote Metadata SDK
 
-- [Remote Store CMK Support](features/opensearch-remote-metadata-sdk/remote-store-cmk-support.md) - CMK encryption/decryption support for customer data with STS role assumption for cross-account access
-- [Remote Model Bugfixes](features/opensearch-remote-metadata-sdk/remote-model-bugfixes.md) - Fix error when updating global model status in DynamoDB backend
-- [k-NN Bugfixes](features/k-nn/k-nn-bugfixes.md) - Memory optimized search fixes, race condition in KNNQueryBuilder, Faiss inner product score calculation, and disk-based vector search BWC
+- Remote Store CMK Support - CMK encryption/decryption support for customer data with STS role assumption for cross-account access
+- Remote Model Bugfixes - Fix error when updating global model status in DynamoDB backend
+- k-NN Bugfixes - Memory optimized search fixes, race condition in KNNQueryBuilder, Faiss inner product score calculation, and disk-based vector search BWC
 
 ### CI
 
-- [CI/Test Infrastructure](features/ci/test-infrastructure.md) - GitHub Actions upgrades (checkout v6, github-script v8, codecov-action v5), test reliability improvements, CI disk space management, S3 snapshots integration, multi-node testing
+- CI/Test Infrastructure - GitHub Actions upgrades (checkout v6, github-script v8, codecov-action v5), test reliability improvements, CI disk space management, S3 snapshots integration, multi-node testing
 
 ### Multi-Repository
 
-- [Dependency Updates](features/multi-repo/opensearch-dashboards-dependency-updates.md) - 28 dependency updates across 7 repositories addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
-- [JDK 25 & Gradle 9.2 Upgrades](features/multi-plugin/jdk-25-gradle-9.2-upgrades.md) - Coordinated Gradle 9.2 and JDK 25 upgrades across 24 plugin repositories
-- [Version Increments](features/multi-repo/version-increments.md) - Version bump to 3.4.0 across index-management, notifications, and dashboards-notifications
+- Dependency Updates - 28 dependency updates across 7 repositories addressing CVE-2025-11226, CVE-2025-58457, CVE-2025-41249
+- JDK 25 & Gradle 9.2 Upgrades - Coordinated Gradle 9.2 and JDK 25 upgrades across 24 plugin repositories
+- Version Increments - Version bump to 3.4.0 across index-management, notifications, and dashboards-notifications
 
 ### Index Management
 
-- [ISM Exclusion Pattern](features/index-management/ism-exclusion-pattern.md) - Support exclusion patterns in ISM template index patterns using `-` prefix for selective index management
-- [Index Management Bugfixes](features/index-management/index-management-bugfixes.md) - Fix ISM policy rebinding, SM deletion snapshot pattern parsing, ExplainSMPolicy serialization, rollup test race conditions
+- ISM Exclusion Pattern - Support exclusion patterns in ISM template index patterns using `-` prefix for selective index management
+- Index Management Bugfixes - Fix ISM policy rebinding, SM deletion snapshot pattern parsing, ExplainSMPolicy serialization, rollup test race conditions
 
 ### Flow Framework
 
-- [Flow Framework Access Control](features/flow-framework/flow-framework-access-control.md) - Integration with centralized Resource Sharing and Access Control framework
-- [Flow Framework Bugfixes](features/flow-framework/flow-framework-bugfixes.md) - Fix incorrect output dimension default (768→384) in semantic search with local model template
+- Flow Framework Access Control - Integration with centralized Resource Sharing and Access Control framework
+- Flow Framework Bugfixes - Fix incorrect output dimension default (768→384) in semantic search with local model template
 
 ### Cross-Cluster Replication
 
-- [Cross-Cluster Replication Bugfixes](features/cross-cluster-replication/cross-cluster-replication-bugfixes.md) - Make pause replication API request body optional
+- Cross-Cluster Replication Bugfixes - Make pause replication API request body optional
 
 ### Anomaly Detection
 
-- [Anomaly Detection Enhancements](features/anomaly-detection/anomaly-detection-enhancements.md) - Conditional resource sharing fallback, client API extensions for validate/suggest, auto_create field, suggest API read access
-- [Anomaly Detection Bugfixes](features/anomaly-detection/anomaly-detection-bugfixes.md) - Fix 3-AZ forecast results index creation, frequency-aware missing data detection, and data source error toast suppression
+- Anomaly Detection Enhancements - Conditional resource sharing fallback, client API extensions for validate/suggest, auto_create field, suggest API read access
+- Anomaly Detection Bugfixes - Fix 3-AZ forecast results index creation, frequency-aware missing data detection, and data source error toast suppression
 
 ### Anomaly Detection Dashboards Plugin
 
-- [Anomaly Detection Daily Insights](features/anomaly-detection-dashboards-plugin/anomaly-detection-dashboards-plugin-anomaly-detection-daily-insights.md) - New Daily Insights page with AI-powered anomaly correlation, automated detector creation via ML agents, and multi-cluster index management
+- Anomaly Detection Daily Insights - New Daily Insights page with AI-powered anomaly correlation, automated detector creation via ML agents, and multi-cluster index management

@@ -127,4 +127,4 @@ POST /my-index/_close
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-remote-store.md)
+- Full feature documentation

@@ -1,0 +1,805 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Feature analysis and release notes documentation for OpenSearch">
+      
+      
+      
+        <link rel="canonical" href="https://tkykenmt.github.io/opensearch-feature-explorer/releases/v2.18.0/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>OpenSearch v2.18.0 Release - OpenSearch Feature Explorer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="OpenSearch v2.18.0 Release - OpenSearch Feature Explorer" />
+<meta property="og:description" content="Feature analysis and release notes documentation for OpenSearch" />
+<meta property="og:image" content="https://tkykenmt.github.io/opensearch-feature-explorer/assets/images/social/releases/v2.18.0/index.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://tkykenmt.github.io/opensearch-feature-explorer/releases/v2.18.0/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="OpenSearch v2.18.0 Release - OpenSearch Feature Explorer" />
+<meta property="twitter:description" content="Feature analysis and release notes documentation for OpenSearch" />
+<meta property="twitter:image" content="https://tkykenmt.github.io/opensearch-feature-explorer/assets/images/social/releases/v2.18.0/index.png" />
+</head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#opensearch-v2180-release" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OpenSearch Feature Explorer" class="md-header__button md-logo" aria-label="OpenSearch Feature Explorer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenSearch Feature Explorer
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OpenSearch v2.18.0 Release
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tkykenmt/opensearch-feature-explorer" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tkykenmt/opensearch-feature-explorer
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Releases
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OpenSearch Feature Explorer" class="md-nav__button md-logo" aria-label="OpenSearch Feature Explorer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OpenSearch Feature Explorer
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tkykenmt/opensearch-feature-explorer" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tkykenmt/opensearch-feature-explorer
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:indexing" class="md-tag">indexing</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:observability" class="md-tag">observability</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:performance" class="md-tag">performance</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:search" class="md-tag">search</a>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="opensearch-v2180-release">OpenSearch v2.18.0 Release</h1>
+<h2 id="overview">Overview</h2>
+<p>This page contains feature reports for OpenSearch v2.18.0.</p>
+<ul>
+<li>Release Summary</li>
+</ul>
+<h2 id="features-by-repository">Features by Repository</h2>
+<h3 id="opensearch">OpenSearch</h3>
+<ul>
+<li>Lucene 9.12.0 Upgrade - Upgrade Apache Lucene from 9.11.1 to 9.12.0 with new postings format, JDK 23 support, and performance optimizations</li>
+<li>List APIs (Paginated) - New <code>_list/indices</code> and <code>_list/shards</code> APIs with pagination support, plus cat API response limits</li>
+<li>Cluster Stats API - URI path filtering support for selective metric retrieval</li>
+<li>OpenSearch Core Dependencies - 26 dependency updates including Lucene 9.12.0, Netty 4.1.114, gRPC 1.68.0, Protobuf 3.25.5</li>
+<li>Cluster State Management - Fix voting configuration mismatch by updating lastSeenClusterState in commit phase</li>
+<li>Remote Cluster State - Fallback to remote cluster state on term-version check mismatch for improved performance in large clusters</li>
+<li>Dynamic Settings - Make multiple cluster settings dynamic for tuning on larger clusters</li>
+<li>Wildcard Query Fixes - Fix escaped wildcard character handling and case-insensitive query on wildcard field</li>
+<li>Flat Object Field - Fix infinite loop when flat_object field contains invalid token types</li>
+<li>Flat Object Query Optimization - Use IndexOrDocValuesQuery to optimize query performance, enable wildcard queries</li>
+<li>Index Settings - Fix default value handling when setting index.number_of_replicas and index.number_of_routing_shards to null</li>
+<li>Multi-Search API - Fix multi-search with template doesn't return status code</li>
+<li>Node Join/Leave - Fix race condition in node-join and node-left loop</li>
+<li>Search Backpressure - Add validation for cancellation settings to prevent cluster crashes</li>
+<li>Search Pipeline - Add support for msearch API to pass search pipeline name</li>
+<li>Star Tree Index - Initial experimental release with metric aggregations (sum, min, max, avg, value_count)</li>
+<li>Tiered Caching - Segmented cache architecture for improved concurrency and performance</li>
+<li>Streaming Indexing - Bug fixes for streaming bulk request hangs and newline termination errors</li>
+<li>Replication - Fix array hashCode calculation in ResyncReplicationRequest</li>
+<li>Task Management - Fix missing fields in task index mapping for proper task result storage</li>
+<li>Test Fixes - Fix flaky test in ApproximatePointRangeQueryTests by adjusting totalHits assertion logic</li>
+<li>Nested Aggregations - Fix infinite loop in nested aggregations with deep-level nested objects</li>
+<li>Phone Analyzer - New <code>phone</code> and <code>phone-search</code> analyzers for phone number indexing and search</li>
+<li>Code Cleanup - Query approximation simplification, Stream API optimization, typo fix</li>
+<li>Search Request Stats - Enable coordinator search.request_stats_enabled by default</li>
+<li>Secure Transport Settings - Add dynamic SecureTransportParameters to fix SSL dual mode regression</li>
+<li>Identity Feature Flag Removal - Remove experimental identity feature flag, move authentication to plugins</li>
+<li>Docker Compose v2 Support - Add support for Docker Compose v2 in TestFixturesPlugin for modern Docker installations</li>
+<li>Snapshot Restore Enhancements - Alias renaming during restore and clone operation optimization for doc-rep clusters</li>
+<li>Remote Store Metrics - New REMOTE_STORE metric in Node Stats API for monitoring pinned timestamp fetch operations</li>
+<li>S3 Repository - Standard retry mode for S3 clients and SLF4J warning fix</li>
+<li>S3 Async Deletion - Async deletion support for S3 repository using S3 async client</li>
+<li>Dynamic Threadpool Resize - Runtime thread pool size adjustment via cluster settings API</li>
+<li>Async Shard Fetch Metrics - OTel counter metrics for async shard fetch success and failure tracking</li>
+<li>Search API Enhancements - WithFieldName interface for aggregation/sort builders and successfulSearchShardIndices in SearchRequestContext</li>
+<li>Offline Nodes - New offline-tasks library with core abstractions for running background tasks on dedicated offline nodes</li>
+<li>Workload Management - Query sandboxing with tenant-level admission control, resource limits (CPU/memory), QueryGroup Stats API, and persistence</li>
+</ul>
+<h3 id="opensearch-dashboards">OpenSearch Dashboards</h3>
+<ul>
+<li>Dev Tools Modal - Dev Tools console rendered as a modal overlay for improved workflow</li>
+<li>Navigation Updates - Flattened navigation, persistent state, small screen support, border style updates</li>
+<li>Content Management - Add Page API to allow remove section</li>
+<li>Discover - Data summary panel, updated appearance, cache management, and bug fixes</li>
+<li>CI/CD &amp; Build Improvements - Switch OSD Optimizer to content-based hashing for CI compatibility</li>
+<li>Input Control Visualization - Fix disabled ValidatedDualRange component sizing</li>
+<li>Data Source Permissions - Fix missing functions in data source permission saved object wrapper</li>
+<li>Dynamic Config - Bugfixes for config saved objects, global config discovery, and index/alias validation</li>
+<li>i18n &amp; Localization - i18n validation workflows, precommit hook, translation fixes, language selection fix</li>
+<li>Data Connections - Dataset picker support for data connections with multi-select table, pagination, and search</li>
+<li>Data Connections Bugfixes - MDS endpoint unification, tabs navigation, type display, auto-complete MDS support</li>
+<li>Dependency Updates - JSON11 upgrade for UTF-8 safety, chokidar bump</li>
+<li>Discover Bugfixes (2) - S3 fields support, deleted index pattern handling, time field display, saved query loading</li>
+<li>Maintainers - Add Hailong-am as maintainer</li>
+<li>OUI Updates - Updates to OpenSearch UI component library (1.13 → 1.15)</li>
+<li>Query Enhancements (2) - Async polling, error handling, language compatibility, saved query fixes</li>
+<li>Query Enhancements Bugfixes - Search strategy extensibility, recent query fix, module exports, keyboard shortcuts</li>
+<li>Sample Data - Updated UI for new UX, OTEL sample data support for traces, metrics, and logs</li>
+<li>Sample Data Bugfixes - Update OTEL sample data description with compatible OS version</li>
+<li>Saved Query UX - New flyout-based UI for saved queries, sample queries on no results page</li>
+<li>TSVB Visualization - Hidden axis option, per-axis scale setting, compressed input fields</li>
+<li>UI/UX Bugfixes - Sidebar tooltips, initial page fixes, overlay positioning, Chrome 129 workaround, OUI breakpoints, HeaderControl rendering</li>
+<li>UI/UX Bugfixes (2) - Responsive design fixes for home page, page header, recent menu, and getting started cards</li>
+<li>UI/UX Improvements - Page title semantic improvements (h1 + xs size) for accessibility</li>
+<li>Workspace - Workspace-level UI settings, collaborator management, data connection integration, global search bar, ACL auditor</li>
+<li>Workspace Bugfixes - 13 bug fixes for workspace UI/UX, page crashes, permissions, and navigation</li>
+<li>Dashboards Maintenance - Version bump post 2.17, enhanced search API cleanup</li>
+<li>Query Editor - Footer bar for single-line editor, extension ordering fix, PPL autocomplete improvements</li>
+<li>Async Query - Frontend polling for async search, async PPL support for S3 datasets</li>
+<li>Dashboards Improvements - Loading indicator with time counter for query results</li>
+<li>MDS Integration Support - Multi Data Source support for Integration feature</li>
+<li>Experimental Features - User personal settings with scoped uiSettings and User Settings page</li>
+<li>Security CVE Fixes - Security updates for dns-sync, axios, path-to-regexp, dompurify, elliptic, micromatch</li>
+</ul>
+<h3 id="multi-plugin">Multi-Plugin</h3>
+<ul>
+<li>Dependency Updates - 19 dependency updates including CVE-2024-7254 fix, Gradle 8.10.2, upload-artifact v4</li>
+<li>Search Autocomplete - Fix search_as_you_type multi-fields support and enhanced Dashboards autocomplete UX</li>
+<li>Release Notes - v2.18.0 release notes added across alerting, common-utils, notifications, query-insights, and security repositories</li>
+</ul>
+<h3 id="flow-framework">Flow Framework</h3>
+<ul>
+<li>Flow Framework - Add optional config field to tool step, incremental resource removal during deprovisioning</li>
+<li>Flow Framework Workflow State - Remove Painless scripts for workflow state updates, implement optimistic locking</li>
+<li>Flow Framework Bugfixes - Fix template update location in ReprovisionWorkflowTransportAction, improved logger statements</li>
+<li>Query Assist Data Summary Agent - Add sample template for Query Assist Data Summary Agent using Claude on Bedrock</li>
+</ul>
+<h3 id="alerting">Alerting</h3>
+<ul>
+<li>Alerting Doc-Level Monitor - Doc-level monitor improvements including comments system indices, remote monitor logging, separate query indices for external monitors, and query index lifecycle optimization</li>
+<li>Alerting Bugfixes - Query index management fixes, bucket-level monitor optimization, dashboard UX improvements, MDS compatibility fixes</li>
+</ul>
+<h3 id="alerting-dashboards-plugin">Alerting Dashboards Plugin</h3>
+<ul>
+<li>Alerting Summary &amp; Insights - AI-powered alert insights with context-aware analysis, LLM-generated summaries, and log pattern detection for visual editor monitors</li>
+</ul>
+<h3 id="common-utils">Common Utils</h3>
+<ul>
+<li>Doc-Level Monitor Query Indices - New <code>delete_query_index_in_every_run</code> flag for dynamic deletion of doc-level monitor query indices, designed for externally defined monitors</li>
+</ul>
+<h3 id="sql">SQL</h3>
+<ul>
+<li>SQL Error Handling - Improved error handling for malformed cursors and edge cases in query parsing</li>
+<li>SQL Pagination - Bug fixes for SQL pagination with <code>pretty</code> parameter and PIT refactor issues</li>
+<li>SQL PIT Refactor - Refactor SQL plugin to use Point in Time (PIT) API instead of Scroll API for joins and pagination</li>
+<li>SQL Plugin Maintenance - Security fix for CVE-2024-47554 (commons-io upgrade to 2.14.0) and test fixes for 2.18 branch</li>
+<li>SQL Query Fixes - Fix alias resolution in legacy SQL with filters, correct regex character range in Grok compiler</li>
+<li>SQL Scheduler - Bugfix to remove scheduler index from SystemIndexDescriptor to prevent conflicts with Job Scheduler plugin</li>
+</ul>
+<h3 id="k-nn">k-NN</h3>
+<ul>
+<li>k-NN AVX512 Support - AVX512 SIMD support for Faiss engine, accelerating vector search and indexing on compatible x64 processors</li>
+<li>k-NN Performance &amp; Engine - Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements</li>
+<li>k-NN Documentation - JavaDoc cleanup for RescoreContext class</li>
+<li>k-NN Maintenance - Lucene 9.12 codec compatibility, force merge performance optimization, benchmark folder removal, code refactoring</li>
+</ul>
+<h3 id="neural-search">Neural Search</h3>
+<ul>
+<li>Neural Search Reranking - ByFieldRerankProcessor for field-based reranking and hybrid query rescorer support</li>
+<li>Neural Search Text Chunking - Add <code>ignore_missing</code> parameter to text chunking processors for flexible handling of optional fields</li>
+<li>Neural Search Bugfixes - Fixed incorrect document order for nested aggregations in hybrid query</li>
+</ul>
+<h3 id="ml-commons">ML Commons</h3>
+<ul>
+<li>ML Commons Batch Jobs - Rate limiting, connector credential support, model group access control, and default action types for batch inference/ingestion</li>
+<li>ML Commons Model &amp; Inference - Remote model auto-redeployment filtering, optional llmQuestion for RAG, search extension output support, query string in input_map, MLToolSpec config field, AWS Textract/Comprehend trusted endpoints</li>
+<li>ML Commons Bugfixes - 11 bug fixes for RAG pipelines, ML inference processors, connector time fields, model deployment stability, master key race condition, Bedrock BWC, and agent logging</li>
+<li>ML Commons Configuration - Change <code>.plugins-ml-config</code> index to use <code>auto_expand_replicas: 0-all</code> for maximum availability</li>
+<li>ML Commons Connectors &amp; Blueprints - Bedrock Converse blueprint, cross-account model invocation tutorial, role temporary credential support, Titan Embedding V2 blueprint</li>
+<li>ML Commons CI/CD - Workflow approval system for external contributors, artifact actions upgrade to v4, developer guide updates</li>
+</ul>
+<h3 id="query-insights">Query Insights</h3>
+<ul>
+<li>Query Insights Enhancements - Health Stats API, OpenTelemetry error metrics, field name/type grouping support, historical query time range parameters, cache management improvements</li>
+<li>Query Insights Settings - Change default values for grouping attribute settings (field_name, field_type) from false to true</li>
+<li>Query CI/CD - Upgrade deprecated actions/upload-artifact from v1/v2 to v3</li>
+</ul>
+<h3 id="anomaly-detection">Anomaly Detection</h3>
+<ul>
+<li>Anomaly Detection Enhancements - Suppression rule validation in AnomalyDetector constructor, default rules bug fix for empty rulesets, RCF version upgrade to 4.2.0</li>
+<li>Anomaly Detection Dependencies - Dependency updates (Jackson 2.18.0, JUnit Jupiter 5.11.2, Mockito 5.14.1) and removal of unused javassist dependency</li>
+</ul>
+<h3 id="anomaly-detection-dashboards">Anomaly Detection Dashboards</h3>
+<ul>
+<li>Anomaly Detection Bugfixes - Bug fixes for custom result index rendering, historical analysis route, and preview support for rules and imputation</li>
+</ul>
+<h3 id="security-analytics">Security Analytics</h3>
+<ul>
+<li>Security Analytics System Indices - Standardized system index settings (1 primary shard, 1-20 replicas), dedicated query indices option, correlation alert refresh policy fix</li>
+<li>Security Analytics Correlation - Bug fixes for threat intel monitor alias resolution and REFRESHING state enum query</li>
+<li>Threat Intel Bug Fixes - Notification listener leak fix, duplicate findings prevention, source config validation, improved error handling</li>
+<li>Security Analytics IOC - IOC bug fixes: null check for multi-indicator scans, ListIOCs API count limits removed, index exists check for large IOC batches</li>
+</ul>
+<h3 id="security-analytics-dashboards">Security Analytics Dashboards</h3>
+<ul>
+<li>Security Analytics UX - Comprehensive UX improvements including navigation menu restructuring, standardized UI spacing and typography, compressed search bars and filters, and context-aware page titles</li>
+<li>Security Analytics Data Source - Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, and getting started cards visual redesign</li>
+<li>Security Analytics Findings - Fix findings page crash when custom rules are deleted and correct rule severity display for multi-rule findings</li>
+</ul>
+<h3 id="dashboards-query-workbench">Dashboards Query Workbench</h3>
+<ul>
+<li>Query Workbench Bugfixes - Bug fixes for modal mounting support and MDS error handling</li>
+</ul>
+<h3 id="dashboards-assistant">Dashboards Assistant</h3>
+<ul>
+<li>Assistant Capabilities - Capability-based UI rendering control, new API to check agent config existence, agentName renamed to agentConfigName</li>
+<li>Text to Visualization (t2viz) - AI-powered visualization generation from natural language queries using LLM agents</li>
+</ul>
+<h3 id="dashboards-maps">Dashboards Maps</h3>
+<ul>
+<li>Dashboards Maps Bugfix - Fix flyout overlay issue with new application header</li>
+</ul>
+<h3 id="dashboards-reporting">Dashboards Reporting</h3>
+<ul>
+<li>Reporting Bugfixes - Fix missing EUI component imports in report_settings component</li>
+</ul>
+<h3 id="dashboards-notifications">Dashboards Notifications</h3>
+<ul>
+<li>Notifications Bugfixes - Fix default data source selection, typo fixes, CI workflow updates</li>
+<li>Notifications Fit &amp; Finish - UX improvements: semantic headers, consistent text sizes, smaller context menus, spacing standardization, full-width content</li>
+</ul>
+<h3 id="job-scheduler">Job Scheduler</h3>
+<ul>
+<li>Job Scheduler - Return LockService from createComponents for Guice injection</li>
+</ul>
+<h3 id="index-management">Index Management</h3>
+<ul>
+<li>Index Management Bugfixes - Snapshot status detection fix, snapshot policy button reload fix, data source initialization fix</li>
+<li>Index Management Enhancements - Mixed rollup/non-rollup index search, UX improvements, transform API validation</li>
+</ul>
+<h3 id="observability">Observability</h3>
+<ul>
+<li>Observability UI Improvements - Services data picker fix, header control styling, custom traces table filters, Getting Started workflow restructure, CI build cache optimization</li>
+<li>Observability Bugfixes - Multiple bug fixes including navigation fixes, workspace compatibility, MDS support improvements, and UI/UX enhancements</li>
+</ul>
+<h3 id="dashboards-observability">Dashboards Observability</h3>
+<ul>
+<li>Observability Get Started - Major restructure of Getting Started workflows into Logs/Metrics/Traces signal types, telemetry source dropdown, Self Managed/AWS tabs, auto index template creation</li>
+</ul>
+<h3 id="security">Security</h3>
+<ul>
+<li>Security Enhancements - Datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override, improved certificate error messages, JWT in MultipleAuthentication</li>
+<li>Security Bugfixes - Multiple bug fixes including system index access control, SAML audit logging, demo config detection, SSL dual mode propagation, stored field handling, and closed index mappings</li>
+<li>Security Plugin Maintenance - Cache endpoint deprecation warning, securityadmin script undeprecation, ASN1 refactoring for FIPS, CVE-2024-47554 fix, BWC test fixes</li>
+</ul>
+<h3 id="skills">Skills</h3>
+<ul>
+<li>Skills Plugin Dependencies - Dependency updates (Mockito 5.14.2, JUnit5 5.11.2, ByteBuddy 1.15.4, Gradle 8.10.2) and test fix for AnomalyDetector API changes</li>
+<li>ML Skills &amp; Tools - New LogPatternTool for log pattern analysis, customizable prompt support for CreateAnomalyDetectorTool</li>
+</ul>
+<h3 id="cicd">CI/CD</h3>
+<ul>
+<li>CI/CD &amp; Build Improvements - JDK-21 baseline updates, CI workflow fixes, test security improvements, backport process enhancements across index-management, ml-commons, notifications, and observability</li>
+</ul>
+<h3 id="maintenance">Maintenance</h3>
+<ul>
+<li>Version Bumps &amp; Maintenance - Routine version increment PRs across 12 plugin repositories for v2.18.0 release preparation</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 12, 2026 13:15:07 UTC">January 12, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tkykenmt/opensearch-feature-explorer" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.top", "navigation.indexes", "toc.integrate", "header.autohide", "search.highlight", "search.suggest", "search.share", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

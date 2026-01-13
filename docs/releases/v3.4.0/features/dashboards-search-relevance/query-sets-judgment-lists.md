@@ -90,4 +90,4 @@ No migration required. This is a backward-compatible enhancement that extends ex
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-search-relevance/dashboards-search-relevance-search-comparison.md)
+- Full feature documentation

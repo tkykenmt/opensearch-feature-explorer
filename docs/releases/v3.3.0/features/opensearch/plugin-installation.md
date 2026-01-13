@@ -118,4 +118,4 @@ config/my-plugin/
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-plugin-installation.md)
+- Full feature documentation

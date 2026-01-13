@@ -126,8 +126,6 @@ GET _cat/shards?v&h=index,shard,prirep,state,docs,store,node
 - **v3.0.0** (2025-05-06): Changed `CatShardsAction` permission from `cluster:monitor/shards` to `internal:monitor/shards`, restoring pre-2.17 behavior for non-admin users
 - **v2.17.0** (2024-09-17): Introduced `CatShardsAction` with `cluster:monitor/shards` permission for pagination and cancellation support
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

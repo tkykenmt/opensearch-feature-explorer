@@ -184,4 +184,4 @@ plugins.jobscheduler.remote_metadata_service_name: es
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/job-scheduler/job-scheduler.md)
+- Full feature documentation

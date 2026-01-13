@@ -76,4 +76,4 @@ No migration required. The fix is automatically applied when upgrading to v2.17.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/job-scheduler/job-scheduler.md)
+- Full feature documentation

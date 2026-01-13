@@ -153,4 +153,4 @@ PUT /my-knn-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/k-nn-performance-engine.md)
+- Full feature documentation

@@ -125,4 +125,4 @@ The AVX512 instructions process 512 bits (16 floats) per operation compared to A
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-avx512-support.md)
+- Full feature documentation

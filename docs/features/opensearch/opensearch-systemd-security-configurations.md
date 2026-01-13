@@ -210,8 +210,6 @@ public void testRebootSysCall() throws IOException, InterruptedException {
 
 - **v3.0.0** (2025-04-09): Initial implementation with comprehensive systemd hardening
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

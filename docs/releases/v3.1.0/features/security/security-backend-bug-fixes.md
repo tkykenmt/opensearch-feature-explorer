@@ -109,4 +109,4 @@ Simplified the logic in the basic authenticator to only log "Invalid Authorizati
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-backend.md)
+- Full feature documentation

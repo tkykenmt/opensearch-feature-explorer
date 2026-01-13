@@ -109,4 +109,4 @@ No migration required. These are backward-compatible bugfixes.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

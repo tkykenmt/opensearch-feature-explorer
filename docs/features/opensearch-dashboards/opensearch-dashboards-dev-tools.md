@@ -118,8 +118,6 @@ GET _cat/indices?v
 
 - **v2.18.0** (2024-11-05): Changed Dev Tools to render inside a modal overlay for improved UX
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

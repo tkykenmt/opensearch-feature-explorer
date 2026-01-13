@@ -168,8 +168,6 @@ When `opensearch-security` is listed in both `extended.plugins` and `optional.pl
 - **v2.16.0** (2025-07): Added explicit range notation support (`[2.0.0, 3.0.0)`) for `opensearch.version`
 - **v2.13.0** (2024-02): Initial SemverRange implementation with tilde (`~`) and caret (`^`) operators
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

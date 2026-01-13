@@ -75,4 +75,4 @@ The change maintains visual consistency across all theme versions (v7, vNext, v9
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
+- Full feature documentation

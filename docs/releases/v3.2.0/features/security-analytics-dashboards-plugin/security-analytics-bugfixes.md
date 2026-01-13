@@ -86,4 +86,4 @@ const loadIocTypes = async () => {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-analytics-dashboards-plugin/security-analytics-dashboards-plugin-security-analytics.md)
+- Full feature documentation

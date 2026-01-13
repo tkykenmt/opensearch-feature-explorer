@@ -89,11 +89,6 @@ CreateIndexRequest request = new CreateIndexRequest(indexName)
 
 - **v2.18.0** (2024-10-22): Changed `.plugins-ml-config` index to use `auto_expand_replicas: 0-all` for maximum availability
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

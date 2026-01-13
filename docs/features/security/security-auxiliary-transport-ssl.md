@@ -139,8 +139,6 @@ plugins.security.ssl.aux.experimental-secure-transport-grpc.enabled_ciphers:
 
 - **v3.2.0** (2025-08-01): Initial implementation - TLS support for auxiliary transports with per-transport configuration namespace
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

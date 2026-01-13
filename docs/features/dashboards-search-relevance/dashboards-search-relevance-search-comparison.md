@@ -156,9 +156,6 @@ Query 2 - Boosted field:
 - **v2.14.0** (2024-05-02): Added multi-datasource support and search pipeline selection
 - **v2.11.0** (2023-10-16): Fixed ace editor theme consistency for dark mode
 
-## Related Features
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
 
 ## References
 

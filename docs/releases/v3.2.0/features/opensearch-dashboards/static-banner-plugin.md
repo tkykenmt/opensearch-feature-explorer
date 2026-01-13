@@ -132,4 +132,4 @@ A ResizeObserver monitors the banner's actual height and updates the CSS variabl
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-banner-plugin.md)
+- Full feature documentation

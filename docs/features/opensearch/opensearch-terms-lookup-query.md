@@ -140,8 +140,6 @@ GET /students/_search
 
 - **v3.2.0** (2025-08-01): Added support for query clause in terms lookup, enabling multi-document value extraction
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -125,4 +125,4 @@ AccessController.doPrivileged((PrivilegedAction<Void>) () -> {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-thread-context-permissions.md)
+- Full feature documentation

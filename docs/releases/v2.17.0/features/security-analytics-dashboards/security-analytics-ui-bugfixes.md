@@ -96,4 +96,4 @@ This change avoids importing the entire `common` module which includes `kuery.js
 
 ## Related Feature Report
 
-- [Security Analytics Dashboards Plugin](../../../features/security-analytics-dashboards/security-analytics-dashboards-plugin.md)
+- Security Analytics Dashboards Plugin

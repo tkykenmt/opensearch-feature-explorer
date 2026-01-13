@@ -133,4 +133,4 @@ PUT sample-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-derived-source.md)
+- Full feature documentation

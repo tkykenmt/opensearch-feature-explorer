@@ -143,4 +143,4 @@ With the optimization in v2.18.0, this monitor will only query indices that cont
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/alerting/alerting.md)
+- Full feature documentation

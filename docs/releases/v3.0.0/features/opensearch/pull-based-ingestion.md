@@ -211,4 +211,4 @@ Pull-based ingestion is an experimental feature in v3.0.0. To use it:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-pull-based-ingestion.md)
+- Full feature documentation

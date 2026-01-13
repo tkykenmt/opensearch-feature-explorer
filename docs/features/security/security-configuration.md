@@ -207,8 +207,6 @@ config:
 - **v3.0.0** (2025-05-06): Default to v7 models, escape pipe characters in usernames, fix demo config version matcher
 - **v2.18.0** (2024-11-05): Auto-convert security config models from v6 to v7
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

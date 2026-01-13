@@ -112,4 +112,4 @@ If you have OpenSearch Dashboards configured with `alwaysPresentCertificate: tru
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-client-certificate-authentication.md)
+- Full feature documentation

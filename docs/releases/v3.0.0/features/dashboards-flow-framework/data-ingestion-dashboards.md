@@ -103,4 +103,4 @@ Data ingestion now uses JSON Lines format:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-flow-framework/dashboards-flow-framework-data-ingestion.md)
+- Full feature documentation

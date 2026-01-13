@@ -169,4 +169,4 @@ GET /my-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-search-scoring.md)
+- Full feature documentation

@@ -82,4 +82,4 @@ PR [#3935](https://github.com/opensearch-project/ml-commons/pull/3935) forces th
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-bugfixes.md)
+- Full feature documentation

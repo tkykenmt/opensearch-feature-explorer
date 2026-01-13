@@ -94,4 +94,4 @@ This feature is additive and requires no migration. Existing clusters using `sea
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-query-string-monitoring.md)
+- Full feature documentation

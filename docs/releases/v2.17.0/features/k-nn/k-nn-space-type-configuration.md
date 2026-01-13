@@ -148,4 +148,4 @@ PUT my-vector-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/k-nn-space-type-configuration.md)
+- Full feature documentation

@@ -93,4 +93,4 @@ When setting up bidirectional Cross-Cluster Replication:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-alias-write-index-policy.md)
+- Full feature documentation

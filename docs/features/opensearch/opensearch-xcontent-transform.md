@@ -201,14 +201,12 @@ List<Map<String, Object>> results = documents.stream()
 
 - **v3.0.0** (2025-03-20): Initial implementation for k-NN derived source support
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 
 ### Documentation
 - [XContentMapValues.java](https://github.com/opensearch-project/OpenSearch/blob/main/server/src/main/java/org/opensearch/common/xcontent/support/XContentMapValues.java): Core implementation
-- [XContent Filtering](opensearch-xcontent-filtering.md): Related filtering functionality
+- XContent Filtering: Related filtering functionality
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |

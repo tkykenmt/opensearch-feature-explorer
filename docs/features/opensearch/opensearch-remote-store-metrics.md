@@ -121,8 +121,6 @@ Example response:
 
 - **v2.18.0** (2024-11-05): Initial implementation - added `last_successful_fetch_of_pinned_timestamps` metric to Node Stats API
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

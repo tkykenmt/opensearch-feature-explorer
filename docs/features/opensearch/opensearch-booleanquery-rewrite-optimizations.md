@@ -176,8 +176,6 @@ Benchmark results on `http_logs` dataset:
 - **v3.2.0** (2025-07-22): Extended must_not rewrite to numeric match, term, and terms queries
 - **v3.0.0**: Initial implementation of must_not rewrite for range queries; must → filter rewrite for constant-scoring queries
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

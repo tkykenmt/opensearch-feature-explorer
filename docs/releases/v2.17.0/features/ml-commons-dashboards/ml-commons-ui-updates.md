@@ -77,4 +77,4 @@ After (using `EuiText size="s"`):
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons-dashboards/ml-commons-dashboards.md)
+- Full feature documentation

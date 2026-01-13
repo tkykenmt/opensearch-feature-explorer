@@ -106,4 +106,4 @@ No migration required. This is a behavioral fix that makes custom preference str
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-search-shard-routing.md)
+- Full feature documentation

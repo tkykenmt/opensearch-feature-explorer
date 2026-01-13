@@ -123,4 +123,4 @@ PUT _plugins/_ism/policies/log_lifecycle
 
 ## Related Feature Report
 
-- [Full Index Management documentation](../../../../features/index-management/index-management.md)
+- Full Index Management documentation

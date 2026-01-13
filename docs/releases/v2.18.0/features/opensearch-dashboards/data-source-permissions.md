@@ -88,4 +88,4 @@ None specific to this fix.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-data-source-permissions.md)
+- Full feature documentation

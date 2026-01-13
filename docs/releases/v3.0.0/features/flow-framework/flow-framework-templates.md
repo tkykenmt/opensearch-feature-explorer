@@ -124,4 +124,4 @@ POST /.plugins-ml-config/_doc/os_text2vega
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/flow-framework/flow-framework-text-to-visualization-templates.md)
+- Full feature documentation

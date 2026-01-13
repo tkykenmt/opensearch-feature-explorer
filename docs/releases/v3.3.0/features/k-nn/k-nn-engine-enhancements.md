@@ -178,4 +178,4 @@ PUT test-index
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/k-nn-engine-enhancements.md)
+- Full feature documentation

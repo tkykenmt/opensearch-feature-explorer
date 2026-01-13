@@ -133,4 +133,4 @@ Cross-account connector configuration:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-blueprints.md)
+- Full feature documentation

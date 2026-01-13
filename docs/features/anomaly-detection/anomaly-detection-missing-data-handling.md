@@ -309,10 +309,6 @@ POST _plugins/_anomaly_detection/detectors
 
 - **v2.17.0** (2024-09-17): Initial implementation with four imputation methods, feature_imputed tracking, HC detector broadcast support, historical analysis integration
 
-## Related Features
-- [Alerting](../alerting/alerting.md)
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Job Scheduler](../job-scheduler/job-scheduler.md)
 
 ## References
 

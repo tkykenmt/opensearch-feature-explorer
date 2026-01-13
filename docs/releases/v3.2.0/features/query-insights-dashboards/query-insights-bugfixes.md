@@ -121,4 +121,4 @@ While labeled as an improvement, this PR adds Multi-Data Source (MDS) support to
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/query-insights/query-insights.md)
+- Full feature documentation

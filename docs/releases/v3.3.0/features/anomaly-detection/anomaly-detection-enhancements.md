@@ -170,4 +170,4 @@ The Anomaly Detection Dashboards plugin includes corresponding UI updates:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/anomaly-detection/anomaly-detection.md)
+- Full feature documentation

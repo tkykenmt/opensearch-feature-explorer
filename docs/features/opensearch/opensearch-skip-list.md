@@ -266,8 +266,6 @@ GET /logs/_search
 - **v3.3.0** (2025-10-01): Extended skip list support - Added date histogram aggregation optimization, extended to date/scaled_float/token_count fields, added sub-aggregation support, auto-enabled for @timestamp and index sort fields
 - **v3.2.0** (2025-08-19): Initial implementation - Added `skip_list` parameter to all numeric field mappers
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

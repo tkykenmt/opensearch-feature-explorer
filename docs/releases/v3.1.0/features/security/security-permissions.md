@@ -128,4 +128,4 @@ forecast_read_access:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/security/security-permissions.md)
+- Full feature documentation

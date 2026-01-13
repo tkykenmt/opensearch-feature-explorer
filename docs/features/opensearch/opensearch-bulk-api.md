@@ -139,8 +139,6 @@ POST _bulk
 - **v2.9.0** (2023-07-18): Enforced 512 byte document ID limit in bulk updates
 - **v1.0.0** (2021-07-12): Initial implementation
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

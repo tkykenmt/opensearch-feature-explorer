@@ -264,8 +264,6 @@ When settings are updated:
 - **v3.1.0**: Added lag metrics, error metrics, configurable queue size, transient failure retries, create mode, cluster write block support, consumer reset in Resume API. Breaking change: renamed `REWIND_BY_OFFSET`/`REWIND_BY_TIMESTAMP` to `RESET_BY_OFFSET`/`RESET_BY_TIMESTAMP`.
 - **v3.0.0**: Initial experimental implementation with core ingestion engine, Kafka plugin (`ingestion-kafka`), and Kinesis plugin (`ingestion-kinesis`). Added offset management with rewind by offset/timestamp support. Introduced error handling strategies (DROP and BLOCK). Added ingestion management APIs (pause, resume, get state). Implemented update and delete operations with auto-generated IDs for upserts. Added external versioning support for handling out-of-order updates from streaming sources. Introduced multi-threaded writer support with configurable `num_processor_threads`. Added configurable `maxPollSize` and `pollTimeout` settings. Disabled traditional REST API indexing for pull-based indexes.
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

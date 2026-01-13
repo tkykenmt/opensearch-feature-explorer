@@ -166,4 +166,4 @@ This is a transparent enhancement. Existing indexes using custom codecs will con
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/custom-codecs/custom-codecs.md)
+- Full feature documentation

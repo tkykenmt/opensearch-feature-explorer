@@ -87,4 +87,4 @@ When using the `LogPatternAnalysisTool` in log insight mode (without baseline ti
 
 ## Related Feature Report
 
-- [Skills Tools](../../../features/skills/skills-tools.md)
+- Skills Tools

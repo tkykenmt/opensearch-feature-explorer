@@ -97,8 +97,6 @@ Numeric fields and timestamps use primitive writes internally, which now benefit
 
 - **v3.3.0** (2025-09-28): Added delegation for `writeInt`, `writeShort`, `writeLong` methods to improve BKD merge performance
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

@@ -122,4 +122,4 @@ public String toString() {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-code-cleanup.md)
+- Full feature documentation

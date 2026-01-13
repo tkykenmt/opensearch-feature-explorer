@@ -122,4 +122,4 @@ No migration required. These are bug fixes that improve existing functionality.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-analytics/security-analytics-threat-intelligence.md)
+- Full feature documentation

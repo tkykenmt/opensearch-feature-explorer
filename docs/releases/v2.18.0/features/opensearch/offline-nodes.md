@@ -133,4 +133,4 @@ This is an experimental feature gated behind a feature flag. To enable:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-offline-nodes.md)
+- Full feature documentation

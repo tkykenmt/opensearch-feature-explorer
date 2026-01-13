@@ -131,8 +131,6 @@ GET /_nodes/stats/indices/request_cache
 
 - **v3.3.0**: Optimized cache clear performance by adding node-level hook; disabled caching for keyword fields with non-default `use_similarity` or `split_queries_on_whitespace`
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

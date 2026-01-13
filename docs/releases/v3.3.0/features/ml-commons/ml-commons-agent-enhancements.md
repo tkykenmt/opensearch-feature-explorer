@@ -142,4 +142,4 @@ GET /_plugins/_ml/agents/<agent_id>
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/ml-commons/ml-commons-agent-framework.md)
+- Full feature documentation

@@ -115,4 +115,4 @@ No migration required. This is a new capability that can be used immediately aft
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-dynamic-threadpool-resize.md)
+- Full feature documentation

@@ -187,4 +187,4 @@ The security plugin automatically injects a DLS filter, so the response only inc
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-resource-access-control-framework.md)
+- Full feature documentation

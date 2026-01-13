@@ -130,8 +130,6 @@ authc:
 
 - **v3.2.0** (2025-06): Full FIPS 140-2 compliance with BC-FIPS libraries and OpenSAML shadow JAR isolation
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

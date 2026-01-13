@@ -109,4 +109,4 @@ yarn osd clean
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-osd-optimizer-cache.md)
+- Full feature documentation

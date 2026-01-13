@@ -113,4 +113,4 @@ This is a transparent optimization with no API changes. Existing queries will au
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-source-field-matching.md)
+- Full feature documentation

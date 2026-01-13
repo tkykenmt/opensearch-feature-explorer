@@ -100,4 +100,4 @@ No migration required. This is a bug fix that makes field collapsing work correc
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-concurrent-segment-search.md)
+- Full feature documentation

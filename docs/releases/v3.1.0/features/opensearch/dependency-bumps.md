@@ -126,4 +126,4 @@ Gson 2.13.x includes a bug fix for collection deserialization and internal class
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-dependency-bumps.md)
+- Full feature documentation

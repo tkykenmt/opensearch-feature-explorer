@@ -190,8 +190,6 @@ When the Security plugin is enabled, users need the following permission:
 
 - **v3.2.0**: Initial implementation - Added cluster-level API to fetch segment and translog metadata from remote store
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

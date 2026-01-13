@@ -143,8 +143,6 @@ PUT _snapshot/hdfs_backup
 
 - **v3.4.0** (2026-01-11): Updated Hadoop to 3.4.2, re-enabled Kerberos integration tests for JDK-24+
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

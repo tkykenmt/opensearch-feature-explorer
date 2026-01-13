@@ -217,10 +217,6 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
 - **v2.11.0** (2023-10-16): Initial implementation of hybrid search
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

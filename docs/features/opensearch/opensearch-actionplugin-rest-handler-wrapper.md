@@ -124,8 +124,6 @@ public class MySecurityPlugin extends Plugin implements ActionPlugin {
 
 - **v3.4.0** (2026-01-14): Added `Set<RestHeaderDefinition>` parameter to `getRestHandlerWrapper` method, deprecated single-parameter version
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

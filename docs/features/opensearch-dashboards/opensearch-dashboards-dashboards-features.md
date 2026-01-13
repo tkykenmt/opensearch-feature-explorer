@@ -116,8 +116,6 @@ source=logs | where status =
 
 - **v3.0.0** (2025-02): Added autocomplete value suggestions, Vega PPL time field support, dependency license validation, and Discover scrolling improvements
 
-## Related Features
-- [OpenSearch Core](../opensearch/opensearch-actionplugin-rest-handler-wrapper.md)
 
 ## References
 

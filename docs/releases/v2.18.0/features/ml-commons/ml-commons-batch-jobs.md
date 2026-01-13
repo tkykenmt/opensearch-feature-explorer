@@ -180,4 +180,4 @@ POST /_plugins/_ml/_batch_ingestion
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/ml-commons/ml-commons-neural-search-batch-ingestion.md)
+- Full feature documentation

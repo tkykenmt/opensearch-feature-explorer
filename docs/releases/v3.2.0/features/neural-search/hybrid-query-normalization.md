@@ -180,4 +180,4 @@ PUT /my-index/_settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/neural-search/neural-search-hybrid-query.md)
+- Full feature documentation

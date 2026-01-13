@@ -128,4 +128,4 @@ For SQL plugin developers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/multi-plugin/multi-plugin-ci-cd-testing-infrastructure.md)
+- Full feature documentation

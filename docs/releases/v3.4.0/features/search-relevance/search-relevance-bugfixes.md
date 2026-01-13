@@ -115,4 +115,4 @@ No migration required. Existing search configurations with LTR queries that prev
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/search-relevance/search-relevance-workbench.md)
+- Full feature documentation

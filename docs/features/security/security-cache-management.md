@@ -184,8 +184,6 @@ curl -X PUT "https://localhost:9200/_cluster/settings" \
 
 - **v3.1.0** (2026-01): Added selective user cache invalidation endpoint and dynamic TTL configuration
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

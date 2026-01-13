@@ -258,9 +258,6 @@ PUT /my-vector-index
 - **v3.2.0** (2026-01-14): Added ADC support for binary-quantized indexes
 - **v3.0.0** (2025-05-06): Initial implementation with HNSW support for FAISS engine
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

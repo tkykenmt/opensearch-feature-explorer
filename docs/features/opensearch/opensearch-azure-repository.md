@@ -143,8 +143,6 @@ azure.client.default.proxy.port: 1080
 
 - **v3.2.0** (2025-08-05): Fixed SOCKS5 proxy authentication - credentials now properly set via ProxyOptions.setCredentials() instead of JDK Authenticator
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

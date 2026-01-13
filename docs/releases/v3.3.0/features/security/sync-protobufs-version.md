@@ -71,4 +71,4 @@ The protobufs version is defined in OpenSearch core at:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-protobufs-version-sync.md)
+- Full feature documentation

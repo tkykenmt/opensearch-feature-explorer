@@ -120,4 +120,4 @@ Based on testing in large clusters (1000+ nodes), this change provides significa
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-transport-nodes-action-optimization.md)
+- Full feature documentation

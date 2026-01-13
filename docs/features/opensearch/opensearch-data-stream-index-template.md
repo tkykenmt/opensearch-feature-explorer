@@ -132,8 +132,6 @@ DELETE _index_template/logs-base
 
 - **v3.4.0** (2025-12-09): Fixed bug preventing deletion of unused index templates that match data stream patterns but have lower priority than the active template
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

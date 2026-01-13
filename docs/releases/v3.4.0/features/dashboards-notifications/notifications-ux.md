@@ -80,4 +80,4 @@ After this fix, users can edit channel names normally:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-notifications/dashboards-notifications.md)
+- Full feature documentation

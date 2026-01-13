@@ -148,4 +148,4 @@ Successfully saved version v2 to .opensearch_security_config_versions
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-configuration-versioning.md)
+- Full feature documentation

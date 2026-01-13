@@ -113,4 +113,4 @@ No migration required. These are internal bug fixes and infrastructure improveme
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-bug-fixes.md)
+- Full feature documentation

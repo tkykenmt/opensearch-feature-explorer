@@ -160,4 +160,4 @@ GET test-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/k-nn/k-nn-byte-vector-support.md)
+- Full feature documentation

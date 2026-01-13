@@ -177,4 +177,4 @@ The `MappingTransformerRegistry` includes built-in error handling:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-mapping-transformer.md)
+- Full feature documentation

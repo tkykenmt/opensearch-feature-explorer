@@ -123,4 +123,4 @@ No migration required. The optimization is applied automatically to eligible que
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-approximation-framework.md)
+- Full feature documentation

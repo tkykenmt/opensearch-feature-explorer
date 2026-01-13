@@ -128,4 +128,4 @@ No configuration changes required for end users. The Lucene upgrade is transpare
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-lucene-10-upgrade.md)
+- Full feature documentation

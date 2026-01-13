@@ -109,4 +109,4 @@ No migration required. These are bug fixes that improve existing behavior.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch-dashboards/opensearch-dashboards-workspace.md)
+- Full feature documentation

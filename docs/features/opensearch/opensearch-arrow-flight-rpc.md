@@ -228,8 +228,6 @@ public class MyStreamProducer implements StreamProducer<VectorSchemaRoot, Buffer
 
 - **v3.0.0** (2025-02-20): Initial implementation with Flight server bootstrap logic and client for internode communication
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

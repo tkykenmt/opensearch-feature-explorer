@@ -109,4 +109,4 @@ No migration required. These are transparent bug fixes that improve existing fun
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/reporting/reporting-plugin.md)
+- Full feature documentation

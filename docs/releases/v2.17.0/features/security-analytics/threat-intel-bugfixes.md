@@ -101,4 +101,4 @@ Users upgrading from v2.12-2.15 with threat intel enabled should note:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security-analytics/security-analytics-threat-intelligence.md)
+- Full feature documentation

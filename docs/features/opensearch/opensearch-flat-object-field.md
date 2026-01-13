@@ -188,8 +188,6 @@ This is more efficient than loading the entire `_source` when you only need spec
 - **v2.18.0** (2024-10-22): Added IndexOrDocValuesQuery optimization for improved query performance. Delegated query generation to KeywordFieldType to reduce code duplication. Enabled wildcard query support. Fixed infinite loop bug when flat_object field receives invalid token types.
 - **v2.7.0** (2023-04-18): Initial implementation of flat_object field type.
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

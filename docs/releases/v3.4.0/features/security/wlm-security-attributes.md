@@ -121,4 +121,4 @@ No migration is required. Existing WLM rules using `index_pattern` continue to w
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-workload-management.md)
+- Full feature documentation

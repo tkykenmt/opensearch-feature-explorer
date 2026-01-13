@@ -70,5 +70,5 @@ The v3.1.0 release of the Observability plugins includes:
 
 ## Related Feature Report
 
-- [Observability UI](../../../features/dashboards-observability/dashboards-observability-observability-ui.md)
-- [Trace Analytics](../../../features/dashboards-observability/dashboards-observability-trace-analytics.md)
+- Observability UI
+- Trace Analytics

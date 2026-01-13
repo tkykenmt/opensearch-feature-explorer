@@ -123,4 +123,4 @@ if ("WRITE".equals(accessLevel)) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-multi-tenancy.md)
+- Full feature documentation

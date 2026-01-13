@@ -165,8 +165,6 @@ SSLContext sslContext = SSLContextBuilder.create()
 - **v3.1.0** (2026-01-10): Updated FipsMode check to catch NoSuchMethodError for improved compatibility with security plugin during BC-FIPS transition
 - **v3.0.0** (2025-05-06): Migrated from standard BC to BC-FIPS libraries; refactored PemUtils to use BC for PEM parsing; added java.security configuration for BC-FIPS providers
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

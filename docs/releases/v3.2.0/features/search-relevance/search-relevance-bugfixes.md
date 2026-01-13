@@ -86,4 +86,4 @@ referenceAnswer: max 2000 characters
 
 ## Related Feature Report
 
-- [Search Relevance Workbench](../../../features/search-relevance/search-relevance-workbench.md)
+- Search Relevance Workbench

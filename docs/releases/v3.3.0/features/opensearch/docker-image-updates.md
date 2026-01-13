@@ -102,4 +102,4 @@ This change is transparent to users. The OpenSearch Docker images will continue 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-docker-image-base.md)
+- Full feature documentation

@@ -182,4 +182,4 @@ This is an experimental feature requiring:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/k-nn/k-nn-remote-vector-index-build.md)
+- Full feature documentation

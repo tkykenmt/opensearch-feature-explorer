@@ -93,10 +93,6 @@ When security testing is enabled, the following certificates are downloaded from
 
 - **v3.4.0** (2026-01-11): Initial implementation - Added system property to control security plugin integration in tests
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Learning to Rank](../learning/learning-to-rank.md)
 
 ## References
 

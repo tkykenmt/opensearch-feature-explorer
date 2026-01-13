@@ -116,4 +116,4 @@ source=table1 | join left=t1 right=t2 on t1.id=t2.id table2 | fields t1.id, t2.i
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/sql/sql-ppl-bug-fixes.md)
+- Full feature documentation

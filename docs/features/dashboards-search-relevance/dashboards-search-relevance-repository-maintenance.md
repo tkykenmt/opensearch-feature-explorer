@@ -81,9 +81,6 @@ Keeping GitHub Actions dependencies updated ensures:
 
 - **v3.2.0** (2026-01): Maintainer updates, issue templates, codecov integration, GitHub Actions dependency bumps
 
-## Related Features
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
 
 ## References
 

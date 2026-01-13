@@ -163,4 +163,4 @@ POST _plugins/_sql
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-pit-refactor.md)
+- Full feature documentation

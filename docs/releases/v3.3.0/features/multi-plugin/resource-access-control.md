@@ -214,4 +214,4 @@ MLModelGroupGetRequest request = MLModelGroupGetRequest.builder()
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-resource-access-control-framework.md)
+- Full feature documentation

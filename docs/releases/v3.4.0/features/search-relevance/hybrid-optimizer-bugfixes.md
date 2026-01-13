@@ -95,4 +95,4 @@ public void processHybridOptimizerExperiment(...) {
 
 ## Related Feature Report
 
-- [Search Relevance Workbench](../../../features/search-relevance/search-relevance-workbench.md)
+- Search Relevance Workbench

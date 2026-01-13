@@ -133,4 +133,4 @@ No migration required. These changes are backward compatible.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/skills/skills-tools.md)
+- Full feature documentation

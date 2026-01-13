@@ -98,4 +98,4 @@ for (let i = 0; i < 3; i++) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/ci-cd-build-fixes.md)
+- Full feature documentation

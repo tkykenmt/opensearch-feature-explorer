@@ -124,11 +124,6 @@ POST /_plugins/_ml/agents/{agent_id}/_execute
 - **v3.1.0** (2026-01-10): Added comprehensive unit test and integration test coverage
 - **v3.0.0**: Initial experimental release of PlanExecuteReflect Agent
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

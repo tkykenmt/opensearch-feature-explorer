@@ -163,4 +163,4 @@ Response structure with fixed field names:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/search-relevance/search-relevance-workbench.md)
+- Full feature documentation

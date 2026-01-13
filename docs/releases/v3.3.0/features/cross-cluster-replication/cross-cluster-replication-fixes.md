@@ -122,4 +122,4 @@ No migration required. The fix is backward compatible and automatically handles 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/cross-cluster-replication/cross-cluster-opensearch-replication.md)
+- Full feature documentation

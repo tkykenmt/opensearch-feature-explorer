@@ -250,10 +250,6 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 - **v2.17.0** (2024-09-17): Fixed inference logic with new `lastSeenExecutionEndTime` tracking, standardized config index mapping (`defaultFill` → `default_fill`), improved null checks for imputation options, bugfixes for real-time/historical task flag management, null aggregation handling, Dashboards data source integration
 - **v2.x**: High-cardinality detection, historical analysis, custom result indices
 
-## Related Features
-- [Alerting](../alerting/alerting.md)
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Job Scheduler](../job-scheduler/job-scheduler.md)
 
 ## References
 

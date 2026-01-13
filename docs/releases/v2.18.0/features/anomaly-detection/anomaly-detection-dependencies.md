@@ -62,4 +62,4 @@ None identified.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/anomaly-detection/anomaly-detection-dependencies.md)
+- Full feature documentation

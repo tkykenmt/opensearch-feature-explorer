@@ -127,4 +127,4 @@ POST _bulk?error_trace=true
 
 ## Related Feature Report
 
-- [Full Bulk API documentation](../../../features/opensearch/opensearch-bulk-api.md)
+- Full Bulk API documentation

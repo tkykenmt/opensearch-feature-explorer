@@ -164,4 +164,4 @@ source=logs | stats count() by bins(@timestamp, 20)
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/ppl-aggregation-pushdown.md)
+- Full feature documentation

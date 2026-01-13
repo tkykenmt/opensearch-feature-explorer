@@ -117,4 +117,4 @@ No migration required. These are bug fixes that improve existing functionality.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/dashboards-ui-ux-fixes.md)
+- Full feature documentation

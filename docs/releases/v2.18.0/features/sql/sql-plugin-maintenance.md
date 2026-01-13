@@ -85,4 +85,4 @@ None specific to this release.
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/sql/sql-plugin-maintenance.md)
+- Full feature documentation

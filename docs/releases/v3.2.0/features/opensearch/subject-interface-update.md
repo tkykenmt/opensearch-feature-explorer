@@ -95,4 +95,4 @@ If you have custom `Subject` implementations or use `Subject.runAs()`:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/opensearch/opensearch-subject-interface.md)
+- Full feature documentation

@@ -102,4 +102,4 @@ GET /api/integrations/repository/{id}/static/{path}
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/observability/observability-integrations.md)
+- Full feature documentation

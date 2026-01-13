@@ -91,4 +91,4 @@ The header changes are automatically applied when using the new top navigation. 
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-dashboards-ui-updates.md)
+- Full feature documentation

@@ -117,8 +117,6 @@ public class MyPlugin implements IdentityAwarePlugin {
 - **v3.2.0** (2026-01-10): Updated `runAs` method to use `CheckedRunnable` instead of `Callable`, changed return type from `T` to `void`, and added `@PublicApi` annotation to `CheckedRunnable`
 - **v3.0.0** (2024-08-28): Initial implementation - added `runAs` method to Subject interface and introduced `IdentityAwarePlugin` extension point
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

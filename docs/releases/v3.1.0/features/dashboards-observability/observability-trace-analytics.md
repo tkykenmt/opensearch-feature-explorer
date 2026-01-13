@@ -126,4 +126,4 @@ export const getSpanIndices = (mode: TraceAnalyticsMode) => {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/dashboards-observability/dashboards-observability-trace-analytics.md)
+- Full feature documentation

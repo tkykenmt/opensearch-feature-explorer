@@ -237,9 +237,6 @@ PUT /_plugins/_security/api/resource/share
 - **v3.4.0** (2026-01-14): Integration with centralized Resource Sharing and Access Control framework
 - **v2.17.0** (2024-09-17): Initial implementation of user-level access control based on backend roles
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [Flow Framework (Dashboards)](../dashboards-flow-framework/dashboards-flow-framework-ai-search-flows.md)
 
 ## References
 

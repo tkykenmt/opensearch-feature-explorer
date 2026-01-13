@@ -209,8 +209,6 @@ GET /logs/_search
 
 - **v3.4.0** (2026-01): Added bulk collection APIs (`collect(DocIdStream, long)`, `collectRange(int, int)`), deleted documents handling, and optimized implementations for avg, sum, min, max, stats, and cardinality aggregations
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

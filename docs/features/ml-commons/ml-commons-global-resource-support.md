@@ -151,11 +151,6 @@ Any tenant can then create models using this global connector.
 
 - **v3.3.0** (2025-09-24): Initial implementation with support for global connectors, models, and agents; async model initialization; DynamoDB integration via remote metadata SDK
 
-## Related Features
-- [Neural Search](../neural-search/neural-search-agentic-search.md)
-- [Flow Framework](../flow-framework/flow-framework.md)
-- [AI Assistant (Dashboards)](../dashboards-assistant/dashboards-assistant.md)
-- [Skills](../skills/skills-opensearch-plugin-dependencies.md)
 
 ## References
 

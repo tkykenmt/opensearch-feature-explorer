@@ -189,10 +189,6 @@ PUT _ingest/pipeline/char-chunking-pipeline
 - **v3.1.0**: Added `fixed_char_length` algorithm for character-based chunking, beneficial for non-space-delimited languages
 - **v2.18.0** (2024-10-29): Added `ignore_missing` parameter to skip missing fields during processing
 
-## Related Features
-- [ML Commons](../ml-commons/ml-commons-agentic-memory.md)
-- [k-NN Vector Search](../k-nn/k-nn-disk-based-vector-search.md)
-- [Search Relevance](../search-relevance/dashboards-observability-search-relevance-ci-tests.md)
 
 ## References
 

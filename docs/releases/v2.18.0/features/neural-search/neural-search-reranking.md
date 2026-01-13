@@ -161,4 +161,4 @@ GET /my-index/_search
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-reranking.md)
+- Full feature documentation

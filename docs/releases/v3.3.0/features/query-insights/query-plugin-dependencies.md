@@ -83,4 +83,4 @@ No migration required. These are transparent dependency updates that do not chan
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/query-insights/query-insights-dependencies.md)
+- Full feature documentation

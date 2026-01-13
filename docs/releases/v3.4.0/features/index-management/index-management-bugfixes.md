@@ -123,4 +123,4 @@ if (Version.CURRENT.onOrAfter(Version.V_3_3_0)) {
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../features/index-management/index-management.md)
+- Full feature documentation

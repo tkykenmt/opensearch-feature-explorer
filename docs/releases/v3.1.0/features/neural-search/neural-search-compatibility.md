@@ -66,4 +66,4 @@ No migration required. This is a build infrastructure change that does not affec
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/neural-search/neural-search-compatibility.md)
+- Full feature documentation

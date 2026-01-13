@@ -185,8 +185,6 @@ GET /my_index/_search
 
 - **v3.2.0** (2026-01-10): Fixed QueryBuilderVisitor pattern for HasParentQuery and HasChildQuery to properly traverse sub-queries
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

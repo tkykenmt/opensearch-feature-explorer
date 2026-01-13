@@ -85,4 +85,4 @@ Last updated: {{ctx.monitor.last_update_time}}
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/common-utils/common-utils-alerting-context-variables.md)
+- Full feature documentation

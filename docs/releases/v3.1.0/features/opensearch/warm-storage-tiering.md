@@ -154,4 +154,4 @@ PUT /my-index/_settings
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-warm-storage-tiering.md)
+- Full feature documentation

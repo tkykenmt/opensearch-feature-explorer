@@ -80,4 +80,4 @@ DisiPriorityQueue queue = DisiPriorityQueue.ofMaxSize(size);
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch/opensearch-lucene-upgrade.md)
+- Full feature documentation

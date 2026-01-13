@@ -132,8 +132,6 @@ GET /products/_search
 
 - **v3.3.0** (2026): Added `search_after` pagination support for field collapsing (requires collapse field = sort field)
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

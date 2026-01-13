@@ -91,4 +91,4 @@ For developers:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-maps/dashboards-maps-maps-geospatial.md)
+- Full feature documentation

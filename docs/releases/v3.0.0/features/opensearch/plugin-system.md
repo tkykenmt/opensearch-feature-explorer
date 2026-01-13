@@ -111,4 +111,4 @@ No migration required. This is a backward-compatible change that relaxes validat
 
 ## Related Feature Report
 
-- [Plugin Dependencies](../../../features/opensearch/opensearch-plugin-dependencies.md)
+- Plugin Dependencies

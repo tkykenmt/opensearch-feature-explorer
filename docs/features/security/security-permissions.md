@@ -147,8 +147,6 @@ forecast_read_access:
 
 - **v3.1.0** (2025-06): Added `forecast_read_access` and `forecast_full_access` roles with complete permissions for forecasting feature including `cluster_monitor` and `indices:admin/mappings/get`
 
-## Related Features
-- [Security (Dashboards)](../security-dashboards-plugin/security-dashboards-plugin-security-dashboards-role-management.md)
 
 ## References
 

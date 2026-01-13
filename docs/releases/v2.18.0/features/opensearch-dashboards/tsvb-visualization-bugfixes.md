@@ -99,4 +99,4 @@ No migration required. Existing TSVB visualizations will continue to work. The n
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/opensearch-dashboards/opensearch-dashboards-tsvb-visualization.md)
+- Full feature documentation

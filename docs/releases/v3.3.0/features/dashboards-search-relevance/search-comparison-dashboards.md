@@ -124,4 +124,4 @@ No migration required. The changes are backward compatible and automatically app
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/dashboards-search-relevance/dashboards-search-relevance-search-comparison.md)
+- Full feature documentation

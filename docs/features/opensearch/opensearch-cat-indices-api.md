@@ -153,8 +153,6 @@ yellow open   logs    abc123def456ghi789jkl   5   1     100000     50.2mb
 
 - **v3.2.0**: Added `last_index_request_timestamp` and `last_index_request_timestamp_string` columns to track indexing activity
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

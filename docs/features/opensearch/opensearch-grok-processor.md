@@ -131,8 +131,6 @@ PUT _ingest/pipeline/multi_ip
 
 - **v3.3.0** (2025-09-12): Added `capture_all_matches` option to capture multiple values for repeated field names into an array
 
-## Related Features
-- [OpenSearch Dashboards](../opensearch-dashboards/opensearch-dashboards-ai-chat.md)
 
 ## References
 

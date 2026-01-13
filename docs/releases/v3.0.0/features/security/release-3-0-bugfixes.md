@@ -84,4 +84,4 @@ When upgrading from OpenSearch 2.x to 3.0.0:
 
 ## Related Feature Report
 
-- [Full feature documentation](../../../../features/security/security-configuration.md)
+- Full feature documentation
