@@ -163,6 +163,7 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 
 ## Change History
 
+- **v2.19.0** (2025-02-18): Fixed duplicate alerts from aggregation Sigma rules; Fixed trigger condition filtering for aggregation rules; Optimized sigma aggregation rule detectors execution workflow; Added OCSF 1.1 field mappings; Fixed OCSF 1.1 field mapping order; Added input validation
 - **v2.17.0** (2024-09-17): Added triggers field to Get Detectors API response; Added secure REST tests for threat intel monitor APIs
 
 
@@ -177,5 +178,11 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#1424](https://github.com/opensearch-project/security-analytics/pull/1424) | Fix duplicate alerts from aggregation Sigma rules |   |
+| v2.19.0 | [#1423](https://github.com/opensearch-project/security-analytics/pull/1423) | Fix detector trigger conditions for aggregation rules |   |
+| v2.19.0 | [#1418](https://github.com/opensearch-project/security-analytics/pull/1418) | Optimize sigma aggregation rule detectors execution |   |
+| v2.19.0 | [#1439](https://github.com/opensearch-project/security-analytics/pull/1439) | OCSF 1.1 field mapping fixes |   |
+| v2.19.0 | [#1403](https://github.com/opensearch-project/security-analytics/pull/1403) | Add OCSF 1.1 fields to static mappings |   |
+| v2.19.0 | [#1442](https://github.com/opensearch-project/security-analytics/pull/1442) | Add catch for unexpected inputs |   |
 | v2.17.0 | [#1226](https://github.com/opensearch-project/security-analytics/pull/1226) | Added triggers in getDetectors API response |   |
 | v2.17.0 | [#1212](https://github.com/opensearch-project/security-analytics/pull/1212) | Secure rest tests for threat intel monitor APIs |   |
