@@ -66,7 +66,7 @@ graph TB
 | `CreateAnomalyDetectorTool` | Creates anomaly detectors |
 | `LogPatternAnalysisTool` | Analyzes log patterns and sequences |
 | `DataDistributionTool` | Analyzes data distribution with statistical comparison |
-| `LogPatternTool` | Analyzes log patterns |
+| `LogPatternTool` | Analyzes log patterns using Brain algorithm |
 
 ### Tool Registration
 
@@ -158,7 +158,7 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 - **v3.2.0** (2026-01-11): Added index schema merging for PPLTool when using index patterns (merges mappings from all matching indexes); added error message masking in PPLTool to redact SageMaker ARNs and AWS account numbers; standardized parameter handling across all tools using `extractInputParameters` utility
 - **v3.1.0** (2025-05-06): Added data source type parameter (`datasourceType`) to PPLTool for Spark/S3 data source support; fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
 - **v3.0.0** (2025-02-25): Added WebSearchTool, fixed PPLTool empty list bug, updated dependencies, enhanced developer guide; added `attributes` field to all tool classes for ML Commons Plan-Execute-Reflect agent compatibility ([#549](https://github.com/opensearch-project/skills/pull/549)); added Java Agent plugin support for SecurityManager deprecation ([#553](https://github.com/opensearch-project/skills/pull/553)); fixed jar hell issue by creating thin SQL JAR with only `org/opensearch/sql/**` classes ([#545](https://github.com/opensearch-project/skills/pull/545))
-- **v2.19.0** (2025-01-16): Fixed GitHub Actions CI Linux build failures by using shared CI image workflow from opensearch-build; fixed RAGTool missing return statement when content generation is disabled; improved test error handling and logging
+- **v2.19.0** (2025-01-16): Improved LogPatternTool with Brain algorithm for higher grouping accuracy; added PPL query support; fixed GitHub Actions CI Linux build failures by using shared CI image workflow from opensearch-build; fixed RAGTool missing return statement when content generation is disabled; improved test error handling and logging
 - **v2.18.0** (2024-11-12): Added LogPatternTool for log pattern analysis, added customizable prompt support for CreateAnomalyDetectorTool
 
 
@@ -193,6 +193,8 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 | v3.0.0 | [#541](https://github.com/opensearch-project/skills/pull/541) | Fix PPLTool empty list bug |   |
 | v3.0.0 | [#529](https://github.com/opensearch-project/skills/pull/529) | Update ML Commons dependencies |   |
 | v3.0.0 | [#521](https://github.com/opensearch-project/skills/pull/521) | Developer guide enhancement |   |
+| v2.19.0 | [#474](https://github.com/opensearch-project/skills/pull/474) | Log pattern tool improvement with Brain algorithm | [OpenSearch#16627](https://github.com/opensearch-project/OpenSearch/issues/16627) |
+| v2.19.0 | [#458](https://github.com/opensearch-project/skills/pull/458) | Fix compilation issue caused by AD change |   |
 | v2.19.0 | [#477](https://github.com/opensearch-project/skills/pull/477) | Fix github ci linux build and RAG tool missing return | [#445](https://github.com/opensearch-project/skills/issues/445) |
 | v2.18.0 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |   |
 | v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool | [#337](https://github.com/opensearch-project/skills/issues/337) |

@@ -93,6 +93,7 @@
 ### skills
 - CVE Fixes
 - CI Fixes
+- Skills Tools
 
 ### observability
 - Observability SOP
