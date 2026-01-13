@@ -14,3 +14,7 @@ Cumulative feature documentation across all versions.
 - Painless Script Hashing Methods
 - Snapshot Repository
 - Synonym Analyzer Configuration
+
+## security
+
+- Security Identity Plugin
