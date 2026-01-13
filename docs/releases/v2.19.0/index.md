@@ -45,6 +45,7 @@
 - Template Query
 - Tiered Caching Bug Fixes
 - Unsigned Long Field
+- Workload Management
 - Workload Management Logging
 - Script Enhancements
 
