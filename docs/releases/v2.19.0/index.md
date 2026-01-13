@@ -8,6 +8,7 @@
 - Cluster State
 - Deprecation Logger Cache Bound
 - gRPC Settings
+- Index Settings API
 - IP Field
 - List Shards API
 - Match Only Text Field
