@@ -14,6 +14,7 @@
 - ML Commons Tutorials
 
 ### neural-search
+- Hybrid Query
 - Neural Search General Enhancements
 - Neural Sparse Search Pruning
 
