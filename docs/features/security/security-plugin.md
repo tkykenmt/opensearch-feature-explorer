@@ -176,6 +176,7 @@ config:
 
 - **v3.2.0** (2025-09-16): Enhancements - nested JWT claim support for subject extraction, stream transport security integration, plugin permission declaration mechanism via plugin-permissions.yml; Bugfixes - JWT clock skew tolerance now properly applied, demo certificate installation in Helm/K8s environments, mixed cluster config update handling, cluster permission detection, SecureHttpTransportParameters provider, tenancy access serialization; Refactoring - JWT Vendor with flexible claims builder
 - **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
+- **v2.19.0** (2025-02-11): Bugfixes - Netty4HttpRequestHeaderVerifier now handles HTTP upgrade requests by accepting HttpRequest instead of DefaultHttpRequest; Infrastructure - JaCoCo report generation for integTestRemote task, RestHelper TLS configuration updated to use DefaultClientTlsStrategy
 - **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
 - **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal
 
@@ -231,6 +232,8 @@ config:
 | v3.0.0 | [#1467](https://github.com/opensearch-project/security/pull/1467) | Refactored flaky test |   |
 | v3.0.0 | [#1498](https://github.com/opensearch-project/security/pull/1498) | Remove overrides of preserveIndicesUponCompletion |   |
 | v3.0.0 | [#1503](https://github.com/opensearch-project/security/pull/1503) | Remove usage of deprecated batchSize() method |   |
+| v2.19.0 | [#5045](https://github.com/opensearch-project/security/pull/5045) | Fix Netty4 header verifier for HTTP upgrade requests | Follow-up to [#5035](https://github.com/opensearch-project/security/pull/5035) |
+| v2.19.0 | [#5050](https://github.com/opensearch-project/security/pull/5050) | Generate JaCoCo report for integTestRemote task |   |
 | v2.18.0 | [#4756](https://github.com/opensearch-project/security/pull/4756) | Support datastreams as an AuditLog Sink |   |
 | v2.18.0 | [#4753](https://github.com/opensearch-project/security/pull/4753) | Auto-convert V6 configuration to V7 (2.x only) |   |
 | v2.18.0 | [#4779](https://github.com/opensearch-project/security/pull/4779) | Add circuit breaker override for security APIs |   |
