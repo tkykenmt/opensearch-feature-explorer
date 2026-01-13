@@ -88,6 +88,9 @@
 ### security-dashboards
 - Security Dashboards Bug Fixes
 
+### dashboards-assistant
+- AI Assistant UI
+
 ### dashboards-maps
 - WMS CRS Fix
 

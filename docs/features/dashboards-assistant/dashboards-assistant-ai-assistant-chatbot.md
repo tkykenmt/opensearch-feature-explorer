@@ -124,11 +124,13 @@ PUT .plugins-ml-config/_doc/os_chat
 - Text-to-visualization requires PPL queries with valid results and aggregations
 - Response quality depends on the underlying LLM model
 - Admin UI settings require OpenSearch Dashboards 3.1.0+
+- Feature flags require plugin restart to take effect
 
 ## Change History
 
 - **v3.1.0** (2026-01-10): T2viz enhancements (single metric styling, time range support, error prevention), streaming buffer for special characters, persistent flyout state, admin UI settings for centralized feature control, alert summary format instructions
 - **v3.0.0** (2025-05-06): Major UI redesign, streaming output support, single button entry point, text-to-visualization enhancements with auto-aggregation, conversation auto-loading
+- **v2.19.0** (2025-02-25): Responsive chatbot entry redesign, feature flags for trace/feedback/stop/regenerate buttons, in-context summarization UI improvements, dropdown list enhancements, logo configuration, Pipeline architecture for multi-agent execution, improved error handling (404 vs 500)
 - **v2.18.0** (2024-11-05): Added assistant capabilities for conditional UI rendering, new API to check agent config existence, renamed agentName to agentConfigName for clarity
 - **v2.13** (2024): Initial introduction of OpenSearch Assistant for OpenSearch Dashboards
 
@@ -161,5 +163,17 @@ PUT .plugins-ml-config/_doc/os_chat
 | v3.0.0 | [#505](https://github.com/opensearch-project/dashboards-assistant/pull/505) | Generate visualization on t2v page mount |   |
 | v3.0.0 | [#514](https://github.com/opensearch-project/dashboards-assistant/pull/514) | Add auto aggregation suggest for t2v |   |
 | v3.0.0 | [#540](https://github.com/opensearch-project/dashboards-assistant/pull/540) | Change chatbot entry point to single button |   |
+| v2.19.0 | [#396](https://github.com/opensearch-project/dashboards-assistant/pull/396) | Chatbot entry UI redesign |   |
+| v2.19.0 | [#379](https://github.com/opensearch-project/dashboards-assistant/pull/379) | Add feature flags for traces and feedback |   |
+| v2.19.0 | [#394](https://github.com/opensearch-project/dashboards-assistant/pull/394) | Hide stop/regenerate buttons via feature flag |   |
+| v2.19.0 | [#392](https://github.com/opensearch-project/dashboards-assistant/pull/392) | Update UI for in-context summarization |   |
+| v2.19.0 | [#407](https://github.com/opensearch-project/dashboards-assistant/pull/407) | Update dropdown list button label |   |
+| v2.19.0 | [#395](https://github.com/opensearch-project/dashboards-assistant/pull/395) | Add query assistant summary to dropdown |   |
+| v2.19.0 | [#401](https://github.com/opensearch-project/dashboards-assistant/pull/401) | Set logo config in assistant |   |
+| v2.19.0 | [#409](https://github.com/opensearch-project/dashboards-assistant/pull/409) | Feature flag for delete conversation API |   |
+| v2.19.0 | [#410](https://github.com/opensearch-project/dashboards-assistant/pull/410) | Feature flag for rename conversation API |   |
+| v2.19.0 | [#376](https://github.com/opensearch-project/dashboards-assistant/pull/376) | Refactor multi agents execution with Pipeline |   |
+| v2.19.0 | [#384](https://github.com/opensearch-project/dashboards-assistant/pull/384) | Return 404 instead of 500 for missing agent config |   |
+| v2.19.0 | [#368](https://github.com/opensearch-project/dashboards-assistant/pull/368) | Visual editor alerts navigation to discover |   |
 | v2.18.0 | [#267](https://github.com/opensearch-project/dashboards-assistant/pull/267) | Add assistant capabilities to control rendering components |   |
 | v2.18.0 | [#307](https://github.com/opensearch-project/dashboards-assistant/pull/307) | Expose API to check if agent config name has agent ID configured |   |
