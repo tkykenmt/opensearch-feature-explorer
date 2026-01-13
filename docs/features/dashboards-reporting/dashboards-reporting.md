@@ -120,6 +120,7 @@ opensearch-reporting-cli \
 
 - **v3.4.0** (2026-01-14): Security fix for CVE-2025-57810 (jspdf bump), fixed null/undefined datetime handling in CSV reports
 - **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
+- **v2.19.0** (2025-02-18): Sanitize markdown in header/footer preview, fixed CSV nested fields parsing, hide reporting button when MDS enabled in notebooks
 - **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component
 
 
@@ -138,6 +139,9 @@ opensearch-reporting-cli \
 | v3.0.0 | [#524](https://github.com/opensearch-project/dashboards-reporting/pull/524) | Support for date range in report generation | [#414](https://github.com/opensearch-project/dashboards-reporting/issues/414) |
 | v3.0.0 | [#554](https://github.com/opensearch-project/dashboards-reporting/pull/554) | Updated optional parameters for timeFrom and timeTo |   |
 | v3.0.0 | [#570](https://github.com/opensearch-project/dashboards-reporting/pull/570) | Reporting Popover UI fix | [#401](https://github.com/opensearch-project/dashboards-reporting/issues/401) |
+| v2.19.0 | [#476](https://github.com/opensearch-project/dashboards-reporting/pull/476) | Sanitize markdown when previewing report header/footer |   |
+| v2.19.0 | [#502](https://github.com/opensearch-project/dashboards-reporting/pull/502) | CSV report generation had missing nested fields | [#375](https://github.com/opensearch-project/dashboards-reporting/issues/375) |
+| v2.19.0 | [dashboards-observability#2278](https://github.com/opensearch-project/dashboards-observability/pull/2278) | Updated notebooks reporting button render |   |
 | v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |   |
 
 ### Issues (Design / RFC)
