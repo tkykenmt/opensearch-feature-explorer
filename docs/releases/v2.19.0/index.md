@@ -15,6 +15,7 @@
 - List Shards API
 - Match Only Text Field
 - Multi-Search Request Cancellation Fix
+- Reader Writer Separation
 - Remote Repository Validation
 - Remote Shards Balance Fix
 - Remote State Manifest
