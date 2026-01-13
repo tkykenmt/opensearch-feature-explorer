@@ -68,6 +68,7 @@
 
 ### security
 - CVE Fixes
+- Security Audit Logging
 - Security Netty
 
 ### security-analytics
