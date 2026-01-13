@@ -37,6 +37,7 @@
 - Searchable Snapshot Bug Fixes
 - Security Transport NIO
 - Sliced Search Optimization
+- Snapshot Repository
 - Snapshot Restore Settings
 - Sort Field Merging
 - System Indices
