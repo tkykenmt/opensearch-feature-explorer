@@ -166,6 +166,7 @@ PUT _cluster/settings
 ## Change History
 
 - **v3.4.0** (2026-01-11): Added sensitive parameter filtering for connector APIs, resource type support for resource sharing client, increased batch task limits (default: 100, max: 10,000)
+- **v2.19.0** (2025-01-28): Added application_type to ConversationMeta, Cohere multi-modal pre-processor, Adagrad optimizer for linear regression, batch task polling via cron job, Memory API validation improvements, DeepSeek and Amazon Rekognition trusted endpoints, ML Inference Search Request Extension, Bedrock Rerank support, model undeploy fix for no worker nodes
 
 
 ## References
@@ -184,3 +185,13 @@ PUT _cluster/settings
 | v3.4.0 | [#4308](https://github.com/opensearch-project/ml-commons/pull/4308) | Declare credential and *.Authorization as sensitive param |   |
 | v3.4.0 | [#4333](https://github.com/opensearch-project/ml-commons/pull/4333) | Pass resourceType instead of resourceIndex to resourceSharingClient |   |
 | v3.4.0 | [#4474](https://github.com/opensearch-project/ml-commons/pull/4474) | Allow higher maximum number of batch inference job tasks |   |
+| v2.19.0 | [#3282](https://github.com/opensearch-project/ml-commons/pull/3282) | Add application_type to ConversationMeta |   |
+| v2.19.0 | [#3283](https://github.com/opensearch-project/ml-commons/pull/3283) | Enhance Message and Memory API Validation and storage |   |
+| v2.19.0 | [#3291](https://github.com/opensearch-project/ml-commons/pull/3291) | Use Adagrad optimizer for Linear regression by default |   |
+| v2.19.0 | [#3200](https://github.com/opensearch-project/ml-commons/pull/3200) | Add action input as parameters for tool execution |   |
+| v2.19.0 | [#3219](https://github.com/opensearch-project/ml-commons/pull/3219) | Adding multi-modal pre-processor for Cohere |   |
+| v2.19.0 | [#3380](https://github.com/opensearch-project/ml-commons/pull/3380) | Undeploy models with no WorkerNodes |   |
+| v2.19.0 | [#3421](https://github.com/opensearch-project/ml-commons/pull/3421) | Support batch task management by periodic polling |   |
+| v2.19.0 | [#3440](https://github.com/opensearch-project/ml-commons/pull/3440) | Add DeepSeek as a trusted endpoint |   |
+| v2.19.0 | [#3419](https://github.com/opensearch-project/ml-commons/pull/3419) | Added Amazon Rekognition as a trusted endpoint |   |
+| v2.19.0 | [#3284](https://github.com/opensearch-project/ml-commons/pull/3284) | Introduce ML Inference Search Request Extension |   |

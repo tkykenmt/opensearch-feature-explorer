@@ -9,6 +9,7 @@
 - QAT Security Permission Fix
 
 ### ml-commons
+- ML Commons General Enhancements
 - ML Commons Tutorials
 
 ### opensearch
