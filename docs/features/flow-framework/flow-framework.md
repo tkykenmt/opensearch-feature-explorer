@@ -197,6 +197,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - **v3.2.0** (2025-08-06): Bug fixes for ApiSpecFetcher memory issues and exception handling; Improved error messages for workflow steps with Bad Request status; Updated RegisterLocalCustomModelStep for OpenSearch 3.1+ API compatibility with model_config nesting and space_type support; Fixed encryption key race condition during concurrent template creation; Fixed connector name substitution in default use case templates
 - **v3.1.0** (2025-07-15): Bug fixes for RegisterAgentStep LLM field processing, exception type in WorkflowState error messages, and LLM spec parameter passing; Conditional DynamoDB client dependency inclusion via environment variable; New data summary with log pattern agent template for query assist
 - **v3.0.0** (2025-05-06): OpenSearch 3.0 compatibility fixes, per-tenant provisioning throttling, REST status code corrections, config parser fix for tenant_id, synchronous provisioning action listener fix, reprovision timeout response fix, ToolStep attributes field, text-to-visualization templates
+- **v2.19.0** (2025-02-18): Multi-tenancy support with remote metadata storage (DynamoDB, remote OpenSearch); Synchronous provisioning with `wait_for_completion_timeout` parameter for provision and reprovision APIs; Fixed RBAC access control when workflow template is deleted by reading user info from workflow state; Improved logging with Log4j ParameterizedMessage
 - **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
 - **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
 
@@ -236,6 +237,10 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 | v3.0.0 | [#1107](https://github.com/opensearch-project/flow-framework/pull/1107) | Fix bug handleReprovision missing wait_for_completion_timeout response | [#1106](https://github.com/opensearch-project/flow-framework/issues/1106) |
 | v3.0.0 | [#1113](https://github.com/opensearch-project/flow-framework/pull/1113) | Add new attributes field to ToolStep | [#1112](https://github.com/opensearch-project/flow-framework/issues/1112) |
 | v3.0.0 | [#936](https://github.com/opensearch-project/flow-framework/pull/936) | Add text to visualization agent template |   |
+| v2.19.0 | [#980](https://github.com/opensearch-project/flow-framework/pull/980) | Implement multi-tenancy in Flow Framework |   |
+| v2.19.0 | [#990](https://github.com/opensearch-project/flow-framework/pull/990) | Add synchronous execution option to workflow provisioning | [#967](https://github.com/opensearch-project/flow-framework/issues/967) |
+| v2.19.0 | [#998](https://github.com/opensearch-project/flow-framework/pull/998) | Fix RBAC fetching from workflow state when template is not present | [#986](https://github.com/opensearch-project/flow-framework/issues/986) |
+| v2.19.0 | [#943](https://github.com/opensearch-project/flow-framework/pull/943) | Replace String concatenation with Log4j ParameterizedMessage | [#905](https://github.com/opensearch-project/flow-framework/issues/905) |
 | v2.18.0 | [#899](https://github.com/opensearch-project/flow-framework/pull/899) | Add optional config field to tool step | [#878](https://github.com/opensearch-project/flow-framework/issues/878) |
 | v2.18.0 | [#898](https://github.com/opensearch-project/flow-framework/pull/898) | Incrementally remove resources from workflow state during deprovisioning | [#780](https://github.com/opensearch-project/flow-framework/issues/780) |
 | v2.18.0 | [#918](https://github.com/opensearch-project/flow-framework/pull/918) | Fixed template update location and improved logger statements in ReprovisionWorkflowTransportAction | [#870](https://github.com/opensearch-project/flow-framework/issues/870) |
@@ -253,6 +258,9 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Issue #1097](https://github.com/opensearch-project/flow-framework/issues/1097): Action listener completion
 - [Issue #1106](https://github.com/opensearch-project/flow-framework/issues/1106): Reprovision timeout response
 - [Issue #1112](https://github.com/opensearch-project/flow-framework/issues/1112): ToolStep attributes field
+- [Issue #967](https://github.com/opensearch-project/flow-framework/issues/967): Add option to provision synchronously
+- [Issue #986](https://github.com/opensearch-project/flow-framework/issues/986): Can't get or delete workflow state without template if filtering by user
+- [Issue #905](https://github.com/opensearch-project/flow-framework/issues/905): Replace String concatenation with Log4j ParameterizedMessage
 - [Issue #878](https://github.com/opensearch-project/flow-framework/issues/878): ML-commons config field in MLToolSpec
 - [Issue #780](https://github.com/opensearch-project/flow-framework/issues/780): Update WorkflowState resources during deprovisioning
 - [Issue #691](https://github.com/opensearch-project/flow-framework/issues/691): Handle deprovision with workflow state update failure
