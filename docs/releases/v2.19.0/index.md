@@ -12,6 +12,9 @@
 - ML Commons General Enhancements
 - ML Commons Tutorials
 
+### neural-search
+- Neural Search General Enhancements
+
 ### opensearch
 - Append Only Indices
 - Synonym Analyzer

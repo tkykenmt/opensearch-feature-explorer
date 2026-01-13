@@ -2,6 +2,10 @@
 
 Cumulative feature documentation across all versions.
 
+## neural-search
+
+- Neural Search Enhancements
+
 ## opensearch
 
 - Append Only Indices
