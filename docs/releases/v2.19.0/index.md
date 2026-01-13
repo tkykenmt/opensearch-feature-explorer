@@ -9,6 +9,7 @@
 - List Shards API
 - Match Only Text Field
 - Multi-Search Request Cancellation Fix
+- Remote Repository Validation
 - Remote Shards Balance Fix
 - Workload Management Logging
 
