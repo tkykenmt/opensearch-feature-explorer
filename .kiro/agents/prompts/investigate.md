@@ -242,15 +242,12 @@ Known limitations specific to this release.
 
 ### Documentation
 - [Feature Documentation](url)
-
-## Related Feature Report
-- [Full feature documentation](../../../features/{repository-name}/{feature-name}.md)
 ```
 
 ### Update Release Index
 After creating the release report, update `docs/releases/v{version}/index.md`:
 1. Create if not exists with header
-2. Add link to new report in appropriate section, grouped by repository
+2. Add feature name (plain text, no internal link) in appropriate section, grouped by repository
 
 ## Step 4: Update/Create Feature Report (SECONDARY OUTPUT)
 
@@ -301,7 +298,7 @@ Create `docs/features/{repository-name}/{feature-name}.md` following the templat
 After creating/updating a feature report, update `docs/features/index.md`:
 1. Read current index.md
 2. Group features by repository subfolder
-3. If feature not listed, add `- [Feature Title]({repository-name}/{feature-name}.md)` under the appropriate repository section
+3. If feature not listed, add `- {Feature Title}` (plain text, no link) under the appropriate repository section
 4. Keep the header and description intact
 
 ## Step 5: Commit and Push

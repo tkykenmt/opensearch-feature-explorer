@@ -68,9 +68,6 @@ Brief description of what changed in this version.
 | PR | Description |
 |----|-------------|
 (Only PRs for this version)
-
-## Related Feature Report
-- [Full feature documentation](../../features/{feature-name}.md)
 ```
 
 ### Step 4: Create Release Index
@@ -84,8 +81,8 @@ Create `docs/releases/v{version}/index.md`:
 
 | Feature | Description |
 |---------|-------------|
-| [{Feature 1}](features/{feature-1}.md) | Brief description |
-| [{Feature 2}](features/{feature-2}.md) | Brief description |
+| {Feature 1} | Brief description |
+| {Feature 2} | Brief description |
 ```
 
 ### Step 5: Commit and Push
