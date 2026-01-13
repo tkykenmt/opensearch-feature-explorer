@@ -6,6 +6,7 @@
 - Auto Date Histogram Bug Fix
 - CI Fixes
 - gRPC Settings
+- List Shards API
 - Match Only Text Field
 - Multi-Search Request Cancellation Fix
 - Remote Shards Balance Fix

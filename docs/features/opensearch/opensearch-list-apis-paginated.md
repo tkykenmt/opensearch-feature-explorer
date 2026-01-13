@@ -195,6 +195,7 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 
 ## Change History
 
+- **v2.19.0** (2024-12-10): Fixed `_list/shards` API failing with `index_closed_exception` when closed indices are present
 - **v2.18.0** (2024-10-22): Initial implementation with `_list/indices`, `_list/shards` APIs and cat API response limits
 
 
@@ -208,6 +209,7 @@ curl -X PUT "localhost:9200/_cluster/settings" -H 'Content-Type: application/jso
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v2.19.0 | [#16606](https://github.com/opensearch-project/OpenSearch/pull/16606) | Fix _list/shards API failing when closed indices are present | [#16626](https://github.com/opensearch-project/OpenSearch/issues/16626) |
 | v2.18.0 | [#14718](https://github.com/opensearch-project/OpenSearch/pull/14718) | Implementing pagination for `_cat/indices` API | [#14258](https://github.com/opensearch-project/OpenSearch/issues/14258) |
 | v2.18.0 | [#14641](https://github.com/opensearch-project/OpenSearch/pull/14641) | Implementing pagination for `_cat/shards` | [#14257](https://github.com/opensearch-project/OpenSearch/issues/14257) |
 | v2.18.0 | [#15986](https://github.com/opensearch-project/OpenSearch/pull/15986) | Add changes to block calls in cat shards, indices and segments based on dynamic limit settings | [#15954](https://github.com/opensearch-project/OpenSearch/issues/15954) |
