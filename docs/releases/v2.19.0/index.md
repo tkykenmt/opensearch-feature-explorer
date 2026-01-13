@@ -8,6 +8,7 @@
 - gRPC Settings
 - Match Only Text Field
 - Multi-Search Request Cancellation Fix
+- Remote Shards Balance Fix
 - Workload Management Logging
 
 ### opensearch-dashboards
