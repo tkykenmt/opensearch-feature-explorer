@@ -156,6 +156,7 @@ Search latency may increase by 10-100% depending on the number of documents retr
 
 - **v3.2.0** (2026-01-10): Integration across get/search/recovery paths - Added DerivedSourceDirectoryReader, DerivedSourceLeafReader, DerivedSourceStoredFieldsReader, TranslogOperationHelper; Added dynamic `index.derived_source.translog.enabled` setting; Fixed flaky test issues from reverted PR #18054; Added Star-Tree mapper compatibility
 - **v3.1.0** (2026-01-10): Initial implementation - Added derive source support for basic field types including Date, Number, Boolean, IP, Keyword, Text, Geo Point, Constant Keyword, Scaled Float, and Wildcard
+- **v2.19.0** (2025-01-24): Propagate source includes/excludes to FieldsVisitor - Added `includes()` and `excludes()` methods to `FieldsVisitor` class; `FetchPhase` now passes `FetchSourceContext` filtering parameters to `FieldsVisitor`; Enables derived source implementations to skip reconstruction of excluded fields
 
 
 ## References
@@ -171,6 +172,7 @@ Search latency may increase by 10-100% depending on the number of documents retr
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#18565](https://github.com/opensearch-project/OpenSearch/pull/18565) | Add integration of derived source feature across various paths like get/search/recovery | [#17073](https://github.com/opensearch-project/OpenSearch/issues/17073) |
 | v3.1.0 | [#17759](https://github.com/opensearch-project/OpenSearch/pull/17759) | Adding support for derive source feature and implementing it for various type of field mappers | [#17073](https://github.com/opensearch-project/OpenSearch/issues/17073) |
+| v2.19.0 | [#17080](https://github.com/opensearch-project/OpenSearch/pull/17080) | Propagate includes and excludes from fetchSourceContext to FieldsVisitor | [k-NN #2377](https://github.com/opensearch-project/k-NN/issues/2377) |
 
 ### Issues (Design / RFC)
 - [Issue #17073](https://github.com/opensearch-project/OpenSearch/issues/17073): Add support for deriving source field in FieldMapper
