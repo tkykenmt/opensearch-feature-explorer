@@ -75,3 +75,6 @@
 
 ### observability
 - Observability SOP
+
+### opensearch-learning-to-rank-base
+- Security Integration Tests

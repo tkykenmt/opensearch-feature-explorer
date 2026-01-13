@@ -149,6 +149,7 @@ POST my_index/_search
 ## Change History
 
 - **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix; Test infrastructure enhancements - narrowed index cleanup scope to LTR indexes only, improved test isolation for parallel execution
+- **v2.19.0** (2025-02-18): Infrastructure - Added support for running integration tests against external clusters with security plugin enabled; added Spotless code formatting plugin
 - **v3.3.0** (2026-01-14): Build infrastructure fixes - log4j exclusion from JAR, Gradle 9 compatibility, hybrid float comparison for tests, code coverage reporting, spotless plugin upgrade
 - **v3.2.0** (2025-09-16): Added XGBoost missing values support for correct NaN handling; Build infrastructure upgrade (Gradle 8.14, JDK 24 support); fixed flaky test with ULP tolerance adjustment
 - **v3.0.0** (2025-05-13): Added XGBoost raw JSON parser for proper `save_model` format support; fixed ApproximateScoreQuery test
@@ -185,3 +186,4 @@ POST my_index/_search
 | v3.2.0 | [#205](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/205) | Fix flaky test with ULP tolerance adjustment |   |
 | v3.0.0 | [#151](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/151) | Add XGBoost model parser for correct serialization format | [#497](https://github.com/o19s/elasticsearch-learning-to-rank/issues/497) |
 | v3.0.0 | [#158](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/158) | Fix test for ApproximateScoreQuery |   |
+| v2.19.0 | [#122](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/122) | Support integration tests against external cluster with security plugin | [#120](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/120) |
