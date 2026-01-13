@@ -264,6 +264,7 @@ Response includes system-generated processor and factory statistics:
 
 - **v3.3.0** (2026-01-14): Added system-generated search pipeline support for automatic processor generation
 - **v3.2.0** (2026-01-14): Added support for specifying search pipeline in search template and msearch template APIs
+- **v2.19.0** (2025-01-28): Added `verbose_pipeline` parameter for debugging search pipeline processor execution
 - **v2.18.0** (2024-11-05): Added support for specifying search pipeline in msearch API request body
 
 
@@ -273,6 +274,7 @@ Response includes system-generated processor and factory statistics:
 - [Search Pipelines Documentation](https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/): Official documentation
 - [Using a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/using-search-pipeline/): Usage guide
 - [Creating a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/creating-search-pipeline/): Creation guide
+- [Debugging a Search Pipeline](https://docs.opensearch.org/latest/search-plugins/search-pipelines/debugging-search-pipeline/): Debugging with verbose_pipeline
 - [Search Templates Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/search-template/): Search template API
 - [Multi-Search Template Documentation](https://docs.opensearch.org/latest/api-reference/search-apis/msearch-template/): Msearch template API
 
@@ -286,9 +288,12 @@ Response includes system-generated processor and factory statistics:
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19128](https://github.com/opensearch-project/OpenSearch/pull/19128) | Added system-generated search pipeline support | [#18731](https://github.com/opensearch-project/OpenSearch/issues/18731) |
 | v3.2.0 | [#18564](https://github.com/opensearch-project/OpenSearch/pull/18564) | Added search pipeline support in search and msearch template | [#18508](https://github.com/opensearch-project/OpenSearch/issues/18508) |
+| v2.19.0 | [#16843](https://github.com/opensearch-project/OpenSearch/pull/16843) | Added verbose_pipeline parameter for debugging | [#14745](https://github.com/opensearch-project/OpenSearch/issues/14745) |
 | v2.18.0 | [#15923](https://github.com/opensearch-project/OpenSearch/pull/15923) | Added msearch API support for search pipeline name | [#15748](https://github.com/opensearch-project/OpenSearch/issues/15748) |
 
 ### Issues (Design / RFC)
 - [Issue #18731](https://github.com/opensearch-project/OpenSearch/issues/18731): Feature request for system-generated search pipeline
 - [Issue #18508](https://github.com/opensearch-project/OpenSearch/issues/18508): Feature request for search pipeline support in msearch template
+- [Issue #16705](https://github.com/opensearch-project/OpenSearch/issues/16705): RFC for tracking search pipeline execution (verbose_pipeline)
+- [Issue #14745](https://github.com/opensearch-project/OpenSearch/issues/14745): Feature request for verbose/debugging param in search pipelines
 - [Issue #15748](https://github.com/opensearch-project/OpenSearch/issues/15748): Feature request for msearch pipeline support

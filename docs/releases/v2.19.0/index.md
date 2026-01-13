@@ -18,6 +18,7 @@
 - gRPC Settings
 - gRPC Transport
 - Index Settings API
+- Ingest Pipeline
 - Ingest Pipeline Deprecation
 - Inner Hits Optimization
 - IP Field
