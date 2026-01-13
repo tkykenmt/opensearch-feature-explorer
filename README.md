@@ -120,21 +120,30 @@ python run.py release-investigate 3.0.0
 <details>
 <summary>Manual step-by-step execution</summary>
 
-#### Step 1: Parse Release Notes
+#### Step 1: Fetch Release Notes
 
 ```mermaid
 flowchart TB
     A[fetch-release] --> B[(raw-items.json)]
-    B --> C[group-release]
-    C --> D[(groups.json)]
 ```
 
 ```bash
 python run.py fetch-release 3.0.0
+```
+
+#### Step 2: Group Items
+
+```mermaid
+flowchart TB
+    A[(raw-items.json)] --> B[group-release]
+    B --> C[(groups.json)]
+```
+
+```bash
 python run.py group-release 3.0.0 --all
 ```
 
-#### Step 2: Create GitHub Project & Issues
+#### Step 3: Create GitHub Project & Issues
 
 ```mermaid
 flowchart TB
@@ -147,7 +156,7 @@ flowchart TB
 python run.py planner 3.0.0
 ```
 
-#### Step 3: Investigate Each Issue
+#### Step 4: Investigate Each Issue
 
 ```mermaid
 flowchart TB
@@ -160,9 +169,11 @@ flowchart TB
 python run.py investigate --issue 124
 # Or batch process all
 python run.py batch-investigate --all
+# Or batch process specific version
+python run.py batch-investigate 3.0.0 --all
 ```
 
-#### Step 4: Create Release Summary
+#### Step 5: Create Release Summary
 
 ```mermaid
 flowchart TB
