@@ -147,6 +147,25 @@ def generate_releases_index():
     with mkdocs_gen_files.open("releases/index.md", "w") as f:
         f.write(content)
 
+def generate_release_version_index():
+    """Generate releases/v{version}/index.md for each version."""
+    if not RELEASES_DIR.exists():
+        return
+    
+    for version_dir in RELEASES_DIR.iterdir():
+        if not version_dir.is_dir() or not version_dir.name.startswith("v"):
+            continue
+        
+        version = version_dir.name
+        content = f"# OpenSearch {version}\n\n"
+        content += "| Page | Description |\n"
+        content += "|------|-------------|\n"
+        content += f"| [Summary](summary.md) | Release highlights |\n"
+        content += f"| [Features](features/) | Detailed feature reports |\n"
+        
+        with mkdocs_gen_files.open(f"releases/{version}/index.md", "w") as f:
+            f.write(content)
+
 def generate_release_features_index():
     """Generate releases/v{version}/features/index.md and subdirectory indexes."""
     if not RELEASES_DIR.exists():
@@ -201,4 +220,5 @@ def generate_release_features_index():
                 out.write(content)
 
 generate_releases_index()
+generate_release_version_index()
 generate_release_features_index()
