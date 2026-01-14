@@ -6,6 +6,7 @@ from pathlib import Path
 
 DOCS_DIR = Path("docs")
 FEATURES_DIR = DOCS_DIR / "features"
+RELEASES_DIR = DOCS_DIR / "releases"
 
 DOMAIN_MAPPINGS = {
     "search": ["k-nn", "neural-search", "sql", "asynchronous-search", "learning", "search-relevance", "dashboards-search-relevance"],
@@ -125,3 +126,25 @@ generate_pages_file()
 for subdir in FEATURES_DIR.iterdir():
     if subdir.is_dir():
         generate_subdir_index(subdir)
+
+def generate_releases_index():
+    """Generate releases/index.md with version list."""
+    if not RELEASES_DIR.exists():
+        return
+    
+    versions = sorted(
+        [d.name for d in RELEASES_DIR.iterdir() if d.is_dir() and d.name.startswith("v")],
+        key=lambda v: [int(x) for x in v[1:].split(".")],
+        reverse=True
+    )
+    
+    content = "# OpenSearch Releases\n\n"
+    content += "| Version | Summary |\n"
+    content += "|---------|--------|\n"
+    for ver in versions:
+        content += f"| [{ver}]({ver}/) | [Summary]({ver}/summary.md) |\n"
+    
+    with mkdocs_gen_files.open("releases/index.md", "w") as f:
+        f.write(content)
+
+generate_releases_index()
