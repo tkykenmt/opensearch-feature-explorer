@@ -147,4 +147,37 @@ def generate_releases_index():
     with mkdocs_gen_files.open("releases/index.md", "w") as f:
         f.write(content)
 
+def generate_release_features_index():
+    """Generate releases/v{version}/features/index.md for each version."""
+    if not RELEASES_DIR.exists():
+        return
+    
+    for version_dir in RELEASES_DIR.iterdir():
+        if not version_dir.is_dir() or not version_dir.name.startswith("v"):
+            continue
+        
+        features_dir = version_dir / "features"
+        if not features_dir.exists():
+            continue
+        
+        repos = sorted([d.name for d in features_dir.iterdir() if d.is_dir()])
+        if not repos:
+            continue
+        
+        version = version_dir.name
+        content = f"# {version} Features\n\n"
+        content += "| Category | Documents |\n"
+        content += "|----------|----------|\n"
+        
+        for repo in repos:
+            repo_dir = features_dir / repo
+            docs = sorted([f.stem for f in repo_dir.glob("*.md")])
+            doc_count = len(docs)
+            title = repo.replace("-", " ").title()
+            content += f"| [{title}]({repo}/) | {doc_count} |\n"
+        
+        with mkdocs_gen_files.open(f"releases/{version}/features/index.md", "w") as f:
+            f.write(content)
+
 generate_releases_index()
+generate_release_features_index()
