@@ -143,6 +143,7 @@
 | [opensearch-query-rewriting](opensearch-query-rewriting.md) | Query Rewriting |
 | [opensearch-query-string-monitoring](opensearch-query-string-monitoring.md) | Query String Monitoring |
 | [opensearch-query-string-regex](opensearch-query-string-regex.md) | Query String & Regex Queries |
+| [opensearch-query-settings](opensearch-query-settings.md) | Query Settings |
 | [opensearch-randomness](opensearch-randomness.md) | Randomness |
 | [opensearch-reactor-netty-transport](opensearch-reactor-netty-transport.md) | Reactor Netty Transport |
 | [opensearch-refresh-task-scheduling](opensearch-refresh-task-scheduling.md) | Refresh Task Scheduling |
