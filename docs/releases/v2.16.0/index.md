@@ -4,6 +4,7 @@
 
 ### opensearch-dashboards
 - Field Name Search
+- Language Selector
 - UI Metric Collector Server-Side Batching
 - PPL Support in Vega Visualization
 - Content Management Plugin
