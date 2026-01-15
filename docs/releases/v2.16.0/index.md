@@ -8,6 +8,7 @@
 - @InternalApi Annotation
 - Cluster Stats Optimization
 - Search Thread Resource Usage
+- Transport Optimization
 - Dependency Bumps (Core)
 - Bulk API Deprecation
 - SBP (Search Backpressure) Bug Fix
