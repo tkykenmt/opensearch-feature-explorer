@@ -47,3 +47,4 @@
 - Visualization Color Fix
 - Workspace
 - Workspace Admin and Sample Data
+- Theme & Dark Mode Settings
