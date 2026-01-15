@@ -26,6 +26,7 @@
 - Navigation Next
 - OpenAPI Specification
 - OUI Bump
+- Query Editor & Enhancements
 - Query Editor Extensions Fix
 - Quick Range Selection Fix
 - Sample Data Import
