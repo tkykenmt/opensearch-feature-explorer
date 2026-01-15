@@ -132,6 +132,7 @@
 | [opensearch-query-builders](opensearch-query-builders.md) | Query Builders |
 | [opensearch-query-cache](opensearch-query-cache.md) | Query Cache |
 | [opensearch-query-coordinator-context](opensearch-query-coordinator-context.md) | Query Coordinator Context |
+| [opensearch-query-dsl](opensearch-query-dsl.md) | Query DSL |
 | [opensearch-query-optimization](opensearch-query-optimization.md) | Query Optimization |
 | [opensearch-query-performance-optimizations](opensearch-query-performance-optimizations.md) | Query Performance Optimizations |
 | [opensearch-query-phase-plugin-extension](opensearch-query-phase-plugin-extension.md) | Query Phase Plugin Extension |

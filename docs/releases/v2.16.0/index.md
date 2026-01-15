@@ -14,6 +14,7 @@
 - Multi-Part Upload Fix
 - Nested Aggregations Fix
 - PIT (Point In Time) API
+- Query Fixes
 - REST High-Level Client Fixes
 - Searchable Snapshots
 - System Index Warning
