@@ -22,6 +22,7 @@
 | [opensearch-cardinality-aggregation](opensearch-cardinality-aggregation.md) | Cardinality Aggregation |
 | [opensearch-cat-indices-api](opensearch-cat-indices-api.md) | Cat Indices API |
 | [opensearch-ci-infrastructure](opensearch-ci-infrastructure.md) | CI Infrastructure |
+| [opensearch-circuit-breaker](opensearch-circuit-breaker.md) | Circuit Breaker |
 | [opensearch-client-api-enhancements](opensearch-client-api-enhancements.md) | Client API Enhancements |
 | [opensearch-cluster-info-resource-stats](opensearch-cluster-info-resource-stats.md) | Cluster Info & Resource Stats |
 | [opensearch-cluster-management](opensearch-cluster-management.md) | Cluster Management |
