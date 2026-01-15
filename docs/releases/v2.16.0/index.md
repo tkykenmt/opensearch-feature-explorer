@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Processor Allowlist
 - Application Configuration Templates
 - ClusterManager Optimizations
 - Logging Improvements
