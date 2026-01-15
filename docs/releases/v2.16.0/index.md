@@ -2,6 +2,9 @@
 
 ## Features
 
+### k-nn
+- Faiss Updates
+
 ### opensearch
 - Fingerprint Ingest Processor
 - Aggregation Optimizations
