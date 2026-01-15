@@ -175,6 +175,7 @@
 | [opensearch-search-scoring](opensearch-search-scoring.md) | Search Scoring |
 | [opensearch-search-settings](opensearch-search-settings.md) | Search Settings |
 | [opensearch-search-shard-routing](opensearch-search-shard-routing.md) | Search Shard Routing |
+| [opensearch-search-thread-resource-usage](opensearch-search-thread-resource-usage.md) | Search Thread Resource Usage |
 | [opensearch-search-tie-breaking](opensearch-search-tie-breaking.md) | Search Tie-breaking (_shard_doc) |
 | [opensearch-searchable-snapshot](opensearch-searchable-snapshot.md) | Searchable Snapshots |
 | [opensearch-searchable-snapshots](opensearch-searchable-snapshots.md) | Searchable Snapshots |

@@ -4,6 +4,7 @@
 
 ### opensearch
 - @InternalApi Annotation
+- Search Thread Resource Usage
 - Dependency Bumps (Core)
 - Bulk API Deprecation
 - SBP (Search Backpressure) Bug Fix
