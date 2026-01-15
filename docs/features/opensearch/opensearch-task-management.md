@@ -155,6 +155,7 @@ The `resource_stats` object tracks resource usage for tasks that support resourc
 ## Change History
 
 - **v2.18.0** (2024-11-05): Fixed missing `cancellation_time_millis` and `resource_stats` fields in task index mapping
+- **v2.16.0** (2024-07-10): Enhanced task cancellation error messages to include the reason why parent task was cancelled
 
 
 ## References
@@ -167,6 +168,8 @@ The `resource_stats` object tracks resource usage for tasks that support resourc
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#16201](https://github.com/opensearch-project/OpenSearch/pull/16201) | Fix missing fields in task index mapping | [#16060](https://github.com/opensearch-project/OpenSearch/issues/16060) |
+| v2.16.0 | [#14604](https://github.com/opensearch-project/OpenSearch/pull/14604) | Print reason why parent task was cancelled | [#11830](https://github.com/opensearch-project/OpenSearch/issues/11830) |
 
 ### Issues (Design / RFC)
 - [Issue #16060](https://github.com/opensearch-project/OpenSearch/issues/16060): Bug report for missing mapping fields
+- [Issue #11830](https://github.com/opensearch-project/OpenSearch/issues/11830): Feature request to print detail reason why the parent task cancelled

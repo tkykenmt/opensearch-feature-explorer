@@ -9,6 +9,7 @@
 - @InternalApi Annotation
 - Cluster Stats Optimization
 - Search Thread Resource Usage
+- Task Cancellation
 - Transport Optimization
 - Dependency Bumps (Core)
 - Bulk API Deprecation
