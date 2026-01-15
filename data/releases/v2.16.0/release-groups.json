@@ -2153,7 +2153,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 2245
     },
     {
       "name": "Security Plugin Maintenance",
@@ -2548,7 +2549,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2246
     },
     {
       "name": "Repository Verification",
@@ -2562,7 +2564,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2247
     },
     {
       "name": "Transport Optimization",
@@ -2576,7 +2579,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2248
     },
     {
       "name": "Logging Improvements",
@@ -2590,7 +2594,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2249
     },
     {
       "name": "ClusterManager Optimizations",
@@ -2604,7 +2609,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2250
     },
     {
       "name": "Cluster Stats Optimization",
@@ -2618,7 +2624,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2251
     },
     {
       "name": "Search Thread Resource Usage",
@@ -2632,7 +2639,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2252
     },
     {
       "name": "Lucene Upgrade",
@@ -2646,7 +2654,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2253
     },
     {
       "name": "Tiered Caching",
@@ -2660,7 +2669,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2254
     },
     {
       "name": "Query Improvements",
@@ -2680,7 +2690,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2255
     },
     {
       "name": "Ingest Processor Improvements",
@@ -2694,7 +2705,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2256
     },
     {
       "name": "Dependency Bumps (Core)",
@@ -2798,7 +2810,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2257
     },
     {
       "name": "System Index Descriptors Registration",
@@ -2819,7 +2832,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 2258
     },
     {
       "name": "SQL Async Query Core Refactoring",
@@ -2923,7 +2937,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 2259
     },
     {
       "name": "Version Bumps & Release Notes",
@@ -2964,7 +2979,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2260
     },
     {
       "name": "@InternalApi Annotation",
@@ -2984,7 +3000,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2261
     },
     {
       "name": "Shard Allocation Improvements",
@@ -3004,7 +3021,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2262
     },
     {
       "name": "Bulk API Deprecation",
@@ -3024,7 +3042,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2263
     },
     {
       "name": "Query Categorization",
@@ -3038,7 +3057,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2264
     },
     {
       "name": "SBP (Search Backpressure)",
