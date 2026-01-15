@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- JSON11 Long Numerals
 - Aggregated View Fixes
 - Home Page Enhancements
 - Breadcrumb & Router Fixes

@@ -39,6 +39,7 @@
 | [opensearch-dashboards-home-page](opensearch-dashboards-home-page.md) | Home Page |
 | [opensearch-dashboards-i18n-localization](opensearch-dashboards-i18n-localization.md) | i18n & Localization |
 | [opensearch-dashboards-input-control-visualization](opensearch-dashboards-input-control-visualization.md) | Input Control Visualization |
+| [opensearch-dashboards-json11-long-numerals](opensearch-dashboards-json11-long-numerals.md) | JSON11 Long Numerals |
 | [opensearch-dashboards-keyboard-shortcuts](opensearch-dashboards-keyboard-shortcuts.md) | Keyboard Shortcuts |
 | [opensearch-dashboards-monaco-editor](opensearch-dashboards-monaco-editor.md) | Monaco Editor |
 | [opensearch-dashboards-navigation](opensearch-dashboards-navigation.md) | Navigation |
