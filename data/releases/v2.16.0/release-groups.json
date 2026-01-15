@@ -1725,7 +1725,7 @@
           "repository": "query"
         }
       ],
-      "issue_number": 2218
+      "issue_number": 2227
     },
     {
       "name": "ML Commons Blueprints & Tutorials",
@@ -2057,7 +2057,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 2225
     },
     {
       "name": "ML Commons System Index & Dependencies",
@@ -2095,7 +2096,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2226
     },
     {
       "name": "Query Insights Plugin Setup",
@@ -2201,7 +2203,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2228
     },
     {
       "name": "Security Dependency Bumps",
@@ -2251,7 +2254,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2229
     },
     {
       "name": "Security Dashboards CVE & Build Fixes",
@@ -2277,7 +2281,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2230
     },
     {
       "name": "k-NN Faiss Updates",
@@ -2291,7 +2296,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 2231
     },
     {
       "name": "SQL SparkParameterComposer",
@@ -2305,7 +2311,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 2232
     },
     {
       "name": "Fingerprint Ingest Processor",
@@ -2319,7 +2326,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2233
     },
     {
       "name": "Remote Store",
@@ -2345,7 +2353,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2234
     },
     {
       "name": "Aggregation Optimizations",
@@ -2359,7 +2368,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2235
     },
     {
       "name": "Writable Warm",
@@ -2379,7 +2389,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2236
     },
     {
       "name": "Workload Management",
@@ -2399,7 +2410,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2237
     },
     {
       "name": "Batching Processor",
@@ -2413,7 +2425,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2238
     },
     {
       "name": "Derived Fields",
@@ -2427,7 +2440,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2239
     },
     {
       "name": "Dynamic Mapping",
@@ -2441,7 +2455,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2240
     },
     {
       "name": "Processor Allowlist",
@@ -2455,7 +2470,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2241
     },
     {
       "name": "System Index Registry",
@@ -2475,7 +2491,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2242
     },
     {
       "name": "Task Cancellation",
@@ -2489,7 +2506,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2243
     },
     {
       "name": "Application Configuration Templates",
@@ -2509,7 +2527,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2244
     },
     {
       "name": "Search Pipelines",
