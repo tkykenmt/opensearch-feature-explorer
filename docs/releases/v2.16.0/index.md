@@ -4,6 +4,7 @@
 
 ### opensearch
 - @InternalApi Annotation
+- Cluster Stats Optimization
 - Search Thread Resource Usage
 - Dependency Bumps (Core)
 - Bulk API Deprecation

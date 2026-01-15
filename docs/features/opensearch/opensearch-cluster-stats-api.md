@@ -154,6 +154,7 @@ GET /_cluster/stats/os,indices/shards,docs/nodes/_all
 ## Change History
 
 - **v2.18.0** (2024-10-22): Added URI path filtering support for selective metric retrieval
+- **v2.16.0** (2024-08-06): Optimized cluster stats by pre-computing shard statistics at node level, reducing coordinator overhead by up to 74%
 - **v1.0.0**: Initial cluster stats API implementation
 
 
@@ -167,3 +168,4 @@ GET /_cluster/stats/os,indices/shards,docs/nodes/_all
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#15938](https://github.com/opensearch-project/OpenSearch/pull/15938) | URI path filtering support in cluster stats API |   |
+| v2.16.0 | [#14426](https://github.com/opensearch-project/OpenSearch/pull/14426) | Optimize Cluster Stats Indices to precompute node level stats | [#14714](https://github.com/opensearch-project/OpenSearch/issues/14714) |
