@@ -9,4 +9,5 @@
 - Discover Fixes
 - Look & Feel UI Improvements
 - Maintainer Updates
+- MDS Version Decoupling
 - OpenAPI Specification
