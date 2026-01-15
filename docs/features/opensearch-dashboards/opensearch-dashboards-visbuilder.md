@@ -111,7 +111,7 @@ graph TB
 
 ## Change History
 
-- **v2.16.0** (2024-08-06): Enhanced drag-and-drop with cross-axis movement, field replacement, and reordering; Added experimental Vega specification generation; Bug fixes for Metric/Table rendering, configuration pane scrolling, legend toggle, and data source compatibility
+- **v2.16.0** (2024-08-06): Promoted from experimental to production (GA); Removed experimental banner and beaker icon; No longer requires lab mode; Enhanced drag-and-drop with cross-axis movement, field replacement, and reordering; Added experimental Vega specification generation; Bug fixes for Metric/Table rendering, configuration pane scrolling, legend toggle, and data source compatibility
 
 ## References
 
@@ -121,6 +121,7 @@ graph TB
 ### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
+| v2.16.0 | [#6436](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6436) | Change VisBuilder from experimental to production (GA) |
 | v2.16.0 | [#7107](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7107) | Enhance Drag & Drop functionality in Vis Builder |
 | v2.16.0 | [#7288](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7288) | Add capability to generate dynamic Vega |
 | v2.16.0 | [#6674](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6674) | Fix flat render structure in Metric and Table Vis |
