@@ -18,6 +18,7 @@
 | [opensearch-async-shard-fetch-metrics](opensearch-async-shard-fetch-metrics.md) | Async Shard Fetch Metrics |
 | [opensearch-automata-regex-optimization](opensearch-automata-regex-optimization.md) | Automata & Regex Optimization |
 | [opensearch-azure-repository](opensearch-azure-repository.md) | Azure Repository Plugin |
+| [opensearch-batching-processor](opensearch-batching-processor.md) | Batching Processor |
 | [opensearch-booleanquery-rewrite-optimizations](opensearch-booleanquery-rewrite-optimizations.md) | BooleanQuery Rewrite Optimizations |
 | [opensearch-bulk-api](opensearch-bulk-api.md) | Bulk API |
 | [opensearch-cardinality-aggregation](opensearch-cardinality-aggregation.md) | Cardinality Aggregation |
