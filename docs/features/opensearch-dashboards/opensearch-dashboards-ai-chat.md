@@ -264,6 +264,7 @@ npm run start:ag-ui
 
 - **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
 - **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent
+- **v2.16.0** (2024-06): Fixed Sidecar z-index to render above mask overlays (z-index 1000 → 1001)
 
 
 ## References
@@ -288,6 +289,7 @@ npm run start:ag-ui
 | v3.3.0 | [#10600](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10600) | Add experimental AI Chat and Context Provider plugins | [#10571](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10571) |
 | v3.3.0 | [#10612](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10612) | AG-UI compliant LangGraph ReAct agent implementation |   |
 | v3.3.0 | [#10624](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10624) | Mark context provider and chat as experimental |   |
+| v2.16.0 | [#6964](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6964) | Fix Sidecar z-index to render above mask overlays |   |
 
 ### Issues (Design / RFC)
 - [RFC #10585](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/10585): AI Assistant Framework for OpenSearch Dashboards
