@@ -13,3 +13,4 @@
 - MDS Version Decoupling
 - Navigation Next
 - OpenAPI Specification
+- Workspace
