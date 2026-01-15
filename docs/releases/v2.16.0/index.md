@@ -11,6 +11,7 @@
 - CI/CD Improvements
 - Dashboard Flyout Fix
 - Data Set Navigator
+- Data Source API
 - Data Source Client Fixes
 - Data Source Form Tests
 - Data Source Management Bug Fixes
