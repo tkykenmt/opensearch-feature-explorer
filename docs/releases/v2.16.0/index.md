@@ -4,6 +4,7 @@
 
 ### opensearch-dashboards
 - Field Name Search
+- UI Metric Collector Server-Side Batching
 - PPL Support in Vega Visualization
 - Content Management Plugin
 - JSON11 Long Numerals
