@@ -16,6 +16,7 @@
 - Navigation Next
 - OpenAPI Specification
 - Query Editor Extensions Fix
+- Quick Range Selection Fix
 - Sample Data Import
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes

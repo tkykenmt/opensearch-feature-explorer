@@ -150,7 +150,7 @@ Requires ML agent configuration:
 - **v3.0.0** (2025-05-13): Added CSV export functionality, reorganized results display with ResultsActionBar, customizable summary panel title, experimental Data plugin `__enhance` API with resultsActionBar, and 6 bug fixes for saved search handling and workspace integration
 - **v2.19.0** (2025-01-14): Added indexed views framework to dataset selector, results canvas banner framework, data2summary agent validation, default query string framework, custom time filter logic per dataset type, query editor bottom panel extension, and Cypress test data attributes
 - **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
-- **v2.16.0** (2024-08-06): Fixed Discover Next styling issues (query bar, dataset navigator, language selector, field search) and database loading display for external data sources
+- **v2.16.0** (2024-08-06): Fixed Discover Next styling issues (query bar, dataset navigator, language selector, field search), database loading display for external data sources, and quick range time picker date math parsing
 
 
 ## References
@@ -204,5 +204,6 @@ Requires ML agent configuration:
 ### v2.16.0 Pull Requests
 | PR | Description |
 |----|-------------|
+| [#6782](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6782) | Fixes quick range time picker to use datemath for parsing |
 | [#7546](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7546) | Fixes Discover next styling |
 | [#7567](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7567) | Fixes databases not being displayed upon success |
