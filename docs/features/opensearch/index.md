@@ -88,6 +88,7 @@
 | [opensearch-index-output](opensearch-index-output.md) | Index Output Optimization |
 | [opensearch-index-refresh](opensearch-index-refresh.md) | Index Refresh |
 | [opensearch-index-settings](opensearch-index-settings.md) | Index Settings |
+| [opensearch-ingest-pipeline-script-processor](opensearch-ingest-pipeline-script-processor.md) | Ingest Pipeline Script Processor |
 | [opensearch-ingest-pipeline-update](opensearch-ingest-pipeline-update.md) | Ingest Pipeline Update Operation Behavior |
 | [opensearch-inner-hits](opensearch-inner-hits.md) | Inner Hits |
 | [opensearch-jackson--query-limits](opensearch-jackson--query-limits.md) | Jackson & Query Limits |
