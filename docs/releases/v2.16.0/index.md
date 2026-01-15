@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- SBP (Search Backpressure) Bug Fix
 - Alias API Validation
 - Ingest Pipeline Fixes
 - WKT Parser Refactoring

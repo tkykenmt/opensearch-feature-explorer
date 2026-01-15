@@ -19,6 +19,7 @@ Cumulative feature documentation across all versions.
 - GetStats API
 - Painless Script Hashing Methods
 - Point in Time (PIT) API
+- Search Backpressure
 - Snapshot Repository
 - Synonym Analyzer Configuration
 
