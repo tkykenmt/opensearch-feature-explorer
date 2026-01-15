@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Application Configuration Templates
 - ClusterManager Optimizations
 - Logging Improvements
 - @InternalApi Annotation

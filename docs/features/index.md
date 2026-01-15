@@ -12,6 +12,7 @@ Cumulative feature documentation across all versions.
 
 ## opensearch
 
+- Application-Based Configuration (ABC) Templates
 - Append Only Indices
 - CAT API
 - Cluster Shard Limits
