@@ -91,6 +91,7 @@
 | [opensearch-ingest-pipeline-script-processor](opensearch-ingest-pipeline-script-processor.md) | Ingest Pipeline Script Processor |
 | [opensearch-ingest-pipeline-update](opensearch-ingest-pipeline-update.md) | Ingest Pipeline Update Operation Behavior |
 | [opensearch-inner-hits](opensearch-inner-hits.md) | Inner Hits |
+| [opensearch-internalapi-annotation](opensearch-internalapi-annotation.md) | @InternalApi Annotation |
 | [opensearch-jackson--query-limits](opensearch-jackson--query-limits.md) | Jackson & Query Limits |
 | [opensearch-java-17-modernization](opensearch-java-17-modernization.md) | Java 17 Modernization |
 | [opensearch-java-agent-accesscontroller](opensearch-java-agent-accesscontroller.md) | Java Agent AccessController |
