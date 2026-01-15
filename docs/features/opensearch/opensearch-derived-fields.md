@@ -152,6 +152,7 @@ PUT /logs/_mapping
 
 - **v3.3.0**: Fixed query rewrite for range queries on derived fields by implementing selective rewrite based on query type
 - **v2.17.0**: Added support for most aggregation types on derived fields
+- **v2.16.0**: Fixed race condition in derived field parsing when defined in search requests
 - **v2.15.0**: Initial implementation of derived fields feature
 
 
@@ -165,6 +166,7 @@ PUT /logs/_mapping
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19496](https://github.com/opensearch-project/OpenSearch/pull/19496) | Fix derived field rewrite to handle range queries | [#19337](https://github.com/opensearch-project/OpenSearch/issues/19337) |
 | v2.17.0 | - | Added aggregation support for derived fields |   |
+| v2.16.0 | [#14445](https://github.com/opensearch-project/OpenSearch/pull/14445) | Fix race condition in derived field parsing from search requests | [#14444](https://github.com/opensearch-project/OpenSearch/issues/14444) |
 | v2.15.0 | - | Initial implementation of derived fields |   |
 
 ### Issues (Design / RFC)
