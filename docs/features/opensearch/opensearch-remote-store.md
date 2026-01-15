@@ -130,6 +130,7 @@ PUT /_cluster/settings
 - **v3.1.0** (2026-01-10): Added close index request rejection during migration; Fixed cluster state diff download failures during alias operations
 - **v3.0.0** (2024-12-16): Added `cluster.remote_state.download.serve_read_api.enabled` setting to control full cluster state download on term mismatch
 - **v2.19.0** (2025-02-18): Fixed stale cluster state custom file deletion bug in `RemoteClusterStateCleanupManager`; Reverted minimum codec version upload logic for remote state manifest; Added OpenSearch version-aware deserialization for custom metadata to fix cluster upgrade failures
+- **v2.16.0** (2024-08-06): Fixed S3 multipart upload failures for remote cluster state objects by creating new `ByteArrayIndexInput` instances per upload part
 
 
 ## References
@@ -148,6 +149,7 @@ PUT /_cluster/settings
 | v2.19.0 | [#16670](https://github.com/opensearch-project/OpenSearch/pull/16670) | Fix stale cluster state custom file deletion | - |
 | v2.19.0 | [#16403](https://github.com/opensearch-project/OpenSearch/pull/16403) | Revert uploading of remote cluster state manifest using min codec version | - |
 | v2.19.0 | [#16494](https://github.com/opensearch-project/OpenSearch/pull/16494) | Add opensearch version info while deserialization | - |
+| v2.16.0 | [#14888](https://github.com/opensearch-project/OpenSearch/pull/14888) | Create new IndexInput for multi part upload | [#14808](https://github.com/opensearch-project/OpenSearch/issues/14808) |
 
 ### Issues (Design / RFC)
 - [Issue #18328](https://github.com/opensearch-project/OpenSearch/issues/18328): Reject close index requests during DocRep to SegRep migration
