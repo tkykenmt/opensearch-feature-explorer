@@ -174,7 +174,7 @@ opensearch_security.multitenancy.enabled: false
 - **v3.0.0** (2025-05-06): Bug fixes for saved object isolation, recent items error filtering, and stale workspace error handling
 - **v2.19.0** (2025-01-09): Added dismissible get started section for overview pages; optimized recent items with workspace deletion filtering; refactored bulk_get permission handler for better error responses; added privacy levels for workspace access control; enabled category-based search for Dev Tools; added two-step loading for data source association modal
 - **v2.18.0** (2024-11-05): Major feature additions including workspace-level UI settings, collaborator management system (WorkspaceCollaboratorTypesService, AddCollaboratorsModal, Collaborators Page), data connection integration, global search bar in left nav, ACL auditor for permission bypass detection; 14 bug fixes for UI/UX improvements
-- **v2.16.0** (2024-08-06): Bug fixes for data source preservation on workspace deletion, navigation to detail page for all use case workspaces, permission validation on detail page, added workspaces/permissions fields to _bulk_get response, and fixed saved objects management page to show error toast when workspace read-only users fail to delete saved objects
+- **v2.16.0** (2024-08-06): Added get started cards on home page, admin-only workspace creation controls, enriched breadcrumbs with workspace/use case context; restricted saved objects access for non-admin users; fixed workspace name duplication check to use exact match; bug fixes for data source preservation on workspace deletion, navigation to detail page for all use case workspaces, permission validation on detail page, added workspaces/permissions fields to _bulk_get response
 
 
 ## References
@@ -225,6 +225,11 @@ opensearch_security.multitenancy.enabled: false
 | v2.18.0 | [#8675](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8675) | Fix non-workspace admin defaultIndex update | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8718](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8718) | Fix index pattern issues |   |
 | v2.18.0 | [#8719](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8719) | Generate short URL with workspace info | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7333](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7333) | Register four get started cards in home page | [#7332](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7332) |
+| v2.16.0 | [#7357](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7357) | Hide create workspace button for non dashboard admin | [#7358](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7358) |
+| v2.16.0 | [#7360](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7360) | Enrich breadcrumbs by workspace and use case | [#7359](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7359) |
+| v2.16.0 | [#7125](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7125) | Restrict saved objects finding when workspace enabled | [#7127](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7127) |
+| v2.16.0 | [#6776](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6776) | Fix workspace name duplication check | [#6480](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6480) |
 | v2.16.0 | [#7279](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7279) | Unassign data source before deleteByWorkspace |   |
 | v2.16.0 | [#7405](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7405) | Navigate to detail page when clicking all use case workspace |   |
 | v2.16.0 | [#7435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7435) | Add permission validation at workspace detail page |   |
