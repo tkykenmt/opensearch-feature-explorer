@@ -150,7 +150,7 @@ Requires ML agent configuration:
 - **v3.0.0** (2025-05-13): Added CSV export functionality, reorganized results display with ResultsActionBar, customizable summary panel title, experimental Data plugin `__enhance` API with resultsActionBar, and 6 bug fixes for saved search handling and workspace integration
 - **v2.19.0** (2025-01-14): Added indexed views framework to dataset selector, results canvas banner framework, data2summary agent validation, default query string framework, custom time filter logic per dataset type, query editor bottom panel extension, and Cypress test data attributes
 - **v2.18.0** (2024-11-05): Added AI-powered data summary panel, updated visual appearance, cache management in dataset selector, and 14 bug fixes for stability and usability
-- **v2.16.0** (2024-08-06): Added Data Set Navigator component with DataSetManager service for dataset state management and URL state synchronization; fixed discover options location, legacy URL global state migration, duplicate timestamp column, anchor row highlighting in surrounding docs view, wide table last column rendering, Discover Next styling issues, and database loading display for external data sources
+- **v2.16.0** (2024-08-06): Added Data Set Navigator component with DataSetManager service for dataset state management and URL state synchronization; made field name search filter case insensitive; fixed discover options location, legacy URL global state migration, duplicate timestamp column, anchor row highlighting in surrounding docs view, wide table last column rendering, Discover Next styling issues, and database loading display for external data sources
 
 
 ## References
@@ -204,6 +204,7 @@ Requires ML agent configuration:
 ### v2.16.0 Pull Requests
 | PR | Description |
 |----|-------------|
+| [#6759](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6759) | Make field name search filter case insensitive |
 | [#7492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7492) | Add back data set navigator to control state |
 | [#7581](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7581) | Fix discover options' location |
 | [#6780](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6780) | Migrate global state from legacy URL |

@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Field Name Search
 - PPL Support in Vega Visualization
 - Content Management Plugin
 - JSON11 Long Numerals
