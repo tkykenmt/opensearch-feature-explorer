@@ -77,3 +77,6 @@
 
 ### notifications
 - Version Bumps & Release Notes
+
+### sql
+- SQL Async Query Core Refactoring

@@ -23,3 +23,4 @@
 | [sql-ppl-spath-command](sql-ppl-spath-command.md) | PPL Spath Command |
 | [sql-ppl-timechart-command](sql-ppl-timechart-command.md) | PPL Timechart Command |
 | [sql-security-lake-data-source](sql-security-lake-data-source.md) | Security Lake Data Source |
+| [sql-async-query-core](sql-async-query-core.md) | Async Query Core Library |
