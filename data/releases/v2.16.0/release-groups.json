@@ -1289,7 +1289,8 @@
           "category": "bugfix",
           "repository": "dashboards"
         }
-      ]
+      ],
+      "issue_number": 2205
     },
     {
       "name": "Reporting Dependency Updates",
@@ -1315,7 +1316,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 2206
     },
     {
       "name": "Flow Framework Bugfixes",
@@ -1341,7 +1343,8 @@
           "category": "bugfix",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 2207
     },
     {
       "name": "Index Management DataSource Persistence",
@@ -1355,7 +1358,8 @@
           "category": "bugfix",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 2208
     },
     {
       "name": "ML Commons Connector & Model Fixes",
@@ -1459,7 +1463,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2209
     },
     {
       "name": "Neural Search Bugfixes",
@@ -1503,7 +1508,8 @@
           "category": "bugfix",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 2210
     },
     {
       "name": "Query Plugin Fixes",
@@ -1523,7 +1529,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 2211
     },
     {
       "name": "k-NN Vector Streaming & Memory",
@@ -1555,7 +1562,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 2212
     },
     {
       "name": "Security Dashboards Auth Fixes",
@@ -1575,7 +1583,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2213
     },
     {
       "name": "Security Analytics Integration Tests",
@@ -1601,7 +1610,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2214
     },
     {
       "name": "Anomaly Detection JDK21 Upgrade",
@@ -1621,7 +1631,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 2215
     },
     {
       "name": "Job Scheduler Fixes",
@@ -1635,7 +1646,8 @@
           "category": "bugfix",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 2216
     },
     {
       "name": "Performance Analyzer Dependencies",
@@ -1655,7 +1667,8 @@
           "category": "bugfix",
           "repository": "performance"
         }
-      ]
+      ],
+      "issue_number": 2217
     },
     {
       "name": "Query Insights Plugin Setup",
@@ -1711,7 +1724,8 @@
           "category": "bugfix",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 2218
     },
     {
       "name": "ML Commons Blueprints & Tutorials",
@@ -1761,7 +1775,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2219
     },
     {
       "name": "Version Bumps & Release Notes",
@@ -1931,7 +1946,8 @@
           "category": "bugfix",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2220
     },
     {
       "name": "k-NN Build & Patches",
@@ -1951,7 +1967,8 @@
           "category": "bugfix",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 2221
     },
     {
       "name": "SQL Build Fixes",
@@ -1971,7 +1988,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 2222
     },
     {
       "name": "Observability CVE Fixes",
@@ -1997,7 +2015,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 2223
     },
     {
       "name": "PR Template Updates",
@@ -2011,7 +2030,8 @@
           "category": "bugfix",
           "repository": "anomaly-detection"
         }
-      ]
+      ],
+      "issue_number": 2224
     },
     {
       "name": "Index Management Build Fixes",
