@@ -43,6 +43,7 @@
 | [opensearch-dashboards-navigation](opensearch-dashboards-navigation.md) | Navigation |
 | [opensearch-dashboards-numeric-precision](opensearch-dashboards-numeric-precision.md) | Numeric Precision Setting |
 | [opensearch-dashboards-osd-optimizer-cache](opensearch-dashboards-osd-optimizer-cache.md) | OSD Optimizer Cache |
+| [opensearch-dashboards-osd-availability](opensearch-dashboards-osd-availability.md) | OSD Availability |
 | [opensearch-dashboards-openapi-specification](opensearch-dashboards-openapi-specification.md) | OpenAPI Specification |
 | [opensearch-dashboards-oui](opensearch-dashboards-oui.md) | OpenSearch UI (OUI) |
 | [opensearch-dashboards-plugin-compatibility](opensearch-dashboards-plugin-compatibility.md) | Plugin Compatibility |
