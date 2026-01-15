@@ -3426,7 +3426,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2285
     },
     {
       "name": "Workspace",
@@ -3458,7 +3459,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2286
     },
     {
       "name": "Data Explorer",
@@ -3472,7 +3474,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2287
     },
     {
       "name": "MDS (Multiple Data Sources)",
@@ -3498,7 +3501,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2288
     },
     {
       "name": "VisBuilder GA",
@@ -3512,7 +3516,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2289
     },
     {
       "name": "Saved Objects Migration",
@@ -3526,7 +3531,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2290
     },
     {
       "name": "Language Selector",
@@ -3540,7 +3546,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2291
     },
     {
       "name": "UI Metric Collector",
@@ -3554,7 +3561,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2292
     },
     {
       "name": "Field Name Search",
@@ -3568,7 +3576,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2293
     },
     {
       "name": "Workspace",
@@ -3678,7 +3687,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2294
     },
     {
       "name": "MDS (Multiple Data Sources)",
@@ -3741,7 +3751,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2295
     },
     {
       "name": "Navigation Next",
@@ -3791,7 +3802,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2296
     },
     {
       "name": "Query Editor & Enhancements",
@@ -3835,7 +3847,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2297
     },
     {
       "name": "VisBuilder Enhancements",
@@ -3855,7 +3868,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2298
     },
     {
       "name": "PPL Support",
@@ -3869,7 +3883,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2299
     },
     {
       "name": "Content Management Plugin",
@@ -3883,7 +3898,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2300
     },
     {
       "name": "Use Cases & Landing Pages",
@@ -3903,7 +3919,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2301
     },
     {
       "name": "UI Improvements",
@@ -3935,7 +3952,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2302
     },
     {
       "name": "JSON11 Long Numerals",
@@ -3949,7 +3967,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2303
     },
     {
       "name": "Data Source API",
@@ -3963,7 +3982,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2304
     },
     {
       "name": "MDS (Multiple Data Sources)",
