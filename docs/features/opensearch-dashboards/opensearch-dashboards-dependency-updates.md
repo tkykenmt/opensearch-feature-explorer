@@ -77,6 +77,7 @@ yarn upgrade json11@^2.0.0
 
 - **v3.0.0** (2025-05-13): Security updates for vega (5.32.0), dompurify (3.2.4), markdown-it (13.0.2) addressing CVE-2025-25304 and CVE-2025-26791
 - **v2.18.0** (2024-10-22): JSON11 upgrade to 2.0.0 for UTF-8 safety, chokidar bump to 3.6.0
+- **v2.16.0** (2024-08-06): Babel dependency fix - updated @babel/traverse to ^7.25.0 and @babel/plugin-transform-class-static-block to ^7.24.7 to resolve bootstrapping errors on 2.x branch
 
 
 ## References
@@ -93,6 +94,7 @@ yarn upgrade json11@^2.0.0
 | v3.0.0 | [#9412](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9412) | Bump markdown-it from 12.3.2 to 13.0.2 |   |
 | v2.18.0 | [#8603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8603) | Upgrade JSON11 from 1.1.2 to 2.0.0 | [#7367](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7367) |
 | v2.18.0 | [#8490](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8490) | Bump chokidar from 3.5.3 to 3.6.0 |   |
+| v2.16.0 | [#7541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7541) | Fix babel error (update @babel/traverse and @babel/plugin-transform-class-static-block) |   |
 
 ### Issues (Design / RFC)
 - [Issue #9400](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9400): CVE-2025-25304 in vega-selections
