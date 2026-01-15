@@ -5,5 +5,6 @@
 ### opensearch-dashboards
 - Build & Compilation Fixes
 - CI/CD Improvements
+- Discover Fixes
 - Maintainer Updates
 - OpenAPI Specification
