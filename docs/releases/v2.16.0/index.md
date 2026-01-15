@@ -42,5 +42,6 @@
 - Vega Visualization Fixes
 - VisBuilder Enhancements
 - VisBuilder Fixes
+- VisBuilder GA
 - Visualization Color Fix
 - Workspace
