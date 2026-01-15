@@ -259,6 +259,7 @@ PUT /_search/pipeline/summarize_pipeline
 ## Change History
 
 - **v2.18.0** (2024-11-12): Added remote model auto-redeployment filtering, optional llmQuestion for RAG, search extension output support, query string in input_map, MLToolSpec config field, AWS Textract/Comprehend trusted endpoints
+- **v2.16.0** (2024-08-06): Added automated model interface generation for AWS LLMs (Bedrock, Comprehend, Textract), increased execute thread pool size for agents, multi-modal default preprocess function (`connector.pre_process.multimodal.embedding`), configurable disk circuit breaker via `plugins.ml_commons.disk_free_space_threshold`
 
 
 ## References
@@ -277,6 +278,10 @@ PUT /_search/pipeline/summarize_pipeline
 | v2.18.0 | [#2899](https://github.com/opensearch-project/ml-commons/pull/2899) | Enable pass query string to input_map in ml inference search response processor | [#2897](https://github.com/opensearch-project/ml-commons/issues/2897) |
 | v2.18.0 | [#2977](https://github.com/opensearch-project/ml-commons/pull/2977) | Add config field in MLToolSpec for static parameters | [#2836](https://github.com/opensearch-project/ml-commons/issues/2836) |
 | v2.18.0 | [#3154](https://github.com/opensearch-project/ml-commons/pull/3154) | Add textract and comprehend url to trusted endpoints |   |
+| v2.16.0 | [#2689](https://github.com/opensearch-project/ml-commons/pull/2689) | Automated model interface generation on AWS LLMs |   |
+| v2.16.0 | [#2691](https://github.com/opensearch-project/ml-commons/pull/2691) | Increase execute thread pool size |   |
+| v2.16.0 | [#2500](https://github.com/opensearch-project/ml-commons/pull/2500) | Add multi-modal default preprocess function | [#2364](https://github.com/opensearch-project/ml-commons/issues/2364) |
+| v2.16.0 | [#2634](https://github.com/opensearch-project/ml-commons/pull/2634) | Change disk circuit breaker to cluster settings | [#2639](https://github.com/opensearch-project/ml-commons/issues/2639) |
 
 ### Issues (Design / RFC)
 - [Issue #2897](https://github.com/opensearch-project/ml-commons/issues/2897): Query text in input_map feature request
