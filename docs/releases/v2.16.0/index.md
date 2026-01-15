@@ -35,6 +35,7 @@
 - UI Improvements
 - Use Cases & Landing Pages
 - Vega Visualization Fixes
+- VisBuilder Enhancements
 - VisBuilder Fixes
 - Visualization Color Fix
 - Workspace
