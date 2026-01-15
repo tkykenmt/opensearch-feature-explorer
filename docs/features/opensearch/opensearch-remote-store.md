@@ -130,7 +130,7 @@ PUT /_cluster/settings
 - **v3.1.0** (2026-01-10): Added close index request rejection during migration; Fixed cluster state diff download failures during alias operations
 - **v3.0.0** (2024-12-16): Added `cluster.remote_state.download.serve_read_api.enabled` setting to control full cluster state download on term mismatch
 - **v2.19.0** (2025-02-18): Fixed stale cluster state custom file deletion bug in `RemoteClusterStateCleanupManager`; Reverted minimum codec version upload logic for remote state manifest; Added OpenSearch version-aware deserialization for custom metadata to fix cluster upgrade failures
-- **v2.16.0** (2024-08-06): Fixed S3 multipart upload failures for remote cluster state objects by creating new `ByteArrayIndexInput` instances per upload part
+- **v2.16.0** (2024-08-06): Added rate limiter for low priority uploads; Refactored remote routing table service to align with remote state interfaces; Added shard-diff path to diff manifest to reduce remote store read calls; Fixed S3 multipart upload failures for remote cluster state objects
 
 
 ## References
@@ -148,6 +148,9 @@ PUT /_cluster/settings
 | v3.0.0 | [#16798](https://github.com/opensearch-project/OpenSearch/pull/16798) | Setting to disable full cluster state download from remote on term mismatch | [#8957](https://github.com/opensearch-project/documentation-website/issues/8957) |
 | v2.19.0 | [#16670](https://github.com/opensearch-project/OpenSearch/pull/16670) | Fix stale cluster state custom file deletion | - |
 | v2.19.0 | [#16403](https://github.com/opensearch-project/OpenSearch/pull/16403) | Revert uploading of remote cluster state manifest using min codec version | - |
+| v2.16.0 | [#14374](https://github.com/opensearch-project/OpenSearch/pull/14374) | Rate limiter for remote store low priority uploads | [#14373](https://github.com/opensearch-project/OpenSearch/issues/14373) |
+| v2.16.0 | [#14668](https://github.com/opensearch-project/OpenSearch/pull/14668) | Refactor remote-routing-table service inline with remote state interfaces | [#14067](https://github.com/opensearch-project/OpenSearch/issues/14067) |
+| v2.16.0 | [#14684](https://github.com/opensearch-project/OpenSearch/pull/14684) | Add shard-diff path to diff manifest to reduce remote store read calls | [#15125](https://github.com/opensearch-project/OpenSearch/issues/15125) |
 | v2.19.0 | [#16494](https://github.com/opensearch-project/OpenSearch/pull/16494) | Add opensearch version info while deserialization | - |
 | v2.16.0 | [#14888](https://github.com/opensearch-project/OpenSearch/pull/14888) | Create new IndexInput for multi part upload | [#14808](https://github.com/opensearch-project/OpenSearch/issues/14808) |
 
