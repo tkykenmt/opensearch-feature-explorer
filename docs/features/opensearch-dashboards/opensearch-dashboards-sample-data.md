@@ -144,6 +144,7 @@ const appLinks: AppLinkSchema[] = [
 ## Change History
 
 - **v2.18.0** (2024-11-12): Updated sample data page UI with new UX; Added OTEL sample data for traces, metrics, logs, and service maps; Added compatibility warning to OTEL sample data description (OpenSearch 2.13+ required)
+- **v2.16.0** (2024-08-06): Fixed index pattern data source reference not updated when importing sample data with MDS enabled; Added TSVB visualization support for sample data with external data sources
 
 
 ## References
@@ -158,6 +159,8 @@ const appLinks: AppLinkSchema[] = [
 | v2.18.0 | [#8291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8291) | Update sample data page UI when useUpdatedUX enabled | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8587](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8587) | Add support for OTEL sample data - logs, traces and metrics |   |
 | v2.18.0 | [#8693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8693) | Update OTEL sample data description with compatible OS version |   |
+| v2.16.0 | [#6851](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6851) | Fix index pattern data source reference not updated in sample data | [#6850](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6850) |
+| v2.16.0 | [#6940](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6940) | Fix sample data to use datasources for TSVB visualizations | [#6936](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6936) |
 
 ### Issues (Design / RFC)
 - [Issue #8312](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/8312): Update Sample Data Page UI for New Updated UX

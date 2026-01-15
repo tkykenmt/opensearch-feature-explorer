@@ -15,6 +15,7 @@
 - Navigation Next
 - OpenAPI Specification
 - Query Editor Extensions Fix
+- Sample Data Import
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
 - Visualization Color Fix
