@@ -4,6 +4,7 @@
 
 ### opensearch
 - Alias API Validation
+- Ingest Pipeline Fixes
 - WKT Parser Refactoring
 - Cluster Shard Limits
 - CAT API Help
