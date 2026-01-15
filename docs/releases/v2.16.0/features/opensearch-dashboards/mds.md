@@ -6,91 +6,84 @@ tags:
 
 ## Summary
 
-OpenSearch Dashboards v2.16.0 introduces significant enhancements to the Multiple Data Sources (MDS) feature, including version decoupling support, improved data source management, and various bug fixes. These changes enable better compatibility between Dashboards plugins and different OpenSearch cluster versions.
+OpenSearch Dashboards v2.16.0 introduces significant enhancements to the Multiple Data Sources (MDS) feature, including version decoupling support, improved data source management controls, dataframes support, and better UI/UX for data source selection.
 
 ## Details
 
 ### What's New in v2.16.0
 
 #### Version Decoupling Support
-- Added `dataSourceEngineType` field to data source saved objects to distinguish between OpenSearch, Elasticsearch, and OpenSearch Serverless clusters
-- Added `supportedOSDataSourceVersions` manifest entry for plugins to specify compatible data source version ranges
-- Added `requiredOSDataSourcePlugins` manifest entry for plugins to specify required backend plugins
-- Incompatible data sources are automatically filtered from the data source picker
+- Added `dataSourceEngineType` field to data source saved objects
+- New manifest entries: `supportedOSDataSourceVersions` and `requiredOSDataSourcePlugins`
+- Plugins can now specify compatible OpenSearch versions and required backend plugins
+- Improved messaging for incompatible data sources
 
-#### Data Connection Details Page with MDS Support
-- New Data Connection details page supporting MDS environments
-- Acceleration flyout with associated object tables
-- Support for creating and managing covering indexes on remote clusters
-- Integration flow conditionally enabled based on MDS status and observability plugin availability
+#### Data Source Management Controls
+- New `data_source.manageableBy` configuration option with values:
+  - `all`: Anyone can manage data sources
+  - `dashboard_admin`: Only OSD admins can manage data sources
+  - `none`: Data source management is disabled
+- Routes `/create`, `/configure/opensearch`, and `/configure/:type` are hidden when `manageableBy` is `none`
+- Edit data source screen inputs are disabled based on `manageableBy` setting
 
-#### SQL Auto-Suggest MDS Support
-- OpenSearch SQL auto-suggest now works with multiple data sources
-- Query suggestions are context-aware based on selected data source
+#### Dataframes Support
+- Dataframes now support MDS with `dataSourceId` in metadata
+- Data source information is parsed from user query strings using `::datasource::` syntax
+- Dataframes are created before the interceptor to preserve metadata
 
-#### UI Improvements
-- Compressed DataSourceSelector on management's data sources page for better space utilization
-- Improved toast and popover messages for incompatible data sources
-- Better handling of scenarios where all data sources are filtered out by `dataSourceFilter`
+#### Data Source Selector Improvements
+- Conditional rendering of data source selector based on query language
+- Selector disappears when specific languages are selected with enhancements enabled
+- Added `removedComponentIds` to handle component unmount race conditions
+- Compressed DataSourceSelector for better UI
 
-#### Bug Fixes
-- Removed endpoint validation for create data source saved object API to enable data source import
-- Fixed timeline visualization import to include data source name in MDS scenarios
-- Fixed DSM plugin setup when MDS feature flag is disabled
-- Fixed version decoupling support in Index Patterns Dashboards Plugin
+#### Timeline Visualization MDS Support
+- Sample data for Timeline visualizations now includes data source name when MDS is enabled
+- Fixed timeline visualization import with proper data source name handling
 
-### Technical Changes
+#### Security Enhancements
+- Placeholder values used for data source credentials during export
+- Credentials fields replaced with `pleaseUpdateCredentials` in exported `.ndjson` files
+- Import still succeeds with placeholder credentials
 
-#### Data Source Saved Object Schema
-
-New `dataSourceEngineType` field added:
-
-| Engine Type | Description |
-|-------------|-------------|
-| `OpenSearch` | Standard OpenSearch cluster |
-| `Elasticsearch` | Elasticsearch cluster (7.10.2 compatible) |
-| `OpenSearch Serverless` | AWS OpenSearch Serverless |
-
-#### Plugin Manifest Extensions
-
-```json
-{
-  "supportedOSDataSourceVersions": ">=1.0.0",
-  "requiredOSDataSourcePlugins": ["plugin-name"]
-}
-```
-
-#### Configuration
+### Configuration
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `data_source.enabled` | Enable MDS feature | `false` |
-| `data_source.hideLocalCluster` | Hide local cluster option | `false` |
-| `data_source.authTypes.NoAuthentication.enabled` | Show no-auth option | `true` |
-| `data_source.authTypes.UsernamePassword.enabled` | Show username/password auth | `true` |
-| `data_source.authTypes.AWSSigV4.enabled` | Show AWS SigV4 auth | `true` |
+| `data_source.enabled` | Enable/disable MDS feature | `false` |
+| `data_source.manageableBy` | Control who can manage data sources (`all`, `dashboard_admin`, `none`) | `all` |
+| `data_source.hideLocalCluster` | Hide local cluster from data source picker | `false` |
+
+### Usage Example
+
+Configure data source management restrictions:
+
+```yaml
+data_source.enabled: true
+data_source.manageableBy: "dashboard_admin"
+```
 
 ## Limitations
 
-- Timeline visualization types not supported with MDS
-- `gantt-chart` plugin not supported with MDS
-- Integration flow for direct query data sources only enabled when MDS is disabled AND dashboards-observability is installed
+- Timeline visualization types are not fully supported with MDS
+- `gantt-chart` plugin is not supported with MDS
+- Reporting plugin is automatically de-registered when MDS is enabled
+- Dataframe schema may not persist across initial calls
 
 ## References
 
+### Pull Requests
+| PR | Description | Related Issue |
+|----|-------------|---------------|
+| [#6919](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6919) | Allow adding sample data for Timeline visualizations with MDS | - |
+| [#6920](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6920) | Add removedComponentIds for data source selection service | - |
+| [#6928](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6928) | Use placeholder for data source credentials fields when export | [#6892](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6892) |
+| [#7059](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7059) | Render the datasource selector component conditionally | [#7046](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7046) |
+| [#7106](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7106) | Onboard dataframes support to MDS | [#6957](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6957) |
+| [#7143](https://github.com/opensearch-project/dashboards-observability/pull/7143) | Observability Datasource Plugin migration with MDS support | - |
+| [#7214](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7214) | Restrict to edit data source on the DSM UI | [#6889](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6889) |
+| [#7298](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7298) | Disable certain routes when data_source.manageableBy is none | - |
+| [#7307](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7307) | Disable inputs in edit data source screen when manageableBy is set | - |
+
 ### Documentation
 - [Configuring and using multiple data sources](https://docs.opensearch.org/2.16/dashboards/management/multi-data-sources/)
-
-### Pull Requests
-| PR | Repository | Description | Related Issue |
-|----|------------|-------------|---------------|
-| [#7323](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7323) | OpenSearch-Dashboards | Data Connection details page with MDS support | [#7143](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7143) |
-| [#7463](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7463) | OpenSearch-Dashboards | Add MDS support for OpenSearch SQL auto-suggest |  |
-| [#7329](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7329) | OpenSearch-Dashboards | Use compressed DataSourceSelector |  |
-| [#6899](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6899) | OpenSearch-Dashboards | Remove endpoint validation for create data source saved object API | [#6893](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6893) |
-| [#6678](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6678) | OpenSearch-Dashboards | Add message for incompatible data sources |  |
-| [#6954](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6954) | OpenSearch-Dashboards | Include data source name when importing timeline visualization | [#6919](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6919) |
-| [#7026](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7026) | OpenSearch-Dashboards | Add data source engine type to saved object | [#7021](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7021) |
-| [#7100](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7100) | OpenSearch-Dashboards | Version Decoupling in Index Patterns Plugin | [#7099](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7099) |
-| [#7146](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7146) | OpenSearch-Dashboards | Add required backend plugins check | [#7099](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7099) |
-| [#7163](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7163) | OpenSearch-Dashboards | Fix DSM plugin setup when MDS disabled | [#7154](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7154) |
