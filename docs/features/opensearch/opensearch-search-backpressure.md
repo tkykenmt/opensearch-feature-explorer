@@ -6,7 +6,7 @@ tags:
 
 ## Summary
 
-Search Backpressure is a mechanism that identifies resource-intensive search requests and cancels them when a node is under duress. It monitors CPU usage, heap usage, and elapsed time for search tasks, applying configurable thresholds to protect cluster stability. The feature operates at both the coordinator (search task) and shard (search shard task) levels.
+Search Backpressure is a mechanism in OpenSearch that identifies resource-intensive search requests and cancels them when the node is under duress. It monitors CPU usage, heap usage, and elapsed time for each search request, and applies configurable thresholds to protect cluster stability during high load conditions.
 
 ## Details
 
@@ -14,89 +14,55 @@ Search Backpressure is a mechanism that identifies resource-intensive search req
 
 ```mermaid
 graph TB
-    subgraph "Search Request Flow"
-        Client[Client] --> Coordinator[Coordinator Node]
-        Coordinator --> Shard1[Shard Task 1]
-        Coordinator --> Shard2[Shard Task 2]
-        Coordinator --> ShardN[Shard Task N]
-    end
-    
     subgraph "Search Backpressure Service"
-        Observer[Observer Thread] --> NodeDuress{Node Under Duress?}
-        NodeDuress -->|Yes| TaskEval[Evaluate Tasks]
-        NodeDuress -->|No| Continue[Continue Monitoring]
-        TaskEval --> Score[Calculate Cancellation Score]
-        Score --> Cancel[Cancel Resource-Intensive Tasks]
+        Observer[Observer Thread] --> NDT[Node Duress Trackers]
+        NDT --> CPU[CPU Tracker]
+        NDT --> JVM[JVM Heap Tracker]
+        
+        Observer --> TRT[Task Resource Trackers]
+        TRT --> CPUTask[CPU Usage Tracker]
+        TRT --> HeapTask[Heap Usage Tracker]
+        TRT --> TimeTask[Elapsed Time Tracker]
+        
+        Observer --> Cancel{Cancellation Decision}
+        Cancel --> TaskManager[Task Manager]
     end
     
-    Shard1 -.-> Observer
-    Shard2 -.-> Observer
-    ShardN -.-> Observer
-```
-
-### Data Flow
-
-```mermaid
-flowchart TB
-    subgraph "Resource Tracking"
-        CPU[CPU Usage Tracker]
-        Heap[Heap Usage Tracker]
-        Time[Elapsed Time Tracker]
-    end
-    
-    subgraph "Decision Making"
-        Threshold[Threshold Check]
-        Variance[Variance Check]
-        Score[Cancellation Score]
-    end
-    
-    subgraph "Actions"
-        Cancel[Task Cancellation]
-        Stats[Stats Collection]
-    end
-    
-    CPU --> Threshold
-    Heap --> Threshold
-    Time --> Threshold
-    Threshold --> Variance
-    Variance --> Score
-    Score --> Cancel
-    Score --> Stats
+    SearchTask[Search Tasks] --> Observer
+    ShardTask[Search Shard Tasks] --> Observer
 ```
 
 ### Components
 
 | Component | Description |
 |-----------|-------------|
-| `SearchBackpressureService` | Main service that coordinates backpressure monitoring and task cancellation |
-| `SearchTaskStats` | Statistics for coordinator-level search tasks |
-| `SearchShardTaskStats` | Statistics for shard-level search tasks |
-| `CpuUsageTracker` | Tracks CPU time consumed by search tasks |
-| `HeapUsageTracker` | Tracks heap memory usage by search tasks |
-| `ElapsedTimeTracker` | Tracks elapsed wall-clock time for search tasks |
+| `SearchBackpressureService` | Main service that orchestrates monitoring and cancellation |
+| `NodeDuressTrackers` | Tracks node-level resource usage (CPU, JVM heap) |
+| `TaskResourceUsageTrackers` | Tracks task-level resource consumption |
+| `CpuUsageTracker` | Monitors CPU time consumed by tasks |
+| `HeapUsageTracker` | Monitors heap memory usage with moving average |
+| `ElapsedTimeTracker` | Monitors task execution duration |
 
 ### Configuration
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `search_backpressure.mode` | Operating mode: `monitor_only`, `enforced`, or `disabled` | `monitor_only` |
-| `search_backpressure.node_duress.cpu_threshold` | CPU usage threshold for node duress | 90% |
-| `search_backpressure.node_duress.heap_threshold` | Heap usage threshold for node duress | 70% |
-| `search_backpressure.node_duress.num_successive_breaches` | Successive breaches before node is considered under duress | 3 |
-| `search_backpressure.search_task.elapsed_time_millis_threshold` | Elapsed time threshold for search tasks | 45,000ms |
+| `search_backpressure.mode` | Operating mode: `monitor_only`, `enforced`, `disabled` | `monitor_only` |
+| `search_backpressure.node_duress.num_successive_breaches` | Consecutive breaches before node is considered in duress | 3 |
+| `search_backpressure.node_duress.cpu_threshold` | CPU usage threshold (percentage) | 90% |
+| `search_backpressure.node_duress.heap_threshold` | Heap usage threshold (percentage) | 70% |
+| `search_backpressure.search_task.elapsed_time_millis_threshold` | Elapsed time threshold for search tasks | 45,000 ms |
 | `search_backpressure.search_task.heap_percent_threshold` | Heap usage threshold for search tasks | 2% |
-| `search_backpressure.search_task.cpu_time_millis_threshold` | CPU time threshold for search tasks | 30,000ms |
-| `search_backpressure.search_shard_task.elapsed_time_millis_threshold` | Elapsed time threshold for shard tasks | 30,000ms |
+| `search_backpressure.search_task.cpu_time_millis_threshold` | CPU time threshold for search tasks | 30,000 ms |
+| `search_backpressure.search_shard_task.elapsed_time_millis_threshold` | Elapsed time threshold for shard tasks | 30,000 ms |
 | `search_backpressure.search_shard_task.heap_percent_threshold` | Heap usage threshold for shard tasks | 0.5% |
-| `search_backpressure.search_shard_task.cpu_time_millis_threshold` | CPU time threshold for shard tasks | 15,000ms |
+| `search_backpressure.search_shard_task.cpu_time_millis_threshold` | CPU time threshold for shard tasks | 15,000 ms |
 
 ### Usage Example
 
-```bash
-# Get search backpressure stats
-GET _nodes/stats/search_backpressure
+Enable Search Backpressure in enforced mode:
 
-# Configure search backpressure mode
+```json
 PUT /_cluster/settings
 {
   "persistent": {
@@ -105,44 +71,49 @@ PUT /_cluster/settings
     }
   }
 }
-
-# Adjust thresholds
-PUT /_cluster/settings
-{
-  "persistent": {
-    "search_backpressure.search_task.elapsed_time_millis_threshold": 60000,
-    "search_backpressure.search_shard_task.cpu_time_millis_threshold": 20000
-  }
-}
 ```
+
+Monitor Search Backpressure statistics:
+
+```bash
+GET _nodes/stats/search_backpressure
+```
+
+### Cancellation Logic
+
+The cancellation decision follows this flow:
+
+1. Observer thread periodically checks if node is in duress
+2. If node is in duress, identifies which resource (CPU or JVM) is causing it
+3. Evaluates tasks against thresholds for the specific resource in duress
+4. Assigns cancellation scores to eligible tasks
+5. Cancels tasks with highest scores, respecting rate limits
 
 ## Limitations
 
-- Operates in `monitor_only` mode by default; must be explicitly set to `enforced` to cancel tasks
-- Cancellation may result in partial search results
-- Statistics are reset on node restart
-- Mixed-version clusters may have inconsistent stats reporting
+- Search Backpressure runs in `monitor_only` mode by default and must be explicitly enabled
+- Heap tracking may not be supported on all JVM configurations
+- Cancellation is rate-limited to prevent excessive task termination
+- Partial results may be returned when some shards fail due to cancellation
 
 ## Change History
 
-- **v3.2.0** (2025-07-01): Added time-based caching for node duress values to reduce latency overhead from /proc filesystem reads
-- **v3.0.0** (2025-05-06): Added `completion_count` field to stats API for calculating cancellation percentages
-- **v2.18.0** (2024-11-05): Added validation for `cancellation_rate`, `cancellation_ratio`, and `cancellation_burst` settings to prevent cluster crashes
-
+- **v2.16.0** (2024-08-06): Fixed bug in cancellation logic - tasks are now cancelled based on the specific resource causing node duress rather than all thresholds ([#13474](https://github.com/opensearch-project/OpenSearch/pull/13474))
+- **v2.11.0**: Added completion count to search_backpressure stats ([#10028](https://github.com/opensearch-project/OpenSearch/pull/10028))
+- **v2.6.0**: Added search task level cancellation support
+- **v2.4.0**: Initial implementation with search shard task support
 
 ## References
 
 ### Documentation
-- [Search Backpressure Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/search-backpressure/): Official documentation
+
+- [Search Backpressure - OpenSearch Documentation](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/search-backpressure/)
+- [Availability and Recovery Settings](https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/availability-recovery/)
 
 ### Pull Requests
-| Version | PR | Description | Related Issue |
-|---------|-----|-------------|---------------|
-| v3.2.0 | [#18649](https://github.com/opensearch-project/OpenSearch/pull/18649) | Make node duress values cacheable for NodeDuressTrackers | [#18641](https://github.com/opensearch-project/OpenSearch/issues/18641) |
-| v3.0.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add task completion count in search backpressure stats API | [#8698](https://github.com/opensearch-project/OpenSearch/issues/8698) |
-| v2.18.0 | [#15501](https://github.com/opensearch-project/OpenSearch/pull/15501) | Add validation for the search backpressure cancellation settings | [#15495](https://github.com/opensearch-project/OpenSearch/issues/15495) |
 
-### Issues (Design / RFC)
-- [Issue #18641](https://github.com/opensearch-project/OpenSearch/issues/18641): Latency regression due to node duress trackers
-- [Issue #8698](https://github.com/opensearch-project/OpenSearch/issues/8698): Add total successful task count in nodeStats API
-- [Issue #15495](https://github.com/opensearch-project/OpenSearch/issues/15495): [BUG] Updating some search backpressure settings crash the cluster
+| Version | PR | Description |
+|---------|-----|-------------|
+| v2.16.0 | [#13474](https://github.com/opensearch-project/OpenSearch/pull/13474) | Fix bug in SBP cancellation logic |
+| v2.16.0 | [#14502](https://github.com/opensearch-project/OpenSearch/pull/14502) | Backport SBP fix to 2.x |
+| v2.11.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add taskCompletionCount in search_backpressure stats |
