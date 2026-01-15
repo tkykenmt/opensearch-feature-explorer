@@ -49,6 +49,7 @@
 | [opensearch-dashboards-openapi-specification](opensearch-dashboards-openapi-specification.md) | OpenAPI Specification |
 | [opensearch-dashboards-oui](opensearch-dashboards-oui.md) | OpenSearch UI (OUI) |
 | [opensearch-dashboards-plugin-compatibility](opensearch-dashboards-plugin-compatibility.md) | Plugin Compatibility |
+| [opensearch-dashboards-ppl-vega](opensearch-dashboards-ppl-vega.md) | PPL Support in Vega Visualization |
 | [opensearch-dashboards-query-assistant](opensearch-dashboards-query-assistant.md) | Query Assistant |
 | [opensearch-dashboards-query-editor](opensearch-dashboards-query-editor.md) | Query Editor |
 | [opensearch-dashboards-query-enhancements](opensearch-dashboards-query-enhancements.md) | Query Enhancements |
