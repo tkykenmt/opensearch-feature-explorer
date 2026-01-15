@@ -97,6 +97,12 @@ flowchart TB
 | `query:enhancements:enabled` | Enable query enhancements feature | false |
 | `data.search.polling.interval` | Polling interval for async queries (ms) | 5000 |
 
+**Deprecated Settings (removed in v2.16.0):**
+| Setting | Description | Status |
+|---------|-------------|--------|
+| `data.enhancements.enabled` | Config file toggle for enhancements | Removed - use `query:enhancements:enabled` UI setting |
+| `query:dataSource:readOnly` | Read-only data source in query editor | Removed - no replacement |
+
 ### Usage Example
 
 ```
@@ -121,7 +127,7 @@ source = logs-* | where status >= 400 | head 100
 
 - **v3.0.0** (2025-03-11): PPL query bugfixes - grammar parsing in auto-suggest, timezone handling for time columns, millisecond precision in date fields, error message display in query editors, time range handling for non-search queries
 - **v2.18.0** (2024-11-05): Bug fixes for async polling, error handling, language compatibility, saved query persistence; Added extensibility for custom search strategies via `defineSearchStrategyRoute`; Added keyboard shortcut (Cmd/Ctrl+Enter) for query execution; Exposed datasets and data_frames modules for external plugin imports
-- **v2.16.0** (2024-07-30): Initial Language Selector support - plugins can register custom query languages via UI Service; Dynamic search interceptor switching at runtime; Data Frame structure for non-DSL query results; Configuration via `data.enhancements.enabled`
+- **v2.16.0** (2024-07-30): Initial Language Selector support - plugins can register custom query languages via UI Service; Dynamic search interceptor switching at runtime; Data Frame structure for non-DSL query results; **Deprecated**: Removed `data.enhancements.enabled` config toggle and `query:dataSource:readOnly` UI setting - feature now controlled solely via `query:enhancements:enabled` UI setting
 
 
 ## References
@@ -149,4 +155,5 @@ source = logs-* | where status >= 400 | head 100
 | v2.18.0 | [#8743](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8743) | Fix error handling in query enhancement facet | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8749](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8749) | Updates query and language if language is not supported by query data |   |
 | v2.18.0 | [#8771](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8771) | Fix error handling for ppl jobs API | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7291) | Remove data enhancements config and readonly flag | [#7212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7212) |
 | v2.16.0 | [#6613](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6613) | Support language selector from the data plugin | [#6639](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6639) |
