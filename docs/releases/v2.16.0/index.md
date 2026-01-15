@@ -11,6 +11,7 @@
 - Ingest Pipeline Fixes
 - Ingest Processor Improvements
 - Query Categorization Removal
+- Tiered Caching Performance Improvement
 - WKT Parser Refactoring
 - Cluster Shard Limits
 - CAT API Help
