@@ -19,6 +19,7 @@
 - MDS Version Decoupling
 - Navigation Next
 - OpenAPI Specification
+- OUI Bump
 - Query Editor Extensions Fix
 - Quick Range Selection Fix
 - Sample Data Import

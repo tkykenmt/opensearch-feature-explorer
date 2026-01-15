@@ -90,6 +90,7 @@ function MyComponent() {
 
 - **v3.2.0** (2025-07-29): Updated to OUI 1.21 with `preserveTabContent` prop for `EuiTabbedContent` component
 - **v2.18.0** (2024-11-05): Updated to OUI 1.15 with new `$euiSideNavBackgroundColor` variable, font changes from Fira Code to Source Code Pro
+- **v2.16.0** (2024-07-22): Updated to OUI 1.8 with Split Button component, faster animations, compressed form components, and accessibility improvements
 
 
 ## References
@@ -106,3 +107,4 @@ function MyComponent() {
 | v2.18.0 | [#8246](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8246) | Update OUI to 1.13 |   |
 | v2.18.0 | [#8372](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8372) | Update OUI to 1.14 |   |
 | v2.18.0 | [#8480](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8480) | Update OUI to 1.15 |   |
+| v2.16.0 | [#7363](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7363) | Update OUI to 1.8 |   |
