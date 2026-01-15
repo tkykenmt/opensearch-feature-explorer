@@ -103,7 +103,7 @@ graph TB
 
 - **v2.18.0** (2024-11-12): Major restructure - reorganized into Logs/Metrics/Traces signal types, added telemetry source dropdown with icons, Self Managed/AWS tabs for OTEL, auto index template creation, UI polish
 - **v2.17.0** (2024-10-22): Fixed index pattern mismatches - CSV workflow now uses `logs-*` pattern, removed unused `otel-metrics*` from OTel workflow
-
+- **v2.16.0** (2024-08-06): Initial implementation - added Observability Overview and Getting Started pages with three data collection methods (Configure collectors, Upload CSV/JSON, Sample datasets), replaced OTel Services dashboards with getting started dashboards
 
 ## References
 
@@ -118,3 +118,5 @@ graph TB
 | v2.18.0 | [#2205](https://github.com/opensearch-project/dashboards-observability/pull/2205) | GettingStarted Fit and Finish - UI polish |   |
 | v2.18.0 | [#2200](https://github.com/opensearch-project/dashboards-observability/pull/2200) | Auto trigger schema setup |   |
 | v2.17.0 | [#2016](https://github.com/opensearch-project/dashboards-observability/pull/2016) | Update ndjson so workflow matches patterns created |   |
+| v2.16.0 | [#1957](https://github.com/opensearch-project/dashboards-observability/pull/1957) | Observability Overview and GettingStarted pages | [#1929](https://github.com/opensearch-project/dashboards-observability/issues/1929) |
+| v2.16.0 | [#1963](https://github.com/opensearch-project/dashboards-observability/pull/1963) | Replace dashboards with getting started dashboards | [opensearch-catalog#170](https://github.com/opensearch-project/opensearch-catalog/issues/170) |
