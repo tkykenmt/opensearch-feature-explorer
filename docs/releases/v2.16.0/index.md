@@ -6,6 +6,7 @@
 - SBP (Search Backpressure) Bug Fix
 - Alias API Validation
 - Ingest Pipeline Fixes
+- Query Categorization Removal
 - WKT Parser Refactoring
 - Cluster Shard Limits
 - CAT API Help
