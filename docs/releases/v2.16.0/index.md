@@ -25,5 +25,6 @@
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
 - Vega Visualization Fixes
+- VisBuilder Fixes
 - Visualization Color Fix
 - Workspace

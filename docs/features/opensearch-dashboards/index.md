@@ -56,6 +56,7 @@
 | [opensearch-dashboards-timeline-visualization](opensearch-dashboards-timeline-visualization.md) | Timeline Visualization |
 | [opensearch-dashboards-ui-settings](opensearch-dashboards-ui-settings.md) | UI Settings |
 | [opensearch-dashboards-vended-dashboard-progress](opensearch-dashboards-vended-dashboard-progress.md) | Vended Dashboard Progress |
+| [opensearch-dashboards-visbuilder](opensearch-dashboards-visbuilder.md) | VisBuilder |
 | [opensearch-dashboards-visualization-color-mapping](opensearch-dashboards-visualization-color-mapping.md) | Visualization Color Mapping |
 | [opensearch-dashboards-webpack-and-build-performance](opensearch-dashboards-webpack-and-build-performance.md) | Webpack & Build Performance |
 | [opensearch-dashboards-workspace](opensearch-dashboards-workspace.md) | Workspace |
