@@ -22,6 +22,7 @@
 - Query Fixes
 - REST High-Level Client Fixes
 - Searchable Snapshots
+- Shard Allocation Improvements
 - System Index Warning
 
 ### opensearch-dashboards
