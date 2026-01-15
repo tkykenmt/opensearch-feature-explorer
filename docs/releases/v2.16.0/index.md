@@ -23,6 +23,7 @@
 - Nested Aggregations Fix
 - PIT (Point In Time) API
 - Query Fixes
+- Query Improvements
 - REST High-Level Client Fixes
 - Searchable Snapshots
 - Shard Allocation Improvements
