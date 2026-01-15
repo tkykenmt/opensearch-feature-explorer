@@ -18,6 +18,7 @@ Cumulative feature documentation across all versions.
 - Cluster Shard Limits
 - Date Field Sorting
 - Dependency Management
+- Fingerprint Ingest Processor
 - GetStats API
 - Painless Script Hashing Methods
 - Point in Time (PIT) API

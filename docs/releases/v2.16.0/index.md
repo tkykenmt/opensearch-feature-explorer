@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Fingerprint Ingest Processor
 - Aggregation Optimizations
 - Workload Management
 - Writable Warm
