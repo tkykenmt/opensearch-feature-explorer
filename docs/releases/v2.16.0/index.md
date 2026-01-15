@@ -4,6 +4,7 @@
 
 ### opensearch
 - Alias API Validation
+- WKT Parser Refactoring
 - Cluster Shard Limits
 - CAT API Help
 - Circuit Breaker Improvements

@@ -144,6 +144,7 @@
 | [opensearch-reactor-netty-transport](opensearch-reactor-netty-transport.md) | Reactor Netty Transport |
 | [opensearch-refresh-task-scheduling](opensearch-refresh-task-scheduling.md) | Refresh Task Scheduling |
 | [opensearch-reindex-api](opensearch-reindex-api.md) | Reindex API |
+| [opensearch-recursive-parser-refactoring](opensearch-recursive-parser-refactoring.md) | Recursive Parser Refactoring |
 | [opensearch-remote-repository-validation](opensearch-remote-repository-validation.md) | Remote Repository Validation |
 | [opensearch-remote-store-metadata-api](opensearch-remote-store-metadata-api.md) | Remote Store Metadata API |
 | [opensearch-remote-store-metrics](opensearch-remote-store-metrics.md) | Remote Store Metrics |
