@@ -6,6 +6,7 @@
 - Alias API Validation
 - CAT API Help
 - Circuit Breaker Improvements
+- File Cache Initialization Fix
 - FS Info Reporting Fix
 - GetResult NPE Fix
 - Index Creation NPE Fix
