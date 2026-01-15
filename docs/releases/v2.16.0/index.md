@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Batching Processor
 - Derived Fields
 - Dynamic Mapping
 - Processor Allowlist
