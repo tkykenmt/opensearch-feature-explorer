@@ -25,6 +25,7 @@ Cumulative feature documentation across all versions.
 - Search Backpressure
 - Snapshot Repository
 - Synonym Analyzer Configuration
+- Workload Management
 
 ## security
 
