@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Derived Fields
 - Dynamic Mapping
 - Processor Allowlist
 - Application Configuration Templates
