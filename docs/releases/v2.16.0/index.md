@@ -7,6 +7,7 @@
 - CAT API Help
 - Circuit Breaker Improvements
 - FS Info Reporting Fix
+- GetResult NPE Fix
 - Index Creation NPE Fix
 - Multi-Part Upload Fix
 - System Index Warning

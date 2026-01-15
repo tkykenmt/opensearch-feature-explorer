@@ -74,6 +74,7 @@
 | [opensearch-filter-rewrite-optimization](opensearch-filter-rewrite-optimization.md) | Filter Rewrite Optimization |
 | [opensearch-fips-compliance](opensearch-fips-compliance.md) | FIPS Compliance |
 | [opensearch-flat-object-field](opensearch-flat-object-field.md) | Flat Object Field Type |
+| [getresult-parsing](getresult-parsing.md) | GetResult Parsing |
 | [opensearch-getstats-api](opensearch-getstats-api.md) | GetStats API |
 | [opensearch-gradle-build-system](opensearch-gradle-build-system.md) | Gradle Build System |
 | [opensearch-grok-processor](opensearch-grok-processor.md) | Grok Processor |
