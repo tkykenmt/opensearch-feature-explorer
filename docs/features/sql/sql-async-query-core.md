@@ -91,6 +91,7 @@ The package uses ANTLR grammar files from `opensearch-spark` and `Spark` reposit
 
 ## Change History
 
+- **v2.16.0** (2024-08-06): Introduced SparkParameterComposerCollection to abstract datasource-type-specific logic from async-query-core
 - **v2.16.0** (2024-08-06): Initial implementation - extracted async query core logic into separate library module with extension points
 
 ## References
@@ -108,3 +109,5 @@ The package uses ANTLR grammar files from `opensearch-spark` and `Spark` reposit
 | v2.16.0 | [#2771](https://github.com/opensearch-project/sql/pull/2771) | Abstract FlintIndex client |
 | v2.16.0 | [#2792](https://github.com/opensearch-project/sql/pull/2792) | Eliminate dependency from async-query-core to legacy |
 | v2.16.0 | [#2785](https://github.com/opensearch-project/sql/pull/2785) | Implement integration test for async-query-core |
+| v2.16.0 | [#2774](https://github.com/opensearch-project/sql/pull/2774) | Introduce SparkParameterComposerCollection |
+| v2.16.0 | [#2824](https://github.com/opensearch-project/sql/pull/2824) | Backport SparkParameterComposerCollection to 2.x |
