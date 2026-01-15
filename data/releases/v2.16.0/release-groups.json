@@ -4466,7 +4466,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2325
     },
     {
       "name": "Visualization Color Fix",
@@ -4480,7 +4481,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2326
     },
     {
       "name": "Query Editor Extensions Fix",
@@ -4494,7 +4496,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2327
     },
     {
       "name": "Workspace",
@@ -4526,7 +4529,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2328
     },
     {
       "name": "Data Source Management",
@@ -4588,7 +4592,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2329
     },
     {
       "name": "Navigation Next",
@@ -4614,7 +4619,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2330
     },
     {
       "name": "MDS Version Decoupling",
@@ -4628,7 +4634,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2331
     },
     {
       "name": "Look & Feel UI Improvements",
@@ -4708,7 +4715,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2332
     },
     {
       "name": "Breadcrumb & Router Fixes",
@@ -4722,7 +4730,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2333
     },
     {
       "name": "Discover Fixes",
@@ -4742,7 +4751,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2334
     },
     {
       "name": "Build & Compilation Fixes",
@@ -4756,7 +4766,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2335
     },
     {
       "name": "Maintainer Updates",
@@ -4806,7 +4817,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2336
     },
     {
       "name": "OpenAPI Specification",
@@ -4868,7 +4880,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2337
     },
     {
       "name": "CI/CD Improvements",
@@ -4882,7 +4895,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2338
     }
   ],
   "processed_offset": 554
