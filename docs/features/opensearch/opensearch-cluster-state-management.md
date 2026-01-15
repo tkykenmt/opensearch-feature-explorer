@@ -124,6 +124,8 @@ node.attr.remote_store.repository.my-remote-state-repo.settings.region: us-east-
 
 - **v2.18.0** (2024-10-29): Added fallback mechanism to use pre-commit state or remote cluster state on term-version mismatch, reducing unnecessary cluster state transfers in large clusters
 - **v2.18.0** (2024-10-29): Fixed voting configuration mismatch by updating lastSeenClusterState in commit phase
+- **v2.16.0** (2024-08-06): Enabled term version check on local state for all ClusterManager Read Transport Actions, allowing read requests to be served locally when cluster state is up-to-date
+- **v2.13.0** (2024-03-26): Introduced lightweight transport action to verify local term before fetching cluster-state from remote (initial implementation for TransportClusterStateAction)
 
 
 ## References
@@ -136,6 +138,9 @@ node.attr.remote_store.repository.my-remote-state-repo.settings.region: us-east-
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#15424](https://github.com/opensearch-project/OpenSearch/pull/15424) | Fallback to remote cluster-state on term-version check mismatch | [#15414](https://github.com/opensearch-project/OpenSearch/issues/15414) |
 | v2.18.0 | [#16215](https://github.com/opensearch-project/OpenSearch/pull/16215) | Fix: Update last seen cluster state in commit phase |   |
+| v2.16.0 | [#14273](https://github.com/opensearch-project/OpenSearch/pull/14273) | Enabling term version check on local state for all ClusterManager Read Transport Actions | Follow-up to #12252 |
+| v2.13.0 | [#12252](https://github.com/opensearch-project/OpenSearch/pull/12252) | Light weight Transport action to verify local term before fetching cluster-state from remote | [#12272](https://github.com/opensearch-project/OpenSearch/issues/12272) |
 
 ### Issues (Design / RFC)
 - [Issue #15414](https://github.com/opensearch-project/OpenSearch/issues/15414): Feature request for leveraging ClusterState from Publish phase
+- [Issue #12272](https://github.com/opensearch-project/OpenSearch/issues/12272): Offload read requests from cluster manager to local node
