@@ -114,6 +114,9 @@
 ### security-dashboards
 - CVE & Build Fixes
 
+### security
+- Dependency Bumps
+
 ### sql
 - SQL Async Query Core Refactoring
 - SparkParameterComposerCollection

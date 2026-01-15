@@ -88,6 +88,7 @@ Dependency updates in the Security plugin follow this process:
 - **v3.0.0** (2025-02-25): 13 dependency updates including Spring 6.2.5, Bouncy Castle 1.80, OpenSAML 5.1.4/9.1.4, ASM 9.8, Commons IO 2.19.0, JUnit Jupiter 5.12.2
 - **v2.19.0** (2024-12-10): Security fixes for Cypress and cross-spawn dependencies
 - **v2.18.0** (2024-10-22): Updated snappy-java, gradle.test-retry, commons-io, scala-library, checker-qual, and logback-classic
+- **v2.16.0** (2024-07-23): 7 dependency updates including Spring 5.3.37, JJWT 0.12.6 (memory leak fix), Kafka 3.7.1, JUnit Jupiter 5.10.3, woodstox-core 6.7.0, checker-qual 3.45.0, eclipse.core.runtime 3.31.100
 
 
 ## References
@@ -151,3 +152,10 @@ Dependency updates in the Security plugin follow this process:
 | v2.18.0 | [#4750](https://github.com/opensearch-project/security/pull/4750) | Bump commons-io 2.16.1 → 2.17.0 |   |
 | v2.18.0 | [#4749](https://github.com/opensearch-project/security/pull/4749) | Bump scala-library 2.13.14 → 2.13.15 |   |
 | v2.18.0 | [#4717](https://github.com/opensearch-project/security/pull/4717) | Bump checker-qual and logback-classic |   |
+| v2.16.0 | [#4531](https://github.com/opensearch-project/security/pull/4531) | Bump checker-qual 3.44.0 → 3.45.0 |   |
+| v2.16.0 | [#4501](https://github.com/opensearch-project/security/pull/4501) | Bump kafka 3.7.0 → 3.7.1 |   |
+| v2.16.0 | [#4503](https://github.com/opensearch-project/security/pull/4503) | Bump junit-jupiter 5.10.2 → 5.10.3 |   |
+| v2.16.0 | [#4483](https://github.com/opensearch-project/security/pull/4483) | Bump woodstox-core 6.6.2 → 6.7.0 |   |
+| v2.16.0 | [#4484](https://github.com/opensearch-project/security/pull/4484) | Bump jjwt 0.12.5 → 0.12.6 |   |
+| v2.16.0 | [#4467](https://github.com/opensearch-project/security/pull/4467) | Bump eclipse.core.runtime 3.31.0 → 3.31.100 |   |
+| v2.16.0 | [#4466](https://github.com/opensearch-project/security/pull/4466) | Bump spring 5.3.36 → 5.3.37 |   |
