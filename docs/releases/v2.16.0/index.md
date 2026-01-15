@@ -18,6 +18,7 @@
 - Lucene Upgrade
 - Query Categorization Removal
 - Repository Verification
+- Search Pipelines
 - Tiered Caching Performance Improvement
 - WKT Parser Refactoring
 - Cluster Shard Limits
