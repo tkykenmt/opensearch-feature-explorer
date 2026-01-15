@@ -13,6 +13,7 @@ Cumulative feature documentation across all versions.
 ## opensearch
 
 - Append Only Indices
+- CAT API
 - Date Field Sorting
 - GetStats API
 - Painless Script Hashing Methods
