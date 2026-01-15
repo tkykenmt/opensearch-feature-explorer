@@ -52,6 +52,7 @@
 | [opensearch-dashboards-sample-data](opensearch-dashboards-sample-data.md) | Sample Data |
 | [opensearch-dashboards-saved-query-ux](opensearch-dashboards-saved-query-ux.md) | Saved Query UX |
 | [opensearch-dashboards-tsvb-visualization](opensearch-dashboards-tsvb-visualization.md) | TSVB Visualization |
+| [opensearch-dashboards-timeline-visualization](opensearch-dashboards-timeline-visualization.md) | Timeline Visualization |
 | [opensearch-dashboards-ui-settings](opensearch-dashboards-ui-settings.md) | UI Settings |
 | [opensearch-dashboards-vended-dashboard-progress](opensearch-dashboards-vended-dashboard-progress.md) | Vended Dashboard Progress |
 | [opensearch-dashboards-visualization-color-mapping](opensearch-dashboards-visualization-color-mapping.md) | Visualization Color Mapping |

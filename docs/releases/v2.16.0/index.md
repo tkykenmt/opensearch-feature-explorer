@@ -14,5 +14,6 @@
 - Navigation Next
 - OpenAPI Specification
 - Query Editor Extensions Fix
+- Timeline Visualization Fixes
 - Visualization Color Fix
 - Workspace
