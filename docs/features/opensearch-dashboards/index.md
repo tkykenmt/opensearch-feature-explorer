@@ -36,6 +36,7 @@
 | [opensearch-dashboards-explore-traces](opensearch-dashboards-explore-traces.md) | Explore Traces |
 | [opensearch-dashboards-explore](opensearch-dashboards-explore.md) | Explore Plugin |
 | [opensearch-dashboards-global-search](opensearch-dashboards-global-search.md) | Global Search |
+| [opensearch-dashboards-home-page](opensearch-dashboards-home-page.md) | Home Page |
 | [opensearch-dashboards-i18n-localization](opensearch-dashboards-i18n-localization.md) | i18n & Localization |
 | [opensearch-dashboards-input-control-visualization](opensearch-dashboards-input-control-visualization.md) | Input Control Visualization |
 | [opensearch-dashboards-keyboard-shortcuts](opensearch-dashboards-keyboard-shortcuts.md) | Keyboard Shortcuts |
