@@ -133,7 +133,7 @@ The footer bar displays:
 - **v3.3.0**: Added PPL Formatter (`Shift+Option+F`), updated PPL grammar to latest version, removed redundant error popover, fixed Enter key behavior when switching query languages
 - **v3.2.0**: Fixed autocomplete stale query issue, improved Tab/Enter key handling for suggestions, made generated query scrollable, refined "Replace query" button placement
 - **v2.18.0** (2024-11-05): Added footer bar to single-line editor, fixed query editor extension ordering, improved PPL autocomplete
-- **v2.16.0** (2024-08-06): Fixed object empty check and render order issues in query editor extensions
+- **v2.16.0** (2024-08-06): Major overhaul introducing new Monaco-based Query Editor, Query Editor Extensions framework, Query Enhancements plugin as core plugin, data source container for custom selectors, observable-based extension enablement, and updated UI with language selector
 
 
 ## References
@@ -156,5 +156,10 @@ The footer bar displays:
 | v2.18.0 | [#8565](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8565) | Adds editor footer to single line editor on focus | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8045) | Fix order of query editor extensions not working | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8087](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8087) | PPL Autocomplete functions, fields, & table suggestion | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7001](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7001) | Query editor and UI settings toggle | [#6067](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6067) |
+| v2.16.0 | [#7034](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7034) | Add query editor extensions | [#6077](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6077) |
+| v2.16.0 | [#7157](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7157) | Query editor and dataframes datasources container | [#7129](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7129) |
+| v2.16.0 | [#7183](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7183) | Change `isEnabled` to an observable | [#7034](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7034) |
+| v2.16.0 | [#7212](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7212) | Add query enhancements plugin as a core plugin | [#6072](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6072) |
+| v2.16.0 | [#7309](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7309) | Update query enhancement UI | [#7038](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7038) |
 | v2.16.0 | [#7077](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7077) | Fix object empty check and render order in query editor extensions | #7034 |
-| v2.16.0 | [#7034](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7034) | Add query editor extensions | #6077 |
