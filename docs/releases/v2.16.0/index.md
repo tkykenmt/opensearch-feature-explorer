@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Breadcrumb & Router Fixes
 - Build & Compilation Fixes
 - CI/CD Improvements
 - Discover Fixes
