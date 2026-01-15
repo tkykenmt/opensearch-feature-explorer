@@ -17,6 +17,7 @@
 - Ingest Processor Improvements
 - Lucene Upgrade
 - Query Categorization Removal
+- Repository Verification
 - Tiered Caching Performance Improvement
 - WKT Parser Refactoring
 - Cluster Shard Limits

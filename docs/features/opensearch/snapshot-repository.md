@@ -94,16 +94,49 @@ node.attr.remote_publication.routing_table.repository: my-routing-repo
 | `gcs` | repository-gcs | Google Cloud Storage |
 | `hdfs` | repository-hdfs | Hadoop HDFS |
 
+### Prefix Mode Verification
+
+The `prefix_mode_verification` setting distributes repository verification requests across different storage paths to reduce throttling on remote stores during node bootstrap.
+
+#### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `prefix_mode_verification` | Adds hashed prefix to verification path | `false` |
+
+#### Usage
+
+```json
+PUT /_snapshot/my-repo
+{
+  "type": "s3",
+  "settings": {
+    "bucket": "my-bucket",
+    "prefix_mode_verification": true
+  }
+}
+```
+
+For remote store clusters via node attributes:
+
+```yaml
+node.attr.remote_store.segment.repository.settings.prefix_mode_verification: true
+```
+
+When enabled, verification uses FNV-1a hash algorithm to generate a hashed prefix path, spreading load across storage prefixes and reducing throttling during multi-node bootstrap scenarios.
+
 ## Limitations
 
 - Cache threshold setting is static (requires node restart)
 - SoftReference eviction timing depends on JVM garbage collection
 - Repository metadata size grows with number of snapshots
 - Large repositories (>5MB metadata) may experience performance degradation
+- `prefix_mode_verification` is node-scope and requires repository re-registration to change
 
 ## Change History
 
 - **v2.19.0** (2025-01-14): Added vertical scaling with configurable cache threshold and SoftReference; introduced `remote_publication` prefix for remote repository attributes
+- **v2.16.0** (2024-08-06): Added `prefix_mode_verification` setting to distribute verification requests and reduce remote store throttling
 - **v1.0.0**: Initial snapshot repository implementation
 
 ## References
@@ -120,8 +153,10 @@ node.attr.remote_publication.routing_table.repository: my-routing-repo
 |---------|-----|-------------|
 | v2.19.0 | [#16489](https://github.com/opensearch-project/OpenSearch/pull/16489) | Add vertical scaling and SoftReference for snapshot repository data cache |
 | v2.19.0 | [#16271](https://github.com/opensearch-project/OpenSearch/pull/16271) | Support prefix list for remote repository attributes |
+| v2.16.0 | [#14790](https://github.com/opensearch-project/OpenSearch/pull/14790) | Add prefix mode verification setting for repository verification |
 
 ### Related Issues
 
 - [#16298](https://github.com/opensearch-project/OpenSearch/issues/16298) - Support vertical scaling for snapshot repository data cache limit
 - [#16390](https://github.com/opensearch-project/OpenSearch/issues/16390) - Introduce a new prefix for configuring remote publication repositories
+- [#14741](https://github.com/opensearch-project/OpenSearch/issues/14741) - Node bootstrap fails during repository verification on account of remote store throttling
