@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Workload Management
 - Batching Processor
 - Derived Fields
 - Dynamic Mapping
