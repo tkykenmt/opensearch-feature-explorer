@@ -74,3 +74,6 @@
 - Workspace Admin and Sample Data
 - Theme & Dark Mode Settings
 - CVE Fixes
+
+### notifications
+- Version Bumps & Release Notes
