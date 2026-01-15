@@ -140,7 +140,7 @@ Using the aggregated view:
 ## Change History
 
 - **v3.2.0** (2026-01-10): Added workspace-aware scope support for default data source retrieval
-- **v2.16.0** (2024-08-06): Multiple bug fixes including unified getDefaultDataSourceId API, improved error handling with DataSourceError, fixed hideLocalCluster configuration, fixed Dev Tools selector position, and moved manageableBy flag to DSM plugin; added comprehensive unit tests for edit data source form, multi-selectable component, data source item, toast buttons, and validation form
+- **v2.16.0** (2024-08-06): Removed endpoint validation for create data source saved object API to enable data source import; multiple bug fixes including unified getDefaultDataSourceId API, improved error handling with DataSourceError, fixed hideLocalCluster configuration, fixed Dev Tools selector position, and moved manageableBy flag to DSM plugin; added comprehensive unit tests for edit data source form, multi-selectable component, data source item, toast buttons, and validation form
 
 ## References
 
@@ -153,6 +153,7 @@ Using the aggregated view:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#9832](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9832) | Support scope in data source selector |   |
+| v2.16.0 | [#6899](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6899) | Remove endpoint validation for create data source saved object API | [#6893](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6893) |
 | v2.16.0 | [#6843](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6843) | Unify getDefaultDataSourceId and export | - |
 | v2.16.0 | [#6903](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6903) | Use DataSourceError for error handling | [#6738](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6738) |
 | v2.16.0 | [#7314](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7314) | Remove data sources as required plugin | - |
