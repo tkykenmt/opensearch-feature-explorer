@@ -17,6 +17,7 @@
 - Discover Fixes
 - Look & Feel UI Improvements
 - Maintainer Updates
+- MDS (Multiple Data Sources)
 - MDS Version Decoupling
 - Navigation Next
 - OpenAPI Specification
