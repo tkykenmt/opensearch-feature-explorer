@@ -6,11 +6,33 @@ tags:
 
 ## Summary
 
-OpenSearch Dashboards v2.16.0 introduces significant enhancements to the Multiple Data Sources (MDS) feature, including version decoupling support, improved data source management controls, dataframes support, and better UI/UX for data source selection.
+OpenSearch Dashboards v2.16.0 introduces significant enhancements to the Multiple Data Sources (MDS) feature, including Timeline visualization support, data source selection service, import protection for non-MDS clusters, version decoupling support, improved data source management controls, dataframes support, and better UI/UX for data source selection.
 
 ## Details
 
 ### What's New in v2.16.0
+
+#### Timeline Visualization MDS Support
+- Added `data_source_name` parameter to the `.opensearch()` function in Timeline expressions
+- Users can query from multiple data sources via Timeline visualizations
+- When MDS is disabled, adding `data_source_name` throws an error with a toast message
+- Data source lookup by name with validation for unique matches
+- Sample data for Timeline visualizations now includes data source name when MDS is enabled
+
+#### Data Source Selection Service
+- New `DataSourceSelectionService` class for centralized data source selection state management
+- Stores selected data sources using a `BehaviorSubject` with component-based tracking
+- Each selector component gets a unique `componentId` via `generateComponentId()`
+- Plugins can subscribe to selection changes via `getSelection$()` observable
+- Service is exported as `dataSourceSelection` from the plugin setup dependencies
+- All selector components (`DataSourceSelectable`, `DataSourceSelector`, `DataSourceView`, `DataSourceMultiSelectable`, `DataSourceAggregatedView`) now integrate with the service
+
+#### Import Protection for Non-MDS Clusters
+- Prevents importing data source objects to clusters where MDS is disabled
+- Validates saved object IDs to detect MDS-exported objects (UUID_UUID format)
+- Returns `unsupported_type` error for data source objects and MDS-exported objects
+- New `dataSourceEnabled` query parameter in import API
+- Protects against importing incompatible saved objects that would fail to work
 
 #### Version Decoupling Support
 - Added `dataSourceEngineType` field to data source saved objects
@@ -37,10 +59,6 @@ OpenSearch Dashboards v2.16.0 introduces significant enhancements to the Multipl
 - Added `removedComponentIds` to handle component unmount race conditions
 - Compressed DataSourceSelector for better UI
 
-#### Timeline Visualization MDS Support
-- Sample data for Timeline visualizations now includes data source name when MDS is enabled
-- Fixed timeline visualization import with proper data source name handling
-
 #### Security Enhancements
 - Placeholder values used for data source credentials during export
 - Credentials fields replaced with `pleaseUpdateCredentials` in exported `.ndjson` files
@@ -63,18 +81,44 @@ data_source.enabled: true
 data_source.manageableBy: "dashboard_admin"
 ```
 
+Using Timeline with MDS:
+
+```
+.opensearch(index=my-index, data_source_name="My Data Source")
+```
+
+Using the Data Source Selection Service in a plugin:
+
+```typescript
+// Get the service from plugin setup dependencies
+const { dataSourceSelection } = dataSourceManagement;
+
+// Subscribe to selection changes
+dataSourceSelection.getSelection$().subscribe((selectionMap) => {
+  // selectionMap is Map<componentId, DataSourceOption[]>
+  console.log('Selected data sources:', selectionMap);
+});
+
+// Get current selection value
+const currentSelection = dataSourceSelection.getSelectionValue();
+```
+
 ## Limitations
 
 - Timeline visualization types are not fully supported with MDS
 - `gantt-chart` plugin is not supported with MDS
 - Reporting plugin is automatically de-registered when MDS is enabled
 - Dataframe schema may not persist across initial calls
+- Importing MDS-exported saved objects to non-MDS clusters is blocked
 
 ## References
 
 ### Pull Requests
 | PR | Description | Related Issue |
 |----|-------------|---------------|
+| [#6385](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6385) | Add multi data source support to Timeline visualization | [#6009](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6009) |
+| [#6395](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6395) | Prevent importing data source objects when MDS is disabled | [#6115](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6115) |
+| [#6827](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6827) | Add data source selection service for storing and getting selected data source updates | [#6825](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6825) |
 | [#6919](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6919) | Allow adding sample data for Timeline visualizations with MDS | - |
 | [#6920](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6920) | Add removedComponentIds for data source selection service | - |
 | [#6928](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6928) | Use placeholder for data source credentials fields when export | [#6892](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6892) |
