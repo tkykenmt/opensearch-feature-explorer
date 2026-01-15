@@ -190,6 +190,7 @@ PUT my-index
 ## Change History
 
 - **v3.3.0** (2025): Added `false_allow_templates` dynamic mapping option
+- **v2.16.0** (2024-07): Added `strict_allow_templates` dynamic mapping option
 
 
 ## References
@@ -204,6 +205,7 @@ PUT my-index
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#19065](https://github.com/opensearch-project/OpenSearch/pull/19065) | Add `false_allow_templates` as a dynamic mapping option | [#18617](https://github.com/opensearch-project/OpenSearch/issues/18617) |
+| v2.16.0 | [#14555](https://github.com/opensearch-project/OpenSearch/pull/14555) | Add `strict_allow_templates` dynamic mapping option | [#11276](https://github.com/opensearch-project/OpenSearch/issues/11276) |
 
 ### Issues (Design / RFC)
 - [Issue #18617](https://github.com/opensearch-project/OpenSearch/issues/18617): Feature request for `false_allow_templates`

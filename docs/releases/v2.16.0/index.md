@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Dynamic Mapping
 - Processor Allowlist
 - Application Configuration Templates
 - ClusterManager Optimizations
