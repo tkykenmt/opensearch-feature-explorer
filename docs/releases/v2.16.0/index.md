@@ -4,3 +4,4 @@
 
 ### opensearch-dashboards
 - CI/CD Improvements
+- OpenAPI Specification
