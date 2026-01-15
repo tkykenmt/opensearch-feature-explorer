@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Data Explorer
 - Field Name Search
 - Language Selector
 - UI Metric Collector Server-Side Batching

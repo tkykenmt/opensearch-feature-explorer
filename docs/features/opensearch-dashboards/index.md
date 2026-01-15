@@ -22,6 +22,7 @@
 | [opensearch-dashboards-dashboards-maintenance](opensearch-dashboards-dashboards-maintenance.md) | Dashboards Maintenance |
 | [opensearch-dashboards-dashboards-ui-updates](opensearch-dashboards-dashboards-ui-updates.md) | Dashboards UI Updates (OUI) |
 | [opensearch-dashboards-data-connections](opensearch-dashboards-data-connections.md) | Data Connections |
+| [opensearch-dashboards-data-explorer](opensearch-dashboards-data-explorer.md) | Data Explorer |
 | [opensearch-dashboards-data-importer](opensearch-dashboards-data-importer.md) | Data Importer |
 | [opensearch-dashboards-data-source-permissions](opensearch-dashboards-data-source-permissions.md) | Data Source Permissions |
 | [opensearch-dashboards-data-source-selector](opensearch-dashboards-data-source-selector.md) | Data Source Selector |
