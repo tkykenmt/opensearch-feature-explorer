@@ -140,7 +140,7 @@ Using the aggregated view:
 ## Change History
 
 - **v3.2.0** (2026-01-10): Added workspace-aware scope support for default data source retrieval
-- **v2.16.0** (2024-08-06): Multiple bug fixes including unified getDefaultDataSourceId API, improved error handling with DataSourceError, fixed hideLocalCluster configuration, fixed Dev Tools selector position, and moved manageableBy flag to DSM plugin
+- **v2.16.0** (2024-08-06): Multiple bug fixes including unified getDefaultDataSourceId API, improved error handling with DataSourceError, fixed hideLocalCluster configuration, fixed Dev Tools selector position, and moved manageableBy flag to DSM plugin; added comprehensive unit tests for edit data source form, multi-selectable component, data source item, toast buttons, and validation form
 
 ## References
 
@@ -162,3 +162,6 @@ Using the aggregated view:
 | v2.16.0 | [#7497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7497) | Fix hideLocalCluster config | - |
 | v2.16.0 | [#7528](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7528) | Fix local cluster call by default | - |
 | v2.16.0 | [#7542](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7542) | Fix tables in navigator, add local cluster | - |
+| v2.16.0 | [#6742](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6742) | Add test for edit data source form | [#6741](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6741) |
+| v2.16.0 | [#6752](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6752) | Add test for error_menu, item, multi_selectable | [#6748](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6748) |
+| v2.16.0 | [#6755](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6755) | Add test for toast button and validation form | - |

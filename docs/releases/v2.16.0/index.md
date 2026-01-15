@@ -8,6 +8,7 @@
 - CI/CD Improvements
 - Dashboard Flyout Fix
 - Data Source Client Fixes
+- Data Source Form Tests
 - Data Source Management Bug Fixes
 - Discover Fixes
 - Look & Feel UI Improvements
