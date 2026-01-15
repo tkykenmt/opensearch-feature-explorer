@@ -77,6 +77,12 @@ GET /_nodes?filter_path=nodes.*.version
 - **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager). Plugin updates: neural-search hybrid query refactoring, learning-to-rank RankerQuery fix.
 - **v3.0.0**: Upgrade to Apache Lucene 10
 - **v2.18.0**: Upgrade to Apache Lucene 9.12.0 with new Lucene912PostingsFormat, JDK 23 Panama Vectorization support, dynamic range facets, and various performance optimizations
+- **v2.16.0**: Upgrade to Apache Lucene 9.11.0 (stable release from snapshot). Includes posix_madvise support for MMapDirectory, 4-bit HNSW vectors with compression, intra-merge parallelism, RWLock for LRUQueryCache, MemorySegment Vector scorer (~2x latency improvement for byte vectors), and ICU4J 74.2 upgrade.
+- **v3.3.0**: Upgrade to Apache Lucene 10.3.0. New KNN1030Codec for k-NN plugin, Lucene103 codecs for custom-codecs plugin. API changes include new `AcceptDocs` interface replacing `Bits` in vector search, and `IOContext` hints for optimized file access.
+- **v3.3.0**: Migrate deprecated `Operations#union(Automaton, Automaton)` usages to `Operations#union(Collection<Automaton>)` in AutomatonQueries, XContentMapValues, and SystemIndices classes.
+- **v3.1.0**: Upgrade to Apache Lucene 10.2.1 with SeededKnnVectorQuery, binary quantized vector codecs, TopDocs#rrf, and API changes (DisiPriorityQueue, TopScoreDocCollectorManager). Plugin updates: neural-search hybrid query refactoring, learning-to-rank RankerQuery fix.
+- **v3.0.0**: Upgrade to Apache Lucene 10
+- **v2.18.0**: Upgrade to Apache Lucene 9.12.0 with new Lucene912PostingsFormat, JDK 23 Panama Vectorization support, dynamic range facets, and various performance optimizations
 
 
 ## References
@@ -104,6 +110,7 @@ GET /_nodes?filter_path=nodes.*.version
 | v3.1.0 | [learning-to-rank-base#186](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/186) | Lucene 10.2 upgrade changes for RankerQuery | [#184](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/184) |
 | v3.0.0 | [#16366](https://github.com/opensearch-project/OpenSearch/pull/16366) | Apache Lucene 10 update | [#11415](https://github.com/opensearch-project/OpenSearch/issues/11415) |
 | v2.18.0 | [#15333](https://github.com/opensearch-project/OpenSearch/pull/15333) | Update Apache Lucene to 9.12.0 |   |
+| v2.16.0 | [#14042](https://github.com/opensearch-project/OpenSearch/pull/14042) | Update to Apache Lucene 9.11.0 |   |
 
 ### Issues (Design / RFC)
 - [Issue #1334](https://github.com/opensearch-project/neural-search/issues/1334): Neural-search build failure due to Lucene API changes

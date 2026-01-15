@@ -10,6 +10,7 @@
 - Alias API Validation
 - Ingest Pipeline Fixes
 - Ingest Processor Improvements
+- Lucene Upgrade
 - Query Categorization Removal
 - Tiered Caching Performance Improvement
 - WKT Parser Refactoring
