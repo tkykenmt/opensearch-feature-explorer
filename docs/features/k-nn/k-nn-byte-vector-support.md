@@ -231,6 +231,7 @@ Based on OpenSearch Benchmark tests:
 ## Change History
 
 - **v2.17.0** (2024-09-17): Initial implementation with HNSW and IVF support for Faiss byte vectors
+- **v2.16.0** (2024-08-06): Bumped Faiss submodule to 33c0ba5 with SQ8_direct_signed support (prerequisite for byte vectors)
 
 
 ## References
@@ -248,6 +249,7 @@ Based on OpenSearch Benchmark tests:
 |---------|-----|-------------|---------------|
 | v2.17.0 | [#1823](https://github.com/opensearch-project/k-NN/pull/1823) | Add HNSW support for Faiss byte vector | [#1659](https://github.com/opensearch-project/k-NN/issues/1659) |
 | v2.17.0 | [#2002](https://github.com/opensearch-project/k-NN/pull/2002) | Add IVF support for Faiss byte vector | [#1659](https://github.com/opensearch-project/k-NN/issues/1659) |
+| v2.16.0 | [#1796](https://github.com/opensearch-project/k-NN/pull/1796) | Bump Faiss to 33c0ba5 (SQ8_direct_signed) | [#1659](https://github.com/opensearch-project/k-NN/issues/1659) |
 
 ### Issues (Design / RFC)
 - [Issue #1659](https://github.com/opensearch-project/k-NN/issues/1659): Original feature request
