@@ -18,6 +18,7 @@
 - Query Editor Extensions Fix
 - Quick Range Selection Fix
 - Sample Data Import
+- Saved Objects Management
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
 - Vega Visualization Fixes
