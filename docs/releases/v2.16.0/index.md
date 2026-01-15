@@ -31,6 +31,7 @@
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
 - UI Improvements
+- Use Cases & Landing Pages
 - Vega Visualization Fixes
 - VisBuilder Fixes
 - Visualization Color Fix

@@ -82,8 +82,29 @@ flowchart TB
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `navGroupEnabled` | Enable the new navigation group system | `false` |
-| `showInAllNavGroup` | Show link in Analytics(all) nav group | `false` |
+| `showInAllNavGroup` | Show link in All use case nav group | `false` |
 | Navigation dock state | Docked or undocked navigation | Docked |
+
+### Navigation Groups
+
+| Navigation Group | ID | Type | Order | Description |
+|------------------|-----|------|-------|-------------|
+| Data Administration | `dataAdministration` | System | 1000 | Data management features |
+| Settings and Setup | `settingsAndSetup` | System | 2000 | Configuration and settings |
+| All | `all` | System | 3000 | Unified view of all features |
+| Observability | `observability` | - | 4000 | Monitoring and analysis |
+| Security Analytics | `security-analytics` | - | 5000 | Security threat detection |
+| Analytics | `analytics` | - | 6000 | Data analysis and insights |
+| Search | `search` | - | 7000 | Search functionality |
+
+### Landing Pages
+
+System navigation groups have dedicated landing pages that display feature cards:
+
+| Landing Page | App ID | Navigation Group |
+|--------------|--------|------------------|
+| Settings and Setup | `settings_landing` | Settings and Setup |
+| Data Administration | `data_administration_landing` | Data Administration |
 
 ### Usage Example
 
@@ -127,7 +148,7 @@ The navigation automatically adapts to screen size:
 
 - **v3.4.0** (2025-10-08): Fixed disabled prop propagation for navigation links - `isDisabled` state now correctly passed to `EuiSideNavItem` components
 - **v2.18.0** (2024-10-22): Flattened navigation in Analytics(all) use case, persistent expand/collapse state, small screen compatibility, border style updates, sample data menu restored
-- **v2.16.0** (2024-08-06): Renamed "Detect" category to "Configure" with adjusted ordering (Configure: 2000, Visualize and Report: 3000); fixed breadcrumb navigation for 4 migrated applications (Assets, Index Pattern Management, Data Sources Management, Application Settings) when new navigation enabled; added `getScopedBreadcrumbs` utility for BrowserRouter compatibility; workspace overview visible in all use cases; fixed Dev Tools tab CSS for new left navigation; fixed navigation-next integration issues (auto-collapse on home, typo fixes, workspace visibility); redirect users to home in global when workspace enabled
+- **v2.16.0** (2024-08-06): Added "All use case" navigation group with `showInAllNavGroup` plugin property; introduced landing pages for Settings and Setup (`settings_landing`) and Data Administration (`data_administration_landing`) navigation groups; renamed "Detect" category to "Configure" with adjusted ordering; fixed breadcrumb navigation for migrated applications; added `getScopedBreadcrumbs` utility; workspace overview visible in all use cases; fixed Dev Tools tab CSS; fixed navigation-next integration issues; redirect users to home in global when workspace enabled
 
 
 ## References
@@ -144,6 +165,8 @@ The navigation automatically adapts to screen size:
 | v2.18.0 | [#8489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8489) | Update border style when new left nav expanded | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8076](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8076) | Add sample data menu back | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#7962](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7962) | Make left nav compatible with small screen | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7235](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7235) | Add all use case | - |
+| v2.16.0 | [#7282](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7282) | Enable landing page for settings and data administration | [#7283](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7283) |
 | v2.16.0 | [#7339](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7339) | Update category: rename Detect to Configure | - |
 | v2.16.0 | [#7551](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7551) | Redirect user to home in global when workspace enabled | - |
 | v2.16.0 | [#7401](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7401) | Fix breadcrumb for migrated apps with BrowserRouter | - |
