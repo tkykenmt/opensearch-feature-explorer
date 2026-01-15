@@ -283,6 +283,7 @@ GET /taxi/_search
 - **v3.4.0** (2026-01): Added hybrid cardinality collector, filter rewrite + skip list for sub-aggregations, MergingDigest for percentiles, primitive arrays for matrix_stats, skip list for auto_date_histogram
 - **v3.3.0** (2026-01): Added precomputation for rare terms, quickselect for string terms, object reuse for date histogram
 - **v3.0.0** (2025-02): Added `execution_hint` parameter for cardinality aggregation, multi-term aggregation latency/memory improvements, numeric term aggregation sorting optimization
+- **v2.16.0** (2024-08): Extended fast filter rewrite optimization from date histogram to range aggregations on all numeric field types
 
 
 ## References
@@ -309,6 +310,7 @@ GET /taxi/_search
 | v3.0.0 | [#17312](https://github.com/opensearch-project/OpenSearch/pull/17312) | Introduce `execution_hint` for Cardinality aggregation | [#16837](https://github.com/opensearch-project/OpenSearch/issues/16837) |
 | v3.0.0 | [#14993](https://github.com/opensearch-project/OpenSearch/pull/14993) | Latency and memory allocation improvements to Multi Term Aggregation |   |
 | v3.0.0 | [#17252](https://github.com/opensearch-project/OpenSearch/pull/17252) | Improve performance of NumericTermAggregation by avoiding unnecessary sorting |   |
+| v2.16.0 | [#13865](https://github.com/opensearch-project/OpenSearch/pull/13865) | Apply the date histogram rewrite optimization to range aggregation | [#13531](https://github.com/opensearch-project/OpenSearch/issues/13531) |
 
 ### Issues (Design / RFC)
 - [Issue #19260](https://github.com/opensearch-project/OpenSearch/issues/19260): Auto Select Ordinals cardinality collector for high cardinality queries
