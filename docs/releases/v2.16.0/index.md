@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- CAT API Help
 - Circuit Breaker Improvements
 - FS Info Reporting Fix
 - Multi-Part Upload Fix
