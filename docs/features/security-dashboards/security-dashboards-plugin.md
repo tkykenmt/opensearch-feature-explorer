@@ -113,6 +113,7 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 
 - **v2.19.0** (2025-01-21): Fixed OpenID login redirect to preserve query parameters and URL fragments; Fixed tenant defaulting incorrectly based on preferred tenants order instead of default tenant setting
 - **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions
+- **v2.16.0** (2024-08-06): Security fix for CVE-2024-4068 (braces package ReDoS vulnerability); CI/CD build fixes for Node.js 20 compatibility
 
 
 ## References
@@ -134,6 +135,8 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 | v2.17.0 | [#2096](https://github.com/opensearch-project/security-dashboards-plugin/pull/2096) | Fix basepath nextUrl validation |   |
 | v2.17.0 | [#2108](https://github.com/opensearch-project/security-dashboards-plugin/pull/2108) | UX fixes for page header |   |
 | v2.17.0 | [#2084](https://github.com/opensearch-project/security-dashboards-plugin/pull/2084) | Update titles and descriptions |   |
+| v2.16.0 | [#2039](https://github.com/opensearch-project/security-dashboards-plugin/pull/2039) | Addresses CVE-2024-4068 and updates yarn.lock |   |
+| v2.16.0 | [#2060](https://github.com/opensearch-project/security-dashboards-plugin/pull/2060) | Format package.json and update CI workflows |   |
 
 ### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056): Tenant link visibility bug

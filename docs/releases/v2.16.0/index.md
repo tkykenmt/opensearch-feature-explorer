@@ -111,6 +111,9 @@
 ### reporting
 - System Index Descriptors Registration
 
+### security-dashboards
+- CVE & Build Fixes
+
 ### sql
 - SQL Async Query Core Refactoring
 - SparkParameterComposerCollection
