@@ -77,7 +77,7 @@ yarn upgrade json11@^2.0.0
 
 - **v3.0.0** (2025-05-13): Security updates for vega (5.32.0), dompurify (3.2.4), markdown-it (13.0.2) addressing CVE-2025-25304 and CVE-2025-26791
 - **v2.18.0** (2024-10-22): JSON11 upgrade to 2.0.0 for UTF-8 safety, chokidar bump to 3.6.0
-- **v2.16.0** (2024-08-06): Babel dependency fix - updated @babel/traverse to ^7.25.0 and @babel/plugin-transform-class-static-block to ^7.24.7 to resolve bootstrapping errors on 2.x branch
+- **v2.16.0** (2024-08-06): Multiple CVE fixes - tar (CVE-2024-28863), ejs (CVE-2024-33883), braces (CVE-2024-4067/4068), jimp/phin (GHSA-x565-32qp-m3vf), axios (SNYK-JS-AXIOS-6144788), ws (CVE-2024-37890); Babel dependency fix
 
 
 ## References
@@ -95,6 +95,12 @@ yarn upgrade json11@^2.0.0
 | v2.18.0 | [#8603](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8603) | Upgrade JSON11 from 1.1.2 to 2.0.0 | [#7367](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7367) |
 | v2.18.0 | [#8490](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8490) | Bump chokidar from 3.5.3 to 3.6.0 |   |
 | v2.16.0 | [#7541](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7541) | Fix babel error (update @babel/traverse and @babel/plugin-transform-class-static-block) |   |
+| v2.16.0 | [#6492](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6492) | [CVE-2024-28863] Bump tar from 6.1.13 to 6.2.1 | [#6488](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6488) |
+| v2.16.0 | [#6770](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6770) | [CVE-2024-33883] Bump ejs from 3.1.7 to 3.1.10 | [#6769](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6769) |
+| v2.16.0 | [#6911](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6911) | [CVE-2024-4067/4068] Bump braces-dependent packages | [#6791](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6791), [#6792](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6792) |
+| v2.16.0 | [#6977](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6977) | [GHSA-x565-32qp-m3vf] Bump jimp to remove phin |   |
+| v2.16.0 | [#7149](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7149) | [SNYK-JS-AXIOS-6144788] Bump axios to 1.7.2 |   |
+| v2.16.0 | [#7153](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7153) | [CVE-2024-37890] Bump ws to 8.17.1/7.5.10 |   |
 
 ### Issues (Design / RFC)
 - [Issue #9400](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9400): CVE-2025-25304 in vega-selections
