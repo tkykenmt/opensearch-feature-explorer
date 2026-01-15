@@ -16,6 +16,7 @@ Cumulative feature documentation across all versions.
 - CAT API
 - Cluster Shard Limits
 - Date Field Sorting
+- Dependency Management
 - GetStats API
 - Painless Script Hashing Methods
 - Point in Time (PIT) API

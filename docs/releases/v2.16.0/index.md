@@ -4,6 +4,7 @@
 
 ### opensearch
 - @InternalApi Annotation
+- Dependency Bumps (Core)
 - Bulk API Deprecation
 - SBP (Search Backpressure) Bug Fix
 - Alias API Validation
