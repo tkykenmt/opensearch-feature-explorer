@@ -196,6 +196,7 @@ PUT _plugins/_ism/policies/hot-warm-policy
 - **v3.2.0** (2025-07-22): Added write block support for warm indices on flood watermark breach; added WarmFsService for accurate warm node FS stats based on addressable space; disallowed resize operations (clone/shrink/split) on warm indices; changed default remote_data_ratio from 0 to 5 with minimum of 1; improved resource monitoring with AverageTracker classes for CPU and JVM; adjusted default thresholds (CPU: 75%, Disk: 85%, Merge delay: 15s)
 - **v3.1.0** (2025-06-10): Added WarmDiskThresholdDecider for intelligent warm shard allocation and AutoForceMergeManager for automated segment optimization during hot-to-warm migration
 - **v3.0.0** (2025-03-18): Established warm/hot tiering foundation - renamed "search" node role to "warm" for warm indices; introduced new exclusive "search" role for search-only shards; added `index.warm` setting; renamed feature flag to `WRITABLE_WARM_INDEX_EXPERIMENTAL_FLAG`
+- **v2.16.0** (2024-08-06): Initial experimental implementation - added Composite Directory with FileCache integration for on-demand block-level fetching from remote storage; added REST/transport layer APIs for hot-to-warm tiering (`POST /{index}/_tier/warm`); introduced `index.store.data_locality` and `index.tiering.state` settings; added tiering request validation framework
 
 
 ## References
@@ -217,6 +218,8 @@ PUT _plugins/_ism/policies/hot-warm-policy
 | v3.0.0 | [#17490](https://github.com/opensearch-project/OpenSearch/pull/17490) | Added Warm index setting and updated nomenclature for hot/warm tiering | [#17489](https://github.com/opensearch-project/OpenSearch/issues/17489) |
 | v3.0.0 | [#17573](https://github.com/opensearch-project/OpenSearch/pull/17573) | Renamed node role from search to warm | [#15306](https://github.com/opensearch-project/OpenSearch/issues/15306) |
 | v3.0.0 | [#17620](https://github.com/opensearch-project/OpenSearch/pull/17620) | Introduced new search node role for search-only shards | [#17422](https://github.com/opensearch-project/OpenSearch/issues/17422) |
+| v2.16.0 | [#12782](https://github.com/opensearch-project/OpenSearch/pull/12782) | Composite Directory implementation and FileCache integration | [#12781](https://github.com/opensearch-project/OpenSearch/issues/12781) |
+| v2.16.0 | [#13980](https://github.com/opensearch-project/OpenSearch/pull/13980) | REST and transport layer changes for hot-to-warm tiering | [#14545](https://github.com/opensearch-project/OpenSearch/issues/14545) |
 
 ### Issues (Design / RFC)
 - [Issue #8535](https://github.com/opensearch-project/OpenSearch/issues/8535): Add support for a FileCacheDecider
