@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Alias API Validation
 - CAT API Help
 - Circuit Breaker Improvements
 - FS Info Reporting Fix

@@ -2,6 +2,7 @@
 
 | Document | Description |
 |----------|-------------|
+| [alias-api-validation](alias-api-validation.md) | Alias API Validation |
 | [append-only-indices](append-only-indices.md) | Append Only Indices |
 | [auto-date-histogram](auto-date-histogram.md) | Auto Date Histogram Aggregation |
 | [dependency-updates](dependency-updates.md) | Dependency Updates |
