@@ -761,7 +761,8 @@
           "category": "enhancement",
           "repository": "flow"
         }
-      ]
+      ],
+      "issue_number": 2185
     },
     {
       "name": "Index Management MDS Support",
@@ -775,7 +776,8 @@
           "category": "enhancement",
           "repository": "index-management"
         }
-      ]
+      ],
+      "issue_number": 2186
     },
     {
       "name": "Job Scheduler Enhancements",
@@ -789,7 +791,8 @@
           "category": "enhancement",
           "repository": "job"
         }
-      ]
+      ],
+      "issue_number": 2187
     },
     {
       "name": "ML Commons Model & Connector Enhancements",
@@ -821,7 +824,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2188
     },
     {
       "name": "Conversation Memory",
@@ -835,7 +839,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2189
     },
     {
       "name": "Bedrock Runtime Agent",
@@ -855,7 +860,8 @@
           "category": "enhancement",
           "repository": "ml-commons"
         }
-      ]
+      ],
+      "issue_number": 2190
     },
     {
       "name": "Neural Search Processor Enhancements",
@@ -881,7 +887,8 @@
           "category": "enhancement",
           "repository": "neural-search"
         }
-      ]
+      ],
+      "issue_number": 2191
     },
     {
       "name": "Query Insights & Workbench",
@@ -907,7 +914,8 @@
           "category": "enhancement",
           "repository": "query"
         }
-      ]
+      ],
+      "issue_number": 2192
     },
     {
       "name": "Security Password Hashing",
@@ -921,7 +929,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2193
     },
     {
       "name": "Security DLS/FLS & Privilege Evaluation",
@@ -959,7 +968,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2194
     },
     {
       "name": "Security REST API Improvements",
@@ -1003,7 +1013,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2195
     },
     {
       "name": "Threat Intel IOC & Source Config",
@@ -1029,7 +1040,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2196
     },
     {
       "name": "Security OIDC HTTP Proxy",
@@ -1043,7 +1055,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2197
     },
     {
       "name": "Security nextUrl Validation",
@@ -1057,7 +1070,8 @@
           "category": "enhancement",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2198
     },
     {
       "name": "Security Build & Test Improvements",
@@ -1095,7 +1109,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2199
     },
     {
       "name": "Security Index Request Fixes",
@@ -1109,7 +1124,8 @@
           "category": "bugfix",
           "repository": "security"
         }
-      ]
+      ],
+      "issue_number": 2200
     },
     {
       "name": "k-NN Serialization",
@@ -1123,7 +1139,8 @@
           "category": "enhancement",
           "repository": "k-nn"
         }
-      ]
+      ],
+      "issue_number": 2201
     },
     {
       "name": "SQL/PPL Enhancements",
@@ -1185,7 +1202,8 @@
           "category": "bugfix",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 2202
     },
     {
       "name": "Observability UI Fixes",
@@ -1235,7 +1253,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 2203
     },
     {
       "name": "Alerting Build Fixes",
@@ -1255,7 +1274,8 @@
           "category": "bugfix",
           "repository": "alerting"
         }
-      ]
+      ],
+      "issue_number": 2204
     },
     {
       "name": "Dashboards Maps WMS Fix",
