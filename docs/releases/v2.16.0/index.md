@@ -13,6 +13,7 @@
 - Multi-Part Upload Fix
 - Nested Aggregations Fix
 - PIT (Point In Time) API
+- Searchable Snapshots
 - System Index Warning
 
 ### opensearch-dashboards

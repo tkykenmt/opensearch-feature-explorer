@@ -87,6 +87,7 @@ Response shows `"store": { "type": "remote_snapshot" }` for searchable snapshot 
 
 - **v2.19.0** (2025-01-14): Bug fixes for alias rollover, scripted query permissions, and shallow copy snapshots on closed indexes
 - **v2.18.0**: Added k-NN index support for NMSLIB and Faiss engines
+- **v2.16.0** (2024-08-06): Fixed shard-level metadata blob creation for snapshotting searchable snapshot indexes; Fixed scripted field query failures due to cache eviction permissions
 - **v2.7.0**: Initial searchable snapshots feature
 
 ## References
@@ -101,3 +102,5 @@ Response shows `"store": { "type": "remote_snapshot" }` for searchable snapshot 
 | v2.19.0 | [#16483](https://github.com/opensearch-project/OpenSearch/pull/16483) | Rollover alias supports restored searchable snapshot index |
 | v2.19.0 | [#16544](https://github.com/opensearch-project/OpenSearch/pull/16544) | Fix scripted query permissions for remote snapshots |
 | v2.19.0 | [#16868](https://github.com/opensearch-project/OpenSearch/pull/16868) | Fix shallow copy snapshot failures on closed index |
+| v2.16.0 | [#13190](https://github.com/opensearch-project/OpenSearch/pull/13190) | Write shard level metadata blob when snapshotting searchable snapshot indexes |
+| v2.16.0 | [#14411](https://github.com/opensearch-project/OpenSearch/pull/14411) | Fix scripted field query failures with cache eviction |
