@@ -14,6 +14,7 @@ Cumulative feature documentation across all versions.
 
 - Append Only Indices
 - CAT API
+- Cluster Shard Limits
 - Date Field Sorting
 - GetStats API
 - Painless Script Hashing Methods

@@ -4,6 +4,7 @@
 
 ### opensearch
 - Alias API Validation
+- Cluster Shard Limits
 - CAT API Help
 - Circuit Breaker Improvements
 - File Cache Initialization Fix
