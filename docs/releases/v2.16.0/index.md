@@ -34,6 +34,7 @@
 - Quick Range Selection Fix
 - Sample Data Import
 - Saved Objects Management
+- Saved Objects Migration
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
 - UI Improvements

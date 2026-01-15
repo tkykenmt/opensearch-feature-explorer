@@ -55,6 +55,7 @@
 | [opensearch-dashboards-query-enhancements](opensearch-dashboards-query-enhancements.md) | Query Enhancements |
 | [opensearch-dashboards-sample-data](opensearch-dashboards-sample-data.md) | Sample Data |
 | [opensearch-dashboards-saved-query-ux](opensearch-dashboards-saved-query-ux.md) | Saved Query UX |
+| [opensearch-dashboards-saved-objects-migration](opensearch-dashboards-saved-objects-migration.md) | Saved Objects Migration |
 | [opensearch-dashboards-tsvb-visualization](opensearch-dashboards-tsvb-visualization.md) | TSVB Visualization |
 | [opensearch-dashboards-timeline-visualization](opensearch-dashboards-timeline-visualization.md) | Timeline Visualization |
 | [opensearch-dashboards-ui-metric-collector](opensearch-dashboards-ui-metric-collector.md) | UI Metric Collector |
