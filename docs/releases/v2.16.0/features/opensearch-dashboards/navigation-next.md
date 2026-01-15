@@ -6,63 +6,101 @@ tags:
 
 ## Summary
 
-Updates and bug fixes for the new left navigation system in OpenSearch Dashboards v2.16.0. Key changes include renaming the "Detect" category to "Configure" with adjusted ordering, CSS styling fixes in Dev Tools, workspace integration improvements, and navigation behavior enhancements when workspaces are enabled.
+OpenSearch Dashboards v2.16.0 introduces the "Navigation Next" feature, a major overhaul of the left navigation system. This release adds a new collapsible left navigation with navigation groups, recent items tracking, breadcrumb integration, and workspace-aware navigation. The feature is enabled via the "Use New Home Page" advanced setting.
 
 ## Details
 
 ### What's New in v2.16.0
 
-#### Category Updates
-Updated navigation categories in `default_app_categories.ts`:
-- Renamed "Detect" category to "Configure" for better clarity
-- Adjusted category ordering: Configure now has order 2000 (previously Detect was 3000)
-- Visualize and Report category order changed to 3000 (previously 2000)
-- Added deprecation markers for legacy category names (`dashboardAndReport`, `detect`)
+```mermaid
+graph TB
+    subgraph "Navigation Next Components"
+        NavGroup[Nav Group Service]
+        LeftNav[New Left Navigation]
+        RecentItems[Recent Items]
+        Breadcrumbs[Breadcrumb Integration]
+    end
+    
+    subgraph "Chrome Service Extensions"
+        Updater[Nav Group Updater]
+        CurrentGroup[Current Nav Group]
+        Categories[Navigation Categories]
+    end
+    
+    NavGroup --> LeftNav
+    LeftNav --> RecentItems
+    CurrentGroup --> Breadcrumbs
+    Updater --> NavGroup
+    Categories --> LeftNav
+```
 
-| Category | Old Order | New Order |
-|----------|-----------|-----------|
-| Configure (was Detect) | 3000 | 2000 |
-| Visualize and Report | 2000 | 3000 |
+### Key Features
 
-#### Dev Tools Tab CSS Fix
-Updated CSS for Dev Tools tabs to work correctly with the new left navigation. Removed `justify-content: space-between` styling that caused incorrect tab spacing when Workbench was moved to Dev Tools.
-
-#### Navigation-Next Integration Fixes
-Multiple fixes for the navigation-next feature branch integration:
-- Always collapse the new left navigation on home page when workspace is enabled
-- Fixed typos in use case descriptions
-- Declared `advanced_settings`, `dev_tools`, `data_administration_landing`, `settings_and_setup_landing` pages as features not visible within workspace
-- Removed unnecessary `flushLeft` styling in workspace picker
-- Show overview page in workspace of type "all" and hide home
-
-#### Global Navigation Redirect
-When workspace is enabled, users are redirected to home in global context to prevent creating objects in global scope:
-- Changed "back" button to "home" when user is in Settings and Setup / Data Administration nav groups
-- Changed navGroup to dataAdministration when navigating to devTools
+| Feature | Description |
+|---------|-------------|
+| New Left Navigation | Collapsible sidebar with navigation groups |
+| Nav Group Service | Chrome service extension for managing navigation groups |
+| Nav Group Updater | Plugin API to dynamically update navigation groups |
+| Current Nav Group | Tracks active navigation group in session |
+| Breadcrumb Integration | Prepends current nav group to breadcrumbs |
+| Recent Items | Homepage section showing recently accessed items |
+| Recent Items Popup | Top navigation popup for quick access to recent items |
+| New Categories | Added new navigation categories for organization |
 
 ### Technical Changes
 
-| Change | Description |
-|--------|-------------|
-| Category rename | "Detect" → "Configure" in default_app_categories.ts |
-| Category ordering | Configure: 2000, Visualize and Report: 3000 |
-| Dev Tools CSS | Removed `justify-content: space-between` from dev tools tab styling |
-| Workspace visibility | Marked admin pages as not visible within workspace |
-| Navigation collapse | Auto-collapse left nav on home when workspace enabled |
-| Global redirect | Redirect users to home in global context with workspace enabled |
+#### Chrome Service Extensions
+
+The Chrome service was extended with navigation group management:
+
+- `registerNavGroupUpdater`: Allows plugins to register updaters that modify navigation groups
+- `currentNavGroup$`: Observable for tracking the current navigation group
+- Navigation group state persisted in session storage
+
+#### New Left Navigation Component
+
+- Registers core apps within navigation groups
+- Supports data source enabled/disabled modes
+- Configurable via "Use New Home Page" advanced setting
+
+#### Recent Items
+
+- Recent works section added to new homepage
+- Recent items popup accessible from top navigation clock icon
+- Supports workspace-enabled and workspace-disabled modes
+- Empty state handling for new users
+
+#### Index Pattern Redirect Fix
+
+When navigation groups are enabled, users are redirected to the correct index pattern application instead of the legacy management page.
+
+### Configuration
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `home:useNewHomePage` | Enable new home page with navigation-next features | `false` |
+
+### Enabling Navigation Next
+
+1. Navigate to **Management > Advanced Settings**
+2. Enable "Use New Home Page" setting
+3. The new left navigation and homepage features become active
 
 ## Limitations
 
-- These fixes are specific to the new navigation system (feature flag required)
-- Workspace feature must be enabled for some fixes to take effect
-- Legacy category names (`dashboardAndReport`, `detect`) are deprecated but still available for backward compatibility
+- Feature is opt-in via advanced settings (not enabled by default)
+- Navigation state stored in session storage (cleared on browser close)
+- Some plugins may require updates to fully integrate with navigation groups
 
 ## References
 
 ### Pull Requests
 | PR | Description | Related Issue |
 |----|-------------|---------------|
-| [#7339](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7339) | Update category: rename Detect to Configure, adjust ordering | - |
-| [#7328](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7328) | Update dev tools tab css for new left navigation | - |
-| [#7356](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7356) | Fix navigation-next integration issues | - |
-| [#7551](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7551) | Redirect user to home in global when workspace is enabled | - |
+| [#7117](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7117) | Add register nav group updater to chrome service | [#7147](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7147) |
+| [#7166](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7166) | Add current nav group into chrome service, prepend to breadcrumbs | [#7131](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7131), [#7132](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7132) |
+| [#7230](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7230) | Add new left navigation | [#7148](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7148), [#7094](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7094) |
+| [#7237](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7237) | Add recent works in new homepage | - |
+| [#7257](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7257) | Add recent items popup in top navigation | - |
+| [#7275](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7275) | Add new navigation category | - |
+| [#7305](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7305) | Fix redirect to standard index pattern app when nav group enabled | - |
