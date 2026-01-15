@@ -6,6 +6,7 @@
 - Breadcrumb & Router Fixes
 - Build & Compilation Fixes
 - CI/CD Improvements
+- Data Source Management Bug Fixes
 - Discover Fixes
 - Look & Feel UI Improvements
 - Maintainer Updates

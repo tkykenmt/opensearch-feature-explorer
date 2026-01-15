@@ -140,7 +140,7 @@ Using the aggregated view:
 ## Change History
 
 - **v3.2.0** (2026-01-10): Added workspace-aware scope support for default data source retrieval
-
+- **v2.16.0** (2024-08-06): Multiple bug fixes including unified getDefaultDataSourceId API, improved error handling with DataSourceError, fixed hideLocalCluster configuration, fixed Dev Tools selector position, and moved manageableBy flag to DSM plugin
 
 ## References
 
@@ -153,3 +153,12 @@ Using the aggregated view:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.2.0 | [#9832](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9832) | Support scope in data source selector |   |
+| v2.16.0 | [#6843](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6843) | Unify getDefaultDataSourceId and export | - |
+| v2.16.0 | [#6903](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6903) | Use DataSourceError for error handling | [#6738](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6738) |
+| v2.16.0 | [#7314](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7314) | Remove data sources as required plugin | - |
+| v2.16.0 | [#7347](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7347) | Fix selector position in Dev Tools | [#7349](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7349) |
+| v2.16.0 | [#7396](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7396) | Remove default data source restriction | - |
+| v2.16.0 | [#7440](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7440) | Move manageableBy flag to DSM plugin | - |
+| v2.16.0 | [#7497](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7497) | Fix hideLocalCluster config | - |
+| v2.16.0 | [#7528](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7528) | Fix local cluster call by default | - |
+| v2.16.0 | [#7542](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7542) | Fix tables in navigator, add local cluster | - |
