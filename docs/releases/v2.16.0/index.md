@@ -5,6 +5,9 @@
 ### k-nn
 - Faiss Updates
 
+### ml-commons
+- Model & Connector Enhancements
+
 ### opensearch
 - Fingerprint Ingest Processor
 - Aggregation Optimizations
