@@ -38,6 +38,7 @@
 | [opensearch-code-cleanup](opensearch-code-cleanup.md) | Code Cleanup |
 | [opensearch-code-coverage-gradle](opensearch-code-coverage-gradle.md) | Code Coverage (Gradle) |
 | [opensearch-combined-fields-query](opensearch-combined-fields-query.md) | Combined Fields Query |
+| [opensearch-community-id-processor](opensearch-community-id-processor.md) | Community ID Ingest Processor |
 | [opensearch-composite-aggregation](opensearch-composite-aggregation.md) | Composite Aggregation |
 | [opensearch-composite-directory-factory](opensearch-composite-directory-factory.md) | Composite Directory Factory |
 | [opensearch-concurrent-segment-search](opensearch-concurrent-segment-search.md) | Concurrent Segment Search |
