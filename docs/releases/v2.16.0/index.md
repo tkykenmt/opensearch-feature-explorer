@@ -20,5 +20,6 @@
 - Sample Data Import
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
+- Vega Visualization Fixes
 - Visualization Color Fix
 - Workspace
