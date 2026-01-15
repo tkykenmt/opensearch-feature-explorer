@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- Aggregation Optimizations
 - Workload Management
 - Writable Warm
 - Batching Processor
