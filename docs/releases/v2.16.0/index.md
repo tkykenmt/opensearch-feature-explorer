@@ -30,6 +30,7 @@
 - Saved Objects Management
 - Sidecar Z-Index Fix
 - Timeline Visualization Fixes
+- UI Improvements
 - Vega Visualization Fixes
 - VisBuilder Fixes
 - Visualization Color Fix
