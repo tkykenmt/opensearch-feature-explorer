@@ -153,6 +153,7 @@
 | [opensearch-request-cache](opensearch-request-cache.md) | Request Cache |
 | [opensearch-rescore-named-queries](opensearch-rescore-named-queries.md) | Rescore Named Queries |
 | [opensearch-resthandler-wrapper](opensearch-resthandler-wrapper.md) | RestHandler.Wrapper |
+| [opensearch-rest-high-level-client](opensearch-rest-high-level-client.md) | REST High-Level Client |
 | [opensearch-rule-based-auto-tagging](opensearch-rule-based-auto-tagging.md) | Rule-Based Auto-Tagging |
 | [opensearch-s3-repository](opensearch-s3-repository.md) | S3 Repository |
 | [opensearch-scaled-float-field](opensearch-scaled-float-field.md) | Scaled Float Field |
