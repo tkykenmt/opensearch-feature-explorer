@@ -90,6 +90,9 @@
 ### notifications
 - Version Bumps & Release Notes
 
+### query-insights
+- Query Insights Plugin Setup
+
 ### reporting
 - System Index Descriptors Registration
 
