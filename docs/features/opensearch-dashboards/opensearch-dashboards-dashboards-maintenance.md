@@ -69,7 +69,7 @@ Enhanced error handling for edge cases:
 ## Change History
 
 - **v2.18.0** (2024-10-22): Version bump to 2.18.0, enhanced search API cleanup (removed ConnectionsService, deprecated routes, improved error handling)
-
+- **v2.16.0** (2024-08-06): Build and compilation fixes - lint checker fix, removed unused imports causing compilation errors, Angular legacy code cleanup
 
 ## References
 
@@ -82,3 +82,6 @@ Enhanced error handling for edge cases:
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#8225](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8225) | Post 2.17 version bump |   |
 | v2.18.0 | [#8226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8226) | Clean up enhanced search API |   |
+| v2.16.0 | [#6771](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6771) | Lint checker failure fix |   |
+| v2.16.0 | [#6879](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6879) | Remove unused import and property which broke compilation | [#6878](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6878) |
+| v2.16.0 | [#7087](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7087) | Remove angular related comment and code |   |
