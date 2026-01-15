@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch
+- ClusterManager Optimizations
 - @InternalApi Annotation
 - Cluster Stats Optimization
 - Search Thread Resource Usage
