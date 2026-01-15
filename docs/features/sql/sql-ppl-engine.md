@@ -103,6 +103,7 @@ POST /_plugins/_ppl
 - **v3.0.0**: Apache Calcite integration (V3 engine)
 - **v2.19.0**: PPL metadata fields support (`_id`, `_index`, etc.); grammar validation for PPL; async query state management improvements; bug fixes for datetime parsing, CSV output, and FilterOperator
 - **v2.17.0**: Increased default query size limit (200 → 10000)
+- **v2.16.0**: Registered system indices (`.ql-datasources`, `.spark-request-buffer*`) through `SystemIndexPlugin.getSystemIndexDescriptors` for formal system index protection
 
 
 ## References
@@ -111,3 +112,9 @@ POST /_plugins/_ppl
 - [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
 - [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/)
 - [SQL Plugin Repository](https://github.com/opensearch-project/sql)
+
+### Pull Requests
+| Version | PR | Description | Related Issue |
+|---------|-----|-------------|---------------|
+| v2.16.0 | [#2772](https://github.com/opensearch-project/sql/pull/2772) | Register system index descriptors through SystemIndexPlugin | [security#4439](https://github.com/opensearch-project/security/issues/4439) |
+| v2.16.0 | [#2817](https://github.com/opensearch-project/sql/pull/2817) | Backport: Register system index descriptors through SystemIndexPlugin | [security#4439](https://github.com/opensearch-project/security/issues/4439) |

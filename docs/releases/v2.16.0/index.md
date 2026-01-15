@@ -78,5 +78,8 @@
 ### notifications
 - Version Bumps & Release Notes
 
+### reporting
+- System Index Descriptors Registration
+
 ### sql
 - SQL Async Query Core Refactoring
