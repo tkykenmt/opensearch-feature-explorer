@@ -39,6 +39,7 @@
 - Searchable Snapshots
 - Shard Allocation Improvements
 - System Index Warning
+- System Index Registry
 
 ### opensearch-dashboards
 - Data Enhancements Cleanup
