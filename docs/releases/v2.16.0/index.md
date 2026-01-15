@@ -4,6 +4,7 @@
 
 ### opensearch
 - Workload Management
+- Writable Warm
 - Batching Processor
 - Derived Fields
 - Dynamic Mapping
