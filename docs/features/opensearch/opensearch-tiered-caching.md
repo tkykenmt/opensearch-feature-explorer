@@ -114,7 +114,8 @@ GET /_nodes/stats/caches/request_cache?level=tier
 - **v3.3.0** (2025-11-18): Fixed query execution exception handling; ensures proper cleanup of concurrent request tracking map when exceptions occur
 - **v3.0.0** (2025-05-06): Single cache manager for disk caches reduces CPU overhead; took-time policy extended to guard heap tier
 - **v2.19.0** (2025-02-25): Fixed cache stats API accuracy when shards are closed; Fixed max size settings not working with pluggable caching; Deprecated `indices.requests.cache.size` setting
-- **v2.18.0** (2024-11-05): Segmented cache architecture with configurable segments; query recomputation moved outside write lock; new settings for segment count and per-tier sizes
+- **v2.18.0** (2024-11-05): Segmented cache architecture with configurable segments; new settings for segment count and per-tier sizes
+- **v2.16.0** (2024-08-06): Query recomputation moved outside write lock using CompletableFuture-based concurrency; reduces thread contention during cache misses
 - **v2.14.0** (2024-05-14): Initial experimental tiered caching support for request cache
 - **v2.13.0** (2024-04-02): cache-ehcache plugin introduced for disk cache implementation
 
@@ -137,6 +138,7 @@ GET /_nodes/stats/caches/request_cache?level=tier
 | v2.19.0 | [#16560](https://github.com/opensearch-project/OpenSearch/pull/16560) | Fix TieredSpilloverCache stats when shards are closed | [#16559](https://github.com/opensearch-project/OpenSearch/issues/16559) |
 | v2.19.0 | [#16636](https://github.com/opensearch-project/OpenSearch/pull/16636) | Fix max size settings with pluggable caching | [#16631](https://github.com/opensearch-project/OpenSearch/issues/16631) |
 | v2.18.0 | [#16047](https://github.com/opensearch-project/OpenSearch/pull/16047) | Segmented cache changes for improved concurrency | [#13989](https://github.com/opensearch-project/OpenSearch/issues/13989) |
+| v2.16.0 | [#14187](https://github.com/opensearch-project/OpenSearch/pull/14187) | Move query recomputation logic outside write lock | [#13989](https://github.com/opensearch-project/OpenSearch/issues/13989) |
 | v2.14.0 | - | Initial tiered caching support (experimental) |   |
 | v2.13.0 | - | cache-ehcache plugin introduced |   |
 
