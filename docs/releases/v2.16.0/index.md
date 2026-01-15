@@ -10,4 +10,5 @@
 - Look & Feel UI Improvements
 - Maintainer Updates
 - MDS Version Decoupling
+- Navigation Next
 - OpenAPI Specification
