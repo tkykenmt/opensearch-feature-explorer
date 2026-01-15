@@ -13,4 +13,5 @@
 - MDS Version Decoupling
 - Navigation Next
 - OpenAPI Specification
+- Query Editor Extensions Fix
 - Workspace
