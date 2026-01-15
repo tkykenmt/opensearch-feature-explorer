@@ -110,6 +110,7 @@ source=logs | where status =
 ## Change History
 
 - **v3.0.0** (2025-02): Added autocomplete value suggestions, Vega PPL time field support, dependency license validation, and Discover scrolling improvements
+- **v2.16.0** (2024-08): Fixed Vega URL parser error message formatting for unsupported query types
 
 
 ## References
@@ -127,6 +128,7 @@ source=logs | where status =
 | v3.0.0 | [#9064](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9064) | Dependency license validation |   |
 | v3.0.0 | [#9152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9152) | Vega PPL time field support | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.0.0 | [#9298](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9298) | Discover scrolling improvements |   |
+| v2.16.0 | [#6777](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6777) | Fix Vega URL parser error message formatting |   |
 
 ### Issues (Design / RFC)
 - [Issue #9169](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9169): Vega PPL %timefield% feature request
