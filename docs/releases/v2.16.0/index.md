@@ -2,6 +2,9 @@
 
 ## Features
 
+### dashboards-observability
+- Observability Getting Started & Dashboards
+
 ### k-nn
 - Faiss Updates
 
