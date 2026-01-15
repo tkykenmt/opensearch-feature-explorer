@@ -4,6 +4,7 @@
 
 ### opensearch-dashboards
 - Breadcrumb & Router Fixes
+- OSD Availability
 - Build & Compilation Fixes
 - CI/CD Improvements
 - Dashboard Flyout Fix
