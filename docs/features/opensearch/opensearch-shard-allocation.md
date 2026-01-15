@@ -149,11 +149,13 @@ PUT /_cluster/settings
 - Changing `prefer_primary` to `false` after enabling does not trigger redistribution
 - Primary shard limit settings (`total_primary_shards_per_node`) require remote store to be enabled
 - Setting limits too low may result in unassigned shards
+- Batch allocator timeout settings are disabled by default; very short timeouts may cause excessive throttling
 
 ## Change History
 
 - **v3.4.0** (2025-10-10): Fixed bug where allocation and rebalance constraints were incorrectly reset when updating balance factors
 - **v3.0.0** (2025-05-13): Added primary shard limit settings (`total_primary_shards_per_node`) at cluster and index levels for remote store clusters; Added `primary_constraint.threshold` setting to adjust primary constraint weights
+- **v2.16.0** (2024-08-06): Added time-bound reroute iterations with configurable timeouts (`primary_allocator_timeout`, `replica_allocator_timeout`); Fixed NPE in ReplicaShardAllocator during node-left events
 
 
 ## References
@@ -168,8 +170,11 @@ PUT /_cluster/settings
 | v3.4.0 | [#19012](https://github.com/opensearch-project/OpenSearch/pull/19012) | Fix WeightFunction constraint reset bug | [#13429](https://github.com/opensearch-project/OpenSearch/issues/13429) |
 | v3.0.0 | [#17295](https://github.com/opensearch-project/OpenSearch/pull/17295) | Add cluster and index level settings to limit total primary shards per node | [#17293](https://github.com/opensearch-project/OpenSearch/issues/17293) |
 | v3.0.0 | [#16471](https://github.com/opensearch-project/OpenSearch/pull/16471) | Add setting to adjust the primary constraint weights | [#16470](https://github.com/opensearch-project/OpenSearch/issues/16470) |
+| v2.16.0 | [#14848](https://github.com/opensearch-project/OpenSearch/pull/14848) | Make reroute iteration time-bound for large shard allocations | - |
+| v2.16.0 | [#14385](https://github.com/opensearch-project/OpenSearch/pull/14385) | Fix NPE in ReplicaShardAllocator | [#13993](https://github.com/opensearch-project/OpenSearch/issues/13993) |
 
 ### Issues (Design / RFC)
 - [Issue #17293](https://github.com/opensearch-project/OpenSearch/issues/17293): Feature request for primary shard count constraint
 - [Issue #16470](https://github.com/opensearch-project/OpenSearch/issues/16470): Bug report for high primary shard weight causing uneven distribution
 - [Issue #13429](https://github.com/opensearch-project/OpenSearch/issues/13429): Bug report for constraint reset issue
+- [Issue #13993](https://github.com/opensearch-project/OpenSearch/issues/13993): NPE in ReplicaShardBatchAllocator during node drops
