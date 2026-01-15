@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- PPL Support in Vega Visualization
 - Content Management Plugin
 - JSON11 Long Numerals
 - Aggregated View Fixes
