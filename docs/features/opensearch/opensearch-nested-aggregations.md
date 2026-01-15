@@ -141,6 +141,7 @@ POST index/_search
 ## Change History
 
 - **v2.18.0** (2024-10-22): Fixed infinite loop bug in deeply nested aggregations ([#15931](https://github.com/opensearch-project/OpenSearch/pull/15931))
+- **v2.16.0** (2024-08-06): Fixed inaccurate results when using nested aggregations with sibling nested paths ([#13324](https://github.com/opensearch-project/OpenSearch/pull/13324))
 
 
 ## References
@@ -153,6 +154,8 @@ POST index/_search
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.18.0 | [#15931](https://github.com/opensearch-project/OpenSearch/pull/15931) | Fix infinite loop in nested agg | [#15914](https://github.com/opensearch-project/OpenSearch/issues/15914) |
+| v2.16.0 | [#13324](https://github.com/opensearch-project/OpenSearch/pull/13324) | Fix sibling nested aggregation results | [#13303](https://github.com/opensearch-project/OpenSearch/issues/13303) |
 
 ### Issues (Design / RFC)
 - [Issue #15914](https://github.com/opensearch-project/OpenSearch/issues/15914): Bug report for infinite loop in deep nested aggregations
+- [Issue #13303](https://github.com/opensearch-project/OpenSearch/issues/13303): Bug report for inaccurate sibling nested aggregation results
