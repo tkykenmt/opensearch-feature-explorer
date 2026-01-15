@@ -4,6 +4,7 @@
 
 ### opensearch-dashboards
 - Aggregated View Fixes
+- Home Page Enhancements
 - Breadcrumb & Router Fixes
 - OSD Availability
 - Build & Compilation Fixes
