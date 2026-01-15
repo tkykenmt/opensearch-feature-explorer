@@ -4058,7 +4058,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2305
     },
     {
       "name": "Workspace",
@@ -4096,7 +4097,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2306
     },
     {
       "name": "SQL Auto Suggest",
@@ -4110,7 +4112,8 @@
           "category": "feature",
           "repository": "sql"
         }
-      ]
+      ],
+      "issue_number": 2307
     },
     {
       "name": "Navigation Next",
@@ -4124,7 +4127,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2308
     },
     {
       "name": "Home Page Enhancements",
@@ -4144,7 +4148,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2309
     },
     {
       "name": "OUI Bump",
@@ -4158,7 +4163,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2310
     },
     {
       "name": "Data Set Navigator",
@@ -4172,7 +4178,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2311
     },
     {
       "name": "Discover Fixes",
@@ -4210,7 +4217,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2312
     },
     {
       "name": "VisBuilder Fixes",
@@ -4236,7 +4244,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2313
     },
     {
       "name": "Aggregated View Fixes",
@@ -4256,7 +4265,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2314
     },
     {
       "name": "OSD Availability",
@@ -4270,7 +4280,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2315
     },
     {
       "name": "Data Source Form Tests",
@@ -4296,7 +4307,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2316
     },
     {
       "name": "Saved Objects Management",
@@ -4310,7 +4322,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2317
     },
     {
       "name": "Vega Visualization Fixes",
@@ -4324,7 +4337,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2318
     },
     {
       "name": "Quick Range Selection Fix",
@@ -4338,7 +4352,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2319
     },
     {
       "name": "Data Source Client Fixes",
@@ -4358,7 +4373,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2320
     },
     {
       "name": "Sample Data Import",
@@ -4378,7 +4394,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2321
     },
     {
       "name": "Build & Compilation Fixes",
@@ -4404,7 +4421,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2322
     },
     {
       "name": "Dashboard Flyout Fix",
@@ -4418,7 +4436,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2323
     },
     {
       "name": "Sidecar Z-Index Fix",
@@ -4432,7 +4451,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2324
     },
     {
       "name": "Timeline Visualization Fixes",
