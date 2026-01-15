@@ -105,7 +105,7 @@ import { EuiTitle, EuiButtonIcon, EuiToolTip } from '@elastic/eui';
 ## Change History
 
 - **v2.17.0** (2024-09-17): OUI upgrades from 1.9.0 to 1.12.0, header spacing improvements, recent items button refactoring
-- **v2.16.0** (2024-08-06): Look & Feel initiative - semantic headers for page/modal/flyout, consistent plus icons, OUI tooltips replacing browser tooltips, small popover padding, small tab sizing, Discover/query bar density improvements, VisBuilder guidance, recent items icon fixes for dark mode, added `closeFlyout()` API to close active flyouts when switching dashboard view modes
+- **v2.16.0** (2024-08-06): Look & Feel initiative - semantic headers for page/modal/flyout, consistent plus icons, OUI tooltips replacing browser tooltips, small popover padding, small tab sizing, Discover/query bar density improvements, VisBuilder guidance, recent items icon fixes for dark mode, added `closeFlyout()` API to close active flyouts when switching dashboard view modes; Accessibility improvements with aria-labels for Discover page; Navigation group interfaces (`addNavToGroup`, `getGroupsMap$`) for organizing apps into groups; App description field for overview page; Button styling consistency (secondary/empty buttons)
 
 
 ## References
@@ -134,3 +134,7 @@ import { EuiTitle, EuiButtonIcon, EuiToolTip } from '@elastic/eui';
 | v2.16.0 | [#7523](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7523) | Apply small popover padding and add OUI tooltips |   |
 | v2.16.0 | [#7530](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7530) | Discover and Query Management fix |   |
 | v2.16.0 | [#6923](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6923) | Close any open flyouts when changing dashboard view mode |   |
+| v2.16.0 | [#6898](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6898) | Add missing aria-label for discover page | [#6897](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6897) |
+| v2.16.0 | [#7060](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7060) | Introduce new interface for group | [#7061](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7061) |
+| v2.16.0 | [#7152](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7152) | Add description field in App |   |
+| v2.16.0 | [#7211](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7211) | Address styling of non-primary buttons by making secondary/empty |   |
