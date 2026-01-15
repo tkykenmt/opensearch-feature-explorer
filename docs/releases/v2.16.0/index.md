@@ -4,6 +4,7 @@
 
 ### opensearch
 - FS Info Reporting Fix
+- System Index Warning
 
 ### opensearch-dashboards
 - Data Enhancements Cleanup

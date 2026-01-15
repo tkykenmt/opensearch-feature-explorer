@@ -189,6 +189,7 @@
 | [opensearch-streaming-transport-aggregation](opensearch-streaming-transport-aggregation.md) | Streaming Transport & Aggregation |
 | [opensearch-subject-interface](opensearch-subject-interface.md) | Subject Interface |
 | [opensearch-system-indices](opensearch-system-indices.md) | System Indices |
+| [opensearch-system-index-warning](opensearch-system-index-warning.md) | System Index Warning Handling |
 | [opensearch-system-ingest-pipeline](opensearch-system-ingest-pipeline.md) | System Ingest Pipeline |
 | [opensearch-systemd-security-configurations](opensearch-systemd-security-configurations.md) | Systemd Security Configurations |
 | [opensearch-task-cancellation-monitoring](opensearch-task-cancellation-monitoring.md) | Task Cancellation Monitoring |
