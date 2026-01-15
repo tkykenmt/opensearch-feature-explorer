@@ -239,7 +239,7 @@ PUT _cluster/settings
 
 - **v3.3.0** (2025-10-06): Added file cache active usage threshold monitoring with automatic index blocking
 - **v3.1.0** (2025-05-28): Added file pinning support and granular statistics (full file, block file, pinned file stats)
-- **v2.16.0** (2024-08-06): Fixed fs info reporting negative available size when file cache space is occupied by other files
+- **v2.16.0** (2024-08-06): Fixed file cache initialization to use total disk space instead of available space; added support for percentage-based cache size configuration; fixed fs info reporting negative available size
 - **v2.7.0**: Initial implementation for Searchable Snapshots
 
 
@@ -256,6 +256,7 @@ PUT _cluster/settings
 | v3.3.0 | [#19071](https://github.com/opensearch-project/OpenSearch/pull/19071) | Added file cache active usage guard rails to DiskThresholdMonitor |   |
 | v3.1.0 | [#17617](https://github.com/opensearch-project/OpenSearch/pull/17617) | Added File Cache Pinning | [#13648](https://github.com/opensearch-project/OpenSearch/issues/13648) |
 | v3.1.0 | [#17538](https://github.com/opensearch-project/OpenSearch/pull/17538) | Added File Cache Stats (block and full file level) | [#17479](https://github.com/opensearch-project/OpenSearch/issues/17479) |
+| v2.16.0 | [#14004](https://github.com/opensearch-project/OpenSearch/pull/14004) | Fixed file cache initialization to use total disk space |   |
 | v2.16.0 | [#11573](https://github.com/opensearch-project/OpenSearch/pull/11573) | Fixed fs info reporting negative available size |   |
 | v2.7.0 | Initial | File Cache introduced for Searchable Snapshots |   |
 
