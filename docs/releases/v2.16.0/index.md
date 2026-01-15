@@ -2,6 +2,9 @@
 
 ## Features
 
+### opensearch
+- FS Info Reporting Fix
+
 ### opensearch-dashboards
 - Data Enhancements Cleanup
 - Data Explorer
