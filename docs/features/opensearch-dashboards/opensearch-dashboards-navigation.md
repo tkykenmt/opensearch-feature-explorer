@@ -127,6 +127,7 @@ The navigation automatically adapts to screen size:
 
 - **v3.4.0** (2025-10-08): Fixed disabled prop propagation for navigation links - `isDisabled` state now correctly passed to `EuiSideNavItem` components
 - **v2.18.0** (2024-10-22): Flattened navigation in Analytics(all) use case, persistent expand/collapse state, small screen compatibility, border style updates, sample data menu restored
+- **v2.16.0** (2024-08-06): Fixed breadcrumb navigation for 4 migrated applications (Assets, Index Pattern Management, Data Sources Management, Application Settings) when new navigation enabled; added `getScopedBreadcrumbs` utility for BrowserRouter compatibility; workspace overview visible in all use cases
 
 
 ## References
@@ -143,3 +144,4 @@ The navigation automatically adapts to screen size:
 | v2.18.0 | [#8489](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8489) | Update border style when new left nav expanded | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8076](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8076) | Add sample data menu back | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#7962](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7962) | Make left nav compatible with small screen | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7401](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7401) | Fix breadcrumb for migrated apps with BrowserRouter | - |
