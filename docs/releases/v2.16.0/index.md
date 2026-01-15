@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Data Enhancements Cleanup
 - Data Explorer
 - Field Name Search
 - Language Selector
