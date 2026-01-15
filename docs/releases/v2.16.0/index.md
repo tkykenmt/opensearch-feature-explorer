@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Content Management Plugin
 - JSON11 Long Numerals
 - Aggregated View Fixes
 - Home Page Enhancements
