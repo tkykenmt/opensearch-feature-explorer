@@ -3072,7 +3072,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2265
     },
     {
       "name": "Ingest Pipeline Fixes",
@@ -3086,7 +3087,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2266
     },
     {
       "name": "WKT Parser Refactoring",
@@ -3112,7 +3114,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2267
     },
     {
       "name": "Query Fixes",
@@ -3132,7 +3135,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2268
     },
     {
       "name": "Cluster Shard Limits",
@@ -3146,7 +3150,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2269
     },
     {
       "name": "REST High-Level Client Fixes",
@@ -3160,7 +3165,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2270
     },
     {
       "name": "Searchable Snapshots",
@@ -3180,7 +3186,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2271
     },
     {
       "name": "Nested Aggregations Fix",
@@ -3194,7 +3201,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2272
     },
     {
       "name": "PIT (Point In Time) API",
@@ -3208,7 +3216,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2273
     },
     {
       "name": "File Cache",
@@ -3222,7 +3231,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2274
     },
     {
       "name": "GetResult NPE Fix",
@@ -3236,7 +3246,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2275
     },
     {
       "name": "Alias API Validation",
@@ -3250,7 +3261,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2276
     },
     {
       "name": "Index Creation NPE Fix",
@@ -3264,7 +3276,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2277
     },
     {
       "name": "CAT API Help",
@@ -3278,7 +3291,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2278
     },
     {
       "name": "Circuit Breaker Improvements",
@@ -3292,7 +3306,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2279
     },
     {
       "name": "Multi-Part Upload",
@@ -3306,7 +3321,8 @@
           "category": "deprecation",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2280
     },
     {
       "name": "System Index Warning",
@@ -3320,7 +3336,8 @@
           "category": "feature",
           "repository": "opensearch"
         }
-      ]
+      ],
+      "issue_number": 2281
     },
     {
       "name": "FS Info Reporting Fix",
@@ -3334,7 +3351,8 @@
           "category": "deprecation",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 2282
     },
     {
       "name": "OpenSearch Dashboards CVE Fixes",
@@ -3378,7 +3396,8 @@
           "category": "deprecation",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2283
     },
     {
       "name": "OpenSearch Dashboards Data Enhancements Cleanup",
@@ -3392,7 +3411,8 @@
           "category": "deprecation",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2284
     },
     {
       "name": "Theme & Dark Mode Settings",
