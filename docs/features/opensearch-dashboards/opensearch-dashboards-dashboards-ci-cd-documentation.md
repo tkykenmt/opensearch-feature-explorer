@@ -99,6 +99,7 @@ For Cypress testing, an alternative Docker development environment is available:
 ## Change History
 
 - **v3.0.0** (2025-05-06): CI/CD hardening, Discover 2.0 documentation, Docker development environment, pre-commit hooks for developer docs
+- **v2.16.0** (2024-08-06): Skip running tests for CODEOWNERS file changes
 
 
 ## References
@@ -118,3 +119,4 @@ For Cypress testing, an alternative Docker development environment is available:
 | v3.0.0 | [#9467](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9467) | Add Joey Liu as maintainer | [#295](https://github.com/opensearch-project/.github/issues/295) |
 | v3.0.0 | [#9525](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9525) | Getting started with Discover 2.0 |   |
 | v3.0.0 | [#6585](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6585) | Pre-commit hook for developer docs | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
+| v2.16.0 | [#7197](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7197) | Skip running tests for CODEOWNERS changes |   |
