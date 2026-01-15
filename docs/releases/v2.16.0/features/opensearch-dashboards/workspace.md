@@ -6,103 +6,95 @@ tags:
 
 ## Summary
 
-Workspace feature enhancements and bug fixes in OpenSearch Dashboards v2.16.0, including new home page get started cards, admin-only workspace creation controls, enriched breadcrumbs with workspace context, and fixes for saved objects access control and name duplication validation.
+OpenSearch Dashboards v2.16.0 introduces significant enhancements to the Workspace feature, including use case-based workspace configuration, data source assignment, workspace detail pages, and improved UI components. This release focuses on making workspaces more functional and user-friendly with better navigation, admin controls, and data source integration.
 
 ## Details
 
 ### What's New in v2.16.0
 
-This release includes 3 feature enhancements and 6 bug fixes for the Workspace feature:
+#### Use Case System
+- Added use case selector to workspace form, replacing the previous feature selector
+- Workspaces can now be configured with specific use cases (Observability, Security Analytics, Search, Essentials, or All)
+- Use cases determine which features and navigation items are available within a workspace
+- Added "All use case" option allowing access to all features
 
-#### Feature Enhancements
+#### Data Source Integration
+- Data sources can now be assigned to workspaces during creation and update
+- Added `addToWorkspaces` and `deleteFromWorkspaces` methods to saved object client
+- Workspace-level default data source support
+- Data source management recovered within workspace context
+- Non-dashboard admins cannot see data source selection panel
 
-| Feature | Description |
-|---------|-------------|
-| Get started cards | Four new get started cards registered on the home page when workspace is enabled |
-| Admin-only workspace creation | Create workspace button hidden for non-dashboard admin users in workspace menu and list |
-| Enriched breadcrumbs | Breadcrumbs now include workspace name and use case context for better navigation |
+#### Workspace Detail Page
+- New dedicated workspace detail page with Overview, Settings, and Collaborators tabs
+- Users can update workspace settings directly from the detail page
+- Navigation to detail page from workspace list via edit button or workspace name click
 
-#### Bug Fixes
+#### UI Improvements
+- Refactored workspace form UI with improved layout
+- Changed description field from input to textarea
+- Refactored workspace picker UI
+- Workspace list card registered on home page
+- Recent items now comply with workspace context
+- Case-insensitive field name search filter
 
-| Fix | Description |
-|-----|-------------|
-| Saved objects access restriction | Non-dashboard admin users can only access saved objects within their permitted workspaces |
-| Name duplication check | Workspace name duplication check now uses exact match instead of partial match |
-| Data source preservation | Data sources are now unassigned before workspace deletion, preventing accidental removal |
-| Navigation fix | Clicking workspaces with "all use case" now correctly navigates to the workspace detail page |
-| Permission validation | Added permission validation on workspace detail page to prevent duplicate user ID entries |
-| Bulk get API fix | Added `workspaces` and `permissions` fields to saved objects `_bulk_get` response |
+#### Admin Controls
+- Dashboard admin flag added to capabilities service
+- Admin-only controls for workspace management
+- Configuration via `opensearchDashboards.dashboardAdmin.users` and `opensearchDashboards.dashboardAdmin.groups`
+
+#### Architecture Changes
+- Deleted virtual global workspace concept
+- Only OSD admin users can see legacy saved objects not belonging to any workspace
+- Registered nav groups used as workspace use cases
+- Workspace settings registered under setup and settings
 
 ### Technical Changes
 
-#### Get Started Cards on Home Page
-
-When workspace is enabled with the new home page, four get started cards are registered to help users onboard:
-
+#### Configuration
 ```yaml
-# Enable in opensearch_dashboards.yml
 workspace.enabled: true
-uiSettings:
-  overrides:
-    "home:useNewHomePage": true
+opensearchDashboards.dashboardAdmin.users: ['admin']
+opensearchDashboards.dashboardAdmin.groups: ['dashboard_admin']
+savedObjects.permission.enabled: true
 ```
 
-#### Admin-Only Workspace Creation
+#### Saved Object Client Extensions
+```typescript
+// New methods for data source assignment
+savedObjectsClient.addToWorkspaces(objects, workspaces);
+savedObjectsClient.deleteFromWorkspaces(objects, workspaces);
 
-Only dashboard admin users can create workspaces. The create workspace button is hidden in both the workspace picker menu and workspace list page for non-admin users.
-
-```yaml
-# Configure dashboard admin users
-opensearchDashboards.dashboardAdmin.users: ['admin_user']
+// Updated methods support workspace field updates
+savedObjectsClient.update(type, id, attributes, { workspaces });
+savedObjectsClient.bulkUpdate(objects);
 ```
-
-#### Enriched Breadcrumbs
-
-Breadcrumbs are now enriched with workspace and use case context:
-- When workspace is enabled: breadcrumbs show workspace name and its use case
-- When workspace is disabled: breadcrumbs show current nav group
-
-#### Saved Objects Access Restriction
-
-Non-dashboard admin users are restricted to accessing saved objects only within their permitted workspaces:
-- `options.workspaces`: Non-permitted workspaces are filtered out
-- `options.ACLSearchParams`: Principals are replaced with the requesting user
-- Default ACLSearchParams are used if no workspace or ACL params provided
-
-#### Workspace Name Duplication Check
-
-The name duplication check now uses exact match by enclosing the workspace name in double quotes:
-
-```json
-{
-  "query": {
-    "simple_query_string": {
-      "query": "\"demo workspace\"",
-      "fields": ["workspace.name"]
-    }
-  }
-}
-```
-
-This converts to a `TermQuery` for exact matching on the `keyword` field type.
 
 ## Limitations
 
-- Dashboard admin configuration requires the security plugin to be properly configured
-- Saved objects access restriction only applies when workspace is enabled
-- Get started cards only appear with the new home page enabled
+- Multi-tenancy must be disabled when using workspaces
+- Workspace use case can only be one specific use case or "All use case"
+- Non-admin users cannot see legacy saved objects when workspace is enabled
 
 ## References
 
 ### Pull Requests
 | PR | Description | Related Issue |
 |----|-------------|---------------|
-| [#7333](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7333) | Register four get started cards in home page | [#7332](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7332) |
-| [#7357](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7357) | Hide create workspace button for non dashboard admin | [#7358](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7358) |
-| [#7360](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7360) | Enrich breadcrumbs by workspace and use case | [#7359](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7359) |
-| [#7125](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7125) | Restrict saved objects finding when workspace enabled | [#7127](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7127) |
-| [#6776](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6776) | Fix workspace name duplication check | [#6480](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6480) |
-| [#7279](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7279) | Unassign data source before deleteByWorkspace |   |
-| [#7405](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7405) | Navigate to detail page when clicking all use case workspace |   |
-| [#7435](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7435) | Add permission validation at workspace detail page |   |
-| [#7565](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7565) | Add workspaces and permissions fields into saved objects _bulk_get response | [#7564](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7564) |
+| [#6887](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6887) | Add use cases to workspace form | [#6902](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6902) |
+| [#6907](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6907) | Change description field to textarea |  |
+| [#7045](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7045) | Refactor workspace picker UI |  |
+| [#7101](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7101) | Support data source assignment in workspace |  |
+| [#7103](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7103) | Capabilities service add dashboard admin flag | [#7102](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7102) |
+| [#7115](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7115) | Comply recent items with workspace |  |
+| [#7133](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7133) | Refactor workspace form UI |  |
+| [#7165](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7165) | Delete the virtual global workspace | [#7095](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7095) |
+| [#7188](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7188) | Support workspace level default data source |  |
+| [#7213](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7213) | Hide select data source panel for non dashboard admin |  |
+| [#7221](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7221) | Use registered nav group as workspace use case | [#7222](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7222) |
+| [#7241](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7241) | Support workspace detail page | [#7240](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7240) |
+| [#7242](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7242) | Register workspace settings under setup and settings |  |
+| [#7247](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7247) | Register workspace list card into home page |  |
+| [#7296](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7296) | Recover data source management in workspace |  |
+| [#7318](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7318) | Add "All use case" option to workspace form | [#7319](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7319) |
+| [#6759](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6759) | Make field name search filter case insensitive |  |
