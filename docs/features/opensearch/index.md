@@ -105,6 +105,7 @@
 | [opensearch-lucene-similarity](opensearch-lucene-similarity.md) | Lucene Similarity |
 | [opensearch-lucene-upgrade](opensearch-lucene-upgrade.md) | Lucene Upgrade |
 | [opensearch-mapping-transformer](opensearch-mapping-transformer.md) | Mapping Transformer |
+| [opensearch-masterservice-logging](opensearch-masterservice-logging.md) | MasterService Logging Optimization |
 | [opensearch-match-only-text](opensearch-match-only-text.md) | Match Only Text Field |
 | [opensearch-maven-snapshots-publishing](opensearch-maven-snapshots-publishing.md) | Maven Snapshots Publishing |
 | [opensearch-merge-segment-settings](opensearch-merge-segment-settings.md) | Merge & Segment Settings |

@@ -4,6 +4,7 @@
 
 ### opensearch
 - ClusterManager Optimizations
+- Logging Improvements
 - @InternalApi Annotation
 - Cluster Stats Optimization
 - Search Thread Resource Usage
