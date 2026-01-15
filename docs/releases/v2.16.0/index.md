@@ -4,6 +4,7 @@
 
 ### opensearch
 - FS Info Reporting Fix
+- Multi-Part Upload Fix
 - System Index Warning
 
 ### opensearch-dashboards
