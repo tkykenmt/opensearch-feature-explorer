@@ -150,7 +150,7 @@ POST /_plugins/_query/_datasources
 - **v3.0.0** (2025-05-13): Added MDS support for batch concurrent search (`_msearch`); fixed dataset selector column header; added URL trimming for data source creation
 - **v2.18.0** (2024-11-05): Added MDS support to Integrations plugin; users can install and manage integrations across multiple connected clusters
 - **v2.17.0** (2024-09-17): Reporting plugin de-registers when MDS enabled; Notifications persists dataSourceId in URL for new navigation
-- **v2.16.0** (2024-08-06): Added `datasourceversion` and `installedplugins` fields to `DataSourceView` returns for version decoupling support; fixed filter logic to apply after fetching data source details; fixed endpoint validation by passing request when creating datasource client; fixed default data source not being set when creating first data source
+- **v2.16.0** (2024-08-06): Added `datasourceversion` and `installedplugins` fields to `DataSourceView` returns for version decoupling support; fixed filter logic to apply after fetching data source details; fixed endpoint validation by passing request when creating datasource client; fixed default data source not being set when creating first data source; fixed aggregated view padding inconsistencies; improved test coverage for DataSourceAggregatedView and custom database icons
 - **v2.15.0** (2024-06-25): Added MDS support to Security Analytics and Alerting plugins
 - **v2.14.0** (2024-05-02): Initial MDS support added to multiple plugins including Notifications, Index Management, Anomaly Detection, Security, Maps, Machine Learning, and Search Relevance
 
@@ -173,6 +173,8 @@ POST /_plugins/_query/_datasources
 | v2.16.0 | [#7420](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7420) | OpenSearch-Dashboards | Add data source version and installed plugins in DataSourceView | [#7099](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7099) |
 | v2.16.0 | [#6822](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6822) | OpenSearch-Dashboards | Fix endpoint validation by passing request when creating datasource client |   |
 | v2.16.0 | [#6908](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6908) | OpenSearch-Dashboards | Fix default data source not being set when creating data source | [#6835](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6835) |
+| v2.16.0 | [#6715](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6715) | OpenSearch-Dashboards | Adjust the padding size for aggregated view |   |
+| v2.16.0 | [#6729](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/6729) | OpenSearch-Dashboards | Add more test for icon and aggregated view | [#6723](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6723), [#6724](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/6724) |
 | v2.14.0 | [#186](https://github.com/opensearch-project/dashboards-notifications/pull/186) | dashboards-notifications | Initial MDS support in Notifications |   |
 
 ### Issues (Design / RFC)

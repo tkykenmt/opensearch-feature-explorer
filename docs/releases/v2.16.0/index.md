@@ -3,6 +3,7 @@
 ## Features
 
 ### opensearch-dashboards
+- Aggregated View Fixes
 - Breadcrumb & Router Fixes
 - OSD Availability
 - Build & Compilation Fixes
