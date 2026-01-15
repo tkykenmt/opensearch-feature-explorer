@@ -132,6 +132,8 @@ POST _bulk
 - **v3.4.0** (2026-01-14): Added proper `error_trace` parameter support for stack traces in bulk error responses
 - **v3.4.0** (2026-01-14): Fixed `indices` property not being initialized during deserialization
 - **v3.0.0** (2025-05-13): Removed deprecated `batch_size` parameter; batch processing is now automatic
+- **v2.16.0** (2024-08-06): Deprecated `batch_size` parameter; default changed to `Integer.MAX_VALUE` for automatic batch processing
+- **v2.16.0** (2024-08-06): Fixed bulk upsert to honor `default_pipeline` and `final_pipeline` from index templates during auto-index creation
 - **v2.14.0** (2024-04-30): Added `batch_size` parameter for ingest pipeline batch processing (deprecated)
 - **v2.9.0** (2023-07-18): Enforced 512 byte document ID limit in bulk updates
 - **v1.0.0** (2021-07-12): Initial implementation
@@ -149,8 +151,10 @@ POST _bulk
 | v3.4.0 | [#19985](https://github.com/opensearch-project/OpenSearch/pull/19985) | Implement error_trace parameter for bulk requests | [#19945](https://github.com/opensearch-project/OpenSearch/issues/19945) |
 | v3.4.0 | [#20132](https://github.com/opensearch-project/OpenSearch/pull/20132) | Fix `indices` property initialization during deserialization |   |
 | v3.0.0 | [#17801](https://github.com/opensearch-project/OpenSearch/pull/17801) | Remove deprecated `batch_size` parameter | [#14283](https://github.com/opensearch-project/OpenSearch/issues/14283) |
-| v2.9.0 | [#8039](https://github.com/opensearch-project/OpenSearch/pull/8039) | Enforce 512 byte document ID limit | [#6595](https://github.com/opensearch-project/OpenSearch/issues/6595) |
+| v2.16.0 | [#14725](https://github.com/opensearch-project/OpenSearch/pull/14725) | Deprecate `batch_size` parameter, change default to MAX_VALUE | [#14283](https://github.com/opensearch-project/OpenSearch/issues/14283) |
+| v2.16.0 | [#12891](https://github.com/opensearch-project/OpenSearch/pull/12891) | Fix bulk upsert pipeline resolution for auto-created indexes | [#12888](https://github.com/opensearch-project/OpenSearch/issues/12888) |
 | v2.14.0 | [#12457](https://github.com/opensearch-project/OpenSearch/pull/12457) | Add batch processing for ingest processors |   |
+| v2.9.0 | [#8039](https://github.com/opensearch-project/OpenSearch/pull/8039) | Enforce 512 byte document ID limit | [#6595](https://github.com/opensearch-project/OpenSearch/issues/6595) |
 
 ### Issues (Design / RFC)
 - [Issue #19945](https://github.com/opensearch-project/OpenSearch/issues/19945): Bug report - Bulk API ignores error_trace query parameter
