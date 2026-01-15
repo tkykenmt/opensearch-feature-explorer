@@ -113,6 +113,7 @@ The Reporting plugin integrates with OpenSearch Security:
 - **v3.3.0** (2026-01-11): Security fix for CVE-2025-7783
 - **v3.2.0** (2026-01-11): Fixed system index creation permissions and tenant URL parsing
 - **v3.1.0** (2025-06-13): Version increment and release notes maintenance
+- **v2.16.0** (2024-08-06): Registered system indices through `SystemIndexPlugin.getSystemIndexDescriptors` for formal system index protection
 
 
 ## References
@@ -132,6 +133,7 @@ The Reporting plugin integrates with OpenSearch Security:
 | v3.3.0 | [#640](https://github.com/opensearch-project/reporting/pull/640) | Fixing CVE-2025-7783 |   |
 | v3.2.0 | [#1108](https://github.com/opensearch-project/reporting/pull/1108) | Create report indices in system context to avoid permission issues | [#998](https://github.com/opensearch-project/reporting/issues/998) |
 | v3.2.0 | [#599](https://github.com/opensearch-project/dashboards-reporting/pull/599) | Fix tenant URL parsing when generating reports from Discover | [#535](https://github.com/opensearch-project/dashboards-reporting/issues/535) |
+| v2.16.0 | [#1009](https://github.com/opensearch-project/reporting/pull/1009) | Register system index descriptors through SystemIndexPlugin | [security#4439](https://github.com/opensearch-project/security/issues/4439) |
 
 ### Issues (Design / RFC)
 - [Issue #998](https://github.com/opensearch-project/reporting/issues/998): Permission issue when creating reporting indices
