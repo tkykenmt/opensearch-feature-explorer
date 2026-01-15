@@ -7,5 +7,6 @@
 - Build & Compilation Fixes
 - CI/CD Improvements
 - Discover Fixes
+- Look & Feel UI Improvements
 - Maintainer Updates
 - OpenAPI Specification
