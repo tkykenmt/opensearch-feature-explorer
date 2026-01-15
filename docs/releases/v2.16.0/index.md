@@ -26,6 +26,7 @@
 - Ingest Processor Improvements
 - Lucene Upgrade
 - Query Categorization Removal
+- Remote Store
 - Repository Verification
 - Search Pipelines
 - Tiered Caching Performance Improvement
