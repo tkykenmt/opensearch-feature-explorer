@@ -122,6 +122,7 @@ opensearch-reporting-cli \
 - **v3.0.0** (2025-05-20): Fixed date range handling in report generation, made time parameters optional, fixed popover UI positioning
 - **v2.19.0** (2025-02-18): Sanitize markdown in header/footer preview, fixed CSV nested fields parsing, hide reporting button when MDS enabled in notebooks
 - **v2.18.0** (2024-11-12): Fixed missing EUI component imports in report_settings component
+- **v2.16.0** (2024-08-06): Security dependency updates - jsdom v18 (CVE-2024-37890), ws v7.5.10 (CVE-2024-37890), braces v3.0.3 (CVE-2024-4068)
 
 
 ## References
@@ -143,6 +144,9 @@ opensearch-reporting-cli \
 | v2.19.0 | [#502](https://github.com/opensearch-project/dashboards-reporting/pull/502) | CSV report generation had missing nested fields | [#375](https://github.com/opensearch-project/dashboards-reporting/issues/375) |
 | v2.19.0 | [dashboards-observability#2278](https://github.com/opensearch-project/dashboards-observability/pull/2278) | Updated notebooks reporting button render |   |
 | v2.18.0 | [#464](https://github.com/opensearch-project/dashboards-reporting/pull/464) | Fix missing imports in report_settings |   |
+| v2.16.0 | [#381](https://github.com/opensearch-project/dashboards-reporting/pull/381) | Update dependency jsdom to v18 | [#377](https://github.com/opensearch-project/dashboards-reporting/issues/377) |
+| v2.16.0 | [#385](https://github.com/opensearch-project/dashboards-reporting/pull/385) | Update dependency ws to v7.5.10 | [#377](https://github.com/opensearch-project/dashboards-reporting/issues/377) |
+| v2.16.0 | [#388](https://github.com/opensearch-project/dashboards-reporting/pull/388) | Add braces v3.0.3 to resolution | CVE-2024-4068 |
 
 ### Issues (Design / RFC)
 - [Issue #308](https://github.com/opensearch-project/dashboards-reporting/issues/308): Undefined date throws error while creating CSV
