@@ -170,6 +170,7 @@ GET /products-vectors/_search
 ## Change History
 
 - **v2.18.0** (2024-11-05): Default engine changed to FAISS, approximate threshold updated to 15K, rescoring improvements, memory management enhancements
+- **v2.16.0** (2024-08-06): Serialization optimization - switched from byte streams to byte refs, improving exact search performance by 15-20%
 
 
 ## References
@@ -195,6 +196,7 @@ GET /products-vectors/_search
 | v2.18.0 | [#1946](https://github.com/opensearch-project/k-NN/pull/1946) | DocValuesProducers for memory release | [#1885](https://github.com/opensearch-project/k-NN/issues/1885) |
 | v2.18.0 | [#2147](https://github.com/opensearch-project/k-NN/pull/2147) | KNN80DocValues fix |   |
 | v2.18.0 | [#2183](https://github.com/opensearch-project/k-NN/pull/2183) | Binary quantized vector score fix |   |
+| v2.16.0 | [#1825](https://github.com/opensearch-project/k-NN/pull/1825) | Switch from byte stream to byte ref for serde | [#1736](https://github.com/opensearch-project/k-NN/issues/1736) |
 
 ### Issues (Design / RFC)
 - [Issue #1885](https://github.com/opensearch-project/k-NN/issues/1885): Memory release improvements

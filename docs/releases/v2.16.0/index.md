@@ -33,6 +33,7 @@
 ### k-nn
 - Faiss Updates
 - k-NN Build & Patches
+- k-NN Serialization
 - k-NN Vector Streaming & Memory Bug Fixes
 
 ### ml-commons
