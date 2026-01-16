@@ -13,6 +13,7 @@
 
 ### k-nn
 - Faiss Updates
+- k-NN Build & Patches
 
 ### ml-commons
 - Model & Connector Enhancements
