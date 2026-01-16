@@ -132,7 +132,7 @@ When `skip_validating_missing_parameters` is `true`, the `${parameters.role}` pl
 
 - **v3.3.0** (2026-01-11): Added parameter passing support for predict operations via remote connectors; moved `MLHttpClientFactory` to common module for broader accessibility
 - **v2.17.0** (2024-09-17): Added `skip_validating_missing_parameters` parameter to allow bypassing payload validation for unfilled parameter placeholders
-
+- **v2.16.0** (2024-08-06): Bug fixes - Added StashContext to connector getter to fix permission issues; connector update now merges existing parameters instead of replacing; added throttling/guardrail logging for improved observability
 
 ## References
 
@@ -147,6 +147,9 @@ When `skip_validating_missing_parameters` is `true`, the `${parameters.role}` pl
 | v3.3.0 | [#4175](https://github.com/opensearch-project/ml-commons/pull/4175) | Move HttpClientFactory to common to expose to other components |   |
 | v2.17.0 | [#2830](https://github.com/opensearch-project/ml-commons/pull/2830) | Backport: Support skip_validating_missing_parameters in connector |   |
 | v2.17.0 | [#2812](https://github.com/opensearch-project/ml-commons/pull/2812) | Support skip_validating_missing_parameters in connector | [#2712](https://github.com/opensearch-project/ml-commons/issues/2712) |
+| v2.16.0 | [#2742](https://github.com/opensearch-project/ml-commons/pull/2742) | Add StashContext to connector getter | - |
+| v2.16.0 | [#2784](https://github.com/opensearch-project/ml-commons/pull/2784) | Merge existing parameters when updating connectors | [#2502](https://github.com/opensearch-project/ml-commons/issues/2502) |
+| v2.16.0 | [#2725](https://github.com/opensearch-project/ml-commons/pull/2725) | Add logging for throttling and guardrail | - |
 
 ### Issues (Design / RFC)
 - [Issue #4105](https://github.com/opensearch-project/ml-commons/issues/4105): Feature request for parameter passing in predict API
