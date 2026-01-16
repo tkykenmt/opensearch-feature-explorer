@@ -164,6 +164,7 @@ POST _plugins/_alerting/monitors
 - **v3.0.0** (2025): Bug fixes for bucket selector aggregation, Java Agent migration, and dashboard subfield selection
 - **v2.18.0** (2024-11-05): Doc-level monitor improvements including dynamic query index deletion (`delete_query_index_in_every_run` flag), query index lifecycle optimization, bucket-level monitor performance optimization for time-series indices, dashboard UX fit-and-finish updates, MDS compatibility fixes
 - **v2.17.0** (2024-09-17): Monitor lock renewal fix, distribution build fixes, workspace navigation fix, trigger name validation fix, alerts card rendering fix, cypress and unit test fixes
+- **v2.16.0** (2024-08-06): Build script fixes to re-enable plugin zip publishing and ensure only alerting plugin (not sample remote monitor plugin) is included in release artifacts
 
 
 ## References
@@ -220,6 +221,8 @@ POST _plugins/_alerting/monitors
 | v2.17.0 | [#1040](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1040) | Fix failed UT of AddAlertingMonitor.test.js |   |
 | v2.17.0 | [#794](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/794) | Fix trigger name validation | [#671](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/671) |
 | v2.17.0 | [#1073](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1073) | Fix alerts card in all-use case overview page |   |
+| v2.16.0 | [#1604](https://github.com/opensearch-project/alerting/pull/1604) | Fix pluginzippublish issue - re-enable publishing zip to staging repo | [#1599](https://github.com/opensearch-project/alerting/issues/1599) |
+| v2.16.0 | [#1605](https://github.com/opensearch-project/alerting/pull/1605) | Fixing build script to only publish alerting zip | [#1599](https://github.com/opensearch-project/alerting/issues/1599) |
 
 ### Issues (Design / RFC)
 - [Issue #1829](https://github.com/opensearch-project/alerting/issues/1829): Alerting does not work with DLS parameter substitution
@@ -227,4 +230,5 @@ POST _plugins/_alerting/monitors
 - [Issue #1853](https://github.com/opensearch-project/alerting/issues/1853): Timebox doc level monitor to avoid duplicate executions
 - [Issue #1859](https://github.com/opensearch-project/alerting/issues/1859): Change publish findings to accept a list of findings
 - [Issue #1617](https://github.com/opensearch-project/alerting/issues/1617): Distribution build issue
+- [Issue #1599](https://github.com/opensearch-project/alerting/issues/1599): Build failure due to missing staging repo directory
 - [Issue #671](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/671): Trigger name validation issue

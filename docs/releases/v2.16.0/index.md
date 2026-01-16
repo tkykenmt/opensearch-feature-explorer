@@ -2,6 +2,9 @@
 
 ## Features
 
+### alerting
+- Alerting Build Fixes
+
 ### anomaly-detection
 - Anomaly Detection JDK21 Upgrade
 - PR Template Updates
