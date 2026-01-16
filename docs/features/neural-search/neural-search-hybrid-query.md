@@ -217,6 +217,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - **v2.19.0** (2025-02-18): Pagination support with `pagination_depth` parameter, Reciprocal Rank Fusion (RRF) via `score-ranker-processor`, explainability with `explain` flag and `explanation_response_processor`; Bug fixes for inconsistent scoring with two-phase iterators and sorted hybrid query field mismatch
 - **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
+- **v2.16.0** (2024-08-06): Fixed missing results when concurrent segment search is enabled on shards with 6+ segments
 - **v2.11.0** (2023-10-16): Initial implementation of hybrid search
 
 
@@ -271,6 +272,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v2.18.0 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query | [#955](https://github.com/opensearch-project/neural-search/issues/955) |
 | v2.17.0 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removed misleading pagination code, added clear error |   |
 | v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results | [#875](https://github.com/opensearch-project/neural-search/issues/875) |
+| v2.16.0 | [#800](https://github.com/opensearch-project/neural-search/pull/800) | Fix for missing HybridQuery results when concurrent segment search is enabled | [#799](https://github.com/opensearch-project/neural-search/issues/799) |
 | v2.11.0 | - | Initial implementation of hybrid search |   |
 
 ### Issues (Design / RFC)

@@ -29,6 +29,9 @@
 - MDS Version Decoupling (Plugins)
 - Version Bumps & Release Notes
 
+### neural-search
+- Neural Search Bugfixes
+
 ### opensearch
 - Fingerprint Ingest Processor
 - Aggregation Optimizations

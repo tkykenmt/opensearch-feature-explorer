@@ -246,6 +246,7 @@ GET /my-sparse-index/_search
 - **v3.1.0**: Added validation to prevent specifying both model_id and analyzer simultaneously
 - **v3.0.0** (2025-03-11): Added analyzer-based neural sparse query support, enabling tokenization without ML Commons models
 - **v2.19.0** (2025-01-14): Added pruning support for sparse vectors with four strategies (`top_k`, `max_ratio`, `alpha_mass`, `abs_value`) in both ingestion and two-phase search
+- **v2.16.0** (2024-08-06): Added BWC tests for neural sparse query two-phase search processor
 - **v2.11.0**: Initial implementation of neural sparse query with model-based and raw token support
 
 
@@ -263,6 +264,7 @@ GET /my-sparse-index/_search
 | v3.1.0 | [#1359](https://github.com/opensearch-project/neural-search/pull/1359) | Validate model_id and analyzer mutual exclusivity |   |
 | v3.0.0 | [#1088](https://github.com/opensearch-project/neural-search/pull/1088) | Implement analyzer-based neural sparse query |   |
 | v2.19.0 | [#988](https://github.com/opensearch-project/neural-search/pull/988) | Implement pruning for neural sparse ingestion and two-phase search | [#946](https://github.com/opensearch-project/neural-search/issues/946) |
+| v2.16.0 | [#777](https://github.com/opensearch-project/neural-search/pull/777) | Add backward test cases for neural sparse two phase processor | [#646](https://github.com/opensearch-project/neural-search/issues/646) |
 | v2.11.0 | - | Initial neural sparse query implementation |   |
 
 ### Issues (Design / RFC)
