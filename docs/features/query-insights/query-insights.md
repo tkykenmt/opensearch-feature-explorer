@@ -319,6 +319,8 @@ GET /_insights/live_queries?sort=latency&size=5
 | v2.17.0 | [#8139](https://github.com/opensearch-project/documentation-website/pull/8139) | Update GET top N api documentation | [#80](https://github.com/opensearch-project/documentation-website/issues/80) |
 | v2.17.0 | [#51](https://github.com/opensearch-project/query-insights/pull/51) | Add code hygiene checks (Spotless, Checkstyle) | [#7](https://github.com/opensearch-project/query-insights/issues/7) |
 | v2.17.0 | [#90](https://github.com/opensearch-project/query-insights/pull/90) | Fix snapshot publishing configuration | [#72](https://github.com/opensearch-project/query-insights/issues/72) |
+| v2.16.0 | [#30](https://github.com/opensearch-project/query-insights/pull/30) | Increment latency, cpu and memory histograms for query/aggregation/sort query types | [#14588](https://github.com/opensearch-project/OpenSearch/issues/14588) |
+| v2.16.0 | [#41](https://github.com/opensearch-project/query-insights/pull/41) | Always populate resource usage metrics for categorization | [#40](https://github.com/opensearch-project/query-insights/issues/40) |
 | v2.16.0 | [#13](https://github.com/opensearch-project/query-insights/pull/13) | Sync bug fixes from core (top_n_size validation, stream serialization) | - |
 | v2.16.0 | [#16](https://github.com/opensearch-project/query-insights/pull/16) | Move query categorization changes to plugin | [#14527](https://github.com/opensearch-project/OpenSearch/issues/14527) |
 | v2.16.0 | [#14759](https://github.com/opensearch-project/OpenSearch/pull/14759) | Remove query categorization from core | [#14527](https://github.com/opensearch-project/OpenSearch/issues/14527) |
