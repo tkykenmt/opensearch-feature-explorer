@@ -124,6 +124,9 @@
 ### notifications
 - Version Bumps & Release Notes
 
+### performance-analyzer
+- Performance Analyzer Dependencies
+
 ### query-insights
 - Query Insights Plugin Setup
 
