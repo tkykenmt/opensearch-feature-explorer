@@ -121,6 +121,7 @@ googleJavaFormat {
 ## Change History
 
 - **v3.4.0** (2026-01-11): Major CI/CD improvements including Gradle 9.2.0, JDK 25, BWC test splitting, query timeouts, and maven snapshots publishing
+- **v2.16.0** (2024-08-06): Fixed checkout action failures with Node16 compatibility; restored MacOS workflows using macos-13 runner
 
 
 ## References
@@ -139,6 +140,8 @@ googleJavaFormat {
 | v3.4.0 | [#4598](https://github.com/opensearch-project/sql/pull/4598) | Onboard async query core to maven snapshots | [#5360](https://github.com/opensearch-project/opensearch-build/issues/5360) |
 | v3.4.0 | [#4588](https://github.com/opensearch-project/sql/pull/4588) | Onboard maven snapshots publishing to S3 | [#5360](https://github.com/opensearch-project/opensearch-build/issues/5360) |
 | v3.4.0 | [#4484](https://github.com/opensearch-project/sql/pull/4484) | Publish internal modules for downstream reuse |   |
+| v2.16.0 | [#2819](https://github.com/opensearch-project/sql/pull/2819) | Fix checkout action failure | [#2807](https://github.com/opensearch-project/sql/pull/2807) |
+| v2.16.0 | [#2831](https://github.com/opensearch-project/sql/pull/2831) | Add MacOS workflows back and fix artifact not found | [#2662](https://github.com/opensearch-project/sql/pull/2662) |
 
 ### Issues (Design / RFC)
 - [Issue #4722](https://github.com/opensearch-project/sql/issues/4722): Gradle upgrade tracking
