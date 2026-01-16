@@ -10,6 +10,7 @@
 
 ### ml-commons
 - Model & Connector Enhancements
+- System Index & Dependencies
 
 ### opensearch
 - Fingerprint Ingest Processor
