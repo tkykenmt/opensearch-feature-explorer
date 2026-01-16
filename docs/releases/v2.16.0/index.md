@@ -2,6 +2,9 @@
 
 ## Features
 
+### anomaly-detection
+- PR Template Updates
+
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 

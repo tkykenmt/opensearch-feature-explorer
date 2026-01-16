@@ -92,6 +92,7 @@ By submitting this pull request, I confirm that my contribution is made under th
 ## Change History
 
 - **v2.17.0** (2024-09-17): Added API specification checkbox to PR template
+- **v2.16.0** (2024-08-06): Added PR template with API spec checkbox to anomaly-detection repository
 
 ## References
 
@@ -103,6 +104,7 @@ By submitting this pull request, I confirm that my contribution is made under th
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.17.0 | [#696](https://github.com/opensearch-project/common-utils/pull/696) | Add API spec checkbox to common-utils | [#387](https://github.com/opensearch-project/opensearch-api-specification/issues/387) |
+| v2.16.0 | [#1262](https://github.com/opensearch-project/anomaly-detection/pull/1262) | Add PR template with API spec checkbox to anomaly-detection | [#387](https://github.com/opensearch-project/opensearch-api-specification/issues/387) |
 
 ### Issues (Design / RFC)
 - [Issue #387](https://github.com/opensearch-project/opensearch-api-specification/issues/387): Original proposal for API spec checkbox
