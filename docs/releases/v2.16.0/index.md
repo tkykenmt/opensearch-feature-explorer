@@ -173,6 +173,7 @@
 
 ### security-analytics
 - Security Analytics Integration Tests
+- Threat Intel IOC & Source Config
 
 ### observability
 - Observability CVE Fixes
