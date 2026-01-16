@@ -171,6 +171,7 @@
 - Security Index Request Fixes
 - Security Build & Test Improvements
 - Security REST API Improvements
+- Security DLS/FLS & Privilege Evaluation
 
 ### security-analytics
 - Security Analytics Integration Tests
