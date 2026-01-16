@@ -8,7 +8,9 @@ Cumulative feature documentation across all versions.
 
 ## neural-search
 
+- Batch Ingestion
 - Neural Search Enhancements
+- Neural Search Nested Field Mapping
 
 ## opensearch
 

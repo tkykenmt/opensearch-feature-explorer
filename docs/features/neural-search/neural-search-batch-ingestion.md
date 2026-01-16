@@ -128,7 +128,10 @@ PUT /_ingest/pipeline/sparse-pipeline
   - Removed batch_size from Bulk API test parameters
   - Updated BWC test infrastructure with cleaner version checks
   - Added batch_size parameter to pipeline configuration in tests
-- **v2.16.0** (2024-08-06): Batch size configuration moved from Bulk API to processor level; Added BWC tests for batch ingestion feature
+- **v2.16.0** (2024-08-06): InferenceProcessor inherits from AbstractBatchingProcessor
+  - Batch size configuration moved from Bulk API to processor level
+  - Added BWC tests for batch ingestion feature
+  - `text_embedding` and `sparse_encoding` processors now support `batch_size` parameter
 - **v2.14.0**: Initial batch ingestion feature introduced
 
  - Different feature: batch processing in ingest pipelines
@@ -147,6 +150,7 @@ PUT /_ingest/pipeline/sparse-pipeline
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v2.17.0 | [#852](https://github.com/opensearch-project/neural-search/pull/852) | Update tests to use batch_size in processor | [#14283](https://github.com/opensearch-project/neural-search/issues/14283) |
+| v2.16.0 | [#820](https://github.com/opensearch-project/neural-search/pull/820) | Use AbstractBatchingProcessor for InferenceProcessor | [OpenSearch#14283](https://github.com/opensearch-project/OpenSearch/issues/14283) |
 | v2.16.0 | [#769](https://github.com/opensearch-project/neural-search/pull/769) | Add BWC for batch ingestion | [#763](https://github.com/opensearch-project/neural-search/issues/763) |
 | v2.14.0 | - | Initial batch ingestion support |   |
 
