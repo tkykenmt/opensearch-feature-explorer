@@ -166,6 +166,7 @@
 ### security
 - Dependency Bumps
 - Security Plugin Maintenance
+- Security Index Request Fixes
 
 ### security-analytics
 - Security Analytics Integration Tests

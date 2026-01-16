@@ -179,7 +179,7 @@ config:
 - **v2.19.0** (2025-02-11): Bugfixes - Netty4HttpRequestHeaderVerifier now handles HTTP upgrade requests by accepting HttpRequest instead of DefaultHttpRequest; Infrastructure - JaCoCo report generation for integTestRemote task, RestHelper TLS configuration updated to use DefaultClientTlsStrategy
 - **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
 - **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal
-- **v2.16.0** (2024-08-06): Maintenance - removed unused Apache CXF dependency, Gradle 8.8→8.9 updates, code cleanup (unnecessary return statements), test framework modernization (Hamcrest matchers), ML roles refactoring, Security Analytics threat intel action support
+- **v2.16.0** (2024-08-06): Bugfixes - fixed NPE when getting metaFields from mapperService on close index request with FLS enabled; Maintenance - removed unused Apache CXF dependency, Gradle 8.8→8.9 updates, code cleanup (unnecessary return statements), test framework modernization (Hamcrest matchers), ML roles refactoring, Security Analytics threat intel action support
 
 
 ## References
@@ -260,6 +260,7 @@ config:
 | v2.17.0 | [#4611](https://github.com/opensearch-project/security/pull/4611) | Refactor security provider instantiation |   |
 | v2.17.0 | [#4653](https://github.com/opensearch-project/security/pull/4653) | Remove Log4j Strings utility usage |   |
 | v2.17.0 | [#4694](https://github.com/opensearch-project/security/pull/4694) | PluginSubject build fix |   |
+| v2.16.0 | [#4497](https://github.com/opensearch-project/security/pull/4497) | Fix NPE getting metaFields on close index request | [#4475](https://github.com/opensearch-project/security/issues/4475) |
 | v2.16.0 | [#4580](https://github.com/opensearch-project/security/pull/4580) | Remove unused Apache CXF dependency |   |
 | v2.16.0 | [#4558](https://github.com/opensearch-project/security/pull/4558) | Remove unnecessary return statements |   |
 | v2.16.0 | [#4553](https://github.com/opensearch-project/security/pull/4553) | Update Gradle to 8.9 |   |
