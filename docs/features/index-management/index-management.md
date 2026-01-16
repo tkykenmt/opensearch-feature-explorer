@@ -305,6 +305,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - **v3.0.0** (2025-05-06): Added ISM unfollow action for CCR, rollup target index settings, CVE fixes, Java Agent migration
 - **v2.18.0** (2024-11-05): Added `plugins.rollup.search.search_source_indices` setting to allow searching non-rollup and rollup indices together, UX improvements (refresh buttons, section header styling), transform API input validation, fixed snapshot status detection, fixed snapshot policy button reload, fixed data source initialization
 - **v2.17.0** (2024-09-17): Performance optimization for skip execution check using cluster service instead of NodesInfoRequest, security integration test fixes
+- **v2.16.0** (2024-08-06): Build fixes - added SPI Maven publishing support, updated GitHub Actions to Java 21, fixed CVE-2024-4068 (braces package) in dashboards plugin
 
 
 ## References
@@ -344,6 +345,9 @@ PUT _plugins/_rollup/jobs/sample_rollup
 | v2.18.0 | [#1189](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1189) | Data source initialization fix |   |
 | v2.17.0 | [#1219](https://github.com/opensearch-project/index-management/pull/1219) | Skip execution optimization using cluster service | [#1075](https://github.com/opensearch-project/index-management/issues/1075) |
 | v2.17.0 | [#1222](https://github.com/opensearch-project/index-management/pull/1222) | Security integration test fixes |   |
+| v2.16.0 | [#1207](https://github.com/opensearch-project/index-management/pull/1207) | Add publish in spi build.gradle |   |
+| v2.16.0 | [#1208](https://github.com/opensearch-project/index-management/pull/1208) | Fix github action |   |
+| v2.16.0 | [#1091](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1091) | Bumped up braces package version to address CVE-2024-4068 |   |
 
 ### Issues (Design / RFC)
 - [Issue #375](https://github.com/opensearch-project/index-management/issues/375): Feature request for ISM template exclusion patterns

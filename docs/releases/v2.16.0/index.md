@@ -5,6 +5,9 @@
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 
+### index-management
+- Index Management Build Fixes
+
 ### k-nn
 - Faiss Updates
 
