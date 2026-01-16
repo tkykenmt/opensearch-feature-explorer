@@ -15,6 +15,9 @@
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 
+### dashboards-query-workbench
+- Query Workbench Dev Tools Migration
+
 ### dashboards-reporting
 - Reporting Dependency Updates
 
@@ -155,6 +158,7 @@
 ### query-insights
 - Query Insights Plugin Setup
 - Query Plugin Fixes
+- Query Insights & Workbench Enhancements
 
 ### reporting
 - System Index Descriptors Registration
