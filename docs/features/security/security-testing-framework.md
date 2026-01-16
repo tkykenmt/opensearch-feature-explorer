@@ -131,6 +131,7 @@ public void testCreateAndShareResource() throws Exception {
 
 - **v3.1.0** (2025-05-13): Use extendedPlugins in integrationTest framework for sample resource plugin testing, refactor resource sharing to use in-memory updates
 - **v3.0.0** (2025-03-25): Added ConfigurationRepository tests, FLS/field masking tests, refactored InternalAuditLogTest to use Awaitility, migrated packages from com.amazon.dlic to org.opensearch.security
+- **v2.16.0** (2024-08-06): Fixed flaky integration tests in AbstractDefaultConfigurationTests, fixed FlsAndFieldMaskingTests user creation issues, added custom Cypress build script for Security Dashboards plugin
 
 
 ## References
@@ -151,6 +152,10 @@ public void testCreateAndShareResource() throws Exception {
 | v3.0.0 | [#5218](https://github.com/opensearch-project/security/pull/5218) | Remove Java version check for reflection args |   |
 | v3.0.0 | [#5223](https://github.com/opensearch-project/security/pull/5223) | Migrate from com.amazon.dlic to org.opensearch.security |   |
 | v3.0.0 | [#5237](https://github.com/opensearch-project/security/pull/5237) | More tests for FLS and field masking |   |
+| v2.16.0 | [#4452](https://github.com/opensearch-project/security/pull/4452) | Fix flaky integration tests |   |
+| v2.16.0 | [#4548](https://github.com/opensearch-project/security/pull/4548) | Fix FlsAndFieldMaskingTests failures |   |
+| v2.16.0 | [#2027](https://github.com/opensearch-project/security-dashboards-plugin/pull/2027) | Add custom Cypress build script | [#1786](https://github.com/opensearch-project/security-dashboards-plugin/issues/1786) |
+| v2.16.0 | [#2033](https://github.com/opensearch-project/security-dashboards-plugin/pull/2033) | Remove opensearch-build dependency | [#2030](https://github.com/opensearch-project/security-dashboards-plugin/issues/2030) |
 
 ### Issues (Design / RFC)
 - [Issue #3255](https://github.com/opensearch-project/security/issues/3255): Test coverage improvement tracking
