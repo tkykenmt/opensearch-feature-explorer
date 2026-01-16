@@ -163,6 +163,7 @@
 - CVE & Build Fixes
 - Security Dashboards Auth Fixes
 - Security nextUrl Validation
+- OIDC HTTP Proxy Support
 
 ### security
 - Dependency Bumps
