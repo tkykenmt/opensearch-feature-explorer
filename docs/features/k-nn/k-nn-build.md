@@ -128,7 +128,7 @@ permission java.lang.RuntimePermission "loadLibrary.opensearchknn_faiss_avx512_s
 ## Change History
 
 - **v3.4.0** (2026-01-11): Added SIMD library to build configurations; migrated to S3 snapshots repository
-
+- **v2.16.0** (2024-08-06): Fixed custom patch application to apply only once by comparing patch-id; updated developer guide for ARM (M-series) build instructions
 
 ## References
 
@@ -137,6 +137,8 @@ permission java.lang.RuntimePermission "loadLibrary.opensearchknn_faiss_avx512_s
 |---------|-----|-------------|---------------|
 | v3.4.0 | [#3025](https://github.com/opensearch-project/k-NN/pull/3025) | Include opensearchknn_simd in build configurations |   |
 | v3.4.0 | [#2943](https://github.com/opensearch-project/k-NN/pull/2943) | Onboard to S3 snapshots | [#5360](https://github.com/opensearch-project/opensearch-build/issues/5360) |
+| v2.16.0 | [#1833](https://github.com/opensearch-project/k-NN/pull/1833) | Apply custom patch only once by comparing patch-id | - |
+| v2.16.0 | [#1746](https://github.com/opensearch-project/k-NN/pull/1746) | Update dev guide to fix clang linking issue on ARM | - |
 
 ### Issues (Design / RFC)
 - [Issue #5360](https://github.com/opensearch-project/opensearch-build/issues/5360): Migration from Sonatype snapshots repo to ci.opensearch.org snapshots repo
