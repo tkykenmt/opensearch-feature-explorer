@@ -162,6 +162,7 @@ flowchart TB
 - **v3.0.0** (2025-05-06): Added Cluster Layer with geohash/geotile/geohex aggregations, legend support, and multi-data source support. Fixed layer config panel styling and data label overlap issues.
 - **v2.19.0** (2025-02-18): Fixed WMS BBOX calculation bug by locking custom WMS CRS input to EPSG:3857 (the only CRS supported by MapLibre GL).
 - **v2.17.0** (2024-09-17): Deprecated multi-data source display in Maps UI (Trineo UX alignment). Migrated integration tests to opensearch-dashboards-functional-test repository.
+- **v2.16.0** (2024-08-06): Fixed WMS custom layer update bug where editing layer configuration caused URLs to lose parameters.
 
 
 ## References
@@ -184,6 +185,7 @@ flowchart TB
 | v2.19.0 | [#632](https://github.com/opensearch-project/dashboards-maps/pull/632) | Lock WMS CRS input to EPSG:3857 | [#600](https://github.com/opensearch-project/dashboards-maps/issues/600) |
 | v2.17.0 | [#651](https://github.com/opensearch-project/dashboards-maps/pull/651) | Deprecate maps multi data source display | [#649](https://github.com/opensearch-project/dashboards-maps/issues/649) |
 | v2.17.0 | [#664](https://github.com/opensearch-project/dashboards-maps/pull/664) | Migrate integration tests to FTR repository | [#592](https://github.com/opensearch-project/dashboards-maps/issues/592) |
+| v2.16.0 | [#631](https://github.com/opensearch-project/dashboards-maps/pull/631) | Fix WMS custom layer update | [#601](https://github.com/opensearch-project/dashboards-maps/issues/601) |
 
 ### Issues (Design / RFC)
 - [Issue #250](https://github.com/opensearch-project/dashboards-maps/issues/250): Cluster layer feature request

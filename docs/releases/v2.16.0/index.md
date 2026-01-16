@@ -6,6 +6,9 @@
 - Anomaly Detection JDK21 Upgrade
 - PR Template Updates
 
+### dashboards-maps
+- Dashboards Maps WMS Fix
+
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 
