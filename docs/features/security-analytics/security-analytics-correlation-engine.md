@@ -167,6 +167,7 @@ The correlation graph in OpenSearch Dashboards displays:
 ## Change History
 
 - **v3.0.0** (2024-12): Removed incomplete events-correlation-engine plugin from OpenSearch core; correlation functionality remains available through Security Analytics plugin
+- **v2.16.0**: Bug fix - CorrelationAlertService now returns empty response instead of error when correlation alerts index doesn't exist
 - **v2.9.0**: Correlation engine enhancements in Security Analytics
 - **v2.6.0**: Initial correlation engine release in Security Analytics plugin
 
@@ -186,4 +187,5 @@ The correlation graph in OpenSearch Dashboards displays:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Removed incomplete events-correlation-engine from core | [#6779](https://github.com/opensearch-project/OpenSearch/issues/6779) |
+| v2.16.0 | [#1125](https://github.com/opensearch-project/security-analytics/pull/1125) | Set blank response when indexNotFound exception | - |
 | v2.x | Various | Security Analytics correlation engine implementation |   |

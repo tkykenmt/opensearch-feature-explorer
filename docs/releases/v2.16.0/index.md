@@ -144,6 +144,9 @@
 - Dependency Bumps
 - Security Plugin Maintenance
 
+### security-analytics
+- Security Analytics Integration Tests
+
 ### observability
 - Observability CVE Fixes
 
