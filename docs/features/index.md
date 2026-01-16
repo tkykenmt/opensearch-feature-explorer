@@ -32,6 +32,7 @@ Cumulative feature documentation across all versions.
 
 - Security Certificate Management
 - Security Identity Plugin
+- Security REST API
 
 ## sql
 
