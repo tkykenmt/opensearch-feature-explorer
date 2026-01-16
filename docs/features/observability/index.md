@@ -6,3 +6,4 @@
 | [observability-infrastructure](observability-infrastructure.md) | Observability Infrastructure |
 | [observability-integrations](observability-integrations.md) | Observability Integrations |
 | [observability-release-maintenance](observability-release-maintenance.md) | Observability Release Maintenance |
+| [observability-security-maintenance](observability-security-maintenance.md) | Observability Security Maintenance |
