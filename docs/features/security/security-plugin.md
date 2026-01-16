@@ -179,6 +179,7 @@ config:
 - **v2.19.0** (2025-02-11): Bugfixes - Netty4HttpRequestHeaderVerifier now handles HTTP upgrade requests by accepting HttpRequest instead of DefaultHttpRequest; Infrastructure - JaCoCo report generation for integTestRemote task, RestHelper TLS configuration updated to use DefaultClientTlsStrategy
 - **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
 - **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal
+- **v2.16.0** (2024-08-06): Maintenance - removed unused Apache CXF dependency, Gradle 8.8→8.9 updates, code cleanup (unnecessary return statements), test framework modernization (Hamcrest matchers), ML roles refactoring, Security Analytics threat intel action support
 
 
 ## References
@@ -259,6 +260,13 @@ config:
 | v2.17.0 | [#4611](https://github.com/opensearch-project/security/pull/4611) | Refactor security provider instantiation |   |
 | v2.17.0 | [#4653](https://github.com/opensearch-project/security/pull/4653) | Remove Log4j Strings utility usage |   |
 | v2.17.0 | [#4694](https://github.com/opensearch-project/security/pull/4694) | PluginSubject build fix |   |
+| v2.16.0 | [#4580](https://github.com/opensearch-project/security/pull/4580) | Remove unused Apache CXF dependency |   |
+| v2.16.0 | [#4558](https://github.com/opensearch-project/security/pull/4558) | Remove unnecessary return statements |   |
+| v2.16.0 | [#4553](https://github.com/opensearch-project/security/pull/4553) | Update Gradle to 8.9 |   |
+| v2.16.0 | [#4544](https://github.com/opensearch-project/security/pull/4544) | Replace JUnit assertEquals() with Hamcrest assertThat() | [#1832](https://github.com/opensearch-project/security/issues/1832), [#3680](https://github.com/opensearch-project/security/issues/3680) |
+| v2.16.0 | [#4498](https://github.com/opensearch-project/security/pull/4498) | Add security analytics threat intel action | [security-analytics#1117](https://github.com/opensearch-project/security-analytics/issues/1117) |
+| v2.16.0 | [#4459](https://github.com/opensearch-project/security/pull/4459) | Update to Gradle 8.8 |   |
+| v2.16.0 | [#4151](https://github.com/opensearch-project/security/pull/4151) | Refactor and update existing ML roles |   |
 
 ### Issues (Design / RFC)
 - [Issue #5430](https://github.com/opensearch-project/security/issues/5430): Nested JWT claims feature request (v3.2.0)

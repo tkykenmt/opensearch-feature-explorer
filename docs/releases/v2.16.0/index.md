@@ -122,6 +122,7 @@
 
 ### security
 - Dependency Bumps
+- Security Plugin Maintenance
 
 ### sql
 - SQL Async Query Core Refactoring
