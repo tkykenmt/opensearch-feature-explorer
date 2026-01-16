@@ -9,6 +9,9 @@
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 
+### dashboards-reporting
+- Reporting Dependency Updates
+
 ### flow-framework
 - Flow Framework Bugfixes
 
