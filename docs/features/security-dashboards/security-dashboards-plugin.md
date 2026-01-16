@@ -113,7 +113,7 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 
 - **v2.19.0** (2025-01-21): Fixed OpenID login redirect to preserve query parameters and URL fragments; Fixed tenant defaulting incorrectly based on preferred tenants order instead of default tenant setting
 - **v2.17.0** (2024-09-17): UI/UX enhancements including smaller/compressed components, updated page headers, avatar relocation to left nav, consistency and density improvements; Fixed tenancy app registration, basepath URL validation, page header UX, and navigation titles/descriptions
-- **v2.16.0** (2024-08-06): Security fix for CVE-2024-4068 (braces package ReDoS vulnerability); CI/CD build fixes for Node.js 20 compatibility
+- **v2.16.0** (2024-08-06): Security fix for CVE-2024-4068 (braces package ReDoS vulnerability); CI/CD build fixes for Node.js 20 compatibility; Fixed capabilities API to support carrying authentication info; Fixed URL duplication issue when navigating to security plugin
 
 
 ## References
@@ -137,9 +137,12 @@ export function validateNextUrl(url: string, basePath: string): string | undefin
 | v2.17.0 | [#2084](https://github.com/opensearch-project/security-dashboards-plugin/pull/2084) | Update titles and descriptions |   |
 | v2.16.0 | [#2039](https://github.com/opensearch-project/security-dashboards-plugin/pull/2039) | Addresses CVE-2024-4068 and updates yarn.lock |   |
 | v2.16.0 | [#2060](https://github.com/opensearch-project/security-dashboards-plugin/pull/2060) | Format package.json and update CI workflows |   |
+| v2.16.0 | [#2014](https://github.com/opensearch-project/security-dashboards-plugin/pull/2014) | Fix capabilities API to support carrying authinfo |   |
+| v2.16.0 | [#2004](https://github.com/opensearch-project/security-dashboards-plugin/pull/2004) | Fix URL duplication issue | [#1967](https://github.com/opensearch-project/security-dashboards-plugin/issues/1967) |
 
 ### Issues (Design / RFC)
 - [Issue #2056](https://github.com/opensearch-project/security-dashboards-plugin/issues/2056): Tenant link visibility bug
 - [Issue #2097](https://github.com/opensearch-project/security-dashboards-plugin/issues/2097): Basepath nextUrl validation bug
 - [Issue #1823](https://github.com/opensearch-project/security-dashboards-plugin/issues/1823): Auth redirect resets query
 - [Issue #2019](https://github.com/opensearch-project/security-dashboards-plugin/issues/2019): Tenant defaulting incorrectly based on preferred tenants order
+- [Issue #1967](https://github.com/opensearch-project/security-dashboards-plugin/issues/1967): Duplicate URL fragment when clicking on security plugin
