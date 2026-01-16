@@ -200,6 +200,7 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - **v2.19.0** (2025-02-18): Multi-tenancy support with remote metadata storage (DynamoDB, remote OpenSearch); Synchronous provisioning with `wait_for_completion_timeout` parameter for provision and reprovision APIs; Fixed RBAC access control when workflow template is deleted by reading user info from workflow state; Improved logging with Log4j ParameterizedMessage
 - **v2.18.0** (2024-11-05): Added optional config field to tool step for static tool parameters; Incremental resource removal during deprovisioning for better reliability; Removed Painless scripts for workflow state updates with optimistic locking; Fixed template update location in ReprovisionWorkflowTransportAction
 - **v2.17.0** (2024-10-01): Initial Reprovision API implementation supporting updates to search pipelines, ingest pipelines, and index settings
+- **v2.16.0** (2024-08-06): Bug fixes for deprovision error handling (NOT_FOUND exceptions treated as successful deletions for models/agents), system index mapping _doc wrapper, and FlowFrameworkException status code recognition by ExceptionsHelper
 
 
 ## References
@@ -246,6 +247,9 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 | v2.18.0 | [#918](https://github.com/opensearch-project/flow-framework/pull/918) | Fixed template update location and improved logger statements in ReprovisionWorkflowTransportAction | [#870](https://github.com/opensearch-project/flow-framework/issues/870) |
 | v2.18.0 | [#894](https://github.com/opensearch-project/flow-framework/pull/894) | Update workflow state without using painless script | [#779](https://github.com/opensearch-project/flow-framework/issues/779) |
 | v2.17.0 | [#804](https://github.com/opensearch-project/flow-framework/pull/804) | Adds reprovision API to support updating search pipelines, ingest pipelines, index settings | [#717](https://github.com/opensearch-project/flow-framework/issues/717) |
+| v2.16.0 | [#805](https://github.com/opensearch-project/flow-framework/pull/805) | Handle Not Found deprovision exceptions as successful deletions | [#803](https://github.com/opensearch-project/flow-framework/issues/803) |
+| v2.16.0 | [#809](https://github.com/opensearch-project/flow-framework/pull/809) | Wrap CreateIndexRequest mappings in _doc key as required | [#798](https://github.com/opensearch-project/flow-framework/issues/798) |
+| v2.16.0 | [#811](https://github.com/opensearch-project/flow-framework/pull/811) | Have FlowFrameworkException status recognized by ExceptionsHelper | [#810](https://github.com/opensearch-project/flow-framework/issues/810) |
 
 ### Issues (Design / RFC)
 - [Issue #1254](https://github.com/opensearch-project/flow-framework/issues/1254): Incorrect field map output dimensions in semantic search with local model template
@@ -262,5 +266,8 @@ POST /_plugins/_flow_framework/workflow/<id>/_deprovision
 - [Issue #986](https://github.com/opensearch-project/flow-framework/issues/986): Can't get or delete workflow state without template if filtering by user
 - [Issue #905](https://github.com/opensearch-project/flow-framework/issues/905): Replace String concatenation with Log4j ParameterizedMessage
 - [Issue #878](https://github.com/opensearch-project/flow-framework/issues/878): ML-commons config field in MLToolSpec
+- [Issue #810](https://github.com/opensearch-project/flow-framework/issues/810): Deprovision workflow returns 500 error when workflow ID not found
+- [Issue #803](https://github.com/opensearch-project/flow-framework/issues/803): DeleteModelStep and DeleteAgentStep don't handle NOT_FOUND exceptions
+- [Issue #798](https://github.com/opensearch-project/flow-framework/issues/798): System index mapping does not use required _doc wrapper
 - [Issue #780](https://github.com/opensearch-project/flow-framework/issues/780): Update WorkflowState resources during deprovisioning
 - [Issue #691](https://github.com/opensearch-project/flow-framework/issues/691): Handle deprovision with workflow state update failure
