@@ -51,6 +51,7 @@
 
 ### neural-search
 - Neural Search Bugfixes
+- Neural Search Processor Enhancements
 
 ### opensearch
 - Fingerprint Ingest Processor
