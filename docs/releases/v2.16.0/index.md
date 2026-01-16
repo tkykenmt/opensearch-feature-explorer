@@ -134,6 +134,7 @@
 
 ### query-insights
 - Query Insights Plugin Setup
+- Query Plugin Fixes
 
 ### reporting
 - System Index Descriptors Registration
