@@ -44,6 +44,7 @@
 - System Index & Dependencies
 - ML Commons Blueprints & Tutorials
 - Connector & Model Fixes
+- Bedrock Runtime Agent
 
 ### multi-plugin
 - MDS Version Decoupling (Plugins)
