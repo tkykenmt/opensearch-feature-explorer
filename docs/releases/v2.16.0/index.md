@@ -3,6 +3,7 @@
 ## Features
 
 ### anomaly-detection
+- Anomaly Detection JDK21 Upgrade
 - PR Template Updates
 
 ### dashboards-observability
