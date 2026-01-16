@@ -102,6 +102,7 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 
 - **v2.18.0** (2024-10-22): Services data picker fix, header control styling updates, custom traces table with filtering (All Spans, Traces, Service Entry, Trace Root), overview page typography, Getting Started workflow restructure (Logs/Metrics/Traces), CI build cache optimization, navigation fixes, x-axis label rotation, and trace-to-logs redirection improvements
 - **v2.17.0** (2024-09-17): UI updates for Traces, Services, Logs, and Dashboards views to align with new header design patterns
+- **v2.16.0** (2024-08-06): Bug fixes including Getting Started toast notifications, Trace Analytics navigation breadcrumb fix, scroll bar reset after fly-out close, Query Assist UI improvements (label rename, auto-focus, placeholder text), datasource unregistration from nav groups, Notebooks MDS UX copy changes, and saved objects URL redirection fix
 
 
 ## References
@@ -132,3 +133,9 @@ The Observability plugin uses OpenSearch Dashboards saved objects for persistenc
 | v2.17.0 | [#2078](https://github.com/opensearch-project/dashboards-observability/pull/2078) | Traces/Services UI update |   |
 | v2.17.0 | [#2090](https://github.com/opensearch-project/dashboards-observability/pull/2090) | Observability dashboards UI update |   |
 | v2.17.0 | [#2092](https://github.com/opensearch-project/dashboards-observability/pull/2092) | Logs UI update |   |
+| v2.16.0 | [#1977](https://github.com/opensearch-project/dashboards-observability/pull/1977) | Add toast message for getting started / Fix Nav Bug for Traces |   |
+| v2.16.0 | [#1972](https://github.com/opensearch-project/dashboards-observability/pull/1972) | Unregister observability datasource from old and new nav group | [OSD #7323](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/7323) |
+| v2.16.0 | [#1971](https://github.com/opensearch-project/dashboards-observability/pull/1971) | UX copy changes for Notebooks with MDS |   |
+| v2.16.0 | [#1939](https://github.com/opensearch-project/dashboards-observability/pull/1939) | Fix minor issues in query assist UI |   |
+| v2.16.0 | [#1917](https://github.com/opensearch-project/dashboards-observability/pull/1917) | Trace analytics scroll bar reset | [#1916](https://github.com/opensearch-project/dashboards-observability/issues/1916) |
+| v2.16.0 | [#1998](https://github.com/opensearch-project/dashboards-observability/pull/1998) | Fix redirection URL in saved objects management page for notebooks |   |
