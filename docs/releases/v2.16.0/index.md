@@ -18,6 +18,7 @@
 ### k-nn
 - Faiss Updates
 - k-NN Build & Patches
+- k-NN Vector Streaming & Memory Bug Fixes
 
 ### ml-commons
 - Model & Connector Enhancements

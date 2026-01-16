@@ -235,6 +235,7 @@ PUT /_cluster/settings
 - **v3.0.0** (2025-05-06): Breaking changes removing deprecated index settings; node-level circuit breakers; filter function in KNNQueryBuilder; concurrency optimizations for graph loading; Remote Native Index Build foundation
 - **v2.18.0** (2024-11-05): Lucene 9.12 codec compatibility (KNN9120Codec); force merge performance optimization for non-quantization cases (~20% improvement); removed deprecated benchmarks folder; code refactoring improvements
 - **v2.17.0** (2024-09-17): Memory overflow fix for cache behavior; improved filter handling for non-existent fields; script_fields context support; field name validation for snapshots; graph merge stats fix; binary vector IVF training fix; Windows build improvements
+- **v2.16.0** (2024-08-06): Bug fixes for vector streaming arithmetic in Java-JNI layer; LeafReader casting errors with segment replication and deleted docs; memory release for array types in native code; nested field file suffix matching causing zero recall
 
 
 ## References
@@ -319,6 +320,10 @@ PUT /_cluster/settings
 | v2.17.0 | [#2086](https://github.com/opensearch-project/k-NN/pull/2086) | Use correct type for binary vector in IVF training |   |
 | v2.17.0 | [#2090](https://github.com/opensearch-project/k-NN/pull/2090) | Switch MINGW32 to MINGW64 for Windows builds |   |
 | v2.17.0 | [#2006](https://github.com/opensearch-project/k-NN/pull/2006) | Parallelize make to reduce build time |   |
+| v2.16.0 | [#1804](https://github.com/opensearch-project/k-NN/pull/1804) | Fix vector streaming count arithmetic |   |
+| v2.16.0 | [#1808](https://github.com/opensearch-project/k-NN/pull/1808) | Fix LeafReader casting for segment replication | [#1807](https://github.com/opensearch-project/k-NN/issues/1807) |
+| v2.16.0 | [#1820](https://github.com/opensearch-project/k-NN/pull/1820) | Fix memory release for array types |   |
+| v2.16.0 | [#1802](https://github.com/opensearch-project/k-NN/pull/1802) | Fix nested field suffix matching | [#1803](https://github.com/opensearch-project/k-NN/issues/1803) |
 
 ### Issues (Design / RFC)
 - [Issue #1827](https://github.com/opensearch-project/k-NN/issues/1827): Remove double converting for script scoring with binary vector
@@ -340,3 +345,5 @@ PUT /_cluster/settings
 - [Issue #1857](https://github.com/opensearch-project/k-NN/issues/1857): Binary index support for Lucene engine
 - [Issue #2377](https://github.com/opensearch-project/k-NN/issues/2377): Derived vector source design
 - [Issue #1581](https://github.com/opensearch-project/k-NN/issues/1581): Concurrent graph creation for Lucene
+- [Issue #1803](https://github.com/opensearch-project/k-NN/issues/1803): Same suffix causes recall drop to zero
+- [Issue #1807](https://github.com/opensearch-project/k-NN/issues/1807): k-NN queries fail with segment replication and deleted docs
