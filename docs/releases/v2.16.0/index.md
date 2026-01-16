@@ -9,6 +9,9 @@
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 
+### flow-framework
+- Flow Framework Bugfixes
+
 ### index-management
 - Index Management Build Fixes
 
