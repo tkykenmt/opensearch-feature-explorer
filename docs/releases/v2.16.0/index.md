@@ -170,6 +170,7 @@
 - Security Plugin Maintenance
 - Security Index Request Fixes
 - Security Build & Test Improvements
+- Security REST API Improvements
 
 ### security-analytics
 - Security Analytics Integration Tests
