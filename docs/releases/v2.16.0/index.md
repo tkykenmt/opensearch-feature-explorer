@@ -19,6 +19,10 @@
 - Model & Connector Enhancements
 - System Index & Dependencies
 
+### multi-plugin
+- MDS Version Decoupling (Plugins)
+- Version Bumps & Release Notes
+
 ### opensearch
 - Fingerprint Ingest Processor
 - Aggregation Optimizations
