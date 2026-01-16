@@ -194,6 +194,7 @@ source=logs | stats c() as total
 ## Change History
 
 - **v3.3.0**: Search command revamp with full-text search, time modifiers, strftime function, JOIN enhancements, max/min eval functions, count() shortcut, ISO8601 support
+- **v2.16.0**: Flexible span positioning in stats BY clause, data source management toggle setting, custom date format support for Lucene queries, grammar updates
 
 
 ## References
@@ -220,9 +221,14 @@ source=logs | stats c() as total
 | v3.3.0 | [#4142](https://github.com/opensearch-project/sql/pull/4142) | Add shortcut for count() |   |
 | v3.3.0 | [#4106](https://github.com/opensearch-project/sql/pull/4106) | strftime function implementation |   |
 | v3.3.0 | [#3803](https://github.com/opensearch-project/sql/pull/3803) | Support join field list and join options | [#3775](https://github.com/opensearch-project/sql/issues/3775) |
+| v2.16.0 | [#2720](https://github.com/opensearch-project/sql/pull/2720) | Span in PPL statsByClause could be specified after fields | [#2719](https://github.com/opensearch-project/sql/issues/2719) |
+| v2.16.0 | [#2723](https://github.com/opensearch-project/sql/pull/2723) | Added Setting to Toggle Data Source Management Code Paths | [OpenSearch#13274](https://github.com/opensearch-project/OpenSearch/issues/13274) |
+| v2.16.0 | [#2762](https://github.com/opensearch-project/sql/pull/2762) | Add support for custom date formats and OpenSearch date formats | [#2700](https://github.com/opensearch-project/sql/issues/2700) |
 
 ### Issues (Design / RFC)
 - [Issue #4135](https://github.com/opensearch-project/sql/issues/4135): Time modifiers feature request
 - [Issue #4007](https://github.com/opensearch-project/sql/issues/4007): Search command revamp request
 - [Issue #3775](https://github.com/opensearch-project/sql/issues/3775): Join field list and options request
 - [Issue #4341](https://github.com/opensearch-project/sql/issues/4341): max/min eval functions request
+- [Issue #2719](https://github.com/opensearch-project/sql/issues/2719): Span position flexibility in stats command
+- [Issue #2700](https://github.com/opensearch-project/sql/issues/2700): Custom date format support

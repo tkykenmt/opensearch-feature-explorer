@@ -176,3 +176,4 @@
 - SQL Async Query Core Refactoring
 - SparkParameterComposerCollection
 - SQL Build Fixes
+- SQL/PPL Enhancements
