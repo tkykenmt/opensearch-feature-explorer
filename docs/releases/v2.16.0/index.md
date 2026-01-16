@@ -24,6 +24,7 @@
 - Model & Connector Enhancements
 - System Index & Dependencies
 - ML Commons Blueprints & Tutorials
+- Connector & Model Fixes
 
 ### multi-plugin
 - MDS Version Decoupling (Plugins)
