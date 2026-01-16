@@ -179,7 +179,7 @@ config:
 - **v2.19.0** (2025-02-11): Bugfixes - Netty4HttpRequestHeaderVerifier now handles HTTP upgrade requests by accepting HttpRequest instead of DefaultHttpRequest; Infrastructure - JaCoCo report generation for integTestRemote task, RestHelper TLS configuration updated to use DefaultClientTlsStrategy
 - **v2.18.0** (2024-11-05): Enhancements - datastream support for audit logs, auto-convert V6 to V7 configuration, circuit breaker override for security APIs, improved certificate error messages, JWT in MultipleAuthentication, remote index permissions for AD; Bugfixes - header serialization for rolling upgrades, PBKDF2 password hashing, SSL exception handler; Maintenance - cache endpoint deprecation warning, undeprecate securityadmin script, ASN1 refactoring for FIPS compatibility, CVE-2024-47554 fix
 - **v2.17.0** (2024-09-17): Bugfixes - demo certificate validation, auth token endpoint, audit config null handling, certificate SAN ordering, TermsAggregationEvaluator permissions; Refactoring - security provider instantiation for FIPS support, Log4j utility removal
-- **v2.16.0** (2024-08-06): Bugfixes - fixed NPE when getting metaFields from mapperService on close index request with FLS enabled; Maintenance - removed unused Apache CXF dependency, Gradle 8.8→8.9 updates, code cleanup (unnecessary return statements), test framework modernization (Hamcrest matchers), ML roles refactoring, Security Analytics threat intel action support
+- **v2.16.0** (2024-08-06): Refactoring - separated DLS/FLS privilege evaluation from action privilege evaluation (preparation for optimized privilege evaluation #3870), new FlattenedActionGroups algorithm for action group resolution (handles loops gracefully, pre-computes results), replaced SecurityRoles with Set<String> mappedRoles where full functionality not needed, removed do_not_fail_on_forbidden special handling for cluster actions; Bugfixes - fixed system index permission check to only apply to system indexes (#4429), fixed NPE when getting metaFields from mapperService on close index request with FLS enabled; Maintenance - removed unused Apache CXF dependency, Gradle 8.8→8.9 updates, code cleanup (unnecessary return statements), test framework modernization (Hamcrest matchers), ML roles refactoring, Security Analytics threat intel action support
 
 
 ## References
@@ -261,6 +261,11 @@ config:
 | v2.17.0 | [#4653](https://github.com/opensearch-project/security/pull/4653) | Remove Log4j Strings utility usage |   |
 | v2.17.0 | [#4694](https://github.com/opensearch-project/security/pull/4694) | PluginSubject build fix |   |
 | v2.16.0 | [#4497](https://github.com/opensearch-project/security/pull/4497) | Fix NPE getting metaFields on close index request | [#4475](https://github.com/opensearch-project/security/issues/4475) |
+| v2.16.0 | [#4490](https://github.com/opensearch-project/security/pull/4490) | Separated DLS/FLS privilege evaluation from action privilege evaluation | [#3870](https://github.com/opensearch-project/security/issues/3870) |
+| v2.16.0 | [#4486](https://github.com/opensearch-project/security/pull/4486) | Remove do_not_fail_on_forbidden special handling for cluster actions | [#4485](https://github.com/opensearch-project/security/issues/4485) |
+| v2.16.0 | [#4448](https://github.com/opensearch-project/security/pull/4448) | New FlattenedActionGroups algorithm for action group resolution | [#4380](https://github.com/opensearch-project/security/pull/4380) |
+| v2.16.0 | [#4432](https://github.com/opensearch-project/security/pull/4432) | Replace SecurityRoles with Set<String> mappedRoles | [#4380](https://github.com/opensearch-project/security/pull/4380) |
+| v2.16.0 | [#4430](https://github.com/opensearch-project/security/pull/4430) | Fix system index permission check to only apply to system indexes | [#4429](https://github.com/opensearch-project/security/issues/4429) |
 | v2.16.0 | [#4580](https://github.com/opensearch-project/security/pull/4580) | Remove unused Apache CXF dependency |   |
 | v2.16.0 | [#4558](https://github.com/opensearch-project/security/pull/4558) | Remove unnecessary return statements |   |
 | v2.16.0 | [#4553](https://github.com/opensearch-project/security/pull/4553) | Update Gradle to 8.9 |   |
@@ -292,3 +297,5 @@ config:
 - [Issue #4627](https://github.com/opensearch-project/security/issues/4627): Auth token endpoint issue (v2.17.0)
 - [Issue #4480](https://github.com/opensearch-project/security/issues/4480): Certificate SAN ordering issue (v2.17.0)
 - [Issue #4583](https://github.com/opensearch-project/security/issues/4583): Security provider refactoring (v2.17.0)
+- [Issue #4485](https://github.com/opensearch-project/security/issues/4485): do_not_fail_on_forbidden mode inconsistencies (v2.16.0)
+- [Issue #4429](https://github.com/opensearch-project/security/issues/4429): System index permission check bug (v2.16.0)
