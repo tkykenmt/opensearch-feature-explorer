@@ -162,6 +162,7 @@
 ### security-dashboards
 - CVE & Build Fixes
 - Security Dashboards Auth Fixes
+- Security nextUrl Validation
 
 ### security
 - Dependency Bumps
