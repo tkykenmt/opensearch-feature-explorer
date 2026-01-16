@@ -44,7 +44,7 @@ configurations.all {
 ## Change History
 
 - **v3.3.0**: Updated Gson from 2.11.0 to 2.13.2 to resolve conflict with OpenSearch core
-
+- **v2.16.0**: Upgraded DJL to 0.28.0; bumped braces from 3.0.2 to 3.0.3; registered system indices via SystemIndexPlugin
 
 ## References
 
@@ -56,3 +56,6 @@ configurations.all {
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.3.0 | [#4176](https://github.com/opensearch-project/ml-commons/pull/4176) | Update Gson from 2.11.0 to 2.13.2 |   |
+| v2.16.0 | [#2578](https://github.com/opensearch-project/ml-commons/pull/2578) | Upgrade DJL version to 0.28.0 | |
+| v2.16.0 | [#2586](https://github.com/opensearch-project/ml-commons/pull/2586) | Register system index descriptors through SystemIndexPlugin | [security#4439](https://github.com/opensearch-project/security/issues/4439) |
+| v2.16.0 | [#341](https://github.com/opensearch-project/ml-commons/pull/341) | Bump braces from 3.0.2 to 3.0.3 | |
