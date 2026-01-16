@@ -131,6 +131,9 @@
 - Dependency Bumps
 - Security Plugin Maintenance
 
+### observability
+- Observability CVE Fixes
+
 ### sql
 - SQL Async Query Core Refactoring
 - SparkParameterComposerCollection
