@@ -172,6 +172,7 @@
 - Security Build & Test Improvements
 - Security REST API Improvements
 - Security DLS/FLS & Privilege Evaluation
+- Security Password Hashing
 
 ### security-analytics
 - Security Analytics Integration Tests
