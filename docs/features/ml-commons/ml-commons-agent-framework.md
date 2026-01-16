@@ -239,6 +239,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 - **v3.2.0** (2025-09-16): Execute Tool API, AI-oriented memory container system (create, add, search, update, delete, get), QueryPlanningTool for agentic search, date/time injection for agents, message history limit for PER Agent, output filter support, SearchIndexTool improvements, feature flags for agentic search/memory, multiple bug fixes (class cast exception, connector URL exposure, async status, max iterations handling)
 - **v3.1.0** (2025-07-15): Update Agent API, MCP tools persistence, function calling for LLM interfaces, custom SSE endpoint, metrics framework integration, PlanExecuteReflect memory tracking, error handling improvements, multiple bug fixes (private IP validation, circuit breaker bypass, Python MCP client)
 - **v3.0.0** (2025-05-13): Plan-Execute-Reflect agent type, MCP server integration
+- **v2.16.0** (2024-08-06): Bedrock Runtime Agent support for Amazon Bedrock Knowledge Base, enhanced tool parameter passing with chat_history
 - **v2.13.0** (2024-03-26): Initial agent framework with flow and conversational agents
 
 
@@ -277,6 +278,8 @@ PUT /_plugins/_ml/agents/{agent_id}
 | v3.1.0 | [#3862](https://github.com/opensearch-project/ml-commons/pull/3862) | Fix connector private IP validation when executing agent | [#3839](https://github.com/opensearch-project/ml-commons/issues/3839) |
 | v3.1.0 | [#3814](https://github.com/opensearch-project/ml-commons/pull/3814) | Exclude circuit breaker for Agent |   |
 | v3.1.0 | [#3822](https://github.com/opensearch-project/ml-commons/pull/3822) | Fix Python client MCP server connection |   |
+| v2.16.0 | [#2651](https://github.com/opensearch-project/ml-commons/pull/2651) | Add bedrock runtime agent for knowledge base |   |
+| v2.16.0 | [#2714](https://github.com/opensearch-project/ml-commons/pull/2714) | Pass all parameters including chat_history to run tools |   |
 
 ### Issues (Design / RFC)
 - [Issue #4197](https://github.com/opensearch-project/ml-commons/issues/4197): Failure message update feature request
