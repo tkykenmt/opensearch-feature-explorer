@@ -11,6 +11,9 @@
 ### index-management
 - Index Management Build Fixes
 
+### job-scheduler
+- Job Scheduler Fixes
+
 ### k-nn
 - Faiss Updates
 - k-NN Build & Patches
