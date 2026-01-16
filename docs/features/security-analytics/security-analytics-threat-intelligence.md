@@ -185,6 +185,7 @@ POST _plugins/_security_analytics/threat_intel/sources/
 - **v2.19.0** (2025-02-18): Added source config validation requiring valid name, type, format, source, and ioc_type; Source configs with null values can still be read and deleted
 - **v2.18.0** (2024-11-05): Bug fixes - IOC scan null check for multi-indicator types, ListIOCs API count limits removed (total IOCs and findings per IOC no longer capped at 10,000), IOC index exists check to prevent race conditions, notification listener leak fix, duplicate findings prevention, source config validation, improved error handling for partial failures
 - **v2.17.0** (2024-09-17): Bug fixes for security (user validation, context stashing), stability (multi-node race conditions, event-driven lock release), and integration with standard detectors
+- **v2.16.0** (2024-08-06): List IOC API filter to fetch only from AVAILABLE/REFRESHING sources, null check for IOC index aliases, store config model changes (unique ioc_types, partial IOC downloads), URL_DOWNLOAD source type added
 - **v2.15.0**: Initial threat intelligence feature with S3, IOC_UPLOAD, and URL_DOWNLOAD source types
 
 
@@ -217,6 +218,9 @@ POST _plugins/_security_analytics/threat_intel/sources/
 | v2.17.0 | [#1254](https://github.com/opensearch-project/security-analytics/pull/1254) | Event-driven lock release for source config | [#1224](https://github.com/opensearch-project/security-analytics/issues/1224) |
 | v2.17.0 | [#1274](https://github.com/opensearch-project/security-analytics/pull/1274) | Fix threat intel multinode tests |   |
 | v2.17.0 | [#1278](https://github.com/opensearch-project/security-analytics/pull/1278) | Stash context for List IOCs API |   |
+| v2.16.0 | [#1131](https://github.com/opensearch-project/security-analytics/pull/1131) | Add filter to list IOC API for available/refreshing sources |   |
+| v2.16.0 | [#1133](https://github.com/opensearch-project/security-analytics/pull/1133) | Changes threat intel default store config model |   |
+| v2.16.0 | [#1142](https://github.com/opensearch-project/security-analytics/pull/1142) | Adds new TIF source config type - URL download |   |
 
 ### Issues (Design / RFC)
 - [Issue #1191](https://github.com/opensearch-project/security-analytics/issues/1191): ListIOCsAPI total hits and findings count per IOC are incorrect
