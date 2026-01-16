@@ -4,7 +4,7 @@
 |----------|-------------|
 | [security-accesscontroller-migration](security-accesscontroller-migration.md) | Security Plugin AccessController Migration |
 | [security-alerting-comments-security](security-alerting-comments-security.md) | Alerting Comments Security |
-| [security-argon2-password-hashing](security-argon2-password-hashing.md) | Argon2 Password Hashing |
+| [security-password-hashing](security-password-hashing.md) | Password Hashing |
 | [security-auth-enhancements](security-auth-enhancements.md) | Security Auth Enhancements |
 | [security-auxiliary-transport-ssl](security-auxiliary-transport-ssl.md) | Auxiliary Transport SSL |
 | [security-cache-management](security-cache-management.md) | Security Cache Management |
