@@ -139,6 +139,7 @@
 
 ### security-dashboards
 - CVE & Build Fixes
+- Security Dashboards Auth Fixes
 
 ### security
 - Dependency Bumps
