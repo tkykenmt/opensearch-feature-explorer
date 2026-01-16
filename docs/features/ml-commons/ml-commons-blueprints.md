@@ -69,9 +69,13 @@ OpenSearch provides two types of connector blueprints:
 - Claude 4 Sonnet and Opus (standard and extended thinking modes)
 - Converse API (Claude 3 Sonnet and other chat models)
 
+#### Amazon Textract
+- Document text extraction
+
 #### OpenAI
 - text-embedding-ada-002
 - GPT-4o (chat completions)
+- Batch API (offline inference)
 
 #### Cohere
 - embed-english-v3.0/v2.0
@@ -79,6 +83,10 @@ OpenSearch provides two types of connector blueprints:
 
 #### Azure OpenAI
 - text-embedding-ada-002
+
+#### Amazon SageMaker
+- Cross-encoder reranking models
+- Batch transform jobs (offline inference)
 
 ### Configuration
 
@@ -144,6 +152,7 @@ POST /_plugins/_ml/connectors/_create
 - **v3.1.0** (2026-01-10): Added Claude 4 Sonnet and Opus blueprint with extended thinking mode support
 - **v3.0.0** (2025-05-06): Added standard blueprints for vector search, Claude 3.7 blueprint, Azure OpenAI blueprint, RAG tutorials
 - **v2.18.0** (2024-11-12): Added Bedrock Converse blueprint, cross-account model invocation tutorial, role temporary credential support, Titan Embedding V2 blueprint
+- **v2.16.0** (2024-08-06): Added Amazon Textract blueprint, Cohere embedding on Bedrock, offline batch inference connectors (SageMaker/OpenAI), cross-encoder reranking tutorial, secrets caching for non-AWS models, standardized Bedrock blueprint format
 - **v2.14.0** (2024-05-14): Introduced ML inference processor support for standard blueprints
 - **v2.9.0** (2023-07-24): Initial connector blueprints feature
 
@@ -171,6 +180,13 @@ POST /_plugins/_ml/connectors/_create
 | v2.18.0 | [#3058](https://github.com/opensearch-project/ml-commons/pull/3058) | Support role temporary credential in connector tutorial |   |
 | v2.18.0 | [#3064](https://github.com/opensearch-project/ml-commons/pull/3064) | Add tutorial for cross-account model invocation |   |
 | v2.18.0 | [#3094](https://github.com/opensearch-project/ml-commons/pull/3094) | Tune Titan embedding model blueprint for V2 | [#3081](https://github.com/opensearch-project/ml-commons/issues/3081) |
+| v2.16.0 | [#2562](https://github.com/opensearch-project/ml-commons/pull/2562) | Add Amazon Textract blueprint |   |
+| v2.16.0 | [#2607](https://github.com/opensearch-project/ml-commons/pull/2607) | Add tutorial for cross-encoder model on SageMaker |   |
+| v2.16.0 | [#2637](https://github.com/opensearch-project/ml-commons/pull/2637) | Update tutorials for caching secrets for non-AWS models |   |
+| v2.16.0 | [#2642](https://github.com/opensearch-project/ml-commons/pull/2642) | Make all Bedrock model blueprints in a tidier format |   |
+| v2.16.0 | [#2667](https://github.com/opensearch-project/ml-commons/pull/2667) | Add connector blueprint for Cohere embedding models in Bedrock |   |
+| v2.16.0 | [#2692](https://github.com/opensearch-project/ml-commons/pull/2692) | Make all Amazon managed LLM blueprints in a tidier format |   |
+| v2.16.0 | [#2768](https://github.com/opensearch-project/ml-commons/pull/2768) | Add offline batch inference connector blueprints | [#2488](https://github.com/opensearch-project/ml-commons/issues/2488) |
 
 ### Issues (Design / RFC)
 - [Issue #3619](https://github.com/opensearch-project/ml-commons/issues/3619): Standard blueprints feature request
