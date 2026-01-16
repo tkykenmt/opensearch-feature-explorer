@@ -118,6 +118,7 @@ graph TB
 
 - **v2.19.0** (2025-02-18): Performance improvement using Cat Snapshot API for repository page, bug fixes for snapshot restore alias handling, snapshot policy schedule editing, and index expression display
 - **v2.17.0** (2024-09-17): Comprehensive UI/UX improvements implementing "Look and Feel" and "Fit and Finish" design guidelines across all pages, navigation redesign, notification modal, MDS support for Shrink page, history navigation bug fixes
+- **v2.16.0** (2024-08-06): Fixed data source persistence across sub-applications when new navigation UX is enabled
 
 
 ## References
@@ -148,3 +149,4 @@ graph TB
 | v2.17.0 | [#1157](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1157) | Snapshot Management pages styling |   |
 | v2.17.0 | [#1164](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1164) | Job count in titles |   |
 | v2.17.0 | [#1166](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1166) | History navigation bug fixes |   |
+| v2.16.0 | [#1088](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1088) | Data source persistence across sub-applications | [OpenSearch-Dashboards#7027](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/7027) |

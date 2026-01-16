@@ -12,6 +12,9 @@
 ### index-management
 - Index Management Build Fixes
 
+### index-management-dashboards
+- Index Management DataSource Persistence
+
 ### job-scheduler
 - Job Scheduler Fixes
 
