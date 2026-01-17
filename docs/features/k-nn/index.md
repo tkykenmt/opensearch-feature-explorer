@@ -12,6 +12,7 @@
 | [k-nn-iterative-graph-build](k-nn-iterative-graph-build.md) | k-NN Iterative Graph Build |
 | [k-nn-late-interaction](k-nn-late-interaction.md) | Late Interaction |
 | [k-nn-lucene-on-faiss](k-nn-lucene-on-faiss.md) | Lucene On Faiss (Memory Optimized Search) |
+| [k-nn-lucene-scalar-quantizer](k-nn-lucene-scalar-quantizer.md) | Lucene Scalar Quantizer |
 | [k-nn-lucene-vector-integration](k-nn-lucene-vector-integration.md) | k-NN Lucene Vector Integration |
 | [k-nn-maximal-marginal-relevance-mmr](k-nn-maximal-marginal-relevance-mmr.md) | Maximal Marginal Relevance (MMR) |
 | [k-nn-memory-optimized-warmup](k-nn-memory-optimized-warmup.md) | k-NN Memory Optimized Warmup |
