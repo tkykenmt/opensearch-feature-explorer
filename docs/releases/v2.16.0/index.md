@@ -20,6 +20,9 @@
 ### dashboards-observability
 - Observability Getting Started & Dashboards
 
+### opensearch-dashboards
+- Navigation & NavGroups
+
 ### dashboards-query-workbench
 - Query Workbench Dev Tools Migration
 
