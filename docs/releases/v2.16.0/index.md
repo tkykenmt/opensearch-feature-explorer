@@ -52,6 +52,7 @@
 
 ### multi-plugin
 - MDS Version Decoupling (Plugins)
+- System Index Descriptors Registration
 - Version Bumps & Release Notes
 
 ### neural-search

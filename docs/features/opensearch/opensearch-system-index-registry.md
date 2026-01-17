@@ -102,6 +102,12 @@ The registry automatically includes the Task Result Index:
   - Changed method signatures from `List` to `Set` for better performance
   - Promoted `SystemIndexDescriptor` to `@PublicApi`
   - Changed plugin key from `getSimpleName()` to `getCanonicalName()` for uniqueness
+  - Multiple plugins adopted SystemIndexPlugin registration:
+    - alerting: `.opendistro-alerting-alerts*`, `.opendistro-alerting-config`
+    - anomaly-detection: 7 indices including config, results, checkpoints, state, and forecast indices
+    - flow-framework: config, global context, and workflow state indices
+    - reporting: definitions and instances indices
+    - sql: datasources and spark request buffer indices
 
 ## References
 
@@ -115,6 +121,9 @@ The registry automatically includes the Task Result Index:
 |---------|-----|-------------|
 | v2.16.0 | [#14415](https://github.com/opensearch-project/OpenSearch/pull/14415) | Create SystemIndexRegistry with helper method matchesSystemIndex |
 | v2.16.0 | [#14750](https://github.com/opensearch-project/OpenSearch/pull/14750) | Add matchesPluginSystemIndexPattern to SystemIndexRegistry |
+| v2.16.0 | [alerting#1594](https://github.com/opensearch-project/alerting/pull/1594) | Register system index descriptors in alerting |
+| v2.16.0 | [anomaly-detection#1251](https://github.com/opensearch-project/anomaly-detection/pull/1251) | Register system index descriptors in anomaly-detection |
+| v2.16.0 | [flow-framework#750](https://github.com/opensearch-project/flow-framework/pull/750) | Register system index descriptors in flow-framework |
 
 ### Related Issues
 
