@@ -193,6 +193,7 @@
 - Skills Tools Enhancements
 
 ### security-analytics
+- Security Alerts & Correlations
 - Security Analytics Integration Tests
 - Threat Intel IOC & Source Config
 
