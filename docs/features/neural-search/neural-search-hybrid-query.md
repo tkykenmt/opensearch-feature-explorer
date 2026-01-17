@@ -83,6 +83,13 @@ flowchart TB
 | `LowerBound` | Lower boundary constraint for score normalization |
 | `ScoreBound` | Abstract base class for score boundary constraints |
 | `BoundMode` | Enum for boundary modes (APPLY, CLIP, IGNORE) |
+| `HybridTopFieldDocSortCollector` | Abstract collector for sorted hybrid queries |
+| `SimpleFieldCollector` | Collector for basic field sorting |
+| `PagingFieldCollector` | Collector for `search_after` pagination with sorting |
+| `HybridSearchCollector` | Common interface for hybrid search collectors |
+| `HybridQueryFieldDocComparator` | Comparator for merging sorted field docs |
+| `MultiLeafFieldComparator` | Handles multi-field sort criteria |
+| `HybridSearchSortUtil` | Utility for evaluating and creating sort criteria |
 
 ### Configuration
 
@@ -207,6 +214,8 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - **Collapse aggregations**: Aggregations run on pre-collapsed results, not the final output.
 - **Collapse pagination**: Collapse reduces total results, affecting page distribution.
 - **Bounds array size**: Both `lower_bounds` and `upper_bounds` arrays must match the number of sub-queries in the hybrid query.
+- **Sorting with `_score`**: When sorting by multiple fields, `_score` cannot be combined with other sort fields; use either field-based sorting or `_score` sorting alone.
+- **Sorting with `track_scores`**: When sorting by fields, `track_scores` must be set to `false` because score recalculation during fetch phase would produce incorrect results after normalization.
 
 ## Change History
 
@@ -217,7 +226,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - **v2.19.0** (2025-02-18): Pagination support with `pagination_depth` parameter, Reciprocal Rank Fusion (RRF) via `score-ranker-processor`, explainability with `explain` flag and `explanation_response_processor`; Bug fixes for inconsistent scoring with two-phase iterators and sorted hybrid query field mismatch
 - **v2.18.0** (2024-11-05): Fixed incorrect document order for nested aggregations in hybrid query
 - **v2.17.0** (2024-09-17): Fixed pagination error handling and multi-shard merge logic
-- **v2.16.0** (2024-08-06): Fixed missing results when concurrent segment search is enabled on shards with 6+ segments
+- **v2.16.0** (2024-08-06): Sorting and `search_after` pagination support for hybrid queries; Fixed missing results when concurrent segment search is enabled on shards with 6+ segments
 - **v2.11.0** (2023-10-16): Initial implementation of hybrid search
 
 
@@ -233,6 +242,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 - [Neural Search API](https://docs.opensearch.org/3.1/vector-search/api/neural/)
 - [Normalization Processor](https://docs.opensearch.org/3.1/search-plugins/search-pipelines/normalization-processor/)
 - [Neural Search Tutorial](https://docs.opensearch.org/3.1/tutorials/vector-search/neural-search-tutorial/)
+- [How Sorting Works in Hybrid Queries (Blog)](https://opensearch.org/blog/internal-functioning-of-sorting-in-hybrid-query/)
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |
@@ -272,10 +282,12 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v2.18.0 | [#956](https://github.com/opensearch-project/neural-search/pull/956) | Fixed incorrect document order for nested aggregations in hybrid query | [#955](https://github.com/opensearch-project/neural-search/issues/955) |
 | v2.17.0 | [#867](https://github.com/opensearch-project/neural-search/pull/867) | Removed misleading pagination code, added clear error |   |
 | v2.17.0 | [#877](https://github.com/opensearch-project/neural-search/pull/877) | Fixed merge logic for empty shard results | [#875](https://github.com/opensearch-project/neural-search/issues/875) |
+| v2.16.0 | [#827](https://github.com/opensearch-project/neural-search/pull/827) | Enable sorting and search_after features in Hybrid Search | [#507](https://github.com/opensearch-project/neural-search/issues/507) |
 | v2.16.0 | [#800](https://github.com/opensearch-project/neural-search/pull/800) | Fix for missing HybridQuery results when concurrent segment search is enabled | [#799](https://github.com/opensearch-project/neural-search/issues/799) |
 | v2.11.0 | - | Initial implementation of hybrid search |   |
 
 ### Issues (Design / RFC)
+- [Issue #507](https://github.com/opensearch-project/neural-search/issues/507): Sorting support for Hybrid Search
 - [Issue #665](https://github.com/opensearch-project/neural-search/issues/665): Hybrid search and collapse compatibility request
 - [Issue #1152](https://github.com/opensearch-project/neural-search/issues/1152): Custom weights in RRF request
 - [Issue #1290](https://github.com/opensearch-project/neural-search/issues/1290): RFC for speeding up score collecting
