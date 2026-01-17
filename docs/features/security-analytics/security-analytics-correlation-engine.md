@@ -58,7 +58,8 @@ flowchart TB
     F[Correlation Rules] --> E
     E --> G[Correlated Findings]
     G --> H[Correlation Graph]
-    G --> I[Alerts]
+    G --> I[Correlation Alerts]
+    I --> J[Notifications]
 ```
 
 ### Components
@@ -70,6 +71,47 @@ flowchart TB
 | Correlation Graph | Visual representation of correlated findings in OpenSearch Dashboards |
 | Correlation Score | Metric measuring the strength of correlation between findings |
 | Correlation Alerts | Notifications triggered when correlation rules match |
+
+### Correlation Alerts
+
+Correlation Alerts enable users to receive notifications when correlated findings match predefined correlation rules. This feature was introduced in v2.16.0.
+
+#### Alert Trigger Behavior
+
+- Alerts are triggered within the time window defined in correlation rules
+- Only one correlation alert is generated per rule match within a time window
+- If the same rule matches again within the time window, the existing alert is updated
+- Alert states: ACTIVE, ACKNOWLEDGED, ERROR
+
+#### Get Correlation Alerts API
+
+```
+GET /_plugins/_security_analytics/correlationAlerts
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `severityLevel` | String | Filter by severity level |
+| `alertState` | String | Filter by alert state |
+| `sortString` | String | Field to sort results by |
+| `sortOrder` | String | Sort order (asc/desc) |
+| `size` | Integer | Maximum results per page |
+| `startIndex` | Integer | Pagination offset |
+| `searchString` | String | Search filter |
+| `correlation_rule_id` | String | Filter by correlation rule |
+
+#### Acknowledge Correlation Alerts API
+
+```
+POST /_plugins/_security_analytics/_acknowledge/correlationAlerts
+```
+
+Request body:
+```json
+{
+  "alerts": ["<alert-id-1>", "<alert-id-2>"]
+}
+```
 
 ### Configuration
 
@@ -167,7 +209,9 @@ The correlation graph in OpenSearch Dashboards displays:
 ## Change History
 
 - **v3.0.0** (2024-12): Removed incomplete events-correlation-engine plugin from OpenSearch core; correlation functionality remains available through Security Analytics plugin
+- **v2.17.0**: Added stash context for system index access in correlation alerts APIs
 - **v2.16.0**: Bug fix - CorrelationAlertService now returns empty response instead of error when correlation alerts index doesn't exist
+- **v2.16.0** (2024-08): Added Correlation Alerts feature - alert triggers based on correlation rules with Get and Acknowledge APIs
 - **v2.9.0**: Correlation engine enhancements in Security Analytics
 - **v2.6.0**: Initial correlation engine release in Security Analytics plugin
 
@@ -187,5 +231,9 @@ The correlation graph in OpenSearch Dashboards displays:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.0.0 | [#16885](https://github.com/opensearch-project/OpenSearch/pull/16885) | Removed incomplete events-correlation-engine from core | [#6779](https://github.com/opensearch-project/OpenSearch/issues/6779) |
+| v2.17.0 | [#1297](https://github.com/opensearch-project/security-analytics/pull/1297) | Stash context for system index in correlation alerts APIs | [#988](https://github.com/opensearch-project/security-analytics/issues/988) |
+| v2.16.0 | [#1040](https://github.com/opensearch-project/security-analytics/pull/1040) | Alerts in correlations - index management and notification service | [#988](https://github.com/opensearch-project/security-analytics/issues/988) |
+| v2.16.0 | [#1062](https://github.com/opensearch-project/security-analytics/pull/1062) | Alerts in Correlations Part 2 - Get and Acknowledge APIs | [#988](https://github.com/opensearch-project/security-analytics/issues/988) |
+| v2.16.0 | [#1099](https://github.com/opensearch-project/security-analytics/pull/1099) | Correlation Alert integration tests | - |
 | v2.16.0 | [#1125](https://github.com/opensearch-project/security-analytics/pull/1125) | Set blank response when indexNotFound exception | - |
 | v2.x | Various | Security Analytics correlation engine implementation |   |
