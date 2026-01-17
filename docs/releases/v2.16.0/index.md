@@ -29,6 +29,7 @@
 
 ### index-management-dashboards
 - Index Management DataSource Persistence
+- Index Management MDS Support
 
 ### job-scheduler
 - Job Scheduler Fixes
