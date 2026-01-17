@@ -7,6 +7,7 @@
 - Cross-Cluster & Remote Monitors
 
 ### anomaly-detection
+- Anomaly Detection date_nanos Support
 - Anomaly Detection JDK21 Upgrade
 - PR Template Updates
 
