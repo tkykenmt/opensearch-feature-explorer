@@ -6,6 +6,9 @@
 - Alerting Build Fixes
 - Cross-Cluster & Remote Monitors
 
+### alerting-dashboards
+- Look & Feel UI Improvements
+
 ### anomaly-detection
 - Anomaly Detection date_nanos Support
 - Anomaly Detection JDK21 Upgrade
@@ -21,6 +24,7 @@
 - Query Workbench Dev Tools Migration
 
 ### dashboards-reporting
+- Look & Feel UI Improvements
 - Reporting Dependency Updates
 
 ### flow-framework
