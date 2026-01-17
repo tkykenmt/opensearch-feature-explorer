@@ -4,6 +4,7 @@
 
 ### alerting
 - Alerting Build Fixes
+- Cross-Cluster & Remote Monitors
 
 ### anomaly-detection
 - Anomaly Detection JDK21 Upgrade

@@ -5,6 +5,7 @@ Cumulative feature documentation across all versions.
 ## alerting
 
 - Alerting Integration
+- Cross-Cluster & Remote Monitors
 
 ## ml-commons
 
