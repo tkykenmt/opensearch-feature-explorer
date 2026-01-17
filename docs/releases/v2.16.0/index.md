@@ -32,6 +32,7 @@
 
 ### job-scheduler
 - Job Scheduler Fixes
+- Job Scheduler Lock Index Protection
 
 ### k-nn
 - Faiss Updates
