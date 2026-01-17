@@ -38,6 +38,7 @@
 - Job Scheduler Lock Index Protection
 
 ### k-nn
+- k-NN Binary Vector Support
 - Faiss Updates
 - k-NN Build & Patches
 - k-NN Serialization
