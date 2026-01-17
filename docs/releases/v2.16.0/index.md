@@ -196,6 +196,7 @@
 - Security Alerts & Correlations
 - Security Analytics Integration Tests
 - Threat Intel IOC & Source Config
+- Threat Intel Platform
 
 ### observability
 - Observability CVE Fixes

@@ -218,11 +218,30 @@ POST _plugins/_security_analytics/threat_intel/sources/
 | v2.17.0 | [#1254](https://github.com/opensearch-project/security-analytics/pull/1254) | Event-driven lock release for source config | [#1224](https://github.com/opensearch-project/security-analytics/issues/1224) |
 | v2.17.0 | [#1274](https://github.com/opensearch-project/security-analytics/pull/1274) | Fix threat intel multinode tests |   |
 | v2.17.0 | [#1278](https://github.com/opensearch-project/security-analytics/pull/1278) | Stash context for List IOCs API |   |
+| v2.16.0 | [#1098](https://github.com/opensearch-project/security-analytics/pull/1098) | Threat Intel Analytics - main feature implementation | [#1117](https://github.com/opensearch-project/security-analytics/issues/1117) |
+| v2.16.0 | [#1068](https://github.com/opensearch-project/security-analytics/pull/1068) | Support for URL_Download source type and activate/deactivate logic |   |
+| v2.16.0 | [#1071](https://github.com/opensearch-project/security-analytics/pull/1071) | Fetch up to 10k source configs and IOCs under source details |   |
+| v2.16.0 | [#1064](https://github.com/opensearch-project/security-analytics/pull/1064) | Show fields for aliases in correlation rule and threat intel monitor |   |
+| v2.16.0 | [#1129](https://github.com/opensearch-project/security-analytics/pull/1129) | Error handling for incompatible IOC types from S3 |   |
+| v2.16.0 | [#1130](https://github.com/opensearch-project/security-analytics/pull/1130) | Fix findingIds filter on IOC findings search API |   |
+| v2.16.0 | [#1156](https://github.com/opensearch-project/security-analytics/pull/1156) | Adjusted IOCTypes usage |   |
+| v2.16.0 | [#1157](https://github.com/opensearch-project/security-analytics/pull/1157) | Fix job scheduler parser, action listeners, and multi-node test |   |
+| v2.16.0 | [#1163](https://github.com/opensearch-project/security-analytics/pull/1163) | ListIOCs API to return number of findings per IOC |   |
+| v2.16.0 | [#1162](https://github.com/opensearch-project/security-analytics/pull/1162) | IOC upload integration tests and fix update |   |
+| v2.16.0 | [#1173](https://github.com/opensearch-project/security-analytics/pull/1173) | Resolve aliases in monitor input to concrete indices |   |
+| v2.16.0 | [#1178](https://github.com/opensearch-project/security-analytics/pull/1178) | Enum fix for IOC state |   |
+| v2.16.0 | [#1184](https://github.com/opensearch-project/security-analytics/pull/1184) | Fix threat intel monitor finding to contain all doc_ids |   |
+| v2.16.0 | [#1187](https://github.com/opensearch-project/security-analytics/pull/1187) | Fixed bulk indexing for IOCs |   |
+| v2.16.0 | [#1192](https://github.com/opensearch-project/security-analytics/pull/1192) | Fix IOC upload update behavior and error response |   |
+| v2.16.0 | [#1198](https://github.com/opensearch-project/security-analytics/pull/1198) | Catch and wrap exceptions |   |
+| v2.16.0 | [#1076](https://github.com/opensearch-project/security-analytics/pull/1076) | Updated IOCTypes |   |
+| v2.16.0 | [#1080](https://github.com/opensearch-project/security-analytics/pull/1080) | Fixed UI issues |   |
 | v2.16.0 | [#1131](https://github.com/opensearch-project/security-analytics/pull/1131) | Add filter to list IOC API for available/refreshing sources |   |
 | v2.16.0 | [#1133](https://github.com/opensearch-project/security-analytics/pull/1133) | Changes threat intel default store config model |   |
 | v2.16.0 | [#1142](https://github.com/opensearch-project/security-analytics/pull/1142) | Adds new TIF source config type - URL download |   |
 
 ### Issues (Design / RFC)
+- [Issue #1117](https://github.com/opensearch-project/security-analytics/issues/1117): Threat Intelligence Analytics In OpenSearch (META)
 - [Issue #1191](https://github.com/opensearch-project/security-analytics/issues/1191): ListIOCsAPI total hits and findings count per IOC are incorrect
 - [Issue #1421](https://github.com/opensearch-project/security-analytics/issues/1421): Custom JSON schema feature request
 - [Issue #1224](https://github.com/opensearch-project/security-analytics/issues/1224): Lock release issue
