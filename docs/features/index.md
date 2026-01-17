@@ -28,6 +28,10 @@ Cumulative feature documentation across all versions.
 - Observability Release Maintenance
 - Observability Security Maintenance
 
+## opensearch-dashboards
+
+- Navigation & NavGroups
+
 ## opensearch
 
 - Application-Based Configuration (ABC) Templates
