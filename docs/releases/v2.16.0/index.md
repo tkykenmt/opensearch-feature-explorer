@@ -165,6 +165,7 @@
 
 ### performance-analyzer
 - Performance Analyzer Dependencies
+- Performance Metrics
 
 ### query-insights
 - Query Insights Plugin Setup
