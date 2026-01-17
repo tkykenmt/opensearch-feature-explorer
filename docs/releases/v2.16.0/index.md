@@ -23,6 +23,7 @@
 
 ### flow-framework
 - Flow Framework Bugfixes
+- Flow Framework Enhancements
 
 ### index-management
 - Index Management Build Fixes
