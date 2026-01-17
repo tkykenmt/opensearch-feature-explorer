@@ -210,7 +210,7 @@ Job Scheduler supports two schedule formats:
 - **v3.0.0** (2025): CI/CD improvements, JPMS compatibility fixes, conditional demo certificate downloads
 - **v2.18.0** (2024-11-05): Return LockService from createComponents for Guice injection, enabling shared lock service across plugins
 - **v2.17.0** (2024-09-17): Fixed system index compatibility with v1 templates in LockService and JobDetailsService
-- **v2.16.0** (2024-08-06): Fixed CI workflow GLIBC compatibility issue by enabling Node16 fallback for GitHub Actions
+- **v2.16.0** (2024-08-06): Wrapped all lock index interactions with `ThreadContext.stashContext()` to enable system index protection compatibility; Fixed CI workflow GLIBC compatibility issue by enabling Node16 fallback for GitHub Actions
 
 
 ## References
@@ -246,6 +246,7 @@ Job Scheduler supports two schedule formats:
 | v3.0.0 | [#737](https://github.com/opensearch-project/job-scheduler/pull/737) | Only download demo certs when integTest run with -Dsecurity.enabled=true |   |
 | v2.18.0 | [#670](https://github.com/opensearch-project/job-scheduler/pull/670) | Return LockService from createComponents for Guice injection | [#238](https://github.com/opensearch-project/opensearch-plugins/issues/238) |
 | v2.17.0 | [#658](https://github.com/opensearch-project/job-scheduler/pull/658) | Fix system index compatibility with v1 templates | [#14984](https://github.com/opensearch-project/OpenSearch/issues/14984) |
+| v2.16.0 | [#347](https://github.com/opensearch-project/job-scheduler/pull/347) | Wrap lock index interactions with ThreadContext.stashContext | [#305](https://github.com/opensearch-project/job-scheduler/issues/305) |
 | v2.16.0 | [#650](https://github.com/opensearch-project/job-scheduler/pull/650) | Fix checkout action failure (GLIBC compatibility) | [actions/checkout#1809](https://github.com/actions/checkout/issues/1809) |
 
 ### Issues (Design / RFC)
