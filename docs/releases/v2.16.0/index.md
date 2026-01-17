@@ -54,6 +54,7 @@
 - Connector & Model Fixes
 - Bedrock Runtime Agent
 - Conversation Memory
+- ML Inference Processors
 
 ### multi-plugin
 - MDS Version Decoupling (Plugins)
