@@ -121,7 +121,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 - **v3.3.0** (2026-01-11): Transport channel wrapper improvements - delegate getProfileName(), getChannelType(), getVersion(), and get() to wrapped channel; removed getInnerChannel() method for better security plugin compatibility
 - **v3.2.0** (2025-07-18): Build infrastructure update - SpotBugs 6.2.2, Checkstyle 10.26.1; Removed CVE-2025-27820 workaround
 - **v2.17.0** (2024-09-17): Added RTFCacheConfigMetricsCollector for cache configuration telemetry; Updated PA Commons dependency to 1.6.0
-- **v2.16.0** (2024-08-06): Security dependency updates - BouncyCastle 1.74 → 1.78.1 (CVE fixes); PA Commons 1.4.0 → 1.5.0
+- **v2.16.0** (2024-08-06): Added index_uuid tag to shard metrics; Added RTFPerformanceAnalyzerSearchListener for CPU/heap metrics on search operations; Added RTFPerformanceAnalyzerTransportInterceptor for bulk operation metrics; Security dependency updates - BouncyCastle 1.74 → 1.78.1 (CVE fixes); PA Commons 1.4.0 → 1.5.0
 
 
 ## References
@@ -141,5 +141,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 | v3.2.0 | [#826](https://github.com/opensearch-project/performance-analyzer/pull/826) | Bump SpotBugs to 6.2.2 and Checkstyle to 10.26.1 |   |
 | v2.17.0 | [#690](https://github.com/opensearch-project/performance-analyzer/pull/690) | Added CacheConfig Telemetry collectors |   |
 | v2.17.0 | [#712](https://github.com/opensearch-project/performance-analyzer/pull/712) | Bump PA to use 1.6.0 PA commons lib |   |
+| v2.16.0 | [#680](https://github.com/opensearch-project/performance-analyzer/pull/680) | Adds index_uuid as a tag in node stats all shard metrics |   |
+| v2.16.0 | [#687](https://github.com/opensearch-project/performance-analyzer/pull/687) | Adds the listener for resource utilization metrics |   |
 | v2.16.0 | [#656](https://github.com/opensearch-project/performance-analyzer/pull/656) | Bump bouncycastle from 1.74 to 1.78.1 | Security advisories |
 | v2.16.0 | [#698](https://github.com/opensearch-project/performance-analyzer/pull/698) | Bump PA to use 1.5.0 PA commons lib |   |
