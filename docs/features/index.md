@@ -19,6 +19,15 @@ Cumulative feature documentation across all versions.
 - Neural Search Enhancements
 - Neural Search Nested Field Mapping
 
+## observability
+
+- Observability Cypress Updates
+- Observability Infrastructure
+- Observability Integrations
+- Observability MDS & System Index
+- Observability Release Maintenance
+- Observability Security Maintenance
+
 ## opensearch
 
 - Application-Based Configuration (ABC) Templates
