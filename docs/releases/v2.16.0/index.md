@@ -60,6 +60,7 @@
 - Version Bumps & Release Notes
 
 ### neural-search
+- Hybrid Search Enhancements
 - Neural Search Bugfixes
 - Neural Search Processor Enhancements
 
