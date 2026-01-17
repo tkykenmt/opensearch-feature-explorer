@@ -209,6 +209,7 @@
 
 ### observability
 - Observability CVE Fixes
+- Observability MDS & System Index
 
 ### sql
 - SQL Async Query Core Refactoring
