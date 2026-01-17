@@ -206,7 +206,8 @@ interface VisNLQSavedObject {
 - **v3.2.0**: Added support for natural language visualization in new dashboard ingress (Explore UI); restructured alias registration for better integration
 - **v3.1.0**: Added error handling for PPL queries with no results
 - **v3.0.0**: Added metrics collection for t2viz usage
-- **v2.18.0**: Initial implementation with Text2Vega, Text2PPL, and Data2Summary APIs
+- **v2.18.0**: Added Data2Summary API, enhanced implementation
+- **v2.16.0**: Initial implementation with Text2Vega and Text2PPL APIs
 
 
 ## References
@@ -219,7 +220,8 @@ interface VisNLQSavedObject {
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
-| v2.18.0 | [#264](https://github.com/opensearch-project/dashboards-assistant/pull/264) | Initial implementation of text to visualization |   |
+| v2.16.0 | [#218](https://github.com/opensearch-project/dashboards-assistant/pull/218) | Initial implementation of text to visualization | |
+| v2.18.0 | [#264](https://github.com/opensearch-project/dashboards-assistant/pull/264) | Enhanced text to visualization implementation |   |
 | v2.18.0 | [#295](https://github.com/opensearch-project/dashboards-assistant/pull/295) | Add discovery summary API |   |
 | v2.18.0 | [#349](https://github.com/opensearch-project/dashboards-assistant/pull/349) | Integration with Discover page |   |
 | v3.0.0 | [#510](https://github.com/opensearch-project/dashboards-assistant/pull/510) | Add metrics collection for t2viz |   |
