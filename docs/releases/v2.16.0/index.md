@@ -189,6 +189,9 @@
 - Security DLS/FLS & Privilege Evaluation
 - Security Password Hashing
 
+### skills
+- Skills Tools Enhancements
+
 ### security-analytics
 - Security Analytics Integration Tests
 - Threat Intel IOC & Source Config
