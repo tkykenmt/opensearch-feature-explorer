@@ -45,6 +45,7 @@
 - ML Commons Blueprints & Tutorials
 - Connector & Model Fixes
 - Bedrock Runtime Agent
+- Conversation Memory
 
 ### multi-plugin
 - MDS Version Decoupling (Plugins)
