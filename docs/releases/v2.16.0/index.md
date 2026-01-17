@@ -39,6 +39,7 @@
 
 ### k-nn
 - k-NN Binary Vector Support
+- k-NN Dynamic Query Parameters
 - Faiss Updates
 - k-NN Build & Patches
 - k-NN Serialization

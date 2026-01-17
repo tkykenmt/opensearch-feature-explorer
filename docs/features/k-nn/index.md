@@ -8,6 +8,7 @@
 | [k-nn-byte-vector-support](k-nn-byte-vector-support.md) | k-NN Byte Vector Support |
 | [k-nn-derived-source-codec-refactoring](k-nn-derived-source-codec-refactoring.md) | k-NN Derived Source & Codec Refactoring |
 | [k-nn-disk-based-vector-search](k-nn-disk-based-vector-search.md) | Disk-Based Vector Search |
+| [k-nn-dynamic-query-parameters](k-nn-dynamic-query-parameters.md) | k-NN Dynamic Query Parameters |
 | [k-nn-engine-enhancements](k-nn-engine-enhancements.md) | k-NN Engine Enhancements |
 | [k-nn-explain-api](k-nn-explain-api.md) | k-NN Explain API |
 | [k-nn-iterative-graph-build](k-nn-iterative-graph-build.md) | k-NN Iterative Graph Build |
