@@ -153,7 +153,8 @@ const MyComponent = () => {
 
 ## Change History
 
-- **v2.17.0** (2024-09-17): Initial implementation across multiple dashboard plugins
+- **v2.17.0** (2024-09-17): Expanded implementation across multiple dashboard plugins with smaller buttons and compressed form components
+- **v2.16.0** (2024-08-06): Initial Look & Feel improvements in alerting-dashboards-plugin and dashboards-reporting (standard paragraph size, semantic headers, small tabs, helper text sizing)
 
 ## References
 
@@ -173,3 +174,9 @@ const MyComponent = () => {
 | v2.17.0 | [#398](https://github.com/opensearch-project/dashboards-reporting/pull/398) | dashboards-reporting | Smaller buttons and compressed form components |   |
 | v2.17.0 | [#421](https://github.com/opensearch-project/dashboards-search-relevance/pull/421) | dashboards-search-relevance | Smaller buttons and compressed form components |   |
 | v2.17.0 | [#349](https://github.com/opensearch-project/ml-commons-dashboards/pull/349) | ml-commons-dashboards | Smaller buttons and compressed form components |   |
+| v2.16.0 | [#992](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/992) | alerting-dashboards-plugin | Use standard paragraph size |   |
+| v2.16.0 | [#994](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/994) | alerting-dashboards-plugin | Use semantic header with correct size for page, modal and flyout |   |
+| v2.16.0 | [#997](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/997) | alerting-dashboards-plugin | Use small EuiTabs across the board |   |
+| v2.16.0 | [#1004](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1004) | alerting-dashboards-plugin | Apply missing pattern guidance to Alerting experience |   |
+| v2.16.0 | [#1012](https://github.com/opensearch-project/alerting-dashboards-plugin/pull/1012) | alerting-dashboards-plugin | Adjust helper text size across monitor page |   |
+| v2.16.0 | [#379](https://github.com/opensearch-project/dashboards-reporting/pull/379) | dashboards-reporting | Adjust header and text sizes in reporting menu options |   |
