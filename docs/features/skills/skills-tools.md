@@ -154,6 +154,7 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 ## Change History
 
 - **v3.4.0** (2026-01-11): Increased max_sample_count from 2 to 5 for LogPatternAnalysisTool log insight mode, providing more representative sample logs per pattern
+- **v2.16.0** (2024-08-06): Added nested query support for NeuralSparseSearchTool, VectorDBTool, and RAGTool via `nested_path` parameter; added `plugins.skills.ppl_execution_enabled` cluster setting to control PPL query execution (default: false); added CreateAnomalyDetectorTool for AI-assisted anomaly detector configuration
 - **v3.3.0** (2026-01-11): Added LogPatternAnalysisTool for intelligent log pattern detection with sequence analysis and time-based comparison; added DataDistributionTool for statistical distribution analysis with divergence calculation; enhanced PPLTool to include mappings, current_time, and os_version when passing to SageMaker; fixed WebSearchTool using AsyncHttpClient from ml-commons; fixed DataDistributionTool to remove baselinePercentage when no baseline provided
 - **v3.2.0** (2026-01-11): Added index schema merging for PPLTool when using index patterns (merges mappings from all matching indexes); added error message masking in PPLTool to redact SageMaker ARNs and AWS account numbers; standardized parameter handling across all tools using `extractInputParameters` utility
 - **v3.1.0** (2025-05-06): Added data source type parameter (`datasourceType`) to PPLTool for Spark/S3 data source support; fixed PPLTool fields bug to properly expose multi-field mappings (e.g., `a.keyword`) to LLM for aggregation queries; fixed httpclient5 dependency version conflict in build.gradle, applied Spotless code formatting to WebSearchTool
@@ -198,6 +199,9 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 | v2.19.0 | [#477](https://github.com/opensearch-project/skills/pull/477) | Fix github ci linux build and RAG tool missing return | [#445](https://github.com/opensearch-project/skills/issues/445) |
 | v2.18.0 | [#413](https://github.com/opensearch-project/skills/pull/413) | Add LogPatternTool |   |
 | v2.18.0 | [#399](https://github.com/opensearch-project/skills/pull/399) | Customizable prompt for CreateAnomalyDetectorTool | [#337](https://github.com/opensearch-project/skills/issues/337) |
+| v2.16.0 | [#350](https://github.com/opensearch-project/skills/pull/350) | Support nested query in neural sparse tool, vectorDB tool and RAG tool |   |
+| v2.16.0 | [#344](https://github.com/opensearch-project/skills/pull/344) | Add cluster setting to control PPL execution |   |
+| v2.16.0 | [#348](https://github.com/opensearch-project/skills/pull/348) | Add CreateAnomalyDetectorTool | [#337](https://github.com/opensearch-project/skills/issues/337) |
 
 ### Issues (Design / RFC)
 - [Issue #538](https://github.com/opensearch-project/skills/issues/538): WebSearchTool feature request
