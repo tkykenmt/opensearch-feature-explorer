@@ -42,6 +42,7 @@
 - k-NN Build & Patches
 - k-NN Serialization
 - k-NN Vector Streaming & Memory Bug Fixes
+- Lucene Scalar Quantizer
 
 ### ml-commons
 - Model & Connector Enhancements
