@@ -3,6 +3,7 @@
 | Document | Description |
 |----------|-------------|
 | [k-nn-avx512-support](k-nn-avx512-support.md) | k-NN AVX512 SIMD Support |
+| [k-nn-binary-vector-support](k-nn-binary-vector-support.md) | k-NN Binary Vector Support |
 | [k-nn-build](k-nn-build.md) | k-NN Build Infrastructure |
 | [k-nn-byte-vector-support](k-nn-byte-vector-support.md) | k-NN Byte Vector Support |
 | [k-nn-derived-source-codec-refactoring](k-nn-derived-source-codec-refactoring.md) | k-NN Derived Source & Codec Refactoring |
