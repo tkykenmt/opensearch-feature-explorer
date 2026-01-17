@@ -9,6 +9,7 @@ Cumulative feature documentation across all versions.
 
 ## ml-commons
 
+- Batch Prediction Mode
 - Conversation Memory
 
 ## neural-search

@@ -47,6 +47,7 @@
 - Lucene Scalar Quantizer
 
 ### ml-commons
+- Batch Prediction Mode
 - Model & Connector Enhancements
 - System Index & Dependencies
 - ML Commons Blueprints & Tutorials
