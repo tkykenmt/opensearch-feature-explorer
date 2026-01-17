@@ -14,6 +14,9 @@
 - Anomaly Detection JDK21 Upgrade
 - PR Template Updates
 
+### dashboards-assistant
+- Text to Visualization
+
 ### dashboards-maps
 - Dashboards Maps WMS Fix
 
