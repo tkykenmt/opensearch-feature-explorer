@@ -276,7 +276,9 @@ POST _plugins/_ml/agents/_register
 | v3.3.0 | [#4093](https://github.com/opensearch-project/ml-commons/pull/4093) | Add processor chain framework |   |
 | v3.3.0 | [#4260](https://github.com/opensearch-project/ml-commons/pull/4260) | Refactor processor chain with additional processors |   |
 | v2.17.0 | [#2801](https://github.com/opensearch-project/ml-commons/pull/2801) | Support one_to_one in ML Inference Search Response Processor | [#2173](https://github.com/opensearch-project/ml-commons/issues/2173) |
-| v2.16.0 | - | ML Inference Search Request/Response Processors |   |
+| v2.16.0 | [#2688](https://github.com/opensearch-project/ml-commons/pull/2688) | Add initial MLInferenceSearchResponseProcessor | [#2173](https://github.com/opensearch-project/ml-commons/issues/2173), [#2444](https://github.com/opensearch-project/ml-commons/issues/2444) |
+| v2.16.0 | [#2616](https://github.com/opensearch-project/ml-commons/pull/2616) | Add initial search request inference processor | [#2173](https://github.com/opensearch-project/ml-commons/issues/2173), [#2444](https://github.com/opensearch-project/ml-commons/issues/2444) |
+| v2.16.0 | [#2610](https://github.com/opensearch-project/ml-commons/pull/2610) | Add model input validation for local models | [#2601](https://github.com/opensearch-project/ml-commons/issues/2601) |
 | v2.14.0 | - | Initial ML Inference Ingest Processor |   |
 
 ### Issues (Design / RFC)

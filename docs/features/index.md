@@ -11,6 +11,7 @@ Cumulative feature documentation across all versions.
 
 - Batch Prediction Mode
 - Conversation Memory
+- ML Inference Processor
 
 ## neural-search
 
