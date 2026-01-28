@@ -584,7 +584,29 @@ With Lucene-on-Faiss, increasing `ef_search` means more nodes visited, which mea
 
 Starting in v3.2.0, Lucene-on-Faiss supports Asymmetric Distance Computation (ADC) and Random Rotation (RR) for binary-quantized indexes. These features improve recall for binary quantization.
 
-For details on ADC and RR, see the Binary Quantization feature documentation.
+#### Lucene-on-Faiss Specific: ADC Implementation
+
+ADC has a dedicated Java implementation for Lucene-on-Faiss that differs from the traditional FAISS C++ path:
+
+| Aspect | Traditional FAISS | Lucene-on-Faiss |
+|--------|-------------------|-----------------|
+| ADC implementation | FAISS C++ (JNI) | Java (`ADCFlatVectorsScorer`) |
+| Distance computation | Native code | `KNNScoringUtil.l2SquaredADC()` |
+| Early termination | No | Yes (Lucene's benefit) |
+| Memory access | In-memory | On-demand disk read |
+
+The `ADCFlatVectorsScorer` in the `memoryoptsearch` package implements Lucene's `FlatVectorsScorer` interface, enabling asymmetric distance computation between float query vectors and binary-quantized document vectors while benefiting from Lucene's early termination logic.
+
+```java
+// Simplified flow
+float[] queryVector;           // Full precision query
+byte[] quantizedDocVector;     // Binary quantized document (from disk)
+float distance = KNNScoringUtil.l2SquaredADC(queryVector, quantizedDocVector);
+```
+
+This combination of ADC + early termination is unique to Lucene-on-Faiss and contributes to the performance improvements seen in quantized index benchmarks.
+
+Note: Random Rotation (RR) is applied at indexing time and is not specific to Lucene-on-Faiss. For full details on ADC and RR, see the Binary Quantization feature documentation.
 
 ## Limitations
 
