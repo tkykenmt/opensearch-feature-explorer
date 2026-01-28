@@ -580,62 +580,11 @@ Increasing `ef_search` has minimal memory impact (KB range) for both traditional
 
 With Lucene-on-Faiss, increasing `ef_search` means more nodes visited, which means more disk I/O. However, if OS page cache is warm, the difference is reduced.
 
-### Asymmetric Distance Computation (ADC) Support
+### Binary Quantization Enhancements (ADC/RR)
 
-Starting in v3.2.0, Lucene-on-Faiss supports Asymmetric Distance Computation (ADC) for binary-quantized indexes. ADC improves recall by preserving query vectors in full precision while comparing against binary-quantized document vectors.
+Starting in v3.2.0, Lucene-on-Faiss supports Asymmetric Distance Computation (ADC) and Random Rotation (RR) for binary-quantized indexes. These features improve recall for binary quantization.
 
-#### How ADC Works
-
-1. **Document Quantization**: Documents are binary-quantized (32x compression) during indexing
-2. **Centroid Computation**: Per-dimension means are computed for values quantized to 0 and 1
-3. **Query Transformation**: At search time, query vectors are rescaled using the centroids but kept in full precision
-4. **Asymmetric Distance**: Distance is computed between the full-precision query and binary document vectors
-
-The rescaling formula transforms each query dimension `q_d` to:
-```
-q'_d = (q_d - below_mean_d) / (above_mean_d - below_mean_d)
-```
-
-#### ADC Configuration Example
-
-```json
-PUT /my-vector-index
-{
-  "settings": {
-    "index.knn": true,
-    "index.knn.memory_optimized_search": true
-  },
-  "mappings": {
-    "properties": {
-      "my_vector": {
-        "type": "knn_vector",
-        "dimension": 768,
-        "method": {
-          "name": "hnsw",
-          "engine": "faiss",
-          "space_type": "l2",
-          "parameters": {
-            "encoder": {
-              "name": "binary",
-              "parameters": {
-                "bits": 1,
-                "enable_adc": true
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-#### ADC Components
-
-| Component | Description |
-|-----------|-------------|
-| `ADCFlatVectorsScorer` | Scorer for asymmetric distance computation between float queries and byte vectors |
-| `FlatVectorsScorerProvider` | Extended factory to return ADC-aware scorers based on space type |
+For details on ADC and RR, see the Binary Quantization feature documentation.
 
 ## Limitations
 
@@ -645,7 +594,7 @@ PUT /my-vector-index
 - **Space Types**: Only L2, INNER_PRODUCT, and COSINESIMIL are supported
 - **4x Compression**: Not supported with Lucene-on-Faiss; 4x compression uses Lucene engine instead
 - **Auto-Enable Limitation**: Only `mode: on_disk` + `compression_level: 1x` auto-enables Lucene-on-Faiss; higher compression levels (x8, x16, x32, x64) require explicit `memory_optimized_search: true`
-- **ADC Limitations**: ADC only supports 1-bit binary quantization; byte vector queries are not supported with ADC
+- **ADC Limitations**: ADC only supports 1-bit binary quantization (see Binary Quantization documentation)
 - **Result Consistency**: Results may differ slightly from full-memory FAISS search due to differences in loop termination conditions between Lucene and FAISS (Lucene uses early termination)
 - **Small Dataset Overhead**: For small datasets (< 1M vectors), the on-demand I/O overhead may outweigh the memory benefits; traditional FAISS C++ is recommended
 - **FP32 Performance**: For FP32 indexes with sufficient memory, FAISS C++ is 10-15% faster due to direct memory access
@@ -653,7 +602,7 @@ PUT /my-vector-index
 ## Change History
 
 - **v3.4.0** (2026-01-14): Added native SIMD scoring for FP16 vectors, VectorSearcherHolder memory optimization
-- **v3.2.0** (2026-01-14): Added ADC support for binary-quantized indexes
+- **v3.2.0** (2025-09-09): Added ADC/RR support for binary-quantized indexes
 - **v3.0.0** (2025-05-06): Initial implementation with HNSW support for FAISS engine
 
 
