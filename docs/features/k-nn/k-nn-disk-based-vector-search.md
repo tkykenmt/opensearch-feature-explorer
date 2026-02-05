@@ -21,38 +21,126 @@ graph TB
     end
     
     subgraph "Ingestion Flow"
-        Vectors[Input Vectors<br/>float32] --> Quantizer[Binary Quantizer]
-        Quantizer --> QIndex[Quantized Index<br/>In Memory]
-        Vectors --> FPStore[Full Precision Store<br/>On Disk]
+        Vectors[Input Vectors<br/>float32] --> Writer[NativeEngines990KnnVectorsWriter]
+        Writer --> FlatWriter[FlatVectorsWriter]
+        Writer --> NativeWriter[NativeIndexWriter]
+        FlatWriter --> LuceneFiles[".vec / .vex / .vemf<br/>(Lucene FlatVectors)"]
+        NativeWriter --> Quantizer[Binary Quantizer]
+        Quantizer --> FaissFile[".faiss<br/>(Quantized HNSW)"]
+        NativeWriter --> QStateFile[".osknnqstate<br/>(Quantization State)"]
     end
     
     subgraph "Two-Phase Search"
-        Query[Query Vector] --> Phase1["Phase 1: ANN Search<br/>(Quantized Index)"]
+        Query[Query Vector] --> Phase1["Phase 1: ANN Search<br/>(NativeEngineKnnVectorQuery)"]
+        FaissFile --> |"mmap"| Phase1
         Phase1 --> |"k × oversample_factor"| Candidates[Candidates]
-        Candidates --> Phase2["Phase 2: Rescore<br/>(Full Precision)"]
-        FPStore --> Phase2
+        Candidates --> Phase2["Phase 2: Rescore<br/>(ExactSearcher)"]
+        LuceneFiles --> |"KNNVectorValuesFactory"| Phase2
         Phase2 --> |"Top k"| Results[Results]
     end
 ```
 
-### Data Flow
+### File Structure
+
+```mermaid
+graph LR
+    subgraph "Segment Files"
+        subgraph "Native Engine Files"
+            FAISS["_0_field165.faiss<br/>Binary Quantized HNSW<br/>(96 bytes/vec for 768d)"]
+            QSTATE["_0_field.osknnqstate<br/>Quantization State<br/>(mean values)"]
+        end
+        subgraph "Lucene FlatVectors"
+            VEC[".vec<br/>Vector Data"]
+            VEX[".vex<br/>Vector Index"]
+            VEMF[".vemf<br/>Vector Metadata"]
+        end
+    end
+    
+    subgraph "Memory vs Disk"
+        FAISS --> |"mmap to memory"| MEM[(Memory)]
+        VEC --> |"random access"| DISK[(Disk)]
+    end
+```
+
+### Data Flow (Detailed)
 
 ```mermaid
 flowchart TB
-    subgraph Ingestion
-        V[Vectors] --> BQ[Binary Quantization]
-        BQ --> |"1 bit per dimension"| QI[Quantized Index]
-        V --> |"Full precision"| Disk[(Disk Storage)]
+    subgraph "Ingestion (flush/merge)"
+        V[Input Vectors<br/>float32] --> NEKW[NativeEngines990KnnVectorsWriter]
+        
+        NEKW --> |"1. Always write"| FVW[FlatVectorsWriter.flush]
+        FVW --> LUCENE[("Lucene FlatVectors<br/>.vec/.vex/.vemf<br/>fp32 with compression")]
+        
+        NEKW --> |"2. Train quantizer"| QS[QuantizationService.train]
+        QS --> QSTATE[(".osknnqstate<br/>mean per dimension")]
+        
+        NEKW --> |"3. Build native index"| NIW[NativeIndexWriter]
+        NIW --> |"Binary Quantization"| FAISS[(".faiss<br/>1 bit/dim HNSW")]
     end
     
-    subgraph Search
-        Q[Query] --> ANN[ANN Search]
-        QI --> ANN
-        ANN --> |"Oversampled results"| RS[Rescore]
-        Disk --> RS
-        RS --> R[Final Results]
+    subgraph "Search (Two-Phase)"
+        Q[Query] --> NEKVQ[NativeEngineKnnVectorQuery]
+        
+        NEKVQ --> |"Phase 1"| KNNWeight
+        FAISS --> |"mmap"| KNNWeight
+        KNNWeight --> |"k × oversample"| CAND[Candidates]
+        
+        CAND --> |"Phase 2<br/>useQuantizedVectors=false"| ES[ExactSearcher]
+        ES --> KVVF[KNNVectorValuesFactory]
+        KVVF --> |"getFloatVectorValues"| LR[LeafReader]
+        LUCENE --> LR
+        LR --> ES
+        ES --> |"Top k"| R[Results]
     end
 ```
+
+### Storage Comparison: Normal vs Disk-Based
+
+Disk-based mode can result in **smaller total disk usage** compared to normal fp32 HNSW. Here's why:
+
+```mermaid
+graph TB
+    subgraph "Normal Faiss HNSW (fp32)"
+        N_FAISS[".faiss<br/>fp32 vectors + HNSW graph<br/>≈ 3,072 bytes/vec (768d)"]
+        N_LUCENE["Lucene FlatVectors<br/>fp32 vectors (compressed)<br/>≈ 2,500 bytes/vec"]
+        N_TOTAL["Total: ~5,500 bytes/vec<br/>(vectors stored twice)"]
+    end
+    
+    subgraph "Disk-Based (mode: on_disk)"
+        D_FAISS[".faiss<br/>Binary Quantized + HNSW graph<br/>≈ 96 bytes/vec (768d)"]
+        D_QSTATE[".osknnqstate<br/>≈ 3KB per segment"]
+        D_LUCENE["Lucene FlatVectors<br/>fp32 vectors (compressed)<br/>≈ 2,500 bytes/vec"]
+        D_TOTAL["Total: ~2,600 bytes/vec<br/>(no duplication)"]
+    end
+    
+    N_FAISS --> N_TOTAL
+    N_LUCENE --> N_TOTAL
+    D_FAISS --> D_TOTAL
+    D_QSTATE --> D_TOTAL
+    D_LUCENE --> D_TOTAL
+```
+
+#### Why Disk-Based Uses Less Disk Space
+
+| Aspect | Normal Faiss HNSW | Disk-Based |
+|--------|-------------------|------------|
+| `.faiss` file | fp32 vectors (3,072 B/vec) + HNSW | Binary Quantized (96 B/vec) + HNSW |
+| Lucene FlatVectors | fp32 vectors (compressed) | fp32 vectors (compressed) |
+| Vector duplication | **Yes** - stored in both `.faiss` and Lucene | **No** - fp32 only in Lucene |
+| Compression on `.faiss` | ❌ None (mmap requires raw format) | ✅ 32x via Binary Quantization |
+| Compression on Lucene | ✅ Codec-level compression | ✅ Codec-level compression |
+
+**Key insight**: In normal mode, full-precision vectors are stored **twice** (in `.faiss` for HNSW traversal and in Lucene FlatVectors for exact scoring). In disk-based mode, `.faiss` only contains the compressed quantized vectors, eliminating this duplication.
+
+#### Estimated Disk Usage (768 dimensions, 1M vectors)
+
+| Mode | .faiss | Lucene FlatVectors | Total |
+|------|--------|-------------------|-------|
+| Normal fp32 HNSW | ~3.0 GB | ~2.5 GB | **~5.5 GB** |
+| Disk-Based (32x) | ~0.1 GB | ~2.5 GB | **~2.6 GB** |
+
+This represents approximately **50% disk savings** with disk-based mode.
 
 ### Components
 
@@ -64,6 +152,22 @@ flowchart TB
 | `RescoreContext` | Contains oversample factor and manages rescoring behavior |
 | `KNNVectorFieldMapper` | Extended to support mode and compression_level parameters |
 | `KNNQueryBuilder` | Integrated with rescore context resolution for automatic rescoring |
+| `NativeEngines990KnnVectorsWriter` | Writes both FlatVectors (Lucene) and Native index (.faiss) during flush/merge |
+| `FlatVectorsWriter` | Lucene component that writes full-precision vectors to `.vec/.vex/.vemf` files |
+| `NativeIndexWriter` | Builds and writes the quantized HNSW index to `.faiss` file |
+| `NativeEngineKnnVectorQuery` | Orchestrates two-phase search with optional rescoring |
+| `ExactSearcher` | Performs exact distance computation using full-precision vectors from Lucene |
+| `KNNVectorValuesFactory` | Factory to retrieve vector values from Lucene's `LeafReader` |
+
+### File Extensions
+
+| Extension | Description | Storage | Compression |
+|-----------|-------------|---------|-------------|
+| `.faiss` | Native HNSW index (Faiss engine) | mmap to memory | Binary Quantization (32x) |
+| `.osknnqstate` | Quantization state (mean values per dimension) | Disk | None |
+| `.vec` | Lucene vector data | Disk | Codec-level |
+| `.vex` | Lucene vector index | Disk | Codec-level |
+| `.vemf` | Lucene vector metadata | Disk | Codec-level |
 
 ### Configuration
 
