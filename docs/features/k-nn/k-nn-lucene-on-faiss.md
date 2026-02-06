@@ -441,6 +441,37 @@ Lucene-on-Faiss relies on OS page cache for performance. Every `seek()` and `rea
 
 For optimal performance with Lucene-on-Faiss, ensure sufficient free memory for OS page cache beyond the JVM heap.
 
+#### mmap Call Frequency
+
+The `mmap()` system call itself is invoked **once per segment** when the segment is opened, not per query:
+
+```
+Segment open
+    ↓
+MMapDirectory.openInput() → mmap() system call (1x per segment)
+    ↓
+Subsequent access via pointer (no system call)
+```
+
+**Factors affecting mmap call frequency:**
+
+| Factor | Impact |
+|--------|--------|
+| Segment count | mmap called once per segment |
+| Index reopen | New segments are mmap'd on refresh/reopen |
+| Force merge | New merged segment is mmap'd |
+
+**Factors affecting page access frequency (after mmap):**
+
+| Factor | Page Access Frequency |
+|--------|----------------------|
+| `ef_search` | Higher value → more nodes visited → more pages accessed |
+| HNSW levels | Upper levels accessed on every query |
+| Vector dimensions | Larger dimensions → more pages per vector |
+| Quantization | Reduces vector size → fewer pages accessed |
+
+After the initial mmap, performance is determined by page cache hit rate, not system call overhead. Once mapped, memory access goes through the CPU's MMU (Memory Management Unit) and page table, with page faults triggering disk I/O only when data is not in the page cache.
+
 ### Performance Characteristics
 
 Based on benchmarks with Cohere-10M dataset:
