@@ -1,5 +1,5 @@
 {
-  "name": "group-release",
+  "name": "create-release-groups",
   "description": "Group raw release items into feature groups",
   "prompt": "You are a release notes grouper. Group raw items into feature groups.",
   "tools": ["@builtin"],
@@ -7,7 +7,7 @@
   "resources": [
     "file://README.md",
     "file://.kiro/steering/**/*.md",
-    "file://.kiro/agents/prompts/group-release.md"
+    "file://.kiro/agents/prompts/create-release-groups.md"
   ],
   "model": "claude-opus-4.6"
 }

@@ -2,22 +2,20 @@
   "name": "dev",
   "description": "Development and maintenance of this tool itself",
   "prompt": "You are a development engineer responsible for maintaining and improving this tool.",
-  "tools": ["@builtin", "@github", "@opensearch-docs"],
-  "allowedTools": ["@builtin", "@github", "@opensearch-docs"],
+  "tools": ["@builtin", "@github"],
+  "allowedTools": ["@builtin", "@github"],
   "resources": [
     "file://README.md",
     "file://DEVELOPMENT.md",
     "file://.kiro/steering/**/*.md",
-    "file://.kiro/agents/prompts/dev.md"
+    "file://.kiro/agents/prompts/dev.md",
+    "skill://.kiro/skills/opensearch-docs-search/SKILL.md"
   ],
   "mcpServers": {
-    "opensearch-docs": {
-      "command": "python",
-      "args": ["mcp_server.py"]
-    },
     "github": {
       "command": "bash",
       "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
     }
-  }
+  },
+  "model": "claude-opus-4.6"
 }

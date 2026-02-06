@@ -2,14 +2,8 @@
   "name": "refactor",
   "description": "Batch structural changes to existing reports",
   "prompt": "You are a refactor agent. Transform report files based on steering rules or Issue instructions.",
-  "tools": [
-    "@builtin",
-    "@github"
-  ],
-  "allowedTools": [
-    "@builtin",
-    "@github"
-  ],
+  "tools": ["@builtin", "@github"],
+  "allowedTools": ["@builtin", "@github"],
   "resources": [
     "file://DEVELOPMENT.md",
     "file://README.md",
@@ -19,10 +13,8 @@
   "mcpServers": {
     "github": {
       "command": "bash",
-      "args": [
-        "-c",
-        "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"
-      ]
+      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
     }
-  }
+  },
+  "model": "claude-opus-4.6"
 }

@@ -2,16 +2,13 @@
   "name": "translate",
   "description": "Translate existing reports to other languages",
   "prompt": "You are a technical document translator. Translate OpenSearch feature/release reports.",
-  "tools": [
-    "@builtin"
-  ],
-  "allowedTools": [
-    "@builtin"
-  ],
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"],
   "resources": [
     "file://DEVELOPMENT.md",
     "file://README.md",
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/translate.md"
-  ]
+  ],
+  "model": "claude-opus-4.6"
 }

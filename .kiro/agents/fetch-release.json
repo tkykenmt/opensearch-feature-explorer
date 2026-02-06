@@ -14,5 +14,6 @@
       "command": "bash",
       "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
     }
-  }
+  },
+  "model": "claude-opus-4.6"
 }

@@ -2,14 +2,8 @@
   "name": "generate-release-docs",
   "description": "Generate release documents from existing feature documents",
   "prompt": "You are a release document generator. Extract version-specific changes from existing feature documents and create release reports.",
-  "tools": [
-    "@builtin",
-    "@github"
-  ],
-  "allowedTools": [
-    "@builtin",
-    "@github"
-  ],
+  "tools": ["@builtin", "@github"],
+  "allowedTools": ["@builtin", "@github"],
   "resources": [
     "file://DEVELOPMENT.md",
     "file://README.md",
@@ -19,10 +13,8 @@
   "mcpServers": {
     "github": {
       "command": "bash",
-      "args": [
-        "-c",
-        "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"
-      ]
+      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
     }
-  }
+  },
+  "model": "claude-opus-4.6"
 }
