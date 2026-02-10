@@ -119,6 +119,121 @@ flowchart TB
 | `knn.remote_index_build.size_threshold` | Size threshold for remote build | - |
 | `knn.remote_index_build.repository` | Repository name for vector storage | - |
 
+### Native Memory Cache Architecture
+
+The k-NN plugin uses a Guava Cache (`NativeMemoryCacheManager`) to manage native (off-heap) memory allocations for Faiss and NMSLIB graph indexes. Understanding this cache is critical for capacity planning and operational management.
+
+#### Memory Layout
+
+```mermaid
+graph TB
+    subgraph "JVM Heap"
+        GC[Guava Cache]
+        GC --> IA1[IndexAllocation Entry]
+        GC --> IA2[IndexAllocation Entry]
+        IA1 --> PTR1["memoryAddress (long)"]
+        IA2 --> PTR2["memoryAddress (long)"]
+    end
+
+    subgraph "Off-Heap / Native Memory"
+        PTR1 -.-> FI1["faiss::IndexHNSW\n(HNSW graph + vectors)"]
+        PTR2 -.-> FI2["faiss::IndexIVFPQ\n(IVF lists + PQ codes)"]
+    end
+
+    subgraph "Disk"
+        SEG1[".faiss segment files"]
+        SEG2[".hnsw segment files"]
+    end
+
+    SEG1 -.->|"load on first search"| FI1
+    SEG2 -.->|"load on first search"| FI2
+```
+
+Each cache entry (`NativeMemoryAllocation.IndexAllocation`) holds a `memoryAddress` pointer to a C++ Faiss or NMSLIB index loaded in native memory. The Guava Cache tracks metadata on the JVM heap, while the actual graph data (HNSW adjacency lists, vector storage, IVF inverted lists, PQ codebooks) resides entirely off-heap.
+
+#### Native Memory Lifecycle
+
+```mermaid
+stateDiagram-v2
+    [*] --> OnDisk: Index / Merge creates .faiss/.hnsw segment
+
+    OnDisk --> Loading: First search hits uncached segment
+    Loading --> InCache: NativeMemoryLoadStrategy loads graph\ninto off-heap via JNI
+
+    InCache --> InCache: Search queries (ReadLock)
+
+    InCache --> Evicted: Clear Cache API\n(manual invalidate)
+    InCache --> Evicted: Circuit Breaker\n(LRU eviction on memory threshold)
+    InCache --> Evicted: Cache Expiry\n(TTL timeout)
+    InCache --> Evicted: Index Deletion
+
+    Evicted --> OnDisk: WriteLock acquired →\nJNIService.free() →\ndelete faiss::Index*
+
+    OnDisk --> [*]: Segment deleted\n(merge / index delete)
+```
+
+- **OnDisk**: `.faiss` / `.hnsw` segment files exist on disk. No memory consumed.
+- **Loading**: On first search, `NativeMemoryLoadStrategy` reads the file via JNI and constructs a `faiss::Index*` on the C++ side.
+- **InCache**: Entry registered in Guava Cache. Search queries access the graph concurrently via `ReadLock`.
+- **Evicted**: One of four triggers (Clear Cache API / Circuit Breaker / Cache Expiry / Index Deletion) acquires `WriteLock`, then calls `JNIService.free()` → C++ `delete` to release off-heap memory. The segment file remains on disk and can be reloaded on the next search.
+
+#### Clear Cache API
+
+The `POST /_plugins/_knn/clear_cache` API evicts native memory graph indexes from the cache, freeing off-heap memory. This is useful for reclaiming memory after bulk deletions, index migrations, or when native memory pressure is high.
+
+**Execution Flow:**
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant REST as KNN REST Layer
+    participant Transport as ClearCacheTransportAction
+    participant Shard as KNNIndexShard
+    participant Cache as NativeMemoryCacheManager
+    participant JNI as JNIService
+    participant CPP as C++ (Faiss/NMSLIB)
+
+    Client->>REST: POST /_plugins/_knn/{indices}/clear_cache
+    REST->>Transport: Broadcast to all data nodes
+    Transport->>Shard: shardOperation() per shard
+    Shard->>Cache: invalidate(indexPath)
+    Cache->>Cache: Guava cache.invalidate(key)
+    Cache->>Cache: onRemoval() callback
+    Cache->>JNI: free(memoryAddress, engineName)
+    JNI->>CPP: delete faiss::Index*
+    CPP-->>JNI: memory freed
+    JNI-->>Cache: done
+    Cache-->>Client: ClearCacheResponse
+```
+
+`ClearCacheTransportAction` extends `TransportBroadcastAction`, broadcasting the request to every data node holding shards of the target index. On each shard, `KNNIndexShard.clearCache()` iterates over all segment files (`.faiss`, `.hnsw`) and calls `NativeMemoryCacheManager.invalidate()` for each. The Guava Cache's `onRemoval()` listener triggers `IndexAllocation.close()`, which calls `JNIService.free()` to invoke the C++ destructor (`delete faiss::Index*`), releasing the off-heap HNSW graph and vector data.
+
+**Important:** After clearing the cache, the next search on the affected index will reload graph files from disk into native memory, incurring a latency spike. This API has no effect on Lucene engine indexes, which do not use the native memory cache.
+
+#### Concurrency Control
+
+Cache eviction and search queries are coordinated via a `ReadWriteLock` on each `IndexAllocation`:
+
+| Operation | Lock | Behavior |
+|-----------|------|----------|
+| Search (graph traversal) | Read lock | Multiple concurrent searches allowed |
+| Cache eviction / close | Write lock | Blocks until all in-flight searches complete |
+
+This ensures that a `clear_cache` call will not free a graph pointer while a search is actively traversing it.
+
+#### SharedIndexState (IVF Models)
+
+For IVF-based indexes (e.g., IVF+PQ), Faiss splits the index into a shared model (coarse quantizer, PQ codebook) and per-segment inverted lists. The `SharedIndexState` class manages the shared model with reference counting — the model is freed only when the last segment referencing it is evicted.
+
+#### Cache Eviction Methods Comparison
+
+| Method | Trigger | Scope | Use Case |
+|--------|---------|-------|----------|
+| Clear Cache API | Manual (`POST /_plugins/_knn/.../clear_cache`) | Per-index, all nodes | Operational memory reclaim |
+| Circuit Breaker | Automatic (memory threshold) | LRU eviction, per-node | Prevent OOM |
+| Cache Expiry | Automatic (TTL) | Per-entry, all nodes | Stale data cleanup |
+| Index Deletion | Manual (`DELETE /index`) | All entries for index | Index lifecycle |
+
 ### Usage Example
 
 #### Creating a k-NN Index
@@ -216,10 +331,37 @@ PUT /_cluster/settings
 }
 ```
 
+#### Clear Cache API
+
+```json
+// Clear cache for a specific index
+POST /_plugins/_knn/my-knn-index/clear_cache
+
+// Clear cache for multiple indexes
+POST /_plugins/_knn/index1,index2/clear_cache
+
+// Clear cache for all k-NN indexes
+POST /_plugins/_knn/_all/clear_cache
+```
+
+Response:
+
+```json
+{
+  "_shards": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0
+  }
+}
+```
+
 ## Limitations
 
 - Native engines (Faiss, NMSLIB) require native library dependencies
 - Graph indexes consume significant memory
+- Clear Cache API only affects native engine indexes (Faiss, NMSLIB); Lucene engine indexes are not cached in `NativeMemoryCacheManager`
+- After clearing cache, the next search triggers a full graph reload from disk, causing a latency spike proportional to index size
 - Remote Index Build is experimental (v3.0.0)
 - Maximum vector dimension depends on engine and available memory
 - NMSLIB engine is deprecated as of v2.19.0; migrate to FAISS or Lucene
@@ -242,7 +384,8 @@ PUT /_cluster/settings
 
 ### Documentation
 - [Vector Search Documentation](https://docs.opensearch.org/3.0/vector-search/): Official documentation
-- [k-NN API Reference](https://docs.opensearch.org/3.0/vector-search/api/knn/): API documentation
+- [k-NN API Reference](https://docs.opensearch.org/3.0/vector-search/api/knn/): API documentation including Clear Cache, Warmup, and Stats
+- [k-NN Clear Cache API](https://docs.opensearch.org/latest/vector-search/api/knn/#k-nn-clear-cache): Clear Cache API reference
 - [Approximate k-NN Search](https://docs.opensearch.org/3.0/vector-search/vector-search-techniques/approximate-knn/): ANN search guide
 - [Efficient k-NN Filtering](https://docs.opensearch.org/3.0/vector-search/filter-search-knn/efficient-knn-filtering/): Filtering guide
 - [Memory-optimized vectors](https://docs.opensearch.org/3.0/field-types/supported-field-types/knn-memory-optimized/): Compression and rescoring guide
@@ -347,3 +490,10 @@ PUT /_cluster/settings
 - [Issue #1581](https://github.com/opensearch-project/k-NN/issues/1581): Concurrent graph creation for Lucene
 - [Issue #1803](https://github.com/opensearch-project/k-NN/issues/1803): Same suffix causes recall drop to zero
 - [Issue #1807](https://github.com/opensearch-project/k-NN/issues/1807): k-NN queries fail with segment replication and deleted docs
+
+### Source Code (Native Memory Cache / Clear Cache)
+- [NativeMemoryCacheManager.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/index/memory/NativeMemoryCacheManager.java): Guava Cache wrapper managing native index allocations
+- [NativeMemoryAllocation.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/index/memory/NativeMemoryAllocation.java): `IndexAllocation` with ReadWriteLock and `close()` → `JNIService.free()`
+- [KNNIndexShard.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/index/KNNIndexShard.java): `clearCache()` iterating segment files
+- [ClearCacheTransportAction.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/plugin/transport/ClearCacheTransportAction.java): Broadcast transport action
+- [JNIService.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/jni/JNIService.java): JNI dispatch to Faiss/NMSLIB native free
