@@ -154,22 +154,21 @@ Each cache entry (`NativeMemoryAllocation.IndexAllocation`) holds a `memoryAddre
 #### Native Memory Lifecycle
 
 ```mermaid
-stateDiagram-v2
-    [*] --> OnDisk: Index / Merge creates .faiss/.hnsw segment
-
-    OnDisk --> Loading: First search hits uncached segment
-    Loading --> InCache: NativeMemoryLoadStrategy loads graph\ninto off-heap via JNI
-
-    InCache --> InCache: Search queries (ReadLock)
-
-    InCache --> Evicted: Clear Cache API\n(manual invalidate)
-    InCache --> Evicted: Circuit Breaker\n(LRU eviction on memory threshold)
-    InCache --> Evicted: Cache Expiry\n(TTL timeout)
-    InCache --> Evicted: Index Deletion
-
-    Evicted --> OnDisk: WriteLock acquired →\nJNIService.free() →\ndelete faiss::Index*
-
-    OnDisk --> [*]: Segment deleted\n(merge / index delete)
+flowchart TB
+    Start(( )) -->|"Index / Merge creates<br>.faiss/.hnsw segment"| OnDisk
+    OnDisk[OnDisk]
+    OnDisk -->|"First search hits<br>uncached segment"| Loading
+    Loading[Loading]
+    Loading -->|"NativeMemoryLoadStrategy<br>loads graph into off-heap via JNI"| InCache
+    InCache[InCache]
+    InCache -->|"Search queries<br>ReadLock"| InCache
+    InCache -->|"Clear Cache API"| Evicted
+    InCache -->|"Circuit Breaker<br>LRU eviction"| Evicted
+    InCache -->|"Cache Expiry<br>TTL timeout"| Evicted
+    InCache -->|"Index Deletion"| Evicted
+    Evicted[Evicted]
+    Evicted -->|"WriteLock acquired<br>JNIService.free<br>delete faiss::Index"| OnDisk
+    OnDisk -->|"Segment deleted<br>merge / index delete"| End(( ))
 ```
 
 - **OnDisk**: `.faiss` / `.hnsw` segment files exist on disk. No memory consumed.
