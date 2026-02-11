@@ -112,9 +112,11 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 - Integration assets must conform to the supported schema
 - Custom integrations require manual import through Saved Objects
 - Data must be ingested using compatible pipelines (Data Prepper, OpenTelemetry Collector, Fluent Bit)
+- Initial Data Range feature requires `@timestamp` field in MV schema
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Added Initial Data Range feature for MV creation with date picker UI
 - **v3.4.0** (2026-01-14): Improved static file serving with image type validation and SVG sanitization
 - **v3.0.0** (2025-05-06): Improved error handling and test result quality for integration configuration parsing
 - **v2.19.0** (2025-01-09): Added comprehensive SOP documentation for Integration and Vended Dashboards Setup
@@ -130,6 +132,8 @@ curl -O https://github.com/opensearch-project/opensearch-catalog/releases/downlo
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#2546](https://github.com/opensearch-project/dashboards-observability/pull/2546) | Implement 1st MV Refresh Window For Integration | [#2506](https://github.com/opensearch-project/dashboards-observability/issues/2506) |
+| v3.5.0 | [#11226](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11226) | Implement 1st MV Refresh Window For Integration Creation (OSD) | [#11227](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/11227) |
 | v3.4.0 | [#2530](https://github.com/opensearch-project/dashboards-observability/pull/2530) | Clean up interface for integrations static serving |   |
 | v3.0.0 | [#2387](https://github.com/opensearch-project/dashboards-observability/pull/2387) | Improve error handling when setting up and reading a new integration |   |
 | v3.0.0 | [#2376](https://github.com/opensearch-project/dashboards-observability/pull/2376) | Improve the test results for Integrations internals |   |
