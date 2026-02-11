@@ -204,6 +204,7 @@ Job Scheduler supports two schedule formats:
 
 ## Change History
 
+- **v3.5.0** (2026): CI/CD maintenance - Added integTest retry for sample-extension-plugin to reduce flakiness; Renamed CHANGELOG to CHANGELOG.md for changelog_verifier workflow compatibility; Updated GitHub Actions (upload-artifact v5→v6, download-artifact v6→v7) to Node.js 24 runtime
 - **v3.3.0** (2025): Added Job History Service for tracking job execution history; Refactored LockService to interface with LockServiceImpl; Implemented IdentityAwarePlugin for improved security integration; Added remote metadata storage support via SdkClient (DynamoDB, remote OpenSearch); Added multi-tenancy support
 - **v3.2.0** (2025): Added REST APIs for listing scheduled jobs and locks; Added support for second-level interval scheduling; Made LockService non-final for better extensibility; Fixed date serialization in transport actions
 - **v3.1.0** (2025): Added CHANGELOG and changelog_verifier workflow for iterative release note assembly; Removed Guava dependency to reduce jar hell and dependency conflicts in extending plugins
@@ -225,6 +226,10 @@ Job Scheduler supports two schedule formats:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#872](https://github.com/opensearch-project/job-scheduler/pull/872) | Add integTest retry for sample-extension-plugin | |
+| v3.5.0 | [#843](https://github.com/opensearch-project/job-scheduler/pull/843) | Rename CHANGELOG to CHANGELOG.md for changelog_verifier workflow | |
+| v3.5.0 | [#868](https://github.com/opensearch-project/job-scheduler/pull/868) | Dependabot: bump actions/download-artifact from 6 to 7 | |
+| v3.5.0 | [#867](https://github.com/opensearch-project/job-scheduler/pull/867) | Dependabot: bump actions/upload-artifact from 5 to 6 | |
 | v3.3.0 | [#814](https://github.com/opensearch-project/job-scheduler/pull/814) | Job History Service - creates history index recording job execution times | [#808](https://github.com/opensearch-project/job-scheduler/issues/808) |
 | v3.3.0 | [#714](https://github.com/opensearch-project/job-scheduler/pull/714) | Make LockService an interface and replace usages of ThreadContext.stashContext | [#238](https://github.com/opensearch-project/job-scheduler/issues/238) |
 | v3.3.0 | [#833](https://github.com/opensearch-project/job-scheduler/pull/833) | Create Guice module to bind LockService interface from SPI to LockServiceImpl |   |
