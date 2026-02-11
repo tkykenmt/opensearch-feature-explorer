@@ -3,6 +3,7 @@
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
 - Dashboards CSP Security
+- Dashboards CVE Fixes
 - Dashboards Data Plugin
 - Dashboards gzip Support
 - Dashboards Misc Fixes
