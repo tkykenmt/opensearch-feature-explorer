@@ -18,6 +18,7 @@
 ## dashboards-search-relevance
 - Agentic Search
 - Dashboards CI/CD
+- Search Relevance
 
 ## job-scheduler
 - Job Scheduler
