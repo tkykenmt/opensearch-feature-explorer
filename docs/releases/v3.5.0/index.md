@@ -1,5 +1,8 @@
 # OpenSearch v3.5.0 Release
 
+## dashboards-flow-framework
+- Dashboards ML Agents
+
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
 - Dashboards CSP Security
