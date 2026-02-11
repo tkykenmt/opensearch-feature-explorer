@@ -3,6 +3,9 @@
 ## cross-cluster-replication
 - Cross-Cluster Replication Bug Fixes
 
+## index-management
+- Index State Management (ISM)
+
 ## dashboards
 - Dashboards Dependencies
 
