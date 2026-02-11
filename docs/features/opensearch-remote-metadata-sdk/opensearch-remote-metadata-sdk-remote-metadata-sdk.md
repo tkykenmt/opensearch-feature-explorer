@@ -135,6 +135,7 @@ The following plugins support multi-tenancy with remote metadata storage:
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Add utility methods to `SdkClientUtils` for wrapping async operation completions with ActionListener handling (`wrapPutCompletion`, `wrapGetCompletion`, `wrapUpdateCompletion`, `wrapDeleteCompletion`, `wrapBulkCompletion`, `wrapSearchCompletion`), simplifying migration to SDK (PR #75)
 - **v3.4.0** (2026-01-14): Add CMK support for encrypting/decrypting customer data in DynamoDB backend with STS role assumption for cross-account access (PRs #271, #295); Fix error when updating global model status (PR #291)
 - **v3.3.0** (2025-09-22): Added SeqNo/PrimaryTerm support for Put and Delete requests, RefreshPolicy and timeout configuration for write operations, empty string ID validation fix, and ThreadContextAccess API compatibility fixes (PRs #234, #244, #236, #250, #254)
 - **v3.0.0** (2025-05-06): Update `Client` import path from `org.opensearch.client.Client` to `org.opensearch.transport.client.Client` for JPMS compatibility with OpenSearch 3.0.0 (PR #73)
@@ -157,6 +158,7 @@ The following plugins support multi-tenancy with remote metadata storage:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#75](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/75) | Add util methods to handle ActionListeners in whenComplete | [#67](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/67) |
 | v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/271) | Add CMK support to encrypt/decrypt customer data |   |
 | v3.4.0 | [#295](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/295) | Add assume role for CMK |   |
 | v3.4.0 | [#291](https://github.com/opensearch-project/opensearch-remote-metadata-sdk/pull/291) | Fix error when updating model status |   |
