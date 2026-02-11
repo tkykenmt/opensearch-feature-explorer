@@ -30,6 +30,7 @@ Cumulative feature documentation across all versions.
 
 ## opensearch-dashboards
 
+- Dashboards Misc Fixes
 - Navigation & NavGroups
 
 ## opensearch
