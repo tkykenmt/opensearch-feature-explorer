@@ -2,6 +2,7 @@
 
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
+- Dashboards Data Plugin
 - Dashboards gzip Support
 - Dashboards Misc Fixes
 - Dashboards Plugin Compatibility

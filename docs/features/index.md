@@ -30,6 +30,7 @@ Cumulative feature documentation across all versions.
 
 ## opensearch-dashboards
 
+- Dashboards Data Plugin
 - Dashboards gzip Support
 - Dashboards Misc Fixes
 - Navigation & NavGroups

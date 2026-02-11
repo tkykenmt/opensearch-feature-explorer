@@ -24,6 +24,7 @@
 | [opensearch-dashboards-data-connections](opensearch-dashboards-data-connections.md) | Data Connections |
 | [opensearch-dashboards-data-explorer](opensearch-dashboards-data-explorer.md) | Data Explorer |
 | [opensearch-dashboards-data-importer](opensearch-dashboards-data-importer.md) | Data Importer |
+| [opensearch-dashboards-data-plugin](opensearch-dashboards-data-plugin.md) | Data Plugin |
 | [opensearch-dashboards-data-source-permissions](opensearch-dashboards-data-source-permissions.md) | Data Source Permissions |
 | [opensearch-dashboards-data-source-selector](opensearch-dashboards-data-source-selector.md) | Data Source Selector |
 | [opensearch-dashboards-dataset-explorer](opensearch-dashboards-dataset-explorer.md) | Dataset Explorer |
