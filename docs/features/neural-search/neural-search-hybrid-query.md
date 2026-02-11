@@ -219,6 +219,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): GRPC hybrid query support, min_score parameter for final result filtering; BWC test fixes for Gradle 9 upgrade and version compatibility
 - **v3.3.0** (2026-01-11): Bug fixes for nested list ordering in embedding processor, unit test mocking support, CI disk cleanup for BWC tests
 - **v3.2.0** (2026-01-14): Upper bound parameter for min-max normalization, inner hits support within collapse, configurable collapse document storage setting, HybridQueryDocIdStream bug fix
 - **v3.1.0** (2025-06-10): Collapse functionality for hybrid queries, custom bulk scorer (2-3x performance), RRF custom weights support; Bug fixes for hybrid query validation, semantic field handling, radial search serialization, stats API, and stability improvements
@@ -247,6 +248,11 @@ GET /_plugins/_neural/stats/text_embedding_executions
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#1665](https://github.com/opensearch-project/neural-search/pull/1665) | Implement GRPC Hybrid Query | [#1495](https://github.com/opensearch-project/neural-search/issues/1495) |
+| v3.5.0 | [#1726](https://github.com/opensearch-project/neural-search/pull/1726) | Add support for min_score param in hybrid search | [#1164](https://github.com/opensearch-project/neural-search/issues/1164) |
+| v3.5.0 | [#1729](https://github.com/opensearch-project/neural-search/pull/1729) | Enable BWC tests after upgrading to Gradle 9 | [#1728](https://github.com/opensearch-project/neural-search/issues/1728) |
+| v3.5.0 | [#1737](https://github.com/opensearch-project/neural-search/pull/1737) | Correct BWC tests between 3.5 and 2.19 | [#1731](https://github.com/opensearch-project/neural-search/issues/1731) |
+| v3.5.0 | [#1725](https://github.com/opensearch-project/neural-search/pull/1725) | Introduce BWC tests for nested field support with Sparse ANN |   |
 | v3.3.0 | [#1570](https://github.com/opensearch-project/neural-search/pull/1570) | Fix: Reversed order of values in nested list with embedding processor | [#1569](https://github.com/opensearch-project/neural-search/issues/1569) |
 | v3.3.0 | [#1528](https://github.com/opensearch-project/neural-search/pull/1528) | Enable mocking of final classes and static functions |   |
 | v3.3.0 | [#1584](https://github.com/opensearch-project/neural-search/pull/1584) | Add CI action to clean up disk and apply to BWC | [#1583](https://github.com/opensearch-project/neural-search/issues/1583) |
