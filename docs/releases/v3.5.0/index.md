@@ -9,5 +9,6 @@
 - Dashboards Plugin Compatibility
 - Data Importer
 - ECharts Migration
+- Explore Enhancements
 - Sample Data
 - TSVB Enhancements

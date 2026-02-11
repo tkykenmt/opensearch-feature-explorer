@@ -34,6 +34,7 @@ Cumulative feature documentation across all versions.
 - Dashboards gzip Support
 - Dashboards Misc Fixes
 - ECharts Migration
+- Explore Plugin
 - Navigation & NavGroups
 
 ## opensearch
