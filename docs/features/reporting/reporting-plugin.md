@@ -110,6 +110,7 @@ The Reporting plugin integrates with OpenSearch Security:
 
 ## Change History
 
+- **v3.5.0**: Updated mockito-core test dependency to align with OpenSearch core version, resolving build conflicts
 - **v3.3.0** (2026-01-11): Security fix for CVE-2025-7783
 - **v3.2.0** (2026-01-11): Fixed system index creation permissions and tenant URL parsing
 - **v3.1.0** (2025-06-13): Version increment and release notes maintenance
@@ -130,6 +131,7 @@ The Reporting plugin integrates with OpenSearch Security:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#678](https://github.com/opensearch-project/reporting/pull/678) | Bump mockito-core version to align with OpenSearch core | Build conflict |
 | v3.3.0 | [#640](https://github.com/opensearch-project/reporting/pull/640) | Fixing CVE-2025-7783 |   |
 | v3.2.0 | [#1108](https://github.com/opensearch-project/reporting/pull/1108) | Create report indices in system context to avoid permission issues | [#998](https://github.com/opensearch-project/reporting/issues/998) |
 | v3.2.0 | [#599](https://github.com/opensearch-project/dashboards-reporting/pull/599) | Fix tenant URL parsing when generating reports from Discover | [#535](https://github.com/opensearch-project/dashboards-reporting/issues/535) |
