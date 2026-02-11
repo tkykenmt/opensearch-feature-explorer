@@ -11,5 +11,6 @@
 - Data Importer
 - ECharts Migration
 - Explore Enhancements
+- Prometheus Metrics in Explore
 - Sample Data
 - TSVB Enhancements
