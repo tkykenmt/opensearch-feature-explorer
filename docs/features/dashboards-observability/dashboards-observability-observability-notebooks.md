@@ -132,6 +132,7 @@ Notebooks are stored as saved objects in the `.kibana` index. Each notebook cont
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Added capability-based visibility control; Notebook nav link hidden when Investigation capability is enabled
 - **v3.0.0** (2025-05-06): Removed legacy notebooks support; only `.kibana` storage supported
 - **v2.19.0** (2025-02-11): Deprecated legacy notebooks with migration notice
 - **v2.17.0** (2024-09-17): UI improvements (badge counter in breadcrumbs, simplified delete workflow); fixed sample notebooks for MDS environments
@@ -150,6 +151,7 @@ Notebooks are stored as saved objects in the `.kibana` index. Each notebook cont
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#2512](https://github.com/opensearch-project/dashboards-observability/pull/2512) | Use capabilities to show notebook | [#2442](https://github.com/opensearch-project/dashboards-observability/issues/2442) |
 | v3.0.0 | [#2406](https://github.com/opensearch-project/dashboards-observability/pull/2406) | Remove support for legacy notebooks | [#2350](https://github.com/opensearch-project/dashboards-observability/issues/2350) |
 | v2.17.0 | [#2110](https://github.com/opensearch-project/dashboards-observability/pull/2110) | UI update: badge counter in breadcrumbs, simplified delete workflow |   |
 | v2.17.0 | [#2108](https://github.com/opensearch-project/dashboards-observability/pull/2108) | Fix sample notebooks for MDS environments |   |

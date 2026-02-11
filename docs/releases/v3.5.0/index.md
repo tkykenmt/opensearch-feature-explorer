@@ -37,6 +37,9 @@
 - Observability Dependencies
 - Observability Integration
 
+## dashboards-observability
+- Observability Notebooks
+
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
 - Dashboards CSP Security
