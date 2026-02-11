@@ -51,6 +51,9 @@
 ## performance-analyzer
 - Performance Analyzer
 
+## query-insights
+- Query Insights
+
 ## remote
 - Remote Store
 
