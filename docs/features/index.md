@@ -37,6 +37,7 @@ Cumulative feature documentation across all versions.
 - Explore Plugin
 - Navigation & NavGroups
 - Prometheus Metrics in Explore
+- Table Visualization
 
 ## opensearch
 

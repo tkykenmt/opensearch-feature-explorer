@@ -13,4 +13,5 @@
 - Explore Enhancements
 - Prometheus Metrics in Explore
 - Sample Data
+- Table Visualization Rewrite
 - TSVB Enhancements
