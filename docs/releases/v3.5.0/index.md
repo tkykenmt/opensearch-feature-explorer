@@ -28,5 +28,8 @@
 ## performance-analyzer
 - Performance Analyzer
 
+## observability
+- Observability Dependencies
+
 ## reporting
 - Reporting Dependencies
