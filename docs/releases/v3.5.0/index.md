@@ -14,6 +14,7 @@
 - Prometheus Metrics in Explore
 - Sample Data
 - Table Visualization Rewrite
+- Threshold Visualization
 - TSVB Enhancements
 - Observability Traces
 - Dashboards Chat/AI
