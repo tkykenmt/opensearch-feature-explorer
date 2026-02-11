@@ -117,6 +117,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): PA Commons dependency bump 2.0.0 → 2.1.0 with JDK 21 compatibility; Fixed Jackson annotations version mismatch in build configuration
 - **v3.4.0** (2026-01-11): Build configuration update - restore Java 21 minimum compatibility, remove Java 24 from CI matrix, simplify build.gradle version selection
 - **v3.3.0** (2026-01-11): Transport channel wrapper improvements - delegate getProfileName(), getChannelType(), getVersion(), and get() to wrapped channel; removed getInnerChannel() method for better security plugin compatibility
 - **v3.2.0** (2025-07-18): Build infrastructure update - SpotBugs 6.2.2, Checkstyle 10.26.1; Removed CVE-2025-27820 workaround
@@ -135,6 +136,8 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#910](https://github.com/opensearch-project/performance-analyzer/pull/910) | Bump PA Commons to v2.1.1 and fix Jackson annotations version |   |
+| v3.5.0 | [#911](https://github.com/opensearch-project/performance-analyzer/pull/911) | Fix PA Commons version to 2.1.0 |   |
 | v3.4.0 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |   |
 | v3.3.0 | [#845](https://github.com/opensearch-project/performance-analyzer/pull/845) | Use Subclass method for Version and Channel type for security plugin compatibility |   |
 | v3.3.0 | [#846](https://github.com/opensearch-project/performance-analyzer/pull/846) | Increment to 3.3.0.0 and update SHA files |   |
