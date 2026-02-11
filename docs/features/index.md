@@ -27,6 +27,7 @@ Cumulative feature documentation across all versions.
 - Observability MDS & System Index
 - Observability Release Maintenance
 - Observability Security Maintenance
+- Observability Dependencies
 
 ## opensearch-dashboards
 
