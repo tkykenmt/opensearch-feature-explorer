@@ -33,6 +33,7 @@ Cumulative feature documentation across all versions.
 - Dashboards Data Plugin
 - Dashboards gzip Support
 - Dashboards Misc Fixes
+- ECharts Migration
 - Navigation & NavGroups
 
 ## opensearch
