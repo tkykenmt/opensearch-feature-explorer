@@ -2,3 +2,4 @@
 
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
+- Dashboards Plugin Compatibility
