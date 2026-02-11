@@ -56,6 +56,7 @@ No additional configuration is required. The fixes are applied at the source cod
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Fixed CI workflows for automated backport PRs by using GitHub App tokens instead of GITHUB_TOKEN
 - **v2.17.0** (2024-09-17): Fixed Sass division warning by updating to `calc()` syntax; Fixed broken LICENSE file link and removed unused Docker documentation links
 
 
@@ -69,5 +70,6 @@ No additional configuration is required. The fixes are applied at the source cod
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#720](https://github.com/opensearch-project/dashboards-search-relevance/pull/720) | Enable CI workflows for automated backport PRs | |
 | v2.17.0 | [#426](https://github.com/opensearch-project/dashboards-search-relevance/pull/426) | Fix sass division warning |   |
 | v2.17.0 | [#420](https://github.com/opensearch-project/dashboards-search-relevance/pull/420) | Update Links in Documentation |   |
