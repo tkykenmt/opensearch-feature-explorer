@@ -33,6 +33,7 @@
 
 ## observability
 - Observability Dependencies
+- Observability Integration
 
 ## notifications
 - Notifications Maintenance
