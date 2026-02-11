@@ -151,6 +151,11 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): LLM judgment customization - customizable prompt templates with three rating types (SCORE0_1, SCORE1_5, RELEVANT_IRRELEVANT), enhanced caching with prompt template differentiation
+- **v3.5.0** (2026-02-11): New `_search` API endpoints for Query Sets, Search Configurations, Judgments, and Experiments using OpenSearch DSL
+- **v3.5.0** (2026-02-11): UBI sample dataset and dashboards for understanding user interaction patterns
+- **v3.5.0** (2026-02-11): UI/UX improvements - Search Configuration reuse in comparison workflows, improved Judgment Detail page with structured table view
+- **v3.5.0** (2026-02-11): Infrastructure - version-based index mapping updates with `_meta.schema_version`, description field for Search Configurations
 - **v3.4.0** (2026-01-11): Bug fix - Fix floating-point precision issues in Hybrid Optimizer weight generation by switching to step-based iteration and rounding, ensuring clean weight pairs like 0.4/0.6 instead of 0.39999998/0.60000002
 - **v3.4.0** (2026-01-11): Bug fix - Fix hybrid optimizer experiments stuck in PROCESSING after judgment deletion by correcting failure handling to properly transition to ERROR state
 - **v3.4.0** (2026-01-11): Bug fix - Fix query serialization for plugins (e.g., Learning to Rank) that extend OpenSearch's DSL, enabling LTR rescore queries in experiments
@@ -177,6 +182,22 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#667](https://github.com/opensearch-project/dashboards-search-relevance/pull/667) | Add FrontEnd Support for LLM Judgement Template Prompt |   |
+| v3.5.0 | [#727](https://github.com/opensearch-project/dashboards-search-relevance/pull/727) | Reuse Search Configurations with Single Query Comparison UI | [#695](https://github.com/opensearch-project/dashboards-search-relevance/issues/695) |
+| v3.5.0 | [#729](https://github.com/opensearch-project/dashboards-search-relevance/pull/729) | Add UBI sample dataset and dashboards | [#730](https://github.com/opensearch-project/dashboards-search-relevance/issues/730) |
+| v3.5.0 | [#674](https://github.com/opensearch-project/dashboards-search-relevance/pull/674) | Add optional status=COMPLETED parameter for filtering judgments | [#266](https://github.com/opensearch-project/search-relevance/issues/266) |
+| v3.5.0 | [#699](https://github.com/opensearch-project/dashboards-search-relevance/pull/699) | Add Search Pipeline to Search Configuration Detail page |   |
+| v3.5.0 | [#713](https://github.com/opensearch-project/dashboards-search-relevance/pull/713) | Improve UX of the Judgment Detail page | [#691](https://github.com/opensearch-project/dashboards-search-relevance/issues/691) |
+| v3.5.0 | [#344](https://github.com/opensearch-project/search-relevance/pull/344) | Version-based index mapping update support | [#310](https://github.com/opensearch-project/search-relevance/issues/310) |
+| v3.5.0 | [#264](https://github.com/opensearch-project/search-relevance/pull/264) | LLM Judgement Customized Prompt Template Implementation |   |
+| v3.5.0 | [#372](https://github.com/opensearch-project/search-relevance/pull/372) | Add `_search` endpoint for Search Configurations | [#351](https://github.com/opensearch-project/search-relevance/issues/351) |
+| v3.5.0 | [#371](https://github.com/opensearch-project/search-relevance/pull/371) | Add `_search` endpoint for Judgments | [#351](https://github.com/opensearch-project/search-relevance/issues/351) |
+| v3.5.0 | [#362](https://github.com/opensearch-project/search-relevance/pull/362) | Add `_search` endpoint for Query Sets | [#351](https://github.com/opensearch-project/search-relevance/issues/351) |
+| v3.5.0 | [#369](https://github.com/opensearch-project/search-relevance/pull/369) | Add `_search` endpoint for Experiments | [#351](https://github.com/opensearch-project/search-relevance/issues/351) |
+| v3.5.0 | [#354](https://github.com/opensearch-project/search-relevance/pull/354) | Better ESCI demo dataset with images |   |
+| v3.5.0 | [#364](https://github.com/opensearch-project/search-relevance/pull/364) | Support for parsing custom UBI indexes |   |
+| v3.5.0 | [#370](https://github.com/opensearch-project/search-relevance/pull/370) | Add description support in Search Configuration | [#281](https://github.com/opensearch-project/search-relevance/issues/281) |
+| v3.5.0 | [#349](https://github.com/opensearch-project/search-relevance/pull/349) | Add BWC and Integration tests for index mapping update |   |
 | v3.2.0 | [#570](https://github.com/opensearch-project/dashboards-search-relevance/pull/570) | Dashboard visualization for evaluation and hybrid experiments |   |
 | v3.2.0 | [#577](https://github.com/opensearch-project/dashboards-search-relevance/pull/577) | AutoPopulated fields in Query Compare page via URL parameters |   |
 | v3.2.0 | [#594](https://github.com/opensearch-project/dashboards-search-relevance/pull/594) | Polling mechanism for experiment and judgment listing |   |
