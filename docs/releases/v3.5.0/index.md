@@ -48,6 +48,7 @@
 - Job Scheduler
 
 ## dashboards-search-relevance
+- Agentic Search
 - Dashboards CI/CD
 
 ## cross-cluster-replication

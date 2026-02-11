@@ -226,6 +226,7 @@ POST /_plugins/_ml/agents/_register
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Intelligent index selection from ListIndexTool response, UI/UX enhancements (loading spinner, documentation link, styling improvements)
 - **v3.4.0** (2026-01-11): Source parameter preservation (`_source.includes`/`_source.excludes`), Search Relevance Workbench pairwise comparison support, MCP server integration, conversational search UI with memory management, improved test flow UX, version filtering
 - **v3.3.0** (2026-01-11): Conversational agent support, neural search query generation, unified model configuration, automatic index mapping and sample document retrieval
 - **v3.2.0** (2026-01-10): Initial experimental implementation with `agentic` query clause and `agentic_query_translator` processor
@@ -245,6 +246,8 @@ POST /_plugins/_ml/agents/_register
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [neural-search#1713](https://github.com/opensearch-project/neural-search/pull/1713) | Select explicit index for Agentic Query if returned from ListIndexTool |   |
+| v3.5.0 | [dashboards-search-relevance#728](https://github.com/opensearch-project/dashboards-search-relevance/pull/728) | Add agentic search UI/UX enhancements |   |
 | v3.4.0 | [neural-search#1669](https://github.com/opensearch-project/neural-search/pull/1669) | Preserve source parameter for agentic query | [#1664](https://github.com/opensearch-project/neural-search/issues/1664) |
 | v3.4.0 | [dashboards-search-relevance#693](https://github.com/opensearch-project/dashboards-search-relevance/pull/693) | Add support for agent search in pairwise comparison |   |
 | v3.4.0 | [dashboards-search-relevance#802](https://github.com/opensearch-project/dashboards-search-relevance/pull/802) | Add MCP server support |   |
