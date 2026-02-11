@@ -3,6 +3,9 @@
 ## dashboards-flow-framework
 - Dashboards ML Agents
 
+## neural-search
+- SEISMIC (Sparse ANN) Enhancements
+
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
 - Dashboards CSP Security
