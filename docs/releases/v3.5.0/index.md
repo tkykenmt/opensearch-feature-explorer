@@ -15,3 +15,4 @@
 - Sample Data
 - Table Visualization Rewrite
 - TSVB Enhancements
+- Observability Traces
