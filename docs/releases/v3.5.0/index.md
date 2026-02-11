@@ -34,6 +34,7 @@
 - Notifications Maintenance
 
 ## observability
+- APM (Application Performance Monitoring)
 - Observability Dependencies
 - Observability Integration
 
