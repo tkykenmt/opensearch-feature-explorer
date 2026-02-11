@@ -191,7 +191,7 @@ Support for conversational search with memory persistence:
 
 | Change | Description |
 |--------|-------------|
-| Unified model field | Single "model" field replaces separate LLM configuration |
+| Unified model field | "Large language model" field replaces generic "Model" label (v3.5.0+) |
 | Auto-inferred LLM interface | Automatically detects interface from connector URL |
 | Hidden advanced settings | LLM interface moved under "Advanced settings" |
 
@@ -214,6 +214,7 @@ For flow agents, response filters are auto-configured for supported providers:
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Promoted ML Agents configuration to production-ready (removed experimental badges), improved form labels ("Model" → "Large language model", fixed "LLM interface" capitalization)
 - **v3.4.0** (2026-01-14): Added agent summary visualization, memory integration for conversational search, simplified agent configuration with auto-inferred LLM interface, automatic response filters for flow agents, Firefox EuiSelect fixes
 - **v3.1.0** (2025-06-10): Major UI refactor with left panel navigation, integrated preview into inspector panel, added Semantic Search using Sparse Encoders template, configurable thread pool sizes
 - **v3.0.0** (2025-05-13): Renamed to "AI Search Flows", added RAG + hybrid search preset, simplified ML processor forms, improved state persistence, added processor reordering, refactored quick configure components with Formik integration, improved processor error handling with dynamic error display, added version compatibility check to hide search query section for versions < 2.19.0
@@ -233,6 +234,8 @@ For flow agents, response filters are auto-configured for supported providers:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#832](https://github.com/opensearch-project/dashboards-flow-framework/pull/832) | Remove experimental badging |   |
+| v3.5.0 | [#836](https://github.com/opensearch-project/dashboards-flow-framework/pull/836) | Update agent form field titles |   |
 | v3.4.0 | [#626](https://github.com/opensearch-project/dashboards-assistant/pull/626) | Disable dashboards assistant chatbot if investigation feature flag enabled |   |
 | v3.4.0 | [#801](https://github.com/opensearch-project/dashboards-flow-framework/pull/801) | Add agent summary |   |
 | v3.4.0 | [#796](https://github.com/opensearch-project/dashboards-flow-framework/pull/796) | Clean up / hide complex fields on agent configuration |   |
