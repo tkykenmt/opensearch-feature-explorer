@@ -6,7 +6,7 @@ tags:
 
 ## Summary
 
-Content Security Policy (CSP) is a security standard in OpenSearch Dashboards that helps prevent cross-site scripting (XSS), clickjacking, and other code injection attacks. OpenSearch Dashboards supports both enforced CSP rules and a report-only mode for testing policies without blocking content. The CSP configuration can be managed both statically through YAML configuration and dynamically through the Application Config API.
+Content Security Policy (CSP) is a security standard in OpenSearch Dashboards that helps prevent cross-site scripting (XSS), clickjacking, and other code injection attacks. OpenSearch Dashboards supports both enforced CSP rules and a report-only mode for testing policies without blocking content. The CSP configuration can be managed both statically through YAML configuration and dynamically through the Application Config API. As of v3.5.0, nonce-based style protection is available in CSP-Report-Only mode, and stricter input sanitization is applied across visualizations.
 
 ## Details
 
@@ -31,6 +31,14 @@ graph TB
         Headers --> ReportingEndpoints[Reporting-Endpoints]
     end
     
+    subgraph "Nonce Lifecycle (v3.5.0+)"
+        NonceGen[crypto.randomBytes 128-bit] --> MetaTag["&lt;meta name=csp-nonce&gt;"]
+        MetaTag --> ClientNonce[getNonce utility]
+        ClientNonce --> DynStyles[Dynamic Style Elements]
+        NonceGen --> WebpackNonce[__webpack_nonce__]
+        NonceGen --> DOMPatch[document.createElement patch]
+    end
+    
     subgraph "Plugins"
         cspHandler[csp_handler Plugin] --> CSPService
         appConfig[application_config Plugin] --> DynamicCSP
@@ -42,10 +50,11 @@ graph TB
 ```mermaid
 flowchart TB
     Request[HTTP Request] --> Handler[Route Handler]
-    Handler --> DynamicCheck{Dynamic Config?}
+    Handler --> NonceGen[Generate Nonce]
+    NonceGen --> DynamicCheck{Dynamic Config?}
     DynamicCheck -->|Yes| DynamicValue[Use Dynamic Value]
     DynamicCheck -->|No| StaticValue[Use Static Value]
-    DynamicValue --> BuildHeaders[Build CSP Headers]
+    DynamicValue --> BuildHeaders[Build CSP Headers with Nonce]
     StaticValue --> BuildHeaders
     BuildHeaders --> Response[HTTP Response]
 ```
@@ -58,6 +67,7 @@ flowchart TB
 | `application_config` Plugin | Provides read/write APIs for dynamic configuration |
 | `HttpResourcesService` | Applies CSP headers to rendered resources |
 | `CoreRouteHandlerContext` | Provides access to dynamic config from request handlers |
+| `CspReportOnlyConfig` | Manages CSP-Report-Only header construction with nonce support |
 
 ### Configuration
 
@@ -77,6 +87,7 @@ flowchart TB
 |---------|-------------|----------|
 | `frame-ancestors` | Controls which sites can embed Dashboards | `/api/appconfig/csp.rules.frame-ancestors` |
 | `csp-report-only.isEmitting` | Enable/disable CSP-Report-Only header | `/api/appconfig/csp-report-only` |
+| CSP directive modifications | Add/remove/set CSP directives dynamically | `/api/appconfig/csp.*` |
 
 ### Usage Example
 
@@ -120,13 +131,16 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 
 ## Limitations
 
-- Dynamic configuration only supports `frame-ancestors` directive and `csp-report-only.isEmitting`
+- Dynamic configuration only supports `frame-ancestors` directive and `csp-report-only.isEmitting` (plus general CSP directive modifications as of v3.5.0)
 - Other CSP directives must be configured statically in YAML
 - Requires Security plugin permissions to modify `.opensearch_dashboards_config` index
 - Dynamic configurations override YAML configurations (except for empty CSP rules)
+- `style-src-attr` must allow `'unsafe-inline'` due to Monaco editor's reliance on inline style attributes (see [microsoft/monaco-editor#271](https://github.com/microsoft/monaco-editor/issues/271))
+- Nonces are only applied in CSP-Report-Only mode; enforced CSP still uses static rules
 
 ## Change History
 
+- **v3.5.0** (2026-02): Added nonce-based style protection for `style-src-elem` in CSP-Report-Only mode; added dynamic CSP directive modification via Application Config API; added stricter sanitization on visualization axis labels/names and DOMPurify-based URL/imageLabel sanitization; removed legacy intentional CSP violation detection mechanism
 - **v3.4.0** (2026-01): Added dynamic configuration support for CSP-Report-Only `isEmitting` setting
 - **v2.13.0**: Initial implementation of dynamic CSP configuration for `frame-ancestors` directive
 
@@ -144,3 +158,8 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 |---------|-----|-------------|---------------|
 | v2.13.0 | - | Initial CSP dynamic configuration for frame-ancestors |   |
 | v3.4.0 | [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |   |
+| v3.5.0 | [#11074](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11074) | Style-src-elem nonces for CSP report-only |   |
+| v3.5.0 | [#11168](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11168) | Add CSP modifications using dynamic config |   |
+| v3.5.0 | [#11251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11251) | Add stricter sanitization on axis label and name |   |
+| v3.5.0 | [#11252](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11252) | Use dompurify to sanitize URL and imageLabel |   |
+| v3.5.0 | [#11060](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11060) | Remove Intentional CSP Violation Detection Mechanism |   |
