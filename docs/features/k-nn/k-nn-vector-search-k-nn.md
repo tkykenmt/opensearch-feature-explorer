@@ -92,6 +92,7 @@ flowchart TB
 |---------|-------------|---------|
 | `index.knn` | Enable k-NN for the index | `false` |
 | `index.knn.algo_param.ef_search` | Size of dynamic candidate list during search | `100` |
+| `index.knn.faiss.efficient_filter.disable_exact_search` | Disable exact search fallback after ANN with efficient filters (v3.5.0+) | `false` |
 
 #### Cluster Settings
 
@@ -368,8 +369,13 @@ Response:
 
 ## Change History
 
-- **v2.19.0** (2025-02-18): Cosine similarity support for FAISS engine; AVX-512 SPR build mode for Intel Sapphire Rapids; binary vector support for Lucene engine; derived source for vector fields (experimental); multi-value innerHit for nested k-NN fields; concurrent graph creation for Lucene engine; expand_nested_docs parameter for NMSLIB; NMSLIB engine deprecation; numerous bug fixes including C++17 upgrade, byte vector filter fix, mapping validation, query vector memory release, filter rewrite logic fix
+- **v3.5.0** (2026-02-11): Index setting to disable exact search fallback after ANN with Faiss efficient filters; Bulk SIMD V2 implementation with 15-31% throughput improvement; Lucene engine ef_search parameter correction for improved recall; nested k-NN query filter improvements for parent-scope filtering; derived source regex support and field exclusion handling; AdditionalCodecs integration for custom codec registration; bug fixes for MOS reentrant search in byte index, warmup integer overflow for large files (>2GB), nested docs query with missing vector fields, BinaryCagra score conversion; improved validation for k > total results; Gradle build enhancements and comprehensive IT/BWC tests
 - **v3.4.0** (2026-01-11): Bug fixes for memory optimized search on old indices (NPE), totalHits inconsistency, race condition in KNNQueryBuilder with cosine similarity, Faiss inner product score-to-distance calculation, disk-based vector search BWC for segment merge
+- **v3.3.0** (2026-01-11): Bug fixes for MDC check NPE with byte vectors, derived source deserialization on invalid documents, cosine score range in LuceneOnFaiss, filter k nullable, integer overflow in distance computation, AVX2 detection on non-Linux/Mac/Windows platforms, radial search for byte vectors with FAISS, MMR doc ID issue, JNI local reference leak, nested exact search rescoring
+- **v3.2.0** (2025-10-01): GPU indexing support for FP16, Byte, and Binary vectors via Cagra2; Asymmetric Distance Computation (ADC) for improved recall on binary quantized indices; random rotation feature for binary encoder; gRPC support for k-NN queries; nested search support for IndexBinaryHNSWCagra; dynamic index thread quantity defaults (4 threads for 32+ core machines); NativeMemoryCacheKeyHelper @ collision fix
+- **v3.1.0** (2025-07-15): Memory-optimized search (LuceneOnFaiss) integration into KNNWeight with layered architecture; rescore support for Lucene engine; 4x compression rescore context optimization; derived source indexing optimization; script scoring performance improvement for binary vectors; TopDocs refactoring for search results; Bug fixes for quantization cache scale/thread safety, rescoring for dimensions > 1000, native memory cache race conditions, nested vector query with efficient filter, mode/compression backward compatibility for pre-2.17.0 indices
+- **v3.0.0** (2025-05-06): Breaking changes removing deprecated index settings; node-level circuit breakers; filter function in KNNQueryBuilder; concurrency optimizations for graph loading; Remote Native Index Build foundation
+- **v2.19.0** (2025-02-18): Cosine similarity support for FAISS engine; AVX-512 SPR build mode for Intel Sapphire Rapids; binary vector support for Lucene engine; derived source for vector fields (experimental); multi-value innerHit for nested k-NN fields; concurrent graph creation for Lucene engine; expand_nested_docs parameter for NMSLIB; NMSLIB engine deprecation; numerous bug fixes including C++17 upgrade, byte vector filter fix, mapping validation, query vector memory release, filter rewrite logic fix
 - **v3.3.0** (2026-01-11): Bug fixes for MDC check NPE with byte vectors, derived source deserialization on invalid documents, cosine score range in LuceneOnFaiss, filter k nullable, integer overflow in distance computation, AVX2 detection on non-Linux/Mac/Windows platforms, radial search for byte vectors with FAISS, MMR doc ID issue, JNI local reference leak, nested exact search rescoring
 - **v3.2.0** (2025-10-01): GPU indexing support for FP16, Byte, and Binary vectors via Cagra2; Asymmetric Distance Computation (ADC) for improved recall on binary quantized indices; random rotation feature for binary encoder; gRPC support for k-NN queries; nested search support for IndexBinaryHNSWCagra; dynamic index thread quantity defaults (4 threads for 32+ core machines); NativeMemoryCacheKeyHelper @ collision fix
 - **v3.1.0** (2025-07-15): Memory-optimized search (LuceneOnFaiss) integration into KNNWeight with layered architecture; rescore support for Lucene engine; 4x compression rescore context optimization; derived source indexing optimization; script scoring performance improvement for binary vectors; TopDocs refactoring for search results; Bug fixes for quantization cache scale/thread safety, rescoring for dimensions > 1000, native memory cache race conditions, nested vector query with efficient filter, mode/compression backward compatibility for pre-2.17.0 indices
@@ -397,6 +403,22 @@ Response:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#3022](https://github.com/opensearch-project/k-NN/pull/3022) | Index setting to disable exact search after ANN with Faiss efficient filters | [#2936](https://github.com/opensearch-project/k-NN/issues/2936) |
+| v3.5.0 | [#3075](https://github.com/opensearch-project/k-NN/pull/3075) | Bulk SIMD V2 Implementation | [#2875](https://github.com/opensearch-project/k-NN/issues/2875) |
+| v3.5.0 | [#3037](https://github.com/opensearch-project/k-NN/pull/3037) | Correct ef_search parameter for Lucene engine | [#2940](https://github.com/opensearch-project/k-NN/issues/2940) |
+| v3.5.0 | [#3049](https://github.com/opensearch-project/k-NN/pull/3049) | Field exclusion in source indexing handling | [#3034](https://github.com/opensearch-project/k-NN/issues/3034) |
+| v3.5.0 | [#2990](https://github.com/opensearch-project/k-NN/pull/2990) | Join filter clauses of nested k-NN queries to root-parent scope | [#2222](https://github.com/opensearch-project/k-NN/issues/2222) |
+| v3.5.0 | [#3031](https://github.com/opensearch-project/k-NN/pull/3031) | Regex for derived source support | [#3029](https://github.com/opensearch-project/k-NN/issues/3029) |
+| v3.5.0 | [#3038](https://github.com/opensearch-project/k-NN/pull/3038) | Update validation for k > total results | [#3017](https://github.com/opensearch-project/k-NN/issues/3017) |
+| v3.5.0 | [#3085](https://github.com/opensearch-project/k-NN/pull/3085) | AdditionalCodecs and EnginePlugin::getAdditionalCodecs hook |   |
+| v3.5.0 | [#3067](https://github.com/opensearch-project/k-NN/pull/3067) | Fix: Warmup seek overflow for large files | [#3066](https://github.com/opensearch-project/k-NN/issues/3066) |
+| v3.5.0 | [#3071](https://github.com/opensearch-project/k-NN/pull/3071) | Fix: MOS reentrant search bug in byte index | [#3069](https://github.com/opensearch-project/k-NN/issues/3069) |
+| v3.5.0 | [#3051](https://github.com/opensearch-project/k-NN/pull/3051) | Fix: Nested docs query with missing vector fields | [#3026](https://github.com/opensearch-project/k-NN/issues/3026) |
+| v3.5.0 | [#2983](https://github.com/opensearch-project/k-NN/pull/2983) | Fix: BinaryCagra score conversion |   |
+| v3.5.0 | [#3064](https://github.com/opensearch-project/k-NN/pull/3064) | Add IT and BWC tests for mixed vector/non-vector docs | [#2284](https://github.com/opensearch-project/k-NN/issues/2284) |
+| v3.5.0 | [#3033](https://github.com/opensearch-project/k-NN/pull/3033) | Gradle ban System.loadLibrary | [#3005](https://github.com/opensearch-project/k-NN/issues/3005) |
+| v3.5.0 | [#3032](https://github.com/opensearch-project/k-NN/pull/3032) | Create build graph |   |
+| v3.5.0 | [#3070](https://github.com/opensearch-project/k-NN/pull/3070) | Add exception type for expected warmup behavior |   |
 | v3.4.0 | [#2918](https://github.com/opensearch-project/k-NN/pull/2918) | Fix: Block memory optimized search for old indices created before 2.18 | [#2917](https://github.com/opensearch-project/k-NN/issues/2917) |
 | v3.4.0 | [#2965](https://github.com/opensearch-project/k-NN/pull/2965) | Fix: NativeEngineKnnQuery to return correct totalHits | [#2962](https://github.com/opensearch-project/k-NN/issues/2962) |
 | v3.4.0 | [#2974](https://github.com/opensearch-project/k-NN/pull/2974) | Fix: Race condition on transforming vector in KNNQueryBuilder |   |
