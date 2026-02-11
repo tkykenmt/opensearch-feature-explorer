@@ -1463,7 +1463,8 @@
           "category": "bugfix",
           "repository": "remote"
         }
-      ]
+      ],
+      "issue_number": 2530
     },
     {
       "name": "Dashboards Dependencies",
@@ -1556,7 +1557,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2531
     },
     {
       "name": "Notifications Maintenance",
@@ -1576,7 +1578,8 @@
           "category": "bugfix",
           "repository": "notifications"
         }
-      ]
+      ],
+      "issue_number": 2532
     },
     {
       "name": "Observability Dependencies",
@@ -1608,7 +1611,8 @@
           "category": "bugfix",
           "repository": "observability"
         }
-      ]
+      ],
+      "issue_number": 2533
     },
     {
       "name": "Reporting Dependencies",
@@ -1622,7 +1626,8 @@
           "category": "bugfix",
           "repository": "reporting"
         }
-      ]
+      ],
+      "issue_number": 2534
     },
     {
       "name": "Performance Analyzer",
@@ -1636,7 +1641,8 @@
           "category": "bugfix",
           "repository": "performance"
         }
-      ]
+      ],
+      "issue_number": 2535
     },
     {
       "name": "Skills Dependencies",
@@ -1650,7 +1656,8 @@
           "category": "bugfix",
           "repository": "skills"
         }
-      ]
+      ],
+      "issue_number": 2536
     },
     {
       "name": "User Plugin Maintenance",
@@ -1664,7 +1671,8 @@
           "category": "bugfix",
           "repository": "user"
         }
-      ]
+      ],
+      "issue_number": 2537
     },
     {
       "name": "Threshold Visualization",
@@ -1696,7 +1704,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2538
     },
     {
       "name": "Dashboards Chat/AI",
@@ -1800,7 +1809,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2539
     },
     {
       "name": "Observability Traces",
@@ -1869,7 +1879,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2540
     },
     {
       "name": "Table Visualization Rewrite",
@@ -1889,7 +1900,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2541
     },
     {
       "name": "Prometheus Metrics in Explore",
@@ -1963,7 +1975,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2542
     },
     {
       "name": "Dashboards CVE Fixes",
@@ -1977,7 +1990,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2543
     },
     {
       "name": "Explore Enhancements",
@@ -2051,7 +2065,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2544
     },
     {
       "name": "Dashboards CSP Security",
@@ -2089,7 +2104,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2545
     },
     {
       "name": "ECharts Migration",
@@ -2199,7 +2215,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2546
     },
     {
       "name": "Dashboards Data Plugin",
@@ -2213,7 +2230,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2547
     },
     {
       "name": "TSVB Enhancements",
@@ -2227,7 +2245,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2548
     },
     {
       "name": "Dashboards gzip Support",
@@ -2259,7 +2278,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2549
     },
     {
       "name": "Data Importer",
