@@ -7,5 +7,6 @@
 - Dashboards Misc Fixes
 - Dashboards Plugin Compatibility
 - Data Importer
+- ECharts Migration
 - Sample Data
 - TSVB Enhancements
