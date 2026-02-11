@@ -152,6 +152,7 @@ POST _plugins/_replication/follower-index/_stop
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Test stability improvements - fixed multi-node synonym file handling, improved test cleanup error handling, thread-safe batch size management
 - **v3.4.0** (2026-01-14): Made pause replication API request body optional, defaulting to "User initiated" reason
 - **v3.3.0** (2025-11-18): Fixed 2GB limit breach for large document replication with dynamic batch size adjustment and new index-level batch size setting
 - **v3.2.0** (2025-08-06): Build fix - added missing `getLowPriorityRemoteDownloadThrottleTimeInNanos()` method to RemoteClusterRepository
@@ -175,6 +176,8 @@ POST _plugins/_replication/follower-index/_stop
 ### Pull Requests
 | Version | PR | Repository | Description | Related Issue |
 |---------|-----|------------|-------------|---------------|
+| v3.5.0 | [#1621](https://github.com/opensearch-project/cross-cluster-replication/pull/1621) | cross-cluster-replication | Fix replication tests and increment version to 3.5.0 | [#1617](https://github.com/opensearch-project/cross-cluster-replication/pull/1617) |
+| v3.5.0 | [#1630](https://github.com/opensearch-project/cross-cluster-replication/pull/1630) | cross-cluster-replication | Fix flaky test by allowing 500 error on stopAllReplication | - |
 | v3.4.0 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | cross-cluster-replication | Fix the requirement of empty request body in pause replication | [#1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468) |
 | v3.3.0 | [#1580](https://github.com/opensearch-project/cross-cluster-replication/pull/1580) | cross-cluster-replication | Fix: Replication of large documents breaches the size limit (2GB) of ReleasableBytesStreamOutput | [#1568](https://github.com/opensearch-project/cross-cluster-replication/issues/1568) |
 | v3.2.0 | [#1564](https://github.com/opensearch-project/cross-cluster-replication/pull/1564) | cross-cluster-replication | Add missing method for RemoteClusterRepository class |   |
