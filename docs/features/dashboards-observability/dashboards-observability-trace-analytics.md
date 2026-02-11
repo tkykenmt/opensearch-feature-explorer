@@ -89,6 +89,8 @@ flowchart TB
 | Multi-Data Source Support | Connect to multiple OpenSearch clusters |
 | Application Analytics | Integrated traces/spans view within app analytics |
 | Custom Index Flyout | Configuration panel for custom span/service indices |
+| RED Metrics Charts | Request, Error, Latency charts in Discover:Traces via PPL queries |
+| Dynamic Feature Flags | DynamicConfigService-based flags for Traces and Metrics features |
 | Data Schema Picker | Mode selector for Jaeger, Data Prepper, or Custom source |
 
 ### Configuration
@@ -105,6 +107,8 @@ flowchart TB
 | `observability:traceAnalyticsServiceMapMaxNodes` | Maximum nodes in service map queries | 500 |
 | `observability:traceAnalyticsServiceMapMaxEdges` | Maximum edges in service map queries | 1000 |
 | `TRACE_CUSTOM_MODE_DEFAULT_SETTING` | Enable custom source as default landing page | `false` |
+| `explore.discoverTraces.enabled` | Enable Discover:Traces feature via DynamicConfigService | `false` |
+| `explore.discoverMetrics.enabled` | Enable Discover:Metrics feature via DynamicConfigService | `false` |
 
 ### Usage Example
 
@@ -145,6 +149,7 @@ http://host:port/app/observability-traces#/services
 
 ## Change History
 
+- **v3.5.0**: Added RED metrics charts (Rate, Errors, Duration) for Discover:Traces, dynamic configuration flags for Traces/Metrics via DynamicConfigService, dataset UI and observability workspace with trace automation, bug fixes for trace auto-detection, redirection, naming conventions, correlation type naming, OTel sample data index naming, and correlations saved object search
 - **v3.2.0** (2026-02-18): User-configurable service map max nodes and max edges settings, bug fixes for traces error display (nested status.code handling) and metrics visualization rendering in local cluster instances
 - **v3.1.0** (2026-01-21): Merged custom source mode into default Data Prepper mode, span flyout support for new Data Prepper format with nested field flattening, unified experience with cross-cluster search, custom indices, data grid, and dynamic filters
 - **v3.0.0** (2025-02-25): Custom logs correlation, data grid migration, OTEL attributes support, service view optimizations, Amazon Network Firewall integration, trace-to-logs correlation improvements
@@ -164,6 +169,16 @@ http://host:port/app/observability-traces#/services
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#11030](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11030) | Add RED metrics charts for Discover:Traces |   |
+| v3.5.0 | [#11096](https://github.com/opensearch-project/dashboards-observability/pull/11096) | Dataset UI and observability workspace + Trace automation |   |
+| v3.5.0 | [#11063](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11063) | Fix RED metric query for Discover:Traces |   |
+| v3.5.0 | [#11068](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11068) | Discover:Traces redirection fix + testing improvement |   |
+| v3.5.0 | [#11220](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11220) | Add dynamic setting flag for Explore Traces + Metrics |   |
+| v3.5.0 | [#11174](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11174) | Fix trace automation naming convention |   |
+| v3.5.0 | [#11191](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11191) | Fix Traces: Auto detect bug |   |
+| v3.5.0 | [#11208](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11208) | Update the OTel sample data index names |   |
+| v3.5.0 | [#11215](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11215) | Update correlationType for trace-to-logs objects | [#2545](https://github.com/opensearch-project/dashboards-observability/issues/2545) |
+| v3.5.0 | [#11256](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11256) | Add title field to correlations saved object | [#11133](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/11133) |
 | v3.2.0 | [#2472](https://github.com/opensearch-project/dashboards-observability/pull/2472) | [Traces] Make service map max nodes and max edges values user-configurable |   |
 | v3.2.0 | [#2475](https://github.com/opensearch-project/dashboards-observability/pull/2475) | [Bug] Traces error display - fix nested status.code handling |   |
 | v3.2.0 | [#2478](https://github.com/opensearch-project/dashboards-observability/pull/2478) | [Bug] Fixed metrics viz not showing up in local cluster |   |
