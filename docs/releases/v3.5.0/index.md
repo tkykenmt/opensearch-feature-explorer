@@ -18,3 +18,6 @@
 - TSVB Enhancements
 - Observability Traces
 - Dashboards Chat/AI
+
+## user
+- User Plugin Maintenance

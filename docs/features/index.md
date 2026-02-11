@@ -67,3 +67,7 @@ Cumulative feature documentation across all versions.
 ## sql
 
 - SQL/PPL Engine
+
+## user
+
+- User Plugin Maintenance
