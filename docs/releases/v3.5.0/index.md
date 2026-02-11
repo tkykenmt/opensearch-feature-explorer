@@ -1,5 +1,8 @@
 # OpenSearch v3.5.0 Release
 
+## geospatial
+- Geospatial Validation
+
 ## cross-cluster-replication
 - Cross-Cluster Replication Bug Fixes
 

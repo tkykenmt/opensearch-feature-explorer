@@ -7,6 +7,10 @@ Cumulative feature documentation across all versions.
 - Alerting Integration
 - Cross-Cluster & Remote Monitors
 
+## geospatial
+
+- Geospatial Validation
+
 ## ml-commons
 
 - Batch Prediction Mode
