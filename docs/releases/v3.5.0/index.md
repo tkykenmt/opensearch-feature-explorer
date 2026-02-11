@@ -1,57 +1,62 @@
-# OpenSearch v3.5.0 Release
+# OpenSearch v3.5.0
 
-## alerting
+- Release Summary
+
+## Feature Reports
+
+### alerting
 - Alerting Access Control
 
-## anomaly-detection
+### anomaly-detection
 - Anomaly Detection Correlation
 
-## geospatial
-- Geospatial Validation
-
-## cross-cluster-replication
+### cross-cluster-replication
 - Cross-Cluster Replication Bug Fixes
 
-## index-management
-- Index State Management (ISM)
-
-## dashboards
+### dashboards
 - Dashboards Dependencies
 
-## dashboards-flow-framework
+### dashboards-flow-framework
 - Dashboards ML Agents
 
-## dashboards-search-relevance
+### dashboards-observability
+- Observability Notebooks
+
+### dashboards-search-relevance
 - Agentic Search
 - Dashboards CI/CD
 - Search Relevance
 
-## job-scheduler
+### geospatial
+- Geospatial Validation
+
+### index-management
+- Index State Management (ISM)
+
+### job-scheduler
 - Job Scheduler
 
-## k-nn
+### k-nn
 - k-NN Vector Search
 
-## neural-search
+### neural-search
 - Neural Search
 - SEISMIC (Sparse ANN) Enhancements
 
-## notifications
+### notifications
 - Mattermost Notifications
 - Notifications Maintenance
 
-## observability
+### observability
 - APM (Application Performance Monitoring)
 - Observability Dependencies
 - Observability Integration
 
-## dashboards-observability
-- Observability Notebooks
-
-## opensearch-dashboards
+### opensearch-dashboards
 - Dashboards Build (Rspack Migration)
 - Dashboards CSP Security
 - Dashboards CVE Fixes
+- Dashboards Chat/AI
 - Dashboards Data Plugin
 - Dashboards gzip Support
 - Dashboards Misc Fixes
@@ -59,34 +64,33 @@
 - Data Importer
 - ECharts Migration
 - Explore Enhancements
+- Observability Traces
 - Prometheus Metrics in Explore
 - Sample Data
 - Table Visualization Rewrite
 - Threshold Visualization
 - TSVB Enhancements
-- Observability Traces
-- Dashboards Chat/AI
 
-## performance-analyzer
+### performance-analyzer
 - Performance Analyzer
 
-## query-insights
+### query-insights
 - Query Insights
 
-## remote
+### remote
 - Remote Store
 
-## reporting
+### reporting
 - Reporting Dependencies
 
-## security
+### security
 - Security Enhancements
 
-## skills
+### skills
 - Skills Dependencies
 
-## sql
+### sql
 - SQL/PPL Engine
 
-## user
+### user
 - User Plugin Maintenance
