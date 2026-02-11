@@ -1,5 +1,8 @@
 # OpenSearch v3.5.0 Release
 
+## anomaly-detection
+- Anomaly Detection Correlation
+
 ## geospatial
 - Geospatial Validation
 

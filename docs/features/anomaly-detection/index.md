@@ -3,6 +3,7 @@
 | Document | Description |
 |----------|-------------|
 | [anomaly-detection-admin-backend-role-bypass](anomaly-detection-admin-backend-role-bypass.md) | Anomaly Detection Admin Backend Role Bypass |
+| [anomaly-detection-correlation](anomaly-detection-correlation.md) | Anomaly Detection Correlation |
 | [anomaly-detection-date-nanos-support](anomaly-detection-date-nanos-support.md) | Anomaly Detection date_nanos Support |
 | [anomaly-detection-dependencies](anomaly-detection-dependencies.md) | Anomaly Detection Dependencies |
 | [anomaly-detection-dual-cluster-development](anomaly-detection-dual-cluster-development.md) | Dual Cluster Development Environment |
