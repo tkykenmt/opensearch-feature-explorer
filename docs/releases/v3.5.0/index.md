@@ -21,3 +21,6 @@
 
 ## user
 - User Plugin Maintenance
+
+## skills
+- Skills Dependencies
