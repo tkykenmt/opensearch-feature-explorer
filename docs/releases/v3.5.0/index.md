@@ -42,3 +42,6 @@
 
 ## job-scheduler
 - Job Scheduler
+
+## dashboards-search-relevance
+- Dashboards CI/CD
