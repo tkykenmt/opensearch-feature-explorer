@@ -370,6 +370,7 @@ GET testindex/_search
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Added query explanation support (`?explain=true`) for debugging and understanding SEISMIC scoring; improved multi-threaded query performance by replacing synchronized LinkedHashMap with ConcurrentLinkedHashMap in LRU cache
 - **v3.4.0** (2026-01-11): Added nested field support for text chunking workflows; bug fixes for IT failures, query handling, and disk space recovery
 - **v3.3.0** (2025-10-23): Initial implementation of SEISMIC sparse ANN algorithm with full indexing, query, caching, and memory management support
 
@@ -388,6 +389,8 @@ GET testindex/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#1694](https://github.com/opensearch-project/neural-search/pull/1694) | Enable explain function within Sparse ANN query | [#1690](https://github.com/opensearch-project/neural-search/issues/1690) |
+| v3.5.0 | [#1712](https://github.com/opensearch-project/neural-search/pull/1712) | Boost multi threads query efficiency | [#1684](https://github.com/opensearch-project/neural-search/issues/1684), [#1691](https://github.com/opensearch-project/neural-search/issues/1691) |
 | v3.4.0 | [#1678](https://github.com/opensearch-project/neural-search/pull/1678) | Support nested field ingestion and query | [#1666](https://github.com/opensearch-project/neural-search/issues/1666) |
 | v3.4.0 | [#1655](https://github.com/opensearch-project/neural-search/pull/1655) | Fix IT failures in multi-node environments | [#1653](https://github.com/opensearch-project/neural-search/issues/1653) |
 | v3.4.0 | [#1674](https://github.com/opensearch-project/neural-search/pull/1674) | Handle non-specified method_parameters in queries | [#1673](https://github.com/opensearch-project/neural-search/issues/1673) |
@@ -416,3 +419,6 @@ GET testindex/_search
 - [Memory Management Design #1444](https://github.com/opensearch-project/neural-search/issues/1444): SEISMIC memory management
 - [Issue #1666](https://github.com/opensearch-project/neural-search/issues/1666): Feature request for text chunking search with Sparse ANN
 - [Issue #1671](https://github.com/opensearch-project/neural-search/issues/1671): Design document for nested field support
+- [Design #1690](https://github.com/opensearch-project/neural-search/issues/1690): Sparse ANN Query Explanation Support
+- [Issue #1684](https://github.com/opensearch-project/neural-search/issues/1684): Sparse ANN Concurrent Query Throughput Improvement
+- [Design #1691](https://github.com/opensearch-project/neural-search/issues/1691): Sparse ANN Concurrent Query Throughput Improvement
