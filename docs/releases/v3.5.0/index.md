@@ -31,6 +31,7 @@
 - SEISMIC (Sparse ANN) Enhancements
 
 ## notifications
+- Mattermost Notifications
 - Notifications Maintenance
 
 ## observability
