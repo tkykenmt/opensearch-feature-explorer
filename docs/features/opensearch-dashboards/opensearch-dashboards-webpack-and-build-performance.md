@@ -175,6 +175,7 @@ module.exports = {
 
 ## Change History
 
+- **v3.5.0**: Migrated entire build toolchain from Webpack 4 to Rspack 1.6.4. Replaced Babel with SWC for transpilation. Upgraded Storybook to Webpack 5. Replaced `BundleRefsPlugin` with `VirtualModulesPlugin`. Added `BundleDepsCheckPlugin` for dependency validation. Updated sass-embedded to 1.93.3 with async compiler pooling. Bundle size limits recalibrated for Rspack output.
 - **v3.0.0** (2025-03-20): Initial implementation with bundle analyzer and Lighthouse CI workflows
 
 
@@ -185,9 +186,11 @@ module.exports = {
 - [PR #9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304): Lighthouse CI implementation
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci): Google's Lighthouse CI tool
 - [Webpack Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer): Bundle analysis tool
+- [Rspack](https://rspack.dev/): High-performance Rust-based bundler
 
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#11102](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11102) | Migrate OSD build from Webpack4 to Rspack | |
 | v3.0.0 | [#9320](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9320) | Webpack bundle analyser limit check |   |
 | v3.0.0 | [#9304](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9304) | Lighthouse Page Performance Metrics CI workflow |   |
