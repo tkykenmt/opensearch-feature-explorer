@@ -1,5 +1,8 @@
 # OpenSearch v3.5.0 Release
 
+## alerting
+- Alerting Access Control
+
 ## anomaly-detection
 - Anomaly Detection Correlation
 
