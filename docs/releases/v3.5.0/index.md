@@ -16,3 +16,4 @@
 - Table Visualization Rewrite
 - TSVB Enhancements
 - Observability Traces
+- Dashboards Chat/AI

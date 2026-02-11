@@ -138,6 +138,9 @@ flowchart TB
 | ChatSuggestions | `src/plugins/chat` | UI for contextual suggestions (v3.4.0) |
 | LogActionRegistry | `src/plugins/explore` | Registry for log entry actions (v3.4.0) |
 | LogActionMenu | `src/plugins/explore` | Dropdown for log actions (v3.4.0) |
+| SlashCommandRegistry | `src/plugins/chat` | Extensible slash command registry with autocomplete (v3.5.0) |
+| ConfirmationService | `src/plugins/chat` | User confirmation workflow for tool executions (v3.5.0) |
+| AskAIAction | `src/plugins/explore` | "Ask AI" context menu for visualizations (v3.5.0) |
 
 ### Configuration
 
@@ -262,6 +265,7 @@ npm run start:ag-ui
 
 ## Change History
 
+- **v3.5.0** (2026-02): Slash command system with autocomplete/confirmations, "Thinking..." loading indicator, "Ask AI" context menu for Explore visualizations, plugin action registration API, enhanced PPL query tool, gradient chat button, multiple bug fixes (stale error cleanup, page context, mlClient, tool call timeline)
 - **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
 - **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent
 - **v2.16.0** (2024-06): Fixed Sidecar z-index to render above mask overlays (z-index 1000 → 1001)
@@ -279,6 +283,22 @@ npm run start:ag-ui
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#11194](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11194) | Add slash command system with autocomplete and confirmations | |
+| v3.5.0 | [#11157](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11157) | Add thinking message in chat conversation | |
+| v3.5.0 | [#11134](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11134) | Add "Ask AI" Context Menu Action to explore visualizations | |
+| v3.5.0 | [#11131](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11131) | Expose action register method for permanent actions | |
+| v3.5.0 | [#11066](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11066) | Add gradient icon and styling to chat header button | |
+| v3.5.0 | [#11023](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11023) | Enhance execute_ppl_query tool execution result | |
+| v3.5.0 | [#11025](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11025) | Remove stale network error messages after page refresh | |
+| v3.5.0 | [#11027](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11027) | Fix page context replacement and dataSourceId extraction | |
+| v3.5.0 | [#11029](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11029) | Fix suggested actions service undefined | |
+| v3.5.0 | [#11036](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11036) | Fix page context cleanup on navigation | |
+| v3.5.0 | [#11064](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11064) | Fix mlClient undefined for chatbot | |
+| v3.5.0 | [#11103](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11103) | Fix ML router error response format | |
+| v3.5.0 | [#11112](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11112) | Fix PPL execution tool incorrect status | |
+| v3.5.0 | [#11115](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11115) | Fix tool call positioning in conversation timeline | |
+| v3.5.0 | [#11214](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11214) | Hide "Ask AI" in explore visualization | |
+| v3.5.0 | [#10977](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10977) | Add auto scroll when new line is added | |
 | v3.4.0 | [#10824](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10824) | Register chat as the global search command |   |
 | v3.4.0 | [#10834](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10834) | Add AI related actions in Explore | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.4.0 | [#10863](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10863) | Add suggestion system for chat |   |
