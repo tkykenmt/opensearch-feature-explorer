@@ -143,6 +143,7 @@ const appLinks: AppLinkSchema[] = [
 
 ## Change History
 
+- **v3.5.0** (2026-03-25): Added support for custom `_id` values when inserting documents into sample dataset indices, enabling plugins to provide deterministic document IDs (e.g., UBI sample datasets)
 - **v2.18.0** (2024-11-12): Updated sample data page UI with new UX; Added OTEL sample data for traces, metrics, logs, and service maps; Added compatibility warning to OTEL sample data description (OpenSearch 2.13+ required)
 - **v2.16.0** (2024-08-06): Fixed index pattern data source reference not updated when importing sample data with MDS enabled; Added TSVB visualization support for sample data with external data sources
 
@@ -156,6 +157,7 @@ const appLinks: AppLinkSchema[] = [
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#11139](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11139) | Support _id when insert data into sample dataset index | [dashboards-search-relevance#730](https://github.com/opensearch-project/dashboards-search-relevance/issues/730) |
 | v2.18.0 | [#8291](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8291) | Update sample data page UI when useUpdatedUX enabled | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v2.18.0 | [#8587](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8587) | Add support for OTEL sample data - logs, traces and metrics |   |
 | v2.18.0 | [#8693](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/8693) | Update OTEL sample data description with compatible OS version |   |
