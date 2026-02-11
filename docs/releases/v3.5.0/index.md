@@ -1,10 +1,33 @@
 # OpenSearch v3.5.0 Release
 
+## cross-cluster-replication
+- Cross-Cluster Replication Bug Fixes
+
+## dashboards
+- Dashboards Dependencies
+
 ## dashboards-flow-framework
 - Dashboards ML Agents
 
+## dashboards-search-relevance
+- Agentic Search
+- Dashboards CI/CD
+
+## job-scheduler
+- Job Scheduler
+
+## k-nn
+- k-NN Vector Search
+
 ## neural-search
 - SEISMIC (Sparse ANN) Enhancements
+
+## notifications
+- Notifications Maintenance
+
+## observability
+- Observability Dependencies
+- Observability Integration
 
 ## opensearch-dashboards
 - Dashboards Build (Rspack Migration)
@@ -25,37 +48,20 @@
 - Observability Traces
 - Dashboards Chat/AI
 
-## user
-- User Plugin Maintenance
-
-## skills
-- Skills Dependencies
-
 ## performance-analyzer
 - Performance Analyzer
-
-## observability
-- Observability Dependencies
-- Observability Integration
-
-## notifications
-- Notifications Maintenance
-
-## reporting
-- Reporting Dependencies
 
 ## remote
 - Remote Store
 
-## job-scheduler
-- Job Scheduler
+## reporting
+- Reporting Dependencies
 
-## dashboards-search-relevance
-- Agentic Search
-- Dashboards CI/CD
-
-## cross-cluster-replication
-- Cross-Cluster Replication Bug Fixes
+## skills
+- Skills Dependencies
 
 ## sql
 - SQL/PPL Engine
+
+## user
+- User Plugin Maintenance
