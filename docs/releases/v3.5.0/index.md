@@ -7,3 +7,4 @@
 - Dashboards Plugin Compatibility
 - Data Importer
 - Sample Data
+- TSVB Enhancements
