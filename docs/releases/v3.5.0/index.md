@@ -57,6 +57,9 @@
 ## reporting
 - Reporting Dependencies
 
+## security
+- Security Enhancements
+
 ## skills
 - Skills Dependencies
 

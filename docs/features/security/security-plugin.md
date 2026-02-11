@@ -103,6 +103,7 @@ flowchart TB
 | `plugins.security.audit.type` | Audit log storage type | `internal_opensearch` |
 | `plugins.security.restapi.password_score_based_validation_strength` | Password strength requirement | `fair` |
 | `plugins.security.restapi.roles_enabled` | Roles allowed to use REST API | `[]` |
+| `plugins.security.dls.write_blocked` | Block all writes when DLS restrictions apply (v3.5.0+) | `false` |
 
 ### Configuration Files
 
@@ -174,6 +175,7 @@ config:
 
 ## Change History
 
+- **v3.5.0**: Features - JWT authentication for gRPC transport, HTTP/3 server-side support, DLS write blocking setting (`plugins.security.dls.write_blocked`); Enhancements - nested JWT claims via dot notation, plugin system index access improvements, DLS filter serialization optimization; Bugfixes - gRPC JWT header case insensitivity, partial cache update post snapshot restore, IllegalArgumentException with empty resolved indices, NPE in LDAP recursive role search; Dependencies - Jackson 2.20.1, logback-classic 1.5.26, nimbus-jose-jwt 10.7, cryptacular 1.3.0
 - **v3.2.0** (2025-09-16): Enhancements - nested JWT claim support for subject extraction, stream transport security integration, plugin permission declaration mechanism via plugin-permissions.yml; Bugfixes - JWT clock skew tolerance now properly applied, demo certificate installation in Helm/K8s environments, mixed cluster config update handling, cluster permission detection, SecureHttpTransportParameters provider, tenancy access serialization; Refactoring - JWT Vendor with flexible claims builder
 - **v3.0.0** (2025-05-06): Breaking changes - Blake2b hash fix, OpenSSL removal, whitelist→allowlist; Enhancements - optimized privilege evaluation, CIDR support in ignore_hosts, password validation improvements
 - **v2.19.0** (2025-02-11): Bugfixes - Netty4HttpRequestHeaderVerifier now handles HTTP upgrade requests by accepting HttpRequest instead of DefaultHttpRequest; Infrastructure - JaCoCo report generation for integTestRemote task, RestHelper TLS configuration updated to use DefaultClientTlsStrategy
@@ -196,6 +198,15 @@ config:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#5916](https://github.com/opensearch-project/security/pull/5916) | JWT authentication for gRPC transport | [#5812](https://github.com/opensearch-project/security/issues/5812) |
+| v3.5.0 | [#5886](https://github.com/opensearch-project/security/pull/5886) | HTTP/3 server-side support | [#5884](https://github.com/opensearch-project/security/issues/5884) |
+| v3.5.0 | [#5828](https://github.com/opensearch-project/security/pull/5828) | DLS write blocking setting |   |
+| v3.5.0 | [#5891](https://github.com/opensearch-project/security/pull/5891) | Nested JWT claims via dot notation | [#5687](https://github.com/opensearch-project/security/issues/5687) |
+| v3.5.0 | [#5929](https://github.com/opensearch-project/security/pull/5929) | gRPC JWT header case insensitivity fix |   |
+| v3.5.0 | [#5858](https://github.com/opensearch-project/security/pull/5858) | Plugin system index access fix | [job-scheduler#865](https://github.com/opensearch-project/job-scheduler/issues/865) |
+| v3.5.0 | [#5478](https://github.com/opensearch-project/security/pull/5478) | Partial cache update post snapshot restore fix |   |
+| v3.5.0 | [#5797](https://github.com/opensearch-project/security/pull/5797) | Fix IllegalArgumentException with empty resolved indices |   |
+| v3.5.0 | [#5861](https://github.com/opensearch-project/security/pull/5861) | Fix NPE in LDAP recursive role search |   |
 | v3.2.0 | [#5341](https://github.com/opensearch-project/security/pull/5341) | Plugin permission declaration mechanism | [#4439](https://github.com/opensearch-project/security/issues/4439) |
 | v3.2.0 | [#5467](https://github.com/opensearch-project/security/pull/5467) | Nested JWT claim support for subject | [#5430](https://github.com/opensearch-project/security/issues/5430) |
 | v3.2.0 | [#5530](https://github.com/opensearch-project/security/pull/5530) | Stream transport security integration |   |
