@@ -4,4 +4,5 @@
 - Dashboards Build (Rspack Migration)
 - Dashboards Misc Fixes
 - Dashboards Plugin Compatibility
+- Data Importer
 - Sample Data

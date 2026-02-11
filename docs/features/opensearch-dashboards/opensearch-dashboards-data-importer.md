@@ -182,6 +182,7 @@ Widget C,19.99,200
 
 ## Change History
 
+- **v3.5.0** (2026): Integrated Data Importer with Discover/Explore page via embedded modal; UI fixes for text capitalization, spacing, font sizes, and data source selection; replaced inline styles with CSS classes and radio buttons with button group
 - **v3.0.0** (2025): Initial implementation with CSV, JSON, and NDJSON support; MDS compatibility; file upload and text input modes
 
 
@@ -194,10 +195,12 @@ Widget C,19.99,200
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#11180](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11180) | Integrate data importer with Discover/Explore | - |
+| v3.5.0 | [#10961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10961) | Fix UI changes for data importer | - |
+| v3.5.0 | [#11241](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11241) | Improve style and overflow behavior for embedded data importers | - |
 | v3.0.0 | [#9602](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9602) | Add a new Data Importer Plugin to OSD Core | [#9199](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9199) |
 | v3.0.0 | [#9408](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/9408) | Data importer P0 release (feature branch) |   |
 | v3.0.0 | [#10478](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10478) | Move Data Importer to Data Administration under settings | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
-| v3.0.0 | [#10961](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10961) | Data importer UI fixes |   |
 
 ### Issues (Design / RFC)
 - [Issue #9199](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/9199): RFC - Integrate a Data Importer Plugin into Dashboards
