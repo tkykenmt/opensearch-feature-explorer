@@ -44,16 +44,36 @@ PUT /_insights/settings
 }
 ```
 
-#### Optimized Query Storage
-The source field is now stored as a string in the local index instead of a SearchSourceBuilder object, providing significant storage savings:
+#### Optimized Query Storage (PR #483, #484)
 
-| Query Complexity | Previous | String Storage | Memory Saved |
-|------------------|----------|----------------|--------------|
+Previously, the `source` field in the local index (`top_queries-*`) was stored as a `SearchSourceBuilder` object. This caused two critical issues:
+
+1. **Field explosion**: Dynamic mapping on deeply nested query sources could exceed the 1000-field limit (`IllegalArgumentException: Limit of total fields [1000] has been exceeded`)
+2. **Depth limit**: Complex queries could exceed the 20-level depth limit (`MapperParsingException: The depth of the field has exceeded the allowed limit of [20]`)
+
+The solution consists of two changes:
+
+**PR #483 - Store source as string**: Introduces a new `SourceString` wrapper class that stores the query source as a plain string (`match_only_text` type, non-indexed) in the local index. The `SearchSourceBuilder` is now kept as a private field in `SearchQueryRecord` solely for in-memory categorization, and the `SOURCE` attribute is set asynchronously in `TopQueriesService.addToTopNStore()` only for queries that make it into the Top N.
+
+**PR #484 - Truncate source string**: Adds a configurable `max_source_length` setting to truncate long source strings before storage. When truncation occurs, a `source_truncated` boolean attribute is set to `true` and an operational metric (`TOP_N_QUERIES_SOURCE_TRUNCATION`) is incremented.
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `search.insights.top_queries.max_source_length` | Maximum source string length in characters (0 = empty source) | `524288` (512KB) |
+
+Storage savings (1000 query records benchmark):
+
+| Query Complexity | SearchSourceBuilder | String Storage | Memory Saved |
+|------------------|---------------------|----------------|--------------|
 | Small queries | 320B/record | 312B/record | 2.6% |
 | Average queries | 1.8KB/record | 751B/record | 58.4% |
 | Large queries | 4.0KB/record | 2.0KB/record | 49.3% |
 
-Source strings are also truncated to prevent excessive storage usage for very long queries.
+**Backward compatibility**: For rolling upgrades, version-aware serialization in `Attribute.writeValueTo()` / `readAttributeValue()` handles mixed-version clusters:
+- v3.5.0+ nodes write/read `SourceString` as a plain string
+- When writing to pre-v3.5.0 nodes, `SourceString` is converted back to `SearchSourceBuilder` via JSON parsing (falls back to empty `SearchSourceBuilder` on parse failure)
+- When reading from pre-v3.5.0 nodes, `SearchSourceBuilder` is converted to `SourceString`
+- For existing indices with `source` mapped as an object, `LocalIndexExporter` retries bulk operations with `useObjectSource=true` on `MapperException`, writing `SearchSourceBuilder` objects to maintain compatibility
 
 #### Performance Optimization
 User info extraction is now delayed until after Top N filtering in `TopQueriesService.addToTopNStore`, reducing overhead for queries that don't make it into the top N.
