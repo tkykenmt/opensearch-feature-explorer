@@ -36,6 +36,7 @@ Cumulative feature documentation across all versions.
 - ECharts Migration
 - Explore Plugin
 - Navigation & NavGroups
+- Prometheus Metrics in Explore
 
 ## opensearch
 
