@@ -4,6 +4,7 @@ Cumulative feature documentation across all versions.
 
 ## alerting
 
+- Alerting Access Control
 - Alerting Integration
 - Cross-Cluster & Remote Monitors
 
