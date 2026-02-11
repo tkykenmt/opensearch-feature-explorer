@@ -99,6 +99,7 @@ POST /_plugins/_ppl
 
 ## Change History
 
+- **v3.5.0**: New PPL commands (`transpose`, `spath`, `mvcombine`, `addtotals`/`addcoltotals`); new eval functions (`tonumber`, `mvzip`, `split`, `mvfind`, `mvmap`); Unified Query API (`UnifiedQueryTranspiler`, `UnifiedQueryCompiler`, `UnifiedQueryContext`); query profiling framework; query optimization enhancements (nested field filter pushdown, SortMergeJoin optimization, join with TopHits, dedup pushdown, nested aggregation, enumerable TopK); bug fixes for PIT context leak and NOT BETWEEN query
 - **v3.3.0**: Calcite enabled by default; see Calcite Query Engine for details
 - **v3.0.0**: Apache Calcite integration (V3 engine)
 - **v2.19.0**: PPL metadata fields support (`_id`, `_index`, etc.); grammar validation for PPL; async query state management improvements; bug fixes for datetime parsing, CSV output, and FilterOperator
@@ -116,5 +117,10 @@ POST /_plugins/_ppl
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#4871](https://github.com/opensearch-project/sql/pull/4871) | Add unified query transpiler API | [#4870](https://github.com/opensearch-project/sql/issues/4870) |
+| v3.5.0 | [#4974](https://github.com/opensearch-project/sql/pull/4974) | Add unified query compiler API | [#4894](https://github.com/opensearch-project/sql/issues/4894) |
+| v3.5.0 | [#4983](https://github.com/opensearch-project/sql/pull/4983) | Support profile options for PPL | [#4294](https://github.com/opensearch-project/sql/issues/4294) |
+| v3.5.0 | [#5009](https://github.com/opensearch-project/sql/pull/5009) | Fix PIT context leak in Legacy SQL | [#5002](https://github.com/opensearch-project/sql/issues/5002) |
+| v3.5.0 | [#5028](https://github.com/opensearch-project/sql/pull/5028) | Implement spath command with field resolution | [#4984](https://github.com/opensearch-project/sql/issues/4984) |
 | v2.16.0 | [#2772](https://github.com/opensearch-project/sql/pull/2772) | Register system index descriptors through SystemIndexPlugin | [security#4439](https://github.com/opensearch-project/security/issues/4439) |
 | v2.16.0 | [#2817](https://github.com/opensearch-project/sql/pull/2817) | Backport: Register system index descriptors through SystemIndexPlugin | [security#4439](https://github.com/opensearch-project/security/issues/4439) |
