@@ -66,6 +66,7 @@ graph TB
 | `index_priority` | Sets index priority |
 | `notification` | Sends notifications |
 | `unfollow` | Stops cross-cluster replication (v3.0.0+) |
+| `search_only` | Scales down writer shards for Reader/Writer Separation (v3.5.0+) |
 
 ### ISM Transition Conditions
 
@@ -97,6 +98,34 @@ flowchart TB
     D -->|Yes| C
     D -->|No| E[Apply ISM Policy]
 ```
+
+### Rollup Metrics
+
+| Metric | Description | Since |
+|--------|-------------|-------|
+| `avg` | Average value | v1.0.0 |
+| `sum` | Sum of values | v1.0.0 |
+| `min` | Minimum value | v1.0.0 |
+| `max` | Maximum value | v1.0.0 |
+| `value_count` | Count of values | v1.0.0 |
+| `cardinality` | Approximate distinct count using HLL++ sketches | v3.5.0 |
+
+### Multi-Tier Rollups (v3.5.0+)
+
+ISM supports hierarchical data aggregations where rollup indices can serve as source indices for subsequent rollup operations. This enables progressive data summarization (e.g., raw data → 1-minute → 5-minute → 10-minute intervals).
+
+```mermaid
+flowchart LR
+    A[Raw Data] --> B[1-min Rollup]
+    B --> C[5-min Rollup]
+    C --> D[10-min Rollup]
+```
+
+Key features:
+- **source_index field**: Optional field in ISMRollup schema for explicit source specification
+- **Template variables**: Supports `{{ctx.index}}` and `{{ctx.source_index}}` for dynamic naming
+- **Interval validation**: Target intervals must be exact multiples of source intervals
+- **Cardinality merging**: HLL++ sketches can be merged across rollup tiers
 
 ### Configuration
 
@@ -295,9 +324,12 @@ PUT _plugins/_rollup/jobs/sample_rollup
 - The `unfollow` action requires the cross-cluster-replication plugin
 - Rollup target index settings only apply when creating a new target index
 - ISM jobs do not run when cluster state is red
+- Multi-tier rollups require matching `precision_threshold` values across all tiers for cardinality metrics
+- The `search_only` action requires Reader/Writer Separation to be enabled on the cluster
 
 ## Change History
 
+- **v3.5.0** (2026-02-11): Added multi-tier rollups support (rollup indices as source for subsequent rollups), cardinality metric support using HLL++ sketches, `search_only` ISM action for Reader/Writer Separation, `rename_pattern` parameter for `convert_index_to_remote` action, CI improvements
 - **v3.4.0** (2026-01-11): Added ISM template exclusion pattern support using `-` prefix, fixed ISM policy rebinding after removal (auto_manage setting check), fixed SM deletion snapshot pattern parsing for comma-separated values, fixed ExplainSMPolicy serialization for null creation field, fixed rollup start/stop test race conditions
 - **v3.3.0** (2026-01-11): Fixed rollup aggregation reduction bug when searching rollup and raw indices together by using ScriptedAvg class, build fixes for upstream OpenSearch changes, dependency updates
 - **v3.2.0** (2026-01-10): Added `no_alias` and `min_state_age` transition conditions for ISM, registered ISM history index as System Index descriptor, fixed integration tests and lint errors
@@ -320,6 +352,12 @@ PUT _plugins/_rollup/jobs/sample_rollup
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.5.0 | [#1533](https://github.com/opensearch-project/index-management/pull/1533) | Adding support for multi-tier rollups in ISM | [#1490](https://github.com/opensearch-project/index-management/issues/1490) |
+| v3.5.0 | [#1567](https://github.com/opensearch-project/index-management/pull/1567) | Adding Cardinality as supported metric for Rollups | [#1493](https://github.com/opensearch-project/index-management/issues/1493) |
+| v3.5.0 | [#1560](https://github.com/opensearch-project/index-management/pull/1560) | Add search_only ISM action for Reader/Writer Separation | [#1531](https://github.com/opensearch-project/index-management/issues/1531) |
+| v3.5.0 | [#1568](https://github.com/opensearch-project/index-management/pull/1568) | Add optional rename_pattern parameter to convert_index_to_remote action | [#1426](https://github.com/opensearch-project/index-management/issues/1426) |
+| v3.5.0 | [#1573](https://github.com/opensearch-project/index-management/pull/1573) | Change min version for supporting source index in ISM rollups to 3.5.0 | |
+| v3.5.0 | [#1572](https://github.com/opensearch-project/index-management/pull/1572) | Improve CI speed by refactoring RollupActionIT | |
 | v3.4.0 | [#1509](https://github.com/opensearch-project/index-management/pull/1509) | Supporting Exclusion pattern in index pattern in ISM | [#375](https://github.com/opensearch-project/index-management/issues/375) |
 | v3.4.0 | [#1529](https://github.com/opensearch-project/index-management/pull/1529) | Fix race condition in rollup start/stop tests | [#90](https://github.com/opensearch-project/index-management/issues/90) |
 | v3.4.0 | [#1525](https://github.com/opensearch-project/index-management/pull/1525) | Fix ISM policy rebinding after removal | [#1524](https://github.com/opensearch-project/index-management/issues/1524) |
@@ -350,6 +388,10 @@ PUT _plugins/_rollup/jobs/sample_rollup
 | v2.16.0 | [#1091](https://github.com/opensearch-project/index-management-dashboards-plugin/pull/1091) | Bumped up braces package version to address CVE-2024-4068 |   |
 
 ### Issues (Design / RFC)
+- [Issue #1490](https://github.com/opensearch-project/index-management/issues/1490): Feature request for multi-tier rollups
+- [Issue #1493](https://github.com/opensearch-project/index-management/issues/1493): Feature request for cardinality metric in rollups
+- [Issue #1531](https://github.com/opensearch-project/index-management/issues/1531): Feature request for search_only ISM action
+- [Issue #1426](https://github.com/opensearch-project/index-management/issues/1426): Feature request for rename_pattern in convert_index_to_remote
 - [Issue #375](https://github.com/opensearch-project/index-management/issues/375): Feature request for ISM template exclusion patterns
 - [Issue #1439](https://github.com/opensearch-project/index-management/issues/1439): Feature request for no_alias and min_state_age
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Unfollow action feature request
