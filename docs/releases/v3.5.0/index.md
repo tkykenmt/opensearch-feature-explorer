@@ -31,5 +31,8 @@
 ## observability
 - Observability Dependencies
 
+## notifications
+- Notifications Maintenance
+
 ## reporting
 - Reporting Dependencies
