@@ -2305,7 +2305,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2550
     },
     {
       "name": "Sample Data",
@@ -2319,7 +2320,8 @@
           "category": "feature",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2551
     },
     {
       "name": "Dashboards Misc Fixes",
@@ -2363,7 +2365,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2552
     },
     {
       "name": "Dashboards Plugin Compatibility",
@@ -2383,7 +2386,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2553
     },
     {
       "name": "Dashboards Build (Rspack Migration)",
@@ -2397,7 +2401,8 @@
           "category": "bugfix",
           "repository": "opensearch-dashboards"
         }
-      ]
+      ],
+      "issue_number": 2554
     }
   ],
   "processed_offset": 386
