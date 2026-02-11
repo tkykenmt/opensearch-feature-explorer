@@ -20,6 +20,7 @@
 - k-NN Vector Search
 
 ## neural-search
+- Neural Search
 - SEISMIC (Sparse ANN) Enhancements
 
 ## notifications
