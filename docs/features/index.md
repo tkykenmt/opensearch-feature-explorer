@@ -53,6 +53,7 @@ Cumulative feature documentation across all versions.
 - Append Only Indices
 - CAT API
 - Cluster Shard Limits
+- Core Version Update Fix
 - Date Field Sorting
 - Dependency Management
 - Fingerprint Ingest Processor

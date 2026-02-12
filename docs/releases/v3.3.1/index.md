@@ -4,3 +4,4 @@
 
 ### opensearch
 - BWC Timestamp Upgrade Fix
+- Core Version Update Fix
