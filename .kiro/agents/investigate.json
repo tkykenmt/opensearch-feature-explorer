@@ -5,11 +5,11 @@
   "tools": ["@builtin", "@github"],
   "allowedTools": ["@builtin", "@github"],
   "resources": [
-    "file://DEVELOPMENT.md",
-    "file://README.md",
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/investigate.md",
-    "skill://.kiro/skills/opensearch-docs-search/SKILL.md"
+    "skill://.kiro/skills/opensearch-docs-search/SKILL.md",
+    "skill://.kiro/skills/github-workflow/SKILL.md",
+    "skill://.kiro/skills/document-conventions/SKILL.md"
   ],
   "mcpServers": {
     "github": {

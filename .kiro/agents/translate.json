@@ -5,10 +5,9 @@
   "tools": ["@builtin"],
   "allowedTools": ["@builtin"],
   "resources": [
-    "file://DEVELOPMENT.md",
-    "file://README.md",
     "file://.kiro/steering/**/*.md",
-    "file://.kiro/agents/prompts/translate.md"
+    "file://.kiro/agents/prompts/translate.md",
+    "skill://.kiro/skills/document-conventions/SKILL.md"
   ],
   "model": "claude-opus-4.6-1m"
 }

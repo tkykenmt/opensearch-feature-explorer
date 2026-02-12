@@ -15,8 +15,14 @@ opensearch-feature-explorer/
 │   │   ├── *.json            # Agent configurations
 │   │   └── prompts/
 │   │       └── *.md          # Agent-specific prompts
+│   ├── skills/
+│   │   ├── document-conventions/  # Doc templates & rules
+│   │   ├── github-workflow/       # Git/GitHub patterns
+│   │   ├── opensearch-docs-search/ # Docs/blogs search
+│   │   ├── kiro-custom-agents/    # Agent config reference
+│   │   └── skill-creator/         # Skill creation guide
 │   └── steering/
-│       └── opensearch-knowledge.md  # LLM context (references this doc)
+│       └── opensearch-knowledge.md  # OpenSearch domain knowledge
 ├── data/                     # Persistent data
 │   └── releases/v{version}/
 │       └── groups.json

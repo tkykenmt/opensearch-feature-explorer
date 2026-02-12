@@ -5,9 +5,9 @@
   "tools": ["@builtin", "@github"],
   "allowedTools": ["@builtin", "@github"],
   "resources": [
-    "file://README.md",
     "file://.kiro/steering/**/*.md",
-    "file://.kiro/agents/prompts/create-issues.md"
+    "file://.kiro/agents/prompts/create-issues.md",
+    "skill://.kiro/skills/github-workflow/SKILL.md"
   ],
   "mcpServers": {
     "github": {

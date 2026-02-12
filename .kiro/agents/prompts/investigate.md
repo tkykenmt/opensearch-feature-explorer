@@ -73,11 +73,7 @@ Step 6: Update GitHub Issue
 **IMPORTANT: You MUST get repository info FIRST before any GitHub API calls.**
 
 ### Step 1.1: Get Repository Info (REQUIRED FIRST)
-Run this command and wait for the result:
-```bash
-git remote get-url origin
-```
-Parse the output to extract owner and repo (e.g., `git@github.com:owner/repo.git` → owner=`owner`, repo=`repo`).
+Follow the `github-workflow` skill's Repository Detection pattern.
 
 **Do NOT call any GitHub tools until you have the owner and repo values.**
 
@@ -247,52 +243,14 @@ After creating/updating a feature report, update `docs/features/index.md`:
 
 ## Step 5: Commit and Push
 
-**Save the current branch name at the start:**
-```bash
-ORIGINAL_BRANCH=$(git branch --show-current)
-```
+Follow the `github-workflow` skill's Branch + PR + Merge Workflow:
+- Branch: `docs/{item-name}-v{version}`
+- Paths: `docs/releases/v{version}/ docs/features/`
+- Message: `docs: add {item-name} report for v{version}`
+- PR body: Summary of the release item
+- After merge: return to original branch
 
-### Default workflow (PR + auto-merge):
-```bash
-# Create branch from main
-git checkout main
-git pull
-git checkout -b docs/{item-name}-v{version}
-
-# Commit
-git add docs/releases/v{version}/ docs/features/
-git commit -m "docs: add {item-name} report for v{version}"
-
-# Push branch
-git push -u origin docs/{item-name}-v{version}
-```
-
-Create PR using `create_pull_request`:
-- title: `docs: add {item-name} report for v{version}`
-- head: `docs/{item-name}-v{version}`
-- base: `main`
-- body: Summary of the release item
-
-Then merge using `merge_pull_request`:
-- merge_method: `squash`
-
-### Direct push workflow (when "Push directly to main" specified):
-```bash
-git checkout main
-git pull
-git add docs/releases/v{version}/ docs/features/
-git commit -m "docs: add {item-name} report for v{version}"
-git push
-```
-
-## Step 6: Return to Original Branch
-
-**IMPORTANT: Always return to the original branch and sync with remote after PR merge.**
-
-```bash
-git checkout $ORIGINAL_BRANCH
-git pull origin $ORIGINAL_BRANCH
-```
+For "Push directly to main" mode: skip PR, commit and push to main directly.
 
 ## Step 7: Update GitHub Issue
 
