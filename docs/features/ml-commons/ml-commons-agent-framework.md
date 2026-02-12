@@ -235,6 +235,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 ## Change History
 
+- **v3.3.2** (2026-02-12): MCP connector support in agent update API, execute tool API fix for immutable maps, filtered output in streaming, return_history fix, JSON chunk combining fix
 - **v3.3.0** (2026-01-14): Get Agent API in ML Client, agent metrics collection via OpenTelemetry (type, memory_type, is_hidden, _llm_interface, model info), interaction failure message updates, code refactoring for common package
 - **v3.2.0** (2025-09-16): Execute Tool API, AI-oriented memory container system (create, add, search, update, delete, get), QueryPlanningTool for agentic search, date/time injection for agents, message history limit for PER Agent, output filter support, SearchIndexTool improvements, feature flags for agentic search/memory, multiple bug fixes (class cast exception, connector URL exposure, async status, max iterations handling)
 - **v3.1.0** (2025-07-15): Update Agent API, MCP tools persistence, function calling for LLM interfaces, custom SSE endpoint, metrics framework integration, PlanExecuteReflect memory tracking, error handling improvements, multiple bug fixes (private IP validation, circuit breaker bypass, Python MCP client)
