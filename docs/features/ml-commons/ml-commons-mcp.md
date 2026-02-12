@@ -283,6 +283,7 @@ POST /_plugins/_ml/models/_register
 
 ## Change History
 
+- **v3.3.2** (2026-02-12): MCP connector support in agent update API (update filters, remove, add connectors)
 - **v3.3.0** (2025-09-30): Streamable HTTP transport for MCP connectors (`mcp_streamable_http` protocol), stateless MCP server at `/_plugins/_ml/mcp/stream`, SSE transport deprecated, MCP Java SDK updated to 0.12.1
 - **v3.1.0** (2025-07-15): MCP SDK downgrade to 0.9.0 for compatibility, added comprehensive unit tests for MCP components
 - **v3.0.0** (2025-05-06): Initial implementation of MCP support (client and server), Plan-Execute-Reflect agent, function calling, async execution, and sentence highlighting QA models
