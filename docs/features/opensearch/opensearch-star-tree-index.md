@@ -206,6 +206,7 @@ POST /logs/_search
 
 ## Change History
 
+- **v3.3.1** (2026-02-11): Fixed ClassCastException when running star-tree aggregation queries with `profile=true`; sub-aggregators wrapped in ProfilingAggregator are now properly unwrapped before casting to StarTreePreComputeCollector
 - **v3.3.0** (2025-10-28): Added multi-terms aggregation support (up to 40x performance improvement), search query failure statistics (query_failed, startree_query_failed)
 - **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
 - **v3.1.0** (2025-06-10): Production-ready status, removed feature flag, added index-level setting, date range query support, nested bucket aggregations
@@ -226,6 +227,7 @@ POST /logs/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.3.1 | [#19652](https://github.com/opensearch-project/OpenSearch/pull/19652) | Fix sub-aggregator casting for search with profile=true | [#19649](https://github.com/opensearch-project/OpenSearch/issues/19649) |
 | v3.3.0 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations | [#18398](https://github.com/opensearch-project/OpenSearch/issues/18398) |
 | v3.3.0 | [#19209](https://github.com/opensearch-project/OpenSearch/pull/19209) | Add search & star-tree search query failure count metrics | [#19210](https://github.com/opensearch-project/OpenSearch/issues/19210) |
 | v3.2.0 | [security#5492](https://github.com/opensearch-project/security/pull/5492) | Restrict star-tree for users with DLS/FLS/Field Masking |   |
@@ -246,6 +248,7 @@ POST /logs/_search
 | v2.18.0 | [#15289](https://github.com/opensearch-project/OpenSearch/pull/15289) | Initial metric aggregations with/without term query | [#15257](https://github.com/opensearch-project/OpenSearch/issues/15257) |
 
 ### Issues (Design / RFC)
+- [Issue #19649](https://github.com/opensearch-project/OpenSearch/issues/19649): ProfilingAggregator casting bug with star-tree sub-aggregations
 - [Issue #18398](https://github.com/opensearch-project/OpenSearch/issues/18398): Multi-terms aggregation feature request
 - [Issue #19210](https://github.com/opensearch-project/OpenSearch/issues/19210): Query failure stats feature request
 - [Issue #17443](https://github.com/opensearch-project/OpenSearch/issues/17443): Date range query support
