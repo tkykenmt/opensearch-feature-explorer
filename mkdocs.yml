@@ -83,6 +83,9 @@ plugins:
         - scripts/gen_pages.py
 
 extra:
+  analytics:
+    provider: google
+    property: G-XXLNS901V4
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/tkykenmt/opensearch-feature-explorer
