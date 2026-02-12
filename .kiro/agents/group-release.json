@@ -5,7 +5,6 @@
   "tools": ["@builtin"],
   "allowedTools": ["@builtin"],
   "resources": [
-    "file://README.md",
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/group-release.md"
   ],

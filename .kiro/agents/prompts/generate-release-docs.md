@@ -45,20 +45,11 @@ Create `docs/releases/v{version}/index.md`:
 
 ### Step 5: Commit and Push
 
-```bash
-ORIGINAL_BRANCH=$(git branch --show-current)
-
-git checkout main
-git pull
-git checkout -b docs/release-v{version}-structure
-
-git add docs/releases/v{version}/
-git commit -m "docs: generate release reports for v{version} from existing features"
-
-git push -u origin docs/release-v{version}-structure
-```
-
-Create PR and merge, then return to original branch.
+Follow the `github-workflow` skill's Branch + PR + Merge Workflow:
+- Branch: `docs/release-v{version}-structure`
+- Paths: `docs/releases/v{version}/`
+- Message: `docs: generate release reports for v{version} from existing features`
+- After merge: return to original branch
 
 ## Notes
 

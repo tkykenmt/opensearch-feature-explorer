@@ -44,38 +44,11 @@ Update `docs/releases/v{version}/index.md`:
 
 ### Step 5: Commit and Push
 
-**IMPORTANT: Save the current branch name before starting, and return to it after completion.**
-
-```bash
-# Save current branch
-ORIGINAL_BRANCH=$(git branch --show-current)
-
-# Create branch from main
-git checkout main
-git pull
-git checkout -b docs/release-v{version}-summary
-
-# Commit
-git add docs/releases/v{version}/
-git commit -m "docs: add release summary for v{version}"
-
-# Push branch
-git push -u origin docs/release-v{version}-summary
-```
-
-Create PR using `create_pull_request`:
-- title: `docs: add release summary for v{version}`
-- head: `docs/release-v{version}-summary`
-- base: `main`
-- body: Summary of the release
-
-Then merge using `merge_pull_request`:
-- merge_method: `squash`
-
-Return to original branch:
-```bash
-git checkout $ORIGINAL_BRANCH
-```
+Follow the `github-workflow` skill's Branch + PR + Merge Workflow:
+- Branch: `docs/release-v{version}-summary`
+- Paths: `docs/releases/v{version}/`
+- Message: `docs: add release summary for v{version}`
+- After merge: return to original branch
 
 ## Notes
 

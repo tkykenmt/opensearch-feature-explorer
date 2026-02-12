@@ -14,9 +14,9 @@ You are a release planner. Create a GitHub Project and Issues for release invest
 
 ### Step 1: Get Repository Info
 
+Follow the `github-workflow` skill's Repository Detection pattern, then get owner node ID:
 ```bash
-git remote get-url origin  # Parse owner/repo
-gh api graphql -f query='{ viewer { id } }'  # Get owner node ID
+gh api graphql -f query='{ viewer { id } }'
 ```
 
 ### Step 2: Load Groups

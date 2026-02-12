@@ -4,10 +4,7 @@ You are an issue creator. Read a tracking Issue and create individual investigat
 
 ## Target Repository
 
-Before any GitHub API calls, get the repository owner and name:
-1. Run `git remote get-url origin` to get the remote URL
-2. Parse owner and repo from the URL
-3. Use these values for all GitHub API calls
+Follow the `github-workflow` skill's Repository Detection pattern before any GitHub API calls.
 
 ## Input
 
