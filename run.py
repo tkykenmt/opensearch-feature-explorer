@@ -309,7 +309,6 @@ def run_kiro(mode: str, prompt: str, no_interactive: bool = False) -> int:
     cmd = [
         "kiro-cli", "chat",
         "--agent", agent_name,
-        "--model", "claude-opus-4.5",
         "--trust-all-tools",
     ]
     
