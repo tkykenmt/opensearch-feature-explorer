@@ -14,6 +14,7 @@ Cumulative feature documentation across all versions.
 
 ## ml-commons
 
+- AG-UI (Agent-User Interaction) Protocol
 - Batch Prediction Mode
 - Conversation Memory
 - ML Inference Processor

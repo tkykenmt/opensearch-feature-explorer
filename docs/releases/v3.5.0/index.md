@@ -39,6 +39,9 @@
 ### k-nn
 - k-NN Vector Search
 
+### ml-commons
+- AG-UI (Agent-User Interaction) Protocol Support
+
 ### neural-search
 - Neural Search
 - SEISMIC (Sparse ANN) Enhancements
