@@ -83,6 +83,16 @@ plugins:
         - scripts/gen_pages.py
 
 extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences,
+      as well as to measure the effectiveness of our documentation.
+      With your consent, you're helping us to make our documentation better.
+    actions:
+      - accept
+      - reject
+      - manage
   analytics:
     provider: google
     property: G-XXLNS901V4
