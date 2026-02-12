@@ -156,7 +156,7 @@ PUT /logs
 }
 ```
 
-Note: `@timestamp` fields automatically have skip list enabled in v3.3.0+.
+Note: `@timestamp` fields automatically have skip list enabled for indices created on v3.3.0+. Indices created on earlier versions retain `skip_list=false` even after upgrading (fixed in v3.3.1).
 
 Index documents:
 
@@ -255,10 +255,12 @@ GET /logs/_search
   - Analytics workloads with numeric/date filtering
 - Date histogram skip list optimization requires single-valued fields
 - Hard bounds in date histogram disable skip list optimization
+- Auto-enablement of skip list for `@timestamp` and index sort fields only applies to indices created on v3.3.0+ (v3.3.1 fix). Indices upgraded from pre-3.3.0 must reindex to enable skip list on those fields.
 - Requires reindexing to enable on existing fields
 
 ## Change History
 
+- **v3.3.1**: BWC fix - Added version check to `isSkiplistDefaultEnabled()` so auto-enablement of skip list for `@timestamp` and index sort fields only applies to indices created on v3.3.0+, fixing upgrade failures from pre-3.3.0 versions
 - **v3.3.0** (2025-10-01): Extended skip list support - Added date histogram aggregation optimization, extended to date/scaled_float/token_count fields, added sub-aggregation support, auto-enabled for @timestamp and index sort fields
 - **v3.2.0** (2025-08-19): Initial implementation - Added `skip_list` parameter to all numeric field mappers
 
@@ -274,6 +276,7 @@ GET /logs/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.3.1 | [#19671](https://github.com/opensearch-project/OpenSearch/pull/19671) | Fix bwc @timestamp upgrade issue by adding a version check on skip_list param | [#19660](https://github.com/opensearch-project/OpenSearch/issues/19660) |
 | v3.3.0 | [#19130](https://github.com/opensearch-project/OpenSearch/pull/19130) | Adding logic for histogram aggregation using skiplist |   |
 | v3.3.0 | [#19142](https://github.com/opensearch-project/OpenSearch/pull/19142) | Add skip_list param for date, scaled float and token count fields | [#19123](https://github.com/opensearch-project/OpenSearch/issues/19123) |
 | v3.3.0 | [#19438](https://github.com/opensearch-project/OpenSearch/pull/19438) | Add sub aggregation support for histogram aggregation using skiplist |   |
@@ -284,4 +287,5 @@ GET /logs/_search
 - [Issue #17965](https://github.com/opensearch-project/OpenSearch/issues/17965): [SparseIndex] Modify FieldMappers to enable SkipList
 - [Issue #17283](https://github.com/opensearch-project/OpenSearch/issues/17283): Support for sub-aggregations
 - [Issue #19123](https://github.com/opensearch-project/OpenSearch/issues/19123): Enable skip_list by default in 3.3
+- [Issue #19660](https://github.com/opensearch-project/OpenSearch/issues/19660): Upgrade from 2.19.2 to 3.3.0 failed (BWC bug)
 - [Documentation Issue #11166](https://github.com/opensearch-project/documentation-website/issues/11166): Public documentation for skip_list
