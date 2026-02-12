@@ -24,6 +24,7 @@ AGENTS = {
     "translate": "translate.json",
     "generate-release-docs": "generate-release-docs.json",
     "refactor": "refactor.json",
+    "release-investigate": "release-investigate.json",
 }
 
 
@@ -413,47 +414,25 @@ def run_batch_refactor():
 
 
 def run_release_investigate(version: str, lang: str | None = None, no_pr: bool = False) -> int:
-    """Full release investigation: fetch → group → plan → investigate all → summarize."""
+    """Full release investigation using release-investigate agent."""
     print(f"=== Release Investigation: v{version} ===\n")
-    
-    # Step 1: Fetch
-    print("Step 1/5: Fetching release notes...")
+
+    # Step 1: Fetch (Python - no LLM needed)
+    print("Step 1: Fetching release notes...")
     if run_fetch_release(version) != 0:
         return 1
-    
+
     # Step 2: Group (all batches)
-    print("\nStep 2/5: Grouping items...")
+    print("\nStep 2: Grouping items...")
     if run_group_release(version, batch_size=50, process_all=True) != 0:
         return 1
-    
-    # Step 3: Plan (create project & issues)
-    print("\nStep 3/5: Creating GitHub Project & Issues...")
-    prompt = f"Create GitHub Project and Issues for OpenSearch v{version} from .cache/releases/v{version}/groups.json. Create max 20 Issues per run. Resume from where left off."
-    while True:
-        if run_kiro("planner", prompt, no_interactive=True) != 0:
-            return 1
-        # Check if all issues created
-        groups_file = SCRIPT_DIR / ".cache" / "releases" / f"v{version}" / "groups.json"
-        with open(groups_file) as f:
-            groups_data = json.load(f)
-        pending = sum(1 for g in groups_data["groups"] if not g.get("issue_number"))
-        if pending == 0:
-            break
-        print(f"  {pending} groups remaining, continuing...")
-    
-    # Step 4: Investigate all
-    print("\nStep 4/5: Investigating all Issues...")
-    run_batch(count=None, lang=lang, no_pr=no_pr)
-    
-    # Step 5: Summarize
-    print("\nStep 5/5: Creating release summary...")
+
+    # Step 3-8: Agent handles planner → investigate → summarize
+    print("\nStep 3: Starting release-investigate agent...")
     lang_instruction = f" Output in language code '{lang}'." if lang else ""
-    prompt = f"Create release summary for OpenSearch v{version}.{lang_instruction}"
-    if run_kiro("summarize", prompt, no_interactive=True) != 0:
-        return 1
-    
-    print(f"\n=== Release Investigation Complete: v{version} ===")
-    return 0
+    pr_mode = " Use --no-pr mode." if no_pr else ""
+    prompt = f"Investigate OpenSearch v{version}.{pr_mode}{lang_instruction}"
+    return run_kiro("release-investigate", prompt, no_interactive=True)
 
 
 def run_feature_investigate(feature: str, pr: int | None = None, lang: str | None = None, no_pr: bool = False) -> int:

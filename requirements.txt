@@ -8,3 +8,5 @@ mkdocs-git-revision-date-localized-plugin
 mkdocs-awesome-pages-plugin
 mkdocs-section-index
 mkdocs-gen-files
+
+trafilatura

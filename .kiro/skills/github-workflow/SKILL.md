@@ -47,8 +47,26 @@ git pull origin $ORIGINAL_BRANCH
 | Type | Pattern | Example |
 |------|---------|---------|
 | Feature report | `docs/{item-name}-v{version}` | `docs/star-tree-index-v3.0.0` |
+| Release investigation | `docs/release-v{version}` | `docs/release-v3.0.0` |
 | Release summary | `docs/release-v{version}-summary` | `docs/release-v3.0.0-summary` |
 | Release structure | `docs/release-v{version}-structure` | `docs/release-v3.0.0-structure` |
+
+### Release Branch Workflow
+
+Used by `release-investigate` agent. Single branch for all investigation work in a version:
+
+```bash
+# 1. Create shared branch
+git checkout main && git pull
+git checkout -b docs/release-v{version}
+
+# 2. Sub-agents commit to this branch (no branch switching)
+git add docs/ && git commit -m "docs: add {item-name} report for v{version}"
+
+# 3. After all investigations, push and create single PR
+git push -u origin docs/release-v{version}
+# create_pull_request → merge_pull_request
+```
 
 ## Issue Operations
 

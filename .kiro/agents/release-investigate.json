@@ -1,0 +1,25 @@
+{
+  "name": "release-investigate",
+  "description": "Orchestrate full release investigation: fetch → group → plan → investigate all → summarize",
+  "prompt": ".kiro/agents/prompts/release-investigate.md",
+  "tools": ["@builtin", "@github"],
+  "allowedTools": ["@builtin", "@github"],
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "file://.kiro/agents/prompts/release-investigate.md",
+    "skill://.kiro/skills/github-workflow/SKILL.md"
+  ],
+  "mcpServers": {
+    "github": {
+      "command": "bash",
+      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
+    }
+  },
+  "toolsSettings": {
+    "subagent": {
+      "availableAgents": ["planner", "investigate", "summarize"],
+      "trustedAgents": ["planner", "investigate", "summarize"]
+    }
+  },
+  "model": "claude-opus-4.6-1m"
+}
