@@ -34,9 +34,9 @@ graph TB
 
 | Agent | Description |
 |-------|-------------|
-| **fetch-release** | Fetch release notes → parse and save all items to `raw-items.json` |
 | **group-release** | Group raw items into feature groups → save to `groups.json` |
 | **review-groups** | Review and refine groups (split over-aggregated, merge related) |
+| **review-release** | Review release content |
 | **planner** | Create GitHub Project and Issues from `groups.json` |
 | **create-issues** | Create individual investigation Issues from tracking Issue |
 | **investigate** | Deep investigation (4 modes: Issue, PR, Feature, Interactive Q&A) |
@@ -45,6 +45,8 @@ graph TB
 | **refactor** | Batch structural changes to existing reports |
 | **translate** | Translate reports to other languages |
 | **dev** | Development and maintenance of this tool itself |
+
+Note: `fetch-release` runs as a Python function directly (not as a Kiro agent).
 
 ## Requirements
 

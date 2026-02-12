@@ -9,7 +9,7 @@
     "file://DEVELOPMENT.md",
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/dev.md",
-    "skill://.kiro/skills/opensearch-docs-search/SKILL.md"
+    "skill://.kiro/skills/**/SKILL.md"
   ],
   "mcpServers": {
     "github": {
@@ -17,5 +17,5 @@
       "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
     }
   },
-  "model": "claude-opus-4.6"
+  "model": "claude-opus-4.6-1m"
 }

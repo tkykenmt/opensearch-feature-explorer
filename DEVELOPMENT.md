@@ -35,19 +35,24 @@ opensearch-feature-explorer/
 
 ### Agent Workflow
 ```
-fetch-release → group-release → planner → create-issues → investigate → summarize
+group-release → planner → create-issues → investigate → summarize
 ```
+
+Note: `fetch-release` runs as a Python function directly (not as a Kiro agent).
 
 | Agent | Input | Output |
 |-------|-------|--------|
-| `fetch-release` | Version | `raw-items.json` |
 | `group-release` | `raw-items.json` | `groups.json` |
+| `review-groups` | `groups.json` | Refined `groups.json` |
+| `review-release` | Release content | Review feedback |
 | `planner` | `groups.json` | GitHub Project + Issues |
 | `create-issues` | Tracking Issue | Individual Issues |
 | `investigate` | Issue | Release Report + Feature Report |
 | `summarize` | Release Reports | Release Summary |
+| `generate-release-docs` | Feature docs | Release docs |
 | `translate` | Report | Translated Report |
 | `refactor` | Reports | Refactored Reports |
+| `dev` | — | Interactive development |
 
 ### Agent Configuration
 ```json
