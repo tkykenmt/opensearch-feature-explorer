@@ -1,0 +1,54 @@
+{
+  "version": "3.3.1",
+  "sources": [
+    "batch.json"
+  ],
+  "groups": [
+    {
+      "name": "Star Tree",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19652,
+          "name": "[Star Tree] Fix sub-aggregator casting for search with profile=true",
+          "category": "bugfix",
+          "repository": "opensearch"
+        }
+      ],
+      "issue_number": 2603
+    },
+    {
+      "name": "Core Version Update Fix",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19377,
+          "name": "Fix issue with updating core with a patch number other than 0",
+          "category": "bugfix",
+          "repository": "opensearch"
+        }
+      ],
+      "issue_number": 2604
+    },
+    {
+      "name": "BWC Timestamp Upgrade Fix",
+      "repositories": [
+        "opensearch"
+      ],
+      "items": [
+        {
+          "pr": 19671,
+          "name": "Fix bwc @timestamp upgrade issue by adding a version check on skip_list param",
+          "category": "bugfix",
+          "repository": "opensearch"
+        }
+      ],
+      "issue_number": 2605
+    }
+  ],
+  "processed_offset": 3
+}
