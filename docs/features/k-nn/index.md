@@ -24,3 +24,5 @@
 | [k-nn-remote-vector-index-build](k-nn-remote-vector-index-build.md) | Remote Vector Index Build |
 | [k-nn-space-type-configuration](k-nn-space-type-configuration.md) | k-NN Space Type Configuration |
 | [k-nn-vector-search-k-nn](k-nn-vector-search-k-nn.md) | Vector Search (k-NN) |
+| [k-nn-native-memory-lifecycle](k-nn-native-memory-lifecycle.md) | k-NN Native Memory Lifecycle |
+| [k-nn-engine-capability-matrix](k-nn-engine-capability-matrix.md) | k-NN Engine Capability Matrix |
