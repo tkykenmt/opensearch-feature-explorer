@@ -134,3 +134,7 @@ For IVF-based indexes (e.g., IVF+PQ), Faiss splits the index into a shared model
 - [NativeEngines990KnnVectorsReader.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/index/codec/KNN990Codec/NativeEngines990KnnVectorsReader.java)
 - [ClearCacheTransportAction.java](https://github.com/opensearch-project/k-NN/blob/main/src/main/java/org/opensearch/knn/plugin/transport/ClearCacheTransportAction.java)
 - [k-NN API Documentation](https://docs.opensearch.org/latest/vector-search/api/knn/)
+
+## Change History
+
+For the full change history of the k-NN plugin, see [Vector Search (k-NN) — Change History](k-nn-vector-search-k-nn.md#change-history).

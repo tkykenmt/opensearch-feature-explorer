@@ -100,3 +100,7 @@ Note: When using `cosinesimil` with the Faiss engine, vectors are automatically 
 | Auto quantization | None | SQ fp16 auto-applied + rescoring | None |
 | Engine | Faiss, NMSLIB | Faiss only | Faiss only |
 | Circuit breaker | Applies | Graph portion only | Not applicable (OS managed) |
+
+## Change History
+
+For the full change history of the k-NN plugin, see [Vector Search (k-NN) — Change History](k-nn-vector-search-k-nn.md#change-history).
