@@ -15,7 +15,7 @@
           "repository": "alerting"
         }
       ],
-      "issue_number": 2510
+      "issue_number": 3815
     },
     {
       "name": "Anomaly Detection Correlation",
@@ -48,7 +48,7 @@
           "repository": "anomaly-detection"
         }
       ],
-      "issue_number": 2511
+      "issue_number": 3816
     },
     {
       "name": "Mattermost Notifications",
@@ -75,7 +75,7 @@
           "repository": "notifications"
         }
       ],
-      "issue_number": 2512
+      "issue_number": 3817
     },
     {
       "name": "APM (Application Performance Monitoring)",
@@ -138,7 +138,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 2513
+      "issue_number": 3818
     },
     {
       "name": "Observability Notebooks",
@@ -159,7 +159,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 2514
+      "issue_number": 3819
     },
     {
       "name": "Search Relevance",
@@ -319,7 +319,7 @@
           "repository": "search"
         }
       ],
-      "issue_number": 2515
+      "issue_number": 3820
     },
     {
       "name": "Geospatial Validation",
@@ -334,7 +334,7 @@
           "repository": "geospatial"
         }
       ],
-      "issue_number": 2516
+      "issue_number": 3821
     },
     {
       "name": "Index State Management (ISM)",
@@ -415,7 +415,7 @@
           "repository": "index-management"
         }
       ],
-      "issue_number": 2517
+      "issue_number": 3822
     },
     {
       "name": "Neural Search",
@@ -472,7 +472,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 2518
+      "issue_number": 3823
     },
     {
       "name": "Query Insights",
@@ -565,7 +565,7 @@
           "repository": "query"
         }
       ],
-      "issue_number": 2519
+      "issue_number": 3824
     },
     {
       "name": "Security Enhancements",
@@ -635,7 +635,7 @@
         },
         {
           "pr": 5883,
-          "name": "Serialize Search Request object in DLS Filter Level Handler only when\u2026",
+          "name": "Serialize Search Request object in DLS Filter Level Handler only when…",
           "category": "enhancement",
           "repository": "security"
         },
@@ -850,7 +850,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 2520
+      "issue_number": 3825
     },
     {
       "name": "k-NN Vector Search",
@@ -961,7 +961,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 2521
+      "issue_number": 3826
     },
     {
       "name": "SQL/PPL Engine",
@@ -1276,7 +1276,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 2522
+      "issue_number": 3827
     },
     {
       "name": "SEISMIC (Sparse ANN)",
@@ -1297,7 +1297,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 2523
+      "issue_number": 3828
     },
     {
       "name": "Agentic Search",
@@ -1319,7 +1319,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 2524
+      "issue_number": 3829
     },
     {
       "name": "Observability Integration",
@@ -1353,7 +1353,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2525
+      "issue_number": 3830
     },
     {
       "name": "Dashboards ML Agents",
@@ -1374,7 +1374,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 2526
+      "issue_number": 3831
     },
     {
       "name": "Cross-Cluster Replication",
@@ -1395,7 +1395,7 @@
           "repository": "cross-cluster-replication"
         }
       ],
-      "issue_number": 2527
+      "issue_number": 3832
     },
     {
       "name": "Dashboards CI/CD",
@@ -1410,7 +1410,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 2528
+      "issue_number": 3833
     },
     {
       "name": "Job Scheduler",
@@ -1443,7 +1443,7 @@
           "repository": "job"
         }
       ],
-      "issue_number": 2529
+      "issue_number": 3834
     },
     {
       "name": "Remote Store",
@@ -1464,7 +1464,7 @@
           "repository": "remote"
         }
       ],
-      "issue_number": 2530
+      "issue_number": 3835
     },
     {
       "name": "Dashboards Dependencies",
@@ -1558,7 +1558,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2531
+      "issue_number": 3836
     },
     {
       "name": "Notifications Maintenance",
@@ -1579,7 +1579,7 @@
           "repository": "notifications"
         }
       ],
-      "issue_number": 2532
+      "issue_number": 3837
     },
     {
       "name": "Observability Dependencies",
@@ -1612,7 +1612,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 2533
+      "issue_number": 3838
     },
     {
       "name": "Reporting Dependencies",
@@ -1627,7 +1627,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 2534
+      "issue_number": 3839
     },
     {
       "name": "Performance Analyzer",
@@ -1642,7 +1642,7 @@
           "repository": "performance"
         }
       ],
-      "issue_number": 2535
+      "issue_number": 3840
     },
     {
       "name": "Skills Dependencies",
@@ -1657,7 +1657,7 @@
           "repository": "skills"
         }
       ],
-      "issue_number": 2536
+      "issue_number": 3841
     },
     {
       "name": "User Plugin Maintenance",
@@ -1672,7 +1672,7 @@
           "repository": "user"
         }
       ],
-      "issue_number": 2537
+      "issue_number": 3842
     },
     {
       "name": "Threshold Visualization",
@@ -1705,7 +1705,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2538
+      "issue_number": 3843
     },
     {
       "name": "Dashboards Chat/AI",
@@ -1810,7 +1810,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2539
+      "issue_number": 3844
     },
     {
       "name": "Observability Traces",
@@ -1880,7 +1880,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2540
+      "issue_number": 3845
     },
     {
       "name": "Table Visualization Rewrite",
@@ -1901,7 +1901,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2541
+      "issue_number": 3846
     },
     {
       "name": "Prometheus Metrics in Explore",
@@ -1976,7 +1976,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2542
+      "issue_number": 3847
     },
     {
       "name": "Dashboards CVE Fixes",
@@ -1991,7 +1991,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2543
+      "issue_number": 3848
     },
     {
       "name": "Explore Enhancements",
@@ -2066,7 +2066,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2544
+      "issue_number": 3849
     },
     {
       "name": "Dashboards CSP Security",
@@ -2105,7 +2105,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2545
+      "issue_number": 3850
     },
     {
       "name": "ECharts Migration",
@@ -2216,7 +2216,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2546
+      "issue_number": 3851
     },
     {
       "name": "Dashboards Data Plugin",
@@ -2231,7 +2231,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2547
+      "issue_number": 3852
     },
     {
       "name": "TSVB Enhancements",
@@ -2246,7 +2246,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2548
+      "issue_number": 3853
     },
     {
       "name": "Dashboards gzip Support",
@@ -2279,7 +2279,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2549
+      "issue_number": 3854
     },
     {
       "name": "Data Importer",
@@ -2306,7 +2306,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2550
+      "issue_number": 3855
     },
     {
       "name": "Sample Data",
@@ -2321,7 +2321,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2551
+      "issue_number": 3856
     },
     {
       "name": "Dashboards Misc Fixes",
@@ -2366,7 +2366,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2552
+      "issue_number": 3857
     },
     {
       "name": "Dashboards Plugin Compatibility",
@@ -2387,7 +2387,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2553
+      "issue_number": 3858
     },
     {
       "name": "Dashboards Build (Rspack Migration)",
@@ -2402,7 +2402,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 2554
+      "issue_number": 3859
     }
   ],
   "processed_offset": 386

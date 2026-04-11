@@ -31,7 +31,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 135
+      "issue_number": 2622
     },
     {
       "name": "Java Runtime & JPMS",
@@ -95,7 +95,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 136
+      "issue_number": 2636
     },
     {
       "name": "Thread Context Permissions",
@@ -129,7 +129,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 137
+      "issue_number": 2637
     },
     {
       "name": "HTTP Client Migration",
@@ -151,7 +151,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 138
+      "issue_number": 2638
     },
     {
       "name": "Bulk API Changes",
@@ -172,7 +172,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 139
+      "issue_number": 2639
     },
     {
       "name": "Node Roles & Configuration",
@@ -206,7 +206,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 140
+      "issue_number": 2640
     },
     {
       "name": "Jackson & Query Limits",
@@ -227,7 +227,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 141
+      "issue_number": 2641
     },
     {
       "name": "Indexing Buffer Fix",
@@ -242,7 +242,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 142
+      "issue_number": 2642
     },
     {
       "name": "Deprecated Code Cleanup",
@@ -480,7 +480,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 143
+      "issue_number": 2643
     },
     {
       "name": "Cluster Permissions",
@@ -502,7 +502,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 144
+      "issue_number": 2644
     },
     {
       "name": "Dashboards Frontend Cleanup",
@@ -560,7 +560,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 145
+      "issue_number": 2645
     },
     {
       "name": "Monaco Editor Upgrade",
@@ -594,7 +594,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 146
+      "issue_number": 2646
     },
     {
       "name": "ML Commons / MCP",
@@ -669,7 +669,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 147
+      "issue_number": 2647
     },
     {
       "name": "Observability Notebooks",
@@ -684,7 +684,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 148
+      "issue_number": 2648
     },
     {
       "name": "Security Plugin Changes",
@@ -861,7 +861,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 149
+      "issue_number": 2649
     },
     {
       "name": "Remote Vector Index Build",
@@ -930,7 +930,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 150
+      "issue_number": 2650
     },
     {
       "name": "Lucene On Faiss",
@@ -957,7 +957,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 151
+      "issue_number": 2651
     },
     {
       "name": "Explain API Support",
@@ -984,7 +984,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 152
+      "issue_number": 2652
     },
     {
       "name": "Vector Search (k-NN)",
@@ -1311,7 +1311,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 153
+      "issue_number": 2653
     },
     {
       "name": "SQL/PPL Engine",
@@ -1531,7 +1531,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 154
+      "issue_number": 2654
     },
     {
       "name": "AI Assistant / Chatbot",
@@ -2044,7 +2044,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 155
+      "issue_number": 2655
     },
     {
       "name": "Anomaly Detection",
@@ -2125,7 +2125,7 @@
           "repository": "anomaly-detection"
         }
       ],
-      "issue_number": 156
+      "issue_number": 2656
     },
     {
       "name": "Cross-Cluster Replication (CCR)",
@@ -2154,7 +2154,7 @@
           "repository": "cross-cluster-replication"
         }
       ],
-      "issue_number": 157
+      "issue_number": 2657
     },
     {
       "name": "Custom Codecs & Libraries",
@@ -2169,7 +2169,7 @@
           "repository": "custom"
         }
       ],
-      "issue_number": 158
+      "issue_number": 2658
     },
     {
       "name": "Maps & Geospatial",
@@ -2202,7 +2202,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 159
+      "issue_number": 2659
     },
     {
       "name": "Cross-Cluster Search",
@@ -2217,7 +2217,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 160
+      "issue_number": 2660
     },
     {
       "name": "Flow Framework",
@@ -2274,7 +2274,7 @@
           "repository": "flow"
         }
       ],
-      "issue_number": 161
+      "issue_number": 2661
     },
     {
       "name": "Data Ingestion",
@@ -2301,7 +2301,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 162
+      "issue_number": 2662
     },
     {
       "name": "Neural Search / Hybrid Query",
@@ -2490,7 +2490,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 163
+      "issue_number": 2663
     },
     {
       "name": "Threat Intelligence",
@@ -2511,7 +2511,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 164
+      "issue_number": 2664
     },
     {
       "name": "Skills / Tools",
@@ -2550,7 +2550,7 @@
           "repository": "skills"
         }
       ],
-      "issue_number": 165
+      "issue_number": 2665
     },
     {
       "name": "Calcite Query Engine",
@@ -2781,7 +2781,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 166
+      "issue_number": 2666
     },
     {
       "name": "AI Search Flows",
@@ -2910,7 +2910,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 167
+      "issue_number": 2667
     },
     {
       "name": "Observability / Traces",
@@ -3123,7 +3123,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 168
+      "issue_number": 2668
     },
     {
       "name": "Query Insights",
@@ -3325,7 +3325,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 169
+      "issue_number": 2669
     },
     {
       "name": "Alerting",
@@ -3370,7 +3370,7 @@
           "repository": "alerting"
         }
       ],
-      "issue_number": 170
+      "issue_number": 2670
     },
     {
       "name": "Common Utils",
@@ -3397,7 +3397,7 @@
           "repository": "common"
         }
       ],
-      "issue_number": 171
+      "issue_number": 2671
     },
     {
       "name": "Custom Codecs",
@@ -3430,7 +3430,7 @@
           "repository": "custom"
         }
       ],
-      "issue_number": 172
+      "issue_number": 2672
     },
     {
       "name": "Reporting",
@@ -3457,7 +3457,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 173
+      "issue_number": 2673
     },
     {
       "name": "Data Ingestion Dashboards",
@@ -3526,7 +3526,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 174
+      "issue_number": 2674
     },
     {
       "name": "Index Management",
@@ -3595,7 +3595,7 @@
           "repository": "index-management"
         }
       ],
-      "issue_number": 175
+      "issue_number": 2675
     },
     {
       "name": "Security Plugin",
@@ -3760,7 +3760,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 176
+      "issue_number": 2676
     },
     {
       "name": "Job Scheduler",
@@ -3787,7 +3787,7 @@
           "repository": "job"
         }
       ],
-      "issue_number": 177
+      "issue_number": 2677
     },
     {
       "name": "ML Commons",
@@ -3970,7 +3970,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 178
+      "issue_number": 2678
     },
     {
       "name": "Notifications",
@@ -3985,7 +3985,7 @@
           "repository": "notifications"
         }
       ],
-      "issue_number": 179
+      "issue_number": 2679
     },
     {
       "name": "Learning to Rank",
@@ -4006,7 +4006,7 @@
           "repository": "learning"
         }
       ],
-      "issue_number": 180
+      "issue_number": 2680
     },
     {
       "name": "Remote Metadata Store",
@@ -4063,7 +4063,7 @@
           "repository": "remote"
         }
       ],
-      "issue_number": 181
+      "issue_number": 2681
     },
     {
       "name": "Reporting Plugin",
@@ -4078,7 +4078,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 182
+      "issue_number": 2682
     },
     {
       "name": "Version Bumps & Release Notes",
@@ -4323,7 +4323,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 183
+      "issue_number": 2683
     },
     {
       "name": "JDK 21 & Java Agent Migration",
@@ -4415,7 +4415,7 @@
           "repository": "flow"
         }
       ],
-      "issue_number": 184
+      "issue_number": 2684
     },
     {
       "name": "Neural Search Compatibility",
@@ -4442,7 +4442,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 185
+      "issue_number": 2685
     },
     {
       "name": "Observability Integrations",
@@ -4463,7 +4463,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 186
+      "issue_number": 2686
     },
     {
       "name": "CI/CD & Testing Infrastructure",
@@ -4523,7 +4523,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 187
+      "issue_number": 2687
     },
     {
       "name": "Anomaly Detection Build",
@@ -4538,7 +4538,7 @@
           "repository": "anomaly-detection"
         }
       ],
-      "issue_number": 188
+      "issue_number": 2688
     },
     {
       "name": "Flow Framework Templates",
@@ -4553,7 +4553,7 @@
           "repository": "flow"
         }
       ],
-      "issue_number": 189
+      "issue_number": 2689
     },
     {
       "name": "ML Commons Blueprints & Tutorials",
@@ -4592,7 +4592,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 190
+      "issue_number": 2690
     },
     {
       "name": "SQL/PPL Documentation",
@@ -4607,7 +4607,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 191
+      "issue_number": 2691
     },
     {
       "name": "Remote Metadata Store Documentation",
@@ -4622,7 +4622,7 @@
           "repository": "remote"
         }
       ],
-      "issue_number": 192
+      "issue_number": 2692
     },
     {
       "name": "Dashboards Dependencies",
@@ -4643,7 +4643,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 193
+      "issue_number": 2693
     },
     {
       "name": "CVE Fixes & Dependency Updates",
@@ -4747,7 +4747,7 @@
           "repository": "notifications"
         }
       ],
-      "issue_number": 194
+      "issue_number": 2694
     },
     {
       "name": "Geospatial Plugin",
@@ -4762,7 +4762,7 @@
           "repository": "geospatial"
         }
       ],
-      "issue_number": 195
+      "issue_number": 2695
     },
     {
       "name": "Asynchronous Search",
@@ -4777,7 +4777,7 @@
           "repository": "asynchronous-search"
         }
       ],
-      "issue_number": 196
+      "issue_number": 2696
     },
     {
       "name": "Dashboards BWC",
@@ -4792,7 +4792,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 197
+      "issue_number": 2697
     },
     {
       "name": "Reporting CI/Workflow",
@@ -4807,7 +4807,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 198
+      "issue_number": 2698
     },
     {
       "name": "AUTO",
@@ -4829,7 +4829,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 199
+      "issue_number": 2699
     },
     {
       "name": "Release 3.0",
@@ -4844,7 +4844,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 200
+      "issue_number": 2700
     },
     {
       "name": "Version Bumps & Release Qualifiers (Batch 2)",
@@ -4966,7 +4966,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 201
+      "issue_number": 2701
     },
     {
       "name": "Java Agent / SecurityManager Migration (Batch 2)",
@@ -5038,7 +5038,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 202
+      "issue_number": 2702
     },
     {
       "name": "CVE Fixes & Dependency Updates (Batch 2)",
@@ -5194,7 +5194,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 203
+      "issue_number": 2703
     },
     {
       "name": "Query Insights Plugin (Batch 2)",
@@ -5233,7 +5233,7 @@
           "repository": "query"
         }
       ],
-      "issue_number": 204
+      "issue_number": 2704
     },
     {
       "name": "Query Workbench Dashboards",
@@ -5321,7 +5321,7 @@
           "repository": "query"
         }
       ],
-      "issue_number": 205
+      "issue_number": 2705
     },
     {
       "name": "Security Dependency Bumps",
@@ -5408,7 +5408,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 206
+      "issue_number": 2706
     },
     {
       "name": "Security Code Quality & Testing",
@@ -5459,7 +5459,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 207
+      "issue_number": 2707
     },
     {
       "name": "k-NN Derived Source & Codec Refactoring",
@@ -5522,7 +5522,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 208
+      "issue_number": 2708
     },
     {
       "name": "Skills Plugin Compatibility",
@@ -5543,7 +5543,7 @@
           "repository": "skills"
         }
       ],
-      "issue_number": 209
+      "issue_number": 2709
     },
     {
       "name": "SQL Plugin Compatibility",
@@ -5558,7 +5558,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 210
+      "issue_number": 2710
     },
     {
       "name": "Alerting Improvements",
@@ -5573,7 +5573,7 @@
           "repository": "alerting"
         }
       ],
-      "issue_number": 211
+      "issue_number": 2711
     },
     {
       "name": "Neural Search Refactoring",
@@ -5588,7 +5588,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 212
+      "issue_number": 2712
     },
     {
       "name": "Remote Metadata Store Compatibility",
@@ -5603,7 +5603,7 @@
           "repository": "remote"
         }
       ],
-      "issue_number": 213
+      "issue_number": 2713
     },
     {
       "name": "AI Search Flows Dashboards",
@@ -5624,7 +5624,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 214
+      "issue_number": 2714
     },
     {
       "name": "HTTP/2 Support",
@@ -5639,7 +5639,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 215
+      "issue_number": 2715
     },
     {
       "name": "Events Correlation Engine",
@@ -5654,7 +5654,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 216
+      "issue_number": 2716
     },
     {
       "name": "Extensions Framework",
@@ -5675,7 +5675,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 217
+      "issue_number": 2717
     },
     {
       "name": "Workload Management (WLM)",
@@ -5696,7 +5696,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 218
+      "issue_number": 2718
     },
     {
       "name": "Views",
@@ -5711,7 +5711,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 219
+      "issue_number": 2719
     },
     {
       "name": "Systemd Security Configurations",
@@ -5739,7 +5739,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 220
+      "issue_number": 2720
     },
     {
       "name": "Pull-based Ingestion",
@@ -5844,7 +5844,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 221
+      "issue_number": 2721
     },
     {
       "name": "Configuration Utilities",
@@ -5859,7 +5859,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 222
+      "issue_number": 2722
     },
     {
       "name": "Shard Management",
@@ -5880,7 +5880,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 223
+      "issue_number": 2723
     },
     {
       "name": "Aggregations",
@@ -5907,7 +5907,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 224
+      "issue_number": 2724
     },
     {
       "name": "Arrow Flight RPC",
@@ -5922,7 +5922,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 225
+      "issue_number": 2725
     },
     {
       "name": "Query Builders",
@@ -5937,7 +5937,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 226
+      "issue_number": 2726
     },
     {
       "name": "Star Tree Index",
@@ -5976,7 +5976,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 227
+      "issue_number": 2727
     },
     {
       "name": "Warm/Hot Tiering",
@@ -6003,7 +6003,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 228
+      "issue_number": 2728
     },
     {
       "name": "Cluster Management",
@@ -6024,7 +6024,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 229
+      "issue_number": 2729
     },
     {
       "name": "Remote Cluster State",
@@ -6039,7 +6039,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 230
+      "issue_number": 2730
     },
     {
       "name": "Flat Object Field Type",
@@ -6054,7 +6054,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 231
+      "issue_number": 2731
     },
     {
       "name": "Numeric Types",
@@ -6069,7 +6069,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 232
+      "issue_number": 2732
     },
     {
       "name": "Segment Replication",
@@ -6102,7 +6102,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 233
+      "issue_number": 2733
     },
     {
       "name": "Rule-Based Auto-Tagging",
@@ -6141,7 +6141,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 234
+      "issue_number": 2734
     },
     {
       "name": "Search Utilities",
@@ -6156,7 +6156,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 235
+      "issue_number": 2735
     },
     {
       "name": "Search Task Management",
@@ -6171,7 +6171,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 236
+      "issue_number": 2736
     },
     {
       "name": "Field Types",
@@ -6186,7 +6186,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 237
+      "issue_number": 2737
     },
     {
       "name": "Security Manager Replacement (Java Agent)",
@@ -6231,7 +6231,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 238
+      "issue_number": 2738
     },
     {
       "name": "Query Performance Optimizations",
@@ -6264,7 +6264,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 239
+      "issue_number": 2739
     },
     {
       "name": "Search Replica & Reader-Writer Separation",
@@ -6291,7 +6291,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 240
+      "issue_number": 2740
     },
     {
       "name": "gRPC Transport & Services",
@@ -6324,7 +6324,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 241
+      "issue_number": 2741
     },
     {
       "name": "Tiered Caching",
@@ -6345,7 +6345,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 242
+      "issue_number": 2742
     },
     {
       "name": "Refresh Task Scheduling",
@@ -6360,7 +6360,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 243
+      "issue_number": 2743
     },
     {
       "name": "Mapping Transformer",
@@ -6375,7 +6375,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 244
+      "issue_number": 2744
     },
     {
       "name": "Segment Warmer",
@@ -6390,7 +6390,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 245
+      "issue_number": 2745
     },
     {
       "name": "Merge Settings",
@@ -6405,7 +6405,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 246
+      "issue_number": 2746
     },
     {
       "name": "Cluster Manager Throttling",
@@ -6420,7 +6420,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 247
+      "issue_number": 2747
     },
     {
       "name": "Dependency Bumps",
@@ -6609,7 +6609,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 248
+      "issue_number": 2748
     },
     {
       "name": "Locale Provider Changes",
@@ -6624,7 +6624,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 249
+      "issue_number": 2749
     },
     {
       "name": "HTTP API Improvements",
@@ -6657,7 +6657,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 250
+      "issue_number": 2750
     },
     {
       "name": "Search Backpressure",
@@ -6672,7 +6672,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 251
+      "issue_number": 2751
     },
     {
       "name": "Nodes Info API Changes",
@@ -6687,7 +6687,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 252
+      "issue_number": 2752
     },
     {
       "name": "Source Field Matching",
@@ -6702,7 +6702,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 253
+      "issue_number": 2753
     },
     {
       "name": "Automata & Regex Optimization",
@@ -6717,7 +6717,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 254
+      "issue_number": 2754
     },
     {
       "name": "Lucene Similarity",
@@ -6732,7 +6732,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 255
+      "issue_number": 2755
     },
     {
       "name": "Wildcard Field",
@@ -6747,7 +6747,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 256
+      "issue_number": 2756
     },
     {
       "name": "Cryptography & Security Libraries",
@@ -6768,7 +6768,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 257
+      "issue_number": 2757
     },
     {
       "name": "Stream Input/Output",
@@ -6783,7 +6783,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 258
+      "issue_number": 2758
     },
     {
       "name": "Gradle Build System",
@@ -6798,7 +6798,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 259
+      "issue_number": 2759
     },
     {
       "name": "Merge & Segment Settings",
@@ -6825,7 +6825,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 260
+      "issue_number": 2760
     },
     {
       "name": "DocValues Optimization",
@@ -6846,7 +6846,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 261
+      "issue_number": 2761
     },
     {
       "name": "Pipeline ID Limits",
@@ -6861,7 +6861,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 262
+      "issue_number": 2762
     },
     {
       "name": "Plugin System",
@@ -6876,7 +6876,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 263
+      "issue_number": 2763
     },
     {
       "name": "Concurrent Segment Search",
@@ -6891,7 +6891,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 264
+      "issue_number": 2764
     },
     {
       "name": "Track Total Hits",
@@ -6906,7 +6906,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 265
+      "issue_number": 2765
     },
     {
       "name": "HTTP Client Fixes",
@@ -6939,7 +6939,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 266
+      "issue_number": 2766
     },
     {
       "name": "Query & Aggregation Fixes",
@@ -6990,7 +6990,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 267
+      "issue_number": 2767
     },
     {
       "name": "Node Stats & API Fixes",
@@ -7017,7 +7017,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 268
+      "issue_number": 2768
     },
     {
       "name": "Field Type Fixes",
@@ -7032,7 +7032,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 269
+      "issue_number": 2769
     },
     {
       "name": "Dashboards Dependency Updates",
@@ -7059,7 +7059,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 270
+      "issue_number": 2770
     },
     {
       "name": "Dashboards CVE Fixes",
@@ -7104,7 +7104,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 271
+      "issue_number": 2771
     },
     {
       "name": "Dashboards Features",
@@ -7137,7 +7137,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 272
+      "issue_number": 2772
     },
     {
       "name": "Webpack & Build Performance",
@@ -7158,7 +7158,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 273
+      "issue_number": 2773
     },
     {
       "name": "S3 / Direct Query Connections",
@@ -7185,7 +7185,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 274
+      "issue_number": 2774
     },
     {
       "name": "Multi-Data Source (MDS)",
@@ -7212,7 +7212,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 275
+      "issue_number": 2775
     },
     {
       "name": "Discover Plugin Enhancements",
@@ -7299,7 +7299,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 276
+      "issue_number": 2776
     },
     {
       "name": "Discover Summary / AI Assistant Integration",
@@ -7350,7 +7350,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 277
+      "issue_number": 2777
     },
     {
       "name": "Query Assistant",
@@ -7395,7 +7395,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 278
+      "issue_number": 2778
     },
     {
       "name": "PPL Query Support",
@@ -7434,7 +7434,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 279
+      "issue_number": 2779
     },
     {
       "name": "Dashboard & Visualization Fixes",
@@ -7455,7 +7455,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 280
+      "issue_number": 2780
     },
     {
       "name": "Workspace Improvements",
@@ -7482,7 +7482,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 282
+      "issue_number": 2782
     },
     {
       "name": "UI/UX Improvements",
@@ -7503,7 +7503,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 283
+      "issue_number": 2783
     },
     {
       "name": "CI/CD & Build Fixes",
@@ -7536,7 +7536,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 284
+      "issue_number": 2784
     },
     {
       "name": "Dashboards UI/UX Fixes",
@@ -7623,7 +7623,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 285
+      "issue_number": 2785
     },
     {
       "name": "Dashboards CI/CD & Documentation",
@@ -7704,7 +7704,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 286
+      "issue_number": 2786
     },
     {
       "name": "Dashboards Cypress Testing",
@@ -7821,7 +7821,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 287
+      "issue_number": 2787
     },
     {
       "name": "SQL/PPL v3.0.0 Breaking Changes",
@@ -7938,7 +7938,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 288
+      "issue_number": 2788
     },
     {
       "name": "Semantic Field",
@@ -7959,7 +7959,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 289
+      "issue_number": 2789
     }
   ],
   "processed_offset": 994,

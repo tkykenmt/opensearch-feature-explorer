@@ -79,20 +79,16 @@ Follow the `github-workflow` skill's Repository Detection pattern.
 
 ### Step 1.2: Find or Load Issue
 If instructed to find oldest open Issue:
-1. Use `list_issues` tool (NOT `search_issues`) with:
-   - `owner`: extracted owner from Step 1.1
-   - `repo`: extracted repo from Step 1.1
-   - `state`: `"open"`
-   - `labels`: `["new-feature", "update-feature"]`
-   - `sort`: `"created"`
-   - `direction`: `"asc"`
-   - `per_page`: `1`
-2. Pick the first (oldest) one
-3. Proceed as if that Issue number was provided
+```bash
+gh issue list -R {owner}/{repo} --state open --label "new-feature,update-feature" --sort created --order asc --limit 1 --json number,title,body,labels
+```
+Pick the first (oldest) one and proceed as if that Issue number was provided.
 
 If Issue number provided:
-1. Fetch Issue using `get_issue` with the extracted owner/repo
-2. Extract from Issue body:
+```bash
+gh issue view {number} -R {owner}/{repo} --json title,body,labels,state,milestone
+```
+Extract from Issue body:
    - Item name (release item title)
    - Feature name (may differ from item name)
    - Target version
@@ -107,29 +103,29 @@ If direct invocation:
 
 ### Step 1.3: Check for Duplicate Issues
 After loading the target Issue, check for duplicates:
-1. Use `list_issues` with `state: "open"` and labels `["new-feature", "update-feature"]`
-2. Find other open Issues with same feature name AND same version (check title pattern)
-3. If duplicates found:
-   - Keep the current Issue (the one being investigated)
-   - For each duplicate:
-     - Add `duplicate` label using `add_labels_to_issue`
-     - Post comment: "Duplicate of #{current_issue}. Closing as duplicate."
-     - Close the Issue using `update_issue` with `state: "closed"`
-   - Continue investigation with the current Issue
+```bash
+gh issue list -R {owner}/{repo} --state open --label "new-feature,update-feature" --json number,title,body,labels
+```
+Find other open Issues with same feature name AND same version (check title pattern).
+If duplicates found, keep the current Issue and for each duplicate:
+```bash
+gh issue edit {dup_number} -R {owner}/{repo} --add-label "duplicate"
+gh issue comment {dup_number} -R {owner}/{repo} --body "Duplicate of #{current_issue}. Closing as duplicate."
+gh issue close {dup_number} -R {owner}/{repo}
+```
 
 ## Step 1.5: Check Existing Files
 
 Before creating new files, search for existing reports:
 
-### Search with GitHub MCP
-Use `search_code` to find existing reports:
-```
-search_code(q="{feature-name} repo:{owner}/{repository} path:docs/features")
+### Search for Existing Reports
+```bash
+gh search code "{feature-name}" -R {owner}/{repo} --filename "*.md" -- path:docs/features --json path,textMatches
 ```
 
 Also search by key terms:
-```
-search_code(q="{key-term} repo:{owner}/{repository} path:docs/features extension:md")
+```bash
+gh search code "{key-term}" -R {owner}/{repo} --filename "*.md" -- path:docs/features --json path,textMatches
 ```
 
 ### Decision
@@ -145,13 +141,26 @@ search_code(q="{key-term} repo:{owner}/{repository} path:docs/features extension
 
 ### 2.1 GitHub Investigation
 For each PR listed in the Issue:
-1. Get PR details using `get_pull_request` - read the full description
-2. Get changed files using `get_pull_request_files`
-3. **Read key changed files** using `get_file_contents` - understand the actual implementation
-4. Get linked Issues using `get_issue` - read the full discussion for context/motivation
+```bash
+# 1. Get PR details - read the full description
+gh pr view {number} -R {owner}/{repo} --json title,body,files,labels,milestone
+
+# 2. Get changed files
+gh pr view {number} -R {owner}/{repo} --json files --jq '.files[].path'
+
+# 3. Read key changed files - understand the actual implementation
+gh api repos/{owner}/{repo}/contents/{path}?ref={branch} --jq '.content' | base64 -d
+
+# 4. Get linked Issues - read the full discussion for context/motivation
+gh issue view {number} -R {owner}/{repo} --json title,body,labels,comments
+```
 
 For discovery:
-5. Search for related PRs/Issues using `search_issues`
+```bash
+# 5. Search for related PRs/Issues
+gh search issues "{query}" -R {owner}/{repo} --json number,title,url
+gh search prs "{query}" -R {owner}/{repo} --json number,title,url
+```
 
 ### 2.2 Resource Investigation
 1. Search for documentation using OpenSearch Docs MCP:
@@ -263,6 +272,8 @@ For "Push directly to main" mode: skip PR, commit and push to main directly.
 
 ## Step 7: Update GitHub Issue
 
+**IMPORTANT**: Do NOT use `#NUMBER`, `repo#NUMBER`, or `[text](URL)` format for external PR/Issue references in comments. Always wrap external URLs in backtick code spans to prevent GitHub from creating cross-repository "referenced on" links.
+
 Post completion comment:
 ```markdown
 ## Investigation Complete
@@ -279,12 +290,16 @@ Post completion comment:
 - {Change 2}
 
 ### Resources Used
-- PR: #{number}
+- PR: `https://github.com/opensearch-project/{REPO}/pull/{number}`
 - Docs: {url}
 - Blog: {url}
 ```
 
-Close the Issue.
+Close the Issue:
+```bash
+gh issue comment {number} -R {owner}/{repo} --body "{comment}"
+gh issue close {number} -R {owner}/{repo}
+```
 
 ## Investigation Quality Guidelines
 
@@ -326,7 +341,7 @@ docs/features/
 
 ### Mode 2: PR Investigation Workflow
 When invoked with `--pr N` only:
-1. Get PR details using `get_pull_request`
+1. Get PR details: `gh pr view N -R {owner}/{repo} --json title,body,files,labels,milestone`
 2. Extract feature name from PR title/description
 3. Find linked Issues and related PRs
 4. Determine version from PR milestone or labels
@@ -355,6 +370,10 @@ When invoked with no arguments:
 ### Interactive Mode Capabilities
 - Load existing feature reports as context
 - Fetch and analyze URLs (docs, blogs, PRs)
+- Search documentation using OpenSearch Docs MCP
+- Update reports with new insights
+- Create diagrams to explain concepts
+URLs (docs, blogs, PRs)
 - Search documentation using OpenSearch Docs MCP
 - Update reports with new insights
 - Create diagrams to explain concepts

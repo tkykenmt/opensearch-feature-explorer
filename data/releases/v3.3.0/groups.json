@@ -15,7 +15,7 @@
           "repository": "alerting"
         }
       ],
-      "issue_number": 1305
+      "issue_number": 3248
     },
     {
       "name": "Anomaly Detection Enhancements",
@@ -66,7 +66,7 @@
           "repository": "anomaly-detection"
         }
       ],
-      "issue_number": 1306
+      "issue_number": 3249
     },
     {
       "name": "Agentic Search",
@@ -106,7 +106,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1307
+      "issue_number": 3250
     },
     {
       "name": "Semantic Highlighting",
@@ -128,7 +128,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 1308
+      "issue_number": 3251
     },
     {
       "name": "Snapshot Management",
@@ -149,7 +149,7 @@
           "repository": "index-management"
         }
       ],
-      "issue_number": 1309
+      "issue_number": 3252
     },
     {
       "name": "Job Scheduler Enhancements",
@@ -188,7 +188,7 @@
           "repository": "job"
         }
       ],
-      "issue_number": 1310
+      "issue_number": 3253
     },
     {
       "name": "Maximal Marginal Relevance (MMR)",
@@ -210,7 +210,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 1311
+      "issue_number": 3254
     },
     {
       "name": "Late Interaction",
@@ -225,7 +225,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 1312
+      "issue_number": 3255
     },
     {
       "name": "Agentic Memory and ScratchPad",
@@ -282,7 +282,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1313
+      "issue_number": 3256
     },
     {
       "name": "Global Resource Support",
@@ -304,7 +304,7 @@
           "repository": "remote"
         }
       ],
-      "issue_number": 1314
+      "issue_number": 3257
     },
     {
       "name": "ML Inference Processors",
@@ -337,7 +337,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1315
+      "issue_number": 3258
     },
     {
       "name": "Resource Access Control",
@@ -359,7 +359,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1316
+      "issue_number": 3259
     },
     {
       "name": "Index Insight",
@@ -374,7 +374,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1317
+      "issue_number": 3260
     },
     {
       "name": "Streaming APIs",
@@ -408,7 +408,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1318
+      "issue_number": 3261
     },
     {
       "name": "MCP Connector",
@@ -429,7 +429,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1319
+      "issue_number": 3262
     },
     {
       "name": "SEISMIC Sparse ANN",
@@ -444,7 +444,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 1320
+      "issue_number": 3263
     },
     {
       "name": "Workload Management (WLM)",
@@ -508,7 +508,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1321
+      "issue_number": 3264
     },
     {
       "name": "Versioned Security Configuration",
@@ -529,7 +529,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1322
+      "issue_number": 3265
     },
     {
       "name": "Rule-based Autotagging",
@@ -544,7 +544,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1323
+      "issue_number": 3266
     },
     {
       "name": "Skills Tools",
@@ -583,7 +583,7 @@
           "repository": "skills"
         }
       ],
-      "issue_number": 1324
+      "issue_number": 3267
     },
     {
       "name": "SQL/PPL Calcite Engine",
@@ -628,7 +628,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1325
+      "issue_number": 3268
     },
     {
       "name": "SQL/PPL Query Enhancements",
@@ -721,7 +721,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1326
+      "issue_number": 3269
     },
     {
       "name": "SQL/PPL Aggregation Pushdown",
@@ -766,7 +766,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1327
+      "issue_number": 3270
     },
     {
       "name": "SQL/PPL Aggregate Functions",
@@ -799,7 +799,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1328
+      "issue_number": 3272
     },
     {
       "name": "SQL/PPL Patterns Command",
@@ -820,7 +820,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1329
+      "issue_number": 3273
     },
     {
       "name": "SQL/PPL Rex and Regex Commands",
@@ -847,7 +847,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1330
+      "issue_number": 3274
     },
     {
       "name": "SQL/PPL Spath Command",
@@ -862,7 +862,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1331
+      "issue_number": 3275
     },
     {
       "name": "SQL/PPL Rename Command",
@@ -877,7 +877,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1332
+      "issue_number": 3276
     },
     {
       "name": "Common Utils Enhancements",
@@ -898,7 +898,7 @@
           "repository": "common"
         }
       ],
-      "issue_number": 1333
+      "issue_number": 3277
     },
     {
       "name": "Search Comparison Dashboards",
@@ -925,7 +925,7 @@
           "repository": "dashboards"
         }
       ],
-      "issue_number": 1334
+      "issue_number": 3278
     },
     {
       "name": "Index Management Enhancements",
@@ -952,7 +952,7 @@
           "repository": "index-management"
         }
       ],
-      "issue_number": 1335
+      "issue_number": 3279
     },
     {
       "name": "k-NN Engine Enhancements",
@@ -973,7 +973,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 1336
+      "issue_number": 3280
     },
     {
       "name": "ML Commons Agent Enhancements",
@@ -1000,7 +1000,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1337
+      "issue_number": 3281
     },
     {
       "name": "ML Commons Connector Enhancements",
@@ -1021,7 +1021,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1338
+      "issue_number": 3282
     },
     {
       "name": "ML Commons Multi-tenancy",
@@ -1036,7 +1036,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1339
+      "issue_number": 3283
     },
     {
       "name": "ML Commons Tools Enhancements",
@@ -1063,7 +1063,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1340
+      "issue_number": 3284
     },
     {
       "name": "Remote Client Enhancements",
@@ -1102,7 +1102,7 @@
           "repository": "remote"
         }
       ],
-      "issue_number": 1341
+      "issue_number": 3285
     },
     {
       "name": "Performance Analyzer Enhancements",
@@ -1112,7 +1112,7 @@
       "items": [
         {
           "pr": 845,
-          "name": "Use Subclass method for Versiona and Channel type which is understood\u2026",
+          "name": "Use Subclass method for Versiona and Channel type which is understood…",
           "category": "enhancement",
           "repository": "performance"
         },
@@ -1123,7 +1123,7 @@
           "repository": "performance"
         }
       ],
-      "issue_number": 1342
+      "issue_number": 3286
     },
     {
       "name": "Resource Sharing",
@@ -1198,7 +1198,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1343
+      "issue_number": 3287
     },
     {
       "name": "Security Plugin Health Check",
@@ -1213,7 +1213,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1344
+      "issue_number": 3288
     },
     {
       "name": "JWT Authentication",
@@ -1228,7 +1228,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1345
+      "issue_number": 3289
     },
     {
       "name": "Security Configuration Enhancements",
@@ -1261,7 +1261,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1346
+      "issue_number": 3290
     },
     {
       "name": "Gradle 9 Compatibility",
@@ -1381,7 +1381,7 @@
           "repository": "skills"
         }
       ],
-      "issue_number": 1347
+      "issue_number": 3291
     },
     {
       "name": "Cross-Cluster Replication Fixes",
@@ -1396,7 +1396,7 @@
           "repository": "cross-cluster-replication"
         }
       ],
-      "issue_number": 1348
+      "issue_number": 3292
     },
     {
       "name": "Observability Fixes",
@@ -1417,7 +1417,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 1349
+      "issue_number": 3293
     },
     {
       "name": "Flow Framework Fixes",
@@ -1432,7 +1432,7 @@
           "repository": "flow"
         }
       ],
-      "issue_number": 1350
+      "issue_number": 3294
     },
     {
       "name": "k-NN Bug Fixes",
@@ -1501,7 +1501,7 @@
           "repository": "k-nn"
         }
       ],
-      "issue_number": 1351
+      "issue_number": 3295
     },
     {
       "name": "ML Commons Bug Fixes",
@@ -1684,7 +1684,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1352
+      "issue_number": 3296
     },
     {
       "name": "Metrics Framework",
@@ -1699,7 +1699,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1353
+      "issue_number": 3297
     },
     {
       "name": "Semantic Field",
@@ -1714,7 +1714,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 1354
+      "issue_number": 3298
     },
     {
       "name": "Neural Search Bug Fixes",
@@ -1741,7 +1741,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 1355
+      "issue_number": 3299
     },
     {
       "name": "Notifications Plugin Fixes",
@@ -1762,7 +1762,7 @@
           "repository": "notifications"
         }
       ],
-      "issue_number": 1356
+      "issue_number": 3300
     },
     {
       "name": "Learning to Rank Fixes",
@@ -1801,7 +1801,7 @@
           "repository": "learning"
         }
       ],
-      "issue_number": 1357
+      "issue_number": 3301
     },
     {
       "name": "Query Insights Bug Fixes",
@@ -1876,7 +1876,7 @@
           "repository": "query"
         }
       ],
-      "issue_number": 1358
+      "issue_number": 3302
     },
     {
       "name": "Search Relevance Fixes",
@@ -1891,7 +1891,7 @@
           "repository": "search"
         }
       ],
-      "issue_number": 1359
+      "issue_number": 3303
     },
     {
       "name": "Security Client Certificate Authentication",
@@ -1906,7 +1906,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1360
+      "issue_number": 3304
     },
     {
       "name": "Security Plugin Bug Fixes",
@@ -1970,7 +1970,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1361
+      "issue_number": 3305
     },
     {
       "name": "Security SSL/TLS",
@@ -1985,7 +1985,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1362
+      "issue_number": 3306
     },
     {
       "name": "User Plugin Fixes",
@@ -2000,7 +2000,7 @@
           "repository": "user"
         }
       ],
-      "issue_number": 1363
+      "issue_number": 3307
     },
     {
       "name": "SQL/PPL Bug Fixes",
@@ -2165,7 +2165,7 @@
           "repository": "sql"
         }
       ],
-      "issue_number": 1364
+      "issue_number": 3308
     },
     {
       "name": "Resource Access Control Documentation",
@@ -2180,7 +2180,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1365
+      "issue_number": 3309
     },
     {
       "name": "ML Commons Tutorials and Blueprints",
@@ -2231,7 +2231,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1366
+      "issue_number": 3310
     },
     {
       "name": "Common Utils Release Notes",
@@ -2246,7 +2246,7 @@
           "repository": "common"
         }
       ],
-      "issue_number": 1367
+      "issue_number": 3311
     },
     {
       "name": "Version Increment",
@@ -2400,7 +2400,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1368
+      "issue_number": 3312
     },
     {
       "name": "Dependency Updates",
@@ -2743,7 +2743,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1369
+      "issue_number": 3313
     },
     {
       "name": "Lucene 10.3 Update",
@@ -2772,7 +2772,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1370
+      "issue_number": 3314
     },
     {
       "name": "Observability Cypress Updates",
@@ -2787,7 +2787,7 @@
           "repository": "observability"
         }
       ],
-      "issue_number": 1371
+      "issue_number": 3315
     },
     {
       "name": "Reporting CVE Fixes",
@@ -2802,7 +2802,7 @@
           "repository": "reporting"
         }
       ],
-      "issue_number": 1372
+      "issue_number": 3316
     },
     {
       "name": "Geospatial Deprecation Fixes",
@@ -2817,7 +2817,7 @@
           "repository": "geospatial"
         }
       ],
-      "issue_number": 1373
+      "issue_number": 3317
     },
     {
       "name": "Move common string",
@@ -2832,7 +2832,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1374
+      "issue_number": 3318
     },
     {
       "name": "Updating gson version to resolve conflict coming from core",
@@ -2847,7 +2847,7 @@
           "repository": "ml-commons"
         }
       ],
-      "issue_number": 1375
+      "issue_number": 3319
     },
     {
       "name": "CI/CD Workflow Updates",
@@ -2869,7 +2869,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1376
+      "issue_number": 3320
     },
     {
       "name": "Neural Search Dependencies",
@@ -2896,7 +2896,7 @@
           "repository": "neural-search"
         }
       ],
-      "issue_number": 1377
+      "issue_number": 3321
     },
     {
       "name": "Query Plugin Dependencies",
@@ -2923,7 +2923,7 @@
           "repository": "query"
         }
       ],
-      "issue_number": 1378
+      "issue_number": 3322
     },
     {
       "name": "Security Plugin Dependencies",
@@ -3082,7 +3082,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1379
+      "issue_number": 3323
     },
     {
       "name": "Sync `org.opensearch:protobufs` version with core",
@@ -3097,7 +3097,7 @@
           "repository": "security"
         }
       ],
-      "issue_number": 1380
+      "issue_number": 3324
     },
     {
       "name": "Anomaly Detection Resource Authorization",
@@ -3112,7 +3112,7 @@
           "repository": "anomaly-detection"
         }
       ],
-      "issue_number": 1381
+      "issue_number": 3325
     },
     {
       "name": "Doc Request",
@@ -3134,7 +3134,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1382
+      "issue_number": 3326
     },
     {
       "name": "Fetch Phase Profiling",
@@ -3149,7 +3149,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1383
+      "issue_number": 3327
     },
     {
       "name": "Rule-based Auto-tagging",
@@ -3195,7 +3195,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1384
+      "issue_number": 3328
     },
     {
       "name": "Temporal Routing",
@@ -3210,7 +3210,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1385
+      "issue_number": 3329
     },
     {
       "name": "Query Rewriting",
@@ -3225,7 +3225,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1386
+      "issue_number": 3330
     },
     {
       "name": "Dynamic Mapping",
@@ -3240,7 +3240,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1387
+      "issue_number": 3331
     },
     {
       "name": "Engine Config",
@@ -3255,7 +3255,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1388
+      "issue_number": 3332
     },
     {
       "name": "Store Factory",
@@ -3276,7 +3276,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1389
+      "issue_number": 3333
     },
     {
       "name": "S3 Performance",
@@ -3291,7 +3291,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1390
+      "issue_number": 3334
     },
     {
       "name": "Query Cache",
@@ -3306,7 +3306,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1391
+      "issue_number": 3335
     },
     {
       "name": "Translog",
@@ -3321,7 +3321,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1392
+      "issue_number": 3336
     },
     {
       "name": "File Cache",
@@ -3336,7 +3336,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1393
+      "issue_number": 3337
     },
     {
       "name": "Field Collapsing",
@@ -3351,7 +3351,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1394
+      "issue_number": 3338
     },
     {
       "name": "Segment Warmer",
@@ -3366,7 +3366,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1395
+      "issue_number": 3339
     },
     {
       "name": "gRPC Transport",
@@ -3459,7 +3459,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1396
+      "issue_number": 3340
     },
     {
       "name": "Search Pipeline",
@@ -3474,7 +3474,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1397
+      "issue_number": 3341
     },
     {
       "name": "Date Format",
@@ -3489,7 +3489,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1398
+      "issue_number": 3342
     },
     {
       "name": "Grok Processor",
@@ -3504,7 +3504,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1399
+      "issue_number": 3343
     },
     {
       "name": "Search Tie-breaking",
@@ -3519,7 +3519,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1400
+      "issue_number": 3344
     },
     {
       "name": "Rule based auto-tagging",
@@ -3534,7 +3534,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1401
+      "issue_number": 3345
     },
     {
       "name": "Pull-based Ingestion",
@@ -3573,7 +3573,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1402
+      "issue_number": 3346
     },
     {
       "name": "Skip List",
@@ -3606,7 +3606,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1403
+      "issue_number": 3347
     },
     {
       "name": "Star Tree Index",
@@ -3627,7 +3627,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1404
+      "issue_number": 3348
     },
     {
       "name": "Streaming Aggregation",
@@ -3666,7 +3666,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1405
+      "issue_number": 3349
     },
     {
       "name": "Aggregation Optimizations",
@@ -3693,7 +3693,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1406
+      "issue_number": 3350
     },
     {
       "name": "Search Settings",
@@ -3708,7 +3708,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1407
+      "issue_number": 3351
     },
     {
       "name": "Circuit Breaker",
@@ -3723,7 +3723,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1408
+      "issue_number": 3352
     },
     {
       "name": "Java 17 Modernization",
@@ -3744,7 +3744,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1409
+      "issue_number": 3353
     },
     {
       "name": "Client API Enhancements",
@@ -3765,7 +3765,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1410
+      "issue_number": 3354
     },
     {
       "name": "Scroll API",
@@ -3780,7 +3780,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1411
+      "issue_number": 3355
     },
     {
       "name": "Painless Scripting",
@@ -3795,7 +3795,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1412
+      "issue_number": 3356
     },
     {
       "name": "Field Data Cache",
@@ -3816,7 +3816,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1413
+      "issue_number": 3357
     },
     {
       "name": "Docker Image Updates",
@@ -3831,7 +3831,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1414
+      "issue_number": 3358
     },
     {
       "name": "Field Collapsing",
@@ -3861,7 +3861,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1415
+      "issue_number": 3359
     },
     {
       "name": "Engine API",
@@ -3876,7 +3876,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1416
+      "issue_number": 3360
     },
     {
       "name": "Test Infrastructure",
@@ -3904,7 +3904,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1417
+      "issue_number": 3361
     },
     {
       "name": "Plugin Installation",
@@ -3919,7 +3919,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1418
+      "issue_number": 3362
     },
     {
       "name": "Lucene Migration",
@@ -3934,7 +3934,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1419
+      "issue_number": 3363
     },
     {
       "name": "Index Output",
@@ -3949,7 +3949,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1420
+      "issue_number": 3364
     },
     {
       "name": "Query Rewriting",
@@ -3979,7 +3979,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1421
+      "issue_number": 3365
     },
     {
       "name": "Segment Replication",
@@ -3994,7 +3994,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1422
+      "issue_number": 3366
     },
     {
       "name": "OOM Prevention",
@@ -4009,7 +4009,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1423
+      "issue_number": 3367
     },
     {
       "name": "Flaky Test Fixes",
@@ -4036,7 +4036,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1424
+      "issue_number": 3368
     },
     {
       "name": "Tiered Caching",
@@ -4051,7 +4051,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1425
+      "issue_number": 3369
     },
     {
       "name": "Concurrent Segment Search",
@@ -4066,7 +4066,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1426
+      "issue_number": 3370
     },
     {
       "name": "Cross-Cluster Settings",
@@ -4081,7 +4081,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1427
+      "issue_number": 3371
     },
     {
       "name": "S3 Repository",
@@ -4096,7 +4096,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1428
+      "issue_number": 3372
     },
     {
       "name": "NRT Replication Engine",
@@ -4111,7 +4111,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1429
+      "issue_number": 3373
     },
     {
       "name": "Query Phase Fixes",
@@ -4126,7 +4126,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1430
+      "issue_number": 3374
     },
     {
       "name": "Scaled Float Field",
@@ -4141,7 +4141,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1431
+      "issue_number": 3375
     },
     {
       "name": "Reindex API",
@@ -4156,7 +4156,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1432
+      "issue_number": 3376
     },
     {
       "name": "Alias Write Index Policy",
@@ -4171,7 +4171,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1433
+      "issue_number": 3377
     },
     {
       "name": "Request Cache",
@@ -4192,7 +4192,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1434
+      "issue_number": 3378
     },
     {
       "name": "Cardinality Aggregation",
@@ -4207,7 +4207,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1435
+      "issue_number": 3379
     },
     {
       "name": "Reactor Netty Transport",
@@ -4222,7 +4222,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1436
+      "issue_number": 3380
     },
     {
       "name": "Cluster State Caching",
@@ -4237,7 +4237,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1437
+      "issue_number": 3381
     },
     {
       "name": "Store Subdirectory Module",
@@ -4252,7 +4252,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1438
+      "issue_number": 3382
     },
     {
       "name": "Netty Arena Settings",
@@ -4267,7 +4267,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1439
+      "issue_number": 3383
     },
     {
       "name": "Search Stats",
@@ -4282,7 +4282,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1440
+      "issue_number": 3384
     },
     {
       "name": "Derived Fields",
@@ -4297,7 +4297,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1441
+      "issue_number": 3385
     },
     {
       "name": "Terms Query Rewriting",
@@ -4312,7 +4312,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 1442
+      "issue_number": 3386
     },
     {
       "name": "OpenSearch Dashboards Explore",
@@ -4417,7 +4417,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1443
+      "issue_number": 3387
     },
     {
       "name": "OpenSearch Dashboards Plugin Compatibility",
@@ -4438,7 +4438,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1444
+      "issue_number": 3388
     },
     {
       "name": "OpenSearch Dashboards Banner Extensibility",
@@ -4453,7 +4453,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1445
+      "issue_number": 3389
     },
     {
       "name": "OpenSearch Dashboards Keyboard Shortcuts",
@@ -4498,7 +4498,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1446
+      "issue_number": 3390
     },
     {
       "name": "OpenSearch Dashboards Visualization Enhancements",
@@ -4543,7 +4543,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1447
+      "issue_number": 3391
     },
     {
       "name": "OpenSearch Dashboards Patterns Tab",
@@ -4570,7 +4570,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1448
+      "issue_number": 3392
     },
     {
       "name": "OpenSearch Dashboards Traces",
@@ -4621,7 +4621,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1449
+      "issue_number": 3393
     },
     {
       "name": "OpenSearch Dashboards Dataset Explorer",
@@ -4654,7 +4654,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1450
+      "issue_number": 3394
     },
     {
       "name": "OpenSearch Dashboards AI Chat",
@@ -4681,7 +4681,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1451
+      "issue_number": 3395
     },
     {
       "name": "OpenSearch Dashboards PPL/Query Enhancements",
@@ -4714,7 +4714,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1452
+      "issue_number": 3396
     },
     {
       "name": "OpenSearch Dashboards UI Enhancements",
@@ -4741,7 +4741,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1453
+      "issue_number": 3397
     },
     {
       "name": "OpenSearch Dashboards Bug Fixes",
@@ -4900,7 +4900,7 @@
           "repository": "opensearch-dashboards"
         }
       ],
-      "issue_number": 1454
+      "issue_number": 3398
     }
   ],
   "processed_offset": 655

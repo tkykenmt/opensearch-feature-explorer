@@ -17,7 +17,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 2603
+      "issue_number": 3860
     },
     {
       "name": "Core Version Update Fix",
@@ -32,7 +32,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 2604
+      "issue_number": 3861
     },
     {
       "name": "BWC Timestamp Upgrade Fix",
@@ -47,7 +47,7 @@
           "repository": "opensearch"
         }
       ],
-      "issue_number": 2605
+      "issue_number": 3862
     }
   ],
   "processed_offset": 3
