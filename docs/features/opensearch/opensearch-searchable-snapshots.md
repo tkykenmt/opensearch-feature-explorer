@@ -79,6 +79,9 @@ Response shows `"type": "remote_snapshot"` in store settings.
 
 ## References
 
+### v2.6.0
+- Add update-index-settings allowlist for searchable snapshot
+
 ### Documentation
 
 - [Searchable Snapshots](https://docs.opensearch.org/latest/tuning-your-cluster/availability-and-recovery/snapshots/searchable_snapshot/)

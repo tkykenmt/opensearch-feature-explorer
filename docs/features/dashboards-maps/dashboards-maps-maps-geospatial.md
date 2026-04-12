@@ -167,6 +167,17 @@ flowchart TB
 
 ## References
 
+### v2.6.0
+- Add map as embeddable to dashboard
+- Add maps saved object for sample datasets
+- Fix popup display while zoomed out
+- Limit max number of layers
+- Add close button to tooltip hover
+- Add scroll bar when more layers added
+- Align items in add new layer modal
+- Add indexPatterns to map embeddable output for dashboard filters
+- 5 bug fix(es)
+
 ### Documentation
 - [Using Maps](https://docs.opensearch.org/3.0/dashboards/visualize/maps/): Official documentation
 - [Geohash Grid](https://docs.opensearch.org/3.0/aggregations/bucket/geohash-grid/): Geohash aggregation docs

@@ -135,6 +135,12 @@ GET _cat/segment_replication?v
 
 ## References
 
+### v2.6.0
+- Add new cat/segment_replication API to surface Segment Replication metrics .
+- Use ReplicationFailedException instead of OpensearchException in ReplicationTarget
+- [Segment Replication] Fix for peer recovery
+- [Segment Replication] Fix bug where inaccurate sequence numbers are sent during replication
+
 ### Documentation
 - [Segment Replication Documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/index/): Official documentation
 - [Segment Replication Backpressure](https://docs.opensearch.org/3.0/tuning-your-cluster/availability-and-recovery/segment-replication/backpressure/): Backpressure mechanism

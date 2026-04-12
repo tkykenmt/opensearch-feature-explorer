@@ -75,6 +75,11 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 
 ## References
 
+### v2.6.0
+- Add limit to geojson upload API
+- Allow API to accept any index name without suffix
+- 3 bug fix(es)
+
 ### Documentation
 - [IP2Geo Documentation](https://docs.opensearch.org/3.0/ingest-pipelines/processors/ip2geo/): Official IP2Geo processor docs
 - [Installing Plugins](https://docs.opensearch.org/3.0/install-and-configure/plugins/): Plugin installation guide

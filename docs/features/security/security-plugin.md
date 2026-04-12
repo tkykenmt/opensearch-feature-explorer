@@ -186,6 +186,15 @@ config:
 
 ## References
 
+### v2.6.0
+- GetIndexMappings index pattern support
+- Add actions cluster:admin/component_template/* to cluster_manage_index_templates
+- Publish snapshots to maven
+- Integrate k-NN functionality with security plugin
+- Add indices:admin/close* to list of permissible index permissions
+- Synchronize all permissions from latest OpenSearch
+- 10 bug fix(es)
+
 ### Documentation
 - [Documentation: Security](https://docs.opensearch.org/3.0/security/)
 - [Documentation: Breaking Changes](https://docs.opensearch.org/3.0/breaking-changes/)

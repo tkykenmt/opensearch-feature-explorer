@@ -342,6 +342,12 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 ## References
 
+### v2.6.0
+- Add index operation of force merge
+- Add data stream management page
+- Add index operation of rollover
+- 10 bug fix(es)
+
 ### Documentation
 - [Index State Management Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/index/)
 - [ISM Policies Documentation](https://docs.opensearch.org/3.0/im-plugin/ism/policies/)

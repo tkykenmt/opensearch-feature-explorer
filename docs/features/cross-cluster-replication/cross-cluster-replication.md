@@ -163,6 +163,10 @@ POST _plugins/_replication/follower-index/_stop
 
 ## References
 
+### v2.6.0
+- Stopping replication before clean up of indices (635)
+- 1 bug fix(es)
+
 ### Documentation
 - [Cross-cluster replication documentation](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/index/)
 - [Replication settings](https://docs.opensearch.org/3.0/tuning-your-cluster/replication-plugin/settings/)

@@ -169,6 +169,31 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 
 ## References
 
+### v2.6.0
+- Added API to fetch all log types/rule categories
+- Added new log types
+- Added create dashboard feature
+- Improvements for field mappings
+- Added multi select data source for creating detector
+- Chart vertical domain UX improvement
+- Various detectors page UX/UI improvements
+- Various findings page UX/UI improvements
+- Upgrade vega tooltips to use custom formatting
+- Adds validation for trigger name in creating alert flyout
+- Create index pattern
+- Provide all unmapped fields when editing Rule field mapping
+- Adds timestamp field alias and sets time range filter in bucket level monitor
+- Update others_application mappings
+- Update others_apt mappings.
+- Index template conflict resolve; GetIndexMappings API changes
+- Add nesting level to yaml constructor
+- Update others_cloud mappings
+- Update others_compliance mappings
+- Update others_web mappings
+- Log message change for debugging
+- Windows CI Support
+- 15 bug fix(es)
+
 ### Documentation
 - [Detector APIs Documentation](https://docs.opensearch.org/latest/security-analytics/api-tools/detector-api/)
 - [Creating Detectors](https://docs.opensearch.org/latest/security-analytics/sec-analytics-config/detectors-config/)
