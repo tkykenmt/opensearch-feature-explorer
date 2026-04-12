@@ -233,6 +233,9 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## References
 
+### v2.6.0
+- 1 bug fix(es)
+
 ### Documentation
 - [Hybrid Search Documentation](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/index/)
 - [Collapsing Hybrid Query Results](https://docs.opensearch.org/3.1/vector-search/ai-search/hybrid-search/collapse/)

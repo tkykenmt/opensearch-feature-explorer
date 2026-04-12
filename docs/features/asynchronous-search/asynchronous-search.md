@@ -161,6 +161,9 @@ GET _plugins/_asynchronous_search/FklfVlU4eFdIUTh1Q1hyM3ZnT19fUVEUd29KLWZYUUI3Tz
 
 ## References
 
+### v2.6.0
+- 1 bug fix(es)
+
 ### Documentation
 - [Asynchronous Search Documentation](https://docs.opensearch.org/3.0/search-plugins/async/index/)
 - [Asynchronous Search Security](https://docs.opensearch.org/3.0/search-plugins/async/security/)

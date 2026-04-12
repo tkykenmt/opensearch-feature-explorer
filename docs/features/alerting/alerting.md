@@ -169,6 +169,10 @@ POST _plugins/_alerting/monitors
 
 ## References
 
+### v2.6.0
+- Multiple indices support in DocLevelMonitorInput
+- 11 bug fix(es)
+
 ### Documentation
 - [Alerting Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/index/): Official alerting documentation
 - [Monitors Documentation](https://docs.opensearch.org/3.0/observing-your-data/alerting/monitors/): Monitor types and configuration

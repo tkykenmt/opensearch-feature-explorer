@@ -251,6 +251,12 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## References
 
+### v2.6.0
+- Update cold start message
+- Changed required minimum intervals in cold start message
+- Remove `auto_expand_replicas` override in sample data indices
+- 5 bug fix(es)
+
 ### Documentation
 - [Anomaly Detection Documentation](https://docs.opensearch.org/3.0/observing-your-data/ad/index/): Official documentation
 - [Anomaly Detection API](https://docs.opensearch.org/3.0/observing-your-data/ad/api/): API reference

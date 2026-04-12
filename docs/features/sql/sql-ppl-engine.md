@@ -109,6 +109,21 @@ POST /_plugins/_ppl
 
 ## References
 
+### v2.6.0
+- Extend comparison methods to accept different datetime types
+- Enable concat() string function to support multiple string arguments
+- Add more keywords as identifier in PPL
+- Update DATE_ADD/ADDDATE and DATE_SUB/SUBDATE functions
+- Escape character support for string literals
+- Updated EXPM1() and Tests to New Engine
+- Update TIMESTAMP function implementation and signatures
+- Add GET_FORMAT Function To OpenSearch SQL Plugin
+- Add TIME_FORMAT() Function To SQL Plugin
+- Support More Formats For GET_FORMAT Function
+- Add last_day Function To OpenSearch SQL Plugin
+- Add WeekOfYear Function To OpenSearch
+- 18 bug fix(es)
+
 ### Documentation
 - [SQL and PPL Documentation](https://docs.opensearch.org/3.0/search-plugins/sql/index/)
 - [SQL Settings](https://docs.opensearch.org/3.0/search-plugins/sql/settings/)

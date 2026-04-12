@@ -177,6 +177,12 @@ public class OnBehalfOfClaims {
 
 ## References
 
+### v2.6.0
+- Add query for initialized extensions
+- Replace latches with CompletableFutures for extensions
+- Add support for minimum compatible version for extensions
+- Fix timeout error when adding a document to an index with extension running
+
 ### Documentation
 - [Extensions Documentation](https://docs.opensearch.org/3.0/developer-documentation/extensions/): Official OpenSearch extensions documentation
 - [Extension Design Documentation](https://opensearch-project.github.io/opensearch-sdk-java/DESIGN.html): Detailed design documentation

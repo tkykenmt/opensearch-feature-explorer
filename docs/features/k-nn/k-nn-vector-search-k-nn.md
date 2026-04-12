@@ -282,6 +282,9 @@ Response:
 
 ## References
 
+### v2.6.0
+- 8 bug fix(es)
+
 ### Documentation
 - [Vector Search Documentation](https://docs.opensearch.org/3.0/vector-search/): Official documentation
 - [k-NN API Reference](https://docs.opensearch.org/3.0/vector-search/api/knn/): API documentation including Clear Cache, Warmup, and Stats

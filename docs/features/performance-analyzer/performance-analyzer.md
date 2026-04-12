@@ -127,6 +127,10 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 ## References
 
+### v2.6.0
+- Cluster config api return verbose PA status
+- 5 bug fix(es)
+
 ### Documentation
 - [Performance Analyzer Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/index/): Official documentation
 - [RCA Documentation](https://docs.opensearch.org/latest/monitoring-your-cluster/pa/rca/index/): Root cause analysis

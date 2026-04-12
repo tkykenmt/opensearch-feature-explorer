@@ -126,6 +126,10 @@ PUT _cluster/settings
 
 ## References
 
+### v2.6.0
+- Enable prebuilt model
+- 7 bug fix(es)
+
 ### Documentation
 - [Deploy Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/deploy-model/)
 - [Register Model API](https://docs.opensearch.org/3.0/ml-commons-plugin/api/model-apis/register-model/)
