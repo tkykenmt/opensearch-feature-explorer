@@ -93,7 +93,7 @@ PPL queries are validated using the `/_plugins/_ppl/_explain` API for lightweigh
 
 ## Change History
 
-- **v3.6.0** (2026-03-25): Added accept hypothesis feature, duration tracking at investigation/step/sub-step levels, comprehensive telemetry metrics, visualization summary image size limits, log analysis rerun during reinvestigation. Enhanced tool result styling, absolute time display in reinvestigation, investigation detail card wording, summary agent timeout (60s), polling retry counts, PPL query validation via `_explain` API. Fixed hypothesis detail button placement, duplicate confirm/reject buttons, wrong datasource ID from chat, chat integration type conflict.
+- **v3.6.0** (2026-03-25): Added accept hypothesis feature, duration tracking at investigation/step/sub-step levels, comprehensive telemetry metrics, visualization summary image size limits, log analysis rerun during reinvestigation. Enhanced tool result styling, absolute time display in reinvestigation, investigation detail card wording, summary agent timeout (60s), polling retry counts, PPL query validation via `_explain` API. Fixed hypothesis detail button placement, duplicate confirm/reject buttons, wrong datasource ID from chat, chat integration type conflict, JSON escape issue in Vega Express where backslash-n was parsed as real line breaks, notebook type redirect showing error instead of redirecting to correct URL.
 
 ## References
 
@@ -115,3 +115,5 @@ PPL queries are validated using the `/_plugins/_ppl/_explain` API for lightweigh
 | v3.6.0 | `https://github.com/opensearch-project/dashboards-investigation/pull/325` | Remove duplicate confirm/reject buttons |
 | v3.6.0 | `https://github.com/opensearch-project/dashboards-investigation/pull/337` | Fix wrong datasource ID from chat |
 | v3.6.0 | `https://github.com/opensearch-project/dashboards-investigation/pull/329` | Fix chat integration type conflict |
+| v3.6.0 | `https://github.com/opensearch-project/dashboards-investigation/pull/328` | Fix JSON escape issue in Vega Express |
+| v3.6.0 | `https://github.com/opensearch-project/dashboards-investigation/pull/306` | Redirect when opening notebook with incorrect type URL |
