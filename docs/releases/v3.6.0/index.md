@@ -24,6 +24,7 @@
 - Terms Aggregation Performance
 - Workload Management (WLM)
 - Logging & Diagnostics
+- Search Performance Fixes
 
 ## common
 

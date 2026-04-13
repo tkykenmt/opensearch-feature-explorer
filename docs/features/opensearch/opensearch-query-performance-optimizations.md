@@ -186,6 +186,7 @@ GET /metrics/_search
 
 ## Change History
 
+- **v3.6.0** (2026-04): Fixed `ExitableTerms` to delegate `getMin`/`getMax` methods, avoiding slow path in field sort ([#20775](https://github.com/opensearch-project/OpenSearch/pull/20775)); Lazily initialize stored field reader in `SourceLookup` to avoid unnecessary `madvise` calls ([#20827](https://github.com/opensearch-project/OpenSearch/pull/20827))
 - **v3.0.0** (2025-04): Added ApproximateMatchAllQuery, sub-aggregation support in filter rewrite, disabled keyword term scoring by default, and pre-sorted terms optimization for TermInSetQuery
 
 
@@ -200,6 +201,8 @@ GET /metrics/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20775](https://github.com/opensearch-project/OpenSearch/pull/20775) | Delegate getMin/getMax for ExitableTerms |   |
+| v3.6.0 | [#20827](https://github.com/opensearch-project/OpenSearch/pull/20827) | Lazy init stored field reader in SourceLookup | [#20933](https://github.com/opensearch-project/OpenSearch/issues/20933) |
 | v3.0.0 | [#17714](https://github.com/opensearch-project/OpenSearch/pull/17714) | Pass in-order terms as sorted to TermInSetQuery |   |
 | v3.0.0 | [#17772](https://github.com/opensearch-project/OpenSearch/pull/17772) | Add ApproximateMatchAllQuery for match_all with sort |   |
 | v3.0.0 | [#17447](https://github.com/opensearch-project/OpenSearch/pull/17447) | Support sub agg in filter rewrite optimization | [#12602](https://github.com/opensearch-project/OpenSearch/issues/12602) |

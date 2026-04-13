@@ -98,6 +98,7 @@ The cancellation decision follows this flow:
 
 ## Change History
 
+- **v3.6.0** (2026-04): Fixed misleading heap usage cancellation message in `HeapUsageTracker` — now displays the heap percent threshold instead of the moving-average-based `allowedUsage` value ([#20779](https://github.com/opensearch-project/OpenSearch/pull/20779))
 - **v2.16.0** (2024-08-06): Fixed bug in cancellation logic - tasks are now cancelled based on the specific resource causing node duress rather than all thresholds ([#13474](https://github.com/opensearch-project/OpenSearch/pull/13474))
 - **v2.11.0**: Added completion count to search_backpressure stats ([#10028](https://github.com/opensearch-project/OpenSearch/pull/10028))
 - **v2.6.0**: Added search task level cancellation support
@@ -114,6 +115,7 @@ The cancellation decision follows this flow:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.6.0 | [#20779](https://github.com/opensearch-project/OpenSearch/pull/20779) | Fix misleading heap usage cancellation message |
 | v2.16.0 | [#13474](https://github.com/opensearch-project/OpenSearch/pull/13474) | Fix bug in SBP cancellation logic |
 | v2.16.0 | [#14502](https://github.com/opensearch-project/OpenSearch/pull/14502) | Backport SBP fix to 2.x |
 | v2.11.0 | [#10028](https://github.com/opensearch-project/OpenSearch/pull/10028) | Add taskCompletionCount in search_backpressure stats |
