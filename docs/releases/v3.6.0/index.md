@@ -162,4 +162,5 @@
 - Dashboard Visualization Editing
 - Data Importer
 - Explore & Dataset Management
+- Explore Plugin
 - OpenSearch Dashboards Core
