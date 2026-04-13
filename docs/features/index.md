@@ -8,6 +8,10 @@ Cumulative feature documentation across all versions.
 - Alerting Integration
 - Cross-Cluster & Remote Monitors
 
+## dashboards-investigation
+
+- Automated Investigation (Dashboards)
+
 ## geospatial
 
 - Geospatial Validation

@@ -4,6 +4,10 @@
 
 - Alerting Enhancements
 
+## dashboards-investigation
+
+- Automated Investigation (Dashboards)
+
 ## anomaly-detection
 
 - Anomaly Detection
