@@ -56,3 +56,7 @@
 ## skills
 
 - Agent Skills/Tools
+
+## sql
+
+- SQL/PPL Engine
