@@ -72,6 +72,10 @@ Cumulative feature documentation across all versions.
 
 - Query Insights
 
+## reporting
+
+- Reporting Plugin
+
 ## opensearch
 
 - Application-Based Configuration (ABC) Templates

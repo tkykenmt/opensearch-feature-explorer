@@ -36,6 +36,10 @@
 
 - Query Insights
 
+## reporting
+
+- Reporting Plugin
+
 ## search-relevance
 
 - Search Evaluation (Experiments)
