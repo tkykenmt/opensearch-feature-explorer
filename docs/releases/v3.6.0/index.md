@@ -159,6 +159,7 @@
 
 - AI Assistant / Chatbot
 - APM & Observability
+- Content Security Policy (CSP)
 - Dashboard Visualization Editing
 - Data Importer
 - Explore & Dataset Management
