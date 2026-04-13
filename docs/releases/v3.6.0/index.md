@@ -27,3 +27,7 @@
 ## alerting-dashboards
 
 - SQL/PPL Monitors
+
+## performance-analyzer
+
+- Performance Analyzer

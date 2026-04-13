@@ -56,6 +56,10 @@ Cumulative feature documentation across all versions.
 - Table Visualization
 - Threshold Visualization
 
+## performance-analyzer
+
+- Performance Analyzer
+
 ## opensearch
 
 - Application-Based Configuration (ABC) Templates
