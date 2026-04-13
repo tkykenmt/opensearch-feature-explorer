@@ -108,6 +108,7 @@ Cumulative feature documentation across all versions.
 - Point in Time (PIT) API
 - Processor Allowlist
 - Search Backpressure
+- Segment Replication
 - Snapshot Repository
 - Synonym Analyzer Configuration
 - Workload Management
