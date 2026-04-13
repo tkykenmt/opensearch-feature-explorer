@@ -36,6 +36,10 @@
 
 - Query Insights
 
+## query-insights-dashboards
+
+- Query Insights Dashboard Security
+
 ## reporting
 
 - Reporting Plugin
