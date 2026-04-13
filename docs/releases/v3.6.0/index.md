@@ -6,6 +6,7 @@
 - Pull-based Ingestion
 - Search Observability
 - Segment Replication
+- Telemetry & Observability Metrics
 
 ## common
 
