@@ -261,6 +261,101 @@ In both cases, the dominant cost is **P × distance_computation**. The distance 
 | binary | O(dimension/8) bitwise ops | Significantly cheaper |
 | Quantized (ADC) | O(dimension) with lookup table | Pre-computed sub-quantizer distances |
 
+### Impact of Memory Optimized Search (Lucene on Faiss)
+
+Memory Optimized Search (MOS / Lucene on Faiss, v3.0.0+) uses `MemoryOptimizedKNNWeight`, which extends `KNNWeight`. The Phase 1 and Phase 2 fallback logic is inherited unchanged — the same `searchLeaf()`, `isFilteredExactSearchPreferred()`, and `isExactSearchRequire()` methods apply.
+
+The difference is in the ANN search implementation:
+
+| Aspect | DefaultKNNWeight (Traditional) | MemoryOptimizedKNNWeight (MOS) |
+|--------|-------------------------------|-------------------------------|
+| ANN implementation | FAISS C++ via JNI (`JNIService.queryIndex`) | Lucene `KnnVectorsReader.search()` |
+| Filter passing | `filterIds` long array to JNI | `AcceptDocs` (BitSet) to Lucene API |
+| Filter strategy | FAISS internal filtered graph traversal | ACORN strategy (60% filter rate threshold) |
+| Visit limit | Managed internally by FAISS | `cardinality + 1` |
+| Graph access | In-memory (native memory cache) | On-demand disk I/O (page cache) |
+
+ACORN (used by Lucene's HNSW searcher) traverses filter-unmatched nodes as "bridges" while only collecting filter-matched nodes as results. This can improve recall for filtered searches compared to the traditional FAISS path, making Phase 2 fallback (R < k) less likely.
+
+However, MOS has inherent disk I/O overhead. When Phase 2 fallback does occur, the exact search also reads vectors from disk (via page cache), which can be slower than the traditional path where vectors are already in native memory.
+
+| Scenario | Traditional FAISS | MOS |
+|----------|-------------------|-----|
+| Phase 2 fallback frequency | Baseline | Lower (ACORN improves filtered ANN recall) |
+| Phase 2 fallback cost | Fast (in-memory scan) | Slower (disk I/O for vector reads) |
+| Phase 1 exact search cost | Fast (in-memory) | Slower (disk I/O) |
+| Overall filtered search stability | Spiky (fallback = fast but unpredictable) | More stable (fewer fallbacks, but each is slower) |
+
+For the Efficient Filtering latency spike problem specifically, MOS can help by reducing the frequency of Phase 2 fallbacks. But if fallback does occur on a large segment, the disk I/O cost makes it even more important to use `disable_exact_search: true` or tune `ef_search`.
+
+### Best Practices
+
+#### Diagnosing Fallback Issues
+
+Use the Explain API or `explain: true` to identify which search strategy was used per segment:
+
+```json
+GET /my-index/_search
+{
+  "explain": true,
+  "query": {
+    "knn": {
+      "my_vector": {
+        "vector": [0.1, 0.2, ...],
+        "k": 10,
+        "filter": { "term": { "category": "electronics" } }
+      }
+    }
+  }
+}
+```
+
+The explanation includes `the type of knn search executed at leaf was exact_search since ...` or `ann_search`, showing the decision path per segment. At DEBUG log level, `KNNWeight` logs `Doing ExactSearch after doing ANNSearch` when Phase 2 fallback occurs.
+
+#### Decision Flowchart
+
+```mermaid
+flowchart TD
+    Start[Filtered k-NN latency spikes observed] --> Diag[Run explain API to confirm<br/>Phase 2 fallback]
+    Diag --> Freq{Fallback frequency?}
+    
+    Freq -->|High: most queries| EF[Increase ef_search<br/>e.g. 256-512]
+    EF --> Improved{Improved?}
+    Improved -->|Yes| Done[Done]
+    Improved -->|No| FilterRate{Filter match rate?}
+    
+    FilterRate -->|Very low: < 1%| Choice{Priority?}
+    Choice -->|Latency| DisableES["disable_exact_search: true<br/>(accept R < k)"]
+    Choice -->|Recall| SetFT["Set filtered_exact_search_threshold<br/>(skip ANN, go straight to Exact)"]
+    
+    FilterRate -->|Moderate: 1-10%| MOS{MOS available?}
+    MOS -->|Yes| EnableMOS["Enable memory_optimized_search<br/>(ACORN improves filtered recall)"]
+    MOS -->|No| EFHigher["ef_search: 512+ or<br/>disable_exact_search: true"]
+    
+    Freq -->|Low: occasional spikes| Segment{Large segments?<br/>force_merge?}
+    Segment -->|Yes| DisableES2["disable_exact_search: true<br/>(prevent rare expensive fallbacks)"]
+    Segment -->|No| Accept[Acceptable — occasional<br/>fallback on small segments is cheap]
+```
+
+#### Recommended Settings by Use Case
+
+| Use Case | ef_search | disable_exact_search | filtered_exact_search_threshold | MOS | Rationale |
+|----------|-----------|---------------------|-------------------------------|-----|-----------|
+| User-facing search API | 256 | `true` | Not set | Optional | Latency stability over perfect recall |
+| Semantic search / RAG | 256 | `true` | Not set | Recommended | k-2 results acceptable; MOS reduces memory |
+| Analytics / batch | 100 | `false` | Tune to workload | Not needed | Recall matters; latency tolerance is higher |
+| E-commerce filtering | 512 | `false` | Not set | Optional | High ef_search avoids most fallbacks |
+| Low filter match rate (< 1%) | 512+ | `true` | Not set | Recommended | ACORN + disable fallback for stability |
+
+#### Anti-Patterns
+
+| Anti-Pattern | Problem | Fix |
+|-------------|---------|-----|
+| `force_merge` to 1 segment + low `ef_search` + restrictive filter | Phase 2 fallback scans entire index worth of filter matches | Increase `ef_search` or enable `disable_exact_search` |
+| `filtered_exact_search_threshold` set too high (e.g., 1M) | Phase 1 always triggers exact search on large filter sets | Set to a value where exact search latency is acceptable (e.g., 10K-50K) |
+| Ignoring Phase 2 fallback on MOS | Disk-based exact search is slower than in-memory | Use `disable_exact_search: true` with MOS |
+| Many small shards without tuning | Each segment may independently fallback | Consolidate shards or tune `ef_search` |
+
 ## Limitations
 
 - MDC (`MAX_DISTANCE_COMPUTATIONS`) is a hardcoded constant and cannot be tuned by users
