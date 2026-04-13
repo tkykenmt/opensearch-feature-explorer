@@ -52,6 +52,10 @@
 
 - Security Enhancements
 
+## security-analytics
+
+- Security Analytics Bug Fixes
+
 ## k-nn
 
 - Vector Search (k-NN) - 1-Bit Quantization
