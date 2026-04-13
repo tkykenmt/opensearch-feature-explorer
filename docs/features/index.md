@@ -94,6 +94,7 @@ Cumulative feature documentation across all versions.
 
 ## opensearch
 
+- Analysis & Text Processing
 - Application-Based Configuration (ABC) Templates
 - Cross-Cluster Search (CCS)
 - Append Only Indices

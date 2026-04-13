@@ -2,6 +2,7 @@
 
 ## opensearch
 
+- Analysis & Text Processing
 - Bitmap64 Query Support
 - ProfileScorer Improvements
 - Bulk Write Optimization
