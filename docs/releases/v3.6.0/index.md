@@ -27,6 +27,7 @@
 - ML Commons Model Pooling
 - ML Commons Encryption
 - ML Commons Infrastructure
+- ML Commons CI & Test Infrastructure
 
 ## alerting-dashboards
 

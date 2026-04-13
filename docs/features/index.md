@@ -37,6 +37,7 @@ Cumulative feature documentation across all versions.
 
 - AG-UI (Agent-User Interaction) Protocol
 - Batch Prediction Mode
+- CI/CD
 - Conversation Memory
 - ML Inference Processor
 

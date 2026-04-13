@@ -130,6 +130,7 @@ jobs:
 
 ## Change History
 
+- **v3.6.0**: Optimized integration test setup (~50% execution time reduction) via `@SuiteScopeTestCase`, `scope = SUITE`, and active polling replacing `Thread.sleep(20000)`; fixed flaky OpenAI RAG and IndexUtilsTests; upgraded Bedrock Claude models to Sonnet 4.5 / Haiku 4.5 for higher rate limits (10,000 RPM); onboarded automated code diff analyzer and reviewer workflow; fixed deploy timeout unit bug (20,000s → 20s)
 - **v2.18.0** (2024-10-29): Added workflow approval system, upgraded artifact actions to v4, updated developer guide
 
 
@@ -143,6 +144,10 @@ jobs:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#4666](https://github.com/opensearch-project/ml-commons/pull/4666) | Onboard code diff analyzer and reviewer | [opensearch-build#5912](https://github.com/opensearch-project/opensearch-build/issues/5912) |
+| v3.6.0 | [#4667](https://github.com/opensearch-project/ml-commons/pull/4667) | Optimize IT setup, remove redundant per-test work |   |
+| v3.6.0 | [#4668](https://github.com/opensearch-project/ml-commons/pull/4668) | Fix CI test stability - skip unreachable OpenAI tests, fix flaky IndexUtilsTests |   |
+| v3.6.0 | [#4742](https://github.com/opensearch-project/ml-commons/pull/4742) | Upgrade Bedrock Claude models in ITs for higher rate limits |   |
 | v2.18.0 | [#3005](https://github.com/opensearch-project/ml-commons/pull/3005) | Add Test Env Require Approval Action |   |
 | v2.18.0 | [#3162](https://github.com/opensearch-project/ml-commons/pull/3162) | Upgrading upload artifact to v4 |   |
 | v2.18.0 | [#2881](https://github.com/opensearch-project/ml-commons/pull/2881) | Bump actions/download-artifact from 3 to 4.1.7 |   |
