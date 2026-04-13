@@ -10,6 +10,7 @@
 - Pull-based Ingestion
 - Search Observability
 - Segment Replication
+- Star Tree Index
 - Streaming Search
 - Telemetry & Observability Metrics
 - Workload Management (WLM)

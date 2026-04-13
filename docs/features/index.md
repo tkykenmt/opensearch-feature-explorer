@@ -114,6 +114,7 @@ Cumulative feature documentation across all versions.
 - Search Observability
 - Segment Replication
 - Snapshot Repository
+- Star Tree Index
 - Synonym Analyzer Configuration
 - Telemetry & Observability Metrics
 - Workload Management
