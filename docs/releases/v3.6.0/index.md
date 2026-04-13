@@ -86,6 +86,7 @@
 
 - Neural Search
 - Hybrid Query (Neural Search)
+- gRPC Support
 
 ## notifications
 

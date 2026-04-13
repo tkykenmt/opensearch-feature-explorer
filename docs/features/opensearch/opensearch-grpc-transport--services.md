@@ -273,6 +273,7 @@ Documents in gRPC requests must be Base64 encoded:
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Bug fixes — gRPC integration tests for Hybrid Query in neural-search, port discovery fix for reliable local and CI execution, IPv4 loopback binding to prevent dual-stack port mismatch, broadened `accessUnixDomainSocket` security policy for Windows compatibility
 - **v3.4.0** (2026-01-14): Pluggable interceptors with ordering, thread context preservation, binary document format support (CBOR/SMILE/YAML), expanded query support (match, fuzzy, constant_score, function_score, prefix, match_bool_prefix, match_phrase_prefix), highlight and sort support, improved error responses, protobufs 0.24.0
 - **v3.3.0** (2026-01-14): Expanded query support (15+ query types), thread management optimization, zero-copy serialization, transport-grpc-spi module for plugin extensibility
 - **v3.2.0** (2026-01-14): GA release - moved to module, plugin extensibility, proper gRPC status codes, removed experimental designation
@@ -293,6 +294,9 @@ Documents in gRPC requests must be Base64 encoded:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [neural-search#1734](https://github.com/opensearch-project/neural-search/pull/1734) | Add gRPC integration tests for Hybrid Query | [neural-search#1723](https://github.com/opensearch-project/neural-search/issues/1723) |
+| v3.6.0 | [neural-search#1814](https://github.com/opensearch-project/neural-search/pull/1814) | Fix gRPC integration test port discovery | [OpenSearch#21027](https://github.com/opensearch-project/OpenSearch/issues/21027) |
+| v3.6.0 | [#20649](https://github.com/opensearch-project/OpenSearch/pull/20649) | Broaden `accessUnixDomainSocket` permission for transport-grpc | [neural-search#1723](https://github.com/opensearch-project/neural-search/issues/1723) |
 | v3.4.0 | [#19005](https://github.com/opensearch-project/OpenSearch/pull/19005) | Introduce gRPC Interceptor Chain with pluggable interceptors | [#5379](https://github.com/opensearch-project/security/issues/5379) |
 | v3.4.0 | [#19304](https://github.com/opensearch-project/OpenSearch/pull/19304) | Add BindableServices extension point for custom gRPC services | [#19025](https://github.com/opensearch-project/OpenSearch/issues/19025) |
 | v3.4.0 | [#19568](https://github.com/opensearch-project/OpenSearch/pull/19568) | Return full error details for gRPC error responses | [#18926](https://github.com/opensearch-project/OpenSearch/issues/18926) |
