@@ -107,6 +107,7 @@ Cumulative feature documentation across all versions.
 - Fingerprint Ingest Processor
 - GetStats API
 - Painless Script Hashing Methods
+- Platform Support
 - Point in Time (PIT) API
 - Processor Allowlist
 - Search Backpressure

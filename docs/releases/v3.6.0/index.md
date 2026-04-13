@@ -6,6 +6,7 @@
 - Bulk Write Optimization
 - Cross-Cluster Search (CCS)
 - Dynamic Settings Authorization
+- Platform & Distribution
 - Pull-based Ingestion
 - Search Observability
 - Segment Replication

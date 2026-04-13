@@ -55,7 +55,9 @@ graph TB
     ARM64 --> DEB
     ARM64 --> DOCKER
     S390X --> TAR
+    S390X --> DOCKER
     PPC64LE --> TAR
+    PPC64LE --> DOCKER
     RISCV64 --> TAR
     RISCV64 --> DOCKER
 ```
@@ -144,6 +146,7 @@ cd opensearch-3.1.0
 
 ## Change History
 
+- **v3.6.0**: Docker multi-arch builds for ppc64le/arm64/s390x; AWS CRT client fallback to Netty on unsupported platforms; hardened HTTP/3 Quic detection; cgroups hierarchy override security fix; SLF4J 2.x binding migration; Windows service procrun update to 1.5.1; ThreadContext transient header preservation
 - **v3.1.0** (2025-04-30): Added Linux riscv64 platform support
 
 
@@ -156,6 +159,13 @@ cd opensearch-3.1.0
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20678](https://github.com/opensearch-project/OpenSearch/pull/20678) | Docker builds for ppc64le, arm64, s390x | - |
+| v3.6.0 | [#20698](https://github.com/opensearch-project/OpenSearch/pull/20698) | AWS CRT fallback to Netty | - |
+| v3.6.0 | [#20565](https://github.com/opensearch-project/OpenSearch/pull/20565) | Fix cgroups hierarchy override SecurityException | [#20522](https://github.com/opensearch-project/OpenSearch/issues/20522) |
+| v3.6.0 | [#20587](https://github.com/opensearch-project/OpenSearch/pull/20587) | Fix SLF4J component error | [#20579](https://github.com/opensearch-project/OpenSearch/issues/20579) |
+| v3.6.0 | [#20615](https://github.com/opensearch-project/OpenSearch/pull/20615) | Fix Windows service startup with OpenJDK | [#19141](https://github.com/opensearch-project/OpenSearch/issues/19141) |
+| v3.6.0 | [#20680](https://github.com/opensearch-project/OpenSearch/pull/20680) | Harden HTTP/3 Quic detection | - |
+| v3.6.0 | [#20854](https://github.com/opensearch-project/OpenSearch/pull/20854) | ThreadContext transient header preservation | [security#5990](https://github.com/opensearch-project/security/issues/5990) |
 | v3.1.0 | [#18156](https://github.com/opensearch-project/OpenSearch/pull/18156) | Add support for linux riscv64 platform | [#2341](https://github.com/opensearch-project/OpenSearch/issues/2341) |
 
 ### Issues (Design / RFC)
