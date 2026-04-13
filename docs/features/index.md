@@ -71,6 +71,7 @@ Cumulative feature documentation across all versions.
 ## opensearch-dashboards
 
 - APM & Observability
+- Data Importer
 - Dashboards Data Plugin
 - Dashboards gzip Support
 - Dashboards Misc Fixes
