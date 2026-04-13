@@ -161,6 +161,7 @@
 - APM & Observability
 - Content Security Policy (CSP)
 - Dashboard Visualization Editing
+- Dashboards CI & Test Infrastructure
 - Data Importer
 - Explore & Dataset Management
 - Explore Plugin
