@@ -3,6 +3,7 @@
 ## common
 
 - FIPS Compliance & Build Infrastructure
+- Security Vulnerability Fixes (Dependencies)
 
 ## alerting
 
