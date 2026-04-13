@@ -126,6 +126,7 @@ authc:
 
 ## Change History
 
+- **v3.6.0** (2026-04): Security plugin now recognizes `-Pcrypto.standard=FIPS-140-3` build parameter, conditionally scoping BouncyCastle FIPS jars as `compileOnly` (when core provides them) or `implementation` (when not), preventing jar hell errors on FIPS-enabled builds
 - **v3.2.0** (2025-06): Full FIPS 140-2 compliance with BC-FIPS libraries and OpenSAML shadow JAR isolation
 
 
@@ -137,6 +138,7 @@ authc:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#5952](https://github.com/opensearch-project/security/pull/5952) | FIPS build parameter awareness for BouncyCastle jar handling | [opensearch-build#5979](https://github.com/opensearch-project/opensearch-build/issues/5979) |
 | v3.2.0 | [#5404](https://github.com/opensearch-project/security/pull/5404) | Moved OpenSAML jars to Shadow Jar configuration | [#4915](https://github.com/opensearch-project/security/issues/4915) |
 | v3.2.0 | [#5439](https://github.com/opensearch-project/security/pull/5439) | Replaced standard BouncyCastle with BC-FIPS | [#5438](https://github.com/opensearch-project/security/issues/5438) |
 

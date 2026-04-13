@@ -148,6 +148,7 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 
 ## Change History
 
+- **v3.6.0** (2026-04): Optimized index pattern matching with `CompiledRoles` class and O(log n) prefix matching via TreeSet (~56% improvement for role config updates); Optimized FLS field filter to skip predicate evaluation for indices without FLS restrictions
 - **v3.2.0** (2025-09-16): Precomputed privileges toggle, optimized wildcard matching
 - **v3.1.0** (2025-05-26): Immutable User object with serialization caching
 - **v3.0.0**: Optimized privilege evaluation for document- and field-level security
@@ -162,6 +163,8 @@ public class CustomAuthBackend implements AuthenticationBackend, ImpersonationBa
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#5988](https://github.com/opensearch-project/security/pull/5988) | Optimized string matching for RoleBasedActionPrivileges with CompiledRoles and prefix matching | [#5998](https://github.com/opensearch-project/security/issues/5998) |
+| v3.6.0 | [#5777](https://github.com/opensearch-project/security/pull/5777) | Optimize getFieldFilter for FLS restrictions |  |
 | v3.2.0 | [#5465](https://github.com/opensearch-project/security/pull/5465) | Precomputed privileges toggle setting |   |
 | v3.2.0 | [#5470](https://github.com/opensearch-project/security/pull/5470) | Optimized wildcard matching |   |
 | v3.1.0 | [#5339](https://github.com/opensearch-project/security/pull/5339) | Remove unused custom User serialization | [#5200](https://github.com/opensearch-project/security/issues/5200) |
