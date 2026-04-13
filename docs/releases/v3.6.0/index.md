@@ -50,6 +50,7 @@
 - Vector Search (k-NN) - Engine Stability
 - Vector Search (k-NN) - Memory-Optimized Search
 - Vector Search (k-NN) - Pre-quantized Vectors
+- Vector Search (k-NN) - Merge & Indexing
 - Vector Search (k-NN) - Scoring & Search
 
 ## skills
