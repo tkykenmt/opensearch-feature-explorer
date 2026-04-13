@@ -128,6 +128,7 @@
 
 ## observability
 
+- GenAI Agent Tracing
 - Observability Dashboards
 
 ## cross-cluster-replication

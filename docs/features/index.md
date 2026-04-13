@@ -60,6 +60,7 @@ Cumulative feature documentation across all versions.
 
 ## observability
 
+- GenAI Agent Tracing
 - Observability Cypress Updates
 - Observability Infrastructure
 - Observability Integrations
