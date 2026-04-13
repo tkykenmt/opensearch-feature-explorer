@@ -3,6 +3,7 @@
 ## opensearch
 
 - Analysis & Text Processing
+- Arrow Flight Transport
 - Bitmap64 Query Support
 - Context-Aware Indices
 - ProfileScorer Improvements
