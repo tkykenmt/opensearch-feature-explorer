@@ -24,6 +24,10 @@ Cumulative feature documentation across all versions.
 
 - Job Scheduler
 
+## learning
+
+- Learning to Rank
+
 ## geospatial
 
 - Geospatial Plugin

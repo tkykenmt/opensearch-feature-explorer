@@ -184,6 +184,7 @@ POST my_index/_search
 
 ## Change History
 
+- **v3.6.0** (2026-04-08): Bug fixes - `LoggingSearchExtBuilder.toXContent` missing field name fix (caused `JsonGenerationException` when LTR feature logging was used with search pipelines that re-serialize the request); Windows CI build fix (removed Spotless P2 mirror dependency, resolving from Maven Central instead)
 - **v3.4.0** (2026-02-18): Bug fixes - legacy version ID computation update for OpenSearch compatibility, integration test stability improvements (ML index warning fix, implicit refresh), rescore-only SLTR logging fix; Test infrastructure enhancements - narrowed index cleanup scope to LTR indexes only, improved test isolation for parallel execution
 - **v2.19.0** (2025-02-18): Major enhancements - plugin settings for enable/disable control (`ltr.plugin.enabled`, `ltr.breaker.enabled`), memory-based circuit breaker (85% heap threshold), stats REST API (`/_plugins/_ltr/stats`), security roles (`ltr_read_access`, `ltr_full_access`), system index registration for `.ltrstore*`; System index handling - REST handlers now stash thread context before accessing `.ltrstore*` system indices (RestAddFeatureToSet, RestCreateModelFromSet, RestFeatureManager, RestStoreManager); Integration test fixes for system index warnings; Build infrastructure improvements (Java 11/17 builds, LTR onboarding scripts)
 - **v3.3.0** (2026-01-14): Build infrastructure fixes - log4j exclusion from JAR, Gradle 9 compatibility, hybrid float comparison for tests, code coverage reporting, spotless plugin upgrade
@@ -206,6 +207,8 @@ POST my_index/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#290](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/290) | Fix LoggingSearchExtBuilder.toXContent missing field name | [ml-commons#4607](https://github.com/opensearch-project/ml-commons/issues/4607) |
+| v3.6.0 | [#305](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/305) | Fix Windows CI build failure caused by Spotless P2 mirror timeout |   |
 | v3.4.0 | [#264](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/264) | Use OpenSearch Version.computeID for legacy version IDs |   |
 | v3.4.0 | [#269](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/269) | Fix ML index warning in YAML test parsing | [#265](https://github.com/opensearch-project/opensearch-learning-to-rank-base/issues/265) |
 | v3.4.0 | [#271](https://github.com/opensearch-project/opensearch-learning-to-rank-base/pull/271) | Use implicit wait_for instead of explicit refresh |   |
