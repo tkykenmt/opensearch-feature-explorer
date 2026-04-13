@@ -84,7 +84,8 @@ flowchart TB
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `-Pcrypto.standard=FIPS-140-3` | Gradle parameter to enable FIPS mode | Not set |
+| `-Pcrypto.standard=FIPS-140-3` | Gradle parameter to enable FIPS mode | Set by default in `gradle.properties` (v3.6.0+) |
+| `OPENSEARCH_FIPS_MODE` | Environment variable to enable FIPS enforced mode at runtime (v3.6.0+) | Not set |
 | `testFipsRuntimeOnly` | Gradle configuration for FIPS test dependencies | N/A |
 | Keystore type | BCFKS for FIPS, JKS for standard | JKS |
 
@@ -93,11 +94,21 @@ flowchart TB
 Building OpenSearch with FIPS compliance:
 
 ```bash
-# Build with FIPS 140-3 compliance
+# Build with FIPS 140-3 compliance (default in v3.6.0+ via gradle.properties)
 ./gradlew assemble -Pcrypto.standard=FIPS-140-3
 
 # Run tests in FIPS mode
 ./gradlew test -Pcrypto.standard=FIPS-140-3
+
+# Build without FIPS (override default in v3.6.0+)
+./gradlew assemble -Pcrypto.standard=any-supported
+```
+
+Enabling FIPS enforced mode at runtime (v3.6.0+):
+
+```bash
+# Explicitly enable FIPS enforced mode
+OPENSEARCH_FIPS_MODE=true ./bin/opensearch
 ```
 
 Creating FIPS-compliant keystores:
@@ -139,6 +150,7 @@ public class MyFipsTests extends MyTests implements RestClientFipsAwareTestCase 
 
 ## Change History
 
+- **v3.6.0** (2026-04): Ecosystem-wide FIPS build infrastructure — plugins (flow-framework, ml-commons, sql, performance-analyzer) now build with `-Pcrypto.standard=FIPS-140-3` by default via `gradle.properties`; BC-FIPS dependencies scoped as `compileOnly` to prevent jar hell; new `OPENSEARCH_FIPS_MODE` environment variable for explicit FIPS enforced mode activation; `Randomness` moved from `server` to `lib/common` to reduce FIPS demo installer size; Gradle Shadow Plugin v9 compatibility fixes across common, alerting, ml-commons
 - **v3.4.0** (2026-01): Test suite FIPS 140-3 compliance support with BC-FIPS provider
 
 
@@ -151,6 +163,18 @@ public class MyFipsTests extends MyTests implements RestClientFipsAwareTestCase 
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20625](https://github.com/opensearch-project/OpenSearch/pull/20625) | Use `OPENSEARCH_FIPS_MODE` env var for FIPS enforced mode | [opensearch-build#5979](https://github.com/opensearch-project/opensearch-build/issues/5979) |
+| v3.6.0 | [#20570](https://github.com/opensearch-project/OpenSearch/pull/20570) | Move `Randomness` from server to lib/common | [#20520](https://github.com/opensearch-project/OpenSearch/issues/20520) |
+| v3.6.0 | [ml-commons#4654](https://github.com/opensearch-project/ml-commons/pull/4654) | Fix ML build for Gradle Shadow v9 + FIPS build param | [opensearch-build#5979](https://github.com/opensearch-project/opensearch-build/issues/5979) |
+| v3.6.0 | [ml-commons#4719](https://github.com/opensearch-project/ml-commons/pull/4719) | Enable FIPS flag by default via gradle.properties | - |
+| v3.6.0 | [ml-commons#4659](https://github.com/opensearch-project/ml-commons/pull/4659) | Quote FIPS parameter in CI workflow files | - |
+| v3.6.0 | [performance-analyzer#915](https://github.com/opensearch-project/performance-analyzer/pull/915) | FIPS build param awareness for BouncyCastle handling | [opensearch-build#5979](https://github.com/opensearch-project/opensearch-build/issues/5979) |
+| v3.6.0 | [sql#5231](https://github.com/opensearch-project/sql/pull/5231) | Add gradle.properties for default FIPS build | - |
+| v3.6.0 | [flow-framework#1344](https://github.com/opensearch-project/flow-framework/pull/1344) | Add gradle.properties for default FIPS build | - |
+| v3.6.0 | [flow-framework#1346](https://github.com/opensearch-project/flow-framework/pull/1346) | Set bc-fips to compileOnly to avoid runtime conflicts | - |
+| v3.6.0 | [common#904](https://github.com/opensearch-project/common-utils/pull/904) | Update shadow plugin usage for deprecated API | - |
+| v3.6.0 | [alerting#2040](https://github.com/opensearch-project/alerting/pull/2040) | Upgrade Gradle wrapper 9.2.0 → 9.4.0 | - |
+| v3.6.0 | [alerting#2022](https://github.com/opensearch-project/alerting/pull/2022) | Update shadow plugin usage for deprecated API | - |
 | v3.4.0 | [#18491](https://github.com/opensearch-project/OpenSearch/pull/18491) | Make test-suite runnable under FIPS compliance support | [#4254](https://github.com/opensearch-project/security/issues/4254) |
 | v3.4.0 | [#18921](https://github.com/opensearch-project/OpenSearch/pull/18921) | Add build-tooling to run in FIPS environment | [#4254](https://github.com/opensearch-project/security/issues/4254) |
 

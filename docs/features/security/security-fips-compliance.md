@@ -139,6 +139,7 @@ authc:
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
 | v3.6.0 | [#5952](https://github.com/opensearch-project/security/pull/5952) | FIPS build parameter awareness for BouncyCastle jar handling | [opensearch-build#5979](https://github.com/opensearch-project/opensearch-build/issues/5979) |
+| v3.6.0 | [#887](https://github.com/opensearch-project/security/pull/887) | Fix integration tests with FIPS build parameter | - |
 | v3.2.0 | [#5404](https://github.com/opensearch-project/security/pull/5404) | Moved OpenSAML jars to Shadow Jar configuration | [#4915](https://github.com/opensearch-project/security/issues/4915) |
 | v3.2.0 | [#5439](https://github.com/opensearch-project/security/pull/5439) | Replaced standard BouncyCastle with BC-FIPS | [#5438](https://github.com/opensearch-project/security/issues/5438) |
 

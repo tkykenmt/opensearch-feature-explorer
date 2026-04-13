@@ -1,5 +1,9 @@
 # OpenSearch v3.6.0 Release
 
+## common
+
+- FIPS Compliance & Build Infrastructure
+
 ## alerting
 
 - Alerting Enhancements
