@@ -22,6 +22,7 @@ Cumulative feature documentation across all versions.
 
 ## geospatial
 
+- Geospatial Plugin
 - Geospatial Validation
 
 ## ml-commons

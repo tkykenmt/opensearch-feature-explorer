@@ -84,3 +84,7 @@
 ## dashboards
 
 - Dashboards Visualization Fixes
+
+## geospatial
+
+- Geospatial Plugin

@@ -69,6 +69,7 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed typo in `MAX_MULTI_GEOMETRIES` setting key from `plugins.geospatial.geojson.max_multi_gemoetries` to `plugins.geospatial.geojson.max_multi_geometries`
 - **v3.2.0** (2026-01-11): Upgraded Gradle to 8.14.3, enabled JDK 24 CI checks, updated Lombok plugin to 8.14
 - **v3.0.0** (2025-05-06): Fixed Maven POM metadata to include license, description, and developer information for all published artifacts
 
@@ -88,6 +89,7 @@ The plugin uses Gradle for building and Maven for artifact publishing. POM files
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#837](https://github.com/opensearch-project/geospatial/pull/837) | Fix typo in max multi geometries validation cluster setting | - |
 | v3.2.0 | [#776](https://github.com/opensearch-project/geospatial/pull/776) | Upgrade gradle to 8.14.3 and run CI checks with JDK24 |   |
 | v3.0.0 | [#732](https://github.com/opensearch-project/geospatial/pull/732) | Persist licenses and developer fields in pom file | [#731](https://github.com/opensearch-project/geospatial/issues/731) |
 
