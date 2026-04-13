@@ -68,3 +68,7 @@
 ## notifications
 
 - Notifications
+
+## observability
+
+- Observability Dashboards
