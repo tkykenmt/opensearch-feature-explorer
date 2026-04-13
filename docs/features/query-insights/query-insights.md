@@ -34,8 +34,17 @@ graph TB
             
             K --> L[Local Index Exporter]
             L --> M[(top_queries-* Index)]
+            K --> L2[Remote Repository Exporter]
+            L2 --> M2[(S3 / Blob Store)]
+            
+            J --> V[Recommendation Service]
+            V --> W[Rule Engine]
+            
+            J --> X{RBAC Filter}
+            X --> P
             
             N[Task Manager] --> O[Live Queries]
+            B --> FC[Finished Queries Cache]
         end
         
         subgraph "APIs"
@@ -44,8 +53,8 @@ graph TB
             R[/_insights/health]
         end
         
-        J --> P
         O --> Q
+        FC --> Q
     end
 ```
 
@@ -84,8 +93,14 @@ flowchart TB
 | `SearchQueryRecord` | Data model representing a captured query with metrics |
 | `TopQueriesService` | Manages Top N queries collection and retrieval |
 | `QueryInsightsExporter` | Exports query records to local index |
+| `RemoteRepositoryExporter` | Exports top N queries to remote blob store repositories (e.g., S3) (v3.6.0+) |
 | `QueryInsightsIndexTemplate` | Manages default index template for local indexes |
 | `LiveQueriesAction` | Transport action for fetching in-flight queries |
+| `LiveQueryRecord` | Model representing live queries with coordinator and shard task hierarchy (v3.6.0+) |
+| `FinishedQueriesCache` | In-memory cache capturing completed/failed/cancelled queries (v3.6.0+) |
+| `FinishedQueryRecord` | Model extending SearchQueryRecord with status and top_n_id for correlation (v3.6.0+) |
+| `RecommendationService` | Manages rule registration, evaluation, caching, and filtering for query recommendations (v3.6.0+) |
+| `RecommendationRule` | Interface for rule implementations to inspect query structure via visitor pattern (v3.6.0+) |
 
 ### Configuration
 
@@ -109,6 +124,15 @@ flowchart TB
 | `search.insights.top_queries.exporter.template_priority` | Index template priority | `1847` |
 | `search.insights.top_queries.exporter.delete_after_days` | Days to retain exported data | `7` |
 | `search.insights.top_queries.max_source_length` | Maximum source string length in characters before truncation (0 = empty source, v3.5.0+) | `524288` |
+| `search.insights.top_queries.filter_by_mode` | Access control mode: `none`, `username`, `backend_roles` (v3.6.0+) | `none` |
+| `search.insights.top_queries.exporter.remote.enabled` | Enable/disable remote blob store export (v3.6.0+) | `false` |
+| `search.insights.top_queries.exporter.remote.repository` | Remote repository name for export (v3.6.0+) | - |
+| `search.insights.top_queries.exporter.remote.path` | Base path for organizing remote export files (v3.6.0+) | - |
+| `search.insights.live_queries.cache.idle_timeout` | Finished queries cache idle timeout (v3.6.0+) | `5m` |
+| `search.insights.recommendations.enabled` | Enable rule-based recommendation engine (v3.6.0+) | `false` |
+| `search.insights.recommendations.min_confidence` | Minimum confidence threshold for recommendations (v3.6.0+) | - |
+| `search.insights.recommendations.max_count` | Maximum recommendations per query (v3.6.0+) | - |
+| `search.insights.recommendations.enabled_rules` | List of enabled recommendation rules (v3.6.0+) | - |
 
 ### APIs
 
@@ -188,6 +212,7 @@ GET /_insights/live_queries?sort=latency&size=5
 
 ## Change History
 
+- **v3.6.0**: Added `RemoteRepositoryExporter` for exporting top N queries to remote blob store repositories (e.g., S3) with timestamp-organized file structure and three new `exporter.remote.*` cluster settings; added rule-based recommendation engine with `RecommendationService`, `RecommendationRule` interface, `QueryContext` visitor pattern, and four new `recommendations.*` cluster settings; implemented RBAC access control for query insights data via `search.insights.top_queries.filter_by_mode` setting supporting `none`, `username`, and `backend_roles` modes with `all_access` bypass; enhanced live queries API with shard-level task details showing coordinator/shard task hierarchy via `LiveQueryRecord` model; added `FinishedQueriesCache` for retrieving recently completed/failed/cancelled queries with `top_n_id` correlation to Top N queries and configurable idle timeout; added `failed` attribute to `SearchQueryRecord` for tracking failed queries; added streaming dimension to query categorization metrics via `IS_STREAMING_TAG`; enabled `internalClusterTest` and `yamlRestTest` Gradle tasks; **Dashboards**: added P90/P99 stats, pie charts by node/index/user/WLM group, performance analysis line charts, heatmap visualization, interactive pie charts, collapsible sections, sorting/pagination to Top N Queries page; switched latency graphs from Plotly to React ECharts; **Bug fixes**: fixed `LocalIndexExporter` retry logic for `MapperParsingException` by moving detection from `onFailure()` to `onResponse()` callback; fixed `QueryInsightsListener` `@Inject` constructor overwriting `groupingFieldNameEnabled`/`groupingFieldTypeEnabled` to `false` after initialization from cluster settings; fixed `IS_STREAMING_TAG` not propagated in `incrementAggCounter` due to immutable `Tags` object; fixed `integTestRemote` task spinning up unnecessary test cluster nodes by changing from `RestIntegTestTask` to `Test` type; pinned LocalStack to v4.4 with increased health check timeout; improved Cypress test reliability with poll-based checks and pinned Gradle wrapper version
 - **v3.5.0**: Added user attribution for top N queries with `username` and `user_roles` fields capturing who ran each query; added dedicated settings API endpoints (`GET/PUT /_insights/settings`) for secure Dashboard configuration without requiring broad cluster settings permissions; optimized query storage by storing source field as string (`SourceString` wrapper class) instead of `SearchSourceBuilder` object in local index — resolves field explosion (`IllegalArgumentException: Limit of total fields [1000]`) and depth limit (`MapperParsingException: depth exceeded [20]`) errors caused by dynamic mapping on deeply nested query sources, with up to 58% memory savings for average queries; added `search.insights.top_queries.max_source_length` setting (default: 524288 chars) to truncate long source strings with `source_truncated` boolean attribute and `TOP_N_QUERIES_SOURCE_TRUNCATION` operational metric; `SearchSourceBuilder` now kept as private field in `SearchQueryRecord` for in-memory categorization only, with `SOURCE` attribute set asynchronously in `TopQueriesService.addToTopNStore()`; version-aware serialization in `Attribute` class handles mixed-version clusters during rolling upgrades (converts between `SourceString` and `SearchSourceBuilder` based on stream version); `LocalIndexExporter` retries bulk with `useObjectSource=true` on `MapperException` for backward compatibility with existing indices; delayed user info extraction until after Top N filtering for performance; added missing mapping fields with enum-based validation tests; removed index template dependency in favor of explicit index mappings; retained local indices on exporter type change with new `LocalIndexLifecycleManager`; added `integTestRemote` Gradle target and `integTest` script for multi-node Jenkins testing; improved Cypress test pipeline with better dashboards readiness checks; fixed installation documentation
 - **v3.4.0**: Added version-aware settings support to Query Insights Dashboards, enabling dynamic feature detection based on connected cluster version - Live Queries tab only shown for v3.1.0+, WLM features only enabled for v3.3.0+; added new `RouteService` class and `version-utils.ts` for version comparison with caching; added `/api/cluster/version` server endpoint; removed deprecated `/api/cat_plugins` endpoint; added comprehensive multi-node integration tests (`QueryInsightsClusterIT`) with 6 test methods for data collection, aggregation, and consistency validation; added `HealthStatsRestIT` for health stats REST API testing; fixed flaky tests by adding settings propagation delays and increasing window sizes from 1m to 5m; added new test helper methods (`getNodeClient`, `getClusterNodeCount`, `waitForExpectedNodes`); updated CI to use macOS 15 runner; excluded multi-node tests from security integration tests due to Java 21 SSL certificate limitations; **Bug fixes**: excluded internal `top_queries-*` indices from resource tracking by moving filtering logic to `QueryInsightsListener.skipSearchRequest()` method; **Dashboards**: fixed MDS (Multiple Data Sources) selector visibility on Workload Management pages (WLMMain, WLMDetails, WLMCreate) when `home:useNewHomePage` setting is enabled by removing `PageHeader` wrapper and directly rendering `WLMDataSourceMenu` component; fixed MDS support in server-side WLM routes by adding `WlmPlugin` custom client and `dataSourceId` query parameter support to all WLM routes; removed "Open in search comparison" button from Query Details and Query Group Details pages (was routing to wrong destination); fixed Jest test failures caused by Monaco editor ES module imports by adding mocks and updating Jest configuration
 - **v3.3.0**: Bug fixes for query ID matching (changed from matchQuery to termQuery with keyword field mapping); fixed Live Queries API to filter out shard-level tasks; added time range validation (from < to); fixed positive size parameter validation; fixed flaky test by clearing stale queue records when disabling metrics; **Dashboards**: fixed Group By selector showing "None" after refresh by correcting settings path; fixed retrieveQueryById to explicitly match by ID; fixed indices filter, Query Count display for non-grouped queries, metric headers toggle, and date picker for relative ranges; CI/CD improvements for Cypress tests and branch cleanup workflows
@@ -215,6 +240,30 @@ GET /_insights/live_queries?sort=latency&size=5
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#541](https://github.com/opensearch-project/query-insights/pull/541) | Add RemoteRepositoryExporter for remote blob store export | [#545](https://github.com/opensearch-project/query-insights/issues/545) |
+| v3.6.0 | [#549](https://github.com/opensearch-project/query-insights/pull/549) | Add recommendation data models for rule-based engine | - |
+| v3.6.0 | [#548](https://github.com/opensearch-project/query-insights/pull/548) | Add shard-level task details to live queries API | - |
+| v3.6.0 | [#551](https://github.com/opensearch-project/query-insights/pull/551) | Add streaming dimension to query categorization metrics | - |
+| v3.6.0 | [#552](https://github.com/opensearch-project/query-insights/pull/552) | Implement access control for query insights data | [#520](https://github.com/opensearch-project/query-insights/issues/520) |
+| v3.6.0 | [#555](https://github.com/opensearch-project/query-insights/pull/555) | Rule-based recommendation service implementation | [#532](https://github.com/opensearch-project/query-insights/issues/532) |
+| v3.6.0 | [#540](https://github.com/opensearch-project/query-insights/pull/540) | Tag failed queries with failed attribute | [#253](https://github.com/opensearch-project/query-insights/issues/253) |
+| v3.6.0 | [#554](https://github.com/opensearch-project/query-insights/pull/554) | Add finished queries cache to live queries API | - |
+| v3.6.0 | [#473](https://github.com/opensearch-project/query-insights-dashboards/pull/473) | Add visualizations to Top N Queries page | - |
+| v3.6.0 | [#486](https://github.com/opensearch-project/query-insights-dashboards/pull/486) | Add heatmap, interactive pie charts, collapsible sections | - |
+| v3.6.0 | [#487](https://github.com/opensearch-project/query-insights-dashboards/pull/487) | Switch latency graphs from Plotly to React ECharts | - |
+| v3.6.0 | [#570](https://github.com/opensearch-project/query-insights/pull/570) | Fix IS_STREAMING_TAG not propagated in incrementAggCounter | - |
+| v3.6.0 | [#556](https://github.com/opensearch-project/query-insights/pull/556) | Fix exporter retry logic for MapperParsingException | - |
+| v3.6.0 | [#578](https://github.com/opensearch-project/query-insights/pull/578) | Fix grouping field_name/field_type settings overwritten on init | - |
+| v3.6.0 | [#558](https://github.com/opensearch-project/query-insights/pull/558) | Fix MultiIndexDateRangeIT test failure | - |
+| v3.6.0 | [#522](https://github.com/opensearch-project/query-insights/pull/522) | Enable internalClusterTest and yamlRestTest tasks | [#514](https://github.com/opensearch-project/query-insights/issues/514) |
+| v3.6.0 | [#577](https://github.com/opensearch-project/query-insights/pull/577) | Exclude tests from integTestRemote | - |
+| v3.6.0 | [#587](https://github.com/opensearch-project/query-insights/pull/587) | Fix integTestRemote task type | - |
+| v3.6.0 | [#588](https://github.com/opensearch-project/query-insights/pull/588) | Add cluster health check before integration tests | - |
+| v3.6.0 | [#594](https://github.com/opensearch-project/query-insights/pull/594) | Revert cluster health check on 3.6 branch | - |
+| v3.6.0 | [#572](https://github.com/opensearch-project/query-insights/pull/572) | Pin LocalStack v4.4 and increase health check timeout | - |
+| v3.6.0 | [#480](https://github.com/opensearch-project/query-insights-dashboards/pull/480) | Remove flaky verbose=false Cypress test | - |
+| v3.6.0 | [#482](https://github.com/opensearch-project/query-insights-dashboards/pull/482) | Use poll-based check in Cypress beforeEach | - |
+| v3.6.0 | [#484](https://github.com/opensearch-project/query-insights-dashboards/pull/484) | Pin Gradle wrapper version in Cypress workflows | - |
 | v3.5.0 | [#508](https://github.com/opensearch-project/query-insights/pull/508) | Add username and user roles to top n queries | - |
 | v3.5.0 | [#527](https://github.com/opensearch-project/query-insights/pull/527) | Delay username and user roles extraction to after Top N Filtering | - |
 | v3.5.0 | [#491](https://github.com/opensearch-project/query-insights/pull/491) | Add wrapper endpoints for query insights settings | [#517](https://github.com/opensearch-project/query-insights/issues/517) |

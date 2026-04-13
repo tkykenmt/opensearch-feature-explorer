@@ -60,6 +60,10 @@ Cumulative feature documentation across all versions.
 
 - Performance Analyzer
 
+## query-insights
+
+- Query Insights
+
 ## opensearch
 
 - Application-Based Configuration (ABC) Templates
