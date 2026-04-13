@@ -3,3 +3,7 @@
 ## alerting
 
 - Alerting Enhancements
+
+## anomaly-detection
+
+- Anomaly Detection
