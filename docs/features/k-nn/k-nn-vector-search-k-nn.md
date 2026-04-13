@@ -124,6 +124,10 @@ flowchart TB
 
 For detailed information on native memory management, cache lifecycle, segment merge eviction, Clear Cache API, and concurrency control, see [k-NN Native Memory Lifecycle](k-nn-native-memory-lifecycle.md).
 
+### Efficient Filtering
+
+For detailed information on the segment-level filtering decision logic, exact search fallback conditions, and the two-phase decision flow (pre-ANN and post-ANN), see [k-NN Efficient Filtering](k-nn-efficient-filtering.md).
+
 ### Engine Capability Matrix
 
 For a comprehensive comparison of engines (Faiss, Lucene, NMSLIB) including supported modes, data types, quantization encoders, space types, and version availability, see [k-NN Engine Capability Matrix](k-nn-engine-capability-matrix.md).
