@@ -4,6 +4,7 @@
 
 - Bitmap64 Query Support
 - Pull-based Ingestion
+- Search Observability
 - Segment Replication
 
 ## common
