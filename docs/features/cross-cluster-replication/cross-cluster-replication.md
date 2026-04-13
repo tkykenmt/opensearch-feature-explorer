@@ -152,6 +152,7 @@ POST _plugins/_replication/follower-index/_stop
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Compatibility fixes for core engine refactor — fixed compilation errors from `IndexingStrategy`/`DeletionStrategy` class extraction, fixed runtime assertion failures by constructing lightweight replica-origin operation copies in `ReplicationEngine`, aligned `validFileNameExcludingAsterisk` typo fix with core
 - **v3.5.0** (2026-02-11): Test stability improvements - fixed multi-node synonym file handling, improved test cleanup error handling, thread-safe batch size management
 - **v3.4.0** (2026-01-14): Made pause replication API request body optional, defaulting to "User initiated" reason
 - **v3.3.0** (2025-11-18): Fixed 2GB limit breach for large document replication with dynamic batch size adjustment and new index-level batch size setting
@@ -180,6 +181,8 @@ POST _plugins/_replication/follower-index/_stop
 ### Pull Requests
 | Version | PR | Repository | Description | Related Issue |
 |---------|-----|------------|-------------|---------------|
+| v3.6.0 | [#1639](https://github.com/opensearch-project/cross-cluster-replication/pull/1639) | cross-cluster-replication | Fix typo in `validFileNameExcludingAsterisk` | [OpenSearch#20620](https://github.com/opensearch-project/OpenSearch/pull/20620) |
+| v3.6.0 | [#1647](https://github.com/opensearch-project/cross-cluster-replication/pull/1647) | cross-cluster-replication | Fix ReplicationEngine for strategy planner refactor compatibility | [#1646](https://github.com/opensearch-project/cross-cluster-replication/issues/1646) |
 | v3.5.0 | [#1621](https://github.com/opensearch-project/cross-cluster-replication/pull/1621) | cross-cluster-replication | Fix replication tests and increment version to 3.5.0 | [#1617](https://github.com/opensearch-project/cross-cluster-replication/pull/1617) |
 | v3.5.0 | [#1630](https://github.com/opensearch-project/cross-cluster-replication/pull/1630) | cross-cluster-replication | Fix flaky test by allowing 500 error on stopAllReplication | - |
 | v3.4.0 | [#1603](https://github.com/opensearch-project/cross-cluster-replication/pull/1603) | cross-cluster-replication | Fix the requirement of empty request body in pause replication | [#1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468) |
@@ -192,6 +195,7 @@ POST _plugins/_replication/follower-index/_stop
 | v1.1.0 | - | cross-cluster-replication | Initial CCR implementation |   |
 
 ### Issues (Design / RFC)
+- [Issue #1646](https://github.com/opensearch-project/cross-cluster-replication/issues/1646): Plugin not compatible with latest OpenSearch 3.6.0-SNAPSHOT after engine refactor
 - [Issue #726](https://github.com/opensearch-project/index-management/issues/726): Feature request for managing CCR follower indices
 - [Issue #1468](https://github.com/opensearch-project/cross-cluster-replication/issues/1468): Bug report for required empty request body in pause API
 - [Issue #1557](https://github.com/opensearch-project/cross-cluster-replication/issues/1557): Distribution Build Failed for cross-cluster-replication-3.2.0
