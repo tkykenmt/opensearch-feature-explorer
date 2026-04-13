@@ -47,6 +47,7 @@
 ## k-nn
 
 - Vector Search (k-NN) - 1-Bit Quantization
+- Vector Search (k-NN) - Pre-quantized Vectors
 
 ## skills
 
