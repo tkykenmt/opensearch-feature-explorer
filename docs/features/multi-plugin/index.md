@@ -11,6 +11,7 @@
 | [multi-plugin-look-and-feel-ui-improvements](multi-plugin-look-and-feel-ui-improvements.md) | Look & Feel UI Improvements |
 | [multi-plugin-maintainer-updates](multi-plugin-maintainer-updates.md) | Maintainer Updates |
 | [multi-plugin-multi-data-source-support](multi-plugin-multi-data-source-support.md) | Multi-Data Source Support |
+| [multi-plugin-react-18-migration](multi-plugin-react-18-migration.md) | React 18 Migration |
 | [multi-plugin-search-autocomplete](multi-plugin-search-autocomplete.md) | Search Autocomplete |
 | [multi-plugin-testing-library-updates](multi-plugin-testing-library-updates.md) | Testing Library Updates |
 | [multi-plugin-version-bumps-release-notes](multi-plugin-version-bumps-release-notes.md) | Version Bumps & Release Notes |

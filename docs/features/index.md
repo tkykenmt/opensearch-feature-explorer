@@ -33,6 +33,10 @@ Cumulative feature documentation across all versions.
 - Geospatial Plugin
 - Geospatial Validation
 
+## multi-plugin
+
+- React 18 Migration
+
 ## ml-commons
 
 - AG-UI (Agent-User Interaction) Protocol
