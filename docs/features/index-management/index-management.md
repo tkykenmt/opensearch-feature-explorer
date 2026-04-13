@@ -329,6 +329,7 @@ PUT _plugins/_rollup/jobs/sample_rollup
 
 ## Change History
 
+- **v3.6.0** (2026-04-08): Fixed flaky rollup test race condition by stopping jobs before index cleanup, fixed typo in `validFileNameExcludingAsterisk` validation method (build failure fix), added Remote Store integration test infrastructure with `remoteStoreIntegTest` Gradle task and `SearchOnlyActionIT`, updated shadow plugin to replace deprecated Gradle API
 - **v3.5.0** (2026-02-11): Added multi-tier rollups support (rollup indices as source for subsequent rollups), cardinality metric support using HLL++ sketches, `search_only` ISM action for Reader/Writer Separation, `rename_pattern` parameter for `convert_index_to_remote` action, CI improvements
 - **v3.4.0** (2026-01-11): Added ISM template exclusion pattern support using `-` prefix, fixed ISM policy rebinding after removal (auto_manage setting check), fixed SM deletion snapshot pattern parsing for comma-separated values, fixed ExplainSMPolicy serialization for null creation field, fixed rollup start/stop test race conditions
 - **v3.3.0** (2026-01-11): Fixed rollup aggregation reduction bug when searching rollup and raw indices together by using ScriptedAvg class, build fixes for upstream OpenSearch changes, dependency updates
@@ -358,6 +359,10 @@ PUT _plugins/_rollup/jobs/sample_rollup
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1530](https://github.com/opensearch-project/index-management/pull/1530) | Fix flaky rollup test by stopping jobs before index cleanup | [#90](https://github.com/opensearch-project/index-management/issues/90) |
+| v3.6.0 | [#1608](https://github.com/opensearch-project/index-management/pull/1608) | Fix typo in `validFileNameExcludingAsterisk` validation method | [#1590](https://github.com/opensearch-project/index-management/issues/1590) |
+| v3.6.0 | [#1589](https://github.com/opensearch-project/index-management/pull/1589) | Add Remote Store integration test infrastructure with SearchOnlyActionIT | [#1564](https://github.com/opensearch-project/index-management/issues/1564) |
+| v3.6.0 | [#1587](https://github.com/opensearch-project/index-management/pull/1587) | Update shadow plugin to replace deprecated Gradle API | |
 | v3.5.0 | [#1533](https://github.com/opensearch-project/index-management/pull/1533) | Adding support for multi-tier rollups in ISM | [#1490](https://github.com/opensearch-project/index-management/issues/1490) |
 | v3.5.0 | [#1567](https://github.com/opensearch-project/index-management/pull/1567) | Adding Cardinality as supported metric for Rollups | [#1493](https://github.com/opensearch-project/index-management/issues/1493) |
 | v3.5.0 | [#1560](https://github.com/opensearch-project/index-management/pull/1560) | Add search_only ISM action for Reader/Writer Separation | [#1531](https://github.com/opensearch-project/index-management/issues/1531) |

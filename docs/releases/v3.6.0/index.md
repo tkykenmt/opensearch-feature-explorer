@@ -88,3 +88,7 @@
 ## geospatial
 
 - Geospatial Plugin
+
+## index-management
+
+- Index Management
