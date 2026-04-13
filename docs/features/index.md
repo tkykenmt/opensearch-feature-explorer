@@ -12,6 +12,10 @@ Cumulative feature documentation across all versions.
 
 - Automated Investigation (Dashboards)
 
+## dashboards-search-relevance
+
+- Search Relevance Workbench (SRW)
+
 ## geospatial
 
 - Geospatial Validation

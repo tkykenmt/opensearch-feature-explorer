@@ -11,3 +11,7 @@
 ## anomaly-detection
 
 - Anomaly Detection
+
+## dashboards-search-relevance
+
+- Search Relevance Workbench (SRW)
