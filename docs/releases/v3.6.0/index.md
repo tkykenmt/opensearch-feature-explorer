@@ -160,4 +160,5 @@
 - AI Assistant / Chatbot
 - APM & Observability
 - Data Importer
+- Explore & Dataset Management
 - OpenSearch Dashboards Core
