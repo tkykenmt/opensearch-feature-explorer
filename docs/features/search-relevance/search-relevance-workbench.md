@@ -86,6 +86,7 @@ PUT _cluster/settings
 | `PUT _plugins/_search_relevance/judgments` | Import judgments |
 | `POST _plugins/_search_relevance/experiments` | Create and run an experiment |
 | `GET _plugins/_search_relevance/experiments/{id}` | Get experiment results |
+| `PATCH _plugins/_search_relevance/experiments/{id}` | Update experiment name/description |
 
 ### Usage Example
 
@@ -126,14 +127,21 @@ POST _plugins/_search_relevance/experiments
 
 ### Metrics
 
-The workbench calculates several comparison metrics:
+The workbench calculates several comparison and evaluation metrics:
 
-| Metric | Description |
-|--------|-------------|
-| Jaccard | Overlap between result sets |
-| RBO50 | Rank-Biased Overlap at 50% weight |
-| RBO90 | Rank-Biased Overlap at 90% weight |
-| Frequency Weighted | Weighted frequency of result overlap |
+| Metric | Description | Added |
+|--------|-------------|-------|
+| Jaccard | Overlap between result sets | v3.1.0 |
+| RBO50 | Rank-Biased Overlap at 50% weight | v3.1.0 |
+| RBO90 | Rank-Biased Overlap at 90% weight | v3.1.0 |
+| Frequency Weighted | Weighted frequency of result overlap | v3.1.0 |
+| Coverage@K | Proportion of returned docs with judgment scores | v3.1.0 |
+| Precision@K | Relevant documents in top K / K | v3.1.0 |
+| MAP@K | Mean Average Precision at K | v3.1.0 |
+| NDCG@K | Normalized Discounted Cumulative Gain at K | v3.1.0 |
+| Recall@K | Relevant documents in top K / total relevant | v3.6.0 |
+| MRR | Mean Reciprocal Rank - reciprocal of first relevant rank | v3.6.0 |
+| DCG@K | Discounted Cumulative Gain at K (graded relevance) | v3.6.0 |
 
 ### Test Data
 
@@ -151,6 +159,12 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 
 ## Change History
 
+- **v3.6.0** (2026-04): Added Recall@K, MRR, and DCG@K search quality metrics; refactored NDCG to depend on DCG internally
+- **v3.6.0** (2026-04): Introduced dynamic percentile-based relevance thresholding (`T = max(0.5 * Jmax, P90)`) for binary metrics (Precision, MAP, Recall, MRR), replacing hard-coded `j > 0` mapping
+- **v3.6.0** (2026-04): Added optional `name` (max 50 chars) and `description` (max 250 chars) fields to experiments with auto-generated defaults and new PATCH endpoint
+- **v3.6.0** (2026-04): Bug fix - Fixed thread pool starvation in LLM judgment processing by introducing `BatchedAsyncExecutor` for sequential batch execution
+- **v3.6.0** (2026-04): Bug fix - Extracted reusable `BatchedAsyncExecutor` and migrated both `LlmJudgmentTaskManager` and `ExperimentTaskManager` to use it
+- **v3.6.0** (2026-04): Bug fix - Fixed flaky DCG and MRR integration test assertions by using wider tolerance for position-sensitive metrics in multi-node clusters
 - **v3.5.0** (2026-02-11): LLM judgment customization - customizable prompt templates with three rating types (SCORE0_1, SCORE1_5, RELEVANT_IRRELEVANT), enhanced caching with prompt template differentiation
 - **v3.5.0** (2026-02-11): New `_search` API endpoints for Query Sets, Search Configurations, Judgments, and Experiments using OpenSearch DSL
 - **v3.5.0** (2026-02-11): UBI sample dataset and dashboards for understanding user interaction patterns
@@ -182,6 +196,13 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#397](https://github.com/opensearch-project/search-relevance/pull/397) | Added Recall@K, MRR, and DCG@K metrics | [#388](https://github.com/opensearch-project/search-relevance/issues/388) |
+| v3.6.0 | [#394](https://github.com/opensearch-project/search-relevance/pull/394) | Dynamic percentile-based relevance thresholding |   |
+| v3.6.0 | [#408](https://github.com/opensearch-project/search-relevance/pull/408) | Optional name and description fields for experiments |   |
+| v3.6.0 | [#387](https://github.com/opensearch-project/search-relevance/pull/387) | Fixed thread pool starvation in LLM judgment processing | [#386](https://github.com/opensearch-project/search-relevance/issues/386) |
+| v3.6.0 | [#392](https://github.com/opensearch-project/search-relevance/pull/392) | Extract reusable BatchedAsyncExecutor | [#386](https://github.com/opensearch-project/search-relevance/issues/386) |
+| v3.6.0 | [#427](https://github.com/opensearch-project/search-relevance/pull/427) | Fix flaky DCG and MRR integration test assertions |   |
+| v3.6.0 | [#415](https://github.com/opensearch-project/search-relevance/pull/415) | Improve demo scripts usability |   |
 | v3.5.0 | [#667](https://github.com/opensearch-project/dashboards-search-relevance/pull/667) | Add FrontEnd Support for LLM Judgement Template Prompt |   |
 | v3.5.0 | [#727](https://github.com/opensearch-project/dashboards-search-relevance/pull/727) | Reuse Search Configurations with Single Query Comparison UI | [#695](https://github.com/opensearch-project/dashboards-search-relevance/issues/695) |
 | v3.5.0 | [#729](https://github.com/opensearch-project/dashboards-search-relevance/pull/729) | Add UBI sample dataset and dashboards | [#730](https://github.com/opensearch-project/dashboards-search-relevance/issues/730) |
@@ -250,6 +271,8 @@ The plugin includes test data based on Amazon's ESCI (Shopping Queries Dataset):
 | v3.3.0 | [#230](https://github.com/opensearch-project/search-relevance/pull/230) | Fix ImportJudgmentsProcessor to handle numeric ratings | [#229](https://github.com/opensearch-project/search-relevance/issues/229) |
 
 ### Issues (Design / RFC)
+- [Issue #386](https://github.com/opensearch-project/search-relevance/issues/386): Thread pool starvation deadlock with large query sets
+- [Issue #388](https://github.com/opensearch-project/search-relevance/issues/388): Extend set of search quality metrics
 - [Issue #12](https://github.com/opensearch-project/search-relevance/issues/12): LLM Judgment improvements
 - [Issue #14](https://github.com/opensearch-project/search-relevance/issues/14): Search request builder fix
 - [Issue #55](https://github.com/opensearch-project/search-relevance/issues/55): Lazy index creation
