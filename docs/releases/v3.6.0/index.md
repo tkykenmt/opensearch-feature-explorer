@@ -3,6 +3,7 @@
 ## opensearch
 
 - Bitmap64 Query Support
+- ProfileScorer Improvements
 - Bulk Write Optimization
 - Cross-Cluster Search (CCS)
 - Dynamic Settings Authorization

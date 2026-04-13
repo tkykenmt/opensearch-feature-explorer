@@ -109,6 +109,7 @@ Cumulative feature documentation across all versions.
 - Painless Script Hashing Methods
 - Platform Support
 - Point in Time (PIT) API
+- ProfileScorer Improvements
 - Processor Allowlist
 - Search Backpressure
 - Search Observability
