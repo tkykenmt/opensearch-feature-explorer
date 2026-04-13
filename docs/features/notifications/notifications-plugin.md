@@ -69,6 +69,11 @@ graph TB
 | `opensearch.notifications.core.http.max_connections` | Max HTTP connections | 60 |
 | `opensearch.notifications.core.http.connection_timeout` | Connection timeout (ms) | 5000 |
 | `opensearch.notifications.core.http.socket_timeout` | Socket timeout (ms) | 50000 |
+| `plugins.notifications.multi_tenancy_enabled` | Enable tenant-aware mode for remote metadata SDK client | false |
+| `plugins.notifications.remote_metadata_type` | Remote metadata store type | — |
+| `plugins.notifications.remote_metadata_endpoint` | Remote metadata endpoint | — |
+| `plugins.notifications.remote_metadata_region` | Remote metadata region | — |
+| `plugins.notifications.remote_metadata_service_name` | Remote metadata service name | — |
 
 ### Usage Example
 
@@ -99,6 +104,7 @@ POST _plugins/_notifications/configs
 
 ## Change History
 
+- **v3.6.0** (2026-04-13): Added `plugins.notifications.multi_tenancy_enabled` setting for configurable tenant-aware mode; migrated remote metadata settings from `plugins.alerting.*` to `plugins.notifications.*` namespace; fixed Bouncy Castle jar hell, Jackson version conflicts, shadow plugin deprecated API, and Maven local publishing issues; upgraded Dashboards plugin to React 18
 - **v3.5.0** (2026-02-11): Maintainer update - added Dennis Toepker (toepkerd) to MAINTAINERS.md and CODEOWNERS
 - **v3.3.0** (2026-01-11): Build infrastructure fixes - Gradle 9 compatibility for environment variable syntax, SLF4J version conflict resolution for Maven snapshot publication
 - **v3.2.0** (2026-01-11): Infrastructure updates - Gradle 8.14, JaCoCo 0.8.13, nebula.ospackage 12.0.0, JDK 24 CI support
@@ -115,6 +121,13 @@ POST _plugins/_notifications/configs
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1148](https://github.com/opensearch-project/notifications/pull/1148) | Add multi_tenancy_enabled setting and update settings prefix | [#1147](https://github.com/opensearch-project/notifications/issues/1147) |
+| v3.6.0 | [#1141](https://github.com/opensearch-project/notifications/pull/1141) | Exclude transitive Bouncy Castle dependencies | [#1139](https://github.com/opensearch-project/notifications/issues/1139) |
+| v3.6.0 | [#1151](https://github.com/opensearch-project/notifications/pull/1151) | Fix build failure due to Jackson version conflict | [#1150](https://github.com/opensearch-project/notifications/issues/1150) |
+| v3.6.0 | [#1138](https://github.com/opensearch-project/notifications/pull/1138) | Update shadow plugin usage to replace deprecated API |   |
+| v3.6.0 | [#1063](https://github.com/opensearch-project/notifications/pull/1063) | Allow publishing plugin zip to Maven local | [#1067](https://github.com/opensearch-project/notifications/issues/1067) |
+| v3.6.0 | [#1152](https://github.com/opensearch-project/notifications/pull/1152) | Define mavenLocal ordering properly for both jars and zips | [#1149](https://github.com/opensearch-project/notifications/issues/1149) |
+| v3.6.0 | [#419](https://github.com/opensearch-project/notifications/pull/419) | Upgrade to React 18 and fix unit tests |   |
 | v3.5.0 | [#1076](https://github.com/opensearch-project/notifications/pull/1076) | Adding toepkerd to MAINTAINERS.md | [.github#395](https://github.com/opensearch-project/.github/issues/395) |
 | v3.3.0 | [#1074](https://github.com/opensearch-project/notifications/pull/1074) | Fix issue publishing maven snapshots by forcing slf4j version |   |
 | v3.3.0 | [#1069](https://github.com/opensearch-project/notifications/pull/1069) | Fix: Update System.env syntax for Gradle 9 compatibility |   |

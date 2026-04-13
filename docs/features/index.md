@@ -38,6 +38,10 @@ Cumulative feature documentation across all versions.
 - Neural Search Enhancements
 - Neural Search Nested Field Mapping
 
+## notifications
+
+- Notifications Plugin
+
 ## observability
 
 - Observability Cypress Updates
