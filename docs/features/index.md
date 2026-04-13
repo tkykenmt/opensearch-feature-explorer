@@ -119,6 +119,7 @@ Cumulative feature documentation across all versions.
 - Segment Replication
 - Snapshot Repository
 - Star Tree Index
+- Storage & I/O Optimization
 - Synonym Analyzer Configuration
 - Telemetry & Observability Metrics
 - Workload Management

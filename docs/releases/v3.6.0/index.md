@@ -16,6 +16,7 @@
 - Search Observability
 - Segment Replication
 - Star Tree Index
+- Storage & I/O Optimization
 - Streaming Search
 - Telemetry & Observability Metrics
 - Workload Management (WLM)
