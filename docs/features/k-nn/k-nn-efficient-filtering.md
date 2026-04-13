@@ -116,6 +116,151 @@ The Lucene engine does not use `KNNWeight.isFilteredExactSearchPreferred()` or `
 - **High-dimensional vectors**: MDC comparison uses `P × dimension`, so higher dimensions make exact search less likely when FT is not set
 - **Phase 2 only disabled by `disable_exact_search`**: The v3.5.0 setting only suppresses the post-ANN fallback. Phase 1 exact search (P <= k, FT threshold, MDC threshold) still applies regardless
 
+### MDC Threshold Examples
+
+`MAX_DISTANCE_COMPUTATIONS` (MDC) = 2,048,000 is hardcoded. Phase 1 uses `P × dimension` as the estimated distance computation cost. The following table shows the maximum P (filter cardinality per segment) that triggers exact search for common dimensions:
+
+| Dimension | Max P for Exact Search | Typical Use Case |
+|-----------|----------------------|------------------|
+| 128 | 16,000 | Lightweight embeddings |
+| 384 | 5,333 | MiniLM, small sentence transformers |
+| 768 | 2,666 | BERT-base, most sentence transformers |
+| 1024 | 2,000 | Large language model embeddings |
+| 1536 | 1,333 | OpenAI text-embedding-ada-002 |
+
+When FT (`filtered_exact_search_threshold`) is explicitly set, it overrides this MDC-based calculation and compares directly against P.
+
+### Scenario-Based Analysis
+
+The following scenarios illustrate how the filtering decision logic behaves under different conditions. All scenarios assume Faiss HNSW engine with default settings unless noted.
+
+#### Scenario 1: Highly Restrictive Filter — Phase 1 Exact Search
+
+```
+Index: 1M docs, 1 shard, 1 segment (force_merge), dimension=768
+Filter: category = "rare_item" → P = 500
+Query: k = 10
+```
+
+Decision flow:
+1. P (500) <= k (10)? → No
+2. FT set? → No (default -1)
+3. MDC (2,048,000) >= P × dim (500 × 768 = 384,000)? → Yes → **Exact Search**
+
+Result: Phase 1 triggers exact search. 500 distance computations — completes in sub-millisecond. This is the ideal case: small P, fast exact search, perfect recall.
+
+#### Scenario 2: Moderate Filter on Large Segment — ANN Search
+
+```
+Index: 10M docs, 1 shard, 1 segment (force_merge), dimension=768
+Filter: status = "active" → P = 5M (50%)
+Query: k = 10
+```
+
+Decision flow:
+1. P (5M) <= k (10)? → No
+2. FT set? → No
+3. MDC (2,048,000) >= P × dim (5M × 768 = 3.84B)? → No → **ANN Search**
+
+ANN search runs with filter IDs passed to HNSW traversal. With 50% filter match rate, most graph neighbors pass the filter, so ANN easily finds k=10 results. No Phase 2 fallback.
+
+#### Scenario 3: Phase 2 Fallback — The Latency Spike Case
+
+```
+Index: 5M docs, 1 shard, 1 segment (force_merge), dimension=768
+Filter: tag = "niche_topic" → P = 100,000 (2%)
+Query: k = 10, ef_search = 100
+```
+
+Decision flow:
+1. P (100K) <= k (10)? → No
+2. FT set? → No
+3. MDC (2,048,000) >= P × dim (100K × 768 = 76.8M)? → No → **ANN Search**
+
+ANN search runs, but with only 2% filter match rate, HNSW traversal visits 100 nodes (ef_search=100) and on average only ~2 match the filter. Result: R = 7 (< k = 10).
+
+Phase 2 check:
+- R (7) == 0 AND no native files? → No
+- Filter present AND P (100K) >= k (10) AND R (7) < k (10)? → **Yes → Exact Search fallback**
+
+Exact search scans all 100,000 matching documents × 768 dimensions. This is the worst case: ANN was attempted but wasted time, then a full exact scan runs on a large candidate set. Latency can reach seconds.
+
+Mitigation options:
+- Increase `ef_search` (e.g., 512) to improve ANN's chance of finding k results
+- Set `disable_exact_search: true` to accept R=7 results without fallback
+- Set `filtered_exact_search_threshold: 100000` to force Phase 1 exact search (avoids wasted ANN attempt)
+
+#### Scenario 4: Multi-Shard with Mixed Behavior
+
+```
+Index: 10M docs, 10 shards, ~3 segments per shard, dimension=768
+Filter: region = "jp" → ~5% match rate
+Query: k = 10
+```
+
+Each segment has ~333K docs, with ~16,650 filter matches (P ≈ 16,650).
+
+Per-segment decision:
+1. P (16,650) <= k (10)? → No
+2. FT set? → No
+3. MDC (2,048,000) >= P × dim (16,650 × 768 = 12.8M)? → No → **ANN Search**
+
+ANN runs on each segment. With 5% match rate and ef_search=100, some segments may return R < 10 (Phase 2 fallback), while others return R >= 10 (no fallback). The overall query latency is determined by the slowest segment.
+
+If 3 out of 30 segments trigger Phase 2 fallback with P ≈ 16,650 each, those segments add ~tens of milliseconds each. Total impact is moderate because per-segment P is small.
+
+Compare with force_merge (1 segment per shard): P ≈ 50,000 per segment. Phase 2 fallback on a single segment would scan 50K docs — more expensive per fallback but fewer segments to process.
+
+#### Scenario 5: disable_exact_search Tradeoff
+
+```
+Same as Scenario 3, but with:
+  index.knn.faiss.efficient_filter.disable_exact_search: true
+```
+
+Phase 1: Same as Scenario 3 → ANN Search.
+ANN returns R = 7.
+
+Phase 2 check:
+- P (100K) >= k (10) AND R (7) < k (10)? → Yes, but `disable_exact_search = true` → **No fallback**
+
+Result: Returns 7 results instead of 10. Latency is stable (ANN only). Recall is imperfect but acceptable for many use cases (semantic search, recommendations).
+
+Note: Phase 1 decisions are unaffected. If P were <= k (e.g., P = 8), exact search would still run regardless of this setting.
+
+#### Scenario 6: New Segment Without Graph — Phase 2 Safety Net
+
+```
+Index: actively ingesting, new segment just flushed
+New segment: 5,000 docs, no HNSW graph built yet (native engine files missing)
+Filter: none
+Query: k = 10
+```
+
+Phase 1: No filter → skipped entirely.
+ANN search: No native engine files → returns R = 0.
+
+Phase 2 check:
+- R (0) == 0 AND no native engine files? → **Yes → Exact Search fallback**
+
+This is a safety mechanism ensuring queries still return results from segments that haven't built their graph index yet (e.g., during active ingestion before merge/flush completes the graph build).
+
+### Exact Search Cost Model
+
+When exact search is triggered (either Phase 1 or Phase 2), `ExactSearcher.searchLeaf()` executes:
+
+- If P <= k: `scoreAllDocs()` — scores every matched document, returns all results sorted by score. No heap overhead.
+- If P > k: `searchTopK()` — uses a min-heap of size k. Each of the P documents is scored and compared against the heap minimum. Batched via `VectorScorer.bulk()`.
+
+In both cases, the dominant cost is **P × distance_computation**. The distance computation cost depends on the vector data type and dimension:
+
+| Vector Type | Cost per Distance Computation | Notes |
+|-------------|------------------------------|-------|
+| float32 | O(dimension) FP multiply-add | SIMD-accelerated (AVX2/AVX512/NEON) |
+| byte (int8) | O(dimension) integer ops | Lower cost per operation |
+| binary | O(dimension/8) bitwise ops | Significantly cheaper |
+| Quantized (ADC) | O(dimension) with lookup table | Pre-computed sub-quantizer distances |
+
 ## Limitations
 
 - MDC (`MAX_DISTANCE_COMPUTATIONS`) is a hardcoded constant and cannot be tuned by users
