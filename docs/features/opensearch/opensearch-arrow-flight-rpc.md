@@ -217,12 +217,13 @@ public class MyStreamProducer implements StreamProducer<VectorSchemaRoot, Buffer
 - **Plugin Dependencies**: Requires `transport-reactor-netty4` plugin to be installed
 - **JVM Requirements**: Specific JVM options required for Arrow memory management
 - **Security Integration**: Requires security plugin changes for SSL context building
-- **Certificate Hot Reload**: Not yet supported for Flight SSL certificates
+- **Certificate Hot Reload**: Supported since v3.6.0 via `SecureTransportSettingsProvider.buildSecureTransportContext()` which returns the live in-memory `SSLContext`
 - **Performance Tuning**: Default configurations need tuning based on workload benchmarks
 - **Partitioned Streams**: Support for partitioned streams is planned but not yet implemented
 
 ## Change History
 
+- **v3.6.0** (2026-04): Fixed TLS certificate hot-reload; replaced `ReloadableSslContext` with `LiveSslContext` backed by live in-memory `SSLContext` from `SecureTransportSettingsProvider.buildSecureTransportContext()`; added `AlpnAwareSSLEngineWrapper` for ALPN negotiation and hostname verification handling
 - **v3.0.0** (2025-02-20): Initial implementation with Flight server bootstrap logic and client for internode communication
 
 
@@ -238,6 +239,8 @@ public class MyStreamProducer implements StreamProducer<VectorSchemaRoot, Buffer
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20734](https://github.com/opensearch-project/OpenSearch/pull/20734) | Fix stream transport TLS certificate hot-reload by using live SSLContext | - |
+| v3.6.0 | [security#5971](https://github.com/opensearch-project/security/pull/5971) | Add buildSecureTransportContext() to security plugin | - |
 | v3.0.0 | [#16962](https://github.com/opensearch-project/OpenSearch/pull/16962) | Arrow Flight RPC plugin with Flight server bootstrap logic and client for internode communication | [#16963](https://github.com/opensearch-project/OpenSearch/issues/16963) |
 | v3.0.0 | [#16691](https://github.com/opensearch-project/OpenSearch/pull/16691) | Library changes containing POJOs and Arrow vector APIs | [#16679](https://github.com/opensearch-project/OpenSearch/issues/16679) |
 

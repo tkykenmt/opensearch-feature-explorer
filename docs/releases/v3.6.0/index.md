@@ -9,6 +9,7 @@
 - Pull-based Ingestion
 - Search Observability
 - Segment Replication
+- Streaming Search
 - Telemetry & Observability Metrics
 - Workload Management (WLM)
 

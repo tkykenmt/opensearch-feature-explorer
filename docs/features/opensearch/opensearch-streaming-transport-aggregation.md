@@ -179,6 +179,7 @@ SearchResponse response = builder.execute().actionGet();
 
 ## Change History
 
+- **v3.6.0** (2026-04): Added `streamingRequest` flag to `SearchRequestContext` for plugin observability (e.g., Query Insights can emit streaming dimension)
 - **v3.3.0** (2025-10): Added numeric terms aggregator, cardinality aggregator, query planning for flush mode, dynamic cluster setting, request cache handling
 - **v3.2.0** (2025-08): Initial implementation with stream transport framework and streaming terms aggregation with max sub-aggregation support
 
@@ -191,6 +192,7 @@ SearchResponse response = builder.execute().actionGet();
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20530](https://github.com/opensearch-project/OpenSearch/pull/20530) | Add stream request flag to SearchRequestContext for plugin consumption | - |
 | v3.3.0 | [#19335](https://github.com/opensearch-project/OpenSearch/pull/19335) | Add `StreamNumericTermsAggregator` for numeric term aggregation streaming |   |
 | v3.3.0 | [#19484](https://github.com/opensearch-project/OpenSearch/pull/19484) | Add streaming cardinality aggregator with ordinals collector | [#19515](https://github.com/opensearch-project/OpenSearch/issues/19515) |
 | v3.3.0 | [#19488](https://github.com/opensearch-project/OpenSearch/pull/19488) | Query planning to determine flush mode for streaming aggregations |   |
