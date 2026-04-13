@@ -124,6 +124,7 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 
 ## Change History
 
+- **v3.6.0** (2026-04): Bug fixes for security context propagation (PR #6006), audit log rollover-enabled alias indices (PR #5900), unprocessed X-Request-Id header (PR #5954), audit log NONE sentinel value in dynamic configuration (PR #6021), DLS undefined user attribute error messages (PR #5975); CVE fixes for CVE-2025-13465, CVE-2025-15284, CVE-2026-2739
 - **v3.4.0** (2026-01): Added webhook Basic Auth support, fixed REST header propagation, deprecated system_indices.indices setting, allowed static/custom config overlap, updated search relevance permissions; Bug fixes for multi-tenancy `.kibana` index updates, WildcardMatcher empty string handling, array validator blank string checks, audit log sensitive parameter filtering, deprecated SSL settings, BCFIPS provider bootstrap timing, AccessController migration, PrivilegesEvaluator modularization
 - **v3.3.0** (2026-01): Bug fixes for system index access when protection disabled, JWT log spam with empty roles_key
 - **v3.1.0** (2025-06-10): Bug fixes for stale cache post snapshot restore, compliance audit log diff computation, DLS/FLS filter reader corrections, authentication header logging improvements
@@ -141,6 +142,11 @@ PUT _plugins/_security/api/roles/search_relevance_reader
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#6006](https://github.com/opensearch-project/security/pull/6006) | Fix security context propagation | [#5990](https://github.com/opensearch-project/security/issues/5990) |
+| v3.6.0 | [#5900](https://github.com/opensearch-project/security/pull/5900) | Fix audit log rollover-enabled alias indices | [#5878](https://github.com/opensearch-project/security/issues/5878) |
+| v3.6.0 | [#5954](https://github.com/opensearch-project/security/pull/5954) | Fix unprocessed X-Request-Id header | [#5951](https://github.com/opensearch-project/security/issues/5951) |
+| v3.6.0 | [#6021](https://github.com/opensearch-project/security/pull/6021) | Fix audit log NONE sentinel and unknown setting error | [#2673](https://github.com/opensearch-project/security/issues/2673) |
+| v3.6.0 | [#5975](https://github.com/opensearch-project/security/pull/5975) | Improve DLS undefined user attribute error messages | [#1310](https://github.com/opensearch-project/security/issues/1310) |
 | v3.4.0 | [#5792](https://github.com/opensearch-project/security/pull/5792) | Add Basic Authentication support for webhook audit log sink | [#5738](https://github.com/opensearch-project/security/issues/5738) |
 | v3.4.0 | [#5396](https://github.com/opensearch-project/security/pull/5396) | Ensure REST headers from ActionPlugin.getRestHeaders are carried to ThreadContext | [#4799](https://github.com/opensearch-project/security/issues/4799) |
 | v3.4.0 | [#5775](https://github.com/opensearch-project/security/pull/5775) | Deprecate plugins.security.system_indices.indices setting | [#5565](https://github.com/opensearch-project/security/issues/5565) |

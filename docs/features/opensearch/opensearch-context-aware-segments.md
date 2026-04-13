@@ -95,8 +95,8 @@ flowchart TB
 | `DocumentIndexWriter` | Interface abstracting IndexWriter operations for both standard and composite writers |
 | `LuceneIndexWriter` | Standard IndexWriter wrapper for non-context-aware indices |
 | `CriteriaBasedMergePolicy` | Merge policy ensuring segments from the same group are merged together |
-| `CriteriaBasedCodec` | Codec attaching bucket attributes to segments for group identification |
-| `CriteriaBasedDocValueFormat` | DocValue format attaching bucket attributes to field info |
+| `CriteriaBasedCodec` | Codec attaching bucket attributes to segments for group identification; delegates to the underlying codec name since v3.6.0 |
+| `CriteriaBasedPostingsFormat` | PostingsFormat attaching bucket attributes via the `_id` field's postings, replacing `CriteriaBasedDocValueFormat` since v3.6.0 |
 | `BucketedCompositeDirectory` | Directory wrapper filtering out child-level directories |
 | `LookupMapLockAcquisitionException` | Exception thrown when unable to acquire lock on lookup map |
 
@@ -249,7 +249,7 @@ POST /logs-index/_doc
 ## Limitations
 
 - **Experimental**: Feature is behind a feature flag and not recommended for production
-- **Grouping Field Updates**: Updates to document fields that determine grouping criteria are not supported
+- **Grouping Field Updates**: Updates to document fields that determine grouping criteria are blocked with `UnsupportedOperationException` (enforced since v3.6.0)
 - **Search Idle Disabled**: Automatically disabled for context-aware indices to ensure periodic sync
 - **Blocking Refresh**: Always uses blocking refresh when context aware is enabled
 - **Index Setting Final**: `index.context_aware.enabled` cannot be changed after index creation
@@ -257,6 +257,8 @@ POST /logs-index/_doc
 
 ## Change History
 
+- **v3.6.0** (2026-04-08): Prevented grouping criteria field updates to simplify version management; removed per-document `KeyedLock`
+- **v3.6.0** (2026-04-08): Refactored `CriteriaBasedCodec` to delegate to underlying codec; replaced `CriteriaBasedDocValueFormat` with `CriteriaBasedPostingsFormat`; extended `CriteriaBasedMergePolicy` to cover all merge types
 - **v3.4.0** (2025-11-07): Added `context_aware_grouping` mapper for defining grouping criteria with Painless script support
 - **v3.4.0** (2025-11-07): Initial implementation with CompositeIndexWriter, CriteriaBasedMergePolicy, and experimental feature flag
 
@@ -266,6 +268,8 @@ POST /logs-index/_doc
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20250](https://github.com/opensearch-project/OpenSearch/pull/20250) | Prevent criteria field updates for context-aware indices | - |
+| v3.6.0 | [#20442](https://github.com/opensearch-project/OpenSearch/pull/20442) | Fix CriteriaBasedCodec to work with delegate codec | - |
 | v3.4.0 | [#19233](https://github.com/opensearch-project/OpenSearch/pull/19233) | Add a mapper for context aware segments grouping criteria | [#19223](https://github.com/opensearch-project/OpenSearch/issues/19223) |
 | v3.4.0 | [#19098](https://github.com/opensearch-project/OpenSearch/pull/19098) | Add support for context aware segments | [#19530](https://github.com/opensearch-project/OpenSearch/issues/19530) |
 

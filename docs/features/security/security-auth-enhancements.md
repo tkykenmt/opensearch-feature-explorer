@@ -148,6 +148,7 @@ opensearch_security.proxycache:
 
 ## Change History
 
+- **v3.6.0** (2026-04): Added Basic Authentication support for gRPC auxiliary transport (PR #6005); Made `encryption_key` optional for on-behalf-of (OBO) token authenticator, giving administrators flexibility over claim confidentiality (PR #6017)
 - **v2.17.0** (2024-10-22): Initial implementation
   - Added multiple JWT signing keys support for zero-downtime key rotation
   - Added `ignore_hosts` configuration for IP-based rate limiting
@@ -165,6 +166,8 @@ opensearch_security.proxycache:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#6005](https://github.com/opensearch-project/security/pull/6005) | Enable Basic Authentication for gRPC transport |  |
+| v3.6.0 | [#6017](https://github.com/opensearch-project/security/pull/6017) | Make encryption_key optional for OBO token authenticator |  |
 | v2.17.0 | [#4632](https://github.com/opensearch-project/security/pull/4632) | Allow multiple signing keys to be provided | [#4613](https://github.com/opensearch-project/security/issues/4613) |
 | v2.17.0 | [#4666](https://github.com/opensearch-project/security/pull/4666) | Backport multiple signing keys to 2.x |   |
 | v2.17.0 | [#4538](https://github.com/opensearch-project/security/pull/4538) | Add `ignore_hosts` config option for auth failure listener | [#4262](https://github.com/opensearch-project/security/issues/4262) |

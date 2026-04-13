@@ -206,6 +206,7 @@ POST /logs/_search
 
 ## Change History
 
+- **v3.6.0**: Added intra-segment search support for all single-value metric aggregation factories (sum, min, max, avg, stats, cardinality, value_count), enabling parallel processing within large segments when concurrent segment search is enabled
 - **v3.3.1** (2026-02-11): Fixed ClassCastException when running star-tree aggregation queries with `profile=true`; sub-aggregators wrapped in ProfilingAggregator are now properly unwrapped before casting to StarTreePreComputeCollector
 - **v3.3.0** (2025-10-28): Added multi-terms aggregation support (up to 40x performance improvement), search query failure statistics (query_failed, startree_query_failed)
 - **v3.2.0** (2025-09-16): Added DLS/FLS/Field Masking security integration (disables star-tree for restricted users), IP field search support, star-tree search statistics (query count, time, current)
@@ -227,6 +228,7 @@ POST /logs/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20503](https://github.com/opensearch-project/OpenSearch/pull/20503) | Intra-segment support for single-value metric aggregations | [#19694](https://github.com/opensearch-project/OpenSearch/issues/19694) |
 | v3.3.1 | [#19652](https://github.com/opensearch-project/OpenSearch/pull/19652) | Fix sub-aggregator casting for search with profile=true | [#19649](https://github.com/opensearch-project/OpenSearch/issues/19649) |
 | v3.3.0 | [#19284](https://github.com/opensearch-project/OpenSearch/pull/19284) | Support for multi-terms aggregations | [#18398](https://github.com/opensearch-project/OpenSearch/issues/18398) |
 | v3.3.0 | [#19209](https://github.com/opensearch-project/OpenSearch/pull/19209) | Add search & star-tree search query failure count metrics | [#19210](https://github.com/opensearch-project/OpenSearch/issues/19210) |

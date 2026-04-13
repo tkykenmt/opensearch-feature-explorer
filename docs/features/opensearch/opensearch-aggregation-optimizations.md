@@ -106,6 +106,7 @@ flowchart TB
 | `search.bucket_selection_strategy_factor` | Threshold factor for quickselect vs priority queue | 5 |
 | `search.aggregations.cardinality.hybrid_collector.enabled` | Enable hybrid cardinality collector | `true` |
 | `search.aggregations.cardinality.hybrid_collector.memory_threshold` | Memory threshold for switching collectors | Dynamic |
+| `search.aggregations.terms.max_precompute_cardinality` | Maximum segment cardinality for term frequency precomputation in terms aggregation | `30000` |
 
 ### Optimization Strategies
 
@@ -280,6 +281,7 @@ GET /taxi/_search
 
 ## Change History
 
+- **v3.6.0** (2026-04): Fixed terms aggregation performance regression on high-cardinality fields; added `search.aggregations.terms.max_precompute_cardinality` setting and replaced leap-frogging algorithm with segment-to-global ordinal mapping
 - **v3.4.0** (2026-01): Added hybrid cardinality collector, filter rewrite + skip list for sub-aggregations, MergingDigest for percentiles, primitive arrays for matrix_stats, skip list for auto_date_histogram
 - **v3.3.0** (2026-01): Added precomputation for rare terms, quickselect for string terms, object reuse for date histogram
 - **v3.0.0** (2025-02): Added `execution_hint` parameter for cardinality aggregation, multi-term aggregation latency/memory improvements, numeric term aggregation sorting optimization
@@ -299,6 +301,8 @@ GET /taxi/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20623](https://github.com/opensearch-project/OpenSearch/pull/20623) | Fix terms aggregation performance regression with max cardinality setting | |
+| v3.6.0 | [#20683](https://github.com/opensearch-project/OpenSearch/pull/20683) | Fix terms aggregation using segment-to-global ordinals mapping | [#20626](https://github.com/opensearch-project/OpenSearch/issues/20626) |
 | v3.4.0 | [#19524](https://github.com/opensearch-project/OpenSearch/pull/19524) | Hybrid Cardinality collector for high cardinality queries | [#19260](https://github.com/opensearch-project/OpenSearch/issues/19260) |
 | v3.4.0 | [#19573](https://github.com/opensearch-project/OpenSearch/pull/19573) | Filter rewrite + skip list for sub-aggregation optimization | [#17447](https://github.com/opensearch-project/OpenSearch/issues/17447) |
 | v3.4.0 | [#19648](https://github.com/opensearch-project/OpenSearch/pull/19648) | MergingDigest implementation for percentiles aggregation | [#18122](https://github.com/opensearch-project/OpenSearch/issues/18122) |
@@ -313,6 +317,7 @@ GET /taxi/_search
 | v2.16.0 | [#13865](https://github.com/opensearch-project/OpenSearch/pull/13865) | Apply the date histogram rewrite optimization to range aggregation | [#13531](https://github.com/opensearch-project/OpenSearch/issues/13531) |
 
 ### Issues (Design / RFC)
+- [Issue #20626](https://github.com/opensearch-project/OpenSearch/issues/20626): Performance regression in terms aggregation with match_all queries
 - [Issue #19260](https://github.com/opensearch-project/OpenSearch/issues/19260): Auto Select Ordinals cardinality collector for high cardinality queries
 - [Issue #18122](https://github.com/opensearch-project/OpenSearch/issues/18122): Speed up percentile aggregation by switching implementation
 - [Issue #19741](https://github.com/opensearch-project/OpenSearch/issues/19741): Remove maps from hot loop in matrix_stats agg for performance

@@ -136,6 +136,7 @@ POST /_plugins/_ml/mcp/tools/_register
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Broadened 4XX error handling from OpenSearchStatusException to OpenSearchException, covering IndexNotFoundException, ResourceNotFoundException, and other client-side errors in MemoryProcessingService, TransportAddMemoriesAction, TransportCreateSessionAction, and MLPredictTaskRunner; added session-disabled BAD_REQUEST check
 - **v3.2.0**: Initial implementation - proper 400 errors for agent execution and MCP tool registration
 
 
@@ -149,7 +150,9 @@ POST /_plugins/_ml/mcp/tools/_register
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#4725](https://github.com/opensearch-project/ml-commons/pull/4725) | Fix error handling to use OpenSearchException for broader 4XX coverage | [#4724](https://github.com/opensearch-project/ml-commons/issues/4724) |
 | v3.2.0 | [#3988](https://github.com/opensearch-project/ml-commons/pull/3988) | Throw proper 400 errors instead of 500 for agent execute and MCP | [#3987](https://github.com/opensearch-project/ml-commons/issues/3987) |
 
 ### Issues (Design / RFC)
+- [Issue #4724](https://github.com/opensearch-project/ml-commons/issues/4724): Broader 4XX error handling request
 - [Issue #3987](https://github.com/opensearch-project/ml-commons/issues/3987): Original feature request for improved error handling

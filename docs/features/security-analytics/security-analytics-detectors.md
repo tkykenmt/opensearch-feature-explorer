@@ -163,6 +163,7 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed DeleteDetector API failure when detector has no associated rules (empty monitor ID list); Updated security-analytics-commons JAR to address CVE-2025-67735, CVE-2026-33871, and CVE-2026-33870
 - **v2.19.0** (2025-02-18): Fixed duplicate alerts from aggregation Sigma rules; Fixed trigger condition filtering for aggregation rules; Optimized sigma aggregation rule detectors execution workflow; Added OCSF 1.1 field mappings; Fixed OCSF 1.1 field mapping order; Added input validation
 - **v2.17.0** (2024-09-17): Added triggers field to Get Detectors API response; Added secure REST tests for threat intel monitor APIs
 
@@ -203,6 +204,9 @@ GET /_plugins/_security_analytics/detectors/{detector_id}
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1648](https://github.com/opensearch-project/security-analytics/pull/1648) | Fix bug when deleting detector with 0 rules |   |
+| v3.6.0 | [#1653](https://github.com/opensearch-project/security-analytics/pull/1653) | Update security-analytics-commons jar (CVE-2025-67735) |   |
+| v3.6.0 | [#1685](https://github.com/opensearch-project/security-analytics/pull/1685) | Update security-analytics-commons jar (CVE-2026-33871, CVE-2026-33870) |   |
 | v2.19.0 | [#1424](https://github.com/opensearch-project/security-analytics/pull/1424) | Fix duplicate alerts from aggregation Sigma rules |   |
 | v2.19.0 | [#1423](https://github.com/opensearch-project/security-analytics/pull/1423) | Fix detector trigger conditions for aggregation rules |   |
 | v2.19.0 | [#1418](https://github.com/opensearch-project/security-analytics/pull/1418) | Optimize sigma aggregation rule detectors execution |   |

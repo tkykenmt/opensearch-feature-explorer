@@ -94,6 +94,7 @@ Backward-compatible configuration handling:
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): 10 infrastructure fixes including SdkAsyncHttpClient resource leak causing connection pool exhaustion, connection_timeout/read_timeout defaults corrected from 30000 to 30 (seconds), Tags.addTag() immutable return value fix, ValidatingObjectInputStream plugin classloader fallback, numeric type preservation in ML inference queries, stats collector early exit fix, broader 4XX error handling via OpenSearchException, and multiple CI/integration test stability improvements
 - **v3.4.0** (2026-01-14): 7 bug fixes including agent type update validation, QueryPlanningTool model ID parsing, tool config empty values handling, agentic memory multi-node fixes, error message escaping, and sensitive log removal
 - **v3.3.0** (2025-10-15): 29 bug fixes including Agent Framework parsing fixes, Agentic Memory validation and security improvements, multi-tenancy NPE fix, RAG response fix for search templates, metrics correlation fix, and various serialization/parsing fixes
 - **v3.1.0** (2025-07-15): Hidden model trusted connector bypass, SearchIndexTool MCP compatibility, commons-beanutils CVE fix
@@ -110,6 +111,16 @@ Backward-compatible configuration handling:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#4716](https://github.com/opensearch-project/ml-commons/pull/4716) | Fix SdkAsyncHttpClient resource leak in connector executors |   |
+| v3.6.0 | [#4759](https://github.com/opensearch-project/ml-commons/pull/4759) | Fix connection_timeout and read_timeout defaults from 30000 to 30 |   |
+| v3.6.0 | [#4712](https://github.com/opensearch-project/ml-commons/pull/4712) | Fix Tags.addTag() return value after immutable Tags change |   |
+| v3.6.0 | [#4692](https://github.com/opensearch-project/ml-commons/pull/4692) | Override ValidatingObjectInputStream.resolveClass() for plugin classloader fallback |   |
+| v3.6.0 | [#4656](https://github.com/opensearch-project/ml-commons/pull/4656) | Fix numeric type preservation in ML inference query template substitution |   |
+| v3.6.0 | [#4560](https://github.com/opensearch-project/ml-commons/pull/4560) | Fix early exit in stats collector job | [#4539](https://github.com/opensearch-project/ml-commons/issues/4539) |
+| v3.6.0 | [#4725](https://github.com/opensearch-project/ml-commons/pull/4725) | Fix error handling to use OpenSearchException for broader 4XX coverage | [#4724](https://github.com/opensearch-project/ml-commons/issues/4724) |
+| v3.6.0 | [#4665](https://github.com/opensearch-project/ml-commons/pull/4665) | Prevent SearchModelGroupITTests timeout and fix Bedrock connection pool exhaustion |   |
+| v3.6.0 | [#4767](https://github.com/opensearch-project/ml-commons/pull/4767) | Fix Cohere integration test timeouts |   |
+| v3.6.0 | [#4676](https://github.com/opensearch-project/ml-commons/pull/4676) | Add helper method for Nova clean request |   |
 | v3.4.0 | [#4341](https://github.com/opensearch-project/ml-commons/pull/4341) | Fix: Agent type update - make type immutable | [#4340](https://github.com/opensearch-project/ml-commons/issues/4340) |
 | v3.4.0 | [#4458](https://github.com/opensearch-project/ml-commons/pull/4458) | Fix: Model ID parsing for QueryPlanningTool in agentic search | [#4424](https://github.com/opensearch-project/ml-commons/issues/4424) |
 | v3.4.0 | [#4479](https://github.com/opensearch-project/ml-commons/pull/4479) | Fix: Handle edge case of empty values in tool configs | [#4477](https://github.com/opensearch-project/ml-commons/issues/4477) |

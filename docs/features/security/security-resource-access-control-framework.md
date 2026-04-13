@@ -344,6 +344,7 @@ The Security Dashboards Plugin provides a UI for managing resource sharing.
 
 ## Change History
 
+- **v3.6.0** (2026-04): Parent-child resource authorization via `parentType` and `parentIdField` in ResourceProvider (PR #5735); Default access level support in `resource-access-levels.yml` (PR #6018); Custom action prefixes for sample resource plugin (PR #6020); Hardened input validation with string length limits for resource sharing APIs (PR #5831); Renamed `resource-action-groups.yml` to `resource-access-levels.yml` (PR #1163)
 - **v3.4.0** (2026-01): Multiple resource types per index support, resource_type tracking on sharing documents, ResourceProvider refactored to interface, ResourceSharing Builder pattern, POST support for update sharing API, removed Java share/revoke APIs in favor of REST, migration API requires default_owner parameter
 - **v3.3.0** (2026-01): ML-Commons model group onboarding, Resource Access Management Dashboard UI, DLS-based automatic filtering with `all_shared_principals`, multi-tenancy support, dashboard APIs (`/resource/types`, `/resource/list`), bug fixes for case-sensitive search, PATCH visibility, resource updates, and multiple shares
 - **v3.2.0** (2025): Migration API, Resource Access Evaluator for automatic authorization, client accessor pattern fix
@@ -362,6 +363,11 @@ The Security Dashboards Plugin provides a UI for managing resource sharing.
 ### Pull Requests
 | Version | PR | Repository | Description | Related Issue |
 |---------|-----|------------|-------------|---------------|
+| v3.6.0 | [#5735](https://github.com/opensearch-project/security/pull/5735) | security | Parent-child resource authorization in ResourceProvider | [#4500](https://github.com/opensearch-project/security/issues/4500) |
+| v3.6.0 | [#6018](https://github.com/opensearch-project/security/pull/6018) | security | Default access level in resource-access-levels.yml |  |
+| v3.6.0 | [#6020](https://github.com/opensearch-project/security/pull/6020) | security | Custom action prefixes for sample resource plugin | [#4500](https://github.com/opensearch-project/security/issues/4500) |
+| v3.6.0 | [#5831](https://github.com/opensearch-project/security/pull/5831) | security | Harden input validation for resource sharing APIs |  |
+| v3.6.0 | [#1163](https://github.com/opensearch-project/security/pull/1163) | security | Rename resource-action-groups.yml to resource-access-levels.yml |  |
 | v3.4.0 | [#5713](https://github.com/opensearch-project/security/pull/5713) | security | Allow multiple sharable resource types in single resource index |   |
 | v3.4.0 | [#5772](https://github.com/opensearch-project/security/pull/5772) | security | Keep track of resource_type on resource sharing document |   |
 | v3.4.0 | [#5789](https://github.com/opensearch-project/security/pull/5789) | security | Requires default_owner for resource/migrate API |   |

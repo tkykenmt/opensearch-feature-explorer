@@ -159,6 +159,7 @@ flowchart TB
 
 ## Change History
 
+- **v3.6.0** (2026-03-25): Fixed filter by map extent being ignored for geo_shape fields; bounding box filter now supports both geo_point and geo_shape field types.
 - **v3.0.0** (2025-05-06): Added Cluster Layer with geohash/geotile/geohex aggregations, legend support, and multi-data source support. Fixed layer config panel styling and data label overlap issues.
 - **v2.19.0** (2025-02-18): Fixed WMS BBOX calculation bug by locking custom WMS CRS input to EPSG:3857 (the only CRS supported by MapLibre GL).
 - **v2.17.0** (2024-09-17): Deprecated multi-data source display in Maps UI (Trineo UX alignment). Migrated integration tests to opensearch-dashboards-functional-test repository.
@@ -190,6 +191,7 @@ flowchart TB
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | `https://github.com/opensearch-project/dashboards-maps/pull/798` | Fix filter by map extent ignored for geo_shape fields | `https://github.com/opensearch-project/dashboards-maps/issues/796` |
 | v3.0.0 | [#703](https://github.com/opensearch-project/dashboards-maps/pull/703) | Introduce cluster layer | [#250](https://github.com/opensearch-project/dashboards-maps/issues/250) |
 | v3.0.0 | [#704](https://github.com/opensearch-project/dashboards-maps/pull/704) | Fix layer config panel background |   |
 | v3.0.0 | [#718](https://github.com/opensearch-project/dashboards-maps/pull/718) | Fix data label overlap |   |

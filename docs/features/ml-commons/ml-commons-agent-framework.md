@@ -235,6 +235,7 @@ PUT /_plugins/_ml/agents/{agent_id}
 
 ## Change History
 
+- **v3.6.0** (2026-04): V2 Chat Agent (`conversational_v2`) with unified interface, single-step registration, multi-modal support (TEXT/CONTENT_BLOCKS/MESSAGES input), and standardized Strands-style output; token usage tracking for Conversational, AG_UI, and PER agents; post-memory hook with structured message support for context managers (SlidingWindowManager, SummarizationManager); messages array support in all memory types; context management overwrite at execute time; AG-UI context restoration for legacy interface agents; improved agent workflow logging; tool name/description escaping for quotation marks; multiple bug fixes (agent_id parameter conflict causing infinite loop, MCP connector setting for V2, context restoration missing user info, immutable map exception, RestChatAgentIT teardown, error codes for delete APIs)
 - **v3.3.2** (2026-02-12): MCP connector support in agent update API, execute tool API fix for immutable maps, filtered output in streaming, return_history fix, JSON chunk combining fix
 - **v3.3.0** (2026-01-14): Get Agent API in ML Client, agent metrics collection via OpenTelemetry (type, memory_type, is_hidden, _llm_interface, model info), interaction failure message updates, code refactoring for common package
 - **v3.2.0** (2025-09-16): Execute Tool API, AI-oriented memory container system (create, add, search, update, delete, get), QueryPlanningTool for agentic search, date/time injection for agents, message history limit for PER Agent, output filter support, SearchIndexTool improvements, feature flags for agentic search/memory, multiple bug fixes (class cast exception, connector URL exposure, async status, max iterations handling)
@@ -255,6 +256,19 @@ PUT /_plugins/_ml/agents/{agent_id}
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#4732](https://github.com/opensearch-project/ml-commons/pull/4732) | Introduce V2 Chat Agent | [#4552](https://github.com/opensearch-project/ml-commons/issues/4552) |
+| v3.6.0 | [#4683](https://github.com/opensearch-project/ml-commons/pull/4683) | Add token usage tracking for agents | [#4662](https://github.com/opensearch-project/ml-commons/issues/4662) |
+| v3.6.0 | [#4687](https://github.com/opensearch-project/ml-commons/pull/4687) | Add post-memory hook with structured message support | [#4583](https://github.com/opensearch-project/ml-commons/issues/4583) |
+| v3.6.0 | [#4645](https://github.com/opensearch-project/ml-commons/pull/4645) | Support messages array in all memory types | [#4552](https://github.com/opensearch-project/ml-commons/issues/4552) |
+| v3.6.0 | [#4681](https://github.com/opensearch-project/ml-commons/pull/4681) | Add detailed logging to Agent Workflow |   |
+| v3.6.0 | [#4637](https://github.com/opensearch-project/ml-commons/pull/4637) | Allow context management overwrite during execute |   |
+| v3.6.0 | [#4720](https://github.com/opensearch-project/ml-commons/pull/4720) | Restore AGUI context for legacy interface agent | [#4688](https://github.com/opensearch-project/ml-commons/issues/4688) |
+| v3.6.0 | [#4747](https://github.com/opensearch-project/ml-commons/pull/4747) | Escape tool name and description |   |
+| v3.6.0 | [#4762](https://github.com/opensearch-project/ml-commons/pull/4762) | Fix agent_id parameter conflict in AgentTool |   |
+| v3.6.0 | [#4739](https://github.com/opensearch-project/ml-commons/pull/4739) | Fix MCP connector setting for Agent V2 |   |
+| v3.6.0 | [#4730](https://github.com/opensearch-project/ml-commons/pull/4730) | Fix context restoration bug |   |
+| v3.6.0 | [#4733](https://github.com/opensearch-project/ml-commons/pull/4733) | Fix unsupported operation for immutable map |   |
+| v3.6.0 | [#4772](https://github.com/opensearch-project/ml-commons/pull/4772) | Fix RestChatAgentIT teardown failure |   |
 | v3.3.0 | [#4180](https://github.com/opensearch-project/ml-commons/pull/4180) | Add Get Agent to ML Client |   |
 | v3.3.0 | [#4221](https://github.com/opensearch-project/ml-commons/pull/4221) | Introduce agent metrics & Add is_hidden tag for model metrics |   |
 | v3.3.0 | [#4198](https://github.com/opensearch-project/ml-commons/pull/4198) | Update interaction with failure message on agent execution failure | [#4197](https://github.com/opensearch-project/ml-commons/issues/4197) |

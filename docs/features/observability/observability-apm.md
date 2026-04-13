@@ -116,9 +116,11 @@ APM configuration is stored as a saved object containing:
 - Service map visualization depends on CelestialMap library
 - Metrics accuracy depends on proper OpenTelemetry instrumentation
 - High-cardinality data may impact Prometheus performance
+- Throughput normalization depends on correctly configured Window Duration matching the Data Prepper `window_duration` setting (default 60s)
 
 ## Change History
 
+- **v3.6.0** (2026-04): Fixed APM metrics accuracy (server-side filtering, chart-total consistency, throughput as req/s), updated PromQL queries with time-range aggregation and custom step sizes, updated service map PPL queries for Data Prepper v2 index mappings, fixed UI pagination reset and chart rendering, fixed logs correlation dataSource for external datasources, replaced deprecated ad command with MLCommons RCF service, migrated to OSD core APM topology package, fixed span flyout race condition, added Prometheus instant query support, updated lodash for CVE-2026-4800
 - **v3.5.0** (2026-02): Initial implementation with Services Home, Application Map, Service Details, and Correlations Flyout
 
 ## References
@@ -131,6 +133,17 @@ APM configuration is stored as a saved object containing:
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.6.0 | [#2596](https://github.com/opensearch-project/dashboards-observability/pull/2596) | Update service map PPL queries for Data Prepper v2 mappings |
+| v3.6.0 | [#2601](https://github.com/opensearch-project/dashboards-observability/pull/2601) | Replace deprecated ad command with MLCommons RCF service |
+| v3.6.0 | [#2611](https://github.com/opensearch-project/dashboards-observability/pull/2611) | Use OSD core APM topology package |
+| v3.6.0 | [#2618](https://github.com/opensearch-project/dashboards-observability/pull/2618) | Fix UI pagination, settings modal, chart rendering |
+| v3.6.0 | [#2621](https://github.com/opensearch-project/dashboards-observability/pull/2621) | Update PromQL queries with time-range aggregation |
+| v3.6.0 | [#2623](https://github.com/opensearch-project/dashboards-observability/pull/2623) | Fix metrics accuracy: server-side filtering, throughput normalization |
+| v3.6.0 | [#2624](https://github.com/opensearch-project/dashboards-observability/pull/2624) | Fix metric card calculations |
+| v3.6.0 | [#2625](https://github.com/opensearch-project/dashboards-observability/pull/2625) | Fix logs correlation dataSource for external datasources |
+| v3.6.0 | [#2636](https://github.com/opensearch-project/dashboards-observability/pull/2636) | Update lodash to 4.18.1 (CVE-2026-4800) |
+| v3.6.0 | [#11554](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11554) | Support Prometheus instant query API |
+| v3.6.0 | [#11654](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11654) | Fix span flyout race condition |
 | v3.5.0 | [#2556](https://github.com/opensearch-project/dashboards-observability/pull/2556) | APM Configuration page and server components |
 | v3.5.0 | [#2557](https://github.com/opensearch-project/dashboards-observability/pull/2557) | APM config and context provider |
 | v3.5.0 | [#2558](https://github.com/opensearch-project/dashboards-observability/pull/2558) | Services landing page |

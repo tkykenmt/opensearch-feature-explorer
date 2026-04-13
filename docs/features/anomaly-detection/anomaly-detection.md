@@ -236,6 +236,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 
 ## Change History
 
+- **v3.6.0** (2026-04-08): **Terraform provisioning** - Added `scripts/terraform/` module for declarative detector management using the `opensearch-project/opensearch` Terraform provider, with idempotent job start/stop lifecycle via `local-exec` provisioners; test reliability improvements for checkpoint read worker timestamp alignment and historical analysis completion checks
 - **v3.4.0** (2026-02-18): **Enhancements** - Conditional resource sharing with automatic fallback to legacy access control when model-group is excluded from protected resources, new `AnomalyDetectionClient` methods (`validateAnomalyDetector()`, `suggestAnomalyDetector()`) for cross-plugin integration, new `auto_create` field for programmatic detector creation, `anomaly_read_access` role now includes suggest API permission
 - **v2.19.0** (2025-02-25): **Feature direction rules** - New threshold types `ACTUAL_IS_OVER_EXPECTED` and `ACTUAL_IS_BELOW_EXPECTED` for ignoring anomalies based on direction; **Flattened custom result index** - New `flatten_custom_result_index` option creates a separate index with flattened nested fields for easier querying; **Custom result index replica enhancement** - Auto-expand replica setting changed from `0-1` to `0-2` for improved durability; **Dashboards** - Suppression rules moved into feature creation workflow with UI for feature direction selection
 - **v2.16.0** (2024-08-06): **Feature filtering in model validation** - Integrated feature aggregation into sparsity validation and interval recommendation to prevent incorrect recommendations when features have their own filters; improved top entities retrieval logic to fetch latest time first then top entities (better handling of high window delay); fixed bucket coverage rate calculations by limiting queries to `config.getHistoryIntervals()`; **JDK 21 baseline** - Upgraded baseline JDK from 11/17 to 21 for both backend and dashboards plugins, aligning with OpenSearch 3.0.0 requirements; CI/CD workflows updated to use JDK 21 exclusively; **Code coverage** - Enhanced test coverage from 71.83% to 77.05%, upgraded codecov GitHub Action to v4
@@ -271,6 +272,7 @@ POST _plugins/_anomaly_detection/detectors/<detector_id>/_start
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1680](https://github.com/opensearch-project/anomaly-detection/pull/1680) | Terraform-based AD detector provisioning and lifecycle automation |   |
 | v3.4.0 | [#1569](https://github.com/opensearch-project/anomaly-detection/pull/1569) | Conditional resource sharing - auto-switch to legacy access control |   |
 | v3.4.0 | [#1605](https://github.com/opensearch-project/anomaly-detection/pull/1605) | Add validate and suggest transport actions to node client |   |
 | v3.4.0 | [#1602](https://github.com/opensearch-project/anomaly-detection/pull/1602) | Add auto_create field for programmatic detector creation |   |

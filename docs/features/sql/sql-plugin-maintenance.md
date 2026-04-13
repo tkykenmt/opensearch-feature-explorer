@@ -67,6 +67,7 @@ source=my_index | where field = 'value'
 
 ## Change History
 
+- **v3.6.0**: Maintainer roster updates — added @ahkcs and @songkant-aws as new maintainers, moved 8 inactive maintainers to Emeritus. Added CLAUDE.md AI coding guide. Version bump to 3.6.0-SNAPSHOT.
 - **v2.18.0** (2024-11-05): Bumped commons-io to 2.14.0 to fix CVE-2024-47554, fixed test failures on 2.18 branch
 
 
@@ -79,6 +80,11 @@ source=my_index | where field = 'value'
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#5260](https://github.com/opensearch-project/sql/pull/5260) | Move maintainers to Emeritus | |
+| v3.6.0 | [#5259](https://github.com/opensearch-project/sql/pull/5259) | Add CLAUDE.md | [#5242](https://github.com/opensearch-project/sql/issues/5242) |
+| v3.6.0 | [#5244](https://github.com/opensearch-project/sql/pull/5244) | Add songkant-aws as maintainer | |
+| v3.6.0 | [#5223](https://github.com/opensearch-project/sql/pull/5223) | Add ahkcs as maintainer | |
+| v3.6.0 | [#5115](https://github.com/opensearch-project/sql/pull/5115) | Increment version to 3.6.0-SNAPSHOT | |
 | v2.18.0 | [#3091](https://github.com/opensearch-project/sql/pull/3091) | Bump commons-io to 2.14.0 (backport) |   |
 | v2.18.0 | [#3113](https://github.com/opensearch-project/sql/pull/3113) | Fix tests on 2.18 branch |   |
 | v2.18.0 | [#3083](https://github.com/opensearch-project/sql/pull/3083) | Bump commons-io to 2.14.0 (main) | [#3055](https://github.com/opensearch-project/sql/issues/3055) |

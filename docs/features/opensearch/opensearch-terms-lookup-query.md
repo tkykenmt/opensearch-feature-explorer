@@ -135,6 +135,7 @@ GET /students/_search
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed terms lookup subquery to use cluster `max_clause_count` setting (`IndexSearcher.getMaxClauseCount()`) instead of reading a non-existent setting path with a hardcoded fallback of 1024
 - **v3.2.0** (2025-08-01): Added support for query clause in terms lookup, enabling multi-document value extraction
 
 
@@ -146,6 +147,7 @@ GET /students/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20823](https://github.com/opensearch-project/OpenSearch/pull/20823) | Fix terms lookup to use cluster `max_clause_count` setting | [#20820](https://github.com/opensearch-project/OpenSearch/issues/20820) |
 | v3.2.0 | [#18195](https://github.com/opensearch-project/OpenSearch/pull/18195) | Add query clause support for terms lookup | [#17599](https://github.com/opensearch-project/OpenSearch/issues/17599) |
 
 ### Issues (Design / RFC)

@@ -93,6 +93,7 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed empty severity column in findings table (3.x regression from visualization asset removal); Fixed empty alerts table due to state not being updated before filtering; Fixed detector creation failure propagation (errors now shown via toast); Fixed blank details page redirect after successful creation (now uses actual detector ID); Fixed silent failures in error handling utility
 - **v2.18.0** (2024-11-12): Comprehensive UX improvements including navigation menu restructuring for Analytics (All) use case, standardized UI spacing and typography (H3 titles, 16px padding), compressed search bars and filters, context-aware page titles, improved button placement with bulk delete and plus icons, tabs moved to top of Alerts/Findings pages, HOURS option for source refresh interval
 - **v2.18.0** (2024-11-12): Findings page stability fixes including crash prevention when custom rules are deleted and correct severity display for multi-rule findings; Data source handling bug fixes including picker remount optimization, error toast suppression, default data source selection, threat alerts card default, and getting started cards visual redesign
 - **v2.17.0** (2024-09-17): UI enhancements including data source label updates, threat alerts card for Analytics workspace, URL data source ID handling, and comprehensive fit-and-finish styling updates
@@ -112,6 +113,8 @@ The plugin integrates with OpenSearch Dashboards and requires the Security Analy
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1376](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1376) | Fix empty alerts table, detector creation failure propagation, blank details page, silent failures |   |
+| v3.6.0 | [#1392](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1392) | Fix empty severity column in findings table |   |
 | v2.18.0 | [#1169](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1169) | Update category to flatten menus in analytics(all) use case |   |
 | v2.18.0 | [#1174](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1174) | Fit and Finish UX Fixes |   |
 | v2.18.0 | [#1175](https://github.com/opensearch-project/security-analytics-dashboards-plugin/pull/1175) | Security analytics overview page improvements |   |

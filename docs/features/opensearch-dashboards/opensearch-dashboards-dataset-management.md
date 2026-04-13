@@ -210,6 +210,7 @@ datasetManagement.aliasedAsIndexPattern: false
 
 ## Change History
 
+- **v3.6.0**: Enabled Dataset Management plugin in analytics (all use case) workspaces. Nav link visibility updated to show in both observability and analytics workspaces. Removed `expand_wildcards: 'all'` from dataset index resolution queries to match index pattern wildcard behavior, preventing hidden indices from appearing in dataset listings.
 - **v3.4.0** (2026-01-11): Major enhancements including schema mapping, wildcard prefix support, multiple log datasets, enhanced table with metadata columns, and dynamic terminology conversion
 - **v3.3.0** (2026-01-11): Initial implementation with basic dataset type and management plugin
 
@@ -223,6 +224,8 @@ datasetManagement.aliasedAsIndexPattern: false
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#11444](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11444) | Enable dataset management plugin in analytics workspaces |  |
+| v3.6.0 | [#11571](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11571) | Update dataset query to match index pattern wildcard behavior |  |
 | v3.4.0 | [#10623](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10623) | Wildcard prefix support for index datasets | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.4.0 | [#10690](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10690) | Save dataset from configurator | [#1234](https://github.com/opensearch-project/OpenSearch-Dashboards/issues/1234) |
 | v3.4.0 | [#10703](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10703) | Logs tab with accordion UI |   |

@@ -96,6 +96,7 @@ Function<Boolean, String> taskSummaryGenerator = (longSummaryRequired) -> {
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed JSON escaping for `OpenSearchMessageField` values in `OpenSearchJsonLayout`, resolving invalid JSON in task details logs when metadata contains nested JSON content ([#20802](https://github.com/opensearch-project/OpenSearch/pull/20802))
 - **v2.16.0** (2024-07-22): Introduced short/long summary separation to reduce DEBUG logging overhead ([#14795](https://github.com/opensearch-project/OpenSearch/pull/14795))
 
 ## References
@@ -108,10 +109,12 @@ Function<Boolean, String> taskSummaryGenerator = (longSummaryRequired) -> {
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.6.0 | [#20802](https://github.com/opensearch-project/OpenSearch/pull/20802) | Fix JSON escaping in task details log metadata |
 | v2.16.0 | [#14795](https://github.com/opensearch-project/OpenSearch/pull/14795) | Reduce logging in DEBUG for MasterService:run |
 
 ### Related Issues
 
 | Issue | Description |
 |-------|-------------|
+| [#8528](https://github.com/opensearch-project/OpenSearch/issues/8528) | [BUG] Invalid JSON events - Task details JSON logs |
 | [#12249](https://github.com/opensearch-project/OpenSearch/issues/12249) | [BUG] Reduce TaskBatcher excessive logging in DEBUG mode |

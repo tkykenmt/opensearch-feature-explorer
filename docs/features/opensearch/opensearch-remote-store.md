@@ -82,6 +82,9 @@ flowchart TB
 | `node.attr.remote_store.translog.repository` | Repository name for translog storage | - |
 | `cluster.remote_store.pinned_timestamps.enabled` | Enable pinned timestamps feature | `false` |
 | `cluster.remote_state.download.serve_read_api.enabled` | Controls full cluster state download from remote on term mismatch | `true` |
+| `cluster.remote_store.state.cleanup.batch_size` | Number of manifests to process per cleanup batch | `1000` |
+| `cluster.remote_store.state.cleanup.max_batches` | Maximum number of batches per cleanup run | `3` |
+| `cluster.remote_store.uploaded_segments_cleanup_threshold` | Map size threshold to trigger stale segment cleanup; `-1` disables | `1000` |
 
 ### Usage Example
 
@@ -127,6 +130,7 @@ PUT /_cluster/settings
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed EncryptedBlobContainer ignoring limit in `listBlobsByPrefixInSortedOrder`, causing JVM exhaustion with large manifest counts; Fixed stale cluster metadata pile-ups by implementing batched manifest deletions with configurable `cluster.remote_store.state.cleanup.batch_size` and `cluster.remote_store.state.cleanup.max_batches` settings, corrected deletion order (manifests deleted last), and fixed `lastCleanupAttemptStateVersion` only updating on success; Fixed unbounded `segmentsUploadedToRemoteStore` map growth by adding threshold-based cleanup via `cluster.remote_store.uploaded_segments_cleanup_threshold` setting
 - **v3.1.0** (2026-01-10): Added close index request rejection during migration; Fixed cluster state diff download failures during alias operations
 - **v3.0.0** (2024-12-16): Added `cluster.remote_state.download.serve_read_api.enabled` setting to control full cluster state download on term mismatch
 - **v2.19.0** (2025-02-18): Fixed stale cluster state custom file deletion bug in `RemoteClusterStateCleanupManager`; Reverted minimum codec version upload logic for remote state manifest; Added OpenSearch version-aware deserialization for custom metadata to fix cluster upgrade failures
@@ -143,6 +147,9 @@ PUT /_cluster/settings
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20514](https://github.com/opensearch-project/OpenSearch/pull/20514) | Fix `listBlobsByPrefixInSortedOrder` in EncryptedBlobContainer to respect limit | [#20543](https://github.com/opensearch-project/OpenSearch/issues/20543) |
+| v3.6.0 | [#20566](https://github.com/opensearch-project/OpenSearch/pull/20566) | Batched deletions of stale ClusterMetadataManifests | [#20564](https://github.com/opensearch-project/OpenSearch/issues/20564) |
+| v3.6.0 | [#20976](https://github.com/opensearch-project/OpenSearch/pull/20976) | Stale segments cleanup based on map size threshold | [#20960](https://github.com/opensearch-project/OpenSearch/issues/20960) |
 | v3.1.0 | [#18327](https://github.com/opensearch-project/OpenSearch/pull/18327) | Disabling _close API invocation during remote migration | [#18328](https://github.com/opensearch-project/OpenSearch/issues/18328) |
 | v3.1.0 | [#18256](https://github.com/opensearch-project/OpenSearch/pull/18256) | Apply cluster state metadata and routing table diff when building cluster state from remote | [#18045](https://github.com/opensearch-project/OpenSearch/issues/18045) |
 | v3.0.0 | [#16798](https://github.com/opensearch-project/OpenSearch/pull/16798) | Setting to disable full cluster state download from remote on term mismatch | [#8957](https://github.com/opensearch-project/documentation-website/issues/8957) |
@@ -155,5 +162,8 @@ PUT /_cluster/settings
 | v2.16.0 | [#14888](https://github.com/opensearch-project/OpenSearch/pull/14888) | Create new IndexInput for multi part upload | [#14808](https://github.com/opensearch-project/OpenSearch/issues/14808) |
 
 ### Issues (Design / RFC)
+- [Issue #20543](https://github.com/opensearch-project/OpenSearch/issues/20543): EncryptedBlobContainer ignores limit for listing blobs in sorted order
+- [Issue #20564](https://github.com/opensearch-project/OpenSearch/issues/20564): Remote Cluster State cleanup failures due to deletion timeouts causing stale metadata pile-ups
+- [Issue #20960](https://github.com/opensearch-project/OpenSearch/issues/20960): Memory build up due to stale segment cleanup not triggering in Remote Store domains
 - [Issue #18328](https://github.com/opensearch-project/OpenSearch/issues/18328): Reject close index requests during DocRep to SegRep migration
 - [Issue #18045](https://github.com/opensearch-project/OpenSearch/issues/18045): Remote Cluster State Diff Download Failures during IndicesAliases Action

@@ -117,6 +117,7 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 
 ## Change History
 
+- **v3.6.0** (2026-04-13): Added shard operations collector (`RTFShardOperationCollector`) for per-shard indexing/search rate tracking; Added `ShardMetricsCollector` singleton for per-shard CPU and heap histograms; Added search and indexing latency histograms; Optimized `NodeStatsAllShardsMetricsCollector` and `RTFNodeStatsAllShardsMetricsCollector` with local maps and null safety; Fixed CVE-2025-68161 by force-resolving log4j dependencies; Disabled `dependencyLicenses` check to align with other plugin repos
 - **v3.5.0** (2026-02-11): PA Commons dependency bump 2.0.0 → 2.1.0 with JDK 21 compatibility; Fixed Jackson annotations version mismatch in build configuration
 - **v3.4.0** (2026-01-11): Build configuration update - restore Java 21 minimum compatibility, remove Java 24 from CI matrix, simplify build.gradle version selection
 - **v3.3.0** (2026-01-11): Transport channel wrapper improvements - delegate getProfileName(), getChannelType(), getVersion(), and get() to wrapped channel; removed getInnerChannel() method for better security plugin compatibility
@@ -140,6 +141,9 @@ GET localhost:9600/_plugins/_performanceanalyzer/rca?name=HighHeapUsageClusterRC
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#824](https://github.com/opensearch-project/performance-analyzer/pull/824) | Added shard operations collector and optimized node stats collector |   |
+| v3.6.0 | [#932](https://github.com/opensearch-project/performance-analyzer/pull/932) | Fix CVE-2025-68161: Force resolve log4j dependencies | CVE-2025-68161 |
+| v3.6.0 | [#926](https://github.com/opensearch-project/performance-analyzer/pull/926) | Disable dependencyLicenses check in PA repo |   |
 | v3.5.0 | [#910](https://github.com/opensearch-project/performance-analyzer/pull/910) | Bump PA Commons to v2.1.1 and fix Jackson annotations version |   |
 | v3.5.0 | [#911](https://github.com/opensearch-project/performance-analyzer/pull/911) | Fix PA Commons version to 2.1.0 |   |
 | v3.4.0 | [#902](https://github.com/opensearch-project/performance-analyzer/pull/902) | Restore java min compatible to 21 and remove 24 |   |

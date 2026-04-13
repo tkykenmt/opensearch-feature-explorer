@@ -1,0 +1,86 @@
+# OpenSearch v3.6.0
+
+- Release Summary
+
+## Feature Reports
+
+- Analysis & Text Processing
+- Arrow Flight Transport
+- Bitmap64 Query Support
+- Context-Aware Indices
+- ProfileScorer Improvements
+- Bulk Write Optimization
+- Cross-Cluster Search (CCS)
+- Dynamic Settings Authorization
+- Platform & Distribution
+- Pluggable Engine Architecture
+- Pull-based Ingestion
+- Remote Store Stability
+- Request Tracing
+- Search Observability
+- Search Query Fixes
+- Segment Replication
+- Star Tree Index
+- Storage & I/O Optimization
+- Streaming Search
+- Telemetry & Observability Metrics
+- Terms Aggregation Performance
+- Workload Management (WLM)
+- Logging & Diagnostics
+- Search Performance Fixes
+- Upgrade Compatibility
+- Dependency Upgrades (Core)
+- FIPS Compliance & Build Infrastructure
+- Security Vulnerability Fixes (Dependencies)
+- Alerting Enhancements
+- React 18 Migration
+- Automated Investigation (Dashboards)
+- Anomaly Detection
+- Search Relevance Workbench (SRW)
+- SQL/PPL Monitors
+- Agentic Search
+- ML Commons Agents & Memory
+- ML Commons Model Pooling
+- ML Commons Encryption
+- ML Commons Infrastructure
+- ML Commons CI & Test Infrastructure
+- Performance Analyzer
+- Query Insights
+- Query Insights Dashboard Security
+- Reporting Plugin
+- Search Evaluation (Experiments)
+- Security Enhancements
+- Security Plugin Dependency Bumps
+- Security Analytics Bug Fixes
+- Vector Search (k-NN) - 1-Bit Quantization
+- Vector Search (k-NN) - Engine Stability
+- Vector Search (k-NN) - Memory-Optimized Search
+- Vector Search (k-NN) - Pre-quantized Vectors
+- Vector Search (k-NN) - Merge & Indexing
+- Vector Search (k-NN) - Scoring & Search
+- Agent Skills/Tools
+- SQL/PPL Engine
+- SQL/PPL Engine Maintenance
+- Custom Codecs
+- Neural Search
+- Hybrid Query (Neural Search)
+- gRPC Support
+- Neural Search CI & Test Infrastructure
+- Notifications
+- GenAI Agent Tracing
+- Observability Dashboards
+- Cross-Cluster Replication
+- Dashboards Visualization Fixes
+- Geospatial Plugin
+- Index Management
+- Job Scheduler
+- Learning to Rank (LTR)
+- AI Assistant / Chatbot
+- APM & Observability
+- Content Security Policy (CSP)
+- Dashboard Visualization Editing
+- Dashboards CI & Test Infrastructure
+- Data Importer
+- Explore & Dataset Management
+- Explore Plugin
+- OpenSearch Dashboards Core

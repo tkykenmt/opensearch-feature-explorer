@@ -244,6 +244,7 @@ GET /my-nlp-index/_search
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v3.6.0 | 2026-04 | Bug fix: Removed invalid validation that blocked remote symmetric embedding models (e.g., ext-embedding-ada-002) from being used with the semantic field type |
 | v3.3.0 | 2025-12 | Bug fix: MultiFields now properly indexed for semantic fields with supported raw field types |
 | v3.2.0 | 2025-09 | knn_vector field configuration, ingest batch size setting, sparse encoding prune strategies, chunking strategies configuration, embedding reuse option, remote dense model handling fix, neural sparse analyzer version fix |
 | v3.1.0 | 2025-06 | Semantic mapping transformer, ingest processor, query logic, chunking support, search analyzer support, stats tracking |
@@ -263,6 +264,7 @@ GET /my-nlp-index/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1767](https://github.com/opensearch-project/neural-search/pull/1767) | Fix remote symmetric model support in text embedding input builder | [#1765](https://github.com/opensearch-project/neural-search/issues/1765) |
 | v3.3.0 | [#1572](https://github.com/opensearch-project/neural-search/pull/1572) | Fix not able to index the multiFields for the rawFieldType | [#1571](https://github.com/opensearch-project/neural-search/issues/1571) |
 | v3.2.0 | [#1420](https://github.com/opensearch-project/neural-search/pull/1420) | Support configuring the auto-generated knn_vector field through the semantic field | [#1356](https://github.com/opensearch-project/neural-search/issues/1356) |
 | v3.2.0 | [#1438](https://github.com/opensearch-project/neural-search/pull/1438) | Support configuring the ingest batch size for the semantic field | [#1349](https://github.com/opensearch-project/neural-search/issues/1349) |

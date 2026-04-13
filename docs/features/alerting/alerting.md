@@ -79,6 +79,7 @@ graph TB
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `plugins.alerting.monitor.max_monitors` | Maximum number of monitors | 1000 |
+| `plugins.alerting.monitor.max_triggers` | Maximum number of triggers per monitor (dynamic, min: 1) | 10 |
 | `plugins.alerting.request_timeout` | Timeout for alerting requests | 10s |
 | `plugins.alerting.alert_history_enabled` | Enable alert history | true |
 | `plugins.alerting.alert_history_max_age` | Max age of alert history | 30d |
@@ -157,6 +158,7 @@ POST _plugins/_alerting/monitors
 
 ## Change History
 
+- **v3.6.0** (2026): Configurable max triggers per monitor (`plugins.alerting.monitor.max_triggers` cluster setting, default 10), `cancelAfterTimeInterval` coverage on all SearchRequest constructions, ClusterMetricsInput api_type/path validation with URI normalization, SMTP STARTTLS notification fix (user auth context preserved during stashContext), doc-level monitor NPE fix for nested fields without properties, JobSweeper `_seq_no` sort fix for disabled `_id` fielddata, acknowledge alerts modal fix, anomaly detector monitor definition fix, migration log noise reduction, PPL alerting removal (planned for v3.7), SdkClient integration (merged then reverted during code freeze)
 - **v3.4.0** (2025): Build script fix to only publish alerting plugin zip, excluding sample remote monitor plugin from release artifacts
 - **v3.3.0** (2025): User custom attributes support for DLS/FLS parameter substitution - monitors now save and pass user custom attributes during execution, enabling DLS queries with `${attr.internal.*}` substitution to work correctly
 - **v3.2.0** (2025): MGet bug fix with proper finding-to-document mapping, randomized fan-out node distribution for better load balancing, consistent API responses when alerting config index doesn't exist, Maven snapshot publishing migration to Sonatype Central
@@ -185,6 +187,17 @@ POST _plugins/_alerting/monitors
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#2036](https://github.com/opensearch-project/alerting/pull/2036) | Add configurable max triggers per monitor setting | [#468](https://github.com/opensearch-project/alerting/issues/468) |
+| v3.6.0 | [common-utils#913](https://github.com/opensearch-project/common-utils/pull/913) | Remove hardcoded trigger limit from Monitor data class | [#468](https://github.com/opensearch-project/alerting/issues/468) |
+| v3.6.0 | [#2042](https://github.com/opensearch-project/alerting/pull/2042) | Set cancelAfterTimeInterval on all remaining SearchRequest constructions | [#827](https://github.com/opensearch-project/alerting/issues/827) |
+| v3.6.0 | [#1738](https://github.com/opensearch-project/alerting/pull/1738) | Limit verbose log on scheduled migration cancellation | [#1183](https://github.com/opensearch-project/alerting/issues/1183) |
+| v3.6.0 | [common-utils#912](https://github.com/opensearch-project/common-utils/pull/912) | Validate api_type matches path in ClusterMetricsInput | [#1987](https://github.com/opensearch-project/alerting/issues/1987) |
+| v3.6.0 | [common-utils#921](https://github.com/opensearch-project/common-utils/pull/921) | Normalize cluster metrics input URI path during validation |   |
+| v3.6.0 | [#2027](https://github.com/opensearch-project/alerting/pull/2027) | Preserve user auth context for SMTP STARTTLS notifications | [alerting-dashboards#1368](https://github.com/opensearch-project/alerting-dashboards-plugin/issues/1368) |
+| v3.6.0 | [#2049](https://github.com/opensearch-project/alerting/pull/2049) | Fix NPE for nested field type without properties | [security-analytics#1472](https://github.com/opensearch-project/security-analytics/issues/1472) |
+| v3.6.0 | [#2039](https://github.com/opensearch-project/alerting/pull/2039) | Replace _id sort with _seq_no in JobSweeper | [#2037](https://github.com/opensearch-project/alerting/issues/2037) |
+| v3.6.0 | [#2017](https://github.com/opensearch-project/alerting/pull/2017) | Remove experimental PPL alerting feature assets |   |
+| v3.6.0 | [#2052](https://github.com/opensearch-project/alerting/pull/2052) | Inject SdkClient into transport actions (reverted) | [#2094](https://github.com/opensearch-project/alerting/issues/2094) |
 | v3.4.0 | [#1608](https://github.com/opensearch-project/alerting/pull/1608) | Fix build script to only publish alerting zip |   |
 | v3.3.0 | [#1917](https://github.com/opensearch-project/alerting/pull/1917) | Adds support for leveraging user custom attributes in Alerting monitors | [#1829](https://github.com/opensearch-project/alerting/issues/1829) |
 | v3.2.0 | [#1885](https://github.com/opensearch-project/alerting/pull/1885) | Fix MGet bug, randomize fan out distribution |   |

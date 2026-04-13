@@ -6,7 +6,7 @@ tags:
 
 ## Summary
 
-Content Security Policy (CSP) is a security standard in OpenSearch Dashboards that helps prevent cross-site scripting (XSS), clickjacking, and other code injection attacks. OpenSearch Dashboards supports both enforced CSP rules and a report-only mode for testing policies without blocking content. The CSP configuration can be managed both statically through YAML configuration and dynamically through the Application Config API. As of v3.5.0, nonce-based style protection is available in CSP-Report-Only mode, and stricter input sanitization is applied across visualizations.
+Content Security Policy (CSP) is a security standard in OpenSearch Dashboards that helps prevent cross-site scripting (XSS), clickjacking, and other code injection attacks. OpenSearch Dashboards supports both enforced CSP rules and a report-only mode for testing policies without blocking content. The CSP configuration can be managed both statically through YAML configuration and dynamically through the Application Config API. As of v3.6.0, strict CSP enforcement is available for the main `Content-Security-Policy` header (controlled by `csp.enable`), with nonce injection, per-directive relaxation via `loosenCspDirectives`, and configurable allowed sources for `connect-src`, `img-src`, and `frame-ancestors`.
 
 ## Details
 
@@ -65,8 +65,9 @@ flowchart TB
 |-----------|-------------|
 | `csp_handler` Plugin | Registers pre-response handler to manage CSP headers |
 | `application_config` Plugin | Provides read/write APIs for dynamic configuration |
-| `HttpResourcesService` | Applies CSP headers to rendered resources |
+| `HttpResourcesService` | Applies CSP headers to rendered resources; injects nonces in strict mode |
 | `CoreRouteHandlerContext` | Provides access to dynamic config from request handlers |
+| `CspConfig` | Manages enforced CSP header construction with strict mode, nonce support, and directive relaxation |
 | `CspReportOnlyConfig` | Manages CSP-Report-Only header construction with nonce support |
 
 ### Configuration
@@ -75,9 +76,15 @@ flowchart TB
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| `csp.rules` | Array of CSP directives | Default secure policy |
-| `csp.strict` | Enable strict CSP mode | `true` |
+| `csp.rules` | Array of CSP directives | Default loose policy |
+| `csp.enable` | Enable strict CSP enforcement mode (v3.6.0+) | `false` |
+| `csp.strict` | (Deprecated) Alias for `csp.enable`; will be removed in a future release | `false` |
 | `csp.warnLegacyBrowsers` | Warn users on legacy browsers | `true` |
+| `csp.nonceDirectives` | Directives that receive nonce values in strict mode | `['style-src-elem']` |
+| `csp.allowedFrameAncestorSources` | Additional sources for `frame-ancestors` in strict mode | (none) |
+| `csp.allowedConnectSources` | Additional sources for `connect-src` in strict mode | (none) |
+| `csp.allowedImgSources` | Additional sources for `img-src` in strict mode | (none) |
+| `csp.loosenCspDirectives` | Directives to relax back to loose defaults in strict mode | (none) |
 | `csp_handler.enabled` | Enable CSP handler plugin | `false` |
 | `application_config.enabled` | Enable application config plugin | `false` |
 
@@ -136,10 +143,13 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 - Requires Security plugin permissions to modify `.opensearch_dashboards_config` index
 - Dynamic configurations override YAML configurations (except for empty CSP rules)
 - `style-src-attr` must allow `'unsafe-inline'` due to Monaco editor's reliance on inline style attributes (see [microsoft/monaco-editor#271](https://github.com/microsoft/monaco-editor/issues/271))
-- Nonces are only applied in CSP-Report-Only mode; enforced CSP still uses static rules
+- Nonces are applied in strict enforcement mode and CSP-Report-Only mode
+- The `csp.strict` config key is deprecated as of v3.6.0; migrate to `csp.enable`
+- `loosenCspDirectives` only takes effect when `csp.enable` is `true`
 
 ## Change History
 
+- **v3.6.0** (2026-04): Added strict CSP enforcement mode for main `Content-Security-Policy` header via `csp.enable`; added `buildHeaderWithNonce()` for nonce injection in strict mode; added `loosenCspDirectives` to selectively relax directives; added `allowedFrameAncestorSources`, `allowedConnectSources`, `allowedImgSources` config options; fixed Console plugin CSP violation by switching Ace editor worker from blob URL to file-loader URL; renamed `csp.strict` to `csp.enable` with backward compatibility for the deprecated key
 - **v3.5.0** (2026-02): Added nonce-based style protection for `style-src-elem` in CSP-Report-Only mode; added dynamic CSP directive modification via Application Config API; added stricter sanitization on visualization axis labels/names and DOMPurify-based URL/imageLabel sanitization; removed legacy intentional CSP violation detection mechanism
 - **v3.4.0** (2026-01): Added dynamic configuration support for CSP-Report-Only `isEmitting` setting
 - **v2.13.0**: Initial implementation of dynamic CSP configuration for `frame-ancestors` directive
@@ -158,6 +168,10 @@ curl '{osd-endpoint}/api/appconfig/csp-report-only' \
 |---------|-----|-------------|---------------|
 | v2.13.0 | - | Initial CSP dynamic configuration for frame-ancestors |   |
 | v3.4.0 | [#10877](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/10877) | Add dynamic config support to CSP report only |   |
+| v3.6.0 | [#11353](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11353) | Fix CSP violation for Console worker by loading from URL instead of blob |   |
+| v3.6.0 | [#11536](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11536) | Update CSP configuration to support strict enforcement mode |   |
+| v3.6.0 | [#11572](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11572) | Rename CSP strict config flag to `csp.enable` |   |
+| v3.6.0 | [#11594](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11594) | Add deprecated `csp.strict` config key back for backward compatibility |   |
 | v3.5.0 | [#11074](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11074) | Style-src-elem nonces for CSP report-only |   |
 | v3.5.0 | [#11168](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11168) | Add CSP modifications using dynamic config |   |
 | v3.5.0 | [#11251](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11251) | Add stricter sanitization on axis label and name |   |

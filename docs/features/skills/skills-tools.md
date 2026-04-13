@@ -31,7 +31,10 @@ graph TB
             Log[LogPatternTool]
             LPA[LogPatternAnalysisTool]
             DDT[DataDistributionTool]
+            SADT[SearchAroundDocumentTool]
+            MCAT[MetricChangeAnalysisTool]
         end
+        DFH[DataFetchingHelper]
     end
     
     subgraph External
@@ -46,7 +49,10 @@ graph TB
     VDB --> Index
     SI --> Index
     LPA --> Index
-    DDT --> Index
+    DDT --> DFH
+    MCAT --> DFH
+    DFH --> Index
+    SADT --> Index
 ```
 
 ### Components
@@ -66,6 +72,9 @@ graph TB
 | `CreateAnomalyDetectorTool` | Creates anomaly detectors |
 | `LogPatternAnalysisTool` | Analyzes log patterns and sequences |
 | `DataDistributionTool` | Analyzes data distribution with statistical comparison |
+| `SearchAroundDocumentTool` | Searches N documents before and after a specific document by timestamp |
+| `MetricChangeAnalysisTool` | Compares percentile distributions of numeric fields between time periods |
+| `DataFetchingHelper` | Shared utility for data fetching, field type detection, and query building |
 | `LogPatternTool` | Analyzes log patterns using Brain algorithm |
 
 ### Tool Registration
@@ -153,6 +162,7 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 
 ## Change History
 
+- **v3.6.0** (2026-04-13): Added SearchAroundDocumentTool for retrieving documents surrounding a specific document by timestamp; added MetricChangeAnalysisTool for percentile-based metric change detection between time periods; added filter parameter to LogPatternAnalysisTool for service-specific log pattern analysis; improved default tool descriptions for LogPatternAnalysisTool, DataDistributionTool, and MetricChangeAnalysisTool for better LLM usability; extracted DataFetchingHelper utility to share data fetching logic between DataDistributionTool and MetricChangeAnalysisTool
 - **v3.4.0** (2026-01-11): Increased max_sample_count from 2 to 5 for LogPatternAnalysisTool log insight mode, providing more representative sample logs per pattern
 - **v2.16.0** (2024-08-06): Added nested query support for NeuralSparseSearchTool, VectorDBTool, and RAGTool via `nested_path` parameter; added `plugins.skills.ppl_execution_enabled` cluster setting to control PPL query execution (default: false); added CreateAnomalyDetectorTool for AI-assisted anomaly detector configuration
 - **v3.3.0** (2026-01-11): Added LogPatternAnalysisTool for intelligent log pattern detection with sequence analysis and time-based comparison; added DataDistributionTool for statistical distribution analysis with divergence calculation; enhanced PPLTool to include mappings, current_time, and os_version when passing to SageMaker; fixed WebSearchTool using AsyncHttpClient from ml-commons; fixed DataDistributionTool to remove baselinePercentage when no baseline provided
@@ -175,6 +185,10 @@ The `type` parameter (defaults to `Opensearch`) is passed to the LLM model as `d
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#702](https://github.com/opensearch-project/skills/pull/702) | Add SearchAroundDocumentTool |   |
+| v3.6.0 | [#698](https://github.com/opensearch-project/skills/pull/698) | Add MetricChangeAnalysisTool with DataFetchingHelper refactor |   |
+| v3.6.0 | [#707](https://github.com/opensearch-project/skills/pull/707) | Add filter support for LogPatternAnalysisTool |   |
+| v3.6.0 | [#703](https://github.com/opensearch-project/skills/pull/703) | Update default tool descriptions for LogPatternAnalysisTool and DataDistributionTool |   |
 | v3.4.0 | [#678](https://github.com/opensearch-project/skills/pull/678) | Increase max_sample_count to 5 for log insight |   |
 | v3.3.0 | [#625](https://github.com/opensearch-project/skills/pull/625) | Log patterns analysis tool |   |
 | v3.3.0 | [#634](https://github.com/opensearch-project/skills/pull/634) | Data Distribution Tool |   |

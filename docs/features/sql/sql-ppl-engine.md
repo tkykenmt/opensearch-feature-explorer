@@ -99,6 +99,7 @@ POST /_plugins/_ppl
 
 ## Change History
 
+- **v3.6.0**: Unified Query API maturation (Calcite-native SQL planning via `UnifiedQueryPlanner`, `UnifiedQueryParser<R>` interface with `PPLQueryParser`/`CalciteSqlQueryParser`, profiling support); new PPL commands (`graphlookup` with bi-directional BFS traversal, `mvexpand`, `convert`, `nomv`, `fieldformat`, `contains`); PPL highlight support via `highlight` API parameter; `fetch_size` API for PPL (1–10,000 row limit); query cancellation via `_tasks/_cancel` API; grammar bundle generation API for client-side autocomplete; `spath` auto-extract mode; ANTLR 4.13.2 upgrade; FIPS build awareness; Prometheus rules support; 20 bug fixes including memory leak in `ExecutionEngine`, PIT resource leaks in v2, `isnotnull()` pushdown, MAP path resolution, and Calcite error handling
 - **v3.5.0**: New PPL commands (`transpose`, `spath`, `mvcombine`, `addtotals`/`addcoltotals`); new eval functions (`tonumber`, `mvzip`, `split`, `mvfind`, `mvmap`); Unified Query API (`UnifiedQueryTranspiler`, `UnifiedQueryCompiler`, `UnifiedQueryContext`); query profiling framework; query optimization enhancements (nested field filter pushdown, SortMergeJoin optimization, join with TopHits, dedup pushdown, nested aggregation, enumerable TopK); bug fixes for PIT context leak and NOT BETWEEN query
 - **v3.3.0**: Calcite enabled by default; see Calcite Query Engine for details
 - **v3.0.0**: Apache Calcite integration (V3 engine)
@@ -132,6 +133,18 @@ POST /_plugins/_ppl
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#5274](https://github.com/opensearch-project/sql/pull/5274) | Add unified query parser API | [#5248](https://github.com/opensearch-project/sql/issues/5248) |
+| v3.6.0 | [#5268](https://github.com/opensearch-project/sql/pull/5268) | Add profiling support to unified query API | [#5248](https://github.com/opensearch-project/sql/issues/5248) |
+| v3.6.0 | [#5257](https://github.com/opensearch-project/sql/pull/5257) | Add Calcite native SQL planning | [#5248](https://github.com/opensearch-project/sql/issues/5248) |
+| v3.6.0 | [#5254](https://github.com/opensearch-project/sql/pull/5254) | Query cancellation via _tasks/_cancel API | [#4887](https://github.com/opensearch-project/sql/issues/4887) |
+| v3.6.0 | [#5234](https://github.com/opensearch-project/sql/pull/5234) | PPL Highlight Support | [#5156](https://github.com/opensearch-project/sql/issues/5156) |
+| v3.6.0 | [#5162](https://github.com/opensearch-project/sql/pull/5162) | Grammar bundle generation API | [#5218](https://github.com/opensearch-project/sql/issues/5218) |
+| v3.6.0 | [#5144](https://github.com/opensearch-project/sql/pull/5144) | PPL MvExpand command | [#4439](https://github.com/opensearch-project/sql/issues/4439) |
+| v3.6.0 | [#5138](https://github.com/opensearch-project/sql/pull/5138) | Bi-directional graphlookup | [#5088](https://github.com/opensearch-project/sql/issues/5088) |
+| v3.6.0 | [#5109](https://github.com/opensearch-project/sql/pull/5109) | fetch_size API for PPL | [#3314](https://github.com/opensearch-project/sql/issues/3314) |
+| v3.6.0 | [#5157](https://github.com/opensearch-project/sql/pull/5157) | PPL convert command | [#5001](https://github.com/opensearch-project/sql/issues/5001) |
+| v3.6.0 | [#5222](https://github.com/opensearch-project/sql/pull/5222) | Fix memory leak in ExecutionEngine | - |
+| v3.6.0 | [#5221](https://github.com/opensearch-project/sql/pull/5221) | Fix PIT resource leaks in v2 engine | - |
 | v3.5.0 | [#4871](https://github.com/opensearch-project/sql/pull/4871) | Add unified query transpiler API | [#4870](https://github.com/opensearch-project/sql/issues/4870) |
 | v3.5.0 | [#4974](https://github.com/opensearch-project/sql/pull/4974) | Add unified query compiler API | [#4894](https://github.com/opensearch-project/sql/issues/4894) |
 | v3.5.0 | [#4983](https://github.com/opensearch-project/sql/pull/4983) | Support profile options for PPL | [#4294](https://github.com/opensearch-project/sql/issues/4294) |
