@@ -4,6 +4,7 @@
 
 - Bitmap64 Query Support
 - Bulk Write Optimization
+- Cross-Cluster Search (CCS)
 - Dynamic Settings Authorization
 - Pull-based Ingestion
 - Search Observability
