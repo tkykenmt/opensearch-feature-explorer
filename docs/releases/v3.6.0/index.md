@@ -44,6 +44,10 @@
 
 - Security Enhancements
 
+## k-nn
+
+- Vector Search (k-NN) - 1-Bit Quantization
+
 ## skills
 
 - Agent Skills/Tools

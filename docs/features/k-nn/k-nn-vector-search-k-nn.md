@@ -263,6 +263,7 @@ Response:
 
 ## Change History
 
+- **v3.6.0** (2026-04-13): 1-bit scalar quantization (32x compression) for both Lucene and Faiss engines; Lucene BBQ integration via `sq` encoder with `bits: 1` using `Lucene104HnswScalarQuantizedVectorsFormat`; new Lucene `flat` method using `Lucene104ScalarQuantizedVectorsFormat` with `SINGLE_BIT_QUERY_NIBBLE` encoding for graph-free BBQ search; Lucene `on_disk` mode default compression changed from 4x to 32x for indices created on v3.6.0+; Faiss SQ 1-bit end-to-end support via memory-optimized search (MOS) path with `Faiss1040ScalarQuantizedKnnVectorsFormat`, `FaissSQDistanceComputer`, SIMD-accelerated scoring (AVX512, ARM NEON, scalar fallback), and `FaissSQEncoder` with `SQConfig`; Faiss 32x compression default encoder fixed to SQ 1-bit (replacing QFrameBit encoder)
 - **v3.5.0** (2026-02-11): Index setting to disable exact search fallback after ANN with Faiss efficient filters; Bulk SIMD V2 implementation with 15-31% throughput improvement; Lucene engine ef_search parameter correction for improved recall; nested k-NN query filter improvements for parent-scope filtering; derived source regex support and field exclusion handling; AdditionalCodecs integration for custom codec registration; bug fixes for MOS reentrant search in byte index, warmup integer overflow for large files (>2GB), nested docs query with missing vector fields, BinaryCagra score conversion; improved validation for k > total results; Gradle build enhancements and comprehensive IT/BWC tests
 - **v3.4.0** (2026-01-11): Bug fixes for memory optimized search on old indices (NPE), totalHits inconsistency, race condition in KNNQueryBuilder with cosine similarity, Faiss inner product score-to-distance calculation, disk-based vector search BWC for segment merge
 - **v3.3.2** (2026-02-12): Fix NPE when memory optimized search is applied to indices created before 2.17 (fallback to off-heap vector loading for old indices)
@@ -301,6 +302,10 @@ Response:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#3144](https://github.com/opensearch-project/k-NN/pull/3144) | 1-bit compression support for Lucene Scalar Quantizer (BBQ integration) | [#2805](https://github.com/opensearch-project/k-NN/issues/2805) |
+| v3.6.0 | [#3154](https://github.com/opensearch-project/k-NN/pull/3154) | Support Lucene BBQ Flat format for 1-bit (32x) compression |   |
+| v3.6.0 | [#3208](https://github.com/opensearch-project/k-NN/pull/3208) | Faiss SQ 1-bit with MOS, SIMD acceleration, codec integration | [#3169](https://github.com/opensearch-project/k-NN/issues/3169) |
+| v3.6.0 | [#3210](https://github.com/opensearch-project/k-NN/pull/3210) | Fix default encoder to SQ 1-bit for Faiss 32x compression | [#3169](https://github.com/opensearch-project/k-NN/issues/3169) |
 | v3.5.0 | [#3022](https://github.com/opensearch-project/k-NN/pull/3022) | Index setting to disable exact search after ANN with Faiss efficient filters | [#2936](https://github.com/opensearch-project/k-NN/issues/2936) |
 | v3.5.0 | [#3075](https://github.com/opensearch-project/k-NN/pull/3075) | Bulk SIMD V2 Implementation | [#2875](https://github.com/opensearch-project/k-NN/issues/2875) |
 | v3.5.0 | [#3037](https://github.com/opensearch-project/k-NN/pull/3037) | Correct ef_search parameter for Lucene engine | [#2940](https://github.com/opensearch-project/k-NN/issues/2940) |
