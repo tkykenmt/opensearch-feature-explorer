@@ -9,6 +9,7 @@
 - Dynamic Settings Authorization
 - Platform & Distribution
 - Pull-based Ingestion
+- Request Tracing
 - Search Observability
 - Segment Replication
 - Star Tree Index

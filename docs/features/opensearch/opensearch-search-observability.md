@@ -53,6 +53,7 @@ Search request slow logs are configured dynamically via the Cluster Settings API
 | `cluster.search.request.slowlog.threshold.info` | Info threshold | `-1` (disabled) |
 | `cluster.search.request.slowlog.threshold.debug` | Debug threshold | `-1` (disabled) |
 | `cluster.search.request.slowlog.threshold.trace` | Trace threshold | `-1` (disabled) |
+| `http.request_id.max_length` | Maximum allowed length for `X-Request-Id` header (since v3.6.0) | `128` |
 
 #### Enable Search Request Slow Log
 
@@ -109,7 +110,8 @@ Resulting slow log entry:
 
 ## Change History
 
-- **v3.6.0**: Added `indices` field to search request slow log for easier request identification
+- **v3.6.0**: Added `indices` field to search request slow log; relaxed `X-Request-Id` validation to accept any format up to configurable max length (`http.request_id.max_length`, default 128)
+- **v3.5.0**: Added `X-Request-Id` header support for request tracing (strict 32-char hex format)
 - **v2.12.0**: Initial implementation of request-level search slow logs
 
 ## References
@@ -120,4 +122,6 @@ Resulting slow log entry:
 ### Pull Requests
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.6.0 | `https://github.com/opensearch-project/OpenSearch/pull/21048` | Remove X-Request-Id format restrictions and make max length configurable |
 | v3.6.0 | `https://github.com/opensearch-project/OpenSearch/pull/20588` | Add indices to search request slowlog |
+| v3.5.0 | `https://github.com/opensearch-project/OpenSearch/pull/19798` | Add X-Request-Id header for request tracing |
