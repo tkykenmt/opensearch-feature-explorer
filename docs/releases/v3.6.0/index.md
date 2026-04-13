@@ -158,3 +158,4 @@
 
 - APM & Observability
 - Data Importer
+- OpenSearch Dashboards Core
