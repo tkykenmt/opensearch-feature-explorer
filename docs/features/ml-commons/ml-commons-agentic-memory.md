@@ -177,6 +177,7 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 
 ## Change History
 
+- **v3.6.0** (2026-04): Semantic search API (`_semantic_search`) and hybrid search API (`_hybrid_search`) for long-term memory retrieval with automatic embedding; per-request weight tuning for hybrid search (`bm25_weight`, `neural_weight`); auto-created hybrid search pipeline at container creation; messages array support in all memory types preserving multi-modal content and tool results; bug fixes for incorrect error codes when deleting memory containers (500 → 404) and context management templates
 - **v3.3.0** (2025-10): GA release with ScratchPad tools, session API, refactored architecture, improved fact extraction prompts, and feature enabled by default
 
 
@@ -194,6 +195,10 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#4658](https://github.com/opensearch-project/ml-commons/pull/4658) | Add semantic and hybrid search APIs for long-term memory | [#4647](https://github.com/opensearch-project/ml-commons/issues/4647) |
+| v3.6.0 | [#4645](https://github.com/opensearch-project/ml-commons/pull/4645) | Support messages array in all memory types | [#4552](https://github.com/opensearch-project/ml-commons/issues/4552) |
+| v3.6.0 | [#4723](https://github.com/opensearch-project/ml-commons/pull/4723) | Fix error codes when deleting memory containers | [#4706](https://github.com/opensearch-project/ml-commons/issues/4706) |
+| v3.6.0 | [#4701](https://github.com/opensearch-project/ml-commons/pull/4701) | Fix error code for delete context management template API |   |
 | v3.3.0 | [#4192](https://github.com/opensearch-project/ml-commons/pull/4192) | Add WriteToScratchPad and ReadFromScratchPad tools |   |
 | v3.3.0 | [#4218](https://github.com/opensearch-project/ml-commons/pull/4218) | Refactor Agentic Memory | [#4239](https://github.com/opensearch-project/ml-commons/issues/4239) |
 | v3.3.0 | [#4246](https://github.com/opensearch-project/ml-commons/pull/4246) | Add create session API |   |
