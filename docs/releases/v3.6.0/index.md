@@ -22,6 +22,7 @@
 - ML Commons Agents & Memory
 - ML Commons Model Pooling
 - ML Commons Encryption
+- ML Commons Infrastructure
 
 ## alerting-dashboards
 
