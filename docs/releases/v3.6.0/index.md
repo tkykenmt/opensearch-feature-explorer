@@ -19,6 +19,7 @@
 ## ml-commons
 
 - ML Commons Agents & Memory
+- ML Commons Model Pooling
 
 ## alerting-dashboards
 

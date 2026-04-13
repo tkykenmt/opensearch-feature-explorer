@@ -23,6 +23,7 @@
 | [ml-commons-ml-inference-processor](ml-commons-ml-inference-processor.md) | ML Inference Processor |
 | [ml-commons-model-deployment](ml-commons-model-deployment.md) | ML Commons Model Deployment |
 | [ml-commons-model-inference](ml-commons-model-inference.md) | ML Commons Model & Inference |
+| [ml-commons-model-pooling](ml-commons-model-pooling.md) | ML Commons Model Pooling |
 | [ml-commons-multi-tenancy](ml-commons-multi-tenancy.md) | ML Commons Multi-tenancy |
 | [ml-commons-planexecutereflect-agent](ml-commons-planexecutereflect-agent.md) | PlanExecuteReflect Agent |
 | [ml-commons-query-assist](ml-commons-query-assist.md) | Query Assist |
