@@ -83,6 +83,7 @@ Dependency updates in the Security plugin follow this process:
 
 ## Change History
 
+- **v3.6.0** (2026-04-08): 30 dependency updates including Kafka 4.2.0, OpenSAML 5.2.1, Spring 7.0.6, nimbus-jose-jwt 10.8 (critical header params fix), ipaddress 5.6.2, Gradle 9.4.0, and CI actions updates (download-artifact v8, upload-artifact v7, configure-aws-credentials v6)
 - **v3.3.0** (2026-01-14): Security fix for CVE-2025-53864 (nimbus-jose-jwt), plus 24 dependency updates including Spring 6.2.11, JJWT 0.13.0, Guava 33.5.0, and CI tooling updates
 - **v3.1.0** (2025-06-03): Major dependency updates including Bouncy Castle 1.81, Kafka 4.0.0, Spring 6.2.7, Guava 33.4.8, JUnit 5.13.1, and CVE-2024-52798 fix
 - **v3.0.0** (2025-02-25): 13 dependency updates including Spring 6.2.5, Bouncy Castle 1.80, OpenSAML 5.1.4/9.1.4, ASM 9.8, Commons IO 2.19.0, JUnit Jupiter 5.12.2
@@ -108,6 +109,35 @@ Dependency updates in the Security plugin follow this process:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#6030](https://github.com/opensearch-project/security/pull/6030) | Bump nimbus-jose-jwt 10.7 → 10.8 | |
+| v3.6.0 | [#5965](https://github.com/opensearch-project/security/pull/5965) | Bump open_saml_version 5.1.6 → 5.2.1 | |
+| v3.6.0 | [#5982](https://github.com/opensearch-project/security/pull/5982) | Bump open_saml_shib_version 9.2.0 → 9.2.1 | |
+| v3.6.0 | [#5968](https://github.com/opensearch-project/security/pull/5968) | Bump kafka_version 4.1.1 → 4.2.0 | |
+| v3.6.0 | [#5957](https://github.com/opensearch-project/security/pull/5957) | Bump spring_version 7.0.3 → 7.0.4 | |
+| v3.6.0 | [#5967](https://github.com/opensearch-project/security/pull/5967) | Bump spring_version 7.0.4 → 7.0.5 | |
+| v3.6.0 | [#6008](https://github.com/opensearch-project/security/pull/6008) | Bump spring_version 7.0.5 → 7.0.6 | |
+| v3.6.0 | [#5949](https://github.com/opensearch-project/security/pull/5949) | Bump ipaddress 5.5.1 → 5.6.1 | |
+| v3.6.0 | [#6010](https://github.com/opensearch-project/security/pull/6010) | Bump ipaddress 5.6.1 → 5.6.2 | |
+| v3.6.0 | [#5994](https://github.com/opensearch-project/security/pull/5994) | Bump lz4-java 1.10.3 → 1.10.4 | |
+| v3.6.0 | [#5948](https://github.com/opensearch-project/security/pull/5948) | Bump logback-classic 1.5.26 → 1.5.28 | |
+| v3.6.0 | [#5995](https://github.com/opensearch-project/security/pull/5995) | Bump logback-classic 1.5.28 → 1.5.32 | |
+| v3.6.0 | [#5978](https://github.com/opensearch-project/security/pull/5978) | Bump jakarta.xml.bind-api 4.0.4 → 4.0.5 | |
+| v3.6.0 | [#5996](https://github.com/opensearch-project/security/pull/5996) | Bump Gradle Wrapper 9.2.0 → 9.4.0 | |
+| v3.6.0 | [#5947](https://github.com/opensearch-project/security/pull/5947) | Bump google-java-format 1.33.0 → 1.34.1 | |
+| v3.6.0 | [#6011](https://github.com/opensearch-project/security/pull/6011) | Bump google-java-format 1.34.1 → 1.35.0 | |
+| v3.6.0 | [#6029](https://github.com/opensearch-project/security/pull/6029) | Bump build-health 3.5.1 → 3.6.1 | |
+| v3.6.0 | [#5955](https://github.com/opensearch-project/security/pull/5955) | Bump checker-qual 3.53.0 → 3.53.1 | |
+| v3.6.0 | [#6009](https://github.com/opensearch-project/security/pull/6009) | Bump checker-qual 3.53.1 → 3.54.0 | |
+| v3.6.0 | [#6027](https://github.com/opensearch-project/security/pull/6027) | Bump eclipse.core.runtime 3.34.100 → 3.34.200 | |
+| v3.6.0 | [#5979](https://github.com/opensearch-project/security/pull/5979) | Bump actions/download-artifact 7 → 8 | |
+| v3.6.0 | [#5980](https://github.com/opensearch-project/security/pull/5980) | Bump actions/upload-artifact 6 → 7 | |
+| v3.6.0 | [#5946](https://github.com/opensearch-project/security/pull/5946) | Bump aws-actions/configure-aws-credentials 5 → 6 | |
+| v3.6.0 | [#6007](https://github.com/opensearch-project/security/pull/6007) | Bump release-drafter/release-drafter 6 → 7 | |
+| v3.6.0 | [#6012](https://github.com/opensearch-project/security/pull/6012) | Bump byte-buddy 1.18.4 → 1.18.7 | |
+| v3.6.0 | [#5993](https://github.com/opensearch-project/security/pull/5993) | Bump randomizedtesting-runner 2.8.3 → 2.8.4 | |
+| v3.6.0 | [#5956](https://github.com/opensearch-project/security/pull/5956) | Bump junit-jupiter-api 5.14.2 → 5.14.3 | |
+| v3.6.0 | [#5981](https://github.com/opensearch-project/security/pull/5981) | Bump spring-kafka-test 4.0.2 → 4.0.3 | |
+| v3.6.0 | [#6026](https://github.com/opensearch-project/security/pull/6026) | Bump spring-kafka-test 4.0.3 → 4.0.4 | |
 | v3.3.0 | [#5595](https://github.com/opensearch-project/security/pull/5595) | Upgrade nimbus-jose-jwt 9.48 → 10.4.2 (CVE-2025-53864) | [#5593](https://github.com/opensearch-project/security/issues/5593) |
 | v3.3.0 | [#5629](https://github.com/opensearch-project/security/pull/5629) | Bump nimbus-jose-jwt 10.4.2 → 10.5 |   |
 | v3.3.0 | [#5568](https://github.com/opensearch-project/security/pull/5568) | Bump jjwt_version 0.12.6 → 0.13.0 |   |

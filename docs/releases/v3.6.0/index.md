@@ -58,6 +58,7 @@
 ## security
 
 - Security Enhancements
+- Security Plugin Dependency Bumps
 
 ## security-analytics
 
