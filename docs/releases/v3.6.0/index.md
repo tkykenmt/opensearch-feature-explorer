@@ -3,6 +3,7 @@
 ## opensearch
 
 - Bitmap64 Query Support
+- Dynamic Settings Authorization
 - Pull-based Ingestion
 - Search Observability
 - Segment Replication

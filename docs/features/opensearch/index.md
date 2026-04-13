@@ -64,6 +64,7 @@
 | [opensearch-docvalues-optimization](opensearch-docvalues-optimization.md) | DocValues Singleton Optimization |
 | [opensearch-dynamic-mapping](opensearch-dynamic-mapping.md) | Dynamic Mapping |
 | [opensearch-dynamic-settings](opensearch-dynamic-settings.md) | Dynamic Settings |
+| [opensearch-dynamic-settings-authorization](opensearch-dynamic-settings-authorization.md) | Dynamic Settings Authorization |
 | [opensearch-dynamic-threadpool-resize](opensearch-dynamic-threadpool-resize.md) | Dynamic Threadpool Resize |
 | [opensearch-engine-api](opensearch-engine-api.md) | Engine API |
 | [opensearch-engine-config](opensearch-engine-config.md) | Engine Config |
