@@ -323,6 +323,15 @@ Response:
 | v3.6.0 | [#3135](https://github.com/opensearch-project/k-NN/pull/3135) | Fix k-NN build/run compatibility with Lucene 10.4.0 | [#3134](https://github.com/opensearch-project/k-NN/issues/3134) |
 | v3.6.0 | [#3093](https://github.com/opensearch-project/k-NN/pull/3093) | Fix KNN1030Codec custom codec delegation on read path | [#3092](https://github.com/opensearch-project/k-NN/issues/3092) |
 | v3.6.0 | [#3138](https://github.com/opensearch-project/k-NN/pull/3138) | Simplify DerivedSourceReaders lifecycle (remove manual ref-counting) | [#3191](https://github.com/opensearch-project/k-NN/issues/3191) |
+| v3.6.0 | [#3195](https://github.com/opensearch-project/k-NN/pull/3195) | Integrate prefetch with FP16-based index for MOS | [#2577](https://github.com/opensearch-project/k-NN/issues/2577) |
+| v3.6.0 | [#3197](https://github.com/opensearch-project/k-NN/pull/3197) | Integrate prefetch for SparseFloatVectorValues with Faiss indices | [#2577](https://github.com/opensearch-project/k-NN/issues/2577) |
+| v3.6.0 | [#3184](https://github.com/opensearch-project/k-NN/pull/3184) | Decouple native SIMD scoring into NativeEngines990KnnVectorsScorer | |
+| v3.6.0 | [#3172](https://github.com/opensearch-project/k-NN/pull/3172) | Speed up FP16 bulk similarity by precomputing tail mask (up to 35%) | |
+| v3.6.0 | [#3117](https://github.com/opensearch-project/k-NN/pull/3117) | Use correct vector scorer via SPI and correct maxConn for MOS | |
+| v3.6.0 | [#3130](https://github.com/opensearch-project/k-NN/pull/3130) | Fix integer overflow for large-scale MOS indexes | [#3108](https://github.com/opensearch-project/k-NN/issues/3108) |
+| v3.6.0 | [#3155](https://github.com/opensearch-project/k-NN/pull/3155) | Fix optimistic search bugs on nested CAGRA index | |
+| v3.6.0 | [#3161](https://github.com/opensearch-project/k-NN/pull/3161) | Fix random entry point generation when numVectors < entryPoints | |
+| v3.6.0 | [#3240](https://github.com/opensearch-project/k-NN/pull/3240) | Fix prefetch failure due to out-of-bound exception | [#2577](https://github.com/opensearch-project/k-NN/issues/2577) |
 | v3.5.0 | [#3022](https://github.com/opensearch-project/k-NN/pull/3022) | Index setting to disable exact search after ANN with Faiss efficient filters | [#2936](https://github.com/opensearch-project/k-NN/issues/2936) |
 | v3.5.0 | [#3075](https://github.com/opensearch-project/k-NN/pull/3075) | Bulk SIMD V2 Implementation | [#2875](https://github.com/opensearch-project/k-NN/issues/2875) |
 | v3.5.0 | [#3037](https://github.com/opensearch-project/k-NN/pull/3037) | Correct ef_search parameter for Lucene engine | [#2940](https://github.com/opensearch-project/k-NN/issues/2940) |

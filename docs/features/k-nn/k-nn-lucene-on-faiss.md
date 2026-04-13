@@ -85,6 +85,8 @@ flowchart TB
 | `NativeRandomVectorScorer` | `RandomVectorScorer` that offloads scoring to native SIMD code (v3.4.0+) |
 | `MMapVectorValues` | Interface for memory-mapped vector data access (v3.4.0+) |
 | `MMapFloatVectorValues` | Float vector values with mmap pointer access (v3.4.0+) |
+| `NativeEngines990KnnVectorsScorer` | `FlatVectorsScorer` decorator that transparently returns `NativeRandomVectorScorer` for MMap-backed vectors with EUCLIDEAN or MIP similarity (v3.6.0+) |
+| `PrefetchableFlatVectorScorer` | Wraps scorers to issue prefetch hints for memory-mapped vector data before scoring (v3.6.0+) |
 
 ### Configuration
 
@@ -654,6 +656,7 @@ Note: Random Rotation (RR) is applied at indexing time and is not specific to Lu
 
 ## Change History
 
+- **v3.6.0** (2026-04-13): Prefetch integration for FP16 and sparse float vector values during HNSW graph traversal; decoupled native SIMD scoring into `NativeEngines990KnnVectorsScorer` decorator enabling prefetch-aware native scoring; FP16 bulk similarity up to 35% faster via precomputed tail mask; correct vector scorer selection via SPI and corrected maxConn for MOS; bug fixes for integer overflow on large-scale indexes (10B+ vectors), nested CAGRA optimistic search (duplicate entry points, ignored seeded entry points, wrong collector manager), random entry point generation edge case, and prefetch out-of-bound exception in `FaissScorableByteVectorValues`
 - **v3.4.0** (2026-01-14): Added native SIMD scoring for FP16 vectors, VectorSearcherHolder memory optimization
 - **v3.2.0** (2025-09-09): Added ADC/RR support for binary-quantized indexes
 - **v3.0.0** (2025-05-06): Initial implementation with HNSW support for FAISS engine
@@ -672,6 +675,15 @@ Note: Random Rotation (RR) is applied at indexing time and is not specific to Lu
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#3195](https://github.com/opensearch-project/k-NN/pull/3195) | Integrate prefetch with FP16-based index for MOS | [#2577](https://github.com/opensearch-project/k-NN/issues/2577) |
+| v3.6.0 | [#3197](https://github.com/opensearch-project/k-NN/pull/3197) | Integrate prefetch for SparseFloatVectorValues with Faiss indices | [#2577](https://github.com/opensearch-project/k-NN/issues/2577) |
+| v3.6.0 | [#3184](https://github.com/opensearch-project/k-NN/pull/3184) | Decouple native SIMD scoring into NativeEngines990KnnVectorsScorer | |
+| v3.6.0 | [#3172](https://github.com/opensearch-project/k-NN/pull/3172) | Speed up FP16 bulk similarity by precomputing tail mask (up to 35%) | |
+| v3.6.0 | [#3117](https://github.com/opensearch-project/k-NN/pull/3117) | Use correct vector scorer via SPI and correct maxConn for MOS | |
+| v3.6.0 | [#3130](https://github.com/opensearch-project/k-NN/pull/3130) | Fix integer overflow for large-scale MOS indexes | [#3108](https://github.com/opensearch-project/k-NN/issues/3108) |
+| v3.6.0 | [#3155](https://github.com/opensearch-project/k-NN/pull/3155) | Fix optimistic search bugs on nested CAGRA index | |
+| v3.6.0 | [#3161](https://github.com/opensearch-project/k-NN/pull/3161) | Fix random entry point generation when numVectors < entryPoints | |
+| v3.6.0 | [#3240](https://github.com/opensearch-project/k-NN/pull/3240) | Fix prefetch failure due to out-of-bound exception | [#2577](https://github.com/opensearch-project/k-NN/issues/2577) |
 | v3.4.0 | [#2922](https://github.com/opensearch-project/k-NN/pull/2922) | Native SIMD scoring for FP16 | [#2875](https://github.com/opensearch-project/k-NN/issues/2875) |
 | v3.4.0 | [#2948](https://github.com/opensearch-project/k-NN/pull/2948) | VectorSearcherHolder memory optimization | [#2938](https://github.com/opensearch-project/k-NN/issues/2938) |
 | v3.2.0 | [#2781](https://github.com/opensearch-project/k-NN/pull/2781) | ADC support for Lucene-on-Faiss | [#2714](https://github.com/opensearch-project/k-NN/issues/2714) |
@@ -689,6 +701,7 @@ Note: Random Rotation (RR) is applied at indexing time and is not specific to Lu
 
 ### Issues (Design / RFC)
 - [RFC Issue #2401](https://github.com/opensearch-project/k-NN/issues/2401): Partial loading with FAISS engine - detailed design document
+- [META Issue #2577](https://github.com/opensearch-project/k-NN/issues/2577): Use Prefetch API of IndexInput for Vectors
 - [RFC Issue #2714](https://github.com/opensearch-project/k-NN/issues/2714): ADC and Random Rotation for binary quantization
 - [RFC Issue #2875](https://github.com/opensearch-project/k-NN/issues/2875): Use SIMD for FP16 in LuceneOnFaiss
 - [Issue #2938](https://github.com/opensearch-project/k-NN/issues/2938): VectorSearcherHolder memory optimization
