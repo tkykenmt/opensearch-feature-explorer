@@ -10,6 +10,7 @@
 - Cross-Cluster Search (CCS)
 - Dynamic Settings Authorization
 - Platform & Distribution
+- Pluggable Engine Architecture
 - Pull-based Ingestion
 - Request Tracing
 - Search Observability

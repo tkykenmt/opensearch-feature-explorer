@@ -110,6 +110,7 @@ Cumulative feature documentation across all versions.
 - GetStats API
 - Painless Script Hashing Methods
 - Platform Support
+- Pluggable Engine Architecture
 - Point in Time (PIT) API
 - ProfileScorer Improvements
 - Processor Allowlist
