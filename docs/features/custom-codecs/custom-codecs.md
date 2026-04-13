@@ -75,18 +75,22 @@ flowchart TB
 
 | Component | Description |
 |-----------|-------------|
-| `Lucene101CustomCodec` | Base codec for ZSTD compression (Lucene 10.1.0) |
-| `Zstd101Codec` | ZSTD compression with dictionary support |
-| `ZstdNoDict101Codec` | ZSTD compression without dictionary (faster) |
-| `Lucene101QatCodec` | Base codec for QAT hardware acceleration (Lucene 10.1.0) |
-| `QatLz4101Codec` | Hardware-accelerated LZ4 compression |
-| `QatDeflate101Codec` | Hardware-accelerated DEFLATE compression |
-| `QatZstd101Codec` | Hardware-accelerated ZSTD compression |
+| `Lucene104CustomCodec` | Base codec for ZSTD compression (Lucene 10.4) |
+| `Zstd104Codec` | ZSTD compression with dictionary support |
+| `ZstdNoDict104Codec` | ZSTD compression without dictionary (faster) |
+| `Lucene104QatCodec` | Base codec for QAT hardware acceleration (Lucene 10.4) |
+| `QatLz4104Codec` | Hardware-accelerated LZ4 compression |
+| `QatDeflate104Codec` | Hardware-accelerated DEFLATE compression |
+| `QatZstd104Codec` | Hardware-accelerated ZSTD compression |
 
 #### Backward Compatibility Components
 
 | Component | Location | Purpose |
 |-----------|----------|---------|
+| `Lucene103CustomCodec` | `backward_codecs/lucene103/` | Read existing Lucene 10.3 ZSTD indexes |
+| `Lucene103QatCodec` | `backward_codecs/lucene103/` | Read existing Lucene 10.3 QAT indexes |
+| `Lucene101CustomCodec` | `backward_codecs/lucene101/` | Read existing Lucene 10.1 ZSTD indexes |
+| `Lucene101QatCodec` | `backward_codecs/lucene101/` | Read existing Lucene 10.1 QAT indexes |
 | `Lucene912CustomCodec` | `backward_codecs/lucene912/` | Read existing Lucene 9.12 ZSTD indexes |
 | `Lucene912QatCodec` | `backward_codecs/lucene912/` | Read existing Lucene 9.12 QAT indexes |
 | `Lucene99CustomCodec` | `backward_codecs/lucene99/` | Read existing Lucene 9.9 indexes |
@@ -201,6 +205,7 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 
 ## Change History
 
+- **v3.6.0** (2026-04-08): Upgraded to Lucene 10.4 — all codec implementations migrated from Lucene103* to Lucene104*, previous codecs moved to backward_codecs/lucene103 package; updated BWC test framework to OpenSearch 3.6; fixed Maven local zip publication for downstream consumers
 - **v3.2.0** (2026-01-14): Added composite index (star-tree) support - codecs now delegate to `CompositeCodec` when index has composite fields
 - **v3.1.0** (2025-09-16): Added QAT-accelerated ZSTD codec (`qat_zstd`), upgraded qat-java to 2.3.2
 - **v3.1.0** (2025-09-16): Fixed BWC test dependency version and added java-agent plugin to BWC tests
@@ -225,6 +230,9 @@ Benchmark results comparing codecs against the default LZ4 codec (using `nyc_tax
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#311](https://github.com/opensearch-project/custom-codecs/pull/311) | Update for Lucene 10.4 compatibility | [#312](https://github.com/opensearch-project/custom-codecs/issues/312) |
+| v3.6.0 | [#321](https://github.com/opensearch-project/custom-codecs/pull/321) | Explicitly publish custom codecs zip to Maven local | [k-NN#3156](https://github.com/opensearch-project/k-NN/issues/3156) |
+| v3.6.0 | [#322](https://github.com/opensearch-project/custom-codecs/pull/322) | Update BWC build framework version to OpenSearch 3.6 |   |
 | v3.2.0 | [#263](https://github.com/opensearch-project/custom-codecs/pull/263) | Adding support for composite index | [#209](https://github.com/opensearch-project/custom-codecs/issues/209) |
 | v3.1.0 | [#238](https://github.com/opensearch-project/custom-codecs/pull/238) | Add QAT-Accelerated Zstandard Compression Support |   |
 | v3.1.0 | [#255](https://github.com/opensearch-project/custom-codecs/pull/255) | Fix version on BWC test dependency |   |
