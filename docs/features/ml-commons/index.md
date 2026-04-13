@@ -12,6 +12,7 @@
 | [ml-commons-connector](ml-commons-connector.md) | ML Commons Connector |
 | [ml-commons-dependencies](ml-commons-dependencies.md) | ML Commons Dependencies |
 | [ml-commons-documentation-tutorials](ml-commons-documentation-tutorials.md) | ML Commons Documentation & Tutorials |
+| [ml-commons-encryption](ml-commons-encryption.md) | ML Commons Encryption |
 | [ml-commons-enhancements](ml-commons-enhancements.md) | ML Commons Enhancements |
 | [ml-commons-error-handling](ml-commons-error-handling.md) | ML Commons Error Handling |
 | [ml-commons-global-resource-support](ml-commons-global-resource-support.md) | Global Resource Support |

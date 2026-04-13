@@ -21,6 +21,7 @@
 - Agentic Search
 - ML Commons Agents & Memory
 - ML Commons Model Pooling
+- ML Commons Encryption
 
 ## alerting-dashboards
 
