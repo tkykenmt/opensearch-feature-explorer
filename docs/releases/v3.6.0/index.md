@@ -27,6 +27,7 @@
 - Logging & Diagnostics
 - Search Performance Fixes
 - Upgrade Compatibility
+- Dependency Upgrades (Core)
 
 ## common
 
