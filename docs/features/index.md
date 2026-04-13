@@ -96,6 +96,7 @@ Cumulative feature documentation across all versions.
 
 - Application-Based Configuration (ABC) Templates
 - Append Only Indices
+- Bitmap Filtering
 - CAT API
 - Cluster Shard Limits
 - Core Version Update Fix

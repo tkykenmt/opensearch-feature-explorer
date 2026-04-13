@@ -1,5 +1,9 @@
 # OpenSearch v3.6.0 Release
 
+## opensearch
+
+- Bitmap64 Query Support
+
 ## common
 
 - FIPS Compliance & Build Infrastructure
