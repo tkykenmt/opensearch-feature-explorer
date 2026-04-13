@@ -25,6 +25,7 @@
 - Workload Management (WLM)
 - Logging & Diagnostics
 - Search Performance Fixes
+- Upgrade Compatibility
 
 ## common
 

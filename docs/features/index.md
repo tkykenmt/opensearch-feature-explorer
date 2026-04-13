@@ -123,6 +123,7 @@ Cumulative feature documentation across all versions.
 - Storage & I/O Optimization
 - Synonym Analyzer Configuration
 - Telemetry & Observability Metrics
+- Upgrade Compatibility
 - Workload Management
 
 ## security
