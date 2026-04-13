@@ -20,6 +20,10 @@ Cumulative feature documentation across all versions.
 
 - Search Relevance Workbench (SRW)
 
+## job
+
+- Job Scheduler
+
 ## geospatial
 
 - Geospatial Plugin
