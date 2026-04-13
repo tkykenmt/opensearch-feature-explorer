@@ -72,6 +72,7 @@
 ## neural-search
 
 - Neural Search
+- Hybrid Query (Neural Search)
 
 ## notifications
 

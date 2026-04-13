@@ -40,6 +40,7 @@ Cumulative feature documentation across all versions.
 
 - Agentic Search
 - Batch Ingestion
+- Hybrid Query
 - Neural Search Enhancements
 - Neural Search Nested Field Mapping
 

@@ -207,7 +207,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 - **Scroll operation**: Scroll is not supported with hybrid queries; use pagination instead.
 - **Explain API**: The `explain` parameter is not fully supported for hybrid queries (partial support added in v2.19.0 for search-level explain; explain by document ID is not supported).
-- **Nested queries**: Hybrid queries cannot be nested inside other compound queries.
+- **Nested queries**: Hybrid queries cannot be nested inside other compound queries. As of v3.6.0, nesting inside `function_score`, `constant_score`, and `script_score` is explicitly blocked with validation, and multi-level nesting is also detected.
 - **Nested filter**: Nested HybridQueryBuilder does not support the filter function.
 - **Concurrent segment search**: Results may vary due to non-deterministic merge order when concurrent segment search is enabled.
 - **Semantic highlighter**: Requires a deployed sentence highlighting model.
@@ -219,6 +219,7 @@ GET /_plugins/_neural/stats/text_embedding_executions
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Bug fixes for hybrid query collapse (score comparison, missing bottom value, GroupPriorityQueue, flat queue replacement), profiler support via ProfileScorer unwrapping, profiler with sort/collapse empty results fix, compound query nesting block (function_score, constant_score, script_score), HybridQueryDocIdStream upstream compatibility and optimization
 - **v3.5.0** (2026-02-11): GRPC hybrid query support, min_score parameter for final result filtering; BWC test fixes for Gradle 9 upgrade and version compatibility
 - **v3.3.0** (2026-01-11): Bug fixes for nested list ordering in embedding processor, unit test mocking support, CI disk cleanup for BWC tests
 - **v3.2.0** (2026-01-14): Upper bound parameter for min-max normalization, inner hits support within collapse, configurable collapse document storage setting, HybridQueryDocIdStream bug fix
@@ -251,6 +252,14 @@ GET /_plugins/_neural/stats/text_embedding_executions
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1753](https://github.com/opensearch-project/neural-search/pull/1753) | Fix hybrid search with collapse relevancy bugs |  |
+| v3.6.0 | [#1754](https://github.com/opensearch-project/neural-search/pull/1754) | Fix profiler support for hybrid query by unwrapping ProfileScorer | [#1255](https://github.com/opensearch-project/neural-search/issues/1255) |
+| v3.6.0 | [#1763](https://github.com/opensearch-project/neural-search/pull/1763) | Fix missing results and ranking in hybrid query collapse |  |
+| v3.6.0 | [#1780](https://github.com/opensearch-project/neural-search/pull/1780) | Fix HybridQueryDocIdStream by adding intoArray override | [#1781](https://github.com/opensearch-project/neural-search/issues/1781) |
+| v3.6.0 | [#1786](https://github.com/opensearch-project/neural-search/pull/1786) | Optimize HybridQueryDocIdStream.intoArray, clean up dead code | [#1784](https://github.com/opensearch-project/neural-search/issues/1784) |
+| v3.6.0 | [#1787](https://github.com/opensearch-project/neural-search/pull/1787) | Replace per-group collection with flat queue in collapse | [#1773](https://github.com/opensearch-project/neural-search/issues/1773) |
+| v3.6.0 | [#1791](https://github.com/opensearch-project/neural-search/pull/1791) | Block hybrid query nested inside compound queries | [#1788](https://github.com/opensearch-project/neural-search/issues/1788) |
+| v3.6.0 | [#1794](https://github.com/opensearch-project/neural-search/pull/1794) | Fix empty profiler data for hybrid query with sort/collapse | [#1793](https://github.com/opensearch-project/neural-search/issues/1793) |
 | v3.5.0 | [#1665](https://github.com/opensearch-project/neural-search/pull/1665) | Implement GRPC Hybrid Query | [#1495](https://github.com/opensearch-project/neural-search/issues/1495) |
 | v3.5.0 | [#1726](https://github.com/opensearch-project/neural-search/pull/1726) | Add support for min_score param in hybrid search | [#1164](https://github.com/opensearch-project/neural-search/issues/1164) |
 | v3.5.0 | [#1729](https://github.com/opensearch-project/neural-search/pull/1729) | Enable BWC tests after upgrading to Gradle 9 | [#1728](https://github.com/opensearch-project/neural-search/issues/1728) |
@@ -296,6 +305,14 @@ GET /_plugins/_neural/stats/text_embedding_executions
 | v2.11.0 | - | Initial implementation of hybrid search |   |
 
 ### Issues (Design / RFC)
+- [Issue #1788](https://github.com/opensearch-project/neural-search/issues/1788): Hybrid query crash when nested inside function_score
+- [Issue #1125](https://github.com/opensearch-project/neural-search/issues/1125): Compound queries with nested hybrid query
+- [Issue #1255](https://github.com/opensearch-project/neural-search/issues/1255): Profiler support for hybrid query
+- [Issue #1773](https://github.com/opensearch-project/neural-search/issues/1773): Hybrid query collapse score/totalHits inconsistencies
+- [Issue #1772](https://github.com/opensearch-project/neural-search/issues/1772): Hybrid query collapse score differences
+- [Issue #1781](https://github.com/opensearch-project/neural-search/issues/1781): HybridQueryDocIdStream compilation error from upstream
+- [Issue #1784](https://github.com/opensearch-project/neural-search/issues/1784): HybridQueryDocIdStream.intoArray cleanup
+- [Issue #1793](https://github.com/opensearch-project/neural-search/issues/1793): Empty profiler data with hybrid query sort/collapse
 - [Issue #507](https://github.com/opensearch-project/neural-search/issues/507): Sorting support for Hybrid Search
 - [Issue #665](https://github.com/opensearch-project/neural-search/issues/665): Hybrid search and collapse compatibility request
 - [Issue #1152](https://github.com/opensearch-project/neural-search/issues/1152): Custom weights in RRF request
