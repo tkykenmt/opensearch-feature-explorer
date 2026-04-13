@@ -43,3 +43,7 @@
 ## security
 
 - Security Enhancements
+
+## skills
+
+- Agent Skills/Tools
