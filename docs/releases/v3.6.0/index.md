@@ -22,6 +22,7 @@
 - Telemetry & Observability Metrics
 - Terms Aggregation Performance
 - Workload Management (WLM)
+- Logging & Diagnostics
 
 ## common
 
