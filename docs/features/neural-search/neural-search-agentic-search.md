@@ -93,8 +93,9 @@ flowchart TB
 | Parameter | Description | Default |
 |-----------|-------------|---------|
 | `question` | Natural language query (required) | - |
-| `index_name` | Target index name (required) | - |
+| `index_name` | Target index name (required); supports aliases and wildcard patterns (v3.6.0+) | - |
 | `embedding_model_id` | Model ID for neural search queries | Optional |
+| `fallback_query` | Custom fallback query when LLM fails to generate DSL; supports `${parameters.*}` substitution (v3.6.0+) | `{"size":10,"query":{"match_all":{}}}` |
 | `query_planner_system_prompt` | Custom system prompt for query planning | Default DSL generation prompt |
 | `query_planner_user_prompt` | Custom user prompt for query planning | Default with question, mapping, sample doc |
 | `template_selection_system_prompt` | Custom system prompt for template selection | Default template selection prompt |
@@ -211,6 +212,7 @@ POST /_plugins/_ml/agents/_register
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `agent_id` | string | Yes | ID of the ML agent to execute |
+| `embedding_model_id` | string | No | ID of the embedding model for neural queries (v3.6.0+, requires cluster v3.6.0+) |
 | `tag` | string | No | Processor tag for identification |
 | `description` | string | No | Processor description |
 | `ignore_failure` | boolean | No | Whether to ignore processor failures |
@@ -226,6 +228,7 @@ POST /_plugins/_ml/agents/_register
 
 ## Change History
 
+- **v3.6.0** (2026-04-13): Custom fallback query support in QueryPlanningTool, alias and wildcard index pattern support in QueryPlanningTool, embedding model ID parameter in agentic query translator processor, BWC tests for agentic search
 - **v3.5.0** (2026-02-11): Intelligent index selection from ListIndexTool response, UI/UX enhancements (loading spinner, documentation link, styling improvements)
 - **v3.4.0** (2026-01-11): Source parameter preservation (`_source.includes`/`_source.excludes`), Search Relevance Workbench pairwise comparison support, MCP server integration, conversational search UI with memory management, improved test flow UX, version filtering
 - **v3.3.2** (2026-02-12): Conversation search support with ext params, JSON extraction from agent/LLM responses, model-type-aware summary trace extraction, Query Planning Tool JSON processor
@@ -247,6 +250,9 @@ POST /_plugins/_ml/agents/_register
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [ml-commons#4729](https://github.com/opensearch-project/ml-commons/pull/4729) | Add support for custom fallback query in QueryPlanningTool |  |
+| v3.6.0 | [ml-commons#4726](https://github.com/opensearch-project/ml-commons/pull/4726) | Support aliases and wildcard index patterns in QueryPlanningTool | [neural-search#1799](https://github.com/opensearch-project/neural-search/issues/1799) |
+| v3.6.0 | [neural-search#1800](https://github.com/opensearch-project/neural-search/pull/1800) | Support embedding model id in agentic query translator processor | [neural-search#1801](https://github.com/opensearch-project/neural-search/issues/1801) |
 | v3.5.0 | [neural-search#1713](https://github.com/opensearch-project/neural-search/pull/1713) | Select explicit index for Agentic Query if returned from ListIndexTool |   |
 | v3.3.2 | [neural-search#1626](https://github.com/opensearch-project/neural-search/pull/1626) | Add conversation search support with agentic search | [#1525](https://github.com/opensearch-project/neural-search/issues/1525) |
 | v3.3.2 | [neural-search#1631](https://github.com/opensearch-project/neural-search/pull/1631) | Extract JSON from Agent Response |   |

@@ -29,6 +29,7 @@ Cumulative feature documentation across all versions.
 
 ## neural-search
 
+- Agentic Search
 - Batch Ingestion
 - Neural Search Enhancements
 - Neural Search Nested Field Mapping

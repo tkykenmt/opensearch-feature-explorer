@@ -18,6 +18,7 @@
 
 ## ml-commons
 
+- Agentic Search
 - ML Commons Agents & Memory
 - ML Commons Model Pooling
 
