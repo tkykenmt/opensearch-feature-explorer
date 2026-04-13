@@ -20,6 +20,7 @@
 - Storage & I/O Optimization
 - Streaming Search
 - Telemetry & Observability Metrics
+- Terms Aggregation Performance
 - Workload Management (WLM)
 
 ## common
