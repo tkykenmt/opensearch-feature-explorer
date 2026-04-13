@@ -14,6 +14,7 @@
 - Pull-based Ingestion
 - Request Tracing
 - Search Observability
+- Search Query Fixes
 - Segment Replication
 - Star Tree Index
 - Storage & I/O Optimization

@@ -144,6 +144,7 @@ GET logs/_search
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed `ArrayIndexOutOfBoundsException` with wildcard fields and aggregations under concurrent access by addressing thread-safety in the value fetcher
 - **v3.4.0** (2025-11-18): Changed `doc_values` default from `false` to `true`, fixing nested query issues
 - **v3.3.0** (2025-09-10): Fixed sorting bug when `doc_values` enabled by disabling Lucene's dynamic pruning optimization
 - **v3.0.0** (2025-05-06): Changed indexing strategy from 1-3 gram to 3-gram only, reducing index size by ~20% and improving write throughput by 5-30%
@@ -162,6 +163,7 @@ GET logs/_search
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20842](https://github.com/opensearch-project/OpenSearch/pull/20842) | Fix `ArrayIndexOutOfBoundsException` with wildcard aggregations | [#20838](https://github.com/opensearch-project/OpenSearch/issues/20838) |
 | v3.4.0 | [#19796](https://github.com/opensearch-project/OpenSearch/pull/19796) | Change doc_values default to true | [#18678](https://github.com/opensearch-project/OpenSearch/issues/18678) |
 | v3.3.0 | [#18568](https://github.com/opensearch-project/OpenSearch/pull/18568) | Fix sorting bug by disabling pruning for doc_values |   |
 | v3.0.0 | [#17349](https://github.com/opensearch-project/OpenSearch/pull/17349) | Optimize to 3-gram only indexing | [#17099](https://github.com/opensearch-project/OpenSearch/issues/17099) |

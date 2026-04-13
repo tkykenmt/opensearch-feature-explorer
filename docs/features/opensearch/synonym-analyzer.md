@@ -115,6 +115,7 @@ The following filters are known to cause issues when placed before synonym filte
 
 ## Change History
 
+- **v3.6.0** (2026-04-15): Fixed `synonym_graph` filter failure with `word_delimiter_graph` by introducing fail-safe analyzer building and dependency-aware ordering via an `order` attribute
 - **v2.19.0** (2024-11-12): Added `synonym_analyzer` configuration setting for `synonym` and `synonym_graph` filters
 
 ## References
@@ -128,6 +129,7 @@ The following filters are known to cause issues when placed before synonym filte
 
 | Version | PR | Description |
 |---------|-----|-------------|
+| v3.6.0 | [#19248](https://github.com/opensearch-project/OpenSearch/pull/19248) | Fix synonym_graph filter failure with word_delimiter_graph by handling analyzer dependency ordering |
 | v2.19.0 | [#16488](https://github.com/opensearch-project/OpenSearch/pull/16488) | Add new configuration setting `synonym_analyzer` for `synonym` and `synonym_graph` filters |
 
 ### Related Issues
