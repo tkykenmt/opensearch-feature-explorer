@@ -114,6 +114,7 @@ Cumulative feature documentation across all versions.
 - Point in Time (PIT) API
 - ProfileScorer Improvements
 - Processor Allowlist
+- Remote Store
 - Search Backpressure
 - Search Observability
 - Segment Replication

@@ -12,6 +12,7 @@
 - Platform & Distribution
 - Pluggable Engine Architecture
 - Pull-based Ingestion
+- Remote Store Stability
 - Request Tracing
 - Search Observability
 - Search Query Fixes
