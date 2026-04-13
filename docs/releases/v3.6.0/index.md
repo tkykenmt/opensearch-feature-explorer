@@ -15,3 +15,7 @@
 ## dashboards-search-relevance
 
 - Search Relevance Workbench (SRW)
+
+## alerting-dashboards
+
+- SQL/PPL Monitors
