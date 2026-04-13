@@ -4,6 +4,7 @@
 |----------|-------------|
 | [neural-search-agentic-search](neural-search-agentic-search.md) | Agentic Search |
 | [neural-search-batch-ingestion](neural-search-batch-ingestion.md) | Batch Ingestion |
+| [neural-search-ci-and-test-infrastructure](neural-search-ci-and-test-infrastructure.md) | CI & Test Infrastructure |
 | [neural-search-compatibility](neural-search-compatibility.md) | Neural Search Compatibility |
 | [neural-search-dependencies](neural-search-dependencies.md) | Neural Search Dependencies |
 | [neural-search-enhancements](neural-search-enhancements.md) | Neural Search Enhancements |

@@ -87,6 +87,7 @@
 - Neural Search
 - Hybrid Query (Neural Search)
 - gRPC Support
+- Neural Search CI & Test Infrastructure
 
 ## notifications
 

@@ -45,6 +45,7 @@ Cumulative feature documentation across all versions.
 
 - Agentic Search
 - Batch Ingestion
+- CI & Test Infrastructure
 - Hybrid Query
 - Neural Search Enhancements
 - Neural Search Nested Field Mapping
