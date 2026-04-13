@@ -157,6 +157,7 @@
 
 ## opensearch-dashboards
 
+- AI Assistant / Chatbot
 - APM & Observability
 - Data Importer
 - OpenSearch Dashboards Core

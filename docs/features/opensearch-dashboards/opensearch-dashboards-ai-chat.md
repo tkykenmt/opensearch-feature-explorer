@@ -141,6 +141,13 @@ flowchart TB
 | SlashCommandRegistry | `src/plugins/chat` | Extensible slash command registry with autocomplete (v3.5.0) |
 | ConfirmationService | `src/plugins/chat` | User confirmation workflow for tool executions (v3.5.0) |
 | AskAIAction | `src/plugins/explore` | "Ask AI" context menu for visualizations (v3.5.0) |
+| ChatMountService | `src/plugins/chat` | Centralized sidecar lifecycle management with chrome visibility integration (v3.6.0) |
+| ChatMount | `src/plugins/chat` | Renders chat window content inside the sidecar (v3.6.0) |
+| AgenticMemoryProvider | `src/plugins/chat` | Conversation memory via ML Commons Agent Memory APIs (v3.6.0) |
+| ConversationHistoryList | `src/plugins/chat` | Pluggable conversation history list panel (v3.6.0) |
+| usePageContainerCapture | `src/plugins/chat` | React hook for dashboard screenshot capture using html2canvas-pro (v3.6.0) |
+| TimeRangeTool | `src/plugins/chat` | Frontend tool for natural language time range updates (v3.6.0) |
+| AskAIEmbeddableAction | `src/plugins/visualizations` | "Ask AI" action for legacy visualizations (v3.6.0) |
 
 ### Configuration
 
@@ -153,6 +160,8 @@ flowchart TB
 | `AWS_REGION` | AWS region for Bedrock | `us-west-2` |
 | `AWS_PROFILE` | AWS profile for authentication | `default` |
 | `SYSTEM_PROMPT` | Path to custom system prompt file | - |
+| `chat.forwardCredentials` | Forward OBO bearer token to AG-UI agent server | `false` |
+| `chat.agUiUrl` | URL for the AG-UI agent server runs endpoint | - |
 
 ### Developer Hooks
 
@@ -257,14 +266,16 @@ npm run start:ag-ui
 ## Limitations
 
 - **Experimental**: Not production-ready, API may change
-- **AWS Bedrock Required**: Requires AWS credentials with Claude model access
+- **AWS Bedrock Required**: Requires AWS credentials with Claude model access (or external AG-UI server via `chat.agUiUrl`)
 - **Single-threaded**: One conversation at a time per agent instance
 - **MCP Configuration**: Servers must be pre-configured before agent starts
 - **Limited Testing**: Comprehensive test coverage is ongoing
-- **Session-based Persistence**: Conversation history persists within browser session only (v3.4.0+)
+- **Agentic Memory**: Conversation deletion not supported when using agentic memory provider (agent manages its own memory lifecycle)
+- **Screenshot Capture**: Screenshots scaled to 8k pixel limit; capture option hidden on non-dashboard pages
 
 ## Change History
 
+- **v3.6.0** (2026-04): Conversation history with agentic memory provider (ML Commons Agent Memory APIs), dashboard screenshot capture (html2canvas-pro with 8k pixel scaling), "Ask AI" for legacy visualizations, time range tool for natural language time updates, default page context for all pages, chat interaction metrics, OBO bearer token integration for AG-UI authorization, single window architecture refactor with ChatMountService, grouped tool calls display, tool call parameter display, extensive bug fixes (conversation restore, streaming, thread management, input race conditions, error handling)
 - **v3.5.0** (2026-02): Slash command system with autocomplete/confirmations, "Thinking..." loading indicator, "Ask AI" context menu for Explore visualizations, plugin action registration API, enhanced PPL query tool, gradient chat button, multiple bug fixes (stale error cleanup, page context, mlClient, tool call timeline)
 - **v3.4.0** (2025-11): Global search integration, suggestion system, state persistence, session storage, Explore integration, UI improvements
 - **v3.3.0** (2025-10): Initial implementation with Chat plugin, Context Provider plugin, and osd-agents ReAct agent
@@ -283,6 +294,26 @@ npm run start:ag-ui
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#11348](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11348) | Add conversation history list support | |
+| v3.6.0 | [#11380](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11380) | Add agentic memory provider | |
+| v3.6.0 | [#11338](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11338) | Add "Ask AI" for legacy visualizations | |
+| v3.6.0 | [#11287](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11287) | Add screenshot capture for dashboard pages | |
+| v3.6.0 | [#11575](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11575) | Add metrics tracking for chat interactions | |
+| v3.6.0 | [#11332](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11332) | Group consecutive completed tool calls | |
+| v3.6.0 | [#11331](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11331) | Add time range tool to chatbot | |
+| v3.6.0 | [#11502](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11502) | Add default page context | |
+| v3.6.0 | [#11329](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11329) | Use html2canvas-pro for CSP nonce support | |
+| v3.6.0 | [#11483](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11483) | Refactor to single window architecture | |
+| v3.6.0 | [#11524](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11524) | Integrate OBO bearer token with AG-UI | |
+| v3.6.0 | [#11569](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11569) | Support ag-ui error function invocation | |
+| v3.6.0 | [#11585](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11585) | Scale screenshots to 8k pixel limit | |
+| v3.6.0 | [#11576](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11576) | Fix conversation restore with unfinished tool calls | |
+| v3.6.0 | [#11459](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11459) | Fix "Thinking..." message disappearing | |
+| v3.6.0 | [#11510](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11510) | Disable input during tool result sending | |
+| v3.6.0 | [#11529](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11529) | Pass data source ID to agentic memory provider | |
+| v3.6.0 | [#11526](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11526) | Fix conversation restore after unmount | |
+| v3.6.0 | [#11467](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11467) | Fix typing triggering re-renders | |
+| v3.6.0 | [#11473](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11473) | Handle array-type assistant message content | |
 | v3.5.0 | [#11194](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11194) | Add slash command system with autocomplete and confirmations | |
 | v3.5.0 | [#11157](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11157) | Add thinking message in chat conversation | |
 | v3.5.0 | [#11134](https://github.com/opensearch-project/OpenSearch-Dashboards/pull/11134) | Add "Ask AI" Context Menu Action to explore visualizations | |
