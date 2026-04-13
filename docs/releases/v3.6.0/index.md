@@ -10,6 +10,7 @@
 - Search Observability
 - Segment Replication
 - Telemetry & Observability Metrics
+- Workload Management (WLM)
 
 ## common
 
