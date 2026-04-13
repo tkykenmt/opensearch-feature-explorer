@@ -4,6 +4,7 @@
 
 - Analysis & Text Processing
 - Bitmap64 Query Support
+- Context-Aware Indices
 - ProfileScorer Improvements
 - Bulk Write Optimization
 - Cross-Cluster Search (CCS)

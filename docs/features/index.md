@@ -102,6 +102,7 @@ Cumulative feature documentation across all versions.
 - Bulk Write Optimization
 - CAT API
 - Cluster Shard Limits
+- Context Aware Segments
 - Core Version Update Fix
 - Date Field Sorting
 - Dependency Management
