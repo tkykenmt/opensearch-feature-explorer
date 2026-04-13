@@ -3,6 +3,7 @@
 ## opensearch
 
 - Bitmap64 Query Support
+- Pull-based Ingestion
 
 ## common
 

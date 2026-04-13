@@ -106,7 +106,10 @@ flowchart TB
 | `ingestion_source.poll.timeout` | Poll timeout in milliseconds | 1000 | No |
 | `ingestion_source.num_processor_threads` | Number of processor threads | 1 | No |
 | `ingestion_source.internal_queue_size` | Internal queue size between poller and processor | 100 | No |
-| `ingestion_source.mapper_type` | Message mapper type (`default` or `raw_payload`) | `default` | No |
+| `ingestion_source.mapper_type` | Message mapper type (`default`, `raw_payload`, or `field_mapping`) | `default` | No |
+| `ingestion_source.mapper_settings.*` | Mapper-specific settings (e.g., `id_field`, `version_field` for `field_mapping`) | None | No |
+| `ingestion_source.warmup.timeout` | Maximum warmup wait time. `-1` = disabled, `>=0` = enabled | `-1` (disabled) | No |
+| `ingestion_source.warmup.lag_threshold` | Acceptable pointer-based lag for warmup completion | `100` | No |
 | `ingestion_source.pointer_based_lag_update_interval` | Interval for updating pointer-based lag metric | `10s` | No |
 | `ingestion_source.param.*` | Source-specific parameters (topic, bootstrap_servers, etc.) | Varies | Yes |
 | `index.periodic_flush_interval` | Interval for periodic flush | `10m` (pull-based) / `-1` (regular) | Yes |
@@ -184,6 +187,50 @@ Indexed document:
 
 **Note**: Raw payload mapper does not support document versioning. Use for append-only workloads where eventual consistency is acceptable.
 
+#### Field Mapping Mapper (v3.6.0+)
+
+Extracts `_id`, `_version`, and `_op_type` from configurable top-level fields in raw stream messages. Extracted fields are removed from `_source`. Useful for CDC (Change Data Capture) scenarios where metadata is embedded in the message payload.
+
+Set `mapper_type` to `field_mapping` and configure via `mapper_settings.*`:
+
+| Mapper Setting | Description |
+|----------------|-------------|
+| `id_field` | Source field to use as document `_id`. If absent, ID is auto-generated |
+| `version_field` | Source field for `_version` with external versioning. Must be present when configured |
+| `op_type_field` | Source field to determine operation type |
+| `op_type_field.delete_value` | Value indicating a delete operation |
+| `op_type_field.create_value` | Value indicating a create operation |
+
+Operation type resolution: matches `delete_value` → delete, matches `create_value` → create, otherwise → index.
+
+Input message:
+```json
+{"user_id": "abc", "timestamp": 123, "action": "DELETE", "name": "alice"}
+```
+
+With settings `id_field=user_id`, `version_field=timestamp`, `op_type_field=action`, `op_type_field.delete_value=DELETE`:
+- `_id` = `abc`, `_version` = `123`, `_op_type` = `delete`
+- `_source` = `{"name": "alice"}`
+
+Validation: requires all cluster nodes on v3.6.0+, `delete_value`/`create_value` require `op_type_field`, and they cannot be the same value.
+
+### Warmup Phase (v3.6.0+)
+
+When a new node is added or shard relocation happens, consumption starts from the previous checkpoint offset. During this time, the shard may serve stale data. The warmup phase prevents shards from serving queries until they have caught up with the streaming source.
+
+```
+Index Created → WARMING_UP → (lag ≤ threshold OR timeout) → POLLING → STARTED
+```
+
+During warmup:
+- The poller actively ingests (internally POLLING/PROCESSING)
+- Externally reports `WARMING_UP` via `GET /{index}/ingestion/_state`
+- The shard remains in `INITIALIZING` and does not serve search queries
+- If the poller is paused, warmup is skipped immediately
+- On timeout, warmup completes with a warning and the shard proceeds
+
+Configure via `ingestion_source.warmup.timeout` (default `-1` = disabled) and `ingestion_source.warmup.lag_threshold` (default `100`). Both are Final settings.
+
 ### Management APIs
 
 **Pause Ingestion**
@@ -255,6 +302,7 @@ When settings are updated:
 
 ## Change History
 
+- **v3.6.0**: Graduated from experimental to GA — all pull-based ingestion classes promoted from `@ExperimentalApi` to `@PublicApi(since = "3.6.0")`. Added warmup phase with `ingestion_source.warmup.timeout` and `ingestion_source.warmup.lag_threshold` settings to prevent serving stale data after node restart or shard relocation. Added `field_mapping` message mapper type with `mapper_settings.*` prefix for extracting `_id`, `_version`, and `_op_type` from configurable top-level fields in raw messages. Supports `delete_value` and `create_value` for flexible operation type resolution. Added mixed-cluster version check for `field_mapping` mapper type.
 - **v3.4.0**: Added offset-based consumer lag metric for Kafka with configurable update interval (`pointer_based_lag_update_interval`). Added time-based periodic flush support with `index.periodic_flush_interval` setting (defaults to 10 minutes for pull-based indexes). Added message mapper framework with `raw_payload` mapper for ingesting raw JSON payloads using stream pointer as document ID. Made `ingestion_source.param.*` settings dynamic, enabling consumer configuration updates without index recreation. Fixed out-of-bounds offset handling by setting Kafka `auto.offset.reset` to `none` by default. Removed persisted pointers concept to fix correctness issues during consumer rewind. Deprecated `totalDuplicateMessageSkippedCount` metric.
 - **v3.3.0**: Added all-active ingestion mode enabling replica shards to independently ingest from streaming sources. Fixed ingestion state XContent serialization for remote cluster state compatibility. Fixed lag metric calculation when streaming source is empty. Fixed pause state initialization during replica promotion. Added fail-fast behavior for mapper/parsing errors.
 - **v3.2.0**: Added `ingestion-fs` plugin for file-based ingestion, enabling local testing without Kafka/Kinesis setup. Files follow `${base_directory}/${stream}/${shard_id}.ndjson` convention.
@@ -271,6 +319,10 @@ When settings are updated:
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#20704](https://github.com/opensearch-project/OpenSearch/pull/20704) | Remove experimental tag, mark as public API | |
+| v3.6.0 | [#20526](https://github.com/opensearch-project/OpenSearch/pull/20526) | Add warmup phase for pull-based ingestion | [#20506](https://github.com/opensearch-project/OpenSearch/issues/20506) |
+| v3.6.0 | [#20722](https://github.com/opensearch-project/OpenSearch/pull/20722) | Add mapper_settings support and field_mapping mapper type | [#20721](https://github.com/opensearch-project/OpenSearch/issues/20721) |
+| v3.6.0 | [#20729](https://github.com/opensearch-project/OpenSearch/pull/20729) | Implement FieldMappingIngestionMessageMapper | [#20728](https://github.com/opensearch-project/OpenSearch/issues/20728) |
 | v3.4.0 | [#19635](https://github.com/opensearch-project/OpenSearch/pull/19635) | Add Kafka offset based consumer lag |   |
 | v3.4.0 | [#19878](https://github.com/opensearch-project/OpenSearch/pull/19878) | Add time based periodic flush support | [#19860](https://github.com/opensearch-project/OpenSearch/issues/19860) |
 | v3.4.0 | [#19765](https://github.com/opensearch-project/OpenSearch/pull/19765) | Support message mappers and raw payloads | [#19548](https://github.com/opensearch-project/OpenSearch/issues/19548) |
