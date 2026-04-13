@@ -187,6 +187,7 @@ PUT /_search/pipeline/cohere_rerank_pipeline
 
 ## Change History
 
+- **v3.6.0** (2026-04): Fixed rerank processor unable to extract text from nested and dot-notation fields in `document_fields`; replaced broken `containsKey()` + `ObjectPath.eval()` with `ProcessorUtils.getValueFromSource()` for correct nested map and array-of-objects traversal
 - **v2.18.0** (2024-11-05): Added ByFieldRerankProcessor for field-based reranking, enabled rescore support in hybrid queries
 - **v2.12.0** (2024-02-20): Initial rerank processor implementation with ML-based reranking
 
@@ -202,6 +203,7 @@ PUT /_search/pipeline/cohere_rerank_pipeline
 ### Pull Requests
 | Version | PR | Description | Related Issue |
 |---------|-----|-------------|---------------|
+| v3.6.0 | [#1805](https://github.com/opensearch-project/neural-search/pull/1805) | Fix rerank processor nested and dot-notation field extraction | [#657](https://github.com/opensearch-project/neural-search/issues/657) |
 | v2.18.0 | [#932](https://github.com/opensearch-project/neural-search/pull/932) | ByFieldRerankProcessor for second level reranking | [#926](https://github.com/opensearch-project/neural-search/issues/926) |
 | v2.18.0 | [#917](https://github.com/opensearch-project/neural-search/pull/917) | Added rescorer in hybrid query | [#914](https://github.com/opensearch-project/neural-search/issues/914) |
 | v2.12.0 | - | Initial rerank processor implementation |   |

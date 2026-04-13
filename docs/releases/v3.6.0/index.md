@@ -69,6 +69,10 @@
 
 - Custom Codecs
 
+## neural-search
+
+- Neural Search
+
 ## notifications
 
 - Notifications
