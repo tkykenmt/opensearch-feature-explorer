@@ -270,3 +270,8 @@ POST /_plugins/_ml/agents/_register
 ### Issues (Design / RFC)
 - [Issue #1479](https://github.com/opensearch-project/neural-search/issues/1479): RFC - Design for Agentic Search
 - [Issue #1664](https://github.com/opensearch-project/neural-search/issues/1664): Agentic Search: Support of `_source.excludes`
+
+## Related Feature Reports
+
+- Agentic Search Memory Integration (`docs/features/neural-search/neural-search-agentic-search-memory.md`): Details on how memory is populated during Agentic Search, including the hardcoded `infer=false` behavior in agent runtime and the workaround for long-term memory extraction.
+- Agentic Memory (`docs/features/ml-commons/ml-commons-agentic-memory.md`): Memory Container, strategies, namespaces, and payload types.
