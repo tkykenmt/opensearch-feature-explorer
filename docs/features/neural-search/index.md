@@ -3,6 +3,7 @@
 | Document | Description |
 |----------|-------------|
 | [neural-search-agentic-search](neural-search-agentic-search.md) | Agentic Search |
+| [neural-search-agentic-search-memory](neural-search-agentic-search-memory.md) | Agentic Search Memory Integration |
 | [neural-search-batch-ingestion](neural-search-batch-ingestion.md) | Batch Ingestion |
 | [neural-search-ci-and-test-infrastructure](neural-search-ci-and-test-infrastructure.md) | CI & Test Infrastructure |
 | [neural-search-compatibility](neural-search-compatibility.md) | Neural Search Compatibility |

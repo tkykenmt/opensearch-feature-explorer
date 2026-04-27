@@ -207,3 +207,8 @@ GET _plugins/_ml/memory_containers/{container_id}/memories/long-term/_search
 | v3.3.0 | [#4238](https://github.com/opensearch-project/ml-commons/pull/4238) | Add delete_all_memories parameter |   |
 | v3.3.0 | [#4282](https://github.com/opensearch-project/ml-commons/pull/4282) | Improve semantic fact extraction prompt |   |
 | v3.3.0 | [#4288](https://github.com/opensearch-project/ml-commons/pull/4288) | Improve user preference extraction prompt |   |
+
+## Related Feature Reports
+
+- Agentic Search Memory Integration (`docs/features/neural-search/neural-search-agentic-search-memory.md`): How Agentic Search agents interact with Memory Containers. Notably, agent execution writes only working memory (`infer=false` is hardcoded); long-term memory requires explicit `POST /memories` calls with `infer: true` from the application layer.
+- Agentic Search (`docs/features/neural-search/neural-search-agentic-search.md`): The search-side feature that uses Memory Containers via the `agentic_memory` memory type.

@@ -48,6 +48,7 @@ Cumulative feature documentation across all versions.
 ## neural-search
 
 - Agentic Search
+- Agentic Search Memory Integration
 - Batch Ingestion
 - CI & Test Infrastructure
 - Hybrid Query
@@ -95,6 +96,10 @@ Cumulative feature documentation across all versions.
 ## reporting
 
 - Reporting Plugin
+
+## search-relevance
+
+- UBI and Learning to Rank Integration
 
 ## opensearch
 
