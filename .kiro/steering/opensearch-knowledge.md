@@ -18,7 +18,7 @@ Sections: `### Added`, `### Changed`, `### Fixed`, `### Dependencies`
 
 ### Investigation Flow
 1. Extract PR numbers from release notes
-2. Get PR details with `get_pull_request`
-3. Check changed files with `list_pull_request_files`
-4. Get related code with `get_file_contents` if needed
-5. Get Issue details with `get_issue` if linked
+2. Get PR details: `gh pr view {number} -R {owner}/{repo} --json title,body,files,labels`
+3. Check changed files: `gh pr view {number} -R {owner}/{repo} --json files --jq '.files[].path'`
+4. Get related code: `gh api repos/{owner}/{repo}/contents/{path} --jq '.content' | base64 -d`
+5. Get Issue details: `gh issue view {number} -R {owner}/{repo} --json title,body,labels,comments`

@@ -2,8 +2,8 @@
   "name": "dev",
   "description": "Development and maintenance of this tool itself",
   "prompt": "You are a development engineer responsible for maintaining and improving this tool.",
-  "tools": ["@builtin", "@github"],
-  "allowedTools": ["@builtin", "@github"],
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"],
   "resources": [
     "file://README.md",
     "file://DEVELOPMENT.md",
@@ -11,12 +11,6 @@
     "file://.kiro/agents/prompts/dev.md",
     "skill://.kiro/skills/**/SKILL.md"
   ],
-  "mcpServers": {
-    "github": {
-      "command": "bash",
-      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
-    }
-  },
   "toolsSettings": {
     "subagent": {
       "availableAgents": ["refactor", "investigate"],

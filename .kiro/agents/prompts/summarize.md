@@ -15,7 +15,10 @@ You are a release summarizer. Create release summary by aggregating release repo
 For additional context, fetch official release notes:
 - **opensearch-build**: `release-notes/opensearch-release-notes-{version}.md`
 
-Use GitHub MCP `get_file_contents` to fetch.
+Fetch via `gh`:
+```bash
+gh api repos/{owner}/{repo}/contents/release-notes/opensearch-release-notes-{version}.md --jq '.content' | base64 -d
+```
 
 ### Step 3: Create Release Summary
 

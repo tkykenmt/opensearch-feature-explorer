@@ -2,8 +2,8 @@
   "name": "summarize",
   "description": "Create release summary from existing feature reports",
   "prompt": "You are a release summarizer. Create release summary by aggregating release reports.",
-  "tools": ["@builtin", "@github"],
-  "allowedTools": ["@builtin", "@github"],
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"],
   "resources": [
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/summarize.md",
@@ -11,11 +11,5 @@
     "skill://.kiro/skills/github-workflow/SKILL.md",
     "skill://.kiro/skills/document-conventions/SKILL.md"
   ],
-  "mcpServers": {
-    "github": {
-      "command": "bash",
-      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
-    }
-  },
   "model": "claude-opus-4.6-1m"
 }

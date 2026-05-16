@@ -2,8 +2,8 @@
   "name": "investigate",
   "description": "Investigate a single feature and create/update feature reports",
   "prompt": "You are a feature investigator. Investigate release items based on GitHub Issues and create release/feature reports.",
-  "tools": ["@builtin", "@github"],
-  "allowedTools": ["@builtin", "@github"],
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"],
   "resources": [
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/investigate.md",
@@ -11,11 +11,5 @@
     "skill://.kiro/skills/github-workflow/SKILL.md",
     "skill://.kiro/skills/document-conventions/SKILL.md"
   ],
-  "mcpServers": {
-    "github": {
-      "command": "bash",
-      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
-    }
-  },
-  "model": "claude-opus-4.6-1m"
+  "model": "claude-opus-4.7"
 }

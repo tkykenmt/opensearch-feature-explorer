@@ -90,11 +90,10 @@ Get repository info:
 git remote get-url origin
 ```
 
-Create PR using GitHub MCP `create_pull_request`:
-- title: `docs: OpenSearch v{version} release investigation`
-- head: `docs/release-v{version}`
-- base: `main`
-- body: Summary of all investigated issues
+Create PR:
+```bash
+gh pr create -R {owner}/{repo} --title "docs: OpenSearch v{version} release investigation" --head docs/release-v{version} --base main --body "{body}"
+```
 
 If `--no-pr` was specified, merge directly to main instead:
 ```bash
@@ -116,7 +115,10 @@ git push
 
 ### Step 8: Merge PR
 
-If a PR was created in Step 6, merge it using GitHub MCP `merge_pull_request` with `merge_method: "squash"`.
+If a PR was created in Step 6, merge it:
+```bash
+gh pr merge docs/release-v{version} -R {owner}/{repo} --squash --delete-branch
+```
 
 Then clean up:
 ```bash
@@ -145,4 +147,6 @@ Print a summary table at the end:
 
 Success: 2/3
 PR: https://github.com/{owner}/{repo}/pull/{number}
+```
+ https://github.com/{owner}/{repo}/pull/{number}
 ```

@@ -16,7 +16,10 @@ Follow the `github-workflow` skill's Repository Detection pattern before any Git
 
 ### Step 1: Load Tracking Issue
 
-1. Fetch the tracking Issue using `get_issue`
+1. Fetch the tracking Issue:
+```bash
+gh issue view {number} -R {owner}/{repo} --json title,body,labels,state
+```
 2. Parse the tables in the Issue body to extract items
 3. Identify items with `Status: pending` (not yet created)
 4. Extract version from tracking Issue title (e.g., `v3.0.0`)
@@ -24,7 +27,10 @@ Follow the `github-workflow` skill's Repository Detection pattern before any Git
 ### Step 2: Check for Existing Issues
 
 Before creating new Issues:
-1. Use `list_issues` with `state: "all"` to get all Issues
+1. List all Issues:
+```bash
+gh issue list -R {owner}/{repo} --state all --json number,title,labels,state --limit 1000
+```
 2. Filter out Pull Requests (items with `pull_request` field)
 3. For each pending item, check if an Issue already exists with same feature name + version
 4. If exists and open: skip creation, update tracking Issue status with existing Issue number
@@ -43,6 +49,9 @@ For each pending item (not already existing), create an Issue:
 Use lowercase for folder paths.
 
 #### Issue Template
+
+**IMPORTANT**: Do NOT use `#NUMBER` or `[text](URL)` format for external PR/Issue references in Issue body. Always wrap external URLs in backtick code spans to prevent GitHub from creating cross-repository "mentioned this issue" links. The `Parent` field references this repository's own Issue, so `#{tracking_issue_number}` is OK.
+
 ```markdown
 Title: [{category}] {Item Name} (v{version})
 
@@ -51,7 +60,7 @@ Title: [{category}] {Item Name} (v{version})
 - Version: v{version}
 - Repository: {repository}
 - Category: {category}
-- PR: #{pr_number}
+- PR: `https://github.com/opensearch-project/{REPO}/pull/{pr_number}`
 
 ## Deliverables
 1. **Release Report**: `docs/releases/v{version}/features/{repository}/{item-name}.md`

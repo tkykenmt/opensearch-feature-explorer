@@ -2,18 +2,12 @@
   "name": "planner",
   "description": "Analyze release notes and create GitHub Issues for investigation tasks",
   "prompt": "You are a release planner. Create a GitHub Project and Issues for release investigation.",
-  "tools": ["@builtin", "@github"],
-  "allowedTools": ["@builtin", "@github"],
+  "tools": ["@builtin"],
+  "allowedTools": ["@builtin"],
   "resources": [
     "file://.kiro/steering/**/*.md",
     "file://.kiro/agents/prompts/planner.md",
     "skill://.kiro/skills/github-workflow/SKILL.md"
   ],
-  "mcpServers": {
-    "github": {
-      "command": "bash",
-      "args": ["-c", "GITHUB_PERSONAL_ACCESS_TOKEN=$(gh auth token) npx -y @modelcontextprotocol/server-github"]
-    }
-  },
   "model": "claude-opus-4.6-1m"
 }

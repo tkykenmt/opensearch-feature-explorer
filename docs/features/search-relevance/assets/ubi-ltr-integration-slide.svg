@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0284c7"/>
+      <stop offset="1" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ea580c"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#047857"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowDash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1920" height="8" fill="#0ea5e9"/>
+
+  <!-- Title -->
+  <text x="80" y="110" font-size="56" font-weight="700" fill="#f8fafc">
+    From User Clicks to Smarter Search
+  </text>
+  <text x="80" y="160" font-size="28" font-weight="400" fill="#94a3b8">
+    How UBI data powers Learning to Rank (LTR) in OpenSearch
+  </text>
+  <line x1="80" y1="190" x2="1840" y2="190" stroke="#334155" stroke-width="2"/>
+
+  <!-- ========= LEFT COLUMN: Pipeline ========= -->
+  <g transform="translate(80, 230)">
+    <text x="0" y="30" font-size="24" font-weight="600" fill="#38bdf8" letter-spacing="2">THE PIPELINE</text>
+
+    <!-- User icon + label -->
+    <g transform="translate(370, 70)">
+      <circle cx="0" cy="0" r="42" fill="#334155" stroke="#64748b" stroke-width="2"/>
+      <circle cx="0" cy="-10" r="13" fill="#e2e8f0"/>
+      <path d="M -22 22 Q 0 -2 22 22 L 22 30 L -22 30 Z" fill="#e2e8f0"/>
+      <text x="0" y="80" font-size="20" font-weight="500" fill="#cbd5e1" text-anchor="middle">End users</text>
+      <text x="0" y="104" font-size="16" fill="#94a3b8" text-anchor="middle">search &amp; click</text>
+    </g>
+
+    <!-- Step 1: UBI -->
+    <g transform="translate(0, 220)">
+      <rect width="740" height="110" rx="14" fill="url(#card1)"/>
+      <circle cx="50" cy="55" r="28" fill="#0c4a6e"/>
+      <text x="50" y="65" font-size="30" font-weight="700" fill="#f0f9ff" text-anchor="middle">1</text>
+      <text x="100" y="48" font-size="26" font-weight="700" fill="#f0f9ff">UBI · User Behavior Insights</text>
+      <text x="100" y="80" font-size="18" fill="#e0f2fe">Capture queries, impressions, clicks</text>
+      <text x="100" y="102" font-size="15" fill="#bae6fd" font-family="'Courier New', monospace">ubi_queries · ubi_events</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <line x1="370" y1="335" x2="370" y2="375" stroke="#cbd5e1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- Step 2: SRW -->
+    <g transform="translate(0, 380)">
+      <rect width="740" height="110" rx="14" fill="url(#card2)"/>
+      <circle cx="50" cy="55" r="28" fill="#4c1d95"/>
+      <text x="50" y="65" font-size="30" font-weight="700" fill="#f5f3ff" text-anchor="middle">2</text>
+      <text x="100" y="48" font-size="26" font-weight="700" fill="#f5f3ff">SRW · Judgments (COEC)</text>
+      <text x="100" y="80" font-size="18" fill="#ede9fe">Turn click logs into relevance grades</text>
+      <text x="100" y="102" font-size="15" fill="#ddd6fe" font-family="'Courier New', monospace">CTR_actual / E[CTR | rank]</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <line x1="370" y1="495" x2="370" y2="535" stroke="#cbd5e1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- Step 3: LTR Training -->
+    <g transform="translate(0, 540)">
+      <rect width="740" height="110" rx="14" fill="url(#card3)"/>
+      <circle cx="50" cy="55" r="28" fill="#7c2d12"/>
+      <text x="50" y="65" font-size="30" font-weight="700" fill="#fff7ed" text-anchor="middle">3</text>
+      <text x="100" y="48" font-size="26" font-weight="700" fill="#fff7ed">LTR · Train a ranking model</text>
+      <text x="100" y="80" font-size="18" fill="#ffedd5">Log features + train externally</text>
+      <text x="100" y="102" font-size="15" fill="#fed7aa" font-family="'Courier New', monospace">XGBoost · RankLib · LambdaMART</text>
+    </g>
+
+    <!-- Arrow 3 -->
+    <line x1="370" y1="655" x2="370" y2="695" stroke="#cbd5e1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- Step 4: sltr -->
+    <g transform="translate(0, 700)">
+      <rect width="740" height="110" rx="14" fill="url(#card4)"/>
+      <circle cx="50" cy="55" r="28" fill="#064e3b"/>
+      <text x="50" y="65" font-size="30" font-weight="700" fill="#ecfdf5" text-anchor="middle">4</text>
+      <text x="100" y="48" font-size="26" font-weight="700" fill="#ecfdf5">sltr · Rerank at query time</text>
+      <text x="100" y="80" font-size="18" fill="#d1fae5">Apply the model in a rescore phase</text>
+      <text x="100" y="102" font-size="15" fill="#a7f3d0" font-family="'Courier New', monospace">POST _ltr/_featureset/.../_createmodel</text>
+    </g>
+
+    <!-- Feedback loop (dashed) -->
+    <path d="M 740 755 Q 830 755 830 420 Q 830 275 430 275"
+          fill="none" stroke="#64748b" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arrowDash)"/>
+    <text x="785" y="440" font-size="16" fill="#94a3b8" font-style="italic" transform="rotate(-90 785 440)">continuous learning loop</text>
+  </g>
+
+  <!-- ========= RIGHT COLUMN: Narrative ========= -->
+  <g transform="translate(980, 230)">
+    <text x="0" y="30" font-size="24" font-weight="600" fill="#38bdf8" letter-spacing="2">WHAT &amp; WHY</text>
+
+    <!-- What is LTR -->
+    <g transform="translate(0, 70)">
+      <rect width="860" height="150" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="6" height="150" rx="3" fill="#0ea5e9"/>
+      <text x="30" y="40" font-size="24" font-weight="700" fill="#f8fafc">What is Learning to Rank?</text>
+      <text x="30" y="75" font-size="18" fill="#cbd5e1">Machine learning that reorders search results to</text>
+      <text x="30" y="100" font-size="18" fill="#cbd5e1">match what users actually find relevant. Sits on top</text>
+      <text x="30" y="125" font-size="18" fill="#cbd5e1">of BM25 as a rescoring layer — not a replacement.</text>
+    </g>
+
+    <!-- The classic blocker -->
+    <g transform="translate(0, 240)">
+      <rect width="860" height="150" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="6" height="150" rx="3" fill="#a855f7"/>
+      <text x="30" y="40" font-size="24" font-weight="700" fill="#f8fafc">The blocker: judgment lists</text>
+      <text x="30" y="75" font-size="18" fill="#cbd5e1">LTR needs thousands of (query, document, grade) labels.</text>
+      <text x="30" y="100" font-size="18" fill="#cbd5e1">Hand-labeling is slow, expensive, and often biased</text>
+      <text x="30" y="125" font-size="18" fill="#cbd5e1">toward what experts *think* users want.</text>
+    </g>
+
+    <!-- The UBI answer -->
+    <g transform="translate(0, 410)">
+      <rect width="860" height="150" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="6" height="150" rx="3" fill="#f97316"/>
+      <text x="30" y="40" font-size="24" font-weight="700" fill="#f8fafc">UBI closes the gap</text>
+      <text x="30" y="75" font-size="18" fill="#cbd5e1">Real user behavior becomes the training signal.</text>
+      <text x="30" y="100" font-size="18" fill="#cbd5e1">COEC corrects position bias so top-ranked results</text>
+      <text x="30" y="125" font-size="18" fill="#cbd5e1">don't automatically dominate the labels.</text>
+    </g>
+
+    <!-- Benefits row -->
+    <g transform="translate(0, 590)">
+      <text x="0" y="0" font-size="20" font-weight="600" fill="#38bdf8" letter-spacing="1">WHY IT MATTERS</text>
+
+      <g transform="translate(0, 25)">
+        <rect width="275" height="130" rx="10" fill="#0c4a6e"/>
+        <text x="137" y="45" font-size="40" text-anchor="middle">📈</text>
+        <text x="137" y="80" font-size="18" font-weight="700" fill="#f0f9ff" text-anchor="middle">Scales with traffic</text>
+        <text x="137" y="105" font-size="14" fill="#bae6fd" text-anchor="middle">More users =</text>
+        <text x="137" y="122" font-size="14" fill="#bae6fd" text-anchor="middle">better labels</text>
+      </g>
+      <g transform="translate(292, 25)">
+        <rect width="275" height="130" rx="10" fill="#4c1d95"/>
+        <text x="137" y="45" font-size="40" text-anchor="middle">🎯</text>
+        <text x="137" y="80" font-size="18" font-weight="700" fill="#f5f3ff" text-anchor="middle">Real intent</text>
+        <text x="137" y="105" font-size="14" fill="#ddd6fe" text-anchor="middle">Actual behavior,</text>
+        <text x="137" y="122" font-size="14" fill="#ddd6fe" text-anchor="middle">not guesses</text>
+      </g>
+      <g transform="translate(584, 25)">
+        <rect width="276" height="130" rx="10" fill="#064e3b"/>
+        <text x="138" y="45" font-size="40" text-anchor="middle">🔄</text>
+        <text x="138" y="80" font-size="18" font-weight="700" fill="#ecfdf5" text-anchor="middle">Always fresh</text>
+        <text x="138" y="105" font-size="14" fill="#a7f3d0" text-anchor="middle">Retrain as</text>
+        <text x="138" y="122" font-size="14" fill="#a7f3d0" text-anchor="middle">behavior shifts</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="1010" x2="1840" y2="1010" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="1045" font-size="16" fill="#64748b">
+    OpenSearch · user-behavior-insights · search-relevance · opensearch-learning-to-rank-base
+  </text>
+  <text x="1840" y="1045" font-size="16" fill="#64748b" text-anchor="end">
+    Next: feature engineering, model formats, and the sltr query →
+  </text>
+</svg>

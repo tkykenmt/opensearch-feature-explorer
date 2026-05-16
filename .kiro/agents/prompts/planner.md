@@ -84,6 +84,8 @@ git push
 
 ### Issue Template
 
+**IMPORTANT**: Do NOT use `#NUMBER` or `[text](URL)` format for external PR/Issue references in Issue body. Always wrap external URLs in backtick code spans to prevent GitHub from creating cross-repository "mentioned this issue" links.
+
 ```markdown
 Title: [{category}] {group_name}
 
@@ -96,7 +98,7 @@ Title: [{category}] {group_name}
 ## Pull Requests
 | PR | Title | Category | Repository |
 |----|-------|----------|------------|
-| #{pr} | {name} | {category} | {repository} |
+| `https://github.com/opensearch-project/{REPO}/pull/{pr}` | {name} | {category} | {repository} |
 ...
 
 ## Tasks

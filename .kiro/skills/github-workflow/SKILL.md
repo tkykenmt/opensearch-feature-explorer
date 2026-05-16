@@ -5,6 +5,8 @@ description: Common GitHub workflow patterns for this project. Use when creating
 
 # GitHub Workflow Patterns
 
+All GitHub API operations use `gh` CLI via `execute_bash` / `shell`. No MCP server required.
+
 ## Repository Detection
 
 Run FIRST before any GitHub API calls:
@@ -12,6 +14,61 @@ Run FIRST before any GitHub API calls:
 git remote get-url origin
 ```
 Parse output: `git@github.com:owner/repo.git` → owner=`owner`, repo=`repo`.
+
+## gh CLI Cheat Sheet
+
+### Issues
+```bash
+# Get issue details
+gh issue view {number} -R {owner}/{repo} --json title,body,labels,state,milestone
+
+# List issues with filters
+gh issue list -R {owner}/{repo} --state open --label "new-feature,update-feature" --sort created --order asc --limit 1 --json number,title,body,labels
+
+# Create issue
+gh issue create -R {owner}/{repo} --title "{title}" --body "{body}" --label "{label1},{label2}"
+
+# Close issue with comment
+gh issue comment {number} -R {owner}/{repo} --body "{comment}"
+gh issue close {number} -R {owner}/{repo}
+
+# Edit issue (add labels)
+gh issue edit {number} -R {owner}/{repo} --add-label "{label}"
+```
+
+### Pull Requests
+```bash
+# Get PR details
+gh pr view {number} -R {owner}/{repo} --json title,body,files,mergedAt,labels,milestone
+
+# List PR changed files
+gh pr view {number} -R {owner}/{repo} --json files --jq '.files[].path'
+
+# Create PR
+gh pr create -R {owner}/{repo} --title "{title}" --head {branch} --base main --body "{body}"
+
+# Merge PR
+gh pr merge {number} -R {owner}/{repo} --squash --delete-branch
+```
+
+### Search
+```bash
+# Search code
+gh search code "{query}" -R {owner}/{repo} --json path,textMatches
+
+# Search issues/PRs
+gh search issues "{query}" -R {owner}/{repo} --json number,title,url
+gh search prs "{query}" -R {owner}/{repo} --json number,title,url
+```
+
+### File Contents
+```bash
+# Fetch file from repo (specific branch)
+gh api repos/{owner}/{repo}/contents/{path}?ref={branch} --jq '.content' | base64 -d
+
+# Simpler: use git directly if repo is cloned
+git show origin/main:{path}
+```
 
 ## Branch + PR + Merge Workflow
 
@@ -30,14 +87,12 @@ git checkout -b {branch-name}
 git add {paths}
 git commit -m "{message}"
 git push -u origin {branch-name}
-```
 
-Then use GitHub tools:
-1. `create_pull_request` — title, head={branch-name}, base=main
-2. `merge_pull_request` — merge_method=squash
+# 4. Create PR and merge
+gh pr create --title "{title}" --head {branch-name} --base main --body "{body}"
+gh pr merge {branch-name} --squash --delete-branch
 
-```bash
-# 4. Return to original branch
+# 5. Return to original branch
 git checkout $ORIGINAL_BRANCH
 git pull origin $ORIGINAL_BRANCH
 ```
@@ -65,7 +120,8 @@ git add docs/ && git commit -m "docs: add {item-name} report for v{version}"
 
 # 3. After all investigations, push and create single PR
 git push -u origin docs/release-v{version}
-# create_pull_request → merge_pull_request
+gh pr create --title "docs: release v{version} reports" --head docs/release-v{version} --base main --body "{body}"
+gh pr merge docs/release-v{version} --squash --delete-branch
 ```
 
 ## Issue Operations
@@ -77,15 +133,7 @@ git push -u origin docs/release-v{version}
 - Repository: `repo/{repository}`
 
 ### Close with Comment
-Post completion comment, then close with `update_issue` (state=closed).
-
-## GitHub MCP Tools Reference
-
-- `get_file_contents`: Fetch file from repo
-- `get_pull_request`: PR details
-- `list_pull_request_files`: PR changed files
-- `get_issue` / `list_issues`: Issue operations
-- `search_code`: Code search
-- `create_pull_request` / `merge_pull_request`: PR lifecycle
-- `create_issue` / `update_issue`: Issue lifecycle
-- `add_labels_to_issue`: Label management
+```bash
+gh issue comment {number} -R {owner}/{repo} --body "{comment}"
+gh issue close {number} -R {owner}/{repo}
+```
